@@ -1,0 +1,52 @@
+
+
+
+
+func2str
+
+
+func2str
+
+Return a function handle constructed from a string.
+
+## Syntax
+
+- func_handle = str2func(str)
+
+## Input argument
+
+ - str - a string.
+
+## Output argument
+
+ - func_handle - a function handle
+
+## Description
+
+
+  <p><b>func_handle = str2func(str)</b> returns a function handle constructed from the string <b>str</b>.</p>
+
+
+## Example
+
+```Nelson
+fh = str2func('cos')
+class(fh)
+```
+
+## See also
+
+func2str.md func2str, isfunction_handle.md isfunction_handle.
+## History
+
+|Version|Description|
+|------|------|
+|1.0.0|initial version|
+
+
+## Author
+
+Allan CORNET
+
+
+

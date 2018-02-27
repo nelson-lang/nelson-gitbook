@@ -1,0 +1,50 @@
+
+
+
+
+qml_addimportpath
+
+
+qml_addimportpath
+
+Adds path as directory where the qml engine searches for installed modules.
+
+## Syntax
+
+- qml_addimportpath(path)
+
+## Input argument
+
+ - path - a string : valid path.
+
+## Description
+
+
+  <p><b>qml_addimportpath</b> adds <b>path</b> as a directory where the engine searches for installed modules in a URL-based directory structure.</p>
+  <p>The newly added path will be first in <b>qml_importpathlist</b>.</p>
+
+
+## Example
+
+```Nelson
+qml_importpathlist()
+qml_addimportpath(tempdir)
+qml_importpathlist()
+```
+
+## See also
+
+qml_importpathlist.md qml_importpathlist.
+## History
+
+|Version|Description|
+|------|------|
+|1.0.0|initial version|
+
+
+## Author
+
+Allan CORNET
+
+
+

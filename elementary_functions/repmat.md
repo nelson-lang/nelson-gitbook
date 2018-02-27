@@ -1,0 +1,60 @@
+
+
+
+
+repmat
+
+
+repmat
+
+Replicate and tile an array.
+
+## Syntax
+
+- R = repmat(A, m)
+- R = repmat(A, m, n)
+- R = repmat(A, m, n, p …)
+- R = repmat(A, [m n])
+- R = repmat(A, [m n p …])
+
+## Input argument
+
+ - A - an array.
+ - m, n, p … - a value: integer
+
+## Output argument
+
+ - R - result array form by tiling.
+
+## Description
+
+<b>repmat</b> repeats matrix or N-D array.
+
+## Examples
+
+```Nelson
+repmat(1:5, 2)
+```
+```Nelson
+repmat(1:5, [2 3])
+```
+```Nelson
+repmat(1:5, [2 3 4])
+```
+
+## See also
+
+reshape.md reshape.
+## History
+
+|Version|Description|
+|------|------|
+|1.0.0|initial version|
+
+
+## Author
+
+Allan CORNET
+
+
+
