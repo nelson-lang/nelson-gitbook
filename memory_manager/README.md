@@ -5,21 +5,22 @@
 
 memory manager functions
 
+## Description
 memory manager functions
 
 
-acquirevar.md acquirevar</a> &#8212; <span class = "refentry-description">Acquires variable value from a specified variables scope.
-assignin.md assignin</a> &#8212; <span class = "refentry-description">Assignin value to a variable in a specified variables scope.
-clear.md clear</a> &#8212; <span class = "refentry-description">Remove variable from workspace.
-global.md global</a> &#8212; <span class = "refentry-description">Defines a global variable.
-isglobal.md isglobal</a> &#8212; <span class = "refentry-description">Checks if a variable is global.
-isvar.md isvar</a> &#8212; <span class = "refentry-description">Check for the existence of an variable.
-memory.md memory</a> &#8212; <span class = "refentry-description">Get memory information.
-persistent.md persistent</a> &#8212; <span class = "refentry-description">Persistent variable.
-varislock.md varislock</a> &#8212; <span class = "refentry-description">Checks if a variable is locked.
-varlock.md varlock</a> &#8212; <span class = "refentry-description">Locks a variable.
-varunlock.md varunlock</a> &#8212; <span class = "refentry-description">Unlocks a variable.
-who.md who</a> &#8212; <span class = "refentry-description">List variables in memory.
+* [acquirevar](acquirevar.md) - Acquires variable value from a specified variables scope.
+* [assignin](assignin.md) - Assignin value to a variable in a specified variables scope.
+* [clear](clear.md) - Remove variable from workspace.
+* [global](global.md) - Defines a global variable.
+* [isglobal](isglobal.md) - Checks if a variable is global.
+* [isvar](isvar.md) - Check for the existence of an variable.
+* [memory](memory.md) - Get memory information.
+* [persistent](persistent.md) - Persistent variable.
+* [varislock](varislock.md) - Checks if a variable is locked.
+* [varlock](varlock.md) - Locks a variable.
+* [varunlock](varunlock.md) - Unlocks a variable.
+* [who](who.md) - List variables in memory.
 
 
 

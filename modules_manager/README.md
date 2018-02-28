@@ -5,15 +5,16 @@
 
 modules manager
 
+## Description
 modules manager functions
 
 
-addmodule.md addmodule</a> &#8212; <span class = "refentry-description">Add module to Nelson.
-getmodules.md getmodules</a> &#8212; <span class = "refentry-description">Returns list of modules loaded in Nelson.
-ismodule.md ismodule</a> &#8212; <span class = "refentry-description">Checks if a module is loaded.
-modulepath.md modulepath</a> &#8212; <span class = "refentry-description">Returns path of a module.
-removemodule.md removemodule</a> &#8212; <span class = "refentry-description">remove a module from Nelson.
-requiremodule.md requiremodule</a> &#8212; <span class = "refentry-description">Returns an error if module is not loaded in Nelson.
+* [addmodule](addmodule.md) - Add module to Nelson.
+* [getmodules](getmodules.md) - Returns list of modules loaded in Nelson.
+* [ismodule](ismodule.md) - Checks if a module is loaded.
+* [modulepath](modulepath.md) - Returns path of a module.
+* [removemodule](removemodule.md) - remove a module from Nelson.
+* [requiremodule](requiremodule.md) - Returns an error if module is not loaded in Nelson.
 
 
 

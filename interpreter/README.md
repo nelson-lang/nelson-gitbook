@@ -5,14 +5,15 @@
 
 interpreter functions
 
+## Description
 interpreter functions
 
 
-iskeyword.md iskeyword</a> &#8212; <span class = "refentry-description">Returns all Nelson keywords.
-keyboard.md keyboard</a> &#8212; <span class = "refentry-description">Stops script execution and enter in debug mode.
-max_recursion_depth.md max_recursion_depth</a> &#8212; <span class = "refentry-description">Internal limit on the number of times a function may be called recursively.
-parsefile.md parsefile</a> &#8212; <span class = "refentry-description">Parse a Nelson file.
-parsestring.md parsestring</a> &#8212; <span class = "refentry-description">Parse a string.
+* [iskeyword](iskeyword.md) - Returns all Nelson keywords.
+* [keyboard](keyboard.md) - Stops script execution and enter in debug mode.
+* [max_recursion_depth](max_recursion_depth.md) - Internal limit on the number of times a function may be called recursively.
+* [parsefile](parsefile.md) - Parse a Nelson file.
+* [parsestring](parsestring.md) - Parse a string.
 
 
 

@@ -5,15 +5,16 @@
 
 logical type functions
 
+## Description
 logical type functions
 
 
-all.md all</a> &#8212; <span class = "refentry-description">all of the elements of a matrix satisfy some condition.
-any.md any</a> &#8212; <span class = "refentry-description">any of the elements of a matrix satisfy some condition.
-false.md false</a> &#8212; <span class = "refentry-description">Logical false.
-logical.md logical</a> &#8212; <span class = "refentry-description">Converts a numeric value to logical type.
-true.md true</a> &#8212; <span class = "refentry-description">Logical true.
-xor.md xor</a> &#8212; <span class = "refentry-description">Exclusive or.
+* [all](all.md) - all of the elements of a matrix satisfy some condition.
+* [any](any.md) - any of the elements of a matrix satisfy some condition.
+* [false](false.md) - Logical false.
+* [logical](logical.md) - Converts a numeric value to logical type.
+* [true](true.md) - Logical true.
+* [xor](xor.md) - Exclusive or.
 
 
 

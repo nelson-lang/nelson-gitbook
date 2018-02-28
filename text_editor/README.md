@@ -5,12 +5,13 @@
 
 text editor
 
+## Description
 Embedded Nelson text editor
 
 
-edit.md edit</a> &#8212; <span class = "refentry-description">function editor.
-editor.md editor</a> &#8212; <span class = "refentry-description">call the embedded text editor.
-smartindent.md smartindent</a> &#8212; <span class = "refentry-description">Smart indent a nelson file
+* [edit](edit.md) - function editor.
+* [editor](editor.md) - call the embedded text editor.
+* [smartindent](smartindent.md) - Smart indent a nelson file
 
 
 

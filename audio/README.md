@@ -5,29 +5,30 @@
 
 Audio playback
 
+## Description
 Audio playback functions.
 
 
-audiodevinfo.md audiodevinfo</a> &#8212; <span class = "refentry-description">Get audio devices information.
-audioinfo.md audioinfo</a> &#8212; <span class = "refentry-description">Get audio file information.
-audiometadata.md audiometadata</a> &#8212; <span class = "refentry-description">Get/Set metadata of audio file .
-audioplayer.md audioplayer</a> &#8212; <span class = "refentry-description">Audio player object.
-audioplayer_delete.md audioplayer_delete</a> &#8212; <span class = "refentry-description">Removes audioplayer object.
-audioplayer_fieldnames.md audioplayer_fieldnames</a> &#8212; <span class = "refentry-description">Returns the properties name of an audioplayer object.
-audioplayer_get.md audioplayer_get</a> &#8212; <span class = "refentry-description">Get property value from audioplayer interface.
-audioplayer_pause.md audioplayer_pause</a> &#8212; <span class = "refentry-description">Pause an audioplayer object.
-audioplayer_set.md audioplayer_set</a> &#8212; <span class = "refentry-description">Set object or interface property to specified value.
-audioplayer_stop.md audioplayer_stop</a> &#8212; <span class = "refentry-description">Stops an audioplayer object.
-audioplayer_used.md audioplayer_used</a> &#8212; <span class = "refentry-description">Returns list of current used audioplayer handle.
-audioread.md audioread</a> &#8212; <span class = "refentry-description">Read an audio file.
-audiosupportedformats.md audiosupportedformats</a> &#8212; <span class = "refentry-description">Get audio file supported formats.
-audiowrite.md audiowrite</a> &#8212; <span class = "refentry-description">Writes an audio file.
-beep.md beep</a> &#8212; <span class = "refentry-description">Produces a beep sound.
-isplaying.md isplaying</a> &#8212; <span class = "refentry-description">get info about audio playback is in progress.
-play.md play</a> &#8212; <span class = "refentry-description">Plays an audioplayer object.
-playblocking.md playblocking</a> &#8212; <span class = "refentry-description">Plays an audioplayer object with blocking.
-resume.md resume</a> &#8212; <span class = "refentry-description">Resumes an audioplayer object.
-stop.md stop</a> &#8212; <span class = "refentry-description">Stops an audioplayer object.
+* [audiodevinfo](audiodevinfo.md) - Get audio devices information.
+* [audioinfo](audioinfo.md) - Get audio file information.
+* [audiometadata](audiometadata.md) - Get/Set metadata of audio file .
+* [audioplayer](audioplayer.md) - Audio player object.
+* [audioplayer_delete](audioplayer_delete.md) - Removes audioplayer object.
+* [audioplayer_fieldnames](audioplayer_fieldnames.md) - Returns the properties name of an audioplayer object.
+* [audioplayer_get](audioplayer_get.md) - Get property value from audioplayer interface.
+* [audioplayer_pause](audioplayer_pause.md) - Pause an audioplayer object.
+* [audioplayer_set](audioplayer_set.md) - Set object or interface property to specified value.
+* [audioplayer_stop](audioplayer_stop.md) - Stops an audioplayer object.
+* [audioplayer_used](audioplayer_used.md) - Returns list of current used audioplayer handle.
+* [audioread](audioread.md) - Read an audio file.
+* [audiosupportedformats](audiosupportedformats.md) - Get audio file supported formats.
+* [audiowrite](audiowrite.md) - Writes an audio file.
+* [beep](beep.md) - Produces a beep sound.
+* [isplaying](isplaying.md) - get info about audio playback is in progress.
+* [play](play.md) - Plays an audioplayer object.
+* [playblocking](playblocking.md) - Plays an audioplayer object with blocking.
+* [resume](resume.md) - Resumes an audioplayer object.
+* [stop](stop.md) - Stops an audioplayer object.
 
 
 

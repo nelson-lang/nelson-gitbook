@@ -5,10 +5,11 @@
 
 history manager
 
+## Description
 history functions
 
 
-history.md history</a> &#8212; <span class = "refentry-description">history manager.
+* [history](history.md) - history manager.
 
 
 
