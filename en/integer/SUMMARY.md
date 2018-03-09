@@ -1,0 +1,12 @@
+* [integer](README.md)
+    * [int16](int16.md)
+    * [int32](int32.md)
+    * [int64](int64.md)
+    * [int8](int8.md)
+    * [intmax](intmax.md)
+    * [intmin](intmin.md)
+    * [uint16](uint16.md)
+    * [uint32](uint32.md)
+    * [uint64](uint64.md)
+    * [uint8](uint8.md)
+

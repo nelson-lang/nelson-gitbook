@@ -1,0 +1,12 @@
+* [os_functions](README.md)
+    * [computer](computer.md)
+    * [createGUID](createGUID.md)
+    * [getenv](getenv.md)
+    * [ismac](ismac.md)
+    * [ispc](ispc.md)
+    * [isunix](isunix.md)
+    * [searchenv](searchenv.md)
+    * [setenv](setenv.md)
+    * [system](system.md)
+    * [winopen](winopen.md)
+

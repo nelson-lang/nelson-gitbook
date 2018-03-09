@@ -1,0 +1,48 @@
+
+
+# inv
+
+Matrix inverse.
+
+## Syntax
+
+- res = inv(x)
+
+## Input argument
+
+ - x - a numeric value: scalar or square matrix (double or single)
+
+## Output argument
+
+ - res - a numeric value: a square matrix
+
+## Description
+
+
+  <p><b>inv(x)</b> computes the matrix inverse of x.</p>
+
+
+## Example
+
+```Nelson
+X = rand(10, 10);
+Y = inv(X);
+Y * X
+```
+
+## See also
+
+[expm](expm.md).
+## History
+
+|Version|Description|
+|------|------|
+|1.0.0|initial version|
+
+
+## Author
+
+Allan CORNET
+
+
+
