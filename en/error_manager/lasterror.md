@@ -24,13 +24,13 @@ Returns last recorded error message.
 
 ## Examples
 
-```Nelson
+```matlab
 state = execstr('xxxxxx', 'errcatch')
 if ~state
   l = lasterror()
 end
 ```
-```Nelson
+```matlab
 state = execstr('xxxxxx', 'errcatch')
 l = lasterror();
 lasterror('reset');

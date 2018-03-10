@@ -24,7 +24,7 @@ Round up
 
 ## Example
 
-```Nelson
+```matlab
 ceil(pi)
 ```
 

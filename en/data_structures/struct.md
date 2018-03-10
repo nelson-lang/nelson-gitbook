@@ -28,17 +28,17 @@ Creates a struct.
 
 ## Examples
 
-```Nelson
+```matlab
 struct()
 ```
-```Nelson
+```matlab
 struct([])
 ```
-```Nelson
+```matlab
 date_st = struct('day', 15, 'month' ,'August','year', 1974)
 ```
 Other way to create a struct:
-```Nelson
+```matlab
 date_st.day = 15
 date_st.month = 'August'
 date_st.year = 1974)

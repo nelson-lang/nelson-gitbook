@@ -25,7 +25,7 @@ not logical, ~ operator
 
 ## Example
 
-```Nelson
+```matlab
 M = false(3, 3);
 ~M
 ```

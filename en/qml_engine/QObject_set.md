@@ -26,7 +26,7 @@ Set a property value of an QObject handle (set).
 
 ## Example
 
-```Nelson
+```matlab
 h = errordlg()
 h.visible = false; // or set(h, 'visible', false)
 h.title = 'new title' // or set(h, 'title', 'new title')

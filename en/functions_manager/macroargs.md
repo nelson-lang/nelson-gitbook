@@ -25,7 +25,7 @@ Returns variables names of a function.
 
 ## Example
 
-```Nelson
+```matlab
 [out_args, in_args] = macroarg('getfield')
 [out_args, in_args] = macroarg('deal')
 ```

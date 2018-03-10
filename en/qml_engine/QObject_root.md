@@ -23,7 +23,7 @@ QObject root object.
 [QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
 ## Example
 
-```Nelson
+```matlab
 h1 = QObject_root()
 h1.windowTitle
 h1.windowTitle = 'Your title'

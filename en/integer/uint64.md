@@ -25,7 +25,7 @@ Converts to 64-bit unsigned integer.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1 12 -120 127 -9e24 9e23]
 B = uint64(A)
 ```

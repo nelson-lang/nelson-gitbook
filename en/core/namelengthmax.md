@@ -21,14 +21,14 @@ Return the maximum variable name length.
 ## Examples
 
 Working: identifier length 4096 characters
-```Nelson
+```matlab
 ID = ['A', char(double('0') * ones(1, namelengthmax -1 ))];
 length(ID)
 STR = [ID, ' = 3'];
 execstr(STR)
 ```
 Not Working: identifier length 4097 characters
-```Nelson
+```matlab
 ID = ['A', char(double('0') * ones(1, namelengthmax))];
 length(ID)
 STR = [ID, ' = 3'];

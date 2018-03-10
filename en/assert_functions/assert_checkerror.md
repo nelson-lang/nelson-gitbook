@@ -26,10 +26,10 @@ If the command does not raise the expected error message, then assert_checkerror
 
 ## Examples
 
-```Nelson
+```matlab
 assert_checkerror('cos', _('Wrong number of input arguments.'));
 ```
-```Nelson
+```matlab
 assert_checkerror('cos', _('Wrong error message.'));
 ```
 

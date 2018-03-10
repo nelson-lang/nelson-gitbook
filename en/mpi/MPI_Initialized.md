@@ -23,7 +23,7 @@ Indicates whether MPI_Init has been called.
 [MPI_Init](MPI_Init.md), [MPI_Finalize](MPI_Finalize.md).
 ## Example
 
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

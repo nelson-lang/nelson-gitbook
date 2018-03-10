@@ -29,11 +29,11 @@ Returns the number of input arguments.
 ## Examples
 
 With an macro function:
-```Nelson
+```matlab
 nargin('getfield')
 ```
 With an builtin function:
-```Nelson
+```matlab
 nargin('cos')
 ```
 

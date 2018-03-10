@@ -22,7 +22,7 @@ Computes the sine in degree for each element of x.
 
 ## Example
 
-```Nelson
+```matlab
 A = [0 30 45 60 90 360];
 sind(A)
 ```

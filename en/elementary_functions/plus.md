@@ -26,15 +26,15 @@ Addition, + operator
 
 ## Examples
 
-```Nelson
+```matlab
 plus(3, 4)
 3 + 4
 ```
-```Nelson
+```matlab
 [1, 2] + 1
 plus([1, 2], 1)
 ```
-```Nelson
+```matlab
 ones(0, 0) + 1
 ```
 

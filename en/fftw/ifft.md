@@ -28,7 +28,7 @@ Inverse Fast Fourier transform.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1:10]
 Y = fft(A)
 R = ifft(Y)

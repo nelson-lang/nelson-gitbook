@@ -31,14 +31,14 @@ Size of an object.
 
 ## Examples
 
-```Nelson
+```matlab
 X = rand(3, 4, 5, 6);
 size(X)
 size(X, 3)
 [r, c] =size(X)
 [s1, s2, s3, s4] = size(X)
 ```
-```Nelson
+```matlab
 size(cell(4,3))
 ```
 

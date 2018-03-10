@@ -28,7 +28,7 @@ Close an opened file.
 
 ## Example
 
-```Nelson
+```matlab
 fd = fopen([tempdir(), filesep(), 'fclose_tst'],'wt');
 status = fclose(fd)
 status = fclose(fd)

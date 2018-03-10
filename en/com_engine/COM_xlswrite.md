@@ -40,10 +40,10 @@ Write Microsoft Excel spreadsheet file using COM.
 
 ## Examples
 
-```Nelson
+```matlab
 COM_xlswrite([tempdir(), '/example_xlswrite_1.xlsx'], rand(3, 3))
 ```
-```Nelson
+```matlab
 data = {'Time', 'Temp'; 12 98; 13 99; Inf 97};
 s = COM_xlswrite([tempdir(), '/example_xlswrite_2.xlsx'], data, 'Temperatures');
 ```

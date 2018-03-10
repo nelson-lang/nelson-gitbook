@@ -23,7 +23,7 @@ Returns current directory.
 
 ## Example
 
-```Nelson
+```matlab
 r = pwd()
 pwd()
 ```

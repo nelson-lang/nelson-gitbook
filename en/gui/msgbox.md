@@ -33,13 +33,13 @@ Creates a message dialog box.
 
 ## Examples
 
-```Nelson
+```matlab
 h = msgbox('help string')
 ```
-```Nelson
+```matlab
 h = msgbox('help string', 'dialog title')
 ```
-```Nelson
+```matlab
 h = msgbox('help string', 'dialog title')
 h = msgbox('help string', 'dialog title', 'on')
 ```

@@ -21,7 +21,7 @@ Set the value of an environment variable.
 
 ## Example
 
-```Nelson
+```matlab
 setenv('MY_ENV_VAR', 'funvalue')
 getenv('MY_ENV_VAR')
 setenv('MY_ENV_VAR', '')

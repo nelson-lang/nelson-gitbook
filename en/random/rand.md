@@ -38,25 +38,25 @@ M. Matsumoto and T. Nishimura, Mersenne Twister: A 623-dimensionally equidistrib
 
 ## Examples
 
-```Nelson
+```matlab
 rng('default');
 rand
 rng('default');
 rand
 ```
-```Nelson
+```matlab
 rng('default');
 rand(6)
 ```
-```Nelson
+```matlab
 rng('default');
 rand(3, 2, 3)
 ```
-```Nelson
+```matlab
 rng('default');
 rand(3, 2, 'single')
 ```
-```Nelson
+```matlab
 rng('default');
 v = single([3, 3]);
 rand(3, 2, 'like', v)

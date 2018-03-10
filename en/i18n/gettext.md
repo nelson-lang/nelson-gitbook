@@ -28,7 +28,7 @@ Get text translated into the current locale.
 
 ## Example
 
-```Nelson
+```matlab
 disp(_('function not found.'))
 ```
 

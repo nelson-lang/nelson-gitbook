@@ -25,7 +25,7 @@ Computes the matrix exponential of a square matrix.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(3, 3);
 res = expm(A)
 res = expm(A+i)

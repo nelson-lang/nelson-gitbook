@@ -28,7 +28,7 @@ Read string from a file, stopping after a newline, or EOF, or n characters have 
 
 ## Examples
 
-```Nelson
+```matlab
 fid = fopen([nelsonroot(), '/etc/startup.nls']);
   tline = fgets(fid);
   while ischar(tline)
@@ -38,7 +38,7 @@ fid = fopen([nelsonroot(), '/etc/startup.nls']);
 
   fclose(fid);
 ```
-```Nelson
+```matlab
 fid = fopen([nelsonroot(), '/etc/startup.nls']);
 
   tline = fgets(fid, 5);

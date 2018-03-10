@@ -27,7 +27,7 @@ Returns true if the QObject is a widget.
 [QObject_set (set)](QObject_set.md).
 ## Example
 
-```Nelson
+```matlab
 h = errordlg()
 r = QObject_iswidgettype(h)
 ```

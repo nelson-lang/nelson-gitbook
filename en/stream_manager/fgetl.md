@@ -26,7 +26,7 @@ Read string from a file without newline.
 
 ## Example
 
-```Nelson
+```matlab
 fid = fopen([nelsonroot(), '/etc/startup.nls']);
 
 tline = fgetl(fid);

@@ -20,7 +20,7 @@ Checks if version is for Windows platform.
 
 ## Example
 
-```Nelson
+```matlab
 if ispc
   disp('Your platform is Windows')
 else

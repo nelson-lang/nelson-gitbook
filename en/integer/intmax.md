@@ -34,11 +34,11 @@ Return the largest integer that can be represented in an integer type.
 
 ## Examples
 
-```Nelson
+```matlab
 A = intmax('int64')
 res = class(A)
 ```
-```Nelson
+```matlab
 A = intmax('uint32')
 res = class(C)
 ```

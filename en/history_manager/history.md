@@ -81,7 +81,7 @@ history manager.
 ## Examples
 
 Example to share your history file in OneDrive cloud
-```Nelson
+```matlab
 OneDrivePath = getenv('OneDrive');
 if (strcmp(OneDrivePath, '') == false)
   NelsonOneDrivePath = [OneDrivePath, '/Nelson'];
@@ -91,7 +91,7 @@ if (strcmp(OneDrivePath, '') == false)
   history('load', NelsonOneDrivePathFilename);
 end
 ```
-```Nelson
+```matlab
 history()
 c = history()
 ```

@@ -25,7 +25,7 @@ Unary minus, - operator
 
 ## Example
 
-```Nelson
+```matlab
 M = 3;
 -M
 ```

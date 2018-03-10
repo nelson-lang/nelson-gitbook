@@ -22,11 +22,11 @@ Return true if variable var is an unsigned 32-bit integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isuint32(A)
 ```
-```Nelson
+```matlab
 B = uint32(3);
 res = isuint32(B)
 ```

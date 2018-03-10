@@ -28,7 +28,7 @@ Load a QML string.
 [qml_loadstring](qml_loadstring.md).
 ## Example
 
-```Nelson
+```matlab
 // see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
 

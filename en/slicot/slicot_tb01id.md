@@ -41,7 +41,7 @@ http://www.icm.tu-bs.de/NICONET/doc/TB01ID.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 5;
 M = 2;
 P = 5;

@@ -21,7 +21,7 @@ Convers html page to pdf.
 
 ## Example
 
-```Nelson
+```matlab
 txt = {'## Example of Markdown text';
 '>Nelson html to pdf conversion example'};
 

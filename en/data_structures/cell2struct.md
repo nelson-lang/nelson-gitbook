@@ -27,7 +27,7 @@ Creates a struct from a cell.
 
 ## Example
 
-```Nelson
+```matlab
 ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
 fields = {'Height','Name'}
 A = cell2struct (ce, fields, 1)

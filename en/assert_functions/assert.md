@@ -29,7 +29,7 @@ Raises an error if x is false. Raises an error if x is not a logical.
 
 ## Example
 
-```Nelson
+```matlab
 assert(4 == 3, _('error for comparaison.'))
 ```
 

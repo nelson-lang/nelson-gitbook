@@ -29,21 +29,21 @@ Return true if arguments are approximately equal, within the precision.
 
 ## Examples
 
-```Nelson
+```matlab
 A = pi
 B = single(pi)
 res = isapprox(A, B)
 ```
-```Nelson
+```matlab
 A = pi
 B = single(pi)
 res = isapprox(A, B, 1e-4)
 ```
-```Nelson
+```matlab
 A = [pi NaN]
 res = isapprox(A, A)
 ```
-```Nelson
+```matlab
 A = [pi NaN]
 B = [pi + 2*eps, NaN]
 res = isapprox(A, B)

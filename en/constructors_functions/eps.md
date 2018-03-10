@@ -27,13 +27,13 @@ Creates an epsilon (machine precision)
 
 ## Examples
 
-```Nelson
+```matlab
 eps
 ```
-```Nelson
+```matlab
 eps('double')
 ```
-```Nelson
+```matlab
 eps('single')
 ```
 

@@ -42,7 +42,7 @@ addition
 
 ## Examples
 
-```Nelson
+```matlab
 A = rand(3,1)
 fileID = fopen([tempdir(), '/doubledata.bin'],'w');
 fwrite(fileID, A,'double');
@@ -52,7 +52,7 @@ fileID = fopen([tempdir(), '/doubledata.bin'],'r');
 R = fread(fileID, 'double')
 fclose(fileID);
 ```
-```Nelson
+```matlab
 fileID = fopen([tempdir(), '/uint16nine.bin'],'w');
 fwrite(fileID,[1:9],'uint16');
 fclose(fileID);

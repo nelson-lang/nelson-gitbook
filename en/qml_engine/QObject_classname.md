@@ -27,7 +27,7 @@ Returns class name of an QObject handle.
 [QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
 ## Example
 
-```Nelson
+```matlab
 h1 = QObject_root()
 h1.className
 QObject_classname(h1)

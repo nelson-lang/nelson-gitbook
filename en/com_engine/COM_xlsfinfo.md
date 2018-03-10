@@ -28,7 +28,7 @@ Determines if file contains Microsoft Excel spreadsheet.
 
 ## Example
 
-```Nelson
+```matlab
 [status, sheets, xlsformat] =COM_xlsfinfo([modulepath('com_engine'), '/examples/sample_xslx.xlsx'])
 ```
 

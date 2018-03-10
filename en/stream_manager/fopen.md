@@ -32,7 +32,7 @@ Open a file in Nelson.
 
 ## Example
 
-```Nelson
+```matlab
 fid = fopen([tempdir(), filesep(), 'fopen_tst'], 'wt');
 [filename, permission] = fopen(fid)
 fids = fopen('all')

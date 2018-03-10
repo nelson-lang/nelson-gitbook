@@ -53,13 +53,13 @@ Runs tests
 
 ## Examples
 
-```Nelson
+```matlab
 test_run('string');
 ```
-```Nelson
+```matlab
 test_run({'string', 'time'})
 ```
-```Nelson
+```matlab
 test_run({'string', 'time'}, 'all', [tempdir(), '/tests.xml'])
 ```
 

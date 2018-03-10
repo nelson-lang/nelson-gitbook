@@ -22,10 +22,10 @@ Convert an integer array to a string
 
 ## Examples
 
-```Nelson
+```matlab
 R = int2str ([-Inf, 2, NaN; 4, Inf, 6])
 ```
-```Nelson
+```matlab
 R = int2str(uint64(intmax('uint64')))
 ```
 

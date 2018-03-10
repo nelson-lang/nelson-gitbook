@@ -21,7 +21,7 @@ Return the print name from the communicator.
 ## Example
 
 CLI required
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

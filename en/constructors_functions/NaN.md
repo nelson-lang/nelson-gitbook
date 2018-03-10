@@ -26,13 +26,13 @@ Creates an Not-a-Number
 
 ## Examples
 
-```Nelson
+```matlab
 NaN
 ```
-```Nelson
+```matlab
 3 + NaN
 ```
-```Nelson
+```matlab
 NaN != NaN
 isnan(NaN)
 ```

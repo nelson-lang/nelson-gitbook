@@ -28,7 +28,7 @@ http://www.rfc-editor.org/rfc/rfc7159.txt
 
 ## Examples
 
-```Nelson
+```matlab
 field1 = 'f1';  value1 = zeros(1,10);
 field2 = 'f2';  value2 = {'a', 'b'};
 field3 = 'f3';  value3 = {pi, pi*pi};
@@ -37,7 +37,7 @@ s = struct(field1,value1,field2,value2,field3,value3,field4,value4)
 r = jsonencode(s)
 r2 = jsondecode(r)
 ```
-```Nelson
+```matlab
 jsondecode(fileread([modulepath('json'), '/examples/patient.json']))
 ```
 

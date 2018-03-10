@@ -29,16 +29,16 @@ Creates a help dialog box.
 
 ## Examples
 
-```Nelson
+```matlab
 h = helpdlg()
 ```
-```Nelson
+```matlab
 h = helpdlg('help string')
 ```
-```Nelson
+```matlab
 h = helpdlg('help string', 'dialog title')
 ```
-```Nelson
+```matlab
 h = helpdlg('help string', 'dialog title')
 h = helpdlg('help string', 'dialog title', 'on')
 ```

@@ -31,7 +31,7 @@ Logical false.
 
 ## Example
 
-```Nelson
+```matlab
 false
 false(4)
 false(4, 1, 4)

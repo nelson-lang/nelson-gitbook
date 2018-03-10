@@ -32,7 +32,7 @@ Check for the existence.
 
 ## Example
 
-```Nelson
+```matlab
 exist('fileread')
 fileread = 3;
 exist('fileread')

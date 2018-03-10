@@ -22,7 +22,7 @@ Nelson tool to interface C or Fortran functions with Nelson.
 ## Examples
 
 NIG_FUNCTION description
-```Nelson
+```matlab
 // Nelson Interface Generator (NIG) example
 
 NIG_FUNCTION = struct();
@@ -48,7 +48,7 @@ NIG_FUNCTION.VARIABLES(IDX).NAME = 'OUTPUT';
 NIG_FUNCTION.VARIABLES(IDX).TYPE = 'integer';
 NIG_FUNCTION.VARIABLES(IDX).MODE = 'output';
 ```
-```Nelson
+```matlab
 nig(NIG_FUNCTION, tempdir())
 fileread([tempdir(),'/Gateway.cpp'])
 fileread([tempdir(),'/example_nig_sumBuiltin.hpp'])

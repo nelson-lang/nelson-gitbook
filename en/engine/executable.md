@@ -32,13 +32,13 @@ Executables to start Nelson software.
 
 ## Examples
 
-```Nelson
+```matlab
 nelson-adv-cli -q -e "a = 1 + 2"
 ```
-```Nelson
+```matlab
 nelson-gui -v
 ```
-```Nelson
+```matlab
 nelson-gui --help
 ```
 

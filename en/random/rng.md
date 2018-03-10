@@ -51,7 +51,7 @@ Random Number Generator.
 
 ## Example
 
-```Nelson
+```matlab
 rng('default');
 r = rng()
 lst = rng('enginelist')

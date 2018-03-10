@@ -26,7 +26,7 @@ Clear an built-in function.
 
 ## Example
 
-```Nelson
+```matlab
 cos(3)
 a = clearfun('cos')
 cos(3)

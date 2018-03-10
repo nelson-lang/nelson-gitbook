@@ -56,7 +56,7 @@ http://www.icm.tu-bs.de/NICONET/doc/SG02AD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 2;
 M = 1;
 P = 3;

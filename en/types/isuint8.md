@@ -22,11 +22,11 @@ Return true if variable var is an unsigned 8-bit integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isuint8(A)
 ```
-```Nelson
+```matlab
 B = uint8(3);
 res = isuint8(B)
 ```

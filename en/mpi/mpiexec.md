@@ -32,7 +32,7 @@ Run an MPI script.
 [MPI_Init](MPI_Init.md).
 ## Example
 
-```Nelson
+```matlab
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.nls'], 4)
 ```
 

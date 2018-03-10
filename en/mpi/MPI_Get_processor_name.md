@@ -25,7 +25,7 @@ Gets the name of the processor.
 [MPI_Init](MPI_Init.md).
 ## Example
 
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

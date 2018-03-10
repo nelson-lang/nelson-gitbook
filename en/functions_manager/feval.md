@@ -29,7 +29,7 @@ Evaluates function.
 
 ## Example
 
-```Nelson
+```matlab
 a = feval('cos', 0)
 b = feval(str2func('cos'), 0)
 ```

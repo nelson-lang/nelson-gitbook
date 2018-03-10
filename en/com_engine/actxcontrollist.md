@@ -20,7 +20,7 @@ Get available ActiveX controls.
 
 ## Example
 
-```Nelson
+```matlab
 l = actxcontrollist()
 ```
 

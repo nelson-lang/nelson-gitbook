@@ -25,7 +25,7 @@ Converts to 64-bit signed integer.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1 12 -120 127 -9e24 9e23]
 B = int64(A)
 ```

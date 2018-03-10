@@ -29,16 +29,16 @@ Creates a warning dialog box.
 
 ## Examples
 
-```Nelson
+```matlab
 h = warndlg()
 ```
-```Nelson
+```matlab
 h = warndlg('help string')
 ```
-```Nelson
+```matlab
 h = warndlg('help string', 'dialog title')
 ```
-```Nelson
+```matlab
 h = warndlg('help string', 'dialog title')
 h = warndlg('help string', 'dialog title', 'on')
 ```

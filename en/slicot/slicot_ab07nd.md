@@ -40,7 +40,7 @@ http://www.icm.tu-bs.de/NICONET/doc/AB07ND.html
 
 ## Example
 
-```Nelson
+```matlab
 A_IN = [1.0   2.0   0.0;
    4.0  -1.0   0.0;
    0.0   0.0   1.0];

@@ -25,7 +25,7 @@ Length of an object.
 
 ## Example
 
-```Nelson
+```matlab
 length(ones(3, 0))
 length(3)
 length([1 2 3 4 5])

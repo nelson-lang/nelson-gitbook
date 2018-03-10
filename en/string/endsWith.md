@@ -25,7 +25,7 @@ checks if string ends with pattern.
 
 ## Example
 
-```Nelson
+```matlab
 str = 'To make a mountain out of a molehill';
 k = endsWith (str, 'hill')
 k = endsWith (str, 'molehill')

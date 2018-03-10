@@ -20,7 +20,7 @@ Checks if version is for MacOS platform.
 
 ## Example
 
-```Nelson
+```matlab
 if ismac
   disp('Your platform is MacOs')
 else

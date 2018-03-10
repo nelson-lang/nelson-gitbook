@@ -31,7 +31,7 @@ Pauses script execution.
 ## Example
 
 an example
-```Nelson
+```matlab
 state = pause
 echo('press return to continue.')
 pause

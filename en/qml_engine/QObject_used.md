@@ -23,7 +23,7 @@ Returns list of current used QObject handle.
 [QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
 ## Example
 
-```Nelson
+```matlab
 h1 = errordlg()
 h2 = errordlg()
 h3 = errordlg()

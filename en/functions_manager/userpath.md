@@ -33,7 +33,7 @@ Displays or modify default user functions directory.
 
 ## Example
 
-```Nelson
+```matlab
 path
 userpath
 ```

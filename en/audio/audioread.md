@@ -33,7 +33,7 @@ Read an audio file.
 
 ## Example
 
-```Nelson
+```matlab
 wav_audio = [modulepath('audio'), '/examples/haha.wav'];
 [y, fs] = audioread(wav_audio);
 playObj = audioplayer(y, fs);

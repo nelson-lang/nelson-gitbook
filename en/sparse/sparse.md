@@ -37,20 +37,20 @@ Sparse matrix definition.
 
 ## Examples
 
-```Nelson
+```matlab
 sp = sparse(eye(3,3))
 ```
-```Nelson
+```matlab
 sp = sparse(3, 3)
 ```
-```Nelson
+```matlab
 I = [1 2 3];
 J = [3 1 2];
 V = [32 42 53];
 sp = sparse(I, J, V)
 size(sp)
 ```
-```Nelson
+```matlab
 I = [1 2 3];
 J = [3 1 2];
 V = [32 42 53];
@@ -59,7 +59,7 @@ size(sp)
 nnz(sp)
 nzmax(sp)
 ```
-```Nelson
+```matlab
 I = [1 2 3];
 J = [3 1 2];
 V = [32 42 53];

@@ -22,11 +22,11 @@ Return true if variable var is a signed 8-bit integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isint8(A)
 ```
-```Nelson
+```matlab
 B = int8(3);
 res = isint8(B)
 ```

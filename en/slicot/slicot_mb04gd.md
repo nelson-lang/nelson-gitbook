@@ -36,7 +36,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MB04GD.html
 
 ## Example
 
-```Nelson
+```matlab
 M = 6;
 N = 5;
 A_IN = [1.    2.    6.    3.    5.;

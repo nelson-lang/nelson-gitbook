@@ -24,7 +24,7 @@ Check for Not a Number entries.
 
 ## Example
 
-```Nelson
+```matlab
 isnan(pi)
 isnan(NaN)
 isnan(int32(3))

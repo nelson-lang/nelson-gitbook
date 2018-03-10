@@ -34,7 +34,7 @@ Reduces values on all processes to a single value.
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Reduce.nls'], 4)
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

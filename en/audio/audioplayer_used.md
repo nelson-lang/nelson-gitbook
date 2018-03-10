@@ -23,7 +23,7 @@ Returns list of current used audioplayer handle.
 [audioplayer_set (set)](audioplayer_set.md), [audioplayer_get (get)](audioplayer_get.md).
 ## Example
 
-```Nelson
+```matlab
 audioplayer_used(),delete(audioplayer_used())
 ```
 

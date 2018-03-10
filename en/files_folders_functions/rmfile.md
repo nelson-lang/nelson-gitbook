@@ -28,7 +28,7 @@ Removes a file.
 
 ## Example
 
-```Nelson
+```matlab
 fd = fopen([tempdir(), '/test_rmfile.txt'], 'wt')
 fclose(fd)
 isfile([tempdir(), '/test_rmfile.txt'])

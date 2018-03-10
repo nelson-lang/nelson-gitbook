@@ -25,7 +25,7 @@ Converts to 32-bit unsigned integer.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1 -2147483649 -120 127 2147483647 2147483648]
 B = uint32(A)
 ```

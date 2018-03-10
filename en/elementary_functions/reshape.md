@@ -28,7 +28,7 @@ Reshapes a vector or a matrix to a different size matrix.
 
 ## Example
 
-```Nelson
+```matlab
 M1 = ones(3, 4, 5);
 M2 = reshape(M1, [5, 3, 4])
 M2 = reshape(M1, 5, [], 4)

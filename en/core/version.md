@@ -42,25 +42,25 @@ Return the version of Nelson.
 
 ## Examples
 
-```Nelson
+```matlab
 ver = version
 ```
-```Nelson
+```matlab
 ver_date = version('-date')
 ```
-```Nelson
+```matlab
 ver_date = version('-description')
 ```
-```Nelson
+```matlab
 ver_date = version('-release')
 ```
-```Nelson
+```matlab
 [ver_major, ver_minor, ver_maintenance, ver_build] = version('-number')
 ```
-```Nelson
+```matlab
 compiler_info = version('-compiler')
 ```
-```Nelson
+```matlab
 [ver, release] = version()
 ```
 

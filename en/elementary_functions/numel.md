@@ -24,7 +24,7 @@ Number of elements.
 
 ## Example
 
-```Nelson
+```matlab
 numel(ones(3, 0))
 numel(ones(3,4))
 numel(ones(3,4,5))

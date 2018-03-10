@@ -25,7 +25,7 @@ Sparse to full matrix conversion.
 
 ## Example
 
-```Nelson
+```matlab
 sp = sparse(eye(3,3))
 F = full(sp)
 ```

@@ -20,7 +20,7 @@ Display a warning message.
 
 ## Example
 
-```Nelson
+```matlab
 warning('your warning message.')
 ```
 

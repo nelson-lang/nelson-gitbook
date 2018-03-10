@@ -24,7 +24,7 @@ Inverse condition number.
 
 ## Example
 
-```Nelson
+```matlab
 X = rand(10, 10);
 r = rcond(X);
 ```

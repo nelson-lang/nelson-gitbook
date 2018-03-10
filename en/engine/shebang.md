@@ -12,7 +12,7 @@ On Unix, Linux operating systems, Parses the rest of the script's initial line a
 
 ## Example
 
-```Nelson
+```matlab
 #!nelson-adv-cli -q -f
 argv()
 disp('shebang example line 1')

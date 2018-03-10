@@ -41,7 +41,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MB03OD.html
 
 ## Example
 
-```Nelson
+```matlab
 M = 6;
 N = 5;
 JOBQR = 'Q';

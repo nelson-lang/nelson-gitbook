@@ -29,11 +29,11 @@ Get/Set metadata of audio file .
 
 ## Examples
 
-```Nelson
+```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 info = audiometadata(wav_file)
 ```
-```Nelson
+```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 modified_wav_file = [tempdir(), '/haha_modified_tags.wav'];
 if isfile(modified_wav_file)

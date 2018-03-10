@@ -30,12 +30,12 @@ Get memory information.
 
 ## Examples
 
-```Nelson
+```matlab
 memory()
 A = ones(1000);
 memory()
 ```
-```Nelson
+```matlab
 clear('A');
 [u1, s1] = memory();
 A = ones(1000);
@@ -45,7 +45,7 @@ clear('A');
 [u3, s3] = memory();
 disp(u3.MemUsedNelson - u2.MemUsedNelson);
 ```
-```Nelson
+```matlab
 [u1, s1] = memory()
 ```
 

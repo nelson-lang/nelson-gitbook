@@ -30,7 +30,7 @@ Create cell array of empty matrices.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(2, 4);
 sz = size(A)
 C = cell(sz)

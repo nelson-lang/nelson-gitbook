@@ -49,7 +49,7 @@ http://www.icm.tu-bs.de/NICONET/doc/SB03MD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 3;
 DICO = 'D';
 FACT = 'N';

@@ -20,7 +20,7 @@ Returns current date under the form of a Unix hour.
 
 ## Example
 
-```Nelson
+```matlab
 datevec(now())
 ```
 

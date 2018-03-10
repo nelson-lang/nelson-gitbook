@@ -26,11 +26,11 @@ Right division, ./ operator
 
 ## Examples
 
-```Nelson
+```matlab
 rdivide(3, 4)
 3 ./ 4
 ```
-```Nelson
+```matlab
 M1 = [2];
 M2 = [-25 88 1];
 M1 ./ M2

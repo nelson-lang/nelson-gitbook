@@ -26,17 +26,17 @@ Creates an identity matrix.
 
 ## Examples
 
-```Nelson
+```matlab
 eye(3)
 ```
-```Nelson
+```matlab
 eye(3,1,3,'single')
 ```
-```Nelson
+```matlab
 A = single([3 3])
 B = eye(2,4,'like', A)
 ```
-```Nelson
+```matlab
 A = eye(0, 4)
 ```
 

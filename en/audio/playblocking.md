@@ -22,7 +22,7 @@ Plays an audioplayer object with blocking.
 
 ## Example
 
-```Nelson
+```matlab
 signal = rand(2, 44100) - 0.5;
 playObj = audioplayer(signal, 44100, 16)
 playblocking(playObj)

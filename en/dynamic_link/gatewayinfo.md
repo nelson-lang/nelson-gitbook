@@ -27,7 +27,7 @@ Returns information about an gateway.
 
 ## Example
 
-```Nelson
+```matlab
 [gateway_name, builtin_list] = gatewayinfo(modulepath(nelsonroot(), 'time', 'builtin'))
 ```
 

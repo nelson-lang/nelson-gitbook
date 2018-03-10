@@ -25,7 +25,7 @@ Returns the methods name of an COM object.
 
 ## Example
 
-```Nelson
+```matlab
 e = actxserver('Excel.Application');
 methods(e)
 delete(e)

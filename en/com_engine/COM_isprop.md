@@ -26,7 +26,7 @@ Determines if input is an existing COM object property.
 
 ## Example
 
-```Nelson
+```matlab
 e = actxserver('Excel.Application');
 isprop(e, 'Window')
 delete(e)

@@ -21,17 +21,17 @@ Display a variable.
 
 ## Examples
 
-```Nelson
+```matlab
 disp('Hello Nelson')
 ```
-```Nelson
+```matlab
 disp(pi)
 ```
-```Nelson
+```matlab
 disp(eye(3, 3))
 ```
 disp always ends with a newline.
-```Nelson
+```matlab
 disp('')
 ```
 

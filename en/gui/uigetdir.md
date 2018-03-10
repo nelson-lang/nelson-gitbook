@@ -28,7 +28,7 @@ Opens dialog box to select a directory.
 
 ## Example
 
-```Nelson
+```matlab
 A = uigetdir();
 ```
 

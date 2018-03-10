@@ -22,11 +22,11 @@ Return true if variable var is a signed 64-bit integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isint64(A)
 ```
-```Nelson
+```matlab
 B = int64(3);
 res = isint64(B)
 ```

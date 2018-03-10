@@ -29,7 +29,7 @@ Returns all children of this object with the given name.
 [QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
 ## Example
 
-```Nelson
+```matlab
 h1 = errordlg()
 h2 = errordlg()
 hr = QObject_findchildren(QObject_root(), 'errordlg', true)

@@ -25,7 +25,7 @@ Converts to 8-bit signed integer.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1 -255 -120 127 128 215]
 B = int8(A)
 ```

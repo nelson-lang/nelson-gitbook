@@ -24,7 +24,7 @@ Returns true is the input argument is an directory.
 
 ## Example
 
-```Nelson
+```matlab
 isdir(nelsonroot())
 isdir([nelsonroot(), '/not_exist_dir'])
 ```

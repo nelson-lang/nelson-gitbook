@@ -25,7 +25,7 @@ Display prompt and wait for user input.
 
 ## Example
 
-```Nelson
+```matlab
 res = input('Please input a value ', 's');
 r = execstr(['A = ', res, ';'], 'errcatch');
 if (r)

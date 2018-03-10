@@ -48,7 +48,7 @@ http://www.icm.tu-bs.de/NICONET/doc/AB01OD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 5;
 M = 2;
 TOL = 0.

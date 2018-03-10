@@ -26,7 +26,7 @@ Matrix right division, / operator.
 
 ## Example
 
-```Nelson
+```matlab
 B = ones(3, 4)
 A = B *2
 A / B

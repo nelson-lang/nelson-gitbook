@@ -18,7 +18,7 @@ Return the search path separator character for the current platform.
 
 ## Example
 
-```Nelson
+```matlab
 A = pathsep
 ```
 

@@ -39,7 +39,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MB05OD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 3;
 NDIAG = 9;
 DELTA = 1.0;

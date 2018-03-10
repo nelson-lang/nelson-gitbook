@@ -30,7 +30,7 @@ Partitions the group that is associated with the specified communicator into a s
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Comm_split.nls'], 10)
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

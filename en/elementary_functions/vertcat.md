@@ -27,13 +27,13 @@ Vertical concatenation.
 
 ## Examples
 
-```Nelson
+```matlab
 A = eye(2, 2);
 B = ones(2, 2);
 C = vertcat(A, B)
 D = [A; B]
 ```
-```Nelson
+```matlab
 A = 'nel';
 B = 'son';
 C = vertcat(A, B)

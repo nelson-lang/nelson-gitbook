@@ -22,7 +22,7 @@ Computes the matrix cosine of a square matrix.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(3, 3);
 res = cosm(A)
 A = [1, 2; 3, 4];

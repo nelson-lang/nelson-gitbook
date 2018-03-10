@@ -22,15 +22,15 @@ Return true if all imaginary part is a zero array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 1 + 0i;
 res = isreal(A)
 ```
-```Nelson
+```matlab
 B = uint8(3);
 res = isreal(B)
 ```
-```Nelson
+```matlab
 A = single([3, i]);
 res = isreal(A)
 ```

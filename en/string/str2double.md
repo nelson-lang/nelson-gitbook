@@ -25,7 +25,7 @@ Converts a string to double.
 
 ## Example
 
-```Nelson
+```matlab
 R = str2double('2.6 + 3j')
 R = str2double('+NaNi')
 R = str2double({'2.71' '3.1415'})

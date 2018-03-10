@@ -24,7 +24,7 @@ Parse a Nelson file.
 
 ## Example
 
-```Nelson
+```matlab
 parsefile([nelsonroot(), '/etc/startup.nls'])
 parsefile([nelsonroot(), '/modules/data_structures/functions/getfield.nlf'])
 ```

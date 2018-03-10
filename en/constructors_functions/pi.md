@@ -16,13 +16,13 @@ Ratio of circle's circumference to its diameter.
 
 ## Examples
 
-```Nelson
+```matlab
 cos(pi)
 ```
-```Nelson
+```matlab
 sin(pi)
 ```
-```Nelson
+```matlab
 4*atan(1) == pi
 ```
 

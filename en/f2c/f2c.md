@@ -28,7 +28,7 @@ Fortran to C converter.
 
 ## Example
 
-```Nelson
+```matlab
 f2c([modulepath(nelsonroot(),'f2c','root'), '/tests/dgemm.f'], tempdir());
 fileread([tempdir(), 'dgemm.c'])
 ```

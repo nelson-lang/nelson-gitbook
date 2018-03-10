@@ -25,7 +25,7 @@ Generates po file header.
 
 ## Example
 
-```Nelson
+```matlab
 poheader('nelson', 'en_US')
 ```
 

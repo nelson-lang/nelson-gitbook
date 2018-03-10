@@ -48,7 +48,7 @@ Return the date/time input as a serial day number.
 
 ## Example
 
-```Nelson
+```matlab
 d = datenum([1973,8,4,12,1,18])
 datevec(d)
 d = datenum('04–Aug-1973 12:01:18')

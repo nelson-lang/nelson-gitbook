@@ -20,7 +20,7 @@ Return true if Nelson started with --quiet option.
 
 ## Example
 
-```Nelson
+```matlab
 disp(isquietmode());
 ```
 

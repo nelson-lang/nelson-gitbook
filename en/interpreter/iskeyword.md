@@ -26,7 +26,7 @@ Returns all Nelson keywords.
 
 ## Example
 
-```Nelson
+```matlab
 iskeyword('for')
 ce = iskeyword()
 ```

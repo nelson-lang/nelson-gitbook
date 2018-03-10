@@ -24,7 +24,7 @@ Returns list of current used MPI_Comm handle.
 ## Example
 
 CLI required
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

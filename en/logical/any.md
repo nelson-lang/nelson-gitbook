@@ -26,7 +26,7 @@ any of the elements of a matrix satisfy some condition.
 
 ## Example
 
-```Nelson
+```matlab
 any([33, 22; 11, 0])
 any([33, 22; 11, 0], 2)
 ```

@@ -29,7 +29,7 @@ Executes a script file (.nls).
 ## Examples
 
 Creates two .nls in temp directory to use as example:
-```Nelson
+```matlab
 fd = fopen([tempdir(), '/example_run_ok.nls'], 'wt');
 fprintf(fd, ['A = 1;', char(10)]);
 fprintf(fd, ['B = 2;', char(10)]);
@@ -42,19 +42,19 @@ fprintf(fd, ['CC = AA + BB', char(10)]);
 fclose(fd);
 ```
 run a script without error.
-```Nelson
+```matlab
 run([tempdir(), '/example_run_ok.nls']);
 ```
 run a script and catch error (no error).
-```Nelson
+```matlab
 bsuccess = run([tempdir(), '/example_run_ok.nls'], 'errcatch')
 ```
 run a script and catch error (with error).
-```Nelson
+```matlab
 bsuccess = run([tempdir(), '/example_run_not_ok.nls'], 'errcatch')
 ```
 run a script and no catch error.
-```Nelson
+```matlab
 run([tempdir(), '/example_run_not_ok.nls'], 'nocatch');
 ```
 

@@ -24,7 +24,7 @@ Persistent variable.
 ## Examples
 
 function to define:
-```Nelson
+```matlab
 function r = test_persistent_function()
  persistent calls;
  if isempty(calls)
@@ -36,7 +36,7 @@ function r = test_persistent_function()
 endfunction
 ```
 calls test_persistent_function
-```Nelson
+```matlab
 for i = 1:30
   r = test_persistent_function();
 end

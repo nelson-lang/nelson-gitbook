@@ -27,7 +27,7 @@ Converts markdown to html.
 
 ## Example
 
-```Nelson
+```matlab
 txt = {'## Example of Markdown text';
 '>Nelson supports markdown ...'};
 html = markdown(txt);

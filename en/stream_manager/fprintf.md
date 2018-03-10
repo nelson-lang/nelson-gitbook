@@ -21,7 +21,7 @@ Writes data to a file.
 
 ## Example
 
-```Nelson
+```matlab
 fileID = fopen([tempdir(), '/fprintf.txt'],'wt');
 fprintf(fileID, 'an example of text.');
 fclose(fileID);

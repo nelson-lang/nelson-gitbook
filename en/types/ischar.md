@@ -22,15 +22,15 @@ Return true if variable var is a char array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = ischar(A)
 ```
-```Nelson
+```matlab
 B = 'NelSon';
 res = ischar(B)
 ```
-```Nelson
+```matlab
 C = [1 ; 3];
 res = ischar(C)
 ```

@@ -36,7 +36,7 @@ Write data in binary form to the file specified by the file descriptor fid.
 
 ## Example
 
-```Nelson
+```matlab
 A = rand(3,1)
 
 fileID = fopen([tempdir(), '/doubledata.bin'],'w');

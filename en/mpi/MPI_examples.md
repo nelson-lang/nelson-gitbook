@@ -16,15 +16,15 @@ Some Nelson MPI examples.
 ## Examples
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
-```Nelson
+```matlab
 edit([modulepath('mpi'), '/examples/MPI_helloworld.nls'])
 ```
 mpiexec([modulepath('mpi'), '/examples/MPI_simpledemo.nls'], 4)
-```Nelson
+```matlab
 edit([modulepath('mpi'), '/examples/MPI_simpledemo.nls'])
 ```
 mpiexec([modulepath('mpi'), '/examples/MPI_parallel_sum.nls'], 40)
-```Nelson
+```matlab
 edit([modulepath('mpi'), '/examples/MPI_parallel_sum.nls'])
 ```
 

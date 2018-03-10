@@ -27,19 +27,19 @@ Return true if all arguments x1, x2, … , xn are equal (same type, same dimensi
 
 ## Examples
 
-```Nelson
+```matlab
 A = eye(3, 3);
 res = isequal(A, A)
 ```
-```Nelson
+```matlab
 A = eye(3, 3);
 B = single(A)
 res = isequal(A, B)
 ```
-```Nelson
+```matlab
 res = isequal('nel', 'son')
 ```
-```Nelson
+```matlab
 res = isequalnNaN, NaN)
 ```
 

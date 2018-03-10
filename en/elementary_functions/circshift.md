@@ -27,7 +27,7 @@ Circular shift
 
 ## Example
 
-```Nelson
+```matlab
 x = [10, 20, 30; 40, 50, 60; 70, 80, 90];
 circshift (x, 1
 circshift (x, -2))

@@ -33,7 +33,7 @@ Schur decomposition.
 
 ## Example
 
-```Nelson
+```matlab
 X = [1 2; 3 4];
 [U, T] = schur(X)
 [U, T] = schur(X * i, 'complex')

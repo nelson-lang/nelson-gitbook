@@ -28,7 +28,7 @@ Matrix to String.
 
 ## Example
 
-```Nelson
+```matlab
 R = mat2str(pi)
 R = mat2str(pi, 'class')
 R = mat2str(pi, 4)

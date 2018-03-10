@@ -33,7 +33,7 @@ Creates a new directory.
 
 ## Example
 
-```Nelson
+```matlab
 mkdir(tempdir(), 'subdir_example')
 if isdir([tempdir(), '/subdir_example'])
 	disp('OK')

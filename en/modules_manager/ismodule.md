@@ -24,7 +24,7 @@ Checks if a module is loaded.
 
 ## Example
 
-```Nelson
+```matlab
 ismodule('core')
 ismodule('mymodule')
 ```

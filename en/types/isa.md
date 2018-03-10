@@ -30,15 +30,15 @@ Return true if var is an object from the class str.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isa(A, 'double')
 ```
-```Nelson
+```matlab
 B = {'NelSon', 3, true};
 res = isa(B, 'cell')
 ```
-```Nelson
+```matlab
 B = {'NelSon', 3, true};
 res = isa(B, 'cell')
 ```

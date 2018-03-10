@@ -28,7 +28,7 @@ Determines the rank of the calling process in the communicator.
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

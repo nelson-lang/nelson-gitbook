@@ -29,19 +29,19 @@ Raises an error if x is true. Raises an error if x is not a logical.
 
 ## Examples
 
-```Nelson
+```matlab
 assert_isfalse(3 ~= 4)
 ```
-```Nelson
+```matlab
 assert_isfalse(3 == 4)
 ```
-```Nelson
+```matlab
 r = assert_isfalse(false)
 ```
-```Nelson
+```matlab
 [r, msg] = assert_isfalse(false)
 ```
-```Nelson
+```matlab
 [r, msg] = assert_isfalse(3 == 3, 'your error message.')
 ```
 

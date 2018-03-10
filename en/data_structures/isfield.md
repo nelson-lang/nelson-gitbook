@@ -27,12 +27,12 @@ Checks if a fieldname exists in a struct.
 
 ## Examples
 
-```Nelson
+```matlab
 S.Nelson = 1;
 isfield(S, 'Nel')
 isfield(S, 'Nelson')
 ```
-```Nelson
+```matlab
 S.nel = 1;
 S.son = 2;
 isfield(S,{ 1, 'nel'; 2, 'son'})

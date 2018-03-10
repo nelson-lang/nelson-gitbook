@@ -18,7 +18,7 @@ Return the file separator character for the current platform.
 
 ## Example
 
-```Nelson
+```matlab
 A = filesep
 ```
 

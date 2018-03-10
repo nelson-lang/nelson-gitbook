@@ -26,17 +26,17 @@ Creates an matrix made of ones.
 
 ## Examples
 
-```Nelson
+```matlab
 ones(3,2)
 ```
-```Nelson
+```matlab
 ones(3,1,3,'single')
 ```
-```Nelson
+```matlab
 A = single([3 3])
 B = ones(2,4,'like', A)
 ```
-```Nelson
+```matlab
 tic(); single(1) * ones(1000); toc()
 tic();ones(1000,'single'); toc()
 ```

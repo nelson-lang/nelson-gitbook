@@ -26,11 +26,11 @@ Element wise multiplication, .* operator
 
 ## Examples
 
-```Nelson
+```matlab
 times(3, 4)
 3 .* 4
 ```
-```Nelson
+```matlab
 M1 = [2 6 10; 4 8 70];
 M2 = [-25 88 1; 23 29 41];
 M1 .* M2

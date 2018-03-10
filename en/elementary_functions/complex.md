@@ -27,7 +27,7 @@ Creates an complex number.
 
 ## Example
 
-```Nelson
+```matlab
 z = complex(3, 2)
 z2 = complex(Inf, Inf)
 z3 = Inf + Inf * i

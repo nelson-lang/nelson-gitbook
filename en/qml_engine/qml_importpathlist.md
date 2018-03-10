@@ -23,7 +23,7 @@ Returns the list of directories where the engine searches for installed modules 
 [qml_addimportpathlist](qml_addimportpathlist.html).
 ## Example
 
-```Nelson
+```matlab
 qml_importpathlist()
 ```
 

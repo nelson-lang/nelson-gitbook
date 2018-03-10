@@ -26,15 +26,15 @@ Subtraction, - operator
 
 ## Examples
 
-```Nelson
+```matlab
 minus(3, 4)
 3 - 4
 ```
-```Nelson
+```matlab
 [1, 2] - 1
 minus([1, 2], 1)
 ```
-```Nelson
+```matlab
 ones(0, 0) - 1
 ```
 

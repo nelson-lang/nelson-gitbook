@@ -22,11 +22,11 @@ Return true if variable var is a single matrix.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3.6;
 res = issingle(A)
 ```
-```Nelson
+```matlab
 B = single([1 ; 3]);
 res = issingle(B)
 ```

@@ -24,7 +24,7 @@ Return a function handle constructed from a string.
 
 ## Example
 
-```Nelson
+```matlab
 fh = str2func('cos')
 class(fh)
 ```

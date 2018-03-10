@@ -28,7 +28,7 @@ Evaluates a js file.
 [qml_evaluatestring](qml_evaluatestring.md).
 ## Example
 
-```Nelson
+```matlab
 test_file = [tempdir() , '/example_qml_evaluatefile.js'];
 f = fopen(test_file, 'wt');
 fwrite(f, 'a = 2 + 4');

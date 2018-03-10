@@ -25,7 +25,7 @@ Acquires variable value from a specified variables scope.
 
 ## Example
 
-```Nelson
+```matlab
 Y = 'variable in base scope';
 function myfun()
   disp(acquirevar('base', 'Y')

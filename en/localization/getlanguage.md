@@ -20,7 +20,7 @@ Returns the current language in Nelson.
 
 ## Example
 
-```Nelson
+```matlab
 l = getlanguage()
 ```
 

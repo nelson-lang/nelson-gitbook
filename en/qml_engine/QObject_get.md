@@ -28,7 +28,7 @@ Retrieve a property value from an QObject handle.
 [QObject_set (set)](QObject_set.md), [get](../handle/get.md).
 ## Example
 
-```Nelson
+```matlab
 h = errordlg()
 h.visible // or get(h, 'visible')
 h.title // or get(h, 'title')

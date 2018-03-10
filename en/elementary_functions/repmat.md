@@ -27,13 +27,13 @@ Replicate and tile an array.
 
 ## Examples
 
-```Nelson
+```matlab
 repmat(1:5, 2)
 ```
-```Nelson
+```matlab
 repmat(1:5, [2 3])
 ```
-```Nelson
+```matlab
 repmat(1:5, [2 3 4])
 ```
 

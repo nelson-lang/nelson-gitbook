@@ -31,7 +31,7 @@ Returns file list.
 
 ## Example
 
-```Nelson
+```matlab
 res = dir(nelsonroot())
 res = dir(nelsonroot(), '-s')
 ```

@@ -16,7 +16,7 @@ Stops script execution and enter in debug mode.
 
 ## Example
 
-```Nelson
+```matlab
 keyboard()
 ```
 

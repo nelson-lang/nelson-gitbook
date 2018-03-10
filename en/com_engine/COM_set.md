@@ -24,7 +24,7 @@ Set object or interface property to specified value.
 
 ## Example
 
-```Nelson
+```matlab
 pWord = actxserver('Word.Application')
 pWord.Visible = true
 invoke(pWord, 'Quit')

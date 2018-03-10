@@ -29,7 +29,7 @@ Read the stopwatch timer.
 
 ## Example
 
-```Nelson
+```matlab
 tic()
 sleep(10)
 toc()

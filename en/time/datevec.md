@@ -27,7 +27,7 @@ Convert a serial date number into a date vector.
 
 ## Example
 
-```Nelson
+```matlab
 datevec(now())
 datevec(720840)
 V = datevec([720840, now()])

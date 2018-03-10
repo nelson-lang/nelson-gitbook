@@ -24,7 +24,7 @@ Return the version number of MPI.
 [MPI_Init](MPI_Init.md), [MPI_Finalize](MPI_Finalize.md).
 ## Example
 
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

@@ -22,7 +22,7 @@ Returns list of modules loaded in Nelson.
 
 ## Example
 
-```Nelson
+```matlab
 [modules_name, modules_root_path] = getmodules()
 ```
 

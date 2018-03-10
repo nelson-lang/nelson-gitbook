@@ -24,7 +24,7 @@ Determine whether input is COM or ActiveX object.
 
 ## Example
 
-```Nelson
+```matlab
 pWord = actxserver('Word.Application')
 iscom(pWord)
 delete pWord

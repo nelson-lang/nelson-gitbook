@@ -26,7 +26,7 @@ Writes an audio file.
 
 ## Example
 
-```Nelson
+```matlab
 wav_audio = [modulepath('audio'), '/examples/haha.wav'];
 [y, fs] = audioread(wav_audio);
 dest_ogg = [tempdir(), '/haha.ogg'];

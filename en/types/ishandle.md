@@ -22,7 +22,7 @@ Return true if variable var is a handle object.
 
 ## Example
 
-```Nelson
+```matlab
 A = 3;
 res = ishandle(A)
 ```

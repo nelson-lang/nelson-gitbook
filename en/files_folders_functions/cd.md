@@ -31,7 +31,7 @@ Changes Nelson current directory.
 
 ## Example
 
-```Nelson
+```matlab
 previous = cd(tempdir())
 cd
 cd ..

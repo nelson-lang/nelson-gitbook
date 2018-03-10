@@ -39,7 +39,7 @@ Get audio devices information.
 
 ## Example
 
-```Nelson
+```matlab
 info = audiodevinfo()
 OUTPUT_DEVICE = 0;
 INPUT_DEVICE = 1;

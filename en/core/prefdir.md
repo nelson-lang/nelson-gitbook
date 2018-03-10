@@ -21,7 +21,7 @@ Return the preferences directory used by Nelson.
 ## Example
 
 an example
-```Nelson
+```matlab
 cd(prefdir)
 ```
 

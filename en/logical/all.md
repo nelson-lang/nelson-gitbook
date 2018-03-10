@@ -26,7 +26,7 @@ all of the elements of a matrix satisfy some condition.
 
 ## Example
 
-```Nelson
+```matlab
 all([33, 22; 11, 0])
 all([33, 22; 11, 0], 2)
 ```

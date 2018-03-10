@@ -52,7 +52,7 @@ http://www.icm.tu-bs.de/NICONET/doc/SB02OD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 2;
 M = 1;
 P = 3;

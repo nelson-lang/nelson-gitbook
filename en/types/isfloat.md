@@ -22,11 +22,11 @@ Return true if variable var is a single or double matrix.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isfloat(A)
 ```
-```Nelson
+```matlab
 A = single(3);
 res = isfloat(A)
 ```

@@ -23,7 +23,7 @@ Returns list of current used COM handle.
 [COM_set (set)](COM_set.md), [COM_get (get)](COM_get.md).
 ## Example
 
-```Nelson
+```matlab
 delete(COM_used())
 e = actxserver('Excel.Application');
 used = COM_used()

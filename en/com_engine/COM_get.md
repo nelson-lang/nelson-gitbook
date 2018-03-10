@@ -27,7 +27,7 @@ Get property value from COM interface.
 
 ## Example
 
-```Nelson
+```matlab
 e = actxserver('Excel.Application');
 get(e, 'Path')
 e.Path

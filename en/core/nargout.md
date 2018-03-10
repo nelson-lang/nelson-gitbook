@@ -29,11 +29,11 @@ Returns the number of output arguments.
 ## Examples
 
 With an macro function:
-```Nelson
+```matlab
 nargout('getfield')
 ```
 With an builtin function:
-```Nelson
+```matlab
 nargout('cos')
 ```
 

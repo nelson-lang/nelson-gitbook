@@ -29,7 +29,7 @@ Returns the path, filename and extension of a file path.
 
 ## Example
 
-```Nelson
+```matlab
 [p, f, e] = fileparts([nelsonroot(), '/etc/finish.nls'])
 p = fileparts([nelsonroot(), '/etc/finish.nls'], 'path')
 f = fileparts([nelsonroot(), '/etc/finish.nls'], 'filename')

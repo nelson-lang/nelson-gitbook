@@ -30,7 +30,7 @@ Calendar.
 
 ## Example
 
-```Nelson
+```matlab
 calendar()
 c = calendar(1973, 8)
 c = calendar(datenum(1973, 8, 4))

@@ -20,7 +20,7 @@ Set position of stream to the beginning.
 
 ## Example
 
-```Nelson
+```matlab
 fileID = fopen([tempdir(), '/frewind.txt'],'wt');
 fprintf(fileID, 'son is beautiful.');
 frewind(fileID);

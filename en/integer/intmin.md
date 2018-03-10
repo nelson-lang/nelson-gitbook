@@ -34,11 +34,11 @@ Return the smallest integer that can be represented in an integer type.
 
 ## Examples
 
-```Nelson
+```matlab
 A = intmin('int64')
 res = class(A)
 ```
-```Nelson
+```matlab
 A = intmin('uint32')
 res = class(C)
 ```

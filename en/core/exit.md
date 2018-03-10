@@ -23,7 +23,7 @@ Exit from current Nelson application
 ## Example
 
 Beware this example will close Nelson
-```Nelson
+```matlab
 exit(33)
 ```
 

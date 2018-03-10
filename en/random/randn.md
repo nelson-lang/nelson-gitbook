@@ -34,25 +34,25 @@ Normally distributed random number.
 
 ## Examples
 
-```Nelson
+```matlab
 rng('default');
 randn
 rng('default');
 randn
 ```
-```Nelson
+```matlab
 rng('default');
 randn(6)
 ```
-```Nelson
+```matlab
 rng('default');
 randn(3, 2, 3)
 ```
-```Nelson
+```matlab
 rng('default');
 randn(3, 2, 'single')
 ```
-```Nelson
+```matlab
 rng('default');
 v = single([3, 3]);
 randn(3, 2, 'like', v)

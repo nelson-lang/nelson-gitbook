@@ -29,7 +29,7 @@ Returns field names of a structure or an handle.
 
 ## Example
 
-```Nelson
+```matlab
 fieldnames(dir())
 ```
 

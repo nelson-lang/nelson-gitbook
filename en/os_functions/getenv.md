@@ -25,7 +25,7 @@ Get the value of an environment variable.
 
 ## Example
 
-```Nelson
+```matlab
 getenv('OS')
 getenv('myenvvar')
 ```

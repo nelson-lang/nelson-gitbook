@@ -43,7 +43,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MB03RD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 8;
 PMAX = 1.D03;
 TOL = 1.D-2;

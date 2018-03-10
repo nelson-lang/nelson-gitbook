@@ -22,7 +22,7 @@ Computes the inverse sine in radians for each element of x.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(3, 3);
 res = asin(A)
 ```

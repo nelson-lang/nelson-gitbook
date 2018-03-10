@@ -27,7 +27,7 @@ Handle to running instance of Automation server.
 
 ## Example
 
-```Nelson
+```matlab
 h = actxGetRunningServer('Excel.application')
 ```
 

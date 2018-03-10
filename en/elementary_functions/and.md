@@ -26,7 +26,7 @@ logical 'AND' operator, &
 
 ## Example
 
-```Nelson
+```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
 B = [66 56 0; 11 33 55; -11 0 0]
 C = A & B

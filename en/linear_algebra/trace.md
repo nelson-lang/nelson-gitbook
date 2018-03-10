@@ -24,7 +24,7 @@ Matrix trace.
 
 ## Example
 
-```Nelson
+```matlab
 X = [1 0; 0 3];
 Y = trace(X)
 ```

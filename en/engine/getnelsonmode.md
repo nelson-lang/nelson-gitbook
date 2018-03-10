@@ -26,7 +26,7 @@ Returns current Nelson mode.
 
 ## Example
 
-```Nelson
+```matlab
 getnelsonmode()
 ```
 

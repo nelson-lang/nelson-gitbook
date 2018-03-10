@@ -41,7 +41,7 @@ Diary of a session.
 
 ## Example
 
-```Nelson
+```matlab
 filename = diary('get', 'DiaryFile')
 onoff = diary('get', 'Diary')
 ```

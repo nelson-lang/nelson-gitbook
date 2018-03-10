@@ -24,7 +24,7 @@ Write text to a file.
 
 ## Example
 
-```Nelson
+```matlab
 str = fileread([nelsonroot(),'/CHANGELOG.md'])
     	filewrite([tempdir(), '/CHANGELOG.md'], str)
 ```

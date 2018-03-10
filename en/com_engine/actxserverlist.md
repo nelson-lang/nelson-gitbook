@@ -20,7 +20,7 @@ Get available ActiveX servers.
 
 ## Example
 
-```Nelson
+```matlab
 l = actxserverlist()
 ```
 

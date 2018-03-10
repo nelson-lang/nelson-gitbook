@@ -24,7 +24,7 @@ Matrix inverse.
 
 ## Example
 
-```Nelson
+```matlab
 X = rand(10, 10);
 Y = inv(X);
 Y * X

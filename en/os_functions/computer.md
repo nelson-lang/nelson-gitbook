@@ -30,7 +30,7 @@ System information.
 
 ## Example
 
-```Nelson
+```matlab
 c = computer()
 [c, maxsize] = computer()
 [c, maxsize, endian] = computer()

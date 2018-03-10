@@ -24,13 +24,13 @@ Infinity
 
 ## Examples
 
-```Nelson
+```matlab
 Inf
 ```
-```Nelson
+```matlab
 -Inf + Inf
 ```
-```Nelson
+```matlab
 1.e1000
 ```
 

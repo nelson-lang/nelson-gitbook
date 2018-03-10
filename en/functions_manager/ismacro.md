@@ -24,7 +24,7 @@ Check for the existence of a macro (function).
 
 ## Example
 
-```Nelson
+```matlab
 ismacro('isbuiltin')
 ismacro('exist')
 ```

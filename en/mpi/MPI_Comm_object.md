@@ -22,7 +22,7 @@ Creates MPI_Comm object.
 ## Example
 
 CLI required
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

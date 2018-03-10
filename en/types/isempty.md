@@ -25,13 +25,13 @@ Return true if variable var is an empty matrix.
 
 ## Examples
 
-```Nelson
+```matlab
 A = rand(3, 3, 3);
 res = isempty(A)
 A(:, :, :) = [];
 res = isempty(A)
 ```
-```Nelson
+```matlab
 B = {};
 res = isempty(B)
 C = struct()

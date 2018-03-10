@@ -27,7 +27,7 @@ Returns path of a module.
 
 ## Example
 
-```Nelson
+```matlab
 modulepath('core')
 modulepath(nelsonroot(),'core','etc')
 modulepath(nelsonroot(),'core','bin')

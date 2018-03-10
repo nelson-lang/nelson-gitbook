@@ -27,7 +27,7 @@ Exclusive or.
 
 ## Example
 
-```Nelson
+```matlab
 x = [0 1 0 1];
 y = [0 0 1 1];
 R = xor(x, y)

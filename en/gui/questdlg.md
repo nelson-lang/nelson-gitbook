@@ -35,16 +35,16 @@ Creates a question dialog box.
 
 ## Examples
 
-```Nelson
+```matlab
 res = questdlg('What is the answer to the ultimate question of life, the universe and everything ?', 'A question for geeks', '41', '42', '43', '42')
 ```
-```Nelson
+```matlab
 res = questdlg ('Easy ?', 'Jeff', 'No', 'Okay', 'Okay')
 ```
-```Nelson
+```matlab
 res = questdlg('How are you ?', 'Health', 'Fine', 'Good', 'sick', 'Fine')
 ```
-```Nelson
+```matlab
 res = questdlg({'Is', 'this', 'a', 'multi line', 'test ?'}, 'Test :)')
 ```
 

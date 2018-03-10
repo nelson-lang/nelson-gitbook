@@ -26,7 +26,7 @@ Modulus after division.
 
 ## Example
 
-```Nelson
+```matlab
 mod (-1, 3)
 ```
 

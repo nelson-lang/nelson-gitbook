@@ -25,7 +25,7 @@ Returns the properties name of an COM object.
 
 ## Example
 
-```Nelson
+```matlab
 e = actxserver('Excel.Application');
 fieldnames(e)
 delete(e)

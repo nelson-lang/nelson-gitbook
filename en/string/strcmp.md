@@ -23,7 +23,7 @@ Strings comparaison.
 
 ## Example
 
-```Nelson
+```matlab
 strcmp('Nelson', 'nelSon')
 strcmp('Nelson', 'Nelson')
 

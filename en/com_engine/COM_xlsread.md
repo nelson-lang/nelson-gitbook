@@ -37,7 +37,7 @@ Read Microsoft Excel spreadsheet file using COM.
 
 ## Example
 
-```Nelson
+```matlab
 data = {'Time', 'Temp'; 12 98; 13 99; Inf 97};
 s = COM_xlswrite([tempdir(), '/example_xlswrite_2.xlsx'], data, 'Temperatures');
 [numeric_data, txt_data, raw_data] = COM_xlsread([tempdir(), '/example_xlswrite_2.xlsx'])

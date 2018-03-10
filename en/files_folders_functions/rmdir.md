@@ -32,7 +32,7 @@ Removes a directory.
 
 ## Example
 
-```Nelson
+```matlab
 mkdir([tempdir(), '/test'])
 rmdir([tempdir(), '/test'])
 ```

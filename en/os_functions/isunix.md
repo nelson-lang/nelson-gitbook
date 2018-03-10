@@ -21,7 +21,7 @@ Checks if version is for  GNU Linux or Unix platform.
 
 ## Example
 
-```Nelson
+```matlab
 if isunix
   disp('Your platform is Unix or Linux')
 else

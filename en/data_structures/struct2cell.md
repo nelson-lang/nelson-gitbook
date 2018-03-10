@@ -24,7 +24,7 @@ Creates a cell from a structure.
 
 ## Example
 
-```Nelson
+```matlab
 names = {'Pierre', 'Anna', 'Roberto'}
 values =  {45, 42, 13}
 st = struct ('name', names, 'age', values);

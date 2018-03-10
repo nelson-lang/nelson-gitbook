@@ -25,7 +25,7 @@ checks if string starts with pattern.
 
 ## Example
 
-```Nelson
+```matlab
 str = 'To make a mountain out of a molehill';
 k = startsWith (str, 'in')
 k = startsWith (str, 'to')

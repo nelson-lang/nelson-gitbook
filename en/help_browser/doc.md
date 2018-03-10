@@ -23,13 +23,13 @@ Displays documentation.
 
 ## Examples
 
-```Nelson
+```matlab
 doc()
 ```
-```Nelson
+```matlab
 doc sin
 ```
-```Nelson
+```matlab
 doc is
 ```
 

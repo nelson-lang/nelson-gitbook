@@ -29,19 +29,19 @@ Evaluates an function on a cell.
 
 ## Examples
 
-```Nelson
+```matlab
 greetings = {'Hello', 'Guten Tag', 'Sawadee', 'Bonjour', 'Namaste', ''};
 R = cellfun('size', greetings, 1)
 R1 = cellfun('size', greetings, 2)
 ```
-```Nelson
+```matlab
 C = {1:10, eye(3,4), eye(5,6)};
 f = str2func('size');
 [nrows_1, ncols_1] = cellfun(f, C,'UniformOutput', false)
 [nrows_2, ncols_2] = cellfun(f, C,'UniformOutput', true)
 ```
 functions to define for next example:
-```Nelson
+```matlab
 function r = fun1(x, y)
 r = x > y;
 endfunction
@@ -56,7 +56,7 @@ function result = errorfun(S, varargin)
 	result = false;
 endfunction
 ```
-```Nelson
+```matlab
 R = str2func('fun1');
 H =  str2func('errorfun');
 A = {rand(3)};

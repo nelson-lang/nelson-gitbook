@@ -28,7 +28,7 @@ List variables in memory.
 
 ## Example
 
-```Nelson
+```matlab
 clear
 who
 A = 3

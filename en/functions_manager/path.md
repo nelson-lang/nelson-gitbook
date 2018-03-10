@@ -28,7 +28,7 @@ Modify or display Nelson’s load path.
 
 ## Example
 
-```Nelson
+```matlab
 path
 p = path()
 path(p, tempdir())

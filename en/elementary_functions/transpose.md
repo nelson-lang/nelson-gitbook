@@ -25,15 +25,15 @@ Returns vector or matrix transpose: .' operator.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3
 B = A.'
 ```
-```Nelson
+```matlab
 A = -i
 B = A.'
 ```
-```Nelson
+```matlab
 A = sparse(eye(3, 4) * i)
 B = A.'
 ```

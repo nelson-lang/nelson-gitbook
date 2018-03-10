@@ -27,7 +27,7 @@ Get property value from audioplayer interface.
 
 ## Example
 
-```Nelson
+```matlab
 signal = rand(2, 44100) - 0.5;
 playObj = audioplayer(signal, 44100, 16)
 playObj.Running

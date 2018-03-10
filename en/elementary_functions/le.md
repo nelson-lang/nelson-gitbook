@@ -26,19 +26,19 @@ less than or equal, ≤ operator.
 
 ## Examples
 
-```Nelson
+```matlab
 eye(2,2) &#60;= ones(2, 2)
 ```
-```Nelson
+```matlab
 0 &#60;= i
 ```
-```Nelson
+```matlab
 'Nelson' &#60;= 'Noslen'
 ```
-```Nelson
+```matlab
 'Nelson' &#60;= 'l'
 ```
-```Nelson
+```matlab
 le(0.8 - 0.6 - 0.2, 0)
 ```
 

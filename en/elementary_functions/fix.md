@@ -24,7 +24,7 @@ Round towards zero
 
 ## Example
 
-```Nelson
+```matlab
 fix(pi)
 ```
 

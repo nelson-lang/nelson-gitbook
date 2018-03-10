@@ -42,7 +42,7 @@ http://www.icm.tu-bs.de/NICONET/doc/SB10JD.html
 
 ## Example
 
-```Nelson
+```matlab
 A_IN = [2 -4; 4 2];
 B_IN = [0 -1; 0 0.5];
 C_IN = [0 -0.5; 0 -2];

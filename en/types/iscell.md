@@ -22,11 +22,11 @@ Return true if variable var is a cell array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = iscell(A)
 ```
-```Nelson
+```matlab
 B = {'NelSon', 3, true};
 res = iscell(B)
 ```

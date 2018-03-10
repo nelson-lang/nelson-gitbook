@@ -17,7 +17,7 @@ Clears the engine's internal component cache..
 
 ## Example
 
-```Nelson
+```matlab
 qml_clearcomponentcache()
 ```
 

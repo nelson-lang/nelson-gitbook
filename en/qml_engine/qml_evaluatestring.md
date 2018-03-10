@@ -28,7 +28,7 @@ Evaluates a js string.
 [qml_evaluatefile](qml_evaluatefile.md).
 ## Example
 
-```Nelson
+```matlab
 qml_evaluatestring('a = 2 + 4')
 ```
 

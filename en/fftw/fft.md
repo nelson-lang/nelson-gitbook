@@ -28,7 +28,7 @@ Fast Fourier transform.
 
 ## Example
 
-```Nelson
+```matlab
 % Sampling frequency
 Fs = 150;
 

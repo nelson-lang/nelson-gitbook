@@ -30,7 +30,7 @@ Controls the echoing during their execution.
 ## Example
 
 an example
-```Nelson
+```matlab
 R = echo
 echo('on')
 A = 1+1

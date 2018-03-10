@@ -23,7 +23,7 @@ Return the version number of MPI library.
 [MPI_Get_version](MPI_Get_version.md).
 ## Example
 
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

@@ -24,7 +24,7 @@ function editor.
 
 ## Example
 
-```Nelson
+```matlab
 edit('edit')
 ```
 

@@ -21,7 +21,7 @@ Adds path as directory where the qml engine searches for native plugins.
 
 ## Example
 
-```Nelson
+```matlab
 qml_pluginpathlist()
 qml_addpluginpath(tempdir)
 qml_pluginpathlist()

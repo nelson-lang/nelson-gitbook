@@ -25,7 +25,7 @@ checks if string contains with pattern.
 
 ## Example
 
-```Nelson
+```matlab
 str = 'To make a mountain out of a molehill';
 k = contains (str, 'hill')
 k = contains (str, 'molehill')

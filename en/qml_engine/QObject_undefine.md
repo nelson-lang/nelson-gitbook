@@ -28,7 +28,7 @@ Undefine a dynamic property of a QObject handle.
 [QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
 ## Example
 
-```Nelson
+```matlab
 h = errordlg()
 set(h, 'myProp', 33)
 h

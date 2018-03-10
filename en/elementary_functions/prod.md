@@ -31,7 +31,7 @@ Product of array elements.
 
 ## Example
 
-```Nelson
+```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
 R = prod(M, 'native')
 ```

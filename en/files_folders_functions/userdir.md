@@ -21,7 +21,7 @@ Returns the current user's path.
 
 ## Example
 
-```Nelson
+```matlab
 r = userdir()
 ```
 

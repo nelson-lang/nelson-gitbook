@@ -24,10 +24,10 @@ Converts a variable to single precision type.
 
 ## Examples
 
-```Nelson
+```matlab
 single('Nelson')
 ```
-```Nelson
+```matlab
 A = single(pi)
 ```
 

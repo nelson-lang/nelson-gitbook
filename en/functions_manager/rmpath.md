@@ -25,7 +25,7 @@ Remove directory from search path.
 
 ## Example
 
-```Nelson
+```matlab
 path
 addpath(tempdir())
 path			

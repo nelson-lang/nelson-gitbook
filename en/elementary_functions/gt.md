@@ -27,19 +27,19 @@ greater than, > operator.
 
 ## Examples
 
-```Nelson
+```matlab
 eye(2,2) > ones(2, 2)
 ```
-```Nelson
+```matlab
 0 > i
 ```
-```Nelson
+```matlab
 'Nelson' > 'Noslen'
 ```
-```Nelson
+```matlab
 'Nelson' > 'l'
 ```
-```Nelson
+```matlab
 gt(0.8 - 0.6 - 0.2, 0)
 ```
 

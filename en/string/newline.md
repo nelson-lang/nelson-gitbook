@@ -18,7 +18,7 @@ Returns a newline character.
 
 ## Example
 
-```Nelson
+```matlab
 double(newline)
 ```
 

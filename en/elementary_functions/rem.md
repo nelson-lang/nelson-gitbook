@@ -29,7 +29,7 @@ Remainder after division.
 
 ## Example
 
-```Nelson
+```matlab
 rem (-1, 3)
 mod(-1, 3)
 ```

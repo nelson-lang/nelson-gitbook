@@ -21,7 +21,7 @@ Suspend code execution.
 
 ## Example
 
-```Nelson
+```matlab
 tic();sleep(1);toc()
 tic();sleep(0.1);toc()
 tic();sleep(0.01);toc()

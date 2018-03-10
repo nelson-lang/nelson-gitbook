@@ -21,7 +21,7 @@ Returns the temporary directory path.
 
 ## Example
 
-```Nelson
+```matlab
 r = tempdir()
 ```
 

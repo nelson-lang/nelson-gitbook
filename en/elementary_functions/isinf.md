@@ -24,7 +24,7 @@ Check for Infinity entries.
 
 ## Example
 
-```Nelson
+```matlab
 isnan(pi)
 isinf(Inf)
 isinf(-Inf)

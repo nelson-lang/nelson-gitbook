@@ -34,16 +34,16 @@ Bibliography
 
 ## Examples
 
-```Nelson
+```matlab
 A = eye(3, 3);
 assert_isequal(A, A)
 ```
-```Nelson
+```matlab
 A = eye(3, 3);
 B = single(A);
 assert_isequal(A, B)
 ```
-```Nelson
+```matlab
 A = NaN;
 B = A;
 assert_isequal(A, B)

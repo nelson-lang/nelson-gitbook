@@ -26,7 +26,7 @@ Determines if input is an existing COM object method.
 
 ## Example
 
-```Nelson
+```matlab
 e = actxserver('Excel.Application');
 ismethod(e, 'Quit')
 delete(e)

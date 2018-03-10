@@ -25,7 +25,7 @@ Converts to 8-bit unsigned integer.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1 256 -120 127 -1 215]
 B = uint8(A)
 ```

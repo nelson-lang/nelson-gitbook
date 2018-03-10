@@ -32,16 +32,16 @@ Creates a error dialog box.
 
 ## Examples
 
-```Nelson
+```matlab
 h = errordlg()
 ```
-```Nelson
+```matlab
 h = errordlg('error string')
 ```
-```Nelson
+```matlab
 h = errordlg('error string', 'dialog title')
 ```
-```Nelson
+```matlab
 h = errordlg('error string', 'dialog title')
 h = errordlg('error string', 'dialog title', 'on')
 ```

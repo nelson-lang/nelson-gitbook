@@ -26,7 +26,7 @@ Creates a GUID.
 
 ## Example
 
-```Nelson
+```matlab
 createGUID()
 createGUID(10)
 ```

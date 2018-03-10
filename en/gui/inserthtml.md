@@ -20,7 +20,7 @@ Insert html in GUI console.
 
 ## Example
 
-```Nelson
+```matlab
 inserthtml(markdown(fileread([nelsonroot(),'/CHANGELOG.md'])))
 ```
 

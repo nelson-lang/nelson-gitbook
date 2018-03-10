@@ -35,13 +35,13 @@ isapprox
 
 ## Examples
 
-```Nelson
+```matlab
 assert_isapprox(1.23456, 1.23457, 1e-5)
 ```
-```Nelson
+```matlab
 assert_isapprox(1.23456, 1.23457, 1e-6)
 ```
-```Nelson
+```matlab
 [r, msg] =assert_isapprox(1.23456, 1.23457, 1e-6)
 assert_isfalse(r);
 assert_isequal(msg, _('Assertion failed: expected and computed values are too different.'));

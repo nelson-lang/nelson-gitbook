@@ -30,7 +30,7 @@ Return the current local date and time as a date vector.
 
 ## Example
 
-```Nelson
+```matlab
 c = clock()
 fix(c)
 ```

@@ -22,7 +22,7 @@ Returns an error if module is not loaded in Nelson.
 ## Example
 
 See module skeleton for example
-```Nelson
+```matlab
 ismodule('module_skeleton')
 requiremodule('module_skeleton')
 addmodule([nelsonroot(), '/module_skeleton'], 'module_skeleton')

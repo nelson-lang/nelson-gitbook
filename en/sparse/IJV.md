@@ -29,7 +29,7 @@ Returns I,J,V triplets from a sparse matrix.
 
 ## Example
 
-```Nelson
+```matlab
 sp = sparse(eye(3,3))
 [IV, JV, VV, m, n, nzmax] = IJV(sp)
 ```

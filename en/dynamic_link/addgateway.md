@@ -23,7 +23,7 @@ Adds dynamically builtin at runtime.
 ## Example
 
 Add gateway for string module:
-```Nelson
+```matlab
 addgateway(modulepath(nelsonroot(), 'time', 'builtin'))
 ```
 

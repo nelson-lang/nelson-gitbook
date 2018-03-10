@@ -26,7 +26,7 @@ Matrix power, ^ operator
 
 ## Example
 
-```Nelson
+```matlab
 mpower(3, 4)
 3^4
 ```

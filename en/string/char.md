@@ -25,12 +25,12 @@ Converts to a character array.
 
 ## Examples
 
-```Nelson
+```matlab
 M = [ 104   101   108   108   111;
 20320   22909 32    32    32];
 char(M)
 ```
-```Nelson
+```matlab
 R = char('these', 'are', 'test', 'strings')
 ```
 

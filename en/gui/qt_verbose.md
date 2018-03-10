@@ -27,7 +27,7 @@ show/hide Qt debug message.
 
 ## Example
 
-```Nelson
+```matlab
 h = qt_verbose()
 ```
 

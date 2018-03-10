@@ -16,7 +16,7 @@ QML demos.
 
 ## Example
 
-```Nelson
+```matlab
 qml_demos()
 ```
 

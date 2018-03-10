@@ -19,13 +19,13 @@ Pure Imaginary number.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3i
 ```
-```Nelson
+```matlab
 A = single(3i)
 ```
-```Nelson
+```matlab
 i = 33;
 disp(i);
 clear('i');

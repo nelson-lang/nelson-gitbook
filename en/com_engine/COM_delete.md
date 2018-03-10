@@ -23,7 +23,7 @@ Removes COM control or server.
 
 ## Example
 
-```Nelson
+```matlab
 pTextToSpeech = actxserver('Sapi.SpVoice')
 delete(pTextToSpeech)
 clear pTextToSpeech

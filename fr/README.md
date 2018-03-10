@@ -11,5 +11,5 @@ Essayez-le !
 
 * * *
 
-*   [Journal des modifications](changelog.md)
-*   [Licence de Nelson](license.md)
+
+

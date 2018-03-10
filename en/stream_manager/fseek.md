@@ -32,7 +32,7 @@ Set the file pointer to a location.
 
 ## Example
 
-```Nelson
+```matlab
 fileID = fopen([tempdir(), '/fseek.txt'],'wt');
 fprintf(fileID, 'son is beautiful.');
 fseek(fileID, SEEK_CUR, 'bof');

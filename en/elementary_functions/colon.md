@@ -29,10 +29,10 @@ colon operator ':'.
 
 ## Examples
 
-```Nelson
+```matlab
 1:0.5:4
 ```
-```Nelson
+```matlab
 A = 1:6
 B = 1:4:12
 C = rand(3, 4)

@@ -24,7 +24,7 @@ Return the number of nonzero elements.
 
 ## Example
 
-```Nelson
+```matlab
 I = [1 2 3];
 J = [3 1 2];
 V = [32 42 53];

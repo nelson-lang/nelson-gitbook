@@ -32,7 +32,7 @@ Singular Value Decomposition.
 
 ## Example
 
-```Nelson
+```matlab
 X = eye(3, 3);
 s = svd(X)
 [U, S, V] = svd(X)

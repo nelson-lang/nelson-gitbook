@@ -22,7 +22,7 @@ Assignin value to a variable in a specified variables scope.
 
 ## Example
 
-```Nelson
+```matlab
 assignin('base', 'X', 33);
 Y = acquirevar('base', 'X');
 ```

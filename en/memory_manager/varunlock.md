@@ -21,7 +21,7 @@ Unlocks a variable.
 
 ## Example
 
-```Nelson
+```matlab
 y = 3;
 varislock('local', 'y')
 varlock('local', 'y')

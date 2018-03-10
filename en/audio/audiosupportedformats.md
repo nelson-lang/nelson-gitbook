@@ -20,7 +20,7 @@ Get audio file supported formats.
 
 ## Example
 
-```Nelson
+```matlab
 formats = audiosupportedformats();
 for k = [1: length(formats)]
   formats(k).Name

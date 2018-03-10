@@ -44,15 +44,15 @@ Return classname of object or creates a named object.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = class(A)
 ```
-```Nelson
+```matlab
 C = [1 ; 3];
 res = class(C)
 ```
-```Nelson
+```matlab
 addpath([nelsonroot(), '/modules/overload/examples/complex']);
 c = complexObj(3,4);
 class(c)

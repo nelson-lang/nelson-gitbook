@@ -22,15 +22,15 @@ Return true if variable var is a integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isinteger(A)
 ```
-```Nelson
+```matlab
 B = uint8(3);
 res = isinteger(B)
 ```
-```Nelson
+```matlab
 A = single([3, i]);
 res = isinteger(A)
 ```

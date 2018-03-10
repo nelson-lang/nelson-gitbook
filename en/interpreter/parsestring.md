@@ -24,7 +24,7 @@ Parse a string.
 
 ## Example
 
-```Nelson
+```matlab
 parsestring('1 + 1')
 parsestring('1 +++ 1')
 parsestring('1 +*+ 1')

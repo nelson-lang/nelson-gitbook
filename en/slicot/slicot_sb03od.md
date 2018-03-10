@@ -42,7 +42,7 @@ http://www.icm.tu-bs.de/NICONET/doc/SB03OD.html
 
 ## Example
 
-```Nelson
+```matlab
 A = [-0.5000    0.5000         0;
          0         0         0;
    -0.5000         0    0.5000];

@@ -29,7 +29,7 @@ Set/Get maximum number of computional threads.
 
 ## Example
 
-```Nelson
+```matlab
 maxNumCompThreads
 ```
 

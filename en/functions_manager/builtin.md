@@ -29,7 +29,7 @@ Executes built-in function.
 
 ## Example
 
-```Nelson
+```matlab
 a = builtin('cos', 0)
 b = builtin(str2func('cos'), 0)
 ```

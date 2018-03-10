@@ -22,7 +22,7 @@ Removes audioplayer object.
 
 ## Example
 
-```Nelson
+```matlab
 audioplayer_used(),delete(audioplayer_used())
 ```
 

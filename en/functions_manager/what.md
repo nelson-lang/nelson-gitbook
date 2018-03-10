@@ -22,7 +22,7 @@ Get Nelson builtin and macro list.
 
 ## Example
 
-```Nelson
+```matlab
 l = what()
 [l, m] = what()
 ```

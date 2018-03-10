@@ -24,7 +24,7 @@ Check for finite entries.
 
 ## Example
 
-```Nelson
+```matlab
 isfinite(pi)
 isfinite(Inf)
 isfinite(-Inf)

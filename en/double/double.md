@@ -24,10 +24,10 @@ Converts a variable to double precision type.
 
 ## Examples
 
-```Nelson
+```matlab
 double('Nelson')
 ```
-```Nelson
+```matlab
 A = single(pi)
 B = double(A)
 B - A

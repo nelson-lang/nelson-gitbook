@@ -28,7 +28,7 @@ Returns the signature of a method of a QObject handle.
 [QObject_invoke (invoke)](QObject_invoke.html), [QObject_methods (methods)](QObject_methods.html).
 ## Example
 
-```Nelson
+```matlab
 h = errordlg()
 QObject_methodsignature(h, 'setTitle')
 ```

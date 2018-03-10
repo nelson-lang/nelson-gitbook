@@ -24,7 +24,7 @@ Set object or interface property to specified value.
 
 ## Example
 
-```Nelson
+```matlab
 signal = rand(2, 44100) - 0.5;
 playObj = audioplayer(signal, 44100, 16)
 playObj.Tag = 'my audio object'

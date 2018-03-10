@@ -31,7 +31,7 @@ Logical true.
 
 ## Example
 
-```Nelson
+```matlab
 true
 true(4)
 true(4, 1, 4)

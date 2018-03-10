@@ -21,7 +21,7 @@ Adds path as directory where the qml engine searches for installed modules.
 
 ## Example
 
-```Nelson
+```matlab
 qml_importpathlist()
 qml_addimportpath(tempdir)
 qml_importpathlist()

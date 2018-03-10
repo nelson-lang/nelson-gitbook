@@ -38,7 +38,7 @@ Shell command execution.
 
 ## Example
 
-```Nelson
+```matlab
 [s,w] = system('dir');
 [s,w] = system('dir','-echo');
 ```

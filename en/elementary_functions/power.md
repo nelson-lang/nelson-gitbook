@@ -26,7 +26,7 @@ Element wise power, .^ operator
 
 ## Example
 
-```Nelson
+```matlab
 power(3, 4)
 3.^4
 ```

@@ -25,7 +25,7 @@ Number of dimensions of an array.
 
 ## Example
 
-```Nelson
+```matlab
 ndims(ones(3, 0))
 ndims(3)
 ndims([1 2 3 4 5])

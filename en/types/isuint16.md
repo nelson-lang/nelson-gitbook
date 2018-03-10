@@ -22,11 +22,11 @@ Return true if variable var is an unsigned 16-bit integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isuint16(A)
 ```
-```Nelson
+```matlab
 B = uint16(3);
 res = isuint16(B)
 ```

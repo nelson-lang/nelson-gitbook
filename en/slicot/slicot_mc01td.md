@@ -39,7 +39,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MC01TD.html
 
 ## Example
 
-```Nelson
+```matlab
 DICO = 'C';
 DP_IN = 4;
 P = [2.0  0.0  1.0  -1.0  1.0];

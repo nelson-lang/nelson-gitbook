@@ -26,7 +26,7 @@ Shift the zero-frequency component to the center of the spectrum.
 
 ## Example
 
-```Nelson
+```matlab
 M = [ 0.,  10.,  20.; 30.,  40., -40.; -30., -20., -10.]
 fftshift(M)
 fftshift(M, 1)

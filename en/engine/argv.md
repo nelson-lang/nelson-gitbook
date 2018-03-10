@@ -21,7 +21,7 @@ Nelson command line arguments.
 
 ## Example
 
-```Nelson
+```matlab
 argv()
 ```
 

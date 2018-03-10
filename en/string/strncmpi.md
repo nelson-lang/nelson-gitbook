@@ -24,7 +24,7 @@ Compares first n characters of strings (case sensitive).
 
 ## Example
 
-```Nelson
+```matlab
 strncmpi('Nelson', 'nelSon', 3)
 strncmpi('Nelson', 'Nelson', 3)
 

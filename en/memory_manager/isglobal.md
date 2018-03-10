@@ -20,7 +20,7 @@ Checks if a variable is global.
 
 ## Example
 
-```Nelson
+```matlab
 y = 3;
 isglobal y
 global b

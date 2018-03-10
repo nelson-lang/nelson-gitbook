@@ -28,7 +28,7 @@ Read contents of file as text.
 
 ## Example
 
-```Nelson
+```matlab
 str = fileread([nelsonroot(),'/CHANGELOG.md'])
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'char')
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'cell')

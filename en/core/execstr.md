@@ -28,19 +28,19 @@ Execute Nelson code in strings.
 
 ## Examples
 
-```Nelson
+```matlab
 execstr('b = ''hello''; disp(b);')
 ```
 This example will fail and returns an error message.
-```Nelson
+```matlab
 execstr('b = yyyy')
 ```
 This example will fail and returns an error message.
-```Nelson
+```matlab
 execstr('b = yyyy', 'nocatch')
 ```
 This example will not fail and return false.
-```Nelson
+```matlab
 r = execstr('b = yyyy', 'errcatch')
 ```
 

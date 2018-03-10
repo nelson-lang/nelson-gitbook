@@ -33,7 +33,7 @@ Add directories to functions search path.
 
 ## Example
 
-```Nelson
+```matlab
 path()
 addpath(tempdir())
 path

@@ -22,19 +22,19 @@ Return true if variable var is a double matrix.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isdouble(A)
 ```
-```Nelson
+```matlab
 A = single(3);
 res = isdouble(A)
 ```
-```Nelson
+```matlab
 A = single([3, i]);
 res = isdouble(A)
 ```
-```Nelson
+```matlab
 A = [3, i];
 res = isdouble(A)
 ```

@@ -25,7 +25,7 @@ Get audio file information.
 
 ## Example
 
-```Nelson
+```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 info = audioinfo(wav_file)
 ```

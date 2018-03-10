@@ -26,7 +26,7 @@ Check for the existence of an variable.
 
 ## Example
 
-```Nelson
+```matlab
 isvar('A')
 A = 3
 isvar('A')

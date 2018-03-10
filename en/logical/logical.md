@@ -26,7 +26,7 @@ Converts a numeric value to logical type.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(2, 2)
 B = logical(A)
 islogical(B)

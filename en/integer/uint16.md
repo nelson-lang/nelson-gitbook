@@ -25,7 +25,7 @@ Converts to 16-bit unsigned integer.
 
 ## Example
 
-```Nelson
+```matlab
 A = [1 -32769 -120 127 32767 32768]
 B = uint16(A)
 ```

@@ -20,7 +20,7 @@ Returns Nelson's root folder.
 
 ## Example
 
-```Nelson
+```matlab
 pwd
 cd(nelsonroot)
 pwd

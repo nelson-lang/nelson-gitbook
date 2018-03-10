@@ -22,11 +22,11 @@ Return true if variable var is a sparse array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 1;
 res = issparse(A)
 ```
-```Nelson
+```matlab
 B = sparse(1);
 res = issparse(B)
 ```

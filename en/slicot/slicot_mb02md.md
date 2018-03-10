@@ -43,7 +43,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MB02MD.html
 
 ## Example
 
-```Nelson
+```matlab
 M = 6;
 N = 3;
 L = 1;

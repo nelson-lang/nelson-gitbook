@@ -21,7 +21,7 @@ Build help of Nelson's modules.
 
 ## Example
 
-```Nelson
+```matlab
 buildhelp();
 buildhelp('core');
 ```

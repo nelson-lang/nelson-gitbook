@@ -27,7 +27,7 @@ Get the Property contains the directory to store offline user data.
 [qml_setofflinestoragepath](qml_setofflinestoragepath.md).
 ## Example
 
-```Nelson
+```matlab
 qml_offlinestoragepath()
 qml_setofflinestoragepath(tmpdir())
 qml_offlinestoragepath()

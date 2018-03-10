@@ -22,7 +22,7 @@ Upper case conversion.
 
 ## Example
 
-```Nelson
+```matlab
 toupper('NelSon')
 ```
 

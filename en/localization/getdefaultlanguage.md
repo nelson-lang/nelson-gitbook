@@ -20,7 +20,7 @@ Returns the default language used in Nelson.
 
 ## Example
 
-```Nelson
+```matlab
 getdefaultlanguage()
 ```
 

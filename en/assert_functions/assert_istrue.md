@@ -29,19 +29,19 @@ Raises an error if x is false. Raises an error if x is not a logical.
 
 ## Examples
 
-```Nelson
+```matlab
 assert_istrue(3 == 3)
 ```
-```Nelson
+```matlab
 assert_istrue(3 == 4)
 ```
-```Nelson
+```matlab
 r = assert_istrue(false)
 ```
-```Nelson
+```matlab
 [r, msg] = assert_istrue(false)
 ```
-```Nelson
+```matlab
 [r, msg] = assert_istrue(3 == 4, 'your error message.')
 ```
 

@@ -22,15 +22,15 @@ Return true if variable var is a structure.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 1;
 res = isstruct(A)
 ```
-```Nelson
+```matlab
 B = struct();
 res = isstruct(B)
 ```
-```Nelson
+```matlab
 C.a = 1;
 C.B = 'hello';
 res = isstruct(C)

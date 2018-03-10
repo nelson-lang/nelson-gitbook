@@ -23,7 +23,7 @@ Removes dynamically builtin at runtime.
 ## Example
 
 removes time builtin
-```Nelson
+```matlab
 calendar
 removegateway(modulepath(nelsonroot(), 'time', 'builtin'))
 calendar

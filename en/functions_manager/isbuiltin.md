@@ -24,7 +24,7 @@ Check for the existence of a builtin.
 
 ## Example
 
-```Nelson
+```matlab
 isbuiltin('isbuiltin')
 isbuiltin('exist')
 ismacro('exist')

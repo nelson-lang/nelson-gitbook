@@ -22,11 +22,11 @@ Return true if variable var is a signed 16-bit integer type array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 3;
 res = isint16(A)
 ```
-```Nelson
+```matlab
 B = int16(3);
 res = isint16(B)
 ```

@@ -28,7 +28,7 @@ diff two files or strings.
 
 ## Example
 
-```Nelson
+```matlab
 res = diff_file([nelsonroot(), '/etc/startup.nls'], [nelsonroot(), '/etc/startup.nls'])
 res = diff_file([nelsonroot(), '/etc/startup.nls'], [nelsonroot(), '/etc/finish.nls'])
 ```

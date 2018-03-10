@@ -24,7 +24,7 @@ Checks if value is a function handle.
 
 ## Example
 
-```Nelson
+```matlab
 fh = str2func('cos')
 isfunction_handle(fh)
 fh = 3

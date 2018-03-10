@@ -22,7 +22,7 @@ Defines a global variable.
 
 ## Example
 
-```Nelson
+```matlab
 function myfun()
 global y;
 y = 1;

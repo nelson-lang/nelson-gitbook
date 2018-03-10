@@ -26,10 +26,10 @@ Creates COM server.
 
 ## Examples
 
-```Nelson
+```matlab
 h = actxserver('Excel.application')
 ```
-```Nelson
+```matlab
 pTextToSpeech = actxserver('Sapi.SpVoice')
 for i = 0:5
   invoke(pTextToSpeech, 'Speak', int2str(5 - i));

@@ -16,7 +16,7 @@ Clear Command Window.
 
 ## Example
 
-```Nelson
+```matlab
 disp('Hello');
 clc()
 ```

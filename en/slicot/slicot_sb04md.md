@@ -38,7 +38,7 @@ http://www.icm.tu-bs.de/NICONET/doc/SB04MD.html
 
 ## Example
 
-```Nelson
+```matlab
 N = 3;
 M = 2;
 A_IN = [2.0   1.0   3.0;

@@ -29,7 +29,7 @@ Locates functions and built-in.
 
 ## Example
 
-```Nelson
+```matlab
 which('cos')
 p = which('cos')
 c = which('cos', '-all')

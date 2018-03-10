@@ -16,7 +16,7 @@ Restore Nelson’s path to its initial state at startup.
 
 ## Example
 
-```Nelson
+```matlab
 path
 path('')
 path

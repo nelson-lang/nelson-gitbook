@@ -22,7 +22,7 @@ Starts a stopwatch timer.
 
 ## Example
 
-```Nelson
+```matlab
 tic()
 sleep(10)
 toc()

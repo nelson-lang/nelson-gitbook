@@ -25,7 +25,7 @@ Unary plus, + operator
 
 ## Example
 
-```Nelson
+```matlab
 M =-3;
 +M
 ```

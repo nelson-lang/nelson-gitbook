@@ -18,7 +18,7 @@ Reinitialize Nelson’s search path directory cache.
 
 ## Example
 
-```Nelson
+```matlab
 rehash()
 ```
 

@@ -27,7 +27,7 @@ Invoke method on COM object or interface.
 
 ## Example
 
-```Nelson
+```matlab
 pWord = actxserver('Word.Application')
 pWord.Visible = true
 invoke(pWord, 'Quit')

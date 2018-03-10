@@ -31,7 +31,7 @@ function for determining FFT algorithm.
 
 ## Example
 
-```Nelson
+```matlab
 w = fftw('dwisdom')
 M = rand(1000);
 tic; fft(M); toc

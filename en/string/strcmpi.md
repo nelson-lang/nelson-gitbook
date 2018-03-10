@@ -23,7 +23,7 @@ Strings comparaison (case insensitive).
 
 ## Example
 
-```Nelson
+```matlab
 strcmpi('Nelson', 'nelSon')
 strcmpi('Nelson', 'Nelson')
 

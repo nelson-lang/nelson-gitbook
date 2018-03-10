@@ -24,7 +24,7 @@ Imaginary part of an complex number.
 
 ## Example
 
-```Nelson
+```matlab
 cplx = 22+34*i;
 r = imag(cplx)
 ```

@@ -22,7 +22,7 @@ Computes the tangent in radians for each element of x.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(3, 3);
 res = tan(A)
 ```

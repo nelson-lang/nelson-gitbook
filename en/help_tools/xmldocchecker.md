@@ -26,7 +26,7 @@ Checks a xml documentation file.
 
 ## Example
 
-```Nelson
+```matlab
 xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 ```
 

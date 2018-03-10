@@ -27,13 +27,13 @@ Horizontal concatenation.
 
 ## Examples
 
-```Nelson
+```matlab
 A = eye(2, 2);
 B = ones(2, 2);
 C = horzcat(A, B)
 D = [A, B]
 ```
-```Nelson
+```matlab
 A = 'nel';
 B = 'son';
 C = horzcat(A, B)

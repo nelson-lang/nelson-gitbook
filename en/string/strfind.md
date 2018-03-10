@@ -25,7 +25,7 @@ Find a string in another.
 
 ## Example
 
-```Nelson
+```matlab
 str = 'To make a mountain out of a molehill';
 k = strfind (str, 'in')
 k= strfind(str, ' ')

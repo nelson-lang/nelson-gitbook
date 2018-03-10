@@ -22,7 +22,7 @@ Computes the tangent in degree for each element of x.
 
 ## Example
 
-```Nelson
+```matlab
 A = [0 30 45 60 90 360];
 res = tand(A)
 ```

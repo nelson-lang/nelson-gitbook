@@ -25,7 +25,7 @@ Terminate the MPI execution environment.
 [MPI_Initialized](MPI_Initialized.md), [MPI_Init](MPI_Init.md).
 ## Example
 
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

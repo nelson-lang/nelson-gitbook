@@ -25,7 +25,7 @@ Searches for a file using environment paths.
 
 ## Example
 
-```Nelson
+```matlab
 [modules, paths] = getmodules();
 env_value = '';
 for p = paths

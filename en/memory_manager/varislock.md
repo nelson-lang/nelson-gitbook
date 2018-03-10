@@ -21,7 +21,7 @@ Checks if a variable is locked.
 
 ## Example
 
-```Nelson
+```matlab
 y = 3;
 varislock('local', 'y')
 varlock('local', 'y')

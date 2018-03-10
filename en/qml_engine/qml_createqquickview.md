@@ -28,7 +28,7 @@ Load a QML file and creates a window.
 [qml_loadstring](qml_loadstring.md), [qml_loadfile](qml_loadfile.md).
 ## Example
 
-```Nelson
+```matlab
 // see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
 

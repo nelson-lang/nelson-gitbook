@@ -21,7 +21,7 @@ Return the CPU time used by your Nelon session.
 
 ## Example
 
-```Nelson
+```matlab
 t1 = cputime;
 sleep(10);
 t2 = cputime;

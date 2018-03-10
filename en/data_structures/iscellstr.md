@@ -24,13 +24,13 @@ Returns if a variable is a cell of strings.
 
 ## Examples
 
-```Nelson
+```matlab
 iscellstr('Nelson')
 ```
-```Nelson
+```matlab
 iscellstr({'Nelson'})
 ```
-```Nelson
+```matlab
 iscellstr({})
 ```
 

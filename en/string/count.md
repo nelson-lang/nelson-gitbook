@@ -25,7 +25,7 @@ Computes the number of occurrences of an pattern.
 
 ## Example
 
-```Nelson
+```matlab
 str = 'To make a mountain out of a molehill';
 k = count(str, 'hill')
 k = count(str, 'molehill')

@@ -32,7 +32,7 @@ Combines values from all processes and distributes the result back to all proces
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.nls'], 4)
-```Nelson
+```matlab
 if ~MPI_Initialized()
   MPI_Init();
 end

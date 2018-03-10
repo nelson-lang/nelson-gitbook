@@ -45,7 +45,7 @@ Display format and number printing.
 ## Example
 
 an example
-```Nelson
+```matlab
 current_style = format()
 current_style = format('get')
 pi

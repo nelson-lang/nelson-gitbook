@@ -22,7 +22,7 @@ Computes the inverse tangent in radians for each element of x.
 
 ## Example
 
-```Nelson
+```matlab
 A = eye(3, 3);
 res = atan(A)
 ```

@@ -22,7 +22,7 @@ Lower case conversion.
 
 ## Example
 
-```Nelson
+```matlab
 tolower('NelSon')
 ```
 

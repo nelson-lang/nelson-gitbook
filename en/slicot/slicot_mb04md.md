@@ -36,7 +36,7 @@ http://www.icm.tu-bs.de/NICONET/doc/MB04MD.html
 
 ## Example
 
-```Nelson
+```matlab
 MAXRED_IN  = 0.0;
 A_IN = [1.0   0.0   0.0   0.0;
  300.0 400.0 500.0 600.0;

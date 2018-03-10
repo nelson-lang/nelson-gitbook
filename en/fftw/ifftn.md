@@ -29,7 +29,7 @@ Inverse multidimensional fast Fourier transform.
 
 ## Example
 
-```Nelson
+```matlab
 f = zeros(5, 5);
 f(1:5,4:5) = 1;
 Y = ifftn(fftn(f));

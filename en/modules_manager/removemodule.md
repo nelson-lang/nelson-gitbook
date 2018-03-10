@@ -21,7 +21,7 @@ remove a module from Nelson.
 ## Example
 
 See module skeleton for example
-```Nelson
+```matlab
 ismodule('module_skeleton')
 addmodule([nelsonroot(), '/module_skeleton'], 'module_skeleton')
 ismodule('module_skeleton')

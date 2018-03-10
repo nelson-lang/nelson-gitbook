@@ -20,7 +20,7 @@ Returns available languages in Nelson.
 
 ## Example
 
-```Nelson
+```matlab
 getavailablelanguages()
 ```
 

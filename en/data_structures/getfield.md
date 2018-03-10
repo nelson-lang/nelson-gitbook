@@ -25,7 +25,7 @@ Returns value of a field in a struct.
 
 ## Example
 
-```Nelson
+```matlab
 example.a = 1
 example.b = 'nelson'
 example.c = []

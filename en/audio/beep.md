@@ -24,7 +24,7 @@ Produces a beep sound.
 
 ## Example
 
-```Nelson
+```matlab
 beep('off')
 beep
 beep('on')

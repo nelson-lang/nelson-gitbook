@@ -34,7 +34,7 @@ Write an numeric matrix to a text file file using a delimiter.
 
 ## Example
 
-```Nelson
+```matlab
 A = [Inf, -Inf, NaN, 3];
 filename = [tempdir(), '/dlwrite_example.csv'];
 dlmwrite(filename, A);

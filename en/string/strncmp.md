@@ -24,7 +24,7 @@ Compares first n characters of strings.
 
 ## Example
 
-```Nelson
+```matlab
 strncmp('Nelson', 'nelSon', 3)
 strncmp('Nelson', 'Nelson', 3)
 

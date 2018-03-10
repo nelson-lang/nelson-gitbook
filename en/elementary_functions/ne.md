@@ -26,7 +26,7 @@ Inequality, ~= operator
 
 ## Example
 
-```Nelson
+```matlab
 ne(3, 4)
 3 ~= 4
 ```

@@ -32,7 +32,7 @@ Remove variable from workspace.
 
 ## Example
 
-```Nelson
+```matlab
 A = 3;
 who
 clear A

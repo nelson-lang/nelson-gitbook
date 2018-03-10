@@ -25,7 +25,7 @@ Absolute value
 
 ## Example
 
-```Nelson
+```matlab
 x = [1+i,-i;i,2i];
 r = abs(x)
 ```

@@ -22,7 +22,7 @@ Return true if variable var is a class object.
 
 ## Example
 
-```Nelson
+```matlab
 A = 3;
 res = isclass(A)
 addpath([nelsonroot(), '/modules/overload/examples/complex']);

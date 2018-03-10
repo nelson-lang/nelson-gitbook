@@ -35,15 +35,15 @@ Return true if variable var is a numeric array.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 1;
 res = isnumeric(A)
 ```
-```Nelson
+```matlab
 B = single(1+i);
 res = isnumeric(B)
 ```
-```Nelson
+```matlab
 C = logical(1);
 res = isnumeric(C)
 ```

@@ -16,7 +16,7 @@ Runs the Qml garbage collector.
 
 ## Example
 
-```Nelson
+```matlab
 qml_collectgarbage()
 ```
 

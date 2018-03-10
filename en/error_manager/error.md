@@ -23,11 +23,11 @@ Raise an error message.
 
 ## Examples
 
-```Nelson
+```matlab
 error('your error message.')
 error('')
 ```
-```Nelson
+```matlab
 1 / [1 2 3]
 a = lasterror()
 lasterror('reset')

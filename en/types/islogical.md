@@ -22,11 +22,11 @@ Return true if variable var is a logical.
 
 ## Examples
 
-```Nelson
+```matlab
 A = 1;
 res = islogical(A)
 ```
-```Nelson
+```matlab
 B = logical(1);
 res = islogical(B)
 ```
