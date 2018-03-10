@@ -2,8 +2,6 @@
 
 # poheader
 
-# _
-
 Generates po file header.
 
 ## Syntax
