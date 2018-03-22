@@ -256,13 +256,16 @@
     * [int2str](./string/int2str.md)
     * [mat2str](./string/mat2str.md)
     * [newline](./string/newline.md)
+    * [replace](./string/replace.md)
     * [startsWith](./string/startsWith.md)
     * [str2double](./string/str2double.md)
     * [strcmp](./string/strcmp.md)
     * [strcmpi](./string/strcmpi.md)
     * [strfind](./string/strfind.md)
+    * [strlength](./string/strlength.md)
     * [strncmp](./string/strncmp.md)
     * [strncmpi](./string/strncmpi.md)
+    * [strrep](./string/strrep.md)
     * [tolower](./string/tolower.md)
     * [toupper](./string/toupper.md)
 
@@ -444,6 +447,7 @@
 
 * [help_tools](./help_tools/README.md)
     * [buildhelp](./help_tools/buildhelp.md)
+    * [buildhelpmd](./help_tools/buildhelpmd.md)
     * [buildhelpweb](./help_tools/buildhelpweb.md)
     * [headcomments](./help_tools/headcomments.md)
     * [htmltopdf](./help_tools/htmltopdf.md)
@@ -452,6 +456,7 @@
     * [xmldocchecker](./help_tools/xmldocchecker.md)
     * [xmldoctohelp](./help_tools/xmldoctohelp.md)
     * [xmldoctohtml](./help_tools/xmldoctohtml.md)
+    * [xmldoctomd](./help_tools/xmldoctomd.md)
 
 
 * [localization](./localization/README.md)

@@ -9,6 +9,7 @@ help tools
 
 
 * [buildhelp](buildhelp.md) - Build help of Nelson's modules.
+* [buildhelpmd](buildhelpmd.md) - Build help of Nelson's modules for GitBook.
 * [buildhelpweb](buildhelpweb.md) - Build help of Nelson's modules for website.
 * [headcomments](headcomments.md) - Display Nelson function header comments.
 * [htmltopdf](htmltopdf.md) - Convers html page to pdf.
@@ -17,6 +18,7 @@ help tools
 * [xmldocchecker](xmldocchecker.md) - Checks a xml documentation file.
 * [xmldoctohelp](xmldoctohelp.md) - Converts xml Nelson help files to Nelson format.
 * [xmldoctohtml](xmldoctohtml.md) - Converts xml Nelson help files to html.
+* [xmldoctomd](xmldoctomd.md) - Converts xml Nelson help files to markdown format.
 
 
 

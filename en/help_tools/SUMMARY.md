@@ -1,5 +1,6 @@
 * [help_tools](README.md)
     * [buildhelp](buildhelp.md)
+    * [buildhelpmd](buildhelpmd.md)
     * [buildhelpweb](buildhelpweb.md)
     * [headcomments](headcomments.md)
     * [htmltopdf](htmltopdf.md)
@@ -8,4 +9,5 @@
     * [xmldocchecker](xmldocchecker.md)
     * [xmldoctohelp](xmldoctohelp.md)
     * [xmldoctohtml](xmldoctohtml.md)
+    * [xmldoctomd](xmldoctomd.md)
 
