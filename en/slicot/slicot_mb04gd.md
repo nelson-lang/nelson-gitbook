@@ -32,7 +32,7 @@ MB04GD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MB04GD.html
+http://slicot.org/objects/software/shared/doc/MB04GD.html
 
 ## Example
 

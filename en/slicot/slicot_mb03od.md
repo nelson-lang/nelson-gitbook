@@ -37,7 +37,7 @@ MB03OD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MB03OD.html
+http://slicot.org/objects/software/shared/doc/MB03OD.html
 
 ## Example
 

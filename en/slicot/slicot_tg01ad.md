@@ -39,7 +39,7 @@ TG01AD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/TG01AD.html
+http://slicot.org/objects/software/shared/doc/TG01AD.html
 
 ## Example
 

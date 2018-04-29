@@ -35,7 +35,7 @@ MB05OD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MB05OD.html
+http://slicot.org/objects/software/shared/doc/MB05OD.html
 
 ## Example
 

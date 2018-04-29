@@ -39,7 +39,7 @@ MB03RD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MB03RD.html
+http://slicot.org/objects/software/shared/doc/MB03RD.html
 
 ## Example
 

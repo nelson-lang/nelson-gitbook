@@ -35,7 +35,7 @@ MC01TD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MC01TD.html
+http://slicot.org/objects/software/shared/doc/MC01TD.html
 
 ## Example
 

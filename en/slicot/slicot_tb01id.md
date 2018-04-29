@@ -37,7 +37,7 @@ TB01ID
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/TB01ID.html
+http://slicot.org/objects/software/shared/doc/TB01ID.html
 
 ## Example
 

@@ -39,7 +39,7 @@ MB02MD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MB02MD.html
+http://slicot.org/objects/software/shared/doc/MB02MD.html
 
 ## Example
 

@@ -48,7 +48,7 @@ SB02OD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/SB02OD.html
+http://slicot.org/objects/software/shared/doc/SB02OD.html
 
 ## Example
 

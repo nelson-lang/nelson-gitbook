@@ -48,7 +48,7 @@ AG08BD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/AG08BD.html
+http://slicot.org/objects/software/shared/doc/AG08BD.html
 
 ## Example
 

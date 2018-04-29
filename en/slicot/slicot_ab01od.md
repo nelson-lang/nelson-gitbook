@@ -44,7 +44,7 @@ AB01OD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/AB01OD.html
+http://slicot.org/objects/software/shared/doc/AB01OD.html
 
 ## Example
 

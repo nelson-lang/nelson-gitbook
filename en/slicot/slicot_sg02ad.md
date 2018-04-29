@@ -52,7 +52,7 @@ SG02AD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/SG02AD.html
+http://slicot.org/objects/software/shared/doc/SG02AD.html
 
 ## Example
 

@@ -36,7 +36,7 @@ AB07ND
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/AB07ND.html
+http://slicot.org/objects/software/shared/doc/AB07ND.html
 
 ## Example
 

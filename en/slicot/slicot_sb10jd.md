@@ -38,7 +38,7 @@ SB10JD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/SB10JD.html
+http://slicot.org/objects/software/shared/doc/SB10JD.html
 
 ## Example
 

@@ -37,7 +37,7 @@ MB03PD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/MB03PD.html
+http://slicot.org/objects/software/shared/doc/MB03PD.html
 
 ## Example
 

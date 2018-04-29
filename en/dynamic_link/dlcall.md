@@ -1,0 +1,63 @@
+
+
+# dlcall
+
+C or Fortran Foreign function call.
+
+## Syntax
+
+- [x1, ... , xN] = dlcall(dlsym_handle, arg1, ..., argN)
+
+## Input argument
+
+ - dlsym_handle - a dlsym handle.
+ - arg1, ..., argN - input arguments.
+
+## Output argument
+
+ - [x1, ... , xN] - output values.
+
+## Description
+
+
+  <p><b>dlcall</b> calls an external C or Fortran function loaded from an shared library.</p>
+  <p><b>dlcall</b> validates input argument types before calling based on dlsym handle definition.</p>
+
+
+## Examples
+
+```matlab
+lib = dlopen([modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()]);
+V = double([1 2;3 4]);
+// C prototype:
+// int dynlibTestMultiplyDoubleArrayWithReturn(double *x, int size)
+f = dlsym(lib, 'dynlibTestMultiplyDoubleArrayWithReturn', 'int32', {'doublePtr', 'int32'});
+[r1, r2] = dlcall(f, V, int32(numel(V)))
+delete(f);
+delete(lib);
+```
+Call C getpid function
+```matlab
+run([modulepath('dynamic_link'), '/examples/call_c.nls']);
+```
+Call fortran DASUM (blas) function
+```matlab
+run([modulepath('dynamic_link'), '/examples/call_fortran.nls']);
+```
+
+## See also
+
+[dlsym](dlsym.md), [C/Nelson equivalent data types](C_datatype.md).
+## History
+
+|Version|Description|
+|------|------|
+|1.0.0|initial version|
+
+
+## Author
+
+Allan CORNET
+
+
+

@@ -34,7 +34,7 @@ SB04QD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/SB04QD.html
+http://slicot.org/objects/software/shared/doc/SB04QD.html
 
 ## Example
 

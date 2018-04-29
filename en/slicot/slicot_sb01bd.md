@@ -43,7 +43,7 @@ SB01BD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/SB01BD.html
+http://slicot.org/objects/software/shared/doc/SB01BD.html
 
 ## Example
 

@@ -47,7 +47,7 @@ AB08ND
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/AB08ND.html
+http://slicot.org/objects/software/shared/doc/AB08ND.html
 
 ## Example
 

@@ -34,7 +34,7 @@ SB04MD
 
 Bibliography
 
-http://www.icm.tu-bs.de/NICONET/doc/SB04MD.html
+http://slicot.org/objects/software/shared/doc/SB04MD.html
 
 ## Example
 
