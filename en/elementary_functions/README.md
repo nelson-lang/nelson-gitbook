@@ -10,6 +10,7 @@ elementary functions
 
 * [abs](abs.md) - Absolute value
 * [and](and.md) - logical 'AND' operator, &
+* [cast](cast.md) - Converts variable to a different data type
 * [ceil](ceil.md) - Round up
 * [circshift](circshift.md) - Circular shift
 * [colon](colon.md) - colon operator ':'.
@@ -18,8 +19,10 @@ elementary functions
 * [ctranspose](ctranspose.md) - Returns complex conjugate transpose: ' operator.
 * [disp](disp.md) - Display a variable.
 * [eq](eq.md) - equality, == operator.
+* [factorial](factorial.md) - Factorial function
 * [fix](fix.md) - Round towards zero
 * [floor](floor.md) - Round down
+* [gamma](gamma.md) - Gamma special function
 * [ge](ge.md) - greater than or equal, >= operator.
 * [gt](gt.md) - greater than, > operator.
 * [horzcat](horzcat.md) - Horizontal concatenation.

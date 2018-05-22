@@ -9,4 +9,5 @@
     * [setenv](setenv.md)
     * [system](system.md)
     * [winopen](winopen.md)
+    * [winqueryreg](winqueryreg.md)
 

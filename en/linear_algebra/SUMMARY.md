@@ -2,8 +2,10 @@
     * [expm](expm.md)
     * [inv](inv.md)
     * [issymmetric](issymmetric.md)
+    * [logm](logm.md)
     * [rcond](rcond.md)
     * [schur](schur.md)
+    * [sqrtm](sqrtm.md)
     * [svd](svd.md)
     * [trace](trace.md)
 
