@@ -7,6 +7,7 @@
     * [mat2str](mat2str.md)
     * [newline](newline.md)
     * [replace](replace.md)
+    * [sprintf](sprintf.md)
     * [startsWith](startsWith.md)
     * [str2double](str2double.md)
     * [strcmp](strcmp.md)

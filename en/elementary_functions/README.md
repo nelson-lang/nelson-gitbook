@@ -45,6 +45,7 @@ elementary functions
 * [mtimes](mtimes.md) - Matrix multiplication, * operator
 * [ndims](ndims.md) - Number of dimensions of an array.
 * [ne](ne.md) - Inequality, ~= operator
+* [norm](norm.md) - Matrix and vector norms
 * [not](not.md) - not logical, ~ operator
 * [numel](numel.md) - Number of elements.
 * [or](or.md) - logical 'OR' operator, |

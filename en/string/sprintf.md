@@ -1,31 +1,22 @@
 
 
-# fprintf
+# sprintf
 
-Writes data to a file.
+Writes data to a string.
 
 ## Syntax
 
-- fprintf(format, v1, ... , vn)
-- fprintf(fid, format, v1, ... , vn)
-- R = fprintf(fid, format, v1, ... , vn)
+- sprintf(format, v1, ... , vn)
 
 ## Input argument
 
- - fid - a file descriptor
  - format - a string describing the format to used_function.
  - v1, ... , vn - data to convert and print according to the previous format parameter.
-
-## Output argument
-
- - R - an integer value: number of bytes that fprintf write.
 
 ## Description
 
 
-  <p>Write data in text form to the file specified by the file descriptor fid.</p>
-  <p>If fid equals 1 redirection in stdout.</p>
-  <p>If fid equals 2 redirection in stderr.</p>
+  <p>Write data in text form to a string.</p>
   <p>The <b>format</b> follows C fprintf syntax.</p>
   <style>
 table, th, td {
@@ -109,19 +100,15 @@ table, th, td {
 ## Examples
 
 ```matlab
-fileID = fopen([tempdir(), '/fprintf.txt'],'wt');
-fprintf(fileID, 'an example of %s.', 'text');
-fclose(fileID);
-
-R = fileread([tempdir(), '/fprintf.txt'])
+sprintf('an example of %s.', 'text')
 ```
 ```matlab
-fprintf(1, 'an value %g.', pi);
+sprintf('an value %g.', pi)
 ```
 
 ## See also
 
-[fopen](fopen.md), [fclose](fclose.md), [fread](fread.md).
+[fprintf](../stream_manager/fprintf.md).
 ## History
 
 |Version|Description|

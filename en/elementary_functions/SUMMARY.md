@@ -36,6 +36,7 @@
     * [mtimes](mtimes.md)
     * [ndims](ndims.md)
     * [ne](ne.md)
+    * [norm](norm.md)
     * [not](not.md)
     * [numel](numel.md)
     * [or](or.md)
