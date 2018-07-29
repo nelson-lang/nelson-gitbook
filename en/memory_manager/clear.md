@@ -12,6 +12,7 @@ Remove variable from workspace.
 - clear all
 - clear variables
 - clear functions
+- clear function_name
 - clear variable_name_1 ... variable_name_N
 - clear global variable_name
 
@@ -22,6 +23,7 @@ Remove variable from workspace.
  - all - clears all variables in all scopes
  - variables - clears all variables in current scope.
  - functions - clears cache of macros functions and associated persistent variables.
+ - function_name - clears persistent variables of a function.
 
 ## Description
 

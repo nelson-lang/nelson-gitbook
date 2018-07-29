@@ -10,6 +10,7 @@ elementary functions
 
 * [abs](abs.md) - Absolute value
 * [and](and.md) - logical 'AND' operator, &
+* [angle](angle.md) - Phase angle
 * [cast](cast.md) - Converts variable to a different data type
 * [ceil](ceil.md) - Round up
 * [circshift](circshift.md) - Circular shift
@@ -19,6 +20,7 @@ elementary functions
 * [ctranspose](ctranspose.md) - Returns complex conjugate transpose: ' operator.
 * [disp](disp.md) - Display a variable.
 * [eq](eq.md) - equality, == operator.
+* [exp](exp.md) - Exponential
 * [factorial](factorial.md) - Factorial function
 * [fix](fix.md) - Round towards zero
 * [floor](floor.md) - Round down
@@ -36,6 +38,7 @@ elementary functions
 * [ldivide](ldivide.md) - Left division, .\ operator.
 * [le](le.md) - less than or equal, ≤ operator.
 * [length](length.md) - Length of an object.
+* [log](log.md) - Natural logarithm.
 * [lt](lt.md) - less than, < operator.
 * [minus](minus.md) - Subtraction, - operator
 * [mldivide](mldivide.md) - Matrix left division, \ operator.
@@ -61,6 +64,7 @@ elementary functions
 * [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &&
 * [shortcutor](shortcutor.md) - Short circuit 'OR' operator, ||
 * [size](size.md) - Size of an object.
+* [sqrt](sqrt.md) - Square root.
 * [subsindex](subsindex.md) - Convert an object to an index vector.
 * [mtimes](times.md) - Element wise multiplication, .* operator
 * [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.

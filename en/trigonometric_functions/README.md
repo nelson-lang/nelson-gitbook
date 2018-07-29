@@ -11,6 +11,7 @@ module about sine, cosine, and related functions.
 * [acos](acos.md) - Computes the inverse cosine in radians for each element of x.
 * [asin](asin.md) - Computes the inverse sine in radians for each element of x.
 * [atan](atan.md) - Computes the inverse tangent in radians for each element of x.
+* [atan2](atan2.md) - Computes the four-quadrant inverse tangent.
 * [cos](cos.md) - Computes the cosine in radians for each element of x.
 * [cosd](cosd.md) - Computes the cosine in degree for each element of x.
 * [cosh](cosh.md) - Computes the hyperbolic cosine in radians for each element of x.
