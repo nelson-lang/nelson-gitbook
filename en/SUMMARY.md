@@ -15,6 +15,7 @@
     * [abort](./interpreter/abort.md)
     * [break](./interpreter/break.md)
     * [continue](./interpreter/continue.md)
+    * [dbstack](./interpreter/dbstack.md)
     * [for](./interpreter/for.md)
     * [function](./interpreter/function.md)
     * [if](./interpreter/if.md)
@@ -71,6 +72,7 @@
 * [error_manager](./error_manager/README.md)
     * [error](./error_manager/error.md)
     * [lasterror](./error_manager/lasterror.md)
+    * [lastwarn](./error_manager/lastwarn.md)
     * [warning](./error_manager/warning.md)
 
 

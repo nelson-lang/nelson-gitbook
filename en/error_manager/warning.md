@@ -6,27 +6,49 @@ Display a warning message.
 
 ## Syntax
 
+- warning()
 - warning(msg)
+- warning(id, msg)
+- warning(state)
+- warning(state, id)
+- st = warning()
+- warning(st)
+
+## Input argument
+
+ - id - a string: identifier for the warning.
+ - msg - a string: message to warn.
+ - state - a string: 'on', 'off', 'aserror', 'all' or 'query'.
+ - st - a struct: set warning settings.
 
 ## Output argument
 
- - msg - a string.
+ - st - a struct, warning settings.
 
 ## Description
 
 
   <p><b>warning</b> displays a warning message.</p>
+  <p><b>warning('')</b> resets lastwarn state.</p>
 
 
-## Example
+## Examples
 
 ```matlab
 warning('your warning message.')
 ```
+```matlab
+warning('on', 'myModule:identifier');
+warning('myModule:identifier', 'my message 1 on');
+warning('off', 'myModule:identifier');
+warning('myModule:identifier', 'my message 2 off');
+warning('aserror', 'myModule:identifier');
+warning('myModule:identifier', 'my message 3 as error');
+```
 
 ## See also
 
-[lasterror](lasterror.md), [warning](error.md).
+[lasterror](lasterror.md), [error](error.md), [lastwarn](lastwarn.md).
 ## History
 
 |Version|Description|
