@@ -19,9 +19,11 @@ module about sine, cosine, and related functions.
 * [sin](sin.md) - Computes the sine in radians for each element of x.
 * [sind](sind.md) - Computes the sine in degree for each element of x.
 * [sinh](sinh.md) - Computes the hyperbolic sine in radians for each element of x.
+* [sinm](sinm.md) - Computes the matrix sinus of a square matrix.
 * [tan](tan.md) - Computes the tangent in radians for each element of x.
 * [tand](tand.md) - Computes the tangent in degree for each element of x.
 * [tanh](tanh.md) - Computes the hyperbolic tangent in radians for each element of x.
+* [tanm](tanm.md) - Computes the matrix tangent of a square matrix.
 
 
 

@@ -23,6 +23,7 @@
     * [isapprox](isapprox.md)
     * [isequal](isequal.md)
     * [isequaln](isequaln.md)
+    * [isequalto](isequalto.md)
     * [isfinite](isfinite.md)
     * [isinf](isinf.md)
     * [isnan](isnan.md)

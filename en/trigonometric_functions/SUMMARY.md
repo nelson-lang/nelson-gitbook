@@ -10,7 +10,9 @@
     * [sin](sin.md)
     * [sind](sind.md)
     * [sinh](sinh.md)
+    * [sinm](sinm.md)
     * [tan](tan.md)
     * [tand](tand.md)
     * [tanh](tanh.md)
+    * [tanm](tanm.md)
 

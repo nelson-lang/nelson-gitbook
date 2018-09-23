@@ -17,6 +17,7 @@
     * [strncmp](strncmp.md)
     * [strncmpi](strncmpi.md)
     * [strrep](strrep.md)
+    * [strtrim](strtrim.md)
     * [tolower](tolower.md)
     * [toupper](toupper.md)
 

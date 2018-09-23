@@ -30,8 +30,9 @@ elementary functions
 * [horzcat](horzcat.md) - Horizontal concatenation.
 * [imag](imag.md) - Imaginary part of an complex number.
 * [isapprox](isapprox.md) - Return true if arguments are approximately equal, within the precision.
-* [isequal](isequal.md) - Return true if all arguments x1, x2, … , xn are equal (same type, same dimensions, same values).
-* [isequaln](isequaln.md) - Return true if all arguments x1, x2, … , xn are equal (same type, same dimensions, same values or NaNs).
+* [isequal](isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
+* [isequaln](isequaln.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
+* [isequalto](isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
 * [isfinite](isfinite.md) - Check for finite entries.
 * [isinf](isinf.md) - Check for Infinity entries.
 * [isnan](isnan.md) - Check for Not a Number entries.

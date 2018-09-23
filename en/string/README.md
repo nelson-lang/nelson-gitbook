@@ -26,6 +26,7 @@ string type functions
 * [strncmp](strncmp.md) - Compares first n characters of strings.
 * [strncmpi](strncmpi.md) - Compares first n characters of strings (case sensitive).
 * [strrep](strrep.md) - Replaces strings in another.
+* [strtrim](strtrim.md) - Remove leading and trailing whitespace.
 * [tolower](tolower.md) - Lower case conversion.
 * [toupper](toupper.md) - Upper case conversion.
 

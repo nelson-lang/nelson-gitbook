@@ -2,7 +2,7 @@
 
 # isequaln
 
-Return true if all arguments x1, x2, … , xn are equal (same type, same dimensions, same values or NaNs).
+Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
 
 ## Syntax
 
@@ -21,7 +21,7 @@ Return true if all arguments x1, x2, … , xn are equal (same type, same dimensi
 
 ## Description
 
-<b>isequaln</b> returns true if x1 and x2 are the same type, same size and same values; otherwise, it returns false.
+<b>isequaln</b> returns true if x1 and x2 are the  same size and same values; otherwise, it returns false.
 <b>isequaln</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be <b>equal</b> to other elements.
 
 
@@ -35,6 +35,7 @@ res = isequaln(A, A)
 A = eye(3, 3);
 B = single(A)			
 res = isequaln(A, B)
+res = isequalto(A, B)
 ```
 ```matlab
 res = isequaln('nel', 'son')
@@ -45,7 +46,7 @@ res = isequaln(NaN, NaN)
 
 ## See also
 
-[isequal](isequal.md).
+[isequal](isequal.md), [isequalto](isequalto.md).
 ## History
 
 |Version|Description|

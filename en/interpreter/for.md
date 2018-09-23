@@ -18,10 +18,13 @@ for loop.
   <p><b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
 
 
-## Example
+## Examples
 
 ```matlab
 for i = 1:10, disp(i), end
+```
+```matlab
+for i = [1, 2; 3 4], disp(i), disp('next'), end
 ```
 
 ## See also
