@@ -18,6 +18,7 @@
     * [isreal](isreal.md)
     * [issingle](issingle.md)
     * [issparse](issparse.md)
+    * [isstring](isstring.md)
     * [isstruct](isstruct.md)
     * [isuint16](isuint16.md)
     * [isuint32](isuint32.md)

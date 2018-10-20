@@ -10,7 +10,7 @@ Converts a string to double.
 
 ## Input argument
 
- - str - a cell of strings, or a string.
+ - str - a cell of strings, string array or a string.
 
 ## Output argument
 
@@ -29,6 +29,7 @@ Converts a string to double.
 R = str2double('2.6 + 3j')
 R = str2double('+NaNi')
 R = str2double({'2.71' '3.1415'})
+R = str2double(["2.71" "3.1415"])
 ```
 
 ## See also

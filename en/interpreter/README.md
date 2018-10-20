@@ -11,7 +11,6 @@ interpreter functions
 * [abort](abort.md) - stop evaluation.
 * [break](break.md) - exit evaluation loop.
 * [continue](continue.md) - continue evaluation in loop.
-* [dbstack](dbstack.md) - call stack.
 * [for](for.md) - for loop.
 * [function](function.md) - function declaration.
 * [if](if.md) - conditional statement.

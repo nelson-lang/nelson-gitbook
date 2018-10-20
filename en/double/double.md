@@ -32,6 +32,10 @@ A = single(pi)
 B = double(A)
 B - A
 ```
+```matlab
+A = ["3.134", "NaN"; "Inf", "-5"];
+B = double(A)
+```
 
 ## See also
 

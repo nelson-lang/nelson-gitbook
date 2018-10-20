@@ -10,7 +10,7 @@ Remove leading and trailing whitespace.
 
 ## Input argument
 
- - str - a string or a cell of strings.
+ - str - a string, a cell of strings or a string array.
 
 ## Output argument
 
@@ -26,7 +26,10 @@ Remove leading and trailing whitespace.
 ## Examples
 
 ```matlab
-strtrim(' Nel Son' )
+strtrim(' Nel Son')
+```
+```matlab
+strtrim(" Nel Son")
 ```
 ```matlab
 strtrim([' Nel Son', char(160)])
@@ -34,7 +37,7 @@ strtrim([' Nel Son', char(160)])
 
 ## See also
 
-[toupper](toupper.md).
+[deblank](deblank.md), [toupper](toupper.md).
 ## History
 
 |Version|Description|

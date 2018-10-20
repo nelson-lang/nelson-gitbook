@@ -10,7 +10,7 @@ Upper case conversion.
 
 ## Input argument
 
- - str - a string.
+ - str - a row character array, a cell of strings or an string array.
 
 ## Output argument
 
@@ -20,10 +20,13 @@ Upper case conversion.
 
 <b>toupper</b> converts a string to upper case.
 
-## Example
+## Examples
 
 ```matlab
 toupper('NelSon')
+```
+```matlab
+upper(["NelSon", "is", "open"])
 ```
 
 ## See also

@@ -35,6 +35,7 @@ elementary functions
 * [isequalto](isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
 * [isfinite](isfinite.md) - Check for finite entries.
 * [isinf](isinf.md) - Check for Infinity entries.
+* [ismissing](ismissing.md) - Check for missing values.
 * [isnan](isnan.md) - Check for Not a Number entries.
 * [ldivide](ldivide.md) - Left division, .\ operator.
 * [le](le.md) - less than or equal, ≤ operator.

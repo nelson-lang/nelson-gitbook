@@ -13,12 +13,12 @@ Read contents of file as text.
 ## Input argument
 
  - filename - a string: a file name
- - type - a string: 'char' or 'cell'. 'cell' will converts text file to a cell of string. 'char' by default.
+ - type - a string: 'char', 'cell' or 'string'. 'cell' will converts text file to a cell of string. 'string' will converts text file to a string array. 'char' by default.
  - eol - a string: 'native', 'pc' or 'unix'. Set end of line. 'unix' by default.
 
 ## Output argument
 
- - str - a string.
+ - str - a string, cell of strings or string array.
 
 ## Description
 
@@ -32,6 +32,7 @@ Read contents of file as text.
 str = fileread([nelsonroot(),'/CHANGELOG.md'])
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'char')
 str = fileread([nelsonroot(),'/CHANGELOG.md'], 'cell')
+str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
 ```
 
 ## See also

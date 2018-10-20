@@ -12,7 +12,7 @@ checks if string starts with pattern.
 
 ## Input argument
 
- - str - a string or cell of strings.
+ - str - a string, string array or cell of strings.
  - pattern - a string to find.
 
 ## Output argument
@@ -33,6 +33,9 @@ k = startsWith (str, 'to', 'IgnoreCase', true)
 
 A = {'Nel', 'son'; 'Nelson', 'Modules'}
 k = startsWith(A, 'Nel')
+
+A = ["Nel", "son"; "Nelson", "Modules"];
+k = startsWith(A, "Nel")
 ```
 
 ## See also

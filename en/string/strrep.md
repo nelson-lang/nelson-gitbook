@@ -10,13 +10,13 @@ Replaces strings in another.
 
 ## Input argument
 
- - str - a string or cell of strings.
- - old - a string or cell of strings to find.
- - new - a string or cell of strings.
+ - str - a string, string array or cell of strings.
+ - old - a string, string array or cell of strings to find.
+ - new - a string, string array or cell of strings.
 
 ## Output argument
 
- - res - a string or cell of strings.
+ - res - a string, string array or cell of strings.
 
 ## Description
 
@@ -30,6 +30,7 @@ Replaces strings in another.
 ```matlab
 r = strrep('This is a string.', 'is', 'is not')
 r = strrep({'cccc','ccbbcca'},{'cc','bb'},{'cc'})
+r = strrep("This is a string.", "is", 'is not')
 ```
 
 ## See also

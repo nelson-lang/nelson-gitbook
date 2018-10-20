@@ -10,8 +10,8 @@ Strings comparaison.
 
 ## Input argument
 
- - s1 - a string or cell of strings.
- - s2 - a string or cell of strings.
+ - s1 - a string, string array or cell of strings.
+ - s2 - a string, string array or cell of strings.
 
 ## Output argument
 

@@ -11,6 +11,7 @@ string type functions
 * [char](char.md) - Converts to a character array.
 * [contains](contains.md) - checks if string contains with pattern.
 * [count](count.md) - Computes the number of occurrences of an pattern.
+* [deblank](deblank.md) - Remove trailing whitespace.
 * [endsWith](endsWith.md) - checks if string ends with pattern.
 * [int2str](int2str.md) - Convert an integer array to a string
 * [mat2str](mat2str.md) - Matrix to String.
@@ -22,7 +23,9 @@ string type functions
 * [strcmp](strcmp.md) - Strings comparaison.
 * [strcmpi](strcmpi.md) - Strings comparaison (case insensitive).
 * [strfind](strfind.md) - Find a string in another.
-* [strlength](strlength.md) - Length of strings in cell of strings.
+* [string](string.md) - string array constructor.
+* [strings](strings.md) - Create string array without characters.
+* [strlength](strlength.md) - Length of strings in cell of strings or string array.
 * [strncmp](strncmp.md) - Compares first n characters of strings.
 * [strncmpi](strncmpi.md) - Compares first n characters of strings (case sensitive).
 * [strrep](strrep.md) - Replaces strings in another.

@@ -10,20 +10,23 @@ Lower case conversion.
 
 ## Input argument
 
- - str - a string.
+ - str - a row character array, a cell of strings or an string array.
 
 ## Output argument
 
- - res - a string lower case
+ - res - lower case equivalent
 
 ## Description
 
 <b>tolower</b> converts a string to lower case.
 
-## Example
+## Examples
 
 ```matlab
 tolower('NelSon')
+```
+```matlab
+tolower(["NelSon", "is", "open"])
 ```
 
 ## See also

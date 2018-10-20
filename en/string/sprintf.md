@@ -103,6 +103,9 @@ table, th, td {
 sprintf('an example of %s.', 'text')
 ```
 ```matlab
+sprintf("an example of %s.", "text")
+```
+```matlab
 sprintf('an value %g.', pi)
 ```
 

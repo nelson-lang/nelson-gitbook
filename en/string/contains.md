@@ -12,7 +12,7 @@ checks if string contains with pattern.
 
 ## Input argument
 
- - str - a string or cell of strings.
+ - str - a string, string array or cell of strings.
  - pattern - a string to find.
 
 ## Output argument
@@ -21,7 +21,7 @@ checks if string contains with pattern.
 
 ## Description
 
-<b>endsWith</b> contains <b>true</b> if <b>str</b> ends with <b>pattern</b>.
+<b>contains</b> returns <b>true</b> if <b>str</b> contains <b>pattern</b>.
 
 ## Example
 
@@ -32,6 +32,9 @@ k = contains (str, 'molehill')
 k = contains (str, 'Hill', 'IgnoreCase', true)
 
 A = {'Nel', 'son'; 'Nelson', 'Modules'}
+k = contains(A, 'son')
+
+A = ["Nel", "son"; "Nelson", "Modules"]
 k = contains(A, 'son')
 ```
 

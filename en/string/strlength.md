@@ -2,7 +2,7 @@
 
 # strlength
 
-Length of strings in cell of strings.
+Length of strings in cell of strings or string array.
 
 ## Syntax
 
@@ -10,7 +10,7 @@ Length of strings in cell of strings.
 
 ## Input argument
 
- - ce - a string or cell of strings.
+ - ce - a string, string array or cell of strings.
 
 ## Output argument
 
@@ -18,7 +18,7 @@ Length of strings in cell of strings.
 
 ## Description
 
-<b>strlength</b> returns length of strings in cell of strings.
+<b>strlength</b> returns length of strings.
 
 ## Example
 
@@ -28,6 +28,9 @@ k = strlength(str)
 
 A = {'Nel', 'son'; 'Toolboxes', 'Modules'}
 k = strlength(A)
+
+B = ["Nel", NaN, "son"; "is", "open", "source"];
+k = strlength(B)
 ```
 
 ## See also

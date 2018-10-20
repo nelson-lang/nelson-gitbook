@@ -27,6 +27,7 @@ module about types management.
 * [isreal](isreal.md) - Return true if all imaginary part is a zero array.
 * [issingle](issingle.md) - Return true if variable var is a single matrix.
 * [issparse](issparse.md) - Return true if variable var is a sparse array.
+* [isstring](isstring.md) - Return true if variable var is a string array.
 * [isstruct](isstruct.md) - Return true if variable var is a structure.
 * [isuint16](isuint16.md) - Return true if variable var is an unsigned 16-bit integer type array.
 * [isuint32](isuint32.md) - Return true if variable var is an unsigned 32-bit integer type array.

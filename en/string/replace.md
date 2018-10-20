@@ -10,13 +10,13 @@ Replaces strings in another.
 
 ## Input argument
 
- - str - a string or cell of strings.
- - old - a string or cell of strings to find.
- - new - a string or cell of strings.
+ - str - a string, string array or cell of strings.
+ - old - a string, string array or cell of strings to find.
+ - new - a string, string array or cell of strings.
 
 ## Output argument
 
- - res - a string or cell of strings.
+ - res - a string, string array or cell of strings.
 
 ## Description
 

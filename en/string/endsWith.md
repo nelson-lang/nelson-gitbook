@@ -12,7 +12,7 @@ checks if string ends with pattern.
 
 ## Input argument
 
- - str - a string or cell of strings.
+ - str - a string, string array or cell of strings.
  - pattern - a string to find.
 
 ## Output argument
@@ -33,6 +33,9 @@ k = endsWith (str, 'Hill', 'IgnoreCase', true)
 
 A = {'Nel', 'son'; 'Nelson', 'Modules'}
 k = endsWith(A, 'son')
+
+A = ["Nel", "son"; "Nelson", "Modules"]
+k = endsWith(A, "son")
 ```
 
 ## See also

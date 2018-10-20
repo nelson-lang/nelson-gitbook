@@ -117,6 +117,7 @@ R = fileread([tempdir(), '/fprintf.txt'])
 ```
 ```matlab
 fprintf(1, 'an value %g.', pi);
+fprintf(2, "an value %g.", pi);
 ```
 
 ## See also

@@ -11,6 +11,7 @@ data structures functions
 * [cell](cell.md) - Create cell array of empty matrices.
 * [cell2struct](cell2struct.md) - Creates a struct from a cell.
 * [cellfun](cellfun.md) - Evaluates an function on a cell.
+* [cellstr](cellstr.md) - Converts to cell of character array.
 * [fieldnames](fieldnames.md) - Returns field names of a structure or an handle.
 * [getfield](getfield.md) - Returns value of a field in a struct.
 * [iscellstr](iscellstr.md) - Returns if a variable is a cell of strings.

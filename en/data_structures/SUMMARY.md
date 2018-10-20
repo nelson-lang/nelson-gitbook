@@ -2,6 +2,7 @@
     * [cell](cell.md)
     * [cell2struct](cell2struct.md)
     * [cellfun](cellfun.md)
+    * [cellstr](cellstr.md)
     * [fieldnames](fieldnames.md)
     * [getfield](getfield.md)
     * [iscellstr](iscellstr.md)

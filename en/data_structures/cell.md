@@ -11,11 +11,13 @@ Create cell array of empty matrices.
 - C = cell(m, n)
 - C = cell(m, n, ... , p)
 - C = cell(sz)
+- C = cell(A)
 
 ## Input argument
 
  - m, n, ... , p - dimensions of the cell to create.
  - sz - a vector of integer values (dimensions of the cell to create).
+ - A - a string array.
 
 ## Output argument
 
@@ -26,14 +28,19 @@ Create cell array of empty matrices.
 
   <p><b>cell</b> returns a cell array of empty matrices.</p>
   <p><b>cell()</b> is equivalent to <b>cell(0)</b></p>
+  <p><b>cell(A)</b> with A a string array converts to cell.</p>
 
 
-## Example
+## Examples
 
 ```matlab
 A = eye(2, 4);
 sz = size(A)
 C = cell(sz)
+```
+```matlab
+A = ["Nel", "son"; "open", "source"];
+C = cell(A)
 ```
 
 ## See also

@@ -37,6 +37,9 @@ eye(2,2) == ones(2, 2)
 'Nelson' == 'Noslen'
 ```
 ```matlab
+"Nelson" == "Noslen"
+```
+```matlab
 'Nelson' == 'l'
 ```
 ```matlab

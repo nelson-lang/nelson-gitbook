@@ -26,6 +26,7 @@
     * [isequalto](isequalto.md)
     * [isfinite](isfinite.md)
     * [isinf](isinf.md)
+    * [ismissing](ismissing.md)
     * [isnan](isnan.md)
     * [ldivide](ldivide.md)
     * [le](le.md)

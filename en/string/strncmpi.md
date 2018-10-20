@@ -10,8 +10,8 @@ Compares first n characters of strings (case sensitive).
 
 ## Input argument
 
- - s1 - a string or cell of strings.
- - s2 - a string or cell of strings.
+ - s1 - a string, string array or cell of strings.
+ - s2 - a string, string array or cell of strings.
  - n - an integer value: numbers of characters to compare.
 
 ## Output argument
