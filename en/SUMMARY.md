@@ -673,3 +673,9 @@
     * [resume](./audio/resume.md)
     * [stop](./audio/stop.md)
 
+
+* [sio_client](./sio_client/README.md)
+    * [doc](./sio_client/doc.md)
+    * [sioemit](./sio_client/sioemit.md)
+    * [siogetvariable](./sio_client/siogetvariable.md)
+
