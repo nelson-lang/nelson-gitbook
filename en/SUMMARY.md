@@ -408,6 +408,16 @@
     * [fwrite](./stream_manager/fwrite.md)
 
 
+* [hdf5](./hdf5/README.md)
+    * [h5create](./hdf5/h5create.md)
+    * [h5dump](./hdf5/h5dump.md)
+    * [h5ls](./hdf5/h5ls.md)
+    * [h5read](./hdf5/h5read.md)
+    * [h5readatt](./hdf5/h5readatt.md)
+    * [h5write](./hdf5/h5write.md)
+    * [h5writeatt](./hdf5/h5writeatt.md)
+
+
 * [json](./json/README.md)
     * [jsondecode](./json/jsondecode.md)
     * [jsonencode](./json/jsonencode.md)
