@@ -2,7 +2,7 @@
 
 # h5create
 
-Creates a dataset.
+Creates a data set.
 
 ## Syntax
 
@@ -12,13 +12,13 @@ Creates a dataset.
 
  - filename - a string: hdf5 filename.
  - datasetname - a string: name of the data set.
- - size - a row vector specifying the extents of the dataset.
+ - size - a row vector specifying the extents of the data set.
  - Name1, Value1, ..., NameN, ValueN - Name-Value Pair Arguments.
 
 ## Description
 
 
-  <p><b>h5create</b> creates a dataset and specify its extent dimensions, datatype and chunk size.</p>
+  <p><b>h5create</b> creates a data set and specify its extent dimensions, datatype and chunk size.</p>
   <p>Name-Values pair supported:</p>
   <p>Name: Datatype (Nelson® datatypes).</p>
   <p>Value: 'double' (default), 'uint64', 'uint32', 'uint16', 'uint8', 'single', 'int64', 'int32', 'int16', or	'int8'.</p>

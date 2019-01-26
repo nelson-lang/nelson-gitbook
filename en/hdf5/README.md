@@ -8,7 +8,7 @@ HDF5
 Hierarchical Data Format
 
 
-* [h5create](h5create.md) - Creates a dataset.
+* [h5create](h5create.md) - Creates a data set.
 * [h5dump](h5dump.md) - dump the content of hdf5 file as text.
 * [h5ls](h5ls.md) - List the content of an HDF5 file.
 * [h5read](h5read.md) - Read HDF5 data set.

@@ -31,7 +31,7 @@ isfile([nelsonroot(), '/etc/finish.nls'])
 
 ## See also
 
-[mkdir](mkdir.md), [isdir](isdir.md).
+[mkdir](mkdir.md), [isfolder](isfolder.md).
 ## History
 
 |Version|Description|

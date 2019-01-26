@@ -1,6 +1,8 @@
 * [string](README.md)
     * [char](char.md)
     * [contains](contains.md)
+    * [convertCharsToStrings](convertCharsToStrings.md)
+    * [convertStringsToChars](convertStringsToChars.md)
     * [count](count.md)
     * [deblank](deblank.md)
     * [endsWith](endsWith.md)
