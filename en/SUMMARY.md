@@ -414,9 +414,11 @@
 * [hdf5](./hdf5/README.md)
     * [h5create](./hdf5/h5create.md)
     * [h5dump](./hdf5/h5dump.md)
+    * [h5load](./hdf5/h5load.md)
     * [h5ls](./hdf5/h5ls.md)
     * [h5read](./hdf5/h5read.md)
     * [h5readatt](./hdf5/h5readatt.md)
+    * [h5save](./hdf5/h5save.md)
     * [h5write](./hdf5/h5write.md)
     * [h5writeatt](./hdf5/h5writeatt.md)
 

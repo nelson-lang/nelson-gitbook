@@ -17,6 +17,7 @@ Executables to start Nelson software.
  - --help - help about program options.
  - --version - Return Nelson version.
  - --open - opens files arg2 ... argN must be valid/existing filenames.
+ - --mat - load files arg2 ... argN must be valid/existing .nh5 or .mat filenames.
  - --nostartup - disable the main Nelson script file executed at startup.
  - --nouserstartup - disable the user script file executed at startup after the main startup file.
  - --language lang - If this option is present it fixes the user language. Currently, lang can be: fr_FR en_US.

@@ -1,3 +1,28 @@
+## 0.3.2 (2019-02-24)
+
+
+Features:
+---------
+
+* h5save: save Nelson's workspace to .nh5 file.
+
+* h5load: load data form .nh5 file into Nelson's workspace.
+
+* save, load alias on h5save and h5load.
+
+* .nh5 file extension support added: data formatted (Nelson workspace).
+
+* .nh5 file association on Windows. load data formatted for Nelson.
+
+
+Compilation:
+---------
+
+  * Qt 5.12.1 on Windows
+
+  * fix some 32 bit Warnings.
+
+
 ## 0.3.1 (2019-01-26)
 
 
