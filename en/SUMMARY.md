@@ -92,6 +92,7 @@
     * [varlock](./memory_manager/varlock.md)
     * [varunlock](./memory_manager/varunlock.md)
     * [who](./memory_manager/who.md)
+    * [whos](./memory_manager/whos.md)
 
 
 * [modules_manager](./modules_manager/README.md)
@@ -409,18 +410,31 @@
     * [fsize](./stream_manager/fsize.md)
     * [ftell](./stream_manager/ftell.md)
     * [fwrite](./stream_manager/fwrite.md)
+    * [load](./stream_manager/load.md)
+    * [save](./stream_manager/save.md)
 
 
 * [hdf5](./hdf5/README.md)
     * [h5create](./hdf5/h5create.md)
     * [h5dump](./hdf5/h5dump.md)
-    * [h5load](./hdf5/h5load.md)
     * [h5ls](./hdf5/h5ls.md)
     * [h5read](./hdf5/h5read.md)
     * [h5readatt](./hdf5/h5readatt.md)
-    * [h5save](./hdf5/h5save.md)
     * [h5write](./hdf5/h5write.md)
     * [h5writeatt](./hdf5/h5writeatt.md)
+    * [isnh5file](./hdf5/isnh5file.md)
+    * [loadnh5](./hdf5/loadnh5.md)
+    * [savenh5](./hdf5/savenh5.md)
+    * [whonh5](./hdf5/whonh5.md)
+    * [whosnh5](./hdf5/whosnh5.md)
+
+
+* [matio](./matio/README.md)
+    * [ismatfile](./matio/ismatfile.md)
+    * [loadmat](./matio/loadmat.md)
+    * [savemat](./matio/savemat.md)
+    * [whomat](./matio/whomat.md)
+    * [whosmat](./matio/whosmat.md)
 
 
 * [json](./json/README.md)

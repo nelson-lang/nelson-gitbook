@@ -19,7 +19,8 @@ memory manager functions
 * [varislock](varislock.md) - Checks if a variable is locked.
 * [varlock](varlock.md) - Locks a variable.
 * [varunlock](varunlock.md) - Unlocks a variable.
-* [who](who.md) - List variables in memory.
+* [who](who.md) - List variables in memory or in .nh5 or in .mat file.
+* [whos](whos.md) - List variables in memory or in .nh5 or in .mat file with sizes and types.
 
 
 

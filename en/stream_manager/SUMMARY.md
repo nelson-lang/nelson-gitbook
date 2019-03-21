@@ -14,4 +14,6 @@
     * [fsize](fsize.md)
     * [ftell](ftell.md)
     * [fwrite](fwrite.md)
+    * [load](load.md)
+    * [save](save.md)
 

@@ -1,5 +1,46 @@
-## 0.3.2 (2019-02-24)
+# 0.3.3  (2019-03-21)
 
+Features:
+---------
+
+* load, save MAT-files:
+
+  - load overloads loadnh5, loadmat functions.
+  - save overloads savenh5, savemat functions.
+  - .mat file extension support added: data formatted (Nelson workspace).
+  - .mat file association on Windows. load MAT file as data formatted for Nelson.
+  - loadmat: load mat-file into Nelson's workspace
+  - savemat: save Nelson's workspace to .mat file.
+  - rename h5save to savenh5, h5load to loadnh5
+
+* whos: list variables with sizes and types.
+
+  - whosmat: list variables in an valid .mat file with sizes and types.
+  - whosnh5: list variables in an valid .nh5 file with sizes and types.
+
+* extends who to manage '-file' option.
+
+  - whomat: list variables in an valid .mat file.
+  - whonh5: list variables in an valid .nh5 file.
+
+* ismatfile: check if a file is a valid .mat file.
+
+* isnh5file: check if a file is a valid .nh5 file.
+
+
+Compilation:
+------------
+
+* MATIO 1.5.13
+
+  Thanks to MAT file I/O library (MATIO) to provide an easy support for MAT-file.
+
+* BOOST 1.69 (Windows)
+
+* CMake 3.14 (Windows)
+
+
+## 0.3.2 (2019-02-24)
 
 Features:
 ---------

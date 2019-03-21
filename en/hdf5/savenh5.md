@@ -1,17 +1,15 @@
 
 
-# h5save
-
-# save
+# savenh5
 
 save workspace variables to .nh5 file
 
 ## Syntax
 
-- h5save(filename)
-- h5save(filename, var1, ..., varN)
-- h5save(filename, '-append', ...)
-- h5save(filename, '-nocompression', ...)
+- savenh5(filename)
+- savenh5(filename, var1, ..., varN)
+- savenh5(filename, '-append', ...)
+- savenh5(filename, '-nocompression', ...)
 
 ## Input argument
 
@@ -23,7 +21,7 @@ save workspace variables to .nh5 file
 ## Description
 
 
-  <p><b>h5save</b> save workspace variables to .nh5 file.</p>
+  <p><b>savenh5</b> save workspace variables to .nh5 file.</p>
   <p>.nh5 file uses hdf5 file as container.</p>
 
 
@@ -32,15 +30,15 @@ save workspace variables to .nh5 file
 ```matlab
 A = ones(3, 4);
 B = 'hello for open mat users';
-h5save([tempdir(), '/example_h5load.nh5'], 'A', 'B')
+savenh5([tempdir(), '/example_h5load.nh5'], 'A', 'B')
 clear;
-st = h5load([tempdir(), '/example_h5load.nh5']);
+st = loadnh5([tempdir(), '/example_h5load.nh5']);
 who
 st.A
 st.B
 clear
 who
-h5load([tempdir(), '/example_h5load.nh5']);
+loadnh5([tempdir(), '/example_h5load.nh5']);
 who
 A
 B
@@ -48,16 +46,16 @@ B
 append variables
 ```matlab
 C = eye(3, 4);
-h5save([tempdir(), '/example_h5load.nh5'], 'C', '-append')
+savenh5([tempdir(), '/example_h5load.nh5'], 'C', '-append')
 clear;
-st = h5load([tempdir(), '/example_h5load.nh5']);
+st = loadnh5([tempdir(), '/example_h5load.nh5']);
 who
 st.A
 st.B
 st.C
 clear
 who
-h5load([tempdir(), '/example_h5load.nh5']);
+loadnh5([tempdir(), '/example_h5load.nh5']);
 who
 A
 B
@@ -66,15 +64,15 @@ C
 compression
 ```matlab
 C = eye(1000, 1000);
-h5save([tempdir(), '/example_h5save_with_compression.nh5'], 'C')
-h5save([tempdir(), '/example_h5save_no_compression.nh5'], 'C', '-nocompression')
+savenh5([tempdir(), '/example_h5save_with_compression.nh5'], 'C')
+savenh5([tempdir(), '/example_h5save_no_compression.nh5'], 'C', '-nocompression')
 with_compression = dir([tempdir(), '/example_h5save_with_compression.nh5'])
 no_compression = dir([tempdir(), '/example_h5save_no_compression.nh5'])
 ```
 
 ## See also
 
-[h5load](h5load.md), [h5write](h5write.md).
+[loadnh5](loadnh5.md), [h5write](h5write.md).
 ## History
 
 |Version|Description|

@@ -11,4 +11,5 @@
     * [varlock](varlock.md)
     * [varunlock](varunlock.md)
     * [who](who.md)
+    * [whos](whos.md)
 

@@ -23,6 +23,8 @@ stream functions
 * [fsize](fsize.md) - Returns size of an opened file.
 * [ftell](ftell.md) - Returns the offset of the current byte relative to the beginning of a file.
 * [fwrite](fwrite.md) - Write data in binary form to the file specified by the file descriptor fid.
+* [load](load.md) - load data from .nh5 or .mat file into Nelson's workspace.
+* [save](save.md) - save workspace variables to .nh5 or .mat file
 
 
 
