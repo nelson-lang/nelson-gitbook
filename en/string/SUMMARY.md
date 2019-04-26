@@ -1,4 +1,5 @@
 * [string](README.md)
+    * [blanks](blanks.md)
     * [char](char.md)
     * [contains](contains.md)
     * [convertCharsToStrings](convertCharsToStrings.md)

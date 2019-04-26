@@ -6,7 +6,7 @@ Checks if filename a valid .mat file
 
 ## Syntax
 
-- [tf, ver] = ismatfile(filename)
+- [tf, ver, header] = ismatfile(filename)
 
 ## Input argument
 
@@ -15,7 +15,8 @@ Checks if filename a valid .mat file
 ## Output argument
 
  - tf - a logical: true if it is a valid .mat file.
- - ver - a string: version of .mat file ("-v7.3", "-v7" or "-v6").
+ - ver - a string array: version of .mat file ("-v7.3", "-v7" or "-v6").
+ - header - a string array: header of .mat file (date).
 
 ## Description
 
@@ -37,7 +38,7 @@ savemat([tempdir(), '/example_loadmat-v6.mat'], 'A', '-v6')
 [tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.3.mat']) 
 [tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.mat']) 
 [tf, ver] = ismatfile([tempdir(), '/example_loadmat-v6.mat']) 
-[tf, ver] = ismatfile([tempdir(), '/example_not_existing.mat'])
+[tf, ver, header] = ismatfile([tempdir(), '/example_not_existing.mat'])
 ```
 
 ## See also

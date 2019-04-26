@@ -1,3 +1,42 @@
+# 0.3.4  (2019-04-27)
+
+Features:
+---------
+
+* Coverage and Profiling Tools for Nelson's language:
+
+  - profile function: Profile execution time for functions
+  - profsave function: Save profile report in HTML format
+
+* blanks builtin: creates an string of blank characters.
+
+* .nh5 files have an header to identify it easily.
+
+* isnh5file, ismatfile extended to return header string.
+
+Bug Fixes:
+---------
+
+  * [#193](http://github.com/Nelson-numerical-software/nelson/issues/193): func2str help was wrong.
+
+
+Compilation:
+------------
+
+* MATIO 1.5.15
+
+  Thanks to MAT file I/O library (MATIO) to provide an easy support for MAT-file.
+
+* more 100 warnings fixed (Thanks to PVS-Studio analyzer and also Cppcheck).
+
+* .editorconfig file added.
+
+* Visual studio 15.9.11
+
+* Qt 5.12.2 on Windows
+
+
+
 # 0.3.3  (2019-03-21)
 
 Features:

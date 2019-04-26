@@ -1,25 +1,25 @@
 
 
-# func2str
+# str2func
 
-Returns a string from function handle.
+Returns a function handle from a string.
 
 ## Syntax
 
-- str = func2str(func_handle)
+- func_handle = str2func(str)
 
 ## Input argument
 
- - func_handle - a function handle.
+ - str - a string
 
 ## Output argument
 
- - str - a string
+ - func_handle - a function handle.
 
 ## Description
 
 
-  <p><b>str = func2str(function_handle)</b> returns a string <b>str</b> that holds the name of the function to which the function handle is associated.</p>
+  <p><b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b></p>
 
 
 ## Example
@@ -31,7 +31,7 @@ str = func2str(fh)
 
 ## See also
 
-[str2func](str2func.md), [isfunction_handle](isfunction_handle.md).
+[func2str](func2str.md), [isfunction_handle](isfunction_handle.md).
 ## History
 
 |Version|Description|

@@ -8,6 +8,7 @@ string type
 string type functions
 
 
+* [blanks](blanks.md) - creates an string of blank characters.
 * [char](char.md) - Converts to a character array.
 * [contains](contains.md) - checks if string contains with pattern.
 * [convertCharsToStrings](convertCharsToStrings.md) - Convert chars arrays to string arrays.

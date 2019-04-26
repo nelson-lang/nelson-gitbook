@@ -72,6 +72,11 @@
     * [dbstack](./debugger/dbstack.md)
 
 
+* [profiler](./profiler/README.md)
+    * [profile](./profiler/profile.md)
+    * [profsave](./profiler/profsave.md)
+
+
 * [error_manager](./error_manager/README.md)
     * [error](./error_manager/error.md)
     * [lasterror](./error_manager/lasterror.md)
@@ -216,6 +221,7 @@
 
 
 * [string](./string/README.md)
+    * [blanks](./string/blanks.md)
     * [char](./string/char.md)
     * [contains](./string/contains.md)
     * [convertCharsToStrings](./string/convertCharsToStrings.md)
@@ -298,7 +304,7 @@
 * [function_handle](./function_handle/README.md)
     * [func2str](./function_handle/func2str.md)
     * [isfunction_handle](./function_handle/isfunction_handle.md)
-    * [func2str](./function_handle/str2func.md)
+    * [str2func](./function_handle/str2func.md)
 
 
 * [handle](./handle/README.md)
