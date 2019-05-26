@@ -1,4 +1,51 @@
-# 0.3.4  (2019-04-27)
+# 0.3.5 (2019-05-26)
+
+Features:
+---------
+
+  * Licensing change: Nelson is now released under the terms of the GNU Lesser General Public License (LGPL) v2.1.
+   It is still also available under the terms of the GNU General Public License (GPL) v2.0.
+
+    You can build Nelson under LGPL v2.1 license on Unix/MacosX with
+    ```bash
+    cd nelson
+    cmake -DLGPL21_ONLY=ON -G "Unix Makefiles" .
+    ```
+    On Windows, it is also easy, if you do not select SLICOT library during setup.
+ 
+  * FFTW Wrapper allows to load dynamically FFTW library available on platform.
+
+  * SLICOT Wrapper allows to load dynamically SLICOT library available on platform.
+
+  * unix, dos, system builtin reworked (asynchronious, better pipes redirection, detached process). This function can be interrupted with CTRL-C key.
+
+  * MSVC 2019 support added to build C/C++ code easily "on fly" on Windows.  
+
+
+Bug Fixes:
+---------
+
+  * [#198](http://github.com/Nelson-numerical-software/nelson/issues/198): history load and save will be disable if nelson is started with '--nouserstartup'.
+
+  * [#196](http://github.com/Nelson-numerical-software/nelson/issues/196): call cmake 3.11 from Nelson fails on linux.
+
+
+Compilation:
+------------
+
+* remove hardcoded path between dynamic libraries on linux and macos. It will allow to package nelson easily.
+
+* BOOST 1.64 or more required
+
+* Build on MacOs X 10.13.6 and 10.14.5 (SD notary currently not supporterd.)
+
+* add Dockerfile for Arch, Debian, Fedora images used for CI.
+
+* SLICOT library removed from Nelson's source and moved [here](http://github.com/Nelson-numerical-software/slicot_f2c).
+   
+
+
+# 0.3.4 (2019-04-27)
 
 Features:
 ---------

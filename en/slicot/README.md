@@ -8,6 +8,7 @@ SLICOT
 SLICOT provides numerical algorithms for computations in systems and control theory.
 
 
+* [SLICOT License](About_SLICOT_license.md) - About SLICOT license.
 * [slicot_ab01od](slicot_ab01od.md) - Staircase form for multi-input systems using orthogonal state and input transformations.
 * [slicot_ab04md](slicot_ab04md.md) - Discrete-time / continuous-time systems conversion by a bilinear transformation.
 * [slicot_ab07nd](slicot_ab07nd.md) - Inverse of a given linear system.

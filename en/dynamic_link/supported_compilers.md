@@ -8,6 +8,7 @@
   <p>
     <b>Windows:</b>
   </p>
+  <p>- Microsoft Visual Studio C/C++ 2019 all versions (Pro, Enterprise or Community)</p>
   <p>- Microsoft Visual Studio C/C++ 2017 all versions (Pro, Enterprise or Community)</p>
   <p>- MinGW</p>
   <p>

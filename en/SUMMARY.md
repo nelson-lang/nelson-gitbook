@@ -481,16 +481,19 @@
 
 
 * [fftw](./fftw/README.md)
+    * [FFTW License](./fftw/About_FFTW_license.md)
     * [fft](./fftw/fft.md)
     * [fftn](./fftw/fftn.md)
     * [fftshift](./fftw/fftshift.md)
     * [fftw](./fftw/fftw.md)
+    * [FFTWwrapper](./fftw/FFTWwrapper.md)
     * [ifft](./fftw/ifft.md)
     * [ifftn](./fftw/ifftn.md)
     * [ifftshift](./fftw/ifftshift.md)
 
 
 * [slicot](./slicot/README.md)
+    * [SLICOT License](./slicot/About_SLICOT_license.md)
     * [slicot_ab01od](./slicot/slicot_ab01od.md)
     * [slicot_ab04md](./slicot/slicot_ab04md.md)
     * [slicot_ab07nd](./slicot/slicot_ab07nd.md)

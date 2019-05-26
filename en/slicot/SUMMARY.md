@@ -1,4 +1,5 @@
 * [slicot](README.md)
+    * [SLICOT License](About_SLICOT_license.md)
     * [slicot_ab01od](slicot_ab01od.md)
     * [slicot_ab04md](slicot_ab04md.md)
     * [slicot_ab07nd](slicot_ab07nd.md)
