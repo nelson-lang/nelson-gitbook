@@ -17,6 +17,7 @@ core functions
 * [exist](exist.md) - Check for the existence.
 * [exit](exit.md) - Exit from current Nelson application
 * [format](format.md) - Display format and number printing.
+* [license](license.md) - Get license information for Nelson.
 * [maxNumCompThreads](maxNumCompThreads.md) - Set/Get maximum number of computional threads.
 * [namelengthmax](namelengthmax.md) - Return the maximum variable name length.
 * [nargin](nargin.md) - Returns the number of input arguments.

@@ -1,3 +1,25 @@
+# 0.3.6 (2019-06-26)
+
+Features:
+---------
+
+  * num2bin builtin: Convert number to binary representation.
+
+  * bin2num builtin: Convert two's complement binary string to number.
+
+  * swapbytes builtin: endian converter.
+
+  * zip/unzip builtin: Compress/Uncompress files natively into zip file (with Unicode support).
+
+  * license function: Gget license information for Nelson.
+
+
+Compilation:
+------------
+
+  * update travis-CI script to support Ubuntu 16.04.
+
+
 # 0.3.5 (2019-05-26)
 
 Features:

@@ -11,6 +11,7 @@ elementary functions
 * [abs](abs.md) - Absolute value
 * [and](and.md) - logical 'AND' operator, &
 * [angle](angle.md) - Phase angle
+* [bin2num](bin2num.md) - Convert two's complement binary string to number.
 * [cast](cast.md) - Converts variable to a different data type
 * [ceil](ceil.md) - Round up
 * [circshift](circshift.md) - Circular shift
@@ -52,6 +53,7 @@ elementary functions
 * [ne](ne.md) - Inequality, ~= operator
 * [norm](norm.md) - Matrix and vector norms
 * [not](not.md) - not logical, ~ operator
+* [num2bin](num2bin.md) - Convert number to binary representation.
 * [numel](numel.md) - Number of elements.
 * [or](or.md) - logical 'OR' operator, |
 * [plus](plus.md) - Addition, + operator
@@ -68,6 +70,7 @@ elementary functions
 * [size](size.md) - Size of an object.
 * [sqrt](sqrt.md) - Square root.
 * [subsindex](subsindex.md) - Convert an object to an index vector.
+* [swapbytes](swapbytes.md) - Swap byte ordering.
 * [mtimes](times.md) - Element wise multiplication, .* operator
 * [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.
 * [uminus](uminus.md) - Unary minus, - operator

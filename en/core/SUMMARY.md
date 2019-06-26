@@ -8,6 +8,7 @@
     * [exist](exist.md)
     * [exit](exit.md)
     * [format](format.md)
+    * [license](license.md)
     * [maxNumCompThreads](maxNumCompThreads.md)
     * [namelengthmax](namelengthmax.md)
     * [nargin](nargin.md)

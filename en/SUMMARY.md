@@ -38,6 +38,7 @@
     * [exist](./core/exist.md)
     * [exit](./core/exit.md)
     * [format](./core/format.md)
+    * [license](./core/license.md)
     * [maxNumCompThreads](./core/maxNumCompThreads.md)
     * [namelengthmax](./core/namelengthmax.md)
     * [nargin](./core/nargin.md)
@@ -113,6 +114,7 @@
     * [abs](./elementary_functions/abs.md)
     * [and](./elementary_functions/and.md)
     * [angle](./elementary_functions/angle.md)
+    * [bin2num](./elementary_functions/bin2num.md)
     * [cast](./elementary_functions/cast.md)
     * [ceil](./elementary_functions/ceil.md)
     * [circshift](./elementary_functions/circshift.md)
@@ -154,6 +156,7 @@
     * [ne](./elementary_functions/ne.md)
     * [norm](./elementary_functions/norm.md)
     * [not](./elementary_functions/not.md)
+    * [num2bin](./elementary_functions/num2bin.md)
     * [numel](./elementary_functions/numel.md)
     * [or](./elementary_functions/or.md)
     * [plus](./elementary_functions/plus.md)
@@ -170,6 +173,7 @@
     * [size](./elementary_functions/size.md)
     * [sqrt](./elementary_functions/sqrt.md)
     * [subsindex](./elementary_functions/subsindex.md)
+    * [swapbytes](./elementary_functions/swapbytes.md)
     * [mtimes](./elementary_functions/times.md)
     * [transpose](./elementary_functions/transpose.md)
     * [uminus](./elementary_functions/uminus.md)
@@ -716,4 +720,9 @@
     * [doc](./sio_client/doc.md)
     * [sioemit](./sio_client/sioemit.md)
     * [siogetvariable](./sio_client/siogetvariable.md)
+
+
+* [file_archiver](./file_archiver/README.md)
+    * [unzip](./file_archiver/unzip.md)
+    * [zip](./file_archiver/zip.md)
 
