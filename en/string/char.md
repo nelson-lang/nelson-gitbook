@@ -12,7 +12,7 @@ Converts to a character array.
 
 ## Input argument
 
- - var - a cell of strings, or an numeric array.
+ - var - a cell of strings, string array or an numeric array.
  - var1, var2, ..., varN - strings or an numeric arrays.
 
 ## Output argument
@@ -32,6 +32,9 @@ char(M)
 ```
 ```matlab
 R = char('these', 'are', 'test', 'strings')
+```
+```matlab
+R = char(["these"; "are"; "test"; "strings"])
 ```
 
 ## See also

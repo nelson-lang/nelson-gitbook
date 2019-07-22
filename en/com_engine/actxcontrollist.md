@@ -26,7 +26,7 @@ l = actxcontrollist()
 
 ## See also
 
-[actxserverlist](actxserverlist.md).
+[actxserverlist](actxserverlist.html).
 ## History
 
 |Version|Description|

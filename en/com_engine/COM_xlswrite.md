@@ -50,7 +50,7 @@ s = COM_xlswrite([tempdir(), '/example_xlswrite_2.xlsx'], data, 'Temperatures');
 
 ## See also
 
-[COM_xlsread](COM_xlsread.md).
+[COM_xlsread](COM_xlsread.html).
 ## History
 
 |Version|Description|

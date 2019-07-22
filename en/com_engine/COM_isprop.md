@@ -35,7 +35,7 @@ clear e
 
 ## See also
 
-[COM_ismethod](COM_ismethod.md).
+[COM_ismethod](COM_ismethod.html).
 ## History
 
 |Version|Description|

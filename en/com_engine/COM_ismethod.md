@@ -35,7 +35,7 @@ clear e
 
 ## See also
 
-[COM_invoke](COM_invoke.md).
+[COM_invoke](COM_invoke.html).
 ## History
 
 |Version|Description|

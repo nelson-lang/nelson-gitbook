@@ -17,7 +17,7 @@ Shows Nelson banner.
 ## Example
 
 ```matlab
-clc();banner)
+clc();banner
 ```
 
 ## See also

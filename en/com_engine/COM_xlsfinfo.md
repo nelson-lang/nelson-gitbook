@@ -34,7 +34,7 @@ Determines if file contains Microsoft Excel spreadsheet.
 
 ## See also
 
-[COM_xlswrite](COM_xlswrite.md), [COM_xlsread](COM_xlsread.md).
+[COM_xlswrite](COM_xlswrite.html), [COM_xlsread](COM_xlsread.html).
 ## History
 
 |Version|Description|

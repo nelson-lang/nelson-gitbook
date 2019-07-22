@@ -1,3 +1,42 @@
+# 0.3.7 (2019-07-23)
+
+Features:
+---------
+
+  * dec2base builtin: Convert decimal number to another base.
+
+  * dec2bin builtin: Convert decimal number to base 2.
+
+  * dec2hex builtin: Convert decimal number to base 16.
+
+  * base2dec builtin: Convert number in a base to decimal.
+
+  * bin2dec builtin: Convert number in base 2 to decimal.
+
+  * hex2dec builtin: Convert number in base 16 to decimal.
+
+  * flintmax builtin: Largest consecutive integer in floating-point format.
+
+  * realmax builtin: Largest positive floating-point number.
+
+
+Bug Fixes:
+---------
+
+  * [#214](http://github.com/Nelson-numerical-software/nelson/issues/214): nargin, nargin were slower than 0.3.5.
+
+  * [#213](http://github.com/Nelson-numerical-software/nelson/issues/213): fix typo in banner help.
+
+Compilation:
+------------
+
+  * [#212](http://github.com/Nelson-numerical-software/nelson/issues/212): MATIO 1.5.16 used all platforms.
+
+  * [#211](http://github.com/Nelson-numerical-software/nelson/issues/211): BOOST 1.70 on Windows platforms.
+
+  * allocateArrayOf and new_with_exception no more set memory to zero by default. This speed up array constructors.
+
+
 # 0.3.6 (2019-06-26)
 
 Features:
@@ -11,7 +50,7 @@ Features:
 
   * zip/unzip builtin: Compress/Uncompress files natively into zip file (with Unicode support).
 
-  * license function: Gget license information for Nelson.
+  * license function: Get license information for Nelson.
 
 
 Compilation:

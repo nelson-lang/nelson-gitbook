@@ -29,7 +29,7 @@ Blocking test for a message.
 
 ## See also
 
-[MPI_IProbe](MPI_IProbe.md).
+[MPI_IProbe](MPI_IProbe.html).
 ## History
 
 |Version|Description|

@@ -37,7 +37,7 @@ clear pWord
 
 ## See also
 
-[COM_get](COM_get.md), [COM_set](COM_set.md).
+[COM_get](COM_get.html), [COM_set](COM_set.html).
 ## History
 
 |Version|Description|

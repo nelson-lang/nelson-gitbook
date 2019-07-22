@@ -19,7 +19,7 @@ Convert two's complement binary string to number.
 ## Description
 
 
-  <p><b>bin2num</b> converts the binary an character arry to a numeric array.</p>
+  <p><b>bin2num</b> converts binary character arry to a numeric array.</p>
   <p>Note:</p>
   <p> - <b>num2bin</b> always returns the binary representations in a column</p>
   <p> - <b>bin2num</b> and <b>num2bin</b> are inverses of one another.</p>

@@ -45,7 +45,7 @@ s = COM_xlswrite([tempdir(), '/example_xlswrite_2.xlsx'], data, 'Temperatures');
 
 ## See also
 
-[COM_xlswrite](COM_xlswrite.md).
+[COM_xlswrite](COM_xlswrite.html).
 ## History
 
 |Version|Description|
