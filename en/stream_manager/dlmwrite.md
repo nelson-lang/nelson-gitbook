@@ -36,7 +36,7 @@ Write an numeric matrix to a text file file using a delimiter.
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
-filename = [tempdir(), '/dlwrite_example.csv'];
+filename = [tempdir(), 'dlwrite_example.csv'];
 dlmwrite(filename, A);
 R = fileread(filename)
 A = eye(3, 2);

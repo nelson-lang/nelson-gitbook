@@ -36,7 +36,7 @@ status = fclose(fd)
 
 ## See also
 
-[fopen](fopen.md), [fread](fread.md).
+[fopen](fopen.md), [fread](fread.md), [feof](feof.md).
 ## History
 
 |Version|Description|

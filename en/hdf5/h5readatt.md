@@ -27,9 +27,9 @@ Read HDF5 attribute.
 ## Example
 
 ```matlab
-h5create([tempdir(), '/myfile.h5'],'/myDataset1',[10 20]);
-h5writeatt([tempdir(), '/myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
-h5readatt([tempdir(), '/myfile.h5'],'/','creation_date')
+h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
+h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
+h5readatt([tempdir(), 'myfile.h5'],'/','creation_date')
 ```
 
 ## See also

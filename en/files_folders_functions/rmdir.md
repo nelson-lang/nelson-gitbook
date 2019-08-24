@@ -33,8 +33,8 @@ Removes a directory.
 ## Example
 
 ```matlab
-mkdir([tempdir(), '/test'])
-rmdir([tempdir(), '/test'])
+mkdir([tempdir(), 'test'])
+rmdir([tempdir(), 'test'])
 ```
 
 ## See also

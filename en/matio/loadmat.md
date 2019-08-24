@@ -35,15 +35,15 @@ Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 ```matlab
 A = ones(3, 4);
 B = 'hello for open mat users';
-savemat([tempdir(), '/example_loadmat.mat'], 'A', 'B')
+savemat([tempdir(), 'example_loadmat.mat'], 'A', 'B')
 clear;
-st = loadmat([tempdir(), '/example_loadmat.mat']);
+st = loadmat([tempdir(), 'example_loadmat.mat']);
 who
 st.A
 st.B
 clear
 who
-loadmat([tempdir(), '/example_loadmat.mat']);
+loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B

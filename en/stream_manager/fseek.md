@@ -33,12 +33,12 @@ Set the file pointer to a location.
 ## Example
 
 ```matlab
-fileID = fopen([tempdir(), '/fseek.txt'],'wt');
+fileID = fopen([tempdir(), 'fseek.txt'],'wt');
 fprintf(fileID, 'son is beautiful.');
 fseek(fileID, SEEK_CUR, 'bof');
 fprintf(fileID, 'sun');
 fclose(fileID);
-R = fileread([tempdir(), '/fseek.txt'])
+R = fileread([tempdir(), 'fseek.txt'])
 ```
 
 ## See also

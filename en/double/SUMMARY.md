@@ -1,5 +1,5 @@
 * [double](README.md)
-    * [flintmax](flintmax.md)
     * [double](double.md)
+    * [flintmax](flintmax.md)
     * [realmax](realmax.md)
 

@@ -30,7 +30,7 @@ Compress files into zip file.
 ## Example
 
 ```matlab
-zip([tempdir(), '/test.zip'], [nelsonroot(), '/module_skeleton'])
+zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton'])
 ```
 
 ## See also

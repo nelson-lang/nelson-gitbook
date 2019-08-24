@@ -31,10 +31,10 @@ Converts markdown to html.
 txt = {'## Example of Markdown text';
 '>Nelson supports markdown ...'};
 html = markdown(txt);
-filewrite([tempdir(), '/markdown_example.html'], html)
+filewrite([tempdir(), 'markdown_example.html'], html)
 
 if ispc()
-  winopen([tempdir(), '/markdown_example.html']);
+  winopen([tempdir(), 'markdown_example.html']);
 end
 ```
 

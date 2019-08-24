@@ -39,8 +39,8 @@ Creates a data set.
 ## Example
 
 ```matlab
-h5create([tempdir(), '/myfile.h5'],'/myDataset1',[10 20]);
-h5dump([tempdir(), '/myfile.h5'])
+h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
+h5dump([tempdir(), 'myfile.h5'])
 ```
 
 ## See also

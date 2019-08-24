@@ -1,6 +1,6 @@
 ![banner](banner_homepage.png)
 
-### Nelson 0.3.7.0
+### Nelson 0.3.8.0
 
 This is an pre-release of Nelson.
 
@@ -32,6 +32,8 @@ Try it !
 - HDF5 used as default data file format (.nh5) load/save workspace,
 
 - MAT-file compatible load/save workspace,
+
+- RESTful API web service.
 
 - Foreign Function Interface C/Fortran.
 

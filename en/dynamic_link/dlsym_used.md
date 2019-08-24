@@ -20,7 +20,7 @@ Returns list of current used dlsym handle.
 
 ## See also
 
-[dlsym](dlSym.html).
+[dlsym](dlSym.md).
 ## Example
 
 ```matlab

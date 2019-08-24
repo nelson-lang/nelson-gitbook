@@ -1,6 +1,6 @@
 * [error_manager](README.md)
-    * [warning](warning.md)
-    * [lastwarn](lastwarn.md)
-    * [lasterror](lasterror.md)
     * [error](error.md)
+    * [lasterror](lasterror.md)
+    * [lastwarn](lastwarn.md)
+    * [warning](warning.md)
 

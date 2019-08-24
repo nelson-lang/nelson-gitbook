@@ -1,5 +1,5 @@
 * [json](README.md)
-    * [jsonprettyprint](jsonprettyprint.md)
-    * [jsonencode](jsonencode.md)
     * [jsondecode](jsondecode.md)
+    * [jsonencode](jsonencode.md)
+    * [jsonprettyprint](jsonprettyprint.md)
 

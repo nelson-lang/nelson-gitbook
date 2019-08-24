@@ -35,7 +35,7 @@ Creates a new directory.
 
 ```matlab
 mkdir(tempdir(), 'subdir_example')
-if isdir([tempdir(), '/subdir_example'])
+if isdir([tempdir(), 'subdir_example'])
 	disp('OK')
 else
 	disp('NOT OK')

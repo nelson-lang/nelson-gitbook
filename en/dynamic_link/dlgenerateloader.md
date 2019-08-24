@@ -24,7 +24,7 @@ Generates loader.nls file for C++ gateway.
 See module skeleton for example
 ```matlab
 dlgenerateloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
-text = fileread([tempdir(), '/loader.nls'])
+text = fileread([tempdir(), 'loader.nls'])
 ```
 
 ## See also

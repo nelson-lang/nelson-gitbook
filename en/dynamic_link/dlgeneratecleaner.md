@@ -25,7 +25,7 @@ Generates cleaner.nls file for C++ gateway.
 See module skeleton for example
 ```matlab
 dlgeneratecleaner(tempdir());
-text = fileread([tempdir(), '/cleaner.nls'])
+text = fileread([tempdir(), 'cleaner.nls'])
 ```
 
 ## See also

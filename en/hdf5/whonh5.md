@@ -33,9 +33,9 @@ A = ones(3, 4);
 B = 'Nelson';
 C = sparse(true);
 D = sparse(3i);		
-savenh5([tempdir(), '/example_whonh5.nh5'], 'A', 'B', 'C', 'D')
-whonh5([tempdir(), '/example_whonh5.nh5'])
-ce = whonh5([tempdir(), '/example_whonh5.nh5'])
+savenh5([tempdir(), 'example_whonh5.nh5'], 'A', 'B', 'C', 'D')
+whonh5([tempdir(), 'example_whonh5.nh5'])
+ce = whonh5([tempdir(), 'example_whonh5.nh5'])
 ```
 
 ## See also

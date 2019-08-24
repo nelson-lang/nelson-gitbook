@@ -40,8 +40,8 @@ A = 3
 b= 3
 whos
 s = whos()
-save([tempdir(), '/example_who.nh5'], 'A', 'b')
-whos([tempdir(), '/example_who.nh5'])
+save([tempdir(), 'example_who.nh5'], 'A', 'b')
+whos([tempdir(), 'example_who.nh5'])
 ```
 
 ## See also

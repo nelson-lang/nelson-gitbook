@@ -20,7 +20,7 @@ Returns list of current used COM handle.
 
 ## See also
 
-[COM_set (set)](COM_set.html), [COM_get (get)](COM_get.html).
+[COM_set (set)](COM_set.md), [COM_get (get)](COM_get.md).
 ## Example
 
 ```matlab

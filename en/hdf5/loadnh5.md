@@ -32,15 +32,15 @@ load data from .nh5 file into Nelson's workspace.
 ```matlab
 A = ones(3, 4);
 B = 'hello for open mat users';
-savenh5([tempdir(), '/example_h5load.nh5'], 'A', 'B')
+savenh5([tempdir(), 'example_h5load.nh5'], 'A', 'B')
 clear;
-st = loadnh5([tempdir(), '/example_h5load.nh5']);
+st = loadnh5([tempdir(), 'example_h5load.nh5']);
 who
 st.A
 st.B
 clear
 who
-loadnh5([tempdir(), '/example_h5load.nh5']);
+loadnh5([tempdir(), 'example_h5load.nh5']);
 who
 A
 B

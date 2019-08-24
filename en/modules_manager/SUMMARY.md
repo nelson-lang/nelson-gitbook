@@ -1,8 +1,8 @@
 * [modules_manager](README.md)
-    * [ismodule](ismodule.md)
-    * [requiremodule](requiremodule.md)
-    * [modulepath](modulepath.md)
-    * [getmodules](getmodules.md)
-    * [removemodule](removemodule.md)
     * [addmodule](addmodule.md)
+    * [getmodules](getmodules.md)
+    * [ismodule](ismodule.md)
+    * [modulepath](modulepath.md)
+    * [removemodule](removemodule.md)
+    * [requiremodule](requiremodule.md)
 

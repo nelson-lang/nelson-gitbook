@@ -28,7 +28,7 @@ call make or nmake tool
 
 basic example to call dlmake
 ```matlab
-dest = [tempdir(), '/dlmake_help']; 
+dest = [tempdir(), 'dlmake_help']; 
 mkdir(dest);		
 txt = 'MESSAGE( STATUS "Hello world !")';		
 filewrite([dest, '/CMakeLists.txt'], txt);

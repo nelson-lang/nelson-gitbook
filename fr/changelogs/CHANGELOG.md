@@ -1,3 +1,52 @@
+
+# 0.3.8 (2019-08-24)
+
+Features:
+---------
+
+  * RESTfull API webservice for Nelson: 
+    - weboptions function: Set parameters for RESTful API web service.
+    - websave builtin: Save content from RESTful API web service to file.
+    - webread builtin: Read content from RESTful API web service to nelson's variable.
+
+  * UNICODE support extended in Nelson:
+    - unicode2native builtin: Converts unicode characters representation to bytes representation.
+    - native2unicode builtin: Converts bytes representation representation to unicode string representation.
+    - nativecharset builtin: Find all charset matches that appear to be consistent with the input.
+    - text editor detects files charset and open files with it.
+    - fileread / filewrite builtin extended to use an characters encoding.
+    - fopen, fprintf, fgetl, fgets, fread, and fwrite builtin extended to manage characters encoding.
+
+  * feof builtin: check for end of file.
+
+  * ferror builtin: test for i/o read/write errors.
+
+  * tempname function: Returns an unique temporary filename.
+
+  * test_run uses nh5 files as result file (previously json)
+
+
+Bug Fixes:
+---------
+
+  * [#226](http://github.com/Nelson-numerical-software/nelson/issues/226): tempdir() did not include a final slash.
+
+  * [#224](http://github.com/Nelson-numerical-software/nelson/issues/224): cd 當第一個按讚的人 crashed Nelson.
+
+
+Compilation:
+------------
+
+* Visual studio 15.9.14.
+
+* Qt 5.12.4 on Windows.
+
+* CMake 3.9 required on linux and MacOS.
+
+* CircleCI moved to Arch Linux build.
+
+
+
 # 0.3.7 (2019-07-23)
 
 Features:
@@ -18,6 +67,8 @@ Features:
   * flintmax builtin: Largest consecutive integer in floating-point format.
 
   * realmax builtin: Largest positive floating-point number.
+
+  * struct builtin extended to convert object created by 'class' to structure.
 
 
 Bug Fixes:

@@ -34,7 +34,7 @@ clear pWord
 
 ## See also
 
-[COM_get](COM_get.html), [COM_invoke](COM_invoke.html).
+[COM_get](COM_get.md), [COM_invoke](COM_invoke.md).
 ## History
 
 |Version|Description|

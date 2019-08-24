@@ -29,9 +29,9 @@ List the content of an HDF5 file.
 ## Example
 
 ```matlab
-h5create([tempdir(), '/myfile.h5'],'/myDataset2',[10 20]);
-h5ls([tempdir(), '/myfile.h5'])
-R = h5ls([tempdir(), '/myfile.h5'])
+h5create([tempdir(), 'myfile.h5'],'/myDataset2',[10 20]);
+h5ls([tempdir(), 'myfile.h5'])
+R = h5ls([tempdir(), 'myfile.h5'])
 ```
 
 ## See also

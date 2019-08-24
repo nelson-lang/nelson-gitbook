@@ -32,13 +32,13 @@ Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
 ```matlab
 A = ones(3, 4);
-savemat([tempdir(), '/example_loadmat-v7.3.mat'], 'A', '-v7.3')
-savemat([tempdir(), '/example_loadmat-v7.mat'], 'A', '-v7')
-savemat([tempdir(), '/example_loadmat-v6.mat'], 'A', '-v6')
-[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.3.mat']) 
-[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v7.mat']) 
-[tf, ver] = ismatfile([tempdir(), '/example_loadmat-v6.mat']) 
-[tf, ver, header] = ismatfile([tempdir(), '/example_not_existing.mat'])
+savemat([tempdir(), 'example_loadmat-v7.3.mat'], 'A', '-v7.3')
+savemat([tempdir(), 'example_loadmat-v7.mat'], 'A', '-v7')
+savemat([tempdir(), 'example_loadmat-v6.mat'], 'A', '-v6')
+[tf, ver] = ismatfile([tempdir(), 'example_loadmat-v7.3.mat']) 
+[tf, ver] = ismatfile([tempdir(), 'example_loadmat-v7.mat']) 
+[tf, ver] = ismatfile([tempdir(), 'example_loadmat-v6.mat']) 
+[tf, ver, header] = ismatfile([tempdir(), 'example_not_existing.mat'])
 ```
 
 ## See also

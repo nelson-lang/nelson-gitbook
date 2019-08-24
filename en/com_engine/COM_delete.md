@@ -31,7 +31,7 @@ clear pTextToSpeech
 
 ## See also
 
-[actxserver](actxserver.html).
+[actxserver](actxserver.md).
 ## History
 
 |Version|Description|

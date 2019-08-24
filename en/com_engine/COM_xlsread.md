@@ -39,13 +39,13 @@ Read Microsoft Excel spreadsheet file using COM.
 
 ```matlab
 data = {'Time', 'Temp'; 12 98; 13 99; Inf 97};
-s = COM_xlswrite([tempdir(), '/example_xlswrite_2.xlsx'], data, 'Temperatures');
-[numeric_data, txt_data, raw_data] = COM_xlsread([tempdir(), '/example_xlswrite_2.xlsx'])
+s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');
+[numeric_data, txt_data, raw_data] = COM_xlsread([tempdir(), 'example_xlswrite_2.xlsx'])
 ```
 
 ## See also
 
-[COM_xlswrite](COM_xlswrite.html).
+[COM_xlswrite](COM_xlswrite.md).
 ## History
 
 |Version|Description|

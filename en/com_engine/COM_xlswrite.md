@@ -41,16 +41,16 @@ Write Microsoft Excel spreadsheet file using COM.
 ## Examples
 
 ```matlab
-COM_xlswrite([tempdir(), '/example_xlswrite_1.xlsx'], rand(3, 3))
+COM_xlswrite([tempdir(), 'example_xlswrite_1.xlsx'], rand(3, 3))
 ```
 ```matlab
 data = {'Time', 'Temp'; 12 98; 13 99; Inf 97};
-s = COM_xlswrite([tempdir(), '/example_xlswrite_2.xlsx'], data, 'Temperatures');
+s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');
 ```
 
 ## See also
 
-[COM_xlsread](COM_xlsread.html).
+[COM_xlsread](COM_xlsread.md).
 ## History
 
 |Version|Description|

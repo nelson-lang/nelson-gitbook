@@ -37,15 +37,15 @@ Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 ```matlab
 A = ones(3, 4);
 B = 'hello for open mat users';
-savemat([tempdir(), '/example_loadmat.mat'], 'A', 'B')
+savemat([tempdir(), 'example_loadmat.mat'], 'A', 'B')
 clear;
-st = loadmat([tempdir(), '/example_loadmat.mat']);
+st = loadmat([tempdir(), 'example_loadmat.mat']);
 who
 st.A
 st.B
 clear
 who
-loadmat([tempdir(), '/example_loadmat.mat']);
+loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
@@ -53,16 +53,16 @@ B
 append variables
 ```matlab
 C = eye(3, 4);
-savemat([tempdir(), '/example_loadmat.mat'], 'C', '-append')
+savemat([tempdir(), 'example_loadmat.mat'], 'C', '-append')
 clear;
-st = loadmat([tempdir(), '/example_loadmat.mat']);
+st = loadmat([tempdir(), 'example_loadmat.mat']);
 who
 st.A
 st.B
 st.C
 clear
 who
-loadmat([tempdir(), '/example_loadmat.mat']);
+loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
@@ -71,10 +71,10 @@ C
 compression
 ```matlab
 C = eye(1000, 1000);
-savemat([tempdir(), '/example_savemat_with_compression.mat'], 'C')
-savemat([tempdir(), '/example_savemat_no_compression.mat'], 'C', '-nocompression')
-with_compression = dir([tempdir(), '/example_savemat_with_compression.mat'])
-no_compression = dir([tempdir(), '/example_savemat_no_compression.mat'])
+savemat([tempdir(), 'example_savemat_with_compression.mat'], 'C')
+savemat([tempdir(), 'example_savemat_no_compression.mat'], 'C', '-nocompression')
+with_compression = dir([tempdir(), 'example_savemat_with_compression.mat'])
+no_compression = dir([tempdir(), 'example_savemat_no_compression.mat'])
 ```
 
 ## See also

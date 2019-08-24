@@ -27,8 +27,8 @@ Decompress zip file.
 ## Example
 
 ```matlab
-zip([tempdir(), '/test.zip'], [nelsonroot(), '/module_skeleton']);
-r = unzip([tempdir(), '/test.zip'], [tempdir(), '/', createGUID()])
+zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton']);
+r = unzip([tempdir(), 'test.zip'], [tempdir(), createGUID()])
 ```
 
 ## See also

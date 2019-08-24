@@ -29,10 +29,10 @@ Checks if filename a valid .nh5 file
 
 ```matlab
 A = ones(3, 4);
-savemat([tempdir(), '/example_isnh5.mat'], 'A')
-R = isnh5file([tempdir(), '/example_isnh5.mat'])
-h5save([tempdir(), '/example_isnh5.nh5'], 'A')
-[R, VER, HE] = isnh5file([tempdir(), '/example_isnh5.nh5'])
+savemat([tempdir(), 'example_isnh5.mat'], 'A')
+R = isnh5file([tempdir(), 'example_isnh5.mat'])
+h5save([tempdir(), 'example_isnh5.nh5'], 'A')
+[R, VER, HE] = isnh5file([tempdir(), 'example_isnh5.nh5'])
 ```
 
 ## See also

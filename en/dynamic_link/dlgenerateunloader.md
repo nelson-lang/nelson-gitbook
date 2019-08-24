@@ -24,7 +24,7 @@ Generates unloader.nls file for C++ gateway.
 See module skeleton for example
 ```matlab
 dlgenerateunloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
-text = fileread([tempdir(), '/unloader.nls'])
+text = fileread([tempdir(), 'unloader.nls'])
 ```
 
 ## See also

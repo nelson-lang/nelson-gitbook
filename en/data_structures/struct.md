@@ -8,6 +8,7 @@ Creates a struct.
 
 - st = struct()
 - st = struct([])
+- st = struct(object)
 - st = struct(field, value)
 - st = struct(field, value, field2, value2, ..., fieldn, valuen)
 
@@ -15,6 +16,7 @@ Creates a struct.
 
  - field, field2, ... , fieldn - strings : field names, valid names are same than variable identifiers.
  - value, value2, ..., valuen - all data types supported by Nelson.
+ - object - an object created with 'class' builtin.
 
 ## Output argument
 

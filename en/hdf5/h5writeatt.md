@@ -27,8 +27,8 @@ single, int64, int32, int16, or int8.
 ## Example
 
 ```matlab
-h5create([tempdir(), '/myfile.h5'],'/myDataset1',[10 20]);
-h5writeatt([tempdir(), '/myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
+h5create([tempdir(), 'myfile.h5'],'/myDataset1',[10 20]);
+h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 ```
 
 ## See also

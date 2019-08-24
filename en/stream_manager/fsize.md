@@ -26,7 +26,7 @@ Returns size of an opened file.
 
 ```matlab
 TXT = 'example about fsize.';
-fileID = fopen([tempdir(), '/fsize.txt'],'wt');
+fileID = fopen([tempdir(), 'fsize.txt'],'wt');
 fprintf(fileID, TXT);
 fsize(fileID)
 length(TXT)

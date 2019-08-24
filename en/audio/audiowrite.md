@@ -29,9 +29,9 @@ Writes an audio file.
 ```matlab
 wav_audio = [modulepath('audio'), '/examples/haha.wav'];
 [y, fs] = audioread(wav_audio);
-dest_ogg = [tempdir(), '/haha.ogg'];
+dest_ogg = [tempdir(), 'haha.ogg'];
 audiowrite(dest_ogg, y, fs);
-dest_flac = [tempdir(), '/haha.flac'];
+dest_flac = [tempdir(), 'haha.flac'];
 audiowrite(dest_flac, y, fs);
 ```
 

@@ -25,7 +25,7 @@ Generates C++ gateway.
 See module skeleton for example
 ```matlab
 dlgenerategateway(tempdir(), 'module_skeleton', {{'cpp_sum', 1, 2}; {'cpp_sub', 2, 3}});
-text = fileread([tempdir(), '/Gateway.cpp'])
+text = fileread([tempdir(), 'Gateway.cpp'])
 ```
 
 ## See also

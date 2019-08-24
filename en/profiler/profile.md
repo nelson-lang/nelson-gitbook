@@ -46,8 +46,8 @@ profile('show', 'totaltime', 4)
 profile on
 sind(5)
 profile off
-profsave(profile('info'), [tempdir(), '/profile_results'])
-unix([tempdir(), '/profile_results/index.html'])
+profsave(profile('info'), [tempdir(), 'profile_results'])
+unix([tempdir(), 'profile_results/index.html'])
 ```
 
 ## See also

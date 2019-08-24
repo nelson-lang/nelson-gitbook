@@ -26,13 +26,13 @@ txt = {'## Example of Markdown text';
 '>Nelson html to pdf conversion example'};
 
 html = markdown(txt);
-f = fopen([tempdir(), '/htmltopdf_example.html'], 'wt');
+f = fopen([tempdir(), 'htmltopdf_example.html'], 'wt');
 fwrite(f, html);
 fclose(f);
 
-htmltopdf([tempdir(), '/htmltopdf_example.html'], [tempdir(), '/htmltopdf_example.pdf'])
+htmltopdf([tempdir(), 'htmltopdf_example.html'], [tempdir(), 'htmltopdf_example.pdf'])
 if ispc()
-  winopen([tempdir(), '/htmltopdf_example.pdf']);
+  winopen([tempdir(), 'htmltopdf_example.pdf']);
 end
 ```
 

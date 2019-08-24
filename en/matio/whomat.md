@@ -37,9 +37,9 @@ A = ones(3, 4);
 B = 'Nelson';
 C = sparse(true);
 D = sparse(3i);		
-savemat([tempdir(), '/example_whomat-v7.3.mat'], 'A', 'B', 'C', 'D', '-v7.3')
-whomat([tempdir(), '/example_whomat-v7.3.mat'])
-ce = whomat([tempdir(), '/example_whomat-v7.3.mat'])
+savemat([tempdir(), 'example_whomat-v7.3.mat'], 'A', 'B', 'C', 'D', '-v7.3')
+whomat([tempdir(), 'example_whomat-v7.3.mat'])
+ce = whomat([tempdir(), 'example_whomat-v7.3.mat'])
 ```
 
 ## See also

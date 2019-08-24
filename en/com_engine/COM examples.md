@@ -13,7 +13,7 @@ Some example to show how to use COM interface.
 
 ## See also
 
-[actxserver](actxserver.html), [set](COM_set.html), [get](COM_get.html), [invoke](COM_invoke.html).
+[actxserver](actxserver.md), [set](COM_set.md), [get](COM_get.md), [invoke](COM_invoke.md).
 ## History
 
 |Version|Description|

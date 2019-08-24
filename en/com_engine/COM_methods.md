@@ -34,7 +34,7 @@ clear e
 
 ## See also
 
-[COM_set](COM_set.html).
+[COM_set](COM_set.md).
 ## History
 
 |Version|Description|

@@ -33,7 +33,7 @@ h = actxGetRunningServer('Excel.application')
 
 ## See also
 
-[actxserver](actxserver.html).
+[actxserver](actxserver.md).
 ## History
 
 |Version|Description|

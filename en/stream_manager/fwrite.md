@@ -28,6 +28,7 @@ Write data in binary form to the file specified by the file descriptor fid.
 
 
   <p>Write data in binary form to the file specified by the file descriptor fid.</p>
+  <p>characters encoding uses <b>fopen</b> parameter.</p>
   <p>supported architecture:</p>
   <p><b>native</b> , <b>n</b>: format of the current machine.</p>
   <p><b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
@@ -39,11 +40,11 @@ Write data in binary form to the file specified by the file descriptor fid.
 ```matlab
 A = rand(3,1)
 
-fileID = fopen([tempdir(), '/doubledata.bin'],'w');
+fileID = fopen([tempdir(), 'doubledata.bin'],'w');
 fwrite(fileID, A,'double');
 fclose(fileID);
 
-fileID = fopen([tempdir(), '/doubledata.bin'],'r');
+fileID = fopen([tempdir(), 'doubledata.bin'],'r');
 R = fread(fileID, 'double')
 fclose(fileID);
 ```

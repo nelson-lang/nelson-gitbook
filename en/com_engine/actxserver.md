@@ -41,7 +41,7 @@ clear pTextToSpeech
 
 ## See also
 
-[actxGetRunningSrv](actxGetRunningSrv.html).
+[actxGetRunningSrv](actxGetRunningSrv.md).
 ## History
 
 |Version|Description|

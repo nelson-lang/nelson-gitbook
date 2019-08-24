@@ -26,7 +26,7 @@ Returns the offset of the current byte relative to the beginning of a file.
 
 ```matlab
 TXT = 'example about ftell.';
-fileID = fopen([tempdir(), '/ftell.txt'],'wt');
+fileID = fopen([tempdir(), 'ftell.txt'],'wt');
 fprintf(fileID, TXT);
 p1 = ftell(fileID)
 fseek(fileID, SEEK_CUR, 'bof');

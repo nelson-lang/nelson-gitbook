@@ -29,11 +29,11 @@ Removes a file.
 ## Example
 
 ```matlab
-fd = fopen([tempdir(), '/test_rmfile.txt'], 'wt')
+fd = fopen([tempdir(), 'test_rmfile.txt'], 'wt')
 fclose(fd)
-isfile([tempdir(), '/test_rmfile.txt'])
-rmfile([tempdir(), '/test_rmfile.txt'])
-isfile([tempdir(), '/test_rmfile.txt'])
+isfile([tempdir(), 'test_rmfile.txt'])
+rmfile([tempdir(), 'test_rmfile.txt'])
+isfile([tempdir(), 'test_rmfile.txt'])
 ```
 
 ## See also

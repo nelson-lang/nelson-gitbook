@@ -24,6 +24,7 @@ Writes data to a file.
 
 
   <p>Write data in text form to the file specified by the file descriptor fid.</p>
+  <p>characters encoding uses <b>fopen</b> parameter.</p>
   <p>If fid equals 1 redirection in stdout.</p>
   <p>If fid equals 2 redirection in stderr.</p>
   <p>The <b>format</b> follows C fprintf syntax.</p>
@@ -109,11 +110,11 @@ table, th, td {
 ## Examples
 
 ```matlab
-fileID = fopen([tempdir(), '/fprintf.txt'],'wt');
+fileID = fopen([tempdir(), 'fprintf.txt'],'wt');
 fprintf(fileID, 'an example of %s.', 'text');
 fclose(fileID);
 
-R = fileread([tempdir(), '/fprintf.txt'])
+R = fileread([tempdir(), 'fprintf.txt'])
 ```
 ```matlab
 fprintf(1, 'an value %g.', pi);

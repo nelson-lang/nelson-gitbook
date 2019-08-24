@@ -61,7 +61,7 @@ test_run('string');
 test_run({'string', 'time'})
 ```
 ```matlab
-test_run({'string', 'time'}, 'all', [tempdir(), '/tests.xml'])
+test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 ```
 
 ## See also

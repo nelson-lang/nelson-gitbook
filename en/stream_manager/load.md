@@ -34,15 +34,15 @@ load data from .nh5 or .mat file into Nelson's workspace.
 ```matlab
 A = ones(3, 4);
 B = 'hello for open mat users';
-save([tempdir(), '/example_load.mat'], 'A', 'B')
+save([tempdir(), 'example_load.mat'], 'A', 'B')
 clear;
-st = load([tempdir(), '/example_load.mat']);
+st = load([tempdir(), 'example_load.mat']);
 who
 st.A
 st.B
 clear
 who
-load([tempdir(), '/example_load.mat']);
+load([tempdir(), 'example_load.mat']);
 who
 A
 B

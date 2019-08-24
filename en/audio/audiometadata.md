@@ -35,7 +35,7 @@ info = audiometadata(wav_file)
 ```
 ```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
-modified_wav_file = [tempdir(), '/haha_modified_tags.wav'];
+modified_wav_file = [tempdir(), 'haha_modified_tags.wav'];
 if isfile(modified_wav_file)
   rmfile(modified_wav_file);
 end
