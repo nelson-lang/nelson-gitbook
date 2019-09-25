@@ -33,7 +33,7 @@ ICU library
 ## Example
 
 ```matlab
-nativechar('éléve')
+native2unicode(uint8([149   208   137   188   150   188]), 'SHIFT_JIS')
 ```
 
 ## See also

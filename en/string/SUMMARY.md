@@ -9,6 +9,7 @@
     * [endsWith](endsWith.md)
     * [int2str](int2str.md)
     * [mat2str](mat2str.md)
+    * [matches](matches.md)
     * [newline](newline.md)
     * [replace](replace.md)
     * [sprintf](sprintf.md)

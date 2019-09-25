@@ -12,6 +12,7 @@
     * [fprintf](fprintf.md)
     * [fread](fread.md)
     * [frewind](frewind.md)
+    * [fscanf](fscanf.md)
     * [fseek](fseek.md)
     * [fsize](fsize.md)
     * [ftell](ftell.md)

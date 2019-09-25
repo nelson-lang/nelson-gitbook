@@ -21,6 +21,7 @@ stream functions
 * [fprintf](fprintf.md) - Writes data to a file.
 * [fread](fread.md) - Read data in binary form to the file specified by the file descriptor fid.
 * [frewind](frewind.md) - Set position of stream to the beginning.
+* [fscanf](fscanf.md) - Reads data from a file.
 * [fseek](fseek.md) - Set the file pointer to a location.
 * [fsize](fsize.md) - Returns size of an opened file.
 * [ftell](ftell.md) - Returns the offset of the current byte relative to the beginning of a file.
