@@ -8,6 +8,7 @@ Web tools
 Transferring data with URLs
 
 
+* [repo](repo.md) - Git repository tool for Nelson
 * [weboptions](weboptions.md) - Specify parameters for RESTful web service
 * [webread](webread.md) - Read data from RESTful web service to Nelson's variable
 * [websave](websave.md) - Save data from RESTful web service to file

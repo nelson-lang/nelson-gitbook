@@ -2,7 +2,7 @@
 
 # vswhere
 
-Locate Visual Studio 2017 and newer installations
+Locate Visual Studio 2017, 2019 and newer installations
 
 ## Syntax
 

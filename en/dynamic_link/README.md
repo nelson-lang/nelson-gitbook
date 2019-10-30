@@ -43,7 +43,7 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 * [removecompilerconf](removecompilerconf.md) - Remove used compiler configuration (on Windows).
 * [removegateway](removegateway.md) - Removes dynamically builtin at runtime.
 supported_compilers.md Supported C/C++ compilers
-* [vswhere](vswhere.md) - Locate Visual Studio 2017 and newer installations
+* [vswhere](vswhere.md) - Locate Visual Studio 2017, 2019 and newer installations
 
 
 

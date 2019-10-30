@@ -1,3 +1,46 @@
+# 0.3.10 (2019-10-29)
+
+* extends 'getmodules' to return module versions using new required 'module.json' (see module's template).
+
+* all core's modules are protected and cannot removed during an nelson's session.
+
+* increase max execution time for tests (2 minutes) and benchs (6 minutes).
+
+* split benchs and tests execution for CI.
+
+* repo builtin: clone, checkout branch or tag, ... from an GIT repository.
+
+Compilation:
+------------
+
+* Visual studio 2019 Community and Pro upgrade (required)
+  Dependencies updated: 
+  - ICU 64.2 on Windows
+  - libffi updated VS 2019 build
+  - libxml 2.9.9 VS 2019 build
+  - libcurl 7.66.0_2
+  - CMake 5.15.3 update for Windows
+  - MKL 2019 update 5
+  - HDF5 1.10.5 VS 2019 build
+  - MATIO 1.5.17 VS 2019 build
+
+* appveyor script updated to build with VS 2019
+
+* Innosetup 6 support
+
+
+Bug Fixes:
+---------
+
+  * [#254](http://github.com/Nelson-numerical-software/nelson/issues/254): fix Innosetup 6 warnings.
+
+  * [#252](http://github.com/Nelson-numerical-software/nelson/issues/252): help files of external modules were not loaded.
+
+  * [#245](http://github.com/Nelson-numerical-software/nelson/issues/245): Update MKL 2019 dependencies.
+
+  * [#202](http://github.com/Nelson-numerical-software/nelson/issues/202): Migrate to VS 2019.
+
+
 # 0.3.9 (2019-09-25)
 
 Features:
