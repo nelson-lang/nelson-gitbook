@@ -28,9 +28,9 @@ Display Nelson function header comments.
 ## Example
 
 ```matlab
-comments = headcomments('getfield'); md = markdown(comments);inserthtml(md)
+comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 ```
-<img src="headcomments_E9DF6806.png" align="middle"/>
+<img src="headcomments_CC42D5D9.png" align="middle"/>
 
 ## See also
 

@@ -30,7 +30,7 @@ Returns the number of output arguments.
 
 With an macro function:
 ```matlab
-nargout('getfield')
+nargout('cellstr')
 ```
 With an builtin function:
 ```matlab

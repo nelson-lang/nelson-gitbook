@@ -7,7 +7,7 @@ Returns an unique temporary filename.
 ## Syntax
 
 - f = tempname()
-- f = tempdir(path)
+- f = tempname(path)
 
 ## Input argument
 

@@ -80,6 +80,7 @@
 
 * [error_manager](./error_manager/README.md)
     * [error](./error_manager/error.md)
+    * [getLastReport](./error_manager/getLastReport.md)
     * [lasterror](./error_manager/lasterror.md)
     * [lastwarn](./error_manager/lastwarn.md)
     * [warning](./error_manager/warning.md)
@@ -105,9 +106,16 @@
     * [addmodule](./modules_manager/addmodule.md)
     * [getmodules](./modules_manager/getmodules.md)
     * [ismodule](./modules_manager/ismodule.md)
+    * [module.json](./modules_manager/module-json.md)
     * [modulepath](./modules_manager/modulepath.md)
+    * [nmm](./modules_manager/nmm.md)
+    * [nmm_build_help](./modules_manager/nmm_build_help.md)
+    * [nmm_build_loader](./modules_manager/nmm_build_loader.md)
     * [removemodule](./modules_manager/removemodule.md)
     * [requiremodule](./modules_manager/requiremodule.md)
+    * [semver](./modules_manager/semver.md)
+    * [toolboxdir](./modules_manager/toolboxdir.md)
+    * [usermodulesdir](./modules_manager/usermodulesdir.md)
 
 
 * [elementary_functions](./elementary_functions/README.md)
@@ -402,6 +410,7 @@
     * [dir](./files_folders_functions/dir.md)
     * [fileparts](./files_folders_functions/fileparts.md)
     * [filesep](./files_folders_functions/filesep.md)
+    * [fullpath](./files_folders_functions/fullpath.md)
     * [isdir](./files_folders_functions/isdir.md)
     * [isfile](./files_folders_functions/isfile.md)
     * [isfolder](./files_folders_functions/isfolder.md)

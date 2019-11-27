@@ -14,6 +14,7 @@ files, folders and paths functions
 * [dir](dir.md) - Returns file list.
 * [fileparts](fileparts.md) - Returns the path, filename and extension of a file path.
 * [filesep](filesep.md) - Return the file separator character for the current platform.
+* [fullpath](fullpath.md) - Returns canonical full path.
 * [isdir](isdir.md) - Returns true is the input argument is an directory.
 * [isfile](isfile.md) - Returns true is the input argument is a file.
 * [isfolder](isfolder.md) - Returns true is the input argument is an directory.

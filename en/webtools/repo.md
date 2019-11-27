@@ -8,11 +8,18 @@ Git repository tool for Nelson
 
 - repo('clone', url, branch, destination)
 - repo('clone', url, destination)
+- repo('clone', url, branch, destination, username, password)
+- repo('clone', url, destination, username, password)
+- repo('export', url, branch_tag_sha1, destination)
+- repo('export', url, destination)
+- repo('export', url, branch_tag_sha1, destination, username, password)
+- repo('export', url, destination, username, password)
 - repo('checkout', destination, branch_tag_sha1)
 - ce = repo('branch', destination)
 - ce = repo('tag', destination)
 - st = repo('log', destination)
 - repo('fetch', destination)
+- repo('fetch', destination, username, password)
 - repo('remove_branch', destination, branch)
 - current_branch = repo('current_branch', destination)
 
@@ -22,6 +29,8 @@ Git repository tool for Nelson
  - branch - a string: branch name.
  - destination - a string: local pathname.
  - branch_tag_sha1 - a string: a branch name, tag or sha1.
+ - username - a string: username used if an authentification is required.
+ - password - a string: password used  if an authentification is required.
 
 ## Output argument
 
@@ -34,6 +43,16 @@ Git repository tool for Nelson
 
   <p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
   <p>checkout command will be forced and remove untracked filed.</p>
+  <p>git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.</p>
+  <p>report('export', ...) clone and remove .git directory.</p>
+  <p/>
+  <p>Tips:</p>
+  <p/>
+  <p>If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.</p>
+  <p>You don't have some  ssh or https redirection.</p>
+  <p>Remove entries:</p>
+  <p>[url "git@github.com:"]</p>
+  <p>  insteadOf = https://github.com/</p>
 
 
 Used function(s)
