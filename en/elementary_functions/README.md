@@ -74,6 +74,7 @@ elementary functions
 * [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &&
 * [shortcutor](shortcutor.md) - Short circuit 'OR' operator, ||
 * [size](size.md) - Size of an object.
+* [sort](sort.md) - Sort array elements by quick sort algorithm.
 * [sqrt](sqrt.md) - Square root.
 * [subsindex](subsindex.md) - Convert an object to an index vector.
 * [swapbytes](swapbytes.md) - Swap byte ordering.

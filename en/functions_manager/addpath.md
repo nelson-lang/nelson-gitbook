@@ -10,6 +10,7 @@ Add directories to functions search path.
 - addpath(dirname, ..., dirname)
 - addpath(dirname, ..., dirname, '-begin')
 - addpath(dirname, ..., dirname, '-end')
+- addpath(dirname, ..., dirname, '-frozen')
 - previous = addpath(dirname)
 - previous = addpath(dirname, ..., dirname)
 - previous = addpath(dirname, ..., dirname, '-begin')
@@ -19,6 +20,7 @@ Add directories to functions search path.
 
  - dirname - a string: a directory
  - '-end' or '-begin' - append dirname at the end or begin of the list.
+ - '-frozen' - disables folder change detection for the folders being added or modified.
 
 ## Output argument
 
@@ -30,6 +32,7 @@ Add directories to functions search path.
   <p><b>addpath</b> add directories to search path.</p>
   <p>It is also possible to add lists of directory names separated by pathsep.</p>
   <p>Non-existent path will not be added and a warning will be issued.</p>
+  <p>files watchers is disabled for internal modules.</p>
 
 
 ## Example

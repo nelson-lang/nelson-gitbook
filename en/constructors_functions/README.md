@@ -8,6 +8,7 @@ constructors functions
 Create scalars, vectors, or matrices
 
 
+* [diag](diag.md) - Get diagonal elements of matrix or create diagonal matrix.
 * [eps](eps.md) - Creates an epsilon (machine precision)
 * [eye](eye.md) - Creates an identity matrix.
 * [i](i.md) - Pure Imaginary number.

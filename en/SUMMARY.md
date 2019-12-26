@@ -185,6 +185,7 @@
     * [shortcutand](./elementary_functions/shortcutand.md)
     * [shortcutor](./elementary_functions/shortcutor.md)
     * [size](./elementary_functions/size.md)
+    * [sort](./elementary_functions/sort.md)
     * [sqrt](./elementary_functions/sqrt.md)
     * [subsindex](./elementary_functions/subsindex.md)
     * [swapbytes](./elementary_functions/swapbytes.md)
@@ -200,6 +201,7 @@
 
 
 * [constructors_functions](./constructors_functions/README.md)
+    * [diag](./constructors_functions/diag.md)
     * [eps](./constructors_functions/eps.md)
     * [eye](./constructors_functions/eye.md)
     * [i](./constructors_functions/i.md)
@@ -319,6 +321,7 @@
     * [iscellstr](./data_structures/iscellstr.md)
     * [isfield](./data_structures/isfield.md)
     * [namedargs2cell](./data_structures/namedargs2cell.md)
+    * [rmfield](./data_structures/rmfield.md)
     * [setfield](./data_structures/setfield.md)
     * [struct](./data_structures/struct.md)
     * [struct2cell](./data_structures/struct2cell.md)

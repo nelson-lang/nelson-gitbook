@@ -8,6 +8,7 @@
     * [iscellstr](iscellstr.md)
     * [isfield](isfield.md)
     * [namedargs2cell](namedargs2cell.md)
+    * [rmfield](rmfield.md)
     * [setfield](setfield.md)
     * [struct](struct.md)
     * [struct2cell](struct2cell.md)

@@ -120,6 +120,16 @@ R = fileread([tempdir(), 'fprintf.txt'])
 fprintf(1, 'an value %g.', pi);
 fprintf(2, "an value %g.", pi);
 ```
+How to use backspace
+```matlab
+reverseStr = '';
+for idx = 1 : 100
+ percentDone = idx;
+ msg = sprintf('Percent done: %3.1f', percentDone);
+ fprintf([reverseStr, msg]);
+ reverseStr = repmat(sprintf('\b'), 1, length(msg));
+end
+```
 
 ## See also
 

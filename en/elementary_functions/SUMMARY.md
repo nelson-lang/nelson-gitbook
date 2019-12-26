@@ -65,6 +65,7 @@
     * [shortcutand](shortcutand.md)
     * [shortcutor](shortcutor.md)
     * [size](size.md)
+    * [sort](sort.md)
     * [sqrt](sqrt.md)
     * [subsindex](subsindex.md)
     * [swapbytes](swapbytes.md)

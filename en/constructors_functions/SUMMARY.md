@@ -1,4 +1,5 @@
 * [constructors_functions](README.md)
+    * [diag](diag.md)
     * [eps](eps.md)
     * [eye](eye.md)
     * [i](i.md)

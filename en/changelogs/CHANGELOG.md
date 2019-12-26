@@ -1,4 +1,35 @@
 
+# 0.3.12 (2019-12-27)
+
+* sort builtin: sort double, single, integers, cell and strings.
+
+* diag builtin: Get diagonal elements of matrix or create diagonal matrix.
+
+* Continous Integration tools for external modules (see module skeleton example). 
+
+* modules installed with nmm are 'autoload' by default.
+
+* .nmz file extension used as module container.
+
+* nmm('package', module_name, destination_dir) package an external module.
+
+* nmm('install', module.nmz) installs a prebuilt external module.
+
+* '-frozen' option added to addpath builtin.
+
+* rmfield builtin: Remove fields from structure.
+
+* extends sprintf and fprintf to manage backspace characters.
+
+* fix display of vector with NaN or Inf as first element.
+
+
+Bug Fixes:
+---------
+
+  * [#260](http://github.com/Nelson-numerical-software/nelson/issues/260): disable files watch for internal modules.
+
+
 # 0.3.11 (2019-11-26)
 
 * nmm: Nelson Modules Manager (package manager for Nelson)
