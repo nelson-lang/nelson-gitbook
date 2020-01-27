@@ -25,11 +25,6 @@ Reads data from a file.
 
   <p>Read data in text from the file specified by the file descriptor fid.</p>
   <p>characters encoding uses <b>fopen</b> parameter.</p>
-  <style>
-table, th, td {
-    border: 1px solid black;
-}
-  </style>
   <table style="width:100%">
     <tr>
       <th>Value type</th>

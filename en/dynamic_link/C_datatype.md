@@ -8,11 +8,6 @@ C/Nelson equivalent data types
 
 
   <p>This table shows these Nelson types with their equivalent C types.</p>
-  <style>
-table, th, td {
-    border: 1px solid black;
-}
-</style>
   <table style="width:100%">
     <tr>
       <th>Nelson type</th>

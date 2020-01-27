@@ -47,7 +47,11 @@ elementary functions
 * [ldivide](ldivide.md) - Left division, .\ operator.
 * [le](le.md) - less than or equal, ≤ operator.
 * [length](length.md) - Length of an object.
+* [linspace](linspace.md) - linearly spaced vector constructor.
 * [log](log.md) - Natural logarithm.
+* [log10](log10.md) - Common logarithm (base 10).
+* [log1p](log1p.md) - log(1 + x) accurately for small values of x.
+* [logspace](logspace.md) - logarithmically spaced vector constructor.
 * [lt](lt.md) - less than, < operator.
 * [minus](minus.md) - Subtraction, - operator
 * [mldivide](mldivide.md) - Matrix left division, \ operator.
@@ -77,6 +81,7 @@ elementary functions
 * [sort](sort.md) - Sort array elements by quick sort algorithm.
 * [sqrt](sqrt.md) - Square root.
 * [subsindex](subsindex.md) - Convert an object to an index vector.
+* [sum](sum.md) - Sum of array elements.
 * [swapbytes](swapbytes.md) - Swap byte ordering.
 * [mtimes](times.md) - Element wise multiplication, .* operator
 * [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.

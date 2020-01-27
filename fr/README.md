@@ -1,6 +1,6 @@
 ![banner](banner_homepage.png)
 
-### Nelson 0.3.12.0
+### Nelson 0.4.1.0
 
 Ceci est une version alpha de Nelson. 
 
@@ -12,6 +12,7 @@ Essayez-le !
 * * *
 
 *   [Journal des modifications](./changelogs/CHANGELOG.md)
+*   [Journal des modifications v0.3.x](./changelogs/CHANGELOG-0.3.x.md)
 *   [Journal des modifications v0.2.x](./changelogs/CHANGELOG-0.2.x.md)
 *   [Journal des modifications v0.1.x](./changelogs/CHANGELOG-0.1.x.md)
 *   [Licence de Nelson](./license/license.md)

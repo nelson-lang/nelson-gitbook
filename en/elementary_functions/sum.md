@@ -1,16 +1,16 @@
 
 
-# prod
+# sum
 
-Product of array elements.
+Sum of array elements.
 
 ## Syntax
 
-- R = prod(M)
-- R = prod(M, d)
-- R = prod(M, d)
-- R = prod(M, d, t)
-- R = prod(M, d, t, f)
+- R = sum(M)
+- R = sum(M, d)
+- R = sum(M, d)
+- R = sum(M, d, t)
+- R = sum(M, d, t, f)
 
 ## Input argument
 
@@ -21,24 +21,24 @@ Product of array elements.
 
 ## Output argument
 
- - R - Product of array elements.
+ - R - Sum of array elements.
 
 ## Description
 
 
-  <p><b>R = prod(M)</b> returns the product of the array elements of M.</p>
+  <p><b>R = sum(M)</b> returns the sum of the array elements of M.</p>
 
 
 ## Example
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
-R = prod(M, 'native')
+R = sum(M, 'native')
 ```
 
 ## See also
 
-[ndims](ndims.md), [sum](sum.md).
+[ndims](ndims.md), [prod](prod.md).
 ## History
 
 |Version|Description|

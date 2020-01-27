@@ -18,11 +18,6 @@ Writes data to a string.
 
   <p>Write data in text form to a string.</p>
   <p>The <b>format</b> follows C fprintf syntax.</p>
-  <style>
-table, th, td {
-    border: 1px solid black;
-}
-  </style>
   <table style="width:100%">
     <tr>
       <th>Value type</th>
