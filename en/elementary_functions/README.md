@@ -29,6 +29,10 @@ elementary functions
 * [exp](exp.md) - Exponential
 * [factorial](factorial.md) - Factorial function
 * [fix](fix.md) - Round towards zero
+* [flip](flip.md) - Flip order of elements
+* [flipdim](flipdim.md) - Flip array along specified dimension
+* [fliplr](fliplr.md) - Flip order of elements left to right
+* [flipud](flipud.md) - Flip order of elements up to dow
 * [floor](floor.md) - Round down
 * [gamma](gamma.md) - Gamma special function
 * [ge](ge.md) - greater than or equal, >= operator.
@@ -51,8 +55,11 @@ elementary functions
 * [log](log.md) - Natural logarithm.
 * [log10](log10.md) - Common logarithm (base 10).
 * [log1p](log1p.md) - log(1 + x) accurately for small values of x.
+* [log2](log2.md) - dissect floating-point numbers into base 2 exponent and mantissa.
 * [logspace](logspace.md) - logarithmically spaced vector constructor.
 * [lt](lt.md) - less than, < operator.
+* [max](max.md) - Maximum elements of an array.
+* [min](min.md) - Minimum elements of an array.
 * [minus](minus.md) - Subtraction, - operator
 * [mldivide](mldivide.md) - Matrix left division, \ operator.
 * [mod](mod.md) - Modulus after division.
