@@ -50,6 +50,7 @@
     * [logspace](logspace.md)
     * [lt](lt.md)
     * [max](max.md)
+    * [mean](mean.md)
     * [min](min.md)
     * [minus](minus.md)
     * [mldivide](mldivide.md)

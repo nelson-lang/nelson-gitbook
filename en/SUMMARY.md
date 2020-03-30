@@ -170,6 +170,7 @@
     * [logspace](./elementary_functions/logspace.md)
     * [lt](./elementary_functions/lt.md)
     * [max](./elementary_functions/max.md)
+    * [mean](./elementary_functions/mean.md)
     * [min](./elementary_functions/min.md)
     * [minus](./elementary_functions/minus.md)
     * [mldivide](./elementary_functions/mldivide.md)

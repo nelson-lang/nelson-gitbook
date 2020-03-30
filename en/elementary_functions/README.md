@@ -59,6 +59,7 @@ elementary functions
 * [logspace](logspace.md) - logarithmically spaced vector constructor.
 * [lt](lt.md) - less than, < operator.
 * [max](max.md) - Maximum elements of an array.
+* [mean](mean.md) - Mean of array elements.
 * [min](min.md) - Minimum elements of an array.
 * [minus](minus.md) - Subtraction, - operator
 * [mldivide](mldivide.md) - Matrix left division, \ operator.
