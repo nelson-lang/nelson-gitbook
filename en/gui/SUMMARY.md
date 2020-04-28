@@ -2,6 +2,7 @@
     * [errordlg](errordlg.md)
     * [helpdlg](helpdlg.md)
     * [inserthtml](inserthtml.md)
+    * [lookandfeel](lookandfeel.md)
     * [msgbox](msgbox.md)
     * [qt_verbose](qt_verbose.md)
     * [questdlg](questdlg.md)

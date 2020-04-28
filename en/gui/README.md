@@ -11,6 +11,7 @@ functions about gui
 * [errordlg](errordlg.md) - Creates a error dialog box.
 * [helpdlg](helpdlg.md) - Creates a help dialog box.
 * [inserthtml](inserthtml.md) - Insert html in GUI console.
+* [lookandfeel](lookandfeel.md) - default current application look and feel.
 * [msgbox](msgbox.md) - Creates a message dialog box.
 * [qt_verbose](qt_verbose.md) - show/hide Qt debug message.
 * [questdlg](questdlg.md) - Creates a question dialog box.

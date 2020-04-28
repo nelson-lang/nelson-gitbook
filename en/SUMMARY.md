@@ -604,6 +604,7 @@
     * [errordlg](./gui/errordlg.md)
     * [helpdlg](./gui/helpdlg.md)
     * [inserthtml](./gui/inserthtml.md)
+    * [lookandfeel](./gui/lookandfeel.md)
     * [msgbox](./gui/msgbox.md)
     * [qt_verbose](./gui/qt_verbose.md)
     * [questdlg](./gui/questdlg.md)
@@ -779,3 +780,7 @@
     * [webread](./webtools/webread.md)
     * [websave](./webtools/websave.md)
     * [webwrite](./webtools/webwrite.md)
+
+
+* [mex](./mex/README.md)
+    * [mex](./mex/mex.md)
