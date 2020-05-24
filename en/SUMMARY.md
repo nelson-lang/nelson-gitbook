@@ -783,4 +783,14 @@
 
 
 * [mex](./mex/README.md)
+    * [dlgeneratemexgateway](./mex/dlgeneratemexgateway.md)
     * [mex](./mex/mex.md)
+    * [mexAtExit](./mex/mexAtExit.md)
+    * [mexCallMATLAB](./mex/mexCallMATLAB.md)
+    * [mexCallMATLABWithTrap](./mex/mexCallMATLABWithTrap.md)
+
+
+* [graphics](./graphics/README.md)
+    * [figure](./graphics/figure.md)
+    * [gcf](./graphics/gcf.md)
+    * [groot](./graphics/groot.md)

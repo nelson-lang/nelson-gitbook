@@ -18,7 +18,7 @@ Build MEX function
 
 
   <p>Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.</p>
-  <p>A mex file is a type of computer file that provides an interface between Octave, or reference commercial software and functions written in C, C++.</p>
+  <p>A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.</p>
   <p>Nelson have also his own C++ API to manage more easily internal nelson's objects.</p>
 
 

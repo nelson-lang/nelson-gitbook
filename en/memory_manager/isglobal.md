@@ -12,6 +12,10 @@ Checks if a variable is global.
 
  - variable_name - a string: variable name.
 
+## Output argument
+
+ - state - a logical: true if variable is global.
+
 ## Description
 
 
