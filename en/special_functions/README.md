@@ -8,6 +8,7 @@ special functions
 special functions
 
 
+* [betainc](betainc.md) - Incomplete beta function
 * [gamma](gamma.md) - Gamma special function
 
 

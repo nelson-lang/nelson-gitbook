@@ -210,6 +210,7 @@
 
 
 * [special_functions](./special_functions/README.md)
+    * [betainc](./special_functions/betainc.md)
     * [gamma](./special_functions/gamma.md)
 
 
