@@ -3,6 +3,7 @@
     * [executable](executable.md)
     * [finish](finish.md)
     * [getnelsonmode](getnelsonmode.md)
+    * [getpid](getpid.md)
     * [isquietmode](isquietmode.md)
     * [#! shebang](shebang.md)
     * [startup](startup.md)

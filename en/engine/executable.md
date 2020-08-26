@@ -13,7 +13,8 @@ Executables to start Nelson software.
 ## Input argument
 
  - -e "nelson instructions" - If this option is present then Nelson instruction is executed just after startup file execution into Nelson. -e and -f options are mutually exclusive.
- - -f filename - If this option is present then Nelson script file is executed just after startup file execution) into Nelson. -e and -f options are mutually exclusive.
+ - -f filename - Nelson script file is executed just after startup file execution) into Nelson. -e and -f options are mutually exclusive.
+ - -F filename - If this option is present then Nelson script file is executed just after startup file execution) into an existing Nelson's process or creates it.
  - --help - help about program options.
  - --version - Return Nelson version.
  - --open - opens files arg2 ... argN must be valid/existing filenames.

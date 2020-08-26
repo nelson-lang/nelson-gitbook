@@ -48,6 +48,7 @@ elementary functions
 * [isinf](isinf.md) - Check for Infinity entries.
 * [ismissing](ismissing.md) - Check for missing values.
 * [isnan](isnan.md) - Check for Not a Number entries.
+* [isvector](isvector.md) - Checks input is vector.
 * [ldivide](ldivide.md) - Left division, .\ operator.
 * [le](le.md) - less than or equal, ≤ operator.
 * [length](length.md) - Length of an object.

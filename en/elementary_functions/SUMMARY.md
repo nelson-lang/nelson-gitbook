@@ -39,6 +39,7 @@
     * [isinf](isinf.md)
     * [ismissing](ismissing.md)
     * [isnan](isnan.md)
+    * [isvector](isvector.md)
     * [ldivide](ldivide.md)
     * [le](le.md)
     * [length](length.md)
