@@ -4,6 +4,7 @@
     * [finish](finish.md)
     * [getnelsonmode](getnelsonmode.md)
     * [getpid](getpid.md)
+    * [ipc](ipc.md)
     * [isquietmode](isquietmode.md)
     * [#! shebang](shebang.md)
     * [startup](startup.md)

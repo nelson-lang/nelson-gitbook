@@ -6,7 +6,7 @@ switch statement.
 
 ## Syntax
 
-- switch(expression), case test_expression_1, statements, case test_expression_2, statements, otherwise: statements, end
+- switch(expression), case test_expression_1, statements, case test_expression_2, statements, otherwise statements, end
 
 ## Description
 

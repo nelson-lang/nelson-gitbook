@@ -7,6 +7,7 @@
     * [finish](./engine/finish.md)
     * [getnelsonmode](./engine/getnelsonmode.md)
     * [getpid](./engine/getpid.md)
+    * [ipc](./engine/ipc.md)
     * [isquietmode](./engine/isquietmode.md)
     * [#! shebang](./engine/shebang.md)
     * [startup](./engine/startup.md)

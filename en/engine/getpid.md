@@ -7,11 +7,11 @@ Get nelson(s) Process IDentificator.
 ## Syntax
 
 - p = getpid()
-- v = getpid('running')
+- v = getpid('available')
 
 ## Input argument
 
- - 'running' - a string.
+ - 'available' - a string.
 
 ## Output argument
 
@@ -22,7 +22,7 @@ Get nelson(s) Process IDentificator.
 
 
   <p><b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
-  <p><b>v = getpid('running')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
+  <p><b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
   <p>win64 and win32 are two differents architecture but they can run in same time.</p>
 
 
@@ -30,16 +30,16 @@ Get nelson(s) Process IDentificator.
 
 ```matlab
 p = getpid()
-getpid('running')
+getpid('available')
 unix('nelson-gui &')
 sleep(5) // detached process need to wait to see available
-getpid('running')
+getpid('available')
 unix('nelson-gui &')
 sleep(5) // detached process need to wait to see available
-getpid('running')
+getpid('available')
 unix('nelson-gui &')
 sleep(5) // detached process need to wait to see available
-getpid('running')
+getpid('available')
 ```
 
 ## See also

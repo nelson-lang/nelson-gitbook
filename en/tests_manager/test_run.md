@@ -7,15 +7,33 @@ Runs tests
 ## Syntax
 
 - status = test_run()
-- status = test_run(module_name)
-- status = test_run(module_name, options)
-- status = test_run(module_name, options, xunitfile)
+- status = test_run([])
+- status = test_run('minimal_tests')
+- status = test_run('-stoponfail')
+- status = test_run(modules)
+- status = test_run(file_to_test)
+- status = test_run(modules, '-stoponfail')
+- status = test_run(file_to_test, '-stoponfail')
+- status = test_run(modules, option)
+- status = test_run(file_to_test, option)
+- status = test_run('minimal_tests', '-stoponfail')
+- status = test_run('minimal_tests', option)
+- status = test_run([], '-stoponfail')
+- status = test_run([], option)
+- status = test_run(modules, file_output)
+- status = test_run(file_to_test, file_output)
+- status = test_run([], file_output)
+- status = test_run(modules, option, xunitfile)
+- status = test_run(modules, '-stoponfail', xunitfile)
+- status = test_run(modules, option, xunitfile, '-stoponfail')
 
 ## Input argument
 
- - module_name - a string or a cell of string: module name or list of modules or filename.
+ - module_name - a string or a cell of string: module name or list of modules.
+ - file_to_test - a string or a cell of string: file to test or list of filenames.
  - options - a string or a cell of string: supported options 'all', 'all_tests', 'unitary_tests', 'nonreg_tests' or 'benchs'.
  - xunitfile - a string: filename to export results as a .xml or .json file compatible with Xunit format.
+ - '-stoponfail' - a string: stop tests execution at first 'fails' detected.
 
 ## Output argument
 
@@ -49,6 +67,7 @@ Runs tests
   <p><b>&lt;--C/C++ COMPILER REQUIRED--&gt;</b> This test will be executed if an C/C++ compiler is available.</p>
   <p><b>&lt;--INDEX 64 BIT REQUIRED--&gt;</b> This test will be executed if 64 bit index is available.</p>
   <p><b>&lt;--NO USER MODULES--&gt;</b> This test will be executed without load user modules.</p>
+  <p><b>&lt;--IPC REQUIRED--&gt;</b> This test will be executed if IPC is available.</p>
   <p/>
   <p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
 
