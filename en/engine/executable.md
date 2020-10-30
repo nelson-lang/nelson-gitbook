@@ -22,6 +22,7 @@ Executables to start Nelson software.
  - --nostartup - disable the main Nelson script file executed at startup.
  - --nousermodules - disable the load of user's modules. loaded before user's script.
  - --nouserstartup - disable the user script file executed at startup after the main startup file.
+ - --minimize - minimize main GUI Windows (GUI mode only).
  - --noipc - disable interprocess features (files association, ipc builtin).
  - --language lang - If this option is present it fixes the user language. Currently, lang can be: fr_FR en_US.
  - --quiet - If this option is present no banner and version displayed.

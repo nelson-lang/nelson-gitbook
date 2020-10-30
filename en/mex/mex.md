@@ -13,9 +13,12 @@ Build MEX function
 - mex('-output', mexName, filenames)
 - mex(api, '-output', mexName, filenames)
 - mex(api, '-output', mexName, filenames, option1, ..., optionN)
+- mex('-client, 'engine', filenames)
+- mex('-client', 'engine', 'filenames', api, option1, ..., optionN)
 
 ## Input argument
 
+ - '-client', 'engine' - enable to build C/C++ source files into standalone engine application.
  - api - a string: '-R2017b' (separated complex representation) or '-R2018a' (interleaved complex representation).
  - filenames - a string or cell of characters: list of files to use. First filename used as mex name.
  - mexName - a string: override naming convention.
@@ -46,7 +49,7 @@ Build MEX function
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_mexPrintf.nls'])
+edit([modulepath('mex'), '/tests/test_engine.nls'])
 ```
 
 ## See also

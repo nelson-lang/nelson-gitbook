@@ -8,11 +8,14 @@ Generates a makefile for building a dynamic library.
 
 - [res, message] = dlgeneratemake(destinationdir, libname, c_cpp_files, include)
 - [res, message] = dlgeneratemake(destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)
+- [res, message] = dlgeneratemake(maketype, destinationdir, libname, c_cpp_files, include)
+- [res, message] = dlgeneratemake(maketype, destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)
 
 ## Input argument
 
+ - maketype - a string: 'executable' or 'dynamic_library'.
  - destinationdir - a string: destination directory where is generated the makefile.
- - libname - a string: destination dynamic library name
+ - libname - a string: destination dynamic library or executable name.
  - c_cpp_files - a string or a cell of strings: .c or .cpp list files (full filename)
  - include - a string or a cell of strings: directories where to find include files.
  - defines - a string or a cell of strings: a list of defines

@@ -6,8 +6,6 @@
     * [executable](./engine/executable.md)
     * [finish](./engine/finish.md)
     * [getnelsonmode](./engine/getnelsonmode.md)
-    * [getpid](./engine/getpid.md)
-    * [ipc](./engine/ipc.md)
     * [isquietmode](./engine/isquietmode.md)
     * [#! shebang](./engine/shebang.md)
     * [startup](./engine/startup.md)
@@ -790,6 +788,12 @@
 
 * [mex](./mex/README.md)
     * [dlgeneratemexgateway](./mex/dlgeneratemexgateway.md)
+    * [engClose](./mex/engClose.md)
+    * [engEvalString](./mex/engEvalString.md)
+    * [engGetVariable](./mex/engGetVariable.md)
+    * [engOpen](./mex/engOpen.md)
+    * [engOpenSingleUse](./mex/engOpenSingleUse.md)
+    * [engPutVariable](./mex/engPutVariable.md)
     * [mex](./mex/mex.md)
     * [mexAtExit](./mex/mexAtExit.md)
     * [mexCallMATLAB](./mex/mexCallMATLAB.md)
@@ -800,3 +804,8 @@
     * [figure](./graphics/figure.md)
     * [gcf](./graphics/gcf.md)
     * [groot](./graphics/groot.md)
+
+
+* [ipc](./ipc/README.md)
+    * [getpid](./ipc/getpid.md)
+    * [ipc](./ipc/ipc.md)
