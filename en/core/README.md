@@ -28,6 +28,7 @@ core functions
 * [prefdir](prefdir.md) - Return the preferences directory used by Nelson.
 * [quit](quit.md) - Terminate Nelson application
 * [run](run.md) - Executes a script file (.nls).
+* [sha256](sha256.md) - Get sha256 checksum.
 * [version](version.md) - Return the version of Nelson.
 
 

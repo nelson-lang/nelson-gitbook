@@ -5,6 +5,7 @@
     * [dir](dir.md)
     * [fileparts](fileparts.md)
     * [filesep](filesep.md)
+    * [fullfile](fullfile.md)
     * [fullpath](fullpath.md)
     * [isdir](isdir.md)
     * [isfile](isfile.md)

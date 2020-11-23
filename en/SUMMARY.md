@@ -49,6 +49,7 @@
     * [prefdir](./core/prefdir.md)
     * [quit](./core/quit.md)
     * [run](./core/run.md)
+    * [sha256](./core/sha256.md)
     * [version](./core/version.md)
 
 
@@ -430,6 +431,7 @@
     * [dir](./files_folders_functions/dir.md)
     * [fileparts](./files_folders_functions/fileparts.md)
     * [filesep](./files_folders_functions/filesep.md)
+    * [fullfile](./files_folders_functions/fullfile.md)
     * [fullpath](./files_folders_functions/fullpath.md)
     * [isdir](./files_folders_functions/isdir.md)
     * [isfile](./files_folders_functions/isfile.md)
@@ -791,9 +793,12 @@
     * [engClose](./mex/engClose.md)
     * [engEvalString](./mex/engEvalString.md)
     * [engGetVariable](./mex/engGetVariable.md)
+    * [engGetVisible](./mex/engGetVisible.md)
     * [engOpen](./mex/engOpen.md)
     * [engOpenSingleUse](./mex/engOpenSingleUse.md)
+    * [engOutputBuffer](./mex/engOutputBuffer.md)
     * [engPutVariable](./mex/engPutVariable.md)
+    * [engSetVisible](./mex/engSetVisible.md)
     * [mex](./mex/mex.md)
     * [mexAtExit](./mex/mexAtExit.md)
     * [mexCallMATLAB](./mex/mexCallMATLAB.md)

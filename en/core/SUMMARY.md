@@ -19,5 +19,6 @@
     * [prefdir](prefdir.md)
     * [quit](quit.md)
     * [run](run.md)
+    * [sha256](sha256.md)
     * [version](version.md)
 

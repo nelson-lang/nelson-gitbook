@@ -1,18 +1,19 @@
 
 
-# engEvalString
+# engOutputBuffer
 
-Evaluate expression in string in base scope
+Specify char buffer for Nelson output
 
 ## Syntax
 
 - #include "engine.h"
-- int engEvalString(Engine *ep, const char *string);
+- int engOutputBuffer(Engine *ep, char *p, int n);
 
 ## Input argument
 
  - Engine *ep - handle to Nelson engine.
- - const char *string - Expression to evaluate.
+ - char *p - Pointer to character buffer.
+ - int n - Length of buffer.
 
 ## Output argument
 
@@ -21,7 +22,8 @@ Evaluate expression in string in base scope
 ## Description
 
 
-  <p>Evaluate expression in string in base scope.</p>
+  <p>Specify char buffer for Nelson output.</p>
+  <p>To turn off output buffering in C, use: <b>engOutputBuffer(ep, NULL, 0);</b></p>
 
 
 ## Example

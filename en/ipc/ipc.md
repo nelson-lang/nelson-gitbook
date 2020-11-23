@@ -6,24 +6,32 @@ Inter process communicator.
 
 ## Syntax
 
-- ipc(pid, 'eval', cmd)
+- O = ipc(pid, 'eval', cmd)
 - B = ipc(pid, 'isvar', name, scope)
 - V = ipc(pid, 'get', name)
 - V = ipc(pid, 'get', name, scope)
+- TF = ipc(pid, 'minimize')
+- ipc(pid, 'post', cmd)
+- ipc(pid, 'post', cmd, scope)
 - ipc(pid, 'put', var, name)
-- ipc(pid, 'put', var, name , scope)
+- ipc(pid, 'put', var, name, scope)
+- ipc(pid, 'minimize', tf)
 
 ## Input argument
 
- - 'eval' - a string: a command to evaluate to another nelson's process in base scope.
+ - 'post' - a string: post a command to evaluate to another nelson's process in base scope (not blocking).
+ - 'eval' - a string: post a command to evaluate to another nelson's process in base scope (blocking).
  - 'isvar' - a string: check if a variable exists into another nelson's process.
  - 'put' - a string: send a variable into another nelson's process.
  - 'get' - a string: get a variable from another nelson's process.
+ - 'minimize' - a string: minimize main window from another nelson's process.
 
 ## Output argument
 
  - B - a logical: true if variable exists.
  - V - a variable from another nelson.
+ - TF - a logical: true if destination process is minimized.
+ - O - a character array: output of evaluate string.
 
 ## Description
 
@@ -35,7 +43,7 @@ Inter process communicator.
   <p>Current limitation to limit memory usage.</p>
 
 
-## Example
+## Examples
 
 ```matlab
 master_pid = getpid()
@@ -62,7 +70,7 @@ n = 0;
 for p = current_pids
     if p ~= master_pid
         cmd = sprintf('rng(%d);M = rand(10, 10); disp(M)', n);
-        ipc(p, 'eval', cmd);
+        ipc(p, 'post', cmd);
         n = n + 1;
     end
 end
@@ -80,14 +88,21 @@ end
 // close all clients
 for p = current_pids
     if p ~= master_pid
-        ipc(p, 'eval', 'exit')
+        ipc(p, 'post', 'exit')
     end
 end
+```
+```matlab
+ipc(getpid(), 'eval', 'dir')
+```
+```matlab
+ipc(getpid(), 'minimize', true)
+ipc(getpid(), 'minimize')
 ```
 
 ## See also
 
-[getpid](getpid.md), [unix](unix.html).
+[getpid](getpid.md), [unix](unix.html), [eval](../core/eval.md).
 ## History
 
 |Version|Description|

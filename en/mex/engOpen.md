@@ -25,7 +25,9 @@ Start Nelson process
   <p>Set the value to the path returned by the following Nelson command:</p>
   <p><b>res</b> = modulepath(nelsonroot(),'core','bin')</p>
   <p>on linux: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<b>res</b></p>
+  <p>export PATH=$PATH:<b>res</b></p>
   <p>on macos: export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:<b>res</b></p>
+  <p>export PATH=$PATH:<b>res</b></p>
   <p>on windows: set PATH=%PATH%;<b>res</b></p>
 
 
