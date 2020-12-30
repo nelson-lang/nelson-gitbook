@@ -8,8 +8,12 @@ linear algebra
 linear algebra functions
 
 
+* [chol](chol.md) - Cholesky factorization.
+* [det](det.md) - Matrix determinant.
+* [eig](eig.md) - Eigenvalues and eigenvectors.
 * [expm](expm.md) - Computes the matrix exponential of a square matrix.
 * [inv](inv.md) - Matrix inverse.
+* [ishermitian](ishermitian.md) - Computes if matrix is hermitian or skew-hermitian.
 * [issymmetric](issymmetric.md) - Computes if matrix is symmetric.
 * [logm](logm.md) - Computes the matrix logarithm of a square matrix.
 * [rcond](rcond.md) - Inverse condition number.

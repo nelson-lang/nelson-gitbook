@@ -40,7 +40,7 @@ s = svd(X)
 
 ## See also
 
-[eig](eig.html).
+[eig](eig.md).
 ## History
 
 |Version|Description|

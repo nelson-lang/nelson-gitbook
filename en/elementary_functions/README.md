@@ -20,6 +20,8 @@ elementary functions
 * [colon](colon.md) - colon operator ':'.
 * [complex](complex.md) - Creates an complex number.
 * [conj](conj.md) - Complex conjugate
+* [corrcoef](corrcoef.md) - Correlation coefficients
+* [cov](cov.md) - Covariance
 * [ctranspose](ctranspose.md) - Returns complex conjugate transpose: ' operator.
 * [dec2base](dec2base.md) - Convert decimal number to another base.
 * [dec2bin](dec2bin.md) - Convert decimal number to base 2.
@@ -28,13 +30,13 @@ elementary functions
 * [eq](eq.md) - equality, == operator.
 * [exp](exp.md) - Exponential
 * [factorial](factorial.md) - Factorial function
+* [find](find.md) - Find Non-zero Elements
 * [fix](fix.md) - Round towards zero
 * [flip](flip.md) - Flip order of elements
 * [flipdim](flipdim.md) - Flip array along specified dimension
 * [fliplr](fliplr.md) - Flip order of elements left to right
 * [flipud](flipud.md) - Flip order of elements up to dow
 * [floor](floor.md) - Round down
-* [gamma](gamma.md) - Gamma special function
 * [ge](ge.md) - greater than or equal, >= operator.
 * [gt](gt.md) - greater than, > operator.
 * [hex2dec](hex2dec.md) - Convert number in base 16 to decimal.
@@ -59,6 +61,7 @@ elementary functions
 * [log2](log2.md) - dissect floating-point numbers into base 2 exponent and mantissa.
 * [logspace](logspace.md) - logarithmically spaced vector constructor.
 * [lt](lt.md) - less than, < operator.
+* [magic](magic.md) - Magic square
 * [max](max.md) - Maximum elements of an array.
 * [mean](mean.md) - Mean of array elements.
 * [min](min.md) - Minimum elements of an array.
@@ -96,6 +99,7 @@ elementary functions
 * [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.
 * [uminus](uminus.md) - Unary minus, - operator
 * [uplus](uplus.md) - Unary plus, + operator
+* [var](var.md) - Variance
 * [vertcat](vertcat.md) - Vertical concatenation.
 
 

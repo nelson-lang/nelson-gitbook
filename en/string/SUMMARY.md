@@ -1,4 +1,5 @@
 * [string](README.md)
+    * [append](append.md)
     * [blanks](blanks.md)
     * [char](char.md)
     * [contains](contains.md)
@@ -15,6 +16,7 @@
     * [sprintf](sprintf.md)
     * [startsWith](startsWith.md)
     * [str2double](str2double.md)
+    * [strcat](strcat.md)
     * [strcmp](strcmp.md)
     * [strcmpi](strcmpi.md)
     * [strfind](strfind.md)

@@ -132,6 +132,8 @@
     * [colon](./elementary_functions/colon.md)
     * [complex](./elementary_functions/complex.md)
     * [conj](./elementary_functions/conj.md)
+    * [corrcoef](./elementary_functions/corrcoef.md)
+    * [cov](./elementary_functions/cov.md)
     * [ctranspose](./elementary_functions/ctranspose.md)
     * [dec2base](./elementary_functions/dec2base.md)
     * [dec2bin](./elementary_functions/dec2bin.md)
@@ -140,13 +142,13 @@
     * [eq](./elementary_functions/eq.md)
     * [exp](./elementary_functions/exp.md)
     * [factorial](./elementary_functions/factorial.md)
+    * [find](./elementary_functions/find.md)
     * [fix](./elementary_functions/fix.md)
     * [flip](./elementary_functions/flip.md)
     * [flipdim](./elementary_functions/flipdim.md)
     * [fliplr](./elementary_functions/fliplr.md)
     * [flipud](./elementary_functions/flipud.md)
     * [floor](./elementary_functions/floor.md)
-    * [gamma](./elementary_functions/gamma.md)
     * [ge](./elementary_functions/ge.md)
     * [gt](./elementary_functions/gt.md)
     * [hex2dec](./elementary_functions/hex2dec.md)
@@ -171,6 +173,7 @@
     * [log2](./elementary_functions/log2.md)
     * [logspace](./elementary_functions/logspace.md)
     * [lt](./elementary_functions/lt.md)
+    * [magic](./elementary_functions/magic.md)
     * [max](./elementary_functions/max.md)
     * [mean](./elementary_functions/mean.md)
     * [min](./elementary_functions/min.md)
@@ -208,12 +211,14 @@
     * [transpose](./elementary_functions/transpose.md)
     * [uminus](./elementary_functions/uminus.md)
     * [uplus](./elementary_functions/uplus.md)
+    * [var](./elementary_functions/var.md)
     * [vertcat](./elementary_functions/vertcat.md)
 
 
 * [special_functions](./special_functions/README.md)
     * [betainc](./special_functions/betainc.md)
     * [gamma](./special_functions/gamma.md)
+    * [gcd](./special_functions/gcd.md)
 
 
 * [constructors_functions](./constructors_functions/README.md)
@@ -257,6 +262,7 @@
 
 
 * [string](./string/README.md)
+    * [append](./string/append.md)
     * [blanks](./string/blanks.md)
     * [char](./string/char.md)
     * [contains](./string/contains.md)
@@ -273,6 +279,7 @@
     * [sprintf](./string/sprintf.md)
     * [startsWith](./string/startsWith.md)
     * [str2double](./string/str2double.md)
+    * [strcat](./string/strcat.md)
     * [strcmp](./string/strcmp.md)
     * [strcmpi](./string/strcmpi.md)
     * [strfind](./string/strfind.md)
@@ -519,8 +526,12 @@
 
 
 * [linear_algebra](./linear_algebra/README.md)
+    * [chol](./linear_algebra/chol.md)
+    * [det](./linear_algebra/det.md)
+    * [eig](./linear_algebra/eig.md)
     * [expm](./linear_algebra/expm.md)
     * [inv](./linear_algebra/inv.md)
+    * [ishermitian](./linear_algebra/ishermitian.md)
     * [issymmetric](./linear_algebra/issymmetric.md)
     * [logm](./linear_algebra/logm.md)
     * [rcond](./linear_algebra/rcond.md)

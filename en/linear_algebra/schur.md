@@ -42,7 +42,7 @@ X = [1 2; 3 4];
 
 ## See also
 
-[eig](eig.html).
+[eig](eig.md).
 ## History
 
 |Version|Description|

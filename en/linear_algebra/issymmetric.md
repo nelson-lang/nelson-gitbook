@@ -13,7 +13,7 @@ Computes if matrix is symmetric.
 
 ## Input argument
 
- - x - a numeric value: scalar or matrix (double or single, integers).
+ - x - a numeric value: scalar or matrix (double or single, integers, logical).
  - tol - a numeric value: finite and >= 0.
 
 ## Output argument
@@ -38,6 +38,9 @@ issymmetric(A, 'skew')
 issymmetric(A, 'nonskew')
 ```
 
+## See also
+
+[ishermitian](ishermitian.md).
 ## History
 
 |Version|Description|

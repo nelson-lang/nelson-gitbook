@@ -8,6 +8,7 @@ string type
 string type functions
 
 
+* [append](append.md) - combines strings horizontally.
 * [blanks](blanks.md) - creates an string of blank characters.
 * [char](char.md) - Converts to a character array.
 * [contains](contains.md) - checks if string contains with pattern.
@@ -24,6 +25,7 @@ string type functions
 * [sprintf](sprintf.md) - Writes data to a string.
 * [startsWith](startsWith.md) - checks if string starts with pattern.
 * [str2double](str2double.md) - Converts a string to double.
+* [strcat](strcat.md) - concatenate strings horizontally.
 * [strcmp](strcmp.md) - Strings comparaison.
 * [strcmpi](strcmpi.md) - Strings comparaison (case insensitive).
 * [strfind](strfind.md) - Find a string in another.

@@ -31,7 +31,7 @@ R = factorial(int8(4))
 
 ## See also
 
-[gamma](gamma.md).
+[gamma](gamma.html).
 ## History
 
 |Version|Description|
