@@ -35,7 +35,7 @@ Git repository tool for Nelson
 ## Output argument
 
  - ce - a cell: list of tags or branchs.
- - st - a structure: contains log informations.
+ - st - a structure: contains log information.
  - current_branch - a string: name of current branch.
 
 ## Description

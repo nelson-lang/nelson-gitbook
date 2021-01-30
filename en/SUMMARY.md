@@ -132,8 +132,6 @@
     * [colon](./elementary_functions/colon.md)
     * [complex](./elementary_functions/complex.md)
     * [conj](./elementary_functions/conj.md)
-    * [corrcoef](./elementary_functions/corrcoef.md)
-    * [cov](./elementary_functions/cov.md)
     * [ctranspose](./elementary_functions/ctranspose.md)
     * [dec2base](./elementary_functions/dec2base.md)
     * [dec2bin](./elementary_functions/dec2bin.md)
@@ -175,7 +173,6 @@
     * [lt](./elementary_functions/lt.md)
     * [magic](./elementary_functions/magic.md)
     * [max](./elementary_functions/max.md)
-    * [mean](./elementary_functions/mean.md)
     * [min](./elementary_functions/min.md)
     * [minus](./elementary_functions/minus.md)
     * [mldivide](./elementary_functions/mldivide.md)
@@ -211,7 +208,6 @@
     * [transpose](./elementary_functions/transpose.md)
     * [uminus](./elementary_functions/uminus.md)
     * [uplus](./elementary_functions/uplus.md)
-    * [var](./elementary_functions/var.md)
     * [vertcat](./elementary_functions/vertcat.md)
 
 
@@ -275,6 +271,7 @@
     * [mat2str](./string/mat2str.md)
     * [matches](./string/matches.md)
     * [newline](./string/newline.md)
+    * [num2str](./string/num2str.md)
     * [replace](./string/replace.md)
     * [sprintf](./string/sprintf.md)
     * [startsWith](./string/startsWith.md)
@@ -696,6 +693,8 @@
     * [QObject_set](./qml_engine/QObject_set.md)
     * [QObject_undefine](./qml_engine/QObject_undefine.md)
     * [QObject_used](./qml_engine/QObject_used.md)
+    * [qt_constant](./qml_engine/qt_constant.md)
+    * [qt_version](./qml_engine/qt_version.md)
 
 
 * [com_engine](./com_engine/README.md)
@@ -825,3 +824,10 @@
 * [ipc](./ipc/README.md)
     * [getpid](./ipc/getpid.md)
     * [ipc](./ipc/ipc.md)
+
+
+* [statistics](./statistics/README.md)
+    * [corrcoef](./statistics/corrcoef.md)
+    * [cov](./statistics/cov.md)
+    * [mean](./statistics/mean.md)
+    * [var](./statistics/var.md)

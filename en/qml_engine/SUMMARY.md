@@ -24,4 +24,6 @@
     * [QObject_set](QObject_set.md)
     * [QObject_undefine](QObject_undefine.md)
     * [QObject_used](QObject_used.md)
+    * [qt_constant](qt_constant.md)
+    * [qt_version](qt_version.md)
 

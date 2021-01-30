@@ -11,8 +11,6 @@
     * [colon](colon.md)
     * [complex](complex.md)
     * [conj](conj.md)
-    * [corrcoef](corrcoef.md)
-    * [cov](cov.md)
     * [ctranspose](ctranspose.md)
     * [dec2base](dec2base.md)
     * [dec2bin](dec2bin.md)
@@ -54,7 +52,6 @@
     * [lt](lt.md)
     * [magic](magic.md)
     * [max](max.md)
-    * [mean](mean.md)
     * [min](min.md)
     * [minus](minus.md)
     * [mldivide](mldivide.md)
@@ -90,6 +87,5 @@
     * [transpose](transpose.md)
     * [uminus](uminus.md)
     * [uplus](uplus.md)
-    * [var](var.md)
     * [vertcat](vertcat.md)
 

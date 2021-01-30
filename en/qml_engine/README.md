@@ -33,6 +33,8 @@ The QML engine enables nelson programs to display and manipulate graphical conte
 * [QObject_set](QObject_set.md) - Set a property value of an QObject handle (set).
 * [QObject_undefine](QObject_undefine.md) - Undefine a dynamic property of a QObject handle.
 * [QObject_used](QObject_used.md) - Returns list of current used QObject handle.
+* [qt_constant](qt_constant.md) - Returns Qt constant value.
+* [qt_version](qt_version.md) - Returns Qt version used.
 
 
 

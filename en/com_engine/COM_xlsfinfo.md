@@ -23,7 +23,7 @@ Determines if file contains Microsoft Excel spreadsheet.
 ## Description
 
 
-  <p>Query Excel spreadsheet file filename for some informations about its contents.</p>
+  <p>Query Excel spreadsheet file filename for some information about its contents.</p>
 
 
 ## Example

@@ -12,6 +12,7 @@
     * [mat2str](mat2str.md)
     * [matches](matches.md)
     * [newline](newline.md)
+    * [num2str](num2str.md)
     * [replace](replace.md)
     * [sprintf](sprintf.md)
     * [startsWith](startsWith.md)

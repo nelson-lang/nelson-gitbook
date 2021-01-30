@@ -21,6 +21,7 @@ string type functions
 * [mat2str](mat2str.md) - Matrix to String.
 * [matches](matches.md) - Determine if pattern matches with strings.
 * [newline](newline.md) - Returns a newline character.
+* [num2str](num2str.md) - Converts numbers to character array.
 * [replace](replace.md) - Replaces strings in another.
 * [sprintf](sprintf.md) - Writes data to a string.
 * [startsWith](startsWith.md) - checks if string starts with pattern.
