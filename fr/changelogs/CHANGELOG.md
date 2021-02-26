@@ -1,4 +1,32 @@
+# 0.5.2 (U2021-02-27)
+
+## Features:
+
+- `triu` builtin: Upper triangular part of matrix.
+
+- `tril` builtin: Lower triangular part of matrix.
+
+- `istriu` checks if matrix is upper triangular part of matrix.
+
+- `istril`: checks if matrix is lower triangular part of matrix.
+
+- `isdiag`: checks if matrix is diagonal.
+
+## Compilation:
+
+- MacOS build uses openBLAS. lapacke included in openBLAS. No more thirdparty repository required for MacOS build.
+
+- rename ArrayOf::getLength to ArrayOf::getElementCount method.
+
+- rework simple assignement.
+
+- add benchs about loop to identify existing bottleneck for next iteration.
+
+- rework loop to prepare next iteration.
+
 # 0.5.1 (2021-01-30)
+
+## Features:
 
 - `qt_version` builtin: returns the version number of Qt at run-time.
 

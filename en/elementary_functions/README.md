@@ -41,6 +41,7 @@ elementary functions
 * [horzcat](horzcat.md) - Horizontal concatenation.
 * [imag](imag.md) - Imaginary part of an complex number.
 * [isapprox](isapprox.md) - Return true if arguments are approximately equal, within the precision.
+* [istriu](isdiag.md) - Checks if matrix is diagonal.
 * [isequal](isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
 * [isequaln](isequaln.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
 * [isequalto](isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
@@ -48,6 +49,8 @@ elementary functions
 * [isinf](isinf.md) - Check for Infinity entries.
 * [ismissing](ismissing.md) - Check for missing values.
 * [isnan](isnan.md) - Check for Not a Number entries.
+* [istril](istril.md) - Checks if matrix is lower triangular.
+* [istriu](istriu.md) - Checks if matrix is upper triangular.
 * [isvector](isvector.md) - Checks input is vector.
 * [ldivide](ldivide.md) - Left division, .\ operator.
 * [le](le.md) - less than or equal, ≤ operator.
@@ -94,6 +97,8 @@ elementary functions
 * [swapbytes](swapbytes.md) - Swap byte ordering.
 * [mtimes](times.md) - Element wise multiplication, .* operator
 * [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.
+* [tril](tril.md) - Lower triangular part of matrix
+* [triu](triu.md) - Upper triangular part of matrix
 * [uminus](uminus.md) - Unary minus, - operator
 * [uplus](uplus.md) - Unary plus, + operator
 * [vertcat](vertcat.md) - Vertical concatenation.
