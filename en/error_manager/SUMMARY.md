@@ -3,5 +3,9 @@
     * [getLastReport](getLastReport.md)
     * [lasterror](lasterror.md)
     * [lastwarn](lastwarn.md)
+    * [MException](MException.md)
+    * [rethrow](rethrow.md)
+    * [throw](throw.md)
+    * [throwAsCaller](throwAsCaller.md)
     * [warning](warning.md)
 

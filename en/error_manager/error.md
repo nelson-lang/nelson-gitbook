@@ -6,11 +6,13 @@ Raise an error message.
 
 ## Syntax
 
+- error(id, msg)
 - error(msg)
 - error(error_structure)
 
 ## Input argument
 
+ - id - a string: error identifier.
  - msg - a string.
  - error_structure - error message structure.
 
@@ -19,12 +21,15 @@ Raise an error message.
 
   <p><b>error</b> stops the current script execution.</p>
   <p><b>error('')</b> will be ignored and the script will continue to run.</p>
+  <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
 
 
 ## Examples
 
 ```matlab
 error('your error message.')
+error('nelson:identifier', 'your error message.')
+  
 error('')
 ```
 ```matlab
@@ -38,7 +43,7 @@ c = lasterror()
 
 ## See also
 
-[lasterror](lasterror.md), [warning](warning.md).
+[MException](MException.md), [lasterror](lasterror.md), [warning](warning.md).
 ## History
 
 |Version|Description|

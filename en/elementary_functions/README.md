@@ -89,6 +89,7 @@ elementary functions
 * [round](round.md) - Round to nearest integer
 * [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &&
 * [shortcutor](shortcutor.md) - Short circuit 'OR' operator, ||
+* [sign](sign.md) - Find the sign function of a number.
 * [size](size.md) - Size of an object.
 * [sort](sort.md) - Sort array elements by quick sort algorithm.
 * [sqrt](sqrt.md) - Square root.

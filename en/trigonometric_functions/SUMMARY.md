@@ -3,6 +3,7 @@
     * [asin](asin.md)
     * [atan](atan.md)
     * [atan2](atan2.md)
+    * [atanh](atanh.md)
     * [cos](cos.md)
     * [cosd](cosd.md)
     * [cosh](cosh.md)

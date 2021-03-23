@@ -84,6 +84,10 @@
     * [getLastReport](./error_manager/getLastReport.md)
     * [lasterror](./error_manager/lasterror.md)
     * [lastwarn](./error_manager/lastwarn.md)
+    * [MException](./error_manager/MException.md)
+    * [rethrow](./error_manager/rethrow.md)
+    * [throw](./error_manager/throw.md)
+    * [throwAsCaller](./error_manager/throwAsCaller.md)
     * [warning](./error_manager/warning.md)
 
 
@@ -201,6 +205,7 @@
     * [round](./elementary_functions/round.md)
     * [shortcutand](./elementary_functions/shortcutand.md)
     * [shortcutor](./elementary_functions/shortcutor.md)
+    * [sign](./elementary_functions/sign.md)
     * [size](./elementary_functions/size.md)
     * [sort](./elementary_functions/sort.md)
     * [sqrt](./elementary_functions/sqrt.md)
@@ -513,6 +518,7 @@
     * [asin](./trigonometric_functions/asin.md)
     * [atan](./trigonometric_functions/atan.md)
     * [atan2](./trigonometric_functions/atan2.md)
+    * [atanh](./trigonometric_functions/atanh.md)
     * [cos](./trigonometric_functions/cos.md)
     * [cosd](./trigonometric_functions/cosd.md)
     * [cosh](./trigonometric_functions/cosh.md)

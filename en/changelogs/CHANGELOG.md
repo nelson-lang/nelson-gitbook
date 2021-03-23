@@ -1,4 +1,38 @@
-# 0.5.2 (U2021-02-27)
+# 0.5.3 (2021-03-24)
+
+## Features:
+
+- [#373](http://github.com/Nelson-numerical-software/nelson/issues/373): `sign` builtin.
+
+- [#313](http://github.com/Nelson-numerical-software/nelson/issues/313): `atanh` builtin: inverse hyperbolic tangent.
+
+- `MException` comes default exception in Nelson.
+
+- `try, catch` extended to manage `MException`.
+
+- `throw`, `throwAsCaller`, `rethrow` functions added.
+
+- `error` extended to manage identifier.
+
+- callstack reworks, available with `MException`.
+
+- for loop faster > x2.
+
+- assignment does not copy matrix. 
+
+- reworks ArrayOfVector (internal).
+
+- C++ API nargincheck, nargoutcheck helpers added.
+
+- rename `mexception` to `MException`
+
+## Bug Fixes:
+
+- [#413](http://github.com/Nelson-numerical-software/nelson/issues/413): circle CI Arch docker did not work.
+
+- [#412](http://github.com/Nelson-numerical-software/nelson/issues/412) docker fedora 35 support.
+
+# 0.5.2 (2021-02-27)
 
 ## Features:
 

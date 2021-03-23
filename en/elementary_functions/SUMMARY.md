@@ -80,6 +80,7 @@
     * [round](round.md)
     * [shortcutand](shortcutand.md)
     * [shortcutor](shortcutor.md)
+    * [sign](sign.md)
     * [size](size.md)
     * [sort](sort.md)
     * [sqrt](sqrt.md)
