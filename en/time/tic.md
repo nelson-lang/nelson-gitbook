@@ -34,7 +34,7 @@ t = toc()
 
 ## See also
 
-[toc](toc.md), [sleep](sleep.md).
+[toc](toc.md), [sleep](sleep.md), [time](time.md).
 ## History
 
 |Version|Description|

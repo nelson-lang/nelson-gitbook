@@ -16,6 +16,7 @@ time functions
 * [now](now.md) - Returns current date under the form of a Unix hour.
 * [sleep](sleep.md) - Suspend code execution.
 * [tic](tic.md) - Starts a stopwatch timer.
+* [time](time.md) - Return the current time as the number of seconds or nanoseconds since the epoch.
 * [toc](toc.md) - Read the stopwatch timer.
 
 

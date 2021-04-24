@@ -70,6 +70,7 @@ Runs tests
   <p><b>&lt;--IPC REQUIRED--&gt;</b> This test will be executed if IPC is available.</p>
   <p/>
   <p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
+  <p><b>test_run</b> uses n th workers to execute and speed up tests executions.</p>
 
 
 ## Examples

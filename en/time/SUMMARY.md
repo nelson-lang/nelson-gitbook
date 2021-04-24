@@ -7,5 +7,6 @@
     * [now](now.md)
     * [sleep](sleep.md)
     * [tic](tic.md)
+    * [time](time.md)
     * [toc](toc.md)
 

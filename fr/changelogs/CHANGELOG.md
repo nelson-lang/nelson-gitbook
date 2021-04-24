@@ -1,3 +1,43 @@
+# 0.5.4 (2021-04-24)
+
+## Features:
+
+- Validators functions available from Nelson and C++ API (part 1):
+
+  - `mustBeLogicalScalar`, `mustBeLogical`, `mustBeFloat`,
+  - `mustBeFinite`, `mustBeScalarOrEmpty`, `mustBeVector`,
+  - `mustBeValidVariableName`,
+  - `mustBeTextScalar`, `mustBeFolder`,
+  - `mustBeNumeric`.
+
+- Functions using SIMD extensions:
+
+  - `ceil`, `round`, `fix`, `floor`, `abs`, `conj`,
+  - `exp`, `sqrt`, `log1p`, `log10`, `log`
+  - `cos`, `sin`, `tan`
+  - `atan2`, `acos`, `asin`
+  - addition, substraction, multiplication, division vectors.
+
+- `system` allows to run shell command execution in parallel.
+
+- `test_run` executes on parallel process.
+
+- extends `assert_checkerror` to check also error identifier.
+
+- `isvector`, `isscalar` support overload.
+
+- `isvarname` builtin: check if input is valid variable name.
+
+- `isdir` manages string array.
+
+- `time` returns current time as the number of seconds or nanoseconds since the epoch.
+
+## Bug Fixes:
+
+- [#352](http://github.com/Nelson-numerical-software/nelson/issues/352): number of input arguments checked in macro.
+
+- [#382](http://github.com/Nelson-numerical-software/nelson/issues/382): optimize `corrcoef`.
+
 # 0.5.3 (2021-03-24)
 
 ## Features:
@@ -18,7 +58,7 @@
 
 - for loop faster > x2.
 
-- assignment does not copy matrix. 
+- assignment does not copy matrix.
 
 - reworks ArrayOfVector (internal).
 

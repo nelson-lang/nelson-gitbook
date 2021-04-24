@@ -33,6 +33,7 @@ module about types management.
 * [isuint32](isuint32.md) - Return true if variable var is an unsigned 32-bit integer type array.
 * [isuint64](isuint64.md) - Return true if variable var is an unsigned 64-bit integer type array.
 * [isuint8](isuint8.md) - Return true if variable var is an unsigned 8-bit integer type array.
+* [isvarname](isvarname.md) - Return true if input is valid variable name.
 
 
 

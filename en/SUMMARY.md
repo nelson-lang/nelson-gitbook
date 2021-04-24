@@ -265,6 +265,7 @@
     * [isuint32](./types/isuint32.md)
     * [isuint64](./types/isuint64.md)
     * [isuint8](./types/isuint8.md)
+    * [isvarname](./types/isvarname.md)
 
 
 * [string](./string/README.md)
@@ -597,6 +598,7 @@
     * [now](./time/now.md)
     * [sleep](./time/sleep.md)
     * [tic](./time/tic.md)
+    * [time](./time/time.md)
     * [toc](./time/toc.md)
 
 
@@ -842,3 +844,16 @@
     * [cov](./statistics/cov.md)
     * [mean](./statistics/mean.md)
     * [var](./statistics/var.md)
+
+
+* [validators](./validators/README.md)
+    * [mustBeFinite](./validators/mustBeFinite.md)
+    * [mustBeFloat](./validators/mustBeFloat.md)
+    * [mustBeFolder](./validators/mustBeFolder.md)
+    * [mustBeLogical](./validators/mustBeLogical.md)
+    * [mustBeLogicalScalar](./validators/mustBeLogicalScalar.md)
+    * [mustBeNumeric](./validators/mustBeNumeric.md)
+    * [mustBeScalarOrEmpty](./validators/mustBeScalarOrEmpty.md)
+    * [mustBeTextScalar](./validators/mustBeTextScalar.md)
+    * [mustBeValidVariableName](./validators/mustBeValidVariableName.md)
+    * [mustBeVector](./validators/mustBeVector.md)

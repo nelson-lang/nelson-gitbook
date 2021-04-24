@@ -13,21 +13,26 @@ Shell command execution.
 - status = system(command)
 - status = dos(command)
 - status = unix(command)
+- s = unix(commands, '-parallel')
 - [status, output] = system(command)
 - [status, output] = dos(command)
 - [status, output] = unix(command)
 - [status, output] = system(command, '-echo')
 - [status, output] = dos(command, '-echo')
 - [status, output] = unix(command, '-echo')
+- [s, outputs] = unix(commands, '-parallel')
 
 ## Input argument
 
  - command - a string: command to execute in command shell.
+ - commands - a cell of string or a string array: commands to execute in command shell in parallel.
 
 ## Output argument
 
  - status - an integer value: exit code value of the command.
  - output - a string: output of the command.
+ - s - an matrix of integer value: exit code value of the commands (same dimensions than commands).
+ - output - a string array: output of the commands.
 
 ## Description
 
@@ -44,6 +49,9 @@ Shell command execution.
 ```matlab
 [s,w] = system('dir');
 [s,w] = system('dir','-echo');
+```
+```matlab
+[s,w] = system(["echo hello", "dir", "echo world"]'-parallel')
 ```
 To detach an system command, include the trailing character, &, in the command argument.
 ```matlab

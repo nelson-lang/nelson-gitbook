@@ -9,11 +9,15 @@ Check that an command raises the expected error.
 - assert_checkerror(command, expected_error_message)
 - r = assert_checkerror(command, expected_error_message)
 - [r, msg] = assert_checkerror(command, expected_error_message)
+- assert_checkerror(command, expected_error_message, expected_error_identifier)
+- r = assert_checkerror(command, expected_error_message, expected_error_identifier)
+- [r, msg] = assert_checkerror(command, expected_error_message, expected_error_identifier)
 
 ## Input argument
 
  - command - a string value
- - expected_error_message - a string, the expectederror message.
+ - expected_error_message - a string, the expected error message.
+ - expected_error_identifier - a string, the expected error identifier.
 
 ## Output argument
 
@@ -31,6 +35,9 @@ assert_checkerror('cos', _('Wrong number of input arguments.'));
 ```
 ```matlab
 assert_checkerror('cos', _('Wrong error message.'));
+```
+```matlab
+assert_checkerror('mustBeFinite(NaN)', _('Value must be finite.'), 'Nelson:validators:mustBeFinite')
 ```
 
 ## See also
