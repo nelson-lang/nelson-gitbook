@@ -1,3 +1,45 @@
+# 0.5.5 (2021-05-24)
+
+## Features:
+
+- Validators functions available from Nelson and C++ API (part 2):
+
+  - `mustBeFile`,
+  - `mustBeNonempty`, `mustBeNonNan`, `mustBeNonZero`, `mustBeNonSparse`,
+  - `mustBeA`, `mustBeReal`, `mustBeInteger`, `mustBeNonmissing`,
+  - `mustBePositive`, `mustBeNonpositive`, `mustBeNonnegative`, `mustBeNegative`,
+  - `mustBeGreaterThan`, `mustBeGreaterThanOrEqual`, `mustBeLessThan`,
+  - `mustBeNumericOrLogical`, `mustBeText`, `mustBeNonzeroLengthText`,
+  - `mustBeMember`, `mustBeInRange`.
+
+- `test_run` manages `SEQUENTIAL TEST REQUIRED` and `NATIVE_ARCHITECTURE TEST REQUIRED` tags.
+
+- benchs are executed sequentialy (better bench results).
+
+- `all`, `any` behavior with empty matrix updated.
+
+- extends `all` to manage over all elements.
+
+- `ismember` builtin: Array elements that are members of another array.
+
+- [#439](http://github.com/Nelson-numerical-software/nelson/issues/439): split elementary_functions module and creates operators modules.
+
+## Changed:
+
+- comment symbol is '%'. others previous supported comment symbol removed.
+
+## Bug Fixes:
+
+- [#435](http://github.com/Nelson-numerical-software/nelson/issues/435): `maxNumCompThreads` did not return number of threads but number of cores.
+
+## Compilation:
+
+- Move Windows build to GitHub CI. Appveyor is no more the principal build CI for Windows.
+
+- [#441](http://github.com/Nelson-numerical-software/nelson/issues/441): Circle CI (ArchLinux build) fixed.
+
+- [#357](http://github.com/Nelson-numerical-software/nelson/issues/357): Curl 7.76.1 on Windows.
+
 # 0.5.4 (2021-04-24)
 
 ## Features:

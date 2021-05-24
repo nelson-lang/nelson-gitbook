@@ -35,7 +35,7 @@ R = xor(x, y)
 
 ## See also
 
-[or](../elementary_functions/or.md), [and](../elementary_functions/and.md).
+[or](or.html), [and](and.html).
 ## History
 
 |Version|Description|

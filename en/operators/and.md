@@ -1,13 +1,13 @@
 
 
-# or
+# and
 
-logical 'OR' operator, |
+logical 'AND' operator, &
 
 ## Syntax
 
-- C = or(A, B)
-- C = A | B
+- C = and(A, B)
+- C = A & B
 
 ## Input argument
 
@@ -16,12 +16,12 @@ logical 'OR' operator, |
 
 ## Output argument
 
- - C - result of A | B
+ - C - result of A & B
 
 ## Description
 
 
-  <p><b>C = or(A, B)</b> performs a logical <b>OR</b> operation.</p>
+  <p><b>C = and(A, B)</b> performs a logical <b>AND</b> operation.</p>
 
 
 ## Example
@@ -29,14 +29,14 @@ logical 'OR' operator, |
 ```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
 B = [66 56 0; 11 33 55; -11 0 0]
-C = A | B
-D = or(B, A)
+C = A & B
+D = and(B, A)
 C == D
 ```
 
 ## See also
 
-[and](and.md), [xor](xor.html), [all](all.html), [any](any.html), [not](not.md).
+[or](or.md), [xor](../logical/xor.md), [all](all.html), [any](any.html), [not](not.md).
 ## History
 
 |Version|Description|

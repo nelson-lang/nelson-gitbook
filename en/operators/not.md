@@ -1,37 +1,38 @@
 
 
-# cov
+# not
 
-Covariance
+not logical, ~ operator
 
 ## Syntax
 
-- C = cov(M)
+- C = not(A)
+- C = ~A
 
 ## Input argument
 
- - M - a vector or matrix
+ - A - a variable
 
 ## Output argument
 
- - V - Covariance of M.
+ - C - result of ~A
 
 ## Description
 
 
-  <p><b>C = cov(M)</b> returns the covariance.</p>
+  <p><b>C = not(A)</b> performs not logical ~A.</p>
 
 
 ## Example
 
 ```matlab
-M = [4 -7 3; 1 4 -2; 10 7 9];
-C = cov(M)
+M = false(3, 3);
+~M
 ```
 
 ## See also
 
-[var](var.md), [mean](mean.md).
+[or](or.md), [any](any.html), [all](all.html).
 ## History
 
 |Version|Description|

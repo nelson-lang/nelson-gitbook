@@ -29,7 +29,7 @@ Load a QML file.
 ## Example
 
 ```matlab
-// see examples in [nelsonroot(), '/modules/qml_engine/examples']
+% see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
 
 ## History

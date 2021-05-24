@@ -28,8 +28,8 @@ Set a property value of an QObject handle (set).
 
 ```matlab
 h = errordlg()
-h.visible = false; // or set(h, 'visible', false)
-h.title = 'new title' // or set(h, 'title', 'new title')
+h.visible = false; % or set(h, 'visible', false)
+h.title = 'new title' % or set(h, 'title', 'new title')
 h.visible = true;
 ```
 

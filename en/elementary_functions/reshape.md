@@ -36,7 +36,7 @@ M2 = reshape(M1, 5, [], 4)
 
 ## See also
 
-[colon](colon.md).
+[colon](colon.html).
 ## History
 
 |Version|Description|

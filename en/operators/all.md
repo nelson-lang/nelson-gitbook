@@ -8,11 +8,13 @@ all of the elements of a matrix satisfy some condition.
 
 - R = all(M)
 - R = all(M, dim)
+- R = all(M, 'all')
 
 ## Input argument
 
  - M - a matrix.
  - dim - a integer value: dimension along it works.
+ - 'all' - tests over all elements of M.
 
 ## Output argument
 
@@ -33,7 +35,7 @@ all([33, 22; 11, 0], 2)
 
 ## See also
 
-[any](any.md).
+[any](any.html).
 ## History
 
 |Version|Description|

@@ -23,11 +23,11 @@ Nelson tool to interface C or Fortran functions with Nelson.
 
 NIG_FUNCTION description
 ```matlab
-// Nelson Interface Generator (NIG) example
+% Nelson Interface Generator (NIG) example
 
 NIG_FUNCTION = struct();
 NIG_FUNCTION.NELSON_NAME = 'example_nig_sum';
-NIG_FUNCTION.NELSON_NAMESPACE = 'Example'; // optional
+NIG_FUNCTION.NELSON_NAMESPACE = 'Example'; % optional
 NIG_FUNCTION.MODULE_NAME = 'example';
 NIG_FUNCTION.SYMBOL = 'sum';
 NIG_FUNCTION.LANGUAGE = 'fortran';

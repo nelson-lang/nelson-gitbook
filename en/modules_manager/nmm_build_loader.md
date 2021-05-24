@@ -23,7 +23,7 @@ helper's function to build main loader.nls of an external module
 
 See module skeleton for example
 ```matlab
-// see builder.nls
+% see builder.nls
 ```
 
 ## See also

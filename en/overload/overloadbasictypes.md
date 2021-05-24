@@ -33,7 +33,7 @@ With overloadbasictypes(true), interpreter searchs first an overloaded function.
 By default, overload on basic types is disabled (fast)
 ```matlab
 overloadbasictypes()
-//overloadbasictypes(false);
+%overloadbasictypes(false);
 tic;for i=1:1e5;3 == 3;end;toc()
 ```
 With overload on basic types enabled (slow)
@@ -44,7 +44,7 @@ tic;for i=1:1e5;3 == 3;end;toc()
 
 ## See also
 
-[plus](../elementary_functions/plus.md).
+[plus](plus.html).
 ## History
 
 |Version|Description|

@@ -49,7 +49,7 @@ Inter process communicator.
 master_pid = getpid()
 initial_pids = getpid('available')
 
-// Creates 4 nelsons process
+% Creates 4 nelsons process
 N = 4;
 for i = 1:N
     cmd = sprintf('nelson-gui -e MASTER_PID=%d &', i);
@@ -58,14 +58,14 @@ for i = 1:N
 end
 current_pids = getpid('available')
 
-// wait clients ready
+% wait clients ready
 for p = current_pids
     if p ~= master_pid
         while(~ipc(p, 'isvar', 'MASTER_PID')), sleep(1), end
     end
 end
 
-// Creates random matrix in others Nelson
+% Creates random matrix in others Nelson
 n = 0;
 for p = current_pids
     if p ~= master_pid
@@ -75,7 +75,7 @@ for p = current_pids
     end
 end
 
-// Creates a matrix with matrix from others Nelson
+% Creates a matrix with matrix from others Nelson
 C = [];
 for p = current_pids
     if p ~= master_pid
@@ -85,7 +85,7 @@ for p = current_pids
     end
 end
 
-// close all clients
+% close all clients
 for p = current_pids
     if p ~= master_pid
         ipc(p, 'post', 'exit')

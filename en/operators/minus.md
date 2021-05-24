@@ -40,7 +40,7 @@ ones(0, 0) - 1
 
 ## See also
 
-[plus](plus.html), [uminus](uminus.html).
+[plus](plus.md), [uminus](uminus.md).
 ## History
 
 |Version|Description|

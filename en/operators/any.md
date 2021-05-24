@@ -33,7 +33,7 @@ any([33, 22; 11, 0], 2)
 
 ## See also
 
-[all](all.md).
+[all](all.html).
 ## History
 
 |Version|Description|

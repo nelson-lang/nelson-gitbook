@@ -31,8 +31,8 @@ Loads a C/Fortran symbol for an dynamic library.
 ```matlab
 lib = dlopen([modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()]);
 V = double([1 2;3 4]);
-// C prototype:
-// int dynlibTestMultiplyDoubleArrayWithReturn(double *x, int size)
+% C prototype:
+% int dynlibTestMultiplyDoubleArrayWithReturn(double *x, int size)
 f = dlsym(lib, 'dynlibTestMultiplyDoubleArrayWithReturn', 'int32', {'doublePtr', 'int32'});
 [r1, r2] = dlcall(f, V, int32(numel(V)))
 delete(f);

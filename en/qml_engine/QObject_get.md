@@ -30,8 +30,8 @@ Retrieve a property value from an QObject handle.
 
 ```matlab
 h = errordlg()
-h.visible // or get(h, 'visible')
-h.title // or get(h, 'title')
+h.visible % or get(h, 'visible')
+h.title % or get(h, 'title')
 ```
 
 ## History

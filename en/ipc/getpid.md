@@ -32,13 +32,13 @@ Get nelson(s) Process IDentificator.
 p = getpid()
 getpid('available')
 unix('nelson-gui &')
-sleep(5) // detached process need to wait to see available
+sleep(5) % detached process need to wait to see available
 getpid('available')
 unix('nelson-gui &')
-sleep(5) // detached process need to wait to see available
+sleep(5) % detached process need to wait to see available
 getpid('available')
 unix('nelson-gui &')
-sleep(5) // detached process need to wait to see available
+sleep(5) % detached process need to wait to see available
 getpid('available')
 ```
 

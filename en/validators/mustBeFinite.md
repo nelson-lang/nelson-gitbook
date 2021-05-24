@@ -31,7 +31,7 @@ mustBeFinite(Inf)
 
 ## See also
 
-[isfinite](../elementary_functions/isfinite.md), [isempty](isinteger.html).
+[isfinite](../elementary_functions/isfinite.md), [isempty](../types/isempty.md).
 ## History
 
 |Version|Description|
