@@ -31,7 +31,7 @@ Call a NELSON function and capture error.
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_mexCallMATLABWithTrap.nls'])
+edit([modulepath('mex'), '/tests/test_mexCallMATLABWithTrap.m'])
 ```
 
 ## See also

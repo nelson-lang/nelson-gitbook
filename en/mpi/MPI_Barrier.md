@@ -27,7 +27,7 @@ Blocks until all processes in the communicator have reached this routine.
 [MPI_Initialized](MPI_Initialized.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Barrier.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Barrier.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

@@ -38,11 +38,11 @@ delete(lib);
 ```
 Call C getpid function
 ```matlab
-run([modulepath('dynamic_link'), '/examples/call_c.nls']);
+run([modulepath('dynamic_link'), '/examples/call_c.m']);
 ```
 Call fortran DASUM (blas) function
 ```matlab
-run([modulepath('dynamic_link'), '/examples/call_fortran.nls']);
+run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ```
 
 ## See also

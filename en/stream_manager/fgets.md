@@ -30,7 +30,7 @@ Read string from a file, stopping after a newline, or EOF, or n characters have 
 ## Examples
 
 ```matlab
-fid = fopen([nelsonroot(), '/etc/startup.nls']);
+fid = fopen([nelsonroot(), '/etc/startup.m']);
   tline = fgets(fid);
   while ischar(tline)
   disp(tline)
@@ -40,7 +40,7 @@ fid = fopen([nelsonroot(), '/etc/startup.nls']);
   fclose(fid);
 ```
 ```matlab
-fid = fopen([nelsonroot(), '/etc/startup.nls']);
+fid = fopen([nelsonroot(), '/etc/startup.m']);
 
   tline = fgets(fid, 5);
   while ischar(tline)

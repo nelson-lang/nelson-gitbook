@@ -25,7 +25,7 @@ Checks that input path refers to file.
 
 ```matlab
 mustBeFile(tempdir())
- mustBeFile([nelsonroot(), '/etc/startup.nls'])
+ mustBeFile([nelsonroot(), '/etc/startup.m'])
 ```
 
 ## See also

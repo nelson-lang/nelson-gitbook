@@ -32,7 +32,7 @@ Nonblocking test for a message.
 [MPI_Probe](MPI_Probe.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Iprobe.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Iprobe.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

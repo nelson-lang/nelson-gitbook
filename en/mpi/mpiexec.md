@@ -13,7 +13,7 @@ Run an MPI script.
 
 ## Input argument
 
- - script - an filename with .nls extension.
+ - script - an filename with .m extension.
  - nb_process - an integer value: number of process.
 
 ## Output argument
@@ -33,7 +33,7 @@ Run an MPI script.
 ## Example
 
 ```matlab
-mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.m'], 4)
 ```
 
 ## History

@@ -22,7 +22,7 @@ function declaration.
 
 ## Example
 
-in a file: demo_function.nlf
+in a file: demo_function.m
 ```matlab
 function r = demo_function(a, b)
   r = a + b;

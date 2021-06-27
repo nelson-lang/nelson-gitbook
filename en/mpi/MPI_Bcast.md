@@ -30,7 +30,7 @@ Broadcasts a message from the process with rank "root" to all other processes of
 [MPI_Barrier](MPI_Barrier.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Bcast.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Bcast.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

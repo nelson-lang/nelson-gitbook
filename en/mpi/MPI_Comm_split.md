@@ -29,7 +29,7 @@ Partitions the group that is associated with the specified communicator into a s
 [MPI_Comm_rank](MPI_Comm_rank.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Comm_split.nls'], 10)
+mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Comm_split.m'], 10)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

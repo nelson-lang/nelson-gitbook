@@ -2,7 +2,7 @@
 
 # dlgenerateunloader
 
-Generates unloader.nls file for C++ gateway.
+Generates unloader.m file for C++ gateway.
 
 ## Syntax
 
@@ -10,13 +10,13 @@ Generates unloader.nls file for C++ gateway.
 
 ## Input argument
 
- - destinationdir - a string: destination directory where is generated the unloader.nls file.
+ - destinationdir - a string: destination directory where is generated the unloader.m file.
  - libraryname - a string or a cell of string: external dynamic library names.
 
 ## Description
 
 
-  <p><b>dlgenerateunloader</b> generates a 'unloader.nls' unload external dynamic libraries.</p>
+  <p><b>dlgenerateunloader</b> generates a 'unloader.m' unload external dynamic libraries.</p>
 
 
 ## Example
@@ -24,7 +24,7 @@ Generates unloader.nls file for C++ gateway.
 See module skeleton for example
 ```matlab
 dlgenerateunloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
-text = fileread([tempdir(), 'unloader.nls'])
+text = fileread([tempdir(), 'unloader.m'])
 ```
 
 ## See also

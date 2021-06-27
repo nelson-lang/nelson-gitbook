@@ -40,7 +40,7 @@ R = mean(M, 'native')
 
 ## See also
 
-[sum](../elementary_functions/sum.md), [prod](../elementary_functions/prod.md).
+[sum](sum.html), [prod](prod.html).
 ## History
 
 |Version|Description|

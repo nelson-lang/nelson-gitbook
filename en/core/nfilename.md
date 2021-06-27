@@ -2,6 +2,8 @@
 
 # nfilename
 
+# mfilename
+
 Returns the name of the currently executing file.
 
 ## Syntax
@@ -21,6 +23,7 @@ Returns the name of the currently executing file.
   <p><b>nfilename()</b> called from outside an nlf file returns an empty string.</p>
   <p>With the input argument 'fullpathext', the string includes the directory part of the macro filename, and the filename extension.</p>
   <p>With the input argument 'fullpath', the string includes the directory part of the macro filename, but not the extension.</p>
+  <p><b>mfilename</b> is an alias on <b>nfilename</b> added for basic script compatibility.</p>
 
 
 ## See also

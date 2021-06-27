@@ -49,7 +49,7 @@ Build MEX function
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_engine.nls'])
+edit([modulepath('mex'), '/tests/test_engine.m'])
 ```
 
 ## See also

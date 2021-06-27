@@ -34,15 +34,15 @@ res = webread(url,weboptions('ContentType','json'));
 ```
 More demos
 ```matlab
-edit([modulepath('webtools'),'/examples/webread_demo_1.nls'])
+edit([modulepath('webtools'),'/examples/webread_demo_1.m'])
 ```
 Use function_handle with weboptions and webread
 ```matlab
-edit([modulepath('webtools'),'/examples/webread_demo_2.nls'])
+edit([modulepath('webtools'),'/examples/webread_demo_2.m'])
 ```
 Read data from National Agricultural Statistics Service
 ```matlab
-edit([modulepath('webtools'),'/examples/webread_demo_3.nls'])
+edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
 ```
 
 ## See also

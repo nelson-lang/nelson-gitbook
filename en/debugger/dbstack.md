@@ -30,7 +30,7 @@ call stack.
 
 ## Example
 
-Creates a myfun.nlf and calls it.
+Creates a myfun.m and calls it.
 ```matlab
 function myfun(x)
 dbstack();

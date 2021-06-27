@@ -26,7 +26,7 @@ Returns true is the input argument is a file.
 
 ```matlab
 isfile(nelsonroot())
-isfile([nelsonroot(), '/etc/finish.nls'])
+isfile([nelsonroot(), '/etc/finish.m'])
 ```
 
 ## See also

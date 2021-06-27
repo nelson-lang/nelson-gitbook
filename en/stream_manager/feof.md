@@ -25,7 +25,7 @@ Checks end of file.
 ## Example
 
 ```matlab
-fid = fopen([nelsonroot(), '/etc/startup.nls'], 'rt');
+fid = fopen([nelsonroot(), '/etc/startup.m'], 'rt');
 feof(fid)
 while ~feof(fid)
   tline = fgetl(fid);

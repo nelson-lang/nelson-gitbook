@@ -31,7 +31,7 @@ mustBeNonmissing(["hello" string(NaN)])
 
 ## See also
 
-[ismissing](../elementary_functions/ismissing.md).
+[ismissing](ismissing.html).
 ## History
 
 |Version|Description|

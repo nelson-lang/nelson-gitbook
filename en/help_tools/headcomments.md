@@ -11,7 +11,7 @@ Display Nelson function header comments.
 
 ## Input argument
 
- - function_name - a string: function name or a .nlf filename.
+ - function_name - a string: function name or a .m filename.
 
 ## Output argument
 
@@ -21,7 +21,7 @@ Display Nelson function header comments.
 
 
   <p><b>head_comments</b> displays the function header comments.</p>
-  <p>Comments are read from the associated .nlf file.</p>
+  <p>Comments are read from the associated .m file.</p>
   <p>Nelson predefined functions have no header comments.</p>
 
 

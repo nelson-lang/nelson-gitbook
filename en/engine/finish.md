@@ -7,7 +7,7 @@ User finish file.
 ## Description
 
 
-  <p><b>finish.nls</b> in the preference directory is automatically loaded at exit of  NelSon.</p>
+  <p><b>finish.m</b> in the preference directory is automatically loaded at exit of  NelSon.</p>
 
 
 ## See also

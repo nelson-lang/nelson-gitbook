@@ -21,13 +21,15 @@ core functions
 * [maxNumCompThreads](maxNumCompThreads.md) - Set/Get maximum number of computional threads.
 * [namelengthmax](namelengthmax.md) - Return the maximum variable name length.
 * [nargin](nargin.md) - Returns the number of input arguments.
+* [narginchk](narginchk.md) - Checks the number of input arguments.
 * [nargout](nargout.md) - Returns the number of output arguments.
+* [nargoutchk](nargoutchk.md) - Checks the number of output arguments.
 * [nelsonroot](nelsonroot.md) - Returns Nelson's root folder.
 * [nfilename](nfilename.md) - Returns the name of the currently executing file.
 * [pause](pause.md) - Pauses script execution.
 * [prefdir](prefdir.md) - Return the preferences directory used by Nelson.
 * [quit](quit.md) - Terminate Nelson application
-* [run](run.md) - Executes a script file (.nls).
+* [run](run.md) - Executes a script file (.m).
 * [sha256](sha256.md) - Get sha256 checksum.
 * [version](version.md) - Return the version of Nelson.
 

@@ -42,7 +42,7 @@ ismissing(D)
 
 ## See also
 
-[isfinite](isfinite.md).
+[isfinite](isfinite.html).
 ## History
 
 |Version|Description|

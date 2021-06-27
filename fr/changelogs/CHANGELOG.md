@@ -1,3 +1,43 @@
+# 0.5.6 (2021-06-27)
+
+BREAKING CHANGE:
+
+## Features:
+
+- `function ... endfunction` and `function ... end` are equivalent (increase compatibility ;).
+
+- file extension `.m` is managed by Nelson.
+
+  - About compatibility: scripts and functions developed with Nelson should work with other tools managing .m files. The reciprocal is not necessarily true.
+
+  - `.m` is default and alone file extension.
+
+- module skeleton updated to use to `.m` extension (Please update your code)
+
+- `run` builtin can also evaluate a macro function.
+
+- macro functions also searched in current directory.
+
+- parser cleaned and generated with Bison 3.7.4
+
+- `narginchk` builtin: checks number of input arguments.
+
+- `nargoutchk` builtin: checks number of outnput arguments.
+
+- [#448](http://github.com/Nelson-numerical-software/nelson/issues/448): data analysis module (Code refactoring).
+
+## Bug Fixes:
+
+- `nmm('install', existing_module_directory)` did not work as expected.
+
+- [#451](http://github.com/Nelson-numerical-software/nelson/issues/451): var() returns an unexpected error.
+
+## Compilation:
+
+- [#455](http://github.com/Nelson-numerical-software/nelson/issues/455): M1 macOS apple native support. It works but some gui features can crash due to young Qt support on M1.
+
+- Update fmt library to 8.0.
+
 # 0.5.5 (2021-05-24)
 
 ## Features:

@@ -27,7 +27,7 @@ Register a function to be called when the MEX-file is cleared or when Nelson exi
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_mexAtExit.nls'])
+edit([modulepath('mex'), '/tests/test_mexAtExit.m'])
 ```
 
 ## See also

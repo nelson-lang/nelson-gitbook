@@ -32,7 +32,7 @@ Blocking receive for a message.
 [MPI_Send](MPI_Send.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

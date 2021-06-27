@@ -17,7 +17,7 @@ switch statement.
 
 ## Examples
 
-demo_switch.nlf
+demo_switch.m
 ```matlab
 function c = demo_switch(a)
  switch(a)

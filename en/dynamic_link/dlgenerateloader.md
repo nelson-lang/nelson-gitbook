@@ -2,7 +2,7 @@
 
 # dlgenerateloader
 
-Generates loader.nls file for C++ gateway.
+Generates loader.m file for C++ gateway.
 
 ## Syntax
 
@@ -10,13 +10,13 @@ Generates loader.nls file for C++ gateway.
 
 ## Input argument
 
- - destinationdir - a string: destination directory where is generated the loader.nls file.
+ - destinationdir - a string: destination directory where is generated the loader.m file.
  - libraryname - a string or a cell of string: external dynamic library names.
 
 ## Description
 
 
-  <p><b>dlgenerateloader</b> generates a 'loader.nls' load external dynamic libraries.</p>
+  <p><b>dlgenerateloader</b> generates a 'loader.m' load external dynamic libraries.</p>
 
 
 ## Example
@@ -24,7 +24,7 @@ Generates loader.nls file for C++ gateway.
 See module skeleton for example
 ```matlab
 dlgenerateloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
-text = fileread([tempdir(), 'loader.nls'])
+text = fileread([tempdir(), 'loader.m'])
 ```
 
 ## See also

@@ -7,7 +7,7 @@ User startup file.
 ## Description
 
 
-  <p><b>startup.nls</b> in the preference directory is automatically loaded at startup of NelSon.</p>
+  <p><b>startup.m</b> in the preference directory is automatically loaded at startup of NelSon.</p>
 
 
 ## See also

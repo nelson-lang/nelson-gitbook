@@ -27,7 +27,7 @@ Determines the size of the group associated with a communicator.
 [MPI_Comm_rank](MPI_Comm_rank.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

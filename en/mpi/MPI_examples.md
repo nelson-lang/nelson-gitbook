@@ -15,17 +15,17 @@ Some Nelson MPI examples.
 
 ## Examples
 
-mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 ```matlab
-edit([modulepath('mpi'), '/examples/MPI_helloworld.nls'])
+edit([modulepath('mpi'), '/examples/MPI_helloworld.m'])
 ```
-mpiexec([modulepath('mpi'), '/examples/MPI_simpledemo.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/MPI_simpledemo.m'], 4)
 ```matlab
-edit([modulepath('mpi'), '/examples/MPI_simpledemo.nls'])
+edit([modulepath('mpi'), '/examples/MPI_simpledemo.m'])
 ```
-mpiexec([modulepath('mpi'), '/examples/MPI_parallel_sum.nls'], 40)
+mpiexec([modulepath('mpi'), '/examples/MPI_parallel_sum.m'], 40)
 ```matlab
-edit([modulepath('mpi'), '/examples/MPI_parallel_sum.nls'])
+edit([modulepath('mpi'), '/examples/MPI_parallel_sum.m'])
 ```
 
 ## History

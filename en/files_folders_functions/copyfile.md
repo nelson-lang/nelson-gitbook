@@ -32,8 +32,8 @@ Copy files or folder.
 ## Example
 
 ```matlab
-copyfile([nelsonroot(), '/etc/startup.nls'], [tempdir(), 'startup.nls'])
-[status, msg] = copyfile([nelsonroot(), '/etc/startup.nls'], [tempdir(), 'startup.nls'])
+copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
+[status, msg] = copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 ```
 
 ## See also

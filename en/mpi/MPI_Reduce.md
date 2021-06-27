@@ -33,7 +33,7 @@ Reduces values on all processes to a single value.
 [MPI_Allreduce](MPI_Allreduce.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Reduce.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Reduce.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

@@ -38,7 +38,7 @@ R = prod(M, 'native')
 
 ## See also
 
-[ndims](ndims.md), [sum](sum.md).
+[ndims](ndims.html), [sum](sum.md).
 ## History
 
 |Version|Description|

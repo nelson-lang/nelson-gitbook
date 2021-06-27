@@ -31,7 +31,7 @@ Call a NELSON function
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_mexCallMATLAB.nls'])
+edit([modulepath('mex'), '/tests/test_mexCallMATLAB.m'])
 ```
 
 ## See also

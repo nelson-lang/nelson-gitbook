@@ -29,7 +29,7 @@ Performs a blocking send.
 [MPI_Recv](MPI_Recv.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

@@ -30,10 +30,10 @@ Returns the path, filename and extension of a file path.
 ## Example
 
 ```matlab
-[p, f, e] = fileparts([nelsonroot(), '/etc/finish.nls'])
-p = fileparts([nelsonroot(), '/etc/finish.nls'], 'path')
-f = fileparts([nelsonroot(), '/etc/finish.nls'], 'filename')
-e = fileparts([nelsonroot(), '/etc/finish.nls'], 'extension')
+[p, f, e] = fileparts([nelsonroot(), '/etc/finish.m'])
+p = fileparts([nelsonroot(), '/etc/finish.m'], 'path')
+f = fileparts([nelsonroot(), '/etc/finish.m'], 'filename')
+e = fileparts([nelsonroot(), '/etc/finish.m'], 'extension')
 ```
 
 ## See also

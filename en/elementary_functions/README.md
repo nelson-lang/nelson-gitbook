@@ -40,7 +40,6 @@ elementary functions
 * [isequalto](isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
 * [isfinite](isfinite.md) - Check for finite entries.
 * [isinf](isinf.md) - Check for Infinity entries.
-* [ismissing](ismissing.md) - Check for missing values.
 * [isnan](isnan.md) - Check for Not a Number entries.
 * [istril](istril.md) - Checks if matrix is lower triangular.
 * [istriu](istriu.md) - Checks if matrix is upper triangular.
@@ -53,15 +52,12 @@ elementary functions
 * [log2](log2.md) - dissect floating-point numbers into base 2 exponent and mantissa.
 * [logspace](logspace.md) - logarithmically spaced vector constructor.
 * [magic](magic.md) - Magic square
-* [max](max.md) - Maximum elements of an array.
-* [min](min.md) - Minimum elements of an array.
 * [minus](minus.md) - Subtraction, - operator
 * [mod](mod.md) - Modulus after division.
 * [ndims](ndims.md) - Number of dimensions of an array.
 * [norm](norm.md) - Matrix and vector norms
 * [num2bin](num2bin.md) - Convert number to binary representation.
 * [numel](numel.md) - Number of elements.
-* [prod](prod.md) - Product of array elements.
 * [real](real.md) - Real part of an complex number.
 * [rem](rem.md) - Remainder after division.
 * [repmat](repmat.md) - Replicate and tile an array.
@@ -69,9 +65,7 @@ elementary functions
 * [round](round.md) - Round to nearest integer
 * [sign](sign.md) - Find the sign function of a number.
 * [size](size.md) - Size of an object.
-* [sort](sort.md) - Sort array elements by quick sort algorithm.
 * [sqrt](sqrt.md) - Square root.
-* [sum](sum.md) - Sum of array elements.
 * [swapbytes](swapbytes.md) - Swap byte ordering.
 * [tril](tril.md) - Lower triangular part of matrix
 * [triu](triu.md) - Upper triangular part of matrix

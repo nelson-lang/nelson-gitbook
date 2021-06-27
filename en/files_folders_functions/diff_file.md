@@ -29,8 +29,8 @@ diff two files or strings.
 ## Example
 
 ```matlab
-res = diff_file([nelsonroot(), '/etc/startup.nls'], [nelsonroot(), '/etc/startup.nls'])
-res = diff_file([nelsonroot(), '/etc/startup.nls'], [nelsonroot(), '/etc/finish.nls'])
+res = diff_file([nelsonroot(), '/etc/startup.m'], [nelsonroot(), '/etc/startup.m'])
+res = diff_file([nelsonroot(), '/etc/startup.m'], [nelsonroot(), '/etc/finish.m'])
 ```
 
 ## See also

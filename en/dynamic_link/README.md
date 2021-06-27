@@ -15,11 +15,11 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 * [libpointer datatype](C_datatype.md) - C/Nelson equivalent data types
 * [dlcall](dlcall.md) - C or Fortran Foreign function call.
 * [dlclose](dlclose.md) - Removes dllib object.
-* [dlgeneratecleaner](dlgeneratecleaner.md) - Generates cleaner.nls file for C++ gateway.
+* [dlgeneratecleaner](dlgeneratecleaner.md) - Generates cleaner.m file for C++ gateway.
 * [dlgenerategateway](dlgenerategateway.md) - Generates C++ gateway.
-* [dlgenerateloader](dlgenerateloader.md) - Generates loader.nls file for C++ gateway.
+* [dlgenerateloader](dlgenerateloader.md) - Generates loader.m file for C++ gateway.
 * [dlgeneratemake](dlgeneratemake.md) - Generates a makefile for building a dynamic library.
-* [dlgenerateunloader](dlgenerateunloader.md) - Generates unloader.nls file for C++ gateway.
+* [dlgenerateunloader](dlgenerateunloader.md) - Generates unloader.m file for C++ gateway.
 * [dllibinfo](dllibinfo.md) - Returns list of available symbols in an shared library.
 * [dllibisloaded](dllibisloaded.md) - Checks if shared library is loaded.
 * [dllib_used](dllib_used.md) - Returns list of current used dllib handle.

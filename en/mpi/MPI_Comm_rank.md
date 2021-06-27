@@ -27,7 +27,7 @@ Determines the rank of the calling process in the communicator.
 [MPI_Comm_size](MPI_Comm_size.md).
 ## Example
 
-mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.nls'], 4)
+mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();

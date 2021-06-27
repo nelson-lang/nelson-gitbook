@@ -2,7 +2,7 @@
 
 # nmm_build_loader
 
-helper's function to build main loader.nls of an external module
+helper's function to build main loader.m of an external module
 
 ## Syntax
 
@@ -16,14 +16,14 @@ helper's function to build main loader.nls of an external module
 ## Description
 
 
-  <p><b>nmm_build_loader</b> generates main loader.nls of an external module.</p>
+  <p><b>nmm_build_loader</b> generates main loader.m of an external module.</p>
 
 
 ## Example
 
 See module skeleton for example
 ```matlab
-% see builder.nls
+% see builder.m
 ```
 
 ## See also

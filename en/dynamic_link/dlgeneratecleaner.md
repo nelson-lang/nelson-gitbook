@@ -2,7 +2,7 @@
 
 # dlgeneratecleaner
 
-Generates cleaner.nls file for C++ gateway.
+Generates cleaner.m file for C++ gateway.
 
 ## Syntax
 
@@ -11,13 +11,13 @@ Generates cleaner.nls file for C++ gateway.
 
 ## Input argument
 
- - destinationdir - a string: destination directory where is generated the cleaner.nls file.
+ - destinationdir - a string: destination directory where is generated the cleaner.m file.
  - files - a string or a cell of string: list of files to delete.
 
 ## Description
 
 
-  <p><b>dlgeneratecleaner</b> generates a 'cleaner.nls' to remove files.</p>
+  <p><b>dlgeneratecleaner</b> generates a 'cleaner.m' to remove files.</p>
 
 
 ## Example
@@ -25,7 +25,7 @@ Generates cleaner.nls file for C++ gateway.
 See module skeleton for example
 ```matlab
 dlgeneratecleaner(tempdir());
-text = fileread([tempdir(), 'cleaner.nls'])
+text = fileread([tempdir(), 'cleaner.m'])
 ```
 
 ## See also
