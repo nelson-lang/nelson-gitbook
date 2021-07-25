@@ -5,6 +5,7 @@
     * [feval](feval.md)
     * [isbuiltin](isbuiltin.md)
     * [ismacro](ismacro.md)
+    * [ismex](ismex.md)
     * [macroargs](macroargs.md)
     * [path](path.md)
     * [rehash](rehash.md)

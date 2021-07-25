@@ -14,6 +14,7 @@ functions manager
 * [feval](feval.md) - Evaluates function.
 * [isbuiltin](isbuiltin.md) - Check for the existence of a builtin.
 * [ismacro](ismacro.md) - Check for the existence of a macro (function).
+* [ismex](ismex.md) - Check for the existence of a mex function.
 * [macroargs](macroargs.md) - Returns variables names of a function.
 * [path](path.md) - Modify or display Nelson’s load path.
 * [rehash](rehash.md) - Reinitialize Nelson’s search path directory cache.

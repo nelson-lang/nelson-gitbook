@@ -13,4 +13,5 @@
     * [mexAtExit](mexAtExit.md)
     * [mexCallMATLAB](mexCallMATLAB.md)
     * [mexCallMATLABWithTrap](mexCallMATLABWithTrap.md)
+    * [mexext](mexext.md)
 

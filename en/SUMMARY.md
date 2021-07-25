@@ -62,6 +62,7 @@
     * [feval](./functions_manager/feval.md)
     * [isbuiltin](./functions_manager/isbuiltin.md)
     * [ismacro](./functions_manager/ismacro.md)
+    * [ismex](./functions_manager/ismex.md)
     * [macroargs](./functions_manager/macroargs.md)
     * [path](./functions_manager/path.md)
     * [rehash](./functions_manager/rehash.md)
@@ -225,6 +226,8 @@
 
 
 * [data_analysis](./data_analysis/README.md)
+    * [conv](./data_analysis/conv.md)
+    * [conv2](./data_analysis/conv2.md)
     * [ismissing](./data_analysis/ismissing.md)
     * [max](./data_analysis/max.md)
     * [min](./data_analysis/min.md)
@@ -836,6 +839,7 @@
     * [mexAtExit](./mex/mexAtExit.md)
     * [mexCallMATLAB](./mex/mexCallMATLAB.md)
     * [mexCallMATLABWithTrap](./mex/mexCallMATLABWithTrap.md)
+    * [mexext](./mex/mexext.md)
 
 
 * [graphics](./graphics/README.md)

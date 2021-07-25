@@ -1,4 +1,6 @@
 * [data_analysis](README.md)
+    * [conv](conv.md)
+    * [conv2](conv2.md)
     * [ismissing](ismissing.md)
     * [max](max.md)
     * [min](min.md)
