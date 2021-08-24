@@ -1,3 +1,35 @@
+# 0.5.8 (2021-08-25)
+
+## Features:
+
+- `test_run` displays errors with file and line number.
+
+- CTRL-C throws an error.
+
+- some warnings detected by LGTM or VS fixed.
+
+- allows .m file empty to be called.
+
+- [#477](http://github.com/Nelson-numerical-software/nelson/issues/477): update files watcher algo.
+
+- [#489](http://github.com/Nelson-numerical-software/nelson/issues/489): display builtin and associated overload.
+
+- [#490](http://github.com/Nelson-numerical-software/nelson/issues/490): update default prompt.
+
+## Bug Fixes:
+
+- [#480](http://github.com/Nelson-numerical-software/nelson/issues/480): publisher name updated for windows installer.
+
+- [#483](http://github.com/Nelson-numerical-software/nelson/issues/483): extern modules no more build if boost not available.
+
+- [#486](http://github.com/Nelson-numerical-software/nelson/issues/486): `inmem` help was missing.
+
+- [#464](http://github.com/Nelson-numerical-software/nelson/issues/464): simplify macos build (catalina & BigSur support only).
+
+- [#499](http://github.com/Nelson-numerical-software/nelson/issues/499): rename `getContentAsUnsignedInt64Scalar` to `getContentAsUnsignedInteger64Scalar`.
+
+- [#495](http://github.com/Nelson-numerical-software/nelson/issues/495): some mtimes call failed.
+
 # 0.5.7 (2021-07-24)
 
 ## Features:

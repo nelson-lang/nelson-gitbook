@@ -1,5 +1,7 @@
 * [stream_manager](README.md)
     * [diary](diary.md)
+    * [disp](disp.md)
+    * [display](display.md)
     * [dlmwrite](dlmwrite.md)
     * [fclose](fclose.md)
     * [feof](feof.md)

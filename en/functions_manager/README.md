@@ -12,6 +12,7 @@ functions manager
 * [builtin](builtin.md) - Executes built-in function.
 * [clearfun](clearfun.md) - Clear an built-in function.
 * [feval](feval.md) - Evaluates function.
+* [inmem](inmem.md) - Names of functions, MEX-files.
 * [isbuiltin](isbuiltin.md) - Check for the existence of a builtin.
 * [ismacro](ismacro.md) - Check for the existence of a macro (function).
 * [ismex](ismex.md) - Check for the existence of a mex function.

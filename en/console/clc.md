@@ -23,7 +23,7 @@ clc()
 
 ## See also
 
-[disp](../elementary_functions/disp.md).
+[disp](disp.html).
 ## History
 
 |Version|Description|

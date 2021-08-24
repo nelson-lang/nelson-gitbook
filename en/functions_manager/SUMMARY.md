@@ -3,6 +3,7 @@
     * [builtin](builtin.md)
     * [clearfun](clearfun.md)
     * [feval](feval.md)
+    * [inmem](inmem.md)
     * [isbuiltin](isbuiltin.md)
     * [ismacro](ismacro.md)
     * [ismex](ismex.md)

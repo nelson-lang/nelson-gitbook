@@ -12,7 +12,6 @@
     * [dec2base](dec2base.md)
     * [dec2bin](dec2bin.md)
     * [dec2hex](dec2hex.md)
-    * [disp](disp.md)
     * [exp](exp.md)
     * [factorial](factorial.md)
     * [find](find.md)

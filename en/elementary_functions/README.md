@@ -21,7 +21,6 @@ elementary functions
 * [dec2base](dec2base.md) - Convert decimal number to another base.
 * [dec2bin](dec2bin.md) - Convert decimal number to base 2.
 * [dec2hex](dec2hex.md) - Convert decimal number to base 16.
-* [disp](disp.md) - Display a variable.
 * [exp](exp.md) - Exponential
 * [factorial](factorial.md) - Factorial function
 * [find](find.md) - Find Non-zero Elements

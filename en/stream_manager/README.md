@@ -9,6 +9,8 @@ stream functions
 
 
 * [diary](diary.md) - Diary of a session.
+* [disp](disp.md) - Display a variable.
+* [display](display.md) - Show information about variable or result of expression.
 * [dlmwrite](dlmwrite.md) - Write an numeric matrix to a text file file using a delimiter.
 * [fclose](fclose.md) - Close an opened file.
 * [feof](feof.md) - Checks end of file.
