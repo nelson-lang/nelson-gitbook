@@ -9,6 +9,7 @@
     * [deblank](deblank.md)
     * [endsWith](endsWith.md)
     * [int2str](int2str.md)
+    * [isStringScalar](isStringScalar.md)
     * [mat2str](mat2str.md)
     * [matches](matches.md)
     * [newline](newline.md)

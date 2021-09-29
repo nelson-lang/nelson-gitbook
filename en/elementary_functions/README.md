@@ -32,6 +32,7 @@ elementary functions
 * [floor](floor.md) - Round down
 * [hex2dec](hex2dec.md) - Convert number in base 16 to decimal.
 * [imag](imag.md) - Imaginary part of an complex number.
+* [ind2sub](ind2sub.md) - Linear index to matrix subscript values
 * [isapprox](isapprox.md) - Return true if arguments are approximately equal, within the precision.
 * [istriu](isdiag.md) - Checks if matrix is diagonal.
 * [isequal](isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
@@ -51,6 +52,7 @@ elementary functions
 * [log2](log2.md) - dissect floating-point numbers into base 2 exponent and mantissa.
 * [logspace](logspace.md) - logarithmically spaced vector constructor.
 * [magic](magic.md) - Magic square
+* [meshgrid](meshgrid.md) - Cartesian rectangular grid in 2-D or 3-D.
 * [minus](minus.md) - Subtraction, - operator
 * [mod](mod.md) - Modulus after division.
 * [ndims](ndims.md) - Number of dimensions of an array.
@@ -65,6 +67,7 @@ elementary functions
 * [sign](sign.md) - Find the sign function of a number.
 * [size](size.md) - Size of an object.
 * [sqrt](sqrt.md) - Square root.
+* [sub2ind](sub2ind.md) - Matrix subscript values to linear index
 * [swapbytes](swapbytes.md) - Swap byte ordering.
 * [tril](tril.md) - Lower triangular part of matrix
 * [triu](triu.md) - Upper triangular part of matrix

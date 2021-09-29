@@ -18,6 +18,7 @@ string type functions
 * [deblank](deblank.md) - Remove trailing whitespace.
 * [endsWith](endsWith.md) - checks if string ends with pattern.
 * [int2str](int2str.md) - Convert an integer array to a string
+* [isStringScalar](isStringScalar.md) - checks if input is string array with one element.
 * [mat2str](mat2str.md) - Matrix to String.
 * [matches](matches.md) - Determine if pattern matches with strings.
 * [newline](newline.md) - Returns a newline character.

@@ -1,3 +1,34 @@
+# 0.5.9 (2021-09-29)
+
+- `leapyear` function: determine leap year.
+
+- `meshgrid` function: Cartesian rectangular grid in 2-D or 3-D.
+
+- `sub2ind` function: linear index to matrix subscript values.
+
+- `ind2sub` function: matrix subscript values to linear index.
+
+- [#518](http://github.com/Nelson-numerical-software/nelson/issues/518): `isStringScalar` checks if input is string array with one element.
+
+- [#516](http://github.com/Nelson-numerical-software/nelson/issues/516): `ind = 2; ind(false)` logical extraction on scalar should return empty matrix.
+
+- [#514](http://github.com/Nelson-numerical-software/nelson/issues/514): `C{3} = 4` should create a cell with good dimensions.
+
+- [#512](http://github.com/Nelson-numerical-software/nelson/issues/512): Assign must not change left assign type when it is possible.
+
+- [#509](http://github.com/Nelson-numerical-software/nelson/issues/509): horzcat vertcat generic support for class object.
+
+- [#508](http://github.com/Nelson-numerical-software/nelson/issues/508): Change default seed for 'rand' with Mersenne Twister algo.
+
+- [#506](http://github.com/Nelson-numerical-software/nelson/issues/506): Modernize windows installer style.
+
+## Compilation:
+
+- [#496](http://github.com/Nelson-numerical-software/nelson/issues/496): Eigen 3.4 used.
+
+- [#503](http://github.com/Nelson-numerical-software/nelson/issues/503): Boost 1.77 support (default on Windows).
+
+
 # 0.5.8 (2021-08-25)
 
 ## Features:
