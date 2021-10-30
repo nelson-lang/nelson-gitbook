@@ -1,3 +1,25 @@
+# 0.5.10 (2021-10-30)
+
+- Polynomial functions:
+
+  - `poly`: Polynomial with specified roots or characteristic polynomial.
+  - `roots`: Polynomial roots.
+  - `polyval`: Polynomial evaluation.
+  - `polyvalm`: Matrix polynomial evaluation.
+  - `polyint`: Polynomial integration.
+  - `polyfit`: Polynomial curve fitting.
+  - `polyder`: Polynomial differentiation.
+
+- `pinv`: Moore-Penrose pseudoinverse.
+
+- [#520](http://github.com/Nelson-numerical-software/nelson/issues/520): `inputname` get variable name of function input.
+
+- [#525](http://github.com/Nelson-numerical-software/nelson/issues/525): use [`fast_float`](https://github.com/fastfloat/fast_float) library to parse numbers .
+
+- [#528](http://github.com/Nelson-numerical-software/nelson/issues/528): Assignment in cell did not work in this case `[c{:}] = ind2sub (dv, i)`
+
+- [#534](http://github.com/Nelson-numerical-software/nelson/issues/534): `diag(ones(0, 1), -1)` did not return zero as result.
+
 # 0.5.9 (2021-09-29)
 
 - `leapyear` function: determine leap year.
@@ -27,7 +49,6 @@
 - [#496](http://github.com/Nelson-numerical-software/nelson/issues/496): Eigen 3.4 used.
 
 - [#503](http://github.com/Nelson-numerical-software/nelson/issues/503): Boost 1.77 support (default on Windows).
-
 
 # 0.5.8 (2021-08-25)
 

@@ -59,6 +59,7 @@ elementary functions
 * [norm](norm.md) - Matrix and vector norms
 * [num2bin](num2bin.md) - Convert number to binary representation.
 * [numel](numel.md) - Number of elements.
+* [pinv](pinv.md) - Moore-Penrose pseudoinverse
 * [real](real.md) - Real part of an complex number.
 * [rem](rem.md) - Remainder after division.
 * [repmat](repmat.md) - Replicate and tile an array.

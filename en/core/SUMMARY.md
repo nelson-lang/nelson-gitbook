@@ -8,6 +8,7 @@
     * [exist](exist.md)
     * [exit](exit.md)
     * [format](format.md)
+    * [inputname](inputname.md)
     * [license](license.md)
     * [maxNumCompThreads](maxNumCompThreads.md)
     * [namelengthmax](namelengthmax.md)
