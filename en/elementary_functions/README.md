@@ -31,8 +31,10 @@ elementary functions
 * [flipud](flipud.md) - Flip order of elements up to dow
 * [floor](floor.md) - Round down
 * [hex2dec](hex2dec.md) - Convert number in base 16 to decimal.
+* [hilb](hilb.md) - Hilbert matrix
 * [imag](imag.md) - Imaginary part of an complex number.
 * [ind2sub](ind2sub.md) - Linear index to matrix subscript values
+* [invhilb](invhilb.md) - Inverse of Hilbert matrix
 * [isapprox](isapprox.md) - Return true if arguments are approximately equal, within the precision.
 * [istriu](isdiag.md) - Checks if matrix is diagonal.
 * [isequal](isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
@@ -40,6 +42,7 @@ elementary functions
 * [isequalto](isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
 * [isfinite](isfinite.md) - Check for finite entries.
 * [isinf](isinf.md) - Check for Infinity entries.
+* [ismatrix](ismatrix.md) - determines whether input is matrix or not
 * [isnan](isnan.md) - Check for Not a Number entries.
 * [istril](istril.md) - Checks if matrix is lower triangular.
 * [istriu](istriu.md) - Checks if matrix is upper triangular.
@@ -68,6 +71,7 @@ elementary functions
 * [sign](sign.md) - Find the sign function of a number.
 * [size](size.md) - Size of an object.
 * [sqrt](sqrt.md) - Square root.
+* [squeeze](squeeze.md) - Remove dimensions of length 1.
 * [sub2ind](sub2ind.md) - Matrix subscript values to linear index
 * [swapbytes](swapbytes.md) - Swap byte ordering.
 * [tril](tril.md) - Lower triangular part of matrix

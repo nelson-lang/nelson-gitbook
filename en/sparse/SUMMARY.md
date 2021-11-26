@@ -4,4 +4,5 @@
     * [nnz](nnz.md)
     * [nzmax](nzmax.md)
     * [sparse](sparse.md)
+    * [speye](speye.md)
 

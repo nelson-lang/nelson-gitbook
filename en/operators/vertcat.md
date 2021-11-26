@@ -41,7 +41,7 @@ C = vertcat(A, B)
 
 ## See also
 
-[horzcat](horzcat.md).
+[horzcat](horzcat.md), [cat](cat.md).
 ## History
 
 |Version|Description|

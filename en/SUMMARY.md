@@ -132,6 +132,7 @@
     * [all](./operators/all.md)
     * [and](./operators/and.md)
     * [any](./operators/any.md)
+    * [cat](./operators/cat.md)
     * [colon](./operators/colon.md)
     * [ctranspose](./operators/ctranspose.md)
     * [eq](./operators/eq.md)
@@ -187,8 +188,10 @@
     * [flipud](./elementary_functions/flipud.md)
     * [floor](./elementary_functions/floor.md)
     * [hex2dec](./elementary_functions/hex2dec.md)
+    * [hilb](./elementary_functions/hilb.md)
     * [imag](./elementary_functions/imag.md)
     * [ind2sub](./elementary_functions/ind2sub.md)
+    * [invhilb](./elementary_functions/invhilb.md)
     * [isapprox](./elementary_functions/isapprox.md)
     * [istriu](./elementary_functions/isdiag.md)
     * [isequal](./elementary_functions/isequal.md)
@@ -196,6 +199,7 @@
     * [isequalto](./elementary_functions/isequalto.md)
     * [isfinite](./elementary_functions/isfinite.md)
     * [isinf](./elementary_functions/isinf.md)
+    * [ismatrix](./elementary_functions/ismatrix.md)
     * [isnan](./elementary_functions/isnan.md)
     * [istril](./elementary_functions/istril.md)
     * [istriu](./elementary_functions/istriu.md)
@@ -224,6 +228,7 @@
     * [sign](./elementary_functions/sign.md)
     * [size](./elementary_functions/size.md)
     * [sqrt](./elementary_functions/sqrt.md)
+    * [squeeze](./elementary_functions/squeeze.md)
     * [sub2ind](./elementary_functions/sub2ind.md)
     * [swapbytes](./elementary_functions/swapbytes.md)
     * [tril](./elementary_functions/tril.md)
@@ -352,6 +357,7 @@
     * [nnz](./sparse/nnz.md)
     * [nzmax](./sparse/nzmax.md)
     * [sparse](./sparse/sparse.md)
+    * [speye](./sparse/speye.md)
 
 
 * [logical](./logical/README.md)
@@ -557,6 +563,7 @@
 
 * [linear_algebra](./linear_algebra/README.md)
     * [chol](./linear_algebra/chol.md)
+    * [cond](./linear_algebra/cond.md)
     * [det](./linear_algebra/det.md)
     * [eig](./linear_algebra/eig.md)
     * [expm](./linear_algebra/expm.md)
@@ -564,6 +571,7 @@
     * [ishermitian](./linear_algebra/ishermitian.md)
     * [issymmetric](./linear_algebra/issymmetric.md)
     * [logm](./linear_algebra/logm.md)
+    * [rank](./linear_algebra/rank.md)
     * [rcond](./linear_algebra/rcond.md)
     * [schur](./linear_algebra/schur.md)
     * [sqrtm](./linear_algebra/sqrtm.md)
@@ -627,6 +635,7 @@
 * [random](./random/README.md)
     * [rand](./random/rand.md)
     * [randn](./random/randn.md)
+    * [randperm](./random/randperm.md)
     * [rng](./random/rng.md)
 
 

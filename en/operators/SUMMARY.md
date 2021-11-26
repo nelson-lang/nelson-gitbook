@@ -2,6 +2,7 @@
     * [all](all.md)
     * [and](and.md)
     * [any](any.md)
+    * [cat](cat.md)
     * [colon](colon.md)
     * [ctranspose](ctranspose.md)
     * [eq](eq.md)

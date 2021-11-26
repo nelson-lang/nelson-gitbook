@@ -11,6 +11,7 @@ Operators
 * [all](all.md) - all of the elements of a matrix satisfy some condition.
 * [and](and.md) - logical 'AND' operator, &
 * [any](any.md) - any of the elements of a matrix satisfy some condition.
+* [cat](cat.md) - Concatenate arrays.
 * [colon](colon.md) - colon operator ':'.
 * [ctranspose](ctranspose.md) - Returns complex conjugate transpose: ' operator.
 * [eq](eq.md) - equality, == operator.

@@ -31,7 +31,7 @@ r = rcond(X);
 
 ## See also
 
-[inv](inv.md).
+[inv](inv.md), [cond](cond.md).
 ## History
 
 |Version|Description|
