@@ -30,12 +30,14 @@ elementary functions
 * [fliplr](fliplr.md) - Flip order of elements left to right
 * [flipud](flipud.md) - Flip order of elements up to dow
 * [floor](floor.md) - Round down
+* [hankel](hankel.md) - Hankel matrix
 * [hex2dec](hex2dec.md) - Convert number in base 16 to decimal.
 * [hilb](hilb.md) - Hilbert matrix
 * [imag](imag.md) - Imaginary part of an complex number.
 * [ind2sub](ind2sub.md) - Linear index to matrix subscript values
 * [invhilb](invhilb.md) - Inverse of Hilbert matrix
 * [isapprox](isapprox.md) - Return true if arguments are approximately equal, within the precision.
+* [iscolumn](iscolumn.md) - Determine whether input is column vector.
 * [istriu](isdiag.md) - Checks if matrix is diagonal.
 * [isequal](isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
 * [isequaln](isequaln.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
@@ -44,6 +46,7 @@ elementary functions
 * [isinf](isinf.md) - Check for Infinity entries.
 * [ismatrix](ismatrix.md) - determines whether input is matrix or not
 * [isnan](isnan.md) - Check for Not a Number entries.
+* [isrow](isrow.md) - Determine whether input is row vector.
 * [istril](istril.md) - Checks if matrix is lower triangular.
 * [istriu](istriu.md) - Checks if matrix is upper triangular.
 * [isvector](isvector.md) - Checks input is vector.

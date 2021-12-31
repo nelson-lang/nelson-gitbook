@@ -187,12 +187,14 @@
     * [fliplr](./elementary_functions/fliplr.md)
     * [flipud](./elementary_functions/flipud.md)
     * [floor](./elementary_functions/floor.md)
+    * [hankel](./elementary_functions/hankel.md)
     * [hex2dec](./elementary_functions/hex2dec.md)
     * [hilb](./elementary_functions/hilb.md)
     * [imag](./elementary_functions/imag.md)
     * [ind2sub](./elementary_functions/ind2sub.md)
     * [invhilb](./elementary_functions/invhilb.md)
     * [isapprox](./elementary_functions/isapprox.md)
+    * [iscolumn](./elementary_functions/iscolumn.md)
     * [istriu](./elementary_functions/isdiag.md)
     * [isequal](./elementary_functions/isequal.md)
     * [isequaln](./elementary_functions/isequaln.md)
@@ -201,6 +203,7 @@
     * [isinf](./elementary_functions/isinf.md)
     * [ismatrix](./elementary_functions/ismatrix.md)
     * [isnan](./elementary_functions/isnan.md)
+    * [isrow](./elementary_functions/isrow.md)
     * [istril](./elementary_functions/istril.md)
     * [istriu](./elementary_functions/istriu.md)
     * [isvector](./elementary_functions/isvector.md)
@@ -248,8 +251,10 @@
 
 * [special_functions](./special_functions/README.md)
     * [betainc](./special_functions/betainc.md)
+    * [factor](./special_functions/factor.md)
     * [gamma](./special_functions/gamma.md)
     * [gcd](./special_functions/gcd.md)
+    * [primes](./special_functions/primes.md)
 
 
 * [constructors_functions](./constructors_functions/README.md)
