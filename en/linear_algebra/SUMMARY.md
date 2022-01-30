@@ -10,6 +10,7 @@
     * [logm](logm.md)
     * [rank](rank.md)
     * [rcond](rcond.md)
+    * [rsf2csf](rsf2csf.md)
     * [schur](schur.md)
     * [sqrtm](sqrtm.md)
     * [svd](svd.md)

@@ -23,7 +23,7 @@ clc()
 
 ## See also
 
-[disp](disp.html).
+[disp](../display_format/disp.md).
 ## History
 
 |Version|Description|

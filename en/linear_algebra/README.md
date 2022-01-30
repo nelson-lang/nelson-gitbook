@@ -19,6 +19,7 @@ linear algebra functions
 * [logm](logm.md) - Computes the matrix logarithm of a square matrix.
 * [rank](rank.md) - Rank of matrix.
 * [rcond](rcond.md) - Inverse condition number.
+* [rsf2csf](rsf2csf.md) - Convert real Schur form to complex Schur form.
 * [schur](schur.md) - Schur decomposition.
 * [sqrtm](sqrtm.md) - Computes the matrix square root of a square matrix.
 * [svd](svd.md) - Singular Value Decomposition.

@@ -33,6 +33,7 @@ elementary functions
 * [hankel](hankel.md) - Hankel matrix
 * [hex2dec](hex2dec.md) - Convert number in base 16 to decimal.
 * [hilb](hilb.md) - Hilbert matrix
+* [hypot](hypot.md) - Square root of sum of squares
 * [imag](imag.md) - Imaginary part of an complex number.
 * [ind2sub](ind2sub.md) - Linear index to matrix subscript values
 * [invhilb](invhilb.md) - Inverse of Hilbert matrix

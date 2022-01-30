@@ -24,6 +24,7 @@
     * [hankel](hankel.md)
     * [hex2dec](hex2dec.md)
     * [hilb](hilb.md)
+    * [hypot](hypot.md)
     * [imag](imag.md)
     * [ind2sub](ind2sub.md)
     * [invhilb](invhilb.md)

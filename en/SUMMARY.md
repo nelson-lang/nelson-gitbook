@@ -30,14 +30,12 @@
 
 * [core](./core/README.md)
     * [banner](./core/banner.md)
-    * [echo](./core/echo.md)
     * [eval](./core/eval.md)
     * [evalc](./core/evalc.md)
     * [evalin](./core/evalin.md)
     * [execstr](./core/execstr.md)
     * [exist](./core/exist.md)
     * [exit](./core/exit.md)
-    * [format](./core/format.md)
     * [inputname](./core/inputname.md)
     * [license](./core/license.md)
     * [maxNumCompThreads](./core/maxNumCompThreads.md)
@@ -190,6 +188,7 @@
     * [hankel](./elementary_functions/hankel.md)
     * [hex2dec](./elementary_functions/hex2dec.md)
     * [hilb](./elementary_functions/hilb.md)
+    * [hypot](./elementary_functions/hypot.md)
     * [imag](./elementary_functions/imag.md)
     * [ind2sub](./elementary_functions/ind2sub.md)
     * [invhilb](./elementary_functions/invhilb.md)
@@ -375,6 +374,7 @@
 * [data_structures](./data_structures/README.md)
     * [cell](./data_structures/cell.md)
     * [cell2struct](./data_structures/cell2struct.md)
+    * [celldisp](./data_structures/celldisp.md)
     * [cellfun](./data_structures/cellfun.md)
     * [cellstr](./data_structures/cellstr.md)
     * [fieldnames](./data_structures/fieldnames.md)
@@ -494,8 +494,6 @@
 
 * [stream_manager](./stream_manager/README.md)
     * [diary](./stream_manager/diary.md)
-    * [disp](./stream_manager/disp.md)
-    * [display](./stream_manager/display.md)
     * [dlmwrite](./stream_manager/dlmwrite.md)
     * [fclose](./stream_manager/fclose.md)
     * [feof](./stream_manager/feof.md)
@@ -515,6 +513,13 @@
     * [fwrite](./stream_manager/fwrite.md)
     * [load](./stream_manager/load.md)
     * [save](./stream_manager/save.md)
+
+
+* [display_format](./display_format/README.md)
+    * [disp](./display_format/disp.md)
+    * [display](./display_format/display.md)
+    * [echo](./display_format/echo.md)
+    * [format](./display_format/format.md)
 
 
 * [hdf5](./hdf5/README.md)
@@ -578,6 +583,7 @@
     * [logm](./linear_algebra/logm.md)
     * [rank](./linear_algebra/rank.md)
     * [rcond](./linear_algebra/rcond.md)
+    * [rsf2csf](./linear_algebra/rsf2csf.md)
     * [schur](./linear_algebra/schur.md)
     * [sqrtm](./linear_algebra/sqrtm.md)
     * [svd](./linear_algebra/svd.md)
