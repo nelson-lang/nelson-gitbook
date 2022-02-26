@@ -33,7 +33,7 @@ function r = test_persistent_function()
  disp(['nb calls to test_persistent_function: ', int2str(calls)]);
  r= calls;
  calls = calls + 1;
-endfunction
+end
 ```
 calls test_persistent_function
 ```matlab

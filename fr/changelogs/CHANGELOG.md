@@ -4,6 +4,46 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.2 (2022-02-26)
+
+### Changed
+
+- [#576](http://github.com/Nelson-numerical-software/nelson/issues/575): C++17 Compiler required to build Nelson.
+
+- [#581](http://github.com/Nelson-numerical-software/nelson/issues/581): Github CI platforms list extended (ArchLinux, Fedora, Ubuntu 18.04, MacOs BigSur).
+
+- [#539](http://github.com/Nelson-numerical-software/nelson/issues/539): Visual studio 2022 build on Windows
+
+  - Visual studio 2022 solution upgraded,
+  - Github CI and Appveyor use VS 2022 image,
+  - boost 1.78 (VS 2022 x86, x64 build),
+  - Eigen 3.4 stable branch (Feb 06/22),
+  - MSVC 2022 support added to build C/C++ code easily "on fly" on Windows,
+  - slicot 5.0 (VS 2022 x86, x64 build),
+  - libffi (VS 2022 x86, x64 build),
+  - taglib 1.12 (VS 2022 x86, x64 build),
+  - hdf5 1.12.1 (VS 2022 x86, x64 build),
+  - matio 1.5.21 (VS 2022 x86, x64 build),
+  - all others windows dependencies rebuilt with VS 2022.
+  - [#505](http://github.com/Nelson-numerical-software/nelson/issues/505): libCurl 7.81 on Windows.
+  - [#524](http://github.com/Nelson-numerical-software/nelson/issues/524): oneApi 2022.1 on Windows.
+
+### Added
+
+- Nelson uses `JuliaMono-Regular` font as default.
+- [#567](http://github.com/Nelson-numerical-software/nelson/issues/567): `...` in cells if character vector is too long.
+
+### Fixed
+
+- [#587](http://github.com/Nelson-numerical-software/nelson/issues/587): implicit cast to string array for horzcat and vertcat operators.
+- [#562](http://github.com/Nelson-numerical-software/nelson/issues/562): `format long` complex do not display expected precision.
+- scale factor for integer values did not display as expected.
+- [#561](http://github.com/Nelson-numerical-software/nelson/issues/561): `0^0` did not return expected value.
+- [#560](http://github.com/Nelson-numerical-software/nelson/issues/560): many warnings fixed (Thanks to new PVS-Studio and cppcheck).
+- cmake `WITH_SLICOT`, `WITH_FFTW`, `ENABLE_CLANG_TIDY_FIX` were not documented.
+- [#584](http://github.com/Nelson-numerical-software/nelson/issues/584): docker files updated to support C++17 and new libraries.
+- [#591](http://github.com/Nelson-numerical-software/nelson/issues/591): Innosetup display glitch with `Nelson's website` button.
+
 ## 0.6.1 (2022-01-31)
 
 ### Changed

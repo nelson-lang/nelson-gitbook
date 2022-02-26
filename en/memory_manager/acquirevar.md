@@ -29,7 +29,7 @@ Acquires variable value from a specified variables scope.
 Y = 'variable in base scope';
 function myfun()
   disp(acquirevar('base', 'Y')
-endfunction
+end
 myfun()
 ```
 
