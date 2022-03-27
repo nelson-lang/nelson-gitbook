@@ -4,11 +4,43 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.3 (2022-03-26)
+
+### Changed
+
+- [#596](http://github.com/Nelson-numerical-software/nelson/issues/596): Tests results display use emoji if terminal supports Unicode.
+
+### Added
+
+- Packaging:
+
+  - [#603](http://github.com/Nelson-numerical-software/nelson/issues/603): Nelson as snap package for Linux.
+  - [#605](http://github.com/Nelson-numerical-software/nelson/issues/605): [Package request] Chocolatey package manager for Windows.
+  - [#582](http://github.com/Nelson-numerical-software/nelson/issues/582): Nelson available as Portable apps.
+
+- add information for Software Center (Linux desktop, icons).
+
+- `nelson` Main script to start Nelson (superceed others scripts).
+
+- `isunicodesupported` function: Detect whether the current terminal supports Unicode.
+
+- `dlsym` function: search nearest symbol name if value entry is not found.
+
+- `terminal_size` function:Query the size of the terminal window.
+
+- [#598](http://github.com/Nelson-numerical-software/nelson/issues/598): `sscanf` function read formatted data from strings.
+
+### Fixed
+
+- [#599](http://github.com/Nelson-numerical-software/nelson/issues/599): `make install` step in CI for linux and MacOs.
+
+- [#601](http://github.com/Nelson-numerical-software/nelson/issues/601): embed all tests on linux and macos install.
+
 ## 0.6.2 (2022-02-26)
 
 ### Changed
 
-- [#576](http://github.com/Nelson-numerical-software/nelson/issues/575): C++17 Compiler required to build Nelson.
+- [#576](http://github.com/Nelson-numerical-software/nelson/issues/576): C++17 Compiler required to build Nelson.
 
 - [#581](http://github.com/Nelson-numerical-software/nelson/issues/581): Github CI platforms list extended (ArchLinux, Fedora, Ubuntu 18.04, MacOs BigSur).
 

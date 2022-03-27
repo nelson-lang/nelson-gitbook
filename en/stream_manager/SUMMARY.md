@@ -19,4 +19,5 @@
     * [fwrite](fwrite.md)
     * [load](load.md)
     * [save](save.md)
+    * [sscanf](sscanf.md)
 

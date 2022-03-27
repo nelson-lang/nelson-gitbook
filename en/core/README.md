@@ -16,6 +16,7 @@ core functions
 * [exist](exist.md) - Check for the existence.
 * [exit](exit.md) - Exit from current Nelson application
 * [inputname](inputname.md) - Get variable name of function input.
+* [isunicodesupported](isunicodesupported.md) - Detect whether the current terminal supports Unicode.
 * [license](license.md) - Get license information for Nelson.
 * [maxNumCompThreads](maxNumCompThreads.md) - Set/Get maximum number of computional threads.
 * [namelengthmax](namelengthmax.md) - Return the maximum variable name length.

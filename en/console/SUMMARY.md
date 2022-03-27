@@ -1,4 +1,5 @@
 * [console](README.md)
     * [clc](clc.md)
     * [input](input.md)
+    * [terminal_size](terminal_size.md)
 

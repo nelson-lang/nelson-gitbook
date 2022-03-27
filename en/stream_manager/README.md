@@ -28,6 +28,7 @@ stream functions
 * [fwrite](fwrite.md) - Write data in binary form to the file specified by the file descriptor fid.
 * [load](load.md) - load data from .nh5 or .mat file into Nelson's workspace.
 * [save](save.md) - save workspace variables to .nh5 or .mat file
+* [sscanf](sscanf.md) - Read formatted data from strings.
 
 
 

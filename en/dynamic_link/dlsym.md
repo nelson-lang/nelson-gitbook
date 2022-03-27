@@ -11,7 +11,7 @@ Loads a C/Fortran symbol for an dynamic library.
 ## Input argument
 
  - lib - a dllib handle.
- - symbol_name - a string: symbol to load.
+ - symbolname - a string: symbol to load.
  - return_type - a string: return type of the C/Fortran function.
  - params_types - a cell of strings: arguments using a special syntax with differents data types.
 
@@ -23,6 +23,34 @@ Loads a C/Fortran symbol for an dynamic library.
 
 
   <p><b>dlsym</b> retrieves the address of an exported function as an dlsym handle.</p>
+  <p>if <b>symbolname</b> not found, nelson try to find symbol equivalent based on these rules and in this order:</p>
+  <p>
+    <b>_symbolname</b>
+  </p>
+  <p>
+    <b>symbolname</b>
+  </p>
+  <p>
+    <b>symbolname_</b>
+  </p>
+  <p>
+    <b>_symbolname_</b>
+  </p>
+  <p>
+    <b>_SYMBOLNAME</b>
+  </p>
+  <p>
+    <b>SYMBOLNAME</b>
+  </p>
+  <p>
+    <b>SYMBOLNAME_</b>
+  </p>
+  <p>
+    <b>_SYMBOLNAME_</b>
+  </p>
+  <p>symbol name used is available in prototype field of the returned handle.</p>
+  <p>If multiple symbol names found, an error is raised with possible names.</p>
+  <p/>
   <p>Warning: Uses wrong datatype definitions a foreign function can terminate unexpectedly.</p>
 
 

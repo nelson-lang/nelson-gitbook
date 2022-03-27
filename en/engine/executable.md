@@ -6,12 +6,16 @@ Executables to start Nelson software.
 
 ## Syntax
 
-- nelson-cli arg1 arg1 ... argn
-- nelson-adv-cli arg1 arg1 ... argn
-- nelson-gui arg1 arg1 ... argn
+- nelson arg1 ... argn
+- nelson-cli arg1 ... argn
+- nelson-adv-cli  arg1 ... argn
+- nelson-gui arg1 ... argn
 
 ## Input argument
 
+ - -cli - equivalent to call 'nelson-cli'.
+ - -adv-cli - equivalent to call 'nelson-adv-cli'.
+ - -gui - equivalent to call 'nelson-gui'.
  - -e "nelson instructions" - If this option is present then Nelson instruction is executed just after startup file execution into Nelson. -e and -f options are mutually exclusive.
  - -f filename - Nelson script file is executed just after startup file execution) into Nelson. -e and -f options are mutually exclusive.
  - -F filename - If this option is present then Nelson script file is executed just after startup file execution) into an existing Nelson's process or creates it.

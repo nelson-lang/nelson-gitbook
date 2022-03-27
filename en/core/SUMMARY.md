@@ -7,6 +7,7 @@
     * [exist](exist.md)
     * [exit](exit.md)
     * [inputname](inputname.md)
+    * [isunicodesupported](isunicodesupported.md)
     * [license](license.md)
     * [maxNumCompThreads](maxNumCompThreads.md)
     * [namelengthmax](namelengthmax.md)

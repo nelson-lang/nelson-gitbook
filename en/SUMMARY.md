@@ -37,6 +37,7 @@
     * [exist](./core/exist.md)
     * [exit](./core/exit.md)
     * [inputname](./core/inputname.md)
+    * [isunicodesupported](./core/isunicodesupported.md)
     * [license](./core/license.md)
     * [maxNumCompThreads](./core/maxNumCompThreads.md)
     * [namelengthmax](./core/namelengthmax.md)
@@ -513,6 +514,7 @@
     * [fwrite](./stream_manager/fwrite.md)
     * [load](./stream_manager/load.md)
     * [save](./stream_manager/save.md)
+    * [sscanf](./stream_manager/sscanf.md)
 
 
 * [display_format](./display_format/README.md)
@@ -667,6 +669,7 @@
 * [console](./console/README.md)
     * [clc](./console/clc.md)
     * [input](./console/input.md)
+    * [terminal_size](./console/terminal_size.md)
 
 
 * [gui](./gui/README.md)
