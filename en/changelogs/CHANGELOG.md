@@ -4,6 +4,38 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.4 (2022-04-24)
+
+### Changed
+
+- [#590](http://github.com/Nelson-numerical-software/nelson/issues/590): Nelson's license moved to LGPL v3.0 and GPL v3.0 and uses SPDX format.
+
+- Nelson uses [Hack](https://sourcefoundry.org/hack/) font.
+
+- Linux 64 bits and 32 bits uses same main script.
+
+- [#594](http://github.com/Nelson-numerical-software/nelson/issues/594): `.pot` used to generate en_US.
+
+### Added
+
+- 'sscanf' reworked to manage unicode characters and speed optimization.
+
+- French translations imported from Weblate (Thanks to contributors)
+
+- Dark theme detected and applied on Linux, MacOS and Windows.
+
+- [#559](http://github.com/Nelson-numerical-software/nelson/issues/559): `formattedDisplayText` function: Capture display output as string.
+
+- Better detection Qt6 or Qt5 with CMake.
+
+### Fixed
+
+- Main Nelson's font was not applied on some OS platforms (ex: MacOS Catalina)
+
+- [#622](http://github.com/Nelson-numerical-software/nelson/issues/622): `isreal(sqrt(i^4))` did not return true.
+
+- Nelson's help indexing is faster (x100).
+
 ## 0.6.3 (2022-03-26)
 
 ### Changed

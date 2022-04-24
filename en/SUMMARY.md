@@ -522,6 +522,7 @@
     * [display](./display_format/display.md)
     * [echo](./display_format/echo.md)
     * [format](./display_format/format.md)
+    * [formattedDisplayText](./display_format/formattedDisplayText.md)
 
 
 * [hdf5](./hdf5/README.md)

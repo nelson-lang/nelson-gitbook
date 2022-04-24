@@ -26,9 +26,9 @@ Returns the relative path from an actual path to the target path.
 ## Example
 
 ```matlab
-relativepath(nelsonroot(), [nelsonroot(), '/COPYING.LGPLv2.1'])
+relativepath(nelsonroot(), [nelsonroot(), '/lgpl-3.0.md'])
 relativepath(nelsonroot(), [nelsonroot(), '/etc/finish.m'])
-relativepath([nelsonroot(),'/bin'], [nelsonroot(), '/COPYING.LGPLv2.1'])
+relativepath([nelsonroot(),'/bin'], [nelsonroot(), '/lgpl-3.0.md'])
 relativepath('.', '.')
 relativepath('.', '..')
 relativepath('..', '.')
