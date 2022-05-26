@@ -58,6 +58,7 @@
     * [num2bin](num2bin.md)
     * [numel](numel.md)
     * [pinv](pinv.md)
+    * [pow2](pow2.md)
     * [real](real.md)
     * [rem](rem.md)
     * [repmat](repmat.md)

@@ -29,9 +29,9 @@ Retrieve a property value from an QObject handle.
 ## Example
 
 ```matlab
-h = errordlg()
+h = errordlg();
 h.visible % or get(h, 'visible')
-h.title % or get(h, 'title')
+h.windowTitle % or get(h, 'windowTitle')
 ```
 
 ## History

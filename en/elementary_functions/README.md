@@ -67,6 +67,7 @@ elementary functions
 * [num2bin](num2bin.md) - Convert number to binary representation.
 * [numel](numel.md) - Number of elements.
 * [pinv](pinv.md) - Moore-Penrose pseudoinverse
+* [pow2](pow2.md) - Base 2 exponentiation and scaling of floating-point numbers.
 * [real](real.md) - Real part of an complex number.
 * [rem](rem.md) - Remainder after division.
 * [repmat](repmat.md) - Replicate and tile an array.

@@ -51,7 +51,10 @@ Shell command execution.
 [s,w] = system('dir','-echo');
 ```
 ```matlab
-[s,w] = system(["echo hello", "dir", "echo world"]'-parallel')
+[s,w] = system(["echo hello", "dir", "echo world"], '-parallel')
+```
+```matlab
+tic();[s,w] = system(["PING -n 5 127.0.0.1>nul", "PING -n 7 127.0.0.1>nul", "PING -n 10 127.0.0.1>nul"], '-parallel'), toc()
 ```
 To detach an system command, include the trailing character, &, in the command argument.
 ```matlab

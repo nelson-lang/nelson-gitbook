@@ -27,6 +27,7 @@ Returns list of current used QObject handle.
 h1 = errordlg()
 h2 = errordlg()
 h3 = errordlg()
+used = QObject_used()delete(used)
 used = QObject_used()
 delete(used)
 used = QObject_used()

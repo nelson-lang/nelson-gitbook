@@ -30,7 +30,7 @@ Returns the signature of a method of a QObject handle.
 
 ```matlab
 h = errordlg()
-QObject_methodsignature(h, 'setTitle')
+QObject_methodsignature(h, 'setVisible')
 ```
 
 ## History

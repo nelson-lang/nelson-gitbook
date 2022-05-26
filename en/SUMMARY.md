@@ -223,6 +223,7 @@
     * [num2bin](./elementary_functions/num2bin.md)
     * [numel](./elementary_functions/numel.md)
     * [pinv](./elementary_functions/pinv.md)
+    * [pow2](./elementary_functions/pow2.md)
     * [real](./elementary_functions/real.md)
     * [rem](./elementary_functions/rem.md)
     * [repmat](./elementary_functions/repmat.md)
