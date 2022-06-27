@@ -483,6 +483,7 @@
     * [isdir](./files_folders_functions/isdir.md)
     * [isfile](./files_folders_functions/isfile.md)
     * [isfolder](./files_folders_functions/isfolder.md)
+    * [ls](./files_folders_functions/ls.md)
     * [mkdir](./files_folders_functions/mkdir.md)
     * [pathsep](./files_folders_functions/pathsep.md)
     * [pwd](./files_folders_functions/pwd.md)
@@ -937,3 +938,9 @@
     * [polyval](./polynomial_functions/polyval.md)
     * [polyvalm](./polynomial_functions/polyvalm.md)
     * [roots](./polynomial_functions/roots.md)
+
+
+* [parallel](./parallel/README.md)
+    * [backgroundPool](./parallel/backgroundPool.md)
+    * [fetchOutputs](./parallel/fetchOutputs.md)
+    * [parfeval](./parallel/parfeval.md)

@@ -19,6 +19,7 @@ files, folders and paths functions
 * [isdir](isdir.md) - Returns true is the input argument is an directory.
 * [isfile](isfile.md) - Returns true is the input argument is a file.
 * [isfolder](isfolder.md) - Returns true is the input argument is an directory.
+* [ls](ls.md) - List folder contents.
 * [mkdir](mkdir.md) - Creates a new directory.
 * [pathsep](pathsep.md) - Return the search path separator character for the current platform.
 * [pwd](pwd.md) - Returns current directory.

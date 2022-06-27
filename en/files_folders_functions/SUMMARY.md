@@ -10,6 +10,7 @@
     * [isdir](isdir.md)
     * [isfile](isfile.md)
     * [isfolder](isfolder.md)
+    * [ls](ls.md)
     * [mkdir](mkdir.md)
     * [pathsep](pathsep.md)
     * [pwd](pwd.md)

@@ -4,6 +4,36 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.6 (2022-06-27)
+
+### Added
+
+- Parallel functions (part 1):
+
+  - `parfeval`: Run function on parallel background thread pool worker.
+  - `backgroundPool`: Environment for running code in the background.
+  - `fetchOutputs`: Retrieve results from function running in the background.
+
+- [#666](http://github.com/Nelson-numerical-software/nelson/issues/666): `ls` function: List folder contents.
+
+- [#655](http://github.com/Nelson-numerical-software/nelson/issues/655): help viewer embedded (available on all platforms).
+
+### Changed
+
+- LGTM replaced by CodeQL (Thanks to Github for their support)
+
+- [#662](http://github.com/Nelson-numerical-software/nelson/issues/662): Snap uses Core22 and Qt6 (all dependencies are up-to-date).
+
+- [#668](http://github.com/Nelson-numerical-software/nelson/issues/668): `maxNumCompThreads` detects numbers of physical cores on Windows.
+
+- matrix of handles supported.
+
+### Fixed
+
+- [#659](http://github.com/Nelson-numerical-software/nelson/issues/659): qhelpgenerator on macOs after brew Qt6.3.0 update.
+
+- [#661](http://github.com/Nelson-numerical-software/nelson/issues/661): CodeQL warnings.
+
 ## 0.6.5 (2022-05-26)
 
 ### Added

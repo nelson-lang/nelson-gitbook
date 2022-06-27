@@ -38,7 +38,7 @@ res = dir(nelsonroot(), '-s')
 
 ## See also
 
-[isdir](isdir.md), [isfile](isfile.md).
+[ls](ls.md), [isdir](isdir.md), [isfile](isfile.md).
 ## History
 
 |Version|Description|
