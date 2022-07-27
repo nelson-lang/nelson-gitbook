@@ -25,7 +25,7 @@ Evaluates a js file.
 
 ## See also
 
-[qml_evaluatestring](qml_evaluatestring.md).
+[qml_evaluatestring](qml_evaluatestring.html).
 ## Example
 
 ```matlab

@@ -20,7 +20,7 @@ QObject root object.
 
 ## See also
 
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
+[QObject_set (set)](QObject_set.html), [QObject_get (get)](QObject_get.html).
 ## Example
 
 ```matlab

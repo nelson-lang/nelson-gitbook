@@ -30,7 +30,7 @@ edit('edit')
 
 ## See also
 
-[smartindent](smartindent.md).
+[smartindent](smartindent.html).
 ## History
 
 |Version|Description|

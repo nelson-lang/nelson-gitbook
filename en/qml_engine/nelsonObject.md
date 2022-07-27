@@ -27,7 +27,7 @@ nelson object callable from QML.
 
 ## See also
 
-[qml_pluginpathlist](qml_pluginpathlist.md), [qml_addimportpath](qml_addimportpath.md).
+[qml_pluginpathlist](qml_pluginpathlist.html), [qml_addimportpath](qml_addimportpath.html).
 ## History
 
 |Version|Description|

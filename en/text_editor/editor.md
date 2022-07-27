@@ -22,7 +22,7 @@ call the embedded text editor.
 
 ## See also
 
-[edit](edit.md).
+[edit](edit.html).
 ## History
 
 |Version|Description|

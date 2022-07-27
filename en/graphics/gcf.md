@@ -30,7 +30,7 @@ gcf()
 
 ## See also
 
-[figure](figure.md).
+[figure](figure.html).
 ## History
 
 |Version|Description|

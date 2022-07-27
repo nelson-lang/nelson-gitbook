@@ -29,7 +29,7 @@ qml_importpathlist()
 
 ## See also
 
-[qml_importpathlist](qml_importpathlist.md).
+[qml_importpathlist](qml_importpathlist.html).
 ## History
 
 |Version|Description|

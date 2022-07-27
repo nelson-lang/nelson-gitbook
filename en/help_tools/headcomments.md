@@ -34,7 +34,7 @@ comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 
 ## See also
 
-[doc](../help_browser/doc.md), [markdown](markdown.md), [inserthtml](../gui/inserthtml.md), [which](which.html).
+[doc](doc.html), [markdown](markdown.md), [inserthtml](inserthtml.html), [which](which.html).
 ## History
 
 |Version|Description|

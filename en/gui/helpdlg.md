@@ -45,7 +45,7 @@ h = helpdlg('help string', 'dialog title', 'on')
 
 ## See also
 
-[warndlg](warndlg.md), [errordlg](errordlg.md), [questdlg](questdlg.md), [msgbox](msgbox.md).
+[warndlg](warndlg.html), [errordlg](errordlg.html), [questdlg](questdlg.html), [msgbox](msgbox.html).
 ## History
 
 |Version|Description|

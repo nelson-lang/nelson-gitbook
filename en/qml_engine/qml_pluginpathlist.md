@@ -20,7 +20,7 @@ Returns the list of directories where the engine searches for native plugins for
 
 ## See also
 
-[qml_addpluginpath](qml_addpluginpath.md).
+[qml_addpluginpath](qml_addpluginpath.html).
 ## Example
 
 ```matlab

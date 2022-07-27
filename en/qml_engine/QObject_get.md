@@ -25,7 +25,7 @@ Retrieve a property value from an QObject handle.
 
 ## See also
 
-[QObject_set (set)](QObject_set.md), [get](../handle/get.md).
+[QObject_set (set)](QObject_set.html), [get](../handle/get.md).
 ## Example
 
 ```matlab

@@ -12,7 +12,7 @@ internal function used by 'doc'.
 
 ## See also
 
-[doc](doc.md).
+[doc](doc.html).
 ## History
 
 |Version|Description|

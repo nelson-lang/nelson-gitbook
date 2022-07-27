@@ -37,7 +37,7 @@ g.ScreenDepth
 
 ## See also
 
-[figure](figure.md), [gcf](gcf.md).
+[figure](figure.html), [gcf](gcf.html).
 ## History
 
 |Version|Description|

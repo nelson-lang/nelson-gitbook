@@ -25,7 +25,7 @@ Load a QML file.
 
 ## See also
 
-[qml_loadstring](qml_loadstring.md).
+[qml_loadstring](qml_loadstring.html).
 ## Example
 
 ```matlab

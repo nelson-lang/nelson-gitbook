@@ -24,7 +24,7 @@ Returns true if the QObject is a widget.
 
 ## See also
 
-[QObject_set (set)](QObject_set.md).
+[QObject_set (set)](QObject_set.html).
 ## Example
 
 ```matlab

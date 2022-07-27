@@ -27,7 +27,7 @@ Retrieve results from function running in the background pool.
 
 ## Examples
 
-sequantial version
+Sequential version
 ```matlab
 tic()
 R1 = magic(5000);

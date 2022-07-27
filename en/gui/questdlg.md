@@ -50,7 +50,7 @@ res = questdlg({'Is', 'this', 'a', 'multi line', 'test ?'}, 'Test :)')
 
 ## See also
 
-[warndlg](warndlg.md), [errordlg](errordlg.md), [helpdlg](helpdlg.md), [msgbox](msgbox.md).
+[warndlg](warndlg.html), [errordlg](errordlg.html), [helpdlg](helpdlg.html), [msgbox](msgbox.html).
 ## History
 
 |Version|Description|

@@ -942,5 +942,8 @@
 
 * [parallel](./parallel/README.md)
     * [backgroundPool](./parallel/backgroundPool.md)
+    * [cancel](./parallel/cancel.md)
+    * [cancelAll](./parallel/cancelAll.md)
     * [fetchOutputs](./parallel/fetchOutputs.md)
     * [parfeval](./parallel/parfeval.md)
+    * [wait](./parallel/wait.md)
