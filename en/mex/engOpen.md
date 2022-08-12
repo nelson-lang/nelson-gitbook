@@ -1,5 +1,3 @@
-
-
 # engOpen
 
 Start Nelson process
@@ -11,14 +9,13 @@ Start Nelson process
 
 ## Input argument
 
- - startcmd - Nelson startup command (NULL).
+- startcmd - Nelson startup command (NULL).
 
 ## Output argument
 
- - Engine - handle to Nelson engine or NULL.
+- Engine - handle to Nelson engine or NULL.
 
 ## Description
-
 
   <p><b>engOpen</b> starts a Nelson process for using Nelson as a computational engine.</p>
   <p>Libraries path need to contain nelson path to find Nelson's libraries at runtime.</p>
@@ -30,7 +27,6 @@ Start Nelson process
   <p>export PATH=$PATH:<b>res</b></p>
   <p>on windows: set PATH=%PATH%;<b>res</b></p>
 
-
 ## Example
 
 ```matlab
@@ -40,16 +36,13 @@ edit([modulepath('mex'), '/tests/test_engine.c'])
 ## See also
 
 [mex](mex.md), [engClose](engClose.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

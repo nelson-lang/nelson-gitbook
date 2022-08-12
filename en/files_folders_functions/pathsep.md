@@ -1,5 +1,3 @@
-
-
 # pathsep
 
 Return the search path separator character for the current platform.
@@ -10,7 +8,7 @@ Return the search path separator character for the current platform.
 
 ## Output argument
 
- - res - a string: ';' or ':'
+- res - a string: ';' or ':'
 
 ## Description
 
@@ -25,16 +23,13 @@ A = pathsep
 ## See also
 
 [filesep](filesep.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

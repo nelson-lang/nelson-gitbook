@@ -1,5 +1,3 @@
-
-
 # audiowrite
 
 Writes an audio file.
@@ -11,18 +9,16 @@ Writes an audio file.
 
 ## Input argument
 
- - filename - a string: filename to create.
- - y - a matrix: audio data.
- - fs - an integer value: sampling rate.
- - fieldname - a string: 'BitsPerSample', 'BitRate', 'Quality', 'Title', 'Artist' or 'Comment' .
- - fieldvalue - value associated to the fieldname.
+- filename - a string: filename to create.
+- y - a matrix: audio data.
+- fs - an integer value: sampling rate.
+- fieldname - a string: 'BitsPerSample', 'BitRate', 'Quality', 'Title', 'Artist' or 'Comment' .
+- fieldvalue - value associated to the fieldname.
 
 ## Description
 
-
   <p><b>audiorwrite</b> writes an audio file.</p>
   <p>More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.</p>
-
 
 ## Example
 
@@ -42,16 +38,13 @@ audiowrite(dest_caf, y, fs);
 ## See also
 
 [audioplayer](audioplayer.md), [audiosupportedformats](audiosupportedformats.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

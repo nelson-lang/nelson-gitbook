@@ -1,5 +1,3 @@
-
-
 # repmat
 
 Replicate and tile an array.
@@ -14,12 +12,12 @@ Replicate and tile an array.
 
 ## Input argument
 
- - A - an array.
- - m, n, p … - a value: integer
+- A - an array.
+- m, n, p … - a value: integer
 
 ## Output argument
 
- - R - result array form by tiling.
+- R - result array form by tiling.
 
 ## Description
 
@@ -30,9 +28,11 @@ Replicate and tile an array.
 ```matlab
 repmat(1:5, 2)
 ```
+
 ```matlab
 repmat(1:5, [2 3])
 ```
+
 ```matlab
 repmat(1:5, [2 3 4])
 ```
@@ -40,16 +40,13 @@ repmat(1:5, [2 3 4])
 ## See also
 
 [reshape](reshape.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

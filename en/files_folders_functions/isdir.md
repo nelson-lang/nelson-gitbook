@@ -1,5 +1,3 @@
-
-
 # isdir
 
 Returns true is the input argument is an directory.
@@ -10,18 +8,16 @@ Returns true is the input argument is an directory.
 
 ## Input argument
 
- - dirname - a string: directory name to check.
+- dirname - a string: directory name to check.
 
 ## Output argument
 
- - r - a logical: true if it is an directory.
+- r - a logical: true if it is an directory.
 
 ## Description
 
-
   <p><b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.</p>
   <p><b>isdir</b> and <b>isfolder</b> are same.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ isdir([nelsonroot(), '/not_exist_dir'])
 ## See also
 
 [mkdir](mkdir.md), [isfile](isfile.md), [isfolder](isfolder.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

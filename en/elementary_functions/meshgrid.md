@@ -1,5 +1,3 @@
-
-
 # meshgrid
 
 Cartesian rectangular grid in 2-D or 3-D.
@@ -13,21 +11,19 @@ Cartesian rectangular grid in 2-D or 3-D.
 
 ## Input argument
 
- - x - x-coordinates of points: vector
- - y - y-coordinates of points: vector
- - z - z-coordinates of points: vector
+- x - x-coordinates of points: vector
+- y - y-coordinates of points: vector
+- z - z-coordinates of points: vector
 
 ## Output argument
 
- - X - x-coordinates over grid: 2-D or 3-D array.
- - Y - y-coordinates over grid: 2-D or 3-D array.
- - Z - z-coordinates over grid: 3-D array.
+- X - x-coordinates over grid: 2-D or 3-D array.
+- Y - y-coordinates over grid: 2-D or 3-D array.
+- Z - z-coordinates over grid: 3-D array.
 
 ## Description
 
-
   <p><b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.</p>
-
 
 ## Example
 
@@ -44,14 +40,10 @@ z = 0:3:6;
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

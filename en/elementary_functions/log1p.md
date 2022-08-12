@@ -1,5 +1,3 @@
-
-
 # log1p
 
 log(1 + x) accurately for small values of x.
@@ -10,17 +8,15 @@ log(1 + x) accurately for small values of x.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - R - result of log(1 + x) accurately for small values of x.
+- R - result of log(1 + x) accurately for small values of x.
 
 ## Description
 
-
   <p><b>log1p</b> computes log(1 + x) accurately for small values of x.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ r = log1p(x)
 ## See also
 
 [log](log.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

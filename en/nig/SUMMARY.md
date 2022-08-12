@@ -1,3 +1,2 @@
-* [nig](README.md)
-    * [nig](nig.md)
-
+- [nig](README.md)
+  - [nig](nig.md)

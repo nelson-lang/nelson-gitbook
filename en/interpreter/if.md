@@ -1,5 +1,3 @@
-
-
 # if
 
 conditional statement.
@@ -10,9 +8,7 @@ conditional statement.
 
 ## Description
 
-
   <p><b>if</b> and <b>else</b> statements form a control structure for conditional execution.</p>
-
 
 ## Example
 
@@ -30,16 +26,13 @@ end
 ## See also
 
 [for](for.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

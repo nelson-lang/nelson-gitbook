@@ -1,5 +1,3 @@
-
-
 # prod
 
 Product of array elements.
@@ -14,20 +12,18 @@ Product of array elements.
 
 ## Input argument
 
- - M - an array of double, single, integers, ...
- - d - dimension to operate along: positive integer scalar.
- - t - a string: 'default', 'double' or 'native'.
- - f - a string: 'includenan' or 'omitnan'.
+- M - an array of double, single, integers, ...
+- d - dimension to operate along: positive integer scalar.
+- t - a string: 'default', 'double' or 'native'.
+- f - a string: 'includenan' or 'omitnan'.
 
 ## Output argument
 
- - R - Product of array elements.
+- R - Product of array elements.
 
 ## Description
 
-
   <p><b>R = prod(M)</b> returns the product of the array elements of M.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ R = prod(M, 'native')
 ## See also
 
 [ndims](ndims.html), [sum](sum.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

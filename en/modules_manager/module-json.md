@@ -1,11 +1,8 @@
-
-
 # module.json
 
 module.json description
 
 ## Description
-
 
   <p>A module.json file is required for each nelson's external module, it allows to manager easily with <b>nmm</b> function.</p>
   <p/>
@@ -47,10 +44,10 @@ module.json description
   <p>"module_b": "https://module_b.git#v1.0.0"</p>
   <p>}</p>
 
-
 ## Example
 
 Deploy module_skeleton and module_skeleton_basic template
+
 ```matlab
 if ~ismodule('module_skeleton_basic')
     nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
@@ -66,16 +63,13 @@ edit([modules_installed.module_skeleton_basic.path, 'module.json']);
 ## See also
 
 [nmm](nmm.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

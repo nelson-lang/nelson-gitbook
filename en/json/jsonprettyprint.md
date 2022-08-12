@@ -1,5 +1,3 @@
-
-
 # jsonprettyprint
 
 format an JSON string.
@@ -10,17 +8,15 @@ format an JSON string.
 
 ## Input argument
 
- - txt - a valid JSON text.
+- txt - a valid JSON text.
 
 ## Output argument
 
- - res - a string: a formatted JSON text (human readable).
+- res - a string: a formatted JSON text (human readable).
 
 ## Description
 
-
   <p><b>jsonprettyprint</b> formats a JSON text string to be human readable.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ jsonprettyprint(r)
 ## See also
 
 [jsondecode](jsondecode.md), [jsonencode](jsonencode.md), [filewrite](../stream_manager/filewrite.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

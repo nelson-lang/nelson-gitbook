@@ -1,5 +1,3 @@
-
-
 # libpointer_delete
 
 Removes libpointer object.
@@ -11,14 +9,12 @@ Removes libpointer object.
 
 ## Input argument
 
- - h - a handle: an libpointer object.
+- h - a handle: an libpointer object.
 
 ## Description
 
-
   <p><b>delete(h)</b> releases libpointer object.</p>
   <p>Do not forget to clear h afterward.</p>
-
 
 ## Example
 
@@ -29,16 +25,13 @@ libpointer_used(),delete(libpointer_used())
 ## See also
 
 [libpointer](libpointer.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

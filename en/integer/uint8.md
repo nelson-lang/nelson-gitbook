@@ -1,5 +1,3 @@
-
-
 # uint8
 
 Converts to 8-bit unsigned integer.
@@ -10,18 +8,16 @@ Converts to 8-bit unsigned integer.
 
 ## Input argument
 
- - X - a matrix of double, single or integers.
+- X - a matrix of double, single or integers.
 
 ## Output argument
 
- - Y - a matrix of 8-bit unsigned integer.
+- Y - a matrix of 8-bit unsigned integer.
 
 ## Description
 
-
   <p><b>uint8</b> converts value to 8-bit unsigned integer type.</p>
   <p>The value is rounded to the nearest uint8 value on conversion. A value that is above or below the range for an uint8 class is mapped to one of the endpoints of the range [0, 255].</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ B = uint8(A)
 ## See also
 
 [intmax](intmax.md), [intmin](intmax.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

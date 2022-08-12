@@ -1,5 +1,3 @@
-
-
 # xmldocchecker
 
 Checks a xml documentation file.
@@ -11,18 +9,16 @@ Checks a xml documentation file.
 
 ## Input argument
 
- - xmldocfilename - a string: xml document.
+- xmldocfilename - a string: xml document.
 
 ## Output argument
 
- - errors_detected - a cell of strings: errors detected.
- - warnings_detected - a cell of strings: warnings detected.
+- errors_detected - a cell of strings: errors detected.
+- warnings_detected - a cell of strings: warnings detected.
 
 ## Description
 
-
   <p><b>xmldocchecker</b> is a tool to check that a xml document is valid.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 ## See also
 
 [buildhelp](buildhelp.md), [buildhelpweb](buildhelpweb.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # QObject_set
 
 Set a property value of an QObject handle (set).
@@ -10,19 +8,17 @@ Set a property value of an QObject handle (set).
 
 ## Input argument
 
- - h - an QObject handle.
- - property_name - a string: property name.
- - value - a variable.
+- h - an QObject handle.
+- property_name - a string: property name.
+- value - a variable.
 
 ## Output argument
 
- - R - user-settable properties and possible values for the object identified by h.
+- R - user-settable properties and possible values for the object identified by h.
 
 ## Description
 
-
   <p>This routine can be used to modify the value of a specified property from an QObject object.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ h.visible = true;
 ## See also
 
 [set](../handle/set.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

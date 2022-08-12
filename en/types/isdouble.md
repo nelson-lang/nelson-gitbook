@@ -1,5 +1,3 @@
-
-
 # isdouble
 
 Return true if variable var is a double matrix.
@@ -10,11 +8,11 @@ Return true if variable var is a double matrix.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,14 +24,17 @@ Return true if variable var is a double matrix.
 A = 3;
 res = isdouble(A)
 ```
+
 ```matlab
 A = single(3);
 res = isdouble(A)
 ```
+
 ```matlab
 A = single([3, i]);
 res = isdouble(A)
 ```
+
 ```matlab
 A = [3, i];
 res = isdouble(A)
@@ -42,16 +43,13 @@ res = isdouble(A)
 ## See also
 
 [isa](isa.md), [single](single.html), [double](double.html), [isfloat](isfloat.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

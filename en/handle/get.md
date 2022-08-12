@@ -1,5 +1,3 @@
-
-
 # get
 
 Retrieve a property value from an handle object.
@@ -10,32 +8,27 @@ Retrieve a property value from an handle object.
 
 ## Input argument
 
- - h - an handle object.
- - property_name - a string: property name.
+- h - an handle object.
+- property_name - a string: property name.
 
 ## Output argument
 
- - R - The data type of the return value depends on the invoked method.
+- R - The data type of the return value depends on the invoked method.
 
 ## Description
 
-
   <p><b>R = get(h, property_name)</b> returns the value of property asked.</p>
-
 
 ## See also
 
 [QObject_get (get)](QObject_get.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

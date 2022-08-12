@@ -1,5 +1,3 @@
-
-
 # findcmake
 
 find CMake path.
@@ -10,19 +8,18 @@ find CMake path.
 
 ## Output argument
 
- - status - a logical.
- - cmake_path - a string: path of CMake or ''.
+- status - a logical.
+- cmake_path - a string: path of CMake or ''.
 
 ## Description
-
 
   <p>find CMake path.</p>
   <p>CMake is used internaly to generate makefiles used to build dynamic libraries on fly.</p>
 
-
 ## See also
 
 [cmake](cmake.md).
+
 ## Example
 
 ```matlab
@@ -31,14 +28,10 @@ find CMake path.
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

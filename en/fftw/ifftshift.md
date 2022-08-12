@@ -1,5 +1,3 @@
-
-
 # ifftshift
 
 inverse of fftshift
@@ -11,18 +9,16 @@ inverse of fftshift
 
 ## Input argument
 
- - X - a vector, matrix or N-D array (double, single, integer).
- - DIM - axes over which to shift.
+- X - a vector, matrix or N-D array (double, single, integer).
+- DIM - axes over which to shift.
 
 ## Output argument
 
- - Y - shifted array.
+- Y - shifted array.
 
 ## Description
 
-
   <p><b>fftshift(X)</b> computes the inverse <b>fftshift</b>.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ ifftshift(M, 1)
 ## See also
 
 [ifft](ifft.md), [fftshift](fftshift.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

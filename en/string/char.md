@@ -1,5 +1,3 @@
-
-
 # char
 
 Converts to a character array.
@@ -12,12 +10,12 @@ Converts to a character array.
 
 ## Input argument
 
- - var - a cell of strings, string array or an numeric array.
- - var1, var2, ..., varN - strings or an numeric arrays.
+- var - a cell of strings, string array or an numeric array.
+- var1, var2, ..., varN - strings or an numeric arrays.
 
 ## Output argument
 
- - res - a string
+- res - a string
 
 ## Description
 
@@ -30,9 +28,11 @@ M = [ 104   101   108   108   111;
 20320   22909 32    32    32];
 char(M)
 ```
+
 ```matlab
 R = char('these', 'are', 'test', 'strings')
 ```
+
 ```matlab
 R = char(["these"; "are"; "test"; "strings"])
 ```
@@ -40,16 +40,13 @@ R = char(["these"; "are"; "test"; "strings"])
 ## See also
 
 [double](../double/double.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # dbstack
 
 call stack.
@@ -15,22 +13,21 @@ call stack.
 
 ## Input argument
 
- - omit - an integer value: Number of frames to omit (must be positive).
+- omit - an integer value: Number of frames to omit (must be positive).
 
 ## Output argument
 
- - st - a struct
+- st - a struct
 
 ## Description
-
 
   <p><b>dbstack</b> displays the file names and line numbers of the function calls.</p>
   <p><b>dbstack('-completenames')</b> displays the full file names.</p>
 
-
 ## Example
 
 Creates a myfun.m and calls it.
+
 ```matlab
 function myfun(x)
 dbstack();
@@ -40,16 +37,13 @@ end
 ## See also
 
 [which](../functions_manager/which.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

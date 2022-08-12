@@ -1,5 +1,3 @@
-
-
 # ipc
 
 Inter process communicator.
@@ -19,29 +17,27 @@ Inter process communicator.
 
 ## Input argument
 
- - 'post' - a string: post a command to evaluate to another nelson's process in base scope (not blocking).
- - 'eval' - a string: post a command to evaluate to another nelson's process in base scope (blocking).
- - 'isvar' - a string: check if a variable exists into another nelson's process.
- - 'put' - a string: send a variable into another nelson's process.
- - 'get' - a string: get a variable from another nelson's process.
- - 'minimize' - a string: minimize main window from another nelson's process.
+- 'post' - a string: post a command to evaluate to another nelson's process in base scope (not blocking).
+- 'eval' - a string: post a command to evaluate to another nelson's process in base scope (blocking).
+- 'isvar' - a string: check if a variable exists into another nelson's process.
+- 'put' - a string: send a variable into another nelson's process.
+- 'get' - a string: get a variable from another nelson's process.
+- 'minimize' - a string: minimize main window from another nelson's process.
 
 ## Output argument
 
- - B - a logical: true if variable exists.
- - V - a variable from another nelson.
- - TF - a logical: true if destination process is minimized.
- - O - a character array: output of evaluate string.
+- B - a logical: true if variable exists.
+- V - a variable from another nelson.
+- TF - a logical: true if destination process is minimized.
+- O - a character array: output of evaluate string.
 
 ## Description
-
 
   <p><b>ipc</b> allows to execute, get, put variables between multiple nelson's process.</p>
   <p>All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.</p>
   <p>LIMITATION:</p>
   <p>The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double.</p>
   <p>Current limitation to limit memory usage.</p>
-
 
 ## Examples
 
@@ -92,9 +88,11 @@ for p = current_pids
     end
 end
 ```
+
 ```matlab
 ipc(getpid(), 'eval', 'dir')
 ```
+
 ```matlab
 ipc(getpid(), 'minimize', true)
 ipc(getpid(), 'minimize')
@@ -103,16 +101,13 @@ ipc(getpid(), 'minimize')
 ## See also
 
 [getpid](getpid.md), [unix](unix.html), [eval](../core/eval.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

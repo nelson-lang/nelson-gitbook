@@ -1,5 +1,3 @@
-
-
 # abort
 
 # return
@@ -13,9 +11,7 @@ stop evaluation.
 
 ## Description
 
-
   <p><b>return</b> or <b>abort</b> stops current evaluation.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ a
 ## See also
 
 [for](for.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

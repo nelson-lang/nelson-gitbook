@@ -1,5 +1,3 @@
-
-
 # format
 
 Display format and number printing.
@@ -13,14 +11,13 @@ Display format and number printing.
 
 ## Input argument
 
- - new_style - a string
+- new_style - a string
 
 ## Output argument
 
- - fmt - DisplayFormatOptions object: format used
+- fmt - DisplayFormatOptions object: format used
 
 ## Description
-
 
   <p><b>format(new_style)</b> changes the display format and number printing of the current session.</p>
   <p><b>format('default')</b> will reset to default format (short, loose).</p>
@@ -62,10 +59,10 @@ Display format and number printing.
     <b>compact</b>
   </p>
 
-
 ## Example
 
 an example
+
 ```matlab
 current_style = format()
 pi
@@ -92,16 +89,13 @@ pi
 ## See also
 
 [disp](disp.md), [display](display.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

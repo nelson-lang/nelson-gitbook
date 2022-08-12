@@ -1,5 +1,3 @@
-
-
 # atanh
 
 Computes the inverse hyperbolic tangent.
@@ -10,11 +8,11 @@ Computes the inverse hyperbolic tangent.
 
 ## Input argument
 
- - x - a numeric value
+- x - a numeric value
 
 ## Output argument
 
- - res - a numeric value
+- res - a numeric value
 
 ## Description
 
@@ -30,16 +28,13 @@ res = atanh(A)
 ## See also
 
 [tanh](tanh.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

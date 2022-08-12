@@ -1,11 +1,8 @@
-
-
 # SLICOT License
 
 About SLICOT license.
 
 ## Description
-
 
   <p>Note that SLICOT is licensed under GPLv2 or higher, but the bindings
 to the library in this nelson's module, is licensed under LGPL v3.0.</p>
@@ -15,17 +12,12 @@ to the library in this nelson's module, is licensed under LGPL v3.0.</p>
   <p/>
   <p>if SLICOT library is available on platform, and user chooses to use it, distribution falls under the terms of the GPL.</p>
 
-
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

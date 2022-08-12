@@ -1,5 +1,3 @@
-
-
 # gcd
 
 Greatest common divisor
@@ -10,18 +8,16 @@ Greatest common divisor
 
 ## Input argument
 
- - A - a scalar, vector, or matrix of real integer values.
- - B - a scalar, vector, or matrix of real integer values.
+- A - a scalar, vector, or matrix of real integer values.
+- B - a scalar, vector, or matrix of real integer values.
 
 ## Output argument
 
- - G - result of gcd function (Greatest common divisor).
+- G - result of gcd function (Greatest common divisor).
 
 ## Description
 
-
   <p><b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.</p>
-
 
 Bibliography
 
@@ -38,16 +34,13 @@ G = gcd(A, B)
 ## See also
 
 [gamma](gamma.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # userdir
 
 Returns the current user's path.
@@ -11,13 +9,11 @@ Returns the current user's path.
 
 ## Output argument
 
- - p - a string: current user directory.
+- p - a string: current user directory.
 
 ## Description
 
-
   <p>Returns the name of the user's directory.</p>
-
 
 ## Example
 
@@ -28,16 +24,13 @@ r = userdir()
 ## See also
 
 [cd](cd.md), [dir](dir.md), [tempdir](tempdir.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

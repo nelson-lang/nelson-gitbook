@@ -1,5 +1,3 @@
-
-
 # getdefaultlanguage
 
 Returns the default language used in Nelson.
@@ -10,13 +8,11 @@ Returns the default language used in Nelson.
 
 ## Output argument
 
- - lang - a string: 'en_US' by default.
+- lang - a string: 'en_US' by default.
 
 ## Description
 
-
   <p><b>getdefaultlanguage</b> returns the default language used by Nelson.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ getdefaultlanguage()
 ## See also
 
 [setlanguage](setlanguage.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

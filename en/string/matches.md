@@ -1,5 +1,3 @@
-
-
 # matches
 
 Determine if pattern matches with strings.
@@ -11,12 +9,12 @@ Determine if pattern matches with strings.
 
 ## Input argument
 
- - str - a string, string array or cell of strings.
- - pattern - a string, string array or cell of strings.
+- str - a string, string array or cell of strings.
+- pattern - a string, string array or cell of strings.
 
 ## Output argument
 
- - res - a logical: true if the two matches and false otherwise.
+- res - a logical: true if the two matches and false otherwise.
 
 ## Description
 
@@ -34,16 +32,13 @@ R = matches(str, ["yellow", "Brown"], 'IgnoreCase', true);
 ## See also
 
 [strcmp](strcmp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

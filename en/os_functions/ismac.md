@@ -1,5 +1,3 @@
-
-
 # ismac
 
 Checks if version is for MacOS platform.
@@ -10,13 +8,11 @@ Checks if version is for MacOS platform.
 
 ## Output argument
 
- - s - a logical: true if it is a MacOS platform.
+- s - a logical: true if it is a MacOS platform.
 
 ## Description
 
-
   <p><b>ismac</b> checks if it is a MacOs platform.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ end
 ## See also
 
 [isunix](isunix.md), [ispc](ispc.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # setfield
 
 Set structure field contents.
@@ -11,21 +9,19 @@ Set structure field contents.
 
 ## Input argument
 
- - stIn - a structure.
- - fieldname - a string or characters vector.
- - fieldvalue - a variable value.
+- stIn - a structure.
+- fieldname - a string or characters vector.
+- fieldvalue - a variable value.
 
 ## Output argument
 
- - stOut - a structure: result.
+- stOut - a structure: result.
 
 ## Description
-
 
   <p>Set the contents of the specified field to the value.</p>
   <p>Alternative syntax: S.(fieldname) = fieldvalue</p>
   <p>Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ setfield(A, 'vv', 3)
 ## See also
 
 [struct](struct.md), [getfield](getfield.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

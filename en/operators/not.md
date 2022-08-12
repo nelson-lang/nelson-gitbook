@@ -1,5 +1,3 @@
-
-
 # not
 
 not logical, ~ operator
@@ -11,17 +9,15 @@ not logical, ~ operator
 
 ## Input argument
 
- - A - a variable
+- A - a variable
 
 ## Output argument
 
- - C - result of ~A
+- C - result of ~A
 
 ## Description
 
-
   <p><b>C = not(A)</b> performs not logical ~A.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ M = false(3, 3);
 ## See also
 
 [or](or.md), [any](any.html), [all](all.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

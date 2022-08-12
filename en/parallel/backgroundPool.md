@@ -1,5 +1,3 @@
-
-
 # backgroundPool
 
 Environment for running nelson's code in the background.
@@ -10,10 +8,9 @@ Environment for running nelson's code in the background.
 
 ## Output argument
 
- - pool - backgroundPool object.
+- pool - backgroundPool object.
 
 ## Description
-
 
   <p><b>pool = backgroundPool()</b> returns the background pool.</p>
   <p>This allows to run other code in your Nelson's session at the same time.</p>
@@ -22,7 +19,6 @@ Environment for running nelson's code in the background.
   <p>'FevalQueue': Queue of FevalFuture objects to run on the background pool (read only).</p>
   <p>'NumWorkers': Number of workers (read only).</p>
   <p>'Busy': Flag that indicates whether the background pool is busy, logical (read only).</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ f = parfeval(b, fptr, 1, 9);
 ## See also
 
 [parfeval](parfeval.md), [fetchOutputs](fetchOutputs.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

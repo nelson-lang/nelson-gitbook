@@ -1,5 +1,3 @@
-
-
 # MPI_Recv
 
 Blocking receive for a message.
@@ -11,28 +9,28 @@ Blocking receive for a message.
 
 ## Input argument
 
- - Source - an integer value: rank of source.
- - Tag - an integer value: message tag.
- - Comm - a MPI_Comm object.
+- Source - an integer value: rank of source.
+- Tag - an integer value: message tag.
+- Comm - a MPI_Comm object.
 
 ## Output argument
 
- - r - received value
+- r - received value
 
 ## Description
-
 
   <p>This function receives an array from a source node on a given communicator with the specified tag.</p>
   <p>Throws an exception if there is an error.</p>
   <p>Receive arrays of arbitrary complexity, including cell arrays, structures, strings, sparse, etc ...</p>
 
-
 ## See also
 
 [MPI_Send](MPI_Send.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -61,14 +59,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

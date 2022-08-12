@@ -1,5 +1,3 @@
-
-
 # mrdivide
 
 Matrix right division, / operator.
@@ -11,18 +9,16 @@ Matrix right division, / operator.
 
 ## Input argument
 
- - A - a variable
- - B - a variable
+- A - a variable
+- B - a variable
 
 ## Output argument
 
- - C - result of A / B
+- C - result of A / B
 
 ## Description
 
-
   <p><b>C = mrdivide(A, B)</b> returns the matrix right division of A and B.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ A / B
 ## See also
 
 [ldivide](ldivide.md), [mldivide](mldivide.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

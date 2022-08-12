@@ -1,5 +1,3 @@
-
-
 # swapbytes
 
 Swap byte ordering.
@@ -10,18 +8,16 @@ Swap byte ordering.
 
 ## Input argument
 
- - M - a variable: integer, single or double real full matrix.
+- M - a variable: integer, single or double real full matrix.
 
 ## Output argument
 
- - R - result of swapbytes: reversed byte order of M.
+- R - result of swapbytes: reversed byte order of M.
 
 ## Description
 
-
   <p><b>swapbytes</b> Swap byte ordering.</p>
   <p>endian (little - big) converter</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ Y = swapbytes(X)
 ## See also
 
 [num2bin](num2bin.md), [bin2num](bin2num.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

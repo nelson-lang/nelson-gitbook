@@ -1,5 +1,3 @@
-
-
 # engGetVisible
 
 Determine visibility of Nelson engine session
@@ -11,18 +9,16 @@ Determine visibility of Nelson engine session
 
 ## Input argument
 
- - Engine *ep - handle to Nelson engine.
+- Engine \*ep - handle to Nelson engine.
 
 ## Output argument
 
- - int - 0 if successful or 1 if an error occurs.
- - bool * - true (visible) or false (minimize).
+- int - 0 if successful or 1 if an error occurs.
+- bool \* - true (visible) or false (minimize).
 
 ## Description
 
-
   <p>Determine visibility of Nelson engine session</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ edit([modulepath('mex'), '/tests/test_engine.c'])
 ## See also
 
 [mex](mex.md), [engSetVisible](engSetVisible.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

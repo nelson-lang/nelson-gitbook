@@ -1,5 +1,3 @@
-
-
 # repo
 
 Git repository tool for Nelson
@@ -25,21 +23,20 @@ Git repository tool for Nelson
 
 ## Input argument
 
- - url - a string: URL to a git repository.
- - branch - a string: branch name.
- - destination - a string: local pathname.
- - branch_tag_sha1 - a string: a branch name, tag or sha1.
- - username - a string: username used if an authentification is required.
- - password - a string: password used  if an authentification is required.
+- url - a string: URL to a git repository.
+- branch - a string: branch name.
+- destination - a string: local pathname.
+- branch_tag_sha1 - a string: a branch name, tag or sha1.
+- username - a string: username used if an authentification is required.
+- password - a string: password used if an authentification is required.
 
 ## Output argument
 
- - ce - a cell: list of tags or branchs.
- - st - a structure: contains log information.
- - current_branch - a string: name of current branch.
+- ce - a cell: list of tags or branchs.
+- st - a structure: contains log information.
+- current_branch - a string: name of current branch.
 
 ## Description
-
 
   <p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
   <p>checkout command will be forced and remove untracked filed.</p>
@@ -53,7 +50,6 @@ Git repository tool for Nelson
   <p>Remove entries:</p>
   <p>[url "git@github.com:"]</p>
   <p>  insteadOf = https://github.com/</p>
-
 
 Used function(s)
 
@@ -78,16 +74,13 @@ repo('log', destination)
 ## See also
 
 [webread](webread.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

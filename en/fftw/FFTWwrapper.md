@@ -1,5 +1,3 @@
-
-
 # FFTWwrapper
 
 load/free FFTW library dynamically.
@@ -12,34 +10,29 @@ load/free FFTW library dynamically.
 
 ## Input argument
 
- - 'load' - load FFTW library.
- - 'free' - free FFTW library.
- - fftwlibraryname - a string: fftw library name.
- - fftwflibraryname - a string: fftw float library name.
+- 'load' - load FFTW library.
+- 'free' - free FFTW library.
+- fftwlibraryname - a string: fftw library name.
+- fftwflibraryname - a string: fftw float library name.
 
 ## Output argument
 
- - r - a logical.
+- r - a logical.
 
 ## Description
 
-
   <p><b>FFTWwrapper</b> is an internal builtin used to load FFTW library dynamically.</p>
-
 
 ## See also
 
 [fft](fft.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # count
 
 Computes the number of occurrences of an pattern.
@@ -12,12 +10,12 @@ Computes the number of occurrences of an pattern.
 
 ## Input argument
 
- - str - a string, string array or cell of strings.
- - pattern - a string or string array or cell of strings to find.
+- str - a string, string array or cell of strings.
+- pattern - a string or string array or cell of strings to find.
 
 ## Output argument
 
- - nbocc - a matrix of integer values.
+- nbocc - a matrix of integer values.
 
 ## Description
 
@@ -41,16 +39,13 @@ k = count(A, 'son')
 ## See also
 
 [startsWith](startsWith.md), [endsWith](endsWith.md), [contains](contains.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

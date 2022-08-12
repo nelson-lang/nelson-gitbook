@@ -1,5 +1,3 @@
-
-
 # dllibinfo
 
 Returns list of available symbols in an shared library.
@@ -10,17 +8,15 @@ Returns list of available symbols in an shared library.
 
 ## Input argument
 
- - lib - a dllib handle: library already loaded.
+- lib - a dllib handle: library already loaded.
 
 ## Output argument
 
- - c - a cell of strings.
+- c - a cell of strings.
 
 ## Description
 
-
   <p><b>dllibinfo</b> returns list of available symbols in an shared library.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ c = dllibinfo(lib)
 ## See also
 
 [dlopen](dlopen.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

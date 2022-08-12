@@ -1,5 +1,3 @@
-
-
 # nmm
 
 Nelson Modules Manager.
@@ -16,19 +14,18 @@ Nelson Modules Manager.
 
 ## Input argument
 
- - module_name - a string: short module's name.
- - state - a logical: true will autoload module at startup, false disable autoload for this module.
- - git_url - a string: a git url (http/https protocol).
- - destination_dir - a string: an existing destination directory where archive will be created.
+- module_name - a string: short module's name.
+- state - a logical: true will autoload module at startup, false disable autoload for this module.
+- git_url - a string: a git url (http/https protocol).
+- destination_dir - a string: an existing destination directory where archive will be created.
 
 ## Output argument
 
- - st - a struct: list of installed modules.
- - l - a logical: current state of autoload.
- - package_filename - a string: filename.
+- st - a struct: list of installed modules.
+- l - a logical: current state of autoload.
+- package_filename - a string: filename.
 
 ## Description
-
 
   <p><b>nmm</b> is the Nelson Modules Manager.</p>
   <p>Source-based distribution packages allows to have optimized packages for your computer and allows to have distributed repositories.</p>
@@ -56,10 +53,10 @@ Nelson Modules Manager.
   <p><b>nmm('package', module_name, destination_dir)</b> packages an module as a zip file.</p>
   <p/>
 
-
 ## Examples
 
 Deploy module_skeleton_basic template
+
 ```matlab
 if ~ismodule('module_skeleton_basic')
     nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
@@ -67,7 +64,9 @@ if ~ismodule('module_skeleton_basic')
     nmm('uninstall', 'module_skeleton_basic')
 end
 ```
+
 Package easily a module
+
 ```matlab
 if ~ismodule('module_skeleton_basic')
     nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
@@ -78,16 +77,13 @@ package_filename = nmm('package', 'module_skeleton_basic', tempdir())
 ## See also
 
 [ismodule](ismodule.md), [getmodules](getmodules.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

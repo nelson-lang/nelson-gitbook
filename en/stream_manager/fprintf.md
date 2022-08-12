@@ -1,5 +1,3 @@
-
-
 # fprintf
 
 Writes data to a file.
@@ -12,16 +10,15 @@ Writes data to a file.
 
 ## Input argument
 
- - fid - a file descriptor
- - format - a string describing the format to used_function.
- - v1, ... , vn - data to convert and print according to the previous format parameter.
+- fid - a file descriptor
+- format - a string describing the format to used_function.
+- v1, ... , vn - data to convert and print according to the previous format parameter.
 
 ## Output argument
 
- - R - an integer value: number of bytes that fprintf write.
+- R - an integer value: number of bytes that fprintf write.
 
 ## Description
-
 
   <p>Write data in text form to the file specified by the file descriptor fid.</p>
   <p>characters encoding uses <b>fopen</b> parameter.</p>
@@ -101,7 +98,6 @@ Writes data to a file.
     </tr>
   </table>
 
-
 ## Examples
 
 ```matlab
@@ -111,11 +107,14 @@ fclose(fileID);
 
 R = fileread([tempdir(), 'fprintf.txt'])
 ```
+
 ```matlab
 fprintf(1, 'an value %g.', pi);
 fprintf(2, "an value %g.", pi);
 ```
+
 How to use backspace
+
 ```matlab
 reverseStr = '';
 for idx = 1 : 100
@@ -129,16 +128,13 @@ end
 ## See also
 
 [fopen](fopen.md), [fclose](fclose.md), [fread](fread.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

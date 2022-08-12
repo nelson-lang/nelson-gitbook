@@ -1,5 +1,3 @@
-
-
 # QObject_iswidgettype
 
 Returns true if the QObject is a widget.
@@ -10,21 +8,20 @@ Returns true if the QObject is a widget.
 
 ## Input argument
 
- - h - an QObject handle.
+- h - an QObject handle.
 
 ## Output argument
 
- - R - a logical.
+- R - a logical.
 
 ## Description
 
-
   <p>Returns true if the QObject is a widget; otherwise returns false.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html).
+
 ## Example
 
 ```matlab
@@ -34,14 +31,10 @@ r = QObject_iswidgettype(h)
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

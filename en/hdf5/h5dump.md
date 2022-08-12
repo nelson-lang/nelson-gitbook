@@ -1,5 +1,3 @@
-
-
 # h5dump
 
 dump the content of hdf5 file as text.
@@ -13,18 +11,16 @@ dump the content of hdf5 file as text.
 
 ## Input argument
 
- - filename - a string: hdf5 filename.
- - location - a string: name of the path to dump.
+- filename - a string: hdf5 filename.
+- location - a string: name of the path to dump.
 
 ## Output argument
 
- - R - a string: dump of hdf5 file as text.
+- R - a string: dump of hdf5 file as text.
 
 ## Description
 
-
   <p><b>h5dump</b> dump the content of hdf5 file as text.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ R = h5dump([tempdir(), 'myfile.h5'])
 ## See also
 
 [h5write](h5write.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

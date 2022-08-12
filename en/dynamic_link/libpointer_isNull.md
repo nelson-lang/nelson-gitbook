@@ -1,5 +1,3 @@
-
-
 # libpointer_isNull
 
 Checks if libpointer handle points on NULL pointer.
@@ -11,21 +9,20 @@ Checks if libpointer handle points on NULL pointer.
 
 ## Input argument
 
- - h - a libpointer handle.
+- h - a libpointer handle.
 
 ## Output argument
 
- - tf - a logical.
+- tf - a logical.
 
 ## Description
 
-
   <p>Checks if libpointer handle points on NULL pointer.</p>
-
 
 ## See also
 
 [libpointer](libpointer.md).
+
 ## Example
 
 ```matlab
@@ -38,14 +35,10 @@ isNull(p2)
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # ismacro
 
 Check for the existence of a macro (function).
@@ -10,17 +8,15 @@ Check for the existence of a macro (function).
 
 ## Input argument
 
- - name - a string: macro name.
+- name - a string: macro name.
 
 ## Output argument
 
- - tf - a logical: true if macro exists.
+- tf - a logical: true if macro exists.
 
 ## Description
 
-
   <p><b>isbuiltin</b> checks for the existence of a macro.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ ismacro('exist')
 ## See also
 
 [isbuiltin](isbuiltin.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

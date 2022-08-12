@@ -1,5 +1,3 @@
-
-
 # isuint16
 
 Return true if variable var is an unsigned 16-bit integer type array.
@@ -10,11 +8,11 @@ Return true if variable var is an unsigned 16-bit integer type array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is an unsigned 16-bit integer type array.
 A = 3;
 res = isuint16(A)
 ```
+
 ```matlab
 B = uint16(3);
 res = isuint16(B)
@@ -34,16 +33,13 @@ res = isuint16(B)
 ## See also
 
 [isa](isa.md), [uint16](../integer/uint16.md), [isinteger](isinteger.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

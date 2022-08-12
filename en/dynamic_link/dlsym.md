@@ -1,5 +1,3 @@
-
-
 # dlsym
 
 Loads a C/Fortran symbol for an dynamic library.
@@ -10,17 +8,16 @@ Loads a C/Fortran symbol for an dynamic library.
 
 ## Input argument
 
- - lib - a dllib handle.
- - symbolname - a string: symbol to load.
- - return_type - a string: return type of the C/Fortran function.
- - params_types - a cell of strings: arguments using a special syntax with differents data types.
+- lib - a dllib handle.
+- symbolname - a string: symbol to load.
+- return_type - a string: return type of the C/Fortran function.
+- params_types - a cell of strings: arguments using a special syntax with differents data types.
 
 ## Output argument
 
- - f - a dlsym handle.
+- f - a dlsym handle.
 
 ## Description
-
 
   <p><b>dlsym</b> retrieves the address of an exported function as an dlsym handle.</p>
   <p>if <b>symbolname</b> not found, nelson try to find symbol equivalent based on these rules and in this order:</p>
@@ -53,7 +50,6 @@ Loads a C/Fortran symbol for an dynamic library.
   <p/>
   <p>Warning: Uses wrong datatype definitions a foreign function can terminate unexpectedly.</p>
 
-
 ## Examples
 
 ```matlab
@@ -66,11 +62,15 @@ f = dlsym(lib, 'dynlibTestMultiplyDoubleArrayWithReturn', 'int32', {'doublePtr',
 delete(f);
 delete(lib);
 ```
+
 Call C getpid function
+
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_c.m']);
 ```
+
 Call fortran DASUM (blas) function
+
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ```
@@ -78,16 +78,13 @@ run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ## See also
 
 [dlcall](dlcall.md), [C/Nelson equivalent data types](C_datatype.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

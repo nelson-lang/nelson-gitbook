@@ -1,5 +1,3 @@
-
-
 # isquietmode
 
 Return true if Nelson started with --quiet option.
@@ -10,13 +8,11 @@ Return true if Nelson started with --quiet option.
 
 ## Output argument
 
- - res - a logical true or false
+- res - a logical true or false
 
 ## Description
 
-
   <p><b>isquietmode</b> returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ disp(isquietmode());
 ## See also
 
 [executable](executable.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # engEvalString
 
 Evaluate expression in string in base scope
@@ -11,18 +9,16 @@ Evaluate expression in string in base scope
 
 ## Input argument
 
- - Engine *ep - handle to Nelson engine.
- - const char *string - Expression to evaluate.
+- Engine \*ep - handle to Nelson engine.
+- const char \*string - Expression to evaluate.
 
 ## Output argument
 
- - int - returns 1 if the engine session is closed or invalid. Otherwise, returns 0.
+- int - returns 1 if the engine session is closed or invalid. Otherwise, returns 0.
 
 ## Description
 
-
   <p>Evaluate expression in string in base scope.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 ## See also
 
 [mex](mex.md), [engPutVariable](engPutVariable.md), [engGetVariable](engGetVariable.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

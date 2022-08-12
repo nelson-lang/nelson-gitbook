@@ -1,5 +1,3 @@
-
-
 # mustBeScalarOrEmpty
 
 Checks that value is scalar or empty or raise an error.
@@ -12,14 +10,12 @@ Checks that value is scalar or empty or raise an error.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement isscalar and isempty methods.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement isscalar and isempty methods.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeScalarOrEmpty([true false])
 ## See also
 
 [isempty](isempty.html), [islogical](../types/islogical.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

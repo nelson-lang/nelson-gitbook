@@ -1,5 +1,3 @@
-
-
 # blanks
 
 creates an string of blank characters.
@@ -10,11 +8,11 @@ creates an string of blank characters.
 
 ## Input argument
 
- - n - an value integer, number of blanks.
+- n - an value integer, number of blanks.
 
 ## Output argument
 
- - r - a character array with n blanks
+- r - a character array with n blanks
 
 ## Description
 
@@ -29,16 +27,13 @@ blanks(4)
 ## See also
 
 [char](char.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

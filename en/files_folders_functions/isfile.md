@@ -1,5 +1,3 @@
-
-
 # isfile
 
 Returns true is the input argument is a file.
@@ -10,17 +8,15 @@ Returns true is the input argument is a file.
 
 ## Input argument
 
- - name - a string: filename to check.
+- name - a string: filename to check.
 
 ## Output argument
 
- - r - a logical: true if it is a file.
+- r - a logical: true if it is a file.
 
 ## Description
 
-
   <p><b>isfile(name)</b> returns <b>true</b> if <b>name</b> is a file.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ isfile([nelsonroot(), '/etc/finish.m'])
 ## See also
 
 [mkdir](mkdir.md), [isfolder](isfolder.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

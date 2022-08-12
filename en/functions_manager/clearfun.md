@@ -1,5 +1,3 @@
-
-
 # clearfun
 
 Clear an built-in function.
@@ -11,18 +9,16 @@ Clear an built-in function.
 
 ## Input argument
 
- - function_name - a string: function name.
- - function_handle - a function handle.
+- function_name - a string: function name.
+- function_handle - a function handle.
 
 ## Output argument
 
- - l - a logical
+- l - a logical
 
 ## Description
 
-
   <p><b>clearfun</b> clears built-in.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ sin(3)
 ## See also
 
 [feval](feval.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

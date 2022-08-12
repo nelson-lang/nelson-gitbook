@@ -1,5 +1,3 @@
-
-
 # istriu
 
 Checks if matrix is upper triangular.
@@ -10,17 +8,15 @@ Checks if matrix is upper triangular.
 
 ## Input argument
 
- - M - a numeric array
+- M - a numeric array
 
 ## Output argument
 
- - tf - logical: result of 'istriu'.
+- tf - logical: result of 'istriu'.
 
 ## Description
 
-
   <p><b>istriu</b> returns an scalar logical if entry is upper triangular.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ R = istriu(A(:,1))
 ## See also
 
 [isdiag](isdiag.md), [istril](istril.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

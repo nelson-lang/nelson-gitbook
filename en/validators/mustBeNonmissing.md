@@ -1,5 +1,3 @@
-
-
 # mustBeNonmissing
 
 Checks that value is not missing.
@@ -12,14 +10,12 @@ Checks that value is not missing.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement ismissing method.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement ismissing method.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeNonmissing</b> checks that value is not missing or raise an error.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeNonmissing(["hello" string(NaN)])
 ## See also
 
 [ismissing](ismissing.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

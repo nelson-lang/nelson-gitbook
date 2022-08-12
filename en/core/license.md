@@ -1,5 +1,3 @@
-
-
 # license
 
 Get license information for Nelson.
@@ -12,14 +10,12 @@ Get license information for Nelson.
 
 ## Output argument
 
- - r - a string: minimal string description about license
- - txt - a string: complete license text.
+- r - a string: minimal string description about license
+- txt - a string: complete license text.
 
 ## Description
 
-
   <p><b>license</b> get license information for Nelson.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ r = license()
 ## See also
 
 [banner](banner.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

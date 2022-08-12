@@ -1,5 +1,3 @@
-
-
 # setenv
 
 Set the value of an environment variable.
@@ -10,14 +8,12 @@ Set the value of an environment variable.
 
 ## Input argument
 
- - env_name - a string: environment variable name.
- - env_value - a string: environment variable value.
+- env_name - a string: environment variable name.
+- env_value - a string: environment variable value.
 
 ## Description
 
-
   <p><b>setenv</b> set the value of an environment variable.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ getenv('MY_ENV_VAR')
 ## See also
 
 [getenv](getenv.md), [searchenv](searchenv.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

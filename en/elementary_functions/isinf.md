@@ -1,5 +1,3 @@
-
-
 # isinf
 
 Check for Infinity entries.
@@ -10,17 +8,15 @@ Check for Infinity entries.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - tf - logical: result of 'isinf'.
+- tf - logical: result of 'isinf'.
 
 ## Description
 
-
   <p><b>isnan</b> returns a logical array which is true where elements of M are Infinity values.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ R = isinf(X)
 ## See also
 
 [isnan](isnan.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # mustBeNumeric
 
 Checks that value is numeric or raise an error.
@@ -12,15 +10,13 @@ Checks that value is numeric or raise an error.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement isnumeric method.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement isnumeric method.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeNumeric</b> checks that value is numeric or raise an error.</p>
   <p>Empty values are ignored.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ mustBeNumeric({1})
 ## See also
 
 [isnumeric](../types/isnumeric.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # function
 
 # endfunction
@@ -15,14 +13,13 @@ function declaration.
 
 ## Description
 
-
   <p><b>function</b> opens a function definition.</p>
   <p><b>endfunction</b> closes a function definition (optional, but strongly recommended).</p>
-
 
 ## Example
 
 in a file: demo_function.m
+
 ```matlab
 function r = demo_function(a, b)
   r = a + b;
@@ -32,16 +29,13 @@ endfunction
 ## See also
 
 [addpath](../functions_manager/addpath.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

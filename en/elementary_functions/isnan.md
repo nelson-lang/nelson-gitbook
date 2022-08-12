@@ -1,5 +1,3 @@
-
-
 # isnan
 
 Check for Not a Number entries.
@@ -10,17 +8,15 @@ Check for Not a Number entries.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - tf - logical: result of 'isnan'.
+- tf - logical: result of 'isnan'.
 
 ## Description
 
-
   <p><b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ R = isnan(X)
 ## See also
 
 [isinf](isinf.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

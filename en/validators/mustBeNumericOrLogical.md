@@ -1,5 +1,3 @@
-
-
 # mustBeNumericOrLogical
 
 Checks that input is numeric or logical.
@@ -12,14 +10,12 @@ Checks that input is numeric or logical.
 
 ## Input argument
 
- - var - a variable.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeNumericOrLogical</b> checks that value is numeric or logical otherwise raise an error.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeNumericOrLogical({1})
 ## See also
 
 [isnumeric](../types/isnumeric.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

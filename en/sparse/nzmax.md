@@ -1,5 +1,3 @@
-
-
 # nzmax
 
 Reserved size for nonzero elements.
@@ -10,17 +8,15 @@ Reserved size for nonzero elements.
 
 ## Input argument
 
- - M - a matrix: double or logical, sparse or not.
+- M - a matrix: double or logical, sparse or not.
 
 ## Output argument
 
- - v - a integer value.
+- v - a integer value.
 
 ## Description
 
-
   <p><b>nzmax</b> returns the amount of storage allocated for nonzero elements.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ nzmax(sp)
 ## See also
 
 [sparse](sparse.md), [nnz](nzmax.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

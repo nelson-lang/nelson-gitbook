@@ -1,8 +1,6 @@
-
-
 # isunix
 
-Checks if version is for  GNU Linux or Unix platform.
+Checks if version is for GNU Linux or Unix platform.
 
 ## Syntax
 
@@ -10,14 +8,12 @@ Checks if version is for  GNU Linux or Unix platform.
 
 ## Output argument
 
- - s - a logical: true if it is a GNU Linux or Unix platform.
+- s - a logical: true if it is a GNU Linux or Unix platform.
 
 ## Description
 
-
   <p><b>isunix</b> checks if it is a GNU Linux or Unix platform.</p>
   <p>MacOs platform is also detected as a GNU Linux or Unix platform.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ end
 ## See also
 
 [ispc](ispc.md), [ismac](ismac.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

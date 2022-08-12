@@ -1,5 +1,3 @@
-
-
 # isStringScalar
 
 checks if input is string array with one element.
@@ -10,17 +8,15 @@ checks if input is string array with one element.
 
 ## Input argument
 
- - str - a string, string array or cell of strings.
+- str - a string, string array or cell of strings.
 
 ## Output argument
 
- - r - a logical, true if res is string type and scalar.
+- r - a logical, true if res is string type and scalar.
 
 ## Description
 
-
   <p><b>isStringScalar</b> checks if input is string array with one element.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ r = isStringScalar(["hello", "world"])
 ## See also
 
 [ischar](../types/ischar.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

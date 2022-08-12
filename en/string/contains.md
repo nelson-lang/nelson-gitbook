@@ -1,5 +1,3 @@
-
-
 # contains
 
 checks if string contains with pattern.
@@ -12,12 +10,12 @@ checks if string contains with pattern.
 
 ## Input argument
 
- - str - a string, string array or cell of strings.
- - pattern - a string to find.
+- str - a string, string array or cell of strings.
+- pattern - a string to find.
 
 ## Output argument
 
- - tf - a matrix of logical.
+- tf - a matrix of logical.
 
 ## Description
 
@@ -41,16 +39,13 @@ k = contains(A, 'son')
 ## See also
 
 [startsWith](startsWith.md), [endsWith](endsWith.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

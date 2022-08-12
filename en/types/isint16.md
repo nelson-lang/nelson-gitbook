@@ -1,5 +1,3 @@
-
-
 # isint16
 
 Return true if variable var is a signed 16-bit integer type array.
@@ -10,11 +8,11 @@ Return true if variable var is a signed 16-bit integer type array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a signed 16-bit integer type array.
 A = 3;
 res = isint16(A)
 ```
+
 ```matlab
 B = int16(3);
 res = isint16(B)
@@ -34,16 +33,13 @@ res = isint16(B)
 ## See also
 
 [isa](isa.md), [int16](../integer/int16.md), [isinteger](isinteger.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

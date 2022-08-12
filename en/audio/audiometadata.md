@@ -1,5 +1,3 @@
-
-
 # audiometadata
 
 Get/Set metadata of audio file .
@@ -11,21 +9,19 @@ Get/Set metadata of audio file .
 
 ## Input argument
 
- - filename - a string: an valid audio filename.
- - info_new - a struct: new information about audio file to set.
+- filename - a string: an valid audio filename.
+- info_new - a struct: new information about audio file to set.
 
 ## Output argument
 
- - info - a struct: information about audio file.
- - info_previous - a struct: previous information about audio file.
+- info - a struct: information about audio file.
+- info_previous - a struct: previous information about audio file.
 
 ## Description
-
 
   <p><b>audiometadata</b> returns a structure with metadata of an audio file.</p>
   <p><b>audiometadata</b> manages all tags available in the audio file.</p>
   <p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
-
 
 ## Examples
 
@@ -33,6 +29,7 @@ Get/Set metadata of audio file .
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 info = audiometadata(wav_file)
 ```
+
 ```matlab
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 modified_wav_file = [tempdir(), 'haha_modified_tags.wav'];
@@ -51,14 +48,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

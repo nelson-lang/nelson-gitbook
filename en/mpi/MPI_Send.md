@@ -1,5 +1,3 @@
-
-
 # MPI_Send
 
 Performs a blocking send.
@@ -11,25 +9,25 @@ Performs a blocking send.
 
 ## Input argument
 
- - A - an nelson array to send.
- - destination - an integer value: rank of source.
- - tag - an integer value: message tag.
- - comm - a MPI_Comm object.
+- A - an nelson array to send.
+- destination - an integer value: rank of source.
+- tag - an integer value: message tag.
+- comm - a MPI_Comm object.
 
 ## Description
-
 
   <p>This function sends an array to a destination node on a given communicator with a specific message tag.</p>
   <p>Note that there has to be a matching receive issued by the destination node.</p>
   <p>Throws an exception if there is an error.</p>
 
-
 ## See also
 
 [MPI_Recv](MPI_Recv.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -58,14 +56,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

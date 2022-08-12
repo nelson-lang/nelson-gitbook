@@ -1,5 +1,3 @@
-
-
 # atan2
 
 Computes the four-quadrant inverse tangent.
@@ -10,12 +8,12 @@ Computes the four-quadrant inverse tangent.
 
 ## Input argument
 
- - y - a numeric value (double or single real)
- - x - a numeric value (double or single real)
+- y - a numeric value (double or single real)
+- x - a numeric value (double or single real)
 
 ## Output argument
 
- - res - a numeric value
+- res - a numeric value
 
 ## Description
 
@@ -30,16 +28,13 @@ atan2(1, 0)
 ## See also
 
 [atan](atan.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # max_recursion_depth
 
 Internal limit on the number of times a function may be called recursively.
@@ -11,29 +9,23 @@ Internal limit on the number of times a function may be called recursively.
 
 ## Input argument
 
- - new_val - a integer value: new value
+- new_val - a integer value: new value
 
 ## Output argument
 
- - current_val - a integer value.
- - previous_val - a integer value.
+- current_val - a integer value.
+- previous_val - a integer value.
 
 ## Description
 
-
   <p><b>max_recursion_depth</b> specifies the recursion depth max to prevent Nelson from recursing infinitely.</p>
-
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

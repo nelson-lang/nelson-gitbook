@@ -1,5 +1,3 @@
-
-
 # helpdlg
 
 Creates a warning dialog box.
@@ -13,31 +11,32 @@ Creates a warning dialog box.
 
 ## Input argument
 
- - text_warning - a string or a cell of string: the warning message.
- - title - a string: the title of the dialog box.
+- text_warning - a string or a cell of string: the warning message.
+- title - a string: the title of the dialog box.
 
 ## Output argument
 
- - h - a QObject handle.
+- h - a QObject handle.
 
 ## Description
 
-
   <p><b>errordlg</b> creates an warning dialog box.</p>
   <p><b>h = warndlg(text_warning, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
-
 
 ## Examples
 
 ```matlab
 h = warndlg()
 ```
+
 ```matlab
 h = warndlg('help string')
 ```
+
 ```matlab
 h = warndlg('help string', 'dialog title')
 ```
+
 ```matlab
 h = warndlg('help string', 'dialog title')
 h = warndlg('help string', 'dialog title', 'on')
@@ -46,16 +45,13 @@ h = warndlg('help string', 'dialog title', 'on')
 ## See also
 
 [helpdlg](helpdlg.html), [errordlg](errordlg.html), [questdlg](questdlg.html), [msgbox](msgbox.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

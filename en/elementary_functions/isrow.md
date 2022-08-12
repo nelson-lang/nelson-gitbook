@@ -1,5 +1,3 @@
-
-
 # isrow
 
 Determine whether input is row vector.
@@ -10,17 +8,15 @@ Determine whether input is row vector.
 
 ## Input argument
 
- - V - a variable
+- V - a variable
 
 ## Output argument
 
- - tf - logical: result of 'isrow'.
+- tf - logical: result of 'isrow'.
 
 ## Description
 
-
   <p><b>isrow(V)</b> returns logical <b>true</b> if size(V) returns [1, n] with a nonnegative integer value n, and logical <b>false</b> otherwise.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ isrow([1:4]')
 ## See also
 
 [iscolumn](iscolumn.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

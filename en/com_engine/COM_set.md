@@ -1,5 +1,3 @@
-
-
 # COM_set
 
 Set object or interface property to specified value.
@@ -12,15 +10,13 @@ Set object or interface property to specified value.
 
 ## Input argument
 
- - h - a COM object.
- - propertyname - a string: the property's name of COM object.
- - value - a string, boolean, double ...
+- h - a COM object.
+- propertyname - a string: the property's name of COM object.
+- value - a string, boolean, double ...
 
 ## Description
 
-
   <p>The function sets the property specified in the string propertyname to the given value.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ clear pWord
 ## See also
 
 [COM_get](COM_get.md), [COM_invoke](COM_invoke.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

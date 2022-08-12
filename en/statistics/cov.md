@@ -1,5 +1,3 @@
-
-
 # cov
 
 Covariance
@@ -10,17 +8,15 @@ Covariance
 
 ## Input argument
 
- - M - a vector or matrix
+- M - a vector or matrix
 
 ## Output argument
 
- - V - Covariance of M.
+- V - Covariance of M.
 
 ## Description
 
-
   <p><b>C = cov(M)</b> returns the covariance.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ C = cov(M)
 ## See also
 
 [var](var.html), [mean](mean.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

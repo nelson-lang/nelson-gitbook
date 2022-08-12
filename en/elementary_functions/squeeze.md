@@ -1,5 +1,3 @@
-
-
 # squeeze
 
 Remove dimensions of length 1.
@@ -10,17 +8,15 @@ Remove dimensions of length 1.
 
 ## Input argument
 
- - A - input array: multidimensional array
+- A - input array: multidimensional array
 
 ## Output argument
 
- - B - output array.
+- B - output array.
 
 ## Description
 
-
   <p><b>B = squeeze(A)</b> returns an array with the same elements as the input array A, but with dimensions of length 1 removed.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ R = squeeze(A)
 ## See also
 
 [reshape](reshape.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # methods
 
 Returns the methods name of an object handle.
@@ -10,11 +8,11 @@ Returns the methods name of an object handle.
 
 ## Input argument
 
- - h - a handle object
+- h - a handle object
 
 ## Output argument
 
- - c - a cell of strings
+- c - a cell of strings
 
 ## Description
 
@@ -23,16 +21,13 @@ Returns the methods name of an object handle.
 ## See also
 
 [isprop](isprop.md), [ismethod](ismethod.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

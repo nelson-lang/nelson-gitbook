@@ -1,5 +1,3 @@
-
-
 # assert_isfalse
 
 Check that condition is false.
@@ -15,13 +13,13 @@ Check that condition is false.
 
 ## Input argument
 
- - x - a logical value
- - err_msg - a string, the error message to be printed in case of failure (optional).
+- x - a logical value
+- err_msg - a string, the error message to be printed in case of failure (optional).
 
 ## Output argument
 
- - res - a logical value
- - msg - a string value, the error message. If x == false, then msg == ''. If x == true, then msg contains the error message.
+- res - a logical value
+- msg - a string value, the error message. If x == false, then msg == ''. If x == true, then msg contains the error message.
 
 ## Description
 
@@ -32,15 +30,19 @@ Raises an error if x is true. Raises an error if x is not a logical.
 ```matlab
 assert_isfalse(3 ~= 4)
 ```
+
 ```matlab
 assert_isfalse(3 == 4)
 ```
+
 ```matlab
 r = assert_isfalse(false)
 ```
+
 ```matlab
 [r, msg] = assert_isfalse(false)
 ```
+
 ```matlab
 [r, msg] = assert_isfalse(3 == 3, 'your error message.')
 ```
@@ -48,16 +50,13 @@ r = assert_isfalse(false)
 ## See also
 
 [assert_istrue](assert_istrue.md), [assert_checkerror](assert_checkerror.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

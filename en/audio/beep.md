@@ -1,5 +1,3 @@
-
-
 # beep
 
 Produces a beep sound.
@@ -12,11 +10,11 @@ Produces a beep sound.
 
 ## Input argument
 
- - str - a string: 'on' or 'off'.
+- str - a string: 'on' or 'off'.
 
 ## Output argument
 
- - str - a string: 'on' or 'off'.
+- str - a string: 'on' or 'off'.
 
 ## Description
 
@@ -34,14 +32,10 @@ s = beep
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

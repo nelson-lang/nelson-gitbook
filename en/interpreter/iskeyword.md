@@ -1,5 +1,3 @@
-
-
 # iskeyword
 
 Returns all Nelson keywords.
@@ -11,18 +9,16 @@ Returns all Nelson keywords.
 
 ## Input argument
 
- - name - a string.
+- name - a string.
 
 ## Output argument
 
- - state - a logical: true if is an Nelson keyword.
- - ce - a cell of strings: list of Nelson's keywords.
+- state - a logical: true if is an Nelson keyword.
+- ce - a cell of strings: list of Nelson's keywords.
 
 ## Description
 
-
   <p><b>iskeyword</b> returns a list of all Nelson keywords.</p>
-
 
 ## Example
 
@@ -33,14 +29,10 @@ ce = iskeyword()
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

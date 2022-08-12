@@ -1,5 +1,3 @@
-
-
 # COM_delete
 
 Removes COM control or server.
@@ -11,15 +9,13 @@ Removes COM control or server.
 
 ## Input argument
 
- - h - a handle: a COM object.
+- h - a handle: a COM object.
 
 ## Description
-
 
   <p><b>delete(h)</b> releases all the interfaces derived from the specified COM server or control, and then deletes the server or control itself.</p>
   <p> This is different from releasing an interface, which releases and invalidates only the particular interface.</p>
   <p>Do not forget to clear h afterward.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ clear pTextToSpeech
 ## See also
 
 [actxserver](actxserver.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

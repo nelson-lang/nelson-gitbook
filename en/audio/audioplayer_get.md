@@ -1,5 +1,3 @@
-
-
 # audioplayer_get
 
 Get property value from audioplayer interface.
@@ -12,18 +10,16 @@ Get property value from audioplayer interface.
 
 ## Input argument
 
- - h - an audioplayer object.
- - propertyname - a string: the property's name of audioplayer object.
+- h - an audioplayer object.
+- propertyname - a string: the property's name of audioplayer object.
 
 ## Output argument
 
- - v - a nelson variable.
+- v - a nelson variable.
 
 ## Description
 
-
   <p>The function returns the value of the property specified in the string, propertyname.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ playObj.Running
 ## See also
 
 [audioplayer_set](audioplayer_set.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

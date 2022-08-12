@@ -1,5 +1,3 @@
-
-
 # fftn
 
 N-Dimensions fast Fourier transform.
@@ -11,21 +9,19 @@ N-Dimensions fast Fourier transform.
 
 ## Input argument
 
- - X - a vector, matrix or N-D array (double, single, integer, logical).
- - sz - a multidimensional array
+- X - a vector, matrix or N-D array (double, single, integer, logical).
+- sz - a multidimensional array
 
 ## Output argument
 
- - Y - a vector, matrix, N-D array: frequency domain representation.
+- Y - a vector, matrix, N-D array: frequency domain representation.
 
 ## Description
-
 
   <p><b>Y = fftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.</p>
   <p>The size of the result <b>Y</b> is <b>sz</b>.</p>
   <p><b>Y = fftn(X)</b> performs the N-dimensional fast Fourier transform.</p>
   <p>The result <b>Y</b> is the same size as <b>X</b>.</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ Y = ifftn(fftn(f));
 ## See also
 
 [ifftn](ifftn.md), [fft](fft.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

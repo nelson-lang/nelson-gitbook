@@ -1,5 +1,3 @@
-
-
 # figure
 
 Creates an figure window.
@@ -12,15 +10,14 @@ Creates an figure window.
 
 ## Input argument
 
- - ID - a scalar integer value: find or creates with ID.
- - H - a scalar graphic object on an existing figure.
+- ID - a scalar integer value: find or creates with ID.
+- H - a scalar graphic object on an existing figure.
 
 ## Output argument
 
- - f - a graphic object: figure handle.
+- f - a graphic object: figure handle.
 
 ## Description
-
 
   <p><b>figure</b> creates figure.</p>
   <p>Properties:</p>
@@ -35,7 +32,6 @@ Creates an figure window.
   <p><b>UserData</b>: User data (any array type).</p>
   <p><b>Visible</b>: </p>
 
-
 ## Example
 
 ```matlab
@@ -49,16 +45,13 @@ gcf()
 ## See also
 
 [gcf](gcf.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

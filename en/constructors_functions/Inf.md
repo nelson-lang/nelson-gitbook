@@ -1,5 +1,3 @@
-
-
 # Inf
 
 Infinity
@@ -13,23 +11,23 @@ Infinity
 
 ## Input argument
 
- - n - a variable: n-by-n matrix
- - m - a variable: n-by-m matrix
+- n - a variable: n-by-n matrix
+- m - a variable: n-by-m matrix
 
 ## Description
 
-
   <p><b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
-
 
 ## Examples
 
 ```matlab
 Inf
 ```
+
 ```matlab
 -Inf + Inf
 ```
+
 ```matlab
 1.e1000
 ```
@@ -37,16 +35,13 @@ Inf
 ## See also
 
 [nan](NaN.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

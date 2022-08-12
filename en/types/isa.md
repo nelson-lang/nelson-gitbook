@@ -1,5 +1,3 @@
-
-
 # isa
 
 Return true if var is an object from the class str.
@@ -10,15 +8,14 @@ Return true if var is an object from the class str.
 
 ## Input argument
 
- - var - a variable
- - str - a string: classname expected
+- var - a variable
+- str - a string: classname expected
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
-
 
   <p><b>isa</b> returns a logical 1 if the argument is a cell array and a logical 0 otherwise.</p>
   <p>str can also be 'numeric', 'float', or 'integer':</p>
@@ -27,17 +24,18 @@ Return true if var is an object from the class str.
   <p>integer: unsigned or signed integer array: int8, uint8, int16, uint16, int32, uint32, int64, uint64</p>
   <p>If <b>var</b> is a handle object, str can be 'handle' or type name of the handle.</p>
 
-
 ## Examples
 
 ```matlab
 A = 3;
 res = isa(A, 'double')
 ```
+
 ```matlab
 B = {'NelSon', 3, true};
 res = isa(B, 'cell')
 ```
+
 ```matlab
 B = {'NelSon', 3, true};
 res = isa(B, 'cell')
@@ -46,16 +44,13 @@ res = isa(B, 'cell')
 ## See also
 
 [class](class.md), [isinteger](isinteger.html), [isnumeric](isnumeric.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

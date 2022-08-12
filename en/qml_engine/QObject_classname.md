@@ -1,5 +1,3 @@
-
-
 # QObject_classname
 
 Returns class name of an QObject handle.
@@ -10,21 +8,20 @@ Returns class name of an QObject handle.
 
 ## Input argument
 
- - h - an QObject handle.
+- h - an QObject handle.
 
 ## Output argument
 
- - s - a string: class name.
+- s - a string: class name.
 
 ## Description
 
-
   <p>Returns class name of an QObject handle.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html), [QObject_get (get)](QObject_get.html).
+
 ## Example
 
 ```matlab
@@ -35,14 +32,10 @@ QObject_classname(h1)
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

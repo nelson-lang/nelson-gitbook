@@ -1,5 +1,3 @@
-
-
 # fgetl
 
 Read string from a file without newline.
@@ -10,20 +8,18 @@ Read string from a file without newline.
 
 ## Input argument
 
- - f - a file descriptor
+- f - a file descriptor
 
 ## Output argument
 
- - res - a string or -1
+- res - a string or -1
 
 ## Description
-
 
   <p>Read string from a file, stopping after a newline or EOF have been read.</p>
   <p>If there is no more character to read, fgets will return -1.</p>
   <p>newline character removed of the string returned</p>
   <p>characters encoding uses <b>fopen</b> parameter.</p>
-
 
 ## Example
 
@@ -42,16 +38,13 @@ fclose(fid);
 ## See also
 
 [fclose](fclose.md), [fopen](fopen.md), [fgets](fgets.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # cellstr
 
 Converts to cell of character array.
@@ -10,26 +8,26 @@ Converts to cell of character array.
 
 ## Input argument
 
- - A - a string, a string array, cell of character array.
+- A - a string, a string array, cell of character array.
 
 ## Output argument
 
- - ce - a cell of character array
+- ce - a cell of character array
 
 ## Description
 
-
   <p><b>cellstr(A)</b> converts to cell of character array.</p>
-
 
 ## Examples
 
 ```matlab
 cellstr('Nelson')
 ```
+
 ```matlab
 cellstr({'Nelson'})
 ```
+
 ```matlab
 cellstr({})
 ```
@@ -37,16 +35,13 @@ cellstr({})
 ## See also
 
 [iscellstr](iscellstr.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

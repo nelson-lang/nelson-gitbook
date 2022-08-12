@@ -1,5 +1,3 @@
-
-
 # COM_methods
 
 Returns the methods name of an COM object.
@@ -11,17 +9,15 @@ Returns the methods name of an COM object.
 
 ## Input argument
 
- - h - a COM object.
+- h - a COM object.
 
 ## Output argument
 
- - l - a cell of strings.
+- l - a cell of strings.
 
 ## Description
 
-
-  <description><b>methods</b> returns a cell of strings with methods name.</description>
-
+<description><b>methods</b> returns a cell of strings with methods name.</description>
 
 ## Example
 
@@ -35,16 +31,13 @@ clear e
 ## See also
 
 [COM_set](COM_set.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # istril
 
 Checks if matrix is lower triangular.
@@ -10,17 +8,15 @@ Checks if matrix is lower triangular.
 
 ## Input argument
 
- - M - a numeric array
+- M - a numeric array
 
 ## Output argument
 
- - tf - logical: result of 'istril'.
+- tf - logical: result of 'istril'.
 
 ## Description
 
-
   <p><b>istril</b> returns an scalar logical if entry is lower triangular.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ R = istriu(A(:,1))
 ## See also
 
 [isdiag](isdiag.md), [istril](istril.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

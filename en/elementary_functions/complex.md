@@ -1,5 +1,3 @@
-
-
 # complex
 
 Creates an complex number.
@@ -11,19 +9,17 @@ Creates an complex number.
 
 ## Input argument
 
- - a - a variable: real part
- - b - a variable: imaginary part
+- a - a variable: real part
+- b - a variable: imaginary part
 
 ## Output argument
 
- - cplx - result of a + b*i
+- cplx - result of a + b\*i
 
 ## Description
 
-
   <p><b>complex</b> returns a complex value from real arguments.</p>
   <p>With only one input argument, <b>complex</b> returns a complex value a + 0*i.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ z3 = Inf + Inf * i
 ## See also
 
 [real](real.md), [imag](imag.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

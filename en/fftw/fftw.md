@@ -1,5 +1,3 @@
-
-
 # fftw
 
 function for determining FFT algorithm.
@@ -15,19 +13,17 @@ function for determining FFT algorithm.
 
 ## Input argument
 
- - m - method for setting transform parameters: 'estimate', 'measure', 'patient', 'exhaustive', or 'hybrid'.
- - w - a string: wisdom data.
+- m - method for setting transform parameters: 'estimate', 'measure', 'patient', 'exhaustive', or 'hybrid'.
+- w - a string: wisdom data.
 
 ## Output argument
 
- - m - method: 'estimate', 'measure', 'patient', 'exhaustive', or 'hybrid'.
- - w - a string: wisdom data.
+- m - method: 'estimate', 'measure', 'patient', 'exhaustive', or 'hybrid'.
+- w - a string: wisdom data.
 
 ## Description
 
-
   <p>The default method is 'estimate'.</p>
-
 
 ## Example
 
@@ -42,16 +38,13 @@ tic; fft(M); toc
 ## See also
 
 [fft](fft.md), [ifft](ifft.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

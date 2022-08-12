@@ -1,5 +1,3 @@
-
-
 # all
 
 all of the elements of a matrix satisfy some condition.
@@ -12,19 +10,17 @@ all of the elements of a matrix satisfy some condition.
 
 ## Input argument
 
- - M - a matrix.
- - dim - a integer value: dimension along it works.
- - 'all' - tests over all elements of M.
+- M - a matrix.
+- dim - a integer value: dimension along it works.
+- 'all' - tests over all elements of M.
 
 ## Output argument
 
- - R - a logical matrix.
+- R - a logical matrix.
 
 ## Description
 
-
   <p><b>all</b> returns true if all of the elements of a matrix satisfy some condition.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ all([33, 22; 11, 0], 2)
 ## See also
 
 [any](any.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

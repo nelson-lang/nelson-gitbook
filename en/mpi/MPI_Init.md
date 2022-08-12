@@ -1,5 +1,3 @@
-
-
 # MPI_Init
 
 Initialize the MPI execution environment.
@@ -11,18 +9,17 @@ Initialize the MPI execution environment.
 
 ## Output argument
 
- - r - a logical.
+- r - a logical.
 
 ## Description
-
 
   <p>Initialize the MPI execution environment.</p>
   <p>MPI process are launched in CLI mode (no gui, no plot).</p>
 
-
 ## See also
 
 [MPI_Initialized](MPI_Initialized.md), [MPI_Finalize](MPI_Finalize.md).
+
 ## Example
 
 ```matlab
@@ -36,14 +33,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

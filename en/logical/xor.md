@@ -1,5 +1,3 @@
-
-
 # xor
 
 Exclusive or.
@@ -11,19 +9,17 @@ Exclusive or.
 
 ## Input argument
 
- - V1 - a matrix.
- - V2 - a matrix, same dimensions than V1.
- - VN - a matrix, same dimensions than V1.
+- V1 - a matrix.
+- V2 - a matrix, same dimensions than V1.
+- VN - a matrix, same dimensions than V1.
 
 ## Output argument
 
- - R - a logical matrix.
+- R - a logical matrix.
 
 ## Description
 
-
   <p><b>xor</b> performs a logical exclusive-OR.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ R = xor(x, y)
 ## See also
 
 [or](or.html), [and](and.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

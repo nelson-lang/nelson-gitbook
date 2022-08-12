@@ -1,5 +1,3 @@
-
-
 # mpiexec
 
 Run an MPI script.
@@ -13,23 +11,22 @@ Run an MPI script.
 
 ## Input argument
 
- - script - an filename with .m extension.
- - nb_process - an integer value: number of process.
+- script - an filename with .m extension.
+- nb_process - an integer value: number of process.
 
 ## Output argument
 
- - r - an integer value: maximum of the exit status values of all of the processes created by mpiexec.
+- r - an integer value: maximum of the exit status values of all of the processes created by mpiexec.
 
 ## Description
-
 
   <p>Run an MPI script in nelson.</p>
   <p>MPI process are launched in CLI mode (no gui, no plot).</p>
 
-
 ## See also
 
 [MPI_Init](MPI_Init.md).
+
 ## Example
 
 ```matlab
@@ -38,14 +35,10 @@ mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.m'], 4)
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

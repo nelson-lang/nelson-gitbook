@@ -1,5 +1,3 @@
-
-
 # issymmetric
 
 Computes if matrix is symmetric.
@@ -13,20 +11,18 @@ Computes if matrix is symmetric.
 
 ## Input argument
 
- - x - a numeric value: scalar or matrix (double or single, integers, logical).
- - tol - a numeric value: finite and >= 0.
+- x - a numeric value: scalar or matrix (double or single, integers, logical).
+- tol - a numeric value: finite and >= 0.
 
 ## Output argument
 
- - res - a logical.
+- res - a logical.
 
 ## Description
-
 
   <p><b>issymmetric(x)</b> computes if matrix is symmetric.</p>
   <p>With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'</p>
   <p>With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'</p>
-
 
 ## Example
 
@@ -41,16 +37,13 @@ issymmetric(A, 'nonskew')
 ## See also
 
 [ishermitian](ishermitian.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

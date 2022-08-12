@@ -1,5 +1,3 @@
-
-
 # isint8
 
 Return true if variable var is a signed 8-bit integer type array.
@@ -10,11 +8,11 @@ Return true if variable var is a signed 8-bit integer type array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a signed 8-bit integer type array.
 A = 3;
 res = isint8(A)
 ```
+
 ```matlab
 B = int8(3);
 res = isint8(B)
@@ -34,16 +33,13 @@ res = isint8(B)
 ## See also
 
 [isa](isa.md), [int8](../integer/int8.md), [isinteger](isinteger.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

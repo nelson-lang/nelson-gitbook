@@ -1,5 +1,3 @@
-
-
 # hostname
 
 get host name of this computer.
@@ -10,13 +8,11 @@ get host name of this computer.
 
 ## Output argument
 
- - s - a char array: host name.
+- s - a char array: host name.
 
 ## Description
 
-
   <p><b>hostname</b> get host name of this computer.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ hostname()
 ## See also
 
 [username](username.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

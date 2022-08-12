@@ -1,5 +1,3 @@
-
-
 # who
 
 List variables in memory or in .nh5 or in .mat file.
@@ -17,19 +15,17 @@ List variables in memory or in .nh5 or in .mat file.
 
 ## Input argument
 
- - scope - a string: 'global', 'base', 'caller', 'local' or '-file'.
- - filename - string: an existing filename .nh5 or .mat file.
- - var1, ..., varN - string: variable name.
+- scope - a string: 'global', 'base', 'caller', 'local' or '-file'.
+- filename - string: an existing filename .nh5 or .mat file.
+- var1, ..., varN - string: variable name.
 
 ## Output argument
 
- - s - a cell of strings: list of variable's name.
+- s - a cell of strings: list of variable's name.
 
 ## Description
 
-
   <p><b>who</b> displays current variable names.</p>
-
 
 ## Example
 
@@ -45,16 +41,13 @@ s = who()
 ## See also
 
 [what](../functions_manager/what.md), [clear](clear.md), [whos](whos.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

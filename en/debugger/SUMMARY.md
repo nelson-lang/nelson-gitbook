@@ -1,3 +1,2 @@
-* [debugger](README.md)
-    * [dbstack](dbstack.md)
-
+- [debugger](README.md)
+  - [dbstack](dbstack.md)

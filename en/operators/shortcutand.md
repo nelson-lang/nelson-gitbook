@@ -1,5 +1,3 @@
-
-
 # shortcutand
 
 Short circuit 'AND' operator, &&
@@ -11,18 +9,16 @@ Short circuit 'AND' operator, &&
 
 ## Input argument
 
- - A - a variable
- - B - a variable
+- A - a variable
+- B - a variable
 
 ## Output argument
 
- - C - result of A && B
+- C - result of A && B
 
 ## Description
 
-
   <p><b>C = shortcutand(A, B)</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ C == D
 ## See also
 
 [and](and.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

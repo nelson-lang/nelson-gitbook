@@ -1,5 +1,3 @@
-
-
 # size
 
 Size of an object.
@@ -14,23 +12,21 @@ Size of an object.
 
 ## Input argument
 
- - X - a variable
- - dim - a variable: a positive integer to get the dimth dimension.
- - dims - a variable: a vector of  positive integer to get the dimth dimensions.
+- X - a variable
+- dim - a variable: a positive integer to get the dimth dimension.
+- dims - a variable: a vector of positive integer to get the dimth dimensions.
 
 ## Output argument
 
- - s - a row vector whose elements contain the length of the corresponding dimension of X.
- - sdim - the length of dimension dim.
- - vec - length of dimensions dims.
- - [r, c] - number of rows and columns.
- - [s1, ... , sn] - numbers with integer values.
+- s - a row vector whose elements contain the length of the corresponding dimension of X.
+- sdim - the length of dimension dim.
+- vec - length of dimensions dims.
+- [r, c] - number of rows and columns.
+- [s1, ... , sn] - numbers with integer values.
 
 ## Description
 
-
   <p/>
-
 
 ## Examples
 
@@ -42,6 +38,7 @@ size(X, [2 4])
 [r, c] =size(X)
 [s1, s2, s3, s4] = size(X)
 ```
+
 ```matlab
 size(cell(4,3))
 ```
@@ -49,16 +46,13 @@ size(cell(4,3))
 ## See also
 
 [length](length.md), [ndims](ndims.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

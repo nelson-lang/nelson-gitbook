@@ -1,5 +1,3 @@
-
-
 # memory
 
 Get memory information.
@@ -12,11 +10,10 @@ Get memory information.
 
 ## Output argument
 
- - usermem - Get information about user memory (an struct).
- - systemmem - Get information about system memory (an struct)
+- usermem - Get information about user memory (an struct).
+- systemmem - Get information about system memory (an struct)
 
 ## Description
-
 
   <p><b>memory</b> get memory information.</p>
   <p><b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).</p>
@@ -27,7 +24,6 @@ Get memory information.
   <p>PhysicalMemory.Available: available physical memory</p>
   <p>PhysicalMemory.Total: total physical memory</p>
 
-
 ## Examples
 
 ```matlab
@@ -35,6 +31,7 @@ memory()
 A = ones(1000);
 memory()
 ```
+
 ```matlab
 clear('A');
 [u1, s1] = memory();
@@ -45,6 +42,7 @@ clear('A');
 [u3, s3] = memory();
 disp(u3.MemUsedNelson - u2.MemUsedNelson);
 ```
+
 ```matlab
 [u1, s1] = memory()
 ```
@@ -52,16 +50,13 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 ## See also
 
 [clear](clear.md), [who](who.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

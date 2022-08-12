@@ -1,5 +1,3 @@
-
-
 # rethrow
 
 rethrow error.
@@ -10,18 +8,16 @@ rethrow error.
 
 ## Input argument
 
- - MException - MException object
+- MException - MException object
 
 ## Description
 
-
   <p><b>rethrow(MException)</b> reissues the error specified by <b>MException</b>.</p>
-
 
 ## Example
 
 ```matlab
-try 
+try
   a
 catch ME
   disp(ME)
@@ -32,16 +28,13 @@ end
 ## See also
 
 [MException](MException.md), [throw](throw.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

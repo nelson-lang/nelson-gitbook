@@ -1,5 +1,3 @@
-
-
 # isfield
 
 Checks if a fieldname exists in a struct.
@@ -11,19 +9,17 @@ Checks if a fieldname exists in a struct.
 
 ## Input argument
 
- - S - a struct
- - name - a string
- - C - a cell
+- S - a struct
+- name - a string
+- C - a cell
 
 ## Output argument
 
- - res - a logical
+- res - a logical
 
 ## Description
 
-
   <p><b>isfield(A)</b> returns true if <b>name</b> is a fieldname of <b>S</b>.</p>
-
 
 ## Examples
 
@@ -32,6 +28,7 @@ S.Nelson = 1;
 isfield(S, 'Nel')
 isfield(S, 'Nelson')
 ```
+
 ```matlab
 S.nel = 1;
 S.son = 2;
@@ -41,16 +38,13 @@ isfield(S,{ 1, 'nel'; 2, 'son'})
 ## See also
 
 [fieldnames](fieldnames.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -17,7 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `wait`: Wait for futures to be completed.
   - `Diary` property for `FevalFuture` object.
 
-- CITATION.cff  with human- and machine-readable citation information for software. 
+- CITATION.cff with human- and machine-readable citation information for software.
 
 ### Changed
 

@@ -1,5 +1,3 @@
-
-
 # while
 
 while loop.
@@ -10,9 +8,7 @@ while loop.
 
 ## Description
 
-
   <p><b>while</b> loop executes a set of statements as long as a the test condition remains <b>true</b>.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ end
 ## See also
 
 [for](for.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

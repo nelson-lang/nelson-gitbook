@@ -1,5 +1,3 @@
-
-
 # fwrite
 
 Write data in binary form to the file specified by the file descriptor fid.
@@ -14,18 +12,17 @@ Write data in binary form to the file specified by the file descriptor fid.
 
 ## Input argument
 
- - fid - a file descriptor
- - data - data to write
- - precision - class of values to read
- - skip - number of bytes to skip
- - arch - a string specifying the data format for the file.
+- fid - a file descriptor
+- data - data to write
+- precision - class of values to read
+- skip - number of bytes to skip
+- arch - a string specifying the data format for the file.
 
 ## Output argument
 
- - count - -1 or number of elements written
+- count - -1 or number of elements written
 
 ## Description
-
 
   <p>Write data in binary form to the file specified by the file descriptor fid.</p>
   <p>characters encoding uses <b>fopen</b> parameter.</p>
@@ -33,7 +30,6 @@ Write data in binary form to the file specified by the file descriptor fid.
   <p><b>native</b> , <b>n</b>: format of the current machine.</p>
   <p><b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
   <p><b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
-
 
 ## Example
 
@@ -52,16 +48,13 @@ fclose(fileID);
 ## See also
 
 [fopen](fopen.md), [fclose](fclose.md), [fread](fread.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

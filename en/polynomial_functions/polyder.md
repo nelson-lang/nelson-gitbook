@@ -1,5 +1,3 @@
-
-
 # polyder
 
 Polynomial differentiation.
@@ -12,23 +10,21 @@ Polynomial differentiation.
 
 ## Input argument
 
- - p - vector: polynomial coefficients
- - a - row vector: polynomial coefficients
- - b - row vector: polynomial coefficients
+- p - vector: polynomial coefficients
+- a - row vector: polynomial coefficients
+- b - row vector: polynomial coefficients
 
 ## Output argument
 
- - k - row vector: differentiated polynomial coefficients
- - q - row vector: numerator polynomial
- - d - row vector: denominator polynomial
+- k - row vector: differentiated polynomial coefficients
+- q - row vector: numerator polynomial
+- d - row vector: denominator polynomial
 
 ## Description
-
 
   <p><b>k = polyder(p)</b> return the coefficients of the derivative of the polynomial whose coefficients are given by the vector <b>p</b>.</p>
   <p><b>k = polyder(a, b) </b>  returns the derivative of the product of the polynomials <b>a</b> and <b>b</b>.</p>
   <p><b>[q, d] = polyder(a, b)</b> returns the derivative of the quotient of the polynomials <b>a</b> and <b>b</b>.</p>
-
 
 ## Example
 
@@ -40,16 +36,13 @@ q = polyder(p)
 ## See also
 
 [polyval](polyval.md), [poly](poly.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

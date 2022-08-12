@@ -1,5 +1,3 @@
-
-
 # diary
 
 Diary of a session.
@@ -17,16 +15,15 @@ Diary of a session.
 
 ## Input argument
 
- - onoff - a string: 'on' or 'off'.
- - filename - a string: filename of the current diary.
+- onoff - a string: 'on' or 'off'.
+- filename - a string: filename of the current diary.
 
 ## Output argument
 
- - onoff - a string: 'on' or 'off'.
- - filename - a string: filename to use for the diary.
+- onoff - a string: 'on' or 'off'.
+- filename - a string: filename to use for the diary.
 
 ## Description
-
 
   <p><b>diary</b> creates a log of keyboard input and the resulting text output.</p>
   <p><b>diary</b> toggles diary mode on and off.</p>
@@ -38,7 +35,6 @@ Diary of a session.
   <p><b>filename = diary('get', 'DiaryFile')</b> returns filename used as diary.</p>
   <p><b>diary('set', 'DiaryFile', filename))</b> set the filename for the diary.</p>
 
-
 ## Example
 
 ```matlab
@@ -49,16 +45,13 @@ onoff = diary('get', 'Diary')
 ## See also
 
 [history](../history_manager/history.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

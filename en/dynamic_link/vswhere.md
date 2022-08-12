@@ -1,5 +1,3 @@
-
-
 # vswhere
 
 Locate Visual Studio 2017, 2019 and newer installations
@@ -10,14 +8,12 @@ Locate Visual Studio 2017, 2019 and newer installations
 
 ## Output argument
 
- - res - a struct with information about Visual studio
+- res - a struct with information about Visual studio
 
 ## Description
 
-
   <p><b>vswhere</b> allows to find easily Visual studio.</p>
   <p><b>vswhere</b> is currently only implemented on Windows platform.</p>
-
 
 Bibliography
 
@@ -32,16 +28,13 @@ vswhere()
 ## See also
 
 [havecompiler](havecompiler.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

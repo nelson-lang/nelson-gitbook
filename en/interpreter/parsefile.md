@@ -1,5 +1,3 @@
-
-
 # parsefile
 
 Parse a Nelson file.
@@ -10,17 +8,15 @@ Parse a Nelson file.
 
 ## Input argument
 
- - filename - a string: a filename to parse.
+- filename - a string: a filename to parse.
 
 ## Output argument
 
- - status - a string: 'script', 'function', 'error'.
+- status - a string: 'script', 'function', 'error'.
 
 ## Description
 
-
   <p><b>parsefile</b> parse a file and returns if it is a valid script, a valid function or an error.</p>
-
 
 ## Example
 
@@ -31,14 +27,10 @@ parsefile([nelsonroot(), '/modules/data_structures/functions/cellstr.m'])
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

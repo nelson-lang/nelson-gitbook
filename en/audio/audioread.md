@@ -1,5 +1,3 @@
-
-
 # audioread
 
 Read an audio file.
@@ -14,22 +12,20 @@ Read an audio file.
 
 ## Input argument
 
- - filename - a string: an existing filename.
- - range - a vector: [start end].
- - type - a string: 'double' or 'native'.
+- filename - a string: an existing filename.
+- range - a vector: [start end].
+- type - a string: 'double' or 'native'.
 
 ## Output argument
 
- - y - a matrix: audio data.
- - fs - an integer value: sampling rate.
+- y - a matrix: audio data.
+- fs - an integer value: sampling rate.
 
 ## Description
-
 
   <p><b>audioread</b> reads an audio file.</p>
   <p>Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See <b>audiosupportedformats</b> function to have all supported formats.</p>
   <p>If <b>type</b> is 'native' then audio data depends on the file format (single, double, integers).</p>
-
 
 ## Example
 
@@ -45,16 +41,13 @@ clear playObj
 ## See also
 
 [playblocking](playblocking.md), [audioplayer](audioplayer.md), [audiosupportedformats](audiosupportedformats.md), [audiowrite](audiowrite.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

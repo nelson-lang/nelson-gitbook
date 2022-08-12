@@ -1,5 +1,3 @@
-
-
 # groot
 
 graphic root object.
@@ -10,10 +8,9 @@ graphic root object.
 
 ## Output argument
 
- - g - a graphic object: root object.
+- g - a graphic object: root object.
 
 ## Description
-
 
   <p><b>groot</b> returns graphic root object.</p>
   <p>Properties:</p>
@@ -27,7 +24,6 @@ graphic root object.
   <p><b>Type</b>: Type 'root'.</p>
   <p><b>UserData</b>: User data (any array type).</p>
 
-
 ## Example
 
 ```matlab
@@ -38,16 +34,13 @@ g.ScreenDepth
 ## See also
 
 [figure](figure.html), [gcf](gcf.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

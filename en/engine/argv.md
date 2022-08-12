@@ -1,5 +1,3 @@
-
-
 # argv
 
 Nelson command line arguments.
@@ -10,14 +8,12 @@ Nelson command line arguments.
 
 ## Output argument
 
- - args - a cell array of strings.
+- args - a cell array of strings.
 
 ## Description
 
-
   <p><b>argv()</b> returns a cell array of strings containing the arguments of the Nelson command line.</p>
   <p>The first element of the cell returned contains the path of the launched executable. </p>
-
 
 ## Example
 
@@ -28,16 +24,13 @@ argv()
 ## See also
 
 [executable](executable.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # slicot_tb01id
 
 Balancing a system matrix corresponding to a triplet (A, B, C).
@@ -10,26 +8,24 @@ Balancing a system matrix corresponding to a triplet (A, B, C).
 
 ## Input argument
 
- - JOB - = 'A':  All matrices are involved in balancing; = 'B':  B and A matrices are involved in balancing; = 'C':  C and A matrices are involved in balancing; = 'N':  B and C matrices are not involved in balancing.
- - MAXRED_IN - the maximum allowed reduction in the 1-norm of S (in an iteration) if zero rows or columns are encountered.
- - A_IN - The leading N-by-N part of this array must contain the system state matrix A.
- - B_IN - The leading N-by-M part of this array must contain the system input matrix B.
- - C_IN - The leading P-by-N part of this array must contain the system output matrix C.
+- JOB - = 'A': All matrices are involved in balancing; = 'B': B and A matrices are involved in balancing; = 'C': C and A matrices are involved in balancing; = 'N': B and C matrices are not involved in balancing.
+- MAXRED_IN - the maximum allowed reduction in the 1-norm of S (in an iteration) if zero rows or columns are encountered.
+- A_IN - The leading N-by-N part of this array must contain the system state matrix A.
+- B_IN - The leading N-by-M part of this array must contain the system input matrix B.
+- C_IN - The leading P-by-N part of this array must contain the system output matrix C.
 
 ## Output argument
 
- - MAXRED_OUT - if the 1-norm of the given matrix S is non-zero, the ratio between the 1-norm of the given matrix and the 1-norm of the balanced matrix.
- - A_OUT - The leading N-by-N part of this array contains the balanced matrix inv(D)*A*D.
- - B_OUT - The leading N-by-M part of this array contains the balanced matrix inv(D)*B.
- - C_OUT - The leading P-by-N part of this array contains the balanced matrix C*D.
- - SCALE - The scaling factors applied to S.
- - INFO - = 0:  successful exit.
+- MAXRED_OUT - if the 1-norm of the given matrix S is non-zero, the ratio between the 1-norm of the given matrix and the 1-norm of the balanced matrix.
+- A_OUT - The leading N-by-N part of this array contains the balanced matrix inv(D)*A*D.
+- B_OUT - The leading N-by-M part of this array contains the balanced matrix inv(D)\*B.
+- C_OUT - The leading P-by-N part of this array contains the balanced matrix C\*D.
+- SCALE - The scaling factors applied to S.
+- INFO - = 0: successful exit.
 
 ## Description
 
-
   <p>To reduce the 1-norm of a system matrix corresponding to the triple (A,B,C), by balancing.</p>
-
 
 Used function(s)
 
@@ -70,14 +66,10 @@ C_IN = [1.0000e+000          0.0          0.0          0.0          0.0;
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 SLICOT Documentation
-
-
-

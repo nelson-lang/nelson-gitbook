@@ -1,5 +1,3 @@
-
-
 # whonh5
 
 List variables in an valid .nh5 file.
@@ -13,18 +11,16 @@ List variables in an valid .nh5 file.
 
 ## Input argument
 
- - filename - a string: .nh5 filename.
- - var1, ..., varN - string: Names of variables to inspect.
+- filename - a string: .nh5 filename.
+- var1, ..., varN - string: Names of variables to inspect.
 
 ## Output argument
 
- - ce - cell of strings with variables names.
+- ce - cell of strings with variables names.
 
 ## Description
 
-
   <p><b>whonh5</b> lists variables in an valid .nh5 file.</p>
-
 
 ## Example
 
@@ -32,7 +28,7 @@ List variables in an valid .nh5 file.
 A = ones(3, 4);
 B = 'Nelson';
 C = sparse(true);
-D = sparse(3i);		
+D = sparse(3i);
 savenh5([tempdir(), 'example_whonh5.nh5'], 'A', 'B', 'C', 'D')
 whonh5([tempdir(), 'example_whonh5.nh5'])
 ce = whonh5([tempdir(), 'example_whonh5.nh5'])
@@ -41,16 +37,13 @@ ce = whonh5([tempdir(), 'example_whonh5.nh5'])
 ## See also
 
 [whomat](../matio/whomat.md), [who](../memory_manager/who.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

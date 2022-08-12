@@ -1,5 +1,3 @@
-
-
 # buildhelpweb
 
 Build help of Nelson's modules for website.
@@ -11,29 +9,24 @@ Build help of Nelson's modules for website.
 
 ## Input argument
 
- - destination_dir - a string: destination directory.
- - language - a string: language. if it is missing, current default language used.
+- destination_dir - a string: destination directory.
+- language - a string: language. if it is missing, current default language used.
 
 ## Description
-
 
   <p><b>buildhelpweb</b> generates help files for website.</p>
   <p>internal function</p>
 
-
 ## See also
 
 [buildhelp](buildhelp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

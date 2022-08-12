@@ -1,5 +1,3 @@
-
-
 # polyvalm
 
 Matrix polynomial evaluation.
@@ -10,18 +8,16 @@ Matrix polynomial evaluation.
 
 ## Input argument
 
- - p - vector: polynomial coefficients
- - X - square matrix: input matrix
+- p - vector: polynomial coefficients
+- X - square matrix: input matrix
 
 ## Output argument
 
- - Y - row vector: Output polynomial coefficients
+- Y - row vector: Output polynomial coefficients
 
 ## Description
 
-
   <p><b>polyvalm</b> evaluates matrix polynomial.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ R = polyvalm ([1, 2, 3, 4], [3, -4, 1; -2, 0, 2; -1, 4, -3])
 ## See also
 
 [polyval](polyval.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

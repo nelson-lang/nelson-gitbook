@@ -1,5 +1,3 @@
-
-
 # builtin
 
 Executes built-in function.
@@ -13,19 +11,17 @@ Executes built-in function.
 
 ## Input argument
 
- - function_name - a string: function name.
- - function_handle - a function handle.
- - x1, ..., xn - input arguments of the builtin.
+- function_name - a string: function name.
+- function_handle - a function handle.
+- x1, ..., xn - input arguments of the builtin.
 
 ## Output argument
 
- - r1, ..., rn - output arguments returned by the builtin
+- r1, ..., rn - output arguments returned by the builtin
 
 ## Description
 
-
   <p><b>builtin</b> calls the base built-in described by its name or function handle and input arguments.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ b = builtin(str2func('cos'), 0)
 ## See also
 
 [feval](feval.md), [func2str](../function_handle/func2str.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

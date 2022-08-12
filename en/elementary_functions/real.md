@@ -1,5 +1,3 @@
-
-
 # real
 
 Real part of an complex number.
@@ -10,17 +8,15 @@ Real part of an complex number.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - R - real part of the elements of the complex array M.
+- R - real part of the elements of the complex array M.
 
 ## Description
 
-
   <p><b>R = real(M)</b> Return the real part of M.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ r = real(cplx)
 ## See also
 
 [imag](imag.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

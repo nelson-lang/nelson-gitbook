@@ -1,5 +1,3 @@
-
-
 # strings
 
 Create string array without characters.
@@ -14,18 +12,16 @@ Create string array without characters.
 
 ## Input argument
 
- - m, n, ... , p - dimensions of the string array to create.
- - sz - a vector of integer values (dimensions of the cell to create).
+- m, n, ... , p - dimensions of the string array to create.
+- sz - a vector of integer values (dimensions of the cell to create).
 
 ## Output argument
 
- - C - a string array
+- C - a string array
 
 ## Description
 
-
   <p><b>strings</b> returns a cell array of empty matrices.</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ C = strings(sz)
 ## See also
 
 [cell](../data_structures/cell.md), [isstring](../types/isstring.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

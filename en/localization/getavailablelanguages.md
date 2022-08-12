@@ -1,5 +1,3 @@
-
-
 # getavailablelanguages
 
 Returns available languages in Nelson.
@@ -10,13 +8,11 @@ Returns available languages in Nelson.
 
 ## Output argument
 
- - ce - a cell of strings: supported languages.
+- ce - a cell of strings: supported languages.
 
 ## Description
 
-
   <p><b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ getavailablelanguages()
 ## See also
 
 [setlanguage](setlanguage.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

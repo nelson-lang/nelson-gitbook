@@ -1,5 +1,3 @@
-
-
 # mustBeGreaterThanOrEqual
 
 Checks that value is greater than or equal to another value or issue error.
@@ -12,15 +10,13 @@ Checks that value is greater than or equal to another value or issue error.
 
 ## Input argument
 
- - var - a variable: logical or numeric array.
- - c - a variable: scalar numeric value.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: logical or numeric array.
+- c - a variable: scalar numeric value.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeGreaterThanOrEqual</b> checks that value is greater than or equal to another value or issue error.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeGreaterThanOrEqual([2 3 4],5)
 ## See also
 
 [mustBeNumeric](mustBeNumeric.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

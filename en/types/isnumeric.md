@@ -1,5 +1,3 @@
-
-
 # isnumeric
 
 Return true if variable var is a numeric array.
@@ -10,15 +8,16 @@ Return true if variable var is a numeric array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
 <b>isnumeric</b> returns a logical 1 if the argument is a numeric array and a logical 0 otherwise.
+
 <p>List of numeric types:</p>
 <p><b>single</b> : single precision</p>
 <p><b>double</b> : double precision</p>
@@ -31,18 +30,18 @@ Return true if variable var is a numeric array.
 <p><b>uint32</b> : 32 bit unsigned integer</p>
 <p><b>uint64</b> : 64 bit unsigned integer</p>
 
-	
-
 ## Examples
 
 ```matlab
 A = 1;
 res = isnumeric(A)
 ```
+
 ```matlab
 B = single(1+i);
 res = isnumeric(B)
 ```
+
 ```matlab
 C = logical(1);
 res = isnumeric(C)
@@ -51,16 +50,13 @@ res = isnumeric(C)
 ## See also
 
 [islogical](islogical.md), [isinteger](isinteger.md), [isdouble](isdouble.md), [issingle](issingle.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

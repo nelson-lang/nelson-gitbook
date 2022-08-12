@@ -1,5 +1,3 @@
-
-
 # slicot_ag08bd
 
 Zeros and Kronecker structure of a descriptor system pencil.
@@ -10,37 +8,35 @@ Zeros and Kronecker structure of a descriptor system pencil.
 
 ## Input argument
 
- - EQUIL - = 'S':  Perform balancing (scaling); = 'N':  Do not perform balancing.
- - M - The number of columns of matrix B.
- - P - The number of rows of matrix C.
- - A_IN - The leading L-by-N part of this array must contain the state dynamics matrix A of the system.
- - E_IN - The leading L-by-N part of this array must contain the descriptor matrix E of the system.
- - B - The leading L-by-M part of this array must contain the input/state matrix B of the system.
- - C - The leading P-by-N part of this array must contain the state/output matrix C of the system.
- - D - The leading P-by-M part of this array must contain the direct transmission matrix D of the system.
- - TOL - A tolerance used in rank decisions to determine the effective rank, which is defined as the order of the largest leading (or trailing) triangular submatrix in the QR (or RQ) factorization with column (or row) pivoting whose estimated condition number is less than 1/TOL.
+- EQUIL - = 'S': Perform balancing (scaling); = 'N': Do not perform balancing.
+- M - The number of columns of matrix B.
+- P - The number of rows of matrix C.
+- A_IN - The leading L-by-N part of this array must contain the state dynamics matrix A of the system.
+- E_IN - The leading L-by-N part of this array must contain the descriptor matrix E of the system.
+- B - The leading L-by-M part of this array must contain the input/state matrix B of the system.
+- C - The leading P-by-N part of this array must contain the state/output matrix C of the system.
+- D - The leading P-by-M part of this array must contain the direct transmission matrix D of the system.
+- TOL - A tolerance used in rank decisions to determine the effective rank, which is defined as the order of the largest leading (or trailing) triangular submatrix in the QR (or RQ) factorization with column (or row) pivoting whose estimated condition number is less than 1/TOL.
 
 ## Output argument
 
- - A_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Af of the reduced pencil.
- - E_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Ef of the reduced pencil.
- - NFZ - The number of finite zeros.
- - NRANK - The normal rank of the system pencil.
- - NIZ - The number of infinite zeros.
- - DINFZ - The maximal multiplicity of infinite Smith zeros.
- - NKROR - The number of right Kronecker indices.
- - NINFE - The number of elementary infinite blocks.
- - NKROL - The number of left Kronecker indices.
- - INFZ - The leading DINFZ elements of INFZ contain information on the infinite elementary divisors
- - KRONR - The leading NKROR elements of this array contain the right Kronecker (column) indices.
- - KRONL - The leading NKROL elements of this array contain the left Kronecker (row) indices.
- - INFO - = 0:  successful exit;
+- A_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Af of the reduced pencil.
+- E_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Ef of the reduced pencil.
+- NFZ - The number of finite zeros.
+- NRANK - The normal rank of the system pencil.
+- NIZ - The number of infinite zeros.
+- DINFZ - The maximal multiplicity of infinite Smith zeros.
+- NKROR - The number of right Kronecker indices.
+- NINFE - The number of elementary infinite blocks.
+- NKROL - The number of left Kronecker indices.
+- INFZ - The leading DINFZ elements of INFZ contain information on the infinite elementary divisors
+- KRONR - The leading NKROR elements of this array contain the right Kronecker (column) indices.
+- KRONL - The leading NKROL elements of this array contain the left Kronecker (row) indices.
+- INFO - = 0: successful exit;
 
 ## Description
 
-
   <p> To extract from the system pencil a regular pencil Af-lambda*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.</p>
-
 
 Used function(s)
 
@@ -117,14 +113,10 @@ M = 3; P = 0;
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 SLICOT Documentation
-
-
-

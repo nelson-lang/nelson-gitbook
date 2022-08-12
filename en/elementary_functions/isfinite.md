@@ -1,5 +1,3 @@
-
-
 # isfinite
 
 Check for finite entries.
@@ -10,17 +8,15 @@ Check for finite entries.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - tf - logical: result of 'isfinite'.
+- tf - logical: result of 'isfinite'.
 
 ## Description
 
-
   <p><b>isfinite</b> returns a logical array which is true where elements of M are finite values.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ R = isfinite(X)
 ## See also
 
 [isnan](isnan.md), [isinf](isinf.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

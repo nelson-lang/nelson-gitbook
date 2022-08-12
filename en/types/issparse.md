@@ -1,5 +1,3 @@
-
-
 # issparse
 
 Return true if variable var is a sparse array.
@@ -10,11 +8,11 @@ Return true if variable var is a sparse array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a sparse array.
 A = 1;
 res = issparse(A)
 ```
+
 ```matlab
 B = sparse(1);
 res = issparse(B)
@@ -34,16 +33,13 @@ res = issparse(B)
 ## See also
 
 [sparse](../sparse/sparse.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

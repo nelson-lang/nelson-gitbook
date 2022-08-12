@@ -1,5 +1,3 @@
-
-
 # MPI_Comm_size
 
 Determines the size of the group associated with a communicator.
@@ -10,24 +8,24 @@ Determines the size of the group associated with a communicator.
 
 ## Input argument
 
- - Comm - a MPI_Comm object.
+- Comm - a MPI_Comm object.
 
 ## Output argument
 
- - r - an integer value: number of processes in the group of Comm.
+- r - an integer value: number of processes in the group of Comm.
 
 ## Description
 
-
   <p>Determines the size of the group associated with a communicator.</p>
-
 
 ## See also
 
 [MPI_Comm_rank](MPI_Comm_rank.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -56,14 +54,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # acos
 
 Computes the inverse cosine in radians for each element of x.
@@ -10,11 +8,11 @@ Computes the inverse cosine in radians for each element of x.
 
 ## Input argument
 
- - x - a numeric value
+- x - a numeric value
 
 ## Output argument
 
- - res - a numeric value
+- res - a numeric value
 
 ## Description
 
@@ -30,16 +28,13 @@ res = acos(A)
 ## See also
 
 [cos](cos.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

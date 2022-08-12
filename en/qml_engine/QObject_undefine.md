@@ -1,5 +1,3 @@
-
-
 # QObject_undefine
 
 Undefine a dynamic property of a QObject handle.
@@ -10,22 +8,21 @@ Undefine a dynamic property of a QObject handle.
 
 ## Input argument
 
- - h - an QObject handle.
- - property_name - a string : dynamic property name.
+- h - an QObject handle.
+- property_name - a string : dynamic property name.
 
 ## Output argument
 
- - R - a string: method signature.
+- R - a string: method signature.
 
 ## Description
 
-
   <p>Undefine a dynamic property of a QObject handle.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html), [QObject_get (get)](QObject_get.html).
+
 ## Example
 
 ```matlab
@@ -39,14 +36,10 @@ get(h, 'myProp')
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

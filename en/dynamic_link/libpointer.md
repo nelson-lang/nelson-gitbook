@@ -1,5 +1,3 @@
-
-
 # libpointer
 
 Creates an C pointer object usuable in Nelson.
@@ -12,19 +10,17 @@ Creates an C pointer object usuable in Nelson.
 
 ## Input argument
 
- - datatype - a string: data type.
- - value - a nelson variable compatible with datatype.
+- datatype - a string: data type.
+- value - a nelson variable compatible with datatype.
 
 ## Output argument
 
- - ptr - a libpointer handle.
+- ptr - a libpointer handle.
 
 ## Description
 
-
   <p>This is an advanced feature to manipulate C pointers.</p>
   <p><b>ptr = libpointer()</b> creates an NULL pointer.</p>
-
 
 ## Examples
 
@@ -34,6 +30,7 @@ p.isNull()
 p.DataType
 p.Value
 ```
+
 ```C
 NLSDYNAMIC_LINK_IMPEXP double *multiplicationDoubleByReference(double *x)
 {
@@ -41,6 +38,7 @@ NLSDYNAMIC_LINK_IMPEXP double *multiplicationDoubleByReference(double *x)
     return x;
 }
 ```
+
 ```matlab
 x = 133.3;
 xPtr = libpointer('doublePtr', x);
@@ -58,16 +56,13 @@ get(r1)
 ## See also
 
 [C/Nelson equivalent data types](C_datatype.md), [isNull](libpointer_isNull.md), [libpointer.reshape](libpointer_reshape.md), [libpointer.setdatatype](libpointer_setdatatype.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

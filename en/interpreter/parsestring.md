@@ -1,5 +1,3 @@
-
-
 # parsestring
 
 Parse a string.
@@ -10,17 +8,15 @@ Parse a string.
 
 ## Input argument
 
- - str - a string: a string to parse.
+- str - a string: a string to parse.
 
 ## Output argument
 
- - status - a string: 'script', 'function', 'error'.
+- status - a string: 'script', 'function', 'error'.
 
 ## Description
 
-
   <p><b>parsestring</b> parse a string and returns if it is a valid script, a valid function or an error.</p>
-
 
 ## Example
 
@@ -32,14 +28,10 @@ parsestring('1 +*+ 1')
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

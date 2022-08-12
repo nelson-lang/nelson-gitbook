@@ -1,5 +1,3 @@
-
-
 # polyval
 
 Polynomial evaluation.
@@ -10,18 +8,16 @@ Polynomial evaluation.
 
 ## Input argument
 
- - p - vector: polynomial coefficients
- - x - query points
+- p - vector: polynomial coefficients
+- x - query points
 
 ## Output argument
 
- - y - vector: Function values
+- y - vector: Function values
 
 ## Description
 
-
   <p><b>polyval</b> evaluates polynomial at several points.</p>
-
 
 ## Example
 
@@ -34,16 +30,13 @@ R = polyval(p, x)
 ## See also
 
 [polyvalm](polyvalm.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

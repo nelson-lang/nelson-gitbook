@@ -1,5 +1,3 @@
-
-
 # min
 
 Minimum elements of an array.
@@ -21,26 +19,24 @@ Minimum elements of an array.
 
 ## Input argument
 
- - A - a variable
- - dim - a positive integer scalar (Dimension to operate along)
- - 'omitnan' - ignore all NaN values. default behaviour. min will return the first element, if all elements are NaN.
- - 'includenan' - include the NaN values.
- - 'all' - it finds the minimum over all elements.
+- A - a variable
+- dim - a positive integer scalar (Dimension to operate along)
+- 'omitnan' - ignore all NaN values. default behaviour. min will return the first element, if all elements are NaN.
+- 'includenan' - include the NaN values.
+- 'all' - it finds the minimum over all elements.
 
 ## Output argument
 
- - M - minimum values of A.
- - I - Index to minimum values of A.
- - C - minimum elements from A or B.
+- M - minimum values of A.
+- I - Index to minimum values of A.
+- C - minimum elements from A or B.
 
 ## Description
-
 
   <p><b>min</b> find minimum values in an array.</p>
   <p>If <b>A</b> is a matrix then <b>M = min(A)</b> is a row vector containing the minimum value of each column.</p>
   <p>If <b>A</b> is a vector then <b>M = min(A)</b> will return the minimum of <b>A</b>.</p>
   <p>If <b>A</b> If A is complex number then <b>M = min(A)</b> will return founded complex number with the largest magnitude.</p>
-
 
 ## Example
 
@@ -53,16 +49,13 @@ M = min(A, [], 'all')
 ## See also
 
 [max](max.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

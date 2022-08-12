@@ -1,5 +1,3 @@
-
-
 # modulepath
 
 Returns path of a module.
@@ -11,19 +9,17 @@ Returns path of a module.
 
 ## Input argument
 
- - module_path - a string: existing path.
- - module_short_name - a string: short module's name.
- - option - a string: 'etc', 'bin', 'root', 'builtin'.
+- module_path - a string: existing path.
+- module_short_name - a string: short module's name.
+- option - a string: 'etc', 'bin', 'root', 'builtin'.
 
 ## Output argument
 
- - p - a string: path or subpath of the module.
+- p - a string: path or subpath of the module.
 
 ## Description
 
-
   <p><b>modulepath</b> is an helper's function to return module root path or a subdirectory.</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ modulepath(nelsonroot(),'core','builtin')
 ## See also
 
 [requiremodule](requiremodule.md), [getmodules](getmodules.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

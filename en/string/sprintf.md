@@ -1,5 +1,3 @@
-
-
 # sprintf
 
 Writes data to a string.
@@ -10,11 +8,10 @@ Writes data to a string.
 
 ## Input argument
 
- - format - a string describing the format to used_function.
- - v1, ... , vn - data to convert and print according to the previous format parameter.
+- format - a string describing the format to used_function.
+- v1, ... , vn - data to convert and print according to the previous format parameter.
 
 ## Description
-
 
   <p>Write data in text form to a string.</p>
   <p>The <b>format</b> follows C fprintf syntax.</p>
@@ -91,15 +88,16 @@ Writes data to a string.
     </tr>
   </table>
 
-
 ## Examples
 
 ```matlab
 sprintf('an example of %s.', 'text')
 ```
+
 ```matlab
 sprintf("an example of %s.", "text")
 ```
+
 ```matlab
 sprintf('an value %g.', pi)
 ```
@@ -107,16 +105,13 @@ sprintf('an value %g.', pi)
 ## See also
 
 [fprintf](../stream_manager/fprintf.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

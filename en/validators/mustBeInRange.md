@@ -1,5 +1,3 @@
-
-
 # mustBeInRange
 
 Checks that value is in the specified range.
@@ -16,19 +14,17 @@ Checks that value is in the specified range.
 
 ## Input argument
 
- - value - a numeric value: scalar or matrix
- - lower - a scalar numeric or logical value.
- - upper - a scalar numeric or logical value.
- - boundflag1 - 'inclusive', 'exclusice', 'exclude-lower' or 'exclude-upper'.
- - boundflag2 - 'inclusive', 'exclusice', 'exclude-lower' or 'exclude-upper'.
- - argPosition - a positive integer value: Position of input argument.
+- value - a numeric value: scalar or matrix
+- lower - a scalar numeric or logical value.
+- upper - a scalar numeric or logical value.
+- boundflag1 - 'inclusive', 'exclusice', 'exclude-lower' or 'exclude-upper'.
+- boundflag2 - 'inclusive', 'exclusice', 'exclude-lower' or 'exclude-upper'.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeInRange</b> checks that value is in the specified range or raise an error.</p>
   <p>The only valid combination of the flags is <b>exclude-lower</b> with <b>exclude-upper</b>.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ mustBeInRange(3, 2, 4)
 ## See also
 
 [mustBeMember](mustBeMember.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

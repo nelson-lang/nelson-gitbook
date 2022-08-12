@@ -1,5 +1,3 @@
-
-
 # eye
 
 Creates an identity matrix.
@@ -15,27 +13,28 @@ Creates an identity matrix.
 
 ## Input argument
 
- - n - a variable: n-by-n matrix
- - m - a variable: n-by-m matrix
+- n - a variable: n-by-n matrix
+- m - a variable: n-by-m matrix
 
 ## Description
 
-
   <p><b>eye</b> returns an identity matrix.</p>
-
 
 ## Examples
 
 ```matlab
 eye(3)
 ```
+
 ```matlab
 eye(3,1,3,'single')
 ```
+
 ```matlab
 A = single([3 3])
 B = eye(2,4,'like', A)
 ```
+
 ```matlab
 A = eye(0, 4)
 ```
@@ -43,16 +42,13 @@ A = eye(0, 4)
 ## See also
 
 [ones](ones.md), [zeros](zeros.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

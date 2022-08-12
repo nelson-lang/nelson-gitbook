@@ -1,5 +1,3 @@
-
-
 # diag
 
 Get diagonal elements of matrix or create diagonal matrix.
@@ -13,19 +11,17 @@ Get diagonal elements of matrix or create diagonal matrix.
 
 ## Input argument
 
- - V - Diagonal elements
- - A - Input matrix
+- V - Diagonal elements
+- A - Input matrix
 
 ## Output argument
 
- - D - vector
- - X - matrix
+- D - vector
+- X - matrix
 
 ## Description
 
-
   <p><b>diag</b> returns diagonal elements of matrix or create diagonal matrix.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ diag(diag(eye(3)))
 ## See also
 
 [ones](ones.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

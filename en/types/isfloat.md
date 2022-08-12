@@ -1,5 +1,3 @@
-
-
 # isfloat
 
 Return true if variable var is a single or double matrix.
@@ -10,11 +8,11 @@ Return true if variable var is a single or double matrix.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a single or double matrix.
 A = 3;
 res = isfloat(A)
 ```
+
 ```matlab
 A = single(3);
 res = isfloat(A)
@@ -34,16 +33,13 @@ res = isfloat(A)
 ## See also
 
 [isa](isa.md), [single](single.html), [isdouble](isdouble.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,9 +1,6 @@
-
-
 # Supported C/C++ compilers
 
 ## Description
-
 
   <p>
     <b>Windows:</b>
@@ -21,10 +18,6 @@
   </p>
   <p>- XCode C/C++ compilers.</p>
 
-
 ## Author
 
 Allan CORNET
-
-
-

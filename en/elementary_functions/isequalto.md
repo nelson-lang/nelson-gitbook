@@ -1,5 +1,3 @@
-
-
 # isequalto
 
 Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
@@ -11,13 +9,13 @@ Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensi
 
 ## Input argument
 
- - x1 - a value
- - x2 - a value
- - xn - a value
+- x1 - a value
+- x2 - a value
+- xn - a value
 
 ## Output argument
 
- - res - a logical value
+- res - a logical value
 
 ## Description
 
@@ -34,16 +32,13 @@ res = isequalto(A, single(A))
 ## See also
 
 [isequal](isequal.md), [isequaln](isequaln.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

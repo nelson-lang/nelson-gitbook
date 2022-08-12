@@ -1,5 +1,3 @@
-
-
 # history
 
 history manager.
@@ -33,23 +31,22 @@ history manager.
 
 ## Input argument
 
- - new_size - a integer value: new size max of history.
- - true_false - a logical.
- - lines - a integer value or a vector of size 1x2.
- - str - a string.
- - name - a string: new default history filename
- - filename_history - a string: filename
- - nb_commands - a integer value: number of commands.
+- new_size - a integer value: new size max of history.
+- true_false - a logical.
+- lines - a integer value or a vector of size 1x2.
+- str - a string.
+- name - a string: new default history filename
+- filename_history - a string: filename
+- nb_commands - a integer value: number of commands.
 
 ## Output argument
 
- - c - a cell of strings.
- - l - a logical.
- - s - a integer value.
- - f - a string.
+- c - a cell of strings.
+- l - a logical.
+- s - a integer value.
+- f - a string.
 
 ## Description
-
 
   <p><b>history()</b> displays the current Nelson history.</p>
   <p><b>c = history()</b> returns the current Nelson history in a cell of strings.</p>
@@ -78,10 +75,10 @@ history manager.
   <p><b>Tips</b>: You can easily share your history file in the cloud by adding few lines code in your user startup file.</p>
   <p>If nelson launched with '--nouserstartup' option, history file will be not loaded at startup and not saved at exit.</p>
 
-
 ## Examples
 
 Example to share your history file in OneDrive cloud
+
 ```matlab
 OneDrivePath = getenv('OneDrive');
 if (strcmp(OneDrivePath, '') == false)
@@ -92,6 +89,7 @@ if (strcmp(OneDrivePath, '') == false)
   history('load', NelsonOneDrivePathFilename);
 end
 ```
+
 ```matlab
 history()
 c = history()
@@ -100,16 +98,13 @@ c = history()
 ## See also
 
 [diary](../stream_manager/diary.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

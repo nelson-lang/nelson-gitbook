@@ -1,5 +1,3 @@
-
-
 # tand
 
 Computes the tangent in degree for each element of x.
@@ -10,11 +8,11 @@ Computes the tangent in degree for each element of x.
 
 ## Input argument
 
- - x - a numeric value
+- x - a numeric value
 
 ## Output argument
 
- - res - a numeric value
+- res - a numeric value
 
 ## Description
 
@@ -30,16 +28,13 @@ res = tand(A)
 ## See also
 
 [tan](tan.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

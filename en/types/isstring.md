@@ -1,5 +1,3 @@
-
-
 # isstring
 
 Return true if variable var is a string array.
@@ -10,11 +8,11 @@ Return true if variable var is a string array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,10 +24,12 @@ Return true if variable var is a string array.
 A = 3;
 res = isstring(A)
 ```
+
 ```matlab
 B = "NelSon";
 res = isstring(B)
 ```
+
 ```matlab
 C = [1 ; 3];
 res = isstring(C)
@@ -38,16 +38,13 @@ res = isstring(C)
 ## See also
 
 [class](class.md), [string](../string/string.md), [ischar](ischar.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

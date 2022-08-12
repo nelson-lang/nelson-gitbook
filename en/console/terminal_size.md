@@ -1,5 +1,3 @@
-
-
 # terminal_size
 
 Query the size of the terminal window.
@@ -10,13 +8,11 @@ Query the size of the terminal window.
 
 ## Output argument
 
- - [r, c] - a vector: rows and columns
+- [r, c] - a vector: rows and columns
 
 ## Description
 
-
   <p><b>terminal_size()</b> returns a vector with size of the terminal window in characters (rows and columns).</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ terminal_size()
 ## See also
 
 [disp](../display_format/disp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # isprop
 
 Return true if property of handle object.
@@ -10,12 +8,12 @@ Return true if property of handle object.
 
 ## Input argument
 
- - h - a handle object
- - propertyname - a string
+- h - a handle object
+- propertyname - a string
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -24,16 +22,13 @@ Return true if property of handle object.
 ## See also
 
 [isprop](isprop.md), [properties](properties.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

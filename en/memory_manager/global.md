@@ -1,5 +1,3 @@
-
-
 # global
 
 Defines a global variable.
@@ -12,13 +10,11 @@ Defines a global variable.
 
 ## Input argument
 
- - variable_name - a string: valid variable name.
+- variable_name - a string: valid variable name.
 
 ## Description
 
-
   <p><b>global</b> make variable in global assign value to a variable in a specified variables scope.</p>
-
 
 ## Example
 
@@ -41,16 +37,13 @@ disp(y)
 ## See also
 
 [clear](clear.md), [who](who.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

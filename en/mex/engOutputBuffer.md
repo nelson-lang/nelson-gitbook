@@ -1,5 +1,3 @@
-
-
 # engOutputBuffer
 
 Specify char buffer for Nelson output
@@ -11,20 +9,18 @@ Specify char buffer for Nelson output
 
 ## Input argument
 
- - Engine *ep - handle to Nelson engine.
- - char *p - Pointer to character buffer.
- - int n - Length of buffer.
+- Engine \*ep - handle to Nelson engine.
+- char \*p - Pointer to character buffer.
+- int n - Length of buffer.
 
 ## Output argument
 
- - int - returns 1 if the engine session is closed or invalid. Otherwise, returns 0.
+- int - returns 1 if the engine session is closed or invalid. Otherwise, returns 0.
 
 ## Description
 
-
   <p>Specify char buffer for Nelson output.</p>
   <p>To turn off output buffering in C, use: <b>engOutputBuffer(ep, NULL, 0);</b></p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 ## See also
 
 [mex](mex.md), [engPutVariable](engPutVariable.md), [engGetVariable](engGetVariable.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

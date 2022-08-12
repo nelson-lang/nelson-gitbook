@@ -1,5 +1,3 @@
-
-
 # strcmpi
 
 Strings comparaison (case insensitive).
@@ -10,12 +8,12 @@ Strings comparaison (case insensitive).
 
 ## Input argument
 
- - s1 - a string, string array or cell of strings.
- - s2 - a string, string array or cell of strings.
+- s1 - a string, string array or cell of strings.
+- s2 - a string, string array or cell of strings.
 
 ## Output argument
 
- - res - a logical: true if the two are identical (case insensitive) and false otherwise.
+- res - a logical: true if the two are identical (case insensitive) and false otherwise.
 
 ## Description
 
@@ -38,16 +36,13 @@ strcmpi(C, 'C')
 ## See also
 
 [char](char.md), [strcmp](strcmp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

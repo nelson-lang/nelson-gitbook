@@ -1,5 +1,3 @@
-
-
 # ismodule
 
 Checks if a module is loaded.
@@ -10,17 +8,15 @@ Checks if a module is loaded.
 
 ## Input argument
 
- - module_short_name - a string: short module's name to test.
+- module_short_name - a string: short module's name to test.
 
 ## Output argument
 
- - state - a logical.
+- state - a logical.
 
 ## Description
 
-
   <p><b>ismodule</b> returns <b>true</b> if module is loaded otherwise <b>false</b>.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ ismodule('mymodule')
 ## See also
 
 [requiremodule](requiremodule.md), [getmodules](getmodules.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

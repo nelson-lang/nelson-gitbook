@@ -1,5 +1,3 @@
-
-
 # logical
 
 Converts a numeric value to logical type.
@@ -10,19 +8,17 @@ Converts a numeric value to logical type.
 
 ## Input argument
 
- - X - a numeric value.
+- X - a numeric value.
 
 ## Output argument
 
- - Y - a logical value.
+- Y - a logical value.
 
 ## Description
-
 
   <p><b>logical</b> converts a numeric value to logical type.</p>
   <p>Nonzero value converted to true and zeros values converted to false.</p>
   <p>Complex numbers returns an error.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ islogical(B)
 ## See also
 
 [islogical](../types/islogical.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

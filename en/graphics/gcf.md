@@ -1,5 +1,3 @@
-
-
 # gcf
 
 Current figure handle.
@@ -10,13 +8,11 @@ Current figure handle.
 
 ## Output argument
 
- - f - a graphic object: current figure handle.
+- f - a graphic object: current figure handle.
 
 ## Description
 
-
   <p><b>gcf</b> returns current figure handle.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ gcf()
 ## See also
 
 [figure](figure.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

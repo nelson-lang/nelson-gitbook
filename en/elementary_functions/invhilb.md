@@ -1,5 +1,3 @@
-
-
 # invhilb
 
 Inverse of Hilbert matrix
@@ -11,18 +9,16 @@ Inverse of Hilbert matrix
 
 ## Input argument
 
- - n - a scalar, nonnegative integer.
- - className - 'single' or 'double' (default).
+- n - a scalar, nonnegative integer.
+- className - 'single' or 'double' (default).
 
 ## Output argument
 
- - h - Hilbert matrix.
+- h - Hilbert matrix.
 
 ## Description
 
-
   <p><b>hilb</b> computes the Hilbert matrix.</p>
-
 
 Bibliography
 
@@ -37,16 +33,13 @@ h = hilb(5)
 ## See also
 
 [invhilb](invhilb.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

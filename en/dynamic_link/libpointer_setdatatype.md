@@ -1,5 +1,3 @@
-
-
 # libpointer_setdatatype
 
 Set type of an libpointer handle.
@@ -10,18 +8,17 @@ Set type of an libpointer handle.
 
 ## Input argument
 
- - h - a libpointer handle.
- - datatype - a string: new datatype.
+- h - a libpointer handle.
+- datatype - a string: new datatype.
 
 ## Description
 
-
   <p>Set data type from libpointer object.</p>
-
 
 ## See also
 
 [libpointer](libpointer.md), [C/Nelson equivalent data types](C_datatype.md).
+
 ## Example
 
 ```matlab
@@ -34,14 +31,10 @@ a.Value
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

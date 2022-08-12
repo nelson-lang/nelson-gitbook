@@ -1,5 +1,3 @@
-
-
 # whos
 
 List variables in memory or in .nh5 or in .mat file with sizes and types.
@@ -17,19 +15,17 @@ List variables in memory or in .nh5 or in .mat file with sizes and types.
 
 ## Input argument
 
- - scope - a string: 'global', 'base', 'caller', 'local'.
- - var1, ..., varN - a string: variable name.
- - filename - string: an existing filename .nh5 or .mat file.
+- scope - a string: 'global', 'base', 'caller', 'local'.
+- var1, ..., varN - a string: variable name.
+- filename - string: an existing filename .nh5 or .mat file.
 
 ## Output argument
 
- - st - stores information about the variables in the structure array s.
+- st - stores information about the variables in the structure array s.
 
 ## Description
 
-
   <p><b>whos</b> displays current variable names in memory or in .nh5 or .mat file.</p>
-
 
 ## Example
 
@@ -47,16 +43,13 @@ whos([tempdir(), 'example_who.nh5'])
 ## See also
 
 [what](../functions_manager/what.md), [clear](clear.md), [who](who.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

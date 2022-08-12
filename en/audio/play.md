@@ -1,5 +1,3 @@
-
-
 # play
 
 Plays an audioplayer object.
@@ -12,9 +10,9 @@ Plays an audioplayer object.
 
 ## Input argument
 
- - playObj - an audioplayer object.
- - start - an integer value: first sample to play.
- - end - an integer value: last sample to play.
+- playObj - an audioplayer object.
+- start - an integer value: first sample to play.
+- end - an integer value: last sample to play.
 
 ## Description
 
@@ -34,16 +32,13 @@ playObj
 ## See also
 
 [audioplayer](audioplayer.md), [playblocking](playblocking.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

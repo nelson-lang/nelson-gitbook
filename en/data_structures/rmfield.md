@@ -1,5 +1,3 @@
-
-
 # rmfield
 
 Remove fields from structure.
@@ -10,18 +8,16 @@ Remove fields from structure.
 
 ## Input argument
 
- - st - a structure.
- - field - a string, cell of strings, or char.
+- st - a structure.
+- field - a string, cell of strings, or char.
 
 ## Output argument
 
- - s - a structure without field.
+- s - a structure without field.
 
 ## Description
 
-
   <p><b>s = rmfield(st, field)</b> removes the specified field from structure array.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ rmfield(example, 'b')
 ## See also
 
 [struct](struct.md), [fieldnames](fieldnames.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

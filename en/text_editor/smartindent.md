@@ -1,5 +1,3 @@
-
-
 # smartindent
 
 Smart indent a nelson file
@@ -12,9 +10,9 @@ Smart indent a nelson file
 
 ## Input argument
 
- - filename - a string: filename to indent.
- - indentsize - an integer value > 0. default: 2
- - dobackup - a logical: false by default
+- filename - a string: filename to indent.
+- indentsize - an integer value > 0. default: 2
+- dobackup - a logical: false by default
 
 ## Description
 
@@ -23,16 +21,13 @@ Smart indent a nelson file
 ## See also
 
 [edit](edit.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # MPI_Get_library_version
 
 Return the version number of MPI library.
@@ -10,17 +8,16 @@ Return the version number of MPI library.
 
 ## Output argument
 
- - name - a string: Version of MPI.
+- name - a string: Version of MPI.
 
 ## Description
 
-
   <p>This function returns the version number of MPI library.</p>
-
 
 ## See also
 
 [MPI_Get_version](MPI_Get_version.md).
+
 ## Example
 
 ```matlab
@@ -35,14 +32,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

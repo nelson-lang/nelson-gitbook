@@ -1,5 +1,3 @@
-
-
 # inputname
 
 Get variable name of function input.
@@ -10,18 +8,16 @@ Get variable name of function input.
 
 ## Input argument
 
- - argNumber - a scalar, real, positive integer value: Number of function input argument
+- argNumber - a scalar, real, positive integer value: Number of function input argument
 
 ## Output argument
 
- - s - character vector: variable name
+- s - character vector: variable name
 
 ## Description
 
-
   <p><b>inputname</b> get variable name of function input.</p>
   <p><b>inputname</b> is only useable within a function</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ end
 ## See also
 
 [nargin](nargin.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

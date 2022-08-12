@@ -1,5 +1,3 @@
-
-
 # MPI_Bcast
 
 Broadcasts a message from the process with rank "root" to all other processes of the communicator
@@ -11,26 +9,26 @@ Broadcasts a message from the process with rank "root" to all other processes of
 
 ## Input argument
 
- - A - a nelson variable.
- - Root - a integer value: rank of broadcast root.
- - Comm - a MPI_Comm object.
+- A - a nelson variable.
+- Root - a integer value: rank of broadcast root.
+- Comm - a MPI_Comm object.
 
 ## Output argument
 
- - A - broadcasted array.
+- A - broadcasted array.
 
 ## Description
 
-
   <p>This function is used to broadcast an array to all group members.</p>
-
 
 ## See also
 
 [MPI_Barrier](MPI_Barrier.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Bcast.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -53,14 +51,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

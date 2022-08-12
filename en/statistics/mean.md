@@ -1,5 +1,3 @@
-
-
 # mean
 
 Mean of array elements.
@@ -16,20 +14,18 @@ Mean of array elements.
 
 ## Input argument
 
- - M - an array of double, single, integers, ...
- - d - dimension to operate along: positive integer scalar.
- - t - a string: 'default', 'double' or 'native'.
- - f - a string: 'includenan' or 'omitnan'.
+- M - an array of double, single, integers, ...
+- d - dimension to operate along: positive integer scalar.
+- t - a string: 'default', 'double' or 'native'.
+- f - a string: 'includenan' or 'omitnan'.
 
 ## Output argument
 
- - R - Mean of array elements.
+- R - Mean of array elements.
 
 ## Description
 
-
   <p><b>R = mean(M)</b> returns the mean of the array elements of M.</p>
-
 
 ## Example
 
@@ -41,16 +37,13 @@ R = mean(M, 'native')
 ## See also
 
 [sum](sum.html), [prod](prod.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # actxcontrollist
 
 Get available ActiveX controls.
@@ -10,13 +8,11 @@ Get available ActiveX controls.
 
 ## Output argument
 
- - l - a 1 by 3cell of strings.
+- l - a 1 by 3cell of strings.
 
 ## Description
 
-
   <p><b>l = actxcontrollist()</b> returns list of available controls</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ l = actxcontrollist()
 ## See also
 
 [actxserverlist](actxserverlist.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

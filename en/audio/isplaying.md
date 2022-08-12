@@ -1,5 +1,3 @@
-
-
 # isplaying
 
 get info about audio playback is in progress.
@@ -10,11 +8,11 @@ get info about audio playback is in progress.
 
 ## Input argument
 
- - play - an audioplayer object.
+- play - an audioplayer object.
 
 ## Output argument
 
- - play - an logical.
+- play - an logical.
 
 ## Description
 
@@ -36,16 +34,13 @@ playObj
 ## See also
 
 [audioplayer](audioplayer.md), [playblocking](playblocking.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # randperm
 
 Random permutation of integers values.
@@ -10,17 +8,15 @@ Random permutation of integers values.
 
 ## Input argument
 
- - n - Number of integers in sample interval (positive integer).
+- n - Number of integers in sample interval (positive integer).
 
 ## Output argument
 
- - p - a row vector.
+- p - a row vector.
 
 ## Description
 
-
   <p><b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ randperm(7)
 ## See also
 
 [rand](rand.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

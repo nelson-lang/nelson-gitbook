@@ -1,5 +1,3 @@
-
-
 # path
 
 Modify or display Nelson’s load path.
@@ -14,17 +12,15 @@ Modify or display Nelson’s load path.
 
 ## Input argument
 
- - dirname - a directory name or an suite of directory names using pathsep()
+- dirname - a directory name or an suite of directory names using pathsep()
 
 ## Output argument
 
- - p - string: the specified paths
+- p - string: the specified paths
 
 ## Description
 
-
   <p><b>path</b> modifies or displays Nelson’s load path.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ path(p)
 ## See also
 
 [rmpath](rmpath.md), [addpath](addpath.md), [rehash](rehash.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

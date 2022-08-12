@@ -1,5 +1,3 @@
-
-
 # continue
 
 continue evaluation in loop.
@@ -10,10 +8,8 @@ continue evaluation in loop.
 
 ## Description
 
-
   <p><b>continue</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.</p>
   <p><b>continue</b> statement is used to pass control to the next iteration of a loop.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ end
 ## See also
 
 [for](for.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

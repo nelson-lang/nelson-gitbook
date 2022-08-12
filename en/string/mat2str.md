@@ -1,5 +1,3 @@
-
-
 # mat2str
 
 Matrix to String.
@@ -12,19 +10,17 @@ Matrix to String.
 
 ## Input argument
 
- - M - a numerical 2D matrix or logical.
- - P - an integer value: precision, 15 by default.
+- M - a numerical 2D matrix or logical.
+- P - an integer value: precision, 15 by default.
 
 ## Output argument
 
- - res - a string
+- res - a string
 
 ## Description
 
-
   <p><b>mat2str</b> converts a matrix to a string.</p>
   <p>This string may be used to reconstruct the original matrix with <b>execstr</b> function.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ execstr(['RB = ', R])
 ## See also
 
 [execstr](../core/execstr.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

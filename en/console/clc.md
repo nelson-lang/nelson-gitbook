@@ -1,5 +1,3 @@
-
-
 # clc
 
 Clear Command Window.
@@ -10,9 +8,7 @@ Clear Command Window.
 
 ## Description
 
-
   <p><b>clc()</b> clears the console and move the cursor to the upper left corner.</p>
-
 
 ## Example
 
@@ -24,16 +20,13 @@ clc()
 ## See also
 
 [disp](../display_format/disp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

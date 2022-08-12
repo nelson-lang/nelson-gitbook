@@ -1,5 +1,3 @@
-
-
 # angle
 
 Phase angle
@@ -10,17 +8,15 @@ Phase angle
 
 ## Input argument
 
- - Z - a variable (double, single, complex)
+- Z - a variable (double, single, complex)
 
 ## Output argument
 
- - R - result of angle function.
+- R - result of angle function.
 
 ## Description
 
-
   <p><b>angle</b> computes the phase angle, equivalent to <b>atan2(imag(Z), real(Z))</b>.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ r = angle(x)
 ## See also
 
 [atan2](../trigonometric_functions/atan2.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

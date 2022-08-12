@@ -1,5 +1,3 @@
-
-
 # fsize
 
 Returns size of an opened file.
@@ -10,17 +8,15 @@ Returns size of an opened file.
 
 ## Input argument
 
- - fid - a file descriptor
+- fid - a file descriptor
 
 ## Output argument
 
- - s - an integer value: size of a file.
+- s - an integer value: size of a file.
 
 ## Description
 
-
   <p><b>fsize</b> returns th size of a file opened by <b>fopen</b>.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ status = fclose(fileID);
 ## See also
 
 [fopen](fopen.md), [fprintf](fread.md), [fclose](fclose.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

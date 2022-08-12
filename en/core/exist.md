@@ -1,5 +1,3 @@
-
-
 # exist
 
 Check for the existence.
@@ -11,15 +9,14 @@ Check for the existence.
 
 ## Input argument
 
- - name - a string: name of variable, function, file or directory.
- - category - a string: 'var', 'builtin', 'file', or 'dir'.
+- name - a string: name of variable, function, file or directory.
+- category - a string: 'var', 'builtin', 'file', or 'dir'.
 
 ## Output argument
 
- - res - a integer value.
+- res - a integer value.
 
 ## Description
-
 
   <p><b>exists</b> checks for the existence of variable, builtin, file or directory.</p>
   <p><b>exists</b> returns:</p>
@@ -29,7 +26,6 @@ Check for the existence.
   <p><b>3</b> is a mex function</p>
   <p><b>5</b> is a builtin or function</p>
   <p><b>7</b> is a directory</p>
-
 
 ## Example
 
@@ -44,16 +40,13 @@ exist('fileread')
 ## See also
 
 [isbuiltin](../functions_manager/isbuiltin.md), [ismacro](../functions_manager/ismacro.md), [isfile](../files_folders_functions/isfile.md), [isdir](../files_folders_functions/isdir.md), [isvar](../memory_manager/isvar.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

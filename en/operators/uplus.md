@@ -1,5 +1,3 @@
-
-
 # uplus
 
 Unary plus, + operator
@@ -11,17 +9,15 @@ Unary plus, + operator
 
 ## Input argument
 
- - A - a variable
+- A - a variable
 
 ## Output argument
 
- - C - result of +A
+- C - result of +A
 
 ## Description
 
-
   <p><b>C = uplus(A)</b> performs unary plus ie +A.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ M =-3;
 ## See also
 
 [uminus](uminus.md), [plus](plus.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # pwd
 
 Returns current directory.
@@ -11,15 +9,13 @@ Returns current directory.
 
 ## Output argument
 
- - r - a string: current directory.
+- r - a string: current directory.
 
 ## Description
-
 
   <p>Returns the current working directory.</p>
   <p><b>pwd()</b> without input argument displays the current working directory.</p>
   <p/>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ pwd()
 ## See also
 
 [cd](cd.md), [dir](dir.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

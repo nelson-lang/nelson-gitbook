@@ -1,5 +1,3 @@
-
-
 # sleep
 
 Suspend code execution.
@@ -10,14 +8,12 @@ Suspend code execution.
 
 ## Input argument
 
- - n - a double: duration of the sleep in seconds (decimal number).
+- n - a double: duration of the sleep in seconds (decimal number).
 
 ## Description
 
-
   <p><b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.</p>
   <p> CTRL-C interruption stops <b>sleep</b>.</p>
-
 
 ## Example
 
@@ -30,16 +26,13 @@ tic();sleep(0.01);toc()
 ## See also
 
 [tic](tic.md), [toc](toc.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

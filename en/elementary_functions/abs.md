@@ -1,5 +1,3 @@
-
-
 # abs
 
 Absolute value
@@ -10,18 +8,16 @@ Absolute value
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - R - result of abs: absolute value.
+- R - result of abs: absolute value.
 
 ## Description
 
-
   <p><b>abs</b> computes the absolute value.</p>
   <p>If input argument is a complex number, <b>abs</b> computes the complex magnitude.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ r = abs(x)
 ## See also
 
 [conj](conj.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # strncmpi
 
 Compares first n characters of strings (case sensitive).
@@ -10,13 +8,13 @@ Compares first n characters of strings (case sensitive).
 
 ## Input argument
 
- - s1 - a string, string array or cell of strings.
- - s2 - a string, string array or cell of strings.
- - n - an integer value: numbers of characters to compare.
+- s1 - a string, string array or cell of strings.
+- s2 - a string, string array or cell of strings.
+- n - an integer value: numbers of characters to compare.
 
 ## Output argument
 
- - res - a logical: true if the two are identical and false otherwise.
+- res - a logical: true if the two are identical and false otherwise.
 
 ## Description
 
@@ -39,16 +37,13 @@ strncmpi(C, 'C', 4)
 ## See also
 
 [strncmp](strncmp.md), [strcmp](strcmp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

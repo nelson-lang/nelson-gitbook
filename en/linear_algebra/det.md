@@ -1,5 +1,3 @@
-
-
 # det
 
 Matrix determinant.
@@ -10,17 +8,15 @@ Matrix determinant.
 
 ## Input argument
 
- - x - a numeric value: scalar or square matrix (double or single)
+- x - a numeric value: scalar or square matrix (double or single)
 
 ## Output argument
 
- - res - real or complex number (double or single), the determinant base 10.
+- res - real or complex number (double or single), the determinant base 10.
 
 ## Description
 
-
   <p><b>res = det(x)</b> returns the determinant of square matrix x.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ D = det(A)
 ## See also
 
 [rcond](rcond.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

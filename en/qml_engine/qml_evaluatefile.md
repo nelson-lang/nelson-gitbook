@@ -1,5 +1,3 @@
-
-
 # qml_evaluatefile
 
 Evaluates a js file.
@@ -10,22 +8,21 @@ Evaluates a js file.
 
 ## Input argument
 
- - filename - a string: a js filename.
+- filename - a string: a js filename.
 
 ## Output argument
 
- - r - a double, logical, int or string.
+- r - a double, logical, int or string.
 
 ## Description
-
 
   <p>Evaluates a js file.</p>
   <p>If returned value cannot be converted to a basic type, it will converted to string.</p>
 
-
 ## See also
 
 [qml_evaluatestring](qml_evaluatestring.html).
+
 ## Example
 
 ```matlab
@@ -38,14 +35,10 @@ qml_evaluatefile(test_file)
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

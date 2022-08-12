@@ -1,5 +1,3 @@
-
-
 # buildhelp
 
 Build help of Nelson's modules.
@@ -11,13 +9,11 @@ Build help of Nelson's modules.
 
 ## Input argument
 
- - module_name - a string: module name (module must be loaded).
+- module_name - a string: module name (module must be loaded).
 
 ## Description
 
-
   <p><b>buildhelp</b> generates help files.</p>
-
 
 ## Example
 
@@ -29,16 +25,13 @@ buildhelp('core');
 ## See also
 
 [doc](doc.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

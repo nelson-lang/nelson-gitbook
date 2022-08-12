@@ -1,5 +1,3 @@
-
-
 # throw
 
 throw error.
@@ -10,13 +8,11 @@ throw error.
 
 ## Input argument
 
- - MException - MException object
+- MException - MException object
 
 ## Description
 
-
   <p><b>throw(MException)</b> throws an exception based on the information contained in the <b>MException</b> object, exception.</p>
-
 
 ## Example
 
@@ -28,16 +24,13 @@ throw(ME)
 ## See also
 
 [MException](MException.md), [rethrow](rethrow.md), [throwAsCaller](throwAsCaller.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

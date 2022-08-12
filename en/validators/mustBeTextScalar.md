@@ -1,5 +1,3 @@
-
-
 # mustBeTextScalar
 
 Checks that value is single piece of text or raise an error.
@@ -12,14 +10,12 @@ Checks that value is single piece of text or raise an error.
 
 ## Input argument
 
- - var - a variable: a scalar string array or row vector characters array.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: a scalar string array or row vector characters array.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeTextScalar</b> that value is single piece of text or raise an error.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeTextScalar("hello")
 ## See also
 
 [isscalar](isscalar.html), [ischar](../types/ischar.md), [isstring](../types/isstring.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # sioemit
 
 Emit an event to web client.
@@ -11,14 +9,12 @@ Emit an event to web client.
 
 ## Input argument
 
- - name - a string: event name
- - message - a string: message to emit
+- name - a string: event name
+- message - a string: message to emit
 
 ## Description
 
-
   <p><b>sioemit</b> emits an event to client.</p>
-
 
 ## Example
 
@@ -28,14 +24,10 @@ sioemit('event_demo', jsonencode(eye(3,3)))
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

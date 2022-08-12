@@ -1,5 +1,3 @@
-
-
 # jsonencode
 
 encodes a Nelson object into a JSON string.
@@ -11,22 +9,20 @@ encodes a Nelson object into a JSON string.
 
 ## Input argument
 
- - obj - a Nelson object: struct, cell, matrix.
- - true_or_false - a logical: if true, Inf, NaN are converted to 'Inf' or 'Nan'.
+- obj - a Nelson object: struct, cell, matrix.
+- true_or_false - a logical: if true, Inf, NaN are converted to 'Inf' or 'Nan'.
 
 ## Output argument
 
- - res - a string: JSON text.
+- res - a string: JSON text.
 
 ## Description
-
 
   <p><b>jsonencode</b> converts a Nelson variable to JSON text.</p>
   <p><b>jsonencode</b> does not support complex numbers, sparse arrays, function handle, and others handle.</p>
   <p><b>jsonencode</b> can be overloaded to manage your own type.</p>
   <p>By default <b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.</p>
   <p>Warning: The shape of a matrix and data type are not always preserved.</p>
-
 
 Bibliography
 
@@ -47,16 +43,13 @@ filewrite([tempdir(), 'example.json'], r);
 ## See also
 
 [jsondecode](jsondecode.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

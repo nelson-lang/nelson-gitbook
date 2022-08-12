@@ -1,5 +1,3 @@
-
-
 # libpointer_plus
 
 plus operator on libpointer handle.
@@ -11,19 +9,18 @@ plus operator on libpointer handle.
 
 ## Input argument
 
- - h - a libpointer handle.
- - offset - a integer value: increment.
+- h - a libpointer handle.
+- offset - a integer value: increment.
 
 ## Description
-
 
   <p>plus operator on libpointer handle.</p>
   <p>ouptut libpointer is valid only as long as the original input libpointer exists.</p>
 
-
 ## See also
 
 [libpointer](libpointer.md).
+
 ## Example
 
 ```matlab
@@ -36,14 +33,10 @@ y.Value
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

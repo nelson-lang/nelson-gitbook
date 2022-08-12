@@ -1,5 +1,3 @@
-
-
 # var
 
 Variance
@@ -10,17 +8,15 @@ Variance
 
 ## Input argument
 
- - M - a vector or matrix
+- M - a vector or matrix
 
 ## Output argument
 
- - V - Variance of M.
+- V - Variance of M.
 
 ## Description
 
-
   <p><b>V = var(M)</b> returns the variance of the elements of M along the first array dimension whose size does not equal 1.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ V = var(M)
 ## See also
 
 [cov](cov.html), [mean](mean.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

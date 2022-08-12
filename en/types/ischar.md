@@ -1,5 +1,3 @@
-
-
 # ischar
 
 Return true if variable var is a char array.
@@ -10,11 +8,11 @@ Return true if variable var is a char array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,10 +24,12 @@ Return true if variable var is a char array.
 A = 3;
 res = ischar(A)
 ```
+
 ```matlab
 B = 'NelSon';
 res = ischar(B)
 ```
+
 ```matlab
 C = [1 ; 3];
 res = ischar(C)
@@ -38,16 +38,13 @@ res = ischar(C)
 ## See also
 
 [class](class.md), [char](../string/char.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

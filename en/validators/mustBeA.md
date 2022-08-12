@@ -1,5 +1,3 @@
-
-
 # mustBeA
 
 Checks that input value comes from one of specified classes.
@@ -12,15 +10,13 @@ Checks that input value comes from one of specified classes.
 
 ## Input argument
 
- - var - a variable.
- - classNames - a variable: name of data type or class.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable.
+- classNames - a variable: name of data type or class.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeA</b> checks that input value comes from one of specified classes.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeA([], ["double", "single"])
 ## See also
 
 [mustBeNumeric](mustBeNumeric.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

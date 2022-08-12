@@ -1,5 +1,3 @@
-
-
 # now
 
 Returns current date under the form of a Unix hour.
@@ -10,13 +8,11 @@ Returns current date under the form of a Unix hour.
 
 ## Output argument
 
- - n - a double.
+- n - a double.
 
 ## Description
 
-
   <p><b>now()</b> returns the current date and time as a serial date number.</p>
-
 
 ## Example
 
@@ -27,16 +23,13 @@ datevec(now())
 ## See also
 
 [datenum](datenum.md), [datevec](datevec.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

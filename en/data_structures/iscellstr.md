@@ -1,5 +1,3 @@
-
-
 # iscellstr
 
 Returns if a variable is a cell of strings.
@@ -10,26 +8,26 @@ Returns if a variable is a cell of strings.
 
 ## Input argument
 
- - A - a variable
+- A - a variable
 
 ## Output argument
 
- - true_or_false - a logical
+- true_or_false - a logical
 
 ## Description
 
-
   <p><b>iscellstr(A)</b> returns true if <b>A</b> is a cell of strings or an empty cell).</p>
-
 
 ## Examples
 
 ```matlab
 iscellstr('Nelson')
 ```
+
 ```matlab
 iscellstr({'Nelson'})
 ```
+
 ```matlab
 iscellstr({})
 ```
@@ -37,16 +35,13 @@ iscellstr({})
 ## See also
 
 [iscell](../types/iscell.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

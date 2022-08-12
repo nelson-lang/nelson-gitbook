@@ -1,5 +1,3 @@
-
-
 # banner
 
 Shows Nelson banner.
@@ -10,9 +8,7 @@ Shows Nelson banner.
 
 ## Description
 
-
   <p><b>banner</b> shows Nelson banner.</p>
-
 
 ## Example
 
@@ -23,16 +19,13 @@ clc();banner
 ## See also
 
 [clc](../console/clc.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

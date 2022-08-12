@@ -1,5 +1,3 @@
-
-
 # or
 
 logical 'OR' operator, |
@@ -11,18 +9,16 @@ logical 'OR' operator, |
 
 ## Input argument
 
- - A - a variable
- - B - a variable
+- A - a variable
+- B - a variable
 
 ## Output argument
 
- - C - result of A | B
+- C - result of A | B
 
 ## Description
 
-
   <p><b>C = or(A, B)</b> performs a logical <b>OR</b> operation.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ C == D
 ## See also
 
 [and](and.md), [xor](xor.html), [all](all.md), [any](any.md), [not](not.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

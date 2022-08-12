@@ -1,5 +1,3 @@
-
-
 # quit
 
 Terminate Nelson application
@@ -10,13 +8,12 @@ Terminate Nelson application
 
 ## Description
 
-
   <p><b>quit</b> terminates current Nelson application.</p>
-
 
 ## Example
 
 Beware this example will close Nelson
+
 ```matlab
 quit
 ```
@@ -24,16 +21,13 @@ quit
 ## See also
 
 [exit](exit.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

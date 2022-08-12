@@ -1,5 +1,3 @@
-
-
 # COM_xlsread
 
 Read Microsoft Excel spreadsheet file using COM.
@@ -19,21 +17,19 @@ Read Microsoft Excel spreadsheet file using COM.
 
 ## Input argument
 
- - filename - a string: an existing filename.
- - sheet - an integer or a string: sheet id or sheet name
- - range - an string: an range xx:xx
+- filename - a string: an existing filename.
+- sheet - an integer or a string: sheet id or sheet name
+- range - an string: an range xx:xx
 
 ## Output argument
 
- - numeric_data - a matrix or vector: string data converted to double.
- - txt_data - a cell of strings with only strings.
- - raw_data - a cell of strings: raw data without conversion.
+- numeric_data - a matrix or vector: string data converted to double.
+- txt_data - a cell of strings with only strings.
+- raw_data - a cell of strings: raw data without conversion.
 
 ## Description
 
-
-  <description><b>COM_xlsread</b> read Microsoft Excel spreadsheet file using COM.</description>
-
+<description><b>COM_xlsread</b> read Microsoft Excel spreadsheet file using COM.</description>
 
 ## Example
 
@@ -46,16 +42,13 @@ s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');
 ## See also
 
 [COM_xlswrite](COM_xlswrite.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # strlength
 
 Length of strings in cell of strings or string array.
@@ -10,11 +8,11 @@ Length of strings in cell of strings or string array.
 
 ## Input argument
 
- - ce - a string, string array or cell of strings.
+- ce - a string, string array or cell of strings.
 
 ## Output argument
 
- - len - a matrix of integer values: length of strings.
+- len - a matrix of integer values: length of strings.
 
 ## Description
 
@@ -36,16 +34,13 @@ k = strlength(B)
 ## See also
 
 [strcmp](strcmp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

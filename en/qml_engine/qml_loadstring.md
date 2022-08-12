@@ -1,5 +1,3 @@
-
-
 # qml_loadstring
 
 Load a QML string.
@@ -10,22 +8,21 @@ Load a QML string.
 
 ## Input argument
 
- - str_to_eval - a string.
+- str_to_eval - a string.
 
 ## Output argument
 
- - h - a QObject handle.
+- h - a QObject handle.
 
 ## Description
-
 
   <p>Load a QML string</p>
   <p>It creates a QML component and load .qml file.</p>
 
-
 ## See also
 
 [qml_loadstring](qml_loadstring.html).
+
 ## Example
 
 ```matlab
@@ -34,14 +31,10 @@ Load a QML string.
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

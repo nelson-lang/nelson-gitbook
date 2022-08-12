@@ -1,5 +1,3 @@
-
-
 # input
 
 Display prompt and wait for user input.
@@ -11,17 +9,15 @@ Display prompt and wait for user input.
 
 ## Input argument
 
- - prompt_str - a string: temp. prompt displayed
+- prompt_str - a string: temp. prompt displayed
 
 ## Output argument
 
- - r - a string
+- r - a string
 
 ## Description
 
-
   <p>Display prompt and wait for user input. input returns a string which is the expression entered at keyboard.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ end
 ## See also
 
 [execstr](../core/execstr.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

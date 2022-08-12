@@ -1,5 +1,3 @@
-
-
 # iscell
 
 Return true if variable var is a cell array.
@@ -10,11 +8,11 @@ Return true if variable var is a cell array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a cell array.
 A = 3;
 res = iscell(A)
 ```
+
 ```matlab
 B = {'NelSon', 3, true};
 res = iscell(B)
@@ -34,16 +33,13 @@ res = iscell(B)
 ## See also
 
 [class](class.md), [isstruct](isstruct.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

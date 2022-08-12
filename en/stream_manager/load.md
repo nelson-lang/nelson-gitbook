@@ -1,5 +1,3 @@
-
-
 # load
 
 load data from .nh5 or .mat file into Nelson's workspace.
@@ -15,19 +13,17 @@ load data from .nh5 or .mat file into Nelson's workspace.
 
 ## Input argument
 
- - filename - a string: .nh5 or .mat filename.
- - '-mat' or '-nh5' - forces to read file as nh5 or mat.
- - var1, ..., varN - string: Names of variables to load into Nelson's workspace.
+- filename - a string: .nh5 or .mat filename.
+- '-mat' or '-nh5' - forces to read file as nh5 or mat.
+- var1, ..., varN - string: Names of variables to load into Nelson's workspace.
 
 ## Output argument
 
- - st - a structure with variables name as fieldnames.
+- st - a structure with variables name as fieldnames.
 
 ## Description
 
-
   <p><b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.</p>
-
 
 ## Example
 
@@ -51,16 +47,13 @@ B
 ## See also
 
 [save](save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

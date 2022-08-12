@@ -1,5 +1,3 @@
-
-
 # rank
 
 Rank of matrix.
@@ -11,18 +9,16 @@ Rank of matrix.
 
 ## Input argument
 
- - A - matrix: double or single
- - tol - tolerance
+- A - matrix: double or single
+- tol - tolerance
 
 ## Output argument
 
- - r - a numeric value: a scalar.
+- r - a numeric value: a scalar.
 
 ## Description
 
-
   <p><b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).</p>
-
 
 ## Example
 
@@ -34,16 +30,13 @@ r = rank(X)
 ## See also
 
 [svd](svd.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

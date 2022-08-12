@@ -1,5 +1,3 @@
-
-
 # dlmake
 
 call make or nmake tool
@@ -11,26 +9,25 @@ call make or nmake tool
 
 ## Input argument
 
- - destinationdir - a string: destination directory where is the makefile to call.
+- destinationdir - a string: destination directory where is the makefile to call.
 
 ## Output argument
 
- - res - a logical: true if makefile execution was successfully.
- - message - a string: empty if makefile execution was successfully or an error message.
+- res - a logical: true if makefile execution was successfully.
+- message - a string: empty if makefile execution was successfully or an error message.
 
 ## Description
 
-
   <p><b>dlmake</b> used to provide an multiplatform way to build C/C++.</p>
-
 
 ## Example
 
 basic example to call dlmake
+
 ```matlab
-dest = [tempdir(), 'dlmake_help']; 
-mkdir(dest);		
-txt = 'MESSAGE( STATUS "Hello world !")';		
+dest = [tempdir(), 'dlmake_help'];
+mkdir(dest);
+txt = 'MESSAGE( STATUS "Hello world !")';
 filewrite([dest, '/CMakeLists.txt'], txt);
 [status, message] = dlmake(dest)
 ```
@@ -38,16 +35,13 @@ filewrite([dest, '/CMakeLists.txt'], txt);
 ## See also
 
 [dlgeneratemake](dlgeneratemake.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # strfind
 
 Find a string in another.
@@ -11,13 +9,13 @@ Find a string in another.
 
 ## Input argument
 
- - str - a string or cell of strings.
- - pattern - a string to find.
- - output - a logical.
+- str - a string or cell of strings.
+- pattern - a string to find.
+- output - a logical.
 
 ## Output argument
 
- - occ - a cell or matrix of integer values: occurences position.
+- occ - a cell or matrix of integer values: occurences position.
 
 ## Description
 
@@ -42,16 +40,13 @@ k = strfind(str,'in','ForceCellOutput',false)
 ## See also
 
 [strcmp](strcmp.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

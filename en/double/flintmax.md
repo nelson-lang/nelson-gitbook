@@ -1,5 +1,3 @@
-
-
 # flintmax
 
 Largest consecutive integer in floating-point format.
@@ -12,13 +10,11 @@ Largest consecutive integer in floating-point format.
 
 ## Output argument
 
- - R - a double or single.
+- R - a double or single.
 
 ## Description
 
-
   <p><b>flintmax</b> returns largest consecutive integer in floating-point format.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ flintmax('single')
 ## See also
 
 [intmax](../integer/intmax.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

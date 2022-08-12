@@ -1,5 +1,3 @@
-
-
 # string
 
 string array constructor.
@@ -10,11 +8,11 @@ string array constructor.
 
 ## Input argument
 
- - var - characters, a cell of characters, or an logical or numeric array.
+- var - characters, a cell of characters, or an logical or numeric array.
 
 ## Output argument
 
- - res - a string array
+- res - a string array
 
 ## Description
 
@@ -26,6 +24,7 @@ string array constructor.
 R = string({'these', 'are'; 'test', 'strings'})
 R2 = ["these", "are"; "test", "strings"];
 ```
+
 ```matlab
 M = [ 104   101   108   108   111;
 20320   22909 32    32    32];
@@ -36,16 +35,13 @@ D = double(R)
 ## See also
 
 [strings](strings.md), [double](../double/double.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

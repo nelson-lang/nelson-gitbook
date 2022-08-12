@@ -1,5 +1,3 @@
-
-
 # mustBeNonempty
 
 Checks that value is nonempty or raise an error.
@@ -12,14 +10,12 @@ Checks that value is nonempty or raise an error.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement isempty methods.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement isempty methods.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeNonempty</b> checks that value is not empty or raise an error.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ mustBeNonempty([])
 ## See also
 
 [isempty](../types/isempty.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # getfield
 
 Returns value of a field in a struct.
@@ -10,18 +8,16 @@ Returns value of a field in a struct.
 
 ## Input argument
 
- - st - a structure.
- - field - a string.
+- st - a structure.
+- field - a string.
 
 ## Output argument
 
- - value - the value of a field from a structure.
+- value - the value of a field from a structure.
 
 ## Description
 
-
   <p><b>value = getfield(st, field)</b> returns the value of the field named <b>field</b> from a structure.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ getfield(example, 'b')
 ## See also
 
 [struct](struct.md), [fieldnames](fieldnames.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

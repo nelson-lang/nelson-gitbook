@@ -1,5 +1,3 @@
-
-
 # assert
 
 Check that condition is true.
@@ -15,13 +13,13 @@ Check that condition is true.
 
 ## Input argument
 
- - x - a logical value
- - err_msg - a string, the error message to be printed in case of failure (optional).
+- x - a logical value
+- err_msg - a string, the error message to be printed in case of failure (optional).
 
 ## Output argument
 
- - res - a logical value
- - msg - a string value, the error message. If x == true, then msg == ''. If x == false, then msg contains the error message.
+- res - a logical value
+- msg - a string value, the error message. If x == true, then msg == ''. If x == false, then msg contains the error message.
 
 ## Description
 
@@ -36,16 +34,13 @@ assert(4 == 3, _('error for comparaison.'))
 ## See also
 
 [assert_istrue](assert_istrue.md), [assert_isfalse](assert_isfalse.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

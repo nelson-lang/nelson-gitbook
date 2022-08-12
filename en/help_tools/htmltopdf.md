@@ -1,5 +1,3 @@
-
-
 # htmltopdf
 
 Convers html page to pdf.
@@ -10,14 +8,12 @@ Convers html page to pdf.
 
 ## Input argument
 
- - html_filename - a string: html filename.
- - pdf_filename - a string: pdf filename (destination).
+- html_filename - a string: html filename.
+- pdf_filename - a string: pdf filename (destination).
 
 ## Description
 
-
   <p><b>htmltopdf</b> converts html page to pdf.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ end
 ## See also
 
 [markdown](markdown.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

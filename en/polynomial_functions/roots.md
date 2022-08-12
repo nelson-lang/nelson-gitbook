@@ -1,5 +1,3 @@
-
-
 # roots
 
 Find polynomial roots.
@@ -10,18 +8,16 @@ Find polynomial roots.
 
 ## Input argument
 
- - p - vector: polynomial coefficients
+- p - vector: polynomial coefficients
 
 ## Output argument
 
- - r - roots
+- r - roots
 
 ## Description
 
-
   <p><b>r = roots(c)</b> finds the roots of the polynomial <b>c</b>. <b>r</b> is a column vector.</p>
   <p>This function uses the companion matrix of the polynomial to find the roots.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ r = roots(p)
 ## See also
 
 [poly](poly.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

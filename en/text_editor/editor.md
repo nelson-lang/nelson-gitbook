@@ -1,5 +1,3 @@
-
-
 # editor
 
 call the embedded text editor.
@@ -11,28 +9,23 @@ call the embedded text editor.
 
 ## Input argument
 
- - filename - a string: filename to open.
+- filename - a string: filename to open.
 
 ## Description
-
 
   <p><b>editor</b> opens an existing file in the nelson's editor.</p>
   <p><b>editor</b> must be considered as internal.</p>
 
-
 ## See also
 
 [edit](edit.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

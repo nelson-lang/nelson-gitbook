@@ -1,5 +1,3 @@
-
-
 # reshape
 
 Reshapes a vector or a matrix to a different size matrix.
@@ -12,19 +10,17 @@ Reshapes a vector or a matrix to a different size matrix.
 
 ## Input argument
 
- - M1 - a vector or an matrix
- - size - a size vector
- - s1, ... ,sN - a s1 - by - ... - by - sN array where s1, ..., sN indicates the size of each dimension.
+- M1 - a vector or an matrix
+- size - a size vector
+- s1, ... ,sN - a s1 - by - ... - by - sN array where s1, ..., sN indicates the size of each dimension.
 
 ## Output argument
 
- - M2 - Matrix reshaped
+- M2 - Matrix reshaped
 
 ## Description
 
-
   <p><b>reshape</b> performs a reshape to a different size matrix. If only one dimension is specified, <b>reshape</b> will determine complementary size automatically. [ ] is used to unspecify the dimension.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ M2 = reshape(M1, 5, [], 4)
 ## See also
 
 [colon](colon.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

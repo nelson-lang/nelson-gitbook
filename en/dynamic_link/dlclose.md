@@ -1,5 +1,3 @@
-
-
 # dlclose
 
 Removes dllib object.
@@ -12,14 +10,12 @@ Removes dllib object.
 
 ## Input argument
 
- - h - a handle: an dllib object.
+- h - a handle: an dllib object.
 
 ## Description
 
-
   <p><b>dlclose(h)</b> or <b>delete(h)</b> releases dllib object.</p>
   <p>Do not forget to clear h afterward.</p>
-
 
 ## Example
 
@@ -34,16 +30,13 @@ isvalid(lib)
 ## See also
 
 [dlopen](dlopen.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

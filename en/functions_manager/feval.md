@@ -1,5 +1,3 @@
-
-
 # feval
 
 Evaluates function.
@@ -13,19 +11,17 @@ Evaluates function.
 
 ## Input argument
 
- - function_name - a string: function name.
- - function_handle - a function handle.
- - x1, ..., xn - input arguments of the function.
+- function_name - a string: function name.
+- function_handle - a function handle.
+- x1, ..., xn - input arguments of the function.
 
 ## Output argument
 
- - r1, ..., rn - output arguments returned by the function
+- r1, ..., rn - output arguments returned by the function
 
 ## Description
 
-
   <p><b>function</b> calls the base function or built-in described by its name or function handle and input arguments.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ b = feval(str2func('cos'), 0)
 ## See also
 
 [builtin](builtin.md), [func2str](../function_handle/func2str.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

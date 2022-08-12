@@ -1,5 +1,3 @@
-
-
 # fscanf
 
 Reads data from a file.
@@ -12,16 +10,15 @@ Reads data from a file.
 
 ## Input argument
 
- - fid - a file descriptor
- - format - a string describing the format to used function.
- - sizeR - desired dimensions of R.
+- fid - a file descriptor
+- format - a string describing the format to used function.
+- sizeR - desired dimensions of R.
 
 ## Output argument
 
- - R - matrix or character vector.
+- R - matrix or character vector.
 
 ## Description
-
 
   <p>Read data in text from the file specified by the file descriptor fid.</p>
   <p>characters encoding uses <b>fopen</b> parameter.</p>
@@ -98,7 +95,6 @@ Reads data from a file.
     </tr>
   </table>
 
-
 ## Example
 
 ```matlab
@@ -116,16 +112,13 @@ R
 ## See also
 
 [fopen](fopen.md), [fprintf](fprintf.md), [dlmwrite](dlmwrite.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

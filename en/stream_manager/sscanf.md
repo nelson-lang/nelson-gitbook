@@ -1,5 +1,3 @@
-
-
 # sscanf
 
 Read formatted data from strings.
@@ -14,22 +12,20 @@ Read formatted data from strings.
 
 ## Input argument
 
- - str - character array or string scalar.
- - format - a string describing the format to used function, see fscanf for supported format.
- - sizeR - desired dimensions of R.
+- str - character array or string scalar.
+- format - a string describing the format to used function, see fscanf for supported format.
+- sizeR - desired dimensions of R.
 
 ## Output argument
 
- - R - matrix or character vector.
- - count - number of elements read into output array.
- - errmsg - Error message.
- - nextindex - Position after last character scanned.
+- R - matrix or character vector.
+- count - number of elements read into output array.
+- errmsg - Error message.
+- nextindex - Position after last character scanned.
 
 ## Description
 
-
   <p>Read formatted data from strings.</p>
-
 
 ## Example
 
@@ -41,16 +37,13 @@ R = sscanf(str,'%f',[2 2])
 ## See also
 
 [fscanf](fscanf.md), [sprintf](sprintf.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

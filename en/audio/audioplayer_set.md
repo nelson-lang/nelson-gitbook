@@ -1,5 +1,3 @@
-
-
 # audioplayer_set
 
 Set object or interface property to specified value.
@@ -12,15 +10,13 @@ Set object or interface property to specified value.
 
 ## Input argument
 
- - h - a audioplayer object.
- - propertyname - a string: the property's name of audioplayer object.
- - value - a string, boolean, double ...
+- h - a audioplayer object.
+- propertyname - a string: the property's name of audioplayer object.
+- value - a string, boolean, double ...
 
 ## Description
 
-
   <p>The function sets the property specified in the string propertyname to the given value.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ playObj.Tag = 'my audio object'
 ## See also
 
 [audioplayer_get](audioplayer_get.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # ismethod
 
 Return true if method of handle object.
@@ -10,12 +8,12 @@ Return true if method of handle object.
 
 ## Input argument
 
- - h - a handle object
- - methodname - a string
+- h - a handle object
+- methodname - a string
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -24,16 +22,13 @@ Return true if method of handle object.
 ## See also
 
 [isprop](isprop.md), [methods](methods.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

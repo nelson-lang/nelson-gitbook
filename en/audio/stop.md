@@ -1,5 +1,3 @@
-
-
 # stop
 
 Stops an audioplayer object.
@@ -10,7 +8,7 @@ Stops an audioplayer object.
 
 ## Input argument
 
- - playObj - an audioplayer object.
+- playObj - an audioplayer object.
 
 ## Description
 
@@ -31,16 +29,13 @@ playObj
 ## See also
 
 [audioplayer](audioplayer.md), [play](play.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

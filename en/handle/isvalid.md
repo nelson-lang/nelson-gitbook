@@ -1,5 +1,3 @@
-
-
 # isvalid
 
 Return true if variable h is a valid handle.
@@ -10,11 +8,11 @@ Return true if variable h is a valid handle.
 
 ## Input argument
 
- - h - an handle object
+- h - an handle object
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -23,16 +21,13 @@ Return true if variable h is a valid handle.
 ## See also
 
 [isa](../types/isa.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

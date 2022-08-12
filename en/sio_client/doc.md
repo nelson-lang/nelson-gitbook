@@ -1,5 +1,3 @@
-
-
 # doc
 
 Displays documentation.
@@ -12,37 +10,33 @@ Displays documentation.
 
 ## Input argument
 
- - function_name - a string: function name
+- function_name - a string: function name
 
 ## Description
 
-
   <p><b>doc</b>launches web browser.</p>
   <p><b>doc('function_name')</b>displays the help about function designed by 'function_name'.</p>
-
 
 ## Examples
 
 ```matlab
 doc()
 ```
+
 ```matlab
 doc sin
 ```
+
 ```matlab
 doc is
 ```
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

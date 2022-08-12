@@ -1,5 +1,3 @@
-
-
 # libpointer_reshape
 
 Reshapes libpointer dimensions.
@@ -10,19 +8,18 @@ Reshapes libpointer dimensions.
 
 ## Input argument
 
- - h - a libpointer handle.
- - X - a scalar double: new X dimension.
- - Y - a scalar double: new Y dimension.
+- h - a libpointer handle.
+- X - a scalar double: new X dimension.
+- Y - a scalar double: new Y dimension.
 
 ## Description
 
-
   <p>Set dimensions from libpointer object.</p>
-
 
 ## See also
 
 [libpointer](libpointer.md).
+
 ## Example
 
 ```matlab
@@ -33,14 +30,10 @@ a.Value
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

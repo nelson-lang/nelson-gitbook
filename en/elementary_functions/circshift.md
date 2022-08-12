@@ -1,5 +1,3 @@
-
-
 # circshift
 
 Circular shift
@@ -11,19 +9,17 @@ Circular shift
 
 ## Input argument
 
- - M - a variable
- - N - shift
- - DIM - dimension to operate
+- M - a variable
+- N - shift
+- DIM - dimension to operate
 
 ## Output argument
 
- - R - result of 'circshift'.
+- R - result of 'circshift'.
 
 ## Description
 
-
   <p><b>circshift</b> computes circular shift.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ circshift (x, -2))
 ## See also
 
 [repmat](repmat.md), [reshape](reshape.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

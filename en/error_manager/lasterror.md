@@ -1,5 +1,3 @@
-
-
 # lasterror
 
 Returns last recorded error message.
@@ -12,15 +10,13 @@ Returns last recorded error message.
 
 ## Output argument
 
- - last_err - error message structure.
+- last_err - error message structure.
 
 ## Description
-
 
   <p><b>l = lasterror()</b> returns a structure containing the last error message and information as an struct.</p>
   <p><b>lasterror('reset')</b> clears last error.</p>
   <p><b>lasterror(error_struct)</b> set last error.</p>
-
 
 ## Examples
 
@@ -30,6 +26,7 @@ if ~state
   l = lasterror()
 end
 ```
+
 ```matlab
 state = execstr('xxxxxx', 'errcatch')
 l = lasterror();
@@ -42,16 +39,13 @@ lasterror()
 ## See also
 
 [error](error.md), [warning](warning.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

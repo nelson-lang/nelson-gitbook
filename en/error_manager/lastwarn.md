@@ -1,5 +1,3 @@
-
-
 # lastwarn
 
 Returns last recorded warning message.
@@ -17,15 +15,13 @@ Returns last recorded warning message.
 
 ## Output argument
 
- - last_message - string: last warning message.
- - last_identifier - string: identifier.
+- last_message - string: last warning message.
+- last_identifier - string: identifier.
 
 ## Description
 
-
   <p><b>last_message = lastwarn()</b> returns a string containing the last warning message.</p>
   <p><b>lastwarn('')</b> clears last warning.</p>
-
 
 ## Example
 
@@ -40,16 +36,13 @@ Returns last recorded warning message.
 ## See also
 
 [error](error.md), [warning](warning.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

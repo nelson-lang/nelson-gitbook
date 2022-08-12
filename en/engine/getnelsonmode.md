@@ -1,5 +1,3 @@
-
-
 # getnelsonmode
 
 Returns current Nelson mode.
@@ -10,10 +8,9 @@ Returns current Nelson mode.
 
 ## Output argument
 
- - m - a string.
+- m - a string.
 
 ## Description
-
 
   <p><b>getnelsonmode()</b> returns current Nelson mode used.</p>
   <p>There are <b>5</b> modes: </p>
@@ -25,7 +22,6 @@ Returns current Nelson mode.
   <p><b>ADVANCED_SIO_CLIENT</b>: Nelson launched as socket IO client with graphics/gui.</p>
   <p><b>GUI</b>: Nelson launched as a graphical application (default).</p>
 
-
 ## Example
 
 ```matlab
@@ -35,16 +31,13 @@ getnelsonmode()
 ## See also
 
 [executable](executable.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

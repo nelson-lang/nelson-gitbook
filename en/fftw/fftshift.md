@@ -1,5 +1,3 @@
-
-
 # fftshift
 
 Shift the zero-frequency component to the center of the spectrum.
@@ -11,18 +9,16 @@ Shift the zero-frequency component to the center of the spectrum.
 
 ## Input argument
 
- - X - a vector, matrix or N-D array (double, single, integer).
- - DIM - axes over which to shift.
+- X - a vector, matrix or N-D array (double, single, integer).
+- DIM - axes over which to shift.
 
 ## Output argument
 
- - Y - shifted array.
+- Y - shifted array.
 
 ## Description
 
-
   <p><b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ fftshift(M, 1)
 ## See also
 
 [fft](ifft.md), [ifftshift](ifftshift.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

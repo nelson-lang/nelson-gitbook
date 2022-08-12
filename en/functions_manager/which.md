@@ -1,5 +1,3 @@
-
-
 # which
 
 Locates functions and built-in.
@@ -13,19 +11,17 @@ Locates functions and built-in.
 
 ## Input argument
 
- - function_name - a string: function name.
+- function_name - a string: function name.
 
 ## Output argument
 
- - p - a string: path of the function or built-in
- - c - a cell of strings: paths of the function or built-in.
- - m - a cell of strings: name of the modules where function or built-in is available.
+- p - a string: path of the function or built-in
+- c - a cell of strings: paths of the function or built-in.
+- m - a cell of strings: name of the modules where function or built-in is available.
 
 ## Description
 
-
   <p><b>which</b> returns the path of a function or a built-in.</p>
-
 
 ## Example
 
@@ -39,16 +35,13 @@ m = which('cos', '-module')
 ## See also
 
 [what](what.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

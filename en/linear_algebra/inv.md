@@ -1,5 +1,3 @@
-
-
 # inv
 
 Matrix inverse.
@@ -10,17 +8,15 @@ Matrix inverse.
 
 ## Input argument
 
- - x - a numeric value: scalar or square matrix (double or single)
+- x - a numeric value: scalar or square matrix (double or single)
 
 ## Output argument
 
- - res - a numeric value: a square matrix
+- res - a numeric value: a square matrix
 
 ## Description
 
-
   <p><b>inv(x)</b> computes the matrix inverse of x.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ Y * X
 ## See also
 
 [expm](expm.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

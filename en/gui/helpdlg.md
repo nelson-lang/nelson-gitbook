@@ -1,5 +1,3 @@
-
-
 # helpdlg
 
 Creates a help dialog box.
@@ -13,31 +11,32 @@ Creates a help dialog box.
 
 ## Input argument
 
- - text_help - a string or a cell of string: the help message.
- - title - a string: the title of the dialog box.
+- text_help - a string or a cell of string: the help message.
+- title - a string: the title of the dialog box.
 
 ## Output argument
 
- - h - a QObject handle.
+- h - a QObject handle.
 
 ## Description
 
-
   <p><b>errordlg</b> creates an help dialog box.</p>
   <p><b>h = helpdlg(text_help, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
-
 
 ## Examples
 
 ```matlab
 h = helpdlg()
 ```
+
 ```matlab
 h = helpdlg('help string')
 ```
+
 ```matlab
 h = helpdlg('help string', 'dialog title')
 ```
+
 ```matlab
 h = helpdlg('help string', 'dialog title')
 h = helpdlg('help string', 'dialog title', 'on')
@@ -46,16 +45,13 @@ h = helpdlg('help string', 'dialog title', 'on')
 ## See also
 
 [warndlg](warndlg.html), [errordlg](errordlg.html), [questdlg](questdlg.html), [msgbox](msgbox.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

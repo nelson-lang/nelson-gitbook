@@ -1,5 +1,3 @@
-
-
 # datenum
 
 Return the date/time input as a serial day number.
@@ -14,17 +12,16 @@ Return the date/time input as a serial day number.
 
 ## Input argument
 
- - datevec - a vector: [Y, M, D, H, MN, S].
- - format - a string: date format.
- - datestr - a string: text representing a date.
- - Y, M, D, H, MN, S - double: Year, Month, Day, Hours, Minutes, Secondes.
+- datevec - a vector: [Y, M, D, H, MN, S].
+- format - a string: date format.
+- datestr - a string: text representing a date.
+- Y, M, D, H, MN, S - double: Year, Month, Day, Hours, Minutes, Secondes.
 
 ## Output argument
 
- - d - a double: serial date number (serial day 1 corresponds to 1-Jan-0000).
+- d - a double: serial date number (serial day 1 corresponds to 1-Jan-0000).
 
 ## Description
-
 
   <p><b>d = datenum()</b> returns the serial date number corresponding to current date.</p>
   <p><b>d = datenum(datevec)</b> converts date vector to serial date number.</p>
@@ -45,7 +42,6 @@ Return the date/time input as a serial day number.
   <p><b>HH:MM</b> 16:48</p>
   <p><b>HH:MM PM</b> 3:35 PM</p>
 
-
 ## Example
 
 ```matlab
@@ -57,16 +53,13 @@ d = datenum('04–Aug-1973 12:01:18')
 ## See also
 
 [datevec](datevec.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

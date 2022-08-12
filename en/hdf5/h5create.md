@@ -1,5 +1,3 @@
-
-
 # h5create
 
 Creates a data set.
@@ -10,13 +8,12 @@ Creates a data set.
 
 ## Input argument
 
- - filename - a string: hdf5 filename.
- - datasetname - a string: name of the data set.
- - size - a row vector specifying the extents of the data set.
- - Name1, Value1, ..., NameN, ValueN - Name-Value Pair Arguments.
+- filename - a string: hdf5 filename.
+- datasetname - a string: name of the data set.
+- size - a row vector specifying the extents of the data set.
+- Name1, Value1, ..., NameN, ValueN - Name-Value Pair Arguments.
 
 ## Description
-
 
   <p><b>h5create</b> creates a data set and specify its extent dimensions, datatype and chunk size.</p>
   <p>Name-Values pair supported:</p>
@@ -35,7 +32,6 @@ Creates a data set.
   <p>Name: TextEncoding, Character encoding.</p>
   <p>Value: 'system' or 'UTF-8' (default).</p>
 
-
 ## Example
 
 ```matlab
@@ -46,16 +42,13 @@ h5dump([tempdir(), 'myfile.h5'])
 ## See also
 
 [h5write](h5write.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

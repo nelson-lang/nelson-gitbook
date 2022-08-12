@@ -1,5 +1,3 @@
-
-
 # istriu
 
 Checks if matrix is diagonal.
@@ -10,17 +8,15 @@ Checks if matrix is diagonal.
 
 ## Input argument
 
- - M - a numeric array
+- M - a numeric array
 
 ## Output argument
 
- - tf - logical: result of 'isdiag'.
+- tf - logical: result of 'isdiag'.
 
 ## Description
 
-
   <p><b>isdiag</b> returns an scalar logical if entry is diag.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ R = isdiag(A(:,1))
 ## See also
 
 [istriu](istriu.md), [istril](istril.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

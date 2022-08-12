@@ -1,5 +1,3 @@
-
-
 # ctranspose
 
 Returns complex conjugate transpose: ' operator.
@@ -11,17 +9,15 @@ Returns complex conjugate transpose: ' operator.
 
 ## Input argument
 
- - A - a variable
+- A - a variable
 
 ## Output argument
 
- - C - result: complex conjugate transpose of A.
+- C - result: complex conjugate transpose of A.
 
 ## Description
 
-
   <p><b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
-
 
 ## Examples
 
@@ -29,10 +25,12 @@ Returns complex conjugate transpose: ' operator.
 A = 3
 B = A'
 ```
+
 ```matlab
 A = -i
 B = A'
 ```
+
 ```matlab
 A = sparse(eye(3, 4) * i)
 B = A'
@@ -41,16 +39,13 @@ B = A'
 ## See also
 
 [transpose](transpose.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

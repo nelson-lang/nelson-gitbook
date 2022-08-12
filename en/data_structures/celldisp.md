@@ -1,5 +1,3 @@
-
-
 # celldisp
 
 Display cell array contents.
@@ -11,14 +9,12 @@ Display cell array contents.
 
 ## Input argument
 
- - C - cell array.
- - name - displayed name of cell array.
+- C - cell array.
+- name - displayed name of cell array.
 
 ## Description
 
-
   <p><b>celldisp</b> recursively display the contents of a cell array.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ celldisp(C, 'var_name')
 ## See also
 
 [disp](${display_format).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

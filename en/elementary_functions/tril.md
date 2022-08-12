@@ -1,5 +1,3 @@
-
-
 # tril
 
 Lower triangular part of matrix
@@ -11,19 +9,17 @@ Lower triangular part of matrix
 
 ## Input argument
 
- - M - 2D input matrix
- - k - Diagonals to include: integer real value
+- M - 2D input matrix
+- k - Diagonals to include: integer real value
 
 ## Output argument
 
- - R - Lower Triangular Portions of Matrix
+- R - Lower Triangular Portions of Matrix
 
 ## Description
 
-
   <p><b>tril</b> computes Lower Triangular Portions of Matrix.</p>
   <p><b>R = tril(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ r = tril(x)
 ## See also
 
 [diag](diag.html), [triu](triu.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

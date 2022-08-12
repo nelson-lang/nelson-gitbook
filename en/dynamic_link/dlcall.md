@@ -1,5 +1,3 @@
-
-
 # dlcall
 
 C or Fortran Foreign function call.
@@ -10,19 +8,17 @@ C or Fortran Foreign function call.
 
 ## Input argument
 
- - dlsym_handle - a dlsym handle.
- - arg1, ..., argN - input arguments.
+- dlsym_handle - a dlsym handle.
+- arg1, ..., argN - input arguments.
 
 ## Output argument
 
- - [x1, ... , xN] - output values.
+- [x1, ... , xN] - output values.
 
 ## Description
 
-
   <p><b>dlcall</b> calls an external C or Fortran function loaded from an shared library.</p>
   <p><b>dlcall</b> validates input argument types before calling based on dlsym handle definition.</p>
-
 
 ## Examples
 
@@ -36,11 +32,15 @@ f = dlsym(lib, 'dynlibTestMultiplyDoubleArrayWithReturn', 'int32', {'doublePtr',
 delete(f);
 delete(lib);
 ```
+
 Call C getpid function
+
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_c.m']);
 ```
+
 Call fortran DASUM (blas) function
+
 ```matlab
 run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ```
@@ -48,16 +48,13 @@ run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 ## See also
 
 [dlsym](dlsym.md), [C/Nelson equivalent data types](C_datatype.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # cat
 
 Concatenate arrays.
@@ -11,20 +9,18 @@ Concatenate arrays.
 
 ## Input argument
 
- - dim - Dimension to operate along: positive integer scalar.
- - A - a variable: first input.
- - B - a variable: second input.
- - A1, A2, ..., An - List of inputs to concatenate
+- dim - Dimension to operate along: positive integer scalar.
+- A - a variable: first input.
+- B - a variable: second input.
+- A1, A2, ..., An - List of inputs to concatenate
 
 ## Output argument
 
- - R - concatenated array
+- R - concatenated array
 
 ## Description
 
-
   <p><b>R = cat(dim, M1, M2, ... , MN)</b> returns the concatenation of M1, M2, ... , MN along the dimension <b>dim</b>.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ C = cat(2, A, B)
 ## See also
 
 [vertcat](vertcat.md), [horzcat](horzcat.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

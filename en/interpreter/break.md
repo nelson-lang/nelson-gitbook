@@ -1,5 +1,3 @@
-
-
 # break
 
 exit evaluation loop.
@@ -10,10 +8,8 @@ exit evaluation loop.
 
 ## Description
 
-
   <p><b>break</b> statement is used to exit a loop prematurely.</p>
   <p><b>break</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.</p>
-
 
 ## Example
 
@@ -30,16 +26,13 @@ end
 ## See also
 
 [return](abort.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

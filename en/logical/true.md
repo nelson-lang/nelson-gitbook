@@ -1,5 +1,3 @@
-
-
 # true
 
 Logical true.
@@ -14,20 +12,18 @@ Logical true.
 
 ## Input argument
 
- - n - a integer value.
- - sz - a size vector.
- - n, m, ..., k - a n -by- m - ... -by- k array to indicate size.
- - sp - a sparse or array.
+- n - a integer value.
+- sz - a size vector.
+- n, m, ..., k - a n -by- m - ... -by- k array to indicate size.
+- sp - a sparse or array.
 
 ## Output argument
 
- - l - a logical value: true.
+- l - a logical value: true.
 
 ## Description
 
-
   <p><b>true</b> build a matrix of true.</p>
-
 
 ## Example
 
@@ -42,16 +38,13 @@ L2 = true(3,'like', L);
 ## See also
 
 [false](false.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

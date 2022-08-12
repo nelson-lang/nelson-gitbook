@@ -1,5 +1,3 @@
-
-
 # clock
 
 Return the current local date and time as a date vector.
@@ -10,10 +8,9 @@ Return the current local date and time as a date vector.
 
 ## Output argument
 
- - v - a vector: [year, month, day, hours, minutes, seconds].
+- v - a vector: [year, month, day, hours, minutes, seconds].
 
 ## Description
-
 
   <p><b>calendar()</b> returns the currently monthly calendar.</p>
   <p>The date vector contains the following fields:</p>
@@ -27,7 +24,6 @@ Return the current local date and time as a date vector.
   <p>To time the duration of an event, use tic and toc functions instead of clock.</p>
   <p>The clock function is based on the system time and thus might not be reliable for time comparison operations.</p>
 
-
 ## Example
 
 ```matlab
@@ -38,16 +34,13 @@ fix(c)
 ## See also
 
 [tic](tic.md), [toc](toc.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

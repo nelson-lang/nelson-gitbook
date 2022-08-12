@@ -1,5 +1,3 @@
-
-
 # conv
 
 Convolution and polynomial multiplication.
@@ -11,19 +9,17 @@ Convolution and polynomial multiplication.
 
 ## Input argument
 
- - u - input vectors, specified as either row or column vectors.
- - v - input vectors, specified as either row or column vectors.
- - shape - subsection of convolution: 'full' (default: full 2-D convolution), 'same' (central part of the convolution) or 'valid' (parts of the convolution that are computed without zero-padded edges).
+- u - input vectors, specified as either row or column vectors.
+- v - input vectors, specified as either row or column vectors.
+- shape - subsection of convolution: 'full' (default: full 2-D convolution), 'same' (central part of the convolution) or 'valid' (parts of the convolution that are computed without zero-padded edges).
 
 ## Output argument
 
- - C - convolution, returned as a vector or matrix.
+- C - convolution, returned as a vector or matrix.
 
 ## Description
 
-
   <p><b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ R = conv(U, V, 'same')
 ## See also
 
 [conv](conv.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

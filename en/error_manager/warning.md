@@ -1,5 +1,3 @@
-
-
 # warning
 
 Display a warning message.
@@ -16,27 +14,26 @@ Display a warning message.
 
 ## Input argument
 
- - id - a string: identifier for the warning.
- - msg - a string: message to warn.
- - state - a string: 'on', 'off', 'aserror', 'all' or 'query'.
- - st - a struct: set warning settings.
+- id - a string: identifier for the warning.
+- msg - a string: message to warn.
+- state - a string: 'on', 'off', 'aserror', 'all' or 'query'.
+- st - a struct: set warning settings.
 
 ## Output argument
 
- - st - a struct, warning settings.
+- st - a struct, warning settings.
 
 ## Description
 
-
   <p><b>warning</b> displays a warning message.</p>
   <p><b>warning('')</b> resets lastwarn state.</p>
-
 
 ## Examples
 
 ```matlab
 warning('your warning message.')
 ```
+
 ```matlab
 warning('on', 'myModule:identifier');
 warning('myModule:identifier', 'my message 1 on');
@@ -49,16 +46,13 @@ warning('myModule:identifier', 'my message 3 as error');
 ## See also
 
 [lasterror](lasterror.md), [error](error.md), [lastwarn](lastwarn.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

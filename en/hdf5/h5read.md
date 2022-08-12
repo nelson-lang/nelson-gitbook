@@ -1,5 +1,3 @@
-
-
 # h5read
 
 Read HDF5 data set.
@@ -10,18 +8,16 @@ Read HDF5 data set.
 
 ## Input argument
 
- - filename - a string: hdf5 filename.
- - location - a string: full path identifying a data set.
+- filename - a string: hdf5 filename.
+- location - a string: full path identifying a data set.
 
 ## Output argument
 
- - val - a nelson's variable.
+- val - a nelson's variable.
 
 ## Description
 
-
   <p><b>h5read</b> reads data set in <b>location</b> from the HDF5 file.</p>
-
 
 ## Example
 
@@ -34,16 +30,13 @@ R = h5read(double_data,'/DS1')
 ## See also
 
 [h5write](h5write.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

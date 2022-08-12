@@ -1,5 +1,3 @@
-
-
 # mustBeLessThan
 
 Checks that value is less than another value or issue error.
@@ -12,15 +10,13 @@ Checks that value is less than another value or issue error.
 
 ## Input argument
 
- - var - a variable: logical or numeric array.
- - c - a variable: scalar numeric value.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: logical or numeric array.
+- c - a variable: scalar numeric value.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeLessThan</b> checks that value is less than another value or issue error.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeLessThan(1, 2)
 ## See also
 
 [mustBeNumeric](mustBeNumeric.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

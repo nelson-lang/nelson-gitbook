@@ -1,5 +1,3 @@
-
-
 # profsave
 
 Save profile result to HTML format.
@@ -12,16 +10,14 @@ Save profile result to HTML format.
 
 ## Input argument
 
- - profile_info - a struct: result of profile('info')
- - dirname - a string: output directory destination.
+- profile_info - a struct: result of profile('info')
+- dirname - a string: output directory destination.
 
 ## Description
-
 
   <p><b>profsave</b> exports the profiling data into a series of HTML files.</p>
   <p>The input profile_info is the structure returned by profile('info').</p>
   <p>If unspecified, <b>profsave</b> will use the current profile.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ unix([tempdir(), 'profile_results/index.html'])
 ## See also
 
 [profile](profile.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

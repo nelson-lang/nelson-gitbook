@@ -1,5 +1,3 @@
-
-
 # nativecharset
 
 Find all charset matches that appear to be consistent with the input
@@ -10,19 +8,17 @@ Find all charset matches that appear to be consistent with the input
 
 ## Input argument
 
- - bytes - a uint8 vector, or string or row characters array
+- bytes - a uint8 vector, or string or row characters array
 
 ## Output argument
 
- - ce - a cell of strings.
+- ce - a cell of strings.
 
 ## Description
-
 
   <p><b>nativecharset</b> find all charset matches that appear to be consistent with the input, returning a cell of string with results.</p>
   <p>The results are ordered with the best quality match first.</p>
   <p>List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
-
 
 Bibliography
 
@@ -38,16 +34,13 @@ nativecharset(R)
 ## See also
 
 [unicode2native](unicode2native.md), [char](../string/char.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

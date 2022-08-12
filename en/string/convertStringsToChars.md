@@ -1,5 +1,3 @@
-
-
 # convertStringsToChars
 
 Convert string arrays to character arrays.
@@ -11,19 +9,17 @@ Convert string arrays to character arrays.
 
 ## Input argument
 
- - S - if S is a string array, output C will be converted to an cell of strings or an character vector (if S is scalar).
- - A1, A2, ..., AN - variables to convert to char array if it is a string array.
+- S - if S is a string array, output C will be converted to an cell of strings or an character vector (if S is scalar).
+- A1, A2, ..., AN - variables to convert to char array if it is a string array.
 
 ## Output argument
 
- - C - a char array or unaltered variable
- - B1, B2, ..., BN - variables converted to char array if it is a string array.
+- C - a char array or unaltered variable
+- B1, B2, ..., BN - variables converted to char array if it is a string array.
 
 ## Description
 
-
   <p><b>convertStringsToChars</b> converts string arrays to character arrays.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ A = convertStringsToChars(["Nelson", string(NaN)])
 ## See also
 
 [convertCharsToStringss](convertCharsToStrings.md), [cellstr](../data_structures/cellstr.md), [string](string.md), [char](char.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # keyboard
 
 Stops script execution and enter in debug mode.
@@ -10,9 +8,7 @@ Stops script execution and enter in debug mode.
 
 ## Description
 
-
   <p><b>keyboard</b> stops script execution and enter in debug mode. prompt is modified and displays debug level.</p>
-
 
 ## Example
 
@@ -23,16 +19,13 @@ keyboard()
 ## See also
 
 [pause](../core/pause.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

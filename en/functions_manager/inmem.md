@@ -1,5 +1,3 @@
-
-
 # inmem
 
 Names of functions, MEX-files.
@@ -13,18 +11,16 @@ Names of functions, MEX-files.
 
 ## Input argument
 
- - '-completenames' - a string: mex function name.
+- '-completenames' - a string: mex function name.
 
 ## Output argument
 
- - F - cell array of character vectors containing the names of the macros that are loaded.
- - M - cell array of character vectors containing the names of the mex that are loaded.
+- F - cell array of character vectors containing the names of the macros that are loaded.
+- M - cell array of character vectors containing the names of the mex that are loaded.
 
 ## Description
 
-
   <p><b>inmem</b> returns cells array of names of functions and mex currently loaded.</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ inmem('-completenames')
 ## See also
 
 [clear](../memory_manager/clear.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

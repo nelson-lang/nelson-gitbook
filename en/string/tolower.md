@@ -1,5 +1,3 @@
-
-
 # tolower
 
 Lower case conversion.
@@ -10,11 +8,11 @@ Lower case conversion.
 
 ## Input argument
 
- - str - a row character array, a cell of strings or an string array.
+- str - a row character array, a cell of strings or an string array.
 
 ## Output argument
 
- - res - lower case equivalent
+- res - lower case equivalent
 
 ## Description
 
@@ -25,6 +23,7 @@ Lower case conversion.
 ```matlab
 tolower('NelSon')
 ```
+
 ```matlab
 tolower(["NelSon", "is", "open"])
 ```
@@ -32,16 +31,13 @@ tolower(["NelSon", "is", "open"])
 ## See also
 
 [toupper](toupper.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

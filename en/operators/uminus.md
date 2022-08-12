@@ -1,5 +1,3 @@
-
-
 # uminus
 
 Unary minus, - operator
@@ -11,17 +9,15 @@ Unary minus, - operator
 
 ## Input argument
 
- - A - a variable
+- A - a variable
 
 ## Output argument
 
- - C - result of -A
+- C - result of -A
 
 ## Description
 
-
   <p><b>C = uminus(A)</b> performs unary minus ie -A.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ M = 3;
 ## See also
 
 [uplus](uplus.md), [minus](minus.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

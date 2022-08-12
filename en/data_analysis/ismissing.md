@@ -1,5 +1,3 @@
-
-
 # ismissing
 
 Check for missing values.
@@ -10,14 +8,13 @@ Check for missing values.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - tf - logical: result of 'ismissing'.
+- tf - logical: result of 'ismissing'.
 
 ## Description
-
 
   <p><b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
   <p>missing data are defined as:</p>
@@ -25,7 +22,6 @@ Check for missing values.
   <p><b>missing</b> for string array</p>
   <p><b>' '</b> for character array</p>
   <p><b>''</b> for cell of character array</p>
-
 
 ## Example
 
@@ -43,16 +39,13 @@ ismissing(D)
 ## See also
 
 [isfinite](isfinite.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # realmax
 
 Largest positive floating-point number.
@@ -12,13 +10,11 @@ Largest positive floating-point number.
 
 ## Output argument
 
- - R - a double or single.
+- R - a double or single.
 
 ## Description
 
-
   <p><b>realmax</b> returns largest positive floating-point number.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ realmax('single')
 ## See also
 
 [intmax](../integer/intmax.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

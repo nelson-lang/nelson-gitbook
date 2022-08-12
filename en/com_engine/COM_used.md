@@ -1,5 +1,3 @@
-
-
 # COM_used
 
 Returns list of current used COM handle.
@@ -10,17 +8,16 @@ Returns list of current used COM handle.
 
 ## Output argument
 
- - h - a vector of COM handle.
+- h - a vector of COM handle.
 
 ## Description
 
-
   <p>Returns list of current used COM handle.</p>
-
 
 ## See also
 
 [COM_set (set)](COM_set.md), [COM_get (get)](COM_get.md).
+
 ## Example
 
 ```matlab
@@ -33,14 +30,10 @@ used = COM_used()
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

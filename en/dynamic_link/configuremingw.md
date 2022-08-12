@@ -1,5 +1,3 @@
-
-
 # configuremingw
 
 Configure Nelson to use MinGW as default C compiler
@@ -10,20 +8,18 @@ Configure Nelson to use MinGW as default C compiler
 
 ## Input argument
 
- - mingw_path - a string: mingw root path.
+- mingw_path - a string: mingw root path.
 
 ## Output argument
 
- - res - a logical: true if MinGW was found
- - message - a string: empty if MinGW was found or an error message.
+- res - a logical: true if MinGW was found
+- message - a string: empty if MinGW was found or an error message.
 
 ## Description
-
 
   <p>By default, Nelson has no C/C++ compiler defined as default on Windows.</p>
   <p>On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function.</p>
   <p>On Windows, you need to call once <b>configuremingw</b> if you want to use MinGW as default C compiler.</p>
-
 
 ## Example
 
@@ -34,16 +30,13 @@ configuremingw('c:/mingw')
 ## See also
 
 [havecompiler](havecompiler.md), [configuremsvc](configuremsvc.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

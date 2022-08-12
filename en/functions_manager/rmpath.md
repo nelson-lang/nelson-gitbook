@@ -1,5 +1,3 @@
-
-
 # rmpath
 
 Remove directory from search path.
@@ -11,24 +9,22 @@ Remove directory from search path.
 
 ## Input argument
 
- - dirname - name of directory to remove
+- dirname - name of directory to remove
 
 ## Output argument
 
- - previouspaths - a string: path prior to removing the specified paths
+- previouspaths - a string: path prior to removing the specified paths
 
 ## Description
 
-
   <p><b>rmpath</b> removes directory from search path.</p>
-
 
 ## Example
 
 ```matlab
 path
 addpath(tempdir())
-path			
+path
 rmpath(tempdir())
 path
 ```
@@ -36,16 +32,13 @@ path
 ## See also
 
 [path](path.md), [addpath](addpath.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

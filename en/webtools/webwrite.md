@@ -1,5 +1,3 @@
-
-
 # webwrite
 
 Write data to RESTful web service
@@ -13,24 +11,23 @@ Write data to RESTful web service
 
 ## Input argument
 
- - url - a string: URL to a web service.
- - data - Data to post to a web service, an nelson's variable.
- - name1, value1, ... , nameN, valueN - Name-Value Pair Arguments, Data to post to a web service.
- - options - a weboptions object.
+- url - a string: URL to a web service.
+- data - Data to post to a web service, an nelson's variable.
+- name1, value1, ... , nameN, valueN - Name-Value Pair Arguments, Data to post to a web service.
+- options - a weboptions object.
 
 ## Output argument
 
- - response - a variable: Response from a web service.
+- response - a variable: Response from a web service.
 
 ## Description
 
-
   <p><b>webwrite</b> write data to RESTful web service.</p>
-
 
 ## Examples
 
 Send message to Slack
+
 ```matlab
 [Y, M, D, H, MN, S] = datevec(now);
 datetime = sprintf('%d/%d/%d %d:%d:%d', Y, M, D, H, MN, S);
@@ -39,7 +36,9 @@ url = char([104 116 116 112 115 58 47 47 104 111 111 107 115 46 115 108 97 99 10
 data = struct('text', ['hello from Nelson ', datetime], 'channel', '#test_webwrite');
 R = webwrite(url, data);
 ```
+
 Connect to your NetAtmo Weather station (oAuth2 connection)
+
 ```matlab
 USER_NAME = 'your username';
 PASSWORD = 'your password';
@@ -62,16 +61,13 @@ disp(r.body.devices.dashboard_data)
 ## See also
 
 [weboptions](weboptions.md), [webread](webread.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

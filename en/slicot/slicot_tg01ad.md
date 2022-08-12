@@ -1,5 +1,3 @@
-
-
 # slicot_tg01ad
 
 Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C).
@@ -10,28 +8,26 @@ Balancing the matrices of the system pencil corresponding to a descriptor triple
 
 ## Input argument
 
- - JOB - = 'A':  All matrices are involved in balancing; = 'B':  B, A and E matrices are involved in balancing; = 'C':  C, A and E matrices are involved in balancing; = 'N':  B and C matrices are not involved in balancing.
- - THRESH - Threshold value for magnitude of elements: elements with magnitude less than or equal to THRESH are ignored for balancing.
- - A_IN - The leading L-by-N part of this array must contain the state dynamics matrix A.
- - E_IN - The leading L-by-N part of this array must contain the descriptor matrix E.
- - B_IN - The leading L-by-M part of this array must contain the input/state matrix B.
- - C_IN - The leading P-by-N part of this array must contain the state/output matrix C.
+- JOB - = 'A': All matrices are involved in balancing; = 'B': B, A and E matrices are involved in balancing; = 'C': C, A and E matrices are involved in balancing; = 'N': B and C matrices are not involved in balancing.
+- THRESH - Threshold value for magnitude of elements: elements with magnitude less than or equal to THRESH are ignored for balancing.
+- A_IN - The leading L-by-N part of this array must contain the state dynamics matrix A.
+- E_IN - The leading L-by-N part of this array must contain the descriptor matrix E.
+- B_IN - The leading L-by-M part of this array must contain the input/state matrix B.
+- C_IN - The leading P-by-N part of this array must contain the state/output matrix C.
 
 ## Output argument
 
- - A_OUT - The leading L-by-N part of this array contains the balanced matrix Dl*A*Dr.
- - E_OUT - The leading L-by-N part of this array contains the balanced matrix Dl*E*Dr.
- - B_OUT - The leading L-by-M part of this array contains the balanced matrix Dl*B.
- - C_OUT - The leading P-by-N part of this array contains the balanced matrix C*Dr.
- - LSCALE - The scaling factors applied to S from left.
- - RSCALE - The scaling factors applied to S from right.
- - INFO - = 0:  successful exit.
+- A_OUT - The leading L-by-N part of this array contains the balanced matrix Dl*A*Dr.
+- E_OUT - The leading L-by-N part of this array contains the balanced matrix Dl*E*Dr.
+- B_OUT - The leading L-by-M part of this array contains the balanced matrix Dl\*B.
+- C_OUT - The leading P-by-N part of this array contains the balanced matrix C\*Dr.
+- LSCALE - The scaling factors applied to S from left.
+- RSCALE - The scaling factors applied to S from right.
+- INFO - = 0: successful exit.
 
 ## Description
 
-
   <p>To balance the matrices of the system pencil corresponding to the descriptor triple (A-lambda E,B,C), by balancing.</p>
-
 
 Used function(s)
 
@@ -74,14 +70,10 @@ C_IN = [-0.1      0.0    0.001    0.0;
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 SLICOT Documentation
-
-
-

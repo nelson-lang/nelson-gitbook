@@ -1,5 +1,3 @@
-
-
 # engGetVariable
 
 Copy variable from Nelson engine workspace
@@ -7,23 +5,21 @@ Copy variable from Nelson engine workspace
 ## Syntax
 
 - #include "engine.h"
-- mxArray *engGetVariable(Engine *ep, const char *name);
+- mxArray *engGetVariable(Engine *ep, const char \*name);
 
 ## Input argument
 
- - Engine *ep - handle to Nelson engine.
- - const char *name - name of mxArray in the Nelson workspace (base scope).
+- Engine \*ep - handle to Nelson engine.
+- const char \*name - name of mxArray in the Nelson workspace (base scope).
 
 ## Output argument
 
- - mxArray * - Pointer to an allocated mxArray structure. Do not forget to free.
+- mxArray \* - Pointer to an allocated mxArray structure. Do not forget to free.
 
 ## Description
 
-
   <p>Copy variable from Nelson engine workspace.</p>
   <p>The limit for the size of data transferred is 2048 MB.</p>
-
 
 ## Example
 
@@ -34,16 +30,13 @@ edit([modulepath('mex'), '/tests/test_engine.c'])
 ## See also
 
 [mex](mex.md), [engPutVariable](engPutVariable.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

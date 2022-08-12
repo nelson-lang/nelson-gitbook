@@ -1,5 +1,3 @@
-
-
 # num2bin
 
 Convert number to binary representation.
@@ -10,17 +8,15 @@ Convert number to binary representation.
 
 ## Input argument
 
- - M - a variable: logical, integer, single or double real full matrix.
+- M - a variable: logical, integer, single or double real full matrix.
 
 ## Output argument
 
- - R - result of num2bin: char array.
+- R - result of num2bin: char array.
 
 ## Description
 
-
   <p><b>num2bin</b> returns a char array giving the literal bit representation of a number.</p>
-
 
 Used function(s)
 
@@ -40,16 +36,13 @@ Y = num2bin(X)
 ## See also
 
 [bin2num](bin2num.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

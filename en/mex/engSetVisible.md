@@ -1,5 +1,3 @@
-
-
 # engSetVisible
 
 Show or hide Nelson engine session
@@ -7,22 +5,20 @@ Show or hide Nelson engine session
 ## Syntax
 
 - #include "engine.h"
-- int engSetVisible(Engine *ep, bool value);
+- int engSetVisible(Engine \*ep, bool value);
 
 ## Input argument
 
- - Engine *ep - handle to Nelson engine.
- - bool value - set value to 1 to make the engine window visible, or to 0 to make it invisible.
+- Engine \*ep - handle to Nelson engine.
+- bool value - set value to 1 to make the engine window visible, or to 0 to make it invisible.
 
 ## Output argument
 
- - int - 0 if successful or 1 if an error occurs.
+- int - 0 if successful or 1 if an error occurs.
 
 ## Description
 
-
   <p>Show or hide Nelson engine session</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ edit([modulepath('mex'), '/tests/test_engine.c'])
 ## See also
 
 [mex](mex.md), [engGetVisible](engGetVisible.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

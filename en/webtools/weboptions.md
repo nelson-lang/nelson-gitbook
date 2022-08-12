@@ -1,5 +1,3 @@
-
-
 # weboptions
 
 Specify parameters for RESTful web service
@@ -11,15 +9,14 @@ Specify parameters for RESTful web service
 
 ## Input argument
 
- - name - a string.
- - value - a variable: value corresponding to name field.
+- name - a string.
+- value - a variable: value corresponding to name field.
 
 ## Output argument
 
- - options - a weboptions object.
+- options - a weboptions object.
 
 ## Description
-
 
   <p><b>options = weboptions()</b> returns default weboptions object.</p>
   <p>weboptions object can be an optional input argument to the webread, websave, and webwrite builtin.</p>
@@ -41,7 +38,6 @@ Specify parameters for RESTful web service
   <p><b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php'</p>
   <p><b>CertificateFilename</b> Filename of root certificates: a string or character vector.</p>
 
-
 ## Example
 
 ```matlab
@@ -52,16 +48,13 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 ## See also
 
 [webread](webread.md), [websave](websave.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # isvector
 
 Checks input is vector.
@@ -10,17 +8,15 @@ Checks input is vector.
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - tf - logical: result of 'isvector'.
+- tf - logical: result of 'isvector'.
 
 ## Description
 
-
   <p><b>isvector</b> returns an scalar logical if entry is an vector.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ R = isvector(A(:,1))
 ## See also
 
 [isempty](isempty.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

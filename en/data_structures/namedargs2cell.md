@@ -1,5 +1,3 @@
-
-
 # namedargs2cell
 
 Converts a struct containing name-value pairs to a cell.
@@ -10,17 +8,15 @@ Converts a struct containing name-value pairs to a cell.
 
 ## Input argument
 
- - st - a scalar structure.
+- st - a scalar structure.
 
 ## Output argument
 
- - ce - a cell.
+- ce - a cell.
 
 ## Description
 
-
   <p><b>ce = namedargs2cell(st)</b> returns an cell containing name-value pairs.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ R = namedargs2cell(S)
 ## See also
 
 [struct2cell](struct2cell.md), [struct](struct.md), [fieldnames](fieldnames.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

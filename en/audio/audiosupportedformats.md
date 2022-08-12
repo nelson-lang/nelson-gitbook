@@ -1,5 +1,3 @@
-
-
 # audiosupportedformats
 
 Get audio file supported formats.
@@ -10,13 +8,11 @@ Get audio file supported formats.
 
 ## Output argument
 
- - formats - struct array with 'Name', 'Extension', 'Subformats' fieldnames.
+- formats - struct array with 'Name', 'Extension', 'Subformats' fieldnames.
 
 ## Description
 
-
   <p><b>audiosupportedformats</b> returns a structure with supported audio file formats.</p>
-
 
 ## Example
 
@@ -31,14 +27,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

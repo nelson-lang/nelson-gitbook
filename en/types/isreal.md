@@ -1,5 +1,3 @@
-
-
 # isreal
 
 Return true if all imaginary part is a zero array.
@@ -10,11 +8,11 @@ Return true if all imaginary part is a zero array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,10 +24,12 @@ Return true if all imaginary part is a zero array.
 A = 1 + 0i;
 res = isreal(A)
 ```
+
 ```matlab
 B = uint8(3);
 res = isreal(B)
 ```
+
 ```matlab
 A = single([3, i]);
 res = isreal(A)
@@ -38,16 +38,13 @@ res = isreal(A)
 ## See also
 
 [isa](isa.md), [isint8](isint8.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

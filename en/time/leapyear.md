@@ -1,5 +1,3 @@
-
-
 # leapyear
 
 Determine leap year.
@@ -10,18 +8,16 @@ Determine leap year.
 
 ## Input argument
 
- - year - year: scalar or array numeric value.
+- year - year: scalar or array numeric value.
 
 ## Output argument
 
- - tf - Leap year determination result: scalar or array logical value.
+- tf - Leap year determination result: scalar or array logical value.
 
 ## Description
 
-
   <p><b>leapyear</b> determines leap years.</p>
   <p>Leap years is done by Gregorian calendar rules.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ tf = leapyear([2020 2021 2022])
 ## See also
 
 [datenum](datenum.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

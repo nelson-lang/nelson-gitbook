@@ -1,5 +1,3 @@
-
-
 # clear
 
 Remove variable from workspace.
@@ -20,21 +18,19 @@ Remove variable from workspace.
 
 ## Input argument
 
- - variable_name - a string: variable name.
- - global - clears all global variables.
- - all - clears all variables in all scopes
- - mex - clears all mex functions in all scopes
- - variables - clears all variables in current scope.
- - functions - clears cache of macros functions and associated persistent variables.
- - function_name - clears persistent variables of a function.
- - mexfunction_name - clears mex function (see mexAtExit).
+- variable_name - a string: variable name.
+- global - clears all global variables.
+- all - clears all variables in all scopes
+- mex - clears all mex functions in all scopes
+- variables - clears all variables in current scope.
+- functions - clears cache of macros functions and associated persistent variables.
+- function_name - clears persistent variables of a function.
+- mexfunction_name - clears mex function (see mexAtExit).
 
 ## Description
 
-
   <p><b>clear</b> is used to remove variable given by its name.</p>
   <p><b>clear</b> can also delete handle object if a function handle_TYPE_clear is defined.</p>
-
 
 ## Example
 
@@ -49,16 +45,13 @@ A
 ## See also
 
 [who](who.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

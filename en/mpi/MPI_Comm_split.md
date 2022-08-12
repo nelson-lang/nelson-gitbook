@@ -1,35 +1,33 @@
-
-
 # MPI_Comm_split
 
 Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups.
 
 ## Syntax
 
-- newcomm = MPI_Comm_split(comm,  color, key)
+- newcomm = MPI_Comm_split(comm, color, key)
 
 ## Input argument
 
- - comm - a MPI_Comm object.
- - color - an integer value: The new communicator that the calling process is to be assigned to. The value of color must be non-negative.
- - key - an integer value: The relative rank of the calling process in the group of the new communicator.
+- comm - a MPI_Comm object.
+- color - an integer value: The new communicator that the calling process is to be assigned to. The value of color must be non-negative.
+- key - an integer value: The relative rank of the calling process in the group of the new communicator.
 
 ## Output argument
 
- - newcomm - MPI_Comm object:  handle to a new communicator.
+- newcomm - MPI_Comm object: handle to a new communicator.
 
 ## Description
 
-
   <p>Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups.</p>
-
 
 ## See also
 
 [MPI_Comm_rank](MPI_Comm_rank.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Comm_split.m'], 10)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -55,14 +53,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

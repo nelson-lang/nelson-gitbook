@@ -1,5 +1,3 @@
-
-
 # nelsonroot
 
 Returns Nelson's root folder.
@@ -10,13 +8,11 @@ Returns Nelson's root folder.
 
 ## Output argument
 
- - nelson_path - a string: the root folder of Nelson.
+- nelson_path - a string: the root folder of Nelson.
 
 ## Description
 
-
   <p><b>nelsonroot</b> returns the root folder of Nelson.</p>
-
 
 ## Example
 
@@ -29,16 +25,13 @@ pwd
 ## See also
 
 [pwd](../files_folders_functions/pwd.md), [cd](../files_folders_functions/cd.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

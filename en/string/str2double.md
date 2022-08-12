@@ -1,5 +1,3 @@
-
-
 # str2double
 
 Converts a string to double.
@@ -10,18 +8,16 @@ Converts a string to double.
 
 ## Input argument
 
- - str - a cell of strings, string array or a string.
+- str - a cell of strings, string array or a string.
 
 ## Output argument
 
- - res - a double
+- res - a double
 
 ## Description
 
-
   <p><b>str2double</b> converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type.</p>
   <p>If <b>str2double</b> cannot convert string to a number, then it returns a Not An Number value.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ R = str2double(["2.71" "3.1415"])
 ## See also
 
 [double](../double/double.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # rsf2csf
 
 Convert real Schur form to complex Schur form.
@@ -10,19 +8,17 @@ Convert real Schur form to complex Schur form.
 
 ## Input argument
 
- - U - unitary matrix (double or single, real or complex)
- - T - schur form (double or single, real or complex)
+- U - unitary matrix (double or single, real or complex)
+- T - schur form (double or single, real or complex)
 
 ## Output argument
 
- - Uc - transformed unitary matrix
- - Tc - transformed schur form
+- Uc - transformed unitary matrix
+- Tc - transformed schur form
 
 ## Description
 
-
   <p><b>[Uc, Tc] = rsf2csf(U, T)</b> transforms the outputs of <b>[U, T] = schur(X)</b> for real matrices <b>X</b> from real Schur form to complex Schur form.</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ X = [1,     1,     1,     3;
 ## See also
 
 [schur](schur.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

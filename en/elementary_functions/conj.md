@@ -1,5 +1,3 @@
-
-
 # conj
 
 Complex conjugate
@@ -10,17 +8,15 @@ Complex conjugate
 
 ## Input argument
 
- - M - a variable
+- M - a variable
 
 ## Output argument
 
- - CZ - result of conj: complex conjugate.
+- CZ - result of conj: complex conjugate.
 
 ## Description
 
-
   <p><b>conj</b> returns the complex conjugate.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ r = conj(x)
 ## See also
 
 [real](real.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

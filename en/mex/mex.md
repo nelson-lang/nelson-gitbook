@@ -1,5 +1,3 @@
-
-
 # mex
 
 Build MEX function
@@ -18,14 +16,13 @@ Build MEX function
 
 ## Input argument
 
- - '-client', 'engine' - enable to build C/C++ source files into standalone engine application.
- - api - a string: '-R2017b' (separated complex representation) or '-R2018a' (interleaved complex representation).
- - filenames - a string or cell of characters: list of files to use. First filename used as mex name.
- - mexName - a string: override naming convention.
- - option1, ..., optionN - string: compilation or link option.
+- '-client', 'engine' - enable to build C/C++ source files into standalone engine application.
+- api - a string: '-R2017b' (separated complex representation) or '-R2018a' (interleaved complex representation).
+- filenames - a string or cell of characters: list of files to use. First filename used as mex name.
+- mexName - a string: override naming convention.
+- option1, ..., optionN - string: compilation or link option.
 
 ## Description
-
 
   <p>Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.</p>
   <p>A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.</p>
@@ -45,7 +42,6 @@ Build MEX function
   <p><b>-l</b> Links with dynamic object library .lib, .so or .dylib.</p>
   <p><b>-g</b> Used for debugging (Debug configuration).</p>
 
-
 ## Example
 
 ```matlab
@@ -55,16 +51,13 @@ edit([modulepath('mex'), '/tests/test_engine.m'])
 ## See also
 
 [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

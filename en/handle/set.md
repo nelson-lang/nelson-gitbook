@@ -1,5 +1,3 @@
-
-
 # set
 
 Set a property value of an handle object.
@@ -10,33 +8,28 @@ Set a property value of an handle object.
 
 ## Input argument
 
- - h - an handle object.
- - property_name - a string: property name.
- - value - a variable.
+- h - an handle object.
+- property_name - a string: property name.
+- value - a variable.
 
 ## Output argument
 
- - R - user-settable properties and possible values for the object identified by h.
+- R - user-settable properties and possible values for the object identified by h.
 
 ## Description
 
-
   <p>This routine can be used to modify the value of a specified property from an handle object.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html), [get](get.md), [invoke](invoke.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

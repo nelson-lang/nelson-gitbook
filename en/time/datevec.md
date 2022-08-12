@@ -1,5 +1,3 @@
-
-
 # datevec
 
 Convert a serial date number into a date vector.
@@ -11,19 +9,17 @@ Convert a serial date number into a date vector.
 
 ## Input argument
 
- - dv - a scalar, vector, or multidimensional array e: a serial date number.
+- dv - a scalar, vector, or multidimensional array e: a serial date number.
 
 ## Output argument
 
- - Y, M, D, H, MN, S - double: Year, Month, Day, Hour, Minutes, Seconds.
- - V - a vector of double: [Year, Month, Day, Hour, Minutes, Seconds].
+- Y, M, D, H, MN, S - double: Year, Month, Day, Hour, Minutes, Seconds.
+- V - a vector of double: [Year, Month, Day, Hour, Minutes, Seconds].
 
 ## Description
 
-
   <p><b>datevec</b> converts a serial date number into a date vector.</p>
   <p>To measure performance, it is better to use tic and toc functions.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ V = datevec([720840, now()])
 ## See also
 
 [tic](tic.md), [toc](toc.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

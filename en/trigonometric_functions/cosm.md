@@ -1,5 +1,3 @@
-
-
 # cosm
 
 Computes the matrix cosine of a square matrix.
@@ -10,11 +8,11 @@ Computes the matrix cosine of a square matrix.
 
 ## Input argument
 
- - x - a numeric value: scalar or square matrix
+- x - a numeric value: scalar or square matrix
 
 ## Output argument
 
- - res - a numeric value: a square matrix
+- res - a numeric value: a square matrix
 
 ## Description
 
@@ -32,16 +30,13 @@ res = cosm(A)
 ## See also
 
 [cos](cos.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

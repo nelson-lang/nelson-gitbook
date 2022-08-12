@@ -1,5 +1,3 @@
-
-
 # MPI_Comm_rank
 
 Determines the rank of the calling process in the communicator.
@@ -10,24 +8,24 @@ Determines the rank of the calling process in the communicator.
 
 ## Input argument
 
- - Comm - a MPI_Comm object.
+- Comm - a MPI_Comm object.
 
 ## Output argument
 
- - r - an integer value: rank of the calling process in the group of Comm.
+- r - an integer value: rank of the calling process in the group of Comm.
 
 ## Description
 
-
   <p>Return the rank of the calling process in the specified communicator.</p>
-
 
 ## See also
 
 [MPI_Comm_size](MPI_Comm_size.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -56,14 +54,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

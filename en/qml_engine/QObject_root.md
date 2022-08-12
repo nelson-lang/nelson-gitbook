@@ -1,5 +1,3 @@
-
-
 # QObject_root
 
 QObject root object.
@@ -10,17 +8,16 @@ QObject root object.
 
 ## Output argument
 
- - h - QObject handle of Nelson gui.
+- h - QObject handle of Nelson gui.
 
 ## Description
 
-
   <p>Returns QObject handle of Nelson gui.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html), [QObject_get (get)](QObject_get.html).
+
 ## Example
 
 ```matlab
@@ -31,14 +28,10 @@ h1.windowTitle = 'Your title'
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

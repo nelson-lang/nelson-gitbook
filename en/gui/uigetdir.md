@@ -1,5 +1,3 @@
-
-
 # uigetdir
 
 Opens dialog box to select a directory.
@@ -12,19 +10,17 @@ Opens dialog box to select a directory.
 
 ## Input argument
 
- - path - a string: initial path
- - title - a string: title of the dialog box
+- path - a string: initial path
+- title - a string: title of the dialog box
 
 ## Output argument
 
- - dir_ans - a string (returned path) or 0 if dialogbox is canceled
+- dir_ans - a string (returned path) or 0 if dialogbox is canceled
 
 ## Description
 
-
   <p><b>uigetdir</b> opens a dialog box for selecting a directory.</p>
   <p>If path is wrong or not given, the current working directory will be used.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ A = uigetdir();
 ## See also
 
 [pwd](../files_folders_functions/pwd.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

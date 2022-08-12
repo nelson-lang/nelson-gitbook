@@ -1,5 +1,3 @@
-
-
 # siogetvariable
 
 Emit an value of variable to web browser.
@@ -10,13 +8,11 @@ Emit an value of variable to web browser.
 
 ## Input argument
 
- - variable_name - a string: name of variable
+- variable_name - a string: name of variable
 
 ## Description
 
-
   <p><b>siogetvariable</b> send value of a variable to web browser.</p>
-
 
 ## Example
 
@@ -26,14 +22,10 @@ A = eye(3, 3); siogetvariable('A')
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

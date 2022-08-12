@@ -1,5 +1,3 @@
-
-
 # toolboxdir
 
 Returns path of a module.
@@ -10,17 +8,15 @@ Returns path of a module.
 
 ## Input argument
 
- - module_short_name - a string: short module's name.
+- module_short_name - a string: short module's name.
 
 ## Output argument
 
- - p - a string: path of the module.
+- p - a string: path of the module.
 
 ## Description
 
-
   <p><b>toolboxdir</b> is an helper's function to return module root path.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ toolboxdir('core')
 ## See also
 
 [modulepath](modulepath.md), [getmodules](getmodules.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

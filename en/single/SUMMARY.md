@@ -1,3 +1,2 @@
-* [single](README.md)
-    * [single](single.md)
-
+- [single](README.md)
+  - [single](single.md)

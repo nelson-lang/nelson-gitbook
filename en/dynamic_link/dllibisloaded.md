@@ -1,5 +1,3 @@
-
-
 # dllibisloaded
 
 Checks if shared library is loaded.
@@ -11,18 +9,16 @@ Checks if shared library is loaded.
 
 ## Input argument
 
- - libraryname - a string: dynamic library name.
+- libraryname - a string: dynamic library name.
 
 ## Output argument
 
- - tf - a logical: true if library is already loaded.
- - lib - a dllib handle: library already loaded.
+- tf - a logical: true if library is already loaded.
+- lib - a dllib handle: library already loaded.
 
 ## Description
 
-
   <p><b>dllibisloaded</b> returns if share library is already loaded.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ isequal(lib1, lib2)
 ## See also
 
 [dlopen](dlopen.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

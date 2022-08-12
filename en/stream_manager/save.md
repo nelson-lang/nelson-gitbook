@@ -1,5 +1,3 @@
-
-
 # save
 
 save workspace variables to .nh5 or .mat file
@@ -15,19 +13,17 @@ save workspace variables to .nh5 or .mat file
 
 ## Input argument
 
- - filename - a string: .nh5  or .mat filename. extension defines format used .mat or .nh5 (default)
- - var1, ..., varN - string: Names of variables to save from Nelson's workspace.
- - version: '-v7.3', '-v7', '-v6', '-v4' - mat file version used ('-v7.3'). This option will force '-mat'.
- - '-mat' - forces to save as mat file (default '-nh5').
- - '-nh5' - forces to save as nh5 file (default '-nh5').
- - '-append' - append variables to an existing .nh5/.mat file (-v7.3 only).
- - '-nocompression' - disable .nh5/.mat file compression.
+- filename - a string: .nh5 or .mat filename. extension defines format used .mat or .nh5 (default)
+- var1, ..., varN - string: Names of variables to save from Nelson's workspace.
+- version: '-v7.3', '-v7', '-v6', '-v4' - mat file version used ('-v7.3'). This option will force '-mat'.
+- '-mat' - forces to save as mat file (default '-nh5').
+- '-nh5' - forces to save as nh5 file (default '-nh5').
+- '-append' - append variables to an existing .nh5/.mat file (-v7.3 only).
+- '-nocompression' - disable .nh5/.mat file compression.
 
 ## Description
 
-
   <p><b>save</b> save workspace variables to .nh5 or .mat file.</p>
-
 
 ## Examples
 
@@ -47,7 +43,9 @@ who
 A
 B
 ```
+
 append variables
+
 ```matlab
 C = eye(3, 4);
 save([tempdir(), 'example_load.mat'], 'C', '-append')
@@ -65,7 +63,9 @@ A
 B
 C
 ```
+
 compression
+
 ```matlab
 C = eye(1000, 1000);
 save([tempdir(), 'example_save_with_compression.mat'], 'C')
@@ -77,16 +77,13 @@ no_compression = dir([tempdir(), 'example_save_no_compression.mat'])
 ## See also
 
 [load](load.md), [savenh5](../hdf5/savenh5.md), [savemat](../matio/savemat.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

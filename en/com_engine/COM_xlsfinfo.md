@@ -1,5 +1,3 @@
-
-
 # COM_xlsfinfo
 
 Determines if file contains Microsoft Excel spreadsheet.
@@ -12,19 +10,17 @@ Determines if file contains Microsoft Excel spreadsheet.
 
 ## Input argument
 
- - filename - a string: a filename.
+- filename - a string: a filename.
 
 ## Output argument
 
- - status - a string: file type
- - sheets - a vector of strings: sheet names
- - xlsformat - a string: excel file format
+- status - a string: file type
+- sheets - a vector of strings: sheet names
+- xlsformat - a string: excel file format
 
 ## Description
 
-
   <p>Query Excel spreadsheet file filename for some information about its contents.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ Determines if file contains Microsoft Excel spreadsheet.
 ## See also
 
 [COM_xlswrite](COM_xlswrite.md), [COM_xlsread](COM_xlsread.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

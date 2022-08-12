@@ -1,5 +1,3 @@
-
-
 # sub2ind
 
 Matrix subscript values to linear index
@@ -11,20 +9,18 @@ Matrix subscript values to linear index
 
 ## Input argument
 
- - sz - size of array: vector of positive integers.
- - row - row subscripts.
- - col - column subscripts.
- - I1, I2, ..., In - multidimensional subscripts.
+- sz - size of array: vector of positive integers.
+- row - row subscripts.
+- col - column subscripts.
+- I1, I2, ..., In - multidimensional subscripts.
 
 ## Output argument
 
- - ind - linear indices.
+- ind - linear indices.
 
 ## Description
 
-
   <p><b>ind2sub</b> converts subscripts to linear indices. .</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ ind = sub2ind(sz, row, col)
 ## See also
 
 [ind2sub](sub2ind.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

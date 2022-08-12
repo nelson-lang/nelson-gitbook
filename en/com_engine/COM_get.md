@@ -1,5 +1,3 @@
-
-
 # COM_get
 
 Get property value from COM interface.
@@ -12,18 +10,16 @@ Get property value from COM interface.
 
 ## Input argument
 
- - h - a COM object.
- - propertyname - a string: the property's name of COM object.
+- h - a COM object.
+- propertyname - a string: the property's name of COM object.
 
 ## Output argument
 
- - v - a nelson variable.
+- v - a nelson variable.
 
 ## Description
 
-
   <p>The function returns the value of the property specified in the string, propertyname.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ e.Path
 ## See also
 
 [COM_set](COM_set.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

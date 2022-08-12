@@ -1,5 +1,3 @@
-
-
 # isstruct
 
 Return true if variable var is a structure.
@@ -10,11 +8,11 @@ Return true if variable var is a structure.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,10 +24,12 @@ Return true if variable var is a structure.
 A = 1;
 res = isstruct(A)
 ```
+
 ```matlab
 B = struct();
 res = isstruct(B)
 ```
+
 ```matlab
 C.a = 1;
 C.B = 'hello';
@@ -39,16 +39,13 @@ res = isstruct(C)
 ## See also
 
 [isa](isa.md), [struct](struct.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

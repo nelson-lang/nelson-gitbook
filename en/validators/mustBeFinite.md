@@ -1,5 +1,3 @@
-
-
 # mustBeFinite
 
 Checks that value is finite or raise an error.
@@ -12,15 +10,13 @@ Checks that value is finite or raise an error.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement isfinite methods.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement isfinite methods.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeFinite</b> checks that value is finite or raise an error.</p>
   <p>Empty values are ignored.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ mustBeFinite(Inf)
 ## See also
 
 [isfinite](../elementary_functions/isfinite.md), [isempty](../types/isempty.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

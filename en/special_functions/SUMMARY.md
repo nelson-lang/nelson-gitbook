@@ -1,7 +1,6 @@
-* [special_functions](README.md)
-    * [betainc](betainc.md)
-    * [factor](factor.md)
-    * [gamma](gamma.md)
-    * [gcd](gcd.md)
-    * [primes](primes.md)
-
+- [special_functions](README.md)
+  - [betainc](betainc.md)
+  - [factor](factor.md)
+  - [gamma](gamma.md)
+  - [gcd](gcd.md)
+  - [primes](primes.md)

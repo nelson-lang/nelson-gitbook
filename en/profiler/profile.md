@@ -1,5 +1,3 @@
-
-
 # profile
 
 Profile execution time for Macro functions.
@@ -17,11 +15,10 @@ Profile execution time for Macro functions.
 
 ## Input argument
 
- - sortOption - a string: 'nfl' by name file line, 'line' by line, 'percalls', 'totaltime', 'filename', 'function' or 'nbcalls'.
- - nbLines - a integer value: number of lines to display.
+- sortOption - a string: 'nfl' by name file line, 'line' by line, 'percalls', 'totaltime', 'filename', 'function' or 'nbcalls'.
+- nbLines - a integer value: number of lines to display.
 
 ## Description
-
 
   <p>Profiling is a way to measure where Macro function spend times.</p>
   <p><b>s = profile('status')</b> returns a structure with the current status of the profiler.</p>
@@ -30,7 +27,6 @@ Profile execution time for Macro functions.
   <p><b>profile('off')</b> stops profiler. Collected profiling data will be retrieved later with <b>p = profile ('info')</b>.</p>
   <p><b>profile('clear')</b> clears collected profiling data.</p>
   <p><b>profile('resume')</b> restarts and continue and extends collected profiling data.</p>
-
 
 ## Examples
 
@@ -42,6 +38,7 @@ profile('show')
 profile('show', 'totaltime')
 profile('show', 'totaltime', 4)
 ```
+
 ```matlab
 profile on
 sind(5)
@@ -53,16 +50,13 @@ unix([tempdir(), 'profile_results/index.html'])
 ## See also
 
 [profsave](profsave.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # int64
 
 Converts to 64-bit signed integer.
@@ -10,18 +8,16 @@ Converts to 64-bit signed integer.
 
 ## Input argument
 
- - X - a matrix of double, single or integers.
+- X - a matrix of double, single or integers.
 
 ## Output argument
 
- - Y - a matrix of 64-bit integer.
+- Y - a matrix of 64-bit integer.
 
 ## Description
 
-
   <p><b>int64</b> converts value to 64-bit integer type.</p>
   <p>The value is rounded to the nearest int64 value on conversion. A value that is above or below the range for an int64 class is mapped to one of the endpoints of the range [-9223372036854775808,9223372036854775807].</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ B = int64(A)
 ## See also
 
 [intmax](intmax.md), [intmin](intmax.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

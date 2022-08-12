@@ -1,5 +1,3 @@
-
-
 # h5readatt
 
 Read HDF5 attribute.
@@ -10,19 +8,17 @@ Read HDF5 attribute.
 
 ## Input argument
 
- - filename - a string: hdf5 filename.
- - location - a string: full path identifying a group or variable.
- - attname - a string: name of an attribute.
+- filename - a string: hdf5 filename.
+- location - a string: full path identifying a group or variable.
+- attname - a string: name of an attribute.
 
 ## Output argument
 
- - attval - a nelson's variable.
+- attval - a nelson's variable.
 
 ## Description
 
-
   <p><b>h5readatt</b> reads attribute named <b>attname</b> from the HDF5 file.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ h5readatt([tempdir(), 'myfile.h5'],'/','creation_date')
 ## See also
 
 [h5writeatt](h5writeatt.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

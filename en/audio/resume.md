@@ -1,5 +1,3 @@
-
-
 # resume
 
 Resumes an audioplayer object.
@@ -10,7 +8,7 @@ Resumes an audioplayer object.
 
 ## Input argument
 
- - playObj - an audioplayer object.
+- playObj - an audioplayer object.
 
 ## Description
 
@@ -31,16 +29,13 @@ playObj
 ## See also
 
 [audioplayer_pause](audioplayer_pause.md), [play](play.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

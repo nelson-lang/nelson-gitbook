@@ -1,5 +1,3 @@
-
-
 # ldivide
 
 Left division, .\ operator.
@@ -11,18 +9,16 @@ Left division, .\ operator.
 
 ## Input argument
 
- - A - a variable
- - B - a variable
+- A - a variable
+- B - a variable
 
 ## Output argument
 
- - C - result of A .\ B
+- C - result of A .\ B
 
 ## Description
 
-
   <p><b>C = ldivide(A, B)</b> returns the element-by-element left division of A and B.</p>
-
 
 ## Examples
 
@@ -31,6 +27,7 @@ B = ones(3, 4)
 A = B *2
 A .\ B
 ```
+
 ```matlab
 B = 2
 A = B *2
@@ -40,16 +37,13 @@ A .\ B
 ## See also
 
 [rdivide](rdivide.md), [mldivide](mldivide.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

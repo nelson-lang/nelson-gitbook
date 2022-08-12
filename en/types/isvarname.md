@@ -1,5 +1,3 @@
-
-
 # isvarname
 
 Return true if input is valid variable name.
@@ -10,11 +8,11 @@ Return true if input is valid variable name.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -32,16 +30,13 @@ isvarname('t8t')
 ## See also
 
 [ischar](ischar.md), [namelengthmax](../core/namelengthmax.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # QObject_used
 
 Returns list of current used QObject handle.
@@ -10,17 +8,16 @@ Returns list of current used QObject handle.
 
 ## Output argument
 
- - h - a vector of QObject handle.
+- h - a vector of QObject handle.
 
 ## Description
 
-
   <p>Returns list of current used QObject handle.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html), [QObject_get (get)](QObject_get.html).
+
 ## Example
 
 ```matlab
@@ -35,14 +32,10 @@ used = QObject_used()
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

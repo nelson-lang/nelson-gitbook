@@ -1,11 +1,8 @@
-
-
 # libpointer datatype
 
 C/Nelson equivalent data types
 
 ## Description
-
 
   <p>This table shows these Nelson types with their equivalent C types.</p>
   <table style="width:100%">
@@ -123,20 +120,16 @@ C/Nelson equivalent data types
     </tr>
   </table>
 
-
 ## See also
 
 [libpointer](libpointer.md), [dlsym](dlsym.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

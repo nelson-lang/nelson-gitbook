@@ -1,5 +1,3 @@
-
-
 # qml_loadfile
 
 Load a QML file.
@@ -10,22 +8,21 @@ Load a QML file.
 
 ## Input argument
 
- - filename - a string: a QML filename.
+- filename - a string: a QML filename.
 
 ## Output argument
 
- - h - a QObject handle.
+- h - a QObject handle.
 
 ## Description
-
 
   <p>Load a QML file</p>
   <p>It creates a QML component and load .qml file.</p>
 
-
 ## See also
 
 [qml_loadstring](qml_loadstring.html).
+
 ## Example
 
 ```matlab
@@ -34,14 +31,10 @@ Load a QML file.
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

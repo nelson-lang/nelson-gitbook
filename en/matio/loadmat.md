@@ -1,5 +1,3 @@
-
-
 # loadmat
 
 load data from .mat file into Nelson's workspace.
@@ -13,18 +11,16 @@ load data from .mat file into Nelson's workspace.
 
 ## Input argument
 
- - filename - a string: .mat filename.
- - var1, ..., varN - string: Names of variables to load into Nelson's workspace.
+- filename - a string: .mat filename.
+- var1, ..., varN - string: Names of variables to load into Nelson's workspace.
 
 ## Output argument
 
- - st - a structure with variables name as fieldnames.
+- st - a structure with variables name as fieldnames.
 
 ## Description
 
-
   <p><b>loadmat</b> loads data from .mat file to Nelson's workspace.</p>
-
 
 Bibliography
 
@@ -52,16 +48,13 @@ B
 ## See also
 
 [load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](savemat.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

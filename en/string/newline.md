@@ -1,5 +1,3 @@
-
-
 # newline
 
 Returns a newline character.
@@ -10,7 +8,7 @@ Returns a newline character.
 
 ## Output argument
 
- - ch - a char: equivalent to char(10)
+- ch - a char: equivalent to char(10)
 
 ## Description
 
@@ -25,16 +23,13 @@ double(newline)
 ## See also
 
 [double](../double/double.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

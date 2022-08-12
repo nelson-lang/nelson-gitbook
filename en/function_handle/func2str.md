@@ -1,5 +1,3 @@
-
-
 # func2str
 
 Return a function handle constructed from a string.
@@ -10,17 +8,15 @@ Return a function handle constructed from a string.
 
 ## Input argument
 
- - str - a string.
+- str - a string.
 
 ## Output argument
 
- - func_handle - a function handle
+- func_handle - a function handle
 
 ## Description
 
-
   <p><b>func_handle = str2func(str)</b> returns a function handle constructed from the string <b>str</b>.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ class(fh)
 ## See also
 
 [func2str](func2str.md), [isfunction_handle](isfunction_handle.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # mkdir
 
 Creates a new directory.
@@ -15,21 +13,19 @@ Creates a new directory.
 
 ## Input argument
 
- - dirname - a string: directory name to create
- - parentdir - a string: a directory in which the dirname directory will be created
+- dirname - a string: directory name to create
+- parentdir - a string: a directory in which the dirname directory will be created
 
 ## Output argument
 
- - status - a logical true or false
- - msg - a string: error message
+- status - a logical true or false
+- msg - a string: error message
 
 ## Description
-
 
   <p>Creates a directory named dirname in the directory parent.</p>
   <p>If no parent directory is specified the present working directory is used.</p>
   <p>If directory is created or already existing, status is true, otherwise it will be false.</p>
-
 
 ## Example
 
@@ -45,16 +41,13 @@ end
 ## See also
 
 [isdir](isdir.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

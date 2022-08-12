@@ -1,5 +1,3 @@
-
-
 # isunicodesupported
 
 Detect whether the current terminal supports Unicode.
@@ -10,14 +8,12 @@ Detect whether the current terminal supports Unicode.
 
 ## Output argument
 
- - tf - a logical: true or false.
+- tf - a logical: true or false.
 
 ## Description
 
-
   <p><b>isunicodesupported</b>: returns if current terminal supports Unicode.</p>
   <p>value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'</p>
-
 
 ## Example
 
@@ -28,16 +24,13 @@ isunicodesupported()
 ## See also
 
 [getnelsonmode](../engine/getnelsonmode.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

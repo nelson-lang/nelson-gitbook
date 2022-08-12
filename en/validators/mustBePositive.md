@@ -1,5 +1,3 @@
-
-
 # mustBePositive
 
 Checks that value is positive or raise an error.
@@ -12,14 +10,12 @@ Checks that value is positive or raise an error.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement isnumeric, islogical, all, isreal, and gt methods.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement isnumeric, islogical, all, isreal, and gt methods.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBePositive</b> checks that value is positive or raise an error.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ mustBePositive(-1)
 ## See also
 
 [mustBeNonnegative](mustBeNonnegative.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

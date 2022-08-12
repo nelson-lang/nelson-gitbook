@@ -1,5 +1,3 @@
-
-
 # test_run
 
 Runs tests
@@ -29,18 +27,17 @@ Runs tests
 
 ## Input argument
 
- - module_name - a string or a cell of string: module name or list of modules.
- - file_to_test - a string or a cell of string: file to test or list of filenames.
- - options - a string or a cell of string: supported options 'all', 'all_tests', 'unitary_tests', 'nonreg_tests' or 'benchs'.
- - xunitfile - a string: filename to export results as a .xml or .json file compatible with Xunit format.
- - '-stoponfail' - a string: stop tests execution at first 'fails' detected.
+- module_name - a string or a cell of string: module name or list of modules.
+- file_to_test - a string or a cell of string: file to test or list of filenames.
+- options - a string or a cell of string: supported options 'all', 'all_tests', 'unitary_tests', 'nonreg_tests' or 'benchs'.
+- xunitfile - a string: filename to export results as a .xml or .json file compatible with Xunit format.
+- '-stoponfail' - a string: stop tests execution at first 'fails' detected.
 
 ## Output argument
 
- - status - a logical: true if tests pass.
+- status - a logical: true if tests pass.
 
 ## Description
-
 
   <p><b>test_run</b> function searchs 'test_*.m', 'bug_*.m', and 'bench_*.m' files, executes them, and displays a report about success or failures.</p>
   <p>Each test or bench is executed in a separated process using the 'unix' command.</p>
@@ -76,15 +73,16 @@ Runs tests
   <p>Tests with <b>&lt;--SEQUENTIAL TEST REQUIRED--&gt;</b> are evaluated last.</p>
   <p>Benchs are evaluated sequentialy.</p>
 
-
 ## Examples
 
 ```matlab
 test_run('string');
 ```
+
 ```matlab
 test_run({'string', 'time'})
 ```
+
 ```matlab
 test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 ```
@@ -92,16 +90,13 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 ## See also
 
 [assert](../assert_functions/assert.md), [test_makeref](test_makeref.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

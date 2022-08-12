@@ -1,5 +1,3 @@
-
-
 # audioplayer_fieldnames
 
 Returns the properties name of an audioplayer object.
@@ -11,17 +9,15 @@ Returns the properties name of an audioplayer object.
 
 ## Input argument
 
- - h - a audioplayer object.
+- h - a audioplayer object.
 
 ## Output argument
 
- - l - a cell of strings.
+- l - a cell of strings.
 
 ## Description
 
-
-  <description><b>fieldnames</b> returns a cell of strings with properties name.</description>
-
+<description><b>fieldnames</b> returns a cell of strings with properties name.</description>
 
 ## Example
 
@@ -36,16 +32,13 @@ clear playObj
 ## See also
 
 [audioplayer_set](audioplayer_set.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # toupper
 
 Upper case conversion.
@@ -10,11 +8,11 @@ Upper case conversion.
 
 ## Input argument
 
- - str - a row character array, a cell of strings or an string array.
+- str - a row character array, a cell of strings or an string array.
 
 ## Output argument
 
- - res - a string upper case
+- res - a string upper case
 
 ## Description
 
@@ -25,6 +23,7 @@ Upper case conversion.
 ```matlab
 toupper('NelSon')
 ```
+
 ```matlab
 upper(["NelSon", "is", "open"])
 ```
@@ -32,16 +31,13 @@ upper(["NelSon", "is", "open"])
 ## See also
 
 [tolower](tolower.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # QObject_get
 
 Retrieve a property value from an QObject handle.
@@ -10,22 +8,21 @@ Retrieve a property value from an QObject handle.
 
 ## Input argument
 
- - h - an QObject handle.
- - property_name - a string: property name.
+- h - an QObject handle.
+- property_name - a string: property name.
 
 ## Output argument
 
- - R - The data type of the return value depends on the invoked method.
+- R - The data type of the return value depends on the invoked method.
 
 ## Description
 
-
   <p><b>R = get(h, property_name)</b> returns the value of property asked.</p>
-
 
 ## See also
 
 [QObject_set (set)](QObject_set.html), [get](../handle/get.md).
+
 ## Example
 
 ```matlab
@@ -36,14 +33,10 @@ h.windowTitle % or get(h, 'windowTitle')
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

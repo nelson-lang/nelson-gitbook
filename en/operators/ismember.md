@@ -1,5 +1,3 @@
-
-
 # ismember
 
 Array elements that are members of another array.
@@ -10,18 +8,16 @@ Array elements that are members of another array.
 
 ## Input argument
 
- - A - a variable
- - B - a variable
+- A - a variable
+- B - a variable
 
 ## Output argument
 
- - T - result of ismember.
+- T - result of ismember.
 
 ## Description
 
-
   <p><b>T = ismember(A, B)</b> returns an array of logical where the data in <b>A</b> is found in <b>B</b>.</p>
-
 
 ## Example
 
@@ -36,16 +32,13 @@ T = ismember(["a","b","f"], ["b", "f", "c"])
 ## See also
 
 [sort](sort.html).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

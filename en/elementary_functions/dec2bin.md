@@ -1,5 +1,3 @@
-
-
 # dec2bin
 
 Convert decimal number to base 2.
@@ -11,18 +9,16 @@ Convert decimal number to base 2.
 
 ## Input argument
 
- - D - a non negative integer smaller than the value returned by flintmax.
- - N - an integer value. number of digits.
+- D - a non negative integer smaller than the value returned by flintmax.
+- N - an integer value. number of digits.
 
 ## Output argument
 
- - R - result of dec2bin: char array.
+- R - result of dec2bin: char array.
 
 ## Description
 
-
   <p><b>dec2bin</b> converts decimal number to base 2.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ Y = dec2bin(2)
 ## See also
 
 [dec2base](base2dec.md), [bin2dec](bin2dec.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

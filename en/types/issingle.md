@@ -1,5 +1,3 @@
-
-
 # issingle
 
 Return true if variable var is a single matrix.
@@ -10,11 +8,11 @@ Return true if variable var is a single matrix.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a single matrix.
 A = 3.6;
 res = issingle(A)
 ```
+
 ```matlab
 B = single([1 ; 3]);
 res = issingle(B)
@@ -34,16 +33,13 @@ res = issingle(B)
 ## See also
 
 [isdouble](isdouble.md), [single](../single/single.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # fix
 
 Round towards zero
@@ -10,17 +8,15 @@ Round towards zero
 
 ## Input argument
 
- - A - a variable
+- A - a variable
 
 ## Output argument
 
- - C - result of fix.
+- C - result of fix.
 
 ## Description
 
-
   <p><b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ fix(pi)
 ## See also
 
 [floor](floor.md), [round](round.md), [ceil](ceil.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

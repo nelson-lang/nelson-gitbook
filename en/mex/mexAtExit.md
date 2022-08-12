@@ -1,5 +1,3 @@
-
-
 # mexAtExit
 
 Register a function to be called when the MEX-file is cleared or when Nelson exits
@@ -7,22 +5,20 @@ Register a function to be called when the MEX-file is cleared or when Nelson exi
 ## Syntax
 
 - #include "mex.h"
-- int mexAtExit(void (*ExitFcn)(void));
+- int mexAtExit(void (\*ExitFcn)(void));
 
 ## Input argument
 
- - ExitFcn - Pointer to function you wish to run on exit.
+- ExitFcn - Pointer to function you wish to run on exit.
 
 ## Output argument
 
- - returned value - returns 0.
+- returned value - returns 0.
 
 ## Description
 
-
   <p>Each MEX can register only one active exit subroutine at a time.</p>
   <p><b>mexAtExit</b> registers a subroutine to be called just when Nelson is finished or <b>clear</b> is called.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ edit([modulepath('mex'), '/tests/test_mexAtExit.m'])
 ## See also
 
 [exit](../core/exit.md), [clear](../memory_manager/clear.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

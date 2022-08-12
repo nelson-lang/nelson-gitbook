@@ -1,5 +1,3 @@
-
-
 # mustBeVector
 
 Checks that value is vector or raise an error.
@@ -14,14 +12,12 @@ Checks that value is vector or raise an error.
 
 ## Input argument
 
- - var - a variable: all supported types and classes that implement isvector methods.
- - argPosition - a positive integer value: Position of input argument.
+- var - a variable: all supported types and classes that implement isvector methods.
+- argPosition - a positive integer value: Position of input argument.
 
 ## Description
 
-
   <p><b>mustBeVector</b> checks that value is vector or raise an error.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ mustBeVector([], 'allows-all-empties')
 ## See also
 
 [isvector](../elementary_functions/isvector.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

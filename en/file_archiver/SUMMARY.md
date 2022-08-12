@@ -1,4 +1,3 @@
-* [file_archiver](README.md)
-    * [unzip](unzip.md)
-    * [zip](zip.md)
-
+- [file_archiver](README.md)
+  - [unzip](unzip.md)
+  - [zip](zip.md)

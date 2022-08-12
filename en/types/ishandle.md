@@ -1,5 +1,3 @@
-
-
 # ishandle
 
 Return true if variable var is a handle object.
@@ -10,11 +8,11 @@ Return true if variable var is a handle object.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -30,16 +28,13 @@ res = ishandle(A)
 ## See also
 
 [isa](isa.md), [isvalid](../handle/isvalid.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

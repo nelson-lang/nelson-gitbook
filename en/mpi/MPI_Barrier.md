@@ -1,5 +1,3 @@
-
-
 # MPI_Barrier
 
 Blocks until all processes in the communicator have reached this routine.
@@ -10,24 +8,24 @@ Blocks until all processes in the communicator have reached this routine.
 
 ## Input argument
 
- - Comm - a MPI_Comm object.
+- Comm - a MPI_Comm object.
 
 ## Output argument
 
- - r - integer value: MPI_SUCCESS (0) or MPI_ERR_COMM (5).
+- r - integer value: MPI_SUCCESS (0) or MPI_ERR_COMM (5).
 
 ## Description
 
-
   <p>This function is used as a synchronization point for all processes in a group. All processes are blocked until every process calls MPI_Barrier.</p>
-
 
 ## See also
 
 [MPI_Initialized](MPI_Initialized.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Barrier.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -45,14 +43,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

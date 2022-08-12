@@ -1,5 +1,3 @@
-
-
 # pinv
 
 Moore-Penrose pseudoinverse
@@ -11,18 +9,16 @@ Moore-Penrose pseudoinverse
 
 ## Input argument
 
- - A - matrix: input matrix
- - tol - scalar: singular value tolerance
+- A - matrix: input matrix
+- tol - scalar: singular value tolerance
 
 ## Output argument
 
- - y - Moore-Penrose Pseudoinverse of matrix A.
+- y - Moore-Penrose Pseudoinverse of matrix A.
 
 ## Description
 
-
   <p><b>pinv</b> returns Moore-Penrose Pseudoinverse of matrix A.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ R = pinv(A, 2)
 ## See also
 
 [inv](../linear_algebra/inv.md), [svd](../linear_algebra/svd.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

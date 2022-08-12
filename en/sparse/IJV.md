@@ -1,5 +1,3 @@
-
-
 # IJV
 
 Returns I,J,V triplets from a sparse matrix.
@@ -10,22 +8,20 @@ Returns I,J,V triplets from a sparse matrix.
 
 ## Input argument
 
- - sp - a sparse matrix.
+- sp - a sparse matrix.
 
 ## Output argument
 
- - iv - a vector: row indices of the nonzero elements.
- - jv - a vector: column indices of the nonzero elements.
- - vv - a vector: values of the nonzero elements.
- - m - an integer value: number of rows in the matrix.
- - n - an integer value: number of columns in the matrix.
- - nzmax - an integer value: reserved size for nonzero elements..
+- iv - a vector: row indices of the nonzero elements.
+- jv - a vector: column indices of the nonzero elements.
+- vv - a vector: values of the nonzero elements.
+- m - an integer value: number of rows in the matrix.
+- n - an integer value: number of columns in the matrix.
+- nzmax - an integer value: reserved size for nonzero elements..
 
 ## Description
 
-
   <p><b>IJV</b> converts a sparse matrix into its COO format.</p>
-
 
 ## Example
 
@@ -37,16 +33,13 @@ sp = sparse(eye(3,3))
 ## See also
 
 [sparse](sparse.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

@@ -1,5 +1,3 @@
-
-
 # MPI_Allreduce
 
 Combines values from all processes and distributes the result back to all processes.
@@ -10,28 +8,28 @@ Combines values from all processes and distributes the result back to all proces
 
 ## Input argument
 
- - Value - value to send: numeric or logical array (sparse not supported).
- - Operation - a string: MPI_SUM, MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND, MPI_LOR, MPI_BAND, MPI_BOR, MPI_LXOR or MPI_BXOR
- - Comm - a MPI_Comm object.
+- Value - value to send: numeric or logical array (sparse not supported).
+- Operation - a string: MPI_SUM, MPI_MAX, MPI_MIN, MPI_SUM, MPI_PROD, MPI_LAND, MPI_LOR, MPI_BAND, MPI_BOR, MPI_LXOR or MPI_BXOR
+- Comm - a MPI_Comm object.
 
 ## Output argument
 
- - r - received value
+- r - received value
 
 ## Description
-
 
   <p>Combines values from all processes and distributes the result back to all processes.</p>
   <p>Nelson does not check to ensure that the reduction operation are all the same size across the various processes in the group.</p>
   <p>Please be sure that each process passes the same sized array to the MPI_Allreduce operation.</p>
 
-
 ## See also
 
 [MPI_Reduce](MPI_Reduce.md).
+
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.m'], 4)
+
 ```matlab
 if ~MPI_Initialized()
   MPI_Init();
@@ -53,14 +51,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

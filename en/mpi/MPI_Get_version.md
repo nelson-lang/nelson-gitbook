@@ -1,5 +1,3 @@
-
-
 # MPI_Get_version
 
 Return the version number of MPI.
@@ -10,18 +8,17 @@ Return the version number of MPI.
 
 ## Output argument
 
- - major - an integer value.
- - minor - an integer value.
+- major - an integer value.
+- minor - an integer value.
 
 ## Description
 
-
   <p>Return the version number of MPI.</p>
-
 
 ## See also
 
 [MPI_Init](MPI_Init.md), [MPI_Finalize](MPI_Finalize.md).
+
 ## Example
 
 ```matlab
@@ -36,14 +33,10 @@ end
 
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

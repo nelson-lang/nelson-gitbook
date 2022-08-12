@@ -1,5 +1,3 @@
-
-
 # ispc
 
 Checks if version is for Windows platform.
@@ -10,13 +8,11 @@ Checks if version is for Windows platform.
 
 ## Output argument
 
- - s - a logical: true if it is a Windows platform.
+- s - a logical: true if it is a Windows platform.
 
 ## Description
 
-
   <p><b>ispc</b> checks if it is a Windows platform.</p>
-
 
 ## Example
 
@@ -31,16 +27,13 @@ end
 ## See also
 
 [isunix](isunix.md), [ismac](ismac.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

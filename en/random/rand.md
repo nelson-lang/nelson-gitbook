@@ -1,5 +1,3 @@
-
-
 # rand
 
 Random Number.
@@ -15,22 +13,20 @@ Random Number.
 
 ## Input argument
 
- - n - a variable: n-by-n matrix will be generated.
- - x1, x2, ... , xN - x1-by-...-by-xN values
- - classname - a string: 'single' or 'double'
- - var - a variable: single or double
+- n - a variable: n-by-n matrix will be generated.
+- x1, x2, ... , xN - x1-by-...-by-xN values
+- classname - a string: 'single' or 'double'
+- var - a variable: single or double
 
 ## Output argument
 
- - M - a matrix of random numbers.
+- M - a matrix of random numbers.
 
 ## Description
-
 
   <p><b>rand</b> returns a matrix with random elements uniformly distributed on the interval [0, 1].</p>
   <p>seed can be modified using <b>rng</b>.</p>
   <p>The Mersenne Twister designers consider 5489 as default seed. Nelson uses it as default seed (0).</p>
-
 
 Bibliography
 
@@ -44,18 +40,22 @@ rand
 rng('default');
 rand
 ```
+
 ```matlab
 rng('default');
 rand(6)
 ```
+
 ```matlab
 rng('default');
 rand(3, 2, 3)
 ```
+
 ```matlab
 rng('default');
 rand(3, 2, 'single')
 ```
+
 ```matlab
 rng('default');
 v = single([3, 3]);
@@ -65,16 +65,13 @@ rand(3, 2, 'like', v)
 ## See also
 
 [rng](rng.md), [randn](randn.md), [eye](../constructors_functions/eye.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

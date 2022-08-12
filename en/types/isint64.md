@@ -1,5 +1,3 @@
-
-
 # isint64
 
 Return true if variable var is a signed 64-bit integer type array.
@@ -10,11 +8,11 @@ Return true if variable var is a signed 64-bit integer type array.
 
 ## Input argument
 
- - var - a variable
+- var - a variable
 
 ## Output argument
 
- - res - a logical: true or false
+- res - a logical: true or false
 
 ## Description
 
@@ -26,6 +24,7 @@ Return true if variable var is a signed 64-bit integer type array.
 A = 3;
 res = isint64(A)
 ```
+
 ```matlab
 B = int64(3);
 res = isint64(B)
@@ -34,16 +33,13 @@ res = isint64(B)
 ## See also
 
 [isa](isa.md), [int64](../integer/int64.md), [isinteger](isinteger.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

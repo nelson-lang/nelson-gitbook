@@ -1,5 +1,3 @@
-
-
 # isnh5file
 
 Checks if filename a valid .nh5 file
@@ -11,19 +9,17 @@ Checks if filename a valid .nh5 file
 
 ## Input argument
 
- - filename - a string: .nh5 filename.
+- filename - a string: .nh5 filename.
 
 ## Output argument
 
- - tf - a logical: true if it is a valid .nh5 file.
- - version - a string array: "-v1" or "" if it is undefined.
- - header - a string array: header of nh5 file (date created).
+- tf - a logical: true if it is a valid .nh5 file.
+- version - a string array: "-v1" or "" if it is undefined.
+- header - a string array: header of nh5 file (date created).
 
 ## Description
 
-
   <p><b>isnh5file</b> checks if filename a valid .nh5 file.</p>
-
 
 ## Example
 
@@ -38,16 +34,13 @@ h5save([tempdir(), 'example_isnh5.nh5'], 'A')
 ## See also
 
 [ismatfile](../matio/ismatfile.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

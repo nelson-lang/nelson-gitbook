@@ -1,5 +1,3 @@
-
-
 # toc
 
 Read the stopwatch timer.
@@ -13,19 +11,17 @@ Read the stopwatch timer.
 
 ## Input argument
 
- - timer_value - a unsigned integer 64 bit: value of internal timer of the tic function.
+- timer_value - a unsigned integer 64 bit: value of internal timer of the tic function.
 
 ## Output argument
 
- - t - a double: number of seconds since last call to tic function (Precision in order of millisecond).
+- t - a double: number of seconds since last call to tic function (Precision in order of millisecond).
 
 ## Description
-
 
   <p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
   <p>Consecutive calls to the toc function with no input return the elapsed since the most recent tic.</p>
   <p>Consecutive calls to the toc function with the same timerVal input return the elapsed time since the tic function call that corresponds to that input.</p>
-
 
 ## Example
 
@@ -40,16 +36,13 @@ toc()
 ## See also
 
 [tic](datenum.md), [clock](datevec.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

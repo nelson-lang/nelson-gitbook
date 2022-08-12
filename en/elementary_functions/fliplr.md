@@ -1,5 +1,3 @@
-
-
 # fliplr
 
 Flip order of elements left to right
@@ -10,17 +8,15 @@ Flip order of elements left to right
 
 ## Input argument
 
- - A - an array
+- A - an array
 
 ## Output argument
 
- - B - flipped array.
+- B - flipped array.
 
 ## Description
 
-
   <p><b>fliplr</b> return an new array of <b>A</b> flipped left to right.</p>
-
 
 ## Example
 
@@ -32,16 +28,13 @@ y = fliplr(x)
 ## See also
 
 [flipud](flipud.md), [flip](flip.md), [flipdim](flipdim.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

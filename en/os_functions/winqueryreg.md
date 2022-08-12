@@ -1,5 +1,3 @@
-
-
 # winqueryreg
 
 Read the Windows registry (Windows only).
@@ -12,17 +10,16 @@ Read the Windows registry (Windows only).
 
 ## Input argument
 
- - rootkey - a string: root key.
- - subkey - a string: subkey path.
- - value_name - a string: name of value.
+- rootkey - a string: root key.
+- subkey - a string: subkey path.
+- value_name - a string: name of value.
 
 ## Output argument
 
- - c - a cell of strings.
- - v - a string or int32.
+- c - a cell of strings.
+- v - a string or int32.
 
 ## Description
-
 
   <p><b>c = winqueryreg ('name', rootkey, subkey)</b> returns a cell of strings with key names in rootkey\subkey.</p>
   <p><b>v = winqueryreg (rootkey, subkey, value_name)</b> returns the value associated to value_name in rootkey\subkey.</p>
@@ -35,7 +32,6 @@ Read the Windows registry (Windows only).
   <p>'HKEY_USERS', 'HKU',</p>
   <p>'HKEY_CURRENT_CONFIG', 'HKCC'</p>
 
-
 ## Example
 
 ```matlab
@@ -46,16 +42,13 @@ winqueryreg('HKLM', 'HARDWARE\DESCRIPTION\System\CentralProcessor\1\', 'Processo
 ## See also
 
 [winopen](winopen.md), [searchenv](searchenv.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

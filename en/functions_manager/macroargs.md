@@ -1,5 +1,3 @@
-
-
 # macroargs
 
 Returns variables names of a function.
@@ -10,18 +8,16 @@ Returns variables names of a function.
 
 ## Input argument
 
- - function_name - a string: function name.
+- function_name - a string: function name.
 
 ## Output argument
 
- - argOut - a cell with output arguments.
- - argIn - a cell with input arguments.
+- argOut - a cell with output arguments.
+- argIn - a cell with input arguments.
 
 ## Description
 
-
   <p><b>macroargs</b> returns input and output variables used by the function.</p>
-
 
 ## Example
 
@@ -33,16 +29,13 @@ Returns variables names of a function.
 ## See also
 
 [which](which.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-

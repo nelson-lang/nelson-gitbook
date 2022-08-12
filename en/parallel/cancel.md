@@ -1,5 +1,3 @@
-
-
 # cancel
 
 Stop function running in the background.
@@ -10,15 +8,13 @@ Stop function running in the background.
 
 ## Input argument
 
- - f - FevalFuture object: scalar or array.
+- f - FevalFuture object: scalar or array.
 
 ## Description
-
 
   <p><b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
   <p>Future cancelled Findicates an error as property.</p>
   <p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
-
 
 ## Example
 
@@ -35,16 +31,13 @@ f(70)
 ## See also
 
 [pause](../core/pause.md), [parfeval](parfeval.md), [wait](wait.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-
