@@ -1,6 +1,6 @@
-# graphics functions
+# Graphics functions
 
-graphics functions
+Graphics functions
 
 ## Description
 

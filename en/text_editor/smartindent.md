@@ -20,7 +20,7 @@ Smart indent a nelson file
 
 ## See also
 
-[edit](edit.html).
+[edit](edit.md).
 
 ## History
 

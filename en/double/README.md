@@ -1,6 +1,6 @@
-# double
+# Double
 
-double
+Double
 
 ## Description
 

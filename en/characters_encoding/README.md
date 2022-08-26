@@ -1,6 +1,6 @@
-# characters encoding
+# Characters encoding
 
-characters encoding
+Characters encoding
 
 ## Description
 

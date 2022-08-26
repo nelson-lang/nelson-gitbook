@@ -22,7 +22,7 @@ Set a property value of an handle object.
 
 ## See also
 
-[QObject_set (set)](QObject_set.html), [get](get.md), [invoke](invoke.md).
+[QObject_set (set)](../qml_engine/QObject_set.md), [get](get.md), [invoke](invoke.md).
 
 ## History
 

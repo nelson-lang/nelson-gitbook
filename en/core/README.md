@@ -1,6 +1,6 @@
-# core
+# Core
 
-core
+Core
 
 ## Description
 

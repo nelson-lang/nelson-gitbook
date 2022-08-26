@@ -1,6 +1,6 @@
-# history manager
+# History manager
 
-history manager
+History manager
 
 ## Description
 

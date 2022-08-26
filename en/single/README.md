@@ -1,6 +1,6 @@
-# single type
+# Single type
 
-single type
+Single type
 
 ## Description
 

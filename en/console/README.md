@@ -1,6 +1,6 @@
-# console
+# Console
 
-console
+Console
 
 ## Description
 

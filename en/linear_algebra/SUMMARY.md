@@ -2,6 +2,7 @@
   - [chol](chol.md)
   - [cond](cond.md)
   - [det](det.md)
+  - [diff](diff.md)
   - [eig](eig.md)
   - [expm](expm.md)
   - [inv](inv.md)

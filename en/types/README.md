@@ -1,6 +1,6 @@
-# types module
+# Types module
 
-types module
+Types module
 
 ## Description
 

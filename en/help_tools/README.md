@@ -1,6 +1,6 @@
-# help tools functions
+# Help tools functions
 
-help tools functions
+Help tools functions
 
 ## Description
 

@@ -18,7 +18,7 @@ call the embedded text editor.
 
 ## See also
 
-[edit](edit.html).
+[edit](edit.md).
 
 ## History
 

@@ -1,6 +1,6 @@
-# localization functions
+# Localization functions
 
-localization functions
+Localization functions
 
 ## Description
 

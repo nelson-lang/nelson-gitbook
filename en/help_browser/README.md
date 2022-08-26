@@ -1,6 +1,6 @@
-# help browser functions
+# Help browser functions
 
-help browser functions
+Help browser functions
 
 ## Description
 

@@ -1,6 +1,6 @@
-# files and folders functions
+# Files and folders functions
 
-files and folders functions
+Files and folders functions
 
 ## Description
 

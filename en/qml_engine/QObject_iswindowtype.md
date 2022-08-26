@@ -20,7 +20,7 @@ Returns true if the QObject is a window.
 
 ## See also
 
-[QObject_set (set)](QObject_set.html).
+[QObject_set (set)](QObject_set.md).
 
 ## Example
 

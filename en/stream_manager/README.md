@@ -1,6 +1,6 @@
-# stream manager
+# Stream manager
 
-stream manager
+Stream manager
 
 ## Description
 

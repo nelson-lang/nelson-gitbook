@@ -21,7 +21,7 @@ Retrieve a property value from an handle object.
 
 ## See also
 
-[QObject_get (get)](QObject_get.html).
+[QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## History
 

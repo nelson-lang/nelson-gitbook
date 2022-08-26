@@ -1,6 +1,6 @@
-# functions manager
+# Functions manager
 
-functions manager
+Functions manager
 
 ## Description
 

@@ -21,7 +21,7 @@ Load a QML file and creates a window.
 
 ## See also
 
-[qml_loadstring](qml_loadstring.html), [qml_loadfile](qml_loadfile.html).
+[qml_loadstring](qml_loadstring.md), [qml_loadfile](qml_loadfile.md).
 
 ## Example
 

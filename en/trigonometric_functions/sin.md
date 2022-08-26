@@ -16,7 +16,7 @@ Computes the sine in radians for each element of x.
 
 ## Description
 
-<b>sin</b> computes the sine in radians for each element of x.
+<b>sin</b> computes the sine in radians for each element of <b>x</b>.
 
 ## Example
 

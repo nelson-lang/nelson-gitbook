@@ -1,6 +1,6 @@
-# string type
+# String type
 
-string type
+String type
 
 ## Description
 

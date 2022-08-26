@@ -1,6 +1,6 @@
-# integers type
+# Integers type
 
-integers type
+Integers type
 
 ## Description
 

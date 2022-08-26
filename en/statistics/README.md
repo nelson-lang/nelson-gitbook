@@ -1,6 +1,6 @@
-# statistics
+# Statistics
 
-statistics
+Statistics
 
 ## Description
 

@@ -20,7 +20,7 @@ Returns class name of an QObject handle.
 
 ## See also
 
-[QObject_set (set)](QObject_set.html), [QObject_get (get)](QObject_get.html).
+[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
 
 ## Example
 

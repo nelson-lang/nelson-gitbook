@@ -20,7 +20,7 @@ Get the Property contains the directory to store offline user data.
 
 ## See also
 
-[qml_setofflinestoragepath](qml_setofflinestoragepath.html).
+[qml_setofflinestoragepath](qml_setofflinestoragepath.md).
 
 ## Example
 

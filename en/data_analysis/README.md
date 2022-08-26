@@ -1,6 +1,6 @@
-# data analysis
+# Data analysis
 
-data analysis
+Data analysis
 
 ## Description
 

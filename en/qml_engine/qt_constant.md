@@ -30,7 +30,7 @@ c = qt_constant()
 
 ## See also
 
-[qt_version](qt_version.html).
+[qt_version](qt_version.md).
 
 ## History
 

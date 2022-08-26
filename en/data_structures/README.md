@@ -1,6 +1,6 @@
-# data structures
+# Data structures
 
-data structures
+Data structures
 
 ## Description
 

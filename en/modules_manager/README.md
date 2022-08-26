@@ -1,6 +1,6 @@
-# modules manager
+# Modules manager
 
-modules manager
+Modules manager
 
 ## Description
 

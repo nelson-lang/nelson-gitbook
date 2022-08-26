@@ -1,6 +1,6 @@
-# os functions
+# OS functions
 
-os functions
+OS functions
 
 ## Description
 

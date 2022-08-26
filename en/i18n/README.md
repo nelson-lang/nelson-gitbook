@@ -1,6 +1,6 @@
-# i18n functions
+# I18n functions
 
-i18n functions
+I18n functions
 
 ## Description
 

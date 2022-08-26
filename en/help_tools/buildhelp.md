@@ -24,7 +24,7 @@ buildhelp('core');
 
 ## See also
 
-[doc](doc.html).
+[doc](../help_browser/doc.md).
 
 ## History
 

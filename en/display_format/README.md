@@ -1,6 +1,6 @@
-# display format
+# Display format
 
-display format
+Display format
 
 ## Description
 

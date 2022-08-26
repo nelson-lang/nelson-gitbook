@@ -1,6 +1,6 @@
-# interpreter functions
+# Interpreter functions
 
-interpreter functions
+Interpreter functions
 
 ## Description
 

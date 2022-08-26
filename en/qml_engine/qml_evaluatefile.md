@@ -21,7 +21,7 @@ Evaluates a js file.
 
 ## See also
 
-[qml_evaluatestring](qml_evaluatestring.html).
+[qml_evaluatestring](qml_evaluatestring.md).
 
 ## Example
 

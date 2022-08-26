@@ -44,7 +44,7 @@ gcf()
 
 ## See also
 
-[gcf](gcf.html).
+[gcf](gcf.md).
 
 ## History
 

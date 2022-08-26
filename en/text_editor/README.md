@@ -1,6 +1,6 @@
-# text editor
+# Text editor
 
-text editor
+Text editor
 
 ## Description
 

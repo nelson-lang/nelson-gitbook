@@ -8,7 +8,7 @@ internal function used by 'doc'.
 
 ## See also
 
-[doc](doc.html).
+[doc](doc.md).
 
 ## History
 

@@ -3,4 +3,5 @@
   - [factor](factor.md)
   - [gamma](gamma.md)
   - [gcd](gcd.md)
+  - [peaks](peaks.md)
   - [primes](primes.md)

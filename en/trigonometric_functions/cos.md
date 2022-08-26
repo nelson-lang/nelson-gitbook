@@ -16,7 +16,7 @@ Computes the cosine in radians for each element of x.
 
 ## Description
 
-<b>cos</b> computes the cosine in radians for each element of x.
+<b>cos</b> computes the cosine in radians for each element of <b>x</b>.
 
 ## Example
 

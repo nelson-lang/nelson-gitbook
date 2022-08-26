@@ -1,6 +1,6 @@
-# memory manager functions
+# Memory manager functions
 
-memory manager functions
+Memory manager functions
 
 ## Description
 

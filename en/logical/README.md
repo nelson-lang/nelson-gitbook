@@ -1,6 +1,6 @@
-# logical type functions
+# Logical type functions
 
-logical type functions
+Logical type functions
 
 ## Description
 

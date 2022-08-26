@@ -1,6 +1,6 @@
-# tests manager
+# Tests manager
 
-tests manager
+Tests manager
 
 ## Description
 

@@ -1,6 +1,6 @@
-# sparse type
+# Sparse type
 
-sparse type
+Sparse type
 
 ## Description
 

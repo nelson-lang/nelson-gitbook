@@ -1,6 +1,6 @@
-# linear algebra
+# Linear algebra
 
-linear algebra
+Linear algebra
 
 ## Description
 
@@ -9,6 +9,7 @@ linear algebra functions
 - [chol](chol.md) - Cholesky factorization.
 - [cond](cond.md) - Condition number for inversion.
 - [det](det.md) - Matrix determinant.
+- [diff](diff.md) - Differences and approximate derivatives.
 - [eig](eig.md) - Eigenvalues and eigenvectors.
 - [expm](expm.md) - Computes the matrix exponential of a square matrix.
 - [inv](inv.md) - Matrix inverse.

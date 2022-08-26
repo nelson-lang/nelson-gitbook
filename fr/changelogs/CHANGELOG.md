@@ -4,6 +4,103 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.8 (2022-08-27)
+
+### Added
+
+- [#573](http://github.com/Nelson-numerical-software/nelson/issues/574): `diff` differences and discret derivatives.
+
+- `peaks`: peaks function.
+
+- parallel module:
+
+  - `fetchNext`: Retrieve next unread outputs from FevalFuture array.
+  - `afterAll`: Run function after all functions finish running in the background.
+  - `afterEach`: Run function after each functions finish running in the background.
+
+- signal processing module:
+
+  - `hann`: Hann window.
+  - `hamming`: Hamming window.
+  - `bartlett`: Bartlett window.
+  - `blackman`: Blackman window.
+  - `sinc`: sinc function.
+  - `filter2`: 2-D digital filter.
+  - `fft2`: Two-dimensional discrete Fourier Transform.
+
+- time functions:
+
+  - `weekday`: Day of week.
+  - `eomday`: Last day of month.
+  - `etime`: Time elapsed between date vectors.
+  - `date`: Current date as character vector.
+  - `timeit`: Measure time required to run function.
+  - `addtodate`: Modify date number by field.
+
+- trigonometric functions:
+
+  - `rad2deg`: Convert angle from radians to degrees.
+  - `deg2rad`: Convert angle from degrees to radians.
+  - `cart2pol`: Transforms Cartesian coordinates to polar or cylindrical.
+  - `pol2cart`: Transforms polar or cylindrical coordinates to Cartesian.
+  - `cart2sph`: Transforms Cartesian to spherical coordinates.
+  - `sph2cart`: Transform spherical coordinates to Cartesian.
+  - `sech`: Hyperbolic secant.
+  - `secd`: Secant of argument in degrees.
+  - `sec`: Secant of angle in radians.
+  - `csch`: Hyperbolic cosecant.
+  - `cscd`: Cosecant of argument in degrees.
+  - `csc`: Cosecant of argument in radians.
+  - `coth`: Hyperbolic cotangent.
+  - `cot`: Cotangent of argument in radians.
+  - `cotd`: Cotangent of argument in degrees.
+  - `atand`: Inverse tangent in degrees.
+  - `atan2d`: Four-quadrant inverse tangent in degrees.
+  - `sinpi`: Computes sin(X \* pi) accurately.
+  - `cospi`: Computes cos(X \* pi) accurately.
+  - `asind`: Inverse sine in degrees.
+  - `asinh`: Inverse hyperbolic sine.
+  - `acosh`: Inverse hyperbolic cosine.
+  - `acosd`: Inverse cosine in degrees.
+  - `acoth`: Inverse hyperbolic cotangent.
+  - `acsc`: Inverse cosecant in radians.
+  - `acscd`: Inverse cosecant in degrees.
+  - `acsch`: Inverse hyperbolic cosecant.
+  - `asec`: Inverse secant in radians.
+  - `asecd`: Inverse secant in degrees.
+  - `asech`: Inverse hyperbolic secant.
+  - `acot`: Inverse cotangent in radians.
+  - `acotd`: Inverse cotangent in degrees.
+
+- prettier is used to format .xml, .md files.
+
+- Code format (.xml, .md, c++) checker added to Github CI.
+
+### Changed
+
+- `system` builtin:
+
+  - returns time execution
+  - timeout input argument can be set to kill process after n seconds.
+
+- [#687](http://github.com/Nelson-numerical-software/nelson/issues/687): Uses BS thread pool 3.3.0.
+
+- Windows 32 bits threads support: due to threading limitations with MKL, openMP and others threads
+  computation threads are limited to 4 threads on Windows 32 bits.
+
+- [#683](http://github.com/Nelson-numerical-software/nelson/issues/683): MacOS Catalina removed on Github CI (no more officially supported).
+
+- Help chapter titles all start with a capital letter.
+
+- [#771](http://github.com/Nelson-numerical-software/nelson/issues/771): Fedora 36 Github CI replaces Fedora 35 Github CI.
+
+### Fixed
+
+- [#689](http://github.com/Nelson-numerical-software/nelson/issues/689): `c = computer` returns an error.
+- [#691](http://github.com/Nelson-numerical-software/nelson/issues/691): help generation crashs if copyright tag is empty.
+- [#35](http://github.com/Nelson-numerical-software/nelson/issues/35): datenum does not support vectorization.
+- `or`, `and` do not manage matrix operator scalar case.
+
 ## 0.6.7 (2022-07-27)
 
 ### Added

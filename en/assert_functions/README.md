@@ -1,6 +1,6 @@
-# assertion functions
+# Assertion functions
 
-assertion functions
+Assertion functions
 
 ## Description
 

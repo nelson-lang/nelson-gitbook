@@ -1,6 +1,6 @@
-# sio client
+# SIO client
 
-sio client
+SIO client
 
 ## Description
 

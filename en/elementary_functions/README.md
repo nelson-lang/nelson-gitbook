@@ -1,6 +1,6 @@
-# elementary functions
+# Elementary functions
 
-elementary functions
+Elementary functions
 
 ## Description
 

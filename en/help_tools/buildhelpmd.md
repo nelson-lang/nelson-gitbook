@@ -25,7 +25,7 @@ buildhelpmd(tempdir(), 'core');
 
 ## See also
 
-[buildhelp](buildhelp.md), [doc](doc.html).
+[buildhelp](buildhelp.md), [doc](../help_browser/doc.md).
 
 ## History
 

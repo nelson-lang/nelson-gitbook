@@ -26,7 +26,7 @@ edit('edit')
 
 ## See also
 
-[smartindent](smartindent.html).
+[smartindent](smartindent.md).
 
 ## History
 

@@ -1,6 +1,6 @@
-# debugger functions
+# Debugger functions
 
-debugger functions
+Debugger functions
 
 ## Description
 

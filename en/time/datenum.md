@@ -12,10 +12,10 @@ Return the date/time input as a serial day number.
 
 ## Input argument
 
-- datevec - a vector: [Y, M, D, H, MN, S].
+- datevec - a vector: [Y, M, D, H, MN, S] or matrix N x 6.
 - format - a string: date format.
-- datestr - a string: text representing a date.
-- Y, M, D, H, MN, S - double: Year, Month, Day, Hours, Minutes, Secondes.
+- datestr - a string, cell of string or string array: text representing a date.
+- Y, M, D, H, MN, S - double: Year, Month, Day, Hours, Minutes, Secondes (scalar or vector).
 
 ## Output argument
 
@@ -48,6 +48,7 @@ Return the date/time input as a serial day number.
 d = datenum([1973,8,4,12,1,18])
 datevec(d)
 d = datenum('04–Aug-1973 12:01:18')
+d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 ```
 
 ## See also

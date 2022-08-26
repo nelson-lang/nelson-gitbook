@@ -16,7 +16,7 @@ Computes the matrix cosine of a square matrix.
 
 ## Description
 
-<b>cosm(x)</b> computes the matrix cosine of x.
+<b>cosm(x)</b> computes the matrix cosine of <b>x</b>.
 
 ## Example
 

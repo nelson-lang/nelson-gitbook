@@ -1,6 +1,6 @@
-# dynamic link
+# Dynamic link
 
-dynamic link
+Dynamic link
 
 ## Description
 

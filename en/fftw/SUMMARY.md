@@ -1,6 +1,7 @@
 - [fftw](README.md)
   - [FFTW License](About_FFTW_license.md)
   - [fft](fft.md)
+  - [fft2](fft2.md)
   - [fftn](fftn.md)
   - [fftshift](fftshift.md)
   - [fftw](fftw.md)

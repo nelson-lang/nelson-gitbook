@@ -1,6 +1,6 @@
-# error manager
+# Error manager
 
-error manager
+Error manager
 
 ## Description
 

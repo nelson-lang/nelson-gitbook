@@ -1,6 +1,6 @@
-# gui module
+# Gui module
 
-gui module
+Gui module
 
 ## Description
 

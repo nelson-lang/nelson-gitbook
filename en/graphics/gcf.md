@@ -26,7 +26,7 @@ gcf()
 
 ## See also
 
-[figure](figure.html).
+[figure](figure.md).
 
 ## History
 
