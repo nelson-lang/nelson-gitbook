@@ -28,7 +28,7 @@ calendar
 
 ## See also
 
-[addgateway](addgateway.md), [gatewayinfo](gatewayinfo.md).
+[addgateway](addgateway.html), [gatewayinfo](gatewayinfo.html).
 
 ## History
 

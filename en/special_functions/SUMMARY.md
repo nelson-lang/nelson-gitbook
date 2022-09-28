@@ -1,5 +1,7 @@
 - [special_functions](README.md)
   - [betainc](betainc.md)
+  - [cross](cross.md)
+  - [dot](dot.md)
   - [factor](factor.md)
   - [gamma](gamma.md)
   - [gcd](gcd.md)

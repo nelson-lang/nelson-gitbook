@@ -6,7 +6,6 @@ Dynamic link
 
 By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.
 
-- [addgateway](addgateway.md) - Adds dynamically builtin at runtime.
 - [cmake](cmake.md) - call CMake tool
 - [configuremingw](configuremingw.md) - Configure Nelson to use MinGW as default C compiler
 - [configuremsvc](configuremsvc.md) - Configure Nelson to use visual studio as default compiler
@@ -27,7 +26,6 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [dlsym_delete](dlsym_delete.md) - Removes dlsym object.
 - [dlsym_used](dlsym_used.md) - Returns list of current used dlsym handle.
 - [findcmake](findcmake.md) - find CMake path.
-- [gatewayinfo](gatewayinfo.md) - Returns information about an gateway.
 - [getdynlibext](getdynlibext.md) - Returns the extension of dynamic libraries.
 - [havecompiler](havecompiler.md) - Detect if a C/C++ compiler is configured.
 - [libpointer](libpointer.md) - Creates an C pointer object usuable in Nelson.
@@ -39,6 +37,5 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [libpointer_used](libpointer_used.md) - Returns list of current used libpointer handle.
 - [loadcompilerconf](loadcompiler.md) - load compiler configuration.
 - [removecompilerconf](removecompilerconf.md) - Remove used compiler configuration (on Windows).
-- [removegateway](removegateway.md) - Removes dynamically builtin at runtime.
   supported_compilers.md Supported C/C++ compilers
 - [vswhere](vswhere.md) - Locate Visual Studio 2017, 2019 and newer installations

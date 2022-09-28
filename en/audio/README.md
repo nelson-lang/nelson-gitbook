@@ -22,7 +22,11 @@ Audio playback functions.
 - [audiowrite](audiowrite.md) - Writes an audio file.
 - [beep](beep.md) - Produces a beep sound.
 - [isplaying](isplaying.md) - get info about audio playback is in progress.
+- [lin2mu](lin2mu.md) - Convert audio data from linear singal to mu-law.
+- [mu2lin](mu2lin.md) - Convert audio data from mu-law to linear signal.
 - [play](play.md) - Plays an audioplayer object.
 - [playblocking](playblocking.md) - Plays an audioplayer object with blocking.
 - [resume](resume.md) - Resumes an audioplayer object.
+- [sound](sound.md) - Convert matrix of signal data to sound and play it.
+- [soundsc](soundsc.md) - Scale data and play as sound.
 - [stop](stop.md) - Stops an audioplayer object.

@@ -1,4 +1,4 @@
-# mustBeNonnegative
+# mustBeNegative
 
 Checks that value is negative or raise an error.
 

@@ -22,7 +22,7 @@ getdynlibext()
 
 ## See also
 
-[addgateway](addgateway.md).
+[addgateway](addgateway.html).
 
 ## History
 

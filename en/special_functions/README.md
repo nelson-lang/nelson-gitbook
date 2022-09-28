@@ -7,6 +7,8 @@ Special functions
 special functions
 
 - [betainc](betainc.md) - Incomplete beta function
+- [cross](cross.md) - Cross product.
+- [dot](dot.md) - Dot product.
 - [factor](factor.md) - Prime factors
 - [gamma](gamma.md) - Gamma special function
 - [gcd](gcd.md) - Greatest common divisor

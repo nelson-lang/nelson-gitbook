@@ -29,7 +29,7 @@ Returns information about an gateway.
 
 ## See also
 
-[addgateway](addgateway.md), [removegateway](removegateway.md).
+[addgateway](addgateway.html), [removegateway](removegateway.html).
 
 ## History
 

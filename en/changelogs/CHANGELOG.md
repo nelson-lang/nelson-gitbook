@@ -4,6 +4,83 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.9 (2022-09-28)
+
+### Added
+
+- linear algebra module:
+
+  - `rref`: Gauss-Jordan elimination.
+  - `orth`: Range space of a matrix.
+  - `subspace`: Angle between two subspaces.
+  - `planerot`: Givens plane rotation.
+  - `condeig`: Condition number with respect to eigenvalues.
+  - `bandwidth`: Lower and upper matrix bandwidth.
+  - `isbanded`: Determine if matrix is within specific bandwidth.
+
+- audio module:
+
+  - `sound`: Convert matrix of signal data to sound and play it.
+  - `soundsc`: Scale data and play as sound.
+  - `mu2lin`: Convert audio data from mu-law to linear signal.
+  - `lin2mu`: Convert audio data from linear singal to mu-law.
+
+- elementary functions module:
+
+  - `toeplitz`: Toeplitz matrix.
+  - `hadamard`: Hadamard matrix.
+  - `wilkinson`: Wilkinson's eigenvalue test matrix.
+  - `vander`: Vandermonde matrix.
+  - `rosser`: Classic symmetric eigenvalue test problem.
+  - `nextpow2`: Next higher power of 2.
+  - `permute`: Permute array dimensions.
+  - `ipermute`: Inverse permute array dimensions.
+  - `rot90`: Rotate array 90 degrees.
+
+- special functions module:
+
+  - `dot`: Dot product.
+  - `cross`: Cross product.
+
+- string module:
+
+  - `isletter`: Determine which characters are letters.
+
+- data analysis module:
+
+  - `cumsum`: Cumulative sum.
+  - `cumprod`: Cumulative product.
+
+### Changed
+
+- [#715](http://github.com/Nelson-numerical-software/nelson/issues/715): update `{fmt}` to 9.1.0.
+
+- Nelson uses [`simdutf`](https://github.com/simdutf/simdutf) library to convert characters encoding faster.
+
+- shorcuts `&&` and `||` reworked.
+
+- assign behavior with empty matrix.
+
+- [#702](http://github.com/Nelson-numerical-software/nelson/issues/702): Ubuntu 18.04 CI removed on Github.
+
+- Remove definitively Appveyor CI.
+
+- C++ API: `getContentAsDoubleScalar`, `getContentAsSingleScalar`, `getContentAsInteger8Scalar`, ... , `getContentAsInteger64Scalar` can check if it is an integer value.
+
+- `addgateway`, `removegateway`, `gatewayinfo` builtin moved in `modules_manager` module (reduces dependency)
+
+### Fixed
+
+- [#722](http://github.com/Nelson-numerical-software/nelson/issues/722): MS MPI runtime v10.1.2.
+
+- [#723](http://github.com/Nelson-numerical-software/nelson/issues/723): MacOS CI was broken.
+
+- [#737](http://github.com/Nelson-numerical-software/nelson/issues/737): profiler failed with `sind` example.
+
+- [#739](http://github.com/Nelson-numerical-software/nelson/issues/739): special case with empty cell.
+
+- [#741](http://github.com/Nelson-numerical-software/nelson/issues/741): `ones` and `zeros` do not manager logical as typename.
+
 ## 0.6.8 (2022-08-27)
 
 ### Added

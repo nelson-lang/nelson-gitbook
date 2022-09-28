@@ -26,7 +26,7 @@ addgateway(modulepath(nelsonroot(), 'time', 'builtin'))
 
 ## See also
 
-[removegateway](removegateway.md), [gatewayinfo](gatewayinfo.md).
+[removegateway](removegateway.html), [gatewayinfo](gatewayinfo.html).
 
 ## History
 

@@ -1,6 +1,8 @@
 - [data_analysis](README.md)
   - [conv](conv.md)
   - [conv2](conv2.md)
+  - [cumprod](cumprod.md)
+  - [cumsum](cumsum.md)
   - [ismissing](ismissing.md)
   - [max](max.md)
   - [min](min.md)

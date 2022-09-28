@@ -20,7 +20,7 @@ validators functions
 - [mustBeLogical](mustBeLogical.md) - Checks that value is logical or raise an error.
 - [mustBeLogicalScalar](mustBeLogicalScalar.md) - Checks that value is logical scalar or raise an error.
 - [mustBeMember](mustBeMember.md) - Checks that value is member of specified array or issue error.
-- [mustBeNonnegative](mustBeNegative.md) - Checks that value is negative or raise an error.
+- [mustBeNegative](mustBeNegative.md) - Checks that value is negative or raise an error.
 - [mustBeNonempty](mustBeNonempty.md) - Checks that value is nonempty or raise an error.
 - [mustBeNonmissing](mustBeNonmissing.md) - Checks that value is not missing.
 - [mustBeNonNan](mustBeNonNan.md) - Checks that value is not NaN.

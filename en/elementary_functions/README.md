@@ -28,6 +28,7 @@ elementary functions
 - [fliplr](fliplr.md) - Flip order of elements left to right
 - [flipud](flipud.md) - Flip order of elements up to dow
 - [floor](floor.md) - Round down
+- [hadamard](hadamard.md) - Hadamard matrix
 - [hankel](hankel.md) - Hankel matrix
 - [hex2dec](hex2dec.md) - Convert number in base 16 to decimal.
 - [hilb](hilb.md) - Hilbert matrix
@@ -35,6 +36,7 @@ elementary functions
 - [imag](imag.md) - Imaginary part of an complex number.
 - [ind2sub](ind2sub.md) - Linear index to matrix subscript values
 - [invhilb](invhilb.md) - Inverse of Hilbert matrix
+- [ipermute](ipermute.md) - Inverse permute array dimensions.
 - [isapprox](isapprox.md) - Return true if arguments are approximately equal, within the precision.
 - [iscolumn](iscolumn.md) - Determine whether input is column vector.
 - [istriu](isdiag.md) - Checks if matrix is diagonal.
@@ -61,15 +63,19 @@ elementary functions
 - [minus](minus.md) - Subtraction, - operator
 - [mod](mod.md) - Modulus after division.
 - [ndims](ndims.md) - Number of dimensions of an array.
+- [nextpow2](nextpow2.md) - Exponent of next higher power of 2
 - [norm](norm.md) - Matrix and vector norms
 - [num2bin](num2bin.md) - Convert number to binary representation.
 - [numel](numel.md) - Number of elements.
+- [permute](permute.md) - Permute array dimensions.
 - [pinv](pinv.md) - Moore-Penrose pseudoinverse
 - [pow2](pow2.md) - Base 2 exponentiation and scaling of floating-point numbers.
 - [real](real.md) - Real part of an complex number.
 - [rem](rem.md) - Remainder after division.
 - [repmat](repmat.md) - Replicate and tile an array.
 - [reshape](reshape.md) - Reshapes a vector or a matrix to a different size matrix.
+- [rosser](rosser.md) - Classic symmetric eigenvalue test problem.
+- [rot90](rot90.md) - Rotate array 90 degrees.
 - [round](round.md) - Round to nearest integer
 - [sign](sign.md) - Find the sign function of a number.
 - [size](size.md) - Size of an object.
@@ -77,5 +83,8 @@ elementary functions
 - [squeeze](squeeze.md) - Remove dimensions of length 1.
 - [sub2ind](sub2ind.md) - Matrix subscript values to linear index
 - [swapbytes](swapbytes.md) - Swap byte ordering.
+- [toeplitz](toeplitz.md) - Toeplitz matrix
 - [tril](tril.md) - Lower triangular part of matrix
 - [triu](triu.md) - Upper triangular part of matrix
+- [vander](vander.md) - Vandermonde matrix
+- [wilkinson](wilkinson.md) - Wilkinson's eigenvalue test matrix

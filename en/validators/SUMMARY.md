@@ -13,7 +13,7 @@
   - [mustBeLogical](mustBeLogical.md)
   - [mustBeLogicalScalar](mustBeLogicalScalar.md)
   - [mustBeMember](mustBeMember.md)
-  - [mustBeNonnegative](mustBeNegative.md)
+  - [mustBeNegative](mustBeNegative.md)
   - [mustBeNonempty](mustBeNonempty.md)
   - [mustBeNonmissing](mustBeNonmissing.md)
   - [mustBeNonNan](mustBeNonNan.md)
