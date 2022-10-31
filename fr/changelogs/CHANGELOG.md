@@ -4,6 +4,38 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.10 (2022-10-31)
+
+### Added
+
+- [#750](http://github.com/Nelson-numerical-software/nelson/issues/750): Qt 6.4.0 support (win64 release embed Qt6.4.0).
+
+- [#733](http://github.com/Nelson-numerical-software/nelson/issues/733): minimal build and optional installation on MacOs, Linux and Windows.
+
+### Fixed
+
+- [#762](http://github.com/Nelson-numerical-software/nelson/issues/762): MacOs CI was broken (libomp no more detected).
+
+- [#776](http://github.com/Nelson-numerical-software/nelson/issues/776): CodeQL Analyze was broken.
+
+- [#739](http://github.com/Nelson-numerical-software/nelson/issues/739): special case with empty cell.
+
+- buildhelp did not return some errors.
+
+### Changed
+
+- [#755](http://github.com/Nelson-numerical-software/nelson/issues/755): Boost 1.80 support (default on Windows)
+
+- [#753](http://github.com/Nelson-numerical-software/nelson/issues/753): move from boost::filesystem to std::filesystem. (It should have no impact for users ...)
+
+- Path functions returns sensitive path on Windows. `cd ('c:/program files')` returns true path `C:/Program Files`.
+
+- fileparts builtin updated to be more compatible.
+
+- normalizePath internal function reworked.
+
+- internal files functions reworked and factorized.
+
 ## 0.6.9 (2022-09-28)
 
 ### Added
