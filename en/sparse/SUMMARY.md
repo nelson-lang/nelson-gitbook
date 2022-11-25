@@ -5,3 +5,4 @@
   - [nzmax](nzmax.md)
   - [sparse](sparse.md)
   - [speye](speye.md)
+  - [spones](spones.md)

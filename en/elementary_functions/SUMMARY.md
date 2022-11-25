@@ -58,6 +58,7 @@
   - [ndims](ndims.md)
   - [nextpow2](nextpow2.md)
   - [norm](norm.md)
+  - [normest](normest.md)
   - [num2bin](num2bin.md)
   - [numel](numel.md)
   - [permute](permute.md)

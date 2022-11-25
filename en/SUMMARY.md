@@ -206,6 +206,7 @@
   - [nzmax](./sparse/nzmax.md)
   - [sparse](./sparse/sparse.md)
   - [speye](./sparse/speye.md)
+  - [spones](./sparse/spones.md)
 
 - [string](./string/README.md)
 
@@ -391,6 +392,7 @@
   - [ndims](./elementary_functions/ndims.md)
   - [nextpow2](./elementary_functions/nextpow2.md)
   - [norm](./elementary_functions/norm.md)
+  - [normest](./elementary_functions/normest.md)
   - [num2bin](./elementary_functions/num2bin.md)
   - [numel](./elementary_functions/numel.md)
   - [permute](./elementary_functions/permute.md)
@@ -1003,6 +1005,12 @@
   - [webread](./webtools/webread.md)
   - [websave](./webtools/websave.md)
   - [webwrite](./webtools/webwrite.md)
+
+- [geometry](./geometry/README.md)
+
+  - [rotx](./geometry/rotx.md)
+  - [roty](./geometry/roty.md)
+  - [rotz](./geometry/rotz.md)
 
 - [com_engine](./com_engine/README.md)
   - [actxcontrollist](./com_engine/actxcontrollist.md)

@@ -65,6 +65,7 @@ elementary functions
 - [ndims](ndims.md) - Number of dimensions of an array.
 - [nextpow2](nextpow2.md) - Exponent of next higher power of 2
 - [norm](norm.md) - Matrix and vector norms
+- [normest](normest.md) - 2-norm estimate
 - [num2bin](num2bin.md) - Convert number to binary representation.
 - [numel](numel.md) - Number of elements.
 - [permute](permute.md) - Permute array dimensions.

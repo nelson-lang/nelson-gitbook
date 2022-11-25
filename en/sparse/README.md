@@ -12,3 +12,4 @@ sparse type functions
 - [nzmax](nzmax.md) - Reserved size for nonzero elements.
 - [sparse](sparse.md) - Sparse matrix definition.
 - [speye](speye.md) - Sparse identity matrix.
+- [spones](spones.md) - Replaces non zero sparse matrix elements with ones.
