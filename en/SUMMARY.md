@@ -776,9 +776,16 @@
 
 - [graphics](./graphics/README.md)
 
+  - [autumn](./graphics/autumn.md)
+  - [figure](./graphics/close.md)
+  - [colstyle](./graphics/colstyle.md)
+  - [copygraphics](./graphics/copygraphics.md)
   - [figure](./graphics/figure.md)
-  - [gcf](./graphics/gcf.md)
+  - [gray](./graphics/gray.md)
   - [groot](./graphics/groot.md)
+  - [isgraphics](./graphics/isgraphics.md)
+  - [isValidGraphicsProperty](./graphics/isValidGraphicsProperty.md)
+  - [saveas](./graphics/saveas.md)
 
 - [help_browser](./help_browser/README.md)
 

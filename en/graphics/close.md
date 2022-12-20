@@ -7,14 +7,11 @@ Creates an figure window.
 - f = figure()
 - f = figure(ID)
 - f = figure(H)
-- f = figure(propertyName, propertyValue)
 
 ## Input argument
 
 - ID - a scalar integer value: find or creates with ID.
 - H - a scalar graphics object on an existing figure.
-- propertyName - a scalar string or row vector character.
-- propertyValue - a value.
 
 ## Output argument
 
@@ -33,7 +30,7 @@ Creates an figure window.
   <p><b>Tag</b>: String identifier.</p>
   <p><b>Type</b>: Type 'figure'.</p>
   <p><b>UserData</b>: User data (any array type).</p>
-  <p><b>Visible</b>: visibility of the figure.</p>
+  <p><b>Visible</b>: </p>
 
 ## Example
 
@@ -43,12 +40,11 @@ g = figure(2)
 h = figure(3)
 figure(g)
 gcf()
-figure('Name', 'Hello')
 ```
 
 ## See also
 
-[gcf](gcf.html), [close](close.md).
+[gcf](gcf.html).
 
 ## History
 

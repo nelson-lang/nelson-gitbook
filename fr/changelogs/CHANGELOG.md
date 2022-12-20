@@ -4,6 +4,33 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.12 (UNRELEASED)
+
+### Added
+
+Graphics module:
+
+First big step to do plot 2D and 3D with Nelson. Some features are missing and will come in next releases. Current version is usable and show plots possibilities of Nelson.
+
+Do not hesitate to create features requests or bug reports. Contributions are welcome.
+
+Implemented features:
+
+- `groot` Save figure to specific file format.
+- `saveas` Save figure to specific file format.
+- `copygraphics` Copy plot to clipboard.
+- `isValidGraphicsProperty` check property name is valid for a graphics object type name.
+- `isprop`, `properties`, `isequal`, `display`, `set`, `get` for Graphics Object type.
+- `isgraphics` Check if it is an graphics object handles.
+- `colstyle` Parse color and style from string.
+- colormaps:
+  - `autumn`: Autumn colormap array
+  - `gray`: Gray colormap array
+  - `parula`: Parula colormap array
+  - `spring`: Spring colormap array
+  - `summer`: Summer colormap array
+  - `winter`: Winter colormap array
+
 ## 0.6.11 (2022-11-25)
 
 ### Added
