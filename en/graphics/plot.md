@@ -72,29 +72,40 @@ plot(sin(0:0.1:2*pi))
 ```
 
 <img src="plot_y_194D5EC3.svg" align="middle"/>
+
 Using explicit abscissae:
+
 ```matlab
 f = figure()
 x = [0:0.1:2*pi]';
 plot(x, sin(x))
 ```
+
 <img src="plot_xy_14D7C1E9.svg" align="middle"/>
+
 Multiple curves with shared abscissae:
+
 ```matlab
 f = figure()
 x = [0:0.1:2*pi]';
 plot(x, [cos(x), cos(2*x), cos(3*x)])
 ```
+
 <img src="plot_multiple_8629711E.svg" align="middle"/>
+
 Color and Size of Markers:
+
 ```matlab
 f = figure();
 x = -pi:pi/10:pi;
 y = tan(sin(x)) - sin(tan(x));
 plot(x ,y, '--rs','LineWidth', 2, 'MarkerEdgeColor','k', 'MarkerFaceColor','g', 'MarkerSize', 11)
 ```
+
 <img src="plot_markers_75AE61C9.svg" align="middle"/>
+
 Adding Title and Axis Labels:
+
 ```matlab
 f = figure();
 x = linspace(0, 10, 150);
@@ -104,6 +115,7 @@ title(_('2-D Line Plot'))
 xlabel('x')
 ylabel('sin(5x)')
 ```
+
 <img src="plot_title_1B593B7B.svg" align="middle"/>
 
 ## See also

@@ -58,13 +58,16 @@ line(x, y2, 'Color', [1 0 0])
 ```
 
 <img src="line_xy_BE15DD82.svg" align="middle"/>
+
 ```matlab
 f = figure();
 x = [1 9];
 y = [2 12];
 line(x,y,'Color','red','LineStyle','--')
 ```
+
 <img src="line_linestyle_939A0995.svg" align="middle"/>
+
 ```matlab
 f = figure();
 t = linspace(0,10*pi,400);
@@ -74,6 +77,7 @@ z = t;
 line(x,y,z)
 view(3)
 ```
+
 <img src="line_xyz_5C2DD736.svg" align="middle"/>
 
 ## See also

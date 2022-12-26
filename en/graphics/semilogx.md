@@ -40,6 +40,7 @@ grid on
 ```
 
 <img src="semilogx_1_AFC8551E.svg" align="middle"/>
+
 ```matlab
 f = figure();
 x = logspace(-1, 2, 15);
@@ -47,6 +48,7 @@ y = 13 + x;
 semilogx(x, y, 'x', 'MarkerFaceColor', [0 0.447 0.741])
 grid on
 ```
+
 <img src="semilogx_2_4576F659.svg" align="middle"/>
 
 ## See also

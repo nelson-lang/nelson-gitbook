@@ -42,6 +42,7 @@ legend('x^2','x^3','Location','northwest')
 ```
 
 <img src="semilogy_1_6E5192AB.svg" align="middle"/>
+
 ```matlab
 f = figure();
 y = [ 0.1    1     10
@@ -52,24 +53,20 @@ y = [ 0.1    1     10
 
 semilogy(y)
 grid on
-
 ```
+
 <img src="semilogy_2_B25CEC4A.svg" align="middle"/>
 
 ## See also
 
 [semilogx](semilogx.md), [line](line.md), [plot](plot.md), [grid](grid.md).
+
 ## History
 
-|Version|Description|
-|------|------|
-|1.0.0|initial version|
-
+| Version | Description     |
+| ------- | --------------- |
+| 1.0.0   | initial version |
 
 ## Author
 
 Allan CORNET
-
-
-
-```

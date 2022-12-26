@@ -67,6 +67,7 @@ t.Color = 'red';
 ```
 
 <img src="text_1_1F5DE711.svg" align="middle"/>
+
 ```matlab
 figure();
 ha = {'left', 'center', 'right'};
@@ -90,6 +91,7 @@ title (_('Text alignment and rotation (0:45:360 degrees)'));
 xlabel(_('Horizontal alignment'));
 ylabel (_('Vertical alignment'));
 ```
+
 <img src="text_2_7E6236BA.svg" align="middle"/>
 
 ## See also

@@ -83,6 +83,7 @@ S = surf(X, Y, Z, C)
 ```
 
 <img src="surf_1_CEB29CE7.svg" align="middle"/>
+
 ```matlab
 f = figure();
 k = 5;
@@ -93,10 +94,11 @@ X = cos(phi) * cos(theta);
 Y = cos(phi) * sin(theta);
 Z = sin(phi) * ones(size(theta));
 colormap([0 0 0;1 1 1]);
-C = hadamard(2^k); 
+C = hadamard(2^k);
 surf(X, Y, Z, C)
 axis square
 ```
+
 <img src="surf_2_650D5437.svg" align="middle"/>
 
 ## See also

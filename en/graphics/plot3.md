@@ -41,6 +41,7 @@ axis square
 ```
 
 <img src="plot3_1_1EE364C1.svg" align="middle"/>
+
 ```matlab
 f  = figure();
 t = 0:0.1:10*pi;
@@ -53,6 +54,7 @@ zlabel ('z');
 title (_('plot3 display of 3-D helix'));
 axis square
 ```
+
 <img src="plot3_2_F084144A.svg" align="middle"/>
 
 ## See also

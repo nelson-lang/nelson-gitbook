@@ -43,13 +43,14 @@ quiver(U1,V1, 'r')
 ```
 
 <img src="quiver_1_15CC7211.svg" align="middle"/>
+
 ```matlab
 f = figure();
 [X, Y] = meshgrid(0:pi/8:pi, -pi:pi/8:pi);
 U1 = sin(X);
 V1 = cos(Y);
 U2 = sin(Y);
-V2 = cos(X); 
+V2 = cos(X);
 ax1 = subplot(1, 2, 1);
 axis equal
 title(ax1, 'Left Plot')
@@ -59,6 +60,7 @@ quiver(X,Y,U2,V2)
 axis equal
 title(ax2, 'Right Plot')
 ```
+
 <img src="quiver_2_A6CE0189.svg" align="middle"/>
 
 ## See also

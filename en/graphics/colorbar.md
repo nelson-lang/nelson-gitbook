@@ -33,12 +33,14 @@ colorbar()
 ```
 
 <img src="colorbar_1_C38192B1.svg" align="middle"/>
+
 ```matlab
 f = figure();
 surf(peaks);
 colormap('gray');
 cb = colorbar(gca);
 ```
+
 <img src="colorbar_2_8B429B15.svg" align="middle"/>
 
 ## See also

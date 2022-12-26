@@ -56,12 +56,14 @@ imagesc(C)
 ```
 
 <img src="imagesc_1_B3E4F684.svg" align="middle"/>
+
 ```matlab
 f2 = figure();
 C = [0 2 4 6; 8 10 12 14; 16 18 20 22];
 imagesc(C)
 colormap(gray)
 ```
+
 <img src="imagesc_2_CCE092AE.svg" align="middle"/>
 
 ## See also

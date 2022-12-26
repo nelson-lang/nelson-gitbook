@@ -36,6 +36,7 @@ limits = clim()
 ```
 
 <img src="clim_1_18DD457D.svg" align="middle"/>
+
 ```matlab
 f = figure();
 [X,Y] = meshgrid(-5:.5:5);
@@ -44,6 +45,7 @@ surf(Z);
 clim([25 75])
 limits = clim()
 ```
+
 <img src="clim_2_80AB730A.svg" align="middle"/>
 
 ## See also

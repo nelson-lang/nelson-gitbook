@@ -35,12 +35,14 @@ cylinder()
 ```
 
 <img src="cylinder_1_391729CC.svg" align="middle"/>
+
 ```matlab
 f2 = figure();
 colormap(summer)
 r = 4;
 cylinder(r);
 ```
+
 <img src="cylinder_2_325EDE9E.svg" align="middle"/>
 
 ## See also

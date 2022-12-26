@@ -46,6 +46,7 @@ plot(X, Y4, 'k');
 ```
 
 <img src="subplot_1_42804CE5.svg" align="middle"/>
+
 ```matlab
 f = figure();
 t = 0 : (2 * pi/100) : (2 * pi);
@@ -63,6 +64,7 @@ plot(t, Y);
 subplot(2, 2, 4);
 plot(t, Z);
 ```
+
 <img src="subplot_2_8A3ABD13.svg" align="middle"/>
 
 ## See also
