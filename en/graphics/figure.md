@@ -8,6 +8,8 @@ Creates an figure window.
 - f = figure(ID)
 - f = figure(H)
 - f = figure(propertyName, propertyValue)
+- f = figure(ID, propertyName, propertyValue)
+- f = figure(H, propertyName, propertyValue)
 
 ## Input argument
 
@@ -30,10 +32,10 @@ Creates an figure window.
   <p><b>Number</b>: Figure indentifer (integer).</p>
   <p><b>OuterPosition</b>: Location and size of outer bounds (vector [X Y W H]).</p>
   <p><b>Position</b>: Location and size of drawable area.</p>
-  <p><b>Tag</b>: String identifier.</p>
+  <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
   <p><b>Type</b>: Type 'figure'.</p>
-  <p><b>UserData</b>: User data (any array type).</p>
-  <p><b>Visible</b>: visibility of the figure.</p>
+  <p><b>UserData</b>: User data: array or [] (default).</p>
+  <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
 
 ## Example
 
@@ -48,7 +50,7 @@ figure('Name', 'Hello')
 
 ## See also
 
-[gcf](gcf.html), [close](close.md).
+[gcf](gcf.md), [close](close.md).
 
 ## History
 

@@ -29,7 +29,7 @@ Parse color and style from string.
 
 ## See also
 
-[colormap](colormap.html).
+[colormap](colormap.md).
 
 ## History
 

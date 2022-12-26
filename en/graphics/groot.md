@@ -20,10 +20,10 @@ graphic root object.
   <p><b>PointerLocation</b>: Current location of pointer.</p>
   <p><b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
   <p><b>ScreenSize</b>: Size of primary display (vector).</p>
-  <p><b>Tag</b>: String identifier.</p>
+  <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
   <p><b>Type</b>: Type 'root'.</p>
   <p><b>Units</b>: 'pixels'.</p>
-  <p><b>UserData</b>: User data (any array type).</p>
+  <p><b>UserData</b>: User data: array or [] (default).</p>
 
 ## Example
 
@@ -34,7 +34,7 @@ g.ScreenDepth
 
 ## See also
 
-[figure](figure.md), [gcf](gcf.html).
+[figure](figure.md), [gcf](gcf.md).
 
 ## History
 

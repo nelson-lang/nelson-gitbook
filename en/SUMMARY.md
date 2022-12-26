@@ -1,7 +1,7 @@
 # Summary
 
-- [functions_manager](./functions_manager/README.md)
 
+- [functions_manager](./functions_manager/README.md)
   - [addpath](./functions_manager/addpath.md)
   - [builtin](./functions_manager/builtin.md)
   - [clearfun](./functions_manager/clearfun.md)
@@ -20,7 +20,6 @@
   - [which](./functions_manager/which.md)
 
 - [modules_manager](./modules_manager/README.md)
-
   - [addgateway](./modules_manager/addgateway.md)
   - [addmodule](./modules_manager/addmodule.md)
   - [gatewayinfo](./modules_manager/gatewayinfo.md)
@@ -39,7 +38,6 @@
   - [usermodulesdir](./modules_manager/usermodulesdir.md)
 
 - [core](./core/README.md)
-
   - [banner](./core/banner.md)
   - [eval](./core/eval.md)
   - [evalc](./core/evalc.md)
@@ -66,7 +64,6 @@
   - [version](./core/version.md)
 
 - [engine](./engine/README.md)
-
   - [argv](./engine/argv.md)
   - [executable](./engine/executable.md)
   - [finish](./engine/finish.md)
@@ -76,7 +73,6 @@
   - [startup](./engine/startup.md)
 
 - [interpreter](./interpreter/README.md)
-
   - [abort](./interpreter/abort.md)
   - [break](./interpreter/break.md)
   - [continue](./interpreter/continue.md)
@@ -93,7 +89,6 @@
   - [while](./interpreter/while.md)
 
 - [display_format](./display_format/README.md)
-
   - [disp](./display_format/disp.md)
   - [display](./display_format/display.md)
   - [echo](./display_format/echo.md)
@@ -101,25 +96,21 @@
   - [formattedDisplayText](./display_format/formattedDisplayText.md)
 
 - [localization](./localization/README.md)
-
   - [getavailablelanguages](./localization/getavailablelanguages.md)
   - [getdefaultlanguage](./localization/getdefaultlanguage.md)
   - [getlanguage](./localization/getlanguage.md)
   - [setlanguage](./localization/setlanguage.md)
 
 - [i18n](./i18n/README.md)
-
   - [gettext](./i18n/gettext.md)
   - [poheader](./i18n/poheader.md)
 
 - [characters_encoding](./characters_encoding/README.md)
-
   - [native2unicode](./characters_encoding/native2unicode.md)
   - [nativecharset](./characters_encoding/nativecharset.md)
   - [unicode2native](./characters_encoding/unicode2native.md)
 
 - [types](./types/README.md)
-
   - [class](./types/class.md)
   - [isa](./types/isa.md)
   - [iscell](./types/iscell.md)
@@ -148,28 +139,23 @@
   - [isvarname](./types/isvarname.md)
 
 - [overload](./overload/README.md)
-
   - [overloadbasictypes](./overload/overloadbasictypes.md)
 
 - [logical](./logical/README.md)
-
   - [false](./logical/false.md)
   - [logical](./logical/logical.md)
   - [true](./logical/true.md)
   - [xor](./logical/xor.md)
 
 - [single](./single/README.md)
-
   - [single](./single/single.md)
 
 - [double](./double/README.md)
-
   - [double](./double/double.md)
   - [flintmax](./double/flintmax.md)
   - [realmax](./double/realmax.md)
 
 - [data_structures](./data_structures/README.md)
-
   - [cell](./data_structures/cell.md)
   - [cell2struct](./data_structures/cell2struct.md)
   - [celldisp](./data_structures/celldisp.md)
@@ -186,7 +172,6 @@
   - [struct2cell](./data_structures/struct2cell.md)
 
 - [integer](./integer/README.md)
-
   - [int16](./integer/int16.md)
   - [int32](./integer/int32.md)
   - [int64](./integer/int64.md)
@@ -199,7 +184,6 @@
   - [uint8](./integer/uint8.md)
 
 - [sparse](./sparse/README.md)
-
   - [full](./sparse/full.md)
   - [IJV](./sparse/IJV.md)
   - [nnz](./sparse/nnz.md)
@@ -209,7 +193,6 @@
   - [spones](./sparse/spones.md)
 
 - [string](./string/README.md)
-
   - [append](./string/append.md)
   - [blanks](./string/blanks.md)
   - [char](./string/char.md)
@@ -245,13 +228,11 @@
   - [toupper](./string/toupper.md)
 
 - [function_handle](./function_handle/README.md)
-
   - [func2str](./function_handle/func2str.md)
   - [isfunction_handle](./function_handle/isfunction_handle.md)
   - [str2func](./function_handle/str2func.md)
 
 - [handle](./handle/README.md)
-
   - [delete](./handle/delete.md)
   - [get](./handle/get.md)
   - [invoke](./handle/invoke.md)
@@ -263,7 +244,6 @@
   - [set](./handle/set.md)
 
 - [error_manager](./error_manager/README.md)
-
   - [error](./error_manager/error.md)
   - [getLastReport](./error_manager/getLastReport.md)
   - [lasterror](./error_manager/lasterror.md)
@@ -275,16 +255,13 @@
   - [warning](./error_manager/warning.md)
 
 - [debugger](./debugger/README.md)
-
   - [dbstack](./debugger/dbstack.md)
 
 - [profiler](./profiler/README.md)
-
   - [profile](./profiler/profile.md)
   - [profsave](./profiler/profsave.md)
 
 - [constructors_functions](./constructors_functions/README.md)
-
   - [diag](./constructors_functions/diag.md)
   - [eps](./constructors_functions/eps.md)
   - [eye](./constructors_functions/eye.md)
@@ -296,7 +273,6 @@
   - [zeros](./constructors_functions/zeros.md)
 
 - [operators](./operators/README.md)
-
   - [all](./operators/all.md)
   - [and](./operators/and.md)
   - [any](./operators/any.md)
@@ -332,7 +308,6 @@
   - [vertcat](./operators/vertcat.md)
 
 - [elementary_functions](./elementary_functions/README.md)
-
   - [abs](./elementary_functions/abs.md)
   - [angle](./elementary_functions/angle.md)
   - [base2dec](./elementary_functions/base2dec.md)
@@ -418,7 +393,6 @@
   - [wilkinson](./elementary_functions/wilkinson.md)
 
 - [data_analysis](./data_analysis/README.md)
-
   - [conv](./data_analysis/conv.md)
   - [conv2](./data_analysis/conv2.md)
   - [cumprod](./data_analysis/cumprod.md)
@@ -431,7 +405,6 @@
   - [sum](./data_analysis/sum.md)
 
 - [special_functions](./special_functions/README.md)
-
   - [betainc](./special_functions/betainc.md)
   - [cross](./special_functions/cross.md)
   - [dot](./special_functions/dot.md)
@@ -442,7 +415,6 @@
   - [primes](./special_functions/primes.md)
 
 - [trigonometric_functions](./trigonometric_functions/README.md)
-
   - [acos](./trigonometric_functions/acos.md)
   - [acosd](./trigonometric_functions/acosd.md)
   - [acosh](./trigonometric_functions/acosh.md)
@@ -494,7 +466,6 @@
   - [tanm](./trigonometric_functions/tanm.md)
 
 - [linear_algebra](./linear_algebra/README.md)
-
   - [bandwidth](./linear_algebra/bandwidth.md)
   - [chol](./linear_algebra/chol.md)
   - [cond](./linear_algebra/cond.md)
@@ -521,14 +492,12 @@
   - [trace](./linear_algebra/trace.md)
 
 - [statistics](./statistics/README.md)
-
   - [corrcoef](./statistics/corrcoef.md)
   - [cov](./statistics/cov.md)
   - [mean](./statistics/mean.md)
   - [var](./statistics/var.md)
 
 - [polynomial_functions](./polynomial_functions/README.md)
-
   - [poly](./polynomial_functions/poly.md)
   - [polyder](./polynomial_functions/polyder.md)
   - [polyfit](./polynomial_functions/polyfit.md)
@@ -538,7 +507,6 @@
   - [roots](./polynomial_functions/roots.md)
 
 - [signal_processing](./signal_processing/README.md)
-
   - [bartlett](./signal_processing/bartlett.md)
   - [blackman](./signal_processing/blackman.md)
   - [filter2](./signal_processing/filter2.md)
@@ -547,7 +515,6 @@
   - [sinc](./signal_processing/sinc.md)
 
 - [slicot](./slicot/README.md)
-
   - [SLICOT License](./slicot/About_SLICOT_license.md)
   - [slicot_ab01od](./slicot/slicot_ab01od.md)
   - [slicot_ab04md](./slicot/slicot_ab04md.md)
@@ -574,7 +541,6 @@
   - [slicot_tg01ad](./slicot/slicot_tg01ad.md)
 
 - [fftw](./fftw/README.md)
-
   - [FFTW License](./fftw/About_FFTW_license.md)
   - [fft](./fftw/fft.md)
   - [fft2](./fftw/fft2.md)
@@ -587,7 +553,6 @@
   - [ifftshift](./fftw/ifftshift.md)
 
 - [os_functions](./os_functions/README.md)
-
   - [computer](./os_functions/computer.md)
   - [createGUID](./os_functions/createGUID.md)
   - [getenv](./os_functions/getenv.md)
@@ -603,7 +568,6 @@
   - [winqueryreg](./os_functions/winqueryreg.md)
 
 - [files_folders_functions](./files_folders_functions/README.md)
-
   - [cd](./files_folders_functions/cd.md)
   - [copyfile](./files_folders_functions/copyfile.md)
   - [diff_file](./files_folders_functions/diff_file.md)
@@ -627,7 +591,6 @@
   - [userdir](./files_folders_functions/userdir.md)
 
 - [memory_manager](./memory_manager/README.md)
-
   - [acquirevar](./memory_manager/acquirevar.md)
   - [assignin](./memory_manager/assignin.md)
   - [clear](./memory_manager/clear.md)
@@ -643,7 +606,6 @@
   - [whos](./memory_manager/whos.md)
 
 - [time](./time/README.md)
-
   - [addtodate](./time/addtodate.md)
   - [calendar](./time/calendar.md)
   - [clock](./time/clock.md)
@@ -663,14 +625,12 @@
   - [weekday](./time/weekday.md)
 
 - [random](./random/README.md)
-
   - [rand](./random/rand.md)
   - [randn](./random/randn.md)
   - [randperm](./random/randperm.md)
   - [rng](./random/rng.md)
 
 - [mpi](./mpi/README.md)
-
   - [mpiexec](./mpi/mpiexec.md)
   - [MPI_Allreduce](./mpi/MPI_Allreduce.md)
   - [MPI_Barrier](./mpi/MPI_Barrier.md)
@@ -697,7 +657,6 @@
   - [MPI_Send](./mpi/MPI_Send.md)
 
 - [parallel](./parallel/README.md)
-
   - [afterAll](./parallel/afterAll.md)
   - [afterEach](./parallel/afterEach.md)
   - [backgroundPool](./parallel/backgroundPool.md)
@@ -709,7 +668,6 @@
   - [wait](./parallel/wait.md)
 
 - [help_tools](./help_tools/README.md)
-
   - [buildhelp](./help_tools/buildhelp.md)
   - [buildhelpmd](./help_tools/buildhelpmd.md)
   - [buildhelpweb](./help_tools/buildhelpweb.md)
@@ -723,17 +681,14 @@
   - [xmldoctomd](./help_tools/xmldoctomd.md)
 
 - [history_manager](./history_manager/README.md)
-
   - [history](./history_manager/history.md)
 
 - [console](./console/README.md)
-
   - [clc](./console/clc.md)
   - [input](./console/input.md)
   - [terminal_size](./console/terminal_size.md)
 
 - [gui](./gui/README.md)
-
   - [errordlg](./gui/errordlg.md)
   - [helpdlg](./gui/helpdlg.md)
   - [inserthtml](./gui/inserthtml.md)
@@ -745,7 +700,6 @@
   - [helpdlg](./gui/warndlg.md)
 
 - [qml_engine](./qml_engine/README.md)
-
   - [nelsonObject](./qml_engine/nelsonObject.md)
   - [qml_addimportpath](./qml_engine/qml_addimportpath.md)
   - [qml_addpluginpath](./qml_engine/qml_addpluginpath.md)
@@ -775,36 +729,74 @@
   - [qt_version](./qml_engine/qt_version.md)
 
 - [graphics](./graphics/README.md)
-
   - [autumn](./graphics/autumn.md)
-  - [figure](./graphics/close.md)
+  - [axes](./graphics/axes.md)
+  - [axis](./graphics/axis.md)
+  - [cla](./graphics/cla.md)
+  - [clf](./graphics/clf.md)
+  - [clim](./graphics/clim.md)
+  - [close](./graphics/close.md)
+  - [colorbar](./graphics/colorbar.md)
+  - [colormap](./graphics/colormap.md)
   - [colstyle](./graphics/colstyle.md)
   - [copygraphics](./graphics/copygraphics.md)
+  - [cylinder](./graphics/cylinder.md)
   - [figure](./graphics/figure.md)
+  - [gca](./graphics/gca.md)
+  - [gcf](./graphics/gcf.md)
   - [gray](./graphics/gray.md)
+  - [grid](./graphics/grid.md)
   - [groot](./graphics/groot.md)
+  - [hold](./graphics/hold.md)
+  - [image](./graphics/image.md)
+  - [imagesc](./graphics/imagesc.md)
+  - [is2D](./graphics/is2D.md)
   - [isgraphics](./graphics/isgraphics.md)
+  - [ishold](./graphics/ishold.md)
   - [isValidGraphicsProperty](./graphics/isValidGraphicsProperty.md)
+  - [legend](./graphics/legend.md)
+  - [line](./graphics/line.md)
+  - [newplot](./graphics/newplot.md)
+  - [parula](./graphics/parula.md)
+  - [plot](./graphics/plot.md)
+  - [plot3](./graphics/plot3.md)
+  - [quiver](./graphics/quiver.md)
+  - [refresh](./graphics/refresh.md)
+  - [rgbplot](./graphics/rgbplot.md)
   - [saveas](./graphics/saveas.md)
+  - [semilogx](./graphics/semilogx.md)
+  - [semilogy](./graphics/semilogy.md)
+  - [sphere](./graphics/sphere.md)
+  - [spring](./graphics/spring.md)
+  - [spy](./graphics/spy.md)
+  - [subplot](./graphics/subplot.md)
+  - [summer](./graphics/summer.md)
+  - [surf](./graphics/surf.md)
+  - [text](./graphics/text.md)
+  - [title](./graphics/title.md)
+  - [view](./graphics/view.md)
+  - [winter](./graphics/winter.md)
+  - [xlabel](./graphics/xlabel.md)
+  - [xlim](./graphics/xlim.md)
+  - [ylabel](./graphics/ylabel.md)
+  - [ylim](./graphics/ylim.md)
+  - [zlabel](./graphics/zlabel.md)
+  - [zlim](./graphics/zlim.md)
 
 - [help_browser](./help_browser/README.md)
-
   - [doc](./help_browser/doc.md)
   - [helpbrowser](./help_browser/helpbrowser.md)
 
 - [text_editor](./text_editor/README.md)
-
   - [edit](./text_editor/edit.md)
   - [editor](./text_editor/editor.md)
   - [smartindent](./text_editor/smartindent.md)
 
 - [tests_manager](./tests_manager/README.md)
-
   - [test_makeref](./tests_manager/test_makeref.md)
   - [test_run](./tests_manager/test_run.md)
 
 - [validators](./validators/README.md)
-
   - [mustBeA](./validators/mustBeA.md)
   - [mustBeFile](./validators/mustBeFile.md)
   - [mustBeFinite](./validators/mustBeFinite.md)
@@ -839,7 +831,6 @@
   - [mustBeVector](./validators/mustBeVector.md)
 
 - [assert_functions](./assert_functions/README.md)
-
   - [assert](./assert_functions/assert.md)
   - [assert_checkerror](./assert_functions/assert_checkerror.md)
   - [assert_isapprox](./assert_functions/assert_isapprox.md)
@@ -848,7 +839,6 @@
   - [assert_istrue](./assert_functions/assert_istrue.md)
 
 - [stream_manager](./stream_manager/README.md)
-
   - [diary](./stream_manager/diary.md)
   - [dlmwrite](./stream_manager/dlmwrite.md)
   - [fclose](./stream_manager/fclose.md)
@@ -872,7 +862,6 @@
   - [sscanf](./stream_manager/sscanf.md)
 
 - [hdf5](./hdf5/README.md)
-
   - [h5create](./hdf5/h5create.md)
   - [h5dump](./hdf5/h5dump.md)
   - [h5ls](./hdf5/h5ls.md)
@@ -887,7 +876,6 @@
   - [whosnh5](./hdf5/whosnh5.md)
 
 - [matio](./matio/README.md)
-
   - [ismatfile](./matio/ismatfile.md)
   - [loadmat](./matio/loadmat.md)
   - [savemat](./matio/savemat.md)
@@ -895,18 +883,15 @@
   - [whosmat](./matio/whosmat.md)
 
 - [json](./json/README.md)
-
   - [jsondecode](./json/jsondecode.md)
   - [jsonencode](./json/jsonencode.md)
   - [jsonprettyprint](./json/jsonprettyprint.md)
 
 - [file_archiver](./file_archiver/README.md)
-
   - [unzip](./file_archiver/unzip.md)
   - [zip](./file_archiver/zip.md)
 
 - [audio](./audio/README.md)
-
   - [audiodevinfo](./audio/audiodevinfo.md)
   - [audioinfo](./audio/audioinfo.md)
   - [audiometadata](./audio/audiometadata.md)
@@ -933,18 +918,15 @@
   - [stop](./audio/stop.md)
 
 - [sio_client](./sio_client/README.md)
-
   - [doc](./sio_client/doc.md)
   - [sioemit](./sio_client/sioemit.md)
   - [siogetvariable](./sio_client/siogetvariable.md)
 
 - [ipc](./ipc/README.md)
-
   - [getpid](./ipc/getpid.md)
   - [ipc](./ipc/ipc.md)
 
 - [dynamic_link](./dynamic_link/README.md)
-
   - [cmake](./dynamic_link/cmake.md)
   - [configuremingw](./dynamic_link/configuremingw.md)
   - [configuremsvc](./dynamic_link/configuremsvc.md)
@@ -980,7 +962,6 @@
   - [vswhere](./dynamic_link/vswhere.md)
 
 - [mex](./mex/README.md)
-
   - [dlgeneratemexgateway](./mex/dlgeneratemexgateway.md)
   - [engClose](./mex/engClose.md)
   - [engEvalString](./mex/engEvalString.md)
@@ -998,15 +979,12 @@
   - [mexext](./mex/mexext.md)
 
 - [f2c](./f2c/README.md)
-
   - [f2c](./f2c/f2c.md)
 
 - [nig](./nig/README.md)
-
   - [nig](./nig/nig.md)
 
 - [webtools](./webtools/README.md)
-
   - [repo](./webtools/repo.md)
   - [weboptions](./webtools/weboptions.md)
   - [webread](./webtools/webread.md)
@@ -1014,7 +992,6 @@
   - [webwrite](./webtools/webwrite.md)
 
 - [geometry](./geometry/README.md)
-
   - [rotx](./geometry/rotx.md)
   - [roty](./geometry/roty.md)
   - [rotz](./geometry/rotz.md)

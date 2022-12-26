@@ -58,7 +58,7 @@ saveas(gcf(), 'svg-file.svg');
 
 ## See also
 
-[gcf](gcf.html).
+[gcf](gcf.md).
 
 ## History
 

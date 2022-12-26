@@ -27,7 +27,7 @@ copygraphics(gcf());
 
 ## See also
 
-[gcf](gcf.html), [saveas](saveas.md).
+[gcf](gcf.md), [saveas](saveas.md).
 
 ## History
 

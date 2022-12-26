@@ -13,14 +13,11 @@ Autumn colormap array.
 
 ## Output argument
 
-- c - c: Autumn colormap array.
+- c - Autumn colormap array.
 
 ## Description
 
   <p><b>autumn</b> returns the colormap with autumn colors.</p>
-  <p>
-    <img src="autumn_80D6835B.svg"/>
-  </p>
 
 ## Example
 
@@ -30,9 +27,11 @@ surf(peaks);
 colormap('autumn');
 ```
 
+<img src="autumn_80D6835B.svg" align="middle"/>
+
 ## See also
 
-[colormap](colormap.html).
+[colormap](colormap.md).
 
 ## History
 
