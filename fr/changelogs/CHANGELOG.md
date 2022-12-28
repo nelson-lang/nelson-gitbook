@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## 0.6.12 (UNRELEASED)
+## 0.6.12 (2022-12-27)
 
 ### Added
 
@@ -73,7 +73,7 @@ Implemented features:
   - `summer`: Summer colormap array.
   - `winter`: Winter colormap array.
 
-```
+```markdown
 ░░ٌٌٌӇ░ٌٌٌƛ░ٌٌٌƤ░ٌٌٌƤ░ٌٌٌƳ ░ٌٌٌ░ٌٌٌƝ░ٌٌٌЄ░ٌٌٌƜ░ٌٌٌ░ٌٌٌ Ƴ░ٌٌٌЄ░ٌٌٌƛ░ٌٌٌƦ░ٌٌٌ!░
 ╚═════════ ೋღ❤ღೋ ═════════╝
 ```

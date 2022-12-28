@@ -24,6 +24,8 @@ Try it !
 
 - `OpenMP` and `SIMD` extensions used.
 
+- 2D and 3D plotting with high-level plot commands.
+
 - Fast Fourrier Transformation functions based on FFTW and MKL wrapper.
 
 - SLICOT (Subroutine Library in Systems and Control Theory) interfaces (optional).
