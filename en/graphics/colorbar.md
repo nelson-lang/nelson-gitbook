@@ -32,7 +32,7 @@ colormap('summer');
 colorbar()
 ```
 
-<img src="colorbar_1_C38192B1.svg" align="middle"/>
+<img src="colorbar_1_CBB5124C.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -41,7 +41,7 @@ colormap('gray');
 cb = colorbar(gca);
 ```
 
-<img src="colorbar_2_8B429B15.svg" align="middle"/>
+<img src="colorbar_2_3526FDC1.svg" align="middle"/>
 
 ## See also
 

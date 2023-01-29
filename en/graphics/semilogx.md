@@ -39,7 +39,7 @@ semilogx(x, x);
 grid on
 ```
 
-<img src="semilogx_1_AFC8551E.svg" align="middle"/>
+<img src="semilogx_1_EA6E34F9.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -49,7 +49,7 @@ semilogx(x, y, 'x', 'MarkerFaceColor', [0 0.447 0.741])
 grid on
 ```
 
-<img src="semilogx_2_4576F659.svg" align="middle"/>
+<img src="semilogx_2_C561287D.svg" align="middle"/>
 
 ## See also
 

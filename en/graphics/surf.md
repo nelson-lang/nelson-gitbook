@@ -28,8 +28,9 @@ surface plot.
 
 ## Description
 
-  <p><b>axes</b> creates axes in the current figure and set it as the current axes.</p>
-  <p><b>axes(cax)</b> set current axes.</p>
+  <p><b>surf</b> creates a 3D surface plot. It can be used to plot data in the form of a matrix or a function of two variables.</p>
+  <p>You can customize the appearance of the plot using various options such as color, lighting, and shading.</p>
+  <p>For example, you can use the colormap option to change the color of the surface, and the FaceLighting option to change the lighting of the surface.</p>
   <p>Properties:</p>
   <p/>
   <p><b>AlphaData</b> Transparency data: array same size as ZData or 1 (default).</p>
@@ -86,24 +87,18 @@ S = surf(X, Y, Z, C)
 
 ```matlab
 f = figure();
-k = 5;
-n = 2^(k-1);
-theta = pi * (-n:2:n) / n;
-phi = (pi / 2) * (-n:2:n)' / n;
-X = cos(phi) * cos(theta);
-Y = cos(phi) * sin(theta);
-Z = sin(phi) * ones(size(theta));
-colormap([0 0 0;1 1 1]);
-C = hadamard(2^k);
-surf(X, Y, Z, C)
+[X,Y] = meshgrid(-8:.5:8);
+R = sqrt(X.^2 + Y.^2) + eps;
+Z = sin(R)./R;
+h = surf(X, Y, Z);
 axis square
 ```
 
-<img src="surf_2_650D5437.svg" align="middle"/>
+<img src="surf_2_607AD10C.svg" align="middle"/>
 
 ## See also
 
-[view](view.md), [meshgrid](../elementary_functions/meshgrid.md).
+[view](view.md), [surface](surface.md), [meshgrid](../elementary_functions/meshgrid.md).
 
 ## History
 

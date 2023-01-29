@@ -9,6 +9,7 @@ graphics functions
 - [autumn](autumn.md) - Autumn colormap array.
 - [axes](axes.md) - Create cartesian axes.
 - [axis](axis.md) - Set axis limits and aspect ratios.
+- [bone](bone.md) - Bone colormap array.
 - [cla](cla.md) - Clear axes.
 - [clf](clf.md) - Clear figure.
 - [clim](clim.md) - Set colormap limits.
@@ -16,8 +17,11 @@ graphics functions
 - [colorbar](colorbar.md) - Colorbar showing color scale.
 - [colormap](colormap.md) - View and set current colormap.
 - [colstyle](colstyle.md) - Parse color and style from string.
+- [cool](cool.md) - Cool colormap array.
+- [copper](copper.md) - Copper colormap array.
 - [copygraphics](copygraphics.md) - Copy plot to clipboard.
 - [cylinder](cylinder.md) - Create cylinder.
+- [drawnow](drawnow.md) - Update figures and process callbacks
 - [figure](figure.md) - Creates an figure window.
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
@@ -25,16 +29,26 @@ graphics functions
 - [grid](grid.md) - Display or hide axes grid lines.
 - [groot](groot.md) - graphic root object.
 - [hold](hold.md) - Retain current plot when adding new plots.
+- [hot](hot.md) - Hot colormap array.
 - [image](image.md) - Display image from array.
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
+- [imread](imread.md) - Read image from graphics file.
+- [imshow](imshow.md) - Display image.
+- [imwrite](imwrite.md) - Write image to graphics file.
 - [is2D](is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
 - [isgraphics](isgraphics.md) - Check for graphics object.
 - [ishold](ishold.md) - Get current hold state.
 - [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
+- [jet](jet.md) - Jet colormap array.
 - [legend](legend.md) - Add legend to axes.
 - [line](line.md) - Create primitive line.
+- [loglog](loglog.md) - Log-log scale plot.
+- [mesh](mesh.md) - Mesh surface plot.
+- [meshz](meshz.md) - Mesh surface plot with curtain.
 - [newplot](newplot.md) - Prepare to produce a new plot.
 - [parula](parula.md) - Parula colormap array.
+- [pcolor](pcolor.md) - Pseudocolor plot.
+- [pink](pink.md) - Pink colormap array.
 - [plot](plot.md) - Linear 2-D plot.
 - [plot3](plot3.md) - 3-D line plot.
 - [quiver](quiver.md) - Vector plot.
@@ -49,9 +63,13 @@ graphics functions
 - [subplot](subplot.md) - Create axes in tiled positions.
 - [summer](summer.md) - Summer colormap array.
 - [surf](surf.md) - surface plot.
+- [surface](surface.md) - Primitive surface plot.
 - [text](text.md) - creates text descriptions to data points.
 - [title](title.md) - Add title.
+- [turbo](turbo.md) - Turbo colormap array.
 - [view](view.md) - Camera line of sigh.
+- [viridis](viridis.md) - Viridis colormap array.
+- [white](white.md) - white colormap array.
 - [winter](winter.md) - Winter colormap array.
 - [xlabel](xlabel.md) - Label x-axis.
 - [xlim](xlim.md) - set or get x-axis limits.

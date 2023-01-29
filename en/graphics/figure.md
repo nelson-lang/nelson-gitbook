@@ -25,17 +25,25 @@ Creates an figure window.
 ## Description
 
   <p><b>figure</b> creates figure.</p>
-  <p>Properties:</p>
-  <p><b>Color</b>:  Background color [R, G, B] or string (example: 'blue').</p>
-  <p><b>InnerPosition</b>: Location and size of drawable area (similar to 'Position').</p>
+  <p/>
+  <p><b>Properties</b>:</p>
+  <p/>
+  <p><b>AlphaMap</b>: Transparency map for Axes content.</p>
+  <p><b>Children</b>: Children of figure: empty array (default) or 1-D array of objects.</p>
+  <p><b>Color</b>: Background color [R, G, B] or string (example: 'blue').</p>
+  <p><b>Colormap</b>: Color map for axes content of figure: m-by-3 array of RGB triplets, parula (default).</p>
+  <p><b>CurrentAxes</b>: Target axes in current figure: Axes object.</p>
   <p><b>Name</b>: Name (default '').</p>
-  <p><b>Number</b>: Figure indentifer (integer).</p>
-  <p><b>OuterPosition</b>: Location and size of outer bounds (vector [X Y W H]).</p>
+  <p><b>NextPlot</b>: Directive on how to add next plot: 'new', 'replace', 'replacechildren' or 'add' (default).</p>
+  <p><b>Number</b>: Figure Number.</p>
+  <p><b>NumberTitle</b>: Use number title: 'off' or 'on' (default).</p>
+  <p><b>Parent</b>: Figure parent: root graphics object.</p>
   <p><b>Position</b>: Location and size of drawable area.</p>
   <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
   <p><b>Type</b>: Type 'figure'.</p>
   <p><b>UserData</b>: User data: array or [] (default).</p>
   <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
+  <p><b>DrawLater</b>: is used to delay a huge succession of graphics commands (implying several drawings or redrawings): 'on' or 'off' (default).</p>
 
 ## Example
 

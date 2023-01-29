@@ -5,5 +5,6 @@
   - [factor](factor.md)
   - [gamma](gamma.md)
   - [gcd](gcd.md)
+  - [interp1](interp1.md)
   - [peaks](peaks.md)
   - [primes](primes.md)

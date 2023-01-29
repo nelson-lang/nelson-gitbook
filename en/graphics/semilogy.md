@@ -41,7 +41,7 @@ semilogy(x,y1,'--',x,y2)
 legend('x^2','x^3','Location','northwest')
 ```
 
-<img src="semilogy_1_6E5192AB.svg" align="middle"/>
+<img src="semilogy_1_4CB03C12.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -55,7 +55,7 @@ semilogy(y)
 grid on
 ```
 
-<img src="semilogy_2_B25CEC4A.svg" align="middle"/>
+<img src="semilogy_2_2ADED5C5.svg" align="middle"/>
 
 ## See also
 
