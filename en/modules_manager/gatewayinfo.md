@@ -24,7 +24,7 @@ Returns information about an gateway.
 ## Example
 
 ```matlab
-[gateway_name, builtin_list] = gatewayinfo(modulepath(nelsonroot(), 'time', 'builtin'))
+[gateway_name, builtin_list] = gatewayinfo(modulepath('time', 'builtin'))
 ```
 
 ## See also

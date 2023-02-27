@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.2 (2023-02-27)
+
+### Changed
+
+- cmake project reworked. It should be easier to package Nelson on linux platforms (Thanks to @JohanMabille)
+- Debian package generated (beta - feedback welcome).
+- `modulepath` reworked and extended.
+- C++ API: `IsCellOfStrings(ArrayOf)` replaced by `ArrayOf::isCellArrayOfCharacterVectors()`
+- C++ API: header `CheckHelpers.hpp` replaced by `InputOutputArgumentsCheckers.hpp`
+- C++ API: `ToCellStringAsColumn` replaced by `ArrayOf::toCellArrayOfCharacterColumnVectors`
+- `api_nelson` methods moved to type modules
+- Remove internal circular dependency about error and warning.
+- Exports minimum headers in package.
+
+### Fixed
+
+- `disp`, `display` did no more support overloading.
+- `image` did not save all values for `XData` and `YData`.
+- Github CI Monterey and Ubuntu 22.04 (dependencies install) fixed.
+- some warnings.
+
 ## 0.7.1 (2023-01-29)
 
 ### Added

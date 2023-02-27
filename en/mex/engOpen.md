@@ -20,7 +20,7 @@ Start Nelson process
   <p><b>engOpen</b> starts a Nelson process for using Nelson as a computational engine.</p>
   <p>Libraries path need to contain nelson path to find Nelson's libraries at runtime.</p>
   <p>Set the value to the path returned by the following Nelson command:</p>
-  <p><b>res</b> = modulepath(nelsonroot(),'core','bin')</p>
+  <p><b>res</b> = modulepath('nelson', 'builtin')</p>
   <p>on linux: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<b>res</b></p>
   <p>export PATH=$PATH:<b>res</b></p>
   <p>on macos: export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:<b>res</b></p>
@@ -30,7 +30,7 @@ Start Nelson process
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_engine.c'])
+edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
 ## See also

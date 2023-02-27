@@ -21,7 +21,7 @@ Adds dynamically builtin at runtime.
 Add gateway for string module:
 
 ```matlab
-addgateway(modulepath(nelsonroot(), 'time', 'builtin'))
+addgateway(modulepath('time', 'builtin'))
 ```
 
 ## See also

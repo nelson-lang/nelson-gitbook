@@ -24,7 +24,7 @@ Start Nelson engine session for single and nonshared use.
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_engine.c'])
+edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
 ## See also

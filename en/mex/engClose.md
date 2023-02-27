@@ -22,7 +22,7 @@ Close Nelson engine session
 ## Example
 
 ```matlab
-edit([modulepath('mex'), '/tests/test_engine.c'])
+edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
 ## See also

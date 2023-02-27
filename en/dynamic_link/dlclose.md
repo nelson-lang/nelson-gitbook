@@ -20,7 +20,7 @@ Removes dllib object.
 ## Example
 
 ```matlab
-path_ref = [modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()];
+path_ref = modulepath('dynamic_link', 'builtin');
 lib = dlopen(path_ref)
 isvalid(lib)
 dlclose(lib); // or delete(lib)

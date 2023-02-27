@@ -22,7 +22,7 @@ removes time builtin
 
 ```matlab
 calendar
-removegateway(modulepath(nelsonroot(), 'time', 'builtin'))
+removegateway(modulepath('time', 'builtin'))
 calendar
 ```
 

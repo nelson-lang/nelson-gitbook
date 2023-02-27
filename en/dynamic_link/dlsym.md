@@ -53,7 +53,7 @@ Loads a C/Fortran symbol for an dynamic library.
 ## Examples
 
 ```matlab
-lib = dlopen([modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()]);
+lib = dlopen(modulepath('dynamic_link', 'builtin'));
 V = double([1 2;3 4]);
 % C prototype:
 % int dynlibTestMultiplyDoubleArrayWithReturn(double *x, int size)

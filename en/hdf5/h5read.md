@@ -22,7 +22,7 @@ Read HDF5 data set.
 ## Example
 
 ```matlab
-h5_directory = [modulepath('hdf5'), '/tests/h5'];
+h5_directory = [modulepath('hdf5','tests'), '/h5'];
 double_data = [h5_directory, '/h5ex_t_float.h5'];
 R = h5read(double_data,'/DS1')
 ```

@@ -21,7 +21,7 @@ Returns list of available symbols in an shared library.
 ## Example
 
 ```matlab
-lib = dlopen([modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()])
+lib = dlopen(modulepath('dynamic_link', 'builtin'))
 c = dllibinfo(lib)
 ```
 

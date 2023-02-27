@@ -23,7 +23,7 @@ Checks if shared library is loaded.
 ## Example
 
 ```matlab
-path_1 = [modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()];
+path_1 = modulepath('dynamic_link', 'builtin');
 r = dllibisloaded(path_1)
 lib1 = dlopen(path_1);
 [r, lib2] = dllibisloaded(path_1)

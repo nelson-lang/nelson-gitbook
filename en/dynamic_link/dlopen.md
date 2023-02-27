@@ -25,7 +25,7 @@ Loads an dynamic library.
 ## Example
 
 ```matlab
-path_1 = [modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()];
+path_1 = modulepath('dynamic_link', 'builtin');
 lib1 = dlopen(path_1)
 isvalid(lib1)
 dlclose(lib1)

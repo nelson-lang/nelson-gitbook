@@ -42,7 +42,7 @@ NLSDYNAMIC_LINK_IMPEXP double *multiplicationDoubleByReference(double *x)
 ```matlab
 x = 133.3;
 xPtr = libpointer('doublePtr', x);
-path_ref = [modulepath(nelsonroot(),'dynamic_link','bin'), '/libnlsDynamic_link', getdynlibext()];
+path_ref = modulepath('dynamic_link', 'builtin');
 lib = dlopen(path_ref);
 f = dlsym(lib, 'multiplicationDoubleByReference', 'libpointer', {'doublePtr'});
 [r1, r2] = dlcall(f, xPtr);
