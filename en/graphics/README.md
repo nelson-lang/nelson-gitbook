@@ -6,6 +6,7 @@ Graphics functions
 
 graphics functions
 
+- [ancestor](ancestor.md) - Ancestor of graphics object.
 - [autumn](autumn.md) - Autumn colormap array.
 - [axes](axes.md) - Create cartesian axes.
 - [axis](axis.md) - Set axis limits and aspect ratios.
@@ -47,6 +48,7 @@ graphics functions
 - [meshz](meshz.md) - Mesh surface plot with curtain.
 - [newplot](newplot.md) - Prepare to produce a new plot.
 - [parula](parula.md) - Parula colormap array.
+- [patch](patch.md) - Create patches of colored polygons
 - [pcolor](pcolor.md) - Pseudocolor plot.
 - [pink](pink.md) - Pink colormap array.
 - [plot](plot.md) - Linear 2-D plot.
@@ -67,6 +69,7 @@ graphics functions
 - [text](text.md) - creates text descriptions to data points.
 - [title](title.md) - Add title.
 - [turbo](turbo.md) - Turbo colormap array.
+- [validatecolor](validatecolor.md) - Validate color values.
 - [view](view.md) - Camera line of sigh.
 - [viridis](viridis.md) - Viridis colormap array.
 - [white](white.md) - white colormap array.

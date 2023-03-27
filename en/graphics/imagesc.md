@@ -68,7 +68,7 @@ colormap(gray)
 
 ## See also
 
-[image](image.md), [colormap](colormap.html).
+[image](image.md), [colormap](colormap.md).
 
 ## History
 

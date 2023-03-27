@@ -42,7 +42,7 @@ h = imshow(filename)
 
 ## See also
 
-[imread](imread.md), [image](image.md), [imagesc](imagesc.md), [colormap](colormap.html).
+[imread](imread.md), [image](image.md), [imagesc](imagesc.md), [colormap](colormap.md).
 
 ## History
 

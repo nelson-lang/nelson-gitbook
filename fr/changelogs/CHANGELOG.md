@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.3 (2023-03-28)
+
+### Added
+
+- `patch` Create patches of colored polygons.
+- `ancestor` Ancestor of graphics object.
+- hexadecimal color code managed example: '#DDFF00'.
+- `validatecolor` Validate color values.
+- [851](http://github.com/Nelson-numerical-software/nelson/issues/851): Build with micromamba environment (linux and macOS)
+
+### Changed
+
+- Figure property `Position` uses position based on bottom left position for compatibility.
+- internal: boost no more used to read/write json files.
+- internal: taglib library is optional.
+- version date updated with each build.
+
+### Fixed
+
+- [866](http://github.com/Nelson-numerical-software/nelson/issues/866): Close menu on figure can crash on linux.
+- graphic hierarchy was not fully destroyed after `close` or `delete`.
+- labels were not displayed correctly when the logarithmic scale was enabled.
+- [869](http://github.com/Nelson-numerical-software/nelson/issues/869): missing help files in linux package.
+
 ## 0.7.2 (2023-02-27)
 
 ### Changed

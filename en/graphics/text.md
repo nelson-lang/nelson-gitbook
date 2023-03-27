@@ -31,7 +31,7 @@ creates text descriptions to data points.
   <p/>
   <p><b>BackgroundColor</b>: Color of text box background: RGB triplet.</p>
   <p><b>Children</b>:  Children: [].</p>
-  <p><b>Color</b>: Text color: RGB triplet, [0 0 0] (default).</p>
+  <p><b>Color</b>: Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.</p>
   <p><b>EdgeColor</b>: Color of box outline: RGB triplet.</p>
   <p><b>Extent</b>: Size and location of rectangle that encloses text: four-element vector.</p>
   <p><b>FontAngle</b>: Character slant: 'italic' or 'normal' (default).</p>

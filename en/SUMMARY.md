@@ -777,6 +777,7 @@
 
 - [graphics](./graphics/README.md)
 
+  - [ancestor](./graphics/ancestor.md)
   - [autumn](./graphics/autumn.md)
   - [axes](./graphics/axes.md)
   - [axis](./graphics/axis.md)
@@ -818,6 +819,7 @@
   - [meshz](./graphics/meshz.md)
   - [newplot](./graphics/newplot.md)
   - [parula](./graphics/parula.md)
+  - [patch](./graphics/patch.md)
   - [pcolor](./graphics/pcolor.md)
   - [pink](./graphics/pink.md)
   - [plot](./graphics/plot.md)
@@ -838,6 +840,7 @@
   - [text](./graphics/text.md)
   - [title](./graphics/title.md)
   - [turbo](./graphics/turbo.md)
+  - [validatecolor](./graphics/validatecolor.md)
   - [view](./graphics/view.md)
   - [viridis](./graphics/viridis.md)
   - [white](./graphics/white.md)

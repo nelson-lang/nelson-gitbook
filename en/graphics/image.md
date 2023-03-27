@@ -67,7 +67,7 @@ image();
 
 ## See also
 
-[imagesc](imagesc.md), [colormap](colormap.html).
+[imagesc](imagesc.md), [colormap](colormap.md).
 
 ## History
 
