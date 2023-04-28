@@ -4,6 +4,7 @@
   - [cumprod](cumprod.md)
   - [cumsum](cumsum.md)
   - [ismissing](ismissing.md)
+  - [issorted](issorted.md)
   - [max](max.md)
   - [min](min.md)
   - [prod](prod.md)

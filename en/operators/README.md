@@ -9,6 +9,9 @@ Operators
 - [all](all.md) - all of the elements of a matrix satisfy some condition.
 - [and](and.md) - logical 'AND' operator, &
 - [any](any.md) - any of the elements of a matrix satisfy some condition.
+- [bitand](bitand.md) - Bit-wise AND
+- [bitor](bitor.md) - Bit-wise OR
+- [bitxor](bitxor.md) - Bit-wise XOR
 - [cat](cat.md) - Concatenate arrays.
 - [colon](colon.md) - colon operator ':'.
 - [ctranspose](ctranspose.md) - Returns complex conjugate transpose: ' operator.

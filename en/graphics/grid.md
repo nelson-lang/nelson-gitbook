@@ -7,12 +7,14 @@ Display or hide axes grid lines.
 - grid
 - grid('on')
 - grid('off')
+- grid('minor')
 - grid(ax, ...)
 
 ## Input argument
 
 - 'on' - displays the major grid line.
 - 'off' - removes all grid lines.
+- 'minor' - toggles the visibility of the minor grid lines.
 - ax - Target object: axes.
 
 ## Description

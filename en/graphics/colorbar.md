@@ -5,8 +5,10 @@ Colorbar showing color scale.
 ## Syntax
 
 - colorbar()
+- colorbar('off')
 - colorbar(..., propertyName, propertyValue)
 - colorbar(target, ...)
+- colorbar(target, 'off')
 - c = colorbar(...)
 
 ## Input argument
@@ -14,6 +16,7 @@ Colorbar showing color scale.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 - target - Target: axes.
+- 'off' - deletes colorbar associated with the current axes.
 
 ## Output argument
 

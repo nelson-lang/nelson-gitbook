@@ -86,6 +86,22 @@ axis('off')
 
 <img src="patch_2_242108D8.svg" align="middle"/>
 
+Nerfertiti 3D mask
+
+```matlab
+nefertiti_directory = [modulepath('graphics', 'root'), '/examples/nefertiti-mask/'];
+load([nefertiti_directory, 'nefertiti-mask.nh5']);
+figure('Color', [1, 1, 1]);
+patch('Faces', Faces, 'Vertices', Vertices, 'FaceVertexCData', Colors, ...
+      'EdgeColor', 'none', ...
+      'FaceColor', 'interp', 'FaceAlpha', 1);
+axis equal
+axis off
+view([0, 0, 1]);
+```
+
+<img src="patch_3_968CD83F.svg" align="middle"/>
+
 ## See also
 
 [surf](surf.md), [colormap](colormap.md).

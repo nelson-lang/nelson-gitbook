@@ -4,6 +4,45 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.4 (2023-04-27)
+
+### Added
+
+- Qt 6.5 support.
+- [802](http://github.com/Nelson-numerical-software/nelson/issues/802): `bitand`, `bitor`, `bitxor` functions.
+- `issorted` Determine if array is sorted.
+- `num2cell` Convert array to cell array with consistently sized cells.
+- `hggroup` Create group object.
+- `colorbar('off')` deletes colorbar associated with the current axes.
+- `waterfall` Waterfall plot.
+- `ribbon` ribbon plot.
+- figure property: `GraphicsSmoothing` Axes graphics smoothing.
+- text property: `FontSmoothing`.
+- surf property: `MeshStyle`.
+- chatGPT example.
+- graphics examples about 3D polygons:
+  - utah teapot example.
+  - nefertiti mask example.
+  - stanford bunny example.
+
+### Changed
+
+- Windows installer: allow to install for current user (no administrator rights required).
+- `figure` without axes has a color.
+- `figure` can be created not visible.
+- `grid minor` toggles the visibility of the minor grid lines.
+- `mesh` reworked.
+- extraction on empty matrix for compatibility.
+- `ones`, `eye`, `inf`, `nan` allow negative index (replaced by 0) for compatibility.
+- Windows 64 bits version embeds Qt 6.5.
+- allows `if` with empty statements
+
+### Fixed
+
+- `weboptions` did not manage HeaderFields as expected.
+- update `cacert.pem`.
+- [895](http://github.com/Nelson-numerical-software/nelson/issues/895): Micromamba linux build fails after packages updates.
+
 ## 0.7.3 (2023-03-28)
 
 ### Added

@@ -29,6 +29,7 @@ graphics functions
 - [gray](gray.md) - Gray colormap array.
 - [grid](grid.md) - Display or hide axes grid lines.
 - [groot](groot.md) - graphic root object.
+- [hggroup](hggroup.md) - Create group object.
 - [hold](hold.md) - Retain current plot when adding new plots.
 - [hot](hot.md) - Hot colormap array.
 - [image](image.md) - Display image from array.
@@ -56,6 +57,7 @@ graphics functions
 - [quiver](quiver.md) - Vector plot.
 - [refresh](refresh.md) - Redraw current figure.
 - [rgbplot](rgbplot.md) - Plot colormap.
+- [ribbon](ribbon.md) - Ribbon plot.
 - [saveas](saveas.md) - Save figure to specific file format.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).
 - [semilogy](semilogy.md) - Semilog plot (y-axis has log scale).
@@ -72,6 +74,7 @@ graphics functions
 - [validatecolor](validatecolor.md) - Validate color values.
 - [view](view.md) - Camera line of sigh.
 - [viridis](viridis.md) - Viridis colormap array.
+- [waterfall](waterfall.md) - waterfall plot.
 - [white](white.md) - white colormap array.
 - [winter](winter.md) - Winter colormap array.
 - [xlabel](xlabel.md) - Label x-axis.
