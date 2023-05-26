@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.5 (2023-05-27)
+
+### Changed
+
+- `BS::thread_pool` v3.5.0
+- `simdutf` to 3.2.9.
+- `{fmt}` to 10.0.0.
+- `fast_float` to 4.0.0.
+- `cast` reworked to be more compatible.
+- `colon` reworked to be more compatible (operator uses unary overload).
+- CMake 3.26.3 on Windows
+
 ## 0.7.4 (2023-04-27)
 
 ### Added
