@@ -4,6 +4,43 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.9 (2023-09-18)
+
+### Changed
+
+- [#488](http://github.com/Nelson-numerical-software/nelson/issues/488) overloading functions:
+
+  - all types including basic types can be overloaded.
+  - overload is now fully compatible using '@' syntax and precedence.
+  - all operators were reworked to support compatible overload.
+
+- `.*` operator optimized.
+- `conv2` optimized.
+- Boost 1.82 used on Windows.
+
+- Internals:
+
+  - `class`, `function_handle` types reworked.
+  - types order updated.
+  - rework validator module.
+  - functions finder reworked.
+  - file watcher reworked.
+  - operators reworked.
+  - `repmat`, `ones`, `NaN`, `Inf` reworked.
+
+- `function_handle` display is more compatible.
+
+### Added
+
+- [#491](http://github.com/Nelson-numerical-software/nelson/issues/491) Anonymous functions
+- `--withoutfilewatcher` executable argument. disable file watcher for current session.
+- `<--FILE WATCHER REQUIRED -->` test_run option.
+- [#853](http://github.com/Nelson-numerical-software/nelson/issues/853) MacOs 13 ventura CI
+
+### Fixed
+
+- [#916](http://github.com/Nelson-numerical-software/nelson/issues/916) openblas micromamba on macos required to link libgfortran
+
 ## 0.7.5 (2023-05-27)
 
 ### Changed
@@ -21,7 +58,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - Qt 6.5 support.
-- [802](http://github.com/Nelson-numerical-software/nelson/issues/802): `bitand`, `bitor`, `bitxor` functions.
+- [#802](http://github.com/Nelson-numerical-software/nelson/issues/802): `bitand`, `bitor`, `bitxor` functions.
 - `issorted` Determine if array is sorted.
 - `num2cell` Convert array to cell array with consistently sized cells.
 - `hggroup` Create group object.
@@ -53,7 +90,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `weboptions` did not manage HeaderFields as expected.
 - update `cacert.pem`.
-- [895](http://github.com/Nelson-numerical-software/nelson/issues/895): Micromamba linux build fails after packages updates.
+- [#895](http://github.com/Nelson-numerical-software/nelson/issues/895): Micromamba linux build fails after packages updates.
 
 ## 0.7.3 (2023-03-28)
 
@@ -63,7 +100,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `ancestor` Ancestor of graphics object.
 - hexadecimal color code managed example: '#DDFF00'.
 - `validatecolor` Validate color values.
-- [851](http://github.com/Nelson-numerical-software/nelson/issues/851): Build with micromamba environment (linux and macOS)
+- [#851](http://github.com/Nelson-numerical-software/nelson/issues/851): Build with micromamba environment (linux and macOS)
 
 ### Changed
 
@@ -74,10 +111,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-- [866](http://github.com/Nelson-numerical-software/nelson/issues/866): Close menu on figure can crash on linux.
+- [#866](http://github.com/Nelson-numerical-software/nelson/issues/866): Close menu on figure can crash on linux.
 - graphic hierarchy was not fully destroyed after `close` or `delete`.
 - labels were not displayed correctly when the logarithmic scale was enabled.
-- [869](http://github.com/Nelson-numerical-software/nelson/issues/869): missing help files in linux package.
+- [#869](http://github.com/Nelson-numerical-software/nelson/issues/869): missing help files in linux package.
 
 ## 0.7.2 (2023-02-27)
 
@@ -107,9 +144,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `drawnow`: Update figures and process callbacks.
 - `DrawLater` property added to `figure` graphics object.
 - `interp1` linear interpolation 1D.
-- [736](http://github.com/Nelson-numerical-software/nelson/issues/736): `bone`, `cool`, `copper`, `hot`, `jet`, `pink`, `turbo`, `viridis`, `white` colormaps.
+- [#736](http://github.com/Nelson-numerical-software/nelson/issues/736): `bone`, `cool`, `copper`, `hot`, `jet`, `pink`, `turbo`, `viridis`, `white` colormaps.
 - `Visible` property to `figure` graphics object.
-- [809](http://github.com/Nelson-numerical-software/nelson/issues/809): `NumberTitle` property to `figure` graphics object.
+- [#809](http://github.com/Nelson-numerical-software/nelson/issues/809): `NumberTitle` property to `figure` graphics object.
 - `AlphaMap` and `Colormap` properties added to `Axes` graphics object.
 - `LineStyleOrder` property of 'axes' used for `plot` and `plot3`.
 - `ColorOrderIndex` and `LineStyleOrderIndex` properties added to `axes` graphics object.
@@ -120,10 +157,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `imwrite` Write image to graphics file.
 - `imshow` Display image.
 - `surface` Primitive surface plot.
-- [808](http://github.com/Nelson-numerical-software/nelson/issues/808): `pcolor` Pseudocolor plot.
+- [#808](http://github.com/Nelson-numerical-software/nelson/issues/808): `pcolor` Pseudocolor plot.
 - `mesh` Mesh surface plot.
 - `meshz` Mesh surface plot with curtain.
-- [807](http://github.com/Nelson-numerical-software/nelson/issues/807): `loglog` Log-log scale plot.
+- [#807](http://github.com/Nelson-numerical-software/nelson/issues/807): `loglog` Log-log scale plot.
 - `CHANGELOG` 0.7.x family.
 
 ### Changed

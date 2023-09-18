@@ -19,6 +19,7 @@ Inequality, ~= operator
 ## Description
 
   <p><b>C = ne(A, B)</b> performs inequality operation: A ~= B variables.</p>
+  <p><b>ne</b> compares both real and imaginary parts of numeric arrays.</p>
 
 ## Example
 

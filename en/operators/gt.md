@@ -20,6 +20,7 @@ greater than, > operator.
 
   <p><b>C = gt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than B.</p>
   <p/>
+  <p><b>gt</b> compares only the real part of numeric arrays.</p>
 
 ## Examples
 

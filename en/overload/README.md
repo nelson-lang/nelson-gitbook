@@ -6,4 +6,4 @@ Overloading
 
 Overloading capabilities on functions and operators.
 
-- [overloadbasictypes](overloadbasictypes.md) - Modify overloading behavior
+- [overloading](overloading.md) - Customizing Operators and Functions

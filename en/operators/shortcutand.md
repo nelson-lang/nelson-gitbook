@@ -4,7 +4,6 @@ Short circuit 'AND' operator, &&
 
 ## Syntax
 
-- C = shortcutand(A, B)
 - C = A && B
 
 ## Input argument
@@ -18,7 +17,7 @@ Short circuit 'AND' operator, &&
 
 ## Description
 
-  <p><b>C = shortcutand(A, B)</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
+  <p><b>C = A &amp;&amp; B</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
 
 ## Example
 
@@ -26,13 +25,11 @@ Short circuit 'AND' operator, &&
 A = [6 8 0; 0 3 89; 15 0 0]
 B = [66 56 0; 11 33 55; -11 0 0]
 C = A && B
-D = shortcutand(B, A)
-C == D
 ```
 
 ## See also
 
-[and](and.md).
+[and](and.md), [||](shortcutor.md).
 
 ## History
 

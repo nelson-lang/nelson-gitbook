@@ -18,6 +18,7 @@ less than or equal, ≤ operator.
 ## Description
 
   <p><b>C = le(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than or equal to B.</p>
+  <p><b>le</b> compares only the real part of numeric arrays.</p>
   <p/>
 
 ## Examples

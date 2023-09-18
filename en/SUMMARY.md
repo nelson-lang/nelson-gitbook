@@ -149,7 +149,7 @@
 
 - [overload](./overload/README.md)
 
-  - [overloadbasictypes](./overload/overloadbasictypes.md)
+  - [overloading](./overload/overloading.md)
 
 - [logical](./logical/README.md)
 
@@ -246,6 +246,7 @@
 
 - [function_handle](./function_handle/README.md)
 
+  - [Anonymous Functions](./function_handle/anonymous_function.md)
   - [func2str](./function_handle/func2str.md)
   - [isfunction_handle](./function_handle/isfunction_handle.md)
   - [str2func](./function_handle/str2func.md)
@@ -967,16 +968,18 @@
   - [whosmat](./matio/whosmat.md)
 
 - [json](./json/README.md)
+
   - [jsondecode](./json/jsondecode.md)
   - [jsonencode](./json/jsonencode.md)
   - [jsonprettyprint](./json/jsonprettyprint.md)
 
-* [file_archiver](./file_archiver/README.md)
+- [file_archiver](./file_archiver/README.md)
 
   - [unzip](./file_archiver/unzip.md)
   - [zip](./file_archiver/zip.md)
 
-* [audio](./audio/README.md)
+- [audio](./audio/README.md)
+
   - [audiodevinfo](./audio/audiodevinfo.md)
   - [audioinfo](./audio/audioinfo.md)
   - [audiometadata](./audio/audiometadata.md)
@@ -1084,11 +1087,12 @@
   - [webwrite](./webtools/webwrite.md)
 
 - [geometry](./geometry/README.md)
+
   - [rotx](./geometry/rotx.md)
   - [roty](./geometry/roty.md)
   - [rotz](./geometry/rotz.md)
 
-* [com_engine](./com_engine/README.md)
+- [com_engine](./com_engine/README.md)
   - [actxcontrollist](./com_engine/actxcontrollist.md)
   - [actxGetRunningSrv](./com_engine/actxGetRunningSrv.md)
   - [actxserver](./com_engine/actxserver.md)

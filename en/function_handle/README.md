@@ -6,6 +6,7 @@ Function_handle functions
 
 function_handle functions
 
+- [Anonymous Functions](anonymous_function.md) - Anonymous Functions.
 - [func2str](func2str.md) - Return a function handle constructed from a string.
 - [isfunction_handle](isfunction_handle.md) - Checks if value is a function handle.
 - [str2func](str2func.md) - Returns a function handle from a string.
