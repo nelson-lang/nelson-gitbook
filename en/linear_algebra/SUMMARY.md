@@ -1,4 +1,5 @@
 - [linear_algebra](README.md)
+  - [balance](balance.md)
   - [bandwidth](bandwidth.md)
   - [chol](chol.md)
   - [cond](cond.md)
@@ -11,6 +12,7 @@
   - [isbanded](isbanded.md)
   - [ishermitian](ishermitian.md)
   - [issymmetric](issymmetric.md)
+  - [kron](kron.md)
   - [logm](logm.md)
   - [orth](orth.md)
   - [planerot](planerot.md)

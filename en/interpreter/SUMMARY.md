@@ -8,6 +8,7 @@
   - [iskeyword](iskeyword.md)
   - [keyboard](keyboard.md)
   - [max_recursion_depth](max_recursion_depth.md)
+  - [numeric types](numeric_types.md)
   - [parsefile](parsefile.md)
   - [parsestring](parsestring.md)
   - [switch](switch.md)

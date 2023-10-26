@@ -4,6 +4,7 @@
   - [base2dec](base2dec.md)
   - [bin2dec](bin2dec.md)
   - [bin2num](bin2num.md)
+  - [blkdiag](blkdiag.md)
   - [cast](cast.md)
   - [ceil](ceil.md)
   - [circshift](circshift.md)

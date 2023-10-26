@@ -11,6 +11,7 @@ elementary functions
 - [base2dec](base2dec.md) - Convert number in a base to decimal.
 - [bin2dec](bin2dec.md) - Convert number in base 2 to decimal.
 - [bin2num](bin2num.md) - Convert two's complement binary string to number.
+- [blkdiag](blkdiag.md) - Block diagonal matrix
 - [cast](cast.md) - Converts variable to a different data type
 - [ceil](ceil.md) - Round up
 - [circshift](circshift.md) - Circular shift

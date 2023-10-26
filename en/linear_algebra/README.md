@@ -6,6 +6,7 @@ Linear algebra
 
 linear algebra functions
 
+- [balance](balance.md) - Diagonal scaling to improve eigenvalue accuracy.
 - [bandwidth](bandwidth.md) - Lower and upper matrix bandwidth.
 - [chol](chol.md) - Cholesky factorization.
 - [cond](cond.md) - Condition number for inversion.
@@ -18,6 +19,7 @@ linear algebra functions
 - [isbanded](isbanded.md) - Determine if matrix is within specific bandwidth.
 - [ishermitian](ishermitian.md) - Computes if matrix is hermitian or skew-hermitian.
 - [issymmetric](issymmetric.md) - Computes if matrix is symmetric.
+- [kron](kron.md) - Kronecker tensor product.
 - [logm](logm.md) - Computes the matrix logarithm of a square matrix.
 - [orth](orth.md) - Range space of a matrix.
 - [planerot](planerot.md) - Givens plane rotation.

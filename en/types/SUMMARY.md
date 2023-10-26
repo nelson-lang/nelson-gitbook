@@ -15,6 +15,7 @@
   - [isinteger](isinteger.md)
   - [islogical](islogical.md)
   - [isnumeric](isnumeric.md)
+  - [isobject](isobject.md)
   - [isreal](isreal.md)
   - [issingle](issingle.md)
   - [issparse](issparse.md)

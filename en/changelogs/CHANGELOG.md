@@ -4,6 +4,59 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.10 (2023-10-27)
+
+### Added
+
+- private functions/folders support (to limit the scope of a function).
+- syntax extended to facilitate the creation of literal integers without loss of precision:
+  - example: `18446744073709551615u64`, `18446744073709551615i64` (similar to rust syntax)
+- `flintmax('like', p)` syntax added.
+- `int64`, `uint64` warning about double-precision.
+- [#570](http://github.com/Nelson-numerical-software/nelson/issues/570) balance: Diagonal scaling to improve eigenvalue accuracy.
+- `isobject` Check whether the input is an object.
+- `cell2mat` Convert cell array of matrices to single matrix.
+- [#948](http://github.com/Nelson-numerical-software/nelson/issues/948) `blkdiag` Create a block diagonal matrix from 2D matrices of different sizes.
+- `kron` Kronecker tensor product.
+- `strjust` Justify strings.
+
+- control system module (part 1):
+
+  - [#967](http://github.com/Nelson-numerical-software/nelson/issues/967) control system module template.
+  - [#944](http://github.com/Nelson-numerical-software/nelson/issues/944) `mag2db`, `db2mag`, `pow2db`, `db2pow` functions.
+  - [#968](http://github.com/Nelson-numerical-software/nelson/issues/968) `zp2tf`: Zero-pole to transfer function conversion.
+  - [#954](http://github.com/Nelson-numerical-software/nelson/issues/954) `dcgain`: Low-frequency (DC) gain of LTI system.
+  - [#965](http://github.com/Nelson-numerical-software/nelson/issues/965) `padecoef`: Padé approximation of time delays.
+  - [#958](http://github.com/Nelson-numerical-software/nelson/issues/958) `esort`: Sort continuous-time poles by real part.
+  - `dsort`: Sort discrete-time poles by magnitude.
+  - [#962](http://github.com/Nelson-numerical-software/nelson/issues/962) `lyap`: Continuous Lyapunov equation solution.
+  - `dlyap`: Discret Lyapunov equation solution.
+  - `abcdchk` Verifies the dimensional compatibility of matrices A, B, C, and D.
+  - `ss`: State-space model.
+  - `tf`: Transfer function model (display, horzcat, vertcat, size).
+  - `isct`: checks if dynamic system model is in continuous time.
+  - `isdt`: checks if dynamic system model is in discret time.
+  - `isstatic`: checks if model is static or dynamic.
+  - `islti`: checks if variable is an linear model tf, ss or zpk.
+  - `issiso`: checks if dynamic system model is a single input and single output.
+  - `zero`: Zeros and gain of SISO dynamic system.
+  - `pole`: Poles of dynamic system.
+  - `bode`: Bode plot of frequency response, magnitude and phase data.
+
+### Changed
+
+- some modules (nig, modules_manager, help_browser) reworked to use private functions.
+- Windows 64 bit CI and release use Qt 6.6.0
+
+### Fixed
+
+- [#940](http://github.com/Nelson-numerical-software/nelson/issues/940) title bar on dark theme on Windows.
+- help viewer using dark theme.
+- adjust position `xlabel` on `figure`.
+- [#976](http://github.com/Nelson-numerical-software/nelson/issues/976) wrong output when reading a file with fscanf with size argument.
+- [#975](http://github.com/Nelson-numerical-software/nelson/issues/975) Legend color (and width) is not matching that of curve in figure.
+- [#988](http://github.com/Nelson-numerical-software/nelson/issues/988) anonymous function serialization '.^' and '^' are inversed.
+
 ## 0.7.9 (2023-09-18)
 
 ### Changed

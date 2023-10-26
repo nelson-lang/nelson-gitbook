@@ -22,6 +22,7 @@ module about types management.
 - [isinteger](isinteger.md) - Return true if variable var is a integer type array.
 - [islogical](islogical.md) - Return true if variable var is a logical.
 - [isnumeric](isnumeric.md) - Return true if variable var is a numeric array.
+- [isobject](isobject.md) - Return true if variable var is an object.
 - [isreal](isreal.md) - Return true if all imaginary part is a zero array.
 - [issingle](issingle.md) - Return true if variable var is a single matrix.
 - [issparse](issparse.md) - Return true if variable var is a sparse array.

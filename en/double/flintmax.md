@@ -7,6 +7,11 @@ Largest consecutive integer in floating-point format.
 - R = flintmax()
 - R = flintmax('double')
 - R = flintmax('single')
+- R = flintmax('like', V)
+
+## Input argument
+
+- V - a double or single variable.
 
 ## Output argument
 
@@ -21,6 +26,7 @@ Largest consecutive integer in floating-point format.
 ```matlab
 flintmax
 flintmax('double')
+flintmax('like', pi)
 flintmax('single')
 ```
 

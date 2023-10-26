@@ -25,6 +25,7 @@
   - [strfind](strfind.md)
   - [string](string.md)
   - [strings](strings.md)
+  - [strjust](strjust.md)
   - [strlength](strlength.md)
   - [strncmp](strncmp.md)
   - [strncmpi](strncmpi.md)

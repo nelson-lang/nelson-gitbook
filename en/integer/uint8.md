@@ -28,7 +28,7 @@ B = uint8(A)
 
 ## See also
 
-[intmax](intmax.md), [intmin](intmax.md).
+[intmax](intmax.md), [intmin](intmax.md), [numeric types](../interpreter/numeric_types.md).
 
 ## History
 

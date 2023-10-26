@@ -37,7 +37,7 @@ B = double(A)
 
 ## See also
 
-[char](../string/char.md), [single](../single/single.md).
+[char](../string/char.md), [single](../single/single.md), [numeric types](../interpreter/numeric_types.md).
 
 ## History
 

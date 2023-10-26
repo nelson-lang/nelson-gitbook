@@ -30,7 +30,7 @@ A = single(pi)
 
 ## See also
 
-[char](../string/char.md), [double](../double/double.md).
+[char](../string/char.md), [double](../double/double.md), [numeric types](../interpreter/numeric_types.md).
 
 ## History
 

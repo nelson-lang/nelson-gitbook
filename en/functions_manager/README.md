@@ -16,6 +16,7 @@ functions manager
 - [ismex](ismex.md) - Check for the existence of a mex function.
 - [macroargs](macroargs.md) - Returns variables names of a function.
 - [path](path.md) - Modify or display Nelson’s load path.
+- [private functions](private_functions.md) - Private functions.
 - [rehash](rehash.md) - Reinitialize Nelson’s search path directory cache.
 - [restoredefaultpath](restoredefaultpath.md) - Restore Nelson’s path to its initial state at startup.
 - [rmpath](rmpath.md) - Remove directory from search path.

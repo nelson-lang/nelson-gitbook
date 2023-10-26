@@ -32,6 +32,7 @@ string type functions
 - [strfind](strfind.md) - Find a string in another.
 - [string](string.md) - string array constructor.
 - [strings](strings.md) - Create string array without characters.
+- [strjust](strjust.md) - Justify strings
 - [strlength](strlength.md) - Length of strings in cell of strings or string array.
 - [strncmp](strncmp.md) - Compares first n characters of strings.
 - [strncmpi](strncmpi.md) - Compares first n characters of strings (case sensitive).

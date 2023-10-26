@@ -9,6 +9,7 @@
   - [ismex](ismex.md)
   - [macroargs](macroargs.md)
   - [path](path.md)
+  - [private functions](private_functions.md)
   - [rehash](rehash.md)
   - [restoredefaultpath](restoredefaultpath.md)
   - [rmpath](rmpath.md)
