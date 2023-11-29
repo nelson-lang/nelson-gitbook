@@ -17,6 +17,7 @@ elementary functions
 - [circshift](circshift.md) - Circular shift
 - [complex](complex.md) - Creates an complex number.
 - [conj](conj.md) - Complex conjugate
+- [deal](deal.md) - Distribute inputs to outputs.
 - [dec2base](dec2base.md) - Convert decimal number to another base.
 - [dec2bin](dec2bin.md) - Convert decimal number to base 2.
 - [dec2hex](dec2hex.md) - Convert decimal number to base 16.
@@ -84,6 +85,7 @@ elementary functions
 - [sqrt](sqrt.md) - Square root.
 - [squeeze](squeeze.md) - Remove dimensions of length 1.
 - [sub2ind](sub2ind.md) - Matrix subscript values to linear index
+- [substruct](substruct.md) - Create structure argument for subsasgn or subsref
 - [swapbytes](swapbytes.md) - Swap byte ordering.
 - [toeplitz](toeplitz.md) - Toeplitz matrix
 - [tril](tril.md) - Lower triangular part of matrix

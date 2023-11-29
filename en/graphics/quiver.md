@@ -9,7 +9,7 @@ Vector plot.
 - quiver(..., LineSpec)
 - quiver(..., propertyName, propertyValue)
 - quiver(parent, ...)
-- go = quiver(...)
+- gr = quiver(...)
 
 ## Input argument
 
@@ -24,7 +24,7 @@ Vector plot.
 
 ## Output argument
 
-- ax - list of graphics object: arrows.
+- gr - group of graphics object: arrows.
 
 ## Description
 

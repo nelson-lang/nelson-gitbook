@@ -10,6 +10,7 @@ graphics functions
 - [autumn](autumn.md) - Autumn colormap array.
 - [axes](axes.md) - Create cartesian axes.
 - [axis](axis.md) - Set axis limits and aspect ratios.
+- [bar](bar.md) - Bar graph.
 - [bone](bone.md) - Bone colormap array.
 - [cla](cla.md) - Clear axes.
 - [clf](clf.md) - Clear figure.
@@ -24,12 +25,14 @@ graphics functions
 - [cylinder](cylinder.md) - Create cylinder.
 - [drawnow](drawnow.md) - Update figures and process callbacks
 - [figure](figure.md) - Creates an figure window.
+- [fill](fill.md) - Create filled 2-D patches.
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
 - [gray](gray.md) - Gray colormap array.
 - [grid](grid.md) - Display or hide axes grid lines.
 - [groot](groot.md) - graphic root object.
 - [hggroup](hggroup.md) - Create group object.
+- [hist](hist.md) - Histogram plot.
 - [hold](hold.md) - Retain current plot when adding new plots.
 - [hot](hot.md) - Hot colormap array.
 - [image](image.md) - Display image from array.
@@ -51,6 +54,7 @@ graphics functions
 - [parula](parula.md) - Parula colormap array.
 - [patch](patch.md) - Create patches of colored polygons
 - [pcolor](pcolor.md) - Pseudocolor plot.
+- [pie](pie.md) - Legacy pie chart.
 - [pink](pink.md) - Pink colormap array.
 - [plot](plot.md) - Linear 2-D plot.
 - [plot3](plot3.md) - 3-D line plot.
@@ -59,11 +63,14 @@ graphics functions
 - [rgbplot](rgbplot.md) - Plot colormap.
 - [ribbon](ribbon.md) - Ribbon plot.
 - [saveas](saveas.md) - Save figure to specific file format.
+- [scatter](scatter.md) - Scatter plot.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).
 - [semilogy](semilogy.md) - Semilog plot (y-axis has log scale).
 - [sphere](sphere.md) - Create sphere.
 - [spring](spring.md) - Spring colormap array.
 - [spy](spy.md) - Visualize sparsity pattern of matrix.
+- [stairs](stairs.md) - Stairstep graph.
+- [stem](stem.md) - Plot discrete sequence data.
 - [subplot](subplot.md) - Create axes in tiled positions.
 - [summer](summer.md) - Summer colormap array.
 - [surf](surf.md) - surface plot.

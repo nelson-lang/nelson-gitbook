@@ -4,6 +4,41 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.11 (2023-11-29)
+
+### Added
+
+- `hist` Histogram plot.
+- `bar` Bar graph.
+- `scatter` Scatter plot.
+- `stem` Plot discrete sequence data.
+- `stairs` Stairstep graph.
+- `fill` 2-D patch.
+- `pie` legacy pie chart.
+- `subsref` Subscripted reference.
+- `subsasgn` Redefine subscripted assignment.
+- `substruct` Create structure argument for subsasgn or subsref.
+- `deal` Distribute inputs to outputs.
+- Intel compiler support.
+
+### Changed
+
+- axis limits recalculate with `hggroup`.
+- `axes` forces focus on current axe.
+- function_handle parenthese precedence.
+- `patch` and `fill` manages `FaceAlpha`.
+- visibility title and labels.
+- object constructor must be in '@' directory and no more in parent directory (compatibility).
+- `subsref`, `subsasgn` compatibility with `substruct`.
+- To display a percent sign, you need to use a double percent sign (%%) in the format string (compatibility).
+- French translation updated (100%, Thanks to weblate contributors)
+- [#997](http://github.com/Nelson-numerical-software/nelson/issues/997) Macos BigSur Github CI support removed.
+- Qt 6.6.1 on win64 CI build.
+
+### Fixed
+
+- `A = []; A(false) = zeros(3, 0)` did not return an empty matrix but an error.
+
 ## 0.7.10 (2023-10-27)
 
 ### Added

@@ -97,6 +97,7 @@ Writes data to a file.
       <td>Character vector.</td>
     </tr>
   </table>
+  <p>To display a percent sign, you need to use a double percent sign (%%) in the format string.</p>
 
 ## Examples
 
@@ -123,6 +124,12 @@ for idx = 1 : 100
  fprintf([reverseStr, msg]);
  reverseStr = repmat(sprintf('\b'), 1, length(msg));
 end
+```
+
+Display a percent sign
+
+```matlab
+fprintf(1, '%d%%.', 95)
 ```
 
 ## See also

@@ -102,6 +102,21 @@ view([0, 0, 1]);
 
 <img src="patch_3_968CD83F.svg" align="middle"/>
 
+Alpha channel
+
+```matlab
+x = [1 3 4 3 1 0];
+y = [0 0 2 4 4 2];
+z = [0 0 0 0 0 0];
+figure();
+hold on
+patch(x,y,z,'cyan','FaceAlpha',0.3)
+patch(x+2,y,z,'magenta','FaceAlpha',0.3)
+patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
+```
+
+<img src="patch_4_F3B9E78.svg" align="middle"/>
+
 ## See also
 
 [surf](surf.md), [colormap](colormap.md).

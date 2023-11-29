@@ -36,7 +36,9 @@ Operators
 - [rdivide](rdivide.md) - Right division, ./ operator
 - [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &&
 - [shortcutor](shortcutor.md) - Short circuit 'OR' operator, ||
+- [subsasgn](subsasgn.md) - Redefine subscripted assignment.
 - [subsindex](subsindex.md) - Convert an object to an index vector.
+- [subsref](subsref.md) - Subscripted reference.
 - [mtimes](times.md) - Element wise multiplication, .\* operator
 - [transpose](transpose.md) - Returns vector or matrix transpose: .' operator.
 - [uminus](uminus.md) - Unary minus, - operator

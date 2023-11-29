@@ -87,6 +87,7 @@ Writes data to a string.
       <td>Character vector.</td>
     </tr>
   </table>
+  <p>To display a percent sign, you need to use a double percent sign (%%) in the format string.</p>
 
 ## Examples
 
@@ -100,6 +101,12 @@ sprintf("an example of %s.", "text")
 
 ```matlab
 sprintf('an value %g.', pi)
+```
+
+Display a percent sign
+
+```matlab
+sprintf('%d%%.', 95)
 ```
 
 ## See also
