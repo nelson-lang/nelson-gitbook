@@ -58,7 +58,7 @@ libgit2 (https://libgit2.org/)
 ## Example
 
 ```matlab
-url = 'https://github.com/Nelson-numerical-software/module_skeleton.git';
+url = 'https://github.com/nelson-lang/module_skeleton.git';
 destination = [tempdir(), 'demo_repo'];
 if isdir(destination)
     rmdir(destination, 's');

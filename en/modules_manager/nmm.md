@@ -34,7 +34,7 @@ Nelson Modules Manager.
   <p><b>st = nmm('list')</b> get list of installed modules.</p>
   <p/>
   <p><b>nmm('install', git_url)</b> install a distant module.</p>
-  <p>About git_url, in this example 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0'</p>
+  <p>About git_url, in this example 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'</p>
   <p>'#v1.0.0' is defined as #&lt;commit-ish&gt;, it allows to clone exactly an commit.</p>
   <p>The commit-ish can be a tag (exact version), and an sha1 (exac commit) or an branch name.</p>
   <p>Without commit-ish, master branch will be used.</p>
@@ -59,7 +59,7 @@ Deploy module_skeleton_basic template
 
 ```matlab
 if ~ismodule('module_skeleton_basic')
-    nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
+    nmm('install', 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0');
     macro_sum(3, 4)
     nmm('uninstall', 'module_skeleton_basic')
 end
@@ -69,7 +69,7 @@ Package easily a module
 
 ```matlab
 if ~ismodule('module_skeleton_basic')
-    nmm('install', 'https://github.com/Nelson-numerical-software/module_skeleton_basic.git#v1.0.0');
+    nmm('install', 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0');
 end
 package_filename = nmm('package', 'module_skeleton_basic', tempdir())
 ```
