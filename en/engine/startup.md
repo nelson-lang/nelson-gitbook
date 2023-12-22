@@ -1,14 +1,19 @@
 # startup
 
-User startup file.
+User-defined startup script for Nelson.
 
 ## Description
 
-  <p><b>startup.m</b> in the preference directory is automatically loaded at startup of NelSon.</p>
+  <p><b>startup.m</b> in Nelson initiates user-specified commands upon Nelson startup.</p>
+  <p>It executes any file named <b>startup.m</b> that is located on the search path.</p>
+  <p>To leverage this feature, create a file named <b>startup.m</b> in the userpath folder, which is included in the Nelson search path.</p>
+  <p>Embed commands within this file that you wish to be executed during Nelson startup.</p>
+  <p>This could involve setting physical constants, defining defaults for graphics properties, incorporating engineering conversion factors, or predefining any other elements desired in your workspace.</p>
+  <p>Customizing the <b>startup.m</b> file allows you to establish a tailored environment every time Nelson is launched.</p>
 
 ## See also
 
-[prefdir](../core/prefdir.md), [finish](finish.md).
+[finish.m](finish.md), [exit](../core/exit.md), [quit](../core/quit.md), [path](../functions_manager/path.md), [userpath](../functions_manager/userpath.md).
 
 ## History
 

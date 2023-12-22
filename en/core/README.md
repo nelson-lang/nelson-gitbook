@@ -12,7 +12,7 @@ core functions
 - [evalin](evalin.md) - Evaluate Nelson code in string in an specified scope.
 - [execstr](execstr.md) - Execute Nelson code in strings.
 - [exist](exist.md) - Check for the existence.
-- [exit](exit.md) - Exit from current Nelson application
+- [exit](exit.md) - Terminate Nelson program (same as quit)
 - [inputname](inputname.md) - Get variable name of function input.
 - [isunicodesupported](isunicodesupported.md) - Detect whether the current terminal supports Unicode.
 - [license](license.md) - Get license information for Nelson.

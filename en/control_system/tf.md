@@ -14,6 +14,7 @@ Constructs a transfer function model.
 - numerator - polynomial coefficients: a row vector or as a cell array of row vectors.
 - denominator - polynomial coefficients: a row vector or as a cell array of row vectors.
 - Ts - Sampling time Ts, default: in seconds
+- sysIn - LTI model.
 
 ## Output argument
 
@@ -39,10 +40,6 @@ numerator = 10;
 denominator = [20, 33, 44];
 Ts = 1.5;
 sys = tf(numerator, denominator, Ts)
-```
-
-```matlab
-%%%
 ```
 
 ## See also

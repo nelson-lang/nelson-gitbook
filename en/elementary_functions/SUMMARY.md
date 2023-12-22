@@ -16,6 +16,7 @@
   - [dec2hex](dec2hex.md)
   - [exp](exp.md)
   - [factorial](factorial.md)
+  - [filter](filter.md)
   - [find](find.md)
   - [fix](fix.md)
   - [flip](flip.md)

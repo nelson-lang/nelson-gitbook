@@ -1,28 +1,18 @@
 # exit
 
-Exit from current Nelson application
+Terminate Nelson program (same as quit)
 
 ## Syntax
 
 - exit
 - exit(status)
-
-## Output argument
-
-- status - an optional integer value passed to the operating system as Nelson’s exit status code.
+- exit('force')
+- exit('cancel')
+- exit(status, 'force')
 
 ## Description
 
-  <p><b>exit</b> terminates the current session of Nelson.</p>
-  <p>The default value is zero.</p>
-
-## Example
-
-Beware this example will close Nelson
-
-```matlab
-exit(33)
-```
+  <p> This function is equivalent to the <b>quit</b> function.</p>
 
 ## See also
 

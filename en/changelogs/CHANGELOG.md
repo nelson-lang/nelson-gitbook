@@ -4,6 +4,68 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.7.12 (2023-12-23)
+
+### Changed
+
+- [#674](http://github.com/nelson-lang/nelson/issues/674) Migrate sources to nelson-lang github organization.
+- [#775](http://github.com/nelson-lang/nelson/issues/775) `quit`, `exit`, `startup.m`, `finish.m` behavior reworked for compatibility.
+- JSON for Modern C++ version 3.11.3 used on all platforms.
+- {fmt} 10.1.1 (6f95000) used.
+- Fedora 39 CI support.
+
+### Fixed
+
+- `cellfun` did not check type of second input argument.
+
+### Added
+
+- `filter` 1-D digital filter.
+
+- control system module (part 2):
+  - `freqresp` Evaluate system response over a grid of frequencies.
+  - `step` Simulate continuous time model of a state space model or transfer function.
+  - `lsim` Plot simulated time response of dynamic system to arbitrary inputs.
+  - `dc2` Convert model from discrete to continuous time.
+  - `c2d` Convert model from continuous to discrete time.
+  - `augstate` Append state vector to output vector.
+  - `kalman` Design Kalman filter for state estimation.
+  - `evalfr` Evaluate system response at specific frequency.
+  - `nyquist` Nyquist plot of frequency response.
+  - `ord2` Generate continuous second-order systems.
+  - `append` Group models by appending their inputs and outputs.
+  - `feedback` Feedback connection of multiple models.
+  - `parallel` Parallel connection of two models.
+  - `series` Series connection of two models.
+  - `ssdelete` Remove inputs, outputs and states from state-space system.
+  - `ssselect` Extract subsystem from larger system.
+  - `tzero` Invariant zeros of linear system.
+  - `tf2ss` Convert transfer function filter parameters to state-space form.
+  - `ss2tf` Convert state-space representation to transfer function.
+  - `minreal` Minimal realization or pole-zero cancellation.
+  - `ssdata` Access state-space model data.
+  - `tfdata` Access transfer function data.
+  - `gram` Controllability and observability Gramians.
+  - `hsvd` Hankel singular values of a state-space or transfer function model.
+  - `damp` Natural frequency and damping ratio.
+  - `balreal` Gramian-based balancing of state-space realizations.
+  - `lqry` Form linear-quadratic (LQ) state-feedback regulator with output weighting.
+  - [#957](http://github.com/nelson-lang/nelson/issues/957) `dlqr` Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.
+  - [#961](http://github.com/nelson-lang/nelson/issues/961) `lqed` Discrete Kalman estimator design from continuous cost function.
+  - [#960](http://github.com/nelson-lang/nelson/issues/960) `lqe` Kalman estimator design for continuous-time systems.
+  - [#955](http://github.com/nelson-lang/nelson/issues/955) `lqr` Linear-Quadratic Regulator (LQR) design.
+  - [#943](http://github.com/nelson-lang/nelson/issues/943) `dare` Solve discrete-time algebraic Riccati equations.
+  - [#951](http://github.com/nelson-lang/nelson/issues/951) `care` Continuous-time algebraic Riccati equation solution.
+  - [#945](http://github.com/nelson-lang/nelson/issues/945) `ctrbf` Compute controllability staircase form.
+  - [#946](http://github.com/nelson-lang/nelson/issues/946) `ctrb` Controllability of state-space model.
+  - [#963](http://github.com/nelson-lang/nelson/issues/963) `obsv` Observability matrix.
+  - [#964](http://github.com/nelson-lang/nelson/issues/964) `obsvf` Compute observability staircase form.
+  - [#949](http://github.com/nelson-lang/nelson/issues/949) `acker` Pole placement gain selection using Ackermann's formula.
+  - [#950](http://github.com/nelson-lang/nelson/issues/950) `bdschur` Block-diagonal Schur factorization.
+  - [#952](http://github.com/nelson-lang/nelson/issues/952) `cloop` Close unity feedback loops.
+  - [#953](http://github.com/nelson-lang/nelson/issues/953) `compreal` Companion realization of transfer functions.
+  - [#959](http://github.com/nelson-lang/nelson/issues/959) `gensig` Create periodic signals for simulating system response.
+
 ## 0.7.11 (2023-11-29)
 
 ### Added

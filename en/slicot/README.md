@@ -1,6 +1,6 @@
-# SLICOT
+# Subroutine Library In COntrol Theory
 
-SLICOT
+Subroutine Library In COntrol Theory
 
 ## Description
 

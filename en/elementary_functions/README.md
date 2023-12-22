@@ -23,6 +23,7 @@ elementary functions
 - [dec2hex](dec2hex.md) - Convert decimal number to base 16.
 - [exp](exp.md) - Exponential
 - [factorial](factorial.md) - Factorial function
+- [filter](filter.md) - 1-D digital filter
 - [find](find.md) - Find Non-zero Elements
 - [fix](fix.md) - Round towards zero
 - [flip](flip.md) - Flip order of elements
