@@ -21,6 +21,7 @@ linear algebra functions
 - [issymmetric](issymmetric.md) - Computes if matrix is symmetric.
 - [kron](kron.md) - Kronecker tensor product.
 - [logm](logm.md) - Computes the matrix logarithm of a square matrix.
+- [lu](lu.md) - LU matrix factorization.
 - [orth](orth.md) - Range space of a matrix.
 - [planerot](planerot.md) - Givens plane rotation.
 - [rank](rank.md) - Rank of matrix.

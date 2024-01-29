@@ -6,7 +6,9 @@ Gui module
 
 functions about gui
 
+- [commandhistory](commandhistory.md) - Command History
 - [errordlg](errordlg.md) - Creates a error dialog box.
+- [filebrowser](filebrowser.md) - Current Folder Browser
 - [helpdlg](helpdlg.md) - Creates a help dialog box.
 - [inserthtml](inserthtml.md) - Insert html in GUI console.
 - [lookandfeel](lookandfeel.md) - default current application look and feel.
@@ -15,3 +17,4 @@ functions about gui
 - [questdlg](questdlg.md) - Creates a question dialog box.
 - [uigetdir](uigetdir.md) - Opens dialog box to select a directory.
 - [helpdlg](warndlg.md) - Creates a warning dialog box.
+- [workspace](workspace.md) - Workspace Browser

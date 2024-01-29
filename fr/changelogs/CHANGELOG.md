@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## UNRELEASED
+
+### Added
+
+- Completion on Graphic handle, struct, handle, class (recursive)
+
+## 1.1.0 (2024-01-29)
+
+### Added
+
+- Nelson Desktop environment: file browser, command history, workspace browser, desktop layout.
+- [#1074](http://github.com/nelson-lang/nelson/issues/1074) Roadmap v2.0.0
+- [#1044](http://github.com/nelson-lang/nelson/issues/1044): LU matrix factorization.
+- [#1080](http://github.com/nelson-lang/nelson/issues/1080) `LineStyle`, `LineWidth` properties were not implemented for surface objects.
+- `sky`, `abyss` colormaps.
+
 ## 1.0.0 (2024-01-04)
 
 Nelson 1.0.0 has been released.

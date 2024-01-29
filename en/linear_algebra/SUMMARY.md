@@ -14,6 +14,7 @@
   - [issymmetric](issymmetric.md)
   - [kron](kron.md)
   - [logm](logm.md)
+  - [lu](lu.md)
   - [orth](orth.md)
   - [planerot](planerot.md)
   - [rank](rank.md)

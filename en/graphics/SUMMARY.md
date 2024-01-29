@@ -1,4 +1,5 @@
 - [graphics](README.md)
+  - [abyss](abyss.md)
   - [ancestor](ancestor.md)
   - [autumn](autumn.md)
   - [axes](axes.md)
@@ -59,6 +60,7 @@
   - [scatter](scatter.md)
   - [semilogx](semilogx.md)
   - [semilogy](semilogy.md)
+  - [sky](sky.md)
   - [sphere](sphere.md)
   - [spring](spring.md)
   - [spy](spy.md)

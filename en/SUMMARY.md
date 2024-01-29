@@ -515,6 +515,7 @@
   - [issymmetric](./linear_algebra/issymmetric.md)
   - [kron](./linear_algebra/kron.md)
   - [logm](./linear_algebra/logm.md)
+  - [lu](./linear_algebra/lu.md)
   - [orth](./linear_algebra/orth.md)
   - [planerot](./linear_algebra/planerot.md)
   - [rank](./linear_algebra/rank.md)
@@ -758,7 +759,9 @@
 
 - [gui](./gui/README.md)
 
+  - [commandhistory](./gui/commandhistory.md)
   - [errordlg](./gui/errordlg.md)
+  - [filebrowser](./gui/filebrowser.md)
   - [helpdlg](./gui/helpdlg.md)
   - [inserthtml](./gui/inserthtml.md)
   - [lookandfeel](./gui/lookandfeel.md)
@@ -767,6 +770,7 @@
   - [questdlg](./gui/questdlg.md)
   - [uigetdir](./gui/uigetdir.md)
   - [helpdlg](./gui/warndlg.md)
+  - [workspace](./gui/workspace.md)
 
 - [qml_engine](./qml_engine/README.md)
 
@@ -800,6 +804,7 @@
 
 - [graphics](./graphics/README.md)
 
+  - [abyss](./graphics/abyss.md)
   - [ancestor](./graphics/ancestor.md)
   - [autumn](./graphics/autumn.md)
   - [axes](./graphics/axes.md)
@@ -860,6 +865,7 @@
   - [scatter](./graphics/scatter.md)
   - [semilogx](./graphics/semilogx.md)
   - [semilogy](./graphics/semilogy.md)
+  - [sky](./graphics/sky.md)
   - [sphere](./graphics/sphere.md)
   - [spring](./graphics/spring.md)
   - [spy](./graphics/spy.md)

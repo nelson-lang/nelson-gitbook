@@ -6,6 +6,7 @@ Graphics functions
 
 graphics functions
 
+- [abyss](abyss.md) - Abyss colormap array.
 - [ancestor](ancestor.md) - Ancestor of graphics object.
 - [autumn](autumn.md) - Autumn colormap array.
 - [axes](axes.md) - Create cartesian axes.
@@ -66,6 +67,7 @@ graphics functions
 - [scatter](scatter.md) - Scatter plot.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).
 - [semilogy](semilogy.md) - Semilog plot (y-axis has log scale).
+- [sky](sky.md) - Sky colormap array.
 - [sphere](sphere.md) - Create sphere.
 - [spring](spring.md) - Spring colormap array.
 - [spy](spy.md) - Visualize sparsity pattern of matrix.

@@ -1,5 +1,7 @@
 - [gui](README.md)
+  - [commandhistory](commandhistory.md)
   - [errordlg](errordlg.md)
+  - [filebrowser](filebrowser.md)
   - [helpdlg](helpdlg.md)
   - [inserthtml](inserthtml.md)
   - [lookandfeel](lookandfeel.md)
@@ -8,3 +10,4 @@
   - [questdlg](questdlg.md)
   - [uigetdir](uigetdir.md)
   - [helpdlg](warndlg.md)
+  - [workspace](workspace.md)
