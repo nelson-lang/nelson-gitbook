@@ -6,6 +6,7 @@
   - [execstr](execstr.md)
   - [exist](exist.md)
   - [exit](exit.md)
+  - [feature](feature.md)
   - [inputname](inputname.md)
   - [isunicodesupported](isunicodesupported.md)
   - [license](license.md)

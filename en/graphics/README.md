@@ -52,6 +52,7 @@ graphics functions
 - [mesh](mesh.md) - Mesh surface plot.
 - [meshz](meshz.md) - Mesh surface plot with curtain.
 - [newplot](newplot.md) - Prepare to produce a new plot.
+- [pan](pan.md) - Enable pan mode.
 - [parula](parula.md) - Parula colormap array.
 - [patch](patch.md) - Create patches of colored polygons
 - [pcolor](pcolor.md) - Pseudocolor plot.
@@ -63,6 +64,7 @@ graphics functions
 - [refresh](refresh.md) - Redraw current figure.
 - [rgbplot](rgbplot.md) - Plot colormap.
 - [ribbon](ribbon.md) - Ribbon plot.
+- [rotate3d](rotate3d.md) - Enable rotate mode.
 - [saveas](saveas.md) - Save figure to specific file format.
 - [scatter](scatter.md) - Scatter plot.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).
@@ -92,3 +94,4 @@ graphics functions
 - [ylim](ylim.md) - set or get y-axis limits.
 - [zlabel](zlabel.md) - Label z-axis.
 - [zlim](zlim.md) - set or get z-axis limits.
+- [zoom](zoom.md) - Enable zoom mode.

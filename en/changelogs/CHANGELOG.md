@@ -5,11 +5,45 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## UNRELEASED
+## 1.2.0 (2024-02-25)
 
 ### Added
 
-- Completion on Graphic handle, struct, handle, class (recursive)
+- Recursive completion on Graphic handle, struct, handle, class (properties, methods).
+- Adding links between documents about mex and supported compilers.
+- GitHub CI for macOS Sonoma (Apple Silicon) support.
+- `Export to ...` context menu for console and text editor as pdf.
+- `CTRL + Mouse wheel` or `CTRL + +/-` to zoom in/out on console, editor, help.
+- Toolbar for figure with print, zoom in, zoom out, rotation, pan, restore axes.
+- `zoom `, `pan `, `rotate3d ` functions.
+- `MenuBar`, `ToolBar` figure properties.
+- Window menu on graphic window, list all others available windows.
+- `feature` builtin (undocument features, debug, tests, ...) content can change with next releases.
+- `GridAlpha`, `GridColor`, `View` properties for Axes.
+- CTRL+C in help viewer, copy selected text.
+- `checkupdate` function and check update menu.
+- `isScalarStringArray` iinternal API C++ method.
+
+### Changed
+
+- Clicking on an axis automatically sets it as the current axes object.
+- Clicking on an figure automatically sets it as the current figure object.
+- `saveas` exports the figure as a PDF page with centered alignment.
+- Default color of grid for axes.
+- Default figure size updated.
+- Default `MarkerFaceColor` value for compatibility.
+- view function returns azimuth and elevation values.
+- Camera view reworked.
+- Minimal screen resolution supported 800x600.
+
+### Fixed
+
+- Change directory with file browser line editor did not work as expected.
+- Template to create a function with file browser was wrong.
+- Do not allow to select multiple variable in workspace browser.
+- File browser checks if files with the extension ".m" have a valid name before enable 'run' context menu.
+- Paste in editor with multiple tab.
+- Starting the Nelson desktop was taking longer than necessary.
 
 ## 1.1.0 (2024-01-29)
 

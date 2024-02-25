@@ -25,6 +25,7 @@ Creates an figure window.
 ## Description
 
   <p><b>figure</b> creates figure.</p>
+  <p>Clicking on an figure automatically sets it as the current figure object.</p>
   <p/>
   <p><b>Properties</b>:</p>
   <p/>
@@ -35,6 +36,7 @@ Creates an figure window.
   <p><b>CurrentAxes</b>: Target axes in current figure: Axes object.</p>
   <p><b>Name</b>: Name (default '').</p>
   <p><b>GraphicsSmoothing</b>: GraphicsSmoothing (default 'on').</p>
+  <p><b>MenuBar</b>:  Figure menu bar display: 'none' or 'figure' (default).</p>
   <p><b>NextPlot</b>: Directive on how to add next plot: 'new', 'replace', 'replacechildren' or 'add' (default).</p>
   <p><b>Number</b>: Figure Number.</p>
   <p><b>NumberTitle</b>: Use number title: 'off' or 'on' (default).</p>
@@ -42,6 +44,7 @@ Creates an figure window.
   <p><b>Position</b>: Location and size of drawable area: [left, bottom, width, height]</p>
   <p>'width' and 'height' define the size of the window. 'left' and 'bottom' define the position of the first addressable pixel in the lower left corner of the window</p>
   <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
+  <p><b>ToolBar</b>:  Figure toolbar display: 'none', 'auto' (default), 'figure'.</p>
   <p><b>Type</b>: Type 'figure'.</p>
   <p><b>UserData</b>: User data: array or [] (default).</p>
   <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
@@ -67,6 +70,8 @@ figure('Name', 'Hello')
 | Version | Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
+
+|1.2.0|Clicking on an figure automatically sets it as the current figure object.|
 
 ## Author
 

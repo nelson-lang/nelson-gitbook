@@ -13,6 +13,7 @@ core functions
 - [execstr](execstr.md) - Execute Nelson code in strings.
 - [exist](exist.md) - Check for the existence.
 - [exit](exit.md) - Terminate Nelson program (same as quit)
+- [feature](feature.md) - undocumented features.
 - [inputname](inputname.md) - Get variable name of function input.
 - [isunicodesupported](isunicodesupported.md) - Detect whether the current terminal supports Unicode.
 - [license](license.md) - Get license information for Nelson.

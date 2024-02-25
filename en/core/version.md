@@ -17,6 +17,7 @@ Return the version of Nelson.
 
 - '-date' - a string to get release date
 - '-description' - a string to get release description
+- '-semantic' - a string to get semantic version
 - '-release' - a string to get release number
 - '-compiler' - a string to get compiler used to build Nelson
 - '-number' - a string to get semantic version
@@ -55,7 +56,11 @@ ver_date = version('-release')
 ```
 
 ```matlab
-[ver_major, ver_minor, ver_maintenance, ver_build] = version('-number')
+ver_version_vector] = version('-semantic')
+```
+
+```matlab
+ver_version_vector = version('-number')
 ```
 
 ```matlab
@@ -75,6 +80,8 @@ compiler_info = version('-compiler')
 | Version | Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
+
+|1.2.0|`-semantic` option added.|
 
 ## Author
 

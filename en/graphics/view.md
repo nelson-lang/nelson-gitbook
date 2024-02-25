@@ -4,9 +4,12 @@ Camera line of sigh.
 
 ## Syntax
 
-- view(dim)
 - view(az, el)
+- view([az, el])
+- view([x, y, z])
+- view(dim)
 - view(ax, ...)
+- [az, el] = view(...)
 
 ## Input argument
 
@@ -59,6 +62,8 @@ view(2)
 | Version | Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
+
+|1.2.0|azimuth and elevation as output arguments.|
 
 ## Author
 

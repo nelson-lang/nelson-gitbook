@@ -48,6 +48,7 @@
   - [execstr](./core/execstr.md)
   - [exist](./core/exist.md)
   - [exit](./core/exit.md)
+  - [feature](./core/feature.md)
   - [inputname](./core/inputname.md)
   - [isunicodesupported](./core/isunicodesupported.md)
   - [license](./core/license.md)
@@ -850,6 +851,7 @@
   - [mesh](./graphics/mesh.md)
   - [meshz](./graphics/meshz.md)
   - [newplot](./graphics/newplot.md)
+  - [pan](./graphics/pan.md)
   - [parula](./graphics/parula.md)
   - [patch](./graphics/patch.md)
   - [pcolor](./graphics/pcolor.md)
@@ -861,6 +863,7 @@
   - [refresh](./graphics/refresh.md)
   - [rgbplot](./graphics/rgbplot.md)
   - [ribbon](./graphics/ribbon.md)
+  - [rotate3d](./graphics/rotate3d.md)
   - [saveas](./graphics/saveas.md)
   - [scatter](./graphics/scatter.md)
   - [semilogx](./graphics/semilogx.md)
@@ -890,6 +893,7 @@
   - [ylim](./graphics/ylim.md)
   - [zlabel](./graphics/zlabel.md)
   - [zlim](./graphics/zlim.md)
+  - [zoom](./graphics/zoom.md)
 
 - [help_browser](./help_browser/README.md)
 
@@ -1111,6 +1115,7 @@
 
 - [webtools](./webtools/README.md)
 
+  - [checkupdate](./webtools/checkupdate.md)
   - [repo](./webtools/repo.md)
   - [weboptions](./webtools/weboptions.md)
   - [webread](./webtools/webread.md)

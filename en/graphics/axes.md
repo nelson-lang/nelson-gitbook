@@ -25,6 +25,7 @@ Create cartesian axes.
 
   <p><b>axes</b> creates axes in the current figure and set it as the current axes.</p>
   <p><b>axes(cax)</b> set current axes.</p>
+  <p>Clicking on an axis automatically sets it as the current axes object.</p>
   <p>Properties:</p>
   <p/>
   <p><b>ALim</b> Alpha limits: two-element vector of the form [amin, amax].</p>
@@ -53,6 +54,8 @@ Create cartesian axes.
   <p><b>FontSize</b> Font size: scalar numeric value</p>
   <p><b>FontUnits</b> Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).</p>
   <p><b>FontWeight</b> Character thickness: 'bold' or 'normal' (default).</p>
+  <p><b>GridAlpha</b> Grid-line transparency (0.15 (default) or value in the range [0, 1]).</p>
+  <p><b>GridColor</b> Color of grid lines ([0.15, 0.15, 0.15] (default) or RGB triplet).</p>
   <p><b>GridLineStyle</b> Line style for grid lines: '--' , ':', '-.', 'none' or '-' (default).</p>
   <p><b>HandleVisibility</b> Visibility of object handle: 'on' (default) or 'off'.</p>
   <p><b>HitTest</b> Response to captured mouse clicks: 'on' (default) or 'off'.</p>
@@ -81,6 +84,7 @@ Create cartesian axes.
   <p><b>Type</b> Type of graphics object: 'axes'.</p>
   <p><b>Units</b>  Position units: 'inches', 'centimeters', 'points', 'pixels', 'characters' or 'normalized' (default).</p>
   <p><b>UserData</b> User data: array or []</p>
+  <p><b>View</b> Azimuth and elevation of view (default: [0 90])</p>
   <p><b>Visible</b> State of visibility: 'on' (default) or 'off'.</p>
   <p><b>XAxisLocation</b> x-axis location: 'top', 'origin' or 'bottom' (default).</p>
   <p><b>XColor</b>Color of axis line, tick values, and labels:  RGB triplet.</p>
@@ -135,7 +139,7 @@ plot(ax1, x, y1);
 plot(ax2, x, y2);
 ```
 
-<img src="axes_AC0709B1.svg" align="middle"/>
+<img src="axes_9DF55E1C.svg" align="middle"/>
 
 ## See also
 
@@ -146,6 +150,10 @@ plot(ax2, x, y2);
 | Version | Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
+
+|1.2.0|Clicking on an axis automatically sets it as the current axes object.|
+
+|--|GridAlpha, GridColor propertiew for Axes.|
 
 ## Author
 

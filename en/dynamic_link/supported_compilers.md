@@ -18,6 +18,10 @@
   </p>
   <p>- XCode C/C++ compilers.</p>
 
+## See also
+
+[configuremsvc](configuremsvc.md), [vswhere](vswhere.md), [configuremingw](configuremingw.md).
+
 ## Author
 
 Allan CORNET

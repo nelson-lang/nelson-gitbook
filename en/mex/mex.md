@@ -24,6 +24,7 @@ Build MEX function
 
 ## Description
 
+  <p>To use mex, C/C++ compiler must be available and configured. See Supported C/C++ compilers section for more information.</p>
   <p>Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.</p>
   <p>A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.</p>
   <p>Nelson have also his own C++ API to manage more easily internal nelson's objects.</p>
@@ -50,7 +51,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.m'])
 
 ## See also
 
-[dlgenerategateway](../dynamic_link/dlgenerategateway.md).
+[Supported C/C++ compilers](../dynamic_link/supported_compilers.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
 ## History
 
