@@ -27,7 +27,7 @@ vswhere()
 
 ## See also
 
-[havecompiler](havecompiler.md).
+[havecompiler](havecompiler.md), [Supported C/C++ compilers](2_supported_compilers.md).
 
 ## History
 

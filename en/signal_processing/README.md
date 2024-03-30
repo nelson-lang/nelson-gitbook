@@ -16,4 +16,5 @@ Functions to analyze sampled signals.
 - [mag2db](mag2db.md) - Convert a magnitude to decibels (dB).
 - [pow2db](pow2db.md) - Convert power to decibel.
 - [sinc](sinc.md) - Sinc function.
+- [xcorr2](xcorr2.md) - 2-D cross-correlation.
 - [zp2tf](zp2tf.md) - Zero-pole to transfer function conversion.

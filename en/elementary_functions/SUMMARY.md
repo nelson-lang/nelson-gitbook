@@ -74,6 +74,7 @@
   - [rosser](rosser.md)
   - [rot90](rot90.md)
   - [round](round.md)
+  - [shiftdim](shiftdim.md)
   - [sign](sign.md)
   - [size](size.md)
   - [sqrt](sqrt.md)

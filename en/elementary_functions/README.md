@@ -81,6 +81,7 @@ elementary functions
 - [rosser](rosser.md) - Classic symmetric eigenvalue test problem.
 - [rot90](rot90.md) - Rotate array 90 degrees.
 - [round](round.md) - Round to nearest integer
+- [shiftdim](shiftdim.md) - Shift array dimensions
 - [sign](sign.md) - Find the sign function of a number.
 - [size](size.md) - Size of an object.
 - [sqrt](sqrt.md) - Square root.

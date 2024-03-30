@@ -27,7 +27,7 @@ C = cov(M)
 
 ## See also
 
-[var](var.html), [mean](mean.html).
+[var](var.md), [mean](mean.md).
 
 ## History
 

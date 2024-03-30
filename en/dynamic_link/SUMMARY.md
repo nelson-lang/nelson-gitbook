@@ -1,4 +1,6 @@
 - [dynamic_link](README.md)
+  - [Build C/C++ code on the fly](1_c_cpp_build_on_fly.md)
+  - [Supported C/C++ compilers](2_supported_compilers.md)
   - [cmake](cmake.md)
   - [configuremingw](configuremingw.md)
   - [configuremsvc](configuremsvc.md)
@@ -30,5 +32,4 @@
   - [libpointer_used](libpointer_used.md)
   - [loadcompilerconf](loadcompiler.md)
   - [removecompilerconf](removecompilerconf.md)
-  - [Supported C/C++ compilers](supported_compilers.md)
   - [vswhere](vswhere.md)

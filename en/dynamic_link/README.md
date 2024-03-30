@@ -6,6 +6,8 @@ Dynamic link
 
 By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.
 
+- [Build C/C++ code on the fly](1_c_cpp_build_on_fly.md) - Build C/C++ code on the fly
+  2_supported_compilers.md Supported C/C++ compilers
 - [cmake](cmake.md) - call CMake tool
 - [configuremingw](configuremingw.md) - Configure Nelson to use MinGW as default C compiler
 - [configuremsvc](configuremsvc.md) - Configure Nelson to use visual studio as default compiler
@@ -37,5 +39,4 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [libpointer_used](libpointer_used.md) - Returns list of current used libpointer handle.
 - [loadcompilerconf](loadcompiler.md) - load compiler configuration.
 - [removecompilerconf](removecompilerconf.md) - Remove used compiler configuration (on Windows).
-  supported_compilers.md Supported C/C++ compilers
 - [vswhere](vswhere.md) - Locate Visual Studio 2017, 2019 and newer installations

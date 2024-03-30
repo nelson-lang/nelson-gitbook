@@ -9,4 +9,5 @@
   - [mag2db](mag2db.md)
   - [pow2db](pow2db.md)
   - [sinc](sinc.md)
+  - [xcorr2](xcorr2.md)
   - [zp2tf](zp2tf.md)

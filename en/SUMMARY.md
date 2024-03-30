@@ -226,6 +226,7 @@
   - [endsWith](./string/endsWith.md)
   - [int2str](./string/int2str.md)
   - [isletter](./string/isletter.md)
+  - [isspace](./string/isspace.md)
   - [isStringScalar](./string/isStringScalar.md)
   - [mat2str](./string/mat2str.md)
   - [matches](./string/matches.md)
@@ -420,6 +421,7 @@
   - [rosser](./elementary_functions/rosser.md)
   - [rot90](./elementary_functions/rot90.md)
   - [round](./elementary_functions/round.md)
+  - [shiftdim](./elementary_functions/shiftdim.md)
   - [sign](./elementary_functions/sign.md)
   - [size](./elementary_functions/size.md)
   - [sqrt](./elementary_functions/sqrt.md)
@@ -510,6 +512,7 @@
   - [diff](./linear_algebra/diff.md)
   - [eig](./linear_algebra/eig.md)
   - [expm](./linear_algebra/expm.md)
+  - [gradient](./linear_algebra/gradient.md)
   - [inv](./linear_algebra/inv.md)
   - [isbanded](./linear_algebra/isbanded.md)
   - [ishermitian](./linear_algebra/ishermitian.md)
@@ -528,16 +531,19 @@
   - [subspace](./linear_algebra/subspace.md)
   - [svd](./linear_algebra/svd.md)
   - [trace](./linear_algebra/trace.md)
+  - [vecnorm](./linear_algebra/vecnorm.md)
 
 - [statistics](./statistics/README.md)
 
   - [corrcoef](./statistics/corrcoef.md)
   - [cov](./statistics/cov.md)
   - [mean](./statistics/mean.md)
+  - [normpdf](./statistics/normpdf.md)
   - [var](./statistics/var.md)
 
 - [polynomial_functions](./polynomial_functions/README.md)
 
+  - [deconv](./polynomial_functions/deconv.md)
   - [poly](./polynomial_functions/poly.md)
   - [polyder](./polynomial_functions/polyder.md)
   - [polyfit](./polynomial_functions/polyfit.md)
@@ -558,6 +564,7 @@
   - [mag2db](./signal_processing/mag2db.md)
   - [pow2db](./signal_processing/pow2db.md)
   - [sinc](./signal_processing/sinc.md)
+  - [xcorr2](./signal_processing/xcorr2.md)
   - [zp2tf](./signal_processing/zp2tf.md)
 
 - [slicot](./slicot/README.md)
@@ -594,6 +601,7 @@
   - [dot](./special_functions/dot.md)
   - [factor](./special_functions/factor.md)
   - [gamma](./special_functions/gamma.md)
+  - [gammaln](./special_functions/gammaln.md)
   - [gcd](./special_functions/gcd.md)
   - [interp1](./special_functions/interp1.md)
   - [peaks](./special_functions/peaks.md)
@@ -819,6 +827,8 @@
   - [colorbar](./graphics/colorbar.md)
   - [colormap](./graphics/colormap.md)
   - [colstyle](./graphics/colstyle.md)
+  - [contour](./graphics/contour.md)
+  - [contour3](./graphics/contour3.md)
   - [cool](./graphics/cool.md)
   - [copper](./graphics/copper.md)
   - [copygraphics](./graphics/copygraphics.md)
@@ -1053,6 +1063,8 @@
 
 - [dynamic_link](./dynamic_link/README.md)
 
+  - [Build C/C++ code on the fly](./dynamic_link/1_c_cpp_build_on_fly.md)
+  - [Supported C/C++ compilers](./dynamic_link/2_supported_compilers.md)
   - [cmake](./dynamic_link/cmake.md)
   - [configuremingw](./dynamic_link/configuremingw.md)
   - [configuremsvc](./dynamic_link/configuremsvc.md)
@@ -1084,7 +1096,6 @@
   - [libpointer_used](./dynamic_link/libpointer_used.md)
   - [loadcompilerconf](./dynamic_link/loadcompiler.md)
   - [removecompilerconf](./dynamic_link/removecompilerconf.md)
-  - [Supported C/C++ compilers](./dynamic_link/supported_compilers.md)
   - [vswhere](./dynamic_link/vswhere.md)
 
 - [mex](./mex/README.md)
@@ -1151,6 +1162,7 @@
   - [iscom](./com_engine/iscom.md)
 
 - [control_system](./control_system/README.md)
+
   - [abcdchk](./control_system/abcdchk.md)
   - [acker](./control_system/acker.md)
   - [append](./control_system/append.md)
@@ -1212,3 +1224,8 @@
   - [tfdata](./control_system/tfdata.md)
   - [tzero](./control_system/tzero.md)
   - [zero](./control_system/zero.md)
+
+- [python_engine](./python_engine/README.md)
+  - [pyargs](./python_engine/pyargs.md)
+  - [pyenv](./python_engine/pyenv.md)
+  - [pyrun](./python_engine/pyrun.md)

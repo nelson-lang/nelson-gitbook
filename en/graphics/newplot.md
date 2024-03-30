@@ -4,8 +4,8 @@ Prepare to produce a new plot.
 
 ## Syntax
 
-- h = newplot()
-- h = newplot(ax)
+- go = newplot()
+- go = newplot(ax)
 
 ## Input argument
 

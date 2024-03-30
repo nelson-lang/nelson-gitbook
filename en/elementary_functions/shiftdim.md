@@ -1,0 +1,47 @@
+# shiftdim
+
+Shift array dimensions
+
+## Syntax
+
+- B = shiftdim(A, n)
+- B = shiftdim(A)
+- [B, m] = shiftdim(A)
+
+## Input argument
+
+- A - Input array: vector, matrix or multidimensional array.
+- n - Number of positions: integer value.
+
+## Output argument
+
+- B - vector, matrix, or multidimensional array.
+- m - Number of dimensions removed: non-negative integer.
+
+## Description
+
+  <p><b>shiftdim(A, n)</b> reorganizes the dimensions of an array A by n positions.</p>
+  <p>Specifically, when n is a positive integer, it shifts the dimensions to the left, and when n is a negative integer, it shifts the dimensions to the right.</p>
+
+## Example
+
+```matlab
+A = rand(2, 3, 4);
+size(A)
+% Shift the dimensions of array A by 2 positions to the left
+B = shiftdim(A, 2)
+```
+
+## See also
+
+[permute](permute.md), [reshape](reshape.md), [squeeze](round.md).
+
+## History
+
+| Version | Description     |
+| ------- | --------------- |
+| 1.3.0   | initial version |
+
+## Author
+
+Allan CORNET

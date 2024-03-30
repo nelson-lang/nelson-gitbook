@@ -8,6 +8,7 @@
   - [diff](diff.md)
   - [eig](eig.md)
   - [expm](expm.md)
+  - [gradient](gradient.md)
   - [inv](inv.md)
   - [isbanded](isbanded.md)
   - [ishermitian](ishermitian.md)
@@ -26,3 +27,4 @@
   - [subspace](subspace.md)
   - [svd](svd.md)
   - [trace](trace.md)
+  - [vecnorm](vecnorm.md)

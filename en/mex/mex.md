@@ -51,7 +51,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.m'])
 
 ## See also
 
-[Supported C/C++ compilers](../dynamic_link/supported_compilers.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
+[Supported C/C++ compilers](../dynamic_link/2_supported_compilers.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
 ## History
 

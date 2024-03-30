@@ -10,6 +10,7 @@
   - [endsWith](endsWith.md)
   - [int2str](int2str.md)
   - [isletter](isletter.md)
+  - [isspace](isspace.md)
   - [isStringScalar](isStringScalar.md)
   - [mat2str](mat2str.md)
   - [matches](matches.md)

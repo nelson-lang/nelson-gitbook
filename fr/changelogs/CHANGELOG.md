@@ -5,6 +5,45 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.0 (2024-03-30)
+
+### Added
+
+- Python interface (part 1):
+
+  - CMake: Optional Python3 detection.
+  - `pyenv` Change default environment of Python interpreter.
+  - `pyrun` Run Python statements from Nelson.
+  - Major types conversions are compatible (numpy in the next upcoming version).
+
+- ArchLinux packaging (https://aur.archlinux.org/packages/nelson-git).
+- `contour` Contour plot of matrix.
+- `contour3` 3-D contour plot.
+- `shiftdim` Shift array dimensions.
+- `xcorr2` 2-D cross-correlation.
+- `deconv` Deconvolution and polynomial division.
+- `vecnorm` Vector-wise norm.
+- `normpdf` Normal probability density function.
+- [#310](http://github.com/nelson-lang/nelson/issues/310) `gammaln` Logarithm of gamma function.
+- [#1112](http://github.com/nelson-lang/nelson/issues/1112) `gradient` Numerical gradient.
+- [#1126](http://github.com/nelson-lang/nelson/issues/1126) `isspace` Determine which characters are space characters.
+
+### Changed
+
+- [#1110](http://github.com/nelson-lang/nelson/issues/1110) Eigen master branch (352ede96e4c331daae4e1be9a5f3f50fff951b8d) ready to use.
+- [#1134](http://github.com/nelson-lang/nelson/issues/1134) [CI] MacOS X Ventura disabled (Install dependencies fails)
+- `struct` supports scalar string array as field name.
+
+### Fixed
+
+- [#1110](http://github.com/nelson-lang/nelson/issues/1110) add help about build and use C/C++ on fly.
+- [#1124](http://github.com/nelson-lang/nelson/issues/1124) unexpected result from long statements on Multiple Lines.
+- [#1127](http://github.com/nelson-lang/nelson/issues/1127) Nelson could crash if an mxn characters is displayed in the variable browser.
+- [#1125](http://github.com/nelson-lang/nelson/issues/1125) Unsupported colon operator with char operands.
+- Missing 'zoom in', 'zoom out' icons for help viewer in linux package.
+- `gcd` without argument returned wrong error message.
+- [#1133](http://github.com/nelson-lang/nelson/issues/1133) [CI] [ARCH LINUX] Warning about MPI.
+
 ## 1.2.0 (2024-02-25)
 
 ### Added

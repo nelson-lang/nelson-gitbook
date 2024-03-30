@@ -15,6 +15,7 @@ linear algebra functions
 - [diff](diff.md) - Differences and approximate derivatives.
 - [eig](eig.md) - Eigenvalues and eigenvectors.
 - [expm](expm.md) - Computes the matrix exponential of a square matrix.
+- [gradient](gradient.md) - Numerical gradient.
 - [inv](inv.md) - Matrix inverse.
 - [isbanded](isbanded.md) - Determine if matrix is within specific bandwidth.
 - [ishermitian](ishermitian.md) - Computes if matrix is hermitian or skew-hermitian.
@@ -33,3 +34,4 @@ linear algebra functions
 - [subspace](subspace.md) - Angle between two subspaces.
 - [svd](svd.md) - Singular Value Decomposition.
 - [trace](trace.md) - Matrix trace.
+- [vecnorm](vecnorm.md) - Vector-wise norm.

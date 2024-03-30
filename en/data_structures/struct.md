@@ -56,6 +56,8 @@ date_st.year = 1974)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+|1.3.0|Scalar String allowed as field name.|
+
 ## Author
 
 Allan CORNET

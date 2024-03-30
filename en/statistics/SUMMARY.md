@@ -2,4 +2,5 @@
   - [corrcoef](corrcoef.md)
   - [cov](cov.md)
   - [mean](mean.md)
+  - [normpdf](normpdf.md)
   - [var](var.md)

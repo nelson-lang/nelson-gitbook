@@ -4,6 +4,7 @@
   - [dot](dot.md)
   - [factor](factor.md)
   - [gamma](gamma.md)
+  - [gammaln](gammaln.md)
   - [gcd](gcd.md)
   - [interp1](interp1.md)
   - [peaks](peaks.md)

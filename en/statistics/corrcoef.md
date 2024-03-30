@@ -27,7 +27,7 @@ R = corrcoef(M)
 
 ## See also
 
-[cov](cov.html), [mean](mean.html).
+[cov](cov.md), [mean](mean.md).
 
 ## History
 

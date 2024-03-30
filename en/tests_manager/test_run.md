@@ -69,6 +69,8 @@ Runs tests
   <p><b>&lt;--NATIVE ARCHITECTURE TEST REQUIRED--&gt;</b> This test will be executed if application's build and architecture are same.</p>
   <p><b>&lt;--FILE WATCHER REQUIRED--&gt;</b> This test will be executed if file watcher is available.</p>
   <p/>
+  <p><b>&lt;--PYTHON ENVIRONMENT REQUIRED--&gt;</b> This test will be executed if file watcher is available.</p>
+  <p/>
   <p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
   <p><b>test_run</b> uses n th workers to execute and speed up tests executions.</p>
   <p>Tests with <b>&lt;--SEQUENTIAL TEST REQUIRED--&gt;</b> are evaluated last.</p>
@@ -97,6 +99,8 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 | Version | Description     |
 | ------- | --------------- |
 | 1.0.0   | initial version |
+
+|1.3.0|PYTHON ENVIRONMENT REQUIRED tag added|
 
 ## Author
 

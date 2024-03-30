@@ -13,6 +13,8 @@
   - [colorbar](colorbar.md)
   - [colormap](colormap.md)
   - [colstyle](colstyle.md)
+  - [contour](contour.md)
+  - [contour3](contour3.md)
   - [cool](cool.md)
   - [copper](copper.md)
   - [copygraphics](copygraphics.md)

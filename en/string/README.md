@@ -17,6 +17,7 @@ string type functions
 - [endsWith](endsWith.md) - checks if string ends with pattern.
 - [int2str](int2str.md) - Convert an integer array to a string
 - [isletter](isletter.md) - Determine which characters are letters.
+- [isspace](isspace.md) - Determine which characters are space.
 - [isStringScalar](isStringScalar.md) - checks if input is string array with one element.
 - [mat2str](mat2str.md) - Matrix to String.
 - [matches](matches.md) - Determine if pattern matches with strings.

@@ -26,7 +26,7 @@ configuremsvc()
 
 ## See also
 
-[Supported C/C++ compilers](supported_compilers.md), [havecompiler](havecompiler.md).
+[Supported C/C++ compilers](2_supported_compilers.md), [havecompiler](havecompiler.md).
 
 ## History
 

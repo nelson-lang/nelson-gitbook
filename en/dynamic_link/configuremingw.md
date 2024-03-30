@@ -29,7 +29,7 @@ configuremingw('c:/mingw')
 
 ## See also
 
-[Supported C/C++ compilers](supported_compilers.md), [havecompiler](havecompiler.md), [configuremsvc](configuremsvc.md).
+[Supported C/C++ compilers](2_supported_compilers.md), [havecompiler](havecompiler.md), [configuremsvc](configuremsvc.md).
 
 ## History
 

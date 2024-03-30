@@ -27,7 +27,7 @@ R = gamma([-pi:0.1:pi])
 
 ## See also
 
-[factorial](../elementary_functions/factorial.md).
+[gammaln](gammaln.md), [factorial](../elementary_functions/factorial.md).
 
 ## History
 

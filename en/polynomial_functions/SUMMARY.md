@@ -1,4 +1,5 @@
 - [polynomial_functions](README.md)
+  - [deconv](deconv.md)
   - [poly](poly.md)
   - [polyder](polyder.md)
   - [polyfit](polyfit.md)

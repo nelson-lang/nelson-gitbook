@@ -20,6 +20,8 @@ graphics functions
 - [colorbar](colorbar.md) - Colorbar showing color scale.
 - [colormap](colormap.md) - View and set current colormap.
 - [colstyle](colstyle.md) - Parse color and style from string.
+- [contour](contour.md) - Contour plot of matrix
+- [contour3](contour3.md) - Contour 3D plot of matrix
 - [cool](cool.md) - Cool colormap array.
 - [copper](copper.md) - Copper colormap array.
 - [copygraphics](copygraphics.md) - Copy plot to clipboard.
