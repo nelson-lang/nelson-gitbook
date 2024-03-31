@@ -67,11 +67,10 @@ figure('Name', 'Hello')
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
-
-|1.2.0|Clicking on an figure automatically sets it as the current figure object.|
+| Version | Description                                                               |
+| ------- | ------------------------------------------------------------------------- |
+| 1.0.0   | initial version                                                           |
+| 1.2.0   | Clicking on an figure automatically sets it as the current figure object. |
 
 ## Author
 

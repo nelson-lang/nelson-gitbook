@@ -147,13 +147,11 @@ plot(ax2, x, y2);
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
-
-|1.2.0|Clicking on an axis automatically sets it as the current axes object.|
-
-|--|GridAlpha, GridColor propertiew for Axes.|
+| Version | Description                                                           |
+| ------- | --------------------------------------------------------------------- |
+| 1.0.0   | initial version                                                       |
+| 1.2.0   | Clicking on an axis automatically sets it as the current axes object. |
+| --      | GridAlpha, GridColor propertiew for Axes.                             |
 
 ## Author
 

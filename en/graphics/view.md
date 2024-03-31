@@ -59,11 +59,10 @@ view(2)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
-
-|1.2.0|azimuth and elevation as output arguments.|
+| Version | Description                                |
+| ------- | ------------------------------------------ |
+| 1.0.0   | initial version                            |
+| 1.2.0   | azimuth and elevation as output arguments. |
 
 ## Author
 

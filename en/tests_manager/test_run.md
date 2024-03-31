@@ -96,11 +96,10 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
-
-|1.3.0|PYTHON ENVIRONMENT REQUIRED tag added|
+| Version | Description                           |
+| ------- | ------------------------------------- |
+| 1.0.0   | initial version                       |
+| 1.3.0   | PYTHON ENVIRONMENT REQUIRED tag added |
 
 ## Author
 

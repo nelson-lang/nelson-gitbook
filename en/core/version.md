@@ -77,11 +77,10 @@ compiler_info = version('-compiler')
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
-
-|1.2.0|`-semantic` option added.|
+| Version | Description               |
+| ------- | ------------------------- |
+| 1.0.0   | initial version           |
+| 1.2.0   | `-semantic` option added. |
 
 ## Author
 
