@@ -10,7 +10,7 @@ Run Python statements from Nelson.
 
 ## Input argument
 
-- code - a string scalar, string array, character vector or character array.
+- code - a string scalar, string array, character vector, character array or python code object.
 - pyName, pyValue - Input arguments name and value
 - outputs - string array: Python variable names.
 
@@ -41,15 +41,23 @@ pyrun(["a = 3","print(a)"])
 [R1, R2] = pyrun("a=b*c",["a","b"], 'b', 5, 'c', 10)
 ```
 
+Python code object representing a script generated through the built-in compile function in Python
+
+```matlab
+PYCODE = pyrun('X = compile(''Y = 3'', ''test'', ''exec'')', 'X')
+y = pyrun(PYCODE, 'Y')
+```
+
 ## See also
 
-[pyenv](pyenv.md).
+[pyrunfile](pyrunfile.md), [pyenv](pyenv.md), [Python types supported](python_types.md).
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.3.0   | initial version |
+| Version | Description                                        |
+| ------- | -------------------------------------------------- |
+| 1.3.0   | initial version                                    |
+| 1.4.0   | Python code object allowed as first input argument |
 
 ## Author
 

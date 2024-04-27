@@ -28,6 +28,7 @@ Executables to start Nelson software.
 - --noipc - disable interprocess features (files association, ipc builtin).
 - --withoutfilewatcher - disable file watcher feature for this session.
 - --noaudio - disable audio module.
+- --without_python - disable python_engine module.
 - --language lang - If this option is present it fixes the user language. Currently, lang can be: fr_FR en_US.
 - --quiet - If this option is present no banner and version displayed.
 
@@ -57,9 +58,10 @@ nelson-gui --help
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description            |
+| ------- | ---------------------- |
+| 1.0.0   | initial version        |
+| 1.4.0   | --without_python added |
 
 ## Author
 

@@ -5,11 +5,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.4.0 (UNRELEASED)
+## 1.4.0 (2024-04-27)
+
+### Added
+
+- Python interface (part 2):
+
+  - [#1168](http://github.com/nelson-lang/nelson/issues/1168) Run Python script file from Nelson.
+  - [#1141](http://github.com/nelson-lang/nelson/issues/1141) Help about Managing Data between Python and Nelson.
+  - [#1149](https://github.com/nelson-lang/nelson/issues/1149) python bytes, and bytearray types were not managed.
+  - [#1163](https://github.com/nelson-lang/nelson/issues/1163) pyenv searchs python by version on Windows.
+  - [#1164](https://github.com/nelson-lang/nelson/issues/1164) Embed python distribution on Windows.
+  - [#1167](https://github.com/nelson-lang/nelson/issues/1167) Help about how to install Python package from Nelson.
+  - numpy types support if numpy available.
+  - `pyenv`: can use environment variables to set values.
+
+- `getenv`: Retrieve the values of several environment variables.
+- `pyenv`: can use environment variables to set values.
+- `pyrun`: Python code object allowed as first input argument.
+- `nelson --without_python` starts nelson without python engine.
+- `skip_testsuite`: allows to skip test suite dynamically on condition.
 
 ### Changed
 
+- Allow to call method of a variable of CLASS/HANDLE type like a function (currently, only plugged for python subtype).
 - [#1142](http://github.com/nelson-lang/nelson/issues/1142) Github Actions updated.
+- [#1157](http://github.com/nelson-lang/nelson/issues/1157) Qt 6.7 support (used on Windows 64 bits binary).
+- `copyfile`, `isfile`, `isdir`, `mkdir` allow string array type as input.
+
+### Fixed
+
+- [#1144](http://github.com/nelson-lang/nelson/issues/1144) test_run markdown help file had a typo.
+- [#1143](http://github.com/nelson-lang/nelson/issues/1143) Linux Snapcraft version did not allow to use python.
+- [#1148](http://github.com/nelson-lang/nelson/issues/1148) pyrun('print(A)','A','A',string(NaN)) did not return expected value.
+- `single(int64([1 2; 3 4]))` returned a wrong value.
+- `py.tuple`, `py.list` compatibility increased.
+- `pyenv` did not manage python's path with space on Windows.
+- Matio 1.5.27 compatibility on ArchLinux.
+- Ubuntu 24.04 LTS support.
+- [#1178](http://github.com/nelson-lang/nelson/issues/1178) Fedora 40 support (CI).
+- [#1134](http://github.com/nelson-lang/nelson/issues/1134) [CI] MacOS X Ventura restored.
 
 ## 1.3.0 (2024-03-30)
 

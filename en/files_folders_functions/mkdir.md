@@ -44,9 +44,10 @@ end
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                                      |
+| ------- | ------------------------------------------------ |
+| 1.0.0   | initial version                                  |
+| 1.4.0   | input arguments support scalar string array type |
 
 ## Author
 

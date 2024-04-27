@@ -8,22 +8,26 @@ Get the value of an environment variable.
 
 ## Input argument
 
-- env_name - a string: environment variable name.
+- env_name - string scalar, character vector, string array, cell array of character vectors: environment variable name.
 
 ## Output argument
 
-- s - a string: the environment variable value.
+- s - string scalar, character vector, string array, cell array of character vectors: the environment variable value.
 
 ## Description
 
   <p><b>getenv</b> returns the value of an environment variable if it exists.</p>
   <p>If the environment variable does not exist, it will return ''.</p>
+  <p>If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.</p>
+  <p>If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.</p>
 
 ## Example
 
 ```matlab
 getenv('OS')
 getenv('myenvvar')
+getenv(["PATH"; "OS"])
+getenv({'PATH'; 'OS'})
 ```
 
 ## See also
@@ -32,9 +36,10 @@ getenv('myenvvar')
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                                           |
+| ------- | ----------------------------------------------------- |
+| 1.0.0   | initial version                                       |
+| 1.4.0   | Retrieve the values of several environment variables. |
 
 ## Author
 

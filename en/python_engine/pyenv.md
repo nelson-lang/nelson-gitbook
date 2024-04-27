@@ -10,7 +10,7 @@ Change default environment of Python interpreter.
 
 ## Input argument
 
-- python_path - a string, or row characters array: executable file name of Python.
+- python_path - a string, or row characters array: executable file name of Python or version (on Windows).
 
 ## Output argument
 
@@ -26,13 +26,28 @@ Change default environment of Python interpreter.
   <p><b>Executable</b>: string: Name of Python executable file</p>
   <p><b>Library</b>: string: Shared library file</p>
   <p><b>Home</b>: string: Home folder</p>
-  <p><b>Status</b>: Process status: (0: default), 1: Loaded, 2: Terminated</p>
-  <p><b>ExecutionMode</b>: Execution mode: InProcess (0: default) or OutOfProcess (1)</p>
+  <p><b>Status</b>: Process status: "NotLoaded" (default), "Loaded", "Terminated"</p>
+  <p><b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess"</p>
+  <p/>
+  <p>Use environment variables to force python environment at each startup (usefull for snapcraft or docker distribution):</p>
+  <p/>
+  <p><b>__NELSON_PYTHON_VERSION__</b>:  example "3.10"</p>
+  <p><b>__NELSON_PYTHON_EXECUTABLE__</b>: example  "/usr/bin/python3"</p>
+  <p><b>__NELSON_PYTHON_LIBRARY__</b>: example "libpython3.10.so.1.0"</p>
+  <p><b>__NELSON_PYTHON_HOME__</b>: example "/usr"</p>
+  <p>All environment variables must exist and valid to be considered.</p>
+  <p/>
+  <p>On Windows, the <b>pyenv('Version', '3.11')</b> function searches the Windows Registry for the Python version associated with the specified version. It first looks in the HKCU environment, and if not found, it searches in HKLM.</p>
 
-## Example
+## Examples
 
 ```matlab
 pe = pyenv
+```
+
+```matlab
+if ispc()
+pe = pyenv('Version', '3.12')
 ```
 
 ## See also
@@ -41,9 +56,11 @@ pe = pyenv
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.3.0   | initial version |
+| Version | Description                                       |
+| ------- | ------------------------------------------------- |
+| 1.3.0   | initial version                                   |
+| 1.4.0   | environment variables to force python environment |
+| 1.4.0   | On Windows find python by Windows registry.       |
 
 ## Author
 

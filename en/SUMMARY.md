@@ -1,7 +1,6 @@
 # Summary
 
 - [functions_manager](./functions_manager/README.md)
-
   - [addpath](./functions_manager/addpath.md)
   - [builtin](./functions_manager/builtin.md)
   - [clearfun](./functions_manager/clearfun.md)
@@ -20,8 +19,7 @@
   - [what](./functions_manager/what.md)
   - [which](./functions_manager/which.md)
 
-- [modules_manager](./modules_manager/README.md)
-
+* [modules_manager](./modules_manager/README.md)
   - [addgateway](./modules_manager/addgateway.md)
   - [addmodule](./modules_manager/addmodule.md)
   - [gatewayinfo](./modules_manager/gatewayinfo.md)
@@ -68,7 +66,6 @@
   - [version](./core/version.md)
 
 - [engine](./engine/README.md)
-
   - [argv](./engine/argv.md)
   - [executable](./engine/executable.md)
   - [finish](./engine/finish.md)
@@ -77,8 +74,7 @@
   - [#! shebang](./engine/shebang.md)
   - [startup](./engine/startup.md)
 
-- [interpreter](./interpreter/README.md)
-
+* [interpreter](./interpreter/README.md)
   - [abort](./interpreter/abort.md)
   - [break](./interpreter/break.md)
   - [continue](./interpreter/continue.md)
@@ -96,32 +92,29 @@
   - [while](./interpreter/while.md)
 
 - [display_format](./display_format/README.md)
-
   - [disp](./display_format/disp.md)
   - [display](./display_format/display.md)
   - [echo](./display_format/echo.md)
   - [format](./display_format/format.md)
   - [formattedDisplayText](./display_format/formattedDisplayText.md)
 
-- [localization](./localization/README.md)
+* [localization](./localization/README.md)
 
   - [getavailablelanguages](./localization/getavailablelanguages.md)
   - [getdefaultlanguage](./localization/getdefaultlanguage.md)
   - [getlanguage](./localization/getlanguage.md)
   - [setlanguage](./localization/setlanguage.md)
 
-- [i18n](./i18n/README.md)
-
+* [i18n](./i18n/README.md)
   - [gettext](./i18n/gettext.md)
   - [poheader](./i18n/poheader.md)
 
 - [characters_encoding](./characters_encoding/README.md)
-
   - [native2unicode](./characters_encoding/native2unicode.md)
   - [nativecharset](./characters_encoding/nativecharset.md)
   - [unicode2native](./characters_encoding/unicode2native.md)
 
-- [types](./types/README.md)
+* [types](./types/README.md)
 
   - [class](./types/class.md)
   - [isa](./types/isa.md)
@@ -151,19 +144,18 @@
   - [isuint8](./types/isuint8.md)
   - [isvarname](./types/isvarname.md)
 
-- [overload](./overload/README.md)
+* [overload](./overload/README.md)
 
   - [overloading](./overload/overloading.md)
 
-- [logical](./logical/README.md)
+* [logical](./logical/README.md)
 
   - [false](./logical/false.md)
   - [logical](./logical/logical.md)
   - [true](./logical/true.md)
   - [xor](./logical/xor.md)
 
-- [single](./single/README.md)
-
+* [single](./single/README.md)
   - [single](./single/single.md)
 
 - [double](./double/README.md)
@@ -173,7 +165,6 @@
   - [realmax](./double/realmax.md)
 
 - [data_structures](./data_structures/README.md)
-
   - [cell](./data_structures/cell.md)
   - [cell2mat](./data_structures/cell2mat.md)
   - [cell2struct](./data_structures/cell2struct.md)
@@ -190,7 +181,7 @@
   - [struct](./data_structures/struct.md)
   - [struct2cell](./data_structures/struct2cell.md)
 
-- [integer](./integer/README.md)
+* [integer](./integer/README.md)
 
   - [int16](./integer/int16.md)
   - [int32](./integer/int32.md)
@@ -203,7 +194,7 @@
   - [uint64](./integer/uint64.md)
   - [uint8](./integer/uint8.md)
 
-- [sparse](./sparse/README.md)
+* [sparse](./sparse/README.md)
 
   - [full](./sparse/full.md)
   - [IJV](./sparse/IJV.md)
@@ -213,8 +204,7 @@
   - [speye](./sparse/speye.md)
   - [spones](./sparse/spones.md)
 
-- [string](./string/README.md)
-
+* [string](./string/README.md)
   - [append](./string/append.md)
   - [blanks](./string/blanks.md)
   - [char](./string/char.md)
@@ -252,14 +242,12 @@
   - [toupper](./string/toupper.md)
 
 - [function_handle](./function_handle/README.md)
-
   - [Anonymous Functions](./function_handle/anonymous_function.md)
   - [func2str](./function_handle/func2str.md)
   - [isfunction_handle](./function_handle/isfunction_handle.md)
   - [str2func](./function_handle/str2func.md)
 
-- [handle](./handle/README.md)
-
+* [handle](./handle/README.md)
   - [delete](./handle/delete.md)
   - [get](./handle/get.md)
   - [invoke](./handle/invoke.md)
@@ -283,16 +271,13 @@
   - [warning](./error_manager/warning.md)
 
 - [debugger](./debugger/README.md)
-
   - [dbstack](./debugger/dbstack.md)
 
-- [profiler](./profiler/README.md)
-
+* [profiler](./profiler/README.md)
   - [profile](./profiler/profile.md)
   - [profsave](./profiler/profsave.md)
 
 - [constructors_functions](./constructors_functions/README.md)
-
   - [diag](./constructors_functions/diag.md)
   - [eps](./constructors_functions/eps.md)
   - [eye](./constructors_functions/eye.md)
@@ -303,8 +288,7 @@
   - [pi](./constructors_functions/pi.md)
   - [zeros](./constructors_functions/zeros.md)
 
-- [operators](./operators/README.md)
-
+* [operators](./operators/README.md)
   - [all](./operators/all.md)
   - [and](./operators/and.md)
   - [any](./operators/any.md)
@@ -436,7 +420,6 @@
   - [wilkinson](./elementary_functions/wilkinson.md)
 
 - [data_analysis](./data_analysis/README.md)
-
   - [conv](./data_analysis/conv.md)
   - [conv2](./data_analysis/conv2.md)
   - [cumprod](./data_analysis/cumprod.md)
@@ -449,7 +432,7 @@
   - [sort](./data_analysis/sort.md)
   - [sum](./data_analysis/sum.md)
 
-- [trigonometric_functions](./trigonometric_functions/README.md)
+* [trigonometric_functions](./trigonometric_functions/README.md)
 
   - [acos](./trigonometric_functions/acos.md)
   - [acosd](./trigonometric_functions/acosd.md)
@@ -501,7 +484,7 @@
   - [tanh](./trigonometric_functions/tanh.md)
   - [tanm](./trigonometric_functions/tanm.md)
 
-- [linear_algebra](./linear_algebra/README.md)
+* [linear_algebra](./linear_algebra/README.md)
 
   - [balance](./linear_algebra/balance.md)
   - [bandwidth](./linear_algebra/bandwidth.md)
@@ -533,7 +516,7 @@
   - [trace](./linear_algebra/trace.md)
   - [vecnorm](./linear_algebra/vecnorm.md)
 
-- [statistics](./statistics/README.md)
+* [statistics](./statistics/README.md)
 
   - [corrcoef](./statistics/corrcoef.md)
   - [cov](./statistics/cov.md)
@@ -541,7 +524,7 @@
   - [normpdf](./statistics/normpdf.md)
   - [var](./statistics/var.md)
 
-- [polynomial_functions](./polynomial_functions/README.md)
+* [polynomial_functions](./polynomial_functions/README.md)
 
   - [deconv](./polynomial_functions/deconv.md)
   - [poly](./polynomial_functions/poly.md)
@@ -552,7 +535,7 @@
   - [polyvalm](./polynomial_functions/polyvalm.md)
   - [roots](./polynomial_functions/roots.md)
 
-- [signal_processing](./signal_processing/README.md)
+* [signal_processing](./signal_processing/README.md)
 
   - [bartlett](./signal_processing/bartlett.md)
   - [blackman](./signal_processing/blackman.md)
@@ -567,7 +550,7 @@
   - [xcorr2](./signal_processing/xcorr2.md)
   - [zp2tf](./signal_processing/zp2tf.md)
 
-- [slicot](./slicot/README.md)
+* [slicot](./slicot/README.md)
 
   - [SLICOT License](./slicot/About_SLICOT_license.md)
   - [slicot_ab01od](./slicot/slicot_ab01od.md)
@@ -594,8 +577,7 @@
   - [slicot_tb01id](./slicot/slicot_tb01id.md)
   - [slicot_tg01ad](./slicot/slicot_tg01ad.md)
 
-- [special_functions](./special_functions/README.md)
-
+* [special_functions](./special_functions/README.md)
   - [betainc](./special_functions/betainc.md)
   - [cross](./special_functions/cross.md)
   - [dot](./special_functions/dot.md)
@@ -608,7 +590,6 @@
   - [primes](./special_functions/primes.md)
 
 - [fftw](./fftw/README.md)
-
   - [FFTW License](./fftw/About_FFTW_license.md)
   - [fft](./fftw/fft.md)
   - [fft2](./fftw/fft2.md)
@@ -620,8 +601,7 @@
   - [ifftn](./fftw/ifftn.md)
   - [ifftshift](./fftw/ifftshift.md)
 
-- [os_functions](./os_functions/README.md)
-
+* [os_functions](./os_functions/README.md)
   - [computer](./os_functions/computer.md)
   - [createGUID](./os_functions/createGUID.md)
   - [getenv](./os_functions/getenv.md)
@@ -637,7 +617,6 @@
   - [winqueryreg](./os_functions/winqueryreg.md)
 
 - [files_folders_functions](./files_folders_functions/README.md)
-
   - [cd](./files_folders_functions/cd.md)
   - [copyfile](./files_folders_functions/copyfile.md)
   - [diff_file](./files_folders_functions/diff_file.md)
@@ -660,7 +639,7 @@
   - [tempname](./files_folders_functions/tempname.md)
   - [userdir](./files_folders_functions/userdir.md)
 
-- [memory_manager](./memory_manager/README.md)
+* [memory_manager](./memory_manager/README.md)
 
   - [acquirevar](./memory_manager/acquirevar.md)
   - [assignin](./memory_manager/assignin.md)
@@ -676,7 +655,7 @@
   - [who](./memory_manager/who.md)
   - [whos](./memory_manager/whos.md)
 
-- [time](./time/README.md)
+* [time](./time/README.md)
 
   - [addtodate](./time/addtodate.md)
   - [calendar](./time/calendar.md)
@@ -696,14 +675,14 @@
   - [toc](./time/toc.md)
   - [weekday](./time/weekday.md)
 
-- [random](./random/README.md)
+* [random](./random/README.md)
 
   - [rand](./random/rand.md)
   - [randn](./random/randn.md)
   - [randperm](./random/randperm.md)
   - [rng](./random/rng.md)
 
-- [mpi](./mpi/README.md)
+* [mpi](./mpi/README.md)
 
   - [mpiexec](./mpi/mpiexec.md)
   - [MPI_Allreduce](./mpi/MPI_Allreduce.md)
@@ -730,7 +709,7 @@
   - [MPI_Reduce](./mpi/MPI_Reduce.md)
   - [MPI_Send](./mpi/MPI_Send.md)
 
-- [parallel](./parallel/README.md)
+* [parallel](./parallel/README.md)
 
   - [afterAll](./parallel/afterAll.md)
   - [afterEach](./parallel/afterEach.md)
@@ -742,7 +721,7 @@
   - [parfeval](./parallel/parfeval.md)
   - [wait](./parallel/wait.md)
 
-- [help_tools](./help_tools/README.md)
+* [help_tools](./help_tools/README.md)
 
   - [buildhelp](./help_tools/buildhelp.md)
   - [buildhelpmd](./help_tools/buildhelpmd.md)
@@ -756,8 +735,7 @@
   - [xmldoctohtml](./help_tools/xmldoctohtml.md)
   - [xmldoctomd](./help_tools/xmldoctomd.md)
 
-- [history_manager](./history_manager/README.md)
-
+* [history_manager](./history_manager/README.md)
   - [history](./history_manager/history.md)
 
 - [console](./console/README.md)
@@ -767,7 +745,6 @@
   - [terminal_size](./console/terminal_size.md)
 
 - [gui](./gui/README.md)
-
   - [commandhistory](./gui/commandhistory.md)
   - [errordlg](./gui/errordlg.md)
   - [filebrowser](./gui/filebrowser.md)
@@ -781,8 +758,7 @@
   - [helpdlg](./gui/warndlg.md)
   - [workspace](./gui/workspace.md)
 
-- [qml_engine](./qml_engine/README.md)
-
+* [qml_engine](./qml_engine/README.md)
   - [nelsonObject](./qml_engine/nelsonObject.md)
   - [qml_addimportpath](./qml_engine/qml_addimportpath.md)
   - [qml_addpluginpath](./qml_engine/qml_addpluginpath.md)
@@ -812,7 +788,6 @@
   - [qt_version](./qml_engine/qt_version.md)
 
 - [graphics](./graphics/README.md)
-
   - [abyss](./graphics/abyss.md)
   - [ancestor](./graphics/ancestor.md)
   - [autumn](./graphics/autumn.md)
@@ -905,24 +880,24 @@
   - [zlim](./graphics/zlim.md)
   - [zoom](./graphics/zoom.md)
 
-- [help_browser](./help_browser/README.md)
+* [help_browser](./help_browser/README.md)
 
   - [doc](./help_browser/doc.md)
   - [helpbrowser](./help_browser/helpbrowser.md)
 
-- [text_editor](./text_editor/README.md)
+* [text_editor](./text_editor/README.md)
 
   - [edit](./text_editor/edit.md)
   - [editor](./text_editor/editor.md)
   - [smartindent](./text_editor/smartindent.md)
 
-- [tests_manager](./tests_manager/README.md)
+* [tests_manager](./tests_manager/README.md)
 
   - [test_makeref](./tests_manager/test_makeref.md)
   - [test_run](./tests_manager/test_run.md)
+  - [skip_testsuite](./tests_manager/test_skip_testsuite.md)
 
-- [validators](./validators/README.md)
-
+* [validators](./validators/README.md)
   - [mustBeA](./validators/mustBeA.md)
   - [mustBeFile](./validators/mustBeFile.md)
   - [mustBeFinite](./validators/mustBeFinite.md)
@@ -957,7 +932,6 @@
   - [mustBeVector](./validators/mustBeVector.md)
 
 - [assert_functions](./assert_functions/README.md)
-
   - [assert](./assert_functions/assert.md)
   - [assert_checkerror](./assert_functions/assert_checkerror.md)
   - [assert_isapprox](./assert_functions/assert_isapprox.md)
@@ -965,8 +939,7 @@
   - [assert_isfalse](./assert_functions/assert_isfalse.md)
   - [assert_istrue](./assert_functions/assert_istrue.md)
 
-- [stream_manager](./stream_manager/README.md)
-
+* [stream_manager](./stream_manager/README.md)
   - [diary](./stream_manager/diary.md)
   - [dlmwrite](./stream_manager/dlmwrite.md)
   - [fclose](./stream_manager/fclose.md)
@@ -990,7 +963,6 @@
   - [sscanf](./stream_manager/sscanf.md)
 
 - [hdf5](./hdf5/README.md)
-
   - [h5create](./hdf5/h5create.md)
   - [h5dump](./hdf5/h5dump.md)
   - [h5ls](./hdf5/h5ls.md)
@@ -1004,7 +976,7 @@
   - [whonh5](./hdf5/whonh5.md)
   - [whosnh5](./hdf5/whosnh5.md)
 
-- [matio](./matio/README.md)
+* [matio](./matio/README.md)
 
   - [ismatfile](./matio/ismatfile.md)
   - [loadmat](./matio/loadmat.md)
@@ -1012,8 +984,7 @@
   - [whomat](./matio/whomat.md)
   - [whosmat](./matio/whosmat.md)
 
-- [json](./json/README.md)
-
+* [json](./json/README.md)
   - [jsondecode](./json/jsondecode.md)
   - [jsonencode](./json/jsonencode.md)
   - [jsonprettyprint](./json/jsonprettyprint.md)
@@ -1024,7 +995,6 @@
   - [zip](./file_archiver/zip.md)
 
 - [audio](./audio/README.md)
-
   - [audiodevinfo](./audio/audiodevinfo.md)
   - [audioinfo](./audio/audioinfo.md)
   - [audiometadata](./audio/audiometadata.md)
@@ -1050,19 +1020,17 @@
   - [soundsc](./audio/soundsc.md)
   - [stop](./audio/stop.md)
 
-- [sio_client](./sio_client/README.md)
+* [sio_client](./sio_client/README.md)
 
   - [doc](./sio_client/doc.md)
   - [sioemit](./sio_client/sioemit.md)
   - [siogetvariable](./sio_client/siogetvariable.md)
 
-- [ipc](./ipc/README.md)
-
+* [ipc](./ipc/README.md)
   - [getpid](./ipc/getpid.md)
   - [ipc](./ipc/ipc.md)
 
 - [dynamic_link](./dynamic_link/README.md)
-
   - [Build C/C++ code on the fly](./dynamic_link/1_c_cpp_build_on_fly.md)
   - [Supported C/C++ compilers](./dynamic_link/2_supported_compilers.md)
   - [cmake](./dynamic_link/cmake.md)
@@ -1098,8 +1066,7 @@
   - [removecompilerconf](./dynamic_link/removecompilerconf.md)
   - [vswhere](./dynamic_link/vswhere.md)
 
-- [mex](./mex/README.md)
-
+* [mex](./mex/README.md)
   - [dlgeneratemexgateway](./mex/dlgeneratemexgateway.md)
   - [engClose](./mex/engClose.md)
   - [engEvalString](./mex/engEvalString.md)
@@ -1117,15 +1084,13 @@
   - [mexext](./mex/mexext.md)
 
 - [f2c](./f2c/README.md)
-
   - [f2c](./f2c/f2c.md)
 
-- [nig](./nig/README.md)
+* [nig](./nig/README.md)
 
   - [nig](./nig/nig.md)
 
-- [webtools](./webtools/README.md)
-
+* [webtools](./webtools/README.md)
   - [checkupdate](./webtools/checkupdate.md)
   - [repo](./webtools/repo.md)
   - [weboptions](./webtools/weboptions.md)
@@ -1162,7 +1127,6 @@
   - [iscom](./com_engine/iscom.md)
 
 - [control_system](./control_system/README.md)
-
   - [abcdchk](./control_system/abcdchk.md)
   - [acker](./control_system/acker.md)
   - [append](./control_system/append.md)
@@ -1225,7 +1189,11 @@
   - [tzero](./control_system/tzero.md)
   - [zero](./control_system/zero.md)
 
-- [python_engine](./python_engine/README.md)
+* [python_engine](./python_engine/README.md)
+  - [The power of calling Python from Nelson](./python_engine/1_The_power_of_Python.md)
+  - [How to install python package](./python_engine/2_How_to_install_python_package.md)
   - [pyargs](./python_engine/pyargs.md)
   - [pyenv](./python_engine/pyenv.md)
   - [pyrun](./python_engine/pyrun.md)
+  - [pyrunfile](./python_engine/pyrunfile.md)
+  - [Python Nelson types](./python_engine/python_types.md)

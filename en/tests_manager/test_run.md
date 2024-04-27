@@ -71,6 +71,7 @@ Runs tests
   <p/>
   <p><b>&lt;--PYTHON ENVIRONMENT REQUIRED--&gt;</b> This test will be executed if file watcher is available.</p>
   <p/>
+  <p>Test can also skipped dynamically using <b>skip_testsuite</b> function.</p>
   <p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
   <p><b>test_run</b> uses n th workers to execute and speed up tests executions.</p>
   <p>Tests with <b>&lt;--SEQUENTIAL TEST REQUIRED--&gt;</b> are evaluated last.</p>
@@ -92,7 +93,7 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 
 ## See also
 
-[assert](../assert_functions/assert.md), [test_makeref](test_makeref.md).
+[assert](../assert_functions/assert.md), [test_makeref](test_makeref.md), [skip_testsuite](skip_testsuite.html).
 
 ## History
 
@@ -100,6 +101,7 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 | ------- | ------------------------------------- |
 | 1.0.0   | initial version                       |
 | 1.3.0   | PYTHON ENVIRONMENT REQUIRED tag added |
+| 1.4.0   | skip_testsuite function reference     |
 
 ## Author
 

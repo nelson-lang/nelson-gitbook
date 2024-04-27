@@ -1,4 +1,8 @@
 - [python_engine](README.md)
+  - [The power of calling Python from Nelson](1_The_power_of_Python.md)
+  - [How to install python package](2_How_to_install_python_package.md)
   - [pyargs](pyargs.md)
   - [pyenv](pyenv.md)
   - [pyrun](pyrun.md)
+  - [pyrunfile](pyrunfile.md)
+  - [Python Nelson types](python_types.md)
