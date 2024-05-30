@@ -5,6 +5,48 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.5.0 (2024-05-31)
+
+### Added
+
+- `dictionary` data type.
+
+  - `dictionary`: Object that maps unique keys to values.
+  - `configureDictionary`: Create dictionary with specified key and value types.
+  - `insert`: Add entries to a dictionary.
+  - `lookup`: Find value in dictionary by key.
+  - `remove`: Remove dictionary entries.
+  - `entries`: Key-value pairs of dictionary.
+  - `keys`: Keys of dictionary.
+  - `values`: Values of dictionary.
+  - `types`: Types of dictionary keys and values.
+  - `numEntries`: Number of key-value pairs in dictionary.
+  - `isConfigured`: Determine if dictionary has types assigned to keys and values.
+  - `isKey`: Determine if dictionary contains key.
+  - `keyHash`: Generate hash code for dictionary key.
+  - `keyMatch`: Determine if two dictionary keys are the same.
+
+- `bernsteinMatrix`: Bernstein matrix.
+
+- `orderedfields`: Order fields of structure array.
+
+- Python interface (part 3):
+
+  - [#1160](http://github.com/nelson-lang/nelson/issues/1160) Python operators in Nelson.
+  - `keyHash`, `keyMatch` for python objects.
+  - `isa` builtin support python types.
+  - python dictionary to Nelson dictionary `dictionary(pyDict)`
+  - conversion dictionary to python dictionary.
+
+### Changed
+
+- help files generated sorted by name on all platforms.
+- on windows, Qt libraries used are in debug mode.
+
+### Fixed
+
+- [#1195](http://github.com/nelson-lang/nelson/issues/1195) `strcmp({'a'},["a"])` did not return expected value.
+
 ## 1.4.0 (2024-04-27)
 
 ### Added
@@ -21,7 +63,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `pyenv`: can use environment variables to set values.
 
 - `getenv`: Retrieve the values of several environment variables.
-- `pyenv`: can use environment variables to set values.
 - `pyrun`: Python code object allowed as first input argument.
 - `nelson --without_python` starts nelson without python engine.
 - `skip_testsuite`: allows to skip test suite dynamically on condition.
@@ -32,6 +73,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [#1142](http://github.com/nelson-lang/nelson/issues/1142) Github Actions updated.
 - [#1157](http://github.com/nelson-lang/nelson/issues/1157) Qt 6.7 support (used on Windows 64 bits binary).
 - `copyfile`, `isfile`, `isdir`, `mkdir` allow string array type as input.
+- warning about 'Matrix is singular to working precision' for inv matrix.
+- tests webtools skipped if connection fails or not available.
 
 ### Fixed
 

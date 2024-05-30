@@ -13,4 +13,5 @@ python_engine functions
 - [pyenv](pyenv.md) - Change default environment of Python interpreter.
 - [pyrun](pyrun.md) - Run Python statements from Nelson.
 - [pyrunfile](pyrunfile.md) - Run Python file from Nelson.
+- [Python operators](python_overload.md) - The representation of Python operators in Nelson.
 - [Python Nelson types](python_types.md) - Managing Data between Python and Nelson.

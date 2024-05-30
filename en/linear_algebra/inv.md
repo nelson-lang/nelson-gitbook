@@ -32,9 +32,10 @@ Y * X
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                                             |
+| ------- | ------------------------------------------------------- |
+| 1.0.0   | initial version                                         |
+| 1.4.0   | warning about 'Matrix is singular to working precision' |
 
 ## Author
 

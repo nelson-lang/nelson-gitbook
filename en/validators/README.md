@@ -21,13 +21,13 @@ validators functions
 - [mustBeLogicalScalar](mustBeLogicalScalar.md) - Checks that value is logical scalar or raise an error.
 - [mustBeMember](mustBeMember.md) - Checks that value is member of specified array or issue error.
 - [mustBeNegative](mustBeNegative.md) - Checks that value is negative or raise an error.
-- [mustBeNonempty](mustBeNonempty.md) - Checks that value is nonempty or raise an error.
-- [mustBeNonmissing](mustBeNonmissing.md) - Checks that value is not missing.
 - [mustBeNonNan](mustBeNonNan.md) - Checks that value is not NaN.
-- [mustBeNonnegative](mustBeNonnegative.md) - Checks that value is nonnegative or raise an error.
-- [mustBeNonpositive](mustBeNonpositive.md) - Checks that value is non positive or raise an error.
 - [mustBeNonSparse](mustBeNonSparse.md) - Checks that value is not sparse.
 - [mustBeNonZero](mustBeNonZero.md) - Checks that value is not zero.
+- [mustBeNonempty](mustBeNonempty.md) - Checks that value is nonempty or raise an error.
+- [mustBeNonmissing](mustBeNonmissing.md) - Checks that value is not missing.
+- [mustBeNonnegative](mustBeNonnegative.md) - Checks that value is nonnegative or raise an error.
+- [mustBeNonpositive](mustBeNonpositive.md) - Checks that value is non positive or raise an error.
 - [mustBeNonzeroLengthText](mustBeNonzeroLengthText.md) - Checks that value is text with nonzero length or raise an error.
 - [mustBeNumeric](mustBeNumeric.md) - Checks that value is numeric or raise an error.
 - [mustBeNumericOrLogical](mustBeNumericOrLogical.md) - Checks that input is numeric or logical.

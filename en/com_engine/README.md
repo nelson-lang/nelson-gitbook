@@ -6,10 +6,6 @@ COM engine
 
 Component Object Model (COM) client interface: binary-interface standard for software components on Windows.
 
-- [actxcontrollist](actxcontrollist.md) - Get available ActiveX controls.
-- [actxGetRunningSrv](actxGetRunningSrv.md) - Handle to running instance of Automation server.
-- [actxserver](actxserver.md) - Creates COM server.
-- [actxserverlist](actxserverlist.md) - Get available ActiveX servers.
 - [COM examples](COM examples.md) - Some example to show how to use COM interface.
 - [COM_delete](COM_delete.md) - Removes COM control or server.
 - [COM_fieldnames](COM_fieldnames.md) - Returns the properties name of an COM object.
@@ -24,4 +20,8 @@ Component Object Model (COM) client interface: binary-interface standard for sof
 - [COM_xlsfinfo](COM_xlsfinfo.md) - Determines if file contains Microsoft Excel spreadsheet.
 - [COM_xlsread](COM_xlsread.md) - Read Microsoft Excel spreadsheet file using COM.
 - [COM_xlswrite](COM_xlswrite.md) - Write Microsoft Excel spreadsheet file using COM.
+- [actxGetRunningSrv](actxGetRunningSrv.md) - Handle to running instance of Automation server.
+- [actxcontrollist](actxcontrollist.md) - Get available ActiveX controls.
+- [actxserver](actxserver.md) - Creates COM server.
+- [actxserverlist](actxserverlist.md) - Get available ActiveX servers.
 - [iscom](iscom.md) - Determine whether input is COM or ActiveX object.

@@ -8,10 +8,10 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 
 - [Build C/C++ code on the fly](1_c_cpp_build_on_fly.md) - Build C/C++ code on the fly
   2_supported_compilers.md Supported C/C++ compilers
+- [libpointer datatype](C_datatype.md) - C/Nelson equivalent data types
 - [cmake](cmake.md) - call CMake tool
 - [configuremingw](configuremingw.md) - Configure Nelson to use MinGW as default C compiler
 - [configuremsvc](configuremsvc.md) - Configure Nelson to use visual studio as default compiler
-- [libpointer datatype](C_datatype.md) - C/Nelson equivalent data types
 - [dlcall](dlcall.md) - C or Fortran Foreign function call.
 - [dlclose](dlclose.md) - Removes dllib object.
 - [dlgeneratecleaner](dlgeneratecleaner.md) - Generates cleaner.m file for C++ gateway.
@@ -19,9 +19,9 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [dlgenerateloader](dlgenerateloader.md) - Generates loader.m file for C++ gateway.
 - [dlgeneratemake](dlgeneratemake.md) - Generates a makefile for building a dynamic library.
 - [dlgenerateunloader](dlgenerateunloader.md) - Generates unloader.m file for C++ gateway.
+- [dllib_used](dllib_used.md) - Returns list of current used dllib handle.
 - [dllibinfo](dllibinfo.md) - Returns list of available symbols in an shared library.
 - [dllibisloaded](dllibisloaded.md) - Checks if shared library is loaded.
-- [dllib_used](dllib_used.md) - Returns list of current used dllib handle.
 - [dlmake](dlmake.md) - call make or nmake tool
 - [dlopen](dlopen.md) - Loads an dynamic library.
 - [dlsym](dlsym.md) - Loads a C/Fortran symbol for an dynamic library.

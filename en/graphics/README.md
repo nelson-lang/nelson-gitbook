@@ -44,9 +44,9 @@ graphics functions
 - [imshow](imshow.md) - Display image.
 - [imwrite](imwrite.md) - Write image to graphics file.
 - [is2D](is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
+- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [isgraphics](isgraphics.md) - Check for graphics object.
 - [ishold](ishold.md) - Get current hold state.
-- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [jet](jet.md) - Jet colormap array.
 - [legend](legend.md) - Add legend to axes.
 - [line](line.md) - Create primitive line.

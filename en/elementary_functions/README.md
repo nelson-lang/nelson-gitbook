@@ -9,6 +9,7 @@ elementary functions
 - [abs](abs.md) - Absolute value
 - [angle](angle.md) - Phase angle
 - [base2dec](base2dec.md) - Convert number in a base to decimal.
+- [bernsteinMatrix](bernsteinMatrix.md) - Bernstein matrix
 - [bin2dec](bin2dec.md) - Convert number in base 2 to decimal.
 - [bin2num](bin2num.md) - Convert two's complement binary string to number.
 - [blkdiag](blkdiag.md) - Block diagonal matrix

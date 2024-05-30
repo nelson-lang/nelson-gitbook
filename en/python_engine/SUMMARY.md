@@ -5,4 +5,5 @@
   - [pyenv](pyenv.md)
   - [pyrun](pyrun.md)
   - [pyrunfile](pyrunfile.md)
+  - [Python operators](python_overload.md)
   - [Python Nelson types](python_types.md)

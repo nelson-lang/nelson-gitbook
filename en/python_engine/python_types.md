@@ -253,16 +253,26 @@ Managing Data between Python and Nelson.
   <p>The Python language offers a protocol for accessing memory buffers, akin to the data stored in Nelson arrays.</p>
   <p>Nelson incorporates this Python buffer protocol for its arrays.</p>
 
-## Example
+## Examples
 
 ```matlab
 R = pyrun('', "A", 'A', magic(3))
 R.double()
 ```
 
+dictionary conversion nelson -- python
+
+```matlab
+wheels = [1 2 3];
+names = ["Monocycle" "Bicycle" "Tricycle"];
+d = dictionary(wheels, names)
+R = pyrun("A = d", "A", 'd', d)
+dictionary(R)
+```
+
 ## See also
 
-[pyrun](pyrun.md).
+[pyrun](pyrun.md), [dictionary](../dictionary/dictionary.md).
 
 ## History
 
