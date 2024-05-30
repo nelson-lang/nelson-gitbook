@@ -6,9 +6,8 @@ Python engine
 
 python_engine functions
 
-1_The_power_of_Python.md The power of calling Python from Nelson
-2_How_to_install_python_package.md How to install python package
-
+- [The power of calling Python from Nelson](1_The_power_of_Python.md)
+- [ How to install python package](2_How_to_install_python_package.md)
 - [pyargs](pyargs.md) - Change default environment of Python interpreter.
 - [pyenv](pyenv.md) - Change default environment of Python interpreter.
 - [pyrun](pyrun.md) - Run Python statements from Nelson.
