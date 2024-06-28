@@ -6,11 +6,13 @@ any of the elements of a matrix satisfy some condition.
 
 - R = any(M)
 - R = any(M, dim)
+- R = any(M, 'all')
 
 ## Input argument
 
 - M - a matrix.
 - dim - a integer value: dimension along it works.
+- 'all' - tests over all elements of M.
 
 ## Output argument
 
@@ -33,9 +35,10 @@ any([33, 22; 11, 0], 2)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                  |
+| ------- | ---------------------------- |
+| 1.0.0   | initial version              |
+| 1.6.0   | manages input argument 'all' |
 
 ## Author
 

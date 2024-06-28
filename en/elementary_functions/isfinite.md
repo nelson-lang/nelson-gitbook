@@ -31,7 +31,7 @@ R = isfinite(X)
 
 ## See also
 
-[isnan](isnan.md), [isinf](isinf.md).
+[isnan](isnan.md), [isinf](isinf.md), [allfinite](allfinite.md).
 
 ## History
 

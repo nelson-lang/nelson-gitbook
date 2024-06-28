@@ -7,6 +7,7 @@ Elementary functions
 elementary functions
 
 - [abs](abs.md) - Absolute value
+- [allfinite](allfinite.md) - Check if all array elements are finite.
 - [angle](angle.md) - Phase angle
 - [base2dec](base2dec.md) - Convert number in a base to decimal.
 - [bernsteinMatrix](bernsteinMatrix.md) - Bernstein matrix
@@ -66,10 +67,12 @@ elementary functions
 - [meshgrid](meshgrid.md) - Cartesian rectangular grid in 2-D or 3-D.
 - [minus](minus.md) - Subtraction, - operator
 - [mod](mod.md) - Modulus after division.
+- [ndgrid](ndgrid.md) - Rectangular grid in N-D space
 - [ndims](ndims.md) - Number of dimensions of an array.
 - [nextpow2](nextpow2.md) - Exponent of next higher power of 2
 - [norm](norm.md) - Matrix and vector norms
 - [normest](normest.md) - 2-norm estimate
+- [nthroot](nthroot.md) - The real 𝑛th root of real number.
 - [num2bin](num2bin.md) - Convert number to binary representation.
 - [numel](numel.md) - Number of elements.
 - [permute](permute.md) - Permute array dimensions.

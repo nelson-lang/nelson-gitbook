@@ -10,3 +10,4 @@
   - [prod](prod.md)
   - [sort](sort.md)
   - [sum](sum.md)
+  - [unique](unique.md)

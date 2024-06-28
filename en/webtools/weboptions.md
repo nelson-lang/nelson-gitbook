@@ -37,6 +37,7 @@ Specify parameters for RESTful web service
   <p>supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch'</p>
   <p><b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php'</p>
   <p><b>CertificateFilename</b> Filename of root certificates: a string or character vector.</p>
+  <p><b>FollowLocation</b> tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, false by default.</p>
 
 ## Example
 
@@ -51,9 +52,10 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                   |
+| ------- | ----------------------------- |
+| 1.0.0   | initial version               |
+| 1.6.0   | 'FollowLocation' option added |
 
 ## Author
 

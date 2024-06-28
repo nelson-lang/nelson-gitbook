@@ -17,3 +17,4 @@ data analysis
 - [prod](prod.md) - Product of array elements.
 - [sort](sort.md) - Sort array elements by quick sort algorithm.
 - [sum](sum.md) - Sum of array elements.
+- [unique](unique.md) - Unique values.

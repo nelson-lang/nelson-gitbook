@@ -76,7 +76,7 @@ pyrunfile('pyrunfile_example_3.py', 'x', 5, 'y', 3)
 
 ## See also
 
-[pyrun](pyrun.md), [pyenv](pyenv.md), [Python types supported](python_types.md).
+[pyrun](pyrun.md), [pyenv](pyenv.md), [Python types supported](python_types.html).
 
 ## History
 

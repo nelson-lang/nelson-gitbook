@@ -57,6 +57,10 @@ A = [NaN 3 6 0 NaN];
 [B, I] = sort(A, 'MissingPlacement', 'last')
 ```
 
+## See also
+
+[issorted](issorted.md), [unique](unique.md).
+
 ## History
 
 | Version | Description     |

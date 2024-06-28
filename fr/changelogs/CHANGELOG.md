@@ -5,6 +5,59 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.6.0 (2024-06-29)
+
+### Added
+
+- `unique`: Unique values.
+- `ndgrid`: Rectangular grid in N-D space.
+- `nthroot`: Real nth root of real numbers.
+- `allfinite`: Check if all array elements are finite.
+- `j` as imaginary unit number is also supported. example `3+2j` equivalent to `3+2i`.
+- `FollowLocation` option for `weboptions`
+- oneAPI Threading Building Blocks optional dependency.
+- Ubuntu 24.04 debian package.
+- Ubuntu 24.04 CI
+
+### Changed
+
+- `sort`: speed optimization.
+
+- Windows dependencies updated and rebuild with minimal dependencies:
+
+  - Qt 6.7.1,
+  - Visual C++ 2022 Redistributable v14.40.33810.00,
+  - boost 1.85,
+  - Python 3.12.4,
+  - Intel Math Kernel Library 2024.1.1,
+  - Intel runtime,
+  - SLICOT,
+  - gettext 0.22.5,
+  - cmake 3.30.0 rc3,
+  - libsndfile 1.2.2,
+  - portaudio 19.7.5,
+  - taglib 2.0,
+  - libzip1 1.3.1,
+  - libcurl 8.8.0,
+  - icu4c 74.2,
+  - libffi 3.4.6,
+  - libxml2 2.11.7
+
+- Unicode® Standard, Version 15.1 support
+
+- simdutf 5.2.8
+- fast_float 6.1.1
+- dtl 1.2.0
+
+### Fixed
+
+- [#1210](http://github.com/nelson-lang/nelson/issues/1210) `bode` did not unwrap phase.
+- [#1206](http://github.com/nelson-lang/nelson/issues/1206) `balance` yields wrong Transformation Matrix.
+- [#1205](http://github.com/nelson-lang/nelson/issues/1205) `diag` may return wrong sub-diagonals.
+- [#1202](http://github.com/nelson-lang/nelson/issues/1202) buildhelpmd does not generate SUMMARY as expected.
+- [#1201](http://github.com/nelson-lang/nelson/issues/1201) Matrix Exponential `expm` might give wrong results.
+- [#1200](http://github.com/nelson-lang/nelson/issues/1200) Matrix Parsing/Evaluation trouble.
+
 ## 1.5.0 (2024-05-31)
 
 ### Added
