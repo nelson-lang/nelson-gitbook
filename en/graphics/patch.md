@@ -46,6 +46,10 @@ Create patches of colored polygons
   <p><b>'EdgeAlpha'</b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
   <p><b>'Parent'</b>: handle of the parent object for the patch. Default: <b>gca()</b>.</p>
   <p><b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 ## Examples
 
@@ -123,9 +127,11 @@ patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.0.0   | initial version                      |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --      | BeingDeleted property added.         |
 
 ## Author
 

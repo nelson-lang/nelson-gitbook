@@ -49,6 +49,14 @@ Creates an figure window.
   <p><b>UserData</b>: User data: array or [] (default).</p>
   <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
   <p><b>DrawLater</b>: is used to delay a huge succession of graphics commands (implying several drawings or redrawings): 'on' or 'off' (default).</p>
+  <p><b>CloseRequestFcn</b>:  Close request callback: function handle, cell array, character vector with 'closereq' (default).</p>
+  <p><b>CreateFcn</b> Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b> Callback (function handle, string or cell) called when object is deleted.</p>
+  <p><b>KeyPressFcn</b> Callback (function handle, string or cell) called when a key is pressed while the figure has the focus.</p>
+  <p><b>KeyReleaseFcn</b> Callback (function handle, string or cell) called when a key is released while the figure has the focus.</p>
+  <p><b>ButtonDownFcn</b> Callback (function handle, string or cell) called when a mouse button is pressed while the figure has the focus.</p>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 ## Example
 
@@ -67,10 +75,12 @@ figure('Name', 'Hello')
 
 ## History
 
-| Version | Description                                                               |
-| ------- | ------------------------------------------------------------------------- |
-| 1.0.0   | initial version                                                           |
-| 1.2.0   | Clicking on an figure automatically sets it as the current figure object. |
+| Version | Description                                                                                      |
+| ------- | ------------------------------------------------------------------------------------------------ |
+| 1.0.0   | initial version                                                                                  |
+| 1.2.0   | Clicking on an figure automatically sets it as the current figure object.                        |
+| 1.7.0   | CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn callback added. |
+| --      | BeingDeleted property added.                                                                     |
 
 ## Author
 

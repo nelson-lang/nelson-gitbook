@@ -44,7 +44,11 @@ Create primitive line.
   <p><b>XData</b> x values: vector, [0 1] (default).</p>
   <p><b>YData</b> y values: vector, [0 1] (default).</p>
   <p><b>ZData</b> z values: vector, [] (default).</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
   <p/>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 ## Examples
 
@@ -86,9 +90,11 @@ view(3)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.0.0   | initial version                      |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --      | BeingDeleted property added.         |
 
 ## Author
 

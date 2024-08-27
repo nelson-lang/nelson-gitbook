@@ -31,6 +31,7 @@ graphics functions
 - [fill](fill.md) - Create filled 2-D patches.
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
+- [Managing Callback Interruptions in Nelson](graphical_callback.md)
 - [gray](gray.md) - Gray colormap array.
 - [grid](grid.md) - Display or hide axes grid lines.
 - [groot](groot.md) - graphic root object.
@@ -38,6 +39,7 @@ graphics functions
 - [hist](hist.md) - Histogram plot.
 - [hold](hold.md) - Retain current plot when adding new plots.
 - [hot](hot.md) - Hot colormap array.
+- [im2double](im2double.md) - Convert image to double precision.
 - [image](image.md) - Display image from array.
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
 - [imread](imread.md) - Read image from graphics file.
@@ -84,9 +86,12 @@ graphics functions
 - [text](text.md) - creates text descriptions to data points.
 - [title](title.md) - Add title.
 - [turbo](turbo.md) - Turbo colormap array.
+- [uicontrol](uicontrol.md) - Create user interface component.
 - [validatecolor](validatecolor.md) - Validate color values.
 - [view](view.md) - Camera line of sigh.
 - [viridis](viridis.md) - Viridis colormap array.
+- [waitfor](waitfor.md) - Wait for condition.
+- [waitforbuttonpress](waitforbuttonpress.md) - Wait for click or key press.
 - [waterfall](waterfall.md) - waterfall plot.
 - [white](white.md) - white colormap array.
 - [winter](winter.md) - Winter colormap array.

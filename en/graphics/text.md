@@ -54,7 +54,11 @@ creates text descriptions to data points.
   <p><b>UserData</b>: User data: array or [] (default).</p>
   <p><b>VerticalAlignment</b>: Vertical alignment of text with respect to position point.</p>
   <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
   <p/>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
   <p>Some properties are available only for compatibility and have currently no effect on the text.</p>
   <p>lists of the supported special characters for the 'tex' interpreter:</p>
   <p>Superscript: ^{ }   'text^{superscript}'</p>
@@ -528,9 +532,11 @@ h2.String
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.0.0   | initial version                      |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --      | BeingDeleted property added.         |
 
 ## Author
 

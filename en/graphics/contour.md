@@ -56,6 +56,10 @@ Contour plot of matrix
   <p><b>Type</b>: Type of graphics object 'contour'.</p>
   <p><b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
   <p><b>UserData</b>: User data: array or  [] (default).</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 ## Examples
 
@@ -119,9 +123,11 @@ contour(Z)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.3.0   | initial version |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.3.0   | initial version                      |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --      | BeingDeleted property added.         |
 
 ## Author
 

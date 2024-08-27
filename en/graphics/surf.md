@@ -69,7 +69,11 @@ surface plot.
   <p><b>YData</b> y-coordinate data: vector or matrix.</p>
   <p><b>YDataMode</b> Selection mode for YData: 'manual' or 'auto'.</p>
   <p><b>ZData</b> z-coordinate data: vector or matrix.</p>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
   <p/>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
   <p>Some properties are available only for compatibility and have currently no effect on the surface.</p>
 
 ## Examples
@@ -102,9 +106,11 @@ axis square
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.0.0   | initial version                      |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --      | BeingDeleted property added.         |
 
 ## Author
 

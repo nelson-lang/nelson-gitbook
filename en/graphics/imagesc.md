@@ -46,6 +46,10 @@ Display image from array with scaled colors.
   <p><b>XData</b> Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).</p>
   <p><b>YData</b> Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).</p>
   <p/>
+  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+Set this property on an existing component has no effect.</p>
+  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 ## Examples
 
@@ -72,9 +76,11 @@ colormap(gray)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                          |
+| ------- | ------------------------------------ |
+| 1.0.0   | initial version                      |
+| 1.7.0   | CreateFcn, DeleteFcn callback added. |
+| --      | BeingDeleted property added.         |
 
 ## Author
 

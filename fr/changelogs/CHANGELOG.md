@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.7.0 (2024-08-27)
+
+### Added
+
+- `uicontrol` Create user interface control (button, slider, edit, list box, etc.).
+- `waitfor` Block execution and wait for condition.
+- `waitforbuttonpress` — Wait for click or key press.
+- `im2double` — Convert image to double.
+- `CloseRequestFcn` — Close request callback for `figure`.
+- `CreateFcn` — Create callback for all graphic objects.
+- `DeleteFcn` — Delete callback for all graphic objects.
+- `BusyAction` — Busy action for all graphic objects.
+- `Interruptible` — Interruptible property for all graphic objects.
+- `BeingDeleted` — Being deleted property for all graphic objects.
+- `KeyPressFcn`, `KeyReleaseFcn`, `ButtonDownFcn` properties for `figure`.
+
+### Changed
+
+- Refactor the internal implementation of the 'system' built-in function.
+
+- Python 3.12.5 on Windows.
+
 ## 1.6.0 (2024-06-29)
 
 ### Added
