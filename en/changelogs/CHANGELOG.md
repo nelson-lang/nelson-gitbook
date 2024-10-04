@@ -5,7 +5,51 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.7.0 (2024-08-27)
+## 1.8.0 (2024-10-04)
+
+### Added
+
+- **`table` Data Type**:
+
+  - Introduced the `table` data type, offering enhanced functionality for structured data manipulation.
+
+  - Overloaded methods specific to the `table` data type:
+
+    - `disp`, `display` for table display.
+    - `horzcat`, `vertcat` for horizontal and vertical concatenation.
+    - `isempty` to check if the table is empty.
+    - `isequal`, `isequalto` for table comparison.
+    - `properties` for accessing table metadata.
+    - `subsasgn` for subscripted assignment.
+    - `subsref` for subscripted referencing.
+
+  - Conversion functions added:
+
+    - `array2table`: Convert an array to a table.
+    - `cell2table`: Convert a cell array to a table.
+    - `struct2table`: Convert a structure to a table.
+    - `table2array`: Convert a table to an array.
+    - `table2cell`: Convert a table to a cell array.
+    - `table2struct`: Convert a table to a structure.
+
+  - Utility functions introduced:
+    - `width`: Retrieve the number of columns in the table
+    - `height`: Retrieve the number of rows in the table
+    - `istable`: Check if a variable is of the `table` data type
+
+- `Resize` - Resize figure property.
+- [#36](http://github.com/nelson-lang/nelson/issues/36) `datenum` format compatibility extended.
+- [#37](http://github.com/nelson-lang/nelson/issues/37) `datestr` Convert date and time to string format.
+
+### Changed
+
+- CodeQL Github action updated.
+
+### Fixed
+
+- fix 'units' refresh for 'axes' object.
+
+## 1.7.0 (2024-08-28)
 
 ### Added
 

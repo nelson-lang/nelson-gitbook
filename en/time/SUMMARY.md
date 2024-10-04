@@ -5,6 +5,7 @@
   - [cputime](cputime.md)
   - [date](date.md)
   - [datenum](datenum.md)
+  - [datestr](datestr.md)
   - [datevec](datevec.md)
   - [eomday](eomday.md)
   - [etime](etime.md)

@@ -208,6 +208,20 @@
   - [types](./dictionary/types.md)
   - [values](./dictionary/values.md)
 
+- [table](./table/README.md)
+
+  - [Accessing and Manipulating Tables in Nelson](./table/accessing_manipulating_table.md)
+  - [array2table](./table/array2table.md)
+  - [cell2table](./table/cell2table.md)
+  - [height](./table/height.md)
+  - [istable](./table/istable.md)
+  - [struct2table](./table/struct2table.md)
+  - [table](./table/table.md)
+  - [table2array](./table/table2array.md)
+  - [table2cell](./table/table2cell.md)
+  - [table2struct](./table/table2struct.md)
+  - [width](./table/width.md)
+
 - [integer](./integer/README.md)
 
   - [int16](./integer/int16.md)
@@ -707,6 +721,7 @@
   - [cputime](./time/cputime.md)
   - [date](./time/date.md)
   - [datenum](./time/datenum.md)
+  - [datestr](./time/datestr.md)
   - [datevec](./time/datevec.md)
   - [eomday](./time/eomday.md)
   - [etime](./time/etime.md)

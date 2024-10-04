@@ -12,6 +12,7 @@ time functions
 - [cputime](cputime.md) - Return the CPU time used by your Nelon session.
 - [date](date.md) - Return the Current date as character vector.
 - [datenum](datenum.md) - Return the date/time input as a serial day number.
+- [datestr](datestr.md) - Convert date and time to string format.
 - [datevec](datevec.md) - Convert a serial date number into a date vector.
 - [eomday](eomday.md) - Returns last day of month.
 - [etime](etime.md) - Time elapsed between date vectors.

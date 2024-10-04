@@ -43,6 +43,7 @@ Creates an figure window.
   <p><b>Parent</b>: Figure parent: root graphics object.</p>
   <p><b>Position</b>: Location and size of drawable area: [left, bottom, width, height]</p>
   <p>'width' and 'height' define the size of the window. 'left' and 'bottom' define the position of the first addressable pixel in the lower left corner of the window</p>
+  <p><b>Resize</b>: Resize figure: 'on' or 'off' (default).</p>
   <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
   <p><b>ToolBar</b>:  Figure toolbar display: 'none', 'auto' (default), 'figure'.</p>
   <p><b>Type</b>: Type 'figure'.</p>
@@ -81,6 +82,7 @@ figure('Name', 'Hello')
 | 1.2.0   | Clicking on an figure automatically sets it as the current figure object.                        |
 | 1.7.0   | CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn callback added. |
 | --      | BeingDeleted property added.                                                                     |
+| 1.8.0   | Resize property added.                                                                           |
 
 ## Author
 
