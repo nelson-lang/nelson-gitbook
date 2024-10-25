@@ -125,7 +125,7 @@ T_vert = [T1; T3]  % or T_vert = vertcat(T1, T3)
 
 ## See also
 
-[table](table.md).
+[table](table.md), [Direct computation with Table](2_direct_compution_with_table.md).
 
 ## History
 

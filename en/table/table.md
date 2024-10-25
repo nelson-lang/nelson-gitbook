@@ -80,7 +80,7 @@ T('Person2', 1:2)
 
 ## See also
 
-[Accessing and Manipulating Tables in Nelson](accessing_manipulating_table.md), [cell2table](cell2table.md), [array2table](array2table.md), [struct2table](struct2table.md).
+[Accessing and Manipulating Tables in Nelson](1_accessing_manipulating_table.md), [Direct computation with Table](2_direct_compution_with_table.md), [cell2table](cell2table.md), [array2table](array2table.md), [struct2table](struct2table.md).
 
 ## History
 

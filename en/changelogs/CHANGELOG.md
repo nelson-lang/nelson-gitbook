@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.9.0 (2024-10-26)
+
+### Added
+
+- Table direct computation:
+
+  - unary functions: `abs`, `acos`, `acosh`, `acot`, `acotd`, `acoth`,
+    `acsc`, `acscd`, `acsch`, `asec`, `asecd`, `asech`,
+    `asin`, `asind`, `asinh`, `atan`, `atand`, `atanh`,
+    `ceil`, `cosd`, `cosh`, `cospi`, `cot`, `cotd`,
+    `coth`, `csc`, `cscd`, `csch`, `exp`, `fix`,
+    `floor`, `log`, `log10`, `log1p`, `log2`, `nextpow2`,
+    `round`, `sec`, `secd`, `sech`, `sin`, `sind`,
+    `sinh`, `sinpi`, `sqrt`, `tan`, `tand`, `tanh`,
+    `var`, `acosd`, `not`.
+  - binary functions: `plus`, `minus`, `times`, `eq`, `ge`, `gt`, `le`,
+    `ne`, `lt`, `rdivide`, `rem`, `power`, `pow2`, `or`, `mod`, `ldivide`.
+
+- `end` magic keyword can be overloaded for classes (applied to `table` class).
+- [#1250](http://github.com/nelson-lang/nelson/issues/1250) `head`, `tail` functions for table and array.
+- [#1248](http://github.com/nelson-lang/nelson/issues/1248) `removevars`, `renamevars` functions for table.
+
+### Changed
+
+- [#1259](http://github.com/nelson-lang/nelson/issues/1259) Add macOS Sequoia and remove macOS Monterey CI support.
+- Qt 6.8 LTS support (used on Windows 64 bits binary).
+- Python 3.13.0 on Windows.
+- Boost 1.86 on Windows.
+
 ## 1.8.0 (2024-10-04)
 
 ### Added

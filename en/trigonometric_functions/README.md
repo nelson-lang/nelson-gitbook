@@ -16,7 +16,7 @@ module about sine, cosine, and related functions.
 - [acscd](acscd.md) - Inverse cosecant in degrees.
 - [acsch](acsch.md) - Inverse hyperbolic cosecant.
 - [asec](asec.md) - Inverse secant of angle in radians.
-- [secd](asecd.md) - Inverse secant of argument in degrees.
+- [asecd](asecd.md) - Inverse secant of argument in degrees.
 - [asech](asech.md) - Inverse hyperbolic secant of angle in radians.
 - [asin](asin.md) - Computes the inverse sine in radians for each element of x.
 - [asind](asind.md) - Inverse sine in degrees.

@@ -9,7 +9,7 @@
   - [acscd](acscd.md)
   - [acsch](acsch.md)
   - [asec](asec.md)
-  - [secd](asecd.md)
+  - [asecd](asecd.md)
   - [asech](asech.md)
   - [asin](asin.md)
   - [asind](asind.md)
