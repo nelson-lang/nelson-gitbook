@@ -25,7 +25,7 @@ function c = demo_switch(a)
     otherwise
       c = 'not sure';
   end
-endfunction
+end
 ```
 
 ```matlab

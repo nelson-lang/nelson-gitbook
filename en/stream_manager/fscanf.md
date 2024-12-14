@@ -111,7 +111,7 @@ R
 
 ## See also
 
-[fopen](fopen.md), [fprintf](fprintf.md), [dlmwrite](dlmwrite.md).
+[fopen](fopen.md), [fprintf](fprintf.md), [dlmwrite](dlmwrite.html).
 
 ## History
 

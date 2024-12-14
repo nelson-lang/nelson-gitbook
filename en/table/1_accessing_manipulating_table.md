@@ -33,6 +33,12 @@
   <p>see examples: <b>Vertical Concatenation</b></p>
   <p/>
   <p>
+    <b>Convert variable types</b>
+  </p>
+  <p>You can convert table variables by using the <b>VariableTypes</b> property.</p>
+  <p>see examples: <b>VariableTypes</b> example</p>
+  <p/>
+  <p>
     <b>Summary</b>
   </p>
   <p>In Nelson, tables provide a flexible way to store and manipulate heterogeneous data. You can easily insert data, extract parts of the table, and concatenate tables both horizontally and vertically using built-in functionality like dot notation and concatenation functions (horzcat, vertcat), making table manipulation intuitive and powerful for data analysis.</p>
@@ -123,15 +129,33 @@ T3 = table([3; 4], {'C'; 'D'}, 'VariableNames', {'ID', 'Label'});
 T_vert = [T1; T3]  % or T_vert = vertcat(T1, T3)
 ```
 
+Convert variable types
+
+```matlab
+Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
+Age = [28; 34; 22; 30];
+Height = [175; 160; 180; 165];
+Weight = [70; 55; 80; 60];
+T = table(Names, Age, Height, Weight);
+T.Properties.VariableTypes
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes = ["string"    "int8"    "double"    "double"];
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes
+```
+
 ## See also
 
 [table](table.md), [Direct computation with Table](2_direct_compution_with_table.md).
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.8.0   | initial version |
+| Version | Description            |
+| ------- | ---------------------- |
+| 1.8.0   | initial version        |
+| 1.10.0  | VariableTypes property |
 
 ## Author
 

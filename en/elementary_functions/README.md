@@ -53,6 +53,7 @@ elementary functions
 - [ismatrix](ismatrix.md) - determines whether input is matrix or not
 - [isnan](isnan.md) - Check for Not a Number entries.
 - [isrow](isrow.md) - Determine whether input is row vector.
+- [isscalar](isscalar.md) - Check if the input is a scalar
 - [istril](istril.md) - Checks if matrix is lower triangular.
 - [istriu](istriu.md) - Checks if matrix is upper triangular.
 - [isvector](isvector.md) - Checks input is vector.

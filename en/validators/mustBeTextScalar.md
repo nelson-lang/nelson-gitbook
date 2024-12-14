@@ -27,7 +27,7 @@ mustBeTextScalar("hello")
 
 ## See also
 
-[isscalar](isscalar.html), [ischar](../types/ischar.md), [isstring](../types/isstring.md).
+[isscalar](../elementary_functions/isscalar.md), [ischar](../types/ischar.md), [isstring](../types/isstring.md).
 
 ## History
 

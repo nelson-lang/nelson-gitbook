@@ -1,6 +1,5 @@
 - [stream_manager](README.md)
   - [diary](diary.md)
-  - [dlmwrite](dlmwrite.md)
   - [fclose](fclose.md)
   - [feof](feof.md)
   - [ferror](ferror.md)

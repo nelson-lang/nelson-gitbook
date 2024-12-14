@@ -13,7 +13,7 @@
   - [COM_xlsfinfo](COM_xlsfinfo.md)
   - [COM_xlsread](COM_xlsread.md)
   - [COM_xlswrite](COM_xlswrite.md)
-  - [actxGetRunningSrv](actxGetRunningSrv.md)
+  - [actxGetRunningServer](actxGetRunningServer.md)
   - [actxcontrollist](actxcontrollist.md)
   - [actxserver](actxserver.md)
   - [actxserverlist](actxserverlist.md)

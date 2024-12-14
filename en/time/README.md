@@ -16,8 +16,11 @@ time functions
 - [datevec](datevec.md) - Convert a serial date number into a date vector.
 - [eomday](eomday.md) - Returns last day of month.
 - [etime](etime.md) - Time elapsed between date vectors.
+- [hour](hour.md) - Hours part of the input date and time.
 - [leapyear](leapyear.md) - Determine leap year.
+- [minute](minute.md) - Minutes part of the input date and time.
 - [now](now.md) - Returns current date under the form of a Unix hour.
+- [second](second.md) - Seconds part of the input date and time.
 - [sleep](sleep.md) - Suspend code execution.
 - [tic](tic.md) - Starts a stopwatch timer.
 - [time](time.md) - Return the current time as the number of seconds or nanoseconds since the epoch.

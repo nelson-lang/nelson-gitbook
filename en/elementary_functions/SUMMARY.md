@@ -46,6 +46,7 @@
   - [ismatrix](ismatrix.md)
   - [isnan](isnan.md)
   - [isrow](isrow.md)
+  - [isscalar](isscalar.md)
   - [istril](istril.md)
   - [istriu](istriu.md)
   - [isvector](isvector.md)

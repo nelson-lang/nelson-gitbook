@@ -23,6 +23,7 @@ Add title.
 ## Description
 
   <p><b>title('text')</b> adds the title to the current axes.</p>
+  <p><b>Visible</b> property is inherited from the parent if not explicitly defined.</p>
 
 ## Example
 
@@ -42,9 +43,10 @@ title('Unicode ドラゴンボールZ(ゼット)', 14);
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                                                              |
+| ------- | ------------------------------------------------------------------------ |
+| 1.0.0   | initial version                                                          |
+| 1.10.0  | Visible property is inherited from the parent if not explicitly defined. |
 
 ## Author
 

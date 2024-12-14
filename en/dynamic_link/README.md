@@ -19,6 +19,8 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [dlgenerateloader](dlgenerateloader.md) - Generates loader.m file for C++ gateway.
 - [dlgeneratemake](dlgeneratemake.md) - Generates a makefile for building a dynamic library.
 - [dlgenerateunloader](dlgenerateunloader.md) - Generates unloader.m file for C++ gateway.
+- [dlgetnelsonincludes](dlgetnelsonincludes.md) - Returns paths of Nelson include directories.
+- [dlgetnelsonlibraries](dlgetnelsonlibraries.md) - Returns paths to Nelson library files.
 - [dllib_used](dllib_used.md) - Returns list of current used dllib handle.
 - [dllibinfo](dllibinfo.md) - Returns list of available symbols in an shared library.
 - [dllibisloaded](dllibisloaded.md) - Checks if shared library is loaded.
@@ -37,6 +39,6 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [libpointer_reshape](libpointer_reshape.md) - Reshapes libpointer dimensions.
 - [libpointer_setdatatype](libpointer_setdatatype.md) - Set type of an libpointer handle.
 - [libpointer_used](libpointer_used.md) - Returns list of current used libpointer handle.
-- [loadcompilerconf](loadcompiler.md) - load compiler configuration.
+- [loadcompilerconf](loadcompilerconf.md) - load compiler configuration.
 - [removecompilerconf](removecompilerconf.md) - Remove used compiler configuration (on Windows).
 - [vswhere](vswhere.md) - Locate Visual Studio 2017, 2019 and newer installations

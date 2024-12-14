@@ -34,7 +34,7 @@ C = strcat(A, B)
 
 ## See also
 
-[append](append.md).
+[append](append.md), [join](join.md).
 
 ## History
 

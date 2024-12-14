@@ -27,7 +27,7 @@ mustBeLogicalScalar([true false])
 
 ## See also
 
-[isscalar](isscalar.html), [islogical](../types/islogical.md).
+[isscalar](../elementary_functions/isscalar.md), [islogical](../types/islogical.md).
 
 ## History
 

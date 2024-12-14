@@ -43,7 +43,7 @@ functions to define for next example:
 ```matlab
 function r = fun1(x, y)
 r = x > y;
-endfunction
+end
 
 function result = errorfun(S, varargin)
 	disp(nargin())
@@ -53,7 +53,7 @@ function result = errorfun(S, varargin)
 	disp(varargin{1})
 	disp(varargin{2})
 	result = false;
-endfunction
+end
 ```
 
 ```matlab

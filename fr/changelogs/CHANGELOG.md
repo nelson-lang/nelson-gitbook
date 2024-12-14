@@ -5,6 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.10.0 (2024-12-14)
+
+### Added
+
+- `detectImportOptions`: Generate import options from the file's content.
+- `readtable`: Read table from file.
+- `writetable`: Write table to file.
+- `readcell`: Read cell array from file.
+- `writecell`: write cell array to file.
+- `readmatrix`: read matrix from file.
+- `writematrix`: write matrix to file.
+- `csvread`: Read comma-separated value (CSV) file.
+- `csvwrite`: Write comma-separated value (CSV) file.
+- `dlmread`: Read ASCII-delimited file of numeric data into matrix.
+- `realmin`: Smallest normalized floating-point number.
+- [#1288](http://github.com/nelson-lang/nelson/issues/1288) `mustBeMatrix`, `mustBeRow`, `mustBeColumn` validator functions.
+- `join`: Combine strings.
+- [#1292](http://github.com/nelson-lang/nelson/issues/1292) Large Table Display.
+- [#1290](http://github.com/nelson-lang/nelson/issues/1290) `VariableTypes` property for table: Specify the data types of table in Nelson.
+- `hour`, `minute`, `second` component of input date and time.
+
+### Changed
+
+- `narginchk`, `nargoutchk` support for check only minimun arguments `narginchk(3, Inf)`.
+- Fedora 41 CI
+- `title`: `Visible` property is inherited from the parent if not explicitly defined.
+- i18n: migration PO files to JSON.
+- `dlmwrite`: rework the function to be more fast and robust.
+- `strjust`: rework the function to be more fast and robust.
+- `datenum`: support '' as format for compatibility.
+
+### Fixed
+
+- [#1303](http://github.com/nelson-lang/nelson/issues/1303) `datevec` result must be normalized.
+- [#1297](http://github.com/nelson-lang/nelson/issues/1297) some features have no help files.
+- [#1276](http://github.com/nelson-lang/nelson/issues/1276) micromamba macos build.
+
 ## 1.9.0 (2024-10-26)
 
 ### Added

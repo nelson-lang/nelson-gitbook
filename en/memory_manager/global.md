@@ -22,7 +22,7 @@ Defines a global variable.
 function myfun()
 global y;
 y = 1;
-endfunction
+end
 
 myfun()
 who

@@ -17,6 +17,7 @@ data structures functions
 - [iscellstr](iscellstr.md) - Returns if a variable is a cell of strings.
 - [isfield](isfield.md) - Checks if a fieldname exists in a struct.
 - [namedargs2cell](namedargs2cell.md) - Converts a struct containing name-value pairs to a cell.
+- [num2cell](num2cell.md) - Convert array to cell array with consistently sized cells.
 - [orderfields](orderfields.md) - Reorganize the fields of a structured array.
 - [rmfield](rmfield.md) - Remove fields from structure.
 - [setfield](setfield.md) - Set structure field contents.

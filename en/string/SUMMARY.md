@@ -12,6 +12,7 @@
   - [isStringScalar](isStringScalar.md)
   - [isletter](isletter.md)
   - [isspace](isspace.md)
+  - [join](join.md)
   - [mat2str](mat2str.md)
   - [matches](matches.md)
   - [newline](newline.md)

@@ -20,7 +20,7 @@ Component Object Model (COM) client interface: binary-interface standard for sof
 - [COM_xlsfinfo](COM_xlsfinfo.md) - Determines if file contains Microsoft Excel spreadsheet.
 - [COM_xlsread](COM_xlsread.md) - Read Microsoft Excel spreadsheet file using COM.
 - [COM_xlswrite](COM_xlswrite.md) - Write Microsoft Excel spreadsheet file using COM.
-- [actxGetRunningSrv](actxGetRunningSrv.md) - Handle to running instance of Automation server.
+- [actxGetRunningServer](actxGetRunningServer.md) - Handle to running instance of Automation server.
 - [actxcontrollist](actxcontrollist.md) - Get available ActiveX controls.
 - [actxserver](actxserver.md) - Creates COM server.
 - [actxserverlist](actxserverlist.md) - Get available ActiveX servers.

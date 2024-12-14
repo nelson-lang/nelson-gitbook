@@ -10,6 +10,7 @@
   - [iscellstr](iscellstr.md)
   - [isfield](isfield.md)
   - [namedargs2cell](namedargs2cell.md)
+  - [num2cell](num2cell.md)
   - [orderfields](orderfields.md)
   - [rmfield](rmfield.md)
   - [setfield](setfield.md)

@@ -15,7 +15,7 @@ Return the date/time input as a serial day number.
 ## Input argument
 
 - datevec - a vector: [Y, M, D, H, MN, S] or matrix N x 6.
-- format - a string: date format.
+- format - a string specifying the date format, or leave it empty ('') for automatic format detection.
 - datestr - a string, cell of string or string array: text representing a date.
 - Y, M, D, H, MN, S - double: Year, Month, Day, Hours, Minutes, Secondes (scalar or vector).
 - pivotYear: Start year of 100-year date range - integer value or present minus 50 years (default).
@@ -154,10 +154,11 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 
 ## History
 
-| Version | Description                   |
-| ------- | ----------------------------- |
-| 1.0.0   | initial version               |
-| 1.8.0   | date string parsing extended. |
+| Version | Description                           |
+| ------- | ------------------------------------- |
+| 1.0.0   | initial version                       |
+| 1.8.0   | date string parsing extended.         |
+| 1.10.0  | added: format '' means try to detect. |
 
 ## Author
 

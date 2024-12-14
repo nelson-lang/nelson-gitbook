@@ -32,9 +32,9 @@ Write an numeric matrix to a text file file using a delimiter.
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
-filename = [tempdir(), 'dlwrite_example.csv'];
+filename = [tempdir(), 'dlmwrite_example.csv'];
 dlmwrite(filename, A);
-R = fileread(filename)
+R = dlmread(filename)
 A = eye(3, 2);
 dlmwrite(filename, A, ';', 4, 5);
 R = fileread(filename)
@@ -42,7 +42,7 @@ R = fileread(filename)
 
 ## See also
 
-[fileread](fileread.md).
+[dlmread](dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## History
 

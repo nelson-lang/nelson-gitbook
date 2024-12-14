@@ -7,6 +7,7 @@ Validators
 validators functions
 
 - [mustBeA](mustBeA.md) - Checks that input value comes from one of specified classes.
+- [mustBeColumn](mustBeColumn.md) - Checks that value is a column vector or raise an error.
 - [mustBeFile](mustBeFile.md) - Checks that input path refers to file.
 - [mustBeFinite](mustBeFinite.md) - Checks that value is finite or raise an error.
 - [mustBeFloat](mustBeFloat.md) - Checks that value is floating-point or raise an error.
@@ -19,6 +20,7 @@ validators functions
 - [mustBeLessThanOrEqual](mustBeLessThanOrEqual.md) - Checks that value is less than or equal to another value or issue error.
 - [mustBeLogical](mustBeLogical.md) - Checks that value is logical or raise an error.
 - [mustBeLogicalScalar](mustBeLogicalScalar.md) - Checks that value is logical scalar or raise an error.
+- [mustBeMatrix](mustBeMatrix.md) - Checks that value is a matrix or raise an error.
 - [mustBeMember](mustBeMember.md) - Checks that value is member of specified array or issue error.
 - [mustBeNegative](mustBeNegative.md) - Checks that value is negative or raise an error.
 - [mustBeNonNan](mustBeNonNan.md) - Checks that value is not NaN.
@@ -33,6 +35,7 @@ validators functions
 - [mustBeNumericOrLogical](mustBeNumericOrLogical.md) - Checks that input is numeric or logical.
 - [mustBePositive](mustBePositive.md) - Checks that value is positive or raise an error.
 - [mustBeReal](mustBeReal.md) - Checks that value is real.
+- [mustBeRow](mustBeRow.md) - Checks that value is a row vector or raise an error.
 - [mustBeScalarOrEmpty](mustBeScalarOrEmpty.md) - Checks that value is scalar or empty or raise an error.
 - [mustBeText](mustBeText.md) - Checks that value is piece of text or raise an error.
 - [mustBeTextScalar](mustBeTextScalar.md) - Checks that value is single piece of text or raise an error.

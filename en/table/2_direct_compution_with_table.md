@@ -12,7 +12,7 @@
 
 ## Example
 
-Adding a New Column
+Direct computation on Tables
 
 ```matlab
 % Create a sample table with sensor data
