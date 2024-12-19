@@ -50,7 +50,7 @@ y = pyrun(PYCODE, 'Y')
 
 ## See also
 
-[pyrunfile](pyrunfile.md), [pyenv](pyenv.md), [Python types supported](python_types.html).
+[pyrunfile](pyrunfile.md), [pyenv](pyenv.md), [Python types supported](3_python_types.md).
 
 ## History
 

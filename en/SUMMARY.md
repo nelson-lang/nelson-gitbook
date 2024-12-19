@@ -1,5 +1,7 @@
 # Summary
 
+[Overview](./README.md)
+
 - [functions_manager](./functions_manager/README.md)
 
   - [addpath](./functions_manager/addpath.md)
@@ -1203,7 +1205,7 @@
 
 - [com_engine](./com_engine/README.md)
 
-  - [COM examples](./com_engine/COM examples.md)
+  - [COM examples](./com_engine/1_COM_examples.md)
   - [COM_delete](./com_engine/COM_delete.md)
   - [COM_fieldnames](./com_engine/COM_fieldnames.md)
   - [COM_get](./com_engine/COM_get.md)
@@ -1299,6 +1301,7 @@
   - [pyrunfile](./python_engine/pyrunfile.md)
 
 - [spreadsheet](./spreadsheet/README.md)
+
   - [csvread](./spreadsheet/csvread.md)
   - [csvwrite](./spreadsheet/csvwrite.md)
   - [detectImportOptions](./spreadsheet/detectImportOptions.md)
@@ -1310,3 +1313,20 @@
   - [writecell](./spreadsheet/writecell.md)
   - [writematrix](./spreadsheet/writematrix.md)
   - [writetable](./spreadsheet/writetable.md)
+
+- [Changelogs](./changelogs/CHANGELOG.md)
+
+  - [Changelog v1.x.x](changelogs/CHANGELOG.md)
+  - [Changelog v0.7.x](changelogs/CHANGELOG-0.7.x.md)
+  - [Changelog v0.6.x](changelogs/CHANGELOG-0.6.x.md)
+  - [Changelog v0.5.x](changelogs/CHANGELOG-0.5.x.md)
+  - [Changelog v0.4.x](changelogs/CHANGELOG-0.4.x.md)
+  - [Changelog v0.3.x](changelogs/CHANGELOG-0.3.x.md)
+  - [Changelog v0.2.x](changelogs/CHANGELOG-0.2.x.md)
+  - [Changelog v0.1.x](changelogs/CHANGELOG-0.1.x.md)
+
+- [License](./license/license.md)
+
+  - [License](./license/license.md)
+  - [LGPL v3.0](./license/lgpl-3.0.md)
+  - [GPL v3.0](./license/gpl-3.0.md)

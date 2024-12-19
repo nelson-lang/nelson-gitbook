@@ -1,5 +1,5 @@
 - [com_engine](README.md)
-  - [COM examples](COM examples.md)
+  - [COM examples](1_COM_examples.md)
   - [COM_delete](COM_delete.md)
   - [COM_fieldnames](COM_fieldnames.md)
   - [COM_get](COM_get.md)

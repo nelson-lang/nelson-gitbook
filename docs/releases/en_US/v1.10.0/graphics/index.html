@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>graphics - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="graphics-functions"><a class="header" href="#graphics-functions">Graphics functions</a></h1>
+<p>Graphics functions</p>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>graphics functions</p>
+<ul>
+<li><a href="abyss.html">abyss</a> - Abyss colormap array.</li>
+<li><a href="ancestor.html">ancestor</a> - Ancestor of graphics object.</li>
+<li><a href="autumn.html">autumn</a> - Autumn colormap array.</li>
+<li><a href="axes.html">axes</a> - Create cartesian axes.</li>
+<li><a href="axis.html">axis</a> - Set axis limits and aspect ratios.</li>
+<li><a href="bar.html">bar</a> - Bar graph.</li>
+<li><a href="bone.html">bone</a> - Bone colormap array.</li>
+<li><a href="cla.html">cla</a> - Clear axes.</li>
+<li><a href="clf.html">clf</a> - Clear figure.</li>
+<li><a href="clim.html">clim</a> - Set colormap limits.</li>
+<li><a href="close.html">close</a> - Close one or more figures</li>
+<li><a href="colorbar.html">colorbar</a> - Colorbar showing color scale.</li>
+<li><a href="colormap.html">colormap</a> - View and set current colormap.</li>
+<li><a href="colstyle.html">colstyle</a> - Parse color and style from string.</li>
+<li><a href="contour.html">contour</a> - Contour plot of matrix</li>
+<li><a href="contour3.html">contour3</a> - Contour 3D plot of matrix</li>
+<li><a href="cool.html">cool</a> - Cool colormap array.</li>
+<li><a href="copper.html">copper</a> - Copper colormap array.</li>
+<li><a href="copygraphics.html">copygraphics</a> - Copy plot to clipboard.</li>
+<li><a href="cylinder.html">cylinder</a> - Create cylinder.</li>
+<li><a href="drawnow.html">drawnow</a> - Update figures and process callbacks</li>
+<li><a href="figure.html">figure</a> - Creates an figure window.</li>
+<li><a href="fill.html">fill</a> - Create filled 2-D patches.</li>
+<li><a href="gca.html">gca</a> - get current axes graphics object.</li>
+<li><a href="gcf.html">gcf</a> - get current figure graphics object.</li>
+<li><a href="graphical_callback.html">Managing Callback Interruptions in Nelson</a></li>
+<li><a href="gray.html">gray</a> - Gray colormap array.</li>
+<li><a href="grid.html">grid</a> - Display or hide axes grid lines.</li>
+<li><a href="groot.html">groot</a> - graphic root object.</li>
+<li><a href="hggroup.html">hggroup</a> - Create group object.</li>
+<li><a href="hist.html">hist</a> - Histogram plot.</li>
+<li><a href="hold.html">hold</a> - Retain current plot when adding new plots.</li>
+<li><a href="hot.html">hot</a> - Hot colormap array.</li>
+<li><a href="im2double.html">im2double</a> - Convert image to double precision.</li>
+<li><a href="image.html">image</a> - Display image from array.</li>
+<li><a href="imagesc.html">imagesc</a> - Display image from array with scaled colors.</li>
+<li><a href="imread.html">imread</a> - Read image from graphics file.</li>
+<li><a href="imshow.html">imshow</a> - Display image.</li>
+<li><a href="imwrite.html">imwrite</a> - Write image to graphics file.</li>
+<li><a href="is2D.html">is2D</a> - Checks if ax is a 2-D Polar or Cartesian axes.</li>
+<li><a href="isValidGraphicsProperty.html">isValidGraphicsProperty</a> - Check property name is valid.</li>
+<li><a href="isgraphics.html">isgraphics</a> - Check for graphics object.</li>
+<li><a href="ishold.html">ishold</a> - Get current hold state.</li>
+<li><a href="jet.html">jet</a> - Jet colormap array.</li>
+<li><a href="legend.html">legend</a> - Add legend to axes.</li>
+<li><a href="line.html">line</a> - Create primitive line.</li>
+<li><a href="loglog.html">loglog</a> - Log-log scale plot.</li>
+<li><a href="mesh.html">mesh</a> - Mesh surface plot.</li>
+<li><a href="meshz.html">meshz</a> - Mesh surface plot with curtain.</li>
+<li><a href="newplot.html">newplot</a> - Prepare to produce a new plot.</li>
+<li><a href="pan.html">pan</a> - Enable pan mode.</li>
+<li><a href="parula.html">parula</a> - Parula colormap array.</li>
+<li><a href="patch.html">patch</a> - Create patches of colored polygons</li>
+<li><a href="pcolor.html">pcolor</a> - Pseudocolor plot.</li>
+<li><a href="pie.html">pie</a> - Legacy pie chart.</li>
+<li><a href="pink.html">pink</a> - Pink colormap array.</li>
+<li><a href="plot.html">plot</a> - Linear 2-D plot.</li>
+<li><a href="plot3.html">plot3</a> - 3-D line plot.</li>
+<li><a href="quiver.html">quiver</a> - Vector plot.</li>
+<li><a href="refresh.html">refresh</a> - Redraw current figure.</li>
+<li><a href="rgbplot.html">rgbplot</a> - Plot colormap.</li>
+<li><a href="ribbon.html">ribbon</a> - Ribbon plot.</li>
+<li><a href="rotate3d.html">rotate3d</a> - Enable rotate mode.</li>
+<li><a href="saveas.html">saveas</a> - Save figure to specific file format.</li>
+<li><a href="scatter.html">scatter</a> - Scatter plot.</li>
+<li><a href="semilogx.html">semilogx</a> - Semilog plot (x-axis has log scale).</li>
+<li><a href="semilogy.html">semilogy</a> - Semilog plot (y-axis has log scale).</li>
+<li><a href="sky.html">sky</a> - Sky colormap array.</li>
+<li><a href="sphere.html">sphere</a> - Create sphere.</li>
+<li><a href="spring.html">spring</a> - Spring colormap array.</li>
+<li><a href="spy.html">spy</a> - Visualize sparsity pattern of matrix.</li>
+<li><a href="stairs.html">stairs</a> - Stairstep graph.</li>
+<li><a href="stem.html">stem</a> - Plot discrete sequence data.</li>
+<li><a href="subplot.html">subplot</a> - Create axes in tiled positions.</li>
+<li><a href="summer.html">summer</a> - Summer colormap array.</li>
+<li><a href="surf.html">surf</a> - surface plot.</li>
+<li><a href="surface.html">surface</a> - Primitive surface plot.</li>
+<li><a href="text.html">text</a> - creates text descriptions to data points.</li>
+<li><a href="title.html">title</a> - Add title.</li>
+<li><a href="turbo.html">turbo</a> - Turbo colormap array.</li>
+<li><a href="uicontrol.html">uicontrol</a> - Create user interface component.</li>
+<li><a href="validatecolor.html">validatecolor</a> - Validate color values.</li>
+<li><a href="view.html">view</a> - Camera line of sigh.</li>
+<li><a href="viridis.html">viridis</a> - Viridis colormap array.</li>
+<li><a href="waitfor.html">waitfor</a> - Wait for condition.</li>
+<li><a href="waitforbuttonpress.html">waitforbuttonpress</a> - Wait for click or key press.</li>
+<li><a href="waterfall.html">waterfall</a> - waterfall plot.</li>
+<li><a href="white.html">white</a> - white colormap array.</li>
+<li><a href="winter.html">winter</a> - Winter colormap array.</li>
+<li><a href="xlabel.html">xlabel</a> - Label x-axis.</li>
+<li><a href="xlim.html">xlim</a> - set or get x-axis limits.</li>
+<li><a href="ylabel.html">ylabel</a> - Label y-axis.</li>
+<li><a href="ylim.html">ylim</a> - set or get y-axis limits.</li>
+<li><a href="zlabel.html">zlabel</a> - Label z-axis.</li>
+<li><a href="zlim.html">zlim</a> - set or get z-axis limits.</li>
+<li><a href="zoom.html">zoom</a> - Enable zoom mode.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../qml_engine/qt_version.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../graphics/abyss.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../qml_engine/qt_version.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../graphics/abyss.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

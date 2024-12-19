@@ -1,0 +1,10 @@
+[book]
+authors = ["Allan CORNET"]
+language = "en"
+multilingual = false
+src = "./en/"
+title = "Nelson"
+
+[output.html]
+no-section-label = true
+additional-js = ["theme/matlab.min.js"]
