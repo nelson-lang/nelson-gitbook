@@ -1,0 +1,26 @@
+name: CI-book
+
+on:
+  push:
+    branches: [docs]
+  pull_request:
+    branches: [docs]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook init
+      - run: |
+          cd /home/runner/work/nelson-gitbook/nelson-gitbook
+          docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook build .
+      - run: mkdir /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
+      - run: cp  /home/runner/work/nelson-gitbook/nelson-gitbook/_book /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nelson-gitbook-github-action-book-artifacts
+          path: artifacts/
