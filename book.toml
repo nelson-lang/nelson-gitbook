@@ -1,0 +1,6 @@
+[book]
+authors = ["Allan CORNET"]
+language = "en"
+multilingual = false
+src = "./en"
+title = "Nelson"

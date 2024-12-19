@@ -19,7 +19,7 @@ Change default environment of Python interpreter.
 ## Description
 
   <p>Use <b>pyenv</b> to modify the default version or execution mode of the Python interpreter, ensuring these adjustments persist across various Nelson sessions.</p>
-  <p>The value set by <b>pyenv</b> is persistent across MATLAB sessions.</p>
+  <p>The value set by <b>pyenv</b> is persistent across Nelson sessions.</p>
   <p/>
   <p>Properties:</p>
   <p><b>Version</b>: string: Python version</p>
