@@ -6,7 +6,7 @@ COM engine
 
 Component Object Model (COM) client interface: binary-interface standard for software components on Windows.
 
-- [COM examples](COM examples.md) - Some example to show how to use COM interface.
+- [COM examples](1_COM_examples.md) - Some example to show how to use COM interface.
 - [COM_delete](COM_delete.md) - Removes COM control or server.
 - [COM_fieldnames](COM_fieldnames.md) - Returns the properties name of an COM object.
 - [COM_get](COM_get.md) - Get property value from COM interface.

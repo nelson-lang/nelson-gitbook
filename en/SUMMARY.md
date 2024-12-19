@@ -1203,7 +1203,7 @@
 
 - [com_engine](./com_engine/README.md)
 
-  - [COM examples](./com_engine/COM examples.md)
+  - [COM examples](./com_engine/1_COM_examples.md)
   - [COM_delete](./com_engine/COM_delete.md)
   - [COM_fieldnames](./com_engine/COM_fieldnames.md)
   - [COM_get](./com_engine/COM_get.md)
