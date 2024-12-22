@@ -6,5 +6,7 @@ src = "./markdown/en/"
 title = "Nelson"
 
 [output.html]
+site-url = "https://nelson-lang.github.io/nelson-gitbook/"
+git-repository-url = "https://nelson-lang.github.io/nelson-gitbook/"
 no-section-label = true
 additional-js = ["theme/matlab.min.js"]
