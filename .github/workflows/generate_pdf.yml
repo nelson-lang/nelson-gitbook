@@ -17,7 +17,7 @@ jobs:
       - run: docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook init
       - run: |
           cd /home/runner/work/nelson-gitbook/nelson-gitbook
-          docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook pdf .
+          docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook pdf ./markdown
       - run: mkdir /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
       - run: cp  /home/runner/work/nelson-gitbook/nelson-gitbook/*.pdf /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
       - uses: actions/upload-artifact@v4

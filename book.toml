@@ -2,7 +2,7 @@
 authors = ["Allan CORNET"]
 language = "en"
 multilingual = false
-src = "./en/"
+src = "./markdown/en/"
 title = "Nelson"
 
 [output.html]
