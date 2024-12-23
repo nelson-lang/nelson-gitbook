@@ -1,0 +1,13 @@
+# Blacklist documentation
+docs
+scripts
+theme
+.github
+.gitignore
+./README.md
+./LICENCE
+book.toml
+package.json
+.prettierignore
+.nvmrc
+node_modules
