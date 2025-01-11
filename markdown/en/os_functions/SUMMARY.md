@@ -1,4 +1,5 @@
 - [os_functions](README.md)
+  - [cmdsep](cmdsep.md)
   - [computer](computer.md)
   - [createGUID](createGUID.md)
   - [getenv](getenv.md)

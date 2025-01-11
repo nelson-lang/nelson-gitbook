@@ -19,6 +19,7 @@ Executables to start Nelson software.
 - -F filename - If this option is present then Nelson script file is executed just after startup file execution) into an existing Nelson's process or creates it.
 - --help - help about program options.
 - --version - Return Nelson version.
+- --vscode - enable Visual Studio Code mode.
 - --open - opens files arg2 ... argN must be valid/existing filenames.
 - --mat - load files arg2 ... argN must be valid/existing .nh5 or .mat filenames.
 - --nostartup - disable the main Nelson script file executed at startup.
@@ -37,6 +38,9 @@ Executables to start Nelson software.
   <p><b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
   <p><b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
   <p><b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
+  <p/>
+  <p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
+  <p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
 
 ## Examples
 
@@ -58,10 +62,12 @@ nelson-gui --help
 
 ## History
 
-| Version | Description            |
-| ------- | ---------------------- |
-| 1.0.0   | initial version        |
-| 1.4.0   | --without_python added |
+| Version | Description                                          |
+| ------- | ---------------------------------------------------- |
+| 1.0.0   | initial version                                      |
+| 1.4.0   | --without_python added                               |
+| 1.11.0  | About NELSON_RUNTIME_PATH environment variable added |
+| 1.11.0  | --vsocde argument                                    |
 
 ## Author
 

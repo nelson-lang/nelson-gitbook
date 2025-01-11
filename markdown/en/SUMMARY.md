@@ -672,6 +672,7 @@
 
 - [os_functions](./os_functions/README.md)
 
+  - [cmdsep](./os_functions/cmdsep.md)
   - [computer](./os_functions/computer.md)
   - [createGUID](./os_functions/createGUID.md)
   - [getenv](./os_functions/getenv.md)
@@ -1015,6 +1016,7 @@
   - [mustBeReal](./validators/mustBeReal.md)
   - [mustBeRow](./validators/mustBeRow.md)
   - [mustBeScalarOrEmpty](./validators/mustBeScalarOrEmpty.md)
+  - [mustBeSparse](./validators/mustBeSparse.md)
   - [mustBeText](./validators/mustBeText.md)
   - [mustBeTextScalar](./validators/mustBeTextScalar.md)
   - [mustBeValidVariableName](./validators/mustBeValidVariableName.md)

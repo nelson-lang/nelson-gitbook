@@ -30,6 +30,7 @@
   - [mustBeReal](mustBeReal.md)
   - [mustBeRow](mustBeRow.md)
   - [mustBeScalarOrEmpty](mustBeScalarOrEmpty.md)
+  - [mustBeSparse](mustBeSparse.md)
   - [mustBeText](mustBeText.md)
   - [mustBeTextScalar](mustBeTextScalar.md)
   - [mustBeValidVariableName](mustBeValidVariableName.md)

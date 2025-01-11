@@ -37,6 +37,7 @@ validators functions
 - [mustBeReal](mustBeReal.md) - Checks that value is real.
 - [mustBeRow](mustBeRow.md) - Checks that value is a row vector or raise an error.
 - [mustBeScalarOrEmpty](mustBeScalarOrEmpty.md) - Checks that value is scalar or empty or raise an error.
+- [mustBeSparse](mustBeSparse.md) - Checks that value is a sparse matrix or raise an error.
 - [mustBeText](mustBeText.md) - Checks that value is piece of text or raise an error.
 - [mustBeTextScalar](mustBeTextScalar.md) - Checks that value is single piece of text or raise an error.
 - [mustBeValidVariableName](mustBeValidVariableName.md) - Checks that value is valid variable name or raise an error.

@@ -161,19 +161,42 @@
 <ul>
 <li>editor()</li>
 <li>editor(filename)</li>
+<li>editor('editor_command', cmd)</li>
 </ul>
 <h2 id="input-argument"><a class="header" href="#input-argument">Input argument</a></h2>
 <ul>
 <li>filename - a string: filename to open.</li>
+<li>cmd - a string representing the command to launch your preferred code editor.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
   <p><b>editor</b> opens an existing file in the nelson's editor.</p>
-  <p><b>editor</b> must be considered as internal.</p>
+  <p><b>editor</b> must be considered as internal and <b>edit</b> must be preferred.</p>
+  <p>Set another text editor as default: (example with VS code)</p>
+  <p>
+    <code>editor('editor_command', 'code')</code>
+  </p>
+  <p>To restore the default editor, use:</p>
+  <p>
+    <code>editor('editor_command', '')</code>
+  </p>
+  <p>Change text editor is persistent and will be saved in a configuration file.</p>
+<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<pre><code class="language-matlab">edit('edit')
+if ispc()
+  editor('editor_command ', 'notepad')
+else
+  editor('editor_command ', 'vim')
+end
+edit('edit')
+% restore default editor
+editor('editor_command ', '')
+</code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="edit.html">edit</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>
+<tr><td>1.10.0</td><td>Option to change default text editor</td></tr>
 </tbody></table>
 </div>
 <h2 id="author"><a class="header" href="#author">Author</a></h2>

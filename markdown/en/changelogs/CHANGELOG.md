@@ -5,17 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.11.0 (UNRELEASED)
+## 1.11.0 (2025-01-11)
 
 ### Added
 
+- [#1321](http://github.com/nelson-lang/nelson/issues/1321) `mustBeSparse` validator function.
+- [#1322](http://github.com/nelson-lang/nelson/issues/1322) `cmdsep`: Command separator for current operating system.
 - `urlencode`: Replace special characters in URLs with escape characters.
 - `docroot`: Utility to retrieve or define the root directory of Nelson Help.
 - `ismodule`: second input argument `isprotected` added.
+- `editor('editor_command', cmd)` allows to change text editor in Nelson (for example: VS Code).
+- `NELSON_RUNTIME_PATH` environment variable added by installer on Windows.
+- `--vscode` command line argument added.
+- NixOS 24.11 packaging (see [BUILDING_Linux.md](https://github.com/nelson-lang/nelson/blob/master/BUILDING_Linux.md)).
 
 ### Changed
 
 - Help Center: Access documentation in your system's web browser. Previously, the documentation was opened in the embedded Help browser.
+- CA certificate store update.
+- fmt library dependency updated.
+- BS::threadpool library dependency updated.
+- Advanced terminal updated (common for all platforms without GUI, auto completion, search history).
+- Python 3.13.1 supported.
+
+### Fixed
+
+- [#1324](http://github.com/nelson-lang/nelson/issues/1324) Cell display could not be interrupted.
 
 ## 1.10.0 (2024-12-14)
 

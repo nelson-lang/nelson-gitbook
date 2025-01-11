@@ -6,6 +6,7 @@ OS functions
 
 operating system functions
 
+- [cmdsep](cmdsep.md) - Command separator for current operating system.
 - [computer](computer.md) - System information.
 - [createGUID](createGUID.md) - Creates a GUID.
 - [getenv](getenv.md) - Get the value of an environment variable.

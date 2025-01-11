@@ -159,16 +159,31 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="1110-unreleased"><a class="header" href="#1110-unreleased">1.11.0 (UNRELEASED)</a></h2>
+<h2 id="1110-2025-01-11"><a class="header" href="#1110-2025-01-11">1.11.0 (2025-01-11)</a></h2>
 <h3 id="added"><a class="header" href="#added">Added</a></h3>
 <ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1321">#1321</a> <code>mustBeSparse</code> validator function.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1322">#1322</a> <code>cmdsep</code>: Command separator for current operating system.</li>
 <li><code>urlencode</code>: Replace special characters in URLs with escape characters.</li>
 <li><code>docroot</code>: Utility to retrieve or define the root directory of Nelson Help.</li>
 <li><code>ismodule</code>: second input argument <code>isprotected</code> added.</li>
+<li><code>editor('editor_command', cmd)</code> allows to change text editor in Nelson (for example: VS Code).</li>
+<li><code>NELSON_RUNTIME_PATH</code> environment variable added by installer on Windows.</li>
+<li><code>--vscode</code> command line argument added.</li>
+<li>NixOS 24.11 packaging (see <a href="https://github.com/nelson-lang/nelson/blob/master/BUILDING_Linux.md">BUILDING_Linux.md</a>).</li>
 </ul>
 <h3 id="changed"><a class="header" href="#changed">Changed</a></h3>
 <ul>
 <li>Help Center: Access documentation in your system's web browser. Previously, the documentation was opened in the embedded Help browser.</li>
+<li>CA certificate store update.</li>
+<li>fmt library dependency updated.</li>
+<li>BS::threadpool library dependency updated.</li>
+<li>Advanced terminal updated (common for all platforms without GUI, auto completion, search history).</li>
+<li>Python 3.13.1 supported.</li>
+</ul>
+<h3 id="fixed"><a class="header" href="#fixed">Fixed</a></h3>
+<ul>
+<li><a href="http://github.com/nelson-lang/nelson/issues/1324">#1324</a> Cell display could not be interrupted.</li>
 </ul>
 <h2 id="1100-2024-12-14"><a class="header" href="#1100-2024-12-14">1.10.0 (2024-12-14)</a></h2>
 <h3 id="added-1"><a class="header" href="#added-1">Added</a></h3>
@@ -200,7 +215,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li><code>strjust</code>: rework the function to be more fast and robust.</li>
 <li><code>datenum</code>: support '' as format for compatibility.</li>
 </ul>
-<h3 id="fixed"><a class="header" href="#fixed">Fixed</a></h3>
+<h3 id="fixed-1"><a class="header" href="#fixed-1">Fixed</a></h3>
 <ul>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1303">#1303</a> <code>datevec</code> result must be normalized.</li>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1297">#1297</a> some features have no help files.</li>
@@ -298,7 +313,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <ul>
 <li>CodeQL Github action updated.</li>
 </ul>
-<h3 id="fixed-1"><a class="header" href="#fixed-1">Fixed</a></h3>
+<h3 id="fixed-2"><a class="header" href="#fixed-2">Fixed</a></h3>
 <ul>
 <li>fix 'units' refresh for 'axes' object.</li>
 </ul>
@@ -379,7 +394,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <p>dtl 1.2.0</p>
 </li>
 </ul>
-<h3 id="fixed-2"><a class="header" href="#fixed-2">Fixed</a></h3>
+<h3 id="fixed-3"><a class="header" href="#fixed-3">Fixed</a></h3>
 <ul>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1210">#1210</a> <code>bode</code> did not unwrap phase.</li>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1206">#1206</a> <code>balance</code> yields wrong Transformation Matrix.</li>
@@ -432,7 +447,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>help files generated sorted by name on all platforms.</li>
 <li>on windows, Qt libraries used are in debug mode.</li>
 </ul>
-<h3 id="fixed-3"><a class="header" href="#fixed-3">Fixed</a></h3>
+<h3 id="fixed-4"><a class="header" href="#fixed-4">Fixed</a></h3>
 <ul>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1195">#1195</a> <code>strcmp({'a'},["a"])</code> did not return expected value.</li>
 </ul>
@@ -474,7 +489,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>warning about 'Matrix is singular to working precision' for inv matrix.</li>
 <li>tests webtools skipped if connection fails or not available.</li>
 </ul>
-<h3 id="fixed-4"><a class="header" href="#fixed-4">Fixed</a></h3>
+<h3 id="fixed-5"><a class="header" href="#fixed-5">Fixed</a></h3>
 <ul>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1144">#1144</a> test_run markdown help file had a typo.</li>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1143">#1143</a> Linux Snapcraft version did not allow to use python.</li>
@@ -539,7 +554,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li><a href="http://github.com/nelson-lang/nelson/issues/1134">#1134</a> [CI] MacOS X Ventura disabled (Install dependencies fails)</li>
 <li><code>struct</code> supports scalar string array as field name.</li>
 </ul>
-<h3 id="fixed-5"><a class="header" href="#fixed-5">Fixed</a></h3>
+<h3 id="fixed-6"><a class="header" href="#fixed-6">Fixed</a></h3>
 <ul>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1110">#1110</a> add help about build and use C/C++ on fly.</li>
 <li><a href="http://github.com/nelson-lang/nelson/issues/1124">#1124</a> unexpected result from long statements on Multiple Lines.</li>
@@ -579,7 +594,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li>Camera view reworked.</li>
 <li>Minimal screen resolution supported 800x600.</li>
 </ul>
-<h3 id="fixed-6"><a class="header" href="#fixed-6">Fixed</a></h3>
+<h3 id="fixed-7"><a class="header" href="#fixed-7">Fixed</a></h3>
 <ul>
 <li>Change directory with file browser line editor did not work as expected.</li>
 <li>Template to create a function with file browser was wrong.</li>
