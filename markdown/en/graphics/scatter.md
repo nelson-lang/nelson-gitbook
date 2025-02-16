@@ -18,7 +18,7 @@ Scatter plot.
 - X - x-coordinates: vector or matrix.
 - Y - y-coordinates: vector or matrix.
 - sz - Marker size: numeric scalar, vector, [] (default: 36)
-- c - Marker color: color name, RGB triplet or vector of colormap indices
+- c - Marker color: short color name, color name, RGB triplet or vector of colormap indices
 - ax - a scalar graphics object value: parent container, specified as a axes.
 - propertyName - a scalar string or row vector character. see help of 'line' for property list.
 - propertyValue - a value.
@@ -48,13 +48,13 @@ Scatter plot.
   <p><b>'&lt;'</b>: Right-pointing triangle symbol</p>
   <p/>
   <p>The ColorSpec specifies the marker color to use for each data series:</p>
-  <p><b>'k'</b>: Color Black</p>
-  <p><b>'y'</b>: Color Yellow</p>
-  <p><b>'m'</b>: Color Magenta</p>
-  <p><b>'c'</b>: Color Cyan</p>
-  <p><b>'r'</b>: Color Red</p>
-  <p><b>'b'</b>: Color Blue</p>
-  <p><b>'g'</b>: Color Green</p>
+  <p><b>'k'</b>, <b>'black'</b>: Color Black</p>
+  <p><b>'y'</b>, <b>'yellow'</b>: Color Yellow</p>
+  <p><b>'m'</b>, <b>'magenta'</b>: Color Magenta</p>
+  <p><b>'c'</b>, <b>'cyan'</b>: Color Cyan</p>
+  <p><b>'r'</b>, <b>'red'</b>: Color Red</p>
+  <p><b>'b'</b>, <b>'blue'</b>: Color Blue</p>
+  <p><b>'g'</b>, <b>'green'</b>: Color Green</p>
   <p/>
   <p>see <b>line</b> for more information about properties</p>
 
@@ -131,9 +131,10 @@ s = scatter(x,y, 'filled');
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                              |
+| ------- | ---------------------------------------- |
+| 1.0.0   | initial version                          |
+| 1.12.0  | color name and short color name managed. |
 
 ## Author
 

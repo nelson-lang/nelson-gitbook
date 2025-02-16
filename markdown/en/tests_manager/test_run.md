@@ -69,7 +69,10 @@ Runs tests
   <p><b>&lt;--NATIVE ARCHITECTURE TEST REQUIRED--&gt;</b> This test will be executed if application's build and architecture are same.</p>
   <p><b>&lt;--FILE WATCHER REQUIRED--&gt;</b> This test will be executed if file watcher is available.</p>
   <p/>
-  <p><b>&lt;--PYTHON ENVIRONMENT REQUIRED--&gt;</b> This test will be executed if file watcher is available.</p>
+  <p><b>&lt;--PYTHON ENVIRONMENT REQUIRED--&gt;</b> This test will be executed if python environment is available and configured.</p>
+  <p/>
+  <p/>
+  <p><b>&lt;--JULIA ENVIRONMENT REQUIRED--&gt;</b> This test will be executed if julia environment is available and configured.</p>
   <p/>
   <p>Test can also skipped dynamically using <b>skip_testsuite</b> function.</p>
   <p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
@@ -102,6 +105,7 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 | 1.0.0   | initial version                       |
 | 1.3.0   | PYTHON ENVIRONMENT REQUIRED tag added |
 | 1.4.0   | skip_testsuite function reference     |
+| 1.12.0  | JULIA ENVIRONMENT REQUIRED tag added  |
 
 ## Author
 

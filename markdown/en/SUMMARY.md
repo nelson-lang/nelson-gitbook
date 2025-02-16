@@ -1318,6 +1318,13 @@
   - [writematrix](./spreadsheet/writematrix.md)
   - [writetable](./spreadsheet/writetable.md)
 
+- [julia_engine](./julia_engine/README.md)
+
+  - [jlenv](./julia_engine/jlenv.md)
+  - [jlrun](./julia_engine/jlrun.md)
+  - [jlrunfile](./julia_engine/jlrunfile.md)
+  - [Julia Nelson types](./julia_engine/julia_types.md)
+
 - [Changelogs](./changelogs/CHANGELOG.md)
 
   - [Changelog v1.x.x](changelogs/CHANGELOG.md)

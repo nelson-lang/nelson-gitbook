@@ -1,0 +1,56 @@
+# jlrunfile
+
+Run Julia file from Nelson.
+
+## Syntax
+
+- jlrunfile(filename)
+- jlrunfile(filename input)
+- outvars = jlrunfile(filename, outputs)
+- outvars = jlrunfile(filename, outputs, jlName, jlValue, ...)
+
+## Input argument
+
+- filename - a string scalar, character vector: filename .jl to run.
+- "filename 'input'" - a string scalar, character vector: filename .jl to run with input arguments.
+- jlName, jlValue - Input arguments name and value
+- outputs - string array: Julia variable names.
+
+## Output argument
+
+- outvars - One or more Nelson workspace variable names returned as valid Julia types.
+
+## Description
+
+  <p><b>jlrunfile(filenam)</b> function executes Julia file.</p>
+  <p>As the <b>jlrun</b> function, variables generated in the Julia workspace through the <b>jlrunfile</b> function do persist.</p>
+  <p>The code <b>outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN)</b> executes the code with one or more name-value pair arguments.</p>
+
+## Examples
+
+jlrunfile_example_1.jl
+
+```Python
+content = "hello Nelson"
+display(content)
+```
+
+jlrunfile from Nelson
+
+```matlab
+jlrunfile('jlrunfile_example_1.jl')
+```
+
+## See also
+
+[jlrun](jlrun.md), [jlenv](jlenv.md), [Julia types supported](julia_types.md).
+
+## History
+
+| Version | Description     |
+| ------- | --------------- |
+| 1.12.0  | initial version |
+
+## Author
+
+Allan CORNET

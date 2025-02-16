@@ -48,6 +48,7 @@ pe = pyenv
 ```matlab
 if ispc()
 pe = pyenv('Version', '3.12')
+end
 ```
 
 ## See also

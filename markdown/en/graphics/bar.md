@@ -17,7 +17,7 @@ Bar graph.
 - X - x-coordinates: scalar, vector or string array.
 - Y - y-coordinates: vector.
 - width - scalar, 0.8 (default).
-- color - a scalar string or row vector character: short name color.
+- color - a scalar string or row vector character: color name or short color name.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 - ax - Axes object.
@@ -83,9 +83,10 @@ bar(y, 'FaceColor', [0 .5 .5], 'EdgeColor', [0 .9 .9], 'LineWidth', 1.5)
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                             |
+| ------- | --------------------------------------- |
+| 1.0.0   | initial version                         |
+| 1.12.0  | Color name or short color name managed. |
 
 ## Author
 
