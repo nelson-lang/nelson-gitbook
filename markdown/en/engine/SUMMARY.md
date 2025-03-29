@@ -4,5 +4,6 @@
   - [finish](finish.md)
   - [getnelsonmode](getnelsonmode.md)
   - [isquietmode](isquietmode.md)
+  - [System Requirements](nelson_system_requirement.md)
   - [#! shebang](shebang.md)
   - [startup](startup.md)

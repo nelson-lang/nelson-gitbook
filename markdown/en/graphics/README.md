@@ -24,13 +24,14 @@ graphics functions
 - [contour3](contour3.md) - Contour 3D plot of matrix
 - [cool](cool.md) - Cool colormap array.
 - [copper](copper.md) - Copper colormap array.
-- [copygraphics](copygraphics.md) - Copy plot to clipboard.
 - [cylinder](cylinder.md) - Create cylinder.
 - [drawnow](drawnow.md) - Update figures and process callbacks
 - [figure](figure.md) - Creates an figure window.
 - [fill](fill.md) - Create filled 2-D patches.
+- [frame2im](frame2im.md) - Retrieve image data from a movie frame.
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
+- [getframe](getframe.md) - Capture figure or axes as movie frame.
 - [Managing Callback Interruptions in Nelson](graphical_callback.md)
 - [gray](gray.md) - Gray colormap array.
 - [grid](grid.md) - Display or hide axes grid lines.
@@ -40,6 +41,7 @@ graphics functions
 - [hold](hold.md) - Retain current plot when adding new plots.
 - [hot](hot.md) - Hot colormap array.
 - [im2double](im2double.md) - Convert image to double precision.
+- [im2frame](im2frame.md) - Convert image to movie frame.
 - [image](image.md) - Display image from array.
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
 - [imread](imread.md) - Read image from graphics file.
@@ -55,6 +57,7 @@ graphics functions
 - [loglog](loglog.md) - Log-log scale plot.
 - [mesh](mesh.md) - Mesh surface plot.
 - [meshz](meshz.md) - Mesh surface plot with curtain.
+- [movie](movie.md) - Render recorded movie frames.
 - [newplot](newplot.md) - Prepare to produce a new plot.
 - [pan](pan.md) - Enable pan mode.
 - [parula](parula.md) - Parula colormap array.

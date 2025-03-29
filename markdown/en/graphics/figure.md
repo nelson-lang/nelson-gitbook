@@ -34,6 +34,7 @@ Creates an figure window.
   <p><b>Color</b>: Background color [R, G, B] or string (example: 'blue') or hexadecimal color code ('#FFAA00').</p>
   <p><b>Colormap</b>: Color map for axes content of figure: m-by-3 array of RGB triplets, parula (default).</p>
   <p><b>CurrentAxes</b>: Target axes in current figure: Axes object.</p>
+  <p><b>DevicePixelRatio</b>: ratio between physical pixels and device-independent pixels for the figure. Common values are 1.0 on normal displays and 2.0 on Apple "retina" displays.</p>
   <p><b>Name</b>: Name (default '').</p>
   <p><b>GraphicsSmoothing</b>: GraphicsSmoothing (default 'on').</p>
   <p><b>MenuBar</b>:  Figure menu bar display: 'none' or 'figure' (default).</p>
@@ -83,6 +84,7 @@ figure('Name', 'Hello')
 | 1.7.0   | CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn callback added. |
 | --      | BeingDeleted property added.                                                                     |
 | 1.8.0   | Resize property added.                                                                           |
+| 1.13.0  | DevicePixelRatio property added.                                                                 |
 
 ## Author
 
