@@ -25,7 +25,7 @@ Scatter plot.
 
 ## Output argument
 
-- s - a graphics object: line type or group of line.
+- s - a graphics object: scatter type or array of scatter.
 
 ## Description
 
@@ -34,6 +34,32 @@ Scatter plot.
   <p>To visualize multiple datasets on a shared set of axes, you can achieve this by using a matrix for either <b>x</b> or <b>y</b>, while keeping the other as a vector.</p>
   <p>This allows you to overlay or compare multiple datasets within the same plot.</p>
   <p/>
+  <p/>
+  <p>Scatter Properties:</p>
+  <p/>
+  <p>Scatter Properties:</p>
+  <p/>
+  <p><b>AlphaData</b>: Marker face transparency, 1 (default) or array the same size as <b>XData</b></p>
+  <p><b>BeingDeleted</b>: Flag indicating that the object is being deleted.</p>
+  <p><b>BusyAction</b>: Callback queuing specified as 'queue' (default) or 'cancel'. The property determines how Nelson handles the execution of interrupting callbacks.</p>
+  <p><b>CData</b> Marker colors: [] (default), RGB triplet, matrix of RGB triplets or vector.</p>
+  <p>marker color to use for each data series:</p>
+  <p><b>'k'</b>, <b>'black'</b>: Color Black</p>
+  <p><b>'y'</b>, <b>'yellow'</b>: Color Yellow</p>
+  <p><b>'m'</b>, <b>'magenta'</b>: Color Magenta</p>
+  <p><b>'c'</b>, <b>'cyan'</b>: Color Cyan</p>
+  <p><b>'r'</b>, <b>'red'</b>: Color Red</p>
+  <p><b>'b'</b>, <b>'blue'</b>: Color Blue</p>
+  <p><b>'g'</b>, <b>'green'</b>: Color Green</p>
+  <p/>
+  <p><b>CDataMode</b> Selection mode for CData: 'manual', 'auto' (default).</p>
+  <p><b>Children</b>: Children.</p>
+  <p><b>CreateFcn</b>: Component creation function.</p>
+  <p><b>DeleteFcn</b>: Component deletion function.</p>
+  <p><b>DisplayName</b> Legend label: character vector or string scalar, '' (default).</p>
+  <p><b>Interruptible</b>: Callback interruption 'on' (default).</p>
+  <p><b>LineWidth</b> Line width: scalar positive value.</p>
+  <p><b>Marker</b>Marker symbol:</p>
   <p>marker specifies the symbol to be drawn at each data point:</p>
   <p><b>'o'</b>: Circle symbol</p>
   <p><b>'x'</b>: Times symbol</p>
@@ -47,16 +73,22 @@ Scatter plot.
   <p><b>'&gt;'</b>: Left-pointing triangle symbol</p>
   <p><b>'&lt;'</b>: Right-pointing triangle symbol</p>
   <p/>
-  <p>The ColorSpec specifies the marker color to use for each data series:</p>
-  <p><b>'k'</b>, <b>'black'</b>: Color Black</p>
-  <p><b>'y'</b>, <b>'yellow'</b>: Color Yellow</p>
-  <p><b>'m'</b>, <b>'magenta'</b>: Color Magenta</p>
-  <p><b>'c'</b>, <b>'cyan'</b>: Color Cyan</p>
-  <p><b>'r'</b>, <b>'red'</b>: Color Red</p>
-  <p><b>'b'</b>, <b>'blue'</b>: Color Blue</p>
-  <p><b>'g'</b>, <b>'green'</b>: Color Green</p>
-  <p/>
-  <p>see <b>line</b> for more information about properties</p>
+  <p><b>MarkerEdgeColor</b> Marker outline color: RGB triplet.</p>
+  <p><b>MarkerEdgeAlpha</b> Marker edge transparency: scalar in range [0,1], 'flat or 1 (default).</p>
+  <p>To assign distinct transparency values to the edges of each point in a plot, set the AlphaData property to a vector matching the size of the <b>XData</b> property and set the <b>MarkerEdgeAlpha</b> property to <b>'flat'</b>.</p>
+  <p><b>MarkerFaceColor</b> Marker fill color: RGB triplet.</p>
+  <p><b>MarkerFaceAlpha</b> Marker face transparency: scalar in range [0,1], 'flat or 1 (default).</p>
+  <p>To assign distinct transparency values to the faces of each point in a plot, set the AlphaData property to a vector matching the size of the <b>XData</b> property and set the <b>MarkerFaceAlpha</b> property to <b>'flat'</b>.</p>
+  <p><b>Parent</b> Parent container: Figure graphics object.</p>
+  <p><b>SizeData</b>: Marker sizes:[] (default), scalar or vector.</p>
+  <p><b>Tag</b> Object identifier: character vector, string scalar or '' (default).</p>
+  <p><b>Type</b>: Type of graphics object 'scatter'.</p>
+  <p><b>UserData</b> User data: array or []</p>
+  <p><b>Visible</b> State of visibility: 'on' (default) or 'off'.</p>
+  <p><b>XData</b>: x values: vector or matrix or [] (default).</p>
+  <p><b>YData</b>: y values: vector or matrix or [] (default).</p>
+  <p><b>ZData</b>: z values: vector or matrix or [] (default).</p>
+  <p><b>XDataMode</b> Selection mode for XData: 'manual' or 'auto'.</p>
 
 ## Examples
 
@@ -125,16 +157,50 @@ s = scatter(x,y, 'filled');
 
 <img src="scatter_6_1E831925.svg" align="middle"/>
 
+```matlab
+f = figure();
+% Create figure
+hold on;
+% Settings
+nPoints = 10; % Number of points per marker type
+markers = {'o', '+', '*', 's', 'd', '^', 'v', '>', '<', 'p', 'h'};
+sizesMin = 20; % Minimum size
+sizesMax = 100; % Maximum size
+% X positions
+x = linspace(1, 10, nPoints);
+% Fixed color
+fixedColor = [0 0 0]; % black
+% Plot each marker type
+for m = 1:numel(markers)
+    y = m * ones(size(x)); % Constant Y for each marker type
+    sizes = linspace(sizesMin, sizesMax, nPoints); % Increasing sizes
+    % Scatter points
+    scatter(x, y, sizes, ...
+        'Marker', markers{m}, ...
+        'MarkerEdgeColor', fixedColor, ...
+        'MarkerFaceColor', 'none', ...
+        'LineWidth', 1.5);
+end
+title('Scatter Only - One Line per Marker Type with Increasing Size');
+xlabel('X Axis');
+ylabel('Marker Type Line');
+ylim([0 numel(markers)+1]);
+hold off;
+```
+
+<img src="scatter_7_2AE5E706.svg" align="middle"/>
+
 ## See also
 
-[line](line.md), [plot](plot.md).
+[line](line.md), [plot](plot.md), [scatter3](scatter3.md).
 
 ## History
 
-| Version | Description                              |
-| ------- | ---------------------------------------- |
-| 1.0.0   | initial version                          |
-| 1.12.0  | color name and short color name managed. |
+| Version | Description                                   |
+| ------- | --------------------------------------------- |
+| 1.0.0   | initial version                               |
+| 1.12.0  | color name and short color name managed.      |
+| 1.14.0  | Scatter is a graphics object with Properties. |
 
 ## Author
 

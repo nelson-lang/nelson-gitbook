@@ -19,6 +19,7 @@ graphics functions
 - [close](close.md) - Close one or more figures
 - [colorbar](colorbar.md) - Colorbar showing color scale.
 - [colormap](colormap.md) - View and set current colormap.
+- [colormaplist](colormaplist.md) - Provide list of colormaps.
 - [colstyle](colstyle.md) - Parse color and style from string.
 - [contour](contour.md) - Contour plot of matrix
 - [contour3](contour3.md) - Contour 3D plot of matrix
@@ -28,6 +29,7 @@ graphics functions
 - [drawnow](drawnow.md) - Update figures and process callbacks
 - [figure](figure.md) - Creates an figure window.
 - [fill](fill.md) - Create filled 2-D patches.
+- [flag](flag.md) - Flag colormap array.
 - [frame2im](frame2im.md) - Retrieve image data from a movie frame.
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
@@ -45,6 +47,7 @@ graphics functions
 - [image](image.md) - Display image from array.
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
 - [imread](imread.md) - Read image from graphics file.
+- [imrotate](imrotate.md) - Rotate image by specified angle
 - [imshow](imshow.md) - Display image.
 - [imwrite](imwrite.md) - Write image to graphics file.
 - [is2D](is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
@@ -58,6 +61,7 @@ graphics functions
 - [mesh](mesh.md) - Mesh surface plot.
 - [meshz](meshz.md) - Mesh surface plot with curtain.
 - [movie](movie.md) - Render recorded movie frames.
+- [nebula](nebula.md) - Nebula colormap array.
 - [newplot](newplot.md) - Prepare to produce a new plot.
 - [pan](pan.md) - Enable pan mode.
 - [parula](parula.md) - Parula colormap array.
@@ -67,6 +71,7 @@ graphics functions
 - [pink](pink.md) - Pink colormap array.
 - [plot](plot.md) - Linear 2-D plot.
 - [plot3](plot3.md) - 3-D line plot.
+- [prism](prism.md) - Prism colormap array.
 - [quiver](quiver.md) - Vector plot.
 - [refresh](refresh.md) - Redraw current figure.
 - [rgbplot](rgbplot.md) - Plot colormap.
@@ -74,6 +79,7 @@ graphics functions
 - [rotate3d](rotate3d.md) - Enable rotate mode.
 - [saveas](saveas.md) - Save figure to specific file format.
 - [scatter](scatter.md) - Scatter plot.
+- [scatter3](scatter3.md) - 3D Scatter plot.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).
 - [semilogy](semilogy.md) - Semilog plot (y-axis has log scale).
 - [sky](sky.md) - Sky colormap array.

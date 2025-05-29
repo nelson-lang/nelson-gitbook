@@ -16,6 +16,7 @@
   - [narginchk](narginchk.md)
   - [nargout](nargout.md)
   - [nargoutchk](nargoutchk.md)
+  - [nelsonappid](nelsonappid.md)
   - [nelsonroot](nelsonroot.md)
   - [nfilename](nfilename.md)
   - [pause](pause.md)

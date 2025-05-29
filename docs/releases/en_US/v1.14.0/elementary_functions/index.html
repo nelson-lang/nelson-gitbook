@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>elementary_functions - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="elementary-functions"><a class="header" href="#elementary-functions">Elementary functions</a></h1>
+<p>Elementary functions</p>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>elementary functions</p>
+<ul>
+<li><a href="abs.html">abs</a> - Absolute value</li>
+<li><a href="allfinite.html">allfinite</a> - Check if all array elements are finite.</li>
+<li><a href="angle.html">angle</a> - Phase angle</li>
+<li><a href="base2dec.html">base2dec</a> - Convert number in a base to decimal.</li>
+<li><a href="bernsteinMatrix.html">bernsteinMatrix</a> - Bernstein matrix</li>
+<li><a href="bin2dec.html">bin2dec</a> - Convert number in base 2 to decimal.</li>
+<li><a href="bin2num.html">bin2num</a> - Convert two's complement binary string to number.</li>
+<li><a href="blkdiag.html">blkdiag</a> - Block diagonal matrix</li>
+<li><a href="cast.html">cast</a> - Converts variable to a different data type</li>
+<li><a href="ceil.html">ceil</a> - Round up</li>
+<li><a href="circshift.html">circshift</a> - Circular shift</li>
+<li><a href="complex.html">complex</a> - Creates an complex number.</li>
+<li><a href="conj.html">conj</a> - Complex conjugate</li>
+<li><a href="deal.html">deal</a> - Distribute inputs to outputs.</li>
+<li><a href="dec2base.html">dec2base</a> - Convert decimal number to another base.</li>
+<li><a href="dec2bin.html">dec2bin</a> - Convert decimal number to base 2.</li>
+<li><a href="dec2hex.html">dec2hex</a> - Convert decimal number to base 16.</li>
+<li><a href="exp.html">exp</a> - Exponential</li>
+<li><a href="factorial.html">factorial</a> - Factorial function</li>
+<li><a href="filter.html">filter</a> - 1-D digital filter</li>
+<li><a href="find.html">find</a> - Find Non-zero Elements</li>
+<li><a href="fix.html">fix</a> - Round towards zero</li>
+<li><a href="flip.html">flip</a> - Flip order of elements</li>
+<li><a href="flipdim.html">flipdim</a> - Flip array along specified dimension</li>
+<li><a href="fliplr.html">fliplr</a> - Flip order of elements left to right</li>
+<li><a href="flipud.html">flipud</a> - Flip order of elements up to dow</li>
+<li><a href="floor.html">floor</a> - Round down</li>
+<li><a href="hadamard.html">hadamard</a> - Hadamard matrix</li>
+<li><a href="hankel.html">hankel</a> - Hankel matrix</li>
+<li><a href="hex2dec.html">hex2dec</a> - Convert number in base 16 to decimal.</li>
+<li><a href="hilb.html">hilb</a> - Hilbert matrix</li>
+<li><a href="hypot.html">hypot</a> - Square root of sum of squares</li>
+<li><a href="imag.html">imag</a> - Imaginary part of an complex number.</li>
+<li><a href="ind2sub.html">ind2sub</a> - Linear index to matrix subscript values</li>
+<li><a href="invhilb.html">invhilb</a> - Inverse of Hilbert matrix</li>
+<li><a href="ipermute.html">ipermute</a> - Inverse permute array dimensions.</li>
+<li><a href="isapprox.html">isapprox</a> - Return true if arguments are approximately equal, within the precision.</li>
+<li><a href="iscolumn.html">iscolumn</a> - Determine whether input is column vector.</li>
+<li><a href="isdiag.html">istriu</a> - Checks if matrix is diagonal.</li>
+<li><a href="isequal.html">isequal</a> - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).</li>
+<li><a href="isequaln.html">isequaln</a> - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).</li>
+<li><a href="isequalto.html">isequalto</a> - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).</li>
+<li><a href="isfinite.html">isfinite</a> - Check for finite entries.</li>
+<li><a href="isinf.html">isinf</a> - Check for Infinity entries.</li>
+<li><a href="ismatrix.html">ismatrix</a> - determines whether input is matrix or not</li>
+<li><a href="isnan.html">isnan</a> - Check for Not a Number entries.</li>
+<li><a href="isrow.html">isrow</a> - Determine whether input is row vector.</li>
+<li><a href="isscalar.html">isscalar</a> - Check if the input is a scalar</li>
+<li><a href="istril.html">istril</a> - Checks if matrix is lower triangular.</li>
+<li><a href="istriu.html">istriu</a> - Checks if matrix is upper triangular.</li>
+<li><a href="isvector.html">isvector</a> - Checks input is vector.</li>
+<li><a href="length.html">length</a> - Length of an object.</li>
+<li><a href="linspace.html">linspace</a> - linearly spaced vector constructor.</li>
+<li><a href="log.html">log</a> - Natural logarithm.</li>
+<li><a href="log10.html">log10</a> - Common logarithm (base 10).</li>
+<li><a href="log1p.html">log1p</a> - log(1 + x) accurately for small values of x.</li>
+<li><a href="log2.html">log2</a> - dissect floating-point numbers into base 2 exponent and mantissa.</li>
+<li><a href="logspace.html">logspace</a> - logarithmically spaced vector constructor.</li>
+<li><a href="magic.html">magic</a> - Magic square</li>
+<li><a href="meshgrid.html">meshgrid</a> - Cartesian rectangular grid in 2-D or 3-D.</li>
+<li><a href="minus.html">minus</a> - Subtraction, - operator</li>
+<li><a href="mod.html">mod</a> - Modulus after division.</li>
+<li><a href="ndgrid.html">ndgrid</a> - Rectangular grid in N-D space</li>
+<li><a href="ndims.html">ndims</a> - Number of dimensions of an array.</li>
+<li><a href="nextpow2.html">nextpow2</a> - Exponent of next higher power of 2</li>
+<li><a href="norm.html">norm</a> - Matrix and vector norms</li>
+<li><a href="normest.html">normest</a> - 2-norm estimate</li>
+<li><a href="nthroot.html">nthroot</a> - The real 𝑛th root of real number.</li>
+<li><a href="num2bin.html">num2bin</a> - Convert number to binary representation.</li>
+<li><a href="numel.html">numel</a> - Number of elements.</li>
+<li><a href="permute.html">permute</a> - Permute array dimensions.</li>
+<li><a href="pinv.html">pinv</a> - Moore-Penrose pseudoinverse</li>
+<li><a href="pow2.html">pow2</a> - Base 2 exponentiation and scaling of floating-point numbers.</li>
+<li><a href="real.html">real</a> - Real part of an complex number.</li>
+<li><a href="rem.html">rem</a> - Remainder after division.</li>
+<li><a href="repmat.html">repmat</a> - Replicate and tile an array.</li>
+<li><a href="reshape.html">reshape</a> - Reshapes a vector or a matrix to a different size matrix.</li>
+<li><a href="rosser.html">rosser</a> - Classic symmetric eigenvalue test problem.</li>
+<li><a href="rot90.html">rot90</a> - Rotate array 90 degrees.</li>
+<li><a href="round.html">round</a> - Round to nearest integer</li>
+<li><a href="shiftdim.html">shiftdim</a> - Shift array dimensions</li>
+<li><a href="sign.html">sign</a> - Find the sign function of a number.</li>
+<li><a href="size.html">size</a> - Size of an object.</li>
+<li><a href="sqrt.html">sqrt</a> - Square root.</li>
+<li><a href="squeeze.html">squeeze</a> - Remove dimensions of length 1.</li>
+<li><a href="sub2ind.html">sub2ind</a> - Matrix subscript values to linear index</li>
+<li><a href="substruct.html">substruct</a> - Create structure argument for subsasgn or subsref</li>
+<li><a href="swapbytes.html">swapbytes</a> - Swap byte ordering.</li>
+<li><a href="toeplitz.html">toeplitz</a> - Toeplitz matrix</li>
+<li><a href="tril.html">tril</a> - Lower triangular part of matrix</li>
+<li><a href="triu.html">triu</a> - Upper triangular part of matrix</li>
+<li><a href="vander.html">vander</a> - Vandermonde matrix</li>
+<li><a href="wilkinson.html">wilkinson</a> - Wilkinson's eigenvalue test matrix</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../operators/vertcat.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../elementary_functions/abs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../operators/vertcat.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../elementary_functions/abs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

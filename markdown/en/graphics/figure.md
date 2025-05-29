@@ -59,6 +59,7 @@ Set this property on an existing component has no effect.</p>
   <p><b>KeyReleaseFcn</b> Callback (function handle, string or cell) called when a key is released while the figure has the focus.</p>
   <p><b>ButtonDownFcn</b> Callback (function handle, string or cell) called when a mouse button is pressed while the figure has the focus.</p>
   <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+  <p><b>WindowState</b> Flag indicating that the Window state: 'normal', 'minimized', 'maximized', 'fullscreen'.</p>
 
 ## Example
 
@@ -85,6 +86,7 @@ figure('Name', 'Hello')
 | --      | BeingDeleted property added.                                                                     |
 | 1.8.0   | Resize property added.                                                                           |
 | 1.13.0  | DevicePixelRatio property added.                                                                 |
+| 1.14.0  | WindowState property added.                                                                      |
 
 ## Author
 

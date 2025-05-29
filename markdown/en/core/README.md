@@ -23,6 +23,7 @@ core functions
 - [narginchk](narginchk.md) - Checks the number of input arguments.
 - [nargout](nargout.md) - Returns the number of output arguments.
 - [nargoutchk](nargoutchk.md) - Checks the number of output arguments.
+- [nelsonappid](nelsonappid.md) - Returns nelson application ID
 - [nelsonroot](nelsonroot.md) - Returns Nelson's root folder.
 - [nfilename](nfilename.md) - Returns the name of the currently executing file.
 - [pause](pause.md) - Pauses script execution.

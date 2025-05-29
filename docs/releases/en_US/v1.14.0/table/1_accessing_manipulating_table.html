@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Accessing and Manipulating Tables in Nelson - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="accessing-and-manipulating-tables-in-nelson"><a class="header" href="#accessing-and-manipulating-tables-in-nelson">Accessing and Manipulating Tables in Nelson</a></h1>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+  <p>
+    <b>Insertion into a Table</b>
+  </p>
+  <p>To insert new data into a table, use dot notation or curly braces <b>{}</b> for specific element-wise insertion. You can add new rows, columns, or update existing data.</p>
+  <p>see examples: <b>Adding a New Column</b> and <b>Updating an Existing Element</b></p>
+  <p/>
+  <p>
+    <b>Extraction from a Table</b>
+  </p>
+  <p>You can extract specific rows, columns, or individual elements using indexing or by referencing variable names.</p>
+  <p>see examples: <b>Extracting Specific Columns</b> and <b>Extracting Specific Rows</b></p>
+  <p/>
+  <p>
+    <b>Removing Data from a Table</b>
+  </p>
+  <p>In Nelson, you can remove rows, columns, or specific elements from a table by using indexing or the removevars function. Rows or columns can be removed by setting the indices to empty brackets [].</p>
+  <p>see examples: <b>Removing Rows</b> and <b>Removing Columns</b></p>
+  <p/>
+  <p>
+    <b>Horizontal Concatenation (horzcat)</b>
+  </p>
+  <p>You can concatenate tables horizontally (side by side) using the horzcat function. This function combines tables by appending the columns of one table to the columns of another table.</p>
+  <p>see examples: <b>Horizontal Concatenation</b></p>
+  <p/>
+  <p>
+    <b>Vertical Concatenation (vertcat)</b>
+  </p>
+  <p>You can concatenate tables vertically (one below the other) using the vertcat function. This function combines tables by appending the rows of one table to the rows of another table.</p>
+  <p>see examples: <b>Vertical Concatenation</b></p>
+  <p/>
+  <p>
+    <b>Convert variable types</b>
+  </p>
+  <p>You can convert table variables by using the <b>VariableTypes</b> property.</p>
+  <p>see examples: <b>VariableTypes</b> example</p>
+  <p/>
+  <p>
+    <b>Summary</b>
+  </p>
+  <p>In Nelson, tables provide a flexible way to store and manipulate heterogeneous data. You can easily insert data, extract parts of the table, and concatenate tables both horizontally and vertically using built-in functionality like dot notation and concatenation functions (horzcat, vertcat), making table manipulation intuitive and powerful for data analysis.</p>
+<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
+<p>Adding a New Column</p>
+<pre><code class="language-matlab">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+</code></pre>
+<p>Updating an Existing Element</p>
+<pre><code class="language-matlab">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+</code></pre>
+<p>Extracting Specific Columns</p>
+<pre><code class="language-matlab">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the 'ID' column from the table
+ID_column = T.ID
+</code></pre>
+<p>Extracting Specific Rows</p>
+<pre><code class="language-matlab">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the first two rows of the table
+rows_1_2 = T(1:2, :)
+</code></pre>
+<p>Removing a Column</p>
+<pre><code class="language-matlab">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Remove the 'Score' column from the table
+T(:, 'Score') = [];
+</code></pre>
+<p>Removing a Row</p>
+<pre><code class="language-matlab">T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Remove the second row from the table
+T(2, :) = [];
+</code></pre>
+<p>Horizontal Concatenation</p>
+<pre><code class="language-matlab">% Create two tables with the same number of rows
+T1 = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'});
+T2 = table([10; 20], {'X'; 'Y'}, 'VariableNames', {'Score', 'Grade'});
+
+% Concatenate horizontally
+T_horz = [T1, T2]  % or T_horz = horzcat(T1, T2);
+</code></pre>
+<p>Vertical Concatenation</p>
+<pre><code class="language-matlab">T1 = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'});
+% Create two tables with the same column names
+T3 = table([3; 4], {'C'; 'D'}, 'VariableNames', {'ID', 'Label'});
+
+% Concatenate vertically
+T_vert = [T1; T3]  % or T_vert = vertcat(T1, T3)
+</code></pre>
+<p>Convert variable types</p>
+<pre><code class="language-matlab">Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
+Age = [28; 34; 22; 30];
+Height = [175; 160; 180; 165];
+Weight = [70; 55; 80; 60];
+T = table(Names, Age, Height, Weight);
+T.Properties.VariableTypes
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes = ["string"    "int8"    "double"    "double"];
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes
+</code></pre>
+<h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
+<p><a href="table.html">table</a>, <a href="2_direct_compution_with_table.html">Direct computation with Table</a>.</p>
+<h2 id="history"><a class="header" href="#history">History</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
+<tr><td>1.8.0</td><td>initial version</td></tr>
+<tr><td>1.10.0</td><td>VariableTypes property</td></tr>
+</tbody></table>
+</div>
+<h2 id="author"><a class="header" href="#author">Author</a></h2>
+<p>Allan CORNET</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../table/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../table/2_direct_compution_with_table.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../table/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../table/2_direct_compution_with_table.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

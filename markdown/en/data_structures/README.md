@@ -6,6 +6,7 @@ Data structures
 
 data structures functions
 
+- [arrayfun](arrayfun.md) - Apply a function to each element of an array.
 - [cell](cell.md) - Create cell array of empty matrices.
 - [cell2mat](cell2mat.md) - Transform a cell array containing matrices into a single, concatenated matrix.
 - [cell2struct](cell2struct.md) - Creates a struct from a cell.

@@ -1,0 +1,746 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Changelog v0.2.x - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="0212-2018-12-31"><a class="header" href="#0212-2018-12-31">0.2.12 (2018-12-31)</a></h2>
+<h2 id="features"><a class="header" href="#features">Features:</a></h2>
+<p>HDF5 high-level functions:</p>
+<ul>
+<li>h5dump: Dump the content of hdf5 file as text.</li>
+<li>h5ls: List the content of an hdf5.</li>
+<li>h5writeatt: Writes HDF5 attribute.</li>
+<li>h5readatt: Read HDF5 attribute.</li>
+<li>h5write: Writes HDF5 data set.</li>
+<li>h5readatt: Read HDF5 data set.</li>
+<li>h5create: Creates a data set.</li>
+</ul>
+<h2 id="bug-fixes"><a class="header" href="#bug-fixes">Bug Fixes:</a></h2>
+<ul>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/170">#170</a>: Travis CI Macos X (mojave) build failed.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/168">#168</a>: integer display was not interruptable.</p>
+</li>
+</ul>
+<h2 id="compilation"><a class="header" href="#compilation">Compilation:</a></h2>
+<ul>
+<li>BOOST 1.68 on Windows</li>
+<li>Eigen 3.3.7</li>
+</ul>
+<h2 id="0211-2018-11-24"><a class="header" href="#0211-2018-11-24">0.2.11 (2018-11-24)</a></h2>
+<h2 id="features-1"><a class="header" href="#features-1">Features:</a></h2>
+<ul>
+<li>
+<p>Nelson in the cloud:</p>
+<ul>
+<li>easy way to deploy (<a href="https://www.npmjs.com/package/nelson-cloud">npm package</a> and <a href="https://hub.docker.com/r/nelsonsoftware/nelson-sio-cli/">docker</a>)</li>
+<li>add 'sioemit' builtin. Send data from Nelson to client.</li>
+<li>add 'siogetvariable' function. Send variable value to cliend.</li>
+<li>add nelson_sio_client executable used by Nelson in the cloud framework.</li>
+</ul>
+</li>
+<li>
+<p>addition, substration, mtimes, times, power with integers reworked.</p>
+</li>
+<li>
+<p>integer cast optimized.</p>
+</li>
+<li>
+<p>modernize/optimize C++ with LLVM tools.</p>
+</li>
+</ul>
+<h2 id="0210-2018-10-20"><a class="header" href="#0210-2018-10-20">0.2.10 (2018-10-20)</a></h2>
+<h2 id="features-2"><a class="header" href="#features-2">Features:</a></h2>
+<ul>
+<li>
+<p>string array type added:</p>
+<ul>
+<li>strings, string builtin: string array constructor.</li>
+<li>isstring: Return true if variable var is a string array.</li>
+<li>parser updated to manage string array:</li>
+</ul>
+<pre><code>  A = ["Nelson" "manages"; "string" "array"]
+</code></pre>
+<ul>
+<li>isequal, isequaln, isequalto extended to manage string array.</li>
+<li>transpose, ctranspose extended to manage string array.</li>
+<li>horzcat, vertcat extended to manage string array.</li>
+<li>cell extended to manage string array.</li>
+<li>double extended to manage string array.</li>
+<li>tolower, toupper extended to manage string array.</li>
+<li>strtrim extended to manage string array.</li>
+<li>strlength extended to manage string array.</li>
+<li>count extended to manage string array.</li>
+<li>contains extended to manage string array.</li>
+<li>startsWith, endsWith extended to manage string array.</li>
+<li>replace, strrep extended to manage string array.</li>
+<li>str2double extended to manage string array.</li>
+<li>fprintf, sprintf extended to manage string array.</li>
+<li>strfind extended to manage string array.</li>
+<li>strcmp, strcmpi, strncmp, strncmpi extended to manage string array.</li>
+<li>fileread, filewrite extended to manage string array.</li>
+<li>operators ==, ~=, &lt;, &gt;, &gt;=, &lt;= extended to manage string array.</li>
+<li>operator plus extended to manage string array.</li>
+<li>loadbin, savebin extended to manage string array.</li>
+<li>MPI interface extended to manage string array.</li>
+</ul>
+</li>
+<li>
+<p>deblank builtin: removes trailing whitespace from a cell of strings, a string array or a character vectors.</p>
+</li>
+<li>
+<p>ismissing builtin: search missing values.</p>
+</li>
+<li>
+<p>cellstr function: converts to cell array of character vectors.</p>
+</li>
+<li>
+<p>operators ==, ~=, &lt;, &gt;, &gt;=, &lt;= reworked (Compatiblity Array Sizes increased).</p>
+</li>
+<li>
+<p>==, ~=, isequal: speed optimization.</p>
+</li>
+<li>
+<p>internal API C++ methods renamed:</p>
+<ul>
+<li>"stringConstructor" --&gt; "characterArrayConstructor".</li>
+<li>"isString" --&gt; "isCharacterArray"</li>
+<li>"isSingleString" --&gt; "isRowVectorCharacterArray"</li>
+</ul>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/164">#164</a>: operators ==, ~=, &lt;, &gt;, &gt;=, &lt;= code factorized.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/159">#159</a>: addpath must return an warning and not an error for an non existing path.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/157">#157</a>: fix warnings detected by LGTM.com.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/156">#156</a>: Moves dbstack in 'debugger' module.</p>
+</li>
+</ul>
+<h2 id="029-2018-09-23"><a class="header" href="#029-2018-09-23">0.2.9 (2018-09-23)</a></h2>
+<h2 id="features-3"><a class="header" href="#features-3">Features:</a></h2>
+<ul>
+<li>
+<p>Overload and speed optimization:</p>
+<ul>
+<li>all operators use by default predefined functions. Nelson will search if operators are missing for a specific type.</li>
+<li>add overloadbasictypes function to change default behavior.</li>
+<li>gamma function speed x4 (overloading)</li>
+</ul>
+</li>
+<li>
+<p>power element-wise operator reworked (overloading and mixed types).</p>
+</li>
+<li>
+<p>colon operator reworked (overloading and mixed types).</p>
+</li>
+<li>
+<p>ndarray subclass no more exists. class merged with basic type (speed optimization).</p>
+</li>
+<li>
+<p>isequalto builtin added (returns true if all arguments x1, x2, ... , xn are equal i.e same type, same dimensions, same values or NaNs).</p>
+</li>
+<li>
+<p>tanm, sinm builtin added.</p>
+</li>
+<li>
+<p>strtrim builtin: removes leading and trailing whitespace from a cell of strings or a string.</p>
+</li>
+<li>
+<p>cell &amp; struct managed for complex transpose &amp; transpose.</p>
+</li>
+<li>
+<p>for, index column or matrix: behavior changed.</p>
+<p>Warning: It is a breaking feature.</p>
+<pre><code>// Please replace:
+A = [1:4]';
+for i = A, x = i + 1, end
+// by:
+A = [1:4]';
+for i = A(:)', x = i + 1, end
+</code></pre>
+</li>
+</ul>
+<h2 id="bug-fixes-1"><a class="header" href="#bug-fixes-1">Bug Fixes:</a></h2>
+<ul>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/133">#133</a>: Replaced uncommon term "trinary" by "ternary".</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/119">#119</a>: Execution of simple expression "1+2+3" was rather slow.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/115">#115</a>:code about single &amp; double operators was factorized</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/114">#114</a>: Move gamma function in a dedicated module "special_functions".</p>
+</li>
+</ul>
+<h2 id="compilation-1"><a class="header" href="#compilation-1">Compilation:</a></h2>
+<ul>
+<li>Enable LGTM.com analysis for C/C++ code.</li>
+</ul>
+<h2 id="028-2018-08-26"><a class="header" href="#028-2018-08-26">0.2.8 (2018-08-26)</a></h2>
+<h2 id="features-4"><a class="header" href="#features-4">Features:</a></h2>
+<ul>
+<li>
+<p>error manager reworked.</p>
+<ul>
+<li>internal C++ function did no more require reference to evaluator.</li>
+<li>error and warning internally managed as exceptions.</li>
+</ul>
+</li>
+<li>
+<p>'dbstack' builtin get current instruction calling tree.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/16">#16</a>: lastwarn builtin (Last recorded warning message).</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/15">#15</a>: warning builtin was extended (state and identifier added).</p>
+</li>
+</ul>
+<h2 id="bug-fixes-2"><a class="header" href="#bug-fixes-2">Bug Fixes:</a></h2>
+<ul>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/152">#152</a>: insertion did not return expected result for empty matrix.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/138">#138</a>: colon operator did not return expected for non scalar element.</p>
+</li>
+</ul>
+<h2 id="compilation-2"><a class="header" href="#compilation-2">Compilation:</a></h2>
+<ul>
+<li>Qt 5.11.1 on Windows</li>
+</ul>
+<h2 id="027-2018-07-29"><a class="header" href="#027-2018-07-29">0.2.7 (2018-07-29)</a></h2>
+<h2 id="features-5"><a class="header" href="#features-5">Features:</a></h2>
+<ul>
+<li>
+<p>sqrt builtin (Square root)</p>
+</li>
+<li>
+<p>log builtin (Natural logarithm)</p>
+</li>
+<li>
+<p>angle function (Phase angle)</p>
+</li>
+<li>
+<p>atan2 builtin (four-quadrant inverse tangent)</p>
+</li>
+<li>
+<p>exp builtin (exponential)</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/142">#142</a>: clear('functionName') clears all persistent variables of functionName function.</p>
+</li>
+<li>
+<p>addition, substraction reworked (Compatiblity Array Sizes increased, code factorized).</p>
+</li>
+<li>
+<p>&amp;, |, &amp;&amp;, || operators reworked (Compatiblity Array Sizes increased).</p>
+</li>
+<li>
+<p>havecompiler uses a persistent variable to speedup result.</p>
+</li>
+</ul>
+<h2 id="bug-fixes-3"><a class="header" href="#bug-fixes-3">Bug Fixes:</a></h2>
+<ul>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/145">#145</a>: int32(NaN) did not return 0.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/131">#131</a>: for, parfor, switch, try keywords were not documented.</p>
+</li>
+</ul>
+<h2 id="026-2018-06-26"><a class="header" href="#026-2018-06-26">0.2.6 (2018-06-26)</a></h2>
+<h2 id="features-6"><a class="header" href="#features-6">Features:</a></h2>
+<ul>
+<li>
+<p>Nelson provides a cross-platform command-line tool written in Nelson for compiling native addon modules for Nelson. It takes away the pain of dealing with the various differences in build platforms:</p>
+<ul>
+<li>
+<p>helper's functions to build C/C++ code easily on Windows, Linux, MacOS X:</p>
+<ul>
+<li>dlgeneratemake: generates a makefile for building a dynamic library.</li>
+<li>dlgeneratecleaner: generates cleaner.nls file for C++ gateway.</li>
+<li>dlgenerateloader: generates loader.m file for C++ gateway.</li>
+<li>dlgenerateunloader: generates unloader.m file for C++ gateway.</li>
+<li>dlgenerategateway: generates C++ gateway.</li>
+<li>findcmake: find CMake path.</li>
+<li>cmake function: call CMake tool.</li>
+<li>dlmake: call make or nmake tool.</li>
+</ul>
+</li>
+<li>
+<p>detect and configure C/C++ compilers on Windows, Linux, MacOS:</p>
+<ul>
+<li>
+<p>On Windows:</p>
+<ul>
+<li>VS 2017 Professional, Entreprise, Community supported.</li>
+<li>MinGW-W64 for 32 and 64 bit supported.</li>
+<li>By default, Nelson does not try to detect a C/C++ compiler on Windows.
+Do not forget to run 'configuremsvc' or 'configuremingw' once.</li>
+</ul>
+</li>
+<li>
+<p>On Linux:</p>
+<ul>
+<li>GNU C/C++ Compilers, Clang.</li>
+</ul>
+</li>
+<li>
+<p>MacOS X:</p>
+<ul>
+<li>Xcode or GNU compiler available via Homebrew .</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>havecompiler function: returns if a compiler is configured.</p>
+</li>
+<li>
+<p>configuremingw function: select and configure Mingw-w64 compilers.</p>
+</li>
+<li>
+<p>configuremsvc function: select and configure Microsoft compilers.</p>
+</li>
+<li>
+<p>loadcompilerconf function: load compiler configuration</p>
+</li>
+<li>
+<p>removecompilerconf function: remove compiler configuration</p>
+</li>
+<li>
+<p>vswhere function: detects easily modern Microsoft compilers.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>module skeleton updated to build an example with C++ function (cpp_sum).</p>
+</li>
+<li>
+<p>sprintf, fprintf functions: format data into a string or a file.</p>
+</li>
+<li>
+<p>add "&lt;--C/C++ COMPILER REQUIRED--&gt;" tag managed by test engine.</p>
+</li>
+<li>
+<p>add "&lt;--INDEX 64 BIT REQUIRED--&gt;" tag managed by test engine.</p>
+</li>
+<li>
+<p>norm function: matrix and vectors norms.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/128">#128</a>: code indented with clang-format (webkit coding style)</p>
+</li>
+</ul>
+<h2 id="bug-fixes-4"><a class="header" href="#bug-fixes-4">Bug Fixes:</a></h2>
+<ul>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/139">#139</a>: fix(1e10) returned a wrong value.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/136">#136</a>: Corrected predecence of Colon ":" operator.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/134">#134</a>: Evaluation of Non-Scalar If-Condition Expression was not managed.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/116">#116</a>: fix display size of big sparse matrix.</p>
+</li>
+</ul>
+<h2 id="compilation-3"><a class="header" href="#compilation-3">Compilation:</a></h2>
+<ul>
+<li>libffi 3.2.1 dll on Windows 32 &amp; 64 bit</li>
+</ul>
+<h2 id="025-2018-05-23"><a class="header" href="#025-2018-05-23">0.2.5 (2018-05-23)</a></h2>
+<h2 id="features-7"><a class="header" href="#features-7">Features:</a></h2>
+<ul>
+<li>logm: matrix logarithm.</li>
+<li>sqrtm: square root of a square matrix.</li>
+<li>eval function: evaluates string for execution in Nelson.</li>
+<li>evalin function: evaluates string for execution in Nelson in a specified scope.</li>
+<li>evalc function: Evaluate Nelson code with console capture.</li>
+<li>winqueryreg function read the Windows registry (Windows only).</li>
+<li>factorial function.</li>
+<li>gamma function.</li>
+<li>plus, minus, le, ne, ge, gt, lt, eq, colon operators added for all integer types.</li>
+<li>le, ne, ge, gt, lt, eq for mixed single &amp; double types.</li>
+<li>add generic overload mechanism for all integers: integer keyword.</li>
+<li>vertcat and horzcat: mixed concatenations logical with integers, single and double added.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/110">#110</a>: add isproperty &amp; ismethod to all handle types.</li>
+<li>add "isHandleProperty", "isHandleMethod", "getHandleCategory" C++ API Methods.</li>
+<li><a href="http://github.com/nelson-lang/nelson/issues/108">#108</a>: cast function: converts variable to a different data type.</li>
+<li>MPI Module loaded if MPI dependency is available.</li>
+</ul>
+<h2 id="bug-fixes-5"><a class="header" href="#bug-fixes-5">Bug Fixes:</a></h2>
+<ul>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/125">#125</a>: cosm function was slow.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/123">#123</a>: addpath stopped to work after repeatedly call to the same path.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/121">#121</a>: home key did not work in GUI terminal on prompt.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/118">#118</a>: add information in DEVELOPMENT.md about how to buid Boost on old Ubuntu versions.</p>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/109">#109</a>: add missing horzcat, vertcat for all handle types.</p>
+</li>
+</ul>
+<h2 id="compilation-4"><a class="header" href="#compilation-4">Compilation:</a></h2>
+<ul>
+<li>BOOST 1.67 on Windows</li>
+<li>MSMPI 9.0.1 on Windows</li>
+<li>Update Visual Studio 15.7.1</li>
+</ul>
+<h2 id="024-2018-04-30"><a class="header" href="#024-2018-04-30">0.2.4 (2018-04-30)</a></h2>
+<h2 id="features-8"><a class="header" href="#features-8">Features:</a></h2>
+<ul>
+<li>
+<p>Foreign Function Interface: call C/Fortran functions that are compiled into shared libraries.</p>
+<ul>
+<li>dlopen: loads an dynamic library.</li>
+<li>dlclose: removes/unload dllib object.</li>
+<li>dlsym: loads a C/Fortran symbol for an dynamic library.</li>
+<li>dlcall: C or Fortran Foreign function call.</li>
+<li>dllibinfo: returns list of available symbols in an shared library.</li>
+<li>dllibisloaded: checks if shared library is loaded.</li>
+<li>libpointer: creates an C pointer object usuable in Nelson.</li>
+<li>getdynlibext : returns the extension of dynamic libraries.</li>
+</ul>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/101">#101</a>: allows cell_vertcat_generic &amp; cell_horzcat_generic.</p>
+</li>
+</ul>
+<h2 id="bug-fixes-6"><a class="header" href="#bug-fixes-6">Bug Fixes:</a></h2>
+<p><a href="http://github.com/nelson-lang/nelson/issues/106">#106</a>: update slicot url references.</p>
+<p><a href="http://github.com/nelson-lang/nelson/issues/104">#104</a>: mpiexec did not work on some linux.</p>
+<h2 id="023-2018-03-22"><a class="header" href="#023-2018-03-22">0.2.3 (2018-03-22)</a></h2>
+<h2 id="features-9"><a class="header" href="#features-9">Features:</a></h2>
+<ul>
+<li>
+<p>'strlength': length of strings in an cell of strings.</p>
+</li>
+<li>
+<p>'strrep' and 'replace' builtin : replace substring in a string.</p>
+</li>
+<li>
+<p>export AUDIODEV=null disables audio module (used for Travis CI)</p>
+</li>
+<li>
+<p>'xmldoctomd' : Converts xml Nelson help files to markdown format.</p>
+</li>
+<li>
+<p>'buildhelpmd' : Build help of Nelson's modules for GitBook.</p>
+<p>see <a href="https://nelson-9.gitbook.io/nelson/en">Nelson's GitBook</a>.</p>
+</li>
+</ul>
+<h2 id="022-2018-02-25"><a class="header" href="#022-2018-02-25">0.2.2 (2018-02-25)</a></h2>
+<h2 id="features-10"><a class="header" href="#features-10">Features:</a></h2>
+<ul>
+<li>'count' : computes the number of occurrences of an pattern.</li>
+<li>'startsWith' : checks if string starts with pattern.</li>
+<li>'endsWith' : checks if string ends with pattern.</li>
+<li>'contains' : checks if string contains a pattern.</li>
+<li>audiometadata can modify metadata tags.</li>
+<li>Qt 5.10 used on Windows binaries</li>
+</ul>
+<h2 id="bug-fixes-7"><a class="header" href="#bug-fixes-7">Bug Fixes:</a></h2>
+<p><a href="http://github.com/nelson-lang/nelson/issues/98">#98</a>: jsonencode was slow with a big file (&gt; 60 Mo).</p>
+<p><a href="http://github.com/nelson-lang/nelson/issues/97">#97</a>: fileread was slow with a big file (&gt; 60 Mo).</p>
+<p><a href="http://github.com/nelson-lang/nelson/issues/93">#93</a>: playblocking updated to manage range.</p>
+<p><a href="http://github.com/nelson-lang/nelson/issues/92">#92</a>: play updated to manage range.</p>
+<p><a href="http://github.com/nelson-lang/nelson/issues/90">#90</a>: factorize handle objects methods.</p>
+<h2 id="021-2018-01-30"><a class="header" href="#021-2018-01-30">0.2.1 (2018-01-30)</a></h2>
+<h2 id="features-11"><a class="header" href="#features-11">Features:</a></h2>
+<ul>
+<li>
+<p>pause: pause script execution.</p>
+</li>
+<li>
+<p>keyboard: stop script execution and enter in debug mode.</p>
+</li>
+<li>
+<p>Audio module:</p>
+<ul>
+<li>beep: do a beep sound.</li>
+<li>audiodevinfo: Information about audio device.</li>
+<li>audioplayer: creates an audio player object.</li>
+<li>play: plays audio object.</li>
+<li>playblocking: plays audio object and block execution until finish.</li>
+<li>pause: pauses audio object.</li>
+<li>stop: stops audio object.</li>
+<li>resume: resumes audio object.</li>
+<li>isplaying: returns if audio object is playing.</li>
+<li>audioread: read an audio file.</li>
+<li>audioread: write an audio file.</li>
+<li>audioinfo: get information about audio file.</li>
+<li>audiometadata: get metadata information about audio file.</li>
+</ul>
+</li>
+<li>
+<p>JSON module:</p>
+<ul>
+<li>jsonencode: encodes a Nelson object into a JSON string.</li>
+<li>jsondecode: decodes a JSON string into a Nelson object.</li>
+<li>jsonprettyprint: JSON pretty printer.</li>
+</ul>
+</li>
+<li>
+<p><a href="http://github.com/nelson-lang/nelson/issues/89">#89</a>: extends fileread behavior.</p>
+</li>
+<li>
+<p>'filewrite' builtin allows to easily write to file a string array or a cell of strings.</p>
+</li>
+<li>
+<p>'newline' function: returns newline character i.e char(10).</p>
+</li>
+<li>
+<p>ndarraychar_disp was missing.</p>
+</li>
+<li>
+<p>NIG slicot uses json files.</p>
+</li>
+</ul>
+<h2 id="bug-fixes-8"><a class="header" href="#bug-fixes-8">Bug Fixes:</a></h2>
+<p>Regenerates help files index if database is empty or wrong (&gt;= Qt 5.9)</p>
+<p><a href="http://github.com/nelson-lang/nelson/issues/87">#87</a>: struct did not support sparse matrix.</p>
+<h2 id="compilation-5"><a class="header" href="#compilation-5">Compilation:</a></h2>
+<ul>
+<li>Update VS 2017 solution to VS 2017 15.5.4</li>
+</ul>
+<h2 id="previous-changelog"><a class="header" href="#previous-changelog">Previous changelog:</a></h2>
+<p><a href="CHANGELOG-0.1.x.html">Changelog v0.1.x</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../changelogs/CHANGELOG-0.3.x.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../changelogs/CHANGELOG-0.1.x.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../changelogs/CHANGELOG-0.3.x.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../changelogs/CHANGELOG-0.1.x.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

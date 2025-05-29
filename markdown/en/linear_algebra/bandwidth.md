@@ -14,7 +14,7 @@ Lower and upper matrix bandwidth.
 
 ## Output argument
 
-- lower, upper - lower bandwidth,
+- lower, upper - lower bandwidth: lower, and upper bandwidth: upper of matrix A.
 - R - lower or upper bandwidth.
 
 ## Description

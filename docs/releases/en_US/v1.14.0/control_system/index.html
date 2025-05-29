@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>control_system - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="control-system-functions"><a class="header" href="#control-system-functions">Control System functions</a></h1>
+<p>Control System functions</p>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>Algorithms for designing, analyzing and tuning linear control systems.</p>
+<ul>
+<li><a href="abcdchk.html">abcdchk</a> - Verifies the dimensional compatibility of matrices A, B, C, and D.</li>
+<li><a href="acker.html">acker</a> - Pole placement gain selection using Ackermann's formula.</li>
+<li><a href="append.html">append</a> - Appends the inputs and outputs of the two models.</li>
+<li><a href="augstate.html">augstate</a> - Append state vector to output vector.</li>
+<li><a href="balreal.html">balreal</a> - Gramian-based balancing of state-space realizations.</li>
+<li><a href="bdschur.html">bdschur</a> - Block-diagonal Schur factorization.</li>
+<li><a href="bode.html">bode</a> - Bode plot of frequency response, magnitude and phase data.</li>
+<li><a href="c2d.html">c2d</a> - Convert model from continuous to discrete time.</li>
+<li><a href="care.html">care</a> - Continuous-time algebraic Riccati equation solution.</li>
+<li><a href="cloop.html">cloop</a> - Feedback connection of multiple models.</li>
+<li><a href="compreal.html">compreal</a> - Companion realization of transfer functions.</li>
+<li><a href="ctrb.html">ctrb</a> - Controllability of state-space model.</li>
+<li><a href="ctrbf.html">ctrbf</a> - Compute controllability staircase form.</li>
+<li><a href="d2c.html">d2c</a> - Convert model from discrete to continuous time.</li>
+<li><a href="damp.html">damp</a> - Natural frequency and damping ratio.</li>
+<li><a href="dare.html">dare</a> - Discret-time algebraic Riccati equation solution.</li>
+<li><a href="dcgain.html">dcgain</a> - Low-frequency (DC) gain of LTI system.</li>
+<li><a href="dlqr.html">dlqr</a> - Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</li>
+<li><a href="dlyap.html">dlyap</a> - Discrete-time Lyapunov equations.</li>
+<li><a href="dsort.html">dsort</a> - Sort discrete-time poles by magnitude.</li>
+<li><a href="esort.html">esort</a> - Sort continuous-time poles by real part.</li>
+<li><a href="evalfr.html">evalfr</a> - Evaluate frequency response at given frequency.</li>
+<li><a href="feedback.html">feedback</a> - Feedback connection of multiple models.</li>
+<li><a href="freqresp.html">freqresp</a> - Evaluate system response over a grid of frequencies.</li>
+<li><a href="gensign.html">gensig</a> - Create periodic signals for simulating system response.</li>
+<li><a href="gram.html">gram</a> - Controllability and observability Gramians.</li>
+<li><a href="hsvd.html">hsvd</a> - Hankel singular values of dynamic system.</li>
+<li><a href="impulse.html">impulse</a> - Impulse response plot of dynamic system.</li>
+<li><a href="initial.html">initial</a> - System response to initial states of state-space model.</li>
+<li><a href="isct.html">isct</a> - Checks if dynamic system model is in continuous time.</li>
+<li><a href="isdt.html">isdt</a> - Checks if dynamic system model is in discret time.</li>
+<li><a href="islti.html">islti</a> - Checks if variable is an linear model tf, ss or zpk.</li>
+<li><a href="issiso.html">issiso</a> - Checks if dynamic system model is single input and single output.</li>
+<li><a href="isstatic.html">isstatic</a> - Checks if model is static or dynamic.</li>
+<li><a href="kalman.html">kalman</a> - Design Kalman filter for state estimation.</li>
+<li><a href="lqe.html">lqe</a> - Kalman estimator design for continuous-time systems.</li>
+<li><a href="lqed.html">lqed</a> - Calculates the discrete Kalman estimator configuration based on a continuous cost function.</li>
+<li><a href="lqr.html">lqr</a> - Linear-Quadratic Regulator (LQR) design.</li>
+<li><a href="lqry.html">lqry</a> - Form linear-quadratic (LQ) state-feedback regulator with output weighting.</li>
+<li><a href="lsim.html">lsim</a> - Plot simulated time response of dynamic system to arbitrary inputs.</li>
+<li><a href="lyap.html">lyap</a> - Continuous Lyapunov equation solution.</li>
+<li><a href="minreal.html">minreal</a> - Minimal realization or pole-zero cancellation.</li>
+<li><a href="nyquist.html">nyquist</a> - Nyquist plot of frequency response.</li>
+<li><a href="obsv.html">obsv</a> - Observability of state-space model.</li>
+<li><a href="obsvf.html">obsvf</a> - Compute observability staircase form.</li>
+<li><a href="ord2.html">ord2</a> - Generate continuous second-order systems.</li>
+<li><a href="padecoef.html">padecoef</a> - Computes the Pade approximation of time delays.</li>
+<li><a href="parallel.html">parallel</a> - Parallel connection of two models.</li>
+<li><a href="pole.html">pole</a> - Poles of dynamic system.</li>
+<li><a href="series.html">series</a> - Series connection of two models.</li>
+<li><a href="ss.html">ss</a> - State-space model.</li>
+<li><a href="ss2tf.html">ss2tf</a> - Convert state-space representation to transfer function.</li>
+<li><a href="ssdata.html">ssdata</a> - Access state-space model data.</li>
+<li><a href="ssdelete.html">ssdelete</a> - Remove inputs, outputs and states from state-space system.</li>
+<li><a href="ssselect.html">ssselect</a> - Extract subsystem from larger system.</li>
+<li><a href="step.html">step</a> - Step response plot of dynamic system.</li>
+<li><a href="tf.html">tf</a> - Constructs a transfer function model.</li>
+<li><a href="tf2ss.html">tf2ss</a> - Convert transfer function filter parameters to state-space form.</li>
+<li><a href="tfdata.html">tfdata</a> - Access transfer function model data.</li>
+<li><a href="tzero.html">tzero</a> - Invariant zeros of linear system.</li>
+<li><a href="zero.html">zero</a> - Zeros and gain of SISO dynamic system.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../com_engine/iscom.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../control_system/abcdchk.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../com_engine/iscom.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../control_system/abcdchk.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

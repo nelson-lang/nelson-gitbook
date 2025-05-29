@@ -9,7 +9,7 @@ Determine if matrix is within specific bandwidth.
 ## Input argument
 
 - A - Input matrix
-- lower, upper - lower bandwidth,
+- lower, upper - lower bandwidth: lower, and upper bandwidth: upper, of matrix A.
 
 ## Output argument
 

@@ -1,4 +1,5 @@
 - [data_structures](README.md)
+  - [arrayfun](arrayfun.md)
   - [cell](cell.md)
   - [cell2mat](cell2mat.md)
   - [cell2struct](cell2struct.md)

@@ -5,6 +5,63 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.14.0 - (2025-05-30)
+
+### Added
+
+- New functions:
+  - `imrotate`: Rotate an image.
+  - `scatter3`: 3D scatter plot.
+  - `colormaplist`: List available colormaps.
+  - `arrayfun`: Apply a function to each element of an array.
+  - `nelsonappid`: Return the Nelson application ID.
+- New colormaps:
+  - `nebula`, `flag`, `prism`.
+- New properties:
+  - `WindowState` for `Figure` objects.
+  - `Units` for `UIControl` objects.
+  - `DefaultFigureAlphamap`, `DefaultFigureColormap` as root properties.
+- Support for `nix develop`, providing a reproducible Bash shell preconfigured with Nelson’s build environment.  
+  See [BUILDING.md](./BUILDING.md) for details.
+- A [`justfile`](https://just.systems/man/en/) to streamline and standardize the build process across platforms.
+- Support for:
+  - Fedora 42.
+  - [Flatpak](https://flathub.org/apps/io.github.nelson_lang.Nelson) package distribution.
+
+### Changed
+
+- `scatter` improvements:
+  - Now returns a scatter graphic object (instead of a line graphic object).
+  - Improved rendering precision for scatter symbols (pixel-perfect accuracy).
+  - Supports alpha channel (transparency).
+- `scatter3` now supports alpha channel.
+- `spy` now uses `scatter` instead of `plot` for better accuracy.
+- Colormap handling updated to use the new `DefaultFigureColormap` root property.
+- Improved error message when parsing invalid anonymous functions.
+- Boost:
+  - Now supports Boost 1.88 ([#1378](http://github.com/nelson-lang/nelson/issues/1378)).
+  - Minimum required version set to 1.71.
+- Updated dependencies and platform support:
+  - Qt 6.9.0 on Windows x64.
+  - JSON for Modern C++ updated to v3.12.0.
+  - Mozilla CA certificates updated (Tue May 20 03:12:02 2025 GMT).
+
+### Fixed
+
+- [#1413](http://github.com/nelson-lang/nelson/issues/1413): `axes` function did not properly manage figure objects.
+
+### Technical Improvements
+
+- Application ID changed to `io.github.nelson_lang.Nelson`.
+- GitHub CI:
+  - Now uses Windows 2025 for Windows builds.
+  - Major workflow rework for improved reliability and maintainability.
+- Build system:
+  - Updated to latest Prettier version.
+  - Added use of shared library suffix via a CMake macro.
+  - Included CPU target name in Linux packages.
+  - Minimized dependencies on SLICOT.
+
 ## 1.13.0 - (2025-03-29)
 
 This release introduces performance improvements and new graphical capabilities while deprecating support for 32-bit Windows versions.

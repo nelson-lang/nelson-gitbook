@@ -36,8 +36,8 @@ Display image.
 ```matlab
 f = figure();
 filename = [tempdir, 'apollo_8_earthrise_1968_as08-14-2383.jpg'];
-websave(filename, 'https://www.nasa.gov/sites/default/files/thumbnails/image/apollo_8_earthrise_1968_as08-14-2383.jpg');
-h = imshow(filename)
+websave(filename, 'https://www.nasa.gov/wp-content/uploads/2025/05/3dmodels-casa-2025-astro.jpg');
+h = imshow(filename);
 ```
 
 ## See also
