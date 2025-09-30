@@ -16,7 +16,7 @@ Computes the matrix sinus of a square matrix.
 
 ## Description
 
-<b>sinm(x)</b> computes the matrix sinus of <b>x</b>.
+<b>sinm(x)</b>computes the matrix sinus of<b>x</b>.
 
 ## Example
 
@@ -29,7 +29,7 @@ res = sinm(A)
 
 ## See also
 
-[sin](sin.md).
+[sin](../trigonometric_functions/sin.md).
 
 ## History
 

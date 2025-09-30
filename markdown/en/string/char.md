@@ -19,7 +19,7 @@ Converts to a character array.
 
 ## Description
 
-<b>char</b> converts numerical input into character data by taking the corresponding unicode character for each element.
+<b>char</b>converts numerical input into character data by taking the corresponding unicode character for each element.
 
 ## Examples
 

@@ -1,10 +1,8 @@
 # Data analysis
 
-Data analysis
-
-## Description
-
 data analysis
+
+## Functions
 
 - [conv](conv.md) - Convolution and polynomial multiplication.
 - [conv2](conv2.md) - 2-D convolution.

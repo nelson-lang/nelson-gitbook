@@ -16,7 +16,7 @@ Hyperbolic cosecant.
 
 ## Description
 
-<b>csch</b> computes the hyperbolic cosecant for each element of <b>x</b>.
+<b>csch</b>computes the hyperbolic cosecant for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ R = csch(X)
 
 ## See also
 
-[cosh](cosh.html), [sinh](sinh.html).
+[cosh](../trigonometric/cosh.md), [sinh](../trigonometric/sinh.md).
 
 ## History
 

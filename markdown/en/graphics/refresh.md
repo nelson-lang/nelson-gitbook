@@ -13,12 +13,14 @@ Redraw current figure.
 
 ## Description
 
-  <p><b>refresh</b> erases and redraws the current figure.</p>
-  <p><b>refresh(F)</b> redraws the figure identified by <b>F</b>.</p>
+<p>
+            <b>refresh</b> erases and redraws the current figure.</p>
+<p>
+                <b>refresh(F)</b> redraws the figure identified by <b>F</b>.</p>
 
 ## See also
 
-[clf](clf.md).
+[clf](../graphics/clf.md).
 
 ## History
 

@@ -24,8 +24,10 @@ Creates a message dialog box.
 
 ## Description
 
-  <p><b>msgbox</b> creates an message dialog box.</p>
-  <p><b>h = msgbox(message, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+<p>
+            <b>msgbox</b> creates an message dialog box.</p>
+<p>
+                <b>h = msgbox(message, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
 
 ## Examples
 
@@ -44,7 +46,7 @@ h = msgbox('help string', 'dialog title', 'on')
 
 ## See also
 
-[helpdlg](helpdlg.md), [errordlg](errordlg.md), [questdlg](questdlg.md), [warndlg](warndlg.md).
+[helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [warndlg](../gui/warndlg.md).
 
 ## History
 

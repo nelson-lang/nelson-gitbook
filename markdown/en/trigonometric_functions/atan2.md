@@ -17,7 +17,7 @@ Computes the four-quadrant inverse tangent.
 
 ## Description
 
-<b>atan2</b> computes the four-quadrant inverse tangent.
+<b>atan2</b>computes the four-quadrant inverse tangent.
 
 ## Example
 
@@ -27,7 +27,7 @@ atan2(1, 0)
 
 ## See also
 
-[atan](atan.md).
+[atan](../trigonometric_functions/atan.md).
 
 ## History
 

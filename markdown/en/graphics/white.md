@@ -17,22 +17,22 @@ white colormap array.
 
 ## Description
 
-  <p><b>white</b> returns the colormap with white colors.</p>
+<p>
+            <b>white</b> returns the colormap with white colors.</p>
 
 ## Example
 
 ```matlab
 f = figure();
 surf(peaks);
-view(2);
 colormap('white');
 ```
 
-<img src="white_A7B0A008.svg" align="middle"/>
+<img src="white.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

@@ -17,11 +17,8 @@ Retrieve a property value from an QObject handle.
 
 ## Description
 
-  <p><b>R = get(h, property_name)</b> returns the value of property asked.</p>
-
-## See also
-
-[QObject_set (set)](QObject_set.md), [get](../handle/get.md).
+<p>
+            <b>R = get(h, property_name)</b> returns the value of property asked.</p>
 
 ## Example
 
@@ -30,6 +27,10 @@ h = errordlg();
 h.visible % or get(h, 'visible')
 h.windowTitle % or get(h, 'windowTitle')
 ```
+
+## See also
+
+[QObject_set (set)](../qml_engine/QObject_set.md), [get](../handle/get.md).
 
 ## History
 

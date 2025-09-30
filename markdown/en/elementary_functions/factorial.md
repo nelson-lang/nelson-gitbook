@@ -16,7 +16,8 @@ Factorial function
 
 ## Description
 
-  <p><b>factorial</b> computes the factorial function: the product of all integers values: 1 * 2 * ... * M</p>
+<p>
+            <b>factorial</b> computes the factorial function: the product of all integers values: 1 * 2 * ... * M</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ R = factorial(int8(4))
 
 ## See also
 
-[gamma](gamma.html).
+[gamma](../elementary_functions/gamma.md).
 
 ## History
 

@@ -17,7 +17,7 @@ Evaluate frequency response at given frequency.
 
 ## Description
 
-  <p>The function <b>evalfr(sys, f)</b> computes the value of the transfer function for a given system model represented by <b>sys</b> at the complex number <b>f</b>.</p>
+<p>The function <b>evalfr(sys, f)</b> computes the value of the transfer function for a given system model represented by <b>sys</b> at the complex number <b>f</b>.</p>
 
 ## Example
 
@@ -31,7 +31,7 @@ frsp = evalfr(sys, z)
 
 ## See also
 
-[bode](bode.md), [freqresp](freqresp.md).
+[bode](../control_system/bode.md), [freqresp](../control_system/freqresp.md).
 
 ## History
 

@@ -19,11 +19,12 @@ Converts xml Nelson help files to Nelson format.
 
 ## Description
 
-  <p><b>xmldoctohelp</b> converts xml Nelson help files to Nelson format.</p>
+<p>
+            <b>xmldoctohelp</b> converts xml Nelson help files to Nelson format.</p>
 
 ## See also
 
-[xmldocbuild](xmldocbuild.md), [buildhelp](buildhelp.md), [buildhelpweb](buildhelpweb.md).
+[xmldocbuild](../help_tools/xmldocbuild.md), [buildhelp](../help_tools/buildhelp.md), [buildhelpweb](../help_tools/buildhelpweb.md).
 
 ## History
 

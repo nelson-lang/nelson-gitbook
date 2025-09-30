@@ -19,45 +19,47 @@ Display format and number printing.
 
 ## Description
 
-  <p><b>format(new_style)</b> changes the display format and number printing of the current session.</p>
-  <p><b>format('default')</b> will reset to default format (short, loose).</p>
-  <p/>
-  <p>Styles supported:</p>
-  <p>
-    <b>short</b>
-  </p>
-  <p>
-    <b>long</b>
-  </p>
-  <p>
-    <b>shortE</b>
-  </p>
-  <p>
-    <b>longE</b>
-  </p>
-  <p>
-    <b>shortEng</b>
-  </p>
-  <p>
-    <b>longEng</b>
-  </p>
-  <p>
-    <b>plus</b>
-  </p>
-  <p>
-    <b>rational</b>
-  </p>
-  <p>
-    <b>hex</b>
-  </p>
-  <p/>
-  <p>Line Spacing Format supported:</p>
-  <p>
-    <b>loose</b>
-  </p>
-  <p>
-    <b>compact</b>
-  </p>
+<p>
+            <b>format(new_style)</b> changes the display format and number printing of the current session.</p>
+<p>
+                <b>format('default')</b> will reset to default format (short, loose).</p>
+<p></p>
+<p>Styles supported:</p>
+<p>
+                    <b>short</b>
+                </p>
+<p>
+                    <b>long</b>
+                </p>
+<p>
+                    <b>shortE</b>
+                </p>
+<p>
+                    <b>longE</b>
+                </p>
+<p>
+                    <b>shortEng</b>
+                </p>
+<p>
+                    <b>longEng</b>
+                </p>
+<p>
+                    <b>plus</b>
+                </p>
+<p>
+                    <b>rational</b>
+                </p>
+<p>
+                    <b>hex</b>
+                </p>
+<p></p>
+<p>Line Spacing Format supported:</p>
+<p>
+                    <b>loose</b>
+                </p>
+<p>
+                    <b>compact</b>
+                </p>
 
 ## Example
 
@@ -88,7 +90,7 @@ pi
 
 ## See also
 
-[disp](disp.md), [display](display.md).
+[disp](../display_format/disp.md), [display](../display_format/display.md).
 
 ## History
 

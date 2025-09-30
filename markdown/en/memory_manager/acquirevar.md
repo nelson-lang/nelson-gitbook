@@ -17,12 +17,13 @@ Acquires variable value from a specified variables scope.
 
 ## Description
 
-  <p><b>acquirevar</b> search a symbol in a specific scope and copy the value in current scope.</p>
+<p>
+            <b>acquirevar</b> search a symbol in a specific scope and copy the value in current scope.</p>
 
 ## Example
 
 ```matlab
-Y = 'variable in base scope';
+ Y = 'variable in base scope';
 function myfun()
   disp(acquirevar('base', 'Y')
 end
@@ -31,7 +32,7 @@ myfun()
 
 ## See also
 
-[assignin](assignin.md), [who](who.md).
+[assignin](../memory_manager/assignin.md), [who](../memory_manager/who.md).
 
 ## History
 

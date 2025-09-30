@@ -19,7 +19,8 @@ Bit-wise AND
 
 ## Description
 
-  <p><b>C = bitand(A, B)</b> returns the bit-wise AND of <b>A</b> and <b>B</b>.</p>
+<p>
+            <b>C = bitand(A, B)</b> returns the bit-wise AND of <b>A</b> and <b>B</b>.</p>
 
 ## Example
 
@@ -27,11 +28,12 @@ Bit-wise AND
 A = uint16([0 1; 0 1]);
 B = uint16([0 0; 1 1]);
 R = bitand(A, B)
+
 ```
 
 ## See also
 
-[bitor](bitor.md), [bitxor](bitxor.md).
+[bitor](../operators/bitor.md), [bitxor](../operators/bitxor.md).
 
 ## History
 

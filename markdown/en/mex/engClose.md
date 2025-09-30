@@ -17,7 +17,7 @@ Close Nelson engine session
 
 ## Description
 
-  <p>engClose closes engine session and terminates the connection.</p>
+<p>engClose closes engine session and terminates the connection.</p>
 
 ## Example
 
@@ -27,7 +27,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## See also
 
-[mex](mex.md), [engOpen](engOpen.md).
+[mex](../mex/mex.md), [engOpen](../mex/engOpen.md).
 
 ## History
 

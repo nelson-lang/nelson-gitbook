@@ -21,7 +21,8 @@ Parse color and style from string.
 
 ## Description
 
-  <p><b>colstyle</b> parses color and style from string.</p>
+<p>
+            <b>colstyle</b> parses color and style from string.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ Parse color and style from string.
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

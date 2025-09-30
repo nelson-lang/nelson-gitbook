@@ -40,15 +40,15 @@ Solution of continuous- or discrete-time algebraic Riccati equations for descrip
 
 ## Description
 
-  <p> To solve for X either the continuous-time algebraic Riccatiequation or the discrete-time algebraic Riccati equation</p>
+<p> To solve for X either the continuous-time algebraic Riccatiequation or the discrete-time algebraic Riccati equation</p>
 
-Used function(s)
-
-SG02AD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SG02AD.html
+
+## Used function(s)
+
+SG02AD
 
 ## Example
 

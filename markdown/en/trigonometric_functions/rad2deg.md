@@ -16,7 +16,7 @@ Convert angle from radians to degrees.
 
 ## Description
 
-<b>d = rad2deg(r)</b> converts angle units from radians to degrees for each element of <b>r</b>.
+<b>d = rad2deg(r)</b>converts angle units from radians to degrees for each element of<b>r</b>.
 
 ## Example
 
@@ -28,7 +28,7 @@ D = rad2deg(dist / radEarth)
 
 ## See also
 
-[deg2rad](deg2rad.md).
+[deg2rad](../trigonometric_functions/deg2rad.md).
 
 ## History
 

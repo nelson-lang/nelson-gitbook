@@ -33,10 +33,11 @@ Minimum elements of an array.
 
 ## Description
 
-  <p><b>min</b> find minimum values in an array.</p>
-  <p>If <b>A</b> is a matrix then <b>M = min(A)</b> is a row vector containing the minimum value of each column.</p>
-  <p>If <b>A</b> is a vector then <b>M = min(A)</b> will return the minimum of <b>A</b>.</p>
-  <p>If <b>A</b> If A is complex number then <b>M = min(A)</b> will return founded complex number with the largest magnitude.</p>
+<p>
+            <b>min</b> find minimum values in an array.</p>
+<p>If <b>A</b> is a matrix then <b>M = min(A)</b> is a row vector containing the minimum value of each column.</p>
+<p>If <b>A</b> is a vector then <b>M = min(A)</b> will return the minimum of <b>A</b>.</p>
+<p>If <b>A</b> If A is complex number then <b>M = min(A)</b> will return founded complex number with the largest magnitude.</p>
 
 ## Example
 
@@ -48,7 +49,7 @@ M = min(A, [], 'all')
 
 ## See also
 
-[max](max.md).
+[max](../data_analysis/max.md).
 
 ## History
 

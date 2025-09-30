@@ -20,15 +20,15 @@ RQ factorization with row pivoting of a matrix.
 
 ## Description
 
-  <p> To compute an RQ factorization with row pivoting of a real m-by-n matrix A: P * A = R * Q.</p>
+<p> To compute an RQ factorization with row pivoting of a real m-by-n matrix A: P * A = R * Q.</p>
 
-Used function(s)
-
-MB04GD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB04GD.html
+
+## Used function(s)
+
+MB04GD
 
 ## Example
 

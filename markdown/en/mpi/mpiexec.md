@@ -20,18 +20,19 @@ Run an MPI script.
 
 ## Description
 
-  <p>Run an MPI script in nelson.</p>
-  <p>MPI process are launched in CLI mode (no gui, no plot).</p>
-
-## See also
-
-[MPI_Init](MPI_Init.md).
+<p>Run an MPI script in nelson.</p>
+<p>MPI process are launched in CLI mode (no gui, no plot).</p>
 
 ## Example
 
 ```matlab
+
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.m'], 4)
 ```
+
+## See also
+
+[MPI_Init](../mpi/MPI_Init.md).
 
 ## History
 

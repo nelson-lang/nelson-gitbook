@@ -18,9 +18,10 @@ Hilbert matrix
 
 ## Description
 
-  <p><b>hilb</b> computes the exact inverse of the exact Hilbert matrix.</p>
+<p>
+            <b>hilb</b> computes the exact inverse of the exact Hilbert matrix.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/David_Hilbert, and Thanks to https://nhigham.com/2020/06/30/what-is-the-hilbert-matrix/
 
@@ -32,7 +33,7 @@ h = invhilb(5)
 
 ## See also
 
-[hilb](hilb.md).
+[hilb](../elementary_functions/hilb.md).
 
 ## History
 

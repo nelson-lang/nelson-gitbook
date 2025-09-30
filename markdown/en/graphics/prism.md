@@ -17,7 +17,8 @@ Prism colormap array.
 
 ## Description
 
-  <p><b>prism</b> returns the colormap with prism colors.</p>
+<p>
+            <b>prism</b> returns the colormap with prism colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('prism');
 ```
 
-<img src="prism_49C4E769.svg" align="middle"/>
+<img src="prism.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

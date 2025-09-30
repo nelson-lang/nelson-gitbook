@@ -18,7 +18,8 @@ Redefine subscripted assignment.
 
 ## Description
 
-  <p><b>B = subsasgn(A, S, B)</b> assigns a value to an element of a cell or matrix.</p>
+<p>
+            <b>B = subsasgn(A, S, B)</b> assigns a value to an element of a cell or matrix.</p>
 
 ## Example
 

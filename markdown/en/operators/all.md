@@ -20,7 +20,8 @@ all of the elements of a matrix satisfy some condition.
 
 ## Description
 
-  <p><b>all</b> returns true if all of the elements of a matrix satisfy some condition.</p>
+<p>
+            <b>all</b> returns true if all of the elements of a matrix satisfy some condition.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ all([33, 22; 11, 0], 2)
 
 ## See also
 
-[any](any.html).
+[any](../logical/any.md).
 
 ## History
 

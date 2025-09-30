@@ -17,8 +17,9 @@ Check property name is valid.
 
 ## Description
 
-  <p><b>isValidGraphicsProperty</b> checks is property name is existing for graphical object class.</p>
-  <p>This function is an helper to check input parameters graphical functions.</p>
+<p>
+            <b>isValidGraphicsProperty</b> checks is property name is existing for graphical object class.</p>
+<p>This function is an helper to check input parameters graphical functions.</p>
 
 ## Example
 

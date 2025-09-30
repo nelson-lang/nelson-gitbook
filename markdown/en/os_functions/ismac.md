@@ -12,7 +12,8 @@ Checks if version is for MacOS platform.
 
 ## Description
 
-  <p><b>ismac</b> checks if it is a MacOs platform.</p>
+<p>
+            <b>ismac</b> checks if it is a MacOs platform.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ end
 
 ## See also
 
-[isunix](isunix.md), [ispc](ispc.md).
+[isunix](../os_functions/isunix.md), [ispc](../os_functions/ispc.md).
 
 ## History
 

@@ -17,7 +17,8 @@ not logical, ~ operator
 
 ## Description
 
-  <p><b>C = not(A)</b> performs not logical ~A.</p>
+<p>
+            <b>C = not(A)</b> performs not logical ~A.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ M = false(3, 3);
 
 ## See also
 
-[or](or.md), [any](any.html), [all](all.html).
+[or](../operators/or.md), [any](../logical/any.md), [all](../logical/all.md).
 
 ## History
 

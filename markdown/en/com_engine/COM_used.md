@@ -12,11 +12,7 @@ Returns list of current used COM handle.
 
 ## Description
 
-  <p>Returns list of current used COM handle.</p>
-
-## See also
-
-[COM_set (set)](COM_set.md), [COM_get (get)](COM_get.md).
+<p>Returns list of current used COM handle.</p>
 
 ## Example
 
@@ -27,6 +23,10 @@ used = COM_used()
 delete(used)
 used = COM_used()
 ```
+
+## See also
+
+[COM_set (set)](../com_engine/COM_set.md), [COM_get (get)](../com_engine/COM_get.md).
 
 ## History
 

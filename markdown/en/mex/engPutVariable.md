@@ -19,7 +19,7 @@ Put variable into Nelson engine workspace
 
 ## Description
 
-  <p>Put variable into Nelson engine workspace.</p>
+<p>Put variable into Nelson engine workspace.</p>
 
 ## Example
 
@@ -29,7 +29,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## See also
 
-[mex](mex.md), [engGetVariable](engGetVariable.md).
+[mex](../mex/mex.md), [engGetVariable](../mex/engGetVariable.md).
 
 ## History
 

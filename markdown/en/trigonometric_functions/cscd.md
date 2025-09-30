@@ -16,7 +16,7 @@ Cosecant of argument in degrees.
 
 ## Description
 
-<b>cscd</b> computes the cosecant of argument in degrees for each element of <b>x</b>.
+<b>cscd</b>computes the cosecant of argument in degrees for each element of<b>x</b>.
 
 ## Example
 
@@ -26,7 +26,7 @@ R = cscd([35+i 15+2i 10+3i])
 
 ## See also
 
-[csc](cosh.html).
+[csc](../trigonometric/cosh.md).
 
 ## History
 

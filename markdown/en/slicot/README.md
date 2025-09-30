@@ -1,10 +1,8 @@
 # Subroutine Library In COntrol Theory
 
-Subroutine Library In COntrol Theory
-
-## Description
-
 SLICOT provides numerical algorithms for computations in systems and control theory.
+
+## Functions
 
 - [SLICOT License](About_SLICOT_license.md) - About SLICOT license.
 - [slicot_ab01od](slicot_ab01od.md) - Staircase form for multi-input systems using orthogonal state and input transformations.

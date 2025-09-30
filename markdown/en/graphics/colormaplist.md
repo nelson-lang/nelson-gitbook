@@ -12,7 +12,8 @@ Provide list of colormaps.
 
 ## Description
 
-  <p><b>colormaplist</b> returns the available colormaps as an <b>m</b>-by-<b>1</b> string array.</p>
+<p>
+            <b>colormaplist</b> returns the available colormaps as an <b>m</b>-by-<b>1</b> string array.</p>
 
 ## Example
 
@@ -23,13 +24,14 @@ surf(ax, peaks);
 cmaps = colormaplist;
 listbox = uicontrol('Style', 'listbox', 'Position', [450, 100, 100, 200], 'String', cmaps);
 listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
+
 ```
 
-<img src="colormaplist_A4E52AC6.svg" align="middle"/>
+<img src="colormaplist.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

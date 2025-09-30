@@ -14,11 +14,7 @@ Reshapes libpointer dimensions.
 
 ## Description
 
-  <p>Set dimensions from libpointer object.</p>
-
-## See also
-
-[libpointer](libpointer.md).
+<p>Set dimensions from libpointer object.</p>
 
 ## Example
 
@@ -27,6 +23,10 @@ a = libpointer('doublePtr', eye(2, 2));
 a.reshape(3, 3);
 a.Value
 ```
+
+## See also
+
+[libpointer](../dynamic_link/libpointer.md).
 
 ## History
 

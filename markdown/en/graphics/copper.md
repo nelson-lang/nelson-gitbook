@@ -17,7 +17,8 @@ Copper colormap array.
 
 ## Description
 
-  <p><b>copper</b> returns the colormap with copper colors.</p>
+<p>
+            <b>copper</b> returns the colormap with copper colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('copper');
 ```
 
-<img src="copper_EA0F3D88.svg" align="middle"/>
+<img src="copper.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

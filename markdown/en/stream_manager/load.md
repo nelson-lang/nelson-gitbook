@@ -23,7 +23,8 @@ load data from .nh5 or .mat file into Nelson's workspace.
 
 ## Description
 
-  <p><b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.</p>
+<p>
+            <b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.</p>
 
 ## Example
 
@@ -42,11 +43,12 @@ load([tempdir(), 'example_load.mat']);
 who
 A
 B
+
 ```
 
 ## See also
 
-[save](save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md).
+[save](../stream_manager/save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md).
 
 ## History
 

@@ -16,7 +16,7 @@ Computes the tangent in degree for each element of x.
 
 ## Description
 
-<b>tand</b> computes the tangent in degree for each element of <b>x</b>.
+<b>tand</b>computes the tangent in degree for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = tand(A)
 
 ## See also
 
-[tan](tan.md).
+[tan](../trigonometric_functions/tan.md).
 
 ## History
 

@@ -18,8 +18,10 @@ Lower triangular part of matrix
 
 ## Description
 
-  <p><b>tril</b> computes Lower Triangular Portions of Matrix.</p>
-  <p><b>R = tril(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
+<p>
+            <b>tril</b> computes Lower Triangular Portions of Matrix.</p>
+<p>
+                <b>R = tril(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
 
 ## Example
 
@@ -30,7 +32,7 @@ r = tril(x)
 
 ## See also
 
-[diag](diag.html), [triu](triu.md).
+[diag](../elementary_functions/diag.md), [triu](../elementary_functions/triu.md).
 
 ## History
 

@@ -14,7 +14,8 @@ Smallest positive floating-point number.
 
 ## Description
 
-  <p><b>realmin</b> returns smallest positive floating-point number.</p>
+<p>
+            <b>realmin</b> returns smallest positive floating-point number.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ realmin('single')
 
 ## See also
 
-[realmax](realmax.md), [intmin](../integer/intmin.md).
+[realmax](../double/realmax.md), [intmin](../integer/intmin.md).
 
 ## History
 

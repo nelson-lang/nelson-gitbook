@@ -44,6 +44,7 @@
 - [core](./core/README.md)
 
   - [banner](./core/banner.md)
+  - [crc32](./core/crc32.md)
   - [eval](./core/eval.md)
   - [evalc](./core/evalc.md)
   - [evalin](./core/evalin.md)
@@ -63,7 +64,8 @@
   - [nelsonappid](./core/nelsonappid.md)
   - [nelsonroot](./core/nelsonroot.md)
   - [nfilename](./core/nfilename.md)
-  - [pause](./core/pause.md)
+  - [mfilename](./core/nfilename.md)
+  - [pause ](./core/pause.md)
   - [prefdir](./core/prefdir.md)
   - [quit](./core/quit.md)
   - [run](./core/run.md)
@@ -84,10 +86,13 @@
 - [interpreter](./interpreter/README.md)
 
   - [abort](./interpreter/abort.md)
+  - [return](./interpreter/abort.md)
   - [break](./interpreter/break.md)
   - [continue](./interpreter/continue.md)
   - [for](./interpreter/for.md)
+  - [parfor](./interpreter/for.md)
   - [function](./interpreter/function.md)
+  - [endfunction](./interpreter/function.md)
   - [if](./interpreter/if.md)
   - [iskeyword](./interpreter/iskeyword.md)
   - [keyboard](./interpreter/keyboard.md)
@@ -97,6 +102,7 @@
   - [parsestring](./interpreter/parsestring.md)
   - [switch](./interpreter/switch.md)
   - [try](./interpreter/try.md)
+  - [catch](./interpreter/try.md)
   - [while](./interpreter/while.md)
 
 - [display_format](./display_format/README.md)
@@ -117,6 +123,7 @@
 - [i18n](./i18n/README.md)
 
   - [gettext](./i18n/gettext.md)
+  - [\_](./i18n/gettext.md)
   - [i18nHelpers](./i18n/i18nHelpers.md)
   - [poheader](./i18n/poheader.md)
 
@@ -155,6 +162,7 @@
   - [isuint64](./types/isuint64.md)
   - [isuint8](./types/isuint8.md)
   - [isvarname](./types/isvarname.md)
+  - [missing](./types/missing.md)
 
 - [overload](./overload/README.md)
 
@@ -194,6 +202,7 @@
   - [namedargs2cell](./data_structures/namedargs2cell.md)
   - [num2cell](./data_structures/num2cell.md)
   - [orderfields](./data_structures/orderfields.md)
+  - [renameStructField](./data_structures/renameStructField.md)
   - [rmfield](./data_structures/rmfield.md)
   - [setfield](./data_structures/setfield.md)
   - [struct](./data_structures/struct.md)
@@ -251,13 +260,15 @@
 
 - [sparse](./sparse/README.md)
 
-  - [IJV](./sparse/IJV.md)
   - [full](./sparse/full.md)
+  - [IJV](./sparse/IJV.md)
   - [nnz](./sparse/nnz.md)
   - [nzmax](./sparse/nzmax.md)
   - [sparse](./sparse/sparse.md)
   - [speye](./sparse/speye.md)
   - [spones](./sparse/spones.md)
+  - [sprand](./sparse/sprand.md)
+  - [sprandn](./sparse/sprandn.md)
 
 - [string](./string/README.md)
 
@@ -271,9 +282,9 @@
   - [deblank](./string/deblank.md)
   - [endsWith](./string/endsWith.md)
   - [int2str](./string/int2str.md)
-  - [isStringScalar](./string/isStringScalar.md)
   - [isletter](./string/isletter.md)
   - [isspace](./string/isspace.md)
+  - [isStringScalar](./string/isStringScalar.md)
   - [join](./string/join.md)
   - [mat2str](./string/mat2str.md)
   - [matches](./string/matches.md)
@@ -319,11 +330,11 @@
 
 - [error_manager](./error_manager/README.md)
 
-  - [MException](./error_manager/MException.md)
   - [error](./error_manager/error.md)
   - [getLastReport](./error_manager/getLastReport.md)
   - [lasterror](./error_manager/lasterror.md)
   - [lastwarn](./error_manager/lastwarn.md)
+  - [MException](./error_manager/MException.md)
   - [rethrow](./error_manager/rethrow.md)
   - [throw](./error_manager/throw.md)
   - [throwAsCaller](./error_manager/throwAsCaller.md)
@@ -340,12 +351,12 @@
 
 - [constructors_functions](./constructors_functions/README.md)
 
-  - [Inf](./constructors_functions/Inf.md)
-  - [NaN](./constructors_functions/NaN.md)
   - [diag](./constructors_functions/diag.md)
   - [eps](./constructors_functions/eps.md)
   - [eye](./constructors_functions/eye.md)
   - [i](./constructors_functions/i.md)
+  - [Inf](./constructors_functions/Inf.md)
+  - [NaN](./constructors_functions/NaN.md)
   - [ones](./constructors_functions/ones.md)
   - [pi](./constructors_functions/pi.md)
   - [zeros](./constructors_functions/zeros.md)
@@ -592,6 +603,7 @@
   - [cov](./statistics/cov.md)
   - [mean](./statistics/mean.md)
   - [normpdf](./statistics/normpdf.md)
+  - [tdigest](./statistics/tdigest.md)
   - [var](./statistics/var.md)
 
 - [polynomial_functions](./polynomial_functions/README.md)
@@ -663,12 +675,12 @@
 - [fftw](./fftw/README.md)
 
   - [FFTW License](./fftw/About_FFTW_license.md)
-  - [FFTWwrapper](./fftw/FFTWwrapper.md)
   - [fft](./fftw/fft.md)
   - [fft2](./fftw/fft2.md)
   - [fftn](./fftw/fftn.md)
   - [fftshift](./fftw/fftshift.md)
   - [fftw](./fftw/fftw.md)
+  - [FFTWwrapper](./fftw/FFTWwrapper.md)
   - [ifft](./fftw/ifft.md)
   - [ifftn](./fftw/ifftn.md)
   - [ifftshift](./fftw/ifftshift.md)
@@ -686,6 +698,8 @@
   - [searchenv](./os_functions/searchenv.md)
   - [setenv](./os_functions/setenv.md)
   - [system](./os_functions/system.md)
+  - [dos](./os_functions/system.md)
+  - [unix](./os_functions/system.md)
   - [username](./os_functions/username.md)
   - [winopen](./os_functions/winopen.md)
   - [winqueryreg](./os_functions/winqueryreg.md)
@@ -757,12 +771,14 @@
 - [random](./random/README.md)
 
   - [rand](./random/rand.md)
+  - [randi](./random/randi.md)
   - [randn](./random/randn.md)
   - [randperm](./random/randperm.md)
   - [rng](./random/rng.md)
 
 - [mpi](./mpi/README.md)
 
+  - [mpiexec](./mpi/mpiexec.md)
   - [MPI_Allreduce](./mpi/MPI_Allreduce.md)
   - [MPI_Barrier](./mpi/MPI_Barrier.md)
   - [MPI_Bcast](./mpi/MPI_Bcast.md)
@@ -784,9 +800,6 @@
   - [MPI_Recv](./mpi/MPI_Recv.md)
   - [MPI_Reduce](./mpi/MPI_Reduce.md)
   - [MPI_Send](./mpi/MPI_Send.md)
-  - [MPI examples](./mpi/MPI_examples.md)
-  - [MPI overview](./mpi/MPI_overview.md)
-  - [mpiexec](./mpi/mpiexec.md)
 
 - [parallel](./parallel/README.md)
 
@@ -834,6 +847,7 @@
   - [inserthtml](./gui/inserthtml.md)
   - [lookandfeel](./gui/lookandfeel.md)
   - [msgbox](./gui/msgbox.md)
+  - [openvar](./gui/openvar.md)
   - [qt_verbose](./gui/qt_verbose.md)
   - [questdlg](./gui/questdlg.md)
   - [uigetdir](./gui/uigetdir.md)
@@ -842,16 +856,6 @@
 
 - [qml_engine](./qml_engine/README.md)
 
-  - [QObject_classname](./qml_engine/QObject_classname.md)
-  - [QObject_findchildren](./qml_engine/QObject_findchildren.md)
-  - [QObject_get](./qml_engine/QObject_get.md)
-  - [QObject_iswidgettype](./qml_engine/QObject_iswidgettype.md)
-  - [QObject_iswindowtype](./qml_engine/QObject_iswindowtype.md)
-  - [QObject_methodsignature](./qml_engine/QObject_methodsignature.md)
-  - [QObject_root](./qml_engine/QObject_root.md)
-  - [QObject_set](./qml_engine/QObject_set.md)
-  - [QObject_undefine](./qml_engine/QObject_undefine.md)
-  - [QObject_used](./qml_engine/QObject_used.md)
   - [nelsonObject](./qml_engine/nelsonObject.md)
   - [qml_addimportpath](./qml_engine/qml_addimportpath.md)
   - [qml_addpluginpath](./qml_engine/qml_addpluginpath.md)
@@ -867,6 +871,16 @@
   - [qml_offlinestoragepath](./qml_engine/qml_offlinestoragepath.md)
   - [qml_pluginpathlist](./qml_engine/qml_pluginpathlist.md)
   - [qml_setofflinestoragepath](./qml_engine/qml_setofflinestoragepath.md)
+  - [QObject_classname](./qml_engine/QObject_classname.md)
+  - [QObject_findchildren](./qml_engine/QObject_findchildren.md)
+  - [QObject_get](./qml_engine/QObject_get.md)
+  - [QObject_iswidgettype](./qml_engine/QObject_iswidgettype.md)
+  - [QObject_iswindowtype](./qml_engine/QObject_iswindowtype.md)
+  - [QObject_methodsignature](./qml_engine/QObject_methodsignature.md)
+  - [QObject_root](./qml_engine/QObject_root.md)
+  - [QObject_set](./qml_engine/QObject_set.md)
+  - [QObject_undefine](./qml_engine/QObject_undefine.md)
+  - [QObject_used](./qml_engine/QObject_used.md)
   - [qt_constant](./qml_engine/qt_constant.md)
   - [qt_version](./qml_engine/qt_version.md)
 
@@ -908,18 +922,14 @@
   - [hist](./graphics/hist.md)
   - [hold](./graphics/hold.md)
   - [hot](./graphics/hot.md)
-  - [im2double](./graphics/im2double.md)
   - [im2frame](./graphics/im2frame.md)
   - [image](./graphics/image.md)
   - [imagesc](./graphics/imagesc.md)
-  - [imread](./graphics/imread.md)
-  - [imrotate](./graphics/imrotate.md)
   - [imshow](./graphics/imshow.md)
-  - [imwrite](./graphics/imwrite.md)
   - [is2D](./graphics/is2D.md)
-  - [isValidGraphicsProperty](./graphics/isValidGraphicsProperty.md)
   - [isgraphics](./graphics/isgraphics.md)
   - [ishold](./graphics/ishold.md)
+  - [isValidGraphicsProperty](./graphics/isValidGraphicsProperty.md)
   - [jet](./graphics/jet.md)
   - [legend](./graphics/legend.md)
   - [line](./graphics/line.md)
@@ -986,6 +996,12 @@
   - [imwrite](./graphics_io/imwrite.md)
   - [saveas](./graphics_io/saveas.md)
 
+- [image_processing](./image_processing/README.md)
+
+  - [im2double](./image_processing/im2double.md)
+  - [imresize](./image_processing/imresize.md)
+  - [imrotate](./image_processing/imrotate.md)
+
 - [help_browser](./help_browser/README.md)
 
   - [doc](./help_browser/doc.md)
@@ -1022,13 +1038,13 @@
   - [mustBeMatrix](./validators/mustBeMatrix.md)
   - [mustBeMember](./validators/mustBeMember.md)
   - [mustBeNegative](./validators/mustBeNegative.md)
-  - [mustBeNonNan](./validators/mustBeNonNan.md)
-  - [mustBeNonSparse](./validators/mustBeNonSparse.md)
-  - [mustBeNonZero](./validators/mustBeNonZero.md)
   - [mustBeNonempty](./validators/mustBeNonempty.md)
   - [mustBeNonmissing](./validators/mustBeNonmissing.md)
+  - [mustBeNonNan](./validators/mustBeNonNan.md)
   - [mustBeNonnegative](./validators/mustBeNonnegative.md)
   - [mustBeNonpositive](./validators/mustBeNonpositive.md)
+  - [mustBeNonSparse](./validators/mustBeNonSparse.md)
+  - [mustBeNonZero](./validators/mustBeNonZero.md)
   - [mustBeNonzeroLengthText](./validators/mustBeNonzeroLengthText.md)
   - [mustBeNumeric](./validators/mustBeNumeric.md)
   - [mustBeNumericOrLogical](./validators/mustBeNumericOrLogical.md)
@@ -1097,7 +1113,7 @@
   - [whomat](./matio/whomat.md)
   - [whosmat](./matio/whosmat.md)
 
-- [json](./json/README.md)
+- [JSON](./json/README.md)
 
   - [jsondecode](./json/jsondecode.md)
   - [jsonencode](./json/jsonencode.md)
@@ -1150,10 +1166,10 @@
 
   - [Build C/C++ code on the fly](./dynamic_link/1_c_cpp_build_on_fly.md)
   - [Supported C/C++ compilers](./dynamic_link/2_supported_compilers.md)
-  - [libpointer datatype](./dynamic_link/C_datatype.md)
   - [cmake](./dynamic_link/cmake.md)
   - [configuremingw](./dynamic_link/configuremingw.md)
   - [configuremsvc](./dynamic_link/configuremsvc.md)
+  - [libpointer datatype](./dynamic_link/C_datatype.md)
   - [dlcall](./dynamic_link/dlcall.md)
   - [dlclose](./dynamic_link/dlclose.md)
   - [dlgeneratecleaner](./dynamic_link/dlgeneratecleaner.md)
@@ -1163,9 +1179,9 @@
   - [dlgenerateunloader](./dynamic_link/dlgenerateunloader.md)
   - [dlgetnelsonincludes](./dynamic_link/dlgetnelsonincludes.md)
   - [dlgetnelsonlibraries](./dynamic_link/dlgetnelsonlibraries.md)
-  - [dllib_used](./dynamic_link/dllib_used.md)
   - [dllibinfo](./dynamic_link/dllibinfo.md)
   - [dllibisloaded](./dynamic_link/dllibisloaded.md)
+  - [dllib_used](./dynamic_link/dllib_used.md)
   - [dlmake](./dynamic_link/dlmake.md)
   - [dlopen](./dynamic_link/dlopen.md)
   - [dlsym](./dynamic_link/dlsym.md)
@@ -1230,6 +1246,10 @@
 - [com_engine](./com_engine/README.md)
 
   - [COM examples](./com_engine/1_COM_examples.md)
+  - [actxcontrollist](./com_engine/actxcontrollist.md)
+  - [actxGetRunningServer](./com_engine/actxGetRunningServer.md)
+  - [actxserver](./com_engine/actxserver.md)
+  - [actxserverlist](./com_engine/actxserverlist.md)
   - [COM_delete](./com_engine/COM_delete.md)
   - [COM_fieldnames](./com_engine/COM_fieldnames.md)
   - [COM_get](./com_engine/COM_get.md)
@@ -1243,10 +1263,6 @@
   - [COM_xlsfinfo](./com_engine/COM_xlsfinfo.md)
   - [COM_xlsread](./com_engine/COM_xlsread.md)
   - [COM_xlswrite](./com_engine/COM_xlswrite.md)
-  - [actxGetRunningServer](./com_engine/actxGetRunningServer.md)
-  - [actxcontrollist](./com_engine/actxcontrollist.md)
-  - [actxserver](./com_engine/actxserver.md)
-  - [actxserverlist](./com_engine/actxserverlist.md)
   - [iscom](./com_engine/iscom.md)
 
 - [control_system](./control_system/README.md)
@@ -1324,7 +1340,7 @@
   - [pyrun](./python_engine/pyrun.md)
   - [pyrunfile](./python_engine/pyrunfile.md)
 
-- [spreadsheet](./spreadsheet/README.md)
+- [SPREADSHEET](./spreadsheet/README.md)
 
   - [csvread](./spreadsheet/csvread.md)
   - [csvwrite](./spreadsheet/csvwrite.md)
@@ -1339,13 +1355,12 @@
   - [writetable](./spreadsheet/writetable.md)
 
 - [julia_engine](./julia_engine/README.md)
-
   - [jlenv](./julia_engine/jlenv.md)
   - [jlrun](./julia_engine/jlrun.md)
   - [jlrunfile](./julia_engine/jlrunfile.md)
   - [Julia Nelson types](./julia_engine/julia_types.md)
 
-- [Changelogs](./changelogs/CHANGELOG.md)
+* [Changelogs](./changelogs/CHANGELOG.md)
 
   - [Changelog v1.x.x](changelogs/CHANGELOG.md)
   - [Changelog v0.7.x](changelogs/CHANGELOG-0.7.x.md)
@@ -1356,7 +1371,8 @@
   - [Changelog v0.2.x](changelogs/CHANGELOG-0.2.x.md)
   - [Changelog v0.1.x](changelogs/CHANGELOG-0.1.x.md)
 
-- [License](./license/license.md)
+* [License](./license/license.md)
 
-  - [LGPL v3.0](./license/lgpl-3.0.md)
-  - [GPL v3.0](./license/gpl-3.0.md)
+  - [License](license/license.md)
+  - [LGPL v3.0](license/lgpl-3.0.md)
+  - [GPL v3.0](license/gpl-3.0.md)

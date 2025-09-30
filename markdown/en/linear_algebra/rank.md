@@ -18,7 +18,8 @@ Rank of matrix.
 
 ## Description
 
-  <p><b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).</p>
+<p>
+            <b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ r = rank(X)
 
 ## See also
 
-[svd](svd.md).
+[svd](../linear_algebra/svd.md).
 
 ## History
 

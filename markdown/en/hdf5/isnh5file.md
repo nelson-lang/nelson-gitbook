@@ -19,7 +19,8 @@ Checks if filename a valid .nh5 file
 
 ## Description
 
-  <p><b>isnh5file</b> checks if filename a valid .nh5 file.</p>
+<p>
+            <b>isnh5file</b> checks if filename a valid .nh5 file.</p>
 
 ## Example
 

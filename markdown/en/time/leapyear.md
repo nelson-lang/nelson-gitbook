@@ -16,8 +16,9 @@ Determine leap year.
 
 ## Description
 
-  <p><b>leapyear</b> determines leap years.</p>
-  <p>Leap years is done by Gregorian calendar rules.</p>
+<p>
+            <b>leapyear</b> determines leap years.</p>
+<p>Leap years is done by Gregorian calendar rules.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ tf = leapyear([2020 2021 2022])
 
 ## See also
 
-[datenum](datenum.md).
+[datenum](../time/datenum.md).
 
 ## History
 

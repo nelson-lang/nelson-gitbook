@@ -18,10 +18,14 @@ Render recorded movie frames.
 
 ## Description
 
-  <p><b>movie(M)</b> plays the frames stored in the array M once. To capture a movie frame from the current figure or axes, use getframe.</p>
-  <p><b>movie(M, n)</b> replays the movie n times. If n is a numeric array, the first element determines the number of repetitions, while the remaining elements define the sequence of frames to display.</p>
-  <p><b>movie(M, n, fps)</b> sets the playback speed to fps frames per second.</p>
-  <p><b>movie(h, ...)</b> displays the movie centered within the figure or axes specified by h, adjusting the movie size to fit the available space.</p>
+<p>
+            <b>movie(M)</b> plays the frames stored in the array M once. To capture a movie frame from the current figure or axes, use getframe.</p>
+<p>
+                <b>movie(M, n)</b> replays the movie n times. If n is a numeric array, the first element determines the number of repetitions, while the remaining elements define the sequence of frames to display.</p>
+<p>
+                    <b>movie(M, n, fps)</b> sets the playback speed to fps frames per second.</p>
+<p>
+                        <b>movie(h, ...)</b> displays the movie centered within the figure or axes specified by h, adjusting the movie size to fit the available space.</p>
 
 ## Examples
 
@@ -71,7 +75,7 @@ run([examples_directory, 'movie/demo_movie.m']);
 
 ## See also
 
-[getframe](getframe.md), [imshow](imshow.md), [im2frame](im2frame.md).
+[getframe](../graphics/getframe.md), [imshow](../graphics/imshow.md), [im2frame](../graphics/im2frame.md).
 
 ## History
 

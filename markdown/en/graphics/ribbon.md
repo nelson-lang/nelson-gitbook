@@ -23,10 +23,13 @@ Ribbon plot.
 
 ## Description
 
-  <p><b>ribbon(Z)</b> plots a 3D ribbon graph based on the matrix Z with the values of Y defining the y-axis of the graph.</p>
-  <p><b>ribbon(Y, Z)</b> plots a 3D ribbon graph based on the matrix Y with the values of Z defining the z-axis of the graph.</p>
-  <p><b>s = ribbon(...)</b> returns a vector of surface objects.</p>
-  <p>Note that Y and Z must have the same size.</p>
+<p>
+            <b>ribbon(Z)</b> plots a 3D ribbon graph based on the matrix Z with the values of Y defining the y-axis of the graph.</p>
+<p>
+                <b>ribbon(Y, Z)</b> plots a 3D ribbon graph based on the matrix Y with the values of Z defining the z-axis of the graph.</p>
+<p>
+                    <b>s = ribbon(...)</b> returns a vector of surface objects.</p>
+<p>Note that Y and Z must have the same size.</p>
 
 ## Example
 
@@ -34,13 +37,14 @@ Ribbon plot.
 f = figure();
 Y = peaks(25);
 ribbon(Y)
+
 ```
 
-<img src="ribbon_1_60CAE95.svg" align="middle"/>
+<img src="ribbon_1.svg" align="middle"/>
 
 ## See also
 
-[surf](surf.md), [meshgrid](../elementary_functions/meshgrid.md).
+[surf](../graphics/surf.md), [meshgrid](../elementary_functions/meshgrid.md).
 
 ## History
 

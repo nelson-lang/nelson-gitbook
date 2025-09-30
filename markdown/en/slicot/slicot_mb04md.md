@@ -20,15 +20,15 @@ Balancing a general real matrix.
 
 ## Description
 
-  <p>To reduce the 1-norm of a general real matrix A by balancing. This involves diagonal similarity transformations applied iteratively to A to make the rows and columns as close in norm as possible.</p>
+<p>To reduce the 1-norm of a general real matrix A by balancing. This involves diagonal similarity transformations applied iteratively to A to make the rows and columns as close in norm as possible.</p>
 
-Used function(s)
-
-MB04MD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB04MD.html
+
+## Used function(s)
+
+MB04MD
 
 ## Example
 

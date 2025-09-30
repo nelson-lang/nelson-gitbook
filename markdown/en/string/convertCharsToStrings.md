@@ -19,7 +19,8 @@ Convert chars arrays to string arrays.
 
 ## Description
 
-  <p><b>convertCharsToStrings</b> converts chars arrays to string arrays.</p>
+<p>
+            <b>convertCharsToStrings</b> converts chars arrays to string arrays.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ R = convertCharsToStrings(['Nelson' ; '  is  '; '  good'])
 
 ## See also
 
-[convertStringsToChars](convertStringsToChars.md), [cellstr](../data_structures/cellstr.md), [string](string.md), [char](char.md).
+[convertStringsToChars](../string/convertStringsToChars.md), [cellstr](../data_structures/cellstr.md), [string](../string/string.md), [char](../string/char.md).
 
 ## History
 

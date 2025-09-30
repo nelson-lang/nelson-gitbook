@@ -17,7 +17,7 @@ Returns the properties name of an COM object.
 
 ## Description
 
-<description><b>fieldnames</b> returns a cell of strings with properties name.</description>
+<b>fieldnames</b>returns a cell of strings with properties name.
 
 ## Example
 
@@ -30,7 +30,7 @@ clear e
 
 ## See also
 
-[COM_set](COM_set.md).
+[COM_set](../com_engine/COM_set.md).
 
 ## History
 

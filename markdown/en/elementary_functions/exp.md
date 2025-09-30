@@ -16,8 +16,9 @@ Exponential
 
 ## Description
 
-  <p><b>exp</b> computes the exponential value.</p>
-  <p>If input argument is a complex number, <b>exp</b> computes exp(x) * (cos(y) + i * sin(y)) with z = x + i * y.</p>
+<p>
+            <b>exp</b> computes the exponential value.</p>
+<p>If input argument is a complex number, <b>exp</b> computes exp(x) * (cos(y) + i * sin(y)) with z = x + i * y.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ r = exp(x)
 
 ## See also
 
-[conj](conj.md).
+[conj](../elementary_functions/conj.md).
 
 ## History
 

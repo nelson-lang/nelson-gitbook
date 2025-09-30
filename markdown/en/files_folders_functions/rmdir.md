@@ -23,19 +23,22 @@ Removes a directory.
 
 ## Description
 
-  <p><b>res = rmdir(dirname)</b> removes the directory <b>dirname</b>.</p>
-  <p>If the directory is not empty, you must use the s argument.</p>
+<p>
+            <b>res = rmdir(dirname)</b> removes the directory <b>dirname</b>.</p>
+<p>If the directory is not empty, you must use the s argument.</p>
 
 ## Example
 
 ```matlab
+
 mkdir([tempdir(), 'test'])
 rmdir([tempdir(), 'test'])
+
 ```
 
 ## See also
 
-[isdir](isdir.md), [mkdir](mkdir.md).
+[isdir](../files_folders_functions/isdir.md), [mkdir](../files_folders_functions/mkdir.md).
 
 ## History
 

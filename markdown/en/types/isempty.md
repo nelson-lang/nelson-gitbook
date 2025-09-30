@@ -16,8 +16,9 @@ Return true if variable var is an empty matrix.
 
 ## Description
 
-  <p><b>isempty</b> returns a logical true if the argument is an empty matrix.</p>
-  <p>Any one of its dimensions is zero.</p>
+<p>
+            <b>isempty</b> returns a logical true if the argument is an empty matrix.</p>
+<p>Any one of its dimensions is zero.</p>
 
 ## Examples
 
@@ -26,6 +27,7 @@ A = rand(3, 3, 3);
 res = isempty(A)
 A(:, :, :) = [];
 res = isempty(A)
+
 ```
 
 ```matlab
@@ -39,7 +41,7 @@ res = isempty(C)
 
 ## See also
 
-[class](class.md), [isstruct](isstruct.html).
+[class](../types/class.md), [isstruct](../integer/isstruct.md).
 
 ## History
 

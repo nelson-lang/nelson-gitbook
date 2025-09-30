@@ -27,15 +27,15 @@ Solution of Total Least-Squares problem using a SVD approach.
 
 ## Description
 
-  <p>To solve the Total Least Squares (TLS) problem using a Singular Value Decomposition (SVD) approach. The TLS problem assumes an overdetermined set of linear equations AX = B, where both the data matrix A as well as the observation matrix B are inaccurate. The routine also solves determined and underdetermined sets of equations by computing the minimum norm solution. It is assumed that all preprocessing measures (scaling, coordinate transformations, whitening, ... ) of the data have been performed in advance.</p>
+<p>To solve the Total Least Squares (TLS) problem using a Singular Value Decomposition (SVD) approach. The TLS problem assumes an overdetermined set of linear equations AX = B, where both the data matrix A as well as the observation matrix B are inaccurate. The routine also solves determined and underdetermined sets of equations by computing the minimum norm solution. It is assumed that all preprocessing measures (scaling, coordinate transformations, whitening, ... ) of the data have been performed in advance.</p>
 
-Used function(s)
-
-MB02MD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB02MD.html
+
+## Used function(s)
+
+MB02MD
 
 ## Example
 

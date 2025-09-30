@@ -26,7 +26,8 @@ Write an numeric matrix to a text file file using a delimiter.
 
 ## Description
 
-  <p><b>dlmwrite</b> writes an numeric matrix to an ASCII format file.</p>
+<p>
+            <b>dlmwrite</b> writes an numeric matrix to an ASCII format file.</p>
 
 ## Example
 
@@ -38,11 +39,12 @@ R = dlmread(filename)
 A = eye(3, 2);
 dlmwrite(filename, A, ';', 4, 5);
 R = fileread(filename)
+
 ```
 
 ## See also
 
-[dlmread](dlmread.md), [fileread](../stream_manager/fileread.md).
+[dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## History
 

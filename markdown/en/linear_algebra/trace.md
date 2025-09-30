@@ -16,7 +16,8 @@ Matrix trace.
 
 ## Description
 
-  <p><b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
+<p>
+            <b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ Y = trace(X)
 
 ## See also
 
-[eig](eig.md).
+[eig](../linear_algebra/eig.md).
 
 ## History
 

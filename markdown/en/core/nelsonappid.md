@@ -8,7 +8,7 @@ Returns nelson application ID
 
 ## Description
 
-  <p>Get the unique identifier for the Nelson application.</p>
+<p>Get the unique identifier for the Nelson application.</p>
 
 ## Example
 
@@ -18,7 +18,7 @@ nelsonappid()
 
 ## See also
 
-[nelsonroot](nelsonroot.md).
+[nelsonroot](../core/nelsonroot.md).
 
 ## History
 

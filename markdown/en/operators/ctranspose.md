@@ -17,7 +17,8 @@ Returns complex conjugate transpose: ' operator.
 
 ## Description
 
-  <p><b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
+<p>
+            <b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
 
 ## Examples
 
@@ -32,13 +33,13 @@ B = A'
 ```
 
 ```matlab
-A = sparse(eye(3, 4) * i)
+ A = sparse(eye(3, 4) * i)
 B = A'
 ```
 
 ## See also
 
-[transpose](transpose.md).
+[transpose](../operators/transpose.md).
 
 ## History
 

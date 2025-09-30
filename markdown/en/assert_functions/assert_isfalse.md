@@ -49,7 +49,7 @@ r = assert_isfalse(false)
 
 ## See also
 
-[assert_istrue](assert_istrue.md), [assert_checkerror](assert_checkerror.md).
+[assert_istrue](../assert_functions/assert_istrue.md), [assert_checkerror](../assert_functions/assert_checkerror.md).
 
 ## History
 

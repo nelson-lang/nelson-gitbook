@@ -31,8 +31,9 @@ Write Microsoft Excel spreadsheet file using COM.
 
 ## Description
 
-  <p><b>COM_xlswrite</b> Writes Microsoft Excel spreadsheet file using COM.</p>
-  <p>Inf is converted by Excel as 65535.</p>
+<p>
+            <b>COM_xlswrite</b> Writes Microsoft Excel spreadsheet file using COM.</p>
+<p>Inf is converted by Excel as 65535.</p>
 
 ## Examples
 
@@ -47,7 +48,7 @@ s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');
 
 ## See also
 
-[COM_xlsread](COM_xlsread.md).
+[COM_xlsread](../com_engine/COM_xlsread.md).
 
 ## History
 

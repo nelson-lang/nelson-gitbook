@@ -16,7 +16,7 @@ Hyperbolic cotangent.
 
 ## Description
 
-<b>csch</b> computes the hyperbolic cotangent for each element of <b>x</b>.
+<b>csch</b>computes the hyperbolic cotangent for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ R = coth(X)
 
 ## See also
 
-[tanh](tanh.html), [cot](cot.html).
+[tanh](../trigonometric/tanh.md), [cot](../trigonometric/cot.md).
 
 ## History
 

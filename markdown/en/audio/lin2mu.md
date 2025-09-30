@@ -16,9 +16,10 @@ Convert audio data from linear singal to mu-law.
 
 ## Description
 
-  <p><b>mu = lin2mu(y)</b> converts audio data from linear to mu-law.</p>
+<p>
+            <b>mu = lin2mu(y)</b> converts audio data from linear to mu-law.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/%CE%9C-law_algorithm
 
@@ -30,7 +31,7 @@ mu = lin2mu([-1:0.5:1])
 
 ## See also
 
-[audioplayer](audioplayer.md), [mu2lin](mu2lin.md).
+[audioplayer](../audio/audioplayer.md), [mu2lin](../audio/mu2lin.md).
 
 ## History
 

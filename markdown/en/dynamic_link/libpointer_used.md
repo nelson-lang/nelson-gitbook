@@ -12,17 +12,17 @@ Returns list of current used libpointer handle.
 
 ## Description
 
-  <p>Returns list of current used libpointer handle.</p>
-
-## See also
-
-[dlcall](dlcall.md).
+<p>Returns list of current used libpointer handle.</p>
 
 ## Example
 
 ```matlab
 libpointer_used(),delete(libpointer_used())
 ```
+
+## See also
+
+[dlcall](../dynamic_link/dlcall.md).
 
 ## History
 

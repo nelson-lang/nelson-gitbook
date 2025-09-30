@@ -12,8 +12,9 @@ Returns paths of Nelson include directories.
 
 ## Description
 
-  <p><b>C = dlgetnelsonincludes()</b> returns a cell array of paths to various include directories used by Nelson modules.</p>
-  <p>These paths are used internally for module development and building processes.</p>
+<p>
+            <b>C = dlgetnelsonincludes()</b> returns a cell array of paths to various include directories used by Nelson modules.</p>
+<p>These paths are used internally for module development and building processes.</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ dlgetnelsonincludes()
 
 ## See also
 
-[dlgetnelsonlibraries](dlgetnelsonlibraries.md), [dlgeneratemake](dlgeneratemake.md).
+[dlgetnelsonlibraries](../dynamic_link/dlgetnelsonlibraries.md), [dlgeneratemake](../dynamic_link/dlgeneratemake.md).
 
 ## History
 

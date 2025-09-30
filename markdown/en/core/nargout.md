@@ -19,8 +19,9 @@ Returns the number of output arguments.
 
 ## Description
 
-  <p><b>nargout</b> returns the number of output arguments of an function.</p>
-  <p>If the last output argument of the function  is <b>varargout</b> the returned value is negative.</p>
+<p>
+            <b>nargout</b> returns the number of output arguments of an function.</p>
+<p>If the last output argument of the function  is <b>varargout</b> the returned value is negative.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ nargout('cos')
 
 ## See also
 
-[nargin](nargin.md).
+[nargin](../core/nargin.md).
 
 ## History
 

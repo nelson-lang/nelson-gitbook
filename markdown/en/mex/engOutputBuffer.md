@@ -19,8 +19,9 @@ Specify char buffer for Nelson output
 
 ## Description
 
-  <p>Specify char buffer for Nelson output.</p>
-  <p>To turn off output buffering in C, use: <b>engOutputBuffer(ep, NULL, 0);</b></p>
+<p>Specify char buffer for Nelson output.</p>
+<p>To turn off output buffering in C, use: <b>engOutputBuffer(ep, NULL, 0);</b>
+    </p>
 
 ## Example
 
@@ -30,7 +31,7 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 
 ## See also
 
-[mex](mex.md), [engPutVariable](engPutVariable.md), [engGetVariable](engGetVariable.md).
+[mex](../mex/mex.md), [engPutVariable](../mex/engPutVariable.md), [engGetVariable](../mex/engGetVariable.md).
 
 ## History
 

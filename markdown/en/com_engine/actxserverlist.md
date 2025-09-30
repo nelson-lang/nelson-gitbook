@@ -12,7 +12,8 @@ Get available ActiveX servers.
 
 ## Description
 
-  <p><b>l = actxserverlist()</b> returns list of available servers.</p>
+<p>
+            <b>l = actxserverlist()</b> returns list of available servers.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ l = actxserverlist()
 
 ## See also
 
-[actxcontrollist](actxcontrollist.md), [actxserver](actxserver.md).
+[actxcontrollist](../com_engine/actxcontrollist.md), [actxserver](../com_engine/actxserver.md).
 
 ## History
 

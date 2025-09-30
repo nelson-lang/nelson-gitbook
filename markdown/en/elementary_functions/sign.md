@@ -16,11 +16,12 @@ Find the sign function of a number.
 
 ## Description
 
-  <p><b>sign</b> find the sign function of a number.</p>
-  <p>-1 if the corresponding element of M is less than 0.</p>
-  <p>0 if the corresponding element of M equals 0.</p>
-  <p>1 if the corresponding element of M is greater than 0.</p>
-  <p>If input argument is a complex number, <b>sign</b> computes <b>M ./ abs(M)</b>.</p>
+<p>
+            <b>sign</b> find the sign function of a number.</p>
+<p>-1 if the corresponding element of M is less than 0.</p>
+<p>0 if the corresponding element of M equals 0.</p>
+<p>1 if the corresponding element of M is greater than 0.</p>
+<p>If input argument is a complex number, <b>sign</b> computes <b>M ./ abs(M)</b>.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ sign(V)
 
 ## See also
 
-[conj](conj.md), [abs](abs.md).
+[conj](../elementary_functions/conj.md), [abs](../elementary_functions/abs.md).
 
 ## History
 

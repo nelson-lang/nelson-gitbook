@@ -16,7 +16,8 @@ Convert a magnitude to decibels (dB).
 
 ## Description
 
-  <p><b>db = mag2db(mag)</b> returns corresponding values in decibels.</p>
+<p>
+            <b>db = mag2db(mag)</b> returns corresponding values in decibels.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ DB = mag2db([1, 0.01])
 
 ## See also
 
-[db2mag](db2mag.md).
+[db2mag](../signal_processing/db2mag.md).
 
 ## History
 

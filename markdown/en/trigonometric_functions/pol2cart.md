@@ -21,7 +21,7 @@ Transforms polar or cylindrical coordinates to Cartesian.
 
 ## Description
 
-<b>pol2cart</b> transforms polar or cylindrical coordinates to Cartesian.
+<b>pol2cart</b>transforms polar or cylindrical coordinates to Cartesian.
 
 ## Example
 
@@ -33,7 +33,7 @@ rho = [5 5 10 10];
 
 ## See also
 
-[cart2pol](cart2pol.md).
+[cart2pol](../trigonometric_functions/cart2pol.md).
 
 ## History
 

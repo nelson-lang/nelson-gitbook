@@ -19,11 +19,12 @@ Find a string in another.
 
 ## Description
 
-<b>strfind</b> find a string in another.
+<b>strfind</b>find a string in another.
 
 ## Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = strfind (str, 'in')
 k= strfind(str, ' ')
@@ -35,11 +36,12 @@ k = strfind(A, 'o')
 str = 'No pain no gain.';
 k = strfind(str,'in','ForceCellOutput',true)
 k = strfind(str,'in','ForceCellOutput',false)
+
 ```
 
 ## See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
 ## History
 

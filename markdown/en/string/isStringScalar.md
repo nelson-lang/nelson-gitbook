@@ -16,7 +16,8 @@ checks if input is string array with one element.
 
 ## Description
 
-  <p><b>isStringScalar</b> checks if input is string array with one element.</p>
+<p>
+            <b>isStringScalar</b> checks if input is string array with one element.</p>
 
 ## Example
 

@@ -17,11 +17,7 @@ Returns the signature of a method of a QObject handle.
 
 ## Description
 
-  <p>Returns the signature of a method of a QObject handle.</p>
-
-## See also
-
-[QObject_invoke (invoke)](QObject_invoke.html), [QObject_methods (methods)](QObject_methods.html).
+<p>Returns the signature of a method of a QObject handle.</p>
 
 ## Example
 
@@ -29,6 +25,10 @@ Returns the signature of a method of a QObject handle.
 h = errordlg()
 QObject_methodsignature(h, 'setVisible')
 ```
+
+## See also
+
+[QObject_invoke (invoke)](../qml_engine/QObject_invoke.md), [QObject_methods (methods)](../qml_engine/QObject_methods.md).
 
 ## History
 

@@ -24,16 +24,20 @@ Write data in binary form to the file specified by the file descriptor fid.
 
 ## Description
 
-  <p>Write data in binary form to the file specified by the file descriptor fid.</p>
-  <p>characters encoding uses <b>fopen</b> parameter.</p>
-  <p>supported architecture:</p>
-  <p><b>native</b> , <b>n</b>: format of the current machine.</p>
-  <p><b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
-  <p><b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+<p>Write data in binary form to the file specified by the file descriptor fid.</p>
+<p>characters encoding uses <b>fopen</b> parameter.</p>
+<p>supported architecture:</p>
+<p>
+            <b>native</b> , <b>n</b>: format of the current machine.</p>
+<p>
+                <b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
+<p>
+                    <b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
 
 ## Example
 
 ```matlab
+
 A = rand(3,1)
 
 fileID = fopen([tempdir(), 'doubledata.bin'],'w');
@@ -43,11 +47,12 @@ fclose(fileID);
 fileID = fopen([tempdir(), 'doubledata.bin'],'r');
 R = fread(fileID, 'double')
 fclose(fileID);
+
 ```
 
 ## See also
 
-[fopen](fopen.md), [fclose](fclose.md), [fread](fread.md).
+[fopen](../stream_manager/fopen.md), [fclose](../stream_manager/fclose.md), [fread](../stream_manager/fread.md).
 
 ## History
 

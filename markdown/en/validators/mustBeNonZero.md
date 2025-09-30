@@ -15,7 +15,8 @@ Checks that value is not zero.
 
 ## Description
 
-  <p><b>mustBeNonZero</b> checks that value is not zero or raise an error.</p>
+<p>
+            <b>mustBeNonZero</b> checks that value is not zero or raise an error.</p>
 
 ## Example
 
@@ -24,11 +25,12 @@ mustBeNonZero(1)
 mustBeNonZero([])
 mustBeNonZero(NaN)
 mustBeNonZero(0)
+
 ```
 
 ## See also
 
-[isempty](../types/isempty.md), [eq](eq.html).
+[isempty](../types/isempty.md), [eq](../elementary_functions/eq.md).
 
 ## History
 

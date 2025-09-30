@@ -17,7 +17,7 @@ Returns an unique temporary filename.
 
 ## Description
 
-  <p>Returns the name of an unique temporary filename.</p>
+<p>Returns the name of an unique temporary filename.</p>
 
 ## Example
 
@@ -27,7 +27,7 @@ r = tempname()
 
 ## See also
 
-[mkdir](mkdir.md), [tempdir](tempdir.md).
+[mkdir](../files_folders_functions/mkdir.md), [tempdir](../files_folders_functions/tempdir.md).
 
 ## History
 

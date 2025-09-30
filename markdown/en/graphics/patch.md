@@ -31,25 +31,41 @@ Create patches of colored polygons
 
 ## Description
 
-  <p><b>patch(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by <b>X</b> and <b>Y</b> coordinates, and fills the shape with color <b>C</b>.</p>
-  <p><b>patch(X, Y, Z, C)</b> creates a 3D polygonal shape with vertices defined by <b>X</b>, <b>Y</b>, and <b>Z</b> coordinates, and fills the shape with color <b>C</b>.</p>
-  <p><b>patch(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the patch object using name-value pairs.</p>
-  <p><b>patch('Faces', F, 'Vertices', V)</b> creates one or more polygons .</p>
-  <p><b>go = patch(...)</b> returns the handle <b>go</b> to the created patch object.</p>
-  <p>Property Name-Value Pairs:</p>
-  <p/>
-  <p><b>'FaceColor'</b>: color of the filled shape. FaceColor can be a character vector or a 3-element RGB vector. Default: <b>'flat'</b>.</p>
-  <p><b>'EdgeColor'</b>: color of the edges of the polygonal shape. EdgeColor can be a character vector or a 3-element RGB vector. Default: <b>'none'</b>.</p>
-  <p><b>'LineWidth'</b>: width of the edges of the polygonal shape. Default: <b>0.5</b>.</p>
-  <p><b>'LineStyle'</b>: style of the edges of the polygonal shape. LineStyle can be a character vector or a line style code. Default: <b>'-'</b>.</p>
-  <p><b>'FaceAlpha'</b>: transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
-  <p><b>'EdgeAlpha'</b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
-  <p><b>'Parent'</b>: handle of the parent object for the patch. Default: <b>gca()</b>.</p>
-  <p><b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.</p>
-  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+<p>
+            <b>patch(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by <b>X</b> and <b>Y</b> coordinates, and fills the shape with color <b>C</b>.</p>
+<p>
+                <b>patch(X, Y, Z, C)</b> creates a 3D polygonal shape with vertices defined by <b>X</b>, <b>Y</b>, and <b>Z</b> coordinates, and fills the shape with color <b>C</b>.</p>
+<p>
+                    <b>patch(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the patch object using name-value pairs.</p>
+<p>
+                        <b>patch('Faces', F, 'Vertices', V)</b> creates one or more polygons .</p>
+<p>
+                            <b>go = patch(...)</b> returns the handle <b>go</b> to the created patch object.</p>
+<p>Property Name-Value Pairs:</p>
+<p></p>
+<p>
+                                <b>'FaceColor'</b>: color of the filled shape. FaceColor can be a character vector or a 3-element RGB vector. Default: <b>'flat'</b>.</p>
+<p>
+                                    <b>'EdgeColor'</b>: color of the edges of the polygonal shape. EdgeColor can be a character vector or a 3-element RGB vector. Default: <b>'none'</b>.</p>
+<p>
+                                        <b>'LineWidth'</b>: width of the edges of the polygonal shape. Default: <b>0.5</b>.</p>
+<p>
+                                            <b>'LineStyle'</b>: style of the edges of the polygonal shape. LineStyle can be a character vector or a line style code. Default: <b>'-'</b>.</p>
+<p>
+                                                <b>'FaceAlpha'</b>: transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
+<p>
+                                                    <b>'EdgeAlpha'</b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
+<p>
+                                                        <b>'Parent'</b>: handle of the parent object for the patch. Default: <b>gca()</b>.</p>
+<p>
+                                                            <b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.</p>
+<p>
+                                                                <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
 Set this property on an existing component has no effect.</p>
-  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+<p>
+                                                                    <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+<p>
+                                                                        <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
 ## Examples
 
@@ -70,7 +86,7 @@ axis equal
 axis off
 ```
 
-<img src="patch_1_57E1B5A6.svg" align="middle"/>
+<img src="patch_1.svg" align="middle"/>
 
 ```matlab
 f =figure('Color', 'w');
@@ -88,8 +104,7 @@ axis('equal')
 axis('off')
 ```
 
-<img src="patch_2_242108D8.svg" align="middle"/>
-
+<img src="patch_2.svg" align="middle"/>
 Nerfertiti 3D mask
 
 ```matlab
@@ -104,8 +119,7 @@ axis off
 view([0, 0, 1]);
 ```
 
-<img src="patch_3_968CD83F.svg" align="middle"/>
-
+<img src="patch_3.svg" align="middle"/>
 Alpha channel
 
 ```matlab
@@ -119,11 +133,11 @@ patch(x+2,y,z,'magenta','FaceAlpha',0.3)
 patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 ```
 
-<img src="patch_4_F3B9E78.svg" align="middle"/>
+<img src="patch_4.svg" align="middle"/>
 
 ## See also
 
-[surf](surf.md), [colormap](colormap.md).
+[surf](../graphics/surf.md), [colormap](../graphics/colormap.md).
 
 ## History
 

@@ -34,17 +34,17 @@ Solution of continuous- or discrete-time algebraic Riccati equations (generalize
 
 ## Description
 
-  <p>Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)</p>
-  <p>The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.</p>
-  <p>A standard eigenproblem is solved in the continuous-time case if G is given.</p>
+<p>Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)</p>
+<p>The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.</p>
+<p>A standard eigenproblem is solved in the continuous-time case if G is given.</p>
 
-Used function(s)
-
-SB02OD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB02OD.html
+
+## Used function(s)
+
+SB02OD
 
 ## Example
 

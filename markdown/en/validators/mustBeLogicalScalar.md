@@ -15,7 +15,8 @@ Checks that value is logical scalar or raise an error.
 
 ## Description
 
-  <p><b>mustBeLogicalScalar</b> checks that value is logical scalar or raise an error.</p>
+<p>
+            <b>mustBeLogicalScalar</b> checks that value is logical scalar or raise an error.</p>
 
 ## Example
 

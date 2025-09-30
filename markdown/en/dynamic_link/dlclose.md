@@ -14,8 +14,9 @@ Removes dllib object.
 
 ## Description
 
-  <p><b>dlclose(h)</b> or <b>delete(h)</b> releases dllib object.</p>
-  <p>Do not forget to clear h afterward.</p>
+<p>
+            <b>dlclose(h)</b> or <b>delete(h)</b> releases dllib object.</p>
+<p>Do not forget to clear h afterward.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ isvalid(lib)
 
 ## See also
 
-[dlopen](dlopen.md).
+[dlopen](../dynamic_link/dlopen.md).
 
 ## History
 

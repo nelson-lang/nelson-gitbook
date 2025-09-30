@@ -19,10 +19,10 @@ Controllability of state-space model.
 
 ## Description
 
-  <p>Controllability in a dynamic system refers to the system's ability to be guided to any desired state within a finite timeframe through the application of suitable control signals.</p>
-  <p>This property is commonly known as reachability.</p>
-  <p>The function <b>ctrb</b> is employed to calculate a controllability matrix, either from state matrices or a state-space model.</p>
-  <p>The resulting matrix serves as a tool to assess and confirm the controllability of the system.</p>
+<p>Controllability in a dynamic system refers to the system's ability to be guided to any desired state within a finite timeframe through the application of suitable control signals.</p>
+<p>This property is commonly known as reachability.</p>
+<p>The function <b>ctrb</b> is employed to calculate a controllability matrix, either from state matrices or a state-space model.</p>
+<p>The resulting matrix serves as a tool to assess and confirm the controllability of the system.</p>
 
 ## Example
 
@@ -37,7 +37,7 @@ Co = ctrb(sys)
 
 ## See also
 
-[ctrbf](ctrbf.md), [obsv](obsv.md).
+[ctrbf](../control_system/ctrbf.md), [obsv](../control_system/obsv.md).
 
 ## History
 

@@ -20,7 +20,7 @@ Transform spherical coordinates to Cartesian.
 
 ## Description
 
-<b>sph2cart</b> transforms Cartesian to spherical coordinates.
+<b>sph2cart</b>transforms Cartesian to spherical coordinates.
 
 ## Example
 
@@ -33,7 +33,7 @@ radius = 1.7321 * ones(2, 4);
 
 ## See also
 
-[cart2sph](cart2sph.md).
+[cart2sph](../trigonometric_functions/cart2sph.md).
 
 ## History
 

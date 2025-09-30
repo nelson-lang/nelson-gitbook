@@ -27,15 +27,15 @@ Balancing the matrices of the system pencil corresponding to a descriptor triple
 
 ## Description
 
-  <p>To balance the matrices of the system pencil corresponding to the descriptor triple (A-lambda E,B,C), by balancing.</p>
+<p>To balance the matrices of the system pencil corresponding to the descriptor triple (A-lambda E,B,C), by balancing.</p>
 
-Used function(s)
-
-TG01AD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/TG01AD.html
+
+## Used function(s)
+
+TG01AD
 
 ## Example
 

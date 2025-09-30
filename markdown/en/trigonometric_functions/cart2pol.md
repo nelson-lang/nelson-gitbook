@@ -21,7 +21,7 @@ Transforms Cartesian coordinates to polar or cylindrical.
 
 ## Description
 
-<b>cart2pol</b> transforms Cartesian coordinates to polar or cylindrical.
+<b>cart2pol</b>transforms Cartesian coordinates to polar or cylindrical.
 
 ## Examples
 
@@ -40,7 +40,7 @@ z = [7 8 9 10];
 
 ## See also
 
-[pol2cart](pol2cart.md).
+[pol2cart](../trigonometric_functions/pol2cart.md).
 
 ## History
 

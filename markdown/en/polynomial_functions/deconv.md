@@ -18,13 +18,15 @@ Deconvolution and polynomial division.
 
 ## Description
 
-  <p><b>[q, r] = deconv(b, a)</b> performs deconvolution on vector <b>b</b> by vector <b>a</b> using long division.</p>
-  <p>It returns the quotient <b>q</b> and remainder <b>r</b> such that <b>b = conv(a, q) + r</b>.</p>
-  <p>In the context of polynomial coefficients, deconvolving vectors <b>b</b> and <b>a</b> is akin to dividing the polynomial represented by <b>b</b> by the polynomial represented by <b>a</b>.</p>
+<p>
+            <b>[q, r] = deconv(b, a)</b> performs deconvolution on vector <b>b</b> by vector <b>a</b> using long division.</p>
+<p>It returns the quotient <b>q</b> and remainder <b>r</b> such that <b>b = conv(a, q) + r</b>.</p>
+<p>In the context of polynomial coefficients, deconvolving vectors <b>b</b> and <b>a</b> is akin to dividing the polynomial represented by <b>b</b> by the polynomial represented by <b>a</b>.</p>
 
 ## Example
 
 ```matlab
+
 b = [1; 2; -1];  % Dividend (x^2 + 2x - 1)
 a = [1; 1];      % Divisor (x + 1)
 
@@ -33,7 +35,7 @@ a = [1; 1];      % Divisor (x + 1)
 
 ## See also
 
-[conv](../data_analysis/conv.md), [poly](poly.md).
+[conv](../data_analysis/conv.md), [poly](../polynomial_functions/poly.md).
 
 ## History
 

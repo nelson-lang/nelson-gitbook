@@ -18,11 +18,7 @@ Returns all children of this object with the given name.
 
 ## Description
 
-  <p>Returns all children of this object with the given name.</p>
-
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
+<p>Returns all children of this object with the given name.</p>
 
 ## Example
 
@@ -31,6 +27,10 @@ h1 = errordlg()
 h2 = errordlg()
 hr = QObject_findchildren(QObject_root(), 'errordlg', true)
 ```
+
+## See also
+
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## History
 

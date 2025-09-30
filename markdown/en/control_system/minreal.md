@@ -25,10 +25,11 @@ Minimal realization or pole-zero cancellation.
 
 ## Description
 
-  <p><b>minreal</b> function reduces state-space models by eliminating uncontrollable or unobservable states.</p>
-  <p>In transfer functions or zero-pole-gain models, it cancels pole-zero pairs. The resulting model maintains the same response characteristics as the original model but with minimal order.</p>
-  <p> When using <b>sysOut = minreal(sysIn, tol)</b>, you can customize the tolerance for state elimination or pole-zero cancellation.</p>
-  <p>The default tolerance is set to sqrt(eps), and increasing this value prompts more aggressive cancellations, potentially further simplifying the model.</p>
+<p>
+            <b>minreal</b> function reduces state-space models by eliminating uncontrollable or unobservable states.</p>
+<p>In transfer functions or zero-pole-gain models, it cancels pole-zero pairs. The resulting model maintains the same response characteristics as the original model but with minimal order.</p>
+<p> When using <b>sysOut = minreal(sysIn, tol)</b>, you can customize the tolerance for state elimination or pole-zero cancellation.</p>
+<p>The default tolerance is set to sqrt(eps), and increasing this value prompts more aggressive cancellations, potentially further simplifying the model.</p>
 
 ## Example
 

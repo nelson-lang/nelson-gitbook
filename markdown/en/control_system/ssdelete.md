@@ -20,7 +20,8 @@ Remove inputs, outputs and states from state-space system.
 
 ## Description
 
-  <p><b>ssdelete</b> removes inputs, outputs and states from state-space system.</p>
+<p>
+            <b>ssdelete</b> removes inputs, outputs and states from state-space system.</p>
 
 ## Example
 
@@ -38,7 +39,7 @@ R = ssdelete(sys1, inputs, outputs)
 
 ## See also
 
-[ssselect](ssselect.md).
+[ssselect](../control_system/ssselect.md).
 
 ## History
 

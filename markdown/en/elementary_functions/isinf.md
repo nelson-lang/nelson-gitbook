@@ -16,7 +16,8 @@ Check for Infinity entries.
 
 ## Description
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are Infinity values.</p>
+<p>
+            <b>isnan</b> returns a logical array which is true where elements of M are Infinity values.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ R = isinf(X)
 
 ## See also
 
-[isnan](isnan.md).
+[isnan](../elementary_functions/isnan.md).
 
 ## History
 

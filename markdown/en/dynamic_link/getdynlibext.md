@@ -12,7 +12,8 @@ Returns the extension of dynamic libraries.
 
 ## Description
 
-  <p><b>getdynlibext()</b> returns the extension of dynamic libraries.</p>
+<p>
+            <b>getdynlibext()</b> returns the extension of dynamic libraries.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ getdynlibext()
 
 ## See also
 
-[addgateway](addgateway.html).
+[addgateway](../dynamic_link/addgateway.md).
 
 ## History
 

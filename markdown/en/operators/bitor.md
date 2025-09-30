@@ -19,7 +19,8 @@ Bit-wise OR
 
 ## Description
 
-  <p><b>C = bitor(A, B)</b> returns the bit-wise OR of <b>A</b> and <b>B</b>.</p>
+<p>
+            <b>C = bitor(A, B)</b> returns the bit-wise OR of <b>A</b> and <b>B</b>.</p>
 
 ## Example
 
@@ -27,11 +28,12 @@ Bit-wise OR
 A = uint16([0 1; 0 1]);
 B = uint16([0 0; 1 1]);
 R = bitor(A, B)
+
 ```
 
 ## See also
 
-[bitand](bitand.md), [bitxor](bitxor.md).
+[bitand](../operators/bitand.md), [bitxor](../operators/bitxor.md).
 
 ## History
 

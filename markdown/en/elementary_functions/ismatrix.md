@@ -16,8 +16,9 @@ determines whether input is matrix or not
 
 ## Description
 
-  <p><b>TF = ismatrix(A)</b> returns true if A is a matrix.</p>
-  <p>A matrix is a two-dimensional array that has a size of m-by-n, where m and n are nonnegative integers.</p>
+<p>
+            <b>TF = ismatrix(A)</b> returns true if A is a matrix.</p>
+<p>A matrix is a two-dimensional array that has a size of m-by-n, where m and n are nonnegative integers.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ ismatrix(ones(3,1,2))
 
 ## See also
 
-[isvector](isvector.md).
+[isvector](../elementary_functions/isvector.md).
 
 ## History
 

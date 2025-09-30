@@ -12,8 +12,9 @@ Returns an error if module is not loaded in Nelson.
 
 ## Description
 
-  <p><b>requiremodule</b> returns an error if desired module is not loaded.</p>
-  <p>This function is usefull to verify a dependency on another module.</p>
+<p>
+            <b>requiremodule</b> returns an error if desired module is not loaded.</p>
+<p>This function is usefull to verify a dependency on another module.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ requiremodule('module_skeleton')
 
 ## See also
 
-[ismodule](ismodule.md), [addmodule](removemodule.md), [getmodules](getmodules.md).
+[ismodule](../modules_manager/ismodule.md), [addmodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## History
 

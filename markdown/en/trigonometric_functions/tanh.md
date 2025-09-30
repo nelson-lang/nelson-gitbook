@@ -16,7 +16,7 @@ Computes the hyperbolic tangent in radians for each element of x.
 
 ## Description
 
-<b>tanh</b>computes the hyperbolic tangent in radians for each element of <b>x</b>.
+<b>tanh</b>computes the hyperbolic tangent in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = tanh(A)
 
 ## See also
 
-[atan](atan.md), [tanh](atan.md).
+[atan](../trigonometric_functions/atan.md), [tanh](../trigonometric_functions/atan.md).
 
 ## History
 

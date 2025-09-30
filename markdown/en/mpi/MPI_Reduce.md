@@ -20,19 +20,16 @@ Reduces values on all processes to a single value.
 
 ## Description
 
-  <p>Reduces values on all processes to a single value.</p>
-  <p>Nelson does not check to ensure that the reduction operation are all the same size across the various processes in the group.</p>
-  <p>Please be sure that each process passes the same sized array to the MPI_Allreduce operation.</p>
-
-## See also
-
-[MPI_Allreduce](MPI_Allreduce.md).
+<p>Reduces values on all processes to a single value.</p>
+<p>Nelson does not check to ensure that the reduction operation are all the same size across the various processes in the group.</p>
+<p>Please be sure that each process passes the same sized array to the MPI_Allreduce operation.</p>
 
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Reduce.m'], 4)
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -48,7 +45,12 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Allreduce](../mpi/MPI_Allreduce.md).
 
 ## History
 

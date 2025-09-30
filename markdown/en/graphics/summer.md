@@ -17,7 +17,8 @@ Summer colormap array.
 
 ## Description
 
-  <p><b>summer</b> returns the colormap with summer colors.</p>
+<p>
+            <b>summer</b> returns the colormap with summer colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('summer');
 ```
 
-<img src="summer_B083991B.svg" align="middle"/>
+<img src="summer.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

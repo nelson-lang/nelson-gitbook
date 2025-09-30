@@ -12,11 +12,11 @@ Terminate Nelson program (same as quit)
 
 ## Description
 
-  <p> This function is equivalent to the <b>quit</b> function.</p>
+<p> This function is equivalent to the <b>quit</b> function.</p>
 
 ## See also
 
-[quit](quit.md).
+[quit](../core/quit.md).
 
 ## History
 

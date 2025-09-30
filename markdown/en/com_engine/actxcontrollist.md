@@ -12,7 +12,8 @@ Get available ActiveX controls.
 
 ## Description
 
-  <p><b>l = actxcontrollist()</b> returns list of available controls</p>
+<p>
+            <b>l = actxcontrollist()</b> returns list of available controls</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ l = actxcontrollist()
 
 ## See also
 
-[actxserverlist](actxserverlist.md).
+[actxserverlist](../com_engine/actxserverlist.md).
 
 ## History
 

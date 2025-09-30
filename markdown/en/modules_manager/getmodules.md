@@ -16,8 +16,9 @@ Returns list of modules loaded in Nelson.
 
 ## Description
 
-  <p><b>getmodules</b> returns list of modules loaded in Nelson.</p>
-  <p>all core's modules are protected and cannot removed during an nelson's session.</p>
+<p>
+            <b>getmodules</b> returns list of modules loaded in Nelson.</p>
+<p>all core's modules are protected and cannot removed during an nelson's session.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ Returns list of modules loaded in Nelson.
 
 ## See also
 
-[requiremodule](requiremodule.md), [ismodule](ismodule.md).
+[requiremodule](../modules_manager/requiremodule.md), [ismodule](../modules_manager/ismodule.md).
 
 ## History
 

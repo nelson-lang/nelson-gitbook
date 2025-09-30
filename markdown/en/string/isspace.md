@@ -16,7 +16,7 @@ Determine which characters are space.
 
 ## Description
 
-<b>isletter</b> determines which characters are space characters.
+<b>isletter</b>determines which characters are space characters.
 
 ## Examples
 
@@ -30,7 +30,7 @@ isspace("六書 six writings")
 
 ## See also
 
-[isletter](isletter.md).
+[isletter](../string/isletter.md).
 
 ## History
 

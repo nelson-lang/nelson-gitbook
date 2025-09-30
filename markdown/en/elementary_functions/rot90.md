@@ -18,8 +18,9 @@ Rotate array 90 degrees.
 
 ## Description
 
-  <p><b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k * 90</b> degrees, with <b>k</b> is an integer value.</p>
-  <p>Consider <b>flip</b> function to flip arrays in any dimension.</p>
+<p>
+            <b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k * 90</b> degrees, with <b>k</b> is an integer value.</p>
+<p>Consider <b>flip</b> function to flip arrays in any dimension.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ y = rot90(x, 3)
 
 ## See also
 
-[flipud](flipud.md), [fliplr](fliplr.md).
+[flipud](../elementary_functions/flipud.md), [fliplr](../elementary_functions/fliplr.md).
 
 ## History
 

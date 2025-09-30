@@ -22,16 +22,16 @@ Checking stability of a given real polynomial.
 
 ## Description
 
-  <p>To determine whether or not a given polynomial P(x) with real coefficients is stable, either in the continuous-time or discrete-time case.</p>
-  <p>A polynomial is said to be stable in the continuous-time case if all its zeros lie in the left half-plane, and stable in the discrete-time case if all its zeros lie inside the unit circle.</p>
+<p>To determine whether or not a given polynomial P(x) with real coefficients is stable, either in the continuous-time or discrete-time case.</p>
+<p>A polynomial is said to be stable in the continuous-time case if all its zeros lie in the left half-plane, and stable in the discrete-time case if all its zeros lie inside the unit circle.</p>
 
-Used function(s)
-
-MC01TD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MC01TD.html
+
+## Used function(s)
+
+MC01TD
 
 ## Example
 

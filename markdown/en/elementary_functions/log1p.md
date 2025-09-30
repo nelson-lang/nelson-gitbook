@@ -16,7 +16,8 @@ log(1 + x) accurately for small values of x.
 
 ## Description
 
-  <p><b>log1p</b> computes log(1 + x) accurately for small values of x.</p>
+<p>
+            <b>log1p</b> computes log(1 + x) accurately for small values of x.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ r = log1p(x)
 
 ## See also
 
-[log](log.md).
+[log](../elementary_functions/log.md).
 
 ## History
 

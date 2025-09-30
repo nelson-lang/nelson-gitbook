@@ -20,9 +20,10 @@ load data from .mat file into Nelson's workspace.
 
 ## Description
 
-  <p><b>loadmat</b> loads data from .mat file to Nelson's workspace.</p>
+<p>
+            <b>loadmat</b> loads data from .mat file to Nelson's workspace.</p>
 
-Bibliography
+## Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
@@ -43,11 +44,12 @@ loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
+
 ```
 
 ## See also
 
-[load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](savemat.md).
+[load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](../matio/savemat.md).
 
 ## History
 

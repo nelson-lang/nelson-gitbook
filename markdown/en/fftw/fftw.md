@@ -23,7 +23,7 @@ function for determining FFT algorithm.
 
 ## Description
 
-  <p>The default method is 'estimate'.</p>
+<p>The default method is 'estimate'.</p>
 
 ## Example
 
@@ -37,7 +37,7 @@ tic; fft(M); toc
 
 ## See also
 
-[fft](fft.md), [ifft](ifft.md).
+[fft](../fftw/fft.md), [ifft](../fftw/ifft.md).
 
 ## History
 

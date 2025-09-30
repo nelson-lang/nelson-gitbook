@@ -13,12 +13,8 @@ Initialize the MPI execution environment.
 
 ## Description
 
-  <p>Initialize the MPI execution environment.</p>
-  <p>MPI process are launched in CLI mode (no gui, no plot).</p>
-
-## See also
-
-[MPI_Initialized](MPI_Initialized.md), [MPI_Finalize](MPI_Finalize.md).
+<p>Initialize the MPI execution environment.</p>
+<p>MPI process are launched in CLI mode (no gui, no plot).</p>
 
 ## Example
 
@@ -29,7 +25,12 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Initialized](../mpi/MPI_Initialized.md), [MPI_Finalize](../mpi/MPI_Finalize.md).
 
 ## History
 

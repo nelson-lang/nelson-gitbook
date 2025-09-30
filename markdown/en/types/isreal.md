@@ -16,7 +16,7 @@ Return true if all imaginary part is a zero array.
 
 ## Description
 
-<b>isreal</b> returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
+<b>isreal</b>returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
 
 ## Examples
 
@@ -37,7 +37,7 @@ res = isreal(A)
 
 ## See also
 
-[isa](isa.md), [isint8](isint8.md).
+[isa](../types/isa.md), [isint8](../types/isint8.md).
 
 ## History
 

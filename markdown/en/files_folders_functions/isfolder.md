@@ -16,7 +16,8 @@ Returns true is the input argument is an directory.
 
 ## Description
 
-  <p><b>isfolder(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.</p>
+<p>
+            <b>isfolder(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ isdir([nelsonroot(), '/not_exist_dir'])
 
 ## See also
 
-[mkdir](mkdir.md), [isfile](isfile.md), [isdir](isdir.md).
+[mkdir](../files_folders_functions/mkdir.md), [isfile](../files_folders_functions/isfile.md), [isdir](../files_folders_functions/isdir.md).
 
 ## History
 

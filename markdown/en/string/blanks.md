@@ -16,7 +16,7 @@ creates an string of blank characters.
 
 ## Description
 
-<b>blanks</b> creates an string of blank characters.
+<b>blanks</b>creates an string of blank characters.
 
 ## Example
 
@@ -26,7 +26,7 @@ blanks(4)
 
 ## See also
 
-[char](char.md).
+[char](../string/char.md).
 
 ## History
 

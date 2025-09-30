@@ -16,7 +16,7 @@ Inverse secant of argument in degrees.
 
 ## Description
 
-<b>asecd</b> computes the inverse secant of argument in degrees for each element of <b>x</b>.
+<b>asecd</b>computes the inverse secant of argument in degrees for each element of<b>x</b>.
 
 ## Example
 
@@ -26,7 +26,7 @@ R = asecd([1, 10+3i, 15+2i, 35+i])
 
 ## See also
 
-[asec](asec.html).
+[asec](../trigonometric/asec.md).
 
 ## History
 

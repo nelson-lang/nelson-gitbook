@@ -12,7 +12,7 @@ Resumes an audioplayer object.
 
 ## Description
 
-<b>resume</b> resumes an audioplayer object.
+<b>resume</b>resumes an audioplayer object.
 
 ## Example
 
@@ -28,7 +28,7 @@ playObj
 
 ## See also
 
-[audioplayer_pause](audioplayer_pause.md), [play](play.md).
+[audioplayer_pause](../audio/audioplayer_pause.md), [play](../audio/play.md).
 
 ## History
 

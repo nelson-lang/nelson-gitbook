@@ -16,9 +16,10 @@ Square root.
 
 ## Description
 
-  <p><b>sqrt</b> computes the square root.</p>
-  <p>If input argument is a complex number or negative, <b>sqrt(z)</b> computes: sqrt(r) * (cos(phi/2) + sin(phi/2) * i) with</p>
-  <p>r = sqrt((real(z) * real(z)) + (imag(z) * imag(z))) and phi = atan2(imag(z), real(z))</p>
+<p>
+            <b>sqrt</b> computes the square root.</p>
+<p>If input argument is a complex number or negative, <b>sqrt(z)</b> computes: sqrt(r) * (cos(phi/2) + sin(phi/2) * i) with</p>
+<p>r = sqrt((real(z) * real(z)) + (imag(z) * imag(z))) and phi = atan2(imag(z), real(z))</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ r = sqrt(x)
 
 ## See also
 
-[log](log.md), [abs](abs.md), [angle](angle.md).
+[log](../elementary_functions/log.md), [abs](../elementary_functions/abs.md), [angle](../elementary_functions/angle.md).
 
 ## History
 

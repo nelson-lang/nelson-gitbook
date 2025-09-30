@@ -29,7 +29,8 @@ Find Non-zero Elements
 
 ## Description
 
-  <p><b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>.</p>
+<p>
+            <b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>.</p>
 
 ## Example
 

@@ -16,9 +16,10 @@
 
 ## Description
 
-  <p><b>rotz</b> returns 3x3 transformation matrix for rotations around z-axis.</p>
+<p>
+            <b>rotz</b> returns 3x3 transformation matrix for rotations around z-axis.</p>
 
-Bibliography
+## Bibliography
 
 Goldstein, H., C. Poole and J. Safko, Classical Mechanics, 3rd Edition, San Francisco: Addison Wesley, 2002, pp. 142–144.
 
@@ -30,7 +31,7 @@ r = rotz(90)
 
 ## See also
 
-[rotx](rotx.md), [roty](roty.md).
+[rotx](../geometry/rotx.md), [roty](../geometry/roty.md).
 
 ## History
 

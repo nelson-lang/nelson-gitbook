@@ -18,21 +18,24 @@ Checks if shared library is loaded.
 
 ## Description
 
-  <p><b>dllibisloaded</b> returns if share library is already loaded.</p>
+<p><b>dllibisloaded</b> returns if share library is already loaded.</p>
 
 ## Example
 
 ```matlab
-path_1 = modulepath('dynamic_link', 'builtin');
+
+		path_1 = modulepath('dynamic_link', 'builtin');
 r = dllibisloaded(path_1)
 lib1 = dlopen(path_1);
 [r, lib2] = dllibisloaded(path_1)
 isequal(lib1, lib2)
+
+
 ```
 
 ## See also
 
-[dlopen](dlopen.md).
+[dlopen](../dynamic_link/dlopen.md).
 
 ## History
 

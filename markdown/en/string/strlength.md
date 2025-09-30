@@ -16,11 +16,12 @@ Length of strings in cell of strings or string array.
 
 ## Description
 
-<b>strlength</b> returns length of strings.
+<b>strlength</b>returns length of strings.
 
 ## Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = strlength(str)
 
@@ -29,11 +30,12 @@ k = strlength(A)
 
 B = ["Nel", NaN, "son"; "is", "open", "source"];
 k = strlength(B)
+
 ```
 
 ## See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
 ## History
 

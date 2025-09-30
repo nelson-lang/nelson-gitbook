@@ -15,8 +15,9 @@ Checks that value is finite or raise an error.
 
 ## Description
 
-  <p><b>mustBeFinite</b> checks that value is finite or raise an error.</p>
-  <p>Empty values are ignored.</p>
+<p>
+            <b>mustBeFinite</b> checks that value is finite or raise an error.</p>
+<p>Empty values are ignored.</p>
 
 ## Example
 

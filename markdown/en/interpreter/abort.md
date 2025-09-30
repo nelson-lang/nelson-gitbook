@@ -1,7 +1,5 @@
 # abort
 
-# return
-
 stop evaluation.
 
 ## Syntax
@@ -11,7 +9,8 @@ stop evaluation.
 
 ## Description
 
-  <p><b>return</b> or <b>abort</b> stops current evaluation.</p>
+<p>
+            <b>return</b> or <b>abort</b> stops current evaluation.</p>
 
 ## Example
 
@@ -22,7 +21,7 @@ a
 
 ## See also
 
-[for](for.md).
+[for](../interpreter/for.md).
 
 ## History
 

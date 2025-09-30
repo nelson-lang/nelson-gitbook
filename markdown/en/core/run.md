@@ -20,7 +20,8 @@ Executes a script file (.m).
 
 ## Description
 
-  <p><b>run(script_file)</b> executes a Nelson's script file (.m file extension).</p>
+<p>
+            <b>run(script_file)</b> executes a Nelson's script file (.m file extension).</p>
 
 ## Examples
 
@@ -37,6 +38,7 @@ fd = fopen([tempdir(), 'example_run_not_ok.m'], 'wt');
 fprintf(fd, ['AA = 1;', char(10)]);
 fprintf(fd, ['CC = AA + BB', char(10)]);
 fclose(fd);
+
 ```
 
 run a script without error.
@@ -65,7 +67,7 @@ run([tempdir(), 'example_run_not_ok.m'], 'nocatch');
 
 ## See also
 
-[execstr](execstr.md).
+[execstr](../core/execstr.md).
 
 ## History
 

@@ -14,7 +14,8 @@ Build help of Nelson's modules for GitBook.
 
 ## Description
 
-  <p><b>buildhelpmd</b> generates help files for GitBook (markdown).</p>
+<p>
+            <b>buildhelpmd</b> generates help files for GitBook (markdown).</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ buildhelpmd(tempdir(), 'core');
 
 ## See also
 
-[buildhelp](buildhelp.md), [doc](../help_browser/doc.md).
+[buildhelp](../help_tools/buildhelp.md), [doc](../help_browser/doc.md).
 
 ## History
 

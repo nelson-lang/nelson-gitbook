@@ -18,7 +18,8 @@ Shift the zero-frequency component to the center of the spectrum.
 
 ## Description
 
-  <p><b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.</p>
+<p>
+            <b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ fftshift(M, 1)
 
 ## See also
 
-[fft](ifft.md), [ifftshift](ifftshift.md).
+[fft](../fftw/ifft.md), [ifftshift](../fftw/ifftshift.md).
 
 ## History
 

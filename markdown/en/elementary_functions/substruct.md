@@ -8,9 +8,10 @@ Create structure argument for subsasgn or subsref
 
 ## Description
 
-  <p><b>S = substruct(type1, subs1, type2, subs2, ...)</b> generates a structure containing fields necessary for an overloaded <b>subsref</b> or <b>subsasgn</b> method.</p>
-  <p>Each type char vector is limited to '.', '()', or '{}'.</p>
-  <p>The associated subs argument should be a field name (for the '.' type) or a cell array containing index vectors (for the '()' or '{}' types).</p>
+<p>
+            <b>S = substruct(type1, subs1, type2, subs2, ...)</b> generates a structure containing fields necessary for an overloaded <b>subsref</b> or <b>subsasgn</b> method.</p>
+<p>Each type char vector is limited to '.', '()', or '{}'.</p>
+<p>The associated subs argument should be a field name (for the '.' type) or a cell array containing index vectors (for the '()' or '{}' types).</p>
 
 ## Example
 

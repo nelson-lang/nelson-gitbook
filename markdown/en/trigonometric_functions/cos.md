@@ -16,7 +16,7 @@ Computes the cosine in radians for each element of x.
 
 ## Description
 
-<b>cos</b> computes the cosine in radians for each element of <b>x</b>.
+<b>cos</b>computes the cosine in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = cos(A)
 
 ## See also
 
-[acos](acos.md).
+[acos](../trigonometric_functions/acos.md).
 
 ## History
 

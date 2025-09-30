@@ -20,7 +20,8 @@ List variables in an valid .nh5 file with sizes and types.
 
 ## Description
 
-  <p><b>whosnh5</b> lists variables in an valid .nh5 file.</p>
+<p>
+            <b>whosnh5</b> lists variables in an valid .nh5 file.</p>
 
 ## Example
 

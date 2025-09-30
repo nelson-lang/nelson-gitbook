@@ -16,7 +16,7 @@ Return true if variable var is a char array.
 
 ## Description
 
-<b>ischar</b> returns a logical 1 if the argument is a char array and a logical 0 otherwise.
+<b>ischar</b>returns a logical 1 if the argument is a char array and a logical 0 otherwise.
 
 ## Examples
 
@@ -37,7 +37,7 @@ res = ischar(C)
 
 ## See also
 
-[class](class.md), [char](../string/char.md).
+[class](../types/class.md), [char](../string/char.md).
 
 ## History
 

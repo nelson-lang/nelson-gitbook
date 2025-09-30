@@ -8,12 +8,13 @@ Stops script execution and enter in debug mode.
 
 ## Description
 
-  <p><b>keyboard</b> stops script execution and enter in debug mode. prompt is modified and displays debug level.</p>
+<p>
+            <b>keyboard</b> stops script execution and enter in debug mode. prompt is modified and displays debug level.</p>
 
 ## Example
 
 ```matlab
-keyboard()
+ keyboard()
 ```
 
 ## See also

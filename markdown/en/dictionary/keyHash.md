@@ -16,9 +16,10 @@ Create a hash code for a dictionary key.
 
 ## Description
 
-  <p><b>H = keyHash(A)</b> returns a uint64 scalar representing the input array, <b>A</b>.</p>
-  <p>The keyHash function computes a hash code derived from the characteristics of the input.</p>
-  <p>For custom classes, keyHash might require overloading to guarantee proper equivalence.</p>
+<p>
+            <b>H = keyHash(A)</b> returns a uint64 scalar representing the input array, <b>A</b>.</p>
+<p>The keyHash function computes a hash code derived from the characteristics of the input.</p>
+<p>For custom classes, keyHash might require overloading to guarantee proper equivalence.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ keyHash({1, 'a', 'b'})
 
 ## See also
 
-[keyMatch](keyMatch.md).
+[keyMatch](../dictionary/keyMatch.md).
 
 ## History
 

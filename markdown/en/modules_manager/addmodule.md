@@ -13,7 +13,8 @@ Add module to Nelson.
 
 ## Description
 
-  <p><b>addmodule</b> registers a new module designed by his path and short name.</p>
+<p>
+            <b>addmodule</b> registers a new module designed by his path and short name.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ removemodule('module_skeleton')
 
 ## See also
 
-[ismodule](ismodule.md), [removemodule](removemodule.md), [getmodules](getmodules.md).
+[ismodule](../modules_manager/ismodule.md), [removemodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## History
 

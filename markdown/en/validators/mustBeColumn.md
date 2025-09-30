@@ -15,7 +15,8 @@ Checks that value is a column vector or raise an error.
 
 ## Description
 
-  <p><b>mustBeColumn</b> checks that value is a column vector or raise an error.</p>
+<p>
+            <b>mustBeColumn</b> checks that value is a column vector or raise an error.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeColumn(ones(3, 2, 4))
 
 ## See also
 
-[iscolumn](iscolumn.html).
+[iscolumn](../types/iscolumn.md).
 
 ## History
 

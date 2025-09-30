@@ -16,7 +16,8 @@ Computes the matrix square root of a square matrix.
 
 ## Description
 
-  <p><b>expm(x)</b> computes the matrix square root of x.</p>
+<p>
+            <b>expm(x)</b> computes the matrix square root of x.</p>
 
 ## Example
 

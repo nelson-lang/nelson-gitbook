@@ -12,9 +12,10 @@ Stop function running in the background.
 
 ## Description
 
-  <p><b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
-  <p>Future cancelled Findicates an error as property.</p>
-  <p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
+<p>
+            <b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
+<p>Future cancelled Findicates an error as property.</p>
+<p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ f(70)
 
 ## See also
 
-[pause](../core/pause.md), [parfeval](parfeval.md), [wait](wait.md).
+[pause](../core/pause.md), [parfeval](../parallel/parfeval.md), [wait](../parallel/wait.md).
 
 ## History
 

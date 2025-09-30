@@ -18,7 +18,8 @@ Evaluate Nelson code in string in an specified scope.
 
 ## Description
 
-  <p><b>eval</b> executes Nelson instructions given in a string in 'base' or 'caller' scope.</p>
+<p>
+            <b>eval</b> executes Nelson instructions given in a string in 'base' or 'caller' scope.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ R = evalin('base', 'evalin(''caller'',''pi'')')
 
 ## See also
 
-[eval](eval.md), [acquirevar](../memory_manager/acquirevar.md), [execstr](execstr.md), [evalc](evalc.md).
+[eval](../core/eval.md), [acquirevar](../memory_manager/acquirevar.md), [execstr](../core/execstr.md), [evalc](../core/evalc.md).
 
 ## History
 

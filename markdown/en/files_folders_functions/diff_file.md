@@ -19,8 +19,9 @@ diff two files or strings.
 
 ## Description
 
-  <p><b>diff_file</b> compares two files and returns diff as unified format.</p>
-  <p>if compared files are equals, res is an empty string.</p>
+<p>
+            <b>diff_file</b> compares two files and returns diff as unified format.</p>
+<p>if compared files are equals, res is an empty string.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ res = diff_file([nelsonroot(), '/etc/startup.m'], [nelsonroot(), '/etc/finish.m'
 
 ## See also
 
-[isdir](isdir.md), [isfile](isfile.md).
+[isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
 ## History
 

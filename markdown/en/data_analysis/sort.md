@@ -24,18 +24,21 @@ Sort array elements by quick sort algorithm.
 
 ## Description
 
-  <p><b>sort</b> implements quick sort algorithm.</p>
-  <p>name-value pair arguments:</p>
-  <p><b>'MissingPlacement'</b> - Placement of missing values: <b>'auto'</b> (default), <b>'first'</b>, <b>'last'</b>.</p>
-  <p><b>'ComparisonMethod'</b> - Element comparison method: <b>'auto'</b> (default), <b>'real'</b>, <b>'abs'</b>.</p>
+<p>
+            <b>sort</b> implements quick sort algorithm.</p>
+<p>name-value pair arguments:</p>
+<p>
+                <b>'MissingPlacement'</b> - Placement of missing values: <b>'auto'</b> (default), <b>'first'</b>, <b>'last'</b>.</p>
+<p>
+                    <b>'ComparisonMethod'</b> - Element comparison method: <b>'auto'</b> (default), <b>'real'</b>, <b>'abs'</b>.</p>
 
-Used function(s)
-
-qsort (stl)
-
-Bibliography
+## Bibliography
 
 Quick sort algorithm from Bentley and McIlroy's "Engineering a Sort Function". Software - Practice and Experience
+
+## Used function(s)
+
+qsort (stl)
 
 ## Examples
 
@@ -46,6 +49,7 @@ A = [10+20i 30+i 10i 0 -10i];
 B = sort(A,'ComparisonMethod', 'auto')
 B = sort(A, 'ComparisonMethod', 'real')
 B = sort(A, 'ComparisonMethod', 'abs')
+
 ```
 
 MissingPlacement
@@ -55,11 +59,12 @@ A = [NaN 3 6 0 NaN];
 [B, I] = sort(A, 'MissingPlacement', 'auto')
 [B, I] = sort(A, 'MissingPlacement', 'first')
 [B, I] = sort(A, 'MissingPlacement', 'last')
+
 ```
 
 ## See also
 
-[issorted](issorted.md), [unique](unique.md).
+[issorted](../data_analysis/issorted.md), [unique](../data_analysis/unique.md).
 
 ## History
 

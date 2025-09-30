@@ -18,8 +18,8 @@ Copy variable from Nelson engine workspace
 
 ## Description
 
-  <p>Copy variable from Nelson engine workspace.</p>
-  <p>The limit for the size of data transferred is 2048 MB.</p>
+<p>Copy variable from Nelson engine workspace.</p>
+<p>The limit for the size of data transferred is 2048 MB.</p>
 
 ## Example
 
@@ -29,7 +29,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## See also
 
-[mex](mex.md), [engPutVariable](engPutVariable.md).
+[mex](../mex/mex.md), [engPutVariable](../mex/engPutVariable.md).
 
 ## History
 

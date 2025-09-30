@@ -17,7 +17,8 @@ Pink colormap array.
 
 ## Description
 
-  <p><b>pink</b> returns the colormap with pink colors.</p>
+<p>
+            <b>pink</b> returns the colormap with pink colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('pink');
 ```
 
-<img src="turbo_AC999B8.svg" align="middle"/>
+<img src="turbo.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

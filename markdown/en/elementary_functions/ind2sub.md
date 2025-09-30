@@ -20,7 +20,8 @@ Linear index to matrix subscript values
 
 ## Description
 
-  <p><b>ind2sub</b> converts linear indices to subscript.</p>
+<p>
+            <b>ind2sub</b> converts linear indices to subscript.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ sz = [4 4];
 
 ## See also
 
-[sub2ind](sub2ind.md).
+[sub2ind](../elementary_functions/sub2ind.md).
 
 ## History
 

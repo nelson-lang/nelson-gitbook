@@ -11,7 +11,7 @@ Internal function to convert xml document files to html.
 - source_dirs - a cell of string: list of xml filenames.
 - destination_dir - a string: directory destination.
 - main_title - a string: title of main index.
-- export_format - a string: 'qt' or 'html'.
+- export_format - a string: 'qt', 'html', 'web', 'md'.
 - overwrite - a logical: force overwrite if file destination already exists
 
 ## Output argument
@@ -20,18 +20,20 @@ Internal function to convert xml document files to html.
 
 ## Description
 
-  <p><b>xmldocbuild</b> convert xml document files to html.</p>
-  <p>internal function</p>
+<p>
+            <b>xmldocbuild</b> convert xml document files to html.</p>
+<p>internal function</p>
 
 ## See also
 
-[buildhelp](buildhelp.md), [buildhelpweb](buildhelpweb.md).
+[buildhelp](../help_tools/buildhelp.md), [buildhelpweb](../help_tools/buildhelpweb.md).
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                  |
+| ------- | ---------------------------- |
+| 1.0.0   | initial version              |
+| 1.15.0  | 'web' input parameter added. |
 
 ## Author
 

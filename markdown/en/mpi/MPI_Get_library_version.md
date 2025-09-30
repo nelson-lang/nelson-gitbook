@@ -12,15 +12,12 @@ Return the version number of MPI library.
 
 ## Description
 
-  <p>This function returns the version number of MPI library.</p>
-
-## See also
-
-[MPI_Get_version](MPI_Get_version.md).
+<p>This function returns the version number of MPI library.</p>
 
 ## Example
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -28,7 +25,12 @@ name = MPI_Get_library_version()
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Get_version](../mpi/MPI_Get_version.md).
 
 ## History
 

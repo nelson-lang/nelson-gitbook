@@ -12,17 +12,17 @@ Returns the list of directories where the engine searches for installed modules 
 
 ## Description
 
-  <p>Returns the list of directories where the engine searches for installed modules in a URL-based directory structure.</p>
-
-## See also
-
-[qml_addimportpathlist](qml_addimportpathlist.html).
+<p>Returns the list of directories where the engine searches for installed modules in a URL-based directory structure.</p>
 
 ## Example
 
 ```matlab
 qml_importpathlist()
 ```
+
+## See also
+
+[qml_addimportpathlist](../qml_engine/qml_addimportpathlist.md).
 
 ## History
 

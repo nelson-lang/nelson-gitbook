@@ -18,7 +18,12 @@ Hamming window.
 
 ## Description
 
-  <p><b>c = hamming(m)</b> computes coefficients of a Hamming window of length <b>m</b>.</p>
+<p>
+            <b>c = hamming(m)</b> computes coefficients of a Hamming window of length <b>m</b>.</p>
+
+## Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
 
 ## Example
 
@@ -27,13 +32,9 @@ c = hamming(8)
 c = hamming(8, 'periodic')
 ```
 
-Bibliography
-
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
-
 ## See also
 
-[hann](hann.md), [blackman](blackman.md).
+[hann](../signal_processing/hann.md), [blackman](../signal_processing/blackman.md).
 
 ## History
 

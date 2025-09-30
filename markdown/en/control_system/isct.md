@@ -16,7 +16,7 @@ Checks if dynamic system model is in continuous time.
 
 ## Description
 
-  <p>Checks if dynamic system model is in continuous time.</p>
+<p>Checks if dynamic system model is in continuous time.</p>
 
 ## Example
 
@@ -33,7 +33,7 @@ isct(sys2)
 
 ## See also
 
-[isdt](isdt.md).
+[isdt](../control_system/isdt.md).
 
 ## History
 

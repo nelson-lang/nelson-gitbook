@@ -15,7 +15,8 @@ Checks that value is not sparse.
 
 ## Description
 
-  <p><b>mustBeNonSparse</b> checks that value is not sparse or raise an error.</p>
+<p>
+            <b>mustBeNonSparse</b> checks that value is not sparse or raise an error.</p>
 
 ## Example
 
@@ -23,6 +24,7 @@ Checks that value is not sparse.
 mustBeNonSparse(1)
 mustBeNonSparse([])
 mustBeNonSparse(sparse(3))
+
 ```
 
 ## See also

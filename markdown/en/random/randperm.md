@@ -4,11 +4,12 @@ Random permutation of integers values.
 
 ## Syntax
 
-- p = randperm(n)
+- p = randperm(n, k)
 
 ## Input argument
 
 - n - Number of integers in sample interval (positive integer).
+- k - Number of integers to select (positive integer).
 
 ## Output argument
 
@@ -16,7 +17,8 @@ Random permutation of integers values.
 
 ## Description
 
-  <p><b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.</p>
+<p>
+            <b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.</p>
 
 ## Example
 
@@ -26,13 +28,14 @@ randperm(7)
 
 ## See also
 
-[rand](rand.md).
+[rand](../random/rand.md).
 
 ## History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | Description                                                |
+| ------- | ---------------------------------------------------------- |
+| 1.0.0   | initial version                                            |
+| 1.15.0  | add second input argument for number of elements to select |
 
 ## Author
 

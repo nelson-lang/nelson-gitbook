@@ -17,10 +17,11 @@ Parallel connection of two models.
 
 ## Description
 
-  <p><b>parallel</b> function links two model objects in parallel.</p>
-  <p>It is versatile and can accept various types of models.</p>
-  <p>However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times.</p>
-  <p>Static gains are treated as neutral and can be defined using regular matrices.</p>
+<p>
+            <b>parallel</b> function links two model objects in parallel.</p>
+<p>It is versatile and can accept various types of models.</p>
+<p>However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times.</p>
+<p>Static gains are treated as neutral and can be defined using regular matrices.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ sys = parallel(sys2, sys2)
 
 ## See also
 
-[series](series.md), [append](append.md).
+[series](../control_system/series.md), [append](../control_system/append.md).
 
 ## History
 

@@ -1,10 +1,8 @@
 # Display format
 
-Display format
-
-## Description
-
 output display format functions
+
+## Functions
 
 - [disp](disp.md) - Display a variable.
 - [display](display.md) - Show information about variable or result of expression.

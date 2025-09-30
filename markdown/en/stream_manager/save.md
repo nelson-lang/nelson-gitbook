@@ -23,7 +23,8 @@ save workspace variables to .nh5 or .mat file
 
 ## Description
 
-  <p><b>save</b> save workspace variables to .nh5 or .mat file.</p>
+<p>
+            <b>save</b> save workspace variables to .nh5 or .mat file.</p>
 
 ## Examples
 
@@ -42,6 +43,7 @@ load([tempdir(), 'example_load.mat']);
 who
 A
 B
+
 ```
 
 append variables
@@ -62,6 +64,7 @@ who
 A
 B
 C
+
 ```
 
 compression
@@ -76,7 +79,7 @@ no_compression = dir([tempdir(), 'example_save_no_compression.mat'])
 
 ## See also
 
-[load](load.md), [savenh5](../hdf5/savenh5.md), [savemat](../matio/savemat.md).
+[load](../stream_manager/load.md), [savenh5](../hdf5/savenh5.md), [savemat](../matio/savemat.md).
 
 ## History
 

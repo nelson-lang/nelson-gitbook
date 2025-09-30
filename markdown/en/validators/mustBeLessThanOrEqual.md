@@ -16,7 +16,8 @@ Checks that value is less than or equal to another value or issue error.
 
 ## Description
 
-  <p><b>mustBeLessThanOrEqual</b> checks that value is less than or equal to another value or issue error.</p>
+<p>
+            <b>mustBeLessThanOrEqual</b> checks that value is less than or equal to another value or issue error.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeLessThanOrEqual([2 3 4],2)
 
 ## See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
 ## History
 

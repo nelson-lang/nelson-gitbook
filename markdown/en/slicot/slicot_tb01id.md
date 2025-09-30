@@ -25,15 +25,15 @@ Balancing a system matrix corresponding to a triplet (A, B, C).
 
 ## Description
 
-  <p>To reduce the 1-norm of a system matrix corresponding to the triple (A,B,C), by balancing.</p>
+<p>To reduce the 1-norm of a system matrix corresponding to the triple (A,B,C), by balancing.</p>
 
-Used function(s)
-
-TB01ID
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/TB01ID.html
+
+## Used function(s)
+
+TB01ID
 
 ## Example
 

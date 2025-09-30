@@ -16,7 +16,7 @@ Inverse hyperbolic cotangent.
 
 ## Description
 
-<b>acoth</b> computes the inverse hyperbolic cotangent.
+<b>acoth</b>computes the inverse hyperbolic cotangent.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = acoth(A)
 
 ## See also
 
-[coth](coth.html).
+[coth](../trigonometric/coth.md).
 
 ## History
 

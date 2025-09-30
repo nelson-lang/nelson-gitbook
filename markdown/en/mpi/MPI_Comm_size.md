@@ -16,11 +16,7 @@ Determines the size of the group associated with a communicator.
 
 ## Description
 
-  <p>Determines the size of the group associated with a communicator.</p>
-
-## See also
-
-[MPI_Comm_rank](MPI_Comm_rank.md).
+<p>Determines the size of the group associated with a communicator.</p>
 
 ## Example
 
@@ -50,7 +46,12 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Comm_rank](../mpi/MPI_Comm_rank.md).
 
 ## History
 

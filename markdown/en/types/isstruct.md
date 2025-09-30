@@ -16,7 +16,7 @@ Return true if variable var is a structure.
 
 ## Description
 
-<b>isstruct</b> returns a logical 1 if the argument is a struct (structure) and a logical 0 otherwise.
+<b>isstruct</b>returns a logical 1 if the argument is a struct (structure) and a logical 0 otherwise.
 
 ## Examples
 
@@ -38,7 +38,7 @@ res = isstruct(C)
 
 ## See also
 
-[isa](isa.md), [struct](struct.html).
+[isa](../types/isa.md), [struct](../integer/struct.md).
 
 ## History
 

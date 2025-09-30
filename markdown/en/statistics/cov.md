@@ -16,7 +16,8 @@ Covariance
 
 ## Description
 
-  <p><b>C = cov(M)</b> returns the covariance.</p>
+<p>
+            <b>C = cov(M)</b> returns the covariance.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ C = cov(M)
 
 ## See also
 
-[var](var.md), [mean](mean.md).
+[var](../statistics/var.md), [mean](../statistics/mean.md).
 
 ## History
 

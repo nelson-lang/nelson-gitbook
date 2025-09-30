@@ -19,11 +19,12 @@ checks if string contains with pattern.
 
 ## Description
 
-<b>contains</b> returns <b>true</b> if <b>str</b> contains <b>pattern</b>.
+<b>contains</b>returns<b>true</b>if<b>str</b>contains<b>pattern</b>.
 
 ## Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = contains (str, 'hill')
 k = contains (str, 'molehill')
@@ -34,11 +35,13 @@ k = contains(A, 'son')
 
 A = ["Nel", "son"; "Nelson", "Modules"]
 k = contains(A, 'son')
+
+
 ```
 
 ## See also
 
-[startsWith](startsWith.md), [endsWith](endsWith.md).
+[startsWith](../string/startsWith.md), [endsWith](../string/endsWith.md).
 
 ## History
 

@@ -1,10 +1,8 @@
 # SIO client
 
-SIO client
-
-## Description
-
 Nelson in the cloud
+
+## Functions
 
 - [doc](doc.md) - Displays documentation.
 - [sioemit](sioemit.md) - Emit an event to web client.

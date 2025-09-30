@@ -21,22 +21,19 @@ Discrete-time / continuous-time systems conversion by a bilinear transformation.
 - B_OUT - N-by-M part of this array contains the input matrix \_B of the transformed system.
 - C_OUT - the leading P-by-N part of this array contains the output matrix \_C of the transformed system.
 - D_OUT - P-by-M part of this array contains the input/output matrix \_D of the transformed system.
-- INFO - Error Indicator: = 0: successful exit;
-  less than 0: if INFO = -i, the i-th argument had an illegal value;
-  = 1: if the matrix (ALPHA*I + A) is exactly singular;
-  = 2: if the matrix (BETA*I - A) is exactly singular.
+- INFO - Error Indicator: = 0: successful exit; less than 0: if INFO = -i, the i-th argument had an illegal value; = 1: if the matrix (ALPHA*I + A) is exactly singular; = 2: if the matrix (BETA*I - A) is exactly singular.
 
 ## Description
 
-  <p> To perform a transformation on the parameters (A, B, C, D) of a system, which is equivalent to a bilinear transformation of the corresponding transfer function matrix.</p>
+<p> To perform a transformation on the parameters (A, B, C, D) of a system, which is equivalent to a bilinear transformation of the corresponding transfer function matrix.</p>
 
-Used function(s)
-
-AB04MD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/AB04MD.html
+
+## Used function(s)
+
+AB04MD
 
 ## Example
 

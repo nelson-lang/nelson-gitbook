@@ -27,15 +27,15 @@ Reduction of a real Schur form matrix to a block-diagonal form.
 
 ## Description
 
-  <p>To reduce a matrix A in real Schur form to a block-diagonal form using well-conditioned non-orthogonal similarity transformations. The condition numbers of the transformations used for reduction are roughly bounded by PMAX*PMAX, where PMAX is a given value. The transformations are optionally postmultiplied in a given matrix X. The real Schur form is optionally ordered, so that clustered eigenvalues are grouped in the same block.</p>
+<p>To reduce a matrix A in real Schur form to a block-diagonal form using well-conditioned non-orthogonal similarity transformations. The condition numbers of the transformations used for reduction are roughly bounded by PMAX*PMAX, where PMAX is a given value. The transformations are optionally postmultiplied in a given matrix X. The real Schur form is optionally ordered, so that clustered eigenvalues are grouped in the same block.</p>
 
-Used function(s)
-
-MB03RD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB03RD.html
+
+## Used function(s)
+
+MB03RD
 
 ## Example
 

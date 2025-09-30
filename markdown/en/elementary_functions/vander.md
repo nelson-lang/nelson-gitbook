@@ -16,9 +16,10 @@ Vandermonde matrix
 
 ## Description
 
-  <p><b>A = vander(v)</b> returns the Vandermonde Matrix.</p>
+<p>
+            <b>A = vander(v)</b> returns the Vandermonde Matrix.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/Vandermonde_matrix
 
@@ -30,7 +31,7 @@ A = vander(1:.5:3)
 
 ## See also
 
-[toeplitz](toeplitz.md).
+[toeplitz](../elementary_functions/toeplitz.md).
 
 ## History
 

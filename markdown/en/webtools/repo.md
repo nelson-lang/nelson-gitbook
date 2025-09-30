@@ -38,20 +38,20 @@ Git repository tool for Nelson
 
 ## Description
 
-  <p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
-  <p>checkout command will be forced and remove untracked filed.</p>
-  <p>git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.</p>
-  <p>report('export', ...) clone and remove .git directory.</p>
-  <p/>
-  <p>Tips:</p>
-  <p/>
-  <p>If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.</p>
-  <p>You don't have some  ssh or https redirection.</p>
-  <p>Remove entries:</p>
-  <p>[url "git@github.com:"]</p>
-  <p>  insteadOf = https://github.com/</p>
+<p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
+<p>checkout command will be forced and remove untracked filed.</p>
+<p>git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.</p>
+<p>report('export', ...) clone and remove .git directory.</p>
+<p></p>
+<p>Tips:</p>
+<p></p>
+<p>If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.</p>
+<p>You don't have some  ssh or https redirection.</p>
+<p>Remove entries:</p>
+<p>[url "git@github.com:"]</p>
+<p>  insteadOf = https://github.com/</p>
 
-Used function(s)
+## Used function(s)
 
 libgit2 (https://libgit2.org/)
 
@@ -69,11 +69,12 @@ repo('tag', destination)
 repo('branch', destination)
 repo('current_branch', destination)
 repo('log', destination)
+
 ```
 
 ## See also
 
-[webread](webread.md).
+[webread](../webtools/webread.md).
 
 ## History
 

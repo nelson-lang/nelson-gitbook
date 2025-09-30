@@ -16,7 +16,8 @@ Creates a cell from a structure.
 
 ## Description
 
-  <p><b>ce = struct2cell(st)</b> returns a new cell from the structure.</p>
+<p>
+            <b>ce = struct2cell(st)</b> returns a new cell from the structure.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ ce = struct2cell(st)
 
 ## See also
 
-[cell](cell.md), [struct](struct.md), [fieldnames](fieldnames.md).
+[cell](../data_structures/cell.md), [struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## History
 

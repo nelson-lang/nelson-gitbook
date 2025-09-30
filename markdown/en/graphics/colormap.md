@@ -20,7 +20,8 @@ View and set current colormap.
 
 ## Description
 
-  <p><b>colormap</b>allows to view and set the colormap used into a plot.</p>
+<p>
+            <b>colormap</b>allows to view and set the colormap used into a plot.</p>
 
 ## Examples
 
@@ -31,9 +32,10 @@ y = x';
 Z = exp(-(x .^ 2 + y .^ 2) / 0.4);
 imagesc(Z);
 colormap('summer')
+
 ```
 
-<img src="colormap_1_25A945C4.svg" align="middle"/>
+<img src="colormap_1.svg" align="middle"/>
 
 ```matlab
 f = figure()
@@ -44,7 +46,7 @@ imagesc(Z);
 colormap('gray')
 ```
 
-<img src="colormap_2_ED1A05C7.svg" align="middle"/>
+<img src="colormap_2.svg" align="middle"/>
 
 ```matlab
 f = figure()
@@ -62,11 +64,11 @@ map = [0 0 0.3;
 colormap(map)
 ```
 
-<img src="colormap_3_3B877120.svg" align="middle"/>
+<img src="colormap_3.svg" align="middle"/>
 
 ## See also
 
-[rgbplot](rgbplot.md).
+[rgbplot](../graphics/rgbplot.md).
 
 ## History
 

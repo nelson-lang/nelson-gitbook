@@ -10,6 +10,8 @@
   - [searchenv](searchenv.md)
   - [setenv](setenv.md)
   - [system](system.md)
+  - [dos](system.md)
+  - [unix](system.md)
   - [username](username.md)
   - [winopen](winopen.md)
   - [winqueryreg](winqueryreg.md)

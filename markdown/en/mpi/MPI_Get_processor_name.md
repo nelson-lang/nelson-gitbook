@@ -14,15 +14,12 @@ Gets the name of the processor.
 
 ## Description
 
-  <p>This function get the name of the processor that is using MPI.</p>
-
-## See also
-
-[MPI_Init](MPI_Init.md).
+<p>This function get the name of the processor that is using MPI.</p>
 
 ## Example
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -30,7 +27,12 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Init](../mpi/MPI_Init.md).
 
 ## History
 

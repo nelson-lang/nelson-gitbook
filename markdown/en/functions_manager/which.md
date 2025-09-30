@@ -21,7 +21,8 @@ Locates functions and built-in.
 
 ## Description
 
-  <p><b>which</b> returns the path of a function or a built-in.</p>
+<p>
+            <b>which</b> returns the path of a function or a built-in.</p>
 
 ## Example
 
@@ -30,11 +31,12 @@ which('cos')
 p = which('cos')
 c = which('cos', '-all')
 m = which('cos', '-module')
+
 ```
 
 ## See also
 
-[what](what.md).
+[what](../functions_manager/what.md).
 
 ## History
 

@@ -16,11 +16,12 @@ Find all charset matches that appear to be consistent with the input
 
 ## Description
 
-  <p><b>nativecharset</b> find all charset matches that appear to be consistent with the input, returning a cell of string with results.</p>
-  <p>The results are ordered with the best quality match first.</p>
-  <p>List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
+<p>
+            <b>nativecharset</b> find all charset matches that appear to be consistent with the input, returning a cell of string with results.</p>
+<p>The results are ordered with the best quality match first.</p>
+<p>List of characters set: https://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
 
-Bibliography
+## Bibliography
 
 ICU library
 
@@ -33,7 +34,7 @@ nativecharset(R)
 
 ## See also
 
-[unicode2native](unicode2native.md), [char](../string/char.md).
+[unicode2native](../characters_encoding/unicode2native.md), [char](../string/char.md).
 
 ## History
 

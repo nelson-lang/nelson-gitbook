@@ -12,8 +12,9 @@ Suspend code execution.
 
 ## Description
 
-  <p><b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.</p>
-  <p> CTRL-C interruption stops <b>sleep</b>.</p>
+<p>
+            <b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.</p>
+<p> CTRL-C interruption stops <b>sleep</b>.</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ tic();sleep(0.01);toc()
 
 ## See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
 ## History
 

@@ -17,11 +17,11 @@ Return true if property of handle object.
 
 ## Description
 
-<b>isprop</b> returns a logical 1 if the argument is a valid handle with property name and a logical 0 otherwise.
+<b>isprop</b>returns a logical 1 if the argument is a valid handle with property name and a logical 0 otherwise.
 
 ## See also
 
-[isprop](isprop.md), [properties](properties.md).
+[isprop](../handle/isprop.md), [properties](../handle/properties.md).
 
 ## History
 

@@ -20,7 +20,7 @@ Transforms Cartesian to spherical coordinates.
 
 ## Description
 
-<b>cart2sph</b> transforms Cartesian to spherical coordinates.
+<b>cart2sph</b>transforms Cartesian to spherical coordinates.
 
 ## Example
 
@@ -33,7 +33,7 @@ z = [1 -1 1 -1; 1 -1 1 -1];
 
 ## See also
 
-[sph2cart](sph2cart.md).
+[sph2cart](../trigonometric_functions/sph2cart.md).
 
 ## History
 

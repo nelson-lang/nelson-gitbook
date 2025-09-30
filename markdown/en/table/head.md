@@ -18,9 +18,12 @@ Get top rows of table or array.
 
 ## Description
 
-  <p><b>head(A)</b> displays the first eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.</p>
-  <p><b>head(A, k)</b> displays the first k rows of A.</p>
-  <p><b>B = head(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.</p>
+<p>
+            <b>head(A)</b> displays the first eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.</p>
+<p>
+                <b>head(A, k)</b> displays the first k rows of A.</p>
+<p>
+                    <b>B = head(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.</p>
 
 ## Examples
 
@@ -42,7 +45,7 @@ head(A)
 
 ## See also
 
-[tail](tail.md), [table](table.md).
+[tail](../table/tail.md), [table](../table/table.md).
 
 ## History
 

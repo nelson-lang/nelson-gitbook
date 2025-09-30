@@ -16,7 +16,8 @@ Sinc function.
 
 ## Description
 
-  <p><b>c = sinc(m)</b> returns an array <b>c</b> whose elements are the sinc of the elements of the input: <b>m</b>.</p>
+<p>
+            <b>c = sinc(m)</b> returns an array <b>c</b> whose elements are the sinc of the elements of the input: <b>m</b>.</p>
 
 ## Example
 

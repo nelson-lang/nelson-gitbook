@@ -12,13 +12,13 @@ Writes HDF5 attribute.
 - filename - a string: hdf5 filename.
 - location - a string: full path identifying a group or variable.
 - attname - a string: name of an attribute.
-- attvalue - a value: supported types: double, uint64, uint32, uint16, uint8
-  single, int64, int32, int16, or int8.
+- attvalue - a value: supported types: double, uint64, uint32, uint16, uint8 single, int64, int32, int16, or int8.
 - encoding - a string: 'system' or 'UTF-8' ('UTF-8' default).
 
 ## Description
 
-  <p><b>h5writeatt</b> writes attribute named <b>attname</b> with the value <b>attvalue</b> to the HDF5 file.</p>
+<p>
+            <b>h5writeatt</b> writes attribute named <b>attname</b> with the value <b>attvalue</b> to the HDF5 file.</p>
 
 ## Example
 
@@ -29,7 +29,7 @@ h5writeatt([tempdir(), 'myfile.h5'],'/','creation_date', '26-Dec-2018 16:55:32')
 
 ## See also
 
-[h5readatt](h5readatt.md).
+[h5readatt](../hdf5/h5readatt.md).
 
 ## History
 

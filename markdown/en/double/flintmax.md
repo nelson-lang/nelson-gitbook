@@ -19,7 +19,8 @@ Largest consecutive integer in floating-point format.
 
 ## Description
 
-  <p><b>flintmax</b> returns largest consecutive integer in floating-point format.</p>
+<p>
+            <b>flintmax</b> returns largest consecutive integer in floating-point format.</p>
 
 ## Example
 

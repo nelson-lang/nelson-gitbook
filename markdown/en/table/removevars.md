@@ -17,9 +17,10 @@ Delete variables from table.
 
 ## Description
 
-  <p><b>TB = removevars(TA, varsNames)</b> removes the variables specified by <b>varsNames</b> from the table <b>TA</b> and stores the remaining variables in <b>T2</b>.</p>
-  <p>You can specify the variables by name, position, or using logical indices.</p>
-  <p>You can also remove variables from a table using <b>T(:, varsNames) = []</b>.</p>
+<p>
+            <b>TB = removevars(TA, varsNames)</b> removes the variables specified by <b>varsNames</b> from the table <b>TA</b> and stores the remaining variables in <b>T2</b>.</p>
+<p>You can specify the variables by name, position, or using logical indices.</p>
+<p>You can also remove variables from a table using <b>T(:, varsNames) = []</b>.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
 % Convert the cell array to a table
 T1 = cell2table(C)
 T2 = removevars(T1, 'C2')
+
 ```
 
 ## See also
 
-[table](table.md), [renamevars](renamevars.md).
+[table](../table/table.md), [renamevars](../table/renamevars.md).
 
 ## History
 

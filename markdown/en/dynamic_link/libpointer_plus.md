@@ -14,12 +14,8 @@ plus operator on libpointer handle.
 
 ## Description
 
-  <p>plus operator on libpointer handle.</p>
-  <p>ouptut libpointer is valid only as long as the original input libpointer exists.</p>
-
-## See also
-
-[libpointer](libpointer.md).
+<p>plus operator on libpointer handle.</p>
+<p>ouptut libpointer is valid only as long as the original input libpointer exists.</p>
 
 ## Example
 
@@ -30,6 +26,10 @@ y = xPtr + 2;
 y.reshape(1, 3);
 y.Value
 ```
+
+## See also
+
+[libpointer](../dynamic_link/libpointer.md).
 
 ## History
 

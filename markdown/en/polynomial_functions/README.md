@@ -1,10 +1,8 @@
 # Polynomials
 
-Polynomials
-
-## Description
-
 Polynomial functions
+
+## Functions
 
 - [deconv](deconv.md) - Deconvolution and polynomial division.
 - [poly](poly.md) - Polynomial with specified roots or characteristic polynomial.

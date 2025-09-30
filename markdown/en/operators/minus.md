@@ -18,7 +18,8 @@ Subtraction, - operator
 
 ## Description
 
-  <p><b>C = minus(A, B)</b> performs subtraction A - B variables.</p>
+<p>
+            <b>C = minus(A, B)</b> performs subtraction A - B variables.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ ones(0, 0) - 1
 
 ## See also
 
-[plus](plus.md), [uminus](uminus.md).
+[plus](../operators/plus.md), [uminus](../operators/uminus.md).
 
 ## History
 

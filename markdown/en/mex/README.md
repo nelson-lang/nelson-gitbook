@@ -1,10 +1,8 @@
 # MEX functions
 
-MEX functions
-
-## Description
-
 MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality.
+
+## Functions
 
 - [dlgeneratemexgateway](dlgeneratemexgateway.md) - Generates C MEX gateway (internal function).
 - [engClose](engClose.md) - Close Nelson engine session

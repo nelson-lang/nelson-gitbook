@@ -16,7 +16,8 @@ Check for finite entries.
 
 ## Description
 
-  <p><b>isfinite</b> returns a logical array which is true where elements of M are finite values.</p>
+<p>
+            <b>isfinite</b> returns a logical array which is true where elements of M are finite values.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ R = isfinite(X)
 
 ## See also
 
-[isnan](isnan.md), [isinf](isinf.md), [allfinite](allfinite.md).
+[isnan](../elementary_functions/isnan.md), [isinf](../elementary_functions/isinf.md), [allfinite](../elementary_functions/allfinite.md).
 
 ## History
 

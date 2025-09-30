@@ -16,9 +16,10 @@ Converts a numeric value to logical type.
 
 ## Description
 
-  <p><b>logical</b> converts a numeric value to logical type.</p>
-  <p>Nonzero value converted to true and zeros values converted to false.</p>
-  <p>Complex numbers returns an error.</p>
+<p>
+            <b>logical</b> converts a numeric value to logical type.</p>
+<p>Nonzero value converted to true and zeros values converted to false.</p>
+<p>Complex numbers returns an error.</p>
 
 ## Example
 

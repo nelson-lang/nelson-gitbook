@@ -16,7 +16,7 @@ Upper case conversion.
 
 ## Description
 
-<b>toupper</b> converts a string to upper case.
+<b>toupper</b>converts a string to upper case.
 
 ## Examples
 
@@ -30,7 +30,7 @@ upper(["NelSon", "is", "open"])
 
 ## See also
 
-[tolower](tolower.md).
+[tolower](../string/tolower.md).
 
 ## History
 

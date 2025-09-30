@@ -16,8 +16,9 @@ Number of key-value pairs in dictionary.
 
 ## Description
 
-  <p><b>n = numEntries(d)</b> retrieves the number of key-value pairs stored in the dictionary.</p>
-  <p>If d is an unconfigured dictionary, then numEntries returns 0.</p>
+<p>
+            <b>n = numEntries(d)</b> retrieves the number of key-value pairs stored in the dictionary.</p>
+<p>If d is an unconfigured dictionary, then numEntries returns 0.</p>
 
 ## Example
 
@@ -26,11 +27,12 @@ names = ["Biil" "John" "Yann"];
 wheels = [1 2 3];
 d = dictionary(wheels, names)
 n = numEntries(d)
+
 ```
 
 ## See also
 
-[dictionary](dictionary.md), [entries](entries.md), [keys](keys.md), [values](values.md).
+[dictionary](../dictionary/dictionary.md), [entries](../dictionary/entries.md), [keys](../dictionary/keys.md), [values](../dictionary/values.md).
 
 ## History
 

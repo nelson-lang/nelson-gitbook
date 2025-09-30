@@ -12,8 +12,9 @@ get current axes graphics object.
 
 ## Description
 
-  <p><b>ca = gca()</b> returns the current axes graphics object.</p>
-  <p>If there are no axes, <b>gca()</b> creates an axes and returns its graphics object.</p>
+<p>
+            <b>ca = gca()</b> returns the current axes graphics object.</p>
+<p>If there are no axes, <b>gca()</b> creates an axes and returns its graphics object.</p>
 
 ## Example
 
@@ -24,7 +25,7 @@ isgraphics(ax, 'axes')
 
 ## See also
 
-[isgraphics](isgraphics.md), [axes](axes.md).
+[isgraphics](../graphics/isgraphics.md), [axes](../graphics/axes.md).
 
 ## History
 

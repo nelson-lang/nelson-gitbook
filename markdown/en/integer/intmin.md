@@ -17,16 +17,17 @@ Return the smallest integer that can be represented in an integer type.
 
 ## Description
 
-  <p><b>imin = intmin(classname)</b>the smallest integer that can be represented in an integer type.</p>
-  <p>Supported values for the string <b>classname</b> are:</p>
-  <p>'int8'</p>
-  <p>'uint8'</p>
-  <p>'int16'</p>
-  <p>'uint16'</p>
-  <p>'int32'</p>
-  <p>'uint32'</p>
-  <p>'int64'</p>
-  <p>'uint64'</p>
+<p>
+            <b>imin = intmin(classname)</b>the smallest integer that can be represented in an integer type.</p>
+<p>Supported values for the string <b>classname</b> are:</p>
+<p>'int8'</p>
+<p>'uint8'</p>
+<p>'int16'</p>
+<p>'uint16'</p>
+<p>'int32'</p>
+<p>'uint32'</p>
+<p>'int64'</p>
+<p>'uint64'</p>
 
 ## Examples
 
@@ -42,7 +43,7 @@ res = class(C)
 
 ## See also
 
-[intmax](intmax.md), [class](class.html).
+[intmax](../integer/intmax.md), [class](../type/class.md).
 
 ## History
 

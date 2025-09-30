@@ -17,7 +17,7 @@ Strings comparaison (case insensitive).
 
 ## Description
 
-<b>strcmpi</b> compares two strings (case insensitive).
+<b>strcmpi</b>compares two strings (case insensitive).
 
 ## Example
 
@@ -31,11 +31,12 @@ C = {'C', 'Contents'; 'Nel', 'son'}
 strcmpi(A, B)
 strcmpi(A, C)
 strcmpi(C, 'C')
+
 ```
 
 ## See also
 
-[char](char.md), [strcmp](strcmp.md).
+[char](../string/char.md), [strcmp](../string/strcmp.md).
 
 ## History
 

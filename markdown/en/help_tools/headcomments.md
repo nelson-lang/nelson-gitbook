@@ -17,9 +17,10 @@ Display Nelson function header comments.
 
 ## Description
 
-  <p><b>head_comments</b> displays the function header comments.</p>
-  <p>Comments are read from the associated .m file.</p>
-  <p>Nelson predefined functions have no header comments.</p>
+<p>
+            <b>head_comments</b> displays the function header comments.</p>
+<p>Comments are read from the associated .m file.</p>
+<p>Nelson predefined functions have no header comments.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ Display Nelson function header comments.
 comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 ```
 
-<img src="headcomments_CC42D5D9.png" align="middle"/>
+<img src="headcomments.png" align="middle"/>
 
 ## See also
 
-[doc](../help_browser/doc.md), [markdown](markdown.md), [inserthtml](../gui/inserthtml.md), [which](which.html).
+[doc](../help_browser/doc.md), [markdown](../help_tools/markdown.md), [inserthtml](../gui/inserthtml.md), [which](../function_manager/which.md).
 
 ## History
 

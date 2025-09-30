@@ -16,11 +16,11 @@ Returns the methods name of an object handle.
 
 ## Description
 
-<b>methods</b> returns a cell of strings with methods name.
+<b>methods</b>returns a cell of strings with methods name.
 
 ## See also
 
-[isprop](isprop.md), [ismethod](ismethod.md).
+[isprop](../handle/isprop.md), [ismethod](../handle/ismethod.md).
 
 ## History
 

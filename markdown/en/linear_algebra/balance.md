@@ -22,10 +22,12 @@ Diagonal scaling to improve eigenvalue accuracy.
 
 ## Description
 
-  <p><b>B = balance(A)</b> returns the balanced matrix <b>B</b>.</p>
-  <p><b>B = balance(A, 'noperm')</b> scales <b>A</b> without permuting its rows and columns.</p>
+<p>
+            <b>B = balance(A)</b> returns the balanced matrix <b>B</b>.</p>
+<p>
+                <b>B = balance(A, 'noperm')</b> scales <b>A</b> without permuting its rows and columns.</p>
 
-Used function(s)
+## Used function(s)
 
 LAPACKE_dgebal, LAPACKE_sgebal, LAPACKE_zgebal, LAPACKE_cgebal
 
@@ -34,11 +36,12 @@ LAPACKE_dgebal, LAPACKE_sgebal, LAPACKE_zgebal, LAPACKE_cgebal
 ```matlab
 A = [10  1000  100000; .1  10  1000; .001  .1  10]
 F = balance(A)
+
 ```
 
 ## See also
 
-[eig](eig.md).
+[eig](../linear_algebra/eig.md).
 
 ## History
 

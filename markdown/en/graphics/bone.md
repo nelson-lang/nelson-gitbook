@@ -17,7 +17,8 @@ Bone colormap array.
 
 ## Description
 
-  <p><b>bone</b> returns the colormap with bone colors.</p>
+<p>
+            <b>bone</b> returns the colormap with bone colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('bone');
 ```
 
-<img src="bone_510FC629.svg" align="middle"/>
+<img src="bone.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

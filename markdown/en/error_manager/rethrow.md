@@ -12,22 +12,25 @@ rethrow error.
 
 ## Description
 
-  <p><b>rethrow(MException)</b> reissues the error specified by <b>MException</b>.</p>
+<p>
+            <b>rethrow(MException)</b> reissues the error specified by <b>MException</b>.</p>
 
 ## Example
 
 ```matlab
+
 try
   a
 catch ME
   disp(ME)
   rethrow(ME)
 end
+
 ```
 
 ## See also
 
-[MException](MException.md), [throw](throw.md).
+[MException](../error_manager/MException.md), [throw](../error_manager/throw.md).
 
 ## History
 

@@ -19,7 +19,8 @@ Ancestor of graphics object.
 
 ## Description
 
-  <p><b>ancestor</b> returns the handle of the specified object's ancestor of a given type.</p>
+<p>
+            <b>ancestor</b> returns the handle of the specified object's ancestor of a given type.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ R = ancestor(s, 'root')
 
 ## See also
 
-[gcf](gcf.md).
+[gcf](../graphics/gcf.md).
 
 ## History
 

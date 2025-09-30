@@ -14,12 +14,13 @@ Build help of Nelson's modules for website.
 
 ## Description
 
-  <p><b>buildhelpweb</b> generates help files for website.</p>
-  <p>internal function</p>
+<p>
+            <b>buildhelpweb</b> generates help files for website.</p>
+<p>internal function</p>
 
 ## See also
 
-[buildhelp](buildhelp.md).
+[buildhelp](../help_tools/buildhelp.md).
 
 ## History
 

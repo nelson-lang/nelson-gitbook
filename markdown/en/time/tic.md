@@ -13,8 +13,8 @@ Starts a stopwatch timer.
 
 ## Description
 
-  <p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
-  <p>Consecutive <b>tic</b> commands overwrite the tic timer.</p>
+<p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
+<p>Consecutive <b>tic</b> commands overwrite the tic timer.</p>
 
 ## Example
 
@@ -26,11 +26,12 @@ toc()
 tic()
 sleep(10)
 t = toc()
+
 ```
 
 ## See also
 
-[toc](toc.md), [sleep](sleep.md), [time](time.md).
+[toc](../time/toc.md), [sleep](../time/sleep.md), [time](../time/time.md).
 
 ## History
 

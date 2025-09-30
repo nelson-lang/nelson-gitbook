@@ -17,7 +17,8 @@ Continuous Lyapunov equation solution.
 
 ## Description
 
-  <p><b>X = lyap(A, Q)</b> resolves the Lyapunov equation.</p>
+<p>
+            <b>X = lyap(A, Q)</b> resolves the Lyapunov equation.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ X = lyap (A, Q)
 
 ## See also
 
-[dlyap](dlyap.md).
+[dlyap](../control_system/dlyap.md).
 
 ## History
 

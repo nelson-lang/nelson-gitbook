@@ -19,11 +19,12 @@ dissect floating-point numbers into base 2 exponent and mantissa.
 
 ## Description
 
-  <p><b>log2</b> dissects several numbers into the exponent and mantissa.</p>
-  <p>[F, E] = log2(M), any zeros in M produce F = 0 and E = 0.</p>
-  <p>Input values of Inf, -Inf, or NaN are returned unchanged in F with a corresponding exponent of E = 0.</p>
+<p>
+            <b>log2</b> dissects several numbers into the exponent and mantissa.</p>
+<p>[F, E] = log2(M), any zeros in M produce F = 0 and E = 0.</p>
+<p>Input values of Inf, -Inf, or NaN are returned unchanged in F with a corresponding exponent of E = 0.</p>
 
-Used function(s)
+## Used function(s)
 
 std::frexp and std::logb C++ functions
 
@@ -37,7 +38,7 @@ R = log2(x)
 
 ## See also
 
-[log](log.md), [log10](log10.md).
+[log](../elementary_functions/log.md), [log10](../elementary_functions/log10.md).
 
 ## History
 

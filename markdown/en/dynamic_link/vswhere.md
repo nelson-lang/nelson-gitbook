@@ -12,10 +12,12 @@ Locate Visual Studio 2017, 2019 and newer installations
 
 ## Description
 
-  <p><b>vswhere</b> allows to find easily Visual studio.</p>
-  <p><b>vswhere</b> is currently only implemented on Windows platform.</p>
+<p>
+            <b>vswhere</b> allows to find easily Visual studio.</p>
+<p>
+                <b>vswhere</b> is currently only implemented on Windows platform.</p>
 
-Bibliography
+## Bibliography
 
 https://github.com/Microsoft/vswhere
 
@@ -27,7 +29,7 @@ vswhere()
 
 ## See also
 
-[havecompiler](havecompiler.md), [Supported C/C++ compilers](2_supported_compilers.md).
+[havecompiler](../dynamic_link/havecompiler.md), [Supported C/C++ compilers](../dynamic_link/2_supported_compilers.md).
 
 ## History
 

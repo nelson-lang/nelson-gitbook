@@ -27,12 +27,14 @@ Open a file in Nelson.
 
 ## Description
 
-  <p><b>fopen</b> opens a file in Nelson.</p>
-  <p>functions fprintf, fgetl, fgets, fread, and fwrite use character encoding for subsequent read and write operations.</p>
+<p>
+            <b>fopen</b> opens a file in Nelson.</p>
+<p>functions fprintf, fgetl, fgets, fread, and fwrite use character encoding for subsequent read and write operations.</p>
 
 ## Examples
 
 ```matlab
+
 fid = fopen([tempdir(), filesep(), 'fopen_tst'], 'wt');
 [filename, permission] = fopen(fid)
 fids = fopen('all')
@@ -40,11 +42,13 @@ status = fclose(fd)
 [filename, permission] = fopen(stdin)
 [filename, permission] = fopen(stdout)
 [filename, permission] = fopen(stderr)
+
 ```
 
 characters encoding
 
 ```matlab
+
 TEXT_REF = 'Виртуальная';
 filename = [tempdir(), 'fwrite_example_Windows-1251.txt'];
 F = fopen(filename, 'wt', 'n', 'windows-1251');
@@ -57,7 +61,7 @@ fclose(F);
 
 ## See also
 
-[fclose](fclose.md), [feof](feof.md).
+[fclose](../stream_manager/fclose.md), [feof](../stream_manager/feof.md).
 
 ## History
 

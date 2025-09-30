@@ -21,9 +21,11 @@ Copy files or folder.
 
 ## Description
 
-  <p><b>copyfile(source , destination)</b> copies the file or directory , <b>source</b> (and subdirectories) to the file or directory, <b>destination</b>.</p>
-  <p>If <b>source</b> is a directory, <b>destination</b> can not be a file.</p>
-  <p><b>copyfile</b> replaces existing files without warning.</p>
+<p>
+            <b>copyfile(source , destination)</b> copies the file or directory , <b>source</b> (and subdirectories) to the file or directory, <b>destination</b>.</p>
+<p>If <b>source</b> is a directory, <b>destination</b> can not be a file.</p>
+<p>
+                <b>copyfile</b> replaces existing files without warning.</p>
 
 ## Example
 
@@ -34,7 +36,7 @@ copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 
 ## See also
 
-[isdir](isdir.md), [rmfile](rmfile.md).
+[isdir](../files_folders_functions/isdir.md), [rmfile](../files_folders_functions/rmfile.md).
 
 ## History
 

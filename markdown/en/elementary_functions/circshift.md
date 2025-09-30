@@ -19,7 +19,8 @@ Circular shift
 
 ## Description
 
-  <p><b>circshift</b> computes circular shift.</p>
+<p>
+            <b>circshift</b> computes circular shift.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ circshift (x, -2))
 
 ## See also
 
-[repmat](repmat.md), [reshape](reshape.md).
+[repmat](../elementary_functions/repmat.md), [reshape](../elementary_functions/reshape.md).
 
 ## History
 

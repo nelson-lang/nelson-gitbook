@@ -9,10 +9,7 @@ Retrieve image data from a movie frame.
 
 ## Input argument
 
-- F - a structure: Movie frame, represented as a structure with two fields:
-  cdata: An array of uint8 values storing the image data.
-  colormap: The colormap. This field is empty ([]) for truecolor (RGB) images.
-  A movie frame structure can be created using the im2frame and getframe functions.
+- F - a structure: Movie frame, represented as a structure with two fields: cdata: An array of uint8 values storing the image data. colormap: The colormap. This field is empty ([]) for truecolor (RGB) images. A movie frame structure can be created using the im2frame and getframe functions.
 
 ## Output argument
 
@@ -22,8 +19,10 @@ Retrieve image data from a movie frame.
 
 ## Description
 
-  <p><b>RGB = frame2im(F)</b> extracts the truecolor (RGB) image from the movie frame <b>F</b>.</p>
-  <p><b>[X, map] = frame2im(F)</b> retrieves the indexed image <b>X</b> and its corresponding colormap map from the movie frame <b>F</b>.</p>
+<p>
+            <b>RGB = frame2im(F)</b> extracts the truecolor (RGB) image from the movie frame <b>F</b>.</p>
+<p>
+                <b>[X, map] = frame2im(F)</b> retrieves the indexed image <b>X</b> and its corresponding colormap map from the movie frame <b>F</b>.</p>
 
 ## Example
 
@@ -38,7 +37,7 @@ imshow(RGB);
 
 ## See also
 
-[im2frame](im2frame.md).
+[im2frame](../graphics/im2frame.md).
 
 ## History
 

@@ -20,8 +20,9 @@ Create group object.
 
 ## Description
 
-  <p><b>hggroup</b> creates a hggroup object as a child of the current axes and returns its handle, h.</p>
-  <p>The <b>hggroup</b> object is used to group graphics objects, such as lines, patches, and text, so that they can be manipulated together.</p>
+<p>
+            <b>hggroup</b> creates a hggroup object as a child of the current axes and returns its handle, h.</p>
+<p>The <b>hggroup</b> object is used to group graphics objects, such as lines, patches, and text, so that they can be manipulated together.</p>
 
 ## Example
 
@@ -33,11 +34,12 @@ h = text(0.1, 0.1, 'tttt', 'Parent', g);
 h.Parent
 h.Visible
 h.Visible = 'off';
+
 ```
 
 ## See also
 
-[gca](gca.md).
+[gca](../graphics/gca.md).
 
 ## History
 

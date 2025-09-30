@@ -25,7 +25,8 @@ List variables in memory or in .nh5 or in .mat file with sizes and types.
 
 ## Description
 
-  <p><b>whos</b> displays current variable names in memory or in .nh5 or .mat file.</p>
+<p>
+            <b>whos</b> displays current variable names in memory or in .nh5 or .mat file.</p>
 
 ## Example
 
@@ -38,11 +39,12 @@ whos
 s = whos()
 save([tempdir(), 'example_who.nh5'], 'A', 'b')
 whos([tempdir(), 'example_who.nh5'])
+
 ```
 
 ## See also
 
-[what](../functions_manager/what.md), [clear](clear.md), [who](who.md).
+[what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
 ## History
 

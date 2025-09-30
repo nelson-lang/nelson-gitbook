@@ -26,7 +26,7 @@ Size of an object.
 
 ## Description
 
-  <p/>
+<p></p>
 
 ## Examples
 
@@ -45,7 +45,7 @@ size(cell(4,3))
 
 ## See also
 
-[length](length.md), [ndims](ndims.md).
+[length](../elementary_functions/length.md), [ndims](../elementary_functions/ndims.md).
 
 ## History
 

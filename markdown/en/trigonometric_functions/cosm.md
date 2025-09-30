@@ -16,7 +16,7 @@ Computes the matrix cosine of a square matrix.
 
 ## Description
 
-<b>cosm(x)</b> computes the matrix cosine of <b>x</b>.
+<b>cosm(x)</b>computes the matrix cosine of<b>x</b>.
 
 ## Example
 
@@ -29,7 +29,7 @@ res = cosm(A)
 
 ## See also
 
-[cos](cos.md).
+[cos](../trigonometric_functions/cos.md).
 
 ## History
 

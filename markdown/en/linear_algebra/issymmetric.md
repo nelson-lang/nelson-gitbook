@@ -20,9 +20,10 @@ Computes if matrix is symmetric.
 
 ## Description
 
-  <p><b>issymmetric(x)</b> computes if matrix is symmetric.</p>
-  <p>With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'</p>
-  <p>With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'</p>
+<p>
+            <b>issymmetric(x)</b> computes if matrix is symmetric.</p>
+<p>With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'</p>
+<p>With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'</p>
 
 ## Example
 
@@ -36,7 +37,7 @@ issymmetric(A, 'nonskew')
 
 ## See also
 
-[ishermitian](ishermitian.md).
+[ishermitian](../linear_algebra/ishermitian.md).
 
 ## History
 

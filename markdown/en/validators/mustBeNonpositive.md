@@ -15,7 +15,8 @@ Checks that value is non positive or raise an error.
 
 ## Description
 
-  <p><b>mustBeNonpositive</b> checks that value is non positive or raise an error.</p>
+<p>
+            <b>mustBeNonpositive</b> checks that value is non positive or raise an error.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ mustBeNonpositive(1)
 
 ## See also
 
-[mustBeNonnegative](mustBeNonnegative.md).
+[mustBeNonnegative](../validators/mustBeNonnegative.md).
 
 ## History
 

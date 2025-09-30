@@ -19,20 +19,26 @@ Close an opened file.
 
 ## Description
 
-  <p><b>fclose</b> must be used to close a file opened by <b>fopen</b>.</p>
-  <p><b>fclose('all')</b> closes all opened file with <b>fopen</b>.</p>
+<p>
+            <b>fclose</b> must be used to close a file opened by <b>fopen</b>.</p>
+<p>
+                <b>fclose('all')</b> closes all opened file with <b>fopen</b>.</p>
 
 ## Example
 
 ```matlab
+
+
 fd = fopen([tempdir(), filesep(), 'fclose_tst'],'wt');
 status = fclose(fd)
 status = fclose(fd)
+
+
 ```
 
 ## See also
 
-[fopen](fopen.md), [fread](fread.md), [feof](feof.md).
+[fopen](../stream_manager/fopen.md), [fread](../stream_manager/fread.md), [feof](../stream_manager/feof.md).
 
 ## History
 

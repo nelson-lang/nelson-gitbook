@@ -16,7 +16,8 @@ Checks if ax is a 2-D Polar or Cartesian axes.
 
 ## Description
 
-  <p><b>is2D</b> returns Checks if ax is a 2-D Polar or Cartesian axes.</p>
+<p>
+            <b>is2D</b> returns Checks if ax is a 2-D Polar or Cartesian axes.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ assert_isfalse(is2D(ax));
 
 ## See also
 
-[isgraphics](isgraphics.md).
+[isgraphics](../graphics/isgraphics.md).
 
 ## History
 

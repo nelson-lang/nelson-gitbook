@@ -15,17 +15,19 @@ call the embedded text editor.
 
 ## Description
 
-  <p><b>editor</b> opens an existing file in the nelson's editor.</p>
-  <p><b>editor</b> must be considered as internal and <b>edit</b> must be preferred.</p>
-  <p>Set another text editor as default: (example with VS code)</p>
-  <p>
-    <code>editor('editor_command', 'code')</code>
-  </p>
-  <p>To restore the default editor, use:</p>
-  <p>
-    <code>editor('editor_command', '')</code>
-  </p>
-  <p>Change text editor is persistent and will be saved in a configuration file.</p>
+<p>
+            <b>editor</b> opens an existing file in the nelson's editor.</p>
+<p>
+                <b>editor</b> must be considered as internal and <b>edit</b> must be preferred.</p>
+<p>Set another text editor as default: (example with VS code)</p>
+<p>
+                    editor('editor_command', 'code')
+                </p>
+<p>To restore the default editor, use:</p>
+<p>
+                    editor('editor_command', '')
+                </p>
+<p>Change text editor is persistent and will be saved in a configuration file.</p>
 
 ## Example
 
@@ -39,11 +41,12 @@ end
 edit('edit')
 % restore default editor
 editor('editor_command ', '')
+
 ```
 
 ## See also
 
-[edit](edit.md).
+[edit](../text_editor/edit.md).
 
 ## History
 

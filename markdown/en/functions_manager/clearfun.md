@@ -18,7 +18,8 @@ Clear an built-in function.
 
 ## Description
 
-  <p><b>clearfun</b> clears built-in.</p>
+<p>
+            <b>clearfun</b> clears built-in.</p>
 
 ## Example
 
@@ -30,11 +31,12 @@ cos(3)
 sin(3)
 b = clearfun(str2func('sin'))
 sin(3)
+
 ```
 
 ## See also
 
-[feval](feval.md).
+[feval](../functions_manager/feval.md).
 
 ## History
 

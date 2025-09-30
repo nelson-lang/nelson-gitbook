@@ -1,10 +1,8 @@
 # MATIO
 
-MATIO
-
-## Description
-
 MAT-File Read/Write I/O Functions
+
+## Functions
 
 - [ismatfile](ismatfile.md) - Checks if filename a valid .mat file
 - [loadmat](loadmat.md) - load data from .mat file into Nelson's workspace.

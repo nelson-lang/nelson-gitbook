@@ -16,7 +16,8 @@ Checks if matrix is lower triangular.
 
 ## Description
 
-  <p><b>istril</b> returns an scalar logical if entry is lower triangular.</p>
+<p>
+            <b>istril</b> returns an scalar logical if entry is lower triangular.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ R = istriu(A(:,1))
 
 ## See also
 
-[isdiag](isdiag.md), [istril](istril.md).
+[isdiag](../elementary_functions/isdiag.md), [istril](../elementary_functions/istril.md).
 
 ## History
 

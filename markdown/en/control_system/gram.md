@@ -23,11 +23,12 @@ Controllability and observability Gramians.
 sys = ss([-.1 -1;1 0], [1;0], [0 1], 0);
 wc = gram(sys, 'c')
 wc = gram(sys, 'o')
+
 ```
 
 ## See also
 
-[lyap](lyap.md), [dlyap](dlyap.md).
+[lyap](../control_system/lyap.md), [dlyap](../control_system/dlyap.md).
 
 ## History
 

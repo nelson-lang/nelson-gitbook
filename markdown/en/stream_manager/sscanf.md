@@ -25,7 +25,7 @@ Read formatted data from strings.
 
 ## Description
 
-  <p>Read formatted data from strings.</p>
+<p>Read formatted data from strings.</p>
 
 ## Example
 
@@ -36,7 +36,7 @@ R = sscanf(str,'%f',[2 2])
 
 ## See also
 
-[fscanf](fscanf.md), [sprintf](sprintf.html).
+[fscanf](../stream_manager/fscanf.md), [sprintf](../stream_manager/sprintf.md).
 
 ## History
 

@@ -21,7 +21,8 @@ Returns the path, filename and extension of a file path.
 
 ## Description
 
-  <p><b>[p ,f, e] = fileparts(fullpath)</b> splits in its three parts: path, filename, extension including the dot.</p>
+<p>
+            <b>[p ,f, e] = fileparts(fullpath)</b> splits in its three parts: path, filename, extension including the dot.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ e = fileparts([nelsonroot(), '/etc/finish.m'], 'extension')
 
 ## See also
 
-[isdir](isdir.md), [isfile](isfile.md), [pathsep](pathsep.md), [filesep](filesep.md).
+[isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md), [pathsep](../files_folders_functions/pathsep.md), [filesep](../files_folders_functions/filesep.md).
 
 ## History
 

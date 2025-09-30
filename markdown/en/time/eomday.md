@@ -17,7 +17,8 @@ Returns last day of month.
 
 ## Description
 
-  <p><b>E = eomday(Y, M)</b> returns the last day of the month <b>M</b> for the year <b>Y</b>.</p>
+<p>
+            <b>E = eomday(Y, M)</b> returns the last day of the month <b>M</b> for the year <b>Y</b>.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ eomday(1900, 1:12)
 
 ## See also
 
-[datenum](datenum.md), [weekday](weekday.md).
+[datenum](../time/datenum.md), [weekday](../time/weekday.md).
 
 ## History
 

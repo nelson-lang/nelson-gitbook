@@ -19,8 +19,9 @@ Evaluate system response over a grid of frequencies.
 
 ## Description
 
-  <p><b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>.</p>
-  <p>To acquire magnitude and phase data, along with visual representations of the frequency response, utilize the <b>bode</b> function.</p>
+<p>
+            <b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>.</p>
+<p>To acquire magnitude and phase data, along with visual representations of the frequency response, utilize the <b>bode</b> function.</p>
 
 ## Examples
 
@@ -44,13 +45,14 @@ subplot(2, 1, 2);
 plot(freq, angle(squeeze(resp)) * 180/pi);
 ylabel(_('Phase (degrees)'));
 xlabel(_('Frequency (Hz)'));
+
 ```
 
-<img src="freqresp_4C921271.svg" align="middle"/>
+<img src="freqresp.svg" align="middle"/>
 
 ## See also
 
-[bode](bode.md), [evalfr](evalfr.md).
+[bode](../control_system/bode.md), [evalfr](../control_system/evalfr.md).
 
 ## History
 

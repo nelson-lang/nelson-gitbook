@@ -19,11 +19,12 @@ nelson object callable from QML.
 
 ## Description
 
-  <p><b>nelson</b> object contains some methods used as callback to call nelson from QML</p>
+<p>
+            <b>nelson</b> object contains some methods used as callback to call nelson from QML</p>
 
 ## See also
 
-[qml_pluginpathlist](qml_pluginpathlist.md), [qml_addimportpath](qml_addimportpath.md).
+[qml_pluginpathlist](../qml_engine/qml_pluginpathlist.md), [qml_addimportpath](../qml_engine/qml_addimportpath.md).
 
 ## History
 

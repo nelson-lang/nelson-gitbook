@@ -29,7 +29,7 @@ Read Microsoft Excel spreadsheet file using COM.
 
 ## Description
 
-<description><b>COM_xlsread</b> read Microsoft Excel spreadsheet file using COM.</description>
+<b>COM_xlsread</b>read Microsoft Excel spreadsheet file using COM.
 
 ## Example
 
@@ -41,7 +41,7 @@ s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');
 
 ## See also
 
-[COM_xlswrite](COM_xlswrite.md).
+[COM_xlswrite](../com_engine/COM_xlswrite.md).
 
 ## History
 

@@ -18,7 +18,8 @@ Decompress zip file.
 
 ## Description
 
-  <p><b>unzip</b> extracts archived contents. Timestamps and attributes are preserved for each file.</p>
+<p>
+            <b>unzip</b> extracts archived contents. Timestamps and attributes are preserved for each file.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ r = unzip([tempdir(), 'test.zip'], [tempdir(), createGUID()])
 
 ## See also
 
-[zip](zip.md).
+[zip](../file_archiver/zip.md).
 
 ## History
 

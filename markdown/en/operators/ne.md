@@ -18,8 +18,10 @@ Inequality, ~= operator
 
 ## Description
 
-  <p><b>C = ne(A, B)</b> performs inequality operation: A ~= B variables.</p>
-  <p><b>ne</b> compares both real and imaginary parts of numeric arrays.</p>
+<p>
+            <b>C = ne(A, B)</b> performs inequality operation: A ~= B variables.</p>
+<p>
+                <b>ne</b> compares both real and imaginary parts of numeric arrays.</p>
 
 ## Example
 
@@ -30,7 +32,7 @@ ne(3, 4)
 
 ## See also
 
-[le](le.md), [ge](ge.md), [eq](eq.md).
+[le](../operators/le.md), [ge](../operators/ge.md), [eq](../operators/eq.md).
 
 ## History
 

@@ -22,7 +22,8 @@ Label x-axis.
 
 ## Description
 
-  <p><b>xlabel('text')</b> labels the x-axis of the current axes.</p>
+<p>
+            <b>xlabel('text')</b> labels the x-axis of the current axes.</p>
 
 ## Example
 
@@ -34,11 +35,11 @@ plot(x, y);
 xlabel('X axis Label - Unicode ドラゴンボールX(ゼット)')
 ```
 
-<img src="xlabel_79539F01.svg" align="middle"/>
+<img src="xlabel.svg" align="middle"/>
 
 ## See also
 
-[text](text.md), [title](title.md).
+[text](../graphics/text.md), [title](../graphics/title.md).
 
 ## History
 

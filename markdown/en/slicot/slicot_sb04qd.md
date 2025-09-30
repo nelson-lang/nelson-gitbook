@@ -22,15 +22,15 @@ Solution of discrete-time Sylvester equations (Hessenberg-Schur method).
 
 ## Description
 
-  <p>To solve for X the discrete-time Sylvester equation X + AXB = C, where A, B, C and X are general N-by-N, M-by-M, N-by-M and N-by-M matrices respectively. A Hessenberg-Schur method, which reduces A to upper Hessenberg form, H = U'AU, and B' to real Schur form, S = Z'B'Z (with U, Z orthogonal matrices), is used.</p>
+<p>To solve for X the discrete-time Sylvester equation X + AXB = C, where A, B, C and X are general N-by-N, M-by-M, N-by-M and N-by-M matrices respectively. A Hessenberg-Schur method, which reduces A to upper Hessenberg form, H = U'AU, and B' to real Schur form, S = Z'B'Z (with U, Z orthogonal matrices), is used.</p>
 
-Used function(s)
-
-SB04QD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB04QD.html
+
+## Used function(s)
+
+SB04QD
 
 ## Example
 

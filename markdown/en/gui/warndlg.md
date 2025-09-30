@@ -20,8 +20,10 @@ Creates a warning dialog box.
 
 ## Description
 
-  <p><b>errordlg</b> creates an warning dialog box.</p>
-  <p><b>h = warndlg(text_warning, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+<p>
+            <b>errordlg</b> creates an warning dialog box.</p>
+<p>
+                <b>h = warndlg(text_warning, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
 
 ## Examples
 
@@ -44,7 +46,7 @@ h = warndlg('help string', 'dialog title', 'on')
 
 ## See also
 
-[helpdlg](helpdlg.md), [errordlg](errordlg.md), [questdlg](questdlg.md), [msgbox](msgbox.md).
+[helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [msgbox](../gui/msgbox.md).
 
 ## History
 

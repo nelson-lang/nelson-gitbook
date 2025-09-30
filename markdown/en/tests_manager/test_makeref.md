@@ -16,12 +16,13 @@ Creates a '.ref' file for a test
 
 ## Description
 
-  <p><b>test_makeref</b> function creates a '.ref' file from a test file.</p>
-  <p>test file must have &lt;--CHECK REF--&gt; tag.</p>
+<p>
+            <b>test_makeref</b> function creates a '.ref' file from a test file.</p>
+<p>test file must have <--CHECK REF--> tag.</p>
 
 ## See also
 
-[test_run](test_run.md).
+[test_run](../tests_manager/test_run.md).
 
 ## History
 

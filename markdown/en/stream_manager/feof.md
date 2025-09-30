@@ -16,7 +16,8 @@ Checks end of file.
 
 ## Description
 
-  <p><b>feof</b> checks if end of file has been reached.</p>
+<p>
+            <b>feof</b> checks if end of file has been reached.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ fclose(fid);
 
 ## See also
 
-[fopen](fopen.md), [fgetl](fgetl.md).
+[fopen](../stream_manager/fopen.md), [fgetl](../stream_manager/fgetl.md).
 
 ## History
 

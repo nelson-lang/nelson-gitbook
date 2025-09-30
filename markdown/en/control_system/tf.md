@@ -22,10 +22,11 @@ Constructs a transfer function model.
 
 ## Description
 
-  <p><b>sys = tf(numerator, denominator)</b> is used to create a continuous-time transfer function model.</p>
-  <p>It is defined by specifying <b>numerator</b> and <b>denominator</b> of the transfer function.</p>
-  <p>When you include the <b>Ts</b> parameter, it allows you to create a discrete-time transfer function.</p>
-  <p>Setting <b>Ts</b> to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.</p>
+<p>
+            <b>sys = tf(numerator, denominator)</b> is used to create a continuous-time transfer function model.</p>
+<p>It is defined by specifying <b>numerator</b> and <b>denominator</b> of the transfer function.</p>
+<p>When you include the <b>Ts</b> parameter, it allows you to create a discrete-time transfer function.</p>
+<p>Setting <b>Ts</b> to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.</p>
 
 ## Examples
 
@@ -44,7 +45,7 @@ sys = tf(numerator, denominator, Ts)
 
 ## See also
 
-[ss](ss.md).
+[ss](../control_system/ss.md).
 
 ## History
 

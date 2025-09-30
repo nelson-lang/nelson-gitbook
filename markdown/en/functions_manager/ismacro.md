@@ -16,7 +16,8 @@ Check for the existence of a macro (function).
 
 ## Description
 
-  <p><b>isbuiltin</b> checks for the existence of a macro.</p>
+<p>
+            <b>isbuiltin</b> checks for the existence of a macro.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ ismacro('exist')
 
 ## See also
 
-[isbuiltin](isbuiltin.md).
+[isbuiltin](../functions_manager/isbuiltin.md).
 
 ## History
 

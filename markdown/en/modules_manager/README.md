@@ -1,10 +1,8 @@
 # Modules manager
 
-Modules manager
-
-## Description
-
 modules manager functions
+
+## Functions
 
 - [addgateway](addgateway.md) - Adds dynamically builtin at runtime.
 - [addmodule](addmodule.md) - Add module to Nelson.

@@ -16,7 +16,8 @@ Magic square
 
 ## Description
 
-  <p><b>M = magic(N)</b> computes an square matrix constructed as an arrangement of the 1:n^2 such that the row sums, column sums, and diagonal sums are all equal to the same value.</p>
+<p>
+            <b>M = magic(N)</b> computes an square matrix constructed as an arrangement of the 1:n^2 such that the row sums, column sums, and diagonal sums are all equal to the same value.</p>
 
 ## Example
 

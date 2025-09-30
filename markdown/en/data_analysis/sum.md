@@ -23,7 +23,8 @@ Sum of array elements.
 
 ## Description
 
-  <p><b>R = sum(M)</b> returns the sum of the array elements of M.</p>
+<p>
+            <b>R = sum(M)</b> returns the sum of the array elements of M.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ R = sum(M, 'native')
 
 ## See also
 
-[ndims](ndims.html), [prod](prod.md).
+[ndims](../data_analysis/ndims.md), [prod](../data_analysis/prod.md).
 
 ## History
 

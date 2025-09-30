@@ -17,7 +17,7 @@ Permute array dimensions.
 
 ## Description
 
-<b>permute</b> permutes the dimensions of an array.
+<b>permute</b>permutes the dimensions of an array.
 
 ## Example
 
@@ -28,7 +28,7 @@ y = permute(x,[3 1 2])
 
 ## See also
 
-[ipermute](ipermute.md), [reshape](reshape.md), [transpose](../operators/transpose.md).
+[ipermute](../elementary_functions/ipermute.md), [reshape](../elementary_functions/reshape.md), [transpose](../operators/transpose.md).
 
 ## History
 

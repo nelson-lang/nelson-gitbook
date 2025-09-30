@@ -16,7 +16,8 @@ Returns true is the input argument is a file.
 
 ## Description
 
-  <p><b>isfile(name)</b> returns <b>true</b> if <b>name</b> is a file.</p>
+<p>
+            <b>isfile(name)</b> returns <b>true</b> if <b>name</b> is a file.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ isfile([nelsonroot(), '/etc/finish.m'])
 
 ## See also
 
-[mkdir](mkdir.md), [isfolder](isfolder.md).
+[mkdir](../files_folders_functions/mkdir.md), [isfolder](../files_folders_functions/isfolder.md).
 
 ## History
 

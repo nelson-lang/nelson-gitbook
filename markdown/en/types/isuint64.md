@@ -16,7 +16,7 @@ Return true if variable var is an unsigned 64-bit integer type array.
 
 ## Description
 
-<b>isuint64</b> returns a logical <b>1</b>if the argument is an <b>unsigned 64-bit</b> integer array and a logical <b>0</b> otherwise.
+<b>isuint64</b>returns a logical<b>1</b>if the argument is an<b>unsigned 64-bit</b>integer array and a logical<b>0</b>otherwise.
 
 ## Examples
 
@@ -32,7 +32,7 @@ res = isuint64(B)
 
 ## See also
 
-[isa](isa.md), [uint64](../integer/uint64.md), [isinteger](isinteger.md).
+[isa](../types/isa.md), [uint64](../integer/uint64.md), [isinteger](../types/isinteger.md).
 
 ## History
 

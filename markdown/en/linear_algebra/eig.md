@@ -27,10 +27,12 @@ Eigenvalues and eigenvectors.
 
 ## Description
 
-  <p><b>eig(A)</b> returns the Eigenvalues and eigenvectors.</p>
-  <p><b>eig(A, B)</b> returns the  generalized Eigenvalues and eigenvectors.</p>
+<p>
+            <b>eig(A)</b> returns the Eigenvalues and eigenvectors.</p>
+<p>
+                <b>eig(A, B)</b> returns the  generalized Eigenvalues and eigenvectors.</p>
 
-Bibliography
+## Bibliography
 
 [1] Anderson, E., Z. Bai, C. Bischof, S. Blackford, J. Demmel, J. Dongarra, J. Du Croz, A. Greenbaum, S. Hammarling, A. McKenney, and D. Sorensen, LAPACK User's Guide (http://www.netlib.org/lapack/lug/ lapack_lug.html), Third Edition, SIAM, Philadelphia, 1999.
 
@@ -40,17 +42,19 @@ Bibliography
 A = [10 -20 40; -50 20 0; 10 0 30]
 e = eig(A)
 [V, D] = eig(A)
+
 ```
 
 ```matlab
 A = [1/sqrt(2) 0; 0 1];
 B = [0 1; -1/sqrt(2) 0];
 [V, D] = eig(A, B)
+
 ```
 
 ## See also
 
-[svd](svd.md), [schur](schur.md).
+[svd](../linear_algebra/svd.md), [schur](../linear_algebra/schur.md).
 
 ## History
 

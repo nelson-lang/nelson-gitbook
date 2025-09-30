@@ -15,8 +15,9 @@ Checks that value is numeric or raise an error.
 
 ## Description
 
-  <p><b>mustBeNumeric</b> checks that value is numeric or raise an error.</p>
-  <p>Empty values are ignored.</p>
+<p>
+            <b>mustBeNumeric</b> checks that value is numeric or raise an error.</p>
+<p>Empty values are ignored.</p>
 
 ## Example
 

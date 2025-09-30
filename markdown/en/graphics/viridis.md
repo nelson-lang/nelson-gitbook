@@ -17,9 +17,10 @@ Viridis colormap array.
 
 ## Description
 
-  <p><b>viridis</b> returns the colormap with viridis colors.</p>
+<p>
+            <b>viridis</b> returns the colormap with viridis colors.</p>
 
-Bibliography
+## Bibliography
 
 Color map created by Stéfan van der Walt and Nathaniel Smith
 
@@ -32,11 +33,11 @@ view(2);
 colormap('viridis');
 ```
 
-<img src="viridis_AB1045AC.svg" align="middle"/>
+<img src="viridis.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

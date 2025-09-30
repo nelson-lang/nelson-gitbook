@@ -15,13 +15,15 @@ Checks that value is real.
 
 ## Description
 
-  <p><b>mustBeReal</b> checks that value is real or raise an error.</p>
+<p>
+            <b>mustBeReal</b> checks that value is real or raise an error.</p>
 
 ## Example
 
 ```matlab
 mustBeReal(1)
 mustBeReal(i)
+
 ```
 
 ## See also

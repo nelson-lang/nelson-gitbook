@@ -18,7 +18,8 @@ Matrix left division, \ operator.
 
 ## Description
 
-  <p><b>C = mldivide(A, B)</b> returns the matrix left division of A and B.</p>
+<p>
+            <b>C = mldivide(A, B)</b> returns the matrix left division of A and B.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ A \ B
 
 ## See also
 
-[ldivide](ldivide.md), [mrdivide](mrdivide.md).
+[ldivide](../operators/ldivide.md), [mrdivide](../operators/mrdivide.md).
 
 ## History
 

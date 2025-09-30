@@ -18,7 +18,7 @@ Set a property value of an QObject handle (set).
 
 ## Description
 
-  <p>This routine can be used to modify the value of a specified property from an QObject object.</p>
+<p>This routine can be used to modify the value of a specified property from an QObject object.</p>
 
 ## Example
 
@@ -27,6 +27,7 @@ h = errordlg()
 h.visible = false; % or set(h, 'visible', false)
 h.windowTitle = 'new title' % or set(h, 'windowTitle', 'new title')
 h.visible = true;
+
 ```
 
 ## See also

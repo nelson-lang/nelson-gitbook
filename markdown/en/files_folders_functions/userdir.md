@@ -13,7 +13,7 @@ Returns the current user's path.
 
 ## Description
 
-  <p>Returns the name of the user's directory.</p>
+<p>Returns the name of the user's directory.</p>
 
 ## Example
 
@@ -23,7 +23,7 @@ r = userdir()
 
 ## See also
 
-[cd](cd.md), [dir](dir.md), [tempdir](tempdir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md), [tempdir](../files_folders_functions/tempdir.md).
 
 ## History
 

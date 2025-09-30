@@ -16,9 +16,10 @@
 
 ## Description
 
-  <p><b>rotx</b> returns 3x3 transformation matrix for rotations around x-axis.</p>
+<p>
+            <b>rotx</b> returns 3x3 transformation matrix for rotations around x-axis.</p>
 
-Bibliography
+## Bibliography
 
 Goldstein, H., C. Poole and J. Safko, Classical Mechanics, 3rd Edition, San Francisco: Addison Wesley, 2002, pp. 142–144.
 
@@ -30,7 +31,7 @@ r = rotx(90)
 
 ## See also
 
-[roty](roty.md), [rotz](rotz.md).
+[roty](../geometry/roty.md), [rotz](../geometry/rotz.md).
 
 ## History
 

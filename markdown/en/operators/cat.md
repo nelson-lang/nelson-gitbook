@@ -20,7 +20,8 @@ Concatenate arrays.
 
 ## Description
 
-  <p><b>R = cat(dim, M1, M2, ... , MN)</b> returns the concatenation of M1, M2, ... , MN along the dimension <b>dim</b>.</p>
+<p>
+            <b>R = cat(dim, M1, M2, ... , MN)</b> returns the concatenation of M1, M2, ... , MN along the dimension <b>dim</b>.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ C = cat(2, A, B)
 
 ## See also
 
-[vertcat](vertcat.md), [horzcat](horzcat.md).
+[vertcat](../operators/vertcat.md), [horzcat](../operators/horzcat.md).
 
 ## History
 

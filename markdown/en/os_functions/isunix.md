@@ -12,8 +12,9 @@ Checks if version is for GNU Linux or Unix platform.
 
 ## Description
 
-  <p><b>isunix</b> checks if it is a GNU Linux or Unix platform.</p>
-  <p>MacOs platform is also detected as a GNU Linux or Unix platform.</p>
+<p>
+            <b>isunix</b> checks if it is a GNU Linux or Unix platform.</p>
+<p>MacOs platform is also detected as a GNU Linux or Unix platform.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ end
 
 ## See also
 
-[ispc](ispc.md), [ismac](ismac.md).
+[ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md).
 
 ## History
 

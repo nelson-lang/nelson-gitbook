@@ -16,7 +16,7 @@ Return true if variable var is a signed 32-bit integer type array.
 
 ## Description
 
-<b>isint32</b> returns a logical <b>1</b>if the argument is a <b>signed 32-bit</b> integer array and a logical <b>0</b> otherwise.
+<b>isint32</b>returns a logical<b>1</b>if the argument is a<b>signed 32-bit</b>integer array and a logical<b>0</b>otherwise.
 
 ## Examples
 
@@ -32,7 +32,7 @@ res = isint32(B)
 
 ## See also
 
-[isa](isa.md), [int32](../integer/int32.md), [isinteger](isinteger.md).
+[isa](../types/isa.md), [int32](../integer/int32.md), [isinteger](../types/isinteger.md).
 
 ## History
 

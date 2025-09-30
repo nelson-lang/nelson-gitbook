@@ -12,7 +12,8 @@ get host name of this computer.
 
 ## Description
 
-  <p><b>hostname</b> get host name of this computer.</p>
+<p>
+            <b>hostname</b> get host name of this computer.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ hostname()
 
 ## See also
 
-[username](username.md).
+[username](../os_functions/username.md).
 
 ## History
 

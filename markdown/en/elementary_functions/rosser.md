@@ -17,9 +17,10 @@ Classic symmetric eigenvalue test problem.
 
 ## Description
 
-  <p><b>R = rosser()</b> returns the Rosser Matrix.</p>
+<p>
+            <b>R = rosser()</b> returns the Rosser Matrix.</p>
 
-Bibliography
+## Bibliography
 
 https://archive.org/details/jresv47n4p291
 
@@ -31,7 +32,7 @@ R = rosser()
 
 ## See also
 
-[toeplitz](toeplitz.md), [eig](../linear_algebra/eig.md).
+[toeplitz](../elementary_functions/toeplitz.md), [eig](../linear_algebra/eig.md).
 
 ## History
 

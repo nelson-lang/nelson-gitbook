@@ -18,9 +18,11 @@ greater than or equal, >= operator.
 
 ## Description
 
-  <p><b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.</p>
-  <p/>
-  <p><b>ge</b> compares only the real part of numeric arrays.</p>
+<p>
+            <b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.</p>
+<p></p>
+<p>
+                <b>ge</b> compares only the real part of numeric arrays.</p>
 
 ## Examples
 
@@ -46,7 +48,7 @@ ge(0.8-0.6-0.2, 0)
 
 ## See also
 
-[ne](ne.md), [lt](lt.md), [le](le.md), [gt](gt.md), [eq](eq.md).
+[ne](../operators/ne.md), [lt](../operators/lt.md), [le](../operators/le.md), [gt](../operators/gt.md), [eq](../operators/eq.md).
 
 ## History
 

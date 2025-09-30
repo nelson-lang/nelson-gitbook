@@ -20,8 +20,9 @@ load data from .nh5 file into Nelson's workspace.
 
 ## Description
 
-  <p><b>loadnh5</b> loads data from .nh5 file to Nelson's workspace.</p>
-  <p>.nh5 file uses hdf5 file as container.</p>
+<p>
+            <b>loadnh5</b> loads data from .nh5 file to Nelson's workspace.</p>
+<p>.nh5 file uses hdf5 file as container.</p>
 
 ## Example
 
@@ -44,7 +45,7 @@ B
 
 ## See also
 
-[savenh5](savenh5.md), [h5read](h5read.md).
+[savenh5](../hdf5/savenh5.md), [h5read](../hdf5/h5read.md).
 
 ## History
 

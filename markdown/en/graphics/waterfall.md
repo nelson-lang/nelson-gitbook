@@ -28,9 +28,10 @@ waterfall plot.
 
 ## Description
 
-  <p><b>waterfall</b>  creates a waterfall plot, which is a mesh plot with a partial curtain along the y dimension.</p>
-  <p>This results in a 'waterfall' effect.</p>
-  <p>The function takes the same input arguments as the <b>mesh</b> function.</p>
+<p>
+            <b>waterfall</b>  creates a waterfall plot, which is a mesh plot with a partial curtain along the y dimension.</p>
+<p>This results in a 'waterfall' effect.</p>
+<p>The function takes the same input arguments as the <b>mesh</b> function.</p>
 
 ## Examples
 
@@ -39,22 +40,24 @@ f = figure();
 Z = peaks();
 waterfall(Z);
 title ("waterfall function");
+
 ```
 
-<img src="waterfall_1_22F7041F.svg" align="middle"/>
+<img src="waterfall_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
 [X,Y] = meshgrid(-5:.5:5);
 Z = Y.*sin(X) - X.*cos(Y);
 p = waterfall(X, Y, Z);
+
 ```
 
-<img src="waterfall_2_7F496EB0.svg" align="middle"/>
+<img src="waterfall_2.svg" align="middle"/>
 
 ## See also
 
-[mesh](mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
+[mesh](../graphics/mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
 
 ## History
 

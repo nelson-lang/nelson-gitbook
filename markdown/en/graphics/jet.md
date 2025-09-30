@@ -17,7 +17,8 @@ Jet colormap array.
 
 ## Description
 
-  <p><b>jet</b> returns the colormap with jet colors.</p>
+<p>
+            <b>jet</b> returns the colormap with jet colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('jet');
 ```
 
-<img src="jet_5A19EC92.svg" align="middle"/>
+<img src="jet.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

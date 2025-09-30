@@ -16,7 +16,7 @@ Secant of argument in degrees.
 
 ## Description
 
-<b>secd</b> computes the secant of argument in degrees for each element of <b>x</b>.
+<b>secd</b>computes the secant of argument in degrees for each element of<b>x</b>.
 
 ## Example
 
@@ -26,7 +26,7 @@ R = secd([1, 10+3i, 15+2i, 35+i])
 
 ## See also
 
-[sec](sec.html).
+[sec](../trigonometric/sec.md).
 
 ## History
 

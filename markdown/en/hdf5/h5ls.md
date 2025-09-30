@@ -20,7 +20,8 @@ List the content of an HDF5 file.
 
 ## Description
 
-  <p><b>h5dump</b> list the content of hdf5 file.</p>
+<p>
+            <b>h5dump</b> list the content of hdf5 file.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ R = h5ls([tempdir(), 'myfile.h5'])
 
 ## See also
 
-[h5dump](h5dump.md).
+[h5dump](../hdf5/h5dump.md).
 
 ## History
 

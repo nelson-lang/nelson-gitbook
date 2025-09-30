@@ -4,7 +4,7 @@ On Unix, Linux operating systems, Parses the rest of the script's initial line a
 
 ## Description
 
-  <p>On Unix, Linux and MacOs X, shebang allows to execute directly a NelSon script.</p>
+<p>On Unix, Linux and MacOs X, shebang allows to execute directly a NelSon script.</p>
 
 ## Example
 
@@ -14,11 +14,12 @@ argv()
 disp('shebang example line 1')
 disp('shebang example line 2')
 exit()
+
 ```
 
 ## See also
 
-[executable](executable.md), [argv](argv.md).
+[executable](../engine/executable.md), [argv](../engine/argv.md).
 
 ## History
 

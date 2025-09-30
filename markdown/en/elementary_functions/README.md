@@ -1,10 +1,8 @@
 # Elementary functions
 
-Elementary functions
-
-## Description
-
 elementary functions
+
+## Functions
 
 - [abs](abs.md) - Absolute value
 - [allfinite](allfinite.md) - Check if all array elements are finite.

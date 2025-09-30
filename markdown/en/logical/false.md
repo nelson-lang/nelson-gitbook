@@ -23,7 +23,8 @@ Logical false.
 
 ## Description
 
-  <p><b>false</b> build a matrix of false.</p>
+<p>
+            <b>false</b> build a matrix of false.</p>
 
 ## Example
 
@@ -37,7 +38,7 @@ L2 = false(3,'like', L);
 
 ## See also
 
-[true](true.md).
+[true](../logical/true.md).
 
 ## History
 

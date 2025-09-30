@@ -26,8 +26,9 @@ Creates a question dialog box.
 
 ## Description
 
-  <p><b>questdlg</b> displays a string using a question dialog box and return the caption of the activated button.</p>
-  <p>The dialog has three default buttons: 'Yes', 'No', 'Cancel' with 'Yes' as default.</p>
+<p>
+            <b>questdlg</b> displays a string using a question dialog box and return the caption of the activated button.</p>
+<p>The dialog has three default buttons: 'Yes', 'No', 'Cancel' with 'Yes' as default.</p>
 
 ## Examples
 
@@ -49,7 +50,7 @@ res = questdlg({'Is', 'this', 'a', 'multi line', 'test ?'}, 'Test :)')
 
 ## See also
 
-[warndlg](warndlg.md), [errordlg](errordlg.md), [helpdlg](helpdlg.md), [msgbox](msgbox.md).
+[warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
 
 ## History
 

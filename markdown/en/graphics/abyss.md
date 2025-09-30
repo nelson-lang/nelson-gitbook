@@ -17,7 +17,8 @@ Abyss colormap array.
 
 ## Description
 
-  <p><b>abyss</b> returns the colormap with abyss colors.</p>
+<p>
+            <b>abyss</b> returns the colormap with abyss colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('abyss');
 ```
 
-<img src="abyss_60679900.svg" align="middle"/>
+<img src="abyss.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

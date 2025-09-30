@@ -1,12 +1,10 @@
-# MPI examples
-
-MPI examples
+#
 
 Some Nelson MPI examples.
 
 ## Description
 
-  <p>See below for some basic examples about MPI interfaces available in Nelson.</p>
+<p>See below for some basic examples about MPI interfaces available in Nelson.</p>
 
 ## Examples
 

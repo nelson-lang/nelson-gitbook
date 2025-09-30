@@ -12,7 +12,7 @@ Returns a newline character.
 
 ## Description
 
-<b>newline</b> returns a newline character.
+<b>newline</b>returns a newline character.
 
 ## Example
 

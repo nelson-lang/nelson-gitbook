@@ -17,7 +17,8 @@ Hot colormap array.
 
 ## Description
 
-  <p><b>hot</b> returns the colormap with hot colors.</p>
+<p>
+            <b>hot</b> returns the colormap with hot colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('hot');
 ```
 
-<img src="hot_9A86D0E9.svg" align="middle"/>
+<img src="hot.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

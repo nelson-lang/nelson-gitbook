@@ -1,10 +1,8 @@
 # Functions manager
 
-Functions manager
+Functions manager provides tools to manage and interact with Nelson's function search path and function types. It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more. Utilities are available to check for the existence of built-in, macro, or mex functions.
 
-## Description
-
-functions manager
+## Functions
 
 - [addpath](addpath.md) - Add directories to functions search path.
 - [builtin](builtin.md) - Executes built-in function.

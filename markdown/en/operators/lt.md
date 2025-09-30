@@ -17,9 +17,11 @@ less than, < operator.
 
 ## Description
 
-  <p><b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.</p>
-  <p><b>lt</b> compares only the real part of numeric arrays.</p>
-  <p/>
+<p>
+            <b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.</p>
+<p>
+                <b>lt</b> compares only the real part of numeric arrays.</p>
+<p></p>
 
 ## Examples
 
@@ -45,7 +47,7 @@ lt(0.8 - 0.6 - 0.2, 0)
 
 ## See also
 
-[ne](ne.md), [le](le.md), [ge](ge.md), [gt](gt.md), [eq](eq.md).
+[ne](../operators/ne.md), [le](../operators/le.md), [ge](../operators/ge.md), [gt](../operators/gt.md), [eq](../operators/eq.md).
 
 ## History
 

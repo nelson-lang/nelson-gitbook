@@ -28,8 +28,9 @@ Mesh surface plot with curtain.
 
 ## Description
 
-  <p><b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.</p>
-  <p>The function takes the same input arguments as the <b>mesh</b> function.</p>
+<p>
+            <b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.</p>
+<p>The function takes the same input arguments as the <b>mesh</b> function.</p>
 
 ## Example
 
@@ -40,11 +41,11 @@ Z = Y.*sin(X) - X.*cos(Y);
 s = meshz(X,Y,Z)
 ```
 
-<img src="meshz_1_B64C241F.svg" align="middle"/>
+<img src="meshz_1.svg" align="middle"/>
 
 ## See also
 
-[mesh](mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
+[mesh](../graphics/mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
 
 ## History
 

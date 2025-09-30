@@ -18,9 +18,10 @@ Inverse of Hilbert matrix
 
 ## Description
 
-  <p><b>hilb</b> computes the Hilbert matrix.</p>
+<p>
+            <b>hilb</b> computes the Hilbert matrix.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/David_Hilbert, and Thanks to https://nhigham.com/2020/06/30/what-is-the-hilbert-matrix/
 
@@ -32,7 +33,7 @@ h = hilb(5)
 
 ## See also
 
-[invhilb](invhilb.md).
+[invhilb](../elementary_functions/invhilb.md).
 
 ## History
 

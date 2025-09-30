@@ -12,11 +12,12 @@ Throw exception as if occurs within calling function.
 
 ## Description
 
-  <p>It throws an exception as if it occurs within the calling function.</p>
+<p>It throws an exception as if it occurs within the calling function.</p>
 
 ## Example
 
 ```matlab
+
 function test_throwAsCaller()
   ME = MException('n:m', 'your error')
   throwAsCaller(ME)
@@ -24,7 +25,7 @@ function test_throwAsCaller()
 
 ## See also
 
-[MException](MException.md), [rethrow](rethrow.md), [throw](throw.md).
+[MException](../error_manager/MException.md), [rethrow](../error_manager/rethrow.md), [throw](../error_manager/throw.md).
 
 ## History
 

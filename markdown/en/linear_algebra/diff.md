@@ -20,8 +20,8 @@ Differences and approximate derivatives.
 
 ## Description
 
-  <p>If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences <b>X(2) - X(1), ..., X(n) - X(n-1)</b>.</p>
-  <p>If <b>X</b> is a matrix, result of <b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.</p>
+<p>If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences <b>X(2) - X(1), ..., X(n) - X(n-1)</b>.</p>
+<p>If <b>X</b> is a matrix, result of <b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.</p>
 
 ## Example
 
@@ -33,7 +33,7 @@ R = diff(X)
 
 ## See also
 
-[sum](sum.html), [prod](prod.html).
+[sum](../linear_algebra/sum.md), [prod](../linear_algebra/prod.md).
 
 ## History
 

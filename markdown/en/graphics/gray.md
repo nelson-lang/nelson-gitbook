@@ -17,7 +17,8 @@ Gray colormap array.
 
 ## Description
 
-  <p><b>gray</b> returns the colormap with gray colors.</p>
+<p>
+            <b>gray</b> returns the colormap with gray colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('gray');
 ```
 
-<img src="gray_65E5F57B.svg" align="middle"/>
+<img src="gray.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

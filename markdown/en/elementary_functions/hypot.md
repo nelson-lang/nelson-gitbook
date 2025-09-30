@@ -17,8 +17,9 @@ Square root of sum of squares
 
 ## Description
 
-  <p><b>hypot</b> computes the hypothenuse.</p>
-  <p>If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.</p>
+<p>
+            <b>hypot</b> computes the hypothenuse.</p>
+<p>If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ R = hypot(1e309, 1e309)
 
 ## See also
 
-[abs](abs.md), [sqrt](sqrt.md).
+[abs](../elementary_functions/abs.md), [sqrt](../elementary_functions/sqrt.md).
 
 ## History
 

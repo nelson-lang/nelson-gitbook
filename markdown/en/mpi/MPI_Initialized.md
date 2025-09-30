@@ -12,11 +12,7 @@ Indicates whether MPI_Init has been called.
 
 ## Description
 
-  <p>Indicates whether MPI_Init has been called.</p>
-
-## See also
-
-[MPI_Init](MPI_Init.md), [MPI_Finalize](MPI_Finalize.md).
+<p>Indicates whether MPI_Init has been called.</p>
 
 ## Example
 
@@ -27,7 +23,12 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Init](../mpi/MPI_Init.md), [MPI_Finalize](../mpi/MPI_Finalize.md).
 
 ## History
 

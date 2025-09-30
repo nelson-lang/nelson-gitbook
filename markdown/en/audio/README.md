@@ -1,10 +1,8 @@
 # Audio playback
 
-Audio playback
-
-## Description
-
 Audio playback functions.
+
+## Functions
 
 - [audiodevinfo](audiodevinfo.md) - Get audio devices information.
 - [audioinfo](audioinfo.md) - Get audio file information.

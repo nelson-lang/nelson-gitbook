@@ -23,8 +23,9 @@ Verifies the dimensional compatibility of matrices A, B, C, and D.
 
 ## Description
 
-  <p><b>abcdchk</b> verify dimensional consistency of the matrices A, B, C, D, E.</p>
-  <p>It additionally adjusts the dimensions of any empty 0-by-0 matrices to ensure their alignment with the rest.</p>
+<p>
+            <b>abcdchk</b> verify dimensional consistency of the matrices A, B, C, D, E.</p>
+<p>It additionally adjusts the dimensions of any empty 0-by-0 matrices to ensure their alignment with the rest.</p>
 
 ## Example
 

@@ -22,7 +22,8 @@ Label z-axis.
 
 ## Description
 
-  <p><b>zlabel('text')</b> labels the z-axis of the current axes.</p>
+<p>
+            <b>zlabel('text')</b> labels the z-axis of the current axes.</p>
 
 ## Example
 
@@ -34,11 +35,11 @@ axis square
 zlabel('Z axis Label - Unicode ドラゴンボールZ(ゼット)')
 ```
 
-<img src="zlabel_7DC4F991.svg" align="middle"/>
+<img src="zlabel.svg" align="middle"/>
 
 ## See also
 
-[text](text.md), [title](title.md).
+[text](../graphics/text.md), [title](../graphics/title.md).
 
 ## History
 

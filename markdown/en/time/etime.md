@@ -17,7 +17,8 @@ Time elapsed between date vectors.
 
 ## Description
 
-  <p><b>e = etime(t2, t1)</b> returns the number of seconds between two date vectors or matrices of date vectors, <b>t1</b> and <b>t2</b>.</p>
+<p>
+            <b>e = etime(t2, t1)</b> returns the number of seconds between two date vectors or matrices of date vectors, <b>t1</b> and <b>t2</b>.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ etime(t2, t1)
 
 ## See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
 ## History
 

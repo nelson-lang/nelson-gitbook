@@ -16,7 +16,7 @@ Computes the sine in radians for each element of x.
 
 ## Description
 
-<b>sin</b> computes the sine in radians for each element of <b>x</b>.
+<b>sin</b>computes the sine in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = sin(A)
 
 ## See also
 
-[asin](asin.md).
+[asin](../trigonometric_functions/asin.md).
 
 ## History
 

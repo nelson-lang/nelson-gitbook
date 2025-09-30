@@ -18,11 +18,11 @@ Set a property value of an handle object.
 
 ## Description
 
-  <p>This routine can be used to modify the value of a specified property from an handle object.</p>
+<p>This routine can be used to modify the value of a specified property from an handle object.</p>
 
 ## See also
 
-[QObject_set (set)](../qml_engine/QObject_set.md), [get](get.md), [invoke](invoke.md).
+[QObject_set (set)](../qml_engine/QObject_set.md), [get](../handle/get.md), [invoke](../handle/invoke.md).
 
 ## History
 

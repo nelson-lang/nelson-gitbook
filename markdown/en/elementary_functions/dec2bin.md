@@ -18,7 +18,8 @@ Convert decimal number to base 2.
 
 ## Description
 
-  <p><b>dec2bin</b> converts decimal number to base 2.</p>
+<p>
+            <b>dec2bin</b> converts decimal number to base 2.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ Y = dec2bin(2)
 
 ## See also
 
-[dec2base](base2dec.md), [bin2dec](bin2dec.md).
+[dec2base](../elementary_functions/base2dec.md), [bin2dec](../elementary_functions/bin2dec.md).
 
 ## History
 

@@ -12,11 +12,7 @@ QObject root object.
 
 ## Description
 
-  <p>Returns QObject handle of Nelson gui.</p>
-
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
+<p>Returns QObject handle of Nelson gui.</p>
 
 ## Example
 
@@ -25,6 +21,10 @@ h1 = QObject_root()
 h1.windowTitle
 h1.windowTitle = 'Your title'
 ```
+
+## See also
+
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## History
 

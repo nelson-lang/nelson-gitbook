@@ -16,8 +16,9 @@ Sparse to full matrix conversion.
 
 ## Description
 
-  <p><b>full</b> converts a sparse matrix into its full representation.</p>
-  <p> If input argument is already full then output argument will be equal to input argument.</p>
+<p>
+            <b>full</b> converts a sparse matrix into its full representation.</p>
+<p> If input argument is already full then output argument will be equal to input argument.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ F = full(sp)
 
 ## See also
 
-[sparse](sparse.md).
+[sparse](../sparse/sparse.md).
 
 ## History
 

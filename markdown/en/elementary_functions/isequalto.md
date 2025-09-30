@@ -19,7 +19,7 @@ Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensi
 
 ## Description
 
-<b>isequalto</b> returns true if x1 and x2 are the same type, same size and same values; otherwise, it returns false.
+<b>isequalto</b>returns true if x1 and x2 are the same type, same size and same values; otherwise, it returns false.
 
 ## Example
 
@@ -27,11 +27,12 @@ Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensi
 A = eye(3, 3);
 res = isequal(A, single(A))
 res = isequalto(A, single(A))
+
 ```
 
 ## See also
 
-[isequal](isequal.md), [isequaln](isequaln.md).
+[isequal](../elementary_functions/isequal.md), [isequaln](../elementary_functions/isequaln.md).
 
 ## History
 

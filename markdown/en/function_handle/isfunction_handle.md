@@ -16,7 +16,8 @@ Checks if value is a function handle.
 
 ## Description
 
-  <p><b>l = isfunction_handle(func_handle)</b> checks if <b>func_handle</b> is a function handle. Returning <b>true</b> if it is.</p>
+<p>
+            <b>l = isfunction_handle(func_handle)</b> checks if <b>func_handle</b> is a function handle. Returning <b>true</b> if it is.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ isfunction_handle(fh)
 
 ## See also
 
-[str2func](str2func.md), [func2str](func2str.md).
+[str2func](../function_handle/str2func.md), [func2str](../function_handle/func2str.md).
 
 ## History
 

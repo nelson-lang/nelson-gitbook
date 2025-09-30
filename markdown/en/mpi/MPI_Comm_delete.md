@@ -13,14 +13,16 @@ Removes MPI_Comm object.
 
 ## Description
 
-  <p><b>delete(h)</b> deletes MPI_Comm object itself.</p>
-  <p>Do not forget to clear variable afterward.</p>
+<p>
+            <b>delete(h)</b> deletes MPI_Comm object itself.</p>
+<p>Do not forget to clear variable afterward.</p>
 
 ## Example
 
 CLI required
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -31,11 +33,12 @@ MPI_Comm_used
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
 ## See also
 
-[MPI_Comm_used](MPI_Comm_used.md).
+[MPI_Comm_used](../mpi/MPI_Comm_used.md).
 
 ## History
 

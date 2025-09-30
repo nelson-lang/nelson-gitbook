@@ -8,7 +8,8 @@ conditional statement.
 
 ## Description
 
-  <p><b>if</b> and <b>else</b> statements form a control structure for conditional execution.</p>
+<p>
+            <b>if</b> and <b>else</b> statements form a control structure for conditional execution.</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ end
 
 ## See also
 
-[for](for.md).
+[for](../interpreter/for.md).
 
 ## History
 

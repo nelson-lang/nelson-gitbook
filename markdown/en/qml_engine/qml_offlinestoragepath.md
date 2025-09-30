@@ -16,11 +16,7 @@ Get the Property contains the directory to store offline user data.
 
 ## Description
 
-  <p>Get the Property contains the directory to store offline user data.</p>
-
-## See also
-
-[qml_setofflinestoragepath](qml_setofflinestoragepath.md).
+<p>Get the Property contains the directory to store offline user data.</p>
 
 ## Example
 
@@ -29,6 +25,10 @@ qml_offlinestoragepath()
 qml_setofflinestoragepath(tmpdir())
 qml_offlinestoragepath()
 ```
+
+## See also
+
+[qml_setofflinestoragepath](../qml_engine/qml_setofflinestoragepath.md).
 
 ## History
 

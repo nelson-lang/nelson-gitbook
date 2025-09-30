@@ -21,7 +21,8 @@ Evaluates an function on a cell.
 
 ## Description
 
-  <p><b>cellfun</b> applies function to each cell elements.</p>
+<p>
+            <b>cellfun</b> applies function to each cell elements.</p>
 
 ## Examples
 
@@ -67,7 +68,7 @@ AgtB = cellfun(R, A, B, 'ErrorHandler', H, 'UniformOutput', false)
 
 ## See also
 
-[cell](cell.md).
+[cell](../data_structures/cell.md).
 
 ## History
 

@@ -17,7 +17,8 @@ Checks that value is vector or raise an error.
 
 ## Description
 
-  <p><b>mustBeVector</b> checks that value is vector or raise an error.</p>
+<p>
+            <b>mustBeVector</b> checks that value is vector or raise an error.</p>
 
 ## Example
 

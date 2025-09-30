@@ -2,20 +2,10 @@
 
 ## Description
 
-  <p>Nelson provides extensive capabilities for reading and writing tables to files, supporting both text-based and binary storage formats to meet different data management needs.</p>
-  <p>Text files (.csv, .txt, etc.):</p>
-  <ul>
-    <li>writetable() exports tables to delimited text files with customizable separators</li>
-    <li>readtable() imports tables from delimited text files with automatic format detection</li>
-    <li>Text files preserve variable names and data in human-readable format</li>
-  </ul>
-  <p>Binary file:</p>
-  <ul>
-    <li>Nelson HDF5 format (.nh5):
-      	<ul><li>Efficient binary storage using HDF5 format</li><li>Preserves all table metadata and data types</li><li>Use save -nh5 and load commands</li></ul>
-    	</li>
-  </ul>
-  <p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
+<p>Nelson provides extensive capabilities for reading and writing tables to files, supporting both text-based and binary storage formats to meet different data management needs.</p>
+<p>Text files (.csv, .txt, etc.):</p>
+writetable() exports tables to delimited text files with customizable separators readtable() imports tables from delimited text files with automatic format detection Text files preserve variable names and data in human-readable format<p>Binary file:</p>
+Nelson HDF5 format (.nh5): Efficient binary storage using HDF5 format Preserves all table metadata and data types Use save -nh5 and load commands<p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
 
 ## Examples
 
@@ -31,6 +21,7 @@ clear T
 load(filename, 'T');
 assert(isequal(T, R));
 T
+
 ```
 
 Read/Write table to text file
@@ -41,6 +32,7 @@ T = table([1.5; -2.3; 4.7], [0.5; 1.1; -0.7], [-1; 2; 3], 'VariableNames', {'Vol
 filename = [tempdir(), 'table_example.csv'];
 writetable(T, filename);
 T2 = readtable(filename);
+
 ```
 
 ## See also

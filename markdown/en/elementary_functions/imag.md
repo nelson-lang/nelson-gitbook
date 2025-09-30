@@ -16,7 +16,8 @@ Imaginary part of an complex number.
 
 ## Description
 
-  <p><b>R = imag(M)</b> Return the imaginary part of M.</p>
+<p>
+            <b>R = imag(M)</b> Return the imaginary part of M.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ r = imag(cplx)
 
 ## See also
 
-[real](real.md).
+[real](../elementary_functions/real.md).
 
 ## History
 

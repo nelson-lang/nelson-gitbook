@@ -16,7 +16,7 @@ Cotangent of angle in radians
 
 ## Description
 
-<b>acot</b> computes the cotangent of angle for each element of <b>x</b>.
+<b>acot</b>computes the cotangent of angle for each element of<b>x</b>.
 
 ## Example
 
@@ -26,7 +26,7 @@ R = cot([-i pi+i*pi/2 -1+i*4])
 
 ## See also
 
-[coth](coth.html), [acoth](acoth.html).
+[coth](../trigonometric/coth.md), [acoth](../trigonometric/acoth.md).
 
 ## History
 

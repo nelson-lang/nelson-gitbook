@@ -16,7 +16,8 @@ Checks that value is member of specified array or issue error.
 
 ## Description
 
-  <p><b>mustBeMember</b> checks that value is member of an array or issue error.</p>
+<p>
+            <b>mustBeMember</b> checks that value is member of an array or issue error.</p>
 
 ## Example
 
@@ -24,11 +25,12 @@ Checks that value is member of specified array or issue error.
 A = "red";
 B = ["yellow","red","blue"];
 mustBeMember(A,B)
+
 ```
 
 ## See also
 
-[mustBeNonempty](mustBeNonempty.md).
+[mustBeNonempty](../validators/mustBeNonempty.md).
 
 ## History
 

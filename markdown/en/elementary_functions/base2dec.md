@@ -17,10 +17,12 @@ Convert number in a base to decimal.
 
 ## Description
 
-  <p><b>base2dec</b> converts number in a base to decimal.</p>
-  <p>Note:</p>
-  <p> - <b>dec2base</b> and <b>base2dec</b> are inverses of one another.</p>
-  <p> - values are cached to speed up next computation <b>base2dec('', 2) to clear cache.</b></p>
+<p>
+            <b>base2dec</b> converts number in a base to decimal.</p>
+<p>Note:</p>
+<p> - <b>dec2base</b> and <b>base2dec</b> are inverses of one another.</p>
+<p> - values are cached to speed up next computation <b>base2dec('', 2) to clear cache.</b>
+        </p>
 
 ## Example
 
@@ -30,7 +32,7 @@ base2dec('313', 3)
 
 ## See also
 
-[dec2base](dec2base.md).
+[dec2base](../elementary_functions/dec2base.md).
 
 ## History
 

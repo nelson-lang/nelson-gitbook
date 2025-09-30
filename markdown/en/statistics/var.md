@@ -16,7 +16,8 @@ Variance
 
 ## Description
 
-  <p><b>V = var(M)</b> returns the variance of the elements of M along the first array dimension whose size does not equal 1.</p>
+<p>
+            <b>V = var(M)</b> returns the variance of the elements of M along the first array dimension whose size does not equal 1.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ V = var(M)
 
 ## See also
 
-[cov](cov.md), [mean](mean.md).
+[cov](../statistics/cov.md), [mean](../statistics/mean.md).
 
 ## History
 

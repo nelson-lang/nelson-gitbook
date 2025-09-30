@@ -12,17 +12,17 @@ Returns the list of directories where the engine searches for native plugins for
 
 ## Description
 
-  <p>Returns the list of directories where the engine searches for native plugins for imported modules.</p>
-
-## See also
-
-[qml_addpluginpath](qml_addpluginpath.md).
+<p>Returns the list of directories where the engine searches for native plugins for imported modules.</p>
 
 ## Example
 
 ```matlab
 qml_pluginpathlist()
 ```
+
+## See also
+
+[qml_addpluginpath](../qml_engine/qml_addpluginpath.md).
 
 ## History
 

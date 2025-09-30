@@ -13,7 +13,7 @@ Returns the temporary directory path.
 
 ## Description
 
-  <p>Returns the name of the host system’s directory for temporary files.</p>
+<p>Returns the name of the host system’s directory for temporary files.</p>
 
 ## Example
 
@@ -23,7 +23,7 @@ r = tempdir()
 
 ## See also
 
-[cd](cd.md), [dir](dir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md).
 
 ## History
 

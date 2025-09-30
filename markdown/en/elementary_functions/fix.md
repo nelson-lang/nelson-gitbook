@@ -16,7 +16,8 @@ Round towards zero
 
 ## Description
 
-  <p><b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
+<p>
+            <b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ fix(pi)
 
 ## See also
 
-[floor](floor.md), [round](round.md), [ceil](ceil.md).
+[floor](../elementary_functions/floor.md), [round](../elementary_functions/round.md), [ceil](../elementary_functions/ceil.md).
 
 ## History
 

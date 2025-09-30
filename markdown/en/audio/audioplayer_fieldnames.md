@@ -17,7 +17,7 @@ Returns the properties name of an audioplayer object.
 
 ## Description
 
-<description><b>fieldnames</b> returns a cell of strings with properties name.</description>
+<b>fieldnames</b>returns a cell of strings with properties name.
 
 ## Example
 
@@ -31,7 +31,7 @@ clear playObj
 
 ## See also
 
-[audioplayer_set](audioplayer_set.md).
+[audioplayer_set](../audio/audioplayer_set.md).
 
 ## History
 

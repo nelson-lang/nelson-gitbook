@@ -16,7 +16,7 @@ Checks if variable is an linear model tf, ss or zpk.
 
 ## Description
 
-  <p>Checks if variable is an linear model tf, ss or zpk.</p>
+<p>Checks if variable is an linear model tf, ss or zpk.</p>
 
 ## Example
 

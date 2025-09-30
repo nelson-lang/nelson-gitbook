@@ -13,7 +13,8 @@ Set the value of an environment variable.
 
 ## Description
 
-  <p><b>setenv</b> set the value of an environment variable.</p>
+<p>
+            <b>setenv</b> set the value of an environment variable.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ getenv('MY_ENV_VAR')
 
 ## See also
 
-[getenv](getenv.md), [searchenv](searchenv.md).
+[getenv](../os_functions/getenv.md), [searchenv](../os_functions/searchenv.md).
 
 ## History
 

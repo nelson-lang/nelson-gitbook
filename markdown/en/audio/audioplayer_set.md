@@ -16,7 +16,7 @@ Set object or interface property to specified value.
 
 ## Description
 
-  <p>The function sets the property specified in the string propertyname to the given value.</p>
+<p>The function sets the property specified in the string propertyname to the given value.</p>
 
 ## Example
 
@@ -28,7 +28,7 @@ playObj.Tag = 'my audio object'
 
 ## See also
 
-[audioplayer_get](audioplayer_get.md).
+[audioplayer_get](../audio/audioplayer_get.md).
 
 ## History
 

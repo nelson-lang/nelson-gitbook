@@ -18,10 +18,15 @@ Returns path of a module.
 
 ## Description
 
-  <p><b>modulepath</b> is an helper's function to return module root path or a subdirectory.</p>
-  <p><b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b></p>
-  <p><b>modulepath('nelson', 'bin')</b> return path of nelson's executables.</p>
-  <p><b>modulepath('nelson', 'builtin')</b> returns path of nelson's dynamic libraries.</p>
+<p>
+            <b>modulepath</b> is an helper's function to return module root path or a subdirectory.</p>
+<p>
+                <b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b>
+            </p>
+<p>
+                <b>modulepath('nelson', 'bin')</b> return path of nelson's executables.</p>
+<p>
+                    <b>modulepath('nelson', 'builtin')</b> returns path of nelson's dynamic libraries.</p>
 
 ## Example
 
@@ -35,11 +40,12 @@ modulepath('core', 'tests')
 modulepath('nelson', 'root')
 modulepath('nelson', 'bin')
 modulepath('nelson', 'builtin')
+
 ```
 
 ## See also
 
-[requiremodule](requiremodule.md), [getmodules](getmodules.md).
+[requiremodule](../modules_manager/requiremodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## History
 

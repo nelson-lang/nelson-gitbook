@@ -17,8 +17,9 @@ Distribute inputs to outputs.
 
 ## Description
 
-  <p><b>deal</b> replicates the input parameters to the corresponding output parameters.</p>
-  <p>If a singular input parameter is provided, its value will be duplicated across all outputs.</p>
+<p>
+            <b>deal</b> replicates the input parameters to the corresponding output parameters.</p>
+<p>If a singular input parameter is provided, its value will be duplicated across all outputs.</p>
 
 ## Examples
 
@@ -47,7 +48,7 @@ A3 = 1:11;
 
 ## See also
 
-[cell](../data_structures/cell.md), [struct](struc.html).
+[cell](../data_structures/cell.md), [struct](../data_structures/struc.md).
 
 ## History
 

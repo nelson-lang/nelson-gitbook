@@ -1,10 +1,8 @@
 # Linear algebra
 
-Linear algebra
-
-## Description
-
 linear algebra functions
+
+## Functions
 
 - [balance](balance.md) - Diagonal scaling to improve eigenvalue accuracy.
 - [bandwidth](bandwidth.md) - Lower and upper matrix bandwidth.

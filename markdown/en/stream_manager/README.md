@@ -1,10 +1,8 @@
 # Stream manager
 
-Stream manager
-
-## Description
-
 stream functions
+
+## Functions
 
 - [diary](diary.md) - Diary of a session.
 - [fclose](fclose.md) - Close an opened file.

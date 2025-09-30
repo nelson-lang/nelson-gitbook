@@ -17,7 +17,8 @@ Flag colormap array.
 
 ## Description
 
-  <p><b>flag</b> returns the colormap with flag colors.</p>
+<p>
+            <b>flag</b> returns the colormap with flag colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('flag');
 ```
 
-<img src="flag_4DC67668.svg" align="middle"/>
+<img src="flag.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

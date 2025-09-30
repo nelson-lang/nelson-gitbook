@@ -18,9 +18,10 @@ Cross product.
 
 ## Description
 
-  <p><b>R = cross(A, B)</b> returns the cross product of <b>A</b> and <b>B</b>.</p>
+<p>
+            <b>R = cross(A, B)</b> returns the cross product of <b>A</b> and <b>B</b>.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/Cross_product
 
@@ -35,7 +36,7 @@ R = cross(A, B, 2)
 
 ## See also
 
-[dot](dot.md).
+[dot](../special_functions/dot.md).
 
 ## History
 

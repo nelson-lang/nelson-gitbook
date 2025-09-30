@@ -16,18 +16,19 @@ Convert two's complement binary string to number.
 
 ## Description
 
-  <p><b>bin2num</b> converts binary character arry to a numeric array.</p>
-  <p>Note:</p>
-  <p> - <b>num2bin</b> always returns the binary representations in a column</p>
-  <p> - <b>bin2num</b> and <b>num2bin</b> are inverses of one another.</p>
+<p>
+            <b>bin2num</b> converts binary character arry to a numeric array.</p>
+<p>Note:</p>
+<p> - <b>num2bin</b> always returns the binary representations in a column</p>
+<p> - <b>bin2num</b> and <b>num2bin</b> are inverses of one another.</p>
 
-Used function(s)
-
-C++ std::bitset
-
-Bibliography
+## Bibliography
 
 http://www.oxfordmathcenter.com/drupal7/node/43
+
+## Used function(s)
+
+C++ std::bitset
 
 ## Example
 
@@ -39,7 +40,7 @@ bin2num(Y)
 
 ## See also
 
-[num2bin](num2bin.md).
+[num2bin](../elementary_functions/num2bin.md).
 
 ## History
 

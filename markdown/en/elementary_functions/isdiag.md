@@ -16,7 +16,8 @@ Checks if matrix is diagonal.
 
 ## Description
 
-  <p><b>isdiag</b> returns an scalar logical if entry is diag.</p>
+<p>
+            <b>isdiag</b> returns an scalar logical if entry is diag.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ R = isdiag(A(:,1))
 
 ## See also
 
-[istriu](istriu.md), [istril](istril.md).
+[istriu](../elementary_functions/istriu.md), [istril](../elementary_functions/istril.md).
 
 ## History
 

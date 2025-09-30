@@ -17,7 +17,8 @@ Unary minus, - operator
 
 ## Description
 
-  <p><b>C = uminus(A)</b> performs unary minus ie -A.</p>
+<p>
+            <b>C = uminus(A)</b> performs unary minus ie -A.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ M = 3;
 
 ## See also
 
-[uplus](uplus.md), [minus](minus.md).
+[uplus](../operators/uplus.md), [minus](../operators/minus.md).
 
 ## History
 

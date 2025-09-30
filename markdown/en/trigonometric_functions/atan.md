@@ -16,7 +16,7 @@ Computes the inverse tangent in radians for each element of x.
 
 ## Description
 
-<b>atan</b> computes the inverse tangent in radians for each element of <b>x</b>.
+<b>atan</b>computes the inverse tangent in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = atan(A)
 
 ## See also
 
-[tan](tan.md).
+[tan](../trigonometric_functions/tan.md).
 
 ## History
 

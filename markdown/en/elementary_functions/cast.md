@@ -19,8 +19,10 @@ Converts variable to a different data type
 
 ## Description
 
-  <p><b>cast</b> converts variable to a different data type.</p>
-  <p><b>R = cast(V, 'like', W)</b> converts varible V to sparsity and same data type than W.</p>
+<p>
+            <b>cast</b> converts variable to a different data type.</p>
+<p>
+                <b>R = cast(V, 'like', W)</b> converts varible V to sparsity and same data type than W.</p>
 
 ## Example
 

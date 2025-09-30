@@ -18,7 +18,7 @@ Compares first n characters of strings (case sensitive).
 
 ## Description
 
-<b>strncmpi</b> compares the first n characters of two strings (case insensitive).
+<b>strncmpi</b>compares the first n characters of two strings (case insensitive).
 
 ## Example
 
@@ -32,11 +32,12 @@ C = {'C', 'Contents'; 'Nel', 'son'}
 strncmpi(A, B, 2)
 strncmpi(A, C, 2)
 strncmpi(C, 'C', 4)
+
 ```
 
 ## See also
 
-[strncmp](strncmp.md), [strcmp](strcmp.md).
+[strncmp](../string/strncmp.md), [strcmp](../string/strcmp.md).
 
 ## History
 

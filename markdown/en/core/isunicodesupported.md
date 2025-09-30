@@ -12,8 +12,9 @@ Detect whether the current terminal supports Unicode.
 
 ## Description
 
-  <p><b>isunicodesupported</b>: returns if current terminal supports Unicode.</p>
-  <p>value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'</p>
+<p>
+            <b>isunicodesupported</b>: returns if current terminal supports Unicode.</p>
+<p>value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'</p>
 
 ## Example
 

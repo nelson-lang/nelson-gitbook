@@ -17,9 +17,9 @@ Configure Nelson to use MinGW as default C compiler
 
 ## Description
 
-  <p>By default, Nelson has no C/C++ compiler defined as default on Windows.</p>
-  <p>On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function.</p>
-  <p>On Windows, you need to call once <b>configuremingw</b> if you want to use MinGW as default C compiler.</p>
+<p>By default, Nelson has no C/C++ compiler defined as default on Windows.</p>
+<p>On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function.</p>
+<p>On Windows, you need to call once <b>configuremingw</b> if you want to use MinGW as default C compiler.</p>
 
 ## Example
 
@@ -29,7 +29,7 @@ configuremingw('c:/mingw')
 
 ## See also
 
-[Supported C/C++ compilers](2_supported_compilers.md), [havecompiler](havecompiler.md), [configuremsvc](configuremsvc.md).
+[Supported C/C++ compilers](../dynamic_link/2_supported_compilers.md), [havecompiler](../dynamic_link/havecompiler.md), [configuremsvc](../dynamic_link/configuremsvc.md).
 
 ## History
 

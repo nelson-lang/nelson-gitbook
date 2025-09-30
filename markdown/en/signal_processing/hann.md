@@ -18,7 +18,12 @@ Hann window.
 
 ## Description
 
-  <p><b>c = hann(m)</b> computes coefficients of a Hanning window of length <b>m</b>.</p>
+<p>
+            <b>c = hann(m)</b> computes coefficients of a Hanning window of length <b>m</b>.</p>
+
+## Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
 
 ## Example
 
@@ -27,13 +32,9 @@ c = hann(8)
 c = hann(8, 'periodic')
 ```
 
-Bibliography
-
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
-
 ## See also
 
-[hamming](hamming.md), [blackman](blackman.md).
+[hamming](../signal_processing/hamming.md), [blackman](../signal_processing/blackman.md).
 
 ## History
 

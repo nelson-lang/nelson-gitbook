@@ -17,8 +17,10 @@ Parula colormap array.
 
 ## Description
 
-  <p><b>parula</b> returns the colormap with parula colors.</p>
-  <p><b>parula</b> is the default colormap.</p>
+<p>
+            <b>parula</b> returns the colormap with parula colors.</p>
+<p>
+                <b>parula</b> is the default colormap.</p>
 
 ## Example
 
@@ -28,11 +30,11 @@ surf(peaks);
 colormap('parula');
 ```
 
-<img src="parula_5EC0F3E3.svg" align="middle"/>
+<img src="parula.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

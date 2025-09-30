@@ -26,10 +26,11 @@ Add directories to functions search path.
 
 ## Description
 
-  <p><b>addpath</b> add directories to search path.</p>
-  <p>It is also possible to add lists of directory names separated by pathsep.</p>
-  <p>Non-existent path will not be added and a warning will be issued.</p>
-  <p>files watchers is disabled for internal modules.</p>
+<p>
+            <b>addpath</b> add directories to search path.</p>
+<p>It is also possible to add lists of directory names separated by pathsep.</p>
+<p>Non-existent path will not be added and a warning will be issued.</p>
+<p>files watchers is disabled for internal modules.</p>
 
 ## Example
 
@@ -43,7 +44,7 @@ path
 
 ## See also
 
-[path](path.md), [rmpath](rmpath.md), [restoredefaultpath](restoredefaultpath.md).
+[path](../functions_manager/path.md), [rmpath](../functions_manager/rmpath.md), [restoredefaultpath](../functions_manager/restoredefaultpath.md).
 
 ## History
 

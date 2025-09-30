@@ -17,19 +17,21 @@ Returns information about an gateway.
 
 ## Description
 
-  <p><b>[gateway_name, builtin_list] = gatewayinfo(dyn_lib_path)</b> get information about an gateway.</p>
-  <p>The dynamic library must have at least an C entry point <b>GetGatewayInfo</b>.</p>
-  <p>If file does not exist an error is raised.</p>
+<p>
+            <b>[gateway_name, builtin_list] = gatewayinfo(dyn_lib_path)</b> get information about an gateway.</p>
+<p>The dynamic library must have at least an C entry point <b>GetGatewayInfo</b>.</p>
+<p>If file does not exist an error is raised.</p>
 
 ## Example
 
 ```matlab
 [gateway_name, builtin_list] = gatewayinfo(modulepath('time', 'builtin'))
+
 ```
 
 ## See also
 
-[addgateway](addgateway.html), [removegateway](removegateway.html).
+[addgateway](../dynamic_link/addgateway.md), [removegateway](../dynamic_link/removegateway.md).
 
 ## History
 

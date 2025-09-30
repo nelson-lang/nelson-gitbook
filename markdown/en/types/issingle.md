@@ -16,7 +16,7 @@ Return true if variable var is a single matrix.
 
 ## Description
 
-<b>issingle</b> returns a logical 1 if the argument is a single matrix and a logical 0 otherwise.
+<b>issingle</b>returns a logical 1 if the argument is a single matrix and a logical 0 otherwise.
 
 ## Examples
 
@@ -32,7 +32,7 @@ res = issingle(B)
 
 ## See also
 
-[isdouble](isdouble.md), [single](../single/single.md).
+[isdouble](../types/isdouble.md), [single](../single/single.md).
 
 ## History
 

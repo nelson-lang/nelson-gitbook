@@ -19,8 +19,8 @@ Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same v
 
 ## Description
 
-<b>isequal</b> returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false.
-<b>isequal</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be <b>unequal</b> to other elements.
+<p><b>isequal</b> returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false.</p>
+<p><b>isequal</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be NOT <b>equal</b> to other elements.</p>
 
 ## Examples
 
@@ -46,7 +46,7 @@ res = isequalnNaN, NaN)
 
 ## See also
 
-[isequaln](isequaln.md), [isequalto](isequalto.md).
+[isequaln](../elementary_functions/isequaln.md), [isequalto](../elementary_functions/isequalto.md).
 
 ## History
 

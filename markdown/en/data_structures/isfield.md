@@ -19,7 +19,8 @@ Checks if a fieldname exists in a struct.
 
 ## Description
 
-  <p><b>isfield(A)</b> returns true if <b>name</b> is a fieldname of <b>S</b>.</p>
+<p>
+            <b>isfield(A)</b> returns true if <b>name</b> is a fieldname of <b>S</b>.</p>
 
 ## Examples
 
@@ -37,7 +38,7 @@ isfield(S,{ 1, 'nel'; 2, 'son'})
 
 ## See also
 
-[fieldnames](fieldnames.html).
+[fieldnames](../types/fieldnames.md).
 
 ## History
 

@@ -21,7 +21,8 @@ Returns I,J,V triplets from a sparse matrix.
 
 ## Description
 
-  <p><b>IJV</b> converts a sparse matrix into its COO format.</p>
+<p>
+            <b>IJV</b> converts a sparse matrix into its COO format.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ sp = sparse(eye(3,3))
 
 ## See also
 
-[sparse](sparse.md).
+[sparse](../sparse/sparse.md).
 
 ## History
 

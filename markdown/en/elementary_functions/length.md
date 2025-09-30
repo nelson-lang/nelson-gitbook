@@ -16,7 +16,7 @@ Length of an object.
 
 ## Description
 
-  <p>For matrix or N-dimensional array, <b>length</b> returns the number of elements along the largest dimension.
+<p>For matrix or N-dimensional array, <b>length</b> returns the number of elements along the largest dimension.
 		For empty object, <b>length</b> returns 0. For scalar, <b>length</b> returns 1. For a vector, <b>length</b> returns the number of elements. </p>
 
 ## Example
@@ -30,7 +30,7 @@ length(ones(3, 4, 5))
 
 ## See also
 
-[size](size.md), [numel](numel.md).
+[size](../elementary_functions/size.md), [numel](../elementary_functions/numel.md).
 
 ## History
 

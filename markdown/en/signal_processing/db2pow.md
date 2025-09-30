@@ -16,7 +16,8 @@ Convert a gain in decibels (dB) to power.
 
 ## Description
 
-  <p><b>pow = db2pow(db)</b> returns corresponding power.</p>
+<p>
+            <b>pow = db2pow(db)</b> returns corresponding power.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ pow = db2pow([0, -20])
 
 ## See also
 
-[pow2db](pow2db.md).
+[pow2db](../signal_processing/pow2db.md).
 
 ## History
 

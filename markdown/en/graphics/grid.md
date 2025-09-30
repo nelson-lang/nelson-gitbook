@@ -19,7 +19,8 @@ Display or hide axes grid lines.
 
 ## Description
 
-  <p><b>grid()</b> toggles the visibility of the major grid lines.</p>
+<p>
+            <b>grid()</b> toggles the visibility of the major grid lines.</p>
 
 ## Example
 
@@ -31,11 +32,11 @@ plot(x, y)
 grid on
 ```
 
-<img src="grid_97ED9AFB.svg" align="middle"/>
+<img src="grid.svg" align="middle"/>
 
 ## See also
 
-[axes](axes.md), [plot](plot.md).
+[axes](../graphics/axes.md), [plot](../graphics/plot.md).
 
 ## History
 

@@ -16,7 +16,8 @@ Determine whether input is column vector.
 
 ## Description
 
-  <p><b>iscolumn(V)</b> returns logical <b>true</b> if size(V) returns [n, 1] with a nonnegative integer value n, and logical <b>false</b> otherwise.</p>
+<p>
+            <b>iscolumn(V)</b> returns logical <b>true</b> if size(V) returns [n, 1] with a nonnegative integer value n, and logical <b>false</b> otherwise.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ iscolumn([1:4]')
 
 ## See also
 
-[isrow](isrow.md).
+[isrow](../elementary_functions/isrow.md).
 
 ## History
 

@@ -16,7 +16,7 @@ Checks if dynamic system model is single input and single output.
 
 ## Description
 
-  <p>Checks if dynamic system model is single input and single output.</p>
+<p>Checks if dynamic system model is single input and single output.</p>
 
 ## Example
 
@@ -38,7 +38,7 @@ issiso(sys)
 
 ## See also
 
-[isdt](isdt.md).
+[isdt](../control_system/isdt.md).
 
 ## History
 

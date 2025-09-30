@@ -19,9 +19,11 @@ Run function in background.
 
 ## Description
 
-  <p><b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background.</p>
-  <p>backgroundPool has <b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.</p>
-  <p><b>parfeval</b> runs the function <b>fptr</b> on a background worker.</p>
+<p>
+            <b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background.</p>
+<p>backgroundPool has <b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.</p>
+<p>
+                <b>parfeval</b> runs the function <b>fptr</b> on a background worker.</p>
 
 ## Example
 
@@ -34,7 +36,7 @@ r = fetchOutputs(f)
 
 ## See also
 
-[backgroundPool](backgroundPool.md), [fetchOutputs](fetchOutputs.md), [feval](../functions_manager/feval.md).
+[backgroundPool](../parallel/backgroundPool.md), [fetchOutputs](../parallel/fetchOutputs.md), [feval](../functions_manager/feval.md).
 
 ## History
 

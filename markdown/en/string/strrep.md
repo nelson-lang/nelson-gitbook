@@ -18,8 +18,10 @@ Replaces strings in another.
 
 ## Description
 
-  <p><b>replace</b> replaces strings in another.</p>
-  <p><b>replace</b> and <b>strrep</b> replace strings but <b>replace</b> is recommended.</p>
+<p>
+            <b>replace</b> replaces strings in another.</p>
+<p>
+                <b>replace</b> and <b>strrep</b> replace strings but <b>replace</b> is recommended.</p>
 
 ## Example
 
@@ -31,7 +33,7 @@ r = strrep("This is a string.", "is", 'is not')
 
 ## See also
 
-[replace](replace.md).
+[replace](../string/replace.md).
 
 ## History
 

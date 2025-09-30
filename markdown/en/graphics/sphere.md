@@ -21,7 +21,8 @@ Create sphere.
 
 ## Description
 
-  <p><b>sphere</b> creates sphere and plots it.</p>
+<p>
+            <b>sphere</b> creates sphere and plots it.</p>
 
 ## Example
 
@@ -45,11 +46,11 @@ axis equal
 title(_('100-by-100 faces'));
 ```
 
-<img src="sphere_405CBFC9.svg" align="middle"/>
+<img src="sphere.svg" align="middle"/>
 
 ## See also
 
-[cylinder](cylinder.md), [surf](surf.md).
+[cylinder](../graphics/cylinder.md), [surf](../graphics/surf.md).
 
 ## History
 

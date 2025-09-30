@@ -21,11 +21,7 @@ Nonblocking test for a message.
 
 ## Description
 
-  <p>Nonblocking test for a message.</p>
-
-## See also
-
-[MPI_Probe](MPI_Probe.md).
+<p>Nonblocking test for a message.</p>
 
 ## Example
 
@@ -44,7 +40,12 @@ world_size = MPI_Comm_size();
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Probe](../mpi/MPI_Probe.md).
 
 ## History
 

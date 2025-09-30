@@ -18,7 +18,7 @@ Determines if input is an existing COM object property.
 
 ## Description
 
-<description><b>r = isprop(h, propertyname)</b> returns true if the specified name is a property of the COM object h. Otherwise, it returns false.</description>
+<b>r = isprop(h, propertyname)</b>returns true if the specified name is a property of the COM object h. Otherwise, it returns false.
 
 ## Example
 
@@ -27,11 +27,12 @@ e = actxserver('Excel.Application');
 isprop(e, 'Window')
 delete(e)
 clear e
+
 ```
 
 ## See also
 
-[COM_ismethod](COM_ismethod.md).
+[COM_ismethod](../com_engine/COM_ismethod.md).
 
 ## History
 

@@ -18,8 +18,8 @@ Validate color values.
 
 ## Description
 
-  <p>The <b>validatecolor</b> function is a color validation function that checks whether a given color is valid according to Nelson standards.</p>
-  <p>It takes a color argument as input and returns an error if the color is not valid.</p>
+<p>The <b>validatecolor</b> function is a color validation function that checks whether a given color is valid according to Nelson standards.</p>
+<p>It takes a color argument as input and returns an error if the color is not valid.</p>
 
 ## Example
 
@@ -28,6 +28,7 @@ RGB = validatecolor('red')
 RGB = validatecolor('purple')
 RGB = validatecolor({'#8000FF','#00FF00','#FF9900'}, 'multiple')
 RGB = validatecolor({'red','green','blue'},'multiple')
+
 ```
 
 ## History

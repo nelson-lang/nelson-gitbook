@@ -17,7 +17,8 @@ Searches for a file using environment paths.
 
 ## Description
 
-  <p><b>searchenv</b> Searches for a file using environment paths.</p>
+<p>
+            <b>searchenv</b> Searches for a file using environment paths.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ c = searchenv('loader.m', 'MY_PATH_ENV')
 
 ## See also
 
-[getenv](getenv.md), [setenv](setenv.md).
+[getenv](../os_functions/getenv.md), [setenv](../os_functions/setenv.md).
 
 ## History
 

@@ -16,7 +16,8 @@ Checks input is vector.
 
 ## Description
 
-  <p><b>isvector</b> returns an scalar logical if entry is an vector.</p>
+<p>
+            <b>isvector</b> returns an scalar logical if entry is an vector.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ R = isvector(A(:,1))
 
 ## See also
 
-[isempty](isempty.html).
+[isempty](../elementary_functions/isempty.md).
 
 ## History
 

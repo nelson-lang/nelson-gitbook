@@ -18,7 +18,8 @@ Internal limit on the number of times a function may be called recursively.
 
 ## Description
 
-  <p><b>max_recursion_depth</b> specifies the recursion depth max to prevent Nelson from recursing infinitely.</p>
+<p>
+            <b>max_recursion_depth</b> specifies the recursion depth max to prevent Nelson from recursing infinitely.</p>
 
 ## History
 

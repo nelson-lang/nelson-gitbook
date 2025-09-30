@@ -12,8 +12,9 @@ Return the CPU time used by your Nelon session.
 
 ## Description
 
-  <p><b>cputime()</b> returns the CPU time used by Nelson session.</p>
-  <p>To measure performance, it is better to use tic and toc functions.</p>
+<p>
+            <b>cputime()</b> returns the CPU time used by Nelson session.</p>
+<p>To measure performance, it is better to use tic and toc functions.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ toc()
 
 ## See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
 ## History
 

@@ -19,9 +19,11 @@ Test for i/o read/write errors.
 
 ## Description
 
-  <p><b>ferror</b> inquires about file error status.</p>
-  <p><b>ferror(fid, 'clear')</b> clears the error indicator for the specified file.</p>
-  <p>For more help about returned message, consult C run-time library manual for further details.</p>
+<p>
+            <b>ferror</b> inquires about file error status.</p>
+<p>
+                <b>ferror(fid, 'clear')</b> clears the error indicator for the specified file.</p>
+<p>For more help about returned message, consult C run-time library manual for further details.</p>
 
 ## Example
 
@@ -30,11 +32,12 @@ filename = [tempdir(), 'test_ferror.csv'];
 fid = fopen(filename, 'w');
 res = fgets(fid);
 [msg, code] = ferror(fid)
+
 ```
 
 ## See also
 
-[fopen](fopen.md).
+[fopen](../stream_manager/fopen.md).
 
 ## History
 

@@ -17,7 +17,8 @@ Array elements that are members of another array.
 
 ## Description
 
-  <p><b>T = ismember(A, B)</b> returns an array of logical where the data in <b>A</b> is found in <b>B</b>.</p>
+<p>
+            <b>T = ismember(A, B)</b> returns an array of logical where the data in <b>A</b> is found in <b>B</b>.</p>
 
 ## Example
 
@@ -27,11 +28,13 @@ B = [20 40 40 40 60 80];
 T = ismember(A, B)
 
 T = ismember(["a","b","f"], ["b", "f", "c"])
+
+
 ```
 
 ## See also
 
-[sort](sort.html).
+[sort](../operators/sort.md).
 
 ## History
 

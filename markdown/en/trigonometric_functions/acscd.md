@@ -16,7 +16,7 @@ Inverse cosecant in degrees.
 
 ## Description
 
-<b>acscd</b> computes the inverse cosecant of argument in degrees for each element of <b>x</b>.
+<b>acscd</b>computes the inverse cosecant of argument in degrees for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ y = acscd(x)
 
 ## See also
 
-[cscd](cscd.html), [csc](csc.html).
+[cscd](../trigonometric/cscd.md), [csc](../trigonometric/csc.md).
 
 ## History
 

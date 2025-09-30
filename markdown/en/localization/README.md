@@ -1,10 +1,8 @@
 # Localization functions
 
-Localization functions
-
-## Description
-
 localization functions
+
+## Functions
 
 - [getavailablelanguages](getavailablelanguages.md) - Returns available languages in Nelson.
 - [getdefaultlanguage](getdefaultlanguage.md) - Returns the default language used in Nelson.

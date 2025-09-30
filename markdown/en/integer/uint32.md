@@ -16,8 +16,9 @@ Converts to 32-bit unsigned integer.
 
 ## Description
 
-  <p><b>uint32</b> converts value to 32-bit unsigned integer type.</p>
-  <p>The value is rounded to the nearest uint32 value on conversion. A value that is above or below the range for an uint32 class is mapped to one of the endpoints of the range [0, 4294967295].</p>
+<p>
+            <b>uint32</b> converts value to 32-bit unsigned integer type.</p>
+<p>The value is rounded to the nearest uint32 value on conversion. A value that is above or below the range for an uint32 class is mapped to one of the endpoints of the range [0, 4294967295].</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ B = uint32(A)
 
 ## See also
 
-[intmax](intmax.md), [intmin](intmax.md), [numeric types](../interpreter/numeric_types.md).
+[intmax](../integer/intmax.md), [intmin](../integer/intmax.md), [numeric types](../interpreter/numeric_types.md).
 
 ## History
 

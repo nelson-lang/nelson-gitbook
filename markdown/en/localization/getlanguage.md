@@ -12,7 +12,8 @@ Returns the current language in Nelson.
 
 ## Description
 
-  <p><b>getlanguage</b> returns the current language used in Nelson.</p>
+<p>
+            <b>getlanguage</b> returns the current language used in Nelson.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ l = getlanguage()
 
 ## See also
 
-[setlanguage](setlanguage.md).
+[setlanguage](../localization/setlanguage.md).
 
 ## History
 

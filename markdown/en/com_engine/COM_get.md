@@ -19,7 +19,7 @@ Get property value from COM interface.
 
 ## Description
 
-  <p>The function returns the value of the property specified in the string, propertyname.</p>
+<p>The function returns the value of the property specified in the string, propertyname.</p>
 
 ## Example
 
@@ -31,7 +31,7 @@ e.Path
 
 ## See also
 
-[COM_set](COM_set.md).
+[COM_set](../com_engine/COM_set.md).
 
 ## History
 

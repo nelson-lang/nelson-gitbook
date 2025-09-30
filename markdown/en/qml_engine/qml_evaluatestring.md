@@ -16,18 +16,18 @@ Evaluates a js string.
 
 ## Description
 
-  <p>Evaluates a js string.</p>
-  <p>If returned value cannot be converted to a basic type, it will converted to string.</p>
-
-## See also
-
-[qml_evaluatefile](qml_evaluatefile.md).
+<p>Evaluates a js string.</p>
+<p>If returned value cannot be converted to a basic type, it will converted to string.</p>
 
 ## Example
 
 ```matlab
 qml_evaluatestring('a = 2 + 4')
 ```
+
+## See also
+
+[qml_evaluatefile](../qml_engine/qml_evaluatefile.md).
 
 ## History
 

@@ -16,7 +16,8 @@ Checks if matrix is upper triangular.
 
 ## Description
 
-  <p><b>istriu</b> returns an scalar logical if entry is upper triangular.</p>
+<p>
+            <b>istriu</b> returns an scalar logical if entry is upper triangular.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ R = istriu(A(:,1))
 
 ## See also
 
-[isdiag](isdiag.md), [istril](istril.md).
+[isdiag](../elementary_functions/isdiag.md), [istril](../elementary_functions/istril.md).
 
 ## History
 

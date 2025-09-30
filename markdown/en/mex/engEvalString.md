@@ -18,7 +18,7 @@ Evaluate expression in string in base scope
 
 ## Description
 
-  <p>Evaluate expression in string in base scope.</p>
+<p>Evaluate expression in string in base scope.</p>
 
 ## Example
 
@@ -28,7 +28,7 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 
 ## See also
 
-[mex](mex.md), [engPutVariable](engPutVariable.md), [engGetVariable](engGetVariable.md).
+[mex](../mex/mex.md), [engPutVariable](../mex/engPutVariable.md), [engGetVariable](../mex/engGetVariable.md).
 
 ## History
 

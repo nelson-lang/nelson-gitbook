@@ -24,15 +24,15 @@ Inverse of a given linear system.
 
 ## Description
 
-  <p>To compute the inverse (Ai, Bi, Ci, Di) of a given system (A, B, C, D).</p>
+<p>To compute the inverse (Ai, Bi, Ci, Di) of a given system (A, B, C, D).</p>
 
-Used function(s)
-
-AB07ND
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/AB07ND.html
+
+## Used function(s)
+
+AB07ND
 
 ## Example
 

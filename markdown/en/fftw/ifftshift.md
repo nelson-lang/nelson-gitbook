@@ -18,7 +18,8 @@ inverse of fftshift
 
 ## Description
 
-  <p><b>fftshift(X)</b> computes the inverse <b>fftshift</b>.</p>
+<p>
+            <b>fftshift(X)</b> computes the inverse <b>fftshift</b>.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ ifftshift(M, 1)
 
 ## See also
 
-[ifft](ifft.md), [fftshift](fftshift.md).
+[ifft](../fftw/ifft.md), [fftshift](../fftw/fftshift.md).
 
 ## History
 

@@ -22,9 +22,12 @@ Singular Value Decomposition.
 
 ## Description
 
-  <p><b>[U, S, V] = svd(M)</b> produces a diagonal matrix S of the same dimension as M and with nonnegative diagonal elements in decreasing order, and unitary matrices U and V so that X = U*S*V'.</p>
-  <p><b>[U, S, V] = svd(M, 0)</b> produces the 'economy size' decomposition. If M is m-by-n with m &gt; n then only the first n columns of U are computed and S is n-by-n.</p>
-  <p><b>[U, S, V] = svd(M,0)</b> produces a different economy-size decomposition of m-by-n matrix M. If m &gt; n  then svd(M, 0) is equivalent to svd(M,'econ'). If m  &lt;= n then svd(M, 0) is equivalent to svd(M).</p>
+<p>
+            <b>[U, S, V] = svd(M)</b> produces a diagonal matrix S of the same dimension as M and with nonnegative diagonal elements in decreasing order, and unitary matrices U and V so that X = U*S*V'.</p>
+<p>
+                <b>[U, S, V] = svd(M, 0)</b> produces the 'economy size' decomposition. If M is m-by-n with m > n then only the first n columns of U are computed and S is n-by-n.</p>
+<p>
+                    <b>[U, S, V] = svd(M,0)</b> produces a different economy-size decomposition of m-by-n matrix M. If m > n  then svd(M, 0) is equivalent to svd(M,'econ'). If m  <= n then svd(M, 0) is equivalent to svd(M).</p>
 
 ## Example
 
@@ -36,7 +39,7 @@ s = svd(X)
 
 ## See also
 
-[eig](eig.md).
+[eig](../linear_algebra/eig.md).
 
 ## History
 

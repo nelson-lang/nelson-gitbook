@@ -17,8 +17,9 @@ Register a function to be called when the MEX-file is cleared or when Nelson exi
 
 ## Description
 
-  <p>Each MEX can register only one active exit subroutine at a time.</p>
-  <p><b>mexAtExit</b> registers a subroutine to be called just when Nelson is finished or <b>clear</b> is called.</p>
+<p>Each MEX can register only one active exit subroutine at a time.</p>
+<p>
+            <b>mexAtExit</b> registers a subroutine to be called just when Nelson is finished or <b>clear</b> is called.</p>
 
 ## Example
 

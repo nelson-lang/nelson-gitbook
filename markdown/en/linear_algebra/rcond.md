@@ -16,7 +16,8 @@ Inverse condition number.
 
 ## Description
 
-  <p><b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
+<p>
+            <b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ r = rcond(X);
 
 ## See also
 
-[inv](inv.md), [cond](cond.md).
+[inv](../linear_algebra/inv.md), [cond](../linear_algebra/cond.md).
 
 ## History
 

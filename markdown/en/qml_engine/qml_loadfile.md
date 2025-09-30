@@ -16,18 +16,18 @@ Load a QML file.
 
 ## Description
 
-  <p>Load a QML file</p>
-  <p>It creates a QML component and load .qml file.</p>
-
-## See also
-
-[qml_loadstring](qml_loadstring.md).
+<p>Load a QML file</p>
+<p>It creates a QML component and load .qml file.</p>
 
 ## Example
 
 ```matlab
-% see examples in [nelsonroot(), '/modules/qml_engine/examples']
+ % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
+
+## See also
+
+[qml_loadstring](../qml_engine/qml_loadstring.md).
 
 ## History
 

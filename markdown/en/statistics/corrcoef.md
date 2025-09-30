@@ -16,7 +16,8 @@ Correlation coefficients
 
 ## Description
 
-  <p><b>R = corrcoef(M)</b> returns the matrix of correlation coefficients for <b>M</b>, where the columns of <b>M</b> represent random variables and the rows represent observations.</p>
+<p>
+            <b>R = corrcoef(M)</b> returns the matrix of correlation coefficients for <b>M</b>, where the columns of <b>M</b> represent random variables and the rows represent observations.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ R = corrcoef(M)
 
 ## See also
 
-[cov](cov.md), [mean](mean.md).
+[cov](../statistics/cov.md), [mean](../statistics/mean.md).
 
 ## History
 

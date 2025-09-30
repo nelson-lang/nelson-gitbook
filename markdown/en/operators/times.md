@@ -18,7 +18,8 @@ Element wise multiplication, .\* operator
 
 ## Description
 
-  <p><b>C = times(A, B)</b> performs element wise multiplication operation: A .* B.</p>
+<p>
+            <b>C = times(A, B)</b> performs element wise multiplication operation: A .* B.</p>
 
 ## Examples
 
@@ -35,7 +36,7 @@ M1 .* M2
 
 ## See also
 
-[mtimes](mtimes.md).
+[mtimes](../operators/mtimes.md).
 
 ## History
 

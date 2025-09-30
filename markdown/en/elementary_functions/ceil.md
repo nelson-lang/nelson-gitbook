@@ -16,7 +16,8 @@ Round up
 
 ## Description
 
-  <p><b>ceil</b> returns an integer or complex matrix made of rounded up elements.</p>
+<p>
+            <b>ceil</b> returns an integer or complex matrix made of rounded up elements.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ ceil(pi)
 
 ## See also
 
-[floor](floor.md), [fix](fix.md), [round](round.md).
+[floor](../elementary_functions/floor.md), [fix](../elementary_functions/fix.md), [round](../elementary_functions/round.md).
 
 ## History
 

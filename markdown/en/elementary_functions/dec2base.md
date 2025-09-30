@@ -19,8 +19,9 @@ Convert decimal number to another base.
 
 ## Description
 
-  <p><b>dec2base</b> converts decimal number to another base.</p>
-  <p>values are cached to speed up next computation <b>dec2base([], 2)</b> to clear cache.</p>
+<p>
+            <b>dec2base</b> converts decimal number to another base.</p>
+<p>values are cached to speed up next computation <b>dec2base([], 2)</b> to clear cache.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ Convert decimal number to another base.
 X = [65535 128; 1 0]
 Y = dec2base(X, 2)
 Y = dec2base(X, 2, 26)
+
 ```
 
 ## See also
 
-[base2dec](base2dec.md).
+[base2dec](../elementary_functions/base2dec.md).
 
 ## History
 

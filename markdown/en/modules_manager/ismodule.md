@@ -18,7 +18,8 @@ Checks if a module is loaded.
 
 ## Description
 
-  <p><b>ismodule</b> returns <b>true</b> if module is loaded otherwise <b>false</b>.</p>
+<p>
+            <b>ismodule</b> returns <b>true</b> if module is loaded otherwise <b>false</b>.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ ismodule('mymodule')
 
 ## See also
 
-[requiremodule](requiremodule.md), [getmodules](getmodules.md).
+[requiremodule](../modules_manager/requiremodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## History
 

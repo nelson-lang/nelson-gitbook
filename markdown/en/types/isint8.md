@@ -16,7 +16,7 @@ Return true if variable var is a signed 8-bit integer type array.
 
 ## Description
 
-<b>isint8</b> returns a logical <b>1</b>if the argument is a <b>signed 8-bit</b> integer array and a logical <b>0</b> otherwise.
+<b>isint8</b>returns a logical<b>1</b>if the argument is a<b>signed 8-bit</b>integer array and a logical<b>0</b>otherwise.
 
 ## Examples
 
@@ -32,7 +32,7 @@ res = isint8(B)
 
 ## See also
 
-[isa](isa.md), [int8](../integer/int8.md), [isinteger](isinteger.md).
+[isa](../types/isa.md), [int8](../integer/int8.md), [isinteger](../types/isinteger.md).
 
 ## History
 

@@ -18,7 +18,8 @@ Modify date number by field.
 
 ## Description
 
-  <p><b>r = addtodate(d, q, f)</b> adds quantity <b>q</b> to the indicated date field <b>f</b> of a scalar serial date number <b>d</b>, returning the updated date number <b>r</b>.</p>
+<p>
+            <b>r = addtodate(d, q, f)</b> adds quantity <b>q</b> to the indicated date field <b>f</b> of a scalar serial date number <b>d</b>, returning the updated date number <b>r</b>.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ t3 = addtodate(t, 4, 'hour');datevec(t3)
 
 ## See also
 
-[datenum](datenum.md), [datevec](datevec.md).
+[datenum](../time/datenum.md), [datevec](../time/datevec.md).
 
 ## History
 

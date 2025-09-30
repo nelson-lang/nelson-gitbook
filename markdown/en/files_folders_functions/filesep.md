@@ -12,7 +12,7 @@ Return the file separator character for the current platform.
 
 ## Description
 
-<b>pathsep</b> returns '\' on Windows and '/' on others platforms.
+<b>pathsep</b>returns '\' on Windows and '/' on others platforms.
 
 ## Example
 
@@ -22,7 +22,7 @@ A = filesep
 
 ## See also
 
-[pathsep](pathsep.md).
+[pathsep](../files_folders_functions/pathsep.md).
 
 ## History
 

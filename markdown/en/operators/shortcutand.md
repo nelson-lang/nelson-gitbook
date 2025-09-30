@@ -17,7 +17,8 @@ Short circuit 'AND' operator, &&
 
 ## Description
 
-  <p><b>C = A &amp;&amp; B</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
+<p>
+            <b>C = A && B</b> performs a logical <b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ C = A && B
 
 ## See also
 
-[and](and.md), [||](shortcutor.md).
+[and](../operators/and.md), [||](../operators/shortcutor.md).
 
 ## History
 

@@ -12,7 +12,8 @@ Wait for click or key press.
 
 ## Description
 
-  <p><b>w = waitforbuttonpress()</b> pauses the execution of code until the user interacts with the current figure by either clicking a mouse button or pressing a key.</p>
+<p>
+            <b>w = waitforbuttonpress()</b> pauses the execution of code until the user interacts with the current figure by either clicking a mouse button or pressing a key.</p>
 
 ## Example
 
@@ -24,7 +25,7 @@ axes;
 
 ## See also
 
-[figure](figure.md), [gcf](gcf.md).
+[figure](../graphics/figure.md), [gcf](../graphics/gcf.md).
 
 ## History
 

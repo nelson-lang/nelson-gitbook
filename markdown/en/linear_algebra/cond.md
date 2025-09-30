@@ -17,8 +17,10 @@ Condition number for inversion.
 
 ## Description
 
-  <p><b>c = cond(A)</b> returns the 2-norm condition number for inversion.</p>
-  <p><b>c = cond(A, p)</b> returns the p-norm condition number, where p can be 1, 2, Inf, or 'fro'.</p>
+<p>
+            <b>c = cond(A)</b> returns the 2-norm condition number for inversion.</p>
+<p>
+                <b>c = cond(A, p)</b> returns the p-norm condition number, where p can be 1, 2, Inf, or 'fro'.</p>
 
 ## Example
 
@@ -29,7 +31,7 @@ r = cond(X)
 
 ## See also
 
-[rcond](rcond.md).
+[rcond](../linear_algebra/rcond.md).
 
 ## History
 

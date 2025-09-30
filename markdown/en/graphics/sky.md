@@ -17,7 +17,8 @@ Sky colormap array.
 
 ## Description
 
-  <p><b>sky</b> returns the colormap with sky colors.</p>
+<p>
+            <b>sky</b> returns the colormap with sky colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('sky');
 ```
 
-<img src="sky_71A97171.svg" align="middle"/>
+<img src="sky.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

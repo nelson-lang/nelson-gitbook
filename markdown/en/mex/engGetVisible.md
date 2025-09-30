@@ -18,7 +18,7 @@ Determine visibility of Nelson engine session
 
 ## Description
 
-  <p>Determine visibility of Nelson engine session</p>
+<p>Determine visibility of Nelson engine session</p>
 
 ## Example
 
@@ -28,7 +28,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## See also
 
-[mex](mex.md), [engSetVisible](engSetVisible.md).
+[mex](../mex/mex.md), [engSetVisible](../mex/engSetVisible.md).
 
 ## History
 

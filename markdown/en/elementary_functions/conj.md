@@ -16,7 +16,8 @@ Complex conjugate
 
 ## Description
 
-  <p><b>conj</b> returns the complex conjugate.</p>
+<p>
+            <b>conj</b> returns the complex conjugate.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ r = conj(x)
 
 ## See also
 
-[real](real.md).
+[real](../elementary_functions/real.md).
 
 ## History
 

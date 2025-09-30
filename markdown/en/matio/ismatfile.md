@@ -18,9 +18,10 @@ Checks if filename a valid .mat file
 
 ## Description
 
-  <p><b>ismatfile</b> checks if filename a valid .mat file.</p>
+<p>
+            <b>ismatfile</b> checks if filename a valid .mat file.</p>
 
-Bibliography
+## Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
@@ -35,11 +36,12 @@ savemat([tempdir(), 'example_loadmat-v6.mat'], 'A', '-v6')
 [tf, ver] = ismatfile([tempdir(), 'example_loadmat-v7.mat'])
 [tf, ver] = ismatfile([tempdir(), 'example_loadmat-v6.mat'])
 [tf, ver, header] = ismatfile([tempdir(), 'example_not_existing.mat'])
+
 ```
 
 ## See also
 
-[isnh5file](../hdf5/isnh5file.md), [loadmat](loadmat.md).
+[isnh5file](../hdf5/isnh5file.md), [loadmat](../matio/loadmat.md).
 
 ## History
 

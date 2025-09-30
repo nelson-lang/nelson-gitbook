@@ -18,9 +18,11 @@ Get nelson(s) Process IDentificator.
 
 ## Description
 
-  <p><b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
-  <p><b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
-  <p>win64 and win32 are two differents architecture but they can run in same time.</p>
+<p>
+            <b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
+<p>
+                <b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
+<p>win64 and win32 are two differents architecture but they can run in same time.</p>
 
 ## Example
 
@@ -40,7 +42,7 @@ getpid('available')
 
 ## See also
 
-[unix](unix.html), [ipc](ipc.md).
+[unix](../os_functions/unix.md), [ipc](../ipc/ipc.md).
 
 ## History
 

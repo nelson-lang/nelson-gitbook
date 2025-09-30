@@ -21,8 +21,8 @@ Access state-space model data.
 
 ## Description
 
-  <p>The function <b>ssdata(sys)</b> retrieves the matrix data <b>A</b>, <b>B</b>, <b>C</b>, <b>D</b> from the state-space model (LTI array) represented by <b>sys</b>.</p>
-  <p>If <b>sys</b> is initially in the form of a transfer function or zero-pole-gain model (LTI array), it is automatically converted to the state-space representation before extracting the matrix data.</p>
+<p>The function <b>ssdata(sys)</b> retrieves the matrix data <b>A</b>, <b>B</b>, <b>C</b>, <b>D</b> from the state-space model (LTI array) represented by <b>sys</b>.</p>
+<p>If <b>sys</b> is initially in the form of a transfer function or zero-pole-gain model (LTI array), it is automatically converted to the state-space representation before extracting the matrix data.</p>
 
 ## Example
 
@@ -33,7 +33,7 @@ sysIn = ss([1 0;0 -2], [-1;0], [2 1], 0, 3.2);
 
 ## See also
 
-[tf](tf.md), [ss](ss.md).
+[tf](../control_system/tf.md), [ss](../control_system/ss.md).
 
 ## History
 

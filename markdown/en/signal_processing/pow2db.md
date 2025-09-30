@@ -16,7 +16,8 @@ Convert power to decibel.
 
 ## Description
 
-  <p><b>db = pow2db(pow)</b> returns corresponding values in decibels.</p>
+<p>
+            <b>db = pow2db(pow)</b> returns corresponding values in decibels.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ DB = pow2db([1, 0.01])
 
 ## See also
 
-[db2pow](db2pow.md).
+[db2pow](../signal_processing/db2pow.md).
 
 ## History
 

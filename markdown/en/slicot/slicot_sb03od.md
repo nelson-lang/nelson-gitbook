@@ -26,15 +26,15 @@ Solution of stable continuous- or discrete-time Lyapunov equations (Cholesky fac
 
 ## Description
 
-  <p>To solve for X = op(U)'*op(U) either the stable non-negative definite continuous-time Lyapunov equation or the convergent non-negative definite discrete-time Lyapunov equation.</p>
+<p>To solve for X = op(U)'*op(U) either the stable non-negative definite continuous-time Lyapunov equation or the convergent non-negative definite discrete-time Lyapunov equation.</p>
 
-Used function(s)
-
-SB03OD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB03OD.html
+
+## Used function(s)
+
+SB03OD
 
 ## Example
 

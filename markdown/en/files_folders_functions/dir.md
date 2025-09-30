@@ -22,19 +22,22 @@ Returns file list.
 
 ## Description
 
-  <p><b>dir</b> displays the list of files and folders in the current folder.</p>
-  <p>* (wildcard) is supported in filename and path name.</p>
+<p>
+            <b>dir</b> displays the list of files and folders in the current folder.</p>
+<p>* (wildcard) is supported in filename and path name.</p>
 
 ## Example
 
 ```matlab
 res = dir(nelsonroot())
 res = dir(nelsonroot(), '-s')
+res = dir([nelsonroot(),'/*.m'], '-s')
+
 ```
 
 ## See also
 
-[ls](ls.md), [isdir](isdir.md), [isfile](isfile.md).
+[ls](../files_folders_functions/ls.md), [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
 ## History
 

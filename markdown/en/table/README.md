@@ -1,14 +1,12 @@
 # Tables
 
-Tables
-
-## Description
-
 Tables of arrays with named columns, each potentially containing different data types.
 
-- [Accessing and Manipulating Tables in Nelson](1_accessing_manipulating_table.md)
-- [Direct computation with Table](2_direct_compution_with_table.md)
-- [Read/Write table to files](3_read_write_table.md)
+## Functions
+
+- [Accessing and Manipulating Tables in Nelson](1_accessing_manipulating_table.md) -
+- [Direct computation with Table](2_direct_compution_with_table.md) -
+- [Read/Write table to files](3_read_write_table.md) -
 - [array2table](array2table.md) - Convert homogeneous array to table.
 - [cell2table](cell2table.md) - Convert cell array to table.
 - [head](head.md) - Get top rows of table or array.

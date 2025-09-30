@@ -28,9 +28,11 @@ Vector plot.
 
 ## Description
 
-  <p><b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components <b>(U,V)</b> at the point <b>(X, Y)</b>.</p>
-  <p><b>quiver</b> try to scale the arrow lengths so that they do not overlap.</p>
-  <p>Current implementation is slow but it can be optimized using DrawLater property of figure. It could be optimized in an next version by an builtin.</p>
+<p>
+            <b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components <b>(U,V)</b> at the point <b>(X, Y)</b>.</p>
+<p>
+                <b>quiver</b> try to scale the arrow lengths so that they do not overlap.</p>
+<p>Current implementation is slow but it can be optimized using DrawLater property of figure. It could be optimized in an next version by an builtin.</p>
 
 ## Examples
 
@@ -44,7 +46,7 @@ quiver(U1,V1, 'r')
 f.DrawLater = 'off';
 ```
 
-<img src="quiver_1_15CC7211.svg" align="middle"/>
+<img src="quiver_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -65,11 +67,11 @@ title(ax2, 'Right Plot')
 f.DrawLater = 'off';
 ```
 
-<img src="quiver_2_A6CE0189.svg" align="middle"/>
+<img src="quiver_2.svg" align="middle"/>
 
 ## See also
 
-[meshgrid](meshgrid.html), [subplot](subplot.md).
+[meshgrid](../graphics/meshgrid.md), [subplot](../graphics/subplot.md).
 
 ## History
 

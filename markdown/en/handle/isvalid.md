@@ -16,7 +16,7 @@ Return true if variable h is a valid handle.
 
 ## Description
 
-<b>isvalid</b> returns a logical 1 if the argument is a valid handle and a logical 0 otherwise.
+<b>isvalid</b>returns a logical 1 if the argument is a valid handle and a logical 0 otherwise.
 
 ## See also
 

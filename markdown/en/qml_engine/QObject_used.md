@@ -12,11 +12,7 @@ Returns list of current used QObject handle.
 
 ## Description
 
-  <p>Returns list of current used QObject handle.</p>
-
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
+<p>Returns list of current used QObject handle.</p>
 
 ## Example
 
@@ -29,6 +25,10 @@ used = QObject_used()
 delete(used)
 used = QObject_used()
 ```
+
+## See also
+
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## History
 

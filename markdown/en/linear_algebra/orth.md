@@ -18,18 +18,20 @@ Range space of a matrix.
 
 ## Description
 
-  <p><b>O = orth(A)</b> returns an orthonormal basis for the range of <b>A</b>.</p>
+<p>
+            <b>O = orth(A)</b> returns an orthonormal basis for the range of <b>A</b>.</p>
 
 ## Example
 
 ```matlab
 M = [10 -20 40; -50 20 0; 10 0 30]
 O = orth(M)
+
 ```
 
 ## See also
 
-[svd](svd.md), [rank](rank.md).
+[svd](../linear_algebra/svd.md), [rank](../linear_algebra/rank.md).
 
 ## History
 

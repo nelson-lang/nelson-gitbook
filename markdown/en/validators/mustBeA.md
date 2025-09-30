@@ -16,7 +16,8 @@ Checks that input value comes from one of specified classes.
 
 ## Description
 
-  <p><b>mustBeA</b> checks that input value comes from one of specified classes.</p>
+<p>
+            <b>mustBeA</b> checks that input value comes from one of specified classes.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeA([], ["double", "single"])
 
 ## See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
 ## History
 

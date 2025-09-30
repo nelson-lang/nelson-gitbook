@@ -19,19 +19,21 @@ Block-diagonal Schur factorization.
 
 ## Description
 
-  <p><b>[T, B] = bdschur(A, CONDMAX)</b> calculates a transformation matrix <b>T</b>, where <b>B = T \ A * T</b> results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.</p>
+<p>
+            <b>[T, B] = bdschur(A, CONDMAX)</b> calculates a transformation matrix <b>T</b>, where <b>B = T \ A * T</b> results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.</p>
 
-Used function(s)
-
-MB03RD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB03RD.html
+
+## Used function(s)
+
+MB03RD
 
 ## Example
 
 ```matlab
+
 A = [1.   -1.    1.    2.    3.    1.    2.    3.;
    1.    1.    3.    4.    2.    3.    4.    2.;
    0.    0.    1.   -1.    1.    5.    4.    1.;
@@ -41,6 +43,7 @@ A = [1.   -1.    1.    2.    3.    1.    2.    3.;
    0.    0.    0.    0.    0.    0.    0.99999999   -0.99999999;
    0.    0.    0.    0.    0.    0.    0.99999999    0.99999999];
 [T, B] = bdschur(A)
+
 ```
 
 ## See also

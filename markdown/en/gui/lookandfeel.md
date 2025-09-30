@@ -25,11 +25,13 @@ default current application look and feel.
 
 ## Description
 
-  <p><b>lookandfeel</b> manages look and feel Nelson application.</p>
+<p>
+            <b>lookandfeel</b> manages look and feel Nelson application.</p>
 
 ## Examples
 
 ```matlab
+
 currentlf = lookandfeel();
 lfs = lookandfeel('available')
 for lf = lfs'
@@ -37,9 +39,11 @@ for lf = lfs'
   sleep(10);
 end
 lookandfeel(currentlf)
+
 ```
 
 ```matlab
+
 currentstylesheet = lookandfeel('stylesheet')
 stylefilename = [modulepath('gui'), '/resources/darkstyle.qss'];
 edit(stylefilename)
@@ -47,6 +51,7 @@ newstyle = fileread(stylefilename);
 previousstylesheet = lookandfeel('stylesheet', newstyle)
 sleep(10);
 lookandfeel('stylesheet', previousstylesheet)
+
 ```
 
 ## History

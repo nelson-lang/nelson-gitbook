@@ -18,7 +18,8 @@ Clear axes.
 
 ## Description
 
-  <p><b>cla</b> clears the current axes.</p>
+<p>
+            <b>cla</b> clears the current axes.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ cla
 
 ## See also
 
-[gca](gca.md), [clf](clf.md).
+[gca](../graphics/gca.md), [clf](../graphics/clf.md).
 
 ## History
 

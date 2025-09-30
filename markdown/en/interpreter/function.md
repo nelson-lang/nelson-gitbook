@@ -1,7 +1,5 @@
 # function
 
-# endfunction
-
 function declaration.
 
 ## Syntax
@@ -13,17 +11,21 @@ function declaration.
 
 ## Description
 
-  <p><b>function</b> opens a function definition.</p>
-  <p><b>endfunction</b> closes a function definition (optional, but strongly recommended).</p>
+<p>
+            <b>function</b> opens a function definition.</p>
+<p>
+                <b>endfunction</b> closes a function definition (optional, but strongly recommended).</p>
 
 ## Example
 
 in a file: demo_function.m
 
 ```matlab
+
 function r = demo_function(a, b)
   r = a + b;
 endfunction
+
 ```
 
 ## See also

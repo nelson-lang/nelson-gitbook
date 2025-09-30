@@ -14,7 +14,8 @@ Defines a global variable.
 
 ## Description
 
-  <p><b>global</b> make variable in global assign value to a variable in a specified variables scope.</p>
+<p>
+            <b>global</b> make variable in global assign value to a variable in a specified variables scope.</p>
 
 ## Example
 
@@ -36,7 +37,7 @@ disp(y)
 
 ## See also
 
-[clear](clear.md), [who](who.md).
+[clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
 ## History
 

@@ -20,7 +20,8 @@ dump the content of hdf5 file as text.
 
 ## Description
 
-  <p><b>h5dump</b> dump the content of hdf5 file as text.</p>
+<p>
+            <b>h5dump</b> dump the content of hdf5 file as text.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ R = h5dump([tempdir(), 'myfile.h5'])
 
 ## See also
 
-[h5write](h5write.md).
+[h5write](../hdf5/h5write.md).
 
 ## History
 

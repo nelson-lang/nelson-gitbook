@@ -19,7 +19,8 @@ Horizontal concatenation.
 
 ## Description
 
-  <p><b>R = horzcat(M1, M2, ... , MN)</b> returns the horizontal concatenation of M1, M2, ... , MN along the dimension 2.</p>
+<p>
+            <b>R = horzcat(M1, M2, ... , MN)</b> returns the horizontal concatenation of M1, M2, ... , MN along the dimension 2.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ C = horzcat(A, B)
 
 ## See also
 
-[vertcat](vertcat.md), [cat](cat.md).
+[vertcat](../operators/vertcat.md), [cat](../operators/cat.md).
 
 ## History
 

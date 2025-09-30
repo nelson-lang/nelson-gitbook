@@ -16,7 +16,8 @@ Infinity
 
 ## Description
 
-  <p><b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
+<p>
+            <b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
 
 ## Examples
 
@@ -34,7 +35,7 @@ Inf
 
 ## See also
 
-[nan](NaN.md).
+[nan](../constructors_functions/NaN.md).
 
 ## History
 

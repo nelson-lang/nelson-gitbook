@@ -16,7 +16,8 @@ Round to nearest integer
 
 ## Description
 
-  <p><b>round</b> rounds the elements to the nearest integers.</p>
+<p>
+            <b>round</b> rounds the elements to the nearest integers.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ round(pi)
 
 ## See also
 
-[floor](floor.md), [fix](fix.md), [ceil](ceil.md).
+[floor](../elementary_functions/floor.md), [fix](../elementary_functions/fix.md), [ceil](../elementary_functions/ceil.md).
 
 ## History
 

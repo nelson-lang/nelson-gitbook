@@ -20,9 +20,12 @@ Convert image to movie frame.
 
 ## Description
 
-  <p><b>F = im2frame(RGB)</b> converts the truecolor image <b>RGB</b> into a movie frame <b>F</b>.</p>
-  <p><b>F = im2frame(X, map)</b> converts the indexed image <b>X</b> along with its colormap map into a movie frame <b>F</b>.</p>
-  <p><b>F = im2frame(X)</b> converts the indexed image <b>X</b> into a movie frame <b>F</b>, using the current colormap.</p>
+<p>
+            <b>F = im2frame(RGB)</b> converts the truecolor image <b>RGB</b> into a movie frame <b>F</b>.</p>
+<p>
+                <b>F = im2frame(X, map)</b> converts the indexed image <b>X</b> along with its colormap map into a movie frame <b>F</b>.</p>
+<p>
+                    <b>F = im2frame(X)</b> converts the indexed image <b>X</b> into a movie frame <b>F</b>, using the current colormap.</p>
 
 ## Example
 
@@ -34,7 +37,7 @@ run([examples_directory, 'movie/demo_movie.m']);
 
 ## See also
 
-[movie](movie.md), [frame2im](frame2im.md).
+[movie](../graphics/movie.md), [frame2im](../graphics/frame2im.md).
 
 ## History
 

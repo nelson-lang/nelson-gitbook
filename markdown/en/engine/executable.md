@@ -35,12 +35,15 @@ Executables to start Nelson software.
 
 ## Description
 
-  <p><b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
-  <p><b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
-  <p><b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
-  <p/>
-  <p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
-  <p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
+<p>
+            <b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
+<p>
+                <b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
+<p>
+                    <b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
+<p></p>
+<p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
+<p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
 
 ## Examples
 
@@ -58,7 +61,7 @@ nelson-gui --help
 
 ## See also
 
-[startup](startup.md).
+[startup](../engine/startup.md).
 
 ## History
 

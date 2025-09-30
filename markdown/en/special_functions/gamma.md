@@ -16,8 +16,10 @@ Gamma special function
 
 ## Description
 
-  <p><b>gamma</b> computes the gamma function.</p>
-  <p><b>gamma</b> is an extension of the <b>factorial</b> function.</p>
+<p>
+            <b>gamma</b> computes the gamma function.</p>
+<p>
+                <b>gamma</b> is an extension of the <b>factorial</b> function.</p>
 
 ## Example
 
@@ -27,7 +29,7 @@ R = gamma([-pi:0.1:pi])
 
 ## See also
 
-[gammaln](gammaln.md), [factorial](../elementary_functions/factorial.md).
+[gammaln](../special_functions/gammaln.md), [factorial](../elementary_functions/factorial.md).
 
 ## History
 

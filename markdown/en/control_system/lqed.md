@@ -25,7 +25,8 @@ Calculates the discrete Kalman estimator configuration based on a continuous cos
 
 ## Description
 
-  <p><b>[L, P, Z, E] = LQED(A, G, C, Q, R, Ts)</b> Calculates the discrete Kalman gain matrix <b>L</b> to minimize the discrete estimation error, equivalent to the estimation error in the continuous system.</p>
+<p>
+            <b>[L, P, Z, E] = LQED(A, G, C, Q, R, Ts)</b> Calculates the discrete Kalman gain matrix <b>L</b> to minimize the discrete estimation error, equivalent to the estimation error in the continuous system.</p>
 
 ## Example
 
@@ -44,7 +45,7 @@ Ts = 0.004;
 
 ## See also
 
-[lqr](lqr.md), [lqe](lqe.md).
+[lqr](../control_system/lqr.md), [lqe](../control_system/lqe.md).
 
 ## History
 

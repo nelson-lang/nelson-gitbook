@@ -23,10 +23,14 @@ Close one or more figures
 
 ## Description
 
-  <p><b>close</b> closes the current figure.</p>
-  <p><b>close(ID)</b> closes the figure specified by figure ID.</p>
-  <p><b>close(GO)</b> closes the figure specified by figure graphics object.</p>
-  <p><b>close('all')</b> closes all figures.</p>
+<p>
+            <b>close</b> closes the current figure.</p>
+<p>
+                <b>close(ID)</b> closes the figure specified by figure ID.</p>
+<p>
+                    <b>close(GO)</b> closes the figure specified by figure graphics object.</p>
+<p>
+                        <b>close('all')</b> closes all figures.</p>
 
 ## Example
 
@@ -42,7 +46,7 @@ close('all')
 
 ## See also
 
-[gcf](gcf.md), [figure](figure.md).
+[gcf](../graphics/gcf.md), [figure](../graphics/figure.md).
 
 ## History
 

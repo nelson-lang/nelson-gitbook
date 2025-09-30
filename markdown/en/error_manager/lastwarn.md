@@ -20,22 +20,26 @@ Returns last recorded warning message.
 
 ## Description
 
-  <p><b>last_message = lastwarn()</b> returns a string containing the last warning message.</p>
-  <p><b>lastwarn('')</b> clears last warning.</p>
+<p>
+            <b>last_message = lastwarn()</b> returns a string containing the last warning message.</p>
+<p>
+                <b>lastwarn('')</b> clears last warning.</p>
 
 ## Example
 
 ```matlab
-[1:3]:3
+
+    [1:3]:3
     lastwarn
     [msg, id] = lastwarn()
     lastwarn('')
     [msg, id] = lastwarn()
+
 ```
 
 ## See also
 
-[error](error.md), [warning](warning.md).
+[error](../error_manager/error.md), [warning](../error_manager/warning.md).
 
 ## History
 

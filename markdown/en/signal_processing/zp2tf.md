@@ -19,7 +19,12 @@ Zero-pole to transfer function conversion.
 
 ## Description
 
-  <p><b>[NUM, DEN] = zp2tf(Z, P, K)</b> returns polynomial transfer function representation from zeros and poles.</p>
+<p>
+            <b>[NUM, DEN] = zp2tf(Z, P, K)</b> returns polynomial transfer function representation from zeros and poles.</p>
+
+## Bibliography
+
+zpk2tf scipy implementation (MIT)
 
 ## Example
 
@@ -30,13 +35,9 @@ k = 1;
 [n, d] = zp2tf(z, p, k)
 ```
 
-Bibliography
-
-zpk2tf scipy implementation (MIT)
-
 ## See also
 
-[tf2zpk](tf2zpk.html).
+[tf2zpk](../signal_processing/tf2zpk.md).
 
 ## History
 

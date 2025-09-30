@@ -17,7 +17,8 @@ Remove fields from structure.
 
 ## Description
 
-  <p><b>s = rmfield(st, field)</b> removes the specified field from structure array.</p>
+<p>
+            <b>s = rmfield(st, field)</b> removes the specified field from structure array.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ rmfield(example, 'b')
 
 ## See also
 
-[struct](struct.md), [fieldnames](fieldnames.md).
+[struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## History
 

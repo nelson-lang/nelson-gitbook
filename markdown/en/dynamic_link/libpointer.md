@@ -19,8 +19,9 @@ Creates an C pointer object usuable in Nelson.
 
 ## Description
 
-  <p>This is an advanced feature to manipulate C pointers.</p>
-  <p><b>ptr = libpointer()</b> creates an NULL pointer.</p>
+<p>This is an advanced feature to manipulate C pointers.</p>
+<p>
+            <b>ptr = libpointer()</b> creates an NULL pointer.</p>
 
 ## Examples
 
@@ -31,7 +32,7 @@ p.DataType
 p.Value
 ```
 
-```C
+```matlab
 NLSDYNAMIC_LINK_IMPEXP double *multiplicationDoubleByReference(double *x)
 {
     *x *= 2;
@@ -51,11 +52,13 @@ r2
 r1.setdatatype('doublePtr');
 r1.reshape(1, 1);
 get(r1)
+
+
 ```
 
 ## See also
 
-[C/Nelson equivalent data types](C_datatype.md), [isNull](libpointer_isNull.md), [libpointer.reshape](libpointer_reshape.md), [libpointer.setdatatype](libpointer_setdatatype.md).
+[C/Nelson equivalent data types](../dynamic_link/C_datatype.md), [isNull](../dynamic_link/libpointer_isNull.md), [libpointer.reshape](../dynamic_link/libpointer_reshape.md), [libpointer.setdatatype](../dynamic_link/libpointer_setdatatype.md).
 
 ## History
 

@@ -18,8 +18,9 @@ Computes if matrix is hermitian or skew-hermitian.
 
 ## Description
 
-  <p><b>ishermitian(x)</b> computes if matrix is hermitian or skew-hermitian.</p>
-  <p>A matrix is skew-hermitian if the complex conjugate transpose of the matrix is equal to the negative of the original matrix.</p>
+<p>
+            <b>ishermitian(x)</b> computes if matrix is hermitian or skew-hermitian.</p>
+<p>A matrix is skew-hermitian if the complex conjugate transpose of the matrix is equal to the negative of the original matrix.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ ishermitian([1 0 1i; 0 1 0; -1i 0 1])
 
 ## See also
 
-[issymmetric](issymmetric.md).
+[issymmetric](../linear_algebra/issymmetric.md).
 
 ## History
 

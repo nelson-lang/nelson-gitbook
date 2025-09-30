@@ -1,16 +1,16 @@
-![banner](banner_homepage.png)
+<img src="banner_homepage.png" alt="banner" style="display:block; margin-left:auto; margin-right:auto;" />
 
-### Nelson 1.14.0.0
+### Nelson 1.15.0.0
 
-**Nelson** est un langage de calcul numérique puissant et open-source, conçu pour offrir un environnement complet et intuitif aux ingénieurs, scientifiques et étudiants. Avec plus de 1 200 fonctions intégrées, Nelson prend en charge une large gamme de tâches, allant de l'algèbre de base aux simulations numériques avancées.
+La page d'accueil principale de Nelson se trouve à [https://nelson-lang.github.io/nelson-website/](https://nelson-lang.github.io/nelson-website/).
 
-Initialement inspiré par des langages comme MATLAB© et Gnu Octave, Nelson offre aux utilisateurs une expérience légère mais riche en fonctionnalités. Il est conçu pour être facile à apprendre et à utiliser, avec un accent particulier sur la performance et la flexibilité.
+## 🎓 **Introduction**
 
-**Essayez-le !**
+Nelson est un langage de calcul numérique puissant et open-source, développé pour fournir un environnement complet et intuitif aux ingénieurs, scientifiques et étudiants. Avec plus de 1 200 fonctions intégrées, Nelson prend en charge une large gamme de tâches, de l'algèbre de base aux simulations numériques avancées.
 
-[Site Web](https://nelson-lang.github.io/nelson-website/)
+Initialement inspiré par des langages comme MATLAB© et GNU Octave, Nelson offre aux utilisateurs une expérience légère mais riche en fonctionnalités. Il est conçu pour être facile à apprendre et à utiliser, avec un accent particulier sur la performance et la flexibilité.
 
-## Fonctionnalités
+## 🛠️ **Fonctionnalités**
 
 ### Types de données gérés par Nelson
 
@@ -51,6 +51,7 @@ Initialement inspiré par des langages comme MATLAB© et Gnu Octave, Nelson offr
 - **Interface de fonction étrangère (FFI)** : Construction et chargement dynamique de code C/Fortran.
 - **Compatibilité API MEX C** : Interface avec les API C compatibles MEX.
 - **API Nelson Engine** : Utilisation de Nelson comme moteur en arrière-plan dans le code C, compatible avec l'API MEX Engine.
+- **Interface Julia** : Appel de scripts et fonctions Julia depuis Nelson.
 - **Interface Python** : Appel de scripts et fonctions Python depuis Nelson.
 - **API RESTful** : Permet à Nelson d'interagir avec des services web.
 
@@ -82,7 +83,9 @@ Initialement inspiré par des langages comme MATLAB© et Gnu Octave, Nelson offr
 
 ---
 
-- [Journal des modifications](./changelogs/CHANGELOG.md)
+# Journal des modifications
+
+- [Journal des modifications v1.x.x](./changelogs/CHANGELOG.md)
 - [Journal des modifications v0.7.x](./changelogs/CHANGELOG-0.7.x.md)
 - [Journal des modifications v0.6.x](./changelogs/CHANGELOG-0.6.x.md)
 - [Journal des modifications v0.5.x](./changelogs/CHANGELOG-0.5.x.md)
@@ -90,4 +93,9 @@ Initialement inspiré par des langages comme MATLAB© et Gnu Octave, Nelson offr
 - [Journal des modifications v0.3.x](./changelogs/CHANGELOG-0.3.x.md)
 - [Journal des modifications v0.2.x](./changelogs/CHANGELOG-0.2.x.md)
 - [Journal des modifications v0.1.x](./changelogs/CHANGELOG-0.1.x.md)
+
+---
+
+# Licence
+
 - [Licence de Nelson](./license/license.md)

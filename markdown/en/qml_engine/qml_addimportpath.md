@@ -12,8 +12,9 @@ Adds path as directory where the qml engine searches for installed modules.
 
 ## Description
 
-  <p><b>qml_addimportpath</b> adds <b>path</b> as a directory where the engine searches for installed modules in a URL-based directory structure.</p>
-  <p>The newly added path will be first in <b>qml_importpathlist</b>.</p>
+<p>
+            <b>qml_addimportpath</b> adds <b>path</b> as a directory where the engine searches for installed modules in a URL-based directory structure.</p>
+<p>The newly added path will be first in <b>qml_importpathlist</b>.</p>
 
 ## Example
 
@@ -21,11 +22,12 @@ Adds path as directory where the qml engine searches for installed modules.
 qml_importpathlist()
 qml_addimportpath(tempdir)
 qml_importpathlist()
+
 ```
 
 ## See also
 
-[qml_importpathlist](qml_importpathlist.md).
+[qml_importpathlist](../qml_engine/qml_importpathlist.md).
 
 ## History
 

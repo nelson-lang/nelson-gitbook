@@ -17,11 +17,11 @@ Returns the properties name of an object handle.
 
 ## Description
 
-<b>properties</b> returns a cell of strings with properties name.
+<b>properties</b>returns a cell of strings with properties name.
 
 ## See also
 
-[isprop](isprop.md).
+[isprop](../handle/isprop.md).
 
 ## History
 

@@ -16,7 +16,7 @@ Return true if variable var is a integer type array.
 
 ## Description
 
-<b>isinteger</b> returns a logical 1 if the argument is a integer type (int8, int16 ...) array and a logical 0 otherwise.
+<b>isinteger</b>returns a logical 1 if the argument is a integer type (int8, int16 ...) array and a logical 0 otherwise.
 
 ## Examples
 
@@ -37,7 +37,7 @@ res = isinteger(A)
 
 ## See also
 
-[isa](isa.md), [isint8](isint8.md).
+[isa](../types/isa.md), [isint8](../types/isint8.md).
 
 ## History
 

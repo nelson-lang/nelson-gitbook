@@ -19,7 +19,8 @@ logarithmically spaced vector constructor.
 
 ## Description
 
-  <p><b>logspace</b> generates an logarithmically spaced vector.</p>
+<p>
+            <b>logspace</b> generates an logarithmically spaced vector.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ V = logspace(1+2i, 10+10i, 4)
 
 ## See also
 
-[linspace](linspace.md).
+[linspace](../elementary_functions/linspace.md).
 
 ## History
 

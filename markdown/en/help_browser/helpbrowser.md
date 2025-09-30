@@ -4,11 +4,12 @@ internal function used by 'doc'.
 
 ## Description
 
-  <p><b>helpbrowser</b> function used by <b>doc</b> (not documented).</p>
+<p>
+            <b>helpbrowser</b> function used by <b>doc</b> (not documented).</p>
 
 ## See also
 
-[doc](doc.md).
+[doc](../help_browser/doc.md).
 
 ## History
 

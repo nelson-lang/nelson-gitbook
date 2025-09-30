@@ -17,7 +17,7 @@ Display prompt and wait for user input.
 
 ## Description
 
-  <p>Display prompt and wait for user input. input returns a string which is the expression entered at keyboard.</p>
+<p>Display prompt and wait for user input. input returns a string which is the expression entered at keyboard.</p>
 
 ## Example
 

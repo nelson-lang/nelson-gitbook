@@ -16,11 +16,11 @@ Smart indent a nelson file
 
 ## Description
 
-<b>smartindent</b> indents code to make reading statements such as while loops easier.
+<b>smartindent</b>indents code to make reading statements such as while loops easier.
 
 ## See also
 
-[edit](edit.md).
+[edit](../text_editor/edit.md).
 
 ## History
 

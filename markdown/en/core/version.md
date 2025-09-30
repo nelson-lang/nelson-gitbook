@@ -35,7 +35,8 @@ Return the version of Nelson.
 
 ## Description
 
-  <p><b>version</b> the version of Nelson.</p>
+<p>
+            <b>version</b> the version of Nelson.</p>
 
 ## Examples
 

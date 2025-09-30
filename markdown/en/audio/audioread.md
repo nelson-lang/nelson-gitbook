@@ -23,9 +23,10 @@ Read an audio file.
 
 ## Description
 
-  <p><b>audioread</b> reads an audio file.</p>
-  <p>Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See <b>audiosupportedformats</b> function to have all supported formats.</p>
-  <p>If <b>type</b> is 'native' then audio data depends on the file format (single, double, integers).</p>
+<p>
+            <b>audioread</b> reads an audio file.</p>
+<p>Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See <b>audiosupportedformats</b> function to have all supported formats.</p>
+<p>If <b>type</b> is 'native' then audio data depends on the file format (single, double, integers).</p>
 
 ## Example
 
@@ -40,7 +41,7 @@ clear playObj
 
 ## See also
 
-[playblocking](playblocking.md), [audioplayer](audioplayer.md), [audiosupportedformats](audiosupportedformats.md), [audiowrite](audiowrite.md).
+[playblocking](../audio/playblocking.md), [audioplayer](../audio/audioplayer.md), [audiosupportedformats](../audio/audiosupportedformats.md), [audiowrite](../audio/audiowrite.md).
 
 ## History
 

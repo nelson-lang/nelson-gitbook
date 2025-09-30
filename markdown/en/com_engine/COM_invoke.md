@@ -19,7 +19,7 @@ Invoke method on COM object or interface.
 
 ## Description
 
-  <p>If the method returns a COM interface, then ole_invoke returns a new COM object that represents the returned interface.</p>
+<p>If the method returns a COM interface, then ole_invoke returns a new COM object that represents the returned interface.</p>
 
 ## Example
 
@@ -33,7 +33,7 @@ clear pWord
 
 ## See also
 
-[COM_get](COM_get.md), [COM_set](COM_set.md).
+[COM_get](../com_engine/COM_get.md), [COM_set](../com_engine/COM_set.md).
 
 ## History
 

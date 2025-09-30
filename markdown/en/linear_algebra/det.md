@@ -16,18 +16,20 @@ Matrix determinant.
 
 ## Description
 
-  <p><b>res = det(x)</b> returns the determinant of square matrix x.</p>
+<p>
+            <b>res = det(x)</b> returns the determinant of square matrix x.</p>
 
 ## Example
 
 ```matlab
 A = [10 -20 40; -50 20 0; 10 0 30]
 D = det(A)
+
 ```
 
 ## See also
 
-[rcond](rcond.md).
+[rcond](../linear_algebra/rcond.md).
 
 ## History
 

@@ -16,8 +16,10 @@ Remove trailing whitespace.
 
 ## Description
 
-  <p><b>deblank</b> removes trailing whitespace.</p>
-  <p><b>deblank</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).</p>
+<p>
+            <b>deblank</b> removes trailing whitespace.</p>
+<p>
+                <b>deblank</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).</p>
 
 ## Examples
 
@@ -35,7 +37,7 @@ deblank([' Nel Son ', char(160)])
 
 ## See also
 
-[strtrim](strtrim.md), [toupper](toupper.md).
+[strtrim](../string/strtrim.md), [toupper](../string/toupper.md).
 
 ## History
 

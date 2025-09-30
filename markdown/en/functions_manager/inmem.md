@@ -20,7 +20,8 @@ Names of functions, MEX-files.
 
 ## Description
 
-  <p><b>inmem</b> returns cells array of names of functions and mex currently loaded.</p>
+<p>
+            <b>inmem</b> returns cells array of names of functions and mex currently loaded.</p>
 
 ## Example
 
@@ -29,6 +30,7 @@ clear all
 tand(3)
 inmem()
 inmem('-completenames')
+
 ```
 
 ## See also

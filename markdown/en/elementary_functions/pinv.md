@@ -18,7 +18,8 @@ Moore-Penrose pseudoinverse
 
 ## Description
 
-  <p><b>pinv</b> returns Moore-Penrose Pseudoinverse of matrix A.</p>
+<p>
+            <b>pinv</b> returns Moore-Penrose Pseudoinverse of matrix A.</p>
 
 ## Example
 

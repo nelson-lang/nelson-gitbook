@@ -16,7 +16,8 @@ Build full file name from parts.
 
 ## Description
 
-  <p><b>R = fullfile(part1, ... , partN)</b> build full file name from parts.</p>
+<p>
+            <b>R = fullfile(part1, ... , partN)</b> build full file name from parts.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ fullfile([nelsonroot(), '/./toto'])
 
 ## See also
 
-[fullpath](fullpath.md).
+[fullpath](../files_folders_functions/fullpath.md).
 
 ## History
 

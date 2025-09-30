@@ -21,8 +21,9 @@ Checks the number of output arguments.
 
 ## Description
 
-  <p><b>nargoutchk</b> checks the number of output arguments of an function.</p>
-  <p>To ensure a minimum number of outputs while imposing no maximum limit, set <b>maxArgs</b> to <b>inf</b>. For example, <b>nargoutchk(2, inf)</b> generates an error if fewer than two outputs are specified.</p>
+<p>
+            <b>nargoutchk</b> checks the number of output arguments of an function.</p>
+<p>To ensure a minimum number of outputs while imposing no maximum limit, set <b>maxArgs</b> to <b>inf</b>. For example, <b>nargoutchk(2, inf)</b> generates an error if fewer than two outputs are specified.</p>
 
 ## Example
 
@@ -35,7 +36,7 @@ nargoutchk(1, 2, 3, 'struct')
 
 ## See also
 
-[nargout](nargin.md), [narginchk](narginchk.md).
+[nargout](../core/nargin.md), [narginchk](../core/narginchk.md).
 
 ## History
 

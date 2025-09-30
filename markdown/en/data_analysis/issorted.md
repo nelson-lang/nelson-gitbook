@@ -22,7 +22,8 @@ Determine if array is sorted.
 
 ## Description
 
-  <p><b>tf = issorted(A)</b> returns true if the elements of <b>A</b> are sorted in ascending order, and false otherwise.</p>
+<p>
+            <b>tf = issorted(A)</b> returns true if the elements of <b>A</b> are sorted in ascending order, and false otherwise.</p>
 
 ## Example
 
@@ -41,7 +42,7 @@ issorted(A, 'rows') % returns false
 
 ## See also
 
-[sort](sort.md).
+[sort](../data_analysis/sort.md).
 
 ## History
 

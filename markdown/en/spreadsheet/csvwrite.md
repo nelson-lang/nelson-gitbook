@@ -15,7 +15,8 @@ Write comma-separated value file.
 
 ## Description
 
-  <p><b>csvwrite</b> writes an numeric matrix to an CSV format file.</p>
+<p>
+            <b>csvwrite</b> writes an numeric matrix to an CSV format file.</p>
 
 ## Example
 
@@ -27,11 +28,12 @@ R = csvread(filename)
 A = eye(3, 2);
 csvwrite(filename, A);
 R = fileread(filename)
+
 ```
 
 ## See also
 
-[csvread](csvread.md), [dlmread](dlmread.md), [fileread](../stream_manager/fileread.md).
+[csvread](../spreadsheet/csvread.md), [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
 ## History
 

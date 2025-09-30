@@ -19,7 +19,7 @@ Get property value from audioplayer interface.
 
 ## Description
 
-  <p>The function returns the value of the property specified in the string, propertyname.</p>
+<p>The function returns the value of the property specified in the string, propertyname.</p>
 
 ## Example
 
@@ -27,11 +27,12 @@ Get property value from audioplayer interface.
 signal = rand(2, 44100) - 0.5;
 playObj = audioplayer(signal, 44100, 16)
 playObj.Running
+
 ```
 
 ## See also
 
-[audioplayer_set](audioplayer_set.md).
+[audioplayer_set](../audio/audioplayer_set.md).
 
 ## History
 

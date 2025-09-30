@@ -19,9 +19,12 @@ Capture figure or axes as movie frame.
 
 ## Description
 
-  <p><b>F = getframe</b> captures the current axes as displayed on the screen as a movie frame. F is a structure containing the image data. The capture preserves the on-screen size of the axes but does not include tick labels or any content outside the axes boundaries.</p>
-  <p><b>F = getframe(ax)</b> captures the specified axes ax instead of the current axes.</p>
-  <p><b>F = getframe(fig)</b> captures the entire figure window specified by fig, including the axes title, labels, and tick marks. However, the captured frame does not include the figure’s menu or toolbars.</p>
+<p>
+            <b>F = getframe</b> captures the current axes as displayed on the screen as a movie frame. F is a structure containing the image data. The capture preserves the on-screen size of the axes but does not include tick labels or any content outside the axes boundaries.</p>
+<p>
+                <b>F = getframe(ax)</b> captures the specified axes ax instead of the current axes.</p>
+<p>
+                    <b>F = getframe(fig)</b> captures the entire figure window specified by fig, including the axes title, labels, and tick marks. However, the captured frame does not include the figure’s menu or toolbars.</p>
 
 ## Examples
 
@@ -31,6 +34,7 @@ surf(peaks);
 F = getframe(f);
 figure('Color',[0.5 0.5 0.5]);
 imshow(F.cdata)
+
 ```
 
 ```matlab
@@ -45,11 +49,12 @@ figure('Color',[0.5 0.5 0.5]);
 imshow(F1.cdata)
 figure('Color',[0.5 0.5 0.5]);
 imshow(F2.cdata)
+
 ```
 
 ## See also
 
-[image](image.md), [imshow](imshow.md), [imwrite](imwrite.md).
+[image](../graphics/image.md), [imshow](../graphics/imshow.md), [imwrite](../graphics/imwrite.md).
 
 ## History
 

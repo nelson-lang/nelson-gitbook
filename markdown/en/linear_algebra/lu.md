@@ -19,12 +19,14 @@ LU matrix factorization.
 
 ## Description
 
-  <p><b>[L, U] = lu(A)</b> function decomposes a full matrix <b>A</b> into two matrices: an upper triangular matrix <b>U</b> and a permuted lower triangular matrix <b>L</b>.</p>
-  <p>This factorization satisfies the equation <b>A = L * U</b>.</p>
-  <p><b>[L, U, P] = lu(A)</b> function, when used with three output arguments, provides a permutation matrix <b>P</b> in addition to the unit lower triangular matrix <b>L</b> and the upper triangular matrix <b>U</b>.</p>
-  <p>This factorization is expressed as <b>A = P'LU</b>, where <b>L</b> is unit lower triangular, and <b>U</b> is upper triangular.</p>
+<p>
+            <b>[L, U] = lu(A)</b> function decomposes a full matrix <b>A</b> into two matrices: an upper triangular matrix <b>U</b> and a permuted lower triangular matrix <b>L</b>.</p>
+<p>This factorization satisfies the equation <b>A = L * U</b>.</p>
+<p>
+                <b>[L, U, P] = lu(A)</b> function, when used with three output arguments, provides a permutation matrix <b>P</b> in addition to the unit lower triangular matrix <b>L</b> and the upper triangular matrix <b>U</b>.</p>
+<p>This factorization is expressed as <b>A = P'LU</b>, where <b>L</b> is unit lower triangular, and <b>U</b> is upper triangular.</p>
 
-Used function(s)
+## Used function(s)
 
 LAPACKE_dgetrf, LAPACKE_sgetrf, LAPACKE_zgetrf, LAPACKE_cgetrf
 
@@ -34,6 +36,7 @@ LAPACKE_dgetrf, LAPACKE_sgetrf, LAPACKE_zgetrf, LAPACKE_cgetrf
 A = magic(5)
 [L, U] = lu(A)
 L * U
+
 ```
 
 ```matlab
@@ -45,13 +48,14 @@ title(_('L factor'))
 subplot(1, 2, 2)
 spy(U)
 title(_('U factor'))
+
 ```
 
-<img src="lu_6FD47B49.svg" align="middle"/>
+<img src="lu.svg" align="middle"/>
 
 ## See also
 
-[cond](cond.md).
+[cond](../linear_algebra/cond.md).
 
 ## History
 

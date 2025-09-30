@@ -10,8 +10,9 @@ Pure Imaginary number.
 
 ## Description
 
-  <p><b>i</b>, or <b>j</b> returns a pure imaginary number equivalent to sqrt(-1).</p>
-  <p>Beware, i and j can be redefined and used as ordinary variables, in this case, you must use clear to restore default behavior.</p>
+<p>
+            <b>i</b>, or <b>j</b> returns a pure imaginary number equivalent to sqrt(-1).</p>
+<p>Beware, i and j can be redefined and used as ordinary variables, in this case, you must use clear to restore default behavior.</p>
 
 ## Examples
 

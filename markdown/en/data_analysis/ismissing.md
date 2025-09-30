@@ -16,12 +16,17 @@ Check for missing values.
 
 ## Description
 
-  <p><b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
-  <p>missing data are defined as:</p>
-  <p><b>NaN</b> for double or single</p>
-  <p><b>missing</b> for string array</p>
-  <p><b>' '</b> for character array</p>
-  <p><b>''</b> for cell of character array</p>
+<p>
+            <b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
+<p>missing data are defined as:</p>
+<p>
+                <b>NaN</b> for double or single</p>
+<p>
+                    <b>missing</b> for string array</p>
+<p>
+                        <b>' '</b> for character array</p>
+<p>
+                            <b>''</b> for cell of character array</p>
 
 ## Example
 
@@ -34,11 +39,12 @@ C = 'Nel son'
 ismissing(C)
 D = {'Nel' '' 'son'}
 ismissing(D)
+
 ```
 
 ## See also
 
-[isfinite](isfinite.html).
+[isfinite](../data_analysis/isfinite.md).
 
 ## History
 

@@ -16,7 +16,8 @@ Return the number of nonzero elements.
 
 ## Description
 
-  <p><b>nnz</b> returns the number of non zero elements in an matrix.</p>
+<p>
+            <b>nnz</b> returns the number of non zero elements in an matrix.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ nzmax(sp)
 
 ## See also
 
-[sparse](sparse.md), [nzmax](nzmax.md).
+[sparse](../sparse/sparse.md), [nzmax](../sparse/nzmax.md).
 
 ## History
 

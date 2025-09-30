@@ -1,12 +1,11 @@
 # Core
 
-Core
-
-## Description
-
 core functions
 
+## Functions
+
 - [banner](banner.md) - Shows Nelson banner.
+- [crc32](crc32.md) - Get crc32 checksum.
 - [eval](eval.md) - Evaluate Nelson code in string.
 - [evalc](evalc.md) - Evaluate Nelson code with console capture.
 - [evalin](evalin.md) - Evaluate Nelson code in string in an specified scope.
@@ -26,7 +25,8 @@ core functions
 - [nelsonappid](nelsonappid.md) - Returns nelson application ID
 - [nelsonroot](nelsonroot.md) - Returns Nelson's root folder.
 - [nfilename](nfilename.md) - Returns the name of the currently executing file.
-- [pause](pause.md) - Pauses script execution.
+- [mfilename](nfilename.md) - Returns the name of the currently executing file.
+- [pause ](pause.md) - Pauses script execution.
 - [prefdir](prefdir.md) - Return the preferences directory used by Nelson.
 - [quit](quit.md) - Terminate Nelson application
 - [run](run.md) - Executes a script file (.m).

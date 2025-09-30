@@ -17,7 +17,8 @@ Returns value of a field in a struct.
 
 ## Description
 
-  <p><b>value = getfield(st, field)</b> returns the value of the field named <b>field</b> from a structure.</p>
+<p>
+            <b>value = getfield(st, field)</b> returns the value of the field named <b>field</b> from a structure.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ getfield(example, 'b')
 
 ## See also
 
-[struct](struct.md), [fieldnames](fieldnames.md).
+[struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## History
 

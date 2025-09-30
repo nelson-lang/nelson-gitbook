@@ -16,7 +16,8 @@ Flip order of elements left to right
 
 ## Description
 
-  <p><b>fliplr</b> return an new array of <b>A</b> flipped left to right.</p>
+<p>
+            <b>fliplr</b> return an new array of <b>A</b> flipped left to right.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ y = fliplr(x)
 
 ## See also
 
-[flipud](flipud.md), [flip](flip.md), [flipdim](flipdim.md).
+[flipud](../elementary_functions/flipud.md), [flip](../elementary_functions/flip.md), [flipdim](../elementary_functions/flipdim.md).
 
 ## History
 

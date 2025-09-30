@@ -20,8 +20,9 @@ Evaluate Nelson code in string.
 
 ## Description
 
-  <p><b>eval</b> executes Nelson instructions given in a string.</p>
-  <p>Please use <b>try catch end</b> block instead than <b>eval</b>, if you need to capture an error message for higher performance.</p>
+<p>
+            <b>eval</b> executes Nelson instructions given in a string.</p>
+<p>Please use <b>try catch end</b> block instead than <b>eval</b>, if you need to capture an error message for higher performance.</p>
 
 ## Examples
 
@@ -47,7 +48,7 @@ eval('error(''blabla'')', 'l = lasterror(); disp([''lasterror message: '', l.mes
 
 ## See also
 
-[execstr](execstr.md), [evalc](evalc.md), [evalin](evalin.md).
+[execstr](../core/execstr.md), [evalc](../core/evalc.md), [evalin](../core/evalin.md).
 
 ## History
 

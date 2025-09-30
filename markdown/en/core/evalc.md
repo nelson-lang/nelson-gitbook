@@ -19,9 +19,10 @@ Evaluate Nelson code with console capture.
 
 ## Description
 
-  <p><b>evalc</b> executes Nelson instructions given in a string.</p>
-  <p>console display is redirected into a variable.</p>
-  <p>diary, more, and input are disabled when <b>evalc</b> is used.</p>
+<p>
+            <b>evalc</b> executes Nelson instructions given in a string.</p>
+<p>console display is redirected into a variable.</p>
+<p>diary, more, and input are disabled when <b>evalc</b> is used.</p>
 
 ## Examples
 
@@ -35,7 +36,7 @@ t = evalc('dir')
 
 ## See also
 
-[eval](eval.md), [evalin](evalin.md), [execstr](execstr.md).
+[eval](../core/eval.md), [evalin](../core/evalin.md), [execstr](../core/execstr.md).
 
 ## History
 

@@ -19,7 +19,7 @@ Start Nelson engine session for single and nonshared use.
 
 ## Description
 
-  <p>engOpenSingleUse start Nelson engine session for single and nonshared use.</p>
+<p>engOpenSingleUse start Nelson engine session for single and nonshared use.</p>
 
 ## Example
 
@@ -29,7 +29,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## See also
 
-[mex](mex.md), [engClose](engClose.md), [engOpen](engOpen.md).
+[mex](../mex/mex.md), [engClose](../mex/engClose.md), [engOpen](../mex/engOpen.md).
 
 ## History
 

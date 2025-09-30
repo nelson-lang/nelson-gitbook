@@ -18,9 +18,11 @@ greater than, > operator.
 
 ## Description
 
-  <p><b>C = gt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than B.</p>
-  <p/>
-  <p><b>gt</b> compares only the real part of numeric arrays.</p>
+<p>
+            <b>C = gt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than B.</p>
+<p></p>
+<p>
+                <b>gt</b> compares only the real part of numeric arrays.</p>
 
 ## Examples
 
@@ -46,7 +48,7 @@ gt(0.8 - 0.6 - 0.2, 0)
 
 ## See also
 
-[ne](ne.md), [lt](lt.md), [le](le.md), [ge](ge.md), [eq](eq.md).
+[ne](../operators/ne.md), [lt](../operators/lt.md), [le](../operators/le.md), [ge](../operators/ge.md), [eq](../operators/eq.md).
 
 ## History
 

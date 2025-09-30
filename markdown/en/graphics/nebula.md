@@ -17,7 +17,8 @@ Nebula colormap array.
 
 ## Description
 
-  <p><b>nebula</b> returns the colormap with nebula colors.</p>
+<p>
+            <b>nebula</b> returns the colormap with nebula colors.</p>
 
 ## Example
 
@@ -31,11 +32,11 @@ colorbar;
 title(['Nebula Colormap with ', num2str(n), ' Colors']);
 ```
 
-<img src="nebula_BA1B0DA1.svg" align="middle"/>
+<img src="nebula.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

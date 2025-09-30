@@ -20,12 +20,13 @@ Fast Fourier transform.
 
 ## Description
 
-  <p><b>fft(X)</b> computes the discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
+<p>
+            <b>fft(X)</b> computes the discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
 
 ## Example
 
 ```matlab
-% Sampling frequency
+ % Sampling frequency
 Fs = 150;
 
 % Time vector of 1 second
@@ -48,7 +49,7 @@ f = (0:nfft *inv(2) -1)*Fs * inv(nfft);
 
 ## See also
 
-[ifft](ifft.md), [fftw](fftw.md).
+[ifft](../fftw/ifft.md), [fftw](../fftw/fftw.md).
 
 ## History
 

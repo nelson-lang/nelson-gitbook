@@ -15,8 +15,9 @@ Return the current time as the number of seconds or nanoseconds since the epoch.
 
 ## Description
 
-  <p><b>time</b> returns the current time as the number of seconds or nanoseconds since the epoch.</p>
-  <p>The epoch is referenced to 00:00:00 UTC (Coordinated Universal Time) 1 Jan 1970.</p>
+<p>
+            <b>time</b> returns the current time as the number of seconds or nanoseconds since the epoch.</p>
+<p>The epoch is referenced to 00:00:00 UTC (Coordinated Universal Time) 1 Jan 1970.</p>
 
 ## Example
 
@@ -25,11 +26,12 @@ t1=time()
 sleep(10)
 t2 = time()
 t2 - t1
+
 ```
 
 ## See also
 
-[tic](tic.md), [sleep](sleep.md).
+[tic](../time/tic.md), [sleep](../time/sleep.md).
 
 ## History
 

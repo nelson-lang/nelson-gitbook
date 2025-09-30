@@ -14,11 +14,12 @@ Generates C MEX gateway (internal function).
 
 ## Description
 
-  <p><b>dlgeneratemexgateway</b> generates a C MEX gateway used by <b>mex</b> (internal function).</p>
+<p>
+            <b>dlgeneratemexgateway</b> generates a C MEX gateway used by <b>mex</b> (internal function).</p>
 
 ## See also
 
-[mex](mex.md).
+[mex](../mex/mex.md).
 
 ## History
 

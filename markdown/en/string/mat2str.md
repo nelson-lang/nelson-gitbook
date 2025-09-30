@@ -19,8 +19,9 @@ Matrix to String.
 
 ## Description
 
-  <p><b>mat2str</b> converts a matrix to a string.</p>
-  <p>This string may be used to reconstruct the original matrix with <b>execstr</b> function.</p>
+<p>
+            <b>mat2str</b> converts a matrix to a string.</p>
+<p>This string may be used to reconstruct the original matrix with <b>execstr</b> function.</p>
 
 ## Example
 
@@ -30,6 +31,7 @@ R = mat2str(pi, 'class')
 R = mat2str(pi, 4)
 R = mat2str(pi + i, 'class')
 execstr(['RB = ', R])
+
 ```
 
 ## See also

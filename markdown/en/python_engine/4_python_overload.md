@@ -4,78 +4,12 @@ The representation of Python operators in Nelson.
 
 ## Description
 
-  <p>Nelson facilitates the utilization of the subsequent overloaded operators:</p>
-  <table>
-    <tr>
-      <th>Python Operator Symbol</th>
-      <th>Python Methods</th>
-      <th>Nelson Methods</th>
-    </tr>
-    <tr>
-      <td>- (unary operator)</td>
-      <td>__neg__</td>
-      <td>uminus, -a</td>
-    </tr>
-    <tr>
-      <td>+ (unary operator)</td>
-      <td>__pos__</td>
-      <td>uplus, +a</td>
-    </tr>
-    <tr>
-      <td>+ (binary operator)</td>
-      <td>__add__, __radd__</td>
-      <td>plus, +</td>
-    </tr>
-    <tr>
-      <td>- (binary operator)</td>
-      <td>__sub__, __rsub__</td>
-      <td>minus, -</td>
-    </tr>
-    <tr>
-      <td>* (binary operator)</td>
-      <td>__mul__, __rmul__</td>
-      <td>mtimes, *</td>
-    </tr>
-    <tr>
-      <td>/ (binary operator)</td>
-      <td>__truediv__, __rtruediv__</td>
-      <td>mrdivide, /</td>
-    </tr>
-    <tr>
-      <td>== (binary operator)</td>
-      <td>__eq__</td>
-      <td>eq, ==</td>
-    </tr>
-    <tr>
-      <td>&gt; (binary operator)</td>
-      <td>__gt__</td>
-      <td>gt, &gt;</td>
-    </tr>
-    <tr>
-      <td>&lt; (binary operator)</td>
-      <td>__lt__</td>
-      <td>lt, &lt;</td>
-    </tr>
-    <tr>
-      <td>!= (binary operator)</td>
-      <td>__ne__</td>
-      <td>ne, ~=</td>
-    </tr>
-    <tr>
-      <td>&gt;= (binary operator)</td>
-      <td>__ge__</td>
-      <td>ge, &gt;=</td>
-    </tr>
-    <tr>
-      <td>&lt;= (binary operator)</td>
-      <td>__le__</td>
-      <td>le, &lt;=</td>
-    </tr>
-  </table>
-  <p/>
-  <p><b>isequal</b> builtin is also overloaded to manage python type.</p>
-  <p>For numpy types, <b>isequal</b> call <b>numpy.array_equal</b> from python.</p>
-  <p>Others python operators are currently not supported.</p>
+<p>Nelson facilitates the utilization of the subsequent overloaded operators:</p>
+Python Operator Symbol Python Methods Nelson Methods - (unary operator) __neg__ uminus, -a + (unary operator) __pos__ uplus, +a + (binary operator) __add__, __radd__ plus, + - (binary operator) __sub__, __rsub__ minus, - * (binary operator) __mul__, __rmul__ mtimes, * / (binary operator) __truediv__, __rtruediv__ mrdivide, / == (binary operator) __eq__ eq, == > (binary operator) __gt__ gt, > < (binary operator) __lt__ lt, < != (binary operator) __ne__ ne, ~= >= (binary operator) __ge__ ge, >= <= (binary operator) __le__ le, <=<p></p>
+<p>
+            <b>isequal</b> builtin is also overloaded to manage python type.</p>
+<p>For numpy types, <b>isequal</b> call <b>numpy.array_equal</b> from python.</p>
+<p>Others python operators are currently not supported.</p>
 
 ## Example
 
@@ -89,7 +23,7 @@ isequal(R_A, R_B)
 
 ## See also
 
-[pyrun](pyrun.md).
+[pyrun](../python_engine/pyrun.md).
 
 ## History
 

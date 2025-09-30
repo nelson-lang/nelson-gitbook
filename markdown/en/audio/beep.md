@@ -18,7 +18,7 @@ Produces a beep sound.
 
 ## Description
 
-<b>beep</b> produces an beep system.
+<b>beep</b>produces an beep system.
 
 ## Example
 

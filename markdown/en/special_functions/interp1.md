@@ -21,9 +21,10 @@ Linear 1-D data interpolation
 
 ## Description
 
-  <p><b>vq = interp1(x, v, xq)</b> returns interpolated values of a 1-D function at specific query points using linear interpolation.</p>
+<p>
+            <b>vq = interp1(x, v, xq)</b> returns interpolated values of a 1-D function at specific query points using linear interpolation.</p>
 
-Bibliography
+## Bibliography
 
 de Boor, C., A Practical Guide to Splines, Springer-Verlag, 1978.
 
@@ -38,7 +39,7 @@ plot(1:9, v, 'o', xq, vq, '*');
 legend('v','vq');
 ```
 
-<img src="interp1_1E8962FB.svg" align="middle"/>
+<img src="interp1.svg" align="middle"/>
 
 ## History
 

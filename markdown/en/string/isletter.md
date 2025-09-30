@@ -16,7 +16,7 @@ Determine which characters are letters.
 
 ## Description
 
-<b>isletter</b> determines which characters are letters.
+<b>isletter</b>determines which characters are letters.
 
 ## Examples
 
@@ -30,7 +30,7 @@ isletter("六書 six writings")
 
 ## See also
 
-[toupper](toupper.md).
+[toupper](../string/toupper.md).
 
 ## History
 

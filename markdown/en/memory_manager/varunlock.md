@@ -13,7 +13,8 @@ Unlocks a variable.
 
 ## Description
 
-  <p><b>varunlock</b> unlocks a variable.</p>
+<p>
+            <b>varunlock</b> unlocks a variable.</p>
 
 ## Example
 
@@ -28,11 +29,13 @@ varislock('local', 'y')
 y = 4
 varlock('local', 'ans')
 varislock('local', 'ans')
+
+
 ```
 
 ## See also
 
-[varislock](varislock.md), [varlock](varlock.md).
+[varislock](../memory_manager/varislock.md), [varlock](../memory_manager/varlock.md).
 
 ## History
 

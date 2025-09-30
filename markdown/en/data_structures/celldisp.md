@@ -14,7 +14,8 @@ Display cell array contents.
 
 ## Description
 
-  <p><b>celldisp</b> recursively display the contents of a cell array.</p>
+<p>
+            <b>celldisp</b> recursively display the contents of a cell array.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ celldisp(C, 'var_name')
 
 ## See also
 
-[disp](${display_format).
+[disp](../display_format/disp.md).
 
 ## History
 

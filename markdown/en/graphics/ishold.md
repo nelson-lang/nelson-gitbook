@@ -17,11 +17,12 @@ Get current hold state.
 
 ## Description
 
-  <p><b>tf = ishold(ax)</b> returns the hold state of the specified axes object.</p>
+<p>
+            <b>tf = ishold(ax)</b> returns the hold state of the specified axes object.</p>
 
 ## See also
 
-[hold](hold.md), [newplot](newplot.md).
+[hold](../graphics/hold.md), [newplot](../graphics/newplot.md).
 
 ## History
 

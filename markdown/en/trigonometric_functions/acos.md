@@ -16,18 +16,19 @@ Computes the inverse cosine in radians for each element of x.
 
 ## Description
 
-<b>acos</b> computes the inverse cosine in radians for each element of <b>x</b>.
+<b>acos</b>computes the inverse cosine in radians for each element of<b>x</b>.
 
 ## Example
 
 ```matlab
 A = eye(3, 3);
 res = acos(A)
+
 ```
 
 ## See also
 
-[cos](cos.html).
+[cos](../trigonometric_functions/cos.md).
 
 ## History
 

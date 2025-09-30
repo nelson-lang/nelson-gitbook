@@ -12,7 +12,8 @@ Checks if version is for Windows platform.
 
 ## Description
 
-  <p><b>ispc</b> checks if it is a Windows platform.</p>
+<p>
+            <b>ispc</b> checks if it is a Windows platform.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ end
 
 ## See also
 
-[isunix](isunix.md), [ismac](ismac.md).
+[isunix](../os_functions/isunix.md), [ismac](../os_functions/ismac.md).
 
 ## History
 

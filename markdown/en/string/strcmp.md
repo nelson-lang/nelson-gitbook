@@ -17,7 +17,7 @@ Strings comparaison.
 
 ## Description
 
-<b>strcmp</b> compares two strings.
+<b>strcmp</b>compares two strings.
 
 ## Example
 
@@ -31,11 +31,12 @@ C = {'C', 'Contents'; 'Nel', 'son'}
 strcmp(A, B)
 strcmp(A, C)
 strcmp(C, 'C')
+
 ```
 
 ## See also
 
-[char](char.md).
+[char](../string/char.md).
 
 ## History
 

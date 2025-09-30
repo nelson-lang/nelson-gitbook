@@ -1,7 +1,5 @@
 # for
 
-# parfor
-
 for loop.
 
 ## Syntax
@@ -11,8 +9,10 @@ for loop.
 
 ## Description
 
-  <p><b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.</p>
-  <p><b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
+<p>
+            <b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.</p>
+<p>
+                <b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
 
 ## Examples
 
@@ -26,7 +26,7 @@ for i = [1, 2; 3 4], disp(i), disp('next'), end
 
 ## See also
 
-[while](while.md).
+[while](../interpreter/while.md).
 
 ## History
 

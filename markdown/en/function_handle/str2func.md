@@ -16,8 +16,11 @@ Returns a function handle from a string.
 
 ## Description
 
-  <p><b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b></p>
-  <p><b>str</b> function name or representation of anonymous function.</p>
+<p>
+            <b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b>
+        </p>
+<p>
+            <b>str</b> function name or representation of anonymous function.</p>
 
 ## Examples
 
@@ -34,7 +37,7 @@ M = rand(4, 3, 5);
 
 ## See also
 
-[func2str](func2str.md), [isfunction_handle](isfunction_handle.md).
+[func2str](../function_handle/func2str.md), [isfunction_handle](../function_handle/isfunction_handle.md).
 
 ## History
 

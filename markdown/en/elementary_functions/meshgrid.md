@@ -23,7 +23,8 @@ Cartesian rectangular grid in 2-D or 3-D.
 
 ## Description
 
-  <p><b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.</p>
+<p>
+            <b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.</p>
 
 ## Example
 

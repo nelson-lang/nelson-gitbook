@@ -1,10 +1,8 @@
 # Files and folders functions
 
-Files and folders functions
-
-## Description
-
 files, folders and paths functions
+
+## Functions
 
 - [cd](cd.md) - Changes Nelson current directory.
 - [copyfile](copyfile.md) - Copy files or folder.

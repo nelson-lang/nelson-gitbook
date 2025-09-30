@@ -21,9 +21,11 @@ Audio player object.
 
 ## Description
 
-  <p><b>audioplayer</b> returns an audioplayer object to play data on an output device.</p>
-  <p>audioplayer object uses global scope and need to be deleted by user.</p>
-  <p><b>audioplayer</b> can play multichannels data if your sound card supports it.</p>
+<p>
+            <b>audioplayer</b> returns an audioplayer object to play data on an output device.</p>
+<p>audioplayer object uses global scope and need to be deleted by user.</p>
+<p>
+                <b>audioplayer</b> can play multichannels data if your sound card supports it.</p>
 
 ## Example
 
@@ -38,7 +40,7 @@ playObj
 
 ## See also
 
-[delete](../handle/delete.md), [play](play.md), [stop](stop.md), [resume](resume.md), [pause](pause.html).
+[delete](../handle/delete.md), [play](../audio/play.md), [stop](../audio/stop.md), [resume](../audio/resume.md), [pause](../audio/pause.md).
 
 ## History
 

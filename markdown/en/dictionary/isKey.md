@@ -16,9 +16,10 @@ Check if dictionary contains key
 
 ## Description
 
-  <p><b>tf = isKey(d, key)</b> returns a logical true if the specified key exists in the configured dictionary, and a logical false if it does not.</p>
-  <p>If <b>d</b> is an unconfigured dictionary, <b>isKey</b> throws an error.</p>
-  <p>If <b>key</b> is an array of multiple keys, then tf is a logical array of the same size.</p>
+<p>
+            <b>tf = isKey(d, key)</b> returns a logical true if the specified key exists in the configured dictionary, and a logical false if it does not.</p>
+<p>If <b>d</b> is an unconfigured dictionary, <b>isKey</b> throws an error.</p>
+<p>If <b>key</b> is an array of multiple keys, then tf is a logical array of the same size.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ tf = isKey(d, ["biil" , "Yannis")
 
 ## See also
 
-[dictionary](dictionary.md), [configureDictionary](configureDictionary.md), [keys](keys.md).
+[dictionary](../dictionary/dictionary.md), [configureDictionary](../dictionary/configureDictionary.md), [keys](../dictionary/keys.md).
 
 ## History
 

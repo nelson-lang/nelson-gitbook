@@ -18,7 +18,8 @@ Clear figure.
 
 ## Description
 
-  <p><b>clf</b> clears the current figure.</p>
+<p>
+            <b>clf</b> clears the current figure.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ clf
 
 ## See also
 
-[gcf](gcf.md), [cla](cla.md).
+[gcf](../graphics/gcf.md), [cla](../graphics/cla.md).
 
 ## History
 

@@ -4,7 +4,7 @@ About SLICOT license.
 
 ## Description
 
-  <p>Nelson uses SLICOT v5.9 under BSD-3-Clause license.</p>
+<p>Nelson uses SLICOT v5.9 under BSD-3-Clause license.</p>
 
 ## History
 

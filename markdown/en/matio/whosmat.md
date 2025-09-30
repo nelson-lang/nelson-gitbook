@@ -20,9 +20,10 @@ List variables in an valid .mat file with sizes and types.
 
 ## Description
 
-  <p><b>whosmat</b> lists variables in an valid .mat file.</p>
+<p>
+            <b>whosmat</b> lists variables in an valid .mat file.</p>
 
-Bibliography
+## Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 

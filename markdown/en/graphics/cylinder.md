@@ -24,7 +24,8 @@ Create cylinder.
 
 ## Description
 
-  <p><b>cylinder</b> creates cylinder and plots it.</p>
+<p>
+            <b>cylinder</b> creates cylinder and plots it.</p>
 
 ## Examples
 
@@ -34,7 +35,7 @@ colormap(spring)
 cylinder()
 ```
 
-<img src="cylinder_1_391729CC.svg" align="middle"/>
+<img src="cylinder_1.svg" align="middle"/>
 
 ```matlab
 f2 = figure();
@@ -43,11 +44,11 @@ r = 4;
 cylinder(r);
 ```
 
-<img src="cylinder_2_325EDE9E.svg" align="middle"/>
+<img src="cylinder_2.svg" align="middle"/>
 
 ## See also
 
-[sphere](sphere.md), [surf](surf.md).
+[sphere](../graphics/sphere.md), [surf](../graphics/surf.md).
 
 ## History
 

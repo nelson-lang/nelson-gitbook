@@ -20,8 +20,10 @@ Creates a help dialog box.
 
 ## Description
 
-  <p><b>errordlg</b> creates an help dialog box.</p>
-  <p><b>h = helpdlg(text_help, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+<p>
+            <b>errordlg</b> creates an help dialog box.</p>
+<p>
+                <b>h = helpdlg(text_help, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
 
 ## Examples
 
@@ -44,7 +46,7 @@ h = helpdlg('help string', 'dialog title', 'on')
 
 ## See also
 
-[warndlg](warndlg.md), [errordlg](errordlg.md), [questdlg](questdlg.md), [msgbox](msgbox.md).
+[warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [msgbox](../gui/msgbox.md).
 
 ## History
 

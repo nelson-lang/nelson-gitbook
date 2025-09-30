@@ -17,7 +17,8 @@ Unary plus, + operator
 
 ## Description
 
-  <p><b>C = uplus(A)</b> performs unary plus ie +A.</p>
+<p>
+            <b>C = uplus(A)</b> performs unary plus ie +A.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ M =-3;
 
 ## See also
 
-[uminus](uminus.md), [plus](plus.md).
+[uminus](../operators/uminus.md), [plus](../operators/plus.md).
 
 ## History
 

@@ -18,8 +18,10 @@ Types of dictionary keys and values.
 
 ## Description
 
-  <p><b>keyType = types(d)</b> returns the data type of the keys in the dictionary.</p>
-  <p><b>[keyType, valueType] = types(d)</b> returns the data types of the keys and values in the specified dictionary. If the dictionary d is not configured, types returns a string scalar indicating <b>missing</b>.</p>
+<p>
+            <b>keyType = types(d)</b> returns the data type of the keys in the dictionary.</p>
+<p>
+                <b>[keyType, valueType] = types(d)</b> returns the data types of the keys and values in the specified dictionary. If the dictionary d is not configured, types returns a string scalar indicating <b>missing</b>.</p>
 
 ## Example
 
@@ -28,11 +30,12 @@ names = ["Biil" "John" "Yann"];
 wheels = [1 2 3];
 d = dictionary(wheels, names)
 [keyType, valueType] = types(d)
+
 ```
 
 ## See also
 
-[dictionary](dictionary.md), [keys](keys.md), [values](values.md).
+[dictionary](../dictionary/dictionary.md), [keys](../dictionary/keys.md), [values](../dictionary/values.md).
 
 ## History
 

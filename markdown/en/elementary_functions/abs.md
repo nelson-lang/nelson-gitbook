@@ -16,8 +16,9 @@ Absolute value
 
 ## Description
 
-  <p><b>abs</b> computes the absolute value.</p>
-  <p>If input argument is a complex number, <b>abs</b> computes the complex magnitude.</p>
+<p>
+            <b>abs</b> computes the absolute value.</p>
+<p>If input argument is a complex number, <b>abs</b> computes the complex magnitude.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ r = abs(x)
 
 ## See also
 
-[conj](conj.md).
+[conj](../elementary_functions/conj.md).
 
 ## History
 

@@ -18,10 +18,12 @@ Toeplitz matrix
 
 ## Description
 
-  <p><b>T = toeplitz(c, r)</b> returns the Toeplitz matrix whose first row is <b>r</b> and first column is <b>c</b>.</p>
-  <p><b>T = toeplitz(c)</b> returns the symmetric Toeplitz matrix.</p>
+<p>
+            <b>T = toeplitz(c, r)</b> returns the Toeplitz matrix whose first row is <b>r</b> and first column is <b>c</b>.</p>
+<p>
+                <b>T = toeplitz(c)</b> returns the symmetric Toeplitz matrix.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/Toeplitz_matrix
 
@@ -33,7 +35,7 @@ T = toeplitz(1:5, 1:2:7)
 
 ## See also
 
-[hankel](hankel.md).
+[hankel](../elementary_functions/hankel.md).
 
 ## History
 

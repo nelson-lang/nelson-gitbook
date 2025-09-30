@@ -12,7 +12,8 @@ Copy plot to clipboard.
 
 ## Description
 
-  <p><b>copygraphics</b> copy figure to clipboard.</p>
+<p>
+            <b>copygraphics</b> copy figure to clipboard.</p>
 
 ## Example
 
@@ -23,11 +24,12 @@ y = x;
 F = X.*exp(-X.^2-Y.^2);
 surf(X,Y,F);
 copygraphics(gcf());
+
 ```
 
 ## See also
 
-[gcf](../graphics/gcf.md), [saveas](saveas.md).
+[gcf](../graphics/gcf.md), [saveas](../graphics_io/saveas.md).
 
 ## History
 

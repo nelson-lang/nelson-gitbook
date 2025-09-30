@@ -18,7 +18,8 @@ Matrix power, ^ operator
 
 ## Description
 
-  <p><b>C = mpower(A, B)</b> performs matrix power operation: A^B</p>
+<p>
+            <b>C = mpower(A, B)</b> performs matrix power operation: A^B</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ mpower(3, 4)
 
 ## See also
 
-[power](power.md).
+[power](../operators/power.md).
 
 ## History
 

@@ -1,10 +1,8 @@
 # Handle
 
-Handle
-
-## Description
-
 handle object functions
+
+## Functions
 
 - [delete](delete.md) - delete handle objects.
 - [get](get.md) - Retrieve a property value from an handle object.

@@ -1,10 +1,8 @@
 # Control System functions
 
-Control System functions
-
-## Description
-
 Algorithms for designing, analyzing and tuning linear control systems.
+
+## Functions
 
 - [abcdchk](abcdchk.md) - Verifies the dimensional compatibility of matrices A, B, C, and D.
 - [acker](acker.md) - Pole placement gain selection using Ackermann's formula.

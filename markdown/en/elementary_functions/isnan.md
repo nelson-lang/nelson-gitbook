@@ -16,7 +16,8 @@ Check for Not a Number entries.
 
 ## Description
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
+<p>
+            <b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ R = isnan(X)
 
 ## See also
 
-[isinf](isinf.md).
+[isinf](../elementary_functions/isinf.md).
 
 ## History
 

@@ -1,10 +1,8 @@
 # Graphics functions
 
-Graphics functions
-
-## Description
-
 graphics functions
+
+## Functions
 
 - [abyss](abyss.md) - Abyss colormap array.
 - [ancestor](ancestor.md) - Ancestor of graphics object.
@@ -34,7 +32,7 @@ graphics functions
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
 - [getframe](getframe.md) - Capture figure or axes as movie frame.
-- [Managing Callback Interruptions in Nelson](graphical_callback.md)
+- [Managing Callback Interruptions in Nelson](graphical_callback.md) -
 - [gray](gray.md) - Gray colormap array.
 - [grid](grid.md) - Display or hide axes grid lines.
 - [groot](groot.md) - graphic root object.
@@ -42,18 +40,14 @@ graphics functions
 - [hist](hist.md) - Histogram plot.
 - [hold](hold.md) - Retain current plot when adding new plots.
 - [hot](hot.md) - Hot colormap array.
-- [im2double](im2double.md) - Convert image to double precision.
 - [im2frame](im2frame.md) - Convert image to movie frame.
 - [image](image.md) - Display image from array.
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
-- [imread](imread.md) - Read image from graphics file.
-- [imrotate](imrotate.md) - Rotate image by specified angle
 - [imshow](imshow.md) - Display image.
-- [imwrite](imwrite.md) - Write image to graphics file.
 - [is2D](is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
-- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [isgraphics](isgraphics.md) - Check for graphics object.
 - [ishold](ishold.md) - Get current hold state.
+- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [jet](jet.md) - Jet colormap array.
 - [legend](legend.md) - Add legend to axes.
 - [line](line.md) - Create primitive line.

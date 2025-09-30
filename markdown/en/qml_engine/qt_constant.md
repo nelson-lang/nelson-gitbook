@@ -18,8 +18,9 @@ Returns Qt constant value.
 
 ## Description
 
-  <p><b>v = qt_version(constant_name)</b> returns Qt constant value.</p>
-  <p>Qt 5 family allows to get constant easily with qml_evaluatestring(constant_name), but it is no more available with Qt 6</p>
+<p>
+            <b>v = qt_version(constant_name)</b> returns Qt constant value.</p>
+<p>Qt 5 family allows to get constant easily with qml_evaluatestring(constant_name), but it is no more available with Qt 6</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ c = qt_constant()
 
 ## See also
 
-[qt_version](qt_version.md).
+[qt_version](../qml_engine/qt_version.md).
 
 ## History
 

@@ -16,12 +16,8 @@ Evaluates a js file.
 
 ## Description
 
-  <p>Evaluates a js file.</p>
-  <p>If returned value cannot be converted to a basic type, it will converted to string.</p>
-
-## See also
-
-[qml_evaluatestring](qml_evaluatestring.md).
+<p>Evaluates a js file.</p>
+<p>If returned value cannot be converted to a basic type, it will converted to string.</p>
 
 ## Example
 
@@ -32,6 +28,10 @@ fwrite(f, 'a = 2 + 4');
 fclose(f);
 qml_evaluatefile(test_file)
 ```
+
+## See also
+
+[qml_evaluatestring](../qml_engine/qml_evaluatestring.md).
 
 ## History
 

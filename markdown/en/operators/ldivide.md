@@ -18,7 +18,8 @@ Left division, .\ operator.
 
 ## Description
 
-  <p><b>C = ldivide(A, B)</b> returns the element-by-element left division of A and B.</p>
+<p>
+            <b>C = ldivide(A, B)</b> returns the element-by-element left division of A and B.</p>
 
 ## Examples
 
@@ -36,7 +37,7 @@ A .\ B
 
 ## See also
 
-[rdivide](rdivide.md), [mldivide](mldivide.md).
+[rdivide](../operators/rdivide.md), [mldivide](../operators/mldivide.md).
 
 ## History
 

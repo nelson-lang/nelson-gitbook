@@ -17,9 +17,10 @@ Convert table to cell array
 
 ## Description
 
-  <p><b>C = table2cell(T)</b> converts the table <b>T</b> into a cell array <b>C</b>, where each variable in <b>T</b> is transformed into a column of cells in <b>C</b>.</p>
-  <p>The output <b>C</b> does not include any properties from <b>T.Properties</b>.</p>
-  <p>If <b>T</b> contains row names, these will not be included in <b>C</b>.</p>
+<p>
+            <b>C = table2cell(T)</b> converts the table <b>T</b> into a cell array <b>C</b>, where each variable in <b>T</b> is transformed into a column of cells in <b>C</b>.</p>
+<p>The output <b>C</b> does not include any properties from <b>T.Properties</b>.</p>
+<p>If <b>T</b> contains row names, these will not be included in <b>C</b>.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ C = table2cell(T)
 
 ## See also
 
-[cell2table](cell2table.md), [table](table.md).
+[cell2table](../table/cell2table.md), [table](../table/table.md).
 
 ## History
 

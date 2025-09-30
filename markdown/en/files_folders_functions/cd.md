@@ -20,10 +20,12 @@ Changes Nelson current directory.
 
 ## Description
 
-  <p>Changes the current working directory to dirname.</p>
-  <p><b>a = cd()</b> without input argument returns the current working directory.</p>
-  <p><b>cd()</b> without input argument displays the current working directory.</p>
-  <p/>
+<p>Changes the current working directory to dirname.</p>
+<p>
+            <b>a = cd()</b> without input argument returns the current working directory.</p>
+<p>
+                <b>cd()</b> without input argument displays the current working directory.</p>
+<p></p>
 
 ## Example
 
@@ -31,11 +33,12 @@ Changes Nelson current directory.
 previous = cd(tempdir())
 cd
 cd ..
+
 ```
 
 ## See also
 
-[mkdir](mkdir.md), [pwd](pwd.md).
+[mkdir](../files_folders_functions/mkdir.md), [pwd](../files_folders_functions/pwd.md).
 
 ## History
 

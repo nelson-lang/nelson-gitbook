@@ -16,7 +16,7 @@ Computes the inverse hyperbolic tangent.
 
 ## Description
 
-<b>acos</b> computes the inverse hyperbolic tangent.
+<b>acos</b>computes the inverse hyperbolic tangent.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = atanh(A)
 
 ## See also
 
-[tanh](tanh.html).
+[tanh](../trigonometric/tanh.md).
 
 ## History
 

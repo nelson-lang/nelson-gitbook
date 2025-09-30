@@ -22,19 +22,20 @@ Cumulative product of array elements.
 
 ## Description
 
-  <p><b>R = cumprod(M)</b> returns the cumulative product of the array elements of M.</p>
+<p>
+            <b>R = cumprod(M)</b> returns the cumulative product of the array elements of M.</p>
 
 ## Example
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
-R = cumprid(M)
+R = cumprod(M)
 R = cumprod(M, 'reverse')
 ```
 
 ## See also
 
-[ndims](ndims.html), [prod](prod.md), [cumsum](cumsum.md).
+[ndims](../data_analysis/ndims.md), [prod](../data_analysis/prod.md), [cumsum](../data_analysis/cumsum.md).
 
 ## History
 

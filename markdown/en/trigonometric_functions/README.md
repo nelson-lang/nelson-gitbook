@@ -1,10 +1,8 @@
 # Trigonometric functions
 
-Trigonometric functions
-
-## Description
-
 module about sine, cosine, and related functions.
+
+## Functions
 
 - [acos](acos.md) - Computes the inverse cosine in radians for each element of x.
 - [acosd](acosd.md) - Inverse cosine in degrees.

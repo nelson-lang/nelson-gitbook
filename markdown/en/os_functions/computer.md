@@ -22,7 +22,8 @@ System information.
 
 ## Description
 
-  <p><b>computers</b> identifies the type of computer that Nelson is running on.</p>
+<p>
+            <b>computers</b> identifies the type of computer that Nelson is running on.</p>
 
 ## Example
 
@@ -35,7 +36,7 @@ arch = computer('arch')
 
 ## See also
 
-[ispc](ispc.md), [ismac](ismac.md), [isunix](isunix.md).
+[ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md), [isunix](../os_functions/isunix.md).
 
 ## History
 

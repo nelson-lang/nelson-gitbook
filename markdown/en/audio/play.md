@@ -16,7 +16,7 @@ Plays an audioplayer object.
 
 ## Description
 
-<b>play</b> plays an audioplayer object.
+<b>play</b>plays an audioplayer object.
 
 ## Example
 
@@ -31,7 +31,7 @@ playObj
 
 ## See also
 
-[audioplayer](audioplayer.md), [playblocking](playblocking.md).
+[audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
 ## History
 

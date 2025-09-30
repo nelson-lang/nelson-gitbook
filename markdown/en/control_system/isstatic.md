@@ -16,7 +16,7 @@ Checks if model is static or dynamic.
 
 ## Description
 
-  <p>Checks if model is static.</p>
+<p>Checks if model is static.</p>
 
 ## Example
 
@@ -27,7 +27,7 @@ isstatic(sys)
 
 ## See also
 
-[isct](isct.md).
+[isct](../control_system/isct.md).
 
 ## History
 

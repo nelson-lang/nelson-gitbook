@@ -17,7 +17,8 @@ Cool colormap array.
 
 ## Description
 
-  <p><b>cool</b> returns the colormap with cool colors.</p>
+<p>
+            <b>cool</b> returns the colormap with cool colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('cool');
 ```
 
-<img src="cool_E6CFAE6A.svg" align="middle"/>
+<img src="cool.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

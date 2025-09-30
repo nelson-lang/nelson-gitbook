@@ -23,9 +23,9 @@ Creates a new directory.
 
 ## Description
 
-  <p>Creates a directory named dirname in the directory parent.</p>
-  <p>If no parent directory is specified the present working directory is used.</p>
-  <p>If directory is created or already existing, status is true, otherwise it will be false.</p>
+<p>Creates a directory named dirname in the directory parent.</p>
+<p>If no parent directory is specified the present working directory is used.</p>
+<p>If directory is created or already existing, status is true, otherwise it will be false.</p>
 
 ## Example
 
@@ -36,11 +36,12 @@ if isdir([tempdir(), 'subdir_example'])
 else
 	disp('NOT OK')
 end
+
 ```
 
 ## See also
 
-[isdir](isdir.md).
+[isdir](../files_folders_functions/isdir.md).
 
 ## History
 

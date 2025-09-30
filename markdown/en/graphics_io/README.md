@@ -1,10 +1,8 @@
 # Graphics I/O functions
 
-Graphics I/O functions
-
-## Description
-
 graphics Input/Output functions
+
+## Functions
 
 - [copygraphics](copygraphics.md) - Copy plot to clipboard.
 - [imformats](imformats.md) - Manage supported image formats.

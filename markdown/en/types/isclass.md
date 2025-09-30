@@ -16,7 +16,7 @@ Return true if variable var is a class object.
 
 ## Description
 
-<b>isclass</b> returns a logical 1 if the argument is a class object and a logical 0 otherwise.
+<b>isclass</b>returns a logical 1 if the argument is a class object and a logical 0 otherwise.
 
 ## Example
 
@@ -30,7 +30,7 @@ res = isclass(c)
 
 ## See also
 
-[class](class.md), [isstruct](isstruct.html).
+[class](../types/class.md), [isstruct](../integer/isstruct.md).
 
 ## History
 

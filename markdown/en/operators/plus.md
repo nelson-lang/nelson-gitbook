@@ -18,7 +18,8 @@ Addition, + operator
 
 ## Description
 
-  <p><b>C = plus(A, B)</b> performs addition A + B variables.</p>
+<p>
+            <b>C = plus(A, B)</b> performs addition A + B variables.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ ones(0, 0) + 1
 
 ## See also
 
-[minus](minus.md), [uplus](uplus.md).
+[minus](../operators/minus.md), [uplus](../operators/uplus.md).
 
 ## History
 

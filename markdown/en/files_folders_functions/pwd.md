@@ -13,9 +13,10 @@ Returns current directory.
 
 ## Description
 
-  <p>Returns the current working directory.</p>
-  <p><b>pwd()</b> without input argument displays the current working directory.</p>
-  <p/>
+<p>Returns the current working directory.</p>
+<p>
+            <b>pwd()</b> without input argument displays the current working directory.</p>
+<p></p>
 
 ## Example
 
@@ -26,7 +27,7 @@ pwd()
 
 ## See also
 
-[cd](cd.md), [dir](dir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md).
 
 ## History
 

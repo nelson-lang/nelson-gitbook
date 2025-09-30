@@ -18,7 +18,8 @@ Matrix multiplication, \* operator
 
 ## Description
 
-  <p><b>C = mtimes(A, B)</b> performs matrix multiplication operation: A * B.</p>
+<p>
+            <b>C = mtimes(A, B)</b> performs matrix multiplication operation: A * B.</p>
 
 ## Examples
 
@@ -35,7 +36,7 @@ M1 * M2
 
 ## See also
 
-[times](times.md).
+[times](../operators/times.md).
 
 ## History
 

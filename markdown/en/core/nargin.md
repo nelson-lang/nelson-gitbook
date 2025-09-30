@@ -19,8 +19,9 @@ Returns the number of input arguments.
 
 ## Description
 
-  <p><b>nargin</b> returns the number of input arguments of an function.</p>
-  <p>If the last input argument of the function  is <b>varargin</b> the returned value is negative.</p>
+<p>
+            <b>nargin</b> returns the number of input arguments of an function.</p>
+<p>If the last input argument of the function  is <b>varargin</b> the returned value is negative.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ nargin('cos')
 
 ## See also
 
-[nargout](nargout.md).
+[nargout](../core/nargout.md).
 
 ## History
 

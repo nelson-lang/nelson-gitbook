@@ -17,7 +17,8 @@ Spring colormap array.
 
 ## Description
 
-  <p><b>spring</b> returns the colormap with spring colors.</p>
+<p>
+            <b>spring</b> returns the colormap with spring colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('spring');
 ```
 
-<img src="spring_E55BA39.svg" align="middle"/>
+<img src="spring.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

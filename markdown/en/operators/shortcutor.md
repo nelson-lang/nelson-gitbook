@@ -17,7 +17,8 @@ Short circuit 'OR' operator, ||
 
 ## Description
 
-  <p><b>C = A || B</b> performs a logical <b>OR</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
+<p>
+            <b>C = A || B</b> performs a logical <b>OR</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
 
 ## Example
 
@@ -25,11 +26,12 @@ Short circuit 'OR' operator, ||
 A = [6 8 0; 0 3 89; 15 0 0]
 B = [66 56 0; 11 33 55; -11 0 0]
 C = A || B
+
 ```
 
 ## See also
 
-[or](or.md), [&&](shortcutand.md), [xor](xor.html).
+[or](../operators/or.md), [&&](../operators/shortcutand.md), [xor](../operators/xor.md).
 
 ## History
 

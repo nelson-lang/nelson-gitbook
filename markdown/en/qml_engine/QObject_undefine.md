@@ -17,11 +17,7 @@ Undefine a dynamic property of a QObject handle.
 
 ## Description
 
-  <p>Undefine a dynamic property of a QObject handle.</p>
-
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
+<p>Undefine a dynamic property of a QObject handle.</p>
 
 ## Example
 
@@ -33,6 +29,10 @@ get(h, 'myProp')
 QObject_undefine(h, 'myProp')
 get(h, 'myProp')
 ```
+
+## See also
+
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
 
 ## History
 

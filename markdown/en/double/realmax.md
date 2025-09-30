@@ -5,7 +5,7 @@ Largest positive floating-point number.
 ## Syntax
 
 - R = realmax()
-- R = realtmax('double')
+- R = realmax('double')
 - R = realmax('single')
 
 ## Output argument
@@ -14,7 +14,8 @@ Largest positive floating-point number.
 
 ## Description
 
-  <p><b>realmax</b> returns largest positive floating-point number.</p>
+<p>
+            <b>realmax</b> returns largest positive floating-point number.</p>
 
 ## Example
 

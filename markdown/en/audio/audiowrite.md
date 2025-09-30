@@ -17,8 +17,9 @@ Writes an audio file.
 
 ## Description
 
-  <p><b>audiorwrite</b> writes an audio file.</p>
-  <p>More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.</p>
+<p>
+            <b>audiorwrite</b> writes an audio file.</p>
+<p>More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.</p>
 
 ## Example
 
@@ -33,11 +34,12 @@ dest_mp3 = [tempdir(), 'haha.mp3'];
 audiowrite(dest_mp3, y, fs);
 dest_caf = [tempdir(), 'haha.caf'];
 audiowrite(dest_caf, y, fs);
+
 ```
 
 ## See also
 
-[audioplayer](audioplayer.md), [audiosupportedformats](audiosupportedformats.md).
+[audioplayer](../audio/audioplayer.md), [audiosupportedformats](../audio/audiosupportedformats.md).
 
 ## History
 

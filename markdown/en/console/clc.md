@@ -8,13 +8,15 @@ Clear Command Window.
 
 ## Description
 
-  <p><b>clc()</b> clears the console and move the cursor to the upper left corner.</p>
+<p>
+            <b>clc()</b> clears the console and move the cursor to the upper left corner.</p>
 
 ## Example
 
 ```matlab
 disp('Hello');
 clc()
+
 ```
 
 ## See also

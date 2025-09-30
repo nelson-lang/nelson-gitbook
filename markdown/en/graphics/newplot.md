@@ -17,7 +17,8 @@ Prepare to produce a new plot.
 
 ## Description
 
-  <p><b>newplot</b> prepares a figure and axes for graphics commands.</p>
+<p>
+            <b>newplot</b> prepares a figure and axes for graphics commands.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ h = newplot()
 
 ## See also
 
-[plot](plot.md), [figure](figure.md).
+[plot](../graphics/plot.md), [figure](../graphics/figure.md).
 
 ## History
 

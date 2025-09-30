@@ -20,8 +20,9 @@ Incomplete beta function
 
 ## Description
 
-  <p><b>betainc</b> computes the Incomplete beta function.</p>
-  <p>All arrays must be the same size or any of them can be scalar.</p>
+<p>
+            <b>betainc</b> computes the Incomplete beta function.</p>
+<p>All arrays must be the same size or any of them can be scalar.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ R = betainc(0.5, 1:10, 3)
 
 ## See also
 
-[gamma](gamma.md).
+[gamma](../special_functions/gamma.md).
 
 ## History
 

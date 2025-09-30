@@ -8,7 +8,8 @@ QML demos.
 
 ## Description
 
-  <p><b>qml_demos</b> shows QML -- Nelson demos.</p>
+<p>
+            <b>qml_demos</b> shows QML -- Nelson demos.</p>
 
 ## Example
 

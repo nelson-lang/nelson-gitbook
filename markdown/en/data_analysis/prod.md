@@ -23,7 +23,8 @@ Product of array elements.
 
 ## Description
 
-  <p><b>R = prod(M)</b> returns the product of the array elements of M.</p>
+<p>
+            <b>R = prod(M)</b> returns the product of the array elements of M.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ R = prod(M, 'native')
 
 ## See also
 
-[ndims](ndims.html), [sum](sum.md).
+[ndims](../data_analysis/ndims.md), [sum](../data_analysis/sum.md).
 
 ## History
 

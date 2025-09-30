@@ -20,7 +20,7 @@ Determines if file contains Microsoft Excel spreadsheet.
 
 ## Description
 
-  <p>Query Excel spreadsheet file filename for some information about its contents.</p>
+<p>Query Excel spreadsheet file filename for some information about its contents.</p>
 
 ## Example
 
@@ -30,7 +30,7 @@ Determines if file contains Microsoft Excel spreadsheet.
 
 ## See also
 
-[COM_xlswrite](COM_xlswrite.md), [COM_xlsread](COM_xlsread.md).
+[COM_xlswrite](../com_engine/COM_xlswrite.md), [COM_xlsread](../com_engine/COM_xlsread.md).
 
 ## History
 

@@ -18,7 +18,8 @@ Creates an identity matrix.
 
 ## Description
 
-  <p><b>eye</b> returns an identity matrix.</p>
+<p>
+            <b>eye</b> returns an identity matrix.</p>
 
 ## Examples
 
@@ -41,7 +42,7 @@ A = eye(0, 4)
 
 ## See also
 
-[ones](ones.md), [zeros](zeros.md).
+[ones](../constructors_functions/ones.md), [zeros](../constructors_functions/zeros.md).
 
 ## History
 

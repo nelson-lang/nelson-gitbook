@@ -18,7 +18,12 @@ Blackman window.
 
 ## Description
 
-  <p><b>c = blackman(m)</b> computes coefficients of a Blackman window of length <b>m</b>.</p>
+<p>
+            <b>c = blackman(m)</b> computes coefficients of a Blackman window of length <b>m</b>.</p>
+
+## Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999, pp. 468–471.
 
 ## Example
 
@@ -27,13 +32,9 @@ c = blackman(8)
 c = blackman(8, 'periodic')
 ```
 
-Bibliography
-
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999, pp. 468–471.
-
 ## See also
 
-[hamming](hamming.md), [hann](hann.md).
+[hamming](../signal_processing/hamming.md), [hann](../signal_processing/hann.md).
 
 ## History
 

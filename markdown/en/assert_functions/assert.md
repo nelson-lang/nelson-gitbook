@@ -33,7 +33,7 @@ assert(4 == 3, _('error for comparaison.'))
 
 ## See also
 
-[assert_istrue](assert_istrue.md), [assert_isfalse](assert_isfalse.md).
+[assert_istrue](../assert_functions/assert_istrue.md), [assert_isfalse](../assert_functions/assert_isfalse.md).
 
 ## History
 

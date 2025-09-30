@@ -17,13 +17,14 @@ Enable rotate mode.
 
 ## Description
 
-  <p>Utilize rotate mode to interactively rotate the 3-D view of the axes for data exploration. Enable or disable rotate mode and configure additional basic options using the rotate3d function.</p>
-  <p><b>rotate3d option</b> establishes the rotate mode for all axes within the current figure. For instance, rotate3d on activates rotate mode, while rotate3d off deactivates it.</p>
-  <p/>
-  <p>When rotate mode is enabled, you can adjust the view of axes using the cursor or the keyboard:</p>
-  <p/>
-  <p>Cursor: Click and drag within the axes.</p>
-  <p>Keyboard: Use the right arrow (→) or left arrow (←) keys to adjust azimuth, and the up arrow (↑) or down arrow (↓) keys to modify elevation.</p>
+<p>Utilize rotate mode to interactively rotate the 3-D view of the axes for data exploration. Enable or disable rotate mode and configure additional basic options using the rotate3d function.</p>
+<p>
+            <b>rotate3d option</b> establishes the rotate mode for all axes within the current figure. For instance, rotate3d on activates rotate mode, while rotate3d off deactivates it.</p>
+<p></p>
+<p>When rotate mode is enabled, you can adjust the view of axes using the cursor or the keyboard:</p>
+<p></p>
+<p>Cursor: Click and drag within the axes.</p>
+<p>Keyboard: Use the right arrow (→) or left arrow (←) keys to adjust azimuth, and the up arrow (↑) or down arrow (↓) keys to modify elevation.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ rotate3d
 
 ## See also
 
-[zoom](zoom.md), [pan](pan.md), [view](view.md).
+[zoom](../graphics/zoom.md), [pan](../graphics/pan.md), [view](../graphics/view.md).
 
 ## History
 

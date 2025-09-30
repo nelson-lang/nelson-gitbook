@@ -23,7 +23,8 @@ Retain current plot when adding new plots.
 
 ## Description
 
-  <p><b>hold</b> allows to construct a plot sequence incrementally.</p>
+<p>
+            <b>hold</b> allows to construct a plot sequence incrementally.</p>
 
 ## Example
 
@@ -36,13 +37,14 @@ hold on
 y2 = sin(x);
 plot(x, y2)
 hold off
+
 ```
 
-<img src="hold_65362EBC.svg" align="middle"/>
+<img src="hold.svg" align="middle"/>
 
 ## See also
 
-[ishold](ishold.md), [newplot](newplot.md).
+[ishold](../graphics/ishold.md), [newplot](../graphics/newplot.md).
 
 ## History
 

@@ -23,8 +23,9 @@ Checks that value is in the specified range.
 
 ## Description
 
-  <p><b>mustBeInRange</b> checks that value is in the specified range or raise an error.</p>
-  <p>The only valid combination of the flags is <b>exclude-lower</b> with <b>exclude-upper</b>.</p>
+<p>
+            <b>mustBeInRange</b> checks that value is in the specified range or raise an error.</p>
+<p>The only valid combination of the flags is <b>exclude-lower</b> with <b>exclude-upper</b>.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ mustBeInRange(3, 2, 4)
 
 ## See also
 
-[mustBeMember](mustBeMember.md).
+[mustBeMember](../validators/mustBeMember.md).
 
 ## History
 

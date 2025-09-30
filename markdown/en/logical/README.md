@@ -1,10 +1,8 @@
 # Logical type functions
 
-Logical type functions
-
-## Description
-
 logical type functions
+
+## Functions
 
 - [false](false.md) - Logical false.
 - [logical](logical.md) - Converts a numeric value to logical type.

@@ -18,7 +18,8 @@ Creates COM server.
 
 ## Description
 
-  <p><b>h = actxserver(progid)</b> creates a COM server using the progid identifier.</p>
+<p>
+            <b>h = actxserver(progid)</b> creates a COM server using the progid identifier.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ clear pTextToSpeech
 
 ## See also
 
-[actxGetRunningSrv](actxGetRunningSrv.html).
+[actxGetRunningSrv](../com_engine/actxGetRunningSrv.md).
 
 ## History
 

@@ -15,7 +15,8 @@ Get license information for Nelson.
 
 ## Description
 
-  <p><b>license</b> get license information for Nelson.</p>
+<p>
+            <b>license</b> get license information for Nelson.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ r = license()
 
 ## See also
 
-[banner](banner.md).
+[banner](../core/banner.md).
 
 ## History
 

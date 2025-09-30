@@ -23,18 +23,21 @@ Return the day of week.
 
 ## Description
 
-  <p><b>dayweek</b> returns the day of the week as a number in <b>number</b> and as a string in <b>name</b>.</p>
+<p>
+            <b>dayweek</b> returns the day of the week as a number in <b>number</b> and as a string in <b>name</b>.</p>
 
 ## Example
 
 ```matlab
+
 [DayNumber, DayName] = weekday(datenum('12-21-2012'), 'long', 'en_US')
 [DayNumber, DayName] = weekday(datenum('12-21-2012'), 'long', 'local')
+
 ```
 
 ## See also
 
-[datevec](datevec.md).
+[datevec](../time/datevec.md).
 
 ## History
 

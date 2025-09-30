@@ -20,7 +20,7 @@ Removes a file.
 
 ## Description
 
-  <p><b>res = rmfile(filename)</b> removes the file <b>filename</b>.</p>
+<p><b>res = rmfile(filename)</b> removes the file <b>filename</b>.</p>
 
 ## Example
 
@@ -30,11 +30,13 @@ fclose(fd)
 isfile([tempdir(), 'test_rmfile.txt'])
 rmfile([tempdir(), 'test_rmfile.txt'])
 isfile([tempdir(), 'test_rmfile.txt'])
+
+
 ```
 
 ## See also
 
-[isfile](isfile.md).
+[isfile](../files_folders_functions/isfile.md).
 
 ## History
 

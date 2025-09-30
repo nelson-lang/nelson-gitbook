@@ -16,7 +16,8 @@ Block diagonal matrix
 
 ## Description
 
-  <p><b>R = blkdiag(M1, ... , MN)</b> build the block diagonal matrix created by aligning the input matrices <b>M1, ... , MN</b> along the diagonal of <b>R</b>.</p>
+<p>
+            <b>R = blkdiag(M1, ... , MN)</b> build the block diagonal matrix created by aligning the input matrices <b>M1, ... , MN</b> along the diagonal of <b>R</b>.</p>
 
 ## Example
 

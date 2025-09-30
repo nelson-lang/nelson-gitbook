@@ -23,12 +23,12 @@ Plot simulated time response of dynamic system to arbitrary inputs.
 
 ## Description
 
-  <p>The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>).</p>
-  <p>The time samples for the simulation are specified by the vector <b>t</b>.</p>
-  <p>In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>.</p>
-  <p>For multi-input systems, <b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>.</p>
-  <p>An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values.</p>
-  <p>This is particularly relevant when <b>sys</b> is a state-space model.</p>
+<p>The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>).</p>
+<p>The time samples for the simulation are specified by the vector <b>t</b>.</p>
+<p>In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>.</p>
+<p>For multi-input systems, <b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>.</p>
+<p>An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values.</p>
+<p>This is particularly relevant when <b>sys</b> is a state-space model.</p>
 
 ## Examples
 
@@ -42,9 +42,10 @@ U = zeros(size(T, 1), size(T, 2));
 X0 = [0.1 0.1 0.1];
 sys = ss(A, B, C, D);
 lsim(sys, U, T, X0);
+
 ```
 
-<img src="lsim1_2560CED.svg" align="middle"/>
+<img src="lsim1.svg" align="middle"/>
 
 ```matlab
 A = [-1.7  -0.3   1.1;
@@ -66,13 +67,14 @@ Ts = 0.1;
 uP = gensig("pulse",3,Tf,Ts);
 u = [uSq uP];
 lsim(sys,u,t)
+
 ```
 
-<img src="lsim2_62B0A46.svg" align="middle"/>
+<img src="lsim2.svg" align="middle"/>
 
 ## See also
 
-[gensig](gensig.html), [step](step.md).
+[gensig](../control_system/gensig.md), [step](../control_system/step.md).
 
 ## History
 

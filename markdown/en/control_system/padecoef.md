@@ -19,9 +19,10 @@ Computes the Pade approximation of time delays.
 
 ## Description
 
-  <p><b>padecoef(T, N)</b> computes the Nth-order Padé Approximation for the continuous-time delay system represented by the exponential term exp(-T*s) and returns it in the form of a transfer function.</p>
+<p>
+            <b>padecoef(T, N)</b> computes the Nth-order Padé Approximation for the continuous-time delay system represented by the exponential term exp(-T*s) and returns it in the form of a transfer function.</p>
 
-Bibliography
+## Bibliography
 
 http://en.wikipedia.org/wiki/Pad%C3%A9_approximant and Golub and Van Loan, Matrix Computations, Johns Hopkins University Press (Third edition, page 562).
 
@@ -34,7 +35,7 @@ T = 2; N = 4;
 
 ## See also
 
-[tf](tf.md).
+[tf](../control_system/tf.md).
 
 ## History
 

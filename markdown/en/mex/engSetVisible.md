@@ -18,7 +18,7 @@ Show or hide Nelson engine session
 
 ## Description
 
-  <p>Show or hide Nelson engine session</p>
+<p>Show or hide Nelson engine session</p>
 
 ## Example
 
@@ -28,7 +28,7 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 
 ## See also
 
-[mex](mex.md), [engGetVisible](engGetVisible.md).
+[mex](../mex/mex.md), [engGetVisible](../mex/engGetVisible.md).
 
 ## History
 

@@ -25,8 +25,10 @@ Display a warning message.
 
 ## Description
 
-  <p><b>warning</b> displays a warning message.</p>
-  <p><b>warning('')</b> resets lastwarn state.</p>
+<p>
+            <b>warning</b> displays a warning message.</p>
+<p>
+                <b>warning('')</b> resets lastwarn state.</p>
 
 ## Examples
 
@@ -41,11 +43,13 @@ warning('off', 'myModule:identifier');
 warning('myModule:identifier', 'my message 2 off');
 warning('aserror', 'myModule:identifier');
 warning('myModule:identifier', 'my message 3 as error');
+
+
 ```
 
 ## See also
 
-[lasterror](lasterror.md), [error](error.md), [lastwarn](lastwarn.md).
+[lasterror](../error_manager/lasterror.md), [error](../error_manager/error.md), [lastwarn](../error_manager/lastwarn.md).
 
 ## History
 

@@ -18,9 +18,13 @@ Execute Nelson code in strings.
 
 ## Description
 
-  <p><b>execstr</b> executes Nelson instructions given in a string.</p>
-  <p><b>execstr(str, 'nocatch')</b> is equivalent to <b>execstr(str)</b></p>
-  <p><b>execstr</b> can be used as alternative to <b>try ... catch ... end</b> block.</p>
+<p>
+            <b>execstr</b> executes Nelson instructions given in a string.</p>
+<p>
+                <b>execstr(str, 'nocatch')</b> is equivalent to <b>execstr(str)</b>
+            </p>
+<p>
+                <b>execstr</b> can be used as alternative to <b>try ... catch ... end</b> block.</p>
 
 ## Examples
 
@@ -48,7 +52,7 @@ r = execstr('b = yyyy', 'errcatch')
 
 ## See also
 
-[run](run.md).
+[run](../core/run.md).
 
 ## History
 

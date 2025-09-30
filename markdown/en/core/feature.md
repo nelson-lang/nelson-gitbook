@@ -18,9 +18,11 @@ undocumented features.
 
 ## Description
 
-  <p><b>feature</b> is an entirely undocumented and unsupported Nelson function.</p>
-  <p>It is a helper function for debugging Nelson.</p>
-  <p><b>feature</b>can change without prior notice between Nelson releases, so be very careful when using this function in your code.</p>
+<p>
+            <b>feature</b> is an entirely undocumented and unsupported Nelson function.</p>
+<p>It is a helper function for debugging Nelson.</p>
+<p>
+                <b>feature</b> can change without prior notice between Nelson releases, so be very careful when using this function in your code.</p>
 
 ## History
 

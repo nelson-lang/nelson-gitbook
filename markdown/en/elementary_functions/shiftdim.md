@@ -20,8 +20,9 @@ Shift array dimensions
 
 ## Description
 
-  <p><b>shiftdim(A, n)</b> reorganizes the dimensions of an array A by n positions.</p>
-  <p>Specifically, when n is a positive integer, it shifts the dimensions to the left, and when n is a negative integer, it shifts the dimensions to the right.</p>
+<p>
+            <b>shiftdim(A, n)</b> reorganizes the dimensions of an array A by n positions.</p>
+<p>Specifically, when n is a positive integer, it shifts the dimensions to the left, and when n is a negative integer, it shifts the dimensions to the right.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ B = shiftdim(A, 2)
 
 ## See also
 
-[permute](permute.md), [reshape](reshape.md), [squeeze](round.md).
+[permute](../elementary_functions/permute.md), [reshape](../elementary_functions/reshape.md), [squeeze](../elementary_functions/round.md).
 
 ## History
 

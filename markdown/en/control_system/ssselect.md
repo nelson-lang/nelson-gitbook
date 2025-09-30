@@ -20,7 +20,7 @@ Extract subsystem from larger system.
 
 ## Description
 
-  <p><b>ssselect</b> extracts subsystem from larger system.</p>
+<p><b>ssselect</b> extracts subsystem from larger system.</p>
 
 ## Example
 
@@ -34,11 +34,13 @@ inputs = 1;
 outputs = 1;
 
 R = ssselect(sys1, inputs, outputs)
+
+
 ```
 
 ## See also
 
-[ssdelete](ssdelete.md).
+[ssdelete](../control_system/ssdelete.md).
 
 ## History
 

@@ -13,6 +13,7 @@
   - [namedargs2cell](namedargs2cell.md)
   - [num2cell](num2cell.md)
   - [orderfields](orderfields.md)
+  - [renameStructField](renameStructField.md)
   - [rmfield](rmfield.md)
   - [setfield](setfield.md)
   - [struct](struct.md)

@@ -12,7 +12,8 @@ Returns Nelson's root folder.
 
 ## Description
 
-  <p><b>nelsonroot</b> returns the root folder of Nelson.</p>
+<p>
+            <b>nelsonroot</b> returns the root folder of Nelson.</p>
 
 ## Example
 

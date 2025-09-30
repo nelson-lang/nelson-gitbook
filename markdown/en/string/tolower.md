@@ -16,7 +16,7 @@ Lower case conversion.
 
 ## Description
 
-<b>tolower</b> converts a string to lower case.
+<b>tolower</b>converts a string to lower case.
 
 ## Examples
 
@@ -30,7 +30,7 @@ tolower(["NelSon", "is", "open"])
 
 ## See also
 
-[toupper](toupper.md).
+[toupper](../string/toupper.md).
 
 ## History
 

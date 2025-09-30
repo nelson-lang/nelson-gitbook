@@ -16,7 +16,8 @@ Poles of dynamic system.
 
 ## Description
 
-  <p><b>P = pole(sys)</b> returns the poles of <b>sys</b>.</p>
+<p>
+            <b>P = pole(sys)</b> returns the poles of <b>sys</b>.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ P = pole(sys)
 
 ## See also
 
-[zero](zero.md).
+[zero](../control_system/zero.md).
 
 ## History
 

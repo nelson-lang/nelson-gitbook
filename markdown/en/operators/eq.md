@@ -18,9 +18,11 @@ equality, == operator.
 
 ## Description
 
-  <p><b>C = eq(A, B)</b> returns a logical array with elements set to logical <b>true</b> where arrays A and B are equals.</p>
-  <p/>
-  <p><b>eq</b> compares both real and imaginary parts of numeric arrays.</p>
+<p>
+            <b>C = eq(A, B)</b> returns a logical array with elements set to logical <b>true</b> where arrays A and B are equals.</p>
+<p></p>
+<p>
+                <b>eq</b> compares both real and imaginary parts of numeric arrays.</p>
 
 ## Examples
 
@@ -50,7 +52,7 @@ eq(0.8-0.6-0.2, 0)
 
 ## See also
 
-[ne](ne.md), [lt](lt.md), [le](le.md), [gt](gt.md), [ge](ge.md).
+[ne](../operators/ne.md), [lt](../operators/lt.md), [le](../operators/le.md), [gt](../operators/gt.md), [ge](../operators/ge.md).
 
 ## History
 

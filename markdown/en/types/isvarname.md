@@ -16,7 +16,7 @@ Return true if input is valid variable name.
 
 ## Description
 
-<b>isvarname</b> returns a logical 1 if the argument is a valid variable name and a logical 0 otherwise.
+<b>isvarname</b>returns a logical 1 if the argument is a valid variable name and a logical 0 otherwise.
 
 ## Example
 
@@ -29,7 +29,7 @@ isvarname('t8t')
 
 ## See also
 
-[ischar](ischar.md), [namelengthmax](../core/namelengthmax.md).
+[ischar](../types/ischar.md), [namelengthmax](../core/namelengthmax.md).
 
 ## History
 

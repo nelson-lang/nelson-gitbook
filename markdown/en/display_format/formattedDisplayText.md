@@ -18,8 +18,9 @@ Capture display output as string.
 
 ## Description
 
-  <p><b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.</p>
-  <p>The string contains equivalent to <b>disp(V)</b>.</p>
+<p>
+            <b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.</p>
+<p>The string contains equivalent to <b>disp(V)</b>.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ str = formattedDisplayText(R, 'NumericFormat', 'bank', 'LineSpacing', 'compact')
 
 ## See also
 
-[display](display.md), [disp](disp.md), [format](format.md).
+[display](../display_format/display.md), [disp](../display_format/disp.md), [format](../display_format/format.md).
 
 ## History
 

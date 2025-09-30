@@ -39,19 +39,20 @@ Add legend to axes.
 
 ## Description
 
-  <p><b>legend</b> creates a legend in the current figure.</p>
-  <p>
-    <b>Location for legend on the plot:</b>
-  </p>
-  <p/>
-  <p>'northeast' or 'NE': Top right (default).</p>
-  <p>'north' or 'N': Top center.</p>
-  <p>'south' or 'S': Bottom center.</p>
-  <p>'east' or 'E': Middle right.</p>
-  <p>'west' or 'W': Middle left.</p>
-  <p>'northwest' or 'NW': Top left.</p>
-  <p>'southeast' or 'SE': Bottom right.</p>
-  <p>'southwest' or 'SW': Bottom left.</p>
+<p>
+            <b>legend</b> creates a legend in the current figure.</p>
+<p>
+                <b>Location for legend on the plot:</b>
+            </p>
+<p></p>
+<p>'northeast' or 'NE': Top right (default).</p>
+<p>'north' or 'N': Top center.</p>
+<p>'south' or 'S': Bottom center.</p>
+<p>'east' or 'E': Middle right.</p>
+<p>'west' or 'W': Middle left.</p>
+<p>'northwest' or 'NW': Top left.</p>
+<p>'southeast' or 'SE': Bottom right.</p>
+<p>'southwest' or 'SW': Bottom left.</p>
 
 ## Example
 
@@ -66,11 +67,11 @@ plot(ax, x, y2);
 legend('sin(x)', 'cos(x)', 'Location', 'N')
 ```
 
-<img src="legend_63E919DE.svg" align="middle"/>
+<img src="legend.svg" align="middle"/>
 
 ## See also
 
-[title](title.md), [text](text.md), [plot](plot.md).
+[title](../graphics/title.md), [text](../graphics/text.md), [plot](../graphics/plot.md).
 
 ## History
 

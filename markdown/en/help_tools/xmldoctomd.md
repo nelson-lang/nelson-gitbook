@@ -19,11 +19,12 @@ Converts xml Nelson help files to markdown format.
 
 ## Description
 
-  <p><b>xmldoctomd</b> converts xml Nelson help files to markdown format.</p>
+<p>
+            <b>xmldoctomd</b> converts xml Nelson help files to markdown format.</p>
 
 ## See also
 
-[xmldocbuild](xmldocbuild.md), [buildhelpmd](buildhelpmd.md), [buildhelpweb](buildhelpweb.md).
+[xmldocbuild](../help_tools/xmldocbuild.md), [buildhelpmd](../help_tools/buildhelpmd.md), [buildhelpweb](../help_tools/buildhelpweb.md).
 
 ## History
 

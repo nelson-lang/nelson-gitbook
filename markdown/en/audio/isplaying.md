@@ -16,7 +16,7 @@ get info about audio playback is in progress.
 
 ## Description
 
-<b>isplaying</b> get information about audio playback is in progress.
+<b>isplaying</b>get information about audio playback is in progress.
 
 ## Example
 
@@ -33,7 +33,7 @@ playObj
 
 ## See also
 
-[audioplayer](audioplayer.md), [playblocking](playblocking.md).
+[audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
 ## History
 

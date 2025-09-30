@@ -16,7 +16,8 @@ Returns path of a module.
 
 ## Description
 
-  <p><b>toolboxdir</b> is an helper's function to return module root path.</p>
+<p>
+            <b>toolboxdir</b> is an helper's function to return module root path.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ toolboxdir('core')
 
 ## See also
 
-[modulepath](modulepath.md), [getmodules](getmodules.md).
+[modulepath](../modules_manager/modulepath.md), [getmodules](../modules_manager/getmodules.md).
 
 ## History
 

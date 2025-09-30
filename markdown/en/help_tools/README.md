@@ -1,10 +1,8 @@
 # Help tools functions
 
-Help tools functions
-
-## Description
-
 help tools
+
+## Functions
 
 - [buildhelp](buildhelp.md) - Build help of Nelson's modules.
 - [buildhelpmd](buildhelpmd.md) - Build help of Nelson's modules for GitBook.

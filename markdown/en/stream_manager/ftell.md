@@ -16,7 +16,8 @@ Returns the offset of the current byte relative to the beginning of a file.
 
 ## Description
 
-  <p><b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.</p>
+<p>
+            <b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ status = fclose(fileID);
 
 ## See also
 
-[fopen](fopen.md), [fprintf](fread.md), [fclose](fclose.md), [fseek](fseek.md).
+[fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md), [fseek](../stream_manager/fseek.md).
 
 ## History
 

@@ -1,10 +1,8 @@
 # HDF5
 
-HDF5
-
-## Description
-
 Hierarchical Data Format
+
+## Functions
 
 - [h5create](h5create.md) - Creates a data set.
 - [h5dump](h5dump.md) - dump the content of hdf5 file as text.

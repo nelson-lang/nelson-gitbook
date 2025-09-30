@@ -26,7 +26,8 @@ set or get y-axis limits.
 
 ## Description
 
-  <p><b>ylim</b> get or set the limits of the y-axis for the current plot.</p>
+<p>
+            <b>ylim</b> get or set the limits of the y-axis for the current plot.</p>
 
 ## Example
 
@@ -36,11 +37,12 @@ y = sin(2*pi*x);
 plot(x, y);
 lim = ylim()
 m = ylim('mode')
+
 ```
 
 ## See also
 
-[axes](axes.md), [axis](axis.md).
+[axes](../graphics/axes.md), [axis](../graphics/axis.md).
 
 ## History
 

@@ -22,7 +22,8 @@ Creates a struct.
 
 ## Description
 
-  <p><b>struct</b> returns a structure.</p>
+<p>
+            <b>struct</b> returns a structure.</p>
 
 ## Examples
 
@@ -43,12 +44,12 @@ Other way to create a struct:
 ```matlab
 date_st.day = 15
 date_st.month = 'August'
-date_st.year = 1974)
+date_st.year = 1974
 ```
 
 ## See also
 
-[cell](cell.md), [istruct](../types/isstruct.md).
+[cell](../data_structures/cell.md), [istruct](../types/isstruct.md).
 
 ## History
 

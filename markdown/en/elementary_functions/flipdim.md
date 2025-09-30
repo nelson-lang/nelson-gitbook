@@ -17,8 +17,8 @@ Flip array along specified dimension
 
 ## Description
 
-  <p><b>flipdim</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.</p>
-  <p><b>flipdim</b> is similar to <b>flip</b> and available for compatibility with old existing scripts.</p>
+<p><b>flipdim</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.</p>
+<p><b>flipdim</b> is similar to <b>flip</b> and available for compatibility with old existing scripts.</p>
 
 ## Example
 
@@ -31,7 +31,7 @@ y = flipdim(x, 3)
 
 ## See also
 
-[flip](flip.md), [flipud](flipud.md), [fliplr](fliplr.md).
+[flip](../elementary_functions/flip.md), [flipud](../elementary_functions/flipud.md), [fliplr](../elementary_functions/fliplr.md).
 
 ## History
 

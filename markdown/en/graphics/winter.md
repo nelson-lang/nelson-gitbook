@@ -17,7 +17,8 @@ Winter colormap array.
 
 ## Description
 
-  <p><b>winter</b> returns the colormap with winter colors.</p>
+<p>
+            <b>winter</b> returns the colormap with winter colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('winter');
 ```
 
-<img src="winter_AA835E63.svg" align="middle"/>
+<img src="winter.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

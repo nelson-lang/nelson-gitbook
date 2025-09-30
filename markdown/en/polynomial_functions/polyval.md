@@ -17,11 +17,13 @@ Polynomial evaluation.
 
 ## Description
 
-  <p><b>polyval</b> evaluates polynomial at several points.</p>
+<p>
+            <b>polyval</b> evaluates polynomial at several points.</p>
 
 ## Example
 
 ```matlab
+
 p = [3 2 1];
 x = [5 7 9];
 R = polyval(p, x)
@@ -29,7 +31,7 @@ R = polyval(p, x)
 
 ## See also
 
-[polyvalm](polyvalm.md).
+[polyvalm](../polynomial_functions/polyvalm.md).
 
 ## History
 

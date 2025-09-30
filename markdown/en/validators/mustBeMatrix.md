@@ -15,7 +15,8 @@ Checks that value is a matrix or raise an error.
 
 ## Description
 
-  <p><b>mustBeMatrix</b> checks that value is a matrix or raise an error.</p>
+<p>
+            <b>mustBeMatrix</b> checks that value is a matrix or raise an error.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeMatrix(ones(3, 2, 4))
 
 ## See also
 
-[ismatrix](ismatrix.html).
+[ismatrix](../types/ismatrix.md).
 
 ## History
 

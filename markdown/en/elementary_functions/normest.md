@@ -21,7 +21,8 @@
 
 ## Description
 
-  <p><b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix <b>A</b>.</p>
+<p>
+            <b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix <b>A</b>.</p>
 
 ## Example
 
@@ -35,11 +36,13 @@ M = [    0    2.4495         0         0         0         0         0
          0         0         0         0         0    2.4495         0];
 [nrm, count] = normest(M)
 norm(M)
+
+
 ```
 
 ## See also
 
-[norm](norm.md), [svd](../linear_algebra/svd.md).
+[norm](../elementary_functions/norm.md), [svd](../linear_algebra/svd.md).
 
 ## History
 

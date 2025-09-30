@@ -16,7 +16,7 @@ Return true if variable var is an object.
 
 ## Description
 
-<b>ishandle</b> returns a logical 1 if the argument is an object and a logical 0 otherwise.
+<b>ishandle</b>returns a logical 1 if the argument is an object and a logical 0 otherwise.
 
 ## Example
 
@@ -27,11 +27,12 @@ res = isobject(A)
 addpath([modulepath('overload', 'root'), '/examples/complex']);
 A = complexObj(1, 2);
 res = isobject(A)
+
 ```
 
 ## See also
 
-[isa](isa.md), [ishandle](ishandle.md).
+[isa](../types/isa.md), [ishandle](../types/ishandle.md).
 
 ## History
 

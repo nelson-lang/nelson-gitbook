@@ -18,9 +18,10 @@ Dot product.
 
 ## Description
 
-  <p><b>R = dot(A, B)</b> returns the scalar dot product of <b>A</b> and <b>B</b>.</p>
+<p>
+            <b>R = dot(A, B)</b> returns the scalar dot product of <b>A</b> and <b>B</b>.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/Dot_product
 

@@ -22,8 +22,9 @@ Pseudocolor plot.
 
 ## Description
 
-  <p><b>pcolor(C)</b> creates a pseudocolor plot of the data in the matrix <b>C</b>, where each cell or 'face' in the plot is colored according to the corresponding value in the matrix.</p>
-  <p>The color of each face is determined by a colormap, which maps data values to colors.</p>
+<p>
+            <b>pcolor(C)</b> creates a pseudocolor plot of the data in the matrix <b>C</b>, where each cell or 'face' in the plot is colored according to the corresponding value in the matrix.</p>
+<p>The color of each face is determined by a colormap, which maps data values to colors.</p>
 
 ## Examples
 
@@ -35,7 +36,7 @@ f = figure()
 pcolor(X, Y, Z)
 ```
 
-<img src="pcolor_1_FB2FE3A0.svg" align="middle"/>
+<img src="pcolor_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -48,11 +49,11 @@ C2 = rand(50, 10);
 pcolor(ax2, C2)
 ```
 
-<img src="pcolor_2_BADB8C70.svg" align="middle"/>
+<img src="pcolor_2.svg" align="middle"/>
 
 ## See also
 
-[surf](surf.md), [meshgrid](../elementary_functions/meshgrid.md).
+[surf](../graphics/surf.md), [meshgrid](../elementary_functions/meshgrid.md).
 
 ## History
 

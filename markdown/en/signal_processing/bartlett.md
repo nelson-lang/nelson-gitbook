@@ -16,7 +16,12 @@ Bartlett window.
 
 ## Description
 
-  <p><b>c = bartlett(m)</b> an L-point symmetric Bartlett window.</p>
+<p>
+            <b>c = bartlett(m)</b> an L-point symmetric Bartlett window.</p>
+
+## Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999, pp. 468–471.
 
 ## Example
 
@@ -24,13 +29,9 @@ Bartlett window.
 c = bartlett(8)
 ```
 
-Bibliography
-
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999, pp. 468–471.
-
 ## See also
 
-[hamming](hamming.md), [hann](hann.md).
+[hamming](../signal_processing/hamming.md), [hann](../signal_processing/hann.md).
 
 ## History
 

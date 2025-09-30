@@ -17,12 +17,14 @@ call CMake tool
 
 ## Description
 
-  <p><b>cmake</b> used internally to generate makefile used to build C/C++ code.</p>
-  <p><b>cmake</b> used by <b>dlgeneratemake</b>.</p>
+<p>
+            <b>cmake</b> used internally to generate makefile used to build C/C++ code.</p>
+<p>
+                <b>cmake</b> used by <b>dlgeneratemake</b>.</p>
 
 ## See also
 
-[dlgeneratemake](dlgeneratemake.md), [dlmake](dlmake.md).
+[dlgeneratemake](../dynamic_link/dlgeneratemake.md), [dlmake](../dynamic_link/dlmake.md).
 
 ## History
 

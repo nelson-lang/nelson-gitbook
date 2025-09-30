@@ -12,17 +12,14 @@ Returns list of current used MPI_Comm handle.
 
 ## Description
 
-  <p>Returns list of current used MPI_Comm handle.</p>
-
-## See also
-
-[MPI_Comm_delete](MPI_Comm_delete.md).
+<p>Returns list of current used MPI_Comm handle.</p>
 
 ## Example
 
 CLI required
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -33,7 +30,12 @@ MPI_Comm_used
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Comm_delete](../mpi/MPI_Comm_delete.md).
 
 ## History
 

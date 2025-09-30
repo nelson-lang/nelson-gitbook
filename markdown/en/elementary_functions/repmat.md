@@ -21,7 +21,7 @@ Replicate and tile an array.
 
 ## Description
 
-<b>repmat</b> repeats matrix or N-D array.
+<b>repmat</b>repeats matrix or N-D array.
 
 ## Examples
 
@@ -39,7 +39,7 @@ repmat(1:5, [2 3 4])
 
 ## See also
 
-[reshape](reshape.md).
+[reshape](../elementary_functions/reshape.md).
 
 ## History
 

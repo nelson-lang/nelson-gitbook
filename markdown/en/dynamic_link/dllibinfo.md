@@ -16,7 +16,8 @@ Returns list of available symbols in an shared library.
 
 ## Description
 
-  <p><b>dllibinfo</b> returns list of available symbols in an shared library.</p>
+<p>
+            <b>dllibinfo</b> returns list of available symbols in an shared library.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ c = dllibinfo(lib)
 
 ## See also
 
-[dlopen](dlopen.md).
+[dlopen](../dynamic_link/dlopen.md).
 
 ## History
 

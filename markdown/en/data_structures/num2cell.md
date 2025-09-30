@@ -18,8 +18,9 @@ Convert array to cell array with consistently sized cells.
 
 ## Description
 
-  <p><b>num2cell</b> function converts a numeric array into a cell array, where each element of the numeric array is placed in its own cell in the resulting cell array.</p>
-  <p>If <b>A</b> is a character array, num2cell will convert each row of the array into a separate cell in the resulting cell array.</p>
+<p>
+            <b>num2cell</b> function converts a numeric array into a cell array, where each element of the numeric array is placed in its own cell in the resulting cell array.</p>
+<p>If <b>A</b> is a character array, num2cell will convert each row of the array into a separate cell in the resulting cell array.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ A = [1 2; 3 4; 5 6];
 C = num2cell(A)
 C = num2cell(A, 1)
 C = num2cell(A, 2)
+
 ```
 
 ## See also
 
-[cell](cell.md).
+[cell](../data_structures/cell.md).
 
 ## History
 

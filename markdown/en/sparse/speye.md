@@ -20,21 +20,27 @@ Sparse identity matrix.
 
 ## Description
 
-  <p><b>S = speye()</b> returns a sparse scalar 1.</p>
-  <p><b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
-  <p><b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
-  <p><b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.</p>
+<p>
+            <b>S = speye()</b> returns a sparse scalar 1.</p>
+<p>
+                <b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
+<p>
+                    <b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
+<p>
+                        <b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.</p>
 
 ## Example
 
 ```matlab
+
 tic();S = speye(5000, 5000);toc()
 tic();S = sparse(eye(5000, 5000));toc()
+
 ```
 
 ## See also
 
-[sparse](sparse.md).
+[sparse](../sparse/sparse.md).
 
 ## History
 

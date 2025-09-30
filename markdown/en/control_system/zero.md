@@ -18,7 +18,8 @@ Zeros and gain of SISO dynamic system.
 
 ## Description
 
-  <p><b>[Z, gain] = zero(sys)</b> returns the zero-pole-gain of <b>sys</b>.</p>
+<p>
+            <b>[Z, gain] = zero(sys)</b> returns the zero-pole-gain of <b>sys</b>.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ sys = tf([4.2,0.25,-0.004],[1,9.6,17]);
 
 ## See also
 
-[pole](pole.md).
+[pole](../control_system/pole.md).
 
 ## History
 

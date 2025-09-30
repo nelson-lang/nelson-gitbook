@@ -16,7 +16,7 @@ Set object or interface property to specified value.
 
 ## Description
 
-  <p>The function sets the property specified in the string propertyname to the given value.</p>
+<p>The function sets the property specified in the string propertyname to the given value.</p>
 
 ## Example
 
@@ -30,7 +30,7 @@ clear pWord
 
 ## See also
 
-[COM_get](COM_get.md), [COM_invoke](COM_invoke.md).
+[COM_get](../com_engine/COM_get.md), [COM_invoke](../com_engine/COM_invoke.md).
 
 ## History
 

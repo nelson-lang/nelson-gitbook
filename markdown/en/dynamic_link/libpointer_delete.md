@@ -13,8 +13,9 @@ Removes libpointer object.
 
 ## Description
 
-  <p><b>delete(h)</b> releases libpointer object.</p>
-  <p>Do not forget to clear h afterward.</p>
+<p>
+            <b>delete(h)</b> releases libpointer object.</p>
+<p>Do not forget to clear h afterward.</p>
 
 ## Example
 
@@ -24,7 +25,7 @@ libpointer_used(),delete(libpointer_used())
 
 ## See also
 
-[libpointer](libpointer.md).
+[libpointer](../dynamic_link/libpointer.md).
 
 ## History
 

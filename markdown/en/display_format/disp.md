@@ -12,8 +12,10 @@ Display a variable.
 
 ## Description
 
-  <p><b>disp(V)</b> displays the value of the variable <b>V</b>.</p>
-  <p><b>disp</b> uses current <b>format</b> setting to display numeric values.</p>
+<p>
+            <b>disp(V)</b> displays the value of the variable <b>V</b>.</p>
+<p>
+                <b>disp</b> uses current <b>format</b> setting to display numeric values.</p>
 
 ## Examples
 
@@ -37,7 +39,7 @@ disp('')
 
 ## See also
 
-[display](display.md), [fprintf](../stream_manager/fprintf.md), [format](format.md).
+[display](../display_format/display.md), [fprintf](../stream_manager/fprintf.md), [format](../display_format/format.md).
 
 ## History
 

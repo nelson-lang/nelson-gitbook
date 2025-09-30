@@ -18,7 +18,8 @@ Right division, ./ operator
 
 ## Description
 
-  <p><b>C = rdivide(A, B)</b> performs right division operation: A ./* B.</p>
+<p>
+            <b>C = rdivide(A, B)</b> performs right division operation: A ./* B.</p>
 
 ## Examples
 
@@ -35,7 +36,7 @@ M1 ./ M2
 
 ## See also
 
-[ldivide](ldivide.md).
+[ldivide](../operators/ldivide.md).
 
 ## History
 

@@ -8,7 +8,8 @@ Ratio of circle's circumference to its diameter.
 
 ## Description
 
-  <p><b>pi</b> eturns the floating-point number nearest the value of <b>π </b>.</p>
+<p>
+            <b>pi</b> returns the floating-point number nearest the value of <b>π</b>.</p>
 
 ## Examples
 

@@ -8,7 +8,8 @@ Shows Nelson banner.
 
 ## Description
 
-  <p><b>banner</b> shows Nelson banner.</p>
+<p>
+            <b>banner</b> shows Nelson banner.</p>
 
 ## Example
 

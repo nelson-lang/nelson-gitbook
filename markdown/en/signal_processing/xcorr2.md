@@ -18,7 +18,8 @@
 
 ## Description
 
-  <p><b>xcorr2(A, B)</b> calculates the cross-correlation between two matrices, <b>A</b> and <b>B</b>, in two dimensions, without any scaling applied.</p>
+<p>
+            <b>xcorr2(A, B)</b> calculates the cross-correlation between two matrices, <b>A</b> and <b>B</b>, in two dimensions, without any scaling applied.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ C = xcorr2(H, X)
 
 ## See also
 
-[filter2](filter2.md), [conv2](../data_analysis/conv2.md).
+[filter2](../signal_processing/filter2.md), [conv2](../data_analysis/conv2.md).
 
 ## History
 

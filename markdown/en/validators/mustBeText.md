@@ -15,7 +15,8 @@ Checks that value is piece of text or raise an error.
 
 ## Description
 
-  <p><b>mustBeText</b> that value is piece of text or raise an error.</p>
+<p>
+            <b>mustBeText</b> that value is piece of text or raise an error.</p>
 
 ## Example
 

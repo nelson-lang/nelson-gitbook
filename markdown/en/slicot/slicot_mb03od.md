@@ -25,15 +25,15 @@ Matrix rank determination by incremental condition estimation.
 
 ## Description
 
-  <p>To compute (optionally) a rank-revealing QR factorization of a real general M-by-N matrix  A,  which may be rank-deficient, and estimate its effective rank using incremental condition estimation.</p>
+<p>To compute (optionally) a rank-revealing QR factorization of a real general M-by-N matrix  A,  which may be rank-deficient, and estimate its effective rank using incremental condition estimation.</p>
 
-Used function(s)
-
-MB03OD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB03OD.html
+
+## Used function(s)
+
+MB03OD
 
 ## Example
 

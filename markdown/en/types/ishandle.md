@@ -16,7 +16,7 @@ Return true if variable var is a handle object.
 
 ## Description
 
-<b>ishandle</b> returns a logical 1 if the argument is a handle object and a logical 0 otherwise.
+<b>ishandle</b>returns a logical 1 if the argument is a handle object and a logical 0 otherwise.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = ishandle(A)
 
 ## See also
 
-[isa](isa.md), [isvalid](../handle/isvalid.md).
+[isa](../types/isa.md), [isvalid](../handle/isvalid.md).
 
 ## History
 

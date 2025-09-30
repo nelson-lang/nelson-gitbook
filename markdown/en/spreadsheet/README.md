@@ -1,6 +1,6 @@
 # Spreadsheet
 
-Spreadsheet
+## Functions
 
 - [csvread](csvread.md) - Read comma-separated value (CSV) file.
 - [csvwrite](csvwrite.md) - Write comma-separated value file.

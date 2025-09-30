@@ -1,4 +1,5 @@
 - [mpi](README.md)
+  - [mpiexec](mpiexec.md)
   - [MPI_Allreduce](MPI_Allreduce.md)
   - [MPI_Barrier](MPI_Barrier.md)
   - [MPI_Bcast](MPI_Bcast.md)
@@ -20,6 +21,3 @@
   - [MPI_Recv](MPI_Recv.md)
   - [MPI_Reduce](MPI_Reduce.md)
   - [MPI_Send](MPI_Send.md)
-  - [MPI examples](MPI_examples.md)
-  - [MPI overview](MPI_overview.md)
-  - [mpiexec](mpiexec.md)

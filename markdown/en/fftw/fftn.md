@@ -18,10 +18,12 @@ N-Dimensions fast Fourier transform.
 
 ## Description
 
-  <p><b>Y = fftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.</p>
-  <p>The size of the result <b>Y</b> is <b>sz</b>.</p>
-  <p><b>Y = fftn(X)</b> performs the N-dimensional fast Fourier transform.</p>
-  <p>The result <b>Y</b> is the same size as <b>X</b>.</p>
+<p>
+            <b>Y = fftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.</p>
+<p>The size of the result <b>Y</b> is <b>sz</b>.</p>
+<p>
+                <b>Y = fftn(X)</b> performs the N-dimensional fast Fourier transform.</p>
+<p>The result <b>Y</b> is the same size as <b>X</b>.</p>
 
 ## Example
 
@@ -33,7 +35,7 @@ Y = ifftn(fftn(f));
 
 ## See also
 
-[ifftn](ifftn.md), [fft](fft.md).
+[ifftn](../fftw/ifftn.md), [fft](../fftw/fft.md).
 
 ## History
 

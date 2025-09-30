@@ -23,9 +23,13 @@ Create cell array of empty matrices.
 
 ## Description
 
-  <p><b>cell</b> returns a cell array of empty matrices.</p>
-  <p><b>cell()</b> is equivalent to <b>cell(0)</b></p>
-  <p><b>cell(A)</b> with A a string array converts to cell.</p>
+<p>
+            <b>cell</b> returns a cell array of empty matrices.</p>
+<p>
+                <b>cell()</b> is equivalent to <b>cell(0)</b>
+            </p>
+<p>
+                <b>cell(A)</b> with A a string array converts to cell.</p>
 
 ## Examples
 
@@ -42,7 +46,7 @@ C = cell(A)
 
 ## See also
 
-[struct](struct.md), [iscell](../types/iscell.md).
+[struct](../data_structures/struct.md), [iscell](../types/iscell.md).
 
 ## History
 

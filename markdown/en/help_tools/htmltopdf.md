@@ -13,7 +13,8 @@ Convers html page to pdf.
 
 ## Description
 
-  <p><b>htmltopdf</b> converts html page to pdf.</p>
+<p>
+            <b>htmltopdf</b> converts html page to pdf.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ end
 
 ## See also
 
-[markdown](markdown.md).
+[markdown](../help_tools/markdown.md).
 
 ## History
 

@@ -36,15 +36,15 @@ Zeros and Kronecker structure of a descriptor system pencil.
 
 ## Description
 
-  <p> To extract from the system pencil a regular pencil Af-lambda*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.</p>
+<p> To extract from the system pencil a regular pencil Af-lambda*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.</p>
 
-Used function(s)
-
-AG08BD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/AG08BD.html
+
+## Used function(s)
+
+AG08BD
 
 ## Example
 
@@ -109,6 +109,9 @@ M = 0; P = 3;
 M = 3; P = 0;
 [A_OUT, E_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
 %=============================================================================
+
+
+
 ```
 
 ## History

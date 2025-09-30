@@ -25,7 +25,8 @@ Mean of array elements.
 
 ## Description
 
-  <p><b>R = mean(M)</b> returns the mean of the array elements of M.</p>
+<p>
+            <b>R = mean(M)</b> returns the mean of the array elements of M.</p>
 
 ## Example
 
@@ -36,7 +37,7 @@ R = mean(M, 'native')
 
 ## See also
 
-[sum](sum.html), [prod](prod.html).
+[sum](../data_analysis/sum.md), [prod](../data_analysis/prod.md).
 
 ## History
 

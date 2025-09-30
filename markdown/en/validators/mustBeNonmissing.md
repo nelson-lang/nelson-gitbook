@@ -15,7 +15,8 @@ Checks that value is not missing.
 
 ## Description
 
-  <p><b>mustBeNonmissing</b> checks that value is not missing or raise an error.</p>
+<p>
+            <b>mustBeNonmissing</b> checks that value is not missing or raise an error.</p>
 
 ## Example
 
@@ -23,11 +24,12 @@ Checks that value is not missing.
 mustBeNonmissing(1)
 mustBeNonmissing([])
 mustBeNonmissing(["hello" string(NaN)])
+
 ```
 
 ## See also
 
-[ismissing](ismissing.html).
+[ismissing](../elementary_functions/ismissing.md).
 
 ## History
 

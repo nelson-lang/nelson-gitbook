@@ -16,7 +16,8 @@ format an JSON string.
 
 ## Description
 
-  <p><b>jsonprettyprint</b> formats a JSON text string to be human readable.</p>
+<p>
+            <b>jsonprettyprint</b> formats a JSON text string to be human readable.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ field4 = 'f4';  value4 = {'fourth'};
 s = struct(field1,value1,field2,value2,field3,value3,field4,value4);
 r = jsonencode(s)
 jsonprettyprint(r)
+
 ```
 
 ## See also
 
-[jsondecode](jsondecode.md), [jsonencode](jsonencode.md), [filewrite](../stream_manager/filewrite.md).
+[jsondecode](../json/jsondecode.md), [jsonencode](../json/jsonencode.md), [filewrite](../stream_manager/filewrite.md).
 
 ## History
 

@@ -12,7 +12,8 @@ Returns the default language used in Nelson.
 
 ## Description
 
-  <p><b>getdefaultlanguage</b> returns the default language used by Nelson.</p>
+<p>
+            <b>getdefaultlanguage</b> returns the default language used by Nelson.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ getdefaultlanguage()
 
 ## See also
 
-[setlanguage](setlanguage.md).
+[setlanguage](../localization/setlanguage.md).
 
 ## History
 

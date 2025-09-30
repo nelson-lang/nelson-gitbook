@@ -16,7 +16,8 @@ Check for the existence of a builtin.
 
 ## Description
 
-  <p><b>isbuiltin</b> checks for the existence of a builtin.</p>
+<p>
+            <b>isbuiltin</b> checks for the existence of a builtin.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ ismacro('exist')
 
 ## See also
 
-[ismacro](ismacro.md).
+[ismacro](../functions_manager/ismacro.md).
 
 ## History
 

@@ -16,11 +16,7 @@ Determines the rank of the calling process in the communicator.
 
 ## Description
 
-  <p>Return the rank of the calling process in the specified communicator.</p>
-
-## See also
-
-[MPI_Comm_size](MPI_Comm_size.md).
+<p>Return the rank of the calling process in the specified communicator.</p>
 
 ## Example
 
@@ -51,6 +47,10 @@ if MPI_Initialized()
   MPI_Finalize();
 end
 ```
+
+## See also
+
+[MPI_Comm_size](../mpi/MPI_Comm_size.md).
 
 ## History
 

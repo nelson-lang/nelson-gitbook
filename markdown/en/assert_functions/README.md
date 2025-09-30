@@ -1,10 +1,8 @@
 # Assertion functions
 
-Assertion functions
-
-## Description
-
 The aim of these functions is to provide tools to test some other functions.
+
+## Functions
 
 - [assert](assert.md) - Check that condition is true.
 - [assert_checkerror](assert_checkerror.md) - Check that an command raises the expected error.

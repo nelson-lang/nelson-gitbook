@@ -16,7 +16,7 @@ Return true if variable var is a string array.
 
 ## Description
 
-<b>isstring</b> returns a logical 1 if the argument is a string array and a logical 0 otherwise.
+<b>isstring</b>returns a logical 1 if the argument is a string array and a logical 0 otherwise.
 
 ## Examples
 
@@ -37,7 +37,7 @@ res = isstring(C)
 
 ## See also
 
-[class](class.md), [string](../string/string.md), [ischar](ischar.md).
+[class](../types/class.md), [string](../string/string.md), [ischar](../types/ischar.md).
 
 ## History
 

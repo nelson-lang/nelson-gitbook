@@ -18,7 +18,8 @@ logical 'OR' operator, |
 
 ## Description
 
-  <p><b>C = or(A, B)</b> performs a logical <b>OR</b> operation.</p>
+<p>
+            <b>C = or(A, B)</b> performs a logical <b>OR</b> operation.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ C == D
 
 ## See also
 
-[and](and.md), [xor](xor.html), [all](all.md), [any](any.md), [not](not.md).
+[and](../operators/and.md), [xor](../operators/xor.md), [all](../operators/all.md), [any](../operators/any.md), [not](../operators/not.md).
 
 ## History
 

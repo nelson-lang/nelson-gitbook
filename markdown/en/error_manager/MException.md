@@ -19,10 +19,12 @@ Matrix Exception information.
 
 ## Description
 
-  <p>All Nelson code that detects an error and throws an exception constructs an MException object.</p>
-  <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
-  <p><b>ME = MException('last')</b> return last exception.</p>
-  <p><b>MException('reset')</b> clears last exception.</p>
+<p>All Nelson code that detects an error and throws an exception constructs an MException object.</p>
+<p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
+<p>
+            <b>ME = MException('last')</b> return last exception.</p>
+<p>
+                <b>MException('reset')</b> clears last exception.</p>
 
 ## Example
 
@@ -33,7 +35,7 @@ throw(ME)
 
 ## See also
 
-[error](error.md), [try](../interpreter/try.md), [throw](throw.md), [rethrow](rethrow.md), [throwAsCaller](throwAsCaller.md).
+[error](../error_manager/error.md), [try](../interpreter/try.md), [throw](../error_manager/throw.md), [rethrow](../error_manager/rethrow.md), [throwAsCaller](../error_manager/throwAsCaller.md).
 
 ## History
 

@@ -16,13 +16,9 @@ Performs a blocking send.
 
 ## Description
 
-  <p>This function sends an array to a destination node on a given communicator with a specific message tag.</p>
-  <p>Note that there has to be a matching receive issued by the destination node.</p>
-  <p>Throws an exception if there is an error.</p>
-
-## See also
-
-[MPI_Recv](MPI_Recv.md).
+<p>This function sends an array to a destination node on a given communicator with a specific message tag.</p>
+<p>Note that there has to be a matching receive issued by the destination node.</p>
+<p>Throws an exception if there is an error.</p>
 
 ## Example
 
@@ -53,6 +49,10 @@ if MPI_Initialized()
   MPI_Finalize();
 end
 ```
+
+## See also
+
+[MPI_Recv](../mpi/MPI_Recv.md).
 
 ## History
 

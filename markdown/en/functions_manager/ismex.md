@@ -16,7 +16,8 @@ Check for the existence of a mex function.
 
 ## Description
 
-  <p><b>ismex</b> checks for the existence of a mex function.</p>
+<p>
+            <b>ismex</b> checks for the existence of a mex function.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ ismex('exist')
 
 ## See also
 
-[isbuiltin](isbuiltin.md), [ismacro](ismacro.md).
+[isbuiltin](../functions_manager/isbuiltin.md), [ismacro](../functions_manager/ismacro.md).
 
 ## History
 

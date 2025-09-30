@@ -12,7 +12,8 @@ get user name currently used.
 
 ## Description
 
-  <p><b>username</b> get user name currently used.</p>
+<p>
+            <b>username</b> get user name currently used.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ username()
 
 ## See also
 
-[hostname](hostname.md).
+[hostname](../os_functions/hostname.md).
 
 ## History
 

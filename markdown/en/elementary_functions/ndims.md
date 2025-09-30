@@ -16,8 +16,10 @@ Number of dimensions of an array.
 
 ## Description
 
-  <p><b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.</p>
-  <p><b>M</b> is greater than or equal to 2.</p>
+<p>
+            <b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.</p>
+<p>
+                <b>M</b> is greater than or equal to 2.</p>
 
 ## Example
 
@@ -30,7 +32,7 @@ ndims(ones(3, 4, 5))
 
 ## See also
 
-[size](size.md), [length](length.md).
+[size](../elementary_functions/size.md), [length](../elementary_functions/length.md).
 
 ## History
 

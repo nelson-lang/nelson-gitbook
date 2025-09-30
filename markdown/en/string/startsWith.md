@@ -19,11 +19,12 @@ checks if string starts with pattern.
 
 ## Description
 
-<b>startsWith</b> returns <b>true</b> if <b>str</b> starts with <b>pattern</b>.
+<b>startsWith</b>returns<b>true</b>if<b>str</b>starts with<b>pattern</b>.
 
 ## Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = startsWith (str, 'in')
 k = startsWith (str, 'to')
@@ -34,11 +35,13 @@ k = startsWith(A, 'Nel')
 
 A = ["Nel", "son"; "Nelson", "Modules"];
 k = startsWith(A, "Nel")
+
+
 ```
 
 ## See also
 
-[endsWith](endsWith.md), [contains](contains.md).
+[endsWith](../string/endsWith.md), [contains](../string/contains.md).
 
 ## History
 

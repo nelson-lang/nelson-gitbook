@@ -17,11 +17,11 @@ Return true if method of handle object.
 
 ## Description
 
-<b>ismethod</b> returns a logical 1 if the argument is a valid handle with method name and a logical 0 otherwise.
+<b>ismethod</b>returns a logical 1 if the argument is a valid handle with method name and a logical 0 otherwise.
 
 ## See also
 
-[isprop](isprop.md), [methods](methods.md).
+[isprop](../handle/isprop.md), [methods](../handle/methods.md).
 
 ## History
 

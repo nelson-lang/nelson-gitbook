@@ -16,8 +16,9 @@ Common logarithm (base 10).
 
 ## Description
 
-  <p><b>log10</b> computes common logarithm (base 10).</p>
-  <p>For negative real and complex values of M, <b>log10</b> function returns complex values.</p>
+<p>
+            <b>log10</b> computes common logarithm (base 10).</p>
+<p>For negative real and complex values of M, <b>log10</b> function returns complex values.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ r = log10(x)
 
 ## See also
 
-[log](log.md).
+[log](../elementary_functions/log.md).
 
 ## History
 

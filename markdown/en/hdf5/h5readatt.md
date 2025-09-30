@@ -18,7 +18,8 @@ Read HDF5 attribute.
 
 ## Description
 
-  <p><b>h5readatt</b> reads attribute named <b>attname</b> from the HDF5 file.</p>
+<p>
+            <b>h5readatt</b> reads attribute named <b>attname</b> from the HDF5 file.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ h5readatt([tempdir(), 'myfile.h5'],'/','creation_date')
 
 ## See also
 
-[h5writeatt](h5writeatt.md).
+[h5writeatt](../hdf5/h5writeatt.md).
 
 ## History
 

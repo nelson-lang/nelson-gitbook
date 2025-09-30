@@ -21,8 +21,9 @@ Save data from RESTful web service to file
 
 ## Description
 
-  <p><b>websave()</b> saves content from the web to filename.</p>
-  <p>websave function returns the full filename path as result_filename.</p>
+<p>
+            <b>websave()</b> saves content from the web to filename.</p>
+<p>websave function returns the full filename path as result_filename.</p>
 
 ## Example
 
@@ -35,7 +36,7 @@ txt = fileread(filename)
 
 ## See also
 
-[weboptions](weboptions.md), [webread](webread.md).
+[weboptions](../webtools/weboptions.md), [webread](../webtools/webread.md).
 
 ## History
 

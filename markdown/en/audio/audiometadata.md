@@ -19,9 +19,11 @@ Get/Set metadata of audio file .
 
 ## Description
 
-  <p><b>audiometadata</b> returns a structure with metadata of an audio file.</p>
-  <p><b>audiometadata</b> manages all tags available in the audio file.</p>
-  <p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
+<p>
+            <b>audiometadata</b> returns a structure with metadata of an audio file.</p>
+<p>
+                <b>audiometadata</b> manages all tags available in the audio file.</p>
+<p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
 
 ## Examples
 

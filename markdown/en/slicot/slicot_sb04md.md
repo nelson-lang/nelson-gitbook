@@ -22,15 +22,15 @@ Solution of continuous-time Sylvester equations (Hessenberg-Schur method).
 
 ## Description
 
-  <p> To solve for X the continuous-time Sylvester equation AX + XB = C where A, B, C and X are general N-by-N, M-by-M, N-by-M and N-by-M matrices respectively.</p>
+<p> To solve for X the continuous-time Sylvester equation AX + XB = C where A, B, C and X are general N-by-N, M-by-M, N-by-M and N-by-M matrices respectively.</p>
 
-Used function(s)
-
-SB04MD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB04MD.html
+
+## Used function(s)
+
+SB04MD
 
 ## Example
 

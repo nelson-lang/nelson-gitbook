@@ -18,23 +18,26 @@ call make or nmake tool
 
 ## Description
 
-  <p><b>dlmake</b> used to provide an multiplatform way to build C/C++.</p>
+<p>
+            <b>dlmake</b> used to provide an multiplatform way to build C/C++.</p>
 
 ## Example
 
 basic example to call dlmake
 
 ```matlab
+
 dest = [tempdir(), 'dlmake_help'];
 mkdir(dest);
 txt = 'MESSAGE( STATUS "Hello world !")';
 filewrite([dest, '/CMakeLists.txt'], txt);
 [status, message] = dlmake(dest)
+
 ```
 
 ## See also
 
-[dlgeneratemake](dlgeneratemake.md).
+[dlgeneratemake](../dynamic_link/dlgeneratemake.md).
 
 ## History
 

@@ -16,7 +16,7 @@ Number of elements.
 
 ## Description
 
-  <p>Return the number of elements in the object M.</p>
+<p>Return the number of elements in the object M.</p>
 
 ## Example
 
@@ -28,7 +28,7 @@ numel(ones(3,4,5))
 
 ## See also
 
-[size](size.md), [length](length.md).
+[size](../elementary_functions/size.md), [length](../elementary_functions/length.md).
 
 ## History
 

@@ -16,7 +16,8 @@ Converts a struct containing name-value pairs to a cell.
 
 ## Description
 
-  <p><b>ce = namedargs2cell(st)</b> returns an cell containing name-value pairs.</p>
+<p>
+            <b>ce = namedargs2cell(st)</b> returns an cell containing name-value pairs.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ R = namedargs2cell(S)
 
 ## See also
 
-[struct2cell](struct2cell.md), [struct](struct.md), [fieldnames](fieldnames.md).
+[struct2cell](../data_structures/struct2cell.md), [struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
 ## History
 

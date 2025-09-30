@@ -16,8 +16,9 @@ Swap byte ordering.
 
 ## Description
 
-  <p><b>swapbytes</b> Swap byte ordering.</p>
-  <p>endian (little - big) converter</p>
+<p>
+            <b>swapbytes</b> Swap byte ordering.</p>
+<p>endian (little - big) converter</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ Y = swapbytes(X)
 
 ## See also
 
-[num2bin](num2bin.md), [bin2num](bin2num.md).
+[num2bin](../elementary_functions/num2bin.md), [bin2num](../elementary_functions/bin2num.md).
 
 ## History
 

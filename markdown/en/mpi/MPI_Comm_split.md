@@ -18,11 +18,7 @@ Partitions the group that is associated with the specified communicator into a s
 
 ## Description
 
-  <p>Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups.</p>
-
-## See also
-
-[MPI_Comm_rank](MPI_Comm_rank.md).
+<p>Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups.</p>
 
 ## Example
 
@@ -50,6 +46,10 @@ if MPI_Initialized()
   MPI_Finalize();
 end
 ```
+
+## See also
+
+[MPI_Comm_rank](../mpi/MPI_Comm_rank.md).
 
 ## History
 

@@ -17,7 +17,8 @@ Returns variables names of a function.
 
 ## Description
 
-  <p><b>macroargs</b> returns input and output variables used by the function.</p>
+<p>
+            <b>macroargs</b> returns input and output variables used by the function.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ Returns variables names of a function.
 
 ## See also
 
-[which](which.md).
+[which](../functions_manager/which.md).
 
 ## History
 

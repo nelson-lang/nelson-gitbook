@@ -22,10 +22,11 @@ Check that computed and expected values are approximately equal.
 
 ## Description
 
-  <p><b>assert_isapprox</b> raises an error if computed value is not approximately equal to expected value.</p>
-  <p>This function compares two floating point numbers, which allows to check that two numbers are "approximately" equal, i.e. that the relative error is small.</p>
+<p>
+            <b>assert_isapprox</b> raises an error if computed value is not approximately equal to expected value.</p>
+<p>This function compares two floating point numbers, which allows to check that two numbers are "approximately" equal, i.e. that the relative error is small.</p>
 
-Used function(s)
+## Used function(s)
 
 isapprox
 

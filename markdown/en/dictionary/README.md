@@ -1,10 +1,8 @@
 # Dictionaries
 
-Dictionaries
-
-## Description
-
 Map data with keys that index values.
+
+## Functions
 
 - [configureDictionary](configureDictionary.md) - Generate a dictionary with defined key and value types.
 - [dictionary](dictionary.md) - Object that maps unique keys to values.

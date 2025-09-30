@@ -16,8 +16,9 @@ Converts a string to double.
 
 ## Description
 
-  <p><b>str2double</b> converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type.</p>
-  <p>If <b>str2double</b> cannot convert string to a number, then it returns a Not An Number value.</p>
+<p>
+            <b>str2double</b> converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type.</p>
+<p>If <b>str2double</b> cannot convert string to a number, then it returns a Not An Number value.</p>
 
 ## Example
 
@@ -26,6 +27,7 @@ R = str2double('2.6 + 3j')
 R = str2double('+NaNi')
 R = str2double({'2.71' '3.1415'})
 R = str2double(["2.71" "3.1415"])
+
 ```
 
 ## See also

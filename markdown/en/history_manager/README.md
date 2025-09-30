@@ -1,9 +1,7 @@
 # History manager
 
-History manager
-
-## Description
-
 history functions
+
+## Functions
 
 - [history](history.md) - history manager.

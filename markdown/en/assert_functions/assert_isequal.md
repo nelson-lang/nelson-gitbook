@@ -20,15 +20,15 @@ Check that computed and expected values are equal.
 
 ## Description
 
-<b>assert_isequal</b> raises an error if computed value is not equal to expected value (same type, same dimensions, same values comparaisons).
+<b>assert_isequal</b>raises an error if computed value is not equal to expected value (same type, same dimensions, same values comparaisons).
 
-Used function(s)
-
-isequaln
-
-Bibliography
+## Bibliography
 
 "Automated Software Testing for Matlab", Steven Eddins, 2009
+
+## Used function(s)
+
+isequaln
 
 ## Examples
 

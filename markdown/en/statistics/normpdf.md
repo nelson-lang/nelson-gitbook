@@ -20,11 +20,14 @@ Normal probability density function
 
 ## Description
 
-  <p><b>y = normpdf(x)</b> calculates the probability density function (pdf) of the standard normal distribution at the given values in <b>x</b>.</p>
-  <p><b>y = normpdf(x, mu)</b> computes the pdf of the normal distribution with a mean of <b>mu</b> and a standard deviation of 1, evaluated at the provided values in <b>x</b>.</p>
-  <p><b>y = normpdf(x, mu, sigma)</b> determines the pdf of the normal distribution with a mean of <b>mu</b> and a standard deviation of <b>sigma</b>, evaluated at the specified values in <b>x</b>.</p>
+<p>
+            <b>y = normpdf(x)</b> calculates the probability density function (pdf) of the standard normal distribution at the given values in <b>x</b>.</p>
+<p>
+                <b>y = normpdf(x, mu)</b> computes the pdf of the normal distribution with a mean of <b>mu</b> and a standard deviation of 1, evaluated at the provided values in <b>x</b>.</p>
+<p>
+                    <b>y = normpdf(x, mu, sigma)</b> determines the pdf of the normal distribution with a mean of <b>mu</b> and a standard deviation of <b>sigma</b>, evaluated at the specified values in <b>x</b>.</p>
 
-Bibliography
+## Bibliography
 
 Evans, M., N. Hastings, and B. Peacock. Statistical Distributions. 2nd ed. Hoboken, NJ: John Wiley and Sons, Inc., 1993.
 
@@ -42,7 +45,7 @@ R = normpdf(0, [-0.2, -0.1, 0, 0.1, 0.2], 1);
 
 ## See also
 
-[mean](mean.md).
+[mean](../statistics/mean.md).
 
 ## History
 

@@ -18,7 +18,8 @@ Element wise power, .^ operator
 
 ## Description
 
-  <p><b>C = power(A, B)</b> performs an element wise power operation: A .^ B .</p>
+<p>
+            <b>C = power(A, B)</b> performs an element wise power operation: A .^ B .</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ power(3, 4)
 
 ## See also
 
-[mpower](mpower.md).
+[mpower](../operators/mpower.md).
 
 ## History
 

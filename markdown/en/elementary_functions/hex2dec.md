@@ -16,9 +16,10 @@ Convert number in base 16 to decimal.
 
 ## Description
 
-  <p><b>hex2dec</b> converts number in base 16 to decimal.</p>
-  <p>Note:</p>
-  <p> - <b>hex2dec</b> and <b>dec2hex</b> are inverses of one another.</p>
+<p>
+            <b>hex2dec</b> converts number in base 16 to decimal.</p>
+<p>Note:</p>
+<p> - <b>hex2dec</b> and <b>dec2hex</b> are inverses of one another.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ bin2dec('11')
 
 ## See also
 
-[dec2bin](dec2bin.md).
+[dec2bin](../elementary_functions/dec2bin.md).
 
 ## History
 

@@ -31,16 +31,16 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 
 ## Description
 
-  <p>To reduce the matrices A and B using (and optionally accumulating) state-space and input-space transformations U and V respectively, such that the pair of matrices</p>
-  <p>Ac = U' * A * U,    Bc = U' * B * V</p>
+<p>To reduce the matrices A and B using (and optionally accumulating) state-space and input-space transformations U and V respectively, such that the pair of matrices</p>
+<p>Ac = U' * A * U,    Bc = U' * B * V</p>
 
-Used function(s)
-
-AB01OD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/AB01OD.html
+
+## Used function(s)
+
+AB01OD
 
 ## Example
 
@@ -71,6 +71,7 @@ INDCON_IN = N;
 NCONT_IN = 1;
 KSTAIR_IN = zeros(1,N);
 [A_OUT, B_OUT, U_OUT, V, NCONT_OUT, INDCON_OUT, KSTAIR_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
+
 ```
 
 ## History

@@ -19,7 +19,8 @@ Convert string arrays to character arrays.
 
 ## Description
 
-  <p><b>convertStringsToChars</b> converts string arrays to character arrays.</p>
+<p>
+            <b>convertStringsToChars</b> converts string arrays to character arrays.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ A = convertStringsToChars(["Nelson", string(NaN)])
 
 ## See also
 
-[convertCharsToStringss](convertCharsToStrings.md), [cellstr](../data_structures/cellstr.md), [string](string.md), [char](char.md).
+[convertCharsToStringss](../string/convertCharsToStrings.md), [cellstr](../data_structures/cellstr.md), [string](../string/string.md), [char](../string/char.md).
 
 ## History
 

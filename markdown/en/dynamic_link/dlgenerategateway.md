@@ -14,7 +14,8 @@ Generates C++ gateway.
 
 ## Description
 
-  <p><b>dlgenerategateway</b> generates a C++ gateway used by <b>addmodule</b>.</p>
+<p>
+            <b>dlgenerategateway</b> generates a C++ gateway used by <b>addmodule</b>.</p>
 
 ## Example
 

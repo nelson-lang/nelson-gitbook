@@ -13,9 +13,11 @@ Locks a variable.
 
 ## Description
 
-  <p><b>varlock</b> locks a variable.</p>
-  <p>Locked variables cannot be killed.</p>
-  <p><b>ans</b> variable cannot be locked.</p>
+<p>
+            <b>varlock</b> locks a variable.</p>
+<p>Locked variables cannot be killed.</p>
+<p>
+                <b>ans</b> variable cannot be locked.</p>
 
 ## Example
 
@@ -30,11 +32,13 @@ varislock('local', 'y')
 y = 4
 varlock('local', 'ans')
 varislock('local', 'ans')
+
+
 ```
 
 ## See also
 
-[varislock](varislock.md), [varunlock](varunlock.md).
+[varislock](../memory_manager/varislock.md), [varunlock](../memory_manager/varunlock.md).
 
 ## History
 

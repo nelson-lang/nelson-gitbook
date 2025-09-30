@@ -8,7 +8,8 @@ Restore Nelson’s path to its initial state at startup.
 
 ## Description
 
-  <p><b>restoredefaultpath</b> restores Nelson's search path to its startup state.</p>
+<p>
+            <b>restoredefaultpath</b> restores Nelson's search path to its startup state.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ path
 
 ## See also
 
-[rmpath](rmpath.md), [addpath](addpath.md), [path](path.md).
+[rmpath](../functions_manager/rmpath.md), [addpath](../functions_manager/addpath.md), [path](../functions_manager/path.md).
 
 ## History
 

@@ -19,9 +19,10 @@ Return true if arguments are approximately equal, within the precision.
 
 ## Description
 
-  <p>For matrices, the comparison is done using the Hilbert-Schmidt norm (aka Frobenius norm L2 norm).</p>
-  <p><b>isapprox</b> manages complex numbers. In this case, the real parts of the input arguments are compared. If this fails, it returns false. If this succeeds, the imaginary parts are compared.</p>
-  <p>To compare values, NaN, Inf, -Inf and remaining values, are separated. As it is impossible to compare NaN values between them, we compare the indices where NaN value occurs. For infinity values, we also compare the indices where Inf values occurs.</p>
+<p>For matrices, the comparison is done using the Hilbert-Schmidt norm (aka Frobenius norm L2 norm).</p>
+<p>
+            <b>isapprox</b> manages complex numbers. In this case, the real parts of the input arguments are compared. If this fails, it returns false. If this succeeds, the imaginary parts are compared.</p>
+<p>To compare values, NaN, Inf, -Inf and remaining values, are separated. As it is impossible to compare NaN values between them, we compare the indices where NaN value occurs. For infinity values, we also compare the indices where Inf values occurs.</p>
 
 ## Examples
 
@@ -51,7 +52,7 @@ res = isapprox(A, B, eps)
 
 ## See also
 
-[isequaln](isequaln.md), [isequal](isequal.md).
+[isequaln](../elementary_functions/isequaln.md), [isequal](../elementary_functions/isequal.md).
 
 ## History
 

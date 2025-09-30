@@ -19,7 +19,8 @@ linearly spaced vector constructor.
 
 ## Description
 
-  <p><b>linspace</b> generates an linearly spaced vector.</p>
+<p>
+            <b>linspace</b> generates an linearly spaced vector.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ V = linspace(1+2i, 10+10i, 4)
 
 ## See also
 
-[logspace](logspace.md).
+[logspace](../elementary_functions/logspace.md).
 
 ## History
 

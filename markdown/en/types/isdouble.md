@@ -16,7 +16,7 @@ Return true if variable var is a double matrix.
 
 ## Description
 
-<b>isdouble</b> returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
+<b>isdouble</b>returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
 
 ## Examples
 
@@ -42,7 +42,7 @@ res = isdouble(A)
 
 ## See also
 
-[isa](isa.md), [single](single.html), [double](double.html), [isfloat](isfloat.md).
+[isa](../types/isa.md), [single](../integer/single.md), [double](../integer/double.md), [isfloat](../types/isfloat.md).
 
 ## History
 

@@ -20,7 +20,8 @@ Reshapes a vector or a matrix to a different size matrix.
 
 ## Description
 
-  <p><b>reshape</b> performs a reshape to a different size matrix. If only one dimension is specified, <b>reshape</b> will determine complementary size automatically. [ ] is used to unspecify the dimension.</p>
+<p>
+            <b>reshape</b> performs a reshape to a different size matrix. If only one dimension is specified, <b>reshape</b> will determine complementary size automatically. [ ] is used to unspecify the dimension.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ Reshapes a vector or a matrix to a different size matrix.
 M1 = ones(3, 4, 5);
 M2 = reshape(M1, [5, 3, 4])
 M2 = reshape(M1, 5, [], 4)
+
 ```
 
 ## See also
 
-[colon](colon.html).
+[colon](../elementary_functions/colon.md).
 
 ## History
 

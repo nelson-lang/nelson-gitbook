@@ -19,10 +19,11 @@ Series connection of two models.
 
 ## Description
 
-  <p><b>series</b> function links two model objects in a sequential manner.</p>
-  <p>It is versatile and can accept various types of models.</p>
-  <p>However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times.</p>
-  <p>Static gains are treated as neutral and can be defined using regular matrices.</p>
+<p>
+            <b>series</b> function links two model objects in a sequential manner.</p>
+<p>It is versatile and can accept various types of models.</p>
+<p>However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times.</p>
+<p>Static gains are treated as neutral and can be defined using regular matrices.</p>
 
 ## Example
 
@@ -34,11 +35,12 @@ sys2 = ss(A, B, C, D)
 outputs1 = 1;
 inputs2 = 1;
 sys = series(sys1, sys2, outputs1, inputs2)
+
 ```
 
 ## See also
 
-[feedback](feedback.md), [append](append.md).
+[feedback](../control_system/feedback.md), [append](../control_system/append.md).
 
 ## History
 

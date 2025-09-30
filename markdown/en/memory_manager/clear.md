@@ -29,8 +29,10 @@ Remove variable from workspace.
 
 ## Description
 
-  <p><b>clear</b> is used to remove variable given by its name.</p>
-  <p><b>clear</b> can also delete handle object if a function handle_TYPE_clear is defined.</p>
+<p>
+            <b>clear</b> is used to remove variable given by its name.</p>
+<p>
+                <b>clear</b> can also delete handle object if a function handle_TYPE_clear is defined.</p>
 
 ## Example
 
@@ -44,7 +46,7 @@ A
 
 ## See also
 
-[who](who.md).
+[who](../memory_manager/who.md).
 
 ## History
 

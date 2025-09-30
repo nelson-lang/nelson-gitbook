@@ -15,7 +15,8 @@ Checks that value is integer or raise an error.
 
 ## Description
 
-  <p><b>mustBeInteger</b> checks that value is integer or raise an error.</p>
+<p>
+            <b>mustBeInteger</b> checks that value is integer or raise an error.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ mustBeInteger(Inf)
 
 ## See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
 ## History
 

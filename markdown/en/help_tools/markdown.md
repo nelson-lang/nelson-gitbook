@@ -19,7 +19,8 @@ Converts markdown to html.
 
 ## Description
 
-  <p><b>markdown</b> converts Markdown text-to-HTML.</p>
+<p>
+            <b>markdown</b> converts Markdown text-to-HTML.</p>
 
 ## Example
 
@@ -36,7 +37,7 @@ end
 
 ## See also
 
-[htmltopdf](htmltopdf.md).
+[htmltopdf](../help_tools/htmltopdf.md).
 
 ## History
 

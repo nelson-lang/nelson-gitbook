@@ -16,7 +16,8 @@ Determine if input is table.
 
 ## Description
 
-  <p><b>tf = istable(A)</b> returns <b>true</b> if <b>A</b> is a table, and <b>false</b> if it is not.</p>
+<p>
+            <b>tf = istable(A)</b> returns <b>true</b> if <b>A</b> is a table, and <b>false</b> if it is not.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ istable(M)
 
 ## See also
 
-[isa](../types/isa.md), [table](table.md).
+[isa](../types/isa.md), [table](../table/table.md).
 
 ## History
 

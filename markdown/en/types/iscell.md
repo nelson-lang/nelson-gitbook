@@ -16,7 +16,7 @@ Return true if variable var is a cell array.
 
 ## Description
 
-<b>iscell</b> returns a logical 1 if the argument is a cell array and a logical 0 otherwise.
+<b>iscell</b>returns a logical 1 if the argument is a cell array and a logical 0 otherwise.
 
 ## Examples
 
@@ -32,7 +32,7 @@ res = iscell(B)
 
 ## See also
 
-[class](class.md), [isstruct](isstruct.html).
+[class](../types/class.md), [isstruct](../integer/isstruct.md).
 
 ## History
 

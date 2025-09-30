@@ -8,14 +8,14 @@ Workspace Browser
 
 ## Description
 
-  <p>The Workspace browser allows you to observe and actively oversee the contents of the workspace within Nelson, providing access and control over each variable or object present.</p>
-  <p>
-    <img src="workspace_AC863D03.png" align="middle"/>
-  </p>
+<p>The Workspace browser allows you to observe and actively oversee the contents of the workspace within Nelson, providing access and control over each variable or object present.</p>
+<p>
+            
+        </p>
 
 ## See also
 
-[commandhistory](commandhistory.md), [filebrowser](filebrowser.md).
+[commandhistory](../gui/commandhistory.md), [filebrowser](../gui/filebrowser.md).
 
 ## History
 

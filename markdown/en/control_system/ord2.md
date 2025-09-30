@@ -23,7 +23,8 @@ Generate continuous second-order systems.
 
 ## Description
 
-  <p><b>ord2</b> offers a convenient way to obtain either the state-space representation or the transfer function of a second-order system based on its natural frequency and damping factor.</p>
+<p>
+            <b>ord2</b> offers a convenient way to obtain either the state-space representation or the transfer function of a second-order system based on its natural frequency and damping factor.</p>
 
 ## Example
 
@@ -35,11 +36,12 @@ sys1 = ss(A, B, C, D)
 
 [num, den] = ord2(wn, z);
 sys2 = tf(num, den)
+
 ```
 
 ## See also
 
-[ss](ss.md), [tf](tf.md).
+[ss](../control_system/ss.md), [tf](../control_system/tf.md).
 
 ## History
 

@@ -18,7 +18,8 @@ Scale data and play as sound.
 
 ## Description
 
-  <p><b>soundsc</b> scales the values of audio signal <b>y </b>to fit in the range from <b>–1.0</b> to <b>1.0</b> and play as sound.
+<p>
+            <b>soundsc</b> scales the values of audio signal <b>y </b>to fit in the range from <b>–1.0</b> to <b>1.0</b> and play as sound.
 	</p>
 
 ## Example
@@ -26,11 +27,12 @@ Scale data and play as sound.
 ```matlab
 signal = rand(2, 44100) - 0.5;
 soundsc(signal, 44110, 16)
+
 ```
 
 ## See also
 
-[audioplayer](audioplayer.md), [playblocking](playblocking.md), [sound](sound.md).
+[audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md), [sound](../audio/sound.md).
 
 ## History
 

@@ -19,17 +19,14 @@ Broadcasts a message from the process with rank "root" to all other processes of
 
 ## Description
 
-  <p>This function is used to broadcast an array to all group members.</p>
-
-## See also
-
-[MPI_Barrier](MPI_Barrier.md).
+<p>This function is used to broadcast an array to all group members.</p>
 
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Bcast.m'], 4)
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -47,7 +44,12 @@ disp(['rank: ', int2str(my_rank), ': after Bcast, buff is ', int2str(buff)])
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Barrier](../mpi/MPI_Barrier.md).
 
 ## History
 

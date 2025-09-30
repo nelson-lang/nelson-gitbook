@@ -17,7 +17,8 @@ Generate a dictionary with defined key and value types.
 
 ## Description
 
-  <p><b>d = configureDictionary(keyType, valueType)</b> initializes an empty dictionary that enforces keys of type <b>keyType</b> and values of type <b>valueType</b>.</p>
+<p>
+            <b>d = configureDictionary(keyType, valueType)</b> initializes an empty dictionary that enforces keys of type <b>keyType</b> and values of type <b>valueType</b>.</p>
 
 ## Example
 
@@ -28,7 +29,7 @@ d2 = configureDictionary("cell", "struct")
 
 ## See also
 
-[dictionary](dictionary.md), [isConfigured](isConfigured.md).
+[dictionary](../dictionary/dictionary.md), [isConfigured](../dictionary/isConfigured.md).
 
 ## History
 

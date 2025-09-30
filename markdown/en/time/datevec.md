@@ -18,8 +18,9 @@ Convert a serial date number into a date vector.
 
 ## Description
 
-  <p><b>datevec</b> converts a serial date number into a date vector.</p>
-  <p>To measure performance, it is better to use tic and toc functions.</p>
+<p>
+            <b>datevec</b> converts a serial date number into a date vector.</p>
+<p>To measure performance, it is better to use tic and toc functions.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ datevec(now())
 datevec(720840)
 V = datevec([720840, now()])
 [Y, M, D, H, MN, S] = datevec([720840, now()])
+
 ```
 
 ## See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
 ## History
 

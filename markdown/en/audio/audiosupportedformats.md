@@ -12,7 +12,8 @@ Get audio file supported formats.
 
 ## Description
 
-  <p><b>audiosupportedformats</b> returns a structure with supported audio file formats.</p>
+<p>
+            <b>audiosupportedformats</b> returns a structure with supported audio file formats.</p>
 
 ## Example
 

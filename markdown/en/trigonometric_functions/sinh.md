@@ -16,7 +16,7 @@ Computes the hyperbolic sine in radians for each element of x.
 
 ## Description
 
-<b>sinh</b> computes the hyperbolic sine in radians for each element of <b>x</b>.
+<b>sinh</b>computes the hyperbolic sine in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = sinh(A)
 
 ## See also
 
-[asin](asin.md), [sin](sin.md).
+[asin](../trigonometric_functions/asin.md), [sin](../trigonometric_functions/sin.md).
 
 ## History
 

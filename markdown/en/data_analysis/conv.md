@@ -19,7 +19,8 @@ Convolution and polynomial multiplication.
 
 ## Description
 
-  <p><b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.</p>
+<p>
+            <b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ R = conv(U, V, 'same')
 
 ## See also
 
-[conv](conv.md).
+[conv](../data_analysis/conv.md).
 
 ## History
 

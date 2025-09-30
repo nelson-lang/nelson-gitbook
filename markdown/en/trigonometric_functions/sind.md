@@ -16,7 +16,7 @@ Computes the sine in degree for each element of x.
 
 ## Description
 
-<b>sind</b> computes the sine in degree for each element of <b>x</b>.
+<b>sind</b>computes the sine in degree for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ sind(A)
 
 ## See also
 
-[sin](sin.md).
+[sin](../trigonometric_functions/sin.md).
 
 ## History
 

@@ -17,8 +17,10 @@ Remove dictionary entries.
 
 ## Description
 
-  <p><b>db = remove(da, key)</b> deletes the entry associated with the key from dictionary da.</p>
-  <p><b>d = remove(d, key)</b> is equivalent to <b>d[key] = []</b>.</p>
+<p>
+            <b>db = remove(da, key)</b> deletes the entry associated with the key from dictionary da.</p>
+<p>
+                <b>d = remove(d, key)</b> is equivalent to <b>d[key] = []</b>.</p>
 
 ## Example
 
@@ -27,11 +29,12 @@ names = ["Apple" "Banana" "Kiwi"];
 wheels = [1 2 3];
 d = dictionary(wheels, names)
 d = remove(d, 2)
+
 ```
 
 ## See also
 
-[dictionary](dictionary.md), [insert](insert.md), [lookup](lookup.md).
+[dictionary](../dictionary/dictionary.md), [insert](../dictionary/insert.md), [lookup](../dictionary/lookup.md).
 
 ## History
 

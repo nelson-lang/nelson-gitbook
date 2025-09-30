@@ -12,7 +12,8 @@ Returns available languages in Nelson.
 
 ## Description
 
-  <p><b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.</p>
+<p>
+            <b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ getavailablelanguages()
 
 ## See also
 
-[setlanguage](setlanguage.md).
+[setlanguage](../localization/setlanguage.md).
 
 ## History
 

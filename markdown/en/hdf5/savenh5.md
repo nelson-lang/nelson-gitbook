@@ -18,8 +18,9 @@ save workspace variables to .nh5 file
 
 ## Description
 
-  <p><b>savenh5</b> save workspace variables to .nh5 file.</p>
-  <p>.nh5 file uses hdf5 file as container.</p>
+<p>
+            <b>savenh5</b> save workspace variables to .nh5 file.</p>
+<p>.nh5 file uses hdf5 file as container.</p>
 
 ## Examples
 
@@ -72,7 +73,7 @@ no_compression = dir([tempdir(), 'example_h5save_no_compression.nh5'])
 
 ## See also
 
-[loadnh5](loadnh5.md), [h5write](h5write.md).
+[loadnh5](../hdf5/loadnh5.md), [h5write](../hdf5/h5write.md).
 
 ## History
 

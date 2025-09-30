@@ -12,17 +12,17 @@ Returns list of current used dlsym handle.
 
 ## Description
 
-  <p>Returns list of current used dlsym handle.</p>
-
-## See also
-
-[dlsym](dlSym.md).
+<p>Returns list of current used dlsym handle.</p>
 
 ## Example
 
 ```matlab
 dlsym_used(),delete(dlsym_used())
 ```
+
+## See also
+
+[dlsym](../dynamic_link/dlSym.md).
 
 ## History
 

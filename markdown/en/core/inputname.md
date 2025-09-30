@@ -16,8 +16,10 @@ Get variable name of function input.
 
 ## Description
 
-  <p><b>inputname</b> get variable name of function input.</p>
-  <p><b>inputname</b> is only useable within a function</p>
+<p>
+            <b>inputname</b> get variable name of function input.</p>
+<p>
+                <b>inputname</b> is only useable within a function</p>
 
 ## Example
 
@@ -32,7 +34,7 @@ end
 
 ## See also
 
-[nargin](nargin.md).
+[nargin](../core/nargin.md).
 
 ## History
 

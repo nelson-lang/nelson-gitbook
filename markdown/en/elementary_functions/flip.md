@@ -17,7 +17,7 @@ Flip order of elements
 
 ## Description
 
-  <p><b>flip</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.</p>
+<p><b>flip</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.</p>
 
 ## Example
 
@@ -30,7 +30,7 @@ y = flip(x, 3)
 
 ## See also
 
-[flipud](flipud.md), [fliplr](fliplr.md), [flipdim](flipdim.md).
+[flipud](../elementary_functions/flipud.md), [fliplr](../elementary_functions/fliplr.md), [flipdim](../elementary_functions/flipdim.md).
 
 ## History
 

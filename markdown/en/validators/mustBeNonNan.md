@@ -15,7 +15,8 @@ Checks that value is not NaN.
 
 ## Description
 
-  <p><b>mustBeNonNan</b> checks that value is not NaN or raise an error.</p>
+<p>
+            <b>mustBeNonNan</b> checks that value is not NaN or raise an error.</p>
 
 ## Example
 
@@ -23,6 +24,7 @@ Checks that value is not NaN.
 mustBeNonNan(1)
 mustBeNonNan([])
 mustBeNonNan(NaN)
+
 ```
 
 ## See also

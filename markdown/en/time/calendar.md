@@ -21,8 +21,9 @@ Calendar.
 
 ## Description
 
-  <p><b>calendar()</b> returns the currently monthly calendar.</p>
-  <p>If no output arguments are specified,the calendar is displayed on the screen instead of returning a matrix 6x7.</p>
+<p>
+            <b>calendar()</b> returns the currently monthly calendar.</p>
+<p>If no output arguments are specified,the calendar is displayed on the screen instead of returning a matrix 6x7.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ c = calendar(datenum(1973, 8, 4))
 
 ## See also
 
-[datenum](datenum.md).
+[datenum](../time/datenum.md).
 
 ## History
 

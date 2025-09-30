@@ -16,7 +16,8 @@ Checks that value is less than another value or issue error.
 
 ## Description
 
-  <p><b>mustBeLessThan</b> checks that value is less than another value or issue error.</p>
+<p>
+            <b>mustBeLessThan</b> checks that value is less than another value or issue error.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeLessThan(1, 2)
 
 ## See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
 ## History
 

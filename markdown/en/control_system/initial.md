@@ -26,11 +26,12 @@ System response to initial states of state-space model.
 
 ## Description
 
-  <p><b>[y, tOut] = initial(sys, x0)</b> calculates the unforced initial response (y) of the dynamic system <b>sys</b> from the specified initial state <b>x0</b>.</p>
-  <p>The time vector <b>tOut</b> is provided in the time units of <b>sys</b>, and the initial function automatically adapts time steps and simulation duration based on the system dynamics.</p>
-  <p>When you use <b>[y, tOut] = initial(sys, x0, tFinal)</b>, the function simulates the response from t = 0 to the final time t = tFinal.</p>
-  <p>Similarly, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simulates the response from t0 to tFinal.</p>
-  <p>Additionally, <b>[y, tOut] = initial(sys, x0, t)</b> returns the initial response of <b>sys</b> at the specified times provided in the vector <b>t</b>.</p>
+<p>
+            <b>[y, tOut] = initial(sys, x0)</b> calculates the unforced initial response (y) of the dynamic system <b>sys</b> from the specified initial state <b>x0</b>.</p>
+<p>The time vector <b>tOut</b> is provided in the time units of <b>sys</b>, and the initial function automatically adapts time steps and simulation duration based on the system dynamics.</p>
+<p>When you use <b>[y, tOut] = initial(sys, x0, tFinal)</b>, the function simulates the response from t = 0 to the final time t = tFinal.</p>
+<p>Similarly, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simulates the response from t0 to tFinal.</p>
+<p>Additionally, <b>[y, tOut] = initial(sys, x0, t)</b> returns the initial response of <b>sys</b> at the specified times provided in the vector <b>t</b>.</p>
 
 ## Example
 
@@ -44,13 +45,14 @@ U = zeros(size(T, 1), size(T, 2));
 X0 = [0.1 0.1 0.1];
 sys = ss(A, B, C, D);
 initial(sys, X0);
+
 ```
 
-<img src="initial_3AE59086.svg" align="middle"/>
+<img src="initial.svg" align="middle"/>
 
 ## See also
 
-[step](gensig.html), [lsim](step.md).
+[step](../control_system/gensig.md), [lsim](../control_system/step.md).
 
 ## History
 

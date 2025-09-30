@@ -23,15 +23,15 @@ Matrix exponential for a real matrix, with accuracy estimate.
 
 ## Description
 
-  <p>To compute exp(A*delta) where A is a real N-by-N matrix and delta is a scalar value. The routine also returns the minimal number of accurate digits in the 1-norm of exp(A*delta) and the number of accurate digits in the 1-norm of exp(A*delta) at 95% confidence level.</p>
+<p>To compute exp(A*delta) where A is a real N-by-N matrix and delta is a scalar value. The routine also returns the minimal number of accurate digits in the 1-norm of exp(A*delta) and the number of accurate digits in the 1-norm of exp(A*delta) at 95% confidence level.</p>
 
-Used function(s)
-
-MB05OD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB05OD.html
+
+## Used function(s)
+
+MB05OD
 
 ## Example
 

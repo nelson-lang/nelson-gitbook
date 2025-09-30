@@ -15,7 +15,8 @@ Checks that value is a row vector or raise an error.
 
 ## Description
 
-  <p><b>mustBeRow</b> checks that value is a row vector or raise an error.</p>
+<p>
+            <b>mustBeRow</b> checks that value is a row vector or raise an error.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeRow([1; 1])
 
 ## See also
 
-[isrow](isrow.html).
+[isrow](../types/isrow.md).
 
 ## History
 

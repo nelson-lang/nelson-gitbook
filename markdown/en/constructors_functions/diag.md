@@ -21,7 +21,8 @@ Get diagonal elements of matrix or create diagonal matrix.
 
 ## Description
 
-  <p><b>diag</b> returns diagonal elements of matrix or create diagonal matrix.</p>
+<p>
+            <b>diag</b> returns diagonal elements of matrix or create diagonal matrix.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ diag(diag(eye(3)))
 
 ## See also
 
-[ones](ones.md).
+[ones](../constructors_functions/ones.md).
 
 ## History
 

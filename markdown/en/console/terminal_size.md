@@ -12,7 +12,8 @@ Query the size of the terminal window.
 
 ## Description
 
-  <p><b>terminal_size()</b> returns a vector with size of the terminal window in characters (rows and columns).</p>
+<p>
+            <b>terminal_size()</b> returns a vector with size of the terminal window in characters (rows and columns).</p>
 
 ## Example
 

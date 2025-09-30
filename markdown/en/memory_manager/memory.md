@@ -15,14 +15,17 @@ Get memory information.
 
 ## Description
 
-  <p><b>memory</b> get memory information.</p>
-  <p><b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).</p>
-  <p><b>System Memory</b>:</p>
-  <p>VirtualAddressSpace.Available: available swap file space</p>
-  <p>VirtualAddressSpace.Total: total swap file space</p>
-  <p>SystemMemory.Available: available system memory</p>
-  <p>PhysicalMemory.Available: available physical memory</p>
-  <p>PhysicalMemory.Total: total physical memory</p>
+<p>
+            <b>memory</b> get memory information.</p>
+<p>
+                <b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).</p>
+<p>
+                    <b>System Memory</b>:</p>
+<p>VirtualAddressSpace.Available: available swap file space</p>
+<p>VirtualAddressSpace.Total: total swap file space</p>
+<p>SystemMemory.Available: available system memory</p>
+<p>PhysicalMemory.Available: available physical memory</p>
+<p>PhysicalMemory.Total: total physical memory</p>
 
 ## Examples
 
@@ -49,7 +52,7 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 
 ## See also
 
-[clear](clear.md), [who](who.md).
+[clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
 ## History
 

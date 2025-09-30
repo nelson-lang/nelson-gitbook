@@ -18,7 +18,8 @@ Creates an matrix made of ones.
 
 ## Description
 
-  <p><b>ones</b> returns a matrix made of ones.</p>
+<p>
+            <b>ones</b> returns a matrix made of ones.</p>
 
 ## Examples
 
@@ -42,7 +43,7 @@ tic();ones(1000,'single'); toc()
 
 ## See also
 
-[eye](eye.md), [zeros](zeros.md).
+[eye](../constructors_functions/eye.md), [zeros](../constructors_functions/zeros.md).
 
 ## History
 

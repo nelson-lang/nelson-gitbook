@@ -18,8 +18,10 @@ Replaces strings in another.
 
 ## Description
 
-  <p><b>replace</b> replaces strings in another.</p>
-  <p><b>replace</b> and <b>strrep</b> replace strings but <b>replace</b> is recommended.</p>
+<p>
+            <b>replace</b> replaces strings in another.</p>
+<p>
+                <b>replace</b> and <b>strrep</b> replace strings but <b>replace</b> is recommended.</p>
 
 ## Example
 
@@ -30,7 +32,7 @@ r = replace({'cccc','ccbbcca'},{'cc','bb'},{'cc'})
 
 ## See also
 
-[strrep](strrep.md).
+[strrep](../string/strrep.md).
 
 ## History
 

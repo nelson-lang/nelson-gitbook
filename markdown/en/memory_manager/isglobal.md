@@ -16,7 +16,8 @@ Checks if a variable is global.
 
 ## Description
 
-  <p><b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.</p>
+<p>
+            <b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ isglobal b
 
 ## See also
 
-[clear](clear.md), [who](who.md), [global](global.md).
+[clear](../memory_manager/clear.md), [who](../memory_manager/who.md), [global](../memory_manager/global.md).
 
 ## History
 

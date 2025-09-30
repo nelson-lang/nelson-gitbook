@@ -25,7 +25,8 @@ List variables in memory or in .nh5 or in .mat file.
 
 ## Description
 
-  <p><b>who</b> displays current variable names.</p>
+<p>
+            <b>who</b> displays current variable names.</p>
 
 ## Example
 
@@ -40,7 +41,7 @@ s = who()
 
 ## See also
 
-[what](../functions_manager/what.md), [clear](clear.md), [whos](whos.md).
+[what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [whos](../memory_manager/whos.md).
 
 ## History
 

@@ -1,10 +1,8 @@
 # Text editor
 
-Text editor
-
-## Description
-
 Embedded Nelson text editor
+
+## Functions
 
 - [edit](edit.md) - function editor.
 - [editor](editor.md) - call the embedded text editor.

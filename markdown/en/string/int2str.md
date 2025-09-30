@@ -16,7 +16,7 @@ Convert an integer array to a string
 
 ## Description
 
-<b>int2str</b> converts an numeric array to a string with integer format. Inputs are rounded before conversion.
+<b>int2str</b>converts an numeric array to a string with integer format. Inputs are rounded before conversion.
 
 ## Examples
 
@@ -30,7 +30,7 @@ R = int2str(uint64(intmax('uint64')))
 
 ## See also
 
-[char](char.md).
+[char](../string/char.md).
 
 ## History
 

@@ -20,7 +20,8 @@ List folder contents.
 
 ## Description
 
-  <p><b>ls</b> is implemented by calling the native operating system's directory listing command—available options will vary from system to system.</p>
+<p>
+            <b>ls</b> is implemented by calling the native operating system's directory listing command—available options will vary from system to system.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ end
 
 ## See also
 
-[dir](dir.md), [isdir](isdir.md), [isfile](isfile.md).
+[dir](../files_folders_functions/dir.md), [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
 ## History
 

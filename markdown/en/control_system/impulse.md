@@ -34,11 +34,11 @@ f = figure();
 impulse(sys,t);
 ```
 
-<img src="impulse_701DDDED.svg" align="middle"/>
+<img src="impulse.svg" align="middle"/>
 
 ## See also
 
-[step](gensig.html), [lsim](step.md).
+[step](../control_system/gensig.md), [lsim](../control_system/step.md).
 
 ## History
 

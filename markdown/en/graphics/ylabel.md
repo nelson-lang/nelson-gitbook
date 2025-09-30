@@ -22,7 +22,8 @@ Label y-axis.
 
 ## Description
 
-  <p><b>ylabel('text')</b> labels the y-axis of the current axes.</p>
+<p>
+            <b>ylabel('text')</b> labels the y-axis of the current axes.</p>
 
 ## Example
 
@@ -34,11 +35,11 @@ plot(x, y);
 ylabel('Y axis Label - Unicode ドラゴンボールY(ゼット)')
 ```
 
-<img src="ylabel_98FAB712.svg" align="middle"/>
+<img src="ylabel.svg" align="middle"/>
 
 ## See also
 
-[text](text.md), [title](title.md).
+[text](../graphics/text.md), [title](../graphics/title.md).
 
 ## History
 

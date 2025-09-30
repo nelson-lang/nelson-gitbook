@@ -16,7 +16,8 @@ Flip order of elements up to dow
 
 ## Description
 
-  <p><b>fliplr</b> return an new array of <b>A</b> flipped up to down.</p>
+<p>
+            <b>fliplr</b> return an new array of <b>A</b> flipped up to down.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ y = flipud(x)
 
 ## See also
 
-[fliplr](fliplr.md), [flip](flip.md), [flipdim](flipdim.md).
+[fliplr](../elementary_functions/fliplr.md), [flip](../elementary_functions/flip.md), [flipdim](../elementary_functions/flipdim.md).
 
 ## History
 

@@ -14,7 +14,8 @@ Get Nelson builtin and macro list.
 
 ## Description
 
-  <p><b>what</b> returns the list of all builtin and macro available in current Nelson's session.</p>
+<p>
+            <b>what</b> returns the list of all builtin and macro available in current Nelson's session.</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ l = what()
 
 ## See also
 
-[which](which.md).
+[which](../functions_manager/which.md).
 
 ## History
 

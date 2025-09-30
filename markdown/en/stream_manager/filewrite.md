@@ -17,8 +17,9 @@ Write text to a file.
 
 ## Description
 
-  <p><b>filewrite</b> saves a character array, cell of string or string array to a file.</p>
-  <p>file saved uses by default UTF-8 (NO-BOM) encoding.</p>
+<p>
+            <b>filewrite</b> saves a character array, cell of string or string array to a file.</p>
+<p>file saved uses by default UTF-8 (NO-BOM) encoding.</p>
 
 ## Examples
 
@@ -30,13 +31,14 @@ str = fileread([nelsonroot(),'/CHANGELOG.md'], 'string')
 characters encoding
 
 ```matlab
+
 str = 'живете зело, земля, и иже и како люди';
 filewrite([tempdir(), 'example_filewrite.txt'], str, 'native', 'windows-1251')
 ```
 
 ## See also
 
-[fileread](fileread.md).
+[fileread](../stream_manager/fileread.md).
 
 ## History
 

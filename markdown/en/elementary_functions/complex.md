@@ -18,8 +18,9 @@ Creates an complex number.
 
 ## Description
 
-  <p><b>complex</b> returns a complex value from real arguments.</p>
-  <p>With only one input argument, <b>complex</b> returns a complex value a + 0*i.</p>
+<p>
+            <b>complex</b> returns a complex value from real arguments.</p>
+<p>With only one input argument, <b>complex</b> returns a complex value a + 0*i.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ z3 = Inf + Inf * i
 
 ## See also
 
-[real](real.md), [imag](imag.md).
+[real](../elementary_functions/real.md), [imag](../elementary_functions/imag.md).
 
 ## History
 

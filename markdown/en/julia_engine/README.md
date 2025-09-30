@@ -1,10 +1,8 @@
 # Julia engine
 
-Julia engine
-
-## Description
-
 julia_engine functions
+
+## Functions
 
 - [jlenv](jlenv.md) - Change default environment of Julia interpreter.
 - [jlrun](jlrun.md) - Run Julia statements from Nelson.

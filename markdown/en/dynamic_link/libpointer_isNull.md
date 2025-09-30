@@ -17,11 +17,7 @@ Checks if libpointer handle points on NULL pointer.
 
 ## Description
 
-  <p>Checks if libpointer handle points on NULL pointer.</p>
-
-## See also
-
-[libpointer](libpointer.md).
+<p>Checks if libpointer handle points on NULL pointer.</p>
 
 ## Example
 
@@ -32,6 +28,10 @@ p2 = libpointer()
 p2.isNull()
 isNull(p2)
 ```
+
+## See also
+
+[libpointer](../dynamic_link/libpointer.md).
 
 ## History
 

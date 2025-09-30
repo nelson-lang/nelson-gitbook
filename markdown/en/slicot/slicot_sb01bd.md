@@ -31,15 +31,15 @@ Pole assignment for a given matrix pair (A,B).
 
 ## Description
 
-  <p>To determine the state feedback matrix F for a given system (A,B) such that the closed-loop state matrix A+B*F has specified eigenvalues.</p>
+<p>To determine the state feedback matrix F for a given system (A,B) such that the closed-loop state matrix A+B*F has specified eigenvalues.</p>
 
-Used function(s)
-
-SB01BD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB01BD.html
+
+## Used function(s)
+
+SB01BD
 
 ## Example
 
@@ -65,6 +65,7 @@ WR_IN = [-0.5000; -0.5000];
 WI_IN = [ 0.1500; -0.1500];
 
 [A_OUT, WR_OUT, WI_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
+
 ```
 
 ## History

@@ -13,7 +13,7 @@ Nelson tool to interface C or Fortran functions with Nelson.
 
 ## Description
 
-  <p>With <b>nig</b>, you can wrap your C/FORTRAN code into a same set, called an gateway, and use them in Nelson as Nelson builtin.</p>
+<p>With <b>nig</b>, you can wrap your C/FORTRAN code into a same set, called an gateway, and use them in Nelson as Nelson builtin.</p>
 
 ## Examples
 

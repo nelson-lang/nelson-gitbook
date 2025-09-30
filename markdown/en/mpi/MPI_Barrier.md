@@ -16,17 +16,14 @@ Blocks until all processes in the communicator have reached this routine.
 
 ## Description
 
-  <p>This function is used as a synchronization point for all processes in a group. All processes are blocked until every process calls MPI_Barrier.</p>
-
-## See also
-
-[MPI_Initialized](MPI_Initialized.md).
+<p>This function is used as a synchronization point for all processes in a group. All processes are blocked until every process calls MPI_Barrier.</p>
 
 ## Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Barrier.m'], 4)
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -39,7 +36,12 @@ disp(['I am ', int2str(my_rank), ' of ', int2str(num_ranks)]);
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Initialized](../mpi/MPI_Initialized.md).
 
 ## History
 

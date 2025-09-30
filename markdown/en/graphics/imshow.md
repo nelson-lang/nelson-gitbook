@@ -29,7 +29,8 @@ Display image.
 
 ## Description
 
-  <p><b>imshow(img)</b> displays the image <b>im</b>.</p>
+<p>
+            <b>imshow(img)</b> displays the image <b>im</b>.</p>
 
 ## Example
 
@@ -38,11 +39,12 @@ f = figure();
 filename = [tempdir, 'apollo_8_earthrise_1968_as08-14-2383.jpg'];
 websave(filename, 'https://www.nasa.gov/wp-content/uploads/2025/05/3dmodels-casa-2025-astro.jpg');
 h = imshow(filename);
+
 ```
 
 ## See also
 
-[imread](imread.md), [image](image.md), [imagesc](imagesc.md), [colormap](colormap.md).
+[imread](../graphics/imread.md), [image](../graphics/image.md), [imagesc](../graphics/imagesc.md), [colormap](../graphics/colormap.md).
 
 ## History
 

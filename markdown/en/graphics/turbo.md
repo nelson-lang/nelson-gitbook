@@ -17,7 +17,8 @@ Turbo colormap array.
 
 ## Description
 
-  <p><b>turbo</b> returns the colormap with turbo colors.</p>
+<p>
+            <b>turbo</b> returns the colormap with turbo colors.</p>
 
 ## Example
 
@@ -27,11 +28,11 @@ surf(peaks);
 colormap('turbo');
 ```
 
-<img src="turbo_AC999B8.svg" align="middle"/>
+<img src="turbo.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

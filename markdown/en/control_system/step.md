@@ -24,11 +24,11 @@ Step response plot of dynamic system.
 
 ## Description
 
-  <p>The function defaults to applying a step at t0 = 0 with initial conditions U = 0, dU = 1, and td = 0.</p>
-  <p>The step function, used as <b>[y, tOut] = step(sys)</b>, calculates the step response (y) of the dynamic system <b>sys</b>.</p>
-  <p>The time vector tOut is in the time units of <b>sys</b>, and the function automatically determines the time steps and simulation duration based on the system dynamics.</p>
-  <p>If you use <b>[y, tOut] = step(sys, tFinal)</b>, the step response is computed from t = 0 to the specified end time t = tFinal.</p>
-  <p>Similarly, <b>[y, tOut] = step(sys, [t0, tFinal])</b> computes the step response from <b>t0</b> to <b>tFinal</b>.</p>
+<p>The function defaults to applying a step at t0 = 0 with initial conditions U = 0, dU = 1, and td = 0.</p>
+<p>The step function, used as <b>[y, tOut] = step(sys)</b>, calculates the step response (y) of the dynamic system <b>sys</b>.</p>
+<p>The time vector tOut is in the time units of <b>sys</b>, and the function automatically determines the time steps and simulation duration based on the system dynamics.</p>
+<p>If you use <b>[y, tOut] = step(sys, tFinal)</b>, the step response is computed from t = 0 to the specified end time t = tFinal.</p>
+<p>Similarly, <b>[y, tOut] = step(sys, [t0, tFinal])</b> computes the step response from <b>t0</b> to <b>tFinal</b>.</p>
 
 ## Example
 
@@ -42,13 +42,14 @@ U = zeros(size(T, 1), size(T, 2));
 X0 = [0.1 0.1 0.1];
 sys = ss(A, B, C, D);
 step(sys);
+
 ```
 
-<img src="step_9F87E0CB.svg" align="middle"/>
+<img src="step.svg" align="middle"/>
 
 ## See also
 
-[gensig](gensig.html), [lsim](lsim.md).
+[gensig](../control_system/gensig.md), [lsim](../control_system/lsim.md).
 
 ## History
 

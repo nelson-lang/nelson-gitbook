@@ -21,11 +21,11 @@ Blocking test for a message.
 
 ## Description
 
-  <p>Blocking test for a message.</p>
+<p>Blocking test for a message.</p>
 
 ## See also
 
-[MPI_IProbe](MPI_IProbe.md).
+[MPI_IProbe](../mpi/MPI_IProbe.md).
 
 ## History
 

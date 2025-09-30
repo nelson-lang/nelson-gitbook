@@ -1,10 +1,8 @@
 # Memory manager functions
 
-Memory manager functions
-
-## Description
-
 memory manager functions
+
+## Functions
 
 - [acquirevar](acquirevar.md) - Acquires variable value from a specified variables scope.
 - [assignin](assignin.md) - Assignin value to a variable in a specified variables scope.

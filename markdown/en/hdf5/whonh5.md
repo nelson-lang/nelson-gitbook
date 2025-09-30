@@ -20,7 +20,8 @@ List variables in an valid .nh5 file.
 
 ## Description
 
-  <p><b>whonh5</b> lists variables in an valid .nh5 file.</p>
+<p>
+            <b>whonh5</b> lists variables in an valid .nh5 file.</p>
 
 ## Example
 

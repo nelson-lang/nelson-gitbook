@@ -16,10 +16,11 @@ Get the value of an environment variable.
 
 ## Description
 
-  <p><b>getenv</b> returns the value of an environment variable if it exists.</p>
-  <p>If the environment variable does not exist, it will return ''.</p>
-  <p>If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.</p>
-  <p>If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.</p>
+<p>
+            <b>getenv</b> returns the value of an environment variable if it exists.</p>
+<p>If the environment variable does not exist, it will return ''.</p>
+<p>If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.</p>
+<p>If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.</p>
 
 ## Example
 
@@ -28,11 +29,12 @@ getenv('OS')
 getenv('myenvvar')
 getenv(["PATH"; "OS"])
 getenv({'PATH'; 'OS'})
+
 ```
 
 ## See also
 
-[setenv](setenv.md), [searchenv](searchenv.md).
+[setenv](../os_functions/setenv.md), [searchenv](../os_functions/searchenv.md).
 
 ## History
 

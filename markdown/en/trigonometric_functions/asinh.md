@@ -16,7 +16,7 @@ Inverse hyperbolic sine function
 
 ## Description
 
-<b>cosh</b> computes the inverse hyperbolic sine in radians for each element of <b>x</b>.
+<b>cosh</b>computes the inverse hyperbolic sine in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = asinh(A)
 
 ## See also
 
-[asin](asin.md), [sin](sin.md).
+[asin](../trigonometric_functions/asin.md), [sin](../trigonometric_functions/sin.md).
 
 ## History
 

@@ -18,7 +18,8 @@ Justify strings
 
 ## Description
 
-  <p><b>J = strjust(str, side)</b> returns the text that is justified on the side specified by <b>side</b>.</p>
+<p>
+            <b>J = strjust(str, side)</b> returns the text that is justified on the side specified by <b>side</b>.</p>
 
 ## Examples
 
@@ -36,7 +37,7 @@ J = strjust('                 text', 'center')
 
 ## See also
 
-[blanks](blanks.md).
+[blanks](../string/blanks.md).
 
 ## History
 

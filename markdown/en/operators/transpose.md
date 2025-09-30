@@ -17,7 +17,8 @@ Returns vector or matrix transpose: .' operator.
 
 ## Description
 
-  <p><b>C = transpose(A)</b> returns the transpose of A.</p>
+<p>
+            <b>C = transpose(A)</b> returns the transpose of A.</p>
 
 ## Examples
 
@@ -32,13 +33,13 @@ B = A.'
 ```
 
 ```matlab
-A = sparse(eye(3, 4) * i)
+ A = sparse(eye(3, 4) * i)
 B = A.'
 ```
 
 ## See also
 
-[ctranspose](ctranspose.md).
+[ctranspose](../operators/ctranspose.md).
 
 ## History
 

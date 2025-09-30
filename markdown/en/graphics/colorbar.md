@@ -24,7 +24,8 @@ Colorbar showing color scale.
 
 ## Description
 
-  <p><b>colorbar</b>adds a color bar into a plot.</p>
+<p>
+            <b>colorbar</b>adds a color bar into a plot.</p>
 
 ## Examples
 
@@ -33,9 +34,10 @@ f = figure();
 surf(peaks);
 colormap('summer');
 colorbar()
+
 ```
 
-<img src="colorbar_1_CBB5124C.svg" align="middle"/>
+<img src="colorbar_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -44,11 +46,11 @@ colormap('gray');
 cb = colorbar(gca);
 ```
 
-<img src="colorbar_2_3526FDC1.svg" align="middle"/>
+<img src="colorbar_2.svg" align="middle"/>
 
 ## See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
 ## History
 

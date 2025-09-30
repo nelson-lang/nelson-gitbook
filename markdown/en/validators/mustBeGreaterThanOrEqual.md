@@ -16,7 +16,8 @@ Checks that value is greater than or equal to another value or issue error.
 
 ## Description
 
-  <p><b>mustBeGreaterThanOrEqual</b> checks that value is greater than or equal to another value or issue error.</p>
+<p>
+            <b>mustBeGreaterThanOrEqual</b> checks that value is greater than or equal to another value or issue error.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ mustBeGreaterThanOrEqual([2 3 4],5)
 
 ## See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
 ## History
 

@@ -12,17 +12,18 @@ Return the current local date and time as a date vector.
 
 ## Description
 
-  <p><b>calendar()</b> returns the currently monthly calendar.</p>
-  <p>The date vector contains the following fields:</p>
-  <p>year</p>
-  <p>months [1, 12]</p>
-  <p>days [1, 31]</p>
-  <p>hours [0, 23]</p>
-  <p>minutes [0, 59]</p>
-  <p>seconds [0, 61]</p>
-  <p>seconds: field has a fractional part after the decimal point for extended accuracy.</p>
-  <p>To time the duration of an event, use tic and toc functions instead of clock.</p>
-  <p>The clock function is based on the system time and thus might not be reliable for time comparison operations.</p>
+<p>
+            <b>calendar()</b> returns the currently monthly calendar.</p>
+<p>The date vector contains the following fields:</p>
+<p>year</p>
+<p>months [1, 12]</p>
+<p>days [1, 31]</p>
+<p>hours [0, 23]</p>
+<p>minutes [0, 59]</p>
+<p>seconds [0, 61]</p>
+<p>seconds: field has a fractional part after the decimal point for extended accuracy.</p>
+<p>To time the duration of an event, use tic and toc functions instead of clock.</p>
+<p>The clock function is based on the system time and thus might not be reliable for time comparison operations.</p>
 
 ## Example
 
@@ -33,7 +34,7 @@ fix(c)
 
 ## See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
 ## History
 

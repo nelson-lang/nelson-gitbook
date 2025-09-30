@@ -24,8 +24,8 @@ State-space model.
 
 ## Description
 
-  <p>Creates a continuous-time state-space model using matrices A, B, C, and D, allowing for either real or complex-valued matrices.</p>
-  <p>This model is represented as <b>sys = ss(A, B, C, D)</b>.</p>
+<p>Creates a continuous-time state-space model using matrices A, B, C, and D, allowing for either real or complex-valued matrices.</p>
+<p>This model is represented as <b>sys = ss(A, B, C, D)</b>.</p>
 
 ## Examples
 
@@ -47,7 +47,7 @@ sys = ss(sysIn)
 
 ## See also
 
-[tf](tf.md).
+[tf](../control_system/tf.md).
 
 ## History
 

@@ -20,9 +20,10 @@ List variables in an valid .mat file.
 
 ## Description
 
-  <p><b>whomat</b> lists variables in an valid .mat file.</p>
+<p>
+            <b>whomat</b> lists variables in an valid .mat file.</p>
 
-Bibliography
+## Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 

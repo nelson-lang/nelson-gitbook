@@ -16,7 +16,7 @@ string array constructor.
 
 ## Description
 
-<b>string</b> converts input into string array.
+<b>string</b>converts input into string array.
 
 ## Examples
 
@@ -34,7 +34,7 @@ D = double(R)
 
 ## See also
 
-[strings](strings.md), [double](../double/double.md).
+[strings](../string/strings.md), [double](../double/double.md).
 
 ## History
 

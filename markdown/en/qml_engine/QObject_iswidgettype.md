@@ -16,11 +16,7 @@ Returns true if the QObject is a widget.
 
 ## Description
 
-  <p>Returns true if the QObject is a widget; otherwise returns false.</p>
-
-## See also
-
-[QObject_set (set)](QObject_set.md).
+<p>Returns true if the QObject is a widget; otherwise returns false.</p>
 
 ## Example
 
@@ -28,6 +24,10 @@ Returns true if the QObject is a widget.
 h = errordlg()
 r = QObject_iswidgettype(h)
 ```
+
+## See also
+
+[QObject_set (set)](../qml_engine/QObject_set.md).
 
 ## History
 

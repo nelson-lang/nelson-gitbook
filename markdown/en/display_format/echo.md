@@ -20,8 +20,9 @@ Controls the echoing during their execution.
 
 ## Description
 
-  <p><b>echo('off')</b> disable echo mode.</p>
-  <p>Without input and output arguments, <b>echo</b> toggles the current echo state.</p>
+<p>
+            <b>echo('off')</b> disable echo mode.</p>
+<p>Without input and output arguments, <b>echo</b> toggles the current echo state.</p>
 
 ## Example
 
@@ -39,7 +40,7 @@ A
 
 ## See also
 
-[disp](disp.md).
+[disp](../display_format/disp.md).
 
 ## History
 

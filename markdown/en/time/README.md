@@ -1,10 +1,8 @@
 # Time functions
 
-Time functions
-
-## Description
-
 time functions
+
+## Functions
 
 - [addtodate](addtodate.md) - Modify date number by field.
 - [calendar](calendar.md) - Calendar.

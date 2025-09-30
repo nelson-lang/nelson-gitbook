@@ -17,12 +17,15 @@ Converts unicode characters representation to bytes
 
 ## Description
 
-  <p><b>unicode2native</b> converts unicode characters to an numeric array.</p>
-  <p><b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine).</p>
-  <p><b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set).</p>
-  <p>List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
+<p>
+            <b>unicode2native</b> converts unicode characters to an numeric array.</p>
+<p>
+                <b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine).</p>
+<p>
+                    <b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set).</p>
+<p>List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
 
-Bibliography
+## Bibliography
 
 ICU library
 
@@ -34,7 +37,7 @@ R = unicode2native('片仮名', 'SHIFT_JIS')
 
 ## See also
 
-[native2unicode](native2unicode.md), [char](../string/char.md).
+[native2unicode](../characters_encoding/native2unicode.md), [char](../string/char.md).
 
 ## History
 

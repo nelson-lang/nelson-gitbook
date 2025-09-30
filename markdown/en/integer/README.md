@@ -1,11 +1,8 @@
 # Integers type
 
-Integers type
+These functions convert and store data to 1, 2 or 4 bytes integers. These data types are especially useful to store big objects such as images.
 
-## Description
-
-These functions convert and store data to 1, 2 or 4 bytes integers.
-These data types are especially useful to store big objects such as images.
+## Functions
 
 - [int16](int16.md) - Converts to 16-bit signed integer.
 - [int32](int32.md) - Converts to 32-bit signed integer.

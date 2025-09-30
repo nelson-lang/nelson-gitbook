@@ -29,8 +29,9 @@ Generates a makefile for building a dynamic library.
 
 ## Description
 
-  <p><b>dlgeneratemake</b> generates a makefile adapted to your system environment for building shared libraries.</p>
-  <p>Thanks to <b>CMake</b> to help Nelson in this task.</p>
+<p>
+            <b>dlgeneratemake</b> generates a makefile adapted to your system environment for building shared libraries.</p>
+<p>Thanks to <b>CMake</b> to help Nelson in this task.</p>
 
 ## Example
 
@@ -47,7 +48,7 @@ See module skeleton for example
 
 ## See also
 
-[dlmake](dlmake.md).
+[dlmake](../dynamic_link/dlmake.md).
 
 ## History
 

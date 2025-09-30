@@ -15,7 +15,8 @@ Checks that value is scalar or empty or raise an error.
 
 ## Description
 
-  <p><b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.</p>
+<p>
+            <b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.</p>
 
 ## Example
 
@@ -23,11 +24,12 @@ Checks that value is scalar or empty or raise an error.
 mustBeScalarOrEmpty(true)
 mustBeScalarOrEmpty([])
 mustBeScalarOrEmpty([true false])
+
 ```
 
 ## See also
 
-[isempty](isempty.html), [islogical](../types/islogical.md).
+[isempty](../elementary_functions/isempty.md), [islogical](../types/islogical.md).
 
 ## History
 

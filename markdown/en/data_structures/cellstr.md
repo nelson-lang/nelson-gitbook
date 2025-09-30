@@ -16,7 +16,8 @@ Converts to cell of character array.
 
 ## Description
 
-  <p><b>cellstr(A)</b> converts to cell of character array.</p>
+<p>
+            <b>cellstr(A)</b> converts to cell of character array.</p>
 
 ## Examples
 
@@ -34,7 +35,7 @@ cellstr({})
 
 ## See also
 
-[iscellstr](iscellstr.html).
+[iscellstr](../types/iscellstr.md).
 
 ## History
 

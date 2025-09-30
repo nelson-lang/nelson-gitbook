@@ -21,8 +21,9 @@ Call a NELSON function
 
 ## Description
 
-  <p><b>mexCallMATLAB</b> calls an NELSON function.</p>
-  <p>If name detects an error, NELSON will terminate MEX and returns control to NELSON.</p>
+<p>
+            <b>mexCallMATLAB</b> calls an NELSON function.</p>
+<p>If name detects an error, NELSON will terminate MEX and returns control to NELSON.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ edit([modulepath('mex', 'tests'), '/test_mexCallMATLAB.m'])
 
 ## See also
 
-[eval](../core/eval.md), [mexCallMATLABWithTrap](mexCallMATLABWithTrap.md).
+[eval](../core/eval.md), [mexCallMATLABWithTrap](../mex/mexCallMATLABWithTrap.md).
 
 ## History
 

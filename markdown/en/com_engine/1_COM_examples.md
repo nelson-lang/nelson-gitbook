@@ -4,12 +4,12 @@ Some example to show how to use COM interface.
 
 ## Description
 
-  <p>See <b>[modulepath('com_engine'), '/examples']</b> directory.</p>
-  <p>Interacts with Internet explorer, Word, Excel, Speech voice, VB scripts ...</p>
+<p>See <b>[modulepath('com_engine'), '/examples']</b> directory.</p>
+<p>Interacts with Internet explorer, Word, Excel, Speech voice, VB scripts ...</p>
 
 ## See also
 
-[actxserver](actxserver.md), [set](COM_set.md), [get](COM_get.md), [invoke](COM_invoke.md).
+[actxserver](../com_engine/actxserver.md), [set](../com_engine/COM_set.md), [get](../com_engine/COM_get.md), [invoke](../com_engine/COM_invoke.md).
 
 ## History
 

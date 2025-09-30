@@ -29,7 +29,8 @@ Set axis limits and aspect ratios.
 
 ## Description
 
-  <p><b>axes</b> set axis limits and appearance.</p>
+<p>
+            <b>axes</b> set axis limits and appearance.</p>
 
 ## Example
 
@@ -57,11 +58,11 @@ title('normal plot again');
 axis('normal');
 ```
 
-<img src="axis_51C943C7.svg" align="middle"/>
+<img src="axis.svg" align="middle"/>
 
 ## See also
 
-[gca](gca.md), [axes](axes.md).
+[gca](../graphics/gca.md), [axes](../graphics/axes.md).
 
 ## History
 

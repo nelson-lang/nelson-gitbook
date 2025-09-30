@@ -12,7 +12,8 @@ Plot colormap.
 
 ## Description
 
-  <p><b>rgbplot(cmap)</b> plots the R (red), G (green), and B (blue) intensities of the specified <b>cmap</b> colormap.</p>
+<p>
+            <b>rgbplot(cmap)</b> plots the R (red), G (green), and B (blue) intensities of the specified <b>cmap</b> colormap.</p>
 
 ## Example
 
@@ -26,11 +27,11 @@ colormap = [0.2 0.1 0.5;
 rgbplot(colormap);
 ```
 
-<img src="rgbplot_1A9AFB52.svg" align="middle"/>
+<img src="rgbplot.svg" align="middle"/>
 
 ## See also
 
-[plot](plot.md), [colormap](colormap.md).
+[plot](../graphics/plot.md), [colormap](../graphics/colormap.md).
 
 ## History
 

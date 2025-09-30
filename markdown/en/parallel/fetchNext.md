@@ -19,12 +19,14 @@ Retrieve next unread outputs from FevalFuture array.
 
 ## Description
 
-  <p><b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index <b>idx</b> of the new readable <b>FevalFuture</b> object in the array <b>f</b> that is finished, and <b>m</b> results from that FevalFuture as <b>Y1, ... , Ym</b>.</p>
-  <p/>
+<p>
+            <b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index <b>idx</b> of the new readable <b>FevalFuture</b> object in the array <b>f</b> that is finished, and <b>m</b> results from that FevalFuture as <b>Y1, ... , Ym</b>.</p>
+<p></p>
 
 ## Example
 
 ```matlab
+
 tic()
 N = 100;
 for idx = N:-1:1
@@ -37,11 +39,12 @@ for idx = 1:N
     disp(sprintf('Result: %d', result));
 end
 toc()
+
 ```
 
 ## See also
 
-[parfeval](parfeval.md), [fetchOutputs](fetchOutputs.md), [backgroundPool](backgroundPool.md).
+[parfeval](../parallel/parfeval.md), [fetchOutputs](../parallel/fetchOutputs.md), [backgroundPool](../parallel/backgroundPool.md).
 
 ## History
 

@@ -14,8 +14,10 @@ Displays documentation.
 
 ## Description
 
-  <p><b>doc</b>launches help browser.</p>
-  <p><b>doc('function_name')</b>displays the help about function designed by 'function_name'.</p>
+<p>
+            <b>doc</b>launches help browser.</p>
+<p>
+                <b>doc('function_name')</b>displays the help about function designed by 'function_name'.</p>
 
 ## Examples
 

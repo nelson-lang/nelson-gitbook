@@ -13,7 +13,8 @@ Build help of Nelson's modules.
 
 ## Description
 
-  <p><b>buildhelp</b> generates help files.</p>
+<p>
+            <b>buildhelp</b> generates help files.</p>
 
 ## Example
 

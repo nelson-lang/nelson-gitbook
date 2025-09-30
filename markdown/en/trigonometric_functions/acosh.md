@@ -16,7 +16,7 @@ Inverse hyperbolic cosine.
 
 ## Description
 
-<b>acos</b> computes the inverse hyperbolic cosine.
+<b>acos</b>computes the inverse hyperbolic cosine.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = acosh(A)
 
 ## See also
 
-[cosh](cosh.html).
+[cosh](../trigonometric/cosh.md).
 
 ## History
 

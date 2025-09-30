@@ -18,7 +18,7 @@ Matrix right division, / operator.
 
 ## Description
 
-  <p><b>C = mrdivide(A, B)</b> returns the matrix right division of A and B.</p>
+<p><b>C = mrdivide(A, B)</b> returns the matrix right division of A and B.</p>
 
 ## Example
 
@@ -26,11 +26,12 @@ Matrix right division, / operator.
 B = ones(3, 4)
 A = B *2
 A / B
+
 ```
 
 ## See also
 
-[ldivide](ldivide.md), [mldivide](mldivide.md).
+[ldivide](../operators/ldivide.md), [mldivide](../operators/mldivide.md).
 
 ## History
 

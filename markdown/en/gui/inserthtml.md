@@ -12,7 +12,8 @@ Insert html in GUI console.
 
 ## Description
 
-  <p><b>inserthtml</b> inserts html code in GUI console.</p>
+<p>
+            <b>inserthtml</b> inserts html code in GUI console.</p>
 
 ## Example
 

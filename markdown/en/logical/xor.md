@@ -19,7 +19,8 @@ Exclusive or.
 
 ## Description
 
-  <p><b>xor</b> performs a logical exclusive-OR.</p>
+<p>
+            <b>xor</b> performs a logical exclusive-OR.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ R = xor(x, y)
 
 ## See also
 
-[or](or.html), [and](and.html).
+[or](../elementary_functions/or.md), [and](../elementary_functions/and.md).
 
 ## History
 

@@ -13,11 +13,7 @@ Set type of an libpointer handle.
 
 ## Description
 
-  <p>Set data type from libpointer object.</p>
-
-## See also
-
-[libpointer](libpointer.md), [C/Nelson equivalent data types](C_datatype.md).
+<p>Set data type from libpointer object.</p>
 
 ## Example
 
@@ -28,6 +24,10 @@ a.setdatatype('doublePtr');
 a.reshape(1, 1)
 a.Value
 ```
+
+## See also
+
+[libpointer](../dynamic_link/libpointer.md), [C/Nelson equivalent data types](../dynamic_link/C_datatype.md).
 
 ## History
 

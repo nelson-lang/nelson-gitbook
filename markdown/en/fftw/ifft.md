@@ -20,7 +20,8 @@ Inverse Fast Fourier transform.
 
 ## Description
 
-  <p><b>ifft(X)</b> computes the inverse discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
+<p>
+            <b>ifft(X)</b> computes the inverse discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ R = ifft(Y)
 
 ## See also
 
-[fft](fft.md), [fftw](fftw.md).
+[fft](../fftw/fft.md), [fftw](../fftw/fftw.md).
 
 ## History
 

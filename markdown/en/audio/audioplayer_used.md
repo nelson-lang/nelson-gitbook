@@ -12,17 +12,18 @@ Returns list of current used audioplayer handle.
 
 ## Description
 
-  <p>Returns list of current used audioplayer handle.</p>
-
-## See also
-
-[audioplayer_set (set)](audioplayer_set.md), [audioplayer_get (get)](audioplayer_get.md).
+<p>Returns list of current used audioplayer handle.</p>
 
 ## Example
 
 ```matlab
 audioplayer_used(),delete(audioplayer_used())
+
 ```
+
+## See also
+
+[audioplayer_set (set)](../audio/audioplayer_set.md), [audioplayer_get (get)](../audio/audioplayer_get.md).
 
 ## History
 

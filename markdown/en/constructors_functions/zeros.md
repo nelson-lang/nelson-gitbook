@@ -18,7 +18,8 @@ Creates an matrix made of zeros.
 
 ## Description
 
-  <p><b>zeros</b> returns a matrix made of zeros.</p>
+<p>
+            <b>zeros</b> returns a matrix made of zeros.</p>
 
 ## Examples
 
@@ -42,7 +43,7 @@ tic();zeros(1000, 'single'); toc()
 
 ## See also
 
-[eye](eye.md), [ones](ones.md).
+[eye](../constructors_functions/eye.md), [ones](../constructors_functions/ones.md).
 
 ## History
 

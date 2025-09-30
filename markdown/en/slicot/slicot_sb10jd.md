@@ -26,15 +26,15 @@ Converting a descriptor state-space system into regular state-space form.
 
 ## Description
 
-  <p>To convert the descriptor state-space system into regular state-space form.</p>
+<p>To convert the descriptor state-space system into regular state-space form.</p>
 
-Used function(s)
-
-SB10JD
-
-Bibliography
+## Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB10JD.html
+
+## Used function(s)
+
+SB10JD
 
 ## Example
 

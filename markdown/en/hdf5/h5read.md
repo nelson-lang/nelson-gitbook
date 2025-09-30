@@ -17,7 +17,8 @@ Read HDF5 data set.
 
 ## Description
 
-  <p><b>h5read</b> reads data set in <b>location</b> from the HDF5 file.</p>
+<p>
+            <b>h5read</b> reads data set in <b>location</b> from the HDF5 file.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ R = h5read(double_data,'/DS1')
 
 ## See also
 
-[h5write](h5write.md).
+[h5write](../hdf5/h5write.md).
 
 ## History
 

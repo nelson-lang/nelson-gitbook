@@ -12,7 +12,7 @@ Stops an audioplayer object.
 
 ## Description
 
-<b>stop</b> stops an audioplayer object.
+<b>stop</b>stops an audioplayer object.
 
 ## Example
 
@@ -28,7 +28,7 @@ playObj
 
 ## See also
 
-[audioplayer](audioplayer.md), [play](play.md).
+[audioplayer](../audio/audioplayer.md), [play](../audio/play.md).
 
 ## History
 

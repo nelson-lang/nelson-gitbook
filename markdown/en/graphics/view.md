@@ -20,7 +20,8 @@ Camera line of sigh.
 
 ## Description
 
-  <p><b>view</b>sets the view into a plot.</p>
+<p>
+            <b>view</b>sets the view into a plot.</p>
 
 ## Examples
 
@@ -31,7 +32,7 @@ Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 ```
 
-<img src="view_1_FADFDAFB.svg" align="middle"/>
+<img src="view_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -41,7 +42,7 @@ surf(X, Y, Z)
 view(90, 0)
 ```
 
-<img src="view_2_9A6A68DE.svg" align="middle"/>
+<img src="view_2.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -51,11 +52,11 @@ surf(X, Y, Z)
 view(2)
 ```
 
-<img src="view_3_8FE94819.svg" align="middle"/>
+<img src="view_3.svg" align="middle"/>
 
 ## See also
 
-[axes](axes.md).
+[axes](../graphics/axes.md).
 
 ## History
 

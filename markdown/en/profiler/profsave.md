@@ -15,9 +15,10 @@ Save profile result to HTML format.
 
 ## Description
 
-  <p><b>profsave</b> exports the profiling data into a series of HTML files.</p>
-  <p>The input profile_info is the structure returned by profile('info').</p>
-  <p>If unspecified, <b>profsave</b> will use the current profile.</p>
+<p>
+            <b>profsave</b> exports the profiling data into a series of HTML files.</p>
+<p>The input profile_info is the structure returned by profile('info').</p>
+<p>If unspecified, <b>profsave</b> will use the current profile.</p>
 
 ## Example
 
@@ -27,11 +28,12 @@ sind(5)
 profile off
 profsave(profile('info'), [tempdir(), 'profile_results'])
 unix([tempdir(), 'profile_results/index.html'])
+
 ```
 
 ## See also
 
-[profile](profile.md).
+[profile](../profiler/profile.md).
 
 ## History
 

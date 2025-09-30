@@ -16,7 +16,7 @@ Computes the hyperbolic cosine in radians for each element of x.
 
 ## Description
 
-<b>cosh</b> computes the hyperbolic cosine in radians for each element of <b>x</b>.
+<b>cosh</b>computes the hyperbolic cosine in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = cosh(A)
 
 ## See also
 
-[acos](acos.md), [cos](cos.md).
+[acos](../trigonometric_functions/acos.md), [cos](../trigonometric_functions/cos.md).
 
 ## History
 

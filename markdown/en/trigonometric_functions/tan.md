@@ -16,7 +16,7 @@ Computes the tangent in radians for each element of x.
 
 ## Description
 
-<b>tan</b> computes the tangent in radians for each element of <b>x</b>.
+<b>tan</b>computes the tangent in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ res = tan(A)
 
 ## See also
 
-[atan](atan.md).
+[atan](../trigonometric_functions/atan.md).
 
 ## History
 

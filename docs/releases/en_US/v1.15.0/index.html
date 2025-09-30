@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Overview - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <img src="banner_homepage.png" alt="banner" style="display:block; margin-left:auto; margin-right:auto;" />
+<h3 id="nelson-11500"><a class="header" href="#nelson-11500">Nelson 1.15.0.0</a></h3>
+<p>The main homepage for Nelson can be found at <a href="https://nelson-lang.github.io/nelson-website/">https://nelson-lang.github.io/nelson-website/</a>.</p>
+<h2 id="-introduction"><a class="header" href="#-introduction">🎓 <strong>Introduction</strong></a></h2>
+<p>Nelson is a powerful, open-source numerical computational language, developed to provide a comprehensive and intuitive environment for engineers, scientists, and students. With over 1,200 built-in functions, Nelson supports a wide range of tasks, from basic algebra to advanced numerical simulations.</p>
+<p>Originally inspired by languages like MATLAB© and GNU Octave, Nelson offers users a lightweight yet feature-rich experience. It is designed to be easy to learn and use, with an emphasis on performance and flexibility.</p>
+<h2 id="-features"><a class="header" href="#-features">🛠️ <strong>Features</strong></a></h2>
+<h3 id="data-types-managed-by-nelson"><a class="header" href="#data-types-managed-by-nelson">Data Types Managed by Nelson</a></h3>
+<ul>
+<li><strong>Double and Complex Double</strong>: Supports scalars, vectors, 2D matrices, N-dimensional arrays, and sparse matrices.</li>
+<li><strong>Single and Complex Single</strong>: Includes scalars, vectors, 2D matrices, N-dimensional arrays, and sparse matrices.</li>
+<li><strong>Logical</strong>: Handles scalars, vectors, 2D matrices, N-dimensional arrays, and sparse matrices.</li>
+<li><strong>Character Arrays</strong>: Supports UNICODE characters.</li>
+<li><strong>String Arrays</strong>: Fully supports UNICODE.</li>
+<li><strong>Integers</strong>: 8, 16, 32, and 64-bit signed and unsigned scalars, vectors, 2D matrices, and N-dimensional arrays.</li>
+<li><strong>Handle Objects</strong>: For object-oriented functionality.</li>
+<li><strong>Anonymous Functions</strong>: Allows creation and manipulation of functions without names.</li>
+<li><strong>Data Structures</strong>: Supports dictionaries and tables.</li>
+<li><strong>Overloading</strong>: All types can be overloaded for custom behavior.</li>
+</ul>
+<h3 id="performance-enhancements"><a class="header" href="#performance-enhancements">Performance Enhancements</a></h3>
+<ul>
+<li><strong>OpenMP and SIMD</strong>: Utilizes parallel processing and vectorization for faster computations.</li>
+</ul>
+<h3 id="visualization--interface"><a class="header" href="#visualization--interface">Visualization &amp; Interface</a></h3>
+<ul>
+<li><strong>2D and 3D Plotting</strong>: High-level commands for visualizations.</li>
+<li><strong>User Interface Controls</strong>: Built-in controls for creating custom interfaces.</li>
+<li><strong>Desktop Environment</strong>: Comes with history tracking, a file explorer, and workspace browser.</li>
+</ul>
+<h3 id="advanced-modules"><a class="header" href="#advanced-modules">Advanced Modules</a></h3>
+<ul>
+<li><strong>Parallel Computing</strong>: Enables efficient use of multi-core processors.</li>
+<li><strong>Fast Fourier Transform (FFT)</strong>: High-performance FFT functions based on FFTW and MKL.</li>
+<li><strong>SLICOT Interface</strong>: Optional support for the Systems and Control Theory subroutine library.</li>
+<li><strong>Control System Module</strong>: Tools for control theory and system design.</li>
+<li><strong>MPI (Message Passing Interface)</strong>: Functions for distributed parallel computing.</li>
+</ul>
+<h3 id="data-formats--interfacing"><a class="header" href="#data-formats--interfacing">Data Formats &amp; Interfacing</a></h3>
+<ul>
+<li><strong>JSON Support</strong>: Read and write JSON files.</li>
+<li><strong>HDF5 Functions</strong>: High-level I/O functions, with HDF5 as the default file format for <code>.nh5</code> workspaces.</li>
+<li><strong>MAT-File Compatibility</strong>: Load and save workspaces in MAT-file format.</li>
+<li><strong>Foreign Function Interface (FFI)</strong>: Build and load C/Fortran code on the fly.</li>
+<li><strong>MEX C API Compatibility</strong>: Interfacing with MEX-compatible C APIs.</li>
+<li><strong>Nelson Engine API</strong>: Use Nelson as a backend engine within C code, compatible with the MEX Engine API.</li>
+<li><strong>Julia Interfacing</strong>: Call Julia scripts and functions from Nelson.</li>
+<li><strong>Python Interfacing</strong>: Call Python scripts and functions from Nelson.</li>
+<li><strong>RESTful API</strong>: Enables Nelson to interact with web services.</li>
+</ul>
+<h3 id="additional-capabilities"><a class="header" href="#additional-capabilities">Additional Capabilities</a></h3>
+<ul>
+<li><strong>Inter-Process Communication</strong>: Communicate between Nelson processes.</li>
+<li><strong>QML Engine</strong>: Use Qt’s QML framework to display and manipulate graphical content.</li>
+<li><strong>Component Object Model (COM)</strong>: Interface with COM components, especially on Windows.</li>
+<li><strong>Excel File Support</strong>: Write and read <code>.xlsx</code> files using COM on Windows.</li>
+<li><strong>Embedded Code Editor</strong>: Integrated editor for Nelson scripts.</li>
+</ul>
+<h3 id="help--testing-tools"><a class="header" href="#help--testing-tools">Help &amp; Testing Tools</a></h3>
+<ul>
+<li><strong>Help Engine</strong>: Generate and view help files in various formats like HTML, Markdown, PDF, or GitBook.</li>
+<li><strong>Test Engine</strong>: Validate algorithms using built-in functions, with support for xUnit report export.</li>
+</ul>
+<h3 id="profiling--code-coverage"><a class="header" href="#profiling--code-coverage">Profiling &amp; Code Coverage</a></h3>
+<ul>
+<li><strong>Profiler</strong>: Built-in profiler to analyze and optimize code performance.</li>
+<li><strong>Code Coverage</strong>: Measure the coverage of your tests to ensure thorough validation.</li>
+</ul>
+<h3 id="cloud--extensibility"><a class="header" href="#cloud--extensibility">Cloud &amp; Extensibility</a></h3>
+<ul>
+<li><strong>Nelson Cloud</strong>: Instant access to Nelson from any web browser via <a href="https://www.npmjs.com/package/nelson-cloud">Nelson Cloud</a>.</li>
+<li><strong>Module Skeleton</strong>: Templates for extending Nelson:
+<ul>
+<li><a href="https://github.com/nelson-lang/module_skeleton">Template with Macros and Builtins</a>.</li>
+<li><a href="https://github.com/nelson-lang/module_skeleton_basic">Basic Macros Template</a>.</li>
+</ul>
+</li>
+<li><strong>Nelson Modules Manager (nmm)</strong>: A package manager to install and manage extensions for Nelson.</li>
+</ul>
+<hr />
+<h1 id="changelogs"><a class="header" href="#changelogs">Changelogs</a></h1>
+<ul>
+<li><a href="./changelogs/CHANGELOG.html">Changelog v1.x.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.7.x.html">Changelog v0.7.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.6.x.html">Changelog v0.6.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.5.x.html">Changelog v0.5.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.4.x.html">Changelog v0.4.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.3.x.html">Changelog v0.3.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.2.x.html">Changelog v0.2.x</a></li>
+<li><a href="./changelogs/CHANGELOG-0.1.x.html">Changelog v0.1.x</a></li>
+</ul>
+<hr />
+<h1 id="license"><a class="header" href="#license">License</a></h1>
+<ul>
+<li><a href="./license/license.html">Nelson license</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next prefetch" href="functions_manager/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next prefetch" href="functions_manager/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

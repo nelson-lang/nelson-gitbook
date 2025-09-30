@@ -16,9 +16,11 @@ Raise an error message.
 
 ## Description
 
-  <p><b>error</b> stops the current script execution.</p>
-  <p><b>error('')</b> will be ignored and the script will continue to run.</p>
-  <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
+<p>
+            <b>error</b> stops the current script execution.</p>
+<p>
+                <b>error('')</b> will be ignored and the script will continue to run.</p>
+<p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
 
 ## Examples
 
@@ -30,7 +32,7 @@ error('')
 ```
 
 ```matlab
-1 / [1 2 3]
+ 1 / [1 2 3]
 a = lasterror()
 lasterror('reset')
 b = lasterror()
@@ -40,7 +42,7 @@ c = lasterror()
 
 ## See also
 
-[MException](MException.md), [lasterror](lasterror.md), [warning](warning.md).
+[MException](../error_manager/MException.md), [lasterror](../error_manager/lasterror.md), [warning](../error_manager/warning.md).
 
 ## History
 

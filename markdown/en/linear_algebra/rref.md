@@ -21,10 +21,12 @@ Gauss-Jordan elimination.
 
 ## Description
 
-  <p><b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.</p>
-  <p><b>[R, p] = rref(A)</b> returns also the nonzero pivots <b>p</b>.</p>
+<p>
+            <b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.</p>
+<p>
+                <b>[R, p] = rref(A)</b> returns also the nonzero pivots <b>p</b>.</p>
 
-Bibliography
+## Bibliography
 
 https://en.wikipedia.org/wiki/Gaussian_elimination
 
@@ -37,7 +39,7 @@ A = [magic(4), eye(4)]
 
 ## See also
 
-[rank](rank.md).
+[rank](../linear_algebra/rank.md).
 
 ## History
 

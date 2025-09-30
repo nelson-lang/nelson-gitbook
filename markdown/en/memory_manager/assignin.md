@@ -14,7 +14,8 @@ Assignin value to a variable in a specified variables scope.
 
 ## Description
 
-  <p><b>assignin</b> assign value to a variable in a specified variables scope.</p>
+<p>
+            <b>assignin</b> assign value to a variable in a specified variables scope.</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ Y = acquirevar('base', 'X');
 
 ## See also
 
-[assignin](assignin.md), [who](who.md).
+[assignin](../memory_manager/assignin.md), [who](../memory_manager/who.md).
 
 ## History
 

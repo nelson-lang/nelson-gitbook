@@ -13,7 +13,8 @@ helper's function to build main loader.m of an external module
 
 ## Description
 
-  <p><b>nmm_build_loader</b> generates main loader.m of an external module.</p>
+<p>
+            <b>nmm_build_loader</b> generates main loader.m of an external module.</p>
 
 ## Example
 
@@ -25,7 +26,7 @@ See module skeleton for example
 
 ## See also
 
-[addmodule](addmodule.md).
+[addmodule](../modules_manager/addmodule.md).
 
 ## History
 

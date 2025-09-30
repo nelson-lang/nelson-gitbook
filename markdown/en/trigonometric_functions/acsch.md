@@ -16,7 +16,7 @@ Inverse hyperbolic cosecant.
 
 ## Description
 
-<b>acsch</b> computes the inverse hyperbolic cosecant for each element of <b>x</b>.
+<b>acsch</b>computes the inverse hyperbolic cosecant for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ R = acsch(X)
 
 ## See also
 
-[csch](csch.html), [sinh](sinh.html).
+[csch](../trigonometric/csch.md), [sinh](../trigonometric/sinh.md).
 
 ## History
 

@@ -21,7 +21,8 @@ Executes built-in function.
 
 ## Description
 
-  <p><b>builtin</b> calls the base built-in described by its name or function handle and input arguments.</p>
+<p>
+            <b>builtin</b> calls the base built-in described by its name or function handle and input arguments.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ b = builtin(str2func('cos'), 0)
 
 ## See also
 
-[feval](feval.md), [func2str](../function_handle/func2str.md).
+[feval](../functions_manager/feval.md), [func2str](../function_handle/func2str.md).
 
 ## History
 

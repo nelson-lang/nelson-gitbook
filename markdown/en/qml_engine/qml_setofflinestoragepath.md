@@ -12,17 +12,18 @@ Set the Property contains the directory to store offline user data.
 
 ## Description
 
-  <p>Set the Property contains the directory to store offline user data.</p>
-
-## See also
-
-[qml_offlinestoragepath](qml_offlinestoragepath.md).
+<p>Set the Property contains the directory to store offline user data.</p>
 
 ## Example
 
 ```matlab
 qml_setofflinestoragepath(tmpdir())
+
 ```
+
+## See also
+
+[qml_offlinestoragepath](../qml_engine/qml_offlinestoragepath.md).
 
 ## History
 

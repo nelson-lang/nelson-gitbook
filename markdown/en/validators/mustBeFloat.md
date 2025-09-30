@@ -15,7 +15,8 @@ Checks that value is floating-point or raise an error.
 
 ## Description
 
-  <p><b>mustBeFloat</b> checks that value is floating-point (single or double) or raise an error.</p>
+<p>
+            <b>mustBeFloat</b> checks that value is floating-point (single or double) or raise an error.</p>
 
 ## Example
 

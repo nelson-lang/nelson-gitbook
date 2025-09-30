@@ -12,7 +12,8 @@ Stop all functions running in the background.
 
 ## Description
 
-  <p><b>cancelAll(fevalQueue)</b> stops all running or queued elements of the background pool.</p>
+<p>
+            <b>cancelAll(fevalQueue)</b> stops all running or queued elements of the background pool.</p>
 
 ## Example
 
@@ -30,7 +31,7 @@ f
 
 ## See also
 
-[pause](../core/pause.md), [cancel](cancel.md), [parfeval](parfeval.md).
+[pause](../core/pause.md), [cancel](../parallel/cancel.md), [parfeval](../parallel/parfeval.md).
 
 ## History
 

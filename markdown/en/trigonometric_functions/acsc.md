@@ -16,7 +16,7 @@ Inverse cosecant in radians.
 
 ## Description
 
-<b>acsc</b> computes the inverse cosecant of argument in radians for each element of <b>x</b>.
+<b>acsc</b>computes the inverse cosecant of argument in radians for each element of<b>x</b>.
 
 ## Example
 
@@ -27,7 +27,7 @@ R = acsc(0.5)
 
 ## See also
 
-[cscd](cscd.html), [csc](csc.html).
+[cscd](../trigonometric/cscd.md), [csc](../trigonometric/csc.md).
 
 ## History
 

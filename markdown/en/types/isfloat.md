@@ -16,7 +16,7 @@ Return true if variable var is a single or double matrix.
 
 ## Description
 
-<b>isfloat</b> returns a logical 1 if the argument is a single or double matrix and a logical 0 otherwise.
+<b>isfloat</b>returns a logical 1 if the argument is a single or double matrix and a logical 0 otherwise.
 
 ## Examples
 
@@ -32,7 +32,7 @@ res = isfloat(A)
 
 ## See also
 
-[isa](isa.md), [single](single.html), [isdouble](isdouble.md).
+[isa](../types/isa.md), [single](../integer/single.md), [isdouble](../types/isdouble.md).
 
 ## History
 

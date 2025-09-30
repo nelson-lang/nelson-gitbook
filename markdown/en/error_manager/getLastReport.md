@@ -12,7 +12,8 @@ Returns last recorded formatted error message.
 
 ## Description
 
-  <p><b>getLastReport</b> returns last formatted error message.</p>
+<p>
+            <b>getLastReport</b> returns last formatted error message.</p>
 
 ## Examples
 
@@ -25,11 +26,12 @@ getLastReport()
 state = execstr('xxxxxx', 'errcatch')
 l = lasterror()
 getLastReport
+
 ```
 
 ## See also
 
-[lasterror](lasterror.md), [error](error.md).
+[lasterror](../error_manager/lasterror.md), [error](../error_manager/error.md).
 
 ## History
 

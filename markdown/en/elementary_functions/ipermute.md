@@ -17,7 +17,7 @@ Inverse permute array dimensions.
 
 ## Description
 
-<b>ipermute</b> permutes the dimensions of an array (in inverse order of <b>permute</b>).
+<b>ipermute</b>permutes the dimensions of an array (in inverse order of<b>permute</b>).
 
 ## Example
 
@@ -29,7 +29,7 @@ x2 = ipermute(y,[3 1 2])
 
 ## See also
 
-[permute](permute.md), [reshape](reshape.md), [transpose](../operators/transpose.md).
+[permute](../elementary_functions/permute.md), [reshape](../elementary_functions/reshape.md), [transpose](../operators/transpose.md).
 
 ## History
 

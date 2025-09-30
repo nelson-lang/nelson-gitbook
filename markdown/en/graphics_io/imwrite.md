@@ -20,20 +20,29 @@ Write image to graphics file.
 
 ## Description
 
-  <p><b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b></p>
-  <p/>
-  <p>Property name:</p>
-  <p/>
-  <p><b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).</p>
-  <p><b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
-  <p><b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
-  <p><b>Author</b>: character vector or string scalar: Author information.</p>
-  <p/>
-  <p>Properties for <b>gif</b> format:</p>
-  <p/>
-  <p><b>WriteMode</b>:</p>
-  <p><b>LoopCount</b>:</p>
-  <p><b>DelayTime</b>:</p>
+<p>
+            <b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b>
+        </p>
+<p></p>
+<p>Property name:</p>
+<p></p>
+<p>
+            <b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).</p>
+<p>
+                <b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
+<p>
+                    <b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
+<p>
+                        <b>Author</b>: character vector or string scalar: Author information.</p>
+<p></p>
+<p>Properties for <b>gif</b> format:</p>
+<p></p>
+<p>
+                            <b>WriteMode</b>:</p>
+<p>
+                                <b>LoopCount</b>:</p>
+<p>
+                                    <b>DelayTime</b>:</p>
 
 ## Examples
 
@@ -78,13 +87,14 @@ if ispc()
 else
   unix(['xdg-open ', filename_gif]);
 end
+
 ```
 
-<img src="imwrite_gif_8CC307B9.gif" align="middle"/>
+<img src="imwrite_gif.gif" align="middle"/>
 
 ## See also
 
-[imread](imread.md), [imshow](../graphics/imshow.md), [imformats](imformats.md).
+[imread](../graphics_io/imread.md), [imshow](../graphics/imshow.md), [imformats](../graphics_io/imformats.md).
 
 ## History
 

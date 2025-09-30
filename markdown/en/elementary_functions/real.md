@@ -16,7 +16,8 @@ Real part of an complex number.
 
 ## Description
 
-  <p><b>R = real(M)</b> Return the real part of M.</p>
+<p>
+            <b>R = real(M)</b> Return the real part of M.</p>
 
 ## Example
 
@@ -27,7 +28,7 @@ r = real(cplx)
 
 ## See also
 
-[imag](imag.md).
+[imag](../elementary_functions/imag.md).
 
 ## History
 

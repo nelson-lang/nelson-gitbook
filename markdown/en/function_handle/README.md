@@ -1,10 +1,8 @@
 # Function_handle functions
 
-Function_handle functions
-
-## Description
-
 function_handle functions
+
+## Functions
 
 - [Anonymous Functions](anonymous_function.md) - Anonymous Functions.
 - [func2str](func2str.md) - Return a function handle constructed from a string.

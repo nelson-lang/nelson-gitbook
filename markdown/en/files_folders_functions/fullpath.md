@@ -16,7 +16,8 @@ Returns canonical full path.
 
 ## Description
 
-  <p><b>fullpath(path)</b> returns full path from a relative path.</p>
+<p>
+            <b>fullpath(path)</b> returns full path from a relative path.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ fullpath([nelsonroot(), '/../toto'])
 
 ## See also
 
-[relativepath](relativepath.md).
+[relativepath](../files_folders_functions/relativepath.md).
 
 ## History
 

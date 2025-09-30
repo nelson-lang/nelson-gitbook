@@ -19,7 +19,8 @@ Creates a struct from a cell.
 
 ## Description
 
-  <p><b>st = cell2struct(ce, fields)</b> creates a struct from a cell.</p>
+<p>
+            <b>st = cell2struct(ce, fields)</b> creates a struct from a cell.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ A = cell2struct (ce, fields, 1)
 
 ## See also
 
-[cell](cell.md), [struct](struct.md), [struct2cell](struct2cell.md).
+[cell](../data_structures/cell.md), [struct](../data_structures/struct.md), [struct2cell](../data_structures/struct2cell.md).
 
 ## History
 

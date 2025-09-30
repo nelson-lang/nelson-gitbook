@@ -17,7 +17,8 @@ Convert matrix of signal data to sound and play it.
 
 ## Description
 
-  <p><b>sound</b> plays audio signal <b>y</b> to the speaker at sample rate of <b>Fs</b> hertz and uses <b>nBits</b> bits per sample.
+<p>
+            <b>sound</b> plays audio signal <b>y</b> to the speaker at sample rate of <b>Fs</b> hertz and uses <b>nBits</b> bits per sample.
 	</p>
 
 ## Example
@@ -25,11 +26,12 @@ Convert matrix of signal data to sound and play it.
 ```matlab
 signal = rand(2, 44100) - 0.5;
 sound(signal, 44110, 16)
+
 ```
 
 ## See also
 
-[audioplayer](audioplayer.md), [playblocking](playblocking.md), [soundsc](soundsc.md).
+[audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md), [soundsc](../audio/soundsc.md).
 
 ## History
 

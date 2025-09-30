@@ -20,10 +20,13 @@ Add entries to a dictionary.
 
 ## Description
 
-  <p><b>db = insert(da, key, value)</b> adds the key-value pair to the dictionary <b>da</b>.</p>
-  <p>If the key already exists, its value is updated.</p>
-  <p><b>d = insert(d, key, value)</b> is equivalent to <b>d[key] = value</b>.</p>
-  <p><b>db = insert(da, key, value, 'overwrite', tf)</b> specifies whether to overwrite an existing value for the key based on the boolean parameter Overwrite.</p>
+<p>
+            <b>db = insert(da, key, value)</b> adds the key-value pair to the dictionary <b>da</b>.</p>
+<p>If the key already exists, its value is updated.</p>
+<p>
+                <b>d = insert(d, key, value)</b> is equivalent to <b>d[key] = value</b>.</p>
+<p>
+                    <b>db = insert(da, key, value, 'overwrite', tf)</b> specifies whether to overwrite an existing value for the key based on the boolean parameter Overwrite.</p>
 
 ## Example
 
@@ -36,7 +39,7 @@ d = insert(d, [2 4] ,["Orange" "Citra"], 'Overwrite', false)
 
 ## See also
 
-[dictionary](dictionary.md), [remove](remove.md), [lookup](lookup.md).
+[dictionary](../dictionary/dictionary.md), [remove](../dictionary/remove.md), [lookup](../dictionary/lookup.md).
 
 ## History
 

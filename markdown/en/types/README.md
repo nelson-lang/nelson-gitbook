@@ -1,10 +1,8 @@
 # Types module
 
-Types module
-
-## Description
-
 module about types management.
+
+## Functions
 
 - [class](class.md) - Return classname of object or creates a named object.
 - [isa](isa.md) - Return true if var is an object from the class str.
@@ -33,3 +31,4 @@ module about types management.
 - [isuint64](isuint64.md) - Return true if variable var is an unsigned 64-bit integer type array.
 - [isuint8](isuint8.md) - Return true if variable var is an unsigned 8-bit integer type array.
 - [isvarname](isvarname.md) - Return true if input is valid variable name.
+- [missing](missing.md) - Return a missing value.

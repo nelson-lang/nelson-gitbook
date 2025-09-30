@@ -1,9 +1,7 @@
 # Debugger functions
 
-Debugger functions
-
-## Description
-
 debugger functions
+
+## Functions
 
 - [dbstack](dbstack.md) - call stack.

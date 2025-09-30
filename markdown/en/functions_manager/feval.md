@@ -21,7 +21,8 @@ Evaluates function.
 
 ## Description
 
-  <p><b>function</b> calls the base function or built-in described by its name or function handle and input arguments.</p>
+<p>
+            <b>function</b> calls the base function or built-in described by its name or function handle and input arguments.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ b = feval(str2func('cos'), 0)
 
 ## See also
 
-[builtin](builtin.md), [func2str](../function_handle/func2str.md).
+[builtin](../functions_manager/builtin.md), [func2str](../function_handle/func2str.md).
 
 ## History
 

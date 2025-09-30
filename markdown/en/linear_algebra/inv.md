@@ -16,7 +16,8 @@ Matrix inverse.
 
 ## Description
 
-  <p><b>inv(x)</b> computes the matrix inverse of x.</p>
+<p>
+            <b>inv(x)</b> computes the matrix inverse of x.</p>
 
 ## Example
 
@@ -24,11 +25,12 @@ Matrix inverse.
 X = rand(10, 10);
 Y = inv(X);
 Y * X
+
 ```
 
 ## See also
 
-[expm](expm.md).
+[expm](../linear_algebra/expm.md).
 
 ## History
 

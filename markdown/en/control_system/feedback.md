@@ -18,7 +18,8 @@ Feedback connection of multiple models.
 
 ## Description
 
-  <p><b>sys = feedback(sys1, sys2)</b> generates a model object, <b>sys</b>, representing the negative feedback interconnection of the model objects <b>sys1</b> and <b>sys2</b>.</p>
+<p>
+            <b>sys = feedback(sys1, sys2)</b> generates a model object, <b>sys</b>, representing the negative feedback interconnection of the model objects <b>sys1</b> and <b>sys2</b>.</p>
 
 ## Example
 
@@ -26,11 +27,12 @@ Feedback connection of multiple models.
 G = tf([2 5 1], [1 2 3]);
 C = tf([5, 10], [1, 10]);
 sys = feedback(G, C, +1)
+
 ```
 
 ## See also
 
-[cloop](cloop.md), [append](append.md), [ssselect](ssselect.md).
+[cloop](../control_system/cloop.md), [append](../control_system/append.md), [ssselect](../control_system/ssselect.md).
 
 ## History
 

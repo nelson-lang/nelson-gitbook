@@ -16,7 +16,8 @@ Reserved size for nonzero elements.
 
 ## Description
 
-  <p><b>nzmax</b> returns the amount of storage allocated for nonzero elements.</p>
+<p>
+            <b>nzmax</b> returns the amount of storage allocated for nonzero elements.</p>
 
 ## Example
 
@@ -32,7 +33,7 @@ nzmax(sp)
 
 ## See also
 
-[sparse](sparse.md), [nnz](nzmax.md).
+[sparse](../sparse/sparse.md), [nnz](../sparse/nzmax.md).
 
 ## History
 

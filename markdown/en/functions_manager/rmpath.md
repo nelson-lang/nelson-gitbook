@@ -17,7 +17,8 @@ Remove directory from search path.
 
 ## Description
 
-  <p><b>rmpath</b> removes directory from search path.</p>
+<p>
+            <b>rmpath</b> removes directory from search path.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ path
 
 ## See also
 
-[path](path.md), [addpath](addpath.md).
+[path](../functions_manager/path.md), [addpath](../functions_manager/addpath.md).
 
 ## History
 

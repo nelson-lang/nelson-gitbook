@@ -8,7 +8,7 @@ Runs the Qml garbage collector.
 
 ## Description
 
-  <p>The garbage collector will attempt to reclaim memory by locating and disposing of objects that are no longer reachable in the script environment.</p>
+<p>The garbage collector will attempt to reclaim memory by locating and disposing of objects that are no longer reachable in the script environment.</p>
 
 ## Example
 

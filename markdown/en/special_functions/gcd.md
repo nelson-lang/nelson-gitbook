@@ -17,9 +17,10 @@ Greatest common divisor
 
 ## Description
 
-  <p><b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.</p>
+<p>
+            <b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.</p>
 
-Bibliography
+## Bibliography
 
 Knuth, D. “Algorithms A and X.” The Art of Computer Programming, Vol. 2, Section 4.5.2. Reading, MA: Addison-Wesley, 1973.
 
@@ -33,7 +34,7 @@ G = gcd(A, B)
 
 ## See also
 
-[gamma](gamma.md).
+[gamma](../special_functions/gamma.md).
 
 ## History
 

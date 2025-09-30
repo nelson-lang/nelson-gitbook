@@ -12,8 +12,9 @@ remove a module from Nelson.
 
 ## Description
 
-  <p><b>removemodule</b> remove a module designed by his short name.</p>
-  <p>all core's modules are protected and cannot removed during an nelson's session.</p>
+<p>
+            <b>removemodule</b> remove a module designed by his short name.</p>
+<p>all core's modules are protected and cannot removed during an nelson's session.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ ismodule('module_skeleton')
 
 ## See also
 
-[ismodule](ismodule.md), [addmodule](removemodule.md), [getmodules](getmodules.md).
+[ismodule](../modules_manager/ismodule.md), [addmodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
 ## History
 

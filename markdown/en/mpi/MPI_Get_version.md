@@ -13,11 +13,7 @@ Return the version number of MPI.
 
 ## Description
 
-  <p>Return the version number of MPI.</p>
-
-## See also
-
-[MPI_Init](MPI_Init.md), [MPI_Finalize](MPI_Finalize.md).
+<p>Return the version number of MPI.</p>
 
 ## Example
 
@@ -29,7 +25,12 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
+
+## See also
+
+[MPI_Init](../mpi/MPI_Init.md), [MPI_Finalize](../mpi/MPI_Finalize.md).
 
 ## History
 

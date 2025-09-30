@@ -1,10 +1,8 @@
 # Data structures
 
-Data structures
-
-## Description
-
 data structures functions
+
+## Functions
 
 - [arrayfun](arrayfun.md) - Apply a function to each element of an array.
 - [cell](cell.md) - Create cell array of empty matrices.
@@ -20,6 +18,7 @@ data structures functions
 - [namedargs2cell](namedargs2cell.md) - Converts a struct containing name-value pairs to a cell.
 - [num2cell](num2cell.md) - Convert array to cell array with consistently sized cells.
 - [orderfields](orderfields.md) - Reorganize the fields of a structured array.
+- [renameStructField](renameStructField.md) - Rename field names of a struct or struct array.
 - [rmfield](rmfield.md) - Remove fields from structure.
 - [setfield](setfield.md) - Set structure field contents.
 - [struct](struct.md) - Creates a struct.

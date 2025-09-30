@@ -1,10 +1,8 @@
 # Web tools
 
-Web tools
-
-## Description
-
 Transferring data with URLs
+
+## Functions
 
 - [checkupdate](checkupdate.md) - Check update for Nelson's application
 - [repo](repo.md) - Git repository tool for Nelson

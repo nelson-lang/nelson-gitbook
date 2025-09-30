@@ -13,8 +13,9 @@ Removes audioplayer object.
 
 ## Description
 
-  <p><b>delete(h)</b> releases audioplayer object.</p>
-  <p>Do not forget to clear h afterward.</p>
+<p>
+            <b>delete(h)</b> releases audioplayer object.</p>
+<p>Do not forget to clear h afterward.</p>
 
 ## Example
 
@@ -24,7 +25,7 @@ audioplayer_used(),delete(audioplayer_used())
 
 ## See also
 
-[audioplayer](audioplayer.md).
+[audioplayer](../audio/audioplayer.md).
 
 ## History
 

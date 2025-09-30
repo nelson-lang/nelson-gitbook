@@ -1,10 +1,8 @@
 # Signal Processing
 
-Signal Processing
-
-## Description
-
 Functions to analyze sampled signals.
+
+## Functions
 
 - [bartlett](bartlett.md) - Bartlett window.
 - [blackman](blackman.md) - Blackman window.

@@ -22,8 +22,10 @@ Add title.
 
 ## Description
 
-  <p><b>title('text')</b> adds the title to the current axes.</p>
-  <p><b>Visible</b> property is inherited from the parent if not explicitly defined.</p>
+<p>
+            <b>title('text')</b> adds the title to the current axes.</p>
+<p>
+                <b>Visible</b> property is inherited from the parent if not explicitly defined.</p>
 
 ## Example
 
@@ -35,11 +37,11 @@ plot(x, y);
 title('Unicode ドラゴンボールZ(ゼット)', 14);
 ```
 
-<img src="title_19B2F6F7.svg" align="middle"/>
+<img src="title.svg" align="middle"/>
 
 ## See also
 
-[text](text.md), [xlabel](xlabel.md).
+[text](../graphics/text.md), [xlabel](../graphics/xlabel.md).
 
 ## History
 

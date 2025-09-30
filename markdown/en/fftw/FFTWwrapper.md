@@ -21,11 +21,12 @@ load/free FFTW library dynamically.
 
 ## Description
 
-  <p><b>FFTWwrapper</b> is an internal builtin used to load FFTW library dynamically.</p>
+<p>
+            <b>FFTWwrapper</b> is an internal builtin used to load FFTW library dynamically.</p>
 
 ## See also
 
-[fft](fft.md).
+[fft](../fftw/fft.md).
 
 ## History
 

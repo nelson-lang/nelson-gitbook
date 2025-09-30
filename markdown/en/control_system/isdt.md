@@ -16,7 +16,7 @@ Checks if dynamic system model is in discret time.
 
 ## Description
 
-  <p>Checks if dynamic system model is in discret time.</p>
+<p>Checks if dynamic system model is in discret time.</p>
 
 ## Example
 
@@ -33,7 +33,7 @@ isdt(sys2)
 
 ## See also
 
-[isct](isct.md).
+[isct](../control_system/isct.md).
 
 ## History
 

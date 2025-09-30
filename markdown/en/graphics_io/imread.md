@@ -20,62 +20,10 @@ Read image from graphics file.
 
 ## Description
 
-  <p><b>imread</b> reads the image data from the given file into a matrix.</p>
-  <p/>
-  <table style="width:100%">
-    <tr>
-      <th>Format</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <th>BMP</th>
-      <th>Windows Bitmap</th>
-    </tr>
-    <tr>
-      <th>GIF</th>
-      <th>Graphic Interchange Format (optional)</th>
-    </tr>
-    <tr>
-      <th>JPG</th>
-      <th>Joint Photographic Experts Group</th>
-    </tr>
-    <tr>
-      <th>TIFF</th>
-      <th>Tagged Image File Format</th>
-    </tr>
-    <tr>
-      <th>JPEG</th>
-      <th>Joint Photographic Experts Group</th>
-    </tr>
-    <tr>
-      <th>PCX</th>
-      <th>PiCture eXchange</th>
-    </tr>
-    <tr>
-      <th>PNG</th>
-      <th>Portable Network Graphics</th>
-    </tr>
-    <tr>
-      <th>PBM</th>
-      <th>Portable Bitmap</th>
-    </tr>
-    <tr>
-      <th>PGM</th>
-      <th>Portable Graymap</th>
-    </tr>
-    <tr>
-      <th>PPM</th>
-      <th>Portable Pixmap</th>
-    </tr>
-    <tr>
-      <th>XBM</th>
-      <th>X11 Bitmap</th>
-    </tr>
-    <tr>
-      <th>XPM</th>
-      <th>X11 Pixmap</th>
-    </tr>
-  </table>
+<p>
+            <b>imread</b> reads the image data from the given file into a matrix.</p>
+<p></p>
+Format Description BMP Windows Bitmap GIF Graphic Interchange Format (optional) JPG Joint Photographic Experts Group TIFF Tagged Image File Format JPEG Joint Photographic Experts Group PCX PiCture eXchange PNG Portable Network Graphics PBM Portable Bitmap PGM Portable Graymap PPM Portable Pixmap XBM X11 Bitmap XPM X11 Pixmap
 
 ## Example
 
@@ -87,11 +35,11 @@ img = imread(filename);
 imagesc(img);
 ```
 
-<img src="imread_BB022641.png" align="middle"/>
+<img src="imread.png" align="middle"/>
 
 ## See also
 
-[imagesc](../graphics/imagesc.md), [imformats](imformats.md).
+[imagesc](../graphics/imagesc.md), [imformats](../graphics_io/imformats.md).
 
 ## History
 

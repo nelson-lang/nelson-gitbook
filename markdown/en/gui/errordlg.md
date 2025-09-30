@@ -21,11 +21,13 @@ Creates a error dialog box.
 
 ## Description
 
-  <p><b>errordlg</b> creates an error dialog box.</p>
-  <p><b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.</p>
-  <p>
-    <img src="errordlg_1_E21703F7.png"/>
-  </p>
+<p>
+            <b>errordlg</b> creates an error dialog box.</p>
+<p>
+                <b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.</p>
+<p>
+                    
+                </p>
 
 ## Examples
 
@@ -48,7 +50,7 @@ h = errordlg('error string', 'dialog title', 'on')
 
 ## See also
 
-[warndlg](warndlg.md), [questdlg](questdlg.md), [helpdlg](helpdlg.md), [msgbox](msgbox.md).
+[warndlg](../gui/warndlg.md), [questdlg](../gui/questdlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
 
 ## History
 

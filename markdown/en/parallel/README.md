@@ -1,10 +1,8 @@
 # Parallel
 
-Parallel
-
-## Description
-
 parallel functions
+
+## Functions
 
 - [afterAll](afterAll.md) - Run function after all functions finish running in the background.
 - [afterEach](afterEach.md) - Run function after each function finish running in the background.

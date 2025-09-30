@@ -19,11 +19,12 @@ Computes the number of occurrences of an pattern.
 
 ## Description
 
-<b>count</b> computes the number of occurrences of an pattern.
+<b>count</b>computes the number of occurrences of an pattern.
 
 ## Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = count(str, 'hill')
 k = count(str, 'molehill')
@@ -34,11 +35,13 @@ k = count(A, 'son')
 
 A = ["Nel", "son"; "Nelson", "Modules"]
 k = count(A, 'son')
+
+
 ```
 
 ## See also
 
-[startsWith](startsWith.md), [endsWith](endsWith.md), [contains](contains.md).
+[startsWith](../string/startsWith.md), [endsWith](../string/endsWith.md), [contains](../string/contains.md).
 
 ## History
 

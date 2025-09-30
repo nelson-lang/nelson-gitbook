@@ -16,7 +16,8 @@ Round down
 
 ## Description
 
-  <p><b>floor</b> returns an integer matrix made of nearest rounded down integers.</p>
+<p>
+            <b>floor</b> returns an integer matrix made of nearest rounded down integers.</p>
 
 ## Example
 
@@ -26,7 +27,7 @@ floor(pi)
 
 ## See also
 
-[round](round.md), [fix](fix.md), [ceil](ceil.md).
+[round](../elementary_functions/round.md), [fix](../elementary_functions/fix.md), [ceil](../elementary_functions/ceil.md).
 
 ## History
 

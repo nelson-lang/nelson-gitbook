@@ -18,7 +18,7 @@ Determine if pattern matches with strings.
 
 ## Description
 
-<b>matches</b> determines if pattern matches with strings.
+<b>matches</b>determines if pattern matches with strings.
 
 ## Example
 
@@ -27,11 +27,13 @@ matches("Nelson", 'nelSon')
 matches("Nelson", 'Nelson')
 str = ["yellow", "green", "blue", "brown"];
 R = matches(str, ["yellow", "Brown"], 'IgnoreCase', true);
+
+
 ```
 
 ## See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
 ## History
 

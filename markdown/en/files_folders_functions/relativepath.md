@@ -17,7 +17,7 @@ Returns the relative path from an actual path to the target path.
 
 ## Description
 
-  <p>Returns the relative path from an actual path to the target path.</p>
+<p>Returns the relative path from an actual path to the target path.</p>
 
 ## Example
 
@@ -32,7 +32,7 @@ relativepath('..', '.')
 
 ## See also
 
-[cd](cd.md), [dir](dir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md).
 
 ## History
 

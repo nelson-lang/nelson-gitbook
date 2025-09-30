@@ -19,7 +19,8 @@ Vertical concatenation.
 
 ## Description
 
-  <p><b>R = vertcat(M1, M2, ... , MN)</b> returns the vertical concatenation of M1, M2, ... , MN along the dimension 1.</p>
+<p>
+            <b>R = vertcat(M1, M2, ... , MN)</b> returns the vertical concatenation of M1, M2, ... , MN along the dimension 1.</p>
 
 ## Examples
 
@@ -38,7 +39,7 @@ C = vertcat(A, B)
 
 ## See also
 
-[horzcat](horzcat.md), [cat](cat.md).
+[horzcat](../operators/horzcat.md), [cat](../operators/cat.md).
 
 ## History
 

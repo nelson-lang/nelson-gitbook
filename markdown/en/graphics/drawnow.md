@@ -8,7 +8,8 @@ Update figures and process callbacks
 
 ## Description
 
-  <p><b>drawnow</b> flushes the event queue and updates the figure window.</p>
+<p>
+            <b>drawnow</b> flushes the event queue and updates the figure window.</p>
 
 ## Example
 
@@ -22,7 +23,7 @@ grid on
 
 ## See also
 
-[refresh](refresh.md).
+[refresh](../graphics/refresh.md).
 
 ## History
 

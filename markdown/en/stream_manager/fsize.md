@@ -16,7 +16,8 @@ Returns size of an opened file.
 
 ## Description
 
-  <p><b>fsize</b> returns th size of a file opened by <b>fopen</b>.</p>
+<p>
+            <b>fsize</b> returns th size of a file opened by <b>fopen</b>.</p>
 
 ## Example
 
@@ -31,7 +32,7 @@ status = fclose(fileID);
 
 ## See also
 
-[fopen](fopen.md), [fprintf](fread.md), [fclose](fclose.md).
+[fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md).
 
 ## History
 

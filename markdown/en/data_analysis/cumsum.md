@@ -22,7 +22,8 @@ Cumulative sum of array elements.
 
 ## Description
 
-  <p><b>R = cumsum(M)</b> returns the cumulative sum of the array elements of M.</p>
+<p>
+            <b>R = cumsum(M)</b> returns the cumulative sum of the array elements of M.</p>
 
 ## Example
 
@@ -34,7 +35,7 @@ R = cumsum(M, 'reverse')
 
 ## See also
 
-[ndims](ndims.html), [sum](sum.md), [cumprod](cumprod.md).
+[ndims](../data_analysis/ndims.md), [sum](../data_analysis/sum.md), [cumprod](../data_analysis/cumprod.md).
 
 ## History
 

@@ -23,7 +23,8 @@
 
 ## Description
 
-  <p><b>conv2</b> returns the two-dimensional convolution.</p>
+<p>
+            <b>conv2</b> returns the two-dimensional convolution.</p>
 
 ## Example
 
@@ -35,7 +36,7 @@ R = conv2(A, B, 'same')
 
 ## See also
 
-[conv](conv.md).
+[conv](../data_analysis/conv.md).
 
 ## History
 

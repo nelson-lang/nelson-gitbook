@@ -13,8 +13,9 @@ Detect if a C/C++ compiler is configured.
 
 ## Description
 
-  <p><b>havecompiler</b> detects if C/C++ compiler is configured for Nelson.</p>
-  <p>On Unix platforms (linux, MacOs), <b>havecompiler</b> returns always <b>true</b> as status and <b>unix</b> as compiler.</p>
+<p>
+            <b>havecompiler</b> detects if C/C++ compiler is configured for Nelson.</p>
+<p>On Unix platforms (linux, MacOs), <b>havecompiler</b> returns always <b>true</b> as status and <b>unix</b> as compiler.</p>
 
 ## Example
 
@@ -24,7 +25,7 @@ Detect if a C/C++ compiler is configured.
 
 ## See also
 
-[configuremsvc](configuremsvc.md), [configuremingw](configuremingw.md).
+[configuremsvc](../dynamic_link/configuremsvc.md), [configuremingw](../dynamic_link/configuremingw.md).
 
 ## History
 

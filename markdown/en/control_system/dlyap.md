@@ -17,7 +17,8 @@ Discrete-time Lyapunov equations.
 
 ## Description
 
-  <p><b>X = dlyap(A, Q)</b> resolves the Discrete-time Lyapunov equation.</p>
+<p>
+            <b>X = dlyap(A, Q)</b> resolves the Discrete-time Lyapunov equation.</p>
 
 ## Example
 
@@ -29,7 +30,7 @@ X = dlyap (A, Q)
 
 ## See also
 
-[lyap](lyap.md).
+[lyap](../control_system/lyap.md).
 
 ## History
 

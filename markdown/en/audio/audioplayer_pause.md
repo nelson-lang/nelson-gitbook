@@ -12,7 +12,7 @@ Pause an audioplayer object.
 
 ## Description
 
-<b>pause</b> pauses an audioplayer object.
+<b>pause</b>pauses an audioplayer object.
 
 ## Example
 
@@ -28,7 +28,7 @@ playObj
 
 ## See also
 
-[audioplayer](audioplayer.md), [stop](stop.md).
+[audioplayer](../audio/audioplayer.md), [stop](../audio/stop.md).
 
 ## History
 
