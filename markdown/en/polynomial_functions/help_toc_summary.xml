@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>polynomial_functions</module>
+    <section name="Polynomials">
+      <chapter_description>
+        <p>The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.</p>
+        <p>It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.</p>
+        <p>This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.</p>
+    </chapter_description>
+      <keyword name="deconv" link="deconv.md" description="Deconvolution and polynomial division."/>
+      <keyword name="poly" link="poly.md" description="Polynomial with specified roots or characteristic polynomial."/>
+      <keyword name="polyder" link="polyder.md" description="Polynomial differentiation."/>
+      <keyword name="polyfit" link="polyfit.md" description="Polynomial curve fitting."/>
+      <keyword name="polyint" link="polyint.md" description="Polynomial integration."/>
+      <keyword name="polyval" link="polyval.md" description="Polynomial evaluation."/>
+      <keyword name="polyvalm" link="polyvalm.md" description="Matrix polynomial evaluation."/>
+      <keyword name="roots" link="roots.md" description="Find polynomial roots."/>
+    </section>
+  </toc>
+</help_summary>

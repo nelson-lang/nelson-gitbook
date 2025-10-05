@@ -1,6 +1,10 @@
 # Characters encoding
 
-characters encoding functions
+The Characters Encoding module provides tools for converting between native byte representations and Unicode characters.
+
+It enables scripts to correctly interpret and manipulate text in various encodings, ensuring compatibility across different platforms and locales.
+
+The module also includes functionality for detecting character sets that match a given input, facilitating reliable text processing and internationalization.
 
 ## Functions
 

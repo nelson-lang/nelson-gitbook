@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>error_manager</module>
+    <section name="Error manager">
+      <chapter_description>
+        <p>The Error Manager module provides the mechanisms for handling errors and warnings in Nelson.</p>
+        <p>It defines how exceptions are created, raised, and rethrown, as well as how diagnostic information can be retrieved after an error or warning occurs.</p>
+        <p>This module ensures that users can manage execution flow in the presence of failures, capture meaningful error reports, and display warnings without interrupting program execution.</p>
+        <p>It forms the foundation for robust error handling and debugging in Nelson applications.</p>
+    </chapter_description>
+      <keyword name="MException" link="MException.md" description="Matrix Exception information."/>
+      <keyword name="error" link="error.md" description="Raise an error message."/>
+      <keyword name="getLastReport" link="getLastReport.md" description="Returns last recorded formatted error message."/>
+      <keyword name="lasterror" link="lasterror.md" description="Returns last recorded error message."/>
+      <keyword name="lastwarn" link="lastwarn.md" description="Returns last recorded warning message."/>
+      <keyword name="rethrow" link="rethrow.md" description="rethrow error."/>
+      <keyword name="throw" link="throw.md" description="throw error."/>
+      <keyword name="throwAsCaller" link="throwAsCaller.md" description="Throw exception as if occurs within calling function."/>
+      <keyword name="warning" link="warning.md" description="Display a warning message."/>
+    </section>
+  </toc>
+</help_summary>

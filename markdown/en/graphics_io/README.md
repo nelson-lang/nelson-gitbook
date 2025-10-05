@@ -1,6 +1,10 @@
 # Graphics I/O functions
 
-graphics Input/Output functions
+The Graphics I/O module provides functions for importing, exporting, and managing
+graphical content and image formats.
+
+It supports reading and writing image files, copying figures, and saving plots in various
+file formats for interoperability with other applications.
 
 ## Functions
 

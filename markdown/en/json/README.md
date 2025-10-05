@@ -1,6 +1,13 @@
 # JavaScript Object Notation
 
-Functions to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value).
+The JSON module provides functions to encode, decode, and format JSON data, allowing easy
+exchange of structured information between Nelson and external systems.
+
+JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used
+for transmitting attribute-value pairs and arrays.
+
+This module enables Nelson to interoperate with web services, configuration files, and
+applications that rely on JSON.
 
 ## Functions
 

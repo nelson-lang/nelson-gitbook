@@ -1,6 +1,10 @@
 # Stream manager
 
-stream functions
+The Stream Manager module provides tools for managing input and output streams in Nelson.
+
+It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.
+
+The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.
 
 ## Functions
 

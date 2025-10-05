@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>string</module>
+    <section name="String type">
+      <chapter_description>
+        <p>The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.</p>
+        <p>It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.</p>
+        <p>The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.</p>
+    </chapter_description>
+      <keyword name="append" link="append.md" description="combines strings horizontally."/>
+      <keyword name="blanks" link="blanks.md" description="creates an string of blank characters."/>
+      <keyword name="char" link="char.md" description="Converts to a character array."/>
+      <keyword name="contains" link="contains.md" description="checks if string contains with pattern."/>
+      <keyword name="convertCharsToStrings" link="convertCharsToStrings.md" description="Convert chars arrays to string arrays."/>
+      <keyword name="convertStringsToChars" link="convertStringsToChars.md" description="Convert string arrays to character arrays."/>
+      <keyword name="count" link="count.md" description="Computes the number of occurrences of an pattern."/>
+      <keyword name="deblank" link="deblank.md" description="Remove trailing whitespace."/>
+      <keyword name="endsWith" link="endsWith.md" description="checks if string ends with pattern."/>
+      <keyword name="int2str" link="int2str.md" description="Convert an integer array to a string"/>
+      <keyword name="isStringScalar" link="isStringScalar.md" description="checks if input is string array with one element."/>
+      <keyword name="isletter" link="isletter.md" description="Determine which characters are letters."/>
+      <keyword name="isspace" link="isspace.md" description="Determine which characters are space."/>
+      <keyword name="join" link="join.md" description="Combine strings."/>
+      <keyword name="mat2str" link="mat2str.md" description="Matrix to String."/>
+      <keyword name="matches" link="matches.md" description="Determine if pattern matches with strings."/>
+      <keyword name="newline" link="newline.md" description="Returns a newline character."/>
+      <keyword name="num2str" link="num2str.md" description="Converts numbers to character array."/>
+      <keyword name="replace" link="replace.md" description="Replaces strings in another."/>
+      <keyword name="sprintf" link="sprintf.md" description="Writes data to a string."/>
+      <keyword name="startsWith" link="startsWith.md" description="checks if string starts with pattern."/>
+      <keyword name="str2double" link="str2double.md" description="Converts a string to double."/>
+      <keyword name="strcat" link="strcat.md" description="concatenate strings horizontally."/>
+      <keyword name="strcmp" link="strcmp.md" description="Strings comparaison."/>
+      <keyword name="strcmpi" link="strcmpi.md" description="Strings comparaison (case insensitive)."/>
+      <keyword name="strfind" link="strfind.md" description="Find a string in another."/>
+      <keyword name="string" link="string.md" description="string array constructor."/>
+      <keyword name="strings" link="strings.md" description="Create string array without characters."/>
+      <keyword name="strjust" link="strjust.md" description="Justify strings"/>
+      <keyword name="strlength" link="strlength.md" description="Length of strings in cell of strings or string array."/>
+      <keyword name="strncmp" link="strncmp.md" description="Compares first n characters of strings."/>
+      <keyword name="strncmpi" link="strncmpi.md" description="Compares first n characters of strings (case sensitive)."/>
+      <keyword name="strrep" link="strrep.md" description="Replaces strings in another."/>
+      <keyword name="strtrim" link="strtrim.md" description="Remove leading and trailing whitespace."/>
+      <keyword name="tolower" link="tolower.md" description="Lower case conversion."/>
+      <keyword name="toupper" link="toupper.md" description="Upper case conversion."/>
+    </section>
+  </toc>
+</help_summary>

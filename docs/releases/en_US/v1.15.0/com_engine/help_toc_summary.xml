@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>com_engine</module>
+    <section name="Component Object Model (COM) Client Interface">
+      <chapter_description>
+      <p>The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.</p>
+      <p>It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.</p>
+      <p>This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.</p>
+    </chapter_description>
+      <keyword name="COM examples" link="1_COM_examples.md" description="Some example to show how to use COM interface."/>
+      <keyword name="COM_delete" link="COM_delete.md" description="Removes COM control or server."/>
+      <keyword name="COM_fieldnames" link="COM_fieldnames.md" description="Returns the properties name of an COM object."/>
+      <keyword name="COM_get" link="COM_get.md" description="Get property value from COM interface."/>
+      <keyword name="COM_invoke" link="COM_invoke.md" description="Invoke method on COM object or interface."/>
+      <keyword name="COM_ismethod" link="COM_ismethod.md" description="Determines if input is an existing COM object method."/>
+      <keyword name="COM_isprop" link="COM_isprop.md" description="Determines if input is an existing COM object property."/>
+      <keyword name="COM_methods" link="COM_methods.md" description="Returns the methods name of an COM object."/>
+      <keyword name="COM_range" link="COM_range.md" description="Private function: range helper."/>
+      <keyword name="COM_set" link="COM_set.md" description="Set object or interface property to specified value."/>
+      <keyword name="COM_used" link="COM_used.md" description="Returns list of current used COM handle."/>
+      <keyword name="COM_xlsfinfo" link="COM_xlsfinfo.md" description="Determines if file contains Microsoft Excel spreadsheet."/>
+      <keyword name="COM_xlsread" link="COM_xlsread.md" description="Read Microsoft Excel spreadsheet file using COM."/>
+      <keyword name="COM_xlswrite" link="COM_xlswrite.md" description="Write Microsoft Excel spreadsheet file using COM."/>
+      <keyword name="actxGetRunningServer" link="actxGetRunningServer.md" description="Handle to running instance of Automation server."/>
+      <keyword name="actxcontrollist" link="actxcontrollist.md" description="Get available ActiveX controls."/>
+      <keyword name="actxserver" link="actxserver.md" description="Creates COM server."/>
+      <keyword name="actxserverlist" link="actxserverlist.md" description="Get available ActiveX servers."/>
+      <keyword name="iscom" link="iscom.md" description="Determine whether input is COM or ActiveX object."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>files_folders_functions</module>
+    <section name="Files and folders functions">
+      <chapter_description>
+      <p>The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.</p>
+      <p>This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.</p>
+      <p>This module enables efficient and cross-platform file system operations within Nelson scripts and applications.</p>
+    </chapter_description>
+      <keyword name="cd" link="cd.md" description="Changes Nelson current directory."/>
+      <keyword name="copyfile" link="copyfile.md" description="Copy files or folder."/>
+      <keyword name="diff_file" link="diff_file.md" description="diff two files or strings."/>
+      <keyword name="dir" link="dir.md" description="Returns file list."/>
+      <keyword name="fileparts" link="fileparts.md" description="Returns the path, filename and extension of a file path."/>
+      <keyword name="filesep" link="filesep.md" description="Return the file separator character for the current platform."/>
+      <keyword name="fullfile" link="fullfile.md" description="Build full file name from parts."/>
+      <keyword name="fullpath" link="fullpath.md" description="Returns canonical full path."/>
+      <keyword name="isdir" link="isdir.md" description="Returns true is the input argument is an directory."/>
+      <keyword name="isfile" link="isfile.md" description="Returns true is the input argument is a file."/>
+      <keyword name="isfolder" link="isfolder.md" description="Returns true is the input argument is an directory."/>
+      <keyword name="ls" link="ls.md" description="List folder contents."/>
+      <keyword name="mkdir" link="mkdir.md" description="Creates a new directory."/>
+      <keyword name="pathsep" link="pathsep.md" description="Return the search path separator character for the current platform."/>
+      <keyword name="pwd" link="pwd.md" description="Returns current directory."/>
+      <keyword name="relativepath" link="relativepath.md" description="Returns the relative path from an actual path to the target path."/>
+      <keyword name="rmdir" link="rmdir.md" description="Removes a directory."/>
+      <keyword name="rmfile" link="rmfile.md" description="Removes a file."/>
+      <keyword name="tempdir" link="tempdir.md" description="Returns the temporary directory path."/>
+      <keyword name="tempname" link="tempname.md" description="Returns an unique temporary filename."/>
+      <keyword name="userdir" link="userdir.md" description="Returns the current user's path."/>
+    </section>
+  </toc>
+</help_summary>

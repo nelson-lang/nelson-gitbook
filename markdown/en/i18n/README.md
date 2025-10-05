@@ -1,6 +1,10 @@
 # I18n functions
 
-internalization functions
+The i18n module provides tools for internationalization and localization of text within Nelson.
+
+It enables retrieval of translated strings for the current locale, supports utilities for managing translation workflows, and facilitates the generation of translation file headers.
+
+This module helps developers create software that can adapt dynamically to multiple languages and cultural contexts.
 
 ## Functions
 

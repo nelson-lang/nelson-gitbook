@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>functions_manager</module>
+    <section name="Functions manager">
+      <chapter_description>
+        <p>Functions manager provides tools to manage and interact with Nelson's function search path and function types.</p> 
+        <p>It includes commands to add or remove directories from the search path, execute built-in functions, clear built-in functions, evaluate functions, and more.</p> 
+        <p>Utilities are available to check for the existence of built-in, macro, or mex functions.</p>
+    </chapter_description>
+      <keyword name="addpath" link="addpath.md" description="Add directories to functions search path."/>
+      <keyword name="builtin" link="builtin.md" description="Executes built-in function."/>
+      <keyword name="clearfun" link="clearfun.md" description="Clear an built-in function."/>
+      <keyword name="feval" link="feval.md" description="Evaluates function."/>
+      <keyword name="inmem" link="inmem.md" description="Names of functions, MEX-files."/>
+      <keyword name="isbuiltin" link="isbuiltin.md" description="Check for the existence of a builtin."/>
+      <keyword name="ismacro" link="ismacro.md" description="Check for the existence of a macro (function)."/>
+      <keyword name="ismex" link="ismex.md" description="Check for the existence of a mex function."/>
+      <keyword name="macroargs" link="macroargs.md" description="Returns variables names of a function."/>
+      <keyword name="path" link="path.md" description="Modify or display Nelson’s load path."/>
+      <keyword name="private functions" link="private_functions.md" description="Private functions."/>
+      <keyword name="rehash" link="rehash.md" description="Reinitialize Nelson’s search path directory cache."/>
+      <keyword name="restoredefaultpath" link="restoredefaultpath.md" description="Restore Nelson’s path to its initial state at startup."/>
+      <keyword name="rmpath" link="rmpath.md" description="Remove directory from search path."/>
+      <keyword name="userpath" link="userpath.md" description="Displays or modify default user functions directory."/>
+      <keyword name="what" link="what.md" description="Get Nelson builtin and macro list."/>
+      <keyword name="which" link="which.md" description="Locates functions and built-in."/>
+    </section>
+  </toc>
+</help_summary>

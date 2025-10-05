@@ -1,6 +1,8 @@
-# Tests manager
+# Tests framework for Nelson
 
-Tests framework for Nelson
+The Test Manager module in Nelson provides tools for automated testing of code, enabling users to validate functionality, ensure correctness, and manage test cases efficiently.
+
+This module supports creating reference outputs, running test suites, and conditionally skipping tests.
 
 ## Functions
 

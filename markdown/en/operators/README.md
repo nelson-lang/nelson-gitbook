@@ -1,6 +1,10 @@
 # Operators
 
-Operators
+The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.
+
+It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.
+
+This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.
 
 ## Functions
 

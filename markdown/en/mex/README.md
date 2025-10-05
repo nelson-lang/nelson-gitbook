@@ -1,6 +1,7 @@
 # MEX functions
 
-MEX C API is allow to access Nelson, GNU Octave and commercial software functions and extend it's functionality.
+The MEX (MATLAB Executable) module allows C/C++ code to interface with Nelson, extending its
+functionality and enabling access to Nelson’s engine, variables, and functions.
 
 ## Functions
 

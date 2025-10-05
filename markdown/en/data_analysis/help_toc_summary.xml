@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>data_analysis</module>
+    <section name="Data analysis">
+      <chapter_description>
+       <p>The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.</p>
+       <p>It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.</p>
+       <p>This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.</p>
+    </chapter_description>
+      <keyword name="conv" link="conv.md" description="Convolution and polynomial multiplication."/>
+      <keyword name="conv2" link="conv2.md" description="2-D convolution."/>
+      <keyword name="cumprod" link="cumprod.md" description="Cumulative product of array elements."/>
+      <keyword name="cumsum" link="cumsum.md" description="Cumulative sum of array elements."/>
+      <keyword name="ismissing" link="ismissing.md" description="Check for missing values."/>
+      <keyword name="issorted" link="issorted.md" description="Determine if array is sorted."/>
+      <keyword name="max" link="max.md" description="Maximum elements of an array."/>
+      <keyword name="min" link="min.md" description="Minimum elements of an array."/>
+      <keyword name="prod" link="prod.md" description="Product of array elements."/>
+      <keyword name="sort" link="sort.md" description="Sort array elements by quick sort algorithm."/>
+      <keyword name="sum" link="sum.md" description="Sum of array elements."/>
+      <keyword name="unique" link="unique.md" description="Unique values."/>
+    </section>
+  </toc>
+</help_summary>

@@ -1,5 +1,11 @@
 # Spreadsheet
 
+The Spreadsheet module provides functions for reading and writing tabular data from and to text-based spreadsheet formats, such as CSV and delimiter-separated files.
+
+It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.
+
+This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.
+
 ## Functions
 
 - [csvread](csvread.md) - Read comma-separated value (CSV) file.

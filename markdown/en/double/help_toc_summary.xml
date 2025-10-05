@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>double</module>
+    <section name="Double">
+      <chapter_description>
+		<p>The Double Type module provides tools for handling double-precision numeric values in Nelson.</p>
+		<p>It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.</p>
+	</chapter_description>
+      <keyword name="double" link="double.md" description="Converts a variable to double precision type."/>
+      <keyword name="flintmax" link="flintmax.md" description="Largest consecutive integer in floating-point format."/>
+      <keyword name="realmax" link="realmax.md" description="Largest positive floating-point number."/>
+      <keyword name="realmin" link="realmin.md" description="Smallest positive floating-point number."/>
+    </section>
+  </toc>
+</help_summary>

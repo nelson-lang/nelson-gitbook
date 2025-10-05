@@ -1,6 +1,8 @@
 # Double
 
-double type functions
+The Double Type module provides tools for handling double-precision numeric values in Nelson.
+
+It enables conversion to double precision and offers access to key numeric limits, supporting high-accuracy computations and reliable handling of large or small floating-point numbers in mathematical and scientific applications.
 
 ## Functions
 

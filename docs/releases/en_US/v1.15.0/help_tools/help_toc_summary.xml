@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>help_tools</module>
+    <section name="Documentation and Help Management">
+      <chapter_description>
+        <p>The Help Tools module provides functions to create, convert, and manage documentation for
+            Nelson.</p>
+        <p>It supports generating help content in multiple formats, including HTML, Markdown, PDF,
+            and website-ready formats, enabling developers to maintain and distribute comprehensive
+            documentation efficiently.</p>
+    </chapter_description>
+      <keyword name="buildhelp" link="buildhelp.md" description="Build help of Nelson's modules."/>
+      <keyword name="buildhelpmd" link="buildhelpmd.md" description="Build help of Nelson's modules for GitBook."/>
+      <keyword name="buildhelpweb" link="buildhelpweb.md" description="Build help of Nelson's modules for website."/>
+      <keyword name="doc" link="doc.md" description="Displays documentation."/>
+      <keyword name="docroot" link="docroot.md" description="Retrieve or update the root directory for Nelson Help system."/>
+      <keyword name="headcomments" link="headcomments.md" description="Display Nelson function header comments."/>
+      <keyword name="htmltopdf" link="htmltopdf.md" description="Convers html page to pdf."/>
+      <keyword name="markdown" link="markdown.md" description="Converts markdown to html."/>
+      <keyword name="xmldocbuild" link="xmldocbuild.md" description="Internal function to convert xml document files to html."/>
+      <keyword name="xmldocchecker" link="xmldocchecker.md" description="Checks a xml documentation file."/>
+      <keyword name="xmldoctohelp" link="xmldoctohelp.md" description="Converts xml Nelson help files to Nelson format."/>
+      <keyword name="xmldoctohtml" link="xmldoctohtml.md" description="Converts xml Nelson help files to html."/>
+      <keyword name="xmldoctomd" link="xmldoctomd.md" description="Converts xml Nelson help files to markdown format."/>
+    </section>
+  </toc>
+</help_summary>

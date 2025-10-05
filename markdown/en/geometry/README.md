@@ -1,6 +1,10 @@
 # Geometry
 
-Functions about Geometry.
+The Geometry module provides tools for performing geometric transformations and computations in Nelson.
+
+It supports rotation operations in three-dimensional space, enabling the construction of transformation matrices for manipulating objects and coordinate systems.
+
+This module is useful for applications in computer graphics, robotics, and spatial analysis.
 
 ## Functions
 

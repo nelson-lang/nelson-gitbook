@@ -1,6 +1,8 @@
 # File archiver functions
 
-file archiver functions
+The File Archiver module provides tools for compressing and decompressing files in Nelson.
+
+It supports creation of zip archives and extraction of files from zip archives, enabling efficient file storage, sharing, and management.
 
 ## Functions
 

@@ -1,6 +1,10 @@
 # Assertion functions
 
-The aim of these functions is to provide tools to test some other functions.
+The Asserts Functions module in Nelson provides tools for validating program behavior and
+verifying conditions during development or testing.
+
+These functions help ensure that computations and logical conditions meet expected criteria,
+improving code reliability and catching errors early.
 
 ## Functions
 

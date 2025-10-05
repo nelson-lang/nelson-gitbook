@@ -1,10 +1,15 @@
 # Message Passing Interface
 
-In the world of parallel computing the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.
+In the world of parallel computing, the Message Passing Interface (MPI) is the de facto
+standard for implementing programs on multiple processors.
+
+This module provides functions to initialize, manage, and finalize MPI environments, as well
+as to perform communication between processes, both point-to-point and collective.
+
+It enables Nelson programs to run efficiently on distributed-memory systems and clusters.
 
 ## Functions
 
-- [mpiexec](mpiexec.md) - Run an MPI script.
 - [MPI_Allreduce](MPI_Allreduce.md) - Combines values from all processes and distributes the result back to all processes.
 - [MPI_Barrier](MPI_Barrier.md) - Blocks until all processes in the communicator have reached this routine.
 - [MPI_Bcast](MPI_Bcast.md) - Broadcasts a message from the process with rank "root" to all other processes of the communicator
@@ -26,3 +31,4 @@ In the world of parallel computing the Message Passing Interface (MPI) is the de
 - [MPI_Recv](MPI_Recv.md) - Blocking receive for a message.
 - [MPI_Reduce](MPI_Reduce.md) - Reduces values on all processes to a single value.
 - [MPI_Send](MPI_Send.md) - Performs a blocking send.
+- [mpiexec](mpiexec.md) - Run an MPI script.

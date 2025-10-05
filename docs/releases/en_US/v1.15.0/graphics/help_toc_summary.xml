@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>graphics</module>
+    <section name="Graphics functions">
+      <chapter_description>
+        <p>The graphics module provides functions for creating, customizing, and managing plots,
+            figures, colormaps, and graphical objects.</p>
+        <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
+            utilities for working with colors, legends, axes, and text annotations.</p>
+    </chapter_description>
+      <keyword name="abyss" link="abyss.md" description="Abyss colormap array."/>
+      <keyword name="ancestor" link="ancestor.md" description="Ancestor of graphics object."/>
+      <keyword name="autumn" link="autumn.md" description="Autumn colormap array."/>
+      <keyword name="axes" link="axes.md" description="Create cartesian axes."/>
+      <keyword name="axis" link="axis.md" description="Set axis limits and aspect ratios."/>
+      <keyword name="bar" link="bar.md" description="Bar graph."/>
+      <keyword name="bone" link="bone.md" description="Bone colormap array."/>
+      <keyword name="cla" link="cla.md" description="Clear axes."/>
+      <keyword name="clf" link="clf.md" description="Clear figure."/>
+      <keyword name="clim" link="clim.md" description="Set colormap limits."/>
+      <keyword name="close" link="close.md" description="Close one or more figures"/>
+      <keyword name="colorbar" link="colorbar.md" description="Colorbar showing color scale."/>
+      <keyword name="colormap" link="colormap.md" description="View and set current colormap."/>
+      <keyword name="colormaplist" link="colormaplist.md" description="Provide list of colormaps."/>
+      <keyword name="colstyle" link="colstyle.md" description="Parse color and style from string."/>
+      <keyword name="contour" link="contour.md" description="Contour plot of matrix"/>
+      <keyword name="contour3" link="contour3.md" description="Contour 3D plot of matrix"/>
+      <keyword name="cool" link="cool.md" description="Cool colormap array."/>
+      <keyword name="copper" link="copper.md" description="Copper colormap array."/>
+      <keyword name="cylinder" link="cylinder.md" description="Create cylinder."/>
+      <keyword name="drawnow" link="drawnow.md" description="Update figures and process callbacks"/>
+      <keyword name="figure" link="figure.md" description="Creates an figure window."/>
+      <keyword name="fill" link="fill.md" description="Create  filled 2-D patches."/>
+      <keyword name="flag" link="flag.md" description="Flag colormap array."/>
+      <keyword name="frame2im" link="frame2im.md" description="Retrieve image data from a movie frame."/>
+      <keyword name="gca" link="gca.md" description="get current axes graphics object."/>
+      <keyword name="gcf" link="gcf.md" description="get current figure graphics object."/>
+      <keyword name="getframe" link="getframe.md" description="Capture figure or axes as movie frame."/>
+      <keyword name="Managing Callback Interruptions in Nelson" link="graphical_callback.md" description=""/>
+      <keyword name="gray" link="gray.md" description="Gray colormap array."/>
+      <keyword name="grid" link="grid.md" description="Display or hide axes grid lines."/>
+      <keyword name="groot" link="groot.md" description="graphic root object."/>
+      <keyword name="hggroup" link="hggroup.md" description="Create group object."/>
+      <keyword name="hist" link="hist.md" description="Histogram plot."/>
+      <keyword name="hold" link="hold.md" description="Retain current plot when adding new plots."/>
+      <keyword name="hot" link="hot.md" description="Hot colormap array."/>
+      <keyword name="im2frame" link="im2frame.md" description="Convert image to movie frame."/>
+      <keyword name="image" link="image.md" description="Display image from array."/>
+      <keyword name="imagesc" link="imagesc.md" description="Display image from array with scaled colors."/>
+      <keyword name="imshow" link="imshow.md" description="Display image."/>
+      <keyword name="is2D" link="is2D.md" description="Checks if ax is a 2-D Polar or Cartesian axes."/>
+      <keyword name="isValidGraphicsProperty" link="isValidGraphicsProperty.md" description="Check property name is valid."/>
+      <keyword name="isgraphics" link="isgraphics.md" description="Check for graphics object."/>
+      <keyword name="ishold" link="ishold.md" description="Get current hold state."/>
+      <keyword name="jet" link="jet.md" description="Jet colormap array."/>
+      <keyword name="legend" link="legend.md" description="Add legend to axes."/>
+      <keyword name="line" link="line.md" description="Create primitive line."/>
+      <keyword name="loglog" link="loglog.md" description="Log-log scale plot."/>
+      <keyword name="mesh" link="mesh.md" description="Mesh surface plot."/>
+      <keyword name="meshz" link="meshz.md" description="Mesh surface plot with curtain."/>
+      <keyword name="movie" link="movie.md" description="Render recorded movie frames."/>
+      <keyword name="nebula" link="nebula.md" description="Nebula colormap array."/>
+      <keyword name="newplot" link="newplot.md" description="Prepare to produce a new plot."/>
+      <keyword name="pan" link="pan.md" description="Enable pan mode."/>
+      <keyword name="parula" link="parula.md" description="Parula colormap array."/>
+      <keyword name="patch" link="patch.md" description="Create patches of colored polygons"/>
+      <keyword name="pcolor" link="pcolor.md" description="Pseudocolor plot."/>
+      <keyword name="pie" link="pie.md" description="Legacy pie chart."/>
+      <keyword name="pink" link="pink.md" description="Pink colormap array."/>
+      <keyword name="plot" link="plot.md" description="Linear 2-D plot."/>
+      <keyword name="plot3" link="plot3.md" description="3-D line plot."/>
+      <keyword name="prism" link="prism.md" description="Prism colormap array."/>
+      <keyword name="quiver" link="quiver.md" description="Vector plot."/>
+      <keyword name="refresh" link="refresh.md" description="Redraw current figure."/>
+      <keyword name="rgbplot" link="rgbplot.md" description="Plot colormap."/>
+      <keyword name="ribbon" link="ribbon.md" description="Ribbon plot."/>
+      <keyword name="rotate3d" link="rotate3d.md" description="Enable rotate mode."/>
+      <keyword name="saveas" link="saveas.md" description="Save figure to specific file format."/>
+      <keyword name="scatter" link="scatter.md" description="Scatter plot."/>
+      <keyword name="scatter3" link="scatter3.md" description="3D Scatter plot."/>
+      <keyword name="semilogx" link="semilogx.md" description="Semilog plot (x-axis has log scale)."/>
+      <keyword name="semilogy" link="semilogy.md" description="Semilog plot (y-axis has log scale)."/>
+      <keyword name="sky" link="sky.md" description="Sky colormap array."/>
+      <keyword name="sphere" link="sphere.md" description="Create sphere."/>
+      <keyword name="spring" link="spring.md" description="Spring colormap array."/>
+      <keyword name="spy" link="spy.md" description="Visualize sparsity pattern of matrix."/>
+      <keyword name="stairs" link="stairs.md" description="Stairstep graph."/>
+      <keyword name="stem" link="stem.md" description="Plot discrete sequence data."/>
+      <keyword name="subplot" link="subplot.md" description="Create axes in tiled positions."/>
+      <keyword name="summer" link="summer.md" description="Summer colormap array."/>
+      <keyword name="surf" link="surf.md" description="surface plot."/>
+      <keyword name="surface" link="surface.md" description="Primitive surface plot."/>
+      <keyword name="text" link="text.md" description="creates text descriptions to data points."/>
+      <keyword name="title" link="title.md" description="Add title."/>
+      <keyword name="turbo" link="turbo.md" description="Turbo colormap array."/>
+      <keyword name="uicontrol" link="uicontrol.md" description="Create user interface component."/>
+      <keyword name="validatecolor" link="validatecolor.md" description="Validate color values."/>
+      <keyword name="view" link="view.md" description="Camera line of sigh."/>
+      <keyword name="viridis" link="viridis.md" description="Viridis colormap array."/>
+      <keyword name="waitfor" link="waitfor.md" description="Wait for condition."/>
+      <keyword name="waitforbuttonpress" link="waitforbuttonpress.md" description="Wait for click or key press."/>
+      <keyword name="waterfall" link="waterfall.md" description="waterfall plot."/>
+      <keyword name="white" link="white.md" description="white colormap array."/>
+      <keyword name="winter" link="winter.md" description="Winter colormap array."/>
+      <keyword name="xlabel" link="xlabel.md" description="Label x-axis."/>
+      <keyword name="xlim" link="xlim.md" description="set or get x-axis limits."/>
+      <keyword name="ylabel" link="ylabel.md" description="Label y-axis."/>
+      <keyword name="ylim" link="ylim.md" description="set or get y-axis limits."/>
+      <keyword name="zlabel" link="zlabel.md" description="Label z-axis."/>
+      <keyword name="zlim" link="zlim.md" description="set or get z-axis limits."/>
+      <keyword name="zoom" link="zoom.md" description="Enable zoom mode."/>
+    </section>
+  </toc>
+</help_summary>

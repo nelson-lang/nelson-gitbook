@@ -1,6 +1,10 @@
 # Types module
 
-module about types management.
+The Types module provides tools for managing and inspecting data types in Nelson.
+
+It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.
+
+The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.
 
 ## Functions
 

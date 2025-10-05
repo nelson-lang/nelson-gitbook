@@ -32,7 +32,7 @@ comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 
 ## See also
 
-[doc](../help_browser/doc.md), [markdown](../help_tools/markdown.md), [inserthtml](../gui/inserthtml.md), [which](../function_manager/which.md).
+[doc](../help_tools/doc.md), [markdown](../help_tools/markdown.md), [inserthtml](../gui/inserthtml.md), [which](../function_manager/which.md).
 
 ## History
 

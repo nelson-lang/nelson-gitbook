@@ -1,6 +1,12 @@
 # Engine
 
-nelson engine functions
+The Engine module manages the execution environment of Nelson itself.
+
+It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.
+
+This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.
+
+It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.
 
 ## Functions
 

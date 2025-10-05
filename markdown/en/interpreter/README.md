@@ -1,6 +1,12 @@
 # Interpreter functions
 
-interpreter functions
+The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.
+
+It includes essential elements such as loops, conditional branching, error handling, and function declarations.
+
+The module also offers tools for parsing code, working with keywords, and managing recursion limits.
+
+Together, these features establish the fundamental syntax and semantics of the Nelson language, enabling users to write structured, dynamic, and reliable programs.
 
 ## Functions
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>operators</module>
+    <section name="Operators">
+      <chapter_description>
+        <p>The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.</p>
+        <p>It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.</p>
+        <p>This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.</p>
+    </chapter_description>
+      <keyword name="all" link="all.md" description="all of the elements of a matrix satisfy some condition."/>
+      <keyword name="and" link="and.md" description="logical 'AND' operator, &amp;"/>
+      <keyword name="any" link="any.md" description="any of the elements of a matrix satisfy some condition."/>
+      <keyword name="bitand" link="bitand.md" description="Bit-wise AND"/>
+      <keyword name="bitor" link="bitor.md" description="Bit-wise OR"/>
+      <keyword name="bitxor" link="bitxor.md" description="Bit-wise XOR"/>
+      <keyword name="cat" link="cat.md" description="Concatenate arrays."/>
+      <keyword name="colon" link="colon.md" description="colon operator ':'."/>
+      <keyword name="ctranspose" link="ctranspose.md" description="Returns complex conjugate transpose: ' operator."/>
+      <keyword name="eq" link="eq.md" description="equality, == operator."/>
+      <keyword name="ge" link="ge.md" description="greater than or equal, &gt;= operator."/>
+      <keyword name="gt" link="gt.md" description="greater than, &gt; operator."/>
+      <keyword name="horzcat" link="horzcat.md" description="Horizontal concatenation."/>
+      <keyword name="ismember" link="ismember.md" description="Array elements that are members of another array."/>
+      <keyword name="ldivide" link="ldivide.md" description="Left division, .\ operator."/>
+      <keyword name="le" link="le.md" description="less than or equal, = operator."/>
+      <keyword name="lt" link="lt.md" description="less than, &lt; operator."/>
+      <keyword name="minus" link="minus.md" description="Subtraction, - operator"/>
+      <keyword name="mldivide" link="mldivide.md" description="Matrix left division, \ operator."/>
+      <keyword name="mpower" link="mpower.md" description="Matrix power, ^ operator"/>
+      <keyword name="mrdivide" link="mrdivide.md" description="Matrix right division, / operator."/>
+      <keyword name="mtimes" link="mtimes.md" description="Matrix multiplication, * operator"/>
+      <keyword name="ne" link="ne.md" description="Inequality, ~= operator"/>
+      <keyword name="not" link="not.md" description="not logical, ~ operator"/>
+      <keyword name="or" link="or.md" description="logical 'OR' operator, |"/>
+      <keyword name="plus" link="plus.md" description="Addition, + operator"/>
+      <keyword name="power" link="power.md" description="Element wise power, .^ operator"/>
+      <keyword name="rdivide" link="rdivide.md" description="Right division, ./ operator"/>
+      <keyword name="shortcutand" link="shortcutand.md" description="Short circuit 'AND' operator, &amp;&amp;"/>
+      <keyword name="shortcutor" link="shortcutor.md" description="Short circuit 'OR' operator, ||"/>
+      <keyword name="subsasgn" link="subsasgn.md" description="Redefine subscripted assignment."/>
+      <keyword name="subsindex" link="subsindex.md" description="Convert an object to an index vector."/>
+      <keyword name="subsref" link="subsref.md" description="Subscripted reference."/>
+      <keyword name="mtimes" link="times.md" description="Element wise multiplication, .* operator"/>
+      <keyword name="transpose" link="transpose.md" description="Returns vector or matrix transpose: .' operator."/>
+      <keyword name="uminus" link="uminus.md" description="Unary minus, - operator"/>
+      <keyword name="uplus" link="uplus.md" description="Unary plus, + operator"/>
+      <keyword name="vertcat" link="vertcat.md" description="Vertical concatenation."/>
+    </section>
+  </toc>
+</help_summary>

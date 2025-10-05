@@ -4,13 +4,13 @@
 
 La page d'accueil principale de Nelson se trouve à [https://nelson-lang.github.io/nelson-website/](https://nelson-lang.github.io/nelson-website/).
 
-## 🎓 **Introduction**
+## **Introduction**
 
 Nelson est un langage de calcul numérique puissant et open-source, développé pour fournir un environnement complet et intuitif aux ingénieurs, scientifiques et étudiants. Avec plus de 1 200 fonctions intégrées, Nelson prend en charge une large gamme de tâches, de l'algèbre de base aux simulations numériques avancées.
 
 Initialement inspiré par des langages comme MATLAB© et GNU Octave, Nelson offre aux utilisateurs une expérience légère mais riche en fonctionnalités. Il est conçu pour être facile à apprendre et à utiliser, avec un accent particulier sur la performance et la flexibilité.
 
-## 🛠️ **Fonctionnalités**
+## **Fonctionnalités**
 
 ### Types de données gérés par Nelson
 

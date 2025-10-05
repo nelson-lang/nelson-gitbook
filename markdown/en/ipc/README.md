@@ -1,6 +1,8 @@
 # Inter Process Communication
 
-Inter Process Communication functions
+The ipc module provides basic tools for interacting with processes and enabling communication between them.
+
+It allows retrieving process identifiers and using a communicator object for exchanging information across Nelson processes.
 
 ## Functions
 

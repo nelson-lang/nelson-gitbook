@@ -1,6 +1,10 @@
 # Special functions
 
-special functions
+The Special Functions module provides tools for performing advanced mathematical operations in Nelson.
+
+It includes functions for statistical distributions, combinatorial calculations, and other specialized mathematical computations that are essential in various scientific and engineering applications.
+
+This module enhances Nelson's capabilities by offering a range of functions that support complex analyses and modeling tasks.
 
 ## Functions
 

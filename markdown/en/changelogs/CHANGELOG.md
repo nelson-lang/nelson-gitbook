@@ -33,6 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `crc32` builtin: get crc32 checksum of a file or a string.
 
+- `markdown`: option to select output generated format ('secure' or 'advanced').
+
 - macOS Tahoe 26: CI setup and platform support.
 
 ### Changed
@@ -45,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - stylesheet reworked (same online and offline)
   - qt help support used internally removed
   - `http://` replaced by `https://`
+  - `help_browser` module removed
 
 - `jsondecode`: Significantly improved performance by integrating [simdjson](https://simdjson.org/), enabling faster and more efficient JSON parsing.
 

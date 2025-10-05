@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>validators</module>
+    <section name="Validators">
+      <chapter_description>
+        <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
+        <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
+        <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
+    </chapter_description>
+      <keyword name="mustBeA" link="mustBeA.md" description="Checks that input value comes from one of specified classes."/>
+      <keyword name="mustBeColumn" link="mustBeColumn.md" description="Checks that value is a column vector or raise an error."/>
+      <keyword name="mustBeFile" link="mustBeFile.md" description="Checks that input path refers to file."/>
+      <keyword name="mustBeFinite" link="mustBeFinite.md" description="Checks that value is finite or raise an error."/>
+      <keyword name="mustBeFloat" link="mustBeFloat.md" description="Checks that value is floating-point or raise an error."/>
+      <keyword name="mustBeFolder" link="mustBeFolder.md" description="Checks that input path refers to folder."/>
+      <keyword name="mustBeGreaterThan" link="mustBeGreaterThan.md" description="Checks that value is greater than another value or issue error."/>
+      <keyword name="mustBeGreaterThanOrEqual" link="mustBeGreaterThanOrEqual.md" description="Checks that value is greater than or equal to another value or issue error."/>
+      <keyword name="mustBeInRange" link="mustBeInRange.md" description="Checks that value is in the specified range."/>
+      <keyword name="mustBeInteger" link="mustBeInteger.md" description="Checks that value is integer or raise an error."/>
+      <keyword name="mustBeLessThan" link="mustBeLessThan.md" description="Checks that value is less than another value or issue error."/>
+      <keyword name="mustBeLessThanOrEqual" link="mustBeLessThanOrEqual.md" description="Checks that value is less than or equal to another value or issue error."/>
+      <keyword name="mustBeLogical" link="mustBeLogical.md" description="Checks that value is logical or raise an error."/>
+      <keyword name="mustBeLogicalScalar" link="mustBeLogicalScalar.md" description="Checks that value is logical scalar or raise an error."/>
+      <keyword name="mustBeMatrix" link="mustBeMatrix.md" description="Checks that value is a matrix or raise an error."/>
+      <keyword name="mustBeMember" link="mustBeMember.md" description="Checks that value is member of specified array or issue error."/>
+      <keyword name="mustBeNegative" link="mustBeNegative.md" description="Checks that value is negative or raise an error."/>
+      <keyword name="mustBeNonNan" link="mustBeNonNan.md" description="Checks that value is not NaN."/>
+      <keyword name="mustBeNonSparse" link="mustBeNonSparse.md" description="Checks that value is not sparse."/>
+      <keyword name="mustBeNonZero" link="mustBeNonZero.md" description="Checks that value is not zero."/>
+      <keyword name="mustBeNonempty" link="mustBeNonempty.md" description="Checks that value is nonempty or raise an error."/>
+      <keyword name="mustBeNonmissing" link="mustBeNonmissing.md" description="Checks that value is not missing."/>
+      <keyword name="mustBeNonnegative" link="mustBeNonnegative.md" description="Checks that value is nonnegative or raise an error."/>
+      <keyword name="mustBeNonpositive" link="mustBeNonpositive.md" description="Checks that value is non positive or raise an error."/>
+      <keyword name="mustBeNonzeroLengthText" link="mustBeNonzeroLengthText.md" description="Checks that value is text with nonzero length or raise an error."/>
+      <keyword name="mustBeNumeric" link="mustBeNumeric.md" description="Checks that value is numeric or raise an error."/>
+      <keyword name="mustBeNumericOrLogical" link="mustBeNumericOrLogical.md" description="Checks that input is numeric or logical."/>
+      <keyword name="mustBePositive" link="mustBePositive.md" description="Checks that value is positive or raise an error."/>
+      <keyword name="mustBeReal" link="mustBeReal.md" description="Checks that value is real."/>
+      <keyword name="mustBeRow" link="mustBeRow.md" description="Checks that value is a row vector or raise an error."/>
+      <keyword name="mustBeScalarOrEmpty" link="mustBeScalarOrEmpty.md" description="Checks that value is scalar or empty or raise an error."/>
+      <keyword name="mustBeSparse" link="mustBeSparse.md" description="Checks that value is a sparse matrix or raise an error."/>
+      <keyword name="mustBeText" link="mustBeText.md" description="Checks that value is piece of text or raise an error."/>
+      <keyword name="mustBeTextScalar" link="mustBeTextScalar.md" description="Checks that value is single piece of text or raise an error."/>
+      <keyword name="mustBeValidVariableName" link="mustBeValidVariableName.md" description="Checks that value is valid variable name or raise an error."/>
+      <keyword name="mustBeVector" link="mustBeVector.md" description="Checks that value is vector or raise an error."/>
+    </section>
+  </toc>
+</help_summary>

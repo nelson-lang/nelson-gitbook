@@ -66,7 +66,7 @@ Set this property on an existing component has no effect.</p>
 <p>
                                                                     <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
 
-## Example
+## Examples
 
 ```matlab
 f = figure();
@@ -78,11 +78,16 @@ C(:, :, 1) = G;
 C(:, :, 2) = G;
 C(:, :, 3) = B;
 im = image(C)
-figure();
-image();
 ```
 
 <img src="image_1.svg" align="middle"/>
+
+```matlab
+f = figure();
+image();
+```
+
+<img src="image_2.svg" align="middle"/>
 
 ## See also
 

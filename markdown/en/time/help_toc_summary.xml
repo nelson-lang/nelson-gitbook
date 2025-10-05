@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>time</module>
+    <section name="Time functions">
+      <chapter_description>
+        <p>The Time Functions module provides tools for working with dates, times, and durations in Nelson.</p>
+        <p>It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.</p>
+        <p>This module enables precise time management, scheduling, and performance measurement in scripts and applications.</p>
+    </chapter_description>
+      <keyword name="addtodate" link="addtodate.md" description="Modify date number by field."/>
+      <keyword name="calendar" link="calendar.md" description="Calendar."/>
+      <keyword name="clock" link="clock.md" description="Return the current local date and time as a date vector."/>
+      <keyword name="cputime" link="cputime.md" description="Return the CPU time used by your Nelon session."/>
+      <keyword name="date" link="date.md" description="Return the Current date as character vector."/>
+      <keyword name="datenum" link="datenum.md" description="Return the date/time input as a serial day number."/>
+      <keyword name="datestr" link="datestr.md" description="Convert date and time to string format."/>
+      <keyword name="datevec" link="datevec.md" description="Convert a serial date number into a date vector."/>
+      <keyword name="eomday" link="eomday.md" description="Returns last day of month."/>
+      <keyword name="etime" link="etime.md" description="Time elapsed between date vectors."/>
+      <keyword name="hour" link="hour.md" description="Hours part of the input date and time."/>
+      <keyword name="leapyear" link="leapyear.md" description="Determine leap year."/>
+      <keyword name="minute" link="minute.md" description="Minutes part of the input date and time."/>
+      <keyword name="now" link="now.md" description="Returns current date under the form of a Unix hour."/>
+      <keyword name="second" link="second.md" description="Seconds part of the input date and time."/>
+      <keyword name="sleep" link="sleep.md" description="Suspend code execution."/>
+      <keyword name="tic" link="tic.md" description="Starts a stopwatch timer."/>
+      <keyword name="time" link="time.md" description="Return the current time as the number of seconds or nanoseconds since the epoch."/>
+      <keyword name="timeit" link="timeit.md" description="Measure time required to run function."/>
+      <keyword name="toc" link="toc.md" description="Read the stopwatch timer."/>
+      <keyword name="weekday" link="weekday.md" description="Return the day of week."/>
+    </section>
+  </toc>
+</help_summary>

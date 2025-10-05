@@ -219,7 +219,7 @@ Set this property on an existing component has no effect.</p>
                                                                 <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
 <p>
                                                                     <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();
 L = linspace(0, 1);
 R = L' * L;
@@ -229,10 +229,12 @@ C(:, :, 1) = G;
 C(:, :, 2) = G;
 C(:, :, 3) = B;
 im = image(C)
-figure();
-image();
 </code></pre>
 <img src="image_1.svg" align="middle"/>
+<pre><code class="language-matlab">f = figure();
+image();
+</code></pre>
+<img src="image_2.svg" align="middle"/>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="../graphics/imagesc.html">imagesc</a>, <a href="../graphics/colormap.html">colormap</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>

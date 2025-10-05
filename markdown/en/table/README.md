@@ -1,6 +1,8 @@
 # Tables
 
-Tables of arrays with named columns, each potentially containing different data types.
+The Tables module provides tools for creating, accessing, and manipulating tabular data in Nelson.
+
+Tables are array-like structures with named variables (columns), each capable of holding different data types.
 
 ## Functions
 

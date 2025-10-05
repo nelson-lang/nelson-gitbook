@@ -1,6 +1,10 @@
 # Data structures
 
-data structures functions
+The Data Structures module provides tools for creating, manipulating, and inspecting arrays, cells, and structures in Nelson.
+
+It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.
+
+This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.
 
 ## Functions
 

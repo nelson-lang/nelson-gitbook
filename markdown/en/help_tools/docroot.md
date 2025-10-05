@@ -36,13 +36,13 @@ docroot('')
 
 ## See also
 
-[doc](../help_browser/doc.md).
+[doc](../help_tools/doc.md).
 
 ## History
 
 | Version | Description     |
 | ------- | --------------- |
-| 1.0.0   | initial version |
+| 1.14.0  | initial version |
 
 ## Author
 

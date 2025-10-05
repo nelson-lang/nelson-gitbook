@@ -1,6 +1,14 @@
 # Core
 
-core functions
+The Core module provides the fundamental building blocks of the Nelson environment.
+
+It includes essential services for program execution, environment management, and system interaction.
+
+Through this module, users can evaluate code dynamically, manage execution flow, query program state, and access key system information such as versioning, configuration, and licensing.
+
+It also offers basic utilities for file identification, checksums, and terminal capabilities.
+
+Together, these features form the foundation upon which all other modules and user-level functionality in Nelson are built.
 
 ## Functions
 

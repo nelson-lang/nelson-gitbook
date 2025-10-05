@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>control_system</module>
+    <section name="Control System functions">
+      <chapter_description>
+      <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p>
+      <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p>
+      <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p>
+      <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.</p>
+    </chapter_description>
+      <keyword name="abcdchk" link="abcdchk.md" description="Verifies the dimensional compatibility of matrices A, B, C, and D."/>
+      <keyword name="acker" link="acker.md" description="Pole placement gain selection using Ackermann's formula."/>
+      <keyword name="append" link="append.md" description="Appends the inputs and outputs of the two models."/>
+      <keyword name="augstate" link="augstate.md" description="Append state vector to output vector."/>
+      <keyword name="balreal" link="balreal.md" description="Gramian-based balancing of state-space realizations."/>
+      <keyword name="bdschur" link="bdschur.md" description="Block-diagonal Schur factorization."/>
+      <keyword name="bode" link="bode.md" description="Bode plot of frequency response, magnitude and phase data."/>
+      <keyword name="c2d" link="c2d.md" description="Convert model from continuous to discrete time."/>
+      <keyword name="care" link="care.md" description="Continuous-time algebraic Riccati equation solution."/>
+      <keyword name="cloop" link="cloop.md" description="Feedback connection of multiple models."/>
+      <keyword name="compreal" link="compreal.md" description="Companion realization of transfer functions."/>
+      <keyword name="ctrb" link="ctrb.md" description="Controllability of state-space model."/>
+      <keyword name="ctrbf" link="ctrbf.md" description="Compute controllability staircase form."/>
+      <keyword name="d2c" link="d2c.md" description="Convert model from discrete to continuous time."/>
+      <keyword name="damp" link="damp.md" description="Natural frequency and damping ratio."/>
+      <keyword name="dare" link="dare.md" description="Discret-time algebraic Riccati equation solution."/>
+      <keyword name="dcgain" link="dcgain.md" description="Low-frequency (DC) gain of LTI system."/>
+      <keyword name="dlqr" link="dlqr.md" description="Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system."/>
+      <keyword name="dlyap" link="dlyap.md" description="Discrete-time Lyapunov equations."/>
+      <keyword name="dsort" link="dsort.md" description="Sort discrete-time poles by magnitude."/>
+      <keyword name="esort" link="esort.md" description="Sort continuous-time poles by real part."/>
+      <keyword name="evalfr" link="evalfr.md" description="Evaluate frequency response at given frequency."/>
+      <keyword name="feedback" link="feedback.md" description="Feedback connection of multiple models."/>
+      <keyword name="freqresp" link="freqresp.md" description="Evaluate system response over a grid of frequencies."/>
+      <keyword name="gensig" link="gensign.md" description="Create periodic signals for simulating system response."/>
+      <keyword name="gram" link="gram.md" description="Controllability and observability Gramians."/>
+      <keyword name="hsvd" link="hsvd.md" description="Hankel singular values of dynamic system."/>
+      <keyword name="impulse" link="impulse.md" description="Impulse response plot of dynamic system."/>
+      <keyword name="initial" link="initial.md" description="System response to initial states of state-space model."/>
+      <keyword name="isct" link="isct.md" description="Checks if dynamic system model is in continuous time."/>
+      <keyword name="isdt" link="isdt.md" description="Checks if dynamic system model is in discret time."/>
+      <keyword name="islti" link="islti.md" description="Checks if variable is an linear model tf, ss or zpk."/>
+      <keyword name="issiso" link="issiso.md" description="Checks if dynamic system model is single input and single output."/>
+      <keyword name="isstatic" link="isstatic.md" description="Checks if model is static or dynamic."/>
+      <keyword name="kalman" link="kalman.md" description="Design Kalman filter for state estimation."/>
+      <keyword name="lqe" link="lqe.md" description="Kalman estimator design for continuous-time systems."/>
+      <keyword name="lqed" link="lqed.md" description="Calculates the discrete Kalman estimator configuration based on a continuous cost function."/>
+      <keyword name="lqr" link="lqr.md" description="Linear-Quadratic Regulator (LQR) design."/>
+      <keyword name="lqry" link="lqry.md" description="Form linear-quadratic (LQ) state-feedback regulator with output weighting."/>
+      <keyword name="lsim" link="lsim.md" description="Plot simulated time response of dynamic system to arbitrary inputs."/>
+      <keyword name="lyap" link="lyap.md" description="Continuous Lyapunov equation solution."/>
+      <keyword name="minreal" link="minreal.md" description="Minimal realization or pole-zero cancellation."/>
+      <keyword name="nyquist" link="nyquist.md" description="Nyquist plot of frequency response."/>
+      <keyword name="obsv" link="obsv.md" description="Observability of state-space model."/>
+      <keyword name="obsvf" link="obsvf.md" description="Compute observability staircase form."/>
+      <keyword name="ord2" link="ord2.md" description="Generate continuous second-order systems."/>
+      <keyword name="padecoef" link="padecoef.md" description="Computes the Pade approximation of time delays."/>
+      <keyword name="parallel" link="parallel.md" description="Parallel connection of two models."/>
+      <keyword name="pole" link="pole.md" description="Poles of dynamic system."/>
+      <keyword name="series" link="series.md" description="Series connection of two models."/>
+      <keyword name="ss" link="ss.md" description="State-space model."/>
+      <keyword name="ss2tf" link="ss2tf.md" description="Convert state-space representation to transfer function."/>
+      <keyword name="ssdata" link="ssdata.md" description="Access state-space model data."/>
+      <keyword name="ssdelete" link="ssdelete.md" description="Remove inputs, outputs and states from state-space system."/>
+      <keyword name="ssselect" link="ssselect.md" description="Extract subsystem from larger system."/>
+      <keyword name="step" link="step.md" description="Step response plot of dynamic system."/>
+      <keyword name="tf" link="tf.md" description="Constructs a transfer function model."/>
+      <keyword name="tf2ss" link="tf2ss.md" description="Convert transfer function filter parameters to state-space form."/>
+      <keyword name="tfdata" link="tfdata.md" description="Access transfer function model data."/>
+      <keyword name="tzero" link="tzero.md" description="Invariant zeros of linear system."/>
+      <keyword name="zero" link="zero.md" description="Zeros and gain of SISO dynamic system."/>
+    </section>
+  </toc>
+</help_summary>

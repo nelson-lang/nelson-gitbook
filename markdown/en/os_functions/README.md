@@ -1,6 +1,10 @@
 # OS functions
 
-operating system functions
+The OS Functions module provides tools for interacting with the operating system in Nelson.
+
+It includes functions for querying system information, managing environment variables, executing shell commands, generating GUIDs, and performing platform-specific operations.
+
+This module enables seamless integration of Nelson scripts with the underlying operating system across Windows, macOS, and Linux/Unix platforms.
 
 ## Functions
 

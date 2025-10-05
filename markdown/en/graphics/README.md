@@ -1,6 +1,10 @@
 # Graphics functions
 
-graphics functions
+The graphics module provides functions for creating, customizing, and managing plots,
+figures, colormaps, and graphical objects.
+
+It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
+utilities for working with colors, legends, axes, and text annotations.
 
 ## Functions
 
@@ -45,9 +49,9 @@ graphics functions
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
 - [imshow](imshow.md) - Display image.
 - [is2D](is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
+- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [isgraphics](isgraphics.md) - Check for graphics object.
 - [ishold](ishold.md) - Get current hold state.
-- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [jet](jet.md) - Jet colormap array.
 - [legend](legend.md) - Add legend to axes.
 - [line](line.md) - Create primitive line.

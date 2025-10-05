@@ -156,10 +156,13 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="message-passing-interface"><a class="header" href="#message-passing-interface">Message Passing Interface</a></h1>
-<p>In the world of parallel computing the Message Passing Interface (MPI) is the de facto standard for implementing programs on multiple processors.</p>
+<p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto
+standard for implementing programs on multiple processors.</p>
+<p>This module provides functions to initialize, manage, and finalize MPI environments, as well
+as to perform communication between processes, both point-to-point and collective.</p>
+<p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.</p>
 <h2 id="functions"><a class="header" href="#functions">Functions</a></h2>
 <ul>
-<li><a href="mpiexec.html">mpiexec</a> - Run an MPI script.</li>
 <li><a href="MPI_Allreduce.html">MPI_Allreduce</a> - Combines values from all processes and distributes the result back to all processes.</li>
 <li><a href="MPI_Barrier.html">MPI_Barrier</a> - Blocks until all processes in the communicator have reached this routine.</li>
 <li><a href="MPI_Bcast.html">MPI_Bcast</a> - Broadcasts a message from the process with rank "root" to all other processes of the communicator</li>
@@ -181,17 +184,18 @@
 <li><a href="MPI_Recv.html">MPI_Recv</a> - Blocking receive for a message.</li>
 <li><a href="MPI_Reduce.html">MPI_Reduce</a> - Reduces values on all processes to a single value.</li>
 <li><a href="MPI_Send.html">MPI_Send</a> - Performs a blocking send.</li>
+<li><a href="mpiexec.html">mpiexec</a> - Run an MPI script.</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../random/rng.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../spreadsheet/writetable.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../mpi/mpiexec.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../mpi/MPI_Allreduce.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -201,11 +205,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../random/rng.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../spreadsheet/writetable.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../mpi/mpiexec.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../mpi/MPI_Allreduce.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

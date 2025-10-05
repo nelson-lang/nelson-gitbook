@@ -1,6 +1,10 @@
 # Subroutine Library In COntrol Theory
 
-SLICOT provides numerical algorithms for computations in systems and control theory.
+The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.
+
+It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.
+
+The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.
 
 ## Functions
 

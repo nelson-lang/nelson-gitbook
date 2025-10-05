@@ -1,6 +1,10 @@
 # String type
 
-string type functions
+The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.
+
+It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.
+
+The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.
 
 ## Functions
 
@@ -14,9 +18,9 @@ string type functions
 - [deblank](deblank.md) - Remove trailing whitespace.
 - [endsWith](endsWith.md) - checks if string ends with pattern.
 - [int2str](int2str.md) - Convert an integer array to a string
+- [isStringScalar](isStringScalar.md) - checks if input is string array with one element.
 - [isletter](isletter.md) - Determine which characters are letters.
 - [isspace](isspace.md) - Determine which characters are space.
-- [isStringScalar](isStringScalar.md) - checks if input is string array with one element.
 - [join](join.md) - Combine strings.
 - [mat2str](mat2str.md) - Matrix to String.
 - [matches](matches.md) - Determine if pattern matches with strings.

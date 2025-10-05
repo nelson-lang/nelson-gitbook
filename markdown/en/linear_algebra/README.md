@@ -1,6 +1,10 @@
 # Linear algebra
 
-linear algebra functions
+The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.
+
+It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.
+
+The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.
 
 ## Functions
 

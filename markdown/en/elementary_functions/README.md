@@ -1,6 +1,10 @@
 # Elementary functions
 
-elementary functions
+The Elementary Functions module provides a wide range of fundamental mathematical operations and matrix manipulations in Nelson.
+
+It includes numeric computations, array and matrix operations, complex number handling, rounding and scaling, and various utility functions for querying properties of arrays and matrices.
+
+The module also supports construction of special matrices, grids, and sequences, enabling robust and efficient implementation of mathematical algorithms and numerical analyses.
 
 ## Functions
 

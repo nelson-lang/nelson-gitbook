@@ -1,6 +1,8 @@
 # Profiling tools
 
-Profile to Improve Performance
+The Profiler module in Nelson provides functions to measure and analyze the execution performance of code.
+
+It helps users identify bottlenecks, optimize slow parts of programs, and improve overall efficiency.
 
 ## Functions
 

@@ -1,6 +1,10 @@
 # Signal Processing
 
-Functions to analyze sampled signals.
+The Signal Processing module provides tools for analyzing and manipulating sampled signals in Nelson.
+
+It includes windowing functions, digital filtering, cross-correlation, and conversions between magnitude, power, and decibel representations.
+
+The module also supports transformation between zero-pole representations and transfer functions, enabling efficient design and analysis of discrete-time signal processing systems.
 
 ## Functions
 

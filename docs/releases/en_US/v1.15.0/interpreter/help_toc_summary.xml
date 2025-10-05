@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>interpreter</module>
+    <section name="Interpreter functions">
+      <chapter_description>
+     <p>The Interpreter Functions module provides the core language constructs and control mechanisms that define the execution flow in Nelson.</p>
+     <p>It includes essential elements such as loops, conditional branching, error handling, and function declarations.</p>
+     <p>The module also offers tools for parsing code, working with keywords, and managing recursion limits.</p>
+     <p>Together, these features establish the fundamental syntax and semantics of the Nelson language, enabling users to write structured, dynamic, and reliable programs.</p>
+    </chapter_description>
+      <keyword name="abort" link="abort.md" description="stop evaluation."/>
+      <keyword name="return" link="abort.md" description="stop evaluation."/>
+      <keyword name="break" link="break.md" description="exit evaluation loop."/>
+      <keyword name="continue" link="continue.md" description="continue evaluation in loop."/>
+      <keyword name="for" link="for.md" description="for loop."/>
+      <keyword name="parfor" link="for.md" description="for loop."/>
+      <keyword name="function" link="function.md" description="function declaration."/>
+      <keyword name="endfunction" link="function.md" description="function declaration."/>
+      <keyword name="if" link="if.md" description="conditional statement."/>
+      <keyword name="iskeyword" link="iskeyword.md" description="Returns all Nelson keywords."/>
+      <keyword name="keyboard" link="keyboard.md" description="Stops script execution and enter in debug mode."/>
+      <keyword name="max_recursion_depth" link="max_recursion_depth.md" description=" Internal limit on the number of times a function may be called recursively."/>
+      <keyword name="numeric types" link="numeric_types.md" description="About integer and floating-point data."/>
+      <keyword name="parsefile" link="parsefile.md" description="Parse a Nelson file."/>
+      <keyword name="parsestring" link="parsestring.md" description="Parse a string."/>
+      <keyword name="switch" link="switch.md" description="switch statement."/>
+      <keyword name="try" link="try.md" description="try/catch statement."/>
+      <keyword name="catch" link="try.md" description="try/catch statement."/>
+      <keyword name="while" link="while.md" description="while loop."/>
+    </section>
+  </toc>
+</help_summary>

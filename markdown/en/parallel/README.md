@@ -1,6 +1,10 @@
 # Parallel
 
-parallel functions
+The parallel module provides tools for running computations asynchronously in the
+background, managing task scheduling, and retrieving results.
+
+It enables Nelson programs to execute functions concurrently, improving efficiency and
+responsiveness by offloading work to background workers.
 
 ## Functions
 

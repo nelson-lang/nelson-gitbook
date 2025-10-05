@@ -160,13 +160,16 @@
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
 <li>html_txt = markdown(md_txt)</li>
+<li>html_txt = markdown(md_txt, options)</li>
 <li>status = markdown(md_filename, html_filename)</li>
+<li>status = markdown(md_filename, html_filename, options)</li>
 </ul>
 <h2 id="input-argument"><a class="header" href="#input-argument">Input argument</a></h2>
 <ul>
 <li>md_txt - a string: markdown text to convert.</li>
 <li>md_filename - a string: markdown filename to convert (source).</li>
 <li>html_filename - a string: html filename (destination).</li>
+<li>options - a string: options for the conversion. 'secure' (default), or 'advanced'.</li>
 </ul>
 <h2 id="output-argument"><a class="header" href="#output-argument">Output argument</a></h2>
 <ul>
@@ -175,7 +178,9 @@
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
             <b>markdown</b> converts Markdown text-to-HTML.</p>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<p>options:</p>
+secure (default): only a subset of markdown is supported (no raw HTML, no tables, no images, no links). advanced: full markdown supported (including raw HTML, tables, images, links).
+<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">txt = {'## Example of Markdown text';
 '&gt;Nelson supports markdown ...'};
 html = markdown(txt);
@@ -185,11 +190,17 @@ if ispc()
   winopen([tempdir(), 'markdown_example.html']);
 end
 </code></pre>
+<pre><code class="language-matlab">txt = 'Hello &lt;script&gt;alert("XSS")&lt;/script&gt; World';
+advanced_html = markdown(txt, 'advanced')
+secure_html = markdown(txt, 'secure')
+
+</code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="../help_tools/htmltopdf.html">htmltopdf</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>
+<tr><td>1.15.0</td><td>'secure', 'advanced' modes added</td></tr>
 </tbody></table>
 </div>
 <h2 id="author"><a class="header" href="#author">Author</a></h2>

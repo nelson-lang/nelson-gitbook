@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>linear_algebra</module>
+    <section name="Linear algebra">
+      <chapter_description>
+        <p>The Linear Algebra module provides comprehensive tools for performing matrix and vector computations in Nelson.</p>
+        <p>It includes functions for matrix factorization, decomposition, inversion, and analysis, as well as operations on eigenvalues, singular values, and subspaces.</p>
+        <p>The module supports advanced numerical methods for evaluating matrix properties, condition numbers, and transformations, enabling efficient and accurate solutions for a wide range of linear algebra problems.</p>
+    </chapter_description>
+      <keyword name="balance" link="balance.md" description="Diagonal scaling to improve eigenvalue accuracy."/>
+      <keyword name="bandwidth" link="bandwidth.md" description="Lower and upper matrix bandwidth."/>
+      <keyword name="chol" link="chol.md" description="Cholesky factorization."/>
+      <keyword name="cond" link="cond.md" description="Condition number for inversion."/>
+      <keyword name="condeig" link="condeig.md" description="Condition number with respect to eigenvalues."/>
+      <keyword name="det" link="det.md" description="Matrix determinant."/>
+      <keyword name="diff" link="diff.md" description="Differences and approximate derivatives."/>
+      <keyword name="eig" link="eig.md" description="Eigenvalues and eigenvectors."/>
+      <keyword name="expm" link="expm.md" description="Computes the matrix exponential of a square matrix."/>
+      <keyword name="gradient" link="gradient.md" description="Numerical gradient."/>
+      <keyword name="inv" link="inv.md" description="Matrix inverse."/>
+      <keyword name="isbanded" link="isbanded.md" description="Determine if matrix is within specific bandwidth."/>
+      <keyword name="ishermitian" link="ishermitian.md" description="Computes if matrix is hermitian or skew-hermitian."/>
+      <keyword name="issymmetric" link="issymmetric.md" description="Computes if matrix is symmetric."/>
+      <keyword name="kron" link="kron.md" description="Kronecker tensor product."/>
+      <keyword name="logm" link="logm.md" description="Computes the matrix logarithm of a square matrix."/>
+      <keyword name="lu" link="lu.md" description="LU matrix factorization."/>
+      <keyword name="orth" link="orth.md" description="Range space of a matrix."/>
+      <keyword name="planerot" link="planerot.md" description="Givens plane rotation."/>
+      <keyword name="rank" link="rank.md" description="Rank of matrix."/>
+      <keyword name="rcond" link="rcond.md" description="Inverse condition number."/>
+      <keyword name="rref" link="rref.md" description="Gauss-Jordan elimination."/>
+      <keyword name="rsf2csf" link="rsf2csf.md" description="Convert real Schur form to complex Schur form."/>
+      <keyword name="schur" link="schur.md" description="Schur decomposition."/>
+      <keyword name="sqrtm" link="sqrtm.md" description="Computes the matrix square root of a square matrix."/>
+      <keyword name="subspace" link="subspace.md" description="Angle between two subspaces."/>
+      <keyword name="svd" link="svd.md" description="Singular Value Decomposition."/>
+      <keyword name="trace" link="trace.md" description="Matrix trace."/>
+      <keyword name="vecnorm" link="vecnorm.md" description="Vector-wise norm."/>
+    </section>
+  </toc>
+</help_summary>

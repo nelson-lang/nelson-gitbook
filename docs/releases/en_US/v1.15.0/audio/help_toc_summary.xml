@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>audio</module>
+    <section name="Audio playback functions">
+      <chapter_description>
+		<p>The audio module provides functions for reading, writing, analyzing, and playing audio files.</p>
+		<p>It supports playback control through the audioplayer object, manipulation of playback properties, and metadata handling.</p>
+		<p>It also includes utilities for signal conversion and sound generation.</p>
+	</chapter_description>
+      <keyword name="audiodevinfo" link="audiodevinfo.md" description="Get audio devices information."/>
+      <keyword name="audioinfo" link="audioinfo.md" description="Get audio file information."/>
+      <keyword name="audiometadata" link="audiometadata.md" description="Get/Set metadata of audio file ."/>
+      <keyword name="audioplayer" link="audioplayer.md" description="Audio player object."/>
+      <keyword name="audioplayer_delete" link="audioplayer_delete.md" description="Removes audioplayer object."/>
+      <keyword name="audioplayer_fieldnames" link="audioplayer_fieldnames.md" description="Returns the properties name of an audioplayer object."/>
+      <keyword name="audioplayer_get" link="audioplayer_get.md" description="Get property value from audioplayer interface."/>
+      <keyword name="audioplayer_pause" link="audioplayer_pause.md" description="Pause an audioplayer object."/>
+      <keyword name="audioplayer_set" link="audioplayer_set.md" description="Set object or interface property to specified value."/>
+      <keyword name="audioplayer_stop" link="audioplayer_stop.md" description="Stops an audioplayer object."/>
+      <keyword name="audioplayer_used" link="audioplayer_used.md" description="Returns list of current used audioplayer handle."/>
+      <keyword name="audioread" link="audioread.md" description="Read an audio file."/>
+      <keyword name="audiosupportedformats" link="audiosupportedformats.md" description="Get audio file supported formats."/>
+      <keyword name="audiowrite" link="audiowrite.md" description="Writes an audio file."/>
+      <keyword name="beep" link="beep.md" description="Produces a beep sound."/>
+      <keyword name="isplaying" link="isplaying.md" description="get info about audio playback is in progress."/>
+      <keyword name="lin2mu" link="lin2mu.md" description="Convert audio data from linear singal to mu-law."/>
+      <keyword name="mu2lin" link="mu2lin.md" description="Convert audio data from mu-law to linear signal."/>
+      <keyword name="play" link="play.md" description="Plays an audioplayer object."/>
+      <keyword name="playblocking" link="playblocking.md" description="Plays an audioplayer object with blocking."/>
+      <keyword name="resume" link="resume.md" description="Resumes an audioplayer object."/>
+      <keyword name="sound" link="sound.md" description="Convert matrix of signal data to sound and play it."/>
+      <keyword name="soundsc" link="soundsc.md" description="Scale data and play as sound."/>
+      <keyword name="stop" link="stop.md" description="Stops an audioplayer object."/>
+    </section>
+  </toc>
+</help_summary>

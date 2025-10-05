@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>mpi</module>
+    <section name="Message Passing Interface">
+      <chapter_description>
+    <p>In the world of parallel computing, the Message Passing Interface (MPI) is the de facto
+      standard for implementing programs on multiple processors.</p>
+    <p>This module provides functions to initialize, manage, and finalize MPI environments, as well
+      as to perform communication between processes, both point-to-point and collective.</p>
+    <p>It enables Nelson programs to run efficiently on distributed-memory systems and clusters.</p>
+  </chapter_description>
+      <keyword name="MPI_Allreduce" link="MPI_Allreduce.md" description="Combines values from all processes and distributes the result back to all processes."/>
+      <keyword name="MPI_Barrier" link="MPI_Barrier.md" description="Blocks until all processes in the communicator have reached this routine."/>
+      <keyword name="MPI_Bcast" link="MPI_Bcast.md" description="Broadcasts a message from the process with rank &quot;root&quot; to all other processes of the communicator"/>
+      <keyword name="MPI_Comm_delete" link="MPI_Comm_delete.md" description="Removes MPI_Comm object."/>
+      <keyword name="MPI_Comm_get_name" link="MPI_Comm_get_name.md" description="Return the print name from the communicator."/>
+      <keyword name="MPI_Comm_object" link="MPI_Comm_object.md" description="Creates MPI_Comm object."/>
+      <keyword name="MPI_Comm_rank" link="MPI_Comm_rank.md" description="Determines the rank of the calling process in the communicator."/>
+      <keyword name="MPI_Comm_size" link="MPI_Comm_size.md" description="Determines the size of the group associated with a communicator."/>
+      <keyword name="MPI_Comm_split" link="MPI_Comm_split.md" description="Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups."/>
+      <keyword name="MPI_Comm_used" link="MPI_Comm_used.md" description="Returns list of current used MPI_Comm handle."/>
+      <keyword name="MPI_Finalize" link="MPI_Finalize.md" description="Terminate the MPI execution environment."/>
+      <keyword name="MPI_Get_library_version" link="MPI_Get_library_version.md" description="Return the version number of MPI library."/>
+      <keyword name="MPI_Get_processor_name" link="MPI_Get_processor_name.md" description="Gets the name of the processor."/>
+      <keyword name="MPI_Get_version" link="MPI_Get_version.md" description="Return the version number of MPI."/>
+      <keyword name="MPI_Init" link="MPI_Init.md" description="Initialize the MPI execution environment."/>
+      <keyword name="MPI_Initialized" link="MPI_Initialized.md" description="Indicates whether MPI_Init has been called."/>
+      <keyword name="MPI_Iprobe" link="MPI_Iprobe.md" description="Nonblocking test for a message."/>
+      <keyword name="MPI_Probe" link="MPI_Probe.md" description="Blocking test for a message."/>
+      <keyword name="MPI_Recv" link="MPI_Recv.md" description="Blocking receive for a message."/>
+      <keyword name="MPI_Reduce" link="MPI_Reduce.md" description="Reduces values on all processes to a single value."/>
+      <keyword name="MPI_Send" link="MPI_Send.md" description="Performs a blocking send."/>
+      <keyword name="mpiexec" link="mpiexec.md" description="Run an MPI script."/>
+    </section>
+  </toc>
+</help_summary>

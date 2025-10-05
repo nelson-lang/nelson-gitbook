@@ -74,7 +74,7 @@ C = [0 2 4 6; 8 10 12 14; 16 18 20 22];
 imagesc(C)
 ```
 
-<img src="imagesc_1.svg" align="middle"/>
+<img src="imagesc_1.png" align="middle"/>
 
 ```matlab
 f2 = figure();
@@ -83,7 +83,7 @@ imagesc(C)
 colormap(gray)
 ```
 
-<img src="imagesc_2.svg" align="middle"/>
+<img src="imagesc_2.png" align="middle"/>
 
 ## See also
 

@@ -32,6 +32,7 @@ Colorbar showing color scale.
 ```matlab
 f = figure();
 surf(peaks);
+axis('square');
 colormap('summer');
 colorbar()
 
@@ -42,6 +43,7 @@ colorbar()
 ```matlab
 f = figure();
 surf(peaks);
+axis('square');
 colormap('gray');
 cb = colorbar(gca);
 ```

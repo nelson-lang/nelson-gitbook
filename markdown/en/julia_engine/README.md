@@ -1,6 +1,8 @@
 # Julia engine
 
-julia_engine functions
+The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.
+
+It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.
 
 ## Functions
 

@@ -1,6 +1,12 @@
 # Fortran to C
 
-Converts Fortran 77 to C code
+The F2C module allows Nelson users to convert legacy Fortran 77 source files into C code.
+
+This enables seamless integration of older Fortran routines into Nelson workflows,
+supporting compilation, execution, and interaction with Nelson variables.
+
+It is particularly useful for leveraging existing numerical algorithms or legacy
+scientific codebases within a modern Nelson environment.
 
 ## Functions
 

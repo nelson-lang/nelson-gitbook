@@ -1,6 +1,6 @@
 - [sparse](README.md)
-  - [full](full.md)
   - [IJV](IJV.md)
+  - [full](full.md)
   - [nnz](nnz.md)
   - [nzmax](nzmax.md)
   - [sparse](sparse.md)

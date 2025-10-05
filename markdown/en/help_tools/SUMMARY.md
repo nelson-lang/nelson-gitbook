@@ -2,6 +2,7 @@
   - [buildhelp](buildhelp.md)
   - [buildhelpmd](buildhelpmd.md)
   - [buildhelpweb](buildhelpweb.md)
+  - [doc](doc.md)
   - [docroot](docroot.md)
   - [headcomments](headcomments.md)
   - [htmltopdf](htmltopdf.md)

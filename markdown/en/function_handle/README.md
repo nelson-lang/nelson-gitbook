@@ -1,6 +1,10 @@
 # Function_handle functions
 
-function_handle functions
+The Function Handle Type module provides tools for creating and managing function handles in Nelson.
+
+It supports anonymous functions, conversion between strings and function handles, and verification of function handle objects.
+
+This module enables flexible and dynamic function invocation, allowing functions to be passed, stored, and executed programmatically.
 
 ## Functions
 

@@ -1,6 +1,10 @@
 # Memory manager functions
 
-memory manager functions
+The Memory Manager module provides tools for managing variables and memory in Nelson.
+
+It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.
+
+The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.
 
 ## Functions
 
