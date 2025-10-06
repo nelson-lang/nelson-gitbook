@@ -18,7 +18,7 @@ Nelson is a powerful and easy-to-use programming language designed for simplicit
 - [rust](https://www.rust-lang.org/tools/install) (mdbook)
 
 ```bash
-cargo install mdbook
+cargo install mdbook --version 0.4.47
 ```
 
 - node (prettier)
