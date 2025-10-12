@@ -13,7 +13,7 @@ Insert html in GUI console.
 ## Description
 
 <p>
-            <b>inserthtml</b> inserts html code in GUI console.</p>
+            inserthtml inserts html code in GUI console.</p>
 
 ## Example
 

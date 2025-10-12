@@ -22,7 +22,7 @@ Linear 1-D data interpolation
 ## Description
 
 <p>
-            <b>vq = interp1(x, v, xq)</b> returns interpolated values of a 1-D function at specific query points using linear interpolation.</p>
+            vq = interp1(x, v, xq) returns interpolated values of a 1-D function at specific query points using linear interpolation.</p>
 
 ## Bibliography
 

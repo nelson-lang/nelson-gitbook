@@ -17,7 +17,7 @@ Checks if matrix is lower triangular.
 ## Description
 
 <p>
-            <b>istril</b> returns an scalar logical if entry is lower triangular.</p>
+            istril returns an scalar logical if entry is lower triangular.</p>
 
 ## Example
 

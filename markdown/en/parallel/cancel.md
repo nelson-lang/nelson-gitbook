@@ -13,9 +13,11 @@ Stop function running in the background.
 ## Description
 
 <p>
-            <b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
+            cancel(f) will stop each running or queued element of the Future array f.</p>
+
 <p>Future cancelled Findicates an error as property.</p>
-<p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
+
+<p>Some functions cannot be interrupted by pressing Ctrl+C or cancel, such as save function.</p>
 
 ## Example
 

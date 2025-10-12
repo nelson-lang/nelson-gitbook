@@ -18,7 +18,7 @@ Flag colormap array.
 ## Description
 
 <p>
-            <b>flag</b> returns the colormap with flag colors.</p>
+            flag returns the colormap with flag colors.</p>
 
 ## Example
 

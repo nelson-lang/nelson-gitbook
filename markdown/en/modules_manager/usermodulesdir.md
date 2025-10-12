@@ -13,7 +13,8 @@ Returns path where external modules are saved.
 ## Description
 
 <p>
-            <b>usermodulesdir</b> is an helper's function to return path where users modules are saved.</p>
+            usermodulesdir is an helper's function to return path where users modules are saved.</p>
+
 <p>This path can be overloaded by defining NELSON_EXTERNAL_MODULES_PATH environment variable on your system.</p>
 
 ## Example

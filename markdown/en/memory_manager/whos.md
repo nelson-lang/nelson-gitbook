@@ -26,7 +26,7 @@ List variables in memory or in .nh5 or in .mat file with sizes and types.
 ## Description
 
 <p>
-            <b>whos</b> displays current variable names in memory or in .nh5 or .mat file.</p>
+            whos displays current variable names in memory or in .nh5 or .mat file.</p>
 
 ## Example
 

@@ -20,7 +20,7 @@ Creates a struct from a cell.
 ## Description
 
 <p>
-            <b>st = cell2struct(ce, fields)</b> creates a struct from a cell.</p>
+            st = cell2struct(ce, fields) creates a struct from a cell.</p>
 
 ## Example
 

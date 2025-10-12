@@ -17,7 +17,7 @@ Checks if matrix is upper triangular.
 ## Description
 
 <p>
-            <b>istriu</b> returns an scalar logical if entry is upper triangular.</p>
+            istriu returns an scalar logical if entry is upper triangular.</p>
 
 ## Example
 

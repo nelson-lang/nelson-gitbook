@@ -17,7 +17,7 @@ Returns the properties name of an COM object.
 
 ## Description
 
-<b>fieldnames</b>returns a cell of strings with properties name.
+        fieldnames returns a cell of strings with properties name.
 
 ## Example
 

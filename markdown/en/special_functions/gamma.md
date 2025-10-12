@@ -17,9 +17,31 @@ Gamma special function
 ## Description
 
 <p>
-            <b>gamma</b> computes the gamma function.</p>
-<p>
-                <b>gamma</b> is an extension of the <b>factorial</b> function.</p>
+            gamma computes the gamma function.
+        </p>
+
+<p>The gamma function is defined by the integral:</p>
+
+$$\Gamma(z) = \int_0^{\infty} t^{z-1} e^{-t} \, dt$$
+
+<p>for</p>
+
+$$\text{Re}(z) > 0$$
+
+<p>The gamma function extends the factorial function to real and complex numbers:</p>
+
+$$\Gamma(n) = (n-1)!$$
+
+<p>for positive integers</p>
+
+$$n$$
+
+<p>Key properties include:</p>
+
+$$\Gamma(z+1) = z\Gamma(z)$$
+(recurrence relation)
+
+$$\Gamma(1/2) = \sqrt{\pi}$$
 
 ## Example
 

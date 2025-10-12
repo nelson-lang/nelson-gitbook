@@ -17,7 +17,7 @@ Computes the four-quadrant inverse tangent.
 
 ## Description
 
-<b>atan2</b>computes the four-quadrant inverse tangent.
+        atan2 computes the four-quadrant inverse tangent.
 
 ## Example
 

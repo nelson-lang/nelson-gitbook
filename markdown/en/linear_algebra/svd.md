@@ -23,11 +23,50 @@ Singular Value Decomposition.
 ## Description
 
 <p>
-            <b>[U, S, V] = svd(M)</b> produces a diagonal matrix S of the same dimension as M and with nonnegative diagonal elements in decreasing order, and unitary matrices U and V so that X = U*S*V'.</p>
-<p>
-                <b>[U, S, V] = svd(M, 0)</b> produces the 'economy size' decomposition. If M is m-by-n with m > n then only the first n columns of U are computed and S is n-by-n.</p>
-<p>
-                    <b>[U, S, V] = svd(M,0)</b> produces a different economy-size decomposition of m-by-n matrix M. If m > n  then svd(M, 0) is equivalent to svd(M,'econ'). If m  <= n then svd(M, 0) is equivalent to svd(M).</p>
+            svd computes the Singular Value Decomposition of a matrix.
+        </p>
+
+<p>For an</p>
+
+$$m \times n$$
+
+<p>matrix M, the SVD is:</p>
+
+$$M = U\Sigma V^T$$
+
+<p>where:
+        
+        
+$$U$$
+ is an
+        
+$$m \times m$$
+
+<p>unitary matrix (left singular vectors)</p>
+
+$$\Sigma$$
+is an
+
+$$m \times n$$
+
+<p>diagonal matrix with non-negative real numbers (singular values)</p>
+
+$$V^T$$
+is an
+
+$$n \times n$$
+
+<p>unitary matrix (right singular vectors)</p>
+
+        </p>
+
+<p>The singular values</p>
+
+$$\sigma_i$$
+
+<p>are arranged in decreasing order:</p>
+
+$$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$
 
 ## Example
 

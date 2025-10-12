@@ -13,28 +13,39 @@ graphic root object.
 ## Description
 
 <p>
-            <b>groot</b> returns graphic root object.</p>
+            groot returns graphic root object.</p>
+
 <p>Properties:</p>
+
 <p>
-                <b>Children</b>: Array of available figure objects.</p>
+                Children: Array of available figure objects.</p>
+
 <p>
-                    <b>CurrentFigure</b>: Current figure graphics object.</p>
+                    CurrentFigure: Current figure graphics object.</p>
+
 <p>
-                        <b>Parent</b>: empty array (No parent)</p>
+                        Parent: empty array (No parent)</p>
+
 <p>
-                            <b>PointerLocation</b>: Current location of pointer.</p>
+                            PointerLocation: Current location of pointer.</p>
+
 <p>
-                                <b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
+                                ScreenDepth: Number of bits that define each pixel color.</p>
+
 <p>
-                                    <b>ScreenSize</b>: Size of primary display (vector).</p>
+                                    ScreenSize: Size of primary display (vector).</p>
+
 <p>
-                                        <b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
+                                        Tag: Object identifier: string scalar, character vector, '' (default).</p>
+
 <p>
-                                            <b>Type</b>: Type 'root'.</p>
+                                            Type: Type 'root'.</p>
+
 <p>
-                                                <b>Units</b>: 'pixels'.</p>
+                                                Units: 'pixels'.</p>
+
 <p>
-                                                    <b>UserData</b>: User data: array or [] (default).</p>
+                                                    UserData: User data: array or [] (default).</p>
 
 ## Example
 

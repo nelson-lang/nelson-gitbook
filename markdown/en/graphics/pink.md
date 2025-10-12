@@ -18,7 +18,7 @@ Pink colormap array.
 ## Description
 
 <p>
-            <b>pink</b> returns the colormap with pink colors.</p>
+            pink returns the colormap with pink colors.</p>
 
 ## Example
 

@@ -13,7 +13,7 @@ Returns the default language used in Nelson.
 ## Description
 
 <p>
-            <b>getdefaultlanguage</b> returns the default language used by Nelson.</p>
+            getdefaultlanguage returns the default language used by Nelson.</p>
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lsim"><a class="header" href="#lsim">lsim</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lsim"><a class="header" href="#lsim">lsim</a></h1>
 <p>Plot simulated time response of dynamic system to arbitrary inputs.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -177,12 +178,12 @@
 <li>x - State trajectories: matrix or vector.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>).</p>
-<p>The time samples for the simulation are specified by the vector <b>t</b>.</p>
-<p>In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>.</p>
-<p>For multi-input systems, <b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>.</p>
-<p>An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values.</p>
-<p>This is particularly relevant when <b>sys</b> is a state-space model.</p>
+<p>The function lsim(sys, u, t) generates a plot illustrating the simulated time response of the dynamic system model sys to the input history (t, u).</p>
+<p>The time samples for the simulation are specified by the vector t.</p>
+<p>In the case of single-input systems, the input signal u is a vector with the same length as t.</p>
+<p>For multi-input systems, u is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to sys.</p>
+<p>An additional usage of the function is demonstrated by the example lsim(sys, u, t, x0), where a vector x0 is provided to specify initial state values.</p>
+<p>This is particularly relevant when sys is a state-space model.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">A = [-10 -20 -30;1  0  0; 0  1  0];
 B = [1;   0;   0];

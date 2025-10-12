@@ -17,7 +17,7 @@ Strings comparaison (case insensitive).
 
 ## Description
 
-<b>strcmpi</b>compares two strings (case insensitive).
+        strcmpi compares two strings (case insensitive).
 
 ## Example
 

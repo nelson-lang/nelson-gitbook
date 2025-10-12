@@ -12,7 +12,7 @@ Return the search path separator character for the current platform.
 
 ## Description
 
-<b>pathsep</b>returns ';' on Windows and ':' on others platforms.
+        pathsep returns ';' on Windows and ':' on others platforms.
 
 ## Example
 

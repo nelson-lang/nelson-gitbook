@@ -27,11 +27,14 @@
 ## Description
 
 <p>
-            <b>plot3(X1, Y1, Z1, ...)</b>plots one or more lines in three-dimensional space.</p>
+            plot3(X1, Y1, Z1, ...)plots one or more lines in three-dimensional space.</p>
+
 <p>
-                <b>go = plot3(...)</b> returns a column vector of line graphics objects.</p>
+                go = plot3(...) returns a column vector of line graphics objects.</p>
+
 <p></p>
-<p>see <b>line</b> or <b>plot</b> for more information about properties</p>
+
+<p>see line or plot for more information about properties</p>
 
 ## Examples
 

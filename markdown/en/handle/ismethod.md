@@ -17,7 +17,7 @@ Return true if method of handle object.
 
 ## Description
 
-<b>ismethod</b>returns a logical 1 if the argument is a valid handle with method name and a logical 0 otherwise.
+        ismethod returns a logical 1 if the argument is a valid handle with method name and a logical 0 otherwise.
 
 ## See also
 

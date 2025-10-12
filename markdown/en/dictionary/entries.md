@@ -19,11 +19,13 @@ Key-value pairs of dictionary.
 ## Description
 
 <p>
-            <b>E = entries(d)</b> retrieves a table containing the key-value pairs from the given dictionary, <b>d</b>.</p>
+            E = entries(d) retrieves a table containing the key-value pairs from the given dictionary, d.</p>
+
 <p>
-                <b>E = entries(d)</b> currently not implemented.</p>
+                E = entries(d) currently not implemented.</p>
+
 <p>
-                    <b>E = entries(d, format)</b> specifies the output format as either a table or a structure. For instance, entries(d, "struct") returns a structure containing the key-value pairs of d. This option is useful for data types that are not compatible with tables.</p>
+                    E = entries(d, format) specifies the output format as either a table or a structure. For instance, entries(d, "struct") returns a structure containing the key-value pairs of d. This option is useful for data types that are not compatible with tables.</p>
 
 ## Example
 

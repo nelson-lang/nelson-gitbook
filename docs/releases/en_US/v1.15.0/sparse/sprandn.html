@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="sprandn"><a class="header" href="#sprandn">sprandn</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="sprandn"><a class="header" href="#sprandn">sprandn</a></h1>
 <p>Sparse normally distributed random matrix.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,9 +175,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>R = sprandn(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.</p>
+            R = sprandn(S) creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.</p>
 <p>
-                <b>R = sprandn(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density*m*n normally distributed nonzero entries for density in the interval [0,1].</p>
+                R = sprandn(m,n,density) creates a random m-by-n sparse matrix with approximately density*m*n normally distributed nonzero entries for density in the interval [0,1].</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <p>sprandn with matrix pattern</p>
 <pre><code class="language-matlab">S = [1 0 0; 0 1 0; 0 0 1]; R = sprandn(S)

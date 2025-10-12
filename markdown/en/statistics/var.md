@@ -17,7 +17,7 @@ Variance
 ## Description
 
 <p>
-            <b>V = var(M)</b> returns the variance of the elements of M along the first array dimension whose size does not equal 1.</p>
+            V = var(M) returns the variance of the elements of M along the first array dimension whose size does not equal 1.</p>
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="copyfile"><a class="header" href="#copyfile">copyfile</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="copyfile"><a class="header" href="#copyfile">copyfile</a></h1>
 <p>Copy files or folder.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -176,10 +177,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>copyfile(source , destination)</b> copies the file or directory , <b>source</b> (and subdirectories) to the file or directory, <b>destination</b>.</p>
-<p>If <b>source</b> is a directory, <b>destination</b> can not be a file.</p>
+            copyfile(source , destination) copies the file or directory , source (and subdirectories) to the file or directory, destination.</p>
+<p>If source is a directory, destination can not be a file.</p>
 <p>
-                <b>copyfile</b> replaces existing files without warning.</p>
+                copyfile replaces existing files without warning.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 [status, msg] = copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])

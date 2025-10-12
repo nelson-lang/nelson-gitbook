@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="num2cell"><a class="header" href="#num2cell">num2cell</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="num2cell"><a class="header" href="#num2cell">num2cell</a></h1>
 <p>Convert array to cell array with consistently sized cells.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,8 +174,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>num2cell</b> function converts a numeric array into a cell array, where each element of the numeric array is placed in its own cell in the resulting cell array.</p>
-<p>If <b>A</b> is a character array, num2cell will convert each row of the array into a separate cell in the resulting cell array.</p>
+            num2cell function converts a numeric array into a cell array, where each element of the numeric array is placed in its own cell in the resulting cell array.</p>
+<p>If A is a character array, num2cell will convert each row of the array into a separate cell in the resulting cell array.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [1 2; 3 4; 5 6];
 C = num2cell(A)

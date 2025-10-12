@@ -19,9 +19,10 @@ Upper triangular part of matrix
 ## Description
 
 <p>
-            <b>triu</b> computes Upper Triangular Portions of Matrix.</p>
+            triu computes Upper Triangular Portions of Matrix.</p>
+
 <p>
-                <b>R = triu(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
+                R = triu(M, k) returns the elements on and above the kth diagonal of M.</p>
 
 ## Example
 

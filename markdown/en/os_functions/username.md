@@ -13,7 +13,7 @@ get user name currently used.
 ## Description
 
 <p>
-            <b>username</b> get user name currently used.</p>
+            username get user name currently used.</p>
 
 ## Example
 

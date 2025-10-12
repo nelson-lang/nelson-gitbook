@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="substruct"><a class="header" href="#substruct">substruct</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="substruct"><a class="header" href="#substruct">substruct</a></h1>
 <p>Create structure argument for subsasgn or subsref</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -163,7 +164,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>S = substruct(type1, subs1, type2, subs2, ...)</b> generates a structure containing fields necessary for an overloaded <b>subsref</b> or <b>subsasgn</b> method.</p>
+            S = substruct(type1, subs1, type2, subs2, ...) generates a structure containing fields necessary for an overloaded subsref or subsasgn method.</p>
 <p>Each type char vector is limited to '.', '()', or '{}'.</p>
 <p>The associated subs argument should be a field name (for the '.' type) or a cell array containing index vectors (for the '()' or '{}' types).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>

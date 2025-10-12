@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="profsave"><a class="header" href="#profsave">profsave</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="profsave"><a class="header" href="#profsave">profsave</a></h1>
 <p>Save profile result to HTML format.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,9 +171,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>profsave</b> exports the profiling data into a series of HTML files.</p>
+            profsave exports the profiling data into a series of HTML files.</p>
 <p>The input profile_info is the structure returned by profile('info').</p>
-<p>If unspecified, <b>profsave</b> will use the current profile.</p>
+<p>If unspecified, profsave will use the current profile.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">profile on
 sind(5)

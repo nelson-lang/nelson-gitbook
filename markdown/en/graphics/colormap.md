@@ -21,7 +21,7 @@ View and set current colormap.
 ## Description
 
 <p>
-            <b>colormap</b>allows to view and set the colormap used into a plot.</p>
+            colormapallows to view and set the colormap used into a plot.</p>
 
 ## Examples
 

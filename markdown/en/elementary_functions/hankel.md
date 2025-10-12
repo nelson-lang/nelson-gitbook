@@ -19,10 +19,12 @@ Hankel matrix
 ## Description
 
 <p>
-            <b>H = hankel(c)</b> returns a square Hankel Matrix with <b>c</b> the first column of the matrix and the elements are zero below the main anti-diagonal.</p>
+            H = hankel(c) returns a square Hankel Matrix with c the first column of the matrix and the elements are zero below the main anti-diagonal.</p>
+
 <p>
-                <b>H = hankel(c, r)</b> returns a Hankel matrix with <b>c</b> as its first column and <b>r</b> as its last row.</p>
-<p>If last element of <b>c</b> differs from the first element of <b>r</b>, then Hankel issues a warning and uses the last element of <b>c</b> for the anti-diagonal.</p>
+                H = hankel(c, r) returns a Hankel matrix with c as its first column and r as its last row.</p>
+
+<p>If last element of c differs from the first element of r, then Hankel issues a warning and uses the last element of c for the anti-diagonal.</p>
 
 ## Example
 

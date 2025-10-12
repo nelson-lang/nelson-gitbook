@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="uint64"><a class="header" href="#uint64">uint64</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="uint64"><a class="header" href="#uint64">uint64</a></h1>
 <p>Converts to 64-bit unsigned integer.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,7 +172,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>uint64</b> converts value to 64-bit unsigned integer type.</p>
+            uint64 converts value to 64-bit unsigned integer type.</p>
 <p>The value is rounded to the nearest uint64 value on conversion. A value that is above or below the range for an uint64 class is mapped to one of the endpoints of the range [0, 18446744073709551616].</p>
 <p>When you create a numeric array of large integers in Nelson, especially when they exceed the maximum precision representable by double (larger than flintmax), Nelson initially stores these values as double-precision floating-point numbers by default.</p>
 <p>This default representation can lead to a loss of precision, as floating-point numbers have limited precision.</p>

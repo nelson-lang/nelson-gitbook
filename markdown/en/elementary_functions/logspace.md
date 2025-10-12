@@ -20,7 +20,7 @@ logarithmically spaced vector constructor.
 ## Description
 
 <p>
-            <b>logspace</b> generates an logarithmically spaced vector.</p>
+            logspace generates an logarithmically spaced vector.</p>
 
 ## Example
 

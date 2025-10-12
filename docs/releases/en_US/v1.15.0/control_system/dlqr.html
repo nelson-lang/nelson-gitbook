@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="dlqr"><a class="header" href="#dlqr">dlqr</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="dlqr"><a class="header" href="#dlqr">dlqr</a></h1>
 <p>Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -177,7 +178,7 @@
 <li>e - Poles of the closed-loop system: column vector.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The <b>dlqr</b> function is designed to minimize a quadratic cost function associated with a discrete linear time-invariant state-space system model.</p>
+<p>The dlqr function is designed to minimize a quadratic cost function associated with a discrete linear time-invariant state-space system model.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [0.9, 0.2; 0, 0.8];
 B = [0; 2];

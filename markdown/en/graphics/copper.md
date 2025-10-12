@@ -18,7 +18,7 @@ Copper colormap array.
 ## Description
 
 <p>
-            <b>copper</b> returns the colormap with copper colors.</p>
+            copper returns the colormap with copper colors.</p>
 
 ## Example
 

@@ -17,27 +17,39 @@ Create import options based on file content.
 ## Description
 
 <p>
-            <b>options = detectImportOptions(filename)</b> identifies a table in a file and returns an import <b>options</b> object.</p>
-<p>You can customize this object and use it with <b>readtable</b>, <b>readcell</b> or <b>readmatrix</b> to control how Nelson imports data as a table, cell array, or matrix.</p>
+            options = detectImportOptions(filename) identifies a table in a file and returns an import options object.</p>
+
+<p>You can customize this object and use it with readtable, readcell or readmatrix to control how Nelson imports data as a table, cell array, or matrix.</p>
+
 <p>The type of the returned options object depends on the file's extension.</p>
+
 <p></p>
+
 <p>Properties:</p>
+
 <p>
-                <b>Delimiter</b>: Field delimiter characters. example: {','} </p>
+                Delimiter: Field delimiter characters. example: {','} </p>
+
 <p>
-                    <b>LineEnding</b>: End-of-line characters. example: {'\r\n'}</p>
+                    LineEnding: End-of-line characters. example: {'\r\n'}</p>
+
 <p>
-                        <b>CommentStyle</b>: Style of comments. example: {'#'}</p>
+                        CommentStyle: Style of comments. example: {'#'}</p>
+
 <p>
-                            <b>EmptyLineRule</b>: Procedure to handle empty lines. example: 'skip'</p>
+                            EmptyLineRule: Procedure to handle empty lines. example: 'skip'</p>
+
 <p>
-                                <b>VariableNamesLine</b>: Variable names location. example: 1</p>
+                                VariableNamesLine: Variable names location. example: 1</p>
+
 <p>
-                                    <b>VariableNames</b>: Variable names. example: {'Names'  'Age'  'Height'  'Weight'}</p>
+                                    VariableNames: Variable names. example: {'Names'  'Age'  'Height'  'Weight'}</p>
+
 <p>
-                                        <b>RowNamesColumn</b>:  Row names location. example: 0</p>
+                                        RowNamesColumn:  Row names location. example: 0</p>
+
 <p>
-                                            <b>DataLines</b>: Data location, <b>[l1 l2]</b> Indicate the range of lines containing the data. <b>l1</b> refers to the first line with data, while <b>l2</b> refers to the last line. example: [2  Inf]</p>
+                                            DataLines: Data location, [l1 l2] Indicate the range of lines containing the data. l1 refers to the first line with data, while l2 refers to the last line. example: [2  Inf]</p>
 
 ## Example
 

@@ -20,13 +20,31 @@ Manage supported image formats.
 ## Description
 
 <p>
-            <b>imformats</b> returns the list of supported image formats.</p>
+            imformats returns the list of supported image formats.</p>
+
 <p>
-                <b>formats = imformats()</b> returns the list of supported image formats in a structure array.</p>
+                formats = imformats() returns the list of supported image formats in a structure array.</p>
+
 <p>
-                    <b>format = imformats(ext)</b> returns the structure of the image format corresponding to the extension <b>ext</b>.</p>
+                    format = imformats(ext) returns the structure of the image format corresponding to the extension ext.</p>
+
 <p>Each element of the structure array contains the fields:</p>
-ext: file format extension isa: function handle to test if the file format is supported info: function handle to get information about the file format description: file format description read: function handle to read the file format write: function handle to write the file format alpha: logical scalar indicating if the file format supports transparency multipage: logical scalar indicating if the file format supports multipage images
+
+                            ext: file format extension
+
+                                isa: function handle to test if the file format is supported
+
+                                    info: function handle to get information about the file format
+
+                                        description: file format description
+
+                                            read: function handle to read the file format
+
+                                                write: function handle to write the file format
+
+                                                    alpha: logical scalar indicating if the file format supports transparency
+
+                                                        multipage: logical scalar indicating if the file format supports multipage images
 
 ## Example
 

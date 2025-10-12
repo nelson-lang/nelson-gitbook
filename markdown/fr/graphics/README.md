@@ -1,0 +1,110 @@
+# Fonctions graphiques
+
+Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques,
+figures, palettes de couleurs et objets graphiques.
+
+Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et
+des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.
+
+## Functions
+
+- [abyss](abyss.md) - Palette de couleurs abyss.
+- [ancestor](ancestor.md) - Ancêtre d'un objet graphique.
+- [autumn](autumn.md) - Palette de couleurs autumn.
+- [axes](axes.md) - Créer des axes cartésiens.
+- [axis](axis.md) - Définit les limites et les rapports d'aspect des axes.
+- [bar](bar.md) - Diagramme en barres.
+- [bone](bone.md) - Palette de couleurs bone.
+- [cla](cla.md) - Efface les axes.
+- [clf](clf.md) - Efface la figure.
+- [clim](clim.md) - Définit les limites de la palette de couleurs.
+- [close](close.md) - Ferme une ou plusieurs figures
+- [colorbar](colorbar.md) - Barre de couleur affichant l'échelle des couleurs.
+- [colormap](colormap.md) - Afficher et définir la palette de couleurs courante.
+- [colormaplist](colormaplist.md) - Fournit la liste des palettes de couleurs.
+- [colstyle](colstyle.md) - Analyse la couleur et le style à partir d'une chaîne.
+- [contour](contour.md) - Tracé de contours d'une matrice
+- [contour3](contour3.md) - Tracé de contours 3D d'une matrice
+- [cool](cool.md) - Palette de couleurs cool.
+- [copper](copper.md) - Palette de couleurs copper.
+- [cylinder](cylinder.md) - Créer un cylindre.
+- [drawnow](drawnow.md) - Met à jour les figures et traite les callbacks
+- [figure](figure.md) - Crée une fenêtre figure.
+- [fill](fill.md) - Créer des formes 2D remplies.
+- [flag](flag.md) - Palette de couleurs flag.
+- [frame2im](frame2im.md) - Récupère les données d'image d'une image vidéo.
+- [gca](gca.md) - Récupère l'objet axes courant.
+- [gcf](gcf.md) - Récupère l'objet figure courant.
+- [getframe](getframe.md) - Capture une figure ou des axes comme image vidéo.
+- [Gestion des interruptions de callback dans Nelson](graphical_callback.md) -
+- [gray](gray.md) - Palette de couleurs gray.
+- [grid](grid.md) - Afficher ou masquer les lignes de grille des axes.
+- [groot](groot.md) - Objet racine graphique.
+- [hggroup](hggroup.md) - Créer un objet groupe.
+- [hist](hist.md) - Tracé d'histogramme.
+- [hold](hold.md) - Conserver le tracé courant lors de l'ajout de nouveaux tracés.
+- [hot](hot.md) - Palette de couleurs hot.
+- [im2frame](im2frame.md) - Convertit une image en image de film.
+- [image](image.md) - Affiche une image à partir d'un tableau.
+- [imagesc](imagesc.md) - Affiche une image à partir d'un tableau avec des couleurs mises à l'échelle.
+- [imshow](imshow.md) - Affiche une image.
+- [is2D](is2D.md) - Vérifie si ax est un axe 2D polaire ou cartésien.
+- [isValidGraphicsProperty](isValidGraphicsProperty.md) - Vérifie si le nom de propriété est valide.
+- [isgraphics](isgraphics.md) - Vérifie si l'objet est graphique.
+- [ishold](ishold.md) - Obtient l'état actuel du mode hold.
+- [jet](jet.md) - Tableau de palette de couleurs jet.
+- [legend](legend.md) - Ajoute une légende aux axes.
+- [line](line.md) - Crée une ligne primitive.
+- [loglog](loglog.md) - Tracé en échelle log-log.
+- [mesh](mesh.md) - Tracé de surface en maillage (mesh).
+- [meshz](meshz.md) - Tracé de surface en maillage (mesh) avec rideau.
+- [movie](movie.md) - Jouer des séquences d'images enregistrées (movie).
+- [nebula](nebula.md) - Palette de couleurs Nebula.
+- [newplot](newplot.md) - Préparer la création d'un nouveau graphique.
+- [pan](pan.md) - Activer le mode déplacement (pan).
+- [parula](parula.md) - Palette de couleurs Parula.
+- [patch](patch.md) - Créer des patchs de polygones colorés
+- [pcolor](pcolor.md) - Graphique en pseudo-couleurs.
+- [pie](pie.md) - Ancien graphique en secteurs (camembert).
+- [pink](pink.md) - Palette de couleurs Pink.
+- [plot](plot.md) - Tracé linéaire 2D.
+- [plot3](plot3.md) - Tracé de courbe 3D.
+- [prism](prism.md) - Palette de couleurs Prism.
+- [quiver](quiver.md) - Tracé de champ de vecteurs.
+- [refresh](refresh.md) - Rafraîchir la figure courante.
+- [rgbplot](rgbplot.md) - Tracer une palette de couleurs.
+- [ribbon](ribbon.md) - Graphique en ruban.
+- [rotate3d](rotate3d.md) - Activer le mode rotation.
+- [scatter](scatter.md) - Nuage de points.
+- [scatter3](scatter3.md) - Nuage de points 3D.
+- [semilogx](semilogx.md) - Graphique semi-logarithmique (axe x en échelle logarithmique).
+- [semilogy](semilogy.md) - Graphique semi-logarithmique (axe y en échelle logarithmique).
+- [sky](sky.md) - Table de couleurs 'sky'.
+- [sphere](sphere.md) - Créer une sphère.
+- [spring](spring.md) - Table de couleurs 'spring'.
+- [spy](spy.md) - Visualiser le motif de parcimonie d'une matrice.
+- [stairs](stairs.md) - Graphique en escalier.
+- [stem](stem.md) - Tracer des données discrètes.
+- [subplot](subplot.md) - Créer des axes en positions mosaïques.
+- [summer](summer.md) - Table de couleurs 'summer'.
+- [surf](surf.md) - tracé de surface.
+- [surface](surface.md) - Tracé de surface primitif.
+- [text](text.md) - crée des descriptions textuelles pour les points de données.
+- [title](title.md) - Ajouter un titre.
+- [turbo](turbo.md) - Tableau de couleurs Turbo.
+- [uicontrol](uicontrol.md) - Créer un composant d'interface utilisateur.
+- [validatecolor](validatecolor.md) - Valider les valeurs de couleur.
+- [view](view.md) - Ligne de visée de la caméra.
+- [viridis](viridis.md) - Tableau de couleurs Viridis.
+- [waitfor](waitfor.md) - Attendre une condition.
+- [waitforbuttonpress](waitforbuttonpress.md) - Attendre un clic ou une pression sur une touche.
+- [waterfall](waterfall.md) - graphique en cascade.
+- [white](white.md) - tableau de colormap blanc.
+- [winter](winter.md) - Tableau de colormap hiver.
+- [xlabel](xlabel.md) - Étiquette de l'axe des x.
+- [xlim](xlim.md) - définir ou obtenir les limites de l'axe des x.
+- [ylabel](ylabel.md) - Étiquette de l'axe des y.
+- [ylim](ylim.md) - définir ou obtenir les limites de l'axe des y.
+- [zlabel](zlabel.md) - Étiquette de l'axe des z.
+- [zlim](zlim.md) - définir ou obtenir les limites de l'axe des z.
+- [zoom](zoom.md) - Activer le mode zoom.

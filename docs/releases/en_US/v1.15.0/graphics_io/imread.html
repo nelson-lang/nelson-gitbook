@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="imread"><a class="header" href="#imread">imread</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="imread"><a class="header" href="#imread">imread</a></h1>
 <p>Read image from graphics file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,9 +176,23 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>imread</b> reads the image data from the given file into a matrix.</p>
+            imread reads the image data from the given file into a matrix.</p>
 <p></p>
-Format Description BMP Windows Bitmap GIF Graphic Interchange Format (optional) JPG Joint Photographic Experts Group TIFF Tagged Image File Format JPEG Joint Photographic Experts Group PCX PiCture eXchange PNG Portable Network Graphics PBM Portable Bitmap PGM Portable Graymap PPM Portable Pixmap XBM X11 Bitmap XPM X11 Pixmap
+<div class="table-wrapper"><table><thead><tr><th>Format</th><th>Description</th></tr></thead><tbody>
+</tbody></table>
+</div>
+<p>|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = figure();
 filename = [tempdir, 'ngc6543a.gif'];

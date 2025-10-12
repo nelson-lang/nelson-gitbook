@@ -19,9 +19,10 @@ Create cell array from file.
 ## Description
 
 <p>
-            <b>C = readcell(filename)</b> creates a cell array by importing column-oriented data from a text or spreadsheet file.</p>
+            C = readcell(filename) creates a cell array by importing column-oriented data from a text or spreadsheet file.</p>
+
 <p>
-                <b>C = readcell(filename, opts)</b> creates a cell array using the settings defined in the <b>opts</b> import options object. The import <b>options</b> object allows you to customize how <b>readcell</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
+                C = readcell(filename, opts) creates a cell array using the settings defined in the opts import options object. The import options object allows you to customize how readcell interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
 
 ## Examples
 

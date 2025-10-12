@@ -17,7 +17,7 @@ Build full file name from parts.
 ## Description
 
 <p>
-            <b>R = fullfile(part1, ... , partN)</b> build full file name from parts.</p>
+            R = fullfile(part1, ... , partN) build full file name from parts.</p>
 
 ## Example
 

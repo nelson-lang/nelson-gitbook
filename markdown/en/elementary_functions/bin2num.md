@@ -17,10 +17,13 @@ Convert two's complement binary string to number.
 ## Description
 
 <p>
-            <b>bin2num</b> converts binary character arry to a numeric array.</p>
+            bin2num converts binary character arry to a numeric array.</p>
+
 <p>Note:</p>
-<p> - <b>num2bin</b> always returns the binary representations in a column</p>
-<p> - <b>bin2num</b> and <b>num2bin</b> are inverses of one another.</p>
+
+<p> - num2bin always returns the binary representations in a column</p>
+
+<p> - bin2num and num2bin are inverses of one another.</p>
 
 ## Bibliography
 

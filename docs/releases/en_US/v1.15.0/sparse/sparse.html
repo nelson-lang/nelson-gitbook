@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="sparse"><a class="header" href="#sparse">sparse</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="sparse"><a class="header" href="#sparse">sparse</a></h1>
 <p>Sparse matrix definition.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -181,9 +182,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>sparse</b> is used to build a sparse matrix. Only non-zero entries are stored.</p>
-<p>If <b>M</b>is a full matrix, <b>sparse</b> converts it to a sparse matrix representation, removing all zero values.</p>
-<p>If nz is not specified, <b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)])</p>
+            sparse is used to build a sparse matrix. Only non-zero entries are stored.</p>
+<p>If Mis a full matrix, sparse converts it to a sparse matrix representation, removing all zero values.</p>
+<p>If nz is not specified, sparse uses as default value: nz = max([numel(i), numel(j), numel(v)])</p>
 <p>If multiple values are specified with the same i, j indices, the associated value will be the sum of the values at the repeated index.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">sp = sparse(eye(3,3))

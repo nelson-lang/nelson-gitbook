@@ -13,7 +13,8 @@ Checks if version is for GNU Linux or Unix platform.
 ## Description
 
 <p>
-            <b>isunix</b> checks if it is a GNU Linux or Unix platform.</p>
+            isunix checks if it is a GNU Linux or Unix platform.</p>
+
 <p>MacOs platform is also detected as a GNU Linux or Unix platform.</p>
 
 ## Example

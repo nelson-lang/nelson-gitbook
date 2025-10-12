@@ -18,24 +18,34 @@ semantic versioner.
 ## Description
 
 <p>
-            <b>semver</b> compares a version string to an version or an range version.</p>
-<p>if an range version is used, <b>r</b> return 0 (not satisfied) or 1 (satisfied).</p>
-<p>if an simple version is used, an comparaison value <b>r</b> is returned -1 (inferior), 0 (equal) or 1 (superior).</p>
+            semver compares a version string to an version or an range version.</p>
+
+<p>if an range version is used, r return 0 (not satisfied) or 1 (satisfied).</p>
+
+<p>if an simple version is used, an comparaison value r is returned -1 (inferior), 0 (equal) or 1 (superior).</p>
+
 <p>supported range operators:</p>
+
 <p>
-                <b>=</b> - Equality</p>
+                = - Equality</p>
+
 <p>
-                    <b>>=</b> - Higher or equal to</p>
+                    >= - Higher or equal to</p>
+
 <p>
-                        <b><=</b> - Lower or equal to</p>
+                        <= - Lower or equal to</p>
+
 <p>
-                            <b><</b> - Lower than</p>
+                            < - Lower than</p>
+
 <p>
-                                <b>></b> - Higher than</p>
+                                > - Higher than</p>
+
 <p>
-                                    <b>^</b> - Caret operator comparison</p>
+                                    ^ - Caret operator comparison</p>
+
 <p>
-                                        <b>~</b> - Tilde operator comparison</p>
+                                        ~ - Tilde operator comparison</p>
 
 ## Bibliography
 

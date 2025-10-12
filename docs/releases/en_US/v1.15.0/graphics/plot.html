@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="plot"><a class="header" href="#plot">plot</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="plot"><a class="header" href="#plot">plot</a></h1>
 <p>Linear 2-D plot.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -181,66 +182,50 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>plot(Y)</b> plots the columns of <b>Y</b> versus their index.</p>
+            plot(Y) plots the columns of Y versus their index.</p>
 <p>
-                <b>plot(X, Y)</b> plots line defined by <b>X</b> versus <b>Y</b> pair.</p>
+                plot(X, Y) plots line defined by X versus Y pair.</p>
 <p>
-                    <b>go = plot(...)</b> returns a column vector of line graphics objects.</p>
+                    go = plot(...) returns a column vector of line graphics objects.</p>
 <p></p>
 <p>
-                        <b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order:</p>
+                        LineSpec is a string used to change the characteristics of the line and is composed of three optional parts in any order:</p>
 <p></p>
 <p>The SymbolSpec specifies the symbol to be drawn at each data point:</p>
-<p>
-                            <b>'o'</b>: Circle symbol</p>
-<p>
-                                <b>'x'</b>: Times symbol</p>
-<p>
-                                    <b>'+'</b>: Plus symbol</p>
-<p>
-                                        <b>'*'</b>: Asterisk symbol</p>
-<p>
-                                            <b>'.'</b>: Dot symbol</p>
-<p>
-                                                <b>'s'</b>: Square symbol</p>
-<p>
-                                                    <b>'d'</b>: Diamond symbol</p>
-<p>
-                                                        <b>'v'</b>: Downward-pointing triangle symbol</p>
-<p>
-                                                            <b>'^'</b>: Upward-pointing triangle symbol</p>
-<p>
-                                                                <b>'>'</b>: Left-pointing triangle symbol</p>
-<p>
-                                                                    <b>'<'</b>: Right-pointing triangle symbol</p>
-<p></p>
+<div class="table-wrapper"><table><thead><tr><th>Symbol</th><th>Description</th></tr></thead><tbody>
+<tr><td>'o'</td><td>Circle symbol</td></tr>
+<tr><td>'x'</td><td>Times symbol</td></tr>
+<tr><td>'+'</td><td>Plus symbol</td></tr>
+<tr><td>'*'</td><td>Asterisk symbol</td></tr>
+<tr><td>'.'</td><td>Dot symbol</td></tr>
+<tr><td>'s'</td><td>Square symbol</td></tr>
+<tr><td>'d'</td><td>Diamond symbol</td></tr>
+<tr><td>'v'</td><td>Downward-pointing triangle symbol</td></tr>
+<tr><td>'^'</td><td>Upward-pointing triangle symbol</td></tr>
+<tr><td>'&gt;'</td><td>Left-pointing triangle symbol</td></tr>
+<tr><td>'&lt;'</td><td>Right-pointing triangle symbol</td></tr>
+</tbody></table>
+</div><p></p>
 <p>The LineStyleSpec specifies the line style to use for each data series:</p>
-<p>
-                                                                        <b>'-'</b>: Solid line style</p>
-<p>
-                                                                            <b>'--'</b>: Dashed line style</p>
-<p>
-                                                                                <b>'-.'</b>: Dot-Dash-Dot-Dash line style</p>
-<p>
-                                                                                    <b>':'</b>: Dotted line style</p>
-<p></p>
+<div class="table-wrapper"><table><thead><tr><th>Style</th><th>Description</th></tr></thead><tbody>
+<tr><td>'-'</td><td>Solid line style</td></tr>
+<tr><td>'--'</td><td>Dashed line style</td></tr>
+<tr><td>'-.'</td><td>Dot-Dash-Dot-Dash line style</td></tr>
+<tr><td>':'</td><td>Dotted line style</td></tr>
+</tbody></table>
+</div><p></p>
 <p>The ColorSpec specifies the line color to use for each data series:</p>
-<p>
-                                                                                        <b>'k'</b>: Color Black</p>
-<p>
-                                                                                            <b>'y'</b>: Color Yellow</p>
-<p>
-                                                                                                <b>'m'</b>: Color Magenta</p>
-<p>
-                                                                                                    <b>'c'</b>: Color Cyan</p>
-<p>
-                                                                                                        <b>'r'</b>: Color Red</p>
-<p>
-                                                                                                            <b>'b'</b>: Color Blue</p>
-<p>
-                                                                                                                <b>'g'</b>: Color Green</p>
-<p></p>
-<p>see <b>line</b> for more information about properties</p>
+<div class="table-wrapper"><table><thead><tr><th>Color</th><th>Description</th></tr></thead><tbody>
+<tr><td>'k'</td><td>Color Black</td></tr>
+<tr><td>'y'</td><td>Color Yellow</td></tr>
+<tr><td>'m'</td><td>Color Magenta</td></tr>
+<tr><td>'c'</td><td>Color Cyan</td></tr>
+<tr><td>'r'</td><td>Color Red</td></tr>
+<tr><td>'b'</td><td>Color Blue</td></tr>
+<tr><td>'g'</td><td>Color Green</td></tr>
+</tbody></table>
+</div><p></p>
+<p>see line for more information about properties</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <p>Default abscissae using indices:</p>
 <pre><code class="language-matlab">f = figure()

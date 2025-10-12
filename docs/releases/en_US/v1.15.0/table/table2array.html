@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="table2array"><a class="header" href="#table2array">table2array</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="table2array"><a class="header" href="#table2array">table2array</a></h1>
 <p>Convert table to homogeneous array.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,9 +172,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>A = table2array(T)</b> converts the input table <b>T</b> into a homogeneous array <b>A</b>, where the variables in <b>T</b> become the columns of <b>A</b>.</p>
-<p>The output <b>A</b> does not retain the table properties from <b>T.Properties</b>.</p>
-<p>If <b>T</b> is a table with row names, these row names will not be included in <b>A</b>.</p>
+            A = table2array(T) converts the input table T into a homogeneous array A, where the variables in T become the columns of A.</p>
+<p>The output A does not retain the table properties from T.Properties.</p>
+<p>If T is a table with row names, these row names will not be included in A.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = magic(6);
 T = array2table(A);

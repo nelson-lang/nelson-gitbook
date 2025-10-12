@@ -3,11 +3,17 @@
 ## Description
 
 <p>You can perform calculations directly on tableswithout needing to index into them.</p>
+
 <p>To perform such operations using the same syntax as you would for arrays, your tables must meet several criteria:</p>
+
 <p>All variables within the table must have data types that support the intended calculations (e.g., numeric or logical types).</p>
+
 <p>When performing an operation where only one operand is a table, the other operand must be either a numeric or logical array.</p>
+
 <p>For operations involving two tables, they must have compatible sizes (i.e., the same number of rows and columns or the operation must make sense for the structures involved).</p>
+
 <p></p>
+
 <p>Below is an example that demonstrates how to perform calculations without explicitly indexing into the table.</p>
 
 ## Example

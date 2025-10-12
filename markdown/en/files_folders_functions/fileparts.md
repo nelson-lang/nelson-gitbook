@@ -22,7 +22,7 @@ Returns the path, filename and extension of a file path.
 ## Description
 
 <p>
-            <b>[p ,f, e] = fileparts(fullpath)</b> splits in its three parts: path, filename, extension including the dot.</p>
+            [p ,f, e] = fileparts(fullpath) splits in its three parts: path, filename, extension including the dot.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ creates an string of blank characters.
 
 ## Description
 
-<b>blanks</b>creates an string of blank characters.
+        blanks creates an string of blank characters.
 
 ## Example
 

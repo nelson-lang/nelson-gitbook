@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>graphics</module>
+    <section name="Fonctions graphiques">
+      <chapter_description>
+        <p>Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques,
+            figures, palettes de couleurs et objets graphiques.</p>
+        <p>Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et
+            des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.</p>
+    </chapter_description>
+      <keyword name="abyss" link="abyss.md" description="Palette de couleurs abyss."/>
+      <keyword name="ancestor" link="ancestor.md" description="Ancêtre d'un objet graphique."/>
+      <keyword name="autumn" link="autumn.md" description="Palette de couleurs autumn."/>
+      <keyword name="axes" link="axes.md" description="Créer des axes cartésiens."/>
+      <keyword name="axis" link="axis.md" description="Définit les limites et les rapports d'aspect des axes."/>
+      <keyword name="bar" link="bar.md" description="Diagramme en barres."/>
+      <keyword name="bone" link="bone.md" description="Palette de couleurs bone."/>
+      <keyword name="cla" link="cla.md" description="Efface les axes."/>
+      <keyword name="clf" link="clf.md" description="Efface la figure."/>
+      <keyword name="clim" link="clim.md" description="Définit les limites de la palette de couleurs."/>
+      <keyword name="close" link="close.md" description="Ferme une ou plusieurs figures"/>
+      <keyword name="colorbar" link="colorbar.md" description="Barre de couleur affichant l'échelle des couleurs."/>
+      <keyword name="colormap" link="colormap.md" description="Afficher et définir la palette de couleurs courante."/>
+      <keyword name="colormaplist" link="colormaplist.md" description="Fournit la liste des palettes de couleurs."/>
+      <keyword name="colstyle" link="colstyle.md" description="Analyse la couleur et le style à partir d'une chaîne."/>
+      <keyword name="contour" link="contour.md" description="Tracé de contours d'une matrice"/>
+      <keyword name="contour3" link="contour3.md" description="Tracé de contours 3D d'une matrice"/>
+      <keyword name="cool" link="cool.md" description="Palette de couleurs cool."/>
+      <keyword name="copper" link="copper.md" description="Palette de couleurs copper."/>
+      <keyword name="cylinder" link="cylinder.md" description="Créer un cylindre."/>
+      <keyword name="drawnow" link="drawnow.md" description="Met à jour les figures et traite les callbacks"/>
+      <keyword name="figure" link="figure.md" description="Crée une fenêtre figure."/>
+      <keyword name="fill" link="fill.md" description="Créer des formes 2D remplies."/>
+      <keyword name="flag" link="flag.md" description="Palette de couleurs flag."/>
+      <keyword name="frame2im" link="frame2im.md" description="Récupère les données d'image d'une image vidéo."/>
+      <keyword name="gca" link="gca.md" description="Récupère l'objet axes courant."/>
+      <keyword name="gcf" link="gcf.md" description="Récupère l'objet figure courant."/>
+      <keyword name="getframe" link="getframe.md" description="Capture une figure ou des axes comme image vidéo."/>
+      <keyword name="Gestion des interruptions de callback dans Nelson" link="graphical_callback.md" description=""/>
+      <keyword name="gray" link="gray.md" description="Palette de couleurs gray."/>
+      <keyword name="grid" link="grid.md" description="Afficher ou masquer les lignes de grille des axes."/>
+      <keyword name="groot" link="groot.md" description="Objet racine graphique."/>
+      <keyword name="hggroup" link="hggroup.md" description="Créer un objet groupe."/>
+      <keyword name="hist" link="hist.md" description="Tracé d'histogramme."/>
+      <keyword name="hold" link="hold.md" description="Conserver le tracé courant lors de l'ajout de nouveaux tracés."/>
+      <keyword name="hot" link="hot.md" description="Palette de couleurs hot."/>
+      <keyword name="im2frame" link="im2frame.md" description="Convertit une image en image de film."/>
+      <keyword name="image" link="image.md" description="Affiche une image à partir d'un tableau."/>
+      <keyword name="imagesc" link="imagesc.md" description="Affiche une image à partir d'un tableau avec des couleurs mises à l'échelle."/>
+      <keyword name="imshow" link="imshow.md" description="Affiche une image."/>
+      <keyword name="is2D" link="is2D.md" description="Vérifie si ax est un axe 2D polaire ou cartésien."/>
+      <keyword name="isValidGraphicsProperty" link="isValidGraphicsProperty.md" description="Vérifie si le nom de propriété est valide."/>
+      <keyword name="isgraphics" link="isgraphics.md" description="Vérifie si l'objet est graphique."/>
+      <keyword name="ishold" link="ishold.md" description="Obtient l'état actuel du mode hold."/>
+      <keyword name="jet" link="jet.md" description="Tableau de palette de couleurs jet."/>
+      <keyword name="legend" link="legend.md" description="Ajoute une légende aux axes."/>
+      <keyword name="line" link="line.md" description="Crée une ligne primitive."/>
+      <keyword name="loglog" link="loglog.md" description="Tracé en échelle log-log."/>
+      <keyword name="mesh" link="mesh.md" description="Tracé de surface en maillage (mesh)."/>
+      <keyword name="meshz" link="meshz.md" description="Tracé de surface en maillage (mesh) avec rideau."/>
+      <keyword name="movie" link="movie.md" description="Jouer des séquences d'images enregistrées (movie)."/>
+      <keyword name="nebula" link="nebula.md" description="Palette de couleurs Nebula."/>
+      <keyword name="newplot" link="newplot.md" description="Préparer la création d'un nouveau graphique."/>
+      <keyword name="pan" link="pan.md" description="Activer le mode déplacement (pan)."/>
+      <keyword name="parula" link="parula.md" description="Palette de couleurs Parula."/>
+      <keyword name="patch" link="patch.md" description="Créer des patchs de polygones colorés"/>
+      <keyword name="pcolor" link="pcolor.md" description="Graphique en pseudo-couleurs."/>
+      <keyword name="pie" link="pie.md" description="Ancien graphique en secteurs (camembert)."/>
+      <keyword name="pink" link="pink.md" description="Palette de couleurs Pink."/>
+      <keyword name="plot" link="plot.md" description="Tracé linéaire 2D."/>
+      <keyword name="plot3" link="plot3.md" description="Tracé de courbe 3D."/>
+      <keyword name="prism" link="prism.md" description="Palette de couleurs Prism."/>
+      <keyword name="quiver" link="quiver.md" description="Tracé de champ de vecteurs."/>
+      <keyword name="refresh" link="refresh.md" description="Rafraîchir la figure courante."/>
+      <keyword name="rgbplot" link="rgbplot.md" description="Tracer une palette de couleurs."/>
+      <keyword name="ribbon" link="ribbon.md" description="Graphique en ruban."/>
+      <keyword name="rotate3d" link="rotate3d.md" description="Activer le mode rotation."/>
+      <keyword name="scatter" link="scatter.md" description="Nuage de points."/>
+      <keyword name="scatter3" link="scatter3.md" description="Nuage de points 3D."/>
+      <keyword name="semilogx" link="semilogx.md" description="Graphique semi-logarithmique (axe x en échelle logarithmique)."/>
+      <keyword name="semilogy" link="semilogy.md" description="Graphique semi-logarithmique (axe y en échelle logarithmique)."/>
+      <keyword name="sky" link="sky.md" description="Table de couleurs 'sky'."/>
+      <keyword name="sphere" link="sphere.md" description="Créer une sphère."/>
+      <keyword name="spring" link="spring.md" description="Table de couleurs 'spring'."/>
+      <keyword name="spy" link="spy.md" description="Visualiser le motif de parcimonie d'une matrice."/>
+      <keyword name="stairs" link="stairs.md" description="Graphique en escalier."/>
+      <keyword name="stem" link="stem.md" description="Tracer des données discrètes."/>
+      <keyword name="subplot" link="subplot.md" description="Créer des axes en positions mosaïques."/>
+      <keyword name="summer" link="summer.md" description="Table de couleurs 'summer'."/>
+      <keyword name="surf" link="surf.md" description="tracé de surface."/>
+      <keyword name="surface" link="surface.md" description="Tracé de surface primitif."/>
+      <keyword name="text" link="text.md" description="crée des descriptions textuelles pour les points de données."/>
+      <keyword name="title" link="title.md" description="Ajouter un titre."/>
+      <keyword name="turbo" link="turbo.md" description="Tableau de couleurs Turbo."/>
+      <keyword name="uicontrol" link="uicontrol.md" description="Créer un composant d'interface utilisateur."/>
+      <keyword name="validatecolor" link="validatecolor.md" description="Valider les valeurs de couleur."/>
+      <keyword name="view" link="view.md" description="Ligne de visée de la caméra."/>
+      <keyword name="viridis" link="viridis.md" description="Tableau de couleurs Viridis."/>
+      <keyword name="waitfor" link="waitfor.md" description="Attendre une condition."/>
+      <keyword name="waitforbuttonpress" link="waitforbuttonpress.md" description="Attendre un clic ou une pression sur une touche."/>
+      <keyword name="waterfall" link="waterfall.md" description="graphique en cascade."/>
+      <keyword name="white" link="white.md" description="tableau de colormap blanc."/>
+      <keyword name="winter" link="winter.md" description="Tableau de colormap hiver."/>
+      <keyword name="xlabel" link="xlabel.md" description="Étiquette de l'axe des x."/>
+      <keyword name="xlim" link="xlim.md" description="définir ou obtenir les limites de l'axe des x."/>
+      <keyword name="ylabel" link="ylabel.md" description="Étiquette de l'axe des y."/>
+      <keyword name="ylim" link="ylim.md" description="définir ou obtenir les limites de l'axe des y."/>
+      <keyword name="zlabel" link="zlabel.md" description="Étiquette de l'axe des z."/>
+      <keyword name="zlim" link="zlim.md" description="définir ou obtenir les limites de l'axe des z."/>
+      <keyword name="zoom" link="zoom.md" description="Activer le mode zoom."/>
+    </section>
+  </toc>
+</help_summary>

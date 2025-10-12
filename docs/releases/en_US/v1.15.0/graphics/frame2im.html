@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="frame2im"><a class="header" href="#frame2im">frame2im</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="frame2im"><a class="header" href="#frame2im">frame2im</a></h1>
 <p>Retrieve image data from a movie frame.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,9 +175,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>RGB = frame2im(F)</b> extracts the truecolor (RGB) image from the movie frame <b>F</b>.</p>
+            RGB = frame2im(F) extracts the truecolor (RGB) image from the movie frame F.</p>
 <p>
-                <b>[X, map] = frame2im(F)</b> retrieves the indexed image <b>X</b> and its corresponding colormap map from the movie frame <b>F</b>.</p>
+                [X, map] = frame2im(F) retrieves the indexed image X and its corresponding colormap map from the movie frame F.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = figure();
 s = surf(peaks);

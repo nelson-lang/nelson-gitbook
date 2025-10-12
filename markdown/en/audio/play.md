@@ -16,7 +16,7 @@ Plays an audioplayer object.
 
 ## Description
 
-<b>play</b>plays an audioplayer object.
+        play plays an audioplayer object.
 
 ## Example
 

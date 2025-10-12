@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="mex"><a class="header" href="#mex">mex</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="mex"><a class="header" href="#mex">mex</a></h1>
 <p>Build MEX function</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -185,24 +186,24 @@
 <p></p>
 <p>PREDEFINED C MACRO:</p>
 <p>
-            <b>MX_IS_NELSON</b> macro is defined to easily detect if Nelson is used in C code.</p>
+            MX_IS_NELSON macro is defined to easily detect if Nelson is used in C code.</p>
 <p>
-                <b>MX_HAS_INTERLEAVED_COMPLEX</b> macro is defined if C MEX API used is '-R2018a'.</p>
+                MX_HAS_INTERLEAVED_COMPLEX macro is defined if C MEX API used is '-R2018a'.</p>
 <p></p>
 <p>Supported options: compilation or link.</p>
 <p>
-                    <b>CFLAGS=</b>
+                    CFLAGS=
                 </p>
 <p>
-                    <b>-D</b> The -D option defines C preprocessor macro.</p>
+                    -D The -D option defines C preprocessor macro.</p>
 <p>
-                        <b>-U</b> The -U option undefines C preprocessor macro</p>
+                        -U The -U option undefines C preprocessor macro</p>
 <p>
-                            <b>-I</b> Adds pathname to the list of folders to search for #include files.</p>
+                            -I Adds pathname to the list of folders to search for #include files.</p>
 <p>
-                                <b>-l</b> Links with dynamic object library .lib, .so or .dylib.</p>
+                                -l Links with dynamic object library .lib, .so or .dylib.</p>
 <p>
-                                    <b>-g</b> Used for debugging (Debug configuration).</p>
+                                    -g Used for debugging (Debug configuration).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">
 		edit([modulepath('mex', 'tests'), '/test_engine.m'])

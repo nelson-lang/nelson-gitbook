@@ -13,7 +13,7 @@ Get available ActiveX controls.
 ## Description
 
 <p>
-            <b>l = actxcontrollist()</b> returns list of available controls</p>
+            l = actxcontrollist() returns list of available controls</p>
 
 ## Example
 

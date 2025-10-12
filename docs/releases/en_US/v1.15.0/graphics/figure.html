@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="figure"><a class="header" href="#figure">figure</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="figure"><a class="header" href="#figure">figure</a></h1>
 <p>Creates an figure window.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -179,72 +180,43 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>figure</b> creates figure.</p>
+                        figure creates figure.</p>
 <p>Clicking on an figure automatically sets it as the current figure object.</p>
 <p></p>
 <p>
-                <b>Properties</b>:</p>
-<p></p>
-<p>
-                    <b>AlphaMap</b>: Transparency map for Axes content.</p>
-<p>
-                        <b>Children</b>: Children of figure: empty array (default) or 1-D array of objects.</p>
-<p>
-                            <b>Color</b>: Background color [R, G, B] or string (example: 'blue') or hexadecimal color code ('#FFAA00').</p>
-<p>
-                                <b>Colormap</b>: Color map for axes content of figure: m-by-3 array of RGB triplets, parula (default).</p>
-<p>
-                                    <b>CurrentAxes</b>: Target axes in current figure: Axes object.</p>
-<p>
-                                        <b>DevicePixelRatio</b>: ratio between physical pixels and device-independent pixels for the figure. Common values are 1.0 on normal displays and 2.0 on Apple "retina" displays.</p>
-<p>
-                                            <b>Name</b>: Name (default '').</p>
-<p>
-                                                <b>GraphicsSmoothing</b>: GraphicsSmoothing (default 'on').</p>
-<p>
-                                                    <b>MenuBar</b>:  Figure menu bar display: 'none' or 'figure' (default).</p>
-<p>
-                                                        <b>NextPlot</b>: Directive on how to add next plot: 'new', 'replace', 'replacechildren' or 'add' (default).</p>
-<p>
-                                                            <b>Number</b>: Figure Number.</p>
-<p>
-                                                                <b>NumberTitle</b>: Use number title: 'off' or 'on' (default).</p>
-<p>
-                                                                    <b>Parent</b>: Figure parent: root graphics object.</p>
-<p>
-                                                                        <b>Position</b>: Location and size of drawable area: [left, bottom, width, height]</p>
-<p>'width' and 'height' define the size of the window. 'left' and 'bottom' define the position of the first addressable pixel in the lower left corner of the window</p>
-<p>
-                                                                            <b>Resize</b>: Resize figure: 'on' or 'off' (default).</p>
-<p>
-                                                                                <b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
-<p>
-                                                                                    <b>ToolBar</b>:  Figure toolbar display: 'none', 'auto' (default), 'figure'.</p>
-<p>
-                                                                                        <b>Type</b>: Type 'figure'.</p>
-<p>
-                                                                                            <b>UserData</b>: User data: array or [] (default).</p>
-<p>
-                                                                                                <b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
-<p>
-                                                                                                    <b>DrawLater</b>: is used to delay a huge succession of graphics commands (implying several drawings or redrawings): 'on' or 'off' (default).</p>
-<p>
-                                                                                                        <b>CloseRequestFcn</b>:  Close request callback: function handle, cell array, character vector with 'closereq' (default).</p>
-<p>
-                                                                                                            <b>CreateFcn</b> Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-<p>
-                                                                                                                <b>DeleteFcn</b> Callback (function handle, string or cell) called when object is deleted.</p>
-<p>
-                                                                                                                    <b>KeyPressFcn</b> Callback (function handle, string or cell) called when a key is pressed while the figure has the focus.</p>
-<p>
-                                                                                                                        <b>KeyReleaseFcn</b> Callback (function handle, string or cell) called when a key is released while the figure has the focus.</p>
-<p>
-                                                                                                                            <b>ButtonDownFcn</b> Callback (function handle, string or cell) called when a mouse button is pressed while the figure has the focus.</p>
-<p>
-                                                                                                                                <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-<p>
-                                                                                                                                    <b>WindowState</b> Flag indicating that the Window state: 'normal', 'minimized', 'maximized', 'fullscreen'.</p>
+                        Properties:</p>
+<div class="table-wrapper"><table><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody>
+<tr><td>AlphaMap</td><td>Transparency map for Axes content.</td></tr>
+<tr><td>Children</td><td>Children of figure: empty array (default) or 1-D array of objects.</td></tr>
+<tr><td>Color</td><td>Background color [R, G, B] or string (example: 'blue') or hexadecimal color code ('#FFAA00').</td></tr>
+<tr><td>Colormap</td><td>Color map for axes content of figure: m-by-3 array of RGB triplets, parula (default).</td></tr>
+<tr><td>CurrentAxes</td><td>Target axes in current figure: Axes object.</td></tr>
+<tr><td>DevicePixelRatio</td><td>ratio between physical pixels and device-independent pixels for the figure. Common values are 1.0 on normal displays and 2.0 on Apple "retina" displays.</td></tr>
+<tr><td>Name</td><td>Name (default '').</td></tr>
+<tr><td>GraphicsSmoothing</td><td>GraphicsSmoothing (default 'on').</td></tr>
+<tr><td>MenuBar</td><td>Figure menu bar display: 'none' or 'figure' (default).</td></tr>
+<tr><td>NextPlot</td><td>Directive on how to add next plot: 'new', 'replace', 'replacechildren' or 'add' (default).</td></tr>
+<tr><td>Number</td><td>Figure Number.</td></tr>
+<tr><td>NumberTitle</td><td>Use number title: 'off' or 'on' (default).</td></tr>
+<tr><td>Parent</td><td>Figure parent: root graphics object.</td></tr>
+<tr><td>Position</td><td>Location and size of drawable area: [left, bottom, width, height]. 'width' and 'height' define the size of the window. 'left' and 'bottom' define the position of the first addressable pixel in the lower left corner of the window</td></tr>
+<tr><td>Resize</td><td>Resize figure: 'on' or 'off' (default).</td></tr>
+<tr><td>Tag</td><td>Object identifier: string scalar, character vector, '' (default).</td></tr>
+<tr><td>ToolBar</td><td>Figure toolbar display: 'none', 'auto' (default), 'figure'.</td></tr>
+<tr><td>Type</td><td>Type 'figure'.</td></tr>
+<tr><td>UserData</td><td>User data: array or [] (default).</td></tr>
+<tr><td>Visible</td><td>State of visibility: 'off' or 'on' (default).</td></tr>
+<tr><td>DrawLater</td><td>is used to delay a huge succession of graphics commands (implying several drawings or redrawings): 'on' or 'off' (default).</td></tr>
+<tr><td>CloseRequestFcn</td><td>Close request callback: function handle, cell array, character vector with 'closereq' (default).</td></tr>
+<tr><td>CreateFcn</td><td>Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.</td></tr>
+<tr><td>DeleteFcn</td><td>Callback (function handle, string or cell) called when object is deleted.</td></tr>
+<tr><td>KeyPressFcn</td><td>Callback (function handle, string or cell) called when a key is pressed while the figure has the focus.</td></tr>
+<tr><td>KeyReleaseFcn</td><td>Callback (function handle, string or cell) called when a key is released while the figure has the focus.</td></tr>
+<tr><td>ButtonDownFcn</td><td>Callback (function handle, string or cell) called when a mouse button is pressed while the figure has the focus.</td></tr>
+<tr><td>BeingDeleted</td><td>Flag indicating that the object is being deleted.</td></tr>
+<tr><td>WindowState</td><td>Flag indicating that the Window state: 'normal', 'minimized', 'maximized', 'fullscreen'.</td></tr>
+</tbody></table>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = figure(1)
 g = figure(2)
@@ -259,8 +231,10 @@ figure('Name', 'Hello')
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>
-<tr><td>1.2.0</td><td>Clicking on an figure automatically sets it as the current figure object.</td></tr>
-<tr><td>1.7.0</td><td>CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn callback added.</td></tr>
+<tr><td>1.2.0</td><td>Clicking on an figure automatically sets it as the</td></tr>
+<tr><td>current figure object.</td><td></td></tr>
+<tr><td>1.7.0</td><td>CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn,</td></tr>
+<tr><td>KeyReleaseFcn, ButtonDownFcn callback added.</td><td></td></tr>
 <tr><td>--</td><td>BeingDeleted property added.</td></tr>
 <tr><td>1.8.0</td><td>Resize property added.</td></tr>
 <tr><td>1.13.0</td><td>DevicePixelRatio property added.</td></tr>

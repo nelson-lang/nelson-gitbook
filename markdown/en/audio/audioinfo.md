@@ -17,7 +17,8 @@ Get audio file information.
 ## Description
 
 <p>
-            <b>audioinfo</b> returns a structure with information about audio file.</p>
+            audioinfo returns a structure with information about audio file.</p>
+
 <p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
 
 ## Example

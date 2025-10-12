@@ -20,45 +20,61 @@ Display format and number printing.
 ## Description
 
 <p>
-            <b>format(new_style)</b> changes the display format and number printing of the current session.</p>
+            format(new_style) changes the display format and number printing of the current session.</p>
+
 <p>
-                <b>format('default')</b> will reset to default format (short, loose).</p>
+                format('default') will reset to default format (short, loose).</p>
+
 <p></p>
+
 <p>Styles supported:</p>
+
 <p>
-                    <b>short</b>
+                    short
                 </p>
+
 <p>
-                    <b>long</b>
+                    long
                 </p>
+
 <p>
-                    <b>shortE</b>
+                    shortE
                 </p>
+
 <p>
-                    <b>longE</b>
+                    longE
                 </p>
+
 <p>
-                    <b>shortEng</b>
+                    shortEng
                 </p>
+
 <p>
-                    <b>longEng</b>
+                    longEng
                 </p>
+
 <p>
-                    <b>plus</b>
+                    plus
                 </p>
+
 <p>
-                    <b>rational</b>
+                    rational
                 </p>
+
 <p>
-                    <b>hex</b>
+                    hex
                 </p>
+
 <p></p>
+
 <p>Line Spacing Format supported:</p>
+
 <p>
-                    <b>loose</b>
+                    loose
                 </p>
+
 <p>
-                    <b>compact</b>
+                    compact
                 </p>
 
 ## Example

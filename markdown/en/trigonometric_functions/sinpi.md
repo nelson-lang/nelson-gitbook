@@ -17,9 +17,11 @@ Computes sin(X \* pi) accurately.
 ## Description
 
 <p>
-            <b>res = sinpi(x)</b> computes <b>sin(x * pi)</b> accurately.</p>
-<p>For odd integers, <b>sinpi(x / 2)</b> is +1 or -1.</p>
-<p>For integers, <b>sinpi(x)</b> is exactly zero.</p>
+            res = sinpi(x) computes sin(x * pi) accurately.</p>
+
+<p>For odd integers, sinpi(x / 2) is +1 or -1.</p>
+
+<p>For integers, sinpi(x) is exactly zero.</p>
 
 ## Example
 

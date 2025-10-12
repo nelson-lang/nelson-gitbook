@@ -9,7 +9,7 @@ Update figures and process callbacks
 ## Description
 
 <p>
-            <b>drawnow</b> flushes the event queue and updates the figure window.</p>
+            drawnow flushes the event queue and updates the figure window.</p>
 
 ## Example
 

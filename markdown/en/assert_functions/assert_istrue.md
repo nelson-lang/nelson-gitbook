@@ -13,43 +13,73 @@ Check that condition is true.
 
 ## Input argument
 
-- x - a logical value
-- err_msg - a string, the error message to be printed in case of failure (optional).
+- x - a logical value to be tested for truthfulness.
+- err_msg - a string containing the custom error message to display in case of assertion failure (optional).
 
 ## Output argument
 
-- res - a logical value
-- msg - a string value, the error message. If x == true, then msg == ''. If x == false, then msg contains the error message.
+- r - a logical value: true if the assertion passes, false otherwise.
+- msg - a string containing the error message. If x == true, then msg == ''. If x == false, then msg contains the assertion failure message.
 
 ## Description
 
-Raises an error if x is false. Raises an error if x is not a logical.
+<p>assert_istrue raises an error if the input value is false.</p>
+
+<p>This function also raises an error if the input is not a logical value, ensuring type safety.</p>
+
+<p>When the optional err_msg parameter is provided, it will be used as the error message instead of the default message when the assertion fails.</p>
+
+<p>This function is essential in unit testing to verify that conditions are true or that logical operations return the expected true result.</p>
 
 ## Examples
+
+Test that passes (3 equals 3 is true):
 
 ```matlab
 assert_istrue(3 == 3)
 ```
 
+Test that demonstrates assertion failure (3 equals 4 is false):
+
 ```matlab
-assert_istrue(3 == 4)
+try
+    assert_istrue(3 == 4)
+catch ME
+    disp(['Error: ' ME.message])
+end
 ```
+
+Test with explicit false value to show failure:
 
 ```matlab
 r = assert_istrue(false)
 ```
 
+Using return values to handle assertion results:
+
 ```matlab
 [r, msg] = assert_istrue(false)
 ```
 
+Test with custom error message:
+
 ```matlab
-[r, msg] = assert_istrue(3 == 4, 'your error message.')
+[r, msg] = assert_istrue(3 == 4, 'your error message.');
+if ~r
+    disp(['Custom error: ' msg])
+end
+```
+
+Example showing successful assertion with true value:
+
+```matlab
+assert_istrue(true);
+disp('Assertion passed!')
 ```
 
 ## See also
 
-[assert_isfalse](../assert_functions/assert_isfalse.md), [assert_checkerror](../assert_functions/assert_checkerror.md).
+[assert_isfalse](../assert_functions/assert_isfalse.md), [assert_checkerror](../assert_functions/assert_checkerror.md), [assert_isequal](../assert_functions/assert_isequal.md).
 
 ## History
 

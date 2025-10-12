@@ -18,7 +18,7 @@ Matrix polynomial evaluation.
 ## Description
 
 <p>
-            <b>polyvalm</b> evaluates matrix polynomial.</p>
+            polyvalm evaluates matrix polynomial.</p>
 
 ## Example
 

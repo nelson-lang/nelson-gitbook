@@ -15,7 +15,7 @@ Assignin value to a variable in a specified variables scope.
 ## Description
 
 <p>
-            <b>assignin</b> assign value to a variable in a specified variables scope.</p>
+            assignin assign value to a variable in a specified variables scope.</p>
 
 ## Example
 

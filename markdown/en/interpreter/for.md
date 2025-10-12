@@ -10,9 +10,10 @@ for loop.
 ## Description
 
 <p>
-            <b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.</p>
+            for loop executes a set of statements with an index variable looping through each element in a vector.</p>
+
 <p>
-                <b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
+                parfor is currently an alias on for keyword.</p>
 
 ## Examples
 

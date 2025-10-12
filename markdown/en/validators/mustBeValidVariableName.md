@@ -16,7 +16,7 @@ Checks that value is valid variable name or raise an error.
 ## Description
 
 <p>
-            <b>mustBeValidVariableName</b> checks that value is valid variable name or raise an error.</p>
+            mustBeValidVariableName checks that value is valid variable name or raise an error.</p>
 
 ## Example
 

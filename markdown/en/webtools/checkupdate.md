@@ -25,7 +25,8 @@ Check update for Nelson's application
 ## Description
 
 <p>
-            <b>checkupdate</b> checks if a new version of Nelson is available and opens a URL to download it.</p>
+            checkupdate checks if a new version of Nelson is available and opens a URL to download it.</p>
+
 <p>This function is primarily used through the menu action available in the main window's help section.</p>
 
 ## Example

@@ -24,12 +24,14 @@ Create cell array of empty matrices.
 ## Description
 
 <p>
-            <b>cell</b> returns a cell array of empty matrices.</p>
+            cell returns a cell array of empty matrices.</p>
+
 <p>
-                <b>cell()</b> is equivalent to <b>cell(0)</b>
+                cell() is equivalent to cell(0)
             </p>
+
 <p>
-                <b>cell(A)</b> with A a string array converts to cell.</p>
+                cell(A) with A a string array converts to cell.</p>
 
 ## Examples
 

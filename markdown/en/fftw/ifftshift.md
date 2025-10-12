@@ -19,7 +19,7 @@ inverse of fftshift
 ## Description
 
 <p>
-            <b>fftshift(X)</b> computes the inverse <b>fftshift</b>.</p>
+            fftshift(X) computes the inverse fftshift.</p>
 
 ## Example
 

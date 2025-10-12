@@ -17,7 +17,7 @@ Parse a string.
 ## Description
 
 <p>
-            <b>parsestring</b> parse a string and returns if it is a valid script, a valid function or an error.</p>
+            parsestring parse a string and returns if it is a valid script, a valid function or an error.</p>
 
 ## Example
 

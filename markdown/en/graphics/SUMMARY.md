@@ -66,7 +66,6 @@
   - [rgbplot](rgbplot.md)
   - [ribbon](ribbon.md)
   - [rotate3d](rotate3d.md)
-  - [saveas](saveas.md)
   - [scatter](scatter.md)
   - [scatter3](scatter3.md)
   - [semilogx](semilogx.md)

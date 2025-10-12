@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="isnumeric"><a class="header" href="#isnumeric">isnumeric</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="isnumeric"><a class="header" href="#isnumeric">isnumeric</a></h1>
 <p>Return true if variable var is a numeric array.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,27 +171,30 @@
 <li>res - a logical: true or false</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>isnumeric</b>returns a logical 1 if the argument is a numeric array and a logical 0 otherwise.<p>List of numeric types:</p></p>
+<pre><code>    isnumeric returns a logical 1 if the argument is a numeric array and a logical 0
+    otherwise.
+</code></pre>
+<p>List of numeric types:</p>
 <p>
-            <b>single</b> : single precision</p>
+            single : single precision</p>
 <p>
-                <b>double</b> : double precision</p>
+            double : double precision</p>
 <p>
-                    <b>int8</b>   : 8 bit signed integer</p>
+            int8 : 8 bit signed integer</p>
 <p>
-                        <b>int16</b>  : 16 bit signed integer</p>
+            int16 : 16 bit signed integer</p>
 <p>
-                            <b>int32</b>  : 32 bit signed integer</p>
+            int32 : 32 bit signed integer</p>
 <p>
-                                <b>int64</b>  : 64 bit signed integer</p>
+            int64 : 64 bit signed integer</p>
 <p>
-                                    <b>uint8</b>  : 8 bit unsigned integer</p>
+            uint8 : 8 bit unsigned integer</p>
 <p>
-                                        <b>uint16</b> : 16 bit unsigned integer</p>
+            uint16 : 16 bit unsigned integer</p>
 <p>
-                                            <b>uint32</b> : 32 bit unsigned integer</p>
+            uint32 : 32 bit unsigned integer</p>
 <p>
-                                                <b>uint64</b> : 64 bit unsigned integer</p>
+            uint64 : 64 bit unsigned integer</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">A = 1;
 res = isnumeric(A)

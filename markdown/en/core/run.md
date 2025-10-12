@@ -21,7 +21,7 @@ Executes a script file (.m).
 ## Description
 
 <p>
-            <b>run(script_file)</b> executes a Nelson's script file (.m file extension).</p>
+            run(script_file) executes a Nelson's script file (.m file extension).</p>
 
 ## Examples
 

@@ -13,7 +13,7 @@ Copy plot to clipboard.
 ## Description
 
 <p>
-            <b>copygraphics</b> copy figure to clipboard.</p>
+            copygraphics copy figure to clipboard.</p>
 
 ## Example
 

@@ -26,10 +26,12 @@ Bode plot of frequency response, magnitude and phase data.
 ## Description
 
 <p>
-            <b>bode(sys)</b> generates a Bode plot illustrating the frequency response of a dynamic system model, denoted as <b>sys.</b>
+            bode(sys) generates a Bode plot illustrating the frequency response of a dynamic system model, denoted as sys.
         </p>
+
 <p>This plot visually represents the system's response in terms of both magnitude (measured in decibels, dB) and phase (measured in degrees) across varying frequencies.</p>
-<p>The specific frequency points on the plot are automatically determined by <b>bode</b> based on the system's inherent dynamics.</p>
+
+<p>The specific frequency points on the plot are automatically determined by bode based on the system's inherent dynamics.</p>
 
 ## Example
 

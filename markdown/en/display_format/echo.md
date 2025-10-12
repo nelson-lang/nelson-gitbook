@@ -21,8 +21,9 @@ Controls the echoing during their execution.
 ## Description
 
 <p>
-            <b>echo('off')</b> disable echo mode.</p>
-<p>Without input and output arguments, <b>echo</b> toggles the current echo state.</p>
+            echo('off') disable echo mode.</p>
+
+<p>Without input and output arguments, echo toggles the current echo state.</p>
 
 ## Example
 

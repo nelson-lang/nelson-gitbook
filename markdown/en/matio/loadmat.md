@@ -21,7 +21,7 @@ load data from .mat file into Nelson's workspace.
 ## Description
 
 <p>
-            <b>loadmat</b> loads data from .mat file to Nelson's workspace.</p>
+            loadmat loads data from .mat file to Nelson's workspace.</p>
 
 ## Bibliography
 

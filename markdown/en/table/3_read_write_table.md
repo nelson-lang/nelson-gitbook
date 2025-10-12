@@ -3,9 +3,22 @@
 ## Description
 
 <p>Nelson provides extensive capabilities for reading and writing tables to files, supporting both text-based and binary storage formats to meet different data management needs.</p>
+
 <p>Text files (.csv, .txt, etc.):</p>
-writetable() exports tables to delimited text files with customizable separators readtable() imports tables from delimited text files with automatic format detection Text files preserve variable names and data in human-readable format<p>Binary file:</p>
-Nelson HDF5 format (.nh5): Efficient binary storage using HDF5 format Preserves all table metadata and data types Use save -nh5 and load commands<p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
+
+            writetable() exports tables to delimited text files with customizable separators
+            readtable() imports tables from delimited text files with automatic format detection
+            Text files preserve variable names and data in human-readable format
+
+<p>Binary file:</p>
+
+            Nelson HDF5 format (.nh5):
+
+                Efficient binary storage using HDF5 format
+                Preserves all table metadata and data types
+                Use save -nh5 and load commands
+
+<p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
 
 ## Examples
 

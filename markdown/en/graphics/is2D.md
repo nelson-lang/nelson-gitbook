@@ -17,7 +17,7 @@ Checks if ax is a 2-D Polar or Cartesian axes.
 ## Description
 
 <p>
-            <b>is2D</b> returns Checks if ax is a 2-D Polar or Cartesian axes.</p>
+            is2D returns Checks if ax is a 2-D Polar or Cartesian axes.</p>
 
 ## Example
 

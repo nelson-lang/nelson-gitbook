@@ -17,7 +17,7 @@ Strings comparaison.
 
 ## Description
 
-<b>strcmp</b>compares two strings.
+        strcmp compares two strings.
 
 ## Example
 

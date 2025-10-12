@@ -19,8 +19,10 @@ Read the stopwatch timer.
 
 ## Description
 
-<p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
+<p>The sequence of commands tic(); commands ; t = toc()returns the number of seconds required for the commands.</p>
+
 <p>Consecutive calls to the toc function with no input return the elapsed since the most recent tic.</p>
+
 <p>Consecutive calls to the toc function with the same timerVal input return the elapsed time since the tic function call that corresponds to that input.</p>
 
 ## Example

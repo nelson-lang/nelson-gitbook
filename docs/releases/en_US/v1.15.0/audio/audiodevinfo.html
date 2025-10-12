@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="audiodevinfo"><a class="header" href="#audiodevinfo">audiodevinfo</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="audiodevinfo"><a class="header" href="#audiodevinfo">audiodevinfo</a></h1>
 <p>Get audio devices information.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -185,9 +186,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>audiodevinfo</b> returns a structure with available audio input and output devices.</p>
+            audiodevinfo returns a structure with available audio input and output devices.</p>
 <p>
-                <b>devices = audiodevinfo('default')</b> returns a structure with default used audio input and output devices.</p>
+                devices = audiodevinfo('default') returns a structure with default used audio input and output devices.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">info = audiodevinfo()
 OUTPUT_DEVICE = 0;

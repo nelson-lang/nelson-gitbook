@@ -16,7 +16,7 @@ Computes the inverse hyperbolic tangent.
 
 ## Description
 
-<b>acos</b>computes the inverse hyperbolic tangent.
+        acos computes the inverse hyperbolic tangent.
 
 ## Example
 

@@ -24,7 +24,7 @@
 ## Description
 
 <p>
-            <b>conv2</b> returns the two-dimensional convolution.</p>
+            conv2 returns the two-dimensional convolution.</p>
 
 ## Example
 

@@ -18,9 +18,10 @@ call CMake tool
 ## Description
 
 <p>
-            <b>cmake</b> used internally to generate makefile used to build C/C++ code.</p>
+            cmake used internally to generate makefile used to build C/C++ code.</p>
+
 <p>
-                <b>cmake</b> used by <b>dlgeneratemake</b>.</p>
+                cmake used by dlgeneratemake.</p>
 
 ## See also
 

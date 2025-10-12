@@ -21,13 +21,16 @@ Sparse identity matrix.
 ## Description
 
 <p>
-            <b>S = speye()</b> returns a sparse scalar 1.</p>
+            S = speye() returns a sparse scalar 1.</p>
+
 <p>
-                <b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
+                S = speye(n) returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
+
 <p>
-                    <b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
+                    S = speye(n, m) returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
+
 <p>
-                        <b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.</p>
+                        S = speye(sz) returns a matrix with ones on the main diagonal.</p>
 
 ## Example
 

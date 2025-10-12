@@ -17,8 +17,9 @@ Number of table rows
 ## Description
 
 <p>
-            <b>H = height(T)</b> returns the number of rows in the table <b>T</b>.</p>
-<p>The function <b>height(T)</b> is equivalent to <b>size(T, 1)</b>, which also provides the number of rows in the table.</p>
+            H = height(T) returns the number of rows in the table T.</p>
+
+<p>The function height(T) is equivalent to size(T, 1), which also provides the number of rows in the table.</p>
 
 ## Example
 

@@ -27,7 +27,8 @@ Creates a question dialog box.
 ## Description
 
 <p>
-            <b>questdlg</b> displays a string using a question dialog box and return the caption of the activated button.</p>
+            questdlg displays a string using a question dialog box and return the caption of the activated button.</p>
+
 <p>The dialog has three default buttons: 'Yes', 'No', 'Cancel' with 'Yes' as default.</p>
 
 ## Examples

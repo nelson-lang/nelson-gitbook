@@ -27,48 +27,93 @@ Return the date/time input as a serial day number.
 ## Description
 
 <p>
-            <b>d = datenum()</b> returns the serial date number corresponding to current date.</p>
+            d = datenum() returns the serial date number corresponding to current date.</p>
+
 <p>
-                <b>d = datenum(datevec)</b> converts date vector to serial date number.</p>
+            d = datenum(datevec) converts date vector to serial date number.</p>
+
 <p>
-                    <b>d = datenum(datestr)</b> and <b>d = datenum(datestr, format)</b> converts string to serial date number.</p>
+            d = datenum(datestr) and d = datenum(datestr, format) converts string to
+            serial date number.</p>
+
 <p></p>
+
 <p>Supported format conversion:</p>
+
 <p>
-                        <b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17</p>
+            dd-mmm-yyyy HH:MM:SS 10-Mar-2010 16:48:17</p>
+
 <p>
-                            <b>dd-mmm-yyyy</b> 10-Mar-2010</p>
+            dd-mmm-yyyy 10-Mar-2010</p>
+
 <p>
-                                <b>mm/dd/yyyy</b> 03/10/2010</p>
+            mm/dd/yyyy 03/10/2010</p>
+
 <p>
-                                    <b>mm/dd/yy</b> 03/10/00</p>
+            mm/dd/yy 03/10/00</p>
+
 <p>
-                                        <b>mm/dd</b> 03/10</p>
+            mm/dd 03/10</p>
+
 <p>
-                                            <b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17</p>
+            mmm.dd,yyyy HH:MM:SS Mar.10,2010 16:48:17</p>
+
 <p>
-                                                <b>mmm.dd,yyyy</b> Mar.10,2010</p>
+            mmm.dd,yyyy Mar.10,2010</p>
+
 <p>
-                                                    <b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17</p>
+            yyyy-mm-dd HH:MM:SS 2010-03-10 16:48:17</p>
+
 <p>
-                                                        <b>yyyy-mm-dd</b> 2010-03-10</p>
+            yyyy-mm-dd 2010-03-10</p>
+
 <p>
-                                                            <b>yyyy/mm/dd</b> 2000/03/10</p>
+            yyyy/mm/dd 2000/03/10</p>
+
 <p>
-                                                                <b>HH:MM:SS</b> 16:48:17</p>
+            HH:MM:SS 16:48:17</p>
+
 <p>
-                                                                    <b>HH:MM:SS PM</b> 3:48:17 PM</p>
+            HH:MM:SS PM 3:48:17 PM</p>
+
 <p>
-                                                                        <b>HH:MM</b> 16:48</p>
+            HH:MM 16:48</p>
+
 <p>
-                                                                            <b>HH:MM PM</b> 3:35 PM</p>
+            HH:MM PM 3:35 PM</p>
+
 <p></p>
-<p>If format is not specified, the default format is <b>dd-mmm-yyyy</b>.</p>
+
+<p>If format is not specified, the default format is dd-mmm-yyyy.</p>
+
 <p></p>
-<p>If format is specified and not using predefined format, the format must be specified as a character vector or string scalar composed of symbolic identifiers.</p>
-<p>The format of the input text for representing dates and times, expressed as a character vector or string scalar composed of symbolic identifiers.</p>
+
+<p>If format is specified and not using predefined format, the format must be specified as a
+            character vector or string scalar composed of symbolic identifiers.</p>
+
+<p>The format of the input text for representing dates and times, expressed as a character
+            vector or string scalar composed of symbolic identifiers.</p>
+
 <p></p>
-Symbolic Identifier Description Example yyyy Year in full 1995, 2012 yy Year in two digits 89, 01 QQ Quarter year using letter Q and one digit Q1 mmmm Month using full name March, December mmm Month using first three letters Mar, Dec mm Month in two digits 04, 12 m Month using capitalized first letter M, D dddd Day using full name Monday, Tuesday ddd Day using first three letters Mon, Tue dd Day in two digits 06, 21 d Day using capitalized first letter M, T HH Hour in two digits (no leading zeros when symbolic identifier AM or PM is used) 06, 6 AM MM Minute in two digits 11, 01 SS Second in two digits 06, 59 FFF Millisecond in three digits 056 AM or PM AM or PM inserted in text representing time 5:46:02 PM
+
+| Symbolic Identifier | Description                                                                     | Example         |
+| ------------------- | ------------------------------------------------------------------------------- | --------------- |
+| yyyy                | Year in full                                                                    | 1995, 2012      |
+| yy                  | Year in two digits                                                              | 89, 01          |
+| QQ                  | Quarter year using letter Q and one digit                                       | Q1              |
+| mmmm                | Month using full name                                                           | March, December |
+| mmm                 | Month using first three letters                                                 | Mar, Dec        |
+| mm                  | Month in two digits                                                             | 04, 12          |
+| m                   | Month using capitalized first letter                                            | M, D            |
+| dddd                | Day using full name                                                             | Monday, Tuesday |
+| ddd                 | Day using first three letters                                                   | Mon, Tue        |
+| dd                  | Day in two digits                                                               | 06, 21          |
+| d                   | Day using capitalized first letter                                              | M, T            |
+| HH                  | Hour in two digits (no leading zeros when symbolic identifier AM or PM is used) | 06, 6 AM        |
+| MM                  | Minute in two digits                                                            | 11, 01          |
+| SS                  | Second in two digits                                                            | 06, 59          |
+| FFF                 | Millisecond in three digits                                                     | 056             |
+| AM or PM            | AM or PM inserted in text representing time                                     | 5:46:02 PM      |
 
 ## Example
 

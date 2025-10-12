@@ -14,9 +14,10 @@ Redraw current figure.
 ## Description
 
 <p>
-            <b>refresh</b> erases and redraws the current figure.</p>
+            refresh erases and redraws the current figure.</p>
+
 <p>
-                <b>refresh(F)</b> redraws the figure identified by <b>F</b>.</p>
+                refresh(F) redraws the figure identified by F.</p>
 
 ## See also
 

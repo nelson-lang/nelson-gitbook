@@ -22,8 +22,9 @@ Call a NELSON function and capture error.
 ## Description
 
 <p>
-            <b>mexCallMATLABWithTrap</b> calls an NELSON function and capture error.</p>
-<p>If name detects an error, <b>mexCallMATLABWithTrap</b> returns an mxArray (MException object).</p>
+            mexCallMATLABWithTrap calls an NELSON function and capture error.</p>
+
+<p>If name detects an error, mexCallMATLABWithTrap returns an mxArray (MException object).</p>
 
 ## Example
 

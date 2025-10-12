@@ -17,7 +17,8 @@ Sparse to full matrix conversion.
 ## Description
 
 <p>
-            <b>full</b> converts a sparse matrix into its full representation.</p>
+            full converts a sparse matrix into its full representation.</p>
+
 <p> If input argument is already full then output argument will be equal to input argument.</p>
 
 ## Example

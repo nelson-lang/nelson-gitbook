@@ -18,7 +18,7 @@ Returns complex conjugate transpose: ' operator.
 ## Description
 
 <p>
-            <b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
+            C = ctranspose(A) returns the complex conjugate transpose of A.</p>
 
 ## Examples
 

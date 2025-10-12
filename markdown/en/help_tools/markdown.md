@@ -23,9 +23,12 @@ Converts markdown to html.
 ## Description
 
 <p>
-            <b>markdown</b> converts Markdown text-to-HTML.</p>
+            markdown converts Markdown text-to-HTML.</p>
+
 <p>options:</p>
-secure (default): only a subset of markdown is supported (no raw HTML, no tables, no images, no links). advanced: full markdown supported (including raw HTML, tables, images, links).
+
+            secure (default): only a subset of markdown is supported (no raw HTML, no tables, no images, no links).
+            advanced: full markdown supported (including raw HTML, tables, images, links).
 
 ## Examples
 

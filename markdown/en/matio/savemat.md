@@ -22,7 +22,8 @@ save workspace variables to .mat file
 ## Description
 
 <p>
-            <b>savemat</b> save workspace variables to .mat file.</p>
+            savemat save workspace variables to .mat file.</p>
+
 <p>Nelson's data types are converted into the Mat file equivalents.</p>
 
 ## Bibliography

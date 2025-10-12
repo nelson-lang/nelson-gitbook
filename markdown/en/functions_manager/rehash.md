@@ -9,9 +9,11 @@ Reinitialize Nelson’s search path directory cache.
 ## Description
 
 <p>
-            <b>rehash()</b> reinitializes Nelson’s search path directory cache.</p>
+            rehash() reinitializes Nelson’s search path directory cache.</p>
+
 <p>This happens each time Nelson displays the prompt.</p>
-<p>You should use <b>rehash()</b> only when you run a .m file that updates another .m file</p>
+
+<p>You should use rehash() only when you run a .m file that updates another .m file</p>
 
 ## Example
 

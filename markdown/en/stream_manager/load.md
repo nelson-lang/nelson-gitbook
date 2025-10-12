@@ -24,7 +24,7 @@ load data from .nh5 or .mat file into Nelson's workspace.
 ## Description
 
 <p>
-            <b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.</p>
+            load loads data from .nh5 or .mat file to Nelson's workspace.</p>
 
 ## Example
 

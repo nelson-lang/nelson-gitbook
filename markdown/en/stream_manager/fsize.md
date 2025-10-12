@@ -17,7 +17,7 @@ Returns size of an opened file.
 ## Description
 
 <p>
-            <b>fsize</b> returns th size of a file opened by <b>fopen</b>.</p>
+            fsize returns th size of a file opened by fopen.</p>
 
 ## Example
 

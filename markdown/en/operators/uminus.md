@@ -18,7 +18,7 @@ Unary minus, - operator
 ## Description
 
 <p>
-            <b>C = uminus(A)</b> performs unary minus ie -A.</p>
+            C = uminus(A) performs unary minus ie -A.</p>
 
 ## Example
 

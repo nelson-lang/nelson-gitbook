@@ -13,9 +13,10 @@ Remove used compiler configuration (on Windows).
 ## Description
 
 <p>
-            <b>removecompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.</p>
+            removecompilerconf returns true if compiler was previously configured with configuremsvc or configuremingw.</p>
+
 <p>
-                <b>removecompilerconf</b> returns always true on others platforms.</p>
+                removecompilerconf returns always true on others platforms.</p>
 
 ## See also
 

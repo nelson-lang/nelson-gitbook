@@ -18,7 +18,7 @@ Summer colormap array.
 ## Description
 
 <p>
-            <b>summer</b> returns the colormap with summer colors.</p>
+            summer returns the colormap with summer colors.</p>
 
 ## Example
 

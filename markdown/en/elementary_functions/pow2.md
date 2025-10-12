@@ -19,9 +19,10 @@ Base 2 exponentiation and scaling of floating-point numbers.
 ## Description
 
 <p>
-            <b>Y = pow2(E)</b> computes 2 to the power of <b>E</b>.</p>
+            Y = pow2(E) computes 2 to the power of E.</p>
+
 <p>
-                <b>Y = pow2(X, E)</b> computes X times 2 to the power of <b>E</b>.</p>
+                Y = pow2(X, E) computes X times 2 to the power of E.</p>
 
 ## Example
 

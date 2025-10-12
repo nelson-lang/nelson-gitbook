@@ -17,7 +17,8 @@ Computes the matrix logarithm of a square matrix.
 ## Description
 
 <p>
-            <b>expm(x)</b> computes the matrix logarithm of x.</p>
+            expm(x) computes the matrix logarithm of x.</p>
+
 <p>The computation is performed by first block-diagonalizing x and then applying a Pade approximation on each block.</p>
 
 ## Example

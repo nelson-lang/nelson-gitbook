@@ -14,7 +14,7 @@ Generates unloader.m file for C++ gateway.
 ## Description
 
 <p>
-            <b>dlgenerateunloader</b> generates a 'unloader.m' unload external dynamic libraries.</p>
+            dlgenerateunloader generates a 'unloader.m' unload external dynamic libraries.</p>
 
 ## Example
 

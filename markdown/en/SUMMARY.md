@@ -1052,7 +1052,6 @@
   - [rgbplot](./graphics/rgbplot.md)
   - [ribbon](./graphics/ribbon.md)
   - [rotate3d](./graphics/rotate3d.md)
-  - [saveas](./graphics/saveas.md)
   - [scatter](./graphics/scatter.md)
   - [scatter3](./graphics/scatter3.md)
   - [semilogx](./graphics/semilogx.md)

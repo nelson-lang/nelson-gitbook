@@ -20,8 +20,9 @@ Convert model from discrete to continuous time.
 
 ## Description
 
-<p>The function <b>sysc = d2c(sysd)</b> transforms a discrete-time dynamic system model <b>sysd</b> into a continuous-time model, employing zero-order hold on the inputs.</p>
-<p>For instance, you can use <b>sysc = d2c(sysd, method)</b> to explicitly define the conversion method.</p>
+<p>The function sysc = d2c(sysd) transforms a discrete-time dynamic system model sysd into a continuous-time model, employing zero-order hold on the inputs.</p>
+
+<p>For instance, you can use sysc = d2c(sysd, method) to explicitly define the conversion method.</p>
 
 ## Example
 

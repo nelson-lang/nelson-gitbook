@@ -18,7 +18,7 @@ Classic symmetric eigenvalue test problem.
 ## Description
 
 <p>
-            <b>R = rosser()</b> returns the Rosser Matrix.</p>
+            R = rosser() returns the Rosser Matrix.</p>
 
 ## Bibliography
 

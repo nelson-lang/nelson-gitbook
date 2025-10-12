@@ -18,7 +18,7 @@ Prepare to produce a new plot.
 ## Description
 
 <p>
-            <b>newplot</b> prepares a figure and axes for graphics commands.</p>
+            newplot prepares a figure and axes for graphics commands.</p>
 
 ## Example
 

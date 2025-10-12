@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="imwrite"><a class="header" href="#imwrite">imwrite</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="imwrite"><a class="header" href="#imwrite">imwrite</a></h1>
 <p>Write image to graphics file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,28 +176,28 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b>
+            imwrite(A, filename) writes image data A to the file specified by filename
         </p>
 <p></p>
 <p>Property name:</p>
 <p></p>
 <p>
-            <b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).</p>
+            Quality: quality of output file: scalar in the range [0, 100] (75 as default).</p>
 <p>
-                <b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
+                Alpha: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
 <p>
-                    <b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
+                    Comment: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
 <p>
-                        <b>Author</b>: character vector or string scalar: Author information.</p>
+                        Author: character vector or string scalar: Author information.</p>
 <p></p>
-<p>Properties for <b>gif</b> format:</p>
+<p>Properties for gif format:</p>
 <p></p>
 <p>
-                            <b>WriteMode</b>:</p>
+                            WriteMode:</p>
 <p>
-                                <b>LoopCount</b>:</p>
+                                LoopCount:</p>
 <p>
-                                    <b>DelayTime</b>:</p>
+                                    DelayTime:</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();
 A = rand(69, 69);

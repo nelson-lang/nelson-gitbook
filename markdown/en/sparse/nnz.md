@@ -17,7 +17,7 @@ Return the number of nonzero elements.
 ## Description
 
 <p>
-            <b>nnz</b> returns the number of non zero elements in an matrix.</p>
+            nnz returns the number of non zero elements in an matrix.</p>
 
 ## Example
 

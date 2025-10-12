@@ -21,7 +21,7 @@ List the content of an HDF5 file.
 ## Description
 
 <p>
-            <b>h5dump</b> list the content of hdf5 file.</p>
+            h5dump list the content of hdf5 file.</p>
 
 ## Example
 

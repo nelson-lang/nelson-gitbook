@@ -29,8 +29,9 @@ Mesh surface plot with curtain.
 ## Description
 
 <p>
-            <b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.</p>
-<p>The function takes the same input arguments as the <b>mesh</b> function.</p>
+            meshz creates a 3-D surface plot with a wireframe plot on top.</p>
+
+<p>The function takes the same input arguments as the mesh function.</p>
 
 ## Example
 

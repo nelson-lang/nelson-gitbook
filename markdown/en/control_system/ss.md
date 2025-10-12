@@ -25,7 +25,8 @@ State-space model.
 ## Description
 
 <p>Creates a continuous-time state-space model using matrices A, B, C, and D, allowing for either real or complex-valued matrices.</p>
-<p>This model is represented as <b>sys = ss(A, B, C, D)</b>.</p>
+
+<p>This model is represented as sys = ss(A, B, C, D).</p>
 
 ## Examples
 

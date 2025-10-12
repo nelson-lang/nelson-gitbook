@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="dlsym"><a class="header" href="#dlsym">dlsym</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="dlsym"><a class="header" href="#dlsym">dlsym</a></h1>
 <p>Loads a C/Fortran symbol for an dynamic library.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,31 +175,31 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>dlsym</b> retrieves the address of an exported function as an dlsym handle.</p>
-<p>if <b>symbolname</b> not found, nelson try to find symbol equivalent based on these rules and in this order:</p>
+            dlsym retrieves the address of an exported function as an dlsym handle.</p>
+<p>if symbolname not found, nelson try to find symbol equivalent based on these rules and in this order:</p>
 <p>
-                <b>_symbolname</b>
+                _symbolname
             </p>
 <p>
-                <b>symbolname</b>
+                symbolname
             </p>
 <p>
-                <b>symbolname_</b>
+                symbolname_
             </p>
 <p>
-                <b>_symbolname_</b>
+                _symbolname_
             </p>
 <p>
-                <b>_SYMBOLNAME</b>
+                _SYMBOLNAME
             </p>
 <p>
-                <b>SYMBOLNAME</b>
+                SYMBOLNAME
             </p>
 <p>
-                <b>SYMBOLNAME_</b>
+                SYMBOLNAME_
             </p>
 <p>
-                <b>_SYMBOLNAME_</b>
+                _SYMBOLNAME_
             </p>
 <p>symbol name used is available in prototype field of the returned handle.</p>
 <p>If multiple symbol names found, an error is raised with possible names.</p>

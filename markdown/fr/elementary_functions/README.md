@@ -1,0 +1,103 @@
+# Fonctions élémentaires
+
+Le module Fonctions élémentaires fournit un large éventail d'opérations mathématiques fondamentales et de manipulations de matrices dans Nelson.
+
+Il inclut des calculs numériques, des opérations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise à l'échelle, ainsi que diverses fonctions utilitaires pour interroger les propriétés des tableaux et des matrices.
+
+Le module prend également en charge la construction de matrices spéciales, de grilles et de séquences, facilitant l'implémentation robuste et efficace d'algorithmes mathématiques et d'analyses numériques.
+
+## Functions
+
+- [abs](abs.md) - Valeur absolue
+- [allfinite](allfinite.md) - Vérifie si tous les éléments du tableau sont finis.
+- [angle](angle.md) - Angle de phase
+- [base2dec](base2dec.md) - Convertit un nombre d'une base donnée en décimal.
+- [bernsteinMatrix](bernsteinMatrix.md) - Matrice de Bernstein
+- [bin2dec](bin2dec.md) - Convertit un nombre en base 2 en décimal.
+- [bin2num](bin2num.md) - Convertit une chaîne binaire en complément à deux en nombre.
+- [blkdiag](blkdiag.md) - Matrice diagonale par blocs
+- [cast](cast.md) - Convertit une variable vers un autre type de données
+- [ceil](ceil.md) - Arrondir vers le haut
+- [circshift](circshift.md) - Rotation circulaire
+- [complex](complex.md) - Crée un nombre complexe.
+- [conj](conj.md) - Conjugué complexe
+- [deal](deal.md) - Distribue les entrées vers les sorties.
+- [dec2base](dec2base.md) - Convertit un nombre décimal vers une autre base.
+- [dec2bin](dec2bin.md) - Convertit un nombre décimal en base 2.
+- [dec2hex](dec2hex.md) - Convertit un nombre décimal en base 16.
+- [exp](exp.md) - Exponentielle
+- [factorial](factorial.md) - Fonction factorielle
+- [filter](filter.md) - Filtre numérique 1-D
+- [find](find.md) - Trouver les éléments non nuls
+- [fix](fix.md) - Arrondir vers zéro
+- [flip](flip.md) - Inverser l'ordre des éléments
+- [flipdim](flipdim.md) - Inverser un tableau selon une dimension spécifiée
+- [fliplr](fliplr.md) - Inverser l'ordre des éléments de gauche à droite
+- [flipud](flipud.md) - Inverser l'ordre des éléments de haut en bas
+- [floor](floor.md) - Arrondir vers le bas
+- [hadamard](hadamard.md) - Matrice de Hadamard
+- [hankel](hankel.md) - Matrice de Hankel
+- [hex2dec](hex2dec.md) - Convertit un nombre en base 16 en décimal.
+- [hilb](hilb.md) - Matrice de Hilbert
+- [hypot](hypot.md) - Racine carrée de la somme des carrés
+- [imag](imag.md) - Partie imaginaire d'un nombre complexe.
+- [ind2sub](ind2sub.md) - Convertir un indice linéaire en indices de sous-script
+- [invhilb](invhilb.md) - Inverse d'une matrice de Hilbert
+- [ipermute](ipermute.md) - Inverse de permute
+- [isapprox](isapprox.md) - Renvoie vrai si les arguments sont approximativement égaux, dans la précision donnée.
+- [iscolumn](iscolumn.md) - Déterminer si l'entrée est un vecteur colonne.
+- [isdiag](isdiag.md) - Vérifie si une matrice est diagonale.
+- [isequal](isequal.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
+- [isequaln](isequaln.md) - Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs).
+- [isequalto](isequalto.md) - Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs).
+- [isfinite](isfinite.md) - Check for finite entries.
+- [isinf](isinf.md) - Check for Infinity entries.
+- [ismatrix](ismatrix.md) - determines whether input is matrix or not
+- [isnan](isnan.md) - Check for Not a Number entries.
+- [isrow](isrow.md) - Déterminer si l'entrée est un vecteur ligne.
+- [isscalar](isscalar.md) - Tester si l'entrée est un scalaire
+- [istril](istril.md) - Tester si une matrice est triangulaire inférieure
+- [istriu](istriu.md) - Checks if matrix is upper triangular.
+- [isvector](isvector.md) - Checks input is vector.
+- [length](length.md) - Length of an object.
+- [linspace](linspace.md) - linearly spaced vector constructor.
+- [log](log.md) - Natural logarithm.
+- [log10](log10.md) - Common logarithm (base 10).
+- [log1p](log1p.md) - log(1 + x) accurately for small values of x.
+- [log2](log2.md) - dissect floating-point numbers into base 2 exponent and mantissa.
+- [logspace](logspace.md) - logarithmically spaced vector constructor.
+- [magic](magic.md) - Magic square
+- [meshgrid](meshgrid.md) - Cartesian rectangular grid in 2-D or 3-D.
+- [minus](minus.md) - Subtraction, - operator
+- [mod](mod.md) - Modulus after division.
+- [ndgrid](ndgrid.md) - Rectangular grid in N-D space
+- [ndims](ndims.md) - Number of dimensions of an array.
+- [nextpow2](nextpow2.md) - Exponent of next higher power of 2
+- [norm](norm.md) - Matrix and vector norms
+- [normest](normest.md) - 2-norm estimate
+- [nthroot](nthroot.md) - The real 𝑛th root of real number.
+- [num2bin](num2bin.md) - Convert number to binary representation.
+- [numel](numel.md) - Number of elements.
+- [permute](permute.md) - Permute array dimensions.
+- [pinv](pinv.md) - Moore-Penrose pseudoinverse
+- [pow2](pow2.md) - Base 2 exponentiation and scaling of floating-point numbers.
+- [real](real.md) - Real part of an complex number.
+- [rem](rem.md) - Remainder after division.
+- [repmat](repmat.md) - Replicate and tile an array.
+- [reshape](reshape.md) - Reshapes a vector or a matrix to a different size matrix.
+- [rosser](rosser.md) - Classic symmetric eigenvalue test problem.
+- [rot90](rot90.md) - Rotate array 90 degrees.
+- [round](round.md) - Round to nearest integer
+- [shiftdim](shiftdim.md) - Shift array dimensions
+- [sign](sign.md) - Find the sign function of a number.
+- [size](size.md) - Size of an object.
+- [sqrt](sqrt.md) - Square root.
+- [squeeze](squeeze.md) - Remove dimensions of length 1.
+- [sub2ind](sub2ind.md) - Matrix subscript values to linear index
+- [substruct](substruct.md) - Create structure argument for subsasgn or subsref
+- [swapbytes](swapbytes.md) - Swap byte ordering.
+- [toeplitz](toeplitz.md) - Toeplitz matrix
+- [tril](tril.md) - Lower triangular part of matrix
+- [triu](triu.md) - Upper triangular part of matrix
+- [vander](vander.md) - Vandermonde matrix
+- [wilkinson](wilkinson.md) - Wilkinson's eigenvalue test matrix

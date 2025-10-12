@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="esort"><a class="header" href="#esort">esort</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="esort"><a class="header" href="#esort">esort</a></h1>
 <p>Sort continuous-time poles by real part.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,7 +173,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>esort</b> arranges the continuous-time poles within the vector <b>p</b> based on their real parts.</p>
+            esort arranges the continuous-time poles within the vector p based on their real parts.</p>
 <p>Unstable eigenvalues take precedence at the beginning of the sorted list, and the rest of the poles are organized in descending order according to their real parts.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">p = [-2.410 + 5.573i;

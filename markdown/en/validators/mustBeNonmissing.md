@@ -16,7 +16,7 @@ Checks that value is not missing.
 ## Description
 
 <p>
-            <b>mustBeNonmissing</b> checks that value is not missing or raise an error.</p>
+            mustBeNonmissing checks that value is not missing or raise an error.</p>
 
 ## Example
 

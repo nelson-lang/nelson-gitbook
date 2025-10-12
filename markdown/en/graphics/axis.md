@@ -30,7 +30,7 @@ Set axis limits and aspect ratios.
 ## Description
 
 <p>
-            <b>axes</b> set axis limits and appearance.</p>
+            axes set axis limits and appearance.</p>
 
 ## Example
 

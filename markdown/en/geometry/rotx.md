@@ -17,7 +17,7 @@
 ## Description
 
 <p>
-            <b>rotx</b> returns 3x3 transformation matrix for rotations around x-axis.</p>
+            rotx returns 3x3 transformation matrix for rotations around x-axis.</p>
 
 ## Bibliography
 

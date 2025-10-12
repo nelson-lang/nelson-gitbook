@@ -16,7 +16,17 @@ Computes the tangent in radians for each element of x.
 
 ## Description
 
-<b>tan</b>computes the tangent in radians for each element of<b>x</b>.
+<p>tan computes the tangent in radians for each element of x.</p>
+
+<p>The tangent function is defined as:</p>
+
+$$\tan(x) = \frac{\sin(x)}{\cos(x)} = \frac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})}$$
+
+<p>It has vertical asymptotes at</p>
+
+$$x = \frac{\pi}{2} + n\pi$$
+
+<p>for integer n.</p>
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="formatteddisplaytext"><a class="header" href="#formatteddisplaytext">formattedDisplayText</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="formatteddisplaytext"><a class="header" href="#formatteddisplaytext">formattedDisplayText</a></h1>
 <p>Capture display output as string.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,8 +174,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.</p>
-<p>The string contains equivalent to <b>disp(V)</b>.</p>
+            str = formattedDisplayText(V) returns the display output of V as a string.</p>
+<p>The string contains equivalent to disp(V).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">R = eye(3, 3)
 str = formattedDisplayText(R)

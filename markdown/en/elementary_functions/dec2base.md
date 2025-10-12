@@ -20,8 +20,9 @@ Convert decimal number to another base.
 ## Description
 
 <p>
-            <b>dec2base</b> converts decimal number to another base.</p>
-<p>values are cached to speed up next computation <b>dec2base([], 2)</b> to clear cache.</p>
+            dec2base converts decimal number to another base.</p>
+
+<p>values are cached to speed up next computation dec2base([], 2) to clear cache.</p>
 
 ## Example
 

@@ -20,7 +20,7 @@ Circular shift
 ## Description
 
 <p>
-            <b>circshift</b> computes circular shift.</p>
+            circshift computes circular shift.</p>
 
 ## Example
 

@@ -9,7 +9,7 @@ Restore Nelson’s path to its initial state at startup.
 ## Description
 
 <p>
-            <b>restoredefaultpath</b> restores Nelson's search path to its startup state.</p>
+            restoredefaultpath restores Nelson's search path to its startup state.</p>
 
 ## Example
 

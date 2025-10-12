@@ -22,8 +22,9 @@ Feedback connection of multiple models.
 ## Description
 
 <p>
-            <b>cloop</b> forms the closed-loop system when unity feedback is used.</p>
-<p>This function is deprecated and has limitations, please see <b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".</p>
+            cloop forms the closed-loop system when unity feedback is used.</p>
+
+<p>This function is deprecated and has limitations, please see feedback. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".</p>
 
 ## Example
 
@@ -45,7 +46,7 @@ R = cloop(sys, OUTPUTS, INPUTS)
 
 ## See also
 
-[cloop](../control_system/cloop.md), [append](../control_system/append.md), [ssselect](../control_system/ssselect.md).
+[feedback](../control_system/feedback.md), [append](../control_system/append.md), [ssselect](../control_system/ssselect.md).
 
 ## History
 

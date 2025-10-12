@@ -5,14 +5,36 @@ About integer and floating-point data.
 ## Description
 
 <p>In Nelson you can specify the data type of a numeric literal by using a suffix or a type specifier. </p>
+
 <p>Here are some common suffixes for specifying the data type of numeric literals:</p>
+
 <p></p>
-literal number suffix Nelson type f32 single (float single precision) f64 double (float double precision) i8 int8 (8-bit signed integer) i16 int16 (16-bit signed integer) i32 int32 (32-bit signed integer) i64 int64 (64-bit signed integer) u8 uint8 (8-bit unsigned integer) u16 uint16 (16-bit unsigned integer) u32 uint32 (32-bit unsigned integer) u64 uint64 (64-bit unsigned integer)<p></p>
+
+| literal number suffix | Nelson type                      |
+| --------------------- | -------------------------------- |
+| f32                   | single (float single precision)  |
+| f64                   | double (float double precision)  |
+| i8                    | int8 (8-bit signed integer)      |
+| i16                   | int16 (16-bit signed integer)    |
+| i32                   | int32 (32-bit signed integer)    |
+| i64                   | int64 (64-bit signed integer)    |
+| u8                    | uint8 (8-bit unsigned integer)   |
+| u16                   | uint16 (16-bit unsigned integer) |
+| u32                   | uint32 (32-bit unsigned integer) |
+| u64                   | uint64 (64-bit unsigned integer) |
+
+<p></p>
+
 <p>i64: To specify a 64-bit signed integer, you can use the i64 suffix. example: A = 42i64</p>
+
 <p>f32: To specify a 32-bit floating-point number (single precision), you can use the f64 suffix. example: 3.14f32</p>
+
 <p>These suffixes help the Nelson infer the correct data type for the literal.</p>
+
 <p>Nelson automatically infer data type by default as double and you don't need to specify this suffixe explicitly. example: A = 3.14</p>
+
 <p>Unless you have specific requirements or need to disambiguate between data types, you often don't need to explicitly specify the type of numeric literals.</p>
+
 <p>But when you create a numeric array of large integers in Nelson, especially when they exceed the maximum precision representable by double (larger than flintmax), Nelson initially stores these values as double-precision floating-point numbers by default.</p>
 
 ## Examples

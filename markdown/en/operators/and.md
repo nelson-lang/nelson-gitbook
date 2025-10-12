@@ -19,7 +19,7 @@ logical 'AND' operator, &
 ## Description
 
 <p>
-            <b>C = and(A, B)</b> performs a logical <b>AND</b> operation.</p>
+            C = and(A, B) performs a logical AND operation.</p>
 
 ## Example
 

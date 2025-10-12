@@ -18,7 +18,7 @@ Abyss colormap array.
 ## Description
 
 <p>
-            <b>abyss</b> returns the colormap with abyss colors.</p>
+            abyss returns the colormap with abyss colors.</p>
 
 ## Example
 

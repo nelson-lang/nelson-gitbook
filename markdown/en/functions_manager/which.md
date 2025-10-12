@@ -22,7 +22,7 @@ Locates functions and built-in.
 ## Description
 
 <p>
-            <b>which</b> returns the path of a function or a built-in.</p>
+            which returns the path of a function or a built-in.</p>
 
 ## Example
 

@@ -24,53 +24,77 @@ Create primitive line.
 ## Description
 
 <p>
-            <b>line(x, y)</b> creates a line in the current axes with vectors <b>x</b> and <b>y</b>.</p>
+            line(x, y) creates a line in the current axes with vectors x and y.</p>
+
 <p>
-                <b>line(x, y, z)</b> creates a line in three-dimensional coordinates.</p>
+                line(x, y, z) creates a line in three-dimensional coordinates.</p>
+
 <p>Properties:</p>
+
 <p></p>
+
 <p>
-                    <b>Children</b> [] (currently not used).</p>
+                    Children [] (currently not used).</p>
+
 <p>
-                        <b>Color</b> Line color: RGB triplet, [0, 0, 0] or hexadecimal color code.</p>
+                        Color Line color: RGB triplet, [0, 0, 0] or hexadecimal color code.</p>
+
 <p>
-                            <b>DisplayName</b> Legend label: character vector or string scalar, '' (default).</p>
+                            DisplayName Legend label: character vector or string scalar, '' (default).</p>
+
 <p>
-                                <b>LineStyle</b> Line style: '--', ':', '-.', 'none' or '-' (default).</p>
+                                LineStyle Line style: '--', ':', '-.', 'none' or '-' (default).</p>
+
 <p>
-                                    <b>LineWidth</b> Line width: scalar positive value.</p>
+                                    LineWidth Line width: scalar positive value.</p>
+
 <p>
-                                        <b>Marker</b>Marker symbol: 'o' (circle), '+' (Plus sign), '*' (asterik), '.' (point), 'x' (cross), '_' (horizontal line) , '|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '>' (Right-pointing triangle), '<' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default). </p>
+                                        MarkerMarker symbol: 'o' (circle), '+' (Plus sign), '*' (asterik), '.' (point), 'x' (cross), '_' (horizontal line) , '|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '>' (Right-pointing triangle), '<' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default). </p>
+
 <p>
-                                            <b>MarkerEdgeColor</b> Marker outline color: RGB triplet.</p>
+                                            MarkerEdgeColor Marker outline color: RGB triplet.</p>
+
 <p>
-                                                <b>MarkerFaceColor</b> Marker fill color: RGB triplet.</p>
+                                                MarkerFaceColor Marker fill color: RGB triplet.</p>
+
 <p>
-                                                    <b>MarkerSize</b> Marker size: scalar positive value.</p>
+                                                    MarkerSize Marker size: scalar positive value.</p>
+
 <p>
-                                                        <b>Parent</b> Parent: axes graphics object.</p>
+                                                        Parent Parent: axes graphics object.</p>
+
 <p>
-                                                            <b>Tag</b> Object identifier: string scalar, character vector, '' (default).</p>
+                                                            Tag Object identifier: string scalar, character vector, '' (default).</p>
+
 <p>
-                                                                <b>Type</b> Type of graphics object: 'line'</p>
+                                                                Type Type of graphics object: 'line'</p>
+
 <p>
-                                                                    <b>UserData</b> User data: array, [] (default).</p>
+                                                                    UserData User data: array, [] (default).</p>
+
 <p>
-                                                                        <b>Visible</b> State of visibility: 'off' or 'on' (default).</p>
+                                                                        Visible State of visibility: 'off' or 'on' (default).</p>
+
 <p>
-                                                                            <b>XData</b> x values: vector, [0 1] (default).</p>
+                                                                            XData x values: vector, [0 1] (default).</p>
+
 <p>
-                                                                                <b>YData</b> y values: vector, [0 1] (default).</p>
+                                                                                YData y values: vector, [0 1] (default).</p>
+
 <p>
-                                                                                    <b>ZData</b> z values: vector, [] (default).</p>
+                                                                                    ZData z values: vector, [] (default).</p>
+
 <p>
-                                                                                        <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+                                                                                        CreateFcnCallback (function handle, string or cell) called when object is created.
 Set this property on an existing component has no effect.</p>
+
 <p>
-                                                                                            <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+                                                                                            DeleteFcnCallback (function handle, string or cell) called when object is deleted.</p>
+
 <p></p>
+
 <p>
-                                                                                                <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+                                                                                                BeingDeleted Flag indicating that the object is being deleted.</p>
 
 ## Examples
 

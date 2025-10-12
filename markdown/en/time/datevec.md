@@ -19,7 +19,8 @@ Convert a serial date number into a date vector.
 ## Description
 
 <p>
-            <b>datevec</b> converts a serial date number into a date vector.</p>
+            datevec converts a serial date number into a date vector.</p>
+
 <p>To measure performance, it is better to use tic and toc functions.</p>
 
 ## Example

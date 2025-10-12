@@ -16,7 +16,7 @@ Return true if variable var is a signed 32-bit integer type array.
 
 ## Description
 
-<b>isint32</b>returns a logical<b>1</b>if the argument is a<b>signed 32-bit</b>integer array and a logical<b>0</b>otherwise.
+        isint32 returns a logical 1if the argument is a signed 32-bit integer array and a logical 0 otherwise.
 
 ## Examples
 

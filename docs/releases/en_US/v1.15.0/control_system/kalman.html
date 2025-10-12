@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="kalman"><a class="header" href="#kalman">kalman</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="kalman"><a class="header" href="#kalman">kalman</a></h1>
 <p>Design Kalman filter for state estimation.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -181,7 +182,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[kalmf, L, P] = kalman(sys, Q, R, N)</b> generates a Kalman filter using the provided plant model <b>sys</b> and noise covariance matrices <b>Q</b>, <b>R</b>, and <b>N</b>.</p>
+            [kalmf, L, P] = kalman(sys, Q, R, N) generates a Kalman filter using the provided plant model sys and noise covariance matrices Q, R, and N.</p>
 <p>The function calculates a Kalman filter suitable for application in a Kalman estimator, as depicted in the following diagram.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [11.269   -0.4940    1.129; 1.0000         0         0;0    1.0000         0];

@@ -13,7 +13,7 @@ Provide list of colormaps.
 ## Description
 
 <p>
-            <b>colormaplist</b> returns the available colormaps as an <b>m</b>-by-<b>1</b> string array.</p>
+            colormaplist returns the available colormaps as an m-by-1 string array.</p>
 
 ## Example
 

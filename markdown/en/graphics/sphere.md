@@ -22,7 +22,7 @@ Create sphere.
 ## Description
 
 <p>
-            <b>sphere</b> creates sphere and plots it.</p>
+            sphere creates sphere and plots it.</p>
 
 ## Example
 

@@ -29,9 +29,12 @@ Bar graph.
 ## Description
 
 <p>
-            <b>bar(X, Y)</b> creates a bar graph using two sets of X-Y data vectors.</p>
+            bar(X, Y) creates a bar graph using two sets of X-Y data vectors.</p>
+
 <p>When only one argument is provided (Y), it is interpreted as a vector containing Y values, and the X coordinates are generated as a sequence from 1 to the number of elements in the Y vector.</p>
+
 <p>You can optionally specify the width of the bars.</p>
+
 <p>A value of 1.0 will make each bar exactly touch its neighboring bars, while the default width is set to 0.8.</p>
 
 ## Examples

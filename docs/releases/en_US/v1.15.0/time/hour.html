@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="hour"><a class="header" href="#hour">hour</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="hour"><a class="header" href="#hour">hour</a></h1>
 <p>Hours part of the input date and time.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,8 +174,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>h = hour(t)</b> extracts the hour component from each date and time specified in <b>t</b>.</p>
-<p>The output <b>h</b> is a double array containing integer values ranging from 0 to 23.</p>
+            h = hour(t) extracts the hour component from each date and time specified in t.</p>
+<p>The output h is a double array containing integer values ranging from 0 to 23.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">h = hour(738427.656845093)
 h = hour("2021/09/28 15:45:51", 'YYYY/M/DD HH:MM:SS')

@@ -18,7 +18,8 @@ Write text to a file.
 ## Description
 
 <p>
-            <b>filewrite</b> saves a character array, cell of string or string array to a file.</p>
+            filewrite saves a character array, cell of string or string array to a file.</p>
+
 <p>file saved uses by default UTF-8 (NO-BOM) encoding.</p>
 
 ## Examples

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="com_ismethod"><a class="header" href="#com_ismethod">COM_ismethod</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="com_ismethod"><a class="header" href="#com_ismethod">COM_ismethod</a></h1>
 <p>Determines if input is an existing COM object method.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,7 +173,8 @@
 <li>r - a logical.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>r = ismethod(h, methodname)</b>returns true if the specified name is a method of the COM object h. Otherwise, it returns false.</p>
+<pre><code>    r = ismethod(h, methodname) returns true if the specified name is a method of the COM object h. Otherwise, it returns false.
+</code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">e = actxserver('Excel.Application');
 ismethod(e, 'Quit')

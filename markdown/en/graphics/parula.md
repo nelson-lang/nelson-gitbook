@@ -18,9 +18,10 @@ Parula colormap array.
 ## Description
 
 <p>
-            <b>parula</b> returns the colormap with parula colors.</p>
+            parula returns the colormap with parula colors.</p>
+
 <p>
-                <b>parula</b> is the default colormap.</p>
+                parula is the default colormap.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ Return true if variable var is a structure.
 
 ## Description
 
-<b>isstruct</b>returns a logical 1 if the argument is a struct (structure) and a logical 0 otherwise.
+        isstruct returns a logical 1 if the argument is a struct (structure) and a logical 0 otherwise.
 
 ## Examples
 

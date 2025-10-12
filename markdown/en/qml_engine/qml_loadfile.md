@@ -17,6 +17,7 @@ Load a QML file.
 ## Description
 
 <p>Load a QML file</p>
+
 <p>It creates a QML component and load .qml file.</p>
 
 ## Example

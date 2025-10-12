@@ -17,9 +17,11 @@ Raise an error message.
 ## Description
 
 <p>
-            <b>error</b> stops the current script execution.</p>
+            error stops the current script execution.</p>
+
 <p>
-                <b>error('')</b> will be ignored and the script will continue to run.</p>
+                error('') will be ignored and the script will continue to run.</p>
+
 <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
 
 ## Examples

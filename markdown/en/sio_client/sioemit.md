@@ -15,7 +15,7 @@ Emit an event to web client.
 ## Description
 
 <p>
-            <b>sioemit</b> emits an event to client.</p>
+            sioemit emits an event to client.</p>
 
 ## Example
 

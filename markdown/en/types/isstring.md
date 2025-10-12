@@ -16,7 +16,7 @@ Return true if variable var is a string array.
 
 ## Description
 
-<b>isstring</b>returns a logical 1 if the argument is a string array and a logical 0 otherwise.
+        isstring returns a logical 1 if the argument is a string array and a logical 0 otherwise.
 
 ## Examples
 

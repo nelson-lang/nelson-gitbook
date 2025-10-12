@@ -19,7 +19,7 @@ Addition, + operator
 ## Description
 
 <p>
-            <b>C = plus(A, B)</b> performs addition A + B variables.</p>
+            C = plus(A, B) performs addition A + B variables.</p>
 
 ## Examples
 

@@ -23,7 +23,7 @@ Creates a struct.
 ## Description
 
 <p>
-            <b>struct</b> returns a structure.</p>
+            struct returns a structure.</p>
 
 ## Examples
 

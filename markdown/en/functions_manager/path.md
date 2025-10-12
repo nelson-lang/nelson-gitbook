@@ -21,7 +21,7 @@ Modify or display Nelson’s load path.
 ## Description
 
 <p>
-            <b>path</b> modifies or displays Nelson’s load path.</p>
+            path modifies or displays Nelson’s load path.</p>
 
 ## Example
 

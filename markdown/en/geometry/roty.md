@@ -17,7 +17,7 @@
 ## Description
 
 <p>
-            <b>roty</b> returns 3x3 transformation matrix for rotations around y-axis.</p>
+            roty returns 3x3 transformation matrix for rotations around y-axis.</p>
 
 ## Bibliography
 

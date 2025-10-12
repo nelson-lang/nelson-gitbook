@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="assert_isfalse"><a class="header" href="#assert_isfalse">assert_isfalse</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="assert_isfalse"><a class="header" href="#assert_isfalse">assert_isfalse</a></h1>
 <p>Check that condition is false.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -168,29 +169,47 @@
 </ul>
 <h2 id="input-argument"><a class="header" href="#input-argument">Input argument</a></h2>
 <ul>
-<li>x - a logical value</li>
-<li>err_msg - a string, the error message to be printed in case of failure (optional).</li>
+<li>x - a logical value to be tested for falseness.</li>
+<li>err_msg - a string containing the custom error message to display in case of assertion failure (optional).</li>
 </ul>
 <h2 id="output-argument"><a class="header" href="#output-argument">Output argument</a></h2>
 <ul>
-<li>res - a logical value</li>
-<li>msg - a string value, the error message. If x == false, then msg == ''. If x == true, then msg contains the error message.</li>
+<li>r - a logical value: true if the assertion passes, false otherwise.</li>
+<li>msg - a string containing the error message. If x == false, then msg == ''. If x == true, then msg contains the assertion failure message.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>Raises an error if x is true. Raises an error if x is not a logical.</p>
+<p>assert_isfalse raises an error if the input value is true.</p>
+<p>This function also raises an error if the input is not a logical value, ensuring type safety.</p>
+<p>When the optional err_msg parameter is provided, it will be used as the error message instead of the default message when the assertion fails.</p>
+<p>This function is useful in unit testing to verify that conditions are false or that logical operations return the expected false result.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
+<p>Test that demonstrates assertion failure (3 is not equal to 4):</p>
 <pre><code class="language-matlab">assert_isfalse(3 ~= 4)
 </code></pre>
+<p>Test that passes (3 equals 4 is false):</p>
 <pre><code class="language-matlab">assert_isfalse(3 == 4)
 </code></pre>
+<p>Test with explicit false value:</p>
 <pre><code class="language-matlab">r = assert_isfalse(false)
 </code></pre>
+<p>Using return values to handle assertion results:</p>
 <pre><code class="language-matlab">[r, msg] = assert_isfalse(false)
 </code></pre>
-<pre><code class="language-matlab">[r, msg] = assert_isfalse(3 == 3, 'your error message.')
+<p>Test with custom error message:</p>
+<pre><code class="language-matlab">[r, msg] = assert_isfalse(3 == 3, 'your error message.');
+if ~r
+    disp(['Custom error: ' msg])
+end
+</code></pre>
+<p>Example showing error handling when assertion fails:</p>
+<pre><code class="language-matlab">try
+    assert_isfalse(true, 'This should be false!');
+catch ME
+    disp(['Error caught: ' ME.message])
+end
 </code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
-<p><a href="../assert_functions/assert_istrue.html">assert_istrue</a>, <a href="../assert_functions/assert_checkerror.html">assert_checkerror</a>.</p>
+<p><a href="../assert_functions/assert_istrue.html">assert_istrue</a>, <a href="../assert_functions/assert_checkerror.html">assert_checkerror</a>, <a href="../assert_functions/assert_isequal.html">assert_isequal</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>

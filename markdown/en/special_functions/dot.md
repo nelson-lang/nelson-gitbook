@@ -19,7 +19,36 @@ Dot product.
 ## Description
 
 <p>
-            <b>R = dot(A, B)</b> returns the scalar dot product of <b>A</b> and <b>B</b>.</p>
+            R = dot(A, B) returns the scalar dot product of A and B.
+        </p>
+
+<p>For real vectors</p>
+
+$$\mathbf{a}$$
+
+<p>and</p>
+
+$$\mathbf{b}$$
+
+<p>of length</p>
+
+$$n$$
+
+<p>:</p>
+
+$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1 b_1 + a_2 b_2 + \cdots + a_n b_n$$
+
+<p>For complex vectors, the dot product is:</p>
+
+$$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} \overline{a_i} b_i$$
+
+<p>where</p>
+
+$$\overline{a_i}$$
+
+<p>denotes the complex conjugate of</p>
+
+$$a_i$$
 
 ## Bibliography
 

@@ -12,7 +12,7 @@ Return a missing value.
 
 ## Description
 
-<b>missing</b>returns a special value to represent missing (undefined data). When assigned into an array or table, the<b>missing</b>value is automatically converted into the standard missing value used by the array’s data type.
+        missing returns a special value to represent missing (undefined data). When assigned into an array or table, the missing value is automatically converted into the standard missing value used by the array’s data type.
 
 ## Example
 

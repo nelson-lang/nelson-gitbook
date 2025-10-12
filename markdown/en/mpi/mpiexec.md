@@ -21,6 +21,7 @@ Run an MPI script.
 ## Description
 
 <p>Run an MPI script in nelson.</p>
+
 <p>MPI process are launched in CLI mode (no gui, no plot).</p>
 
 ## Example

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="isreal"><a class="header" href="#isreal">isreal</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="isreal"><a class="header" href="#isreal">isreal</a></h1>
 <p>Return true if all imaginary part is a zero array.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,7 +171,8 @@
 <li>res - a logical: true or false</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>isreal</b>returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.</p>
+<pre><code>    isreal returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
+</code></pre>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">A = 1 + 0i;
 res = isreal(A)

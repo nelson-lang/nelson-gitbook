@@ -16,7 +16,7 @@ Inverse hyperbolic cosecant.
 
 ## Description
 
-<b>acsch</b>computes the inverse hyperbolic cosecant for each element of<b>x</b>.
+        acsch computes the inverse hyperbolic cosecant for each element of x.
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lqed"><a class="header" href="#lqed">lqed</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lqed"><a class="header" href="#lqed">lqed</a></h1>
 <p>Calculates the discrete Kalman estimator configuration based on a continuous cost function.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -180,7 +181,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[L, P, Z, E] = LQED(A, G, C, Q, R, Ts)</b> Calculates the discrete Kalman gain matrix <b>L</b> to minimize the discrete estimation error, equivalent to the estimation error in the continuous system.</p>
+            [L, P, Z, E] = LQED(A, G, C, Q, R, Ts) Calculates the discrete Kalman gain matrix L to minimize the discrete estimation error, equivalent to the estimation error in the continuous system.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [10     1.2;  3.3     4];
 B = [5     0;   0     6];

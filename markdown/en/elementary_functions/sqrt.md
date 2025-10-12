@@ -17,9 +17,24 @@ Square root.
 ## Description
 
 <p>
-            <b>sqrt</b> computes the square root.</p>
-<p>If input argument is a complex number or negative, <b>sqrt(z)</b> computes: sqrt(r) * (cos(phi/2) + sin(phi/2) * i) with</p>
-<p>r = sqrt((real(z) * real(z)) + (imag(z) * imag(z))) and phi = atan2(imag(z), real(z))</p>
+            sqrt computes the square root.
+        </p>
+
+<p>For real positive numbers:</p>
+
+$$\sqrt{x}$$
+
+<p>For complex numbers z = x + iy:</p>
+
+$$\sqrt{z} = \sqrt{r} e^{i\phi/2}$$
+
+<p>where</p>
+
+$$r = |z| = \sqrt{x^2 + y^2}$$
+
+<p>and</p>
+
+$$\phi = \arg(z) = \text{atan2}(y, x)$$
 
 ## Example
 

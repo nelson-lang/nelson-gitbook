@@ -20,7 +20,8 @@ Rename field names of a struct or struct array.
 ## Description
 
 <p>
-            <b>renameStructField</b> renames the field names of a struct or struct array.</p>
+            renameStructField renames the field names of a struct or struct array.</p>
+
 <p>It supports renaming all field names at once or renaming selected field names individually.</p>
 
 ## Examples

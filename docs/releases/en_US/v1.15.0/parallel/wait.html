@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="wait"><a class="header" href="#wait">wait</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="wait"><a class="header" href="#wait">wait</a></h1>
 <p>Wait for futures to be completed.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,11 +176,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>wait(f)</b> pauses execution until each element of the Future array <b>f</b> is finished.</p>
+            wait(f) pauses execution until each element of the Future array f is finished.</p>
 <p>
-                <b>wait(f, state)</b> pauses execution until each element of the Future array <b>f</b> has its 'State' property set to state.</p>
+                wait(f, state) pauses execution until each element of the Future array f has its 'State' property set to state.</p>
 <p>
-                    <b>tf = wait(f, state, timeout)</b> pauses execution for a maximum of timeout seconds.</p>
+                    tf = wait(f, state, timeout) pauses execution for a maximum of timeout seconds.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">fptr = str2func('pause');
 for i = 1:15

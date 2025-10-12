@@ -27,7 +27,7 @@ set or get z-axis limits.
 ## Description
 
 <p>
-            <b>zlim</b> get or set the limits of the z-axis for the current plot.</p>
+            zlim get or set the limits of the z-axis for the current plot.</p>
 
 ## Example
 

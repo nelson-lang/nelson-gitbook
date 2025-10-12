@@ -19,7 +19,9 @@ Combines values from all processes and distributes the result back to all proces
 ## Description
 
 <p>Combines values from all processes and distributes the result back to all processes.</p>
+
 <p>Nelson does not check to ensure that the reduction operation are all the same size across the various processes in the group.</p>
+
 <p>Please be sure that each process passes the same sized array to the MPI_Allreduce operation.</p>
 
 ## Example

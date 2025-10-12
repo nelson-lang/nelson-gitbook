@@ -21,10 +21,13 @@ Changes Nelson current directory.
 ## Description
 
 <p>Changes the current working directory to dirname.</p>
+
 <p>
-            <b>a = cd()</b> without input argument returns the current working directory.</p>
+            a = cd() without input argument returns the current working directory.</p>
+
 <p>
-                <b>cd()</b> without input argument displays the current working directory.</p>
+                cd() without input argument displays the current working directory.</p>
+
 <p></p>
 
 ## Example

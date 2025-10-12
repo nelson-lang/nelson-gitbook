@@ -19,21 +19,28 @@ Check for the existence.
 ## Description
 
 <p>
-            <b>exists</b> checks for the existence of variable, builtin, file or directory.</p>
+            exists checks for the existence of variable, builtin, file or directory.</p>
+
 <p>
-                <b>exists</b> returns:</p>
+                exists returns:</p>
+
 <p>
-                    <b>0</b> does not exist</p>
+                    0 does not exist</p>
+
 <p>
-                        <b>1</b> is an variable</p>
+                        1 is an variable</p>
+
 <p>
-                            <b>2</b> is a file</p>
+                            2 is a file</p>
+
 <p>
-                                <b>3</b> is a mex function</p>
+                                3 is a mex function</p>
+
 <p>
-                                    <b>5</b> is a builtin or function</p>
+                                    5 is a builtin or function</p>
+
 <p>
-                                        <b>7</b> is a directory</p>
+                                        7 is a directory</p>
 
 ## Example
 

@@ -13,7 +13,7 @@ Checks if version is for Windows platform.
 ## Description
 
 <p>
-            <b>ispc</b> checks if it is a Windows platform.</p>
+            ispc checks if it is a Windows platform.</p>
 
 ## Example
 

@@ -16,8 +16,9 @@ Exponent of next higher power of 2
 
 ## Description
 
-<p>if <b>M</b> is a vector or a matrix <b>nextpow2(M)</b> applies element-wise.</p>
-<p>If <b>M</b> is a scalar, <b>nextpow2(M)</b> returns the first <b>p</b> such that <b>2^p >= abs(M)</b>.</p>
+<p>if M is a vector or a matrix nextpow2(M) applies element-wise.</p>
+
+<p>If M is a scalar, nextpow2(M) returns the first p such that 2^p >= abs(M).</p>
 
 ## Example
 

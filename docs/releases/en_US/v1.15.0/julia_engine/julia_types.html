@@ -155,22 +155,39 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="julia-nelson-types"><a class="header" href="#julia-nelson-types">Julia Nelson types</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="julia-nelson-types"><a class="header" href="#julia-nelson-types">Julia Nelson types</a></h1>
 <p>Managing Data between Julia and Nelson.</p>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>Managing data returned by Julia functions:</b>
+            Managing data returned by Julia functions:
         </p>
 <p>This documentation explains how data is managed and converted between Julia and Nelson. It covers scalar, vector, and matrix conversions, examples of usage, and related resources.</p>
-Julia return type, as shown in Julia Corresponding Nelson type (scalar) Bool logical Complex{Float64} double (complex) Complex{Float32} single (complex) Float64 double Float32 single Int8 int8 Int16 int16 Int32 int32 Int64 int64 UInt8 uint8 UInt16 uint16 UInt32 uint32 UInt64 uint64 String string<p></p>
+<div class="table-wrapper"><table><thead><tr><th>Julia return type, as shown in Julia</th><th>Corresponding Nelson type (scalar)</th></tr></thead><tbody>
+<tr><td>Bool</td><td>logical</td></tr>
+<tr><td>Complex{Float64}</td><td>double (complex)</td></tr>
+<tr><td>Complex{Float32}</td><td>single (complex)</td></tr>
+<tr><td>Float64</td><td>double</td></tr>
+<tr><td>Float32</td><td>single</td></tr>
+<tr><td>Int8</td><td>int8</td></tr>
+<tr><td>Int16</td><td>int16</td></tr>
+<tr><td>Int32</td><td>int32</td></tr>
+<tr><td>Int64</td><td>int64</td></tr>
+<tr><td>UInt8</td><td>uint8</td></tr>
+<tr><td>UInt16</td><td>uint16</td></tr>
+<tr><td>UInt32</td><td>uint32</td></tr>
+<tr><td>UInt64</td><td>uint64</td></tr>
+<tr><td>String</td><td>string</td></tr>
+</tbody></table>
+</div><p></p>
 <p>Vector and Matrix of Nelson type returned as matrix in Julia.</p>
 <p>
-            <b>cell</b> converted to <b>Array{Any}</b>.</p>
+            cell converted to Array{Any}.</p>
 <p>
-                <b>struct</b> converted to <b>Dict{Any, Any}</b>.</p>
-<p>matrix of struct converted to <b>Matrix{Dict}</b>.</p>
+                struct converted to Dict{Any, Any}.</p>
+<p>matrix of struct converted to Matrix{Dict}.</p>
 <p>
-                    <b>dictionary</b> converted to <b>Dict{Any, Any}</b>.</p>
+                    dictionary converted to Dict{Any, Any}.</p>
 <p></p>
 <p>Ensure that all data passed between Julia and Nelson adheres to the type mappings described above for smooth conversions.</p>
 <p>For advanced use cases, such as handling custom Julia types or deeply nested data structures, additional preprocessing in Julia or Nelson may be required.</p>

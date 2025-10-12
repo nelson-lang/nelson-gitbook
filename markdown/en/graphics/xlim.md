@@ -27,7 +27,7 @@ set or get x-axis limits.
 ## Description
 
 <p>
-            <b>xlim</b> get or set the limits of the x-axis for the current plot.</p>
+            xlim get or set the limits of the x-axis for the current plot.</p>
 
 ## Example
 

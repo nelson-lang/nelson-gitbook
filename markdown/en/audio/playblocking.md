@@ -16,7 +16,7 @@ Plays an audioplayer object with blocking.
 
 ## Description
 
-<b>playblocking</b>plays an audioplayer object until playback is finished.
+        playblocking plays an audioplayer object until playback is finished.
 
 ## Example
 

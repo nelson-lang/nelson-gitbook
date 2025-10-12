@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="cell2table"><a class="header" href="#cell2table">cell2table</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="cell2table"><a class="header" href="#cell2table">cell2table</a></h1>
 <p>Convert cell array to table.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,10 +172,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>T = cell2table(C)</b> converts the contents of an m-by-n cell array <b>C</b> into an m-by-n table.</p>
+            T = cell2table(C) converts the contents of an m-by-n cell array C into an m-by-n table.</p>
 <p>Each column of the input cell array becomes the data for a corresponding variable in the output table.</p>
-<p>To generate variable names in the output table, <b>cell2table</b> appends the column numbers to the name of the input array.</p>
-<p>If the input array does not have a name, <b>cell2table</b> assigns default variable names in the format <b>"Var1", "Var2", ... , "VarN"</b>, where <b>N</b> is the number of columns in the cell array.</p>
+<p>To generate variable names in the output table, cell2table appends the column numbers to the name of the input array.</p>
+<p>If the input array does not have a name, cell2table assigns default variable names in the format "Var1", "Var2", ... , "VarN", where N is the number of columns in the cell array.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
 % Convert the cell array to a table

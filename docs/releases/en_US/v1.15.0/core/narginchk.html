@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="narginchk"><a class="header" href="#narginchk">narginchk</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="narginchk"><a class="header" href="#narginchk">narginchk</a></h1>
 <p>Checks the number of input arguments.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -168,8 +169,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>narginchk</b> checks the number of input arguments of an function.</p>
-<p>To ensure that a minimum number of arguments is provided, while allowing an unlimited maximum number by setting <b>maxArgs</b> to <b>inf</b>. For instance, use <b>narginchk(2, inf)</b> to throw an error if fewer than two inputs are supplied.</p>
+            narginchk checks the number of input arguments of an function.</p>
+<p>To ensure that a minimum number of arguments is provided, while allowing an unlimited maximum number by setting maxArgs to inf. For instance, use narginchk(2, inf) to throw an error if fewer than two inputs are supplied.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <p>With an macro function:</p>
 <pre><code class="language-matlab">narginchk(1, 2)

@@ -22,7 +22,7 @@ Returns I,J,V triplets from a sparse matrix.
 ## Description
 
 <p>
-            <b>IJV</b> converts a sparse matrix into its COO format.</p>
+            IJV converts a sparse matrix into its COO format.</p>
 
 ## Example
 

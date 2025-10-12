@@ -17,6 +17,7 @@ Load a QML string.
 ## Description
 
 <p>Load a QML string</p>
+
 <p>It creates a QML component and load .qml file.</p>
 
 ## Example

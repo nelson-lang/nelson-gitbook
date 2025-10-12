@@ -17,11 +17,14 @@ Retrieve results from function running in the background pool.
 ## Description
 
 <p>
-            <b>[y1, ... , ym] = fetchOutputs(f)</b> retrieves <b>m</b> results from a <b>Future</b> array <b>f</b>.</p>
+            [y1, ... , ym] = fetchOutputs(f) retrieves m results from a Future array f.</p>
+
 <p></p>
+
 <p>
-                <b>fetchOutputs</b> waits for the function associated to <b>f</b> to finish before retrieving results.</p>
-<p>If <b>fetchOutputs</b> is called, Read property of each element in <b>f</b> is set to true.</p>
+                fetchOutputs waits for the function associated to f to finish before retrieving results.</p>
+
+<p>If fetchOutputs is called, Read property of each element in f is set to true.</p>
 
 ## Examples
 

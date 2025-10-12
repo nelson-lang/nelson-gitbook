@@ -17,7 +17,14 @@ Sinc function.
 ## Description
 
 <p>
-            <b>c = sinc(m)</b> returns an array <b>c</b> whose elements are the sinc of the elements of the input: <b>m</b>.</p>
+            c = sinc(m) returns an array c whose elements are the sinc of the elements of the input: m.
+        </p>
+
+<p>The sinc function (normalized) is defined as:</p>
+
+$$\text{sinc}(x) = \begin{cases} \frac{\sin(\pi x)}{\pi x} & \text{if } x \neq 0 \\ 1 & \text{if } x = 0 \end{cases}$$
+
+<p>The sinc function is the Fourier transform of the rectangular pulse function and appears frequently in signal processing and communications.</p>
 
 ## Example
 

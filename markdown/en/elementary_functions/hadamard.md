@@ -19,7 +19,7 @@ Hadamard matrix
 ## Description
 
 <p>
-            <b>H = hadamard(n)</b> returns the Hadamard Matrix of order <b>n</b>.</p>
+            H = hadamard(n) returns the Hadamard Matrix of order n.</p>
 
 ## Bibliography
 

@@ -19,9 +19,10 @@ Types of dictionary keys and values.
 ## Description
 
 <p>
-            <b>keyType = types(d)</b> returns the data type of the keys in the dictionary.</p>
+            keyType = types(d) returns the data type of the keys in the dictionary.</p>
+
 <p>
-                <b>[keyType, valueType] = types(d)</b> returns the data types of the keys and values in the specified dictionary. If the dictionary d is not configured, types returns a string scalar indicating <b>missing</b>.</p>
+                [keyType, valueType] = types(d) returns the data types of the keys and values in the specified dictionary. If the dictionary d is not configured, types returns a string scalar indicating missing.</p>
 
 ## Example
 

@@ -18,8 +18,9 @@ Check whether two dictionary keys are same.
 ## Description
 
 <p>
-            <b>tf = keyMatch(A, B)</b> returns <b>true</b> if arrays <b>A</b> and <b>B</b> have identical classes, properties, dimensions, and values, and returns <b>false</b> otherwise.</p>
-<p>For custom classes, overloading <b>keyMatch</b> may be necessary to ensure accurate equivalence.</p>
+            tf = keyMatch(A, B) returns true if arrays A and B have identical classes, properties, dimensions, and values, and returns false otherwise.</p>
+
+<p>For custom classes, overloading keyMatch may be necessary to ensure accurate equivalence.</p>
 
 ## Example
 

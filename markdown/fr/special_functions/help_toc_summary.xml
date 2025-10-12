@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>special_functions</module>
+    <section name="Fonctions spéciales">
+      <chapter_description>
+        <p>Le module Fonctions Spéciales fournit des outils pour effectuer des opérations mathématiques avancées dans Nelson.</p>
+        <p>Il inclut des fonctions pour les distributions statistiques, les calculs combinatoires, et d'autres calculs mathématiques spécialisés qui sont essentiels dans diverses applications scientifiques et d'ingénierie.</p>  
+        <p>Ce module améliore les capacités de Nelson en offrant une gamme de fonctions qui supportent des analyses complexes et des tâches de modélisation.</p>
+    </chapter_description>
+      <keyword name="betainc" link="betainc.md" description="Fonction bêta incomplète"/>
+      <keyword name="cross" link="cross.md" description="Produit vectoriel."/>
+      <keyword name="dot" link="dot.md" description="Produit scalaire."/>
+      <keyword name="factor" link="factor.md" description="Facteurs premiers"/>
+      <keyword name="gamma" link="gamma.md" description="Fonction spéciale gamma"/>
+      <keyword name="gammaln" link="gammaln.md" description="Logarithme de la fonction gamma&#10;"/>
+      <keyword name="gcd" link="gcd.md" description="Plus grand commun diviseur"/>
+      <keyword name="interp1" link="interp1.md" description="Interpolation linéaire de données 1-D"/>
+      <keyword name="peaks" link="peaks.md" description="Fonction peaks"/>
+      <keyword name="primes" link="primes.md" description="Nombres premiers inférieurs ou égaux à la valeur d'entrée"/>
+    </section>
+  </toc>
+</help_summary>

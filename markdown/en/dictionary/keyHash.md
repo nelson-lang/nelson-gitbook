@@ -17,8 +17,10 @@ Create a hash code for a dictionary key.
 ## Description
 
 <p>
-            <b>H = keyHash(A)</b> returns a uint64 scalar representing the input array, <b>A</b>.</p>
+            H = keyHash(A) returns a uint64 scalar representing the input array, A.</p>
+
 <p>The keyHash function computes a hash code derived from the characteristics of the input.</p>
+
 <p>For custom classes, keyHash might require overloading to guarantee proper equivalence.</p>
 
 ## Example

@@ -15,11 +15,13 @@ load compiler configuration.
 ## Description
 
 <p>
-            <b>loadcompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.</p>
+            loadcompilerconf returns true if compiler was previously configured with configuremsvc or configuremingw.</p>
+
 <p>
-                <b>loadcompilerconf</b> returns always false on others platforms and 'unix' as compiler.</p>
+                loadcompilerconf returns always false on others platforms and 'unix' as compiler.</p>
+
 <p>
-                    <b>loadcompilerconf</b> is called at Nelson's startup.</p>
+                    loadcompilerconf is called at Nelson's startup.</p>
 
 ## See also
 

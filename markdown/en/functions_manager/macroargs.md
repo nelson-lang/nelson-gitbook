@@ -18,7 +18,7 @@ Returns variables names of a function.
 ## Description
 
 <p>
-            <b>macroargs</b> returns input and output variables used by the function.</p>
+            macroargs returns input and output variables used by the function.</p>
 
 ## Example
 

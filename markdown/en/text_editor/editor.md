@@ -16,17 +16,23 @@ call the embedded text editor.
 ## Description
 
 <p>
-            <b>editor</b> opens an existing file in the nelson's editor.</p>
+            editor opens an existing file in the nelson's editor.</p>
+
 <p>
-                <b>editor</b> must be considered as internal and <b>edit</b> must be preferred.</p>
+                editor must be considered as internal and edit must be preferred.</p>
+
 <p>Set another text editor as default: (example with VS code)</p>
+
 <p>
                     editor('editor_command', 'code')
                 </p>
+
 <p>To restore the default editor, use:</p>
+
 <p>
                     editor('editor_command', '')
                 </p>
+
 <p>Change text editor is persistent and will be saved in a configuration file.</p>
 
 ## Example

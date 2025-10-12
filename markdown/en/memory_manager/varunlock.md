@@ -14,7 +14,7 @@ Unlocks a variable.
 ## Description
 
 <p>
-            <b>varunlock</b> unlocks a variable.</p>
+            varunlock unlocks a variable.</p>
 
 ## Example
 

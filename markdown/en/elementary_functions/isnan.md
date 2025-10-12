@@ -17,7 +17,7 @@ Check for Not a Number entries.
 ## Description
 
 <p>
-            <b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
+            isnan returns a logical array which is true where elements of M are "Not a Number" values.</p>
 
 ## Example
 

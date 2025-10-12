@@ -22,7 +22,7 @@ Get diagonal elements of matrix or create diagonal matrix.
 ## Description
 
 <p>
-            <b>diag</b> returns diagonal elements of matrix or create diagonal matrix.</p>
+            diag returns diagonal elements of matrix or create diagonal matrix.</p>
 
 ## Example
 

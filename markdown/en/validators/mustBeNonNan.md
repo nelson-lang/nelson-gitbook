@@ -16,7 +16,7 @@ Checks that value is not NaN.
 ## Description
 
 <p>
-            <b>mustBeNonNan</b> checks that value is not NaN or raise an error.</p>
+            mustBeNonNan checks that value is not NaN or raise an error.</p>
 
 ## Example
 

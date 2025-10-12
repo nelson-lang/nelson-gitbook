@@ -17,9 +17,10 @@ Number of dimensions of an array.
 ## Description
 
 <p>
-            <b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.</p>
+            n = ndims(M) return the number of dimension of the array M.</p>
+
 <p>
-                <b>M</b> is greater than or equal to 2.</p>
+                M is greater than or equal to 2.</p>
 
 ## Example
 

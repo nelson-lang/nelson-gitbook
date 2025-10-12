@@ -19,7 +19,7 @@ Hamming window.
 ## Description
 
 <p>
-            <b>c = hamming(m)</b> computes coefficients of a Hamming window of length <b>m</b>.</p>
+            c = hamming(m) computes coefficients of a Hamming window of length m.</p>
 
 ## Bibliography
 

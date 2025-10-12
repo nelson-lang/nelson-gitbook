@@ -20,7 +20,9 @@ Set structure field contents.
 ## Description
 
 <p>Set the contents of the specified field to the value.</p>
+
 <p>Alternative syntax: S.(fieldname) = fieldvalue</p>
+
 <p>Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue</p>
 
 ## Example

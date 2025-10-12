@@ -25,7 +25,7 @@ Create cylinder.
 ## Description
 
 <p>
-            <b>cylinder</b> creates cylinder and plots it.</p>
+            cylinder creates cylinder and plots it.</p>
 
 ## Examples
 

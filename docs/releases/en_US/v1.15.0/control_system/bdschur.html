@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="bdschur"><a class="header" href="#bdschur">bdschur</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="bdschur"><a class="header" href="#bdschur">bdschur</a></h1>
 <p>Block-diagonal Schur factorization.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,7 +175,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[T, B] = bdschur(A, CONDMAX)</b> calculates a transformation matrix <b>T</b>, where <b>B = T \ A * T</b> results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.</p>
+            [T, B] = bdschur(A, CONDMAX) calculates a transformation matrix T, where B = T \ A * T results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.</p>
 <h2 id="bibliography"><a class="header" href="#bibliography">Bibliography</a></h2>
 <p>http://slicot.org/objects/software/shared/doc/MB03RD.html</p>
 <h2 id="used-functions"><a class="header" href="#used-functions">Used function(s)</a></h2>

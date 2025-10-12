@@ -19,9 +19,11 @@ Run function after each function finish running in the background.
 ## Description
 
 <p>
-            <b>B = afterEach(F, fcn, n)</b> returns a AfterEachFuture object <b>B</b>.</p>
-<p>Function <b>fcn</b> is automatically runned after each element in the Future array <b>F</b> was finished.</p>
-<p>If any of the elements in <b>F</b> encounters an error, the <b>Error</b> property of <b>B</b> contains an error.</p>
+            B = afterEach(F, fcn, n) returns a AfterEachFuture object B.</p>
+
+<p>Function fcn is automatically runned after each element in the Future array F was finished.</p>
+
+<p>If any of the elements in F encounters an error, the Error property of B contains an error.</p>
 
 ## Example
 

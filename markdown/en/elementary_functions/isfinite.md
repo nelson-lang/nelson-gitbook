@@ -17,7 +17,7 @@ Check for finite entries.
 ## Description
 
 <p>
-            <b>isfinite</b> returns a logical array which is true where elements of M are finite values.</p>
+            isfinite returns a logical array which is true where elements of M are finite values.</p>
 
 ## Example
 

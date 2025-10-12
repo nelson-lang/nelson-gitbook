@@ -17,7 +17,7 @@ Poles of dynamic system.
 ## Description
 
 <p>
-            <b>P = pole(sys)</b> returns the poles of <b>sys</b>.</p>
+            P = pole(sys) returns the poles of sys.</p>
 
 ## Example
 

@@ -19,7 +19,7 @@ Range space of a matrix.
 ## Description
 
 <p>
-            <b>O = orth(A)</b> returns an orthonormal basis for the range of <b>A</b>.</p>
+            O = orth(A) returns an orthonormal basis for the range of A.</p>
 
 ## Example
 

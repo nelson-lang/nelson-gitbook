@@ -20,8 +20,10 @@ Compress files into zip file.
 ## Description
 
 <p>
-            <b>zip</b> compress files and directories into zip archive.</p>
+            zip compress files and directories into zip archive.</p>
+
 <p>Each individual file must be smaller than 4 GB.</p>
+
 <p>Number of files specified must be less than 65535.</p>
 
 ## Example

@@ -19,7 +19,7 @@ Rank of matrix.
 ## Description
 
 <p>
-            <b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).</p>
+            rank(A) returns the number of linearly independent columns in a matrix (rank of the matrix).</p>
 
 ## Example
 

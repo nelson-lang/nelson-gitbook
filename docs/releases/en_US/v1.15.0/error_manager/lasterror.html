@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lasterror"><a class="header" href="#lasterror">lasterror</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lasterror"><a class="header" href="#lasterror">lasterror</a></h1>
 <p>Returns last recorded error message.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -169,11 +170,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>l = lasterror()</b> returns a structure containing the last error message and information as an struct.</p>
+            l = lasterror() returns a structure containing the last error message and information as an struct.</p>
 <p>
-                <b>lasterror('reset')</b> clears last error.</p>
+                lasterror('reset') clears last error.</p>
 <p>
-                    <b>lasterror(error_struct)</b> set last error.</p>
+                    lasterror(error_struct) set last error.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">state = execstr('xxxxxx', 'errcatch')
 if ~state

@@ -17,7 +17,7 @@ Determine whether input is column vector.
 ## Description
 
 <p>
-            <b>iscolumn(V)</b> returns logical <b>true</b> if size(V) returns [n, 1] with a nonnegative integer value n, and logical <b>false</b> otherwise.</p>
+            iscolumn(V) returns logical true if size(V) returns [n, 1] with a nonnegative integer value n, and logical false otherwise.</p>
 
 ## Example
 

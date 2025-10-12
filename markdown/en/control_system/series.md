@@ -20,9 +20,12 @@ Series connection of two models.
 ## Description
 
 <p>
-            <b>series</b> function links two model objects in a sequential manner.</p>
+            series function links two model objects in a sequential manner.</p>
+
 <p>It is versatile and can accept various types of models.</p>
+
 <p>However, for successful connection, both systems must share the same nature, being either continuous or discrete, and must have identical sample times.</p>
+
 <p>Static gains are treated as neutral and can be defined using regular matrices.</p>
 
 ## Example

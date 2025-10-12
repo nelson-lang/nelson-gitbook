@@ -17,7 +17,7 @@ Permute array dimensions.
 
 ## Description
 
-<b>permute</b>permutes the dimensions of an array.
+        permute permutes the dimensions of an array.
 
 ## Example
 

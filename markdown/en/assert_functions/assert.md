@@ -13,27 +13,63 @@ Check that condition is true.
 
 ## Input argument
 
-- x - a logical value
-- err_msg - a string, the error message to be printed in case of failure (optional).
+- x - a logical value to be tested for truthfulness.
+- err_msg - a string containing the custom error message to display in case of assertion failure (optional).
 
 ## Output argument
 
-- res - a logical value
-- msg - a string value, the error message. If x == true, then msg == ''. If x == false, then msg contains the error message.
+- r - a logical value: true if the assertion passes, false otherwise.
+- msg - a string containing the error message. If x == true, then msg == ''. If x == false, then msg contains the assertion failure message.
 
 ## Description
 
-Raises an error if x is false. Raises an error if x is not a logical.
+<p>assert raises an error if the input value is false.</p>
 
-## Example
+<p>This function also raises an error if the input is not a logical value, ensuring type safety.</p>
+
+<p>When the optional err_msg parameter is provided, it will be used as the error message instead of the default message when the assertion fails.</p>
+
+<p>This is the fundamental assertion function that forms the basis for testing conditions in programs and unit tests.</p>
+
+## Examples
+
+Test assertion failure with custom error message:
 
 ```matlab
-assert(4 == 3, _('error for comparaison.'))
+try
+    assert(4 == 3, _('error for comparison.'))
+catch ME
+    disp(['Error: ' ME.message])
+end
+```
+
+Test successful assertion:
+
+```matlab
+assert(5 > 3);
+disp('Assertion passed: 5 is greater than 3')
+```
+
+Using return values to handle assertion results:
+
+```matlab
+[r, msg] = assert(false, 'This condition is false');
+if ~r
+    disp(['Assertion failed: ' msg])
+end
+```
+
+Basic assertion without custom message:
+
+```matlab
+x = 10;
+assert(x > 0)  % Will pass
+assert(x < 0)  % Will fail with default message
 ```
 
 ## See also
 
-[assert_istrue](../assert_functions/assert_istrue.md), [assert_isfalse](../assert_functions/assert_isfalse.md).
+[assert_istrue](../assert_functions/assert_istrue.md), [assert_isfalse](../assert_functions/assert_isfalse.md), [assert_isequal](../assert_functions/assert_isequal.md), [assert_checkerror](../assert_functions/assert_checkerror.md).
 
 ## History
 

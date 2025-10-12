@@ -18,7 +18,7 @@ Hot colormap array.
 ## Description
 
 <p>
-            <b>hot</b> returns the colormap with hot colors.</p>
+            hot returns the colormap with hot colors.</p>
 
 ## Example
 

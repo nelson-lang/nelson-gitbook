@@ -32,6 +32,7 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 ## Description
 
 <p>To reduce the matrices A and B using (and optionally accumulating) state-space and input-space transformations U and V respectively, such that the pair of matrices</p>
+
 <p>Ac = U' * A * U,    Bc = U' * B * V</p>
 
 ## Bibliography

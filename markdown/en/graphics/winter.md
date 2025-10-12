@@ -18,7 +18,7 @@ Winter colormap array.
 ## Description
 
 <p>
-            <b>winter</b> returns the colormap with winter colors.</p>
+            winter returns the colormap with winter colors.</p>
 
 ## Example
 

@@ -19,7 +19,7 @@ Convert decimal number to base 16.
 ## Description
 
 <p>
-            <b>dec2hex</b> converts decimal number to base 16.</p>
+            dec2hex converts decimal number to base 16.</p>
 
 ## Example
 

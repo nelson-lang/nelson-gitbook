@@ -19,7 +19,7 @@ Subtraction, - operator
 ## Description
 
 <p>
-            <b>C = minus(A, B)</b> performs subtraction A - B variables.</p>
+            C = minus(A, B) performs subtraction A - B variables.</p>
 
 ## Examples
 

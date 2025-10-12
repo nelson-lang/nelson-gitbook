@@ -14,7 +14,8 @@ Removes MPI_Comm object.
 ## Description
 
 <p>
-            <b>delete(h)</b> deletes MPI_Comm object itself.</p>
+            delete(h) deletes MPI_Comm object itself.</p>
+
 <p>Do not forget to clear variable afterward.</p>
 
 ## Example

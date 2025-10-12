@@ -19,7 +19,7 @@ Creates an matrix made of ones.
 ## Description
 
 <p>
-            <b>ones</b> returns a matrix made of ones.</p>
+            ones returns a matrix made of ones.</p>
 
 ## Examples
 

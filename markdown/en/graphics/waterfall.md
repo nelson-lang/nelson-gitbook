@@ -29,9 +29,11 @@ waterfall plot.
 ## Description
 
 <p>
-            <b>waterfall</b>  creates a waterfall plot, which is a mesh plot with a partial curtain along the y dimension.</p>
+            waterfall  creates a waterfall plot, which is a mesh plot with a partial curtain along the y dimension.</p>
+
 <p>This results in a 'waterfall' effect.</p>
-<p>The function takes the same input arguments as the <b>mesh</b> function.</p>
+
+<p>The function takes the same input arguments as the mesh function.</p>
 
 ## Examples
 

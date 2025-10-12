@@ -13,7 +13,7 @@ Returns available languages in Nelson.
 ## Description
 
 <p>
-            <b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.</p>
+            getavailablelanguages returns the list of currently supported languages in Nelson.</p>
 
 ## Example
 

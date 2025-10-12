@@ -155,12 +155,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="readwrite-table-to-files"><a class="header" href="#readwrite-table-to-files">Read/Write table to files</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="readwrite-table-to-files"><a class="header" href="#readwrite-table-to-files">Read/Write table to files</a></h1>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>Nelson provides extensive capabilities for reading and writing tables to files, supporting both text-based and binary storage formats to meet different data management needs.</p>
 <p>Text files (.csv, .txt, etc.):</p>
-writetable() exports tables to delimited text files with customizable separators readtable() imports tables from delimited text files with automatic format detection Text files preserve variable names and data in human-readable format<p>Binary file:</p>
-Nelson HDF5 format (.nh5): Efficient binary storage using HDF5 format Preserves all table metadata and data types Use save -nh5 and load commands<p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
+<pre><code>        writetable() exports tables to delimited text files with customizable separators
+        readtable() imports tables from delimited text files with automatic format detection
+        Text files preserve variable names and data in human-readable format
+</code></pre>
+<p>Binary file:</p>
+<pre><code>        Nelson HDF5 format (.nh5):
+
+            Efficient binary storage using HDF5 format
+            Preserves all table metadata and data types
+            Use save -nh5 and load commands
+</code></pre>
+<p>Binary format is recommended for preserving exact numeric precision and working with large datasets.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <p>Read/Write table to .nh5 file</p>
 <pre><code class="language-matlab">% Create a sample table with sensor data

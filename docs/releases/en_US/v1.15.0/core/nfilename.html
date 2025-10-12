@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="nfilename"><a class="header" href="#nfilename">nfilename</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="nfilename"><a class="header" href="#nfilename">nfilename</a></h1>
 <p>Returns the name of the currently executing file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -169,13 +170,13 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>R = nfilename()</b> returns the name of the currently executing file.</p>
+            R = nfilename() returns the name of the currently executing file.</p>
 <p>
-                <b>nfilename()</b> called from outside an nlf file returns an empty string.</p>
+                nfilename() called from outside an nlf file returns an empty string.</p>
 <p>With the input argument 'fullpathext', the string includes the directory part of the macro filename, and the filename extension.</p>
 <p>With the input argument 'fullpath', the string includes the directory part of the macro filename, but not the extension.</p>
 <p>
-                    <b>mfilename</b> is an alias on <b>nfilename</b> added for basic script compatibility.</p>
+                    mfilename is an alias on nfilename added for basic script compatibility.</p>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="../core/nargin.html">nargin</a>, <a href="../core/nargout.html">nargout</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>

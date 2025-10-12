@@ -16,7 +16,7 @@ Hyperbolic cotangent.
 
 ## Description
 
-<b>csch</b>computes the hyperbolic cotangent for each element of<b>x</b>.
+        csch computes the hyperbolic cotangent for each element of x.
 
 ## Example
 

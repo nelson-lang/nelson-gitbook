@@ -13,9 +13,10 @@ Display a variable.
 ## Description
 
 <p>
-            <b>disp(V)</b> displays the value of the variable <b>V</b>.</p>
+            disp(V) displays the value of the variable V.</p>
+
 <p>
-                <b>disp</b> uses current <b>format</b> setting to display numeric values.</p>
+                disp uses current format setting to display numeric values.</p>
 
 ## Examples
 

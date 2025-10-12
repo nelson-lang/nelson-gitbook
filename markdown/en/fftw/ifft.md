@@ -21,7 +21,7 @@ Inverse Fast Fourier transform.
 ## Description
 
 <p>
-            <b>ifft(X)</b> computes the inverse discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
+            ifft(X) computes the inverse discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
 
 ## Example
 

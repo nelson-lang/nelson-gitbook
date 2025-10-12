@@ -20,13 +20,18 @@ Set the file pointer to a location.
 ## Description
 
 <p>
-            <b>fseek</b> moves the file pointer to the location <b>offset</b> within the file <b>fid</b>.</p>
+            fseek moves the file pointer to the location offset within the file fid.</p>
+
 <p>origin can take as value:</p>
+
 <p>'bof' or -1 : beginning of file.</p>
+
 <p>'cof' or 0 : current position in file.</p>
+
 <p>'eof' or 1 : end of file.</p>
+
 <p>
-                <b>offset</b> may be one of the predefined variables <b>SEEK_CUR</b> (current position, or 0), <b>SEEK_SET</b> (beginning, or -1), or <b>SEEK_END</b> (end of file, or 1).</p>
+                offset may be one of the predefined variables SEEK_CUR (current position, or 0), SEEK_SET (beginning, or -1), or SEEK_END (end of file, or 1).</p>
 
 ## Example
 

@@ -17,7 +17,7 @@ Checks input is vector.
 ## Description
 
 <p>
-            <b>isvector</b> returns an scalar logical if entry is an vector.</p>
+            isvector returns an scalar logical if entry is an vector.</p>
 
 ## Example
 

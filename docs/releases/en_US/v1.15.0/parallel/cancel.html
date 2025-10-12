@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="cancel"><a class="header" href="#cancel">cancel</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="cancel"><a class="header" href="#cancel">cancel</a></h1>
 <p>Stop function running in the background.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -167,9 +168,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
+            cancel(f) will stop each running or queued element of the Future array f.</p>
 <p>Future cancelled Findicates an error as property.</p>
-<p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
+<p>Some functions cannot be interrupted by pressing Ctrl+C or cancel, such as save function.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">fptr = str2func('pause');
 for i = 1:100

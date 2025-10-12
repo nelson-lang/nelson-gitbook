@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="actxgetrunningserver"><a class="header" href="#actxgetrunningserver">actxGetRunningServer</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="actxgetrunningserver"><a class="header" href="#actxgetrunningserver">actxGetRunningServer</a></h1>
 <p>Handle to running instance of Automation server.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,9 +172,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>h = actxGetRunningServer(progid)</b> gets a reference to a running instance of the OLE/COM Automation server.</p>
+            h = actxGetRunningServer(progid) gets a reference to a running instance of the OLE/COM Automation server.</p>
 <p>
-                <b>progid</b> is the programmatic identifier of the Automation server object and <b>h</b> is the handle to the default interface of the server object.</p>
+                progid is the programmatic identifier of the Automation server object and h is the handle to the default interface of the server object.</p>
 <p>The function returns an error if the server specified by progid is not currently running or if the server object is not registered.</p>
 <p>When multiple instances of the Automation server are running, the operating system controls the behavior of this function.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>

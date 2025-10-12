@@ -18,13 +18,20 @@ Pole placement gain selection using Ackermann's formula.
 
 ## Description
 
-<p>The function <b>acker</b> computes the feedback gain matrix <b>K</b> for a single-input system described by the state-space matrices <b>A</b> and <b>B</b>.</p>
-<p>The closed-loop poles of the system under the feedback law <b>u = -Kx</b> are determined by the specified vector <b>P</b>, where <b>P</b> represents the desired pole locations.</p>
-<p>The closed-loop poles are essentially the eigenvalues of the matrix <b>A - B*K</b>, calculated as <b>P = eig(A - B*K)</b>.</p>
+<p>The function acker computes the feedback gain matrix K for a single-input system described by the state-space matrices A and B.</p>
+
+<p>The closed-loop poles of the system under the feedback law u = -Kx are determined by the specified vector P, where P represents the desired pole locations.</p>
+
+<p>The closed-loop poles are essentially the eigenvalues of the matrix A - B*K, calculated as P = eig(A - B*K).</p>
+
 <p></p>
+
 <p>It's important to note that this algorithm utilizes Ackermann's formula.</p>
+
 <p>However, users should be aware that this method may not be numerically reliable, particularly for systems of order greater than 10 or for systems that are weakly controllable.</p>
-<p>If the algorithm encounters numerical instability or if the closed-loop poles deviate significantly (more than 10%) from the desired locations specified in <b>P</b>, a warning message is issued to alert the user about potential issues.</p>
+
+<p>If the algorithm encounters numerical instability or if the closed-loop poles deviate significantly (more than 10%) from the desired locations specified in P, a warning message is issued to alert the user about potential issues.</p>
+
 <p>Users are advised to exercise caution and consider alternative methods for higher-order or weakly controllable systems.</p>
 
 ## Example

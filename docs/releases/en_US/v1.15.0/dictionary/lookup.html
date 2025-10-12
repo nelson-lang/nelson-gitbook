@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lookup"><a class="header" href="#lookup">lookup</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lookup"><a class="header" href="#lookup">lookup</a></h1>
 <p>Find value in dictionary by key.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,14 +175,14 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>value = lookup(d, key)</b> retrieves the value associated with the given key in dictionary d.</p>
+            value = lookup(d, key) retrieves the value associated with the given key in dictionary d.</p>
 <p>If the key does not exist, an error is raised.</p>
 <p>
-                <b>value = lookup(d, key)</b> is equivalent to <b>value = d[key]</b>.</p>
+                value = lookup(d, key) is equivalent to value = d[key].</p>
 <p>
-                    <b>value = lookup(d, key, 'FallbackValue', fallback)</b> specifies a fallback value to return if the key is not found in d.</p>
+                    value = lookup(d, key, 'FallbackValue', fallback) specifies a fallback value to return if the key is not found in d.</p>
 <p>
-                        <b>lookup</b> function only validates the fallback if it is needed. An error is raised only if the key is not found and no valid fallback is provided.</p>
+                        lookup function only validates the fallback if it is needed. An error is raised only if the key is not found and no valid fallback is provided.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">names = ["Apple" "Banana" "Kiwi"];
 wheels = [1 2 3];

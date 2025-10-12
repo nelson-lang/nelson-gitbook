@@ -16,7 +16,7 @@ Returns the methods name of an object handle.
 
 ## Description
 
-<b>methods</b>returns a cell of strings with methods name.
+        methods returns a cell of strings with methods name.
 
 ## See also
 

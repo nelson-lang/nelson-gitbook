@@ -13,7 +13,7 @@ Returns the current language in Nelson.
 ## Description
 
 <p>
-            <b>getlanguage</b> returns the current language used in Nelson.</p>
+            getlanguage returns the current language used in Nelson.</p>
 
 ## Example
 

@@ -9,6 +9,7 @@ Current Folder Browser
 ## Description
 
 <p>The Current Folder browser in Nelson facilitates interactive file and folder management. Utilize it to navigate, create, access, relocate, and rename files and folders within the current directory.</p>
+
 <p>
             
         </p>

@@ -15,11 +15,13 @@ Returns last recorded error message.
 ## Description
 
 <p>
-            <b>l = lasterror()</b> returns a structure containing the last error message and information as an struct.</p>
+            l = lasterror() returns a structure containing the last error message and information as an struct.</p>
+
 <p>
-                <b>lasterror('reset')</b> clears last error.</p>
+                lasterror('reset') clears last error.</p>
+
 <p>
-                    <b>lasterror(error_struct)</b> set last error.</p>
+                    lasterror(error_struct) set last error.</p>
 
 ## Examples
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="hist"><a class="header" href="#hist">hist</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="hist"><a class="header" href="#hist">hist</a></h1>
 <p>Histogram plot.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -178,11 +179,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>A histogram is a graphical representation that illustrates the distribution of data values.</p>
-<p>When you use the <b>hist</b> function, it organizes the elements in the vector <b>Y</b> into 10 equally spaced containers and provides the count of elements in each container as a row vector.</p>
+<p>When you use the hist function, it organizes the elements in the vector Y into 10 equally spaced containers and provides the count of elements in each container as a row vector.</p>
 <p>
-            <b>hist(Y, x)</b> with a vector <b>x</b>, the function will return the distribution of values in <b>Y</b> among bins determined by the length of <b>x</b>, with centers specified by the values in <b>x</b>.</p>
-<p>For instance, if <b>x</b> is a 5-element vector, <b>hist</b> will categorize the elements of <b>Y</b> into five bins, each centered on the x-axis at the values specified in <b>x</b>.</p>
-<p>When you use <b>hist(...)</b> without specifying any output arguments, it generates a histogram plot. The bins are distributed along the x-axis between the minimum and maximum values found in the input vector <b>Y</b>.</p>
+            hist(Y, x) with a vector x, the function will return the distribution of values in Y among bins determined by the length of x, with centers specified by the values in x.</p>
+<p>For instance, if x is a 5-element vector, hist will categorize the elements of Y into five bins, each centered on the x-axis at the values specified in x.</p>
+<p>When you use hist(...) without specifying any output arguments, it generates a histogram plot. The bins are distributed along the x-axis between the minimum and maximum values found in the input vector Y.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = figure();
 for i = 1:4

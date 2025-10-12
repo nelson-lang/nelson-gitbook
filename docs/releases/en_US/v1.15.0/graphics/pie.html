@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="pie"><a class="header" href="#pie">pie</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="pie"><a class="header" href="#pie">pie</a></h1>
 <p>Legacy pie chart.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -179,12 +180,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>pie(X)</b> generates a pie chart based on the data in the array variable <b>X</b>.</p>
-<p>In cases where the sum of the elements in <b>X</b> is less than or equal to 1, the values in <b>X</b> directly represent the proportional areas of the pie slices.</p>
-<p>If the sum of <b>X</b> is less than 1, the pie chart displays only a partial pie.</p>
-<p>Alternatively, if the sum of <b>X</b> exceeds 1, the function normalizes the values by dividing each element by the sum of <b>X</b>.</p>
+            pie(X) generates a pie chart based on the data in the array variable X.</p>
+<p>In cases where the sum of the elements in X is less than or equal to 1, the values in X directly represent the proportional areas of the pie slices.</p>
+<p>If the sum of X is less than 1, the pie chart displays only a partial pie.</p>
+<p>Alternatively, if the sum of X exceeds 1, the function normalizes the values by dividing each element by the sum of X.</p>
 <p>This normalization ensures that the pie chart accurately reflects the relative proportions of the data.</p>
-<p>In situations where <b>X</b> is a categorical variable, each slice of the pie corresponds to a category, and the area of each slice is determined by the ratio of the number of elements in the category to the total number of elements in <b>X</b>.</p>
+<p>In situations where X is a categorical variable, each slice of the pie corresponds to a category, and the area of each slice is determined by the ratio of the number of elements in the category to the total number of elements in X.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();
 p = pie ([3, 2, 1], [0, 0, 1]);

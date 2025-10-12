@@ -17,7 +17,7 @@ Cholesky factorization.
 ## Description
 
 <p>
-            <b>F = chol(A)</b> factorizes symmetric positive definite matrix <b>A</b> into an upper triangular F that satisfies <b>A = F' * F</b>.</p>
+            F = chol(A) factorizes symmetric positive definite matrix A into an upper triangular F that satisfies A = F' * F.</p>
 
 ## Example
 

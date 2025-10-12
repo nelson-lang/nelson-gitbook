@@ -18,8 +18,9 @@ Writes an audio file.
 ## Description
 
 <p>
-            <b>audiorwrite</b> writes an audio file.</p>
-<p>More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.</p>
+            audiorwrite writes an audio file.</p>
+
+<p>More 26 files format supported. See audiosupportedformats function to have all supported formats.</p>
 
 ## Example
 

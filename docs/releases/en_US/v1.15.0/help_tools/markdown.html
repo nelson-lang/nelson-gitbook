@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="markdown"><a class="header" href="#markdown">markdown</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="markdown"><a class="header" href="#markdown">markdown</a></h1>
 <p>Converts markdown to html.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -177,9 +178,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>markdown</b> converts Markdown text-to-HTML.</p>
+            markdown converts Markdown text-to-HTML.</p>
 <p>options:</p>
-secure (default): only a subset of markdown is supported (no raw HTML, no tables, no images, no links). advanced: full markdown supported (including raw HTML, tables, images, links).
+<pre><code>        secure (default): only a subset of markdown is supported (no raw HTML, no tables, no images, no links).
+        advanced: full markdown supported (including raw HTML, tables, images, links).
+</code></pre>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">txt = {'## Example of Markdown text';
 '&gt;Nelson supports markdown ...'};

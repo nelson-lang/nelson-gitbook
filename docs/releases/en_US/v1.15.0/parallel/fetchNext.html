@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="fetchnext"><a class="header" href="#fetchnext">fetchNext</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="fetchnext"><a class="header" href="#fetchnext">fetchNext</a></h1>
 <p>Retrieve next unread outputs from FevalFuture array.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,7 +175,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index <b>idx</b> of the new readable <b>FevalFuture</b> object in the array <b>f</b> that is finished, and <b>m</b> results from that FevalFuture as <b>Y1, ... , Ym</b>.</p>
+            [idx, y1, ... , ym] = fetchNext(f) retrieves index idx of the new readable FevalFuture object in the array f that is finished, and m results from that FevalFuture as Y1, ... , Ym.</p>
 <p></p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">

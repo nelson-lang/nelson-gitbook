@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="quiver"><a class="header" href="#quiver">quiver</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="quiver"><a class="header" href="#quiver">quiver</a></h1>
 <p>Vector plot.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -183,9 +184,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components <b>(U,V)</b> at the point <b>(X, Y)</b>.</p>
+            quiver(X, Y, U, V) plots velocity vectors as arrows with components (U,V) at the point (X, Y).</p>
 <p>
-                <b>quiver</b> try to scale the arrow lengths so that they do not overlap.</p>
+                quiver try to scale the arrow lengths so that they do not overlap.</p>
 <p>Current implementation is slow but it can be optimized using DrawLater property of figure. It could be optimized in an next version by an builtin.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();

@@ -22,7 +22,7 @@ Executes built-in function.
 ## Description
 
 <p>
-            <b>builtin</b> calls the base built-in described by its name or function handle and input arguments.</p>
+            builtin calls the base built-in described by its name or function handle and input arguments.</p>
 
 ## Example
 

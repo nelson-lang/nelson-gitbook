@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="surface"><a class="header" href="#surface">surface</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="surface"><a class="header" href="#surface">surface</a></h1>
 <p>Primitive surface plot.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -183,17 +184,17 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>surf</b> and <b>surface</b> functions are both used to create 3D surface plots, but there are some slight differences between the two.</p>
+            surf and surface functions are both used to create 3D surface plots, but there are some slight differences between the two.</p>
 <p>
-                <b>surf</b> function is used to plot a surface defined by a function of two variables, or by a set of scattered data points.</p>
+                surf function is used to plot a surface defined by a function of two variables, or by a set of scattered data points.</p>
 <p>It requires three input arguments: X, Y, and Z. X and Y define the coordinates of the data points, and Z defines the height of the surface at each point.</p>
 <p>
-                    <b>surf</b> function also provides additional options for customizing the appearance of the plot, such as lighting and color.</p>
+                    surf function also provides additional options for customizing the appearance of the plot, such as lighting and color.</p>
 <p></p>
 <p>
-                        <b>surface</b> function is used to plot a surface defined by a matrix of data. It requires three input arguments: X, Y, and Z. X and Y define the coordinates of the data points, and Z is a matrix that defines the height of the surface at each point.</p>
+                        surface function is used to plot a surface defined by a matrix of data. It requires three input arguments: X, Y, and Z. X and Y define the coordinates of the data points, and Z is a matrix that defines the height of the surface at each point.</p>
 <p>The size of Z must match the size of X and Y. The surface function also provides additional options for customizing the appearance of the plot, such as lighting and color.</p>
-<p>In summary, both <b>surf</b> and <b>surface</b> functions are used for 3D surface plots but <b>surf</b> is used for a surface defined by a function of two variables or by a set of scattered data points, while <b>surface</b> is used for a surface defined by a matrix of data, and the size of Z must match the size of X and Y.</p>
+<p>In summary, both surf and surface functions are used for 3D surface plots but surf is used for a surface defined by a function of two variables or by a set of scattered data points, while surface is used for a surface defined by a matrix of data, and the size of Z must match the size of X and Y.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = figure();
 data = peaks(50);

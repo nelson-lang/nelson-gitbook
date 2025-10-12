@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="modulepath"><a class="header" href="#modulepath">modulepath</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="modulepath"><a class="header" href="#modulepath">modulepath</a></h1>
 <p>Returns path of a module.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,14 +174,14 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>modulepath</b> is an helper's function to return module root path or a subdirectory.</p>
+            modulepath is an helper's function to return module root path or a subdirectory.</p>
 <p>
-                <b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b>
+                modulepath('nelson') is equivalent to modulepath('nelson', 'root')
             </p>
 <p>
-                <b>modulepath('nelson', 'bin')</b> return path of nelson's executables.</p>
+                modulepath('nelson', 'bin') return path of nelson's executables.</p>
 <p>
-                    <b>modulepath('nelson', 'builtin')</b> returns path of nelson's dynamic libraries.</p>
+                    modulepath('nelson', 'builtin') returns path of nelson's dynamic libraries.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">modulepath('core')
 modulepath('core', 'root')

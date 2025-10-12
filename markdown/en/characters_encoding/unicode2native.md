@@ -18,11 +18,14 @@ Converts unicode characters representation to bytes
 ## Description
 
 <p>
-            <b>unicode2native</b> converts unicode characters to an numeric array.</p>
+            unicode2native converts unicode characters to an numeric array.</p>
+
 <p>
-                <b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine).</p>
+                bytes = unicode2native(str) converts unicode characters to an numeric array (the native character set of the machine).</p>
+
 <p>
-                    <b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set).</p>
+                    bytes = unicode2native(str, charset) converts unicode characters to an numeric array (character set charset instead of the native character set).</p>
+
 <p>List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
 
 ## Bibliography

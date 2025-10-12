@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="renamevars"><a class="header" href="#renamevars">renamevars</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="renamevars"><a class="header" href="#renamevars">renamevars</a></h1>
 <p>Rename variables in table.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,9 +174,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>TB = renamevars(TA, varsNames, newNames)</b> renames the variables in the table <b>TA</b> as specified by <b>varsNames</b> and assigns them the new names provided in <b>newNames</b>.</p>
-<p>You can also rename all the variables in a table by assigning new names to its <b>VariableNames</b> property using <b>T.Properties.VariableNames = newNames</b>.</p>
-<p>In this case, <b>newNames</b> must be a string array or a cell array of character vectors.</p>
+            TB = renamevars(TA, varsNames, newNames) renames the variables in the table TA as specified by varsNames and assigns them the new names provided in newNames.</p>
+<p>You can also rename all the variables in a table by assigning new names to its VariableNames property using T.Properties.VariableNames = newNames.</p>
+<p>In this case, newNames must be a string array or a cell array of character vectors.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">C = {'John', 28, true; 'Alice', 35, false; 'Bob', 42, true};
 % Convert the cell array to a table

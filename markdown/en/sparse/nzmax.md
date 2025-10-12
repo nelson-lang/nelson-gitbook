@@ -17,7 +17,7 @@ Reserved size for nonzero elements.
 ## Description
 
 <p>
-            <b>nzmax</b> returns the amount of storage allocated for nonzero elements.</p>
+            nzmax returns the amount of storage allocated for nonzero elements.</p>
 
 ## Example
 

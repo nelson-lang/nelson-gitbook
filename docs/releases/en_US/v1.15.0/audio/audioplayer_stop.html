@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="audioplayer_stop"><a class="header" href="#audioplayer_stop">audioplayer_stop</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="audioplayer_stop"><a class="header" href="#audioplayer_stop">audioplayer_stop</a></h1>
 <p>Stops an audioplayer object.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -166,7 +167,8 @@
 <li>playObj - an audioplayer object.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>stop</b>stops an audioplayer object.</p>
+<pre><code>    stop stops an audioplayer object.
+</code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">signal = rand(2, 44100) - 0.5;
 playObj = audioplayer(signal, 44100, 16)

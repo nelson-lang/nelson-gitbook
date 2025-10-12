@@ -13,8 +13,9 @@ Adds path as directory where the qml engine searches for installed modules.
 ## Description
 
 <p>
-            <b>qml_addimportpath</b> adds <b>path</b> as a directory where the engine searches for installed modules in a URL-based directory structure.</p>
-<p>The newly added path will be first in <b>qml_importpathlist</b>.</p>
+            qml_addimportpath adds path as a directory where the engine searches for installed modules in a URL-based directory structure.</p>
+
+<p>The newly added path will be first in qml_importpathlist.</p>
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="feedback"><a class="header" href="#feedback">feedback</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="feedback"><a class="header" href="#feedback">feedback</a></h1>
 <p>Feedback connection of multiple models.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,7 +174,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>sys = feedback(sys1, sys2)</b> generates a model object, <b>sys</b>, representing the negative feedback interconnection of the model objects <b>sys1</b> and <b>sys2</b>.</p>
+            sys = feedback(sys1, sys2) generates a model object, sys, representing the negative feedback interconnection of the model objects sys1 and sys2.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">G = tf([2 5 1], [1 2 3]);
 C = tf([5, 10], [1, 10]);

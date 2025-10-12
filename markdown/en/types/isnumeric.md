@@ -16,28 +16,40 @@ Return true if variable var is a numeric array.
 
 ## Description
 
-<b>isnumeric</b>returns a logical 1 if the argument is a numeric array and a logical 0 otherwise.<p>List of numeric types:</p>
+        isnumeric returns a logical 1 if the argument is a numeric array and a logical 0
+        otherwise.
+
+<p>List of numeric types:</p>
 
 <p>
-            <b>single</b> : single precision</p>
+            single : single precision</p>
+
 <p>
-                <b>double</b> : double precision</p>
+            double : double precision</p>
+
 <p>
-                    <b>int8</b>   : 8 bit signed integer</p>
+            int8 : 8 bit signed integer</p>
+
 <p>
-                        <b>int16</b>  : 16 bit signed integer</p>
+            int16 : 16 bit signed integer</p>
+
 <p>
-                            <b>int32</b>  : 32 bit signed integer</p>
+            int32 : 32 bit signed integer</p>
+
 <p>
-                                <b>int64</b>  : 64 bit signed integer</p>
+            int64 : 64 bit signed integer</p>
+
 <p>
-                                    <b>uint8</b>  : 8 bit unsigned integer</p>
+            uint8 : 8 bit unsigned integer</p>
+
 <p>
-                                        <b>uint16</b> : 16 bit unsigned integer</p>
+            uint16 : 16 bit unsigned integer</p>
+
 <p>
-                                            <b>uint32</b> : 32 bit unsigned integer</p>
+            uint32 : 32 bit unsigned integer</p>
+
 <p>
-                                                <b>uint64</b> : 64 bit unsigned integer</p>
+            uint64 : 64 bit unsigned integer</p>
 
 ## Examples
 

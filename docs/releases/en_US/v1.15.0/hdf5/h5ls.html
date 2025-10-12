@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="h5ls"><a class="header" href="#h5ls">h5ls</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="h5ls"><a class="header" href="#h5ls">h5ls</a></h1>
 <p>List the content of an HDF5 file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,7 +176,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>h5dump</b> list the content of hdf5 file.</p>
+            h5dump list the content of hdf5 file.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">h5create([tempdir(), 'myfile.h5'],'/myDataset2',[10 20]);
 h5ls([tempdir(), 'myfile.h5'])

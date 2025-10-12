@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="obsvf"><a class="header" href="#obsvf">obsvf</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="obsvf"><a class="header" href="#obsvf">obsvf</a></h1>
 <p>Compute observability staircase form.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -179,10 +180,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>obsvf(A, B, C)</b> decomposes the given state-space system, characterized by matrices <b>A</b>, <b>B</b>, and <b>C</b>, into the observability staircase form, resulting in transformed matrices <b>Abar</b>, <b>Bbar</b>, and <b>Cbar</b>.</p>
-<p>It also provides a similarity transformation matrix <b>T</b> and a vector <b>k</b>.</p>
-<p>The length of vector <b>k</b> corresponds to the number of states in <b>A</b>, and each entry in <b>k</b> signifies the number of observable states factored out at each step of the transformation matrix computation.</p>
-<p>The non-zero elements in <b>k</b> indicate the number of iterations needed for <b>T</b> calculation, and the sum of <b>k</b> represents the number of states in Ao, the observable portion of <b>Abar</b>.</p>
+            obsvf(A, B, C) decomposes the given state-space system, characterized by matrices A, B, and C, into the observability staircase form, resulting in transformed matrices Abar, Bbar, and Cbar.</p>
+<p>It also provides a similarity transformation matrix T and a vector k.</p>
+<p>The length of vector k corresponds to the number of states in A, and each entry in k signifies the number of observable states factored out at each step of the transformation matrix computation.</p>
+<p>The non-zero elements in k indicate the number of iterations needed for T calculation, and the sum of k represents the number of states in Ao, the observable portion of Abar.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [-1.5  -0.5; 1     0];
 B = [0.5; 0];

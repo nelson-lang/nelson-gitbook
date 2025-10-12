@@ -26,7 +26,7 @@ List variables in memory or in .nh5 or in .mat file.
 ## Description
 
 <p>
-            <b>who</b> displays current variable names.</p>
+            who displays current variable names.</p>
 
 ## Example
 

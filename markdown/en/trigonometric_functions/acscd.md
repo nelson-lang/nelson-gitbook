@@ -16,7 +16,7 @@ Inverse cosecant in degrees.
 
 ## Description
 
-<b>acscd</b>computes the inverse cosecant of argument in degrees for each element of<b>x</b>.
+        acscd computes the inverse cosecant of argument in degrees for each element of x.
 
 ## Example
 

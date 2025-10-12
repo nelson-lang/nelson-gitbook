@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="executable"><a class="header" href="#executable">executable</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="executable"><a class="header" href="#executable">executable</a></h1>
 <p>Executables to start Nelson software.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -190,14 +191,14 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
+            nelson-cli: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
 <p>
-                <b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
+                nelson-adv-cli: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
 <p>
-                    <b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
+                    nelson-gui: graphical console, history, completion available (UTF-16 support)</p>
 <p></p>
-<p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
-<p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
+<p>If you have installed Nelson on Windows, the NELSON_RUNTIME_PATH environment variable will be defined.</p>
+<p>It allows to call easily Nelson "%NELSON_RUNTIME_PATH%\nelson.bat".</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">nelson-adv-cli -q -e "a = 1 + 2"
 </code></pre>

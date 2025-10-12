@@ -17,7 +17,7 @@ Checks if matrix is diagonal.
 ## Description
 
 <p>
-            <b>isdiag</b> returns an scalar logical if entry is diag.</p>
+            isdiag returns an scalar logical if entry is diag.</p>
 
 ## Example
 

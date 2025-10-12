@@ -20,9 +20,11 @@ Test for i/o read/write errors.
 ## Description
 
 <p>
-            <b>ferror</b> inquires about file error status.</p>
+            ferror inquires about file error status.</p>
+
 <p>
-                <b>ferror(fid, 'clear')</b> clears the error indicator for the specified file.</p>
+                ferror(fid, 'clear') clears the error indicator for the specified file.</p>
+
 <p>For more help about returned message, consult C run-time library manual for further details.</p>
 
 ## Example

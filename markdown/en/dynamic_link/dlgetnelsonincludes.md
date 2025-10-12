@@ -13,7 +13,8 @@ Returns paths of Nelson include directories.
 ## Description
 
 <p>
-            <b>C = dlgetnelsonincludes()</b> returns a cell array of paths to various include directories used by Nelson modules.</p>
+            C = dlgetnelsonincludes() returns a cell array of paths to various include directories used by Nelson modules.</p>
+
 <p>These paths are used internally for module development and building processes.</p>
 
 ## Example

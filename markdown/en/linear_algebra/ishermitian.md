@@ -19,7 +19,8 @@ Computes if matrix is hermitian or skew-hermitian.
 ## Description
 
 <p>
-            <b>ishermitian(x)</b> computes if matrix is hermitian or skew-hermitian.</p>
+            ishermitian(x) computes if matrix is hermitian or skew-hermitian.</p>
+
 <p>A matrix is skew-hermitian if the complex conjugate transpose of the matrix is equal to the negative of the original matrix.</p>
 
 ## Example

@@ -30,9 +30,13 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 ## Description
 
 <p>To solve for X either the real continuous-time Lyapunov equation</p>
+
 <p>op(A)'*X + X*op(A) = scale*C</p>
+
 <p>or the real discrete-time Lyapunov equation</p>
+
 <p>op(A)'*X*op(A) - X = scale*C</p>
+
 <p>and/or estimate an associated condition number, called separation, where op(A) = A or A' (A**T) and C is symmetric (C = C').</p>
 
 ## Bibliography

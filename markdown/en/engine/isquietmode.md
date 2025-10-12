@@ -13,7 +13,7 @@ Return true if Nelson started with --quiet option.
 ## Description
 
 <p>
-            <b>isquietmode</b> returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.</p>
+            isquietmode returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.</p>
 
 ## Example
 

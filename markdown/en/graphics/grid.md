@@ -20,7 +20,7 @@ Display or hide axes grid lines.
 ## Description
 
 <p>
-            <b>grid()</b> toggles the visibility of the major grid lines.</p>
+            grid() toggles the visibility of the major grid lines.</p>
 
 ## Example
 

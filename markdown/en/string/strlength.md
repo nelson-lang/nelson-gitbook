@@ -16,7 +16,7 @@ Length of strings in cell of strings or string array.
 
 ## Description
 
-<b>strlength</b>returns length of strings.
+        strlength returns length of strings.
 
 ## Example
 

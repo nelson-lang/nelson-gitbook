@@ -28,9 +28,10 @@ Semilog plot (x-axis has log scale).
 ## Description
 
 <p>
-            <b>semilogx(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and a normal (linear) scale for the y-axis.</p>
+            semilogx(X, Y) plots data using a base 10 logarithmic scale for the x-axis and a normal (linear) scale for the y-axis.</p>
+
 <p>
-                <b>semilogx</b> has the exact same syntax as the <b>plot</b> command.</p>
+                semilogx has the exact same syntax as the plot command.</p>
 
 ## Examples
 

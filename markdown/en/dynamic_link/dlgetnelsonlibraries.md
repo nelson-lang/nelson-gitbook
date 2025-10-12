@@ -13,7 +13,8 @@ Returns paths to Nelson library files.
 ## Description
 
 <p>
-            <b>C = dlgetnelsonlibraries()</b> returns a cell array of paths to various library directories used by Nelson modules.</p>
+            C = dlgetnelsonlibraries() returns a cell array of paths to various library directories used by Nelson modules.</p>
+
 <p>These paths are used internally for module development and building processes.</p>
 
 ## Example

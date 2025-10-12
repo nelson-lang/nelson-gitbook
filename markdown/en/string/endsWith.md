@@ -19,7 +19,7 @@ checks if string ends with pattern.
 
 ## Description
 
-<b>endsWith</b>returns<b>true</b>if<b>str</b>ends with<b>pattern</b>.
+        endsWith returns true if str ends with pattern.
 
 ## Example
 

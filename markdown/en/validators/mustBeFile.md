@@ -16,7 +16,7 @@ Checks that input path refers to file.
 ## Description
 
 <p>
-            <b>mustBeFile</b> checks that input path refers to file or raise an error.</p>
+            mustBeFile checks that input path refers to file or raise an error.</p>
 
 ## Example
 

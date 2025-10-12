@@ -155,13 +155,26 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="numeric-types"><a class="header" href="#numeric-types">numeric types</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="numeric-types"><a class="header" href="#numeric-types">numeric types</a></h1>
 <p>About integer and floating-point data.</p>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>In Nelson you can specify the data type of a numeric literal by using a suffix or a type specifier. </p>
 <p>Here are some common suffixes for specifying the data type of numeric literals:</p>
 <p></p>
-literal number suffix Nelson type f32 single (float single precision) f64 double (float double precision) i8 int8 (8-bit signed integer) i16 int16 (16-bit signed integer) i32 int32 (32-bit signed integer) i64 int64 (64-bit signed integer) u8 uint8 (8-bit unsigned integer) u16 uint16 (16-bit unsigned integer) u32 uint32 (32-bit unsigned integer) u64 uint64 (64-bit unsigned integer)<p></p>
+<div class="table-wrapper"><table><thead><tr><th>literal number suffix</th><th>Nelson type</th></tr></thead><tbody>
+<tr><td>f32</td><td>single (float single precision)</td></tr>
+<tr><td>f64</td><td>double (float double precision)</td></tr>
+<tr><td>i8</td><td>int8 (8-bit signed integer)</td></tr>
+<tr><td>i16</td><td>int16 (16-bit signed integer)</td></tr>
+<tr><td>i32</td><td>int32 (32-bit signed integer)</td></tr>
+<tr><td>i64</td><td>int64 (64-bit signed integer)</td></tr>
+<tr><td>u8</td><td>uint8 (8-bit unsigned integer)</td></tr>
+<tr><td>u16</td><td>uint16 (16-bit unsigned integer)</td></tr>
+<tr><td>u32</td><td>uint32 (32-bit unsigned integer)</td></tr>
+<tr><td>u64</td><td>uint64 (64-bit unsigned integer)</td></tr>
+</tbody></table>
+</div><p></p>
 <p>i64: To specify a 64-bit signed integer, you can use the i64 suffix. example: A = 42i64</p>
 <p>f32: To specify a 32-bit floating-point number (single precision), you can use the f64 suffix. example: 3.14f32</p>
 <p>These suffixes help the Nelson infer the correct data type for the literal.</p>

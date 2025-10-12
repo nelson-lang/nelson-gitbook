@@ -19,7 +19,7 @@ Inverse of Hilbert matrix
 ## Description
 
 <p>
-            <b>hilb</b> computes the Hilbert matrix.</p>
+            hilb computes the Hilbert matrix.</p>
 
 ## Bibliography
 

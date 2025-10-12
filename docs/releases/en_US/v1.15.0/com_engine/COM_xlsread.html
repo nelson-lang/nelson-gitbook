@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="com_xlsread"><a class="header" href="#com_xlsread">COM_xlsread</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="com_xlsread"><a class="header" href="#com_xlsread">COM_xlsread</a></h1>
 <p>Read Microsoft Excel spreadsheet file using COM.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -183,7 +184,8 @@
 <li>raw_data - a cell of strings: raw data without conversion.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>COM_xlsread</b>read Microsoft Excel spreadsheet file using COM.</p>
+<pre><code>    COM_xlsread read Microsoft Excel spreadsheet file using COM.
+</code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">data = {'Time', 'Temp'; 12 98; 13 99; Inf 97};
 s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');

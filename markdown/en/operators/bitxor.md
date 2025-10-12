@@ -20,7 +20,7 @@ Bit-wise XOR
 ## Description
 
 <p>
-            <b>C = bitxor(A, B)</b> returns the bit-wise XOR of <b>A</b> and <b>B</b>.</p>
+            C = bitxor(A, B) returns the bit-wise XOR of A and B.</p>
 
 ## Example
 

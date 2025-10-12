@@ -14,8 +14,9 @@ Checks the number of input arguments.
 ## Description
 
 <p>
-            <b>narginchk</b> checks the number of input arguments of an function.</p>
-<p>To ensure that a minimum number of arguments is provided, while allowing an unlimited maximum number by setting <b>maxArgs</b> to <b>inf</b>. For instance, use <b>narginchk(2, inf)</b> to throw an error if fewer than two inputs are supplied.</p>
+            narginchk checks the number of input arguments of an function.</p>
+
+<p>To ensure that a minimum number of arguments is provided, while allowing an unlimited maximum number by setting maxArgs to inf. For instance, use narginchk(2, inf) to throw an error if fewer than two inputs are supplied.</p>
 
 ## Example
 

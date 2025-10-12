@@ -19,8 +19,9 @@ Capture display output as string.
 ## Description
 
 <p>
-            <b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.</p>
-<p>The string contains equivalent to <b>disp(V)</b>.</p>
+            str = formattedDisplayText(V) returns the display output of V as a string.</p>
+
+<p>The string contains equivalent to disp(V).</p>
 
 ## Example
 

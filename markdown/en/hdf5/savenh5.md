@@ -19,7 +19,8 @@ save workspace variables to .nh5 file
 ## Description
 
 <p>
-            <b>savenh5</b> save workspace variables to .nh5 file.</p>
+            savenh5 save workspace variables to .nh5 file.</p>
+
 <p>.nh5 file uses hdf5 file as container.</p>
 
 ## Examples

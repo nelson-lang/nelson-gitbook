@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="filter2"><a class="header" href="#filter2">filter2</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="filter2"><a class="header" href="#filter2">filter2</a></h1>
 <p>2-D digital filter.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,7 +175,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>Y = filter2(H, X)</b>  applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix <b>H</b>.</p>
+            Y = filter2(H, X)  applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix H.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = zeros(10);
 A(3:7, 3:7) = ones(5);

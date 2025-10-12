@@ -23,7 +23,7 @@ Label x-axis.
 ## Description
 
 <p>
-            <b>xlabel('text')</b> labels the x-axis of the current axes.</p>
+            xlabel('text') labels the x-axis of the current axes.</p>
 
 ## Example
 

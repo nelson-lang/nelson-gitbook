@@ -19,11 +19,14 @@ Inverse multidimensional fast Fourier transform.
 ## Description
 
 <p>
-            <b>Y = ifftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.</p>
-<p> The size of the result <b>Y</b> is <b>sz</b>.</p>
+            Y = ifftn(X, sz) pads X with zeros, or truncates X, to create a multidimensional array of size sz before performing the transform.</p>
+
+<p> The size of the result Y is sz.</p>
+
 <p>
-                <b>Y = ifftn(X)</b> performs the N-dimensional inverse fast Fourier transform.</p>
-<p>The result <b>Y</b> is the same size as <b>X</b>.</p>
+                Y = ifftn(X) performs the N-dimensional inverse fast Fourier transform.</p>
+
+<p>The result Y is the same size as X.</p>
 
 ## Example
 

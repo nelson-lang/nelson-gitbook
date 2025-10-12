@@ -19,12 +19,12 @@ Evaluate Nelson code in string in an specified scope.
 ## Description
 
 <p>
-            <b>eval</b> executes Nelson instructions given in a string in 'base' or 'caller' scope.</p>
+            eval executes Nelson instructions given in a string in 'base' or 'caller' scope.</p>
 
 ## Example
 
 ```matlab
-R = evalin('base', 'evalin(''caller'',''pi'')')
+evalin('base', 'B=4')
 ```
 
 ## See also

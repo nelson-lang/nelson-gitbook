@@ -16,7 +16,7 @@ Checks that value is a matrix or raise an error.
 ## Description
 
 <p>
-            <b>mustBeMatrix</b> checks that value is a matrix or raise an error.</p>
+            mustBeMatrix checks that value is a matrix or raise an error.</p>
 
 ## Example
 

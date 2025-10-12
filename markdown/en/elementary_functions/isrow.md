@@ -17,7 +17,7 @@ Determine whether input is row vector.
 ## Description
 
 <p>
-            <b>isrow(V)</b> returns logical <b>true</b> if size(V) returns [1, n] with a nonnegative integer value n, and logical <b>false</b> otherwise.</p>
+            isrow(V) returns logical true if size(V) returns [1, n] with a nonnegative integer value n, and logical false otherwise.</p>
 
 ## Example
 

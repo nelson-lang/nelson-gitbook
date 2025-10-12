@@ -17,10 +17,13 @@ Get the value of an environment variable.
 ## Description
 
 <p>
-            <b>getenv</b> returns the value of an environment variable if it exists.</p>
+            getenv returns the value of an environment variable if it exists.</p>
+
 <p>If the environment variable does not exist, it will return ''.</p>
-<p>If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.</p>
-<p>If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.</p>
+
+<p>If env_name is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as env_name.</p>
+
+<p>If env_name is a string scalar, then s is a character vector.</p>
 
 ## Example
 

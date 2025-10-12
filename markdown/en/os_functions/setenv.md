@@ -14,7 +14,7 @@ Set the value of an environment variable.
 ## Description
 
 <p>
-            <b>setenv</b> set the value of an environment variable.</p>
+            setenv set the value of an environment variable.</p>
 
 ## Example
 

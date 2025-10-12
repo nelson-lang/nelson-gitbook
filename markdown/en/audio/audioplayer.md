@@ -22,10 +22,12 @@ Audio player object.
 ## Description
 
 <p>
-            <b>audioplayer</b> returns an audioplayer object to play data on an output device.</p>
+            audioplayer returns an audioplayer object to play data on an output device.</p>
+
 <p>audioplayer object uses global scope and need to be deleted by user.</p>
+
 <p>
-                <b>audioplayer</b> can play multichannels data if your sound card supports it.</p>
+                audioplayer can play multichannels data if your sound card supports it.</p>
 
 ## Example
 

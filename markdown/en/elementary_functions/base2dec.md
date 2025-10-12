@@ -18,10 +18,13 @@ Convert number in a base to decimal.
 ## Description
 
 <p>
-            <b>base2dec</b> converts number in a base to decimal.</p>
+            base2dec converts number in a base to decimal.</p>
+
 <p>Note:</p>
-<p> - <b>dec2base</b> and <b>base2dec</b> are inverses of one another.</p>
-<p> - values are cached to speed up next computation <b>base2dec('', 2) to clear cache.</b>
+
+<p> - dec2base and base2dec are inverses of one another.</p>
+
+<p> - values are cached to speed up next computation base2dec('', 2) to clear cache.
         </p>
 
 ## Example

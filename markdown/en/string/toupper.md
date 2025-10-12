@@ -16,7 +16,7 @@ Upper case conversion.
 
 ## Description
 
-<b>toupper</b>converts a string to upper case.
+        toupper converts a string to upper case.
 
 ## Examples
 

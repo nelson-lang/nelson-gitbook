@@ -16,7 +16,7 @@ Return true if variable var is an unsigned 16-bit integer type array.
 
 ## Description
 
-<b>isuint16</b>returns a logical<b>1</b>if the argument is an<b>unsigned 16-bit</b>integer array and a logical<b>0</b>otherwise.
+        isuint16 returns a logical 1if the argument is an unsigned 16-bit integer array and a logical 0 otherwise.
 
 ## Examples
 

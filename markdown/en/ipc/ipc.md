@@ -34,10 +34,14 @@ Inter process communicator.
 ## Description
 
 <p>
-            <b>ipc</b> allows to execute, get, put variables between multiple nelson's process.</p>
+            ipc allows to execute, get, put variables between multiple nelson's process.</p>
+
 <p>All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.</p>
+
 <p>LIMITATION:</p>
+
 <p>The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double.</p>
+
 <p>Current limitation to limit memory usage.</p>
 
 ## Examples

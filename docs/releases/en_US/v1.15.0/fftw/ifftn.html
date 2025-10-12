@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ifftn"><a class="header" href="#ifftn">ifftn</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="ifftn"><a class="header" href="#ifftn">ifftn</a></h1>
 <p>Inverse multidimensional fast Fourier transform.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,11 +174,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>Y = ifftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.</p>
-<p> The size of the result <b>Y</b> is <b>sz</b>.</p>
+            Y = ifftn(X, sz) pads X with zeros, or truncates X, to create a multidimensional array of size sz before performing the transform.</p>
+<p> The size of the result Y is sz.</p>
 <p>
-                <b>Y = ifftn(X)</b> performs the N-dimensional inverse fast Fourier transform.</p>
-<p>The result <b>Y</b> is the same size as <b>X</b>.</p>
+                Y = ifftn(X) performs the N-dimensional inverse fast Fourier transform.</p>
+<p>The result Y is the same size as X.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = zeros(5, 5);
 f(1:5,4:5) = 1;

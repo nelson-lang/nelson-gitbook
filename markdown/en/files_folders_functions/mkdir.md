@@ -24,7 +24,9 @@ Creates a new directory.
 ## Description
 
 <p>Creates a directory named dirname in the directory parent.</p>
+
 <p>If no parent directory is specified the present working directory is used.</p>
+
 <p>If directory is created or already existing, status is true, otherwise it will be false.</p>
 
 ## Example

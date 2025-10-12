@@ -14,7 +14,7 @@ Convers html page to pdf.
 ## Description
 
 <p>
-            <b>htmltopdf</b> converts html page to pdf.</p>
+            htmltopdf converts html page to pdf.</p>
 
 ## Example
 

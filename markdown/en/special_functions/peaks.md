@@ -26,9 +26,10 @@ Peaks function
 ## Description
 
 <p>
-            <b>peaks</b> function has the form:</p>
+            peaks function has the form:</p>
+
 <p>
-                <b>f(x, y) = 3*(1-x)^2*exp(-x^2 - (y+1)^2) - 10*(x/5 - x^3 - y^5)*exp(-x^2-y^2) - 1/3*exp(-(x+1)^2 - y^2)</b>
+                f(x, y) = 3*(1-x)^2*exp(-x^2 - (y+1)^2) - 10*(x/5 - x^3 - y^5)*exp(-x^2-y^2) - 1/3*exp(-(x+1)^2 - y^2)
             </p>
 
 ## Example

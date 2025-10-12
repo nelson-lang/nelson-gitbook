@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="repo"><a class="header" href="#repo">repo</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="repo"><a class="header" href="#repo">repo</a></h1>
 <p>Git repository tool for Nelson</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -192,14 +193,14 @@
 <li>current_branch - a string: name of current branch.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
+<p>repo() allows to clone, checkout, fetch a git repository.</p>
 <p>checkout command will be forced and remove untracked filed.</p>
 <p>git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.</p>
 <p>report('export', ...) clone and remove .git directory.</p>
 <p></p>
 <p>Tips:</p>
 <p></p>
-<p>If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.</p>
+<p>If you have this error: callback returned unsupported credentials type , checks your ~/.gitconfig file.</p>
 <p>You don't have some  ssh or https redirection.</p>
 <p>Remove entries:</p>
 <p>[url "git@github.com:"]</p>

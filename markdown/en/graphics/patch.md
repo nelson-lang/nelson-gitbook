@@ -32,40 +32,57 @@ Create patches of colored polygons
 ## Description
 
 <p>
-            <b>patch(X, Y, C)</b> creates a 2D polygonal shape with vertices defined by <b>X</b> and <b>Y</b> coordinates, and fills the shape with color <b>C</b>.</p>
+            patch(X, Y, C) creates a 2D polygonal shape with vertices defined by X and Y coordinates, and fills the shape with color C.</p>
+
 <p>
-                <b>patch(X, Y, Z, C)</b> creates a 3D polygonal shape with vertices defined by <b>X</b>, <b>Y</b>, and <b>Z</b> coordinates, and fills the shape with color <b>C</b>.</p>
+                patch(X, Y, Z, C) creates a 3D polygonal shape with vertices defined by X, Y, and Z coordinates, and fills the shape with color C.</p>
+
 <p>
-                    <b>patch(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the patch object using name-value pairs.</p>
+                    patch(..., PropertyName, PropertyValue, ...) sets optional properties for the patch object using name-value pairs.</p>
+
 <p>
-                        <b>patch('Faces', F, 'Vertices', V)</b> creates one or more polygons .</p>
+                        patch('Faces', F, 'Vertices', V) creates one or more polygons .</p>
+
 <p>
-                            <b>go = patch(...)</b> returns the handle <b>go</b> to the created patch object.</p>
+                            go = patch(...) returns the handle go to the created patch object.</p>
+
 <p>Property Name-Value Pairs:</p>
+
 <p></p>
+
 <p>
-                                <b>'FaceColor'</b>: color of the filled shape. FaceColor can be a character vector or a 3-element RGB vector. Default: <b>'flat'</b>.</p>
+                                'FaceColor': color of the filled shape. FaceColor can be a character vector or a 3-element RGB vector. Default: 'flat'.</p>
+
 <p>
-                                    <b>'EdgeColor'</b>: color of the edges of the polygonal shape. EdgeColor can be a character vector or a 3-element RGB vector. Default: <b>'none'</b>.</p>
+                                    'EdgeColor': color of the edges of the polygonal shape. EdgeColor can be a character vector or a 3-element RGB vector. Default: 'none'.</p>
+
 <p>
-                                        <b>'LineWidth'</b>: width of the edges of the polygonal shape. Default: <b>0.5</b>.</p>
+                                        'LineWidth': width of the edges of the polygonal shape. Default: 0.5.</p>
+
 <p>
-                                            <b>'LineStyle'</b>: style of the edges of the polygonal shape. LineStyle can be a character vector or a line style code. Default: <b>'-'</b>.</p>
+                                            'LineStyle': style of the edges of the polygonal shape. LineStyle can be a character vector or a line style code. Default: '-'.</p>
+
 <p>
-                                                <b>'FaceAlpha'</b>: transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
+                                                'FaceAlpha': transparency of the filled shape. FaceAlpha can be a scalar between 0 and 1. Default: 1.</p>
+
 <p>
-                                                    <b>'EdgeAlpha'</b>: transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default: <b>1</b>.</p>
+                                                    'EdgeAlpha': transparency of the edges of the polygonal shape. EdgeAlpha can be a scalar between 0 and 1. Default: 1.</p>
+
 <p>
-                                                        <b>'Parent'</b>: handle of the parent object for the patch. Default: <b>gca()</b>.</p>
+                                                        'Parent': handle of the parent object for the patch. Default: gca().</p>
+
 <p>
-                                                            <b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.</p>
+                                                            'Vertices': matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the X, Y, and Z input arguments.</p>
+
 <p>
-                                                                <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
+                                                                CreateFcnCallback (function handle, string or cell) called when object is created.
 Set this property on an existing component has no effect.</p>
+
 <p>
-                                                                    <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
+                                                                    DeleteFcnCallback (function handle, string or cell) called when object is deleted.</p>
+
 <p>
-                                                                        <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+                                                                        BeingDeleted Flag indicating that the object is being deleted.</p>
 
 ## Examples
 

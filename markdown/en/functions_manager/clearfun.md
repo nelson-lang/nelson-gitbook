@@ -19,7 +19,7 @@ Clear an built-in function.
 ## Description
 
 <p>
-            <b>clearfun</b> clears built-in.</p>
+            clearfun clears built-in.</p>
 
 ## Example
 

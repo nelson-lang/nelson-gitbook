@@ -19,7 +19,7 @@ call make or nmake tool
 ## Description
 
 <p>
-            <b>dlmake</b> used to provide an multiplatform way to build C/C++.</p>
+            dlmake used to provide an multiplatform way to build C/C++.</p>
 
 ## Example
 

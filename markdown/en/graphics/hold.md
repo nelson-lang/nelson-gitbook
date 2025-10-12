@@ -24,7 +24,7 @@ Retain current plot when adding new plots.
 ## Description
 
 <p>
-            <b>hold</b> allows to construct a plot sequence incrementally.</p>
+            hold allows to construct a plot sequence incrementally.</p>
 
 ## Example
 

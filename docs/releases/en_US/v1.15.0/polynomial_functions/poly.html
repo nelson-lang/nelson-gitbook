@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="poly"><a class="header" href="#poly">poly</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="poly"><a class="header" href="#poly">poly</a></h1>
 <p>Polynomial with specified roots or characteristic polynomial.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,8 +173,8 @@
 <li>p - row vector: polynomial coefficients</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>If <b>A</b> is a square matrix, <b>p = poly(A)</b> computes an n+1 element row vector. This result is composed the coefficients of the characteristic polynomial.</p>
-<p>If <b>r</b> is a vector, <b>p = poly(r)</b> computes a row vector. This result is composed the coefficients of the polynomial roots of which are the elements of <b>r</b>.</p>
+<p>If A is a square matrix, p = poly(A) computes an n+1 element row vector. This result is composed the coefficients of the characteristic polynomial.</p>
+<p>If r is a vector, p = poly(r) computes a row vector. This result is composed the coefficients of the polynomial roots of which are the elements of r.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">
 A = [1    2    3;

@@ -18,7 +18,7 @@ Remove directory from search path.
 ## Description
 
 <p>
-            <b>rmpath</b> removes directory from search path.</p>
+            rmpath removes directory from search path.</p>
 
 ## Example
 

@@ -19,10 +19,12 @@ greater than, > operator.
 ## Description
 
 <p>
-            <b>C = gt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than B.</p>
+            C = gt(A, B) returns a logical array with elements set to logical true A is greater than B.</p>
+
 <p></p>
+
 <p>
-                <b>gt</b> compares only the real part of numeric arrays.</p>
+                gt compares only the real part of numeric arrays.</p>
 
 ## Examples
 

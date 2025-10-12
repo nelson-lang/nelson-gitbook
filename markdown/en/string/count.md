@@ -19,7 +19,7 @@ Computes the number of occurrences of an pattern.
 
 ## Description
 
-<b>count</b>computes the number of occurrences of an pattern.
+        count computes the number of occurrences of an pattern.
 
 ## Example
 

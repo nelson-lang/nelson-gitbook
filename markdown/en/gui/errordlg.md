@@ -22,9 +22,11 @@ Creates a error dialog box.
 ## Description
 
 <p>
-            <b>errordlg</b> creates an error dialog box.</p>
+            errordlg creates an error dialog box.</p>
+
 <p>
-                <b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.</p>
+                h = errordlg(text_error, title, 'replace') specifies whether to replace an existing dialog box having the same title.</p>
+
 <p>
                     
                 </p>

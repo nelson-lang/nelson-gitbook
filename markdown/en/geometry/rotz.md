@@ -17,7 +17,7 @@
 ## Description
 
 <p>
-            <b>rotz</b> returns 3x3 transformation matrix for rotations around z-axis.</p>
+            rotz returns 3x3 transformation matrix for rotations around z-axis.</p>
 
 ## Bibliography
 

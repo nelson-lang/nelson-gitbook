@@ -13,7 +13,7 @@ throw error.
 ## Description
 
 <p>
-            <b>throw(MException)</b> throws an exception based on the information contained in the <b>MException</b> object, exception.</p>
+            throw(MException) throws an exception based on the information contained in the MException object, exception.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ get info about audio playback is in progress.
 
 ## Description
 
-<b>isplaying</b>get information about audio playback is in progress.
+        isplaying get information about audio playback is in progress.
 
 ## Example
 

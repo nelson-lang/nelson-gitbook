@@ -14,7 +14,8 @@ Removes dlsym object.
 ## Description
 
 <p>
-            <b>delete(h)</b> releases dlsym object.</p>
+            delete(h) releases dlsym object.</p>
+
 <p>Do not forget to clear h afterward.</p>
 
 ## Example

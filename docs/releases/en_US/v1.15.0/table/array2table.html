@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="array2table"><a class="header" href="#array2table">array2table</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="array2table"><a class="header" href="#array2table">array2table</a></h1>
 <p>Convert homogeneous array to table.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,8 +172,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>T = array2table(A)</b> converts an m-by-n array <b>A</b> into an m-by-n table, where each column of <b>A</b> becomes a variable in the resulting table <b>T</b>.</p>
-<p>By default, <b>array2table</b> uses the name of the input array, combined with the column number, to create variable names in the table. If these names are not valid identifiers, it assigns default names of the form <b>'Var1', 'Var2', ... , 'VarN'</b>, where <b>N</b> is the number of columns in <b>A</b>.</p>
+            T = array2table(A) converts an m-by-n array A into an m-by-n table, where each column of A becomes a variable in the resulting table T.</p>
+<p>By default, array2table uses the name of the input array, combined with the column number, to create variable names in the table. If these names are not valid identifiers, it assigns default names of the form 'Var1', 'Var2', ... , 'VarN', where N is the number of columns in A.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = magic(6);
 T = array2table(A)

@@ -15,8 +15,9 @@ Show information about variable or result of expression.
 ## Description
 
 <p>
-            <b>display(V)</b> displays information about the variable <b>V</b>.</p>
-<p>Nelson calls <b>display</b> function whenever an object is referred to in a statement that is not terminated by a semicolon.</p>
+            display(V) displays information about the variable V.</p>
+
+<p>Nelson calls display function whenever an object is referred to in a statement that is not terminated by a semicolon.</p>
 
 ## Examples
 

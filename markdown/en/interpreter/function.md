@@ -12,9 +12,10 @@ function declaration.
 ## Description
 
 <p>
-            <b>function</b> opens a function definition.</p>
+            function opens a function definition.</p>
+
 <p>
-                <b>endfunction</b> closes a function definition (optional, but strongly recommended).</p>
+                endfunction closes a function definition (optional, but strongly recommended).</p>
 
 ## Example
 

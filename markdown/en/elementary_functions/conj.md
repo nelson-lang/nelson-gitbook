@@ -17,7 +17,7 @@ Complex conjugate
 ## Description
 
 <p>
-            <b>conj</b> returns the complex conjugate.</p>
+            conj returns the complex conjugate.</p>
 
 ## Example
 

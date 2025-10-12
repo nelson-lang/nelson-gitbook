@@ -18,7 +18,7 @@ not logical, ~ operator
 ## Description
 
 <p>
-            <b>C = not(A)</b> performs not logical ~A.</p>
+            C = not(A) performs not logical ~A.</p>
 
 ## Example
 

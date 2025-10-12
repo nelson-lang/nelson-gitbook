@@ -13,7 +13,7 @@ Return the preferences directory used by Nelson.
 ## Description
 
 <p>
-            <b>pref_path = prefdir()</b> returns the preferences directory used by Nelson.</p>
+            pref_path = prefdir() returns the preferences directory used by Nelson.</p>
 
 ## Example
 

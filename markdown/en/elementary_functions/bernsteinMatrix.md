@@ -18,8 +18,10 @@ Bernstein matrix
 ## Description
 
 <p>
-            <b>B = bernsteinMatrix(n, t)</b> constructs a Bernstein matrix <b>B</b> with dimensions length(t) - by - (n+1), where t is a vector.</p>
+            B = bernsteinMatrix(n, t) constructs a Bernstein matrix B with dimensions length(t) - by - (n+1), where t is a vector.</p>
+
 <p>The Bernstein matrix is also referred to as the Bezier matrix.</p>
+
 <p>This function can be utilized to calculate the points of a Bezier curve.</p>
 
 ## Example

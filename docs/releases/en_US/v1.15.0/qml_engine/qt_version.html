@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="qt_version"><a class="header" href="#qt_version">qt_version</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="qt_version"><a class="header" href="#qt_version">qt_version</a></h1>
 <p>Returns Qt version used.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -167,7 +168,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>v = qt_version()</b> returns the version number of Qt at run-time as a string (for example, "5.15.2").</p>
+            v = qt_version() returns the version number of Qt at run-time as a string (for example, "5.15.2").</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">semver(qt_version(), '&gt;5.15')
 </code></pre>

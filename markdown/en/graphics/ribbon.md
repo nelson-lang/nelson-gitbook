@@ -24,11 +24,14 @@ Ribbon plot.
 ## Description
 
 <p>
-            <b>ribbon(Z)</b> plots a 3D ribbon graph based on the matrix Z with the values of Y defining the y-axis of the graph.</p>
+            ribbon(Z) plots a 3D ribbon graph based on the matrix Z with the values of Y defining the y-axis of the graph.</p>
+
 <p>
-                <b>ribbon(Y, Z)</b> plots a 3D ribbon graph based on the matrix Y with the values of Z defining the z-axis of the graph.</p>
+                ribbon(Y, Z) plots a 3D ribbon graph based on the matrix Y with the values of Z defining the z-axis of the graph.</p>
+
 <p>
-                    <b>s = ribbon(...)</b> returns a vector of surface objects.</p>
+                    s = ribbon(...) returns a vector of surface objects.</p>
+
 <p>Note that Y and Z must have the same size.</p>
 
 ## Example

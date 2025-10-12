@@ -18,7 +18,7 @@ white colormap array.
 ## Description
 
 <p>
-            <b>white</b> returns the colormap with white colors.</p>
+            white returns the colormap with white colors.</p>
 
 ## Example
 

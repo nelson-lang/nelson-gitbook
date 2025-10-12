@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="aftereach"><a class="header" href="#aftereach">afterEach</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="aftereach"><a class="header" href="#aftereach">afterEach</a></h1>
 <p>Run function after each function finish running in the background.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,9 +174,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>B = afterEach(F, fcn, n)</b> returns a AfterEachFuture object <b>B</b>.</p>
-<p>Function <b>fcn</b> is automatically runned after each element in the Future array <b>F</b> was finished.</p>
-<p>If any of the elements in <b>F</b> encounters an error, the <b>Error</b> property of <b>B</b> contains an error.</p>
+            B = afterEach(F, fcn, n) returns a AfterEachFuture object B.</p>
+<p>Function fcn is automatically runned after each element in the Future array F was finished.</p>
+<p>If any of the elements in F encounters an error, the Error property of B contains an error.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">pool = backgroundPool()
 fptrRand = str2func('rand')

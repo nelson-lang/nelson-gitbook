@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lu"><a class="header" href="#lu">lu</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lu"><a class="header" href="#lu">lu</a></h1>
 <p>LU matrix factorization.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,11 +175,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[L, U] = lu(A)</b> function decomposes a full matrix <b>A</b> into two matrices: an upper triangular matrix <b>U</b> and a permuted lower triangular matrix <b>L</b>.</p>
-<p>This factorization satisfies the equation <b>A = L * U</b>.</p>
+            [L, U] = lu(A) function decomposes a full matrix A into two matrices: an upper triangular matrix U and a permuted lower triangular matrix L.</p>
+<p>This factorization satisfies the equation A = L * U.</p>
 <p>
-                <b>[L, U, P] = lu(A)</b> function, when used with three output arguments, provides a permutation matrix <b>P</b> in addition to the unit lower triangular matrix <b>L</b> and the upper triangular matrix <b>U</b>.</p>
-<p>This factorization is expressed as <b>A = P'LU</b>, where <b>L</b> is unit lower triangular, and <b>U</b> is upper triangular.</p>
+                [L, U, P] = lu(A) function, when used with three output arguments, provides a permutation matrix P in addition to the unit lower triangular matrix L and the upper triangular matrix U.</p>
+<p>This factorization is expressed as A = P'LU, where L is unit lower triangular, and U is upper triangular.</p>
 <h2 id="used-functions"><a class="header" href="#used-functions">Used function(s)</a></h2>
 <p>LAPACKE_dgetrf, LAPACKE_sgetrf, LAPACKE_zgetrf, LAPACKE_cgetrf</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>

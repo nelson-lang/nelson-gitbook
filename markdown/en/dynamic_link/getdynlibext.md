@@ -13,7 +13,7 @@ Returns the extension of dynamic libraries.
 ## Description
 
 <p>
-            <b>getdynlibext()</b> returns the extension of dynamic libraries.</p>
+            getdynlibext() returns the extension of dynamic libraries.</p>
 
 ## Example
 

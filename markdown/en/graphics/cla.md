@@ -19,7 +19,7 @@ Clear axes.
 ## Description
 
 <p>
-            <b>cla</b> clears the current axes.</p>
+            cla clears the current axes.</p>
 
 ## Example
 

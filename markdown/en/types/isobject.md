@@ -16,7 +16,7 @@ Return true if variable var is an object.
 
 ## Description
 
-<b>ishandle</b>returns a logical 1 if the argument is an object and a logical 0 otherwise.
+        ishandle returns a logical 1 if the argument is an object and a logical 0 otherwise.
 
 ## Example
 

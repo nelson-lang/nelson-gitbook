@@ -20,7 +20,7 @@ Transform spherical coordinates to Cartesian.
 
 ## Description
 
-<b>sph2cart</b>transforms Cartesian to spherical coordinates.
+        sph2cart transforms Cartesian to spherical coordinates.
 
 ## Example
 

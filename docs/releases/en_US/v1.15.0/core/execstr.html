@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="execstr"><a class="header" href="#execstr">execstr</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="execstr"><a class="header" href="#execstr">execstr</a></h1>
 <p>Execute Nelson code in strings.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,12 +174,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>execstr</b> executes Nelson instructions given in a string.</p>
+            execstr executes Nelson instructions given in a string.</p>
 <p>
-                <b>execstr(str, 'nocatch')</b> is equivalent to <b>execstr(str)</b>
+                execstr(str, 'nocatch') is equivalent to execstr(str)
             </p>
 <p>
-                <b>execstr</b> can be used as alternative to <b>try ... catch ... end</b> block.</p>
+                execstr can be used as alternative to try ... catch ... end block.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">execstr('b = ''hello''; disp(b);')
 </code></pre>

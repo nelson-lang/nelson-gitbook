@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="jsonencode"><a class="header" href="#jsonencode">jsonencode</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="jsonencode"><a class="header" href="#jsonencode">jsonencode</a></h1>
 <p>encodes a Nelson object into a JSON string.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,12 +174,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>jsonencode</b> converts a Nelson variable to JSON text.</p>
+            jsonencode converts a Nelson variable to JSON text.</p>
 <p>
-                <b>jsonencode</b> does not support complex numbers, sparse arrays, function handle, and others handle.</p>
+                jsonencode does not support complex numbers, sparse arrays, function handle, and others handle.</p>
 <p>
-                    <b>jsonencode</b> can be overloaded to manage your own type.</p>
-<p>By default <b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.</p>
+                    jsonencode can be overloaded to manage your own type.</p>
+<p>By default jsonencode Inf values are converted to the string "Inf", NaN values are converted to 'null'.</p>
 <p>Warning: The shape of a matrix and data type are not always preserved.</p>
 <h2 id="bibliography"><a class="header" href="#bibliography">Bibliography</a></h2>
 <p>http://www.rfc-editor.org/rfc/rfc7159.txt</p>

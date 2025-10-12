@@ -20,9 +20,10 @@ Retrieve image data from a movie frame.
 ## Description
 
 <p>
-            <b>RGB = frame2im(F)</b> extracts the truecolor (RGB) image from the movie frame <b>F</b>.</p>
+            RGB = frame2im(F) extracts the truecolor (RGB) image from the movie frame F.</p>
+
 <p>
-                <b>[X, map] = frame2im(F)</b> retrieves the indexed image <b>X</b> and its corresponding colormap map from the movie frame <b>F</b>.</p>
+                [X, map] = frame2im(F) retrieves the indexed image X and its corresponding colormap map from the movie frame F.</p>
 
 ## Example
 

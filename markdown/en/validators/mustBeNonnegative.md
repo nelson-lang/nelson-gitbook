@@ -16,7 +16,7 @@ Checks that value is nonnegative or raise an error.
 ## Description
 
 <p>
-            <b>mustBeNonnegative</b> checks that value is nonnegative or raise an error.</p>
+            mustBeNonnegative checks that value is nonnegative or raise an error.</p>
 
 ## Example
 

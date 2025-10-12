@@ -14,7 +14,7 @@ Creates MPI_Comm object.
 ## Description
 
 <p>
-            <b>MPI_Comm_object(h)</b> creates an MPI_Comm object.</p>
+            MPI_Comm_object(h) creates an MPI_Comm object.</p>
 
 ## Example
 

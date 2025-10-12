@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="nextpow2"><a class="header" href="#nextpow2">nextpow2</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="nextpow2"><a class="header" href="#nextpow2">nextpow2</a></h1>
 <p>Exponent of next higher power of 2</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,8 +171,8 @@
 <li>R - result of nextpow2: next higher power of 2.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>if <b>M</b> is a vector or a matrix <b>nextpow2(M)</b> applies element-wise.</p>
-<p>If <b>M</b> is a scalar, <b>nextpow2(M)</b> returns the first <b>p</b> such that <b>2^p >= abs(M)</b>.</p>
+<p>if M is a vector or a matrix nextpow2(M) applies element-wise.</p>
+<p>If M is a scalar, nextpow2(M) returns the first p such that 2^p >= abs(M).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">R = nextpow2([10, Inf, 30, -Inf, 90, NaN])
 M = uint32([1020 4000 32700]);

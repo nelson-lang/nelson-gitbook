@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="gammaln"><a class="header" href="#gammaln">gammaln</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="gammaln"><a class="header" href="#gammaln">gammaln</a></h1>
 <p>Logarithm of gamma function</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,9 +171,9 @@
 <li>R - result of gammaln function.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>gammaln(A)</b> computes the natural logarithm of the gamma function for a given input <b>A</b>, expressed as <b>gammaln(A) = log(gamma(A))</b>.</p>
+<p>The function gammaln(A) computes the natural logarithm of the gamma function for a given input A, expressed as gammaln(A) = log(gamma(A)).</p>
 <p>It's important to note that A must be a nonnegative real number.</p>
-<p>Using gammaln helps prevent potential underflow and overflow issues that might arise if directly computing <b>log(gamma(A))</b>.</p>
+<p>Using gammaln helps prevent potential underflow and overflow issues that might arise if directly computing log(gamma(A)).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">R = gammaln([0:0.1:pi])
 </code></pre>

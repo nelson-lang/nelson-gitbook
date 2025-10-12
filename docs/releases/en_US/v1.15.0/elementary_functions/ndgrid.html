@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ndgrid"><a class="header" href="#ndgrid">ndgrid</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="ndgrid"><a class="header" href="#ndgrid">ndgrid</a></h1>
 <p>Rectangular grid in N-D space</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,9 +174,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[X1, X2, … , Xn] = ndgrid(x1, x2, … , xn)</b> generates an n-dimensional full grid by replicating each grid vector.</p>
+            [X1, X2, … , Xn] = ndgrid(x1, x2, … , xn) generates an n-dimensional full grid by replicating each grid vector.</p>
 <p>
-                <b>[X1, X2, … , Xn] = ndgrid(xg)</b> In this scenario, the single grid vector <b>xg</b> is used for all dimensions. The number of output arguments determines the dimensionality 
+                [X1, X2, … , Xn] = ndgrid(xg) In this scenario, the single grid vector xg is used for all dimensions. The number of output arguments determines the dimensionality 
 n of the resulting grid.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">M = {'apple', 'banana', 'cherry'};

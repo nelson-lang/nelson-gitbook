@@ -16,10 +16,12 @@ function editor.
 ## Description
 
 <p>
-            <b>edit</b> opens a new file called untitled.m in the nelson's editor.</p>
-<p>If <b>function_name</b> is the name of a defined nelson function <b>edit(function_name)</b> try to open the associated file function_name.m .</p>
+            edit opens a new file called untitled.m in the nelson's editor.</p>
+
+<p>If function_name is the name of a defined nelson function edit(function_name) try to open the associated file function_name.m .</p>
+
 <p>
-                <b>edit(dirname)</b> opens all .m available in <b>dirname</b>.</p>
+                edit(dirname) opens all .m available in dirname.</p>
 
 ## Example
 

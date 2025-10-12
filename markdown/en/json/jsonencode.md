@@ -19,12 +19,16 @@ encodes a Nelson object into a JSON string.
 ## Description
 
 <p>
-            <b>jsonencode</b> converts a Nelson variable to JSON text.</p>
+            jsonencode converts a Nelson variable to JSON text.</p>
+
 <p>
-                <b>jsonencode</b> does not support complex numbers, sparse arrays, function handle, and others handle.</p>
+                jsonencode does not support complex numbers, sparse arrays, function handle, and others handle.</p>
+
 <p>
-                    <b>jsonencode</b> can be overloaded to manage your own type.</p>
-<p>By default <b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.</p>
+                    jsonencode can be overloaded to manage your own type.</p>
+
+<p>By default jsonencode Inf values are converted to the string "Inf", NaN values are converted to 'null'.</p>
+
 <p>Warning: The shape of a matrix and data type are not always preserved.</p>
 
 ## Bibliography

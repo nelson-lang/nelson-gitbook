@@ -16,7 +16,7 @@ Determine which characters are space.
 
 ## Description
 
-<b>isletter</b>determines which characters are space characters.
+        isletter determines which characters are space characters.
 
 ## Examples
 

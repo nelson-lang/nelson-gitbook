@@ -15,7 +15,7 @@ Largest positive floating-point number.
 ## Description
 
 <p>
-            <b>realmax</b> returns largest positive floating-point number.</p>
+            realmax returns largest positive floating-point number.</p>
 
 ## Example
 

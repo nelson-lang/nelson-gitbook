@@ -25,8 +25,10 @@ Random Number.
 ## Description
 
 <p>
-            <b>rand</b> returns a matrix with random elements uniformly distributed on the interval [0, 1].</p>
-<p>seed can be modified using <b>rng</b>.</p>
+            rand returns a matrix with random elements uniformly distributed on the interval [0, 1].</p>
+
+<p>seed can be modified using rng.</p>
+
 <p>The Mersenne Twister designers consider 5489 as default seed. Nelson uses it as default seed (0).</p>
 
 ## Bibliography

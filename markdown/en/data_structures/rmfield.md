@@ -18,7 +18,7 @@ Remove fields from structure.
 ## Description
 
 <p>
-            <b>s = rmfield(st, field)</b> removes the specified field from structure array.</p>
+            s = rmfield(st, field) removes the specified field from structure array.</p>
 
 ## Example
 

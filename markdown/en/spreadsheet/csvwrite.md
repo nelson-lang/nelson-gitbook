@@ -16,7 +16,7 @@ Write comma-separated value file.
 ## Description
 
 <p>
-            <b>csvwrite</b> writes an numeric matrix to an CSV format file.</p>
+            csvwrite writes an numeric matrix to an CSV format file.</p>
 
 ## Example
 

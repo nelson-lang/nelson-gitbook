@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="sound"><a class="header" href="#sound">sound</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="sound"><a class="header" href="#sound">sound</a></h1>
 <p>Convert matrix of signal data to sound and play it.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,7 +173,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>sound</b> plays audio signal <b>y</b> to the speaker at sample rate of <b>Fs</b> hertz and uses <b>nBits</b> bits per sample.
+            sound plays audio signal y to the speaker at sample rate of Fs hertz and uses nBits bits per sample.
 	</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">signal = rand(2, 44100) - 0.5;

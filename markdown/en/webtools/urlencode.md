@@ -17,7 +17,8 @@ Replace special characters in URLs with escape characters.
 ## Description
 
 <p>
-            <b>urlencode</b> replaces special characters in URLs with escape characters.</p>
+            urlencode replaces special characters in URLs with escape characters.</p>
+
 <p>Special characters in URLs need to be replaced with escape characters. For example, spaces should be replaced with '%20'.</p>
 
 ## Example

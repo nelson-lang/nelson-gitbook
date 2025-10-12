@@ -15,10 +15,10 @@ Nelson is a powerful and easy-to-use programming language designed for simplicit
 
 ## Prerequisites 🛠️
 
-- [rust](https://www.rust-lang.org/tools/install) (mdbook)
+- [rust](https://www.rust-lang.org/tools/install) (mdbook and dependencies)
 
 ```bash
-cargo install mdbook
+cargo build
 ```
 
 - node (prettier)

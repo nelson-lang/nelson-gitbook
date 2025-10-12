@@ -18,7 +18,7 @@ Bone colormap array.
 ## Description
 
 <p>
-            <b>bone</b> returns the colormap with bone colors.</p>
+            bone returns the colormap with bone colors.</p>
 
 ## Example
 

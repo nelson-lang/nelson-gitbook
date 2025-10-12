@@ -18,7 +18,7 @@ Generate a dictionary with defined key and value types.
 ## Description
 
 <p>
-            <b>d = configureDictionary(keyType, valueType)</b> initializes an empty dictionary that enforces keys of type <b>keyType</b> and values of type <b>valueType</b>.</p>
+            d = configureDictionary(keyType, valueType) initializes an empty dictionary that enforces keys of type keyType and values of type valueType.</p>
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="isequal"><a class="header" href="#isequal">isequal</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="isequal"><a class="header" href="#isequal">isequal</a></h1>
 <p>Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,8 +174,8 @@
 <li>res - a logical value</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>isequal</b> returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false.</p>
-<p><b>isequal</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be NOT <b>equal</b> to other elements.</p>
+<p>isequal returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false.</p>
+<p>isequal compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be NOT equal to other elements.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">A = eye(3, 3);
 res = isequal(A, A)

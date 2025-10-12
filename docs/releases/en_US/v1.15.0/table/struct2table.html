@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="struct2table"><a class="header" href="#struct2table">struct2table</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="struct2table"><a class="header" href="#struct2table">struct2table</a></h1>
 <p>Convert a structure array into a tabular format.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,7 +172,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>T = struct2table(S)</b> transforms a structure array into a table, where each field of the input structure is represented as a variable in the resulting table.</p>
+            T = struct2table(S) transforms a structure array into a table, where each field of the input structure is represented as a variable in the resulting table.</p>
 <p>If the input is a scalar structure containing 𝑛 fields, each with 𝑚 rows, the output will be an 𝑚×𝑛 table.</p>
 <p>If the input is either an 𝑚×1 or a 1×𝑚 structure array with 𝑛 fields, the output will also be an 𝑚×𝑛 table.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>

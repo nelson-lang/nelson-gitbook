@@ -17,7 +17,8 @@ Converts to 8-bit signed integer.
 ## Description
 
 <p>
-            <b>int8</b> converts value to 8-bit integer type.</p>
+            int8 converts value to 8-bit integer type.</p>
+
 <p>The value is rounded to the nearest int8 value on conversion. A value that is above or below the range for an int8 class is mapped to one of the endpoints of the range [-128, 127].</p>
 
 ## Example

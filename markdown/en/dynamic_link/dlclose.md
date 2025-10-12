@@ -15,7 +15,8 @@ Removes dllib object.
 ## Description
 
 <p>
-            <b>dlclose(h)</b> or <b>delete(h)</b> releases dllib object.</p>
+            dlclose(h) or delete(h) releases dllib object.</p>
+
 <p>Do not forget to clear h afterward.</p>
 
 ## Example

@@ -23,9 +23,11 @@ Run Julia file from Nelson.
 ## Description
 
 <p>
-            <b>jlrunfile(filenam)</b> function executes Julia file.</p>
-<p>As the <b>jlrun</b> function, variables generated in the Julia workspace through the <b>jlrunfile</b> function do persist.</p>
-<p>The code <b>outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN)</b> executes the code with one or more name-value pair arguments.</p>
+            jlrunfile(filenam) function executes Julia file.</p>
+
+<p>As the jlrun function, variables generated in the Julia workspace through the jlrunfile function do persist.</p>
+
+<p>The code outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN) executes the code with one or more name-value pair arguments.</p>
 
 ## Examples
 

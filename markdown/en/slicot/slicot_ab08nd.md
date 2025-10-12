@@ -35,6 +35,7 @@ Construction of a regular pencil for a given system such that its generalized ei
 ## Description
 
 <p>To construct for a linear multivariable system described by a state-space model (A,B,C,D) a regular pencil (A - lambda*B ) which has the invariant zeros of the system as generalized eigenvalues.</p>
+
 <p>The routine also computes the orders of the infinite zeros and the right and left Kronecker indices of the system (A,B,C,D).</p>
 
 ## Bibliography

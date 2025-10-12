@@ -18,7 +18,7 @@ Returns last day of month.
 ## Description
 
 <p>
-            <b>E = eomday(Y, M)</b> returns the last day of the month <b>M</b> for the year <b>Y</b>.</p>
+            E = eomday(Y, M) returns the last day of the month M for the year Y.</p>
 
 ## Example
 

@@ -17,7 +17,8 @@ Number of key-value pairs in dictionary.
 ## Description
 
 <p>
-            <b>n = numEntries(d)</b> retrieves the number of key-value pairs stored in the dictionary.</p>
+            n = numEntries(d) retrieves the number of key-value pairs stored in the dictionary.</p>
+
 <p>If d is an unconfigured dictionary, then numEntries returns 0.</p>
 
 ## Example

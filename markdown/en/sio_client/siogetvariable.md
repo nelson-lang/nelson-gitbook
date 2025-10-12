@@ -13,7 +13,7 @@ Emit an value of variable to web browser.
 ## Description
 
 <p>
-            <b>siogetvariable</b> send value of a variable to web browser.</p>
+            siogetvariable send value of a variable to web browser.</p>
 
 ## Example
 

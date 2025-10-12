@@ -19,7 +19,7 @@ Modify date number by field.
 ## Description
 
 <p>
-            <b>r = addtodate(d, q, f)</b> adds quantity <b>q</b> to the indicated date field <b>f</b> of a scalar serial date number <b>d</b>, returning the updated date number <b>r</b>.</p>
+            r = addtodate(d, q, f) adds quantity q to the indicated date field f of a scalar serial date number d, returning the updated date number r.</p>
 
 ## Example
 

@@ -13,7 +13,8 @@ Command separator for current operating system.
 ## Description
 
 <p>
-            <b>cmdsep</b> returns the command separator for current operating system.</p>
+            cmdsep returns the command separator for current operating system.</p>
+
 <p>This function is used by Nelson to build command lines for unix and dos operating systems.</p>
 
 ## Example

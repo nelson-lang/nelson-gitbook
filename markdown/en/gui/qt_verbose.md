@@ -19,7 +19,8 @@ show/hide Qt debug message.
 ## Description
 
 <p>
-            <b>qt_verbose</b> how/hide Qt debug message.</p>
+            qt_verbose how/hide Qt debug message.</p>
+
 <p>This function is usefull to debug Qt and Qml.</p>
 
 ## Example

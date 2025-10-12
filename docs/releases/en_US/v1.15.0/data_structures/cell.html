@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="cell"><a class="header" href="#cell">cell</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="cell"><a class="header" href="#cell">cell</a></h1>
 <p>Create cell array of empty matrices.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -178,12 +179,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>cell</b> returns a cell array of empty matrices.</p>
+            cell returns a cell array of empty matrices.</p>
 <p>
-                <b>cell()</b> is equivalent to <b>cell(0)</b>
+                cell() is equivalent to cell(0)
             </p>
 <p>
-                <b>cell(A)</b> with A a string array converts to cell.</p>
+                cell(A) with A a string array converts to cell.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">A = eye(2, 4);
 sz = size(A)

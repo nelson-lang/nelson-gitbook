@@ -17,7 +17,7 @@ Convert number to binary representation.
 ## Description
 
 <p>
-            <b>num2bin</b> returns a char array giving the literal bit representation of a number.</p>
+            num2bin returns a char array giving the literal bit representation of a number.</p>
 
 ## Bibliography
 

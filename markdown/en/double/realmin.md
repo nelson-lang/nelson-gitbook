@@ -15,7 +15,7 @@ Smallest positive floating-point number.
 ## Description
 
 <p>
-            <b>realmin</b> returns smallest positive floating-point number.</p>
+            realmin returns smallest positive floating-point number.</p>
 
 ## Example
 

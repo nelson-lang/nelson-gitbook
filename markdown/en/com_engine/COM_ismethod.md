@@ -18,7 +18,7 @@ Determines if input is an existing COM object method.
 
 ## Description
 
-<b>r = ismethod(h, methodname)</b>returns true if the specified name is a method of the COM object h. Otherwise, it returns false.
+        r = ismethod(h, methodname) returns true if the specified name is a method of the COM object h. Otherwise, it returns false.
 
 ## Example
 

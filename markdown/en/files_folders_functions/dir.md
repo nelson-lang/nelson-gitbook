@@ -23,7 +23,8 @@ Returns file list.
 ## Description
 
 <p>
-            <b>dir</b> displays the list of files and folders in the current folder.</p>
+            dir displays the list of files and folders in the current folder.</p>
+
 <p>* (wildcard) is supported in filename and path name.</p>
 
 ## Example

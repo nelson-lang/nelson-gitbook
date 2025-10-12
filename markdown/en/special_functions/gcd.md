@@ -18,7 +18,7 @@ Greatest common divisor
 ## Description
 
 <p>
-            <b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.</p>
+            G = gcd(A, B) computes the greatest common divisor using the Euclidian algorithm.</p>
 
 ## Bibliography
 

@@ -18,7 +18,7 @@ Turbo colormap array.
 ## Description
 
 <p>
-            <b>turbo</b> returns the colormap with turbo colors.</p>
+            turbo returns the colormap with turbo colors.</p>
 
 ## Example
 

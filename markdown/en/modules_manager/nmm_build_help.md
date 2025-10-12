@@ -14,7 +14,7 @@ helper's function to build help of an external module
 ## Description
 
 <p>
-            <b>nmm_build_help</b> generates help of an external module.</p>
+            nmm_build_help generates help of an external module.</p>
 
 ## Example
 

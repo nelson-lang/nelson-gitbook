@@ -16,7 +16,7 @@ Convert an integer array to a string
 
 ## Description
 
-<b>int2str</b>converts an numeric array to a string with integer format. Inputs are rounded before conversion.
+        int2str converts an numeric array to a string with integer format. Inputs are rounded before conversion.
 
 ## Examples
 

@@ -20,9 +20,10 @@ Close an opened file.
 ## Description
 
 <p>
-            <b>fclose</b> must be used to close a file opened by <b>fopen</b>.</p>
+            fclose must be used to close a file opened by fopen.</p>
+
 <p>
-                <b>fclose('all')</b> closes all opened file with <b>fopen</b>.</p>
+                fclose('all') closes all opened file with fopen.</p>
 
 ## Example
 

@@ -23,7 +23,7 @@ Label z-axis.
 ## Description
 
 <p>
-            <b>zlabel('text')</b> labels the z-axis of the current axes.</p>
+            zlabel('text') labels the z-axis of the current axes.</p>
 
 ## Example
 

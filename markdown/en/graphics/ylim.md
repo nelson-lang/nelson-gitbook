@@ -27,7 +27,7 @@ set or get y-axis limits.
 ## Description
 
 <p>
-            <b>ylim</b> get or set the limits of the y-axis for the current plot.</p>
+            ylim get or set the limits of the y-axis for the current plot.</p>
 
 ## Example
 

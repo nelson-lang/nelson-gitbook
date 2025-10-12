@@ -16,7 +16,7 @@ Hyperbolic secant.
 
 ## Description
 
-<b>sech</b>computes the Hyperbolic secant for each element of<b>x</b>.
+        sech computes the Hyperbolic secant for each element of x.
 
 ## Example
 

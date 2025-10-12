@@ -16,7 +16,7 @@ Checks that value is single piece of text or raise an error.
 ## Description
 
 <p>
-            <b>mustBeTextScalar</b> that value is single piece of text or raise an error.</p>
+            mustBeTextScalar that value is single piece of text or raise an error.</p>
 
 ## Example
 

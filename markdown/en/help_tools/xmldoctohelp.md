@@ -20,7 +20,7 @@ Converts xml Nelson help files to Nelson format.
 ## Description
 
 <p>
-            <b>xmldoctohelp</b> converts xml Nelson help files to Nelson format.</p>
+            xmldoctohelp converts xml Nelson help files to Nelson format.</p>
 
 ## See also
 

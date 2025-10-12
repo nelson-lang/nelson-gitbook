@@ -22,9 +22,11 @@ Companion realization of transfer functions.
 ## Description
 
 <p>
-            <b>[A, B, C, D, E] = compreal(numerator, denominator)</b> calculates a state-space realization represented by matrices A, B, C, D, and E.</p>
-<p>The <b>E</b> matrix is an empty matrix (identity matrix) when there are at least as many poles as zeros.</p>
-<p>However, if there are more zeros than poles, the <b>E</b> matrix becomes singular.</p>
+            [A, B, C, D, E] = compreal(numerator, denominator) calculates a state-space realization represented by matrices A, B, C, D, and E.</p>
+
+<p>The E matrix is an empty matrix (identity matrix) when there are at least as many poles as zeros.</p>
+
+<p>However, if there are more zeros than poles, the E matrix becomes singular.</p>
 
 ## Example
 

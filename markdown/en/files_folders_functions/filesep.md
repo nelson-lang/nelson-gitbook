@@ -12,12 +12,12 @@ Return the file separator character for the current platform.
 
 ## Description
 
-<b>pathsep</b>returns '\' on Windows and '/' on others platforms.
+        pathsep returns '\' on Windows and '/' on others platforms.
 
 ## Example
 
 ```matlab
-A = filesep
+ runnable="cli"A = filesep
 ```
 
 ## See also

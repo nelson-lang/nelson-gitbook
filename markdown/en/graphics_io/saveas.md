@@ -16,10 +16,19 @@ Save figure to specific file format.
 ## Description
 
 <p>
-            <b>saveas</b> save figure to specific file format.</p>
+            saveas save figure to specific file format.</p>
+
 <p>
-                <b>supported formats</b>:</p>
-Option Format File extension svg SVG (scalable vector graphics) .svg pdf Full page Portable Document Format (PDF) color .pdf png PNG 24-bit .png jpg JPEG 24-bit .jpg gif Graphics Interchange Format .gif tif Tagged Image File Format .tif
+                supported formats:</p>
+
+| Option | Format                                         | File extension |
+| ------ | ---------------------------------------------- | -------------- |
+| svg    | SVG (scalable vector graphics)                 | .svg           |
+| pdf    | Full page Portable Document Format (PDF) color | .pdf           |
+| png    | PNG 24-bit                                     | .png           |
+| jpg    | JPEG 24-bit                                    | .jpg           |
+| gif    | Graphics Interchange Format                    | .gif           |
+| tif    | Tagged Image File Format                       | .tif           |
 
 ## Example
 
@@ -29,7 +38,7 @@ y = x;
 [X,Y] = meshgrid(x);
 F = X.*exp(-X.^2-Y.^2);
 surf(X,Y,F);
-saveas(gcf(), 'svg-file.svg');
+saveas(gcf(), [tempdir, 'svg-file.svg']);
 
 ```
 

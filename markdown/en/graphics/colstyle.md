@@ -22,7 +22,7 @@ Parse color and style from string.
 ## Description
 
 <p>
-            <b>colstyle</b> parses color and style from string.</p>
+            colstyle parses color and style from string.</p>
 
 ## Example
 

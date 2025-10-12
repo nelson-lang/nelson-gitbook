@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="diary"><a class="header" href="#diary">diary</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="diary"><a class="header" href="#diary">diary</a></h1>
 <p>Diary of a session.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -180,23 +181,23 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>diary</b> creates a log of keyboard input and the resulting text output.</p>
+            diary creates a log of keyboard input and the resulting text output.</p>
 <p>
-                <b>diary</b> toggles diary mode on and off.</p>
+                diary toggles diary mode on and off.</p>
 <p>
-                    <b>diary('off')</b> stops recording the session in the diary file.</p>
+                    diary('off') stops recording the session in the diary file.</p>
 <p>
-                        <b>diary('on')</b> starts recording a session in a file called 'diary' in the current working directory.</p>
+                        diary('on') starts recording a session in a file called 'diary' in the current working directory.</p>
 <p>
-                            <b>diary('set', 'Diary', onoff)</b> allows to start or stop the diary.</p>
+                            diary('set', 'Diary', onoff) allows to start or stop the diary.</p>
 <p>
-                                <b>onoff = diary('get', 'Diary')</b> returns the state 'on' or 'off' of the diary.</p>
+                                onoff = diary('get', 'Diary') returns the state 'on' or 'off' of the diary.</p>
 <p>
-                                    <b>diary(filename)</b> records the session in the file named filename.</p>
+                                    diary(filename) records the session in the file named filename.</p>
 <p>
-                                        <b>filename = diary('get', 'DiaryFile')</b> returns filename used as diary.</p>
+                                        filename = diary('get', 'DiaryFile') returns filename used as diary.</p>
 <p>
-                                            <b>diary('set', 'DiaryFile', filename))</b> set the filename for the diary.</p>
+                                            diary('set', 'DiaryFile', filename)) set the filename for the diary.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">filename = diary('get', 'DiaryFile')
 onoff = diary('get', 'Diary')

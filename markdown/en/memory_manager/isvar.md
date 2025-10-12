@@ -19,7 +19,7 @@ Check for the existence of an variable.
 ## Description
 
 <p>
-            <b>isvar</b> checks for the existence of an variable.</p>
+            isvar checks for the existence of an variable.</p>
 
 ## Example
 

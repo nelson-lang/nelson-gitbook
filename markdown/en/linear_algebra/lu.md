@@ -20,11 +20,14 @@ LU matrix factorization.
 ## Description
 
 <p>
-            <b>[L, U] = lu(A)</b> function decomposes a full matrix <b>A</b> into two matrices: an upper triangular matrix <b>U</b> and a permuted lower triangular matrix <b>L</b>.</p>
-<p>This factorization satisfies the equation <b>A = L * U</b>.</p>
+            [L, U] = lu(A) function decomposes a full matrix A into two matrices: an upper triangular matrix U and a permuted lower triangular matrix L.</p>
+
+<p>This factorization satisfies the equation A = L * U.</p>
+
 <p>
-                <b>[L, U, P] = lu(A)</b> function, when used with three output arguments, provides a permutation matrix <b>P</b> in addition to the unit lower triangular matrix <b>L</b> and the upper triangular matrix <b>U</b>.</p>
-<p>This factorization is expressed as <b>A = P'LU</b>, where <b>L</b> is unit lower triangular, and <b>U</b> is upper triangular.</p>
+                [L, U, P] = lu(A) function, when used with three output arguments, provides a permutation matrix P in addition to the unit lower triangular matrix L and the upper triangular matrix U.</p>
+
+<p>This factorization is expressed as A = P'LU, where L is unit lower triangular, and U is upper triangular.</p>
 
 ## Used function(s)
 

@@ -18,7 +18,7 @@ Jet colormap array.
 ## Description
 
 <p>
-            <b>jet</b> returns the colormap with jet colors.</p>
+            jet returns the colormap with jet colors.</p>
 
 ## Example
 

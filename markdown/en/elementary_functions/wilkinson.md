@@ -19,7 +19,7 @@ Wilkinson's eigenvalue test matrix
 ## Description
 
 <p>
-            <b>W = wilkinson(n)</b> returns the wilkinson Matrix of order <b>n</b>.</p>
+            W = wilkinson(n) returns the wilkinson Matrix of order n.</p>
 
 ## Bibliography
 

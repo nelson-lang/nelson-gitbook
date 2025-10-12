@@ -24,7 +24,7 @@ Logical false.
 ## Description
 
 <p>
-            <b>false</b> build a matrix of false.</p>
+            false build a matrix of false.</p>
 
 ## Example
 

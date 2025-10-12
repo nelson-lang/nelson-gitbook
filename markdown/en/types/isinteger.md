@@ -16,7 +16,7 @@ Return true if variable var is a integer type array.
 
 ## Description
 
-<b>isinteger</b>returns a logical 1 if the argument is a integer type (int8, int16 ...) array and a logical 0 otherwise.
+        isinteger returns a logical 1 if the argument is a integer type (int8, int16 ...) array and a logical 0 otherwise.
 
 ## Examples
 

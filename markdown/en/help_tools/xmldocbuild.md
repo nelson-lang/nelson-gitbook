@@ -21,7 +21,8 @@ Internal function to convert xml document files to html.
 ## Description
 
 <p>
-            <b>xmldocbuild</b> convert xml document files to html.</p>
+            xmldocbuild convert xml document files to html.</p>
+
 <p>internal function</p>
 
 ## See also

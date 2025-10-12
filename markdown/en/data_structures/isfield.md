@@ -20,7 +20,7 @@ Checks if a fieldname exists in a struct.
 ## Description
 
 <p>
-            <b>isfield(A)</b> returns true if <b>name</b> is a fieldname of <b>S</b>.</p>
+            isfield(A) returns true if name is a fieldname of S.</p>
 
 ## Examples
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="isbanded"><a class="header" href="#isbanded">isbanded</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="isbanded"><a class="header" href="#isbanded">isbanded</a></h1>
 <p>Determine if matrix is within specific bandwidth.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,7 +173,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>tf = isbanded(A, lower, upper)</b> returns <b>true</b> if matrix <b>A</b> is within the specified lower bandwidth, <b>lower</b>, and upper bandwidth, <b>upper</b>.</p>
+            tf = isbanded(A, lower, upper) returns true if matrix A is within the specified lower bandwidth, lower, and upper bandwidth, upper.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">M = [1 0 0 0 0; 2 1 0 0 0; 3 2 1 0 0]
 TF = isbanded(M, 2, 0)

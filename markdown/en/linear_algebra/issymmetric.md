@@ -21,8 +21,10 @@ Computes if matrix is symmetric.
 ## Description
 
 <p>
-            <b>issymmetric(x)</b> computes if matrix is symmetric.</p>
+            issymmetric(x) computes if matrix is symmetric.</p>
+
 <p>With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'</p>
+
 <p>With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'</p>
 
 ## Example

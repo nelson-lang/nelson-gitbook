@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>elementary_functions</module>
+    <section name="Fonctions élémentaires">
+      <chapter_description>
+        <p>Le module Fonctions élémentaires fournit un large éventail d'opérations mathématiques fondamentales et de manipulations de matrices dans Nelson.</p>
+        <p>Il inclut des calculs numériques, des opérations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise à l'échelle, ainsi que diverses fonctions utilitaires pour interroger les propriétés des tableaux et des matrices.</p>
+        <p>Le module prend également en charge la construction de matrices spéciales, de grilles et de séquences, facilitant l'implémentation robuste et efficace d'algorithmes mathématiques et d'analyses numériques.</p>
+    </chapter_description>
+      <keyword name="abs" link="abs.md" description="Valeur absolue"/>
+      <keyword name="allfinite" link="allfinite.md" description="Vérifie si tous les éléments du tableau sont finis."/>
+      <keyword name="angle" link="angle.md" description="Angle de phase"/>
+      <keyword name="base2dec" link="base2dec.md" description="Convertit un nombre d'une base donnée en décimal."/>
+      <keyword name="bernsteinMatrix" link="bernsteinMatrix.md" description="Matrice de Bernstein"/>
+      <keyword name="bin2dec" link="bin2dec.md" description="Convertit un nombre en base 2 en décimal."/>
+      <keyword name="bin2num" link="bin2num.md" description="Convertit une chaîne binaire en complément à deux en nombre."/>
+      <keyword name="blkdiag" link="blkdiag.md" description="Matrice diagonale par blocs"/>
+      <keyword name="cast" link="cast.md" description="Convertit une variable vers un autre type de données"/>
+      <keyword name="ceil" link="ceil.md" description="Arrondir vers le haut"/>
+      <keyword name="circshift" link="circshift.md" description="Rotation circulaire"/>
+      <keyword name="complex" link="complex.md" description="Crée un nombre complexe."/>
+      <keyword name="conj" link="conj.md" description="Conjugué complexe"/>
+      <keyword name="deal" link="deal.md" description="Distribue les entrées vers les sorties."/>
+      <keyword name="dec2base" link="dec2base.md" description="Convertit un nombre décimal vers une autre base."/>
+      <keyword name="dec2bin" link="dec2bin.md" description="Convertit un nombre décimal en base 2."/>
+      <keyword name="dec2hex" link="dec2hex.md" description="Convertit un nombre décimal en base 16."/>
+      <keyword name="exp" link="exp.md" description="Exponentielle"/>
+      <keyword name="factorial" link="factorial.md" description="Fonction factorielle"/>
+      <keyword name="filter" link="filter.md" description="Filtre numérique 1-D"/>
+      <keyword name="find" link="find.md" description="Trouver les éléments non nuls"/>
+      <keyword name="fix" link="fix.md" description="Arrondir vers zéro"/>
+      <keyword name="flip" link="flip.md" description="Inverser l'ordre des éléments"/>
+      <keyword name="flipdim" link="flipdim.md" description="Inverser un tableau selon une dimension spécifiée"/>
+      <keyword name="fliplr" link="fliplr.md" description="Inverser l'ordre des éléments de gauche à droite"/>
+      <keyword name="flipud" link="flipud.md" description="Inverser l'ordre des éléments de haut en bas"/>
+      <keyword name="floor" link="floor.md" description="Arrondir vers le bas"/>
+      <keyword name="hadamard" link="hadamard.md" description="Matrice de Hadamard"/>
+      <keyword name="hankel" link="hankel.md" description="Matrice de Hankel"/>
+      <keyword name="hex2dec" link="hex2dec.md" description="Convertit un nombre en base 16 en décimal."/>
+      <keyword name="hilb" link="hilb.md" description="Matrice de Hilbert"/>
+      <keyword name="hypot" link="hypot.md" description="Racine carrée de la somme des carrés"/>
+      <keyword name="imag" link="imag.md" description="Partie imaginaire d'un nombre complexe."/>
+      <keyword name="ind2sub" link="ind2sub.md" description="Convertir un indice linéaire en indices de sous-script"/>
+      <keyword name="invhilb" link="invhilb.md" description="Inverse d'une matrice de Hilbert"/>
+      <keyword name="ipermute" link="ipermute.md" description="Inverse de permute"/>
+      <keyword name="isapprox" link="isapprox.md" description="Renvoie vrai si les arguments sont approximativement égaux, dans la précision donnée."/>
+      <keyword name="iscolumn" link="iscolumn.md" description="Déterminer si l'entrée est un vecteur colonne."/>
+      <keyword name="isdiag" link="isdiag.md" description="Vérifie si une matrice est diagonale."/>
+      <keyword name="isequal" link="isequal.md" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values)."/>
+      <keyword name="isequaln" link="isequaln.md" description="Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values or NaNs)."/>
+      <keyword name="isequalto" link="isequalto.md" description="Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensions, same values or NaNs)."/>
+      <keyword name="isfinite" link="isfinite.md" description="Check for finite entries."/>
+      <keyword name="isinf" link="isinf.md" description="Check for Infinity entries."/>
+      <keyword name="ismatrix" link="ismatrix.md" description="determines whether input is matrix or not"/>
+      <keyword name="isnan" link="isnan.md" description="Check for Not a Number entries."/>
+      <keyword name="isrow" link="isrow.md" description="Déterminer si l'entrée est un vecteur ligne."/>
+      <keyword name="isscalar" link="isscalar.md" description="Tester si l'entrée est un scalaire"/>
+      <keyword name="istril" link="istril.md" description="Tester si une matrice est triangulaire inférieure"/>
+      <keyword name="istriu" link="istriu.md" description="Checks if matrix is upper triangular."/>
+      <keyword name="isvector" link="isvector.md" description="Checks input is vector."/>
+      <keyword name="length" link="length.md" description="Length of an object."/>
+      <keyword name="linspace" link="linspace.md" description="linearly spaced vector constructor."/>
+      <keyword name="log" link="log.md" description="Natural logarithm."/>
+      <keyword name="log10" link="log10.md" description="Common logarithm (base 10)."/>
+      <keyword name="log1p" link="log1p.md" description="log(1 + x) accurately for small values of x."/>
+      <keyword name="log2" link="log2.md" description="dissect floating-point numbers into base 2 exponent and mantissa."/>
+      <keyword name="logspace" link="logspace.md" description="logarithmically spaced vector constructor."/>
+      <keyword name="magic" link="magic.md" description="Magic square"/>
+      <keyword name="meshgrid" link="meshgrid.md" description="Cartesian rectangular grid in 2-D or 3-D."/>
+      <keyword name="minus" link="minus.md" description="Subtraction, - operator"/>
+      <keyword name="mod" link="mod.md" description="Modulus after division."/>
+      <keyword name="ndgrid" link="ndgrid.md" description="Rectangular grid in N-D space"/>
+      <keyword name="ndims" link="ndims.md" description="Number of dimensions of an array."/>
+      <keyword name="nextpow2" link="nextpow2.md" description="Exponent of next higher power of 2"/>
+      <keyword name="norm" link="norm.md" description="Matrix and vector norms"/>
+      <keyword name="normest" link="normest.md" description="2-norm estimate"/>
+      <keyword name="nthroot" link="nthroot.md" description="The real 𝑛th root of real number."/>
+      <keyword name="num2bin" link="num2bin.md" description="Convert number to binary representation."/>
+      <keyword name="numel" link="numel.md" description="Number of elements."/>
+      <keyword name="permute" link="permute.md" description="Permute array dimensions."/>
+      <keyword name="pinv" link="pinv.md" description="Moore-Penrose pseudoinverse"/>
+      <keyword name="pow2" link="pow2.md" description="Base 2 exponentiation and scaling of floating-point numbers."/>
+      <keyword name="real" link="real.md" description="Real part of an complex number."/>
+      <keyword name="rem" link="rem.md" description="Remainder after division."/>
+      <keyword name="repmat" link="repmat.md" description="Replicate and tile an array."/>
+      <keyword name="reshape" link="reshape.md" description="Reshapes a vector or a matrix to a different size matrix."/>
+      <keyword name="rosser" link="rosser.md" description="Classic symmetric eigenvalue test problem."/>
+      <keyword name="rot90" link="rot90.md" description="Rotate array 90 degrees."/>
+      <keyword name="round" link="round.md" description="Round to nearest integer"/>
+      <keyword name="shiftdim" link="shiftdim.md" description="Shift array dimensions"/>
+      <keyword name="sign" link="sign.md" description="Find the sign function of a number."/>
+      <keyword name="size" link="size.md" description="Size of an object."/>
+      <keyword name="sqrt" link="sqrt.md" description="Square root."/>
+      <keyword name="squeeze" link="squeeze.md" description="Remove dimensions of length 1."/>
+      <keyword name="sub2ind" link="sub2ind.md" description="Matrix subscript values to linear index"/>
+      <keyword name="substruct" link="substruct.md" description="Create structure argument for subsasgn or subsref"/>
+      <keyword name="swapbytes" link="swapbytes.md" description="Swap byte ordering."/>
+      <keyword name="toeplitz" link="toeplitz.md" description="Toeplitz matrix"/>
+      <keyword name="tril" link="tril.md" description="Lower triangular part of matrix"/>
+      <keyword name="triu" link="triu.md" description="Upper triangular part of matrix"/>
+      <keyword name="vander" link="vander.md" description="Vandermonde matrix"/>
+      <keyword name="wilkinson" link="wilkinson.md" description="Wilkinson's eigenvalue test matrix"/>
+    </section>
+  </toc>
+</help_summary>

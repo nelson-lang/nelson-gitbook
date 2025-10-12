@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="winqueryreg"><a class="header" href="#winqueryreg">winqueryreg</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="winqueryreg"><a class="header" href="#winqueryreg">winqueryreg</a></h1>
 <p>Read the Windows registry (Windows only).</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -176,12 +177,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>c = winqueryreg ('name', rootkey, subkey)</b> returns a cell of strings with key names in rootkey\subkey.</p>
+            c = winqueryreg ('name', rootkey, subkey) returns a cell of strings with key names in rootkey\subkey.</p>
 <p>
-                <b>v = winqueryreg (rootkey, subkey, value_name)</b> returns the value associated to value_name in rootkey\subkey.</p>
-<p>If the value is a 32-bit integer, <b>winqueryreg</b> returns the value as int32. If this value is a string, it is a string.</p>
+                v = winqueryreg (rootkey, subkey, value_name) returns the value associated to value_name in rootkey\subkey.</p>
+<p>If the value is a 32-bit integer, winqueryreg returns the value as int32. If this value is a string, it is a string.</p>
 <p>
-                    <b>v = winqueryreg (rootkey, subkey)</b> returns value in rootkey\subkey that has no value name property.</p>
+                    v = winqueryreg (rootkey, subkey) returns value in rootkey\subkey that has no value name property.</p>
 <p>Supported root keys:</p>
 <p>'HKEY_CLASSES_ROOT', 'HKCR',</p>
 <p>'HKEY_CURRENT_USER', 'HKCU',</p>

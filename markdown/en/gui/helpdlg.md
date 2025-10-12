@@ -21,9 +21,10 @@ Creates a help dialog box.
 ## Description
 
 <p>
-            <b>errordlg</b> creates an help dialog box.</p>
+            errordlg creates an help dialog box.</p>
+
 <p>
-                <b>h = helpdlg(text_help, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+                h = helpdlg(text_help, title, 'on') specifies whether to replace an existing dialog box having the same name.</p>
 
 ## Examples
 

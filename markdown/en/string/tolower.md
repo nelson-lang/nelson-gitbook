@@ -16,7 +16,7 @@ Lower case conversion.
 
 ## Description
 
-<b>tolower</b>converts a string to lower case.
+        tolower converts a string to lower case.
 
 ## Examples
 

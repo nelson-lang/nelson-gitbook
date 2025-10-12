@@ -17,7 +17,7 @@ Bartlett window.
 ## Description
 
 <p>
-            <b>c = bartlett(m)</b> an L-point symmetric Bartlett window.</p>
+            c = bartlett(m) an L-point symmetric Bartlett window.</p>
 
 ## Bibliography
 

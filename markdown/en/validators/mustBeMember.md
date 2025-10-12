@@ -17,7 +17,7 @@ Checks that value is member of specified array or issue error.
 ## Description
 
 <p>
-            <b>mustBeMember</b> checks that value is member of an array or issue error.</p>
+            mustBeMember checks that value is member of an array or issue error.</p>
 
 ## Example
 

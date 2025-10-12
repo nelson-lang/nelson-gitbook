@@ -19,7 +19,7 @@ Right division, ./ operator
 ## Description
 
 <p>
-            <b>C = rdivide(A, B)</b> performs right division operation: A ./* B.</p>
+            C = rdivide(A, B) performs right division operation: A ./* B.</p>
 
 ## Examples
 

@@ -17,7 +17,7 @@ Convert a gain in decibels (dB) to a magnitude.
 ## Description
 
 <p>
-            <b>mag = db2mag(db)</b> returns corresponding magnitude.</p>
+            mag = db2mag(db) returns corresponding magnitude.</p>
 
 ## Example
 

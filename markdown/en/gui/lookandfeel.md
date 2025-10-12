@@ -26,7 +26,7 @@ default current application look and feel.
 ## Description
 
 <p>
-            <b>lookandfeel</b> manages look and feel Nelson application.</p>
+            lookandfeel manages look and feel Nelson application.</p>
 
 ## Examples
 

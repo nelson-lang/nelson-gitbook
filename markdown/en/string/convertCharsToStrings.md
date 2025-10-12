@@ -20,7 +20,7 @@ Convert chars arrays to string arrays.
 ## Description
 
 <p>
-            <b>convertCharsToStrings</b> converts chars arrays to string arrays.</p>
+            convertCharsToStrings converts chars arrays to string arrays.</p>
 
 ## Example
 

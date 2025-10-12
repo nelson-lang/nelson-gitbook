@@ -18,9 +18,10 @@ Keys of dictionary.
 ## Description
 
 <p>
-            <b>k = keys(d)</b> retrieves an array containing the keys of the specified dictionary, <b>d</b>.</p>
+            k = keys(d) retrieves an array containing the keys of the specified dictionary, d.</p>
+
 <p>
-                <b>k = keys(d, 'cell')</b> optionally returns the keys as a cell array.</p>
+                k = keys(d, 'cell') optionally returns the keys as a cell array.</p>
 
 ## Example
 

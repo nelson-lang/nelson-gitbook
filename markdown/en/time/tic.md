@@ -13,8 +13,9 @@ Starts a stopwatch timer.
 
 ## Description
 
-<p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
-<p>Consecutive <b>tic</b> commands overwrite the tic timer.</p>
+<p>The sequence of commands tic(); commands ; t = toc()returns the number of seconds required for the commands.</p>
+
+<p>Consecutive tic commands overwrite the tic timer.</p>
 
 ## Example
 

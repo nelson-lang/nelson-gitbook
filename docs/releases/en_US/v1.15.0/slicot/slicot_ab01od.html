@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="slicot_ab01od"><a class="header" href="#slicot_ab01od">slicot_ab01od</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="slicot_ab01od"><a class="header" href="#slicot_ab01od">slicot_ab01od</a></h1>
 <p>Staircase form for multi-input systems using orthogonal state and input transformations.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,8 +176,8 @@
 </ul>
 <h2 id="output-argument"><a class="header" href="#output-argument">Output argument</a></h2>
 <ul>
-<li>A_OUT - On exit, the leading N-by-N part of this array contains the transformed state transition matrix U' _ A _ U. The leading NCONT-by-NCONT part contains the upper block Hessenberg state matrix Acont in Ac, given by U' _ A _ U, of a controllable realization for the original system. The elements below the first block-subdiagonal are set to zero. If STAGES ~='F', the subdiagonal blocks of A are triangularized by RQ factorization, and the annihilated elements are explicitly zeroed.</li>
-<li>B_OUT - On exit with STAGES = 'F', the leading N-by-M part of this array contains the transformed input matrix U' _ B, with all elements but the first block set to zero. On exit with STAGES ~= 'F', the leading N-by-M part of this array contains the transformed input matrix U' _ B * V, with all elements but the first block set to zero and the first block in upper triangular form.</li>
+<li>A*OUT - On exit, the leading N-by-N part of this array contains the transformed state transition matrix U' * A _ U. The leading NCONT-by-NCONT part contains the upper block Hessenberg state matrix Acont in Ac, given by U' _ A _ U, of a controllable realization for the original system. The elements below the first block-subdiagonal are set to zero. If STAGES ~='F', the subdiagonal blocks of A are triangularized by RQ factorization, and the annihilated elements are explicitly zeroed.</li>
+<li>B*OUT - On exit with STAGES = 'F', the leading N-by-M part of this array contains the transformed input matrix U' * B, with all elements but the first block set to zero. On exit with STAGES ~= 'F', the leading N-by-M part of this array contains the transformed input matrix U' _ B * V, with all elements but the first block set to zero and the first block in upper triangular form.</li>
 <li>U_OUT - if JOBU = 'I', the leading N-by-N part of this array contains the transformation matrix U that performed the specified reduction. If JOBU = 'N', the array U is not referenced and can be supplied as a dummy array.</li>
 <li>V - If JOBV = 'I', then the leading M-by-M part of this array contains the transformation matrix V.</li>
 <li>NCONT_OUT - NCONT_OUT is input only if STAGES = 'B'.</li>

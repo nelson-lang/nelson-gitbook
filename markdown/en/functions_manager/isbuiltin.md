@@ -17,7 +17,7 @@ Check for the existence of a builtin.
 ## Description
 
 <p>
-            <b>isbuiltin</b> checks for the existence of a builtin.</p>
+            isbuiltin checks for the existence of a builtin.</p>
 
 ## Example
 

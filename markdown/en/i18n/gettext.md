@@ -18,9 +18,10 @@ Get text translated into the current locale.
 ## Description
 
 <p>
-            <b>translated_string = gettext(your_string)</b> gets the translation of a string <b>your_string</b> to the current locale in the Nelson domain.</p>
+            translated_string = gettext(your_string) gets the translation of a string your_string to the current locale in the Nelson domain.</p>
+
 <p>
-                <b>_(your_string)</b> is an alias of <b>gettext(your_string)</b>.</p>
+                _(your_string) is an alias of gettext(your_string).</p>
 
 ## Example
 

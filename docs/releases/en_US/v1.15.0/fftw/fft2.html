@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="fft2"><a class="header" href="#fft2">fft2</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="fft2"><a class="header" href="#fft2">fft2</a></h1>
 <p>2-D fast Fourier transform.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,10 +175,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>Y = fft2(X)</b> returns the two-dimensional Fourier transform of <b>X</b> using a Fast Fourier Transform (FFT) algorithm.</p>
-<p>Optional arguments <b>m</b> and <b>n</b> may be used specify the number of rows and columns of <b>X</b> to use.</p>
-<p>If either of these is larger than the size of <b>X</b>, <b>X</b> is resized and padded with zeros.</p>
-<p>If <b>X</b> is a multi-dimensional matrix, each two-dimensional sub-matrix of <b>X</b> is treated separately.</p>
+            Y = fft2(X) returns the two-dimensional Fourier transform of X using a Fast Fourier Transform (FFT) algorithm.</p>
+<p>Optional arguments m and n may be used specify the number of rows and columns of X to use.</p>
+<p>If either of these is larger than the size of X, X is resized and padded with zeros.</p>
+<p>If X is a multi-dimensional matrix, each two-dimensional sub-matrix of X is treated separately.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">R = fft2(eye(5, 5), 2, 3)
 </code></pre>

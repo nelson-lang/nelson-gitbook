@@ -22,7 +22,7 @@ Evaluates an function on a cell.
 ## Description
 
 <p>
-            <b>cellfun</b> applies function to each cell elements.</p>
+            cellfun applies function to each cell elements.</p>
 
 ## Examples
 

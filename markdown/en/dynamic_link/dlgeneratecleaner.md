@@ -15,7 +15,7 @@ Generates cleaner.m file for C++ gateway.
 ## Description
 
 <p>
-            <b>dlgeneratecleaner</b> generates a 'cleaner.m' to remove files.</p>
+            dlgeneratecleaner generates a 'cleaner.m' to remove files.</p>
 
 ## Example
 

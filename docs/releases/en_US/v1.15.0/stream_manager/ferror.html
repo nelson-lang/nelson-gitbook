@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ferror"><a class="header" href="#ferror">ferror</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="ferror"><a class="header" href="#ferror">ferror</a></h1>
 <p>Test for i/o read/write errors.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,9 +175,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>ferror</b> inquires about file error status.</p>
+            ferror inquires about file error status.</p>
 <p>
-                <b>ferror(fid, 'clear')</b> clears the error indicator for the specified file.</p>
+                ferror(fid, 'clear') clears the error indicator for the specified file.</p>
 <p>For more help about returned message, consult C run-time library manual for further details.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">filename = [tempdir(), 'test_ferror.csv'];

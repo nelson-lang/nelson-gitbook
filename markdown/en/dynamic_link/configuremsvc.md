@@ -14,9 +14,12 @@ Configure Nelson to use visual studio as default compiler
 ## Description
 
 <p>By default, Nelson has no C/C++ compiler defined as default on Windows.</p>
+
 <p>On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function.</p>
-<p>On Windows, you need to call once <b>configuremsvc</b> if you want to use visual studio as default compiler.</p>
-<p>After each update of Visual studio, it will be required to call again <b>configuremsvc</b>.</p>
+
+<p>On Windows, you need to call once configuremsvc if you want to use visual studio as default compiler.</p>
+
+<p>After each update of Visual studio, it will be required to call again configuremsvc.</p>
 
 ## Example
 

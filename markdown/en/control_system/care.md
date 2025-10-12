@@ -24,7 +24,7 @@ Continuous-time algebraic Riccati equation solution.
 
 ## Description
 
-<p>The function <b>care(A, B, Q)</b> calculates the exclusive solution, denoted as <b>X</b>, for the continuous-time algebraic Riccati equation with matrices <b>A</b>, <b>B</b>, and <b>Q</b>, and also provides additional matrices <b>L</b> and <b>G</b>.</p>
+<p>The function care(A, B, Q) calculates the exclusive solution, denoted as X, for the continuous-time algebraic Riccati equation with matrices A, B, and Q, and also provides additional matrices L and G.</p>
 
 ## Example
 

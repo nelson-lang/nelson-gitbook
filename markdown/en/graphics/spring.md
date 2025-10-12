@@ -18,7 +18,7 @@ Spring colormap array.
 ## Description
 
 <p>
-            <b>spring</b> returns the colormap with spring colors.</p>
+            spring returns the colormap with spring colors.</p>
 
 ## Example
 

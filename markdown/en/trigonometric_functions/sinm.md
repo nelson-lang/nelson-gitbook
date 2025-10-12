@@ -16,7 +16,7 @@ Computes the matrix sinus of a square matrix.
 
 ## Description
 
-<b>sinm(x)</b>computes the matrix sinus of<b>x</b>.
+        sinm(x) computes the matrix sinus of x.
 
 ## Example
 

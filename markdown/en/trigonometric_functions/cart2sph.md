@@ -20,7 +20,7 @@ Transforms Cartesian to spherical coordinates.
 
 ## Description
 
-<b>cart2sph</b>transforms Cartesian to spherical coordinates.
+        cart2sph transforms Cartesian to spherical coordinates.
 
 ## Example
 

@@ -15,7 +15,7 @@ Build help of Nelson's modules for GitBook.
 ## Description
 
 <p>
-            <b>buildhelpmd</b> generates help files for GitBook (markdown).</p>
+            buildhelpmd generates help files for GitBook (markdown).</p>
 
 ## Example
 

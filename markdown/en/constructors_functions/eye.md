@@ -19,7 +19,7 @@ Creates an identity matrix.
 ## Description
 
 <p>
-            <b>eye</b> returns an identity matrix.</p>
+            eye returns an identity matrix.</p>
 
 ## Examples
 

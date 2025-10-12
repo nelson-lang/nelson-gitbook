@@ -24,7 +24,7 @@ Logical true.
 ## Description
 
 <p>
-            <b>true</b> build a matrix of true.</p>
+            true build a matrix of true.</p>
 
 ## Example
 

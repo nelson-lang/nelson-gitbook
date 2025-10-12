@@ -14,6 +14,7 @@ Initialize the MPI execution environment.
 ## Description
 
 <p>Initialize the MPI execution environment.</p>
+
 <p>MPI process are launched in CLI mode (no gui, no plot).</p>
 
 ## Example

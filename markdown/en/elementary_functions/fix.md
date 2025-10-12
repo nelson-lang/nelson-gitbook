@@ -17,7 +17,7 @@ Round towards zero
 ## Description
 
 <p>
-            <b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
+            fix returns an integer matrix made of nearest rounded integers toward zeros.</p>
 
 ## Example
 

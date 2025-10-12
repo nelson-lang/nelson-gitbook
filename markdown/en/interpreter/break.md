@@ -9,9 +9,10 @@ exit evaluation loop.
 ## Description
 
 <p>
-            <b>break</b> statement is used to exit a loop prematurely.</p>
+            break statement is used to exit a loop prematurely.</p>
+
 <p>
-                <b>break</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.</p>
+                break statement can be used inside a for or a while loop.</p>
 
 ## Example
 

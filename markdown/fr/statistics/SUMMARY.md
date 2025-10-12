@@ -1,0 +1,7 @@
+- [statistics](README.md)
+  - [corrcoef](corrcoef.md)
+  - [cov](cov.md)
+  - [mean](mean.md)
+  - [normpdf](normpdf.md)
+  - [tdigest](tdigest.md)
+  - [var](var.md)

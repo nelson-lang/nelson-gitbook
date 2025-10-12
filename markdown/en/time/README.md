@@ -1,4 +1,4 @@
-# Time functions
+# Date and Time
 
 The Time Functions module provides tools for working with dates, times, and durations in Nelson.
 

@@ -21,15 +21,21 @@ Unique values.
 ## Description
 
 <p>
-            <b>C = unique(A)</b> returns the unique elements of array <b>A</b> in sorted order.</p>
+            C = unique(A) returns the unique elements of array A in sorted order.</p>
+
 <p>
-                <b>C = unique(A, 'rows')</b> considers each row of <b>A</b> as a unique entity and returns the unique rows in sorted order.</p>
+                C = unique(A, 'rows') considers each row of A as a unique entity and returns the unique rows in sorted order.</p>
+
 <p>Note that the 'rows' option does not support cell arrays.</p>
+
 <p>
-                    <b>[C, ia, ic] = unique(...)</b> extends any of the previous syntaxes to also return index vectors <b>ia</b> and <b>ic</b>.</p>
-<p>For a vector <b>A</b>, the relationships are <b>C = A(ia)</b> and <b>A = C(ic)</b>.</p>
-<p>For a matrix or array <b>A</b>, the relationships are <b>C = A(ia)</b> and <b>A(:) = C(ic)</b>.</p>
-<p>If the 'rows' option is used, the relationships are <b>C = A(ia, :)</b> and <b>A = C(ic, :)</b>.</p>
+                    [C, ia, ic] = unique(...) extends any of the previous syntaxes to also return index vectors ia and ic.</p>
+
+<p>For a vector A, the relationships are C = A(ia) and A = C(ic).</p>
+
+<p>For a matrix or array A, the relationships are C = A(ia) and A(:) = C(ic).</p>
+
+<p>If the 'rows' option is used, the relationships are C = A(ia, :) and A = C(ic, :).</p>
 
 ## Used function(s)
 

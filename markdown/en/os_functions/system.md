@@ -37,12 +37,17 @@ Shell command execution.
 ## Description
 
 <p>
-            <b>system</b> sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell.</p>
+            system sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell.</p>
+
 <p>
-                <b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable.</p>
-<p>Callback functions cannot be called until <b>system</b> command is not finished.</p>
+                [status, output] = system(command, '-echo') forces the output to the Command Window, even though it is also being assigned into a variable.</p>
+
+<p>Callback functions cannot be called until system command is not finished.</p>
+
 <p>Nelson will convert characters to the encoding that your operating system shell accepts (ANSI on Windows by default, UTF-8 on others systems).</p>
-<p>command can be interrupted with <b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b> output </b> contains 'ABORTED'.</p>
+
+<p>command can be interrupted with CTRL-C key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)output contains 'ABORTED'.</p>
+
 <p>if timeout value is 0. timeout disabled.</p>
 
 ## Examples

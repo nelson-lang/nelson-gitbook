@@ -17,7 +17,7 @@ Converts a variable to double precision type.
 ## Description
 
 <p>
-            <b>double(V)</b> converts to the double-precision type.</p>
+            double(V) converts to the double-precision type.</p>
 
 ## Examples
 

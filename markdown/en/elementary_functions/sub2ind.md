@@ -21,7 +21,7 @@ Matrix subscript values to linear index
 ## Description
 
 <p>
-            <b>ind2sub</b> converts subscripts to linear indices. .</p>
+            ind2sub converts subscripts to linear indices. .</p>
 
 ## Example
 

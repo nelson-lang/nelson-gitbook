@@ -18,8 +18,9 @@ Square root of sum of squares
 ## Description
 
 <p>
-            <b>hypot</b> computes the hypothenuse.</p>
-<p>If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.</p>
+            hypot computes the hypothenuse.</p>
+
+<p>If one or both inputs is NaN, then hypot returns NaN.</p>
 
 ## Example
 

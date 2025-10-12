@@ -19,7 +19,7 @@ Read HDF5 attribute.
 ## Description
 
 <p>
-            <b>h5readatt</b> reads attribute named <b>attname</b> from the HDF5 file.</p>
+            h5readatt reads attribute named attname from the HDF5 file.</p>
 
 ## Example
 

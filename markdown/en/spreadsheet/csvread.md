@@ -21,17 +21,29 @@ Read comma-separated value (CSV) file.
 ## Description
 
 <p>
-            <b>M = csvread(filename, R1, C1, [R1 C1 R2 C2])</b> reads only the data within the range specified by row offsets <b>R1</b> to <b>R2</b> and column offsets <b>C1</b> to <b>C2</b>.</p>
+            M = csvread(filename, R1, C1, [R1 C1 R2 C2]) reads only the data within the range specified by row offsets R1 to R2 and column offsets C1 to C2.</p>
+
 <p>
-                <b>M = csvread(filename, R1, C1)</b> starts reading data at the row and column offsets specified by <b>R1</b> and <b>C1</b>. For example, R1=0, C1=0 indicates the first value in the file.</p>
-<p>To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like <b>M = csvread(filename, 3, 1)</b>.</p>
+                M = csvread(filename, R1, C1) starts reading data at the row and column offsets specified by R1 and C1. For example, R1=0, C1=0 indicates the first value in the file.</p>
+
+<p>To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like M = csvread(filename, 3, 1).</p>
+
 <p>
-                    <b>M = csvread(filename)</b> read a comma-separated value (CSV) formatted file into matrix <b>M</b>.</p>
-<p>Complex Number Importing: <b>csvread</b> reads each complex number as a single unit, storing it in a complex numeric field.</p>
+                    M = csvread(filename) read a comma-separated value (CSV) formatted file into matrix M.</p>
+
+<p>Complex Number Importing: csvread reads each complex number as a single unit, storing it in a complex numeric field.</p>
+
 <p>Valid forms for complex numbers are:</p>
+
 <p></p>
-Form: Example: ±<real>±<imag>i|j 3.1347-2.1i ±<imag>i|j -2.1j<p>
-                        <b>Note</b>: Whitespace within a complex number is not allowed; <b>csvread</b> interprets any embedded spaces as field delimiters.</p>
+
+| Form:           | Example: |
+| --------------- | -------- | ----------- |
+| ±<real>±<imag>i | j        | 3.1347-2.1i |
+| ±<imag>i        | j        | -2.1j       |
+
+<p>
+                        Note: Whitespace within a complex number is not allowed; csvread interprets any embedded spaces as field delimiters.</p>
 
 ## Example
 

@@ -24,8 +24,9 @@ Checks that value is in the specified range.
 ## Description
 
 <p>
-            <b>mustBeInRange</b> checks that value is in the specified range or raise an error.</p>
-<p>The only valid combination of the flags is <b>exclude-lower</b> with <b>exclude-upper</b>.</p>
+            mustBeInRange checks that value is in the specified range or raise an error.</p>
+
+<p>The only valid combination of the flags is exclude-lower with exclude-upper.</p>
 
 ## Example
 

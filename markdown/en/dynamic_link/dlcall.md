@@ -18,9 +18,10 @@ C or Fortran Foreign function call.
 ## Description
 
 <p>
-            <b>dlcall</b> calls an external C or Fortran function loaded from an shared library.</p>
+            dlcall calls an external C or Fortran function loaded from an shared library.</p>
+
 <p>
-                <b>dlcall</b> validates input argument types before calling based on dlsym handle definition.</p>
+                dlcall validates input argument types before calling based on dlsym handle definition.</p>
 
 ## Examples
 

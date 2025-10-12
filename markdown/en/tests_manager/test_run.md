@@ -40,71 +40,129 @@ Runs tests
 ## Description
 
 <p>
-            <b>test_run</b> function searchs 'test_*.m', 'bug_*.m', and 'bench_*.m' files, executes them, and displays a report about success or failures.</p>
+            test_run function searchs 'test_*.m', 'bug_*.m', and 'bench_*.m' files, executes
+            them, and displays a report about success or failures.</p>
+
 <p>Each test or bench is executed in a separated process using the 'unix' command.</p>
-<p>That enables the current command to continue, even if the test as created an unstable environment.</p>
+
+<p>That enables the current command to continue, even if the test as created an unstable
+            environment.</p>
+
 <p>It also enables the tests to be independent from one another.</p>
-<p>Some special tags can be inserted in the .m files to help the processing of the corresponding test.</p>
+
+<p>Some special tags can be inserted in the .m files to help the processing of the
+            corresponding test.</p>
+
 <p>These tags are expected to be found in Nelson comments:</p>
+
 <p>
-                <b><--NOT FIXED--></b> This test is skipped because it is a reported bug, but it is not yet fixed. </p>
+            <--NOT FIXED--> This test is skipped because it is a reported bug, but it
+            is not yet fixed. </p>
+
 <p>
-                    <b><--INTERACTIVE TEST--></b> This test is skipped because it is interactive test.</p>
+            <--INTERACTIVE TEST--> This test is skipped because it is interactive test.</p>
+
 <p>
-                        <b><--CLI MODE--></b> This test will be executed by nelson-cli executable (default).</p>
+            <--CLI MODE--> This test will be executed by nelson-cli executable
+            (default).</p>
+
 <p>
-                            <b><--ADV-CLI MODE--></b> This test will be executed by nelson-adv-cli executable.</p>
+            <--ADV-CLI MODE--> This test will be executed by nelson-adv-cli executable.</p>
+
 <p>
-                                <b><--GUI MODE--></b> This test will be executed by nelson-gui executable.</p>
+            <--GUI MODE--> This test will be executed by nelson-gui executable.</p>
+
 <p>
-                                    <b><--CHECK REF--></b> This test will compare .ref available in same directory with output generated. see <b>test_makeref</b> to generate .ref file.</p>
+            <--CHECK REF--> This test will compare .ref available in same directory
+            with output generated. see test_makeref to generate .ref file.</p>
+
 <p>
-                                        <b><--ENGLISH IMPOSED--></b> This test will be executed with the en_US language.</p>
+            <--ENGLISH IMPOSED--> This test will be executed with the en_US language.</p>
+
 <p>
-                                            <b><--WINDOWS ONLY--></b> This test will be executed only on Windows.</p>
+            <--WINDOWS ONLY--> This test will be executed only on Windows.</p>
+
 <p>
-                                                <b><--MACOS ONLY--></b>  This test will be executed only on Macos.</p>
+            <--MACOS ONLY--> This test will be executed only on Macos.</p>
+
 <p>
-                                                    <b><--UNIX ONLY--></b>  This test will be executed only on Unix.</p>
+            <--UNIX ONLY--> This test will be executed only on Unix.</p>
+
 <p>
-                                                        <b><--WITH DISPLAY--></b> This test will be executed only if a display output is available.</p>
+            <--WITH DISPLAY--> This test will be executed only if a display output is
+            available.</p>
+
 <p>
-                                                            <b><--RELEASE ONLY--></b> This test will be executed only if nelson is an release (not in debug mode).</p>
+            <--RELEASE ONLY--> This test will be executed only if nelson is an release
+            (not in debug mode).</p>
+
 <p>
-                                                                <b><--EXCEL REQUIRED--></b> This test will be executed only if excel is detected (on Windows).</p>
+            <--EXCEL REQUIRED--> This test will be executed only if excel is detected
+            (on Windows).</p>
+
 <p>
-                                                                    <b><--MPI MODE--></b> This test will be executed in MPI mode.</p>
+            <--MPI MODE--> This test will be executed in MPI mode.</p>
+
 <p>
-                                                                        <b><--AUDIO INPUT REQUIRED--></b> This test will be executed if an audio input is available.</p>
+            <--AUDIO INPUT REQUIRED--> This test will be executed if an audio input is
+            available.</p>
+
 <p>
-                                                                            <b><--AUDIO OUTPUT REQUIRED--></b> This test will be executed if an audio output is available.</p>
+            <--AUDIO OUTPUT REQUIRED--> This test will be executed if an audio output
+            is available.</p>
+
 <p>
-                                                                                <b><--C/C++ COMPILER REQUIRED--></b> This test will be executed if an C/C++ compiler is available.</p>
+            <--C/C++ COMPILER REQUIRED--> This test will be executed if an C/C++
+            compiler is available.</p>
+
 <p>
-                                                                                    <b><--INDEX 64 BIT REQUIRED--></b> This test will be executed if 64 bit index is available.</p>
+            <--INDEX 64 BIT REQUIRED--> This test will be executed if 64 bit index is
+            available.</p>
+
 <p>
-                                                                                        <b><--NO USER MODULES--></b> This test will be executed without load user modules.</p>
+            <--NO USER MODULES--> This test will be executed without load user modules.</p>
+
 <p>
-                                                                                            <b><--IPC REQUIRED--></b> This test will be executed if IPC is available.</p>
+            <--IPC REQUIRED--> This test will be executed if IPC is available.</p>
+
 <p>
-                                                                                                <b><--SEQUENTIAL TEST REQUIRED--></b> This test will be executed sequentialy (1 worker).</p>
+            <--SEQUENTIAL TEST REQUIRED--> This test will be executed sequentialy (1
+            worker).</p>
+
 <p>
-                                                                                                    <b><--NATIVE ARCHITECTURE TEST REQUIRED--></b> This test will be executed if application's build and architecture are same.</p>
+            <--NATIVE ARCHITECTURE TEST REQUIRED--> This test will be executed if
+            application's build and architecture are same.</p>
+
 <p>
-                                                                                                        <b><--FILE WATCHER REQUIRED--></b> This test will be executed if file watcher is available.</p>
+            <--FILE WATCHER REQUIRED--> This test will be executed if file watcher is
+            available.</p>
+
 <p></p>
+
 <p>
-                                                                                                            <b><--PYTHON ENVIRONMENT REQUIRED--></b> This test will be executed if python environment is available and configured.</p>
+            <--PYTHON ENVIRONMENT REQUIRED--> This test will be executed if python
+            environment is available and configured.</p>
+
 <p></p>
+
 <p></p>
+
 <p>
-                                                                                                                <b><--JULIA ENVIRONMENT REQUIRED--></b> This test will be executed if julia environment is available and configured.</p>
+            <--JULIA ENVIRONMENT REQUIRED--> This test will be executed if julia
+            environment is available and configured.</p>
+
 <p></p>
-<p>Test can also skipped dynamically using <b>skip_testsuite</b> function.</p>
-<p>To avoid to block the application, tests have an execution timer of 2 minutes and the benchs have a timer of 6 minutes.</p>
+
+<p>Test can also skipped dynamically using skip_testsuite function.</p>
+
+<p>To avoid to block the application, tests have an execution timer of 2 minutes and the
+            benchs have a timer of 6 minutes.</p>
+
 <p>
-                                                                                                                    <b>test_run</b> uses n th workers to execute and speed up tests executions.</p>
-<p>Tests with <b><--SEQUENTIAL TEST REQUIRED--></b> are evaluated last.</p>
+            test_run uses n th workers to execute and speed up tests executions.</p>
+
+<p>Tests with <--SEQUENTIAL TEST REQUIRED--> are evaluated last.</p>
+
 <p>Benchs are evaluated sequentialy.</p>
 
 ## Examples

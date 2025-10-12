@@ -17,10 +17,12 @@ Creates an Not-a-Number
 ## Description
 
 <p>
-            <b>NaN</b> returns the IEEE symbol NaN (Not a Number).</p>
+            NaN returns the IEEE symbol NaN (Not a Number).</p>
+
 <p>
-                <b>NaN</b> is the result of operations which do not produce a well defined numerical result.</p>
-<p>Beware, you must never compare <b>NaN</b> with <b>NaN</b>, in this case, please use <b>isnan</b>.</p>
+                NaN is the result of operations which do not produce a well defined numerical result.</p>
+
+<p>Beware, you must never compare NaN with NaN, in this case, please use isnan.</p>
 
 ## Examples
 

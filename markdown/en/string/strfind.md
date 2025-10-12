@@ -19,7 +19,7 @@ Find a string in another.
 
 ## Description
 
-<b>strfind</b>find a string in another.
+        strfind find a string in another.
 
 ## Example
 

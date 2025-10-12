@@ -19,8 +19,9 @@ Minutes part of the input date and time.
 ## Description
 
 <p>
-            <b>m = minute(t)</b> extracts the minute component from each date and time specified in <b>t</b>.</p>
-<p>The output <b>m</b> is a double array containing integer values ranging from 0 to 59.</p>
+            m = minute(t) extracts the minute component from each date and time specified in t.</p>
+
+<p>The output m is a double array containing integer values ranging from 0 to 59.</p>
 
 ## Example
 

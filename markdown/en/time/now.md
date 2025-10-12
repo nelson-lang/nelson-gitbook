@@ -13,7 +13,7 @@ Returns current date under the form of a Unix hour.
 ## Description
 
 <p>
-            <b>now()</b> returns the current date and time as a serial date number.</p>
+            now() returns the current date and time as a serial date number.</p>
 
 ## Example
 

@@ -18,7 +18,7 @@ Cool colormap array.
 ## Description
 
 <p>
-            <b>cool</b> returns the colormap with cool colors.</p>
+            cool returns the colormap with cool colors.</p>
 
 ## Example
 

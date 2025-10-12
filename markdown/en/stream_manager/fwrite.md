@@ -25,14 +25,19 @@ Write data in binary form to the file specified by the file descriptor fid.
 ## Description
 
 <p>Write data in binary form to the file specified by the file descriptor fid.</p>
-<p>characters encoding uses <b>fopen</b> parameter.</p>
+
+<p>characters encoding uses fopen parameter.</p>
+
 <p>supported architecture:</p>
+
 <p>
-            <b>native</b> , <b>n</b>: format of the current machine.</p>
+            native , n: format of the current machine.</p>
+
 <p>
-                <b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
+                ieee-be, b: IEEE big endian.</p>
+
 <p>
-                    <b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+                    ieee-le, l: IEEE little endian.</p>
 
 ## Example
 

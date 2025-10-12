@@ -23,7 +23,7 @@ Write data to RESTful web service
 ## Description
 
 <p>
-            <b>webwrite</b> write data to RESTful web service.</p>
+            webwrite write data to RESTful web service.</p>
 
 ## Examples
 

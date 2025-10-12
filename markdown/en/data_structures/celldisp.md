@@ -15,7 +15,7 @@ Display cell array contents.
 ## Description
 
 <p>
-            <b>celldisp</b> recursively display the contents of a cell array.</p>
+            celldisp recursively display the contents of a cell array.</p>
 
 ## Example
 

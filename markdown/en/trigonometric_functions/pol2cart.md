@@ -21,7 +21,7 @@ Transforms polar or cylindrical coordinates to Cartesian.
 
 ## Description
 
-<b>pol2cart</b>transforms polar or cylindrical coordinates to Cartesian.
+        pol2cart transforms polar or cylindrical coordinates to Cartesian.
 
 ## Example
 

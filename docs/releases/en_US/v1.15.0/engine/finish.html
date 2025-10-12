@@ -155,16 +155,17 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="finish"><a class="header" href="#finish">finish</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="finish"><a class="header" href="#finish">finish</a></h1>
 <p>User-defined termination script for Nelson.</p>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>startup.m</b> in Nelson initiates user-specified commands upon Nelson startup.</p>
-<p>It executes any file named <b>startup.m</b> that is located on the search path.</p>
-<p>To leverage this feature, create a file named <b>startup.m</b> in the userpath folder, which is included in the Nelson search path.</p>
+            startup.m in Nelson initiates user-specified commands upon Nelson startup.</p>
+<p>It executes any file named startup.m that is located on the search path.</p>
+<p>To leverage this feature, create a file named startup.m in the userpath folder, which is included in the Nelson search path.</p>
 <p>Embed commands within this file that you wish to be executed during Nelson startup.</p>
 <p>This could involve setting physical constants, defining defaults for graphics properties, incorporating engineering conversion factors, or predefining any other elements desired in your workspace.</p>
-<p>Customizing the <b>startup.m</b> file allows you to establish a tailored environment every time Nelson is launched.</p>
+<p>Customizing the startup.m file allows you to establish a tailored environment every time Nelson is launched.</p>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="../core/exit.html">exit</a>, <a href="../core/quit.html">quit</a>, <a href="../engine/startup.html">startup</a>, <a href="../functions_manager/userpath.html">userpath</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>

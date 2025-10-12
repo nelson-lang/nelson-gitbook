@@ -20,7 +20,7 @@ Zero-pole to transfer function conversion.
 ## Description
 
 <p>
-            <b>[NUM, DEN] = zp2tf(Z, P, K)</b> returns polynomial transfer function representation from zeros and poles.</p>
+            [NUM, DEN] = zp2tf(Z, P, K) returns polynomial transfer function representation from zeros and poles.</p>
 
 ## Bibliography
 

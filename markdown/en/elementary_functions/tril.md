@@ -19,9 +19,10 @@ Lower triangular part of matrix
 ## Description
 
 <p>
-            <b>tril</b> computes Lower Triangular Portions of Matrix.</p>
+            tril computes Lower Triangular Portions of Matrix.</p>
+
 <p>
-                <b>R = tril(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
+                R = tril(M, k) returns the elements on and above the kth diagonal of M.</p>
 
 ## Example
 

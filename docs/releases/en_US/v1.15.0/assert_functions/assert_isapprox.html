@@ -155,43 +155,59 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="assert_isapprox"><a class="header" href="#assert_isapprox">assert_isapprox</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="assert_isapprox"><a class="header" href="#assert_isapprox">assert_isapprox</a></h1>
 <p>Check that computed and expected values are approximately equal.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
 <li>assert_isapprox(computed, expected)</li>
 <li>assert_isapprox(computed, expected, precision)</li>
+<li>res = assert_isapprox(computed, expected)</li>
 <li>res = assert_isapprox(computed, expected, precision)</li>
+<li>[res, msg] = assert_isapprox(computed, expected)</li>
 <li>[res, msg] = assert_isapprox(computed, expected, precision)</li>
 </ul>
 <h2 id="input-argument"><a class="header" href="#input-argument">Input argument</a></h2>
 <ul>
-<li>computed - a value: numeric matrix, sparse double, a multidimensional matrix</li>
-<li>expected - a value: numeric matrix, sparse double, a multidimensional matrix</li>
-<li>expected - a double value. default precision is 0.</li>
+<li>computed - a numeric value: matrix, sparse double, or multidimensional array.</li>
+<li>expected - a numeric value: matrix, sparse double, or multidimensional array.</li>
+<li>precision - a double value specifying the relative tolerance. Default precision is 0.</li>
 </ul>
 <h2 id="output-argument"><a class="header" href="#output-argument">Output argument</a></h2>
 <ul>
-<li>res - a logical value</li>
-<li>msg - a string value, the error message. If res == true, then errormsg == ''. If res == false, then msg contains the error message.</li>
+<li>res - a logical value: true if values are approximately equal, false otherwise.</li>
+<li>msg - a string containing the error message. If res == true, then msg == ''. If res == false, then msg contains the assertion failure message.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>
-            <b>assert_isapprox</b> raises an error if computed value is not approximately equal to expected value.</p>
-<p>This function compares two floating point numbers, which allows to check that two numbers are "approximately" equal, i.e. that the relative error is small.</p>
+<p>assert_isapprox raises an error if the computed value is not approximately equal to the expected value.</p>
+<p>This function compares two floating point numbers with a specified tolerance, allowing you to check that two numbers are "approximately" equal when exact equality is not suitable due to floating-point precision limitations.</p>
+<p>The comparison uses relative error calculation to determine if the values are within the specified precision tolerance.</p>
+<p>This function is particularly useful in unit testing when dealing with numerical computations that may have small rounding errors.</p>
 <h2 id="used-functions"><a class="header" href="#used-functions">Used function(s)</a></h2>
 <p>isapprox</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
+<p>Test approximate equality with sufficient precision tolerance:</p>
 <pre><code class="language-matlab">assert_isapprox(1.23456, 1.23457, 1e-5)
 </code></pre>
-<pre><code class="language-matlab">assert_isapprox(1.23456, 1.23457, 1e-6)
+<p>Test that fails when precision is too strict:</p>
+<pre><code class="language-matlab">try
+    assert_isapprox(1.23456, 1.23457, 1e-6)
+catch ME
+    disp(['Error: ' ME.message])
+end
 </code></pre>
-<pre><code class="language-matlab">[r, msg] =assert_isapprox(1.23456, 1.23457, 1e-6)
+<p>Using return values to handle assertion results:</p>
+<pre><code class="language-matlab">[r, msg] = assert_isapprox(1.23456, 1.23457, 1e-6);
 assert_isfalse(r);
 assert_isequal(msg, _('Assertion failed: expected and computed values are too different.'));
 </code></pre>
+<p>Test with matrices:</p>
+<pre><code class="language-matlab">A = [1.0001, 2.0002; 3.0003, 4.0004];
+B = [1.0000, 2.0000; 3.0000, 4.0000];
+assert_isapprox(A, B, 1e-3)
+</code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
-<p><a href="../elementary_functions/isapprox.html">isapprox</a>.</p>
+<p><a href="../elementary_functions/isapprox.html">isapprox</a>, <a href="../assert_functions/assert_isequal.html">assert_isequal</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>

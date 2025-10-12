@@ -17,7 +17,7 @@ Covariance
 ## Description
 
 <p>
-            <b>C = cov(M)</b> returns the covariance.</p>
+            C = cov(M) returns the covariance.</p>
 
 ## Example
 

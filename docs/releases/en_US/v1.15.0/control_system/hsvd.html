@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="hsvd"><a class="header" href="#hsvd">hsvd</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="hsvd"><a class="header" href="#hsvd">hsvd</a></h1>
 <p>Hankel singular values of dynamic system.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,7 +172,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>hsv = hsvd(sys)</b> calculates the Hankel singular values (hsv) for the dynamic system <b>sys</b>.</p>
+            hsv = hsvd(sys) calculates the Hankel singular values (hsv) for the dynamic system sys.</p>
 <p>These singular values are computed in state coordinates that balance the energy transfers from input to state and from state to output.</p>
 <p>The Hankel singular values serve as a measure of the impact of each state on the input/output characteristics of the system.</p>
 <p>Analogous to how singular values relate to matrix rank, small Hankel singular values indicate states that may be omitted to streamline the model and simplify its representation.</p>

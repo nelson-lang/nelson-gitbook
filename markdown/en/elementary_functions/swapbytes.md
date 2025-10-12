@@ -17,7 +17,8 @@ Swap byte ordering.
 ## Description
 
 <p>
-            <b>swapbytes</b> Swap byte ordering.</p>
+            swapbytes Swap byte ordering.</p>
+
 <p>endian (little - big) converter</p>
 
 ## Example

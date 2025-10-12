@@ -18,7 +18,7 @@ Determine if pattern matches with strings.
 
 ## Description
 
-<b>matches</b>determines if pattern matches with strings.
+matches determines if pattern matches with strings.
 
 ## Example
 

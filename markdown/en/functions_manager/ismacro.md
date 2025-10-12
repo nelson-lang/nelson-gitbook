@@ -17,7 +17,7 @@ Check for the existence of a macro (function).
 ## Description
 
 <p>
-            <b>isbuiltin</b> checks for the existence of a macro.</p>
+            ismacro checks for the existence of a macro.</p>
 
 ## Example
 

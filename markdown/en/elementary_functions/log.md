@@ -17,8 +17,26 @@ Natural logarithm.
 ## Description
 
 <p>
-            <b>log</b> computes the natural logarithm.</p>
-<p>If input argument is a complex number or negative, <b>log(z)</b> computes log(abs(z)) + angle(z) * i.</p>
+            log computes the natural logarithm.
+        </p>
+
+<p>For real positive numbers:</p>
+
+$$\ln(x)$$
+
+<p>For complex numbers z:</p>
+
+$$\ln(z) = \ln|z| + i\arg(z)$$
+
+<p>where</p>
+
+$$|z|$$
+
+<p>is the modulus and</p>
+
+$$\arg(z)$$
+
+<p>is the argument of z.</p>
 
 ## Example
 

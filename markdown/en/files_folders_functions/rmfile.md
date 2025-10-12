@@ -20,7 +20,7 @@ Removes a file.
 
 ## Description
 
-<p><b>res = rmfile(filename)</b> removes the file <b>filename</b>.</p>
+<p>res = rmfile(filename) removes the file filename.</p>
 
 ## Example
 

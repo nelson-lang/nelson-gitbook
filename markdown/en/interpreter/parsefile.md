@@ -17,7 +17,7 @@ Parse a Nelson file.
 ## Description
 
 <p>
-            <b>parsefile</b> parse a file and returns if it is a valid script, a valid function or an error.</p>
+            parsefile parse a file and returns if it is a valid script, a valid function or an error.</p>
 
 ## Example
 

@@ -18,7 +18,7 @@ Determine if matrix is within specific bandwidth.
 ## Description
 
 <p>
-            <b>tf = isbanded(A, lower, upper)</b> returns <b>true</b> if matrix <b>A</b> is within the specified lower bandwidth, <b>lower</b>, and upper bandwidth, <b>upper</b>.</p>
+            tf = isbanded(A, lower, upper) returns true if matrix A is within the specified lower bandwidth, lower, and upper bandwidth, upper.</p>
 
 ## Example
 

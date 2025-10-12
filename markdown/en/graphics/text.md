@@ -27,73 +27,154 @@ creates text descriptions to data points.
 ## Description
 
 <p>
-            <b>figure</b> creates figure.</p>
-<p>Properties:</p>
-<p></p>
-<p>
-                <b>BackgroundColor</b>: Color of text box background: RGB triplet.</p>
-<p>
-                    <b>Children</b>:  Children: [].</p>
-<p>
-                        <b>Color</b>: Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.</p>
-<p>
-                            <b>EdgeColor</b>: Color of box outline: RGB triplet.</p>
-<p>
-                                <b>Extent</b>: Size and location of rectangle that encloses text: four-element vector.</p>
-<p>
-                                    <b>FontAngle</b>: Character slant: 'italic' or 'normal' (default).</p>
-<p>
-                                        <b>FontName</b>: Font name: </p>
-<p>
-                                            <b>FontSize</b>: Font size: scalar value greater than zero.</p>
-<p>
-                                                <b>FontUnits</b>: Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).</p>
-<p>
-                                                    <b>FontWeight</b>: Character thickness: 'bold' or 'normal' (default).</p>
-<p>
-                                                        <b>HorizontalAlignment</b>: Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).</p>
-<p>
-                                                            <b>Interpreter</b>: 'tex' (default) interpreter or 'none'.</p>
-<p>
-                                                                <b>LineStyle</b>: Line style of box outline:  'none', '--', ':',  '-.' or '-' (default).</p>
-<p>
-                                                                    <b>LineWidth</b>: Width of box outline: scalar numeric value.</p>
-<p>
-                                                                        <b>Margin</b>: Space around text within the text box: scalar numeric value.</p>
-<p>
-                                                                            <b>Parent</b>: Parent: axes object.</p>
-<p>
-                                                                                <b>Position</b>: Location of text: two-element vector of form [x y] or three-element vector of form [x y z].</p>
-<p>
-                                                                                    <b>Rotation</b>: Text orientation: scalar value in degrees.</p>
-<p>
-                                                                                        <b>String</b>: Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).</p>
-<p>
-                                                                                            <b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
-<p>
-                                                                                                <b>Type</b>: Type of graphics object: 'text'.</p>
-<p>
-                                                                                                    <b>Units</b>: Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).</p>
-<p>
-                                                                                                        <b>UserData</b>: User data: array or [] (default).</p>
-<p>
-                                                                                                            <b>VerticalAlignment</b>: Vertical alignment of text with respect to position point.</p>
-<p>
-                                                                                                                <b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
-<p>
-                                                                                                                    <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-<p>
-                                                                                                                        <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-<p></p>
-<p>
-                                                                                                                            <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+            figure creates figure.</p>
+
+| Property            | Description                                                                                                                         |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| BackgroundColor     | Color of text box background: RGB triplet.                                                                                          |
+| Children            | Children: [].                                                                                                                       |
+| Color               | Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.                                                               |
+| EdgeColor           | Color of box outline: RGB triplet.                                                                                                  |
+| Extent              | Size and location of rectangle that encloses text: four-element vector.                                                             |
+| FontAngle           | Character slant: 'italic' or 'normal' (default).                                                                                    |
+| FontName            | Font name:                                                                                                                          |
+| FontSize            | Font size: scalar value greater than zero.                                                                                          |
+| FontUnits           | Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).                                             |
+| FontWeight          | Character thickness: 'bold' or 'normal' (default).                                                                                  |
+| HorizontalAlignment | Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).                                   |
+| Interpreter         | 'tex' (default) interpreter or 'none'.                                                                                              |
+| LineStyle           | Line style of box outline: 'none', '--', ':', '-.' or '-' (default).                                                                |
+| LineWidth           | Width of box outline: scalar numeric value.                                                                                         |
+| Margin              | Space around text within the text box: scalar numeric value.                                                                        |
+| Parent              | Parent: axes object.                                                                                                                |
+| Position            | Location of text: two-element vector of form [x y] or three-element vector of form [x y z].                                         |
+| Rotation            | Text orientation: scalar value in degrees.                                                                                          |
+| String              | Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).                    |
+| Tag                 | Object identifier: character vector, string scalar or '' (default).                                                                 |
+| Type                | Type of graphics object: 'text'.                                                                                                    |
+| Units               | Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).             |
+| UserData            | User data: array or [] (default).                                                                                                   |
+| VerticalAlignment   | Vertical alignment of text with respect to position point.                                                                          |
+| Visible             | State of visibility: 'off' or 'on' (default).                                                                                       |
+| CreateFcn           | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
+| DeleteFcn           | Callback (function handle, string or cell) called when object is deleted.                                                           |
+| BeingDeleted        | Flag indicating that the object is being deleted.                                                                                   |
+
 <p>Some properties are available only for compatibility and have currently no effect on the text.</p>
+
 <p>lists of the supported special characters for the 'tex' interpreter:</p>
+
 <p>Superscript: ^{ }   'text^{superscript}'</p>
+
 <p>Subscript: _{ }   'text_{subscript}'</p>
+
 <p></p>
-Character Sequence Symbol \alpha α \upsilon υ \sim ~ \angle ∠ \phi ϕ \leq ≤ \ast * \chi χ \infty ∞ \beta β \psi ψ \clubsuit ♣ \gamma γ \omega ω \diamondsuit ♦ \delta δ \Gamma Γ \heartsuit ♥ \epsilon ϵ \Delta Δ \spadesuit ♠ \zeta ζ \Theta Θ \leftrightarrow ↔ \eta η \Lambda Λ \leftarrow ← \theta θ \Xi Ξ \Leftarrow ⇐ \vartheta ϑ \Pi Π \uparrow ↑ \iota ι \Sigma Σ \rightarrow → \kappa κ \Upsilon ϒ \Rightarrow ⇒ \lambda λ \Phi Φ \downarrow ↓ \mu µ \Psi Ψ \circ º \nu ν \Omega Ω \pm ± \xi ξ \forall ∀ \geq ≥ \pi π \exists ∃ \propto ∝ \rho ρ \ni ∍ \partial ∂ \sigma σ \cong ≅ \bullet • \varsigma ς \approx ≈ \div ÷ \tau τ \Re ℜ \neq ≠ \equiv ≡ \oplus ⊕ \aleph ℵ \Im ℑ \cup ∪ \wp ℘ \otimes ⊗ \subseteq ⊆ \oslash ∅ \cap ∩ \in ∈ \supseteq ⊇ \supset ⊃ \lceil ⌈ \subset ⊂ \int ∫ \cdot · \o ο \rfloor ⌋ \neg ¬ \nabla ∇ \lfloor ⌊ \times x \ldots ... \perp ⊥ \surd √ \prime ´ \wedge ∧ \varpi ϖ \0 ∅ \rceil ⌉ \rangle 〉 \mid | \vee ∨ \langle 〈 \copyright ©
+
+| Character Sequence | Symbol |
+| ------------------ | ------ |
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 
 ## Examples
 

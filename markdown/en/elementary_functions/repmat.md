@@ -21,7 +21,7 @@ Replicate and tile an array.
 
 ## Description
 
-<b>repmat</b>repeats matrix or N-D array.
+        repmat repeats matrix or N-D array.
 
 ## Examples
 

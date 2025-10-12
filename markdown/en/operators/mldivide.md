@@ -19,7 +19,7 @@ Matrix left division, \ operator.
 ## Description
 
 <p>
-            <b>C = mldivide(A, B)</b> returns the matrix left division of A and B.</p>
+            C = mldivide(A, B) returns the matrix left division of A and B.</p>
 
 ## Example
 

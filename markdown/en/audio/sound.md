@@ -18,7 +18,7 @@ Convert matrix of signal data to sound and play it.
 ## Description
 
 <p>
-            <b>sound</b> plays audio signal <b>y</b> to the speaker at sample rate of <b>Fs</b> hertz and uses <b>nBits</b> bits per sample.
+            sound plays audio signal y to the speaker at sample rate of Fs hertz and uses nBits bits per sample.
 	</p>
 
 ## Example

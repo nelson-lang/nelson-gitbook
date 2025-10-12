@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="kron"><a class="header" href="#kron">kron</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="kron"><a class="header" href="#kron">kron</a></h1>
 <p>Kronecker tensor product.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,7 +173,21 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>K = kron(A, B)</b> computes the Kronecker tensor product of matrices <b>A</b> and <b>B</b>.</p>
+            K = kron(A, B) computes the Kronecker tensor product of matrices A and B.
+        </p>
+<p>For matrices</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span></p>
+<p>of size</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span></p>
+<p>and</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></span></p>
+<p>of size</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span></span></span></span></span></p>
+<p>, the Kronecker product is:</p>
+<p>$$A \otimes B = \begin{pmatrix} a_{11}B &amp; a_{12}B &amp; \cdots &amp; a_{1n}B \ a_{21}B &amp; a_{22}B &amp; \cdots &amp; a_{2n}B \ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \ a_{m1}B &amp; a_{m2}B &amp; \cdots &amp; a_{mn}B \end{pmatrix}$$</p>
+<p>The result is an</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">m</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span></span></span></span></span></p>
+<p>matrix.</p>
 <h2 id="bibliography"><a class="header" href="#bibliography">Bibliography</a></h2>
 <p>https://en.wikipedia.org/wiki/Kronecker_product</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>

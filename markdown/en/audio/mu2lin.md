@@ -17,7 +17,7 @@ Convert audio data from mu-law to linear signal.
 ## Description
 
 <p>
-            <b>y = mu2lin(mu)</b> converts audio data from mu-law to linear.</p>
+            y = mu2lin(mu) converts audio data from mu-law to linear.</p>
 
 ## Bibliography
 

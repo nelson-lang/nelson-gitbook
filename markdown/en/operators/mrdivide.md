@@ -18,7 +18,7 @@ Matrix right division, / operator.
 
 ## Description
 
-<p><b>C = mrdivide(A, B)</b> returns the matrix right division of A and B.</p>
+<p>C = mrdivide(A, B) returns the matrix right division of A and B.</p>
 
 ## Example
 

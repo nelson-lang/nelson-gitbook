@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="permute"><a class="header" href="#permute">permute</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="permute"><a class="header" href="#permute">permute</a></h1>
 <p>Permute array dimensions.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,7 +172,8 @@
 <li>R - result array rearranged with new dimension order.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>permute</b>permutes the dimensions of an array.</p>
+<pre><code>    permute permutes the dimensions of an array.
+</code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">x = [1 2 3; 4 5 6]
 y = permute(x,[3 1 2])

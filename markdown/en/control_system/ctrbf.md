@@ -25,10 +25,13 @@ Compute controllability staircase form.
 ## Description
 
 <p>
-            <b>ctrbf(A, B, C)</b> decomposes the given state-space system, defined by matrices <b>A</b>, <b>B</b>, and <b>C</b>, into the controllability staircase form.</p>
-<p>This results in transformed matrices <b>Abar</b>, <b>Bbar</b>, and <b>Cbar</b>, along with a similarity transformation matrix <b>T</b> and a vector <b>k</b>.</p>
-<p>The length of vector <b>k</b> is equal to the order of the system represented by <b>A</b>, and each entry in <b>k</b> denotes the number of controllable states factored out at each step of the transformation matrix computation.</p>
-<p>The non-zero elements in <b>k</b> indicate the number of iterations required for <b>T</b> calculation, and the sum of <b>k</b> corresponds to the number of states in <b>Ac</b>, the controllable portion of <b>Abar</b>.</p>
+            ctrbf(A, B, C) decomposes the given state-space system, defined by matrices A, B, and C, into the controllability staircase form.</p>
+
+<p>This results in transformed matrices Abar, Bbar, and Cbar, along with a similarity transformation matrix T and a vector k.</p>
+
+<p>The length of vector k is equal to the order of the system represented by A, and each entry in k denotes the number of controllable states factored out at each step of the transformation matrix computation.</p>
+
+<p>The non-zero elements in k indicate the number of iterations required for T calculation, and the sum of k corresponds to the number of states in Ac, the controllable portion of Abar.</p>
 
 ## Example
 

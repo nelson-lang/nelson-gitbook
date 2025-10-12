@@ -18,7 +18,7 @@ Condition number with respect to eigenvalues.
 ## Description
 
 <p>
-            <b>C = condeig(A)</b> returns a vector of condition numbers for the eigenvalues of <b>A</b>.</p>
+            C = condeig(A) returns a vector of condition numbers for the eigenvalues of A.</p>
 
 ## Example
 

@@ -25,7 +25,7 @@ Colorbar showing color scale.
 ## Description
 
 <p>
-            <b>colorbar</b>adds a color bar into a plot.</p>
+            colorbaradds a color bar into a plot.</p>
 
 ## Examples
 

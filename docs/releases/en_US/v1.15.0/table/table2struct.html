@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="table2struct"><a class="header" href="#table2struct">table2struct</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="table2struct"><a class="header" href="#table2struct">table2struct</a></h1>
 <p>Convert table to structure array</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,12 +173,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>S = table2struct(T)</b> converts the table <b>T</b> into a structure array <b>S</b>, where each variable in <b>T</b> is represented as a field in <b>S</b>.</p>
-<p>If <b>T</b> is an m-by-n table, <b>S</b> will be an m-by-1 structure array with n fields.</p>
-<p>the output <b>S</b> will not contain any table properties from <b>T.Properties</b>.</p>
+            S = table2struct(T) converts the table T into a structure array S, where each variable in T is represented as a field in S.</p>
+<p>If T is an m-by-n table, S will be an m-by-1 structure array with n fields.</p>
+<p>the output S will not contain any table properties from T.Properties.</p>
 <p>
-                <b>S = table2struct(T, "ToScalar", true)</b> converts the table <b>T</b> into a scalar structure <b>S</b>, where each variable in <b>T</b> becomes a field in <b>S</b>.</p>
-<p>If <b>T</b> is an m-by-n table, <b>S</b> will contain n fields, and each field will have m rows.</p>
+                S = table2struct(T, "ToScalar", true) converts the table T into a scalar structure S, where each variable in T becomes a field in S.</p>
+<p>If T is an m-by-n table, S will contain n fields, and each field will have m rows.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
 Age = [28; 34; 22; 30];

@@ -17,7 +17,7 @@ Checks end of file.
 ## Description
 
 <p>
-            <b>feof</b> checks if end of file has been reached.</p>
+            feof checks if end of file has been reached.</p>
 
 ## Example
 

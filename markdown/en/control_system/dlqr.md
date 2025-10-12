@@ -23,7 +23,7 @@ Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space sys
 
 ## Description
 
-<p>The <b>dlqr</b> function is designed to minimize a quadratic cost function associated with a discrete linear time-invariant state-space system model.</p>
+<p>The dlqr function is designed to minimize a quadratic cost function associated with a discrete linear time-invariant state-space system model.</p>
 
 ## Example
 

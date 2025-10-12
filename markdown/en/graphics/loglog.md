@@ -28,9 +28,10 @@ Log-log scale plot.
 ## Description
 
 <p>
-            <b>loglog(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and the y-axis.</p>
+            loglog(X, Y) plots data using a base 10 logarithmic scale for the x-axis and the y-axis.</p>
+
 <p>
-                <b>loglog</b> has the exact same syntax as the <b>plot</b> command.</p>
+                loglog has the exact same syntax as the plot command.</p>
 
 ## Examples
 

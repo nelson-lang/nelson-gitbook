@@ -20,7 +20,7 @@ nelson object callable from QML.
 ## Description
 
 <p>
-            <b>nelson</b> object contains some methods used as callback to call nelson from QML</p>
+            nelson object contains some methods used as callback to call nelson from QML</p>
 
 ## See also
 

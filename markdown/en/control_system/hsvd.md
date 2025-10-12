@@ -17,9 +17,12 @@ Hankel singular values of dynamic system.
 ## Description
 
 <p>
-            <b>hsv = hsvd(sys)</b> calculates the Hankel singular values (hsv) for the dynamic system <b>sys</b>.</p>
+            hsv = hsvd(sys) calculates the Hankel singular values (hsv) for the dynamic system sys.</p>
+
 <p>These singular values are computed in state coordinates that balance the energy transfers from input to state and from state to output.</p>
+
 <p>The Hankel singular values serve as a measure of the impact of each state on the input/output characteristics of the system.</p>
+
 <p>Analogous to how singular values relate to matrix rank, small Hankel singular values indicate states that may be omitted to streamline the model and simplify its representation.</p>
 
 ## Example

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="parfeval"><a class="header" href="#parfeval">parfeval</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="parfeval"><a class="header" href="#parfeval">parfeval</a></h1>
 <p>Run function in background.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,10 +175,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background.</p>
-<p>backgroundPool has <b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.</p>
+            f = parfeval(bPool, fptr, n, x1, ..., xm) starts the function fptr to run in the background.</p>
+<p>backgroundPool has NumWorkers available. If there are more functions scheduled, functions wait than one entry is available in pool.</p>
 <p>
-                <b>parfeval</b> runs the function <b>fptr</b> on a background worker.</p>
+                parfeval runs the function fptr on a background worker.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">b = backgroundPool()
 fptr = str2func('cos');

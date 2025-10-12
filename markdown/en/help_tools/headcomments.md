@@ -18,8 +18,10 @@ Display Nelson function header comments.
 ## Description
 
 <p>
-            <b>head_comments</b> displays the function header comments.</p>
+            head_comments displays the function header comments.</p>
+
 <p>Comments are read from the associated .m file.</p>
+
 <p>Nelson predefined functions have no header comments.</p>
 
 ## Example

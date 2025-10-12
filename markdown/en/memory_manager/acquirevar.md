@@ -18,7 +18,7 @@ Acquires variable value from a specified variables scope.
 ## Description
 
 <p>
-            <b>acquirevar</b> search a symbol in a specific scope and copy the value in current scope.</p>
+            acquirevar search a symbol in a specific scope and copy the value in current scope.</p>
 
 ## Example
 

@@ -18,9 +18,11 @@ Delete variables from table.
 ## Description
 
 <p>
-            <b>TB = removevars(TA, varsNames)</b> removes the variables specified by <b>varsNames</b> from the table <b>TA</b> and stores the remaining variables in <b>T2</b>.</p>
+            TB = removevars(TA, varsNames) removes the variables specified by varsNames from the table TA and stores the remaining variables in T2.</p>
+
 <p>You can specify the variables by name, position, or using logical indices.</p>
-<p>You can also remove variables from a table using <b>T(:, varsNames) = []</b>.</p>
+
+<p>You can also remove variables from a table using T(:, varsNames) = [].</p>
 
 ## Example
 

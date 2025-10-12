@@ -17,7 +17,7 @@ Vandermonde matrix
 ## Description
 
 <p>
-            <b>A = vander(v)</b> returns the Vandermonde Matrix.</p>
+            A = vander(v) returns the Vandermonde Matrix.</p>
 
 ## Bibliography
 

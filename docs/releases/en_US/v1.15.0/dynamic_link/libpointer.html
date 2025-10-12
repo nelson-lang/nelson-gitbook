@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="libpointer"><a class="header" href="#libpointer">libpointer</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="libpointer"><a class="header" href="#libpointer">libpointer</a></h1>
 <p>Creates an C pointer object usuable in Nelson.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,7 +176,7 @@
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>This is an advanced feature to manipulate C pointers.</p>
 <p>
-            <b>ptr = libpointer()</b> creates an NULL pointer.</p>
+            ptr = libpointer() creates an NULL pointer.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">p = libpointer('int8Ptr', int8([3 4]));
 p.isNull()

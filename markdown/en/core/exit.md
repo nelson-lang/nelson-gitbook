@@ -12,7 +12,7 @@ Terminate Nelson program (same as quit)
 
 ## Description
 
-<p> This function is equivalent to the <b>quit</b> function.</p>
+<p> This function is equivalent to the quit function.</p>
 
 ## See also
 

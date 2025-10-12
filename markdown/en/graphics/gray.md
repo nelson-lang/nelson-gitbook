@@ -18,7 +18,7 @@ Gray colormap array.
 ## Description
 
 <p>
-            <b>gray</b> returns the colormap with gray colors.</p>
+            gray returns the colormap with gray colors.</p>
 
 ## Example
 

@@ -24,7 +24,7 @@ Sum of array elements.
 ## Description
 
 <p>
-            <b>R = sum(M)</b> returns the sum of the array elements of M.</p>
+            R = sum(M) returns the sum of the array elements of M.</p>
 
 ## Example
 

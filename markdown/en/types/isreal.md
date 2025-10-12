@@ -16,7 +16,7 @@ Return true if all imaginary part is a zero array.
 
 ## Description
 
-<b>isreal</b>returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
+        isreal returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
 
 ## Examples
 

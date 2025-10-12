@@ -21,9 +21,10 @@ Returns last recorded warning message.
 ## Description
 
 <p>
-            <b>last_message = lastwarn()</b> returns a string containing the last warning message.</p>
+            last_message = lastwarn() returns a string containing the last warning message.</p>
+
 <p>
-                <b>lastwarn('')</b> clears last warning.</p>
+                lastwarn('') clears last warning.</p>
 
 ## Example
 

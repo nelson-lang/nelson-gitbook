@@ -16,8 +16,8 @@ Length of an object.
 
 ## Description
 
-<p>For matrix or N-dimensional array, <b>length</b> returns the number of elements along the largest dimension.
-		For empty object, <b>length</b> returns 0. For scalar, <b>length</b> returns 1. For a vector, <b>length</b> returns the number of elements. </p>
+<p>For matrix or N-dimensional array, length returns the number of elements along the largest dimension.
+		For empty object, length returns 0. For scalar, length returns 1. For a vector, length returns the number of elements. </p>
 
 ## Example
 

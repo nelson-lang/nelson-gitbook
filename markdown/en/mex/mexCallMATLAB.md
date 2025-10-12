@@ -22,7 +22,8 @@ Call a NELSON function
 ## Description
 
 <p>
-            <b>mexCallMATLAB</b> calls an NELSON function.</p>
+            mexCallMATLAB calls an NELSON function.</p>
+
 <p>If name detects an error, NELSON will terminate MEX and returns control to NELSON.</p>
 
 ## Example

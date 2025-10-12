@@ -19,7 +19,7 @@ Zeros and gain of SISO dynamic system.
 ## Description
 
 <p>
-            <b>[Z, gain] = zero(sys)</b> returns the zero-pole-gain of <b>sys</b>.</p>
+            [Z, gain] = zero(sys) returns the zero-pole-gain of sys.</p>
 
 ## Example
 

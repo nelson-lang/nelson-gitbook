@@ -28,8 +28,9 @@ Invariant zeros of linear system.
 ## Description
 
 <p>
-            <b>tzero</b> function is employed to extract the invariant zeros of a Multiple Input, Multiple Output (MIMO) dynamic system described by the system model <b>sys</b>.</p>
-<p>In cases where <b>sys</b> is a minimal realization, these invariant zeros coincide with the transmission zeros of the system.</p>
+            tzero function is employed to extract the invariant zeros of a Multiple Input, Multiple Output (MIMO) dynamic system described by the system model sys.</p>
+
+<p>In cases where sys is a minimal realization, these invariant zeros coincide with the transmission zeros of the system.</p>
 
 ## Example
 

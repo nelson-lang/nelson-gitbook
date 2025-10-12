@@ -16,7 +16,7 @@ Checks that value is scalar or empty or raise an error.
 ## Description
 
 <p>
-            <b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.</p>
+            mustBeScalarOrEmpty checks that value is scalar or empty or raise an error.</p>
 
 ## Example
 

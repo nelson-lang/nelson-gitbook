@@ -20,8 +20,9 @@ Returns the number of output arguments.
 ## Description
 
 <p>
-            <b>nargout</b> returns the number of output arguments of an function.</p>
-<p>If the last output argument of the function  is <b>varargout</b> the returned value is negative.</p>
+            nargout returns the number of output arguments of an function.</p>
+
+<p>If the last output argument of the function  is varargout the returned value is negative.</p>
 
 ## Examples
 

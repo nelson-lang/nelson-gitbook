@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="bandwidth"><a class="header" href="#bandwidth">bandwidth</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="bandwidth"><a class="header" href="#bandwidth">bandwidth</a></h1>
 <p>Lower and upper matrix bandwidth.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,7 +175,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>[lower, upper] = bandwidth(A)</b> returns <b>lower</b> and <b>upper</b> bandwidths of matrix <b>A</b>.</p>
+            [lower, upper] = bandwidth(A) returns lower and upper bandwidths of matrix A.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">M = [10 -20 40; -50 20 0; 10 0 30]
 [lower, upper] = bandwidth(M)

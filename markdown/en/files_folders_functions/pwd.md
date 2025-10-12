@@ -14,8 +14,10 @@ Returns current directory.
 ## Description
 
 <p>Returns the current working directory.</p>
+
 <p>
-            <b>pwd()</b> without input argument displays the current working directory.</p>
+            pwd() without input argument displays the current working directory.</p>
+
 <p></p>
 
 ## Example

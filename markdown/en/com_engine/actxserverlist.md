@@ -13,7 +13,7 @@ Get available ActiveX servers.
 ## Description
 
 <p>
-            <b>l = actxserverlist()</b> returns list of available servers.</p>
+            l = actxserverlist() returns list of available servers.</p>
 
 ## Example
 

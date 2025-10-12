@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="getframe"><a class="header" href="#getframe">getframe</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="getframe"><a class="header" href="#getframe">getframe</a></h1>
 <p>Capture figure or axes as movie frame.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,11 +175,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>F = getframe</b> captures the current axes as displayed on the screen as a movie frame. F is a structure containing the image data. The capture preserves the on-screen size of the axes but does not include tick labels or any content outside the axes boundaries.</p>
+            F = getframe captures the current axes as displayed on the screen as a movie frame. F is a structure containing the image data. The capture preserves the on-screen size of the axes but does not include tick labels or any content outside the axes boundaries.</p>
 <p>
-                <b>F = getframe(ax)</b> captures the specified axes ax instead of the current axes.</p>
+                F = getframe(ax) captures the specified axes ax instead of the current axes.</p>
 <p>
-                    <b>F = getframe(fig)</b> captures the entire figure window specified by fig, including the axes title, labels, and tick marks. However, the captured frame does not include the figure’s menu or toolbars.</p>
+                    F = getframe(fig) captures the entire figure window specified by fig, including the axes title, labels, and tick marks. However, the captured frame does not include the figure’s menu or toolbars.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();
 surf(peaks);

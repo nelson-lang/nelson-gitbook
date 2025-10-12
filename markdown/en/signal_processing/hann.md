@@ -19,7 +19,7 @@ Hann window.
 ## Description
 
 <p>
-            <b>c = hann(m)</b> computes coefficients of a Hanning window of length <b>m</b>.</p>
+            c = hann(m) computes coefficients of a Hanning window of length m.</p>
 
 ## Bibliography
 

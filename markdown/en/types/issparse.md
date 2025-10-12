@@ -16,7 +16,7 @@ Return true if variable var is a sparse array.
 
 ## Description
 
-<b>issparse</b>returns a logical 1 if the argument is a sparse array and a logical 0 otherwise.
+        issparse returns a logical 1 if the argument is a sparse array and a logical 0 otherwise.
 
 ## Examples
 

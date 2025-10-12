@@ -17,7 +17,8 @@ Converts to 8-bit unsigned integer.
 ## Description
 
 <p>
-            <b>uint8</b> converts value to 8-bit unsigned integer type.</p>
+            uint8 converts value to 8-bit unsigned integer type.</p>
+
 <p>The value is rounded to the nearest uint8 value on conversion. A value that is above or below the range for an uint8 class is mapped to one of the endpoints of the range [0, 255].</p>
 
 ## Example

@@ -24,7 +24,7 @@ Generate continuous second-order systems.
 ## Description
 
 <p>
-            <b>ord2</b> offers a convenient way to obtain either the state-space representation or the transfer function of a second-order system based on its natural frequency and damping factor.</p>
+            ord2 offers a convenient way to obtain either the state-space representation or the transfer function of a second-order system based on its natural frequency and damping factor.</p>
 
 ## Example
 

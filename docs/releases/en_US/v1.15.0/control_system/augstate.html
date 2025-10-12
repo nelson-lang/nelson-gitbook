@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="augstate"><a class="header" href="#augstate">augstate</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="augstate"><a class="header" href="#augstate">augstate</a></h1>
 <p>Append state vector to output vector.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,7 +172,7 @@
 <li>sysa - State-space model with states appended to the outputs.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>sysa = augstate(sys)</b> adds the state vector to the outputs of a state-space model.</p>
+<p>The function sysa = augstate(sys) adds the state vector to the outputs of a state-space model.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">sys = ss(10, 10, 20, 0);
 sysa = augstate(sys)

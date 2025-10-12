@@ -22,7 +22,8 @@ Save data from RESTful web service to file
 ## Description
 
 <p>
-            <b>websave()</b> saves content from the web to filename.</p>
+            websave() saves content from the web to filename.</p>
+
 <p>websave function returns the full filename path as result_filename.</p>
 
 ## Example

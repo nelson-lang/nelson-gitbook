@@ -19,7 +19,7 @@ Creates COM server.
 ## Description
 
 <p>
-            <b>h = actxserver(progid)</b> creates a COM server using the progid identifier.</p>
+            h = actxserver(progid) creates a COM server using the progid identifier.</p>
 
 ## Examples
 

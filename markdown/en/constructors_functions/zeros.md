@@ -19,7 +19,7 @@ Creates an matrix made of zeros.
 ## Description
 
 <p>
-            <b>zeros</b> returns a matrix made of zeros.</p>
+            zeros returns a matrix made of zeros.</p>
 
 ## Examples
 

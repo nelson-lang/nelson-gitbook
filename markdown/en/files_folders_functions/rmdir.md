@@ -24,7 +24,8 @@ Removes a directory.
 ## Description
 
 <p>
-            <b>res = rmdir(dirname)</b> removes the directory <b>dirname</b>.</p>
+            res = rmdir(dirname) removes the directory dirname.</p>
+
 <p>If the directory is not empty, you must use the s argument.</p>
 
 ## Example

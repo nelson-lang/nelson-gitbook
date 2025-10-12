@@ -18,7 +18,7 @@ Polynomial evaluation.
 ## Description
 
 <p>
-            <b>polyval</b> evaluates polynomial at several points.</p>
+            polyval evaluates polynomial at several points.</p>
 
 ## Example
 

@@ -21,7 +21,7 @@ List folder contents.
 ## Description
 
 <p>
-            <b>ls</b> is implemented by calling the native operating system's directory listing command—available options will vary from system to system.</p>
+            ls is implemented by calling the native operating system's directory listing command-available options will vary from system to system.</p>
 
 ## Example
 

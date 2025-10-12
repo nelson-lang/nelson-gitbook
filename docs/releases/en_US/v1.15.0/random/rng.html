@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="rng"><a class="header" href="#rng">rng</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="rng"><a class="header" href="#rng">rng</a></h1>
 <p>Random Number Generator.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -187,34 +188,41 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>lst = rng('enginelist')</b> returns the list of available random number generator.</p>
+            lst = rng('enginelist') returns the list of available random number generator.</p>
 <p>
-                <b>rng('default')</b> puts the settings of the random number generator to default values.</p>
+                rng('default') puts the settings of the random number generator to default values.</p>
 <p>
-                    <b>s = rng('default')</b> puts the settings of the random number generator to default values.</p>
+                    s = rng('default') puts the settings of the random number generator to default values.</p>
 <p>
-                        <b>rng('shuffle')</b> puts the settings of the random number generator to default values and returns previous generator as an struct.</p>
+                        rng('shuffle') puts the settings of the random number generator to default values and returns previous generator as an struct.</p>
 <p>
-                            <b>s = rng('shuffle')</b> seeds the random number generator based on the current time.</p>
+                            s = rng('shuffle') seeds the random number generator based on the current time.</p>
 <p>
-                                <b>rng(seed)</b> seeds the random number generator using the nonnegative integer.</p>
+                                rng(seed) seeds the random number generator using the nonnegative integer.</p>
 <p>
-                                    <b>s = rng(seed)</b> seeds the random number generator using the nonnegative integer and returns previous generator as an struct.</p>
+                                    s = rng(seed) seeds the random number generator using the nonnegative integer and returns previous generator as an struct.</p>
 <p>
-                                        <b>rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used.</p>
+                                        rng(seed, generator) seeds the random number generator using the nonnegative integer and specify also the type of generator used.</p>
 <p>
-                                            <b>s = rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct.</p>
+                                            s = rng(seed, generator) seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct.</p>
 <p>
-                                                <b>rng('shuffle', generator)</b> seeds the random number generator based on the current time and specify also the type of generator used.</p>
+                                                rng('shuffle', generator) seeds the random number generator based on the current time and specify also the type of generator used.</p>
 <p>
-                                                    <b>s = rng('shuffle', generator)</b> seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct.</p>
+                                                    s = rng('shuffle', generator) seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct.</p>
 <p>
-                                                        <b>s = rng</b> returns current generator as an struct.</p>
+                                                        s = rng returns current generator as an struct.</p>
 <p>
-                                                            <b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by <b>s = rng</b>.</p>
+                                                            rng(s) restores the settings of the random number generator using a previous struct returned by s = rng.</p>
 <p></p>
 <p>Available generators are:</p>
-Value Generator Name Generator Keyword "twister" Mersenne Twister mt19937ar "simdTwister" SIMD-Oriented Fast Mersenne Twister dsfmt19937 "combRecursive" Combined Multiple Recursive mrg32k3a "multFibonacci" Multiplicative Lagged Fibonacci mlfg6331_64 "philox" Philox 4x32 generator with 10 rounds philox4x32_10<p>Default generator is "twister".</p>
+<div class="table-wrapper"><table><thead><tr><th>Value</th><th>Generator Name</th><th>Generator Keyword</th></tr></thead><tbody>
+<tr><td>"twister"</td><td>Mersenne Twister</td><td>mt19937ar</td></tr>
+<tr><td>"simdTwister"</td><td>SIMD-Oriented Fast Mersenne Twister</td><td>dsfmt19937</td></tr>
+<tr><td>"combRecursive"</td><td>Combined Multiple Recursive</td><td>mrg32k3a</td></tr>
+<tr><td>"multFibonacci"</td><td>Multiplicative Lagged Fibonacci</td><td>mlfg6331_64</td></tr>
+<tr><td>"philox"</td><td>Philox 4x32 generator with 10 rounds</td><td>philox4x32_10</td></tr>
+</tbody></table>
+</div><p>Default generator is "twister".</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">rng('default');
 r = rng()

@@ -1,0 +1,40 @@
+# coth
+
+Cotangente hyperbolique.
+
+## Syntaxe
+
+- res = coth(x)
+
+## Argument d'entrée
+
+- x - une valeur numérique
+
+## Argument de sortie
+
+- res - une valeur numérique
+
+## Description
+
+        coth calcule la cotangente hyperbolique pour chaque élément de x.
+
+## Exemple
+
+```matlab
+X = [3*pi, 2*pi, pi, 0];
+R = coth(X)
+```
+
+## Voir aussi
+
+[tanh](../trigonometric/tanh.md), [cot](../trigonometric/cot.md).
+
+## Historique
+
+| Version | Description      |
+| ------- | ---------------- |
+| 1.0.0   | version initiale |
+
+## Auteur
+
+Allan CORNET

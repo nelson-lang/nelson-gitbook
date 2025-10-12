@@ -18,7 +18,7 @@ Retrieve a property value from an handle object.
 ## Description
 
 <p>
-            <b>R = get(h, property_name)</b> returns the value of property asked.</p>
+            R = get(h, property_name) returns the value of property asked.</p>
 
 ## See also
 

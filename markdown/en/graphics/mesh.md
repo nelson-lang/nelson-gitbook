@@ -29,7 +29,8 @@ Mesh surface plot.
 ## Description
 
 <p>
-            <b>mesh</b> creates a 3-D wireframe mesh.</p>
+            mesh creates a 3-D wireframe mesh.</p>
+
 <p>You can customize the appearance of the plot using various options such as color, lighting, and shading.</p>
 
 ## Examples

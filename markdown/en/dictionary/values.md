@@ -18,9 +18,10 @@ Values of dictionary.
 ## Description
 
 <p>
-            <b>v = values(d)</b> retrieves an array containing the values of the specified dictionary, <b>d</b>.</p>
+            v = values(d) retrieves an array containing the values of the specified dictionary, d.</p>
+
 <p>
-                <b>v = values(d, 'cell')</b> optionally returns the values as a cell array.</p>
+                v = values(d, 'cell') optionally returns the values as a cell array.</p>
 
 ## Example
 

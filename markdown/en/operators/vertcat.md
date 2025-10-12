@@ -20,7 +20,7 @@ Vertical concatenation.
 ## Description
 
 <p>
-            <b>R = vertcat(M1, M2, ... , MN)</b> returns the vertical concatenation of M1, M2, ... , MN along the dimension 1.</p>
+            R = vertcat(M1, M2, ... , MN) returns the vertical concatenation of M1, M2, ... , MN along the dimension 1.</p>
 
 ## Examples
 

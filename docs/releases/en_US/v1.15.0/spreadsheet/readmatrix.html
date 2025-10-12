@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="readmatrix"><a class="header" href="#readmatrix">readmatrix</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="readmatrix"><a class="header" href="#readmatrix">readmatrix</a></h1>
 <p>Create matrix array from file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,9 +176,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>M = readmatrix(filename)</b> creates a matrix array by importing column-oriented data from a text or spreadsheet file.</p>
+            M = readmatrix(filename) creates a matrix array by importing column-oriented data from a text or spreadsheet file.</p>
 <p>
-                <b>M = readmatrix(filename, opts)</b> creates a matrix array using the settings defined in the <b>opts</b> import options object. The import <b>options</b> object allows you to customize how <b>readmatrix</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
+                M = readmatrix(filename, opts) creates a matrix array using the settings defined in the opts import options object. The import options object allows you to customize how readmatrix interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">
 filename = [tempdir,'readmatrix_1.csv'];

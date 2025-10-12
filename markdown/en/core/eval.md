@@ -21,8 +21,9 @@ Evaluate Nelson code in string.
 ## Description
 
 <p>
-            <b>eval</b> executes Nelson instructions given in a string.</p>
-<p>Please use <b>try catch end</b> block instead than <b>eval</b>, if you need to capture an error message for higher performance.</p>
+            eval executes Nelson instructions given in a string.</p>
+
+<p>Please use try catch end block instead than eval, if you need to capture an error message for higher performance.</p>
 
 ## Examples
 

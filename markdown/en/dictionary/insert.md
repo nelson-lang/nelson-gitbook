@@ -21,12 +21,15 @@ Add entries to a dictionary.
 ## Description
 
 <p>
-            <b>db = insert(da, key, value)</b> adds the key-value pair to the dictionary <b>da</b>.</p>
+            db = insert(da, key, value) adds the key-value pair to the dictionary da.</p>
+
 <p>If the key already exists, its value is updated.</p>
+
 <p>
-                <b>d = insert(d, key, value)</b> is equivalent to <b>d[key] = value</b>.</p>
+                d = insert(d, key, value) is equivalent to d[key] = value.</p>
+
 <p>
-                    <b>db = insert(da, key, value, 'overwrite', tf)</b> specifies whether to overwrite an existing value for the key based on the boolean parameter Overwrite.</p>
+                    db = insert(da, key, value, 'overwrite', tf) specifies whether to overwrite an existing value for the key based on the boolean parameter Overwrite.</p>
 
 ## Example
 

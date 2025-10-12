@@ -17,7 +17,7 @@ Transform a cell array containing matrices into a single, concatenated matrix.
 ## Description
 
 <p>
-            <b>M = cell2smat(ce)</b> creates a single matrix by merging all elements within the cell array <b>ce</b> into a multi-dimensional array. The elements in <b>c</b> can consist of numeric, logical, or character matrices, cell arrays, or structs, and they must be compatible for concatenation using <b>cat</b> function.</p>
+            M = cell2smat(ce) creates a single matrix by merging all elements within the cell array ce into a multi-dimensional array. The elements in c can consist of numeric, logical, or character matrices, cell arrays, or structs, and they must be compatible for concatenation using cat function.</p>
 
 ## Example
 

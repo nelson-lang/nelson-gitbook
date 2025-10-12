@@ -18,9 +18,10 @@ Remove dictionary entries.
 ## Description
 
 <p>
-            <b>db = remove(da, key)</b> deletes the entry associated with the key from dictionary da.</p>
+            db = remove(da, key) deletes the entry associated with the key from dictionary da.</p>
+
 <p>
-                <b>d = remove(d, key)</b> is equivalent to <b>d[key] = []</b>.</p>
+                d = remove(d, key) is equivalent to d[key] = [].</p>
 
 ## Example
 

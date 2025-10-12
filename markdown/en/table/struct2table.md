@@ -17,8 +17,10 @@ Convert a structure array into a tabular format.
 ## Description
 
 <p>
-            <b>T = struct2table(S)</b> transforms a structure array into a table, where each field of the input structure is represented as a variable in the resulting table.</p>
+            T = struct2table(S) transforms a structure array into a table, where each field of the input structure is represented as a variable in the resulting table.</p>
+
 <p>If the input is a scalar structure containing 𝑛 fields, each with 𝑚 rows, the output will be an 𝑚×𝑛 table.</p>
+
 <p>If the input is either an 𝑚×1 or a 1×𝑚 structure array with 𝑛 fields, the output will also be an 𝑚×𝑛 table.</p>
 
 ## Examples

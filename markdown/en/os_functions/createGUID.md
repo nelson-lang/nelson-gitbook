@@ -19,7 +19,7 @@ Creates a GUID.
 ## Description
 
 <p>
-            <b>createGUID</b> creates a Globally Unique IDentifier (GUID), , a unique 128-bit integer used for CLSIDs and interface identifiers.</p>
+            createGUID creates a Globally Unique IDentifier (GUID), , a unique 128-bit integer used for CLSIDs and interface identifiers.</p>
 
 ## Example
 

@@ -17,7 +17,7 @@ Returns true is the input argument is a file.
 ## Description
 
 <p>
-            <b>isfile(name)</b> returns <b>true</b> if <b>name</b> is a file.</p>
+            isfile(name) returns true if name is a file.</p>
 
 ## Example
 

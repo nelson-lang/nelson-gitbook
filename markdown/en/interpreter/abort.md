@@ -10,7 +10,7 @@ stop evaluation.
 ## Description
 
 <p>
-            <b>return</b> or <b>abort</b> stops current evaluation.</p>
+            return or abort stops current evaluation.</p>
 
 ## Example
 

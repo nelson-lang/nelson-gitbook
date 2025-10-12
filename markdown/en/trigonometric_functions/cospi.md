@@ -17,9 +17,11 @@ Computes cos(X \* pi) accurately.
 ## Description
 
 <p>
-            <b>res = cospi(x)</b> computes <b>cos(x * pi)</b> accurately.</p>
-<p>For integers, <b>cospi(x)</b> is +1 or -1.</p>
-<p>For odd integers, <b>cospi(x / 2)</b> is exactly zero.</p>
+            res = cospi(x) computes cos(x * pi) accurately.</p>
+
+<p>For integers, cospi(x) is +1 or -1.</p>
+
+<p>For odd integers, cospi(x / 2) is exactly zero.</p>
 
 ## Example
 

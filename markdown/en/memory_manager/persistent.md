@@ -15,7 +15,8 @@ Persistent variable.
 ## Description
 
 <p>
-            <b>persistent</b> defines a variable defined by his name <b>variable_name</b> as persistent in a function.</p>
+            persistent defines a variable defined by his name variable_name as persistent in a function.</p>
+
 <p>Before to use a persistent variable, it is necessary to initializ value.</p>
 
 ## Examples

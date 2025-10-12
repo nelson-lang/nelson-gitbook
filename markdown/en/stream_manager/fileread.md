@@ -23,7 +23,8 @@ Read contents of file as text.
 ## Description
 
 <p>
-            <b>fileread</b> read contents of file as text.</p>
+            fileread read contents of file as text.</p>
+
 <p>if encoding is 'auto', nelson will try to detect best encoding to read contents of file as text.</p>
 
 ## Examples

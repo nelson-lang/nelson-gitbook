@@ -17,7 +17,7 @@ Factorial function
 ## Description
 
 <p>
-            <b>factorial</b> computes the factorial function: the product of all integers values: 1 * 2 * ... * M</p>
+            factorial computes the factorial function: the product of all integers values: 1 * 2 * ... * M</p>
 
 ## Example
 

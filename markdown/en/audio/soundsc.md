@@ -19,7 +19,7 @@ Scale data and play as sound.
 ## Description
 
 <p>
-            <b>soundsc</b> scales the values of audio signal <b>y </b>to fit in the range from <b>–1.0</b> to <b>1.0</b> and play as sound.
+            soundsc scales the values of audio signal yto fit in the range from –1.0 to 1.0 and play as sound.
 	</p>
 
 ## Example

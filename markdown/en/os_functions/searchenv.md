@@ -18,7 +18,7 @@ Searches for a file using environment paths.
 ## Description
 
 <p>
-            <b>searchenv</b> Searches for a file using environment paths.</p>
+            searchenv Searches for a file using environment paths.</p>
 
 ## Example
 

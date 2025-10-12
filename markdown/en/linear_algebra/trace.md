@@ -17,7 +17,7 @@ Matrix trace.
 ## Description
 
 <p>
-            <b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
+            trace(x) computes the trace of x, the sum of the elements along the main diagonal.</p>
 
 ## Example
 

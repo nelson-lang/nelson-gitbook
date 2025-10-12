@@ -17,9 +17,10 @@ Returns true is the input argument is an directory.
 ## Description
 
 <p>
-            <b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.</p>
+            isdir(dirname) returns true if dirname is a directory.</p>
+
 <p>
-                <b>isdir</b> and <b>isfolder</b> are same.</p>
+                isdir and isfolder are same.</p>
 
 ## Example
 

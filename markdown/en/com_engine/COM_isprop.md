@@ -18,7 +18,7 @@ Determines if input is an existing COM object property.
 
 ## Description
 
-<b>r = isprop(h, propertyname)</b>returns true if the specified name is a property of the COM object h. Otherwise, it returns false.
+r = isprop(h, propertyname) returns true if the specified name is a property of the COM object h. Otherwise, it returns false.
 
 ## Example
 

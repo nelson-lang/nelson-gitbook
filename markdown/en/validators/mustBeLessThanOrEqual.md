@@ -17,7 +17,7 @@ Checks that value is less than or equal to another value or issue error.
 ## Description
 
 <p>
-            <b>mustBeLessThanOrEqual</b> checks that value is less than or equal to another value or issue error.</p>
+            mustBeLessThanOrEqual checks that value is less than or equal to another value or issue error.</p>
 
 ## Example
 

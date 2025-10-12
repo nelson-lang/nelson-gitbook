@@ -20,11 +20,14 @@ Matrix Exception information.
 ## Description
 
 <p>All Nelson code that detects an error and throws an exception constructs an MException object.</p>
+
 <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
+
 <p>
-            <b>ME = MException('last')</b> return last exception.</p>
+            ME = MException('last') return last exception.</p>
+
 <p>
-                <b>MException('reset')</b> clears last exception.</p>
+                MException('reset') clears last exception.</p>
 
 ## Example
 

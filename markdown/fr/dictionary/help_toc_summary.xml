@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>dictionary</module>
+    <section name="Dictionnaires">
+      <chapter_description>
+      <p>Le module Dictionnaire fournit des outils pour travailler avec des paires clé-valeur dans Nelson.</p>
+      <p>Il permet la création et la configuration de dictionnaires avec des types définis pour les clés et les valeurs, la consultation et la modification des entrées, ainsi que la gestion de la structure globale.</p>
+      <p>Ce module permet un stockage, une récupération et une manipulation efficaces des données indexées par des clés uniques, ce qui le rend adapté aux tableaux associatifs, recherches et gestion dynamique des données.</p>
+    </chapter_description>
+      <keyword name="configureDictionary" link="configureDictionary.md" description="Génère un dictionnaire avec des types définis pour les clés et les valeurs."/>
+      <keyword name="dictionary" link="dictionary.md" description="Objet qui associe des clés uniques à des valeurs."/>
+      <keyword name="entries" link="entries.md" description="Paires clé-valeur du dictionnaire."/>
+      <keyword name="insert" link="insert.md" description="Ajouter des entrées à un dictionnaire."/>
+      <keyword name="isConfigured" link="isConfigured.md" description="Vérifie si le dictionnaire a des types assignés aux clés et aux valeurs."/>
+      <keyword name="isKey" link="isKey.md" description="Vérifie si le dictionnaire contient la clé"/>
+      <keyword name="keyHash" link="keyHash.md" description="Créer un code de hachage pour une clé de dictionnaire."/>
+      <keyword name="keyMatch" link="keyMatch.md" description="Vérifie si deux clés de dictionnaire sont identiques."/>
+      <keyword name="keys" link="keys.md" description="Clés du dictionnaire."/>
+      <keyword name="lookup" link="lookup.md" description="Trouver la valeur dans le dictionnaire par clé."/>
+      <keyword name="numEntries" link="numEntries.md" description="Nombre de paires clé-valeur dans le dictionnaire."/>
+      <keyword name="remove" link="remove.md" description="Supprimer des entrées du dictionnaire."/>
+      <keyword name="types" link="types.md" description="Types des clés et valeurs du dictionnaire."/>
+      <keyword name="values" link="values.md" description="Valeurs du dictionnaire."/>
+    </section>
+  </toc>
+</help_summary>

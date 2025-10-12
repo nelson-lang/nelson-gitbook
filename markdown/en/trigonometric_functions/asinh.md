@@ -16,7 +16,7 @@ Inverse hyperbolic sine function
 
 ## Description
 
-<b>cosh</b>computes the inverse hyperbolic sine in radians for each element of<b>x</b>.
+        cosh computes the inverse hyperbolic sine in radians for each element of x.
 
 ## Example
 

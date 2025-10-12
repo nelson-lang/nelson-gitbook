@@ -23,7 +23,8 @@ Checks a xml documentation file.
 ## Description
 
 <p>
-            <b>xmldocchecker</b> is a tool to check that a xml document is valid.</p>
+            xmldocchecker is a tool to check that a xml document is valid.</p>
+
 <p>Principally used to validate the structure and content of XML files against a defined schema.</p>
 
 ## Example

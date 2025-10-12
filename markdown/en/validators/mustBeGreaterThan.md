@@ -17,7 +17,7 @@ Checks that value is greater than another value or issue error.
 ## Description
 
 <p>
-            <b>mustBeGreaterThan</b> checks that value is greater than another value or issue error.</p>
+            mustBeGreaterThan checks that value is greater than another value or issue error.</p>
 
 ## Example
 

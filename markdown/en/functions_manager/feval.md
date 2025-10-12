@@ -22,7 +22,7 @@ Evaluates function.
 ## Description
 
 <p>
-            <b>function</b> calls the base function or built-in described by its name or function handle and input arguments.</p>
+            function calls the base function or built-in described by its name or function handle and input arguments.</p>
 
 ## Example
 

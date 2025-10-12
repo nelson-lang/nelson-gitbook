@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="tf"><a class="header" href="#tf">tf</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="tf"><a class="header" href="#tf">tf</a></h1>
 <p>Constructs a transfer function model.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -177,10 +178,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>sys = tf(numerator, denominator)</b> is used to create a continuous-time transfer function model.</p>
-<p>It is defined by specifying <b>numerator</b> and <b>denominator</b> of the transfer function.</p>
-<p>When you include the <b>Ts</b> parameter, it allows you to create a discrete-time transfer function.</p>
-<p>Setting <b>Ts</b> to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.</p>
+            sys = tf(numerator, denominator) is used to create a continuous-time transfer function model.</p>
+<p>It is defined by specifying numerator and denominator of the transfer function.</p>
+<p>When you include the Ts parameter, it allows you to create a discrete-time transfer function.</p>
+<p>Setting Ts to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">numerator = 10;
 denominator = [20, 33, 44];

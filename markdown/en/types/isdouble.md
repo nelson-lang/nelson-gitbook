@@ -16,7 +16,7 @@ Return true if variable var is a double matrix.
 
 ## Description
 
-<b>isdouble</b>returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
+        isdouble returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
 
 ## Examples
 

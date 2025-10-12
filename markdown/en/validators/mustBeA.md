@@ -17,7 +17,7 @@ Checks that input value comes from one of specified classes.
 ## Description
 
 <p>
-            <b>mustBeA</b> checks that input value comes from one of specified classes.</p>
+            mustBeA checks that input value comes from one of specified classes.</p>
 
 ## Example
 

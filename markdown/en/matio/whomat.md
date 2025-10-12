@@ -21,7 +21,7 @@ List variables in an valid .mat file.
 ## Description
 
 <p>
-            <b>whomat</b> lists variables in an valid .mat file.</p>
+            whomat lists variables in an valid .mat file.</p>
 
 ## Bibliography
 

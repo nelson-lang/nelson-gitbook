@@ -18,12 +18,16 @@ Convert table to structure array
 ## Description
 
 <p>
-            <b>S = table2struct(T)</b> converts the table <b>T</b> into a structure array <b>S</b>, where each variable in <b>T</b> is represented as a field in <b>S</b>.</p>
-<p>If <b>T</b> is an m-by-n table, <b>S</b> will be an m-by-1 structure array with n fields.</p>
-<p>the output <b>S</b> will not contain any table properties from <b>T.Properties</b>.</p>
+            S = table2struct(T) converts the table T into a structure array S, where each variable in T is represented as a field in S.</p>
+
+<p>If T is an m-by-n table, S will be an m-by-1 structure array with n fields.</p>
+
+<p>the output S will not contain any table properties from T.Properties.</p>
+
 <p>
-                <b>S = table2struct(T, "ToScalar", true)</b> converts the table <b>T</b> into a scalar structure <b>S</b>, where each variable in <b>T</b> becomes a field in <b>S</b>.</p>
-<p>If <b>T</b> is an m-by-n table, <b>S</b> will contain n fields, and each field will have m rows.</p>
+                S = table2struct(T, "ToScalar", true) converts the table T into a scalar structure S, where each variable in T becomes a field in S.</p>
+
+<p>If T is an m-by-n table, S will contain n fields, and each field will have m rows.</p>
 
 ## Example
 

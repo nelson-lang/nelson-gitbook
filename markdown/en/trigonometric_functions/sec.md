@@ -16,7 +16,7 @@ Secant of angle in radians.
 
 ## Description
 
-<b>sec</b>computes the secant of argument in radians for each element of<b>x</b>.
+        sec computes the secant of argument in radians for each element of x.
 
 ## Example
 

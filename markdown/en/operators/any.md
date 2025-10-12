@@ -21,7 +21,7 @@ any of the elements of a matrix satisfy some condition.
 ## Description
 
 <p>
-            <b>any</b> returns true if any of the elements of a matrix satisfy some condition.</p>
+            any returns true if any of the elements of a matrix satisfy some condition.</p>
 
 ## Example
 

@@ -20,9 +20,10 @@ Sparse normally distributed random matrix.
 ## Description
 
 <p>
-            <b>R = sprandn(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.</p>
+            R = sprandn(S) creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.</p>
+
 <p>
-                <b>R = sprandn(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density*m*n normally distributed nonzero entries for density in the interval [0,1].</p>
+                R = sprandn(m,n,density) creates a random m-by-n sparse matrix with approximately density*m*n normally distributed nonzero entries for density in the interval [0,1].</p>
 
 ## Examples
 

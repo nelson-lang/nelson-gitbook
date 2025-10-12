@@ -17,9 +17,11 @@ Convert number in base 16 to decimal.
 ## Description
 
 <p>
-            <b>hex2dec</b> converts number in base 16 to decimal.</p>
+            hex2dec converts number in base 16 to decimal.</p>
+
 <p>Note:</p>
-<p> - <b>hex2dec</b> and <b>dec2hex</b> are inverses of one another.</p>
+
+<p> - hex2dec and dec2hex are inverses of one another.</p>
 
 ## Example
 

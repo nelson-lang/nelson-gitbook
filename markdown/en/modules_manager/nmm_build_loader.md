@@ -14,7 +14,7 @@ helper's function to build main loader.m of an external module
 ## Description
 
 <p>
-            <b>nmm_build_loader</b> generates main loader.m of an external module.</p>
+            nmm_build_loader generates main loader.m of an external module.</p>
 
 ## Example
 

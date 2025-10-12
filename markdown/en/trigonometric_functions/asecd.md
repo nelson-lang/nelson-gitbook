@@ -16,7 +16,7 @@ Inverse secant of argument in degrees.
 
 ## Description
 
-<b>asecd</b>computes the inverse secant of argument in degrees for each element of<b>x</b>.
+        asecd computes the inverse secant of argument in degrees for each element of x.
 
 ## Example
 

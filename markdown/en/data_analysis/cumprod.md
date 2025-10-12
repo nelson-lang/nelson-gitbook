@@ -23,7 +23,7 @@ Cumulative product of array elements.
 ## Description
 
 <p>
-            <b>R = cumprod(M)</b> returns the cumulative product of the array elements of M.</p>
+            R = cumprod(M) returns the cumulative product of the array elements of M.</p>
 
 ## Example
 

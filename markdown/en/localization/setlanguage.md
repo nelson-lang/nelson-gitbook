@@ -13,7 +13,7 @@ Changes the language used in Nelson.
 ## Description
 
 <p>
-            <b>setlanguage</b> changes the language used by Nelson and saves this changes for subsequent runs of Nelson.</p>
+            setlanguage changes the language used by Nelson and saves this changes for subsequent runs of Nelson.</p>
 
 ## See also
 

@@ -19,8 +19,9 @@ Hours part of the input date and time.
 ## Description
 
 <p>
-            <b>h = hour(t)</b> extracts the hour component from each date and time specified in <b>t</b>.</p>
-<p>The output <b>h</b> is a double array containing integer values ranging from 0 to 23.</p>
+            h = hour(t) extracts the hour component from each date and time specified in t.</p>
+
+<p>The output h is a double array containing integer values ranging from 0 to 23.</p>
 
 ## Example
 

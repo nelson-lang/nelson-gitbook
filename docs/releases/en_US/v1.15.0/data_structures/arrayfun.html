@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="arrayfun"><a class="header" href="#arrayfun">arrayfun</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="arrayfun"><a class="header" href="#arrayfun">arrayfun</a></h1>
 <p>Apply a function to each element of an array.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -176,12 +177,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>arrayfun(func, A)</b> applies the function <b>func</b> to each element of array <b>A</b>, and returns the result in <b>B</b> with the same size as <b>A</b>.</p>
+            arrayfun(func, A) applies the function func to each element of array A, and returns the result in B with the same size as A.</p>
 <p>
-                <b>arrayfun(func, A1, ..., An)</b> applies <b>func</b> to corresponding elements of input arrays. All arrays must be the same size.</p>
-<p>Use the <b>'UniformOutput'</b> option set to <b>false</b> to allow output values that cannot be concatenated into a single array. In this case, the result is a cell array.</p>
+                arrayfun(func, A1, ..., An) applies func to corresponding elements of input arrays. All arrays must be the same size.</p>
+<p>Use the 'UniformOutput' option set to false to allow output values that cannot be concatenated into a single array. In this case, the result is a cell array.</p>
 <p>
-                    <b>[B1, ..., Bm] = arrayfun(...)</b> captures multiple outputs from the applied function.</p>
+                    [B1, ..., Bm] = arrayfun(...) captures multiple outputs from the applied function.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <p>Apply mean to structure field</p>
 <pre><code class="language-matlab">

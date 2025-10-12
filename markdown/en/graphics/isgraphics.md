@@ -19,7 +19,7 @@ Check for graphics object.
 ## Description
 
 <p>
-            <b>isgraphics</b> checks is variable is an graphics object.</p>
+            isgraphics checks is variable is an graphics object.</p>
 
 ## Example
 

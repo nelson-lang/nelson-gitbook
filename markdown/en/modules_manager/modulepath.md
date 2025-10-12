@@ -19,14 +19,17 @@ Returns path of a module.
 ## Description
 
 <p>
-            <b>modulepath</b> is an helper's function to return module root path or a subdirectory.</p>
+            modulepath is an helper's function to return module root path or a subdirectory.</p>
+
 <p>
-                <b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b>
+                modulepath('nelson') is equivalent to modulepath('nelson', 'root')
             </p>
+
 <p>
-                <b>modulepath('nelson', 'bin')</b> return path of nelson's executables.</p>
+                modulepath('nelson', 'bin') return path of nelson's executables.</p>
+
 <p>
-                    <b>modulepath('nelson', 'builtin')</b> returns path of nelson's dynamic libraries.</p>
+                    modulepath('nelson', 'builtin') returns path of nelson's dynamic libraries.</p>
 
 ## Example
 

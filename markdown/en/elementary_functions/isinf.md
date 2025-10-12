@@ -17,7 +17,7 @@ Check for Infinity entries.
 ## Description
 
 <p>
-            <b>isnan</b> returns a logical array which is true where elements of M are Infinity values.</p>
+            isnan returns a logical array which is true where elements of M are Infinity values.</p>
 
 ## Example
 

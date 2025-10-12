@@ -16,7 +16,7 @@ Inverse hyperbolic cosine.
 
 ## Description
 
-<b>acos</b>computes the inverse hyperbolic cosine.
+        acos computes the inverse hyperbolic cosine.
 
 ## Example
 

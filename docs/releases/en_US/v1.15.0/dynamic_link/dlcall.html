@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="dlcall"><a class="header" href="#dlcall">dlcall</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="dlcall"><a class="header" href="#dlcall">dlcall</a></h1>
 <p>C or Fortran Foreign function call.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,9 +173,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>dlcall</b> calls an external C or Fortran function loaded from an shared library.</p>
+            dlcall calls an external C or Fortran function loaded from an shared library.</p>
 <p>
-                <b>dlcall</b> validates input argument types before calling based on dlsym handle definition.</p>
+                dlcall validates input argument types before calling based on dlsym handle definition.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">lib = dlopen([modulepath('nelson', 'builtin'), '/libnlsDynamic_link', getdynlibext()]);
 V = double([1 2;3 4]);

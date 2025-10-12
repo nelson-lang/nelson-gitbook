@@ -22,7 +22,7 @@ Create string array without characters.
 ## Description
 
 <p>
-            <b>strings</b> returns a cell array of empty matrices.</p>
+            strings returns a cell array of empty matrices.</p>
 
 ## Example
 

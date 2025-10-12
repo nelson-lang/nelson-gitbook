@@ -16,7 +16,7 @@ Determine which characters are letters.
 
 ## Description
 
-<b>isletter</b>determines which characters are letters.
+        isletter determines which characters are letters.
 
 ## Examples
 

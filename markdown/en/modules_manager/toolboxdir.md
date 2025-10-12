@@ -17,7 +17,7 @@ Returns path of a module.
 ## Description
 
 <p>
-            <b>toolboxdir</b> is an helper's function to return module root path.</p>
+            toolboxdir is an helper's function to return module root path.</p>
 
 ## Example
 

@@ -21,7 +21,7 @@ dump the content of hdf5 file as text.
 ## Description
 
 <p>
-            <b>h5dump</b> dump the content of hdf5 file as text.</p>
+            h5dump dump the content of hdf5 file as text.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ Return true if variable var is a logical.
 
 ## Description
 
-<b>islogical</b>returns a logical 1 if the argument is a logical array and a logical 0 otherwise.
+        islogical returns a logical 1 if the argument is a logical array and a logical 0 otherwise.
 
 ## Examples
 

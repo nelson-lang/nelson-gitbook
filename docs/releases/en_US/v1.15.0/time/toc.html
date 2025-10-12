@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="toc"><a class="header" href="#toc">toc</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="toc"><a class="header" href="#toc">toc</a></h1>
 <p>Read the stopwatch timer.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,7 +174,7 @@
 <li>t - a double: number of seconds since last call to tic function (Precision in order of millisecond).</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
+<p>The sequence of commands tic(); commands ; t = toc()returns the number of seconds required for the commands.</p>
 <p>Consecutive calls to the toc function with no input return the elapsed since the most recent tic.</p>
 <p>Consecutive calls to the toc function with the same timerVal input return the elapsed time since the tic function call that corresponds to that input.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>

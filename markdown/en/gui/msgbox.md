@@ -25,9 +25,10 @@ Creates a message dialog box.
 ## Description
 
 <p>
-            <b>msgbox</b> creates an message dialog box.</p>
+            msgbox creates an message dialog box.</p>
+
 <p>
-                <b>h = msgbox(message, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+                h = msgbox(message, title, 'on') specifies whether to replace an existing dialog box having the same name.</p>
 
 ## Examples
 

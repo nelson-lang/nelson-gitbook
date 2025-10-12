@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>operators</module>
+    <section name="Opérateurs">
+      <chapter_description>
+        <p>Le module Operators fournit des outils pour effectuer des opérations arithmétiques, logiques, relationnelles et sur tableaux dans Nelson.</p>
+        <p>Il prend en charge les calculs élément par élément et matriciels, la concaténation, l'indexation et l'affectation par indices, ainsi que les opérations logiques à court-circuit.</p>
+        <p>Ce module permet une manipulation flexible des structures de données et des tableaux numériques, constituant la base des calculs simples comme des expressions mathématiques avancées.</p>
+    </chapter_description>
+      <keyword name="all" link="all.md" description="all of the elements of a matrix satisfy some condition."/>
+      <keyword name="and" link="and.md" description="opérateur logique 'AND', &amp;"/>
+      <keyword name="any" link="any.md" description="Vérifie si au moins un élément d'une matrice satisfait une condition."/>
+      <keyword name="bitand" link="bitand.md" description="Opération ET bit à bit"/>
+      <keyword name="bitor" link="bitor.md" description="Opération OR bit à bit"/>
+      <keyword name="bitxor" link="bitxor.md" description="Opération XOR bit à bit"/>
+      <keyword name="cat" link="cat.md" description="Concatène des tableaux."/>
+      <keyword name="colon" link="colon.md" description="Opérateur deux-points ':'"/>
+      <keyword name="ctranspose" link="ctranspose.md" description="Renvoie la transposée conjuguée complexe : opérateur '"/>
+      <keyword name="eq" link="eq.md" description="égalité, opérateur =="/>
+      <keyword name="ge" link="ge.md" description="supérieur ou égal, opérateur &gt;="/>
+      <keyword name="gt" link="gt.md" description="supérieur à, opérateur &gt;"/>
+      <keyword name="horzcat" link="horzcat.md" description="Concaténation horizontale."/>
+      <keyword name="ismember" link="ismember.md" description="Éléments d'un tableau présents dans un autre tableau."/>
+      <keyword name="ldivide" link="ldivide.md" description="Division gauche, opérateur .\"/>
+      <keyword name="le" link="le.md" description="inférieur ou égal, opérateur &lt;="/>
+      <keyword name="lt" link="lt.md" description="inférieur à, opérateur &lt;"/>
+      <keyword name="minus" link="minus.md" description="Soustraction, opérateur -"/>
+      <keyword name="mldivide" link="mldivide.md" description="Division matricielle gauche, opérateur \"/>
+      <keyword name="mpower" link="mpower.md" description="Puissance matricielle, opérateur ^"/>
+      <keyword name="mrdivide" link="mrdivide.md" description="Division matricielle à droite, opérateur /."/>
+      <keyword name="mtimes" link="mtimes.md" description="Multiplication matricielle, opérateur *"/>
+      <keyword name="ne" link="ne.md" description="Inégalité, opérateur ~="/>
+      <keyword name="not" link="not.md" description="négation logique, opérateur ~"/>
+      <keyword name="or" link="or.md" description="Opérateur logique 'OU', |"/>
+      <keyword name="plus" link="plus.md" description="Addition, opérateur +"/>
+      <keyword name="power" link="power.md" description="Puissance élément par élément, opérateur .^"/>
+      <keyword name="rdivide" link="rdivide.md" description="Division droite, opérateur ./"/>
+      <keyword name="shortcutand" link="shortcutand.md" description="Opérateur AND à court-circuit, &amp;&amp;"/>
+      <keyword name="shortcutor" link="shortcutor.md" description="Opérateur OR à court-circuit, ||"/>
+      <keyword name="subsasgn" link="subsasgn.md" description="Redéfinir l'affectation par indice."/>
+      <keyword name="subsindex" link="subsindex.md" description="Convertir un objet en vecteur d'indices."/>
+      <keyword name="subsref" link="subsref.md" description="Référence par indice."/>
+      <keyword name="mtimes" link="times.md" description="Multiplication élément par élément, opérateur .*"/>
+      <keyword name="transpose" link="transpose.md" description="Retourne la transposée d'un vecteur ou d'une matrice : opérateur .'"/>
+      <keyword name="uminus" link="uminus.md" description="Unaire moins, opérateur -"/>
+      <keyword name="uplus" link="uplus.md" description="Unaire plus, opérateur +"/>
+      <keyword name="vertcat" link="vertcat.md" description="Concaténation verticale."/>
+    </section>
+  </toc>
+</help_summary>

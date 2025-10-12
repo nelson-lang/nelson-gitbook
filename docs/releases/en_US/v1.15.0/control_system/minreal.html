@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="minreal"><a class="header" href="#minreal">minreal</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="minreal"><a class="header" href="#minreal">minreal</a></h1>
 <p>Minimal realization or pole-zero cancellation.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -180,9 +181,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>minreal</b> function reduces state-space models by eliminating uncontrollable or unobservable states.</p>
+            minreal function reduces state-space models by eliminating uncontrollable or unobservable states.</p>
 <p>In transfer functions or zero-pole-gain models, it cancels pole-zero pairs. The resulting model maintains the same response characteristics as the original model but with minimal order.</p>
-<p> When using <b>sysOut = minreal(sysIn, tol)</b>, you can customize the tolerance for state elimination or pole-zero cancellation.</p>
+<p> When using sysOut = minreal(sysIn, tol), you can customize the tolerance for state elimination or pole-zero cancellation.</p>
 <p>The default tolerance is set to sqrt(eps), and increasing this value prompts more aggressive cancellations, potentially further simplifying the model.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">sysIn = ss([1 0;0 -2], [-1;0], [2 1], 0, 3.2);

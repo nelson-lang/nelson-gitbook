@@ -21,22 +21,38 @@ Return classname of object or creates a named object.
 ## Description
 
 <p>
-            <b>name = class(var)</b> returns the class of var variable.</p>
+            name = class(var) returns the class of var variable.</p>
+
 <p>Standard classes are:</p>
+
 <p>'cell'</p>
+
 <p>'struct'</p>
+
 <p>'single'</p>
+
 <p>'double'</p>
+
 <p>'logical'</p>
+
 <p>'char'</p>
+
 <p>'int8'</p>
+
 <p>'int16'</p>
+
 <p>'int32'</p>
+
 <p>'int64'</p>
+
 <p>'uint8'</p>
+
 <p>'uint16'</p>
+
 <p>'uint32'</p>
+
 <p>'uint64'</p>
+
 <p>'function_handle'</p>
 
 ## Examples

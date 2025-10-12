@@ -17,7 +17,7 @@ Returns the offset of the current byte relative to the beginning of a file.
 ## Description
 
 <p>
-            <b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.</p>
+            ftell returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.</p>
 
 ## Example
 

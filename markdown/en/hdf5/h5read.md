@@ -18,7 +18,7 @@ Read HDF5 data set.
 ## Description
 
 <p>
-            <b>h5read</b> reads data set in <b>location</b> from the HDF5 file.</p>
+            h5read reads data set in location from the HDF5 file.</p>
 
 ## Example
 

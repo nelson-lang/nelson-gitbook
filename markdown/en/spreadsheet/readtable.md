@@ -19,9 +19,10 @@ Create table from file.
 ## Description
 
 <p>
-            <b>T = readtable(filename)</b> creates a table by importing column-oriented data from a text or spreadsheet file.</p>
+            T = readtable(filename) creates a table by importing column-oriented data from a text or spreadsheet file.</p>
+
 <p>
-                <b>T = readtable(filename, opts)</b> creates a table using the settings defined in the <b>opts</b> import options object. The import <b>options</b> object allows you to customize how <b>readtable</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
+                T = readtable(filename, opts) creates a table using the settings defined in the opts import options object. The import options object allows you to customize how readtable interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
 
 ## Examples
 

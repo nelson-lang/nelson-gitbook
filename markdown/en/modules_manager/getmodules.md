@@ -17,7 +17,8 @@ Returns list of modules loaded in Nelson.
 ## Description
 
 <p>
-            <b>getmodules</b> returns list of modules loaded in Nelson.</p>
+            getmodules returns list of modules loaded in Nelson.</p>
+
 <p>all core's modules are protected and cannot removed during an nelson's session.</p>
 
 ## Example

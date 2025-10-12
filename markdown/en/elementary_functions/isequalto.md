@@ -19,7 +19,7 @@ Return true if all arguments x1, x2, ... , xn are equal (same type, same dimensi
 
 ## Description
 
-<b>isequalto</b>returns true if x1 and x2 are the same type, same size and same values; otherwise, it returns false.
+        isequalto returns true if x1 and x2 are the same type, same size and same values; otherwise, it returns false.
 
 ## Example
 

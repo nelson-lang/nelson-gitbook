@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="maxnumcompthreads"><a class="header" href="#maxnumcompthreads">maxNumCompThreads</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="maxnumcompthreads"><a class="header" href="#maxnumcompthreads">maxNumCompThreads</a></h1>
 <p>Set/Get maximum number of computional threads.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,11 +175,11 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>maxNumCompThreads</b> returns the number of threads used by Nelson for computations.</p>
+            maxNumCompThreads returns the number of threads used by Nelson for computations.</p>
 <p>
-                <b>maxNumCompThreads(T)</b> sets the maximum number of computational threads. This modification is only available for current session.</p>
+                maxNumCompThreads(T) sets the maximum number of computational threads. This modification is only available for current session.</p>
 <p>By default, maxNumCompThreads uses OMP_NUM_THREADS environment variable or numbers of detected physical cores on Windows and logical cores on others platforms.</p>
-<p>Limitation: On Windows 32 bits, due to MKL and OpenMP, <b>maxNumCompThreads</b> returns 4 max even if there is more core.</p>
+<p>Limitation: On Windows 32 bits, due to MKL and OpenMP, maxNumCompThreads returns 4 max even if there is more core.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">maxNumCompThreads
 </code></pre>

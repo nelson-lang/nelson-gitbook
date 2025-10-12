@@ -19,7 +19,7 @@ Convert decimal number to base 2.
 ## Description
 
 <p>
-            <b>dec2bin</b> converts decimal number to base 2.</p>
+            dec2bin converts decimal number to base 2.</p>
 
 ## Example
 

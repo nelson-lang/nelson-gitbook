@@ -9,7 +9,7 @@ conditional statement.
 ## Description
 
 <p>
-            <b>if</b> and <b>else</b> statements form a control structure for conditional execution.</p>
+            if and else statements form a control structure for conditional execution.</p>
 
 ## Example
 

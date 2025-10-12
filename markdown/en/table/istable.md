@@ -17,7 +17,7 @@ Determine if input is table.
 ## Description
 
 <p>
-            <b>tf = istable(A)</b> returns <b>true</b> if <b>A</b> is a table, and <b>false</b> if it is not.</p>
+            tf = istable(A) returns true if A is a table, and false if it is not.</p>
 
 ## Example
 

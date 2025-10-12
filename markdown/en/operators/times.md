@@ -19,7 +19,7 @@ Element wise multiplication, .\* operator
 ## Description
 
 <p>
-            <b>C = times(A, B)</b> performs element wise multiplication operation: A .* B.</p>
+            C = times(A, B) performs element wise multiplication operation: A .* B.</p>
 
 ## Examples
 

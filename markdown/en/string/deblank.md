@@ -17,9 +17,10 @@ Remove trailing whitespace.
 ## Description
 
 <p>
-            <b>deblank</b> removes trailing whitespace.</p>
+            deblank removes trailing whitespace.</p>
+
 <p>
-                <b>deblank</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).</p>
+                deblank does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).</p>
 
 ## Examples
 

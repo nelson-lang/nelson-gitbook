@@ -18,7 +18,7 @@ Compares first n characters of strings (case sensitive).
 
 ## Description
 
-<b>strncmpi</b>compares the first n characters of two strings (case insensitive).
+        strncmpi compares the first n characters of two strings (case insensitive).
 
 ## Example
 

@@ -17,7 +17,14 @@ Convert a magnitude to decibels (dB).
 ## Description
 
 <p>
-            <b>db = mag2db(mag)</b> returns corresponding values in decibels.</p>
+            db = mag2db(mag) converts magnitude values to decibels (dB).
+        </p>
+
+<p>The conversion formula is:</p>
+
+$$\text{dB} = 20 \log_{10}(\text{magnitude})$$
+
+<p>This conversion is commonly used in signal processing, acoustics, and electronics to express ratios on a logarithmic scale.</p>
 
 ## Example
 

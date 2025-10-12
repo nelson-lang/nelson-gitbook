@@ -18,7 +18,7 @@ Sky colormap array.
 ## Description
 
 <p>
-            <b>sky</b> returns the colormap with sky colors.</p>
+            sky returns the colormap with sky colors.</p>
 
 ## Example
 

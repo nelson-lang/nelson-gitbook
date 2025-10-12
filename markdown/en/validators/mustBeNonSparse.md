@@ -16,7 +16,7 @@ Checks that value is not sparse.
 ## Description
 
 <p>
-            <b>mustBeNonSparse</b> checks that value is not sparse or raise an error.</p>
+            mustBeNonSparse checks that value is not sparse or raise an error.</p>
 
 ## Example
 

@@ -20,8 +20,9 @@ Matrix to String.
 ## Description
 
 <p>
-            <b>mat2str</b> converts a matrix to a string.</p>
-<p>This string may be used to reconstruct the original matrix with <b>execstr</b> function.</p>
+            mat2str converts a matrix to a string.</p>
+
+<p>This string may be used to reconstruct the original matrix with execstr function.</p>
 
 ## Example
 

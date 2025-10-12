@@ -17,7 +17,7 @@ Imaginary part of an complex number.
 ## Description
 
 <p>
-            <b>R = imag(M)</b> Return the imaginary part of M.</p>
+            R = imag(M) Return the imaginary part of M.</p>
 
 ## Example
 

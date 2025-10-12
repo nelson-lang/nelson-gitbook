@@ -17,6 +17,7 @@ Load a QML file and creates a window.
 ## Description
 
 <p>Load a QML file</p>
+
 <p>It creates a QML component, a window, and load .qml file.</p>
 
 ## Example

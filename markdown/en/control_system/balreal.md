@@ -21,8 +21,9 @@ Gramian-based balancing of state-space realizations.
 ## Description
 
 <p>
-            <b>balreal(sys)</b> calculates a balanced realization, denoted as <b>sysb</b>, for the stable segment of the linear time-invariant (LTI) model <b>sys</b>.</p>
-<p>This process is applicable to both continuous and discrete systems. If <b>sys</b> is not initially in state-space form, the function automatically converts it to state space using <b>ss</b> before proceeding with the balanced realization.</p>
+            balreal(sys) calculates a balanced realization, denoted as sysb, for the stable segment of the linear time-invariant (LTI) model sys.</p>
+
+<p>This process is applicable to both continuous and discrete systems. If sys is not initially in state-space form, the function automatically converts it to state space using ss before proceeding with the balanced realization.</p>
 
 ## Example
 

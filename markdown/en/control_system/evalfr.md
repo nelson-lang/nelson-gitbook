@@ -17,7 +17,7 @@ Evaluate frequency response at given frequency.
 
 ## Description
 
-<p>The function <b>evalfr(sys, f)</b> computes the value of the transfer function for a given system model represented by <b>sys</b> at the complex number <b>f</b>.</p>
+<p>The function evalfr(sys, f) computes the value of the transfer function for a given system model represented by sys at the complex number f.</p>
 
 ## Example
 

@@ -13,7 +13,8 @@ Returns an error if module is not loaded in Nelson.
 ## Description
 
 <p>
-            <b>requiremodule</b> returns an error if desired module is not loaded.</p>
+            requiremodule returns an error if desired module is not loaded.</p>
+
 <p>This function is usefull to verify a dependency on another module.</p>
 
 ## Example

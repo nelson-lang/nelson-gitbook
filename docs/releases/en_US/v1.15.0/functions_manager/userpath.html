@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="userpath"><a class="header" href="#userpath">userpath</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="userpath"><a class="header" href="#userpath">userpath</a></h1>
 <p>Displays or modify default user functions directory.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -176,8 +177,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>userpath</b> modifies or displays user’s load path.</p>
-<p>By default, <b>userpath</b> directory is platform-dependant:</p>
+            userpath modifies or displays user’s load path.</p>
+<p>By default, userpath directory is platform-dependant:</p>
 <p>Windows platforms: %USERPROFILE%/Documents/Nelson</p>
 <p>Others platforms: $home/Documents/Nelson</p>
 <p>It is possible to force userpath by define an environment variable: NELSON_USERPATH with an existing path.</p>

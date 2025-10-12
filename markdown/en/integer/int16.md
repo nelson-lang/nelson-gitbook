@@ -17,7 +17,8 @@ Converts to 16-bit signed integer.
 ## Description
 
 <p>
-            <b>int16</b> converts value to 16-bit integer type.</p>
+            int16 converts value to 16-bit integer type.</p>
+
 <p>The value is rounded to the nearest int16 value on conversion. A value that is above or below the range for an int16 class is mapped to one of the endpoints of the range [-32768, 32767].</p>
 
 ## Example

@@ -17,7 +17,7 @@ Matrix inverse.
 ## Description
 
 <p>
-            <b>inv(x)</b> computes the matrix inverse of x.</p>
+            inv(x) computes the matrix inverse of x.</p>
 
 ## Example
 

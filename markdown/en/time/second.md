@@ -19,8 +19,9 @@ Seconds part of the input date and time.
 ## Description
 
 <p>
-            <b>s = second(t)</b> extracts the second component from each date and time specified in <b>t</b>.</p>
-<p>The output <b>s</b> is a double array containing integer values ranging from 0 to 59.</p>
+            s = second(t) extracts the second component from each date and time specified in t.</p>
+
+<p>The output s is a double array containing integer values ranging from 0 to 59.</p>
 
 ## Example
 

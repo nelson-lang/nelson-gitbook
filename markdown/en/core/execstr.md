@@ -19,12 +19,14 @@ Execute Nelson code in strings.
 ## Description
 
 <p>
-            <b>execstr</b> executes Nelson instructions given in a string.</p>
+            execstr executes Nelson instructions given in a string.</p>
+
 <p>
-                <b>execstr(str, 'nocatch')</b> is equivalent to <b>execstr(str)</b>
+                execstr(str, 'nocatch') is equivalent to execstr(str)
             </p>
+
 <p>
-                <b>execstr</b> can be used as alternative to <b>try ... catch ... end</b> block.</p>
+                execstr can be used as alternative to try ... catch ... end block.</p>
 
 ## Examples
 

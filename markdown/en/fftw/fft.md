@@ -21,7 +21,7 @@ Fast Fourier transform.
 ## Description
 
 <p>
-            <b>fft(X)</b> computes the discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
+            fft(X) computes the discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
 
 ## Example
 

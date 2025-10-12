@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="assert_isequal"><a class="header" href="#assert_isequal">assert_isequal</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="assert_isequal"><a class="header" href="#assert_isequal">assert_isequal</a></h1>
 <p>Check that computed and expected values are equal.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -165,34 +166,52 @@
 </ul>
 <h2 id="input-argument"><a class="header" href="#input-argument">Input argument</a></h2>
 <ul>
-<li>computed - a value</li>
-<li>expected - a value</li>
+<li>computed - a value of any type to be tested for equality.</li>
+<li>expected - a value of any type representing the expected result.</li>
 </ul>
 <h2 id="output-argument"><a class="header" href="#output-argument">Output argument</a></h2>
 <ul>
-<li>res - a logical value</li>
-<li>msg - a string value, the error message. If res == true, then errormsg == ''. If res == false, then msg contains the error message.</li>
+<li>res - a logical value: true if values are equal, false otherwise.</li>
+<li>msg - a string containing the error message. If res == true, then msg == ''. If res == false, then msg contains the assertion failure message.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p><b>assert_isequal</b>raises an error if computed value is not equal to expected value (same type, same dimensions, same values comparaisons).</p>
+<p>assert_isequal raises an error if the computed value is not equal to the expected value.</p>
+<p>This function performs strict equality testing that checks for same type, same dimensions, and same values comparisons. It uses the same logic as the isequaln function.</p>
+<p>Unlike standard equality operators, this function properly handles NaN values, considering them equal when both values contain NaN in the same positions.</p>
+<p>This function is essential for unit testing to verify that computed results match expected outcomes exactly.</p>
 <h2 id="bibliography"><a class="header" href="#bibliography">Bibliography</a></h2>
 <p>"Automated Software Testing for Matlab", Steven Eddins, 2009</p>
 <h2 id="used-functions"><a class="header" href="#used-functions">Used function(s)</a></h2>
 <p>isequaln</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
+<p>Test equality of identical matrices:</p>
 <pre><code class="language-matlab">A = eye(3, 3);
 assert_isequal(A, A)
 </code></pre>
+<p>Test that demonstrates type mismatch detection:</p>
 <pre><code class="language-matlab">A = eye(3, 3);
 B = single(A);
-assert_isequal(A, B)
+try
+    assert_isequal(A, B)
+catch ME
+    disp(['Error: ' ME.message])
+end
 </code></pre>
+<p>Test NaN equality handling:</p>
 <pre><code class="language-matlab">A = NaN;
 B = A;
 assert_isequal(A, B)
 </code></pre>
+<p>Using return values to handle assertion results:</p>
+<pre><code class="language-matlab">[res, msg] = assert_isequal([1, 2, 3], [1, 2, 4]);
+if res
+    disp('Values are equal')
+else
+    disp(['Values are not equal: ' msg])
+end
+</code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
-<p><a href="../elementary_functions/isequaln.html">isequaln</a>.</p>
+<p><a href="../elementary_functions/isequaln.html">isequaln</a>, <a href="../assert_functions/assert_isapprox.html">assert_isapprox</a>, <a href="../assert_functions/assert_istrue.html">assert_istrue</a>, <a href="../assert_functions/assert_isfalse.html">assert_isfalse</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>

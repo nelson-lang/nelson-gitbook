@@ -16,7 +16,7 @@ string array constructor.
 
 ## Description
 
-<b>string</b>converts input into string array.
+        string converts input into string array.
 
 ## Examples
 

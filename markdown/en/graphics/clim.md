@@ -24,7 +24,7 @@ Set colormap limits.
 ## Description
 
 <p>
-            <b>clim</b> set or get colormap limits.</p>
+            clim set or get colormap limits.</p>
 
 ## Examples
 

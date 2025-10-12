@@ -17,8 +17,9 @@ Absolute value
 ## Description
 
 <p>
-            <b>abs</b> computes the absolute value.</p>
-<p>If input argument is a complex number, <b>abs</b> computes the complex magnitude.</p>
+            abs computes the absolute value.</p>
+
+<p>If input argument is a complex number, abs computes the complex magnitude.</p>
 
 ## Example
 

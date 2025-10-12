@@ -17,7 +17,7 @@ Convert power to decibel.
 ## Description
 
 <p>
-            <b>db = pow2db(pow)</b> returns corresponding values in decibels.</p>
+            db = pow2db(pow) returns corresponding values in decibels.</p>
 
 ## Example
 

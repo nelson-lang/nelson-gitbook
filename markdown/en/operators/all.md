@@ -21,7 +21,7 @@ all of the elements of a matrix satisfy some condition.
 ## Description
 
 <p>
-            <b>all</b> returns true if all of the elements of a matrix satisfy some condition.</p>
+            all returns true if all of the elements of a matrix satisfy some condition.</p>
 
 ## Example
 

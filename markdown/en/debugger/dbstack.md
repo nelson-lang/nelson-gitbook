@@ -22,9 +22,10 @@ call stack.
 ## Description
 
 <p>
-            <b>dbstack</b> displays the file names and line numbers of the function calls.</p>
+            dbstack displays the file names and line numbers of the function calls.</p>
+
 <p>
-                <b>dbstack('-completenames')</b> displays the full file names.</p>
+                dbstack('-completenames') displays the full file names.</p>
 
 ## Example
 

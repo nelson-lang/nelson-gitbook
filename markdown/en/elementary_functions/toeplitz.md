@@ -19,9 +19,10 @@ Toeplitz matrix
 ## Description
 
 <p>
-            <b>T = toeplitz(c, r)</b> returns the Toeplitz matrix whose first row is <b>r</b> and first column is <b>c</b>.</p>
+            T = toeplitz(c, r) returns the Toeplitz matrix whose first row is r and first column is c.</p>
+
 <p>
-                <b>T = toeplitz(c)</b> returns the symmetric Toeplitz matrix.</p>
+                T = toeplitz(c) returns the symmetric Toeplitz matrix.</p>
 
 ## Bibliography
 

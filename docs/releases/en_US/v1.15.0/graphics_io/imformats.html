@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="imformats"><a class="header" href="#imformats">imformats</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="imformats"><a class="header" href="#imformats">imformats</a></h1>
 <p>Manage supported image formats.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,13 +175,28 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>imformats</b> returns the list of supported image formats.</p>
+            imformats returns the list of supported image formats.</p>
 <p>
-                <b>formats = imformats()</b> returns the list of supported image formats in a structure array.</p>
+                formats = imformats() returns the list of supported image formats in a structure array.</p>
 <p>
-                    <b>format = imformats(ext)</b> returns the structure of the image format corresponding to the extension <b>ext</b>.</p>
+                    format = imformats(ext) returns the structure of the image format corresponding to the extension ext.</p>
 <p>Each element of the structure array contains the fields:</p>
-ext: file format extension isa: function handle to test if the file format is supported info: function handle to get information about the file format description: file format description read: function handle to read the file format write: function handle to write the file format alpha: logical scalar indicating if the file format supports transparency multipage: logical scalar indicating if the file format supports multipage images
+<pre><code>                        ext: file format extension
+
+                            isa: function handle to test if the file format is supported
+
+                                info: function handle to get information about the file format
+
+                                    description: file format description
+
+                                        read: function handle to read the file format
+
+                                            write: function handle to write the file format
+
+                                                alpha: logical scalar indicating if the file format supports transparency
+
+                                                    multipage: logical scalar indicating if the file format supports multipage images
+</code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">imformats()
 </code></pre>

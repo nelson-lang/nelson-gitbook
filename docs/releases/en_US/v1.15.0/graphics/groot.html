@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="groot"><a class="header" href="#groot">groot</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="groot"><a class="header" href="#groot">groot</a></h1>
 <p>graphic root object.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -167,28 +168,28 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>groot</b> returns graphic root object.</p>
+            groot returns graphic root object.</p>
 <p>Properties:</p>
 <p>
-                <b>Children</b>: Array of available figure objects.</p>
+                Children: Array of available figure objects.</p>
 <p>
-                    <b>CurrentFigure</b>: Current figure graphics object.</p>
+                    CurrentFigure: Current figure graphics object.</p>
 <p>
-                        <b>Parent</b>: empty array (No parent)</p>
+                        Parent: empty array (No parent)</p>
 <p>
-                            <b>PointerLocation</b>: Current location of pointer.</p>
+                            PointerLocation: Current location of pointer.</p>
 <p>
-                                <b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
+                                ScreenDepth: Number of bits that define each pixel color.</p>
 <p>
-                                    <b>ScreenSize</b>: Size of primary display (vector).</p>
+                                    ScreenSize: Size of primary display (vector).</p>
 <p>
-                                        <b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
+                                        Tag: Object identifier: string scalar, character vector, '' (default).</p>
 <p>
-                                            <b>Type</b>: Type 'root'.</p>
+                                            Type: Type 'root'.</p>
 <p>
-                                                <b>Units</b>: 'pixels'.</p>
+                                                Units: 'pixels'.</p>
 <p>
-                                                    <b>UserData</b>: User data: array or [] (default).</p>
+                                                    UserData: User data: array or [] (default).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">g = groot()
 g.ScreenDepth

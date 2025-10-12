@@ -9,7 +9,7 @@ Shows Nelson banner.
 ## Description
 
 <p>
-            <b>banner</b> shows Nelson banner.</p>
+            banner shows Nelson banner.</p>
 
 ## Example
 

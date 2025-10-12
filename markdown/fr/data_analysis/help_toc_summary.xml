@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>data_analysis</module>
+    <section name="Analyse de données">
+      <chapter_description>
+       <p>Le module Analyse de données fournit des outils pour effectuer des opérations numériques et des analyses basées sur des tableaux dans Nelson.</p>
+       <p>Il prend en charge les opérations cumulatives, le tri, l'agrégation, la convolution et l'identification des valeurs uniques ou manquantes.</p>
+       <p>Ce module permet un traitement, un résumé et une exploration efficaces des jeux de données, facilitant un large éventail de tâches analytiques et computationnelles.</p>
+    </chapter_description>
+      <keyword name="conv" link="conv.md" description="Convolution et multiplication de polynômes."/>
+      <keyword name="conv2" link="conv2.md" description="Convolution 2D."/>
+      <keyword name="cumprod" link="cumprod.md" description="Produit cumulatif des éléments d'un tableau."/>
+      <keyword name="cumsum" link="cumsum.md" description="Somme cumulative des éléments d'un tableau."/>
+      <keyword name="ismissing" link="ismissing.md" description="Vérifier les valeurs manquantes."/>
+      <keyword name="issorted" link="issorted.md" description="Détermine si un tableau est trié."/>
+      <keyword name="max" link="max.md" description="Valeurs maximales d'un tableau."/>
+      <keyword name="min" link="min.md" description="Valeurs minimales d'un tableau."/>
+      <keyword name="prod" link="prod.md" description="Produit des éléments d'un tableau."/>
+      <keyword name="sort" link="sort.md" description="Trier les éléments d'un tableau (algorithme de tri rapide)."/>
+      <keyword name="sum" link="sum.md" description="Somme des éléments d'un tableau."/>
+      <keyword name="unique" link="unique.md" description="Valeurs uniques."/>
+    </section>
+  </toc>
+</help_summary>

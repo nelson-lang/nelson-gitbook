@@ -18,7 +18,7 @@ Prism colormap array.
 ## Description
 
 <p>
-            <b>prism</b> returns the colormap with prism colors.</p>
+            prism returns the colormap with prism colors.</p>
 
 ## Example
 

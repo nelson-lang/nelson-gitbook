@@ -16,7 +16,7 @@ Checks that input path refers to folder.
 ## Description
 
 <p>
-            <b>mustBeFolder</b> checks that input path refers to folder or raise an error.</p>
+            mustBeFolder checks that input path refers to folder or raise an error.</p>
 
 ## Example
 

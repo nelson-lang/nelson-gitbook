@@ -18,7 +18,7 @@ Random permutation of integers values.
 ## Description
 
 <p>
-            <b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.</p>
+            p = randperm(n) returns a row vector containing a random permutation of 1:n.</p>
 
 ## Example
 

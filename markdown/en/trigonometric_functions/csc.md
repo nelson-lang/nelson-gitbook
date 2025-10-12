@@ -16,7 +16,7 @@ Cosecant of input angle in radians.
 
 ## Description
 
-<b>csc</b>computes the cosecant of argument in radians for each element of<b>x</b>.
+        csc computes the cosecant of argument in radians for each element of x.
 
 ## Example
 

@@ -17,8 +17,9 @@ Converts a string to double.
 ## Description
 
 <p>
-            <b>str2double</b> converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type.</p>
-<p>If <b>str2double</b> cannot convert string to a number, then it returns a Not An Number value.</p>
+            str2double converts any complex number as a whole into a complex numeric field, converting the real and imaginary parts to the specified numeric type.</p>
+
+<p>If str2double cannot convert string to a number, then it returns a Not An Number value.</p>
 
 ## Example
 

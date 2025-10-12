@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="writetable"><a class="header" href="#writetable">writetable</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="writetable"><a class="header" href="#writetable">writetable</a></h1>
 <p>Write table to file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,14 +171,39 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>writetable(T)</b> writes the table <b>T</b> to a comma-delimited text file.</p>
+            writetable(T) writes the table T to a comma-delimited text file.</p>
 <p>The file name is derived from the table's workspace variable name, with the .txt extension appended.</p>
 <p>If the file name cannot be derived from the table name, the default file name table.txt is used.</p>
 <p>Output formats supported:</p>
-Text files: Each variable in T becomes a column, and variable names serve as column headers in the first line. XML files: Each variable in T becomes an XML node, with variable names as element node names.<p>To specify the file name explicitly, use <b>writetable(T, filename)</b>. The file format is determined by the file extension:</p>
-.txt, .dat, .csv: Delimited text files. .xml: XML files.<p>
-                                <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:</p>
-WriteRowNames: Include row names in the output file (default: false). FileType: Specify file format ('text' or 'xml'). WriteVariableNames: Include variable names as column headings in text files (default: true). WriteMode: Specify writing mode ('overwrite' or 'append'). Delimiter: Define the field delimiter for text files (',', '\t', etc.). QuoteStrings: Control how text is quoted in text files ('minimal', 'all', or 'none'). AttributeSuffix: Specify attribute suffix for XML files (default: 'Attribute'). RowNodeName: Specify XML row node names (default: 'row'). TableNodeName: Specify XML root node name (default: 'table').
+<pre><code>                Text files: Each variable in T becomes a column, and variable names serve as column headers in the first line.
+
+                    XML files: Each variable in T becomes an XML node, with variable names as element node names.
+</code></pre>
+<p>To specify the file name explicitly, use writetable(T, filename). The file format is determined by the file extension:</p>
+<pre><code>                        .txt, .dat, .csv: Delimited text files.
+
+                            .xml: XML files.
+</code></pre>
+<p>
+                                Additional options: Use writetable(..., Name, Value) for customization:</p>
+<pre><code>                                    WriteRowNames: Include row names in the output file (default: false).
+
+                                        FileType: Specify file format ('text' or 'xml').
+
+                                            WriteVariableNames: Include variable names as column headings in text files (default: true).
+
+                                                WriteMode: Specify writing mode ('overwrite' or 'append').
+
+                                                    Delimiter: Define the field delimiter for text files (',', '\t', etc.).
+
+                                                        QuoteStrings: Control how text is quoted in text files ('minimal', 'all', or 'none').
+
+                                                            AttributeSuffix: Specify attribute suffix for XML files (default: 'Attribute').
+
+                                                                RowNodeName: Specify XML row node names (default: 'row').
+
+                                                                    TableNodeName: Specify XML root node name (default: 'table').
+</code></pre>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <p>Examples demonstrating various usages of writetable.</p>
 <pre><code class="language-matlab">T = table([1; 2; 3], {'A'; 'B'; 'C'}, [10.5; 20.7; 30.2], 'VariableNames', {'ID', 'Name', 'Value'});

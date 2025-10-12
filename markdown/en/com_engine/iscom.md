@@ -17,7 +17,7 @@ Determine whether input is COM or ActiveX object.
 ## Description
 
 <p>
-            <b>r = iscom(h)</b> returns logical true if handle h is a COM or a Microsoft® ActiveX® object. Otherwise, it returns false.</p>
+            r = iscom(h) returns logical true if handle h is a COM or a Microsoft® ActiveX® object. Otherwise, it returns false.</p>
 
 ## Example
 

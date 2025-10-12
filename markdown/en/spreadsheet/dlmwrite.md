@@ -27,7 +27,7 @@ Write an numeric matrix to a text file file using a delimiter.
 ## Description
 
 <p>
-            <b>dlmwrite</b> writes an numeric matrix to an ASCII format file.</p>
+            dlmwrite writes an numeric matrix to an ASCII format file.</p>
 
 ## Example
 

@@ -19,7 +19,7 @@ checks if string starts with pattern.
 
 ## Description
 
-<b>startsWith</b>returns<b>true</b>if<b>str</b>starts with<b>pattern</b>.
+        startsWith returns true if str starts with pattern.
 
 ## Example
 

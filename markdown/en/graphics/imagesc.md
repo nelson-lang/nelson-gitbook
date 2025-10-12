@@ -29,42 +29,27 @@ Display image from array with scaled colors.
 ## Description
 
 <p>
-            <b>imagessc</b> displays C data as an image. This image is colormapped using the colormap for the current figure.</p>
+            imagessc displays C data as an image. This image is colormapped using the colormap for the current figure.</p>
+
 <p>Properties:</p>
-<p></p>
-<p>
-                <b>AlphaData</b> Transparency data: scalar, array the same size as CData, or 1 (default).</p>
-<p>
-                    <b>AlphaDataMapping</b>
-                </p>
-<p>
-                    <b>CData</b> Image color data: vector or matrix, 3-D array of RGB triplets.</p>
-<p>
-                        <b>CDataMapping</b> Color data mapping method: 'direct' or 'scaled' (default).</p>
-<p>
-                            <b>Children</b> [].</p>
-<p>
-                                <b>Parent</b> Parent: axes object.</p>
-<p>
-                                    <b>Tag</b> Object identifier: string scalar, character vector, '' (default).</p>
-<p>
-                                        <b>Type</b> Type of graphics object: 'surface'.</p>
-<p>
-                                            <b>UserData</b>: User data: array or [] (default).</p>
-<p>
-                                                <b>Visible</b> State of visibility: 'off' or 'on' (default).</p>
-<p>
-                                                    <b>XData</b> Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).</p>
-<p>
-                                                        <b>YData</b> Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).</p>
-<p></p>
-<p>
-                                                            <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-<p>
-                                                                <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-<p>
-                                                                    <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+
+| Property         | Description                                                                                                                         |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| AlphaData        | Transparency data: scalar, array the same size as CData, or 1 (default).                                                            |
+| AlphaDataMapping | Alpha data mapping method.                                                                                                          |
+| CData            | Image color data: vector or matrix, 3-D array of RGB triplets.                                                                      |
+| CDataMapping     | Color data mapping method: 'direct' or 'scaled' (default).                                                                          |
+| Children         | [].                                                                                                                                 |
+| Parent           | Parent: axes object.                                                                                                                |
+| Tag              | Object identifier: string scalar, character vector, '' (default).                                                                   |
+| Type             | Type of graphics object: 'surface'.                                                                                                 |
+| UserData         | User data: array or [] (default).                                                                                                   |
+| Visible          | State of visibility: 'off' or 'on' (default).                                                                                       |
+| XData            | Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).                                                   |
+| YData            | Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).                                                   |
+| CreateFcn        | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
+| DeleteFcn        | Callback (function handle, string or cell) called when object is deleted.                                                           |
+| BeingDeleted     | Flag indicating that the object is being deleted.                                                                                   |
 
 ## Examples
 

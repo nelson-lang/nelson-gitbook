@@ -21,26 +21,46 @@ Rotate image by specified angle
 
 ## Description
 
-<p>The <b>imrotate</b> function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method.</p>
+<p>The imrotate function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method.</p>
+
 <p>The function supports various image formats including grayscale and RGB color images. The output image maintains the same data type as the input image.</p>
+
 <p>For angles that are multiples of 90 degrees, the rotation is performed exactly without interpolation to preserve image quality. For other angles, interpolation is used to estimate pixel values at non-integer coordinates.</p>
+
 <p>The bounding box option controls the size of the output image:</p>
-'loose': The output image is sized to contain the entire rotated image. This may result in a larger image than the input. 'crop': The output image is cropped to the same size as the input image. Parts of the rotated image may be cut off.<p>Background pixels (areas not covered by the rotated image) are filled with zeros.</p>
+
+                'loose': The output image is sized to contain the entire rotated image. This may result in a larger image than the input.
+
+                    'crop': The output image is cropped to the same size as the input image. Parts of the rotated image may be cut off.
+
+<p>Background pixels (areas not covered by the rotated image) are filled with zeros.</p>
+
 <p></p>
+
 <p>Note:</p>
+
 <p>
-                    <b>Performance Note:</b> For exact 90-degree rotations (0°, 90°, 180°, 270°), the function uses optimized algorithms that preserve exact pixel values without interpolation.</p>
+                    Performance Note: For exact 90-degree rotations (0°, 90°, 180°, 270°), the function uses optimized algorithms that preserve exact pixel values without interpolation.</p>
+
 <p>
-                        <b>Memory Usage:</b> When using 'loose' bounding box with large rotation angles, the output image may be significantly larger than the input. Consider using 'crop' for memory-constrained applications.</p>
+                        Memory Usage: When using 'loose' bounding box with large rotation angles, the output image may be significantly larger than the input. Consider using 'crop' for memory-constrained applications.</p>
+
 <p>
-                            <b>Data Type Preservation:</b> The output image maintains the same data type as the input. For floating-point inputs, pixel values may extend beyond the typical [0,1] range after interpolation.</p>
+                            Data Type Preservation: The output image maintains the same data type as the input. For floating-point inputs, pixel values may extend beyond the typical [0,1] range after interpolation.</p>
+
 <p>
-                                <b>Angle Convention:</b> Positive angles rotate counterclockwise, following standard mathematical convention. This is opposite to some image_processing applications that use clockwise positive rotation.</p>
+                                Angle Convention: Positive angles rotate counterclockwise, following standard mathematical convention. This is opposite to some image_processing applications that use clockwise positive rotation.</p>
+
 <p></p>
+
 <p>Limitations:</p>
+
 <p>Input image must be 2-D (grayscale) or 3-D (RGB). Other color spaces are not directly supported.</p>
+
 <p>Rotation is always performed around the center of the image. Off-center rotations require additional preprocessing.</p>
+
 <p>For very large angles (>360°), consider using modulo arithmetic to normalize the angle for better performance.</p>
+
 <p>Bicubic interpolation may produce overshoot artifacts near sharp edges in the image.</p>
 
 ## Examples

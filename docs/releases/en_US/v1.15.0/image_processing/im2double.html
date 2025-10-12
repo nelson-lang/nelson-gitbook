@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="im2double"><a class="header" href="#im2double">im2double</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="im2double"><a class="header" href="#im2double">im2double</a></h1>
 <p>Convert image to double precision.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,8 +173,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting, <b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1].</p>
-<p>For an indexed image, <b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.</p>
+            IM = im2double(I) converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting, im2double rescales the pixel values from their original integer format to a floating-point range of [0, 1].</p>
+<p>For an indexed image, IM = im2double(I, 'indexed') converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">I = reshape(uint8(linspace(1,255,25)),[5 5]);
 IM1 = im2double(I)

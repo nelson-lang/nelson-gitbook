@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="damp"><a class="header" href="#damp">damp</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="damp"><a class="header" href="#damp">damp</a></h1>
 <p>Natural frequency and damping ratio.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,7 +175,7 @@
 <li>T - Time Constant (seconds): vector.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>damp(sys)</b> provides the natural frequencies (<b>wn</b>) and damping ratios (<b>zeta</b>) associated with the poles of the system represented by <b>sys</b>.</p>
+<p>The function damp(sys) provides the natural frequencies (wn) and damping ratios (zeta) associated with the poles of the system represented by sys.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">sys = tf([2, 5, 1], [1, 0, 2, -6]);
 [wn, zeta, p, T] = damp(sys)

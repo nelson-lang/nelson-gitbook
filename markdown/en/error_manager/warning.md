@@ -26,9 +26,10 @@ Display a warning message.
 ## Description
 
 <p>
-            <b>warning</b> displays a warning message.</p>
+            warning displays a warning message.</p>
+
 <p>
-                <b>warning('')</b> resets lastwarn state.</p>
+                warning('') resets lastwarn state.</p>
 
 ## Examples
 

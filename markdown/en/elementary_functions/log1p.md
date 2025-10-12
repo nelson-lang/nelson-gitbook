@@ -17,7 +17,7 @@ log(1 + x) accurately for small values of x.
 ## Description
 
 <p>
-            <b>log1p</b> computes log(1 + x) accurately for small values of x.</p>
+            log1p computes log(1 + x) accurately for small values of x.</p>
 
 ## Example
 

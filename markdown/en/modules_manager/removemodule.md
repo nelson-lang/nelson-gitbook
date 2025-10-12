@@ -13,7 +13,8 @@ remove a module from Nelson.
 ## Description
 
 <p>
-            <b>removemodule</b> remove a module designed by his short name.</p>
+            removemodule remove a module designed by his short name.</p>
+
 <p>all core's modules are protected and cannot removed during an nelson's session.</p>
 
 ## Example

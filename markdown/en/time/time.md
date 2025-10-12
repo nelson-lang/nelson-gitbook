@@ -16,7 +16,8 @@ Return the current time as the number of seconds or nanoseconds since the epoch.
 ## Description
 
 <p>
-            <b>time</b> returns the current time as the number of seconds or nanoseconds since the epoch.</p>
+            time returns the current time as the number of seconds or nanoseconds since the epoch.</p>
+
 <p>The epoch is referenced to 00:00:00 UTC (Coordinated Universal Time) 1 Jan 1970.</p>
 
 ## Example

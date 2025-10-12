@@ -16,7 +16,7 @@ Return true if variable var is a single or double matrix.
 
 ## Description
 
-<b>isfloat</b>returns a logical 1 if the argument is a single or double matrix and a logical 0 otherwise.
+        isfloat returns a logical 1 if the argument is a single or double matrix and a logical 0 otherwise.
 
 ## Examples
 

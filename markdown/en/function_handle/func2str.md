@@ -17,7 +17,7 @@ Return a function handle constructed from a string.
 ## Description
 
 <p>
-            <b>func_handle = str2func(str)</b> returns a function handle constructed from the string <b>str</b>.</p>
+            func_handle = str2func(str) returns a function handle constructed from the string str.</p>
 
 ## Example
 

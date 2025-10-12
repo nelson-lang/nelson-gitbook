@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lqr"><a class="header" href="#lqr">lqr</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lqr"><a class="header" href="#lqr">lqr</a></h1>
 <p>Linear-Quadratic Regulator (LQR) design.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -178,10 +179,10 @@
 <li>p - Poles of the closed-loop system: column vector.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>In the context of continuous-time state-space matrices <b>A</b> and <b>B</b>, the command <b>[K, S, P] = lqr(A, B, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.</p>
+<p>In the context of continuous-time state-space matrices A and B, the command [K, S, P] = lqr(A, B, Q, R, N) computes the optimal gain matrix K, the solution S to the associated algebraic Riccati equation, and the closed-loop poles P.</p>
 <p>This syntax is applicable exclusively to continuous-time models.</p>
-<p>When applied to a continuous-time or discrete-time state-space model represented by <b>sys</b>, the command <b>[K, S, P] = lqr(sys, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.</p>
-<p>The weight matrices <b>Q</b> and <b>R</b> govern the importance of states and inputs, and the cross term matrix <b>N</b> is zero by default when not specified.</p>
+<p>When applied to a continuous-time or discrete-time state-space model represented by sys, the command [K, S, P] = lqr(sys, Q, R, N) computes the optimal gain matrix K, the solution S to the associated algebraic Riccati equation, and the closed-loop poles P.</p>
+<p>The weight matrices Q and R govern the importance of states and inputs, and the cross term matrix N is zero by default when not specified.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [-0.313 56.7 0; -0.0139 -0.426 0; 0 56.7 0];
 B = [0.232; 0.0203; 0];

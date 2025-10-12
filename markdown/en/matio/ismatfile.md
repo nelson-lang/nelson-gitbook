@@ -19,7 +19,7 @@ Checks if filename a valid .mat file
 ## Description
 
 <p>
-            <b>ismatfile</b> checks if filename a valid .mat file.</p>
+            ismatfile checks if filename a valid .mat file.</p>
 
 ## Bibliography
 

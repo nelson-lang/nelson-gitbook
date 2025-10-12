@@ -20,7 +20,7 @@ Extract subsystem from larger system.
 
 ## Description
 
-<p><b>ssselect</b> extracts subsystem from larger system.</p>
+<p>ssselect extracts subsystem from larger system.</p>
 
 ## Example
 

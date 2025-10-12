@@ -20,7 +20,7 @@ Converts xml Nelson help files to markdown format.
 ## Description
 
 <p>
-            <b>xmldoctomd</b> converts xml Nelson help files to markdown format.</p>
+            xmldoctomd converts xml Nelson help files to markdown format.</p>
 
 ## See also
 

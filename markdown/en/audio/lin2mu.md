@@ -17,7 +17,7 @@ Convert audio data from linear singal to mu-law.
 ## Description
 
 <p>
-            <b>mu = lin2mu(y)</b> converts audio data from linear to mu-law.</p>
+            mu = lin2mu(y) converts audio data from linear to mu-law.</p>
 
 ## Bibliography
 

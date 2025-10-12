@@ -23,7 +23,7 @@ Label y-axis.
 ## Description
 
 <p>
-            <b>ylabel('text')</b> labels the y-axis of the current axes.</p>
+            ylabel('text') labels the y-axis of the current axes.</p>
 
 ## Example
 

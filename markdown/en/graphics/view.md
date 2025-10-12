@@ -21,7 +21,7 @@ Camera line of sigh.
 ## Description
 
 <p>
-            <b>view</b>sets the view into a plot.</p>
+            viewsets the view into a plot.</p>
 
 ## Examples
 

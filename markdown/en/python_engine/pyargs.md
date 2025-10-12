@@ -19,9 +19,11 @@ Change default environment of Python interpreter.
 ## Description
 
 <p>
-            <b>pyargs(Name, Value, ...)</b> generates one or multiple keyword arguments for Python functions.</p>
+            pyargs(Name, Value, ...) generates one or multiple keyword arguments for Python functions.</p>
+
 <p>In Python, a keyword argument is a value associated with an identifier.</p>
-<p>Ensure to position <b>pyargs</b> as the last input argument when calling a Python function.</p>
+
+<p>Ensure to position pyargs as the last input argument when calling a Python function.</p>
 
 ## Example
 

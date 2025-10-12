@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="join"><a class="header" href="#join">join</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="join"><a class="header" href="#join">join</a></h1>
 <p>Combine strings.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -176,18 +177,18 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>res = join(str)</b> combines the elements of <b>str</b> into a single text by joining them with a space character as the default delimiter.</p>
-<p>The input, <b>str</b>, can be either a string array or a cell array of character vectors. The output, <b>res</b>, has the same data type as <b>str</b>.</p>
-<p>If <b>str</b> is a 1-by-N or N-by-1 string array or cell array, <b>res</b> will be a string scalar or a cell array containing a single character vector.</p>
-<p>If <b>str</b> is an M-by-N string array or cell array, res will be an M-by-1 string array or cell array.</p>
+            res = join(str) combines the elements of str into a single text by joining them with a space character as the default delimiter.</p>
+<p>The input, str, can be either a string array or a cell array of character vectors. The output, res, has the same data type as str.</p>
+<p>If str is a 1-by-N or N-by-1 string array or cell array, res will be a string scalar or a cell array containing a single character vector.</p>
+<p>If str is an M-by-N string array or cell array, res will be an M-by-1 string array or cell array.</p>
 <p>For arrays of any size, join concatenates elements along the last dimension with a size greater than 1.</p>
 <p>
-                <b>res = join(str, delimiter)</b> joins the elements of <b>str</b> using the specified delimiter instead of the default space character.</p>
-<p>If delimiter is an array of multiple delimiters, and <b>str</b> has N elements along the joining dimension, delimiter must have N–1 elements along the same dimension. All other dimensions of delimiter must either have size 1 or match the size of the corresponding dimensions of <b>str</b>.</p>
+                res = join(str, delimiter) joins the elements of str using the specified delimiter instead of the default space character.</p>
+<p>If delimiter is an array of multiple delimiters, and str has N elements along the joining dimension, delimiter must have N–1 elements along the same dimension. All other dimensions of delimiter must either have size 1 or match the size of the corresponding dimensions of str.</p>
 <p>
-                    <b>res = join(str, dim)</b> combines the elements of <b>str</b> along the specified dimension <b>dim</b>.</p>
+                    res = join(str, dim) combines the elements of str along the specified dimension dim.</p>
 <p>
-                        <b>res = join(str, delimiter, dim)</b> joins the elements of <b>str</b> along the specified dimension <b>dim</b>, using delimiter to separate them.</p>
+                        res = join(str, delimiter, dim) joins the elements of str along the specified dimension dim, using delimiter to separate them.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">str = ["x","y","z"; "a","b","c"];
 delimiters = [" + "," = "; " - "," = "];

@@ -13,7 +13,7 @@ Set position of stream to the beginning.
 ## Description
 
 <p>
-            <b>frewind</b> puts the pointer at the beginning of file</p>
+            frewind puts the pointer at the beginning of file</p>
 
 ## Example
 

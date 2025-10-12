@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="jlenv"><a class="header" href="#jlenv">jlenv</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="jlenv"><a class="header" href="#jlenv">jlenv</a></h1>
 <p>Change default environment of Julia interpreter.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,37 +173,40 @@
 <li>je - JuliaEnvironment object.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>Use <b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.</p>
-<p>The value set by <b>jlenv</b> is persistent across Nelson sessions.</p>
+<p>Use jlenv to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.</p>
+<p>The value set by jlenv is persistent across Nelson sessions.</p>
 <p></p>
 <p>Properties:</p>
 <p>
-            <b>Version</b>: string: Julia version</p>
+            Version: string: Julia version</p>
 <p>
-                <b>Executable</b>: string: Name of Julia executable file</p>
+                Executable: string: Name of Julia executable file</p>
 <p>
-                    <b>Library</b>: string: Shared library file</p>
+                    Library: string: Shared library file</p>
 <p>
-                        <b>Home</b>: string: Home folder</p>
+                        Home: string: Home folder</p>
 <p>
-                            <b>Status</b>: Process status: "NotLoaded" (default), "Loaded", "Terminated"</p>
+                            Status: Process status: "NotLoaded" (default), "Loaded", "Terminated"</p>
 <p>
-                                <b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess"</p>
+                                ExecutionMode: Execution mode: "InProcess" (default) or "OutOfProcess"</p>
 <p></p>
 <p>Use environment variables to force julia environment at each startup (usefull for snapcraft or docker distribution):</p>
 <p></p>
 <p>
-                                    <b>__NELSON_JULIA_VERSION__</b>:  example "1.11"</p>
+                                    __NELSON_JULIA_VERSION__:  example "1.11"</p>
 <p>
-                                        <b>__NELSON_JULIA_EXECUTABLE__</b>: example  "/usr/bin/julia"</p>
+                                        __NELSON_JULIA_EXECUTABLE__: example  "/usr/bin/julia"</p>
 <p>
-                                            <b>__NELSON_JULIA_LIBRARY__</b>: example "libjulia.so"</p>
+                                            __NELSON_JULIA_LIBRARY__: example "libjulia.so"</p>
 <p>
-                                                <b>__NELSON_JULIA_HOME__</b>: example "/usr"</p>
+                                                __NELSON_JULIA_HOME__: example "/usr"</p>
 <p>All environment variables must exist and valid to be considered.</p>
 <p></p>
-<h2 id="example"><a class="header" href="#example">Example</a></h2>
+<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">je = jlenv
+</code></pre>
+<p>Set the Julia executable path</p>
+<pre><code class="language-matlab">jlenv('Version', ''C:\WindowsTools\Julia-1.11.6\bin\julia.exe'')
 </code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="../julia_engine/jlrun.html">jlrun</a>.</p>

@@ -14,10 +14,12 @@ Locks a variable.
 ## Description
 
 <p>
-            <b>varlock</b> locks a variable.</p>
+            varlock locks a variable.</p>
+
 <p>Locked variables cannot be killed.</p>
+
 <p>
-                <b>ans</b> variable cannot be locked.</p>
+                ans variable cannot be locked.</p>
 
 ## Example
 

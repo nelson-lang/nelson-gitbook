@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="cell2mat"><a class="header" href="#cell2mat">cell2mat</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="cell2mat"><a class="header" href="#cell2mat">cell2mat</a></h1>
 <p>Transform a cell array containing matrices into a single, concatenated matrix.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,7 +172,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>M = cell2smat(ce)</b> creates a single matrix by merging all elements within the cell array <b>ce</b> into a multi-dimensional array. The elements in <b>c</b> can consist of numeric, logical, or character matrices, cell arrays, or structs, and they must be compatible for concatenation using <b>cat</b> function.</p>
+            M = cell2smat(ce) creates a single matrix by merging all elements within the cell array ce into a multi-dimensional array. The elements in c can consist of numeric, logical, or character matrices, cell arrays, or structs, and they must be compatible for concatenation using cat function.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">C = {[10], [20 30 40]; [90; 50], [60 76 88; 110 111 112]};
  M = cell2mat(C)

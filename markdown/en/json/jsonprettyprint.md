@@ -17,7 +17,7 @@ format an JSON string.
 ## Description
 
 <p>
-            <b>jsonprettyprint</b> formats a JSON text string to be human readable.</p>
+            jsonprettyprint formats a JSON text string to be human readable.</p>
 
 ## Example
 

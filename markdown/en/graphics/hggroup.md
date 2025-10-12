@@ -21,8 +21,9 @@ Create group object.
 ## Description
 
 <p>
-            <b>hggroup</b> creates a hggroup object as a child of the current axes and returns its handle, h.</p>
-<p>The <b>hggroup</b> object is used to group graphics objects, such as lines, patches, and text, so that they can be manipulated together.</p>
+            hggroup creates a hggroup object as a child of the current axes and returns its handle, h.</p>
+
+<p>The hggroup object is used to group graphics objects, such as lines, patches, and text, so that they can be manipulated together.</p>
 
 ## Example
 

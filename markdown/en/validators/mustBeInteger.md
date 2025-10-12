@@ -16,7 +16,7 @@ Checks that value is integer or raise an error.
 ## Description
 
 <p>
-            <b>mustBeInteger</b> checks that value is integer or raise an error.</p>
+            mustBeInteger checks that value is integer or raise an error.</p>
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="str2func"><a class="header" href="#str2func">str2func</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="str2func"><a class="header" href="#str2func">str2func</a></h1>
 <p>Returns a function handle from a string.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,10 +172,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b>
+            function_handle = str2func(str) returns a function handle function_handle for the function named in the string str
         </p>
 <p>
-            <b>str</b> function name or representation of anonymous function.</p>
+            str function name or representation of anonymous function.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">fh = str2func('cos')
 str = func2str(fh)

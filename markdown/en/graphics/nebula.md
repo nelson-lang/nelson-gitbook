@@ -18,7 +18,7 @@ Nebula colormap array.
 ## Description
 
 <p>
-            <b>nebula</b> returns the colormap with nebula colors.</p>
+            nebula returns the colormap with nebula colors.</p>
 
 ## Example
 

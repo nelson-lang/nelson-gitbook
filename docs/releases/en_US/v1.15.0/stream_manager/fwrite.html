@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="fwrite"><a class="header" href="#fwrite">fwrite</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="fwrite"><a class="header" href="#fwrite">fwrite</a></h1>
 <p>Write data in binary form to the file specified by the file descriptor fid.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -179,14 +180,14 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>Write data in binary form to the file specified by the file descriptor fid.</p>
-<p>characters encoding uses <b>fopen</b> parameter.</p>
+<p>characters encoding uses fopen parameter.</p>
 <p>supported architecture:</p>
 <p>
-            <b>native</b> , <b>n</b>: format of the current machine.</p>
+            native , n: format of the current machine.</p>
 <p>
-                <b>ieee-be</b>, <b>b</b>: IEEE big endian.</p>
+                ieee-be, b: IEEE big endian.</p>
 <p>
-                    <b>ieee-le</b>, <b>l</b>: IEEE little endian.</p>
+                    ieee-le, l: IEEE little endian.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">
 A = rand(3,1)

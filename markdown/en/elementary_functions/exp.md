@@ -17,8 +17,15 @@ Exponential
 ## Description
 
 <p>
-            <b>exp</b> computes the exponential value.</p>
-<p>If input argument is a complex number, <b>exp</b> computes exp(x) * (cos(y) + i * sin(y)) with z = x + i * y.</p>
+            exp computes the exponential value.</p>
+
+<p>For real numbers:</p>
+
+$$e^x$$
+
+<p>For complex numbers z = x + iy:</p>
+
+$$e^z = e^x(\cos y + i\sin y)$$
 
 ## Example
 

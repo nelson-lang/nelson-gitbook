@@ -27,12 +27,18 @@ Random Integer.
 ## Description
 
 <p>
-            <b>randi</b> returns random integers drawn from a discrete uniform distribution.</p>
+            randi returns random integers drawn from a discrete uniform distribution.</p>
+
 <p>X = randi(imax) returns a random scalar integer between 1 and imax.</p>
+
 <p>X = randi(imax, n) returns an n-by-n matrix of random integers between 1 and imax.</p>
+
 <p>X = randi(imax, sz) returns an array where size vector sz defines size(X).</p>
+
 <p>X = randi(imax, ..., typename) returns an array of random integers of type typename.</p>
+
 <p>X = randi(imax, ..., 'like', p) returns an array of random integers like p (same type and complexity).</p>
+
 <p>X = randi([imin, imax], ...) returns random integers between imin and imax.</p>
 
 ## Examples

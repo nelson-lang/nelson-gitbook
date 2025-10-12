@@ -17,9 +17,11 @@ Convert number in base 2 to decimal.
 ## Description
 
 <p>
-            <b>bin2dec</b> converts number in base 2 to decimal.</p>
+            bin2dec converts number in base 2 to decimal.</p>
+
 <p>Note:</p>
-<p> - <b>bin2dec</b> and <b>dec2bin</b> are inverses of one another.</p>
+
+<p> - bin2dec and dec2bin are inverses of one another.</p>
 
 ## Example
 

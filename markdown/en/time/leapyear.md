@@ -17,7 +17,8 @@ Determine leap year.
 ## Description
 
 <p>
-            <b>leapyear</b> determines leap years.</p>
+            leapyear determines leap years.</p>
+
 <p>Leap years is done by Gregorian calendar rules.</p>
 
 ## Example

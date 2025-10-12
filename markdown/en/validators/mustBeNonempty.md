@@ -16,7 +16,7 @@ Checks that value is nonempty or raise an error.
 ## Description
 
 <p>
-            <b>mustBeNonempty</b> checks that value is not empty or raise an error.</p>
+            mustBeNonempty checks that value is not empty or raise an error.</p>
 
 ## Example
 

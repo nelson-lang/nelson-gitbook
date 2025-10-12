@@ -16,7 +16,7 @@ Return true if variable var is a signed 8-bit integer type array.
 
 ## Description
 
-<b>isint8</b>returns a logical<b>1</b>if the argument is a<b>signed 8-bit</b>integer array and a logical<b>0</b>otherwise.
+        isint8 returns a logical 1if the argument is a signed 8-bit integer array and a logical 0 otherwise.
 
 ## Examples
 

@@ -17,7 +17,7 @@ Real part of an complex number.
 ## Description
 
 <p>
-            <b>R = real(M)</b> Return the real part of M.</p>
+            R = real(M) Return the real part of M.</p>
 
 ## Example
 

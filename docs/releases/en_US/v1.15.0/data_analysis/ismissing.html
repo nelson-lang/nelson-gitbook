@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ismissing"><a class="header" href="#ismissing">ismissing</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="ismissing"><a class="header" href="#ismissing">ismissing</a></h1>
 <p>Check for missing values.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,16 +172,16 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
+            ismissing returns a logical array which is true where elements of M are missing values.</p>
 <p>missing data are defined as:</p>
 <p>
-                <b>NaN</b> for double or single</p>
+                NaN for double or single</p>
 <p>
-                    <b>missing</b> for string array</p>
+                    missing for string array</p>
 <p>
-                        <b>' '</b> for character array</p>
+                        ' ' for character array</p>
 <p>
-                            <b>''</b> for cell of character array</p>
+                            '' for cell of character array</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = ["Nel", NaN, "son"];
 ismissing(A)

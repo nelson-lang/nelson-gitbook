@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="getenv"><a class="header" href="#getenv">getenv</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="getenv"><a class="header" href="#getenv">getenv</a></h1>
 <p>Get the value of an environment variable.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -171,10 +172,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>getenv</b> returns the value of an environment variable if it exists.</p>
+            getenv returns the value of an environment variable if it exists.</p>
 <p>If the environment variable does not exist, it will return ''.</p>
-<p>If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.</p>
-<p>If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.</p>
+<p>If env_name is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as env_name.</p>
+<p>If env_name is a string scalar, then s is a character vector.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">getenv('OS')
 getenv('myenvvar')

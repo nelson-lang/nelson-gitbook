@@ -22,9 +22,10 @@ Pauses script execution.
 ## Description
 
 <p>
-            <b>pause(t)</b> suspends execution for t seconds.</p>
+            pause(t) suspends execution for t seconds.</p>
+
 <p>
-                <b>pause</b> without input argument wait until return key is pressed.</p>
+                pause without input argument wait until return key is pressed.</p>
 
 ## Example
 

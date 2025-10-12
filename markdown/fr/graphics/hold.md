@@ -1,0 +1,57 @@
+# hold
+
+Conserver le tracé courant lors de l'ajout de nouveaux tracés.
+
+## Syntaxe
+
+- hold('on')
+- hold('off')
+- hold('all')
+- hold()
+- hold(ax, ...)
+
+## Argument d'entrée
+
+- 'on' - active le mode hold.
+- 'off' - désactive le mode hold.
+- 'all' - équivalent à hold on.
+- ax - Axes cibles : axes.
+
+## Argument de sortie
+
+- ax - Un objet graphique : type axes.
+
+## Description
+
+<p>
+            hold permet de construire une séquence de tracés de façon incrémentale.</p>
+
+## Exemple
+
+```matlab
+f = figure();
+x = linspace(-pi, pi);
+y1 = cos(x);
+plot(x, y1)
+hold on
+y2 = sin(x);
+plot(x, y2)
+hold off
+
+```
+
+<img src="hold.svg" align="middle"/>
+
+## Voir aussi
+
+[ishold](../graphics/ishold.md), [newplot](../graphics/newplot.md).
+
+## Historique
+
+| Version | Description      |
+| ------- | ---------------- |
+| 1.0.0   | version initiale |
+
+## Auteur
+
+Allan CORNET

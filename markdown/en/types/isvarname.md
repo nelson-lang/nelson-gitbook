@@ -16,7 +16,7 @@ Return true if input is valid variable name.
 
 ## Description
 
-<b>isvarname</b>returns a logical 1 if the argument is a valid variable name and a logical 0 otherwise.
+        isvarname returns a logical 1 if the argument is a valid variable name and a logical 0 otherwise.
 
 ## Example
 

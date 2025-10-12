@@ -17,7 +17,7 @@ Append state vector to output vector.
 
 ## Description
 
-<p>The function <b>sysa = augstate(sys)</b> adds the state vector to the outputs of a state-space model.</p>
+<p>The function sysa = augstate(sys) adds the state vector to the outputs of a state-space model.</p>
 
 ## Example
 

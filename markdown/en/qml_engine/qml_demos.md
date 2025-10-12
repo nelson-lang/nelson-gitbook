@@ -9,7 +9,7 @@ QML demos.
 ## Description
 
 <p>
-            <b>qml_demos</b> shows QML -- Nelson demos.</p>
+            qml_demos shows QML -- Nelson demos.</p>
 
 ## Example
 

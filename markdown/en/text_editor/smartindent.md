@@ -16,7 +16,7 @@ Smart indent a nelson file
 
 ## Description
 
-<b>smartindent</b>indents code to make reading statements such as while loops easier.
+        smartindent indents code to make reading statements such as while loops easier.
 
 ## See also
 

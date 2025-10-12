@@ -21,7 +21,7 @@ Fortran to C converter.
 ## Description
 
 <p>
-            <b>f2c</b> converts fortran 66, and fortran 77 files to C.</p>
+            f2c converts fortran 66, and fortran 77 files to C.</p>
 
 ## Example
 

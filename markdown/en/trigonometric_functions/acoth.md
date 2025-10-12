@@ -16,7 +16,7 @@ Inverse hyperbolic cotangent.
 
 ## Description
 
-<b>acoth</b>computes the inverse hyperbolic cotangent.
+        acoth computes the inverse hyperbolic cotangent.
 
 ## Example
 

@@ -29,9 +29,11 @@ Contour 3D plot of matrix
 ## Description
 
 <p>
-            <b>contour3(Z)</b> generates a 3-D contour plot illustrating the isolines of the matrix Z, where Z represents heights on the x-y plane.</p>
+            contour3(Z) generates a 3-D contour plot illustrating the isolines of the matrix Z, where Z represents heights on the x-y plane.</p>
+
 <p>The x and y coordinates in the plane correspond to the column and row indices of Z, respectively.</p>
-<p>To specify the x and y coordinates for Z values, use <b>contour3(X,Y,Z)</b>.</p>
+
+<p>To specify the x and y coordinates for Z values, use contour3(X,Y,Z).</p>
 
 ## Example
 

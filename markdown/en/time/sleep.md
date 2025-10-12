@@ -13,8 +13,9 @@ Suspend code execution.
 ## Description
 
 <p>
-            <b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.</p>
-<p> CTRL-C interruption stops <b>sleep</b>.</p>
+            sleep stops Nelson processing any instruction for a speficied number of seconds.</p>
+
+<p> CTRL-C interruption stops sleep.</p>
 
 ## Example
 

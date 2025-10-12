@@ -24,7 +24,7 @@ Product of array elements.
 ## Description
 
 <p>
-            <b>R = prod(M)</b> returns the product of the array elements of M.</p>
+            R = prod(M) returns the product of the array elements of M.</p>
 
 ## Example
 

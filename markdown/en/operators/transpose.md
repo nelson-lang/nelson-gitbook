@@ -18,7 +18,7 @@ Returns vector or matrix transpose: .' operator.
 ## Description
 
 <p>
-            <b>C = transpose(A)</b> returns the transpose of A.</p>
+            C = transpose(A) returns the transpose of A.</p>
 
 ## Examples
 

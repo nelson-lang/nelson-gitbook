@@ -23,9 +23,12 @@ Schur decomposition.
 ## Description
 
 <p>
-            <b>schur(M)</b> computes the schur decomposition.</p>
+            schur(M) computes the schur decomposition.</p>
+
 <p>With the flag 'complex', the complex schur form is upper triangular with the eigenvalues of M on the diagonal.</p>
+
 <p>If A is real, the real schur form is returned.</p>
+
 <p>With the flag 'real', the real schur form has the real eigenvalues on the diagonal and the complex eigenvalues in 2-by-2 blocks on the diagonal.</p>
 
 ## Example

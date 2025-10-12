@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="table"><a class="header" href="#table">table</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="table"><a class="header" href="#table">table</a></h1>
 <p>A table-like array with named variables, capable of holding different data types</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -184,18 +185,18 @@
 <p>- Parentheses (T(rows, vars)) to return a subset of the table.</p>
 <p></p>
 <p>
-            <b>T = table(var1, ..., varN)</b> creates a table from the specified input variables <b>var1,...,varN</b>.</p>
+            T = table(var1, ..., varN) creates a table from the specified input variables var1,...,varN.</p>
 <p>The variables can vary in size and data type, but they must all have the same number of rows.</p>
 <p>If the inputs are workspace variables, their names are used as the variable names in the resulting table.</p>
 <p>Otherwise, the table assigns default names in the format 'Var1', 'Var2', and so on, where N is the total number of variables.</p>
 <p></p>
 <p>
-                <b>T = table(..., Name, Value)</b> allows you to specify additional options using one or more name-value pair arguments.</p>
+                T = table(..., Name, Value) allows you to specify additional options using one or more name-value pair arguments.</p>
 <p>For instance, you can set custom variable names by using the 'VariableNames' name-value pair.</p>
 <p>This syntax can be used in combination with any of the input arguments from the previous forms.</p>
 <p></p>
 <p>
-                    <b>T = table()</b> creates an empty table with 0 rows and 0 columns.</p>
+                    T = table() creates an empty table with 0 rows and 0 columns.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
 Age = [28; 34; 22; 30];

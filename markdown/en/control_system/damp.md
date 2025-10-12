@@ -20,7 +20,7 @@ Natural frequency and damping ratio.
 
 ## Description
 
-<p>The function <b>damp(sys)</b> provides the natural frequencies (<b>wn</b>) and damping ratios (<b>zeta</b>) associated with the poles of the system represented by <b>sys</b>.</p>
+<p>The function damp(sys) provides the natural frequencies (wn) and damping ratios (zeta) associated with the poles of the system represented by sys.</p>
 
 ## Example
 

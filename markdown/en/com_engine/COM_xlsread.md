@@ -29,7 +29,7 @@ Read Microsoft Excel spreadsheet file using COM.
 
 ## Description
 
-<b>COM_xlsread</b>read Microsoft Excel spreadsheet file using COM.
+        COM_xlsread read Microsoft Excel spreadsheet file using COM.
 
 ## Example
 

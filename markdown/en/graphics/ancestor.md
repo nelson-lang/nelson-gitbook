@@ -20,7 +20,7 @@ Ancestor of graphics object.
 ## Description
 
 <p>
-            <b>ancestor</b> returns the handle of the specified object's ancestor of a given type.</p>
+            ancestor returns the handle of the specified object's ancestor of a given type.</p>
 
 ## Example
 

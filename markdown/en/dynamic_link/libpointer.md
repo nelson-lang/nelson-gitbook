@@ -20,8 +20,9 @@ Creates an C pointer object usuable in Nelson.
 ## Description
 
 <p>This is an advanced feature to manipulate C pointers.</p>
+
 <p>
-            <b>ptr = libpointer()</b> creates an NULL pointer.</p>
+            ptr = libpointer() creates an NULL pointer.</p>
 
 ## Examples
 

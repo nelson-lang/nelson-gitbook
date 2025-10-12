@@ -13,7 +13,7 @@ Stop all functions running in the background.
 ## Description
 
 <p>
-            <b>cancelAll(fevalQueue)</b> stops all running or queued elements of the background pool.</p>
+            cancelAll(fevalQueue) stops all running or queued elements of the background pool.</p>
 
 ## Example
 

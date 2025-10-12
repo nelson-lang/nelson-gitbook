@@ -20,7 +20,7 @@ Bit-wise OR
 ## Description
 
 <p>
-            <b>C = bitor(A, B)</b> returns the bit-wise OR of <b>A</b> and <b>B</b>.</p>
+            C = bitor(A, B) returns the bit-wise OR of A and B.</p>
 
 ## Example
 

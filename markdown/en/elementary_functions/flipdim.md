@@ -17,8 +17,9 @@ Flip array along specified dimension
 
 ## Description
 
-<p><b>flipdim</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.</p>
-<p><b>flipdim</b> is similar to <b>flip</b> and available for compatibility with old existing scripts.</p>
+<p>flipdim return an new array of A flipped about the dimension dim.</p>
+
+<p>flipdim is similar to flip and available for compatibility with old existing scripts.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ Cotangent of argument in degrees
 
 ## Description
 
-<b>cotd</b>computes the cotangent of argument in degrees for each element of<b>x</b>.
+        cotd computes the cotangent of argument in degrees for each element of x.
 
 ## Example
 

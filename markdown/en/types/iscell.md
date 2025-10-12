@@ -16,7 +16,7 @@ Return true if variable var is a cell array.
 
 ## Description
 
-<b>iscell</b>returns a logical 1 if the argument is a cell array and a logical 0 otherwise.
+        iscell returns a logical 1 if the argument is a cell array and a logical 0 otherwise.
 
 ## Examples
 

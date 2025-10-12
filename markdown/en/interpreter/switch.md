@@ -9,9 +9,10 @@ switch statement.
 ## Description
 
 <p>
-            <b>switch</b> statement is used to selective execute code based on the value of either scalar value or a string.</p>
+            switch statement is used to selective execute code based on the value of either scalar value or a string.</p>
+
 <p>
-                <b>otherwise</b> clause is optional.</p>
+                otherwise clause is optional.</p>
 
 ## Examples
 

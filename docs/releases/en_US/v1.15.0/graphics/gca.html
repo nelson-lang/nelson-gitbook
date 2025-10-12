@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="gca"><a class="header" href="#gca">gca</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="gca"><a class="header" href="#gca">gca</a></h1>
 <p>get current axes graphics object.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -167,8 +168,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>ca = gca()</b> returns the current axes graphics object.</p>
-<p>If there are no axes, <b>gca()</b> creates an axes and returns its graphics object.</p>
+            ca = gca() returns the current axes graphics object.</p>
+<p>If there are no axes, gca() creates an axes and returns its graphics object.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">ca = gca()
 isgraphics(ax, 'axes')

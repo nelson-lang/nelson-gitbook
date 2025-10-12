@@ -20,14 +20,18 @@ Find value in dictionary by key.
 ## Description
 
 <p>
-            <b>value = lookup(d, key)</b> retrieves the value associated with the given key in dictionary d.</p>
+            value = lookup(d, key) retrieves the value associated with the given key in dictionary d.</p>
+
 <p>If the key does not exist, an error is raised.</p>
+
 <p>
-                <b>value = lookup(d, key)</b> is equivalent to <b>value = d[key]</b>.</p>
+                value = lookup(d, key) is equivalent to value = d[key].</p>
+
 <p>
-                    <b>value = lookup(d, key, 'FallbackValue', fallback)</b> specifies a fallback value to return if the key is not found in d.</p>
+                    value = lookup(d, key, 'FallbackValue', fallback) specifies a fallback value to return if the key is not found in d.</p>
+
 <p>
-                        <b>lookup</b> function only validates the fallback if it is needed. An error is raised only if the key is not found and no valid fallback is provided.</p>
+                        lookup function only validates the fallback if it is needed. An error is raised only if the key is not found and no valid fallback is provided.</p>
 
 ## Example
 

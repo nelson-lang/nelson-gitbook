@@ -17,7 +17,7 @@ Converts a variable to single precision type.
 ## Description
 
 <p>
-            <b>single(V)</b> converts to the single-precision type.</p>
+            single(V) converts to the single-precision type.</p>
 
 ## Examples
 

@@ -17,7 +17,7 @@ Return true if property of handle object.
 
 ## Description
 
-<b>isprop</b>returns a logical 1 if the argument is a valid handle with property name and a logical 0 otherwise.
+        isprop returns a logical 1 if the argument is a valid handle with property name and a logical 0 otherwise.
 
 ## See also
 

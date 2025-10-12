@@ -12,7 +12,7 @@ Stops an audioplayer object.
 
 ## Description
 
-<b>stop</b>stops an audioplayer object.
+        stop stops an audioplayer object.
 
 ## Example
 

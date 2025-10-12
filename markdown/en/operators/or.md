@@ -19,7 +19,7 @@ logical 'OR' operator, |
 ## Description
 
 <p>
-            <b>C = or(A, B)</b> performs a logical <b>OR</b> operation.</p>
+            C = or(A, B) performs a logical OR operation.</p>
 
 ## Example
 

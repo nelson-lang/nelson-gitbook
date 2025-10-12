@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ipc"><a class="header" href="#ipc">ipc</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="ipc"><a class="header" href="#ipc">ipc</a></h1>
 <p>Inter process communicator.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -188,7 +189,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>ipc</b> allows to execute, get, put variables between multiple nelson's process.</p>
+            ipc allows to execute, get, put variables between multiple nelson's process.</p>
 <p>All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.</p>
 <p>LIMITATION:</p>
 <p>The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double.</p>

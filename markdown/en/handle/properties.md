@@ -17,7 +17,7 @@ Returns the properties name of an object handle.
 
 ## Description
 
-<b>properties</b>returns a cell of strings with properties name.
+        properties returns a cell of strings with properties name.
 
 ## See also
 

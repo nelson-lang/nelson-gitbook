@@ -16,7 +16,7 @@ Checks that value is text with nonzero length or raise an error.
 ## Description
 
 <p>
-            <b>mustBeNonzeroLengthText</b> checks that value is text with nonzero length or raise an error.</p>
+            mustBeNonzeroLengthText checks that value is text with nonzero length or raise an error.</p>
 
 ## Example
 

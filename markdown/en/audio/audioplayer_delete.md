@@ -14,7 +14,8 @@ Removes audioplayer object.
 ## Description
 
 <p>
-            <b>delete(h)</b> releases audioplayer object.</p>
+            delete(h) releases audioplayer object.</p>
+
 <p>Do not forget to clear h afterward.</p>
 
 ## Example

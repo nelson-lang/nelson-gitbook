@@ -21,9 +21,10 @@ Converts numbers to character array.
 ## Description
 
 <p>
-            <b>num2str</b> converts numbers to character array.</p>
+            num2str converts numbers to character array.</p>
+
 <p>
-                <b>num2str</b> trims any leading spaces from a character array. For better control over the results, use <b>sprintf</b>.</p>
+                num2str trims any leading spaces from a character array. For better control over the results, use sprintf.</p>
 
 ## Example
 

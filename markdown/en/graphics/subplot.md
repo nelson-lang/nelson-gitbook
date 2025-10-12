@@ -23,7 +23,8 @@ Create axes in tiled positions.
 ## Description
 
 <p>
-            <b>subplot(n, m, p)</b> divides the current figure into a 2-dimensional grid.</p>
+            subplot(n, m, p) divides the current figure into a 2-dimensional grid.</p>
+
 <p>Each of which can contain a plot of some kind.</p>
 
 ## Examples

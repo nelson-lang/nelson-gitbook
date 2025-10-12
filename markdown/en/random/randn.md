@@ -25,9 +25,11 @@ Normally distributed random number.
 ## Description
 
 <p>
-            <b>randn</b> returns a matrix with normally distributed random elements having zero mean and variance one.</p>
-<p>By default, <b>randn</b> uses the ziggurat algorithm.</p>
-<p>seed can be modified using <b>rng</b>.</p>
+            randn returns a matrix with normally distributed random elements having zero mean and variance one.</p>
+
+<p>By default, randn uses the ziggurat algorithm.</p>
+
+<p>seed can be modified using rng.</p>
 
 ## Examples
 

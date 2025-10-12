@@ -13,7 +13,7 @@ Plot colormap.
 ## Description
 
 <p>
-            <b>rgbplot(cmap)</b> plots the R (red), G (green), and B (blue) intensities of the specified <b>cmap</b> colormap.</p>
+            rgbplot(cmap) plots the R (red), G (green), and B (blue) intensities of the specified cmap colormap.</p>
 
 ## Example
 

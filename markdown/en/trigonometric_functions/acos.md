@@ -16,7 +16,7 @@ Computes the inverse cosine in radians for each element of x.
 
 ## Description
 
-<b>acos</b>computes the inverse cosine in radians for each element of<b>x</b>.
+acos computes the inverse cosine in radians for each element of x.
 
 ## Example
 

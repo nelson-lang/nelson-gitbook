@@ -16,7 +16,7 @@ Computes the matrix tangent of a square matrix.
 
 ## Description
 
-<b>tanm(x)</b>computes the matrix tangent of<b>x</b>.
+        tanm(x) computes the matrix tangent of x.
 
 ## Example
 

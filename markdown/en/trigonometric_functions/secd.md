@@ -16,7 +16,7 @@ Secant of argument in degrees.
 
 ## Description
 
-<b>secd</b>computes the secant of argument in degrees for each element of<b>x</b>.
+        secd computes the secant of argument in degrees for each element of x.
 
 ## Example
 

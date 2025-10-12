@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="d2c"><a class="header" href="#d2c">d2c</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="d2c"><a class="header" href="#d2c">d2c</a></h1>
 <p>Convert model from discrete to continuous time.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,8 +175,8 @@
 <li>sysc - continuous-time model</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>sysc = d2c(sysd)</b> transforms a discrete-time dynamic system model <b>sysd</b> into a continuous-time model, employing zero-order hold on the inputs.</p>
-<p>For instance, you can use <b>sysc = d2c(sysd, method)</b> to explicitly define the conversion method.</p>
+<p>The function sysc = d2c(sysd) transforms a discrete-time dynamic system model sysd into a continuous-time model, employing zero-order hold on the inputs.</p>
+<p>For instance, you can use sysc = d2c(sysd, method) to explicitly define the conversion method.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [0.25, 0.5; 0, 0.1];
 B = [1; 0];

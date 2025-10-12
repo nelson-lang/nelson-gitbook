@@ -13,7 +13,7 @@ rethrow error.
 ## Description
 
 <p>
-            <b>rethrow(MException)</b> reissues the error specified by <b>MException</b>.</p>
+            rethrow(MException) reissues the error specified by MException.</p>
 
 ## Example
 

@@ -14,7 +14,7 @@ Generates loader.m file for C++ gateway.
 ## Description
 
 <p>
-            <b>dlgenerateloader</b> generates a 'loader.m' load external dynamic libraries.</p>
+            dlgenerateloader generates a 'loader.m' load external dynamic libraries.</p>
 
 ## Example
 

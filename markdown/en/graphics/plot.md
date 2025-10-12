@@ -27,66 +27,65 @@ Linear 2-D plot.
 ## Description
 
 <p>
-            <b>plot(Y)</b> plots the columns of <b>Y</b> versus their index.</p>
+            plot(Y) plots the columns of Y versus their index.</p>
+
 <p>
-                <b>plot(X, Y)</b> plots line defined by <b>X</b> versus <b>Y</b> pair.</p>
+                plot(X, Y) plots line defined by X versus Y pair.</p>
+
 <p>
-                    <b>go = plot(...)</b> returns a column vector of line graphics objects.</p>
+                    go = plot(...) returns a column vector of line graphics objects.</p>
+
 <p></p>
+
 <p>
-                        <b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order:</p>
+                        LineSpec is a string used to change the characteristics of the line and is composed of three optional parts in any order:</p>
+
 <p></p>
+
 <p>The SymbolSpec specifies the symbol to be drawn at each data point:</p>
-<p>
-                            <b>'o'</b>: Circle symbol</p>
-<p>
-                                <b>'x'</b>: Times symbol</p>
-<p>
-                                    <b>'+'</b>: Plus symbol</p>
-<p>
-                                        <b>'*'</b>: Asterisk symbol</p>
-<p>
-                                            <b>'.'</b>: Dot symbol</p>
-<p>
-                                                <b>'s'</b>: Square symbol</p>
-<p>
-                                                    <b>'d'</b>: Diamond symbol</p>
-<p>
-                                                        <b>'v'</b>: Downward-pointing triangle symbol</p>
-<p>
-                                                            <b>'^'</b>: Upward-pointing triangle symbol</p>
-<p>
-                                                                <b>'>'</b>: Left-pointing triangle symbol</p>
-<p>
-                                                                    <b>'<'</b>: Right-pointing triangle symbol</p>
+
+| Symbol | Description                       |
+| ------ | --------------------------------- |
+| 'o'    | Circle symbol                     |
+| 'x'    | Times symbol                      |
+| '+'    | Plus symbol                       |
+| '\*'   | Asterisk symbol                   |
+| '.'    | Dot symbol                        |
+| 's'    | Square symbol                     |
+| 'd'    | Diamond symbol                    |
+| 'v'    | Downward-pointing triangle symbol |
+| '^'    | Upward-pointing triangle symbol   |
+| '>'    | Left-pointing triangle symbol     |
+| '<'    | Right-pointing triangle symbol    |
+
 <p></p>
+
 <p>The LineStyleSpec specifies the line style to use for each data series:</p>
-<p>
-                                                                        <b>'-'</b>: Solid line style</p>
-<p>
-                                                                            <b>'--'</b>: Dashed line style</p>
-<p>
-                                                                                <b>'-.'</b>: Dot-Dash-Dot-Dash line style</p>
-<p>
-                                                                                    <b>':'</b>: Dotted line style</p>
+
+| Style | Description                  |
+| ----- | ---------------------------- |
+| '-'   | Solid line style             |
+| '--'  | Dashed line style            |
+| '-.'  | Dot-Dash-Dot-Dash line style |
+| ':'   | Dotted line style            |
+
 <p></p>
+
 <p>The ColorSpec specifies the line color to use for each data series:</p>
-<p>
-                                                                                        <b>'k'</b>: Color Black</p>
-<p>
-                                                                                            <b>'y'</b>: Color Yellow</p>
-<p>
-                                                                                                <b>'m'</b>: Color Magenta</p>
-<p>
-                                                                                                    <b>'c'</b>: Color Cyan</p>
-<p>
-                                                                                                        <b>'r'</b>: Color Red</p>
-<p>
-                                                                                                            <b>'b'</b>: Color Blue</p>
-<p>
-                                                                                                                <b>'g'</b>: Color Green</p>
+
+| Color | Description   |
+| ----- | ------------- |
+| 'k'   | Color Black   |
+| 'y'   | Color Yellow  |
+| 'm'   | Color Magenta |
+| 'c'   | Color Cyan    |
+| 'r'   | Color Red     |
+| 'b'   | Color Blue    |
+| 'g'   | Color Green   |
+
 <p></p>
-<p>see <b>line</b> for more information about properties</p>
+
+<p>see line for more information about properties</p>
 
 ## Examples
 

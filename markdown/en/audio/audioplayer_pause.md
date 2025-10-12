@@ -12,7 +12,7 @@ Pause an audioplayer object.
 
 ## Description
 
-<b>pause</b>pauses an audioplayer object.
+        pause pauses an audioplayer object.
 
 ## Example
 

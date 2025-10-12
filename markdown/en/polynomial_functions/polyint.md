@@ -19,7 +19,7 @@ Polynomial integration.
 ## Description
 
 <p>
-            <b>polyint</b> returns the integral of the polynomial represented by the coefficients in <b>p</b> using a constant of integration <b>k</b> (0 by default).</p>
+            polyint returns the integral of the polynomial represented by the coefficients in p using a constant of integration k (0 by default).</p>
 
 ## Example
 

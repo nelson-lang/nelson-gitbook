@@ -13,7 +13,7 @@ Return the Current date as character vector.
 ## Description
 
 <p>
-            <b>d = date()</b> returns the current date as a character vector in the format <b>dd-MMM-yyyy</b>.</p>
+            d = date() returns the current date as a character vector in the format dd-MMM-yyyy.</p>
 
 ## Example
 

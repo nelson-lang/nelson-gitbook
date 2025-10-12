@@ -30,7 +30,7 @@ Display image.
 ## Description
 
 <p>
-            <b>imshow(img)</b> displays the image <b>im</b>.</p>
+            imshow(img) displays the image im.</p>
 
 ## Example
 

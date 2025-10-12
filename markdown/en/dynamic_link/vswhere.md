@@ -13,9 +13,10 @@ Locate Visual Studio 2017, 2019 and newer installations
 ## Description
 
 <p>
-            <b>vswhere</b> allows to find easily Visual studio.</p>
+            vswhere allows to find easily Visual studio.</p>
+
 <p>
-                <b>vswhere</b> is currently only implemented on Windows platform.</p>
+                vswhere is currently only implemented on Windows platform.</p>
 
 ## Bibliography
 

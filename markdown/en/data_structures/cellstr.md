@@ -17,7 +17,7 @@ Converts to cell of character array.
 ## Description
 
 <p>
-            <b>cellstr(A)</b> converts to cell of character array.</p>
+            cellstr(A) converts to cell of character array.</p>
 
 ## Examples
 

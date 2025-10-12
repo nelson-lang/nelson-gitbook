@@ -19,8 +19,9 @@ Creates an complex number.
 ## Description
 
 <p>
-            <b>complex</b> returns a complex value from real arguments.</p>
-<p>With only one input argument, <b>complex</b> returns a complex value a + 0*i.</p>
+            complex returns a complex value from real arguments.</p>
+
+<p>With only one input argument, complex returns a complex value a + 0*i.</p>
 
 ## Example
 

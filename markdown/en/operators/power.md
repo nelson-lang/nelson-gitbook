@@ -19,7 +19,7 @@ Element wise power, .^ operator
 ## Description
 
 <p>
-            <b>C = power(A, B)</b> performs an element wise power operation: A .^ B .</p>
+            C = power(A, B) performs an element wise power operation: A .^ B .</p>
 
 ## Example
 

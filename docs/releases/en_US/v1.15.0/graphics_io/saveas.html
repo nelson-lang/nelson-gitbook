@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="saveas"><a class="header" href="#saveas">saveas</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="saveas"><a class="header" href="#saveas">saveas</a></h1>
 <p>Save figure to specific file format.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -170,17 +171,25 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>saveas</b> save figure to specific file format.</p>
+            saveas save figure to specific file format.</p>
 <p>
-                <b>supported formats</b>:</p>
-Option Format File extension svg SVG (scalable vector graphics) .svg pdf Full page Portable Document Format (PDF) color .pdf png PNG 24-bit .png jpg JPEG 24-bit .jpg gif Graphics Interchange Format .gif tif Tagged Image File Format .tif
+                supported formats:</p>
+<div class="table-wrapper"><table><thead><tr><th>Option</th><th>Format</th><th>File extension</th></tr></thead><tbody>
+<tr><td>svg</td><td>SVG (scalable vector graphics)</td><td>.svg</td></tr>
+<tr><td>pdf</td><td>Full page Portable Document Format (PDF) color</td><td>.pdf</td></tr>
+<tr><td>png</td><td>PNG 24-bit</td><td>.png</td></tr>
+<tr><td>jpg</td><td>JPEG 24-bit</td><td>.jpg</td></tr>
+<tr><td>gif</td><td>Graphics Interchange Format</td><td>.gif</td></tr>
+<tr><td>tif</td><td>Tagged Image File Format</td><td>.tif</td></tr>
+</tbody></table>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">x = -2:0.25:2;
 y = x;
 [X,Y] = meshgrid(x);
 F = X.*exp(-X.^2-Y.^2);
 surf(X,Y,F);
-saveas(gcf(), 'svg-file.svg');
+saveas(gcf(), [tempdir, 'svg-file.svg']);
 
 </code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>

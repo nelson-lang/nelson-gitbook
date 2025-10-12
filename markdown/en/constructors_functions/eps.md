@@ -19,7 +19,8 @@ Creates an epsilon (machine precision)
 ## Description
 
 <p>
-            <b>eps</b> returns the machine precision 2^(-52) for double and 2^(-23) for single.</p>
+            eps returns the machine precision 2^(-52) for double and 2^(-23) for single.</p>
+
 <p>eps(Inf), eps(-Inf) and eps(NaN) return NaN.</p>
 
 ## Examples

@@ -18,7 +18,7 @@ Unary plus, + operator
 ## Description
 
 <p>
-            <b>C = uplus(A)</b> performs unary plus ie +A.</p>
+            C = uplus(A) performs unary plus ie +A.</p>
 
 ## Example
 

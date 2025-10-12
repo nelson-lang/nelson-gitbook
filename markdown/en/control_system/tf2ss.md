@@ -21,7 +21,7 @@ Convert transfer function filter parameters to state-space form.
 ## Description
 
 <p>
-            <b>[A, B, C, D] = tf2ss(b, a)</b> transforms a single-input transfer function, either continuous-time or discrete-time, into an equivalent state-space representation.</p>
+            [A, B, C, D] = tf2ss(b, a) transforms a single-input transfer function, either continuous-time or discrete-time, into an equivalent state-space representation.</p>
 
 ## Example
 

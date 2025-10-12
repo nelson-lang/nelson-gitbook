@@ -17,7 +17,7 @@ Creates a cell from a structure.
 ## Description
 
 <p>
-            <b>ce = struct2cell(st)</b> returns a new cell from the structure.</p>
+            ce = struct2cell(st) returns a new cell from the structure.</p>
 
 ## Example
 

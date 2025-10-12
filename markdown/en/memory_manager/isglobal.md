@@ -17,7 +17,7 @@ Checks if a variable is global.
 ## Description
 
 <p>
-            <b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.</p>
+            isglobal returns true if variable_name has been declared as global variable and false otherwise.</p>
 
 ## Example
 

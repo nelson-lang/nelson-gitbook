@@ -20,10 +20,12 @@ Run function in background.
 ## Description
 
 <p>
-            <b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background.</p>
-<p>backgroundPool has <b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.</p>
+            f = parfeval(bPool, fptr, n, x1, ..., xm) starts the function fptr to run in the background.</p>
+
+<p>backgroundPool has NumWorkers available. If there are more functions scheduled, functions wait than one entry is available in pool.</p>
+
 <p>
-                <b>parfeval</b> runs the function <b>fptr</b> on a background worker.</p>
+                parfeval runs the function fptr on a background worker.</p>
 
 ## Example
 

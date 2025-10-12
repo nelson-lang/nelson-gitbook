@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="image"><a class="header" href="#image">image</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="image"><a class="header" href="#image">image</a></h1>
 <p>Display image from array.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -183,42 +184,26 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>image</b> displays C data as an image.</p>
+            image displays C data as an image.</p>
 <p>Properties:</p>
-<p></p>
-<p>
-                <b>AlphaData</b> Transparency data: scalar, array the same size as CData, or 1 (default).</p>
-<p>
-                    <b>AlphaDataMapping</b>
-                </p>
-<p>
-                    <b>CData</b> Image color data: vector or matrix, 3-D array of RGB triplets.</p>
-<p>
-                        <b>CDataMapping</b> Color data mapping method: 'scaled' or 'direct' (default).</p>
-<p>
-                            <b>Children</b> [].</p>
-<p>
-                                <b>Parent</b> Parent: axes object.</p>
-<p>
-                                    <b>Tag</b> Object identifier: string scalar, character vector, '' (default).</p>
-<p>
-                                        <b>Type</b> Type of graphics object: 'surface'.</p>
-<p>
-                                            <b>UserData</b>: User data: array or [] (default).</p>
-<p>
-                                                <b>Visible</b> State of visibility: 'off' or 'on' (default).</p>
-<p>
-                                                    <b>XData</b> Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).</p>
-<p>
-                                                        <b>YData</b> Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).</p>
-<p></p>
-<p>
-                                                            <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-<p>
-                                                                <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-<p>
-                                                                    <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+<div class="table-wrapper"><table><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody>
+<tr><td>AlphaData</td><td>Transparency data: scalar, array the same size as CData, or 1 (default).</td></tr>
+<tr><td>AlphaDataMapping</td><td>Alpha data mapping method.</td></tr>
+<tr><td>CData</td><td>Image color data: vector or matrix, 3-D array of RGB triplets.</td></tr>
+<tr><td>CDataMapping</td><td>Color data mapping method: 'scaled' or 'direct' (default).</td></tr>
+<tr><td>Children</td><td>[].</td></tr>
+<tr><td>Parent</td><td>Parent: axes object.</td></tr>
+<tr><td>Tag</td><td>Object identifier: string scalar, character vector, '' (default).</td></tr>
+<tr><td>Type</td><td>Type of graphics object: 'surface'.</td></tr>
+<tr><td>UserData</td><td>User data: array or [] (default).</td></tr>
+<tr><td>Visible</td><td>State of visibility: 'off' or 'on' (default).</td></tr>
+<tr><td>XData</td><td>Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).</td></tr>
+<tr><td>YData</td><td>Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).</td></tr>
+<tr><td>CreateFcn</td><td>Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.</td></tr>
+<tr><td>DeleteFcn</td><td>Callback (function handle, string or cell) called when object is deleted.</td></tr>
+<tr><td>BeingDeleted</td><td>Flag indicating that the object is being deleted.</td></tr>
+</tbody></table>
+</div>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();
 L = linspace(0, 1);

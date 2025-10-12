@@ -16,7 +16,7 @@ Checks that value is a sparse matrix or raise an error.
 ## Description
 
 <p>
-            <b>mustBeSparse</b> checks that value is a sparse matrix or raise an error.</p>
+            mustBeSparse checks that value is a sparse matrix or raise an error.</p>
 
 ## Example
 

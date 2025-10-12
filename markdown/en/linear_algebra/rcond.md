@@ -17,7 +17,7 @@ Inverse condition number.
 ## Description
 
 <p>
-            <b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
+            rcond(x) computes the reciprocal of the condition of x in the 1-norm.</p>
 
 ## Example
 

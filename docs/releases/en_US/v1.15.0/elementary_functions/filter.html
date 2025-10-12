@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="filter"><a class="header" href="#filter">filter</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="filter"><a class="header" href="#filter">filter</a></h1>
 <p>1-D digital filter</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,10 +173,10 @@
 <li>y - Filtered data: matrix.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>filter(b, a, x)</b> applies a rational transfer function to filter the input data array <b>x</b>.</p>
-<p>This transfer function is defined by the coefficients of the numerator (<b>b</b>) and denominator (<b>a</b>).</p>
-<p>If the first coefficient of <b>a</b> (a(1)) is not equal to 1, the filter normalizes the coefficients by a(1). It is crucial for a(1) to be nonzero.</p>
-<p>When <b>x</b> is a vector, the function returns a vector of the same size as <b>x</b> containing the filtered data.</p>
+<p>The function filter(b, a, x) applies a rational transfer function to filter the input data array x.</p>
+<p>This transfer function is defined by the coefficients of the numerator (b) and denominator (a).</p>
+<p>If the first coefficient of a (a(1)) is not equal to 1, the filter normalizes the coefficients by a(1). It is crucial for a(1) to be nonzero.</p>
+<p>When x is a vector, the function returns a vector of the same size as x containing the filtered data.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">f = figure();
 rng default

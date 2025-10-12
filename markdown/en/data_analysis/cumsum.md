@@ -23,7 +23,7 @@ Cumulative sum of array elements.
 ## Description
 
 <p>
-            <b>R = cumsum(M)</b> returns the cumulative sum of the array elements of M.</p>
+            R = cumsum(M) returns the cumulative sum of the array elements of M.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ Return true if variable var is a char array.
 
 ## Description
 
-<b>ischar</b>returns a logical 1 if the argument is a char array and a logical 0 otherwise.
+        ischar returns a logical 1 if the argument is a char array and a logical 0 otherwise.
 
 ## Examples
 

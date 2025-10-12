@@ -17,9 +17,11 @@ Convert table to homogeneous array.
 ## Description
 
 <p>
-            <b>A = table2array(T)</b> converts the input table <b>T</b> into a homogeneous array <b>A</b>, where the variables in <b>T</b> become the columns of <b>A</b>.</p>
-<p>The output <b>A</b> does not retain the table properties from <b>T.Properties</b>.</p>
-<p>If <b>T</b> is a table with row names, these row names will not be included in <b>A</b>.</p>
+            A = table2array(T) converts the input table T into a homogeneous array A, where the variables in T become the columns of A.</p>
+
+<p>The output A does not retain the table properties from T.Properties.</p>
+
+<p>If T is a table with row names, these row names will not be included in A.</p>
 
 ## Example
 

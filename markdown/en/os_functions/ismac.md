@@ -13,7 +13,7 @@ Checks if version is for MacOS platform.
 ## Description
 
 <p>
-            <b>ismac</b> checks if it is a MacOs platform.</p>
+            ismac checks if it is a MacOs platform.</p>
 
 ## Example
 

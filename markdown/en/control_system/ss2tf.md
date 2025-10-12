@@ -23,10 +23,12 @@ Convert state-space representation to transfer function.
 ## Description
 
 <p>
-            <b>[b, a] = ss2tf(A, B, C, D)</b> transforms a state-space representation of a system into an equivalent transfer function.</p>
-<p>The function <b>ss2tf</b> returns the Laplace-transform transfer function for continuous-time systems and the Z-transform transfer function for discrete-time systems.</p>
+            [b, a] = ss2tf(A, B, C, D) transforms a state-space representation of a system into an equivalent transfer function.</p>
+
+<p>The function ss2tf returns the Laplace-transform transfer function for continuous-time systems and the Z-transform transfer function for discrete-time systems.</p>
+
 <p>
-                <b>[b, a] = ss2tf(A, B, C, D, ni)</b> computes the transfer function resulting from exciting the nith input of a system with multiple inputs using a unit impulse.</p>
+                [b, a] = ss2tf(A, B, C, D, ni) computes the transfer function resulting from exciting the nith input of a system with multiple inputs using a unit impulse.</p>
 
 ## Example
 

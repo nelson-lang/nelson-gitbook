@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="h5read"><a class="header" href="#h5read">h5read</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="h5read"><a class="header" href="#h5read">h5read</a></h1>
 <p>Read HDF5 data set.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -172,7 +173,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>h5read</b> reads data set in <b>location</b> from the HDF5 file.</p>
+            h5read reads data set in location from the HDF5 file.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">h5_directory = [modulepath('hdf5','tests'), '/h5'];
 double_data = [h5_directory, '/h5ex_t_float.h5'];

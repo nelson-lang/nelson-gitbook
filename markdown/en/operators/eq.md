@@ -19,10 +19,12 @@ equality, == operator.
 ## Description
 
 <p>
-            <b>C = eq(A, B)</b> returns a logical array with elements set to logical <b>true</b> where arrays A and B are equals.</p>
+            C = eq(A, B) returns a logical array with elements set to logical true where arrays A and B are equals.</p>
+
 <p></p>
+
 <p>
-                <b>eq</b> compares both real and imaginary parts of numeric arrays.</p>
+                eq compares both real and imaginary parts of numeric arrays.</p>
 
 ## Examples
 

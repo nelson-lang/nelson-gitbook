@@ -21,7 +21,7 @@ Converts xml Nelson help files to html.
 ## Description
 
 <p>
-            <b>xmldoctohelp</b> converts xml Nelson help files to html.</p>
+            xmldoctohelp converts xml Nelson help files to html.</p>
 
 ## See also
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="randn"><a class="header" href="#randn">randn</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="randn"><a class="header" href="#randn">randn</a></h1>
 <p>Normally distributed random number.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -179,9 +180,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>randn</b> returns a matrix with normally distributed random elements having zero mean and variance one.</p>
-<p>By default, <b>randn</b> uses the ziggurat algorithm.</p>
-<p>seed can be modified using <b>rng</b>.</p>
+            randn returns a matrix with normally distributed random elements having zero mean and variance one.</p>
+<p>By default, randn uses the ziggurat algorithm.</p>
+<p>seed can be modified using rng.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">rng('default');
 randn

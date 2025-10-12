@@ -20,7 +20,8 @@ diff two files or strings.
 ## Description
 
 <p>
-            <b>diff_file</b> compares two files and returns diff as unified format.</p>
+            diff_file compares two files and returns diff as unified format.</p>
+
 <p>if compared files are equals, res is an empty string.</p>
 
 ## Example

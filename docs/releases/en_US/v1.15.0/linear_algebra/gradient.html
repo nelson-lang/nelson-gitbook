@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="gradient"><a class="header" href="#gradient">gradient</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="gradient"><a class="header" href="#gradient">gradient</a></h1>
 <p>Numerical gradient.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -177,12 +178,12 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>gradient(F)</b> calculates the one-dimensional numerical gradient of the vector or matrix F.</p>
+            gradient(F) calculates the one-dimensional numerical gradient of the vector or matrix F.</p>
 <p>The output FX represents the differences in the x (horizontal) direction, corresponding to ∂F/∂x.</p>
 <p>It assumes that the spacing between points is 1.</p>
 <p>
-                <b>gradient(F, h)</b> allows for specifying a uniform spacing h between points in each direction.</p>
-<p>This uniform spacing can also be individually specified for each dimension of F using <b>gradient(F, hx, hy, ..., hN)</b>.</p>
+                gradient(F, h) allows for specifying a uniform spacing h between points in each direction.</p>
+<p>This uniform spacing can also be individually specified for each dimension of F using gradient(F, hx, hy, ..., hN).</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">[X, Y] = meshgrid(-2:0.2:2);
 Z = X .* exp(-X.^2 - Y.^2);

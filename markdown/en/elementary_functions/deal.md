@@ -18,7 +18,8 @@ Distribute inputs to outputs.
 ## Description
 
 <p>
-            <b>deal</b> replicates the input parameters to the corresponding output parameters.</p>
+            deal replicates the input parameters to the corresponding output parameters.</p>
+
 <p>If a singular input parameter is provided, its value will be duplicated across all outputs.</p>
 
 ## Examples

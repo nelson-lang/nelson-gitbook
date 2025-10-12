@@ -21,18 +21,24 @@ Profile execution time for Macro functions.
 ## Description
 
 <p>Profiling is a way to measure where Macro function spend times.</p>
+
 <p>
-            <b>s = profile('status')</b> returns a structure with the current status of the profiler.</p>
+            s = profile('status') returns a structure with the current status of the profiler.</p>
+
 <p>
-                <b>p = profile('info')</b> returns a structure with collected profiling data.</p>
+                p = profile('info') returns a structure with collected profiling data.</p>
+
 <p>
-                    <b>profile('on')</b> starts profiler.</p>
+                    profile('on') starts profiler.</p>
+
 <p>
-                        <b>profile('off')</b> stops profiler. Collected profiling data will be retrieved later with <b>p = profile ('info')</b>.</p>
+                        profile('off') stops profiler. Collected profiling data will be retrieved later with p = profile ('info').</p>
+
 <p>
-                            <b>profile('clear')</b> clears collected profiling data.</p>
+                            profile('clear') clears collected profiling data.</p>
+
 <p>
-                                <b>profile('resume')</b> restarts and continue and extends collected profiling data.</p>
+                                profile('resume') restarts and continue and extends collected profiling data.</p>
 
 ## Examples
 

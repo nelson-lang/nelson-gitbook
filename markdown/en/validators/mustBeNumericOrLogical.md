@@ -16,7 +16,7 @@ Checks that input is numeric or logical.
 ## Description
 
 <p>
-            <b>mustBeNumericOrLogical</b> checks that value is numeric or logical otherwise raise an error.</p>
+            mustBeNumericOrLogical checks that value is numeric or logical otherwise raise an error.</p>
 
 ## Example
 

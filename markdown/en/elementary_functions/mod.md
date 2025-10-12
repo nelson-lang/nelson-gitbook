@@ -18,7 +18,8 @@ Modulus after division.
 ## Description
 
 <p>
-            <b>C = mod(A, B)</b> computes the modulo of A and B, i.e : A - B .* floor (A ./ B).</p>
+            C = mod(A, B) computes the modulo of A and B, i.e : A - B .* floor (A ./ B).</p>
+
 <p>This function manages also negative values.</p>
 
 ## Example

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="webread"><a class="header" href="#webread">webread</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="webread"><a class="header" href="#webread">webread</a></h1>
 <p>Read data from RESTful web service to Nelson's variable</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,7 +176,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>webread()</b> reads content from the web to nelson's variable.</p>
+            webread() reads content from the web to nelson's variable.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">url = 'https://httpbin.org/get';
 res = webread(url,weboptions('ContentType','json'));

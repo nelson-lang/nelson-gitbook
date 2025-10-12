@@ -9,7 +9,7 @@ while loop.
 ## Description
 
 <p>
-            <b>while</b> loop executes a set of statements as long as a the test condition remains <b>true</b>.</p>
+            while loop executes a set of statements as long as a the test condition remains true.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ Checks that value is real.
 ## Description
 
 <p>
-            <b>mustBeReal</b> checks that value is real or raise an error.</p>
+            mustBeReal checks that value is real or raise an error.</p>
 
 ## Example
 

@@ -20,12 +20,14 @@ colon operator ':'.
 ## Description
 
 <p>
-            <b>colon</b> creates vectors. It is an usefull function for loop, extraction and insertion.</p>
+            colon creates vectors. It is an usefull function for loop, extraction and insertion.</p>
+
 <p>
-                <b>colon(base, limit)</b> is equivalent to <b>base:limit</b>
+                colon(base, limit) is equivalent to base:limit
             </p>
+
 <p>
-                <b>colon(base, increment, limit)</b> is equivalent to <b>base:increment:limit</b>
+                colon(base, increment, limit) is equivalent to base:increment:limit
             </p>
 
 ## Examples

@@ -21,7 +21,7 @@ Read data from RESTful web service to Nelson's variable
 ## Description
 
 <p>
-            <b>webread()</b> reads content from the web to nelson's variable.</p>
+            webread() reads content from the web to nelson's variable.</p>
 
 ## Examples
 

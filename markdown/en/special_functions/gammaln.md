@@ -16,9 +16,11 @@ Logarithm of gamma function
 
 ## Description
 
-<p>The function <b>gammaln(A)</b> computes the natural logarithm of the gamma function for a given input <b>A</b>, expressed as <b>gammaln(A) = log(gamma(A))</b>.</p>
+<p>The function gammaln(A) computes the natural logarithm of the gamma function for a given input A, expressed as gammaln(A) = log(gamma(A)).</p>
+
 <p>It's important to note that A must be a nonnegative real number.</p>
-<p>Using gammaln helps prevent potential underflow and overflow issues that might arise if directly computing <b>log(gamma(A))</b>.</p>
+
+<p>Using gammaln helps prevent potential underflow and overflow issues that might arise if directly computing log(gamma(A)).</p>
 
 ## Example
 

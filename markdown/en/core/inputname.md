@@ -17,9 +17,10 @@ Get variable name of function input.
 ## Description
 
 <p>
-            <b>inputname</b> get variable name of function input.</p>
+            inputname get variable name of function input.</p>
+
 <p>
-                <b>inputname</b> is only useable within a function</p>
+                inputname is only useable within a function</p>
 
 ## Example
 

@@ -19,7 +19,7 @@ Clear figure.
 ## Description
 
 <p>
-            <b>clf</b> clears the current figure.</p>
+            clf clears the current figure.</p>
 
 ## Example
 

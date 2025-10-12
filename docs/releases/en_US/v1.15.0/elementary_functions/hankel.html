@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="hankel"><a class="header" href="#hankel">hankel</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="hankel"><a class="header" href="#hankel">hankel</a></h1>
 <p>Hankel matrix</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -173,10 +174,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>H = hankel(c)</b> returns a square Hankel Matrix with <b>c</b> the first column of the matrix and the elements are zero below the main anti-diagonal.</p>
+            H = hankel(c) returns a square Hankel Matrix with c the first column of the matrix and the elements are zero below the main anti-diagonal.</p>
 <p>
-                <b>H = hankel(c, r)</b> returns a Hankel matrix with <b>c</b> as its first column and <b>r</b> as its last row.</p>
-<p>If last element of <b>c</b> differs from the first element of <b>r</b>, then Hankel issues a warning and uses the last element of <b>c</b> for the anti-diagonal.</p>
+                H = hankel(c, r) returns a Hankel matrix with c as its first column and r as its last row.</p>
+<p>If last element of c differs from the first element of r, then Hankel issues a warning and uses the last element of c for the anti-diagonal.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">c = [1 2 3 4 5];
 hankel(c)

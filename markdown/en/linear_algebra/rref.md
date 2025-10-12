@@ -22,9 +22,10 @@ Gauss-Jordan elimination.
 ## Description
 
 <p>
-            <b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.</p>
+            R = rref(A) returns the reduced row echelon form of A.</p>
+
 <p>
-                <b>[R, p] = rref(A)</b> returns also the nonzero pivots <b>p</b>.</p>
+                [R, p] = rref(A) returns also the nonzero pivots p.</p>
 
 ## Bibliography
 

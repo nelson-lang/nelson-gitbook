@@ -19,7 +19,7 @@ Matrix multiplication, \* operator
 ## Description
 
 <p>
-            <b>C = mtimes(A, B)</b> performs matrix multiplication operation: A * B.</p>
+            C = mtimes(A, B) performs matrix multiplication operation: A * B.</p>
 
 ## Examples
 

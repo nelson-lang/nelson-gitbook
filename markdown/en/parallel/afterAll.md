@@ -19,9 +19,11 @@ Run function after all functions finish running in the background.
 ## Description
 
 <p>
-            <b>B = afterAll(F, fcn, n)</b> returns a AfterAllFuture object <b>B</b>.</p>
-<p>Function <b>fcn</b> is automatically runned after all elements in the Future array <b>F</b> were finished.</p>
-<p>If any of the elements in <b>F</b> encounters an error, the <b>Error</b> property of <b>B</b> contains an error.</p>
+            B = afterAll(F, fcn, n) returns a AfterAllFuture object B.</p>
+
+<p>Function fcn is automatically runned after all elements in the Future array F were finished.</p>
+
+<p>If any of the elements in F encounters an error, the Error property of B contains an error.</p>
 
 ## Example
 

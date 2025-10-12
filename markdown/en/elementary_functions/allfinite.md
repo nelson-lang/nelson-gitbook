@@ -17,7 +17,7 @@ Check if all array elements are finite.
 ## Description
 
 <p>
-            <b>allfinite</b> returns a logical scalar which is true where elements of M are all finite values.</p>
+            allfinite returns a logical scalar which is true where elements of M are all finite values.</p>
 
 ## Example
 

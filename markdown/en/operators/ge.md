@@ -19,10 +19,12 @@ greater than or equal, >= operator.
 ## Description
 
 <p>
-            <b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.</p>
+            C = ge(A, B) returns a logical array with elements set to logical true A is greater than or equal to B.</p>
+
 <p></p>
+
 <p>
-                <b>ge</b> compares only the real part of numeric arrays.</p>
+                ge compares only the real part of numeric arrays.</p>
 
 ## Examples
 

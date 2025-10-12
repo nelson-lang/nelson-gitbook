@@ -49,55 +49,80 @@ history manager.
 ## Description
 
 <p>
-            <b>history()</b> displays the current Nelson history.</p>
+            history() displays the current Nelson history.</p>
+
 <p>
-                <b>c = history()</b> returns the current Nelson history in a cell of strings.</p>
+                c = history() returns the current Nelson history in a cell of strings.</p>
+
 <p>
-                    <b>s = history('size')</b> returns history size max.</p>
+                    s = history('size') returns history size max.</p>
+
 <p>
-                        <b>f = history('filename')</b> returns the history filename.</p>
+                        f = history('filename') returns the history filename.</p>
+
 <p>
-                            <b>l = history('enable_save')</b> returns the history manager state.</p>
+                            l = history('enable_save') returns the history manager state.</p>
+
 <p>
-                                <b>c = history('get')</b> returns the current Nelson history in a cell of strings.</p>
+                                c = history('get') returns the current Nelson history in a cell of strings.</p>
+
 <p>
-                                    <b>history('display')</b> displays the current Nelson history.</p>
+                                    history('display') displays the current Nelson history.</p>
+
 <p>
-                                        <b>history('save')</b> saves current history file.</p>
+                                        history('save') saves current history file.</p>
+
 <p>
-                                            <b>history('load')</b> load current history file.</p>
+                                            history('load') load current history file.</p>
+
 <p>
-                                                <b>history('clear')</b> clears history.</p>
+                                                history('clear') clears history.</p>
+
 <p>
-                                                    <b>history('duplicated')</b> get state about save of consecutive duplicated commands.</p>
+                                                    history('duplicated') get state about save of consecutive duplicated commands.</p>
+
 <p>
-                                                        <b>history('saveafter')</b> get state about save the history after nth commands.</p>
+                                                        history('saveafter') get state about save the history after nth commands.</p>
+
 <p>
-                                                            <b>history('removeexit')</b> get state about do not save exit in history file.</p>
+                                                            history('removeexit') get state about do not save exit in history file.</p>
+
 <p>
-                                                                <b>history('size', new_size)</b> set history size max with <b>new_size</b>.</p>
+                                                                history('size', new_size) set history size max with new_size.</p>
+
 <p>
-                                                                    <b>history('enable_save', true_false)</b> set the history manager state: false for 'off', true for 'on'.</p>
+                                                                    history('enable_save', true_false) set the history manager state: false for 'off', true for 'on'.</p>
+
 <p>
-                                                                        <b>history('delete', lines)</b> deletes lines by index: a scalar value or a vector 1x2.</p>
+                                                                        history('delete', lines) deletes lines by index: a scalar value or a vector 1x2.</p>
+
 <p>
-                                                                            <b>history('append', str)</b> append command to history.</p>
+                                                                            history('append', str) append command to history.</p>
+
 <p>
-                                                                                <b>history('filename', name)</b> set the history filename.</p>
+                                                                                history('filename', name) set the history filename.</p>
+
 <p>
-                                                                                    <b>history('load', filename_history)</b> load history file.</p>
+                                                                                    history('load', filename_history) load history file.</p>
+
 <p>
-                                                                                        <b>history('save', filename_history)</b> save history file</p>
+                                                                                        history('save', filename_history) save history file</p>
+
 <p>
-                                                                                            <b>history('duplicated', true_false)</b> set state about consecutive duplicated commands. true remove duplicated.</p>
+                                                                                            history('duplicated', true_false) set state about consecutive duplicated commands. true remove duplicated.</p>
+
 <p>
-                                                                                                <b>history('removeexit', true_false)</b> set state about do not save exit in history file.</p>
+                                                                                                history('removeexit', true_false) set state about do not save exit in history file.</p>
+
 <p>
-                                                                                                    <b>history('get', lines)</b>returns the current Nelson history in a cell of strings by index: a scalar value or a vector 1x2.</p>
+                                                                                                    history('get', lines)returns the current Nelson history in a cell of strings by index: a scalar value or a vector 1x2.</p>
+
 <p>
-                                                                                                        <b>history('saveafter', nb_commands)</b> saves the history file after <b>nb_commands</b> statements are added to the file.</p>
+                                                                                                        history('saveafter', nb_commands) saves the history file after nb_commands statements are added to the file.</p>
+
 <p>
-                                                                                                            <b>Tips</b>: You can easily share your history file in the cloud by adding few lines code in your user startup file.</p>
+                                                                                                            Tips: You can easily share your history file in the cloud by adding few lines code in your user startup file.</p>
+
 <p>If nelson launched with '--nouserstartup' option, history file will be not loaded at startup and not saved at exit.</p>
 
 ## Examples

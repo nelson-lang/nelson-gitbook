@@ -28,7 +28,8 @@ Open a file in Nelson.
 ## Description
 
 <p>
-            <b>fopen</b> opens a file in Nelson.</p>
+            fopen opens a file in Nelson.</p>
+
 <p>functions fprintf, fgetl, fgets, fread, and fwrite use character encoding for subsequent read and write operations.</p>
 
 ## Examples

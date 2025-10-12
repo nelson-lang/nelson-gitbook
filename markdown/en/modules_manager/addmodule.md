@@ -14,7 +14,7 @@ Add module to Nelson.
 ## Description
 
 <p>
-            <b>addmodule</b> registers a new module designed by his path and short name.</p>
+            addmodule registers a new module designed by his path and short name.</p>
 
 ## Example
 

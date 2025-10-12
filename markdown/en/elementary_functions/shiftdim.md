@@ -21,7 +21,8 @@ Shift array dimensions
 ## Description
 
 <p>
-            <b>shiftdim(A, n)</b> reorganizes the dimensions of an array A by n positions.</p>
+            shiftdim(A, n) reorganizes the dimensions of an array A by n positions.</p>
+
 <p>Specifically, when n is a positive integer, it shifts the dimensions to the left, and when n is a negative integer, it shifts the dimensions to the right.</p>
 
 ## Example

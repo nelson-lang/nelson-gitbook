@@ -25,12 +25,15 @@ Sort array elements by quick sort algorithm.
 ## Description
 
 <p>
-            <b>sort</b> implements quick sort algorithm.</p>
+            sort implements quick sort algorithm.</p>
+
 <p>name-value pair arguments:</p>
+
 <p>
-                <b>'MissingPlacement'</b> - Placement of missing values: <b>'auto'</b> (default), <b>'first'</b>, <b>'last'</b>.</p>
+                'MissingPlacement' - Placement of missing values: 'auto' (default), 'first', 'last'.</p>
+
 <p>
-                    <b>'ComparisonMethod'</b> - Element comparison method: <b>'auto'</b> (default), <b>'real'</b>, <b>'abs'</b>.</p>
+                    'ComparisonMethod' - Element comparison method: 'auto' (default), 'real', 'abs'.</p>
 
 ## Bibliography
 

@@ -15,7 +15,7 @@ Defines a global variable.
 ## Description
 
 <p>
-            <b>global</b> make variable in global assign value to a variable in a specified variables scope.</p>
+            global make variable in global assign value to a variable in a specified variables scope.</p>
 
 ## Example
 

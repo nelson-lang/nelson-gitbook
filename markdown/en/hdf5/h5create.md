@@ -16,21 +16,36 @@ Creates a data set.
 ## Description
 
 <p>
-            <b>h5create</b> creates a data set and specify its extent dimensions, datatype and chunk size.</p>
+            h5create creates a data set and specify its extent dimensions, datatype and chunk size.</p>
+
 <p>Name-Values pair supported:</p>
+
 <p>Name: Datatype (Nelson® datatypes).</p>
+
 <p>Value: 'double' (default), 'uint64', 'uint32', 'uint16', 'uint8', 'single', 'int64', 'int32', 'int16', or	'int8'.</p>
+
 <p>Name: ChunkSize, chunking layout</p>
+
 <p>Value: []</p>
+
 <p>Name: Deflate, gzip compression level (0-9)</p>
+
 <p>Value: 0 (default)</p>
+
 <p>Name: FillValue, fill value for numeric data sets.</p>
+
 <p>Value: 0 (default)</p>
+
 <p>Name: Fletcher32, enable fletcher32 checksum filter.</p>
+
 <p>Value: logical: false by default</p>
+
 <p>Name: Shuffle, enable shuffle filter.</p>
+
 <p>Value: logical: false by default</p>
+
 <p>Name: TextEncoding, Character encoding.</p>
+
 <p>Value: 'system' or 'UTF-8' (default).</p>
 
 ## Example

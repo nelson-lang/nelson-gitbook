@@ -19,7 +19,7 @@ Polynomial curve fitting.
 ## Description
 
 <p>
-            <b>p = polyfit(x, y, n)</b> returns the coefficients for a polynomial <b>p(x)</b> of degree <b>n</b> that is a best fit for the data in <b>y</b>.</p>
+            p = polyfit(x, y, n) returns the coefficients for a polynomial p(x) of degree n that is a best fit for the data in y.</p>
 
 ## Example
 

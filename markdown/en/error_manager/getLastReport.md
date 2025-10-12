@@ -13,7 +13,7 @@ Returns last recorded formatted error message.
 ## Description
 
 <p>
-            <b>getLastReport</b> returns last formatted error message.</p>
+            getLastReport returns last formatted error message.</p>
 
 ## Examples
 

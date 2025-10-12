@@ -33,34 +33,57 @@ Random Number Generator.
 ## Description
 
 <p>
-            <b>lst = rng('enginelist')</b> returns the list of available random number generator.</p>
+            lst = rng('enginelist') returns the list of available random number generator.</p>
+
 <p>
-                <b>rng('default')</b> puts the settings of the random number generator to default values.</p>
+                rng('default') puts the settings of the random number generator to default values.</p>
+
 <p>
-                    <b>s = rng('default')</b> puts the settings of the random number generator to default values.</p>
+                    s = rng('default') puts the settings of the random number generator to default values.</p>
+
 <p>
-                        <b>rng('shuffle')</b> puts the settings of the random number generator to default values and returns previous generator as an struct.</p>
+                        rng('shuffle') puts the settings of the random number generator to default values and returns previous generator as an struct.</p>
+
 <p>
-                            <b>s = rng('shuffle')</b> seeds the random number generator based on the current time.</p>
+                            s = rng('shuffle') seeds the random number generator based on the current time.</p>
+
 <p>
-                                <b>rng(seed)</b> seeds the random number generator using the nonnegative integer.</p>
+                                rng(seed) seeds the random number generator using the nonnegative integer.</p>
+
 <p>
-                                    <b>s = rng(seed)</b> seeds the random number generator using the nonnegative integer and returns previous generator as an struct.</p>
+                                    s = rng(seed) seeds the random number generator using the nonnegative integer and returns previous generator as an struct.</p>
+
 <p>
-                                        <b>rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used.</p>
+                                        rng(seed, generator) seeds the random number generator using the nonnegative integer and specify also the type of generator used.</p>
+
 <p>
-                                            <b>s = rng(seed, generator)</b> seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct.</p>
+                                            s = rng(seed, generator) seeds the random number generator using the nonnegative integer and specify also the type of generator used and returns previous generator as an struct.</p>
+
 <p>
-                                                <b>rng('shuffle', generator)</b> seeds the random number generator based on the current time and specify also the type of generator used.</p>
+                                                rng('shuffle', generator) seeds the random number generator based on the current time and specify also the type of generator used.</p>
+
 <p>
-                                                    <b>s = rng('shuffle', generator)</b> seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct.</p>
+                                                    s = rng('shuffle', generator) seeds the random number generator based on the current time,specify also the type of generator used and returns previous generator as an struct.</p>
+
 <p>
-                                                        <b>s = rng</b> returns current generator as an struct.</p>
+                                                        s = rng returns current generator as an struct.</p>
+
 <p>
-                                                            <b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by <b>s = rng</b>.</p>
+                                                            rng(s) restores the settings of the random number generator using a previous struct returned by s = rng.</p>
+
 <p></p>
+
 <p>Available generators are:</p>
-Value Generator Name Generator Keyword "twister" Mersenne Twister mt19937ar "simdTwister" SIMD-Oriented Fast Mersenne Twister dsfmt19937 "combRecursive" Combined Multiple Recursive mrg32k3a "multFibonacci" Multiplicative Lagged Fibonacci mlfg6331_64 "philox" Philox 4x32 generator with 10 rounds philox4x32_10<p>Default generator is "twister".</p>
+
+| Value           | Generator Name                       | Generator Keyword |
+| --------------- | ------------------------------------ | ----------------- |
+| "twister"       | Mersenne Twister                     | mt19937ar         |
+| "simdTwister"   | SIMD-Oriented Fast Mersenne Twister  | dsfmt19937        |
+| "combRecursive" | Combined Multiple Recursive          | mrg32k3a          |
+| "multFibonacci" | Multiplicative Lagged Fibonacci      | mlfg6331_64       |
+| "philox"        | Philox 4x32 generator with 10 rounds | philox4x32_10     |
+
+<p>Default generator is "twister".</p>
 
 ## Example
 

@@ -18,7 +18,7 @@ Generates po file header.
 ## Description
 
 <p>
-            <b>ce = poheader(domain, language)</b> generates po file header.</p>
+            ce = poheader(domain, language) generates po file header.</p>
 
 ## Example
 

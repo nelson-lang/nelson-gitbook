@@ -19,7 +19,7 @@ Checks if a module is loaded.
 ## Description
 
 <p>
-            <b>ismodule</b> returns <b>true</b> if module is loaded otherwise <b>false</b>.</p>
+            ismodule returns true if module is loaded otherwise false.</p>
 
 ## Example
 

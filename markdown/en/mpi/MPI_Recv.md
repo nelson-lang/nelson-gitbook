@@ -20,7 +20,9 @@ Blocking receive for a message.
 ## Description
 
 <p>This function receives an array from a source node on a given communicator with the specified tag.</p>
+
 <p>Throws an exception if there is an error.</p>
+
 <p>Receive arrays of arbitrary complexity, including cell arrays, structures, strings, sparse, etc ...</p>
 
 ## Example

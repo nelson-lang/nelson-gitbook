@@ -75,7 +75,6 @@ utilities for working with colors, legends, axes, and text annotations.
 - [rgbplot](rgbplot.md) - Plot colormap.
 - [ribbon](ribbon.md) - Ribbon plot.
 - [rotate3d](rotate3d.md) - Enable rotate mode.
-- [saveas](saveas.md) - Save figure to specific file format.
 - [scatter](scatter.md) - Scatter plot.
 - [scatter3](scatter3.md) - 3D Scatter plot.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).

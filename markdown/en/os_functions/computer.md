@@ -23,7 +23,7 @@ System information.
 ## Description
 
 <p>
-            <b>computers</b> identifies the type of computer that Nelson is running on.</p>
+            computers identifies the type of computer that Nelson is running on.</p>
 
 ## Example
 

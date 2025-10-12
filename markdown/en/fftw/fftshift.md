@@ -19,7 +19,7 @@ Shift the zero-frequency component to the center of the spectrum.
 ## Description
 
 <p>
-            <b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.</p>
+            fftshift(X) shift the zero-frequency component to the center of the spectrum.</p>
 
 ## Example
 

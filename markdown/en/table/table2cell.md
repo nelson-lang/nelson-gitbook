@@ -18,9 +18,11 @@ Convert table to cell array
 ## Description
 
 <p>
-            <b>C = table2cell(T)</b> converts the table <b>T</b> into a cell array <b>C</b>, where each variable in <b>T</b> is transformed into a column of cells in <b>C</b>.</p>
-<p>The output <b>C</b> does not include any properties from <b>T.Properties</b>.</p>
-<p>If <b>T</b> contains row names, these will not be included in <b>C</b>.</p>
+            C = table2cell(T) converts the table T into a cell array C, where each variable in T is transformed into a column of cells in C.</p>
+
+<p>The output C does not include any properties from T.Properties.</p>
+
+<p>If T contains row names, these will not be included in C.</p>
 
 ## Example
 

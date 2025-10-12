@@ -16,7 +16,7 @@ Computes the hyperbolic sine in radians for each element of x.
 
 ## Description
 
-<b>sinh</b>computes the hyperbolic sine in radians for each element of<b>x</b>.
+        sinh computes the hyperbolic sine in radians for each element of x.
 
 ## Example
 

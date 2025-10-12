@@ -21,7 +21,7 @@ Names of functions, MEX-files.
 ## Description
 
 <p>
-            <b>inmem</b> returns cells array of names of functions and mex currently loaded.</p>
+            inmem returns cells array of names of functions and mex currently loaded.</p>
 
 ## Example
 

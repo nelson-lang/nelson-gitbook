@@ -18,7 +18,7 @@ Checks if shared library is loaded.
 
 ## Description
 
-<p><b>dllibisloaded</b> returns if share library is already loaded.</p>
+<p>dllibisloaded returns if share library is already loaded.</p>
 
 ## Example
 

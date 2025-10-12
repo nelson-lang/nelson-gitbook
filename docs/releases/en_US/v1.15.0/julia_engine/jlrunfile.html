@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="jlrunfile"><a class="header" href="#jlrunfile">jlrunfile</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="jlrunfile"><a class="header" href="#jlrunfile">jlrunfile</a></h1>
 <p>Run Julia file from Nelson.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -177,9 +178,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>jlrunfile(filenam)</b> function executes Julia file.</p>
-<p>As the <b>jlrun</b> function, variables generated in the Julia workspace through the <b>jlrunfile</b> function do persist.</p>
-<p>The code <b>outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN)</b> executes the code with one or more name-value pair arguments.</p>
+            jlrunfile(filenam) function executes Julia file.</p>
+<p>As the jlrun function, variables generated in the Julia workspace through the jlrunfile function do persist.</p>
+<p>The code outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN) executes the code with one or more name-value pair arguments.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <p>jlrunfile_example_1.jl</p>
 <pre><code class="language-matlab">content = "hello Nelson"

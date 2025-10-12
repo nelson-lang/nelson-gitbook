@@ -14,7 +14,8 @@ Removes libpointer object.
 ## Description
 
 <p>
-            <b>delete(h)</b> releases libpointer object.</p>
+            delete(h) releases libpointer object.</p>
+
 <p>Do not forget to clear h afterward.</p>
 
 ## Example

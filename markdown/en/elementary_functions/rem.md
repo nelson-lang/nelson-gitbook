@@ -18,10 +18,14 @@ Remainder after division.
 ## Description
 
 <p>
-            <b>C = rem(A, B)</b> computes the remainder of A and B, i.e : A - fix(A ./ B) .* B.</p>
+            C = rem(A, B) computes the remainder of A and B, i.e : A - fix(A ./ B) .* B.</p>
+
 <p>This function manages also negative values.</p>
+
 <p>mod(A, 0) = A , whereas rem(A, 0) = NaN.</p>
+
 <p>mod(A, B) has the sign of B, while rem(A, B) has the sign of A.</p>
+
 <p>mod and rem are equals if A and B have the same sign.</p>
 
 ## Example

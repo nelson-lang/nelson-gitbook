@@ -18,7 +18,7 @@ Givens plane rotation.
 ## Description
 
 <p>
-            <b>[G, Y] = planerot(X)</b> computes the Givens rotation matrix for the two-element column vector <b>X</b>.</p>
+            [G, Y] = planerot(X) computes the Givens rotation matrix for the two-element column vector X.</p>
 
 ## Example
 

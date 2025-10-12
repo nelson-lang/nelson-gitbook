@@ -13,7 +13,7 @@ Return the maximum variable name length.
 ## Description
 
 <p>
-            <b>namelengthmax</b>: Nelson allows 4096 as maximum length for variables and structures field names.</p>
+            namelengthmax: Nelson allows 4096 as maximum length for variables and structures field names.</p>
 
 ## Examples
 

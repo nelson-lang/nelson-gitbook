@@ -23,12 +23,16 @@ Numerical gradient.
 ## Description
 
 <p>
-            <b>gradient(F)</b> calculates the one-dimensional numerical gradient of the vector or matrix F.</p>
+            gradient(F) calculates the one-dimensional numerical gradient of the vector or matrix F.</p>
+
 <p>The output FX represents the differences in the x (horizontal) direction, corresponding to ∂F/∂x.</p>
+
 <p>It assumes that the spacing between points is 1.</p>
+
 <p>
-                <b>gradient(F, h)</b> allows for specifying a uniform spacing h between points in each direction.</p>
-<p>This uniform spacing can also be individually specified for each dimension of F using <b>gradient(F, hx, hy, ..., hN)</b>.</p>
+                gradient(F, h) allows for specifying a uniform spacing h between points in each direction.</p>
+
+<p>This uniform spacing can also be individually specified for each dimension of F using gradient(F, hx, hy, ..., hN).</p>
 
 ## Example
 

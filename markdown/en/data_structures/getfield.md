@@ -18,7 +18,7 @@ Returns value of a field in a struct.
 ## Description
 
 <p>
-            <b>value = getfield(st, field)</b> returns the value of the field named <b>field</b> from a structure.</p>
+            value = getfield(st, field) returns the value of the field named field from a structure.</p>
 
 ## Example
 

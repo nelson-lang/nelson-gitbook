@@ -20,7 +20,8 @@ Opens dialog box to select a directory.
 ## Description
 
 <p>
-            <b>uigetdir</b> opens a dialog box for selecting a directory.</p>
+            uigetdir opens a dialog box for selecting a directory.</p>
+
 <p>If path is wrong or not given, the current working directory will be used.</p>
 
 ## Example

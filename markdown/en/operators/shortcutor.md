@@ -18,7 +18,7 @@ Short circuit 'OR' operator, ||
 ## Description
 
 <p>
-            <b>C = A || B</b> performs a logical <b>OR</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
+            C = A || B performs a logical OR operation, the second operand is evaluated only when the result is not fully determined by the first operand.</p>
 
 ## Example
 

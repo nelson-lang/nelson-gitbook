@@ -17,7 +17,7 @@ Remove dimensions of length 1.
 ## Description
 
 <p>
-            <b>B = squeeze(A)</b> returns an array with the same elements as the input array A, but with dimensions of length 1 removed.</p>
+            B = squeeze(A) returns an array with the same elements as the input array A, but with dimensions of length 1 removed.</p>
 
 ## Example
 

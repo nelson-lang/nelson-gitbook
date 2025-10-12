@@ -17,7 +17,7 @@ Round up
 ## Description
 
 <p>
-            <b>ceil</b> returns an integer or complex matrix made of rounded up elements.</p>
+            ceil returns an integer or complex matrix made of rounded up elements.</p>
 
 ## Example
 

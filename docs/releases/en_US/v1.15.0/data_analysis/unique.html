@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="unique"><a class="header" href="#unique">unique</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="unique"><a class="header" href="#unique">unique</a></h1>
 <p>Unique values.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,15 +176,15 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>C = unique(A)</b> returns the unique elements of array <b>A</b> in sorted order.</p>
+            C = unique(A) returns the unique elements of array A in sorted order.</p>
 <p>
-                <b>C = unique(A, 'rows')</b> considers each row of <b>A</b> as a unique entity and returns the unique rows in sorted order.</p>
+                C = unique(A, 'rows') considers each row of A as a unique entity and returns the unique rows in sorted order.</p>
 <p>Note that the 'rows' option does not support cell arrays.</p>
 <p>
-                    <b>[C, ia, ic] = unique(...)</b> extends any of the previous syntaxes to also return index vectors <b>ia</b> and <b>ic</b>.</p>
-<p>For a vector <b>A</b>, the relationships are <b>C = A(ia)</b> and <b>A = C(ic)</b>.</p>
-<p>For a matrix or array <b>A</b>, the relationships are <b>C = A(ia)</b> and <b>A(:) = C(ic)</b>.</p>
-<p>If the 'rows' option is used, the relationships are <b>C = A(ia, :)</b> and <b>A = C(ic, :)</b>.</p>
+                    [C, ia, ic] = unique(...) extends any of the previous syntaxes to also return index vectors ia and ic.</p>
+<p>For a vector A, the relationships are C = A(ia) and A = C(ic).</p>
+<p>For a matrix or array A, the relationships are C = A(ia) and A(:) = C(ic).</p>
+<p>If the 'rows' option is used, the relationships are C = A(ia, :) and A = C(ic, :).</p>
 <h2 id="used-functions"><a class="header" href="#used-functions">Used function(s)</a></h2>
 <p>std::sort, std::unique (stl)</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>

@@ -21,9 +21,10 @@ Creates a warning dialog box.
 ## Description
 
 <p>
-            <b>errordlg</b> creates an warning dialog box.</p>
+            errordlg creates an warning dialog box.</p>
+
 <p>
-                <b>h = warndlg(text_warning, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.</p>
+                h = warndlg(text_warning, title, 'on') specifies whether to replace an existing dialog box having the same name.</p>
 
 ## Examples
 

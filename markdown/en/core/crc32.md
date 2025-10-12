@@ -21,7 +21,7 @@ Get crc32 checksum.
 
 ## Description
 
-<p><b>crc32</b> get crc32 checksum.</p>
+<p>crc32 get crc32 checksum.</p>
 
 ## Examples
 

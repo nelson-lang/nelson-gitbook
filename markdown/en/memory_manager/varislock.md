@@ -14,7 +14,7 @@ Checks if a variable is locked.
 ## Description
 
 <p>
-            <b>varislock</b> returns true if <b>variable_name</b> has been declared as locked variable and false otherwise.</p>
+            varislock returns true if variable_name has been declared as locked variable and false otherwise.</p>
 
 ## Example
 

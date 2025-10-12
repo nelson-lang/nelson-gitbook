@@ -19,7 +19,7 @@ Decompress zip file.
 ## Description
 
 <p>
-            <b>unzip</b> extracts archived contents. Timestamps and attributes are preserved for each file.</p>
+            unzip extracts archived contents. Timestamps and attributes are preserved for each file.</p>
 
 ## Example
 

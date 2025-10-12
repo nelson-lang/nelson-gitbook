@@ -20,9 +20,11 @@ Evaluate Nelson code with console capture.
 ## Description
 
 <p>
-            <b>evalc</b> executes Nelson instructions given in a string.</p>
+            evalc executes Nelson instructions given in a string.</p>
+
 <p>console display is redirected into a variable.</p>
-<p>diary, more, and input are disabled when <b>evalc</b> is used.</p>
+
+<p>diary, more, and input are disabled when evalc is used.</p>
 
 ## Examples
 
@@ -31,7 +33,8 @@ evalc('B=4')
 ```
 
 ```matlab
-t = evalc('dir')
+
+      >t = evalc('dir')
 ```
 
 ## See also

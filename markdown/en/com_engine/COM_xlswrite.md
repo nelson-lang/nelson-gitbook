@@ -32,7 +32,8 @@ Write Microsoft Excel spreadsheet file using COM.
 ## Description
 
 <p>
-            <b>COM_xlswrite</b> Writes Microsoft Excel spreadsheet file using COM.</p>
+            COM_xlswrite Writes Microsoft Excel spreadsheet file using COM.</p>
+
 <p>Inf is converted by Excel as 65535.</p>
 
 ## Examples

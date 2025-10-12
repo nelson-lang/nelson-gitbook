@@ -17,9 +17,12 @@ Read string from a file without newline.
 ## Description
 
 <p>Read string from a file, stopping after a newline or EOF have been read.</p>
+
 <p>If there is no more character to read, fgets will return -1.</p>
+
 <p>newline character removed of the string returned</p>
-<p>characters encoding uses <b>fopen</b> parameter.</p>
+
+<p>characters encoding uses fopen parameter.</p>
 
 ## Example
 

@@ -18,7 +18,7 @@ Autumn colormap array.
 ## Description
 
 <p>
-            <b>autumn</b> returns the colormap with autumn colors.</p>
+            autumn returns the colormap with autumn colors.</p>
 
 ## Example
 

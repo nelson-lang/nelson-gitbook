@@ -24,7 +24,7 @@ save workspace variables to .nh5 or .mat file
 ## Description
 
 <p>
-            <b>save</b> save workspace variables to .nh5 or .mat file.</p>
+            save save workspace variables to .nh5 or .mat file.</p>
 
 ## Examples
 

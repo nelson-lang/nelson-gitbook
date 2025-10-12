@@ -16,7 +16,7 @@ Checks that value is not zero.
 ## Description
 
 <p>
-            <b>mustBeNonZero</b> checks that value is not zero or raise an error.</p>
+            mustBeNonZero checks that value is not zero or raise an error.</p>
 
 ## Example
 

@@ -16,7 +16,8 @@ Checks that value is logical or raise an error.
 ## Description
 
 <p>
-            <b>mustBeLogical</b> checks that value is logical or raise an error.</p>
+            mustBeLogical checks that value is logical or raise an error.</p>
+
 <p>Empty values are ignored.</p>
 
 ## Example

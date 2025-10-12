@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="fscanf"><a class="header" href="#fscanf">fscanf</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="fscanf"><a class="header" href="#fscanf">fscanf</a></h1>
 <p>Reads data from a file.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,8 +176,23 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>Read data in text from the file specified by the file descriptor fid.</p>
-<p>characters encoding uses <b>fopen</b> parameter.</p>
-Value type format comment Integer %i base 10 Integer signed %d base 10 Integer unsigned %u base 10 Integer %o Octal (base 8) Integer %x Hexadecimal (lowercase) Integer %X Hexadecimal (uppercase) Floating-point number %f Fixed-point notation Floating-point number %e Exponential notation (lowercase) Floating-point number %E Exponential notation (uppercase) Floating-point number %g Exponential notation (compact format, lowercase) Floating-point number %G Exponential notation (compact format, uppercase) Character %c Single character String %s Character vector.
+<p>characters encoding uses fopen parameter.</p>
+<div class="table-wrapper"><table><thead><tr><th>Value type</th><th>format</th><th>comment</th></tr></thead><tbody>
+<tr><td>Integer</td><td>%i</td><td>base 10</td></tr>
+<tr><td>Integer signed</td><td>%d</td><td>base 10</td></tr>
+<tr><td>Integer unsigned</td><td>%u</td><td>base 10</td></tr>
+<tr><td>Integer</td><td>%o</td><td>Octal (base 8)</td></tr>
+<tr><td>Integer</td><td>%x</td><td>Hexadecimal (lowercase)</td></tr>
+<tr><td>Integer</td><td>%X</td><td>Hexadecimal (uppercase)</td></tr>
+<tr><td>Floating-point number</td><td>%f</td><td>Fixed-point notation</td></tr>
+<tr><td>Floating-point number</td><td>%e</td><td>Exponential notation (lowercase)</td></tr>
+<tr><td>Floating-point number</td><td>%E</td><td>Exponential notation (uppercase)</td></tr>
+<tr><td>Floating-point number</td><td>%g</td><td>Exponential notation (compact format, lowercase)</td></tr>
+<tr><td>Floating-point number</td><td>%G</td><td>Exponential notation (compact format, uppercase)</td></tr>
+<tr><td>Character</td><td>%c</td><td>Single character</td></tr>
+<tr><td>String</td><td>%s</td><td>Character vector.</td></tr>
+</tbody></table>
+</div>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">
 M = rand(3, 2);

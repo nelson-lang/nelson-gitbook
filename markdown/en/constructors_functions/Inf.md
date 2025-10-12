@@ -17,7 +17,7 @@ Infinity
 ## Description
 
 <p>
-            <b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
+            NaN returns the IEEE symbol Inf (Infinity).</p>
 
 ## Examples
 

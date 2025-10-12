@@ -17,7 +17,7 @@ Round to nearest integer
 ## Description
 
 <p>
-            <b>round</b> rounds the elements to the nearest integers.</p>
+            round rounds the elements to the nearest integers.</p>
 
 ## Example
 

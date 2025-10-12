@@ -19,7 +19,7 @@ decodes a JSON string to Nelson object.
 ## Description
 
 <p>
-            <b>jsondecode</b> converts JSON object field names to Nelson structure field names</p>
+            jsondecode converts JSON object field names to Nelson structure field names</p>
 
 ## Bibliography
 

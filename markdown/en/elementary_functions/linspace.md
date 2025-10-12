@@ -20,7 +20,7 @@ linearly spaced vector constructor.
 ## Description
 
 <p>
-            <b>linspace</b> generates an linearly spaced vector.</p>
+            linspace generates an linearly spaced vector.</p>
 
 ## Example
 

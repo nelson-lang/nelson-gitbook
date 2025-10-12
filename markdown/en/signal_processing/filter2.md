@@ -20,7 +20,7 @@
 ## Description
 
 <p>
-            <b>Y = filter2(H, X)</b>  applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix <b>H</b>.</p>
+            Y = filter2(H, X)  applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix H.</p>
 
 ## Example
 

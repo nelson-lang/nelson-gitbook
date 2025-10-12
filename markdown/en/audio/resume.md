@@ -12,7 +12,7 @@ Resumes an audioplayer object.
 
 ## Description
 
-<b>resume</b>resumes an audioplayer object.
+        resume resumes an audioplayer object.
 
 ## Example
 

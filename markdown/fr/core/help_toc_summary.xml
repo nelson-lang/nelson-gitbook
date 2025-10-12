@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>core</module>
+    <section name="Core">
+      <chapter_description>
+        <p>Le module de base fournit les éléments fondamentaux de l'environnement Nelson.</p>
+        <p>Il comprend des services essentiels pour l'exécution de programmes, la gestion de l'environnement et l'interaction avec le système.</p>
+        <p>Grâce à ce module, les utilisateurs peuvent évaluer le code de manière dynamique, gérer le flux d'exécution, interroger l'état du programme et accéder à des informations clés sur le système telles que la version, la configuration et la licence.</p>
+        <p>Il offre également des utilitaires de base pour l'identification des fichiers, les sommes de contrôle et les capacités du terminal.</p>
+        <p>Ensemble, ces fonctionnalités forment la base sur laquelle tous les autres modules et fonctionnalités au niveau utilisateur dans Nelson sont construits.</p>
+    </chapter_description>
+      <keyword name="banner" link="banner.md" description="Affiche la bannière d'accueil de Nelson."/>
+      <keyword name="crc32" link="crc32.md" description="Calcul du CRC32."/>
+      <keyword name="eval" link="eval.md" description="Évalue une expression."/>
+      <keyword name="evalc" link="evalc.md" description="Évalue une expression et capture la sortie."/>
+      <keyword name="evalin" link="evalin.md" description="Évalue une expression dans un espace de travail spécifié."/>
+      <keyword name="execstr" link="execstr.md" description="Exécute une chaîne comme commande."/>
+      <keyword name="exist" link="exist.md" description="Vérifie l'existence d'une variable, fonction ou fichier."/>
+      <keyword name="exit" link="exit.md" description="Quitte l'environnement Nelson."/>
+      <keyword name="feature" link="feature.md" description="Interroge les fonctionnalités disponibles."/>
+      <keyword name="inputname" link="inputname.md" description="Renvoie le nom d'une variable d'entrée d'une fonction."/>
+      <keyword name="isunicodesupported" link="isunicodesupported.md" description="Indique si Unicode est supporté."/>
+      <keyword name="license" link="license.md" description="Affiche les informations de licence."/>
+      <keyword name="maxNumCompThreads" link="maxNumCompThreads.md" description="Nombre maximal de threads de calcul."/>
+      <keyword name="namelengthmax" link="namelengthmax.md" description="Longueur maximale des noms de variables."/>
+      <keyword name="nargin" link="nargin.md" description="Nombre d'arguments d'entrée d'une fonction."/>
+      <keyword name="narginchk" link="narginchk.md" description="Vérifie le nombre d'arguments d'entrée."/>
+      <keyword name="nargout" link="nargout.md" description="Nombre d'arguments de sortie d'une fonction."/>
+      <keyword name="nargoutchk" link="nargoutchk.md" description="Vérifie le nombre d'arguments de sortie."/>
+      <keyword name="nelsonappid" link="nelsonappid.md" description="Identifiant de l'application Nelson."/>
+      <keyword name="nelsonroot" link="nelsonroot.md" description="Répertoire racine de Nelson."/>
+      <keyword name="nfilename" link="nfilename.md" description="Nom du fichier courant exécuté."/>
+      <keyword name="pause" link="pause.md" description="Met l'exécution en pause."/>
+      <keyword name="prefdir" link="prefdir.md" description="Répertoire des préférences utilisateur."/>
+      <keyword name="quit" link="quit.md" description="Ferme l'application Nelson."/>
+      <keyword name="run" link="run.md" description="Exécute un script ou un fichier."/>
+      <keyword name="sha256" link="sha256.md" description="Calcule le hash SHA-256."/>
+      <keyword name="version" link="version.md" description="Version de l'environnement Nelson."/>
+    </section>
+  </toc>
+</help_summary>

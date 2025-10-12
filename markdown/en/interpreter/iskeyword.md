@@ -19,7 +19,7 @@ Returns all Nelson keywords.
 ## Description
 
 <p>
-            <b>iskeyword</b> returns a list of all Nelson keywords.</p>
+            iskeyword returns a list of all Nelson keywords.</p>
 
 ## Example
 

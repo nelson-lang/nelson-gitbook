@@ -17,7 +17,7 @@ Round down
 ## Description
 
 <p>
-            <b>floor</b> returns an integer matrix made of nearest rounded down integers.</p>
+            floor returns an integer matrix made of nearest rounded down integers.</p>
 
 ## Example
 

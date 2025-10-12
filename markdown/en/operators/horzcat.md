@@ -20,7 +20,7 @@ Horizontal concatenation.
 ## Description
 
 <p>
-            <b>R = horzcat(M1, M2, ... , MN)</b> returns the horizontal concatenation of M1, M2, ... , MN along the dimension 2.</p>
+            R = horzcat(M1, M2, ... , MN) returns the horizontal concatenation of M1, M2, ... , MN along the dimension 2.</p>
 
 ## Examples
 

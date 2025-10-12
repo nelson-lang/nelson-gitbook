@@ -17,10 +17,11 @@ Returns a function handle from a string.
 ## Description
 
 <p>
-            <b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b>
+            function_handle = str2func(str) returns a function handle function_handle for the function named in the string str
         </p>
+
 <p>
-            <b>str</b> function name or representation of anonymous function.</p>
+            str function name or representation of anonymous function.</p>
 
 ## Examples
 

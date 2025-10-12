@@ -21,7 +21,7 @@ Concatenate arrays.
 ## Description
 
 <p>
-            <b>R = cat(dim, M1, M2, ... , MN)</b> returns the concatenation of M1, M2, ... , MN along the dimension <b>dim</b>.</p>
+            R = cat(dim, M1, M2, ... , MN) returns the concatenation of M1, M2, ... , MN along the dimension dim.</p>
 
 ## Example
 

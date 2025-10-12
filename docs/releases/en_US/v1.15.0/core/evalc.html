@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="evalc"><a class="header" href="#evalc">evalc</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="evalc"><a class="header" href="#evalc">evalc</a></h1>
 <p>Evaluate Nelson code with console capture.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,13 +175,14 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>evalc</b> executes Nelson instructions given in a string.</p>
+            evalc executes Nelson instructions given in a string.</p>
 <p>console display is redirected into a variable.</p>
-<p>diary, more, and input are disabled when <b>evalc</b> is used.</p>
+<p>diary, more, and input are disabled when evalc is used.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">evalc('B=4')
 </code></pre>
-<pre><code class="language-matlab">t = evalc('dir')
+<pre><code class="language-matlab">
+      &gt;t = evalc('dir')
 </code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
 <p><a href="../core/eval.html">eval</a>, <a href="../core/evalin.html">evalin</a>, <a href="../core/execstr.html">execstr</a>.</p>

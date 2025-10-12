@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="cloop"><a class="header" href="#cloop">cloop</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="cloop"><a class="header" href="#cloop">cloop</a></h1>
 <p>Feedback connection of multiple models.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -176,8 +177,8 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>cloop</b> forms the closed-loop system when unity feedback is used.</p>
-<p>This function is deprecated and has limitations, please see <b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".</p>
+            cloop forms the closed-loop system when unity feedback is used.</p>
+<p>This function is deprecated and has limitations, please see feedback. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">m = 1000;
 b = 50;
@@ -194,7 +195,7 @@ R = cloop(sys, OUTPUTS, INPUTS)
 
 </code></pre>
 <h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
-<p><a href="../control_system/cloop.html">cloop</a>, <a href="../control_system/append.html">append</a>, <a href="../control_system/ssselect.html">ssselect</a>.</p>
+<p><a href="../control_system/feedback.html">feedback</a>, <a href="../control_system/append.html">append</a>, <a href="../control_system/ssselect.html">ssselect</a>.</p>
 <h2 id="history"><a class="header" href="#history">History</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Version</th><th>Description</th></tr></thead><tbody>
 <tr><td>1.0.0</td><td>initial version</td></tr>

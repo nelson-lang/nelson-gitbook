@@ -17,16 +17,21 @@ Check for missing values.
 ## Description
 
 <p>
-            <b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
+            ismissing returns a logical array which is true where elements of M are missing values.</p>
+
 <p>missing data are defined as:</p>
+
 <p>
-                <b>NaN</b> for double or single</p>
+                NaN for double or single</p>
+
 <p>
-                    <b>missing</b> for string array</p>
+                    missing for string array</p>
+
 <p>
-                        <b>' '</b> for character array</p>
+                        ' ' for character array</p>
+
 <p>
-                            <b>''</b> for cell of character array</p>
+                            '' for cell of character array</p>
 
 ## Example
 

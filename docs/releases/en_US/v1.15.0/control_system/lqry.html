@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lqry"><a class="header" href="#lqry">lqry</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="lqry"><a class="header" href="#lqry">lqry</a></h1>
 <p>Form linear-quadratic (LQ) state-feedback regulator with output weighting.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -175,10 +176,10 @@
 <li>e - Poles of the closed-loop system: column vector.</li>
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>The function <b>lqry</b> computes and returns the optimal gain matrix (<b>K</b>), the Riccati solution (<b>S</b>), and the closed-loop eigenvalues (<b>e</b>) for a given state-space model (<b>sys</b>) with specified weights (<b>Q</b>, <b>R</b>, <b>N</b>).</p>
-<p>The plant data is defined by the matrices <b>A</b>, <b>B</b>, <b>C</b>, and <b>D</b>, representing continuous- or discrete-time dynamics.</p>
-<p>If the parameter <b>N</b> is not provided, it defaults to N=0.</p>
-<p>The closed-loop eigenvalues are determined by the eigenvalues of the matrix <b>A - B * K</b>.</p>
+<p>The function lqry computes and returns the optimal gain matrix (K), the Riccati solution (S), and the closed-loop eigenvalues (e) for a given state-space model (sys) with specified weights (Q, R, N).</p>
+<p>The plant data is defined by the matrices A, B, C, and D, representing continuous- or discrete-time dynamics.</p>
+<p>If the parameter N is not provided, it defaults to N=0.</p>
+<p>The closed-loop eigenvalues are determined by the eigenvalues of the matrix A - B * K.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">A = [0.6, 0.25; 0, 0.9];
 B = [0; 10];

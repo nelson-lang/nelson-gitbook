@@ -17,7 +17,7 @@ Check for the existence of a mex function.
 ## Description
 
 <p>
-            <b>ismex</b> checks for the existence of a mex function.</p>
+            ismex checks for the existence of a mex function.</p>
 
 ## Example
 

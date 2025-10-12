@@ -21,7 +21,8 @@ load data from .nh5 file into Nelson's workspace.
 ## Description
 
 <p>
-            <b>loadnh5</b> loads data from .nh5 file to Nelson's workspace.</p>
+            loadnh5 loads data from .nh5 file to Nelson's workspace.</p>
+
 <p>.nh5 file uses hdf5 file as container.</p>
 
 ## Example

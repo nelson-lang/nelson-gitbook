@@ -18,7 +18,7 @@ Viridis colormap array.
 ## Description
 
 <p>
-            <b>viridis</b> returns the colormap with viridis colors.</p>
+            viridis returns the colormap with viridis colors.</p>
 
 ## Bibliography
 

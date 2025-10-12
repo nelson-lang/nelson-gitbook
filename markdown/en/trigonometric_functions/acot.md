@@ -16,7 +16,7 @@ Inverse cotangent of angle in radians
 
 ## Description
 
-<b>acot</b>computes the inverse cotangent of angle for each element of<b>x</b>.
+        acot computes the inverse cotangent of angle for each element of x.
 
 ## Example
 

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="bode"><a class="header" href="#bode">bode</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="bode"><a class="header" href="#bode">bode</a></h1>
 <p>Bode plot of frequency response, magnitude and phase data.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -180,10 +181,10 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>bode(sys)</b> generates a Bode plot illustrating the frequency response of a dynamic system model, denoted as <b>sys.</b>
+            bode(sys) generates a Bode plot illustrating the frequency response of a dynamic system model, denoted as sys.
         </p>
 <p>This plot visually represents the system's response in terms of both magnitude (measured in decibels, dB) and phase (measured in degrees) across varying frequencies.</p>
-<p>The specific frequency points on the plot are automatically determined by <b>bode</b> based on the system's inherent dynamics.</p>
+<p>The specific frequency points on the plot are automatically determined by bode based on the system's inherent dynamics.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">H = tf([1 0.1 7.5],[1 0.12 9 0 0]);
 bode(H,{1 10}, '-.')

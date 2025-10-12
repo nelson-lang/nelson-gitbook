@@ -13,7 +13,7 @@ Return the print name from the communicator.
 ## Description
 
 <p>
-            <b>MPI_Comm_get_name(comm)</b> returns the print name from the communicator.</p>
+            MPI_Comm_get_name(comm) returns the print name from the communicator.</p>
 
 ## Example
 

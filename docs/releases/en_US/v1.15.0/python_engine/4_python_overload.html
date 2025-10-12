@@ -155,14 +155,29 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="python-operators"><a class="header" href="#python-operators">Python operators</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="python-operators"><a class="header" href="#python-operators">Python operators</a></h1>
 <p>The representation of Python operators in Nelson.</p>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>Nelson facilitates the utilization of the subsequent overloaded operators:</p>
-Python Operator Symbol Python Methods Nelson Methods - (unary operator) __neg__ uminus, -a + (unary operator) __pos__ uplus, +a + (binary operator) __add__, __radd__ plus, + - (binary operator) __sub__, __rsub__ minus, - * (binary operator) __mul__, __rmul__ mtimes, * / (binary operator) __truediv__, __rtruediv__ mrdivide, / == (binary operator) __eq__ eq, == > (binary operator) __gt__ gt, > < (binary operator) __lt__ lt, < != (binary operator) __ne__ ne, ~= >= (binary operator) __ge__ ge, >= <= (binary operator) __le__ le, <=<p></p>
+<div class="table-wrapper"><table><thead><tr><th>Python Operator Symbol</th><th>Python Methods</th><th>Nelson Methods</th></tr></thead><tbody>
+<tr><td>- (unary operator)</td><td><strong>neg</strong></td><td>uminus, -a</td></tr>
+<tr><td>+ (unary operator)</td><td><strong>pos</strong></td><td>uplus, +a</td></tr>
+<tr><td>+ (binary operator)</td><td><strong>add</strong>, <strong>radd</strong></td><td>plus, +</td></tr>
+<tr><td>- (binary operator)</td><td><strong>sub</strong>, <strong>rsub</strong></td><td>minus, -</td></tr>
+<tr><td>* (binary operator)</td><td><strong>mul</strong>, <strong>rmul</strong></td><td>mtimes, *</td></tr>
+<tr><td>/ (binary operator)</td><td><strong>truediv</strong>, <strong>rtruediv</strong></td><td>mrdivide, /</td></tr>
+<tr><td>== (binary operator)</td><td><strong>eq</strong></td><td>eq, ==</td></tr>
+<tr><td>&gt; (binary operator)</td><td><strong>gt</strong></td><td>gt, &gt;</td></tr>
+<tr><td>&lt; (binary operator)</td><td><strong>lt</strong></td><td>lt, &lt;</td></tr>
+<tr><td>!= (binary operator)</td><td><strong>ne</strong></td><td>ne, ~=</td></tr>
+<tr><td>&gt;= (binary operator)</td><td><strong>ge</strong></td><td>ge, &gt;=</td></tr>
+<tr><td>&lt;= (binary operator)</td><td><strong>le</strong></td><td>le, &lt;=</td></tr>
+</tbody></table>
+</div><p></p>
 <p>
-            <b>isequal</b> builtin is also overloaded to manage python type.</p>
-<p>For numpy types, <b>isequal</b> call <b>numpy.array_equal</b> from python.</p>
+            isequal builtin is also overloaded to manage python type.</p>
+<p>For numpy types, isequal call numpy.array_equal from python.</p>
 <p>Others python operators are currently not supported.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">pyrun('import numpy as np')

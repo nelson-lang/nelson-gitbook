@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="contour"><a class="header" href="#contour">contour</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="contour"><a class="header" href="#contour">contour</a></h1>
 <p>Contour plot of matrix</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -183,64 +184,40 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>contour(Z)</b> generates a contour plot representing isolines of the matrix Z. Each isoline corresponds to a specific height value on the x-y plane.</p>
+            contour(Z) generates a contour plot representing isolines of the matrix Z. Each isoline corresponds to a specific height value on the x-y plane.</p>
 <p>Nelson automatically selects the contour lines to display based on the values in Z. The column and row indices of Z serve as the x and y coordinates in the plane, respectively.</p>
 <p>
-                <b>contour(X, Y, Z)</b> allows the user to specify the x and y coordinates corresponding to the values in matrix Z. This enables more precise control over the positioning of the contour plot on the x-y plane.</p>
+                contour(X, Y, Z) allows the user to specify the x and y coordinates corresponding to the values in matrix Z. This enables more precise control over the positioning of the contour plot on the x-y plane.</p>
 <p>The matrices X and Y provide the coordinates, while Z contains the height values for generating the contour plot.</p>
 <p>Property Name-Value Pairs:</p>
-<p></p>
-<p>
-                    <b>LevelList</b>: The contour levels, specified as a vector of z values, determine the height levels at which the contour lines are drawn. By default, when not explicitly provided, the contour function automatically selects these values to cover the range of values present in the ZData property, ensuring comprehensive coverage of the data range. Default: empty matrix.</p>
-<p>
-                        <b>LevelListMode</b>: Selection mode for LevelList: 'manual' or 'auto' (default).</p>
-<p>
-                            <b>LevelStep</b>: Spacing between contour lines: scalar numeric value or 0 (default).</p>
-<p>
-                                <b>LevelStepMode</b>:Selection mode for LevelStep: 'manual' or 'auto' (default).</p>
-<p>
-                                    <b>EdgeColor</b>: Color of contour lines: rgb color or 'flat' (default).</p>
-<p>
-                                        <b>EdgeAlpha</b>: Contour line transparency: scalar in range [0, 1] or 1 (default).</p>
-<p>
-                                            <b>LineStyle</b>: Line style: '--', ':',  '-.' or '-' (default).</p>
-<p>
-                                                <b>LineWidth</b>: Line Width: positive value or  0.5 (default).</p>
-<p>
-                                                    <b>ContourMatrix</b>: contour matrix.</p>
-<p>
-                                                        <b>XData</b>: x values: vector or matrix or [] (default).</p>
-<p>
-                                                            <b>YData</b>: y values: vector or matrix or [] (default).</p>
-<p>
-                                                                <b>ZData</b>: z values: vector or matrix or [] (default).</p>
-<p>
-                                                                    <b>XDataMode</b>: Selection mode for XData: 'manual' or 'auto' (default).</p>
-<p>
-                                                                        <b>YDataMode</b>: Selection mode for YData: 'manual' or 'auto' (default).</p>
-<p>
-                                                                            <b>DisplayName</b>: Legend label: character vector, string scalar or '' (default).</p>
-<p>
-                                                                                <b>Visible</b>: State of visibility: on/off logical value, 'on' (default).</p>
-<p>
-                                                                                    <b>Parent</b>: Parent: Axes object or Group object.</p>
-<p>
-                                                                                        <b>Children</b>: Children.</p>
-<p>
-                                                                                            <b>HandleVisibility</b>: Visibility of handle 'on', 'off'.</p>
-<p>
-                                                                                                <b>Type</b>: Type of graphics object 'contour'.</p>
-<p>
-                                                                                                    <b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
-<p>
-                                                                                                        <b>UserData</b>: User data: array or  [] (default).</p>
-<p>
-                                                                                                            <b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-<p>
-                                                                                                                <b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-<p>
-                                                                                                                    <b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
+<div class="table-wrapper"><table><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody>
+<tr><td>LevelList</td><td>The contour levels, specified as a vector of z values, determine the height levels at which the contour lines are drawn. By default, when not explicitly provided, the contour function automatically selects these values to cover the range of values present in the ZData property, ensuring comprehensive coverage of the data range. Default: empty matrix.</td></tr>
+<tr><td>LevelListMode</td><td>Selection mode for LevelList: 'manual' or 'auto' (default).</td></tr>
+<tr><td>LevelStep</td><td>Spacing between contour lines: scalar numeric value or 0 (default).</td></tr>
+<tr><td>LevelStepMode</td><td>Selection mode for LevelStep: 'manual' or 'auto' (default).</td></tr>
+<tr><td>EdgeColor</td><td>Color of contour lines: rgb color or 'flat' (default).</td></tr>
+<tr><td>EdgeAlpha</td><td>Contour line transparency: scalar in range [0, 1] or 1 (default).</td></tr>
+<tr><td>LineStyle</td><td>Line style: '--', ':', '-.' or '-' (default).</td></tr>
+<tr><td>LineWidth</td><td>Line Width: positive value or 0.5 (default).</td></tr>
+<tr><td>ContourMatrix</td><td>contour matrix.</td></tr>
+<tr><td>XData</td><td>x values: vector or matrix or [] (default).</td></tr>
+<tr><td>YData</td><td>y values: vector or matrix or [] (default).</td></tr>
+<tr><td>ZData</td><td>z values: vector or matrix or [] (default).</td></tr>
+<tr><td>XDataMode</td><td>Selection mode for XData: 'manual' or 'auto' (default).</td></tr>
+<tr><td>YDataMode</td><td>Selection mode for YData: 'manual' or 'auto' (default).</td></tr>
+<tr><td>DisplayName</td><td>Legend label: character vector, string scalar or '' (default).</td></tr>
+<tr><td>Visible</td><td>State of visibility: on/off logical value, 'on' (default).</td></tr>
+<tr><td>Parent</td><td>Parent: Axes object or Group object.</td></tr>
+<tr><td>Children</td><td>Children.</td></tr>
+<tr><td>HandleVisibility</td><td>Visibility of handle 'on', 'off'.</td></tr>
+<tr><td>Type</td><td>Type of graphics object 'contour'.</td></tr>
+<tr><td>Tag</td><td>Object identifier: character vector, string scalar or '' (default).</td></tr>
+<tr><td>UserData</td><td>User data: array or [] (default).</td></tr>
+<tr><td>CreateFcn</td><td>Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.</td></tr>
+<tr><td>DeleteFcn</td><td>Callback (function handle, string or cell) called when object is deleted.</td></tr>
+<tr><td>BeingDeleted</td><td>Flag indicating that the object is being deleted.</td></tr>
+</tbody></table>
+</div>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">f = figure();
 subplot(2, 3, 1)

@@ -16,7 +16,7 @@ Checks that value is a column vector or raise an error.
 ## Description
 
 <p>
-            <b>mustBeColumn</b> checks that value is a column vector or raise an error.</p>
+            mustBeColumn checks that value is a column vector or raise an error.</p>
 
 ## Example
 

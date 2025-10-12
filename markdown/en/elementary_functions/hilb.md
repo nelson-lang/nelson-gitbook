@@ -19,7 +19,7 @@ Hilbert matrix
 ## Description
 
 <p>
-            <b>hilb</b> computes the exact inverse of the exact Hilbert matrix.</p>
+            hilb computes the exact inverse of the exact Hilbert matrix.</p>
 
 ## Bibliography
 

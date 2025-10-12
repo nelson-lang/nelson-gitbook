@@ -23,9 +23,10 @@ Add title.
 ## Description
 
 <p>
-            <b>title('text')</b> adds the title to the current axes.</p>
+            title('text') adds the title to the current axes.</p>
+
 <p>
-                <b>Visible</b> property is inherited from the parent if not explicitly defined.</p>
+                Visible property is inherited from the parent if not explicitly defined.</p>
 
 ## Example
 

@@ -16,7 +16,7 @@ Checks that value is positive or raise an error.
 ## Description
 
 <p>
-            <b>mustBePositive</b> checks that value is positive or raise an error.</p>
+            mustBePositive checks that value is positive or raise an error.</p>
 
 ## Example
 

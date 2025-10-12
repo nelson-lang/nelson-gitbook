@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="cell2struct"><a class="header" href="#cell2struct">cell2struct</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="cell2struct"><a class="header" href="#cell2struct">cell2struct</a></h1>
 <p>Creates a struct from a cell.</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,7 +175,7 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>st = cell2struct(ce, fields)</b> creates a struct from a cell.</p>
+            st = cell2struct(ce, fields) creates a struct from a cell.</p>
 <h2 id="example"><a class="header" href="#example">Example</a></h2>
 <pre><code class="language-matlab">ce = {85, 50, 68; 'Pierre', 'Anna', 'Roberto'}
 fields = {'Height','Name'}

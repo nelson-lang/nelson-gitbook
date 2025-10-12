@@ -16,9 +16,11 @@ Save profile result to HTML format.
 ## Description
 
 <p>
-            <b>profsave</b> exports the profiling data into a series of HTML files.</p>
+            profsave exports the profiling data into a series of HTML files.</p>
+
 <p>The input profile_info is the structure returned by profile('info').</p>
-<p>If unspecified, <b>profsave</b> will use the current profile.</p>
+
+<p>If unspecified, profsave will use the current profile.</p>
 
 ## Example
 

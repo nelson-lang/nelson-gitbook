@@ -31,9 +31,10 @@ Get audio devices information.
 ## Description
 
 <p>
-            <b>audiodevinfo</b> returns a structure with available audio input and output devices.</p>
+            audiodevinfo returns a structure with available audio input and output devices.</p>
+
 <p>
-                <b>devices = audiodevinfo('default')</b> returns a structure with default used audio input and output devices.</p>
+                devices = audiodevinfo('default') returns a structure with default used audio input and output devices.</p>
 
 ## Example
 

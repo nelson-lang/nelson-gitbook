@@ -20,7 +20,7 @@ Exclusive or.
 ## Description
 
 <p>
-            <b>xor</b> performs a logical exclusive-OR.</p>
+            xor performs a logical exclusive-OR.</p>
 
 ## Example
 

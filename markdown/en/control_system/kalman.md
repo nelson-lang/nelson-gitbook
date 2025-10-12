@@ -27,7 +27,8 @@ Design Kalman filter for state estimation.
 ## Description
 
 <p>
-            <b>[kalmf, L, P] = kalman(sys, Q, R, N)</b> generates a Kalman filter using the provided plant model <b>sys</b> and noise covariance matrices <b>Q</b>, <b>R</b>, and <b>N</b>.</p>
+            [kalmf, L, P] = kalman(sys, Q, R, N) generates a Kalman filter using the provided plant model sys and noise covariance matrices Q, R, and N.</p>
+
 <p>The function calculates a Kalman filter suitable for application in a Kalman estimator, as depicted in the following diagram.</p>
 
 ## Example

@@ -155,7 +155,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="audiometadata"><a class="header" href="#audiometadata">audiometadata</a></h1>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="audiometadata"><a class="header" href="#audiometadata">audiometadata</a></h1>
 <p>Get/Set metadata of audio file .</p>
 <h2 id="syntax"><a class="header" href="#syntax">Syntax</a></h2>
 <ul>
@@ -174,9 +175,9 @@
 </ul>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>
-            <b>audiometadata</b> returns a structure with metadata of an audio file.</p>
+            audiometadata returns a structure with metadata of an audio file.</p>
 <p>
-                <b>audiometadata</b> manages all tags available in the audio file.</p>
+                audiometadata manages all tags available in the audio file.</p>
 <p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <pre><code class="language-matlab">wav_file = [modulepath('audio'), '/examples/haha.wav'];
