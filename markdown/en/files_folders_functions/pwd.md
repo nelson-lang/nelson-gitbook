@@ -2,38 +2,38 @@
 
 Returns current directory.
 
-## Syntax
+## 📝 Syntax
 
 - pwd()
 - r = pwd()
 
-## Output argument
+## 📤 Output argument
 
 - r - a string: current directory.
 
-## Description
+## 📄 Description
 
-  <p>Returns the current working directory.</p>
-  <p><b>pwd()</b> without input argument displays the current working directory.</p>
-  <p/>
+Returns the current working directory.
 
-## Example
+<b>pwd()</b> without input argument displays the current working directory.
+
+## 💡 Example
 
 ```matlab
 r = pwd()
 pwd()
 ```
 
-## See also
+## 🔗 See also
 
-[cd](cd.md), [dir](dir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

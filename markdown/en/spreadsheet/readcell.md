@@ -2,28 +2,30 @@
 
 Create cell array from file.
 
-## Syntax
+## 📝 Syntax
 
 - C = readcell(filename)
 - C = readcell(filename, opts)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: filename source.
 - opts - DelimitedTextImportOptions object
 
-## Output argument
+## 📤 Output argument
 
 - C - a cell.
 
-## Description
+## 📄 Description
 
-  <p><b>C = readcell(filename)</b> creates a cell array by importing column-oriented data from a text or spreadsheet file.</p>
-  <p><b>C = readcell(filename, opts)</b> creates a cell array using the settings defined in the <b>opts</b> import options object. The import <b>options</b> object allows you to customize how <b>readcell</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.</p>
+<b>C = readcell(filename)</b> creates a cell array by importing column-oriented data from a text or spreadsheet file.
 
-## Examples
+<b>C = readcell(filename, opts)</b> creates a cell array using the settings defined in the <b>opts</b> import options object. The import <b>options</b> object allows you to customize how <b>readcell</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.
+
+## 💡 Examples
 
 ```matlab
+
 Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
 Age = [28; 34; 22; 30];
 Height = [175; 160; 180; 165];
@@ -31,9 +33,11 @@ Weight = [70; 55; 80; 60];
 T = table(Names, Age, Height, Weight);
 writetable(T, [tempdir,'readcell_1.csv'])
 C = readcell([tempdir,'readcell_1.csv'])
+
 ```
 
 ```matlab
+
 Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
 Age = [28; 34; 22; 30];
 Height = [175; 160; 180; 165];
@@ -44,18 +48,19 @@ options = detectImportOptions([tempdir,'readcell_1.csv']);
 C1 = readcell([tempdir,'readcell_1.csv'], options)
 options.DataLines = [1 Inf]
 C2 = readcell([tempdir,'readcell_1.csv'], options)
+
 ```
 
-## See also
+## 🔗 See also
 
-[writecell](writecell.md), [detectImportOptions](detectImportOptions.md), [writetable](writetable.md), [readtable](readtable.md), [fileread](../stream_manager/fileread.md).
+[writecell](../spreadsheet/writecell.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

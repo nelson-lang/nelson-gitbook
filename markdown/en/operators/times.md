@@ -2,25 +2,25 @@
 
 Element wise multiplication, .\* operator
 
-## Syntax
+## 📝 Syntax
 
 - C = times(A, B)
 - C = A .\* B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A .\* B
 
-## Description
+## 📄 Description
 
-  <p><b>C = times(A, B)</b> performs element wise multiplication operation: A .* B.</p>
+<b>C = times(A, B)</b> performs element wise multiplication operation: A .\* B.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 times(3, 4)
@@ -33,16 +33,16 @@ M2 = [-25 88 1; 23 29 41];
 M1 .* M2
 ```
 
-## See also
+## 🔗 See also
 
-[mtimes](mtimes.md).
+[mtimes](../operators/mtimes.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,41 +2,42 @@
 
 Matrix inverse.
 
-## Syntax
+## 📝 Syntax
 
 - res = inv(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or square matrix (double or single)
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value: a square matrix
 
-## Description
+## 📄 Description
 
-  <p><b>inv(x)</b> computes the matrix inverse of x.</p>
+<b>inv(x)</b> computes the matrix inverse of x.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = rand(10, 10);
 Y = inv(X);
 Y * X
+
 ```
 
-## See also
+## 🔗 See also
 
-[expm](expm.md).
+[expm](../linear_algebra/expm.md).
 
-## History
+## 🕔 History
 
-| Version | Description                                             |
+| Version | 📄 Description                                          |
 | ------- | ------------------------------------------------------- |
 | 1.0.0   | initial version                                         |
 | 1.4.0   | warning about 'Matrix is singular to working precision' |
 
-## Author
+## 👤 Author
 
 Allan CORNET

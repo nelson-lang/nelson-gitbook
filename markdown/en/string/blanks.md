@@ -2,38 +2,38 @@
 
 creates an string of blank characters.
 
-## Syntax
+## 📝 Syntax
 
 - r = blanks(n)
 
-## Input argument
+## 📥 Input argument
 
 - n - an value integer, number of blanks.
 
-## Output argument
+## 📤 Output argument
 
 - r - a character array with n blanks
 
-## Description
+## 📄 Description
 
 <b>blanks</b> creates an string of blank characters.
 
-## Example
+## 💡 Example
 
 ```matlab
 blanks(4)
 ```
 
-## See also
+## 🔗 See also
 
-[char](char.md).
+[char](../string/char.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

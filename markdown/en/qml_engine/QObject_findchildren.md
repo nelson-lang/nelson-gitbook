@@ -2,29 +2,25 @@
 
 Returns all children of this object with the given name.
 
-## Syntax
+## 📝 Syntax
 
 - hr = QObject_findchildren(h, objectName, recursive)
 
-## Input argument
+## 📥 Input argument
 
 - h - an QObject handle.
 - objectName - a string.
 - recursive - a logical: true (The search is performed recursively).
 
-## Output argument
+## 📤 Output argument
 
 - hr - a vector of QObject handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns all children of this object with the given name.</p>
+Returns all children of this object with the given name.
 
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 h1 = errordlg()
@@ -32,12 +28,16 @@ h2 = errordlg()
 hr = QObject_findchildren(QObject_root(), 'errordlg', true)
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

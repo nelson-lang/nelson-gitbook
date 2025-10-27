@@ -1,27 +1,29 @@
 # Supported C/C++ compilers
 
-## Description
+## 📄 Description
 
-  <p>
-    <b>Windows:</b>
-  </p>
-  <p>- Microsoft Visual Studio C/C++ 2022 all versions (Pro, Enterprise or Community)</p>
-  <p>- Microsoft Visual Studio C/C++ 2019 all versions (Pro, Enterprise or Community)</p>
-  <p>- Microsoft Visual Studio C/C++ 2017 all versions (Pro, Enterprise or Community)</p>
-  <p>- MinGW</p>
-  <p>
-    <b>GNU/Linux:</b>
-  </p>
-  <p>- GNU C/C++ compilers packaged with all distributions.</p>
-  <p>
-    <b>MacOS X:</b>
-  </p>
-  <p>- XCode C/C++ compilers.</p>
+<b>Windows:</b>
 
-## See also
+- Microsoft Visual Studio C/C++ 2022 all versions (Pro, Enterprise or Community)
 
-[configuremsvc](configuremsvc.md), [vswhere](vswhere.md), [configuremingw](configuremingw.md).
+- Microsoft Visual Studio C/C++ 2019 all versions (Pro, Enterprise or Community)
 
-## Author
+- Microsoft Visual Studio C/C++ 2017 all versions (Pro, Enterprise or Community)
+
+- MinGW
+
+<b>GNU/Linux:</b>
+
+- GNU C/C++ compilers packaged with all distributions.
+
+<b>MacOS X:</b>
+
+- XCode C/C++ compilers.
+
+## 🔗 See also
+
+[configuremsvc](../dynamic_link/configuremsvc.md), [vswhere](../dynamic_link/vswhere.md), [configuremingw](../dynamic_link/configuremingw.md).
+
+## 👤 Author
 
 Allan CORNET

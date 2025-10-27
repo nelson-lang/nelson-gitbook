@@ -2,32 +2,32 @@
 
 Creates a error dialog box.
 
-## Syntax
+## 📝 Syntax
 
 - h = errordlg()
 - h = errordlg(text_error)
 - h = errordlg(text_error, title)
 - h = errordlg(text_error, title, mode)
 
-## Input argument
+## 📥 Input argument
 
 - text_error - a string or a cell of string: the error message.
 - title - a string: the title of the dialog box.
 - mode - a string: 'mode', 'non-modal', 'replace'.
 
-## Output argument
+## 📤 Output argument
 
 - h - a QObject handle.
 
-## Description
+## 📄 Description
 
-  <p><b>errordlg</b> creates an error dialog box.</p>
-  <p><b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.</p>
-  <p>
-    <img src="errordlg_1_E21703F7.png"/>
-  </p>
+<b>errordlg</b> creates an error dialog box.
 
-## Examples
+<b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.
+
+<img src="errordlg_1.png"/>
+
+## 💡 Examples
 
 ```matlab
 h = errordlg()
@@ -46,16 +46,16 @@ h = errordlg('error string', 'dialog title')
 h = errordlg('error string', 'dialog title', 'on')
 ```
 
-## See also
+## 🔗 See also
 
-[warndlg](warndlg.md), [questdlg](questdlg.md), [helpdlg](helpdlg.md), [msgbox](msgbox.md).
+[warndlg](../gui/warndlg.md), [questdlg](../gui/questdlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

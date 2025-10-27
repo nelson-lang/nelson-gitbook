@@ -2,31 +2,34 @@
 
 Read string from a file, stopping after a newline, or EOF, or n characters have been read.
 
-## Syntax
+## 📝 Syntax
 
 - res = fgets(f)
 - res = fgets(f, n)
 
-## Input argument
+## 📥 Input argument
 
 - f - a file descriptor
 - n - a scalar: number of characters
 
-## Output argument
+## 📤 Output argument
 
 - res - a string or -1
 
-## Description
+## 📄 Description
 
-  <p>Read string from a file, stopping after a newline, or EOF, or n characters have been read.</p>
-  <p>If there is no more character to read, fgets will return -1.</p>
-  <p>If n is omitted, fgets reads until the next newline.</p>
-  <p>characters encoding uses <b>fopen</b> parameter.</p>
+Read string from a file, stopping after a newline, or EOF, or n characters have been read.
 
-## Examples
+If there is no more character to read, fgets will return -1.
+
+If n is omitted, fgets reads until the next newline.
+
+characters encoding uses <b>fopen</b> parameter.
+
+## 💡 Examples
 
 ```matlab
-fid = fopen([nelsonroot(), '/etc/startup.m']);
+  fid = fopen([nelsonroot(), '/etc/startup.m']);
   tline = fgets(fid);
   while ischar(tline)
   disp(tline)
@@ -48,16 +51,16 @@ fid = fopen([nelsonroot(), '/etc/startup.m']);
   fclose(fid);
 ```
 
-## See also
+## 🔗 See also
 
-[fclose](fclose.md), [fopen](fopen.md), [fgetl](fgetl.md).
+[fclose](../stream_manager/fclose.md), [fopen](../stream_manager/fopen.md), [fgetl](../stream_manager/fgetl.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

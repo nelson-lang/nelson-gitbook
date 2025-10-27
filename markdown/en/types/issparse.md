@@ -2,23 +2,23 @@
 
 Return true if variable var is a sparse array.
 
-## Syntax
+## 📝 Syntax
 
 - res = issparse(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>issparse</b> returns a logical 1 if the argument is a sparse array and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 1;
@@ -30,16 +30,16 @@ B = sparse(1);
 res = issparse(B)
 ```
 
-## See also
+## 🔗 See also
 
 [sparse](../sparse/sparse.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Camera line of sigh.
 
-## Syntax
+## 📝 Syntax
 
 - view(az, el)
 - view([az, el])
@@ -11,18 +11,18 @@ Camera line of sigh.
 - view(ax, ...)
 - [az, el] = view(...)
 
-## Input argument
+## 📥 Input argument
 
 - dim - Dimensions: 2 equivalent to view(0, 90) or 3 equivalent to view(-37.5, 30).
 - az - Azimuth: scalar
 - el - Elevation: scalar
 - ax - a scalar graphics object value: parent container, specified as a axes.
 
-## Description
+## 📄 Description
 
-  <p><b>view</b>sets the view into a plot.</p>
+<b>view</b> sets the view into a plot.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -31,7 +31,7 @@ Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 ```
 
-<img src="view_1_FADFDAFB.svg" align="middle"/>
+<img src="view_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -41,7 +41,7 @@ surf(X, Y, Z)
 view(90, 0)
 ```
 
-<img src="view_2_9A6A68DE.svg" align="middle"/>
+<img src="view_2.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -51,19 +51,19 @@ surf(X, Y, Z)
 view(2)
 ```
 
-<img src="view_3_8FE94819.svg" align="middle"/>
+<img src="view_3.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[axes](axes.md).
+[axes](../graphics/axes.md).
 
-## History
+## 🕔 History
 
-| Version | Description                                |
+| Version | 📄 Description                             |
 | ------- | ------------------------------------------ |
 | 1.0.0   | initial version                            |
 | 1.2.0   | azimuth and elevation as output arguments. |
 
-## Author
+## 👤 Author
 
 Allan CORNET

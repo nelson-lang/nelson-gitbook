@@ -2,7 +2,7 @@
 
 Terminate Nelson program (same as quit)
 
-## Syntax
+## 📝 Syntax
 
 - exit
 - exit(status)
@@ -10,20 +10,20 @@ Terminate Nelson program (same as quit)
 - exit('cancel')
 - exit(status, 'force')
 
-## Description
+## 📄 Description
 
-  <p> This function is equivalent to the <b>quit</b> function.</p>
+This function is equivalent to the <b>quit</b> function.
 
-## See also
+## 🔗 See also
 
-[quit](quit.md).
+[quit](../core/quit.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

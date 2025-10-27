@@ -2,42 +2,44 @@
 
 Minutes part of the input date and time.
 
-## Syntax
+## 📝 Syntax
 
 - m = minute(t)
 - m = minute(t, formatIn)
 
-## Input argument
+## 📥 Input argument
 
 - t - serial date number or text inputs
 - formatIn - valid date format
 
-## Output argument
+## 📤 Output argument
 
 - m - a double: integer value.
 
-## Description
+## 📄 Description
 
-  <p><b>m = minute(t)</b> extracts the minute component from each date and time specified in <b>t</b>.</p>
-  <p>The output <b>m</b> is a double array containing integer values ranging from 0 to 59.</p>
+<b>m = minute(t)</b> extracts the minute component from each date and time specified in <b>t</b>.
 
-## Example
+The output <b>m</b> is a double array containing integer values ranging from 0 to 59.
+
+## 💡 Example
 
 ```matlab
 m = minute(738427.656845093)
 m = minute("2021/09/28 15:45:51", 'YYYY/M/DD HH:MM:SS')
+
 ```
 
-## See also
+## 🔗 See also
 
-[hour](hour.md), [second](second.md).
+[hour](../time/hour.md), [second](../time/second.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

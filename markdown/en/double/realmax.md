@@ -2,21 +2,21 @@
 
 Largest positive floating-point number.
 
-## Syntax
+## 📝 Syntax
 
 - R = realmax()
-- R = realtmax('double')
+- R = realmax('double')
 - R = realmax('single')
 
-## Output argument
+## 📤 Output argument
 
 - R - a double or single.
 
-## Description
+## 📄 Description
 
-  <p><b>realmax</b> returns largest positive floating-point number.</p>
+<b>realmax</b> returns largest positive floating-point number.
 
-## Example
+## 💡 Example
 
 ```matlab
 realmax
@@ -24,16 +24,16 @@ realmax('double')
 realmax('single')
 ```
 
-## See also
+## 🔗 See also
 
 [intmax](../integer/intmax.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

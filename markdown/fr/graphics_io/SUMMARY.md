@@ -1,0 +1,6 @@
+- [graphics_io](README.md)
+  - [copygraphics](copygraphics.md)
+  - [imformats](imformats.md)
+  - [imread](imread.md)
+  - [imwrite](imwrite.md)
+  - [saveas](saveas.md)

@@ -2,34 +2,34 @@
 
 Returns list of current used dllib handle.
 
-## Syntax
+## 📝 Syntax
 
 - r = dllib_used()
 
-## Output argument
+## 📤 Output argument
 
 - h - a vector of dllib handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns list of current used dllib handle.</p>
+Returns list of current used dllib handle.
 
-## See also
-
-[dlopen](dlopen.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 dllib_used(),delete(dllib_used())
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[dlopen](../dynamic_link/dlopen.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

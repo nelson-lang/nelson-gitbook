@@ -2,20 +2,21 @@
 
 get current figure graphics object.
 
-## Syntax
+## 📝 Syntax
 
 - cf = gcf()
 
-## Output argument
+## 📤 Output argument
 
 - cf - a graphics object: figure graphics object.
 
-## Description
+## 📄 Description
 
-  <p><b>cf = gcf()</b> returns the current figure graphics object.</p>
-  <p>If a figure does not exist, <b>gcf()</b> creates a figure and returns its graphics object.</p>
+<b>cf = gcf()</b> returns the current figure graphics object.
 
-## Example
+If a figure does not exist, <b>gcf()</b> creates a figure and returns its graphics object.
+
+## 💡 Example
 
 ```matlab
 cf = gcf();
@@ -23,16 +24,16 @@ root = groot();
 isequal(root.CurrentFigure, cf)
 ```
 
-## See also
+## 🔗 See also
 
-[figure](figure.md), [groot](groot.md).
+[figure](../graphics/figure.md), [groot](../graphics/groot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

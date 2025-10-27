@@ -2,37 +2,39 @@
 
 Adds path as directory where the qml engine searches for native plugins.
 
-## Syntax
+## 📝 Syntax
 
 - qml_addpluginpath(path)
 
-## Input argument
+## 📥 Input argument
 
 - path - a string : valid path.
 
-## Description
+## 📄 Description
 
-  <p><b>qml_addpluginpath</b> adds <b>path</b> as a directory where the engine searches for native plugins.</p>
-  <p>By default, the list contains only <b>.</b>. The newly added path will be first in the <b>qml_pluginpathlist</b>.</p>
+<b>qml_addpluginpath</b> adds <b>path</b> as a directory where the engine searches for native plugins.
 
-## Example
+By default, the list contains only <b>.</b>. The newly added path will be first in the <b>qml_pluginpathlist</b>.
+
+## 💡 Example
 
 ```matlab
 qml_pluginpathlist()
 qml_addpluginpath(tempdir)
 qml_pluginpathlist()
+
 ```
 
-## See also
+## 🔗 See also
 
-[qml_pluginpathlist](qml_pluginpathlist.md), [qml_addimportpath](qml_addimportpath.md).
+[qml_pluginpathlist](../qml_engine/qml_pluginpathlist.md), [qml_addimportpath](../qml_engine/qml_addimportpath.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

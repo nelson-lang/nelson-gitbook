@@ -2,42 +2,42 @@
 
 Bartlett window.
 
-## Syntax
+## 📝 Syntax
 
 - c = bartlett(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - positive integer: window length
 
-## Output argument
+## 📤 Output argument
 
 - c - column vector
 
-## Description
+## 📄 Description
 
-  <p><b>c = bartlett(m)</b> an L-point symmetric Bartlett window.</p>
+<b>c = bartlett(m)</b> an L-point symmetric Bartlett window.
 
-## Example
+## 📚 Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999, pp. 468–471.
+
+## 💡 Example
 
 ```matlab
 c = bartlett(8)
 ```
 
-Bibliography
+## 🔗 See also
 
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999, pp. 468–471.
+[hamming](../signal_processing/hamming.md), [hann](../signal_processing/hann.md).
 
-## See also
+## 🕔 History
 
-[hamming](hamming.md), [hann](hann.md).
-
-## History
-
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

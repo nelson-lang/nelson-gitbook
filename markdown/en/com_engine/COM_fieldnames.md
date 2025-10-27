@@ -2,24 +2,24 @@
 
 Returns the properties name of an COM object.
 
-## Syntax
+## 📝 Syntax
 
 - l = COM_fieldnames(h)
 - l = fieldnames(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a COM object.
 
-## Output argument
+## 📤 Output argument
 
 - l - a cell of strings.
 
-## Description
+## 📄 Description
 
-<description><b>fieldnames</b> returns a cell of strings with properties name.</description>
+<b>fieldnames</b> returns a cell of strings with properties name.
 
-## Example
+## 💡 Example
 
 ```matlab
 e = actxserver('Excel.Application');
@@ -28,16 +28,16 @@ delete(e)
 clear e
 ```
 
-## See also
+## 🔗 See also
 
-[COM_set](COM_set.md).
+[COM_set](../com_engine/COM_set.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

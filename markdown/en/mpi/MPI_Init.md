@@ -2,25 +2,22 @@
 
 Initialize the MPI execution environment.
 
-## Syntax
+## 📝 Syntax
 
 - MPI_Init()
 - r = MPI_Init()
 
-## Output argument
+## 📤 Output argument
 
 - r - a logical.
 
-## Description
+## 📄 Description
 
-  <p>Initialize the MPI execution environment.</p>
-  <p>MPI process are launched in CLI mode (no gui, no plot).</p>
+Initialize the MPI execution environment.
 
-## See also
+MPI process are launched in CLI mode (no gui, no plot).
 
-[MPI_Initialized](MPI_Initialized.md), [MPI_Finalize](MPI_Finalize.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 if ~MPI_Initialized()
@@ -29,14 +26,19 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Initialized](../mpi/MPI_Initialized.md), [MPI_Finalize](../mpi/MPI_Finalize.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

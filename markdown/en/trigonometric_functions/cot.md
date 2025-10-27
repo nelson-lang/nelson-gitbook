@@ -2,38 +2,38 @@
 
 Cotangent of angle in radians
 
-## Syntax
+## 📝 Syntax
 
 - res = cot(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>acot</b> computes the cotangent of angle for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 R = cot([-i pi+i*pi/2 -1+i*4])
 ```
 
-## See also
+## 🔗 See also
 
-[coth](coth.html), [acoth](acoth.html).
+[coth](../trigonometric/coth.md), [acoth](../trigonometric/acoth.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

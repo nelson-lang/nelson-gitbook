@@ -2,7 +2,7 @@
 
 3-D line plot.
 
-## Syntax
+## 📝 Syntax
 
 - plot3(X1, Y1, Z1, ...)
 - plot3(X1, Y1, Z1, LineSpec, ...)
@@ -10,7 +10,7 @@
 - plot3(ax, ...)
 - go = plot3(...)
 
-## Input argument
+## 📥 Input argument
 
 - X1 - x-coordinates: vector or matrix.
 - Y1 - y-coordinates: vector or matrix.
@@ -20,18 +20,19 @@
 - propertyName - a scalar string or row vector character. see help of 'line' for property list.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: line type.
 
-## Description
+## 📄 Description
 
-  <p><b>plot3(X1, Y1, Z1, ...)</b>plots one or more lines in three-dimensional space.</p>
-  <p><b>go = plot3(...)</b> returns a column vector of line graphics objects.</p>
-  <p/>
-  <p>see <b>line</b> or <b>plot</b> for more information about properties</p>
+<b>plot3(X1, Y1, Z1, ...)</b> plots one or more lines in three-dimensional space.
 
-## Examples
+<b>go = plot3(...)</b> returns a column vector of line graphics objects.
+
+see <b>line</b> or <b>plot</b> for more information about properties
+
+## 💡 Examples
 
 ```matlab
 f  = figure();
@@ -40,7 +41,7 @@ L = plot3(sin(t), cos(t), t);
 axis square
 ```
 
-<img src="plot3_1_1EE364C1.svg" align="middle"/>
+<img src="plot3_1.svg" align="middle"/>
 
 ```matlab
 f  = figure();
@@ -55,18 +56,18 @@ title (_('plot3 display of 3-D helix'));
 axis square
 ```
 
-<img src="plot3_2_F084144A.svg" align="middle"/>
+<img src="plot3_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[line](line.md), [plot](plot.md).
+[line](../graphics/line.md), [plot](../graphics/plot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

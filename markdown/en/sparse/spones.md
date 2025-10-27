@@ -2,39 +2,39 @@
 
 Replaces non zero sparse matrix elements with ones.
 
-## Syntax
+## 📝 Syntax
 
 - s = spones(S)
 
-## Input argument
+## 📥 Input argument
 
 - S - Sparse or 2D matrix.
 
-## Output argument
+## 📤 Output argument
 
 - S - a sparse matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>s = spones(S)</b> returns a matrix <b>s</b> with the same sparsity structure as <b>S</b>, but with one's in the nonzero positions.</p>
+<b>s = spones(S)</b> returns a matrix <b>s</b> with the same sparsity structure as <b>S</b>, but with one's in the nonzero positions.
 
-## Example
+## 💡 Example
 
 ```matlab
 S = sparse([1,0;3,4]);
 R = spones(S)
 ```
 
-## See also
+## 🔗 See also
 
-[speye](speye.md), [sparse](sparse.md).
+[speye](../sparse/speye.md), [sparse](../sparse/sparse.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

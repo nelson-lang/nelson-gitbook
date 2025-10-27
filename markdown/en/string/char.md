@@ -2,26 +2,26 @@
 
 Converts to a character array.
 
-## Syntax
+## 📝 Syntax
 
 - res = char(var)
 - res = char(var1, var2)
 - res = char(var1, var2, ..., varN)
 
-## Input argument
+## 📥 Input argument
 
 - var - a cell of strings, string array or an numeric array.
 - var1, var2, ..., varN - strings or an numeric arrays.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string
 
-## Description
+## 📄 Description
 
 <b>char</b> converts numerical input into character data by taking the corresponding unicode character for each element.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 M = [ 104   101   108   108   111;
@@ -37,16 +37,16 @@ R = char('these', 'are', 'test', 'strings')
 R = char(["these"; "are"; "test"; "strings"])
 ```
 
-## See also
+## 🔗 See also
 
 [double](../double/double.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

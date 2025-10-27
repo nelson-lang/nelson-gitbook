@@ -2,11 +2,11 @@
 
 Pole assignment for a given matrix pair (A,B).
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, WR_OUT, WI_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
 
-## Input argument
+## 📥 Input argument
 
 - DICO - Specifies the type of the original system.'C': continuous-time system;'D': discrete-time system.
 - ALPHA - Specifies the maximum admissible value.
@@ -16,7 +16,7 @@ Pole assignment for a given matrix pair (A,B).
 - WI_IN - contains the imaginary parts of the desired eigenvalues of the closed-loop system state-matrix A+B\*F.
 - TOL - The absolute tolerance level below which the elements of A or B are considered zero (used for controllability tests).
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - the leading N-by-N part of this array contains the matrix Z'*(A+B*F)\*Z in a real Schur form.
 - WR_OUT - if INFO = 0, the leading NAP elements of these arrays contain the real parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
@@ -29,19 +29,19 @@ Pole assignment for a given matrix pair (A,B).
 - IWARN - = 0: no warning; = K: K violations of the numerical stability condition.
 - INFO - = 0: successful exit;
 
-## Description
+## 📄 Description
 
-  <p>To determine the state feedback matrix F for a given system (A,B) such that the closed-loop state matrix A+B*F has specified eigenvalues.</p>
+To determine the state feedback matrix F for a given system (A,B) such that the closed-loop state matrix A+B\*F has specified eigenvalues.
 
-Used function(s)
+## Used function(s)
 
 SB01BD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB01BD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 N = 4;
@@ -65,14 +65,15 @@ WR_IN = [-0.5000; -0.5000];
 WI_IN = [ 0.1500; -0.1500];
 
 [A_OUT, WR_OUT, WI_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
+
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

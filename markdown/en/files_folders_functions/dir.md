@@ -2,7 +2,7 @@
 
 Returns file list.
 
-## Syntax
+## 📝 Syntax
 
 - dir
 - dir(dirname)
@@ -11,37 +11,40 @@ Returns file list.
 - res = dir(dirname)
 - res = dir(dirname, '-s')
 
-## Input argument
+## 📥 Input argument
 
 - dirname - a string: file or directory name.
 - '-s' - a string: scan also subdirectories.
 
-## Output argument
+## 📤 Output argument
 
 - res - a struct with fields: name, date, bytes, isdir, datenum.
 
-## Description
+## 📄 Description
 
-  <p><b>dir</b> displays the list of files and folders in the current folder.</p>
-  <p>* (wildcard) is supported in filename and path name.</p>
+<b>dir</b> displays the list of files and folders in the current folder.
 
-## Example
+- (wildcard) is supported in filename and path name.
+
+## 💡 Example
 
 ```matlab
 res = dir(nelsonroot())
 res = dir(nelsonroot(), '-s')
+res = dir([nelsonroot(),'/*.m'], '-s')
+
 ```
 
-## See also
+## 🔗 See also
 
-[ls](ls.md), [isdir](isdir.md), [isfile](isfile.md).
+[ls](../files_folders_functions/ls.md), [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

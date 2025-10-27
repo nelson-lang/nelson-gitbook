@@ -2,39 +2,39 @@
 
 Returns last day of month.
 
-## Syntax
+## 📝 Syntax
 
 - E = eomday(Y, M)
 
-## Input argument
+## 📥 Input argument
 
 - Y - year: real.
 - M - month: real.
 
-## Output argument
+## 📤 Output argument
 
 - E - last day of month: real.
 
-## Description
+## 📄 Description
 
-  <p><b>E = eomday(Y, M)</b> returns the last day of the month <b>M</b> for the year <b>Y</b>.</p>
+<b>E = eomday(Y, M)</b> returns the last day of the month <b>M</b> for the year <b>Y</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 eomday(1900, 1:12)
 ```
 
-## See also
+## 🔗 See also
 
-[datenum](datenum.md), [weekday](weekday.md).
+[datenum](../time/datenum.md), [weekday](../time/weekday.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

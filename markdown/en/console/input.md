@@ -2,24 +2,24 @@
 
 Display prompt and wait for user input.
 
-## Syntax
+## 📝 Syntax
 
 - r = input(prompt_str)
 - r = input(prompt_str, 's')
 
-## Input argument
+## 📥 Input argument
 
 - prompt_str - a string: temp. prompt displayed
 
-## Output argument
+## 📤 Output argument
 
 - r - a string
 
-## Description
+## 📄 Description
 
-  <p>Display prompt and wait for user input. input returns a string which is the expression entered at keyboard.</p>
+Display prompt and wait for user input. input returns a string which is the expression entered at keyboard.
 
-## Example
+## 💡 Example
 
 ```matlab
 res = input('Please input a value ', 's');
@@ -32,16 +32,16 @@ else
 end
 ```
 
-## See also
+## 🔗 See also
 
 [execstr](../core/execstr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

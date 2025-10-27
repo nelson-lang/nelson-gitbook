@@ -2,25 +2,25 @@
 
 Clear figure.
 
-## Syntax
+## 📝 Syntax
 
 - clf
 - clf(f)
 - F = clf(...)
 
-## Input argument
+## 📥 Input argument
 
 - f - a scalar graphics object on an existing figure.
 
-## Output argument
+## 📤 Output argument
 
 - F - a graphics object: used figure graphics object.
 
-## Description
+## 📄 Description
 
-  <p><b>clf</b> clears the current figure.</p>
+<b>clf</b> clears the current figure.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -31,16 +31,16 @@ sleep(5)
 clf
 ```
 
-## See also
+## 🔗 See also
 
-[gcf](gcf.md), [cla](cla.md).
+[gcf](../graphics/gcf.md), [cla](../graphics/cla.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

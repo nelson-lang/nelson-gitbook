@@ -2,30 +2,30 @@
 
 Cartesian rectangular grid in 2-D or 3-D.
 
-## Syntax
+## 📝 Syntax
 
 - [X, Y] = meshgrid(x, y)
 - [X, Y] = meshgrid(x)
 - [X, Y, Z] = meshgrid(x, y, z)
 - [X, Y, Z] = meshgrid(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - x-coordinates of points: vector
 - y - y-coordinates of points: vector
 - z - z-coordinates of points: vector
 
-## Output argument
+## 📤 Output argument
 
 - X - x-coordinates over grid: 2-D or 3-D array.
 - Y - y-coordinates over grid: 2-D or 3-D array.
 - Z - z-coordinates over grid: 3-D array.
 
-## Description
+## 📄 Description
 
-  <p><b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.</p>
+<b>meshgrid</b> creates Cartesian rectangular grid in 2-D or 3-D.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = -1:0.4:1;
@@ -38,12 +38,12 @@ z = 0:3:6;
 [X,Y,Z] = meshgrid(x, y, z)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

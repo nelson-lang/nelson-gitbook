@@ -2,40 +2,40 @@
 
 Permute array dimensions.
 
-## Syntax
+## 📝 Syntax
 
 - R = permute(A, order)
 
-## Input argument
+## 📥 Input argument
 
 - A - an array.
 - order - Dimension order: row vector
 
-## Output argument
+## 📤 Output argument
 
 - R - result array rearranged with new dimension order.
 
-## Description
+## 📄 Description
 
-<b>permute</b> permutes the dimensions of an array.
+<b>permute</b> rearranges the dimensions of an array according to the specified order.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [1 2 3; 4 5 6]
 y = permute(x,[3 1 2])
 ```
 
-## See also
+## 🔗 See also
 
-[ipermute](ipermute.md), [reshape](reshape.md), [transpose](../operators/transpose.md).
+[ipermute](../elementary_functions/ipermute.md), [reshape](../elementary_functions/reshape.md), [transpose](../operators/transpose.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -1,10 +1,12 @@
-# COM engine
+# Component Object Model (COM) Client Interface
 
-COM engine
+The COM Engine module allows Nelson to interact with Windows COM (Component Object Model) and ActiveX components.
 
-## Description
+It enables automation of software applications, access to their methods and properties, and manipulation of COM objects directly from Nelson scripts.
 
-Component Object Model (COM) client interface: binary-interface standard for software components on Windows.
+This provides a way to integrate Nelson with a wide range of Windows software, including Microsoft Office applications.
+
+## Functions
 
 - [COM examples](1_COM_examples.md) - Some example to show how to use COM interface.
 - [COM_delete](COM_delete.md) - Removes COM control or server.

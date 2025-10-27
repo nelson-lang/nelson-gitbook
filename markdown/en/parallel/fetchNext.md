@@ -2,29 +2,29 @@
 
 Retrieve next unread outputs from FevalFuture array.
 
-## Syntax
+## 📝 Syntax
 
 - [idx, y1, ... , ym] = fetchNext(f)
 - [idx, y1, ... , ym] = fetchNext(f, timeout)
 
-## Input argument
+## 📥 Input argument
 
 - f - FevalFuture object
 - timeout - timeout seconds: waits for a maximum of timeout seconds for a result in f to become available.
 
-## Output argument
+## 📤 Output argument
 
 - idx - Index of the FevalFuture array, returned as an integer scalar.
 - y1, ... , ym - outputs
 
-## Description
+## 📄 Description
 
-  <p><b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index <b>idx</b> of the new readable <b>FevalFuture</b> object in the array <b>f</b> that is finished, and <b>m</b> results from that FevalFuture as <b>Y1, ... , Ym</b>.</p>
-  <p/>
+<b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index <b>idx</b> of the new readable <b>FevalFuture</b> object in the array <b>f</b> that is finished, and <b>m</b> results from that FevalFuture as <b>Y1, ... , Ym</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 tic()
 N = 100;
 for idx = N:-1:1
@@ -37,18 +37,19 @@ for idx = 1:N
     disp(sprintf('Result: %d', result));
 end
 toc()
+
 ```
 
-## See also
+## 🔗 See also
 
-[parfeval](parfeval.md), [fetchOutputs](fetchOutputs.md), [backgroundPool](backgroundPool.md).
+[parfeval](../parallel/parfeval.md), [fetchOutputs](../parallel/fetchOutputs.md), [backgroundPool](../parallel/backgroundPool.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

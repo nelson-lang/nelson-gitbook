@@ -2,27 +2,29 @@
 
 Get nelson(s) Process IDentificator.
 
-## Syntax
+## 📝 Syntax
 
 - p = getpid()
 - v = getpid('available')
 
-## Input argument
+## 📥 Input argument
 
 - 'available' - a string.
 
-## Output argument
+## 📤 Output argument
 
 - p - a double: current Process Identificator.
 - v - a vector of double: list of nelson Processes Identification (with same arch) currently running for current user.
 
-## Description
+## 📄 Description
 
-  <p><b>p = getpid()</b> returns current nelson process identificator currently running on computer.</p>
-  <p><b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.</p>
-  <p>win64 and win32 are two differents architecture but they can run in same time.</p>
+<b>p = getpid()</b> returns current nelson process identificator currently running on computer.
 
-## Example
+<b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.
+
+win64 and win32 are two differents architecture but they can run in same time.
+
+## 💡 Example
 
 ```matlab
 p = getpid()
@@ -38,16 +40,16 @@ sleep(5) % detached process need to wait to see available
 getpid('available')
 ```
 
-## See also
+## 🔗 See also
 
-[unix](unix.html), [ipc](ipc.md).
+[unix](../os_functions/unix.md), [ipc](../ipc/ipc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

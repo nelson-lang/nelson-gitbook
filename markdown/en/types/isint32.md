@@ -2,23 +2,25 @@
 
 Return true if variable var is a signed 32-bit integer type array.
 
-## Syntax
+## 📝 Syntax
 
 - res = isint32(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
-<b>isint32</b> returns a logical <b>1</b>if the argument is a <b>signed 32-bit</b> integer array and a logical <b>0</b> otherwise.
+<b>isint32</b> returns a logical <b>1</b> if the argument is a <b>signed 32-bit</b> integer array and a logical <b>0</b> otherwise.
 
-## Examples
+<b>signed 32-bit</b> integer array and a logical <b>0</b> otherwise.
+
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -30,16 +32,16 @@ B = int32(3);
 res = isint32(B)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [int32](../integer/int32.md), [isinteger](isinteger.md).
+[isa](../types/isa.md), [int32](../integer/int32.md), [isinteger](../types/isinteger.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,29 +2,30 @@
 
 Checks the number of output arguments.
 
-## Syntax
+## 📝 Syntax
 
 - nargoutchk(minArgs, maxArgs)
 - msg = nargoutchk(minArgs, maxArgs, numArgs)
 - st = nargoutchk(minArgs, maxArgs, numArgs, 'struct')
 
-## Input argument
+## 📥 Input argument
 
 - minArgs - minimum number of accepted outputs (scalar integer value).
 - maxArgs - maximum number of accepted outputs (scalar integer value).
 - numArgs - number of function outputs (scalar integer value).
 
-## Output argument
+## 📤 Output argument
 
 - msg - a string: error message.
 - st - a struct with error message and identifier.
 
-## Description
+## 📄 Description
 
-  <p><b>nargoutchk</b> checks the number of output arguments of an function.</p>
-  <p>To ensure a minimum number of outputs while imposing no maximum limit, set <b>maxArgs</b> to <b>inf</b>. For example, <b>nargoutchk(2, inf)</b> generates an error if fewer than two outputs are specified.</p>
+<b>nargoutchk</b> checks the number of output arguments of an function.
 
-## Example
+To ensure a minimum number of outputs while imposing no maximum limit, set <b>maxArgs</b> to <b>inf</b>. For example, <b>nargoutchk(2, inf)</b> generates an error if fewer than two outputs are specified.
+
+## 💡 Example
 
 With an macro function:
 
@@ -33,17 +34,17 @@ nargoutchk(1, 2, 3)
 nargoutchk(1, 2, 3, 'struct')
 ```
 
-## See also
+## 🔗 See also
 
-[nargout](nargin.md), [narginchk](narginchk.md).
+[nargout](../core/nargin.md), [narginchk](../core/narginchk.md).
 
-## History
+## 🕔 History
 
-| Version | Description                |
+| Version | 📄 Description             |
 | ------- | -------------------------- |
 | 1.0.0   | initial version            |
 | 1.10.0  | nargoutchk(3, Inf) managed |
 
-## Author
+## 👤 Author
 
 Allan CORNET

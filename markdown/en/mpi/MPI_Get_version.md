@@ -2,24 +2,20 @@
 
 Return the version number of MPI.
 
-## Syntax
+## 📝 Syntax
 
 - [major, minor] = MPI_Get_version()
 
-## Output argument
+## 📤 Output argument
 
 - major - an integer value.
 - minor - an integer value.
 
-## Description
+## 📄 Description
 
-  <p>Return the version number of MPI.</p>
+Return the version number of MPI.
 
-## See also
-
-[MPI_Init](MPI_Init.md), [MPI_Finalize](MPI_Finalize.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 if ~MPI_Initialized()
@@ -29,14 +25,19 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Init](../mpi/MPI_Init.md), [MPI_Finalize](../mpi/MPI_Finalize.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

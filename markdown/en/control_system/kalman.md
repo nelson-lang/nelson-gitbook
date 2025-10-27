@@ -2,12 +2,12 @@
 
 Design Kalman filter for state estimation.
 
-## Syntax
+## 📝 Syntax
 
 - [kalmf, L, P, M, Z] = kalman(sys, Q, R, N)
 - [kalmf, L, P, M, Z] = kalman(sys, Q, R, N, sensors, known)
 
-## Input argument
+## 📥 Input argument
 
 - sys - Plant model with process noise: state-space model.
 - Q - Process noise covariance: scalar or matrix.
@@ -16,7 +16,7 @@ Design Kalman filter for state estimation.
 - sensors - Measured outputs of sys: vector.
 - known - Known inputs of sys: vector.
 
-## Output argument
+## 📤 Output argument
 
 - kalmf - Kalman estimator: state-space model
 - L - Filter gains: matrix
@@ -24,12 +24,13 @@ Design Kalman filter for state estimation.
 - M - Innovation gains of state estimators: matrix
 - Z - Steady-state error covariances: matrix
 
-## Description
+## 📄 Description
 
-  <p><b>[kalmf, L, P] = kalman(sys, Q, R, N)</b> generates a Kalman filter using the provided plant model <b>sys</b> and noise covariance matrices <b>Q</b>, <b>R</b>, and <b>N</b>.</p>
-  <p>The function calculates a Kalman filter suitable for application in a Kalman estimator, as depicted in the following diagram.</p>
+<b>[kalmf, L, P] = kalman(sys, Q, R, N)</b> generates a Kalman filter using the provided plant model <b>sys</b> and noise covariance matrices <b>Q</b>, <b>R</b>, and <b>N</b>.
 
-## Example
+The function calculates a Kalman filter suitable for application in a Kalman estimator, as depicted in the following diagram.
+
+## 💡 Example
 
 ```matlab
 A = [11.269   -0.4940    1.129; 1.0000         0         0;0    1.0000         0];
@@ -41,16 +42,16 @@ R = 1;
 [kEst, l, p, m, z] = kalman(sys, Q, R, [])
 ```
 
-## See also
+## 🔗 See also
 
-[care](care.md), [dare](dare.md).
+[care](../control_system/care.md), [dare](../control_system/dare.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

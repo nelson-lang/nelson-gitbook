@@ -1,10 +1,12 @@
 # Handle
 
-Handle
+The Handle module provides tools for creating and manipulating handle objects in Nelson.
 
-## Description
+Handle objects are lightweight references to larger data structures, enabling efficient memory management and data sharing between different parts of a program.
 
-handle object functions
+This module includes functions for creating, copying, and destroying handle objects, as well as for managing their lifetimes and ensuring proper cleanup.
+
+## Functions
 
 - [delete](delete.md) - delete handle objects.
 - [get](get.md) - Retrieve a property value from an handle object.

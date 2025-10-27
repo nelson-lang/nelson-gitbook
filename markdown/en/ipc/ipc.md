@@ -2,7 +2,7 @@
 
 Inter process communicator.
 
-## Syntax
+## 📝 Syntax
 
 - O = ipc(pid, 'eval', cmd)
 - B = ipc(pid, 'isvar', name, scope)
@@ -15,7 +15,7 @@ Inter process communicator.
 - ipc(pid, 'put', var, name, scope)
 - ipc(pid, 'minimize', tf)
 
-## Input argument
+## 📥 Input argument
 
 - 'post' - a string: post a command to evaluate to another nelson's process in base scope (not blocking).
 - 'eval' - a string: post a command to evaluate to another nelson's process in base scope (blocking).
@@ -24,22 +24,26 @@ Inter process communicator.
 - 'get' - a string: get a variable from another nelson's process.
 - 'minimize' - a string: minimize main window from another nelson's process.
 
-## Output argument
+## 📤 Output argument
 
 - B - a logical: true if variable exists.
 - V - a variable from another nelson.
 - TF - a logical: true if destination process is minimized.
 - O - a character array: output of evaluate string.
 
-## Description
+## 📄 Description
 
-  <p><b>ipc</b> allows to execute, get, put variables between multiple nelson's process.</p>
-  <p>All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.</p>
-  <p>LIMITATION:</p>
-  <p>The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double.</p>
-  <p>Current limitation to limit memory usage.</p>
+<b>ipc</b> allows to execute, get, put variables between multiple nelson's process.
 
-## Examples
+All serializable nelson's types are supported. Unsupported types will be replaced by an empty matrix and a warning.
+
+LIMITATION:
+
+The limit for the size of data transferred is 5000x5000 double. On 32 bits architecture, 1024x1024 double.
+
+Current limitation to limit memory usage.
+
+## 💡 Examples
 
 ```matlab
 master_pid = getpid()
@@ -98,16 +102,16 @@ ipc(getpid(), 'minimize', true)
 ipc(getpid(), 'minimize')
 ```
 
-## See also
+## 🔗 See also
 
-[getpid](getpid.md), [unix](unix.html), [eval](../core/eval.md).
+[getpid](../ipc/getpid.md), [unix](../os_functions/unix.md), [eval](../core/eval.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

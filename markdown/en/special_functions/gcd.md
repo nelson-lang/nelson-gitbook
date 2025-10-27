@@ -2,28 +2,28 @@
 
 Greatest common divisor
 
-## Syntax
+## 📝 Syntax
 
 - G = gcd(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a scalar, vector, or matrix of real integer values.
 - B - a scalar, vector, or matrix of real integer values.
 
-## Output argument
+## 📤 Output argument
 
 - G - result of gcd function (Greatest common divisor).
 
-## Description
+## 📄 Description
 
-  <p><b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.</p>
+<b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.
 
-Bibliography
+## 📚 Bibliography
 
 Knuth, D. “Algorithms A and X.” The Art of Computer Programming, Vol. 2, Section 4.5.2. Reading, MA: Addison-Wesley, 1973.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [-5 7; 10 0];
@@ -31,16 +31,16 @@ B = [-15 3; 50 0];
 G = gcd(A, B)
 ```
 
-## See also
+## 🔗 See also
 
-[gamma](gamma.md).
+[gamma](../special_functions/gamma.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

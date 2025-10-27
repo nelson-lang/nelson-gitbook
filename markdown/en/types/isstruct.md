@@ -2,23 +2,23 @@
 
 Return true if variable var is a structure.
 
-## Syntax
+## 📝 Syntax
 
 - res = isstruct(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isstruct</b> returns a logical 1 if the argument is a struct (structure) and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 1;
@@ -36,16 +36,16 @@ C.B = 'hello';
 res = isstruct(C)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [struct](struct.html).
+[isa](../types/isa.md), [struct](../integer/struct.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

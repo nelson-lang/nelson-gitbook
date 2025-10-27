@@ -2,14 +2,14 @@
 
 Generates a makefile for building a dynamic library.
 
-## Syntax
+## 📝 Syntax
 
 - [res, message] = dlgeneratemake(destinationdir, libname, c_cpp_files, include)
 - [res, message] = dlgeneratemake(destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)
 - [res, message] = dlgeneratemake(maketype, destinationdir, libname, c_cpp_files, include)
 - [res, message] = dlgeneratemake(maketype, destinationdir, libname, c_cpp_files, includes, defines, external_libraries, build_configuration, c_flags, cxx_flags)
 
-## Input argument
+## 📥 Input argument
 
 - maketype - a string: 'executable' or 'dynamic_library'.
 - destinationdir - a string: destination directory where is generated the makefile.
@@ -22,17 +22,18 @@ Generates a makefile for building a dynamic library.
 - c_flags - a string: C flags
 - cxx_flags - a string: C flags
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if makefile was generated.
 - message - a string: empty if makefile was generated or an error message.
 
-## Description
+## 📄 Description
 
-  <p><b>dlgeneratemake</b> generates a makefile adapted to your system environment for building shared libraries.</p>
-  <p>Thanks to <b>CMake</b> to help Nelson in this task.</p>
+<b>dlgeneratemake</b> generates a makefile adapted to your system environment for building shared libraries.
 
-## Example
+Thanks to <b>CMake</b> to help Nelson in this task.
+
+## 💡 Example
 
 See module skeleton for example
 
@@ -45,16 +46,16 @@ See module skeleton for example
 [dlgetnelsonlibraries(); [currentpath, '/../src/business_code']]);
 ```
 
-## See also
+## 🔗 See also
 
-[dlmake](dlmake.md).
+[dlmake](../dynamic_link/dlmake.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

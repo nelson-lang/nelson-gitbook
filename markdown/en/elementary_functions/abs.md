@@ -2,40 +2,41 @@
 
 Absolute value
 
-## Syntax
+## 📝 Syntax
 
 - R = abs(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - result of abs: absolute value.
 
-## Description
+## 📄 Description
 
-  <p><b>abs</b> computes the absolute value.</p>
-  <p>If input argument is a complex number, <b>abs</b> computes the complex magnitude.</p>
+<b>abs</b> computes the absolute value.
 
-## Example
+If input argument is a complex number, <b>abs</b> computes the complex magnitude.
+
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = abs(x)
 ```
 
-## See also
+## 🔗 See also
 
-[conj](conj.md).
+[conj](../elementary_functions/conj.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

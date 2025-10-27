@@ -2,19 +2,19 @@
 
 Plot colormap.
 
-## Syntax
+## 📝 Syntax
 
 - rgbplot(cmap)
 
-## Input argument
+## 📥 Input argument
 
 - cmap - Colormap: three-column matrix of RGB triplets .
 
-## Description
+## 📄 Description
 
-  <p><b>rgbplot(cmap)</b> plots the R (red), G (green), and B (blue) intensities of the specified <b>cmap</b> colormap.</p>
+<b>rgbplot(cmap)</b> plots the R (red), G (green), and B (blue) intensities of the specified <b>cmap</b> colormap.
 
-## Example
+## 💡 Example
 
 ```matlab
 f  = figure();
@@ -26,18 +26,18 @@ colormap = [0.2 0.1 0.5;
 rgbplot(colormap);
 ```
 
-<img src="rgbplot_1A9AFB52.svg" align="middle"/>
+<img src="rgbplot.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[plot](plot.md), [colormap](colormap.md).
+[plot](../graphics/plot.md), [colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

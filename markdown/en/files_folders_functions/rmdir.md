@@ -2,7 +2,7 @@
 
 Removes a directory.
 
-## Syntax
+## 📝 Syntax
 
 - rmdir(dirname)
 - rmdir(dirname, 's')
@@ -11,38 +11,41 @@ Removes a directory.
 - [res, msg] = rmdir(dirname)
 - [res, msg] = rmdir(dirname, 's')
 
-## Input argument
+## 📥 Input argument
 
 - dirname - a string: file or directory name.
 - 's' - a string: removes also subdirectories.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false.
 - msg - a string: error message or ''.
 
-## Description
+## 📄 Description
 
-  <p><b>res = rmdir(dirname)</b> removes the directory <b>dirname</b>.</p>
-  <p>If the directory is not empty, you must use the s argument.</p>
+<b>res = rmdir(dirname)</b> removes the directory <b>dirname</b>.
 
-## Example
+If the directory is not empty, you must use the s argument.
+
+## 💡 Example
 
 ```matlab
+
 mkdir([tempdir(), 'test'])
 rmdir([tempdir(), 'test'])
+
 ```
 
-## See also
+## 🔗 See also
 
-[isdir](isdir.md), [mkdir](mkdir.md).
+[isdir](../files_folders_functions/isdir.md), [mkdir](../files_folders_functions/mkdir.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

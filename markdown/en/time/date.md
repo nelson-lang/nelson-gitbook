@@ -2,35 +2,35 @@
 
 Return the Current date as character vector.
 
-## Syntax
+## 📝 Syntax
 
 - d = date()
 
-## Output argument
+## 📤 Output argument
 
 - d - a string: date string using format dd-MMM-yyy. MMM: English abbreviation for the month name.
 
-## Description
+## 📄 Description
 
-  <p><b>d = date()</b> returns the current date as a character vector in the format <b>dd-MMM-yyyy</b>.</p>
+<b>d = date()</b> returns the current date as a character vector in the format <b>dd-MMM-yyyy</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 d = date()
 fix(c)
 ```
 
-## See also
+## 🔗 See also
 
-[now](now.md).
+[now](../time/now.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

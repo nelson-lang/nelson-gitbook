@@ -2,27 +2,27 @@
 
 Remove inputs, outputs and states from state-space system.
 
-## Syntax
+## 📝 Syntax
 
 - sysOut = ssselect(sysIn, INPUTS, OUTPUTS)
 - sysOut = ssselect(sysIn, INPUTS, OUTPUTS, STATES)
 
-## Input argument
+## 📥 Input argument
 
 - sysIn - state-space model
 - INPUTS - indexes into the system inputs
 - OUTPUTS - indexes into the system outputs
 - STATES - states removed from the system.
 
-## Output argument
+## 📤 Output argument
 
 - sysOut - state-space model: subsystem with removed inputs, outputs and states.
 
-## Description
+## 📄 Description
 
-  <p><b>ssdelete</b> removes inputs, outputs and states from state-space system.</p>
+<b>ssdelete</b> removes inputs, outputs and states from state-space system.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [33,2,5; 23,200,2; 9,2,45];
@@ -36,16 +36,16 @@ outputs = 1;
 R = ssdelete(sys1, inputs, outputs)
 ```
 
-## See also
+## 🔗 See also
 
-[ssselect](ssselect.md).
+[ssselect](../control_system/ssselect.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

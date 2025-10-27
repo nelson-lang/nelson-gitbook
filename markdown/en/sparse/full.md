@@ -2,40 +2,41 @@
 
 Sparse to full matrix conversion.
 
-## Syntax
+## 📝 Syntax
 
 - M = full(sp)
 
-## Input argument
+## 📥 Input argument
 
 - sp - a matrix: double or logical, sparse.
 
-## Output argument
+## 📤 Output argument
 
 - M - a matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>full</b> converts a sparse matrix into its full representation.</p>
-  <p> If input argument is already full then output argument will be equal to input argument.</p>
+<b>full</b> converts a sparse matrix into its full representation.
 
-## Example
+If input argument is already full then output argument will be equal to input argument.
+
+## 💡 Example
 
 ```matlab
 sp = sparse(eye(3,3))
 F = full(sp)
 ```
 
-## See also
+## 🔗 See also
 
-[sparse](sparse.md).
+[sparse](../sparse/sparse.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

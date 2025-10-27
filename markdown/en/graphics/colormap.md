@@ -2,27 +2,27 @@
 
 View and set current colormap.
 
-## Syntax
+## 📝 Syntax
 
 - colormap(map)
 - colormap(target ,map)
 - cmap = colormap()
 - cmap = colormap(target)
 
-## Input argument
+## 📥 Input argument
 
 - map - colormap name, 'default' or RGB triplets (matrix).
 - target - Target: figure or axes.
 
-## Output argument
+## 📤 Output argument
 
 - cmap - Colormap values: RGB triplets (matrix).
 
-## Description
+## 📄 Description
 
-  <p><b>colormap</b>allows to view and set the colormap used into a plot.</p>
+<b>colormap</b> allows to view and set the colormap used into a plot.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 f = figure()
@@ -31,9 +31,10 @@ y = x';
 Z = exp(-(x .^ 2 + y .^ 2) / 0.4);
 imagesc(Z);
 colormap('summer')
+
 ```
 
-<img src="colormap_1_25A945C4.svg" align="middle"/>
+<img src="colormap_1.svg" align="middle"/>
 
 ```matlab
 f = figure()
@@ -44,7 +45,7 @@ imagesc(Z);
 colormap('gray')
 ```
 
-<img src="colormap_2_ED1A05C7.svg" align="middle"/>
+<img src="colormap_2.svg" align="middle"/>
 
 ```matlab
 f = figure()
@@ -62,18 +63,18 @@ map = [0 0 0.3;
 colormap(map)
 ```
 
-<img src="colormap_3_3B877120.svg" align="middle"/>
+<img src="colormap_3.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[rgbplot](rgbplot.md).
+[rgbplot](../graphics/rgbplot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

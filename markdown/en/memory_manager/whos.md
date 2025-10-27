@@ -2,7 +2,7 @@
 
 List variables in memory or in .nh5 or in .mat file with sizes and types.
 
-## Syntax
+## 📝 Syntax
 
 - whos
 - s = whos()
@@ -13,21 +13,21 @@ List variables in memory or in .nh5 or in .mat file with sizes and types.
 - whos(... , var1, ..., varN)
 - s = whos(... , var1, ..., varN)
 
-## Input argument
+## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
 - var1, ..., varN - a string: variable name.
 - filename - string: an existing filename .nh5 or .mat file.
 
-## Output argument
+## 📤 Output argument
 
 - st - stores information about the variables in the structure array s.
 
-## Description
+## 📄 Description
 
-  <p><b>whos</b> displays current variable names in memory or in .nh5 or .mat file.</p>
+<b>whos</b> displays current variable names in memory or in .nh5 or .mat file.
 
-## Example
+## 💡 Example
 
 ```matlab
 clear
@@ -38,18 +38,19 @@ whos
 s = whos()
 save([tempdir(), 'example_who.nh5'], 'A', 'b')
 whos([tempdir(), 'example_who.nh5'])
+
 ```
 
-## See also
+## 🔗 See also
 
-[what](../functions_manager/what.md), [clear](clear.md), [who](who.md).
+[what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

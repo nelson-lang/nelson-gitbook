@@ -2,11 +2,11 @@
 
 Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system.
 
-## Syntax
+## 📝 Syntax
 
 - [NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
 
-## Input argument
+## 📥 Input argument
 
 - EQUIL - 'S': Perform balancing (scaling) or 'N': Do not perform balancing.
 - N - The number of state variables, i.e., the order of the matrix A.
@@ -18,7 +18,7 @@ Construction of a regular pencil for a given system such that its generalized ei
 - D - The leading P-by-M part of this array must contain the direct transmission matrix D of the system.
 - TOL - A tolerance used in rank decisions.
 
-## Output argument
+## 📤 Output argument
 
 - NU - The number of (finite) invariant zeros.
 - RANK - The normal rank of the transfer function matrix.
@@ -32,20 +32,21 @@ Construction of a regular pencil for a given system such that its generalized ei
 - BF - The leading NU-by-NU part of this array contains the coefficient matrix B of the reduced pencil.
 - INFO - 0: successful exit; if INFO = -i, the i-th argument had an illegal value.
 
-## Description
+## 📄 Description
 
-  <p>To construct for a linear multivariable system described by a state-space model (A,B,C,D) a regular pencil (A - lambda*B ) which has the invariant zeros of the system as generalized eigenvalues.</p>
-  <p>The routine also computes the orders of the infinite zeros and the right and left Kronecker indices of the system (A,B,C,D).</p>
+To construct for a linear multivariable system described by a state-space model (A,B,C,D) a regular pencil (A - lambda\*B ) which has the invariant zeros of the system as generalized eigenvalues.
 
-Used function(s)
+The routine also computes the orders of the infinite zeros and the right and left Kronecker indices of the system (A,B,C,D).
+
+## Used function(s)
 
 AB08ND
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/AB08ND.html
 
-## Example
+## 💡 Example
 
 ```matlab
 N = 6;
@@ -83,14 +84,15 @@ D = [0.0   0.0;
 
 % Compute the structural invariants of the given system.
 [NU, RANK, DINFZ, NKROR, NKROL, INFZ, KRONR, KRONL, AF, BF, INFO] = slicot_ab08nd(EQUIL, N, M, P, A, B, C, D, TOL)
+
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

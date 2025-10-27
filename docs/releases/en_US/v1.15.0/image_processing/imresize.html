@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>imresize - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="imresize"><a class="header" href="#imresize">imresize</a></h1>
+<p>Resize image by scale or output size</p>
+<h2 id="-syntax"><a class="header" href="#-syntax">📝 Syntax</a></h2>
+<ul>
+<li>img2 = imresize(img, scale)</li>
+<li>img2 = imresize(img, [numrows numcols])</li>
+<li>[Y, newmap] = imresize(X, map, ...)</li>
+<li>... = imresize(..., method)</li>
+<li>... = imresize(..., Name, Value)</li>
+</ul>
+<h2 id="-input-argument"><a class="header" href="#-input-argument">📥 Input argument</a></h2>
+<ul>
+<li>img - Image to be resized, specified as a numeric array, logical array of any dimension. Input must be nonsparse, and numeric input must be real.</li>
+<li>scale - Resize factor, specified as a positive number or two-element vector. If scale is between 0 and 1, output is smaller; if greater than 1, output is larger. imresize applies the same scale factor to row and column dimensions unless a vector is specified.</li>
+<li>[numrows numcols] - Row and column dimensions of output image, specified as a two-element vector of positive numbers. NaN can be used for either dimension to preserve aspect ratio.</li>
+<li>X - Indexed image to be resized, specified as a real, nonsparse numeric array of positive integers.</li>
+<li>map - Colormap associated with indexed image X, specified as a c-by-3 numeric matrix with values in [0, 1].</li>
+<li>method - Interpolation method (optional, default: 'bicubic'): must be always at last position parameter.</li>
+<li>Name, Value - Optional name-value arguments.</li>
+</ul>
+<h2 id="-output-argument"><a class="header" href="#-output-argument">📤 Output argument</a></h2>
+<ul>
+<li>B - Resized image, returned as a numeric, logical array of the same data type as the input image, A.</li>
+<li>Y - Resized indexed image, returned as a numeric array of the same data type as the input indexed image, X.</li>
+<li>newmap - Colormap of the resized indexed image Y, returned as an m-by-3 numeric matrix. By default, imresize returns a new, optimized colormap with the resized image. To return the original colormap, use the Colormap name-value argument.</li>
+</ul>
+<h2 id="-description"><a class="header" href="#-description">📄 Description</a></h2>
+<p>The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.</p>
+<p>For numeric and logical images, the default interpolation method is 'bicubic'.</p>
+<p>When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function.</p>
+<p>For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument.</p>
+<p>Supported interpolation methods include</p>
+<ul>
+<li>
+<p>'nearest': Nearest neighbor interpolation</p>
+</li>
+<li>
+<p>'bilinear': Bilinear interpolation</p>
+</li>
+<li>
+<p>'bicubic': Bicubic interpolation</p>
+</li>
+<li>
+<p>'box': Box-shaped kernel</p>
+</li>
+<li>
+<p>'lanczos2': Lanczos-2 kernel</p>
+</li>
+<li>
+<p>'lanczos3': Lanczos-3 kernel
+Supported Pairs Name, Value:</p>
+</li>
+<li>
+<p>'Antialiasing': true/false (default: true)</p>
+</li>
+<li>
+<p>'Colormap': 'optimized' (default) or 'original' (indexed image only)</p>
+</li>
+<li>
+<p>'Dither': true (default) or false (indexed image only)
+Limitations:</p>
+</li>
+<li>
+<p>Input must be nonsparse and real for numeric images.</p>
+</li>
+<li>
+<p>For large scale factors, output image size may be significantly larger than input.</p>
+</li>
+<li>
+<p>Bicubic interpolation can produce pixel values outside the original range.</p>
+</li>
+</ul>
+<h2 id="-example"><a class="header" href="#-example">💡 Example</a></h2>
+<p>imresize example</p>
+<pre><code class="language-matlab">filename = [tempdir, 'apollo_8_earthrise_1968_as08-14-2383.jpg'];
+websave(filename, 'https://www.nasa.gov/wp-content/uploads/2025/05/3dmodels-casa-2025-astro.jpg');
+
+im = imread(filename);
+size(im)
+
+im1 = imresize(im, 0.05, 'bicubic');
+size(im1)
+
+figure;
+
+subplot(1,2,1);          % 1 row, 2 columns, first subplot
+image(im);
+title('Original Image');
+
+subplot(1,2,2);          % second subplot
+image(im1);
+title('Resized Image');
+</code></pre>
+<img src="imresize_1.png" align="middle"/>
+<h2 id="-see-also"><a class="header" href="#-see-also">🔗 See also</a></h2>
+<p><a href="../image_processing/imrotate.html">imrotate</a>, <a href="../image_processing/imshow.html">imshow</a>.</p>
+<h2 id="-history"><a class="header" href="#-history">🕔 History</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Version</th><th>📄 Description</th></tr></thead><tbody>
+<tr><td>1.15.0</td><td>initial version</td></tr>
+</tbody></table>
+</div>
+<h2 id="-author"><a class="header" href="#-author">👤 Author</a></h2>
+<p>Allan CORNET</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../image_processing/im2double.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../image_processing/imrotate.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../image_processing/im2double.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../image_processing/imrotate.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

@@ -2,46 +2,46 @@
 
 Cumulative product of array elements.
 
-## Syntax
+## 📝 Syntax
 
 - R = cumprod(M)
 - R = cumprod(M, d)
 - R = cumprod(M, d, direction)
 - R = cumprod(M, d, direction, nanflag)
 
-## Input argument
+## 📥 Input argument
 
 - M - an array of double, single, integers, ...
 - d - dimension to operate along: positive integer scalar.
 - direction - a string: 'reverse', 'forward' (default).
 - nanflag - a string: 'includenan' (default) or 'omitnan'.
 
-## Output argument
+## 📤 Output argument
 
 - R - Cumulative Product of array elements.
 
-## Description
+## 📄 Description
 
-  <p><b>R = cumprod(M)</b> returns the cumulative product of the array elements of M.</p>
+<b>R = cumprod(M)</b> returns the cumulative product of the array elements of M.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
-R = cumprid(M)
+R = cumprod(M)
 R = cumprod(M, 'reverse')
 ```
 
-## See also
+## 🔗 See also
 
-[ndims](ndims.html), [prod](prod.md), [cumsum](cumsum.md).
+[ndims](../data_analysis/ndims.md), [prod](../data_analysis/prod.md), [cumsum](../data_analysis/cumsum.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

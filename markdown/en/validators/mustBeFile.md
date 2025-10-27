@@ -2,38 +2,38 @@
 
 Checks that input path refers to file.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeFile(var)
 - mustBeFile(var, argPosition)
 - C++: void mustBeFile(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: a scalar string array or row vector characters array.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeFile</b> checks that input path refers to file or raise an error.</p>
+<b>mustBeFile</b> checks that input path refers to file or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeFile(tempdir())
  mustBeFile([nelsonroot(), '/etc/startup.m'])
 ```
 
-## See also
+## 🔗 See also
 
 [isfile](../files_folders_functions/isfile.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,22 +2,22 @@
 
 Write comma-separated value file.
 
-## Syntax
+## 📝 Syntax
 
 - csvwrite(filename, M)
 - csvwrite(filename, M, r, c)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: filename destination.
 - M - an numeric or logical matrix.
 - r, c - integer: offset. default : 0, 0
 
-## Description
+## 📄 Description
 
-  <p><b>csvwrite</b> writes an numeric matrix to an CSV format file.</p>
+<b>csvwrite</b> writes an numeric matrix to an CSV format file.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -27,18 +27,19 @@ R = csvread(filename)
 A = eye(3, 2);
 csvwrite(filename, A);
 R = fileread(filename)
+
 ```
 
-## See also
+## 🔗 See also
 
-[csvread](csvread.md), [dlmread](dlmread.md), [fileread](../stream_manager/fileread.md).
+[csvread](../spreadsheet/csvread.md), [dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

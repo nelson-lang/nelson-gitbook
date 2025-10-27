@@ -1,10 +1,12 @@
 # String type
 
-String type
+The String Type module provides comprehensive tools for creating, manipulating, and analyzing text in Nelson.
 
-## Description
+It supports conversion between character arrays and string arrays, concatenation, trimming, justification, and case conversion.
 
-string type functions
+The module also includes functions for searching, matching, replacing, and formatting strings, enabling flexible text processing for both simple and complex string operations.
+
+## Functions
 
 - [append](append.md) - combines strings horizontally.
 - [blanks](blanks.md) - creates an string of blank characters.

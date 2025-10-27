@@ -2,36 +2,36 @@
 
 Build help of Nelson's modules.
 
-## Syntax
+## 📝 Syntax
 
 - buildhelp()
 - buildhelp(module_name)
 
-## Input argument
+## 📥 Input argument
 
 - module_name - a string: module name (module must be loaded).
 
-## Description
+## 📄 Description
 
-  <p><b>buildhelp</b> generates help files.</p>
+<b>buildhelp</b> generates help files.
 
-## Example
+## 💡 Example
 
 ```matlab
 buildhelp();
 buildhelp('core');
 ```
 
-## See also
+## 🔗 See also
 
-[doc](../help_browser/doc.md).
+[doc](../help_tools/doc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,25 +2,26 @@
 
 Distribute inputs to outputs.
 
-## Syntax
+## 📝 Syntax
 
 - [R1, ... , Rn] = deal(A1, ... , An)
 - [R1, ... , Rn] = deal(A)
 
-## Input argument
+## 📥 Input argument
 
 - A1, ... , An - variables
 
-## Output argument
+## 📤 Output argument
 
 - R1, ... , Rn - variables
 
-## Description
+## 📄 Description
 
-  <p><b>deal</b> replicates the input parameters to the corresponding output parameters.</p>
-  <p>If a singular input parameter is provided, its value will be duplicated across all outputs.</p>
+<b>deal</b> replicates the input parameters to the corresponding output parameters.
 
-## Examples
+If a singular input parameter is provided, its value will be duplicated across all outputs.
+
+## 💡 Examples
 
 ```matlab
 [A1, A2, A3] = deal(pi)
@@ -45,16 +46,16 @@ A3 = 1:11;
 [C{:}] = deal(A1, A2, A3)
 ```
 
-## See also
+## 🔗 See also
 
-[cell](../data_structures/cell.md), [struct](struc.html).
+[cell](../data_structures/cell.md), [struct](../data_structures/struc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

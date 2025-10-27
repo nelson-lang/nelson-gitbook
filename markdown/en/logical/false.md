@@ -2,7 +2,7 @@
 
 Logical false.
 
-## Syntax
+## 📝 Syntax
 
 - false
 - l = false(n)
@@ -10,22 +10,22 @@ Logical false.
 - l = false(n, m, ..., k)
 - l = false(n, m, 'like', sp)
 
-## Input argument
+## 📥 Input argument
 
 - n - a integer value.
 - sz - a size vector.
 - n, m, ..., k - a n -by- m - ... -by- k array to indicate size.
 - sp - a sparse or array.
 
-## Output argument
+## 📤 Output argument
 
 - l - a logical value: false.
 
-## Description
+## 📄 Description
 
-  <p><b>false</b> build a matrix of false.</p>
+<b>false</b> build a matrix of false.
 
-## Example
+## 💡 Example
 
 ```matlab
 false
@@ -35,16 +35,16 @@ L = logical(sparse(1, 2))
 L2 = false(3,'like', L);
 ```
 
-## See also
+## 🔗 See also
 
-[true](true.md).
+[true](../logical/true.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

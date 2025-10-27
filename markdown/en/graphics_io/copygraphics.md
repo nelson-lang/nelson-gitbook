@@ -2,19 +2,19 @@
 
 Copy plot to clipboard.
 
-## Syntax
+## 📝 Syntax
 
 - copygraphics(fig)
 
-## Input argument
+## 📥 Input argument
 
 - fig - figure object.
 
-## Description
+## 📄 Description
 
-  <p><b>copygraphics</b> copy figure to clipboard.</p>
+<b>copygraphics</b> copy figure to clipboard.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = -2:0.25:2;
@@ -23,18 +23,19 @@ y = x;
 F = X.*exp(-X.^2-Y.^2);
 surf(X,Y,F);
 copygraphics(gcf());
+
 ```
 
-## See also
+## 🔗 See also
 
-[gcf](../graphics/gcf.md), [saveas](saveas.md).
+[gcf](../graphics/gcf.md), [saveas](../graphics_io/saveas.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

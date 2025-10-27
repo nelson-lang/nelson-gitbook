@@ -2,36 +2,37 @@
 
 find CMake path.
 
-## Syntax
+## 📝 Syntax
 
 - [status, cmake_path] = findcmake()
 
-## Output argument
+## 📤 Output argument
 
 - status - a logical.
 - cmake_path - a string: path of CMake or ''.
 
-## Description
+## 📄 Description
 
-  <p>find CMake path.</p>
-  <p>CMake is used internaly to generate makefiles used to build dynamic libraries on fly.</p>
+find CMake path.
 
-## See also
+CMake is used internaly to generate makefiles used to build dynamic libraries on fly.
 
-[cmake](cmake.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 [status, cmake_path] = findcmake()
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[cmake](../dynamic_link/cmake.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,30 +2,30 @@
 
 Fast Fourier transform.
 
-## Syntax
+## 📝 Syntax
 
 - Y = fft(X)
 - Y = fft(X, n)
 - Y = fft(X, n, dim)
 
-## Input argument
+## 📥 Input argument
 
 - X - a vector, matrix or N-D array (double, single, integer, logical).
 - n - transform length: a non negative integer scalar or [] (default).
 - dim - dimension: a positive integer scalar.
 
-## Output argument
+## 📤 Output argument
 
 - Y - a vector, matrix, N-D array: frequency domain representation.
 
-## Description
+## 📄 Description
 
-  <p><b>fft(X)</b> computes the discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.</p>
+<b>fft(X)</b> computes the discrete Fourier transform of X using a Fast Fourier Transform (FFT) algorithm based on FFTW library.
 
-## Example
+## 💡 Example
 
 ```matlab
-% Sampling frequency
+ % Sampling frequency
 Fs = 150;
 
 % Time vector of 1 second
@@ -46,16 +46,16 @@ X = X(1:nfft*inv(2))
 f = (0:nfft *inv(2) -1)*Fs * inv(nfft);
 ```
 
-## See also
+## 🔗 See also
 
-[ifft](ifft.md), [fftw](fftw.md).
+[ifft](../fftw/ifft.md), [fftw](../fftw/fftw.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

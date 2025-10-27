@@ -2,7 +2,7 @@
 
 Add legend to axes.
 
-## Syntax
+## 📝 Syntax
 
 - legend()
 - legend(label1, ..., labelN)
@@ -18,7 +18,7 @@ Add legend to axes.
 - legend(..., propertyName, propertyValue)
 - L = legend(...)
 
-## Input argument
+## 📥 Input argument
 
 - label1, ..., labelN - sets the legend labels: row vector characters.
 - labels - cell array of character vectors or string array.
@@ -33,27 +33,33 @@ Add legend to axes.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - L - a graphics object: axes type.
 
-## Description
+## 📄 Description
 
-  <p><b>legend</b> creates a legend in the current figure.</p>
-  <p>
-    <b>Location for legend on the plot:</b>
-  </p>
-  <p/>
-  <p>'northeast' or 'NE': Top right (default).</p>
-  <p>'north' or 'N': Top center.</p>
-  <p>'south' or 'S': Bottom center.</p>
-  <p>'east' or 'E': Middle right.</p>
-  <p>'west' or 'W': Middle left.</p>
-  <p>'northwest' or 'NW': Top left.</p>
-  <p>'southeast' or 'SE': Bottom right.</p>
-  <p>'southwest' or 'SW': Bottom left.</p>
+<b>legend</b> creates a legend in the current figure.
 
-## Example
+<b>Location for legend on the plot:</b>
+
+'northeast' or 'NE': Top right (default).
+
+'north' or 'N': Top center.
+
+'south' or 'S': Bottom center.
+
+'east' or 'E': Middle right.
+
+'west' or 'W': Middle left.
+
+'northwest' or 'NW': Top left.
+
+'southeast' or 'SE': Bottom right.
+
+'southwest' or 'SW': Bottom left.
+
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -66,18 +72,18 @@ plot(ax, x, y2);
 legend('sin(x)', 'cos(x)', 'Location', 'N')
 ```
 
-<img src="legend_63E919DE.svg" align="middle"/>
+<img src="legend.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[title](title.md), [text](text.md), [plot](plot.md).
+[title](../graphics/title.md), [text](../graphics/text.md), [plot](../graphics/plot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

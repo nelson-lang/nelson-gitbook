@@ -2,39 +2,39 @@
 
 Real part of an complex number.
 
-## Syntax
+## 📝 Syntax
 
 - R = real(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - real part of the elements of the complex array M.
 
-## Description
+## 📄 Description
 
-  <p><b>R = real(M)</b> Return the real part of M.</p>
+<b>R = real(M)</b> Return the real part of M.
 
-## Example
+## 💡 Example
 
 ```matlab
 cplx = 22+34*i;
 r = real(cplx)
 ```
 
-## See also
+## 🔗 See also
 
-[imag](imag.md).
+[imag](../elementary_functions/imag.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

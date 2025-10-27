@@ -2,64 +2,54 @@
 
 Display format and number printing.
 
-## Syntax
+## 📝 Syntax
 
 - fmt = format()
 - format()
 - format('default')
 - format(new_style)
 
-## Input argument
+## 📥 Input argument
 
 - new_style - a string
 
-## Output argument
+## 📤 Output argument
 
 - fmt - DisplayFormatOptions object: format used
 
-## Description
+## 📄 Description
 
-  <p><b>format(new_style)</b> changes the display format and number printing of the current session.</p>
-  <p><b>format('default')</b> will reset to default format (short, loose).</p>
-  <p/>
-  <p>Styles supported:</p>
-  <p>
-    <b>short</b>
-  </p>
-  <p>
-    <b>long</b>
-  </p>
-  <p>
-    <b>shortE</b>
-  </p>
-  <p>
-    <b>longE</b>
-  </p>
-  <p>
-    <b>shortEng</b>
-  </p>
-  <p>
-    <b>longEng</b>
-  </p>
-  <p>
-    <b>plus</b>
-  </p>
-  <p>
-    <b>rational</b>
-  </p>
-  <p>
-    <b>hex</b>
-  </p>
-  <p/>
-  <p>Line Spacing Format supported:</p>
-  <p>
-    <b>loose</b>
-  </p>
-  <p>
-    <b>compact</b>
-  </p>
+<b>format(new_style)</b> changes the display format and number printing of the current session.
 
-## Example
+<b>format('default')</b> will reset to default format (short, loose).
+
+Styles supported:
+
+<b>short</b>
+
+<b>long</b>
+
+<b>shortE</b>
+
+<b>longE</b>
+
+<b>shortEng</b>
+
+<b>longEng</b>
+
+<b>plus</b>
+
+<b>rational</b>
+
+<b>hex</b>
+
+Line Spacing Format supported:
+
+<b>loose</b>
+
+<b>compact</b>
+
+## 💡 Example
 
 an example
 
@@ -86,16 +76,16 @@ format(current_style)
 pi
 ```
 
-## See also
+## 🔗 See also
 
-[disp](disp.md), [display](display.md).
+[disp](../display_format/disp.md), [display](../display_format/display.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

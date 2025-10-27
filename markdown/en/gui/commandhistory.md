@@ -2,29 +2,30 @@
 
 Command History
 
-## Syntax
+## 📝 Syntax
 
 - commandhistory
 
-## Description
+## 📄 Description
 
-  <p>The Command History window presents a record of statements executed in both the current and past Nelson sessions.</p>
-  <p>Each session is timestamped with the short date format of your operating system, followed by the corresponding statements.</p>
-  <p> Entries within the Command History window can be selected for various actions and operations.</p>
-  <p>
-    <img src="commandhistory_E8B5233C.png" align="middle"/>
-  </p>
+The Command History window presents a record of statements executed in both the current and past Nelson sessions.
 
-## See also
+Each session is timestamped with the short date format of your operating system, followed by the corresponding statements.
 
-[workspace](workspace.md), [filebrowser](filebrowser.md).
+Entries within the Command History window can be selected for various actions and operations.
 
-## History
+<img src="commandhistory.png" align="middle"/>
 
-| Version | Description     |
+## 🔗 See also
+
+[workspace](../gui/workspace.md), [filebrowser](../gui/filebrowser.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

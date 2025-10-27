@@ -2,32 +2,30 @@
 
 Blocking receive for a message.
 
-## Syntax
+## 📝 Syntax
 
 - r = MPI_Recv(Source, Tag)
 - [r, mpi_source, mpi_tag] = MPI_Reduce(Source, Tag, Comm)
 
-## Input argument
+## 📥 Input argument
 
 - Source - an integer value: rank of source.
 - Tag - an integer value: message tag.
 - Comm - a MPI_Comm object.
 
-## Output argument
+## 📤 Output argument
 
 - r - received value
 
-## Description
+## 📄 Description
 
-  <p>This function receives an array from a source node on a given communicator with the specified tag.</p>
-  <p>Throws an exception if there is an error.</p>
-  <p>Receive arrays of arbitrary complexity, including cell arrays, structures, strings, sparse, etc ...</p>
+This function receives an array from a source node on a given communicator with the specified tag.
 
-## See also
+Throws an exception if there is an error.
 
-[MPI_Send](MPI_Send.md).
+Receive arrays of arbitrary complexity, including cell arrays, structures, strings, sparse, etc ...
 
-## Example
+## 💡 Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 
@@ -57,12 +55,16 @@ if MPI_Initialized()
 end
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Send](../mpi/MPI_Send.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

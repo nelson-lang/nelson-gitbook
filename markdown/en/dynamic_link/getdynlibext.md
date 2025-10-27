@@ -2,34 +2,34 @@
 
 Returns the extension of dynamic libraries.
 
-## Syntax
+## 📝 Syntax
 
 - ext = getdynlibext()
 
-## Output argument
+## 📤 Output argument
 
 - ext - a string: dynamic library extension
 
-## Description
+## 📄 Description
 
-  <p><b>getdynlibext()</b> returns the extension of dynamic libraries.</p>
+<b>getdynlibext()</b> returns the extension of dynamic libraries.
 
-## Example
+## 💡 Example
 
 ```matlab
 getdynlibext()
 ```
 
-## See also
+## 🔗 See also
 
-[addgateway](addgateway.html).
+[addgateway](../dynamic_link/addgateway.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

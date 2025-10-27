@@ -2,25 +2,27 @@
 
 Check if dictionary contains key
 
-## Syntax
+## 📝 Syntax
 
 - tf = isKey(d)
 
-## Input argument
+## 📥 Input argument
 
 - d - scalar: dictionary object.
 
-## Output argument
+## 📤 Output argument
 
 - tf - scalar logical: true if key, false if not.
 
-## Description
+## 📄 Description
 
-  <p><b>tf = isKey(d, key)</b> returns a logical true if the specified key exists in the configured dictionary, and a logical false if it does not.</p>
-  <p>If <b>d</b> is an unconfigured dictionary, <b>isKey</b> throws an error.</p>
-  <p>If <b>key</b> is an array of multiple keys, then tf is a logical array of the same size.</p>
+<b>tf = isKey(d, key)</b> returns a logical true if the specified key exists in the configured dictionary, and a logical false if it does not.
 
-## Example
+If <b>d</b> is an unconfigured dictionary, <b>isKey</b> throws an error.
+
+If <b>key</b> is an array of multiple keys, then tf is a logical array of the same size.
+
+## 💡 Example
 
 ```matlab
 names = ["Biil" "John" "Yann"];
@@ -30,16 +32,16 @@ tf = isKey(d, "John")
 tf = isKey(d, ["biil" , "Yannis")
 ```
 
-## See also
+## 🔗 See also
 
-[dictionary](dictionary.md), [configureDictionary](configureDictionary.md), [keys](keys.md).
+[dictionary](../dictionary/dictionary.md), [configureDictionary](../dictionary/configureDictionary.md), [keys](../dictionary/keys.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

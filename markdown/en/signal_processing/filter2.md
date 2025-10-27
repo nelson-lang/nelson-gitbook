@@ -2,26 +2,26 @@
 
 2-D digital filter.
 
-## Syntax
+## 📝 Syntax
 
 - Y = filter2(H, X)
 - Y = filter2(H, X, shape)
 
-## Input argument
+## 📥 Input argument
 
 - H - coefficients of rational transfer function.
 - X - input data.
 - shape - 'same' (default), 'valid' or 'full'.
 
-## Output argument
+## 📤 Output argument
 
 - Y - result: 2-D digital filter.
 
-## Description
+## 📄 Description
 
-  <p><b>Y = filter2(H, X)</b>  applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix <b>H</b>.</p>
+<b>Y = filter2(H, X)</b> applies a finite impulse response filter to a matrix of data X according to coefficients in a matrix <b>H</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = zeros(10);
@@ -30,16 +30,16 @@ H = [1 2 1; 0 0 0; -1 -2 -1];
 R = filter2(H, A, 'valid')
 ```
 
-## See also
+## 🔗 See also
 
 [conv2](../data_analysis/conv2.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

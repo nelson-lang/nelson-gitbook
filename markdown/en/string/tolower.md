@@ -2,23 +2,23 @@
 
 Lower case conversion.
 
-## Syntax
+## 📝 Syntax
 
 - res = tolower(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a row character array, a cell of strings or an string array.
 
-## Output argument
+## 📤 Output argument
 
 - res - lower case equivalent
 
-## Description
+## 📄 Description
 
 <b>tolower</b> converts a string to lower case.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 tolower('NelSon')
@@ -28,16 +28,16 @@ tolower('NelSon')
 tolower(["NelSon", "is", "open"])
 ```
 
-## See also
+## 🔗 See also
 
-[toupper](toupper.md).
+[toupper](../string/toupper.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

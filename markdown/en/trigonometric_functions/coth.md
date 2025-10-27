@@ -2,39 +2,39 @@
 
 Hyperbolic cotangent.
 
-## Syntax
+## 📝 Syntax
 
 - res = coth(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>csch</b> computes the hyperbolic cotangent for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = coth(X)
 ```
 
-## See also
+## 🔗 See also
 
-[tanh](tanh.html), [cot](cot.html).
+[tanh](../trigonometric/tanh.md), [cot](../trigonometric/cot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

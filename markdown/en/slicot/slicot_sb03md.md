@@ -2,11 +2,11 @@
 
 Solution of continuous- or discrete-time Lyapunov equations and separation estimation.
 
-## Syntax
+## 📝 Syntax
 
 - [U_OUT, C_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
 
-## Input argument
+## 📥 Input argument
 
 - DICO - Specifies the type of Lyapunov equation to be solved as follows: = 'C': continuous-time case; 'D': discrete-time case.
 - JOB - Specifies the computation to be performed: 'X': Compute the solution only;= 'S': Compute the separation only; = 'B': Compute both the solution and the separation.
@@ -16,7 +16,7 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 - U_IN - If FACT = 'N', zeros(N, N); If FACT = 'F', then U is an input argument and on entry the leading N-by-N part of this array must contain the orthogonal matrix U of the real Schur factorization of A.
 - C_IN - With JOB = 'X' or 'B', the leading N-by-N part of this array must contain the symmetric matrix C.
 
-## Output argument
+## 📤 Output argument
 
 - U_OUT - if INFO = 0 or INFO = N+1, it contains the orthogonal N-by-N matrix from the real Schur factorization of A.
 - C_OUT - With JOB = 'X' or 'B', if INFO = 0 or INFO = N+1, the leading N-by-N part of C has been overwritten by the symmetric solution matrix X.
@@ -27,23 +27,27 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 - WI - If FACT = 'N', and INFO = 0 or INFO = N+1, WI contains the imaginary parts of the eigenvalues of A.
 - INFO - = 0: successful exit;
 
-## Description
+## 📄 Description
 
-  <p>To solve for X either the real continuous-time Lyapunov equation</p>
-  <p>op(A)'*X + X*op(A) = scale*C</p>
-  <p>or the real discrete-time Lyapunov equation</p>
-  <p>op(A)'*X*op(A) - X = scale*C</p>
-  <p>and/or estimate an associated condition number, called separation, where op(A) = A or A' (A**T) and C is symmetric (C = C').</p>
+To solve for X either the real continuous-time Lyapunov equation
 
-Used function(s)
+op(A)'*X + X*op(A) = scale\*C
+
+or the real discrete-time Lyapunov equation
+
+op(A)'*X*op(A) - X = scale\*C
+
+and/or estimate an associated condition number, called separation, where op(A) = A or A' (A\*\*T) and C is symmetric (C = C').
+
+## Used function(s)
 
 SB03MD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB03MD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 N = 3;
@@ -65,12 +69,12 @@ C_IN = [25.0  24.0  15.0;
 [U_OUT, C_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

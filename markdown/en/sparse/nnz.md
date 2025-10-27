@@ -2,23 +2,23 @@
 
 Return the number of nonzero elements.
 
-## Syntax
+## 📝 Syntax
 
 - v = nnz(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a matrix: double or logical, sparse or not.
 
-## Output argument
+## 📤 Output argument
 
 - v - a integer value.
 
-## Description
+## 📄 Description
 
-  <p><b>nnz</b> returns the number of non zero elements in an matrix.</p>
+<b>nnz</b> returns the number of non zero elements in an matrix.
 
-## Example
+## 💡 Example
 
 ```matlab
 I = [1 2 3];
@@ -30,16 +30,16 @@ nnz(sp)
 nzmax(sp)
 ```
 
-## See also
+## 🔗 See also
 
-[sparse](sparse.md), [nzmax](nzmax.md).
+[sparse](../sparse/sparse.md), [nzmax](../sparse/nzmax.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

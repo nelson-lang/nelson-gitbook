@@ -2,32 +2,32 @@
 
 Returns the methods name of an object handle.
 
-## Syntax
+## 📝 Syntax
 
 - c = methods(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a handle object
 
-## Output argument
+## 📤 Output argument
 
 - c - a cell of strings
 
-## Description
+## 📄 Description
 
 <b>methods</b> returns a cell of strings with methods name.
 
-## See also
+## 🔗 See also
 
-[isprop](isprop.md), [ismethod](ismethod.md).
+[isprop](../handle/isprop.md), [ismethod](../handle/ismethod.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

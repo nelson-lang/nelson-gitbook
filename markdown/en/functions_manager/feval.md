@@ -2,44 +2,44 @@
 
 Evaluates function.
 
-## Syntax
+## 📝 Syntax
 
 - feval(function_name; x1, ..., xn)
 - feval(function_handle; x1, ..., xn)
 - [r1, ..., rn] = feval(function_name, x1, ..., xn)
 - [r1, ..., rn] = feval(function_handle, x1, ..., xn)
 
-## Input argument
+## 📥 Input argument
 
 - function_name - a string: function name.
 - function_handle - a function handle.
 - x1, ..., xn - input arguments of the function.
 
-## Output argument
+## 📤 Output argument
 
 - r1, ..., rn - output arguments returned by the function
 
-## Description
+## 📄 Description
 
-  <p><b>function</b> calls the base function or built-in described by its name or function handle and input arguments.</p>
+<b>function</b> calls the base function or built-in described by its name or function handle and input arguments.
 
-## Example
+## 💡 Example
 
 ```matlab
 a = feval('cos', 0)
 b = feval(str2func('cos'), 0)
 ```
 
-## See also
+## 🔗 See also
 
-[builtin](builtin.md), [func2str](../function_handle/func2str.md).
+[builtin](../functions_manager/builtin.md), [func2str](../function_handle/func2str.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

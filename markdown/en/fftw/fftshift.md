@@ -2,25 +2,25 @@
 
 Shift the zero-frequency component to the center of the spectrum.
 
-## Syntax
+## 📝 Syntax
 
 - Y = fftshift(X)
 - Y = fftshift(X, DIM)
 
-## Input argument
+## 📥 Input argument
 
 - X - a vector, matrix or N-D array (double, single, integer).
 - DIM - axes over which to shift.
 
-## Output argument
+## 📤 Output argument
 
 - Y - shifted array.
 
-## Description
+## 📄 Description
 
-  <p><b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.</p>
+<b>fftshift(X)</b> shift the zero-frequency component to the center of the spectrum.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = [ 0.,  10.,  20.; 30.,  40., -40.; -30., -20., -10.]
@@ -28,16 +28,16 @@ fftshift(M)
 fftshift(M, 1)
 ```
 
-## See also
+## 🔗 See also
 
-[fft](ifft.md), [ifftshift](ifftshift.md).
+[fft](../fftw/ifft.md), [ifftshift](../fftw/ifftshift.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,24 @@
 
 Returns list of current used MPI_Comm handle.
 
-## Syntax
+## 📝 Syntax
 
 - r = MPI_Comm_used()
 
-## Output argument
+## 📤 Output argument
 
 - h - a vector of MPI_Comm handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns list of current used MPI_Comm handle.</p>
+Returns list of current used MPI_Comm handle.
 
-## See also
-
-[MPI_Comm_delete](MPI_Comm_delete.md).
-
-## Example
+## 💡 Example
 
 CLI required
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -33,14 +30,19 @@ MPI_Comm_used
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Comm_delete](../mpi/MPI_Comm_delete.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

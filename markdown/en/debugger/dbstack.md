@@ -2,7 +2,7 @@
 
 call stack.
 
-## Syntax
+## 📝 Syntax
 
 - dbstack
 - st = dbstack()
@@ -11,20 +11,21 @@ call stack.
 - dbstack('-completenames', omit)
 - st = dbstack('-completenames', omit)
 
-## Input argument
+## 📥 Input argument
 
 - omit - an integer value: Number of frames to omit (must be positive).
 
-## Output argument
+## 📤 Output argument
 
 - st - a struct
 
-## Description
+## 📄 Description
 
-  <p><b>dbstack</b> displays the file names and line numbers of the function calls.</p>
-  <p><b>dbstack('-completenames')</b> displays the full file names.</p>
+<b>dbstack</b> displays the file names and line numbers of the function calls.
 
-## Example
+<b>dbstack('-completenames')</b> displays the full file names.
+
+## 💡 Example
 
 Creates a myfun.m and calls it.
 
@@ -34,16 +35,16 @@ dbstack();
 end
 ```
 
-## See also
+## 🔗 See also
 
 [which](../functions_manager/which.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

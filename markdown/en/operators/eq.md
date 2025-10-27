@@ -2,27 +2,27 @@
 
 equality, == operator.
 
-## Syntax
+## 📝 Syntax
 
 - C = eq(A, B)
 - C = (A == B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A == B
 
-## Description
+## 📄 Description
 
-  <p><b>C = eq(A, B)</b> returns a logical array with elements set to logical <b>true</b> where arrays A and B are equals.</p>
-  <p/>
-  <p><b>eq</b> compares both real and imaginary parts of numeric arrays.</p>
+<b>C = eq(A, B)</b> returns a logical array with elements set to logical <b>true</b> where arrays A and B are equals.
 
-## Examples
+<b>eq</b> compares both real and imaginary parts of numeric arrays.
+
+## 💡 Examples
 
 ```matlab
 eye(2,2) == ones(2, 2)
@@ -48,16 +48,16 @@ eye(2,2) == ones(2, 2)
 eq(0.8-0.6-0.2, 0)
 ```
 
-## See also
+## 🔗 See also
 
-[ne](ne.md), [lt](lt.md), [le](le.md), [gt](gt.md), [ge](ge.md).
+[ne](../operators/ne.md), [lt](../operators/lt.md), [le](../operators/le.md), [gt](../operators/gt.md), [ge](../operators/ge.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

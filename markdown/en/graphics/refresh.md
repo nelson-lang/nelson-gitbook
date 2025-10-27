@@ -2,30 +2,31 @@
 
 Redraw current figure.
 
-## Syntax
+## 📝 Syntax
 
 - refresh()
 - refresh(F)
 
-## Input argument
+## 📥 Input argument
 
 - F - figure graphics object.
 
-## Description
+## 📄 Description
 
-  <p><b>refresh</b> erases and redraws the current figure.</p>
-  <p><b>refresh(F)</b> redraws the figure identified by <b>F</b>.</p>
+<b>refresh</b> erases and redraws the current figure.
 
-## See also
+<b>refresh(F)</b> redraws the figure identified by <b>F</b>.
 
-[clf](clf.md).
+## 🔗 See also
 
-## History
+[clf](../graphics/clf.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

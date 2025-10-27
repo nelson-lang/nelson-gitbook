@@ -2,19 +2,19 @@
 
 Resumes an audioplayer object.
 
-## Syntax
+## 📝 Syntax
 
 - resume(playObj)
 
-## Input argument
+## 📥 Input argument
 
 - playObj - an audioplayer object.
 
-## Description
+## 📄 Description
 
 <b>resume</b> resumes an audioplayer object.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,16 +26,16 @@ resume(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer_pause](audioplayer_pause.md), [play](play.md).
+[audioplayer_pause](../audio/audioplayer_pause.md), [play](../audio/play.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

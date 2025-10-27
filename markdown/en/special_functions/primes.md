@@ -2,39 +2,40 @@
 
 Prime numbers less than or equal to input value
 
-## Syntax
+## 📝 Syntax
 
 - p = primes(n)
 
-## Input argument
+## 📥 Input argument
 
 - n - scalar, real integer value
 
-## Output argument
+## 📤 Output argument
 
 - p - vector with prime numbers.
 
-## Description
+## 📄 Description
 
-  <p><b>p = primes(n)</b> returns a row vector containing all the prime numbers less than or equal to n.</p>
-  <p>The data type of p is the same as that of n.</p>
+<b>p = primes(n)</b> returns a row vector containing all the prime numbers less than or equal to n.
 
-## Example
+The data type of p is the same as that of n.
+
+## 💡 Example
 
 ```matlab
 p = primes(15)
 ```
 
-## See also
+## 🔗 See also
 
-[factor](factor.md).
+[factor](../special_functions/factor.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

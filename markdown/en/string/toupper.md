@@ -2,23 +2,23 @@
 
 Upper case conversion.
 
-## Syntax
+## 📝 Syntax
 
 - res = toupper(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a row character array, a cell of strings or an string array.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string upper case
 
-## Description
+## 📄 Description
 
 <b>toupper</b> converts a string to upper case.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 toupper('NelSon')
@@ -28,16 +28,16 @@ toupper('NelSon')
 upper(["NelSon", "is", "open"])
 ```
 
-## See also
+## 🔗 See also
 
-[tolower](tolower.md).
+[tolower](../string/tolower.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

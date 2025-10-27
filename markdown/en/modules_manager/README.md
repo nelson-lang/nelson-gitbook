@@ -1,10 +1,16 @@
 # Modules manager
 
-Modules manager
+The Modules Manager in Nelson provides the infrastructure to extend and manage the environment at runtime.
 
-## Description
+It allows modules to be dynamically added, removed, and queried, making the system flexible and adaptable to different workflows.
 
-modules manager functions
+With support for both internal and external modules, the manager handles module metadata, paths, and versioning.
+
+It also provides utilities for organizing user-defined toolboxes, managing gateways, and ensuring that dependencies are properly loaded.
+
+This framework simplifies module distribution, integration, and maintenance, forming the backbone of Nelson’s modular architecture.
+
+## Functions
 
 - [addgateway](addgateway.md) - Adds dynamically builtin at runtime.
 - [addmodule](addmodule.md) - Add module to Nelson.

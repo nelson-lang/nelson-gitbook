@@ -2,22 +2,23 @@
 
 Show information about variable or result of expression.
 
-## Syntax
+## 📝 Syntax
 
 - display(V)
 - display(V, name)
 
-## Input argument
+## 📥 Input argument
 
 - V - Result of executing a statement or expression
 - name - a character vector: variable name displayed.
 
-## Description
+## 📄 Description
 
-  <p><b>display(V)</b> displays information about the variable <b>V</b>.</p>
-  <p>Nelson calls <b>display</b> function whenever an object is referred to in a statement that is not terminated by a semicolon.</p>
+<b>display(V)</b> displays information about the variable <b>V</b>.
 
-## Examples
+Nelson calls <b>display</b> function whenever an object is referred to in a statement that is not terminated by a semicolon.
+
+## 💡 Examples
 
 ```matlab
 display(33, 'Hello')
@@ -35,16 +36,16 @@ display(pi)
 A = eye(3, 3); disp(A)
 ```
 
-## See also
+## 🔗 See also
 
-[disp](disp.md), [fprintf](../stream_manager/fprintf.md), [format](format.md).
+[disp](../display_format/disp.md), [fprintf](../stream_manager/fprintf.md), [format](../display_format/format.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

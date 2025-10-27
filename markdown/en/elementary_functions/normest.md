@@ -2,28 +2,28 @@
 
 2-norm estimate
 
-## Syntax
+## 📝 Syntax
 
 - nrm = normest(A)
 - [nrm, count] = normest(A)
 - nrm = normest(A, tolerance)
 - [nrm, count] = normest(A, tolerance)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input matrix
 - tolerance - Relative error tolerance
 
-## Output argument
+## 📤 Output argument
 
 - nrm - Matrix norm: scalar.
 - count - Number of power iterations: scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix <b>A</b>.</p>
+<b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix <b>A</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = [    0    2.4495         0         0         0         0         0
@@ -35,18 +35,20 @@ M = [    0    2.4495         0         0         0         0         0
          0         0         0         0         0    2.4495         0];
 [nrm, count] = normest(M)
 norm(M)
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[norm](norm.md), [svd](../linear_algebra/svd.md).
+[norm](../elementary_functions/norm.md), [svd](../linear_algebra/svd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

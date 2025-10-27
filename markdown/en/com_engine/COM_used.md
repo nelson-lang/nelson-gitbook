@@ -2,23 +2,19 @@
 
 Returns list of current used COM handle.
 
-## Syntax
+## 📝 Syntax
 
 - r = COM_used()
 
-## Output argument
+## 📤 Output argument
 
 - h - a vector of COM handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns list of current used COM handle.</p>
+Returns list of current used COM handle.
 
-## See also
-
-[COM_set (set)](COM_set.md), [COM_get (get)](COM_get.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 delete(COM_used())
@@ -28,12 +24,16 @@ delete(used)
 used = COM_used()
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[COM_set (set)](../com_engine/COM_set.md), [COM_get (get)](../com_engine/COM_get.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

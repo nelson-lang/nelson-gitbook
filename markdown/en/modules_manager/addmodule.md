@@ -2,20 +2,20 @@
 
 Add module to Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - addmodule(module_path, module_short_name)
 
-## Input argument
+## 📥 Input argument
 
 - module_path - a string: root path of a module. path must exist.
 - module_short_name - a string: short module's name. This name must not be already used.
 
-## Description
+## 📄 Description
 
-  <p><b>addmodule</b> registers a new module designed by his path and short name.</p>
+<b>addmodule</b> registers a new module designed by his path and short name.
 
-## Example
+## 💡 Example
 
 See module skeleton for example
 
@@ -26,16 +26,16 @@ ismodule('module_skeleton')
 removemodule('module_skeleton')
 ```
 
-## See also
+## 🔗 See also
 
-[ismodule](ismodule.md), [removemodule](removemodule.md), [getmodules](getmodules.md).
+[ismodule](../modules_manager/ismodule.md), [removemodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

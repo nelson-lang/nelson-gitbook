@@ -2,43 +2,45 @@
 
 Returns field names of a structure or an handle.
 
-## Syntax
+## 📝 Syntax
 
 - names = fieldnames(st)
 - names = fieldnames(h)
 - names = fieldnames(h, '-full')
 
-## Input argument
+## 📥 Input argument
 
 - st - a structure
 - h - a handle object
 
-## Output argument
+## 📤 Output argument
 
 - names - a cell of strings
 
-## Description
+## 📄 Description
 
-  <p><b>names = fieldnames(st)</b> returns a cell of strings with the names of the fields in the input structure.</p>
-  <p><b>names = fieldnames(h)</b> returns a cell of strings with the names of the properties in the handle (without hidden).</p>
-  <p><b>names = fieldnames(h, '-full')</b> returns a cell of strings with the names of the all properties in the handle.</p>
+<b>names = fieldnames(st)</b> returns a cell of strings with the names of the fields in the input structure.
 
-## Example
+<b>names = fieldnames(h)</b> returns a cell of strings with the names of the properties in the handle (without hidden).
+
+<b>names = fieldnames(h, '-full')</b> returns a cell of strings with the names of the all properties in the handle.
+
+## 💡 Example
 
 ```matlab
 fieldnames(dir())
 ```
 
-## See also
+## 🔗 See also
 
-[getfield](getfield.md).
+[getfield](../data_structures/getfield.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

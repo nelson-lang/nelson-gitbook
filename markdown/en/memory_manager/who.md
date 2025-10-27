@@ -2,7 +2,7 @@
 
 List variables in memory or in .nh5 or in .mat file.
 
-## Syntax
+## 📝 Syntax
 
 - who
 - s = who()
@@ -13,21 +13,21 @@ List variables in memory or in .nh5 or in .mat file.
 - who(... , var1, ..., varN)
 - s = who(... , var1, ..., varN)
 
-## Input argument
+## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local' or '-file'.
 - filename - string: an existing filename .nh5 or .mat file.
 - var1, ..., varN - string: variable name.
 
-## Output argument
+## 📤 Output argument
 
 - s - a cell of strings: list of variable's name.
 
-## Description
+## 📄 Description
 
-  <p><b>who</b> displays current variable names.</p>
+<b>who</b> displays current variable names.
 
-## Example
+## 💡 Example
 
 ```matlab
 clear
@@ -38,16 +38,16 @@ who
 s = who()
 ```
 
-## See also
+## 🔗 See also
 
-[what](../functions_manager/what.md), [clear](clear.md), [whos](whos.md).
+[what](../functions_manager/what.md), [clear](../memory_manager/clear.md), [whos](../memory_manager/whos.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,28 +2,29 @@
 
 Create group object.
 
-## Syntax
+## 📝 Syntax
 
 - h = hggroup()
 - h = hggroup(..., propertyName, propertyValue, ...)
 - h = hggroup(ax, ...)
 
-## Input argument
+## 📥 Input argument
 
 - ax - graphics object: axes or hggroup.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - p - a graphics object of type: hggroup
 
-## Description
+## 📄 Description
 
-  <p><b>hggroup</b> creates a hggroup object as a child of the current axes and returns its handle, h.</p>
-  <p>The <b>hggroup</b> object is used to group graphics objects, such as lines, patches, and text, so that they can be manipulated together.</p>
+<b>hggroup</b> creates a hggroup object as a child of the current axes and returns its handle, h.
 
-## Example
+The <b>hggroup</b> object is used to group graphics objects, such as lines, patches, and text, so that they can be manipulated together.
+
+## 💡 Example
 
 ```matlab
 figure();
@@ -33,18 +34,19 @@ h = text(0.1, 0.1, 'tttt', 'Parent', g);
 h.Parent
 h.Visible
 h.Visible = 'off';
+
 ```
 
-## See also
+## 🔗 See also
 
-[gca](gca.md).
+[gca](../graphics/gca.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,39 +2,39 @@
 
 Inverse condition number.
 
-## Syntax
+## 📝 Syntax
 
 - res = rcond(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or square matrix (double or single)
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value: a scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.</p>
+<b>rcond(x)</b> computes the reciprocal of the condition of x in the 1-norm.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = rand(10, 10);
 r = rcond(X);
 ```
 
-## See also
+## 🔗 See also
 
-[inv](inv.md), [cond](cond.md).
+[inv](../linear_algebra/inv.md), [cond](../linear_algebra/cond.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

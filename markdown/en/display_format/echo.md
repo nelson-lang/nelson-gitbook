@@ -2,28 +2,29 @@
 
 Controls the echoing during their execution.
 
-## Syntax
+## 📝 Syntax
 
 - state = echo()
 - echo()
 - echo('on')
 - echo('off')
 
-## Input argument
+## 📥 Input argument
 
 - 'on' - enable echo mode (default)
 - 'off' - disable echo mode
 
-## Output argument
+## 📤 Output argument
 
 - state - a string: 'on' or 'off'
 
-## Description
+## 📄 Description
 
-  <p><b>echo('off')</b> disable echo mode.</p>
-  <p>Without input and output arguments, <b>echo</b> toggles the current echo state.</p>
+<b>echo('off')</b> disable echo mode.
 
-## Example
+Without input and output arguments, <b>echo</b> toggles the current echo state.
+
+## 💡 Example
 
 an example
 
@@ -37,16 +38,16 @@ echo(R)
 A
 ```
 
-## See also
+## 🔗 See also
 
-[disp](disp.md).
+[disp](../display_format/disp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,54 +2,56 @@
 
 Manage supported image formats.
 
-## Syntax
+## 📝 Syntax
 
 - imformats ()
 - formats = imformats()
 - format = imformats(ext)
 
-## Input argument
+## 📥 Input argument
 
 - ext - File format extension: character vector or string scalar.
 
-## Output argument
+## 📤 Output argument
 
 - formats - structure array: supported image formats.
 - format - structure: supported image format.
 
-## Description
+## 📄 Description
 
-  <p><b>imformats</b> returns the list of supported image formats.</p>
-  <p><b>formats = imformats()</b> returns the list of supported image formats in a structure array.</p>
-  <p><b>format = imformats(ext)</b> returns the structure of the image format corresponding to the extension <b>ext</b>.</p>
-  <p>Each element of the structure array contains the fields:</p>
-  <ul>
-    <li><b>ext</b>: file format extension</li>
-    <li><b>isa</b>: function handle to test if the file format is supported</li>
-    <li><b>info</b>: function handle to get information about the file format</li>
-    <li><b>description</b>: file format description</li>
-    <li><b>read</b>: function handle to read the file format</li>
-    <li><b>write</b>: function handle to write the file format</li>
-    <li><b>alpha</b>: logical scalar indicating if the file format supports transparency</li>
-    <li><b>multipage</b>: logical scalar indicating if the file format supports multipage images</li>
-  </ul>
+<b>imformats</b> returns the list of supported image formats.
 
-## Example
+<b>formats = imformats()</b> returns the list of supported image formats in a structure array.
+
+<b>format = imformats(ext)</b> returns the structure of the image format corresponding to the extension <b>ext</b>.
+
+Each element of the structure array contains the fields:
+
+- <b>ext</b>: file format extension
+- <b>isa</b>: function handle to test if the file format is supported
+- <b>info</b>: function handle to get information about the file format
+- <b>description</b>: file format description
+- <b>read</b>: function handle to read the file format
+- <b>write</b>: function handle to write the file format
+- <b>alpha</b>: logical scalar indicating if the file format supports transparency
+- <b>multipage</b>: logical scalar indicating if the file format supports multipage images
+
+## 💡 Example
 
 ```matlab
 imformats()
 ```
 
-## See also
+## 🔗 See also
 
-[imwrite](imwrite.md), [imread](imread.md).
+[imwrite](../graphics_io/imwrite.md), [imread](../graphics_io/imread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.13.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

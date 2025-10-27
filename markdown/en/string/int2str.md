@@ -2,23 +2,23 @@
 
 Convert an integer array to a string
 
-## Syntax
+## 📝 Syntax
 
 - res = int2str(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - an numeric array.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string
 
-## Description
+## 📄 Description
 
 <b>int2str</b> converts an numeric array to a string with integer format. Inputs are rounded before conversion.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 R = int2str ([-Inf, 2, NaN; 4, Inf, 6])
@@ -28,16 +28,16 @@ R = int2str ([-Inf, 2, NaN; 4, Inf, 6])
 R = int2str(uint64(intmax('uint64')))
 ```
 
-## See also
+## 🔗 See also
 
-[char](char.md).
+[char](../string/char.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,41 +2,41 @@
 
 Element wise power, .^ operator
 
-## Syntax
+## 📝 Syntax
 
 - C = power(A, B)
 - C = A .^ B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A.^B
 
-## Description
+## 📄 Description
 
-  <p><b>C = power(A, B)</b> performs an element wise power operation: A .^ B .</p>
+<b>C = power(A, B)</b> performs an element wise power operation: A .^ B .
 
-## Example
+## 💡 Example
 
 ```matlab
 power(3, 4)
 3.^4
 ```
 
-## See also
+## 🔗 See also
 
-[mpower](mpower.md).
+[mpower](../operators/mpower.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

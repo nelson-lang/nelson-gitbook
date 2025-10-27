@@ -1,10 +1,12 @@
 # Data analysis
 
-Data analysis
+The Data Analysis module provides tools for performing numerical and array-based analyses in Nelson.
 
-## Description
+It supports cumulative operations, sorting, aggregation, convolution, and identification of unique or missing values.
 
-data analysis
+This module enables efficient processing, summarization, and exploration of datasets, facilitating a wide range of computational and analytical tasks.
+
+## Functions
 
 - [conv](conv.md) - Convolution and polynomial multiplication.
 - [conv2](conv2.md) - 2-D convolution.

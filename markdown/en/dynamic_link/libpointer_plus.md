@@ -2,26 +2,23 @@
 
 plus operator on libpointer handle.
 
-## Syntax
+## 📝 Syntax
 
 - h2 = h.plus(offset)
 - h2 = h + offset
 
-## Input argument
+## 📥 Input argument
 
 - h - a libpointer handle.
 - offset - a integer value: increment.
 
-## Description
+## 📄 Description
 
-  <p>plus operator on libpointer handle.</p>
-  <p>ouptut libpointer is valid only as long as the original input libpointer exists.</p>
+plus operator on libpointer handle.
 
-## See also
+ouptut libpointer is valid only as long as the original input libpointer exists.
 
-[libpointer](libpointer.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 x = [1 2 3 4 5];
@@ -31,12 +28,16 @@ y.reshape(1, 3);
 y.Value
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[libpointer](../dynamic_link/libpointer.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

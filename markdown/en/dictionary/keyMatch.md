@@ -2,25 +2,26 @@
 
 Check whether two dictionary keys are same.
 
-## Syntax
+## 📝 Syntax
 
 - tf = keyMatch(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - array
 - B - array
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: true or false.
 
-## Description
+## 📄 Description
 
-  <p><b>tf = keyMatch(A, B)</b> returns <b>true</b> if arrays <b>A</b> and <b>B</b> have identical classes, properties, dimensions, and values, and returns <b>false</b> otherwise.</p>
-  <p>For custom classes, overloading <b>keyMatch</b> may be necessary to ensure accurate equivalence.</p>
+<b>tf = keyMatch(A, B)</b> returns <b>true</b> if arrays <b>A</b> and <b>B</b> have identical classes, properties, dimensions, and values, and returns <b>false</b> otherwise.
 
-## Example
+For custom classes, overloading <b>keyMatch</b> may be necessary to ensure accurate equivalence.
+
+## 💡 Example
 
 ```matlab
 A = {'a', 'b', 1};
@@ -32,16 +33,16 @@ keyMatch(A, C)
 keyMatch(B, D)
 ```
 
-## See also
+## 🔗 See also
 
-[keyHash](keyHash.md).
+[keyHash](../dictionary/keyHash.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

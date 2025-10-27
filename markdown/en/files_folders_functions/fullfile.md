@@ -2,38 +2,38 @@
 
 Build full file name from parts.
 
-## Syntax
+## 📝 Syntax
 
 - R = fullfile(part1, ... , partN)
 
-## Input argument
+## 📥 Input argument
 
 - part1, ... , partN - a string or cell of string: filename to concat.
 
-## Output argument
+## 📤 Output argument
 
 - R - a character array or string array or cell array of character vectors.
 
-## Description
+## 📄 Description
 
-  <p><b>R = fullfile(part1, ... , partN)</b> build full file name from parts.</p>
+<b>R = fullfile(part1, ... , partN)</b> build full file name from parts.
 
-## Example
+## 💡 Example
 
 ```matlab
 fullfile([nelsonroot(), '/./toto'])
 ```
 
-## See also
+## 🔗 See also
 
-[fullpath](fullpath.md).
+[fullpath](../files_folders_functions/fullpath.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

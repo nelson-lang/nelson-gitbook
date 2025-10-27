@@ -2,34 +2,34 @@
 
 get user name currently used.
 
-## Syntax
+## 📝 Syntax
 
 - s = username()
 
-## Output argument
+## 📤 Output argument
 
 - s - a char array: user name.
 
-## Description
+## 📄 Description
 
-  <p><b>username</b> get user name currently used.</p>
+<b>username</b> get user name currently used.
 
-## Example
+## 💡 Example
 
 ```matlab
 username()
 ```
 
-## See also
+## 🔗 See also
 
-[hostname](hostname.md).
+[hostname](../os_functions/hostname.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

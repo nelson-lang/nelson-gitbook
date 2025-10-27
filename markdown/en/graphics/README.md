@@ -1,10 +1,12 @@
 # Graphics functions
 
-Graphics functions
+The graphics module provides functions for creating, customizing, and managing plots,
+figures, colormaps, and graphical objects.
 
-## Description
+It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
+utilities for working with colors, legends, axes, and text annotations.
 
-graphics functions
+## Functions
 
 - [abyss](abyss.md) - Abyss colormap array.
 - [ancestor](ancestor.md) - Ancestor of graphics object.
@@ -34,7 +36,7 @@ graphics functions
 - [gca](gca.md) - get current axes graphics object.
 - [gcf](gcf.md) - get current figure graphics object.
 - [getframe](getframe.md) - Capture figure or axes as movie frame.
-- [Managing Callback Interruptions in Nelson](graphical_callback.md)
+- [Managing Callback Interruptions in Nelson](graphical_callback.md) -
 - [gray](gray.md) - Gray colormap array.
 - [grid](grid.md) - Display or hide axes grid lines.
 - [groot](groot.md) - graphic root object.
@@ -42,14 +44,10 @@ graphics functions
 - [hist](hist.md) - Histogram plot.
 - [hold](hold.md) - Retain current plot when adding new plots.
 - [hot](hot.md) - Hot colormap array.
-- [im2double](im2double.md) - Convert image to double precision.
 - [im2frame](im2frame.md) - Convert image to movie frame.
 - [image](image.md) - Display image from array.
 - [imagesc](imagesc.md) - Display image from array with scaled colors.
-- [imread](imread.md) - Read image from graphics file.
-- [imrotate](imrotate.md) - Rotate image by specified angle
 - [imshow](imshow.md) - Display image.
-- [imwrite](imwrite.md) - Write image to graphics file.
 - [is2D](is2D.md) - Checks if ax is a 2-D Polar or Cartesian axes.
 - [isValidGraphicsProperty](isValidGraphicsProperty.md) - Check property name is valid.
 - [isgraphics](isgraphics.md) - Check for graphics object.
@@ -77,7 +75,6 @@ graphics functions
 - [rgbplot](rgbplot.md) - Plot colormap.
 - [ribbon](ribbon.md) - Ribbon plot.
 - [rotate3d](rotate3d.md) - Enable rotate mode.
-- [saveas](saveas.md) - Save figure to specific file format.
 - [scatter](scatter.md) - Scatter plot.
 - [scatter3](scatter3.md) - 3D Scatter plot.
 - [semilogx](semilogx.md) - Semilog plot (x-axis has log scale).

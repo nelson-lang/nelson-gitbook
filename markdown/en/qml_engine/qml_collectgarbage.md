@@ -2,26 +2,26 @@
 
 Runs the Qml garbage collector.
 
-## Syntax
+## 📝 Syntax
 
 - qml_collectgarbage
 
-## Description
+## 📄 Description
 
-  <p>The garbage collector will attempt to reclaim memory by locating and disposing of objects that are no longer reachable in the script environment.</p>
+The garbage collector will attempt to reclaim memory by locating and disposing of objects that are no longer reachable in the script environment.
 
-## Example
+## 💡 Example
 
 ```matlab
 qml_collectgarbage()
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

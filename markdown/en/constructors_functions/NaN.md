@@ -2,25 +2,27 @@
 
 Creates an Not-a-Number
 
-## Syntax
+## 📝 Syntax
 
 - NaN
 - nan
 - NaN(n)
 - NaN(n, m)
 
-## Input argument
+## 📥 Input argument
 
 - n - a variable: n-by-n matrix
 - m - a variable: n-by-m matrix
 
-## Description
+## 📄 Description
 
-  <p><b>NaN</b> returns the IEEE symbol NaN (Not a Number).</p>
-  <p><b>NaN</b> is the result of operations which do not produce a well defined numerical result.</p>
-  <p>Beware, you must never compare <b>NaN</b> with <b>NaN</b>, in this case, please use <b>isnan</b>.</p>
+<b>NaN</b> returns the IEEE symbol NaN (Not a Number).
 
-## Examples
+<b>NaN</b> is the result of operations which do not produce a well defined numerical result.
+
+Beware, you must never compare <b>NaN</b> with <b>NaN</b>, in this case, please use <b>isnan</b>.
+
+## 💡 Examples
 
 ```matlab
 NaN
@@ -35,16 +37,16 @@ NaN != NaN
 isnan(NaN)
 ```
 
-## See also
+## 🔗 See also
 
-[isnan](isnan.html).
+[isnan](../types/isnan.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

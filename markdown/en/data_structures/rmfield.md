@@ -2,24 +2,24 @@
 
 Remove fields from structure.
 
-## Syntax
+## 📝 Syntax
 
 - s = rmfield(st, field)
 
-## Input argument
+## 📥 Input argument
 
 - st - a structure.
 - field - a string, cell of strings, or char.
 
-## Output argument
+## 📤 Output argument
 
 - s - a structure without field.
 
-## Description
+## 📄 Description
 
-  <p><b>s = rmfield(st, field)</b> removes the specified field from structure array.</p>
+<b>s = rmfield(st, field)</b> removes the specified field from structure array.
 
-## Example
+## 💡 Example
 
 ```matlab
 example.a = 1
@@ -28,16 +28,16 @@ example.c = []
 rmfield(example, 'b')
 ```
 
-## See also
+## 🔗 See also
 
-[struct](struct.md), [fieldnames](fieldnames.md).
+[struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

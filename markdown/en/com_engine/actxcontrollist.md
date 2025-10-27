@@ -2,34 +2,34 @@
 
 Get available ActiveX controls.
 
-## Syntax
+## 📝 Syntax
 
 - l = actxcontrollist()
 
-## Output argument
+## 📤 Output argument
 
 - l - a 1 by 3cell of strings.
 
-## Description
+## 📄 Description
 
-  <p><b>l = actxcontrollist()</b> returns list of available controls</p>
+<b>l = actxcontrollist()</b> returns list of available controls
 
-## Example
+## 💡 Example
 
 ```matlab
 l = actxcontrollist()
 ```
 
-## See also
+## 🔗 See also
 
-[actxserverlist](actxserverlist.md).
+[actxserverlist](../com_engine/actxserverlist.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

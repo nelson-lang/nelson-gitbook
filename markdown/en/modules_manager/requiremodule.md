@@ -2,20 +2,21 @@
 
 Returns an error if module is not loaded in Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - requiremodule(module_short_name)
 
-## Input argument
+## 📥 Input argument
 
 - module_short_name - a string: short module's name.
 
-## Description
+## 📄 Description
 
-  <p><b>requiremodule</b> returns an error if desired module is not loaded.</p>
-  <p>This function is usefull to verify a dependency on another module.</p>
+<b>requiremodule</b> returns an error if desired module is not loaded.
 
-## Example
+This function is usefull to verify a dependency on another module.
+
+## 💡 Example
 
 See module skeleton for example
 
@@ -27,16 +28,16 @@ ismodule('module_skeleton')
 requiremodule('module_skeleton')
 ```
 
-## See also
+## 🔗 See also
 
-[ismodule](ismodule.md), [addmodule](removemodule.md), [getmodules](getmodules.md).
+[ismodule](../modules_manager/ismodule.md), [addmodule](../modules_manager/removemodule.md), [getmodules](../modules_manager/getmodules.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

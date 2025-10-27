@@ -2,39 +2,40 @@
 
 Load a QML file and creates a window.
 
-## Syntax
+## 📝 Syntax
 
 - h = qml_createqquickview(filename)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: a QML filename.
 
-## Output argument
+## 📤 Output argument
 
 - h - a QObject handle.
 
-## Description
+## 📄 Description
 
-  <p>Load a QML file</p>
-  <p>It creates a QML component, a window, and load .qml file.</p>
+Load a QML file
 
-## See also
+It creates a QML component, a window, and load .qml file.
 
-[qml_loadstring](qml_loadstring.md), [qml_loadfile](qml_loadfile.md).
-
-## Example
+## 💡 Example
 
 ```matlab
-% see examples in [nelsonroot(), '/modules/qml_engine/examples']
+ % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[qml_loadstring](../qml_engine/qml_loadstring.md), [qml_loadfile](../qml_engine/qml_loadfile.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

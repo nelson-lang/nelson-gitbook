@@ -2,40 +2,47 @@
 
 Checks a xml documentation file.
 
-## Syntax
+## 📝 Syntax
 
+- xmldocchecker()
 - xmldocchecker(xmldocfilename)
-- [errors_detected, warnings_detected] = xmldocchecker(xmldocfilename)
+- [state, errors_detected, warnings_detected] = xmldocchecker(xmldocfilename)
 
-## Input argument
+## 📥 Input argument
 
 - xmldocfilename - a string: xml document.
 
-## Output argument
+## 📤 Output argument
 
+- state - a logical: true if the document is valid, false otherwise.
 - errors_detected - a cell of strings: errors detected.
 - warnings_detected - a cell of strings: warnings detected.
 
-## Description
+## 📄 Description
 
-  <p><b>xmldocchecker</b> is a tool to check that a xml document is valid.</p>
+<b>xmldocchecker</b> is a tool to check that a xml document is valid.
 
-## Example
+Principally used to validate the structure and content of XML files against nelson's help documentation.
+
+<b>xmldocchecker()</b> check validity of all XML documentation files.
+
+## 💡 Example
 
 ```matlab
 xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 ```
 
-## See also
+## 🔗 See also
 
-[buildhelp](buildhelp.md), [buildhelpweb](buildhelpweb.md).
+[xmlchecker](../xml/xmlchecker.md), [buildhelp](../help_tools/buildhelp.md), [buildhelpweb](../help_tools/buildhelpweb.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                     |
+| ------- | ---------------------------------- |
+| 1.0.0   | initial version                    |
+| 1.15.0  | Use xmlchecker for XML validation. |
 
-## Author
+## 👤 Author
 
 Allan CORNET

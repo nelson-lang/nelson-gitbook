@@ -2,39 +2,39 @@
 
 Hyperbolic secant.
 
-## Syntax
+## 📝 Syntax
 
 - res = sech(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>sech</b> computes the Hyperbolic secant for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = sech(X)
 ```
 
-## See also
+## 🔗 See also
 
-[cosh](cosh.html).
+[cosh](../trigonometric/cosh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

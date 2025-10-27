@@ -2,28 +2,31 @@
 
 Returns path of a module.
 
-## Syntax
+## 📝 Syntax
 
 - p = modulepath(module_short_name)
 - p = modulepath(module_short_name, option)
 
-## Input argument
+## 📥 Input argument
 
 - module_short_name or 'nelson' - a string: short module's name. module must exist in nelson session.
 - option - a string: 'etc', 'bin', 'root', 'builtin', 'tests'.
 
-## Output argument
+## 📤 Output argument
 
 - p - a string: path or subpath of the module.
 
-## Description
+## 📄 Description
 
-  <p><b>modulepath</b> is an helper's function to return module root path or a subdirectory.</p>
-  <p><b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b></p>
-  <p><b>modulepath('nelson', 'bin')</b> return path of nelson's executables.</p>
-  <p><b>modulepath('nelson', 'builtin')</b> returns path of nelson's dynamic libraries.</p>
+<b>modulepath</b> is an helper's function to return module root path or a subdirectory.
 
-## Example
+<b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b>
+
+<b>modulepath('nelson', 'bin')</b> return path of nelson's executables.
+
+<b>modulepath('nelson', 'builtin')</b> returns path of nelson's dynamic libraries.
+
+## 💡 Example
 
 ```matlab
 modulepath('core')
@@ -35,18 +38,19 @@ modulepath('core', 'tests')
 modulepath('nelson', 'root')
 modulepath('nelson', 'bin')
 modulepath('nelson', 'builtin')
+
 ```
 
-## See also
+## 🔗 See also
 
-[requiremodule](requiremodule.md), [getmodules](getmodules.md).
+[requiremodule](../modules_manager/requiremodule.md), [getmodules](../modules_manager/getmodules.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

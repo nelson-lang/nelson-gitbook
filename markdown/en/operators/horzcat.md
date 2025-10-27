@@ -2,26 +2,26 @@
 
 Horizontal concatenation.
 
-## Syntax
+## 📝 Syntax
 
 - R = horzcat(M1, M2, ... , MN)
 - R = [M1, M2, ... , MN]
 
-## Input argument
+## 📥 Input argument
 
 - M1 - a variable
 - M2 - a variable
 - MN - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - result of [M1, M2, ... , MN]
 
-## Description
+## 📄 Description
 
-  <p><b>R = horzcat(M1, M2, ... , MN)</b> returns the horizontal concatenation of M1, M2, ... , MN along the dimension 2.</p>
+<b>R = horzcat(M1, M2, ... , MN)</b> returns the horizontal concatenation of M1, M2, ... , MN along the dimension 2.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = eye(2, 2);
@@ -36,16 +36,16 @@ B = 'son';
 C = horzcat(A, B)
 ```
 
-## See also
+## 🔗 See also
 
-[vertcat](vertcat.md), [cat](cat.md).
+[vertcat](../operators/vertcat.md), [cat](../operators/cat.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

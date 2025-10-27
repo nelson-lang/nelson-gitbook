@@ -2,35 +2,35 @@
 
 Parse a Nelson file.
 
-## Syntax
+## 📝 Syntax
 
 - status = parsefile(filename)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: a filename to parse.
 
-## Output argument
+## 📤 Output argument
 
 - status - a string: 'script', 'function', 'error'.
 
-## Description
+## 📄 Description
 
-  <p><b>parsefile</b> parse a file and returns if it is a valid script, a valid function or an error.</p>
+<b>parsefile</b> parse a file and returns if it is a valid script, a valid function or an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 parsefile([nelsonroot(), '/etc/startup.m'])
 parsefile([nelsonroot(), '/modules/data_structures/functions/cellstr.m'])
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

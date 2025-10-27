@@ -2,22 +2,22 @@
 
 Checks that value is logical scalar or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeLogicalScalar(var)
 - mustBeLogicalScalar(var, argPosition)
 - C++: void mustBeLogicalScalar(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement islogical, isscalar methods.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeLogicalScalar</b> checks that value is logical scalar or raise an error.</p>
+<b>mustBeLogicalScalar</b> checks that value is logical scalar or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeLogicalScalar(true)
@@ -25,16 +25,16 @@ mustBeLogicalScalar([])
 mustBeLogicalScalar([true false])
 ```
 
-## See also
+## 🔗 See also
 
 [isscalar](../elementary_functions/isscalar.md), [islogical](../types/islogical.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,22 +2,22 @@
 
 Checks that value is single piece of text or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeTextScalar(var)
 - mustBeTextScalar(var, argPosition)
 - C++: void mustBeTextScalar(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: a scalar string array or row vector characters array.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeTextScalar</b> that value is single piece of text or raise an error.</p>
+<b>mustBeTextScalar</b> that value is single piece of text or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeTextScalar('true')
@@ -25,16 +25,16 @@ mustBeTextScalar(["f", "ff"])
 mustBeTextScalar("hello")
 ```
 
-## See also
+## 🔗 See also
 
 [isscalar](../elementary_functions/isscalar.md), [ischar](../types/ischar.md), [isstring](../types/isstring.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

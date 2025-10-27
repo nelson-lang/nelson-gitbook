@@ -2,7 +2,7 @@
 
 waterfall plot.
 
-## Syntax
+## 📝 Syntax
 
 - waterfall(X, Y, Z)
 - waterfall(Z)
@@ -12,7 +12,7 @@ waterfall plot.
 - waterfall(..., propertyName, propertyValue)
 - go = waterfall(...)
 
-## Input argument
+## 📥 Input argument
 
 - X - x-coordinates: vector or matrix.
 - Y - y-coordinates: vector or matrix.
@@ -22,46 +22,50 @@ waterfall plot.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: surface type.
 
-## Description
+## 📄 Description
 
-  <p><b>waterfall</b>  creates a waterfall plot, which is a mesh plot with a partial curtain along the y dimension.</p>
-  <p>This results in a 'waterfall' effect.</p>
-  <p>The function takes the same input arguments as the <b>mesh</b> function.</p>
+<b>waterfall</b> creates a waterfall plot, which is a mesh plot with a partial curtain along the y dimension.
 
-## Examples
+This results in a 'waterfall' effect.
+
+The function takes the same input arguments as the <b>mesh</b> function.
+
+## 💡 Examples
 
 ```matlab
 f = figure();
 Z = peaks();
 waterfall(Z);
 title ("waterfall function");
+
 ```
 
-<img src="waterfall_1_22F7041F.svg" align="middle"/>
+<img src="waterfall_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
 [X,Y] = meshgrid(-5:.5:5);
 Z = Y.*sin(X) - X.*cos(Y);
 p = waterfall(X, Y, Z);
+
 ```
 
-<img src="waterfall_2_7F496EB0.svg" align="middle"/>
+<img src="waterfall_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[mesh](mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
+[mesh](../graphics/mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

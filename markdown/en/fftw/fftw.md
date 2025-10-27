@@ -2,7 +2,7 @@
 
 function for determining FFT algorithm.
 
-## Syntax
+## 📝 Syntax
 
 - m = fftw('planner')
 - fftw('planner', m)
@@ -11,21 +11,21 @@ function for determining FFT algorithm.
 - w = fftw('swisdom')
 - fftw('swisdom', w)
 
-## Input argument
+## 📥 Input argument
 
 - m - method for setting transform parameters: 'estimate', 'measure', 'patient', 'exhaustive', or 'hybrid'.
 - w - a string: wisdom data.
 
-## Output argument
+## 📤 Output argument
 
 - m - method: 'estimate', 'measure', 'patient', 'exhaustive', or 'hybrid'.
 - w - a string: wisdom data.
 
-## Description
+## 📄 Description
 
-  <p>The default method is 'estimate'.</p>
+The default method is 'estimate'.
 
-## Example
+## 💡 Example
 
 ```matlab
 w = fftw('dwisdom')
@@ -35,16 +35,16 @@ fftw('dwisdom', w)
 tic; fft(M); toc
 ```
 
-## See also
+## 🔗 See also
 
-[fft](fft.md), [ifft](ifft.md).
+[fft](../fftw/fft.md), [ifft](../fftw/ifft.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,29 +2,29 @@
 
 Cross product.
 
-## Syntax
+## 📝 Syntax
 
 - R = cross(A, B)
 - R = cross(A, B, dim)
 
-## Input argument
+## 📥 Input argument
 
 - A, B - numeric arrays.
 - dim - positive integer scalar: Dimension to operate along.
 
-## Output argument
+## 📤 Output argument
 
 - R - Vector cross Product.
 
-## Description
+## 📄 Description
 
-  <p><b>R = cross(A, B)</b> returns the cross product of <b>A</b> and <b>B</b>.</p>
+<b>R = cross(A, B)</b> returns the cross product of <b>A</b> and <b>B</b>.
 
-Bibliography
+## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/Cross_product
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [1 2 3;4 5 6;7 8 9];
@@ -33,16 +33,16 @@ R = cross(A, B)
 R = cross(A, B, 2)
 ```
 
-## See also
+## 🔗 See also
 
-[dot](dot.md).
+[dot](../special_functions/dot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,42 +2,44 @@
 
 Hours part of the input date and time.
 
-## Syntax
+## 📝 Syntax
 
 - h = hour(t)
 - h = hour(t, formatIn)
 
-## Input argument
+## 📥 Input argument
 
 - t - serial date number or text inputs
 - formatIn - valid date format
 
-## Output argument
+## 📤 Output argument
 
 - h - a double: integer value.
 
-## Description
+## 📄 Description
 
-  <p><b>h = hour(t)</b> extracts the hour component from each date and time specified in <b>t</b>.</p>
-  <p>The output <b>h</b> is a double array containing integer values ranging from 0 to 23.</p>
+<b>h = hour(t)</b> extracts the hour component from each date and time specified in <b>t</b>.
 
-## Example
+The output <b>h</b> is a double array containing integer values ranging from 0 to 23.
+
+## 💡 Example
 
 ```matlab
 h = hour(738427.656845093)
 h = hour("2021/09/28 15:45:51", 'YYYY/M/DD HH:MM:SS')
+
 ```
 
-## See also
+## 🔗 See also
 
-[minute](minute.md), [second](second.md).
+[minute](../time/minute.md), [second](../time/second.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,40 +2,40 @@
 
 Unary plus, + operator
 
-## Syntax
+## 📝 Syntax
 
 - C = uplus(A)
 - C = +A
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of +A
 
-## Description
+## 📄 Description
 
-  <p><b>C = uplus(A)</b> performs unary plus ie +A.</p>
+<b>C = uplus(A)</b> performs unary plus ie +A.
 
-## Example
+## 💡 Example
 
 ```matlab
 M =-3;
 +M
 ```
 
-## See also
+## 🔗 See also
 
-[uminus](uminus.md), [plus](plus.md).
+[uminus](../operators/uminus.md), [plus](../operators/plus.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

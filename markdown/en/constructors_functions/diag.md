@@ -2,44 +2,44 @@
 
 Get diagonal elements of matrix or create diagonal matrix.
 
-## Syntax
+## 📝 Syntax
 
 - D = diag(V)
 - X = diag(A)
 - D = diag(V, k)
 - X = diag(A, k)
 
-## Input argument
+## 📥 Input argument
 
 - V - Diagonal elements
 - A - Input matrix
 
-## Output argument
+## 📤 Output argument
 
 - D - vector
 - X - matrix
 
-## Description
+## 📄 Description
 
-  <p><b>diag</b> returns diagonal elements of matrix or create diagonal matrix.</p>
+<b>diag</b> returns diagonal elements of matrix or create diagonal matrix.
 
-## Example
+## 💡 Example
 
 ```matlab
 diag(eye(3))
 diag(diag(eye(3)))
 ```
 
-## See also
+## 🔗 See also
 
-[ones](ones.md).
+[ones](../constructors_functions/ones.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,38 +2,38 @@
 
 Round up
 
-## Syntax
+## 📝 Syntax
 
 - C = ceil(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of ceil.
 
-## Description
+## 📄 Description
 
-  <p><b>ceil</b> returns an integer or complex matrix made of rounded up elements.</p>
+<b>ceil</b> returns an integer or complex matrix made of rounded up elements.
 
-## Example
+## 💡 Example
 
 ```matlab
 ceil(pi)
 ```
 
-## See also
+## 🔗 See also
 
-[floor](floor.md), [fix](fix.md), [round](round.md).
+[floor](../elementary_functions/floor.md), [fix](../elementary_functions/fix.md), [round](../elementary_functions/round.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

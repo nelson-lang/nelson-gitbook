@@ -2,44 +2,44 @@
 
 Wilkinson's eigenvalue test matrix
 
-## Syntax
+## 📝 Syntax
 
 - W = wilkinson(n)
 - W = wilkinson(n, classname)
 
-## Input argument
+## 📥 Input argument
 
 - n - scalar integer value: order.
 - classname - row character vector or scalar string: class name desired ('double' by default).
 
-## Output argument
+## 📤 Output argument
 
 - W - Wilkinson's eigenvalue test matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>W = wilkinson(n)</b> returns the wilkinson Matrix of order <b>n</b>.</p>
+<b>W = wilkinson(n)</b> returns the wilkinson Matrix of order <b>n</b>.
 
-Bibliography
+## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/Wilkinson_matrix
 
-## Example
+## 💡 Example
 
 ```matlab
 W = wilkinson(4)
 ```
 
-## See also
+## 🔗 See also
 
 [diag](../constructors_functions/diag.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,33 +2,53 @@
 
 Normal probability density function
 
-## Syntax
+## 📝 Syntax
 
 - y = normpdf(x)
 - y = normpdf(x, mu)
 - y = normpdf(x, mu, sigma)
 
-## Input argument
+## 📥 Input argument
 
 - x - scalar value or array: Values at which to evaluate pdf.
 - mu - scalar value, 0 (default) or array: Mean.
 - sigma - positive scalar value, 1 (default) or array of positive values: Standard deviation.
 
-## Output argument
+## 📤 Output argument
 
 - y - scalar value or array: pdf values.
 
-## Description
+## 📄 Description
 
-  <p><b>y = normpdf(x)</b> calculates the probability density function (pdf) of the standard normal distribution at the given values in <b>x</b>.</p>
-  <p><b>y = normpdf(x, mu)</b> computes the pdf of the normal distribution with a mean of <b>mu</b> and a standard deviation of 1, evaluated at the provided values in <b>x</b>.</p>
-  <p><b>y = normpdf(x, mu, sigma)</b> determines the pdf of the normal distribution with a mean of <b>mu</b> and a standard deviation of <b>sigma</b>, evaluated at the specified values in <b>x</b>.</p>
+<b>normpdf</b> computes the probability density function of the normal (Gaussian) distribution.
 
-Bibliography
+The general formula for the normal distribution PDF is:
+
+$$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+where
+
+$$\mu$$
+
+is the mean and
+
+$$\sigma^2$$
+
+is the variance.
+
+For the standard normal distribution (
+
+$$\mu = 0, \sigma = 1$$
+
+):
+
+$$\phi(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$$
+
+## 📚 Bibliography
 
 Evans, M., N. Hastings, and B. Peacock. Statistical Distributions. 2nd ed. Hoboken, NJ: John Wiley and Sons, Inc., 1993.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [-0.2, -0.1, 0, 0.1, 0.2];
@@ -40,16 +60,16 @@ R = normpdf(x, 2, 1);
 R = normpdf(0, [-0.2, -0.1, 0, 0.1, 0.2], 1);
 ```
 
-## See also
+## 🔗 See also
 
-[mean](mean.md).
+[mean](../statistics/mean.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

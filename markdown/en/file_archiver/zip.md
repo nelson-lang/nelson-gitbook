@@ -2,43 +2,46 @@
 
 Compress files into zip file.
 
-## Syntax
+## 📝 Syntax
 
 - res = zip(zipname, files)
 - res = zip(zipname, files, rootdir)
 
-## Input argument
+## 📥 Input argument
 
 - zipname - a string: zip archive destination file.
 - files - a character vector, a cell array of character vectors, or a string array: Names of files or folders to compress.
 - rootdir - a character vector or string scalar: root path for the files to compress.
 
-## Output argument
+## 📤 Output argument
 
 - res - a cell array of character vectors containing the names of the files included in zip archive.
 
-## Description
+## 📄 Description
 
-  <p><b>zip</b> compress files and directories into zip archive.</p>
-  <p>Each individual file must be smaller than 4 GB.</p>
-  <p>Number of files specified must be less than 65535.</p>
+<b>zip</b> compress files and directories into zip archive.
 
-## Example
+Each individual file must be smaller than 4 GB.
+
+Number of files specified must be less than 65535.
+
+## 💡 Example
 
 ```matlab
 zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton'])
+
 ```
 
-## See also
+## 🔗 See also
 
-[unzip](unzip.md).
+[unzip](../file_archiver/unzip.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

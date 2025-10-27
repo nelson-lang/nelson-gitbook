@@ -2,38 +2,38 @@
 
 Round to nearest integer
 
-## Syntax
+## 📝 Syntax
 
 - C = round(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of round.
 
-## Description
+## 📄 Description
 
-  <p><b>round</b> rounds the elements to the nearest integers.</p>
+<b>round</b> rounds the elements to the nearest integers.
 
-## Example
+## 💡 Example
 
 ```matlab
 round(pi)
 ```
 
-## See also
+## 🔗 See also
 
-[floor](floor.md), [fix](fix.md), [ceil](ceil.md).
+[floor](../elementary_functions/floor.md), [fix](../elementary_functions/fix.md), [ceil](../elementary_functions/ceil.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

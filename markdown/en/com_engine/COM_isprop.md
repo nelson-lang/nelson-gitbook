@@ -2,43 +2,44 @@
 
 Determines if input is an existing COM object property.
 
-## Syntax
+## 📝 Syntax
 
 - r = COM_isprop(h, propertyname)
 - r = isprop(h, propertyname)
 
-## Input argument
+## 📥 Input argument
 
 - h - a COM object.
 - propertyname - a string: property name tested as valid property for the COM object.
 
-## Output argument
+## 📤 Output argument
 
 - r - a logical.
 
-## Description
+## 📄 Description
 
-<description><b>r = isprop(h, propertyname)</b> returns true if the specified name is a property of the COM object h. Otherwise, it returns false.</description>
+<b>r = isprop(h, propertyname)</b> returns true if the specified name is a property of the COM object h. Otherwise, it returns false.
 
-## Example
+## 💡 Example
 
 ```matlab
 e = actxserver('Excel.Application');
 isprop(e, 'Window')
 delete(e)
 clear e
+
 ```
 
-## See also
+## 🔗 See also
 
-[COM_ismethod](COM_ismethod.md).
+[COM_ismethod](../com_engine/COM_ismethod.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

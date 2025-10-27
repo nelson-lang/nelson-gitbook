@@ -2,28 +2,33 @@
 
 Check for missing values.
 
-## Syntax
+## 📝 Syntax
 
 - tf = ismissing(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'ismissing'.
 
-## Description
+## 📄 Description
 
-  <p><b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.</p>
-  <p>missing data are defined as:</p>
-  <p><b>NaN</b> for double or single</p>
-  <p><b>missing</b> for string array</p>
-  <p><b>' '</b> for character array</p>
-  <p><b>''</b> for cell of character array</p>
+<b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.
 
-## Example
+missing data are defined as:
+
+<b>NaN</b> for double or single
+
+<b>missing</b> for string array
+
+<b>' '</b> for character array
+
+<b>''</b> for cell of character array
+
+## 💡 Example
 
 ```matlab
 A = ["Nel", NaN, "son"];
@@ -34,18 +39,19 @@ C = 'Nel son'
 ismissing(C)
 D = {'Nel' '' 'son'}
 ismissing(D)
+
 ```
 
-## See also
+## 🔗 See also
 
-[isfinite](isfinite.html).
+[isfinite](../data_analysis/isfinite.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,25 +2,25 @@
 
 Right division, ./ operator
 
-## Syntax
+## 📝 Syntax
 
 - C = rdivide(A, B)
 - C = A ./ B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A ./ B
 
-## Description
+## 📄 Description
 
-  <p><b>C = rdivide(A, B)</b> performs right division operation: A ./* B.</p>
+<b>C = rdivide(A, B)</b> performs right division operation: A ./\* B.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 rdivide(3, 4)
@@ -33,16 +33,16 @@ M2 = [-25 88 1];
 M1 ./ M2
 ```
 
-## See also
+## 🔗 See also
 
-[ldivide](ldivide.md).
+[ldivide](../operators/ldivide.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

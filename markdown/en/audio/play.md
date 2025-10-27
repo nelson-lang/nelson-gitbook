@@ -2,23 +2,23 @@
 
 Plays an audioplayer object.
 
-## Syntax
+## 📝 Syntax
 
 - play(playObj)
 - play(playObj, start)
 - play(playObj, [start end])
 
-## Input argument
+## 📥 Input argument
 
 - playObj - an audioplayer object.
 - start - an integer value: first sample to play.
 - end - an integer value: last sample to play.
 
-## Description
+## 📄 Description
 
 <b>play</b> plays an audioplayer object.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -29,16 +29,16 @@ delete(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer](audioplayer.md), [playblocking](playblocking.md).
+[audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

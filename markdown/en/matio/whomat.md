@@ -2,31 +2,31 @@
 
 List variables in an valid .mat file.
 
-## Syntax
+## 📝 Syntax
 
 - whomat(filename)
 - ce = whomat(filename)
 - whomat(filename, var1, ..., varN)
 - ce = whomat(filename, var1, ..., varN)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: .mat filename.
 - var1, ..., varN - string: Names of variables to inspect.
 
-## Output argument
+## 📤 Output argument
 
 - ce - cell of strings with variables names.
 
-## Description
+## 📄 Description
 
-  <p><b>whomat</b> lists variables in an valid .mat file.</p>
+<b>whomat</b> lists variables in an valid .mat file.
 
-Bibliography
+## 📚 Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
-## Example
+## 💡 Example
 
 ```matlab
 A = ones(3, 4);
@@ -38,16 +38,16 @@ whomat([tempdir(), 'example_whomat-v7.3.mat'])
 ce = whomat([tempdir(), 'example_whomat-v7.3.mat'])
 ```
 
-## See also
+## 🔗 See also
 
 [whonh5](../hdf5/whonh5.md), [who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

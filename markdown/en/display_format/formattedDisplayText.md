@@ -2,26 +2,27 @@
 
 Capture display output as string.
 
-## Syntax
+## 📝 Syntax
 
 - str = formattedDisplayText(V)
 - str = formattedDisplayText(V, Name, Value)
 
-## Input argument
+## 📥 Input argument
 
 - V - Variable to return as string
 - Name, Value - Name-Value Pair Arguments, Name: 'NumericFormat' or 'LineSpacing'.
 
-## Output argument
+## 📤 Output argument
 
 - str - a string
 
-## Description
+## 📄 Description
 
-  <p><b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.</p>
-  <p>The string contains equivalent to <b>disp(V)</b>.</p>
+<b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.
 
-## Example
+The string contains equivalent to <b>disp(V)</b>.
+
+## 💡 Example
 
 ```matlab
 R = eye(3, 3)
@@ -32,16 +33,16 @@ str = formattedDisplayText(R)
 str = formattedDisplayText(R, 'NumericFormat', 'bank', 'LineSpacing', 'compact')
 ```
 
-## See also
+## 🔗 See also
 
-[display](display.md), [disp](disp.md), [format](format.md).
+[display](../display_format/display.md), [disp](../display_format/disp.md), [format](../display_format/format.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

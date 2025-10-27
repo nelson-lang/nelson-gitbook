@@ -1,10 +1,14 @@
 # Engine
 
-Engine
+The Engine module manages the execution environment of Nelson itself.
 
-## Description
+It provides mechanisms to handle program startup and shutdown behavior, command-line integration, and runtime modes.
 
-nelson engine functions
+This includes support for user-defined initialization and termination scripts, platform-specific system requirements, and interpreter directives for cross-platform script execution.
+
+It serves as the core interface between Nelson and the underlying operating system, ensuring flexible configuration and smooth control over how the software is launched and operated.
+
+## Functions
 
 - [argv](argv.md) - Nelson command line arguments.
 - [executable](executable.md) - Executables to start Nelson software.

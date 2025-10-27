@@ -2,40 +2,40 @@
 
 Unary minus, - operator
 
-## Syntax
+## 📝 Syntax
 
 - C = uminus(A)
 - C = -A
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of -A
 
-## Description
+## 📄 Description
 
-  <p><b>C = uminus(A)</b> performs unary minus ie -A.</p>
+<b>C = uminus(A)</b> performs unary minus ie -A.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = 3;
 -M
 ```
 
-## See also
+## 🔗 See also
 
-[uplus](uplus.md), [minus](minus.md).
+[uplus](../operators/uplus.md), [minus](../operators/minus.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

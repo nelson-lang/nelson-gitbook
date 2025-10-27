@@ -2,40 +2,40 @@
 
 Condition number with respect to eigenvalues.
 
-## Syntax
+## 📝 Syntax
 
 - C = condeig(A)
 - [V, D, S] = condeig(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input matrix
 
-## Output argument
+## 📤 Output argument
 
 - C - a vector of condition numbers for the eigenvalues of A.
 
-## Description
+## 📄 Description
 
-  <p><b>C = condeig(A)</b> returns a vector of condition numbers for the eigenvalues of <b>A</b>.</p>
+<b>C = condeig(A)</b> returns a vector of condition numbers for the eigenvalues of <b>A</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [10, 20; 30, 40];
 S = condeig(A)
 ```
 
-## See also
+## 🔗 See also
 
-[eig](eig.md), [cond](cond.md).
+[eig](../linear_algebra/eig.md), [cond](../linear_algebra/cond.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

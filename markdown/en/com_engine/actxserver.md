@@ -2,25 +2,25 @@
 
 Creates COM server.
 
-## Syntax
+## 📝 Syntax
 
 - h = actxserver(progid)
 - h = actxserver(progid, 'machine', machineName)
 
-## Input argument
+## 📥 Input argument
 
 - progid - a string: the name of a COM server.
 - machineName - a string: the name of the machine on which to start the server.
 
-## Output argument
+## 📤 Output argument
 
 - h - a COM object.
 
-## Description
+## 📄 Description
 
-  <p><b>h = actxserver(progid)</b> creates a COM server using the progid identifier.</p>
+<b>h = actxserver(progid)</b> creates a COM server using the progid identifier.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 h = actxserver('Excel.application')
@@ -36,16 +36,16 @@ delete(pTextToSpeech)
 clear pTextToSpeech
 ```
 
-## See also
+## 🔗 See also
 
-[actxGetRunningSrv](actxGetRunningSrv.html).
+[actxGetRunningSrv](../com_engine/actxGetRunningSrv.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

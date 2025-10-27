@@ -2,7 +2,7 @@
 
 Set colormap limits.
 
-## Syntax
+## 📝 Syntax
 
 - clim(limits)
 - clim('auto')
@@ -10,22 +10,22 @@ Set colormap limits.
 - clim(ax, ...)
 - lims = clim()
 
-## Input argument
+## 📥 Input argument
 
 - limits - New limits: [cmin cmax].
 - 'auto' - enables automatic limit updates when values in the colormap indexing array change.
 - 'manual' - disables automatic limit update.
 - ax - Target object: axes graphics object.
 
-## Output argument
+## 📤 Output argument
 
 - lims - [cmin cmax]
 
-## Description
+## 📄 Description
 
-  <p><b>clim</b> set or get colormap limits.</p>
+<b>clim</b> set or get colormap limits.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -33,9 +33,10 @@ f = figure();
 Z = X .^ 2 + Y .^ 2;
 surf(Z);
 limits = clim()
+
 ```
 
-<img src="clim_1_18DD457D.svg" align="middle"/>
+<img src="clim_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -44,20 +45,21 @@ Z = X.^2 + Y.^2;
 surf(Z);
 clim([25 75])
 limits = clim()
+
 ```
 
-<img src="clim_2_80AB730A.svg" align="middle"/>
+<img src="clim_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md), [colorbar](colorbar.md).
+[colormap](../graphics/colormap.md), [colorbar](../graphics/colorbar.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

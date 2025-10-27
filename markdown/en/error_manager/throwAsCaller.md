@@ -2,36 +2,37 @@
 
 Throw exception as if occurs within calling function.
 
-## Syntax
+## 📝 Syntax
 
 - throwAsCaller(MException)
 
-## Input argument
+## 📥 Input argument
 
 - MException - MException object
 
-## Description
+## 📄 Description
 
-  <p>It throws an exception as if it occurs within the calling function.</p>
+It throws an exception as if it occurs within the calling function.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 function test_throwAsCaller()
   ME = MException('n:m', 'your error')
   throwAsCaller(ME)
 ```
 
-## See also
+## 🔗 See also
 
-[MException](MException.md), [rethrow](rethrow.md), [throw](throw.md).
+[MException](../error_manager/MException.md), [rethrow](../error_manager/rethrow.md), [throw](../error_manager/throw.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

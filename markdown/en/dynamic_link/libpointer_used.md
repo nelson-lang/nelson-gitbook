@@ -2,34 +2,34 @@
 
 Returns list of current used libpointer handle.
 
-## Syntax
+## 📝 Syntax
 
 - r = libpointer_used()
 
-## Output argument
+## 📤 Output argument
 
 - h - a vector of libpointer handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns list of current used libpointer handle.</p>
+Returns list of current used libpointer handle.
 
-## See also
-
-[dlcall](dlcall.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 libpointer_used(),delete(libpointer_used())
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[dlcall](../dynamic_link/dlcall.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

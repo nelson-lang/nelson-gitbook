@@ -2,7 +2,7 @@
 
 Impulse response plot of dynamic system.
 
-## Syntax
+## 📝 Syntax
 
 - [y, t, x] = impulse(sys)
 - [y, t, x] = impulse(sys, tFinal)
@@ -10,22 +10,22 @@ Impulse response plot of dynamic system.
 - [y, t, x] = impulse(sys, t)
 - impulse(...)
 
-## Input argument
+## 📥 Input argument
 
 - sys - a lti model.
 - t - Time samples: vector.
 - tFinal - End time for step response: scalar.
 - [t0, tFinal] - Time range for step response: two-element vector.
 
-## Output argument
+## 📤 Output argument
 
 - y - Simulated response data: matrix or vector.
 - tOut - Time vector: vector.
 - x - State trajectories: matrix or vector.
 
-## Description
+## 📄 Description
 
-## Example
+## 💡 Example
 
 ```matlab
 sys = tf(4,[1 2 10]);
@@ -34,18 +34,18 @@ f = figure();
 impulse(sys,t);
 ```
 
-<img src="impulse_701DDDED.svg" align="middle"/>
+<img src="impulse.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[step](gensig.html), [lsim](step.md).
+[step](../control_system/gensig.md), [lsim](../control_system/step.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

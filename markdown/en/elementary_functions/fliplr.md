@@ -2,39 +2,39 @@
 
 Flip order of elements left to right
 
-## Syntax
+## 📝 Syntax
 
 - B = fliplr(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - an array
 
-## Output argument
+## 📤 Output argument
 
 - B - flipped array.
 
-## Description
+## 📄 Description
 
-  <p><b>fliplr</b> return an new array of <b>A</b> flipped left to right.</p>
+<b>fliplr</b> return an new array of <b>A</b> flipped left to right.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = eye(3, 2);
 y = fliplr(x)
 ```
 
-## See also
+## 🔗 See also
 
-[flipud](flipud.md), [flip](flip.md), [flipdim](flipdim.md).
+[flipud](../elementary_functions/flipud.md), [flip](../elementary_functions/flip.md), [flipdim](../elementary_functions/flipdim.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

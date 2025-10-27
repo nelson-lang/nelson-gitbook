@@ -2,7 +2,7 @@
 
 load data from .nh5 or .mat file into Nelson's workspace.
 
-## Syntax
+## 📝 Syntax
 
 - load(filename)
 - st = load(filename)
@@ -11,21 +11,21 @@ load data from .nh5 or .mat file into Nelson's workspace.
 - load(filename, '-mat')
 - load(filename, '-nh5')
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: .nh5 or .mat filename.
 - '-mat' or '-nh5' - forces to read file as nh5 or mat.
 - var1, ..., varN - string: Names of variables to load into Nelson's workspace.
 
-## Output argument
+## 📤 Output argument
 
 - st - a structure with variables name as fieldnames.
 
-## Description
+## 📄 Description
 
-  <p><b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.</p>
+<b>load</b> loads data from .nh5 or .mat file to Nelson's workspace.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = ones(3, 4);
@@ -42,18 +42,19 @@ load([tempdir(), 'example_load.mat']);
 who
 A
 B
+
 ```
 
-## See also
+## 🔗 See also
 
-[save](save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md).
+[save](../stream_manager/save.md), [savemat](../matio/savemat.md), [savenh5](../hdf5/savenh5.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

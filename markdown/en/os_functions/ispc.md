@@ -2,19 +2,19 @@
 
 Checks if version is for Windows platform.
 
-## Syntax
+## 📝 Syntax
 
 - s = ispc()
 
-## Output argument
+## 📤 Output argument
 
 - s - a logical: true if it is a Windows platform.
 
-## Description
+## 📄 Description
 
-  <p><b>ispc</b> checks if it is a Windows platform.</p>
+<b>ispc</b> checks if it is a Windows platform.
 
-## Example
+## 💡 Example
 
 ```matlab
 if ispc
@@ -24,16 +24,16 @@ else
 end
 ```
 
-## See also
+## 🔗 See also
 
-[isunix](isunix.md), [ismac](ismac.md).
+[isunix](../os_functions/isunix.md), [ismac](../os_functions/ismac.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

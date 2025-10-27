@@ -1,10 +1,15 @@
 # JavaScript Object Notation
 
-JavaScript Object Notation
+The JSON module provides functions to encode, decode, and format JSON data, allowing easy
+exchange of structured information between Nelson and external systems.
 
-## Description
+JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used
+for transmitting attribute-value pairs and arrays.
 
-Functions to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value).
+This module enables Nelson to interoperate with web services, configuration files, and
+applications that rely on JSON.
+
+## Functions
 
 - [jsondecode](jsondecode.md) - decodes a JSON string to Nelson object.
 - [jsonencode](jsonencode.md) - encodes a Nelson object into a JSON string.

@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>slicot - Nelson</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Nelson</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="subroutine-library-in-control-theory"><a class="header" href="#subroutine-library-in-control-theory">Subroutine Library In COntrol Theory</a></h1>
+<p>The SLICOT module provides advanced numerical algorithms for computations in systems and control theory.</p>
+<p>It includes tools for matrix factorization, system balancing, stability analysis, pole assignment, and solutions of Lyapunov, Riccati, and Sylvester equations.</p>
+<p>The module supports both continuous- and discrete-time systems, including descriptor and multi-input systems, enabling precise and efficient analysis, design, and control of complex dynamic systems.</p>
+<h2 id="functions"><a class="header" href="#functions">Functions</a></h2>
+<ul>
+<li><a href="About_SLICOT_license.html">SLICOT License</a> - About SLICOT license.</li>
+<li><a href="slicot_ab01od.html">slicot_ab01od</a> - Staircase form for multi-input systems using orthogonal state and input transformations.</li>
+<li><a href="slicot_ab04md.html">slicot_ab04md</a> - Discrete-time / continuous-time systems conversion by a bilinear transformation.</li>
+<li><a href="slicot_ab07nd.html">slicot_ab07nd</a> - Inverse of a given linear system.</li>
+<li><a href="slicot_ab08nd.html">slicot_ab08nd</a> - Construction of a regular pencil for a given system such that its generalized eigenvalues are invariant zeros of the system.</li>
+<li><a href="slicot_ag08bd.html">slicot_ag08bd</a> - Zeros and Kronecker structure of a descriptor system pencil.</li>
+<li><a href="slicot_mb02md.html">slicot_mb02md</a> - Solution of Total Least-Squares problem using a SVD approach.</li>
+<li><a href="slicot_mb03od.html">slicot_mb03od</a> - Matrix rank determination by incremental condition estimation.</li>
+<li><a href="slicot_mb03pd.html">slicot_mb03pd</a> - Matrix rank determination by incremental condition estimation (row pivoting).</li>
+<li><a href="slicot_mb03rd.html">slicot_mb03rd</a> - Reduction of a real Schur form matrix to a block-diagonal form.</li>
+<li><a href="slicot_mb04gd.html">slicot_mb04gd</a> - RQ factorization with row pivoting of a matrix.</li>
+<li><a href="slicot_mb04md.html">slicot_mb04md</a> - Balancing a general real matrix.</li>
+<li><a href="slicot_mb05od.html">slicot_mb05od</a> - Matrix exponential for a real matrix, with accuracy estimate.</li>
+<li><a href="slicot_mc01td.html">slicot_mc01td</a> - Checking stability of a given real polynomial.</li>
+<li><a href="slicot_sb01bd.html">slicot_sb01bd</a> - Pole assignment for a given matrix pair (A,B).</li>
+<li><a href="slicot_sb02od.html">slicot_sb02od</a> - Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method).</li>
+<li><a href="slicot_sb03md.html">slicot_sb03md</a> - Solution of continuous- or discrete-time Lyapunov equations and separation estimation.</li>
+<li><a href="slicot_sb03od.html">slicot_sb03od</a> - Solution of stable continuous- or discrete-time Lyapunov equations (Cholesky factor).</li>
+<li><a href="slicot_sb04md.html">slicot_sb04md</a> - Solution of continuous-time Sylvester equations (Hessenberg-Schur method).</li>
+<li><a href="slicot_sb04qd.html">slicot_sb04qd</a> - Solution of discrete-time Sylvester equations (Hessenberg-Schur method).</li>
+<li><a href="slicot_sb10jd.html">slicot_sb10jd</a> - Converting a descriptor state-space system into regular state-space form.</li>
+<li><a href="slicot_sg02ad.html">slicot_sg02ad</a> - Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.</li>
+<li><a href="slicot_tb01id.html">slicot_tb01id</a> - Balancing a system matrix corresponding to a triplet (A, B, C).</li>
+<li><a href="slicot_tg01ad.html">slicot_tg01ad</a> - Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C).</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../control_system/zero.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../slicot/About_SLICOT_license.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../control_system/zero.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../slicot/About_SLICOT_license.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/matlab.min.js"></script>
+
+
+    </div>
+    </body>
+</html>

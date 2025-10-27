@@ -2,42 +2,42 @@
 
 Determines if file contains Microsoft Excel spreadsheet.
 
-## Syntax
+## 📝 Syntax
 
 - status = xlsfinfo(filename)
 - [status, sheets] = xlsfinfo(filename)
 - [status, sheets, xlsformat] = xlsfinfo(filename)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: a filename.
 
-## Output argument
+## 📤 Output argument
 
 - status - a string: file type
 - sheets - a vector of strings: sheet names
 - xlsformat - a string: excel file format
 
-## Description
+## 📄 Description
 
-  <p>Query Excel spreadsheet file filename for some information about its contents.</p>
+Query Excel spreadsheet file filename for some information about its contents.
 
-## Example
+## 💡 Example
 
 ```matlab
 [status, sheets, xlsformat] =COM_xlsfinfo([modulepath('com_engine'), '/examples/sample_xslx.xlsx'])
 ```
 
-## See also
+## 🔗 See also
 
-[COM_xlswrite](COM_xlswrite.md), [COM_xlsread](COM_xlsread.md).
+[COM_xlswrite](../com_engine/COM_xlswrite.md), [COM_xlsread](../com_engine/COM_xlsread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

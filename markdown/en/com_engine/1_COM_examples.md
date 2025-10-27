@@ -2,21 +2,22 @@
 
 Some example to show how to use COM interface.
 
-## Description
+## 📄 Description
 
-  <p>See <b>[modulepath('com_engine'), '/examples']</b> directory.</p>
-  <p>Interacts with Internet explorer, Word, Excel, Speech voice, VB scripts ...</p>
+See <b>[modulepath('com_engine'), '/examples']</b> directory.
 
-## See also
+Interacts with Internet explorer, Word, Excel, Speech voice, VB scripts ...
 
-[actxserver](actxserver.md), [set](COM_set.md), [get](COM_get.md), [invoke](COM_invoke.md).
+## 🔗 See also
 
-## History
+[actxserver](../com_engine/actxserver.md), [set](../com_engine/COM_set.md), [get](../com_engine/COM_get.md), [invoke](../com_engine/COM_invoke.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,30 +2,30 @@
 
 Returns nelson application ID
 
-## Syntax
+## 📝 Syntax
 
 - nelsonappid()
 
-## Description
+## 📄 Description
 
-  <p>Get the unique identifier for the Nelson application.</p>
+Get the unique identifier for the Nelson application.
 
-## Example
+## 💡 Example
 
 ```matlab
 nelsonappid()
 ```
 
-## See also
+## 🔗 See also
 
-[nelsonroot](nelsonroot.md).
+[nelsonroot](../core/nelsonroot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

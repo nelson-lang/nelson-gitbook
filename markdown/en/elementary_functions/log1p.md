@@ -2,39 +2,39 @@
 
 log(1 + x) accurately for small values of x.
 
-## Syntax
+## 📝 Syntax
 
 - R = log1p(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - result of log(1 + x) accurately for small values of x.
 
-## Description
+## 📄 Description
 
-  <p><b>log1p</b> computes log(1 + x) accurately for small values of x.</p>
+<b>log1p</b> computes log(1 + x) accurately for small values of x.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = log1p(x)
 ```
 
-## See also
+## 🔗 See also
 
-[log](log.md).
+[log](../elementary_functions/log.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

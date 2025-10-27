@@ -2,39 +2,39 @@
 
 Inverse secant of angle in radians.
 
-## Syntax
+## 📝 Syntax
 
 - res = asec(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>asec</b> computes the inverse secant of argument in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = -pi:0.75:pi;
 R = asec(x)
 ```
 
-## See also
+## 🔗 See also
 
-[secd](secd.html), [sec](sec.html).
+[secd](../trigonometric/secd.md), [sec](../trigonometric/sec.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

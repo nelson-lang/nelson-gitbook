@@ -2,40 +2,42 @@
 
 function editor.
 
-## Syntax
+## 📝 Syntax
 
 - edit()
 - edit filename
 - edit function_name
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: filename to open.
 - function_name - a string: function name
 
-## Description
+## 📄 Description
 
-  <p><b>edit</b> opens a new file called untitled.m in the nelson's editor.</p>
-  <p>If <b>function_name</b> is the name of a defined nelson function <b>edit(function_name)</b> try to open the associated file function_name.m .</p>
-  <p><b>edit(dirname)</b> opens all .m available in <b>dirname</b>.</p>
+<b>edit</b> opens a new file called untitled.m in the nelson's editor.
 
-## Example
+If <b>function_name</b> is the name of a defined nelson function <b>edit(function_name)</b> try to open the associated file function_name.m .
+
+<b>edit(dirname)</b> opens all .m available in <b>dirname</b>.
+
+## 💡 Example
 
 ```matlab
 edit('edit')
 ```
 
-## See also
+## 🔗 See also
 
-[smartindent](smartindent.md).
+[smartindent](../text_editor/smartindent.md).
 
-## History
+## 🕔 History
 
-| Version | Description         |
+| Version | 📄 Description      |
 | ------- | ------------------- |
 | 1.0.0   | initial version     |
 | 1.5.0   | edit(dirname) added |
 
-## Author
+## 👤 Author
 
 Allan CORNET

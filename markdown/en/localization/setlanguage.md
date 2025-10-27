@@ -2,28 +2,28 @@
 
 Changes the language used in Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - setlanguage(language)
 
-## Input argument
+## 📥 Input argument
 
 - language - a string: 'en_US', 'fr_FR' or others by default.
 
-## Description
+## 📄 Description
 
-  <p><b>setlanguage</b> changes the language used by Nelson and saves this changes for subsequent runs of Nelson.</p>
+<b>setlanguage</b> changes the language used by Nelson and saves this changes for subsequent runs of Nelson.
 
-## See also
+## 🔗 See also
 
-[getlanguage](getlanguage.md).
+[getlanguage](../localization/getlanguage.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

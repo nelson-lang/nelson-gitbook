@@ -2,43 +2,43 @@
 
 Acquires variable value from a specified variables scope.
 
-## Syntax
+## 📝 Syntax
 
 - value = acquirevar(scope, variable_name)
 
-## Input argument
+## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
 - variable_name - a string: the name of symbol to search.
 
-## Output argument
+## 📤 Output argument
 
 - value - value of the variable searched.
 
-## Description
+## 📄 Description
 
-  <p><b>acquirevar</b> search a symbol in a specific scope and copy the value in current scope.</p>
+<b>acquirevar</b> search a symbol in a specific scope and copy the value in current scope.
 
-## Example
+## 💡 Example
 
 ```matlab
-Y = 'variable in base scope';
+ Y = 'variable in base scope';
 function myfun()
   disp(acquirevar('base', 'Y')
 end
 myfun()
 ```
 
-## See also
+## 🔗 See also
 
-[assignin](assignin.md), [who](who.md).
+[assignin](../memory_manager/assignin.md), [who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

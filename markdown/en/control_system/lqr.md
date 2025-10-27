@@ -2,12 +2,12 @@
 
 Linear-Quadratic Regulator (LQR) design.
 
-## Syntax
+## 📝 Syntax
 
 - [K, S, P] = lqr(sys, Q, R, N)
 - [K, S, P] = lqr(A, B, Q, R, N)
 
-## Input argument
+## 📥 Input argument
 
 - sys - LTI model
 - Q - State-cost weighted matrix
@@ -16,20 +16,23 @@ Linear-Quadratic Regulator (LQR) design.
 - A - State matrix: n x n matrix.
 - B - Input-to-state matrix: n x m matrix.
 
-## Output argument
+## 📤 Output argument
 
 - K - Optimal gain: row vector.
 - S - Solution of the Algebraic Riccati Equation.
 - p - Poles of the closed-loop system: column vector.
 
-## Description
+## 📄 Description
 
-  <p>In the context of continuous-time state-space matrices <b>A</b> and <b>B</b>, the command <b>[K, S, P] = lqr(A, B, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.</p>
-  <p>This syntax is applicable exclusively to continuous-time models.</p>
-  <p>When applied to a continuous-time or discrete-time state-space model represented by <b>sys</b>, the command <b>[K, S, P] = lqr(sys, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.</p>
-  <p>The weight matrices <b>Q</b> and <b>R</b> govern the importance of states and inputs, and the cross term matrix <b>N</b> is zero by default when not specified.</p>
+In the context of continuous-time state-space matrices <b>A</b> and <b>B</b>, the command <b>[K, S, P] = lqr(A, B, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.
 
-## Example
+This syntax is applicable exclusively to continuous-time models.
+
+When applied to a continuous-time or discrete-time state-space model represented by <b>sys</b>, the command <b>[K, S, P] = lqr(sys, Q, R, N)</b> computes the optimal gain matrix <b>K</b>, the solution <b>S</b> to the associated algebraic Riccati equation, and the closed-loop poles <b>P</b>.
+
+The weight matrices <b>Q</b> and <b>R</b> govern the importance of states and inputs, and the cross term matrix <b>N</b> is zero by default when not specified.
+
+## 💡 Example
 
 ```matlab
 A = [-0.313 56.7 0; -0.0139 -0.426 0; 0 56.7 0];
@@ -45,18 +48,19 @@ Q = P * C' * C;
 R = 2;
 [K1, S1, e1] = lqr(sys1, Q, R)
 [K2, S2, e2] = lqr(sys2, Q, R)
+
 ```
 
-## See also
+## 🔗 See also
 
-[care](care.md), [dare](dare.md), [lqe](lqe.md).
+[care](../control_system/care.md), [dare](../control_system/dare.md), [lqe](../control_system/lqe.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

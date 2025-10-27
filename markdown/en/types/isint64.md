@@ -2,23 +2,23 @@
 
 Return true if variable var is a signed 64-bit integer type array.
 
-## Syntax
+## 📝 Syntax
 
 - res = isint64(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
-<b>isint64</b> returns a logical <b>1</b>if the argument is a <b>signed 64-bit</b> integer array and a logical <b>0</b> otherwise.
+<b>isint64</b> returns a logical <b>1</b> if the argument is a <b>signed 64-bit</b> integer array and a logical <b>0</b> otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -30,16 +30,16 @@ B = int64(3);
 res = isint64(B)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [int64](../integer/int64.md), [isinteger](isinteger.md).
+[isa](../types/isa.md), [int64](../integer/int64.md), [isinteger](../types/isinteger.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Matrix and vector norms
 
-## Syntax
+## 📝 Syntax
 
 - R = norm(V)
 - R = norm(V, p)
@@ -13,22 +13,23 @@ Matrix and vector norms
 - R = norm(M, Inf)
 - R = norm(M, 'fro')
 
-## Input argument
+## 📥 Input argument
 
 - M - a 2D matrix single or double
 - V - a vector single or double
 - p - a scalar (p-norm)
 
-## Output argument
+## 📤 Output argument
 
 - R - result of norm: scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>norm</b> computes the norm of a vector or a matrix.</p>
-  <p>Frobenius norm of M is equal to <b>sqrt (sum (diag (M' * M)))</b> .</p>
+<b>norm</b> computes the norm of a vector or a matrix.
 
-## Examples
+Frobenius norm of M is equal to <b>sqrt (sum (diag (M' \* M)))</b> .
+
+## 💡 Examples
 
 ```matlab
 M = [1 2; 3 4];
@@ -50,16 +51,16 @@ x = ones(3000, 3000);
 tic();R = norm(x);toc
 ```
 
-## See also
+## 🔗 See also
 
 [svd](../linear_algebra/svd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

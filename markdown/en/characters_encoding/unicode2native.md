@@ -2,46 +2,49 @@
 
 Converts unicode characters representation to bytes
 
-## Syntax
+## 📝 Syntax
 
 - bytes = unicode2native(str, charset)
 
-## Input argument
+## 📥 Input argument
 
 - str - an scalar string or vector characters array.
 - charset - an scalar string or vector characters array.
 
-## Output argument
+## 📤 Output argument
 
 - bytes - a uint8 vector
 
-## Description
+## 📄 Description
 
-  <p><b>unicode2native</b> converts unicode characters to an numeric array.</p>
-  <p><b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine).</p>
-  <p><b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set).</p>
-  <p>List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml</p>
+<b>unicode2native</b> converts unicode characters to an numeric array.
 
-Bibliography
+<b>bytes = unicode2native(str)</b> converts unicode characters to an numeric array (the native character set of the machine).
+
+<b>bytes = unicode2native(str, charset)</b> converts unicode characters to an numeric array (character set <b>charset</b> instead of the native character set).
+
+List of characters set: http://www.iana.org/assignments/character-sets/character-sets.xhtml
+
+## 📚 Bibliography
 
 ICU library
 
-## Example
+## 💡 Example
 
 ```matlab
 R = unicode2native('片仮名', 'SHIFT_JIS')
 ```
 
-## See also
+## 🔗 See also
 
-[native2unicode](native2unicode.md), [char](../string/char.md).
+[native2unicode](../characters_encoding/native2unicode.md), [char](../string/char.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

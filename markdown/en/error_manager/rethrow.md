@@ -2,39 +2,41 @@
 
 rethrow error.
 
-## Syntax
+## 📝 Syntax
 
 - rethrow(MException)
 
-## Input argument
+## 📥 Input argument
 
 - MException - MException object
 
-## Description
+## 📄 Description
 
-  <p><b>rethrow(MException)</b> reissues the error specified by <b>MException</b>.</p>
+<b>rethrow(MException)</b> reissues the error specified by <b>MException</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 try
   a
 catch ME
   disp(ME)
   rethrow(ME)
 end
+
 ```
 
-## See also
+## 🔗 See also
 
-[MException](MException.md), [throw](throw.md).
+[MException](../error_manager/MException.md), [throw](../error_manager/throw.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

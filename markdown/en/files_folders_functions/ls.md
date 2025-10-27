@@ -2,27 +2,27 @@
 
 List folder contents.
 
-## Syntax
+## 📝 Syntax
 
 - ls
 - ls(name)
 - res = ls()
 - res = ls(options)
 
-## Input argument
+## 📥 Input argument
 
 - name - a string: file or directory name.
 - options - vary from system to system.
 
-## Output argument
+## 📤 Output argument
 
 - res - On Windows, res is an m-by-n character array of names. m is the number of names and n is the number of characters in the longest name. On Unix plaftorms is a character vector of names separated by tab and space characters.
 
-## Description
+## 📄 Description
 
-  <p><b>ls</b> is implemented by calling the native operating system's directory listing command—available options will vary from system to system.</p>
+<b>ls</b> is implemented by calling the native operating system's directory listing command-available options will vary from system to system.
 
-## Example
+## 💡 Example
 
 ```matlab
 res = ls(nelsonroot())
@@ -31,16 +31,16 @@ if ~ispc()
 end
 ```
 
-## See also
+## 🔗 See also
 
-[dir](dir.md), [isdir](isdir.md), [isfile](isfile.md).
+[dir](../files_folders_functions/dir.md), [isdir](../files_folders_functions/isdir.md), [isfile](../files_folders_functions/isfile.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

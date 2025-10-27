@@ -2,24 +2,25 @@
 
 Remove leading and trailing whitespace.
 
-## Syntax
+## 📝 Syntax
 
 - res = strtrim(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string, a cell of strings or a string array.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string without leading or trailing whitespace.
 
-## Description
+## 📄 Description
 
-  <p><b>strtrim</b> removes leading and trailing whitespace.</p>
-  <p><b>strtrim</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).</p>
+<b>strtrim</b> removes leading and trailing whitespace.
 
-## Examples
+<b>strtrim</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).
+
+## 💡 Examples
 
 ```matlab
 strtrim(' Nel Son')
@@ -33,16 +34,16 @@ strtrim(" Nel Son")
 strtrim([' Nel Son', char(160)])
 ```
 
-## See also
+## 🔗 See also
 
-[deblank](deblank.md), [toupper](toupper.md).
+[deblank](../string/deblank.md), [toupper](../string/toupper.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

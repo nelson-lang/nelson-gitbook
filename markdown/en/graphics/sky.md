@@ -2,24 +2,24 @@
 
 Sky colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = sky
 - c = sky(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Sky colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>sky</b> returns the colormap with sky colors.</p>
+<b>sky</b> returns the colormap with sky colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -27,18 +27,18 @@ surf(peaks);
 colormap('sky');
 ```
 
-<img src="sky_71A97171.svg" align="middle"/>
+<img src="sky.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

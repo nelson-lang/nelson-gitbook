@@ -2,25 +2,25 @@
 
 Clear an built-in function.
 
-## Syntax
+## 📝 Syntax
 
 - l = clearfun(function_name)
 - l = clearfun(function_handle)
 
-## Input argument
+## 📥 Input argument
 
 - function_name - a string: function name.
 - function_handle - a function handle.
 
-## Output argument
+## 📤 Output argument
 
 - l - a logical
 
-## Description
+## 📄 Description
 
-  <p><b>clearfun</b> clears built-in.</p>
+<b>clearfun</b> clears built-in.
 
-## Example
+## 💡 Example
 
 ```matlab
 cos(3)
@@ -30,18 +30,19 @@ cos(3)
 sin(3)
 b = clearfun(str2func('sin'))
 sin(3)
+
 ```
 
-## See also
+## 🔗 See also
 
-[feval](feval.md).
+[feval](../functions_manager/feval.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Display image.
 
-## Syntax
+## 📝 Syntax
 
 - imshow(filename)
 - imshow(img)
@@ -13,7 +13,7 @@ Display image.
 - imshow(..., propertyName, propertyValue)
 - go = imshow(...)
 
-## Input argument
+## 📥 Input argument
 
 - filename - row vector character: file name of the image to display.
 - img - grayscale image: matrix.
@@ -23,33 +23,34 @@ Display image.
 - propertyName - a scalar string or row vector character (for compatibility).
 - propertyValue - a value (for compatibility).
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: image type.
 
-## Description
+## 📄 Description
 
-  <p><b>imshow(img)</b> displays the image <b>im</b>.</p>
+<b>imshow(img)</b> displays the image <b>im</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
 filename = [tempdir, 'apollo_8_earthrise_1968_as08-14-2383.jpg'];
 websave(filename, 'https://www.nasa.gov/wp-content/uploads/2025/05/3dmodels-casa-2025-astro.jpg');
 h = imshow(filename);
+
 ```
 
-## See also
+## 🔗 See also
 
-[imread](imread.md), [image](image.md), [imagesc](imagesc.md), [colormap](colormap.md).
+[imread](../graphics/imread.md), [image](../graphics/image.md), [imagesc](../graphics/imagesc.md), [colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

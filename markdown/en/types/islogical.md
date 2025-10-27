@@ -2,23 +2,23 @@
 
 Return true if variable var is a logical.
 
-## Syntax
+## 📝 Syntax
 
 - res = islogical(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>islogical</b> returns a logical 1 if the argument is a logical array and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 1;
@@ -30,16 +30,16 @@ B = logical(1);
 res = islogical(B)
 ```
 
-## See also
+## 🔗 See also
 
 [logical](../logical/logical.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

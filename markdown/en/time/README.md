@@ -1,10 +1,12 @@
-# Time functions
+# Date and Time
 
-Time functions
+The Time Functions module provides tools for working with dates, times, and durations in Nelson.
 
-## Description
+It supports querying the current time, measuring elapsed time, performing calculations on dates and times, converting between different time representations, and handling calendar-specific operations such as leap years and month-end calculations.
 
-time functions
+This module enables precise time management, scheduling, and performance measurement in scripts and applications.
+
+## Functions
 
 - [addtodate](addtodate.md) - Modify date number by field.
 - [calendar](calendar.md) - Calendar.

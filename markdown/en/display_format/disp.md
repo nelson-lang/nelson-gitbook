@@ -2,20 +2,21 @@
 
 Display a variable.
 
-## Syntax
+## 📝 Syntax
 
 - disp(V)
 
-## Input argument
+## 📥 Input argument
 
 - V - a variable
 
-## Description
+## 📄 Description
 
-  <p><b>disp(V)</b> displays the value of the variable <b>V</b>.</p>
-  <p><b>disp</b> uses current <b>format</b> setting to display numeric values.</p>
+<b>disp(V)</b> displays the value of the variable <b>V</b>.
 
-## Examples
+<b>disp</b> uses current <b>format</b> setting to display numeric values.
+
+## 💡 Examples
 
 ```matlab
 disp('Hello Nelson')
@@ -35,16 +36,16 @@ disp always ends with a newline.
 disp('')
 ```
 
-## See also
+## 🔗 See also
 
-[display](display.md), [fprintf](../stream_manager/fprintf.md), [format](format.md).
+[display](../display_format/display.md), [fprintf](../stream_manager/fprintf.md), [format](../display_format/format.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

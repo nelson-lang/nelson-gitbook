@@ -2,36 +2,37 @@
 
 Detect if a C/C++ compiler is configured.
 
-## Syntax
+## 📝 Syntax
 
 - [status, compiler] = havecompiler()
 
-## Output argument
+## 📤 Output argument
 
 - status - a logical.
 - compiler - a string: 'msvc', 'mingw', 'unix' or ''.
 
-## Description
+## 📄 Description
 
-  <p><b>havecompiler</b> detects if C/C++ compiler is configured for Nelson.</p>
-  <p>On Unix platforms (linux, MacOs), <b>havecompiler</b> returns always <b>true</b> as status and <b>unix</b> as compiler.</p>
+<b>havecompiler</b> detects if C/C++ compiler is configured for Nelson.
 
-## Example
+On Unix platforms (linux, MacOs), <b>havecompiler</b> returns always <b>true</b> as status and <b>unix</b> as compiler.
+
+## 💡 Example
 
 ```matlab
 [status, message] = havecompiler()
 ```
 
-## See also
+## 🔗 See also
 
-[configuremsvc](configuremsvc.md), [configuremingw](configuremingw.md).
+[configuremsvc](../dynamic_link/configuremsvc.md), [configuremingw](../dynamic_link/configuremingw.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,39 +2,39 @@
 
 Inverse hyperbolic cosecant.
 
-## Syntax
+## 📝 Syntax
 
 - res = acsch(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>acsch</b> computes the inverse hyperbolic cosecant for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = acsch(X)
 ```
 
-## See also
+## 🔗 See also
 
-[csch](csch.html), [sinh](sinh.html).
+[csch](../trigonometric/csch.md), [sinh](../trigonometric/sinh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

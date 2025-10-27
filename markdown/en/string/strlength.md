@@ -2,25 +2,26 @@
 
 Length of strings in cell of strings or string array.
 
-## Syntax
+## 📝 Syntax
 
 - len = strlength(ce)
 
-## Input argument
+## 📥 Input argument
 
 - ce - a string, string array or cell of strings.
 
-## Output argument
+## 📤 Output argument
 
 - len - a matrix of integer values: length of strings.
 
-## Description
+## 📄 Description
 
 <b>strlength</b> returns length of strings.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = strlength(str)
 
@@ -29,18 +30,19 @@ k = strlength(A)
 
 B = ["Nel", NaN, "son"; "is", "open", "source"];
 k = strlength(B)
+
 ```
 
-## See also
+## 🔗 See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Checks that value is vector or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeVector(var)
 - mustBeVector(var, 'allow-all-empties')
@@ -10,16 +10,16 @@ Checks that value is vector or raise an error.
 - mustBeVector(var, 'allow-all-empties', argPosition)
 - C++: void mustBeVector(const ArrayOfVector& args, bool allowsAllEmpties, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement isvector methods.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeVector</b> checks that value is vector or raise an error.</p>
+<b>mustBeVector</b> checks that value is vector or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeVector(true)
@@ -28,16 +28,16 @@ mustBeVector([])
 mustBeVector([], 'allows-all-empties')
 ```
 
-## See also
+## 🔗 See also
 
 [isvector](../elementary_functions/isvector.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

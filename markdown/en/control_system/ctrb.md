@@ -2,29 +2,32 @@
 
 Controllability of state-space model.
 
-## Syntax
+## 📝 Syntax
 
 - Co = ctrb(A, B)
 - Co = ctrb(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - State-space model
 - A - State matrix: Nx-by-Nx matrix
 - B - Input-to-state matrix: Nx-by-Nu matrix
 
-## Output argument
+## 📤 Output argument
 
 - Co - Controllability matrix.
 
-## Description
+## 📄 Description
 
-  <p>Controllability in a dynamic system refers to the system's ability to be guided to any desired state within a finite timeframe through the application of suitable control signals.</p>
-  <p>This property is commonly known as reachability.</p>
-  <p>The function <b>ctrb</b> is employed to calculate a controllability matrix, either from state matrices or a state-space model.</p>
-  <p>The resulting matrix serves as a tool to assess and confirm the controllability of the system.</p>
+Controllability in a dynamic system refers to the system's ability to be guided to any desired state within a finite timeframe through the application of suitable control signals.
 
-## Example
+This property is commonly known as reachability.
+
+The function <b>ctrb</b> is employed to calculate a controllability matrix, either from state matrices or a state-space model.
+
+The resulting matrix serves as a tool to assess and confirm the controllability of the system.
+
+## 💡 Example
 
 ```matlab
 A = [1 2; 0 3];
@@ -35,16 +38,16 @@ sys = ss(A, B, C, D);
 Co = ctrb(sys)
 ```
 
-## See also
+## 🔗 See also
 
-[ctrbf](ctrbf.md), [obsv](obsv.md).
+[ctrbf](../control_system/ctrbf.md), [obsv](../control_system/obsv.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

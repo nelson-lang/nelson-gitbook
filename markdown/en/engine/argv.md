@@ -2,35 +2,36 @@
 
 Nelson command line arguments.
 
-## Syntax
+## 📝 Syntax
 
 - args = argv()
 
-## Output argument
+## 📤 Output argument
 
 - args - a cell array of strings.
 
-## Description
+## 📄 Description
 
-  <p><b>argv()</b> returns a cell array of strings containing the arguments of the Nelson command line.</p>
-  <p>The first element of the cell returned contains the path of the launched executable. </p>
+<b>argv()</b> returns a cell array of strings containing the arguments of the Nelson command line.
 
-## Example
+The first element of the cell returned contains the path of the launched executable.
+
+## 💡 Example
 
 ```matlab
 argv()
 ```
 
-## See also
+## 🔗 See also
 
-[executable](executable.md).
+[executable](../engine/executable.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

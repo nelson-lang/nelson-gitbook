@@ -2,23 +2,23 @@
 
 Checks if dynamic system model is single input and single output.
 
-## Syntax
+## 📝 Syntax
 
 - res = issiso(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - a lti model.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if dynamic system model is single input and single output.
 
-## Description
+## 📄 Description
 
-  <p>Checks if dynamic system model is single input and single output.</p>
+Checks if dynamic system model is single input and single output.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -36,16 +36,16 @@ sys = ss(A, B, C, D);
 issiso(sys)
 ```
 
-## See also
+## 🔗 See also
 
-[isdt](isdt.md).
+[isdt](../control_system/isdt.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

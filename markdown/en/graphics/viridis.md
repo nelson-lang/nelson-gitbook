@@ -2,28 +2,28 @@
 
 Viridis colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = viridis
 - c = viridis(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Viridis colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>viridis</b> returns the colormap with viridis colors.</p>
+<b>viridis</b> returns the colormap with viridis colors.
 
-Bibliography
+## 📚 Bibliography
 
 Color map created by Stéfan van der Walt and Nathaniel Smith
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -32,18 +32,18 @@ view(2);
 colormap('viridis');
 ```
 
-<img src="viridis_AB1045AC.svg" align="middle"/>
+<img src="viridis.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

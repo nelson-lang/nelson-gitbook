@@ -2,39 +2,39 @@
 
 Imaginary part of an complex number.
 
-## Syntax
+## 📝 Syntax
 
 - im = imag(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - imaginary part of the elements of the complex array M.
 
-## Description
+## 📄 Description
 
-  <p><b>R = imag(M)</b> Return the imaginary part of M.</p>
+<b>R = imag(M)</b> Return the imaginary part of M.
 
-## Example
+## 💡 Example
 
 ```matlab
 cplx = 22+34*i;
 r = imag(cplx)
 ```
 
-## See also
+## 🔗 See also
 
-[real](real.md).
+[real](../elementary_functions/real.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

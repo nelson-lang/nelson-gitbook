@@ -2,28 +2,28 @@
 
 Evaluates an function on a cell.
 
-## Syntax
+## 📝 Syntax
 
 - R = cellfun(function_name, ce)
 - R = cellfun(function_handle, ce)
 - [R1, ... , Rp] = cellfun(function_handle, ce1, ..., cep)
 - [R1, ... , Rp] = cellfun(function_handle, ce1, ..., cep, name, value)
 
-## Input argument
+## 📥 Input argument
 
 - function_handle - a function handle.
 - ce1, ... , cep - cells with p inputs required for function_handle.
 - name, value pair - 'UniformOutput': true or false, 'ErrorHandler': a error function.
 
-## Output argument
+## 📤 Output argument
 
 - R1, ... , Rp - Outputs from function
 
-## Description
+## 📄 Description
 
-  <p><b>cellfun</b> applies function to each cell elements.</p>
+<b>cellfun</b> applies function to each cell elements.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 greetings = {'Hello', 'Guten Tag', 'Sawadee', 'Bonjour', 'Namaste', ''};
@@ -65,16 +65,16 @@ AgtA = cellfun(R, A, B, 'ErrorHandler', H, 'UniformOutput', true)
 AgtB = cellfun(R, A, B, 'ErrorHandler', H, 'UniformOutput', false)
 ```
 
-## See also
+## 🔗 See also
 
-[cell](cell.md).
+[cell](../data_structures/cell.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

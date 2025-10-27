@@ -2,39 +2,39 @@
 
 Computes the four-quadrant inverse tangent.
 
-## Syntax
+## 📝 Syntax
 
 - res = atan2(y, x)
 
-## Input argument
+## 📥 Input argument
 
 - y - a numeric value (double or single real)
 - x - a numeric value (double or single real)
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>atan2</b> computes the four-quadrant inverse tangent.
 
-## Example
+## 💡 Example
 
 ```matlab
 atan2(1, 0)
 ```
 
-## See also
+## 🔗 See also
 
-[atan](atan.md).
+[atan](../trigonometric_functions/atan.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

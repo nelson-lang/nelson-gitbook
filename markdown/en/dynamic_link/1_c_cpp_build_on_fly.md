@@ -2,14 +2,16 @@
 
 Build C/C++ code on the fly
 
-## Description
+## 📄 Description
 
-  <p>Nelson provides a cross-platform command-line tool written in Nelson for compiling native addon modules for Nelson.</p>
-  <p>It takes away the pain of dealing with the various differences in build platforms.</p>
+Nelson provides a cross-platform command-line tool written in Nelson for compiling native addon modules for Nelson.
 
-## Example
+It takes away the pain of dealing with the various differences in build platforms.
+
+## 💡 Example
 
 ```matlab
+
 if ispc() && ~havecompiler()
 configuremsvc()
 end
@@ -32,20 +34,21 @@ c = dllibinfo(lib)
 f = dlsym(lib, 'functionC', 'double', {'double'});
 R = dlcall(f, 3) % 8 + 3
 dlclose(lib)
+
 ```
 
-<img src="build_c_cpp_on_fly_DE9671CD.png" align="middle"/>
+<img src="build_c_cpp_on_fly.png" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[configuremsvc](configuremsvc.md), [dlgeneratemake](dlgeneratemake.md), [dlmake](dlmake.md), [dlopen](dlopen.md), [dllibinfo](dllibinfo.md), [dlsym](dlsym.md), [dlcall](dlcall.md).
+[configuremsvc](../dynamic_link/configuremsvc.md), [dlgeneratemake](../dynamic_link/dlgeneratemake.md), [dlmake](../dynamic_link/dlmake.md), [dlopen](../dynamic_link/dlopen.md), [dllibinfo](../dynamic_link/dllibinfo.md), [dlsym](../dynamic_link/dlsym.md), [dlcall](../dynamic_link/dlcall.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.2.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

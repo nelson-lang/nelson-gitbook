@@ -2,20 +2,20 @@
 
 Checks if a variable is locked.
 
-## Syntax
+## 📝 Syntax
 
 - state = varislock(scope, variable_name)
 
-## Input argument
+## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
 - variable_name - a string: variable name.
 
-## Description
+## 📄 Description
 
-  <p><b>varislock</b> returns true if <b>variable_name</b> has been declared as locked variable and false otherwise.</p>
+<b>varislock</b> returns true if <b>variable_name</b> has been declared as locked variable and false otherwise.
 
-## Example
+## 💡 Example
 
 ```matlab
 y = 3;
@@ -26,18 +26,19 @@ y = 4
 varunlock('local', 'y')
 varislock('local', 'y')
 y = 4
+
 ```
 
-## See also
+## 🔗 See also
 
-[varlock](varlock.md), [varunlock](varunlock.md).
+[varlock](../memory_manager/varlock.md), [varunlock](../memory_manager/varunlock.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

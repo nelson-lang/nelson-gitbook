@@ -2,23 +2,23 @@
 
 Check for Infinity entries.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isinf(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'isinf'.
 
-## Description
+## 📄 Description
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are Infinity values.</p>
+<b>isnan</b> returns a logical array which is true where elements of M are Infinity values.
 
-## Example
+## 💡 Example
 
 ```matlab
 isnan(pi)
@@ -29,16 +29,16 @@ X = sparse([1 2 NaN 3 0 Inf 0 4]);
 R = isinf(X)
 ```
 
-## See also
+## 🔗 See also
 
-[isnan](isnan.md).
+[isnan](../elementary_functions/isnan.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

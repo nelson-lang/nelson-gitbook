@@ -2,24 +2,24 @@
 
 Subscripted reference.
 
-## Syntax
+## 📝 Syntax
 
 - B = subsref(A, S)
 
-## Input argument
+## 📥 Input argument
 
 - A - Indexed object array
 - B - Indexing structure
 
-## Output argument
+## 📤 Output argument
 
 - B - Result of indexing expression
 
-## Description
+## 📄 Description
 
-  <p><b>B = subsref(A, S)</b> is invoked when using the syntax <b>A(i)</b>, <b>A{i}</b>, or <b>A.i</b> with an object <b>A</b>.</p>
+<b>B = subsref(A, S)</b> is invoked when using the syntax <b>A(i)</b>, <b>A{i}</b>, or <b>A.i</b> with an object <b>A</b>.
 
-## Examples
+## 💡 Examples
 
 Parentheses Indexing
 
@@ -50,12 +50,12 @@ S.subs = 'number';
 R = subsref(A, S)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

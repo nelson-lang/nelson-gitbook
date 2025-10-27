@@ -2,39 +2,39 @@
 
 Checks that value is greater than or equal to another value or issue error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeGreaterThanOrEqual(var, c)
 - mustBeGreaterThanOrEqual(var, c, argPosition)
 - C++: void mustBeGreaterThanOrEqual(const ArrayOfVector& args, const ArrayOf &c, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: logical or numeric array.
 - c - a variable: scalar numeric value.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeGreaterThanOrEqual</b> checks that value is greater than or equal to another value or issue error.</p>
+<b>mustBeGreaterThanOrEqual</b> checks that value is greater than or equal to another value or issue error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeGreaterThanOrEqual(1, 0)
 mustBeGreaterThanOrEqual([2 3 4],5)
 ```
 
-## See also
+## 🔗 See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

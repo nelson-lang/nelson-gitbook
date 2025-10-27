@@ -2,39 +2,39 @@
 
 Return a function handle constructed from a string.
 
-## Syntax
+## 📝 Syntax
 
 - func_handle = str2func(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string.
 
-## Output argument
+## 📤 Output argument
 
 - func_handle - a function handle
 
-## Description
+## 📄 Description
 
-  <p><b>func_handle = str2func(str)</b> returns a function handle constructed from the string <b>str</b>.</p>
+<b>func_handle = str2func(str)</b> returns a function handle constructed from the string <b>str</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 fh = str2func('cos')
 class(fh)
 ```
 
-## See also
+## 🔗 See also
 
-[func2str](func2str.md), [isfunction_handle](isfunction_handle.md).
+[func2str](../function_handle/func2str.md), [isfunction_handle](../function_handle/isfunction_handle.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

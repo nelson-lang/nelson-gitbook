@@ -2,39 +2,39 @@
 
 Checks that value is less than another value or issue error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeLessThan(var, c)
 - mustBeLessThan(var, c, argPosition)
 - C++: void mustBeLessThan(const ArrayOfVector& args, const ArrayOf &c, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: logical or numeric array.
 - c - a variable: scalar numeric value.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeLessThan</b> checks that value is less than another value or issue error.</p>
+<b>mustBeLessThan</b> checks that value is less than another value or issue error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeLessThan(1, 0)
 mustBeLessThan(1, 2)
 ```
 
-## See also
+## 🔗 See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

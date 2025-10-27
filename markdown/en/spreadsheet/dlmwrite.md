@@ -2,7 +2,7 @@
 
 Write an numeric matrix to a text file file using a delimiter.
 
-## Syntax
+## 📝 Syntax
 
 - dlmwrite(filename, M)
 - dlmwrite(filename, M, delimiter)
@@ -15,7 +15,7 @@ Write an numeric matrix to a text file file using a delimiter.
 - dlmwrite(filename, M, delimiter, r, c, eol, precision)
 - dlmwrite(filename, M, '-append', delimiter, r, c, eol, precision)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: filename destination.
 - M - an numeric or logical matrix.
@@ -24,11 +24,11 @@ Write an numeric matrix to a text file file using a delimiter.
 - eol - a string: 'pc' or 'unix'.
 - precision - a integer or C format string. (default: 5)
 
-## Description
+## 📄 Description
 
-  <p><b>dlmwrite</b> writes an numeric matrix to an ASCII format file.</p>
+<b>dlmwrite</b> writes an numeric matrix to an ASCII format file.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [Inf, -Inf, NaN, 3];
@@ -38,18 +38,19 @@ R = dlmread(filename)
 A = eye(3, 2);
 dlmwrite(filename, A, ';', 4, 5);
 R = fileread(filename)
+
 ```
 
-## See also
+## 🔗 See also
 
-[dlmread](dlmread.md), [fileread](../stream_manager/fileread.md).
+[dlmread](../spreadsheet/dlmread.md), [fileread](../stream_manager/fileread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

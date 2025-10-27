@@ -2,25 +2,25 @@
 
 Subtraction, - operator
 
-## Syntax
+## 📝 Syntax
 
 - C = minus(A, B)
 - C = A - B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A - B
 
-## Description
+## 📄 Description
 
-  <p><b>C = minus(A, B)</b> performs subtraction A - B variables.</p>
+<b>C = minus(A, B)</b> performs subtraction A - B variables.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 minus(3, 4)
@@ -36,16 +36,16 @@ minus([1, 2], 1)
 ones(0, 0) - 1
 ```
 
-## See also
+## 🔗 See also
 
-[plus](plus.md), [uminus](uminus.md).
+[plus](../operators/plus.md), [uminus](../operators/uminus.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,29 +2,36 @@
 
 Get memory information.
 
-## Syntax
+## 📝 Syntax
 
 - memory
 - usermem = memory()
 - [usermem, systemmem] = memory()
 
-## Output argument
+## 📤 Output argument
 
 - usermem - Get information about user memory (an struct).
 - systemmem - Get information about system memory (an struct)
 
-## Description
+## 📄 Description
 
-  <p><b>memory</b> get memory information.</p>
-  <p><b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).</p>
-  <p><b>System Memory</b>:</p>
-  <p>VirtualAddressSpace.Available: available swap file space</p>
-  <p>VirtualAddressSpace.Total: total swap file space</p>
-  <p>SystemMemory.Available: available system memory</p>
-  <p>PhysicalMemory.Available: available physical memory</p>
-  <p>PhysicalMemory.Total: total physical memory</p>
+<b>memory</b> get memory information.
 
-## Examples
+<b>User Memory</b>: returns Maximum Possible Array (MaxPossibleArrayBytes), Memory Available for All Arrays (MemAvailableAllArrays), Memory Used By Nelson (MemUsedNelson).
+
+<b>System Memory</b>:
+
+VirtualAddressSpace.Available: available swap file space
+
+VirtualAddressSpace.Total: total swap file space
+
+SystemMemory.Available: available system memory
+
+PhysicalMemory.Available: available physical memory
+
+PhysicalMemory.Total: total physical memory
+
+## 💡 Examples
 
 ```matlab
 memory()
@@ -47,16 +54,16 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 [u1, s1] = memory()
 ```
 
-## See also
+## 🔗 See also
 
-[clear](clear.md), [who](who.md).
+[clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

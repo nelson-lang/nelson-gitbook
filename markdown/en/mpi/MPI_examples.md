@@ -1,14 +1,12 @@
-# MPI examples
-
-MPI examples
+#
 
 Some Nelson MPI examples.
 
-## Description
+## 📄 Description
 
-  <p>See below for some basic examples about MPI interfaces available in Nelson.</p>
+See below for some basic examples about MPI interfaces available in Nelson.
 
-## Examples
+## 💡 Examples
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 
@@ -28,12 +26,12 @@ mpiexec([modulepath('mpi'), '/examples/MPI_parallel_sum.m'], 40)
 edit([modulepath('mpi'), '/examples/MPI_parallel_sum.m'])
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Return true if variable var is a string array.
 
-## Syntax
+## 📝 Syntax
 
 - res = isstring(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isstring</b> returns a logical 1 if the argument is a string array and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -35,16 +35,16 @@ C = [1 ; 3];
 res = isstring(C)
 ```
 
-## See also
+## 🔗 See also
 
-[class](class.md), [string](../string/string.md), [ischar](ischar.md).
+[class](../types/class.md), [string](../string/string.md), [ischar](../types/ischar.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

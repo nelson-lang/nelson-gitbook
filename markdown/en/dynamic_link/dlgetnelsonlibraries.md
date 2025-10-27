@@ -2,20 +2,21 @@
 
 Returns paths to Nelson library files.
 
-## Syntax
+## 📝 Syntax
 
 - C = dlgetnelsonlibraries()
 
-## Output argument
+## 📤 Output argument
 
 - C - a cell array of paths to various library directories used by Nelson modules
 
-## Description
+## 📄 Description
 
-  <p><b>C = dlgetnelsonlibraries()</b> returns a cell array of paths to various library directories used by Nelson modules.</p>
-  <p>These paths are used internally for module development and building processes.</p>
+<b>C = dlgetnelsonlibraries()</b> returns a cell array of paths to various library directories used by Nelson modules.
 
-## Example
+These paths are used internally for module development and building processes.
+
+## 💡 Example
 
 See module skeleton for example
 
@@ -23,16 +24,16 @@ See module skeleton for example
 dlgetnelsonlibraries()
 ```
 
-## See also
+## 🔗 See also
 
-[dlgetnelsonincludes](dlgetnelsonincludes.md), [dlgeneratemake](dlgeneratemake.md).
+[dlgetnelsonincludes](../dynamic_link/dlgetnelsonincludes.md), [dlgeneratemake](../dynamic_link/dlgeneratemake.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

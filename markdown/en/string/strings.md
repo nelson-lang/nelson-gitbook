@@ -2,7 +2,7 @@
 
 Create string array without characters.
 
-## Syntax
+## 📝 Syntax
 
 - C = strings()
 - C = strings(m)
@@ -10,20 +10,20 @@ Create string array without characters.
 - C = strings(m, n, ... , p)
 - C = strings(sz)
 
-## Input argument
+## 📥 Input argument
 
 - m, n, ... , p - dimensions of the string array to create.
 - sz - a vector of integer values (dimensions of the cell to create).
 
-## Output argument
+## 📤 Output argument
 
 - C - a string array
 
-## Description
+## 📄 Description
 
-  <p><b>strings</b> returns a cell array of empty matrices.</p>
+<b>strings</b> returns a cell array of empty matrices.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(2, 4);
@@ -31,16 +31,16 @@ sz = size(A)
 C = strings(sz)
 ```
 
-## See also
+## 🔗 See also
 
 [cell](../data_structures/cell.md), [isstring](../types/isstring.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

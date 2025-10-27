@@ -2,23 +2,23 @@
 
 Check for finite entries.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isfinite(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'isfinite'.
 
-## Description
+## 📄 Description
 
-  <p><b>isfinite</b> returns a logical array which is true where elements of M are finite values.</p>
+<b>isfinite</b> returns a logical array which is true where elements of M are finite values.
 
-## Example
+## 💡 Example
 
 ```matlab
 isfinite(pi)
@@ -29,16 +29,16 @@ X = sparse([1 2 NaN 3 0 Inf 0 4]);
 R = isfinite(X)
 ```
 
-## See also
+## 🔗 See also
 
-[isnan](isnan.md), [isinf](isinf.md), [allfinite](allfinite.md).
+[isnan](../elementary_functions/isnan.md), [isinf](../elementary_functions/isinf.md), [allfinite](../elementary_functions/allfinite.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

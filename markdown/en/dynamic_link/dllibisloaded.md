@@ -2,44 +2,47 @@
 
 Checks if shared library is loaded.
 
-## Syntax
+## 📝 Syntax
 
 - tf = dllibisloaded(libraryname)
 - [tf, lib] = dllibisloaded(libraryname)
 
-## Input argument
+## 📥 Input argument
 
 - libraryname - a string: dynamic library name.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true if library is already loaded.
 - lib - a dllib handle: library already loaded.
 
-## Description
+## 📄 Description
 
-  <p><b>dllibisloaded</b> returns if share library is already loaded.</p>
+<b>dllibisloaded</b> returns if share library is already loaded.
 
-## Example
+## 💡 Example
 
 ```matlab
-path_1 = modulepath('dynamic_link', 'builtin');
+
+		path_1 = modulepath('dynamic_link', 'builtin');
 r = dllibisloaded(path_1)
 lib1 = dlopen(path_1);
 [r, lib2] = dllibisloaded(path_1)
 isequal(lib1, lib2)
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[dlopen](dlopen.md).
+[dlopen](../dynamic_link/dlopen.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

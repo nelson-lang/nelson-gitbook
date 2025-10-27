@@ -2,7 +2,7 @@
 
 Invariant zeros of linear system.
 
-## Syntax
+## 📝 Syntax
 
 - z = tzero(sys)
 - z = tzero(A, B, C, D)
@@ -11,7 +11,7 @@ Invariant zeros of linear system.
 - [z, nrank] = tzero(A, B, C, D)
 - [z, nrank] = tzero(A, B, C, D, E)
 
-## Input argument
+## 📥 Input argument
 
 - sys - a LTI model.
 - A - State matrix: Nx-by-Nx matrix.
@@ -20,17 +20,18 @@ Invariant zeros of linear system.
 - D - Feedthrough matrix: Ny-by-Nu matrix.
 - E - Nx-by-Nx matrix.
 
-## Output argument
+## 📤 Output argument
 
 - Z - Invariant zeros: column vector.
 - nrank - Normal rank: positive integer.
 
-## Description
+## 📄 Description
 
-  <p><b>tzero</b> function is employed to extract the invariant zeros of a Multiple Input, Multiple Output (MIMO) dynamic system described by the system model <b>sys</b>.</p>
-  <p>In cases where <b>sys</b> is a minimal realization, these invariant zeros coincide with the transmission zeros of the system.</p>
+<b>tzero</b> function is employed to extract the invariant zeros of a Multiple Input, Multiple Output (MIMO) dynamic system described by the system model <b>sys</b>.
 
-## Example
+In cases where <b>sys</b> is a minimal realization, these invariant zeros coincide with the transmission zeros of the system.
+
+## 💡 Example
 
 ```matlab
 A = [1 2; 3 4];
@@ -42,16 +43,16 @@ z = tzero(sys)
 [z, nrank] = tzero(sys)
 ```
 
-## See also
+## 🔗 See also
 
-[append](append.md).
+[append](../control_system/append.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

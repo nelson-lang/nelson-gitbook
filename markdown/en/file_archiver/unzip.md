@@ -2,41 +2,41 @@
 
 Decompress zip file.
 
-## Syntax
+## 📝 Syntax
 
 - res = unzip(zipname)
 - res = unzip(zipname, rootdir)
 
-## Input argument
+## 📥 Input argument
 
 - zipname - a string: zip archive filename.
 - rootdir - a character vector or string scalar: root path for the files to decompress.
 
-## Output argument
+## 📤 Output argument
 
 - res - a cell array of character vectors containing the names of the files decompressed.
 
-## Description
+## 📄 Description
 
-  <p><b>unzip</b> extracts archived contents. Timestamps and attributes are preserved for each file.</p>
+<b>unzip</b> extracts archived contents. Timestamps and attributes are preserved for each file.
 
-## Example
+## 💡 Example
 
 ```matlab
 zip([tempdir(), 'test.zip'], [nelsonroot(), '/module_skeleton']);
 r = unzip([tempdir(), 'test.zip'], [tempdir(), createGUID()])
 ```
 
-## See also
+## 🔗 See also
 
-[zip](zip.md).
+[zip](../file_archiver/zip.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,28 @@
 
 Returns the number of output arguments.
 
-## Syntax
+## 📝 Syntax
 
 - R = nargout()
 - R = nargout(function_name)
 - R = nargout(function_handle)
 
-## Input argument
+## 📥 Input argument
 
 - function_name - a string: function name
 - function_handle - a function handle
 
-## Output argument
+## 📤 Output argument
 
 - R - an integer value: number of output argument
 
-## Description
+## 📄 Description
 
-  <p><b>nargout</b> returns the number of output arguments of an function.</p>
-  <p>If the last output argument of the function  is <b>varargout</b> the returned value is negative.</p>
+<b>nargout</b> returns the number of output arguments of an function.
 
-## Examples
+If the last output argument of the function is <b>varargout</b> the returned value is negative.
+
+## 💡 Examples
 
 With an macro function:
 
@@ -36,16 +37,16 @@ With an builtin function:
 nargout('cos')
 ```
 
-## See also
+## 🔗 See also
 
-[nargin](nargin.md).
+[nargin](../core/nargin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

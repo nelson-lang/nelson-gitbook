@@ -2,19 +2,19 @@
 
 Returns last recorded formatted error message.
 
-## Syntax
+## 📝 Syntax
 
 - messageText = getLastReport()
 
-## Output argument
+## 📤 Output argument
 
 - messageText - a character vector: formatted error message.
 
-## Description
+## 📄 Description
 
-  <p><b>getLastReport</b> returns last formatted error message.</p>
+<b>getLastReport</b> returns last formatted error message.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 lasterror('reset')
@@ -25,18 +25,19 @@ getLastReport()
 state = execstr('xxxxxx', 'errcatch')
 l = lasterror()
 getLastReport
+
 ```
 
-## See also
+## 🔗 See also
 
-[lasterror](lasterror.md), [error](error.md).
+[lasterror](../error_manager/lasterror.md), [error](../error_manager/error.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

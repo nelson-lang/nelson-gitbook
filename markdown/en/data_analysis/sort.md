@@ -2,7 +2,7 @@
 
 Sort array elements by quick sort algorithm.
 
-## Syntax
+## 📝 Syntax
 
 - B = sort(A)
 - B = sort(A, dim)
@@ -10,34 +10,37 @@ Sort array elements by quick sort algorithm.
 - B = sort(..., name, value)
 - [B, I] = sort(...)
 
-## Input argument
+## 📥 Input argument
 
 - A - an nelson's variable (double, single, int8, int16, int32, int64, uint8, uint16, uint32, uint64, logical, char, string, cell).
 - dim - Dimension to operate along: positive integer scalar.
 - direction - Sorting direction: 'ascend' (default) or 'descend'.
 - name, value - name-value pair arguments.
 
-## Output argument
+## 📤 Output argument
 
 - B - sorted array.
 - I - sort index.
 
-## Description
+## 📄 Description
 
-  <p><b>sort</b> implements quick sort algorithm.</p>
-  <p>name-value pair arguments:</p>
-  <p><b>'MissingPlacement'</b> - Placement of missing values: <b>'auto'</b> (default), <b>'first'</b>, <b>'last'</b>.</p>
-  <p><b>'ComparisonMethod'</b> - Element comparison method: <b>'auto'</b> (default), <b>'real'</b>, <b>'abs'</b>.</p>
+<b>sort</b> implements quick sort algorithm.
 
-Used function(s)
+name-value pair arguments:
+
+<b>'MissingPlacement'</b> - Placement of missing values: <b>'auto'</b> (default), <b>'first'</b>, <b>'last'</b>.
+
+<b>'ComparisonMethod'</b> - Element comparison method: <b>'auto'</b> (default), <b>'real'</b>, <b>'abs'</b>.
+
+## Used function(s)
 
 qsort (stl)
 
-Bibliography
+## 📚 Bibliography
 
 Quick sort algorithm from Bentley and McIlroy's "Engineering a Sort Function". Software - Practice and Experience
 
-## Examples
+## 💡 Examples
 
 ComparisonMethod
 
@@ -46,6 +49,7 @@ A = [10+20i 30+i 10i 0 -10i];
 B = sort(A,'ComparisonMethod', 'auto')
 B = sort(A, 'ComparisonMethod', 'real')
 B = sort(A, 'ComparisonMethod', 'abs')
+
 ```
 
 MissingPlacement
@@ -55,18 +59,19 @@ A = [NaN 3 6 0 NaN];
 [B, I] = sort(A, 'MissingPlacement', 'auto')
 [B, I] = sort(A, 'MissingPlacement', 'first')
 [B, I] = sort(A, 'MissingPlacement', 'last')
+
 ```
 
-## See also
+## 🔗 See also
 
-[issorted](issorted.md), [unique](unique.md).
+[issorted](../data_analysis/issorted.md), [unique](../data_analysis/unique.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

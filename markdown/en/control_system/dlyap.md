@@ -2,24 +2,24 @@
 
 Discrete-time Lyapunov equations.
 
-## Syntax
+## 📝 Syntax
 
 - X = dlyap(A, Q)
 
-## Input argument
+## 📥 Input argument
 
 - A - real matrix
 - Q - real matrix
 
-## Output argument
+## 📤 Output argument
 
 - X - matrix: solution of the discrete-time Lyapunov equation.
 
-## Description
+## 📄 Description
 
-  <p><b>X = dlyap(A, Q)</b> resolves the Discrete-time Lyapunov equation.</p>
+<b>X = dlyap(A, Q)</b> resolves the Discrete-time Lyapunov equation.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [10, 20; -30, -40];
@@ -27,16 +27,16 @@ Q = [30, 10; 10, 10];
 X = dlyap (A, Q)
 ```
 
-## See also
+## 🔗 See also
 
-[lyap](lyap.md).
+[lyap](../control_system/lyap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

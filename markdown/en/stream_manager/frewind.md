@@ -2,21 +2,22 @@
 
 Set position of stream to the beginning.
 
-## Syntax
+## 📝 Syntax
 
 - frewind(fid)
 
-## Input argument
+## 📥 Input argument
 
 - fid - an integer value: file descriptor
 
-## Description
+## 📄 Description
 
-  <p><b>frewind</b> puts the pointer at the beginning of file</p>
+<b>frewind</b> puts the pointer at the beginning of file
 
-## Example
+## 💡 Example
 
 ```matlab
+
 fileID = fopen([tempdir(), 'frewind.txt'],'wt');
 fprintf(fileID, 'son is beautiful.');
 frewind(fileID);
@@ -25,16 +26,16 @@ fclose(fileID);
 R = fileread([tempdir(), 'frewind.txt'])
 ```
 
-## See also
+## 🔗 See also
 
-[fclose](fclose.md).
+[fclose](../stream_manager/fclose.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

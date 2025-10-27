@@ -2,15 +2,15 @@
 
 Restore Nelson’s path to its initial state at startup.
 
-## Syntax
+## 📝 Syntax
 
 - restoredefaultpath
 
-## Description
+## 📄 Description
 
-  <p><b>restoredefaultpath</b> restores Nelson's search path to its startup state.</p>
+<b>restoredefaultpath</b> restores Nelson's search path to its startup state.
 
-## Example
+## 💡 Example
 
 ```matlab
 path
@@ -20,16 +20,16 @@ restoredefaultpath
 path
 ```
 
-## See also
+## 🔗 See also
 
-[rmpath](rmpath.md), [addpath](addpath.md), [path](path.md).
+[rmpath](../functions_manager/rmpath.md), [addpath](../functions_manager/addpath.md), [path](../functions_manager/path.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

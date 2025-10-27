@@ -2,28 +2,29 @@
 
 Find a string in another.
 
-## Syntax
+## 📝 Syntax
 
 - occ = strfind(str, pattern)
 - occ = strfind(str, pattern,'ForceCellOutput', ouput)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string or cell of strings.
 - pattern - a string to find.
 - output - a logical.
 
-## Output argument
+## 📤 Output argument
 
 - occ - a cell or matrix of integer values: occurences position.
 
-## Description
+## 📄 Description
 
-<b>strfind</b> find a string in another.
+<b>strfind</b> finds a string in another.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = strfind (str, 'in')
 k= strfind(str, ' ')
@@ -35,18 +36,19 @@ k = strfind(A, 'o')
 str = 'No pain no gain.';
 k = strfind(str,'in','ForceCellOutput',true)
 k = strfind(str,'in','ForceCellOutput',false)
+
 ```
 
-## See also
+## 🔗 See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

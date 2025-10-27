@@ -2,39 +2,39 @@
 
 Checks if model is static or dynamic.
 
-## Syntax
+## 📝 Syntax
 
-- res = isdt(sys)
+- res = isstatic(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - a lti model.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if model is static.
 
-## Description
+## 📄 Description
 
-  <p>Checks if model is static.</p>
+Checks if model is static.
 
-## Example
+## 💡 Example
 
 ```matlab
 sys = tf(magic(3));
 isstatic(sys)
 ```
 
-## See also
+## 🔗 See also
 
-[isct](isct.md).
+[isct](../control_system/isct.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

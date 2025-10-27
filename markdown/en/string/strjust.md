@@ -2,25 +2,25 @@
 
 Justify strings
 
-## Syntax
+## 📝 Syntax
 
 - J = strjust(str)
 - J = strjust(str, side)
 
-## Input argument
+## 📥 Input argument
 
 - str - characters vector, cell of characters or string array.
 - side - 'left', 'center', 'right' (default).
 
-## Output argument
+## 📤 Output argument
 
 - J - justified text
 
-## Description
+## 📄 Description
 
-  <p><b>J = strjust(str, side)</b> returns the text that is justified on the side specified by <b>side</b>.</p>
+<b>J = strjust(str, side)</b> returns the text that is justified on the side specified by <b>side</b>.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 S = ["a"; "ab"; "abc"; "abcd"];
@@ -34,16 +34,16 @@ J = strjust (S, 'right')
 J = strjust('                 text', 'center')
 ```
 
-## See also
+## 🔗 See also
 
-[blanks](blanks.md).
+[blanks](../string/blanks.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Git repository tool for Nelson
 
-## Syntax
+## 📝 Syntax
 
 - repo('clone', url, branch, destination)
 - repo('clone', url, destination)
@@ -21,7 +21,7 @@ Git repository tool for Nelson
 - repo('remove_branch', destination, branch)
 - current_branch = repo('current_branch', destination)
 
-## Input argument
+## 📥 Input argument
 
 - url - a string: URL to a git repository.
 - branch - a string: branch name.
@@ -30,32 +30,39 @@ Git repository tool for Nelson
 - username - a string: username used if an authentification is required.
 - password - a string: password used if an authentification is required.
 
-## Output argument
+## 📤 Output argument
 
 - ce - a cell: list of tags or branchs.
 - st - a structure: contains log information.
 - current_branch - a string: name of current branch.
 
-## Description
+## 📄 Description
 
-  <p><b>repo()</b> allows to clone, checkout, fetch a git repository.</p>
-  <p>checkout command will be forced and remove untracked filed.</p>
-  <p>git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.</p>
-  <p>report('export', ...) clone and remove .git directory.</p>
-  <p/>
-  <p>Tips:</p>
-  <p/>
-  <p>If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.</p>
-  <p>You don't have some  ssh or https redirection.</p>
-  <p>Remove entries:</p>
-  <p>[url "git@github.com:"]</p>
-  <p>  insteadOf = https://github.com/</p>
+<b>repo()</b> allows to clone, checkout, fetch a git repository.
 
-Used function(s)
+checkout command will be forced and remove untracked filed.
+
+git https protocol works on all platforms. git ssh protocol works currently on macos and linux platforms.
+
+report('export', ...) clone and remove .git directory.
+
+Tips:
+
+If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.
+
+You don't have some ssh or https redirection.
+
+Remove entries:
+
+[url "git@github.com:"]
+
+insteadOf = https://github.com/
+
+## Used function(s)
 
 libgit2 (https://libgit2.org/)
 
-## Example
+## 💡 Example
 
 ```matlab
 url = 'https://github.com/nelson-lang/module_skeleton.git';
@@ -69,18 +76,19 @@ repo('tag', destination)
 repo('branch', destination)
 repo('current_branch', destination)
 repo('log', destination)
+
 ```
 
-## See also
+## 🔗 See also
 
-[webread](webread.md).
+[webread](../webtools/webread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

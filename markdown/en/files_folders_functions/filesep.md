@@ -2,34 +2,34 @@
 
 Return the file separator character for the current platform.
 
-## Syntax
+## 📝 Syntax
 
 - res = filesep()
 
-## Output argument
+## 📤 Output argument
 
 - res - a string: '/' or '\'
 
-## Description
+## 📄 Description
 
 <b>pathsep</b> returns '\' on Windows and '/' on others platforms.
 
-## Example
+## 💡 Example
 
 ```matlab
-A = filesep
+ runnable="cli"A = filesep
 ```
 
-## See also
+## 🔗 See also
 
-[pathsep](pathsep.md).
+[pathsep](../files_folders_functions/pathsep.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

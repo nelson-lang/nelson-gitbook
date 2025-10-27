@@ -2,41 +2,41 @@
 
 Rank of matrix.
 
-## Syntax
+## 📝 Syntax
 
 - r = rank(A)
 - r = rank(A, tol)
 
-## Input argument
+## 📥 Input argument
 
 - A - matrix: double or single
 - tol - tolerance
 
-## Output argument
+## 📤 Output argument
 
 - r - a numeric value: a scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).</p>
+<b>rank(A)</b> returns the number of linearly independent columns in a matrix (rank of the matrix).
 
-## Example
+## 💡 Example
 
 ```matlab
 X = rand(10, 10);
 r = rank(X)
 ```
 
-## See also
+## 🔗 See also
 
-[svd](svd.md).
+[svd](../linear_algebra/svd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

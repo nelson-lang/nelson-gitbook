@@ -2,34 +2,31 @@
 
 Broadcasts a message from the process with rank "root" to all other processes of the communicator
 
-## Syntax
+## 📝 Syntax
 
 - A = MPI_Bcast(A, Root)
 - A = MPI_Bcast(A, Root, Comm)
 
-## Input argument
+## 📥 Input argument
 
 - A - a nelson variable.
 - Root - a integer value: rank of broadcast root.
 - Comm - a MPI_Comm object.
 
-## Output argument
+## 📤 Output argument
 
 - A - broadcasted array.
 
-## Description
+## 📄 Description
 
-  <p>This function is used to broadcast an array to all group members.</p>
+This function is used to broadcast an array to all group members.
 
-## See also
-
-[MPI_Barrier](MPI_Barrier.md).
-
-## Example
+## 💡 Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Bcast.m'], 4)
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -47,14 +44,19 @@ disp(['rank: ', int2str(my_rank), ': after Bcast, buff is ', int2str(buff)])
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Barrier](../mpi/MPI_Barrier.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

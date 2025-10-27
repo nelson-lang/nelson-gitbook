@@ -2,41 +2,41 @@
 
 Matrix power, ^ operator
 
-## Syntax
+## 📝 Syntax
 
 - C = mpower(A, B)
 - C = A ^ B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A^B
 
-## Description
+## 📄 Description
 
-  <p><b>C = mpower(A, B)</b> performs matrix power operation: A^B</p>
+<b>C = mpower(A, B)</b> performs matrix power operation: A^B
 
-## Example
+## 💡 Example
 
 ```matlab
 mpower(3, 4)
 3^4
 ```
 
-## See also
+## 🔗 See also
 
-[power](power.md).
+[power](../operators/power.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

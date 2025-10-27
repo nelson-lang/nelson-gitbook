@@ -2,24 +2,24 @@
 
 Array elements that are members of another array.
 
-## Syntax
+## 📝 Syntax
 
 - T = ismember(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - T - result of ismember.
 
-## Description
+## 📄 Description
 
-  <p><b>T = ismember(A, B)</b> returns an array of logical where the data in <b>A</b> is found in <b>B</b>.</p>
+<b>T = ismember(A, B)</b> returns an array of logical where the data in <b>A</b> is found in <b>B</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [50 30 40 20];
@@ -27,18 +27,20 @@ B = [20 40 40 40 60 80];
 T = ismember(A, B)
 
 T = ismember(["a","b","f"], ["b", "f", "c"])
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[sort](sort.html).
+[sort](../operators/sort.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

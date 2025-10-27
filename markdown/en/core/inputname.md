@@ -2,24 +2,25 @@
 
 Get variable name of function input.
 
-## Syntax
+## 📝 Syntax
 
 - s = inputname(argNumber)
 
-## Input argument
+## 📥 Input argument
 
 - argNumber - a scalar, real, positive integer value: Number of function input argument
 
-## Output argument
+## 📤 Output argument
 
 - s - character vector: variable name
 
-## Description
+## 📄 Description
 
-  <p><b>inputname</b> get variable name of function input.</p>
-  <p><b>inputname</b> is only useable within a function</p>
+<b>inputname</b> get variable name of function input.
 
-## Example
+<b>inputname</b> is only useable within a function
+
+## 💡 Example
 
 ```matlab
 function R = getinputname(varargin)
@@ -30,16 +31,16 @@ function R = getinputname(varargin)
 end
 ```
 
-## See also
+## 🔗 See also
 
-[nargin](nargin.md).
+[nargin](../core/nargin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

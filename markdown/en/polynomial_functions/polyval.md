@@ -2,41 +2,42 @@
 
 Polynomial evaluation.
 
-## Syntax
+## 📝 Syntax
 
 - y = polyval(p, x)
 
-## Input argument
+## 📥 Input argument
 
 - p - vector: polynomial coefficients
 - x - query points
 
-## Output argument
+## 📤 Output argument
 
 - y - vector: Function values
 
-## Description
+## 📄 Description
 
-  <p><b>polyval</b> evaluates polynomial at several points.</p>
+<b>polyval</b> evaluates polynomial at several points.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 p = [3 2 1];
 x = [5 7 9];
 R = polyval(p, x)
 ```
 
-## See also
+## 🔗 See also
 
-[polyvalm](polyvalm.md).
+[polyvalm](../polynomial_functions/polyvalm.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

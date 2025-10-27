@@ -2,23 +2,23 @@
 
 Check for the existence of a builtin.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isbuiltin(name)
 
-## Input argument
+## 📥 Input argument
 
 - name - a string: builtin name.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true if builtin exists.
 
-## Description
+## 📄 Description
 
-  <p><b>isbuiltin</b> checks for the existence of a builtin.</p>
+<b>isbuiltin</b> checks for the existence of a builtin.
 
-## Example
+## 💡 Example
 
 ```matlab
 isbuiltin('isbuiltin')
@@ -26,16 +26,16 @@ isbuiltin('exist')
 ismacro('exist')
 ```
 
-## See also
+## 🔗 See also
 
-[ismacro](ismacro.md).
+[ismacro](../functions_manager/ismacro.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,23 @@
 
 Determines the rank of the calling process in the communicator.
 
-## Syntax
+## 📝 Syntax
 
 - r = MPI_Comm_rank(Comm)
 
-## Input argument
+## 📥 Input argument
 
 - Comm - a MPI_Comm object.
 
-## Output argument
+## 📤 Output argument
 
 - r - an integer value: rank of the calling process in the group of Comm.
 
-## Description
+## 📄 Description
 
-  <p>Return the rank of the calling process in the specified communicator.</p>
+Return the rank of the calling process in the specified communicator.
 
-## See also
-
-[MPI_Comm_size](MPI_Comm_size.md).
-
-## Example
+## 💡 Example
 
 mpiexec([modulepath('mpi'), '/examples/MPI_helloworld.m'], 4)
 
@@ -52,12 +48,16 @@ if MPI_Initialized()
 end
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Comm_size](../mpi/MPI_Comm_size.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

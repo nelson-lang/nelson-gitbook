@@ -2,25 +2,25 @@
 
 Redefine subscripted assignment.
 
-## Syntax
+## 📝 Syntax
 
 - B = subsasgn(A, S, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - Object used in indexing operation
 - S - Structure with two fields: 'type' and 'subs'.
 - B - The assigned value, located on the right side of the assignment statement.
 
-## Output argument
+## 📤 Output argument
 
 - R - The outcome of the assignment statement is the object that has been modified, and this modified object is provided as the first argument.
 
-## Description
+## 📄 Description
 
-  <p><b>B = subsasgn(A, S, B)</b> assigns a value to an element of a cell or matrix.</p>
+<b>B = subsasgn(A, S, B)</b> assigns a value to an element of a cell or matrix.
 
-## Example
+## 💡 Example
 
 Parentheses Indexing
 
@@ -30,16 +30,16 @@ S = substruct('{}', {1, 3});
 R2 = subsasgn(R1, S, 'Hello')
 ```
 
-## See also
+## 🔗 See also
 
 [substruct](../elementary_functions/substruct.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

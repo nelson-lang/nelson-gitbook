@@ -2,34 +2,34 @@
 
 Return true if Nelson started with --quiet option.
 
-## Syntax
+## 📝 Syntax
 
 - res = isquietmode()
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical true or false
 
-## Description
+## 📄 Description
 
-  <p><b>isquietmode</b> returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.</p>
+<b>isquietmode</b> returns a logical 1 if Nelson started with --quiet option and a logical 0 otherwise.
 
-## Example
+## 💡 Example
 
 ```matlab
 disp(isquietmode());
 ```
 
-## See also
+## 🔗 See also
 
-[executable](executable.md).
+[executable](../engine/executable.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

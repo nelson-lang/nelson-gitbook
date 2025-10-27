@@ -2,7 +2,7 @@
 
 Maximum elements of an array.
 
-## Syntax
+## 📝 Syntax
 
 - M = max(A)
 - [M, I] = max(A)
@@ -17,7 +17,7 @@ Maximum elements of an array.
 - C = max(A, B, 'omitnan')
 - C = max(A, B, 'includenan')
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - dim - a positive integer scalar (Dimension to operate along)
@@ -25,20 +25,23 @@ Maximum elements of an array.
 - 'includenan' - include the NaN values.
 - 'all' - it finds the maximum over all elements.
 
-## Output argument
+## 📤 Output argument
 
 - M - Maximum values of A.
 - I - Index to maximum values of A.
 - C - Maximum elements from A or B.
 
-## Description
+## 📄 Description
 
-  <p><b>max</b> find maximum values in an array.</p>
-  <p>If <b>A</b> is a matrix then <b>M = max(A)</b> is a row vector containing the maximum value of each column.</p>
-  <p>If <b>A</b> is a vector then <b>M = max(A)</b> will return the maximum of <b>A</b>.</p>
-  <p>If <b>A</b> If A is complex number then <b>M = max(A)</b> will return founded complex number with the largest magnitude.</p>
+<b>max</b> find maximum values in an array.
 
-## Example
+If <b>A</b> is a matrix then <b>M = max(A)</b> is a row vector containing the maximum value of each column.
+
+If <b>A</b> is a vector then <b>M = max(A)</b> will return the maximum of <b>A</b>.
+
+If <b>A</b> If A is complex number then <b>M = max(A)</b> will return founded complex number with the largest magnitude.
+
+## 💡 Example
 
 ```matlab
 A = [1 2 3; 4 5 6];
@@ -46,16 +49,16 @@ M = max(A)
 M = max(A, [], 'all')
 ```
 
-## See also
+## 🔗 See also
 
-[min](min.md).
+[min](../data_analysis/min.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

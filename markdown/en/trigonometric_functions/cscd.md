@@ -2,38 +2,38 @@
 
 Cosecant of argument in degrees.
 
-## Syntax
+## 📝 Syntax
 
 - res = cscd(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>cscd</b> computes the cosecant of argument in degrees for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 R = cscd([35+i 15+2i 10+3i])
 ```
 
-## See also
+## 🔗 See also
 
-[csc](cosh.html).
+[csc](../trigonometric/cosh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

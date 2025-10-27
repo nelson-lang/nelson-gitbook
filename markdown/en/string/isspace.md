@@ -2,23 +2,23 @@
 
 Determine which characters are space.
 
-## Syntax
+## 📝 Syntax
 
 - res = isspace(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - scalar, vector, matrix or multidimensional array.
 
-## Output argument
+## 📤 Output argument
 
 - res - logical array
 
-## Description
+## 📄 Description
 
 <b>isletter</b> determines which characters are space characters.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 isspace('Nel Son')
@@ -28,16 +28,16 @@ isspace('Nel Son')
 isspace("六書 six writings")
 ```
 
-## See also
+## 🔗 See also
 
-[isletter](isletter.md).
+[isletter](../string/isletter.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.3.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

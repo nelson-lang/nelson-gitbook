@@ -2,42 +2,44 @@
 
 Change default environment of Python interpreter.
 
-## Syntax
+## 📝 Syntax
 
 - pyargs
 - pa = pyargs(Name, Value)
 
-## Input argument
+## 📥 Input argument
 
 - Name - a string, or row characters array
 - Value - variable value
 
-## Output argument
+## 📤 Output argument
 
 - pa - pyargs object.
 
-## Description
+## 📄 Description
 
-  <p><b>pyargs(Name, Value, ...)</b> generates one or multiple keyword arguments for Python functions.</p>
-  <p>In Python, a keyword argument is a value associated with an identifier.</p>
-  <p>Ensure to position <b>pyargs</b> as the last input argument when calling a Python function.</p>
+<b>pyargs(Name, Value, ...)</b> generates one or multiple keyword arguments for Python functions.
 
-## Example
+In Python, a keyword argument is a value associated with an identifier.
+
+Ensure to position <b>pyargs</b> as the last input argument when calling a Python function.
+
+## 💡 Example
 
 ```matlab
 pa = pyargs('A', 1)
 ```
 
-## See also
+## 🔗 See also
 
-[pyrun](pyrun.md).
+[pyrun](../python_engine/pyrun.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.3.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,11 +2,11 @@
 
 Zeros and Kronecker structure of a descriptor system pencil.
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, E_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
 
-## Input argument
+## 📥 Input argument
 
 - EQUIL - = 'S': Perform balancing (scaling); = 'N': Do not perform balancing.
 - M - The number of columns of matrix B.
@@ -18,7 +18,7 @@ Zeros and Kronecker structure of a descriptor system pencil.
 - D - The leading P-by-M part of this array must contain the direct transmission matrix D of the system.
 - TOL - A tolerance used in rank decisions to determine the effective rank, which is defined as the order of the largest leading (or trailing) triangular submatrix in the QR (or RQ) factorization with column (or row) pivoting whose estimated condition number is less than 1/TOL.
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Af of the reduced pencil.
 - E_OUT - The leading NFZ-by-NFZ part of this array contains the matrix Ef of the reduced pencil.
@@ -34,19 +34,19 @@ Zeros and Kronecker structure of a descriptor system pencil.
 - KRONL - The leading NKROL elements of this array contain the left Kronecker (row) indices.
 - INFO - = 0: successful exit;
 
-## Description
+## 📄 Description
 
-  <p> To extract from the system pencil a regular pencil Af-lambda*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.</p>
+To extract from the system pencil a regular pencil Af-lambda\*Ef which has the finite Smith zeros of S(lambda) as generalized eigenvalues. The routine also computes the orders of the infinite Smith zeros and determines the singular and infinite Kronecker structure of system pencil, i.e., the right and left Kronecker indices, and the multiplicities of infinite eigenvalues.
 
-Used function(s)
+## Used function(s)
 
 AG08BD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/AG08BD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 L = 9;
@@ -109,14 +109,17 @@ M = 0; P = 3;
 M = 3; P = 0;
 [A_OUT, E_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
 %=============================================================================
+
+
+
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

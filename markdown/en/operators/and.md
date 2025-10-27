@@ -2,25 +2,25 @@
 
 logical 'AND' operator, &
 
-## Syntax
+## 📝 Syntax
 
 - C = and(A, B)
 - C = A & B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A & B
 
-## Description
+## 📄 Description
 
-  <p><b>C = and(A, B)</b> performs a logical <b>AND</b> operation.</p>
+<b>C = and(A, B)</b> performs a logical <b>AND</b> operation.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [6 8 0; 0 3 89; 15 0 0]
@@ -30,16 +30,16 @@ D = and(B, A)
 C == D
 ```
 
-## See also
+## 🔗 See also
 
-[or](or.md), [xor](../logical/xor.md), [all](all.html), [any](any.html), [not](not.md).
+[or](../operators/or.md), [xor](../logical/xor.md), [all](../logical/all.md), [any](../logical/any.md), [not](../operators/not.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

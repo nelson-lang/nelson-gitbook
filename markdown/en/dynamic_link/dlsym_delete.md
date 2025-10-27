@@ -2,36 +2,37 @@
 
 Removes dlsym object.
 
-## Syntax
+## 📝 Syntax
 
 - dlsym_delete(h)
 - delete(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a handle: an dlsym object.
 
-## Description
+## 📄 Description
 
-  <p><b>delete(h)</b> releases dlsym object.</p>
-  <p>Do not forget to clear h afterward.</p>
+<b>delete(h)</b> releases dlsym object.
 
-## Example
+Do not forget to clear h afterward.
+
+## 💡 Example
 
 ```matlab
 dlsym_used(),delete(dlsym_used())
 ```
 
-## See also
+## 🔗 See also
 
-[dlsym](dlsym.md).
+[dlsym](../dynamic_link/dlsym.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

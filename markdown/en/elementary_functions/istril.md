@@ -2,23 +2,23 @@
 
 Checks if matrix is lower triangular.
 
-## Syntax
+## 📝 Syntax
 
 - tf = istril(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a numeric array
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'istril'.
 
-## Description
+## 📄 Description
 
-  <p><b>istril</b> returns an scalar logical if entry is lower triangular.</p>
+<b>istril</b> returns an scalar logical if entry is lower triangular.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
@@ -26,16 +26,16 @@ R = istriu(A)
 R = istriu(A(:,1))
 ```
 
-## See also
+## 🔗 See also
 
-[isdiag](isdiag.md), [istril](istril.md).
+[isdiag](../elementary_functions/isdiag.md), [istril](../elementary_functions/istril.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

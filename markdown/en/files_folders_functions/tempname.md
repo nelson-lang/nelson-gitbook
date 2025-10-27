@@ -2,39 +2,39 @@
 
 Returns an unique temporary filename.
 
-## Syntax
+## 📝 Syntax
 
 - f = tempname()
 - f = tempname(path)
 
-## Input argument
+## 📥 Input argument
 
 - path - a string: an existing directory used instead of tempdir().
 
-## Output argument
+## 📤 Output argument
 
 - f - a string: an unique temporary filename.
 
-## Description
+## 📄 Description
 
-  <p>Returns the name of an unique temporary filename.</p>
+Returns the name of an unique temporary filename.
 
-## Example
+## 💡 Example
 
 ```matlab
 r = tempname()
 ```
 
-## See also
+## 🔗 See also
 
-[mkdir](mkdir.md), [tempdir](tempdir.md).
+[mkdir](../files_folders_functions/mkdir.md), [tempdir](../files_folders_functions/tempdir.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

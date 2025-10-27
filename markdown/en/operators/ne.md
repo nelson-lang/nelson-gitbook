@@ -2,42 +2,43 @@
 
 Inequality, ~= operator
 
-## Syntax
+## 📝 Syntax
 
 - C = ne(A, B)
 - C = A ~= B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A ~= B
 
-## Description
+## 📄 Description
 
-  <p><b>C = ne(A, B)</b> performs inequality operation: A ~= B variables.</p>
-  <p><b>ne</b> compares both real and imaginary parts of numeric arrays.</p>
+<b>C = ne(A, B)</b> performs inequality operation: A ~= B variables.
 
-## Example
+<b>ne</b> compares both real and imaginary parts of numeric arrays.
+
+## 💡 Example
 
 ```matlab
 ne(3, 4)
 3 ~= 4
 ```
 
-## See also
+## 🔗 See also
 
-[le](le.md), [ge](ge.md), [eq](eq.md).
+[le](../operators/le.md), [ge](../operators/ge.md), [eq](../operators/eq.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

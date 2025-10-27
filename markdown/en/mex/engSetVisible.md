@@ -2,40 +2,40 @@
 
 Show or hide Nelson engine session
 
-## Syntax
+## 📝 Syntax
 
 - #include "engine.h"
 - int engSetVisible(Engine \*ep, bool value);
 
-## Input argument
+## 📥 Input argument
 
 - Engine \*ep - handle to Nelson engine.
 - bool value - set value to 1 to make the engine window visible, or to 0 to make it invisible.
 
-## Output argument
+## 📤 Output argument
 
 - int - 0 if successful or 1 if an error occurs.
 
-## Description
+## 📄 Description
 
-  <p>Show or hide Nelson engine session</p>
+Show or hide Nelson engine session
 
-## Example
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
-## See also
+## 🔗 See also
 
-[mex](mex.md), [engGetVisible](engGetVisible.md).
+[mex](../mex/mex.md), [engGetVisible](../mex/engGetVisible.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

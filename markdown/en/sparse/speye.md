@@ -2,46 +2,51 @@
 
 Sparse identity matrix.
 
-## Syntax
+## 📝 Syntax
 
 - S = speye()
 - S = speye(n)
 - S = speye(n, m)
 - S = speye(sz)
 
-## Input argument
+## 📥 Input argument
 
 - n, m - dimension sizes: nonnegative integer scalar.
 - sz - dimension sizes: two-element row vector.
 
-## Output argument
+## 📤 Output argument
 
 - S - a sparse matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>S = speye()</b> returns a sparse scalar 1.</p>
-  <p><b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.</p>
-  <p><b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.</p>
-  <p><b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.</p>
+<b>S = speye()</b> returns a sparse scalar 1.
 
-## Example
+<b>S = speye(n)</b> returns a sparse n-by-n identity matrix, with ones on the main diagonal.
+
+<b>S = speye(n, m)</b> returns a sparse n-by-m matrix, with ones on the main diagonal.
+
+<b>S = speye(sz)</b> returns a matrix with ones on the main diagonal.
+
+## 💡 Example
 
 ```matlab
+
 tic();S = speye(5000, 5000);toc()
 tic();S = sparse(eye(5000, 5000));toc()
+
 ```
 
-## See also
+## 🔗 See also
 
-[sparse](sparse.md).
+[sparse](../sparse/sparse.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

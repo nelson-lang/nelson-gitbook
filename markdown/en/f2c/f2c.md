@@ -2,39 +2,39 @@
 
 Fortran to C converter.
 
-## Syntax
+## 📝 Syntax
 
 - f2c(src, dest)
 - r = f2c(src, dest)
 - [r, msg] = f2c(src, dest)
 
-## Input argument
+## 📥 Input argument
 
 - src - a string: fortran source file.
 - dest - a string: destination directory.
 
-## Output argument
+## 📤 Output argument
 
 - r - a logical: true if success.
 - msg - a string: error message or ''.
 
-## Description
+## 📄 Description
 
-  <p><b>f2c</b> converts fortran 66, and fortran 77 files to C.</p>
+<b>f2c</b> converts fortran 66, and fortran 77 files to C.
 
-## Example
+## 💡 Example
 
 ```matlab
 f2c([modulepath(nelsonroot(),'f2c','root'), '/tests/dgemm.f'], tempdir());
 fileread([tempdir(), 'dgemm.c'])
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

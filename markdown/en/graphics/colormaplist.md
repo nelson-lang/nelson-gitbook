@@ -2,19 +2,19 @@
 
 Provide list of colormaps.
 
-## Syntax
+## 📝 Syntax
 
 - colormaps = colormaplist()
 
-## Output argument
+## 📤 Output argument
 
 - colormaps - String vector of colormaps sorted in ascending order.
 
-## Description
+## 📄 Description
 
-  <p><b>colormaplist</b> returns the available colormaps as an <b>m</b>-by-<b>1</b> string array.</p>
+<b>colormaplist</b> returns the available colormaps as an <b>m</b>-by-<b>1</b> string array.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure('Position', [100, 100, 600, 400], 'Resize', 'off');
@@ -23,20 +23,21 @@ surf(ax, peaks);
 cmaps = colormaplist;
 listbox = uicontrol('Style', 'listbox', 'Position', [450, 100, 100, 200], 'String', cmaps);
 listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
+
 ```
 
-<img src="colormaplist_A4E52AC6.svg" align="middle"/>
+<img src="colormaplist.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

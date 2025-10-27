@@ -2,25 +2,25 @@
 
 Matrix multiplication, \* operator
 
-## Syntax
+## 📝 Syntax
 
 - C = mtimes(A, B)
 - C = A \* B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A \* B
 
-## Description
+## 📄 Description
 
-  <p><b>C = mtimes(A, B)</b> performs matrix multiplication operation: A * B.</p>
+<b>C = mtimes(A, B)</b> performs matrix multiplication operation: A \* B.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 mtimes(3, 4)
@@ -33,16 +33,16 @@ M2 = [-25 88 1; 23 29 41; 24 40 0];
 M1 * M2
 ```
 
-## See also
+## 🔗 See also
 
-[times](times.md).
+[times](../operators/times.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

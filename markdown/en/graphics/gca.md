@@ -2,36 +2,37 @@
 
 get current axes graphics object.
 
-## Syntax
+## 📝 Syntax
 
 - ca = gca()
 
-## Output argument
+## 📤 Output argument
 
 - ca - a graphics object: axes graphics object.
 
-## Description
+## 📄 Description
 
-  <p><b>ca = gca()</b> returns the current axes graphics object.</p>
-  <p>If there are no axes, <b>gca()</b> creates an axes and returns its graphics object.</p>
+<b>ca = gca()</b> returns the current axes graphics object.
 
-## Example
+If there are no axes, <b>gca()</b> creates an axes and returns its graphics object.
+
+## 💡 Example
 
 ```matlab
 ca = gca()
 isgraphics(ax, 'axes')
 ```
 
-## See also
+## 🔗 See also
 
-[isgraphics](isgraphics.md), [axes](axes.md).
+[isgraphics](../graphics/isgraphics.md), [axes](../graphics/axes.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Creates a cell from a structure.
 
-## Syntax
+## 📝 Syntax
 
 - ce = struct2cell(st)
 
-## Input argument
+## 📥 Input argument
 
 - st - a structure.
 
-## Output argument
+## 📤 Output argument
 
 - ce - a cell.
 
-## Description
+## 📄 Description
 
-  <p><b>ce = struct2cell(st)</b> returns a new cell from the structure.</p>
+<b>ce = struct2cell(st)</b> returns a new cell from the structure.
 
-## Example
+## 💡 Example
 
 ```matlab
 names = {'Pierre', 'Anna', 'Roberto'}
@@ -27,16 +27,16 @@ st = struct ('name', names, 'age', values);
 ce = struct2cell(st)
 ```
 
-## See also
+## 🔗 See also
 
-[cell](cell.md), [struct](struct.md), [fieldnames](fieldnames.md).
+[cell](../data_structures/cell.md), [struct](../data_structures/struct.md), [fieldnames](../data_structures/fieldnames.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

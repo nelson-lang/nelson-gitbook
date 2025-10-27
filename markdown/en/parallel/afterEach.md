@@ -2,27 +2,29 @@
 
 Run function after each function finish running in the background.
 
-## Syntax
+## 📝 Syntax
 
 - B = afterEach(F, fcn, n)
 
-## Input argument
+## 📥 Input argument
 
 - F - Input Future object (scalar or array).
 - fcn - Function handle: Function to run after all input futures.
 - n - Number of output arguments.
 
-## Output argument
+## 📤 Output argument
 
 - B - AfterEachFuture object.
 
-## Description
+## 📄 Description
 
-  <p><b>B = afterEach(F, fcn, n)</b> returns a AfterEachFuture object <b>B</b>.</p>
-  <p>Function <b>fcn</b> is automatically runned after each element in the Future array <b>F</b> was finished.</p>
-  <p>If any of the elements in <b>F</b> encounters an error, the <b>Error</b> property of <b>B</b> contains an error.</p>
+<b>B = afterEach(F, fcn, n)</b> returns a AfterEachFuture object <b>B</b>.
 
-## Example
+Function <b>fcn</b> is automatically runned after each element in the Future array <b>F</b> was finished.
+
+If any of the elements in <b>F</b> encounters an error, the <b>Error</b> property of <b>B</b> contains an error.
+
+## 💡 Example
 
 ```matlab
 pool = backgroundPool()
@@ -38,16 +40,16 @@ fetchOutputs(minFuture)
 fetchOutputs(maxFuture)
 ```
 
-## See also
+## 🔗 See also
 
-[backgroundPool](backgroundPool.md), [fetchOutputs](fetchOutputs.md), [afterAll](afterAll.md).
+[backgroundPool](../parallel/backgroundPool.md), [fetchOutputs](../parallel/fetchOutputs.md), [afterAll](../parallel/afterAll.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

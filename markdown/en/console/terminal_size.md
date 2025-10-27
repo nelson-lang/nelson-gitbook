@@ -2,34 +2,34 @@
 
 Query the size of the terminal window.
 
-## Syntax
+## 📝 Syntax
 
 - [r, c] = terminal_size()
 
-## Output argument
+## 📤 Output argument
 
 - [r, c] - a vector: rows and columns
 
-## Description
+## 📄 Description
 
-  <p><b>terminal_size()</b> returns a vector with size of the terminal window in characters (rows and columns).</p>
+<b>terminal_size()</b> returns a vector with size of the terminal window in characters (rows and columns).
 
-## Example
+## 💡 Example
 
 ```matlab
 terminal_size()
 ```
 
-## See also
+## 🔗 See also
 
 [disp](../display_format/disp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

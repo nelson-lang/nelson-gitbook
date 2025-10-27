@@ -1,10 +1,12 @@
 # Types module
 
-Types module
+The Types module provides tools for managing and inspecting data types in Nelson.
 
-## Description
+It allows users to query the nature of variables, distinguish between numeric, logical, string, and object types, and work with specialized types such as sparse or integer arrays.
 
-module about types management.
+The module also supports creation of objects and validation of variable names, helping ensure type safety and consistency across scripts and functions.
+
+## Functions
 
 - [class](class.md) - Return classname of object or creates a named object.
 - [isa](isa.md) - Return true if var is an object from the class str.
@@ -33,3 +35,4 @@ module about types management.
 - [isuint64](isuint64.md) - Return true if variable var is an unsigned 64-bit integer type array.
 - [isuint8](isuint8.md) - Return true if variable var is an unsigned 8-bit integer type array.
 - [isvarname](isvarname.md) - Return true if input is valid variable name.
+- [missing](missing.md) - Return a missing value.

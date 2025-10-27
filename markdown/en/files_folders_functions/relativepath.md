@@ -2,24 +2,24 @@
 
 Returns the relative path from an actual path to the target path.
 
-## Syntax
+## 📝 Syntax
 
 - r = relativepath(path_1, path_2)
 
-## Input argument
+## 📥 Input argument
 
 - path_1 - a string: file or directory.
 - path_2 - a string: file or directory.
 
-## Output argument
+## 📤 Output argument
 
 - r - a string: relative path.
 
-## Description
+## 📄 Description
 
-  <p>Returns the relative path from an actual path to the target path.</p>
+Returns the relative path from an actual path to the target path.
 
-## Example
+## 💡 Example
 
 ```matlab
 relativepath(nelsonroot(), [nelsonroot(), '/lgpl-3.0.md'])
@@ -30,16 +30,16 @@ relativepath('.', '..')
 relativepath('..', '.')
 ```
 
-## See also
+## 🔗 See also
 
-[cd](cd.md), [dir](dir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

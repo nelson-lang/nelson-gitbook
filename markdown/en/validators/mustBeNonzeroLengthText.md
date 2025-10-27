@@ -2,22 +2,22 @@
 
 Checks that value is text with nonzero length or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeNonzeroLengthText(var)
 - mustBeNonzeroLengthText(var, argPosition)
 - C++: void mustBeNonzeroLengthText(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: a string array, a cell of strings, or row vector characters array.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeNonzeroLengthText</b> checks that value is text with nonzero length or raise an error.</p>
+<b>mustBeNonzeroLengthText</b> checks that value is text with nonzero length or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeNonzeroLengthText('true')
@@ -25,16 +25,16 @@ mustBeNonzeroLengthText("hello")
 mustBeNonzeroLengthText('')
 ```
 
-## See also
+## 🔗 See also
 
 [ischar](../types/ischar.md), [isstring](../types/isstring.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

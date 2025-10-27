@@ -2,34 +2,35 @@
 
 Returns list of current used audioplayer handle.
 
-## Syntax
+## 📝 Syntax
 
 - r = audioplayer_used()
 
-## Output argument
+## 📤 Output argument
 
 - h - a vector of audioplayer handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns list of current used audioplayer handle.</p>
+Returns list of current used audioplayer handle.
 
-## See also
-
-[audioplayer_set (set)](audioplayer_set.md), [audioplayer_get (get)](audioplayer_get.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 audioplayer_used(),delete(audioplayer_used())
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[audioplayer_set (set)](../audio/audioplayer_set.md), [audioplayer_get (get)](../audio/audioplayer_get.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,24 +2,24 @@
 
 Strings comparaison (case insensitive).
 
-## Syntax
+## 📝 Syntax
 
 - res = strcmpi(s1, s2)
 
-## Input argument
+## 📥 Input argument
 
 - s1 - a string, string array or cell of strings.
 - s2 - a string, string array or cell of strings.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if the two are identical (case insensitive) and false otherwise.
 
-## Description
+## 📄 Description
 
 <b>strcmpi</b> compares two strings (case insensitive).
 
-## Example
+## 💡 Example
 
 ```matlab
 strcmpi('Nelson', 'nelSon')
@@ -31,18 +31,19 @@ C = {'C', 'Contents'; 'Nel', 'son'}
 strcmpi(A, B)
 strcmpi(A, C)
 strcmpi(C, 'C')
+
 ```
 
-## See also
+## 🔗 See also
 
-[char](char.md), [strcmp](strcmp.md).
+[char](../string/char.md), [strcmp](../string/strcmp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

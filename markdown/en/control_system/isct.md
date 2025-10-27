@@ -2,23 +2,23 @@
 
 Checks if dynamic system model is in continuous time.
 
-## Syntax
+## 📝 Syntax
 
 - res = isct(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - a lti model.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if dynamic system model is in continuous time.
 
-## Description
+## 📄 Description
 
-  <p>Checks if dynamic system model is in continuous time.</p>
+Checks if dynamic system model is in continuous time.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -31,16 +31,16 @@ sys2 = ss(A, B, C, D, 0.2);
 isct(sys2)
 ```
 
-## See also
+## 🔗 See also
 
-[isdt](isdt.md).
+[isdt](../control_system/isdt.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

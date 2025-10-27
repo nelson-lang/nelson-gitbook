@@ -1,10 +1,12 @@
 # MATIO
 
-MATIO
+The MATIO module provides support for reading and writing MAT-files, a widely used format for storing numerical data in MATLAB© and compatible environments.
 
-## Description
+It enables Nelson to check MAT-file validity, load and save workspace variables, and inspect file contents.
 
-MAT-File Read/Write I/O Functions
+With this module, users can exchange data between Nelson and MATLAB©, making it a key component for interoperability in scientific and engineering workflows.
+
+## Functions
 
 - [ismatfile](ismatfile.md) - Checks if filename a valid .mat file
 - [loadmat](loadmat.md) - load data from .mat file into Nelson's workspace.

@@ -2,7 +2,7 @@
 
 Replicate and tile an array.
 
-## Syntax
+## 📝 Syntax
 
 - R = repmat(A, m)
 - R = repmat(A, m, n)
@@ -10,20 +10,20 @@ Replicate and tile an array.
 - R = repmat(A, [m n])
 - R = repmat(A, [m n p …])
 
-## Input argument
+## 📥 Input argument
 
 - A - an array.
 - m, n, p … - a value: integer
 
-## Output argument
+## 📤 Output argument
 
 - R - result array form by tiling.
 
-## Description
+## 📄 Description
 
-<b>repmat</b> repeats matrix or N-D array.
+<b>repmat</b> replicates and tiles an array.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 repmat(1:5, 2)
@@ -37,16 +37,16 @@ repmat(1:5, [2 3])
 repmat(1:5, [2 3 4])
 ```
 
-## See also
+## 🔗 See also
 
-[reshape](reshape.md).
+[reshape](../elementary_functions/reshape.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

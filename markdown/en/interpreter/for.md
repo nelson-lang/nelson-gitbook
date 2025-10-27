@@ -1,20 +1,19 @@
 # for
 
-# parfor
-
 for loop.
 
-## Syntax
+## 📝 Syntax
 
 - for variable = expression, statements, end
 - for variable, statements, end
 
-## Description
+## 📄 Description
 
-  <p><b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.</p>
-  <p><b>parfor</b> is currently an alias on <b>for</b> keyword.</p>
+<b>for</b> loop executes a set of statements with an index variable looping through each element in a vector.
 
-## Examples
+<b>parfor</b> is currently an alias on <b>for</b> keyword.
+
+## 💡 Examples
 
 ```matlab
 for i = 1:10, disp(i), end
@@ -24,16 +23,16 @@ for i = 1:10, disp(i), end
 for i = [1, 2; 3 4], disp(i), disp('next'), end
 ```
 
-## See also
+## 🔗 See also
 
-[while](while.md).
+[while](../interpreter/while.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,27 @@
 
 Executes a script file (.m).
 
-## Syntax
+## 📝 Syntax
 
 - run(script_file)
 - run(script_file, 'nocatch')
 - bsuccess = run(script_file, 'errcatch')
 
-## Input argument
+## 📥 Input argument
 
 - script_file - a string: path of a script
 - 'nocatch' - a string: default option (no error catch)
 - 'errcatch' - a string: error catched
 
-## Output argument
+## 📤 Output argument
 
 - bsuccess - a logical: true if no error detected during script execution
 
-## Description
+## 📄 Description
 
-  <p><b>run(script_file)</b> executes a Nelson's script file (.m file extension).</p>
+<b>run(script_file)</b> executes a Nelson's script file (.m file extension).
 
-## Examples
+## 💡 Examples
 
 Creates two .m in temp directory to use as example:
 
@@ -37,6 +37,7 @@ fd = fopen([tempdir(), 'example_run_not_ok.m'], 'wt');
 fprintf(fd, ['AA = 1;', char(10)]);
 fprintf(fd, ['CC = AA + BB', char(10)]);
 fclose(fd);
+
 ```
 
 run a script without error.
@@ -63,16 +64,16 @@ run a script and no catch error.
 run([tempdir(), 'example_run_not_ok.m'], 'nocatch');
 ```
 
-## See also
+## 🔗 See also
 
-[execstr](execstr.md).
+[execstr](../core/execstr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

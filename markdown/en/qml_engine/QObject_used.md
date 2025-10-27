@@ -2,23 +2,19 @@
 
 Returns list of current used QObject handle.
 
-## Syntax
+## 📝 Syntax
 
 - r = QObject_used()
 
-## Output argument
+## 📤 Output argument
 
 - h - a vector of QObject handle.
 
-## Description
+## 📄 Description
 
-  <p>Returns list of current used QObject handle.</p>
+Returns list of current used QObject handle.
 
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 h1 = errordlg()
@@ -30,12 +26,16 @@ delete(used)
 used = QObject_used()
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

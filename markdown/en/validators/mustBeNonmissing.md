@@ -2,39 +2,40 @@
 
 Checks that value is not missing.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeNonmissing(var)
 - mustBeNonmissing(var, argPosition)
 - C++: void mustBeNonmissing(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement ismissing method.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeNonmissing</b> checks that value is not missing or raise an error.</p>
+<b>mustBeNonmissing</b> checks that value is not missing or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeNonmissing(1)
 mustBeNonmissing([])
 mustBeNonmissing(["hello" string(NaN)])
+
 ```
 
-## See also
+## 🔗 See also
 
-[ismissing](ismissing.html).
+[ismissing](../elementary_functions/ismissing.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

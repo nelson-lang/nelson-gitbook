@@ -2,24 +2,25 @@
 
 Returns a function handle from a string.
 
-## Syntax
+## 📝 Syntax
 
 - func_handle = str2func(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string
 
-## Output argument
+## 📤 Output argument
 
 - func_handle - a function handle.
 
-## Description
+## 📄 Description
 
-  <p><b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b></p>
-  <p><b>str</b> function name or representation of anonymous function.</p>
+<b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b>
 
-## Examples
+<b>str</b> function name or representation of anonymous function.
+
+## 💡 Examples
 
 ```matlab
 fh = str2func('cos')
@@ -32,16 +33,16 @@ M = rand(4, 3, 5);
 [R, C] = myFind(M, 0.9)
 ```
 
-## See also
+## 🔗 See also
 
-[func2str](func2str.md), [isfunction_handle](isfunction_handle.md).
+[func2str](../function_handle/func2str.md), [isfunction_handle](../function_handle/isfunction_handle.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

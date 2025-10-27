@@ -2,23 +2,23 @@
 
 Return true if variable var is a integer type array.
 
-## Syntax
+## 📝 Syntax
 
 - res = isinteger(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isinteger</b> returns a logical 1 if the argument is a integer type (int8, int16 ...) array and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -35,16 +35,16 @@ A = single([3, i]);
 res = isinteger(A)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [isint8](isint8.md).
+[isa](../types/isa.md), [isint8](../types/isint8.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

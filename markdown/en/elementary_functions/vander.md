@@ -2,42 +2,42 @@
 
 Vandermonde matrix
 
-## Syntax
+## 📝 Syntax
 
 - A = vander(v)
 
-## Input argument
+## 📥 Input argument
 
 - v - a numeric vector.
 
-## Output argument
+## 📤 Output argument
 
 - A - Vandermonde Matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>A = vander(v)</b> returns the Vandermonde Matrix.</p>
+<b>A = vander(v)</b> returns the Vandermonde Matrix.
 
-Bibliography
+## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/Vandermonde_matrix
 
-## Example
+## 💡 Example
 
 ```matlab
 A = vander(1:.5:3)
 ```
 
-## See also
+## 🔗 See also
 
-[toeplitz](toeplitz.md).
+[toeplitz](../elementary_functions/toeplitz.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

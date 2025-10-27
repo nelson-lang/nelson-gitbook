@@ -2,24 +2,24 @@
 
 Returns complex conjugate transpose: ' operator.
 
-## Syntax
+## 📝 Syntax
 
 - C= ctranspose(A)
 - C = A'
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result: complex conjugate transpose of A.
 
-## Description
+## 📄 Description
 
-  <p><b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.</p>
+<b>C = ctranspose(A)</b> returns the complex conjugate transpose of A.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3
@@ -32,20 +32,20 @@ B = A'
 ```
 
 ```matlab
-A = sparse(eye(3, 4) * i)
+ A = sparse(eye(3, 4) * i)
 B = A'
 ```
 
-## See also
+## 🔗 See also
 
-[transpose](transpose.md).
+[transpose](../operators/transpose.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

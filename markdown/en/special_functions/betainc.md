@@ -2,43 +2,60 @@
 
 Incomplete beta function
 
-## Syntax
+## 📝 Syntax
 
 - R = betainc(X, Z, W)
 - R = betainc(X, Z, W, tail)
 
-## Input argument
+## 📥 Input argument
 
 - X - a real single or real double matrix. It must be in the closed interval [0, 1].
 - Z - a real single or real double matrix. It must be nonnegative.
 - W - a real single or real double matrix. It must be nonnegative.
 - tail - a string 'upper' or 'lower' (default).
 
-## Output argument
+## 📤 Output argument
 
 - R - result of betainc function.
 
-## Description
+## 📄 Description
 
-  <p><b>betainc</b> computes the Incomplete beta function.</p>
-  <p>All arrays must be the same size or any of them can be scalar.</p>
+<b>betainc</b> computes the incomplete beta function (regularized).
 
-## Example
+The incomplete beta function is defined as:
+
+$$I_x(a,b) = \frac{B(x; a,b)}{B(a,b)} = \frac{1}{B(a,b)} \int_0^x t^{a-1} (1-t)^{b-1} \, dt$$
+
+where
+
+$$B(a,b) = \int_0^1 t^{a-1} (1-t)^{b-1} \, dt$$
+
+is the complete beta function, and:
+
+$$B(a,b) = \frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$$
+
+The function is normalized so that
+
+$$I_1(a,b) = 1$$
+.
+All arrays must be the same size or any of them can be scalar.
+
+## 💡 Example
 
 ```matlab
 R = betainc(0.5, 1:10, 3)
 ```
 
-## See also
+## 🔗 See also
 
-[gamma](gamma.md).
+[gamma](../special_functions/gamma.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

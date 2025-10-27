@@ -2,26 +2,30 @@
 
 Zero-pole to transfer function conversion.
 
-## Syntax
+## 📝 Syntax
 
 - [NUM, DEN] = zp2tf(Z, P, K)
 
-## Input argument
+## 📥 Input argument
 
 - Z - Locations of zeros, organized in columns for each system output.
 - P - Locations of poles, recorded as a column vector.
 - K - Gains.
 
-## Output argument
+## 📤 Output argument
 
 - NUM - Coefficients in the numerator, organized by rows corresponding to each system output.
 - DEN - Coefficients in the denominator, arranged as a row vector.
 
-## Description
+## 📄 Description
 
-  <p><b>[NUM, DEN] = zp2tf(Z, P, K)</b> returns polynomial transfer function representation from zeros and poles.</p>
+<b>[NUM, DEN] = zp2tf(Z, P, K)</b> returns polynomial transfer function representation from zeros and poles.
 
-## Example
+## 📚 Bibliography
+
+zpk2tf scipy implementation (MIT)
+
+## 💡 Example
 
 ```matlab
 p = [0.5;0.45+0.5i;0.45-0.5i];
@@ -30,20 +34,16 @@ k = 1;
 [n, d] = zp2tf(z, p, k)
 ```
 
-Bibliography
+## 🔗 See also
 
-zpk2tf scipy implementation (MIT)
+[tf2zpk](../signal_processing/tf2zpk.md).
 
-## See also
+## 🕔 History
 
-[tf2zpk](tf2zpk.html).
-
-## History
-
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

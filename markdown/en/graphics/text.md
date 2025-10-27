@@ -2,7 +2,7 @@
 
 creates text descriptions to data points.
 
-## Syntax
+## 📝 Syntax
 
 - text(x, y, txt)
 - text(x, y, z, txt)
@@ -10,7 +10,7 @@ creates text descriptions to data points.
 - text(ax, ...)
 - go = text(...)
 
-## Input argument
+## 📥 Input argument
 
 - x - x-coordinates: vector or matrix.
 - y - y-coordinates: vector or matrix.
@@ -20,466 +20,160 @@ creates text descriptions to data points.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: text type.
 
-## Description
+## 📄 Description
 
-  <p><b>figure</b> creates figure.</p>
-  <p>Properties:</p>
-  <p/>
-  <p><b>BackgroundColor</b>: Color of text box background: RGB triplet.</p>
-  <p><b>Children</b>:  Children: [].</p>
-  <p><b>Color</b>: Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.</p>
-  <p><b>EdgeColor</b>: Color of box outline: RGB triplet.</p>
-  <p><b>Extent</b>: Size and location of rectangle that encloses text: four-element vector.</p>
-  <p><b>FontAngle</b>: Character slant: 'italic' or 'normal' (default).</p>
-  <p><b>FontName</b>: Font name: </p>
-  <p><b>FontSize</b>: Font size: scalar value greater than zero.</p>
-  <p><b>FontUnits</b>: Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).</p>
-  <p><b>FontWeight</b>: Character thickness: 'bold' or 'normal' (default).</p>
-  <p><b>HorizontalAlignment</b>: Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).</p>
-  <p><b>Interpreter</b>: 'tex' (default) interpreter or 'none'.</p>
-  <p><b>LineStyle</b>: Line style of box outline:  'none', '--', ':',  '-.' or '-' (default).</p>
-  <p><b>LineWidth</b>: Width of box outline: scalar numeric value.</p>
-  <p><b>Margin</b>: Space around text within the text box: scalar numeric value.</p>
-  <p><b>Parent</b>: Parent: axes object.</p>
-  <p><b>Position</b>: Location of text: two-element vector of form [x y] or three-element vector of form [x y z].</p>
-  <p><b>Rotation</b>: Text orientation: scalar value in degrees.</p>
-  <p><b>String</b>: Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).</p>
-  <p><b>Tag</b>: Object identifier: character vector, string scalar or '' (default).</p>
-  <p><b>Type</b>: Type of graphics object: 'text'.</p>
-  <p><b>Units</b>: Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).</p>
-  <p><b>UserData</b>: User data: array or [] (default).</p>
-  <p><b>VerticalAlignment</b>: Vertical alignment of text with respect to position point.</p>
-  <p><b>Visible</b>: State of visibility: 'off' or 'on' (default).</p>
-  <p><b>CreateFcn</b>Callback (function handle, string or cell) called when object is created.
-Set this property on an existing component has no effect.</p>
-  <p><b>DeleteFcn</b>Callback (function handle, string or cell) called when object is deleted.</p>
-  <p/>
-  <p><b>BeingDeleted</b> Flag indicating that the object is being deleted.</p>
-  <p>Some properties are available only for compatibility and have currently no effect on the text.</p>
-  <p>lists of the supported special characters for the 'tex' interpreter:</p>
-  <p>Superscript: ^{ }   'text^{superscript}'</p>
-  <p>Subscript: _{ }   'text_{subscript}'</p>
-  <p/>
-  <table style="width:100%">
-    <tr>
-      <th>Character Sequence</th>
-      <th>Symbol</th>
-    </tr>
-    <tr>
-      <th>\alpha</th>
-      <th>α</th>
-    </tr>
-    <tr>
-      <th>\upsilon</th>
-      <th>υ</th>
-    </tr>
-    <tr>
-      <th>\sim</th>
-      <th>~</th>
-    </tr>
-    <tr>
-      <th>\angle</th>
-      <th>∠</th>
-    </tr>
-    <tr>
-      <th>\phi</th>
-      <th>ϕ</th>
-    </tr>
-    <tr>
-      <th>\leq</th>
-      <th>≤</th>
-    </tr>
-    <tr>
-      <th>\ast</th>
-      <th>*</th>
-    </tr>
-    <tr>
-      <th>\chi</th>
-      <th>χ</th>
-    </tr>
-    <tr>
-      <th>\infty</th>
-      <th>∞</th>
-    </tr>
-    <tr>
-      <th>\beta</th>
-      <th>β</th>
-    </tr>
-    <tr>
-      <th>\psi</th>
-      <th>ψ</th>
-    </tr>
-    <tr>
-      <th>\clubsuit</th>
-      <th>♣</th>
-    </tr>
-    <tr>
-      <th>\gamma</th>
-      <th>γ</th>
-    </tr>
-    <tr>
-      <th>\omega</th>
-      <th>ω</th>
-    </tr>
-    <tr>
-      <th>\diamondsuit</th>
-      <th>♦</th>
-    </tr>
-    <tr>
-      <th>\delta</th>
-      <th>δ</th>
-    </tr>
-    <tr>
-      <th>\Gamma</th>
-      <th>Γ</th>
-    </tr>
-    <tr>
-      <th>\heartsuit</th>
-      <th>♥</th>
-    </tr>
-    <tr>
-      <th>\epsilon</th>
-      <th>ϵ</th>
-    </tr>
-    <tr>
-      <th>\Delta</th>
-      <th>Δ</th>
-    </tr>
-    <tr>
-      <th>\spadesuit</th>
-      <th>♠</th>
-    </tr>
-    <tr>
-      <th>\zeta</th>
-      <th>ζ</th>
-    </tr>
-    <tr>
-      <th>\Theta</th>
-      <th>Θ</th>
-    </tr>
-    <tr>
-      <th>\leftrightarrow</th>
-      <th>↔</th>
-    </tr>
-    <tr>
-      <th>\eta</th>
-      <th>η</th>
-    </tr>
-    <tr>
-      <th>\Lambda</th>
-      <th>Λ</th>
-    </tr>
-    <tr>
-      <th>\leftarrow</th>
-      <th>←</th>
-    </tr>
-    <tr>
-      <th>\theta</th>
-      <th>θ</th>
-    </tr>
-    <tr>
-      <th>\Xi</th>
-      <th>Ξ</th>
-    </tr>
-    <tr>
-      <th>\Leftarrow</th>
-      <th>⇐</th>
-    </tr>
-    <tr>
-      <th>\vartheta</th>
-      <th>ϑ</th>
-    </tr>
-    <tr>
-      <th>\Pi</th>
-      <th>Π</th>
-    </tr>
-    <tr>
-      <th>\uparrow</th>
-      <th>↑</th>
-    </tr>
-    <tr>
-      <th>\iota</th>
-      <th>ι</th>
-    </tr>
-    <tr>
-      <th>\Sigma</th>
-      <th>Σ</th>
-    </tr>
-    <tr>
-      <th>\rightarrow</th>
-      <th>→</th>
-    </tr>
-    <tr>
-      <th>\kappa</th>
-      <th>κ</th>
-    </tr>
-    <tr>
-      <th>\Upsilon</th>
-      <th>ϒ</th>
-    </tr>
-    <tr>
-      <th>\Rightarrow</th>
-      <th>⇒</th>
-    </tr>
-    <tr>
-      <th>\lambda</th>
-      <th>λ</th>
-    </tr>
-    <tr>
-      <th>\Phi</th>
-      <th>Φ</th>
-    </tr>
-    <tr>
-      <th>\downarrow</th>
-      <th>↓</th>
-    </tr>
-    <tr>
-      <th>\mu</th>
-      <th>µ</th>
-    </tr>
-    <tr>
-      <th>\Psi</th>
-      <th>Ψ</th>
-    </tr>
-    <tr>
-      <th>\circ</th>
-      <th>º</th>
-    </tr>
-    <tr>
-      <th>\nu</th>
-      <th>ν</th>
-    </tr>
-    <tr>
-      <th>\Omega</th>
-      <th>Ω</th>
-    </tr>
-    <tr>
-      <th>\pm</th>
-      <th>±</th>
-    </tr>
-    <tr>
-      <th>\xi</th>
-      <th>ξ</th>
-    </tr>
-    <tr>
-      <th>\forall</th>
-      <th>∀</th>
-    </tr>
-    <tr>
-      <th>\geq</th>
-      <th>≥</th>
-    </tr>
-    <tr>
-      <th>\pi</th>
-      <th>π</th>
-    </tr>
-    <tr>
-      <th>\exists</th>
-      <th>∃</th>
-    </tr>
-    <tr>
-      <th>\propto</th>
-      <th>∝</th>
-    </tr>
-    <tr>
-      <th>\rho</th>
-      <th>ρ</th>
-    </tr>
-    <tr>
-      <th>\ni</th>
-      <th>∍</th>
-    </tr>
-    <tr>
-      <th>\partial</th>
-      <th>∂</th>
-    </tr>
-    <tr>
-      <th>\sigma</th>
-      <th>σ</th>
-    </tr>
-    <tr>
-      <th>\cong</th>
-      <th>≅</th>
-    </tr>
-    <tr>
-      <th>\bullet</th>
-      <th>•</th>
-    </tr>
-    <tr>
-      <th>\varsigma</th>
-      <th>ς</th>
-    </tr>
-    <tr>
-      <th>\approx</th>
-      <th>≈</th>
-    </tr>
-    <tr>
-      <th>\div</th>
-      <th>÷</th>
-    </tr>
-    <tr>
-      <th>\tau</th>
-      <th>τ</th>
-    </tr>
-    <tr>
-      <th>\Re</th>
-      <th>ℜ</th>
-    </tr>
-    <tr>
-      <th>\neq</th>
-      <th>≠</th>
-    </tr>
-    <tr>
-      <th>\equiv</th>
-      <th>≡</th>
-    </tr>
-    <tr>
-      <th>\oplus</th>
-      <th>⊕</th>
-    </tr>
-    <tr>
-      <th>\aleph</th>
-      <th>ℵ</th>
-    </tr>
-    <tr>
-      <th>\Im</th>
-      <th>ℑ</th>
-    </tr>
-    <tr>
-      <th>\cup</th>
-      <th>∪</th>
-    </tr>
-    <tr>
-      <th>\wp</th>
-      <th>℘</th>
-    </tr>
-    <tr>
-      <th>\otimes</th>
-      <th>⊗</th>
-    </tr>
-    <tr>
-      <th>\subseteq</th>
-      <th>⊆</th>
-    </tr>
-    <tr>
-      <th>\oslash</th>
-      <th>∅</th>
-    </tr>
-    <tr>
-      <th>\cap</th>
-      <th>∩</th>
-    </tr>
-    <tr>
-      <th>\in</th>
-      <th>∈</th>
-    </tr>
-    <tr>
-      <th>\supseteq</th>
-      <th>⊇</th>
-    </tr>
-    <tr>
-      <th>\supset</th>
-      <th>⊃</th>
-    </tr>
-    <tr>
-      <th>\lceil</th>
-      <th>⌈</th>
-    </tr>
-    <tr>
-      <th>\subset</th>
-      <th>⊂</th>
-    </tr>
-    <tr>
-      <th>\int</th>
-      <th>∫</th>
-    </tr>
-    <tr>
-      <th>\cdot</th>
-      <th>·</th>
-    </tr>
-    <tr>
-      <th>\o</th>
-      <th>ο</th>
-    </tr>
-    <tr>
-      <th>\rfloor</th>
-      <th>⌋</th>
-    </tr>
-    <tr>
-      <th>\neg</th>
-      <th>¬</th>
-    </tr>
-    <tr>
-      <th>\nabla</th>
-      <th>∇</th>
-    </tr>
-    <tr>
-      <th>\lfloor</th>
-      <th>⌊</th>
-    </tr>
-    <tr>
-      <th>\times</th>
-      <th>x</th>
-    </tr>
-    <tr>
-      <th>\ldots</th>
-      <th>...</th>
-    </tr>
-    <tr>
-      <th>\perp</th>
-      <th>⊥</th>
-    </tr>
-    <tr>
-      <th>\surd</th>
-      <th>√</th>
-    </tr>
-    <tr>
-      <th>\prime</th>
-      <th>´</th>
-    </tr>
-    <tr>
-      <th>\wedge</th>
-      <th>∧</th>
-    </tr>
-    <tr>
-      <th>\varpi</th>
-      <th>ϖ</th>
-    </tr>
-    <tr>
-      <th>\0</th>
-      <th>∅</th>
-    </tr>
-    <tr>
-      <th>\rceil</th>
-      <th>⌉</th>
-    </tr>
-    <tr>
-      <th>\rangle</th>
-      <th>〉</th>
-    </tr>
-    <tr>
-      <th>\mid</th>
-      <th>|</th>
-    </tr>
-    <tr>
-      <th>\vee</th>
-      <th>∨</th>
-    </tr>
-    <tr>
-      <th>\langle</th>
-      <th>〈</th>
-    </tr>
-    <tr>
-      <th>\copyright</th>
-      <th>©</th>
-    </tr>
-  </table>
+<b>figure</b> creates figure.
 
-## Examples
+| Property                | Description                                                                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **BackgroundColor**     | Color of text box background: RGB triplet.                                                                                          |
+| **Children**            | Children: [].                                                                                                                       |
+| **Color**               | Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.                                                               |
+| **EdgeColor**           | Color of box outline: RGB triplet.                                                                                                  |
+| **Extent**              | Size and location of rectangle that encloses text: four-element vector.                                                             |
+| **FontAngle**           | Character slant: 'italic' or 'normal' (default).                                                                                    |
+| **FontName**            | Font name:                                                                                                                          |
+| **FontSize**            | Font size: scalar value greater than zero.                                                                                          |
+| **FontUnits**           | Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).                                             |
+| **FontWeight**          | Character thickness: 'bold' or 'normal' (default).                                                                                  |
+| **HorizontalAlignment** | Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).                                   |
+| **Interpreter**         | 'tex' (default) interpreter or 'none'.                                                                                              |
+| **LineStyle**           | Line style of box outline: 'none', '--', ':', '-.' or '-' (default).                                                                |
+| **LineWidth**           | Width of box outline: scalar numeric value.                                                                                         |
+| **Margin**              | Space around text within the text box: scalar numeric value.                                                                        |
+| **Parent**              | Parent: axes object.                                                                                                                |
+| **Position**            | Location of text: two-element vector of form [x y] or three-element vector of form [x y z].                                         |
+| **Rotation**            | Text orientation: scalar value in degrees.                                                                                          |
+| **String**              | Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).                    |
+| **Tag**                 | Object identifier: character vector, string scalar or '' (default).                                                                 |
+| **Type**                | Type of graphics object: 'text'.                                                                                                    |
+| **Units**               | Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).             |
+| **UserData**            | User data: array or [] (default).                                                                                                   |
+| **VerticalAlignment**   | Vertical alignment of text with respect to position point.                                                                          |
+| **Visible**             | State of visibility: 'off' or 'on' (default).                                                                                       |
+| **CreateFcn**           | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
+| **DeleteFcn**           | Callback (function handle, string or cell) called when object is deleted.                                                           |
+| **BeingDeleted**        | Flag indicating that the object is being deleted.                                                                                   |
+
+Some properties are available only for compatibility and have currently no effect on the text.
+
+lists of the supported special characters for the 'tex' interpreter:
+
+Superscript: ^{ } 'text^{superscript}'
+
+Subscript: _{ } 'text_{subscript}'
+
+| Character Sequence | Symbol |
+| ------------------ | ------ |
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+## 💡 Examples
 
 ```matlab
 f = figure(1)
@@ -487,9 +181,10 @@ t = text(0.5, 0.5, 'text here');
 s = t.FontSize;
 t.FontSize = 12;
 t.Color = 'red';
+
 ```
 
-<img src="text_1_1F5DE711.svg" align="middle"/>
+<img src="text_1.svg" align="middle"/>
 
 ```matlab
 figure();
@@ -515,7 +210,7 @@ xlabel(_('Horizontal alignment'));
 ylabel (_('Vertical alignment'));
 ```
 
-<img src="text_2_7E6236BA.svg" align="middle"/>
+<img src="text_2.svg" align="middle"/>
 
 ```matlab
 figure();
@@ -526,18 +221,18 @@ h2 = text(0.5, 0.3, 'OR Nelson ©')
 h2.String
 ```
 
-## See also
+## 🔗 See also
 
-[title](title.md).
+[title](../graphics/title.md).
 
-## History
+## 🕔 History
 
-| Version | Description                          |
+| Version | 📄 Description                       |
 | ------- | ------------------------------------ |
 | 1.0.0   | initial version                      |
 | 1.7.0   | CreateFcn, DeleteFcn callback added. |
 | --      | BeingDeleted property added.         |
 
-## Author
+## 👤 Author
 
 Allan CORNET

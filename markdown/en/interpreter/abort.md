@@ -1,35 +1,33 @@
 # abort
 
-# return
-
 stop evaluation.
 
-## Syntax
+## 📝 Syntax
 
 - abort
 - return
 
-## Description
+## 📄 Description
 
-  <p><b>return</b> or <b>abort</b> stops current evaluation.</p>
+<b>return</b> or <b>abort</b> stops current evaluation.
 
-## Example
+## 💡 Example
 
 ```matlab
 for i=1:10,a = i,abort,end
 a
 ```
 
-## See also
+## 🔗 See also
 
-[for](for.md).
+[for](../interpreter/for.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

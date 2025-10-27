@@ -2,18 +2,20 @@
 
 exit evaluation loop.
 
-## Syntax
+## 📝 Syntax
 
 - break
 
-## Description
+## 📄 Description
 
-  <p><b>break</b> statement is used to exit a loop prematurely.</p>
-  <p><b>break</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.</p>
+<b>break</b> statement is used to exit a loop prematurely.
 
-## Example
+<b>break</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.
+
+## 💡 Example
 
 ```matlab
+
 for i = 1:10
   if i == 5
    disp('i == 5');
@@ -21,18 +23,19 @@ for i = 1:10
   end
   disp(i)
 end
+
 ```
 
-## See also
+## 🔗 See also
 
-[return](abort.md).
+[return](../interpreter/abort.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

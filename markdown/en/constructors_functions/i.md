@@ -2,18 +2,19 @@
 
 Pure Imaginary number.
 
-## Syntax
+## 📝 Syntax
 
 - i
 - 0i
 - 3\*i
 
-## Description
+## 📄 Description
 
-  <p><b>i</b>, or <b>j</b> returns a pure imaginary number equivalent to sqrt(-1).</p>
-  <p>Beware, i and j can be redefined and used as ordinary variables, in this case, you must use clear to restore default behavior.</p>
+<b>i</b>, or <b>j</b> returns a pure imaginary number equivalent to sqrt(-1).
 
-## Examples
+Beware, i and j can be redefined and used as ordinary variables, in this case, you must use clear to restore default behavior.
+
+## 💡 Examples
 
 ```matlab
 A = 3i
@@ -30,16 +31,16 @@ clear('i');
 disp(i);
 ```
 
-## See also
+## 🔗 See also
 
 [complex](../elementary_functions/complex.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

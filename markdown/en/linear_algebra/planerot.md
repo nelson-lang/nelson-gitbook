@@ -2,40 +2,41 @@
 
 Givens plane rotation.
 
-## Syntax
+## 📝 Syntax
 
 - [G, Y] = planerot(X)
 
-## Input argument
+## 📥 Input argument
 
 - X - two-element column vector.
 
-## Output argument
+## 📤 Output argument
 
 - G - 2 by 2 orthogonal matrix.
 - Y - Y = G \* X with Y(2) = 0.
 
-## Description
+## 📄 Description
 
-  <p><b>[G, Y] = planerot(X)</b> computes the Givens rotation matrix for the two-element column vector <b>X</b>.</p>
+<b>[G, Y] = planerot(X)</b> computes the Givens rotation matrix for the two-element column vector <b>X</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [4; 5];
 [G, X] = planerot(X)
+
 ```
 
-## See also
+## 🔗 See also
 
-[norm](norm.html).
+[norm](../linear_algebra/norm.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

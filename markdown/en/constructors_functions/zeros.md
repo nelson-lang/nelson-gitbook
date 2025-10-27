@@ -2,7 +2,7 @@
 
 Creates an matrix made of zeros.
 
-## Syntax
+## 📝 Syntax
 
 - R = zeros
 - R = zeros(n)
@@ -11,16 +11,16 @@ Creates an matrix made of zeros.
 - R = zeros(n, m, ..., z, 'like', V)
 - R = zeros(n, m, ..., z, classname)
 
-## Input argument
+## 📥 Input argument
 
 - n - a variable
 - m - a variable
 
-## Description
+## 📄 Description
 
-  <p><b>zeros</b> returns a matrix made of zeros.</p>
+<b>zeros</b> returns a matrix made of zeros.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 zeros(3, 2)
@@ -40,16 +40,16 @@ tic(); single(1) * zeros(1000); toc()
 tic();zeros(1000, 'single'); toc()
 ```
 
-## See also
+## 🔗 See also
 
-[eye](eye.md), [ones](ones.md).
+[eye](../constructors_functions/eye.md), [ones](../constructors_functions/ones.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

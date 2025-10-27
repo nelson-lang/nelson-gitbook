@@ -2,11 +2,11 @@
 
 Matrix rank determination by incremental condition estimation.
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, JPVT_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03od(JOBQR, A_IN, JPVT_IN, RCOND, SVLMAX)
 
-## Input argument
+## 📥 Input argument
 
 - JOBQR - = 'Q': Perform a QR factorization with column pivoting; = 'N': Do not perform the QR factorization (but assume that it has been done outside).
 - A_IN - with JOBQR = 'Q', the leading M by N part of this array must contain the given matrix A.
@@ -14,7 +14,7 @@ Matrix rank determination by incremental condition estimation.
 - RCOND - RCOND is used to determine the effective rank of A, which is defined as the order of the largest leading triangular submatrix R11 in the QR factorization with pivoting of A, whose estimated condition number is less than 1/RCOND.
 - SVLMAX - If A is a submatrix of another matrix B, and the rank decision should be related to that matrix, then SVLMAX should be an estimate of the largest singular value of B
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - with JOBQR = 'Q', the leading min(M,N) by N upper triangular part of A contains the triangular factor R, and the elements below the diagonal, with the array TAU, represent the orthogonal matrix Q as a product of min(M,N) elementary reflectors.
 - JPVT_OUT - with JOBQR = 'Q', if JPVT(i) = k, then the i-th column of A\*P was the k-th column of A.
@@ -23,19 +23,19 @@ Matrix rank determination by incremental condition estimation.
 - SVAL - The estimates of some of the singular values of the triangular factor R
 - INFO - = 0: successful exit
 
-## Description
+## 📄 Description
 
-  <p>To compute (optionally) a rank-revealing QR factorization of a real general M-by-N matrix  A,  which may be rank-deficient, and estimate its effective rank using incremental condition estimation.</p>
+To compute (optionally) a rank-revealing QR factorization of a real general M-by-N matrix A, which may be rank-deficient, and estimate its effective rank using incremental condition estimation.
 
-Used function(s)
+## Used function(s)
 
 MB03OD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB03OD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 M = 6;
@@ -54,12 +54,12 @@ A_IN = [1.    2.    6.    3.    5.;
 [A_OUT, JPVT_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03od(JOBQR, A_IN, JPVT_IN, RCOND, SVLMAX)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

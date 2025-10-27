@@ -1,12 +1,8 @@
 # system
 
-# dos
-
-# unix
-
 Shell command execution.
 
-## Syntax
+## 📝 Syntax
 
 - status = system(command)
 - status = system(command, timeout)
@@ -22,14 +18,14 @@ Shell command execution.
 - [s, outputs, duration] = unix(commands)
 - [s, outputs, duration] = unix(commands, timeouts)
 
-## Input argument
+## 📥 Input argument
 
 - command - a string: command to execute in command shell.
 - commands - a cell of string or a string array: commands to execute in command shell in parallel.
 - timeout - an integer value (scalar): kill process using timeout in seconds.
 - timeouts - an integer value (scalar: applied to all commands or vector: one by command): kill process using timeout in seconds.
 
-## Output argument
+## 📤 Output argument
 
 - status - an integer value: exit code value of the command.
 - output - a string: output of the command.
@@ -38,16 +34,21 @@ Shell command execution.
 - output - a string array: output of the commands.
 - duration - an matrix of integer value: duration of each execution (milliseconds).
 
-## Description
+## 📄 Description
 
-  <p><b>system</b> sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell.</p>
-  <p><b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable.</p>
-  <p>Callback functions cannot be called until <b>system</b> command is not finished.</p>
-  <p>Nelson will convert characters to the encoding that your operating system shell accepts (ANSI on Windows by default, UTF-8 on others systems).</p>
-  <p>command can be interrupted with <b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b>output </b> contains 'ABORTED'.</p>
-  <p>if timeout value is 0. timeout disabled.</p>
+<b>system</b> sends a string to the operating system for execution. Standard output and standard errors of the shell command are written in the calling shell.
 
-## Examples
+<b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable.
+
+Callback functions cannot be called until <b>system</b> command is not finished.
+
+Nelson will convert characters to the encoding that your operating system shell accepts (ANSI on Windows by default, UTF-8 on others systems).
+
+command can be interrupted with <b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b> output </b> contains 'ABORTED'.
+
+if timeout value is 0. timeout disabled.
+
+## 💡 Examples
 
 ```matlab
 [s,w] = system('dir');
@@ -72,16 +73,16 @@ To detach an system command, include the trailing character, &, in the command a
 [s,w] = system('notepad &');
 ```
 
-## See also
+## 🔗 See also
 
-[winopen](winopen.md).
+[winopen](../os_functions/winopen.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

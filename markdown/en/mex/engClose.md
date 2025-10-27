@@ -2,39 +2,39 @@
 
 Close Nelson engine session
 
-## Syntax
+## 📝 Syntax
 
 - #include "engine.h"
 - int engClose(Engine \*ep);
 
-## Input argument
+## 📥 Input argument
 
 - Engine \*ep - handle to Nelson engine.
 
-## Output argument
+## 📤 Output argument
 
 - int - 0 on success and 1 on failure.
 
-## Description
+## 📄 Description
 
-  <p>engClose closes engine session and terminates the connection.</p>
+engClose closes engine session and terminates the connection.
 
-## Example
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
-## See also
+## 🔗 See also
 
-[mex](mex.md), [engOpen](engOpen.md).
+[mex](../mex/mex.md), [engOpen](../mex/engOpen.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

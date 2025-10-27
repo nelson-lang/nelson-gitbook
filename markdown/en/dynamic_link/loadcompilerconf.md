@@ -2,32 +2,34 @@
 
 load compiler configuration.
 
-## Syntax
+## 📝 Syntax
 
 - res = loadcompilerconf()
 - [res, compiler] = loadcompilerconf()
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical
 - compiler - a string: 'msvc', 'mingw', 'unix' or ''
 
-## Description
+## 📄 Description
 
-  <p><b>loadcompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.</p>
-  <p><b>loadcompilerconf</b> returns always false on others platforms and 'unix' as compiler.</p>
-  <p><b>loadcompilerconf</b> is called at Nelson's startup.</p>
+<b>loadcompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.
 
-## See also
+<b>loadcompilerconf</b> returns always false on others platforms and 'unix' as compiler.
 
-[removecompilerconf](removecompilerconf.md), [configuremingw](configuremingw.md), [configuremingw](configuremingw.md).
+<b>loadcompilerconf</b> is called at Nelson's startup.
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[removecompilerconf](../dynamic_link/removecompilerconf.md), [configuremingw](../dynamic_link/configuremingw.md), [configuremsvc](../dynamic_link/configuremsvc.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

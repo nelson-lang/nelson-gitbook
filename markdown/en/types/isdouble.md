@@ -2,23 +2,23 @@
 
 Return true if variable var is a double matrix.
 
-## Syntax
+## 📝 Syntax
 
 - res = isdouble(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isdouble</b> returns a logical 1 if the argument is a double matrix and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -40,16 +40,16 @@ A = [3, i];
 res = isdouble(A)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [single](single.html), [double](double.html), [isfloat](isfloat.md).
+[isa](../types/isa.md), [single](../integer/single.md), [double](../integer/double.md), [isfloat](../types/isfloat.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

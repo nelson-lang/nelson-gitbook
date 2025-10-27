@@ -2,46 +2,47 @@
 
 Locates functions and built-in.
 
-## Syntax
+## 📝 Syntax
 
 - which(function_name)
 - p = which(function_name)
 - c = which(function_name, '-all')
 - m = which(function_name, '-module')
 
-## Input argument
+## 📥 Input argument
 
 - function_name - a string: function name.
 
-## Output argument
+## 📤 Output argument
 
 - p - a string: path of the function or built-in
 - c - a cell of strings: paths of the function or built-in.
 - m - a cell of strings: name of the modules where function or built-in is available.
 
-## Description
+## 📄 Description
 
-  <p><b>which</b> returns the path of a function or a built-in.</p>
+<b>which</b> returns the path of a function or a built-in.
 
-## Example
+## 💡 Example
 
 ```matlab
 which('cos')
 p = which('cos')
 c = which('cos', '-all')
 m = which('cos', '-module')
+
 ```
 
-## See also
+## 🔗 See also
 
-[what](what.md).
+[what](../functions_manager/what.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

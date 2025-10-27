@@ -2,25 +2,25 @@
 
 Addition, + operator
 
-## Syntax
+## 📝 Syntax
 
 - C = plus(A, B)
 - C = A + B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A + B
 
-## Description
+## 📄 Description
 
-  <p><b>C = plus(A, B)</b> performs addition A + B variables.</p>
+<b>C = plus(A, B)</b> performs addition A + B variables.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 plus(3, 4)
@@ -36,16 +36,16 @@ plus([1, 2], 1)
 ones(0, 0) + 1
 ```
 
-## See also
+## 🔗 See also
 
-[minus](minus.md), [uplus](uplus.md).
+[minus](../operators/minus.md), [uplus](../operators/uplus.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

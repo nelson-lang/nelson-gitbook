@@ -2,38 +2,38 @@
 
 Checks that value is integer or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeInteger(var)
 - mustBeInteger(var, argPosition)
 - C++: void mustBeInteger(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement isnumeric, islogical, all, isreal, eq and floor methods.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeInteger</b> checks that value is integer or raise an error.</p>
+<b>mustBeInteger</b> checks that value is integer or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeInteger(-1)
 mustBeInteger(Inf)
 ```
 
-## See also
+## 🔗 See also
 
-[mustBeNumeric](mustBeNumeric.md).
+[mustBeNumeric](../validators/mustBeNumeric.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

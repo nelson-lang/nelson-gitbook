@@ -2,25 +2,33 @@
 
 Produces a beep sound.
 
-## Syntax
+## 📝 Syntax
 
 - beep
 - beep(str)
 - str = beep
 
-## Input argument
+## 📥 Input argument
 
 - str - a string: 'on' or 'off'.
 
-## Output argument
+## 📤 Output argument
 
 - str - a string: 'on' or 'off'.
 
-## Description
+## 📄 Description
 
-<b>beep</b> produces an beep system.
+<b>beep</b> produces a beep sound.
 
-## Example
+If the optional argument is 'off', the beep sound is disabled.
+
+If the optional argument is 'on', the beep sound is enabled.
+
+If no argument is provided, the current state is toggled.
+
+If an output argument is provided, the current state ('on' or 'off') is returned.
+
+## 💡 Example
 
 ```matlab
 beep('off')
@@ -30,12 +38,12 @@ beep
 s = beep
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

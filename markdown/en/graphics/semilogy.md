@@ -2,7 +2,7 @@
 
 Semilog plot (y-axis has log scale).
 
-## Syntax
+## 📝 Syntax
 
 - semilogy(X, Y)
 - semilogy(X, Y, LineSpec)
@@ -12,7 +12,7 @@ Semilog plot (y-axis has log scale).
 - semilogy(..., propertyName, propertyValue)
 - go = semilogy(...)
 
-## Input argument
+## 📥 Input argument
 
 - X - Linear scale coordinates: scalar, vector or matrix.
 - Y - Log scale coordinates: scalar, vector or matrix.
@@ -21,16 +21,17 @@ Semilog plot (y-axis has log scale).
 - propertyName - a scalar string or row vector character. see help of 'line' for property list.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: line type.
 
-## Description
+## 📄 Description
 
-  <p><b>semilogy(X, Y)</b> plots data using a base 10 logarithmic scale for the y-axis and a normal (linear) scale for the x-axis.</p>
-  <p><b>semilogy</b> has the exact same syntax as the <b>plot</b> command.</p>
+<b>semilogy(X, Y)</b> plots data using a base 10 logarithmic scale for the y-axis and a normal (linear) scale for the x-axis.
 
-## Examples
+<b>semilogy</b> has the exact same syntax as the <b>plot</b> command.
+
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -41,7 +42,7 @@ semilogy(x,y1,'--',x,y2)
 legend('x^2','x^3','Location','northwest')
 ```
 
-<img src="semilogy_1_4CB03C12.svg" align="middle"/>
+<img src="semilogy_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -55,18 +56,18 @@ semilogy(y)
 grid on
 ```
 
-<img src="semilogy_2_2ADED5C5.svg" align="middle"/>
+<img src="semilogy_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[semilogx](semilogx.md), [line](line.md), [plot](plot.md), [grid](grid.md).
+[semilogx](../graphics/semilogx.md), [line](../graphics/line.md), [plot](../graphics/plot.md), [grid](../graphics/grid.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

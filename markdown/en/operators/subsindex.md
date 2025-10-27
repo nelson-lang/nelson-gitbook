@@ -2,24 +2,24 @@
 
 Convert an object to an index vector.
 
-## Syntax
+## 📝 Syntax
 
 - r = subsindex(O)
 
-## Input argument
+## 📥 Input argument
 
 - O - a variable
 
-## Description
+## 📄 Description
 
-  <p>If <b>O</b> is an object then <b>subsindex</b> is the overloading method that allows to convert this object to a valid indexing vector.</p>
+If <b>O</b> is an object then <b>subsindex</b> is the overloading method that allows to convert this object to a valid indexing vector.
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

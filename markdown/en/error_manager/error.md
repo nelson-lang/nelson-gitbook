@@ -2,25 +2,27 @@
 
 Raise an error message.
 
-## Syntax
+## 📝 Syntax
 
 - error(id, msg)
 - error(msg)
 - error(error_structure)
 
-## Input argument
+## 📥 Input argument
 
 - id - a string: error identifier.
 - msg - a string.
 - error_structure - error message structure.
 
-## Description
+## 📄 Description
 
-  <p><b>error</b> stops the current script execution.</p>
-  <p><b>error('')</b> will be ignored and the script will continue to run.</p>
-  <p>identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')</p>
+<b>error</b> stops the current script execution.
 
-## Examples
+<b>error('')</b> will be ignored and the script will continue to run.
+
+identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')
+
+## 💡 Examples
 
 ```matlab
 error('your error message.')
@@ -30,7 +32,7 @@ error('')
 ```
 
 ```matlab
-1 / [1 2 3]
+ 1 / [1 2 3]
 a = lasterror()
 lasterror('reset')
 b = lasterror()
@@ -38,16 +40,16 @@ error(a)
 c = lasterror()
 ```
 
-## See also
+## 🔗 See also
 
-[MException](MException.md), [lasterror](lasterror.md), [warning](warning.md).
+[MException](../error_manager/MException.md), [lasterror](../error_manager/lasterror.md), [warning](../error_manager/warning.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

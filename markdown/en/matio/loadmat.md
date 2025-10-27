@@ -2,31 +2,31 @@
 
 load data from .mat file into Nelson's workspace.
 
-## Syntax
+## 📝 Syntax
 
 - loadmat(filename)
 - st = loadmat(filename)
 - loadmat(filename, var1, ..., varN)
 - st = loadmat(filename, var1, ..., varN)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: .mat filename.
 - var1, ..., varN - string: Names of variables to load into Nelson's workspace.
 
-## Output argument
+## 📤 Output argument
 
 - st - a structure with variables name as fieldnames.
 
-## Description
+## 📄 Description
 
-  <p><b>loadmat</b> loads data from .mat file to Nelson's workspace.</p>
+<b>loadmat</b> loads data from .mat file to Nelson's workspace.
 
-Bibliography
+## 📚 Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
-## Example
+## 💡 Example
 
 ```matlab
 A = ones(3, 4);
@@ -43,18 +43,19 @@ loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
+
 ```
 
-## See also
+## 🔗 See also
 
-[load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](savemat.md).
+[load](../stream_manager/load.md), [save](../stream_manager/save.md), [savemat](../matio/savemat.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

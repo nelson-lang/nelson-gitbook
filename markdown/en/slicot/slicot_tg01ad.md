@@ -2,11 +2,11 @@
 
 Balancing the matrices of the system pencil corresponding to a descriptor triple (A-lambda E, B, C).
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, E_OUT, B_OUT, C_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
 
-## Input argument
+## 📥 Input argument
 
 - JOB - = 'A': All matrices are involved in balancing; = 'B': B, A and E matrices are involved in balancing; = 'C': C, A and E matrices are involved in balancing; = 'N': B and C matrices are not involved in balancing.
 - THRESH - Threshold value for magnitude of elements: elements with magnitude less than or equal to THRESH are ignored for balancing.
@@ -15,7 +15,7 @@ Balancing the matrices of the system pencil corresponding to a descriptor triple
 - B_IN - The leading L-by-M part of this array must contain the input/state matrix B.
 - C_IN - The leading P-by-N part of this array must contain the state/output matrix C.
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - The leading L-by-N part of this array contains the balanced matrix Dl*A*Dr.
 - E_OUT - The leading L-by-N part of this array contains the balanced matrix Dl*E*Dr.
@@ -25,19 +25,19 @@ Balancing the matrices of the system pencil corresponding to a descriptor triple
 - RSCALE - The scaling factors applied to S from right.
 - INFO - = 0: successful exit.
 
-## Description
+## 📄 Description
 
-  <p>To balance the matrices of the system pencil corresponding to the descriptor triple (A-lambda E,B,C), by balancing.</p>
+To balance the matrices of the system pencil corresponding to the descriptor triple (A-lambda E,B,C), by balancing.
 
-Used function(s)
+## Used function(s)
 
 TG01AD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/TG01AD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 L = 4;
@@ -68,12 +68,12 @@ C_IN = [-0.1      0.0    0.001    0.0;
 [A_OUT, E_OUT, B_OUT, C_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

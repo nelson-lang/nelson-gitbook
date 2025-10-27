@@ -2,39 +2,39 @@
 
 Inverse cosecant in radians.
 
-## Syntax
+## 📝 Syntax
 
 - res = acsc(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>acsc</b> computes the inverse cosecant of argument in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 R = acsc(3)
 R = acsc(0.5)
 ```
 
-## See also
+## 🔗 See also
 
-[cscd](cscd.html), [csc](csc.html).
+[cscd](../trigonometric/cscd.md), [csc](../trigonometric/csc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

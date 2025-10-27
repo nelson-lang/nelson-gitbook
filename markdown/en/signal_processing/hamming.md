@@ -2,45 +2,45 @@
 
 Hamming window.
 
-## Syntax
+## 📝 Syntax
 
 - c = hamming(m)
 - c = hamming(m, opt)
 
-## Input argument
+## 📥 Input argument
 
 - m - positive integer: window length
 - opt - string: 'symetric' (default) or 'periodic'
 
-## Output argument
+## 📤 Output argument
 
 - c - column vector
 
-## Description
+## 📄 Description
 
-  <p><b>c = hamming(m)</b> computes coefficients of a Hamming window of length <b>m</b>.</p>
+<b>c = hamming(m)</b> computes coefficients of a Hamming window of length <b>m</b>.
 
-## Example
+## 📚 Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
+
+## 💡 Example
 
 ```matlab
 c = hamming(8)
 c = hamming(8, 'periodic')
 ```
 
-Bibliography
+## 🔗 See also
 
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
+[hann](../signal_processing/hann.md), [blackman](../signal_processing/blackman.md).
 
-## See also
+## 🕔 History
 
-[hann](hann.md), [blackman](blackman.md).
-
-## History
-
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

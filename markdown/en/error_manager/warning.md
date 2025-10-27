@@ -2,7 +2,7 @@
 
 Display a warning message.
 
-## Syntax
+## 📝 Syntax
 
 - warning()
 - warning(msg)
@@ -12,23 +12,24 @@ Display a warning message.
 - st = warning()
 - warning(st)
 
-## Input argument
+## 📥 Input argument
 
 - id - a string: identifier for the warning.
 - msg - a string: message to warn.
 - state - a string: 'on', 'off', 'aserror', 'all' or 'query'.
 - st - a struct: set warning settings.
 
-## Output argument
+## 📤 Output argument
 
 - st - a struct, warning settings.
 
-## Description
+## 📄 Description
 
-  <p><b>warning</b> displays a warning message.</p>
-  <p><b>warning('')</b> resets lastwarn state.</p>
+<b>warning</b> displays a warning message.
 
-## Examples
+<b>warning('')</b> resets lastwarn state.
+
+## 💡 Examples
 
 ```matlab
 warning('your warning message.')
@@ -41,18 +42,20 @@ warning('off', 'myModule:identifier');
 warning('myModule:identifier', 'my message 2 off');
 warning('aserror', 'myModule:identifier');
 warning('myModule:identifier', 'my message 3 as error');
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[lasterror](lasterror.md), [error](error.md), [lastwarn](lastwarn.md).
+[lasterror](../error_manager/lasterror.md), [error](../error_manager/error.md), [lastwarn](../error_manager/lastwarn.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

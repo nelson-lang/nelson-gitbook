@@ -2,7 +2,7 @@
 
 set or get y-axis limits.
 
-## Syntax
+## 📝 Syntax
 
 - lims = ylim()
 - ylim([ymin, ymax])
@@ -11,7 +11,7 @@ set or get y-axis limits.
 - m = ylim('mode')
 - ylim(ax, ...)
 
-## Input argument
+## 📥 Input argument
 
 - [ymin, ymax] - y-coordinates: vector or matrix.
 - 'auto' - enable automatic limit selection.
@@ -19,16 +19,16 @@ set or get y-axis limits.
 - 'mode' - returns the current y-axis limits mode.
 - ax - a scalar graphics object value: parent container, specified as a axes.
 
-## Output argument
+## 📤 Output argument
 
 - lims - two-element vector: [ymin, ymax]
 - m - 'auto' or 'manual'.
 
-## Description
+## 📄 Description
 
-  <p><b>ylim</b> get or set the limits of the y-axis for the current plot.</p>
+<b>ylim</b> get or set the limits of the y-axis for the current plot.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = linspace(-1, 1);
@@ -36,18 +36,19 @@ y = sin(2*pi*x);
 plot(x, y);
 lim = ylim()
 m = ylim('mode')
+
 ```
 
-## See also
+## 🔗 See also
 
-[axes](axes.md), [axis](axis.md).
+[axes](../graphics/axes.md), [axis](../graphics/axis.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

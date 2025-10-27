@@ -2,27 +2,27 @@
 
 Extract subsystem from larger system.
 
-## Syntax
+## 📝 Syntax
 
 - sysOut = ssselect(sysIn, INPUTS, OUTPUTS)
 - sysOut = ssselect(sysIn, INPUTS, OUTPUTS, STATES)
 
-## Input argument
+## 📥 Input argument
 
 - sysIn - state-space model
 - INPUTS - indexes into the system inputs
 - OUTPUTS - indexes into the system outputs
 - STATES - specified states
 
-## Output argument
+## 📤 Output argument
 
 - sysOut - state-space model: subsystem from larger system.
 
-## Description
+## 📄 Description
 
-  <p><b>ssselect</b> extracts subsystem from larger system.</p>
+<b>ssselect</b> extracts subsystem from larger system.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [33,2,5; 23,200,2; 9,2,45];
@@ -34,18 +34,20 @@ inputs = 1;
 outputs = 1;
 
 R = ssselect(sys1, inputs, outputs)
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[ssdelete](ssdelete.md).
+[ssdelete](../control_system/ssdelete.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

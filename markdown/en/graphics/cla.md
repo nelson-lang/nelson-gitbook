@@ -2,25 +2,25 @@
 
 Clear axes.
 
-## Syntax
+## 📝 Syntax
 
 - cla
 - cla(ax)
 - ca = cla(...)
 
-## Input argument
+## 📥 Input argument
 
 - ax - a scalar graphics object on an existing axes.
 
-## Output argument
+## 📤 Output argument
 
 - ca - a graphics object: used axes graphics object.
 
-## Description
+## 📄 Description
 
-  <p><b>cla</b> clears the current axes.</p>
+<b>cla</b> clears the current axes.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -31,16 +31,16 @@ sleep(5)
 cla
 ```
 
-## See also
+## 🔗 See also
 
-[gca](gca.md), [clf](clf.md).
+[gca](../graphics/gca.md), [clf](../graphics/clf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

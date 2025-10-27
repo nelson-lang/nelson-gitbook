@@ -2,24 +2,24 @@
 
 Summer colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = summer
 - c = autumn(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Summer colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>summer</b> returns the colormap with summer colors.</p>
+<b>summer</b> returns the colormap with summer colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -27,18 +27,18 @@ surf(peaks);
 colormap('summer');
 ```
 
-<img src="summer_B083991B.svg" align="middle"/>
+<img src="summer.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

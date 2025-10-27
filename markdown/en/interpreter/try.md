@@ -1,21 +1,21 @@
 # try
 
-# catch
-
 try/catch statement.
 
-## Syntax
+## 📝 Syntax
 
 - try, statements_1, catch, statements_2, end
 - try, statements_1, catch exception, statements_2, end
 
-## Description
+## 📄 Description
 
-  <p><b>try</b> and <b>catch</b> statements are used for error handling and control in files.</p>
-  <p><b>exception</b> is an <b>MException</b> object that allows you to identify the error.</p>
-  <p>The catch block assigns the current exception object to the variable in exception.</p>
+<b>try</b> and <b>catch</b> statements are used for error handling and control in files.
 
-## Examples
+<b>exception</b> is an <b>MException</b> object that allows you to identify the error.
+
+The catch block assigns the current exception object to the variable in exception.
+
+## 💡 Examples
 
 try/catch in a script file
 
@@ -37,16 +37,16 @@ catch ME
 end
 ```
 
-## See also
+## 🔗 See also
 
 [run](../core/run.md), [execstr](../core/execstr.md), [MException](../error_manager/MException.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

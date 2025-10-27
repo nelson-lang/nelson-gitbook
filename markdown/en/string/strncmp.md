@@ -2,25 +2,25 @@
 
 Compares first n characters of strings.
 
-## Syntax
+## 📝 Syntax
 
 - res = strncmp(s1, s2, n)
 
-## Input argument
+## 📥 Input argument
 
 - s1 - a string, string array or cell of strings.
 - s2 - a string, string array or cell of strings.
 - n - an integer value: numbers of characters to compare.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if the two are identical and false otherwise.
 
-## Description
+## 📄 Description
 
 <b>strncmp</b> compares the first n characters of two strings (case sensitive).
 
-## Example
+## 💡 Example
 
 ```matlab
 strncmp('Nelson', 'nelSon', 3)
@@ -32,18 +32,19 @@ C = {'C', 'Contents'; 'Nel', 'son'}
 strncmp(A, B, 2)
 strncmp(A, C, 2)
 strncmp(C, 'C', 4)
+
 ```
 
-## See also
+## 🔗 See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

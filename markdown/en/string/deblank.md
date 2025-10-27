@@ -2,24 +2,25 @@
 
 Remove trailing whitespace.
 
-## Syntax
+## 📝 Syntax
 
 - res = deblank(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string, a cell of strings or a string array.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string without trailing whitespace.
 
-## Description
+## 📄 Description
 
-  <p><b>deblank</b> removes trailing whitespace.</p>
-  <p><b>deblank</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).</p>
+<b>deblank</b> removes trailing whitespace.
 
-## Examples
+<b>deblank</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).
+
+## 💡 Examples
 
 ```matlab
 deblank(' Nel Son ')
@@ -33,16 +34,16 @@ deblank(" Nel Son ")
 deblank([' Nel Son ', char(160)])
 ```
 
-## See also
+## 🔗 See also
 
-[strtrim](strtrim.md), [toupper](toupper.md).
+[strtrim](../string/strtrim.md), [toupper](../string/toupper.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

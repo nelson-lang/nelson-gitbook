@@ -1,10 +1,12 @@
 # Parallel
 
-Parallel
+The parallel module provides tools for running computations asynchronously in the
+background, managing task scheduling, and retrieving results.
 
-## Description
+It enables Nelson programs to execute functions concurrently, improving efficiency and
+responsiveness by offloading work to background workers.
 
-parallel functions
+## Functions
 
 - [afterAll](afterAll.md) - Run function after all functions finish running in the background.
 - [afterEach](afterEach.md) - Run function after each function finish running in the background.

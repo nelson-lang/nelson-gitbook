@@ -2,34 +2,34 @@
 
 Set a property value of an handle object.
 
-## Syntax
+## 📝 Syntax
 
 - R = set(h, property_name, value)
 
-## Input argument
+## 📥 Input argument
 
 - h - an handle object.
 - property_name - a string: property name.
 - value - a variable.
 
-## Output argument
+## 📤 Output argument
 
 - R - user-settable properties and possible values for the object identified by h.
 
-## Description
+## 📄 Description
 
-  <p>This routine can be used to modify the value of a specified property from an handle object.</p>
+This routine can be used to modify the value of a specified property from an handle object.
 
-## See also
+## 🔗 See also
 
-[QObject_set (set)](../qml_engine/QObject_set.md), [get](get.md), [invoke](invoke.md).
+[QObject_set (set)](../qml_engine/QObject_set.md), [get](../handle/get.md), [invoke](../handle/invoke.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

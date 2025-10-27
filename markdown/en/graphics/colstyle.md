@@ -2,28 +2,28 @@
 
 Parse color and style from string.
 
-## Syntax
+## 📝 Syntax
 
 - [linespec, colorspec, markerspec, msg] = colstyle (str)
 - [linespec, colorspec, markerspec, msg] = colstyle (str, 'plot')
 
-## Input argument
+## 📥 Input argument
 
 - str - a row vector of character or scalar string: line specification.
 - 'plot' - linespec returns 'none' and not '' with this option.
 
-## Output argument
+## 📤 Output argument
 
 - linespec - a string: line type.
 - colorspec - a string: color part.
 - markerspec - a string: marker part.
 - msg - a string: contain the error message string.
 
-## Description
+## 📄 Description
 
-  <p><b>colstyle</b> parses color and style from string.</p>
+<b>colstyle</b> parses color and style from string.
 
-## Example
+## 💡 Example
 
 ```matlab
 [l, c, m, msg] = colstyle('r:x')
@@ -31,16 +31,16 @@ Parse color and style from string.
 [l, c, m, msg] = colstyle('*', 'plot')
 ```
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

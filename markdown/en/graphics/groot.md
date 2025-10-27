@@ -2,46 +2,57 @@
 
 graphic root object.
 
-## Syntax
+## 📝 Syntax
 
 - g = groot()
 
-## Output argument
+## 📤 Output argument
 
 - g - a graphics object: root object.
 
-## Description
+## 📄 Description
 
-  <p><b>groot</b> returns graphic root object.</p>
-  <p>Properties:</p>
-  <p><b>Children</b>: Array of available figure objects.</p>
-  <p><b>CurrentFigure</b>: Current figure graphics object.</p>
-  <p><b>Parent</b>: empty array (No parent)</p>
-  <p><b>PointerLocation</b>: Current location of pointer.</p>
-  <p><b>ScreenDepth</b>: Number of bits that define each pixel color.</p>
-  <p><b>ScreenSize</b>: Size of primary display (vector).</p>
-  <p><b>Tag</b>: Object identifier: string scalar, character vector, '' (default).</p>
-  <p><b>Type</b>: Type 'root'.</p>
-  <p><b>Units</b>: 'pixels'.</p>
-  <p><b>UserData</b>: User data: array or [] (default).</p>
+<b>groot</b> returns graphic root object.
 
-## Example
+Properties:
+
+<b>Children</b>: Array of available figure objects.
+
+<b>CurrentFigure</b>: Current figure graphics object.
+
+<b>Parent</b>: empty array (No parent)
+
+<b>PointerLocation</b>: Current location of pointer.
+
+<b>ScreenDepth</b>: Number of bits that define each pixel color.
+
+<b>ScreenSize</b>: Size of primary display (vector).
+
+<b>Tag</b>: Object identifier: string scalar, character vector, '' (default).
+
+<b>Type</b>: Type 'root'.
+
+<b>Units</b>: 'pixels'.
+
+<b>UserData</b>: User data: array or [] (default).
+
+## 💡 Example
 
 ```matlab
 g = groot()
 g.ScreenDepth
 ```
 
-## See also
+## 🔗 See also
 
-[figure](figure.md), [gcf](gcf.md).
+[figure](../graphics/figure.md), [gcf](../graphics/gcf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

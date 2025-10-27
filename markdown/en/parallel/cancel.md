@@ -2,21 +2,23 @@
 
 Stop function running in the background.
 
-## Syntax
+## 📝 Syntax
 
 - cancel(f)
 
-## Input argument
+## 📥 Input argument
 
 - f - FevalFuture object: scalar or array.
 
-## Description
+## 📄 Description
 
-  <p><b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.</p>
-  <p>Future cancelled Findicates an error as property.</p>
-  <p>Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.</p>
+<b>cancel(f)</b> will stop each running or queued element of the Future array <b>f</b>.
 
-## Example
+Future cancelled Findicates an error as property.
+
+Some functions cannot be interrupted by pressing <b>Ctrl+C</b> or <b>cancel</b>, such as <b>save</b> function.
+
+## 💡 Example
 
 ```matlab
 fptr = str2func('pause');
@@ -28,16 +30,16 @@ cancel(f(70))
 f(70)
 ```
 
-## See also
+## 🔗 See also
 
-[pause](../core/pause.md), [parfeval](parfeval.md), [wait](wait.md).
+[pause](../core/pause.md), [parfeval](../parallel/parfeval.md), [wait](../parallel/wait.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

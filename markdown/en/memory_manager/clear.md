@@ -2,7 +2,7 @@
 
 Remove variable from workspace.
 
-## Syntax
+## 📝 Syntax
 
 - clear
 - clear variable_name
@@ -16,7 +16,7 @@ Remove variable from workspace.
 - clear variable_name_1 ... variable_name_N
 - clear global variable_name
 
-## Input argument
+## 📥 Input argument
 
 - variable_name - a string: variable name.
 - global - clears all global variables.
@@ -27,12 +27,13 @@ Remove variable from workspace.
 - function_name - clears persistent variables of a function.
 - mexfunction_name - clears mex function (see mexAtExit).
 
-## Description
+## 📄 Description
 
-  <p><b>clear</b> is used to remove variable given by its name.</p>
-  <p><b>clear</b> can also delete handle object if a function handle_TYPE_clear is defined.</p>
+<b>clear</b> is used to remove variable given by its name.
 
-## Example
+<b>clear</b> can also delete handle object if a function handle_TYPE_clear is defined.
+
+## 💡 Example
 
 ```matlab
 A = 3;
@@ -42,16 +43,16 @@ who
 A
 ```
 
-## See also
+## 🔗 See also
 
-[who](who.md).
+[who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

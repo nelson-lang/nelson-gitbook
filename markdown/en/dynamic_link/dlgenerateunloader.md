@@ -2,38 +2,39 @@
 
 Generates unloader.m file for C++ gateway.
 
-## Syntax
+## 📝 Syntax
 
 - dlgenerateunloader(destinationdir, libraryname)
 
-## Input argument
+## 📥 Input argument
 
 - destinationdir - a string: destination directory where is generated the unloader.m file.
 - libraryname - a string or a cell of string: external dynamic library names.
 
-## Description
+## 📄 Description
 
-  <p><b>dlgenerateunloader</b> generates a 'unloader.m' unload external dynamic libraries.</p>
+<b>dlgenerateunloader</b> generates a 'unloader.m' unload external dynamic libraries.
 
-## Example
+## 💡 Example
 
 See module skeleton for example
 
 ```matlab
+
 dlgenerateunloader(tempdir(), {'c_dynamic_library_1',  'c_dynamic_library_2'});
 text = fileread([tempdir(), 'unloader.m'])
 ```
 
-## See also
+## 🔗 See also
 
-[dlgenerateloader](dlgenerateloader.md), [dlgenerategateway](dlgenerategateway.md).
+[dlgenerateloader](../dynamic_link/dlgenerateloader.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

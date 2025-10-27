@@ -2,25 +2,22 @@
 
 Terminate the MPI execution environment.
 
-## Syntax
+## 📝 Syntax
 
 - MPI_Finalize()
 - r = MPI_Finalize()
 
-## Output argument
+## 📤 Output argument
 
 - r - a logical.
 
-## Description
+## 📄 Description
 
-  <p>Terminate the MPI execution environment.</p>
-  <p>MPI process are launched in CLI mode (no gui, no plot).</p>
+Terminate the MPI execution environment.
 
-## See also
+MPI process are launched in CLI mode (no gui, no plot).
 
-[MPI_Initialized](MPI_Initialized.md), [MPI_Init](MPI_Init.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 if ~MPI_Initialized()
@@ -29,14 +26,19 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Initialized](../mpi/MPI_Initialized.md), [MPI_Init](../mpi/MPI_Init.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

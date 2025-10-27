@@ -2,26 +2,26 @@
 
 Vertical concatenation.
 
-## Syntax
+## 📝 Syntax
 
 - R = vertcat(M1, M2, ... , MN)
 - R = [M1; M2; ... ; MN]
 
-## Input argument
+## 📥 Input argument
 
 - M1 - a variable
 - M2 - a variable
 - MN - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - result of [M1; M2; ... ; MN]
 
-## Description
+## 📄 Description
 
-  <p><b>R = vertcat(M1, M2, ... , MN)</b> returns the vertical concatenation of M1, M2, ... , MN along the dimension 1.</p>
+<b>R = vertcat(M1, M2, ... , MN)</b> returns the vertical concatenation of M1, M2, ... , MN along the dimension 1.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = eye(2, 2);
@@ -36,16 +36,16 @@ B = 'son';
 C = vertcat(A, B)
 ```
 
-## See also
+## 🔗 See also
 
-[horzcat](horzcat.md), [cat](cat.md).
+[horzcat](../operators/horzcat.md), [cat](../operators/cat.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

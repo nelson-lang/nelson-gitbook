@@ -2,32 +2,32 @@
 
 Return true if variable h is a valid handle.
 
-## Syntax
+## 📝 Syntax
 
 - res = isvalid(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - an handle object
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isvalid</b> returns a logical 1 if the argument is a valid handle and a logical 0 otherwise.
 
-## See also
+## 🔗 See also
 
 [isa](../types/isa.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

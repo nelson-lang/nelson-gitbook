@@ -2,36 +2,39 @@
 
 Get audio file information.
 
-## Syntax
+## 📝 Syntax
 
 - info = audioinfo(filename)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: an valid audio filename.
 
-## Output argument
+## 📤 Output argument
 
 - info - a struct: information about audio file.
 
-## Description
+## 📄 Description
 
-  <p><b>audioinfo</b> returns a structure with information about audio file.</p>
-  <p>Many audio formats are supported as OGG, FLAC, WAV, RAW.</p>
+<b>audioinfo</b> returns a structure with information about audio file.
 
-## Example
+Many audio formats are supported as OGG, FLAC, WAV, RAW.
+
+## 💡 Example
 
 ```matlab
+
 wav_file = [modulepath('audio'), '/examples/haha.wav'];
 info = audioinfo(wav_file)
+
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

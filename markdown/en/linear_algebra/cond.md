@@ -2,41 +2,42 @@
 
 Condition number for inversion.
 
-## Syntax
+## 📝 Syntax
 
 - c = rcond(A, p)
 
-## Input argument
+## 📥 Input argument
 
 - A - a numeric value: square or rectangular (double or single)
 - p - norm type: Inf, 'fro', 1, 2 (default)
 
-## Output argument
+## 📤 Output argument
 
 - c - a numeric value: a scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>c = cond(A)</b> returns the 2-norm condition number for inversion.</p>
-  <p><b>c = cond(A, p)</b> returns the p-norm condition number, where p can be 1, 2, Inf, or 'fro'.</p>
+<b>c = cond(A)</b> returns the 2-norm condition number for inversion.
 
-## Example
+<b>c = cond(A, p)</b> returns the p-norm condition number, where p can be 1, 2, Inf, or 'fro'.
+
+## 💡 Example
 
 ```matlab
 X = rand(10, 10);
 r = cond(X)
 ```
 
-## See also
+## 🔗 See also
 
-[rcond](rcond.md).
+[rcond](../linear_algebra/rcond.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

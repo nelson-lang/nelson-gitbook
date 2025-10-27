@@ -2,27 +2,28 @@
 
 Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same values).
 
-## Syntax
+## 📝 Syntax
 
 - res = isequal(x1, x2)
 - res = isequal(x1, x2, xn)
 
-## Input argument
+## 📥 Input argument
 
 - x1 - a value
 - x2 - a value
 - xn - a value
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical value
 
-## Description
+## 📄 Description
 
 <b>isequal</b> returns true if x1 and x2 are the same size and their contents are of equal value; otherwise, it returns false.
-<b>isequal</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be <b>unequal</b> to other elements.
 
-## Examples
+<b>isequal</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be NOT <b>equal</b> to other elements.
+
+## 💡 Examples
 
 ```matlab
 A = eye(3, 3);
@@ -44,16 +45,16 @@ res = isequal('nel', 'son')
 res = isequalnNaN, NaN)
 ```
 
-## See also
+## 🔗 See also
 
-[isequaln](isequaln.md), [isequalto](isequalto.md).
+[isequaln](../elementary_functions/isequaln.md), [isequalto](../elementary_functions/isequalto.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

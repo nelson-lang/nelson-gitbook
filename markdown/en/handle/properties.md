@@ -2,33 +2,33 @@
 
 Returns the properties name of an object handle.
 
-## Syntax
+## 📝 Syntax
 
 - properties(h)
 - c = properties(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a handle object
 
-## Output argument
+## 📤 Output argument
 
 - c - a cell of strings
 
-## Description
+## 📄 Description
 
 <b>properties</b> returns a cell of strings with properties name.
 
-## See also
+## 🔗 See also
 
-[isprop](isprop.md).
+[isprop](../handle/isprop.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

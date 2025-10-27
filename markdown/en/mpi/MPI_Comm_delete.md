@@ -2,25 +2,27 @@
 
 Removes MPI_Comm object.
 
-## Syntax
+## 📝 Syntax
 
 - MPI_Comm_delete(h)
 - delete(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a handle: a MPI_Comm object.
 
-## Description
+## 📄 Description
 
-  <p><b>delete(h)</b> deletes MPI_Comm object itself.</p>
-  <p>Do not forget to clear variable afterward.</p>
+<b>delete(h)</b> deletes MPI_Comm object itself.
 
-## Example
+Do not forget to clear variable afterward.
+
+## 💡 Example
 
 CLI required
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -31,18 +33,19 @@ MPI_Comm_used
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## See also
+## 🔗 See also
 
-[MPI_Comm_used](MPI_Comm_used.md).
+[MPI_Comm_used](../mpi/MPI_Comm_used.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

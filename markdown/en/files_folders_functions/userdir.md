@@ -2,35 +2,35 @@
 
 Returns the current user's path.
 
-## Syntax
+## 📝 Syntax
 
 - userdir()
 - p = userdir()
 
-## Output argument
+## 📤 Output argument
 
 - p - a string: current user directory.
 
-## Description
+## 📄 Description
 
-  <p>Returns the name of the user's directory.</p>
+Returns the name of the user's directory.
 
-## Example
+## 💡 Example
 
 ```matlab
 r = userdir()
 ```
 
-## See also
+## 🔗 See also
 
-[cd](cd.md), [dir](dir.md), [tempdir](tempdir.md).
+[cd](../files_folders_functions/cd.md), [dir](../files_folders_functions/dir.md), [tempdir](../files_folders_functions/tempdir.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

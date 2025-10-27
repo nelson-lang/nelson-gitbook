@@ -2,23 +2,23 @@
 
 Checks input is vector.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isvector(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'isvector'.
 
-## Description
+## 📄 Description
 
-  <p><b>isvector</b> returns an scalar logical if entry is an vector.</p>
+<b>isvector</b> returns an scalar logical if entry is an vector.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
@@ -26,16 +26,16 @@ R = isvector(A)
 R = isvector(A(:,1))
 ```
 
-## See also
+## 🔗 See also
 
-[isempty](isempty.html).
+[isempty](../elementary_functions/isempty.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

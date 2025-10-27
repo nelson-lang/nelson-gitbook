@@ -2,25 +2,25 @@
 
 Matrix left division, \ operator.
 
-## Syntax
+## 📝 Syntax
 
 - C = mldivide(A, B)
 - C = A \ B
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A \ B
 
-## Description
+## 📄 Description
 
-  <p><b>C = mldivide(A, B)</b> returns the matrix left division of A and B.</p>
+<b>C = mldivide(A, B)</b> returns the matrix left division of A and B.
 
-## Example
+## 💡 Example
 
 ```matlab
 B = ones(3, 4)
@@ -28,16 +28,16 @@ A = B *2
 A \ B
 ```
 
-## See also
+## 🔗 See also
 
-[ldivide](ldivide.md), [mrdivide](mrdivide.md).
+[ldivide](../operators/ldivide.md), [mrdivide](../operators/mrdivide.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

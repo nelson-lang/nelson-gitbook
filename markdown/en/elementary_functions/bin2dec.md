@@ -2,40 +2,42 @@
 
 Convert number in base 2 to decimal.
 
-## Syntax
+## 📝 Syntax
 
 - D = bin2dec(TXT)
 
-## Input argument
+## 📥 Input argument
 
 - TXT - a char array.
 
-## Output argument
+## 📤 Output argument
 
 - D - result of bin2dec: an integer value.
 
-## Description
+## 📄 Description
 
-  <p><b>bin2dec</b> converts number in base 2 to decimal.</p>
-  <p>Note:</p>
-  <p> - <b>bin2dec</b> and <b>dec2bin</b> are inverses of one another.</p>
+<b>bin2dec</b> converts number in base 2 to decimal.
 
-## Example
+Note:
+
+- <b>bin2dec</b> and <b>dec2bin</b> are inverses of one another.
+
+## 💡 Example
 
 ```matlab
 bin2dec('11')
 ```
 
-## See also
+## 🔗 See also
 
-[dec2bin](dec2bin.md).
+[dec2bin](../elementary_functions/dec2bin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

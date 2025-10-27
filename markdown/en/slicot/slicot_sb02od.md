@@ -2,11 +2,11 @@
 
 Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method).
 
-## Syntax
+## 📝 Syntax
 
 - [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
 
-## Input argument
+## 📥 Input argument
 
 - DICO - Specifies the type of Riccati equation to be solved as follows: = 'C': continuous-time case; 'D': discrete-time case.
 - JOBB - Specifies whether or not the matrix G is given, instead of the matrices B and R, as follows: = 'B': B and R are given; = 'G': G is given.
@@ -22,7 +22,7 @@ Solution of continuous- or discrete-time algebraic Riccati equations (generalize
 - L - If JOBL = 'N' (and JOBB = 'B'), the leading N-by-M part of this array must contain the cross weighting matrix L. This part is modified internally, but is restored on exit. If JOBL = 'Z' or JOBB = 'G', this array is not referenced.
 - TOL - The tolerance to be used to test for near singularity of the original matrix pencil, specifically of the triangular factor obtained during the reduction process.
 
-## Output argument
+## 📤 Output argument
 
 - RCOND - An estimate of the reciprocal of the condition number (in the 1-norm) of the N-th order system of algebraic equations from which the solution matrix X is obtained.
 - X - The leading N-by-N part of this array contains the solution matrix X of the problem.
@@ -32,21 +32,23 @@ Solution of continuous- or discrete-time algebraic Riccati equations (generalize
 - U - The leading 2N-by-2N part of this array contains the right transformation matrix U which reduces the 2N-by-2N matrix pencil to the ordered generalized real Schur form (S,T), or the Hamiltonian matrix to the ordered real Schur form S, if DICO = 'C' and JOBB = 'G'.
 - INFO - = 0: successful exit;
 
-## Description
+## 📄 Description
 
-  <p>Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)</p>
-  <p>The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.</p>
-  <p>A standard eigenproblem is solved in the continuous-time case if G is given.</p>
+Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)
 
-Used function(s)
+The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.
+
+A standard eigenproblem is solved in the continuous-time case if G is given.
+
+## Used function(s)
 
 SB02OD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB02OD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 N = 2;
@@ -72,12 +74,12 @@ L = zeros(N, M);
 [RCOND, X, ALFAR, ALFAI, BETA, S, T, U, INFO] = slicot_sb02od(DICO, JOBB, FACT, UPLO, JOBL, SORT, P, A, B, Q, R, L, TOL)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

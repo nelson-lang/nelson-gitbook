@@ -2,39 +2,40 @@
 
 Matrix polynomial evaluation.
 
-## Syntax
+## 📝 Syntax
 
 - Y = polyvalm(p, X)
 
-## Input argument
+## 📥 Input argument
 
 - p - vector: polynomial coefficients
 - X - square matrix: input matrix
 
-## Output argument
+## 📤 Output argument
 
 - Y - row vector: Output polynomial coefficients
 
-## Description
+## 📄 Description
 
-  <p><b>polyvalm</b> evaluates matrix polynomial.</p>
+<b>polyvalm</b> evaluates matrix polynomial.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 R = polyvalm ([1, 2, 3, 4], [3, -4, 1; -2, 0, 2; -1, 4, -3])
 ```
 
-## See also
+## 🔗 See also
 
-[polyval](polyval.md).
+[polyval](../polynomial_functions/polyval.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Creates an identity matrix.
 
-## Syntax
+## 📝 Syntax
 
 - R = eye
 - R = eye(n)
@@ -11,16 +11,16 @@ Creates an identity matrix.
 - R = eye(n, m, ..., z, 'like', V)
 - R = eye(n, m, ..., z, classname)
 
-## Input argument
+## 📥 Input argument
 
 - n - a variable: n-by-n matrix
 - m - a variable: n-by-m matrix
 
-## Description
+## 📄 Description
 
-  <p><b>eye</b> returns an identity matrix.</p>
+<b>eye</b> returns an identity matrix.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 eye(3)
@@ -39,16 +39,16 @@ B = eye(2,4,'like', A)
 A = eye(0, 4)
 ```
 
-## See also
+## 🔗 See also
 
-[ones](ones.md), [zeros](zeros.md).
+[ones](../constructors_functions/ones.md), [zeros](../constructors_functions/zeros.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,23 @@
 
 Get the Property contains the directory to store offline user data.
 
-## Syntax
+## 📝 Syntax
 
 - p = qml_offlinestoragepath()
 
-## Input argument
+## 📥 Input argument
 
 - path_data - a string
 
-## Output argument
+## 📤 Output argument
 
 - p - a string: path.
 
-## Description
+## 📄 Description
 
-  <p>Get the Property contains the directory to store offline user data.</p>
+Get the Property contains the directory to store offline user data.
 
-## See also
-
-[qml_setofflinestoragepath](qml_setofflinestoragepath.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 qml_offlinestoragepath()
@@ -30,12 +26,16 @@ qml_setofflinestoragepath(tmpdir())
 qml_offlinestoragepath()
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[qml_setofflinestoragepath](../qml_engine/qml_setofflinestoragepath.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

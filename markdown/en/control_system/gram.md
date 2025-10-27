@@ -2,39 +2,40 @@
 
 Controllability and observability Gramians.
 
-## Syntax
+## 📝 Syntax
 
 - wc = gram(sys, 'o')
 - wc = gram(sys, 'c')
 
-## Input argument
+## 📥 Input argument
 
 - sys - state-space model.
 
-## Output argument
+## 📤 Output argument
 
 - wc - observability or controllability Gramian.
 
-## Description
+## 📄 Description
 
-## Example
+## 💡 Example
 
 ```matlab
 sys = ss([-.1 -1;1 0], [1;0], [0 1], 0);
 wc = gram(sys, 'c')
 wc = gram(sys, 'o')
+
 ```
 
-## See also
+## 🔗 See also
 
-[lyap](lyap.md), [dlyap](dlyap.md).
+[lyap](../control_system/lyap.md), [dlyap](../control_system/dlyap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

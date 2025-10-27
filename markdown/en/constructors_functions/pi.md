@@ -2,15 +2,15 @@
 
 Ratio of circle's circumference to its diameter.
 
-## Syntax
+## 📝 Syntax
 
 - pi
 
-## Description
+## 📄 Description
 
-  <p><b>pi</b> eturns the floating-point number nearest the value of <b>π </b>.</p>
+<b>pi</b> returns the floating-point number nearest the value of <b>π</b>.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 cos(pi)
@@ -24,16 +24,16 @@ sin(pi)
 4*atan(1) == pi
 ```
 
-## See also
+## 🔗 See also
 
 [cos](../trigonometric_functions/cos.md), [sin](../trigonometric_functions/sin.md), [atan](../trigonometric_functions/atan.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

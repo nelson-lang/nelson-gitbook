@@ -2,39 +2,40 @@
 
 Checks that value is scalar or empty or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeScalarOrEmpty(var)
 - mustBeScalarOrEmpty(var, argPosition)
 - C++: void mustBeScalarOrEmpty(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement isscalar and isempty methods.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.</p>
+<b>mustBeScalarOrEmpty</b> checks that value is scalar or empty or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeScalarOrEmpty(true)
 mustBeScalarOrEmpty([])
 mustBeScalarOrEmpty([true false])
+
 ```
 
-## See also
+## 🔗 See also
 
-[isempty](isempty.html), [islogical](../types/islogical.md).
+[isempty](../elementary_functions/isempty.md), [islogical](../types/islogical.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

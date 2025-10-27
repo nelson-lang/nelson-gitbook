@@ -2,42 +2,43 @@
 
 Lower triangular part of matrix
 
-## Syntax
+## 📝 Syntax
 
 - T = tril(M)
 - T = tril(M, k)
 
-## Input argument
+## 📥 Input argument
 
 - M - 2D input matrix
 - k - Diagonals to include: integer real value
 
-## Output argument
+## 📤 Output argument
 
 - R - Lower Triangular Portions of Matrix
 
-## Description
+## 📄 Description
 
-  <p><b>tril</b> computes Lower Triangular Portions of Matrix.</p>
-  <p><b>R = tril(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
+<b>tril</b> computes Lower Triangular Portions of Matrix.
 
-## Example
+<b>R = tril(M, k)</b> returns the elements on and above the kth diagonal of M.
+
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = tril(x)
 ```
 
-## See also
+## 🔗 See also
 
-[diag](diag.html), [triu](triu.md).
+[diag](../elementary_functions/diag.md), [triu](../elementary_functions/triu.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

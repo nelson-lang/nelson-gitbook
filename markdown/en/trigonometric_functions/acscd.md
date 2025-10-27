@@ -2,39 +2,39 @@
 
 Inverse cosecant in degrees.
 
-## Syntax
+## 📝 Syntax
 
 - res = acsc(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>acscd</b> computes the inverse cosecant of argument in degrees for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [0 1 20 10 Inf];
 y = acscd(x)
 ```
 
-## See also
+## 🔗 See also
 
-[cscd](cscd.html), [csc](csc.html).
+[cscd](../trigonometric/cscd.md), [csc](../trigonometric/csc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

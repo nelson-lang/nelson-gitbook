@@ -2,23 +2,23 @@
 
 Returns the offset of the current byte relative to the beginning of a file.
 
-## Syntax
+## 📝 Syntax
 
 - p = ftell(fid)
 
-## Input argument
+## 📥 Input argument
 
 - fid - a file descriptor
 
-## Output argument
+## 📤 Output argument
 
 - p - an integer value: position of the file pointer as the number of characters from the beginning of the file.
 
-## Description
+## 📄 Description
 
-  <p><b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.</p>
+<b>ftell</b> returns the offset of the current byte relative to the beginning of the file associated with the named stream fid.
 
-## Example
+## 💡 Example
 
 ```matlab
 TXT = 'example about ftell.';
@@ -30,16 +30,16 @@ p2 = ftell(fileID)
 status = fclose(fileID);
 ```
 
-## See also
+## 🔗 See also
 
-[fopen](fopen.md), [fprintf](fread.md), [fclose](fclose.md), [fseek](fseek.md).
+[fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md), [fseek](../stream_manager/fseek.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,24 +2,24 @@
 
 Gray colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = gray
 - c = gray(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Gray colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>gray</b> returns the colormap with gray colors.</p>
+<b>gray</b> returns the colormap with gray colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -27,18 +27,18 @@ surf(peaks);
 colormap('gray');
 ```
 
-<img src="gray_65E5F57B.svg" align="middle"/>
+<img src="gray.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,27 @@
 
 Transform spherical coordinates to Cartesian.
 
-## Syntax
+## 📝 Syntax
 
 - [x, y, z] = sph2cart(azimuth, elevation, r)
 
-## Input argument
+## 📥 Input argument
 
 - azimuth - a numeric value: Azimuth angle.
 - elevation - a numeric value: Elevation angle.
 - r - a numeric value: Radius.
 
-## Output argument
+## 📤 Output argument
 
 - x - a numeric value (double or single real): Cartesian coordinates
 - y - a numeric value (double or single real): Cartesian coordinates
 - z - a numeric value (double or single real): Cartesian coordinates
 
-## Description
+## 📄 Description
 
 <b>sph2cart</b> transforms Cartesian to spherical coordinates.
 
-## Example
+## 💡 Example
 
 ```matlab
 azimut = [0.7854, 0.7854, -0.7854, -0.7854; 2.3562, 2.3562, -2.3562, -2.3562];
@@ -31,16 +31,16 @@ radius = 1.7321 * ones(2, 4);
 [x, y, z] = sph2cart(azimut, elevation, radius)
 ```
 
-## See also
+## 🔗 See also
 
-[cart2sph](cart2sph.md).
+[cart2sph](../trigonometric_functions/cart2sph.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

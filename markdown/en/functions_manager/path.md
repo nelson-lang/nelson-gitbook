@@ -2,7 +2,7 @@
 
 Modify or display Nelson’s load path.
 
-## Syntax
+## 📝 Syntax
 
 - path()
 - p = path()
@@ -10,19 +10,19 @@ Modify or display Nelson’s load path.
 - path(path(), dirname)
 - path(dirname, path())
 
-## Input argument
+## 📥 Input argument
 
 - dirname - a directory name or an suite of directory names using pathsep()
 
-## Output argument
+## 📤 Output argument
 
 - p - string: the specified paths
 
-## Description
+## 📄 Description
 
-  <p><b>path</b> modifies or displays Nelson’s load path.</p>
+<b>path</b> modifies or displays Nelson’s load path.
 
-## Example
+## 💡 Example
 
 ```matlab
 path
@@ -30,18 +30,19 @@ p = path()
 path(p, tempdir())
 path
 path(p)
+
 ```
 
-## See also
+## 🔗 See also
 
-[rmpath](rmpath.md), [addpath](addpath.md), [rehash](rehash.md).
+[rmpath](../functions_manager/rmpath.md), [addpath](../functions_manager/addpath.md), [rehash](../functions_manager/rehash.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET
