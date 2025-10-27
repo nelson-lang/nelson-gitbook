@@ -3,6 +3,7 @@ name: CI
 on: [push]
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
 
@@ -18,3 +19,102 @@ jobs:
         with:
           name: nelson-gitbook-github-action-artifacts
           path: artifacts/
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+
+
+      - name: Install Inkscape
+        run: |
+          $inkscapeUrl = "https://inkscape.org/gallery/item/44616/inkscape-1.3.2_2023-11-25_091e20e-x64.exe"
+          $inkscapeInstaller = "$env:TEMP\inkscape.exe"
+          $inkscapeDir = "C:\WindowsTools\Inkscape"
+
+          Write-Host "Downloading Inkscape..."
+          Invoke-WebRequest -Uri $inkscapeUrl -OutFile $inkscapeInstaller
+
+          Write-Host "Installing Inkscape..."
+          Start-Process -FilePath $inkscapeInstaller -ArgumentList "/VERYSILENT", "/NORESTART", "/DIR=$inkscapeDir" -Wait -NoNewWindow
+
+          Write-Host "Inkscape installed to: $inkscapeDir"
+        shell: powershell
+
+      - name: Install Pandoc
+        run: |
+          $pandocVersion = "3.8.2"
+          $pandocUrl = "https://github.com/jgm/pandoc/releases/download/${pandocVersion}/pandoc-${pandocVersion}-windows-x86_64.zip"
+          $pandocZip = "$env:TEMP\pandoc.zip"
+          $pandocDir = "C:\WindowsTools\pandoc-${pandocVersion}"
+
+          Write-Host "Downloading Pandoc ${pandocVersion}..."
+          Invoke-WebRequest -Uri $pandocUrl -OutFile $pandocZip
+
+          Write-Host "Extracting Pandoc..."
+          New-Item -ItemType Directory -Force -Path $pandocDir | Out-Null
+          Expand-Archive -Path $pandocZip -DestinationPath $pandocDir -Force
+
+          # Move files from subdirectory to main directory
+          $subDir = Get-ChildItem -Path $pandocDir -Directory | Select-Object -First 1
+          if ($subDir) {
+            Get-ChildItem -Path $subDir.FullName -Recurse | Move-Item -Destination $pandocDir -Force
+            Remove-Item -Path $subDir.FullName -Recurse -Force
+          }
+
+          Write-Host "Pandoc installed to: $pandocDir"
+        shell: powershell
+
+      - name: Install wkhtmltopdf
+        run: |
+          $wkVersion = "0.12.6-1"
+          $wkUrl = "https://github.com/wkhtmltopdf/packaging/releases/download/${wkVersion}/wkhtmltox-${wkVersion}.msvc2015-win64.exe"
+          $wkInstaller = "$env:TEMP\wkhtmltox.exe"
+          $wkDir = "C:\WindowsTools\wkhtmltopdf"
+
+          Write-Host "Downloading wkhtmltopdf ${wkVersion}..."
+          Invoke-WebRequest -Uri $wkUrl -OutFile $wkInstaller
+
+          Write-Host "Installing wkhtmltopdf..."
+          Start-Process -FilePath $wkInstaller -ArgumentList "/S", "/D=$wkDir" -Wait -NoNewWindow
+
+          Write-Host "wkhtmltopdf installed to: $wkDir"
+        shell: powershell
+
+      - name: Add tools to PATH
+        run: |
+          $pandocPath = "C:\WindowsTools\pandoc-3.8.2"
+          $wkhtmlPath = "C:\WindowsTools\wkhtmltopdf\bin"
+          $inkscapePath = "C:\WindowsTools\Inkscape\bin"
+
+          Write-Host "Adding tools to PATH..."
+          echo "$pandocPath" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          echo "$wkhtmlPath" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          echo "$inkscapePath" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+          Write-Host "PATH updated"
+        shell: powershell
+
+      - name: Verify installations
+        run: |
+          Write-Host "Verifying Pandoc..."
+          pandoc --version
+
+          Write-Host "`nVerifying wkhtmltopdf..."
+          wkhtmltopdf --version
+
+          Write-Host "`nVerifying Inkscape..."
+          inkscape --version
+        shell: powershell
+
+      - name: Build PDF
+        run: |
+          .\pandoc-build-pdf.bat
+        shell: cmd
+
+      # - name: Upload PDF artifacts
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: nelson-pdf-windows
+      #     path: "*.pdf"
