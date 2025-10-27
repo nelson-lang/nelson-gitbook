@@ -1,10 +1,12 @@
 # Files and folders functions
 
-Files and folders functions
+The File and Folder Functions module provides tools for managing files, directories, and paths in Nelson.
 
-## Description
+This module supports navigation of the file system, creation and removal of files and directories, querying file and folder properties, building and resolving paths, and handling platform-specific separators.
 
-files, folders and paths functions
+This module enables efficient and cross-platform file system operations within Nelson scripts and applications.
+
+## Functions
 
 - [cd](cd.md) - Changes Nelson current directory.
 - [copyfile](copyfile.md) - Copy files or folder.

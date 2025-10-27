@@ -2,34 +2,34 @@
 
 Returns available languages in Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - ce = getavailablelanguages()
 
-## Output argument
+## 📤 Output argument
 
 - ce - a cell of strings: supported languages.
 
-## Description
+## 📄 Description
 
-  <p><b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.</p>
+<b>getavailablelanguages</b> returns the list of currently supported languages in Nelson.
 
-## Example
+## 💡 Example
 
 ```matlab
 getavailablelanguages()
 ```
 
-## See also
+## 🔗 See also
 
-[setlanguage](setlanguage.md).
+[setlanguage](../localization/setlanguage.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

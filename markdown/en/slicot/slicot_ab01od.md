@@ -2,11 +2,11 @@
 
 Staircase form for multi-input systems using orthogonal state and input transformations.
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, B_OUT, U_OUT, V, NCONT_OUT, INDCON_OUT, KSTAIR_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
 
-## Input argument
+## 📥 Input argument
 
 - STAGES - Specifies the reduction stage: 'F': Perform the forward stage only; 'B': Perform the backward stage only; 'A': Perform both (all) stages.
 - JOBU - Indicates whether the user wishes to accumulate in a matrix U the state-space transformations: 'N': Do not form U; 'I': U is internally initialized to the unit matrix
@@ -18,7 +18,7 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 - INDCON_IN - The number of stairs in the staircase form (also, the controllability index of the controllable part of the system representation).
 - TOL - The tolerance to be used in rank determination when transforming (A, B).
 
-## Output argument
+## 📤 Output argument
 
 - A*OUT - On exit, the leading N-by-N part of this array contains the transformed state transition matrix U' * A _ U. The leading NCONT-by-NCONT part contains the upper block Hessenberg state matrix Acont in Ac, given by U' _ A \_ U, of a controllable realization for the original system. The elements below the first block-subdiagonal are set to zero. If STAGES ~='F', the subdiagonal blocks of A are triangularized by RQ factorization, and the annihilated elements are explicitly zeroed.
 - B*OUT - On exit with STAGES = 'F', the leading N-by-M part of this array contains the transformed input matrix U' * B, with all elements but the first block set to zero. On exit with STAGES ~= 'F', the leading N-by-M part of this array contains the transformed input matrix U' \_ B \* V, with all elements but the first block set to zero and the first block in upper triangular form.
@@ -29,20 +29,21 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 - KSTAIR_OUT - KSTAIR is input if STAGES = 'B', and output otherwise.
 - INFO - 0: successful exit; if INFO = -i, the i-th argument had an illegal value.
 
-## Description
+## 📄 Description
 
-  <p>To reduce the matrices A and B using (and optionally accumulating) state-space and input-space transformations U and V respectively, such that the pair of matrices</p>
-  <p>Ac = U' * A * U,    Bc = U' * B * V</p>
+To reduce the matrices A and B using (and optionally accumulating) state-space and input-space transformations U and V respectively, such that the pair of matrices
 
-Used function(s)
+Ac = U' _ A _ U, Bc = U' _ B _ V
+
+## Used function(s)
 
 AB01OD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/AB01OD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 N = 5;
@@ -71,14 +72,15 @@ INDCON_IN = N;
 NCONT_IN = 1;
 KSTAIR_IN = zeros(1,N);
 [A_OUT, B_OUT, U_OUT, V, NCONT_OUT, INDCON_OUT, KSTAIR_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
+
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

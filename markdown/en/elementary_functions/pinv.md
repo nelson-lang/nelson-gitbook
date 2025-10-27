@@ -2,25 +2,25 @@
 
 Moore-Penrose pseudoinverse
 
-## Syntax
+## 📝 Syntax
 
 - y = pinv(A)
 - y = pinv(A, tol)
 
-## Input argument
+## 📥 Input argument
 
 - A - matrix: input matrix
 - tol - scalar: singular value tolerance
 
-## Output argument
+## 📤 Output argument
 
 - y - Moore-Penrose Pseudoinverse of matrix A.
 
-## Description
+## 📄 Description
 
-  <p><b>pinv</b> returns Moore-Penrose Pseudoinverse of matrix A.</p>
+<b>pinv</b> returns Moore-Penrose Pseudoinverse of matrix A.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [1, 2, 3; 4, 5, 6];
@@ -28,16 +28,16 @@ R = pinv(A)
 R = pinv(A, 2)
 ```
 
-## See also
+## 🔗 See also
 
 [inv](../linear_algebra/inv.md), [svd](../linear_algebra/svd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

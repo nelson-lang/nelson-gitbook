@@ -2,24 +2,24 @@
 
 Returns the methods name of an COM object.
 
-## Syntax
+## 📝 Syntax
 
 - l = COM_methods(h)
 - l = methods(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a COM object.
 
-## Output argument
+## 📤 Output argument
 
 - l - a cell of strings.
 
-## Description
+## 📄 Description
 
-<description><b>methods</b> returns a cell of strings with methods name.</description>
+<b>methods</b> returns a cell of strings with methods name.
 
-## Example
+## 💡 Example
 
 ```matlab
 e = actxserver('Excel.Application');
@@ -28,16 +28,16 @@ delete(e)
 clear e
 ```
 
-## See also
+## 🔗 See also
 
-[COM_set](COM_set.md).
+[COM_set](../com_engine/COM_set.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

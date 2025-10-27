@@ -2,39 +2,39 @@
 
 Inverse hyperbolic cotangent.
 
-## Syntax
+## 📝 Syntax
 
 - res = acoth(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>acoth</b> computes the inverse hyperbolic cotangent.
 
-## Example
+## 💡 Example
 
 ```matlab
 A =  [1+2i, 2, -3];
 res = acoth(A)
 ```
 
-## See also
+## 🔗 See also
 
-[coth](coth.html).
+[coth](../trigonometric/coth.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

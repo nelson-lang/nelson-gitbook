@@ -2,23 +2,23 @@
 
 Return true if all imaginary part is a zero array.
 
-## Syntax
+## 📝 Syntax
 
 - res = isreal(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isreal</b> returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 1 + 0i;
@@ -35,16 +35,16 @@ A = single([3, i]);
 res = isreal(A)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [isint8](isint8.md).
+[isa](../types/isa.md), [isint8](../types/isint8.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

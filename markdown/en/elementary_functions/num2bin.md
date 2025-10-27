@@ -2,47 +2,47 @@
 
 Convert number to binary representation.
 
-## Syntax
+## 📝 Syntax
 
 - R = num2bin(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable: logical, integer, single or double real full matrix.
 
-## Output argument
+## 📤 Output argument
 
 - R - result of num2bin: char array.
 
-## Description
+## 📄 Description
 
-  <p><b>num2bin</b> returns a char array giving the literal bit representation of a number.</p>
+<b>num2bin</b> returns a char array giving the literal bit representation of a number.
 
-Used function(s)
+## Used function(s)
 
 C++ std::bitset
 
-Bibliography
+## 📚 Bibliography
 
 http://www.oxfordmathcenter.com/drupal7/node/43
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [65535 128; 1 0]
 Y = num2bin(X)
 ```
 
-## See also
+## 🔗 See also
 
-[bin2num](bin2num.md).
+[bin2num](../elementary_functions/bin2num.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

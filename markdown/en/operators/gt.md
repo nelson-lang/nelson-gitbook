@@ -2,27 +2,27 @@
 
 greater than, > operator.
 
-## Syntax
+## 📝 Syntax
 
 - C = gt(A, B)
 - C = (A > B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A > B
 
-## Description
+## 📄 Description
 
-  <p><b>C = gt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than B.</p>
-  <p/>
-  <p><b>gt</b> compares only the real part of numeric arrays.</p>
+<b>C = gt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than B.
 
-## Examples
+<b>gt</b> compares only the real part of numeric arrays.
+
+## 💡 Examples
 
 ```matlab
 eye(2,2) > ones(2, 2)
@@ -44,16 +44,16 @@ eye(2,2) > ones(2, 2)
 gt(0.8 - 0.6 - 0.2, 0)
 ```
 
-## See also
+## 🔗 See also
 
-[ne](ne.md), [lt](lt.md), [le](le.md), [ge](ge.md), [eq](eq.md).
+[ne](../operators/ne.md), [lt](../operators/lt.md), [le](../operators/le.md), [ge](../operators/ge.md), [eq](../operators/eq.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

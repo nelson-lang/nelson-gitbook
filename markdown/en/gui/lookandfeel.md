@@ -2,7 +2,7 @@
 
 default current application look and feel.
 
-## Syntax
+## 📝 Syntax
 
 - r = lookandfeel()
 - ce = lookandfeel('available')
@@ -10,12 +10,12 @@ default current application look and feel.
 - ss = lookandfeel('stylesheet')
 - pp = lookandfeel('stylesheet', ss)
 
-## Input argument
+## 📥 Input argument
 
 - lf - a string: look and feel to apply.
 - ss - a string: style sheet to apply.
 
-## Output argument
+## 📤 Output argument
 
 - r - a string: current look and feel.
 - ce - a cell of strings: list of look and feel available.
@@ -23,13 +23,14 @@ default current application look and feel.
 - p - a string: previous look and feel applied.
 - pp - a string: previous style sheet applied.
 
-## Description
+## 📄 Description
 
-  <p><b>lookandfeel</b> manages look and feel Nelson application.</p>
+<b>lookandfeel</b> manages look and feel Nelson application.
 
-## Examples
+## 💡 Examples
 
 ```matlab
+
 currentlf = lookandfeel();
 lfs = lookandfeel('available')
 for lf = lfs'
@@ -37,9 +38,11 @@ for lf = lfs'
   sleep(10);
 end
 lookandfeel(currentlf)
+
 ```
 
 ```matlab
+
 currentstylesheet = lookandfeel('stylesheet')
 stylefilename = [modulepath('gui'), '/resources/darkstyle.qss'];
 edit(stylefilename)
@@ -47,14 +50,15 @@ newstyle = fileread(stylefilename);
 previousstylesheet = lookandfeel('stylesheet', newstyle)
 sleep(10);
 lookandfeel('stylesheet', previousstylesheet)
+
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

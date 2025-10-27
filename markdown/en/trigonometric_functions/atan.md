@@ -2,39 +2,39 @@
 
 Computes the inverse tangent in radians for each element of x.
 
-## Syntax
+## 📝 Syntax
 
 - res = atan(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>atan</b> computes the inverse tangent in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
 res = atan(A)
 ```
 
-## See also
+## 🔗 See also
 
-[tan](tan.md).
+[tan](../trigonometric_functions/tan.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

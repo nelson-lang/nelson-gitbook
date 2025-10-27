@@ -2,34 +2,34 @@
 
 get host name of this computer.
 
-## Syntax
+## 📝 Syntax
 
 - s = hostname()
 
-## Output argument
+## 📤 Output argument
 
 - s - a char array: host name.
 
-## Description
+## 📄 Description
 
-  <p><b>hostname</b> get host name of this computer.</p>
+<b>hostname</b> get host name of this computer.
 
-## Example
+## 💡 Example
 
 ```matlab
 hostname()
 ```
 
-## See also
+## 🔗 See also
 
-[username](username.md).
+[username](../os_functions/username.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

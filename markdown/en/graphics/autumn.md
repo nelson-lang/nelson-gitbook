@@ -2,24 +2,24 @@
 
 Autumn colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = autumn
 - c = autumn(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Autumn colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>autumn</b> returns the colormap with autumn colors.</p>
+<b>autumn</b> returns the colormap with autumn colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -27,18 +27,18 @@ surf(peaks);
 colormap('autumn');
 ```
 
-<img src="autumn_80D6835B.svg" align="middle"/>
+<img src="autumn.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

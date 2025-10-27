@@ -2,29 +2,29 @@
 
 Label z-axis.
 
-## Syntax
+## 📝 Syntax
 
 - zlabel(text)
 - zlabel(ax, text)
 - zlabel(..., propertyName, propertyValue)
 - go = zlabel(...)
 
-## Input argument
+## 📥 Input argument
 
 - text - Text to display: character vector, string scalar, string array or cell array.
 - ax - a scalar graphics object value: parent container, specified as a axes.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: text type.
 
-## Description
+## 📄 Description
 
-  <p><b>zlabel('text')</b> labels the z-axis of the current axes.</p>
+<b>zlabel('text')</b> labels the z-axis of the current axes.
 
-## Example
+## 💡 Example
 
 ```matlab
 f  = figure();
@@ -34,18 +34,18 @@ axis square
 zlabel('Z axis Label - Unicode ドラゴンボールZ(ゼット)')
 ```
 
-<img src="zlabel_7DC4F991.svg" align="middle"/>
+<img src="zlabel.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[text](text.md), [title](title.md).
+[text](../graphics/text.md), [title](../graphics/title.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

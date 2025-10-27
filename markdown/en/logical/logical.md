@@ -2,25 +2,27 @@
 
 Converts a numeric value to logical type.
 
-## Syntax
+## 📝 Syntax
 
 - Y = logical(X)
 
-## Input argument
+## 📥 Input argument
 
 - X - a numeric value.
 
-## Output argument
+## 📤 Output argument
 
 - Y - a logical value.
 
-## Description
+## 📄 Description
 
-  <p><b>logical</b> converts a numeric value to logical type.</p>
-  <p>Nonzero value converted to true and zeros values converted to false.</p>
-  <p>Complex numbers returns an error.</p>
+<b>logical</b> converts a numeric value to logical type.
 
-## Example
+Nonzero value converted to true and zeros values converted to false.
+
+Complex numbers returns an error.
+
+## 💡 Example
 
 ```matlab
 A = eye(2, 2)
@@ -28,16 +30,16 @@ B = logical(A)
 islogical(B)
 ```
 
-## See also
+## 🔗 See also
 
 [islogical](../types/islogical.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

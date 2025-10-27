@@ -2,7 +2,7 @@
 
 Colorbar showing color scale.
 
-## Syntax
+## 📝 Syntax
 
 - colorbar()
 - colorbar('off')
@@ -11,51 +11,54 @@ Colorbar showing color scale.
 - colorbar(target, 'off')
 - c = colorbar(...)
 
-## Input argument
+## 📥 Input argument
 
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 - target - Target: axes.
 - 'off' - deletes colorbar associated with the current axes.
 
-## Output argument
+## 📤 Output argument
 
 - c - graphics object: axes on color bar.
 
-## Description
+## 📄 Description
 
-  <p><b>colorbar</b>adds a color bar into a plot.</p>
+<b>colorbar</b> adds a color bar into a plot.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 f = figure();
 surf(peaks);
+axis('square');
 colormap('summer');
 colorbar()
+
 ```
 
-<img src="colorbar_1_CBB5124C.svg" align="middle"/>
+<img src="colorbar_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
 surf(peaks);
+axis('square');
 colormap('gray');
 cb = colorbar(gca);
 ```
 
-<img src="colorbar_2_3526FDC1.svg" align="middle"/>
+<img src="colorbar_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

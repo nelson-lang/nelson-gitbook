@@ -2,29 +2,31 @@
 
 Computes if matrix is symmetric.
 
-## Syntax
+## 📝 Syntax
 
 - res = issymmetric(x)
 - res = issymmetric(x, 'skew')
 - res = issymmetric(x, 'nonskew')
 - res = issymmetric(x, tol)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or matrix (double or single, integers, logical).
 - tol - a numeric value: finite and >= 0.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical.
 
-## Description
+## 📄 Description
 
-  <p><b>issymmetric(x)</b> computes if matrix is symmetric.</p>
-  <p>With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'</p>
-  <p>With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'</p>
+<b>issymmetric(x)</b> computes if matrix is symmetric.
 
-## Example
+With 'nonskew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = x.'
+
+With 'skew' argument, x square matrix, x is symmetric if it is equal to its nonconjugate transpose, x = -x.'
+
+## 💡 Example
 
 ```matlab
 issymmetric([1, 2; 2, 1])
@@ -34,16 +36,16 @@ issymmetric(A, 'skew')
 issymmetric(A, 'nonskew')
 ```
 
-## See also
+## 🔗 See also
 
-[ishermitian](ishermitian.md).
+[ishermitian](../linear_algebra/ishermitian.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

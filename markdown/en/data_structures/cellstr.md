@@ -2,23 +2,23 @@
 
 Converts to cell of character array.
 
-## Syntax
+## 📝 Syntax
 
 - ce = cellstr(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - a string, a string array, cell of character array.
 
-## Output argument
+## 📤 Output argument
 
 - ce - a cell of character array
 
-## Description
+## 📄 Description
 
-  <p><b>cellstr(A)</b> converts to cell of character array.</p>
+<b>cellstr(A)</b> converts to cell of character array.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 cellstr('Nelson')
@@ -32,16 +32,16 @@ cellstr({'Nelson'})
 cellstr({})
 ```
 
-## See also
+## 🔗 See also
 
-[iscellstr](iscellstr.html).
+[iscellstr](../types/iscellstr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

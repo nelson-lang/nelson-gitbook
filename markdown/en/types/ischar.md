@@ -2,23 +2,23 @@
 
 Return true if variable var is a char array.
 
-## Syntax
+## 📝 Syntax
 
 - res = ischar(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>ischar</b> returns a logical 1 if the argument is a char array and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -35,16 +35,16 @@ C = [1 ; 3];
 res = ischar(C)
 ```
 
-## See also
+## 🔗 See also
 
-[class](class.md), [char](../string/char.md).
+[class](../types/class.md), [char](../string/char.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

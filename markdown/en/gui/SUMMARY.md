@@ -6,6 +6,7 @@
   - [inserthtml](inserthtml.md)
   - [lookandfeel](lookandfeel.md)
   - [msgbox](msgbox.md)
+  - [openvar](openvar.md)
   - [qt_verbose](qt_verbose.md)
   - [questdlg](questdlg.md)
   - [uigetdir](uigetdir.md)

@@ -2,43 +2,45 @@
 
 Determine if pattern matches with strings.
 
-## Syntax
+## 📝 Syntax
 
 - res = matches(str, pattern)
 - res = matches(str, pattern, 'IgnoreCase', true)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string, string array or cell of strings.
 - pattern - a string, string array or cell of strings.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if the two matches and false otherwise.
 
-## Description
+## 📄 Description
 
 <b>matches</b> determines if pattern matches with strings.
 
-## Example
+## 💡 Example
 
 ```matlab
 matches("Nelson", 'nelSon')
 matches("Nelson", 'Nelson')
 str = ["yellow", "green", "blue", "brown"];
 R = matches(str, ["yellow", "Brown"], 'IgnoreCase', true);
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[strcmp](strcmp.md).
+[strcmp](../string/strcmp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

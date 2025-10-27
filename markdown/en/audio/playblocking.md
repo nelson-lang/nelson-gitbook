@@ -2,23 +2,23 @@
 
 Plays an audioplayer object with blocking.
 
-## Syntax
+## 📝 Syntax
 
 - playblocking(playObj)
 - playblocking(playObj, start)
 - playblocking(playObj, [start end])
 
-## Input argument
+## 📥 Input argument
 
 - playObj - an audioplayer object.
 - start - an integer value: first sample to play.
 - end - an integer value: last sample to play.
 
-## Description
+## 📄 Description
 
 <b>playblocking</b> plays an audioplayer object until playback is finished.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -28,16 +28,16 @@ delete(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer](audioplayer.md), [play](play.md).
+[audioplayer](../audio/audioplayer.md), [play](../audio/play.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

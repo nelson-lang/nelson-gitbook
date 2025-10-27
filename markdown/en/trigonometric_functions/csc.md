@@ -2,38 +2,38 @@
 
 Cosecant of input angle in radians.
 
-## Syntax
+## 📝 Syntax
 
 - res = csc(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>csc</b> computes the cosecant of argument in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 R = csc(-pi+0.01:0.01:-0.01)
 ```
 
-## See also
+## 🔗 See also
 
-[cscd](cscd.html).
+[cscd](../trigonometric/cscd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

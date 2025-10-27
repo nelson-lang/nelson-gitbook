@@ -2,7 +2,7 @@
 
 Add directories to functions search path.
 
-## Syntax
+## 📝 Syntax
 
 - addpath(dirname)
 - addpath(dirname, ..., dirname)
@@ -14,24 +14,27 @@ Add directories to functions search path.
 - previous = addpath(dirname, ..., dirname, '-begin')
 - previous = addpath(dirname, ..., dirname, '-end')
 
-## Input argument
+## 📥 Input argument
 
 - dirname - a string: a directory
 - '-end' or '-begin' - append dirname at the end or begin of the list.
 - '-frozen' - disables folder change detection for the folders being added or modified.
 
-## Output argument
+## 📤 Output argument
 
 - previous - returns previous path before adding
 
-## Description
+## 📄 Description
 
-  <p><b>addpath</b> add directories to search path.</p>
-  <p>It is also possible to add lists of directory names separated by pathsep.</p>
-  <p>Non-existent path will not be added and a warning will be issued.</p>
-  <p>files watchers is disabled for internal modules.</p>
+<b>addpath</b> add directories to search path.
 
-## Example
+It is also possible to add lists of directory names separated by pathsep.
+
+Non-existent path will not be added and a warning will be issued.
+
+files watchers is disabled for internal modules.
+
+## 💡 Example
 
 ```matlab
 path()
@@ -41,16 +44,16 @@ rmpath(tempdir())
 path
 ```
 
-## See also
+## 🔗 See also
 
-[path](path.md), [rmpath](rmpath.md), [restoredefaultpath](restoredefaultpath.md).
+[path](../functions_manager/path.md), [rmpath](../functions_manager/rmpath.md), [restoredefaultpath](../functions_manager/restoredefaultpath.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

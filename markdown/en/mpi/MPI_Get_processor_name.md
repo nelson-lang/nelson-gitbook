@@ -2,27 +2,24 @@
 
 Gets the name of the processor.
 
-## Syntax
+## 📝 Syntax
 
 - [name, namelen, info] = MPI_Get_processor_name()
 
-## Output argument
+## 📤 Output argument
 
 - name - a string: name of the processor that is using MPI.
 - namelen - an integer value: Length (in characters) of the name.
 - info - an integer value: 0 MPI_SUCCESS, 16 MPI_ERR_OTHER.
 
-## Description
+## 📄 Description
 
-  <p>This function get the name of the processor that is using MPI.</p>
+This function get the name of the processor that is using MPI.
 
-## See also
-
-[MPI_Init](MPI_Init.md).
-
-## Example
+## 💡 Example
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -30,14 +27,19 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Init](../mpi/MPI_Init.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

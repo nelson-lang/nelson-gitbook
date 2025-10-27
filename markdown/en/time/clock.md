@@ -2,45 +2,55 @@
 
 Return the current local date and time as a date vector.
 
-## Syntax
+## 📝 Syntax
 
 - v = clock()
 
-## Output argument
+## 📤 Output argument
 
 - v - a vector: [year, month, day, hours, minutes, seconds].
 
-## Description
+## 📄 Description
 
-  <p><b>calendar()</b> returns the currently monthly calendar.</p>
-  <p>The date vector contains the following fields:</p>
-  <p>year</p>
-  <p>months [1, 12]</p>
-  <p>days [1, 31]</p>
-  <p>hours [0, 23]</p>
-  <p>minutes [0, 59]</p>
-  <p>seconds [0, 61]</p>
-  <p>seconds: field has a fractional part after the decimal point for extended accuracy.</p>
-  <p>To time the duration of an event, use tic and toc functions instead of clock.</p>
-  <p>The clock function is based on the system time and thus might not be reliable for time comparison operations.</p>
+<b>calendar()</b> returns the currently monthly calendar.
 
-## Example
+The date vector contains the following fields:
+
+year
+
+months [1, 12]
+
+days [1, 31]
+
+hours [0, 23]
+
+minutes [0, 59]
+
+seconds [0, 61]
+
+seconds: field has a fractional part after the decimal point for extended accuracy.
+
+To time the duration of an event, use tic and toc functions instead of clock.
+
+The clock function is based on the system time and thus might not be reliable for time comparison operations.
+
+## 💡 Example
 
 ```matlab
 c = clock()
 fix(c)
 ```
 
-## See also
+## 🔗 See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

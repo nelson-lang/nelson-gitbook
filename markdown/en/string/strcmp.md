@@ -2,24 +2,24 @@
 
 Strings comparaison.
 
-## Syntax
+## 📝 Syntax
 
 - res = strcmp(s1, s2)
 
-## Input argument
+## 📥 Input argument
 
 - s1 - a string, string array or cell of strings.
 - s2 - a string, string array or cell of strings.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if the two are identical and false otherwise.
 
-## Description
+## 📄 Description
 
 <b>strcmp</b> compares two strings.
 
-## Example
+## 💡 Example
 
 ```matlab
 strcmp('Nelson', 'nelSon')
@@ -31,18 +31,19 @@ C = {'C', 'Contents'; 'Nel', 'son'}
 strcmp(A, B)
 strcmp(A, C)
 strcmp(C, 'C')
+
 ```
 
-## See also
+## 🔗 See also
 
-[char](char.md).
+[char](../string/char.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

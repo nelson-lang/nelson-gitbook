@@ -2,44 +2,46 @@
 
 Convert decimal number to another base.
 
-## Syntax
+## 📝 Syntax
 
 - R = dec2base(D, B)
 - R = dec2base(D, B, N)
 
-## Input argument
+## 📥 Input argument
 
 - D - a nonnegative integer smaller than the value returned by flintmax.
 - B - an integer value [2, 36].
 - N - an integer value. number of digits.
 
-## Output argument
+## 📤 Output argument
 
 - R - result of dec2base: char array.
 
-## Description
+## 📄 Description
 
-  <p><b>dec2base</b> converts decimal number to another base.</p>
-  <p>values are cached to speed up next computation <b>dec2base([], 2)</b> to clear cache.</p>
+<b>dec2base</b> converts decimal number to another base.
 
-## Example
+values are cached to speed up next computation <b>dec2base([], 2)</b> to clear cache.
+
+## 💡 Example
 
 ```matlab
 X = [65535 128; 1 0]
 Y = dec2base(X, 2)
 Y = dec2base(X, 2, 26)
+
 ```
 
-## See also
+## 🔗 See also
 
-[base2dec](base2dec.md).
+[base2dec](../elementary_functions/base2dec.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

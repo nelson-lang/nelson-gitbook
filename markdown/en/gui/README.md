@@ -1,10 +1,9 @@
 # Gui module
 
-Gui module
+The GUI module provides functions to create and interact with graphical user interface
+components, dialogs, and application windows.
 
-## Description
-
-functions about gui
+## Functions
 
 - [commandhistory](commandhistory.md) - Command History
 - [errordlg](errordlg.md) - Creates a error dialog box.
@@ -13,6 +12,7 @@ functions about gui
 - [inserthtml](inserthtml.md) - Insert html in GUI console.
 - [lookandfeel](lookandfeel.md) - default current application look and feel.
 - [msgbox](msgbox.md) - Creates a message dialog box.
+- [openvar](openvar.md) - Open variable in the Variable Editor
 - [qt_verbose](qt_verbose.md) - show/hide Qt debug message.
 - [questdlg](questdlg.md) - Creates a question dialog box.
 - [uigetdir](uigetdir.md) - Opens dialog box to select a directory.

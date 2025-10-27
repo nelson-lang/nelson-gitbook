@@ -2,7 +2,7 @@
 
 Contour 3D plot of matrix
 
-## Syntax
+## 📝 Syntax
 
 - contour3(Z)
 - contour3(X, Y, Z)
@@ -12,7 +12,7 @@ Contour 3D plot of matrix
 - M = contour3(...)
 - [M, h] = contour3(...)
 
-## Input argument
+## 📥 Input argument
 
 - X - x-coordinates: vector or matrix.
 - Y - y-coordinates: vector or matrix.
@@ -21,18 +21,20 @@ Contour 3D plot of matrix
 - LineSpec - Line style and color
 - ax - a scalar graphics object value: parent container, specified as a axes.
 
-## Output argument
+## 📤 Output argument
 
 - M - Contour matrix.
 - h - a graphics object: contour type.
 
-## Description
+## 📄 Description
 
-  <p><b>contour3(Z)</b> generates a 3-D contour plot illustrating the isolines of the matrix Z, where Z represents heights on the x-y plane.</p>
-  <p>The x and y coordinates in the plane correspond to the column and row indices of Z, respectively.</p>
-  <p>To specify the x and y coordinates for Z values, use <b>contour3(X,Y,Z)</b>.</p>
+<b>contour3(Z)</b> generates a 3-D contour plot illustrating the isolines of the matrix Z, where Z represents heights on the x-y plane.
 
-## Example
+The x and y coordinates in the plane correspond to the column and row indices of Z, respectively.
+
+To specify the x and y coordinates for Z values, use <b>contour3(X,Y,Z)</b>.
+
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -41,18 +43,18 @@ f = figure();
 C.LineWidth = 3;
 ```
 
-<img src="contour3_1_4EAA1620.svg" align="middle"/>
+<img src="contour3_1.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[contour](contour.md), [surf](surf.md), [mesh](mesh.md).
+[contour](../graphics/contour.md), [surf](../graphics/surf.md), [mesh](../graphics/mesh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.3.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

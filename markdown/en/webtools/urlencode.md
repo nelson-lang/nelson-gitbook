@@ -2,40 +2,42 @@
 
 Replace special characters in URLs with escape characters.
 
-## Syntax
+## 📝 Syntax
 
 - new_url = webread(url)
 
-## Input argument
+## 📥 Input argument
 
 - url - a string: URL to a web service.
 
-## Output argument
+## 📤 Output argument
 
 - new_url - a string: encoded url.
 
-## Description
+## 📄 Description
 
-  <p><b>urlencode</b> replaces special characters in URLs with escape characters.</p>
-  <p>Special characters in URLs need to be replaced with escape characters. For example, spaces should be replaced with '%20'.</p>
+<b>urlencode</b> replaces special characters in URLs with escape characters.
 
-## Example
+Special characters in URLs need to be replaced with escape characters. For example, spaces should be replaced with '%20'.
+
+## 💡 Example
 
 ```matlab
 url = 'https://httpbin.org/get?query=hello world';
 res = urlencode(url)
+
 ```
 
-## See also
+## 🔗 See also
 
-[webread](webread.md).
+[webread](../webtools/webread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.11.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,31 +2,32 @@
 
 Clear Command Window.
 
-## Syntax
+## 📝 Syntax
 
 - clc()
 
-## Description
+## 📄 Description
 
-  <p><b>clc()</b> clears the console and move the cursor to the upper left corner.</p>
+<b>clc()</b> clears the console and move the cursor to the upper left corner.
 
-## Example
+## 💡 Example
 
 ```matlab
 disp('Hello');
 clc()
+
 ```
 
-## See also
+## 🔗 See also
 
 [disp](../display_format/disp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

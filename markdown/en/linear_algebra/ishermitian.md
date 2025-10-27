@@ -2,41 +2,42 @@
 
 Computes if matrix is hermitian or skew-hermitian.
 
-## Syntax
+## 📝 Syntax
 
 - res = ishermitian(x)
 - res = ishermitian(x, 'skew')
 - res = ishermitian(x, 'nonskew')
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or matrix (double or single, integers, logical).
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical.
 
-## Description
+## 📄 Description
 
-  <p><b>ishermitian(x)</b> computes if matrix is hermitian or skew-hermitian.</p>
-  <p>A matrix is skew-hermitian if the complex conjugate transpose of the matrix is equal to the negative of the original matrix.</p>
+<b>ishermitian(x)</b> computes if matrix is hermitian or skew-hermitian.
 
-## Example
+A matrix is skew-hermitian if the complex conjugate transpose of the matrix is equal to the negative of the original matrix.
+
+## 💡 Example
 
 ```matlab
 ishermitian([1 0 1i; 0 1 0; -1i 0 1])
 ```
 
-## See also
+## 🔗 See also
 
-[issymmetric](issymmetric.md).
+[issymmetric](../linear_algebra/issymmetric.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

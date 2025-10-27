@@ -2,23 +2,23 @@
 
 Parse a string.
 
-## Syntax
+## 📝 Syntax
 
 - status = parsestring(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string: a string to parse.
 
-## Output argument
+## 📤 Output argument
 
 - status - a string: 'script', 'function', 'error'.
 
-## Description
+## 📄 Description
 
-  <p><b>parsestring</b> parse a string and returns if it is a valid script, a valid function or an error.</p>
+<b>parsestring</b> parse a string and returns if it is a valid script, a valid function or an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 parsestring('1 + 1')
@@ -26,12 +26,12 @@ parsestring('1 +++ 1')
 parsestring('1 +*+ 1')
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Computes the matrix sinus of a square matrix.
 
-## Syntax
+## 📝 Syntax
 
 - res = sinm(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or square matrix
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value: a square matrix
 
-## Description
+## 📄 Description
 
 <b>sinm(x)</b> computes the matrix sinus of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
@@ -27,16 +27,16 @@ A = [1, 2; 3, 4];
 res = sinm(A)
 ```
 
-## See also
+## 🔗 See also
 
-[sin](sin.md).
+[sin](../trigonometric_functions/sin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

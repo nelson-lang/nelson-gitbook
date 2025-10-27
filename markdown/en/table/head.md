@@ -2,27 +2,29 @@
 
 Get top rows of table or array.
 
-## Syntax
+## 📝 Syntax
 
 - head(A)
 - head(A, k)
 - B = head(...)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input array (table or other).
 
-## Output argument
+## 📤 Output argument
 
 - k - a integer value: Number of rows to extract (k = 8 by default).
 
-## Description
+## 📄 Description
 
-  <p><b>head(A)</b> displays the first eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.</p>
-  <p><b>head(A, k)</b> displays the first k rows of A.</p>
-  <p><b>B = head(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.</p>
+<b>head(A)</b> displays the first eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.
 
-## Examples
+<b>head(A, k)</b> displays the first k rows of A.
+
+<b>B = head(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.
+
+## 💡 Examples
 
 ```matlab
 LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
@@ -40,16 +42,16 @@ A = repmat((1:50)',1, 3);
 head(A)
 ```
 
-## See also
+## 🔗 See also
 
-[tail](tail.md), [table](table.md).
+[tail](../table/tail.md), [table](../table/table.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.9.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Build MEX function
 
-## Syntax
+## 📝 Syntax
 
 - mex(filenames)
 - mex(filenames, option1, ..., optionN)
@@ -14,7 +14,7 @@ Build MEX function
 - mex('-client, 'engine', filenames)
 - mex('-client', 'engine', 'filenames', api, option1, ..., optionN)
 
-## Input argument
+## 📥 Input argument
 
 - '-client', 'engine' - enable to build C/C++ source files into standalone engine application.
 - api - a string: '-R2017b' (separated complex representation) or '-R2018a' (interleaved complex representation).
@@ -22,43 +22,54 @@ Build MEX function
 - mexName - a string: override naming convention.
 - option1, ..., optionN - string: compilation or link option.
 
-## Description
+## 📄 Description
 
-  <p>To use mex, C/C++ compiler must be available and configured. See Supported C/C++ compilers section for more information.</p>
-  <p>Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.</p>
-  <p>A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.</p>
-  <p>Nelson have also his own C++ API to manage more easily internal nelson's objects.</p>
-  <p/>
-  <p>PREDEFINED C MACRO:</p>
-  <p><b>MX_IS_NELSON</b> macro is defined to easily detect if Nelson is used in C code.</p>
-  <p><b>MX_HAS_INTERLEAVED_COMPLEX</b> macro is defined if C MEX API used is '-R2018a'.</p>
-  <p/>
-  <p>Supported options: compilation or link.</p>
-  <p>
-    <b>CFLAGS=</b>
-  </p>
-  <p><b>-D</b> The -D option defines C preprocessor macro.</p>
-  <p><b>-U</b> The -U option undefines C preprocessor macro</p>
-  <p><b>-I</b> Adds pathname to the list of folders to search for #include files.</p>
-  <p><b>-l</b> Links with dynamic object library .lib, .so or .dylib.</p>
-  <p><b>-g</b> Used for debugging (Debug configuration).</p>
+To use mex, C/C++ compiler must be available and configured. See Supported C/C++ compilers section for more information.
 
-## Example
+Nelson includes an interface to allow legacy mex-files to be compiled and linked with Nelson.
+
+A mex file is a type of computer file that provides an interface between Octave or the reference commercial software and functions written in C, C++.
+
+Nelson have also his own C++ API to manage more easily internal nelson's objects.
+
+PREDEFINED C MACRO:
+
+<b>MX_IS_NELSON</b> macro is defined to easily detect if Nelson is used in C code.
+
+<b>MX_HAS_INTERLEAVED_COMPLEX</b> macro is defined if C MEX API used is '-R2018a'.
+
+Supported options: compilation or link.
+
+<b>CFLAGS=</b>
+
+<b>-D</b> The -D option defines C preprocessor macro.
+
+<b>-U</b> The -U option undefines C preprocessor macro
+
+<b>-I</b> Adds pathname to the list of folders to search for #include files.
+
+<b>-l</b> Links with dynamic object library .lib, .so or .dylib.
+
+<b>-g</b> Used for debugging (Debug configuration).
+
+## 💡 Example
 
 ```matlab
-edit([modulepath('mex', 'tests'), '/test_engine.m'])
+
+		edit([modulepath('mex', 'tests'), '/test_engine.m'])
+
 ```
 
-## See also
+## 🔗 See also
 
 [Supported C/C++ compilers](../dynamic_link/2_supported_compilers.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

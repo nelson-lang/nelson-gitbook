@@ -2,28 +2,24 @@
 
 Checks if libpointer handle points on NULL pointer.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isNull(h)
 - tf = h.isNull()
 
-## Input argument
+## 📥 Input argument
 
 - h - a libpointer handle.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical.
 
-## Description
+## 📄 Description
 
-  <p>Checks if libpointer handle points on NULL pointer.</p>
+Checks if libpointer handle points on NULL pointer.
 
-## See also
-
-[libpointer](libpointer.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 p = libpointer('int8Ptr', int8([3 4]));
@@ -33,12 +29,16 @@ p2.isNull()
 isNull(p2)
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[libpointer](../dynamic_link/libpointer.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

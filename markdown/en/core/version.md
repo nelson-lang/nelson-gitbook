@@ -2,7 +2,7 @@
 
 Return the version of Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - ver_str = version
 - ver_date = version('-date')
@@ -13,7 +13,7 @@ Return the version of Nelson.
 - ver_release = version('-release')
 - [ver_str, ver_release] = version()
 
-## Input argument
+## 📥 Input argument
 
 - '-date' - a string to get release date
 - '-description' - a string to get release description
@@ -23,7 +23,7 @@ Return the version of Nelson.
 - '-number' - a string to get semantic version
 - '-commit_hash' - a string to get commit hash
 
-## Output argument
+## 📤 Output argument
 
 - ver_str - a string : version
 - ver_date - a string: version date
@@ -33,11 +33,11 @@ Return the version of Nelson.
 - ver_compiler - a cell of string: {compiler used, arch}
 - ver_number - a matrix of integer values: [MAJOR, MINOR, MAINTENANCE, BUILD]
 
-## Description
+## 📄 Description
 
-  <p><b>version</b> the version of Nelson.</p>
+<b>version</b> the version of Nelson.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 ver = version
@@ -71,17 +71,17 @@ compiler_info = version('-compiler')
 [ver, release] = version()
 ```
 
-## See also
+## 🔗 See also
 
 [computer](../os_functions/computer.md).
 
-## History
+## 🕔 History
 
-| Version | Description               |
+| Version | 📄 Description            |
 | ------- | ------------------------- |
 | 1.0.0   | initial version           |
 | 1.2.0   | `-semantic` option added. |
 
-## Author
+## 👤 Author
 
 Allan CORNET

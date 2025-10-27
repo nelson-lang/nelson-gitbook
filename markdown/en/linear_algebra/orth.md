@@ -2,41 +2,42 @@
 
 Range space of a matrix.
 
-## Syntax
+## 📝 Syntax
 
 - O = orth(A)
 - O = orth(A, tol)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input matrix
 - tol - a numeric value: scalar, singular value tolerance
 
-## Output argument
+## 📤 Output argument
 
 - O - real or complex number (double or single).
 
-## Description
+## 📄 Description
 
-  <p><b>O = orth(A)</b> returns an orthonormal basis for the range of <b>A</b>.</p>
+<b>O = orth(A)</b> returns an orthonormal basis for the range of <b>A</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = [10 -20 40; -50 20 0; 10 0 30]
 O = orth(M)
+
 ```
 
-## See also
+## 🔗 See also
 
-[svd](svd.md), [rank](rank.md).
+[svd](../linear_algebra/svd.md), [rank](../linear_algebra/rank.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

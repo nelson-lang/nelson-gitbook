@@ -2,14 +2,14 @@
 
 State-space model.
 
-## Syntax
+## 📝 Syntax
 
 - sys = ss(A, B, C, D)
 - sys = ss(A, B, C, D, TS)
 - sys = ss(D)
 - sys = ss(sysIn)
 
-## Input argument
+## 📥 Input argument
 
 - A - State matrix: Nx-by-Nx matrix.
 - B - Input-to-state matrix: Nx-by-Nu matrix.
@@ -18,16 +18,17 @@ State-space model.
 - TS - Sample time: scalar.
 - sysIn - SISO LTI model.
 
-## Output argument
+## 📤 Output argument
 
 - sys - Output state space system model.
 
-## Description
+## 📄 Description
 
-  <p>Creates a continuous-time state-space model using matrices A, B, C, and D, allowing for either real or complex-valued matrices.</p>
-  <p>This model is represented as <b>sys = ss(A, B, C, D)</b>.</p>
+Creates a continuous-time state-space model using matrices A, B, C, and D, allowing for either real or complex-valued matrices.
 
-## Examples
+This model is represented as <b>sys = ss(A, B, C, D)</b>.
+
+## 💡 Examples
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -45,16 +46,16 @@ sysIn = tf(num, den, Ts)
 sys = ss(sysIn)
 ```
 
-## See also
+## 🔗 See also
 
-[tf](tf.md).
+[tf](../control_system/tf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

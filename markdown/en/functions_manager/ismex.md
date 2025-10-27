@@ -2,23 +2,23 @@
 
 Check for the existence of a mex function.
 
-## Syntax
+## 📝 Syntax
 
 - tf = ismex(name)
 
-## Input argument
+## 📥 Input argument
 
 - name - a string: mex function name.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true if mex exists.
 
-## Description
+## 📄 Description
 
-  <p><b>ismex</b> checks for the existence of a mex function.</p>
+<b>ismex</b> checks for the existence of a mex function.
 
-## Example
+## 💡 Example
 
 ```matlab
 ismex('isbuiltin')
@@ -26,16 +26,16 @@ ismex('exist')
 ismex('exist')
 ```
 
-## See also
+## 🔗 See also
 
-[isbuiltin](isbuiltin.md), [ismacro](ismacro.md).
+[isbuiltin](../functions_manager/isbuiltin.md), [ismacro](../functions_manager/ismacro.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

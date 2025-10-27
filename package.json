@@ -1,6 +1,6 @@
 {
   "name": "nelson-gitbook",
-  "version": "1.11.0",
+  "version": "1.14.0",
   "description": "Nelson, an array programming language - gitbook",
   "copyright": "Copyright 2018-present Allan CORNET",
   "scripts": {

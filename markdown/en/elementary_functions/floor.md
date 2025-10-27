@@ -2,38 +2,38 @@
 
 Round down
 
-## Syntax
+## 📝 Syntax
 
 - C = floor(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of floor.
 
-## Description
+## 📄 Description
 
-  <p><b>floor</b> returns an integer matrix made of nearest rounded down integers.</p>
+<b>floor</b> returns an integer matrix made of nearest rounded down integers.
 
-## Example
+## 💡 Example
 
 ```matlab
 floor(pi)
 ```
 
-## See also
+## 🔗 See also
 
-[round](round.md), [fix](fix.md), [ceil](ceil.md).
+[round](../elementary_functions/round.md), [fix](../elementary_functions/fix.md), [ceil](../elementary_functions/ceil.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

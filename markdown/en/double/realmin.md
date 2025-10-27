@@ -2,21 +2,21 @@
 
 Smallest positive floating-point number.
 
-## Syntax
+## 📝 Syntax
 
 - R = realmin()
 - R = realmin('double')
 - R = realmin('single')
 
-## Output argument
+## 📤 Output argument
 
 - R - a double or single.
 
-## Description
+## 📄 Description
 
-  <p><b>realmin</b> returns smallest positive floating-point number.</p>
+<b>realmin</b> returns smallest positive floating-point number.
 
-## Example
+## 💡 Example
 
 ```matlab
 realmin
@@ -24,16 +24,16 @@ realmin('double')
 realmin('single')
 ```
 
-## See also
+## 🔗 See also
 
-[realmax](realmax.md), [intmin](../integer/intmin.md).
+[realmax](../double/realmax.md), [intmin](../integer/intmin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

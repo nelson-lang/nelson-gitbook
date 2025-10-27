@@ -2,19 +2,19 @@
 
 Returns Nelson's root folder.
 
-## Syntax
+## 📝 Syntax
 
 - nelson_path = nelsonroot
 
-## Output argument
+## 📤 Output argument
 
 - nelson_path - a string: the root folder of Nelson.
 
-## Description
+## 📄 Description
 
-  <p><b>nelsonroot</b> returns the root folder of Nelson.</p>
+<b>nelsonroot</b> returns the root folder of Nelson.
 
-## Example
+## 💡 Example
 
 ```matlab
 pwd
@@ -22,16 +22,16 @@ cd(nelsonroot)
 pwd
 ```
 
-## See also
+## 🔗 See also
 
 [pwd](../files_folders_functions/pwd.md), [cd](../files_folders_functions/cd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

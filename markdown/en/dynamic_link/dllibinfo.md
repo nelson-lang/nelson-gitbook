@@ -2,39 +2,39 @@
 
 Returns list of available symbols in an shared library.
 
-## Syntax
+## 📝 Syntax
 
 - c = dllibinfo(lib)
 
-## Input argument
+## 📥 Input argument
 
 - lib - a dllib handle: library already loaded.
 
-## Output argument
+## 📤 Output argument
 
 - c - a cell of strings.
 
-## Description
+## 📄 Description
 
-  <p><b>dllibinfo</b> returns list of available symbols in an shared library.</p>
+<b>dllibinfo</b> returns list of available symbols in an shared library.
 
-## Example
+## 💡 Example
 
 ```matlab
 lib = dlopen(modulepath('dynamic_link', 'builtin'))
 c = dllibinfo(lib)
 ```
 
-## See also
+## 🔗 See also
 
-[dlopen](dlopen.md).
+[dlopen](../dynamic_link/dlopen.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

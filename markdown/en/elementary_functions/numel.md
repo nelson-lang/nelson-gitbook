@@ -2,23 +2,23 @@
 
 Number of elements.
 
-## Syntax
+## 📝 Syntax
 
 - nbel = numel(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - nbel - the number of elements.
 
-## Description
+## 📄 Description
 
-  <p>Return the number of elements in the object M.</p>
+Return the number of elements in the object M.
 
-## Example
+## 💡 Example
 
 ```matlab
 numel(ones(3, 0))
@@ -26,16 +26,16 @@ numel(ones(3,4))
 numel(ones(3,4,5))
 ```
 
-## See also
+## 🔗 See also
 
-[size](size.md), [length](length.md).
+[size](../elementary_functions/size.md), [length](../elementary_functions/length.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

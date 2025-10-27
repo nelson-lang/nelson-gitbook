@@ -2,38 +2,38 @@
 
 Returns path of a module.
 
-## Syntax
+## 📝 Syntax
 
 - p = toolboxdir(module_short_name)
 
-## Input argument
+## 📥 Input argument
 
 - module_short_name - a string: short module's name.
 
-## Output argument
+## 📤 Output argument
 
 - p - a string: path of the module.
 
-## Description
+## 📄 Description
 
-  <p><b>toolboxdir</b> is an helper's function to return module root path.</p>
+<b>toolboxdir</b> is an helper's function to return module root path.
 
-## Example
+## 💡 Example
 
 ```matlab
 toolboxdir('core')
 ```
 
-## See also
+## 🔗 See also
 
-[modulepath](modulepath.md), [getmodules](getmodules.md).
+[modulepath](../modules_manager/modulepath.md), [getmodules](../modules_manager/getmodules.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

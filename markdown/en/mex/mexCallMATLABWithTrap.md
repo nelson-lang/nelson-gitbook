@@ -2,12 +2,12 @@
 
 Call a NELSON function and capture error.
 
-## Syntax
+## 📝 Syntax
 
 - #include "mex.h"
 - mxArray *mexCallMATLABWithTrap(int nlhs, mxArray *plhs[], int nrhs, mxArray *prhs[], const char *functionName);
 
-## Input argument
+## 📥 Input argument
 
 - nlhs - number of desired output arguments.
 - plhs - pointer to an array of mxArray (output).
@@ -15,31 +15,32 @@ Call a NELSON function and capture error.
 - prhs - pointer to an array of mxArray (input).
 - command_name - character string containing the name of the Nelson function called.
 
-## Output argument
+## 📤 Output argument
 
 - returned value - NULL if no error occurred; otherwise, a pointer to an mxArray (MException object).
 
-## Description
+## 📄 Description
 
-  <p><b>mexCallMATLABWithTrap</b> calls an NELSON function and capture error.</p>
-  <p>If name detects an error, <b>mexCallMATLABWithTrap</b> returns an mxArray (MException object).</p>
+<b>mexCallMATLABWithTrap</b> calls an NELSON function and capture error.
 
-## Example
+If name detects an error, <b>mexCallMATLABWithTrap</b> returns an mxArray (MException object).
+
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_mexCallMATLABWithTrap.m'])
 ```
 
-## See also
+## 🔗 See also
 
-[mexCallMATLAB](mexCallMATLAB.md).
+[mexCallMATLAB](../mex/mexCallMATLAB.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

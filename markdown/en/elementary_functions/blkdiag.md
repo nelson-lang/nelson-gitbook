@@ -2,38 +2,38 @@
 
 Block diagonal matrix
 
-## Syntax
+## 📝 Syntax
 
 - R = blkdiag(M1, ... , MN)
 
-## Input argument
+## 📥 Input argument
 
 - M1, ..., MN - a numeric 2D matrix
 
-## Output argument
+## 📤 Output argument
 
 - R - a matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>R = blkdiag(M1, ... , MN)</b> build the block diagonal matrix created by aligning the input matrices <b>M1, ... , MN</b> along the diagonal of <b>R</b>.</p>
+<b>R = blkdiag(M1, ... , MN)</b> build the block diagonal matrix created by aligning the input matrices <b>M1, ... , MN</b> along the diagonal of <b>R</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 blkdiag(magic(2), magic(3), magic(4))
 ```
 
-## See also
+## 🔗 See also
 
 [diag](../constructors_functions/diag.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

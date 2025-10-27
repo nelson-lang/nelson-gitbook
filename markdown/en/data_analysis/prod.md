@@ -2,7 +2,7 @@
 
 Product of array elements.
 
-## Syntax
+## 📝 Syntax
 
 - R = prod(M)
 - R = prod(M, d)
@@ -10,38 +10,38 @@ Product of array elements.
 - R = prod(M, d, t)
 - R = prod(M, d, t, f)
 
-## Input argument
+## 📥 Input argument
 
 - M - an array of double, single, integers, ...
 - d - dimension to operate along: positive integer scalar.
 - t - a string: 'default', 'double' or 'native'.
 - f - a string: 'includenan' or 'omitnan'.
 
-## Output argument
+## 📤 Output argument
 
 - R - Product of array elements.
 
-## Description
+## 📄 Description
 
-  <p><b>R = prod(M)</b> returns the product of the array elements of M.</p>
+<b>R = prod(M)</b> returns the product of the array elements of M.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
 R = prod(M, 'native')
 ```
 
-## See also
+## 🔗 See also
 
-[ndims](ndims.html), [sum](sum.md).
+[ndims](../data_analysis/ndims.md), [sum](../data_analysis/sum.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

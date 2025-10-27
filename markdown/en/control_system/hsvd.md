@@ -2,26 +2,29 @@
 
 Hankel singular values of dynamic system.
 
-## Syntax
+## 📝 Syntax
 
 - hsv = hsvd(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - State-space model
 
-## Output argument
+## 📤 Output argument
 
 - hsv - Hankel singular values.
 
-## Description
+## 📄 Description
 
-  <p><b>hsv = hsvd(sys)</b> calculates the Hankel singular values (hsv) for the dynamic system <b>sys</b>.</p>
-  <p>These singular values are computed in state coordinates that balance the energy transfers from input to state and from state to output.</p>
-  <p>The Hankel singular values serve as a measure of the impact of each state on the input/output characteristics of the system.</p>
-  <p>Analogous to how singular values relate to matrix rank, small Hankel singular values indicate states that may be omitted to streamline the model and simplify its representation.</p>
+<b>hsv = hsvd(sys)</b> calculates the Hankel singular values (hsv) for the dynamic system <b>sys</b>.
 
-## Example
+These singular values are computed in state coordinates that balance the energy transfers from input to state and from state to output.
+
+The Hankel singular values serve as a measure of the impact of each state on the input/output characteristics of the system.
+
+Analogous to how singular values relate to matrix rank, small Hankel singular values indicate states that may be omitted to streamline the model and simplify its representation.
+
+## 💡 Example
 
 ```matlab
 A = [ -0.04165  0.0000  4.9200  -4.9200  0.0000  0.0000  0.0000;
@@ -50,16 +53,16 @@ sys = ss(A, B, C, D);
 hsv = hsvd(sys)
 ```
 
-## See also
+## 🔗 See also
 
-[balreal](balreal.md).
+[balreal](../control_system/balreal.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

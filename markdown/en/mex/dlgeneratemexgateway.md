@@ -2,30 +2,30 @@
 
 Generates C MEX gateway (internal function).
 
-## Syntax
+## 📝 Syntax
 
 - dlgeneratemexgateway(destinationdir, function_name)
 
-## Input argument
+## 📥 Input argument
 
 - destinationdir - a string: destination directory where is generated the gateway file.
 - function_name - a string: function name exposed in Nelson.
 - interleavedcomplex - a logical: use interleaved complex representation.
 
-## Description
+## 📄 Description
 
-  <p><b>dlgeneratemexgateway</b> generates a C MEX gateway used by <b>mex</b> (internal function).</p>
+<b>dlgeneratemexgateway</b> generates a C MEX gateway used by <b>mex</b> (internal function).
 
-## See also
+## 🔗 See also
 
-[mex](mex.md).
+[mex](../mex/mex.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

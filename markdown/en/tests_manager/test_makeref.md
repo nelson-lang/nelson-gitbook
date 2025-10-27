@@ -2,33 +2,34 @@
 
 Creates a '.ref' file for a test
 
-## Syntax
+## 📝 Syntax
 
 - status = test_makeref(filename)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: filename, a test file.
 
-## Output argument
+## 📤 Output argument
 
 - status - a logical: true if .ref was generated.
 
-## Description
+## 📄 Description
 
-  <p><b>test_makeref</b> function creates a '.ref' file from a test file.</p>
-  <p>test file must have &lt;--CHECK REF--&gt; tag.</p>
+<b>test_makeref</b> function creates a '.ref' file from a test file.
 
-## See also
+test file must have <--CHECK REF--> tag.
 
-[test_run](test_run.md).
+## 🔗 See also
 
-## History
+[test_run](../tests_manager/test_run.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

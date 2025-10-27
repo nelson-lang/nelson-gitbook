@@ -2,26 +2,26 @@
 
 QML demos.
 
-## Syntax
+## 📝 Syntax
 
 - qml_demos()
 
-## Description
+## 📄 Description
 
-  <p><b>qml_demos</b> shows QML -- Nelson demos.</p>
+<b>qml_demos</b> shows QML -- Nelson demos.
 
-## Example
+## 💡 Example
 
 ```matlab
 qml_demos()
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,24 +2,24 @@
 
 Time elapsed between date vectors.
 
-## Syntax
+## 📝 Syntax
 
 - e = etime(t2, t1)
 
-## Input argument
+## 📥 Input argument
 
 - t2 - Date vectors: 1-by-6 vector or m-by-6 matrix.
 - t1 - Date vectors: 1-by-6 vector or m-by-6 matrix.
 
-## Output argument
+## 📤 Output argument
 
 - e - a scalar or a vector: time elapsed (seconds).
 
-## Description
+## 📄 Description
 
-  <p><b>e = etime(t2, t1)</b> returns the number of seconds between two date vectors or matrices of date vectors, <b>t1</b> and <b>t2</b>.</p>
+<b>e = etime(t2, t1)</b> returns the number of seconds between two date vectors or matrices of date vectors, <b>t1</b> and <b>t2</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 t1 = clock()
@@ -28,16 +28,16 @@ t2 = clock()
 etime(t2, t1)
 ```
 
-## See also
+## 🔗 See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

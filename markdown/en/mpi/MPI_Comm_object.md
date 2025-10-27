@@ -2,24 +2,25 @@
 
 Creates MPI_Comm object.
 
-## Syntax
+## 📝 Syntax
 
 - comm = MPI_Comm_object()
 - comm = MPI_Comm_object(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string: MPI_COMM_SELF, or MPI_COMM_WORLD.
 
-## Description
+## 📄 Description
 
-  <p><b>MPI_Comm_object(h)</b> creates an MPI_Comm object.</p>
+<b>MPI_Comm_object(h)</b> creates an MPI_Comm object.
 
-## Example
+## 💡 Example
 
 CLI required
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -30,18 +31,19 @@ MPI_Comm_used
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## See also
+## 🔗 See also
 
-[MPI_Comm_used](MPI_Comm_used.md), [MPI_Comm_delete](MPI_Comm_delete.md).
+[MPI_Comm_used](../mpi/MPI_Comm_used.md), [MPI_Comm_delete](../mpi/MPI_Comm_delete.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

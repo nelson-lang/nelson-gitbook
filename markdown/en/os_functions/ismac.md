@@ -2,19 +2,19 @@
 
 Checks if version is for MacOS platform.
 
-## Syntax
+## 📝 Syntax
 
 - s = ismac()
 
-## Output argument
+## 📤 Output argument
 
 - s - a logical: true if it is a MacOS platform.
 
-## Description
+## 📄 Description
 
-  <p><b>ismac</b> checks if it is a MacOs platform.</p>
+<b>ismac</b> checks if it is a MacOs platform.
 
-## Example
+## 💡 Example
 
 ```matlab
 if ismac
@@ -24,16 +24,16 @@ else
 end
 ```
 
-## See also
+## 🔗 See also
 
-[isunix](isunix.md), [ispc](ispc.md).
+[isunix](../os_functions/isunix.md), [ispc](../os_functions/ispc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

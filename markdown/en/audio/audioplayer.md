@@ -2,30 +2,32 @@
 
 Audio player object.
 
-## Syntax
+## 📝 Syntax
 
 - playerObj = audioplayer(y, fs)
 - playerObj = audioplayer(y, fs, nbits)
 - playerObj = audioplayer(y, fs, nbits, id)
 
-## Input argument
+## 📥 Input argument
 
 - y - a vector or matrix array: int8,uint8, int16, single or double.
 - fs - a double value: sampling rate in Hz.
 - nbits - a double value: bits per sample (16 by default).
 - id - a double value: device identifier (-1 by default).
 
-## Output argument
+## 📤 Output argument
 
 - playerObj - audioplayer object
 
-## Description
+## 📄 Description
 
-  <p><b>audioplayer</b> returns an audioplayer object to play data on an output device.</p>
-  <p>audioplayer object uses global scope and need to be deleted by user.</p>
-  <p><b>audioplayer</b> can play multichannels data if your sound card supports it.</p>
+<b>audioplayer</b> returns an audioplayer object to play data on an output device.
 
-## Example
+audioplayer object uses global scope and need to be deleted by user.
+
+<b>audioplayer</b> can play multichannels data if your sound card supports it.
+
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -36,16 +38,16 @@ delete(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[delete](../handle/delete.md), [play](play.md), [stop](stop.md), [resume](resume.md), [pause](pause.html).
+[delete](../handle/delete.md), [play](../audio/play.md), [stop](../audio/stop.md), [resume](../audio/resume.md), [pause](../audio/pause.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

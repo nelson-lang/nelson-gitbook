@@ -2,32 +2,34 @@
 
 undocumented features.
 
-## Syntax
+## 📝 Syntax
 
 - ret = feature(name)
 - ret = feature(name, newValue)
 
-## Input argument
+## 📥 Input argument
 
 - name - a string: name of the feature.
 - newValue - a variable
 
-## Output argument
+## 📤 Output argument
 
 - ret - result: result returned
 
-## Description
+## 📄 Description
 
-  <p><b>feature</b> is an entirely undocumented and unsupported Nelson function.</p>
-  <p>It is a helper function for debugging Nelson.</p>
-  <p><b>feature</b>can change without prior notice between Nelson releases, so be very careful when using this function in your code.</p>
+<b>feature</b> is an entirely undocumented and unsupported Nelson function.
 
-## History
+It is a helper function for debugging Nelson.
 
-| Version | Description     |
+<b>feature</b> can change without prior notice between Nelson releases, so be very careful when using this function in your code.
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.2.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

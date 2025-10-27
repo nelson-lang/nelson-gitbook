@@ -2,34 +2,34 @@
 
 Returns the default language used in Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - lang = getdefaultlanguage()
 
-## Output argument
+## 📤 Output argument
 
 - lang - a string: 'en_US' by default.
 
-## Description
+## 📄 Description
 
-  <p><b>getdefaultlanguage</b> returns the default language used by Nelson.</p>
+<b>getdefaultlanguage</b> returns the default language used by Nelson.
 
-## Example
+## 💡 Example
 
 ```matlab
 getdefaultlanguage()
 ```
 
-## See also
+## 🔗 See also
 
-[setlanguage](setlanguage.md).
+[setlanguage](../localization/setlanguage.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

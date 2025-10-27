@@ -1,11 +1,12 @@
 # Integers type
 
-Integers type
+The Integer Types module provides tools for working with signed and unsigned integers of various sizes in Nelson.
 
-## Description
+These types are particularly useful for efficiently storing and processing large datasets, such as images or large numeric arrays.
 
-These functions convert and store data to 1, 2 or 4 bytes integers.
-These data types are especially useful to store big objects such as images.
+The module supports conversions between integer formats and provides access to the minimum and maximum values representable for each integer type, ensuring safe and precise integer arithmetic.
+
+## Functions
 
 - [int16](int16.md) - Converts to 16-bit signed integer.
 - [int32](int32.md) - Converts to 32-bit signed integer.

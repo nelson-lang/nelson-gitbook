@@ -2,47 +2,55 @@
 
 Start Nelson process
 
-## Syntax
+## 📝 Syntax
 
 - #include "engine.h"
 - Engine *engOpen(const char *startcmd);
 
-## Input argument
+## 📥 Input argument
 
 - startcmd - Nelson startup command (NULL).
 
-## Output argument
+## 📤 Output argument
 
 - Engine - handle to Nelson engine or NULL.
 
-## Description
+## 📄 Description
 
-  <p><b>engOpen</b> starts a Nelson process for using Nelson as a computational engine.</p>
-  <p>Libraries path need to contain nelson path to find Nelson's libraries at runtime.</p>
-  <p>Set the value to the path returned by the following Nelson command:</p>
-  <p><b>res</b> = modulepath('nelson', 'builtin')</p>
-  <p>on linux: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<b>res</b></p>
-  <p>export PATH=$PATH:<b>res</b></p>
-  <p>on macos: export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:<b>res</b></p>
-  <p>export PATH=$PATH:<b>res</b></p>
-  <p>on windows: set PATH=%PATH%;<b>res</b></p>
+<b>engOpen</b> starts a Nelson process for using Nelson as a computational engine.
 
-## Example
+Libraries path need to contain nelson path to find Nelson's libraries at runtime.
+
+Set the value to the path returned by the following Nelson command:
+
+<b>res</b> = modulepath('nelson', 'builtin')
+
+on linux: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<b>res</b>
+
+export PATH=$PATH:<b>res</b>
+
+on macos: export DYLIB_LIBRARY_PATH=$DYLIB_LIBRARY_PATH:<b>res</b>
+
+export PATH=$PATH:<b>res</b>
+
+on windows: set PATH=%PATH%;<b>res</b>
+
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
-## See also
+## 🔗 See also
 
-[mex](mex.md), [engClose](engClose.md).
+[mex](../mex/mex.md), [engClose](../mex/engClose.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

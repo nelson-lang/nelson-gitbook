@@ -2,43 +2,44 @@
 
 Natural frequency and damping ratio.
 
-## Syntax
+## 📝 Syntax
 
 - [wn, zeta] = damp(sys)
 - [wn, zeta, p, T] = damp(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - LTI model.
 
-## Output argument
+## 📤 Output argument
 
 - wn - Natural frequency of each pole: vector.
 - zeta - Damping ratio of each pole: vector.
 - p - Poles of the dynamic system model: vector.
 - T - Time Constant (seconds): vector.
 
-## Description
+## 📄 Description
 
-  <p>The function <b>damp(sys)</b> provides the natural frequencies (<b>wn</b>) and damping ratios (<b>zeta</b>) associated with the poles of the system represented by <b>sys</b>.</p>
+The function <b>damp(sys)</b> provides the natural frequencies (<b>wn</b>) and damping ratios (<b>zeta</b>) associated with the poles of the system represented by <b>sys</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 sys = tf([2, 5, 1], [1, 0, 2, -6]);
 [wn, zeta, p, T] = damp(sys)
+
 ```
 
-## See also
+## 🔗 See also
 
-[esort](esort.md), [pole](pole.md).
+[esort](../control_system/esort.md), [pole](../control_system/pole.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

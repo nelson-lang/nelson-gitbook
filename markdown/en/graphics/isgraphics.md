@@ -2,25 +2,25 @@
 
 Check for graphics object.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isgraphics(GO)
 - tf = isgraphics(GO, type)
 
-## Input argument
+## 📥 Input argument
 
 - GO - variable or graphics object.
 - type - a character vector or scalar string: 'axes', 'line', 'image', 'root', 'text', 'figure'.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a scalar logical.
 
-## Description
+## 📄 Description
 
-  <p><b>isgraphics</b> checks is variable is an graphics object.</p>
+<b>isgraphics</b> checks is variable is an graphics object.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure()
@@ -31,16 +31,16 @@ f = 3
 tf = isgraphics(f)
 ```
 
-## See also
+## 🔗 See also
 
 [isprop](../handle/isprop.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

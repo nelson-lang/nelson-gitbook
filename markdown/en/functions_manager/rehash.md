@@ -2,32 +2,34 @@
 
 Reinitialize Nelson’s search path directory cache.
 
-## Syntax
+## 📝 Syntax
 
 - rehash
 
-## Description
+## 📄 Description
 
-  <p><b>rehash()</b> reinitializes Nelson’s search path directory cache.</p>
-  <p>This happens each time Nelson displays the prompt.</p>
-  <p>You should use <b>rehash()</b> only when you run a .m file that updates another .m file</p>
+<b>rehash()</b> reinitializes Nelson’s search path directory cache.
 
-## Example
+This happens each time Nelson displays the prompt.
+
+You should use <b>rehash()</b> only when you run a .m file that updates another .m file
+
+## 💡 Example
 
 ```matlab
 rehash()
 ```
 
-## See also
+## 🔗 See also
 
-[addpath](addpath.md), [path](path.md).
+[addpath](../functions_manager/addpath.md), [path](../functions_manager/path.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

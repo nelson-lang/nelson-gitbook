@@ -2,43 +2,43 @@
 
 Classic symmetric eigenvalue test problem.
 
-## Syntax
+## 📝 Syntax
 
 - R = rosser()
 - R = rosser(classname)
 
-## Input argument
+## 📥 Input argument
 
 - classname - row character vector or scalar string: class name desired ('double' by default).
 
-## Output argument
+## 📤 Output argument
 
 - R - Rosser Matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>R = rosser()</b> returns the Rosser Matrix.</p>
+<b>R = rosser()</b> returns the Rosser Matrix.
 
-Bibliography
+## 📚 Bibliography
 
 https://archive.org/details/jresv47n4p291
 
-## Example
+## 💡 Example
 
 ```matlab
 R = rosser()
 ```
 
-## See also
+## 🔗 See also
 
-[toeplitz](toeplitz.md), [eig](../linear_algebra/eig.md).
+[toeplitz](../elementary_functions/toeplitz.md), [eig](../linear_algebra/eig.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

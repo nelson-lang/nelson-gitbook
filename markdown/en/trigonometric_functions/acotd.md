@@ -2,38 +2,38 @@
 
 Inverse cotangent of angle in degrees
 
-## Syntax
+## 📝 Syntax
 
 - res = acotd(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>acotd</b> computes the inverse cotangent of angle for each element of <b>x</b> in degrees.
 
-## Example
+## 💡 Example
 
 ```matlab
 R = acotd([-i pi+i*pi/2 -1+i*4])
 ```
 
-## See also
+## 🔗 See also
 
-[acot](acot.html), [acoth](acoth.html).
+[acot](../trigonometric/acot.md), [acoth](../trigonometric/acoth.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

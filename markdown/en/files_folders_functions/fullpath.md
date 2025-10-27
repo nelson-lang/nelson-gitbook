@@ -2,38 +2,38 @@
 
 Returns canonical full path.
 
-## Syntax
+## 📝 Syntax
 
 - R = fullpath(path)
 
-## Input argument
+## 📥 Input argument
 
 - path - a string or cell of string: filename to normalize.
 
-## Output argument
+## 📤 Output argument
 
 - R - a string or cell of string: canonical paths.
 
-## Description
+## 📄 Description
 
-  <p><b>fullpath(path)</b> returns full path from a relative path.</p>
+<b>fullpath(path)</b> returns full path from a relative path.
 
-## Example
+## 💡 Example
 
 ```matlab
 fullpath([nelsonroot(), '/../toto'])
 ```
 
-## See also
+## 🔗 See also
 
-[relativepath](relativepath.md).
+[relativepath](../files_folders_functions/relativepath.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

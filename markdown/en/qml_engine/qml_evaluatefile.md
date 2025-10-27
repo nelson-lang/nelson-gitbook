@@ -2,28 +2,25 @@
 
 Evaluates a js file.
 
-## Syntax
+## 📝 Syntax
 
 - r = qml_evaluatefile(filename)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: a js filename.
 
-## Output argument
+## 📤 Output argument
 
 - r - a double, logical, int or string.
 
-## Description
+## 📄 Description
 
-  <p>Evaluates a js file.</p>
-  <p>If returned value cannot be converted to a basic type, it will converted to string.</p>
+Evaluates a js file.
 
-## See also
+If returned value cannot be converted to a basic type, it will converted to string.
 
-[qml_evaluatestring](qml_evaluatestring.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 test_file = [tempdir() , '/example_qml_evaluatefile.js'];
@@ -33,12 +30,16 @@ fclose(f);
 qml_evaluatefile(test_file)
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[qml_evaluatestring](../qml_engine/qml_evaluatestring.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

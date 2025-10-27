@@ -2,20 +2,20 @@
 
 Set the value of an environment variable.
 
-## Syntax
+## 📝 Syntax
 
 - getenv(env_name, env_value)
 
-## Input argument
+## 📥 Input argument
 
 - env_name - a string: environment variable name.
 - env_value - a string: environment variable value.
 
-## Description
+## 📄 Description
 
-  <p><b>setenv</b> set the value of an environment variable.</p>
+<b>setenv</b> set the value of an environment variable.
 
-## Example
+## 💡 Example
 
 ```matlab
 setenv('MY_ENV_VAR', 'funvalue')
@@ -24,16 +24,16 @@ setenv('MY_ENV_VAR', '')
 getenv('MY_ENV_VAR')
 ```
 
-## See also
+## 🔗 See also
 
-[getenv](getenv.md), [searchenv](searchenv.md).
+[getenv](../os_functions/getenv.md), [searchenv](../os_functions/searchenv.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

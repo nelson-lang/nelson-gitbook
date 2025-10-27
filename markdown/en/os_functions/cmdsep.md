@@ -2,35 +2,36 @@
 
 Command separator for current operating system.
 
-## Syntax
+## 📝 Syntax
 
 - sep = cmdsep()
 
-## Output argument
+## 📤 Output argument
 
 - sep - a string: on windows "&&", on linux ";"
 
-## Description
+## 📄 Description
 
-  <p><b>cmdsep</b> returns the command separator for current operating system.</p>
-  <p>This function is used by Nelson to build command lines for unix and dos operating systems.</p>
+<b>cmdsep</b> returns the command separator for current operating system.
 
-## Example
+This function is used by Nelson to build command lines for unix and dos operating systems.
+
+## 💡 Example
 
 ```matlab
 unix("cd c:/ " + cmdsep() + " nelson")
 ```
 
-## See also
+## 🔗 See also
 
-[unix](unix.html).
+[unix](../os_functions/unix.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.11.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

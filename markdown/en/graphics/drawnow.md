@@ -2,15 +2,15 @@
 
 Update figures and process callbacks
 
-## Syntax
+## 📝 Syntax
 
 - drawnow()
 
-## Description
+## 📄 Description
 
-  <p><b>drawnow</b> flushes the event queue and updates the figure window.</p>
+<b>drawnow</b> flushes the event queue and updates the figure window.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = -pi:pi/20:pi;
@@ -20,16 +20,16 @@ title('Title Here ...')
 grid on
 ```
 
-## See also
+## 🔗 See also
 
-[refresh](refresh.md).
+[refresh](../graphics/refresh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

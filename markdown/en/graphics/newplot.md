@@ -2,39 +2,39 @@
 
 Prepare to produce a new plot.
 
-## Syntax
+## 📝 Syntax
 
 - go = newplot()
 - go = newplot(ax)
 
-## Input argument
+## 📥 Input argument
 
 - ax - specified figure or axes rather than the current figure and axes.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: axes type.
 
-## Description
+## 📄 Description
 
-  <p><b>newplot</b> prepares a figure and axes for graphics commands.</p>
+<b>newplot</b> prepares a figure and axes for graphics commands.
 
-## Example
+## 💡 Example
 
 ```matlab
 h = newplot()
 ```
 
-## See also
+## 🔗 See also
 
-[plot](plot.md), [figure](figure.md).
+[plot](../graphics/plot.md), [figure](../graphics/figure.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

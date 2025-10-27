@@ -2,26 +2,28 @@
 
 Convert table to cell array
 
-## Syntax
+## 📝 Syntax
 
 - S = table2cell(T)
 - S = table2cell(T, "ToScalar", true)
 
-## Input argument
+## 📥 Input argument
 
 - T - a table object
 
-## Output argument
+## 📤 Output argument
 
 - C - Cell array.
 
-## Description
+## 📄 Description
 
-  <p><b>C = table2cell(T)</b> converts the table <b>T</b> into a cell array <b>C</b>, where each variable in <b>T</b> is transformed into a column of cells in <b>C</b>.</p>
-  <p>The output <b>C</b> does not include any properties from <b>T.Properties</b>.</p>
-  <p>If <b>T</b> contains row names, these will not be included in <b>C</b>.</p>
+<b>C = table2cell(T)</b> converts the table <b>T</b> into a cell array <b>C</b>, where each variable in <b>T</b> is transformed into a column of cells in <b>C</b>.
 
-## Example
+The output <b>C</b> does not include any properties from <b>T.Properties</b>.
+
+If <b>T</b> contains row names, these will not be included in <b>C</b>.
+
+## 💡 Example
 
 ```matlab
 S = ["Y";"Y";"N";"N";"N"];
@@ -31,16 +33,16 @@ T = table(S, A, B, 'VariableNames',["Smoker" "Age" "BloodPressure"], 'RowNames',
 C = table2cell(T)
 ```
 
-## See also
+## 🔗 See also
 
-[cell2table](cell2table.md), [table](table.md).
+[cell2table](../table/cell2table.md), [table](../table/table.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,27 @@
 
 Linear index to matrix subscript values
 
-## Syntax
+## 📝 Syntax
 
 - [row, col] = ind2sub(sz, ind)
 - [I1, I2, ..., In] = ind2sub(sz, ind)
 
-## Input argument
+## 📥 Input argument
 
 - sz - size of array: vector of positive integers.
 - ind - linear indices.
 
-## Output argument
+## 📤 Output argument
 
 - row - row subscripts.
 - col - column subscripts.
 - I1, I2, ..., In - multidimensional subscripts.
 
-## Description
+## 📄 Description
 
-  <p><b>ind2sub</b> converts linear indices to subscript.</p>
+<b>ind2sub</b> converts linear indices to subscript.
 
-## Example
+## 💡 Example
 
 ```matlab
 ind = [4 5 6 7];
@@ -30,16 +30,16 @@ sz = [4 4];
 [row,col] = ind2sub(sz,ind)
 ```
 
-## See also
+## 🔗 See also
 
-[sub2ind](sub2ind.md).
+[sub2ind](../elementary_functions/sub2ind.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

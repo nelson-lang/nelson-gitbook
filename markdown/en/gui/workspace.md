@@ -2,27 +2,26 @@
 
 Workspace Browser
 
-## Syntax
+## 📝 Syntax
 
 - workspace
 
-## Description
+## 📄 Description
 
-  <p>The Workspace browser allows you to observe and actively oversee the contents of the workspace within Nelson, providing access and control over each variable or object present.</p>
-  <p>
-    <img src="workspace_AC863D03.png" align="middle"/>
-  </p>
+The Workspace browser allows you to observe and actively oversee the contents of the workspace within Nelson, providing access and control over each variable or object present.
 
-## See also
+<img src="workspace.png" align="middle"/>
 
-[commandhistory](commandhistory.md), [filebrowser](filebrowser.md).
+## 🔗 See also
 
-## History
+[commandhistory](../gui/commandhistory.md), [filebrowser](../gui/filebrowser.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

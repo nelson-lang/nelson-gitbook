@@ -2,23 +2,23 @@
 
 Checks if a variable is global.
 
-## Syntax
+## 📝 Syntax
 
 - state = isglobal(variable_name)
 
-## Input argument
+## 📥 Input argument
 
 - variable_name - a string: variable name.
 
-## Output argument
+## 📤 Output argument
 
 - state - a logical: true if variable is global.
 
-## Description
+## 📄 Description
 
-  <p><b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.</p>
+<b>isglobal</b> returns true if <b>variable_name</b> has been declared as global variable and false otherwise.
 
-## Example
+## 💡 Example
 
 ```matlab
 y = 3;
@@ -30,16 +30,16 @@ clear global b
 isglobal b
 ```
 
-## See also
+## 🔗 See also
 
-[clear](clear.md), [who](who.md), [global](global.md).
+[clear](../memory_manager/clear.md), [who](../memory_manager/who.md), [global](../memory_manager/global.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

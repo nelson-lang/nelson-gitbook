@@ -2,39 +2,39 @@
 
 Computes the cosine in degree for each element of x.
 
-## Syntax
+## 📝 Syntax
 
 - res = cosd(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>cosd</b> computes the cosine in degree for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [0 30 45 60 90 360];;
 res = cosd(A)
 ```
 
-## See also
+## 🔗 See also
 
-[cos](cos.md).
+[cos](../trigonometric_functions/cos.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

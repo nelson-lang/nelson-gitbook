@@ -2,37 +2,37 @@
 
 Creates a GUID.
 
-## Syntax
+## 📝 Syntax
 
 - s = createGUID()
 - c = createGUID(numbers_of_GUID)
 
-## Input argument
+## 📥 Input argument
 
 - numbers_of_GUID - an integer value: numbers of GUID to create.
 
-## Output argument
+## 📤 Output argument
 
 - s - a string
 - c - a cell of strings.
 
-## Description
+## 📄 Description
 
-  <p><b>createGUID</b> creates a Globally Unique IDentifier (GUID), , a unique 128-bit integer used for CLSIDs and interface identifiers.</p>
+<b>createGUID</b> creates a Globally Unique IDentifier (GUID), , a unique 128-bit integer used for CLSIDs and interface identifiers.
 
-## Example
+## 💡 Example
 
 ```matlab
 createGUID()
 createGUID(10)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,43 +2,44 @@
 
 Bit-wise XOR
 
-## Syntax
+## 📝 Syntax
 
 - C = bitxor(A, B)
 - C = bitxor(A, B, assumedtype)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable: double, logical, integer
 - B - a variable: double, logical, integer
 - assumedtype - 'int64', 'int32', 'int16', 'int8', 'uint64', 'uint32', 'uint16' or 'uint8'.
 
-## Output argument
+## 📤 Output argument
 
 - C - Bit-wise XOR result
 
-## Description
+## 📄 Description
 
-  <p><b>C = bitxor(A, B)</b> returns the bit-wise XOR of <b>A</b> and <b>B</b>.</p>
+<b>C = bitxor(A, B)</b> returns the bit-wise XOR of <b>A</b> and <b>B</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = uint16([0 1; 0 1]);
 B = uint16([0 0; 1 1]);
 R = bitxor(A, B)
+
 ```
 
-## See also
+## 🔗 See also
 
-[bitand](bitand.md), [bitor](bitor.md).
+[bitand](../operators/bitand.md), [bitor](../operators/bitor.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

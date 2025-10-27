@@ -1,13 +1,15 @@
 # Dynamic link
 
-Dynamic link
+The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.
 
-## Description
+It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.
 
 By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.
 
+## Functions
+
 - [Build C/C++ code on the fly](1_c_cpp_build_on_fly.md) - Build C/C++ code on the fly
-- [Supported C/C++ compilers](2_supported_compilers.md)
+- [Supported C/C++ compilers](2_supported_compilers.md) -
 - [libpointer datatype](C_datatype.md) - C/Nelson equivalent data types
 - [cmake](cmake.md) - call CMake tool
 - [configuremingw](configuremingw.md) - Configure Nelson to use MinGW as default C compiler

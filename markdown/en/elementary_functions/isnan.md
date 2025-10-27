@@ -2,23 +2,23 @@
 
 Check for Not a Number entries.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isnan(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'isnan'.
 
-## Description
+## 📄 Description
 
-  <p><b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.</p>
+<b>isnan</b> returns a logical array which is true where elements of M are "Not a Number" values.
 
-## Example
+## 💡 Example
 
 ```matlab
 isnan(pi)
@@ -28,16 +28,16 @@ X = sparse([1 2 NaN 3 0 NaN 0 4]);
 R = isnan(X)
 ```
 
-## See also
+## 🔗 See also
 
-[isinf](isinf.md).
+[isinf](../elementary_functions/isinf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

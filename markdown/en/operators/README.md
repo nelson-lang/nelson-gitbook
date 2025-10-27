@@ -1,10 +1,12 @@
 # Operators
 
-Operators
+The Operators module provides tools for performing arithmetic, logical, relational, and array operations in Nelson.
 
-## Description
+It supports element-wise and matrix computations, concatenation, subscripted referencing and assignment, and short-circuit logical operations.
 
-Operators
+This module enables flexible manipulation of data structures and numerical arrays, forming the foundation for both basic calculations and advanced mathematical expressions.
+
+## Functions
 
 - [all](all.md) - all of the elements of a matrix satisfy some condition.
 - [and](and.md) - logical 'AND' operator, &
@@ -21,7 +23,7 @@ Operators
 - [horzcat](horzcat.md) - Horizontal concatenation.
 - [ismember](ismember.md) - Array elements that are members of another array.
 - [ldivide](ldivide.md) - Left division, .\ operator.
-- [le](le.md) - less than or equal, ≤ operator.
+- [le](le.md) - less than or equal, = operator.
 - [lt](lt.md) - less than, < operator.
 - [minus](minus.md) - Subtraction, - operator
 - [mldivide](mldivide.md) - Matrix left division, \ operator.

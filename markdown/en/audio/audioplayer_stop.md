@@ -2,19 +2,19 @@
 
 Stops an audioplayer object.
 
-## Syntax
+## 📝 Syntax
 
 - stop(playObj)
 
-## Input argument
+## 📥 Input argument
 
 - playObj - an audioplayer object.
 
-## Description
+## 📄 Description
 
 <b>stop</b> stops an audioplayer object.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,16 +26,16 @@ delete(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer](audioplayer.md), [play](play.md).
+[audioplayer](../audio/audioplayer.md), [play](../audio/play.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

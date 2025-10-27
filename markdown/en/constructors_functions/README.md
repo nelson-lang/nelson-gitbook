@@ -1,10 +1,12 @@
 # Constructors functions
 
-Constructors functions
+The Constructors module provides tools for creating fundamental numeric values, scalars, vectors, and matrices in Nelson.
 
-## Description
+It includes constants, identity and diagonal matrices, and special values such as infinity, NaN, and machine precision.
 
-Create scalars, vectors, or matrices
+This module forms the basis for initializing data structures and performing mathematical and numerical computations.
+
+## Functions
 
 - [Inf](Inf.md) - Infinity
 - [NaN](NaN.md) - Creates an Not-a-Number

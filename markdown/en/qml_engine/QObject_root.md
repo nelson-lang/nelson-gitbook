@@ -2,23 +2,19 @@
 
 QObject root object.
 
-## Syntax
+## 📝 Syntax
 
 - r = QObject_root()
 
-## Output argument
+## 📤 Output argument
 
 - h - QObject handle of Nelson gui.
 
-## Description
+## 📄 Description
 
-  <p>Returns QObject handle of Nelson gui.</p>
+Returns QObject handle of Nelson gui.
 
-## See also
-
-[QObject_set (set)](QObject_set.md), [QObject_get (get)](QObject_get.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 h1 = QObject_root()
@@ -26,12 +22,16 @@ h1.windowTitle
 h1.windowTitle = 'Your title'
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[QObject_set (set)](../qml_engine/QObject_set.md), [QObject_get (get)](../qml_engine/QObject_get.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

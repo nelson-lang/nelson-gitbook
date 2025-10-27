@@ -2,37 +2,39 @@
 
 Adds path as directory where the qml engine searches for installed modules.
 
-## Syntax
+## 📝 Syntax
 
 - qml_addimportpath(path)
 
-## Input argument
+## 📥 Input argument
 
 - path - a string : valid path.
 
-## Description
+## 📄 Description
 
-  <p><b>qml_addimportpath</b> adds <b>path</b> as a directory where the engine searches for installed modules in a URL-based directory structure.</p>
-  <p>The newly added path will be first in <b>qml_importpathlist</b>.</p>
+<b>qml_addimportpath</b> adds <b>path</b> as a directory where the engine searches for installed modules in a URL-based directory structure.
 
-## Example
+The newly added path will be first in <b>qml_importpathlist</b>.
+
+## 💡 Example
 
 ```matlab
 qml_importpathlist()
 qml_addimportpath(tempdir)
 qml_importpathlist()
+
 ```
 
-## See also
+## 🔗 See also
 
-[qml_importpathlist](qml_importpathlist.md).
+[qml_importpathlist](../qml_engine/qml_importpathlist.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

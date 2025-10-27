@@ -2,20 +2,21 @@
 
 Return the CPU time used by your Nelon session.
 
-## Syntax
+## 📝 Syntax
 
 - t = cputime()
 
-## Output argument
+## 📤 Output argument
 
 - t - a double: time in seconds.
 
-## Description
+## 📄 Description
 
-  <p><b>cputime()</b> returns the CPU time used by Nelson session.</p>
-  <p>To measure performance, it is better to use tic and toc functions.</p>
+<b>cputime()</b> returns the CPU time used by Nelson session.
 
-## Example
+To measure performance, it is better to use tic and toc functions.
+
+## 💡 Example
 
 ```matlab
 t1 = cputime;
@@ -29,16 +30,16 @@ sleep(10);
 toc()
 ```
 
-## See also
+## 🔗 See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

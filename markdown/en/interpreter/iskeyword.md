@@ -2,37 +2,37 @@
 
 Returns all Nelson keywords.
 
-## Syntax
+## 📝 Syntax
 
 - state = iskeyword(name)
 - ce = iskeyword()
 
-## Input argument
+## 📥 Input argument
 
 - name - a string.
 
-## Output argument
+## 📤 Output argument
 
 - state - a logical: true if is an Nelson keyword.
 - ce - a cell of strings: list of Nelson's keywords.
 
-## Description
+## 📄 Description
 
-  <p><b>iskeyword</b> returns a list of all Nelson keywords.</p>
+<b>iskeyword</b> returns a list of all Nelson keywords.
 
-## Example
+## 💡 Example
 
 ```matlab
 iskeyword('for')
 ce = iskeyword()
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

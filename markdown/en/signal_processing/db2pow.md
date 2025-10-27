@@ -2,38 +2,38 @@
 
 Convert a gain in decibels (dB) to power.
 
-## Syntax
+## 📝 Syntax
 
 - pow = db2pow(db)
 
-## Input argument
+## 📥 Input argument
 
 - db - input array: scalar, vector or matrix.
 
-## Output argument
+## 📤 Output argument
 
 - pow - corresponding power
 
-## Description
+## 📄 Description
 
-  <p><b>pow = db2pow(db)</b> returns corresponding power.</p>
+<b>pow = db2pow(db)</b> returns corresponding power.
 
-## Example
+## 💡 Example
 
 ```matlab
 pow = db2pow([0, -20])
 ```
 
-## See also
+## 🔗 See also
 
-[pow2db](pow2db.md).
+[pow2db](../signal_processing/pow2db.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

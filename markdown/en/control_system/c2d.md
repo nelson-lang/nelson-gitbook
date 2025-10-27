@@ -2,14 +2,14 @@
 
 Convert model from continuous to discrete time.
 
-## Syntax
+## 📝 Syntax
 
 - [P, G] = c2d(A, B, Ts)
 - sysd = c2d(sysc, Ts)
 - sysd = c2d(sysc, Ts, method)
 - sysd = c2d(sysc, Ts, 'prewarp', w0)
 
-## Input argument
+## 📥 Input argument
 
 - A - State matrix: Nx-by-Nx matrix.
 - B - Input-to-state matrix: Nx-by-Nu matrix.
@@ -18,18 +18,19 @@ Convert model from continuous to discrete time.
 - method - Discretization method: 'zoh', 'tustin', 'prewarp'
 - w0 - prewarp frequency.
 
-## Output argument
+## 📤 Output argument
 
 - P - phi
 - G - gamma
 - sysd - Discrete-time model
 
-## Description
+## 📄 Description
 
-  <p>The function <b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model <b>sysc</b> using a zero-order hold on the inputs with a sample time of <b>Ts</b>.</p>
-  <p>For instance, you can use <b>sysd = c2d(sysc, Ts, method)</b> to explicitly specify the discretization method.</p>
+The function <b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model <b>sysc</b> using a zero-order hold on the inputs with a sample time of <b>Ts</b>.
 
-## Example
+For instance, you can use <b>sysd = c2d(sysc, Ts, method)</b> to explicitly specify the discretization method.
+
+## 💡 Example
 
 ```matlab
 A = [1  0.5; 0.5  1 ];
@@ -39,18 +40,19 @@ D = [  1  0; 0 -1 ];
 sys = ss(A, B, C, D);
 Ts = 2;
 sysd = c2d(sys, Ts, 'zoh')
+
 ```
 
-## See also
+## 🔗 See also
 
-[d2c](d2c.md), [ss](ss.md).
+[d2c](../control_system/d2c.md), [ss](../control_system/ss.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

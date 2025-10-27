@@ -2,14 +2,14 @@
 
 save workspace variables to .mat file
 
-## Syntax
+## 📝 Syntax
 
 - savemat(filename)
 - savemat(filename, version, var1, ..., varN)
 - savemat(filename, '-append', ...)
 - savemat(filename, '-nocompression', ...)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: .nh5 filename.
 - var1, ..., varN - string: Names of variables to save from Nelson's workspace.
@@ -19,16 +19,17 @@ save workspace variables to .mat file
 - '-append' - append variables to an existing .mat file (-v7.3 only).
 - '-nocompression' - disable .mat file compression.
 
-## Description
+## 📄 Description
 
-  <p><b>savemat</b> save workspace variables to .mat file.</p>
-  <p>Nelson's data types are converted into the Mat file equivalents.</p>
+<b>savemat</b> save workspace variables to .mat file.
 
-Bibliography
+Nelson's data types are converted into the Mat file equivalents.
+
+## 📚 Bibliography
 
 Thanks to MATIO library (http://sourceforge.net/projects/matio/).
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = ones(3, 4);
@@ -45,6 +46,7 @@ loadmat([tempdir(), 'example_loadmat.mat']);
 who
 A
 B
+
 ```
 
 append variables
@@ -65,6 +67,7 @@ who
 A
 B
 C
+
 ```
 
 compression
@@ -77,16 +80,16 @@ with_compression = dir([tempdir(), 'example_savemat_with_compression.mat'])
 no_compression = dir([tempdir(), 'example_savemat_no_compression.mat'])
 ```
 
-## See also
+## 🔗 See also
 
-[loadmat](loadmat.md), [save](../stream_manager/save.md), [savenh5](../hdf5/savenh5.md).
+[loadmat](../matio/loadmat.md), [save](../stream_manager/save.md), [savenh5](../hdf5/savenh5.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

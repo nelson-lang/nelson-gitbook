@@ -2,41 +2,41 @@
 
 Start Nelson engine session for single and nonshared use.
 
-## Syntax
+## 📝 Syntax
 
 - #include "engine.h"
 - Engine *engOpenSingleUse(const char *startcmd, void *dcom, int *retstatus);
 
-## Input argument
+## 📥 Input argument
 
 - startcmd - Nelson startup command (NULL).
 - dcom - must be NULL.
 
-## Output argument
+## 📤 Output argument
 
 - Engine - handle to Nelson engine or NULL.
 - retstatus - status; possible cause of failure.
 
-## Description
+## 📄 Description
 
-  <p>engOpenSingleUse start Nelson engine session for single and nonshared use.</p>
+engOpenSingleUse start Nelson engine session for single and nonshared use.
 
-## Example
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_engine.c'])
 ```
 
-## See also
+## 🔗 See also
 
-[mex](mex.md), [engClose](engClose.md), [engOpen](engOpen.md).
+[mex](../mex/mex.md), [engClose](../mex/engClose.md), [engOpen](../mex/engOpen.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,39 +2,40 @@
 
 Locate Visual Studio 2017, 2019 and newer installations
 
-## Syntax
+## 📝 Syntax
 
 - res = vswhere()
 
-## Output argument
+## 📤 Output argument
 
 - res - a struct with information about Visual studio
 
-## Description
+## 📄 Description
 
-  <p><b>vswhere</b> allows to find easily Visual studio.</p>
-  <p><b>vswhere</b> is currently only implemented on Windows platform.</p>
+<b>vswhere</b> allows to find easily Visual studio.
 
-Bibliography
+<b>vswhere</b> is currently only implemented on Windows platform.
+
+## 📚 Bibliography
 
 https://github.com/Microsoft/vswhere
 
-## Example
+## 💡 Example
 
 ```matlab
 vswhere()
 ```
 
-## See also
+## 🔗 See also
 
-[havecompiler](havecompiler.md), [Supported C/C++ compilers](2_supported_compilers.md).
+[havecompiler](../dynamic_link/havecompiler.md), [Supported C/C++ compilers](../dynamic_link/2_supported_compilers.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

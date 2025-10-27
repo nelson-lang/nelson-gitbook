@@ -2,34 +2,34 @@
 
 Get available ActiveX servers.
 
-## Syntax
+## 📝 Syntax
 
 - l = actxserverlist()
 
-## Output argument
+## 📤 Output argument
 
 - l - a 1 by 3cell of strings.
 
-## Description
+## 📄 Description
 
-  <p><b>l = actxserverlist()</b> returns list of available servers.</p>
+<b>l = actxserverlist()</b> returns list of available servers.
 
-## Example
+## 💡 Example
 
 ```matlab
 l = actxserverlist()
 ```
 
-## See also
+## 🔗 See also
 
-[actxcontrollist](actxcontrollist.md), [actxserver](actxserver.md).
+[actxcontrollist](../com_engine/actxcontrollist.md), [actxserver](../com_engine/actxserver.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,31 +2,32 @@
 
 Build help of Nelson's modules for website.
 
-## Syntax
+## 📝 Syntax
 
 - buildhelpweb(destination_dir)
 - buildhelpweb(destination_dir, language)
 
-## Input argument
+## 📥 Input argument
 
 - destination_dir - a string: destination directory.
 - language - a string: language. if it is missing, current default language used.
 
-## Description
+## 📄 Description
 
-  <p><b>buildhelpweb</b> generates help files for website.</p>
-  <p>internal function</p>
+<b>buildhelpweb</b> generates help files for website.
 
-## See also
+internal function
 
-[buildhelp](buildhelp.md).
+## 🔗 See also
 
-## History
+[buildhelp](../help_tools/buildhelp.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

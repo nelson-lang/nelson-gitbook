@@ -2,38 +2,38 @@
 
 Checks that value is positive or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBePositive(var)
 - mustBePositive(var, argPosition)
 - C++: void mustBePositive(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement isnumeric, islogical, all, isreal, and gt methods.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBePositive</b> checks that value is positive or raise an error.</p>
+<b>mustBePositive</b> checks that value is positive or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBePositive(1)
 mustBePositive(-1)
 ```
 
-## See also
+## 🔗 See also
 
-[mustBeNonnegative](mustBeNonnegative.md).
+[mustBeNonnegative](../validators/mustBeNonnegative.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

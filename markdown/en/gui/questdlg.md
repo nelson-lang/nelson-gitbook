@@ -2,7 +2,7 @@
 
 Creates a question dialog box.
 
-## Syntax
+## 📝 Syntax
 
 - buttonname = questdlg(question)
 - buttonname = questdlg(question, title)
@@ -11,7 +11,7 @@ Creates a question dialog box.
 - buttonname = questdlg(question, title, text1, text2, default)
 - buttonname = questdlg(question, title, text1, text2, text3, default)
 
-## Input argument
+## 📥 Input argument
 
 - question - a string or a cell of string: the question.
 - title - a string: the title of the dialog box.
@@ -20,16 +20,17 @@ Creates a question dialog box.
 - text3 - a string: text of button 3.
 - default - a string: text of selected button by default.
 
-## Output argument
+## 📤 Output argument
 
 - buttonname - a string: text of the clicked button or ''.
 
-## Description
+## 📄 Description
 
-  <p><b>questdlg</b> displays a string using a question dialog box and return the caption of the activated button.</p>
-  <p>The dialog has three default buttons: 'Yes', 'No', 'Cancel' with 'Yes' as default.</p>
+<b>questdlg</b> displays a string using a question dialog box and return the caption of the activated button.
 
-## Examples
+The dialog has three default buttons: 'Yes', 'No', 'Cancel' with 'Yes' as default.
+
+## 💡 Examples
 
 ```matlab
 res = questdlg('What is the answer to the ultimate question of life, the universe and everything ?', 'A question for geeks', '41', '42', '43', '42')
@@ -47,16 +48,16 @@ res = questdlg('How are you ?', 'Health', 'Fine', 'Good', 'sick', 'Fine')
 res = questdlg({'Is', 'this', 'a', 'multi line', 'test ?'}, 'Test :)')
 ```
 
-## See also
+## 🔗 See also
 
-[warndlg](warndlg.md), [errordlg](errordlg.md), [helpdlg](helpdlg.md), [msgbox](msgbox.md).
+[warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

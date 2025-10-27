@@ -2,7 +2,7 @@
 
 Find Non-zero Elements
 
-## Syntax
+## 📝 Syntax
 
 - K = find(M)
 - [R, C] = find(M)
@@ -14,24 +14,24 @@ Find Non-zero Elements
 - [R, C] = find(M, N, D)
 - [R, C, V] = find(M, N, D)
 
-## Input argument
+## 📥 Input argument
 
 - M - a scalar, vector, matrix, or multidimensional array.
 - N - positive integer scalar value: number of nonzeros to find.
 - D - direction: 'first' (default) or 'last'.
 
-## Output argument
+## 📤 Output argument
 
 - K - indices to nonzero elements (vector).
 - R - row subscripts (vector).
 - C - column subscripts (vector).
 - V - nonzero elements of M (vector).
 
-## Description
+## 📄 Description
 
-  <p><b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>.</p>
+<b>K = find(M)</b> returns a vector with the linear indices of each nonzero element of <b>M</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = rand(4, 3, 5);
@@ -39,16 +39,16 @@ M = rand(4, 3, 5);
 M(R(1),C(1),V(1))
 ```
 
-## See also
+## 🔗 See also
 
 [strfind](../string/strfind.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

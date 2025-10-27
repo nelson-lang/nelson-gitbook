@@ -2,45 +2,46 @@
 
 Toeplitz matrix
 
-## Syntax
+## 📝 Syntax
 
 - T = toeplitz(c, r)
 - T = toeplitz(r)
 
-## Input argument
+## 📥 Input argument
 
 - c - a scalar or vector: column of Toeplitz matrix.
 - r - a scalar or vector: row of Toeplitz matrix.
 
-## Output argument
+## 📤 Output argument
 
 - T - Toeplitz matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>T = toeplitz(c, r)</b> returns the Toeplitz matrix whose first row is <b>r</b> and first column is <b>c</b>.</p>
-  <p><b>T = toeplitz(c)</b> returns the symmetric Toeplitz matrix.</p>
+<b>T = toeplitz(c, r)</b> returns the Toeplitz matrix whose first row is <b>r</b> and first column is <b>c</b>.
 
-Bibliography
+<b>T = toeplitz(c)</b> returns the symmetric Toeplitz matrix.
+
+## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/Toeplitz_matrix
 
-## Example
+## 💡 Example
 
 ```matlab
 T = toeplitz(1:5, 1:2:7)
 ```
 
-## See also
+## 🔗 See also
 
-[hankel](hankel.md).
+[hankel](../elementary_functions/hankel.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

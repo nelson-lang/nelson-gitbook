@@ -2,20 +2,21 @@
 
 Suspend code execution.
 
-## Syntax
+## 📝 Syntax
 
 - sleep(sec)
 
-## Input argument
+## 📥 Input argument
 
 - n - a double: duration of the sleep in seconds (decimal number).
 
-## Description
+## 📄 Description
 
-  <p><b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.</p>
-  <p> CTRL-C interruption stops <b>sleep</b>.</p>
+<b>sleep</b> stops Nelson processing any instruction for a speficied number of seconds.
 
-## Example
+CTRL-C interruption stops <b>sleep</b>.
+
+## 💡 Example
 
 ```matlab
 tic();sleep(1);toc()
@@ -23,16 +24,16 @@ tic();sleep(0.1);toc()
 tic();sleep(0.01);toc()
 ```
 
-## See also
+## 🔗 See also
 
-[tic](tic.md), [toc](toc.md).
+[tic](../time/tic.md), [toc](../time/toc.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

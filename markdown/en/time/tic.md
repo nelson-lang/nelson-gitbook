@@ -2,21 +2,22 @@
 
 Starts a stopwatch timer.
 
-## Syntax
+## 📝 Syntax
 
 - tic()
 - t = tic()
 
-## Output argument
+## 📤 Output argument
 
 - t - a unsigned integer 64 bit: value of internal timer of the tic function.
 
-## Description
+## 📄 Description
 
-  <p>The sequence of commands <b>tic(); commands ; t = toc() </b>returns the number of seconds required for the commands.</p>
-  <p>Consecutive <b>tic</b> commands overwrite the tic timer.</p>
+The sequence of commands <b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands.
 
-## Example
+Consecutive <b>tic</b> commands overwrite the tic timer.
+
+## 💡 Example
 
 ```matlab
 tic()
@@ -26,18 +27,19 @@ toc()
 tic()
 sleep(10)
 t = toc()
+
 ```
 
-## See also
+## 🔗 See also
 
-[toc](toc.md), [sleep](sleep.md), [time](time.md).
+[toc](../time/toc.md), [sleep](../time/sleep.md), [time](../time/time.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

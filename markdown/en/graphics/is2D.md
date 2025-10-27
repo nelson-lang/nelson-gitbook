@@ -2,23 +2,23 @@
 
 Checks if ax is a 2-D Polar or Cartesian axes.
 
-## Syntax
+## 📝 Syntax
 
 - tf = is2D(ax)
 
-## Input argument
+## 📥 Input argument
 
 - ax - a scalar graphic object: axe.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>is2D</b> returns Checks if ax is a 2-D Polar or Cartesian axes.</p>
+<b>is2D</b> returns Checks if ax is a 2-D Polar or Cartesian axes.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -32,16 +32,16 @@ ax = gca();
 assert_isfalse(is2D(ax));
 ```
 
-## See also
+## 🔗 See also
 
-[isgraphics](isgraphics.md).
+[isgraphics](../graphics/isgraphics.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

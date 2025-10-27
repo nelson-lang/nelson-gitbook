@@ -2,23 +2,23 @@
 
 Convert angle from degrees to radians.
 
-## Syntax
+## 📝 Syntax
 
 - r = deg2rad(d)
 
-## Input argument
+## 📥 Input argument
 
 - d - a numeric value (double or single)
 
-## Output argument
+## 📤 Output argument
 
 - r - a numeric value
 
-## Description
+## 📄 Description
 
 <b>d = deg2rad(r)</b> converts angle units from degrees to radians for each element of <b>r</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 D = 64.7;
@@ -27,16 +27,16 @@ radEarth = 6371;
 dist = radEarth * R
 ```
 
-## See also
+## 🔗 See also
 
-[rad2deg](rad2deg.md).
+[rad2deg](../trigonometric_functions/rad2deg.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

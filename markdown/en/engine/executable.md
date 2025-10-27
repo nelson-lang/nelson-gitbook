@@ -2,14 +2,14 @@
 
 Executables to start Nelson software.
 
-## Syntax
+## 📝 Syntax
 
 - nelson arg1 ... argn
 - nelson-cli arg1 ... argn
 - nelson-adv-cli arg1 ... argn
 - nelson-gui arg1 ... argn
 
-## Input argument
+## 📥 Input argument
 
 - -cli - equivalent to call 'nelson-cli'.
 - -adv-cli - equivalent to call 'nelson-adv-cli'.
@@ -33,16 +33,19 @@ Executables to start Nelson software.
 - --language lang - If this option is present it fixes the user language. Currently, lang can be: fr_FR en_US.
 - --quiet - If this option is present no banner and version displayed.
 
-## Description
+## 📄 Description
 
-  <p><b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)</p>
-  <p><b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)</p>
-  <p><b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)</p>
-  <p/>
-  <p>If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.</p>
-  <p>It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.</p>
+<b>nelson-cli</b>: basic terminal, no gui (no dependency to gui framework), no history, no completion (iso latin encoding)
 
-## Examples
+<b>nelson-adv-cli</b>: advanced terminal, no graphical console, history, completion available (UTF-16 support)
+
+<b>nelson-gui</b>: graphical console, history, completion available (UTF-16 support)
+
+If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.
+
+It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.
+
+## 💡 Examples
 
 ```matlab
 nelson-adv-cli -q -e "a = 1 + 2"
@@ -56,19 +59,19 @@ nelson-gui -v
 nelson-gui --help
 ```
 
-## See also
+## 🔗 See also
 
-[startup](startup.md).
+[startup](../engine/startup.md).
 
-## History
+## 🕔 History
 
-| Version | Description                                          |
+| Version | 📄 Description                                       |
 | ------- | ---------------------------------------------------- |
 | 1.0.0   | initial version                                      |
 | 1.4.0   | --without_python added                               |
 | 1.11.0  | About NELSON_RUNTIME_PATH environment variable added |
 | 1.11.0  | --vsocde argument                                    |
 
-## Author
+## 👤 Author
 
 Allan CORNET

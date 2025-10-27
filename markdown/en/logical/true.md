@@ -2,7 +2,7 @@
 
 Logical true.
 
-## Syntax
+## 📝 Syntax
 
 - true
 - l = true(n)
@@ -10,22 +10,22 @@ Logical true.
 - l = true(n, m, ..., k)
 - l = true(n, m, 'like', sp)
 
-## Input argument
+## 📥 Input argument
 
 - n - a integer value.
 - sz - a size vector.
 - n, m, ..., k - a n -by- m - ... -by- k array to indicate size.
 - sp - a sparse or array.
 
-## Output argument
+## 📤 Output argument
 
 - l - a logical value: true.
 
-## Description
+## 📄 Description
 
-  <p><b>true</b> build a matrix of true.</p>
+<b>true</b> build a matrix of true.
 
-## Example
+## 💡 Example
 
 ```matlab
 true
@@ -35,16 +35,16 @@ L = logical(sparse(1, 2))
 L2 = true(3,'like', L);
 ```
 
-## See also
+## 🔗 See also
 
-[false](false.md).
+[false](../logical/false.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,39 +2,39 @@
 
 Generates po file header.
 
-## Syntax
+## 📝 Syntax
 
 - ce = poheader(domain, language)
 
-## Input argument
+## 📥 Input argument
 
 - domain - a string: domain message.
 - language - a string: language, examples 'en_US' or 'fr_FR'.
 
-## Output argument
+## 📤 Output argument
 
 - ce - a cell of string: po file header.
 
-## Description
+## 📄 Description
 
-  <p><b>ce = poheader(domain, language)</b> generates po file header.</p>
+<b>ce = poheader(domain, language)</b> generates po file header.
 
-## Example
+## 💡 Example
 
 ```matlab
 poheader('nelson', 'en_US')
 ```
 
-## See also
+## 🔗 See also
 
 [setlanguage](../localization/setlanguage.md), [getlanguage](../localization/getlanguage.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

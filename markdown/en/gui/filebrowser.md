@@ -2,27 +2,26 @@
 
 Current Folder Browser
 
-## Syntax
+## 📝 Syntax
 
 - filebrowser
 
-## Description
+## 📄 Description
 
-  <p>The Current Folder browser in Nelson facilitates interactive file and folder management. Utilize it to navigate, create, access, relocate, and rename files and folders within the current directory.</p>
-  <p>
-    <img src="filebrowser_29693685.png" align="middle"/>
-  </p>
+The Current Folder browser in Nelson facilitates interactive file and folder management. Utilize it to navigate, create, access, relocate, and rename files and folders within the current directory.
 
-## See also
+<img src="filebrowser.png" align="middle"/>
 
-[historybrowser](historybrowser.html), [workspace](workspace.md).
+## 🔗 See also
 
-## History
+[historybrowser](../gui/historybrowser.md), [workspace](../gui/workspace.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

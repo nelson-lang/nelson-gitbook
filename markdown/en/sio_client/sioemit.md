@@ -2,32 +2,32 @@
 
 Emit an event to web client.
 
-## Syntax
+## 📝 Syntax
 
 - sioemit(name, message)
 - sioemit(name)
 
-## Input argument
+## 📥 Input argument
 
 - name - a string: event name
 - message - a string: message to emit
 
-## Description
+## 📄 Description
 
-  <p><b>sioemit</b> emits an event to client.</p>
+<b>sioemit</b> emits an event to client.
 
-## Example
+## 💡 Example
 
 ```matlab
 sioemit('event_demo', jsonencode(eye(3,3)))
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

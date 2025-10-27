@@ -2,39 +2,39 @@
 
 Complex conjugate
 
-## Syntax
+## 📝 Syntax
 
 - CZ = conj(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - CZ - result of conj: complex conjugate.
 
-## Description
+## 📄 Description
 
-  <p><b>conj</b> returns the complex conjugate.</p>
+<b>conj</b> returns the complex conjugate.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = conj(x)
 ```
 
-## See also
+## 🔗 See also
 
-[real](real.md).
+[real](../elementary_functions/real.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

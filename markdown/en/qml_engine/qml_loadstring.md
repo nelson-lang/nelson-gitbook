@@ -2,39 +2,40 @@
 
 Load a QML string.
 
-## Syntax
+## 📝 Syntax
 
 - h = qml_loadstring(str_to_eval)
 
-## Input argument
+## 📥 Input argument
 
 - str_to_eval - a string.
 
-## Output argument
+## 📤 Output argument
 
 - h - a QObject handle.
 
-## Description
+## 📄 Description
 
-  <p>Load a QML string</p>
-  <p>It creates a QML component and load .qml file.</p>
+Load a QML string
 
-## See also
+It creates a QML component and load .qml file.
 
-[qml_loadstring](qml_loadstring.md).
-
-## Example
+## 💡 Example
 
 ```matlab
-% see examples in [nelsonroot(), '/modules/qml_engine/examples']
+ % see examples in [nelsonroot(), '/modules/qml_engine/examples']
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[qml_loadstring](../qml_engine/qml_loadstring.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

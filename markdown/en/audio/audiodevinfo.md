@@ -2,7 +2,7 @@
 
 Get audio devices information.
 
-## Syntax
+## 📝 Syntax
 
 - devices = audiodevinfo()
 - devices = audiodevinfo('default')
@@ -12,7 +12,7 @@ Get audio devices information.
 - id = audiodevinfo(io, rate, bits, channels)
 - support = audiodevinfo(io, id, rate, bits, channels)
 
-## Input argument
+## 📥 Input argument
 
 - io - input (1) or output (0) device
 - id - an integer value.
@@ -21,19 +21,20 @@ Get audio devices information.
 - bits - an integer value: bits per sample.
 - channels - an integer value: number of audio channel.
 
-## Output argument
+## 📤 Output argument
 
 - devices - struct array
 - name - a string: name of the audio device specified by io and id.
 - id - an integer value.
 - support - a logical: true if values supported or false.
 
-## Description
+## 📄 Description
 
-  <p><b>audiodevinfo</b> returns a structure with available audio input and output devices.</p>
-  <p><b>devices = audiodevinfo('default')</b> returns a structure with default used audio input and output devices.</p>
+<b>audiodevinfo</b> returns a structure with available audio input and output devices.
 
-## Example
+<b>devices = audiodevinfo('default')</b> returns a structure with default used audio input and output devices.
+
+## 💡 Example
 
 ```matlab
 info = audiodevinfo()
@@ -47,12 +48,12 @@ for k = [1:audiodevinfo(INPUT_DEVICE)]
 end
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

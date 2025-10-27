@@ -2,7 +2,7 @@
 
 Sparse matrix definition.
 
-## Syntax
+## 📝 Syntax
 
 - sp = sparse(M)
 - sp = sparse(m, n)
@@ -10,7 +10,7 @@ Sparse matrix definition.
 - sp = sparse(I, J, V, m, n)
 - sp = sparse(I, J, V, m, n, nz)
 
-## Input argument
+## 📥 Input argument
 
 - M - a matrix: double or logical.
 - m - an integer value: rows dimension.
@@ -20,18 +20,21 @@ Sparse matrix definition.
 - V - a vector.
 - nz - an integer value: storage allocation for nonzero elements.
 
-## Output argument
+## 📤 Output argument
 
 - S - a single.
 
-## Description
+## 📄 Description
 
-  <p><b>sparse</b> is used to build a sparse matrix. Only non-zero entries are stored.</p>
-  <p>If <b>M</b>is a full matrix, <b>sparse</b> converts it to a sparse matrix representation, removing all zero values.</p>
-  <p>If nz is not specified, <b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)])</p>
-  <p>If multiple values are specified with the same i, j indices, the associated value will be the sum of the values at the repeated index.</p>
+<b>sparse</b> is used to build a sparse matrix. Only non-zero entries are stored.
 
-## Examples
+If <b>M</b> is a full matrix, <b>sparse</b> converts it to a sparse matrix representation, removing all zero values.
+
+If nz is not specified, <b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)])
+
+If multiple values are specified with the same i, j indices, the associated value will be the sum of the values at the repeated index.
+
+## 💡 Examples
 
 ```matlab
 sp = sparse(eye(3,3))
@@ -69,16 +72,16 @@ nnz(sp)
 nzmax(sp)
 ```
 
-## See also
+## 🔗 See also
 
-[full](full.md), [IJV](IJV.md), [nnz](nnz.md), [nzmax](nzmax.md).
+[full](../sparse/full.md), [IJV](../sparse/IJV.md), [nnz](../sparse/nnz.md), [nzmax](../sparse/nzmax.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

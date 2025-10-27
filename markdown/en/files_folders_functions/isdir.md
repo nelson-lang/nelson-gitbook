@@ -2,40 +2,41 @@
 
 Returns true is the input argument is an directory.
 
-## Syntax
+## 📝 Syntax
 
 - r = isdir(dirname)
 
-## Input argument
+## 📥 Input argument
 
 - dirname - a string: directory name to check.
 
-## Output argument
+## 📤 Output argument
 
 - r - a logical: true if it is an directory.
 
-## Description
+## 📄 Description
 
-  <p><b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.</p>
-  <p><b>isdir</b> and <b>isfolder</b> are same.</p>
+<b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.
 
-## Example
+<b>isdir</b> and <b>isfolder</b> are same.
+
+## 💡 Example
 
 ```matlab
 isdir(nelsonroot())
 isdir([nelsonroot(), '/not_exist_dir'])
 ```
 
-## See also
+## 🔗 See also
 
-[mkdir](mkdir.md), [isfile](isfile.md), [isfolder](isfolder.md).
+[mkdir](../files_folders_functions/mkdir.md), [isfile](../files_folders_functions/isfile.md), [isfolder](../files_folders_functions/isfolder.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

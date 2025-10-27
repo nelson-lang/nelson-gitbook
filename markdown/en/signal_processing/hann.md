@@ -2,45 +2,45 @@
 
 Hann window.
 
-## Syntax
+## 📝 Syntax
 
 - c = hann(m)
 - c = hann(m, opt)
 
-## Input argument
+## 📥 Input argument
 
 - m - positive integer: window length
 - opt - string: 'symetric' (default) or 'periodic'
 
-## Output argument
+## 📤 Output argument
 
 - c - column vector
 
-## Description
+## 📄 Description
 
-  <p><b>c = hann(m)</b> computes coefficients of a Hanning window of length <b>m</b>.</p>
+<b>c = hann(m)</b> computes coefficients of a Hanning window of length <b>m</b>.
 
-## Example
+## 📚 Bibliography
+
+Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
+
+## 💡 Example
 
 ```matlab
 c = hann(8)
 c = hann(8, 'periodic')
 ```
 
-Bibliography
+## 🔗 See also
 
-Oppenheim, Alan V., Ronald W. Schafer, and John R. Buck. Discrete-Time Signal Processing. Upper Saddle River, NJ: Prentice Hall, 1999.
+[hamming](../signal_processing/hamming.md), [blackman](../signal_processing/blackman.md).
 
-## See also
+## 🕔 History
 
-[hamming](hamming.md), [blackman](blackman.md).
-
-## History
-
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

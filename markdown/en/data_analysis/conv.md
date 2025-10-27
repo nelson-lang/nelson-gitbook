@@ -2,26 +2,26 @@
 
 Convolution and polynomial multiplication.
 
-## Syntax
+## 📝 Syntax
 
 - C = conv(u, v)
 - C = conv(u, v, shape)
 
-## Input argument
+## 📥 Input argument
 
 - u - input vectors, specified as either row or column vectors.
 - v - input vectors, specified as either row or column vectors.
 - shape - subsection of convolution: 'full' (default: full 2-D convolution), 'same' (central part of the convolution) or 'valid' (parts of the convolution that are computed without zero-padded edges).
 
-## Output argument
+## 📤 Output argument
 
 - C - convolution, returned as a vector or matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.</p>
+<b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 U = [-1 2 3 -2 0 1 2];
@@ -29,16 +29,16 @@ V = [2 4 -1 1];
 R = conv(U, V, 'same')
 ```
 
-## See also
+## 🔗 See also
 
-[conv](conv.md).
+[conv](../data_analysis/conv.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

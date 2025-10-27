@@ -2,29 +2,30 @@
 
 Remove used compiler configuration (on Windows).
 
-## Syntax
+## 📝 Syntax
 
 - res = removecompilerconf()
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical
 
-## Description
+## 📄 Description
 
-  <p><b>removecompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.</p>
-  <p><b>removecompilerconf</b> returns always true on others platforms.</p>
+<b>removecompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.
 
-## See also
+<b>removecompilerconf</b> returns always true on others platforms.
 
-[configuremsvc](configuremsvc.md), [configuremingw](configuremingw.md).
+## 🔗 See also
 
-## History
+[configuremsvc](../dynamic_link/configuremsvc.md), [configuremingw](../dynamic_link/configuremingw.md).
 
-| Version | Description     |
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,25 +2,26 @@
 
 Flip array along specified dimension
 
-## Syntax
+## 📝 Syntax
 
 - B = flipdim(A, dim)
 
-## Input argument
+## 📥 Input argument
 
 - A - an array
 - dim - an positive integer value
 
-## Output argument
+## 📤 Output argument
 
 - B - flipped array.
 
-## Description
+## 📄 Description
 
-  <p><b>flipdim</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.</p>
-  <p><b>flipdim</b> is similar to <b>flip</b> and available for compatibility with old existing scripts.</p>
+<b>flipdim</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.
 
-## Example
+<b>flipdim</b> is similar to <b>flip</b> and available for compatibility with old existing scripts.
+
+## 💡 Example
 
 ```matlab
 x = eye(3, 2);
@@ -29,16 +30,16 @@ y = flipdim(x, 2)
 y = flipdim(x, 3)
 ```
 
-## See also
+## 🔗 See also
 
-[flip](flip.md), [flipud](flipud.md), [fliplr](fliplr.md).
+[flip](../elementary_functions/flip.md), [flipud](../elementary_functions/flipud.md), [fliplr](../elementary_functions/fliplr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

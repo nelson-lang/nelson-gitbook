@@ -2,19 +2,19 @@
 
 Return the maximum variable name length.
 
-## Syntax
+## 📝 Syntax
 
 - R = namelengthmax
 
-## Output argument
+## 📤 Output argument
 
 - R - a double: the maximum variable name length
 
-## Description
+## 📄 Description
 
-  <p><b>namelengthmax</b>: Nelson allows 4096 as maximum length for variables and structures field names.</p>
+<b>namelengthmax</b>: Nelson allows 4096 as maximum length for variables and structures field names.
 
-## Examples
+## 💡 Examples
 
 Working: identifier length 4096 characters
 
@@ -23,6 +23,7 @@ ID = ['A', char(double('0') * ones(1, namelengthmax -1 ))];
 length(ID)
 STR = [ID, ' = 3'];
 execstr(STR)
+
 ```
 
 Not Working: identifier length 4097 characters
@@ -32,18 +33,19 @@ ID = ['A', char(double('0') * ones(1, namelengthmax))];
 length(ID)
 STR = [ID, ' = 3'];
 execstr(STR)
+
 ```
 
-## See also
+## 🔗 See also
 
-[execstr](execstr.md).
+[execstr](../core/execstr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

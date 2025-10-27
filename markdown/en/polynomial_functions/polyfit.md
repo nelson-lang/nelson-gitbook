@@ -2,42 +2,43 @@
 
 Polynomial curve fitting.
 
-## Syntax
+## 📝 Syntax
 
 - p = polyfit(x, y, n)
 
-## Input argument
+## 📥 Input argument
 
 - x - vector: query points
 - y - vector: fitted values at query points
 - n - positive scalar: degree of polynomial fit
 
-## Output argument
+## 📤 Output argument
 
 - p - vector: Least-squares fit polynomial coefficients
 
-## Description
+## 📄 Description
 
-  <p><b>p = polyfit(x, y, n)</b> returns the coefficients for a polynomial <b>p(x)</b> of degree <b>n</b> that is a best fit for the data in <b>y</b>.</p>
+<b>p = polyfit(x, y, n)</b> returns the coefficients for a polynomial <b>p(x)</b> of degree <b>n</b> that is a best fit for the data in <b>y</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 x = linspace(0, 8 * pi, 15);
 y = sin(x);
 p = polyfit(x, y, 7)
 ```
 
-## See also
+## 🔗 See also
 
-[roots](roots.md), [poly](poly.md).
+[roots](../polynomial_functions/roots.md), [poly](../polynomial_functions/poly.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

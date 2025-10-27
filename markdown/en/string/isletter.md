@@ -2,23 +2,23 @@
 
 Determine which characters are letters.
 
-## Syntax
+## 📝 Syntax
 
 - res = isletter(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - scalar, vector, matrix or multidimensional array.
 
-## Output argument
+## 📤 Output argument
 
 - res - logical array
 
-## Description
+## 📄 Description
 
 <b>isletter</b> determines which characters are letters.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 isletter('Nel Son')
@@ -28,16 +28,16 @@ isletter('Nel Son')
 isletter("六書 six writings")
 ```
 
-## See also
+## 🔗 See also
 
-[toupper](toupper.md).
+[toupper](../string/toupper.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

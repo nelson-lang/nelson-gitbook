@@ -2,44 +2,44 @@
 
 Inverse of Hilbert matrix
 
-## Syntax
+## 📝 Syntax
 
 - h = hilb(n)
 - h = hilb(n, className)
 
-## Input argument
+## 📥 Input argument
 
 - n - a scalar, nonnegative integer.
 - className - 'single' or 'double' (default).
 
-## Output argument
+## 📤 Output argument
 
 - h - Hilbert matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>hilb</b> computes the Hilbert matrix.</p>
+<b>hilb</b> computes the Hilbert matrix.
 
-Bibliography
+## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/David_Hilbert, and Thanks to https://nhigham.com/2020/06/30/what-is-the-hilbert-matrix/
 
-## Example
+## 💡 Example
 
 ```matlab
 h = hilb(5)
 ```
 
-## See also
+## 🔗 See also
 
-[invhilb](invhilb.md).
+[invhilb](../elementary_functions/invhilb.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,24 +2,24 @@
 
 Continuous Lyapunov equation solution.
 
-## Syntax
+## 📝 Syntax
 
 - X = lyap(A, Q)
 
-## Input argument
+## 📥 Input argument
 
 - A - real matrix
 - Q - real matrix
 
-## Output argument
+## 📤 Output argument
 
 - X - matrix: solution of the Lyapunov equation.
 
-## Description
+## 📄 Description
 
-  <p><b>X = lyap(A, Q)</b> resolves the Lyapunov equation.</p>
+<b>X = lyap(A, Q)</b> resolves the Lyapunov equation.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [10, 20; -30, -40];
@@ -27,16 +27,16 @@ Q = [30, 10; 10, 10];
 X = lyap (A, Q)
 ```
 
-## See also
+## 🔗 See also
 
-[dlyap](dlyap.md).
+[dlyap](../control_system/dlyap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

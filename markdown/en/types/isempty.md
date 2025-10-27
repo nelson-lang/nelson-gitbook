@@ -2,30 +2,32 @@
 
 Return true if variable var is an empty matrix.
 
-## Syntax
+## 📝 Syntax
 
 - res = isempty(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
-  <p><b>isempty</b> returns a logical true if the argument is an empty matrix.</p>
-  <p>Any one of its dimensions is zero.</p>
+<b>isempty</b> returns a logical true if the argument is an empty matrix.
 
-## Examples
+Any one of its dimensions is zero.
+
+## 💡 Examples
 
 ```matlab
 A = rand(3, 3, 3);
 res = isempty(A)
 A(:, :, :) = [];
 res = isempty(A)
+
 ```
 
 ```matlab
@@ -37,16 +39,16 @@ C = struct([])
 res = isempty(C)
 ```
 
-## See also
+## 🔗 See also
 
-[class](class.md), [isstruct](isstruct.html).
+[class](../types/class.md), [isstruct](../integer/isstruct.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

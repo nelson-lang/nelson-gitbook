@@ -2,35 +2,35 @@
 
 Converts xml Nelson help files to markdown format.
 
-## Syntax
+## 📝 Syntax
 
 - status = xmldoctomd(source_dirs, destination_dir, main_title, overwrite)
 
-## Input argument
+## 📥 Input argument
 
 - source_dirs - a cell of string: list of xml filenames.
 - destination_dir - a string: directory destination.
 - main_title - a string: title of main index.
 - overwrite - a logical: force overwrite if file destination already exists
 
-## Output argument
+## 📤 Output argument
 
 - status - a logical: files generated or not.
 
-## Description
+## 📄 Description
 
-  <p><b>xmldoctomd</b> converts xml Nelson help files to markdown format.</p>
+<b>xmldoctomd</b> converts xml Nelson help files to markdown format.
 
-## See also
+## 🔗 See also
 
-[xmldocbuild](xmldocbuild.md), [buildhelpmd](buildhelpmd.md), [buildhelpweb](buildhelpweb.md).
+[xmldocbuild](../help_tools/xmldocbuild.md), [buildhelpmd](../help_tools/buildhelpmd.md), [buildhelpweb](../help_tools/buildhelpweb.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

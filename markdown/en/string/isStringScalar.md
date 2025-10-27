@@ -2,23 +2,23 @@
 
 checks if input is string array with one element.
 
-## Syntax
+## 📝 Syntax
 
 - r = isStringScalar(str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string, string array or cell of strings.
 
-## Output argument
+## 📤 Output argument
 
 - r - a logical, true if res is string type and scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>isStringScalar</b> checks if input is string array with one element.</p>
+<b>isStringScalar</b> checks if input is string array with one element.
 
-## Example
+## 💡 Example
 
 ```matlab
 r = isStringScalar('hello')
@@ -26,16 +26,16 @@ r = isStringScalar("hello")
 r = isStringScalar(["hello", "world"])
 ```
 
-## See also
+## 🔗 See also
 
 [ischar](../types/ischar.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

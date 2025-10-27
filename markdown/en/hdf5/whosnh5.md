@@ -2,27 +2,27 @@
 
 List variables in an valid .nh5 file with sizes and types.
 
-## Syntax
+## 📝 Syntax
 
 - whosnh5(filename)
 - st = whosnh5(filename)
 - whosnh5(filename, var1, ..., varN)
 - st = whosnh5(filename, var1, ..., varN)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: .nh5 filename.
 - var1, ..., varN - string: Names of variables to inspect.
 
-## Output argument
+## 📤 Output argument
 
 - st - stores information about the variables in the structure array st.
 
-## Description
+## 📄 Description
 
-  <p><b>whosnh5</b> lists variables in an valid .nh5 file.</p>
+<b>whosnh5</b> lists variables in an valid .nh5 file.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = ones(3, 4);
@@ -34,16 +34,16 @@ whosnh5([tempdir(), 'example_whosnh5.nh5'])
 st = whosnh5([tempdir(), 'example_whosnh5.nh5'])
 ```
 
-## See also
+## 🔗 See also
 
 [whosmat](../matio/whosmat.md), [whos](../memory_manager/whos.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

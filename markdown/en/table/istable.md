@@ -2,23 +2,23 @@
 
 Determine if input is table.
 
-## Syntax
+## 📝 Syntax
 
 - tf = istable(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input array.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true if it is a table.
 
-## Description
+## 📄 Description
 
-  <p><b>tf = istable(A)</b> returns <b>true</b> if <b>A</b> is a table, and <b>false</b> if it is not.</p>
+<b>tf = istable(A)</b> returns <b>true</b> if <b>A</b> is a table, and <b>false</b> if it is not.
 
-## Example
+## 💡 Example
 
 ```matlab
 T = table();
@@ -27,16 +27,16 @@ M = magic(6);
 istable(M)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](../types/isa.md), [table](table.md).
+[isa](../types/isa.md), [table](../table/table.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

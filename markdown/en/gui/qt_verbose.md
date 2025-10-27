@@ -2,41 +2,42 @@
 
 show/hide Qt debug message.
 
-## Syntax
+## 📝 Syntax
 
 - r = qt_verbose()
 - p = qt_verbose(logical)
 
-## Input argument
+## 📥 Input argument
 
 - logical - a logical: true to show messages, false to hide.
 
-## Output argument
+## 📤 Output argument
 
 - r - logical: current value
 - p - logical: previous value
 
-## Description
+## 📄 Description
 
-  <p><b>qt_verbose</b> how/hide Qt debug message.</p>
-  <p>This function is usefull to debug Qt and Qml.</p>
+<b>qt_verbose</b> how/hide Qt debug message.
 
-## Example
+This function is usefull to debug Qt and Qml.
+
+## 💡 Example
 
 ```matlab
 h = qt_verbose()
 ```
 
-## See also
+## 🔗 See also
 
 [qml_loadfile](../qml_engine/qml_loadfile.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

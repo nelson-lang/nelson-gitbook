@@ -2,49 +2,50 @@
 
 Gauss-Jordan elimination.
 
-## Syntax
+## 📝 Syntax
 
 - R = rref(A)
 - R = rref(A, tol)
 - [R, p] = rref(A)
 - [R, p] = rref(A, tol)
 
-## Input argument
+## 📥 Input argument
 
 - A - input matrix (double or single)
 - tol - tolerance: scalar or max(rows, cols) _ eps(class(A)) _ norm(A, inf) (default)
 
-## Output argument
+## 📤 Output argument
 
 - R - a matrix: reduced row echelon form of A.
 - p - a vector: nonzero pivot columns.
 
-## Description
+## 📄 Description
 
-  <p><b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.</p>
-  <p><b>[R, p] = rref(A)</b> returns also the nonzero pivots <b>p</b>.</p>
+<b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.
 
-Bibliography
+<b>[R, p] = rref(A)</b> returns also the nonzero pivots <b>p</b>.
+
+## 📚 Bibliography
 
 https://en.wikipedia.org/wiki/Gaussian_elimination
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [magic(4), eye(4)]
 [R, p] = rref(A)
 ```
 
-## See also
+## 🔗 See also
 
-[rank](rank.md).
+[rank](../linear_algebra/rank.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

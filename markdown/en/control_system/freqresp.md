@@ -2,27 +2,28 @@
 
 Evaluate system response over a grid of frequencies.
 
-## Syntax
+## 📝 Syntax
 
 - [H, wout] = freqresp(sys, w)
 - H = freqresp(sys, w)
 
-## Input argument
+## 📥 Input argument
 
 - sys - LTI model
 - w - Frequencies: vector
 
-## Output argument
+## 📤 Output argument
 
 - H - Frequency response values
 - wout - Output frequencies corresponding to the frequency response: vector.
 
-## Description
+## 📄 Description
 
-  <p><b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>.</p>
-  <p>To acquire magnitude and phase data, along with visual representations of the frequency response, utilize the <b>bode</b> function.</p>
+<b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>.
 
-## Examples
+To acquire magnitude and phase data, along with visual representations of the frequency response, utilize the <b>bode</b> function.
+
+## 💡 Examples
 
 ```matlab
 G = tf(1,[1 1]);
@@ -44,20 +45,21 @@ subplot(2, 1, 2);
 plot(freq, angle(squeeze(resp)) * 180/pi);
 ylabel(_('Phase (degrees)'));
 xlabel(_('Frequency (Hz)'));
+
 ```
 
-<img src="freqresp_4C921271.svg" align="middle"/>
+<img src="freqresp.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[bode](bode.md), [evalfr](evalfr.md).
+[bode](../control_system/bode.md), [evalfr](../control_system/evalfr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

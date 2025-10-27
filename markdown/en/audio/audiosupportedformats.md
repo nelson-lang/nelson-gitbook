@@ -2,19 +2,19 @@
 
 Get audio file supported formats.
 
-## Syntax
+## 📝 Syntax
 
 - formats = audiosupportedformats()
 
-## Output argument
+## 📤 Output argument
 
 - formats - struct array with 'Name', 'Extension', 'Subformats' fieldnames.
 
-## Description
+## 📄 Description
 
-  <p><b>audiosupportedformats</b> returns a structure with supported audio file formats.</p>
+<b>audiosupportedformats</b> returns a structure with supported audio file formats.
 
-## Example
+## 💡 Example
 
 ```matlab
 formats = audiosupportedformats();
@@ -25,12 +25,12 @@ for k = [1: length(formats)]
 end
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

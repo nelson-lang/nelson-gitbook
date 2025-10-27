@@ -2,39 +2,39 @@
 
 Returns true if the QObject is a window.
 
-## Syntax
+## 📝 Syntax
 
 - R = QObject_iswindowtype(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - an QObject handle.
 
-## Output argument
+## 📤 Output argument
 
 - R - a logical.
 
-## Description
+## 📄 Description
 
-  <p>Returns true if the QObject is a window; otherwise returns false.</p>
+Returns true if the QObject is a window; otherwise returns false.
 
-## See also
-
-[QObject_set (set)](QObject_set.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 h = errordlg()
 r = QObject_iswindowtype(h)
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[QObject_set (set)](../qml_engine/QObject_set.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

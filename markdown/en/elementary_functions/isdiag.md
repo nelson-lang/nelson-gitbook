@@ -2,23 +2,23 @@
 
 Checks if matrix is diagonal.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isdiag(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a numeric array
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'isdiag'.
 
-## Description
+## 📄 Description
 
-  <p><b>isdiag</b> returns an scalar logical if entry is diag.</p>
+<b>isdiag</b> returns an scalar logical if entry is diag.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
@@ -26,16 +26,16 @@ R = isdiag(A)
 R = isdiag(A(:,1))
 ```
 
-## See also
+## 🔗 See also
 
-[istriu](istriu.md), [istril](istril.md).
+[istriu](../elementary_functions/istriu.md), [istril](../elementary_functions/istril.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

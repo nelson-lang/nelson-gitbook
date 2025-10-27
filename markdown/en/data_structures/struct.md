@@ -2,7 +2,7 @@
 
 Creates a struct.
 
-## Syntax
+## 📝 Syntax
 
 - st = struct()
 - st = struct([])
@@ -10,21 +10,21 @@ Creates a struct.
 - st = struct(field, value)
 - st = struct(field, value, field2, value2, ..., fieldn, valuen)
 
-## Input argument
+## 📥 Input argument
 
 - field, field2, ... , fieldn - strings : field names, valid names are same than variable identifiers.
 - value, value2, ..., valuen - all data types supported by Nelson.
 - object - an object created with 'class' builtin.
 
-## Output argument
+## 📤 Output argument
 
 - st - a struct
 
-## Description
+## 📄 Description
 
-  <p><b>struct</b> returns a structure.</p>
+<b>struct</b> returns a structure.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 struct()
@@ -43,20 +43,20 @@ Other way to create a struct:
 ```matlab
 date_st.day = 15
 date_st.month = 'August'
-date_st.year = 1974)
+date_st.year = 1974
 ```
 
-## See also
+## 🔗 See also
 
-[cell](cell.md), [istruct](../types/isstruct.md).
+[cell](../data_structures/cell.md), [istruct](../types/isstruct.md).
 
-## History
+## 🕔 History
 
-| Version | Description                          |
+| Version | 📄 Description                       |
 | ------- | ------------------------------------ |
 | 1.0.0   | initial version                      |
 | 1.3.0   | Scalar String allowed as field name. |
 
-## Author
+## 👤 Author
 
 Allan CORNET

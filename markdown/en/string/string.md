@@ -2,23 +2,23 @@
 
 string array constructor.
 
-## Syntax
+## 📝 Syntax
 
 - res = string(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - characters, a cell of characters, or an logical or numeric array.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string array
 
-## Description
+## 📄 Description
 
 <b>string</b> converts input into string array.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 R = string({'these', 'are'; 'test', 'strings'})
@@ -32,16 +32,16 @@ R = string(M)
 D = double(R)
 ```
 
-## See also
+## 🔗 See also
 
-[strings](strings.md), [double](../double/double.md).
+[strings](../string/strings.md), [double](../double/double.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

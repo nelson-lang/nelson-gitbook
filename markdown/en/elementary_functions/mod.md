@@ -2,40 +2,41 @@
 
 Modulus after division.
 
-## Syntax
+## 📝 Syntax
 
 - C = mod(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable: dividend
 - B - a variable: divisor
 
-## Output argument
+## 📤 Output argument
 
 - C - result of mod(A, B)
 
-## Description
+## 📄 Description
 
-  <p><b>C = mod(A, B)</b> computes the modulo of A and B, i.e : A - B .* floor (A ./ B).</p>
-  <p>This function manages also negative values.</p>
+<b>C = mod(A, B)</b> computes the modulo of A and B, i.e : A - B .\* floor (A ./ B).
 
-## Example
+This function manages also negative values.
+
+## 💡 Example
 
 ```matlab
-mod (-1, 3)
+ mod (-1, 3)
 ```
 
-## See also
+## 🔗 See also
 
-[rem](rem.md), [floor](floor.md).
+[rem](../elementary_functions/rem.md), [floor](../elementary_functions/floor.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

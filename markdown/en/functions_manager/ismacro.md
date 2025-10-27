@@ -2,39 +2,39 @@
 
 Check for the existence of a macro (function).
 
-## Syntax
+## 📝 Syntax
 
 - tf = ismacro(name)
 
-## Input argument
+## 📥 Input argument
 
 - name - a string: macro name.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true if macro exists.
 
-## Description
+## 📄 Description
 
-  <p><b>isbuiltin</b> checks for the existence of a macro.</p>
+<b>ismacro</b> checks for the existence of a macro.
 
-## Example
+## 💡 Example
 
 ```matlab
 ismacro('isbuiltin')
 ismacro('exist')
 ```
 
-## See also
+## 🔗 See also
 
-[isbuiltin](isbuiltin.md).
+[isbuiltin](../functions_manager/isbuiltin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

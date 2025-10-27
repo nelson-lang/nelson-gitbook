@@ -2,37 +2,37 @@
 
 Assignin value to a variable in a specified variables scope.
 
-## Syntax
+## 📝 Syntax
 
 - assignin(scope, variable_name, variable_value)
 
-## Input argument
+## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
 - variable_name - a string: the name of variable destination.
 - variable_value - a variable to assign.
 
-## Description
+## 📄 Description
 
-  <p><b>assignin</b> assign value to a variable in a specified variables scope.</p>
+<b>assignin</b> assign value to a variable in a specified variables scope.
 
-## Example
+## 💡 Example
 
 ```matlab
 assignin('base', 'X', 33);
 Y = acquirevar('base', 'X');
 ```
 
-## See also
+## 🔗 See also
 
-[assignin](assignin.md), [who](who.md).
+[assignin](../memory_manager/assignin.md), [who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

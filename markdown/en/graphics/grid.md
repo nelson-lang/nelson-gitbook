@@ -2,7 +2,7 @@
 
 Display or hide axes grid lines.
 
-## Syntax
+## 📝 Syntax
 
 - grid
 - grid('on')
@@ -10,18 +10,18 @@ Display or hide axes grid lines.
 - grid('minor')
 - grid(ax, ...)
 
-## Input argument
+## 📥 Input argument
 
 - 'on' - displays the major grid line.
 - 'off' - removes all grid lines.
 - 'minor' - toggles the visibility of the minor grid lines.
 - ax - Target object: axes.
 
-## Description
+## 📄 Description
 
-  <p><b>grid()</b> toggles the visibility of the major grid lines.</p>
+<b>grid()</b> toggles the visibility of the major grid lines.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -31,18 +31,18 @@ plot(x, y)
 grid on
 ```
 
-<img src="grid_97ED9AFB.svg" align="middle"/>
+<img src="grid.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[axes](axes.md), [plot](plot.md).
+[axes](../graphics/axes.md), [plot](../graphics/plot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

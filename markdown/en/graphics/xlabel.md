@@ -2,29 +2,29 @@
 
 Label x-axis.
 
-## Syntax
+## 📝 Syntax
 
 - xlabel(text)
 - xlabel(ax, text)
 - xlabel(..., propertyName, propertyValue)
 - go = xlabel(...)
 
-## Input argument
+## 📥 Input argument
 
 - text - Text to display: character vector, string scalar, string array or cell array.
 - ax - a scalar graphics object value: parent container, specified as a axes.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: text type.
 
-## Description
+## 📄 Description
 
-  <p><b>xlabel('text')</b> labels the x-axis of the current axes.</p>
+<b>xlabel('text')</b> labels the x-axis of the current axes.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -34,18 +34,18 @@ plot(x, y);
 xlabel('X axis Label - Unicode ドラゴンボールX(ゼット)')
 ```
 
-<img src="xlabel_79539F01.svg" align="middle"/>
+<img src="xlabel.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[text](text.md), [title](title.md).
+[text](../graphics/text.md), [title](../graphics/title.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

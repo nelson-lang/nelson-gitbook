@@ -2,23 +2,23 @@
 
 get info about audio playback is in progress.
 
-## Syntax
+## 📝 Syntax
 
 - play(playObj)
 
-## Input argument
+## 📥 Input argument
 
 - play - an audioplayer object.
 
-## Output argument
+## 📤 Output argument
 
 - play - an logical.
 
-## Description
+## 📄 Description
 
 <b>isplaying</b> get information about audio playback is in progress.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -31,16 +31,16 @@ delete(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer](audioplayer.md), [playblocking](playblocking.md).
+[audioplayer](../audio/audioplayer.md), [playblocking](../audio/playblocking.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

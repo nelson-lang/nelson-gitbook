@@ -2,28 +2,29 @@
 
 Differences and approximate derivatives.
 
-## Syntax
+## 📝 Syntax
 
 - Y = diff(X)
 - Y = diff(X, n)
 - Y = diff(X, n, dim)
 
-## Input argument
+## 📥 Input argument
 
 - X - vector or matrix (real or single)
 - n - difference order: positive integer scalar or []
 - dim - dimension: positive integer scalar
 
-## Output argument
+## 📤 Output argument
 
 - Y - difference array: vector or matrix.
 
-## Description
+## 📄 Description
 
-  <p>If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences <b>X(2) - X(1), ..., X(n) - X(n-1)</b>.</p>
-  <p>If <b>X</b> is a matrix, result of <b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.</p>
+If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences <b>X(2) - X(1), ..., X(n) - X(n-1)</b>.
 
-## Example
+If <b>X</b> is a matrix, result of <b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.
+
+## 💡 Example
 
 ```matlab
 h = .01; x = 0:h:pi;
@@ -31,16 +32,16 @@ X = sin(x.^2);
 R = diff(X)
 ```
 
-## See also
+## 🔗 See also
 
-[sum](sum.html), [prod](prod.html).
+[sum](../linear_algebra/sum.md), [prod](../linear_algebra/prod.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

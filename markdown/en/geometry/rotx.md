@@ -2,42 +2,42 @@
 
 3x3 transformation matrix for rotations around x-axis
 
-## Syntax
+## 📝 Syntax
 
 - rm = rotx(angle)
 
-## Input argument
+## 📥 Input argument
 
 - angle - angle in degree: scalar value.
 
-## Output argument
+## 📤 Output argument
 
 - rm - 3x3 transformation matrix: real-valued orthogonal matrix.
 
-## Description
+## 📄 Description
 
-  <p><b>rotx</b> returns 3x3 transformation matrix for rotations around x-axis.</p>
+<b>rotx</b> returns 3x3 transformation matrix for rotations around x-axis.
 
-Bibliography
+## 📚 Bibliography
 
 Goldstein, H., C. Poole and J. Safko, Classical Mechanics, 3rd Edition, San Francisco: Addison Wesley, 2002, pp. 142–144.
 
-## Example
+## 💡 Example
 
 ```matlab
 r = rotx(90)
 ```
 
-## See also
+## 🔗 See also
 
-[roty](roty.md), [rotz](rotz.md).
+[roty](../geometry/roty.md), [rotz](../geometry/rotz.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

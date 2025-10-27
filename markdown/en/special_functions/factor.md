@@ -2,39 +2,40 @@
 
 Prime factors
 
-## Syntax
+## 📝 Syntax
 
 - f = factor(n)
 
-## Input argument
+## 📥 Input argument
 
 - n - real, nonnegative integer scalar
 
-## Output argument
+## 📤 Output argument
 
 - p - vector with Prime factors.
 
-## Description
+## 📄 Description
 
-  <p><b>f = factor(n)</b> returns a row vector with the prime factors of <b>n</b>.</p>
-  <p>Vector <b>f</b> is of the same data type as <b>n</b>.</p>
+<b>f = factor(n)</b> returns a row vector with the prime factors of <b>n</b>.
 
-## Example
+Vector <b>f</b> is of the same data type as <b>n</b>.
+
+## 💡 Example
 
 ```matlab
 f = factor(204)
 ```
 
-## See also
+## 🔗 See also
 
-[primes](primes.md).
+[primes](../special_functions/primes.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,24 +2,24 @@
 
 Turbo colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = turbo
 - c = turbo(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Turbo colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>turbo</b> returns the colormap with turbo colors.</p>
+<b>turbo</b> returns the colormap with turbo colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -27,18 +27,18 @@ surf(peaks);
 colormap('turbo');
 ```
 
-<img src="turbo_AC999B8.svg" align="middle"/>
+<img src="turbo.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

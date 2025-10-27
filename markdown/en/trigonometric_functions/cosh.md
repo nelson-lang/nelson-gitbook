@@ -2,39 +2,39 @@
 
 Computes the hyperbolic cosine in radians for each element of x.
 
-## Syntax
+## 📝 Syntax
 
 - res = cosh(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>cosh</b> computes the hyperbolic cosine in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
 res = cosh(A)
 ```
 
-## See also
+## 🔗 See also
 
-[acos](acos.md), [cos](cos.md).
+[acos](../trigonometric_functions/acos.md), [cos](../trigonometric_functions/cos.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

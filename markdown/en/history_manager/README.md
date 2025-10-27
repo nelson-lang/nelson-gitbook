@@ -1,9 +1,11 @@
 # History manager
 
-History manager
+The History Manager module in Nelson provides tools to access and manage the command
+history of your session.
 
-## Description
+It allows users to review previously executed commands, recall them for reuse, and
+maintain an organized workflow.
 
-history functions
+## Functions
 
 - [history](history.md) - history manager.

@@ -2,44 +2,46 @@
 
 Set structure field contents.
 
-## Syntax
+## 📝 Syntax
 
 - stOut = setfield(stIn, fieldname, fieldvalue)
 - stOut = setfield(stIn, fieldname1, fieldvalue1, ..., fieldnameN, fieldvalueN)
 
-## Input argument
+## 📥 Input argument
 
 - stIn - a structure.
 - fieldname - a string or characters vector.
 - fieldvalue - a variable value.
 
-## Output argument
+## 📤 Output argument
 
 - stOut - a structure: result.
 
-## Description
+## 📄 Description
 
-  <p>Set the contents of the specified field to the value.</p>
-  <p>Alternative syntax: S.(fieldname) = fieldvalue</p>
-  <p>Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue</p>
+Set the contents of the specified field to the value.
 
-## Example
+Alternative syntax: S.(fieldname) = fieldvalue
+
+Alternative syntax: S(idx1, idx2).(fieldname) = fieldvalue
+
+## 💡 Example
 
 ```matlab
 A = {};
 setfield(A, 'vv', 3)
 ```
 
-## See also
+## 🔗 See also
 
-[struct](struct.md), [getfield](getfield.md).
+[struct](../data_structures/struct.md), [getfield](../data_structures/getfield.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Read Microsoft Excel spreadsheet file using COM.
 
-## Syntax
+## 📝 Syntax
 
 - numeric_data = COM_xlsread(filename)
 - numeric_data = COM_xlsread(filename, sheet)
@@ -15,23 +15,23 @@ Read Microsoft Excel spreadsheet file using COM.
 - [numeric_data, txt_data, raw_data] = COM_xlsread(filename, sheet, range)
 - [numeric_data, txt_data, raw_data] = COM_xlsread(filename, sheet, range)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: an existing filename.
 - sheet - an integer or a string: sheet id or sheet name
 - range - an string: an range xx:xx
 
-## Output argument
+## 📤 Output argument
 
 - numeric_data - a matrix or vector: string data converted to double.
 - txt_data - a cell of strings with only strings.
 - raw_data - a cell of strings: raw data without conversion.
 
-## Description
+## 📄 Description
 
-<description><b>COM_xlsread</b> read Microsoft Excel spreadsheet file using COM.</description>
+<b>COM_xlsread</b> read Microsoft Excel spreadsheet file using COM.
 
-## Example
+## 💡 Example
 
 ```matlab
 data = {'Time', 'Temp'; 12 98; 13 99; Inf 97};
@@ -39,16 +39,16 @@ s = COM_xlswrite([tempdir(), 'example_xlswrite_2.xlsx'], data, 'Temperatures');
 [numeric_data, txt_data, raw_data] = COM_xlsread([tempdir(), 'example_xlswrite_2.xlsx'])
 ```
 
-## See also
+## 🔗 See also
 
-[COM_xlswrite](COM_xlswrite.md).
+[COM_xlswrite](../com_engine/COM_xlswrite.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

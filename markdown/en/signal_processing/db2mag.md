@@ -2,38 +2,38 @@
 
 Convert a gain in decibels (dB) to a magnitude.
 
-## Syntax
+## 📝 Syntax
 
 - mag = db2mag(db)
 
-## Input argument
+## 📥 Input argument
 
 - db - input array: scalar, vector or matrix.
 
-## Output argument
+## 📤 Output argument
 
 - mag - corresponding magnitude
 
-## Description
+## 📄 Description
 
-  <p><b>mag = db2mag(db)</b> returns corresponding magnitude.</p>
+<b>mag = db2mag(db)</b> returns corresponding magnitude.
 
-## Example
+## 💡 Example
 
 ```matlab
 mag = db2mag([0, -20])
 ```
 
-## See also
+## 🔗 See also
 
-[mag2db](mag2db.md).
+[mag2db](../signal_processing/mag2db.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

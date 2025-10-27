@@ -2,32 +2,32 @@
 
 Smart indent a nelson file
 
-## Syntax
+## 📝 Syntax
 
 - smartindent(filename)
 - smartindent(filename, indentsize)
 - smartindent(filename, indentsize, dobackup)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: filename to indent.
 - indentsize - an integer value > 0. default: 2
 - dobackup - a logical: false by default
 
-## Description
+## 📄 Description
 
 <b>smartindent</b> indents code to make reading statements such as while loops easier.
 
-## See also
+## 🔗 See also
 
-[edit](edit.md).
+[edit](../text_editor/edit.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

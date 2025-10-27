@@ -2,7 +2,7 @@
 
 Size of an object.
 
-## Syntax
+## 📝 Syntax
 
 - s = size(X)
 - sdim = size(X, dim)
@@ -10,13 +10,13 @@ Size of an object.
 - [r, c] = size(X)
 - [s1, ... , sn] = size(X)
 
-## Input argument
+## 📥 Input argument
 
 - X - a variable
 - dim - a variable: a positive integer to get the dimth dimension.
 - dims - a variable: a vector of positive integer to get the dimth dimensions.
 
-## Output argument
+## 📤 Output argument
 
 - s - a row vector whose elements contain the length of the corresponding dimension of X.
 - sdim - the length of dimension dim.
@@ -24,11 +24,9 @@ Size of an object.
 - [r, c] - number of rows and columns.
 - [s1, ... , sn] - numbers with integer values.
 
-## Description
+## 📄 Description
 
-  <p/>
-
-## Examples
+## 💡 Examples
 
 ```matlab
 X = rand(3, 4, 5, 6);
@@ -43,16 +41,16 @@ size(X, [2 4])
 size(cell(4,3))
 ```
 
-## See also
+## 🔗 See also
 
-[length](length.md), [ndims](ndims.md).
+[length](../elementary_functions/length.md), [ndims](../elementary_functions/ndims.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

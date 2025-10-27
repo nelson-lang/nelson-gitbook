@@ -2,42 +2,43 @@
 
 Lower and upper matrix bandwidth.
 
-## Syntax
+## 📝 Syntax
 
 - [lower, upper] = bandwidth(A)
 - R = bandwidth(A, type)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input matrix
 - type - 'upper' or 'lower'
 
-## Output argument
+## 📤 Output argument
 
 - lower, upper - lower bandwidth: lower, and upper bandwidth: upper of matrix A.
 - R - lower or upper bandwidth.
 
-## Description
+## 📄 Description
 
-  <p><b>[lower, upper] = bandwidth(A)</b> returns <b>lower</b> and <b>upper</b> bandwidths of matrix <b>A</b>.</p>
+<b>[lower, upper] = bandwidth(A)</b> returns <b>lower</b> and <b>upper</b> bandwidths of matrix <b>A</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = [10 -20 40; -50 20 0; 10 0 30]
 [lower, upper] = bandwidth(M)
+
 ```
 
-## See also
+## 🔗 See also
 
-[isbanded](isbanded.md).
+[isbanded](../linear_algebra/isbanded.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Set object or interface property to specified value.
 
-## Syntax
+## 📝 Syntax
 
 - set(h, propertyname, value)
 - COM_set(h, propertyname, value)
 - h.propertyname = value
 
-## Input argument
+## 📥 Input argument
 
 - h - a COM object.
 - propertyname - a string: the property's name of COM object.
 - value - a string, boolean, double ...
 
-## Description
+## 📄 Description
 
-  <p>The function sets the property specified in the string propertyname to the given value.</p>
+The function sets the property specified in the string propertyname to the given value.
 
-## Example
+## 💡 Example
 
 ```matlab
 pWord = actxserver('Word.Application')
@@ -28,16 +28,16 @@ delete(pWord)
 clear pWord
 ```
 
-## See also
+## 🔗 See also
 
-[COM_get](COM_get.md), [COM_invoke](COM_invoke.md).
+[COM_get](../com_engine/COM_get.md), [COM_invoke](../com_engine/COM_invoke.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,30 +2,31 @@
 
 Create axes in tiled positions.
 
-## Syntax
+## 📝 Syntax
 
 - subplot(m, n, p)
 - subplot('mnp')
 - subplot('Position', pos)
 - ax = subplot(...)
 
-## Input argument
+## 📥 Input argument
 
 - m - Number of grid rows: scalar positive integer.
 - n - Number of grid columns: scalar positive integer.
 - p - Grid position for new axes: scalar or vector.
 - pos - Custom position for new axes: [left bottom width height].
 
-## Output argument
+## 📤 Output argument
 
 - ax - a graphics object: axes type.
 
-## Description
+## 📄 Description
 
-  <p><b>subplot(n, m, p)</b> divides the current figure into a 2-dimensional grid.</p>
-  <p>Each of which can contain a plot of some kind.</p>
+<b>subplot(n, m, p)</b> divides the current figure into a 2-dimensional grid.
 
-## Examples
+Each of which can contain a plot of some kind.
+
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -45,7 +46,7 @@ subplot(4, 1, 4);
 plot(X, Y4, 'k');
 ```
 
-<img src="subplot_1_42804CE5.svg" align="middle"/>
+<img src="subplot_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -65,18 +66,18 @@ subplot(2, 2, 4);
 plot(t, Z);
 ```
 
-<img src="subplot_2_8A3ABD13.svg" align="middle"/>
+<img src="subplot_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[plot](plot.md), [axes](axes.md).
+[plot](../graphics/plot.md), [axes](../graphics/axes.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

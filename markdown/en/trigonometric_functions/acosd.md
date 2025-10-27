@@ -2,39 +2,39 @@
 
 Inverse cosine in degrees.
 
-## Syntax
+## 📝 Syntax
 
 - res = acosd(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>atand</b> computes the inverse cosine in degrees for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [1 -20 0 2 5];
 y = acosd(x)
 ```
 
-## See also
+## 🔗 See also
 
-[cosd](cosd.html).
+[cosd](../trigonometric/cosd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

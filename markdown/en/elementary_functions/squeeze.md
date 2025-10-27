@@ -2,40 +2,40 @@
 
 Remove dimensions of length 1.
 
-## Syntax
+## 📝 Syntax
 
 - B = squeeze(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - input array: multidimensional array
 
-## Output argument
+## 📤 Output argument
 
 - B - output array.
 
-## Description
+## 📄 Description
 
-  <p><b>B = squeeze(A)</b> returns an array with the same elements as the input array A, but with dimensions of length 1 removed.</p>
+<b>B = squeeze(A)</b> returns an array with the same elements as the input array A, but with dimensions of length 1 removed.
 
-## Example
+## 💡 Example
 
 ```matlab
-A = zeros(1, 1, 3);
+ A = zeros(1, 1, 3);
 A(:, :, 1:3) = [1 20 3];
 R = squeeze(A)
 ```
 
-## See also
+## 🔗 See also
 
-[reshape](reshape.md).
+[reshape](../elementary_functions/reshape.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

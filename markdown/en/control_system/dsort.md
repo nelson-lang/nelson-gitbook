@@ -2,24 +2,24 @@
 
 Sort discrete-time poles by magnitude.
 
-## Syntax
+## 📝 Syntax
 
 - s = dsort(p)
 - [s, ndx] = dsort(p)
 
-## Input argument
+## 📥 Input argument
 
 - p - p: a vector
 
-## Output argument
+## 📤 Output argument
 
 - s - sorted vector by magnitude.
 
-## Description
+## 📄 Description
 
-  <p><b>dsort</b> arranges the discrete-time poles within the vector <b>p</b> in a descending order based on their magnitude, with unstable poles taking precedence at the beginning of the sorted list.</p>
+<b>dsort</b> arranges the discrete-time poles within the vector <b>p</b> in a descending order based on their magnitude, with unstable poles taking precedence at the beginning of the sorted list.
 
-## Example
+## 💡 Example
 
 ```matlab
 p = [-2.410 + 5.573i;
@@ -28,18 +28,20 @@ p = [-2.410 + 5.573i;
 -0.972;
 -2.590];
 [s, ndx] = dsort(p)
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[esort](esort.md).
+[esort](../control_system/esort.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

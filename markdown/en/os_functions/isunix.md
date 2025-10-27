@@ -2,20 +2,21 @@
 
 Checks if version is for GNU Linux or Unix platform.
 
-## Syntax
+## 📝 Syntax
 
 - s = isunix()
 
-## Output argument
+## 📤 Output argument
 
 - s - a logical: true if it is a GNU Linux or Unix platform.
 
-## Description
+## 📄 Description
 
-  <p><b>isunix</b> checks if it is a GNU Linux or Unix platform.</p>
-  <p>MacOs platform is also detected as a GNU Linux or Unix platform.</p>
+<b>isunix</b> checks if it is a GNU Linux or Unix platform.
 
-## Example
+MacOs platform is also detected as a GNU Linux or Unix platform.
+
+## 💡 Example
 
 ```matlab
 if isunix
@@ -25,16 +26,16 @@ else
 end
 ```
 
-## See also
+## 🔗 See also
 
-[ispc](ispc.md), [ismac](ismac.md).
+[ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

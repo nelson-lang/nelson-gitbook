@@ -2,19 +2,19 @@
 
 Stop all functions running in the background.
 
-## Syntax
+## 📝 Syntax
 
 - cancel(fevalQueue)
 
-## Input argument
+## 📥 Input argument
 
 - fevalQueue - FevalQueue object: scalar.
 
-## Description
+## 📄 Description
 
-  <p><b>cancelAll(fevalQueue)</b> stops all running or queued elements of the background pool.</p>
+<b>cancelAll(fevalQueue)</b> stops all running or queued elements of the background pool.
 
-## Example
+## 💡 Example
 
 ```matlab
 fptr = str2func('pause');
@@ -28,16 +28,16 @@ pool.FevalQueue
 f
 ```
 
-## See also
+## 🔗 See also
 
-[pause](../core/pause.md), [cancel](cancel.md), [parfeval](parfeval.md).
+[pause](../core/pause.md), [cancel](../parallel/cancel.md), [parfeval](../parallel/parfeval.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

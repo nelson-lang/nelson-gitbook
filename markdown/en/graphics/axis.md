@@ -2,7 +2,7 @@
 
 Set axis limits and aspect ratios.
 
-## Syntax
+## 📝 Syntax
 
 - axis([xmin, xmax, ymin, ymax, zmin, zmax, cmin, cmax])
 - axis([xmin, xmax, ymin, ymax, zmin, zmax])
@@ -13,7 +13,7 @@ Set axis limits and aspect ratios.
 - lim = axis()
 - axis(ax, ...)
 
-## Input argument
+## 📥 Input argument
 
 - [xmin, xmax, ymin, ymax, zmin, zmax, cmin, cmax] - sets the limits in the X, Y, Z and color axes.
 - [xmin, xmax, ymin, ymax, zmin, zmax] - sets only the limits in the X, Y, Z.
@@ -23,15 +23,15 @@ Set axis limits and aspect ratios.
 - visibility - 'off' or 'on' (default).
 - mode - 'manual' (turns off automatic scaling of the axis based on the children of the current axis object) or 'auto' (choose automatically all axis limits) .
 
-## Output argument
+## 📤 Output argument
 
 - lim - For 2D: [xmin, xmax, ymin, ymax] or for 3D: [xmin, xmax, ymin, ymax, zmin, zmax]
 
-## Description
+## 📄 Description
 
-  <p><b>axes</b> set axis limits and appearance.</p>
+<b>axes</b> set axis limits and appearance.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -57,18 +57,18 @@ title('normal plot again');
 axis('normal');
 ```
 
-<img src="axis_51C943C7.svg" align="middle"/>
+<img src="axis.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[gca](gca.md), [axes](axes.md).
+[gca](../graphics/gca.md), [axes](../graphics/axes.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

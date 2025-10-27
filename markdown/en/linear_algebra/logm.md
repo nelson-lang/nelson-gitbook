@@ -2,24 +2,25 @@
 
 Computes the matrix logarithm of a square matrix.
 
-## Syntax
+## 📝 Syntax
 
 - res = logm(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or square matrix (double or single)
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value: a square matrix
 
-## Description
+## 📄 Description
 
-  <p><b>expm(x)</b> computes the matrix logarithm of x.</p>
-  <p>The computation is performed by first block-diagonalizing x and then applying a Pade approximation on each block.</p>
+<b>expm(x)</b> computes the matrix logarithm of x.
 
-## Example
+The computation is performed by first block-diagonalizing x and then applying a Pade approximation on each block.
+
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
@@ -27,12 +28,12 @@ res = logm(A)
 res = logm(A+i)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

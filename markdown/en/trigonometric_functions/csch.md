@@ -2,39 +2,39 @@
 
 Hyperbolic cosecant.
 
-## Syntax
+## 📝 Syntax
 
 - res = csch(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>csch</b> computes the hyperbolic cosecant for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [3*pi, 2*pi, pi, 0];
 R = csch(X)
 ```
 
-## See also
+## 🔗 See also
 
-[cosh](cosh.html), [sinh](sinh.html).
+[cosh](../trigonometric/cosh.md), [sinh](../trigonometric/sinh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

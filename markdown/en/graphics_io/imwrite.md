@@ -2,14 +2,14 @@
 
 Write image to graphics file.
 
-## Syntax
+## 📝 Syntax
 
 - imwrite(A, filename)
 - imwrite(A, map, filename)
 - imwrite(..., fmt)
 - imwrite(..., , propertyName, propertyValue)
 
-## Input argument
+## 📥 Input argument
 
 - A - matrix: 3D for color and 2D for gray or indexed image.
 - map - Colormap of indexed image:m-by-3 array.
@@ -18,24 +18,29 @@ Write image to graphics file.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Description
+## 📄 Description
 
-  <p><b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b></p>
-  <p/>
-  <p>Property name:</p>
-  <p/>
-  <p><b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).</p>
-  <p><b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.</p>
-  <p><b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.</p>
-  <p><b>Author</b>: character vector or string scalar: Author information.</p>
-  <p/>
-  <p>Properties for <b>gif</b> format:</p>
-  <p/>
-  <p><b>WriteMode</b>:</p>
-  <p><b>LoopCount</b>:</p>
-  <p><b>DelayTime</b>:</p>
+<b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b>
 
-## Examples
+Property name:
+
+<b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).
+
+<b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.
+
+<b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.
+
+<b>Author</b>: character vector or string scalar: Author information.
+
+Properties for <b>gif</b> format:
+
+<b>WriteMode</b>:
+
+<b>LoopCount</b>:
+
+<b>DelayTime</b>:
+
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -78,21 +83,22 @@ if ispc()
 else
   unix(['xdg-open ', filename_gif]);
 end
+
 ```
 
-<img src="imwrite_gif_8CC307B9.gif" align="middle"/>
+<img src="imwrite_gif.gif" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[imread](imread.md), [imshow](../graphics/imshow.md), [imformats](imformats.md).
+[imread](../graphics_io/imread.md), [imshow](../graphics/imshow.md), [imformats](../graphics_io/imformats.md).
 
-## History
+## 🕔 History
 
-| Version | Description                     |
+| Version | 📄 Description                  |
 | ------- | ------------------------------- |
 | 1.0.0   | initial version                 |
 | 1.13.0  | gif animation, pcx format added |
 
-## Author
+## 👤 Author
 
 Allan CORNET

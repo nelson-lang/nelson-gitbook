@@ -2,40 +2,57 @@
 
 Natural logarithm.
 
-## Syntax
+## 📝 Syntax
 
 - R = log(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - R - result of log: Natural logarithm.
 
-## Description
+## 📄 Description
 
-  <p><b>log</b> computes the natural logarithm.</p>
-  <p>If input argument is a complex number or negative, <b>log(z)</b> computes log(abs(z)) + angle(z) * i.</p>
+<b>log</b> computes the natural logarithm.
 
-## Example
+For real positive numbers:
+
+$$\ln(x)$$
+
+For complex numbers <b>z</b>:
+
+$$\ln(z) = \ln|z| + i\arg(z)$$
+
+where
+
+$$|z|$$
+
+is the modulus and
+
+$$\arg(z)$$
+
+is the argument of <b>z</b>.
+
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = log(x)
 ```
 
-## See also
+## 🔗 See also
 
-[exp](exp.md), [abs](abs.md), [angle](angle.md).
+[exp](../elementary_functions/exp.md), [abs](../elementary_functions/abs.md), [angle](../elementary_functions/angle.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

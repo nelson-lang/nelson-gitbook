@@ -2,7 +2,7 @@
 
 Creates an matrix made of ones.
 
-## Syntax
+## 📝 Syntax
 
 - R = ones
 - R = ones(n)
@@ -11,16 +11,16 @@ Creates an matrix made of ones.
 - R = ones(n, m, ..., z, 'like', V)
 - R = ones(n, m, ..., z, classname)
 
-## Input argument
+## 📥 Input argument
 
 - n - a variable: n-by-n matrix
 - m - a variable: n-by-m matrix
 
-## Description
+## 📄 Description
 
-  <p><b>ones</b> returns a matrix made of ones.</p>
+<b>ones</b> returns a matrix made of ones.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 ones(3,2)
@@ -40,16 +40,16 @@ tic(); single(1) * ones(1000); toc()
 tic();ones(1000,'single'); toc()
 ```
 
-## See also
+## 🔗 See also
 
-[eye](eye.md), [zeros](zeros.md).
+[eye](../constructors_functions/eye.md), [zeros](../constructors_functions/zeros.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

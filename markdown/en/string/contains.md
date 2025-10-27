@@ -2,28 +2,29 @@
 
 checks if string contains with pattern.
 
-## Syntax
+## 📝 Syntax
 
 - tf = contains(str, pattern)
 - tf = contains(str, pattern,'IgnoreCase', true)
 - tf = contains(str, pattern,'IgnoreCase', false)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string, string array or cell of strings.
 - pattern - a string to find.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a matrix of logical.
 
-## Description
+## 📄 Description
 
 <b>contains</b> returns <b>true</b> if <b>str</b> contains <b>pattern</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
+
 str = 'To make a mountain out of a molehill';
 k = contains (str, 'hill')
 k = contains (str, 'molehill')
@@ -34,18 +35,20 @@ k = contains(A, 'son')
 
 A = ["Nel", "son"; "Nelson", "Modules"]
 k = contains(A, 'son')
+
+
 ```
 
-## See also
+## 🔗 See also
 
-[startsWith](startsWith.md), [endsWith](endsWith.md).
+[startsWith](../string/startsWith.md), [endsWith](../string/endsWith.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

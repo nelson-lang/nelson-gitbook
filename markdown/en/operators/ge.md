@@ -2,27 +2,27 @@
 
 greater than or equal, >= operator.
 
-## Syntax
+## 📝 Syntax
 
 - C = ge(A, B)
 - C = (A >= B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of A >= B
 
-## Description
+## 📄 Description
 
-  <p><b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.</p>
-  <p/>
-  <p><b>ge</b> compares only the real part of numeric arrays.</p>
+<b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.
 
-## Examples
+<b>ge</b> compares only the real part of numeric arrays.
+
+## 💡 Examples
 
 ```matlab
 eye(2,2) >= ones(2, 2)
@@ -44,16 +44,16 @@ eye(2,2) >= ones(2, 2)
 ge(0.8-0.6-0.2, 0)
 ```
 
-## See also
+## 🔗 See also
 
-[ne](ne.md), [lt](lt.md), [le](le.md), [gt](gt.md), [eq](eq.md).
+[ne](../operators/ne.md), [lt](../operators/lt.md), [le](../operators/le.md), [gt](../operators/gt.md), [eq](../operators/eq.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

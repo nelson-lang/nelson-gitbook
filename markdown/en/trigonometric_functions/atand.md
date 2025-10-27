@@ -2,39 +2,39 @@
 
 Inverse tangent in degrees.
 
-## Syntax
+## 📝 Syntax
 
 - res = atand(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>atand</b> computes the inverse tangent in degrees for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [-50 -20 0 20 50];
 y = atand(x)
 ```
 
-## See also
+## 🔗 See also
 
-[tand](tand.html).
+[tand](../trigonometric/tand.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

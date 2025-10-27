@@ -2,29 +2,30 @@
 
 Save data from RESTful web service to file
 
-## Syntax
+## 📝 Syntax
 
 - result_filename = websave(filename, url)
 - result_filename = websave(filename, url, name1, value1, ... , nameN, valueN)
 - result_filename = websave(filename, url, name1, value1, ... , nameN, valueN, options)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: name of file to save content to.
 - url - a string: URL to a web service.
 - name1, value1, ... , nameN, valueN - Name-Value Pair Arguments.
 - options - a weboptions object.
 
-## Output argument
+## 📤 Output argument
 
 - result_filename - a string: full filename path.
 
-## Description
+## 📄 Description
 
-  <p><b>websave()</b> saves content from the web to filename.</p>
-  <p>websave function returns the full filename path as result_filename.</p>
+<b>websave()</b> saves content from the web to filename.
 
-## Example
+websave function returns the full filename path as result_filename.
+
+## 💡 Example
 
 ```matlab
 url ='https://httpbin.org/get';
@@ -33,16 +34,16 @@ destination_filename = websave(filename, url, weboptions('ContentType','json'));
 txt = fileread(filename)
 ```
 
-## See also
+## 🔗 See also
 
-[weboptions](weboptions.md), [webread](webread.md).
+[weboptions](../webtools/weboptions.md), [webread](../webtools/webread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,29 +2,31 @@
 
 Wait for futures to be completed.
 
-## Syntax
+## 📝 Syntax
 
 - wait(f)
 - wait(f, state)
 - TF = wait(f, state, timeout)
 
-## Input argument
+## 📥 Input argument
 
 - f - FevalFuture object: scalar or array.
 - state - state to wait: 'finished' (default) or 'running'
 - timeout - seconds to wait: real numeric scalar.
 
-## Output argument
+## 📤 Output argument
 
 - TF - logical: If each element of the Future array f finishes before timeout seconds elapse, TF is true. Otherwise, TF is false.
 
-## Description
+## 📄 Description
 
-  <p><b>wait(f)</b> pauses execution until each element of the Future array <b>f</b> is finished.</p>
-  <p><b>wait(f, state)</b> pauses execution until each element of the Future array <b>f</b> has its 'State' property set to state.</p>
-  <p><b>tf = wait(f, state, timeout)</b> pauses execution for a maximum of timeout seconds.</p>
+<b>wait(f)</b> pauses execution until each element of the Future array <b>f</b> is finished.
 
-## Example
+<b>wait(f, state)</b> pauses execution until each element of the Future array <b>f</b> has its 'State' property set to state.
+
+<b>tf = wait(f, state, timeout)</b> pauses execution for a maximum of timeout seconds.
+
+## 💡 Example
 
 ```matlab
 fptr = str2func('pause');
@@ -36,16 +38,16 @@ R = wait(f, 'finished');
 toc()
 ```
 
-## See also
+## 🔗 See also
 
-[pause](../core/pause.md), [fetchOutputs](fetchOutputs.md).
+[pause](../core/pause.md), [fetchOutputs](../parallel/fetchOutputs.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

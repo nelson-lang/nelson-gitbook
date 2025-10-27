@@ -2,23 +2,23 @@
 
 Reserved size for nonzero elements.
 
-## Syntax
+## 📝 Syntax
 
 - v = nzmax(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a matrix: double or logical, sparse or not.
 
-## Output argument
+## 📤 Output argument
 
 - v - a integer value.
 
-## Description
+## 📄 Description
 
-  <p><b>nzmax</b> returns the amount of storage allocated for nonzero elements.</p>
+<b>nzmax</b> returns the amount of storage allocated for nonzero elements.
 
-## Example
+## 💡 Example
 
 ```matlab
 I = [1 2 3];
@@ -30,16 +30,16 @@ nnz(sp)
 nzmax(sp)
 ```
 
-## See also
+## 🔗 See also
 
-[sparse](sparse.md), [nnz](nzmax.md).
+[sparse](../sparse/sparse.md), [nnz](../sparse/nzmax.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

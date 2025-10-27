@@ -2,38 +2,40 @@
 
 Random permutation of integers values.
 
-## Syntax
+## 📝 Syntax
 
-- p = randperm(n)
+- p = randperm(n, k)
 
-## Input argument
+## 📥 Input argument
 
 - n - Number of integers in sample interval (positive integer).
+- k - Number of integers to select (positive integer).
 
-## Output argument
+## 📤 Output argument
 
 - p - a row vector.
 
-## Description
+## 📄 Description
 
-  <p><b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.</p>
+<b>p = randperm(n)</b> returns a row vector containing a random permutation of <b>1:n</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 randperm(7)
 ```
 
-## See also
+## 🔗 See also
 
-[rand](rand.md).
+[rand](../random/rand.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                             |
+| ------- | ---------------------------------------------------------- |
+| 1.0.0   | initial version                                            |
+| 1.15.0  | add second input argument for number of elements to select |
 
-## Author
+## 👤 Author
 
 Allan CORNET

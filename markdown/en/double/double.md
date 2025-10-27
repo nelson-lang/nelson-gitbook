@@ -2,23 +2,23 @@
 
 Converts a variable to double precision type.
 
-## Syntax
+## 📝 Syntax
 
 - D = double(V)
 
-## Input argument
+## 📥 Input argument
 
 - V - a variable.
 
-## Output argument
+## 📤 Output argument
 
 - D - a double.
 
-## Description
+## 📄 Description
 
-  <p><b>double(V)</b> converts to the double-precision type.</p>
+<b>double(V)</b> converts to the double-precision type.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 double('Nelson')
@@ -35,16 +35,16 @@ A = ["3.134", "NaN"; "Inf", "-5"];
 B = double(A)
 ```
 
-## See also
+## 🔗 See also
 
 [char](../string/char.md), [single](../single/single.md), [numeric types](../interpreter/numeric_types.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

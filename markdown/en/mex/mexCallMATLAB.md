@@ -2,12 +2,12 @@
 
 Call a NELSON function
 
-## Syntax
+## 📝 Syntax
 
 - #include "mex.h"
 - int mexCallMATLAB(int nlhs, mxArray *plhs[], int nrhs, mxArray *prhs[], const char \*command_name);
 
-## Input argument
+## 📥 Input argument
 
 - nlhs - number of desired output arguments.
 - plhs - pointer to an array of mxArray (output).
@@ -15,31 +15,32 @@ Call a NELSON function
 - prhs - pointer to an array of mxArray (input).
 - command_name - character string containing the name of the Nelson function called.
 
-## Output argument
+## 📤 Output argument
 
 - returned value - 0 if successful, and a nonzero value if unsuccessful.
 
-## Description
+## 📄 Description
 
-  <p><b>mexCallMATLAB</b> calls an NELSON function.</p>
-  <p>If name detects an error, NELSON will terminate MEX and returns control to NELSON.</p>
+<b>mexCallMATLAB</b> calls an NELSON function.
 
-## Example
+If name detects an error, NELSON will terminate MEX and returns control to NELSON.
+
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex', 'tests'), '/test_mexCallMATLAB.m'])
 ```
 
-## See also
+## 🔗 See also
 
-[eval](../core/eval.md), [mexCallMATLABWithTrap](mexCallMATLABWithTrap.md).
+[eval](../core/eval.md), [mexCallMATLABWithTrap](../mex/mexCallMATLABWithTrap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

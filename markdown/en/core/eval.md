@@ -2,28 +2,29 @@
 
 Evaluate Nelson code in string.
 
-## Syntax
+## 📝 Syntax
 
 - eval(str)
 - eval(str, catch_str)
 - [r1, ... rn] = eval(str)
 - [r1, ... rn] = eval(str, catch_str)
 
-## Input argument
+## 📥 Input argument
 
 - str - a string: Nelson instruction to execute
 - catch_str - a string: Nelson instruction to execute if an error is detected.
 
-## Output argument
+## 📤 Output argument
 
 - [r1, ... rn] - results: output variables
 
-## Description
+## 📄 Description
 
-  <p><b>eval</b> executes Nelson instructions given in a string.</p>
-  <p>Please use <b>try catch end</b> block instead than <b>eval</b>, if you need to capture an error message for higher performance.</p>
+<b>eval</b> executes Nelson instructions given in a string.
 
-## Examples
+Please use <b>try catch end</b> block instead than <b>eval</b>, if you need to capture an error message for higher performance.
+
+## 💡 Examples
 
 ```matlab
 eval('B=4')
@@ -45,16 +46,16 @@ This example will not fail and return false.
 eval('error(''blabla'')', 'l = lasterror(); disp([''lasterror message: '', l.message])')
 ```
 
-## See also
+## 🔗 See also
 
-[execstr](execstr.md), [evalc](evalc.md), [evalin](evalin.md).
+[execstr](../core/execstr.md), [evalc](../core/evalc.md), [evalin](../core/evalin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

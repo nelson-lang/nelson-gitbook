@@ -1,10 +1,12 @@
 # Polynomials
 
-Polynomials
+The Polynomials module provides tools for creating, manipulating, and analyzing polynomials in Nelson.
 
-## Description
+It supports polynomial evaluation, differentiation, integration, fitting, root finding, and matrix polynomial operations.
 
-Polynomial functions
+This module enables efficient handling of polynomial expressions for mathematical modeling, curve fitting, and numerical analysis.
+
+## Functions
 
 - [deconv](deconv.md) - Deconvolution and polynomial division.
 - [poly](poly.md) - Polynomial with specified roots or characteristic polynomial.

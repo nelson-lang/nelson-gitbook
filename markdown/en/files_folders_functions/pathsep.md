@@ -2,34 +2,34 @@
 
 Return the search path separator character for the current platform.
 
-## Syntax
+## 📝 Syntax
 
 - res = pathsep()
 
-## Output argument
+## 📤 Output argument
 
 - res - a string: ';' or ':'
 
-## Description
+## 📄 Description
 
 <b>pathsep</b> returns ';' on Windows and ':' on others platforms.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = pathsep
 ```
 
-## See also
+## 🔗 See also
 
-[filesep](filesep.md).
+[filesep](../files_folders_functions/filesep.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

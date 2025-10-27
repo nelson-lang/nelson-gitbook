@@ -2,7 +2,7 @@
 
 Log-log scale plot.
 
-## Syntax
+## 📝 Syntax
 
 - loglog(X, Y)
 - loglog(X, Y, LineSpec)
@@ -12,7 +12,7 @@ Log-log scale plot.
 - loglog(..., propertyName, propertyValue)
 - go = loglog(...)
 
-## Input argument
+## 📥 Input argument
 
 - X - Log scale coordinates: scalar, vector or matrix.
 - Y - Log scale coordinates: scalar, vector or matrix.
@@ -21,16 +21,17 @@ Log-log scale plot.
 - propertyName - a scalar string or row vector character. see help of 'line' for property list.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: line type.
 
-## Description
+## 📄 Description
 
-  <p><b>loglog(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and the y-axis.</p>
-  <p><b>loglog</b> has the exact same syntax as the <b>plot</b> command.</p>
+<b>loglog(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and the y-axis.
 
-## Examples
+<b>loglog</b> has the exact same syntax as the <b>plot</b> command.
+
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -40,7 +41,7 @@ loglog(x,y)
 grid on
 ```
 
-<img src="loglog_1_F4E4278F.svg" align="middle"/>
+<img src="loglog_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -50,18 +51,18 @@ loglog(x,y,'s','MarkerFaceColor',[0 0.447 0.741])
 grid on
 ```
 
-<img src="loglog_2_E6D18636.svg" align="middle"/>
+<img src="loglog_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[semilogx](semilogx.md), [semilogy](semilogy.md), [line](line.md), [plot](plot.md), [grid](grid.md).
+[semilogx](../graphics/semilogx.md), [semilogy](../graphics/semilogy.md), [line](../graphics/line.md), [plot](../graphics/plot.md), [grid](../graphics/grid.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

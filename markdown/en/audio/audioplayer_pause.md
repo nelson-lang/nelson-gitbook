@@ -2,19 +2,19 @@
 
 Pause an audioplayer object.
 
-## Syntax
+## 📝 Syntax
 
 - pause(playObj)
 
-## Input argument
+## 📥 Input argument
 
 - playObj - an audioplayer object.
 
-## Description
+## 📄 Description
 
 <b>pause</b> pauses an audioplayer object.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
@@ -26,16 +26,16 @@ delete(playObj)
 playObj
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer](audioplayer.md), [stop](stop.md).
+[audioplayer](../audio/audioplayer.md), [stop](../audio/stop.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

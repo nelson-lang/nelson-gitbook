@@ -2,40 +2,40 @@
 
 Returns variables names of a function.
 
-## Syntax
+## 📝 Syntax
 
 - [argOut, argIn] = macroarg(function_name)
 
-## Input argument
+## 📥 Input argument
 
 - function_name - a string: function name.
 
-## Output argument
+## 📤 Output argument
 
 - argOut - a cell with output arguments.
 - argIn - a cell with input arguments.
 
-## Description
+## 📄 Description
 
-  <p><b>macroargs</b> returns input and output variables used by the function.</p>
+<b>macroargs</b> returns input and output variables used by the function.
 
-## Example
+## 💡 Example
 
 ```matlab
 [out_args, in_args] = macroarg('getfield')
 [out_args, in_args] = macroarg('deal')
 ```
 
-## See also
+## 🔗 See also
 
-[which](which.md).
+[which](../functions_manager/which.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Computes the matrix tangent of a square matrix.
 
-## Syntax
+## 📝 Syntax
 
 - res = tanm(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or square matrix
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value: a square matrix
 
-## Description
+## 📄 Description
 
 <b>tanm(x)</b> computes the matrix tangent of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
@@ -27,16 +27,16 @@ A = [1, 2; 3, 4];
 res = tanm(A)
 ```
 
-## See also
+## 🔗 See also
 
-[tan](tan.md).
+[tan](../trigonometric_functions/tan.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

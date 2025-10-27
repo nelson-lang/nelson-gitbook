@@ -2,34 +2,34 @@
 
 Returns current date under the form of a Unix hour.
 
-## Syntax
+## 📝 Syntax
 
 - n = now()
 
-## Output argument
+## 📤 Output argument
 
 - n - a double.
 
-## Description
+## 📄 Description
 
-  <p><b>now()</b> returns the current date and time as a serial date number.</p>
+<b>now()</b> returns the current date and time as a serial date number.
 
-## Example
+## 💡 Example
 
 ```matlab
 datevec(now())
 ```
 
-## See also
+## 🔗 See also
 
-[datenum](datenum.md), [datevec](datevec.md).
+[datenum](../time/datenum.md), [datevec](../time/datevec.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

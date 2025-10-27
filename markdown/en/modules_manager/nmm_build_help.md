@@ -2,20 +2,20 @@
 
 helper's function to build help of an external module
 
-## Syntax
+## 📝 Syntax
 
 - nmm_build_help(module_short_name, module_root_path)
 
-## Input argument
+## 📥 Input argument
 
 - module_short_name - a string: short module's name.
 - module_root_path - a string: path of the module named 'module_short_name'.
 
-## Description
+## 📄 Description
 
-  <p><b>nmm_build_help</b> generates help of an external module.</p>
+<b>nmm_build_help</b> generates help of an external module.
 
-## Example
+## 💡 Example
 
 See module skeleton for example
 
@@ -23,16 +23,16 @@ See module skeleton for example
 % see builder.m
 ```
 
-## See also
+## 🔗 See also
 
 [buildhelp](../help_tools/buildhelp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,24 +2,25 @@
 
 Number of dimensions of an array.
 
-## Syntax
+## 📝 Syntax
 
 - n = ndims(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 
-## Output argument
+## 📤 Output argument
 
 - n - a integer value: Number of dimensions of M.
 
-## Description
+## 📄 Description
 
-  <p><b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.</p>
-  <p><b>M</b> is greater than or equal to 2.</p>
+<b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.
 
-## Example
+<b>M</b> is greater than or equal to 2.
+
+## 💡 Example
 
 ```matlab
 ndims(ones(3, 0))
@@ -28,16 +29,16 @@ ndims([1 2 3 4 5])
 ndims(ones(3, 4, 5))
 ```
 
-## See also
+## 🔗 See also
 
-[size](size.md), [length](length.md).
+[size](../elementary_functions/size.md), [length](../elementary_functions/length.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

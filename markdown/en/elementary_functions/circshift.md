@@ -2,26 +2,26 @@
 
 Circular shift
 
-## Syntax
+## 📝 Syntax
 
 - R = circshift(M, N)
 - R = circshift(M, N, DIM)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable
 - N - shift
 - DIM - dimension to operate
 
-## Output argument
+## 📤 Output argument
 
 - R - result of 'circshift'.
 
-## Description
+## 📄 Description
 
-  <p><b>circshift</b> computes circular shift.</p>
+<b>circshift</b> computes circular shift.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [10, 20, 30; 40, 50, 60; 70, 80, 90];
@@ -29,16 +29,16 @@ circshift (x, 1
 circshift (x, -2))
 ```
 
-## See also
+## 🔗 See also
 
-[repmat](repmat.md), [reshape](reshape.md).
+[repmat](../elementary_functions/repmat.md), [reshape](../elementary_functions/reshape.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

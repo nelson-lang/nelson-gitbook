@@ -2,23 +2,23 @@
 
 Return true if variable var is an object.
 
-## Syntax
+## 📝 Syntax
 
 - res = isobject(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>ishandle</b> returns a logical 1 if the argument is an object and a logical 0 otherwise.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = 3;
@@ -27,18 +27,19 @@ res = isobject(A)
 addpath([modulepath('overload', 'root'), '/examples/complex']);
 A = complexObj(1, 2);
 res = isobject(A)
+
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [ishandle](ishandle.md).
+[isa](../types/isa.md), [ishandle](../types/ishandle.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

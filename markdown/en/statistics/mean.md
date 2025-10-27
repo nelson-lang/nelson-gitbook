@@ -2,7 +2,7 @@
 
 Mean of array elements.
 
-## Syntax
+## 📝 Syntax
 
 - R = mean(M)
 - R = mean(M, d)
@@ -12,38 +12,52 @@ Mean of array elements.
 - R = mean(M, d, t, f)
 - R = mean(M, 'all', t, f)
 
-## Input argument
+## 📥 Input argument
 
 - M - an array of double, single, integers, ...
 - d - dimension to operate along: positive integer scalar.
 - t - a string: 'default', 'double' or 'native'.
 - f - a string: 'includenan' or 'omitnan'.
 
-## Output argument
+## 📤 Output argument
 
 - R - Mean of array elements.
 
-## Description
+## 📄 Description
 
-  <p><b>R = mean(M)</b> returns the mean of the array elements of M.</p>
+<b>R = mean(M)</b> returns the mean (average) of the array elements of M.
 
-## Example
+The arithmetic mean of a set of values
+
+$$x_1, x_2, \ldots, x_n$$
+
+is defined as:
+
+$$\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i$$
+
+where
+
+$$n$$
+
+is the number of elements.
+
+## 💡 Example
 
 ```matlab
 M = uint8([10:30:70;20:30:80;30:30:90]);
 R = mean(M, 'native')
 ```
 
-## See also
+## 🔗 See also
 
-[sum](sum.html), [prod](prod.html).
+[sum](../data_analysis/sum.md), [prod](../data_analysis/prod.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

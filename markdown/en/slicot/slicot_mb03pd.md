@@ -2,11 +2,11 @@
 
 Matrix rank determination by incremental condition estimation (row pivoting).
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, JPVT_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03pd(JOBRQ, A_IN, JPVT_IN, RCOND, SVLMAX)
 
-## Input argument
+## 📥 Input argument
 
 - JOBRQ - = 'R': Perform an RQ factorization with row pivoting; = 'N': Do not perform the RQ factorization (but assume that it has been done outside).
 - A_IN - with JOBRQ = 'R', the leading M-by-N part of this array must contain the given matrix A.
@@ -14,7 +14,7 @@ Matrix rank determination by incremental condition estimation (row pivoting).
 - RCOND - RCOND is used to determine the effective rank of A, which is defined as the order of the largest trailing triangular submatrix R22 in the RQ factorization with pivoting of A, whose estimated condition number is less than 1/RCOND.
 - SVLMAX - If A is a submatrix of another matrix B, and the rank decision should be related to that matrix, then SVLMAX should be an estimate of the largest singular value of B (for instance, the Frobenius norm of B). If this is not the case, the input value SVLMAX = 0 should work.
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - with JOBRQ = 'R', if M less or equal than N, the upper triangle of the subarray A(1:M,N-M+1:N) contains the M-by-M upper triangular matrix R;
 - JPVT_OUT - with JOBRQ = 'R', if JPVT(i) = k, then the i-th row of P\*A was the k-th row of A.
@@ -23,19 +23,19 @@ Matrix rank determination by incremental condition estimation (row pivoting).
 - SVAL - The estimates of some of the singular values of the triangular factor R.
 - INFO - = 0: successful exit
 
-## Description
+## 📄 Description
 
-  <p>To compute (optionally) a rank-revealing RQ factorization of a real general M-by-N matrix A, which may be rank-deficient, and estimate its effective rank using incremental condition estimation.</p>
+To compute (optionally) a rank-revealing RQ factorization of a real general M-by-N matrix A, which may be rank-deficient, and estimate its effective rank using incremental condition estimation.
 
-Used function(s)
+## Used function(s)
 
 MB03PD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/MB03PD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 M = 6;
@@ -53,12 +53,12 @@ A_IN = [   1.    2.    6.    3.    5.;
 [A_OUT, JPVT_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03pd(JOBRQ, A_IN, JPVT_IN, RCOND, SVLMAX)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

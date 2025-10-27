@@ -2,22 +2,22 @@
 
 Get license information for Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - license
 - r = license
 - [r, txt] = license
 
-## Output argument
+## 📤 Output argument
 
 - r - a string: minimal string description about license
 - txt - a string: complete license text.
 
-## Description
+## 📄 Description
 
-  <p><b>license</b> get license information for Nelson.</p>
+<b>license</b> get license information for Nelson.
 
-## Example
+## 💡 Example
 
 ```matlab
 license()
@@ -25,16 +25,16 @@ r = license()
 [r,txt] = license()
 ```
 
-## See also
+## 🔗 See also
 
-[banner](banner.md).
+[banner](../core/banner.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

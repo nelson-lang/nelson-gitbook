@@ -2,7 +2,7 @@
 
 Create cell array of empty matrices.
 
-## Syntax
+## 📝 Syntax
 
 - C = cell()
 - C = cell(m)
@@ -11,23 +11,25 @@ Create cell array of empty matrices.
 - C = cell(sz)
 - C = cell(A)
 
-## Input argument
+## 📥 Input argument
 
 - m, n, ... , p - dimensions of the cell to create.
 - sz - a vector of integer values (dimensions of the cell to create).
 - A - a string array.
 
-## Output argument
+## 📤 Output argument
 
 - C - a cell
 
-## Description
+## 📄 Description
 
-  <p><b>cell</b> returns a cell array of empty matrices.</p>
-  <p><b>cell()</b> is equivalent to <b>cell(0)</b></p>
-  <p><b>cell(A)</b> with A a string array converts to cell.</p>
+<b>cell</b> returns a cell array of empty matrices.
 
-## Examples
+<b>cell()</b> is equivalent to <b>cell(0)</b>
+
+<b>cell(A)</b> with A a string array converts to cell.
+
+## 💡 Examples
 
 ```matlab
 A = eye(2, 4);
@@ -40,16 +42,16 @@ A = ["Nel", "son"; "open", "source"];
 C = cell(A)
 ```
 
-## See also
+## 🔗 See also
 
-[struct](struct.md), [iscell](../types/iscell.md).
+[struct](../data_structures/struct.md), [iscell](../types/iscell.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

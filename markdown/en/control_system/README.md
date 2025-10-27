@@ -1,10 +1,14 @@
 # Control System functions
 
-Control System functions
+The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.
 
-## Description
+It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.
 
-Algorithms for designing, analyzing and tuning linear control systems.
+The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.
+
+These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.
+
+## Functions
 
 - [abcdchk](abcdchk.md) - Verifies the dimensional compatibility of matrices A, B, C, and D.
 - [acker](acker.md) - Pole placement gain selection using Ackermann's formula.

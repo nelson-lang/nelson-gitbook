@@ -2,11 +2,11 @@
 
 Calculates the discrete Kalman estimator configuration based on a continuous cost function.
 
-## Syntax
+## 📝 Syntax
 
 - [L, P, Z, E] = LQED(A, G, C, Q, R, Ts)
 
-## Input argument
+## 📥 Input argument
 
 - A - State matrix: n x n matrix.
 - G - Defines a matrix linking the process noise to the states.
@@ -16,18 +16,18 @@ Calculates the discrete Kalman estimator configuration based on a continuous cos
 - N - Optional cross term matrix: 0 by default.
 - Ts - sample time: scalare.
 
-## Output argument
+## 📤 Output argument
 
 - L - Kalman gain matrix.
 - P - Solution of the Discrete Algebraic Riccati Equation.
 - E - Closed-loop pole locations
 - Z - Discrete estimator poles
 
-## Description
+## 📄 Description
 
-  <p><b>[L, P, Z, E] = LQED(A, G, C, Q, R, Ts)</b> Calculates the discrete Kalman gain matrix <b>L</b> to minimize the discrete estimation error, equivalent to the estimation error in the continuous system.</p>
+<b>[L, P, Z, E] = LQED(A, G, C, Q, R, Ts)</b> Calculates the discrete Kalman gain matrix <b>L</b> to minimize the discrete estimation error, equivalent to the estimation error in the continuous system.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [10     1.2;  3.3     4];
@@ -42,16 +42,16 @@ Ts = 0.004;
 [L, P, Z, E] = lqed(A, G, C, Q, R, Ts)
 ```
 
-## See also
+## 🔗 See also
 
-[lqr](lqr.md), [lqe](lqe.md).
+[lqr](../control_system/lqr.md), [lqe](../control_system/lqe.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

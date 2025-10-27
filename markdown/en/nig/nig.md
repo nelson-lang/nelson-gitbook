@@ -2,20 +2,20 @@
 
 Nelson tool to interface C or Fortran functions with Nelson.
 
-## Syntax
+## 📝 Syntax
 
 - nig(NIG_FUNCTIONS, DESTINATION_DIR)
 
-## Input argument
+## 📥 Input argument
 
 - NIG_FUNCTIONS - structure : functions definition
 - DESTINATION_DIR - string: a valid path (destination)
 
-## Description
+## 📄 Description
 
-  <p>With <b>nig</b>, you can wrap your C/FORTRAN code into a same set, called an gateway, and use them in Nelson as Nelson builtin.</p>
+With <b>nig</b>, you can wrap your C/FORTRAN code into a same set, called an gateway, and use them in Nelson as Nelson builtin.
 
-## Examples
+## 💡 Examples
 
 NIG_FUNCTION description
 
@@ -53,12 +53,12 @@ fileread([tempdir(),'/example_nig_sumBuiltin.hpp'])
 fileread([tempdir(),'/example_nig_sumBuiltin.cpp'])]
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

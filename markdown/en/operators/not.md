@@ -2,40 +2,40 @@
 
 not logical, ~ operator
 
-## Syntax
+## 📝 Syntax
 
 - C = not(A)
 - C = ~A
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of ~A
 
-## Description
+## 📄 Description
 
-  <p><b>C = not(A)</b> performs not logical ~A.</p>
+<b>C = not(A)</b> performs not logical ~A.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = false(3, 3);
 ~M
 ```
 
-## See also
+## 🔗 See also
 
-[or](or.md), [any](any.html), [all](all.html).
+[or](../operators/or.md), [any](../logical/any.md), [all](../logical/all.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

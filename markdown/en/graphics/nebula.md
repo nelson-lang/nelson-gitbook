@@ -2,24 +2,24 @@
 
 Nebula colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = nebula
 - c = nebula(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Nebula colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>nebula</b> returns the colormap with nebula colors.</p>
+<b>nebula</b> returns the colormap with nebula colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -31,18 +31,18 @@ colorbar;
 title(['Nebula Colormap with ', num2str(n), ' Colors']);
 ```
 
-<img src="nebula_BA1B0DA1.svg" align="middle"/>
+<img src="nebula.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

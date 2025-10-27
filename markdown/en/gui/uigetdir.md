@@ -2,42 +2,43 @@
 
 Opens dialog box to select a directory.
 
-## Syntax
+## 📝 Syntax
 
 - dir_ans = uigetdir()
 - dir_ans = uigetdir(path)
 - dir_ans = uigetdir(path, title)
 
-## Input argument
+## 📥 Input argument
 
 - path - a string: initial path
 - title - a string: title of the dialog box
 
-## Output argument
+## 📤 Output argument
 
 - dir_ans - a string (returned path) or 0 if dialogbox is canceled
 
-## Description
+## 📄 Description
 
-  <p><b>uigetdir</b> opens a dialog box for selecting a directory.</p>
-  <p>If path is wrong or not given, the current working directory will be used.</p>
+<b>uigetdir</b> opens a dialog box for selecting a directory.
 
-## Example
+If path is wrong or not given, the current working directory will be used.
+
+## 💡 Example
 
 ```matlab
 A = uigetdir();
 ```
 
-## See also
+## 🔗 See also
 
 [pwd](../files_folders_functions/pwd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

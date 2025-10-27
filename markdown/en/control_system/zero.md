@@ -2,41 +2,41 @@
 
 Zeros and gain of SISO dynamic system.
 
-## Syntax
+## 📝 Syntax
 
 - Z = zero(sys)
 - [Z, gain] = zero(sys)
 
-## Input argument
+## 📥 Input argument
 
 - sys - a LTI model.
 
-## Output argument
+## 📤 Output argument
 
 - Z - Zeros of the dynamic system.
 - gain - Zero-pole-gain of the dynamic system.
 
-## Description
+## 📄 Description
 
-  <p><b>[Z, gain] = zero(sys)</b> returns the zero-pole-gain of <b>sys</b>.</p>
+<b>[Z, gain] = zero(sys)</b> returns the zero-pole-gain of <b>sys</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 sys = tf([4.2,0.25,-0.004],[1,9.6,17]);
 [Z, gain] = zero(sys)
 ```
 
-## See also
+## 🔗 See also
 
-[pole](pole.md).
+[pole](../control_system/pole.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,21 +2,21 @@
 
 Defines a global variable.
 
-## Syntax
+## 📝 Syntax
 
 - global variable_name
 - global(variable_name)
 - global variable_name1 ... variable_nameN
 
-## Input argument
+## 📥 Input argument
 
 - variable_name - a string: valid variable name.
 
-## Description
+## 📄 Description
 
-  <p><b>global</b> make variable in global assign value to a variable in a specified variables scope.</p>
+<b>global</b> make variable in global assign value to a variable in a specified variables scope.
 
-## Example
+## 💡 Example
 
 ```matlab
 function myfun()
@@ -34,16 +34,16 @@ clear global y
 disp(y)
 ```
 
-## See also
+## 🔗 See also
 
-[clear](clear.md), [who](who.md).
+[clear](../memory_manager/clear.md), [who](../memory_manager/who.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

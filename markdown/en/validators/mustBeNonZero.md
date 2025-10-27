@@ -2,40 +2,41 @@
 
 Checks that value is not zero.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeNonZero(var)
 - mustBeNonZero(var, argPosition)
 - C++: void mustBeNonZero(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement eq, isnumeric and islogical methods.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeNonZero</b> checks that value is not zero or raise an error.</p>
+<b>mustBeNonZero</b> checks that value is not zero or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeNonZero(1)
 mustBeNonZero([])
 mustBeNonZero(NaN)
 mustBeNonZero(0)
+
 ```
 
-## See also
+## 🔗 See also
 
-[isempty](../types/isempty.md), [eq](eq.html).
+[isempty](../types/isempty.md), [eq](../elementary_functions/eq.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

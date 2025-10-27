@@ -2,27 +2,29 @@
 
 Get bottom rows of table or array.
 
-## Syntax
+## 📝 Syntax
 
 - tail(A)
 - tail(A, k)
 - B = tail(...)
 
-## Input argument
+## 📥 Input argument
 
 - A - Input array (table or other).
 
-## Output argument
+## 📤 Output argument
 
 - k - a integer value: Number of rows to extract (k = 8 by default).
 
-## Description
+## 📄 Description
 
-  <p><b>tail(A)</b> displays the last eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.</p>
-  <p><b>tail(A, k)</b> displays the last k rows of A.</p>
-  <p><b>B = tail(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.</p>
+<b>tail(A)</b> displays the last eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.
 
-## Examples
+<b>tail(A, k)</b> displays the last k rows of A.
+
+<b>B = tail(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.
+
+## 💡 Examples
 
 ```matlab
 LastName = {'Sanchez';'Johnson';'Li';'Diaz';'Brown'};
@@ -40,16 +42,16 @@ A = repmat((1:50)',1, 3);
 tail(A)
 ```
 
-## See also
+## 🔗 See also
 
-[head](head.md), [table](table.md).
+[head](../table/head.md), [table](../table/table.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.9.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

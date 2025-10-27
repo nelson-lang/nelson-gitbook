@@ -2,26 +2,27 @@
 
 Creates an complex number.
 
-## Syntax
+## 📝 Syntax
 
 - cpx = complex(a)
 - cpx = complex(a, b)
 
-## Input argument
+## 📥 Input argument
 
 - a - a variable: real part
 - b - a variable: imaginary part
 
-## Output argument
+## 📤 Output argument
 
 - cplx - result of a + b\*i
 
-## Description
+## 📄 Description
 
-  <p><b>complex</b> returns a complex value from real arguments.</p>
-  <p>With only one input argument, <b>complex</b> returns a complex value a + 0*i.</p>
+<b>complex</b> returns a complex value from real arguments.
 
-## Example
+With only one input argument, <b>complex</b> returns a complex value a + 0\*i.
+
+## 💡 Example
 
 ```matlab
 z = complex(3, 2)
@@ -29,16 +30,16 @@ z2 = complex(Inf, Inf)
 z3 = Inf + Inf * i
 ```
 
-## See also
+## 🔗 See also
 
-[real](real.md), [imag](imag.md).
+[real](../elementary_functions/real.md), [imag](../elementary_functions/imag.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

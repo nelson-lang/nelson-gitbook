@@ -2,41 +2,42 @@
 
 Base 2 exponentiation and scaling of floating-point numbers.
 
-## Syntax
+## 📝 Syntax
 
 - Y = pow2(E)
 - Y = pow2(X, E)
 
-## Input argument
+## 📥 Input argument
 
 - E - Exponent values
 - X - Significand values
 
-## Output argument
+## 📤 Output argument
 
 - Y - result of pow2.
 
-## Description
+## 📄 Description
 
-  <p><b>Y = pow2(E)</b> computes 2 to the power of <b>E</b>.</p>
-  <p><b>Y = pow2(X, E)</b> computes X times 2 to the power of <b>E</b>.</p>
+<b>Y = pow2(E)</b> computes 2 to the power of <b>E</b>.
 
-## Example
+<b>Y = pow2(X, E)</b> computes X times 2 to the power of <b>E</b>.
+
+## 💡 Example
 
 ```matlab
 R = pow2([1, 2, 3; 4, 5, 6], [6, 5, 4; 3, 2, 1])
 ```
 
-## See also
+## 🔗 See also
 
-[log2](log2.md).
+[log2](../elementary_functions/log2.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

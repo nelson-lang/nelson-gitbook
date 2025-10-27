@@ -2,24 +2,20 @@
 
 Set type of an libpointer handle.
 
-## Syntax
+## 📝 Syntax
 
 - h.setdatatype(datatype)
 
-## Input argument
+## 📥 Input argument
 
 - h - a libpointer handle.
 - datatype - a string: new datatype.
 
-## Description
+## 📄 Description
 
-  <p>Set data type from libpointer object.</p>
+Set data type from libpointer object.
 
-## See also
-
-[libpointer](libpointer.md), [C/Nelson equivalent data types](C_datatype.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 a = libpointer();
@@ -29,12 +25,16 @@ a.reshape(1, 1)
 a.Value
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[libpointer](../dynamic_link/libpointer.md), [C/Nelson equivalent data types](../dynamic_link/C_datatype.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

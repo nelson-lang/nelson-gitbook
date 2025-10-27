@@ -2,7 +2,7 @@
 
 Retain current plot when adding new plots.
 
-## Syntax
+## 📝 Syntax
 
 - hold('on')
 - hold('off')
@@ -10,22 +10,22 @@ Retain current plot when adding new plots.
 - hold()
 - hold(ax, ...)
 
-## Input argument
+## 📥 Input argument
 
 - 'on' - turn hold on.
 - 'off' - turn hold off.
 - 'all' - same as hold on.
 - ax - Target axes: axes.
 
-## Output argument
+## 📤 Output argument
 
 - ax - a graphics object: axes type.
 
-## Description
+## 📄 Description
 
-  <p><b>hold</b> allows to construct a plot sequence incrementally.</p>
+<b>hold</b> allows to construct a plot sequence incrementally.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -36,20 +36,21 @@ hold on
 y2 = sin(x);
 plot(x, y2)
 hold off
+
 ```
 
-<img src="hold_65362EBC.svg" align="middle"/>
+<img src="hold.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[ishold](ishold.md), [newplot](newplot.md).
+[ishold](../graphics/ishold.md), [newplot](../graphics/newplot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

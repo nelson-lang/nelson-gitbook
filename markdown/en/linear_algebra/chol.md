@@ -2,39 +2,40 @@
 
 Cholesky factorization.
 
-## Syntax
+## 📝 Syntax
 
 - F = chol(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - a matrix: square and symmetric positive definite.
 
-## Output argument
+## 📤 Output argument
 
 - F - Cholesky factor.
 
-## Description
+## 📄 Description
 
-  <p><b>F = chol(A)</b> factorizes symmetric positive definite matrix <b>A</b> into an upper triangular F that satisfies <b>A = F' * F</b>.</p>
+<b>F = chol(A)</b> factorizes symmetric positive definite matrix <b>A</b> into an upper triangular F that satisfies <b>A = F' \* F</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [10 0 10; 0 20 0; 10 0 30];
 F = chol(A)
+
 ```
 
-## See also
+## 🔗 See also
 
-[det](det.md).
+[det](../linear_algebra/det.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

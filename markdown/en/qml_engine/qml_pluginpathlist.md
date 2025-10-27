@@ -2,34 +2,34 @@
 
 Returns the list of directories where the engine searches for native plugins for imported modules.
 
-## Syntax
+## 📝 Syntax
 
 - p = qml_pluginpathlist()
 
-## Output argument
+## 📤 Output argument
 
 - p - a string: path.
 
-## Description
+## 📄 Description
 
-  <p>Returns the list of directories where the engine searches for native plugins for imported modules.</p>
+Returns the list of directories where the engine searches for native plugins for imported modules.
 
-## See also
-
-[qml_addpluginpath](qml_addpluginpath.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 qml_pluginpathlist()
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[qml_addpluginpath](../qml_engine/qml_addpluginpath.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

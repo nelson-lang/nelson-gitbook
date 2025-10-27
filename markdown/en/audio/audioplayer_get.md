@@ -2,43 +2,44 @@
 
 Get property value from audioplayer interface.
 
-## Syntax
+## 📝 Syntax
 
 - v = get(h, propertyname)
 - v = audioplayer_get(h, propertyname)
 - v = h.propertyname
 
-## Input argument
+## 📥 Input argument
 
 - h - an audioplayer object.
 - propertyname - a string: the property's name of audioplayer object.
 
-## Output argument
+## 📤 Output argument
 
 - v - a nelson variable.
 
-## Description
+## 📄 Description
 
-  <p>The function returns the value of the property specified in the string, propertyname.</p>
+The function returns the value of the property specified in the string, propertyname.
 
-## Example
+## 💡 Example
 
 ```matlab
 signal = rand(2, 44100) - 0.5;
 playObj = audioplayer(signal, 44100, 16)
 playObj.Running
+
 ```
 
-## See also
+## 🔗 See also
 
-[audioplayer_set](audioplayer_set.md).
+[audioplayer_set](../audio/audioplayer_set.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

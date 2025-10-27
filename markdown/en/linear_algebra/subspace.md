@@ -2,24 +2,24 @@
 
 Angle between two subspaces.
 
-## Syntax
+## 📝 Syntax
 
 - T = subspace(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - vector or matrix (real or single)
 - B - vector or matrix (real or single)
 
-## Output argument
+## 📤 Output argument
 
 - T - scalar: angle.
 
-## Description
+## 📄 Description
 
-  <p><b>T = subspace(A, B)</b> finds the angle between two subspaces specified by the columns of <b>A</b> and <b>B</b>.</p>
+<b>T = subspace(A, B)</b> finds the angle between two subspaces specified by the columns of <b>A</b> and <b>B</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 M = [1   1   1   1   1   1   1   1;
@@ -33,18 +33,19 @@ M = [1   1   1   1   1   1   1   1;
 A = M(:, 2:4);
 B = M(:, 5:8);
 R = subspace(A, B)
+
 ```
 
-## See also
+## 🔗 See also
 
-[orth](orth.md).
+[orth](../linear_algebra/orth.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Checks end of file.
 
-## Syntax
+## 📝 Syntax
 
 - status = feof(fid)
 
-## Input argument
+## 📥 Input argument
 
 - fid - a file descriptor
 
-## Output argument
+## 📤 Output argument
 
 - status - an integer value: 1 if file is closed or 0 if not.
 
-## Description
+## 📄 Description
 
-  <p><b>feof</b> checks if end of file has been reached.</p>
+<b>feof</b> checks if end of file has been reached.
 
-## Example
+## 💡 Example
 
 ```matlab
 fid = fopen([nelsonroot(), '/etc/startup.m'], 'rt');
@@ -31,16 +31,16 @@ feof(fid)
 fclose(fid);
 ```
 
-## See also
+## 🔗 See also
 
-[fopen](fopen.md), [fgetl](fgetl.md).
+[fopen](../stream_manager/fopen.md), [fgetl](../stream_manager/fgetl.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

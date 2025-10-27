@@ -2,28 +2,28 @@
 
 Transforms Cartesian coordinates to polar or cylindrical.
 
-## Syntax
+## 📝 Syntax
 
 - [theta, rho] = cart2pol(x, y)
 - [theta, rho, z] = cart2pol(x, y, z)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value (double or single real): Cartesian coordinates
 - y - a numeric value (double or single real): Cartesian coordinates
 - z - a numeric value (double or single real): Cartesian coordinates
 
-## Output argument
+## 📤 Output argument
 
 - theta - a numeric value: Angular coordinate.
 - rho - a numeric value: Radial coordinate.
 - z - a numeric value: Elevation coordinate.
 
-## Description
+## 📄 Description
 
 <b>cart2pol</b> transforms Cartesian coordinates to polar or cylindrical.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 x = [5 3.5355 0 -10];
@@ -38,16 +38,16 @@ z = [7 8 9 10];
 [theta, rho, el] = cart2pol(x, y, z)
 ```
 
-## See also
+## 🔗 See also
 
-[pol2cart](pol2cart.md).
+[pol2cart](../trigonometric_functions/pol2cart.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

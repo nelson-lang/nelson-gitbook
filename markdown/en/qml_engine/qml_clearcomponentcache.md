@@ -2,27 +2,28 @@
 
 Clears the engine's internal component cache..
 
-## Syntax
+## 📝 Syntax
 
 - qml_clearcomponentcache
 
-## Description
+## 📄 Description
 
-  <p>This function causes the property metadata of all components previously loaded by the engine to be destroyed.</p>
-  <p>All previously loaded components and the property bindings for all extant objects created from those components will cease to function.</p>
+This function causes the property metadata of all components previously loaded by the engine to be destroyed.
 
-## Example
+All previously loaded components and the property bindings for all extant objects created from those components will cease to function.
+
+## 💡 Example
 
 ```matlab
 qml_clearcomponentcache()
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,39 +2,39 @@
 
 Computes the inverse sine in radians for each element of x.
 
-## Syntax
+## 📝 Syntax
 
 - res = asin(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>asin</b> computes the inverse sine in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
 res = asin(A)
 ```
 
-## See also
+## 🔗 See also
 
-[sin](sin.md).
+[sin](../trigonometric_functions/sin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

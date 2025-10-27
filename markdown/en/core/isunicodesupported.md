@@ -2,35 +2,36 @@
 
 Detect whether the current terminal supports Unicode.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isunicodesupported()
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true or false.
 
-## Description
+## 📄 Description
 
-  <p><b>isunicodesupported</b>: returns if current terminal supports Unicode.</p>
-  <p>value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'</p>
+<b>isunicodesupported</b>: returns if current terminal supports Unicode.
 
-## Example
+value returned can be overloaded if environment variable 'NELSON_TERM_IS_UNICODE_SUPPORTED' is 'TRUE'
+
+## 💡 Example
 
 ```matlab
 isunicodesupported()
 ```
 
-## See also
+## 🔗 See also
 
 [getnelsonmode](../engine/getnelsonmode.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,40 +2,41 @@
 
 Swap byte ordering.
 
-## Syntax
+## 📝 Syntax
 
 - R = swapbytes(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a variable: integer, single or double real full matrix.
 
-## Output argument
+## 📤 Output argument
 
 - R - result of swapbytes: reversed byte order of M.
 
-## Description
+## 📄 Description
 
-  <p><b>swapbytes</b> Swap byte ordering.</p>
-  <p>endian (little - big) converter</p>
+<b>swapbytes</b> Swap byte ordering.
 
-## Example
+endian (little - big) converter
+
+## 💡 Example
 
 ```matlab
 X = uint16([65535 128; 1 0])
 Y = swapbytes(X)
 ```
 
-## See also
+## 🔗 See also
 
-[num2bin](num2bin.md), [bin2num](bin2num.md).
+[num2bin](../elementary_functions/num2bin.md), [bin2num](../elementary_functions/bin2num.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

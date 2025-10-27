@@ -2,23 +2,23 @@
 
 Visualize sparsity pattern of matrix.
 
-## Syntax
+## 📝 Syntax
 
 - spy(S)
 - spy(S, LineSpec)
 - spy(S, LineSpec, MarkerSize)
 
-## Input argument
+## 📥 Input argument
 
 - S - matrix: sparse or dense.
 - LineSpec - Line style, marker, and/or color: character vector or scalar string.
 - MarkerSize - positive integer scalar value.
 
-## Description
+## 📄 Description
 
-  <p><b>spy(S)</b> plots the sparsity pattern of the sparse matrix <b>S</b>.</p>
+<b>spy(S)</b> plots the sparsity pattern of the sparse matrix <b>S</b>.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -27,7 +27,7 @@ S = sparse((rand(1, 10) + 1) * 100, (rand(1, 10) + 1) * 100 , (rand(1, 10) + 1) 
 spy(S);
 ```
 
-<img src="spy_1_13CA72EB.svg" align="middle"/>
+<img src="spy_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -36,25 +36,25 @@ S = sparse((rand(1, 10) + 1) * 100, (rand(1, 10) + 1) * 100 , (rand(1, 10) + 1) 
 spy(S, 45);
 ```
 
-<img src="spy_2_510CE7B2.svg" align="middle"/>
+<img src="spy_2.svg" align="middle"/>
 
 ```matlab
 f = figure();
 spy();
 ```
 
-<img src="spy_3_D840DFC.svg" align="middle"/>
+<img src="spy_3.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[sparse](../sparse/sparse.md), [plot](plot.md).
+[sparse](../sparse/sparse.md), [plot](../graphics/plot.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

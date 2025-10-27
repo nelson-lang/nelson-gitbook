@@ -2,34 +2,34 @@
 
 Returns a newline character.
 
-## Syntax
+## 📝 Syntax
 
 - ch = newline()
 
-## Output argument
+## 📤 Output argument
 
 - ch - a char: equivalent to char(10)
 
-## Description
+## 📄 Description
 
 <b>newline</b> returns a newline character.
 
-## Example
+## 💡 Example
 
 ```matlab
 double(newline)
 ```
 
-## See also
+## 🔗 See also
 
 [double](../double/double.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

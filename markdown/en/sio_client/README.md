@@ -1,11 +1,8 @@
-# SIO client
+# Nelson in the cloud
 
-SIO client
+It provides functions for managing connections, sending and receiving data, and handling events in a cloud environment.
 
-## Description
+## Functions
 
-Nelson in the cloud
-
-- [doc](doc.md) - Displays documentation.
 - [sioemit](sioemit.md) - Emit an event to web client.
 - [siogetvariable](siogetvariable.md) - Emit an value of variable to web browser.

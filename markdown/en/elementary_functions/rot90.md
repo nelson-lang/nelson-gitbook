@@ -2,26 +2,27 @@
 
 Rotate array 90 degrees.
 
-## Syntax
+## 📝 Syntax
 
 - B = rot90(A)
 - B = rot90(A, k)
 
-## Input argument
+## 📥 Input argument
 
 - A - an array
 - k - an positive integer value: Rotation constant.
 
-## Output argument
+## 📤 Output argument
 
 - B - rotated array.
 
-## Description
+## 📄 Description
 
-  <p><b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k * 90</b> degrees, with <b>k</b> is an integer value.</p>
-  <p>Consider <b>flip</b> function to flip arrays in any dimension.</p>
+<b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k \* 90</b> degrees, with <b>k</b> is an integer value.
 
-## Example
+Consider <b>flip</b> function to flip arrays in any dimension.
+
+## 💡 Example
 
 ```matlab
 x = eye(3, 2);
@@ -31,16 +32,16 @@ y = rot90(x, 2)
 y = rot90(x, 3)
 ```
 
-## See also
+## 🔗 See also
 
-[flipud](flipud.md), [fliplr](fliplr.md).
+[flipud](../elementary_functions/flipud.md), [fliplr](../elementary_functions/fliplr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

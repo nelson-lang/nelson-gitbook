@@ -2,42 +2,43 @@
 
 Upper triangular part of matrix
 
-## Syntax
+## 📝 Syntax
 
 - T = triu(M)
 - T = triu(M, k)
 
-## Input argument
+## 📥 Input argument
 
 - M - 2D input matrix
 - k - Diagonals to include: integer real value
 
-## Output argument
+## 📤 Output argument
 
 - R - Upper Triangular Portions of Matrix
 
-## Description
+## 📄 Description
 
-  <p><b>triu</b> computes Upper Triangular Portions of Matrix.</p>
-  <p><b>R = triu(M, k)</b> returns the elements on and above the kth diagonal of M.</p>
+<b>triu</b> computes Upper Triangular Portions of Matrix.
 
-## Example
+<b>R = triu(M, k)</b> returns the elements on and above the kth diagonal of M.
+
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = triu(x)
 ```
 
-## See also
+## 🔗 See also
 
-[diag](diag.html).
+[diag](../elementary_functions/diag.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

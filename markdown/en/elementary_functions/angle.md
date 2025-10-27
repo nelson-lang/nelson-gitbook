@@ -2,39 +2,39 @@
 
 Phase angle
 
-## Syntax
+## 📝 Syntax
 
 - R = angle(Z)
 
-## Input argument
+## 📥 Input argument
 
 - Z - a variable (double, single, complex)
 
-## Output argument
+## 📤 Output argument
 
 - R - result of angle function.
 
-## Description
+## 📄 Description
 
-  <p><b>angle</b> computes the phase angle, equivalent to <b>atan2(imag(Z), real(Z))</b>.</p>
+<b>angle</b> computes the phase angle, equivalent to <b>atan2(imag(Z), real(Z))</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = [1+i,-i;i,2i];
 r = angle(x)
 ```
 
-## See also
+## 🔗 See also
 
 [atan2](../trigonometric_functions/atan2.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

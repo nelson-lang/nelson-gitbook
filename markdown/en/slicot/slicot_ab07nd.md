@@ -2,18 +2,18 @@
 
 Inverse of a given linear system.
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, B_OUT, C_OUT, D_OUT, RCOND, INFO] = slicot_ab07nd(A_IN, B_IN, C_IN, D_IN)
 
-## Input argument
+## 📥 Input argument
 
 - A_IN - The leading N-by-N part of this array must contain the state matrix A of the original system.
 - B_IN - The leading N-by-M part of this array must contain the input matrix B of the original system.
 - C_IN - The leading M-by-N part of this array must contain the output matrix C of the original system.
 - D_IN - The leading M-by-M part of this array must contain the feedthrough matrix D of the original system.
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - The leading N-by-N part of this array contains the state matrix Ai of the inverse system.
 - B_OUT - The leading N-by-M part of this array contains the input matrix Bi of the inverse system.
@@ -22,19 +22,19 @@ Inverse of a given linear system.
 - RCOND - The estimated reciprocal condition number of the feedthrough matrix D of the original system.
 - INFO - = 0: successful exit;
 
-## Description
+## 📄 Description
 
-  <p>To compute the inverse (Ai, Bi, Ci, Di) of a given system (A, B, C, D).</p>
+To compute the inverse (Ai, Bi, Ci, Di) of a given system (A, B, C, D).
 
-Used function(s)
+## Used function(s)
 
 AB07ND
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/AB07ND.html
 
-## Example
+## 💡 Example
 
 ```matlab
 A_IN = [1.0   2.0   0.0;
@@ -54,12 +54,12 @@ D_IN = [4.0   0.0;
 [A_OUT, B_OUT, C_OUT, D_OUT, RCOND, INFO] = slicot_ab07nd(A_IN, B_IN, C_IN, D_IN)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

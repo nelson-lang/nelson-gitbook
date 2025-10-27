@@ -2,39 +2,39 @@
 
 Inverse hyperbolic sine function
 
-## Syntax
+## 📝 Syntax
 
 - res = asinh(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>cosh</b> computes the inverse hyperbolic sine in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3);
 res = asinh(A)
 ```
 
-## See also
+## 🔗 See also
 
-[asin](asin.md), [sin](sin.md).
+[asin](../trigonometric_functions/asin.md), [sin](../trigonometric_functions/sin.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

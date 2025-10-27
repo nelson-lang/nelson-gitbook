@@ -2,18 +2,20 @@
 
 continue evaluation in loop.
 
-## Syntax
+## 📝 Syntax
 
 - continue
 
-## Description
+## 📄 Description
 
-  <p><b>continue</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.</p>
-  <p><b>continue</b> statement is used to pass control to the next iteration of a loop.</p>
+<b>continue</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.
 
-## Example
+<b>continue</b> statement is used to pass control to the next iteration of a loop.
+
+## 💡 Example
 
 ```matlab
+
 for i=1:10
   if (i == 5)
     continue;
@@ -23,18 +25,19 @@ for i=1:10
     disp(i)
   end
 end
+
 ```
 
-## See also
+## 🔗 See also
 
-[for](for.md).
+[for](../interpreter/for.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

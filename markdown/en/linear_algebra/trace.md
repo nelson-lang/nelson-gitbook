@@ -2,39 +2,39 @@
 
 Matrix trace.
 
-## Syntax
+## 📝 Syntax
 
 - res = trace(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value: scalar or matrix (double or single)
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value: a scalar
 
-## Description
+## 📄 Description
 
-  <p><b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.</p>
+<b>trace(x)</b> computes the trace of x, the sum of the elements along the main diagonal.
 
-## Example
+## 💡 Example
 
 ```matlab
 X = [1 0; 0 3];
 Y = trace(X)
 ```
 
-## See also
+## 🔗 See also
 
-[eig](eig.md).
+[eig](../linear_algebra/eig.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

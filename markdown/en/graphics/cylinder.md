@@ -2,7 +2,7 @@
 
 Create cylinder.
 
-## Syntax
+## 📝 Syntax
 
 - [X, Y, Z] = cylinder()
 - [X, Y, Z] = cylinder(r)
@@ -12,21 +12,21 @@ Create cylinder.
 - cylinder(r, n)
 - cylinder(ax, ...)
 
-## Input argument
+## 📥 Input argument
 
 - r - Profile curve: vector.
 - n - Number of points: positive whole number.
 - ax - Target axes: 'axes' object.
 
-## Output argument
+## 📤 Output argument
 
 - X, Y, Z - x-, y-, and z- coordinates of a cylinder without drawing it.
 
-## Description
+## 📄 Description
 
-  <p><b>cylinder</b> creates cylinder and plots it.</p>
+<b>cylinder</b> creates cylinder and plots it.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 f1 = figure();
@@ -34,7 +34,7 @@ colormap(spring)
 cylinder()
 ```
 
-<img src="cylinder_1_391729CC.svg" align="middle"/>
+<img src="cylinder_1.svg" align="middle"/>
 
 ```matlab
 f2 = figure();
@@ -43,18 +43,18 @@ r = 4;
 cylinder(r);
 ```
 
-<img src="cylinder_2_325EDE9E.svg" align="middle"/>
+<img src="cylinder_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[sphere](sphere.md), [surf](surf.md).
+[sphere](../graphics/sphere.md), [surf](../graphics/surf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,7 +2,7 @@
 
 Create sphere.
 
-## Syntax
+## 📝 Syntax
 
 - [X, Y, Z] = sphere()
 - [X, Y, Z] = sphere(n)
@@ -10,20 +10,20 @@ Create sphere.
 - sphere(n)
 - sphere(ax, n)
 
-## Input argument
+## 📥 Input argument
 
 - n - Number of points: positive whole number.
 - ax - Target axes: 'axes' object.
 
-## Output argument
+## 📤 Output argument
 
 - X, Y, Z - x-, y-, and z- coordinates of a sphere without drawing it.
 
-## Description
+## 📄 Description
 
-  <p><b>sphere</b> creates sphere and plots it.</p>
+<b>sphere</b> creates sphere and plots it.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -45,18 +45,18 @@ axis equal
 title(_('100-by-100 faces'));
 ```
 
-<img src="sphere_405CBFC9.svg" align="middle"/>
+<img src="sphere.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[cylinder](cylinder.md), [surf](surf.md).
+[cylinder](../graphics/cylinder.md), [surf](../graphics/surf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

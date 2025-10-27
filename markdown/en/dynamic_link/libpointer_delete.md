@@ -2,36 +2,37 @@
 
 Removes libpointer object.
 
-## Syntax
+## 📝 Syntax
 
 - libpointer_delete(h)
 - delete(h)
 
-## Input argument
+## 📥 Input argument
 
 - h - a handle: an libpointer object.
 
-## Description
+## 📄 Description
 
-  <p><b>delete(h)</b> releases libpointer object.</p>
-  <p>Do not forget to clear h afterward.</p>
+<b>delete(h)</b> releases libpointer object.
 
-## Example
+Do not forget to clear h afterward.
+
+## 💡 Example
 
 ```matlab
 libpointer_used(),delete(libpointer_used())
 ```
 
-## See also
+## 🔗 See also
 
-[libpointer](libpointer.md).
+[libpointer](../dynamic_link/libpointer.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

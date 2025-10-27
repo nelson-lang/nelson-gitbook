@@ -2,7 +2,7 @@
 
 Mesh surface plot.
 
-## Syntax
+## 📝 Syntax
 
 - mesh(X, Y, Z)
 - mesh(Z)
@@ -12,7 +12,7 @@ Mesh surface plot.
 - mesh(..., propertyName, propertyValue)
 - go = mesh(...)
 
-## Input argument
+## 📥 Input argument
 
 - X - x-coordinates: vector or matrix.
 - Y - y-coordinates: vector or matrix.
@@ -22,16 +22,17 @@ Mesh surface plot.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: surface type.
 
-## Description
+## 📄 Description
 
-  <p><b>mesh</b> creates a 3-D wireframe mesh.</p>
-  <p>You can customize the appearance of the plot using various options such as color, lighting, and shading.</p>
+<b>mesh</b> creates a 3-D wireframe mesh.
 
-## Examples
+You can customize the appearance of the plot using various options such as color, lighting, and shading.
+
+## 💡 Examples
 
 ```matlab
 f = figure();
@@ -42,7 +43,7 @@ mesh(X, Y, Z)
 axis square
 ```
 
-<img src="mesh_1_7F0A81B8.svg" align="middle"/>
+<img src="mesh_1.svg" align="middle"/>
 
 ```matlab
 f = figure();
@@ -58,18 +59,18 @@ ylabel('Imaginary')
 zlabel('Magnitude')
 ```
 
-<img src="mesh_2_2BFE1563.svg" align="middle"/>
+<img src="mesh_2.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[surf](surf.md), [meshgrid](../elementary_functions/meshgrid.md).
+[surf](../graphics/surf.md), [meshgrid](../elementary_functions/meshgrid.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

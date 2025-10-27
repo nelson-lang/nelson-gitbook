@@ -2,13 +2,13 @@
 
 Internationalization (i18n) utility functions
 
-## Syntax
+## 📝 Syntax
 
 - i18nHelpers('convert', potFile, jsonFile)
 - i18nHelpers('merge', jsonFile1, jsonFile2)
 - i18nHelpers('sort', jsonFileA, jsonFileB)
 
-## Input argument
+## 📥 Input argument
 
 - potFile - String: Path to the source .po/.pot translation template file
 - jsonFile - String: Path to JSON translation file destination
@@ -17,24 +17,28 @@ Internationalization (i18n) utility functions
 - jsonFileA - String: Path to the source JSON file to sort
 - jsonFileB - String: Path to the sorted JSON file
 
-## Description
+## 📄 Description
 
-  <p><b>i18nHelpers</b> provides essential utility functions for managing internationalization files. The main functions include:</p>
-  <p>- <b>'convert'</b>: Converts a .po/.pot translation template file into JSON format for easier manipulation.</p>
-  <p>- <b>'merge'</b>: Merges two JSON translation files. The entries from <code>jsonFile1</code> are added to <code>jsonFile2</code>, and entries exclusive to <code>jsonFile2</code> are removed.</p>
-  <p>- <b>'sort'</b>: Sorts and organizes entries in a JSON translation file. <code>jsonFileA</code> and <code>jsonFileB</code> may refer to the same file if in-place sorting is desired.</p>
-  <p>This utility is intended for internal use and may be updated over time.</p>
+<b>i18nHelpers</b> provides essential utility functions for managing internationalization files. The main functions include:
 
-## See also
+- <b>'convert'</b>: Converts a .po/.pot translation template file into JSON format for easier manipulation.
+
+- <b>'merge'</b>: Merges two JSON translation files. The entries from <code>jsonFile1</code> are added to <code>jsonFile2</code>, and entries exclusive to <code>jsonFile2</code> are removed.
+
+- <b>'sort'</b>: Sorts and organizes entries in a JSON translation file. <code>jsonFileA</code> and <code>jsonFileB</code> may refer to the same file if in-place sorting is desired.
+
+This utility is intended for internal use and may be updated over time.
+
+## 🔗 See also
 
 [setlanguage](../localization/setlanguage.md), [getlanguage](../localization/getlanguage.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | Initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

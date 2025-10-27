@@ -2,34 +2,34 @@
 
 Returns Qt version used.
 
-## Syntax
+## 📝 Syntax
 
 - v = qt_version()
 
-## Output argument
+## 📤 Output argument
 
 - v - a string : valid path.
 
-## Description
+## 📄 Description
 
-  <p><b>v = qt_version()</b> returns the version number of Qt at run-time as a string (for example, "5.15.2").</p>
+<b>v = qt_version()</b> returns the version number of Qt at run-time as a string (for example, "5.15.2").
 
-## Example
+## 💡 Example
 
 ```matlab
 semver(qt_version(), '>5.15')
 ```
 
-## See also
+## 🔗 See also
 
 [semver](../modules_manager/semver.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

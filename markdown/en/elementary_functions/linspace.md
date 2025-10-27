@@ -2,41 +2,41 @@
 
 linearly spaced vector constructor.
 
-## Syntax
+## 📝 Syntax
 
 - V = linspace(s, e)
 - V = linspace(s, e, n)
 
-## Input argument
+## 📥 Input argument
 
 - s - first value: a scalar, single or double.
 - e - last value: a scalar, single or double.
 - n - Number of points: a scalar, single or double (by default 100).
 
-## Output argument
+## 📤 Output argument
 
 - V - result of linspace: an linearly spaced vector.
 
-## Description
+## 📄 Description
 
-  <p><b>linspace</b> generates an linearly spaced vector.</p>
+<b>linspace</b> generates an linearly spaced vector.
 
-## Example
+## 💡 Example
 
 ```matlab
 V = linspace(1+2i, 10+10i, 4)
 ```
 
-## See also
+## 🔗 See also
 
-[logspace](logspace.md).
+[logspace](../elementary_functions/logspace.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

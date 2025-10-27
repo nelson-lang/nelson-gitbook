@@ -2,22 +2,22 @@
 
 Checks that value is a matrix or raise an error.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeMatrix(var)
 - mustBeMatrix(var, argPosition)
 - C++: void mustBeMatrix(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement ismatrix method.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeMatrix</b> checks that value is a matrix or raise an error.</p>
+<b>mustBeMatrix</b> checks that value is a matrix or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeMatrix(true)
@@ -25,16 +25,16 @@ mustBeMatrix([])
 mustBeMatrix(ones(3, 2, 4))
 ```
 
-## See also
+## 🔗 See also
 
-[ismatrix](ismatrix.html).
+[ismatrix](../types/ismatrix.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

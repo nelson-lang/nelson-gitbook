@@ -2,38 +2,38 @@
 
 Round towards zero
 
-## Syntax
+## 📝 Syntax
 
 - C = fix(A)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of fix.
 
-## Description
+## 📄 Description
 
-  <p><b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.</p>
+<b>fix</b> returns an integer matrix made of nearest rounded integers toward zeros.
 
-## Example
+## 💡 Example
 
 ```matlab
 fix(pi)
 ```
 
-## See also
+## 🔗 See also
 
-[floor](floor.md), [round](round.md), [ceil](ceil.md).
+[floor](../elementary_functions/floor.md), [round](../elementary_functions/round.md), [ceil](../elementary_functions/ceil.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

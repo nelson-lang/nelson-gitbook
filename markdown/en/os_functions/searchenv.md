@@ -2,24 +2,24 @@
 
 Searches for a file using environment paths.
 
-## Syntax
+## 📝 Syntax
 
 - c = searchenv(filename, env_name)
 
-## Input argument
+## 📥 Input argument
 
 - env_name - a string: environment variable name.
 - filename - a string: filename searched in environment variable.
 
-## Output argument
+## 📤 Output argument
 
 - c - a cell of strings: full paths found in environment variable.
 
-## Description
+## 📄 Description
 
-  <p><b>searchenv</b> Searches for a file using environment paths.</p>
+<b>searchenv</b> Searches for a file using environment paths.
 
-## Example
+## 💡 Example
 
 ```matlab
 [modules, paths] = getmodules();
@@ -32,16 +32,16 @@ setenv('MY_PATH_ENV', env_value);
 c = searchenv('loader.m', 'MY_PATH_ENV')
 ```
 
-## See also
+## 🔗 See also
 
-[getenv](getenv.md), [setenv](setenv.md).
+[getenv](../os_functions/getenv.md), [setenv](../os_functions/setenv.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

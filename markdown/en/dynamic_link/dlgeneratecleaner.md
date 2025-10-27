@@ -2,39 +2,40 @@
 
 Generates cleaner.m file for C++ gateway.
 
-## Syntax
+## 📝 Syntax
 
 - dlgeneratecleaner(destinationdir)
 - dlgeneratecleaner(destinationdir, files)
 
-## Input argument
+## 📥 Input argument
 
 - destinationdir - a string: destination directory where is generated the cleaner.m file.
 - files - a string or a cell of string: list of files to delete.
 
-## Description
+## 📄 Description
 
-  <p><b>dlgeneratecleaner</b> generates a 'cleaner.m' to remove files.</p>
+<b>dlgeneratecleaner</b> generates a 'cleaner.m' to remove files.
 
-## Example
+## 💡 Example
 
 See module skeleton for example
 
 ```matlab
+
 dlgeneratecleaner(tempdir());
 text = fileread([tempdir(), 'cleaner.m'])
 ```
 
-## See also
+## 🔗 See also
 
-[dlgenerateunloader](dlgenerateunloader.md), [dlgenerategateway](dlgenerategateway.md).
+[dlgenerateunloader](../dynamic_link/dlgenerateunloader.md), [dlgenerategateway](../dynamic_link/dlgenerategateway.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

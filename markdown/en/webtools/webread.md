@@ -2,61 +2,65 @@
 
 Read data from RESTful web service to Nelson's variable
 
-## Syntax
+## 📝 Syntax
 
 - var = webread(url)
 - var = webread(url, name1, value1, ... , nameN, valueN)
 - var = webread(url, name1, value1, ... , nameN, valueN, options)
 
-## Input argument
+## 📥 Input argument
 
 - url - a string: URL to a web service.
 - name1, value1, ... , nameN, valueN - Name-Value Pair Arguments.
 - options - a weboptions object.
 
-## Output argument
+## 📤 Output argument
 
 - var - a variable: content from web.
 
-## Description
+## 📄 Description
 
-  <p><b>webread()</b> reads content from the web to nelson's variable.</p>
+<b>webread()</b> reads content from the web to nelson's variable.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 url = 'https://httpbin.org/get';
 res = webread(url,weboptions('ContentType','json'));
+
 ```
 
 More demos
 
 ```matlab
 edit([modulepath('webtools'),'/examples/webread_demo_1.m'])
+
 ```
 
 Use function_handle with weboptions and webread
 
 ```matlab
 edit([modulepath('webtools'),'/examples/webread_demo_2.m'])
+
 ```
 
 Read data from National Agricultural Statistics Service
 
 ```matlab
 edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
+
 ```
 
-## See also
+## 🔗 See also
 
-[weboptions](weboptions.md), [websave](websave.md).
+[weboptions](../webtools/weboptions.md), [websave](../webtools/websave.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

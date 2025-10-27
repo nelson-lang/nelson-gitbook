@@ -2,33 +2,33 @@
 
 Return true if property of handle object.
 
-## Syntax
+## 📝 Syntax
 
 - res = isprop(h, propertyname)
 
-## Input argument
+## 📥 Input argument
 
 - h - a handle object
 - propertyname - a string
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isprop</b> returns a logical 1 if the argument is a valid handle with property name and a logical 0 otherwise.
 
-## See also
+## 🔗 See also
 
-[isprop](isprop.md), [properties](properties.md).
+[isprop](../handle/isprop.md), [properties](../handle/properties.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,26 +2,26 @@
 
 less than, < operator.
 
-## Syntax
+## 📝 Syntax
 
 - C = lt(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 - B - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result of lt(A, B)
 
-## Description
+## 📄 Description
 
-  <p><b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.</p>
-  <p><b>lt</b> compares only the real part of numeric arrays.</p>
-  <p/>
+<b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.
 
-## Examples
+<b>lt</b> compares only the real part of numeric arrays.
+
+## 💡 Examples
 
 ```matlab
 eye(2,2) &#60; ones(2, 2)
@@ -43,16 +43,16 @@ eye(2,2) &#60; ones(2, 2)
 lt(0.8 - 0.6 - 0.2, 0)
 ```
 
-## See also
+## 🔗 See also
 
-[ne](ne.md), [le](le.md), [ge](ge.md), [gt](gt.md), [eq](eq.md).
+[ne](../operators/ne.md), [le](../operators/le.md), [ge](../operators/ge.md), [gt](../operators/gt.md), [eq](../operators/eq.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

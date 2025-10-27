@@ -2,23 +2,23 @@
 
 Infinity
 
-## Syntax
+## 📝 Syntax
 
 - Inf
 - inf
 - Inf(n)
 - Inf(n, m)
 
-## Input argument
+## 📥 Input argument
 
 - n - a variable: n-by-n matrix
 - m - a variable: n-by-m matrix
 
-## Description
+## 📄 Description
 
-  <p><b>NaN</b> returns the IEEE symbol Inf (Infinity).</p>
+<b>NaN</b> returns the IEEE symbol Inf (Infinity).
 
-## Examples
+## 💡 Examples
 
 ```matlab
 Inf
@@ -32,16 +32,16 @@ Inf
 1.e1000
 ```
 
-## See also
+## 🔗 See also
 
-[nan](NaN.md).
+[nan](../constructors_functions/NaN.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

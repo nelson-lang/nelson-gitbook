@@ -2,27 +2,29 @@
 
 decodes a JSON string to Nelson object.
 
-## Syntax
+## 📝 Syntax
 
 - res = jsondecode(json_str)
+- res = jsondecode(json_str, '-file')
 
-## Input argument
+## 📥 Input argument
 
 - json_str - a json string.
+- '-file' - a string, first argument is the file path.
 
-## Output argument
+## 📤 Output argument
 
 - res - a nelson variable converted from JSON.
 
-## Description
+## 📄 Description
 
-  <p><b>jsondecode</b> converts JSON object field names to Nelson structure field names</p>
+<b>jsondecode</b> converts JSON object field names to Nelson structure field names
 
-Bibliography
+## 📚 Bibliography
 
 http://www.rfc-editor.org/rfc/rfc7159.txt
 
-## Examples
+## 💡 Examples
 
 ```matlab
 field1 = 'f1';  value1 = zeros(1,10);
@@ -35,19 +37,23 @@ r2 = jsondecode(r)
 ```
 
 ```matlab
-jsondecode(fileread([modulepath('json'), '/examples/patient.json']))
+
+jsondecode([modulepath('json'), '/examples/patient.json'], '-file')
+
 ```
 
-## See also
+## 🔗 See also
 
-[jsonencode](jsonencode.md), [fileread](../stream_manager/fileread.md).
+[jsonencode](../json/jsonencode.md), [fileread](../stream_manager/fileread.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                       |
+| ------- | ------------------------------------ |
+| 1.0.0   | initial version                      |
+| 1.15.0  | second argument added for file input |
+| 1.15.0  | simdjson library used                |
 
-## Author
+## 👤 Author
 
 Allan CORNET

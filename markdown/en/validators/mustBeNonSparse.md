@@ -2,39 +2,40 @@
 
 Checks that value is not sparse.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeNonSparse(var)
 - mustBeNonSparse(var, argPosition)
 - C++: void mustBeNonSparse(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable: all supported types and classes that implement issparse method.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeNonSparse</b> checks that value is not sparse or raise an error.</p>
+<b>mustBeNonSparse</b> checks that value is not sparse or raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeNonSparse(1)
 mustBeNonSparse([])
 mustBeNonSparse(sparse(3))
+
 ```
 
-## See also
+## 🔗 See also
 
 [issparse](../types/issparse.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

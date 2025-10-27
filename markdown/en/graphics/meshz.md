@@ -2,7 +2,7 @@
 
 Mesh surface plot with curtain.
 
-## Syntax
+## 📝 Syntax
 
 - meshz(X, Y, Z)
 - meshz(Z)
@@ -12,7 +12,7 @@ Mesh surface plot with curtain.
 - meshz(..., propertyName, propertyValue)
 - go = meshz(...)
 
-## Input argument
+## 📥 Input argument
 
 - X - x-coordinates: vector or matrix.
 - Y - y-coordinates: vector or matrix.
@@ -22,16 +22,17 @@ Mesh surface plot with curtain.
 - propertyName - a scalar string or row vector character.
 - propertyValue - a value.
 
-## Output argument
+## 📤 Output argument
 
 - go - a graphics object: surface type.
 
-## Description
+## 📄 Description
 
-  <p><b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.</p>
-  <p>The function takes the same input arguments as the <b>mesh</b> function.</p>
+<b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.
 
-## Example
+The function takes the same input arguments as the <b>mesh</b> function.
+
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -40,18 +41,18 @@ Z = Y.*sin(X) - X.*cos(Y);
 s = meshz(X,Y,Z)
 ```
 
-<img src="meshz_1_B64C241F.svg" align="middle"/>
+<img src="meshz_1.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[mesh](mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
+[mesh](../graphics/mesh.md), [meshgrid](../elementary_functions/meshgrid.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

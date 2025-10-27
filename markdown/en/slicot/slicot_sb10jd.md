@@ -2,11 +2,11 @@
 
 Converting a descriptor state-space system into regular state-space form.
 
-## Syntax
+## 📝 Syntax
 
 - [A_OUT, B_OUT, C_OUT, D_OUT, E_OUT, NSYS, INFO] = slicot_sb10jd(A_IN, B_IN, C_IN, D_IN, E_IN)
 
-## Input argument
+## 📥 Input argument
 
 - A_IN - the leading N-by-N part of this array must contain the state matrix A of the descriptor system.
 - B_IN - the leading N-by-M part of this array must contain the input matrix B of the descriptor system.
@@ -14,7 +14,7 @@ Converting a descriptor state-space system into regular state-space form.
 - D_IN - the leading NP-by-M part of this array must contain the matrix D of the descriptor system.
 - E_IN - the leading N-by-N part of this array must contain the matrix E of the descriptor system.
 
-## Output argument
+## 📤 Output argument
 
 - A_OUT - the leading NSYS-by-NSYS part of this array contains the state matrix Ad of the converted system.
 - B_OUT - the leading NSYS-by-M part of this array contains the input matrix Bd of the converted system.
@@ -24,19 +24,19 @@ Converting a descriptor state-space system into regular state-space form.
 - NSYS - The order of the converted state-space system.
 - INFO - = 0: successful exit; = 1: the iteration for computing singular value decomposition did not converge.
 
-## Description
+## 📄 Description
 
-  <p>To convert the descriptor state-space system into regular state-space form.</p>
+To convert the descriptor state-space system into regular state-space form.
 
-Used function(s)
+## Used function(s)
 
 SB10JD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/SB10JD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 A_IN = [2 -4; 4 2];
@@ -47,12 +47,12 @@ E_IN = [1 0; -3 0.5];
 [A_OUT, B_OUT, C_OUT, D_OUT, E_OUT, NSYS, INFO] = slicot_sb10jd(A_IN, B_IN, C_IN, D_IN, E_IN)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

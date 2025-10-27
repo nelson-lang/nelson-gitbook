@@ -2,40 +2,40 @@
 
 Convert decimal number to base 16.
 
-## Syntax
+## 📝 Syntax
 
 - R = dec2hex(D)
 - R = dec2hex(D, N)
 
-## Input argument
+## 📥 Input argument
 
 - D - a non negative integer smaller than the value returned by flintmax.
 - N - an integer value. number of digits.
 
-## Output argument
+## 📤 Output argument
 
 - R - result of dec2hex: char array.
 
-## Description
+## 📄 Description
 
-  <p><b>dec2hex</b> converts decimal number to base 16.</p>
+<b>dec2hex</b> converts decimal number to base 16.
 
-## Example
+## 💡 Example
 
 ```matlab
 Y = dec2hex(12)
 ```
 
-## See also
+## 🔗 See also
 
-[dec2base](base2dec.md), [hex2dec](hex2dec.md).
+[dec2base](../elementary_functions/base2dec.md), [hex2dec](../elementary_functions/hex2dec.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

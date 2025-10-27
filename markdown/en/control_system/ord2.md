@@ -2,17 +2,17 @@
 
 Generate continuous second-order systems.
 
-## Syntax
+## 📝 Syntax
 
 - [A, B, C, D] = ord2(wn, z)
 - [num, den] = ord2(wn, z)
 
-## Input argument
+## 📥 Input argument
 
 - wn - natural frequency
 - z - damping factor
 
-## Output argument
+## 📤 Output argument
 
 - A - State matrix: Nx-by-Nx matrix.
 - B - Input-to-state matrix: Nx-by-Nu matrix.
@@ -21,11 +21,11 @@ Generate continuous second-order systems.
 - num - polynomial coefficients: a row vector or as a cell array of row vectors.
 - den - polynomial coefficients: a row vector or as a cell array of row vectors.
 
-## Description
+## 📄 Description
 
-  <p><b>ord2</b> offers a convenient way to obtain either the state-space representation or the transfer function of a second-order system based on its natural frequency and damping factor.</p>
+<b>ord2</b> offers a convenient way to obtain either the state-space representation or the transfer function of a second-order system based on its natural frequency and damping factor.
 
-## Example
+## 💡 Example
 
 ```matlab
 wn = 5;
@@ -35,18 +35,19 @@ sys1 = ss(A, B, C, D)
 
 [num, den] = ord2(wn, z);
 sys2 = tf(num, den)
+
 ```
 
-## See also
+## 🔗 See also
 
-[ss](ss.md), [tf](tf.md).
+[ss](../control_system/ss.md), [tf](../control_system/tf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

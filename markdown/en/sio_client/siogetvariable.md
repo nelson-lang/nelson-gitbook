@@ -2,30 +2,30 @@
 
 Emit an value of variable to web browser.
 
-## Syntax
+## 📝 Syntax
 
 - siogetvariable(variable_name)
 
-## Input argument
+## 📥 Input argument
 
 - variable_name - a string: name of variable
 
-## Description
+## 📄 Description
 
-  <p><b>siogetvariable</b> send value of a variable to web browser.</p>
+<b>siogetvariable</b> send value of a variable to web browser.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = eye(3, 3); siogetvariable('A')
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

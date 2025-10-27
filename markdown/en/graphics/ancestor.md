@@ -2,26 +2,26 @@
 
 Ancestor of graphics object.
 
-## Syntax
+## 📝 Syntax
 
 - p = ancestor(h, type)
 - p = ancestor(h, type, 'toplevel')
 
-## Input argument
+## 📥 Input argument
 
 - h - graphics object
 - type - a row vector character or cell of strings:
 - 'toplevel' - a row vector character: return the highest parent in the object hierarchy that matches the condition.
 
-## Output argument
+## 📤 Output argument
 
 - p - a graphics object or []
 
-## Description
+## 📄 Description
 
-  <p><b>ancestor</b> returns the handle of the specified object's ancestor of a given type.</p>
+<b>ancestor</b> returns the handle of the specified object's ancestor of a given type.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -32,16 +32,16 @@ F = ancestor(s, 'figure')
 R = ancestor(s, 'root')
 ```
 
-## See also
+## 🔗 See also
 
-[gcf](gcf.md).
+[gcf](../graphics/gcf.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

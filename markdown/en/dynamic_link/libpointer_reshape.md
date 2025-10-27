@@ -2,25 +2,21 @@
 
 Reshapes libpointer dimensions.
 
-## Syntax
+## 📝 Syntax
 
 - tf = h.reshape(X, Y)
 
-## Input argument
+## 📥 Input argument
 
 - h - a libpointer handle.
 - X - a scalar double: new X dimension.
 - Y - a scalar double: new Y dimension.
 
-## Description
+## 📄 Description
 
-  <p>Set dimensions from libpointer object.</p>
+Set dimensions from libpointer object.
 
-## See also
-
-[libpointer](libpointer.md).
-
-## Example
+## 💡 Example
 
 ```matlab
 a = libpointer('doublePtr', eye(2, 2));
@@ -28,12 +24,16 @@ a.reshape(3, 3);
 a.Value
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[libpointer](../dynamic_link/libpointer.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

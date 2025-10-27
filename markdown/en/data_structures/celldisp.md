@@ -2,21 +2,21 @@
 
 Display cell array contents.
 
-## Syntax
+## 📝 Syntax
 
 - celldisp(C)
 - celldisp(C, name)
 
-## Input argument
+## 📥 Input argument
 
 - C - cell array.
 - name - displayed name of cell array.
 
-## Description
+## 📄 Description
 
-  <p><b>celldisp</b> recursively display the contents of a cell array.</p>
+<b>celldisp</b> recursively display the contents of a cell array.
 
-## Example
+## 💡 Example
 
 ```matlab
 C = {2, 22, 'ff', {331, 332}};
@@ -24,16 +24,16 @@ celldisp(C)
 celldisp(C, 'var_name')
 ```
 
-## See also
+## 🔗 See also
 
-[disp](${display_format).
+[disp](../display_format/disp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

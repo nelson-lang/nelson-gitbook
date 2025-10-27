@@ -2,25 +2,25 @@
 
 Check for the existence of an variable.
 
-## Syntax
+## 📝 Syntax
 
 - tf = isvar(varname)
 - tf = isvar(scope, varname)
 
-## Input argument
+## 📥 Input argument
 
 - scope - a string: 'global', 'base', 'caller', 'local'.
 - varname - a string: variable name.
 
-## Output argument
+## 📤 Output argument
 
 - tf - a logical: true if varname exists.
 
-## Description
+## 📄 Description
 
-  <p><b>isvar</b> checks for the existence of an variable.</p>
+<b>isvar</b> checks for the existence of an variable.
 
-## Example
+## 💡 Example
 
 ```matlab
 isvar('A')
@@ -31,16 +31,16 @@ global B
 isvar('global','B')
 ```
 
-## See also
+## 🔗 See also
 
 [exist](../core/exist.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

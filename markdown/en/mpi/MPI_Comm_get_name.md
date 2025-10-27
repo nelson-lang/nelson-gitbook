@@ -2,23 +2,24 @@
 
 Return the print name from the communicator.
 
-## Syntax
+## 📝 Syntax
 
 - MPI_Comm_get_name(comm)
 
-## Input argument
+## 📥 Input argument
 
 - comm - a handle: a MPI_Comm object.
 
-## Description
+## 📄 Description
 
-  <p><b>MPI_Comm_get_name(comm)</b> returns the print name from the communicator.</p>
+<b>MPI_Comm_get_name(comm)</b> returns the print name from the communicator.
 
-## Example
+## 💡 Example
 
 CLI required
 
 ```matlab
+
 if ~MPI_Initialized()
   MPI_Init();
 end
@@ -28,18 +29,19 @@ delete(comm)
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## See also
+## 🔗 See also
 
-[MPI_Comm_object](MPI_Comm_object.md).
+[MPI_Comm_object](../mpi/MPI_Comm_object.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

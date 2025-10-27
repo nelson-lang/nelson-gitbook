@@ -2,30 +2,32 @@
 
 Open file in appropriate application (Windows only).
 
-## Syntax
+## 📝 Syntax
 
 - winopen(filename)
 
-## Input argument
+## 📥 Input argument
 
 - command - a string: command to execute in command shell.
 
-## Description
+## 📄 Description
 
-  <p><b>winopen(filename)</b> opens filename in the appropriate Microsoft Windows application.</p>
-  <p>The winopen function uses the appropriate Windows shell command, and performs the same action as if you double-click the file in the Windows Explorer.</p>
-  <p>If filename is not in the current directory, specify the absolute path for filename.</p>
+<b>winopen(filename)</b> opens filename in the appropriate Microsoft Windows application.
 
-## See also
+The winopen function uses the appropriate Windows shell command, and performs the same action as if you double-click the file in the Windows Explorer.
 
-[system](system.md).
+If filename is not in the current directory, specify the absolute path for filename.
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[system](../os_functions/system.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

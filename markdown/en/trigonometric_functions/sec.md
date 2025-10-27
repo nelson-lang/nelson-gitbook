@@ -2,39 +2,39 @@
 
 Secant of angle in radians.
 
-## Syntax
+## 📝 Syntax
 
 - res = sec(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
 <b>sec</b> computes the secant of argument in radians for each element of <b>x</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 x = -pi:0.75:pi;
 R = sec(x)
 ```
 
-## See also
+## 🔗 See also
 
-[secd](secd.html).
+[secd](../trigonometric/secd.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

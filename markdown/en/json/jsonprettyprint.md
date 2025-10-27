@@ -2,23 +2,23 @@
 
 format an JSON string.
 
-## Syntax
+## 📝 Syntax
 
 - res = jsonprettyprint(txt)
 
-## Input argument
+## 📥 Input argument
 
 - txt - a valid JSON text.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string: a formatted JSON text (human readable).
 
-## Description
+## 📄 Description
 
-  <p><b>jsonprettyprint</b> formats a JSON text string to be human readable.</p>
+<b>jsonprettyprint</b> formats a JSON text string to be human readable.
 
-## Example
+## 💡 Example
 
 ```matlab
 field1 = 'f1';  value1 = zeros(1,10);
@@ -28,18 +28,19 @@ field4 = 'f4';  value4 = {'fourth'};
 s = struct(field1,value1,field2,value2,field3,value3,field4,value4);
 r = jsonencode(s)
 jsonprettyprint(r)
+
 ```
 
-## See also
+## 🔗 See also
 
-[jsondecode](jsondecode.md), [jsonencode](jsonencode.md), [filewrite](../stream_manager/filewrite.md).
+[jsondecode](../json/jsondecode.md), [jsonencode](../json/jsonencode.md), [filewrite](../stream_manager/filewrite.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

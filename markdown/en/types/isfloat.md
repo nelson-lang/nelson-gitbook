@@ -2,23 +2,23 @@
 
 Return true if variable var is a single or double matrix.
 
-## Syntax
+## 📝 Syntax
 
 - res = isfloat(var)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true or false
 
-## Description
+## 📄 Description
 
 <b>isfloat</b> returns a logical 1 if the argument is a single or double matrix and a logical 0 otherwise.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -30,16 +30,16 @@ A = single(3);
 res = isfloat(A)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [single](single.html), [isdouble](isdouble.md).
+[isa](../types/isa.md), [single](../integer/single.md), [isdouble](../types/isdouble.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,27 +2,28 @@
 
 Matrix to String.
 
-## Syntax
+## 📝 Syntax
 
 - res = mat2str(M)
 - res = mat2str(M, 'class')
 - res = mat2str(M, P, 'class')
 
-## Input argument
+## 📥 Input argument
 
 - M - a numerical 2D matrix or logical.
 - P - an integer value: precision, 15 by default.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string
 
-## Description
+## 📄 Description
 
-  <p><b>mat2str</b> converts a matrix to a string.</p>
-  <p>This string may be used to reconstruct the original matrix with <b>execstr</b> function.</p>
+<b>mat2str</b> converts a matrix to a string.
 
-## Example
+This string may be used to reconstruct the original matrix with <b>execstr</b> function.
+
+## 💡 Example
 
 ```matlab
 R = mat2str(pi)
@@ -30,18 +31,19 @@ R = mat2str(pi, 'class')
 R = mat2str(pi, 4)
 R = mat2str(pi + i, 'class')
 execstr(['RB = ', R])
+
 ```
 
-## See also
+## 🔗 See also
 
 [execstr](../core/execstr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

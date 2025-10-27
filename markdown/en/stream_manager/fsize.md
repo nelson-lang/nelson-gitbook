@@ -2,23 +2,23 @@
 
 Returns size of an opened file.
 
-## Syntax
+## 📝 Syntax
 
 - s = fsize(fid)
 
-## Input argument
+## 📥 Input argument
 
 - fid - a file descriptor
 
-## Output argument
+## 📤 Output argument
 
 - s - an integer value: size of a file.
 
-## Description
+## 📄 Description
 
-  <p><b>fsize</b> returns th size of a file opened by <b>fopen</b>.</p>
+<b>fsize</b> returns th size of a file opened by <b>fopen</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 TXT = 'example about fsize.';
@@ -29,16 +29,16 @@ length(TXT)
 status = fclose(fileID);
 ```
 
-## See also
+## 🔗 See also
 
-[fopen](fopen.md), [fprintf](fread.md), [fclose](fclose.md).
+[fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fread.md), [fclose](../stream_manager/fclose.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

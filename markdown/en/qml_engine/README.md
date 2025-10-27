@@ -1,10 +1,10 @@
 # QML engine
 
-QML engine
+The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.
 
-## Description
+It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.
 
-The QML engine enables nelson programs to display and manipulate graphical content using Qt's QML framework.
+## Functions
 
 - [QObject_classname](QObject_classname.md) - Returns class name of an QObject handle.
 - [QObject_findchildren](QObject_findchildren.md) - Returns all children of this object with the given name.

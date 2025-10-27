@@ -2,40 +2,40 @@
 
 Evaluate expression in string in base scope
 
-## Syntax
+## 📝 Syntax
 
 - #include "engine.h"
 - int engEvalString(Engine *ep, const char *string);
 
-## Input argument
+## 📥 Input argument
 
 - Engine \*ep - handle to Nelson engine.
 - const char \*string - Expression to evaluate.
 
-## Output argument
+## 📤 Output argument
 
 - int - returns 1 if the engine session is closed or invalid. Otherwise, returns 0.
 
-## Description
+## 📄 Description
 
-  <p>Evaluate expression in string in base scope.</p>
+Evaluate expression in string in base scope.
 
-## Example
+## 💡 Example
 
 ```matlab
 edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 ```
 
-## See also
+## 🔗 See also
 
-[mex](mex.md), [engPutVariable](engPutVariable.md), [engGetVariable](engGetVariable.md).
+[mex](../mex/mex.md), [engPutVariable](../mex/engPutVariable.md), [engGetVariable](../mex/engGetVariable.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

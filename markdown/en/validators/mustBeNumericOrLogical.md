@@ -2,22 +2,22 @@
 
 Checks that input is numeric or logical.
 
-## Syntax
+## 📝 Syntax
 
 - mustBeNumericOrLogical(var)
 - mustBeNumericOrLogical(var, argPosition)
 - C++: void mustBeNumericOrLogical(const ArrayOfVector& args, int argPosition)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable.
 - argPosition - a positive integer value: Position of input argument.
 
-## Description
+## 📄 Description
 
-  <p><b>mustBeNumericOrLogical</b> checks that value is numeric or logical otherwise raise an error.</p>
+<b>mustBeNumericOrLogical</b> checks that value is numeric or logical otherwise raise an error.
 
-## Example
+## 💡 Example
 
 ```matlab
 mustBeNumericOrLogical(1)
@@ -25,16 +25,16 @@ mustBeNumericOrLogical([])
 mustBeNumericOrLogical({1})
 ```
 
-## See also
+## 🔗 See also
 
 [isnumeric](../types/isnumeric.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

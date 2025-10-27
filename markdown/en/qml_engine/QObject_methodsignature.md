@@ -2,40 +2,40 @@
 
 Returns the signature of a method of a QObject handle.
 
-## Syntax
+## 📝 Syntax
 
 - res = QObject_methodsignature(h, method_name)
 
-## Input argument
+## 📥 Input argument
 
 - h - an QObject handle.
 - method_name - a string : method name.
 
-## Output argument
+## 📤 Output argument
 
 - R - a string: method signature.
 
-## Description
+## 📄 Description
 
-  <p>Returns the signature of a method of a QObject handle.</p>
+Returns the signature of a method of a QObject handle.
 
-## See also
-
-[QObject_invoke (invoke)](QObject_invoke.html), [QObject_methods (methods)](QObject_methods.html).
-
-## Example
+## 💡 Example
 
 ```matlab
 h = errordlg()
 QObject_methodsignature(h, 'setVisible')
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[QObject_invoke (invoke)](../qml_engine/QObject_invoke.md), [QObject_methods (methods)](../qml_engine/QObject_methods.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

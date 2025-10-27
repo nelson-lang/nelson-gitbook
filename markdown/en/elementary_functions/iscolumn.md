@@ -2,39 +2,39 @@
 
 Determine whether input is column vector.
 
-## Syntax
+## 📝 Syntax
 
 - tf = iscolumn(V)
 
-## Input argument
+## 📥 Input argument
 
 - V - a variable
 
-## Output argument
+## 📤 Output argument
 
 - tf - logical: result of 'iscolumn'.
 
-## Description
+## 📄 Description
 
-  <p><b>iscolumn(V)</b> returns logical <b>true</b> if size(V) returns [n, 1] with a nonnegative integer value n, and logical <b>false</b> otherwise.</p>
+<b>iscolumn(V)</b> returns logical <b>true</b> if size(V) returns [n, 1] with a nonnegative integer value n, and logical <b>false</b> otherwise.
 
-## Example
+## 💡 Example
 
 ```matlab
 iscolumn([1:4])
 iscolumn([1:4]')
 ```
 
-## See also
+## 🔗 See also
 
-[isrow](isrow.md).
+[isrow](../elementary_functions/isrow.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

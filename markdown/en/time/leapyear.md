@@ -2,39 +2,40 @@
 
 Determine leap year.
 
-## Syntax
+## 📝 Syntax
 
 - tf = leapyear(year)
 
-## Input argument
+## 📥 Input argument
 
 - year - year: scalar or array numeric value.
 
-## Output argument
+## 📤 Output argument
 
 - tf - Leap year determination result: scalar or array logical value.
 
-## Description
+## 📄 Description
 
-  <p><b>leapyear</b> determines leap years.</p>
-  <p>Leap years is done by Gregorian calendar rules.</p>
+<b>leapyear</b> determines leap years.
 
-## Example
+Leap years is done by Gregorian calendar rules.
+
+## 💡 Example
 
 ```matlab
 tf = leapyear([2020 2021 2022])
 ```
 
-## See also
+## 🔗 See also
 
-[datenum](datenum.md).
+[datenum](../time/datenum.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

@@ -2,23 +2,23 @@
 
 Checks if variable is an linear model tf, ss or zpk.
 
-## Syntax
+## 📝 Syntax
 
 - res = islti(sys)
 
-## Input argument
+## 📥 Input argument
 
 - A - variable.
 
-## Output argument
+## 📤 Output argument
 
 - res - a logical: true if it is an linear model.
 
-## Description
+## 📄 Description
 
-  <p>Checks if variable is an linear model tf, ss or zpk.</p>
+Checks if variable is an linear model tf, ss or zpk.
 
-## Example
+## 💡 Example
 
 ```matlab
 A = [-15,-20; 10, 0];
@@ -30,16 +30,16 @@ islti(sys)
 islti(A)
 ```
 
-## See also
+## 🔗 See also
 
 [isa](../types/isa.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

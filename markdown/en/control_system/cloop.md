@@ -2,29 +2,30 @@
 
 Feedback connection of multiple models.
 
-## Syntax
+## 📝 Syntax
 
 - model = cloop(sys)
 - model = cloop(sys, sign)
 - model = cloop(sys, outputs, inputs)
 
-## Input argument
+## 📥 Input argument
 
 - sys - LTI model.
 - sign - Type of feedback: -1 (default) or +1.
 - outputs - vector indexes into the outputs.
 - inputs - vector indexes into the inputs.
 
-## Output argument
+## 📤 Output argument
 
 - sys - Closed-loop system.
 
-## Description
+## 📄 Description
 
-  <p><b>cloop</b> forms the closed-loop system when unity feedback is used.</p>
-  <p>This function is deprecated and has limitations, please see <b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".</p>
+<b>cloop</b> forms the closed-loop system when unity feedback is used.
 
-## Example
+This function is deprecated and has limitations, please see <b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".
+
+## 💡 Example
 
 ```matlab
 m = 1000;
@@ -39,18 +40,19 @@ INPUTS = 1;
 sys = ss(A, B, C, D);
 
 R = cloop(sys, OUTPUTS, INPUTS)
+
 ```
 
-## See also
+## 🔗 See also
 
-[cloop](cloop.md), [append](append.md), [ssselect](ssselect.md).
+[feedback](../control_system/feedback.md), [append](../control_system/append.md), [ssselect](../control_system/ssselect.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

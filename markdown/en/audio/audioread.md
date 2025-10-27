@@ -2,7 +2,7 @@
 
 Read an audio file.
 
-## Syntax
+## 📝 Syntax
 
 - y = audioread(filename)
 - [y, fs] = audioread(filename)
@@ -10,24 +10,26 @@ Read an audio file.
 - [y, fs] = audioread(filename, type)
 - [y, fs] = audioread(filename, range, type)
 
-## Input argument
+## 📥 Input argument
 
 - filename - a string: an existing filename.
 - range - a vector: [start end].
 - type - a string: 'double' or 'native'.
 
-## Output argument
+## 📤 Output argument
 
 - y - a matrix: audio data.
 - fs - an integer value: sampling rate.
 
-## Description
+## 📄 Description
 
-  <p><b>audioread</b> reads an audio file.</p>
-  <p>Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See <b>audiosupportedformats</b> function to have all supported formats.</p>
-  <p>If <b>type</b> is 'native' then audio data depends on the file format (single, double, integers).</p>
+<b>audioread</b> reads an audio file.
 
-## Example
+Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See <b>audiosupportedformats</b> function to have all supported formats.
+
+If <b>type</b> is 'native' then audio data depends on the file format (single, double, integers).
+
+## 💡 Example
 
 ```matlab
 wav_audio = [modulepath('audio'), '/examples/haha.wav'];
@@ -38,16 +40,16 @@ delete(playObj)
 clear playObj
 ```
 
-## See also
+## 🔗 See also
 
-[playblocking](playblocking.md), [audioplayer](audioplayer.md), [audiosupportedformats](audiosupportedformats.md), [audiowrite](audiowrite.md).
+[playblocking](../audio/playblocking.md), [audioplayer](../audio/audioplayer.md), [audiosupportedformats](../audio/audiosupportedformats.md), [audiowrite](../audio/audiowrite.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

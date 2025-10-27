@@ -2,41 +2,42 @@
 
 Square root of sum of squares
 
-## Syntax
+## 📝 Syntax
 
 - C = hypot(A, B)
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable: scalars, vectors, matrices, multidimensional arrays single or double
 - B - a variable: scalars, vectors, matrices, multidimensional arrays single or double
 
-## Output argument
+## 📤 Output argument
 
 - R - result of hypot: hypothenuse.
 
-## Description
+## 📄 Description
 
-  <p><b>hypot</b> computes the hypothenuse.</p>
-  <p>If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.</p>
+<b>hypot</b> computes the hypothenuse.
 
-## Example
+If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.
+
+## 💡 Example
 
 ```matlab
 R = hypot(1e308, 1e308)
 R = hypot(1e309, 1e309)
 ```
 
-## See also
+## 🔗 See also
 
-[abs](abs.md), [sqrt](sqrt.md).
+[abs](../elementary_functions/abs.md), [sqrt](../elementary_functions/sqrt.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

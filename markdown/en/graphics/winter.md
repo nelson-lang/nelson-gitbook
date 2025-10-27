@@ -2,24 +2,24 @@
 
 Winter colormap array.
 
-## Syntax
+## 📝 Syntax
 
 - c = winter
 - c = winter(m)
 
-## Input argument
+## 📥 Input argument
 
 - m - a scalar integer value: Number of colors (256 as default value).
 
-## Output argument
+## 📤 Output argument
 
 - c - Winter colormap array.
 
-## Description
+## 📄 Description
 
-  <p><b>winter</b> returns the colormap with winter colors.</p>
+<b>winter</b> returns the colormap with winter colors.
 
-## Example
+## 💡 Example
 
 ```matlab
 f = figure();
@@ -27,18 +27,18 @@ surf(peaks);
 colormap('winter');
 ```
 
-<img src="winter_AA835E63.svg" align="middle"/>
+<img src="winter.svg" align="middle"/>
 
-## See also
+## 🔗 See also
 
-[colormap](colormap.md).
+[colormap](../graphics/colormap.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

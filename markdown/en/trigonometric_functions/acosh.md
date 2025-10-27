@@ -2,39 +2,39 @@
 
 Inverse hyperbolic cosine.
 
-## Syntax
+## 📝 Syntax
 
 - res = acosh(x)
 
-## Input argument
+## 📥 Input argument
 
 - x - a numeric value
 
-## Output argument
+## 📤 Output argument
 
 - res - a numeric value
 
-## Description
+## 📄 Description
 
-<b>acos</b> computes the inverse hyperbolic cosine.
+<b>acosh</b> computes the inverse hyperbolic cosine.
 
-## Example
+## 💡 Example
 
 ```matlab
 A =  [1+2i, 2, -3];
 res = acosh(A)
 ```
 
-## See also
+## 🔗 See also
 
-[cosh](cosh.html).
+[cosh](../trigonometric/cosh.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

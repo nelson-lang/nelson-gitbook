@@ -2,28 +2,33 @@
 
 concatenate strings horizontally.
 
-## Syntax
+## 📝 Syntax
 
 - res = strcat(s1, s2, ..., sN)
 
-## Input argument
+## 📥 Input argument
 
 - s1, s2, ..., sN - a string, string array or cell of strings.
 
-## Output argument
+## 📤 Output argument
 
 - res - a string, string array or cell of strings.
 
-## Description
+## 📄 Description
 
-  <p><b>strcat</b> concatenate strings horizontally.</p>
-  <p>If all inputs are character arrays, then <b>res</b> is a character array.</p>
-  <p>If any input is a string array, then the <b>res</b> is a string array.</p>
-  <p>If any input is a cell array, and none are string arrays, then <b>res</b> is a cell array of character vectors.</p>
-  <p>For cell and string array inputs, <b>strcat</b> does not remove trailing white space.</p>
-  <p>For character array inputs, <b>strcat</b> removes trailing ASCII white-space characters.</p>
+<b>strcat</b> concatenate strings horizontally.
 
-## Example
+If all inputs are character arrays, then <b>res</b> is a character array.
+
+If any input is a string array, then the <b>res</b> is a string array.
+
+If any input is a cell array, and none are string arrays, then <b>res</b> is a cell array of character vectors.
+
+For cell and string array inputs, <b>strcat</b> does not remove trailing white space.
+
+For character array inputs, <b>strcat</b> removes trailing ASCII white-space characters.
+
+## 💡 Example
 
 ```matlab
 strcat("Nelson", 'nelSon')
@@ -32,16 +37,16 @@ B = {'jkl','mn'};
 C = strcat(A, B)
 ```
 
-## See also
+## 🔗 See also
 
-[append](append.md), [join](join.md).
+[append](../string/append.md), [join](../string/join.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

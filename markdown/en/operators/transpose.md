@@ -2,24 +2,24 @@
 
 Returns vector or matrix transpose: .' operator.
 
-## Syntax
+## 📝 Syntax
 
 - C= transpose(A)
 - C = A .'
 
-## Input argument
+## 📥 Input argument
 
 - A - a variable
 
-## Output argument
+## 📤 Output argument
 
 - C - result: transpose of A.
 
-## Description
+## 📄 Description
 
-  <p><b>C = transpose(A)</b> returns the transpose of A.</p>
+<b>C = transpose(A)</b> returns the transpose of A.
 
-## Examples
+## 💡 Examples
 
 ```matlab
 A = 3
@@ -32,20 +32,20 @@ B = A.'
 ```
 
 ```matlab
-A = sparse(eye(3, 4) * i)
+ A = sparse(eye(3, 4) * i)
 B = A.'
 ```
 
-## See also
+## 🔗 See also
 
-[ctranspose](ctranspose.md).
+[ctranspose](../operators/ctranspose.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

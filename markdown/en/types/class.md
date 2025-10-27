@@ -2,43 +2,59 @@
 
 Return classname of object or creates a named object.
 
-## Syntax
+## 📝 Syntax
 
 - name = class(var)
 - obj = class(st, strname)
 
-## Input argument
+## 📥 Input argument
 
 - var - a variable
 - st - a struct
 - strname - a string: classname desired
 
-## Output argument
+## 📤 Output argument
 
 - name - a string
 - obj - an object of type 'strname' based on struct 'st'
 
-## Description
+## 📄 Description
 
-  <p><b>name = class(var)</b> returns the class of var variable.</p>
-  <p>Standard classes are:</p>
-  <p>'cell'</p>
-  <p>'struct'</p>
-  <p>'single'</p>
-  <p>'double'</p>
-  <p>'logical'</p>
-  <p>'char'</p>
-  <p>'int8'</p>
-  <p>'int16'</p>
-  <p>'int32'</p>
-  <p>'int64'</p>
-  <p>'uint8'</p>
-  <p>'uint16'</p>
-  <p>'uint32'</p>
-  <p>'uint64'</p>
-  <p>'function_handle'</p>
+<b>name = class(var)</b> returns the class of var variable.
 
-## Examples
+Standard classes are:
+
+'cell'
+
+'struct'
+
+'single'
+
+'double'
+
+'logical'
+
+'char'
+
+'int8'
+
+'int16'
+
+'int32'
+
+'int64'
+
+'uint8'
+
+'uint16'
+
+'uint32'
+
+'uint64'
+
+'function_handle'
+
+## 💡 Examples
 
 ```matlab
 A = 3;
@@ -56,16 +72,16 @@ c = complexObj(3,4);
 class(c)
 ```
 
-## See also
+## 🔗 See also
 
-[isa](isa.md), [isdouble](isdouble.html), [isfloat](isfloat.md), [ischar](ischar.md), [isstruct](isstruct.md), [iscell](iscell.md).
+[isa](../types/isa.md), [isdouble](../integer/isdouble.md), [isfloat](../types/isfloat.md), [ischar](../types/ischar.md), [isstruct](../types/isstruct.md), [iscell](../types/iscell.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

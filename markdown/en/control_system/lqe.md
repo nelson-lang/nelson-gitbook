@@ -2,12 +2,12 @@
 
 Kalman estimator design for continuous-time systems.
 
-## Syntax
+## 📝 Syntax
 
 - [L, P, E] = lqe(A, G, C, Q, R, N)
 - [L, P, E] = lqe(A, G, C, Q, R)
 
-## Input argument
+## 📥 Input argument
 
 - A - State matrix: n x n matrix.
 - G - Defines a matrix linking the process noise to the states.
@@ -16,17 +16,17 @@ Kalman estimator design for continuous-time systems.
 - R - Input-cost weighted matrix
 - N - Optional cross term matrix: 0 by default.
 
-## Output argument
+## 📤 Output argument
 
 - L - Kalman gain matrix.
 - P - Solution of the Discrete Algebraic Riccati Equation.
 - E - Closed-loop pole locations
 
-## Description
+## 📄 Description
 
-  <p>The function computes the optimal steady-state feedback gain matrix, denoted as <b>L</b>, minimizing a quadratic cost function for a linear discrete state-space system model.</p>
+The function computes the optimal steady-state feedback gain matrix, denoted as <b>L</b>, minimizing a quadratic cost function for a linear discrete state-space system model.
 
-## Example
+## 💡 Example
 
 ```matlab
 c = 1;
@@ -41,16 +41,16 @@ R = 0.02;
 [l, p, e] = lqe(A, G, C, Q, R)
 ```
 
-## See also
+## 🔗 See also
 
-[lqr](lqr.md).
+[lqr](../control_system/lqr.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

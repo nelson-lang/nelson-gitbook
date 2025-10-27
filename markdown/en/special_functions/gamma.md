@@ -2,39 +2,60 @@
 
 Gamma special function
 
-## Syntax
+## 📝 Syntax
 
 - R = gamma(M)
 
-## Input argument
+## 📥 Input argument
 
 - M - a real single or real double matrix.
 
-## Output argument
+## 📤 Output argument
 
 - R - result of gamma function.
 
-## Description
+## 📄 Description
 
-  <p><b>gamma</b> computes the gamma function.</p>
-  <p><b>gamma</b> is an extension of the <b>factorial</b> function.</p>
+<b>gamma</b> computes the gamma function.
 
-## Example
+The gamma function is defined by the integral:
+
+$$\Gamma(z) = \int_0^{\infty} t^{z-1} e^{-t} \, dt$$
+
+for
+
+$$\text{Re}(z) > 0$$
+
+The gamma function extends the factorial function to real and complex numbers:
+
+$$\Gamma(n) = (n-1)!$$
+
+for positive integers
+
+$$n$$
+
+Key properties include:
+
+- $$\Gamma(z+1) = z\Gamma(z)$$
+  (recurrence relation)
+- $$\Gamma(1/2) = \sqrt{\pi}$$
+
+## 💡 Example
 
 ```matlab
 R = gamma([-pi:0.1:pi])
 ```
 
-## See also
+## 🔗 See also
 
-[gammaln](gammaln.md), [factorial](../elementary_functions/factorial.md).
+[gammaln](../special_functions/gammaln.md), [factorial](../elementary_functions/factorial.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

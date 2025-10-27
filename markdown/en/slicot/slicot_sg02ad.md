@@ -2,11 +2,11 @@
 
 Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.
 
-## Syntax
+## 📝 Syntax
 
 - [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 
-## Input argument
+## 📥 Input argument
 
 - DICO - Specifies the type of Riccati equation to be solved as follows: = 'C': Equation (1), continuous-time case; = 'D': Equation (2), discrete-time case.
 - JOBB - Specifies whether or not the matrix G is given, instead of the matrices B and R, as follows: = 'B': B and R are given; = 'G': G is given.
@@ -25,7 +25,7 @@ Solution of continuous- or discrete-time algebraic Riccati equations for descrip
 - L - If JOBL = 'N' and JOBB = 'B', the leading N-by-M part of this array must contain the cross weighting matrix L. If JOBB = 'B' and SCAL = 'G', then L is modified internally, but is restored on exit.
 - TOL - The tolerance to be used to test for near singularity of the original matrix pencil, specifically of the triangular M-by-M factor obtained during the reduction process.
 
-## Output argument
+## 📤 Output argument
 
 - RCONDU - If N > 0 and INFO = 0 or INFO = 7, an estimate of the reciprocal of the condition number (in the 1-norm) of the N-th order system of algebraic equations from which the solution matrix X is obtained.
 - X - If INFO = 0, the leading N-by-N part of this array contains the solution matrix X of the problem.
@@ -38,19 +38,19 @@ Solution of continuous- or discrete-time algebraic Riccati equations for descrip
 - IWARN - = 0: no warning; = 1: the computed solution may be inaccurate due to poor scaling or eigenvalues too close to the boundary of the stability domain (the imaginary axis, if DICO = 'C', or the unit circle, if DICO = 'D').
 - INFO - = 0: successful exit; = 1: if the computed extended matrix pencil is singular, possibly due to rounding errors; = 2: if the QZ algorithm failed; = 3: if reordering of the generalized eigenvalues failed; = 4: if after reordering, roundoff changed values of some complex eigenvalues so that leading eigenvalues in the generalized Schur form no longer satisfy the stability condition; this could also be caused due to scaling; = 5: if the computed dimension of the solution does not equal N; = 6: if the spectrum is too close to the boundary of the stability domain; = 7: if a singular matrix was encountered during the computation of the solution matrix X.
 
-## Description
+## 📄 Description
 
-  <p> To solve for X either the continuous-time algebraic Riccatiequation or the discrete-time algebraic Riccati equation</p>
+To solve for X either the continuous-time algebraic Riccatiequation or the discrete-time algebraic Riccati equation
 
-Used function(s)
+## Used function(s)
 
 SG02AD
 
-Bibliography
+## 📚 Bibliography
 
 http://slicot.org/objects/software/shared/doc/SG02AD.html
 
-## Example
+## 💡 Example
 
 ```matlab
 N = 2;
@@ -81,12 +81,12 @@ L = zeros(N, N);
 [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 ```
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 SLICOT Documentation

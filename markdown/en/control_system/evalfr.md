@@ -2,24 +2,24 @@
 
 Evaluate frequency response at given frequency.
 
-## Syntax
+## 📝 Syntax
 
 - frsp = evalfr(sys, f)
 
-## Input argument
+## 📥 Input argument
 
 - sys - LTI model
 - f - single frequency
 
-## Output argument
+## 📤 Output argument
 
 - frsp - frequency response
 
-## Description
+## 📄 Description
 
-  <p>The function <b>evalfr(sys, f)</b> computes the value of the transfer function for a given system model represented by <b>sys</b> at the complex number <b>f</b>.</p>
+The function <b>evalfr(sys, f)</b> computes the value of the transfer function for a given system model represented by <b>sys</b> at the complex number <b>f</b>.
 
-## Example
+## 💡 Example
 
 ```matlab
 numerator = {[2, 0], [1, 3]};
@@ -29,16 +29,16 @@ z = 1 + j;
 frsp = evalfr(sys, z)
 ```
 
-## See also
+## 🔗 See also
 
-[bode](bode.md), [freqresp](freqresp.md).
+[bode](../control_system/bode.md), [freqresp](../control_system/freqresp.md).
 
-## History
+## 🕔 History
 
-| Version | Description     |
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET

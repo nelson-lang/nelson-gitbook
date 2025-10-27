@@ -2,32 +2,28 @@
 
 Nonblocking test for a message.
 
-## Syntax
+## 📝 Syntax
 
 - [flag, stat, info] = MPI_Iprobe(rank, tag)
 - [flag, stat, info] = MPI_Iprobe(rank, tag, comm)
 
-## Input argument
+## 📥 Input argument
 
 - rank - an integer value: source rank.
 - tag - an integer value: message tag.
 - comm - a MPI_Comm object.
 
-## Output argument
+## 📤 Output argument
 
 - flag - an integer value: 1 if the message is ready to be received, 0 if it is not.
 - stat - a struct: source rank, message tag, error, count, cancelled for the accepted message.
 - info - an integer value: 0 (MPI_SUCCESS) other value is an error.
 
-## Description
+## 📄 Description
 
-  <p>Nonblocking test for a message.</p>
+Nonblocking test for a message.
 
-## See also
-
-[MPI_Probe](MPI_Probe.md).
-
-## Example
+## 💡 Example
 
 mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Iprobe.m'], 4)
 
@@ -44,14 +40,19 @@ world_size = MPI_Comm_size();
 if MPI_Initialized()
   MPI_Finalize();
 end
+
 ```
 
-## History
+## 🔗 See also
 
-| Version | Description     |
+[MPI_Probe](../mpi/MPI_Probe.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
-## Author
+## 👤 Author
 
 Allan CORNET
