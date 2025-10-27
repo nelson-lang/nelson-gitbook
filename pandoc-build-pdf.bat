@@ -2,7 +2,8 @@
 REM Change to the directory of this script
 cd /d %~dp0
 
-set PATH=%PATH%;C:\WindowsTools\pandoc-3.8.2;C:\WindowsTools\wkhtmltopdf\bin;C:\WindowsTools\Inkscape\bin;
+REM Tools should already be in PATH via Chocolatey, but add common locations as backup
+set PATH=%PATH%;C:\WindowsTools\pandoc-3.8.2;C:\WindowsTools\wkhtmltopdf\bin;C:\WindowsTools\Inkscape\bin;C:\ProgramData\chocolatey\lib\pandoc\tools;C:\ProgramData\chocolatey\lib\wkhtmltopdf\tools\bin;
 
 echo Current directory: %cd%
 
@@ -30,7 +31,7 @@ goto :eof
 REM %1 is language code (en or fr)
 echo ----------------------------------------------------
 echo Building manual for language: %~1
-set "MARKDOWN_DIR=D:\\Developpements\\Github\\nelson-lang\\nelson-gitbook\\markdown\\%~1"
+set "MARKDOWN_DIR=%SCRIPT_DIR%markdown\\%~1"
 set "OUTPUT=nelson-%~1.pdf"
 set "FILELIST=%SCRIPT_DIR%all_%~1_files.txt"
 
