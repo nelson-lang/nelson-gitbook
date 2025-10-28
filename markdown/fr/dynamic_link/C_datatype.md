@@ -7,7 +7,7 @@
 Ce tableau montre les types Nelson et leurs équivalents en C.
 | Type Nelson | Type C |
 | --- | --- |
-| logical (scalaire) | uint8_t |
+| logical (scalaire) | uint8*t |
 | uint8 (scalaire) | uint8_t |
 | int8 (scalaire) | int8_t |
 | uint16 (scalaire) | uint16_t |
@@ -18,22 +18,22 @@ Ce tableau montre les types Nelson et leurs équivalents en C.
 | int64 (scalaire) | int64_t |
 | float, single (scalaire) | float |
 | double (scalaire) | double |
-| cstring (chaîne utf-8) | char _ |
-| wstring (chaîne unicode) | wchar_t _ |
+| cstring (chaîne utf-8) | char * |
+| wstring (chaîne unicode) | wchar*t * |
 | void | void |
-| logicalPtr (logical vector or matrix) | uint8_t _ |
-| uint8Ptr (uint8 vector or matrix) | uint8_t _ |
-| int8Ptr (int8 vector or matrix) | int8_t _ |
-| uint16Ptr (uint16 vector or matrix) | uint16_t _ |
-| int16Ptr (int16 vector or matrix) | int16_t _ |
-| uint32Ptr (uint32 vector or matrix) | uint32_t _ |
-| int32Ptr (int32 vector or matrix) | int32_t _ |
-| int64Ptr (uint64 vector or matrix) | int64_t _ |
-| uint64Ptr (uint64 vector or matrix) | uint64_t _ |
+| logicalPtr (logical vector or matrix) | uint8*t * |
+| uint8Ptr (uint8 vector or matrix) | uint8*t * |
+| int8Ptr (int8 vector or matrix) | int8*t * |
+| uint16Ptr (uint16 vector or matrix) | uint16*t * |
+| int16Ptr (int16 vector or matrix) | int16*t * |
+| uint32Ptr (uint32 vector or matrix) | uint32*t * |
+| int32Ptr (int32 vector or matrix) | int32*t * |
+| int64Ptr (uint64 vector or matrix) | int64*t * |
+| uint64Ptr (uint64 vector or matrix) | uint64*t * |
 | floatPtr, singlePtr (single vector or matrix) | float _ |
 | doublePtr (double vector or matrix) | double _ |
 | voidPtr | void _ |
-| libpointer | void _, uint8_t _, int8_t _, int16_t _, uint16_t \*, ... |
+| libpointer | void _, uint8*t *, int8*t *, int16*t *, uint16_t \*, ... |
 
 ## 🔗 Voir aussi
 
