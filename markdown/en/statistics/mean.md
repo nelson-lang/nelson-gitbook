@@ -28,15 +28,12 @@ Mean of array elements.
 <b>R = mean(M)</b> returns the mean (average) of the array elements of M.
 
 The arithmetic mean of a set of values
-
 $$x_1, x_2, \ldots, x_n$$
 
 is defined as:
-
 $$\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i$$
 
 where
-
 $$n$$
 
 is the number of elements.

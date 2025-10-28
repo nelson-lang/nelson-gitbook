@@ -44,12 +44,14 @@ Supported interpolation methods include
 - 'box': Box-shaped kernel
 - 'lanczos2': Lanczos-2 kernel
 - 'lanczos3': Lanczos-3 kernel
-  Supported Pairs Name, Value:
+
+Supported Pairs Name, Value:
 
 - 'Antialiasing': true/false (default: true)
 - 'Colormap': 'optimized' (default) or 'original' (indexed image only)
 - 'Dither': true (default) or false (indexed image only)
-  Limitations:
+
+Limitations:
 
 - Input must be nonsparse and real for numeric images.
 - For large scale factors, output image size may be significantly larger than input.

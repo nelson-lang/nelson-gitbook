@@ -7,23 +7,22 @@ Managing Data between Julia and Nelson.
 <b>Managing data returned by Julia functions:</b>
 
 This documentation explains how data is managed and converted between Julia and Nelson. It covers scalar, vector, and matrix conversions, examples of usage, and related resources.
-
 | Julia return type, as shown in Julia | Corresponding Nelson type (scalar) |
-| ------------------------------------ | ---------------------------------- |
-| Bool                                 | logical                            |
-| Complex{Float64}                     | double (complex)                   |
-| Complex{Float32}                     | single (complex)                   |
-| Float64                              | double                             |
-| Float32                              | single                             |
-| Int8                                 | int8                               |
-| Int16                                | int16                              |
-| Int32                                | int32                              |
-| Int64                                | int64                              |
-| UInt8                                | uint8                              |
-| UInt16                               | uint16                             |
-| UInt32                               | uint32                             |
-| UInt64                               | uint64                             |
-| String                               | string                             |
+| --- | --- |
+| Bool | logical |
+| Complex{Float64} | double (complex) |
+| Complex{Float32} | single (complex) |
+| Float64 | double |
+| Float32 | single |
+| Int8 | int8 |
+| Int16 | int16 |
+| Int32 | int32 |
+| Int64 | int64 |
+| UInt8 | uint8 |
+| UInt16 | uint16 |
+| UInt32 | uint32 |
+| UInt64 | uint64 |
+| String | string |
 
 Vector and Matrix of Nelson type returned as matrix in Julia.
 

@@ -3,22 +3,6 @@ name: CI
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-      - run: docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook init
-      - run: |
-          cd /home/runner/work/nelson-gitbook/nelson-gitbook
-          docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook pdf ./markdown
-      - run: mkdir /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
-      - run: cp  /home/runner/work/nelson-gitbook/nelson-gitbook/*.pdf /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
-      - uses: actions/upload-artifact@v4
-        with:
-          name: nelson-gitbook-github-action-artifacts
-          path: artifacts/
-
   build-windows:
     runs-on: windows-latest
 
@@ -28,16 +12,16 @@ jobs:
       - name: Install tools via Chocolatey
         run: |
           Write-Host "Installing tools via Chocolatey..."
-          
+
           # Install Pandoc
           choco install pandoc -y
-          
+
           # Install wkhtmltopdf
           choco install wkhtmltopdf -y
-          
+
           # Install Inkscape
           choco install inkscape -y
-          
+
           Write-Host "All tools installed successfully via Chocolatey"
         shell: powershell
 
@@ -61,6 +45,5 @@ jobs:
       - name: Upload PDF artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: nelson-pdf-windows
+          name: nelson-pdf
           path: "*.pdf"
-

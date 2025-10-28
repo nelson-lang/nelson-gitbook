@@ -16,22 +16,21 @@ Writes data to a string.
 Write data in text form to a string.
 
 The <b>format</b> follows C fprintf syntax.
-
-| Value type            | format | comment                                          |
-| --------------------- | ------ | ------------------------------------------------ |
-| Integer               | %i     | base 10                                          |
-| Integer signed        | %d     | base 10                                          |
-| Integer unsigned      | %u     | base 10                                          |
-| Integer               | %o     | Octal (base 8)                                   |
-| Integer               | %x     | Hexadecimal (lowercase)                          |
-| Integer               | %X     | Hexadecimal (uppercase)                          |
-| Floating-point number | %f     | Fixed-point notation                             |
-| Floating-point number | %e     | Exponential notation (lowercase)                 |
-| Floating-point number | %E     | Exponential notation (uppercase)                 |
-| Floating-point number | %g     | Exponential notation (compact format, lowercase) |
-| Floating-point number | %G     | Exponential notation (compact format, uppercase) |
-| Character             | %c     | Single character                                 |
-| String                | %s     | Character vector.                                |
+| Value type | format | comment |
+| --- | --- | --- |
+| Integer | %i | base 10 |
+| Integer signed | %d | base 10 |
+| Integer unsigned | %u | base 10 |
+| Integer | %o | Octal (base 8) |
+| Integer | %x | Hexadecimal (lowercase) |
+| Integer | %X | Hexadecimal (uppercase) |
+| Floating-point number | %f | Fixed-point notation |
+| Floating-point number | %e | Exponential notation (lowercase) |
+| Floating-point number | %E | Exponential notation (uppercase) |
+| Floating-point number | %g | Exponential notation (compact format, lowercase) |
+| Floating-point number | %G | Exponential notation (compact format, uppercase) |
+| Character | %c | Single character |
+| String | %s | Character vector. |
 
 To display a percent sign, you need to use a double percent sign (%%) in the format string.
 

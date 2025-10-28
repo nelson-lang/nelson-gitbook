@@ -21,31 +21,24 @@ Produit scalaire.
 <b>R = dot(A, B)</b> retourne le produit scalaire de <b>A</b> et <b>B</b>.
 
 Pour les vecteurs réels
-
 $$\mathbf{a}$$
 
 et
-
 $$\mathbf{b}$$
 
 de longueur
-
 $$n$$
 
 :
-
 $$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = a_1 b_1 + a_2 b_2 + \cdots + a_n b_n$$
 
 Pour les vecteurs complexes, le produit scalaire est :
-
 $$\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} \overline{a_i} b_i$$
 
 où
-
 $$\overline{a_i}$$
 
 dénote le conjugué complexe de
-
 $$a_i$$
 
 ## 📚 Bibliographie

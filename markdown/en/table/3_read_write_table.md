@@ -9,14 +9,16 @@ Text files (.csv, .txt, etc.):
 - writetable() exports tables to delimited text files with customizable separators
 - readtable() imports tables from delimited text files with automatic format detection
 - Text files preserve variable names and data in human-readable format
-  Binary file:
+
+Binary file:
 
 - Nelson HDF5 format (.nh5):
 
 - Efficient binary storage using HDF5 format
 - Preserves all table metadata and data types
 - Use save -nh5 and load commands
-  Binary format is recommended for preserving exact numeric precision and working with large datasets.
+
+Binary format is recommended for preserving exact numeric precision and working with large datasets.
 
 ## 💡 Examples
 

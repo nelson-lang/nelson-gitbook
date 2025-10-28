@@ -5,12 +5,11 @@ Managing Data between Python and Nelson.
 ## 📄 Description
 
 <b>Managing data returned by Python functions:</b>
-
 | Python return type, as shown in Python | Corresponding Nelson type (scalar) |
-| -------------------------------------- | ---------------------------------- |
-| bool                                   | logical                            |
-| complex                                | double (complex)                   |
-| float                                  | double                             |
+| --- | --- |
+| bool | logical |
+| complex | double (complex) |
+| float | double |
 
 <b>Convert Python types to Nelson type explicitly:</b>
 

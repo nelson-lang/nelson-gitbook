@@ -19,7 +19,6 @@ Computes the cosine in radians for each element of x.
 <b>cos</b> computes the cosine in radians for each element of <b>x</b>.
 
 The cosine function is defined as:
-
 $$\cos(x) = \frac{e^{ix} + e^{-ix}}{2}$$
 
 For real arguments, it represents the x-coordinate on the unit circle.

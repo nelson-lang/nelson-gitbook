@@ -30,23 +30,18 @@ Eigenvalues and eigenvectors.
 <b>eig(A)</b> returns the eigenvalues and eigenvectors.
 
 For a square matrix <b>A</b>, eigenvalues
-
 $$\lambda$$
 
 and eigenvectors
-
 $$\mathbf{v}$$
 
 satisfy:
-
 $$A\mathbf{v} = \lambda\mathbf{v}$$
 
 The characteristic equation is:
-
 $$\det(A - \lambda I) = 0$$
 
 <b>eig(A, B)</b> returns the generalized eigenvalues and eigenvectors where:
-
 $$A\mathbf{v} = \lambda B\mathbf{v}$$
 
 ## 📚 Bibliography

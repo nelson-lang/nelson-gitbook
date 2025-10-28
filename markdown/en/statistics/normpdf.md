@@ -23,25 +23,20 @@ Normal probability density function
 <b>normpdf</b> computes the probability density function of the normal (Gaussian) distribution.
 
 The general formula for the normal distribution PDF is:
-
 $$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 where
-
 $$\mu$$
 
 is the mean and
-
 $$\sigma^2$$
 
 is the variance.
 
 For the standard normal distribution (
-
 $$\mu = 0, \sigma = 1$$
 
 ):
-
 $$\phi(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$$
 
 ## 📚 Bibliography

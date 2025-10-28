@@ -19,19 +19,15 @@ Natural logarithm.
 <b>log</b> calcule le logarithme naturel.
 
 Pour les nombres réels positifs :
-
 $$\ln(x)$$
 
 Pour les nombres complexes <b>z</b> :
-
 $$\ln(z) = \ln|z| + i\arg(z)$$
 
 où
-
 $$|z|$$
 
 est le module et
-
 $$\arg(z)$$
 
 est l'argument de <b>z</b>.

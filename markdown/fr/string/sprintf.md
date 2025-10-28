@@ -16,22 +16,21 @@
 Écrit des données sous forme de texte dans une chaîne.
 
 Le <b>format</b> suit la syntaxe C de fprintf.
-
-| Type de valeur             | Format | Remarque                                            |
-| -------------------------- | ------ | --------------------------------------------------- |
-| Entier                     | %i     | base 10                                             |
-| Entier signé               | %d     | base 10                                             |
-| Entier non signé           | %u     | base 10                                             |
-| Entier                     | %o     | Octal (base 8)                                      |
-| Entier                     | %x     | Hexadécimal (minuscules)                            |
-| Entier                     | %X     | Hexadécimal (MAJUSCULES)                            |
-| Nombre à virgule flottante | %f     | Notation décimale fixe                              |
-| Nombre à virgule flottante | %e     | Notation exponentielle (minuscules)                 |
-| Nombre à virgule flottante | %E     | Notation exponentielle (MAJUSCULES)                 |
-| Nombre à virgule flottante | %g     | Notation exponentielle (format compact, minuscules) |
-| Nombre à virgule flottante | %G     | Notation exponentielle (format compact, MAJUSCULES) |
-| Caractère                  | %c     | Caractère unique                                    |
-| Chaîne                     | %s     | Vecteur de caractères.                              |
+| Type de valeur | Format | Remarque |
+| --- | --- | --- |
+| Entier | %i | base 10 |
+| Entier signé | %d | base 10 |
+| Entier non signé | %u | base 10 |
+| Entier | %o | Octal (base 8) |
+| Entier | %x | Hexadécimal (minuscules) |
+| Entier | %X | Hexadécimal (MAJUSCULES) |
+| Nombre à virgule flottante | %f | Notation décimale fixe |
+| Nombre à virgule flottante | %e | Notation exponentielle (minuscules) |
+| Nombre à virgule flottante | %E | Notation exponentielle (MAJUSCULES) |
+| Nombre à virgule flottante | %g | Notation exponentielle (format compact, minuscules) |
+| Nombre à virgule flottante | %G | Notation exponentielle (format compact, MAJUSCULES) |
+| Caractère | %c | Caractère unique |
+| Chaîne | %s | Vecteur de caractères. |
 
 Pour afficher un signe pourcentage, utilisez un double pourcentage (%%) dans la chaîne de format.
 

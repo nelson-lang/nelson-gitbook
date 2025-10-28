@@ -39,7 +39,7 @@ Runs tests
 
 ## 📄 Description
 
-<b>test*run</b> function searchs 'test*\_.m', 'bug\_\_.m', and 'bench\_\*.m' files, executes them, and displays a report about success or failures.
+<b>test*run</b> function searchs 'test*_.m', 'bug\__.m', and 'bench\_\*.m' files, executes them, and displays a report about success or failures.
 
 Each test or bench is executed in a separated process using the 'unix' command.
 

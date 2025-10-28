@@ -1,272 +1,247 @@
-<!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
-    <head>
-        <!-- Book generated using mdBook -->
-        <meta charset="UTF-8">
-        <title>overloading - Nelson</title>
-
-
-        <!-- Custom HTML head -->
-
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
-
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
-
-        <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
-
-        <!-- Custom theme stylesheets -->
-
-
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
-        <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
-    </head>
-    <body>
-    <div id="body-container">
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>overloading</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
                 }
-
-                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
-                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
                 }
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            const html = document.documentElement;
-            html.classList.remove('light')
-            html.classList.add(theme);
-            html.classList.add("js");
-        </script>
-
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
-
-        <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
-            }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
-        </script>
-
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <!-- populated by js -->
-            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
-            <noscript>
-                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
-            </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
-        </nav>
-
-        <div id="page-wrapper" class="page-wrapper">
-
-            <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
-                    <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
-                        </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
-                        </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
-                        </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-
-                    <h1 class="menu-title">Nelson</h1>
-
-                    <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
-                    </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
-                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
-                    });
-                </script>
-
-                <div id="content" class="content">
-                    <main>
-                        <h1 id="overloading"><a class="header" href="#overloading">overloading</a></h1>
-<p>Customizing Operators and Functions</p>
-<h2 id="-description"><a class="header" href="#-description">📄 Description</a></h2>
-<p>In various scenarios, you may find it necessary to modify the behavior of Nelson's operators and functions when they operate on objects or basic types.</p>
-<p>This customization can be achieved by overloading the relevant functions, allowing them to handle diverse types and quantities of input arguments and execute the appropriate operation for the highest-priority object.</p>
-<p>Overloading Operators:</p>
-<p>Each built-in operator corresponds to a specific function name (e.g., the <b>-</b> operator is associated with the minus.m function).</p>
-<p>You can overload any operator by creating an M-file with the appropriate name within the class directory.</p>
-<p>For instance, if either <b>A</b> or <b>B</b> is an object of type <b>classname</b>, the expression <b>A - B</b> triggers a call to a function <b>@classname/minus.m</b>, provided it exists.</p>
-<p>When <b>A</b> and <b>B</b> belong to different classes, Nelson employs precedence rules to determine which method to apply.</p>
-<p>The table below provides a list of function names associated with most of the Nelson operators:</p>
-<p>| Description                 | Operator              | Function           |
-| --------------------------- | --------------------- | ------------------ | -------- |
-| Binary addition             | a + b                 | plus(a, b)         |
-| Binary subtraction          | a - b                 | minus(a, b)        |
-| Unary minus                 | -a                    | uminus(a)          |
-| Unary plus                  | +a                    | uplus(a)           |
-| Element-wise multiplication | a .* b               | times(a, b)        |
-| Matrix multiplication       | a * b                | mtimes(a, b)       |
-| Right element-wise division | a ./ b                | rdivide(a, b)      |
-| Left element-wise division  | a .\ b                | ldivide(a, b)      |
-| Matrix right division       | a / b                 | mrdivide(a, b)     |
-| Matrix left division        | a \ b                 | mldivide(a, b)     |
-| Element-wise power          | a .^ b                | power(a, b)        |
-| Matrix power                | a ^ b                 | mpower(a, b)       |
-| Less than                   | a &lt; b                 | lt(a, b)           |
-| Greater than                | a &gt; b                 | gt(a, b)           |
-| Less than or equal to       | a &lt;= b                | le(a, b)           |
-| Greater than or equal to    | a &gt;= b                | ge(a, b)           |
-| Not equal to                | a ~= b                | ne(a, b)           |
-| Equality                    | a == b                | eq(a, b)           |
-| Logical AND                 | a &amp; b                 | and(a, b)          |
-| Logical OR                  | a                     | b                  | or(a, b) |
-| Logical NOT                 | ~a                    | not(a)             |
-| Colon operator              | a:d:b                 | colon(a, d, b)     |
-| Complex conjugate transpose | a'                    | ctranspose(a)      |
-| Matrix transpose            | a.'                   | transpose(a)       |
-| Display method              | command window output | display(a)         |
-| Horizontal concatenation    | [a, b]                | horzcat(a, b, ...) |
-| Vertical concatenation      | [a; b]                | vertcat(a, b, ...) |
-| Subscripted reference       | a(s1, s2, ... , sn)   | subsref(a, s)      |
-| Subscripted assignment      | a(s1, ... , sn) = b   | subsasgn(a, s, b)  |
-| Subscript index             | b(a)                  | subsindex(a)       |</p>
-<h2 id="-example"><a class="header" href="#-example">💡 Example</a></h2>
-<p>Overload minus operator with double</p>
-<pre><code class="language-matlab">% save in @double directory, as minus.m
+            </style>
+</head>
+<body>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">overloading</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Customizing Operators and Functions</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+        <p>In various scenarios, you may find it necessary to modify the behavior of Nelson's operators and functions when they operate on objects or basic types.</p>
+        <p>This customization can be achieved by overloading the relevant functions, allowing them to handle diverse types and quantities of input arguments and execute the appropriate operation for the highest-priority object.</p>
+        <p></p>
+        <p>Overloading Operators:</p>
+        <p></p>
+        <p>Each built-in operator corresponds to a specific function name (e.g., the <b>-</b> operator is associated with the minus.m function).</p>
+        <p>You can overload any operator by creating an M-file with the appropriate name within the class directory.</p>
+        <p>For instance, if either <b>A</b> or <b>B</b> is an object of type <b>classname</b>, the expression <b>A - B</b> triggers a call to a function <b>@classname/minus.m</b>, provided it exists.</p>
+        <p>When <b>A</b> and <b>B</b> belong to different classes, Nelson employs precedence rules to determine which method to apply.</p>
+        <p></p>
+        <p>The table below provides a list of function names associated with most of the Nelson operators:</p>
+        <p></p>
+        <table style="width:100%">
+            <tr>
+                <th>Description</th>
+                <th>Operator</th>
+                <th>Function</th>
+            </tr>
+            <tr>
+                <td>Binary addition</td>
+                <td>a + b</td>
+                <td>plus(a, b)</td>
+            </tr>
+            <tr>
+                <td>Binary subtraction</td>
+                <td>a - b</td>
+                <td>minus(a, b)</td>
+            </tr>
+            <tr>
+                <td>Unary minus</td>
+                <td>-a</td>
+                <td>uminus(a)</td>
+            </tr>
+            <tr>
+                <td>Unary plus</td>
+                <td>+a</td>
+                <td>uplus(a)</td>
+            </tr>
+            <tr>
+                <td>Element-wise multiplication</td>
+                <td>a .* b</td>
+                <td>times(a, b)</td>
+            </tr>
+            <tr>
+                <td>Matrix multiplication</td>
+                <td>a * b</td>
+                <td>mtimes(a, b)</td>
+            </tr>
+            <tr>
+                <td>Right element-wise division</td>
+                <td>a ./ b</td>
+                <td>rdivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Left element-wise division</td>
+                <td>a .\ b</td>
+                <td>ldivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Matrix right division</td>
+                <td>a / b</td>
+                <td>mrdivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Matrix left division</td>
+                <td>a \ b</td>
+                <td>mldivide(a, b)</td>
+            </tr>
+            <tr>
+                <td>Element-wise power</td>
+                <td>a .^ b</td>
+                <td>power(a, b)</td>
+            </tr>
+            <tr>
+                <td>Matrix power</td>
+                <td>a ^ b</td>
+                <td>mpower(a, b)</td>
+            </tr>
+            <tr>
+                <td>Less than</td>
+                <td>a &lt; b</td>
+                <td>lt(a, b)</td>
+            </tr>
+            <tr>
+                <td>Greater than</td>
+                <td>a &gt; b</td>
+                <td>gt(a, b)</td>
+            </tr>
+            <tr>
+                <td>Less than or equal to</td>
+                <td>a &lt;= b</td>
+                <td>le(a, b)</td>
+            </tr>
+            <tr>
+                <td>Greater than or equal to</td>
+                <td>a &gt;= b</td>
+                <td>ge(a, b)</td>
+            </tr>
+            <tr>
+                <td>Not equal to</td>
+                <td>a ~= b</td>
+                <td>ne(a, b)</td>
+            </tr>
+            <tr>
+                <td>Equality</td>
+                <td>a == b</td>
+                <td>eq(a, b)</td>
+            </tr>
+            <tr>
+                <td>Logical AND</td>
+                <td>a &amp; b</td>
+                <td>and(a, b)</td>
+            </tr>
+            <tr>
+                <td>Logical OR</td>
+                <td>a | b</td>
+                <td>or(a, b)</td>
+            </tr>
+            <tr>
+                <td>Logical NOT</td>
+                <td>~a</td>
+                <td>not(a)</td>
+            </tr>
+            <tr>
+                <td>Colon operator</td>
+                <td>a:d:b</td>
+                <td>colon(a, d, b)</td>
+            </tr>
+            <tr>
+                <td>Complex conjugate transpose</td>
+                <td>a'</td>
+                <td>ctranspose(a)</td>
+            </tr>
+            <tr>
+                <td>Matrix transpose</td>
+                <td>a.'</td>
+                <td>transpose(a)</td>
+            </tr>
+            <tr>
+                <td>Display method</td>
+                <td>command window output</td>
+                <td>display(a)</td>
+            </tr>
+            <tr>
+                <td>Horizontal concatenation</td>
+                <td>[a, b]</td>
+                <td>horzcat(a, b, ...)</td>
+            </tr>
+            <tr>
+                <td>Vertical concatenation</td>
+                <td>[a; b]</td>
+                <td>vertcat(a, b, ...)</td>
+            </tr>
+            <tr>
+                <td>Subscripted reference</td>
+                <td>a(s1, s2, ... , sn)</td>
+                <td>subsref(a, s)</td>
+            </tr>
+            <tr>
+                <td>Subscripted assignment</td>
+                <td>a(s1, ... , sn) = b</td>
+                <td>subsasgn(a, s, b)</td>
+            </tr>
+            <tr>
+                <td>Subscript index</td>
+                <td>b(a)</td>
+                <td>subsindex(a)</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Overload minus operator with double</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">% save in @double directory, as minus.m
 function r = minus(A, B)
   disp('minus was called')
   % to call minus builtin
   r = builtin('minus', A, B)
-end
-
-</code></pre>
-<h2 id="-see-also"><a class="header" href="#-see-also">🔗 See also</a></h2>
-<p><a href="../operators/plus.html">plus</a>, <a href="../operators/minus.html">minus</a>, <a href="../operators/uminus.html">uminus</a>, <a href="../operators/uplus.html">uplus</a>, <a href="../operators/times.html">times</a>, <a href="../operators/mtimes.html">mtimes</a>, <a href="../operators/rdivide.html">rdivide</a>, <a href="../operators/ldivide.html">ldivide</a>, <a href="../operators/mrdivide.html">mrdivide</a>, <a href="../operators/mldivide.html">mldivide</a>, <a href="../operators/power.html">power</a>, <a href="../operators/mpower.html">mpower</a>, <a href="../operators/lt.html">lt</a>, <a href="../operators/gt.html">gt</a>, <a href="../operators/le.html">le</a>, <a href="../operators/ge.html">ge</a>, <a href="../operators/ne.html">ne</a>, <a href="../operators/eq.html">eq</a>, <a href="../operators/and.html">and</a>, <a href="../operators/or.html">or</a>, <a href="../operators/not.html">not</a>, <a href="../operators/colon.html">colon</a>, <a href="../operators/ctranspose.html">ctranspose</a>, <a href="../operators/transpose.html">transpose</a>, <a href="../display_format/display.html">display</a>, <a href="../operators/horzcat.html">horzcat</a>, <a href="../operators/vertcat.html">vertcat</a>, <a href="../operators/subsref.html">subsref</a>, <a href="../operators/subsasgn.html">subsasgn</a>, <a href="../operators/subsindex.html">subsindex</a>.</p>
-<h2 id="-history"><a class="header" href="#-history">🕔 History</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Version</th><th>📄 Description</th></tr></thead><tbody>
-<tr><td>1.0.0</td><td>initial version</td></tr>
-</tbody></table>
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
-<h2 id="-author"><a class="header" href="#-author">👤 Author</a></h2>
-<p>Allan CORNET</p>
-
-                    </main>
-
-                    <nav class="nav-wrapper" aria-label="Page navigation">
-                        <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../overload/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-
-                            <a rel="next prefetch" href="../operators/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-
-                        <div style="clear: both"></div>
-                    </nav>
-                </div>
-            </div>
-
-            <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../overload/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-
-                    <a rel="next prefetch" href="../operators/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-            </nav>
-
-        </div>
-
-
-
-
-        <script>
-            window.playground_copyable = true;
-        </script>
-
-
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
-
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
-
-        <!-- Custom JS scripts -->
-        <script src="../theme/matlab.min.js"></script>
-
-
-    </div>
-    </body>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../operators/plus.html">plus</a><a class="see-also-link" href="../operators/minus.html">minus</a><a class="see-also-link" href="../operators/uminus.html">uminus</a><a class="see-also-link" href="../operators/uplus.html">uplus</a><a class="see-also-link" href="../operators/times.html">times</a><a class="see-also-link" href="../operators/mtimes.html">mtimes</a><a class="see-also-link" href="../operators/rdivide.html">rdivide</a><a class="see-also-link" href="../operators/ldivide.html">ldivide</a><a class="see-also-link" href="../operators/mrdivide.html">mrdivide</a><a class="see-also-link" href="../operators/mldivide.html">mldivide</a><a class="see-also-link" href="../operators/power.html">power</a><a class="see-also-link" href="../operators/mpower.html">mpower</a><a class="see-also-link" href="../operators/lt.html">lt</a><a class="see-also-link" href="../operators/gt.html">gt</a><a class="see-also-link" href="../operators/le.html">le</a><a class="see-also-link" href="../operators/ge.html">ge</a><a class="see-also-link" href="../operators/ne.html">ne</a><a class="see-also-link" href="../operators/eq.html">eq</a><a class="see-also-link" href="../operators/and.html">and</a><a class="see-also-link" href="../operators/or.html">or</a><a class="see-also-link" href="../operators/not.html">not</a><a class="see-also-link" href="../operators/colon.html">colon</a><a class="see-also-link" href="../operators/ctranspose.html">ctranspose</a><a class="see-also-link" href="../operators/transpose.html">transpose</a><a class="see-also-link" href="../display_format/display.html">display</a><a class="see-also-link" href="../operators/horzcat.html">horzcat</a><a class="see-also-link" href="../operators/vertcat.html">vertcat</a><a class="see-also-link" href="../operators/subsref.html">subsref</a><a class="see-also-link" href="../operators/subsasgn.html">subsasgn</a><a class="see-also-link" href="../operators/subsindex.html">subsindex</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:30px;">
+<div class="section-title">
+<span class="syntax-icon">👤</span>Author</div>
+<div>Allan CORNET</div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
 </html>

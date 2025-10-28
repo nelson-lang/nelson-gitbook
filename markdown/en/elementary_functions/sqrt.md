@@ -19,19 +19,15 @@ Square root.
 <b>sqrt</b> computes the square root.
 
 For real positive numbers:
-
 $$\sqrt{x}$$
 
 For complex numbers <b>z = x + iy</b>:
-
 $$\sqrt{z} = \sqrt{r} e^{i\phi/2}$$
 
 where
-
 $$r = |z| = \sqrt{x^2 + y^2}$$
 
 and
-
 $$\phi = \arg(z) = \text{atan2}(y, x)$$
 
 ## 💡 Example

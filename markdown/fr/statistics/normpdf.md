@@ -23,25 +23,20 @@ Densité de probabilité normale
 <b>normpdf</b> calcule la fonction de densité de probabilité de la loi normale (gaussienne).
 
 La formule générale pour la densité de la loi normale est :
-
 $$f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 où
-
 $$\mu$$
 
 est la moyenne et
-
 $$\sigma^2$$
 
 est la variance.
 
 Pour la loi normale centrée-réduite (
-
 $$\mu = 0, \sigma = 1$$
 
 ) :
-
 $$\phi(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$$
 
 ## 📚 Bibliographie

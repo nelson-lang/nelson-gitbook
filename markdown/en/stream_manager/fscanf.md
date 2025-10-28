@@ -23,22 +23,21 @@ Reads data from a file.
 Read data in text from the file specified by the file descriptor fid.
 
 characters encoding uses <b>fopen</b> parameter.
-
-| Value type            | format | comment                                          |
-| --------------------- | ------ | ------------------------------------------------ |
-| Integer               | %i     | base 10                                          |
-| Integer signed        | %d     | base 10                                          |
-| Integer unsigned      | %u     | base 10                                          |
-| Integer               | %o     | Octal (base 8)                                   |
-| Integer               | %x     | Hexadecimal (lowercase)                          |
-| Integer               | %X     | Hexadecimal (uppercase)                          |
-| Floating-point number | %f     | Fixed-point notation                             |
-| Floating-point number | %e     | Exponential notation (lowercase)                 |
-| Floating-point number | %E     | Exponential notation (uppercase)                 |
-| Floating-point number | %g     | Exponential notation (compact format, lowercase) |
-| Floating-point number | %G     | Exponential notation (compact format, uppercase) |
-| Character             | %c     | Single character                                 |
-| String                | %s     | Character vector.                                |
+| Value type | format | comment |
+| --- | --- | --- |
+| Integer | %i | base 10 |
+| Integer signed | %d | base 10 |
+| Integer unsigned | %u | base 10 |
+| Integer | %o | Octal (base 8) |
+| Integer | %x | Hexadecimal (lowercase) |
+| Integer | %X | Hexadecimal (uppercase) |
+| Floating-point number | %f | Fixed-point notation |
+| Floating-point number | %e | Exponential notation (lowercase) |
+| Floating-point number | %E | Exponential notation (uppercase) |
+| Floating-point number | %g | Exponential notation (compact format, lowercase) |
+| Floating-point number | %G | Exponential notation (compact format, uppercase) |
+| Character | %c | Single character |
+| String | %s | Character vector. |
 
 ## 💡 Example
 

@@ -30,7 +30,8 @@ Le t-digest est particulièrement utile pour :
 - Données en flux où les données arrivent en continu
 - Quantiles extrêmes précis (comme le 99e centile) même avec une mémoire limitée
 - Algorithmes en ligne où vous ne pouvez pas stocker toutes les données
-  Le facteur de compression (100 dans les exemples) contrôle le compromis entre précision et utilisation de la mémoire - des valeurs plus élevées donnent plus de précision mais utilisent plus de mémoire.
+
+Le facteur de compression (100 dans les exemples) contrôle le compromis entre précision et utilisation de la mémoire - des valeurs plus élevées donnent plus de précision mais utilisent plus de mémoire.
 
 Une fois que vous avez un objet t-digest, vous pouvez ajouter de nouveaux points de données en utilisant l'opérateur <code>+</code>, et calculer des percentiles ou des quantiles en utilisant les méthodes <code>percentile</code> ou <code>quantile</code>.
 
@@ -41,7 +42,8 @@ Méthodes disponibles :
 - <b>percentile(p)</b> : Retourne la/les valeur(s) au(x) percentile(s) donné(s) <code>p</code> (dans [0, 100]).
 - <b>quantile(q)</b> : Retourne la/les valeur(s) au(x) quantile(s) donné(s) <code>q</code> (dans [0, 1]).
 - <b>+</b> : Ajoute de nouveaux points de données à l'objet t-digest.
-  Propriétés :
+
+Propriétés :
 
 - <b>compression</b> : Le facteur de compression utilisé pour créer le t-digest.
 - <b>totalWeight</b> : Le poids total de tous les centroïdes dans le t-digest.

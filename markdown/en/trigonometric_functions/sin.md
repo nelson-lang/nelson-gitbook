@@ -19,7 +19,6 @@ Computes the sine in radians for each element of x.
 <b>sin</b> computes the sine in radians for each element of <b>x</b>.
 
 The sine function is defined as:
-
 $$\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}$$
 
 For real arguments, it represents the y-coordinate on the unit circle.

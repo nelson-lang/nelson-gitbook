@@ -3,3 +3,8 @@ node_modules/
 package-lock.json
 book
 docs/index.md
+all_fr_files.txt
+all_en_files.txt
+temp_combined.md
+nelson-en.pdf
+nelson-fr.pdf

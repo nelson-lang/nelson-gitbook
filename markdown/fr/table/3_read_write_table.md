@@ -9,14 +9,16 @@ Fichiers texte (.csv, .txt, etc.) :
 - writetable() exporte les tables vers des fichiers texte délimités avec des séparateurs personnalisables
 - readtable() importe les tables depuis des fichiers texte délimités avec détection automatique du format
 - Les fichiers texte conservent les noms de variables et les données au format lisible par l'humain
-  Fichier binaire :
+
+Fichier binaire :
 
 - Format Nelson HDF5 (.nh5) :
 
 - Stockage binaire efficace utilisant HDF5
 - Conserve toutes les métadonnées et les types de données de la table
 - Utilisez les commandes save -nh5 et load
-  Le format binaire est recommandé pour préserver la précision numérique exacte et travailler avec de grands ensembles de données.
+
+Le format binaire est recommandé pour préserver la précision numérique exacte et travailler avec de grands ensembles de données.
 
 ## 💡 Exemples
 

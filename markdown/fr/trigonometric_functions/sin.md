@@ -19,7 +19,6 @@ Calcule le sinus en radians pour chaque élément de x.
 <b>sin</b> calcule le sinus en radians pour chaque élément de <b>x</b>.
 
 La fonction sinus est définie comme :
-
 $$\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}$$
 
 Pour les arguments réels, elle représente la coordonnée y sur le cercle unité.

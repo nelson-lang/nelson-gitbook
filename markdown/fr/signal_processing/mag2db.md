@@ -19,7 +19,6 @@ Convertit une magnitude en décibels (dB).
 <b>db = mag2db(mag)</b> convertit les valeurs de magnitude en décibels (dB).
 
 La formule de conversion est :
-
 $$\text{dB} = 20 \log_{10}(\text{magnitude})$$
 
 Cette conversion est couramment utilisée en traitement du signal, acoustique et électronique pour exprimer les rapports sur une échelle logarithmique.

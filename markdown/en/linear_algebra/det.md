@@ -19,23 +19,18 @@ Matrix determinant.
 <b>res = det(x)</b> returns the determinant of square matrix x.
 
 For a
-
 $$2 \times 2$$
 
 matrix:
-
 $$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
 
 For larger matrices, the determinant can be computed using cofactor expansion:
-
 $$\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} M_{ij}$$
 
 where
-
 $$M_{ij}$$
 
 is the minor of element
-
 $$a_{ij}$$
 
 ## 💡 Example

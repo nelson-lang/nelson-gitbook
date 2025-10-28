@@ -31,24 +31,23 @@ Display image from array.
 <b>image</b> displays C data as an image.
 
 Properties:
-
-| Property             | Description                                                                                                                         |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **AlphaData**        | Transparency data: scalar, array the same size as CData, or 1 (default).                                                            |
-| **AlphaDataMapping** | Alpha data mapping method.                                                                                                          |
-| **CData**            | Image color data: vector or matrix, 3-D array of RGB triplets.                                                                      |
-| **CDataMapping**     | Color data mapping method: 'scaled' or 'direct' (default).                                                                          |
-| **Children**         | [].                                                                                                                                 |
-| **Parent**           | Parent: axes object.                                                                                                                |
-| **Tag**              | Object identifier: string scalar, character vector, '' (default).                                                                   |
-| **Type**             | Type of graphics object: 'surface'.                                                                                                 |
-| **UserData**         | User data: array or [] (default).                                                                                                   |
-| **Visible**          | State of visibility: 'off' or 'on' (default).                                                                                       |
-| **XData**            | Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default).                                                   |
-| **YData**            | Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default).                                                   |
-| **CreateFcn**        | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
-| **DeleteFcn**        | Callback (function handle, string or cell) called when object is deleted.                                                           |
-| **BeingDeleted**     | Flag indicating that the object is being deleted.                                                                                   |
+| Property | Description |
+| --- | --- |
+| **AlphaData** | Transparency data: scalar, array the same size as CData, or 1 (default). |
+| **AlphaDataMapping** | Alpha data mapping method. |
+| **CData** | Image color data: vector or matrix, 3-D array of RGB triplets. |
+| **CDataMapping** | Color data mapping method: 'scaled' or 'direct' (default). |
+| **Children** | []. |
+| **Parent** | Parent: axes object. |
+| **Tag** | Object identifier: string scalar, character vector, '' (default). |
+| **Type** | Type of graphics object: 'surface'. |
+| **UserData** | User data: array or [] (default). |
+| **Visible** | State of visibility: 'off' or 'on' (default). |
+| **XData** | Placement along x-axis: two-element vector, scalar, [1 size(CData, 1)] (default). |
+| **YData** | Placement along y-axis: two-element vector, scalar, [1 size(CData, 2)] (default). |
+| **CreateFcn** | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
+| **DeleteFcn** | Callback (function handle, string or cell) called when object is deleted. |
+| **BeingDeleted** | Flag indicating that the object is being deleted. |
 
 ## 💡 Examples
 

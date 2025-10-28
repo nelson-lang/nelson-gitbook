@@ -25,11 +25,9 @@ Singular Value Decomposition.
 <b>svd</b> computes the Singular Value Decomposition of a matrix.
 
 For an
-
 $$m \times n$$
 
 matrix <b>M</b>, the SVD is:
-
 $$M = U\Sigma V^T$$
 
 where:
@@ -53,11 +51,9 @@ diagonal matrix with non-negative real numbers (singular values)
 unitary matrix (right singular vectors)
 
 The singular values
-
 $$\sigma_i$$
 
 are arranged in decreasing order:
-
 $$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$
 
 ## 💡 Example

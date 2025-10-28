@@ -25,11 +25,13 @@ Formats de sortie pris en charge :
 
 - <b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.
 - <b>Fichiers XML :</b> chaque variable de <b>T</b> devient un nœud XML, les noms de variables servant de noms d'éléments.
-  Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filename)</b>. Le format de fichier est déterminé par l'extension :
+
+Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filename)</b>. Le format de fichier est déterminé par l'extension :
 
 - <b>.txt</b>, <b>.dat</b>, <b>.csv</b> : fichiers texte délimités.
 - <b>.xml</b> : fichiers XML.
-  <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
+
+<b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
 
 - <b>WriteRowNames :</b> inclure les noms de ligne dans le fichier de sortie (par défaut : <code>false</code>).
 - <b>FileType :</b> spécifier le format de fichier (<code>'text'</code> ou <code>'xml'</code>).

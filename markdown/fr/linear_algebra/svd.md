@@ -25,15 +25,12 @@ Décomposition en valeurs singulières (SVD).
 <b>svd</b> calcule la décomposition en valeurs singulières d'une matrice.
 
 Pour une matrice
-
 $$M$$
 
 de taille
-
 $$m \times n$$
 
 , la SVD est :
-
 $$M = U\Sigma V^T$$
 
 où :
@@ -57,11 +54,9 @@ avec des nombres réels non négatifs (valeurs singulières)
 (vecteurs singuliers droits)
 
 Les valeurs singulières
-
 $$\sigma_i$$
 
 sont arrangées en ordre décroissant :
-
 $$\sigma_1 \geq \sigma_2 \geq \ldots \geq 0$$
 
 ## 💡 Exemple

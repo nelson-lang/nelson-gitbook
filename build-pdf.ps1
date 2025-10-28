@@ -20,7 +20,7 @@ if (-not [System.IO.Path]::IsPathRooted($FileListPath)) {
 
 if (-not (Test-Path $FileListPath)) {
     Write-Host "ERROR: File list not found: $FileListPath" -ForegroundColor Red
-    exit 1
+    Cleanup; exit 1
 }
 
 $files = Get-Content $FileListPath -ErrorAction Stop
@@ -29,7 +29,7 @@ Write-Host "Total files: $($files.Count)"
 
 if ($files.Count -eq 0) {
     Write-Host "ERROR: File list is empty: $FileListPath" -ForegroundColor Red
-    exit 1
+    Cleanup; exit 1
 } else {
     Write-Host "Sample file list entries (first 10):"
     $files | Select-Object -First 10 | ForEach-Object { Write-Host "  $_" }
@@ -101,7 +101,8 @@ $sortedFiles = $files | Sort-Object {
     }
 
     # Priority 3: All other files not in SUMMARY - preserve original file-list order -> start at 01000000
-    if ($name -ne 'SUMMARY.md') {
+    # BUT exclude the main SUMMARY.md file entirely from PDF (it's just navigation, not content)
+    if ($name -ne 'SUMMARY.md' -or $fullPath -ne $mainSummaryFullPath) {
         if ($originalOrderMap.ContainsKey($fullPath)) {
             $origIndex = $originalOrderMap[$fullPath]
             return ("{0:D8}|ORIG" -f (10000000 + $origIndex))
@@ -110,19 +111,27 @@ $sortedFiles = $files | Sort-Object {
         }
     }
 
-    # Priority 4: README.md in subdirectories (place near end but before main SUMMARY)
+    # Priority 4: README.md in subdirectories (place near end)
     if ($name -eq 'README.md' -and $fullPath -ne $mainReadmeFullPath) { 
         return ("{0:D8}|README_SUB" -f 80000000)
     }
 
-    # Priority 5 (Last): Main SUMMARY.md at the end -> prefix 99999999
+    # Main SUMMARY.md is excluded from PDF - return a value that will be filtered out
     if ($fullPath -eq $mainSummaryFullPath) { 
-        return ("{0:D8}|SUMMARY_LAST" -f 99999999)
+        return ("{0:D8}|EXCLUDE_SUMMARY" -f 99999999)
     }
 
     # Default fallback
     return ("{0:D8}|DEFAULT" -f 99999998)
     }
+
+# Filter out the main SUMMARY.md file from PDF generation (it's navigation, not content)
+$sortedFiles = $sortedFiles | Where-Object { 
+    $fullPath = [System.IO.Path]::GetFullPath($_)
+    $fullPath -ne $mainSummaryFullPath 
+}
+
+Write-Host "Filtered files for PDF (excluding main SUMMARY.md): $($sortedFiles.Count) files"
 
 # Build an anchor map: fullpath -> unique anchor id
 $anchorMap = @{}
@@ -221,7 +230,7 @@ if ($wkhtmlPath) {
     Write-Host "  - wkhtmltopdf (Windows): https://wkhtmltopdf.org/downloads.html" -ForegroundColor Yellow
     Write-Host "  - or install via Chocolatey: choco install wkhtmltopdf -y (requires Chocolatey)" -ForegroundColor Yellow
     Write-Host "  - weasyprint (requires Python + cairo/pango): pip install weasyprint (see https://weasyprint.org/docs/install/)" -ForegroundColor Yellow
-    exit 1
+    Cleanup; exit 1
 }
 
 # ---------------------------
@@ -343,6 +352,7 @@ foreach ($file in $sortedFiles) {
         '1f517' = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x1F517)); desc = 'link' }
         '1f554' = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x1F554)); desc = 'clock' }
         '1f464' = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x1F464)); desc = 'user' }
+        '1f4da' = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x1F4DA)); desc = 'books' }
         '26a0'  = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x26A0)); desc = 'warning' }
         '2705'  = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x2705)); desc = 'check' }
         '274c'  = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x274C)); desc = 'cross' }
@@ -359,7 +369,20 @@ foreach ($file in $sortedFiles) {
     }
     
     # Remove ## Author and ## Auteur sections (heading and content until next heading or end)
-    $content = $content -replace '(?ms)^##\s+(Author|Auteur)\s*$.*?(?=^##\s|\z)', ''
+    # Handle variations: different heading levels (#, ##, ###, ####), case variations, emoji (👤 or text), and potential extra spaces
+    # This regex matches any heading (1-4 levels) with Author/Auteur (with or without emoji) and removes everything until the next heading or end of file
+    # Enhanced to handle: trailing colons, various whitespace, and any Unicode emoji
+    $content = $content -replace '(?mis)^\s{0,3}#{1,6}\s*(?:[\p{So}\p{Sk}\p{P}\p{S}\s]*)*(?:author|auteur)s?\s*:?\s*$.*?(?=^\s{0,3}#{1,6}\s|\z)', ''
+    
+    # Remove single-line patterns such as "Author: Name" or "Auteur: Name"
+    $content = $content -replace '(?mi)^\s*(?:author|auteur)s?\s*:\s*.+$', ''
+    
+    # Remove two-line patterns where a bare "Author" / "Auteur" line is followed by a short non-heading line (the author name).
+    # Use a safer pattern that doesn't embed single-quote/backtick characters inside the literal.
+    $content = $content -replace '(?mis)^\s*(?:author|auteur)s?\s*\r?\n\s*(?!#{1,6})(.{1,120})\s*(?=\r?\n|\z)', ''
+    
+    # Also clean up any potential multiple blank lines left behind by the removal
+    $content = $content -replace '(?m)^\s*$\n(?:\s*$\n)+', "`n`n"
     
     # Remove inline width/height attributes from img tags to let CSS control sizing
     $content = [regex]::Replace($content, '<img([^>]*)\s+width="[^"]*"', '<img$1')
@@ -632,7 +655,9 @@ try {
     # Enable emoji support so markdown emojis render correctly instead of as square characters
     $pandocArgs += "--from=markdown+emoji"
     $pandocArgs += "--css=pdf-style-v2.css"
-    $pandocArgs += "--webtex"
+    # Use --mathml instead of --webtex to avoid SSL/network issues with external LaTeX rendering services
+    # MathML is supported by modern browsers and wkhtmltopdf's rendering engine
+    $pandocArgs += "--mathml"
     $pandocArgs += "--syntax-highlighting=pygments"
     $pandocArgs += $tempMarkdown
     $pandocArgs += "-o"
@@ -640,114 +665,37 @@ try {
 
     if (-not (Test-Path $tempMarkdown)) {
         Write-Host "ERROR: Combined markdown file not found: $tempMarkdown" -ForegroundColor Red
-        if (Test-Path $convertedDir) { Remove-Item $convertedDir -Recurse -Force -ErrorAction SilentlyContinue }
-        exit 1
+        Cleanup; exit 1
     }
 
     & pandoc @pandocArgs
 
     # Clean up temporary file
-    Remove-Item $tempMarkdown -ErrorAction SilentlyContinue
+    Cleanup
 
-    # Clean up converted images dir
-    if (Test-Path $convertedDir) {
-        Remove-Item $convertedDir -Recurse -Force -ErrorAction SilentlyContinue
-    }
-    
     if (Test-Path $OutputFile) {
         Write-Host "SUCCESS: PDF generated: $OutputFile" -ForegroundColor Green
-        exit 0
+        Cleanup; exit 0
     } else {
         Write-Host "ERROR: PDF file was not created" -ForegroundColor Red
-        exit 1
+        Cleanup; exit 1
     }
 } catch {
     Write-Host "ERROR: Pandoc execution failed: $_" -ForegroundColor Red
-    if (Test-Path $tempMarkdown) {
-        Remove-Item $tempMarkdown
-    }
-    # Clean up converted images dir on error too
-    if (Test-Path $convertedDir) {
-        Remove-Item $convertedDir -Recurse -Force
-    }
-    exit 1
+    Cleanup; exit 1
 }
 
 # ---------------------------
-# New helper: check command exists with suggestion
-function Test-CommandExists {
-    param([string]$cmd)
-    $found = Get-Command $cmd -ErrorAction SilentlyContinue
-    if (-not $found) {
-        Write-Host "Warning: '$cmd' not found on PATH." -ForegroundColor Yellow
-        return $false
-    }
-    return $true
-}
-
-# New helper: centralized SVG -> PNG conversion (returns full png path or $null)
-function Convert-SvgToPng {
-    param(
-        [string]$svgRef,
-        [string]$fileDir,
-        [string]$convertedDir,
-        [bool]$useInkscape,
-        [bool]$inkscapeNewSyntax
-    )
-
-    # Resolve svg local path (like previous logic), remove querystring for filename
-    $svgLocal = $svgRef
-    if ($svgLocal -match '^file:///') {
-        $svgLocal = $svgLocal -replace '^file:///', ''
-        $svgLocal = $svgLocal -replace '/', '\'
-    } elseif ($svgLocal -notmatch '^(?:https?:)?//' -and $svgLocal -notmatch '^[A-Za-z]:\\') {
-        $svgLocal = Join-Path $fileDir $svgLocal
-    }
-
-    # Strip any URI query or fragment for filename/hash purposes
-    $svgLocalNoQuery = $svgLocal -replace '\?.*$',''
-
-    if (-not (Test-Path $svgLocalNoQuery)) {
-        Write-Host "Warning: SVG file not found, skipping conversion: $svgLocalNoQuery" -ForegroundColor Yellow
-        return $null
-    }
-
-    $baseName = [System.IO.Path]::GetFileNameWithoutExtension($svgLocalNoQuery)
-    $hash = [System.BitConverter]::ToString((New-Object System.Security.Cryptography.MD5CryptoServiceProvider).ComputeHash([System.Text.Encoding]::UTF8.GetBytes($svgLocalNoQuery))).Replace('-','').ToLower().Substring(0,8)
-    $pngPath = Join-Path $convertedDir ("$baseName-$hash.png")
-
-    if (Test-Path $pngPath) {
-        return $pngPath
-    }
-
+# Cleanup helper: remove temp files/dirs if they exist
+function Cleanup {
     try {
-        if ($useInkscape) {
-            # prefer Inkscape
-            if ($inkscapeNewSyntax) {
-                $args = @("$svgLocalNoQuery", "--export-filename=$pngPath")
-            } else {
-                $args = @("--export-png=$pngPath", $svgLocalNoQuery)
-            }
-            Write-Host "Running inkscape $($args -join ' ')" -ForegroundColor Cyan
-            $p = Start-Process -FilePath "inkscape" -ArgumentList $args -NoNewWindow -Wait -PassThru -ErrorAction Stop
-            if ($p.ExitCode -ne 0) { throw "Inkscape exit $($p.ExitCode)" }
-        } else {
-            # fallback to ImageMagick (magick)
-            $args = @($svgLocalNoQuery, '-background', 'white', '-flatten', '-resize', '1200x', $pngPath)
-            Write-Host "Running magick $($args -join ' ')" -ForegroundColor Cyan
-            $p = Start-Process -FilePath "magick" -ArgumentList $args -NoNewWindow -Wait -PassThru -ErrorAction Stop
-            if ($p.ExitCode -ne 0) { throw "magick exit $($p.ExitCode)" }
+        if ($tempMarkdown -and (Test-Path $tempMarkdown)) {
+            Remove-Item $tempMarkdown -Force -ErrorAction SilentlyContinue
         }
-
-        if (Test-Path $pngPath) {
-            return $pngPath
-        } else {
-            Write-Host "Conversion did not produce expected file: $pngPath" -ForegroundColor Yellow
-            return $null
+    } catch { }
+    try {
+        if ($convertedDir -and (Test-Path $convertedDir)) {
+            Remove-Item $convertedDir -Recurse -Force -ErrorAction SilentlyContinue
         }
-    } catch {
-        Write-Host "Error converting SVG: $_" -ForegroundColor Red
-        return $null
-    }
+    } catch { }
 }
-# ---------------------------
