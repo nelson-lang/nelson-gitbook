@@ -45,6 +45,8 @@ native2unicode(uint8([149   208   137   188   150   188]), 'SHIFT_JIS')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

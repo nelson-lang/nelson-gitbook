@@ -43,6 +43,8 @@ str = formattedDisplayText(R, 'NumericFormat', 'bank', 'LineSpacing', 'compact')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

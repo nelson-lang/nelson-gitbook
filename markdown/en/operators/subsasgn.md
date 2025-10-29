@@ -40,6 +40,8 @@ R2 = subsasgn(R1, S, 'Hello')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

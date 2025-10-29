@@ -26,6 +26,8 @@ La personnalisation du fichier <b>startup.m</b> vous permet d'établir un enviro
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

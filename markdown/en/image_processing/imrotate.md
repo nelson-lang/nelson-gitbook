@@ -139,6 +139,8 @@ end
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -46,6 +46,8 @@ T3
 | ------- | --------------- |
 | 1.9.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -50,6 +50,8 @@ saveas(gcf(), [tempdir, 'svg-file.svg']);
 | 1.0.0   | version initiale  |
 | 1.13.0  | tiff format added |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

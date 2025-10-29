@@ -107,6 +107,8 @@ dictionary(R)
 | ------- | --------------- |
 | 1.4.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

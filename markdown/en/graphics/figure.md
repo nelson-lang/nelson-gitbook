@@ -91,6 +91,8 @@ figure('Name', 'Hello')
 | 1.13.0                                       | DevicePixelRatio property added.                    |
 | 1.14.0                                       | WindowState property added.                         |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

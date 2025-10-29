@@ -26,6 +26,8 @@ Génère une passerelle MEX en C (fonction interne).
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

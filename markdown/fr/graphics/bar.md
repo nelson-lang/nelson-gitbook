@@ -96,6 +96,8 @@ bar(y, 'FaceColor', [0 .5 .5], 'EdgeColor', [0 .9 .9], 'LineWidth', 1.5)
 | 1.0.0   | version initiale                                      |
 | 1.12.0  | Gestion du nom de couleur ou du nom court de couleur. |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

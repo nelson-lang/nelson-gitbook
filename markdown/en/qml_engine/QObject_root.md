@@ -32,6 +32,8 @@ h1.windowTitle = 'Your title'
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

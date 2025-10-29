@@ -43,6 +43,8 @@ M = rand(4, 3, 5);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

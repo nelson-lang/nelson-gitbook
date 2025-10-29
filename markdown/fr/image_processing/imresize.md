@@ -94,6 +94,8 @@ title('Resized Image');
 | ------- | ---------------- |
 | 1.15.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

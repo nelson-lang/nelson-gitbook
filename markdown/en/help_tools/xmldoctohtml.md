@@ -33,6 +33,8 @@ Converts xml Nelson help files to html.
 | 1.0.0   | initial version          |
 | 1.15.0  | html_type input argument |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

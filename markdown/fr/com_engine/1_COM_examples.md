@@ -18,6 +18,8 @@ Interagit avec Internet Explorer, Word, Excel, voix de synthèse, scripts VB ...
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

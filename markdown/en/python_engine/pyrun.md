@@ -63,6 +63,8 @@ y = pyrun(PYCODE, 'Y')
 | 1.3.0   | initial version                                    |
 | 1.4.0   | Python code object allowed as first input argument |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -51,6 +51,8 @@ K = acker(A, B, P)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

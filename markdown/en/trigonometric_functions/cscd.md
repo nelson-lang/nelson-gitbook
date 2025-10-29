@@ -34,6 +34,8 @@ R = cscd([35+i 15+2i 10+3i])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

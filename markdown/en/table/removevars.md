@@ -43,6 +43,8 @@ T2 = removevars(T1, 'C2')
 | ------- | --------------- |
 | 1.9.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

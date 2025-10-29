@@ -90,6 +90,8 @@ pyrunfile('pyrunfile_example_3.py', 'x', 5, 'y', 3)
 | ------- | ---------------- |
 | 1.4.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

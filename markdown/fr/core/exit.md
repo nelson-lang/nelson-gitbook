@@ -24,6 +24,8 @@ Ferme l'environnement Nelson ou termine la session en cours.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

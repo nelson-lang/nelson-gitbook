@@ -38,6 +38,8 @@ R = int2str(uint64(intmax('uint64')))
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

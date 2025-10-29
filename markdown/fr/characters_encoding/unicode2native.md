@@ -45,6 +45,8 @@ R = unicode2native('片仮名', 'SHIFT_JIS')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

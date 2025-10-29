@@ -45,6 +45,8 @@ L2 = false(3,'like', L);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

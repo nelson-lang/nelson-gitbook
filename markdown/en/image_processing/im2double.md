@@ -40,6 +40,8 @@ IM2 = im2double(I, 'indexed')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

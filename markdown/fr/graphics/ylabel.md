@@ -46,6 +46,8 @@ ylabel('Étiquette de l’axe Y - Unicode ドラゴンボールY(ゼット)')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

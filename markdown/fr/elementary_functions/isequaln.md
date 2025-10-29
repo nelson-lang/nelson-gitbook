@@ -53,6 +53,8 @@ res = isequaln(NaN, NaN)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

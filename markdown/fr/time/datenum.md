@@ -107,6 +107,8 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 | 1.8.0   | analyse des chaînes de date étendue.            |
 | 1.10.0  | ajout : format '' signifie essayer de détecter. |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

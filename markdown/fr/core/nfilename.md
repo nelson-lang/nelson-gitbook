@@ -26,6 +26,8 @@ Renvoie le nom du fichier de script actuellement exécuté ou évalué.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -41,6 +41,8 @@ ind = sub2ind(sz, row, col)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

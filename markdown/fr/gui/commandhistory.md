@@ -26,6 +26,8 @@ Les entrées de la fenêtre Historique des commandes peuvent être sélectionné
 | ------- | ---------------- |
 | 1.1.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

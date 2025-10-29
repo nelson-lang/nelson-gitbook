@@ -20,6 +20,8 @@ Si <b>O</b> est un objet alors <b>subsindex</b> est la méthode de surcharge qui
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -30,6 +30,8 @@ dllib_used(),delete(dllib_used())
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

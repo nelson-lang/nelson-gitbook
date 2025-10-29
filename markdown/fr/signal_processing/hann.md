@@ -41,6 +41,8 @@ c = hann(8, 'periodic')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

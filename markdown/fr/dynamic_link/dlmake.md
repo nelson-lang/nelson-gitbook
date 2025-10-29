@@ -44,6 +44,8 @@ filewrite([dest, '/CMakeLists.txt'], txt);
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

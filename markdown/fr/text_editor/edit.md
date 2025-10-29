@@ -38,6 +38,8 @@ edit('edit')
 | 1.0.0   | version initiale    |
 | 1.5.0   | edit(dirname) added |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

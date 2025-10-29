@@ -42,6 +42,8 @@ k = keys(d, 'cell')
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

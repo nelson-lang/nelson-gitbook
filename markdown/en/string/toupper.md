@@ -38,6 +38,8 @@ upper(["NelSon", "is", "open"])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

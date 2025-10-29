@@ -42,6 +42,8 @@ tf = isKey(d, ["biil" , "Yannis")
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

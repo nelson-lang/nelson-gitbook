@@ -163,6 +163,8 @@ plot(ax2, x, y2);
 | 1.7.0   | CreateFcn, DeleteFcn callback added.                                  |
 | --      | BeingDeleted property added.                                          |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

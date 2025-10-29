@@ -48,6 +48,8 @@ sys2 = tf(num, den)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -46,6 +46,8 @@ R = ssdelete(sys1, inputs, outputs)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

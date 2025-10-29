@@ -43,6 +43,8 @@ R = fft2(eye(5, 5), 2, 3)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

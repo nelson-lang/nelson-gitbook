@@ -39,6 +39,8 @@ A = cell2struct (ce, fields, 1)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

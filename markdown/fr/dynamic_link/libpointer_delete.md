@@ -33,6 +33,8 @@ libpointer_used(),delete(libpointer_used())
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

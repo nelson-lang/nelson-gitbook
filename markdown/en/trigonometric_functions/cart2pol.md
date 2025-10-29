@@ -48,6 +48,8 @@ z = [7 8 9 10];
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

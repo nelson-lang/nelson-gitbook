@@ -53,6 +53,8 @@ jlrunfile('jlrunfile_example_1.jl')
 | ------- | ---------------- |
 | 1.12.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

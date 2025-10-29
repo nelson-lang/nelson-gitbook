@@ -60,6 +60,8 @@ secure_html = markdown(txt, 'secure')
 | 1.0.0   | initial version                  |
 | 1.15.0  | 'secure', 'advanced' modes added |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

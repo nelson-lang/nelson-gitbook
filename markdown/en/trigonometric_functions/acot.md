@@ -34,6 +34,8 @@ R = acot([-i pi+i*pi/2 -1+i*4])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

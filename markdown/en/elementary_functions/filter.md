@@ -54,6 +54,8 @@ legend(_('Input Data'), _('Filtered Data'));
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

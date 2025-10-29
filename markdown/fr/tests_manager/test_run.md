@@ -138,6 +138,8 @@ test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 | 1.4.0   | skip_testsuite function reference     |
 | 1.12.0  | JULIA ENVIRONMENT REQUIRED tag added  |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

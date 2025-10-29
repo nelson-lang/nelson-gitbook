@@ -38,6 +38,8 @@ rmfield(example, 'b')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

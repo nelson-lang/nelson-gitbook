@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1761662085
+// Auto-generated on 1761765127
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -5342,7 +5342,7 @@ window.searchIndex = [
     title: "lin2mu",
     url: "./audio/lin2mu.html",
     path: "./audio/lin2mu.html",
-    content: "Convert audio data from linear singal to mu-law.",
+    content: "Convert audio data from linear signal to mu-law.",
   },
   {
     title: "mu2lin",

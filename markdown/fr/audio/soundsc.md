@@ -38,6 +38,8 @@ soundsc(signal, 44110, 16)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

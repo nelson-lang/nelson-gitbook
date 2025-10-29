@@ -53,6 +53,8 @@ R = fileread([tempdir(), 'fseek.txt'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

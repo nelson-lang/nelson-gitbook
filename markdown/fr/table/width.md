@@ -41,6 +41,8 @@ width(T)
 | ------- | ---------------- |
 | 1.8.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -74,6 +74,8 @@ WI_IN = [ 0.1500; -0.1500];
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 SLICOT Documentation
+-->

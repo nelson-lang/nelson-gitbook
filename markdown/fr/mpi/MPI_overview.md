@@ -18,6 +18,8 @@ Les fonctionnalités MPI sont uniquement disponibles en mode CLI. Toutefois, vou
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

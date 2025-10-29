@@ -64,6 +64,8 @@ h5dump([tempdir(), 'myfile.h5'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

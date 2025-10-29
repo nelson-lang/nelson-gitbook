@@ -38,6 +38,8 @@ R = hypot(1e309, 1e309)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

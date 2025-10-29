@@ -185,6 +185,8 @@ uicontrol_demo_interruptible
 | 1.7.0   | initial version      |
 | 1.14.0  | Units property added |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

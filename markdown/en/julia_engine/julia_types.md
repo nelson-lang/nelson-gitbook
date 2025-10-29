@@ -63,6 +63,8 @@ R = jlrun('', "A", 'A', d)
 | ------- | --------------- |
 | 1.12.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

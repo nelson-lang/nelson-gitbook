@@ -38,6 +38,8 @@ t3 = addtodate(t, 4, 'hour');datevec(t3)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

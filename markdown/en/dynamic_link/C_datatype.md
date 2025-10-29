@@ -45,6 +45,8 @@ This table shows these Nelson types with their equivalent C types.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

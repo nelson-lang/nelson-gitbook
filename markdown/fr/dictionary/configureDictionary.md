@@ -36,6 +36,8 @@ d2 = configureDictionary("cell", "struct")
 | ------- | ---------------- |
 | 1.5.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

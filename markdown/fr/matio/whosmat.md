@@ -48,6 +48,8 @@ st = whosmat([tempdir(), 'example_whosmat-v7.3.mat'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

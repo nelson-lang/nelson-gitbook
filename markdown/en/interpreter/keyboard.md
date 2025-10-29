@@ -26,6 +26,8 @@ Stops script execution and enter in debug mode.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

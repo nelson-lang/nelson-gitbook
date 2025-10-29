@@ -44,6 +44,8 @@ imshow(RGB);
 | ------- | ---------------- |
 | 1.13.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

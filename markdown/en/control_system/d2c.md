@@ -45,6 +45,8 @@ sysc = d2c(sys, 'zoh')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

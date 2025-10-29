@@ -232,6 +232,8 @@ h2.String
 | 1.7.0   | Callbacks CreateFcn, DeleteFcn ajoutés. |
 | --      | Propriété BeingDeleted ajoutée.         |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

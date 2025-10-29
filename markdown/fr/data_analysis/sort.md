@@ -72,6 +72,8 @@ A = [NaN 3 6 0 NaN];
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

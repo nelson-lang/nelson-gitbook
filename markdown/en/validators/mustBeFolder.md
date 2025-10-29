@@ -34,6 +34,8 @@ mustBeFolder('hello_nelson')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

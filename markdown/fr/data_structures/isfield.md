@@ -45,6 +45,8 @@ isfield(S,{ 1, 'nel'; 2, 'son'})
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

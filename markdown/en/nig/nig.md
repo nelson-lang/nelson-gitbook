@@ -59,6 +59,8 @@ fileread([tempdir(),'/example_nig_sumBuiltin.cpp'])]
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

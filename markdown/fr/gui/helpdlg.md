@@ -53,6 +53,8 @@ h = helpdlg('help string', 'dialog title', 'on')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

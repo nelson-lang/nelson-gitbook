@@ -48,6 +48,8 @@ v = lookup(d,[3,5], 'FallbackValue', "Orange")
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

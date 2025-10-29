@@ -86,6 +86,8 @@ lst = rng('enginelist')
 | 1.15.0                | Nouveau générateur de nombres aléatoires : simdTwister, |
 | combRecursive, philox |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

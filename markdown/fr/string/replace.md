@@ -39,6 +39,8 @@ r = replace({'cccc','ccbbcca'},{'cc','bb'},{'cc'})
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

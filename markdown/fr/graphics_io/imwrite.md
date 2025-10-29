@@ -99,6 +99,8 @@ end
 | 1.0.0   | version initiale                |
 | 1.13.0  | gif animation, pcx format added |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

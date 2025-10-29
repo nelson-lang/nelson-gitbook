@@ -49,6 +49,8 @@ M(R(1),C(1),V(1))
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

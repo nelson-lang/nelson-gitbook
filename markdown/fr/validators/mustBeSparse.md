@@ -35,6 +35,8 @@ mustBeSparse(sparse(eye(3, 4)))
 | ------- | ---------------- |
 | 1.11.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

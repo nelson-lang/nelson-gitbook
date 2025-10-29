@@ -56,6 +56,8 @@ f = (0:nfft *inv(2) -1)*Fs * inv(nfft);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

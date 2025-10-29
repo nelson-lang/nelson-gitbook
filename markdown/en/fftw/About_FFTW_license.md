@@ -28,6 +28,8 @@ On others plaforms, if FFTW library is available, and user chooses to use it, di
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

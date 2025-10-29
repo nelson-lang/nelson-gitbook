@@ -80,6 +80,8 @@ h(2).MarkerFaceColor = 'm';
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

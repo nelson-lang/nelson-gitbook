@@ -45,6 +45,8 @@ res = dir([nelsonroot(),'/*.m'], '-s')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

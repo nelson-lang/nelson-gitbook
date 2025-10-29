@@ -116,6 +116,8 @@ view(3)
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn. |
 | --      | Ajout de la propriété BeingDeleted.       |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

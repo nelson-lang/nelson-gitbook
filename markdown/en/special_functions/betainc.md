@@ -53,6 +53,8 @@ R = betainc(0.5, 1:10, 3)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

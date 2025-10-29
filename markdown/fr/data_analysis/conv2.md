@@ -43,6 +43,8 @@ R = conv2(A, B, 'same')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

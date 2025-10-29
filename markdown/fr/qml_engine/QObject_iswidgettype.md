@@ -35,6 +35,8 @@ r = QObject_iswidgettype(h)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

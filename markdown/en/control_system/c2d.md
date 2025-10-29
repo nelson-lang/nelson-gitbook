@@ -53,6 +53,8 @@ sysd = c2d(sys, Ts, 'zoh')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

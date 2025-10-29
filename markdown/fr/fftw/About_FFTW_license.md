@@ -28,6 +28,8 @@ Sur les autres plateformes, si la bibliothèque FFTW est disponible et que l'uti
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

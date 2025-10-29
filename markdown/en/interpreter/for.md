@@ -33,6 +33,8 @@ for i = [1, 2; 3 4], disp(i), disp('next'), end
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

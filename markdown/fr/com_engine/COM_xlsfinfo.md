@@ -38,6 +38,8 @@ Interroge le fichier de feuille de calcul Excel filename pour obtenir des inform
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

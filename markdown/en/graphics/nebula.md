@@ -43,6 +43,8 @@ title(['Nebula Colormap with ', num2str(n), ' Colors']);
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

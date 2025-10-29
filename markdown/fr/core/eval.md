@@ -53,6 +53,8 @@ eval('error(''blabla'')', 'l = lasterror(); disp([''lasterror message: '', l.mes
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

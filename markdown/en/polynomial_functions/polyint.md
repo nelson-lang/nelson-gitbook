@@ -40,6 +40,8 @@ q = polyint(conv(p,v),k)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -44,6 +44,8 @@ st = whosnh5([tempdir(), 'example_whosnh5.nh5'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

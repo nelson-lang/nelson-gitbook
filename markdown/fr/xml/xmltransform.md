@@ -48,6 +48,8 @@ end
 | ------- | --------------- |
 | 1.15.0  | initial version |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

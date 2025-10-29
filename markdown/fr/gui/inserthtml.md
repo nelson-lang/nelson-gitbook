@@ -30,6 +30,8 @@ inserthtml(markdown(fileread([nelsonroot(),'/CHANGELOG.md'])))
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

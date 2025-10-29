@@ -50,6 +50,8 @@ tic();ones(1000,'single'); toc()
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

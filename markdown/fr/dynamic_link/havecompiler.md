@@ -33,6 +33,8 @@ Sur les plateformes Unix (Linux, MacOS), <b>havecompiler</b> renvoie toujours <b
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

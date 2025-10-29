@@ -31,6 +31,8 @@ audioplayer_used(),delete(audioplayer_used())
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

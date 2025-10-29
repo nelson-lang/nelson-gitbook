@@ -33,6 +33,8 @@ load/free FFTW library dynamically.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

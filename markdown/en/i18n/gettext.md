@@ -37,6 +37,8 @@ disp(_('function not found.'))
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

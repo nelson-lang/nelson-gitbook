@@ -37,6 +37,8 @@ R = h5read(double_data,'/DS1')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

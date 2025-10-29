@@ -49,6 +49,8 @@ P = [2.0  0.0  1.0  -1.0  1.0];
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 SLICOT Documentation
+-->

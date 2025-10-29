@@ -48,6 +48,8 @@ Exigences système par plateforme.
 | ------- | ---------------- |
 | 1.13.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

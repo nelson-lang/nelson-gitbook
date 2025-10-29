@@ -46,6 +46,8 @@ Renvoie le dernier message d'avertissement enregistré.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

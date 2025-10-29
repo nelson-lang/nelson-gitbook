@@ -24,7 +24,7 @@
       <keyword name="audiowrite" link="audiowrite.html" description="Writes an audio file."/>
       <keyword name="beep" link="beep.html" description="Produces a beep sound."/>
       <keyword name="isplaying" link="isplaying.html" description="get info about audio playback is in progress."/>
-      <keyword name="lin2mu" link="lin2mu.html" description="Convert audio data from linear singal to mu-law."/>
+      <keyword name="lin2mu" link="lin2mu.html" description="Convert audio data from linear signal to mu-law."/>
       <keyword name="mu2lin" link="mu2lin.html" description="Convert audio data from mu-law to linear signal."/>
       <keyword name="play" link="play.html" description="Plays an audioplayer object."/>
       <keyword name="playblocking" link="playblocking.html" description="Plays an audioplayer object with blocking."/>

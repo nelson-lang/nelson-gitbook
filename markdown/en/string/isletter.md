@@ -38,6 +38,8 @@ isletter("六書 six writings")
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

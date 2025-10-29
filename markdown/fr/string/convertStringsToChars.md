@@ -38,6 +38,8 @@ A = convertStringsToChars(["Nelson", string(NaN)])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

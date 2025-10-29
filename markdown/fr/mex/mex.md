@@ -70,6 +70,8 @@ Options prises en charge : compilation ou édition de liens.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -61,6 +61,8 @@ res = isapprox(A, B, eps)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

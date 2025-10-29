@@ -145,6 +145,8 @@ patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn. |
 | --      | Ajout de la propriété BeingDeleted.       |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

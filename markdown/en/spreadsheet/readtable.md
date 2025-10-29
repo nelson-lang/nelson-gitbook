@@ -61,6 +61,8 @@ T2 = readtable([tempdir,'readtable_1.csv'], options)
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

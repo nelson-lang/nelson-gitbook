@@ -88,6 +88,8 @@ lst = rng('enginelist')
 | 1.0.0   | initial version                                                 |
 | 1.15.0  | New random number generator: simdTwister, combRecursive, philox |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

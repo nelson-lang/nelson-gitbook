@@ -46,6 +46,8 @@ A = [magic(4), eye(4)]
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

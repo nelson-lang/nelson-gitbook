@@ -64,6 +64,8 @@ disp(u3.MemUsedNelson - u2.MemUsedNelson);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -39,6 +39,8 @@ keyHash({1, 'a', 'b'})
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

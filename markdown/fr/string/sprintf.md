@@ -64,6 +64,8 @@ sprintf('%d%%.', 95)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

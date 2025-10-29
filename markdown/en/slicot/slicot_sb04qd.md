@@ -56,6 +56,8 @@ C_IN = [271.0   135.0   147.0;
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

@@ -36,6 +36,8 @@ It creates a QML component, a window, and load .qml file.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

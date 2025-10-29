@@ -33,6 +33,8 @@ charger/libérer la bibliothèque FFTW dynamiquement.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

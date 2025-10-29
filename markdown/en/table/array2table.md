@@ -38,6 +38,8 @@ T = array2table(magic(6))
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

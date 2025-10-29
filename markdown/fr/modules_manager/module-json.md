@@ -104,6 +104,8 @@ if ~ismodule('module_skeleton_basic')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

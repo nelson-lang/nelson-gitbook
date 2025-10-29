@@ -46,6 +46,8 @@ ylabel('Y axis Label - Unicode ドラゴンボールY(ゼット)')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

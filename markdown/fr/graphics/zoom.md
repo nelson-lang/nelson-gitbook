@@ -74,6 +74,8 @@ zoom out
 | ------- | ---------------- |
 | 1.2.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

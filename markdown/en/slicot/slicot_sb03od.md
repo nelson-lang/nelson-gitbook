@@ -57,6 +57,8 @@ Q_IN = zeros(3, 3);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

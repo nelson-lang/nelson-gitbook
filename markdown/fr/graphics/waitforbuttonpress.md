@@ -34,6 +34,8 @@ axes;
 | ------- | ---------------- |
 | 1.7.0   | Version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -29,6 +29,8 @@ Returns the properties name of an object handle.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

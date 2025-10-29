@@ -51,6 +51,8 @@ tic(), t2 = timeit(f, 3, X), toc()
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

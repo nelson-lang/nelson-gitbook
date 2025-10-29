@@ -89,6 +89,8 @@ X = randi([5, 15], 2, 3)
 | ------- | ---------------- |
 | 1.15.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

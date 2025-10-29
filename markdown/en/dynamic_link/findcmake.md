@@ -33,6 +33,8 @@ CMake is used internaly to generate makefiles used to build dynamic libraries on
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

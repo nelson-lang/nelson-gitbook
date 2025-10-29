@@ -101,6 +101,8 @@ view(-66.5, 12);
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -34,6 +34,8 @@ celldisp(C, 'var_name')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

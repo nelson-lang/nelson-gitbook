@@ -96,6 +96,8 @@ bar(y, 'FaceColor', [0 .5 .5], 'EdgeColor', [0 .9 .9], 'LineWidth', 1.5)
 | 1.0.0   | initial version                         |
 | 1.12.0  | Color name or short color name managed. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

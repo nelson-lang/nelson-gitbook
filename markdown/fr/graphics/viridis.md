@@ -46,6 +46,8 @@ colormap('viridis');
 | ------- | ---------------- |
 | 1.0.0   | Version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

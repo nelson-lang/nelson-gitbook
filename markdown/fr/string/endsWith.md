@@ -49,6 +49,8 @@ k = endsWith(A, "son")
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

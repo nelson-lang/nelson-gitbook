@@ -29,6 +29,8 @@ Obtient l'état actuel du mode hold.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

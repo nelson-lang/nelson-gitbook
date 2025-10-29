@@ -192,6 +192,8 @@ hold off;
 | 1.12.0  | color name and short color name managed.      |
 | 1.14.0  | Scatter is a graphics object with Properties. |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

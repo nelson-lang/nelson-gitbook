@@ -51,6 +51,8 @@ JPVT_IN = zeros(1, M);
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 SLICOT Documentation
+-->

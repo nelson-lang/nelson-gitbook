@@ -37,6 +37,8 @@ ce = struct2cell(st)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -40,6 +40,8 @@ R = h5ls([tempdir(), 'myfile.h5'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

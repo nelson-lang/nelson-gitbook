@@ -40,6 +40,8 @@ If file does not exist an error is raised.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

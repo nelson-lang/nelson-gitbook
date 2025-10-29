@@ -37,6 +37,8 @@ V = linspace(1+2i, 10+10i, 4)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

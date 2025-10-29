@@ -89,6 +89,8 @@ figure('Name', 'Hello')
 | 1.13.0  | Ajout de la propriété DevicePixelRatio.                                                               |
 | 1.14.0  | Ajout de la propriété WindowState.                                                                    |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

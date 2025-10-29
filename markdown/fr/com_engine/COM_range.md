@@ -8,6 +8,8 @@ Fonction privée : assistant de plage.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

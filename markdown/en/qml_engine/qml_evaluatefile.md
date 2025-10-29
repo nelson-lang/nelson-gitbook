@@ -40,6 +40,8 @@ qml_evaluatefile(test_file)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

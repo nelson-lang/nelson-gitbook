@@ -42,6 +42,8 @@ e = fileparts([nelsonroot(), '/etc/finish.m'], 'extension')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

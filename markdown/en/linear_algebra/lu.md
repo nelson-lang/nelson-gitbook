@@ -64,6 +64,8 @@ title(_('U factor'))
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

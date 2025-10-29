@@ -74,6 +74,8 @@ B = [0 1; -1/sqrt(2) 0];
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

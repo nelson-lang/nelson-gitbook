@@ -44,6 +44,8 @@ Renvoie le jour de la semaine.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

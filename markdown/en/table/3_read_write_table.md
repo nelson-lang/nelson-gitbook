@@ -58,6 +58,8 @@ T2 = readtable(filename);
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

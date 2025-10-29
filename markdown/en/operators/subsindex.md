@@ -20,6 +20,8 @@ If <b>O</b> is an object then <b>subsindex</b> is the overloading method that al
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -26,6 +26,8 @@ A = eye(3, 3); siogetvariable('A')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

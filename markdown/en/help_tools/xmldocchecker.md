@@ -43,6 +43,8 @@ xmldocchecker([nelsonroot(),'/module_skeleton/help/en_US/xml/nelson_sum.xml'])
 | 1.0.0   | initial version                    |
 | 1.15.0  | Use xmlchecker for XML validation. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

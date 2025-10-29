@@ -34,6 +34,8 @@ With the input argument 'fullpath', the string includes the directory part of th
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

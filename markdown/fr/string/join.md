@@ -57,6 +57,8 @@ R = join(str, delimiters)
 | ------- | ---------------- |
 | 1.10.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

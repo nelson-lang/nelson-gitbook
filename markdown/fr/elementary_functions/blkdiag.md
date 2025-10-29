@@ -34,6 +34,8 @@ blkdiag(magic(2), magic(3), magic(4))
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

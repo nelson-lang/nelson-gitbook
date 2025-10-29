@@ -58,6 +58,8 @@ run([modulepath('dynamic_link'), '/examples/call_fortran.m']);
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

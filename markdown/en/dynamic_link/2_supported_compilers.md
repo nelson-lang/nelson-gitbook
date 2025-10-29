@@ -24,6 +24,8 @@
 
 [configuremsvc](../dynamic_link/configuremsvc.md), [vswhere](../dynamic_link/vswhere.md), [configuremingw](../dynamic_link/configuremingw.md).
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

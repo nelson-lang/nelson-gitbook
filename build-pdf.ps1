@@ -20,7 +20,8 @@ if (-not [System.IO.Path]::IsPathRooted($FileListPath)) {
 
 if (-not (Test-Path $FileListPath)) {
     Write-Host "ERROR: File list not found: $FileListPath" -ForegroundColor Red
-    Cleanup; exit 1
+    Cleanup-Temp
+    exit 1
 }
 
 $files = Get-Content $FileListPath -ErrorAction Stop
@@ -29,7 +30,8 @@ Write-Host "Total files: $($files.Count)"
 
 if ($files.Count -eq 0) {
     Write-Host "ERROR: File list is empty: $FileListPath" -ForegroundColor Red
-    Cleanup; exit 1
+    Cleanup-Temp
+    exit 1
 } else {
     Write-Host "Sample file list entries (first 10):"
     $files | Select-Object -First 10 | ForEach-Object { Write-Host "  $_" }
@@ -230,7 +232,8 @@ if ($wkhtmlPath) {
     Write-Host "  - wkhtmltopdf (Windows): https://wkhtmltopdf.org/downloads.html" -ForegroundColor Yellow
     Write-Host "  - or install via Chocolatey: choco install wkhtmltopdf -y (requires Chocolatey)" -ForegroundColor Yellow
     Write-Host "  - weasyprint (requires Python + cairo/pango): pip install weasyprint (see https://weasyprint.org/docs/install/)" -ForegroundColor Yellow
-    Cleanup; exit 1
+    Cleanup-Temp
+    exit 1
 }
 
 # ---------------------------
@@ -357,7 +360,6 @@ foreach ($file in $sortedFiles) {
         '2705'  = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x2705)); desc = 'check' }
         '274c'  = @{ char = [System.Text.Encoding]::UTF32.GetString([System.BitConverter]::GetBytes(0x274C)); desc = 'cross' }
     }
-    
     # Replace each emoji with an inline image using Twemoji CDN
     # The images are sized to match text (0.9em) and aligned with baseline for proper inline display
     # We add a data-emoji attribute to identify these as inline emojis (not content images)
@@ -365,24 +367,18 @@ foreach ($file in $sortedFiles) {
         $emojiChar = $emojiMap[$codepoint].char
         $emojiDesc = $emojiMap[$codepoint].desc
         $imgTag = "<img data-emoji='true' src='https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/$codepoint.png' alt='$emojiDesc' style='display: inline-block; width: 0.9em; height: 0.9em; vertical-align: -0.1em; margin: 0 0.05em;'>"
-        $content = $content.Replace($emojiChar, $imgTag)
+        # Replace any occurrence of the emoji character with the Twemoji <img> tag.
+        # Use regex escape to avoid treating the character as a special regex token.
+        try {
+            $pattern = [regex]::Escape($emojiChar)
+            $content = [regex]::Replace($content, $pattern, { param($m) $imgTag })
+        } catch {
+            # If replacement fails for any reason, continue without stopping the whole process.
+            # Use a formatted string to avoid ambiguous variable parsing (e.g. "$codepoint: $_" can be mis-parsed).
+            Write-Host ("Warning: failed to replace emoji {0}: {1}" -f $codepoint, $_) -ForegroundColor Yellow
+        }
     }
     
-    # Remove ## Author and ## Auteur sections (heading and content until next heading or end)
-    # Handle variations: different heading levels (#, ##, ###, ####), case variations, emoji (👤 or text), and potential extra spaces
-    # This regex matches any heading (1-4 levels) with Author/Auteur (with or without emoji) and removes everything until the next heading or end of file
-    # Enhanced to handle: trailing colons, various whitespace, and any Unicode emoji
-    $content = $content -replace '(?mis)^\s{0,3}#{1,6}\s*(?:[\p{So}\p{Sk}\p{P}\p{S}\s]*)*(?:author|auteur)s?\s*:?\s*$.*?(?=^\s{0,3}#{1,6}\s|\z)', ''
-    
-    # Remove single-line patterns such as "Author: Name" or "Auteur: Name"
-    $content = $content -replace '(?mi)^\s*(?:author|auteur)s?\s*:\s*.+$', ''
-    
-    # Remove two-line patterns where a bare "Author" / "Auteur" line is followed by a short non-heading line (the author name).
-    # Use a safer pattern that doesn't embed single-quote/backtick characters inside the literal.
-    $content = $content -replace '(?mis)^\s*(?:author|auteur)s?\s*\r?\n\s*(?!#{1,6})(.{1,120})\s*(?=\r?\n|\z)', ''
-    
-    # Also clean up any potential multiple blank lines left behind by the removal
-    $content = $content -replace '(?m)^\s*$\n(?:\s*$\n)+', "`n`n"
     
     # Remove inline width/height attributes from img tags to let CSS control sizing
     $content = [regex]::Replace($content, '<img([^>]*)\s+width="[^"]*"', '<img$1')
@@ -655,9 +651,7 @@ try {
     # Enable emoji support so markdown emojis render correctly instead of as square characters
     $pandocArgs += "--from=markdown+emoji"
     $pandocArgs += "--css=pdf-style-v2.css"
-    # Use --mathml instead of --webtex to avoid SSL/network issues with external LaTeX rendering services
-    # MathML is supported by modern browsers and wkhtmltopdf's rendering engine
-    $pandocArgs += "--mathml"
+    $pandocArgs += "--webtex"
     $pandocArgs += "--syntax-highlighting=pygments"
     $pandocArgs += $tempMarkdown
     $pandocArgs += "-o"
@@ -665,37 +659,50 @@ try {
 
     if (-not (Test-Path $tempMarkdown)) {
         Write-Host "ERROR: Combined markdown file not found: $tempMarkdown" -ForegroundColor Red
-        Cleanup; exit 1
+        Cleanup-Temp
+        exit 1
     }
 
     & pandoc @pandocArgs
 
     # Clean up temporary file
-    Cleanup
+    Remove-Item $tempMarkdown -ErrorAction SilentlyContinue
 
+    # Clean up converted images dir
+    if (Test-Path $convertedDir) {
+        Remove-Item $convertedDir -Recurse -Force -ErrorAction SilentlyContinue
+    }
+    
     if (Test-Path $OutputFile) {
         Write-Host "SUCCESS: PDF generated: $OutputFile" -ForegroundColor Green
-        Cleanup; exit 0
+        exit 0
     } else {
         Write-Host "ERROR: PDF file was not created" -ForegroundColor Red
-        Cleanup; exit 1
+        exit 1
     }
 } catch {
     Write-Host "ERROR: Pandoc execution failed: $_" -ForegroundColor Red
-    Cleanup; exit 1
+    if (Test-Path $tempMarkdown) {
+        Remove-Item $tempMarkdown
+    }
+    # Clean up converted images dir on error too
+    if (Test-Path $convertedDir) {
+        Remove-Item $convertedDir -Recurse -Force
+    }
+    exit 1
 }
 
 # ---------------------------
-# Cleanup helper: remove temp files/dirs if they exist
-function Cleanup {
+# centralized cleanup for temporary artifacts
+function Cleanup-Temp {
     try {
         if ($tempMarkdown -and (Test-Path $tempMarkdown)) {
             Remove-Item $tempMarkdown -Force -ErrorAction SilentlyContinue
         }
-    } catch { }
+    } catch {}
     try {
         if ($convertedDir -and (Test-Path $convertedDir)) {
             Remove-Item $convertedDir -Recurse -Force -ErrorAction SilentlyContinue
         }
-    } catch { }
+    } catch {}
 }

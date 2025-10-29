@@ -38,6 +38,8 @@ hr = QObject_findchildren(QObject_root(), 'errordlg', true)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

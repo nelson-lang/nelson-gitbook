@@ -57,6 +57,8 @@ title(_('100-by-100 faces'));
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

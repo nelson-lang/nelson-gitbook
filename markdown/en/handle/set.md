@@ -30,6 +30,8 @@ This routine can be used to modify the value of a specified property from an han
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

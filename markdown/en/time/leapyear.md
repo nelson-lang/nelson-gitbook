@@ -36,6 +36,8 @@ tf = leapyear([2020 2021 2022])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

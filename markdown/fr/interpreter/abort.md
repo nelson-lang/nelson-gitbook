@@ -28,6 +28,8 @@ for i=1:10,a = i,abort,end
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

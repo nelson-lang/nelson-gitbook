@@ -5229,7 +5229,7 @@
     "title": "lin2mu",
     "url": "./audio/lin2mu.html",
     "path": "./audio/lin2mu.html",
-    "content": "Convert audio data from linear singal to mu-law."
+    "content": "Convert audio data from linear signal to mu-law."
   },
   {
     "title": "mu2lin",

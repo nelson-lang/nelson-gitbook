@@ -40,6 +40,8 @@ sys = tf([2, 5, 1], [1, 0, 2, -6]);
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -59,6 +59,8 @@ waitfor(hButton, 'Value', 1);
 | ------- | --------------- |
 | 1.7.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

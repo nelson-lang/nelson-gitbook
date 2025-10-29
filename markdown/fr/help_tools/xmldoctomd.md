@@ -31,6 +31,8 @@ Convertit des fichiers d'aide XML Nelson au format Markdown.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

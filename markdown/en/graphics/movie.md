@@ -82,6 +82,8 @@ run([examples_directory, 'movie/demo_movie.m']);
 | ------- | --------------- |
 | 1.13.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

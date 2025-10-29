@@ -39,6 +39,8 @@ all([33, 22; 11, 0], 2)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

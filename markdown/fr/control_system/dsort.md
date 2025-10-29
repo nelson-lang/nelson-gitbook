@@ -43,6 +43,8 @@ p = [-2.410 + 5.573i;
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

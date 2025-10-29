@@ -82,6 +82,8 @@ compiler_info = version('-compiler')
 | 1.0.0   | initial version           |
 | 1.2.0   | `-semantic` option added. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -62,6 +62,8 @@ uicontrol_demo_interruptible
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

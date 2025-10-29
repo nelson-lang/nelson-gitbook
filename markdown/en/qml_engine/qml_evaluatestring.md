@@ -36,6 +36,8 @@ qml_evaluatestring('a = 2 + 4')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

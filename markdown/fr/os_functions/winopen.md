@@ -28,6 +28,8 @@ Si filename n'est pas dans le répertoire courant, spécifiez le chemin absolu.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

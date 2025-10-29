@@ -39,6 +39,8 @@ DB = mag2db([1, 0.01])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -103,6 +103,8 @@ edit([modules_installed.module_skeleton_basic.path, 'module.json']);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

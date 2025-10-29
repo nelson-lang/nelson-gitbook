@@ -36,6 +36,8 @@ Tous les modules du cœur sont protégés et ne peuvent pas être supprimés pen
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

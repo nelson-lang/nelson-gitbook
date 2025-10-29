@@ -47,6 +47,8 @@ R = char(["these"; "are"; "test"; "strings"])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

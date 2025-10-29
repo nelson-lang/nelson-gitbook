@@ -46,6 +46,8 @@ isequal(R_A, R_B)
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -39,6 +39,8 @@ This utility is intended for internal use and may be updated over time.
 | ------- | --------------- |
 | 1.10.0  | Initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -62,6 +62,8 @@ A = {'hi', 'good'; 'good', 'tell'; 'hi', 'bye'}
 | ------- | --------------- |
 | 1.6.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -164,6 +164,8 @@ T.Properties.VariableTypes
 | 1.8.0   | version initiale       |
 | 1.10.0  | VariableTypes property |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -54,6 +54,8 @@ n = vecnorm(A, 1)
 | ------- | ---------------- |
 | 1.3.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -61,6 +61,8 @@ edit([modulepath('webtools'),'/examples/webread_demo_3.m'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

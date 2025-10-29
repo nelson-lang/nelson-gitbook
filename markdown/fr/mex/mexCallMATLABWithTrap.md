@@ -41,6 +41,8 @@ edit([modulepath('mex', 'tests'), '/test_mexCallMATLABWithTrap.m'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

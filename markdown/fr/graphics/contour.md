@@ -138,6 +138,8 @@ f = figure();
 | 1.7.0   | CreateFcn, DeleteFcn callback added. |
 | --      | BeingDeleted property added.         |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

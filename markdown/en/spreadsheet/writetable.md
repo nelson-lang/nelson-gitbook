@@ -74,6 +74,8 @@ writetable(T, 'data.txt', 'WriteMode', 'append', 'WriteRowNames', true)
 | ------- | ---------------- |
 | 1.10.0  | Initial version. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->
