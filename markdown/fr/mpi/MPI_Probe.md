@@ -33,6 +33,8 @@ Test bloquant pour vérifier la présence d'un message.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

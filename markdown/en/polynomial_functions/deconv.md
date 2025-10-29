@@ -44,6 +44,8 @@ a = [1; 1];      % Divisor (x + 1)
 | ------- | --------------- |
 | 1.3.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

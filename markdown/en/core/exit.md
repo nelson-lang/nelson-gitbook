@@ -24,6 +24,8 @@ This function is equivalent to the <b>quit</b> function.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -78,6 +78,8 @@ R = dlmread(filename, '', 1, 0)
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

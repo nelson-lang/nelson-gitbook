@@ -47,6 +47,8 @@ R = log2(x)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

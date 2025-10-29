@@ -42,6 +42,8 @@ d = dictionary(wheels, names)
 | ------- | ---------------- |
 | 1.5.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

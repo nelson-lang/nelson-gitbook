@@ -43,6 +43,8 @@ Y = nthroot(X, N)
 | ------- | --------------- |
 | 1.6.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

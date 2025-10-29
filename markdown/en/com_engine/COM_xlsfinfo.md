@@ -38,6 +38,8 @@ Query Excel spreadsheet file filename for some information about its contents.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

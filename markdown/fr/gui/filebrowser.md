@@ -22,6 +22,8 @@ L'explorateur du dossier courant dans Nelson facilite la gestion interactive des
 | ------- | ---------------- |
 | 1.1.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

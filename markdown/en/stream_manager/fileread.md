@@ -54,6 +54,8 @@ T2 = fileread([tempdir(), 'example_fileread.txt'], 'string', 'native', 'auto')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -49,6 +49,8 @@ S1 = table2struct(T, "ToScalar", true)
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

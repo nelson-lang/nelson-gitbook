@@ -28,6 +28,8 @@ Invoque une méthode sur un objet handle.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

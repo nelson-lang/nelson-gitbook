@@ -46,6 +46,8 @@ xlabel('X axis Label - Unicode ドラゴンボールX(ゼット)')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -43,6 +43,8 @@ a = [1 -3*cos(dt) 1];
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -36,6 +36,8 @@ randperm(7)
 | 1.0.0   | version initiale                                                           |
 | 1.15.0  | ajout du second argument d'entrée pour le nombre d'éléments à sélectionner |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

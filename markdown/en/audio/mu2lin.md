@@ -38,6 +38,8 @@ l = mu2lin([0:20:255])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

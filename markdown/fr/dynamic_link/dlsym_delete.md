@@ -33,6 +33,8 @@ dlsym_used(),delete(dlsym_used())
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -35,6 +35,8 @@ mustBeGreaterThanOrEqual([2 3 4],5)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

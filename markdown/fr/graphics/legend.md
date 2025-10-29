@@ -84,6 +84,8 @@ legend('sin(x)', 'cos(x)', 'Location', 'N')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

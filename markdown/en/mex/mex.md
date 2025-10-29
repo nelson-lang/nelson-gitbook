@@ -70,6 +70,8 @@ Supported options: compilation or link.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

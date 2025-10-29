@@ -36,6 +36,8 @@ QObject_methodsignature(h, 'setVisible')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

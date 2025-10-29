@@ -74,6 +74,8 @@ run([tempdir(), 'example_run_not_ok.m'], 'nocatch');
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

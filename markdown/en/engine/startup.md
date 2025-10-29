@@ -26,6 +26,8 @@ Customizing the <b>startup.m</b> file allows you to establish a tailored environ
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

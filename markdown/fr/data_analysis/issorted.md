@@ -49,6 +49,8 @@ issorted(A, 'rows') % returns false
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

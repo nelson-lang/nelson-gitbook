@@ -26,6 +26,8 @@ Internal limit on the number of times a function may be called recursively.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

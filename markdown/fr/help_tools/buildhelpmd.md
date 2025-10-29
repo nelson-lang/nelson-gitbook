@@ -33,6 +33,8 @@ buildhelpmd(tempdir(), 'core');
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

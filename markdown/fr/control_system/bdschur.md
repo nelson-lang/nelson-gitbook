@@ -55,6 +55,8 @@ A = [1.   -1.    1.    2.    3.    1.    2.    3.;
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 SLICOT Documentation
+-->

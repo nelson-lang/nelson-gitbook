@@ -52,6 +52,8 @@ end
 | 1.0.0   | initial version                                  |
 | 1.4.0   | input arguments support scalar string array type |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

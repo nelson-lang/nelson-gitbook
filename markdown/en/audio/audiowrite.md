@@ -17,7 +17,7 @@ Writes an audio file.
 
 ## 📄 Description
 
-<b>audiorwrite</b> writes an audio file.
+<b>audiowrite</b> writes an audio file.
 
 More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.
 
@@ -47,6 +47,8 @@ audiowrite(dest_caf, y, fs);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

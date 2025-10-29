@@ -37,6 +37,8 @@ h.windowTitle % or get(h, 'windowTitle')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

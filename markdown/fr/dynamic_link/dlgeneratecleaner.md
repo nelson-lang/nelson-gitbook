@@ -36,6 +36,8 @@ text = fileread([tempdir(), 'cleaner.m'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

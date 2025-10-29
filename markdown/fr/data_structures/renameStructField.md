@@ -45,6 +45,8 @@ date_st = renameStructField(date_st, 'day', 'jour')
 | ------- | ---------------- |
 | 1.15.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -38,6 +38,8 @@ sys = parallel(sys2, sys2)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

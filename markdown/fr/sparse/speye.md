@@ -47,6 +47,8 @@ tic();S = sparse(eye(5000, 5000));toc()
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

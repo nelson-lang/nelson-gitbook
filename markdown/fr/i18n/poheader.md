@@ -35,6 +35,8 @@ poheader('nelson', 'fr_FR')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -44,6 +44,8 @@ strtrim([' Nel Son', char(160)])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -79,6 +79,8 @@ rand(3, 2, 'like', v)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -74,6 +74,8 @@ C_IN = [-0.1      0.0    0.001    0.0;
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 SLICOT Documentation
+-->

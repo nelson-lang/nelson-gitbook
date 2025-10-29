@@ -36,6 +36,8 @@ narginchk(1, 2)
 | 1.0.0   | initial version           |
 | 1.10.0  | narginchk(3, Inf) managed |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

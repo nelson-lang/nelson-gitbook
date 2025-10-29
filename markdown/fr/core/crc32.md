@@ -59,6 +59,8 @@ R = crc32([modulepath('matio', 'tests'), '/mat/test_char_array_unicode_7.4_GLNX8
 | ------- | ---------------- |
 | 1.15.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

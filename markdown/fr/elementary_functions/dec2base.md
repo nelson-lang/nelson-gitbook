@@ -42,6 +42,8 @@ Y = dec2base(X, 2, 26)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

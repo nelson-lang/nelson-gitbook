@@ -70,6 +70,8 @@ view(2)
 | 1.0.0   | Version initiale                               |
 | 1.2.0   | Azimut et élévation comme arguments de sortie. |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -38,6 +38,8 @@ R = gammaln([0:0.1:pi])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

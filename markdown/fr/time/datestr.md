@@ -148,6 +148,8 @@ datestr(dateStringIn,formatOut, pivotYear)
 | ------- | ---------------- |
 | 1.8.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

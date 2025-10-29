@@ -26,6 +26,8 @@ Limite interne du nombre de fois qu'une fonction peut être appelée récursivem
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

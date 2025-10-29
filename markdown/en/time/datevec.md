@@ -42,6 +42,8 @@ V = datevec([720840, now()])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

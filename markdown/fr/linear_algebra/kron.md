@@ -20,27 +20,21 @@ Produit tensoriel de Kronecker.
 <b>K = kron(A, B)</b> calcule le produit tensoriel de Kronecker des matrices <b>A</b> et <b>B</b>.
 
 Pour des matrices
-
 $$A$$
 
 de taille
-
 $$m \times n$$
 
 et
-
 $$B$$
 
 de taille
-
 $$p \times q$$
 
 , le produit de Kronecker est :
-
 $$A \otimes B = \begin{pmatrix} a_{11}B & a_{12}B & \cdots & a_{1n}B \\ a_{21}B & a_{22}B & \cdots & a_{2n}B \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1}B & a_{m2}B & \cdots & a_{mn}B \end{pmatrix}$$
 
 Le résultat est une matrice
-
 $$mp \times nq$$
 
 .
@@ -68,6 +62,8 @@ K = kron(A, B)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

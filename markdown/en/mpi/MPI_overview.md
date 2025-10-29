@@ -18,6 +18,8 @@ MPI features are only avaible in CLI mode. But you can call in others mode with 
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

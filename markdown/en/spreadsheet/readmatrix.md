@@ -62,6 +62,8 @@ M3 = readmatrix(filename, options, 'OutputType', 'char')
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

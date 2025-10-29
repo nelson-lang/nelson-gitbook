@@ -48,6 +48,8 @@ savemat([tempdir(), 'example_loadmat-v6.mat'], 'A', '-v6')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

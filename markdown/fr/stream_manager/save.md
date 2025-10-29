@@ -86,6 +86,8 @@ no_compression = dir([tempdir(), 'example_save_no_compression.mat'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

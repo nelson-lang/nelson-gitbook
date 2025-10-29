@@ -52,6 +52,8 @@ tail(A)
 | ------- | ---------------- |
 | 1.9.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

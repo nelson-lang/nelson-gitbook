@@ -29,6 +29,8 @@ Récupère la valeur d'une propriété d'un objet handle.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

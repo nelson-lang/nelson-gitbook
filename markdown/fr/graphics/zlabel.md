@@ -46,6 +46,8 @@ zlabel('Étiquette de l’axe Z - Unicode ドラゴンボールZ(ゼット)')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

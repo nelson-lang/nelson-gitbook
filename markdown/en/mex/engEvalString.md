@@ -36,6 +36,8 @@ edit([modulepath('mex'), '/examples/mex_engine_demo_2.c'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

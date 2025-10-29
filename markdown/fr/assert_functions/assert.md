@@ -77,6 +77,8 @@ assert(x < 0)  % Will fail with default message
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

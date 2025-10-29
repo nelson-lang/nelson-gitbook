@@ -38,6 +38,8 @@ listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
 | ------- | ---------------- |
 | 1.14.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

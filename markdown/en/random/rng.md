@@ -59,14 +59,13 @@ Random Number Generator.
 <b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by <b>s = rng</b>.
 
 Available generators are:
-
-| Value           | Generator Name                       | Generator Keyword |
-| --------------- | ------------------------------------ | ----------------- |
-| "twister"       | Mersenne Twister                     | mt19937ar         |
-| "simdTwister"   | SIMD-Oriented Fast Mersenne Twister  | dsfmt19937        |
-| "combRecursive" | Combined Multiple Recursive          | mrg32k3a          |
-| "multFibonacci" | Multiplicative Lagged Fibonacci      | mlfg6331_64       |
-| "philox"        | Philox 4x32 generator with 10 rounds | philox4x32_10     |
+| Value | Generator Name | Generator Keyword |
+| --- | --- | --- |
+| "twister" | Mersenne Twister | mt19937ar |
+| "simdTwister" | SIMD-Oriented Fast Mersenne Twister | dsfmt19937 |
+| "combRecursive" | Combined Multiple Recursive | mrg32k3a |
+| "multFibonacci" | Multiplicative Lagged Fibonacci | mlfg6331_64 |
+| "philox" | Philox 4x32 generator with 10 rounds | philox4x32_10 |
 
 Default generator is "twister".
 
@@ -89,6 +88,8 @@ lst = rng('enginelist')
 | 1.0.0   | initial version                                                 |
 | 1.15.0  | New random number generator: simdTwister, combRecursive, philox |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

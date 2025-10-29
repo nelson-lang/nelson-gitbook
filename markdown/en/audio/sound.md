@@ -37,6 +37,8 @@ sound(signal, 44110, 16)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

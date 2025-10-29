@@ -28,6 +28,8 @@ If filename is not in the current directory, specify the absolute path for filen
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

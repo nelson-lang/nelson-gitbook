@@ -70,6 +70,8 @@ jlenv('Version', ''C:\WindowsTools\Julia-1.11.6\bin\julia.exe'')
 | ------- | ---------------- |
 | 1.12.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

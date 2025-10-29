@@ -42,6 +42,8 @@ f = parfeval(b, fptr, 1, 9);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

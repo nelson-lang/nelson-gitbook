@@ -42,6 +42,8 @@ assert_isfalse(is2D(ax));
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

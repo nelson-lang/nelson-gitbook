@@ -41,6 +41,8 @@ mpiexec([modulepath('mpi'), '/examples/help_examples/MPI_Allreduce.m'], 4)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -35,6 +35,8 @@ mustBeMatrix(ones(3, 2, 4))
 | ------- | ---------------- |
 | 1.10.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

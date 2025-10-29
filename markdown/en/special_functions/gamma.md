@@ -19,19 +19,15 @@ Gamma special function
 <b>gamma</b> computes the gamma function.
 
 The gamma function is defined by the integral:
-
 $$\Gamma(z) = \int_0^{\infty} t^{z-1} e^{-t} \, dt$$
 
 for
-
 $$\text{Re}(z) > 0$$
 
 The gamma function extends the factorial function to real and complex numbers:
-
 $$\Gamma(n) = (n-1)!$$
 
 for positive integers
-
 $$n$$
 
 Key properties include:
@@ -56,6 +52,8 @@ R = gamma([-pi:0.1:pi])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

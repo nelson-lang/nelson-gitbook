@@ -51,6 +51,8 @@ Z = X .* exp(-X.^2 - Y.^2);
 | ------- | ---------------- |
 | 1.3.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -71,6 +71,8 @@ A = arrayfun(@(x) mean(x.f1), S, 'UniformOutput', false);
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

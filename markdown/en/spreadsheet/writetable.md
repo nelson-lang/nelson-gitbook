@@ -25,11 +25,13 @@ Output formats supported:
 
 - <b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.
 - <b>XML files:</b> Each variable in <b>T</b> becomes an XML node, with variable names as element node names.
-  To specify the file name explicitly, use <b>writetable(T, filename)</b>. The file format is determined by the file extension:
+
+To specify the file name explicitly, use <b>writetable(T, filename)</b>. The file format is determined by the file extension:
 
 - <b>.txt</b>, <b>.dat</b>, <b>.csv</b>: Delimited text files.
 - <b>.xml</b>: XML files.
-  <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
+
+<b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
 
 - <b>WriteRowNames:</b> Include row names in the output file (default: <code>false</code>).
 - <b>FileType:</b> Specify file format (<code>'text'</code> or <code>'xml'</code>).
@@ -72,6 +74,8 @@ writetable(T, 'data.txt', 'WriteMode', 'append', 'WriteRowNames', true)
 | ------- | ---------------- |
 | 1.10.0  | Initial version. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -30,6 +30,8 @@ It is a helper function for debugging Nelson.
 | ------- | --------------- |
 | 1.2.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -33,6 +33,8 @@ Convertit des fichiers d'aide XML Nelson en HTML.
 | 1.0.0   | version initiale         |
 | 1.15.0  | html_type input argument |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

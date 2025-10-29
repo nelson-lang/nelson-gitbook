@@ -74,6 +74,8 @@ T = struct2table(S)
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -31,7 +31,8 @@ L'option de boîte englobante contrôle la taille de l'image de sortie :
 
 - <b>'loose'</b> : l'image de sortie est dimensionnée pour contenir l'image tournée en entier. Cela peut donner une image plus grande que l'entrée.
 - <b>'crop'</b> : l'image de sortie est recadrée à la même taille que l'image d'entrée. Des parties de l'image tournée peuvent être coupées.
-  Les pixels de fond (zones non couvertes par l'image tournée) sont remplis de zéros.
+
+Les pixels de fond (zones non couvertes par l'image tournée) sont remplis de zéros.
 
 Note:
 
@@ -138,6 +139,8 @@ end
 | ------- | ---------------- |
 | 1.14.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

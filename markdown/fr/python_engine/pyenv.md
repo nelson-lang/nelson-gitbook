@@ -74,6 +74,8 @@ end
 | 1.4.0   | environment variables to force python environment |
 | 1.4.0   | On Windows find python by Windows registry.       |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

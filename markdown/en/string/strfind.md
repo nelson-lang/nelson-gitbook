@@ -49,6 +49,8 @@ k = strfind(str,'in','ForceCellOutput',false)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

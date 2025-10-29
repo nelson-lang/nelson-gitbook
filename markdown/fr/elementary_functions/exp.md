@@ -19,11 +19,9 @@ Exponentielle
 <b>exp</b> calcule la fonction exponentielle.
 
 Pour les nombres réels :
-
 $$e^x$$
 
 Pour les nombres complexes <b>z = x + iy</b> :
-
 $$e^z = e^x(\cos y + i\sin y)$$
 
 ## 💡 Exemple
@@ -43,6 +41,8 @@ r = exp(x)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

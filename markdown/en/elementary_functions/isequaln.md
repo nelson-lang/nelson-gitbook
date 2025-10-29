@@ -19,7 +19,7 @@ Return true if all arguments x1, x2, ... , xn are equal (same dimensions, same v
 
 ## 📄 Description
 
-<b>isequaln</b> returns true if x1 and x2 are the same size and same values; otherwise, it returns false. <b>isequaln</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be <b>equal</b> to other elements.
+<b>isequaln</b> returns true if x1 and x2 are the same size and same values; otherwise, it returns false.<b>isequaln</b> compares real and imaginary parts of numeric arrays. NaN (Not a Number) values are considered to be <b>equal</b> to other elements.
 
 ## 💡 Examples
 
@@ -53,6 +53,8 @@ res = isequaln(NaN, NaN)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

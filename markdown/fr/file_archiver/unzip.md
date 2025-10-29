@@ -37,6 +37,8 @@ r = unzip([tempdir(), 'test.zip'], [tempdir(), createGUID()])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

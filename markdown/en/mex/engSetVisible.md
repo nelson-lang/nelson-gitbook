@@ -36,6 +36,8 @@ edit([modulepath('mex', 'tests'), '/test_engine.c'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

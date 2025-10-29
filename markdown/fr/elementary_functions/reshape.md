@@ -41,6 +41,8 @@ M2 = reshape(M1, 5, [], 4)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -55,6 +55,8 @@ jlrun(["a = 3","print(a)"])
 | ------- | --------------- |
 | 1.12.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

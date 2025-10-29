@@ -35,6 +35,8 @@ text = fileread([tempdir(), 'Gateway.cpp'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

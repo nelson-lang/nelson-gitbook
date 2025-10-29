@@ -71,6 +71,8 @@ disp(r.body.devices.dashboard_data)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

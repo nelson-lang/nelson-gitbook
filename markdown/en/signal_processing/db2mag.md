@@ -34,6 +34,8 @@ mag = db2mag([0, -20])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -1,279 +1,213 @@
-<!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
-    <head>
-        <!-- Book generated using mdBook -->
-        <meta charset="UTF-8">
-        <title>control_system - Nelson</title>
-
-
-        <!-- Custom HTML head -->
-
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
-
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
-
-        <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
-
-        <!-- Custom theme stylesheets -->
-
-
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
-        <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
-    </head>
-    <body>
-    <div id="body-container">
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
-                }
-
-                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
-                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
-                }
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            const html = document.documentElement;
-            html.classList.remove('light')
-            html.classList.add(theme);
-            html.classList.add("js");
-        </script>
-
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
-
-        <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
-            }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
-        </script>
-
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <!-- populated by js -->
-            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
-            <noscript>
-                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
-            </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
-        </nav>
-
-        <div id="page-wrapper" class="page-wrapper">
-
-            <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
-                    <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
-                        </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
-                        </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
-                        </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-
-                    <h1 class="menu-title">Nelson</h1>
-
-                    <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
-                    </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
-                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
-                    });
-                </script>
-
-                <div id="content" class="content">
-                    <main>
-                        <h1 id="control-system-functions"><a class="header" href="#control-system-functions">Control System functions</a></h1>
-<p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p>
-<p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p>
-<p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p>
-<p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.</p>
-<h2 id="functions"><a class="header" href="#functions">Functions</a></h2>
-<ul>
-<li><a href="abcdchk.html">abcdchk</a> - Verifies the dimensional compatibility of matrices A, B, C, and D.</li>
-<li><a href="acker.html">acker</a> - Pole placement gain selection using Ackermann's formula.</li>
-<li><a href="append.html">append</a> - Appends the inputs and outputs of the two models.</li>
-<li><a href="augstate.html">augstate</a> - Append state vector to output vector.</li>
-<li><a href="balreal.html">balreal</a> - Gramian-based balancing of state-space realizations.</li>
-<li><a href="bdschur.html">bdschur</a> - Block-diagonal Schur factorization.</li>
-<li><a href="bode.html">bode</a> - Bode plot of frequency response, magnitude and phase data.</li>
-<li><a href="c2d.html">c2d</a> - Convert model from continuous to discrete time.</li>
-<li><a href="care.html">care</a> - Continuous-time algebraic Riccati equation solution.</li>
-<li><a href="cloop.html">cloop</a> - Feedback connection of multiple models.</li>
-<li><a href="compreal.html">compreal</a> - Companion realization of transfer functions.</li>
-<li><a href="ctrb.html">ctrb</a> - Controllability of state-space model.</li>
-<li><a href="ctrbf.html">ctrbf</a> - Compute controllability staircase form.</li>
-<li><a href="d2c.html">d2c</a> - Convert model from discrete to continuous time.</li>
-<li><a href="damp.html">damp</a> - Natural frequency and damping ratio.</li>
-<li><a href="dare.html">dare</a> - Discret-time algebraic Riccati equation solution.</li>
-<li><a href="dcgain.html">dcgain</a> - Low-frequency (DC) gain of LTI system.</li>
-<li><a href="dlqr.html">dlqr</a> - Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</li>
-<li><a href="dlyap.html">dlyap</a> - Discrete-time Lyapunov equations.</li>
-<li><a href="dsort.html">dsort</a> - Sort discrete-time poles by magnitude.</li>
-<li><a href="esort.html">esort</a> - Sort continuous-time poles by real part.</li>
-<li><a href="evalfr.html">evalfr</a> - Evaluate frequency response at given frequency.</li>
-<li><a href="feedback.html">feedback</a> - Feedback connection of multiple models.</li>
-<li><a href="freqresp.html">freqresp</a> - Evaluate system response over a grid of frequencies.</li>
-<li><a href="gensign.html">gensig</a> - Create periodic signals for simulating system response.</li>
-<li><a href="gram.html">gram</a> - Controllability and observability Gramians.</li>
-<li><a href="hsvd.html">hsvd</a> - Hankel singular values of dynamic system.</li>
-<li><a href="impulse.html">impulse</a> - Impulse response plot of dynamic system.</li>
-<li><a href="initial.html">initial</a> - System response to initial states of state-space model.</li>
-<li><a href="isct.html">isct</a> - Checks if dynamic system model is in continuous time.</li>
-<li><a href="isdt.html">isdt</a> - Checks if dynamic system model is in discret time.</li>
-<li><a href="islti.html">islti</a> - Checks if variable is an linear model tf, ss or zpk.</li>
-<li><a href="issiso.html">issiso</a> - Checks if dynamic system model is single input and single output.</li>
-<li><a href="isstatic.html">isstatic</a> - Checks if model is static or dynamic.</li>
-<li><a href="kalman.html">kalman</a> - Design Kalman filter for state estimation.</li>
-<li><a href="lqe.html">lqe</a> - Kalman estimator design for continuous-time systems.</li>
-<li><a href="lqed.html">lqed</a> - Calculates the discrete Kalman estimator configuration based on a continuous cost function.</li>
-<li><a href="lqr.html">lqr</a> - Linear-Quadratic Regulator (LQR) design.</li>
-<li><a href="lqry.html">lqry</a> - Form linear-quadratic (LQ) state-feedback regulator with output weighting.</li>
-<li><a href="lsim.html">lsim</a> - Plot simulated time response of dynamic system to arbitrary inputs.</li>
-<li><a href="lyap.html">lyap</a> - Continuous Lyapunov equation solution.</li>
-<li><a href="minreal.html">minreal</a> - Minimal realization or pole-zero cancellation.</li>
-<li><a href="nyquist.html">nyquist</a> - Nyquist plot of frequency response.</li>
-<li><a href="obsv.html">obsv</a> - Observability of state-space model.</li>
-<li><a href="obsvf.html">obsvf</a> - Compute observability staircase form.</li>
-<li><a href="ord2.html">ord2</a> - Generate continuous second-order systems.</li>
-<li><a href="padecoef.html">padecoef</a> - Computes the Pade approximation of time delays.</li>
-<li><a href="parallel.html">parallel</a> - Parallel connection of two models.</li>
-<li><a href="pole.html">pole</a> - Poles of dynamic system.</li>
-<li><a href="series.html">series</a> - Series connection of two models.</li>
-<li><a href="ss.html">ss</a> - State-space model.</li>
-<li><a href="ss2tf.html">ss2tf</a> - Convert state-space representation to transfer function.</li>
-<li><a href="ssdata.html">ssdata</a> - Access state-space model data.</li>
-<li><a href="ssdelete.html">ssdelete</a> - Remove inputs, outputs and states from state-space system.</li>
-<li><a href="ssselect.html">ssselect</a> - Extract subsystem from larger system.</li>
-<li><a href="step.html">step</a> - Step response plot of dynamic system.</li>
-<li><a href="tf.html">tf</a> - Constructs a transfer function model.</li>
-<li><a href="tf2ss.html">tf2ss</a> - Convert transfer function filter parameters to state-space form.</li>
-<li><a href="tfdata.html">tfdata</a> - Access transfer function model data.</li>
-<li><a href="tzero.html">tzero</a> - Invariant zeros of linear system.</li>
-<li><a href="zero.html">zero</a> - Zeros and gain of SISO dynamic system.</li>
-</ul>
-
-                    </main>
-
-                    <nav class="nav-wrapper" aria-label="Page navigation">
-                        <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../geometry/rotz.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-
-                            <a rel="next prefetch" href="../control_system/abcdchk.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-
-                        <div style="clear: both"></div>
-                    </nav>
-                </div>
-            </div>
-
-            <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../geometry/rotz.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-
-                    <a rel="next prefetch" href="../control_system/abcdchk.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-            </nav>
-
-        </div>
-
-
-
-
-        <script>
-            window.playground_copyable = true;
-        </script>
-
-
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
-
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
-
-        <!-- Custom JS scripts -->
-        <script src="../theme/matlab.min.js"></script>
-
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
+</head>
+<body>
+<img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
+<div class="section-title">Control System functions</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+      <p>The Control System module provides algorithms and tools for designing, analyzing, and tuning linear control systems in Nelson.</p>
+      <p>It supports state-space and transfer function models, system transformations between continuous and discrete time, and computation of poles, zeros, and frequency responses.</p>
+      <p>The module also includes functionality for system balancing, controllability and observability analysis, regulator and estimator design, and simulation of dynamic system responses.</p>
+      <p>These tools enable robust modeling, analysis, and control of linear dynamic systems for engineering and research applications.</p>
     </div>
-    </body>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="abcdchk.html" target="contentFrame">abcdchk</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Verifies the dimensional compatibility of matrices A, B, C, and D.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acker.html" target="contentFrame">acker</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Pole placement gain selection using Ackermann's formula.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="append.html" target="contentFrame">append</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Appends the inputs and outputs of the two models.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="augstate.html" target="contentFrame">augstate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Append state vector to output vector.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="balreal.html" target="contentFrame">balreal</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Gramian-based balancing of state-space realizations.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bdschur.html" target="contentFrame">bdschur</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Block-diagonal Schur factorization.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bode.html" target="contentFrame">bode</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Bode plot of frequency response, magnitude and phase data.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="c2d.html" target="contentFrame">c2d</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert model from continuous to discrete time.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="care.html" target="contentFrame">care</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Continuous-time algebraic Riccati equation solution.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="cloop.html" target="contentFrame">cloop</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Feedback connection of multiple models.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="compreal.html" target="contentFrame">compreal</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Companion realization of transfer functions.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ctrb.html" target="contentFrame">ctrb</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Controllability of state-space model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ctrbf.html" target="contentFrame">ctrbf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compute controllability staircase form.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="d2c.html" target="contentFrame">d2c</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert model from discrete to continuous time.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="damp.html" target="contentFrame">damp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Natural frequency and damping ratio.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dare.html" target="contentFrame">dare</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Discret-time algebraic Riccati equation solution.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dcgain.html" target="contentFrame">dcgain</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Low-frequency (DC) gain of LTI system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dlqr.html" target="contentFrame">dlqr</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear-quadratic (LQ) state-feedback regulator for discrete-time state-space system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dlyap.html" target="contentFrame">dlyap</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Discrete-time Lyapunov equations.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dsort.html" target="contentFrame">dsort</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sort discrete-time poles by magnitude.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="esort.html" target="contentFrame">esort</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sort continuous-time poles by real part.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="evalfr.html" target="contentFrame">evalfr</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Evaluate frequency response at given frequency.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="feedback.html" target="contentFrame">feedback</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Feedback connection of multiple models.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="freqresp.html" target="contentFrame">freqresp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Evaluate system response over a grid of frequencies.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="gensign.html" target="contentFrame">gensig</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Create periodic signals for simulating system response.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="gram.html" target="contentFrame">gram</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Controllability and observability Gramians.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="hsvd.html" target="contentFrame">hsvd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Hankel singular values of dynamic system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="impulse.html" target="contentFrame">impulse</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Impulse response plot of dynamic system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="initial.html" target="contentFrame">initial</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">System response to initial states of state-space model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="isct.html" target="contentFrame">isct</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if dynamic system model is in continuous time.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="isdt.html" target="contentFrame">isdt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if dynamic system model is in discret time.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="islti.html" target="contentFrame">islti</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if variable is an linear model tf, ss or zpk.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="issiso.html" target="contentFrame">issiso</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if dynamic system model is single input and single output.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="isstatic.html" target="contentFrame">isstatic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Checks if model is static or dynamic.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="kalman.html" target="contentFrame">kalman</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Design Kalman filter for state estimation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lqe.html" target="contentFrame">lqe</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Kalman estimator design for continuous-time systems.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lqed.html" target="contentFrame">lqed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Calculates the discrete Kalman estimator configuration based on a continuous cost function.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lqr.html" target="contentFrame">lqr</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear-Quadratic Regulator (LQR) design.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lqry.html" target="contentFrame">lqry</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Form linear-quadratic (LQ) state-feedback regulator with output weighting.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lsim.html" target="contentFrame">lsim</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Plot simulated time response of dynamic system to arbitrary inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lyap.html" target="contentFrame">lyap</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Continuous Lyapunov equation solution.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="minreal.html" target="contentFrame">minreal</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Minimal realization or pole-zero cancellation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nyquist.html" target="contentFrame">nyquist</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Nyquist plot of frequency response.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="obsv.html" target="contentFrame">obsv</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Observability of state-space model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="obsvf.html" target="contentFrame">obsvf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compute observability staircase form.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ord2.html" target="contentFrame">ord2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generate continuous second-order systems.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="padecoef.html" target="contentFrame">padecoef</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Computes the Pade approximation of time delays.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="parallel.html" target="contentFrame">parallel</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Parallel connection of two models.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="pole.html" target="contentFrame">pole</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Poles of dynamic system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="series.html" target="contentFrame">series</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Series connection of two models.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ss.html" target="contentFrame">ss</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">State-space model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ss2tf.html" target="contentFrame">ss2tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert state-space representation to transfer function.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ssdata.html" target="contentFrame">ssdata</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Access state-space model data.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ssdelete.html" target="contentFrame">ssdelete</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Remove inputs, outputs and states from state-space system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ssselect.html" target="contentFrame">ssselect</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Extract subsystem from larger system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="step.html" target="contentFrame">step</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Step response plot of dynamic system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="tf.html" target="contentFrame">tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Constructs a transfer function model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="tf2ss.html" target="contentFrame">tf2ss</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convert transfer function filter parameters to state-space form.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="tfdata.html" target="contentFrame">tfdata</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Access transfer function model data.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="tzero.html" target="contentFrame">tzero</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Invariant zeros of linear system.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="zero.html" target="contentFrame">zero</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Zeros and gain of SISO dynamic system.</div>
+</li>
+</ul>
+</div>
+</body>
 </html>

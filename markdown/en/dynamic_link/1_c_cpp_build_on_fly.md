@@ -49,6 +49,8 @@ dlclose(lib)
 | ------- | --------------- |
 | 1.2.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -70,6 +70,8 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 | 1.0.0   | version initiale                |
 | 1.6.0   | option 'FollowLocation' ajoutée |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

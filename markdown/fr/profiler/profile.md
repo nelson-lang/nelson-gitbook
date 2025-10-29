@@ -65,6 +65,8 @@ unix([tempdir(), 'profile_results/index.html'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

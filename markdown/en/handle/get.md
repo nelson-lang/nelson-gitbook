@@ -29,6 +29,8 @@ Retrieve a property value from an handle object.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

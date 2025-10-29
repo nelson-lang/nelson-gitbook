@@ -47,6 +47,8 @@ d = insert(d, [2 4] ,["Orange" "Citra"], 'Overwrite', false)
 | ------- | ---------------- |
 | 1.5.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

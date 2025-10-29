@@ -38,6 +38,8 @@ mu = lin2mu([-1:0.5:1])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

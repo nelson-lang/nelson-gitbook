@@ -58,6 +58,8 @@ xlabel(_('Frequency (Hz)'));
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

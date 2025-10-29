@@ -46,6 +46,8 @@ sys = series(sys1, sys2, outputs1, inputs2)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

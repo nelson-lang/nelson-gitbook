@@ -41,6 +41,8 @@ h5save([tempdir(), 'example_isnh5.nh5'], 'A')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

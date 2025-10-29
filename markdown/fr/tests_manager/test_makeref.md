@@ -30,6 +30,8 @@ Le fichier de test doit contenir la balise <--CHECK REF-->.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

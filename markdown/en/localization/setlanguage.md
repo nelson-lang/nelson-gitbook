@@ -24,6 +24,8 @@ Changes the language used in Nelson.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

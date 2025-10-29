@@ -64,6 +64,8 @@ view(2)
 | 1.0.0   | initial version                            |
 | 1.2.0   | azimuth and elevation as output arguments. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

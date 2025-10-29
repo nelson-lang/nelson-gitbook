@@ -83,6 +83,8 @@ To detach an system command, include the trailing character, &, in the command a
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -40,6 +40,8 @@ Si le fichier n'existe pas, une erreur est levée.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

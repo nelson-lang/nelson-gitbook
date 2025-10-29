@@ -30,6 +30,8 @@ Cette routine peut être utilisée pour modifier la valeur d'une propriété sp�
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

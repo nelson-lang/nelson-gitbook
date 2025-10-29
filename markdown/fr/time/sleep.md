@@ -34,6 +34,8 @@ tic();sleep(0.01);toc()
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -56,6 +56,8 @@ warning('myModule:identifier', 'my message 3 as error');
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

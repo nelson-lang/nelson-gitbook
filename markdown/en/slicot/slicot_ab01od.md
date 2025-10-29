@@ -81,6 +81,8 @@ KSTAIR_IN = zeros(1,N);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

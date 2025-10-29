@@ -24,7 +24,7 @@ It also includes utilities for signal conversion and sound generation.
 - [audiowrite](audiowrite.md) - Writes an audio file.
 - [beep](beep.md) - Produces a beep sound.
 - [isplaying](isplaying.md) - get info about audio playback is in progress.
-- [lin2mu](lin2mu.md) - Convert audio data from linear singal to mu-law.
+- [lin2mu](lin2mu.md) - Convert audio data from linear signal to mu-law.
 - [mu2lin](mu2lin.md) - Convert audio data from mu-law to linear signal.
 - [play](play.md) - Plays an audioplayer object.
 - [playblocking](playblocking.md) - Plays an audioplayer object with blocking.

@@ -38,6 +38,8 @@ skip_testsuite(true, 'Test skipped')
 | ------- | ---------------- |
 | 1.4.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

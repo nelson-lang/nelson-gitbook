@@ -39,6 +39,8 @@ R = namedargs2cell(S)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

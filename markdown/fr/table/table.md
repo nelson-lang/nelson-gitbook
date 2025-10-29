@@ -101,6 +101,8 @@ Nelson](../table/1_accessing_manipulating_table.md), [Direct computation with Ta
 | ------- | ---------------- |
 | 1.8.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

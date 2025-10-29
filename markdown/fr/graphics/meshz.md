@@ -53,6 +53,8 @@ s = meshz(X,Y,Z)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

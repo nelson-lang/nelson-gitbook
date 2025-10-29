@@ -67,6 +67,8 @@ C2 = readcell([tempdir,'readcell_1.csv'], options)
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

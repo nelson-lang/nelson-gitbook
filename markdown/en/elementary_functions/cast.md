@@ -40,6 +40,8 @@ r = cast([3.6 1.2 -2.4], 'int64')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

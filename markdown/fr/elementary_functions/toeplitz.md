@@ -42,6 +42,8 @@ T = toeplitz(1:5, 1:2:7)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

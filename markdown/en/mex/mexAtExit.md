@@ -37,6 +37,8 @@ edit([modulepath('mex', 'tests'), '/test_mexAtExit.m'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

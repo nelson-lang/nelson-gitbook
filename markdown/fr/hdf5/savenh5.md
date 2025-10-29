@@ -81,6 +81,8 @@ no_compression = dir([tempdir(), 'example_h5save_no_compression.nh5'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

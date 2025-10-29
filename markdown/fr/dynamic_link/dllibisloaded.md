@@ -43,6 +43,8 @@ isequal(lib1, lib2)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

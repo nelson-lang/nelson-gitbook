@@ -72,6 +72,8 @@ nelson-gui --help
 | 1.11.0  | About NELSON_RUNTIME_PATH environment variable added |
 | 1.11.0  | --vsocde argument                                    |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

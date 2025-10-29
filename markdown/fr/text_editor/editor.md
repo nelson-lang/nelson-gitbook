@@ -55,6 +55,8 @@ editor('editor_command ', '')
 | 1.0.0   | version initiale                                  |
 | 1.10.0  | Option pour changer l'éditeur de texte par défaut |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

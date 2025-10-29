@@ -42,6 +42,8 @@ T = cell2table(C)
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

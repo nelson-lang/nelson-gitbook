@@ -32,6 +32,8 @@ unix("cd c:/ " + cmdsep() + " nelson")
 | ------- | ---------------- |
 | 1.11.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

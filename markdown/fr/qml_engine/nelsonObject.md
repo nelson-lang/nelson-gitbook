@@ -31,6 +31,8 @@ objet nelson appelable depuis QML.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -38,6 +38,8 @@ ismodule('module_skeleton')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

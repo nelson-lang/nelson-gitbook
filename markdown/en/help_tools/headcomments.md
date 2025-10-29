@@ -41,6 +41,8 @@ comments = headcomments('cellstr'); md = markdown(comments);inserthtml(md)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

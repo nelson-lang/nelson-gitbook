@@ -36,6 +36,8 @@ R = fileread([tempdir(), 'frewind.txt'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

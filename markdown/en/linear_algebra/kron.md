@@ -20,27 +20,21 @@ Kronecker tensor product.
 <b>K = kron(A, B)</b> computes the Kronecker tensor product of matrices <b>A</b> and <b>B</b>.
 
 For matrices
-
 $$A$$
 
 of size
-
 $$m \times n$$
 
 and
-
 $$B$$
 
 of size
-
 $$p \times q$$
 
 , the Kronecker product is:
-
 $$A \otimes B = \begin{pmatrix} a_{11}B & a_{12}B & \cdots & a_{1n}B \\ a_{21}B & a_{22}B & \cdots & a_{2n}B \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1}B & a_{m2}B & \cdots & a_{mn}B \end{pmatrix}$$
 
 The result is an
-
 $$mp \times nq$$
 
 matrix.
@@ -68,6 +62,8 @@ K = kron(A, B)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

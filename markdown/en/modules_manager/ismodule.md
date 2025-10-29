@@ -38,6 +38,8 @@ ismodule('mymodule')
 | 1.0.0   | initial version                |
 | 1.11.0  | 'isprotected' second argument. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

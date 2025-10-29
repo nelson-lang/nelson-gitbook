@@ -36,6 +36,8 @@ randperm(7)
 | 1.0.0   | initial version                                            |
 | 1.15.0  | add second input argument for number of elements to select |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

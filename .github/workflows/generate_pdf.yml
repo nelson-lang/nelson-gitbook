@@ -3,18 +3,47 @@ name: CI
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-windows:
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
-      - run: docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook init
-      - run: |
-          cd /home/runner/work/nelson-gitbook/nelson-gitbook
-          docker run --rm -v "$PWD:/gitbook" -p 4000:4000 billryan/gitbook gitbook pdf ./markdown
-      - run: mkdir /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
-      - run: cp  /home/runner/work/nelson-gitbook/nelson-gitbook/*.pdf /home/runner/work/nelson-gitbook/nelson-gitbook/artifacts
-      - uses: actions/upload-artifact@v4
+
+      - name: Install tools via Chocolatey
+        run: |
+          Write-Host "Installing tools via Chocolatey..."
+
+          # Install Pandoc
+          choco install pandoc -y
+
+          # Install wkhtmltopdf
+          choco install wkhtmltopdf -y
+
+          # Install Inkscape
+          choco install inkscape -y
+
+          Write-Host "All tools installed successfully via Chocolatey"
+        shell: powershell
+
+      - name: Verify installations
+        run: |
+          Write-Host "Verifying Pandoc..."
+          pandoc --version
+
+          Write-Host "`nVerifying wkhtmltopdf..."
+          wkhtmltopdf --version
+
+          Write-Host "`nVerifying Inkscape..."
+          inkscape --version
+        shell: powershell
+
+      - name: Build PDF
+        run: |
+          .\pandoc-build-pdf.bat
+        shell: cmd
+
+      - name: Upload PDF artifacts
+        uses: actions/upload-artifact@v4
         with:
-          name: nelson-gitbook-github-action-artifacts
-          path: artifacts/
+          name: nelson-pdf
+          path: "*.pdf"

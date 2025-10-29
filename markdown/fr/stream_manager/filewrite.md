@@ -46,6 +46,8 @@ filewrite([tempdir(), 'example_filewrite.txt'], str, 'native', 'windows-1251')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

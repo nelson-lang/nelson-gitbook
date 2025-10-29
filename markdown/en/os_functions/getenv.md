@@ -45,6 +45,8 @@ getenv({'PATH'; 'OS'})
 | 1.0.0   | initial version                                       |
 | 1.4.0   | Retrieve the values of several environment variables. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -38,6 +38,8 @@ h5readatt([tempdir(), 'myfile.h5'],'/','creation_date')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

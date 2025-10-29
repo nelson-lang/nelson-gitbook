@@ -18,15 +18,14 @@ Save figure to specific file format.
 <b>saveas</b> save figure to specific file format.
 
 <b>supported formats</b>:
-
-| Option | Format                                         | File extension |
-| ------ | ---------------------------------------------- | -------------- |
-| svg    | SVG (scalable vector graphics)                 | .svg           |
-| pdf    | Full page Portable Document Format (PDF) color | .pdf           |
-| png    | PNG 24-bit                                     | .png           |
-| jpg    | JPEG 24-bit                                    | .jpg           |
-| gif    | Graphics Interchange Format                    | .gif           |
-| tif    | Tagged Image File Format                       | .tif           |
+| Option | Format | File extension |
+| --- | --- | --- |
+| svg | SVG (scalable vector graphics) | .svg |
+| pdf | Full page Portable Document Format (PDF) color | .pdf |
+| png | PNG 24-bit | .png |
+| jpg | JPEG 24-bit | .jpg |
+| gif | Graphics Interchange Format | .gif |
+| tif | Tagged Image File Format | .tif |
 
 ## 💡 Example
 
@@ -51,6 +50,8 @@ saveas(gcf(), [tempdir, 'svg-file.svg']);
 | 1.0.0   | initial version   |
 | 1.13.0  | tiff format added |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

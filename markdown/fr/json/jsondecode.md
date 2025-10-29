@@ -54,6 +54,8 @@ jsondecode([modulepath('json'), '/examples/patient.json'], '-file')
 | 1.15.0  | second argument added for file input |
 | 1.15.0  | simdjson library used                |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

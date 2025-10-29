@@ -42,6 +42,8 @@ plot3(bezierCurve(:,1), bezierCurve(:,2), bezierCurve(:,3))
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

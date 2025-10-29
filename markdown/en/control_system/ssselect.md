@@ -48,6 +48,8 @@ R = ssselect(sys1, inputs, outputs)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

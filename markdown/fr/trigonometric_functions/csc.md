@@ -34,6 +34,8 @@ R = csc(-pi+0.01:0.01:-0.01)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

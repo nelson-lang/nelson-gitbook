@@ -31,6 +31,8 @@ parsefile([nelsonroot(), '/modules/data_structures/functions/cellstr.m'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

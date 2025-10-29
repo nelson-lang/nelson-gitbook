@@ -40,6 +40,8 @@ m = minute("2021/09/28 15:45:51", 'YYYY/M/DD HH:MM:SS')
 | ------- | ---------------- |
 | 1.10.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

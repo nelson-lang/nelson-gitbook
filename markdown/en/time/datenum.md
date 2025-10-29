@@ -110,6 +110,8 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 | 1.8.0   | date string parsing extended.         |
 | 1.10.0  | added: format '' means try to detect. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

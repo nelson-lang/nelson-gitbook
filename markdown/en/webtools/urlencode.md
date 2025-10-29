@@ -38,6 +38,8 @@ res = urlencode(url)
 | ------- | --------------- |
 | 1.11.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

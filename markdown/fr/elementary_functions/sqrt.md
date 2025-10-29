@@ -19,19 +19,15 @@ Square root.
 <b>sqrt</b> calcule la racine carrée.
 
 Pour les nombres réels positifs :
-
 $$\sqrt{x}$$
 
 Pour les nombres complexes <b>z = x + iy</b> :
-
 $$\sqrt{z} = \sqrt{r} e^{i\phi/2}$$
 
 où
-
 $$r = |z| = \sqrt{x^2 + y^2}$$
 
 et
-
 $$\phi = \arg(z) = \text{atan2}(y, x)$$
 
 ## 💡 Exemple
@@ -51,6 +47,8 @@ r = sqrt(x)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

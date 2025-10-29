@@ -30,6 +30,8 @@ semver(qt_version(), '>5.15')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

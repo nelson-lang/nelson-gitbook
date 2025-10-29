@@ -38,6 +38,8 @@ ismatrix(ones(3,1,2))
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

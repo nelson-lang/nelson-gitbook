@@ -32,6 +32,8 @@ edit([modulepath('mpi'), '/examples/MPI_parallel_sum.m'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

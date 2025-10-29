@@ -54,6 +54,8 @@ C_IN = [2.0   1.0;
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

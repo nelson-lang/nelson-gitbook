@@ -38,6 +38,8 @@ Y * X
 | 1.0.0   | version initiale                                        |
 | 1.4.0   | warning about 'Matrix is singular to working precision' |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

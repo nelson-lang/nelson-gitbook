@@ -61,6 +61,8 @@ imagesc(img);
 | 1.0.0   | version initiale        |
 | 1.13.0  | pcx, tiff formats added |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

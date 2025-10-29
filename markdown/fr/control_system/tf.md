@@ -49,6 +49,8 @@ sys = tf(numerator, denominator, Ts)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

@@ -34,6 +34,8 @@ R = cotd(35 + 5i)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

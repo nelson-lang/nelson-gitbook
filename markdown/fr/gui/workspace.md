@@ -22,6 +22,8 @@ L'explorateur d'espace de travail vous permet d'observer et de gérer activement
 | ------- | ---------------- |
 | 1.1.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

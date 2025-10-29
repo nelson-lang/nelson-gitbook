@@ -41,6 +41,8 @@ rho = [5 5 10 10];
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

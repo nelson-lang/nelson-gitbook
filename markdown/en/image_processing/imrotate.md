@@ -31,7 +31,8 @@ The bounding box option controls the size of the output image:
 
 - <b>'loose'</b>: The output image is sized to contain the entire rotated image. This may result in a larger image than the input.
 - <b>'crop'</b>: The output image is cropped to the same size as the input image. Parts of the rotated image may be cut off.
-  Background pixels (areas not covered by the rotated image) are filled with zeros.
+
+Background pixels (areas not covered by the rotated image) are filled with zeros.
 
 Note:
 
@@ -138,6 +139,8 @@ end
 | ------- | --------------- |
 | 1.14.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

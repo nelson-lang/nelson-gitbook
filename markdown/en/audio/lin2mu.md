@@ -1,6 +1,6 @@
 # lin2mu
 
-Convert audio data from linear singal to mu-law.
+Convert audio data from linear signal to mu-law.
 
 ## 📝 Syntax
 
@@ -38,6 +38,8 @@ mu = lin2mu([-1:0.5:1])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

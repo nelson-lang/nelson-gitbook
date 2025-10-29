@@ -40,6 +40,8 @@ R = str2double(["2.71" "3.1415"])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -33,6 +33,8 @@ On Unix platforms (linux, MacOs), <b>havecompiler</b> returns always <b>true</b>
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

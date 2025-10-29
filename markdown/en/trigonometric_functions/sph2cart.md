@@ -41,6 +41,8 @@ radius = 1.7321 * ones(2, 4);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

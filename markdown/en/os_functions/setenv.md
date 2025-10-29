@@ -34,6 +34,8 @@ getenv('MY_ENV_VAR')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

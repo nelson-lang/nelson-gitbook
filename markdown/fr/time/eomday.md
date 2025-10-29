@@ -35,6 +35,8 @@ eomday(1900, 1:12)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

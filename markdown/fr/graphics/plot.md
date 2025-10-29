@@ -35,41 +35,38 @@ Tracé linéaire 2D.
 <b>LineSpec</b> est une chaîne utilisée pour modifier les caractéristiques de la ligne et se compose de trois parties optionnelles dans n'importe quel ordre :
 
 Le SymbolSpec spécifie le symbole à dessiner à chaque point de données :
-
-| Symbole  | Description                    |
-| -------- | ------------------------------ |
-| **'o'**  | Symbole cercle                 |
-| **'x'**  | Symbole croix                  |
-| **'+'**  | Symbole plus                   |
-| **'\*'** | Symbole astérisque             |
-| **'.'**  | Symbole point                  |
-| **'s'**  | Symbole carré                  |
-| **'d'**  | Symbole losange                |
-| **'v'**  | Triangle pointe vers le bas    |
-| **'^'**  | Triangle pointe vers le haut   |
-| **'<'**  | Triangle pointe vers la droite |
-| **'>'**  | Triangle pointe vers la gauche |
+| Symbole | Description |
+| --- | --- |
+| **'o'** | Symbole cercle |
+| **'x'** | Symbole croix |
+| **'+'** | Symbole plus |
+| **'\*'** | Symbole astérisque |
+| **'.'** | Symbole point |
+| **'s'** | Symbole carré |
+| **'d'** | Symbole losange |
+| **'v'** | Triangle pointe vers le bas |
+| **'^'** | Triangle pointe vers le haut |
+| **'<'** | Triangle pointe vers la droite |
+| **'>'** | Triangle pointe vers la gauche |
 
 Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données :
-
-| Style    | Description         |
-| -------- | ------------------- |
-| **'-'**  | Ligne continue      |
-| **'--'** | Ligne pointillée    |
-| **'-.'** | Ligne tiret-point   |
-| **':'**  | Ligne en pointillés |
+| Style | Description |
+| --- | --- |
+| **'-'** | Ligne continue |
+| **'--'** | Ligne pointillée |
+| **'-.'** | Ligne tiret-point |
+| **':'** | Ligne en pointillés |
 
 Le ColorSpec spécifie la couleur de ligne à utiliser pour chaque série de données :
-
 | Couleur | Description |
-| ------- | ----------- |
-| **'k'** | Noir        |
-| **'y'** | Jaune       |
-| **'m'** | Magenta     |
-| **'c'** | Cyan        |
-| **'r'** | Rouge       |
-| **'b'** | Bleu        |
-| **'g'** | Vert        |
+| --- | --- |
+| **'k'** | Noir |
+| **'y'** | Jaune |
+| **'m'** | Magenta |
+| **'c'** | Cyan |
+| **'r'** | Rouge |
+| **'b'** | Bleu |
+| **'g'** | Vert |
 
 Voir <b>line</b> pour plus d'informations sur les propriétés.
 
@@ -135,6 +132,8 @@ ylabel('sin(5x)')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

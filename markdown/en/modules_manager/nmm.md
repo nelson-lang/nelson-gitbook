@@ -91,6 +91,8 @@ package_filename = nmm('package', 'module_skeleton_basic', tempdir())
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

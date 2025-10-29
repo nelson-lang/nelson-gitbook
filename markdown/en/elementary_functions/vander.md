@@ -38,6 +38,8 @@ A = vander(1:.5:3)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

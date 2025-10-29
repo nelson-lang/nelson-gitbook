@@ -44,6 +44,8 @@ R = sscanf(str,'%f',[2 2])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

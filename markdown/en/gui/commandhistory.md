@@ -26,6 +26,8 @@ Entries within the Command History window can be selected for various actions an
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

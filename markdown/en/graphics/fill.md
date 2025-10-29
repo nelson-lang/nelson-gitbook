@@ -118,6 +118,8 @@ fill(x + 1, y + 2, 'yellow', 'FaceAlpha', 0.3);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -40,6 +40,8 @@ r = strrep("This is a string.", "is", 'is not')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

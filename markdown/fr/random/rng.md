@@ -56,14 +56,13 @@ Générateur de nombres aléatoires.
 <b>rng(s)</b> restaure les paramètres du générateur de nombres aléatoires à partir d'une structure précédente renvoyée par <b>s = rng</b>.
 
 Générateurs disponibles :
-
-| Valeur          | Nom du générateur                    | Mot-clé du générateur |
-| --------------- | ------------------------------------ | --------------------- |
-| "twister"       | Mersenne Twister                     | mt19937ar             |
-| "simdTwister"   | SIMD-Oriented Fast Mersenne Twister  | dsfmt19937            |
-| "combRecursive" | Combined Multiple Recursive          | mrg32k3a              |
-| "multFibonacci" | Multiplicative Lagged Fibonacci      | mlfg6331_64           |
-| "philox"        | Philox 4x32 generator with 10 rounds | philox4x32_10         |
+| Valeur | Nom du générateur | Mot-clé du générateur |
+| --- | --- | --- |
+| "twister" | Mersenne Twister | mt19937ar |
+| "simdTwister" | SIMD-Oriented Fast Mersenne Twister | dsfmt19937 |
+| "combRecursive" | Combined Multiple Recursive | mrg32k3a |
+| "multFibonacci" | Multiplicative Lagged Fibonacci | mlfg6331_64 |
+| "philox" | Philox 4x32 generator with 10 rounds | philox4x32_10 |
 
 Le générateur par défaut est "twister".
 
@@ -87,6 +86,8 @@ lst = rng('enginelist')
 | 1.15.0                | Nouveau générateur de nombres aléatoires : simdTwister, |
 | combRecursive, philox |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

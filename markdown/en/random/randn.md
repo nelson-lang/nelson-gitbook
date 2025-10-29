@@ -76,6 +76,8 @@ randn(3, 2, 'like', v)
 | 1.0.0   | initial version |
 | 1.15.0  | Algo reworked   |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

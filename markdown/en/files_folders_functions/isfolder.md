@@ -35,6 +35,8 @@ isdir([nelsonroot(), '/not_exist_dir'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

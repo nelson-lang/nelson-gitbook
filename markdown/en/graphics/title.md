@@ -49,6 +49,8 @@ title('Unicode ドラゴンボールZ(ゼット)', 14);
 | 1.0.0   | initial version                                                          |
 | 1.10.0  | Visible property is inherited from the parent if not explicitly defined. |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

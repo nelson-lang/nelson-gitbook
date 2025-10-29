@@ -1,336 +1,705 @@
-<!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
-    <head>
-        <!-- Book generated using mdBook -->
-        <meta charset="UTF-8">
-        <title>text - Nelson</title>
-
-
-        <!-- Custom HTML head -->
-
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
-
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
-
-        <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
-
-        <!-- Custom theme stylesheets -->
-
-
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
-        <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
-    </head>
-    <body>
-    <div id="body-container">
-        <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
-            try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
-
-                if (theme.startsWith('"') && theme.endsWith('"')) {
-                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>text</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
                 }
-
-                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
-                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
                 }
-            } catch (e) { }
-        </script>
-
-        <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
-            var theme;
-            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
-            if (theme === null || theme === undefined) { theme = default_theme; }
-            const html = document.documentElement;
-            html.classList.remove('light')
-            html.classList.add(theme);
-            html.classList.add("js");
-        </script>
-
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
-
-        <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
-            if (document.body.clientWidth >= 1080) {
-                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
-                sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
-            }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
-        </script>
-
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <!-- populated by js -->
-            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
-            <noscript>
-                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
-            </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
-        </nav>
-
-        <div id="page-wrapper" class="page-wrapper">
-
-            <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
-                    <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
-                        </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
-                        </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
-                        </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-
-                    <h1 class="menu-title">Nelson</h1>
-
-                    <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://nelson-lang.github.io/nelson-gitbook/" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
-                    </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
-                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
-                    });
-                </script>
-
-                <div id="content" class="content">
-                    <main>
-                        <h1 id="text"><a class="header" href="#text">text</a></h1>
-<p>creates text descriptions to data points.</p>
-<h2 id="-syntax"><a class="header" href="#-syntax">📝 Syntax</a></h2>
-<ul>
-<li>text(x, y, txt)</li>
-<li>text(x, y, z, txt)</li>
-<li>text(... , propertyName, propertyValue)</li>
-<li>text(ax, ...)</li>
-<li>go = text(...)</li>
-</ul>
-<h2 id="-input-argument"><a class="header" href="#-input-argument">📥 Input argument</a></h2>
-<ul>
-<li>x - x-coordinates: vector or matrix.</li>
-<li>y - y-coordinates: vector or matrix.</li>
-<li>z - z-coordinates: vector or matrix.</li>
-<li>parent - a scalar graphics object value: parent container, specified as a axes.</li>
-<li>text - Text to display: character vector, string scalar, string array or cell array.</li>
-<li>propertyName - a scalar string or row vector character.</li>
-<li>propertyValue - a value.</li>
-</ul>
-<h2 id="-output-argument"><a class="header" href="#-output-argument">📤 Output argument</a></h2>
-<ul>
-<li>go - a graphics object: text type.</li>
-</ul>
-<h2 id="-description"><a class="header" href="#-description">📄 Description</a></h2>
-<p><b>figure</b> creates figure.</p>
-<div class="table-wrapper"><table><thead><tr><th>Property</th><th>Description</th></tr></thead><tbody>
-<tr><td><strong>BackgroundColor</strong></td><td>Color of text box background: RGB triplet.</td></tr>
-<tr><td><strong>Children</strong></td><td>Children: [].</td></tr>
-<tr><td><strong>Color</strong></td><td>Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.</td></tr>
-<tr><td><strong>EdgeColor</strong></td><td>Color of box outline: RGB triplet.</td></tr>
-<tr><td><strong>Extent</strong></td><td>Size and location of rectangle that encloses text: four-element vector.</td></tr>
-<tr><td><strong>FontAngle</strong></td><td>Character slant: 'italic' or 'normal' (default).</td></tr>
-<tr><td><strong>FontName</strong></td><td>Font name:</td></tr>
-<tr><td><strong>FontSize</strong></td><td>Font size: scalar value greater than zero.</td></tr>
-<tr><td><strong>FontUnits</strong></td><td>Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).</td></tr>
-<tr><td><strong>FontWeight</strong></td><td>Character thickness: 'bold' or 'normal' (default).</td></tr>
-<tr><td><strong>HorizontalAlignment</strong></td><td>Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).</td></tr>
-<tr><td><strong>Interpreter</strong></td><td>'tex' (default) interpreter or 'none'.</td></tr>
-<tr><td><strong>LineStyle</strong></td><td>Line style of box outline: 'none', '--', ':', '-.' or '-' (default).</td></tr>
-<tr><td><strong>LineWidth</strong></td><td>Width of box outline: scalar numeric value.</td></tr>
-<tr><td><strong>Margin</strong></td><td>Space around text within the text box: scalar numeric value.</td></tr>
-<tr><td><strong>Parent</strong></td><td>Parent: axes object.</td></tr>
-<tr><td><strong>Position</strong></td><td>Location of text: two-element vector of form [x y] or three-element vector of form [x y z].</td></tr>
-<tr><td><strong>Rotation</strong></td><td>Text orientation: scalar value in degrees.</td></tr>
-<tr><td><strong>String</strong></td><td>Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).</td></tr>
-<tr><td><strong>Tag</strong></td><td>Object identifier: character vector, string scalar or '' (default).</td></tr>
-<tr><td><strong>Type</strong></td><td>Type of graphics object: 'text'.</td></tr>
-<tr><td><strong>Units</strong></td><td>Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).</td></tr>
-<tr><td><strong>UserData</strong></td><td>User data: array or [] (default).</td></tr>
-<tr><td><strong>VerticalAlignment</strong></td><td>Vertical alignment of text with respect to position point.</td></tr>
-<tr><td><strong>Visible</strong></td><td>State of visibility: 'off' or 'on' (default).</td></tr>
-<tr><td><strong>CreateFcn</strong></td><td>Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.</td></tr>
-<tr><td><strong>DeleteFcn</strong></td><td>Callback (function handle, string or cell) called when object is deleted.</td></tr>
-<tr><td><strong>BeingDeleted</strong></td><td>Flag indicating that the object is being deleted.</td></tr>
-</tbody></table>
+            </style>
+</head>
+<body>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">text</span></div></div>
+<div class="section syntax-section"><div class="subtitle">creates text descriptions to data points.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">text(x, y, txt)
+text(x, y, z, txt)
+text(... , propertyName, propertyValue)
+text(ax, ...)
+go = text(...)
+</code></pre>
 </div>
-<p>Some properties are available only for compatibility and have currently no effect on the text.</p>
-<p>lists of the supported special characters for the 'tex' interpreter:</p>
-<p>Superscript: ^{ } 'text^{superscript}'</p>
-<p>Subscript: <em>{ } 'text</em>{subscript}'</p>
-<div class="table-wrapper"><table><thead><tr><th>Character Sequence</th><th>Symbol</th></tr></thead><tbody>
-</tbody></table>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>x-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">y</td>
+<td>y-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">z</td>
+<td>z-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">parent</td>
+<td>a scalar graphics object value: parent container, specified as a axes.</td>
+</tr>
+<tr>
+<td class="param-name">text</td>
+<td>Text to display: character vector, string scalar, string array or cell array.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName</td>
+<td>a scalar string or row vector character.</td>
+</tr>
+<tr>
+<td class="param-name">propertyValue</td>
+<td>a value.</td>
+</tr>
+</table>
 </div>
-<p>|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|</p>
-<h2 id="-examples"><a class="header" href="#-examples">💡 Examples</a></h2>
-<pre><code class="language-matlab">f = figure(1)
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">go</td>
+<td>a graphics object: text type.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+        <p>
+            <b>figure</b> creates figure.</p>
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>
+                        <b>BackgroundColor</b>
+                    </td>
+                    <td>Color of text box background: RGB triplet.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Children</b>
+                    </td>
+                    <td>Children: [].</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Color</b>
+                    </td>
+                    <td>Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>EdgeColor</b>
+                    </td>
+                    <td>Color of box outline: RGB triplet.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Extent</b>
+                    </td>
+                    <td>Size and location of rectangle that encloses text: four-element vector.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>FontAngle</b>
+                    </td>
+                    <td>Character slant: 'italic' or 'normal' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>FontName</b>
+                    </td>
+                    <td>Font name:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>FontSize</b>
+                    </td>
+                    <td>Font size: scalar value greater than zero.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>FontUnits</b>
+                    </td>
+                    <td>Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>FontWeight</b>
+                    </td>
+                    <td>Character thickness: 'bold' or 'normal' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>HorizontalAlignment</b>
+                    </td>
+                    <td>Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Interpreter</b>
+                    </td>
+                    <td>'tex' (default) interpreter or 'none'.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>LineStyle</b>
+                    </td>
+                    <td>Line style of box outline: 'none', '--', ':', '-.' or '-' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>LineWidth</b>
+                    </td>
+                    <td>Width of box outline: scalar numeric value.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Margin</b>
+                    </td>
+                    <td>Space around text within the text box: scalar numeric value.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Parent</b>
+                    </td>
+                    <td>Parent: axes object.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Position</b>
+                    </td>
+                    <td>Location of text: two-element vector of form [x y] or three-element vector of form [x y z].</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Rotation</b>
+                    </td>
+                    <td>Text orientation: scalar value in degrees.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>String</b>
+                    </td>
+                    <td>Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Tag</b>
+                    </td>
+                    <td>Object identifier: character vector, string scalar or '' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Type</b>
+                    </td>
+                    <td>Type of graphics object: 'text'.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Units</b>
+                    </td>
+                    <td>Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>UserData</b>
+                    </td>
+                    <td>User data: array or [] (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>VerticalAlignment</b>
+                    </td>
+                    <td>Vertical alignment of text with respect to position point.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Visible</b>
+                    </td>
+                    <td>State of visibility: 'off' or 'on' (default).</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>CreateFcn</b>
+                    </td>
+                    <td>Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>DeleteFcn</b>
+                    </td>
+                    <td>Callback (function handle, string or cell) called when object is deleted.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>BeingDeleted</b>
+                    </td>
+                    <td>Flag indicating that the object is being deleted.</td>
+                </tr>
+            </table>
+            <p>Some properties are available only for compatibility and have currently no effect on the text.</p>
+            <p>lists of the supported special characters for the 'tex' interpreter:</p>
+            <p>Superscript: ^{ }   'text^{superscript}'</p>
+            <p>Subscript: _{ }   'text_{subscript}'</p>
+            <p></p>
+            <table style="width:100%">
+                <tr>
+                    <th>Character Sequence</th>
+                    <th>Symbol</th>
+                </tr>
+                <tr>
+                    <th>\alpha</th>
+                    <th>α</th>
+                </tr>
+                <tr>
+                    <th>\upsilon</th>
+                    <th>υ</th>
+                </tr>
+                <tr>
+                    <th>\sim</th>
+                    <th>~</th>
+                </tr>
+                <tr>
+                    <th>\angle</th>
+                    <th>∠</th>
+                </tr>
+                <tr>
+                    <th>\phi</th>
+                    <th>ϕ</th>
+                </tr>
+                <tr>
+                    <th>\leq</th>
+                    <th>≤</th>
+                </tr>
+                <tr>
+                    <th>\ast</th>
+                    <th>*</th>
+                </tr>
+                <tr>
+                    <th>\chi</th>
+                    <th>χ</th>
+                </tr>
+                <tr>
+                    <th>\infty</th>
+                    <th>∞</th>
+                </tr>
+                <tr>
+                    <th>\beta</th>
+                    <th>β</th>
+                </tr>
+                <tr>
+                    <th>\psi</th>
+                    <th>ψ</th>
+                </tr>
+                <tr>
+                    <th>\clubsuit</th>
+                    <th>♣</th>
+                </tr>
+                <tr>
+                    <th>\gamma</th>
+                    <th>γ</th>
+                </tr>
+                <tr>
+                    <th>\omega</th>
+                    <th>ω</th>
+                </tr>
+                <tr>
+                    <th>\diamondsuit</th>
+                    <th>♦</th>
+                </tr>
+                <tr>
+                    <th>\delta</th>
+                    <th>δ</th>
+                </tr>
+                <tr>
+                    <th>\Gamma</th>
+                    <th>Γ</th>
+                </tr>
+                <tr>
+                    <th>\heartsuit</th>
+                    <th>♥</th>
+                </tr>
+                <tr>
+                    <th>\epsilon</th>
+                    <th>ϵ</th>
+                </tr>
+                <tr>
+                    <th>\Delta</th>
+                    <th>Δ</th>
+                </tr>
+                <tr>
+                    <th>\spadesuit</th>
+                    <th>♠</th>
+                </tr>
+                <tr>
+                    <th>\zeta</th>
+                    <th>ζ</th>
+                </tr>
+                <tr>
+                    <th>\Theta</th>
+                    <th>Θ</th>
+                </tr>
+                <tr>
+                    <th>\leftrightarrow</th>
+                    <th>↔</th>
+                </tr>
+                <tr>
+                    <th>\eta</th>
+                    <th>η</th>
+                </tr>
+                <tr>
+                    <th>\Lambda</th>
+                    <th>Λ</th>
+                </tr>
+                <tr>
+                    <th>\leftarrow</th>
+                    <th>←</th>
+                </tr>
+                <tr>
+                    <th>\theta</th>
+                    <th>θ</th>
+                </tr>
+                <tr>
+                    <th>\Xi</th>
+                    <th>Ξ</th>
+                </tr>
+                <tr>
+                    <th>\Leftarrow</th>
+                    <th>⇐</th>
+                </tr>
+                <tr>
+                    <th>\vartheta</th>
+                    <th>ϑ</th>
+                </tr>
+                <tr>
+                    <th>\Pi</th>
+                    <th>Π</th>
+                </tr>
+                <tr>
+                    <th>\uparrow</th>
+                    <th>↑</th>
+                </tr>
+                <tr>
+                    <th>\iota</th>
+                    <th>ι</th>
+                </tr>
+                <tr>
+                    <th>\Sigma</th>
+                    <th>Σ</th>
+                </tr>
+                <tr>
+                    <th>\rightarrow</th>
+                    <th>→</th>
+                </tr>
+                <tr>
+                    <th>\kappa</th>
+                    <th>κ</th>
+                </tr>
+                <tr>
+                    <th>\Upsilon</th>
+                    <th>ϒ</th>
+                </tr>
+                <tr>
+                    <th>\Rightarrow</th>
+                    <th>⇒</th>
+                </tr>
+                <tr>
+                    <th>\lambda</th>
+                    <th>λ</th>
+                </tr>
+                <tr>
+                    <th>\Phi</th>
+                    <th>Φ</th>
+                </tr>
+                <tr>
+                    <th>\downarrow</th>
+                    <th>↓</th>
+                </tr>
+                <tr>
+                    <th>\mu</th>
+                    <th>µ</th>
+                </tr>
+                <tr>
+                    <th>\Psi</th>
+                    <th>Ψ</th>
+                </tr>
+                <tr>
+                    <th>\circ</th>
+                    <th>º</th>
+                </tr>
+                <tr>
+                    <th>\nu</th>
+                    <th>ν</th>
+                </tr>
+                <tr>
+                    <th>\Omega</th>
+                    <th>Ω</th>
+                </tr>
+                <tr>
+                    <th>\pm</th>
+                    <th>±</th>
+                </tr>
+                <tr>
+                    <th>\xi</th>
+                    <th>ξ</th>
+                </tr>
+                <tr>
+                    <th>\forall</th>
+                    <th>∀</th>
+                </tr>
+                <tr>
+                    <th>\geq</th>
+                    <th>≥</th>
+                </tr>
+                <tr>
+                    <th>\pi</th>
+                    <th>π</th>
+                </tr>
+                <tr>
+                    <th>\exists</th>
+                    <th>∃</th>
+                </tr>
+                <tr>
+                    <th>\propto</th>
+                    <th>∝</th>
+                </tr>
+                <tr>
+                    <th>\rho</th>
+                    <th>ρ</th>
+                </tr>
+                <tr>
+                    <th>\ni</th>
+                    <th>∍</th>
+                </tr>
+                <tr>
+                    <th>\partial</th>
+                    <th>∂</th>
+                </tr>
+                <tr>
+                    <th>\sigma</th>
+                    <th>σ</th>
+                </tr>
+                <tr>
+                    <th>\cong</th>
+                    <th>≅</th>
+                </tr>
+                <tr>
+                    <th>\bullet</th>
+                    <th>•</th>
+                </tr>
+                <tr>
+                    <th>\varsigma</th>
+                    <th>ς</th>
+                </tr>
+                <tr>
+                    <th>\approx</th>
+                    <th>≈</th>
+                </tr>
+                <tr>
+                    <th>\div</th>
+                    <th>÷</th>
+                </tr>
+                <tr>
+                    <th>\tau</th>
+                    <th>τ</th>
+                </tr>
+                <tr>
+                    <th>\Re</th>
+                    <th>ℜ</th>
+                </tr>
+                <tr>
+                    <th>\neq</th>
+                    <th>≠</th>
+                </tr>
+                <tr>
+                    <th>\equiv</th>
+                    <th>≡</th>
+                </tr>
+                <tr>
+                    <th>\oplus</th>
+                    <th>⊕</th>
+                </tr>
+                <tr>
+                    <th>\aleph</th>
+                    <th>ℵ</th>
+                </tr>
+                <tr>
+                    <th>\Im</th>
+                    <th>ℑ</th>
+                </tr>
+                <tr>
+                    <th>\cup</th>
+                    <th>∪</th>
+                </tr>
+                <tr>
+                    <th>\wp</th>
+                    <th>℘</th>
+                </tr>
+                <tr>
+                    <th>\otimes</th>
+                    <th>⊗</th>
+                </tr>
+                <tr>
+                    <th>\subseteq</th>
+                    <th>⊆</th>
+                </tr>
+                <tr>
+                    <th>\oslash</th>
+                    <th>∅</th>
+                </tr>
+                <tr>
+                    <th>\cap</th>
+                    <th>∩</th>
+                </tr>
+                <tr>
+                    <th>\in</th>
+                    <th>∈</th>
+                </tr>
+                <tr>
+                    <th>\supseteq</th>
+                    <th>⊇</th>
+                </tr>
+                <tr>
+                    <th>\supset</th>
+                    <th>⊃</th>
+                </tr>
+                <tr>
+                    <th>\lceil</th>
+                    <th>⌈</th>
+                </tr>
+                <tr>
+                    <th>\subset</th>
+                    <th>⊂</th>
+                </tr>
+                <tr>
+                    <th>\int</th>
+                    <th>∫</th>
+                </tr>
+                <tr>
+                    <th>\cdot</th>
+                    <th>·</th>
+                </tr>
+                <tr>
+                    <th>\o</th>
+                    <th>ο</th>
+                </tr>
+                <tr>
+                    <th>\rfloor</th>
+                    <th>⌋</th>
+                </tr>
+                <tr>
+                    <th>\neg</th>
+                    <th>¬</th>
+                </tr>
+                <tr>
+                    <th>\nabla</th>
+                    <th>∇</th>
+                </tr>
+                <tr>
+                    <th>\lfloor</th>
+                    <th>⌊</th>
+                </tr>
+                <tr>
+                    <th>\times</th>
+                    <th>x</th>
+                </tr>
+                <tr>
+                    <th>\ldots</th>
+                    <th>...</th>
+                </tr>
+                <tr>
+                    <th>\perp</th>
+                    <th>⊥</th>
+                </tr>
+                <tr>
+                    <th>\surd</th>
+                    <th>√</th>
+                </tr>
+                <tr>
+                    <th>\prime</th>
+                    <th>´</th>
+                </tr>
+                <tr>
+                    <th>\wedge</th>
+                    <th>∧</th>
+                </tr>
+                <tr>
+                    <th>\varpi</th>
+                    <th>ϖ</th>
+                </tr>
+                <tr>
+                    <th>\0</th>
+                    <th>∅</th>
+                </tr>
+                <tr>
+                    <th>\rceil</th>
+                    <th>⌉</th>
+                </tr>
+                <tr>
+                    <th>\rangle</th>
+                    <th>〉</th>
+                </tr>
+                <tr>
+                    <th>\mid</th>
+                    <th>|</th>
+                </tr>
+                <tr>
+                    <th>\vee</th>
+                    <th>∨</th>
+                </tr>
+                <tr>
+                    <th>\langle</th>
+                    <th>〈</th>
+                </tr>
+                <tr>
+                    <th>\copyright</th>
+                    <th>©</th>
+                </tr>
+            </table>
+        </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure(1)
 t = text(0.5, 0.5, 'text here');
 s = t.FontSize;
 t.FontSize = 12;
-t.Color = 'red';
-
-</code></pre>
-<img src="text_1.svg" align="middle"/>
-<pre><code class="language-matlab">figure();
+t.Color = 'red';</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./text_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 ha = {'left', 'center', 'right'};
 va = {'bottom', 'middle', 'top'};
 color = {'red', 'green', 'blue'};
@@ -350,77 +719,53 @@ end
 axis([0 1 0 1]);
 title (_('Text alignment and rotation (0:45:360 degrees)'));
 xlabel(_('Horizontal alignment'));
-ylabel (_('Vertical alignment'));
-</code></pre>
-<img src="text_2.svg" align="middle"/>
-<pre><code class="language-matlab">figure();
+ylabel (_('Vertical alignment'));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./text_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 h1 = text(0.5, 0.5, 'Nelson \copyright')
 h1.String
 % Nelson is full unicode, so
 h2 = text(0.5, 0.3, 'OR Nelson ©')
-h2.String
-</code></pre>
-<h2 id="-see-also"><a class="header" href="#-see-also">🔗 See also</a></h2>
-<p><a href="../graphics/title.html">title</a>.</p>
-<h2 id="-history"><a class="header" href="#-history">🕔 History</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Version</th><th>📄 Description</th></tr></thead><tbody>
-<tr><td>1.0.0</td><td>initial version</td></tr>
-<tr><td>1.7.0</td><td>CreateFcn, DeleteFcn callback added.</td></tr>
-<tr><td>--</td><td>BeingDeleted property added.</td></tr>
-</tbody></table>
+h2.String</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
 </div>
-<h2 id="-author"><a class="header" href="#-author">👤 Author</a></h2>
-<p>Allan CORNET</p>
-
-                    </main>
-
-                    <nav class="nav-wrapper" aria-label="Page navigation">
-                        <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../graphics/surface.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-
-                            <a rel="next prefetch" href="../graphics/title.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-
-                        <div style="clear: both"></div>
-                    </nav>
-                </div>
-            </div>
-
-            <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../graphics/surface.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-
-                    <a rel="next prefetch" href="../graphics/title.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-            </nav>
-
-        </div>
-
-
-
-
-        <script>
-            window.playground_copyable = true;
-        </script>
-
-
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
-
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
-
-        <!-- Custom JS scripts -->
-        <script src="../theme/matlab.min.js"></script>
-
-
-    </div>
-    </body>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div><a class="see-also-link" href="../graphics/title.html">title</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">1.7.0</td>
+<td>CreateFcn, DeleteFcn callback added.</td>
+</tr>
+<tr>
+<td class="version">--</td>
+<td>BeingDeleted property added.</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
 </html>

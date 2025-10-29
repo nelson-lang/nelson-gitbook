@@ -31,6 +31,8 @@ Converts xml Nelson help files to Nelson format.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

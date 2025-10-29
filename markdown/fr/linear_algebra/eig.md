@@ -30,23 +30,18 @@ Valeurs propres et vecteurs propres.
 <b>eig(A)</b> retourne les valeurs propres et vecteurs propres.
 
 Pour une matrice carrée <b>A</b>, les valeurs propres
-
 $$\lambda$$
 
 et vecteurs propres
-
 $$\mathbf{v}$$
 
 satisfont :
-
 $$A\mathbf{v} = \lambda\mathbf{v}$$
 
 L'équation caractéristique est :
-
 $$\det(A - \lambda I) = 0$$
 
 <b>eig(A, B)</b> retourne les valeurs propres généralisées et vecteurs propres où :
-
 $$A\mathbf{v} = \lambda B\mathbf{v}$$
 
 ## 📚 Bibliographie
@@ -79,6 +74,8 @@ B = [0 1; -1/sqrt(2) 0];
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

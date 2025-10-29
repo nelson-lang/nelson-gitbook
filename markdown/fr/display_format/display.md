@@ -46,6 +46,8 @@ A = eye(3, 3); disp(A)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

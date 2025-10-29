@@ -26,6 +26,8 @@ Supprime la configuration du compilateur utilisée (sous Windows)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

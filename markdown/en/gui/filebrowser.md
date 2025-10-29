@@ -22,6 +22,8 @@ The Current Folder browser in Nelson facilitates interactive file and folder man
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -61,6 +61,8 @@ pcolor(ax2, C2)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

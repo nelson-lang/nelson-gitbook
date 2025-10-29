@@ -36,6 +36,8 @@ all core's modules are protected and cannot removed during an nelson's session.
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

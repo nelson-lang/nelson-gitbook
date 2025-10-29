@@ -17,6 +17,7 @@ Return true if variable var is a numeric array.
 ## 📄 Description
 
 <b>isnumeric</b> returns a logical 1 if the argument is a numeric array and a logical 0 otherwise.
+
 List of numeric types:
 
 <b>single</b> : single precision
@@ -66,6 +67,8 @@ res = isnumeric(C)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -44,6 +44,8 @@ z = 0:3:6;
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

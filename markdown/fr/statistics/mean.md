@@ -28,15 +28,12 @@ Moyenne des éléments d'un tableau.
 <b>R = mean(M)</b> renvoie la moyenne (valeur moyenne) des éléments du tableau M.
 
 La moyenne arithmétique d'un ensemble de valeurs
-
 $$x_1, x_2, \ldots, x_n$$
 
 est définie comme :
-
 $$\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i$$
 
 où
-
 $$n$$
 
 est le nombre d'éléments.
@@ -58,6 +55,8 @@ R = mean(M, 'native')
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

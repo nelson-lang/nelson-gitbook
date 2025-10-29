@@ -75,6 +75,8 @@ AgtB = cellfun(R, A, B, 'ErrorHandler', H, 'UniformOutput', false)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

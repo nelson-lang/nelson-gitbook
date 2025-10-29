@@ -31,24 +31,23 @@ Affiche une image à partir d'un tableau.
 <b>image</b> affiche les données C sous forme d'image.
 
 Propriétés :
-
-| Propriété            | Description                                                                                                                                       |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **AlphaData**        | Données de transparence : scalaire, tableau de même taille que CData, ou 1 (par défaut).                                                          |
-| **AlphaDataMapping** | Méthode de mappage des données alpha.                                                                                                             |
-| **CData**            | Données de couleur de l'image : vecteur ou matrice, tableau 3D de triplets RGB.                                                                   |
-| **CDataMapping**     | Méthode de mappage des couleurs : 'scaled' ou 'direct' (par défaut).                                                                              |
-| **Children**         | [].                                                                                                                                               |
-| **Parent**           | Parent : objet axes.                                                                                                                              |
-| **Tag**              | Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut).                                                                 |
-| **Type**             | Type d'objet graphique : 'surface'.                                                                                                               |
-| **UserData**         | Données utilisateur : tableau ou [] (par défaut).                                                                                                 |
-| **Visible**          | État de visibilité : 'off' ou 'on' (par défaut).                                                                                                  |
-| **XData**            | Placement sur l'axe x : vecteur à deux éléments, scalaire, [1 size(CData, 1)] (par défaut).                                                       |
-| **YData**            | Placement sur l'axe y : vecteur à deux éléments, scalaire, [1 size(CData, 2)] (par défaut).                                                       |
-| **CreateFcn**        | Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet. |
-| **DeleteFcn**        | Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.                                                                 |
-| **BeingDeleted**     | Indique que l'objet est en cours de suppression.                                                                                                  |
+| Propriété | Description |
+| --- | --- |
+| **AlphaData** | Données de transparence : scalaire, tableau de même taille que CData, ou 1 (par défaut). |
+| **AlphaDataMapping** | Méthode de mappage des données alpha. |
+| **CData** | Données de couleur de l'image : vecteur ou matrice, tableau 3D de triplets RGB. |
+| **CDataMapping** | Méthode de mappage des couleurs : 'scaled' ou 'direct' (par défaut). |
+| **Children** | []. |
+| **Parent** | Parent : objet axes. |
+| **Tag** | Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut). |
+| **Type** | Type d'objet graphique : 'surface'. |
+| **UserData** | Données utilisateur : tableau ou [] (par défaut). |
+| **Visible** | État de visibilité : 'off' ou 'on' (par défaut). |
+| **XData** | Placement sur l'axe x : vecteur à deux éléments, scalaire, [1 size(CData, 1)] (par défaut). |
+| **YData** | Placement sur l'axe y : vecteur à deux éléments, scalaire, [1 size(CData, 2)] (par défaut). |
+| **CreateFcn** | Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet. |
+| **DeleteFcn** | Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet. |
+| **BeingDeleted** | Indique que l'objet est en cours de suppression. |
 
 ## 💡 Exemples
 
@@ -85,6 +84,8 @@ image();
 | 1.7.0   | Ajout des callbacks CreateFcn, DeleteFcn. |
 | --      | Ajout de la propriété BeingDeleted.       |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

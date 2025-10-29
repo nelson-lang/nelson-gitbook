@@ -35,6 +35,8 @@ info = audioinfo(wav_file)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

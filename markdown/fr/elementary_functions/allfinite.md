@@ -36,6 +36,8 @@ R2 = isfinite(X)
 | ------- | ---------------- |
 | 1.6.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

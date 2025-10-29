@@ -33,6 +33,8 @@ CMake est utilisé en interne pour générer les makefiles permettant de constru
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

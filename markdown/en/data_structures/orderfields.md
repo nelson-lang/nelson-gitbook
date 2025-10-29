@@ -56,6 +56,8 @@ tB = orderfields (s, tA)
 | ------- | --------------- |
 | 1.5.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

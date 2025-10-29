@@ -52,6 +52,8 @@ Ts = 0.004;
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

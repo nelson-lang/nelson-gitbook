@@ -44,6 +44,8 @@ ce = whonh5([tempdir(), 'example_whonh5.nh5'])
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

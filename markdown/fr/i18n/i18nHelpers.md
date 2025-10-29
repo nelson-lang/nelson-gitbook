@@ -39,6 +39,8 @@ Cette utilité est destinée à un usage interne et peut être mise à jour au f
 | ------- | ---------------- |
 | 1.10.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

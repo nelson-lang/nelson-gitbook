@@ -41,6 +41,8 @@ Analyse la couleur et le style à partir d'une chaîne.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

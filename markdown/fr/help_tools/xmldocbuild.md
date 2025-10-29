@@ -35,6 +35,8 @@ fonction interne
 | 1.0.0   | version initiale              |
 | 1.15.0  | 'qt' input parameter removed. |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

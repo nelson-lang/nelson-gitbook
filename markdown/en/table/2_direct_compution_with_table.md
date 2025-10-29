@@ -44,6 +44,8 @@ abs(sin(T)) + 1
 | ------- | --------------- |
 | 1.9.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

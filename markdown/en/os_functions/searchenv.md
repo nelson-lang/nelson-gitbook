@@ -42,6 +42,8 @@ c = searchenv('loader.m', 'MY_PATH_ENV')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

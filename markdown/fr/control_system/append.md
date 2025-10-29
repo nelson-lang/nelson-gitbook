@@ -37,6 +37,8 @@ sys = append(sys1, 10, sys2)
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

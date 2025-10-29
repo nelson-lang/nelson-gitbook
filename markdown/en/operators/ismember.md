@@ -41,6 +41,8 @@ T = ismember(["a","b","f"], ["b", "f", "c"])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -26,6 +26,8 @@ Arrête l'exécution du script et entre en mode débogage.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

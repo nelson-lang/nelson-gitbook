@@ -44,6 +44,8 @@ isfile([tempdir(), 'test_rmfile.txt'])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

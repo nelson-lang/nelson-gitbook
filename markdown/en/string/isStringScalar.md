@@ -36,6 +36,8 @@ r = isStringScalar(["hello", "world"])
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

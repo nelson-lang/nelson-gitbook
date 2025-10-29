@@ -38,6 +38,8 @@ RGB = validatecolor({'red','green','blue'},'multiple')
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -44,12 +44,14 @@ Les méthodes d'interpolation prises en charge incluent :
 - 'box' : noyau en forme de boîte
 - 'lanczos2' : noyau Lanczos-2
 - 'lanczos3' : noyau Lanczos-3
-  Paires nom-valeur prises en charge :
+
+Paires nom-valeur prises en charge :
 
 - 'Antialiasing' : true/false (par défaut : true)
 - 'Colormap' : 'optimized' (par défaut) ou 'original' (image indexée uniquement)
 - 'Dither' : true (par défaut) ou false (image indexée uniquement)
-  Limitations :
+
+Limitations :
 
 - L'entrée doit être non-creuse (nonsparse) et réelle pour les images numériques.
 - Pour de grands facteurs d'échelle, la taille de l'image de sortie peut être significativement plus grande que l'entrée.
@@ -92,6 +94,8 @@ title('Resized Image');
 | ------- | ---------------- |
 | 1.15.0  | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

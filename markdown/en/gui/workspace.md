@@ -22,6 +22,8 @@ The Workspace browser allows you to observe and actively oversee the contents of
 | ------- | --------------- |
 | 1.1.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

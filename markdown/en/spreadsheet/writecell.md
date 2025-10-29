@@ -86,6 +86,8 @@ R = fileread(filename)
 | ------- | --------------- |
 | 1.10.0  | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

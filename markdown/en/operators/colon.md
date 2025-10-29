@@ -49,6 +49,8 @@ C(:) = rand(3, 4)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

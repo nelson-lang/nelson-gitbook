@@ -45,6 +45,8 @@ nargoutchk(1, 2, 3, 'struct')
 | 1.0.0   | initial version            |
 | 1.10.0  | nargoutchk(3, Inf) managed |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -63,6 +63,8 @@ X_IN = zeros(N, N);
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

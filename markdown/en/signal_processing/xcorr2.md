@@ -38,6 +38,8 @@ C = xcorr2(H, X)
 | ------- | --------------- |
 | 1.3.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

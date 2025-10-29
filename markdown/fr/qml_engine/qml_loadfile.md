@@ -36,6 +36,8 @@ Il crée un composant QML et charge le fichier .qml.
 | ------- | ---------------- |
 | 1.0.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

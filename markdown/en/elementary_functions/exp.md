@@ -19,11 +19,9 @@ Exponential
 <b>exp</b> computes the exponential value.
 
 For real numbers:
-
 $$e^x$$
 
 For complex numbers <b>z = x + iy</b>:
-
 $$e^z = e^x(\cos y + i\sin y)$$
 
 ## 💡 Example
@@ -43,6 +41,8 @@ r = exp(x)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

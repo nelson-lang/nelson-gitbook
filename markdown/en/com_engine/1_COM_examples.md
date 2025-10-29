@@ -18,6 +18,8 @@ Interacts with Internet explorer, Word, Excel, Speech voice, VB scripts ...
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

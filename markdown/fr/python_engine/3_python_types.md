@@ -5,12 +5,11 @@ Gestion des données entre Python et Nelson.
 ## 📄 Description
 
 <b>Gestion des données renvoyées par les fonctions Python :</b>
-
 | Type renvoyé par Python (affiché en Python) | Type correspondant dans Nelson (scalaire) |
-| ------------------------------------------- | ----------------------------------------- |
-| bool                                        | logical                                   |
-| complex                                     | double (complex)                          |
-| float                                       | double                                    |
+| --- | --- |
+| bool | logical |
+| complex | double (complex) |
+| float | double |
 
 <b>Conversion explicite des types Python vers Nelson :</b>
 
@@ -108,6 +107,8 @@ dictionary(R)
 | ------- | ---------------- |
 | 1.4.0   | version initiale |
 
+<!--
 ## 👤 Auteur
 
 Allan CORNET
+-->

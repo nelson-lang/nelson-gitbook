@@ -26,7 +26,7 @@ Convert date and time to string format.
 
 ## 📄 Description
 
-<b>dateAsString = datestr(dateVector)</b> converts date vectors into text that represents the corresponding dates and times. It returns a character array with <b>m</b> rows, where <b>m</b> is the number of date vectors in <b>dateVector</b>.
+<b>dateAsString = datestr(dateVector)</b> converts date vectors into text that represents the corresponding dates and times. It returns a character array with <b>m</b>rows, where <b>m</b> is the number of date vectors in <b>dateVector</b>.
 
 <b>dateAsString = datestr(dateNumber)</b> converts serial date numbers into text representing dates and times. The output is a character array with <b>m</b> rows, where <b>
 m</b> is the number of date numbers in <b>dateNumber</b>.
@@ -152,6 +152,8 @@ datestr(dateStringIn,formatOut, pivotYear)
 | ------- | --------------- |
 | 1.8.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->

@@ -60,6 +60,8 @@ A_IN = [1.    2.    6.    3.    5.;
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

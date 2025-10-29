@@ -60,6 +60,8 @@ D_IN = [4.0   0.0;
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 SLICOT Documentation
+-->

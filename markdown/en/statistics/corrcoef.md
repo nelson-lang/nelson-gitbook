@@ -19,31 +19,24 @@ Correlation coefficients
 <b>R = corrcoef(M)</b> returns the matrix of correlation coefficients for <b>M</b>, where the columns of <b>M</b> represent random variables and the rows represent observations.
 
 The Pearson correlation coefficient between variables
-
 $$X$$
 
 and
-
 $$Y$$
 
 is:
-
 $$r_{XY} = \frac{\text{cov}(X,Y)}{\sigma_X \sigma_Y} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^n (x_i - \bar{x})^2 \sum_{i=1}^n (y_i - \bar{y})^2}}$$
 
 where
-
 $$\bar{x}$$
 
 and
-
 $$\bar{y}$$
 
 are the sample means, and
-
 $$\sigma_X$$
 
 ,
-
 $$\sigma_Y$$
 
 are the standard deviations.
@@ -67,6 +60,8 @@ R = corrcoef(M)
 | ------- | --------------- |
 | 1.0.0   | initial version |
 
+<!--
 ## 👤 Author
 
 Allan CORNET
+-->
