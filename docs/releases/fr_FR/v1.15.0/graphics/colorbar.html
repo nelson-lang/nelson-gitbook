@@ -25,6 +25,7 @@
 <span class="syntax-icon">📝</span>Syntaxe</div>
 <pre class="syntax-block"><code class="language-matlab">colorbar()
 colorbar('off')
+colorbar(location)
 colorbar(..., propertyName, propertyValue)
 colorbar(target, ...)
 colorbar(target, 'off')
@@ -55,6 +56,10 @@ c = colorbar(...)
 <td class="param-name">'off'</td>
 <td>supprime la barre de couleur associée aux axes courants.</td>
 </tr>
+<tr>
+<td class="param-name">location</td>
+<td>spécifie la position de la barre de couleur: 'north','south','east','west', ...</td>
+</tr>
 </table>
 </div>
 <div class="section">
@@ -77,6 +82,9 @@ c = colorbar(...)
 <div>
         <p>
             <b>colorbar</b> ajoute une barre de couleur à un graphique.</p>
+            <p>Elle peut être placée à différents emplacements autour des axes.</p>
+            <p>Les emplacements pris en charge incluent : 'north','south','east','west',
+            'northoutside','southoutside','eastoutside','westoutside'.</p>
         </div>
 </div>
 <div class="section">
@@ -104,6 +112,24 @@ cb = colorbar(gca);</code></pre>
 </div>
 <img src="./colorbar_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
 </div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">locations = { 'north';
+'south';
+'east';
+'west';
+'northoutside';
+'southoutside';
+'eastoutside';
+'westoutside'};
+f = figure();
+surf(peaks);
+colormap('jet');
+for k = 1 : length(locations)
+    colorbar(locations{k});
+    pause(1);
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
 </div>
 <div class="section">
 <div class="section-title">
@@ -121,6 +147,10 @@ cb = colorbar(gca);</code></pre>
 <tr>
 <td class="version">1.0.0</td>
 <td>version initiale</td>
+</tr>
+<tr>
+<td class="version">1.15.0</td>
+<td>ajout du support du paramètre location</td>
 </tr>
 </table>
 </div>

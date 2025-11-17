@@ -16,6 +16,7 @@ des utilitaires pour travailler avec les couleurs, légendes, axes et annotation
 - [bar](bar.md) - Diagramme en barres.
 - [bone](bone.md) - Palette de couleurs bone.
 - [cla](cla.md) - Efface les axes.
+- [clabel](clabel.md) - Étiquetage des contours
 - [clf](clf.md) - Efface la figure.
 - [clim](clim.md) - Définit les limites de la palette de couleurs.
 - [close](close.md) - Ferme une ou plusieurs figures

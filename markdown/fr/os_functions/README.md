@@ -16,6 +16,7 @@ Ce module permet une intégration fluide des scripts Nelson avec le système d'e
 - [ismac](ismac.md) - Vérifie si la version est pour la plateforme macOS.
 - [ispc](ispc.md) - Vérifie si la version est pour la plateforme Windows.
 - [isunix](isunix.md) - Vérifie si la version est pour une plateforme GNU/Linux ou Unix.
+- [loadenv](loadenv.md) - Charger les variables d'environnement définies dans des fichiers .env ou des fichiers texte ordinaires.
 - [searchenv](searchenv.md) - Recherche un fichier en utilisant les chemins définis dans une variable d'environnement.
 - [setenv](setenv.md) - Définir la valeur d'une variable d'environnement.
 - [system](system.md) - Exécution de commandes shell.

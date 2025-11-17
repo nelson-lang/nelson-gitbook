@@ -12,5 +12,6 @@ Le module prend également en charge des structures avancées de synthèse de do
 - [cov](cov.md) - Covariance
 - [mean](mean.md) - Moyenne des éléments d'un tableau.
 - [normpdf](normpdf.md) - Densité de probabilité normale
+- [std](std.md) - Écart type
 - [tdigest](tdigest.md) - Structure de données t-digest pour une estimation précise des quantiles avec paramètres de compression configurables
 - [var](var.md) - Variance

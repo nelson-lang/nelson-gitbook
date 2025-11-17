@@ -12,7 +12,9 @@ Le module prend également en charge la transformation entre représentations p�
 - [blackman](blackman.md) - Fenêtre de Blackman.
 - [db2mag](db2mag.md) - Convertit un gain en décibels (dB) en magnitude.
 - [db2pow](db2pow.md) - Convertit un gain en décibels (dB) en puissance.
+- [downsample](downsample.md) - Sous-échantillonner un signal par un facteur entier.
 - [filter2](filter2.md) - Filtre numérique 2-D.
+- [findpeaks](findpeaks.md) - localiser les maxima locaux (pics) dans un signal 1-D.
 - [hamming](hamming.md) - Fenêtre de Hamming.
 - [hann](hann.md) - Fenêtre de Hann.
 - [mag2db](mag2db.md) - Convertit une magnitude en décibels (dB).

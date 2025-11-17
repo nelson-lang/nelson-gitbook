@@ -112,7 +112,7 @@ Pushbutton
 ```matlab
 
 f = figure;
-b = uicontrol(f,'Style','pushbutton', 'String', 'Click Me', 'Position', [100 100 60 30], 'Callback', 'disp(''Hello World!'')')
+b = uicontrol(f,Style='pushbutton', String='Click Me', Position=[100 100 60 30], Callback='disp(''Hello World!'')')
 
 ```
 
@@ -122,7 +122,7 @@ Checkbox
 ```matlab
 
 f = figure();
-h = uicontrol('Style', 'checkbox', 'String', 'Click Me!', 'Position', [100, 100, 100, 50]);
+h = uicontrol(Style='checkbox', String='Click Me!', Position=[100, 100, 100, 50]);
 
 ```
 
@@ -132,7 +132,7 @@ Edit
 ```matlab
 
 f = figure();
-h = uicontrol('Style', 'edit', 'String', 'Click Me!', 'Position', [100, 100, 100, 50]);
+h = uicontrol(Style='edit', String='Click Me!', Position=[100, 100, 100, 50]);
 
 ```
 
@@ -141,12 +141,12 @@ Image
 
 ```matlab
 
-hFig = figure('Position', [100, 100, 300, 300]);
+hFig = figure(Position=[100, 100, 300, 300]);
 imgSize = 50;  % Size of the image
 [X, Y] = meshgrid(1:imgSize, 1:imgSize);
 CData = cat(3, X/imgSize, Y/imgSize, zeros(imgSize));
 CData = im2double(CData);  % Ensure the image is of type double
-hButton = uicontrol('Style', 'pushbutton',  'Position', [100, 100, 100, 100], 'CData', CData, 'String', 'Click Me!');
+hButton = uicontrol(Style='pushbutton',  Position=[100, 100, 100, 100], CData=CData, String='Click Me!');
 
 ```
 

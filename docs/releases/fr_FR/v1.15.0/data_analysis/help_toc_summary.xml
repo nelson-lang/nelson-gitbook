@@ -18,6 +18,7 @@
       <keyword name="min" link="min.html" description="Valeurs minimales d'un tableau."/>
       <keyword name="prod" link="prod.html" description="Produit des éléments d'un tableau."/>
       <keyword name="sort" link="sort.html" description="Trier les éléments d'un tableau (algorithme de tri rapide)."/>
+      <keyword name="subspace" link="subspace.html" description="Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices."/>
       <keyword name="sum" link="sum.html" description="Somme des éléments d'un tableau."/>
       <keyword name="unique" link="unique.html" description="Valeurs uniques."/>
     </section>

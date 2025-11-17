@@ -13,6 +13,7 @@ The module also includes functions for searching, matching, replacing, and forma
 - [char](char.md) - Converts to a character array.
 - [contains](contains.md) - checks if string contains with pattern.
 - [convertCharsToStrings](convertCharsToStrings.md) - Convert chars arrays to string arrays.
+- [convertStringToCharArgs](convertStringsToCharArgs.md) - Convert string arrays to character arrays or cell of char vectors.
 - [convertStringsToChars](convertStringsToChars.md) - Convert string arrays to character arrays.
 - [count](count.md) - Computes the number of occurrences of an pattern.
 - [deblank](deblank.md) - Remove trailing whitespace.

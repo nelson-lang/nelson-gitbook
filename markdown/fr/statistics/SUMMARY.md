@@ -3,5 +3,6 @@
   - [cov](cov.md)
   - [mean](mean.md)
   - [normpdf](normpdf.md)
+  - [std](std.md)
   - [tdigest](tdigest.md)
   - [var](var.md)

@@ -13,6 +13,7 @@
       <keyword name="char" link="char.html" description="Convertit en tableau de caractères."/>
       <keyword name="contains" link="contains.html" description="Vérifie si une chaîne contient un motif."/>
       <keyword name="convertCharsToStrings" link="convertCharsToStrings.html" description="Convertit des tableaux de caractères en tableaux de chaînes."/>
+      <keyword name="convertStringToCharArgs" link="convertStringsToCharArgs.html" description="Convertir des tableaux de chaînes en tableaux de caractères ou en cellules de vecteurs de caractères."/>
       <keyword name="convertStringsToChars" link="convertStringsToChars.html" description="Convertit des tableaux de chaînes en tableaux de caractères."/>
       <keyword name="count" link="count.html" description="Calcule le nombre d'occurrences d'un motif."/>
       <keyword name="deblank" link="deblank.html" description="Supprime les espaces en fin de chaîne."/>

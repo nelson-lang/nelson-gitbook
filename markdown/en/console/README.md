@@ -9,5 +9,6 @@ These features allow scripts and applications to communicate directly with the u
 ## Functions
 
 - [clc](clc.md) - Clear Command Window.
+- [consolebox](consolebox.md) - Displays or hides the Windows terminal associated with the Nelson session.
 - [input](input.md) - Display prompt and wait for user input.
 - [terminal_size](terminal_size.md) - Query the size of the terminal window.

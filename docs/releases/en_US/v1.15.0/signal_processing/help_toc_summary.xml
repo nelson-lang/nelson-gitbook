@@ -12,7 +12,9 @@
       <keyword name="blackman" link="blackman.html" description="Blackman window."/>
       <keyword name="db2mag" link="db2mag.html" description="Convert a gain in decibels (dB) to a magnitude."/>
       <keyword name="db2pow" link="db2pow.html" description="Convert a gain in decibels (dB) to power."/>
+      <keyword name="downsample" link="downsample.html" description="Downsample a signal by an integer factor."/>
       <keyword name="filter2" link="filter2.html" description="2-D digital filter."/>
+      <keyword name="findpeaks" link="findpeaks.html" description="Locate local maxima (peaks) in a 1-D signal."/>
       <keyword name="hamming" link="hamming.html" description="Hamming window."/>
       <keyword name="hann" link="hann.html" description="Hann window."/>
       <keyword name="mag2db" link="mag2db.html" description="Convert a magnitude to decibels (dB)."/>

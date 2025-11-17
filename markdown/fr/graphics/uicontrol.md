@@ -122,7 +122,7 @@ Case à cocher
 ```matlab
 
 f = figure();
-h = uicontrol('Style', 'checkbox', 'String', 'Cliquez-moi!', 'Position', [100, 100, 100, 50]);
+h = uicontrol(Style='checkbox', String='Cliquez-moi!', Position=[100, 100, 100, 50]);
 
 ```
 
@@ -132,7 +132,7 @@ h = uicontrol('Style', 'checkbox', 'String', 'Cliquez-moi!', 'Position', [100, 1
 ```matlab
 
 f = figure();
-h = uicontrol('Style', 'edit', 'String', 'Cliquez-moi!', 'Position', [100, 100, 100, 50]);
+h = uicontrol(Style='edit', String='Cliquez-moi!', Position=[100, 100, 100, 50]);
 
 ```
 
@@ -141,12 +141,12 @@ Image
 
 ```matlab
 
-hFig = figure('Position', [100, 100, 300, 300]);
+hFig = figure(Position=[100, 100, 300, 300]);
 imgSize = 50;  % Taille de l'image
 [X, Y] = meshgrid(1:imgSize, 1:imgSize);
 CData = cat(3, X/imgSize, Y/imgSize, zeros(imgSize));
 CData = im2double(CData);  % S'assurer que l'image est de type double
-hButton = uicontrol('Style', 'pushbutton',  'Position', [100, 100, 100, 100], 'CData', CData, 'String', 'Cliquez-moi!');
+hButton = uicontrol(Style='pushbutton',  Position=[100, 100, 100, 100], CData=CData, String='Cliquez-moi!');
 
 ```
 

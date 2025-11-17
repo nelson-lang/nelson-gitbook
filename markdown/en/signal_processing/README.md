@@ -12,7 +12,9 @@ The module also supports transformation between zero-pole representations and tr
 - [blackman](blackman.md) - Blackman window.
 - [db2mag](db2mag.md) - Convert a gain in decibels (dB) to a magnitude.
 - [db2pow](db2pow.md) - Convert a gain in decibels (dB) to power.
+- [downsample](downsample.md) - Downsample a signal by an integer factor.
 - [filter2](filter2.md) - 2-D digital filter.
+- [findpeaks](findpeaks.md) - Locate local maxima (peaks) in a 1-D signal.
 - [hamming](hamming.md) - Hamming window.
 - [hann](hann.md) - Hann window.
 - [mag2db](mag2db.md) - Convert a magnitude to decibels (dB).

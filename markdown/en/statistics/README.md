@@ -12,5 +12,6 @@ The module also supports advanced data summarization structures for accurate qua
 - [cov](cov.md) - Covariance
 - [mean](mean.md) - Mean of array elements.
 - [normpdf](normpdf.md) - Normal probability density function
+- [std](std.md) - Standard deviation
 - [tdigest](tdigest.md) - t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters
 - [var](var.md) - Variance

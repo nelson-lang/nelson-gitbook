@@ -18,6 +18,7 @@
       <keyword name="min" link="min.html" description="Minimum elements of an array."/>
       <keyword name="prod" link="prod.html" description="Product of array elements."/>
       <keyword name="sort" link="sort.html" description="Sort array elements by quick sort algorithm."/>
+      <keyword name="subspace" link="subspace.html" description="Measure of distance (angle) between two subspaces spanned by columns of matrices."/>
       <keyword name="sum" link="sum.html" description="Sum of array elements."/>
       <keyword name="unique" link="unique.html" description="Unique values."/>
     </section>

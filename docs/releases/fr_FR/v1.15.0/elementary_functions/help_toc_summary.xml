@@ -35,6 +35,7 @@
       <keyword name="fliplr" link="fliplr.html" description="Inverser l'ordre des éléments de gauche à droite"/>
       <keyword name="flipud" link="flipud.html" description="Inverser l'ordre des éléments de haut en bas"/>
       <keyword name="floor" link="floor.html" description="Arrondir vers le bas"/>
+      <keyword name="gallery" link="gallery.html" description="Générer des matrices de test et des données couramment utilisées pour des expériences numériques"/>
       <keyword name="hadamard" link="hadamard.html" description="Matrice de Hadamard"/>
       <keyword name="hankel" link="hankel.html" description="Matrice de Hankel"/>
       <keyword name="hex2dec" link="hex2dec.html" description="Convertit un nombre en base 16 en décimal."/>
@@ -67,7 +68,9 @@
       <keyword name="log2" link="log2.html" description="dissect floating-point numbers into base 2 exponent and mantissa."/>
       <keyword name="logspace" link="logspace.html" description="logarithmically spaced vector constructor."/>
       <keyword name="magic" link="magic.html" description="Magic square"/>
+      <keyword name="maxk" link="maxk.html" description="k plus grands éléments d'un tableau"/>
       <keyword name="meshgrid" link="meshgrid.html" description="Cartesian rectangular grid in 2-D or 3-D."/>
+      <keyword name="mink" link="mink.html" description="k plus petits éléments d'un tableau"/>
       <keyword name="minus" link="minus.html" description="Subtraction, - operator"/>
       <keyword name="mod" link="mod.html" description="Modulus after division."/>
       <keyword name="ndgrid" link="ndgrid.html" description="Rectangular grid in N-D space"/>
@@ -78,6 +81,7 @@
       <keyword name="nthroot" link="nthroot.html" description="The real 𝑛th root of real number."/>
       <keyword name="num2bin" link="num2bin.html" description="Convert number to binary representation."/>
       <keyword name="numel" link="numel.html" description="Number of elements."/>
+      <keyword name="pascal" link="pascal.html" description="Triangle de Pascal"/>
       <keyword name="permute" link="permute.html" description="Permute array dimensions."/>
       <keyword name="pinv" link="pinv.html" description="Moore-Penrose pseudoinverse"/>
       <keyword name="pow2" link="pow2.html" description="Base 2 exponentiation and scaling of floating-point numbers."/>

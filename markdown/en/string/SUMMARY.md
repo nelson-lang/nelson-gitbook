@@ -4,6 +4,7 @@
   - [char](char.md)
   - [contains](contains.md)
   - [convertCharsToStrings](convertCharsToStrings.md)
+  - [convertStringToCharArgs](convertStringsToCharArgs.md)
   - [convertStringsToChars](convertStringsToChars.md)
   - [count](count.md)
   - [deblank](deblank.md)

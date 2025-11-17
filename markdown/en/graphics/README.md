@@ -16,6 +16,7 @@ utilities for working with colors, legends, axes, and text annotations.
 - [bar](bar.md) - Bar graph.
 - [bone](bone.md) - Bone colormap array.
 - [cla](cla.md) - Clear axes.
+- [clabel](clabel.md) - Contour labeling
 - [clf](clf.md) - Clear figure.
 - [clim](clim.md) - Set colormap limits.
 - [close](close.md) - Close one or more figures

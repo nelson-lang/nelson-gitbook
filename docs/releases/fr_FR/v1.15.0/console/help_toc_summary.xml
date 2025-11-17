@@ -9,6 +9,7 @@
         <p>Ces fonctionnalités permettent aux scripts et applications de communiquer directement avec l'utilisateur via la console, facilitant la construction de workflows interactifs et l'adaptation de la sortie à l'environnement terminal actuel.</p>
     </chapter_description>
       <keyword name="clc" link="clc.html" description="Effacer la fenêtre de commande."/>
+      <keyword name="consolebox" link="consolebox.html" description="Affiche ou masque le terminal Windows associé à la session Nelson."/>
       <keyword name="input" link="input.html" description="Afficher une invite et attendre l'entrée utilisateur."/>
       <keyword name="terminal_size" link="terminal_size.html" description="Interroger la taille de la fenêtre du terminal."/>
     </section>

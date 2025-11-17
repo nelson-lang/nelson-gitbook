@@ -18,9 +18,11 @@
       <keyword name="function" link="function.html" description="function declaration."/>
       <keyword name="endfunction" link="function.html" description="function declaration."/>
       <keyword name="if" link="if.html" description="conditional statement."/>
+      <keyword name="tilde" link="ignore_outputs_function.html" description="Ignore outputs function."/>
       <keyword name="iskeyword" link="iskeyword.html" description="Returns all Nelson keywords."/>
       <keyword name="keyboard" link="keyboard.html" description="Stops script execution and enter in debug mode."/>
       <keyword name="max_recursion_depth" link="max_recursion_depth.html" description=" Internal limit on the number of times a function may be called recursively."/>
+      <keyword name="name=value" link="name_value_syntax.html" description="Name=value syntax for name-value arguments."/>
       <keyword name="numeric types" link="numeric_types.html" description="About integer and floating-point data."/>
       <keyword name="parsefile" link="parsefile.html" description="Parse a Nelson file."/>
       <keyword name="parsestring" link="parsestring.html" description="Parse a string."/>

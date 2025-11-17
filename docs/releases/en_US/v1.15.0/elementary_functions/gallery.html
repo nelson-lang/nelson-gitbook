@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gallery</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">gallery</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Generate commonly used test matrices and data for numerical experiments</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">[A1,A2,...,Am] = gallery(matrixname,P1,P2,...,Pn)
+[A1,A2,...,Am] = gallery(matrixname,P1,P2,...,Pn,typename)
+A = gallery(k)
+A = gallery("circul", v)
+[v,beta] = gallery("house", x)
+[A,beta] = gallery("ipjfact", n, k)
+A = gallery("cauchy", x, y)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">matrixname</td>
+<td>name of the matrix family to generate (string or character vector), e.g. "circul", "cauchy", "grcar", "minij", "dramadah", "house", "ipjfact"</td>
+</tr>
+<tr>
+<td class="param-name">P1, P2, ..., Pn</td>
+<td>family-dependent parameters: scalars, vectors or matrices that determine size and entries (for example n, vectors v, x, y, or option flags)</td>
+</tr>
+<tr>
+<td class="param-name">n</td>
+<td>positive integer specifying matrix order or size</td>
+</tr>
+<tr>
+<td class="param-name">v, x, y</td>
+<td>vectors used as parameters (for example first row for circulant, point locations for chebvand, or Cauchy parameters)</td>
+</tr>
+<tr>
+<td class="param-name">k</td>
+<td>option or small integer parameter controlling family behaviour (for example number of superdiagonals for <b>grcar</b> or variant selectors for <b>dramadah</b>)</td>
+</tr>
+<tr>
+<td class="param-name">typename</td>
+<td>optional output data type: "double" (default) or "single"</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">A1,A2,...,Am</td>
+<td>one or more matrices or arrays produced by the chosen family</td>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>single matrix or multidimensional array when one output is requested</td>
+</tr>
+<tr>
+<td class="param-name">v,beta,s</td>
+<td>Householder outputs: v (vector), beta (scalar), and optional s returned by <b>house</b>
+</td>
+</tr>
+<tr>
+<td class="param-name">beta</td>
+<td>determinant or scalar output for families that return it explicitly (for example <b>ipjfact</b> returns determinant beta)</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+        <p>The <b>gallery</b> function returns a collection of standard test matrices and generated data used to illustrate numerical linear algebra concepts, test algorithms, and reproduce textbook examples.</p>
+        <p>Use the <b>matrixname</b> argument to select a family; additional parameters (sizes, vectors, options) depend on the chosen family.</p>
+        <p>Typical uses: study eigenvalue sensitivity and conditioning, exercise solvers with structured matrices (Toeplitz, Hankel, circulant), generate random or specially structured matrices with prescribed singular/eigenvalue properties, or obtain canonical examples for teaching and tests.</p>
+        <p>The optional <b>typename</b> forces the numeric output type.</p>
+        <p>If omitted, the output type is inferred from the inputs: presence of a single input yields single, otherwise outputs are double.</p>
+        <table border="1" style="width:100%">
+            
+                <tr>
+                    <th>Name</th>
+                    <th>Syntax</th>
+                    <th>Notes</th>
+                </tr>
+            
+            
+                <tr>
+                    <td>gallery(3)</td>
+                    <td>A = gallery(3)</td>
+                    <td>Classic ill-conditioned 3×3 test matrix; demonstrates eigenvalue sensitivity.</td>
+                </tr>
+                <tr>
+                    <td>gallery(5)</td>
+                    <td>A = gallery(5)</td>
+                    <td>5×5 example with exact characteristic polynomial \(\lambda^5=0\); numerically the eigenvalues are small and sensitive.</td>
+                </tr>
+                <tr>
+                    <td>circul</td>
+                    <td>A = gallery("circul", v)</td>
+                    <td>Circulant matrix: rows are cyclic shifts of v; eigenvalues are the DFT of v.</td>
+                </tr>
+                <tr>
+                    <td>grcar</td>
+                    <td>A = gallery("grcar", n, k)</td>
+                    <td>Toeplitz with -1 on subdiagonal and 1's on main and k superdiagonals; useful for pseudospectra examples.</td>
+                </tr>
+                <tr>
+                    <td>minij</td>
+                    <td>A = gallery("minij", n)</td>
+                    <td>SPD matrix with A(i,j)=min(i,j); inverse is tridiagonal (second-difference structure).</td>
+                </tr>
+                <tr>
+                    <td>dramadah</td>
+                    <td>A = gallery("dramadah", n, k)</td>
+                    <td>Binary (0/1) families; certain k yield unimodular Toeplitz matrices with integer inverses.</td>
+                </tr>
+                <tr>
+                    <td>house</td>
+                    <td>[v,beta] = gallery("house", x)</td>
+                    <td>Returns Householder vector v and scalar beta so H=I-beta*v*v' reflects x onto a multiple of e1.</td>
+                </tr>
+                <tr>
+                    <td>binomial</td>
+                    <td>A = gallery("binomial", n)</td>
+                    <td>Binomial matrix with A^2 = 2^(n-1) I; scaled matrix is involutory.</td>
+                </tr>
+                <tr>
+                    <td>cauchy</td>
+                    <td>A = gallery("cauchy", x, y)</td>
+                    <td>Cauchy matrix A(i,j)=1/(x(i)+y(j)); explicit determinant and inverse formulas exist.</td>
+                </tr>
+                <tr>
+                    <td>ris</td>
+                    <td>A = gallery("ris", n)</td>
+                    <td>Symmetric Hankel matrix with entries 0.5/(n-i-j+1.5); eigenvalues cluster near ±π/2.</td>
+                </tr>
+                <tr>
+                    <td>chebspec</td>
+                    <td>A = gallery("chebspec", n, k)</td>
+                    <td>Chebyshev spectral differentiation matrix. k=0 yields a nilpotent form; k=1 yields a nonsingular, well-conditioned operator.</td>
+                </tr>
+                <tr>
+                    <td>wilk</td>
+                    <td>gallery("wilk", m)</td>
+                    <td>Wilkinson examples (small triangular systems, W21+, etc.) illustrating stability issues.</td>
+                </tr>
+                <tr>
+                    <td>sampling</td>
+                    <td>A = gallery("sampling", x)</td>
+                    <td>Nonsymmetric matrix with integer eigenvalues 0..n-1; eigenvectors are typically ill-conditioned.</td>
+                </tr>
+                <tr>
+                    <td>ipjfact</td>
+                    <td>[A,beta] = gallery("ipjfact", n, k)</td>
+                    <td>Hankel matrix built from factorials (or reciprocals); determinant and inverse known in closed form.</td>
+                </tr>
+                <tr>
+                    <td>moler</td>
+                    <td>A = gallery("moler", n, alpha)</td>
+                    <td>Symmetric positive definite example produced as U'*U; can exhibit an isolated tiny eigenvalue.</td>
+                </tr>
+                <tr>
+                    <td>lotkin</td>
+                    <td>A = gallery("lotkin", n)</td>
+                    <td>Hilbert-like matrix with first row ones; extremely ill-conditioned, inverse has integer structure.</td>
+                </tr>
+                <tr>
+                    <td>chebvand</td>
+                    <td>A = gallery("chebvand", x)</td>
+                    <td>Chebyshev Vandermonde-like matrix: A(i,j)=T_{i-1}(x(j)), useful for spectral interpolation and polynomial bases.</td>
+                </tr>
+                <tr>
+                    <td>lehmer</td>
+                    <td>A = gallery("lehmer", n)</td>
+                    <td>lehmer matrix with entries i/j for i ≤ j; symmetric positive definite and ill-conditioned.</td>
+                </tr>
+            
+        </table>
+
+    </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Simple ill-conditioned 3-by-3 test matrix</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = gallery(3)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Create and display a circulant matrix</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">C = gallery("circul",120);
+imagesc(C); 
+axis square;
+colorbar;</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../elementary_functions/hankel.html">hankel</a><a class="see-also-link" href="../elementary_functions/hilb.html">hilb</a><a class="see-also-link" href="../elementary_functions/magic.html">magic</a><a class="see-also-link" href="../elementary_functions/pascal.html">pascal</a><a class="see-also-link" href="../elementary_functions/toeplitz.html">toeplitz</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliography</div>
+<div>See references in Higham, N. J., Accuracy and Stability of Numerical Algorithms for Gallery of Test Matrices.</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.15.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -19,9 +19,11 @@ Ensemble, ces fonctionnalités établissent la syntaxe et la sémantique fondame
 - [function](function.md) - déclaration de fonction.
 - [endfunction](function.md) - déclaration de fonction.
 - [if](if.md) - instruction conditionnelle.
+- [tilde](ignore_outputs_function.md) - Ignore les sorties d'une fonction.
 - [iskeyword](iskeyword.md) - Renvoie tous les mots-clés de Nelson.
 - [keyboard](keyboard.md) - Arrête l'exécution du script et entre en mode débogage.
 - [max_recursion_depth](max_recursion_depth.md) - Limite interne du nombre de fois qu'une fonction peut être appelée récursivement.
+- [nom=valeur](name_value_syntax.md) - Nom=valeur syntaxe pour les arguments nom=valeur.
 - [numeric types](numeric_types.md) - À propos des types entiers et à virgule flottante.
 - [parsefile](parsefile.md) - Analyser un fichier Nelson.
 - [parsestring](parsestring.md) - Analyser une chaîne.

@@ -13,6 +13,7 @@
       <keyword name="char" link="char.html" description="Converts to a character array."/>
       <keyword name="contains" link="contains.html" description="checks if string contains with pattern."/>
       <keyword name="convertCharsToStrings" link="convertCharsToStrings.html" description="Convert chars arrays to string arrays."/>
+      <keyword name="convertStringToCharArgs" link="convertStringsToCharArgs.html" description="Convert string arrays to character arrays or cell of char vectors."/>
       <keyword name="convertStringsToChars" link="convertStringsToChars.html" description="Convert string arrays to character arrays."/>
       <keyword name="count" link="count.html" description="Computes the number of occurrences of an pattern."/>
       <keyword name="deblank" link="deblank.html" description="Remove trailing whitespace."/>

@@ -130,9 +130,11 @@
       <keyword name="function" link="./interpreter/function.html" description="déclaration de fonction."></keyword>
       <keyword name="endfunction" link="./interpreter/function.html" description="déclaration de fonction."></keyword>
       <keyword name="if" link="./interpreter/if.html" description="instruction conditionnelle."></keyword>
+      <keyword name="tilde" link="./interpreter/ignore_outputs_function.html" description="Ignore les sorties d'une fonction."></keyword>
       <keyword name="iskeyword" link="./interpreter/iskeyword.html" description="Renvoie tous les mots-clés de Nelson."></keyword>
       <keyword name="keyboard" link="./interpreter/keyboard.html" description="Arrête l'exécution du script et entre en mode débogage."></keyword>
       <keyword name="max_recursion_depth" link="./interpreter/max_recursion_depth.html" description=" Limite interne du nombre de fois qu'une fonction peut être appelée récursivement."></keyword>
+      <keyword name="nom=valeur" link="./interpreter/name_value_syntax.html" description="Nom=valeur syntaxe pour les arguments nom=valeur."></keyword>
       <keyword name="numeric types" link="./interpreter/numeric_types.html" description="À propos des types entiers et à virgule flottante."></keyword>
       <keyword name="parsefile" link="./interpreter/parsefile.html" description="Analyser un fichier Nelson."></keyword>
       <keyword name="parsestring" link="./interpreter/parsestring.html" description="Analyser une chaîne."></keyword>
@@ -165,6 +167,7 @@
         <p>Ces fonctionnalités permettent aux scripts et applications de communiquer directement avec l'utilisateur via la console, facilitant la construction de workflows interactifs et l'adaptation de la sortie à l'environnement terminal actuel.</p>
     </chapter_description>
       <keyword name="clc" link="./console/clc.html" description="Effacer la fenêtre de commande."></keyword>
+      <keyword name="consolebox" link="./console/consolebox.html" description="Affiche ou masque le terminal Windows associé à la session Nelson."></keyword>
       <keyword name="input" link="./console/input.html" description="Afficher une invite et attendre l'entrée utilisateur."></keyword>
       <keyword name="terminal_size" link="./console/terminal_size.html" description="Interroger la taille de la fenêtre du terminal."></keyword>
     </section>
@@ -319,6 +322,7 @@
       <keyword name="char" link="./string/char.html" description="Convertit en tableau de caractères."></keyword>
       <keyword name="contains" link="./string/contains.html" description="Vérifie si une chaîne contient un motif."></keyword>
       <keyword name="convertCharsToStrings" link="./string/convertCharsToStrings.html" description="Convertit des tableaux de caractères en tableaux de chaînes."></keyword>
+      <keyword name="convertStringToCharArgs" link="./string/convertStringsToCharArgs.html" description="Convertir des tableaux de chaînes en tableaux de caractères ou en cellules de vecteurs de caractères."></keyword>
       <keyword name="convertStringsToChars" link="./string/convertStringsToChars.html" description="Convertit des tableaux de chaînes en tableaux de caractères."></keyword>
       <keyword name="count" link="./string/count.html" description="Calcule le nombre d'occurrences d'un motif."></keyword>
       <keyword name="deblank" link="./string/deblank.html" description="Supprime les espaces en fin de chaîne."></keyword>
@@ -550,6 +554,7 @@
       <keyword name="fliplr" link="./elementary_functions/fliplr.html" description="Inverser l'ordre des éléments de gauche à droite"></keyword>
       <keyword name="flipud" link="./elementary_functions/flipud.html" description="Inverser l'ordre des éléments de haut en bas"></keyword>
       <keyword name="floor" link="./elementary_functions/floor.html" description="Arrondir vers le bas"></keyword>
+      <keyword name="gallery" link="./elementary_functions/gallery.html" description="Générer des matrices de test et des données couramment utilisées pour des expériences numériques"></keyword>
       <keyword name="hadamard" link="./elementary_functions/hadamard.html" description="Matrice de Hadamard"></keyword>
       <keyword name="hankel" link="./elementary_functions/hankel.html" description="Matrice de Hankel"></keyword>
       <keyword name="hex2dec" link="./elementary_functions/hex2dec.html" description="Convertit un nombre en base 16 en décimal."></keyword>
@@ -582,7 +587,9 @@
       <keyword name="log2" link="./elementary_functions/log2.html" description="dissect floating-point numbers into base 2 exponent and mantissa."></keyword>
       <keyword name="logspace" link="./elementary_functions/logspace.html" description="logarithmically spaced vector constructor."></keyword>
       <keyword name="magic" link="./elementary_functions/magic.html" description="Magic square"></keyword>
+      <keyword name="maxk" link="./elementary_functions/maxk.html" description="k plus grands éléments d'un tableau"></keyword>
       <keyword name="meshgrid" link="./elementary_functions/meshgrid.html" description="Cartesian rectangular grid in 2-D or 3-D."></keyword>
+      <keyword name="mink" link="./elementary_functions/mink.html" description="k plus petits éléments d'un tableau"></keyword>
       <keyword name="minus" link="./elementary_functions/minus.html" description="Subtraction, - operator"></keyword>
       <keyword name="mod" link="./elementary_functions/mod.html" description="Modulus after division."></keyword>
       <keyword name="ndgrid" link="./elementary_functions/ndgrid.html" description="Rectangular grid in N-D space"></keyword>
@@ -593,6 +600,7 @@
       <keyword name="nthroot" link="./elementary_functions/nthroot.html" description="The real 𝑛th root of real number."></keyword>
       <keyword name="num2bin" link="./elementary_functions/num2bin.html" description="Convert number to binary representation."></keyword>
       <keyword name="numel" link="./elementary_functions/numel.html" description="Number of elements."></keyword>
+      <keyword name="pascal" link="./elementary_functions/pascal.html" description="Triangle de Pascal"></keyword>
       <keyword name="permute" link="./elementary_functions/permute.html" description="Permute array dimensions."></keyword>
       <keyword name="pinv" link="./elementary_functions/pinv.html" description="Moore-Penrose pseudoinverse"></keyword>
       <keyword name="pow2" link="./elementary_functions/pow2.html" description="Base 2 exponentiation and scaling of floating-point numbers."></keyword>
@@ -736,6 +744,7 @@
       <keyword name="cov" link="./statistics/cov.html" description="Covariance"></keyword>
       <keyword name="mean" link="./statistics/mean.html" description="Moyenne des éléments d'un tableau."></keyword>
       <keyword name="normpdf" link="./statistics/normpdf.html" description="Densité de probabilité normale"></keyword>
+      <keyword name="std" link="./statistics/std.html" description="Écart type"></keyword>
       <keyword name="tdigest" link="./statistics/tdigest.html" description="Structure de données t-digest pour une estimation précise des quantiles avec paramètres de compression configurables"></keyword>
       <keyword name="var" link="./statistics/var.html" description="Variance"></keyword>
     </section>
@@ -755,6 +764,7 @@
       <keyword name="min" link="./data_analysis/min.html" description="Valeurs minimales d'un tableau."></keyword>
       <keyword name="prod" link="./data_analysis/prod.html" description="Produit des éléments d'un tableau."></keyword>
       <keyword name="sort" link="./data_analysis/sort.html" description="Trier les éléments d'un tableau (algorithme de tri rapide)."></keyword>
+      <keyword name="subspace" link="./data_analysis/subspace.html" description="Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices."></keyword>
       <keyword name="sum" link="./data_analysis/sum.html" description="Somme des éléments d'un tableau."></keyword>
       <keyword name="unique" link="./data_analysis/unique.html" description="Valeurs uniques."></keyword>
     </section>
@@ -893,7 +903,9 @@
       <keyword name="blackman" link="./signal_processing/blackman.html" description="Fenêtre de Blackman."></keyword>
       <keyword name="db2mag" link="./signal_processing/db2mag.html" description="Convertit un gain en décibels (dB) en magnitude."></keyword>
       <keyword name="db2pow" link="./signal_processing/db2pow.html" description="Convertit un gain en décibels (dB) en puissance."></keyword>
+      <keyword name="downsample" link="./signal_processing/downsample.html" description=" Sous-échantillonner un signal par un facteur entier."></keyword>
       <keyword name="filter2" link="./signal_processing/filter2.html" description="Filtre numérique 2-D."></keyword>
+      <keyword name="findpeaks" link="./signal_processing/findpeaks.html" description="localiser les maxima locaux (pics) dans un signal 1-D."></keyword>
       <keyword name="hamming" link="./signal_processing/hamming.html" description="Fenêtre de Hamming."></keyword>
       <keyword name="hann" link="./signal_processing/hann.html" description="Fenêtre de Hann."></keyword>
       <keyword name="mag2db" link="./signal_processing/mag2db.html" description="Convertit une magnitude en décibels (dB)."></keyword>
@@ -945,6 +957,7 @@
       <keyword name="ismac" link="./os_functions/ismac.html" description="Vérifie si la version est pour la plateforme macOS."></keyword>
       <keyword name="ispc" link="./os_functions/ispc.html" description="Vérifie si la version est pour la plateforme Windows."></keyword>
       <keyword name="isunix" link="./os_functions/isunix.html" description="Vérifie si la version est pour une plateforme GNU/Linux ou Unix."></keyword>
+      <keyword name="loadenv" link="./os_functions/loadenv.html" description="Charger les variables d'environnement définies dans des fichiers .env ou des fichiers texte ordinaires."></keyword>
       <keyword name="searchenv" link="./os_functions/searchenv.html" description="Recherche un fichier en utilisant les chemins définis dans une variable d'environnement."></keyword>
       <keyword name="setenv" link="./os_functions/setenv.html" description="Définir la valeur d'une variable d'environnement."></keyword>
       <keyword name="system" link="./os_functions/system.html" description="Exécution de commandes shell."></keyword>
@@ -1239,6 +1252,7 @@
       <keyword name="bar" link="./graphics/bar.html" description="Diagramme en barres."></keyword>
       <keyword name="bone" link="./graphics/bone.html" description="Palette de couleurs bone."></keyword>
       <keyword name="cla" link="./graphics/cla.html" description="Efface les axes."></keyword>
+      <keyword name="clabel" link="./graphics/clabel.html" description="Étiquetage des contours"></keyword>
       <keyword name="clf" link="./graphics/clf.html" description="Efface la figure."></keyword>
       <keyword name="clim" link="./graphics/clim.html" description="Définit les limites de la palette de couleurs."></keyword>
       <keyword name="close" link="./graphics/close.html" description="Ferme une ou plusieurs figures"></keyword>

@@ -19,9 +19,11 @@ Together, these features establish the fundamental syntax and semantics of the N
 - [function](function.md) - function declaration.
 - [endfunction](function.md) - function declaration.
 - [if](if.md) - conditional statement.
+- [tilde](ignore_outputs_function.md) - Ignore outputs function.
 - [iskeyword](iskeyword.md) - Returns all Nelson keywords.
 - [keyboard](keyboard.md) - Stops script execution and enter in debug mode.
 - [max_recursion_depth](max_recursion_depth.md) - Internal limit on the number of times a function may be called recursively.
+- [name=value](name_value_syntax.md) - Name=value syntax for name-value arguments.
 - [numeric types](numeric_types.md) - About integer and floating-point data.
 - [parsefile](parsefile.md) - Parse a Nelson file.
 - [parsestring](parsestring.md) - Parse a string.

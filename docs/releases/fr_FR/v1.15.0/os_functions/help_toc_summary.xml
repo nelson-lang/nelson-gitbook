@@ -16,6 +16,7 @@
       <keyword name="ismac" link="ismac.html" description="Vérifie si la version est pour la plateforme macOS."/>
       <keyword name="ispc" link="ispc.html" description="Vérifie si la version est pour la plateforme Windows."/>
       <keyword name="isunix" link="isunix.html" description="Vérifie si la version est pour une plateforme GNU/Linux ou Unix."/>
+      <keyword name="loadenv" link="loadenv.html" description="Charger les variables d'environnement définies dans des fichiers .env ou des fichiers texte ordinaires."/>
       <keyword name="searchenv" link="searchenv.html" description="Recherche un fichier en utilisant les chemins définis dans une variable d'environnement."/>
       <keyword name="setenv" link="setenv.html" description="Définir la valeur d'une variable d'environnement."/>
       <keyword name="system" link="system.html" description="Exécution de commandes shell."/>

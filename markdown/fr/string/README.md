@@ -13,6 +13,7 @@ Le module inclut également des fonctions pour rechercher, faire correspondre, r
 - [char](char.md) - Convertit en tableau de caractères.
 - [contains](contains.md) - Vérifie si une chaîne contient un motif.
 - [convertCharsToStrings](convertCharsToStrings.md) - Convertit des tableaux de caractères en tableaux de chaînes.
+- [convertStringToCharArgs](convertStringsToCharArgs.md) - Convertir des tableaux de chaînes en tableaux de caractères ou en cellules de vecteurs de caractères.
 - [convertStringsToChars](convertStringsToChars.md) - Convertit des tableaux de chaînes en tableaux de caractères.
 - [count](count.md) - Calcule le nombre d'occurrences d'un motif.
 - [deblank](deblank.md) - Supprime les espaces en fin de chaîne.

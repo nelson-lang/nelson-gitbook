@@ -7,6 +7,7 @@
   - [bar](bar.md)
   - [bone](bone.md)
   - [cla](cla.md)
+  - [clabel](clabel.md)
   - [clf](clf.md)
   - [clim](clim.md)
   - [close](close.md)

@@ -12,7 +12,9 @@
       <keyword name="blackman" link="blackman.html" description="Fenêtre de Blackman."/>
       <keyword name="db2mag" link="db2mag.html" description="Convertit un gain en décibels (dB) en magnitude."/>
       <keyword name="db2pow" link="db2pow.html" description="Convertit un gain en décibels (dB) en puissance."/>
+      <keyword name="downsample" link="downsample.html" description=" Sous-échantillonner un signal par un facteur entier."/>
       <keyword name="filter2" link="filter2.html" description="Filtre numérique 2-D."/>
+      <keyword name="findpeaks" link="findpeaks.html" description="localiser les maxima locaux (pics) dans un signal 1-D."/>
       <keyword name="hamming" link="hamming.html" description="Fenêtre de Hamming."/>
       <keyword name="hann" link="hann.html" description="Fenêtre de Hann."/>
       <keyword name="mag2db" link="mag2db.html" description="Convertit une magnitude en décibels (dB)."/>

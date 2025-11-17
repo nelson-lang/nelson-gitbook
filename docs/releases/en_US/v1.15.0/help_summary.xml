@@ -132,9 +132,11 @@
       <keyword name="function" link="./interpreter/function.html" description="function declaration."></keyword>
       <keyword name="endfunction" link="./interpreter/function.html" description="function declaration."></keyword>
       <keyword name="if" link="./interpreter/if.html" description="conditional statement."></keyword>
+      <keyword name="tilde" link="./interpreter/ignore_outputs_function.html" description="Ignore outputs function."></keyword>
       <keyword name="iskeyword" link="./interpreter/iskeyword.html" description="Returns all Nelson keywords."></keyword>
       <keyword name="keyboard" link="./interpreter/keyboard.html" description="Stops script execution and enter in debug mode."></keyword>
       <keyword name="max_recursion_depth" link="./interpreter/max_recursion_depth.html" description=" Internal limit on the number of times a function may be called recursively."></keyword>
+      <keyword name="name=value" link="./interpreter/name_value_syntax.html" description="Name=value syntax for name-value arguments."></keyword>
       <keyword name="numeric types" link="./interpreter/numeric_types.html" description="About integer and floating-point data."></keyword>
       <keyword name="parsefile" link="./interpreter/parsefile.html" description="Parse a Nelson file."></keyword>
       <keyword name="parsestring" link="./interpreter/parsestring.html" description="Parse a string."></keyword>
@@ -167,6 +169,7 @@
         <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p>
     </chapter_description>
       <keyword name="clc" link="./console/clc.html" description="Clear Command Window."></keyword>
+      <keyword name="consolebox" link="./console/consolebox.html" description="Displays or hides the Windows terminal associated with the Nelson session."></keyword>
       <keyword name="input" link="./console/input.html" description="Display prompt and wait for user input."></keyword>
       <keyword name="terminal_size" link="./console/terminal_size.html" description="Query the size of the terminal window."></keyword>
     </section>
@@ -321,6 +324,7 @@
       <keyword name="char" link="./string/char.html" description="Converts to a character array."></keyword>
       <keyword name="contains" link="./string/contains.html" description="checks if string contains with pattern."></keyword>
       <keyword name="convertCharsToStrings" link="./string/convertCharsToStrings.html" description="Convert chars arrays to string arrays."></keyword>
+      <keyword name="convertStringToCharArgs" link="./string/convertStringsToCharArgs.html" description="Convert string arrays to character arrays or cell of char vectors."></keyword>
       <keyword name="convertStringsToChars" link="./string/convertStringsToChars.html" description="Convert string arrays to character arrays."></keyword>
       <keyword name="count" link="./string/count.html" description="Computes the number of occurrences of an pattern."></keyword>
       <keyword name="deblank" link="./string/deblank.html" description="Remove trailing whitespace."></keyword>
@@ -552,6 +556,7 @@
       <keyword name="fliplr" link="./elementary_functions/fliplr.html" description="Flip order of elements left to right"></keyword>
       <keyword name="flipud" link="./elementary_functions/flipud.html" description="Flip order of elements up to dow"></keyword>
       <keyword name="floor" link="./elementary_functions/floor.html" description="Round down"></keyword>
+      <keyword name="gallery" link="./elementary_functions/gallery.html" description="Generate commonly used test matrices and data for numerical experiments"></keyword>
       <keyword name="hadamard" link="./elementary_functions/hadamard.html" description="Hadamard matrix"></keyword>
       <keyword name="hankel" link="./elementary_functions/hankel.html" description="Hankel matrix"></keyword>
       <keyword name="hex2dec" link="./elementary_functions/hex2dec.html" description="Convert number in base 16 to decimal."></keyword>
@@ -584,7 +589,9 @@
       <keyword name="log2" link="./elementary_functions/log2.html" description="dissect floating-point numbers into base 2 exponent and mantissa."></keyword>
       <keyword name="logspace" link="./elementary_functions/logspace.html" description="logarithmically spaced vector constructor."></keyword>
       <keyword name="magic" link="./elementary_functions/magic.html" description="Magic square"></keyword>
+      <keyword name="maxk" link="./elementary_functions/maxk.html" description="k largest elements of an array"></keyword>
       <keyword name="meshgrid" link="./elementary_functions/meshgrid.html" description="Cartesian rectangular grid in 2-D or 3-D."></keyword>
+      <keyword name="mink" link="./elementary_functions/mink.html" description="k smallest elements of an array"></keyword>
       <keyword name="minus" link="./elementary_functions/minus.html" description="Subtraction, - operator"></keyword>
       <keyword name="mod" link="./elementary_functions/mod.html" description="Modulus after division."></keyword>
       <keyword name="ndgrid" link="./elementary_functions/ndgrid.html" description="Rectangular grid in N-D space"></keyword>
@@ -595,6 +602,7 @@
       <keyword name="nthroot" link="./elementary_functions/nthroot.html" description="The real 𝑛th root of real number."></keyword>
       <keyword name="num2bin" link="./elementary_functions/num2bin.html" description="Convert number to binary representation."></keyword>
       <keyword name="numel" link="./elementary_functions/numel.html" description="Number of elements."></keyword>
+      <keyword name="pascal" link="./elementary_functions/pascal.html" description="Pascal's triangle"></keyword>
       <keyword name="permute" link="./elementary_functions/permute.html" description="Permute array dimensions."></keyword>
       <keyword name="pinv" link="./elementary_functions/pinv.html" description="Moore-Penrose pseudoinverse"></keyword>
       <keyword name="pow2" link="./elementary_functions/pow2.html" description="Base 2 exponentiation and scaling of floating-point numbers."></keyword>
@@ -738,6 +746,7 @@
       <keyword name="cov" link="./statistics/cov.html" description="Covariance"></keyword>
       <keyword name="mean" link="./statistics/mean.html" description="Mean of array elements."></keyword>
       <keyword name="normpdf" link="./statistics/normpdf.html" description="Normal probability density function"></keyword>
+      <keyword name="std" link="./statistics/std.html" description="Standard deviation"></keyword>
       <keyword name="tdigest" link="./statistics/tdigest.html" description="t-digest algorithm data structure for accurate quantile estimation with configurable compression parameters"></keyword>
       <keyword name="var" link="./statistics/var.html" description="Variance"></keyword>
     </section>
@@ -757,6 +766,7 @@
       <keyword name="min" link="./data_analysis/min.html" description="Minimum elements of an array."></keyword>
       <keyword name="prod" link="./data_analysis/prod.html" description="Product of array elements."></keyword>
       <keyword name="sort" link="./data_analysis/sort.html" description="Sort array elements by quick sort algorithm."></keyword>
+      <keyword name="subspace" link="./data_analysis/subspace.html" description="Measure of distance (angle) between two subspaces spanned by columns of matrices."></keyword>
       <keyword name="sum" link="./data_analysis/sum.html" description="Sum of array elements."></keyword>
       <keyword name="unique" link="./data_analysis/unique.html" description="Unique values."></keyword>
     </section>
@@ -895,7 +905,9 @@
       <keyword name="blackman" link="./signal_processing/blackman.html" description="Blackman window."></keyword>
       <keyword name="db2mag" link="./signal_processing/db2mag.html" description="Convert a gain in decibels (dB) to a magnitude."></keyword>
       <keyword name="db2pow" link="./signal_processing/db2pow.html" description="Convert a gain in decibels (dB) to power."></keyword>
+      <keyword name="downsample" link="./signal_processing/downsample.html" description="Downsample a signal by an integer factor."></keyword>
       <keyword name="filter2" link="./signal_processing/filter2.html" description="2-D digital filter."></keyword>
+      <keyword name="findpeaks" link="./signal_processing/findpeaks.html" description="Locate local maxima (peaks) in a 1-D signal."></keyword>
       <keyword name="hamming" link="./signal_processing/hamming.html" description="Hamming window."></keyword>
       <keyword name="hann" link="./signal_processing/hann.html" description="Hann window."></keyword>
       <keyword name="mag2db" link="./signal_processing/mag2db.html" description="Convert a magnitude to decibels (dB)."></keyword>
@@ -947,6 +959,7 @@
       <keyword name="ismac" link="./os_functions/ismac.html" description="Checks if version is for MacOS platform."></keyword>
       <keyword name="ispc" link="./os_functions/ispc.html" description="Checks if version is for Windows platform."></keyword>
       <keyword name="isunix" link="./os_functions/isunix.html" description="Checks if version is for  GNU Linux or Unix platform."></keyword>
+      <keyword name="loadenv" link="./os_functions/loadenv.html" description="Load environment variables defined in .env or regular text files."></keyword>
       <keyword name="searchenv" link="./os_functions/searchenv.html" description="Searches for a file using environment paths."></keyword>
       <keyword name="setenv" link="./os_functions/setenv.html" description="Set the value of an environment variable."></keyword>
       <keyword name="system" link="./os_functions/system.html" description="Shell command execution."></keyword>
@@ -1241,6 +1254,7 @@
       <keyword name="bar" link="./graphics/bar.html" description="Bar graph."></keyword>
       <keyword name="bone" link="./graphics/bone.html" description="Bone colormap array."></keyword>
       <keyword name="cla" link="./graphics/cla.html" description="Clear axes."></keyword>
+      <keyword name="clabel" link="./graphics/clabel.html" description="Contour labeling"></keyword>
       <keyword name="clf" link="./graphics/clf.html" description="Clear figure."></keyword>
       <keyword name="clim" link="./graphics/clim.html" description="Set colormap limits."></keyword>
       <keyword name="close" link="./graphics/close.html" description="Close one or more figures"></keyword>

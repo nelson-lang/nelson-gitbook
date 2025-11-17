@@ -104,7 +104,7 @@ Color and Size of Markers:
 f = figure();
 x = -pi:pi/10:pi;
 y = tan(sin(x)) - sin(tan(x));
-plot(x ,y, '--rs','LineWidth', 2, 'MarkerEdgeColor','k', 'MarkerFaceColor','g', 'MarkerSize', 11)
+plot(x ,y, '--rs', LineWidth=2, MarkerEdgeColor='k', MarkerFaceColor='g', MarkerSize=11)
 ```
 
 <img src="plot_markers.svg" align="middle"/>
@@ -124,7 +124,7 @@ ylabel('sin(5x)')
 
 ## 🔗 Voir aussi
 
-[line](../graphics/line.md), [plot3](../graphics/plot3.md).
+[line](../graphics/line.md), [plot3](../graphics/plot3.md), [name=value syntax](../interpreter/name_value_syntax.md).
 
 ## 🕔 Historique
 

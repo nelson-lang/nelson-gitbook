@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1761765138
+// Auto-generated on 1763404783
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -505,6 +505,12 @@ window.searchIndex = [
     content: "instruction conditionnelle.",
   },
   {
+    title: "tilde",
+    url: "./interpreter/ignore_outputs_function.html",
+    path: "./interpreter/ignore_outputs_function.html",
+    content: "Ignore les sorties d'une fonction.",
+  },
+  {
     title: "iskeyword",
     url: "./interpreter/iskeyword.html",
     path: "./interpreter/iskeyword.html",
@@ -522,6 +528,12 @@ window.searchIndex = [
     path: "./interpreter/max_recursion_depth.html",
     content:
       "Limite interne du nombre de fois qu'une fonction peut être appelée récursivement.",
+  },
+  {
+    title: "nom=valeur",
+    url: "./interpreter/name_value_syntax.html",
+    path: "./interpreter/name_value_syntax.html",
+    content: "Nom=valeur syntaxe pour les arguments nom=valeur.",
   },
   {
     title: "numeric types",
@@ -639,6 +651,13 @@ window.searchIndex = [
     url: "./console/clc.html",
     path: "./console/clc.html",
     content: "Effacer la fenêtre de commande.",
+  },
+  {
+    title: "consolebox",
+    url: "./console/consolebox.html",
+    path: "./console/consolebox.html",
+    content:
+      "Affiche ou masque le terminal Windows associé à la session Nelson.",
   },
   {
     title: "input",
@@ -1205,6 +1224,13 @@ window.searchIndex = [
     url: "./string/convertCharsToStrings.html",
     path: "./string/convertCharsToStrings.html",
     content: "Convertit des tableaux de caractères en tableaux de chaînes.",
+  },
+  {
+    title: "convertStringToCharArgs",
+    url: "./string/convertStringsToCharArgs.html",
+    path: "./string/convertStringsToCharArgs.html",
+    content:
+      "Convertir des tableaux de chaînes en tableaux de caractères ou en cellules de vecteurs de caractères.",
   },
   {
     title: "convertStringsToChars",
@@ -2296,6 +2322,13 @@ window.searchIndex = [
     content: "Arrondir vers le bas",
   },
   {
+    title: "gallery",
+    url: "./elementary_functions/gallery.html",
+    path: "./elementary_functions/gallery.html",
+    content:
+      "Générer des matrices de test et des données couramment utilisées pour des expériences numériques",
+  },
+  {
     title: "hadamard",
     url: "./elementary_functions/hadamard.html",
     path: "./elementary_functions/hadamard.html",
@@ -2493,10 +2526,22 @@ window.searchIndex = [
     content: "Magic square",
   },
   {
+    title: "maxk",
+    url: "./elementary_functions/maxk.html",
+    path: "./elementary_functions/maxk.html",
+    content: "k plus grands éléments d'un tableau",
+  },
+  {
     title: "meshgrid",
     url: "./elementary_functions/meshgrid.html",
     path: "./elementary_functions/meshgrid.html",
     content: "Cartesian rectangular grid in 2-D or 3-D.",
+  },
+  {
+    title: "mink",
+    url: "./elementary_functions/mink.html",
+    path: "./elementary_functions/mink.html",
+    content: "k plus petits éléments d'un tableau",
   },
   {
     title: "minus",
@@ -2557,6 +2602,12 @@ window.searchIndex = [
     url: "./elementary_functions/numel.html",
     path: "./elementary_functions/numel.html",
     content: "Number of elements.",
+  },
+  {
+    title: "pascal",
+    url: "./elementary_functions/pascal.html",
+    path: "./elementary_functions/pascal.html",
+    content: "Triangle de Pascal",
   },
   {
     title: "permute",
@@ -3286,6 +3337,12 @@ window.searchIndex = [
     content: "Densité de probabilité normale",
   },
   {
+    title: "std",
+    url: "./statistics/std.html",
+    path: "./statistics/std.html",
+    content: "Écart type",
+  },
+  {
     title: "tdigest",
     url: "./statistics/tdigest.html",
     path: "./statistics/tdigest.html",
@@ -3364,6 +3421,13 @@ window.searchIndex = [
     url: "./data_analysis/sort.html",
     path: "./data_analysis/sort.html",
     content: "Trier les éléments d'un tableau (algorithme de tri rapide).",
+  },
+  {
+    title: "subspace",
+    url: "./data_analysis/subspace.html",
+    path: "./data_analysis/subspace.html",
+    content:
+      "Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices.",
   },
   {
     title: "sum",
@@ -4044,10 +4108,22 @@ window.searchIndex = [
     content: "Convertit un gain en décibels (dB) en puissance.",
   },
   {
+    title: "downsample",
+    url: "./signal_processing/downsample.html",
+    path: "./signal_processing/downsample.html",
+    content: "Sous-échantillonner un signal par un facteur entier.",
+  },
+  {
     title: "filter2",
     url: "./signal_processing/filter2.html",
     path: "./signal_processing/filter2.html",
     content: "Filtre numérique 2-D.",
+  },
+  {
+    title: "findpeaks",
+    url: "./signal_processing/findpeaks.html",
+    path: "./signal_processing/findpeaks.html",
+    content: "localiser les maxima locaux (pics) dans un signal 1-D.",
   },
   {
     title: "hamming",
@@ -4249,6 +4325,13 @@ window.searchIndex = [
     url: "./os_functions/isunix.html",
     path: "./os_functions/isunix.html",
     content: "Vérifie si la version est pour une plateforme GNU/Linux ou Unix.",
+  },
+  {
+    title: "loadenv",
+    url: "./os_functions/loadenv.html",
+    path: "./os_functions/loadenv.html",
+    content:
+      "Charger les variables d'environnement définies dans des fichiers .env ou des fichiers texte ordinaires.",
   },
   {
     title: "searchenv",
@@ -5496,6 +5579,12 @@ window.searchIndex = [
     url: "./graphics/cla.html",
     path: "./graphics/cla.html",
     content: "Efface les axes.",
+  },
+  {
+    title: "clabel",
+    url: "./graphics/clabel.html",
+    path: "./graphics/clabel.html",
+    content: "Étiquetage des contours",
   },
   {
     title: "clf",

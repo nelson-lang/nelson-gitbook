@@ -9,5 +9,6 @@
   - [min](min.md)
   - [prod](prod.md)
   - [sort](sort.md)
+  - [subspace](subspace.md)
   - [sum](sum.md)
   - [unique](unique.md)

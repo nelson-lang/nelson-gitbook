@@ -9,5 +9,6 @@ Ces fonctionnalités permettent aux scripts et applications de communiquer direc
 ## Functions
 
 - [clc](clc.md) - Effacer la fenêtre de commande.
+- [consolebox](consolebox.md) - Affiche ou masque le terminal Windows associé à la session Nelson.
 - [input](input.md) - Afficher une invite et attendre l'entrée utilisateur.
 - [terminal_size](terminal_size.md) - Interroger la taille de la fenêtre du terminal.

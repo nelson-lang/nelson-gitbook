@@ -18,5 +18,6 @@ This module enables efficient processing, summarization, and exploration of data
 - [min](min.md) - Minimum elements of an array.
 - [prod](prod.md) - Product of array elements.
 - [sort](sort.md) - Sort array elements by quick sort algorithm.
+- [subspace](subspace.md) - Measure of distance (angle) between two subspaces spanned by columns of matrices.
 - [sum](sum.md) - Sum of array elements.
 - [unique](unique.md) - Unique values.

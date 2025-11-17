@@ -35,6 +35,7 @@ Le module prend également en charge la construction de matrices spéciales, de 
 - [fliplr](fliplr.md) - Inverser l'ordre des éléments de gauche à droite
 - [flipud](flipud.md) - Inverser l'ordre des éléments de haut en bas
 - [floor](floor.md) - Arrondir vers le bas
+- [gallery](gallery.md) - Générer des matrices de test et des données couramment utilisées pour des expériences numériques
 - [hadamard](hadamard.md) - Matrice de Hadamard
 - [hankel](hankel.md) - Matrice de Hankel
 - [hex2dec](hex2dec.md) - Convertit un nombre en base 16 en décimal.
@@ -67,7 +68,9 @@ Le module prend également en charge la construction de matrices spéciales, de 
 - [log2](log2.md) - dissect floating-point numbers into base 2 exponent and mantissa.
 - [logspace](logspace.md) - logarithmically spaced vector constructor.
 - [magic](magic.md) - Magic square
+- [maxk](maxk.md) - k plus grands éléments d'un tableau
 - [meshgrid](meshgrid.md) - Cartesian rectangular grid in 2-D or 3-D.
+- [mink](mink.md) - k plus petits éléments d'un tableau
 - [minus](minus.md) - Subtraction, - operator
 - [mod](mod.md) - Modulus after division.
 - [ndgrid](ndgrid.md) - Rectangular grid in N-D space
@@ -78,6 +81,7 @@ Le module prend également en charge la construction de matrices spéciales, de 
 - [nthroot](nthroot.md) - The real 𝑛th root of real number.
 - [num2bin](num2bin.md) - Convert number to binary representation.
 - [numel](numel.md) - Number of elements.
+- [pascal](pascal.md) - Triangle de Pascal
 - [permute](permute.md) - Permute array dimensions.
 - [pinv](pinv.md) - Moore-Penrose pseudoinverse
 - [pow2](pow2.md) - Base 2 exponentiation and scaling of floating-point numbers.

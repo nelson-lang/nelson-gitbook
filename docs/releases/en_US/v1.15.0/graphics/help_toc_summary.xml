@@ -17,6 +17,7 @@
       <keyword name="bar" link="bar.html" description="Bar graph."/>
       <keyword name="bone" link="bone.html" description="Bone colormap array."/>
       <keyword name="cla" link="cla.html" description="Clear axes."/>
+      <keyword name="clabel" link="clabel.html" description="Contour labeling"/>
       <keyword name="clf" link="clf.html" description="Clear figure."/>
       <keyword name="clim" link="clim.html" description="Set colormap limits."/>
       <keyword name="close" link="close.html" description="Close one or more figures"/>

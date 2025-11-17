@@ -17,6 +17,7 @@
       <keyword name="bar" link="bar.html" description="Diagramme en barres."/>
       <keyword name="bone" link="bone.html" description="Palette de couleurs bone."/>
       <keyword name="cla" link="cla.html" description="Efface les axes."/>
+      <keyword name="clabel" link="clabel.html" description="Étiquetage des contours"/>
       <keyword name="clf" link="clf.html" description="Efface la figure."/>
       <keyword name="clim" link="clim.html" description="Définit les limites de la palette de couleurs."/>
       <keyword name="close" link="close.html" description="Ferme une ou plusieurs figures"/>

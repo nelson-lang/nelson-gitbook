@@ -9,6 +9,7 @@ formate un fichier XML.
 ## 📥 Argument d'entrée
 
 - xml_file - un fichier XML valide.
+- format_space - un booléen indiquant s'il faut formater avec des espaces (true) ou non (false).
 
 ## 📄 Description
 
@@ -19,10 +20,12 @@ formate un fichier XML.
 ```matlab
 xml_filename = [modulepath('xml'), '/tests/test_xml.xml'];
 if isfile(xml_filename)
-    xmlprettyprint(xml_filename, false);
-    fileread(xml_filename)
-    xmlprettyprint(xml_filename, true);
-    fileread(xml_filename)
+    xml_tmp = [tempdir(), 'test_xml.xml'];
+    copyfile(xml_filename, xml_tmp);
+    xmlprettyprint(xml_tmp, false);
+    fileread(xml_tmp)
+    xmlprettyprint(xml_tmp, true);
+    fileread(xml_tmp)
 end
 
 ```

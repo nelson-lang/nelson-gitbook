@@ -7,6 +7,7 @@
   - [ismac](ismac.md)
   - [ispc](ispc.md)
   - [isunix](isunix.md)
+  - [loadenv](loadenv.md)
   - [searchenv](searchenv.md)
   - [setenv](setenv.md)
   - [system](system.md)

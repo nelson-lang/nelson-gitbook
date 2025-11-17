@@ -19,7 +19,7 @@ Writes an audio file.
 
 <b>audiowrite</b> writes an audio file.
 
-More 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.
+More than 26 files format supported. See <b>audiosupportedformats</b> function to have all supported formats.
 
 ## 💡 Example
 

@@ -6,6 +6,7 @@ Barre de couleur affichant l'échelle des couleurs.
 
 - colorbar()
 - colorbar('off')
+- colorbar(location)
 - colorbar(..., propertyName, propertyValue)
 - colorbar(target, ...)
 - colorbar(target, 'off')
@@ -17,6 +18,7 @@ Barre de couleur affichant l'échelle des couleurs.
 - propertyValue - une valeur.
 - target - Cible : axes.
 - 'off' - supprime la barre de couleur associée aux axes courants.
+- location - spécifie la position de la barre de couleur: 'north','south','east','west', ...
 
 ## 📤 Argument de sortie
 
@@ -25,6 +27,10 @@ Barre de couleur affichant l'échelle des couleurs.
 ## 📄 Description
 
 <b>colorbar</b> ajoute une barre de couleur à un graphique.
+
+Elle peut être placée à différents emplacements autour des axes.
+
+Les emplacements pris en charge incluent : 'north','south','east','west', 'northoutside','southoutside','eastoutside','westoutside'.
 
 ## 💡 Exemples
 
@@ -49,15 +55,35 @@ cb = colorbar(gca);
 
 <img src="colorbar_2.svg" align="middle"/>
 
+```matlab
+locations = { 'north';
+'south';
+'east';
+'west';
+'northoutside';
+'southoutside';
+'eastoutside';
+'westoutside'};
+f = figure();
+surf(peaks);
+colormap('jet');
+for k = 1 : length(locations)
+    colorbar(locations{k});
+    pause(1);
+end
+
+```
+
 ## 🔗 Voir aussi
 
 [colormap](../graphics/colormap.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 1.0.0   | version initiale                       |
+| 1.15.0  | ajout du support du paramètre location |
 
 <!--
 ## 👤 Auteur
