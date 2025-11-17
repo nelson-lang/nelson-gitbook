@@ -58,6 +58,13 @@ function buildDocsForLanguages(current_path, all_languages, version_string)
     end
     mkdir(doc_html_path);
     buildhelpweb(doc_html_path, language);
+
+    latest_doc_html_path = fullfile(current_path, '..', 'docs', 'releases', language, 'latest');
+    if isfolder(latest_doc_html_path)
+      rmdir(latest_doc_html_path, 's');
+    end
+    mkdir(latest_doc_html_path);
+    buildhelpweb(latest_doc_html_path, language);
   end
 end
 %=============================================================================
@@ -69,9 +76,12 @@ function all_versions = collectAllVersions(current_path, all_languages)
     if isfolder(docs_path)
       dir_available = dir(docs_path);
       for i = 1:length(dir_available)
+        if (strcmp(dir_available(i).name, 'latest') == true)
+          continue;
+        end
         if dir_available(i).isdir && semver(dir_available(i).name,'>0.0.0')
           if ~any(strcmp(all_versions, dir_available(i).name))
-            all_versions(end+1) = dir_available(i).name; %#ok<AGROW>
+            all_versions(end+1) = dir_available(i).name;
           end
         end
       end
