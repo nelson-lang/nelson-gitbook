@@ -18,14 +18,15 @@ Enregistre une figure dans un format de fichier spécifique.
 <b>saveas</b> enregistre la figure dans un format de fichier spécifique.
 
 <b>Formats pris en charge</b> :
-| Option | Format | Extension |
-| --- | --- | --- |
-| svg | SVG (scalable vector graphics) | .svg |
-| pdf | Portable Document Format (PDF) page entière, couleur | .pdf |
-| png | PNG 24-bit | .png |
-| jpg | JPEG 24-bit | .jpg |
-| gif | Graphics Interchange Format | .gif |
-| tif | Tagged Image File Format | .tif |
+
+| Option | Format                                               | Extension |
+| ------ | ---------------------------------------------------- | --------- |
+| svg    | SVG (scalable vector graphics)                       | .svg      |
+| pdf    | Portable Document Format (PDF) page entière, couleur | .pdf      |
+| png    | PNG 24-bit                                           | .png      |
+| jpg    | JPEG 24-bit                                          | .jpg      |
+| gif    | Graphics Interchange Format                          | .gif      |
+| tif    | Tagged Image File Format                             | .tif      |
 
 ## 💡 Exemple
 

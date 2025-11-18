@@ -32,10 +32,10 @@ Importation de nombres complexes : <b>csvread</b> lit chaque nombre complexe com
 
 Formes valides pour les nombres complexes :
 
-| Forme :             | Exemple : |
-| ------------------- | --------- | ----------- |
-| ±b1<real>±b1<imag>i | j         | 3.1347-2.1i |
-| ±b1<imag>i          | j         | -2.1j       |
+| Forme :           | Exemple :   |
+| ----------------- | ----------- |
+| ±real ± imag i\|j | 3.1347-2.1i |
+| ±imag i\|j        | -2.1j       |
 
 <b>Remarque</b> : les espaces à l'intérieur d'un nombre complexe ne sont pas autorisés ; <b>csvread</b> interprète tout espace comme un délimiteur de champ.
 

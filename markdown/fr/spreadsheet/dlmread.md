@@ -36,10 +36,10 @@ Importation de nombres complexes : <b>dlmread</b> lit chaque nombre complexe com
 
 Formes valides pour les nombres complexes :
 
-| Forme :         | Exemple : |
-| --------------- | --------- | ----------- |
-| ±<real>±<imag>i | j         | 3.1347-2.1i |
-| ±<imag>i        | j         | -2.1j       |
+| Forme :           | Exemple :   |
+| ----------------- | ----------- |
+| ±real ± imag i\|j | 3.1347-2.1i |
+| ±imag i\|j        | -2.1j       |
 
 <b>Remarque</b> : les espaces à l'intérieur d'un nombre complexe ne sont pas autorisés ; <b>dlmread</b> interprète tout espace comme un délimiteur de champ.
 

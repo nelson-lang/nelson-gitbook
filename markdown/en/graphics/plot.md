@@ -35,38 +35,41 @@ Linear 2-D plot.
 <b>LineSpec</b> is a string used to change the characteristics of the line and is composed of three optional parts in any order:
 
 The SymbolSpec specifies the symbol to be drawn at each data point:
-| Symbol | Description |
-| --- | --- |
-| **'o'** | Circle symbol |
-| **'x'** | Times symbol |
-| **'+'** | Plus symbol |
-| **'\*'** | Asterisk symbol |
-| **'.'** | Dot symbol |
-| **'s'** | Square symbol |
-| **'d'** | Diamond symbol |
-| **'v'** | Downward-pointing triangle symbol |
-| **'^'** | Upward-pointing triangle symbol |
-| **'>'** | Left-pointing triangle symbol |
-| **'<'** | Right-pointing triangle symbol |
+
+| Symbol   | Description                       |
+| -------- | --------------------------------- |
+| **'o'**  | Circle symbol                     |
+| **'x'**  | Times symbol                      |
+| **'+'**  | Plus symbol                       |
+| **'\*'** | Asterisk symbol                   |
+| **'.'**  | Dot symbol                        |
+| **'s'**  | Square symbol                     |
+| **'d'**  | Diamond symbol                    |
+| **'v'**  | Downward-pointing triangle symbol |
+| **'^'**  | Upward-pointing triangle symbol   |
+| **'>'**  | Left-pointing triangle symbol     |
+| **'<'**  | Right-pointing triangle symbol    |
 
 The LineStyleSpec specifies the line style to use for each data series:
-| Style | Description |
-| --- | --- |
-| **'-'** | Solid line style |
-| **'--'** | Dashed line style |
+
+| Style    | Description                  |
+| -------- | ---------------------------- |
+| **'-'**  | Solid line style             |
+| **'--'** | Dashed line style            |
 | **'-.'** | Dot-Dash-Dot-Dash line style |
-| **':'** | Dotted line style |
+| **':'**  | Dotted line style            |
 
 The ColorSpec specifies the line color to use for each data series:
-| Color | Description |
-| --- | --- |
-| **'k'** | Color Black |
-| **'y'** | Color Yellow |
+
+| Color   | Description   |
+| ------- | ------------- |
+| **'k'** | Color Black   |
+| **'y'** | Color Yellow  |
 | **'m'** | Color Magenta |
-| **'c'** | Color Cyan |
-| **'r'** | Color Red |
-| **'b'** | Color Blue |
-| **'g'** | Color Green |
+| **'c'** | Color Cyan    |
+| **'r'** | Color Red     |
+| **'b'** | Color Blue    |
+| **'g'** | Color Green   |
 
 see <b>line</b> for more information about properties
 

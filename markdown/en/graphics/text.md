@@ -27,36 +27,37 @@ creates text descriptions to data points.
 ## 📄 Description
 
 <b>figure</b> creates figure.
-| Property | Description |
-| --- | --- |
-| **BackgroundColor** | Color of text box background: RGB triplet. |
-| **Children** | Children: []. |
-| **Color** | Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code. |
-| **EdgeColor** | Color of box outline: RGB triplet. |
-| **Extent** | Size and location of rectangle that encloses text: four-element vector. |
-| **FontAngle** | Character slant: 'italic' or 'normal' (default). |
-| **FontName** | Font name: |
-| **FontSize** | Font size: scalar value greater than zero. |
-| **FontUnits** | Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default). |
-| **FontWeight** | Character thickness: 'bold' or 'normal' (default). |
-| **HorizontalAlignment** | Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default). |
-| **Interpreter** | 'tex' (default) interpreter or 'none'. |
-| **LineStyle** | Line style of box outline: 'none', '--', ':', '-.' or '-' (default). |
-| **LineWidth** | Width of box outline: scalar numeric value. |
-| **Margin** | Space around text within the text box: scalar numeric value. |
-| **Parent** | Parent: axes object. |
-| **Position** | Location of text: two-element vector of form [x y] or three-element vector of form [x y z]. |
-| **Rotation** | Text orientation: scalar value in degrees. |
-| **String** | Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default). |
-| **Tag** | Object identifier: character vector, string scalar or '' (default). |
-| **Type** | Type of graphics object: 'text'. |
-| **Units** | Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default). |
-| **UserData** | User data: array or [] (default). |
-| **VerticalAlignment** | Vertical alignment of text with respect to position point. |
-| **Visible** | State of visibility: 'off' or 'on' (default). |
-| **CreateFcn** | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
-| **DeleteFcn** | Callback (function handle, string or cell) called when object is deleted. |
-| **BeingDeleted** | Flag indicating that the object is being deleted. |
+
+| Property                | Description                                                                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **BackgroundColor**     | Color of text box background: RGB triplet.                                                                                          |
+| **Children**            | Children: [].                                                                                                                       |
+| **Color**               | Text color: RGB triplet, [0 0 0] (default) or hexadecimal color code.                                                               |
+| **EdgeColor**           | Color of box outline: RGB triplet.                                                                                                  |
+| **Extent**              | Size and location of rectangle that encloses text: four-element vector.                                                             |
+| **FontAngle**           | Character slant: 'italic' or 'normal' (default).                                                                                    |
+| **FontName**            | Font name:                                                                                                                          |
+| **FontSize**            | Font size: scalar value greater than zero.                                                                                          |
+| **FontUnits**           | Font size units: 'inches', 'centimeters', 'normalized', 'pixels' or 'points' (default).                                             |
+| **FontWeight**          | Character thickness: 'bold' or 'normal' (default).                                                                                  |
+| **HorizontalAlignment** | Horizontal alignment of text with respect to position point: 'center', 'right', 'left' (default).                                   |
+| **Interpreter**         | 'tex' (default) interpreter or 'none'.                                                                                              |
+| **LineStyle**           | Line style of box outline: 'none', '--', ':', '-.' or '-' (default).                                                                |
+| **LineWidth**           | Width of box outline: scalar numeric value.                                                                                         |
+| **Margin**              | Space around text within the text box: scalar numeric value.                                                                        |
+| **Parent**              | Parent: axes object.                                                                                                                |
+| **Position**            | Location of text: two-element vector of form [x y] or three-element vector of form [x y z].                                         |
+| **Rotation**            | Text orientation: scalar value in degrees.                                                                                          |
+| **String**              | Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).                    |
+| **Tag**                 | Object identifier: character vector, string scalar or '' (default).                                                                 |
+| **Type**                | Type of graphics object: 'text'.                                                                                                    |
+| **Units**               | Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).             |
+| **UserData**            | User data: array or [] (default).                                                                                                   |
+| **VerticalAlignment**   | Vertical alignment of text with respect to position point.                                                                          |
+| **Visible**             | State of visibility: 'off' or 'on' (default).                                                                                       |
+| **CreateFcn**           | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |
+| **DeleteFcn**           | Callback (function handle, string or cell) called when object is deleted.                                                           |
+| **BeingDeleted**        | Flag indicating that the object is being deleted.                                                                                   |
 
 Some properties are available only for compatibility and have currently no effect on the text.
 
@@ -68,109 +69,108 @@ Subscript: _{ } 'text_{subscript}'
 
 | Character Sequence | Symbol |
 | ------------------ | ------ |
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+| \\alpha            | α      |
+| \\upsilon          | υ      |
+| \\sim              | ~      |
+| \\angle            | ∠      |
+| \\phi              | ϕ      |
+| \\leq              | ≤      |
+| \\ast              | \*     |
+| \\chi              | χ      |
+| \\infty            | ∞      |
+| \\beta             | β      |
+| \\psi              | ψ      |
+| \\clubsuit         | ♣     |
+| \\gamma            | γ      |
+| \\omega            | ω      |
+| \\diamondsuit      | ♦     |
+| \\delta            | δ      |
+| \\Gamma            | Γ      |
+| \\heartsuit        | ♥     |
+| \\epsilon          | ϵ      |
+| \\Delta            | Δ      |
+| \\spadesuit        | ♠     |
+| \\zeta             | ζ      |
+| \\Theta            | Θ      |
+| \\leftrightarrow   | ↔     |
+| \\eta              | η      |
+| \\Lambda           | Λ      |
+| \\leftarrow        | ←      |
+| \\theta            | θ      |
+| \\Xi               | Ξ      |
+| \\Leftarrow        | ⇐      |
+| \\vartheta         | ϑ      |
+| \\Pi               | Π      |
+| \\uparrow          | ↑      |
+| \\iota             | ι      |
+| \\Sigma            | Σ      |
+| \\rightarrow       | →      |
+| \\kappa            | κ      |
+| \\Upsilon          | ϒ      |
+| \\Rightarrow       | ⇒      |
+| \\lambda           | λ      |
+| \\Phi              | Φ      |
+| \\downarrow        | ↓      |
+| \\mu               | µ      |
+| \\Psi              | Ψ      |
+| \\circ             | º      |
+| \\nu               | ν      |
+| \\Omega            | Ω      |
+| \\pm               | ±      |
+| \\xi               | ξ      |
+| \\forall           | ∀      |
+| \\geq              | ≥      |
+| \\pi               | π      |
+| \\exists           | ∃      |
+| \\propto           | ∝      |
+| \\rho              | ρ      |
+| \\ni               | ∍      |
+| \\partial          | ∂      |
+| \\sigma            | σ      |
+| \\cong             | ≅      |
+| \\bullet           | •      |
+| \\varsigma         | ς      |
+| \\approx           | ≈      |
+| \\div              | ÷      |
+| \\tau              | τ      |
+| \\Re               | ℜ      |
+| \\neq              | ≠      |
+| \\equiv            | ≡      |
+| \\oplus            | ⊕      |
+| \\aleph            | ℵ      |
+| \\Im               | ℑ      |
+| \\cup              | ∪      |
+| \\wp               | ℘      |
+| \\otimes           | ⊗      |
+| \\subseteq         | ⊆      |
+| \\oslash           | ∅      |
+| \\cap              | ∩      |
+| \\in               | ∈      |
+| \\supseteq         | ⊇      |
+| \\supset           | ⊃      |
+| \\lceil            | ⌈      |
+| \\subset           | ⊂      |
+| \\int              | ∫      |
+| \\cdot             | ·      |
+| \\o                | ο      |
+| \\rfloor           | ⌋      |
+| \\neg              | ¬      |
+| \\nabla            | ∇      |
+| \\lfloor           | ⌊      |
+| \\times            | x      |
+| \\ldots            | ...    |
+| \\perp             | ⊥      |
+| \\surd             | √      |
+| \\prime            | ´      |
+| \\wedge            | ∧      |
+| \\varpi            | ϖ      |
+| \\0                | ∅      |
+| \\rceil            | ⌉      |
+| \\rangle           | 〉     |
+| \\mid              | \|     |
+| \\vee              | ∨      |
+| \\langle           | 〈     |
+| \\copyright        | ©     |
 
 ## 💡 Examples
 

@@ -36,10 +36,10 @@ Complex Number Importing: <b>dlmread</b> reads each complex number as a single u
 
 Valid forms for complex numbers are:
 
-| Form:           | Example: |
-| --------------- | -------- | ----------- |
-| ±<real>±<imag>i | j        | 3.1347-2.1i |
-| ±<imag>i        | j        | -2.1j       |
+| Form:              | Example:    |
+| ------------------ | ----------- |
+| ± real ± imag i\|j | 3.1347-2.1i |
+| ± imag i\|j        | -2.1j       |
 
 <b>Note</b>: Whitespace within a complex number is not allowed; <b>dlmread</b> interprets any embedded spaces as field delimiters.
 

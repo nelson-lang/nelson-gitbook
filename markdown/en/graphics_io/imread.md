@@ -22,21 +22,20 @@ Read image from graphics file.
 
 <b>imread</b> reads the image data from the given file into a matrix.
 
-| Format | Description |
-| ------ | ----------- |
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+| Format | Description                           |
+| ------ | ------------------------------------- |
+| BMP    | Windows Bitmap                        |
+| GIF    | Graphic Interchange Format (optional) |
+| JPG    | Joint Photographic Experts Group      |
+| TIFF   | Tagged Image File Format              |
+| JPEG   | Joint Photographic Experts Group      |
+| PCX    | PiCture eXchange                      |
+| PNG    | Portable Network Graphics             |
+| PBM    | Portable Bitmap                       |
+| PGM    | Portable Graymap                      |
+| PPM    | Portable Pixmap                       |
+| XBM    | X11 Bitmap                            |
+| XPM    | X11 Pixmap                            |
 
 ## 💡 Example
 

@@ -21,7 +21,7 @@ When <b>A</b> and <b>B</b> belong to different classes, Nelson employs precedenc
 The table below provides a list of function names associated with most of the Nelson operators:
 
 | Description                 | Operator              | Function           |
-| --------------------------- | --------------------- | ------------------ | -------- |
+| --------------------------- | --------------------- | ------------------ |
 | Binary addition             | a + b                 | plus(a, b)         |
 | Binary subtraction          | a - b                 | minus(a, b)        |
 | Unary minus                 | -a                    | uminus(a)          |
@@ -29,9 +29,9 @@ The table below provides a list of function names associated with most of the Ne
 | Element-wise multiplication | a .\* b               | times(a, b)        |
 | Matrix multiplication       | a \* b                | mtimes(a, b)       |
 | Right element-wise division | a ./ b                | rdivide(a, b)      |
-| Left element-wise division  | a .\ b                | ldivide(a, b)      |
+| Left element-wise division  | a .\\ b               | ldivide(a, b)      |
 | Matrix right division       | a / b                 | mrdivide(a, b)     |
-| Matrix left division        | a \ b                 | mldivide(a, b)     |
+| Matrix left division        | a \\ b                | mldivide(a, b)     |
 | Element-wise power          | a .^ b                | power(a, b)        |
 | Matrix power                | a ^ b                 | mpower(a, b)       |
 | Less than                   | a < b                 | lt(a, b)           |
@@ -41,7 +41,7 @@ The table below provides a list of function names associated with most of the Ne
 | Not equal to                | a ~= b                | ne(a, b)           |
 | Equality                    | a == b                | eq(a, b)           |
 | Logical AND                 | a & b                 | and(a, b)          |
-| Logical OR                  | a                     | b                  | or(a, b) |
+| Logical OR                  | a \| b                | or(a, b)           |
 | Logical NOT                 | ~a                    | not(a)             |
 | Colon operator              | a:d:b                 | colon(a, d, b)     |
 | Complex conjugate transpose | a'                    | ctranspose(a)      |

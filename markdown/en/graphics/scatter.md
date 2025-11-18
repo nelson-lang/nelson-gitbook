@@ -38,34 +38,35 @@ To visualize multiple datasets on a shared set of axes, you can achieve this by 
 This allows you to overlay or compare multiple datasets within the same plot.
 
 Scatter Properties:
-| Property | Description |
-| --- | --- |
-| **AlphaData** | Marker face transparency, 1 (default) or array the same size as **XData** |
-| **BeingDeleted** | Flag indicating that the object is being deleted. |
-| **BusyAction** | Callback queuing specified as 'queue' (default) or 'cancel'. The property determines how Nelson handles the execution of interrupting callbacks. |
-| **CData** | Marker colors: [] (default), RGB triplet, matrix of RGB triplets or vector. Marker color to use for each data series: 'k'/'black' (Black), 'y'/'yellow' (Yellow), 'm'/'magenta' (Magenta), 'c'/'cyan' (Cyan), 'r'/'red' (Red), 'b'/'blue' (Blue), 'g'/'green' (Green) |
-| **CDataMode** | Selection mode for CData: 'manual', 'auto' (default). |
-| **Children** | Children. |
-| **CreateFcn** | Component creation function. |
-| **DeleteFcn** | Component deletion function. |
-| **DisplayName** | Legend label: character vector or string scalar, '' (default). |
-| **Interruptible** | Callback interruption 'on' (default). |
-| **LineWidth** | Line width: scalar positive value. |
-| **Marker** | Marker symbol: 'o' (Circle), 'x' (Times), '+' (Plus), '\*' (Asterisk), '.' (Dot), 's' (Square), 'd' (Diamond), 'v' (Downward-pointing triangle), '^' (Upward-pointing triangle), '>' (Left-pointing triangle), '<' (Right-pointing triangle) |
-| **MarkerEdgeColor** | Marker outline color: RGB triplet. |
+
+| Property            | Description                                                                                                                                                                                                                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **AlphaData**       | Marker face transparency, 1 (default) or array the same size as **XData**                                                                                                                                                                                                                      |
+| **BeingDeleted**    | Flag indicating that the object is being deleted.                                                                                                                                                                                                                                              |
+| **BusyAction**      | Callback queuing specified as 'queue' (default) or 'cancel'. The property determines how Nelson handles the execution of interrupting callbacks.                                                                                                                                               |
+| **CData**           | Marker colors: [] (default), RGB triplet, matrix of RGB triplets or vector. Marker color to use for each data series: 'k'/'black' (Black), 'y'/'yellow' (Yellow), 'm'/'magenta' (Magenta), 'c'/'cyan' (Cyan), 'r'/'red' (Red), 'b'/'blue' (Blue), 'g'/'green' (Green)                          |
+| **CDataMode**       | Selection mode for CData: 'manual', 'auto' (default).                                                                                                                                                                                                                                          |
+| **Children**        | Children.                                                                                                                                                                                                                                                                                      |
+| **CreateFcn**       | Component creation function.                                                                                                                                                                                                                                                                   |
+| **DeleteFcn**       | Component deletion function.                                                                                                                                                                                                                                                                   |
+| **DisplayName**     | Legend label: character vector or string scalar, '' (default).                                                                                                                                                                                                                                 |
+| **Interruptible**   | Callback interruption 'on' (default).                                                                                                                                                                                                                                                          |
+| **LineWidth**       | Line width: scalar positive value.                                                                                                                                                                                                                                                             |
+| **Marker**          | Marker symbol: 'o' (Circle), 'x' (Times), '+' (Plus), '\*' (Asterisk), '.' (Dot), 's' (Square), 'd' (Diamond), 'v' (Downward-pointing triangle), '^' (Upward-pointing triangle), '>' (Left-pointing triangle), '<' (Right-pointing triangle)                                                   |
+| **MarkerEdgeColor** | Marker outline color: RGB triplet.                                                                                                                                                                                                                                                             |
 | **MarkerEdgeAlpha** | Marker edge transparency: scalar in range [0,1], 'flat or 1 (default). To assign distinct transparency values to the edges of each point in a plot, set the AlphaData property to a vector matching the size of the **XData** property and set the **MarkerEdgeAlpha** property to **'flat'**. |
-| **MarkerFaceColor** | Marker fill color: RGB triplet. |
+| **MarkerFaceColor** | Marker fill color: RGB triplet.                                                                                                                                                                                                                                                                |
 | **MarkerFaceAlpha** | Marker face transparency: scalar in range [0,1], 'flat or 1 (default). To assign distinct transparency values to the faces of each point in a plot, set the AlphaData property to a vector matching the size of the **XData** property and set the **MarkerFaceAlpha** property to **'flat'**. |
-| **Parent** | Parent container: Figure graphics object. |
-| **SizeData** | Marker sizes:[] (default), scalar or vector. |
-| **Tag** | Object identifier: character vector, string scalar or '' (default). |
-| **Type** | Type of graphics object 'scatter'. |
-| **UserData** | User data: array or [] |
-| **Visible** | State of visibility: 'on' (default) or 'off'. |
-| **XData** | x values: vector or matrix or [] (default). |
-| **YData** | y values: vector or matrix or [] (default). |
-| **ZData** | z values: vector or matrix or [] (default). |
-| **XDataMode** | Selection mode for XData: 'manual' or 'auto'. |
+| **Parent**          | Parent container: Figure graphics object.                                                                                                                                                                                                                                                      |
+| **SizeData**        | Marker sizes:[] (default), scalar or vector.                                                                                                                                                                                                                                                   |
+| **Tag**             | Object identifier: character vector, string scalar or '' (default).                                                                                                                                                                                                                            |
+| **Type**            | Type of graphics object 'scatter'.                                                                                                                                                                                                                                                             |
+| **UserData**        | User data: array or []                                                                                                                                                                                                                                                                         |
+| **Visible**         | State of visibility: 'on' (default) or 'off'.                                                                                                                                                                                                                                                  |
+| **XData**           | x values: vector or matrix or [] (default).                                                                                                                                                                                                                                                    |
+| **YData**           | y values: vector or matrix or [] (default).                                                                                                                                                                                                                                                    |
+| **ZData**           | z values: vector or matrix or [] (default).                                                                                                                                                                                                                                                    |
+| **XDataMode**       | Selection mode for XData: 'manual' or 'auto'.                                                                                                                                                                                                                                                  |
 
 ## 💡 Examples
 

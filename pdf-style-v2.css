@@ -121,7 +121,8 @@ table {
     width: 92%;
     max-width: 100%;
     margin: 10px auto 14px auto;
-    page-break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
     font-size: 9pt;
 }
 
@@ -152,7 +153,7 @@ tr:nth-child(even) {
 .small { font-size: 8.5pt; color: #666; }
 
 /* Ensure page-breaks do not split code blocks or images */
-pre, img, table, figure { page-break-inside: avoid; }
+pre, img, figure { page-break-inside: avoid; }
 
 /* Accessibility: ensure strong contrast for printed output */
 @media print {

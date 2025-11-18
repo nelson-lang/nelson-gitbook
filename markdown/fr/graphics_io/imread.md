@@ -22,21 +22,20 @@ Lit une image à partir d'un fichier graphique.
 
 <b>imread</b> lit les données d'image du fichier donné et les charge dans une matrice.
 
-| Format | Description |
-| ------ | ----------- |
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+| Format | Description                            |
+| ------ | -------------------------------------- |
+| BMP    | Windows Bitmap                         |
+| GIF    | Graphic Interchange Format (optionnel) |
+| JPG    | Joint Photographic Experts Group       |
+| TIFF   | Tagged Image File Format               |
+| JPEG   | Joint Photographic Experts Group       |
+| PCX    | PiCture eXchange                       |
+| PNG    | Portable Network Graphics              |
+| PBM    | Portable Bitmap                        |
+| PGM    | Portable Graymap                       |
+| PPM    | Portable Pixmap                        |
+| XBM    | X11 Bitmap                             |
+| XPM    | X11 Pixmap                             |
 
 ## 💡 Exemple
 

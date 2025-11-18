@@ -21,7 +21,7 @@ Lorsque <b>A</b> et <b>B</b> appartiennent à des classes différentes, Nelson a
 Le tableau ci-dessous fournit la liste des noms de fonctions associés à la plupart des opérateurs Nelson :
 
 | Description                           | Opérateur                   | Fonction           |
-| ------------------------------------- | --------------------------- | ------------------ | -------- |
+| ------------------------------------- | --------------------------- | ------------------ |
 | Addition binaire                      | a + b                       | plus(a, b)         |
 | Soustraction binaire                  | a - b                       | minus(a, b)        |
 | Moins unaire                          | -a                          | uminus(a)          |
@@ -29,9 +29,9 @@ Le tableau ci-dessous fournit la liste des noms de fonctions associés à la plu
 | Multiplication élément par élément    | a .\* b                     | times(a, b)        |
 | Multiplication matricielle            | a \* b                      | mtimes(a, b)       |
 | Division élément par élément à droite | a ./ b                      | rdivide(a, b)      |
-| Division élément par élément à gauche | a .\ b                      | ldivide(a, b)      |
+| Division élément par élément à gauche | a .\\ b                     | ldivide(a, b)      |
 | Division matricielle à droite         | a / b                       | mrdivide(a, b)     |
-| Division matricielle à gauche         | a \ b                       | mldivide(a, b)     |
+| Division matricielle à gauche         | a \\ b                      | mldivide(a, b)     |
 | Puissance élément par élément         | a .^ b                      | power(a, b)        |
 | Puissance matricielle                 | a ^ b                       | mpower(a, b)       |
 | Inférieur à                           | a < b                       | lt(a, b)           |
@@ -41,7 +41,7 @@ Le tableau ci-dessous fournit la liste des noms de fonctions associés à la plu
 | Différent                             | a ~= b                      | ne(a, b)           |
 | Égalité                               | a == b                      | eq(a, b)           |
 | ET logique                            | a & b                       | and(a, b)          |
-| OU logique                            | a                           | b                  | or(a, b) |
+| OU logique                            | a \| b                      | or(a, b)           |
 | NON logique                           | ~a                          | not(a)             |
 | Opérateur deux-points                 | a:d:b                       | colon(a, d, b)     |
 | Transposée conjuguée                  | a'                          | ctranspose(a)      |

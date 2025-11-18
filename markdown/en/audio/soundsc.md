@@ -14,7 +14,7 @@ Scale data and play as sound.
 - y - column vector or m-by-2 matrix.
 - Fs - sample rate, a positive number, 8192 by default.
 - nBits - bit depth of sample values: 8, 16 (default), 24.
-- yRange - range of audio data to scale: | two-element vector or [-max(abs(y)),max(abs(y))] default.
+- yRange - range of audio data to scale: two-element vector or [-max(abs(y)),max(abs(y))] default.
 
 ## 📄 Description
 
