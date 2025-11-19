@@ -16,7 +16,7 @@ supprime des objets handle.
 
 Une fois supprimées, toutes les références aux objets contenus dans h deviennent invalides.
 
-Pour supprimer les variables handle, utilisez la fonction [clear](../memory_manager/clear.md).
+Pour supprimer les variables handle, utilisez la fonction[clear](../memory_manager/clear.md).
 
 Voir la fonction clear pour savoir comment forcer la suppression.
 

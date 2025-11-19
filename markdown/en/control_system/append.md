@@ -16,7 +16,7 @@ Appends the inputs and outputs of the two models.
 
 ## 📄 Description
 
-<b>sys = append(sys1, sys2, ..., sysN)</b> combines the inputs and outputs of models <b>sys1</b> through <b>sysN</b>, creating an augmented model represented by <b>sys</b>.
+<b>sys = append(sys1, sys2, ..., sysN)</b> combines the inputs and outputs of models<b>sys1</b> through<b>sysN</b>, creating an augmented model represented by <b>sys</b>.
 
 ## 💡 Example
 

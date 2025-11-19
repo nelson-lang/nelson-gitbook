@@ -27,7 +27,7 @@ Vérifie que la condition est vraie.
 
 Cette fonction lève également une erreur si l'entrée n'est pas une valeur logique, garantissant la sécurité de type.
 
-Lorsque le paramètre optionnel <b>err_msg</b> est fourni, il sera utilisé comme message d'erreur à la place du message par défaut en cas d'échec de l'assertion.
+Lorsque le paramètre optionnel<b>err_msg</b> est fourni, il sera utilisé comme message d'erreur à la place du message par défaut en cas d'échec de l'assertion.
 
 C'est la fonction d'assertion fondamentale qui sert de base pour tester des conditions dans les programmes et les tests unitaires.
 

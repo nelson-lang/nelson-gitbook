@@ -24,7 +24,7 @@ Ajouter un titre.
 
 <b>title('text')</b> ajoute un titre aux axes actuels.
 
-La propriété <b>Visible</b> est héritée du parent si elle n'est pas explicitement définie.
+La propriété<b>Visible</b> est héritée du parent si elle n'est pas explicitement définie.
 
 ## 💡 Exemple
 

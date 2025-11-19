@@ -19,7 +19,7 @@ Read the stopwatch timer.
 
 ## 📄 Description
 
-The sequence of commands <b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands.
+The sequence of commands<b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands.
 
 Consecutive calls to the toc function with no input return the elapsed since the most recent tic.
 

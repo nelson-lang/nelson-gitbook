@@ -22,17 +22,17 @@ Read an numeric matrix from a text file file using a delimiter.
 
 ## 📄 Description
 
-<b>M = dlmread(filename, delimiter, [R1 C1 R2 C2])</b> reads only the data within the range specified by row offsets <b>R1</b> to <b>R2</b> and column offsets <b>C1</b> to <b>C2</b>. Alternatively, you can specify the range using spreadsheet notation, such as 'A1..B6' instead of <b>[0 0 5 1]</b>.
+<b>M = dlmread(filename, delimiter, [R1 C1 R2 C2])</b> reads only the data within the range specified by row offsets<b>R1</b> to <b>R2</b> and column offsets <b>C1</b> to<b>C2</b>. Alternatively, you can specify the range using spreadsheet notation, such as 'A1..B6' instead of<b>[0 0 5 1]</b>.
 
-<b>M = dlmread(filename, delimiter, R1, C1)</b> starts reading data at the row and column offsets specified by <b>R1</b> and <b>C1</b>. For example, R1=0, C1=0 indicates the first value in the file.
+<b>M = dlmread(filename, delimiter, R1, C1)</b> starts reading data at the row and column offsets specified by<b>R1</b> and<b>C1</b>. For example, R1=0, C1=0 indicates the first value in the file.
 
-To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like <b>M = dlmread(filename, '', 3, 1)</b>.
+To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like<b>M = dlmread(filename, '', 3, 1)</b>.
 
 <b>M = dlmread(filename, delimiter)</b> reads data from the file using the specified delimiter and treats repeated delimiter characters as separate delimiters.
 
-<b>M = dlmread(filename)</b> reads a numeric data file in ASCII-delimited format into matrix <b>M</b>. The dlmread function automatically detects the delimiter from the file and consolidates consecutive white spaces into a single delimiter.
+<b>M = dlmread(filename)</b> reads a numeric data file in ASCII-delimited format into matrix<b>M</b>. The dlmread function automatically detects the delimiter from the file and consolidates consecutive white spaces into a single delimiter.
 
-Complex Number Importing: <b>dlmread</b> reads each complex number as a single unit, storing it in a complex numeric field.
+Complex Number Importing:<b>dlmread</b> reads each complex number as a single unit, storing it in a complex numeric field.
 
 Valid forms for complex numbers are:
 
@@ -41,7 +41,7 @@ Valid forms for complex numbers are:
 | ± real ± imag i\|j | 3.1347-2.1i |
 | ± imag i\|j        | -2.1j       |
 
-<b>Note</b>: Whitespace within a complex number is not allowed; <b>dlmread</b> interprets any embedded spaces as field delimiters.
+<b>Note</b>: Whitespace within a complex number is not allowed;<b>dlmread</b> interprets any embedded spaces as field delimiters.
 
 ## 💡 Examples
 

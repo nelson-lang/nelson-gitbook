@@ -4,10 +4,10 @@
     <module>data_structures</module>
     <section name="Structures de données">
       <chapter_description>
-        <p>Le module Structures de données fournit des outils pour créer, manipuler et inspecter des tableaux, cellules et structures dans Nelson.</p>
-        <p>Il permet la conversion entre différents formats de données, l'accès et la modification des champs, l'application de fonctions aux éléments de tableaux et l'organisation des données structurées.</p>
-        <p>Ce module facilite la gestion flexible des données complexes, en prenant en charge les opérations programmatiques et la gestion dynamique des données.</p>
-    </chapter_description>
+    <p>Le module Structures de données fournit des outils pour créer, manipuler et inspecter des tableaux, cellules et structures dans Nelson.</p>
+    <p>Il permet la conversion entre différents formats de données, l'accès et la modification des champs, l'application de fonctions aux éléments de tableaux et l'organisation des données structurées.</p>
+    <p>Ce module facilite la gestion flexible des données complexes, en prenant en charge les opérations programmatiques et la gestion dynamique des données.</p>
+  </chapter_description>
       <keyword name="arrayfun" link="arrayfun.html" description="Appliquer une fonction à chaque élément d'un tableau."/>
       <keyword name="cell" link="cell.html" description="Créer un tableau cellulaire de matrices vides."/>
       <keyword name="cell2mat" link="cell2mat.html" description="Transformer un tableau cellulaire contenant des matrices en une seule matrice concaténée."/>

@@ -14,7 +14,6 @@ This module enhances Nelson's capabilities by offering a range of functions that
 - [factor](factor.md) - Prime factors
 - [gamma](gamma.md) - Gamma special function
 - [gammaln](gammaln.md) - Logarithm of gamma function
-
 - [gcd](gcd.md) - Greatest common divisor
 - [interp1](interp1.md) - Linear 1-D data interpolation
 - [peaks](peaks.md) - Peaks function

@@ -16,7 +16,7 @@ Retourne vrai si l'argument est un répertoire.
 
 ## 📄 Description
 
-<b>isfolder(dirname)</b> renvoie <b>true</b> si <b>dirname</b> est un répertoire.
+<b>isfolder(dirname)</b> renvoie <b>true</b> si<b>dirname</b> est un répertoire.
 
 ## 💡 Exemple
 

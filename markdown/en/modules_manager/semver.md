@@ -19,9 +19,9 @@ semantic versioner.
 
 <b>semver</b> compares a version string to an version or an range version.
 
-if an range version is used, <b>r</b> return 0 (not satisfied) or 1 (satisfied).
+if an range version is used,<b>r</b> return 0 (not satisfied) or 1 (satisfied).
 
-if an simple version is used, an comparaison value <b>r</b> is returned -1 (inferior), 0 (equal) or 1 (superior).
+if an simple version is used, an comparaison value<b>r</b> is returned -1 (inferior), 0 (equal) or 1 (superior).
 
 supported range operators:
 

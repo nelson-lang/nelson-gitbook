@@ -27,7 +27,7 @@ Check that condition is true.
 
 This function also raises an error if the input is not a logical value, ensuring type safety.
 
-When the optional <b>err_msg</b> parameter is provided, it will be used as the error message instead of the default message when the assertion fails.
+When the optional<b>err_msg</b> parameter is provided, it will be used as the error message instead of the default message when the assertion fails.
 
 This is the fundamental assertion function that forms the basis for testing conditions in programs and unit tests.
 

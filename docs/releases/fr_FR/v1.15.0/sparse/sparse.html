@@ -86,12 +86,11 @@ sp = sparse(I, J, V, m, n, nz)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>sparse</b> est utilisé pour construire une matrice sparse. Seuls les éléments non nuls sont stockés.</p>
-            <p>Si <b>M</b> est une matrice pleine, <b>sparse</b> la convertit en représentation sparse, supprimant toutes les valeurs nulles.</p>
-            <p>Si nz n'est pas spécifié, <b>sparse</b> utilise comme valeur par défaut : nz = max([numel(i), numel(j), numel(v)])</p>
-            <p>Si plusieurs valeurs sont spécifiées avec les mêmes indices i, j, la valeur associée sera la somme des valeurs à l'indice répété.</p>
-        </div>
+    <p><b>sparse</b> est utilisé pour construire une matrice sparse. Seuls les éléments non nuls sont stockés.</p>
+    <p>Si <b>M</b> est une matrice pleine,<b>sparse</b> la convertit en représentation sparse, supprimant toutes les valeurs nulles.</p>
+    <p>Si nz n'est pas spécifié, <b>sparse</b> utilise comme valeur par défaut : nz = max([numel(i), numel(j), numel(v)])</p>
+    <p>Si plusieurs valeurs sont spécifiées avec les mêmes indices i, j, la valeur associée sera la somme des valeurs à l'indice répété.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

@@ -26,19 +26,15 @@ Convert date and time to string format.
 
 ## 📄 Description
 
-<b>dateAsString = datestr(dateVector)</b> converts date vectors into text that represents the corresponding dates and times. It returns a character array with <b>m</b>rows, where <b>m</b> is the number of date vectors in <b>dateVector</b>.
+<b>dateAsString = datestr(dateVector)</b> converts date vectors into text that represents the corresponding dates and times. It returns a character array with<b>m</b> rows, where <b>m</b> is the number of date vectors in<b>dateVector</b>.
 
-<b>dateAsString = datestr(dateNumber)</b> converts serial date numbers into text representing dates and times. The output is a character array with <b>m</b> rows, where <b>
-m</b> is the number of date numbers in <b>dateNumber</b>.
+<b>dateAsString = datestr(dateNumber)</b> converts serial date numbers into text representing dates and times. The output is a character array with<b>m</b> rows, where <b> m</b> is the number of date numbers in <b>dateNumber</b>.
 
-<b>dateAsString = datestr(..., formatOut)</b> allows you to specify the format of the output text using <b>formatOut</b>. You can apply this option with any of the previous input types.
+<b>dateAsString = datestr(..., formatOut)</b> allows you to specify the format of the output text using<b>formatOut</b>. You can apply this option with any of the previous input types.
 
-<b>dateAsString = datestr(dateAsStringIn)</b> converts the input string <b>
-dateAsStringIn</b> into a text format of day-month-year hour:minute:second. All dates in <b>
-dateAsStringIn</b> must follow the same format.
+<b>dateAsString = datestr(dateAsStringIn)</b> converts the input string <b> dateAsStringIn</b> into a text format of day-month-year hour:minute:second. All dates in<b>dateAsStringIn</b> must follow the same format.
 
-<b>dateAsString = datestr(dateAsStringIn, formatOut, pivotYear)</b> converts <b>
-dateAsStringIn</b> into the format specified by <b>formatOut</b>, while using an optional <b>pivotYear</b> to interpret two-digit years.
+<b>dateAsString = datestr(dateAsStringIn, formatOut, pivotYear)</b> converts<b>dateAsStringIn</b> into the format specified by<b>formatOut</b>, while using an optional <b>pivotYear</b> to interpret two-digit years.
 
 <b>dateAsString = datestr(..., 'local')</b> returns the date in the language of the system's current locale. If <b>'local'</b> is omitted, the default language is US English. The <b>'local'</b> option can be used with any of the previous syntaxes, and must be the last argument in the sequence.
 

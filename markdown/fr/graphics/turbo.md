@@ -22,11 +22,9 @@ Tableau de couleurs Turbo.
 ## 💡 Exemple
 
 ```matlab
-
 f = figure();
 surf(peaks);
 colormap('turbo');
-
 ```
 
 <img src="turbo.svg" align="middle"/>

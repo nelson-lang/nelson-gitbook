@@ -4,10 +4,10 @@
     <module>operators</module>
     <section name="Opérateurs">
       <chapter_description>
-        <p>Le module Operators fournit des outils pour effectuer des opérations arithmétiques, logiques, relationnelles et sur tableaux dans Nelson.</p>
-        <p>Il prend en charge les calculs élément par élément et matriciels, la concaténation, l'indexation et l'affectation par indices, ainsi que les opérations logiques à court-circuit.</p>
-        <p>Ce module permet une manipulation flexible des structures de données et des tableaux numériques, constituant la base des calculs simples comme des expressions mathématiques avancées.</p>
-    </chapter_description>
+    <p>Le module Operators fournit des outils pour effectuer des opérations arithmétiques, logiques, relationnelles et sur tableaux dans Nelson.</p>
+    <p>Il prend en charge les calculs élément par élément et matriciels, la concaténation, l'indexation et l'affectation par indices, ainsi que les opérations logiques à court-circuit.</p>
+    <p>Ce module permet une manipulation flexible des structures de données et des tableaux numériques, constituant la base des calculs simples comme des expressions mathématiques avancées.</p>
+  </chapter_description>
       <keyword name="all" link="all.html" description="all of the elements of a matrix satisfy some condition."/>
       <keyword name="and" link="and.html" description="opérateur logique 'AND', &amp;"/>
       <keyword name="any" link="any.html" description="Vérifie si au moins un élément d'une matrice satisfait une condition."/>

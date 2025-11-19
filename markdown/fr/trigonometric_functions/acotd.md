@@ -16,7 +16,7 @@ Cotangente inverse d'un angle en degrés
 
 ## 📄 Description
 
-<b>acotd</b> calcule la cotangente inverse d'un angle pour chaque élément de <b>x</b> en degrés.
+<b>acotd</b> calcule la cotangente inverse d'un angle pour chaque élément de<b>x</b> en degrés.
 
 ## 💡 Exemple
 

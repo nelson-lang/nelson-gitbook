@@ -22,7 +22,7 @@ Générer des arguments nommés pour les fonctions Python.
 
 En Python, un argument nommé (keyword argument) est une valeur associée à un identifiant.
 
-Veillez à positionner <b>pyargs</b> comme dernier argument lors de l'appel d'une fonction Python.
+Veillez à positionner<b>pyargs</b> comme dernier argument lors de l'appel d'une fonction Python.
 
 ## 💡 Exemple
 

@@ -23,7 +23,7 @@ Appelle une fonction NELSON et capture l'erreur.
 
 <b>mexCallMATLABWithTrap</b> appelle une fonction NELSON et capture l'erreur.
 
-Si une erreur est détectée, <b>mexCallMATLABWithTrap</b> renvoie un mxArray (objet MException).
+Si une erreur est détectée,<b>mexCallMATLABWithTrap</b> renvoie un mxArray (objet MException).
 
 ## 💡 Exemple
 

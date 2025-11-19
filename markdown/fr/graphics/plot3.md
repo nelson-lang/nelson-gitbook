@@ -30,7 +30,7 @@ Tracé de courbe 3D.
 
 <b>go = plot3(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne.
 
-Voir <b>line</b> ou <b>plot</b> pour plus d'informations sur les propriétés.
+Voir <b>line</b> ou<b>plot</b> pour plus d'informations sur les propriétés.
 
 ## 💡 Exemples
 

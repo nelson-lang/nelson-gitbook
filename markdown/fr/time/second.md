@@ -18,9 +18,9 @@ Composante secondes de la date et de l'heure d'entrée.
 
 ## 📄 Description
 
-<b>s = second(t)</b> extracts the second component from each date and time specified in <b>t</b>.
+<b>s = second(t)</b> extracts the second component from each date and time specified in<b>t</b>.
 
-The output <b>s</b> is a double array containing integer values ranging from 0 to 59.
+The output<b>s</b> is a double array containing integer values ranging from 0 to 59.
 
 ## 💡 Exemple
 

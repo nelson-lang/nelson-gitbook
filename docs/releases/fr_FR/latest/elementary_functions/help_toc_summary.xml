@@ -4,10 +4,10 @@
     <module>elementary_functions</module>
     <section name="Fonctions élémentaires">
       <chapter_description>
-        <p>Le module Fonctions élémentaires fournit un large éventail d'opérations mathématiques fondamentales et de manipulations de matrices dans Nelson.</p>
-        <p>Il inclut des calculs numériques, des opérations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise à l'échelle, ainsi que diverses fonctions utilitaires pour interroger les propriétés des tableaux et des matrices.</p>
-        <p>Le module prend également en charge la construction de matrices spéciales, de grilles et de séquences, facilitant l'implémentation robuste et efficace d'algorithmes mathématiques et d'analyses numériques.</p>
-    </chapter_description>
+    <p>Le module Fonctions élémentaires fournit un large éventail d'opérations mathématiques fondamentales et de manipulations de matrices dans Nelson.</p>
+    <p>Il inclut des calculs numériques, des opérations sur tableaux et matrices, la gestion des nombres complexes, l'arrondi et la mise à l'échelle, ainsi que diverses fonctions utilitaires pour interroger les propriétés des tableaux et des matrices.</p>
+    <p>Le module prend également en charge la construction de matrices spéciales, de grilles et de séquences, facilitant l'implémentation robuste et efficace d'algorithmes mathématiques et d'analyses numériques.</p>
+  </chapter_description>
       <keyword name="abs" link="abs.html" description="Valeur absolue"/>
       <keyword name="allfinite" link="allfinite.html" description="Vérifie si tous les éléments du tableau sont finis."/>
       <keyword name="angle" link="angle.html" description="Angle de phase"/>

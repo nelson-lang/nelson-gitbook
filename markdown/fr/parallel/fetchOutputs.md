@@ -18,9 +18,9 @@ Récupérer les résultats d'une fonction s'exécutant dans le pool d'arrière-p
 
 <b>[y1, ... , ym] = fetchOutputs(f)</b> récupère <b>m</b> résultats d'un tableau de <b>Future</b> <b>f</b>.
 
-<b>fetchOutputs</b> attend que la fonction associée à <b>f</b> se termine avant de récupérer les résultats.
+<b>fetchOutputs</b> attend que la fonction associée à<b>f</b> se termine avant de récupérer les résultats.
 
-Si <b>fetchOutputs</b> est appelé, la propriété Read de chaque élément de <b>f</b> est définie sur true.
+Si<b>fetchOutputs</b> est appelé, la propriété Read de chaque élément de<b>f</b> est définie sur true.
 
 ## 💡 Exemples
 

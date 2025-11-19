@@ -16,7 +16,7 @@ Calcule le cosinus en degrés pour chaque élément de x.
 
 ## 📄 Description
 
-<b>cosd</b> calcule le cosinus en degrés pour chaque élément de <b>x</b>.
+<b>cosd</b> calcule le cosinus en degrés pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

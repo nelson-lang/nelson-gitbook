@@ -21,7 +21,7 @@ Fait pivoter une image d'un angle spécifié
 
 ## 📄 Description
 
-La fonction <b>imrotate</b> fait pivoter une image de l'angle spécifié autour de son centre. La rotation utilise la méthode d'interpolation spécifiée.
+La fonction<b>imrotate</b> fait pivoter une image de l'angle spécifié autour de son centre. La rotation utilise la méthode d'interpolation spécifiée.
 
 La fonction prend en charge divers formats d'images, y compris niveaux de gris et RGB. L'image de sortie conserve le même type de données que l'image d'entrée.
 

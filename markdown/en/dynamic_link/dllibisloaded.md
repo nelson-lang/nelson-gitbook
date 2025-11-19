@@ -30,7 +30,6 @@ lib1 = dlopen(path_1);
 [r, lib2] = dllibisloaded(path_1)
 isequal(lib1, lib2)
 
-
 ```
 
 ## 🔗 See also

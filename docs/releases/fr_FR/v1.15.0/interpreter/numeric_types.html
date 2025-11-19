@@ -24,63 +24,62 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Dans Nelson, vous pouvez préciser le type de données d'un littéral numérique en utilisant un suffixe ou un spécificateur de type.</p>
-        <p>Voici quelques suffixes courants pour spécifier le type des littéraux numériques :</p>
-        <p></p>
-        <table>
-            <tr>
-                <th>suffixe du littéral</th>
-                <th>type Nelson</th>
-            </tr>
-            <tr>
-                <td>f32</td>
-                <td>single (float simple précision)</td>
-            </tr>
-            <tr>
-                <td>f64</td>
-                <td>double (float double précision)</td>
-            </tr>
-            <tr>
-                <td>i8</td>
-                <td>int8 (entier signé 8 bits)</td>
-            </tr>
-            <tr>
-                <td>i16</td>
-                <td>int16 (entier signé 16 bits)</td>
-            </tr>
-            <tr>
-                <td>i32</td>
-                <td>int32 (entier signé 32 bits)</td>
-            </tr>
-            <tr>
-                <td>i64</td>
-                <td>int64 (entier signé 64 bits)</td>
-            </tr>
-            <tr>
-                <td>u8</td>
-                <td>uint8 (entier non signé 8 bits)</td>
-            </tr>
-            <tr>
-                <td>u16</td>
-                <td>uint16 (entier non signé 16 bits)</td>
-            </tr>
-            <tr>
-                <td>u32</td>
-                <td>uint32 (entier non signé 32 bits)</td>
-            </tr>
-            <tr>
-                <td>u64</td>
-                <td>uint64 (entier non signé 64 bits)</td>
-            </tr>
-        </table>
-        <p></p>
-        <p>i64 : pour spécifier un entier signé 64 bits, vous pouvez utiliser le suffixe i64. exemple : A = 42i64</p>
-        <p>f32 : pour spécifier un nombre à virgule flottante 32 bits (simple précision), vous pouvez utiliser le suffixe f32. exemple : 3.14f32</p>
-        <p>Ces suffixes aident Nelson à inférer le type de données correct pour le littéral.</p>
-        <p>Par défaut, Nelson infère automatiquement le type double et vous n'avez pas besoin de spécifier ce suffixe explicitement. exemple : A = 3.14</p>
-        <p>Sauf si vous avez des besoins spécifiques ou devez dissiper une ambiguïté entre types, vous n'avez souvent pas besoin de préciser explicitement le type des littéraux numériques.</p>
-        <p>Cependant, lorsque vous créez un tableau numérique de grands entiers dans Nelson, surtout lorsqu'ils dépassent la précision maximale représentable par double (plus grands que flintmax), Nelson stocke par défaut ces valeurs en double précision à virgule flottante.</p>
-    </div>
+    <p>Dans Nelson, vous pouvez préciser le type de données d'un littéral numérique en utilisant un suffixe ou un spécificateur de type.</p>
+    <p>Voici quelques suffixes courants pour spécifier le type des littéraux numériques :</p>
+    <table>
+      <tr>
+        <th>suffixe du littéral</th>
+        <th>type Nelson</th>
+      </tr>
+      <tr>
+        <td>f32</td>
+        <td>single (float simple précision)</td>
+      </tr>
+      <tr>
+        <td>f64</td>
+        <td>double (float double précision)</td>
+      </tr>
+      <tr>
+        <td>i8</td>
+        <td>int8 (entier signé 8 bits)</td>
+      </tr>
+      <tr>
+        <td>i16</td>
+        <td>int16 (entier signé 16 bits)</td>
+      </tr>
+      <tr>
+        <td>i32</td>
+        <td>int32 (entier signé 32 bits)</td>
+      </tr>
+      <tr>
+        <td>i64</td>
+        <td>int64 (entier signé 64 bits)</td>
+      </tr>
+      <tr>
+        <td>u8</td>
+        <td>uint8 (entier non signé 8 bits)</td>
+      </tr>
+      <tr>
+        <td>u16</td>
+        <td>uint16 (entier non signé 16 bits)</td>
+      </tr>
+      <tr>
+        <td>u32</td>
+        <td>uint32 (entier non signé 32 bits)</td>
+      </tr>
+      <tr>
+        <td>u64</td>
+        <td>uint64 (entier non signé 64 bits)</td>
+      </tr>
+    </table>
+    <p></p>
+    <p>i64 : pour spécifier un entier signé 64 bits, vous pouvez utiliser le suffixe i64. exemple : A = 42i64</p>
+    <p>f32 : pour spécifier un nombre à virgule flottante 32 bits (simple précision), vous pouvez utiliser le suffixe f32. exemple : 3.14f32</p>
+    <p>Ces suffixes aident Nelson à inférer le type de données correct pour le littéral.</p>
+    <p>Par défaut, Nelson infère automatiquement le type double et vous n'avez pas besoin de spécifier ce suffixe explicitement. exemple : A = 3.14</p>
+    <p>Sauf si vous avez des besoins spécifiques ou devez dissiper une ambiguïté entre types, vous n'avez souvent pas besoin de préciser explicitement le type des littéraux numériques.</p>
+    <p>Cependant, lorsque vous créez un tableau numérique de grands entiers dans Nelson, surtout lorsqu'ils dépassent la précision maximale représentable par double (plus grands que flintmax), Nelson stocke par défaut ces valeurs en double précision à virgule flottante.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

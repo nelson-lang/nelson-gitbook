@@ -23,17 +23,17 @@ Plot simulated time response of dynamic system to arbitrary inputs.
 
 ## 📄 Description
 
-The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>).
+The function<b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model<b>sys</b> to the input history (<b>t</b>, <b>u</b>).
 
-The time samples for the simulation are specified by the vector <b>t</b>.
+The time samples for the simulation are specified by the vector<b>t</b>.
 
-In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>.
+In the case of single-input systems, the input signal<b>u</b> is a vector with the same length as <b>t</b>.
 
-For multi-input systems, <b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>.
+For multi-input systems,<b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to<b>sys</b>.
 
-An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values.
+An additional usage of the function is demonstrated by the example<b>lsim(sys, u, t, x0)</b>, where a vector<b>x0</b> is provided to specify initial state values.
 
-This is particularly relevant when <b>sys</b> is a state-space model.
+This is particularly relevant when<b>sys</b> is a state-space model.
 
 ## 💡 Examples
 

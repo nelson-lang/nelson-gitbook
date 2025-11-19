@@ -35,11 +35,11 @@ Minimum elements of an array.
 
 <b>min</b> find minimum values in an array.
 
-If <b>A</b> is a matrix then <b>M = min(A)</b> is a row vector containing the minimum value of each column.
+If <b>A</b> is a matrix then<b>M = min(A)</b> is a row vector containing the minimum value of each column.
 
-If <b>A</b> is a vector then <b>M = min(A)</b> will return the minimum of <b>A</b>.
+If <b>A</b> is a vector then<b>M = min(A)</b> will return the minimum of <b>A</b>.
 
-If <b>A</b> If A is complex number then <b>M = min(A)</b> will return founded complex number with the largest magnitude.
+If <b>A</b> If A is complex number then<b>M = min(A)</b> will return founded complex number with the largest magnitude.
 
 ## 💡 Example
 

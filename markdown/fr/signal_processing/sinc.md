@@ -16,7 +16,7 @@ Fonction sinc.
 
 ## 📄 Description
 
-<b>c = sinc(m)</b> renvoie un tableau <b>c</b> dont les éléments sont le sinc des éléments de l'entrée : <b>m</b>.
+<b>c = sinc(m)</b> renvoie un tableau<b>c</b> dont les éléments sont le sinc des éléments de l'entrée : <b>m</b>.
 
 ## 💡 Exemple
 

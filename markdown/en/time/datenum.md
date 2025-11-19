@@ -30,7 +30,7 @@ Return the date/time input as a serial day number.
 
 <b>d = datenum(datevec)</b> converts date vector to serial date number.
 
-<b>d = datenum(datestr)</b> and <b>d = datenum(datestr, format)</b> converts string to serial date number.
+<b>d = datenum(datestr)</b> and<b>d = datenum(datestr, format)</b> converts string to serial date number.
 
 Supported format conversion:
 
@@ -62,7 +62,7 @@ Supported format conversion:
 
 <b>HH:MM PM</b> 3:35 PM
 
-If format is not specified, the default format is <b>dd-mmm-yyyy</b>.
+If format is not specified, the default format is<b>dd-mmm-yyyy</b>.
 
 If format is specified and not using predefined format, the format must be specified as a character vector or string scalar composed of symbolic identifiers.
 

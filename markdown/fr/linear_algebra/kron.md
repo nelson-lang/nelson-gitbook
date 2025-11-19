@@ -17,7 +17,7 @@ Produit tensoriel de Kronecker.
 
 ## 📄 Description
 
-<b>K = kron(A, B)</b> calcule le produit tensoriel de Kronecker des matrices <b>A</b> et <b>B</b>.
+<b>K = kron(A, B)</b> calcule le produit tensoriel de Kronecker des matrices<b>A</b> et <b>B</b>.
 
 Pour des matrices
 $$A$$

@@ -20,9 +20,9 @@ Différences et dérivées approximatives.
 
 ## 📄 Description
 
-Si <b>X</b> est un vecteur de longueur <b>n</b>, le résultat de <b>diff(X)</b> est un vecteur des premières différences <b>X(2) - X(1), ..., X(n) - X(n-1)</b>.
+Si <b>X</b> est un vecteur de longueur<b>n</b>, le résultat de<b>diff(X)</b> est un vecteur des premières différences<b>X(2) - X(1), ..., X(n) - X(n-1)</b>.
 
-Si <b>X</b> est une matrice, le résultat de <b>diff(X)</b> est une matrice des différences de colonnes le long de la première dimension non-singleton.
+Si <b>X</b> est une matrice, le résultat de<b>diff(X)</b> est une matrice des différences de colonnes le long de la première dimension non-singleton.
 
 ## 💡 Exemple
 

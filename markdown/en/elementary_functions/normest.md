@@ -21,7 +21,7 @@
 
 ## 📄 Description
 
-<b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix <b>A</b>.
+<b>nrm = normest(A)</b> returns an estimate of the 2-norm of the matrix<b>A</b>.
 
 ## 💡 Example
 

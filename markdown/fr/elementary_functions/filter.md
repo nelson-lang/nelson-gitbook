@@ -18,13 +18,13 @@ Filtre numérique 1-D
 
 ## 📄 Description
 
-La fonction <b>filter(b, a, x)</b> applique une fonction de transfert rationnelle pour filtrer le tableau de données d'entrée <b>x</b>.
+La fonction <b>filter(b, a, x)</b> applique une fonction de transfert rationnelle pour filtrer le tableau de données d'entrée<b>x</b>.
 
 Cette fonction de transfert est définie par les coefficients du numérateur (<b>b</b>) et du dénominateur (<b>a</b>).
 
-Si le premier coefficient de <b>a</b> (a(1)) est différent de 1, le filtre normalise les coefficients par a(1). Il est essentiel que a(1) soit non nul.
+Si le premier coefficient de<b>a</b> (a(1)) est différent de 1, le filtre normalise les coefficients par a(1). Il est essentiel que a(1) soit non nul.
 
-Lorsque <b>x</b> est un vecteur, la fonction renvoie un vecteur de même taille contenant les données filtrées.
+Lorsque<b>x</b> est un vecteur, la fonction renvoie un vecteur de même taille contenant les données filtrées.
 
 ## 💡 Exemple
 

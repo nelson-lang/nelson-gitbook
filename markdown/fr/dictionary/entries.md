@@ -18,7 +18,7 @@ Paires clé-valeur du dictionnaire.
 
 ## 📄 Description
 
-<b>E = entries(d)</b> récupère une table contenant les paires clé-valeur du dictionnaire donné, <b>d</b>.
+<b>E = entries(d)</b> récupère une table contenant les paires clé-valeur du dictionnaire donné,<b>d</b>.
 
 <b>E = entries(d)</b> actuellement non implémenté.
 

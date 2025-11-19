@@ -18,13 +18,13 @@
 
 ## 📄 Description
 
-The function <b>filter(b, a, x)</b> applies a rational transfer function to filter the input data array <b>x</b>.
+The function<b>filter(b, a, x)</b> applies a rational transfer function to filter the input data array<b>x</b>.
 
 This transfer function is defined by the coefficients of the numerator (<b>b</b>) and denominator (<b>a</b>).
 
-If the first coefficient of <b>a</b> (a(1)) is not equal to 1, the filter normalizes the coefficients by a(1). It is crucial for a(1) to be nonzero.
+If the first coefficient of<b>a</b> (a(1)) is not equal to 1, the filter normalizes the coefficients by a(1). It is crucial for a(1) to be nonzero.
 
-When <b>x</b> is a vector, the function returns a vector of the same size as <b>x</b> containing the filtered data.
+When<b>x</b> is a vector, the function returns a vector of the same size as<b>x</b> containing the filtered data.
 
 ## 💡 Example
 

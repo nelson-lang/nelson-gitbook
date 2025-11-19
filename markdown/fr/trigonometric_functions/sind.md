@@ -16,7 +16,7 @@ Calcule le sinus en degrés pour chaque élément de x.
 
 ## 📄 Description
 
-<b>sind</b> calcule le sinus en degrés pour chaque élément de <b>x</b>.
+<b>sind</b> calcule le sinus en degrés pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

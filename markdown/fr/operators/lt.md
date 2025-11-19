@@ -17,7 +17,7 @@ inférieur à, opérateur <
 
 ## 📄 Description
 
-<b>C = lt(A, B)</b> renvoie un tableau logique avec des éléments égaux à <b>true</b> lorsque A est inférieur à B.
+<b>C = lt(A, B)</b> renvoie un tableau logique avec des éléments égaux à<b>true</b> lorsque A est inférieur à B.
 
 <b>lt</b> compare uniquement la partie réelle des tableaux numériques.
 

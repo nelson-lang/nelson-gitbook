@@ -23,7 +23,7 @@ k plus grands éléments d'un tableau
 
 <b>maxk</b> retourne les k plus grands éléments du tableau <b>A</b>. Lorsque A est un vecteur, le résultat est les k plus grandes valeurs de A. Lorsque A est une matrice, <b>maxk</b> opère le long de la dimension spécifiée (ou la première dimension non singleton par défaut) et retourne les k plus grands éléments pour chaque tranche le long de cette dimension.
 
-Si <b>k</b> est plus grand que le nombre d'éléments disponibles le long de la dimension d'opération, tous les éléments sont retournés (triés par ordre décroissant). Lorsqu'il est appelé comme <b>[B, I] = maxk(A, k)</b>, <b>I</b> contient les indices des éléments retournés par rapport à <b>A</b>.
+Si <b>k</b> est plus grand que le nombre d'éléments disponibles le long de la dimension d'opération, tous les éléments sont retournés (triés par ordre décroissant). Lorsqu'il est appelé comme <b>[B, I] = maxk(A, k)</b>,<b>I</b> contient les indices des éléments retournés par rapport à <b>A</b>.
 
 ## 💡 Exemples
 

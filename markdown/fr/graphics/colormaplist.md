@@ -12,7 +12,7 @@ Fournit la liste des palettes de couleurs.
 
 ## 📄 Description
 
-<b>colormaplist</b> retourne les palettes de couleurs disponibles sous forme de tableau de chaînes <b>m</b>-par-<b>1</b>.
+<b>colormaplist</b> retourne les palettes de couleurs disponibles sous forme de tableau de chaînes<b>m</b>-par-<b>1</b>.
 
 ## 💡 Exemple
 

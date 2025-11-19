@@ -18,7 +18,7 @@ Cross product.
 
 ## 📄 Description
 
-<b>R = cross(A, B)</b> returns the cross product of <b>A</b> and <b>B</b>.
+<b>R = cross(A, B)</b> returns the cross product of <b>A</b> and<b>B</b>.
 
 ## 📚 Bibliography
 

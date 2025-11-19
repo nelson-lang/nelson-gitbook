@@ -22,11 +22,11 @@ Polynomial differentiation.
 
 ## 📄 Description
 
-<b>k = polyder(p)</b> return the coefficients of the derivative of the polynomial whose coefficients are given by the vector <b>p</b>.
+<b>k = polyder(p)</b> return the coefficients of the derivative of the polynomial whose coefficients are given by the vector<b>p</b>.
 
-<b>k = polyder(a, b) </b> returns the derivative of the product of the polynomials <b>a</b> and <b>b</b>.
+<b>k = polyder(a, b) </b> returns the derivative of the product of the polynomials<b>a</b> and <b>b</b>.
 
-<b>[q, d] = polyder(a, b)</b> returns the derivative of the quotient of the polynomials <b>a</b> and <b>b</b>.
+<b>[q, d] = polyder(a, b)</b> returns the derivative of the quotient of the polynomials<b>a</b> and <b>b</b>.
 
 ## 💡 Example
 

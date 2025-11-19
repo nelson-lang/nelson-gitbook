@@ -19,7 +19,7 @@ Vérifie si une chaîne contient un motif.
 
 ## 📄 Description
 
-<b>contains</b> renvoie <b>true</b> si <b>str</b> contient <b>pattern</b>.
+<b>contains</b> renvoie <b>true</b> si <b>str</b> contient<b>pattern</b>.
 
 ## 💡 Exemple
 

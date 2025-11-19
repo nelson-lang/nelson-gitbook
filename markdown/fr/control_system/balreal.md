@@ -20,9 +20,9 @@
 
 ## 📄 Description
 
-<b>balreal(sys)</b> calcule une réalisation équilibrée, notée <b>sysb</b>, pour la partie stable du modèle linéaire invariant dans le temps (LTI) <b>sys</b>.
+<b>balreal(sys)</b> calcule une réalisation équilibrée, notée<b>sysb</b>, pour la partie stable du modèle linéaire invariant dans le temps (LTI)<b>sys</b>.
 
-Ce processus s'applique aussi bien aux systèmes continus que discrets. Si <b>sys</b> n'est pas initialement sous forme d'espace d'état, la fonction le convertit automatiquement en espace d'état à l'aide de <b>ss</b> avant de procéder à l'équilibrage.
+Ce processus s'applique aussi bien aux systèmes continus que discrets. Si <b>sys</b> n'est pas initialement sous forme d'espace d'état, la fonction le convertit automatiquement en espace d'état à l'aide de<b>ss</b> avant de procéder à l'équilibrage.
 
 ## 💡 Exemple
 

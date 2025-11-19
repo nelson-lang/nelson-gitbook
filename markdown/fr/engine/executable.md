@@ -41,9 +41,9 @@ Exécutables pour démarrer le logiciel Nelson.
 
 <b>nelson-gui</b> : console graphique, historique et complétion disponibles (support UTF-16).
 
-Si vous avez installé Nelson sur Windows, la variable d'environnement <b>NELSON_RUNTIME_PATH</b> sera définie.
+Si vous avez installé Nelson sur Windows, la variable d'environnement<b>NELSON_RUNTIME_PATH</b> sera définie.
 
-Elle permet d'appeler facilement Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.
+Elle permet d'appeler facilement Nelson <b>"%NELSON_RUNTIME_PATH%\\nelson.bat"</b>.
 
 ## 💡 Exemples
 

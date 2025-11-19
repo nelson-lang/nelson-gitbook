@@ -20,7 +20,7 @@ Crée un nombre complexe.
 
 <b>complex</b> renvoie une valeur complexe à partir d'arguments réels.
 
-Avec un seul argument d'entrée, <b>complex</b> renvoie la valeur complexe a + 0\*i.
+Avec un seul argument d'entrée,<b>complex</b> renvoie la valeur complexe a + 0\*i.
 
 ## 💡 Exemple
 

@@ -18,7 +18,7 @@ Exponentielle matricielle pour une matrice réelle, avec estimation de précisio
 - A_OUT - Si INFO = 0, la partie principale N-by-N de ce tableau contient la matrice solution exp(A \* delta).
 - MDIG - Le nombre minimal de chiffres exacts dans la norme 1 de exp(A\*delta).
 - IDIG - Le nombre de chiffres exacts dans la norme 1 de exp(A\*delta) au niveau de confiance 95%.
-- IWARN - = 0 : pas d'avertissement ; = 1 : si MDIG = 0 et IDIG > 0, avertissement d'inexactitude possible (l'exponentielle a été calculée) ; = 2 : si MDIG = 0 et IDIG = 0, avertissement d'inexactitude sévère (l'exponentielle a été calculée) ; = 3 : si l'équilibrage a été demandé mais a échoué à réduire la norme et n'a pas été utilisé.
+- IWARN - = 0 : pas d'avertissement ; = 1 : si MDIG = 0 et IDIG >0, avertissement d'inexactitude possible (l'exponentielle a été calculée) ; = 2 : si MDIG = 0 et IDIG = 0, avertissement d'inexactitude sévère (l'exponentielle a été calculée) ; = 3 : si l'équilibrage a été demandé mais a échoué à réduire la norme et n'a pas été utilisé.
 - INFO - = 0 : sortie réussie ; = 1 : si la norme de A\*delta (après équilibrage éventuel) est trop grande pour obtenir un résultat précis ; = 2 : si la matrice de coefficients (dénominateur de l'approximation de Pade) est exactement singulière ; essayer une autre valeur de NDIAG ; = 3 : si l'exponentielle solution débordera, possiblement dû à une valeur DELTA trop grande ; les calculs ont été interrompus prématurément.
 
 ## 📄 Description

@@ -21,9 +21,9 @@ k smallest elements of an array
 
 ## 📄 Description
 
-<b>mink</b> returns the k smallest elements of array <b>A</b>. When A is a vector, the result is the k smallest values from A. When A is a matrix, <b>mink</b> operates along the specified dimension (or the first non-singleton dimension by default) and returns the k smallest elements for each slice along that dimension.
+<b>mink</b> returns the k smallest elements of array<b>A</b>. When A is a vector, the result is the k smallest values from A. When A is a matrix,<b>mink</b> operates along the specified dimension (or the first non-singleton dimension by default) and returns the k smallest elements for each slice along that dimension.
 
-If <b>k</b> is larger than the number of available elements along the operating dimension, all elements are returned (sorted ascending). When called as <b>[B, I] = mink(A, k)</b>, <b>I</b> contains the indices of the returned elements with respect to <b>A</b>.
+If<b>k</b> is larger than the number of available elements along the operating dimension, all elements are returned (sorted ascending). When called as <b>[B, I] = mink(A, k)</b>,<b>I</b> contains the indices of the returned elements with respect to<b>A</b>.
 
 ## 💡 Examples
 

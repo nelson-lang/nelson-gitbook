@@ -18,7 +18,7 @@ Connexion en boucle fermée de plusieurs modèles.
 
 ## 📄 Description
 
-<b>sys = feedback(sys1, sys2)</b> génère un objet modèle, <b>sys</b>, représentant l'interconnexion en rétroaction négative des objets modèle <b>sys1</b> et <b>sys2</b>.
+<b>sys = feedback(sys1, sys2)</b> génère un objet modèle,<b>sys</b>, représentant l'interconnexion en rétroaction négative des objets modèle <b>sys1</b> et <b>sys2</b>.
 
 ## 💡 Exemple
 

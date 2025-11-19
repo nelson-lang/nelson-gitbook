@@ -10,7 +10,7 @@ exit evaluation loop.
 
 <b>break</b> statement is used to exit a loop prematurely.
 
-<b>break</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.
+<b>break</b> statement can be used inside a <b>for</b> or a<b>while</b> loop.
 
 ## 💡 Example
 

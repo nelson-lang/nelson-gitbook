@@ -30,11 +30,11 @@
 
 ## 📄 Description
 
-<b>scatter(x, y, z)</b> generates a scatter plot by placing circular markers at the coordinates defined by the vectors <b>x</b>, <b>y</b> and <b>z</b>.
+<b>scatter(x, y, z)</b> generates a scatter plot by placing circular markers at the coordinates defined by the vectors <b>x</b>,<b>y</b> and <b>z</b>.
 
-If you intend to display a single dataset, ensure that both <b>x</b>, <b>y</b>and <b>z</b> are vectors of the same length.
+If you intend to display a single dataset, ensure that both <b>x</b>,<b>y</b> and <b>z</b> are vectors of the same length.
 
-To visualize multiple datasets on a shared set of axes, you can achieve this by using a matrix for either <b>x</b>, <b>y</b> or <b>z</b>, while keeping the other as a vector.
+To visualize multiple datasets on a shared set of axes, you can achieve this by using a matrix for either <b>x</b>, <b>y</b> or<b>z</b>, while keeping the other as a vector.
 
 This allows you to overlay or compare multiple datasets within the same plot.
 
@@ -57,7 +57,7 @@ Scatter Properties:
 | **MarkerEdgeColor** | Marker outline color: RGB triplet.                                                                                                                                                                                                                                                             |
 | **MarkerEdgeAlpha** | Marker edge transparency: scalar in range [0,1], 'flat or 1 (default). To assign distinct transparency values to the edges of each point in a plot, set the AlphaData property to a vector matching the size of the **XData** property and set the **MarkerEdgeAlpha** property to **'flat'**. |
 | **MarkerFaceColor** | Marker fill color: RGB triplet.                                                                                                                                                                                                                                                                |
-| **MarkerFaceAlpha** | Marker face transparency: scalar in range [0,1], 'flat or 1 (default). To assign distinct transparency values to the faces of each point in a plot, set the AlphaData property to a vector matching the size of the **XData** property and set the **MarkerFaceAlpha** property to **'flat'**. |
+| **MarkerFaceAlpha** | Marker face transparency: scalar in range [0,1], 'flat or 1 (default). To assign distinct transparency values to the faces of each point in a plot, set the AlphaData property to a vector matching the size of the**XData** property and set the**MarkerFaceAlpha** property to **'flat'**.   |
 | **Parent**          | Parent container: Figure graphics object.                                                                                                                                                                                                                                                      |
 | **SizeData**        | Marker sizes:[] (default), scalar or vector.                                                                                                                                                                                                                                                   |
 | **Tag**             | Object identifier: character vector, string scalar or '' (default).                                                                                                                                                                                                                            |

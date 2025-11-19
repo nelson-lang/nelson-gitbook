@@ -18,9 +18,9 @@ Loads an dynamic library.
 
 <b>dlopen</b> loads an dynamic library.
 
-<b>dlopen</b> returns a <b>dllib</b> handle with <b>Path</b> property.
+<b>dlopen</b> returns a <b>dllib</b> handle with<b>Path</b> property.
 
-<b>get</b>, <b>ismethod</b>, <b>isprop</b>, <b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>, <b>ne</b>, <b>isequal</b>, <b>horzcat</b>, <b>vertcat</b> are overloaded for <b>dllib</b> type.
+<b>get</b>, <b>ismethod</b>, <b>isprop</b>, <b>disp</b>,<b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>, <b>ne</b>,<b>isequal</b>, <b>horzcat</b>, <b>vertcat</b> are overloaded for<b>dllib</b> type.
 
 library is searched first in NELSON_LIBRARY_PATH and after in PATH on windows or LD_LIBRARY_PATH or DYLD_LIBRARY_PATH on linux or Macos.
 

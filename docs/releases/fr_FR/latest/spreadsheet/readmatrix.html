@@ -68,34 +68,19 @@ M = readmatrix(filename, opts, 'OutputType', type)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-      <p>
-        <b>M = readmatrix(filename)</b> crée une matrice en important des données orientées colonne depuis un fichier texte ou tableur.</p>
-        <p>
-            <b>M = readmatrix(filename, opts)</b> crée une matrice en utilisant les paramètres définis dans l'objet d'options d'importation <b>opts</b>. L'objet d'options d'importation permet de personnaliser la façon dont <b>readmatrix</b> interprète le fichier, offrant un meilleur contrôle, de meilleures performances et la possibilité de réutiliser la configuration comparé à la syntaxe par défaut.</p>
-        </div>
+    <p><b>M = readmatrix(filename)</b> crée une matrice en important des données orientées colonne depuis un fichier texte ou tableur.</p>
+    <p><b>M = readmatrix(filename, opts)</b> crée une matrice en utilisant les paramètres définis dans l'objet d'options d'importation<b>opts</b>. L'objet d'options d'importation permet de personnaliser la façon dont <b>readmatrix</b> interprète le fichier, offrant un meilleur contrôle, de meilleures performances et la possibilité de réutiliser la configuration comparé à la syntaxe par défaut.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">💡</span>Exemples</div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">filename = [tempdir,'readmatrix_1.csv'];
-Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
-Age = [28; 34; 22; 30];
-Height = [175; 160; 180; 165];
-Weight = [70; 55; 80; 60];
-T = table(Names, Age, Height, Weight);
-writetable(T, filename)
-M = readmatrix(filename)</code></pre>
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">  filename = [tempdir,'readmatrix_1.csv'];  Names = {'John'; 'Alice'; 'Bob'; 'Diana'};  Age = [28; 34; 22; 30];  Height = [175; 160; 180; 165];  Weight = [70; 55; 80; 60];  T = table(Names, Age, Height, Weight);  writetable(T, filename)  M = readmatrix(filename)  </code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 <div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
-<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">filename = [tempdir,'readmatrix_2.csv'];
-M = magic(6);
-writematrix(M, filename)
-options = detectImportOptions(filename)
-options.DataLines = [2 4];
-M2 = readmatrix(filename, options, 'OutputType', 'int64')
-M3 = readmatrix(filename, options, 'OutputType', 'char')</code></pre>
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">  filename = [tempdir,'readmatrix_2.csv'];  M = magic(6);  writematrix(M, filename)  options = detectImportOptions(filename)  options.DataLines = [2 4];  M2 = readmatrix(filename, options, 'OutputType', 'int64')  M3 = readmatrix(filename, options, 'OutputType', 'char')    </code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div></div>
 </div>

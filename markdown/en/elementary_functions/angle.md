@@ -16,7 +16,7 @@ Phase angle
 
 ## 📄 Description
 
-<b>angle</b> computes the phase angle, equivalent to <b>atan2(imag(Z), real(Z))</b>.
+<b>angle</b> computes the phase angle, equivalent to<b>atan2(imag(Z), real(Z))</b>.
 
 ## 💡 Example
 

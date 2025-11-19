@@ -24,29 +24,31 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Les fonctions anonymes offrent un moyen pratique de créer rapidement des fonctions simples sans avoir à créer un fichier M séparé à chaque fois.</p>
-        <p>Ces fonctions anonymes peuvent être définies directement dans la ligne de commande ou à l'intérieur d'une fonction ou d'un script M-file.</p>
-        <p>Pour créer une fonction anonyme à partir d'une expression, utilisez la syntaxe suivante :</p>
-        <p>function_handle = @(argument_list) expression</p>
-        <p>Dans cette syntaxe, <b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale.</p>
-        <p>Cette partie doit être une expression valide. Ensuite, <b>argument_list</b> est la liste d'arguments d'entrée séparés par des virgules passés à la fonction.</p>
-        <p>Ces composants correspondent au corps et à la liste d'arguments d'une fonction classique.</p>
-        <p>Au début de cette déclaration, on trouve le signe <b>@</b>.</p>
-        <p>Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function handle).</p>
-        <p>La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction.</p>
-        <p>Le signe <b>@</b> est requis dans la définition d'une fonction anonyme.</p>
-        <p>Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction.</p>
-        <p>La syntaxe pour créer un handle vers une fonction régulière est différente :</p>
-        <p>function_handle = @function_name</p>
-        <p>Par exemple : <b>f = @cos</b></p>
+    <p>Les fonctions anonymes offrent un moyen pratique de créer rapidement des fonctions simples sans avoir à créer un fichier M séparé à chaque fois.</p>
+    <p>Ces fonctions anonymes peuvent être définies directement dans la ligne de commande ou à l'intérieur d'une fonction ou d'un script M-file.</p>
+    <p>Pour créer une fonction anonyme à partir d'une expression, utilisez la syntaxe suivante :</p>
+    <p>function_handle = @(argument_list) expression</p>
+    <p>Dans cette syntaxe,<b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale.</p>
+    <p>Cette partie doit être une expression valide. Ensuite, <b>argument_list</b> est la liste d'arguments d'entrée séparés par des virgules passés à la fonction.</p>
+    <p>Ces composants correspondent au corps et à la liste d'arguments d'une fonction classique.</p>
+    <p>Au début de cette déclaration, on trouve le signe <b>@</b>.</p>
+    <p>Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function handle).</p>
+    <p>La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction.</p>
+    <p>Le signe<b>@</b> est requis dans la définition d'une fonction anonyme.</p>
+    <p>Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction.</p>
+    <p>La syntaxe pour créer un handle vers une fonction régulière est différente :</p>
+    <p>function_handle = @function_name</p>
+    <p>Par exemple : <b>f = @cos</b></p>
     <p>Vous pouvez enregistrer des function handles et leurs valeurs associées dans un fichier MAT.</p>
     <p>Plus tard, dans une autre session, vous pouvez les restaurer avec <b>save</b> et <b>load</b>.</p>
     <p>Par exemple : <b>a = 1; b = 2; f = @(x) a + b + x; save('test.nH5', f);</b></p>
     <p>Seuls les fichiers .nh5 permettent de sauvegarder et recharger correctement le type function_handle.</p>
     <p>Vous pouvez créer une fonction anonyme avec plusieurs arguments d'entrée, par exemple x et y.</p>
     <p>Si les variables A et B sont définies, vous pouvez définir :</p>
-    <p><b>A = 10; B = 100; r = @(x, y) (A*y + B*x);</b></p>
-</div>
+    <p>
+      <b>A = 10; B = 100; r = @(x, y) (A*y + B*x);</b>
+    </p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

@@ -14,7 +14,7 @@ Adds dynamically builtin at runtime.
 
 <b>addgateway(dyn_lib_path)</b> adds dynamically builtin at runtime.
 
-The dynamic library loaded must have at least an C entry point <b>AddGateway</b>.
+The dynamic library loaded must have at least an C entry point<b>AddGateway</b>.
 
 If gateway was already loaded, no error or warning will be raised.
 

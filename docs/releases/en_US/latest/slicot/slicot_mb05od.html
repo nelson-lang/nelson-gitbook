@@ -40,7 +40,7 @@
 </tr>
 <tr>
 <td class="param-name">NDIAG</td>
-<td>The specified order of the diagonal Pade approximant. In the absence of further information NDIAG should be set to 9.  NDIAG should not exceed 15.  NDIAG greater or equal than 1.</td>
+<td>The specified order of the diagonal Pade approximant. In the absence of further information NDIAG should be set to 9. NDIAG should not exceed 15. NDIAG greater or equal than 1.</td>
 </tr>
 <tr>
 <td class="param-name">DELTA</td>
@@ -62,7 +62,7 @@
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td> if INFO = 0, the leading N-by-N part of this array contains the solution matrix exp(A * delta).</td>
+<td>if INFO = 0, the leading N-by-N part of this array contains the solution matrix exp(A * delta).</td>
 </tr>
 <tr>
 <td class="param-name">MDIG</td>
@@ -74,11 +74,11 @@
 </tr>
 <tr>
 <td class="param-name">IWARN</td>
-<td> = 0:  no warning; = 1:  if MDIG = 0 and IDIG greater than 0, warning for possible inaccuracy (the exponential has been computed); = 2:  if MDIG = 0 and IDIG = 0, warning for severe inaccuracy (the exponential has been computed); = 3:  if balancing has been requested, but it failed to reduce the matrix norm and was not actually used.</td>
+<td>= 0: no warning; = 1: if MDIG = 0 and IDIG greater than 0, warning for possible inaccuracy (the exponential has been computed); = 2: if MDIG = 0 and IDIG = 0, warning for severe inaccuracy (the exponential has been computed); = 3: if balancing has been requested, but it failed to reduce the matrix norm and was not actually used.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>= 0:  successful exit; = 1:  if the norm of matrix A*delta (after a possible balancing) is too large to obtain an accurate result; = 2:  if the coefficient matrix (the denominator of the Pade approximant) is exactly singular; try a different value of NDIAG; = 3:  if the solution exponential would overflow, possibly due to a too large value DELTA; the calculations stopped prematurely. This error is not likely to appear.</td>
+<td>= 0: successful exit; = 1: if the norm of matrix A*delta (after a possible balancing) is too large to obtain an accurate result; = 2: if the coefficient matrix (the denominator of the Pade approximant) is exactly singular; try a different value of NDIAG; = 3: if the solution exponential would overflow, possibly due to a too large value DELTA; the calculations stopped prematurely. This error is not likely to appear.</td>
 </tr>
 </table>
 </div>
@@ -86,8 +86,8 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To compute exp(A*delta) where A is a real N-by-N matrix and delta is a scalar value. The routine also returns the minimal number of accurate digits in the 1-norm of exp(A*delta) and the number of accurate digits in the 1-norm of exp(A*delta) at 95% confidence level.</p>
-    </div>
+    <p>To compute exp(A*delta) where A is a real N-by-N matrix and delta is a scalar value. The routine also returns the minimal number of accurate digits in the 1-norm of exp(A*delta) and the number of accurate digits in the 1-norm of exp(A*delta) at 95% confidence level.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

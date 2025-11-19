@@ -1,7 +1,6 @@
 # Xml Processing
 
-The XML module provides functions to create, convert, and manage XML documents for
-Nelson.
+The XML module provides functions to create, convert, and manage XML documents for Nelson.
 
 ## Functions
 

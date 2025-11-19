@@ -22,7 +22,7 @@ Pseudocolor plot.
 
 ## 📄 Description
 
-<b>pcolor(C)</b> creates a pseudocolor plot of the data in the matrix <b>C</b>, where each cell or 'face' in the plot is colored according to the corresponding value in the matrix.
+<b>pcolor(C)</b> creates a pseudocolor plot of the data in the matrix<b>C</b>, where each cell or 'face' in the plot is colored according to the corresponding value in the matrix.
 
 The color of each face is determined by a colormap, which maps data values to colors.
 

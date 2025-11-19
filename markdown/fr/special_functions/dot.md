@@ -18,7 +18,7 @@ Produit scalaire.
 
 ## 📄 Description
 
-<b>R = dot(A, B)</b> retourne le produit scalaire de <b>A</b> et <b>B</b>.
+<b>R = dot(A, B)</b> retourne le produit scalaire de <b>A</b> et<b>B</b>.
 
 Pour les vecteurs réels
 $$\mathbf{a}$$

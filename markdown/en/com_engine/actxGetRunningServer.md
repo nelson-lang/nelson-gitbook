@@ -18,7 +18,7 @@ Handle to running instance of Automation server.
 
 <b>h = actxGetRunningServer(progid)</b> gets a reference to a running instance of the OLE/COM Automation server.
 
-<b>progid</b> is the programmatic identifier of the Automation server object and <b>h</b> is the handle to the default interface of the server object.
+<b>progid</b> is the programmatic identifier of the Automation server object and<b>h</b> is the handle to the default interface of the server object.
 
 The function returns an error if the server specified by progid is not currently running or if the server object is not registered.
 

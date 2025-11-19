@@ -21,7 +21,7 @@ Returns the number of input arguments.
 
 <b>nargin</b> returns the number of input arguments of an function.
 
-If the last input argument of the function is <b>varargin</b> the returned value is negative.
+If the last input argument of the function is<b>varargin</b> the returned value is negative.
 
 ## 💡 Examples
 

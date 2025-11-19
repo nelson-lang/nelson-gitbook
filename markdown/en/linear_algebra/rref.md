@@ -21,9 +21,9 @@ Gauss-Jordan elimination.
 
 ## 📄 Description
 
-<b>R = rref(A)</b> returns the reduced row echelon form of <b>A</b>.
+<b>R = rref(A)</b> returns the reduced row echelon form of<b>A</b>.
 
-<b>[R, p] = rref(A)</b> returns also the nonzero pivots <b>p</b>.
+<b>[R, p] = rref(A)</b> returns also the nonzero pivots<b>p</b>.
 
 ## 📚 Bibliography
 

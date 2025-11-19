@@ -21,7 +21,7 @@ Récupère les données d'image d'une image vidéo.
 
 <b>RGB = frame2im(F)</b> extrait l'image truecolor (RGB) de l'image vidéo <b>F</b>.
 
-<b>[X, map] = frame2im(F)</b> récupère l'image indexée <b>X</b> et sa palette de couleurs associée <b>map</b> à partir de l'image vidéo <b>F</b>.
+<b>[X, map] = frame2im(F)</b> récupère l'image indexée<b>X</b> et sa palette de couleurs associée<b>map</b> à partir de l'image vidéo <b>F</b>.
 
 ## 💡 Exemple
 

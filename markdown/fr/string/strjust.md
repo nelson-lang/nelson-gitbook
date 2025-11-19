@@ -18,7 +18,7 @@ Justifie les chaînes
 
 ## 📄 Description
 
-<b>J = strjust(str, side)</b> renvoie le texte justifié du côté spécifié par <b>side</b>.
+<b>J = strjust(str, side)</b> renvoie le texte justifié du côté spécifié par<b>side</b>.
 
 ## 💡 Exemples
 

@@ -19,7 +19,7 @@
 </head>
 <body>
 <a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">downsample</span></div></div>
-<div class="section syntax-section"><div class="subtitle"> Sous-échantillonner un signal par un facteur entier.</div></div>
+<div class="section syntax-section"><div class="subtitle">Sous-échantillonner un signal par un facteur entier.</div></div>
 <div class="section syntax-section">
 <div class="section-title">
 <span class="syntax-icon">📝</span>Syntaxe</div>
@@ -72,12 +72,9 @@ Y = downsample(X, n, phase, dim)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>La fonction <b>downsample</b> renvoie chaque n-ième échantillon de la séquence d'entrée X, en commençant à l'indice d'échantillon (phase + 1). Par exemple, <b>downsample(X, 2)</b> renvoie les échantillons d'indice impair de X (1,3,5,...). Si X est une matrice, l'opération est appliquée par colonne par défaut, sauf si une dimension est spécifiée.
-        </p>
-        <p>
-            Aucun filtrage anti-repliement n'est effectué ; si vous devez réduire le contenu haute fréquence avant la décimation, envisagez d'utiliser <b>decimate</b> ou d'appliquer d'abord un filtre passe-bas.
-        </p>
-        </div>
+    <p>La fonction<b>downsample</b> renvoie chaque n-ième échantillon de la séquence d'entrée X, en commençant à l'indice d'échantillon (phase + 1). Par exemple, <b>downsample(X, 2)</b> renvoie les échantillons d'indice impair de X (1,3,5,...). Si X est une matrice, l'opération est appliquée par colonne par défaut, sauf si une dimension est spécifiée.          </p>
+    <p>              Aucun filtrage anti-repliement n'est effectué ; si vous devez réduire le contenu haute fréquence avant la décimation, envisagez d'utiliser <b>decimate</b> ou d'appliquer d'abord un filtre passe-bas.          </p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

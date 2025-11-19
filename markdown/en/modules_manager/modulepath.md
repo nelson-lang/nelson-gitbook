@@ -20,7 +20,7 @@ Returns path of a module.
 
 <b>modulepath</b> is an helper's function to return module root path or a subdirectory.
 
-<b>modulepath('nelson')</b> is equivalent to <b>modulepath('nelson', 'root')</b>
+<b>modulepath('nelson')</b> is equivalent to<b>modulepath('nelson', 'root')</b>
 
 <b>modulepath('nelson', 'bin')</b> return path of nelson's executables.
 

@@ -19,7 +19,7 @@ Remove dictionary entries.
 
 <b>db = remove(da, key)</b> deletes the entry associated with the key from dictionary da.
 
-<b>d = remove(d, key)</b> is equivalent to <b>d[key] = []</b>.
+<b>d = remove(d, key)</b> is equivalent to<b>d[key] = []</b>.
 
 ## 💡 Example
 

@@ -25,7 +25,7 @@
 <span class="syntax-icon">📝</span>Syntax</div>
 <pre class="syntax-block"><code class="language-matlab">lsim(sys, u, t)
 lsim(sys, u, t, x0)
-[y, tOut, x]  = lsim(SYS, U, T, X0)
+[y, tOut, x] = lsim(SYS, U, T, X0)
 </code></pre>
 </div>
 <div class="section">
@@ -80,13 +80,13 @@ lsim(sys, u, t, x0)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The function <b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model <b>sys</b> to the input history (<b>t</b>, <b>u</b>).</p>
-        <p>The time samples for the simulation are specified by the vector <b>t</b>.</p>
-        <p>In the case of single-input systems, the input signal <b>u</b> is a vector with the same length as <b>t</b>.</p>
-        <p>For multi-input systems, <b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to <b>sys</b>.</p>
-        <p>An additional usage of the function is demonstrated by the example <b>lsim(sys, u, t, x0)</b>, where a vector <b>x0</b> is provided to specify initial state values.</p>
-        <p>This is particularly relevant when <b>sys</b> is a state-space model.</p>
-    </div>
+    <p>The function<b>lsim(sys, u, t)</b> generates a plot illustrating the simulated time response of the dynamic system model<b>sys</b> to the input history (<b>t</b>, <b>u</b>).</p>
+    <p>The time samples for the simulation are specified by the vector<b>t</b>.</p>
+    <p>In the case of single-input systems, the input signal<b>u</b> is a vector with the same length as <b>t</b>.</p>
+    <p>For multi-input systems,<b>u</b> is an array with rows corresponding to time samples (length(t)) and columns corresponding to inputs to<b>sys</b>.</p>
+    <p>An additional usage of the function is demonstrated by the example<b>lsim(sys, u, t, x0)</b>, where a vector<b>x0</b> is provided to specify initial state values.</p>
+    <p>This is particularly relevant when<b>sys</b> is a state-space model.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

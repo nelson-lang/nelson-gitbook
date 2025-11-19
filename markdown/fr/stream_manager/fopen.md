@@ -29,7 +29,7 @@ Ouvrir un fichier dans Nelson.
 
 <b>fopen</b> ouvre un fichier dans Nelson.
 
-Les fonctions <b>fprintf</b>, <b>fgetl</b>, <b>fgets</b>, <b>fread</b> et <b>fwrite</b> utilisent l'encodage des caractères défini pour les opérations de lecture/écriture suivantes.
+Les fonctions <b>fprintf</b>, <b>fgetl</b>, <b>fgets</b>,<b>fread</b> et<b>fwrite</b> utilisent l'encodage des caractères défini pour les opérations de lecture/écriture suivantes.
 
 ## 💡 Exemples
 

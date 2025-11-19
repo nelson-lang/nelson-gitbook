@@ -20,15 +20,15 @@ Lire un fichier de valeurs séparées par des virgules (CSV).
 
 ## 📄 Description
 
-<b>M = csvread(filename, R1, C1, [R1 C1 R2 C2])</b> lit uniquement les données dans la plage spécifiée par les décalages de lignes <b>R1</b> à <b>R2</b> et de colonnes <b>C1</b> à <b>C2</b>.
+<b>M = csvread(filename, R1, C1, [R1 C1 R2 C2])</b> lit uniquement les données dans la plage spécifiée par les décalages de lignes<b>R1</b> à <b>R2</b> et de colonnes <b>C1</b> à <b>C2</b>.
 
-<b>M = csvread(filename, R1, C1)</b> commence la lecture des données aux décalages de ligne et de colonne spécifiés par <b>R1</b> et <b>C1</b>. Par exemple, R1=0, C1=0 correspond à la première valeur du fichier.
+<b>M = csvread(filename, R1, C1)</b> commence la lecture des données aux décalages de ligne et de colonne spécifiés par<b>R1</b> et<b>C1</b>. Par exemple, R1=0, C1=0 correspond à la première valeur du fichier.
 
-Pour définir des décalages de ligne et de colonne sans définir un délimiteur, utilisez un caractère vide comme espace réservé, par exemple <b>M = csvread(filename, 3, 1)</b>.
+Pour définir des décalages de ligne et de colonne sans définir un délimiteur, utilisez un caractère vide comme espace réservé, par exemple<b>M = csvread(filename, 3, 1)</b>.
 
-<b>M = csvread(filename)</b> lit un fichier au format CSV (valeurs séparées par des virgules) dans la matrice <b>M</b>.
+<b>M = csvread(filename)</b> lit un fichier au format CSV (valeurs séparées par des virgules) dans la matrice<b>M</b>.
 
-Importation de nombres complexes : <b>csvread</b> lit chaque nombre complexe comme une unité unique et le stocke dans un champ numérique complexe.
+Importation de nombres complexes :<b>csvread</b> lit chaque nombre complexe comme une unité unique et le stocke dans un champ numérique complexe.
 
 Formes valides pour les nombres complexes :
 
@@ -37,15 +37,12 @@ Formes valides pour les nombres complexes :
 | ±real ± imag i\|j | 3.1347-2.1i |
 | ±imag i\|j        | -2.1j       |
 
-<b>Remarque</b> : les espaces à l'intérieur d'un nombre complexe ne sont pas autorisés ; <b>csvread</b> interprète tout espace comme un délimiteur de champ.
+<b>Remarque</b> : les espaces à l'intérieur d'un nombre complexe ne sont pas autorisés ;<b>csvread</b> interprète tout espace comme un délimiteur de champ.
 
 ## 💡 Exemple
 
 ```matlab
-A = [Inf, -Inf, NaN, 3];
-filename = [tempdir(), 'csvread_example.csv'];
-csvwrite(filename, A);
-R = csvread(filename)
+A = [Inf, -Inf, NaN, 3]; filename = [tempdir(), 'csvread_example.csv']; csvwrite(filename, A); R = csvread(filename)
 ```
 
 ## 🔗 Voir aussi

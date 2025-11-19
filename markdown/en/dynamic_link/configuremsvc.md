@@ -17,9 +17,9 @@ By default, Nelson has no C/C++ compiler defined as default on Windows.
 
 On others platforms, we will suppose that a C/C++ compiler is always available and it is not required to call this function.
 
-On Windows, you need to call once <b>configuremsvc</b> if you want to use visual studio as default compiler.
+On Windows, you need to call once<b>configuremsvc</b> if you want to use visual studio as default compiler.
 
-After each update of Visual studio, it will be required to call again <b>configuremsvc</b>.
+After each update of Visual studio, it will be required to call again<b>configuremsvc</b>.
 
 ## 💡 Example
 

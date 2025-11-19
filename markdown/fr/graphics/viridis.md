@@ -26,12 +26,10 @@ Carte de couleurs créée par Stéfan van der Walt et Nathaniel Smith
 ## 💡 Exemple
 
 ```matlab
-
 f = figure();
 surf(peaks);
 view(2);
 colormap('viridis');
-
 ```
 
 <img src="viridis.svg" align="middle"/>

@@ -14,7 +14,7 @@ Generates C MEX gateway (internal function).
 
 ## 📄 Description
 
-<b>dlgeneratemexgateway</b> generates a C MEX gateway used by <b>mex</b> (internal function).
+<b>dlgeneratemexgateway</b> generates a C MEX gateway used by<b>mex</b> (internal function).
 
 ## 🔗 See also
 

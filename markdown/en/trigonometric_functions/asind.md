@@ -16,7 +16,7 @@ Inverse sine in degrees.
 
 ## 📄 Description
 
-<b>asind</b> computes the inverse sine in degrees for each element of <b>x</b>.
+<b>asind</b> computes the inverse sine in degrees for each element of<b>x</b>.
 
 ## 💡 Example
 

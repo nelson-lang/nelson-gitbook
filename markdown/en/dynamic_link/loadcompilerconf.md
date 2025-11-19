@@ -14,7 +14,7 @@ load compiler configuration.
 
 ## 📄 Description
 
-<b>loadcompilerconf</b> returns true if compiler was previously configured with <b>configuremsvc</b> or <b>configuremingw</b>.
+<b>loadcompilerconf</b> returns true if compiler was previously configured with<b>configuremsvc</b> or <b>configuremingw</b>.
 
 <b>loadcompilerconf</b> returns always false on others platforms and 'unix' as compiler.
 

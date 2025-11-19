@@ -15,7 +15,7 @@ Détecter si un compilateur C/C++ est configuré
 
 <b>havecompiler</b> détecte si un compilateur C/C++ est configuré pour Nelson.
 
-Sur les plateformes Unix (Linux, MacOS), <b>havecompiler</b> renvoie toujours <b>true</b> et <b>unix</b> comme compilateur.
+Sur les plateformes Unix (Linux, MacOS),<b>havecompiler</b> renvoie toujours <b>true</b> et<b>unix</b> comme compilateur.
 
 ## 💡 Exemple
 

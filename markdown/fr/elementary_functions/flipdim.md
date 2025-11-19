@@ -17,9 +17,9 @@ Inverser un tableau selon une dimension spécifiée
 
 ## 📄 Description
 
-<b>flipdim</b> renvoie un nouveau tableau de <b>A</b> inversé selon la dimension <b>dim</b>.
+<b>flipdim</b> renvoie un nouveau tableau de<b>A</b> inversé selon la dimension <b>dim</b>.
 
-<b>flipdim</b> est similaire à <b>flip</b> et reste disponible pour compatibilité avec d'anciens scripts.
+<b>flipdim</b> est similaire à<b>flip</b> et reste disponible pour compatibilité avec d'anciens scripts.
 
 ## 💡 Exemple
 

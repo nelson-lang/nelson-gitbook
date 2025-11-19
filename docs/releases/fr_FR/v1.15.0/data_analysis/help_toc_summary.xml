@@ -4,10 +4,10 @@
     <module>data_analysis</module>
     <section name="Analyse de données">
       <chapter_description>
-       <p>Le module Analyse de données fournit des outils pour effectuer des opérations numériques et des analyses basées sur des tableaux dans Nelson.</p>
-       <p>Il prend en charge les opérations cumulatives, le tri, l'agrégation, la convolution et l'identification des valeurs uniques ou manquantes.</p>
-       <p>Ce module permet un traitement, un résumé et une exploration efficaces des jeux de données, facilitant un large éventail de tâches analytiques et computationnelles.</p>
-    </chapter_description>
+    <p>Le module Analyse de données fournit des outils pour effectuer des opérations numériques et des analyses basées sur des tableaux dans Nelson.</p>
+    <p>Il prend en charge les opérations cumulatives, le tri, l'agrégation, la convolution et l'identification des valeurs uniques ou manquantes.</p>
+    <p>Ce module permet un traitement, un résumé et une exploration efficaces des jeux de données, facilitant un large éventail de tâches analytiques et computationnelles.</p>
+  </chapter_description>
       <keyword name="conv" link="conv.html" description="Convolution et multiplication de polynômes."/>
       <keyword name="conv2" link="conv2.html" description="Convolution 2D."/>
       <keyword name="cumprod" link="cumprod.html" description="Produit cumulatif des éléments d'un tableau."/>

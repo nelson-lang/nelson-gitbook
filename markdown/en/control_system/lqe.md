@@ -24,7 +24,7 @@ Kalman estimator design for continuous-time systems.
 
 ## 📄 Description
 
-The function computes the optimal steady-state feedback gain matrix, denoted as <b>L</b>, minimizing a quadratic cost function for a linear discrete state-space system model.
+The function computes the optimal steady-state feedback gain matrix, denoted as<b>L</b>, minimizing a quadratic cost function for a linear discrete state-space system model.
 
 ## 💡 Example
 

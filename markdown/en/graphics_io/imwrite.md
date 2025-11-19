@@ -20,7 +20,7 @@ Write image to graphics file.
 
 ## 📄 Description
 
-<b>imwrite(A, filename)</b> writes image data <b>A</b> to the file specified by <b>filename</b>
+<b>imwrite(A, filename)</b> writes image data<b>A</b> to the file specified by <b>filename</b>
 
 Property name:
 

@@ -18,7 +18,7 @@ Intégration polynomiale.
 
 ## 📄 Description
 
-<b>polyint</b> renvoie l'intégrale du polynôme représenté par les coefficients de <b>p</b> en utilisant une constante d'intégration <b>k</b> (0 par défaut).
+<b>polyint</b> renvoie l'intégrale du polynôme représenté par les coefficients de<b>p</b> en utilisant une constante d'intégration <b>k</b> (0 par défaut).
 
 ## 💡 Exemple
 

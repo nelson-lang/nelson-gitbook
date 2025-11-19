@@ -68,85 +68,85 @@ R = fprintf(fid, format, v1, ... , vn)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Écrit des données au format texte dans le fichier spécifié par le descripteur de fichier fid.</p>
-        <p>L'encodage des caractères utilise le paramètre <b>fopen</b>.</p>
-        <p>Si fid vaut 1, la sortie est redirigée vers stdout.</p>
-        <p>Si fid vaut 2, la sortie est redirigée vers stderr.</p>
-        <p>Le paramètre <b>format</b> suit la syntaxe C de <b>fprintf</b>.</p>
-        <table style="width:100%">
-            <tr>
-                <th>Value type</th>
-                <th>format</th>
-                <th>comment</th>
-            </tr>
-            <tr>
-                <td>Integer</td>
-                <td>%i</td>
-                <td>base 10</td>
-            </tr>
-            <tr>
-                <td>Integer signed</td>
-                <td>%d</td>
-                <td>base 10</td>
-            </tr>
-            <tr>
-                <td>Integer unsigned</td>
-                <td>%u</td>
-                <td>base 10</td>
-            </tr>
-            <tr>
-                <td>Integer</td>
-                <td>%o</td>
-                <td>Octal (base 8)</td>
-            </tr>
-            <tr>
-                <td>Integer</td>
-                <td>%x</td>
-                <td>Hexadecimal (lowercase)</td>
-            </tr>
-            <tr>
-                <td>Integer</td>
-                <td>%X</td>
-                <td>Hexadecimal (uppercase)</td>
-            </tr>
-            <tr>
-                <td>Floating-point number</td>
-                <td>%f</td>
-                <td>Fixed-point notation</td>
-            </tr>
-            <tr>
-                <td>Floating-point number</td>
-                <td>%e</td>
-                <td>Exponential notation (lowercase)</td>
-            </tr>
-            <tr>
-                <td>Floating-point number</td>
-                <td>%E</td>
-                <td>Exponential notation (uppercase)</td>
-            </tr>
-            <tr>
-                <td>Floating-point number</td>
-                <td>%g</td>
-                <td>Exponential notation (compact format, lowercase)</td>
-            </tr>
-            <tr>
-                <td>Floating-point number</td>
-                <td>%G</td>
-                <td>Exponential notation (compact format, uppercase)</td>
-            </tr>
-            <tr>
-                <td>Character</td>
-                <td>%c</td>
-                <td>Single character</td>
-            </tr>
-            <tr>
-                <td>String</td>
-                <td>%s</td>
-                <td>Character vector.</td>
-            </tr>
-        </table>
-        <p>Pour afficher un signe pourcent, utilisez deux signes pourcent (%%) dans la chaîne de format.</p>
-    </div>
+    <p>Écrit des données au format texte dans le fichier spécifié par le descripteur de fichier fid.</p>
+    <p>L'encodage des caractères utilise le paramètre <b>fopen</b>.</p>
+    <p>Si fid vaut 1, la sortie est redirigée vers stdout.</p>
+    <p>Si fid vaut 2, la sortie est redirigée vers stderr.</p>
+    <p>Le paramètre <b>format</b> suit la syntaxe C de <b>fprintf</b>.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Value type</th>
+        <th>format</th>
+        <th>comment</th>
+      </tr>
+      <tr>
+        <td>Integer</td>
+        <td>%i</td>
+        <td>base 10</td>
+      </tr>
+      <tr>
+        <td>Integer signed</td>
+        <td>%d</td>
+        <td>base 10</td>
+      </tr>
+      <tr>
+        <td>Integer unsigned</td>
+        <td>%u</td>
+        <td>base 10</td>
+      </tr>
+      <tr>
+        <td>Integer</td>
+        <td>%o</td>
+        <td>Octal (base 8)</td>
+      </tr>
+      <tr>
+        <td>Integer</td>
+        <td>%x</td>
+        <td>Hexadecimal (lowercase)</td>
+      </tr>
+      <tr>
+        <td>Integer</td>
+        <td>%X</td>
+        <td>Hexadecimal (uppercase)</td>
+      </tr>
+      <tr>
+        <td>Floating-point number</td>
+        <td>%f</td>
+        <td>Fixed-point notation</td>
+      </tr>
+      <tr>
+        <td>Floating-point number</td>
+        <td>%e</td>
+        <td>Exponential notation (lowercase)</td>
+      </tr>
+      <tr>
+        <td>Floating-point number</td>
+        <td>%E</td>
+        <td>Exponential notation (uppercase)</td>
+      </tr>
+      <tr>
+        <td>Floating-point number</td>
+        <td>%g</td>
+        <td>Exponential notation (compact format, lowercase)</td>
+      </tr>
+      <tr>
+        <td>Floating-point number</td>
+        <td>%G</td>
+        <td>Exponential notation (compact format, uppercase)</td>
+      </tr>
+      <tr>
+        <td>Character</td>
+        <td>%c</td>
+        <td>Single character</td>
+      </tr>
+      <tr>
+        <td>String</td>
+        <td>%s</td>
+        <td>Character vector.</td>
+      </tr>
+    </table>
+    <p>Pour afficher un signe pourcent, utilisez deux signes pourcent (%%) dans la chaîne de format.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

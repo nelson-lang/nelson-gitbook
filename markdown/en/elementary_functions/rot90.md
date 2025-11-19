@@ -18,9 +18,9 @@ Rotate array 90 degrees.
 
 ## 📄 Description
 
-<b>B = rot90(A, k)</b> rotates array <b>A</b> counter clockwise by <b>k \* 90</b> degrees, with <b>k</b> is an integer value.
+<b>B = rot90(A, k)</b> rotates array<b>A</b> counter clockwise by <b>k \* 90</b> degrees, with<b>k</b> is an integer value.
 
-Consider <b>flip</b> function to flip arrays in any dimension.
+Consider<b>flip</b> function to flip arrays in any dimension.
 
 ## 💡 Example
 

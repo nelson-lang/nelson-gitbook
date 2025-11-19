@@ -25,7 +25,7 @@ Vérifie que la valeur se situe dans la plage spécifiée.
 
 <b>mustBeInRange</b> vérifie que la valeur se situe dans la plage spécifiée ou renvoie une erreur.
 
-La seule combinaison valide des indicateurs est <b>exclude-lower</b> avec <b>exclude-upper</b>.
+La seule combinaison valide des indicateurs est<b>exclude-lower</b> avec <b>exclude-upper</b>.
 
 ## 💡 Exemple
 

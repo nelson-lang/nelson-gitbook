@@ -24,17 +24,17 @@ Legacy pie chart.
 
 ## 📄 Description
 
-<b>pie(X)</b> generates a pie chart based on the data in the array variable <b>X</b>.
+<b>pie(X)</b> generates a pie chart based on the data in the array variable<b>X</b>.
 
-In cases where the sum of the elements in <b>X</b> is less than or equal to 1, the values in <b>X</b> directly represent the proportional areas of the pie slices.
+In cases where the sum of the elements in<b>X</b> is less than or equal to 1, the values in<b>X</b> directly represent the proportional areas of the pie slices.
 
-If the sum of <b>X</b> is less than 1, the pie chart displays only a partial pie.
+If the sum of<b>X</b> is less than 1, the pie chart displays only a partial pie.
 
-Alternatively, if the sum of <b>X</b> exceeds 1, the function normalizes the values by dividing each element by the sum of <b>X</b>.
+Alternatively, if the sum of<b>X</b> exceeds 1, the function normalizes the values by dividing each element by the sum of<b>X</b>.
 
 This normalization ensures that the pie chart accurately reflects the relative proportions of the data.
 
-In situations where <b>X</b> is a categorical variable, each slice of the pie corresponds to a category, and the area of each slice is determined by the ratio of the number of elements in the category to the total number of elements in <b>X</b>.
+In situations where<b>X</b> is a categorical variable, each slice of the pie corresponds to a category, and the area of each slice is determined by the ratio of the number of elements in the category to the total number of elements in<b>X</b>.
 
 ## 💡 Examples
 

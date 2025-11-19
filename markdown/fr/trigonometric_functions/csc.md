@@ -16,7 +16,7 @@ Cosécante d'un angle en radians.
 
 ## 📄 Description
 
-<b>csc</b> calcule la cosécante de l'argument en radians pour chaque élément de <b>x</b>.
+<b>csc</b> calcule la cosécante de l'argument en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

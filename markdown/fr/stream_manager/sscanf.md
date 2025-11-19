@@ -13,7 +13,7 @@ Lire des données formatées depuis des chaînes.
 ## 📥 Argument d'entrée
 
 - str - tableau de caractères ou scalaire de type string.
-- format - une chaîne décrivant le format utilisé par la fonction ; voir <b>fscanf</b> pour les formats supportés.
+- format - une chaîne décrivant le format utilisé par la fonction ; voir<b>fscanf</b> pour les formats supportés.
 - sizeR - dimensions souhaitées de R.
 
 ## 📤 Argument de sortie

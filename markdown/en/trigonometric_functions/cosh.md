@@ -16,7 +16,7 @@ Computes the hyperbolic cosine in radians for each element of x.
 
 ## 📄 Description
 
-<b>cosh</b> computes the hyperbolic cosine in radians for each element of <b>x</b>.
+<b>cosh</b> computes the hyperbolic cosine in radians for each element of<b>x</b>.
 
 ## 💡 Example
 

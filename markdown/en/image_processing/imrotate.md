@@ -21,7 +21,7 @@ Rotate image by specified angle
 
 ## 📄 Description
 
-The <b>imrotate</b> function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method.
+The<b>imrotate</b> function rotates an image by the specified angle around its center point. The rotation is performed using the specified interpolation method.
 
 The function supports various image formats including grayscale and RGB color images. The output image maintains the same data type as the input image.
 

@@ -18,11 +18,11 @@ Get bottom rows of table or array.
 
 ## 📄 Description
 
-<b>tail(A)</b> displays the last eight rows of an array, or table <b>A</b> in the Command Window without assigning it to a variable.
+<b>tail(A)</b> displays the last eight rows of an array, or table<b>A</b> in the Command Window without assigning it to a variable.
 
 <b>tail(A, k)</b> displays the last k rows of A.
 
-<b>B = tail(...)</b> returns the specified rows of <b>A</b> for any of the previous syntaxes, with <b>B</b> having the same data type as <b>A</b>.
+<b>B = tail(...)</b> returns the specified rows of<b>A</b> for any of the previous syntaxes, with<b>B</b> having the same data type as <b>A</b>.
 
 ## 💡 Examples
 

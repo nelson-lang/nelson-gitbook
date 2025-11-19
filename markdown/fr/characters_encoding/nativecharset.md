@@ -20,7 +20,7 @@ Trouve tous les jeux de caractères qui semblent cohérents avec l'entrée
 
 Les résultats sont ordonnés avec la meilleure correspondance de qualité en premier.
 
-Liste des jeux de caractères : https://www.iana.org/assignments/character-sets/character-sets.xhtml
+Liste des jeux de caractères :https://www.iana.org/assignments/character-sets/character-sets.xhtml
 
 ## 📚 Bibliographie
 

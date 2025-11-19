@@ -27,7 +27,7 @@ d = datenum(...) Convertit différents formats de date en numéro de date série
 
 <b>d = datenum(datevec)</b> convertit un vecteur date en numéro de date série.
 
-<b>d = datenum(datestr)</b> et <b>d = datenum(datestr, format)</b> convertissent une chaîne en numéro de date série.
+<b>d = datenum(datestr)</b> et<b>d = datenum(datestr, format)</b> convertissent une chaîne en numéro de date série.
 
 Formats de date/heure pris en charge :
 

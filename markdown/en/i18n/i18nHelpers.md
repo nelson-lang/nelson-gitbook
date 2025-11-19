@@ -21,11 +21,11 @@ Internationalization (i18n) utility functions
 
 <b>i18nHelpers</b> provides essential utility functions for managing internationalization files. The main functions include:
 
-- <b>'convert'</b>: Converts a .po/.pot translation template file into JSON format for easier manipulation.
+-<b>'convert'</b>: Converts a .po/.pot translation template file into JSON format for easier manipulation.
 
-- <b>'merge'</b>: Merges two JSON translation files. The entries from <code>jsonFile1</code> are added to <code>jsonFile2</code>, and entries exclusive to <code>jsonFile2</code> are removed.
+-<b>'merge'</b>: Merges two JSON translation files. The entries from<code>jsonFile1</code>are added to<code>jsonFile2</code>, and entries exclusive to<code>jsonFile2</code>are removed.
 
-- <b>'sort'</b>: Sorts and organizes entries in a JSON translation file. <code>jsonFileA</code> and <code>jsonFileB</code> may refer to the same file if in-place sorting is desired.
+-<b>'sort'</b>: Sorts and organizes entries in a JSON translation file.<code>jsonFileA</code>and<code>jsonFileB</code>may refer to the same file if in-place sorting is desired.
 
 This utility is intended for internal use and may be updated over time.
 

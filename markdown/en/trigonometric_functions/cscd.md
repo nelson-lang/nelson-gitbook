@@ -16,7 +16,7 @@ Cosecant of argument in degrees.
 
 ## 📄 Description
 
-<b>cscd</b> computes the cosecant of argument in degrees for each element of <b>x</b>.
+<b>cscd</b> computes the cosecant of argument in degrees for each element of<b>x</b>.
 
 ## 💡 Example
 

@@ -18,7 +18,7 @@ Trie les pôles en temps discret par magnitude.
 
 ## 📄 Description
 
-<b>dsort</b> organise les pôles en temps discret dans le vecteur <b>p</b> dans un ordre décroissant basé sur leur magnitude, les pôles instables prenant la priorité au début de la liste triée.
+<b>dsort</b> organise les pôles en temps discret dans le vecteur<b>p</b> dans un ordre décroissant basé sur leur magnitude, les pôles instables prenant la priorité au début de la liste triée.
 
 ## 💡 Exemple
 
@@ -29,7 +29,6 @@ p = [-2.410 + 5.573i;
 -0.972;
 -2.590];
 [s, ndx] = dsort(p)
-
 
 ```
 

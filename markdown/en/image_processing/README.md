@@ -1,7 +1,6 @@
 # Image Processing functions
 
-The Image Processing module provides basic operations for manipulating images, including
-format conversion, resizing, and rotation.
+The Image Processing module provides basic operations for manipulating images, including format conversion, resizing, and rotation.
 
 ## Functions
 

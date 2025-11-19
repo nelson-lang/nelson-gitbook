@@ -16,7 +16,7 @@ Arrêter une fonction s'exécutant en arrière-plan.
 
 Un Future annulé marque une erreur dans sa propriété d'état.
 
-Certaines fonctions ne peuvent pas être interrompues avec <b>Ctrl+C</b> ou <b>cancel</b>, comme la fonction <b>save</b>.
+Certaines fonctions ne peuvent pas être interrompues avec<b>Ctrl+C</b> ou <b>cancel</b>, comme la fonction <b>save</b>.
 
 ## 💡 Exemple
 

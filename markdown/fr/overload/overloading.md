@@ -14,7 +14,7 @@ Chaque opérateur intégré correspond à un nom de fonction spécifique (par ex
 
 Vous pouvez surcharger n'importe quel opérateur en créant un fichier M avec le nom approprié dans le répertoire de la classe.
 
-Par exemple, si <b>A</b> ou <b>B</b> est un objet de type <b>classname</b>, l'expression <b>A - B</b> déclenche un appel à la fonction <b>@classname/minus.m</b>, si elle existe.
+Par exemple, si <b>A</b> ou <b>B</b> est un objet de type<b>classname</b>, l'expression <b>A - B</b> déclenche un appel à la fonction <b>@classname/minus.m</b>, si elle existe.
 
 Lorsque <b>A</b> et <b>B</b> appartiennent à des classes différentes, Nelson applique des règles de précédence pour déterminer la méthode à utiliser.
 

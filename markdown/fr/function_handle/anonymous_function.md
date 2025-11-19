@@ -12,7 +12,7 @@ Pour créer une fonction anonyme à partir d'une expression, utilisez la syntaxe
 
 function_handle = @(argument_list) expression
 
-Dans cette syntaxe, <b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale.
+Dans cette syntaxe,<b>expression</b> représente le corps de la fonction, contenant le code qui réalise l'opération principale.
 
 Cette partie doit être une expression valide. Ensuite, <b>argument_list</b> est la liste d'arguments d'entrée séparés par des virgules passés à la fonction.
 
@@ -24,7 +24,7 @@ Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function
 
 La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction.
 
-Le signe <b>@</b> est requis dans la définition d'une fonction anonyme.
+Le signe<b>@</b> est requis dans la définition d'une fonction anonyme.
 
 Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction.
 
@@ -46,7 +46,7 @@ Vous pouvez créer une fonction anonyme avec plusieurs arguments d'entrée, par 
 
 Si les variables A et B sont définies, vous pouvez définir :
 
-<b>A = 10; B = 100; r = @(x, y) (A*y + B*x);</b>
+<b>A = 10; B = 100; r = @(x, y) (A\*y + B\*x);</b>
 
 ## 💡 Exemples
 

@@ -16,7 +16,7 @@ Returns a function handle from a string.
 
 ## 📄 Description
 
-<b>function_handle = str2func(str)</b> returns a function handle <b>function_handle</b> for the function named in the string <b>str</b>
+<b>function_handle = str2func(str)</b> returns a function handle<b>function_handle</b> for the function named in the string <b>str</b>
 
 <b>str</b> function name or representation of anonymous function.
 

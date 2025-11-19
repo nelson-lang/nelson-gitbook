@@ -28,7 +28,7 @@ Le profiling permet de mesurer où les fonctions Macro passent leur temps d'exé
 
 <b>profile('on')</b> démarre le profiler.
 
-<b>profile('off')</b> arrête le profiler. Les données collectées pourront être récupérées ultérieurement avec <b>p = profile('info')</b>.
+<b>profile('off')</b> arrête le profiler. Les données collectées pourront être récupérées ultérieurement avec<b>p = profile('info')</b>.
 
 <b>profile('clear')</b> efface les données collectées.
 

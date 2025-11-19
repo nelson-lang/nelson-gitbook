@@ -17,7 +17,7 @@ Flip order of elements
 
 ## 📄 Description
 
-<b>flip</b> return an new array of <b>A</b> flipped about the dimension <b>dim</b>.
+<b>flip</b> return an new array of<b>A</b> flipped about the dimension <b>dim</b>.
 
 ## 💡 Example
 

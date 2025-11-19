@@ -35,11 +35,11 @@ Maximum elements of an array.
 
 <b>max</b> find maximum values in an array.
 
-If <b>A</b> is a matrix then <b>M = max(A)</b> is a row vector containing the maximum value of each column.
+If <b>A</b> is a matrix then<b>M = max(A)</b> is a row vector containing the maximum value of each column.
 
-If <b>A</b> is a vector then <b>M = max(A)</b> will return the maximum of <b>A</b>.
+If <b>A</b> is a vector then<b>M = max(A)</b> will return the maximum of <b>A</b>.
 
-If <b>A</b> If A is complex number then <b>M = max(A)</b> will return founded complex number with the largest magnitude.
+If <b>A</b> If A is complex number then<b>M = max(A)</b> will return founded complex number with the largest magnitude.
 
 ## 💡 Example
 

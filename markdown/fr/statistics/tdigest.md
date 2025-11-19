@@ -33,7 +33,7 @@ Le t-digest est particulièrement utile pour :
 
 Le facteur de compression (100 dans les exemples) contrôle le compromis entre précision et utilisation de la mémoire - des valeurs plus élevées donnent plus de précision mais utilisent plus de mémoire.
 
-Une fois que vous avez un objet t-digest, vous pouvez ajouter de nouveaux points de données en utilisant l'opérateur <code>+</code>, et calculer des percentiles ou des quantiles en utilisant les méthodes <code>percentile</code> ou <code>quantile</code>.
+Une fois que vous avez un objet t-digest, vous pouvez ajouter de nouveaux points de données en utilisant l'opérateur<code>+</code>, et calculer des percentiles ou des quantiles en utilisant les méthodes<code>percentile</code>ou<code>quantile</code>.
 
 Pour plus de détails, consultez l'article original référencé dans la bibliographie.
 

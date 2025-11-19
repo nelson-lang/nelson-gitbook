@@ -49,18 +49,15 @@ go = plot(...)
 </tr>
 <tr>
 <td class="param-name">LineSpec</td>
-<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou
-                chaîne scalaire.</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caractères ou chaîne scalaire.</td>
 </tr>
 <tr>
 <td class="param-name">ax</td>
-<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme
-                axes.</td>
+<td>Valeur scalaire d'objet graphique : conteneur parent, spécifié comme                  axes.</td>
 </tr>
 <tr>
 <td class="param-name">propertyName</td>
-<td>Chaîne scalaire ou vecteur ligne de caractères. Voir l'aide de 'line'
-                pour la liste des propriétés.</td>
+<td>Chaîne scalaire ou vecteur ligne de caractères. Voir l'aide de 'line' pour la liste des propriétés.</td>
 </tr>
 <tr>
 <td class="param-name">propertyValue</td>
@@ -86,178 +83,170 @@ go = plot(...)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>plot(Y)</b> trace les colonnes de <b>Y</b> en fonction de leur indice. </p>
-        <p>
-            <b>plot(X, Y)</b> trace la courbe définie par la paire <b>X</b> et <b>Y</b>. </p>
-        <p>
-            <b>go = plot(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne. </p>
-        <p></p>
-        <p>
-            <b>LineSpec</b> est une chaîne utilisée pour modifier les caractéristiques de la ligne
-            et se compose de trois parties optionnelles dans n'importe quel ordre : </p>
-        <p></p>
-        <p>Le SymbolSpec spécifie le symbole à dessiner à chaque point de données :</p>
-        <p></p>
-        <table>
-            <tr>
-                <th>Symbole</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>'o'</b>
-                </td>
-                <td>Symbole cercle</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'x'</b>
-                </td>
-                <td>Symbole croix</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'+'</b>
-                </td>
-                <td>Symbole plus</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'*'</b>
-                </td>
-                <td>Symbole astérisque</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'.'</b>
-                </td>
-                <td>Symbole point</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'s'</b>
-                </td>
-                <td>Symbole carré</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'d'</b>
-                </td>
-                <td>Symbole losange</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'v'</b>
-                </td>
-                <td>Triangle pointe vers le bas</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'^'</b>
-                </td>
-                <td>Triangle pointe vers le haut</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'&lt;'</b>
-                </td>
-                <td>Triangle pointe vers la droite</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'&gt;'</b>
-                </td>
-                <td>Triangle pointe vers la gauche</td>
-            </tr>
-        </table>
-        <p></p>
-        <p>Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données :</p>
-        <p></p>
-        <table>
-            <tr>
-                <th>Style</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>'-'</b>
-                </td>
-                <td>Ligne continue</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'--'</b>
-                </td>
-                <td>Ligne pointillée</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'-.'</b>
-                </td>
-                <td>Ligne tiret-point</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>':'</b>
-                </td>
-                <td>Ligne en pointillés</td>
-            </tr>
-        </table>
-        <p></p>
-        <p>Le ColorSpec spécifie la couleur de ligne à utiliser pour chaque série de données :</p>
-        <p></p>
-        <table>
-            <tr>
-                <th>Couleur</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>'k'</b>
-                </td>
-                <td>Noir</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'y'</b>
-                </td>
-                <td>Jaune</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'m'</b>
-                </td>
-                <td>Magenta</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'c'</b>
-                </td>
-                <td>Cyan</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'r'</b>
-                </td>
-                <td>Rouge</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'b'</b>
-                </td>
-                <td>Bleu</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>'g'</b>
-                </td>
-                <td>Vert</td>
-            </tr>
-        </table>
-        <p></p>
-        <p>Voir <b>line</b> pour plus d'informations sur les propriétés.</p>
-    </div>
+    <p><b>plot(Y)</b> trace les colonnes de<b>Y</b> en fonction de leur indice.</p>
+    <p><b>plot(X, Y)</b> trace la courbe définie par la paire<b>X</b> et <b>Y</b>.</p>
+    <p><b>go = plot(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne. </p>
+    <p></p>
+    <p><b>LineSpec</b> est une chaîne utilisée pour modifier les caractéristiques de la ligne              et se compose de trois parties optionnelles dans n'importe quel ordre :</p>
+    <p></p>
+    <p>Le SymbolSpec spécifie le symbole à dessiner à chaque point de données :</p>
+    <table>
+      <tr>
+        <th>Symbole</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <b>'o'</b>
+        </td>
+        <td>Symbole cercle</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'x'</b>
+        </td>
+        <td>Symbole croix</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'+'</b>
+        </td>
+        <td>Symbole plus</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'*'</b>
+        </td>
+        <td>Symbole astérisque</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'.'</b>
+        </td>
+        <td>Symbole point</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'s'</b>
+        </td>
+        <td>Symbole carré</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'d'</b>
+        </td>
+        <td>Symbole losange</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'v'</b>
+        </td>
+        <td>Triangle pointe vers le bas</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'^'</b>
+        </td>
+        <td>Triangle pointe vers le haut</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'&lt;'</b>
+        </td>
+        <td>Triangle pointe vers la droite</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'&gt;'</b>
+        </td>
+        <td>Triangle pointe vers la gauche</td>
+      </tr>
+    </table>
+    <p></p>
+    <p>Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données :</p>
+    <table>
+      <tr>
+        <th>Style</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <b>'-'</b>
+        </td>
+        <td>Ligne continue</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'--'</b>
+        </td>
+        <td>Ligne pointillée</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'-.'</b>
+        </td>
+        <td>Ligne tiret-point</td>
+      </tr>
+      <tr>
+        <td>
+          <b>':'</b>
+        </td>
+        <td>Ligne en pointillés</td>
+      </tr>
+    </table>
+    <p></p>
+    <p>Le ColorSpec spécifie la couleur de ligne à utiliser pour chaque série de données :</p>
+    <table>
+      <tr>
+        <th>Couleur</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <b>'k'</b>
+        </td>
+        <td>Noir</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'y'</b>
+        </td>
+        <td>Jaune</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'m'</b>
+        </td>
+        <td>Magenta</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'c'</b>
+        </td>
+        <td>Cyan</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'r'</b>
+        </td>
+        <td>Rouge</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'b'</b>
+        </td>
+        <td>Bleu</td>
+      </tr>
+      <tr>
+        <td>
+          <b>'g'</b>
+        </td>
+        <td>Vert</td>
+      </tr>
+    </table>
+    <p></p>
+    <p>Voir <b>line</b> pour plus d'informations sur les propriétés.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

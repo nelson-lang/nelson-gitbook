@@ -19,7 +19,7 @@ Largeur de bande inférieure et supérieure d'une matrice.
 
 ## 📄 Description
 
-<b>[lower, upper] = bandwidth(A)</b> retourne les largeurs de bande inférieure <b>lower</b> et supérieure <b>upper</b> de la matrice <b>A</b>.
+<b>[lower, upper] = bandwidth(A)</b> retourne les largeurs de bande inférieure<b>lower</b> et supérieure <b>upper</b> de la matrice <b>A</b>.
 
 ## 💡 Exemple
 

@@ -21,11 +21,11 @@ Apply a function to each element of an array.
 
 ## 📄 Description
 
-<b>arrayfun(func, A)</b> applies the function <b>func</b> to each element of array <b>A</b>, and returns the result in <b>B</b> with the same size as <b>A</b>.
+<b>arrayfun(func, A)</b> applies the function<b>func</b> to each element of array <b>A</b>, and returns the result in<b>B</b> with the same size as <b>A</b>.
 
-<b>arrayfun(func, A1, ..., An)</b> applies <b>func</b> to corresponding elements of input arrays. All arrays must be the same size.
+<b>arrayfun(func, A1, ..., An)</b> applies<b>func</b> to corresponding elements of input arrays. All arrays must be the same size.
 
-Use the <b>'UniformOutput'</b> option set to <b>false</b> to allow output values that cannot be concatenated into a single array. In this case, the result is a cell array.
+Use the <b>'UniformOutput'</b> option set to<b>false</b> to allow output values that cannot be concatenated into a single array. In this case, the result is a cell array.
 
 <b>[B1, ..., Bm] = arrayfun(...)</b> captures multiple outputs from the applied function.
 

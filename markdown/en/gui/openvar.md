@@ -12,7 +12,7 @@ Open variable in the Variable Editor
 
 ## 📄 Description
 
-<b>openvar(varname)</b> opens the variable named <b>varname</b> in Nelson's Variable Editor for graphical inspection and editing.
+<b>openvar(varname)</b> opens the variable named<b>varname</b> in Nelson's Variable Editor for graphical inspection and editing.
 
 Any changes made to the variable within the editor are immediately applied to the workspace context.
 

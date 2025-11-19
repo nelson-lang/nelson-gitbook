@@ -1,10 +1,8 @@
 # Moteur Python
 
-Le module Moteur Python permet aux utilisateurs de Nelson d'interfacer de manière transparente avec Python,
-tirant parti de l'écosystème étendu de Python tout en conservant les fonctionnalités natives de Nelson.
+Le module Moteur Python permet aux utilisateurs de Nelson d'interfacer de manière transparente avec Python, tirant parti de l'écosystème étendu de Python tout en conservant les fonctionnalités natives de Nelson.
 
-Il fournit des fonctions pour exécuter du code Python, gérer les environnements d'interpréteur et échanger
-des données entre Nelson et Python.
+Il fournit des fonctions pour exécuter du code Python, gérer les environnements d'interpréteur et échanger des données entre Nelson et Python.
 
 ## Functions
 

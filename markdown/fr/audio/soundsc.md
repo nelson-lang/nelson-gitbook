@@ -18,7 +18,7 @@ Met à l'échelle les données et joue comme son.
 
 ## 📄 Description
 
-<b>soundsc</b> met à l'échelle les valeurs du signal audio <b>y </b> pour s'adapter à la plage de <b>–1.0</b> à <b>1.0</b> et joue comme son.
+<b>soundsc</b> met à l'échelle les valeurs du signal audio <b>y </b> pour s'adapter à la plage de <b>–1.0</b> à<b>1.0</b> et joue comme son.
 
 ## 💡 Exemple
 

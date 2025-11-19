@@ -46,7 +46,6 @@ end
 if MPI_Initialized()
   MPI_Finalize();
 end
-
 ```
 
 ## 🔗 See also

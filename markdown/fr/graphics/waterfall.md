@@ -32,7 +32,7 @@ graphique en cascade.
 
 Cela donne un effet de 'cascade'.
 
-La fonction prend les mêmes arguments d'entrée que la fonction <b>mesh</b>.
+La fonction prend les mêmes arguments d'entrée que la fonction<b>mesh</b>.
 
 ## 💡 Exemples
 

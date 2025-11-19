@@ -68,32 +68,25 @@ mex('-client', 'engine', 'filenames', api, option1, ..., optionN)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Pour utiliser mex, un compilateur C/C++ doit être disponible et configuré. Voir la section « Supported C/C++ compilers » pour plus d'informations.</p>
-        <p>Nelson inclut une interface permettant de compiler et d'éditer des fichiers mex hérités avec Nelson.</p>
-        <p>Un fichier mex est un type de fichier qui fournit une interface entre Octave ou le logiciel commercial de référence et des fonctions écrites en C, C++.</p>
-        <p>Nelson dispose également de sa propre API C++ pour gérer plus facilement les objets internes de Nelson.</p>
-        <p></p>
-        <p>MACRO C PRÉDÉFINIE :</p>
-        <p>
-            <b>MX_IS_NELSON</b> : la macro est définie pour détecter facilement si Nelson est utilisé dans le code C.</p>
-            <p>
-                <b>MX_HAS_INTERLEAVED_COMPLEX</b> : la macro est définie si l'API C MEX utilisée est '-R2018a'.</p>
-                <p></p>
-                <p>Options prises en charge : compilation ou édition de liens.</p>
-                <p>
-                    <b>CFLAGS=</b>
-                </p>
-                <p>
-                    <b>-D</b> L'option -D définit une macro du préprocesseur C.</p>
-                    <p>
-                        <b>-U</b> L'option -U annule la définition d'une macro du préprocesseur C</p>
-                        <p>
-                            <b>-I</b> Ajoute un chemin à la liste des dossiers recherchés pour les fichiers #include.</p>
-                            <p>
-                                <b>-l</b> Lie avec une bibliothèque dynamique .lib, .so ou .dylib.</p>
-                                <p>
-                                    <b>-g</b> Utilisé pour le débogage (configuration Debug).</p>
-                                </div>
+    <p>Pour utiliser mex, un compilateur C/C++ doit être disponible et configuré. Voir la section « Supported C/C++ compilers » pour plus d'informations.</p>
+    <p>Nelson inclut une interface permettant de compiler et d'éditer des fichiers mex hérités avec Nelson.</p>
+    <p>Un fichier mex est un type de fichier qui fournit une interface entre Octave ou le logiciel commercial de référence et des fonctions écrites en C, C++.</p>
+    <p>Nelson dispose également de sa propre API C++ pour gérer plus facilement les objets internes de Nelson.</p>
+    <p></p>
+    <p>MACRO C PRÉDÉFINIE :</p>
+    <p><b>MX_IS_NELSON</b> : la macro est définie pour détecter facilement si Nelson est utilisé dans le code C.</p>
+    <p><b>MX_HAS_INTERLEAVED_COMPLEX</b> : la macro est définie si l'API C MEX utilisée est '-R2018a'.</p>
+    <p></p>
+    <p>Options prises en charge : compilation ou édition de liens.</p>
+    <p>
+      <b>CFLAGS=</b>
+    </p>
+    <p><b>-D</b> L'option -D définit une macro du préprocesseur C.</p>
+    <p><b>-U</b> L'option -U annule la définition d'une macro du préprocesseur C</p>
+    <p><b>-I</b> Ajoute un chemin à la liste des dossiers recherchés pour les fichiers #include.</p>
+    <p><b>-l</b> Lie avec une bibliothèque dynamique .lib, .so ou .dylib.</p>
+    <p><b>-g</b> Utilisé pour le débogage (configuration Debug).</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

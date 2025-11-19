@@ -25,36 +25,30 @@ Ligne de visée de la caméra.
 ## 💡 Exemples
 
 ```matlab
-
 f = figure();
 [X,Y] = meshgrid(-6:.5:6);
 Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
-
 ```
 
 <img src="view_1.svg" align="middle"/>
 
 ```matlab
-
 f = figure();
 [X,Y] = meshgrid(-6:.5:6);
 Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 view(90, 0)
-
 ```
 
 <img src="view_2.svg" align="middle"/>
 
 ```matlab
-
 f = figure();
 [X,Y] = meshgrid(-6:.5:6);
 Z = Y .* sin(X) - X .* cos(Y);
 surf(X, Y, Z)
 view(2)
-
 ```
 
 <img src="view_3.svg" align="middle"/>

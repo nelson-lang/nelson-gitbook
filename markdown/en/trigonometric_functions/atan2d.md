@@ -17,7 +17,7 @@ Four-quadrant inverse tangent in degrees.
 
 ## 📄 Description
 
-<b>d = atan2d(y, x)</b> returns the four-quadrant inverse tangent (tan-1) of <b>y</b> and <b>x</b>, which must be real.
+<b>d = atan2d(y, x)</b> returns the four-quadrant inverse tangent (tan-1) of<b>y</b> and <b>x</b>, which must be real.
 
 ## 💡 Example
 

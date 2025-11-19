@@ -14,7 +14,7 @@ get current figure graphics object.
 
 <b>cf = gcf()</b> returns the current figure graphics object.
 
-If a figure does not exist, <b>gcf()</b> creates a figure and returns its graphics object.
+If a figure does not exist,<b>gcf()</b> creates a figure and returns its graphics object.
 
 ## 💡 Example
 

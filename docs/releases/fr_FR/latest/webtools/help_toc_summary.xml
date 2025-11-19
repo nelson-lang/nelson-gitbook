@@ -4,8 +4,8 @@
     <module>webtools</module>
     <section name="Web tools">
       <chapter_description>
-        <p>Le module WebTools fournit des fonctions pour interagir avec des ressources web, transférer des données via des URLs et travailler avec des services web RESTful.</p>
-    </chapter_description>
+    <p>Le module WebTools fournit des fonctions pour interagir avec des ressources web, transférer des données via des URLs et travailler avec des services web RESTful.</p>
+  </chapter_description>
       <keyword name="checkupdate" link="checkupdate.html" description="Vérifier la mise à jour de l'application Nelson"/>
       <keyword name="repo" link="repo.html" description="Outil de gestion de dépôt Git pour Nelson"/>
       <keyword name="urlencode" link="urlencode.html" description="Remplacer les caractères spéciaux dans les URLs par des séquences d'échappement."/>

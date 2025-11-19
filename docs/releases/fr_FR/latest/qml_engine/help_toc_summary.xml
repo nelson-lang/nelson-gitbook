@@ -4,9 +4,9 @@
     <module>qml_engine</module>
     <section name="Moteur QML">
       <chapter_description>
-        <p>Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.</p>
-        <p>Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.</p>
-    </chapter_description>
+    <p>Le module Moteur QML permet aux programmes Nelson d'afficher, manipuler et interagir avec du contenu graphique en utilisant le framework QML de Qt.</p>
+    <p>Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt et intégrer la logique JavaScript et QML.</p>
+  </chapter_description>
       <keyword name="QObject_classname" link="QObject_classname.html" description="Renvoie le nom de classe d'une poignée (handle) QObject."/>
       <keyword name="QObject_findchildren" link="QObject_findchildren.html" description="Renvoie tous les enfants de cet objet ayant le nom donné."/>
       <keyword name="QObject_get" link="QObject_get.html" description="Récupère la valeur d'une propriété d'une poignée (handle) QObject."/>

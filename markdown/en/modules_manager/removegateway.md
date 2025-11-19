@@ -14,7 +14,7 @@ Removes dynamically builtin at runtime.
 
 <b>removegateway(dyn_lib_path)</b> removes dynamically builtin at runtime.
 
-The dynamic library loaded must have at least an C entry point <b>RemoveGateway</b>.
+The dynamic library loaded must have at least an C entry point<b>RemoveGateway</b>.
 
 If gateway was not loaded, no error or warning will be raised. If file does not exist an error is raised.
 

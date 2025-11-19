@@ -12,7 +12,7 @@ Convert an object to an index vector.
 
 ## 📄 Description
 
-If <b>O</b> is an object then <b>subsindex</b> is the overloading method that allows to convert this object to a valid indexing vector.
+If <b>O</b> is an object then<b>subsindex</b> is the overloading method that allows to convert this object to a valid indexing vector.
 
 ## 🕔 History
 

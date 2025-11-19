@@ -16,7 +16,7 @@ Returns if a variable is a cell of strings.
 
 ## 📄 Description
 
-<b>iscellstr(A)</b> returns true if <b>A</b> is a cell of strings or an empty cell).
+<b>iscellstr(A)</b> returns true if<b>A</b> is a cell of strings or an empty cell).
 
 ## 💡 Examples
 

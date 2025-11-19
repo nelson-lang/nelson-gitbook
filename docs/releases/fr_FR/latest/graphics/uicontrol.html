@@ -74,90 +74,50 @@ uicontrol(c)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>c = uicontrol</b> crée un bouton poussoir, qui est le contrôle d'interface utilisateur par défaut, dans la figure actuelle et retourne l'objet uicontrol associé. Si aucune figure n'est actuellement ouverte, Nelson en génère une à l'aide de la fonction figure.</p>
-        <p>
-            <b>c = uicontrol(propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur avec des propriétés définies par un ou plusieurs arguments nom-valeur. Par exemple, spécifier 'Style', 'button' créera un bouton.</p>
-        <p>
-            <b>c = uicontrol(parent)</b> crée le contrôle d'interface utilisateur par défaut (bouton poussoir) dans le conteneur parent spécifié, au lieu de se baser sur la figure actuelle.</p>
-        <p>
-            <b>c = uicontrol(parent, propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur dans le conteneur parent spécifié, permettant de définir ses propriétés à l'aide d'un ou plusieurs arguments nom-valeur.</p>
-        <p>
-            <b>uicontrol(c)</b> met le focus sur un contrôle d'interface utilisateur précédemment défini, le plaçant au premier plan pour l'interaction utilisateur.</p>
-        <p></p>
-        <p>Liste des propriétés :</p>
-        <p></p>
-        <p>
-            <b>BackgroundColor</b> : Couleur de l'arrière-plan, spécifiée comme un triplet RGB, un code couleur hexadécimal ou un nom de couleur valide.</p>
-        <p>
-            <b>BeingDeleted</b> : Statut de suppression. Valeur logique on/off.</p>
-        <p>
-            <b>BusyAction</b> : Mise en file d'attente des callbacks spécifiée comme 'queue' (par défaut) ou 'cancel'. Cette propriété détermine comment Nelson gère l'exécution des callbacks interrompus.</p>
-        <p>
-            <b>ButtonDownFcn</b> : Fonction de callback pour l'appui sur un bouton.</p>
-        <p>
-            <b>CData</b> : Une icône optionnelle peut être spécifiée comme un tableau 3D de valeurs RGB en vraies couleurs. Les valeurs du tableau peuvent être : des nombres en double précision allant de 0.0 à 1.0, ou des nombres uint8 allant de 0 à 255.</p>
-        <p>
-            <b>Callback</b> : Fonction de callback principale : '' (par défaut), handle de fonction, tableau de cellules ou vecteur de caractères.</p>
-        <p>
-            <b>Children</b> : Enfants de l'UIControl : tableau vide.</p>
-        <p>
-            <b>CreateFcn</b> : Fonction de création du composant.</p>
-        <p>
-            <b>DeleteFcn</b> : Fonction de suppression du composant.</p>
-        <p>
-            <b>Enable</b> : État opérationnel du contrôle d'interface utilisateur.</p>
-        <p>
-            <b>FontAngle</b> : Angle de la police : 'italic' ou 'normal' (par défaut).</p>
-        <p>
-            <b>FontName</b> : Nom de la police : nom de police pris en charge par le système.</p>
-        <p>
-            <b>FontSize</b> : Taille de la police : nombre positif.</p>
-        <p>
-            <b>FontUnits</b> : Unités de la police : 'normalized', 'inches', 'centimeters', 'pixels' ou 'points' (par défaut).</p>
-        <p>
-            <b>FontWeight</b> : Épaisseur de la police : 'bold' ou 'normal' (par défaut).</p>
-        <p>
-            <b>ForeGround</b> : Couleur du texte, spécifiée comme un triplet RGB, un code couleur hexadécimal ou un nom de couleur valide.</p>
-        <p>
-            <b>HandleVisibility</b> : Visibilité du handle de l'UIControl.</p>
-        <p>
-            <b>HorizontalAlignment</b> : Alignement du texte de l'uicontrol : 'left', 'right' ou 'center' (par défaut).</p>
-        <p>
-            <b>Interruptible</b> : Interruption des callbacks : 'on' (par défaut).</p>
-        <p>
-            <b>KeyPressFcn</b> : Fonction de callback pour l'appui sur une touche.</p>
-        <p>
-            <b>KeyReleaseFcn</b> : Fonction de callback pour le relâchement d'une touche.</p>
-        <p>
-            <b>ListboxTop</b> : Index de l'élément supérieur dans la liste : valeur entière ou 1 (par défaut).</p>
-        <p>
-            <b>Max</b> : Valeur maximale : nombre ou 1 (par défaut).</p>
-        <p>
-            <b>Min</b> : Valeur minimale : nombre ou 0 (par défaut).</p>
-        <p>
-            <b>Parent</b> : Objet parent : Figure.</p>
-        <p>
-            <b>Position</b> : Emplacement et taille : [gauche bas largeur hauteur].</p>
-        <p>
-            <b>SliderStep</b> : Taille des étapes du curseur : [minorstep majorstep] ou [0.01 0.10] (par défaut).</p>
-        <p>
-            <b>String</b> : Texte à afficher : vecteur de caractères, tableau de cellules de vecteurs de caractères ou tableau de chaînes.</p>
-        <p>
-            <b>Style</b> : 'pushbutton' (par défaut), 'togglebutton', 'checkbox', 'radiobutton', 'edit', 'text', 'slider'.</p>
-        <p>
-            <b>Tooltip</b> : Infobulle : vecteur de caractères ou chaîne scalaire.</p>
-        <p>
-            <b>Type</b> : 'uicontrol'</p>
-        <p>
-            <b>Units</b> : Unités de mesure : 'pixels' (par défaut), 'normalized', 'centimeters', 'inches' ou 'points'.</p>
-        <p>
-            <b>UserData</b> : Tableau de données utilisateur ou [] (par défaut).</p>
-        <p>
-            <b>Value</b> : Valeur actuelle : nombre</p>
-        <p>
-            <b>Visible</b> : État de visibilité : 'on' (par défaut).</p>
-    </div>
+    <p><b>c = uicontrol</b> crée un bouton poussoir, qui est le contrôle d'interface utilisateur par défaut, dans la figure actuelle et retourne l'objet uicontrol associé. Si aucune figure n'est actuellement ouverte, Nelson en génère une à l'aide de la fonction figure.</p>
+    <p><b>c = uicontrol(propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur avec des propriétés définies par un ou plusieurs arguments nom-valeur. Par exemple, spécifier 'Style', 'button' créera un bouton.</p>
+    <p><b>c = uicontrol(parent)</b> crée le contrôle d'interface utilisateur par défaut (bouton poussoir) dans le conteneur parent spécifié, au lieu de se baser sur la figure actuelle.</p>
+    <p><b>c = uicontrol(parent, propertyName, propertyValue)</b> crée un contrôle d'interface utilisateur dans le conteneur parent spécifié, permettant de définir ses propriétés à l'aide d'un ou plusieurs arguments nom-valeur.</p>
+    <p><b>uicontrol(c)</b> met le focus sur un contrôle d'interface utilisateur précédemment défini, le plaçant au premier plan pour l'interaction utilisateur.</p>
+    <p></p>
+    <p>Liste des propriétés :</p>
+    <p></p>
+    <p><b>BackgroundColor</b> : Couleur de l'arrière-plan, spécifiée comme un triplet RGB, un code couleur hexadécimal ou un nom de couleur valide.</p>
+    <p><b>BeingDeleted</b> : Statut de suppression. Valeur logique on/off.</p>
+    <p><b>BusyAction</b> : Mise en file d'attente des callbacks spécifiée comme 'queue' (par défaut) ou 'cancel'. Cette propriété détermine comment Nelson gère l'exécution des callbacks interrompus.</p>
+    <p><b>ButtonDownFcn</b> : Fonction de callback pour l'appui sur un bouton.</p>
+    <p><b>CData</b> : Une icône optionnelle peut être spécifiée comme un tableau 3D de valeurs RGB en vraies couleurs. Les valeurs du tableau peuvent être : des nombres en double précision allant de 0.0 à 1.0, ou des nombres uint8 allant de 0 à 255.</p>
+    <p><b>Callback</b> : Fonction de callback principale : '' (par défaut), handle de fonction, tableau de cellules ou vecteur de caractères.</p>
+    <p><b>Children</b> : Enfants de l'UIControl : tableau vide.</p>
+    <p><b>CreateFcn</b> : Fonction de création du composant.</p>
+    <p><b>DeleteFcn</b> : Fonction de suppression du composant.</p>
+    <p><b>Enable</b> : État opérationnel du contrôle d'interface utilisateur.</p>
+    <p><b>FontAngle</b> : Angle de la police : 'italic' ou 'normal' (par défaut).</p>
+    <p><b>FontName</b> : Nom de la police : nom de police pris en charge par le système.</p>
+    <p><b>FontSize</b> : Taille de la police : nombre positif.</p>
+    <p><b>FontUnits</b> : Unités de la police : 'normalized', 'inches', 'centimeters', 'pixels' ou 'points' (par défaut).</p>
+    <p><b>FontWeight</b> : Épaisseur de la police : 'bold' ou 'normal' (par défaut).</p>
+    <p><b>ForeGround</b> : Couleur du texte, spécifiée comme un triplet RGB, un code couleur hexadécimal ou un nom de couleur valide.</p>
+    <p><b>HandleVisibility</b> : Visibilité du handle de l'UIControl.</p>
+    <p><b>HorizontalAlignment</b> : Alignement du texte de l'uicontrol : 'left', 'right' ou 'center' (par défaut).</p>
+    <p><b>Interruptible</b> : Interruption des callbacks : 'on' (par défaut).</p>
+    <p><b>KeyPressFcn</b> : Fonction de callback pour l'appui sur une touche.</p>
+    <p><b>KeyReleaseFcn</b> : Fonction de callback pour le relâchement d'une touche.</p>
+    <p><b>ListboxTop</b> : Index de l'élément supérieur dans la liste : valeur entière ou 1 (par défaut).</p>
+    <p><b>Max</b> : Valeur maximale : nombre ou 1 (par défaut).</p>
+    <p><b>Min</b> : Valeur minimale : nombre ou 0 (par défaut).</p>
+    <p><b>Parent</b> : Objet parent : Figure.</p>
+    <p><b>Position</b> : Emplacement et taille : [gauche bas largeur hauteur].</p>
+    <p><b>SliderStep</b> : Taille des étapes du curseur : [minorstep majorstep] ou [0.01 0.10] (par défaut).</p>
+    <p><b>String</b> : Texte à afficher : vecteur de caractères, tableau de cellules de vecteurs de caractères ou tableau de chaînes.</p>
+    <p><b>Style</b> : 'pushbutton' (par défaut), 'togglebutton', 'checkbox', 'radiobutton', 'edit', 'text', 'slider'.</p>
+    <p><b>Tooltip</b> : Infobulle : vecteur de caractères ou chaîne scalaire.</p>
+    <p><b>Type</b> : 'uicontrol'</p>
+    <p><b>Units</b> : Unités de mesure : 'pixels' (par défaut), 'normalized', 'centimeters', 'inches' ou 'points'.</p>
+    <p><b>UserData</b> : Tableau de données utilisateur ou [] (par défaut).</p>
+    <p><b>Value</b> : Valeur actuelle : nombre</p>
+    <p><b>Visible</b> : État de visibilité : 'on' (par défaut).</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

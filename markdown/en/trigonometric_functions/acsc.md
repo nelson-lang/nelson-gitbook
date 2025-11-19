@@ -16,7 +16,7 @@ Inverse cosecant in radians.
 
 ## 📄 Description
 
-<b>acsc</b> computes the inverse cosecant of argument in radians for each element of <b>x</b>.
+<b>acsc</b> computes the inverse cosecant of argument in radians for each element of<b>x</b>.
 
 ## 💡 Example
 

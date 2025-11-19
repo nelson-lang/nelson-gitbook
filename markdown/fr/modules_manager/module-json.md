@@ -32,7 +32,7 @@ autres plateformes :
 
 "glnxa32" : Linux 32 bits
 
-exemple : <b>["win64", "glnxa64"]</b>, le module ne sera disponible que sur Windows et Linux 64 bits.
+exemple :<b>["win64", "glnxa64"]</b>, le module ne sera disponible que sur Windows et Linux 64 bits.
 
 <b>nelson</b>: versions de Nelson supportées, exemple : "<2.0.0" (par défaut)
 
@@ -52,7 +52,7 @@ Exemple :
 
 }
 
-<b>homepage</b>: page d'accueil du module, exemple "https://github.com/nelson-lang/module_skeleton_basic"
+<b>homepage</b>: page d'accueil du module, exemple "https://github.com/nelson-lang/module\_skeleton\_basic"
 
 <b>description</b>: description complète du module, format Markdown supporté, exemple : "nelson's module skeleton (macros only)"
 
@@ -78,8 +78,7 @@ Exemple :
 
 ## 💡 Exemple
 
-Déployer les templates module_skeleton et
-module_skeleton_basic
+Déployer les templates module_skeleton et module_skeleton_basic
 
 ```matlab
 if ~ismodule('module_skeleton_basic')

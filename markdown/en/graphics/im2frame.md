@@ -20,11 +20,11 @@ Convert image to movie frame.
 
 ## 📄 Description
 
-<b>F = im2frame(RGB)</b> converts the truecolor image <b>RGB</b> into a movie frame <b>F</b>.
+<b>F = im2frame(RGB)</b> converts the truecolor image<b>RGB</b> into a movie frame <b>F</b>.
 
-<b>F = im2frame(X, map)</b> converts the indexed image <b>X</b> along with its colormap map into a movie frame <b>F</b>.
+<b>F = im2frame(X, map)</b> converts the indexed image<b>X</b> along with its colormap map into a movie frame <b>F</b>.
 
-<b>F = im2frame(X)</b> converts the indexed image <b>X</b> into a movie frame <b>F</b>, using the current colormap.
+<b>F = im2frame(X)</b> converts the indexed image<b>X</b> into a movie frame <b>F</b>, using the current colormap.
 
 ## 💡 Example
 

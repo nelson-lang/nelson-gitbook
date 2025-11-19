@@ -19,7 +19,7 @@ checks if string ends with pattern.
 
 ## 📄 Description
 
-<b>endsWith</b> renvoie <b>vrai</b> si <b>str</b> se termine par <b>pattern</b>.
+<b>endsWith</b> renvoie <b>vrai</b> si <b>str</b> se termine par<b>pattern</b>.
 
 ## 💡 Exemple
 

@@ -22,7 +22,7 @@ Converts numbers to character array.
 
 <b>num2str</b> converts numbers to character array.
 
-<b>num2str</b> trims any leading spaces from a character array. For better control over the results, use <b>sprintf</b>.
+<b>num2str</b> trims any leading spaces from a character array. For better control over the results, use<b>sprintf</b>.
 
 ## 💡 Example
 

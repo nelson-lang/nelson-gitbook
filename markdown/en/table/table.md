@@ -33,7 +33,7 @@ To access data in a table, use the following methods:
 
 - Parentheses (T(rows, vars)) to return a subset of the table.
 
-<b>T = table(var1, ..., varN)</b> creates a table from the specified input variables <b>var1,...,varN</b>.
+<b>T = table(var1, ..., varN)</b> creates a table from the specified input variables<b>var1,...,varN</b>.
 
 The variables can vary in size and data type, but they must all have the same number of rows.
 

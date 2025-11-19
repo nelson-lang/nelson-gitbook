@@ -16,7 +16,7 @@ Computes the tangent in degree for each element of x.
 
 ## 📄 Description
 
-<b>tand</b> computes the tangent in degree for each element of <b>x</b>.
+<b>tand</b> computes the tangent in degree for each element of<b>x</b>.
 
 ## 💡 Example
 

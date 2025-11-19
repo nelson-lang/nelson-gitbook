@@ -21,9 +21,9 @@ Convertit un nombre d'une base donnée en décimal.
 
 Remarques :
 
-- <b>dec2base</b> et <b>base2dec</b> sont mutuellement inverses.
+- <b>dec2base</b> et<b>base2dec</b> sont mutuellement inverses.
 
-- des valeurs sont mises en cache pour accélérer les calculs ultérieurs ; utiliser <b>base2dec('', 2)</b> pour vider le cache.
+- des valeurs sont mises en cache pour accélérer les calculs ultérieurs ; utiliser<b>base2dec('', 2)</b> pour vider le cache.
 
 ## 💡 Exemple
 

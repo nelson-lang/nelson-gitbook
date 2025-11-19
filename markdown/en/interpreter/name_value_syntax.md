@@ -9,15 +9,15 @@ Name=value syntax for name-value arguments.
 
 ## 📄 Description
 
-Starting with Nelson 1.15.0, functions can accept name-value arguments by using the <b>name=value</b> syntax.
+Starting with Nelson 1.15.0, functions can accept name-value arguments by using the<b>name=value</b> syntax.
 
 The new form is equivalent to the traditional comma-separated syntax and improves readability when several name-value pairs appear in a single call.
 
-Use one syntax per call whenever possible. If you mix both forms, every <b>name=value</b> argument must come after the comma-separated pairs, for example: plot(x, y, "Color", "red", LineWidth=2).
+Use one syntax per call whenever possible. If you mix both forms, every<b>name=value</b> argument must come after the comma-separated pairs, for example: plot(x, y, "Color", "red", LineWidth=2).
 
 Reversing that order, such as plot(x, y, Color="red", "LineWidth", 2), is invalid.
 
-Names used with the <b>name=value</b> syntax must be valid Nelson identifiers. For names that contain characters such as hyphens, continue to pass them as string/value pairs; for example: "allow-empty", true.
+Names used with the<b>name=value</b> syntax must be valid Nelson identifiers. For names that contain characters such as hyphens, continue to pass them as string/value pairs; for example: "allow-empty", true.
 
 ## 💡 Examples
 

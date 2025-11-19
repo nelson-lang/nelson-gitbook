@@ -43,17 +43,17 @@ Créer des patchs de polygones colorés
 
 Paires Nom-Valeur de propriétés :
 
-<b>'FaceColor'</b> : couleur de la forme remplie. FaceColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut : <b>'flat'</b>.
+<b>'FaceColor'</b> : couleur de la forme remplie. FaceColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut :<b>'flat'</b>.
 
-<b>'EdgeColor'</b> : couleur des bords du polygone. EdgeColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut : <b>'none'</b>.
+<b>'EdgeColor'</b> : couleur des bords du polygone. EdgeColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut :<b>'none'</b>.
 
-<b>'LineWidth'</b> : largeur des bords du polygone. Par défaut : <b>0.5</b>.
+<b>'LineWidth'</b> : largeur des bords du polygone. Par défaut :<b>0.5</b>.
 
-<b>'LineStyle'</b> : style des bords du polygone. LineStyle peut être une chaîne de caractères ou un code de style de ligne. Par défaut : <b>'-'</b>.
+<b>'LineStyle'</b> : style des bords du polygone. LineStyle peut être une chaîne de caractères ou un code de style de ligne. Par défaut :<b>'-'</b>.
 
-<b>'FaceAlpha'</b> : transparence de la forme remplie. FaceAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.
+<b>'FaceAlpha'</b> : transparence de la forme remplie. FaceAlpha peut être un scalaire entre 0 et 1. Par défaut :<b>1</b>.
 
-<b>'EdgeAlpha'</b> : transparence des bords du polygone. EdgeAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.
+<b>'EdgeAlpha'</b> : transparence des bords du polygone. EdgeAlpha peut être un scalaire entre 0 et 1. Par défaut :<b>1</b>.
 
 <b>'Parent'</b> : handle de l'objet parent du patch. Par défaut : <b>gca()</b>.
 

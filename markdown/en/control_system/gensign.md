@@ -22,21 +22,21 @@ Create periodic signals for simulating system response.
 
 ## 📄 Description
 
-The function <b>gensig(type, tau)</b> creates a periodic signal with unit amplitude, characterized by the specified type and period.
+The function<b>gensig(type, tau)</b> creates a periodic signal with unit amplitude, characterized by the specified type and period.
 
-The resulting signal, denoted as <b>u</b>, and its corresponding time vector, <b>t</b>, can be utilized for simulating the time response of a single-input dynamic system using <b>lsim</b>.
+The resulting signal, denoted as<b>u</b>, and its corresponding time vector,<b>t</b>, can be utilized for simulating the time response of a single-input dynamic system using<b>lsim</b>.
 
-For multi-input systems, you can generate signals by making repeated calls to <b>gensig</b> and then assemble the resulting <b>u</b> vectors into a matrix. When simulating a dynamic system model with <b>u</b> and <b>t</b>, note that the software interprets the time vector <b>t</b> with units based on the TimeUnit property of the model.
+For multi-input systems, you can generate signals by making repeated calls to<b>gensig</b> and then assemble the resulting<b>u</b> vectors into a matrix. When simulating a dynamic system model with<b>u</b> and <b>t</b>, note that the software interprets the time vector<b>t</b> with units based on the TimeUnit property of the model.
 
-To generate a signal with a specific duration <b>Tf</b>, use <b>[u, t] = gensig(type, tau, Tf)</b>.
+To generate a signal with a specific duration <b>Tf</b>, use<b>[u, t] = gensig(type, tau, Tf)</b>.
 
-The time vector <b>t</b> spans from 0 to <b>Tf</b> in increments of <b>tau/64</b>.
+The time vector <b>t</b> spans from 0 to<b>Tf</b> in increments of <b>tau/64</b>.
 
-For a signal with a defined sample time <b>Ts</b>, employ <b>[u, t] = gensig(type, tau, Tf, Ts)</b>.
+For a signal with a defined sample time <b>Ts</b>, employ<b>[u, t] = gensig(type, tau, Tf, Ts)</b>.
 
-In this case, the time vector <b>t</b> ranges from 0 to <b>Tf</b> in increments of <b>Ts</b>.
+In this case, the time vector <b>t</b> ranges from 0 to<b>Tf</b> in increments of <b>Ts</b>.
 
-This syntax is particularly useful for generating signals tailored for discrete-time model simulations, where <b>Ts</b> corresponds to the sample time of the model.
+This syntax is particularly useful for generating signals tailored for discrete-time model simulations, where<b>Ts</b> corresponds to the sample time of the model.
 
 ## 💡 Example
 

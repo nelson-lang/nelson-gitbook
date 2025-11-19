@@ -17,9 +17,9 @@ Un fichier mex est un type de fichier qui fournit une interface entre Octave ou 
 
 Nelson dispose également de sa propre API C++ pour gérer plus facilement les objets internes de Nelson.
 
-Nelson ne peut pas charger des mex générés par d'autres logiciels, <b>MAIS</b> vous pouvez facilement les reconstruire pour chaque cible logicielle.
+Nelson ne peut pas charger des mex générés par d'autres logiciels,<b>MAIS</b> vous pouvez facilement les reconstruire pour chaque cible logicielle.
 
-Les mex générés par Nelson ont une extension de fichier commençant par <b>.nex</b>
+Les mex générés par Nelson ont une extension de fichier commençant par<b>.nex</b>
 
 ## 💡 Exemple
 

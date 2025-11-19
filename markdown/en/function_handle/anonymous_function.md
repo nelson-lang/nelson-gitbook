@@ -12,19 +12,19 @@ To create an anonymous function from an expression, use the following syntax:
 
 function_handle = @(argument_list) expression
 
-Breaking down this syntax, <b>expression</b> represents the body of the function, which contains the code that performs the primary task of your function.
+Breaking down this syntax,<b>expression</b> represents the body of the function, which contains the code that performs the primary task of your function.
 
 This part consists of a valid expression. Next, there's <b>argument_list</b>, which is a comma-separated list of input arguments to be passed to the function.
 
 These components are similar to the body and argument list of any regular function.
 
-At the beginning of this syntax statement, you'll notice the <b>@</b> sign.
+At the beginning of this syntax statement, you'll notice the<b>@</b> sign.
 
-This <b>@</b> sign is the operator that constructs a function handle.
+This<b>@</b> sign is the operator that constructs a function handle.
 
 Creating a function handle for an anonymous function allows you to invoke the function and is useful when passing your anonymous function as an argument to another function.
 
-The <b>@</b> sign is a necessary part of the anonymous function definition.
+The<b>@</b> sign is a necessary part of the anonymous function definition.
 
 It's worth noting that function handles not only apply to anonymous functions but also to any function.
 
@@ -46,7 +46,7 @@ You can create an anonymous function that takes multiple input arguments, x and 
 
 Assuming that variables A and B are already defined, you can define the function as follows:
 
-<b>A = 10; B = 100; r = @(x, y) (A*y + B*x);</b>
+<b>A = 10; B = 100; r = @(x, y) (A\*y + B\*x);</b>
 
 ## 💡 Examples
 

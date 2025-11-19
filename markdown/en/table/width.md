@@ -18,7 +18,7 @@ Number of table variables
 
 <b>W = width(T)</b> returns the number of variables in the table T.
 
-The function <b>width(T)</b> is equivalent to <b>size(T, 2)</b>, which also provides the number of columns in the table.
+The function <b>width(T)</b> is equivalent to<b>size(T, 2)</b>, which also provides the number of columns in the table.
 
 ## 💡 Example
 

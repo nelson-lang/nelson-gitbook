@@ -22,7 +22,7 @@ Convertit des nombres en tableau de caractères.
 
 <b>num2str</b> convertit des nombres en tableau de caractères.
 
-<b>num2str</b> supprime les espaces en tête d'un tableau de caractères. Pour un meilleur contrôle du résultat, utilisez <b>sprintf</b>.
+<b>num2str</b> supprime les espaces en tête d'un tableau de caractères. Pour un meilleur contrôle du résultat, utilisez<b>sprintf</b>.
 
 ## 💡 Exemple
 

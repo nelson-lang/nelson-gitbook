@@ -18,7 +18,7 @@ Transformée de Fourier inverse multidimensionnelle.
 
 ## 📄 Description
 
-<b>Y = ifftn(X, sz)</b> complète <b>X</b> par des zéros ou tronque <b>X</b> pour créer un tableau multidimensionnel de taille <b>sz</b> avant d'effectuer la transformée.
+<b>Y = ifftn(X, sz)</b> complète <b>X</b> par des zéros ou tronque<b>X</b> pour créer un tableau multidimensionnel de taille<b>sz</b> avant d'effectuer la transformée.
 
 La taille du résultat <b>Y</b> est <b>sz</b>.
 

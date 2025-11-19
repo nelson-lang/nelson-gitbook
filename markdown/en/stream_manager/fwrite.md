@@ -59,9 +59,9 @@ supported precision:
 
 if <b>fwrite</b> fails, it returns a negative value.
 
-if <b>fwrite</b> succeeds, it returns the number of elements written successfully.
+if<b>fwrite</b> succeeds, it returns the number of elements written successfully.
 
-if <b>fwrite</b> writes characters, it returns the number of characters written successfully and not the number of elements.
+if<b>fwrite</b> writes characters, it returns the number of characters written successfully and not the number of elements.
 
 ## 💡 Examples
 

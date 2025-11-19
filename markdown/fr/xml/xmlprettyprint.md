@@ -27,7 +27,6 @@ if isfile(xml_filename)
     xmlprettyprint(xml_tmp, true);
     fileread(xml_tmp)
 end
-
 ```
 
 ## 🔗 Voir aussi

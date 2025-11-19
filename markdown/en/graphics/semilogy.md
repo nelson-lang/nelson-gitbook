@@ -29,7 +29,7 @@ Semilog plot (y-axis has log scale).
 
 <b>semilogy(X, Y)</b> plots data using a base 10 logarithmic scale for the y-axis and a normal (linear) scale for the x-axis.
 
-<b>semilogy</b> has the exact same syntax as the <b>plot</b> command.
+<b>semilogy</b> has the exact same syntax as the<b>plot</b> command.
 
 ## 💡 Examples
 

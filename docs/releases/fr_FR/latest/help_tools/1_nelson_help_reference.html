@@ -40,7 +40,7 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
 <tr>
 <td class="param-name">language</td>
 <td>
-        <p>Localisation utilisée par le XSLT pour sélectionner les étiquettes et le texte localisé. Exemples : en_US, fr_FR. Cet élément est obligatoire dans la racine `&lt;xmldoc&gt;`.</p>
+        <p>Localisation utilisée par le XSLT pour sélectionner les étiquettes et le texte localisé. Exemples :en_US,fr_FR. Cet élément est obligatoire dans la racine`&lt;xmldoc&gt;`.</p>
       </td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
 <tr>
 <td class="param-name">html</td>
 <td>
-        <p>Le XSLT génère un fichier HTML en utilisant des ressources locales : highlight.css, nelson_common.css et nelson_help.js. Les images sont copiées via l'extension ext:copy_img.</p>
+        <p>Le XSLT génère un fichier HTML en utilisant des ressources locales : highlight.css, nelson_common.css et nelson_help.js. Les images sont copiées via l'extensionext:copy_img.</p>
       </td>
 </tr>
 </table>
@@ -73,7 +73,6 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
 <div>
     <p>Une référence lisible par l'homme et un ensemble d'exemples définitifs décrivant le format de fichier XML d'aide défini par nelson_help.xsd, et comment nelson_html.xslt transforme ses éléments en HTML.</p>
     <p>Utilisez `&lt;description&gt;` pour fournir le corps principal de la documentation. Il accepte des paragraphes (`&lt;p&gt;`), des listes (`&lt;ul&gt;`, `&lt;ol&gt;`), des tableaux (`&lt;table&gt;`), des balisages en ligne (`&lt;b&gt;`, `&lt;i&gt;`, `&lt;code&gt;`), des images (`&lt;img src="..."/&gt;`) et LaTeX (`&lt;latex&gt;`).</p>
-
     <p>Les éléments en ligne et leur rendu XSLT :</p>
     <ul>
       <li>
@@ -85,25 +84,23 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
       <li>
 <b>`&lt;a href="..."&gt;`</b> - liens externes (rendus en tant qu'ancres HTML).</li>
       <li>
-<b>`&lt;link linkend="..."&gt;`</b> - référence croisée interne. Si linkend contient un module entre accolades {module}name, il devient ../module/name.html, sinon name.html.</li>
+<b>`&lt;link linkend="..."&gt;`</b> - référence croisée interne. Si linkend contient un module entre accolades{module}name, il devient../module/name.html, sinonname.html.</li>
       <li>
 <b>`&lt;latex&gt;`</b> - expressions mathématiques ; rendues en tant que mathématiques d'affichage MathJax par le modèle XSLT (enveloppées avec `$$...$$`).</li>
       <li>
 <b>`&lt;img src="..."/&gt;`</b> - images. Le XSLT appelle ext:copy_img(@src); les SVG sont rendus avec un cadre fixe large et les autres formats sont adaptables.</li>
     </ul>
-
     <p>Éléments de bloc :</p>
     <ul>
       <li>`&lt;ul&gt;` et `&lt;ol&gt;` - listes. Utilisez `&lt;li&gt;` avec un balisage en ligne/de bloc imbriqué selon les besoins.</li>
       <li>`&lt;table&gt;` - utilisez `&lt;thead&gt;`, `&lt;tbody&gt;`, `&lt;tr&gt;`, `&lt;th&gt;` et `&lt;td&gt;`. Le XSD autorise les attributs communs border, cellpadding et cellspacing.</li>
     </ul>
-
     <p>Conseils pour la rédaction :</p>
     
       <li>Préférez des lignes de résumé courtes pour `&lt;short_description&gt;`.</li>
-      <li>Placez les exemples exécutables à l'intérieur de `&lt;examples&gt;` en utilisant `&lt;example_item_data&gt;` et définissez runnable="cli" si applicable ou runnable="false" (par défaut).</li>
+      <li>Placez les exemples exécutables à l'intérieur de`&lt;examples&gt;`en utilisant`&lt;example_item_data&gt;`et définissezrunnable="cli"si applicable ourunnable="false"(par défaut).</li>
       <li>Enveloppez le code source de l'exemple dans CDATA pour éviter l'échappement (voir les exemples ci-dessous).</li>
-      <li>Utilisez `&lt;link linkend="{module}name"&gt;` pour les références qualifiées par module ; sinon, utilisez des noms simples.</li>
+      <li>Utilisez`&lt;link linkend="{module}name"&gt;`pour les références qualifiées par module ; sinon, utilisez des noms simples.</li>
     
   </div>
 </div>

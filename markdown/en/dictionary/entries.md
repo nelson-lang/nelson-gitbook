@@ -18,7 +18,7 @@ Key-value pairs of dictionary.
 
 ## 📄 Description
 
-<b>E = entries(d)</b> retrieves a table containing the key-value pairs from the given dictionary, <b>d</b>.
+<b>E = entries(d)</b> retrieves a table containing the key-value pairs from the given dictionary,<b>d</b>.
 
 <b>E = entries(d)</b> currently not implemented.
 

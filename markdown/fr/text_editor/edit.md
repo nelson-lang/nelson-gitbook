@@ -17,7 +17,7 @@
 
 <b>edit</b> ouvre un nouveau fichier nommé untitled.m dans l'éditeur intégré de Nelson.
 
-Si <b>function_name</b> est le nom d'une fonction Nelson définie, <b>edit(function_name)</b> tente d'ouvrir le fichier associé function_name.m.
+Si <b>function_name</b> est le nom d'une fonction Nelson définie,<b>edit(function_name)</b> tente d'ouvrir le fichier associé function_name.m.
 
 <b>edit(dirname)</b> ouvre tous les fichiers .m disponibles dans <b>dirname</b>.
 

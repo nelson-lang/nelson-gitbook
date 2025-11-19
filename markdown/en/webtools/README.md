@@ -1,7 +1,6 @@
 # Web tools
 
-The WebTools module provides functions to interact with web resources, transfer data via
-URLs, and work with RESTful web services.
+The WebTools module provides functions to interact with web resources, transfer data via URLs, and work with RESTful web services.
 
 ## Functions
 

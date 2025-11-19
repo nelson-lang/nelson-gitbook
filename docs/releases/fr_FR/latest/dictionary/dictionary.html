@@ -73,39 +73,31 @@ d = dictionary(key1, value1, ... , keyN, valueN)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>d = dictionary()</b> : Cette commande initialise un dictionnaire vide sans clés ni valeurs.</p>
-            <p>Au départ, le dictionnaire n'a pas de types de données spécifiques assignés à ses clés ou valeurs. Une fois des entrées ajoutées, les types de clés et de valeurs sont déterminés à partir de ces entrées.</p>
-            <p></p>
-            <p>
-                <b>d = dictionary(keys, values)</b> : Crée un dictionnaire en utilisant les clés et valeurs fournies.</p>
-                <p>Le dictionnaire résultant est un objet scalaire 1-by-1. Si une clé apparaît plusieurs fois, seule la dernière valeur correspondante est conservée. Si le paramètre values est un scalaire, chaque clé reçoit cette valeur. Quand keys et values sont des tableaux, ils doivent avoir des tailles compatibles, produisant des paires clé-valeur correspondantes.</p>
-                <p></p>
-                <p>Les dictionnaires sont typés selon leurs entrées. Toutes les clés doivent partager le même type de données, et toutes les valeurs doivent partager un type cohérent distinct. Si une nouvelle entrée contient des parties qui ne correspondent pas aux types existants, Nelson tentera de les convertir. Les clés et valeurs peuvent avoir des types différents, et les vecteurs de caractères en lignes sont convertis en scalaires string.</p>
-                <p></p>
-                <p>
-                    <b>d = dictionary(key1, value1, ... , keyN, valueN)</b> : Cette syntaxe crée un dictionnaire avec les paires clé-valeur spécifiées.</p>
-                    <p>Si une clé est répétée, seule la dernière paire clé-valeur pour cette clé est conservée.</p>
-                    <p>Suppression d'une entrée dans un dictionnaire :</p>
-                    <p>
-                        <b>d(keys) = []</b> : Cette commande supprime l'entrée associée à la clé spécifiée du dictionnaire.</p>
-                        <p></p>
-                        <p>Assignation de valeurs aux entrées :</p>
-                        <p>
-                            <b>d(keys) = newValues</b> : Cette commande assigne les éléments de newValues aux entrées spécifiées par les clés correspondantes.</p>
-                            <p>Si une clé spécifiée n'existe pas dans le dictionnaire, une nouvelle entrée est créée. Si une clé apparaît plusieurs fois, seule la dernière valeur assignée est conservée. Assigner une nouvelle valeur à une clé existante écrase sa valeur précédente.</p>
-                            <p></p>
-                            <p>Recherche d'une valeur :</p>
-                            <p>
-                                <b>bvalue = d(keys)</b> : Cette commande récupère la valeur correspondant aux clés spécifiées du dictionnaire.</p>
-                                <p></p>
-                                <p>Stockage de plusieurs types de données dans un dictionnaire :</p>
-                                <p>
-                                    <b>value = d{keys}</b> récupère la valeur associée à <b>keys</b> et renvoie le contenu de la cellule. Si <b>keys</b> est un tableau, une liste séparée par des virgules des valeurs correspondantes est renvoyée. Une erreur est levée si les valeurs du dictionnaire sont configurées vers un type autre que cell.</p>
-                                    <p>
-                                        <b>d{keys} = values</b> assigne des cellules contenant les éléments de <b>values</b> aux entrées spécifiées par les <b>keys</b> correspondantes. Une erreur est levée si les valeurs du dictionnaire sont configurées vers un type autre que cell.</p>
-                                        <p></p>
-                                    </div>
+    <p><b>d = dictionary()</b> : Cette commande initialise un dictionnaire vide sans clés ni valeurs.</p>
+    <p>Au départ, le dictionnaire n'a pas de types de données spécifiques assignés à ses clés ou valeurs. Une fois des entrées ajoutées, les types de clés et de valeurs sont déterminés à partir de ces entrées.</p>
+    <p></p>
+    <p><b>d = dictionary(keys, values)</b> : Crée un dictionnaire en utilisant les clés et valeurs fournies.</p>
+    <p>Le dictionnaire résultant est un objet scalaire 1-by-1. Si une clé apparaît plusieurs fois, seule la dernière valeur correspondante est conservée. Si le paramètre values est un scalaire, chaque clé reçoit cette valeur. Quand keys et values sont des tableaux, ils doivent avoir des tailles compatibles, produisant des paires clé-valeur correspondantes.</p>
+    <p></p>
+    <p>Les dictionnaires sont typés selon leurs entrées. Toutes les clés doivent partager le même type de données, et toutes les valeurs doivent partager un type cohérent distinct. Si une nouvelle entrée contient des parties qui ne correspondent pas aux types existants, Nelson tentera de les convertir. Les clés et valeurs peuvent avoir des types différents, et les vecteurs de caractères en lignes sont convertis en scalaires string.</p>
+    <p></p>
+    <p><b>d = dictionary(key1, value1, ... , keyN, valueN)</b> : Cette syntaxe crée un dictionnaire avec les paires clé-valeur spécifiées.</p>
+    <p>Si une clé est répétée, seule la dernière paire clé-valeur pour cette clé est conservée.</p>
+    <p>Suppression d'une entrée dans un dictionnaire :</p>
+    <p><b>d(keys) = []</b> : Cette commande supprime l'entrée associée à la clé spécifiée du dictionnaire.</p>
+    <p></p>
+    <p>Assignation de valeurs aux entrées :</p>
+    <p><b>d(keys) = newValues</b> : Cette commande assigne les éléments de newValues aux entrées spécifiées par les clés correspondantes.</p>
+    <p>Si une clé spécifiée n'existe pas dans le dictionnaire, une nouvelle entrée est créée. Si une clé apparaît plusieurs fois, seule la dernière valeur assignée est conservée. Assigner une nouvelle valeur à une clé existante écrase sa valeur précédente.</p>
+    <p></p>
+    <p>Recherche d'une valeur :</p>
+    <p><b>bvalue = d(keys)</b> : Cette commande récupère la valeur correspondant aux clés spécifiées du dictionnaire.</p>
+    <p></p>
+    <p>Stockage de plusieurs types de données dans un dictionnaire :</p>
+    <p><b>value = d{keys}</b> récupère la valeur associée à <b>keys</b> et renvoie le contenu de la cellule. Si <b>keys</b> est un tableau, une liste séparée par des virgules des valeurs correspondantes est renvoyée. Une erreur est levée si les valeurs du dictionnaire sont configurées vers un type autre que cell.</p>
+    <p><b>d{keys} = values</b> assigne des cellules contenant les éléments de <b>values</b> aux entrées spécifiées par les <b>keys</b> correspondantes. Une erreur est levée si les valeurs du dictionnaire sont configurées vers un type autre que cell.</p>
+    <p></p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

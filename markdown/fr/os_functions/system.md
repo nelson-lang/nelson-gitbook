@@ -40,11 +40,11 @@ Exécution de commandes shell.
 
 <b>[status, output] = system(command, '-echo')</b> force l'affichage de la sortie dans la fenêtre de commande, même si elle est également assignée à une variable.
 
-Les fonctions de rappel (callbacks) ne peuvent pas être appelées tant que la commande <b>system</b> n'est pas terminée.
+Les fonctions de rappel (callbacks) ne peuvent pas être appelées tant que la commande<b>system</b> n'est pas terminée.
 
 Nelson convertira les caractères vers l'encodage accepté par votre shell système (ANSI sur Windows par défaut, UTF-8 sur les autres systèmes).
 
-La commande peut être interrompue avec la touche <b>CTRL-C</b>. Dans ce cas, le code de retour sera 258 (WAIT_TIMEOUT) sous Windows et 134 sur les autres plateformes (128 + SIGABRT) et la <b>output</b> contiendra 'ABORTED'.
+La commande peut être interrompue avec la touche<b>CTRL-C</b>. Dans ce cas, le code de retour sera 258 (WAIT_TIMEOUT) sous Windows et 134 sur les autres plateformes (128 + SIGABRT) et la<b>output</b> contiendra 'ABORTED'.
 
 Si la valeur timeout est 0, le timeout est désactivé.
 

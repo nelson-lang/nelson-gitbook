@@ -18,9 +18,9 @@ Charge une bibliothèque dynamique
 
 <b>dlopen</b> charge une bibliothèque dynamique.
 
-<b>dlopen</b> renvoie un handle <b>dllib</b> possédant une propriété <b>Path</b>.
+<b>dlopen</b> renvoie un handle<b>dllib</b> possédant une propriété <b>Path</b>.
 
-Les méthodes <b>get</b>, <b>ismethod</b>, <b>isprop</b>, <b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>, <b>ne</b>, <b>isequal</b>, <b>horzcat</b>, <b>vertcat</b> sont surchargées pour le type <b>dllib</b>.
+Les méthodes <b>get</b>, <b>ismethod</b>, <b>isprop</b>,<b>disp</b>, <b>delete</b>, <b>isvalid</b>, <b>used</b>, <b>eq</b>,<b>ne</b>, <b>isequal</b>, <b>horzcat</b>,<b>vertcat</b> sont surchargées pour le type <b>dllib</b>.
 
 La bibliothèque est d'abord recherchée dans NELSON_LIBRARY_PATH puis dans PATH sous Windows ou LD_LIBRARY_PATH / DYLD_LIBRARY_PATH sur Linux/MacOS.
 

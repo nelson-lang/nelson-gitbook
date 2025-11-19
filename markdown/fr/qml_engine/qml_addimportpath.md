@@ -12,9 +12,9 @@ Ajoute un chemin comme répertoire où le moteur QML recherche les modules insta
 
 ## 📄 Description
 
-<b>qml_addimportpath</b> ajoute <b>path</b> comme répertoire où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL.
+<b>qml_addimportpath</b> ajoute<b>path</b> comme répertoire où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL.
 
-Le chemin nouvellement ajouté sera placé en tête de <b>qml_importpathlist</b>.
+Le chemin nouvellement ajouté sera placé en tête de<b>qml_importpathlist</b>.
 
 ## 💡 Exemple
 

@@ -20,7 +20,7 @@ Calcule précisément cos(X \* pi).
 
 Pour les entiers, <b>cospi(x)</b> vaut +1 ou -1.
 
-Pour les entiers impairs, <b>cospi(x / 2)</b> est exactement zéro.
+Pour les entiers impairs,<b>cospi(x / 2)</b> est exactement zéro.
 
 ## 💡 Exemple
 

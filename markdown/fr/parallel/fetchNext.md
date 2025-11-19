@@ -10,7 +10,7 @@ Récupérer les prochaines sorties non lues d'un tableau FevalFuture.
 ## 📥 Argument d'entrée
 
 - f - objet FevalFuture
-- timeout - durée en secondes : attend au maximum <i>timeout</i> secondes qu'un résultat dans <b>f</b> devienne disponible.
+- timeout - durée en secondes : attend au maximum <i>timeout</i> secondes qu'un résultat dans<b>f</b> devienne disponible.
 
 ## 📤 Argument de sortie
 

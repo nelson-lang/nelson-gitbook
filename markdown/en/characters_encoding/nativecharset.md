@@ -20,7 +20,7 @@ Find all charset matches that appear to be consistent with the input
 
 The results are ordered with the best quality match first.
 
-List of characters set: https://www.iana.org/assignments/character-sets/character-sets.xhtml
+List of characters set:https://www.iana.org/assignments/character-sets/character-sets.xhtml
 
 ## 📚 Bibliography
 

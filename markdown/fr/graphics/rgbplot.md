@@ -12,7 +12,7 @@ Tracer une palette de couleurs.
 
 ## 📄 Description
 
-<b>rgbplot(cmap)</b> trace les intensités R (rouge), G (vert) et B (bleu) de la palette de couleurs <b>cmap</b> spécifiée.
+<b>rgbplot(cmap)</b> trace les intensités R (rouge), G (vert) et B (bleu) de la palette de couleurs<b>cmap</b> spécifiée.
 
 ## 💡 Exemple
 

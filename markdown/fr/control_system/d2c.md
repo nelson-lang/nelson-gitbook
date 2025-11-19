@@ -20,7 +20,7 @@ Convertit un modèle du temps discret au temps continu.
 
 ## 📄 Description
 
-La fonction <b>sysc = d2c(sysd)</b> transforme un modèle de système dynamique en temps discret <b>sysd</b> en un modèle en temps continu, en utilisant un maintien d'ordre zéro sur les entrées.
+La fonction<b>sysc = d2c(sysd)</b> transforme un modèle de système dynamique en temps discret<b>sysd</b> en un modèle en temps continu, en utilisant un maintien d'ordre zéro sur les entrées.
 
 Par exemple, vous pouvez utiliser <b>sysc = d2c(sysd, method)</b> pour définir explicitement la méthode de conversion.
 

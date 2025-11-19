@@ -16,7 +16,7 @@ Calcule le sinus hyperbolique en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>sinh</b> calcule le sinus hyperbolique en radians pour chaque élément de <b>x</b>.
+<b>sinh</b> calcule le sinus hyperbolique en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

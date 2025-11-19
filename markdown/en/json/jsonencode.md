@@ -24,7 +24,7 @@ encodes a Nelson object into a JSON string.
 
 <b>jsonencode</b> can be overloaded to manage your own type.
 
-By default <b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.
+By default<b>jsonencode</b> Inf values are converted to the string "Inf", NaN values are converted to 'null'.
 
 Warning: The shape of a matrix and data type are not always preserved.
 

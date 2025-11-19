@@ -26,9 +26,9 @@ Convert model from continuous to discrete time.
 
 ## 📄 Description
 
-The function <b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model <b>sysc</b> using a zero-order hold on the inputs with a sample time of <b>Ts</b>.
+The function<b>sysd = c2d(sysc, Ts)</b> discretizes the continuous-time dynamic system model<b>sysc</b> using a zero-order hold on the inputs with a sample time of<b>Ts</b>.
 
-For instance, you can use <b>sysd = c2d(sysc, Ts, method)</b> to explicitly specify the discretization method.
+For instance, you can use<b>sysd = c2d(sysc, Ts, method)</b> to explicitly specify the discretization method.
 
 ## 💡 Example
 

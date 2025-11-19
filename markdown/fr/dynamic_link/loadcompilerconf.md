@@ -14,7 +14,7 @@ Charger la configuration du compilateur
 
 ## 📄 Description
 
-<b>loadcompilerconf</b> renvoie true si un compilateur a été configuré auparavant avec <b>configuremsvc</b> ou <b>configuremingw</b>.
+<b>loadcompilerconf</b> renvoie true si un compilateur a été configuré auparavant avec<b>configuremsvc</b> ou <b>configuremingw</b>.
 
 <b>loadcompilerconf</b> renvoie toujours false sur les autres plateformes et 'unix' comme compilateur.
 

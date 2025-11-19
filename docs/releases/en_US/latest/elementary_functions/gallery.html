@@ -46,7 +46,7 @@ A = gallery("cauchy", x, y)
 </tr>
 <tr>
 <td class="param-name">P1, P2, ..., Pn</td>
-<td>family-dependent parameters: scalars, vectors or matrices that determine size and entries (for example n, vectors v, x, y, or option flags)</td>
+<td>family-dependent parameters: scalars, vectors or matrices that determine size and entries (for examplen, vectorsv,x,y, or option flags)</td>
 </tr>
 <tr>
 <td class="param-name">n</td>
@@ -58,7 +58,7 @@ A = gallery("cauchy", x, y)
 </tr>
 <tr>
 <td class="param-name">k</td>
-<td>option or small integer parameter controlling family behaviour (for example number of superdiagonals for <b>grcar</b> or variant selectors for <b>dramadah</b>)</td>
+<td>option or small integer parameter controlling family behaviour (for example number of superdiagonals for<b>grcar</b> or variant selectors for <b>dramadah</b>)</td>
 </tr>
 <tr>
 <td class="param-name">typename</td>
@@ -84,12 +84,12 @@ A = gallery("cauchy", x, y)
 </tr>
 <tr>
 <td class="param-name">v,beta,s</td>
-<td>Householder outputs: v (vector), beta (scalar), and optional s returned by <b>house</b>
+<td>Householder outputs:v(vector),beta(scalar), and optionalsreturned by <b>house</b>
 </td>
 </tr>
 <tr>
 <td class="param-name">beta</td>
-<td>determinant or scalar output for families that return it explicitly (for example <b>ipjfact</b> returns determinant beta)</td>
+<td>determinant or scalar output for families that return it explicitly (for example<b>ipjfact</b> returns determinantbeta)</td>
 </tr>
 </table>
 </div>
@@ -97,114 +97,149 @@ A = gallery("cauchy", x, y)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The <b>gallery</b> function returns a collection of standard test matrices and generated data used to illustrate numerical linear algebra concepts, test algorithms, and reproduce textbook examples.</p>
-        <p>Use the <b>matrixname</b> argument to select a family; additional parameters (sizes, vectors, options) depend on the chosen family.</p>
-        <p>Typical uses: study eigenvalue sensitivity and conditioning, exercise solvers with structured matrices (Toeplitz, Hankel, circulant), generate random or specially structured matrices with prescribed singular/eigenvalue properties, or obtain canonical examples for teaching and tests.</p>
-        <p>The optional <b>typename</b> forces the numeric output type.</p>
-        <p>If omitted, the output type is inferred from the inputs: presence of a single input yields single, otherwise outputs are double.</p>
-        <table border="1" style="width:100%">
-            
-                <tr>
-                    <th>Name</th>
-                    <th>Syntax</th>
-                    <th>Notes</th>
-                </tr>
-            
-            
-                <tr>
-                    <td>gallery(3)</td>
-                    <td>A = gallery(3)</td>
-                    <td>Classic ill-conditioned 3×3 test matrix; demonstrates eigenvalue sensitivity.</td>
-                </tr>
-                <tr>
-                    <td>gallery(5)</td>
-                    <td>A = gallery(5)</td>
-                    <td>5×5 example with exact characteristic polynomial \(\lambda^5=0\); numerically the eigenvalues are small and sensitive.</td>
-                </tr>
-                <tr>
-                    <td>circul</td>
-                    <td>A = gallery("circul", v)</td>
-                    <td>Circulant matrix: rows are cyclic shifts of v; eigenvalues are the DFT of v.</td>
-                </tr>
-                <tr>
-                    <td>grcar</td>
-                    <td>A = gallery("grcar", n, k)</td>
-                    <td>Toeplitz with -1 on subdiagonal and 1's on main and k superdiagonals; useful for pseudospectra examples.</td>
-                </tr>
-                <tr>
-                    <td>minij</td>
-                    <td>A = gallery("minij", n)</td>
-                    <td>SPD matrix with A(i,j)=min(i,j); inverse is tridiagonal (second-difference structure).</td>
-                </tr>
-                <tr>
-                    <td>dramadah</td>
-                    <td>A = gallery("dramadah", n, k)</td>
-                    <td>Binary (0/1) families; certain k yield unimodular Toeplitz matrices with integer inverses.</td>
-                </tr>
-                <tr>
-                    <td>house</td>
-                    <td>[v,beta] = gallery("house", x)</td>
-                    <td>Returns Householder vector v and scalar beta so H=I-beta*v*v' reflects x onto a multiple of e1.</td>
-                </tr>
-                <tr>
-                    <td>binomial</td>
-                    <td>A = gallery("binomial", n)</td>
-                    <td>Binomial matrix with A^2 = 2^(n-1) I; scaled matrix is involutory.</td>
-                </tr>
-                <tr>
-                    <td>cauchy</td>
-                    <td>A = gallery("cauchy", x, y)</td>
-                    <td>Cauchy matrix A(i,j)=1/(x(i)+y(j)); explicit determinant and inverse formulas exist.</td>
-                </tr>
-                <tr>
-                    <td>ris</td>
-                    <td>A = gallery("ris", n)</td>
-                    <td>Symmetric Hankel matrix with entries 0.5/(n-i-j+1.5); eigenvalues cluster near ±π/2.</td>
-                </tr>
-                <tr>
-                    <td>chebspec</td>
-                    <td>A = gallery("chebspec", n, k)</td>
-                    <td>Chebyshev spectral differentiation matrix. k=0 yields a nilpotent form; k=1 yields a nonsingular, well-conditioned operator.</td>
-                </tr>
-                <tr>
-                    <td>wilk</td>
-                    <td>gallery("wilk", m)</td>
-                    <td>Wilkinson examples (small triangular systems, W21+, etc.) illustrating stability issues.</td>
-                </tr>
-                <tr>
-                    <td>sampling</td>
-                    <td>A = gallery("sampling", x)</td>
-                    <td>Nonsymmetric matrix with integer eigenvalues 0..n-1; eigenvectors are typically ill-conditioned.</td>
-                </tr>
-                <tr>
-                    <td>ipjfact</td>
-                    <td>[A,beta] = gallery("ipjfact", n, k)</td>
-                    <td>Hankel matrix built from factorials (or reciprocals); determinant and inverse known in closed form.</td>
-                </tr>
-                <tr>
-                    <td>moler</td>
-                    <td>A = gallery("moler", n, alpha)</td>
-                    <td>Symmetric positive definite example produced as U'*U; can exhibit an isolated tiny eigenvalue.</td>
-                </tr>
-                <tr>
-                    <td>lotkin</td>
-                    <td>A = gallery("lotkin", n)</td>
-                    <td>Hilbert-like matrix with first row ones; extremely ill-conditioned, inverse has integer structure.</td>
-                </tr>
-                <tr>
-                    <td>chebvand</td>
-                    <td>A = gallery("chebvand", x)</td>
-                    <td>Chebyshev Vandermonde-like matrix: A(i,j)=T_{i-1}(x(j)), useful for spectral interpolation and polynomial bases.</td>
-                </tr>
-                <tr>
-                    <td>lehmer</td>
-                    <td>A = gallery("lehmer", n)</td>
-                    <td>lehmer matrix with entries i/j for i ≤ j; symmetric positive definite and ill-conditioned.</td>
-                </tr>
-            
-        </table>
-
-    </div>
+    <p>The<b>gallery</b> function returns a collection of standard test matrices and generated data used to illustrate numerical linear algebra concepts, test algorithms, and reproduce textbook examples.</p>
+    <p>Use the<b>matrixname</b> argument to select a family; additional parameters (sizes, vectors, options) depend on the chosen family.</p>
+    <p>Typical uses: study eigenvalue sensitivity and conditioning, exercise solvers with structured matrices (Toeplitz, Hankel, circulant), generate random or specially structured matrices with prescribed singular/eigenvalue properties, or obtain canonical examples for teaching and tests.</p>
+    <p>The optional <b>typename</b> forces the numeric output type.</p>
+    <p>If omitted, the output type is inferred from the inputs: presence of asingleinput yieldssingle, otherwise outputs aredouble.</p>
+    <table border="1" style="width:100%">
+      
+        <tr>
+          <th>Name</th>
+          <th>Syntax</th>
+          <th>Notes</th>
+        </tr>
+      
+      
+        <tr>
+          <td>gallery(3)</td>
+          <td>
+            A = gallery(3)
+          </td>
+          <td>Classic ill-conditioned 3×3 test matrix; demonstrates eigenvalue sensitivity.</td>
+        </tr>
+        <tr>
+          <td>gallery(5)</td>
+          <td>
+            A = gallery(5)
+          </td>
+          <td>5×5 example with exact characteristic polynomial \(\lambda^5=0\); numerically the eigenvalues are small and sensitive.</td>
+        </tr>
+        <tr>
+          <td>circul</td>
+          <td>
+            A = gallery("circul", v)
+          </td>
+          <td>Circulant matrix: rows are cyclic shifts ofv; eigenvalues are the DFT ofv.</td>
+        </tr>
+        <tr>
+          <td>grcar</td>
+          <td>
+            A = gallery("grcar", n, k)
+          </td>
+          <td>Toeplitz with -1 on subdiagonal and 1's on main and k superdiagonals; useful for pseudospectra examples.</td>
+        </tr>
+        <tr>
+          <td>minij</td>
+          <td>
+            A = gallery("minij", n)
+          </td>
+          <td>SPD matrix with A(i,j)=min(i,j); inverse is tridiagonal (second-difference structure).</td>
+        </tr>
+        <tr>
+          <td>dramadah</td>
+          <td>
+            A = gallery("dramadah", n, k)
+          </td>
+          <td>Binary (0/1) families; certain k yield unimodular Toeplitz matrices with integer inverses.</td>
+        </tr>
+        <tr>
+          <td>house</td>
+          <td>
+            [v,beta] = gallery("house", x)
+          </td>
+          <td>Returns Householder vector v and scalar beta so H=I-beta*v*v'reflectsxonto a multiple ofe1.</td>
+        </tr>
+        <tr>
+          <td>binomial</td>
+          <td>
+            A = gallery("binomial", n)
+          </td>
+          <td>Binomial matrix withA^2 = 2^(n-1) I; scaled matrix is involutory.</td>
+        </tr>
+        <tr>
+          <td>cauchy</td>
+          <td>
+            A = gallery("cauchy", x, y)
+          </td>
+          <td>Cauchy matrixA(i,j)=1/(x(i)+y(j)); explicit determinant and inverse formulas exist.</td>
+        </tr>
+        <tr>
+          <td>ris</td>
+          <td>
+            A = gallery("ris", n)
+          </td>
+          <td>Symmetric Hankel matrix with entries 0.5/(n-i-j+1.5); eigenvalues cluster near ±π/2.</td>
+        </tr>
+        <tr>
+          <td>chebspec</td>
+          <td>
+            A = gallery("chebspec", n, k)
+          </td>
+          <td>Chebyshev spectral differentiation matrix.k=0 yields a nilpotent form;k=1 yields a nonsingular, well-conditioned operator.</td>
+        </tr>
+        <tr>
+          <td>wilk</td>
+          <td>
+            gallery("wilk", m)
+          </td>
+          <td>Wilkinson examples (small triangular systems, W21+, etc.) illustrating stability issues.</td>
+        </tr>
+        <tr>
+          <td>sampling</td>
+          <td>
+            A = gallery("sampling", x)
+          </td>
+          <td>Nonsymmetric matrix with integer eigenvalues 0..n-1; eigenvectors are typically ill-conditioned.</td>
+        </tr>
+        <tr>
+          <td>ipjfact</td>
+          <td>
+            [A,beta] = gallery("ipjfact", n, k)
+          </td>
+          <td>Hankel matrix built from factorials (or reciprocals); determinant and inverse known in closed form.</td>
+        </tr>
+        <tr>
+          <td>moler</td>
+          <td>
+            A = gallery("moler", n, alpha)
+          </td>
+          <td>Symmetric positive definite example produced asU'*U; can exhibit an isolated tiny eigenvalue.</td>
+        </tr>
+        <tr>
+          <td>lotkin</td>
+          <td>
+            A = gallery("lotkin", n)
+          </td>
+          <td>Hilbert-like matrix with first row ones; extremely ill-conditioned, inverse has integer structure.</td>
+        </tr>
+        <tr>
+          <td>chebvand</td>
+          <td>
+            A = gallery("chebvand", x)
+          </td>
+          <td>Chebyshev Vandermonde-like matrix: A(i,j)=T_{i-1}(x(j)), useful for spectral interpolation and polynomial bases.</td>
+        </tr>
+        <tr>
+          <td>lehmer</td>
+          <td>
+            A = gallery("lehmer", n)
+          </td>
+          <td>lehmer matrix with entries i/j for i ≤ j; symmetric positive definite and ill-conditioned.</td>
+        </tr>
+      
+    </table>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

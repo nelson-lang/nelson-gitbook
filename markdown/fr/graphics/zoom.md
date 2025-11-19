@@ -49,7 +49,7 @@ L'option de mode zoom peut être spécifiée en utilisant l'une des valeurs suiv
 
 <b>'off'</b> : Désactive le mode zoom. Notez que certaines interactions par défaut peuvent persister indépendamment du mode d'interaction.
 
-<b>'reset'</b> : Établit le niveau de zoom actuel comme niveau de zoom de base. Une fois défini, des actions ultérieures comme le dézoom, le double-clic dans les axes ou le clic sur l'icône <b>Restaurer la vue</b> sur la barre d'outils des axes ramèneront les axes à ce niveau de zoom de base.
+<b>'reset'</b> : Établit le niveau de zoom actuel comme niveau de zoom de base. Une fois défini, des actions ultérieures comme le dézoom, le double-clic dans les axes ou le clic sur l'icône<b>Restaurer la vue</b> sur la barre d'outils des axes ramèneront les axes à ce niveau de zoom de base.
 
 <b>'out'</b> : Restaure les axes actuels à leur niveau de zoom de base.
 

@@ -18,7 +18,7 @@ Modifier un numéro de date par champ.
 
 ## 📄 Description
 
-<b>r = addtodate(d, q, f)</b> ajoute la quantité <b>q</b> au champ de date indiqué <b>f</b> d'un numéro de date série scalaire <b>d</b>, et renvoie le numéro de date mis à jour <b>r</b>.
+<b>r = addtodate(d, q, f)</b> ajoute la quantité<b>q</b> au champ de date indiqué<b>f</b> d'un numéro de date série scalaire <b>d</b>, et renvoie le numéro de date mis à jour <b>r</b>.
 
 ## 💡 Exemple
 

@@ -1,11 +1,8 @@
 # Documentation and Help Management
 
-The Help Tools module provides functions to create, convert, and manage documentation for
-Nelson.
+The Help Tools module provides functions to create, convert, and manage documentation for Nelson.
 
-It supports generating help content in multiple formats, including HTML, Markdown, PDF,
-and website-ready formats, enabling developers to maintain and distribute comprehensive
-documentation efficiently.
+It supports generating help content in multiple formats, including HTML, Markdown, PDF, and website-ready formats, enabling developers to maintain and distribute comprehensive documentation efficiently.
 
 ## Functions
 

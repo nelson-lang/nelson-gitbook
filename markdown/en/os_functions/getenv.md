@@ -20,9 +20,9 @@ Get the value of an environment variable.
 
 If the environment variable does not exist, it will return ''.
 
-If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as <b>env_name</b>.
+If<b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as<b>env_name</b>.
 
-If <b>env_name</b> is a string scalar, then <b>s</b> is a character vector.
+If <b>env_name</b> is a string scalar, then<b>s</b> is a character vector.
 
 ## 💡 Example
 

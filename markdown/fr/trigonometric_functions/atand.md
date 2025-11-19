@@ -16,7 +16,7 @@ Tangente inverse en degrés.
 
 ## 📄 Description
 
-<b>atand</b> calcule la tangente inverse en degrés pour chaque élément de <b>x</b>.
+<b>atand</b> calcule la tangente inverse en degrés pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

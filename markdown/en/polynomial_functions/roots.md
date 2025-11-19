@@ -16,7 +16,7 @@ Find polynomial roots.
 
 ## 📄 Description
 
-<b>r = roots(c)</b> finds the roots of the polynomial <b>c</b>. <b>r</b> is a column vector.
+<b>r = roots(c)</b> finds the roots of the polynomial <b>c</b>.<b>r</b> is a column vector.
 
 This function uses the companion matrix of the polynomial to find the roots.
 

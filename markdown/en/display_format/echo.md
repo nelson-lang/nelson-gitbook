@@ -22,7 +22,7 @@ Controls the echoing during their execution.
 
 <b>echo('off')</b> disable echo mode.
 
-Without input and output arguments, <b>echo</b> toggles the current echo state.
+Without input and output arguments,<b>echo</b> toggles the current echo state.
 
 ## 💡 Example
 

@@ -16,7 +16,7 @@ Vérifie si une variable est globale.
 
 ## 📄 Description
 
-<b>isglobal</b> renvoie vrai si <b>variable_name</b> a été déclarée comme variable globale, et faux sinon.
+<b>isglobal</b> renvoie vrai si<b>variable_name</b> a été déclarée comme variable globale, et faux sinon.
 
 ## 💡 Exemple
 

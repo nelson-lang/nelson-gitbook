@@ -12,9 +12,9 @@ Adds path as directory where the qml engine searches for native plugins.
 
 ## 📄 Description
 
-<b>qml_addpluginpath</b> adds <b>path</b> as a directory where the engine searches for native plugins.
+<b>qml_addpluginpath</b> adds<b>path</b> as a directory where the engine searches for native plugins.
 
-By default, the list contains only <b>.</b>. The newly added path will be first in the <b>qml_pluginpathlist</b>.
+By default, the list contains only<b>.</b>. The newly added path will be first in the<b>qml_pluginpathlist</b>.
 
 ## 💡 Example
 

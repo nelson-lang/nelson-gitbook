@@ -28,7 +28,6 @@ matches("Nelson", 'Nelson')
 str = ["yellow", "green", "blue", "brown"];
 R = matches(str, ["yellow", "Brown"], 'IgnoreCase', true);
 
-
 ```
 
 ## 🔗 See also

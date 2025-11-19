@@ -31,7 +31,6 @@ isfile([tempdir(), 'test_rmfile.txt'])
 rmfile([tempdir(), 'test_rmfile.txt'])
 isfile([tempdir(), 'test_rmfile.txt'])
 
-
 ```
 
 ## 🔗 Voir aussi

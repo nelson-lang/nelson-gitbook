@@ -28,7 +28,7 @@ Linear 2-D plot.
 
 <b>plot(Y)</b> plots the columns of <b>Y</b> versus their index.
 
-<b>plot(X, Y)</b> plots line defined by <b>X</b> versus <b>Y</b> pair.
+<b>plot(X, Y)</b> plots line defined by <b>X</b> versus<b>Y</b> pair.
 
 <b>go = plot(...)</b> returns a column vector of line graphics objects.
 
@@ -71,7 +71,7 @@ The ColorSpec specifies the line color to use for each data series:
 | **'b'** | Color Blue    |
 | **'g'** | Color Green   |
 
-see <b>line</b> for more information about properties
+see<b>line</b> for more information about properties
 
 ## 💡 Examples
 

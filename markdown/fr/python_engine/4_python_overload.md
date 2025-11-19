@@ -6,20 +6,20 @@ La représentation des opérateurs Python dans Nelson.
 
 Nelson facilite l'utilisation des opérateurs surchargés suivants :
 
-| Symbole opérateur Python | Méthodes Python           | Méthodes Nelson |
-| ------------------------ | ------------------------- | --------------- |
-| - (opérateur unaire)     | **neg**                   | uminus, -a      |
-| + (opérateur unaire)     | **pos**                   | uplus, +a       |
-| + (opérateur binaire)    | **add**, **radd**         | plus, +         |
-| - (opérateur binaire)    | **sub**, **rsub**         | minus, -        |
-| \* (opérateur binaire)   | **mul**, **rmul**         | mtimes, \*      |
-| / (opérateur binaire)    | **truediv**, **rtruediv** | mrdivide, /     |
-| == (opérateur binaire)   | **eq**                    | eq, ==          |
-| > (opérateur binaire)    | **gt**                    | gt, >           |
-| < (opérateur binaire)    | **lt**                    | lt, <           |
-| != (opérateur binaire)   | **ne**                    | ne, ~=          |
-| >= (opérateur binaire)   | **ge**                    | ge, >=          |
-| <= (opérateur binaire)   | **le**                    | le, <=          |
+| Symbole opérateur Python | Méthodes Python                   | Méthodes Nelson |
+| ------------------------ | --------------------------------- | --------------- |
+| - (opérateur unaire)     | \_\_neg\_\_                       | uminus, -a      |
+| + (opérateur unaire)     | \_\_pos\_\_                       | uplus, +a       |
+| + (opérateur binaire)    | \_\_add\_\_, \_\_radd\_\_         | plus, +         |
+| - (opérateur binaire)    | \_\_sub\_\_, \_\_rsub\_\_         | minus, -        |
+| \* (opérateur binaire)   | \_\_mul\_\_, \_\_rmul\_\_         | mtimes, \*      |
+| / (opérateur binaire)    | \_\_truediv\_\_, \_\_rtruediv\_\_ | mrdivide, /     |
+| == (opérateur binaire)   | \_\_eq\_\_                        | eq, ==          |
+| > (opérateur binaire)    | \_\_gt\_\_                        | gt, >           |
+| < (opérateur binaire)    | \_\_lt\_\_                        | lt, <           |
+| != (opérateur binaire)   | \_\_ne\_\_                        | ne, ~=          |
+| >= (opérateur binaire)   | \_\_ge\_\_                        | ge, >=          |
+| <= (opérateur binaire)   | \_\_le\_\_                        | le, <=          |
 
 <b>isequal</b> builtin est également surchargée pour gérer les types Python.
 

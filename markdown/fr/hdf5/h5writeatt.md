@@ -17,7 +17,7 @@
 
 ## 📄 Description
 
-<b>h5writeatt</b> écrit l'attribut nommé <b>attname</b> avec la valeur <b>attvalue</b> dans le fichier HDF5.
+<b>h5writeatt</b> écrit l'attribut nommé<b>attname</b> avec la valeur <b>attvalue</b> dans le fichier HDF5.
 
 ## 💡 Exemple
 

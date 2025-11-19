@@ -1,7 +1,6 @@
 # Text editor
 
-The Text Editor module provides an embedded Nelson editor for creating, editing, and
-formatting Nelson scripts and files.
+The Text Editor module provides an embedded Nelson editor for creating, editing, and formatting Nelson scripts and files.
 
 ## Functions
 

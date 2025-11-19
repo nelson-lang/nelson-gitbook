@@ -9,7 +9,7 @@ Partitionne le groupe associé au communicateur spécifié en un nombre donné d
 ## 📥 Argument d'entrée
 
 - comm - objet MPI_Comm.
-- color - entier : identifiant du sous-groupe auquel le processus appelant sera affecté. La valeur de <code>color</code> doit être non négative.
+- color - entier : identifiant du sous-groupe auquel le processus appelant sera affecté. La valeur de<code>color</code>doit être non négative.
 - key - entier : rang relatif du processus appelant dans le groupe du nouveau communicateur.
 
 ## 📤 Argument de sortie

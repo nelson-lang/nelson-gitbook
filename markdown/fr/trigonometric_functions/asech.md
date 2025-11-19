@@ -16,7 +16,7 @@ Sécante hyperbolique inverse d'un angle en radians.
 
 ## 📄 Description
 
-<b>asech</b> calcule la sécante hyperbolique inverse de l'argument en radians pour chaque élément de <b>x</b>.
+<b>asech</b> calcule la sécante hyperbolique inverse de l'argument en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

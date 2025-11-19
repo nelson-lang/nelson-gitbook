@@ -60,8 +60,7 @@ img2 = imresize(img, [numrows numcols])
 </tr>
 <tr>
 <td class="param-name">method</td>
-<td>Interpolation method (optional, default: 'bicubic'): must be always at last position parameter.
-      </td>
+<td>Interpolation method (optional, default: 'bicubic'): must be always at last position parameter.</td>
 </tr>
 <tr>
 <td class="param-name">Name, Value</td>
@@ -95,32 +94,32 @@ img2 = imresize(img, [numrows numcols])
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.</p>
-        <p>For numeric and logical images, the default interpolation method is 'bicubic'.</p>
-        <p>When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function.</p>
-        <p>For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument.</p>
-        <p>Supported interpolation methods include</p>
-        <ul>
-            <li>'nearest': Nearest neighbor interpolation</li>
-            <li>'bilinear': Bilinear interpolation</li>
-            <li>'bicubic': Bicubic interpolation</li>
-            <li>'box': Box-shaped kernel</li>
-            <li>'lanczos2': Lanczos-2 kernel</li>
-            <li>'lanczos3': Lanczos-3 kernel</li>
-        </ul>
-        <p>Supported Pairs Name, Value:</p>
-        <ul>
-            <li>'Antialiasing': true/false (default: true)</li>
-            <li>'Colormap': 'optimized' (default) or 'original' (indexed image only)</li>
-            <li>'Dither': true (default) or false (indexed image only)</li>
-        </ul>
-        <p>Limitations:</p>
-        <ul>
-            <li>Input must be nonsparse and real for numeric images.</li>
-            <li>For large scale factors, output image size may be significantly larger than input.</li>
-            <li>Bicubic interpolation can produce pixel values outside the original range.</li>
-        </ul>
-    </div>
+    <p>The<b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.</p>
+    <p>For numeric and logical images, the default interpolation method is 'bicubic'.</p>
+    <p>When resizing, imresize applies the scale factor to both row and column dimensions unless a two-element vector is specified. If the output size is not an integer, imresize rounds up using the ceil function.</p>
+    <p>For indexed images, imresize returns the resized image and an optimized colormap by default. The original colormap can be returned using the 'Colormap' name-value argument.</p>
+    <p>Supported interpolation methods include</p>
+    <ul>
+      <li>'nearest': Nearest neighbor interpolation</li>
+      <li>'bilinear': Bilinear interpolation</li>
+      <li>'bicubic': Bicubic interpolation</li>
+      <li>'box': Box-shaped kernel</li>
+      <li>'lanczos2': Lanczos-2 kernel</li>
+      <li>'lanczos3': Lanczos-3 kernel</li>
+    </ul>
+    <p>Supported Pairs Name, Value:</p>
+    <ul>
+      <li>'Antialiasing': true/false (default: true)</li>
+      <li>'Colormap': 'optimized' (default) or 'original' (indexed image only)</li>
+      <li>'Dither': true (default) or false (indexed image only)</li>
+    </ul>
+    <p>Limitations:</p>
+    <ul>
+      <li>Input must be nonsparse and real for numeric images.</li>
+      <li>For large scale factors, output image size may be significantly larger than input.</li>
+      <li>Bicubic interpolation can produce pixel values outside the original range.</li>
+    </ul>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

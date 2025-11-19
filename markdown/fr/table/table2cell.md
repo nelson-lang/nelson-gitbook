@@ -17,7 +17,7 @@ Convertir une table en tableau de cellules
 
 ## 📄 Description
 
-<b>C = table2cell(T)</b> convertit la table <b>T</b> en un tableau de cellules <b>C</b>, où chaque variable de <b>T</b> est transformée en une colonne de cellules dans <b>C</b>.
+<b>C = table2cell(T)</b> convertit la table<b>T</b> en un tableau de cellules <b>C</b>, où chaque variable de<b>T</b> est transformée en une colonne de cellules dans <b>C</b>.
 
 La sortie <b>C</b> n'inclut aucune propriété de <b>T.Properties</b>.
 

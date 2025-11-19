@@ -17,7 +17,7 @@ Array elements that are members of another array.
 
 ## 📄 Description
 
-<b>T = ismember(A, B)</b> returns an array of logical where the data in <b>A</b> is found in <b>B</b>.
+<b>T = ismember(A, B)</b> returns an array of logical where the data in<b>A</b> is found in <b>B</b>.
 
 ## 💡 Example
 

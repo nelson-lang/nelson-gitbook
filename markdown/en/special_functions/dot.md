@@ -18,7 +18,7 @@ Dot product.
 
 ## 📄 Description
 
-<b>R = dot(A, B)</b> returns the scalar dot product of <b>A</b> and <b>B</b>.
+<b>R = dot(A, B)</b> returns the scalar dot product of<b>A</b> and <b>B</b>.
 
 For real vectors
 $$\mathbf{a}$$

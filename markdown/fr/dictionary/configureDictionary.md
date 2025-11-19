@@ -17,7 +17,7 @@ Génère un dictionnaire avec des types définis pour les clés et les valeurs.
 
 ## 📄 Description
 
-<b>d = configureDictionary(keyType, valueType)</b> initialise un dictionnaire vide qui impose des clés du type <b>keyType</b> et des valeurs du type <b>valueType</b>.
+<b>d = configureDictionary(keyType, valueType)</b> initialise un dictionnaire vide qui impose des clés du type<b>keyType</b> et des valeurs du type <b>valueType</b>.
 
 ## 💡 Exemple
 

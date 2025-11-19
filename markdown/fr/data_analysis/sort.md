@@ -28,9 +28,9 @@ Trier les éléments d'un tableau (algorithme de tri rapide).
 
 Arguments paires nom-valeur :
 
-<b>'MissingPlacement'</b> - Placement des valeurs manquantes : <b>'auto'</b> (par défaut), <b>'first'</b>, <b>'last'</b>.
+<b>'MissingPlacement'</b> - Placement des valeurs manquantes :<b>'auto'</b> (par défaut), <b>'first'</b>, <b>'last'</b>.
 
-<b>'ComparisonMethod'</b> - Méthode de comparaison des éléments : <b>'auto'</b> (par défaut), <b>'real'</b>, <b>'abs'</b>.
+<b>'ComparisonMethod'</b> - Méthode de comparaison des éléments :<b>'auto'</b> (par défaut), <b>'real'</b>, <b>'abs'</b>.
 
 ## Fonction(s) utilisée(s)
 

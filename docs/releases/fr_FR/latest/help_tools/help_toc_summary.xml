@@ -4,9 +4,9 @@
     <module>help_tools</module>
     <section name="Documentation et gestion de l'aide">
       <chapter_description>
-        <p>Le module Help Tools fournit des fonctions pour créer, convertir et gérer la documentation pour Nelson.</p>
-        <p>Il prend en charge la génération de contenu d'aide dans plusieurs formats, y compris HTML, Markdown, PDF et formats prêts pour le web, permettant aux développeurs de maintenir et de distribuer efficacement une documentation complète.</p>
-    </chapter_description>
+    <p>Le module Help Tools fournit des fonctions pour créer, convertir et gérer la documentation pour Nelson.</p>
+    <p>Il prend en charge la génération de contenu d'aide dans plusieurs formats, y compris HTML, Markdown, PDF et formats prêts pour le web, permettant aux développeurs de maintenir et de distribuer efficacement une documentation complète.</p>
+  </chapter_description>
       <keyword name="Aide Nelson" link="1_nelson_help_reference.html" description="Comment rédiger des fichiers XML d'aide pour Nelson (éléments, attributs, exemples, conseils)."/>
       <keyword name="buildhelp" link="buildhelp.html" description="Génère l'aide des modules de Nelson."/>
       <keyword name="buildhelpjson" link="buildhelpjson.html" description="Construire l'aide de Nelson au format JSON."/>

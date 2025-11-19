@@ -20,9 +20,9 @@ Differences and approximate derivatives.
 
 ## 📄 Description
 
-If <b>X</b> is a vector of length <b>n</b>, result of <b>diff(X)</b> is a vector of first differences <b>X(2) - X(1), ..., X(n) - X(n-1)</b>.
+If <b>X</b> is a vector of length <b>n</b>, result of<b>diff(X)</b> is a vector of first differences<b>X(2) - X(1), ..., X(n) - X(n-1)</b>.
 
-If <b>X</b> is a matrix, result of <b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.
+If <b>X</b> is a matrix, result of<b>diff(X)</b> is a matrix of column differences along the first non-singleton dimension.
 
 ## 💡 Example
 

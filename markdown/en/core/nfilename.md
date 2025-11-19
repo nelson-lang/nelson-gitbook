@@ -22,7 +22,7 @@ With the input argument 'fullpathext', the string includes the directory part of
 
 With the input argument 'fullpath', the string includes the directory part of the macro filename, but not the extension.
 
-<b>mfilename</b> is an alias on <b>nfilename</b> added for basic script compatibility.
+<b>mfilename</b> is an alias on<b>nfilename</b> added for basic script compatibility.
 
 ## 🔗 See also
 

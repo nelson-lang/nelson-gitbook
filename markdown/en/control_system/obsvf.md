@@ -24,13 +24,13 @@ Compute observability staircase form.
 
 ## 📄 Description
 
-<b>obsvf(A, B, C)</b> decomposes the given state-space system, characterized by matrices <b>A</b>, <b>B</b>, and <b>C</b>, into the observability staircase form, resulting in transformed matrices <b>Abar</b>, <b>Bbar</b>, and <b>Cbar</b>.
+<b>obsvf(A, B, C)</b> decomposes the given state-space system, characterized by matrices<b>A</b>, <b>B</b>, and<b>C</b>, into the observability staircase form, resulting in transformed matrices<b>Abar</b>, <b>Bbar</b>, and <b>Cbar</b>.
 
-It also provides a similarity transformation matrix <b>T</b> and a vector <b>k</b>.
+It also provides a similarity transformation matrix<b>T</b> and a vector <b>k</b>.
 
-The length of vector <b>k</b> corresponds to the number of states in <b>A</b>, and each entry in <b>k</b> signifies the number of observable states factored out at each step of the transformation matrix computation.
+The length of vector<b>k</b> corresponds to the number of states in<b>A</b>, and each entry in<b>k</b> signifies the number of observable states factored out at each step of the transformation matrix computation.
 
-The non-zero elements in <b>k</b> indicate the number of iterations needed for <b>T</b> calculation, and the sum of <b>k</b> represents the number of states in Ao, the observable portion of <b>Abar</b>.
+The non-zero elements in<b>k</b> indicate the number of iterations needed for<b>T</b> calculation, and the sum of<b>k</b> represents the number of states in Ao, the observable portion of<b>Abar</b>.
 
 ## 💡 Example
 

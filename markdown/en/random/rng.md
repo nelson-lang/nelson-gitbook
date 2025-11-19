@@ -56,7 +56,7 @@ Random Number Generator.
 
 <b>s = rng</b> returns current generator as an struct.
 
-<b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by <b>s = rng</b>.
+<b>rng(s)</b> restores the settings of the random number generator using a previous struct returned by<b>s = rng</b>.
 
 Available generators are:
 

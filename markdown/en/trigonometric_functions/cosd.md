@@ -16,7 +16,7 @@ Computes the cosine in degree for each element of x.
 
 ## 📄 Description
 
-<b>cosd</b> computes the cosine in degree for each element of <b>x</b>.
+<b>cosd</b> computes the cosine in degree for each element of<b>x</b>.
 
 ## 💡 Example
 

@@ -21,7 +21,7 @@ Sous-échantillonner un signal par un facteur entier.
 
 ## 📄 Description
 
-La fonction <b>downsample</b> renvoie chaque n-ième échantillon de la séquence d'entrée X, en commençant à l'indice d'échantillon (phase + 1). Par exemple, <b>downsample(X, 2)</b> renvoie les échantillons d'indice impair de X (1,3,5,...). Si X est une matrice, l'opération est appliquée par colonne par défaut, sauf si une dimension est spécifiée.
+La fonction<b>downsample</b> renvoie chaque n-ième échantillon de la séquence d'entrée X, en commençant à l'indice d'échantillon (phase + 1). Par exemple, <b>downsample(X, 2)</b> renvoie les échantillons d'indice impair de X (1,3,5,...). Si X est une matrice, l'opération est appliquée par colonne par défaut, sauf si une dimension est spécifiée.
 
 Aucun filtrage anti-repliement n'est effectué ; si vous devez réduire le contenu haute fréquence avant la décimation, envisagez d'utiliser <b>decimate</b> ou d'appliquer d'abord un filtre passe-bas.
 

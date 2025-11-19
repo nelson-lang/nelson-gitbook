@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1763495875
+// Auto-generated on 1763583418
 
 // Define the index in a globally accessible variable
 window.searchIndex = [

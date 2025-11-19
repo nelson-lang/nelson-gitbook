@@ -22,7 +22,7 @@ Résolution du problème des moindres carrés totaux par une approche SVD.
 - C_OUT - La partie principale (N+L)-by-(N+L) de ce tableau contient les vecteurs singuliers droits (transformés), y compris les vecteurs d'espace nul, le cas échéant, de C = [A | B].
 - S - Si INFO = 0, les valeurs singulières de la matrice C.
 - X - Si INFO = 0, la partie principale N-by-L de ce tableau contient la solution X du problème TLS spécifié par A et B.
-- IWARN - = 0 : pas d'avertissement ; = 1 : le rang de la matrice C a été réduit car une valeur singulière de multiplicité > 1 a été trouvée ; = 2 : le rang de C a été réduit car la matrice triangulaire supérieure F est (numériquement) singulière.
+- IWARN - = 0 : pas d'avertissement ; = 1 : le rang de la matrice C a été réduit car une valeur singulière de multiplicité >1 a été trouvée ; = 2 : le rang de C a été réduit car la matrice triangulaire supérieure F est (numériquement) singulière.
 - INFO - = 0 : sortie réussie ;
 
 ## 📄 Description

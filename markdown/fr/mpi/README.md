@@ -1,10 +1,8 @@
 # Interface de passage de messages (MPI)
 
-Dans le domaine du calcul parallèle, le Message Passing Interface (MPI) est la norme de facto
-pour implémenter des programmes sur plusieurs processeurs.
+Dans le domaine du calcul parallèle, le Message Passing Interface (MPI) est la norme de facto pour implémenter des programmes sur plusieurs processeurs.
 
-Ce module fournit des fonctions pour initialiser, gérer et finaliser des environnements MPI,
-ainsi que pour effectuer la communication entre processus, à la fois point à point et collective.
+Ce module fournit des fonctions pour initialiser, gérer et finaliser des environnements MPI, ainsi que pour effectuer la communication entre processus, à la fois point à point et collective.
 
 Il permet aux programmes Nelson de s'exécuter efficacement sur des systèmes à mémoire distribuée et des clusters.
 

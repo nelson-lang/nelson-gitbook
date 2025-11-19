@@ -28,7 +28,7 @@ Resize image by scale or output size
 
 ## 📄 Description
 
-The <b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.
+The<b>imresize</b> function resizes an image by a specified scale factor or to a specified output size. It supports grayscale, RGB, binary images, as well as indexed images with colormaps.
 
 For numeric and logical images, the default interpolation method is 'bicubic'.
 

@@ -17,7 +17,7 @@ Angle between two subspaces.
 
 ## 📄 Description
 
-<b>T = subspace(A, B)</b> finds the angle between two subspaces specified by the columns of <b>A</b> and <b>B</b>.
+<b>T = subspace(A, B)</b> finds the angle between two subspaces specified by the columns of<b>A</b> and <b>B</b>.
 
 ## 💡 Example
 

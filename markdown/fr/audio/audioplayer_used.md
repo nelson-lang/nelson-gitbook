@@ -18,7 +18,6 @@ Retourne la liste des handles audioplayer actuellement utilisés.
 
 ```matlab
 audioplayer_used(),delete(audioplayer_used())
-
 ```
 
 ## 🔗 Voir aussi

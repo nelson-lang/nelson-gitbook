@@ -34,7 +34,7 @@ Together, these features form the foundation upon which all other modules and us
 - [nelsonroot](nelsonroot.md) - Returns Nelson's root folder.
 - [nfilename](nfilename.md) - Returns the name of the currently executing file.
 - [mfilename](nfilename.md) - Returns the name of the currently executing file.
-- [pause ](pause.md) - Pauses script execution.
+- [pause](pause.md) - Pauses script execution.
 - [prefdir](prefdir.md) - Return the preferences directory used by Nelson.
 - [quit](quit.md) - Terminate Nelson application
 - [run](run.md) - Executes a script file (.m).

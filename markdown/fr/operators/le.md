@@ -17,7 +17,7 @@ inférieur ou égal, opérateur <=
 
 ## 📄 Description
 
-<b>C = le(A, B)</b> renvoie un tableau logique avec des éléments égaux à <b>true</b> lorsque A est inférieur ou égal à B.
+<b>C = le(A, B)</b> renvoie un tableau logique avec des éléments égaux à<b>true</b> lorsque A est inférieur ou égal à B.
 
 <b>le</b> compare uniquement la partie réelle des tableaux numériques.
 

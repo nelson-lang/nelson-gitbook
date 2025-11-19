@@ -18,7 +18,7 @@ Convert real Schur form to complex Schur form.
 
 ## 📄 Description
 
-<b>[Uc, Tc] = rsf2csf(U, T)</b> transforms the outputs of <b>[U, T] = schur(X)</b> for real matrices <b>X</b> from real Schur form to complex Schur form.
+<b>[Uc, Tc] = rsf2csf(U, T)</b> transforms the outputs of<b>[U, T] = schur(X)</b> for real matrices<b>X</b> from real Schur form to complex Schur form.
 
 ## 💡 Example
 

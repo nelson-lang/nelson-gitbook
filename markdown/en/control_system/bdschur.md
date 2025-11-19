@@ -19,7 +19,7 @@ Block-diagonal Schur factorization.
 
 ## 📄 Description
 
-<b>[T, B] = bdschur(A, CONDMAX)</b> calculates a transformation matrix <b>T</b>, where <b>B = T \ A \* T</b> results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.
+<b>[T, B] = bdschur(A, CONDMAX)</b> calculates a transformation matrix<b>T</b>, where<b>B = T \\ A \* T</b> results in a block diagonal matrix with each block being a quasi upper-triangular Schur matrix, ensuring the diagonalization of matrix A while preserving certain structural properties.
 
 ## Used function(s)
 

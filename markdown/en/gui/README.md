@@ -1,7 +1,6 @@
 # Gui module
 
-The GUI module provides functions to create and interact with graphical user interface
-components, dialogs, and application windows.
+The GUI module provides functions to create and interact with graphical user interface components, dialogs, and application windows.
 
 ## Functions
 

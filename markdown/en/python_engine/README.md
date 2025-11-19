@@ -1,10 +1,8 @@
 # Python engine
 
-The Python Engine module allows Nelson users to seamlessly interface with Python,
-leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.
+The Python Engine module allows Nelson users to seamlessly interface with Python, leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.
 
-It provides functions to run Python code, manage interpreter environments, and exchange
-data between Nelson and Python.
+It provides functions to run Python code, manage interpreter environments, and exchange data between Nelson and Python.
 
 ## Functions
 

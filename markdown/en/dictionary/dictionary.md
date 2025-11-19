@@ -54,7 +54,7 @@ Storing Multiple Data Types in a Dictionary:
 
 <b>value = d{keys}</b> retrieves the value associated with <b>keys</b> and returns the contents of the cell. If <b>keys</b> is an array, a comma-separated list of the corresponding values is returned. An error is thrown if the dictionary's values are configured to a datatype other than cell.
 
-<b>d{keys} = values</b> assigns cells containing the elements of <b>values</b> to the entries specified by the corresponding <b>keys</b>. An error is thrown if the dictionary's values are configured to a datatype other than cell.
+<b>d{keys} = values</b> assigns cells containing the elements of<b>values</b> to the entries specified by the corresponding<b>keys</b>. An error is thrown if the dictionary's values are configured to a datatype other than cell.
 
 ## 💡 Examples
 

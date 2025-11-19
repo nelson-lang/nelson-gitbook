@@ -21,7 +21,7 @@ Convertit un nombre décimal vers une autre base.
 
 <b>dec2base</b> convertit un nombre décimal vers une autre base.
 
-Des valeurs sont mises en cache pour accélérer les calculs ultérieurs ; utiliser <b>dec2base([], 2)</b> pour vider le cache.
+Des valeurs sont mises en cache pour accélérer les calculs ultérieurs ; utiliser<b>dec2base([], 2)</b> pour vider le cache.
 
 ## 💡 Exemple
 

@@ -4,10 +4,10 @@
     <module>dynamic_link</module>
     <section name="Liens dynamiques">
       <chapter_description>
-        <p>Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution.</p>
-        <p>Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.</p>
-        <p>Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois <b>configuremsvc</b> ou <b>configuremingw</b>.</p>
-    </chapter_description>
+    <p>Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution.</p>
+    <p>Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.</p>
+    <p>Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois<b>configuremsvc</b> ou <b>configuremingw</b>.</p>
+  </chapter_description>
       <keyword name="Compilation C/C++ à la volée" link="1_c_cpp_build_on_fly.html" description="Compiler du code C/C++ à la volée"/>
       <keyword name="Compilateurs C/C++ supportés" link="2_supported_compilers.html" description=""/>
       <keyword name="Types libpointer" link="C_datatype.html" description="Équivalences entre types C et Nelson"/>

@@ -20,11 +20,11 @@ Measure time required to run function.
 
 ## 📄 Description
 
-<b>t = timeit(f)</b> measures the time elapsed required to run the function specified by the function handle <b>f</b>.
+<b>t = timeit(f)</b> measures the time elapsed required to run the function specified by the function handle<b>f</b>.
 
-To perform a robust measurement, <b>timeit</b> calls function multiple times and returns the median of the measurements.
+To perform a robust measurement,<b>timeit</b> calls function multiple times and returns the median of the measurements.
 
-If the function runs fast, <b>timeit</b> might call the function many times.
+If the function runs fast,<b>timeit</b> might call the function many times.
 
 ## 💡 Examples
 

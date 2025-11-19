@@ -19,7 +19,7 @@ Vérifie si une chaîne commence par un motif.
 
 ## 📄 Description
 
-<b>startsWith</b> renvoie <b>true</b> si <b>str</b> commence par <b>pattern</b>.
+<b>startsWith</b> renvoie <b>true</b> si <b>str</b> commence par<b>pattern</b>.
 
 ## 💡 Exemple
 

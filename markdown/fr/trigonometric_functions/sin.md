@@ -16,7 +16,7 @@ Calcule le sinus en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>sin</b> calcule le sinus en radians pour chaque élément de <b>x</b>.
+<b>sin</b> calcule le sinus en radians pour chaque élément de<b>x</b>.
 
 La fonction sinus est définie comme :
 $$\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}$$

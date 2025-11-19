@@ -15,7 +15,7 @@ Write table to file.
 
 ## 📄 Description
 
-<b>writetable(T)</b> writes the table <b>T</b> to a comma-delimited text file.
+<b>writetable(T)</b> writes the table<b>T</b> to a comma-delimited text file.
 
 The file name is derived from the table's workspace variable name, with the <code>.txt</code> extension appended.
 

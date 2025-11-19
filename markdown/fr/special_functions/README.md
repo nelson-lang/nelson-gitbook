@@ -14,7 +14,6 @@ Ce module améliore les capacités de Nelson en offrant une gamme de fonctions q
 - [factor](factor.md) - Facteurs premiers
 - [gamma](gamma.md) - Fonction spéciale gamma
 - [gammaln](gammaln.md) - Logarithme de la fonction gamma
-
 - [gcd](gcd.md) - Plus grand commun diviseur
 - [interp1](interp1.md) - Interpolation linéaire de données 1-D
 - [peaks](peaks.md) - Fonction peaks

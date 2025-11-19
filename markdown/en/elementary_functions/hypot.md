@@ -19,7 +19,7 @@ Square root of sum of squares
 
 <b>hypot</b> computes the hypothenuse.
 
-If one or both inputs is NaN, then <b>hypot</b> returns <b>NaN</b>.
+If one or both inputs is NaN, then <b>hypot</b> returns<b>NaN</b>.
 
 ## 💡 Example
 

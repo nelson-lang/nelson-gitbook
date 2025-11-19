@@ -17,7 +17,7 @@ Matrice de Bernstein
 
 ## 📄 Description
 
-<b>B = bernsteinMatrix(n, t)</b> construit une matrice de Bernstein <b>B</b> de dimensions length(t)-par-(n+1) lorsque t est un vecteur.
+<b>B = bernsteinMatrix(n, t)</b> construit une matrice de Bernstein<b>B</b> de dimensions length(t)-par-(n+1) lorsque t est un vecteur.
 
 La matrice de Bernstein est aussi appelée matrice de Bézier.
 

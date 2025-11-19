@@ -18,7 +18,7 @@ Convertit un nombre en base 16 en décimal.
 
 <b>hex2dec</b> convertit un nombre en base 16 en décimal.
 
-Remarque : <b>hex2dec</b> et <b>dec2hex</b> sont des opérations réciproques.
+Remarque : <b>hex2dec</b> et<b>dec2hex</b> sont des opérations réciproques.
 
 ## 💡 Exemple
 

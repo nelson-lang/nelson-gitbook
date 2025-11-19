@@ -4,7 +4,7 @@
 
 <b>Insertion dans une table</b>
 
-Pour insérer de nouvelles données dans une table, utilisez la notation par point ou les accolades <b>{}</b> pour une insertion élément par élément. Vous pouvez ajouter de nouvelles lignes, colonnes ou mettre à jour des données existantes.
+Pour insérer de nouvelles données dans une table, utilisez la notation par point ou les accolades<b>{}</b> pour une insertion élément par élément. Vous pouvez ajouter de nouvelles lignes, colonnes ou mettre à jour des données existantes.
 
 voir exemples : <b>Ajout d'une nouvelle colonne</b> et <b>Mise à jour d'un élément existant</b>
 
@@ -34,7 +34,7 @@ voir exemples : <b>Concaténation verticale</b>
 
 <b>Conversion des types de variables</b>
 
-Vous pouvez convertir les variables d'une table en utilisant la propriété <b>VariableTypes</b>.
+Vous pouvez convertir les variables d'une table en utilisant la propriété<b>VariableTypes</b>.
 
 voir exemples : exemple <b>VariableTypes</b>
 

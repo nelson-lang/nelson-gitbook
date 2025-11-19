@@ -17,7 +17,7 @@ Inverse de permute
 
 ## 📄 Description
 
-<b>ipermute</b> permute les dimensions d'un tableau (dans l'ordre inverse de <b>permute</b>).
+<b>ipermute</b> permute les dimensions d'un tableau (dans l'ordre inverse de<b>permute</b>).
 
 ## 💡 Exemple
 

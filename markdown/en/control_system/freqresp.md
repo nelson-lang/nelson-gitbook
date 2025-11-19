@@ -19,9 +19,9 @@ Evaluate system response over a grid of frequencies.
 
 ## 📄 Description
 
-<b>freqresp</b> computes the frequency response of a dynamic system <b>sys</b> at specified frequencies <b>w</b>.
+<b>freqresp</b> computes the frequency response of a dynamic system<b>sys</b> at specified frequencies <b>w</b>.
 
-To acquire magnitude and phase data, along with visual representations of the frequency response, utilize the <b>bode</b> function.
+To acquire magnitude and phase data, along with visual representations of the frequency response, utilize the<b>bode</b> function.
 
 ## 💡 Examples
 

@@ -22,7 +22,7 @@ Chaque colonne du tableau de cellules d'entrée devient les données d'une varia
 
 Pour générer des noms de variables dans la table de sortie, <b>cell2table</b> ajoute les numéros de colonne au nom du tableau d'entrée.
 
-Si le tableau d'entrée n'a pas de nom, <b>cell2table</b> attribue des noms de variables par défaut au format <b>"Var1", "Var2", ... , "VarN"</b>, où <b>N</b> est le nombre de colonnes dans le tableau de cellules.
+Si le tableau d'entrée n'a pas de nom,<b>cell2table</b> attribue des noms de variables par défaut au format<b>"Var1", "Var2", ... , "VarN"</b>, où<b>N</b> est le nombre de colonnes dans le tableau de cellules.
 
 ## 💡 Exemple
 

@@ -23,7 +23,7 @@ Feedback connection of multiple models.
 
 <b>cloop</b> forms the closed-loop system when unity feedback is used.
 
-This function is deprecated and has limitations, please see <b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".
+This function is deprecated and has limitations, please see<b>feedback</b>. It is only applicable when the block in the feedback path is unity. Furthermore, its usage is restricted to system models expressed solely in transfer function form, and not in the more general "system".
 
 ## 💡 Example
 

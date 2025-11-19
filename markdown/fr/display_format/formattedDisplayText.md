@@ -18,7 +18,7 @@ Capturer la sortie d'affichage en tant que chaîne.
 
 ## 📄 Description
 
-<b>str = formattedDisplayText(V)</b> renvoie la sortie d'affichage de <b>V</b> sous forme de chaîne.
+<b>str = formattedDisplayText(V)</b> renvoie la sortie d'affichage de<b>V</b> sous forme de chaîne.
 
 La chaîne est équivalente à la sortie de <b>disp(V)</b>.
 

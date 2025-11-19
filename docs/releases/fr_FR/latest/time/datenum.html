@@ -74,119 +74,119 @@ d = datenum(datestr, format)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p><b>d = datenum()</b> renvoie le numéro de date série correspondant à la date courante.</p>
-        <p><b>d = datenum(datevec)</b> convertit un vecteur date en numéro de date série.</p>
-        <p><b>d = datenum(datestr)</b> et <b>d = datenum(datestr, format)</b> convertissent une chaîne en numéro de date série.</p>
-        <p></p>
+    <p><b>d = datenum()</b> renvoie le numéro de date série correspondant à la date courante.</p>
+    <p><b>d = datenum(datevec)</b> convertit un vecteur date en numéro de date série.</p>
+    <p><b>d = datenum(datestr)</b> et<b>d = datenum(datestr, format)</b> convertissent une chaîne en numéro de date série.</p>
+    <p></p>
     <p>Formats de date/heure pris en charge :</p>
-        <p><b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17</p>
-        <p><b>dd-mmm-yyyy</b> 10-Mar-2010</p>
-        <p><b>mm/dd/yyyy</b> 03/10/2010</p>
-        <p><b>mm/dd/yy</b> 03/10/00</p>
-        <p><b>mm/dd</b> 03/10</p>
-        <p><b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17</p>
-        <p><b>mmm.dd,yyyy</b> Mar.10,2010</p>
-        <p><b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17</p>
-        <p><b>yyyy-mm-dd</b> 2010-03-10</p>
-        <p><b>yyyy/mm/dd</b> 2000/03/10</p>
-        <p><b>HH:MM:SS</b> 16:48:17</p>
-        <p><b>HH:MM:SS PM</b> 3:48:17 PM</p>
-        <p><b>HH:MM</b> 16:48</p>
-        <p><b>HH:MM PM</b> 3:35 PM</p>
-        <p></p>
-        <p>Si le format n'est pas spécifié, le format par défaut est <b>dd-mmm-yyyy</b>.</p>
-        <p></p>
-        <p>Si un format est spécifié et qu'il n'utilise pas un format prédéfini, le format doit être indiqué comme un vecteur de caractères ou un scalaire string composé d'identifiants symboliques.</p>
-        <p>Le format du texte d'entrée pour représenter les dates et heures, exprimé comme vecteur de caractères ou scalaire string composé d'identifiants symboliques.</p>
-        <p></p>
-        <table border="1">
-            <tr>
-                <th>Identifiant symbolique</th>
-                <th>Description</th>
-                <th>Exemple</th>
-            </tr>
-            <tr>
-                <td>yyyy</td>
-                <td>Année complète</td>
-                <td>1995, 2012</td>
-            </tr>
-            <tr>
-                <td>yy</td>
-                <td>Année sur deux chiffres</td>
-                <td>89, 01</td>
-            </tr>
-            <tr>
-                <td>QQ</td>
-                <td>Trimestre (lettre Q suivie d'un chiffre)</td>
-                <td>Q1</td>
-            </tr>
-            <tr>
-                <td>mmmm</td>
-                <td>Mois en nom complet</td>
-                <td>mars, décembre</td>
-            </tr>
-            <tr>
-                <td>mmm</td>
-                <td>Mois en trois premières lettres</td>
-                <td>mar, déc</td>
-            </tr>
-            <tr>
-                <td>mm</td>
-                <td>Mois sur deux chiffres</td>
-                <td>04, 12</td>
-            </tr>
-            <tr>
-                <td>m</td>
-                <td>Mois (première lettre en majuscule)</td>
-                <td>M, D</td>
-            </tr>
-            <tr>
-                <td>dddd</td>
-                <td>Jour en nom complet</td>
-                <td>lundi, mardi</td>
-            </tr>
-            <tr>
-                <td>ddd</td>
-                <td>Jour en trois premières lettres</td>
-                <td>lun, mar</td>
-            </tr>
-            <tr>
-                <td>dd</td>
-                <td>Jour sur deux chiffres</td>
-                <td>06, 21</td>
-            </tr>
-            <tr>
-                <td>d</td>
-                <td>Jour (première lettre en majuscule)</td>
-                <td>L, M</td>
-            </tr>
-            <tr>
-                <td>HH</td>
-                <td>Heure sur deux chiffres (pas de zéro initial lorsque l'identifiant AM ou PM est utilisé)</td>
-                <td>06, 6 AM</td>
-            </tr>
-            <tr>
-                <td>MM</td>
-                <td>Minute sur deux chiffres</td>
-                <td>11, 01</td>
-            </tr>
-            <tr>
-                <td>SS</td>
-                <td>Seconde sur deux chiffres</td>
-                <td>06, 59</td>
-            </tr>
-            <tr>
-                <td>FFF</td>
-                <td>Milliseconde sur trois chiffres</td>
-                <td>056</td>
-            </tr>
-            <tr>
-                <td>AM or PM</td>
-                <td>AM ou PM inséré dans le texte représentant l'heure</td>
-                <td>17:46:02 PM</td>
-            </tr>
-        </table>
-    </div>
+    <p><b>dd-mmm-yyyy HH:MM:SS</b> 10-Mar-2010 16:48:17</p>
+    <p><b>dd-mmm-yyyy</b> 10-Mar-2010</p>
+    <p><b>mm/dd/yyyy</b> 03/10/2010</p>
+    <p><b>mm/dd/yy</b> 03/10/00</p>
+    <p><b>mm/dd</b> 03/10</p>
+    <p><b>mmm.dd,yyyy HH:MM:SS</b> Mar.10,2010 16:48:17</p>
+    <p><b>mmm.dd,yyyy</b> Mar.10,2010</p>
+    <p><b>yyyy-mm-dd HH:MM:SS</b> 2010-03-10 16:48:17</p>
+    <p><b>yyyy-mm-dd</b> 2010-03-10</p>
+    <p><b>yyyy/mm/dd</b> 2000/03/10</p>
+    <p><b>HH:MM:SS</b> 16:48:17</p>
+    <p><b>HH:MM:SS PM</b> 3:48:17 PM</p>
+    <p><b>HH:MM</b> 16:48</p>
+    <p><b>HH:MM PM</b> 3:35 PM</p>
+    <p></p>
+    <p>Si le format n'est pas spécifié, le format par défaut est <b>dd-mmm-yyyy</b>.</p>
+    <p></p>
+    <p>Si un format est spécifié et qu'il n'utilise pas un format prédéfini, le format doit être indiqué comme un vecteur de caractères ou un scalaire string composé d'identifiants symboliques.</p>
+    <p>Le format du texte d'entrée pour représenter les dates et heures, exprimé comme vecteur de caractères ou scalaire string composé d'identifiants symboliques.</p>
+    <p></p>
+    <table border="1">
+      <tr>
+        <th>Identifiant symbolique</th>
+        <th>Description</th>
+        <th>Exemple</th>
+      </tr>
+      <tr>
+        <td>yyyy</td>
+        <td>Année complète</td>
+        <td>1995, 2012</td>
+      </tr>
+      <tr>
+        <td>yy</td>
+        <td>Année sur deux chiffres</td>
+        <td>89, 01</td>
+      </tr>
+      <tr>
+        <td>QQ</td>
+        <td>Trimestre (lettre Q suivie d'un chiffre)</td>
+        <td>Q1</td>
+      </tr>
+      <tr>
+        <td>mmmm</td>
+        <td>Mois en nom complet</td>
+        <td>mars, décembre</td>
+      </tr>
+      <tr>
+        <td>mmm</td>
+        <td>Mois en trois premières lettres</td>
+        <td>mar, déc</td>
+      </tr>
+      <tr>
+        <td>mm</td>
+        <td>Mois sur deux chiffres</td>
+        <td>04, 12</td>
+      </tr>
+      <tr>
+        <td>m</td>
+        <td>Mois (première lettre en majuscule)</td>
+        <td>M, D</td>
+      </tr>
+      <tr>
+        <td>dddd</td>
+        <td>Jour en nom complet</td>
+        <td>lundi, mardi</td>
+      </tr>
+      <tr>
+        <td>ddd</td>
+        <td>Jour en trois premières lettres</td>
+        <td>lun, mar</td>
+      </tr>
+      <tr>
+        <td>dd</td>
+        <td>Jour sur deux chiffres</td>
+        <td>06, 21</td>
+      </tr>
+      <tr>
+        <td>d</td>
+        <td>Jour (première lettre en majuscule)</td>
+        <td>L, M</td>
+      </tr>
+      <tr>
+        <td>HH</td>
+        <td>Heure sur deux chiffres (pas de zéro initial lorsque l'identifiant AM ou PM est utilisé)</td>
+        <td>06, 6 AM</td>
+      </tr>
+      <tr>
+        <td>MM</td>
+        <td>Minute sur deux chiffres</td>
+        <td>11, 01</td>
+      </tr>
+      <tr>
+        <td>SS</td>
+        <td>Seconde sur deux chiffres</td>
+        <td>06, 59</td>
+      </tr>
+      <tr>
+        <td>FFF</td>
+        <td>Milliseconde sur trois chiffres</td>
+        <td>056</td>
+      </tr>
+      <tr>
+        <td>AM or PM</td>
+        <td>AM ou PM inséré dans le texte représentant l'heure</td>
+        <td>17:46:02 PM</td>
+      </tr>
+    </table>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

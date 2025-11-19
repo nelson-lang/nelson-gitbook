@@ -4,7 +4,7 @@ Quelques exemples pour montrer comment utiliser l'interface COM.
 
 ## 📄 Description
 
-Voir le répertoire <b>[modulepath('com_engine'), '/examples']</b>.
+Voir le répertoire <b>[modulepath('com\_engine'), '/examples']</b>.
 
 Interagit avec Internet Explorer, Word, Excel, voix de synthèse, scripts VB ...
 

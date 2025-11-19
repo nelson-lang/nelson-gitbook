@@ -30,7 +30,7 @@
 
 <b>go = plot3(...)</b> returns a column vector of line graphics objects.
 
-see <b>line</b> or <b>plot</b> for more information about properties
+see <b>line</b> or<b>plot</b> for more information about properties
 
 ## 💡 Examples
 

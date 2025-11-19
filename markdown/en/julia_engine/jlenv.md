@@ -18,9 +18,9 @@ Change default environment of Julia interpreter.
 
 ## 📄 Description
 
-Use <b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.
+Use<b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.
 
-The value set by <b>jlenv</b> is persistent across Nelson sessions.
+The value set by<b>jlenv</b> is persistent across Nelson sessions.
 
 Properties:
 
@@ -38,13 +38,13 @@ Properties:
 
 Use environment variables to force julia environment at each startup (usefull for snapcraft or docker distribution):
 
-<b>**NELSON_JULIA_VERSION**</b>: example "1.11"
+<b>\_\_NELSON_JULIA_VERSION\_\_</b>: example "1.11"
 
-<b>**NELSON_JULIA_EXECUTABLE**</b>: example "/usr/bin/julia"
+<b>\_\_NELSON_JULIA_EXECUTABLE\_\_</b>: example "/usr/bin/julia"
 
-<b>**NELSON_JULIA_LIBRARY**</b>: example "libjulia.so"
+<b>\_\_NELSON_JULIA_LIBRARY\_\_</b>: example "libjulia.so"
 
-<b>**NELSON_JULIA_HOME**</b>: example "/usr"
+<b>\_\_NELSON_JULIA_HOME\_\_</b>: example "/usr"
 
 All environment variables must exist and valid to be considered.
 

@@ -27,7 +27,6 @@ e = actxserver('Excel.Application');
 isprop(e, 'Window')
 delete(e)
 clear e
-
 ```
 
 ## 🔗 See also

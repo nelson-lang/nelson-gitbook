@@ -24,7 +24,7 @@ Attendre la complétion des futures.
 
 <b>wait(f, state)</b> suspend l'exécution jusqu'à ce que chaque élément du tableau Future <b>f</b> ait sa propriété 'State' définie sur <i>state</i>.
 
-<b>tf = wait(f, state, timeout)</b> suspend l'exécution pour un maximum de <i>timeout</i> secondes.
+<b>tf = wait(f, state, timeout)</b> suspend l'exécution pour un maximum de<i>timeout</i>secondes.
 
 ## 💡 Exemple
 

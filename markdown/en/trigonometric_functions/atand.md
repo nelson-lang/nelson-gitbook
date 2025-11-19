@@ -16,7 +16,7 @@ Inverse tangent in degrees.
 
 ## 📄 Description
 
-<b>atand</b> computes the inverse tangent in degrees for each element of <b>x</b>.
+<b>atand</b> computes the inverse tangent in degrees for each element of<b>x</b>.
 
 ## 💡 Example
 

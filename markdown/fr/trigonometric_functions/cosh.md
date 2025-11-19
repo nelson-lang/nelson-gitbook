@@ -16,7 +16,7 @@ Calcule le cosinus hyperbolique en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>cosh</b> calcule le cosinus hyperbolique en radians pour chaque élément de <b>x</b>.
+<b>cosh</b> calcule le cosinus hyperbolique en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

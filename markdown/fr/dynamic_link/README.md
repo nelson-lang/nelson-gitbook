@@ -4,7 +4,7 @@ Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du c
 
 Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.
 
-Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois configuremsvc ou configuremingw.
+Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une foisconfiguremsvc ou configuremingw.
 
 ## Functions
 

@@ -4,11 +4,9 @@
     <module>parallel</module>
     <section name="Parallel">
       <chapter_description>
-        <p>Le module parallel fournit des outils pour exécuter des calculs de manière asynchrone en
-            arrière-plan, gérer la planification des tâches et récupérer les résultats.</p>
-        <p>Il permet aux programmes Nelson d'exécuter des fonctions de manière concurrente, améliorant
-            l'efficacité et la réactivité en déléguant le travail à des workers en arrière-plan.</p>
-    </chapter_description>
+    <p>Le module parallel fournit des outils pour exécuter des calculs de manière asynchrone en arrière-plan, gérer la planification des tâches et récupérer les résultats.</p>
+    <p>Il permet aux programmes Nelson d'exécuter des fonctions de manière concurrente, améliorant              l'efficacité et la réactivité en déléguant le travail à des workers en arrière-plan.</p>
+  </chapter_description>
       <keyword name="afterAll" link="afterAll.html" description="Exécuter une fonction après que toutes les fonctions en arrière-plan soient terminées."/>
       <keyword name="afterEach" link="afterEach.html" description="Exécuter une fonction après chaque fin d'exécution en arrière-plan."/>
       <keyword name="backgroundPool" link="backgroundPool.html" description="Environnement pour exécuter du code Nelson en arrière-plan."/>

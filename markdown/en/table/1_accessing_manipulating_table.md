@@ -4,15 +4,15 @@
 
 <b>Insertion into a Table</b>
 
-To insert new data into a table, use dot notation or curly braces <b>{}</b> for specific element-wise insertion. You can add new rows, columns, or update existing data.
+To insert new data into a table, use dot notation or curly braces<b>{}</b> for specific element-wise insertion. You can add new rows, columns, or update existing data.
 
-see examples: <b>Adding a New Column</b> and <b>Updating an Existing Element</b>
+see examples: <b>Adding a New Column</b> and<b>Updating an Existing Element</b>
 
 <b>Extraction from a Table</b>
 
 You can extract specific rows, columns, or individual elements using indexing or by referencing variable names.
 
-see examples: <b>Extracting Specific Columns</b> and <b>Extracting Specific Rows</b>
+see examples: <b>Extracting Specific Columns</b> and<b>Extracting Specific Rows</b>
 
 <b>Removing Data from a Table</b>
 
@@ -34,7 +34,7 @@ see examples: <b>Vertical Concatenation</b>
 
 <b>Convert variable types</b>
 
-You can convert table variables by using the <b>VariableTypes</b> property.
+You can convert table variables by using the<b>VariableTypes</b> property.
 
 see examples: <b>VariableTypes</b> example
 

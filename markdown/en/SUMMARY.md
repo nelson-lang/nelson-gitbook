@@ -65,7 +65,7 @@
   - [nelsonroot](./core/nelsonroot.md)
   - [nfilename](./core/nfilename.md)
   - [mfilename](./core/nfilename.md)
-  - [pause ](./core/pause.md)
+  - [pause](./core/pause.md)
   - [prefdir](./core/prefdir.md)
   - [quit](./core/quit.md)
   - [run](./core/run.md)

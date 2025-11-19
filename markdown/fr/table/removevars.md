@@ -21,7 +21,7 @@ Supprimer des variables d'une table.
 
 Vous pouvez spécifier les variables par nom, position ou en utilisant des indices logiques.
 
-Vous pouvez également supprimer des variables d'une table en utilisant <b>T(:, varsNames) = []</b>.
+Vous pouvez également supprimer des variables d'une table en utilisant<b>T(:, varsNames) = []</b>.
 
 ## 💡 Exemple
 

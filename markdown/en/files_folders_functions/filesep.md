@@ -17,7 +17,7 @@ Return the file separator character for the current platform.
 ## 💡 Example
 
 ```matlab
- runnable="cli"A = filesep
+runnable="cli"A = filesep
 ```
 
 ## 🔗 See also

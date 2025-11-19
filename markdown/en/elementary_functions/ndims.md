@@ -16,7 +16,7 @@ Number of dimensions of an array.
 
 ## 📄 Description
 
-<b>n = ndims(M)</b> return the number of dimension of the array <b>M</b>.
+<b>n = ndims(M)</b> return the number of dimension of the array<b>M</b>.
 
 <b>M</b> is greater than or equal to 2.
 

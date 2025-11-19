@@ -14,7 +14,7 @@ Supprime dynamiquement un builtin au moment de l'exécution.
 
 <b>removegateway(dyn_lib_path)</b> supprime dynamiquement un builtin au moment de l'exécution.
 
-La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé <b>RemoveGateway</b>.
+La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé<b>RemoveGateway</b>.
 
 Si la gateway n'était pas chargée, aucune erreur ni avertissement ne sera levé. Si le fichier n'existe pas, une erreur est levée.
 

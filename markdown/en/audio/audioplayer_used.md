@@ -18,7 +18,6 @@ Returns list of current used audioplayer handle.
 
 ```matlab
 audioplayer_used(),delete(audioplayer_used())
-
 ```
 
 ## 🔗 See also

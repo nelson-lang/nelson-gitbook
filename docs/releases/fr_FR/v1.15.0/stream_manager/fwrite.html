@@ -83,90 +83,87 @@ count = fwrite(fid, data, precision, arch)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Écrit des données en format binaire dans le fichier spécifié par le descripteur fid.</p>
-        <p>L'encodage des caractères utilise le paramètre <b>fopen</b>.</p>
-        <p>Architectures supportées :</p>
-        <p>
-            <b>native</b> , <b>n</b> : format de la machine courante.</p>
-            <p>
-                <b>ieee-be</b>, <b>b</b> : IEEE big endian.</p>
-                <p>
-                    <b>ieee-le</b>, <b>l</b> : IEEE little endian.</p>
-                    <p>précision supportée :</p>
-                    <p>
-                        <table border="1" cellpadding="4" cellspacing="0">
-                            <tr>
-                                <th>Type valeur</th>
-                                <th>Précision</th>
-                                <th>Bits (Octets)</th>
-                            </tr>
-                            <tr>
-                                <td>Logical</td>
-                                <td>'logical'</td>
-                                <td>platform-dependent</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">nombre à virgule flottante</td>
-                                <td>'double', 'real*8', 'float64'</td>
-                                <td>64 (8)</td>
-                            </tr>
-                            <tr>
-                                <td>'single', 'real*4', 'float32'</td>
-                                <td>32 (4)</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="5">Integers, signed</td>
-                                <td>'int'</td>
-                                <td>32 (4)</td>
-                            </tr>
-                            <tr>
-                                <td>'int8', 'integer*1', 'schar'</td>
-                                <td>8 (1)</td>
-                            </tr>
-                            <tr>
-                                <td>'int16', 'integer*2'</td>
-                                <td>16 (2)</td>
-                            </tr>
-                            <tr>
-                                <td>'int32', 'integer*4'</td>
-                                <td>32 (4)</td>
-                            </tr>
-                            <tr>
-                                <td>'int64', 'integer*8'</td>
-                                <td>64 (8)</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="4">Entiers, non signés</td>
-                                <td>'uint8', 'uchar'</td>
-                                <td>8 (1)</td>
-                            </tr>
-                            <tr>
-                                <td>'uint16'</td>
-                                <td>16 (2)</td>
-                            </tr>
-                            <tr>
-                                <td>'uint32'</td>
-                                <td>32 (4)</td>
-                            </tr>
-                            <tr>
-                                <td>'uint64'</td>
-                                <td>64 (8)</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Caractères</td>
-                                <td>'char', '*char'</td>
-                                <td>dépend de l'encodage avec fopen.</td>
-                            </tr>
-                            <tr>
-                                <td>'char*1'</td>
-                                <td>dépend de l'encodage avec fopen.</td>
-                            </tr>
-                        </table>
-                    </p>
-                    <p>if <b>fwrite</b> échoue, il renvoie une valeur négative.</p>
-                    <p>if <b>fwrite</b> réussit, il renvoie le nombre d'éléments écrits avec succès.</p>
-                    <p>if <b>fwrite</b> écrit des caractères, il renvoie le nombre de caractères écrits avec succès et non le nombre d'éléments.</p>
-                </div>
+    <p>Écrit des données en format binaire dans le fichier spécifié par le descripteur fid.</p>
+    <p>L'encodage des caractères utilise le paramètre <b>fopen</b>.</p>
+    <p>Architectures supportées :</p>
+    <p><b>native</b> , <b>n</b> : format de la machine courante.</p>
+    <p><b>ieee-be</b>, <b>b</b> : IEEE big endian.</p>
+    <p><b>ieee-le</b>, <b>l</b> : IEEE little endian.</p>
+    <p>précision supportée :</p>
+    <p>
+      <table border="1" cellpadding="4" cellspacing="0">
+        <tr>
+          <th>Type valeur</th>
+          <th>Précision</th>
+          <th>Bits (Octets)</th>
+        </tr>
+        <tr>
+          <td>Logical</td>
+          <td>'logical'</td>
+          <td>platform-dependent</td>
+        </tr>
+        <tr>
+          <td rowspan="2">nombre à virgule flottante</td>
+          <td>'double', 'real*8', 'float64'</td>
+          <td>64 (8)</td>
+        </tr>
+        <tr>
+          <td>'single', 'real*4', 'float32'</td>
+          <td>32 (4)</td>
+        </tr>
+        <tr>
+          <td rowspan="5">Integers, signed</td>
+          <td>'int'</td>
+          <td>32 (4)</td>
+        </tr>
+        <tr>
+          <td>'int8', 'integer*1', 'schar'</td>
+          <td>8 (1)</td>
+        </tr>
+        <tr>
+          <td>'int16', 'integer*2'</td>
+          <td>16 (2)</td>
+        </tr>
+        <tr>
+          <td>'int32', 'integer*4'</td>
+          <td>32 (4)</td>
+        </tr>
+        <tr>
+          <td>'int64', 'integer*8'</td>
+          <td>64 (8)</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Entiers, non signés</td>
+          <td>'uint8', 'uchar'</td>
+          <td>8 (1)</td>
+        </tr>
+        <tr>
+          <td>'uint16'</td>
+          <td>16 (2)</td>
+        </tr>
+        <tr>
+          <td>'uint32'</td>
+          <td>32 (4)</td>
+        </tr>
+        <tr>
+          <td>'uint64'</td>
+          <td>64 (8)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Caractères</td>
+          <td>'char', '*char'</td>
+          <td>dépend de l'encodage avec fopen.</td>
+        </tr>
+        <tr>
+          <td>'char*1'</td>
+          <td>dépend de l'encodage avec fopen.</td>
+        </tr>
+      </table>
+    </p>
+    <p>if<b>fwrite</b> échoue, il renvoie une valeur négative.</p>
+    <p>if<b>fwrite</b> réussit, il renvoie le nombre d'éléments écrits avec succès.</p>
+    <p>if <b>fwrite</b> écrit des caractères, il renvoie le nombre de caractères écrits avec succès et non le nombre d'éléments.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

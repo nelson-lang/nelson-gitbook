@@ -17,7 +17,7 @@
 
 ## 📄 Description
 
-La fonction <b>evalfr(sys, f)</b> calcule la valeur de la fonction de transfert pour un modèle de système donné représenté par <b>sys</b> au nombre complexe <b>f</b>.
+La fonction<b>evalfr(sys, f)</b> calcule la valeur de la fonction de transfert pour un modèle de système donné représenté par<b>sys</b> au nombre complexe <b>f</b>.
 
 ## 💡 Exemple
 

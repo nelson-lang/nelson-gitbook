@@ -18,11 +18,11 @@ Déconvolution et division polynomiale.
 
 ## 📄 Description
 
-<b>[q, r] = deconv(b, a)</b> effectue la déconvolution du vecteur <b>b</b> par le vecteur <b>a</b> en utilisant la division longue.
+<b>[q, r] = deconv(b, a)</b> effectue la déconvolution du vecteur<b>b</b> par le vecteur <b>a</b> en utilisant la division longue.
 
-Elle renvoie le quotient <b>q</b> et le reste <b>r</b> tels que <b>b = conv(a, q) + r</b>.
+Elle renvoie le quotient <b>q</b> et le reste <b>r</b> tels que<b>b = conv(a, q) + r</b>.
 
-Dans le contexte des coefficients polynomiaux, la déconvolution des vecteurs <b>b</b> et <b>a</b> revient à diviser le polynôme représenté par <b>b</b> par celui représenté par <b>a</b>.
+Dans le contexte des coefficients polynomiaux, la déconvolution des vecteurs<b>b</b> et <b>a</b> revient à diviser le polynôme représenté par<b>b</b> par celui représenté par <b>a</b>.
 
 ## 💡 Exemple
 

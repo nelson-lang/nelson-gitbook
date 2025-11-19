@@ -4,8 +4,7 @@
     <module>mex</module>
     <section name="Fonctions MEX">
       <chapter_description>
-    <p>Le module MEX (MATLAB Executable) permet au code C/C++ d'interfacer avec Nelson, étendant ses
-      fonctionnalités et donnant accès au moteur de Nelson, aux variables et aux fonctions.</p>
+    <p>Le module MEX (MATLAB Executable) permet au code C/C++ d'interfacer avec Nelson, étendant ses        fonctionnalités et donnant accès au moteur de Nelson, aux variables et aux fonctions.</p>
   </chapter_description>
       <keyword name="dlgeneratemexgateway" link="dlgeneratemexgateway.html" description="Génère une passerelle MEX en C (fonction interne)."/>
       <keyword name="engClose" link="engClose.html" description="Ferme une session du moteur Nelson"/>

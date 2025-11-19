@@ -13,7 +13,7 @@ Starts a stopwatch timer.
 
 ## 📄 Description
 
-The sequence of commands <b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands.
+The sequence of commands<b>tic(); commands ; t = toc() </b> returns the number of seconds required for the commands.
 
 Consecutive <b>tic</b> commands overwrite the tic timer.
 

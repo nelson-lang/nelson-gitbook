@@ -40,11 +40,11 @@ Shell command execution.
 
 <b>[status, output] = system(command, '-echo')</b> forces the output to the Command Window, even though it is also being assigned into a variable.
 
-Callback functions cannot be called until <b>system</b> command is not finished.
+Callback functions cannot be called until<b>system</b> command is not finished.
 
 Nelson will convert characters to the encoding that your operating system shell accepts (ANSI on Windows by default, UTF-8 on others systems).
 
-command can be interrupted with <b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b> output </b> contains 'ABORTED'.
+command can be interrupted with<b>CTRL-C</b> key, in this case status code returned will be 258 (WAIT_TIMEOUT) on Windows and 134 on others platforms (128 + SIGABRT)<b>output </b> contains 'ABORTED'.
 
 if timeout value is 0. timeout disabled.
 

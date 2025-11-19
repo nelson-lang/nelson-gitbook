@@ -20,7 +20,7 @@ Convert number in base 2 to decimal.
 
 Note:
 
-- <b>bin2dec</b> and <b>dec2bin</b> are inverses of one another.
+- <b>bin2dec</b> and<b>dec2bin</b> are inverses of one another.
 
 ## 💡 Example
 

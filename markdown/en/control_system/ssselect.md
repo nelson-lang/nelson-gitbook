@@ -35,7 +35,6 @@ outputs = 1;
 
 R = ssselect(sys1, inputs, outputs)
 
-
 ```
 
 ## 🔗 See also

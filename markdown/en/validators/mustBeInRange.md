@@ -25,7 +25,7 @@ Checks that value is in the specified range.
 
 <b>mustBeInRange</b> checks that value is in the specified range or raise an error.
 
-The only valid combination of the flags is <b>exclude-lower</b> with <b>exclude-upper</b>.
+The only valid combination of the flags is<b>exclude-lower</b> with <b>exclude-upper</b>.
 
 ## 💡 Example
 

@@ -18,11 +18,11 @@ Exécuter une fonction après chaque fin d'exécution en arrière-plan.
 
 ## 📄 Description
 
-<b>B = afterEach(F, fcn, n)</b> renvoie un objet AfterEachFuture <b>B</b>.
+<b>B = afterEach(F, fcn, n)</b> renvoie un objet AfterEachFuture<b>B</b>.
 
-La fonction <b>fcn</b> est automatiquement exécutée après chaque élément du tableau Future <b>F</b> lorsqu'il est terminé.
+La fonction<b>fcn</b> est automatiquement exécutée après chaque élément du tableau Future<b>F</b> lorsqu'il est terminé.
 
-Si l'un des éléments de <b>F</b> rencontre une erreur, la propriété <b>Error</b> de <b>B</b> contient l'erreur.
+Si l'un des éléments de<b>F</b> rencontre une erreur, la propriété <b>Error</b> de<b>B</b> contient l'erreur.
 
 ## 💡 Exemple
 

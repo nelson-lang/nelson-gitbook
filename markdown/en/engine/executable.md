@@ -43,7 +43,7 @@ Executables to start Nelson software.
 
 If you have installed Nelson on Windows, the <b>NELSON_RUNTIME_PATH</b> environment variable will be defined.
 
-It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\nelson.bat"</b>.
+It allows to call easily Nelson <b>"%NELSON_RUNTIME_PATH%\\nelson.bat"</b>.
 
 ## 💡 Examples
 

@@ -22,7 +22,7 @@ Change default environment of Python interpreter.
 
 In Python, a keyword argument is a value associated with an identifier.
 
-Ensure to position <b>pyargs</b> as the last input argument when calling a Python function.
+Ensure to position<b>pyargs</b> as the last input argument when calling a Python function.
 
 ## 💡 Example
 

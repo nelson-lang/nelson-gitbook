@@ -23,7 +23,7 @@ Return the day of week.
 
 ## 📄 Description
 
-<b>dayweek</b> returns the day of the week as a number in <b>number</b> and as a string in <b>name</b>.
+<b>dayweek</b> returns the day of the week as a number in<b>number</b> and as a string in <b>name</b>.
 
 ## 💡 Example
 

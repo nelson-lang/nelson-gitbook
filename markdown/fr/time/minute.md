@@ -18,9 +18,9 @@ Composante minutes de la date et de l'heure d'entrée.
 
 ## 📄 Description
 
-<b>m = minute(t)</b> extracts the minute component from each date and time specified in <b>t</b>.
+<b>m = minute(t)</b> extracts the minute component from each date and time specified in<b>t</b>.
 
-The output <b>m</b> is a double array containing integer values ranging from 0 to 59.
+The output<b>m</b> is a double array containing integer values ranging from 0 to 59.
 
 ## 💡 Exemple
 

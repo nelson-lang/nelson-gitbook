@@ -19,7 +19,7 @@ Renvoie le plus petit entier pouvant être représenté pour un type entier.
 
 <b>imin = intmin(classname)</b> le plus petit entier pouvant être représenté pour un type entier.
 
-Les valeurs prises en charge pour la chaîne <b>classname</b> sont :
+Les valeurs prises en charge pour la chaîne<b>classname</b> sont :
 
 'int8'
 

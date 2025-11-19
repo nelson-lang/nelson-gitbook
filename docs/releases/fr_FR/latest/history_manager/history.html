@@ -117,33 +117,33 @@ history('saveafter', nb_commands)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p><b>history()</b> affiche l'historique actuel de Nelson.</p>
-        <p><b>c = history()</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes.</p>
-        <p><b>s = history('size')</b> renvoie la taille maximale de l'historique.</p>
-        <p><b>f = history('filename')</b> renvoie le nom de fichier de l'historique.</p>
-        <p><b>l = history('enable_save')</b> renvoie l'état du gestionnaire d'historique.</p>
-        <p><b>c = history('get')</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes.</p>
-        <p><b>history('display')</b> affiche l'historique actuel de Nelson.</p>
-        <p><b>history('save')</b> enregistre le fichier d'historique courant.</p>
-        <p><b>history('load')</b> charge le fichier d'historique courant.</p>
-        <p><b>history('clear')</b> efface l'historique.</p>
-        <p><b>history('duplicated')</b> obtient l'état concernant la sauvegarde des commandes consécutives dupliquées.</p>
-        <p><b>history('saveafter')</b> obtient l'état concernant la sauvegarde de l'historique après N commandes.</p>
-        <p><b>history('removeexit')</b> obtient l'état concernant la non-enregistrement des sorties dans le fichier d'historique.</p>
-        <p><b>history('size', new_size)</b> définit la taille maximale de l'historique avec <b>new_size</b>.</p>
-        <p><b>history('enable_save', true_false)</b> définit l'état du gestionnaire d'historique : false pour 'off', true pour 'on'.</p>
-        <p><b>history('delete', lines)</b> supprime des lignes par index : un scalaire ou un vecteur 1x2.</p>
-        <p><b>history('append', str)</b> ajoute une commande à l'historique.</p>
-        <p><b>history('filename', name)</b> définit le nom de fichier de l'historique.</p>
-        <p><b>history('load', filename_history)</b> charge un fichier d'historique.</p>
-        <p><b>history('save', filename_history)</b> enregistre un fichier d'historique.</p>
-        <p><b>history('duplicated', true_false)</b> définit l'état concernant les commandes consécutives dupliquées : true supprime les doublons.</p>
-        <p><b>history('removeexit', true_false)</b> définit l'état concernant la non-enregistrement des sorties dans le fichier d'historique.</p>
-        <p><b>history('get', lines)</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes par index : un scalaire ou un vecteur 1x2.</p>
-        <p><b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que <b>nb_commands</b> instructions aient été ajoutées au fichier.</p>
-        <p><b>Astuces</b> : vous pouvez facilement partager votre fichier d'historique dans le cloud en ajoutant quelques lignes de code dans votre fichier de démarrage utilisateur.</p>
-        <p>Si Nelson est lancé avec l'option '--nouserstartup', le fichier d'historique ne sera pas chargé au démarrage et ne sera pas enregistré à la fermeture.</p>
-                                                                                                        </div>
+    <p><b>history()</b> affiche l'historique actuel de Nelson.</p>
+    <p><b>c = history()</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes.</p>
+    <p><b>s = history('size')</b> renvoie la taille maximale de l'historique.</p>
+    <p><b>f = history('filename')</b> renvoie le nom de fichier de l'historique.</p>
+    <p><b>l = history('enable_save')</b> renvoie l'état du gestionnaire d'historique.</p>
+    <p><b>c = history('get')</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes.</p>
+    <p><b>history('display')</b> affiche l'historique actuel de Nelson.</p>
+    <p><b>history('save')</b> enregistre le fichier d'historique courant.</p>
+    <p><b>history('load')</b> charge le fichier d'historique courant.</p>
+    <p><b>history('clear')</b> efface l'historique.</p>
+    <p><b>history('duplicated')</b> obtient l'état concernant la sauvegarde des commandes consécutives dupliquées.</p>
+    <p><b>history('saveafter')</b> obtient l'état concernant la sauvegarde de l'historique après N commandes.</p>
+    <p><b>history('removeexit')</b> obtient l'état concernant la non-enregistrement des sorties dans le fichier d'historique.</p>
+    <p><b>history('size', new_size)</b> définit la taille maximale de l'historique avec<b>new_size</b>.</p>
+    <p><b>history('enable_save', true_false)</b> définit l'état du gestionnaire d'historique : false pour 'off', true pour 'on'.</p>
+    <p><b>history('delete', lines)</b> supprime des lignes par index : un scalaire ou un vecteur 1x2.</p>
+    <p><b>history('append', str)</b> ajoute une commande à l'historique.</p>
+    <p><b>history('filename', name)</b> définit le nom de fichier de l'historique.</p>
+    <p><b>history('load', filename_history)</b> charge un fichier d'historique.</p>
+    <p><b>history('save', filename_history)</b> enregistre un fichier d'historique.</p>
+    <p><b>history('duplicated', true_false)</b> définit l'état concernant les commandes consécutives dupliquées : true supprime les doublons.</p>
+    <p><b>history('removeexit', true_false)</b> définit l'état concernant la non-enregistrement des sorties dans le fichier d'historique.</p>
+    <p><b>history('get', lines)</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes par index : un scalaire ou un vecteur 1x2.</p>
+    <p><b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que<b>nb_commands</b> instructions aient été ajoutées au fichier.</p>
+    <p><b>Astuces</b> : vous pouvez facilement partager votre fichier d'historique dans le cloud en ajoutant quelques lignes de code dans votre fichier de démarrage utilisateur.</p>
+    <p>Si Nelson est lancé avec l'option '--nouserstartup', le fichier d'historique ne sera pas chargé au démarrage et ne sera pas enregistré à la fermeture.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

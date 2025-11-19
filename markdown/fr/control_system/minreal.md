@@ -29,7 +29,7 @@ Réalisation minimale ou annulation pôle‑zéro.
 
 Dans les fonctions de transfert ou modèles zéro‑pôle‑gain, il annule les paires pôles‑zéros. Le modèle résultant maintient les mêmes caractéristiques de réponse que le modèle original mais avec un ordre minimal.
 
-Lorsque vous utilisez <b>sysOut = minreal(sysIn, tol)</b>, vous pouvez personnaliser la tolérance pour l'élimination des états ou l'annulation des pôles-zéros.
+Lorsque vous utilisez<b>sysOut = minreal(sysIn, tol)</b>, vous pouvez personnaliser la tolérance pour l'élimination des états ou l'annulation des pôles-zéros.
 
 La tolérance par défaut est fixée à sqrt(eps), et l'augmentation de cette valeur entraîne des annulations plus agressives, simplifiant potentiellement davantage le modèle.
 

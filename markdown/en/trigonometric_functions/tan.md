@@ -16,7 +16,7 @@ Computes the tangent in radians for each element of x.
 
 ## 📄 Description
 
-<b>tan</b> computes the tangent in radians for each element of <b>x</b>.
+<b>tan</b> computes the tangent in radians for each element of<b>x</b>.
 
 The tangent function is defined as:
 $$\tan(x) = \frac{\sin(x)}{\cos(x)} = \frac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})}$$

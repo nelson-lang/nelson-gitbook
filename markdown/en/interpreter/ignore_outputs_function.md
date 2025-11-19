@@ -8,7 +8,7 @@ Ignore outputs function.
 
 ## 📄 Description
 
-The <b>tilde</b> syntax allows you to ignore specific outputs from functions that return multiple values. By using the tilde symbol (~) in the output list, you can indicate which outputs you do not wish to capture.
+The<b>tilde</b> syntax allows you to ignore specific outputs from functions that return multiple values. By using the tilde symbol (~) in the output list, you can indicate which outputs you do not wish to capture.
 
 This is particularly useful when you are only interested in certain results from a function and want to avoid unnecessary variable assignments.
 

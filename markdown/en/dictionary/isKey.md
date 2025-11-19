@@ -18,9 +18,9 @@ Check if dictionary contains key
 
 <b>tf = isKey(d, key)</b> returns a logical true if the specified key exists in the configured dictionary, and a logical false if it does not.
 
-If <b>d</b> is an unconfigured dictionary, <b>isKey</b> throws an error.
+If <b>d</b> is an unconfigured dictionary,<b>isKey</b> throws an error.
 
-If <b>key</b> is an array of multiple keys, then tf is a logical array of the same size.
+If<b>key</b> is an array of multiple keys, then tf is a logical array of the same size.
 
 ## 💡 Example
 

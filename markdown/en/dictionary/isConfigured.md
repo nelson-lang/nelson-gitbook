@@ -16,7 +16,7 @@ Check if dictionary has types assigned to keys and values.
 
 ## 📄 Description
 
-<b>tf = isConfigured(d)</b> returns a logical <b>true</b> if the specified dictionary is configured, and a logical <b>false</b> if it is not.
+<b>tf = isConfigured(d)</b> returns a logical<b>true</b> if the specified dictionary is configured, and a logical<b>false</b> if it is not.
 
 A dictionary is considered configured when it has assigned types for its keys and values. Adding entries to an unconfigured dictionary will configure it.
 

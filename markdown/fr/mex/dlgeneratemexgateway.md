@@ -14,7 +14,7 @@ Génère une passerelle MEX en C (fonction interne).
 
 ## 📄 Description
 
-<b>dlgeneratemexgateway</b> génère une passerelle MEX en C utilisée par <b>mex</b> (fonction interne).
+<b>dlgeneratemexgateway</b> génère une passerelle MEX en C utilisée par<b>mex</b> (fonction interne).
 
 ## 🔗 Voir aussi
 

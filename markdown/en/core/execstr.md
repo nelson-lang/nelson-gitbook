@@ -20,9 +20,9 @@ Execute Nelson code in strings.
 
 <b>execstr</b> executes Nelson instructions given in a string.
 
-<b>execstr(str, 'nocatch')</b> is equivalent to <b>execstr(str)</b>
+<b>execstr(str, 'nocatch')</b> is equivalent to<b>execstr(str)</b>
 
-<b>execstr</b> can be used as alternative to <b>try ... catch ... end</b> block.
+<b>execstr</b> can be used as alternative to<b>try ... catch ... end</b> block.
 
 ## 💡 Examples
 

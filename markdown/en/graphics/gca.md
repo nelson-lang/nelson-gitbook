@@ -14,7 +14,7 @@ get current axes graphics object.
 
 <b>ca = gca()</b> returns the current axes graphics object.
 
-If there are no axes, <b>gca()</b> creates an axes and returns its graphics object.
+If there are no axes,<b>gca()</b> creates an axes and returns its graphics object.
 
 ## 💡 Example
 

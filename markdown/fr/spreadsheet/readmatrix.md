@@ -22,34 +22,16 @@ Créer une matrice à partir d'un fichier.
 
 <b>M = readmatrix(filename)</b> crée une matrice en important des données orientées colonne depuis un fichier texte ou tableur.
 
-<b>M = readmatrix(filename, opts)</b> crée une matrice en utilisant les paramètres définis dans l'objet d'options d'importation <b>opts</b>. L'objet d'options d'importation permet de personnaliser la façon dont <b>readmatrix</b> interprète le fichier, offrant un meilleur contrôle, de meilleures performances et la possibilité de réutiliser la configuration comparé à la syntaxe par défaut.
+<b>M = readmatrix(filename, opts)</b> crée une matrice en utilisant les paramètres définis dans l'objet d'options d'importation<b>opts</b>. L'objet d'options d'importation permet de personnaliser la façon dont <b>readmatrix</b> interprète le fichier, offrant un meilleur contrôle, de meilleures performances et la possibilité de réutiliser la configuration comparé à la syntaxe par défaut.
 
 ## 💡 Exemples
 
 ```matlab
-
-filename = [tempdir,'readmatrix_1.csv'];
-Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
-Age = [28; 34; 22; 30];
-Height = [175; 160; 180; 165];
-Weight = [70; 55; 80; 60];
-T = table(Names, Age, Height, Weight);
-writetable(T, filename)
-M = readmatrix(filename)
-
+  filename = [tempdir,'readmatrix_1.csv'];  Names = {'John'; 'Alice'; 'Bob'; 'Diana'};  Age = [28; 34; 22; 30];  Height = [175; 160; 180; 165];  Weight = [70; 55; 80; 60];  T = table(Names, Age, Height, Weight);  writetable(T, filename)  M = readmatrix(filename)
 ```
 
 ```matlab
-
-filename = [tempdir,'readmatrix_2.csv'];
-M = magic(6);
-writematrix(M, filename)
-options = detectImportOptions(filename)
-options.DataLines = [2 4];
-M2 = readmatrix(filename, options, 'OutputType', 'int64')
-M3 = readmatrix(filename, options, 'OutputType', 'char')
-
-
+  filename = [tempdir,'readmatrix_2.csv'];  M = magic(6);  writematrix(M, filename)  options = detectImportOptions(filename)  options.DataLines = [2 4];  M2 = readmatrix(filename, options, 'OutputType', 'int64')  M3 = readmatrix(filename, options, 'OutputType', 'char')
 ```
 
 ## 🔗 Voir aussi

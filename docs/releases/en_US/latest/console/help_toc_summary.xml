@@ -4,10 +4,10 @@
     <module>console</module>
     <section name="Console">
       <chapter_description>
-        <p>The Console module manages interaction with Nelson’s command window.</p>
-        <p>It provides tools to control the display, handle user input, and query terminal properties.</p>
-        <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p>
-    </chapter_description>
+    <p>The Console module manages interaction with Nelson’s command window.</p>
+    <p>It provides tools to control the display, handle user input, and query terminal properties.</p>
+    <p>These features allow scripts and applications to communicate directly with the user through the console, making it easier to build interactive workflows and adapt output to the current terminal environment.</p>
+  </chapter_description>
       <keyword name="clc" link="clc.html" description="Clear Command Window."/>
       <keyword name="consolebox" link="consolebox.html" description="Displays or hides the Windows terminal associated with the Nelson session."/>
       <keyword name="input" link="input.html" description="Display prompt and wait for user input."/>

@@ -50,53 +50,51 @@ writetable(..., Name, Value)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-      <p>
-        <b>writetable(T)</b> écrit la table <b>T</b> dans un fichier texte délimité par des virgules.</p>
-        <p>Le nom de fichier est dérivé du nom de la variable de la table dans l'espace de travail, avec l'extension .txt ajoutée.</p>
-        <p>Si le nom de fichier ne peut pas être dérivé du nom de la table, le nom de fichier par défaut table.txt est utilisé.</p>
-        <p>Formats de sortie pris en charge :</p>
-            <ul>
-                <li>
-                    <b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.</li>
-                    <li>
-                        <b>Fichiers XML :</b> chaque variable de <b>T</b> devient un nœud XML, les noms de variables servant de noms d'éléments.</li>
-                    </ul>
-                    <p>Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filename)</b>. Le format de fichier est déterminé par l'extension :</p>
-                    <ul>
-                                <li>
-                            <b>.txt</b>, <b>.dat</b>, <b>.csv</b> : fichiers texte délimités.</li>
-                            <li>
-                                <b>.xml</b> : fichiers XML.</li>
-                            </ul>
-                            <p>
-                                <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:</p>
-                                <ul>
-                                    <li>
-                                                <b>WriteRowNames :</b> inclure les noms de ligne dans le fichier de sortie (par défaut : false).</li>
-                                                <li>
-                                                    <b>FileType :</b> spécifier le format de fichier ('text' ou 'xml').</li>
-                                                    <li>
-                                                        <b>WriteVariableNames :</b> inclure les noms de variables comme en-têtes de colonne dans les fichiers texte (par défaut : true).</li>
-                                                        <li>
-                                                            <b>WriteMode :</b> spécifier le mode d'écriture ('overwrite' ou 'append').</li>
-                                                            <li>
-                                                                <b>Delimiter :</b> définir le délimiteur de champ pour les fichiers texte (',', '\t', etc.).</li>
-                                                                <li>
-                                                                    <b>QuoteStrings :</b> contrôler la façon dont le texte est cité dans les fichiers texte ('minimal', 'all' ou 'none').</li>
-                                                                    <li>
-                                                                        <b>AttributeSuffix :</b> spécifier le suffixe d'attribut pour les fichiers XML (par défaut : 'Attribute').</li>
-                                                                        <li>
-                                                                            <b>RowNodeName :</b> spécifier le nom du nœud de ligne XML (par défaut : 'row').</li>
-                                                                            <li>
-                                                                                <b>TableNodeName :</b> spécifier le nom du nœud racine XML (par défaut : 'table').</li>
-                                                                    </ul>
-                                                                </div>
+    <p><b>writetable(T)</b> écrit la table<b>T</b> dans un fichier texte délimité par des virgules.</p>
+    <p>Le nom de fichier est dérivé du nom de la variable de la table dans l'espace de travail, avec l'extension.txtajoutée.</p>
+    <p>Si le nom de fichier ne peut pas être dérivé du nom de la table, le nom de fichier par défauttable.txtest utilisé.</p>
+    <p>Formats de sortie pris en charge :</p>
+    <ul>
+      <li>
+<b>Text files:</b> Each variable in<b>T</b> becomes a column, and variable names serve as column headers in the first line.</li>
+      <li>
+<b>Fichiers XML :</b> chaque variable de<b>T</b> devient un nœud XML, les noms de variables servant de noms d'éléments.</li>
+    </ul>
+    <p>Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filename)</b>. Le format de fichier est déterminé par l'extension :</p>
+    <ul>
+      <li>
+<b>.txt</b>, <b>.dat</b>,<b>.csv</b> : fichiers texte délimités.</li>
+      <li>
+<b>.xml</b> : fichiers XML.</li>
+    </ul>
+    <p><b>Additional options:</b> Use<b>writetable(..., Name, Value)</b> for customization:</p>
+    <ul>
+      <li>
+<b>WriteRowNames :</b> inclure les noms de ligne dans le fichier de sortie (par défaut :false).</li>
+      <li>
+<b>FileType :</b> spécifier le format de fichier ('text'ou'xml').</li>
+      <li>
+<b>WriteVariableNames :</b> inclure les noms de variables comme en-têtes de colonne dans les fichiers texte (par défaut :true).</li>
+      <li>
+<b>WriteMode :</b> spécifier le mode d'écriture ('overwrite' ou 'append').</li>
+      <li>
+<b>Delimiter :</b> définir le délimiteur de champ pour les fichiers texte (',', '\t', etc.).</li>
+      <li>
+<b>QuoteStrings :</b> contrôler la façon dont le texte est cité dans les fichiers texte ('minimal', 'all' ou 'none').</li>
+      <li>
+<b>AttributeSuffix :</b> spécifier le suffixe d'attribut pour les fichiers XML (par défaut :'Attribute').</li>
+      <li>
+<b>RowNodeName :</b> spécifier le nom du nœud de ligne XML (par défaut :'row').</li>
+      <li>
+<b>TableNodeName :</b> spécifier le nom du nœud racine XML (par défaut :'table').</li>
+    </ul>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">
 <span class="syntax-icon">💡</span>Exemples</div>
 <div class="example">
-<div class="example-title">Examples demonstrating various usages of writetable.</div>
+<div class="example-title">Examples demonstrating various usages ofwritetable.</div>
 <div style="display:flex;align-items:flex-start;gap:8px;">
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">T = table([1; 2; 3], {'A'; 'B'; 'C'}, [10.5; 20.7; 30.2], 'VariableNames', {'ID', 'Name', 'Value'});
 T.Value_Attribute = {'High'; 'Medium'; 'Low'};

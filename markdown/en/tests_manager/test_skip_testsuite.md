@@ -16,9 +16,9 @@ Skip test suite on condition
 
 ## 📄 Description
 
-The <b>skip_testsuite</b> function allows you to skip a test suite based on a specified condition.
+The<b>skip_testsuite</b> function allows you to skip a test suite based on a specified condition.
 
-<b>condition</b>: A boolean expression that determines whether to skip the test suite. If <b>condition</b> evaluates to <b>true</b>, the test suite will be skipped.
+<b>condition</b>: A boolean expression that determines whether to skip the test suite. If<b>condition</b> evaluates to<b>true</b>, the test suite will be skipped.
 
 <b>reason</b>: A string explaining the reason for skipping the test suite. This parameter is useful for providing context to other developers or yourself in case the test suite is skipped.
 

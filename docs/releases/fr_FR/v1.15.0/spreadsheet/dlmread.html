@@ -73,35 +73,30 @@ M = dlmread(filename, delimiter, [R1 C1 R2 C2])
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-        <b>M = dlmread(filename, delimiter, [R1 C1 R2 C2])</b> lit uniquement les données dans la plage spécifiée par les décalages de ligne <b>R1</b> à <b>R2</b> et de colonne <b>C1</b> à <b>C2</b>. Vous pouvez alternativement spécifier la plage en notation de feuille de calcul, par exemple 'A1..B6' au lieu de <b>[0 0 5 1]</b>.</p>
-                <p>
-                <b>M = dlmread(filename, delimiter, R1, C1)</b> commence la lecture des données aux décalages de ligne et de colonne indiqués par <b>R1</b> et <b>C1</b>. Par exemple, R1=0, C1=0 correspond à la première valeur du fichier.</p>
-                                <p>Pour définir des décalages de ligne et de colonne sans définir de délimiteur, utilisez un caractère vide comme espace réservé, par exemple <b>M = dlmread(filename, '', 3, 1)</b>.</p>
-                    <p>
-                    <b>M = dlmread(filename, delimiter)</b> lit les données du fichier en utilisant le délimiteur spécifié et traite les caractères délimiteurs répétés comme des délimiteurs séparés.</p>
-                        <p>
-                        <b>M = dlmread(filename)</b> lit un fichier de données numériques au format ASCII délimité dans la matrice <b>M</b>. La fonction dlmread détecte automatiquement le délimiteur à partir du fichier et consolide les espaces consécutifs en un seul délimiteur.</p>
-                        <p>Importation de nombres complexes : <b>dlmread</b> lit chaque nombre complexe comme une unité unique et le stocke dans un champ numérique complexe.</p>
-                        <p>Formes valides pour les nombres complexes :</p>
-                        <p></p>
-                        <table style="width:100%">
-                            <tr>
-                                <th>Forme :</th>
-                                <th>Exemple :</th>
-                            </tr>
-                            <tr>
-                                <td>±real ± imag i|j</td>
-                                <td>3.1347-2.1i</td>
-                            </tr>
-                            <tr>
-                                <td>±imag i|j</td>
-                                <td>-2.1j</td>
-                            </tr>
-                        </table>
-                        <p>
-                            <b>Remarque</b> : les espaces à l'intérieur d'un nombre complexe ne sont pas autorisés ; <b>dlmread</b> interprète tout espace comme un délimiteur de champ.</p>
-                        </div>
+    <p><b>M = dlmread(filename, delimiter, [R1 C1 R2 C2])</b> lit uniquement les données dans la plage spécifiée par les décalages de ligne<b>R1</b> à <b>R2</b> et de colonne <b>C1</b> à<b>C2</b>. Vous pouvez alternativement spécifier la plage en notation de feuille de calcul, par exemple 'A1..B6' au lieu de<b>[0 0 5 1]</b>.</p>
+    <p><b>M = dlmread(filename, delimiter, R1, C1)</b> commence la lecture des données aux décalages de ligne et de colonne indiqués par<b>R1</b> et<b>C1</b>. Par exemple, R1=0, C1=0 correspond à la première valeur du fichier.</p>
+    <p>Pour définir des décalages de ligne et de colonne sans définir de délimiteur, utilisez un caractère vide comme espace réservé, par exemple<b>M = dlmread(filename, '', 3, 1)</b>.</p>
+    <p><b>M = dlmread(filename, delimiter)</b> lit les données du fichier en utilisant le délimiteur spécifié et traite les caractères délimiteurs répétés comme des délimiteurs séparés.</p>
+    <p><b>M = dlmread(filename)</b> lit un fichier de données numériques au format ASCII délimité dans la matrice<b>M</b>. La fonction dlmread détecte automatiquement le délimiteur à partir du fichier et consolide les espaces consécutifs en un seul délimiteur.</p>
+    <p>Importation de nombres complexes :<b>dlmread</b> lit chaque nombre complexe comme une unité unique et le stocke dans un champ numérique complexe.</p>
+    <p>Formes valides pour les nombres complexes :</p>
+    <p></p>
+    <table style="width:100%">
+      <tr>
+        <th>Forme :</th>
+        <th>Exemple :</th>
+      </tr>
+      <tr>
+        <td>±real ± imag i|j</td>
+        <td>3.1347-2.1i</td>
+      </tr>
+      <tr>
+        <td>±imag i|j</td>
+        <td>-2.1j</td>
+      </tr>
+    </table>
+    <p><b>Remarque</b> : les espaces à l'intérieur d'un nombre complexe ne sont pas autorisés ;<b>dlmread</b> interprète tout espace comme un délimiteur de champ.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

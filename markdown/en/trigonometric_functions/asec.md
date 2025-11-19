@@ -16,7 +16,7 @@ Inverse secant of angle in radians.
 
 ## 📄 Description
 
-<b>asec</b> computes the inverse secant of argument in radians for each element of <b>x</b>.
+<b>asec</b> computes the inverse secant of argument in radians for each element of<b>x</b>.
 
 ## 💡 Example
 

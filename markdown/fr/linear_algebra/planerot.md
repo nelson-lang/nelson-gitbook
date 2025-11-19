@@ -17,7 +17,7 @@ Rotation plane de Givens.
 
 ## 📄 Description
 
-<b>[G, Y] = planerot(X)</b> calcule la matrice de rotation de Givens pour le vecteur colonne à deux éléments <b>X</b>.
+<b>[G, Y] = planerot(X)</b> calcule la matrice de rotation de Givens pour le vecteur colonne à deux éléments<b>X</b>.
 
 ## 💡 Exemple
 

@@ -21,9 +21,9 @@ Enregistrer les données d'un service web RESTful dans un fichier
 
 ## 📄 Description
 
-<b>websave()</b> enregistre le contenu provenant du web dans <b>filename</b>.
+<b>websave()</b> enregistre le contenu provenant du web dans<b>filename</b>.
 
-La fonction websave renvoie le chemin complet du fichier en tant que <b>result_filename</b>.
+La fonction websave renvoie le chemin complet du fichier en tant que<b>result_filename</b>.
 
 ## 💡 Exemple
 

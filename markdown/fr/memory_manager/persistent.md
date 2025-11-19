@@ -14,7 +14,7 @@ Variable persistante.
 
 ## 📄 Description
 
-<b>persistent</b> définit une variable identifiée par son nom <b>variable_name</b> comme persistante dans une fonction.
+<b>persistent</b> définit une variable identifiée par son nom<b>variable_name</b> comme persistante dans une fonction.
 
 Avant d'utiliser une variable persistante, il est nécessaire d'initialiser sa valeur.
 

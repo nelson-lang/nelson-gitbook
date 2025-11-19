@@ -19,13 +19,13 @@ Observability of state-space model.
 
 ## 📄 Description
 
-The <b>obsv</b> functionis designed to calculate the observability matrix for state-space systems.
+The<b>obsv</b> functionis designed to calculate the observability matrix for state-space systems.
 
-Given an Nx-by-Nx matrix <b>A</b> representing the system dynamics and a Ny-by-Nx matrix C specifying the output, the function call <b>obsv(A, C)</b> generates the observability matrix.
+Given an Nx-by-Nx matrix<b>A</b> representing the system dynamics and a Ny-by-Nx matrix C specifying the output, the function call<b>obsv(A, C)</b> generates the observability matrix.
 
 It is advised against using the rank of the observability matrix for testing observability due to numerical instability.
 
-The observability matrix <b>Ob</b> tends to be numerically singular for systems with more than a few states, making the rank-based approach unreliable for such cases.
+The observability matrix<b>Ob</b> tends to be numerically singular for systems with more than a few states, making the rank-based approach unreliable for such cases.
 
 ## 💡 Example
 

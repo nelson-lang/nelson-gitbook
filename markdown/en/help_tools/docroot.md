@@ -15,9 +15,9 @@ Retrieve or update the root directory for Nelson Help system.
 
 <b>docroot</b> retrieves or updates the root directory for Nelson Help.
 
-When called without an argument, <b>docroot</b> returns the current root directory for Nelson Help. By default, it returns the URL of the help website used by Nelson.
+When called without an argument,<b>docroot</b> returns the current root directory for Nelson Help. By default, it returns the URL of the help website used by Nelson.
 
-When called with an argument, <b>docroot</b> updates the root directory for Nelson Help.
+When called with an argument,<b>docroot</b> updates the root directory for Nelson Help.
 
 <b>docroot('')</b> resets the root directory for Nelson Help to the default value.
 

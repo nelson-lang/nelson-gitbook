@@ -21,9 +21,9 @@ Run function in background.
 
 <b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> starts the function fptr to run in the background.
 
-backgroundPool has <b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.
+backgroundPool has<b>NumWorkers</b> available. If there are more functions scheduled, functions wait than one entry is available in pool.
 
-<b>parfeval</b> runs the function <b>fptr</b> on a background worker.
+<b>parfeval</b> runs the function<b>fptr</b> on a background worker.
 
 ## 💡 Example
 

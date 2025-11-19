@@ -16,7 +16,7 @@ Flip order of elements up to dow
 
 ## 📄 Description
 
-<b>fliplr</b> return an new array of <b>A</b> flipped up to down.
+<b>fliplr</b> return an new array of<b>A</b> flipped up to down.
 
 ## 💡 Example
 

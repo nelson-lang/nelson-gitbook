@@ -17,7 +17,7 @@ Convertit une matrice de données de signal en son et le joue.
 
 ## 📄 Description
 
-<b>sound</b> joue le signal audio <b>y</b> sur le haut-parleur à une fréquence d'échantillonnage de <b>Fs</b> hertz et utilise <b>nBits</b> bits par échantillon.
+<b>sound</b> joue le signal audio<b>y</b> sur le haut-parleur à une fréquence d'échantillonnage de <b>Fs</b> hertz et utilise <b>nBits</b> bits par échantillon.
 
 ## 💡 Exemple
 

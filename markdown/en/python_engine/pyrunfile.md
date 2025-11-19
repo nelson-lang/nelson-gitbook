@@ -24,7 +24,7 @@ Run Python file from Nelson.
 
 <b>pyrunfile(filenam)</b> function executes Python file.
 
-In contrast to the <b>pyrun</b> function, variables generated in the Python workspace through the <b>pyrunfile</b> function do not persist. This means that subsequent calls to <b>pyrunfile</b> won't be able to access these variables.
+In contrast to the<b>pyrun</b> function, variables generated in the Python workspace through the<b>pyrunfile</b> function do not persist. This means that subsequent calls to<b>pyrunfile</b> won't be able to access these variables.
 
 The code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> executes the code with one or more name-value pair arguments.
 

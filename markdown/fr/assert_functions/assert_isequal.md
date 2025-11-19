@@ -22,7 +22,7 @@ Vérifie que les valeurs calculées et attendues sont égales.
 
 <b>assert_isequal</b> lève une erreur si la valeur calculée n'est pas égale à la valeur attendue.
 
-Cette fonction effectue un test d'égalité stricte qui vérifie le même type, les mêmes dimensions et les mêmes valeurs. Elle utilise la même logique que la fonction <b>isequaln</b>.
+Cette fonction effectue un test d'égalité stricte qui vérifie le même type, les mêmes dimensions et les mêmes valeurs. Elle utilise la même logique que la fonction<b>isequaln</b>.
 
 Contrairement aux opérateurs d'égalité standards, cette fonction gère correctement les valeurs NaN, en les considérant égales lorsque les deux valeurs contiennent NaN aux mêmes positions.
 

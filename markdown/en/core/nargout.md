@@ -21,7 +21,7 @@ Returns the number of output arguments.
 
 <b>nargout</b> returns the number of output arguments of an function.
 
-If the last output argument of the function is <b>varargout</b> the returned value is negative.
+If the last output argument of the function is<b>varargout</b> the returned value is negative.
 
 ## 💡 Examples
 

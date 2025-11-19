@@ -20,9 +20,9 @@ Convertit une chaîne binaire en complément à deux en nombre.
 
 Remarques :
 
-- <b>num2bin</b> renvoie toujours les représentations binaires en colonne.
+-<b>num2bin</b> renvoie toujours les représentations binaires en colonne.
 
-- <b>bin2num</b> et <b>num2bin</b> sont mutuellement inverses.
+- <b>bin2num</b> et<b>num2bin</b> sont mutuellement inverses.
 
 ## Fonction(s) utilisée(s)
 

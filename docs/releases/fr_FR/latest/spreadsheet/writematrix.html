@@ -45,7 +45,7 @@ writematrix(..., Name, Value)
 <td>une chaîne : nom de fichier de destination.</td>
 </tr>
 <tr>
-<td class="param-name">Name, Value </td>
+<td class="param-name">Name, Value</td>
 <td>Arguments Nom-Valeur</td>
 </tr>
 </table>
@@ -54,111 +54,96 @@ writematrix(..., Name, Value)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>writematrix</b> écrit une matrice numérique dans un fichier au format CSV.</p>
-            <p>
-                <b>writematrix</b> ne prend pas en charge les matrices creuses (sparse).</p>
-                <p>
-                    <b>writematrix</b> formate les données numériques en utilisant le format long G.</p>
-                    <p></p>
-                    <p>Arguments Nom-Valeur disponibles</p>
-                    <p></p>
-                    <p>Les paires nom-valeur doivent suivre tous les autres arguments.</p>
-                    <p>L'ordre des paires nom-valeur n'a pas d'importance</p>
-                    <p>Les options Delimiter et QuoteStrings ne s'appliquent qu'aux fichiers texte délimités.</p>
-                    <p></p>
-                    <p>
-                        <b>FileType</b>: Specifies the type of output file</p>
-                        <p>Syntaxe : <b>'FileType','text'</b>
-                    </p>
-                    <p>Prend en charge les fichiers texte délimités (.txt, .dat, .csv)</p>
-                    <p></p>
-                    <p>
-                        <b>WriteMode</b>: Controls how data is written to the file</p>
-                        <p>Syntaxe : <b>'WriteMode', mode</b>
-                    </p>
-                    <p>Options :</p>
-                    <p>'overwrite' (par défaut) - crée un nouveau fichier ou remplace le contenu existant</p>
-                    <p>'append' - ajoute les données à la fin du fichier existant</p>
-                    <p>Si le fichier cible n'existe pas, un nouveau fichier sera créé quel que soit le mode.</p>
-                    <p></p>
-                    <p>
-                        <b>Delimiter</b>: Defines the character used to separate fields</p>
-                        <p>Syntaxe : <b>'Delimiter', delimiter</b>
-                    </p>
-                    <p>Délimiteurs disponibles : uniquement applicables aux fichiers texte délimités.</p>
-                    <p></p>
-                    <table>
-                        
-                            <tr>
-                                <th>Spécificateur</th>
-                                <th>Alternative</th>
-                                <th>Description</th>
-                            </tr>
-                        
-                        
-                            <tr>
-                                <td>
-                                    ','
-                                </td>
-                                <td>
-                                    'comma'
-                                </td>
-                                <td>Virgule (par défaut)</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    ' '
-                                </td>
-                                <td>
-                                    'space'
-                                </td>
-                                <td>Caractère espace</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    '\t'
-                                </td>
-                                <td>
-                                    'tab'
-                                </td>
-                                <td>Tabulation</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    ';'
-                                </td>
-                                <td>
-                                    'semi'
-                                </td>
-                                <td>Point-virgule</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    '|'
-                                </td>
-                                <td>
-                                    'bar'
-                                </td>
-                                <td>Barre verticale</td>
-                            </tr>
-                        
-                    </table>
-                    <p></p>
-                    <p>
-                        <b>QuoteStrings</b> : contrôle le comportement de citation des textes (applicable uniquement aux fichiers texte délimités).</p>
-                        <p>
-                            <b>'QuoteStrings', option</b>
-                        </p>
-                        <p>with <b>options</b>
-                    </p>
-                    <p>
-                        <b>'minimal'</b> (par défaut) : cite uniquement les textes contenant des délimiteurs, des fins de ligne ou des guillemets.</p>
-                        <p>
-                            <b>'all'</b> : cite toutes les variables texte.</p>
-                            <p>
-                                <b>'none'</b> : n'utilise pas de guillemets.</p>
-                            </div>
+    <p><b>writematrix</b> écrit une matrice numérique dans un fichier au format CSV.</p>
+    <p><b>writematrix</b> ne prend pas en charge les matrices creuses (sparse).</p>
+    <p><b>writematrix</b> formate les données numériques en utilisant le format long G.</p>
+    <p></p>
+    <p>Arguments Nom-Valeur disponibles</p>
+    <p></p>
+    <p>Les paires nom-valeur doivent suivre tous les autres arguments.</p>
+    <p>L'ordre des paires nom-valeur n'a pas d'importance</p>
+    <p>Les options Delimiter et QuoteStrings ne s'appliquent qu'aux fichiers texte délimités.</p>
+    <p></p>
+    <p><b>FileType</b>: Specifies the type of output file</p>
+    <p>Syntaxe : <b>'FileType','text'</b>                      </p>
+    <p>Prend en charge les fichiers texte délimités (.txt, .dat, .csv)</p>
+    <p></p>
+    <p><b>WriteMode</b>: Controls how data is written to the file</p>
+    <p>Syntaxe : <b>'WriteMode', mode</b>                      </p>
+    <p>Options :</p>
+    <p>'overwrite' (par défaut) - crée un nouveau fichier ou remplace le contenu existant</p>
+    <p>'append' - ajoute les données à la fin du fichier existant</p>
+    <p>Si le fichier cible n'existe pas, un nouveau fichier sera créé quel que soit le mode.</p>
+    <p></p>
+    <p><b>Delimiter</b>: Defines the character used to separate fields</p>
+    <p>Syntaxe : <b>'Delimiter', delimiter</b></p>
+    <p>Délimiteurs disponibles : uniquement applicables aux fichiers texte délimités.</p>
+    <table>
+      
+        <tr>
+          <th>Spécificateur</th>
+          <th>Alternative</th>
+          <th>Description</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            ','
+          </td>
+          <td>
+            'comma'
+          </td>
+          <td>Virgule (par défaut)</td>
+        </tr>
+        <tr>
+          <td>
+            ' '
+          </td>
+          <td>
+            'space'
+          </td>
+          <td>Caractère espace</td>
+        </tr>
+        <tr>
+          <td>
+            '\t'
+          </td>
+          <td>
+            'tab'
+          </td>
+          <td>Tabulation</td>
+        </tr>
+        <tr>
+          <td>
+            ';'
+          </td>
+          <td>
+            'semi'
+          </td>
+          <td>Point-virgule</td>
+        </tr>
+        <tr>
+          <td>
+            '|'
+          </td>
+          <td>
+            'bar'
+          </td>
+          <td>Barre verticale</td>
+        </tr>
+      
+    </table>
+    <p></p>
+    <p><b>QuoteStrings</b> : contrôle le comportement de citation des textes (applicable uniquement aux fichiers texte délimités).</p>
+    <p>
+      <b>'QuoteStrings', option</b>
+    </p>
+    <p>with <b>options</b></p>
+    <p><b>'minimal'</b> (par défaut) : cite uniquement les textes contenant des délimiteurs, des fins de ligne ou des guillemets.</p>
+    <p><b>'all'</b> : cite toutes les variables texte.</p>
+    <p><b>'none'</b> : n'utilise pas de guillemets.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

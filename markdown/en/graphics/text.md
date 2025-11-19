@@ -65,7 +65,7 @@ lists of the supported special characters for the 'tex' interpreter:
 
 Superscript: ^{ } 'text^{superscript}'
 
-Subscript: _{ } 'text_{subscript}'
+Subscript: \_{ } 'text\_{subscript}'
 
 | Character Sequence | Symbol |
 | ------------------ | ------ |

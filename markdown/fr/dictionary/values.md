@@ -17,7 +17,7 @@ Valeurs du dictionnaire.
 
 ## 📄 Description
 
-<b>v = values(d)</b> récupère un tableau contenant les valeurs du dictionnaire spécifié, <b>d</b>.
+<b>v = values(d)</b> récupère un tableau contenant les valeurs du dictionnaire spécifié,<b>d</b>.
 
 <b>v = values(d, 'cell')</b> renvoie éventuellement les valeurs sous forme de tableau cellulaire.
 

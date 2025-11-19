@@ -22,7 +22,7 @@ Convertit une image en image de film.
 
 <b>F = im2frame(RGB)</b> convertit l'image en vraies couleurs <b>RGB</b> en une image de film <b>F</b>.
 
-<b>F = im2frame(X, map)</b> convertit l'image indexée <b>X</b> ainsi que sa palette de couleurs <b>map</b> en une image de film <b>F</b>.
+<b>F = im2frame(X, map)</b> convertit l'image indexée<b>X</b> ainsi que sa palette de couleurs <b>map</b> en une image de film<b>F</b>.
 
 <b>F = im2frame(X)</b> convertit l'image indexée <b>X</b> en une image de film <b>F</b>, en utilisant la palette de couleurs courante.
 

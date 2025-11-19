@@ -57,9 +57,9 @@ précision supportée :
 | Caractères                     | 'char', '\*char'                 | dépend de l'encodage avec fopen. |
 | 'char\*1'                      | dépend de l'encodage avec fopen. |
 
-if <b>fwrite</b> échoue, il renvoie une valeur négative.
+if<b>fwrite</b> échoue, il renvoie une valeur négative.
 
-if <b>fwrite</b> réussit, il renvoie le nombre d'éléments écrits avec succès.
+if<b>fwrite</b> réussit, il renvoie le nombre d'éléments écrits avec succès.
 
 if <b>fwrite</b> écrit des caractères, il renvoie le nombre de caractères écrits avec succès et non le nombre d'éléments.
 

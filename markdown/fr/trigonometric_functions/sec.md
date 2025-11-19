@@ -16,7 +16,7 @@ Sécante d'un angle en radians.
 
 ## 📄 Description
 
-<b>sec</b> calcule la sécante de l'argument en radians pour chaque élément de <b>x</b>.
+<b>sec</b> calcule la sécante de l'argument en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

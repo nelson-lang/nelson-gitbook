@@ -13,7 +13,7 @@ Checks if a variable is locked.
 
 ## 📄 Description
 
-<b>varislock</b> returns true if <b>variable_name</b> has been declared as locked variable and false otherwise.
+<b>varislock</b> returns true if<b>variable_name</b> has been declared as locked variable and false otherwise.
 
 ## 💡 Example
 

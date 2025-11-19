@@ -16,7 +16,7 @@ Replaces non zero sparse matrix elements with ones.
 
 ## 📄 Description
 
-<b>s = spones(S)</b> returns a matrix <b>s</b> with the same sparsity structure as <b>S</b>, but with one's in the nonzero positions.
+<b>s = spones(S)</b> returns a matrix<b>s</b> with the same sparsity structure as<b>S</b>, but with one's in the nonzero positions.
 
 ## 💡 Example
 

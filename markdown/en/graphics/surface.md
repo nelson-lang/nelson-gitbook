@@ -28,7 +28,7 @@ Primitive surface plot.
 
 ## 📄 Description
 
-<b>surf</b> and <b>surface</b> functions are both used to create 3D surface plots, but there are some slight differences between the two.
+<b>surf</b> and<b>surface</b> functions are both used to create 3D surface plots, but there are some slight differences between the two.
 
 <b>surf</b> function is used to plot a surface defined by a function of two variables, or by a set of scattered data points.
 
@@ -40,7 +40,7 @@ It requires three input arguments: X, Y, and Z. X and Y define the coordinates o
 
 The size of Z must match the size of X and Y. The surface function also provides additional options for customizing the appearance of the plot, such as lighting and color.
 
-In summary, both <b>surf</b> and <b>surface</b> functions are used for 3D surface plots but <b>surf</b> is used for a surface defined by a function of two variables or by a set of scattered data points, while <b>surface</b> is used for a surface defined by a matrix of data, and the size of Z must match the size of X and Y.
+In summary, both <b>surf</b> and<b>surface</b> functions are used for 3D surface plots but<b>surf</b> is used for a surface defined by a function of two variables or by a set of scattered data points, while<b>surface</b> is used for a surface defined by a matrix of data, and the size of Z must match the size of X and Y.
 
 ## 💡 Example
 

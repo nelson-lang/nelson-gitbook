@@ -20,7 +20,7 @@ Creates an complex number.
 
 <b>complex</b> returns a complex value from real arguments.
 
-With only one input argument, <b>complex</b> returns a complex value a + 0\*i.
+With only one input argument,<b>complex</b> returns a complex value a + 0\*i.
 
 ## 💡 Example
 

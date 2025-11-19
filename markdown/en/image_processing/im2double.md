@@ -17,9 +17,9 @@ Convert image to double precision.
 
 ## 📄 Description
 
-<b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting, <b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1].
+<b>IM = im2double(I)</b> converts the input image I to double precision format. The input image IM can be a grayscale, truecolor, or binary image. When converting,<b>im2double</b> rescales the pixel values from their original integer format to a floating-point range of [0, 1].
 
-For an indexed image, <b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.
+For an indexed image,<b>IM = im2double(I, 'indexed')</b> converts the image I to double precision as well, but with an added offset of 1 to the pixel values during the conversion from integer types.
 
 ## 💡 Example
 

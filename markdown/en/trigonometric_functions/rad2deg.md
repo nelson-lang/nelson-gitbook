@@ -16,7 +16,7 @@ Convert angle from radians to degrees.
 
 ## 📄 Description
 
-<b>d = rad2deg(r)</b> converts angle units from radians to degrees for each element of <b>r</b>.
+<b>d = rad2deg(r)</b> converts angle units from radians to degrees for each element of<b>r</b>.
 
 ## 💡 Example
 

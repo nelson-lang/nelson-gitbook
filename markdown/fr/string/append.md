@@ -18,11 +18,11 @@ concatène des chaînes horizontalement.
 
 <b>strcat</b> concatène les chaînes horizontalement.
 
-Si toutes les entrées sont des tableaux de caractères, alors <b>res</b> est un tableau de caractères.
+Si toutes les entrées sont des tableaux de caractères, alors<b>res</b> est un tableau de caractères.
 
-Si une entrée est un tableau de chaînes, alors <b>res</b> est un tableau de chaînes.
+Si une entrée est un tableau de chaînes, alors<b>res</b> est un tableau de chaînes.
 
-Si une entrée est une cellule et qu'aucune n'est un tableau de chaînes, alors <b>res</b> est une cellule de vecteurs de caractères.
+Si une entrée est une cellule et qu'aucune n'est un tableau de chaînes, alors<b>res</b> est une cellule de vecteurs de caractères.
 
 <b>append</b> ne supprime pas les espaces finaux.
 

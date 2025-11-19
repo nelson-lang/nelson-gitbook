@@ -39,7 +39,7 @@ Exécute les tests
 
 ## 📄 Description
 
-<b>test*run</b> recherche les fichiers 'test*\_.m', 'bug\_\_.m' et 'bench\_\*.m', les exécute et affiche un rapport sur les succès ou les échecs.
+<b>test_run</b> recherche les fichiers 'test\__.m', 'bug\__.m' et 'bench\_\*.m', les exécute et affiche un rapport sur les succès ou les échecs.
 
 Chaque test ou bench est exécuté dans un processus séparé en utilisant la commande 'unix'.
 
@@ -61,7 +61,7 @@ Ces tags doivent être trouvés dans les commentaires Nelson :
 
 <b><--GUI MODE--></b> This test will be executed by nelson-gui executable.
 
-<b><--CHECK REF--></b> This test will compare .ref available in same directory with output generated. see <b>test_makeref</b> to generate .ref file.
+<b><--CHECK REF--></b> This test will compare .ref available in same directory with output generated. see<b>test_makeref</b> to generate .ref file.
 
 <b><--ENGLISH IMPOSED--></b> This test will be executed with the fr_FR language.
 
@@ -107,7 +107,7 @@ Pour éviter de bloquer l'application, les tests ont un temps d'exécution de 2 
 
 <b>test_run</b> utilise n workers pour exécuter et accélérer l'exécution des tests.
 
-Les tests avec <b><--SEQUENTIAL TEST REQUIRED--></b> sont évalués en dernier.
+Les tests avec<b><--SEQUENTIAL TEST REQUIRED--></b> sont évalués en dernier.
 
 Les benchs sont évalués séquentiellement.
 

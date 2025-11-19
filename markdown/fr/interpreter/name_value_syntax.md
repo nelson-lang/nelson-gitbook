@@ -9,15 +9,15 @@ Nom=valeur syntaxe pour les arguments nom=valeur.
 
 ## 📄 Description
 
-À partir de Nelson 1.15.0, les fonctions peuvent accepter des arguments nom-valeur en utilisant la syntaxe <b>nom=valeur</b>.
+À partir de Nelson 1.15.0, les fonctions peuvent accepter des arguments nom-valeur en utilisant la syntaxe<b>nom=valeur</b>.
 
 La nouvelle forme est équivalente à la syntaxe traditionnelle séparée par des virgules et améliore la lisibilité lorsque plusieurs paires nom-valeur apparaissent dans un seul appel.
 
-Utilisez une seule syntaxe par appel autant que possible. Si vous mélangez les deux formes, chaque argument <b>nom=valeur</b> doit venir après les paires séparées par des virgules, par exemple : plot(x, y, "Color", "red", LineWidth=2).
+Utilisez une seule syntaxe par appel autant que possible. Si vous mélangez les deux formes, chaque argument<b>nom=valeur</b> doit venir après les paires séparées par des virgules, par exemple : plot(x, y, "Color", "red", LineWidth=2).
 
 Inverser cet ordre, comme dans plot(x, y, Color="red", "LineWidth", 2), est invalide.
 
-Les noms utilisés avec la syntaxe <b>nom=valeur</b> doivent être des identifiants Nelson valides. Pour les noms contenant des caractères tels que des tirets, continuez à les passer sous forme de paires chaîne/valeur ; par exemple : "allow-empty", true.
+Les noms utilisés avec la syntaxe<b>nom=valeur</b> doivent être des identifiants Nelson valides. Pour les noms contenant des caractères tels que des tirets, continuez à les passer sous forme de paires chaîne/valeur ; par exemple : "allow-empty", true.
 
 ## 💡 Exemples
 

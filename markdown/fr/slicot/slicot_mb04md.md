@@ -13,7 +13,7 @@
 
 ## 📤 Argument de sortie
 
-- MAXRED_OUT - Si la norme 1 de la matrice A donnée est non nulle, le rapport entre la norme 1 de la matrice donnée et la norme 1 de la matrice équilibrée. Habituellement, ce ratio est > 1, mais il peut être égal à 1 ou parfois inférieur à 1 (p.ex. pour certaines matrices compagnon).
+- MAXRED_OUT - Si la norme 1 de la matrice A donnée est non nulle, le rapport entre la norme 1 de la matrice donnée et la norme 1 de la matrice équilibrée. Habituellement, ce ratio est >1, mais il peut être égal à 1 ou parfois inférieur à 1 (p.ex. pour certaines matrices compagnon).
 - A_OUT - La partie principale N-by-N de ce tableau contient la matrice équilibrée.
 - SCALE - Les facteurs d'échelle appliqués à A. Si D(j) est le facteur appliqué à la ligne et colonne j, alors SCALE(j) = D(j), pour j = 1,...,N.
 - INFO - = 0 : sortie réussie.

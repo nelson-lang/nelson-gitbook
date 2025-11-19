@@ -4,11 +4,9 @@
     <module>graphics</module>
     <section name="Graphics functions">
       <chapter_description>
-        <p>The graphics module provides functions for creating, customizing, and managing plots,
-            figures, colormaps, and graphical objects.</p>
-        <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
-            utilities for working with colors, legends, axes, and text annotations.</p>
-    </chapter_description>
+    <p>The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.</p>
+    <p>It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.</p>
+  </chapter_description>
       <keyword name="abyss" link="abyss.html" description="Abyss colormap array."/>
       <keyword name="ancestor" link="ancestor.html" description="Ancestor of graphics object."/>
       <keyword name="autumn" link="autumn.html" description="Autumn colormap array."/>
@@ -32,7 +30,7 @@
       <keyword name="cylinder" link="cylinder.html" description="Create cylinder."/>
       <keyword name="drawnow" link="drawnow.html" description="Update figures and process callbacks"/>
       <keyword name="figure" link="figure.html" description="Creates an figure window."/>
-      <keyword name="fill" link="fill.html" description="Create  filled 2-D patches."/>
+      <keyword name="fill" link="fill.html" description="Create filled 2-D patches."/>
       <keyword name="flag" link="flag.html" description="Flag colormap array."/>
       <keyword name="frame2im" link="frame2im.html" description="Retrieve image data from a movie frame."/>
       <keyword name="gca" link="gca.html" description="get current axes graphics object."/>

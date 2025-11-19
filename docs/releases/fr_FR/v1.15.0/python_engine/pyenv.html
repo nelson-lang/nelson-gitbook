@@ -60,37 +60,27 @@ pe = pyenv(...)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Utilisez <b>pyenv</b> pour modifier la version par défaut ou le mode d'exécution de l'interpréteur Python, en veillant à ce que ces réglages persistent entre les sessions Nelson.</p>
-        <p>La valeur définie par <b>pyenv</b> est persistante entre les sessions Nelson.</p>
-        <p></p>
-        <p>Propriétés :</p>
-        <p>
-            <b>Version</b> : string : version de Python</p>
-            <p>
-                <b>Executable</b> : string : nom de l'exécutable Python</p>
-                <p>
-                    <b>Library</b> : string : fichier de bibliothèque partagée</p>
-                    <p>
-                        <b>Home</b> : string : dossier home</p>
-                        <p>
-                            <b>Status</b> : statut du processus : "NotLoaded" (par défaut), "Loaded", "Terminated"</p>
-                            <p>
-                                <b>ExecutionMode</b> : mode d'exécution : "InProcess" (par défaut) ou "OutOfProcess"</p>
-                                <p></p>
-                                <p>Utilisez des variables d'environnement pour forcer l'environnement Python au démarrage (utile pour snapcraft ou distribution docker) :</p>
-                                <p></p>
-                                <p>
-                                    <b>__NELSON_PYTHON_VERSION__</b> : exemple "3.10"</p>
-                                    <p>
-                                        <b>__NELSON_PYTHON_EXECUTABLE__</b> : exemple  "/usr/bin/python3"</p>
-                                        <p>
-                                            <b>__NELSON_PYTHON_LIBRARY__</b> : exemple "libpython3.10.so.1.0"</p>
-                                            <p>
-                                                <b>__NELSON_PYTHON_HOME__</b> : exemple "/usr"</p>
-                                                <p>Toutes les variables d'environnement doivent exister et être valides pour être prises en compte.</p>
-                                                <p></p>
-                                                <p>Sous Windows, la fonction <b>pyenv('Version', '3.11')</b> recherche dans le Registre Windows la version de Python associée à la version spécifiée. Elle recherche d'abord dans HKCU, puis dans HKLM si non trouvée.</p>
-                                            </div>
+    <p>Utilisez <b>pyenv</b> pour modifier la version par défaut ou le mode d'exécution de l'interpréteur Python, en veillant à ce que ces réglages persistent entre les sessions Nelson.</p>
+    <p>La valeur définie par <b>pyenv</b> est persistante entre les sessions Nelson.</p>
+    <p></p>
+    <p>Propriétés :</p>
+    <p><b>Version</b> : string : version de Python</p>
+    <p><b>Executable</b> : string : nom de l'exécutable Python</p>
+    <p><b>Library</b> : string : fichier de bibliothèque partagée</p>
+    <p><b>Home</b> : string : dossier home</p>
+    <p><b>Status</b> : statut du processus : "NotLoaded" (par défaut), "Loaded", "Terminated"</p>
+    <p><b>ExecutionMode</b> : mode d'exécution : "InProcess" (par défaut) ou "OutOfProcess"</p>
+    <p></p>
+    <p>Utilisez des variables d'environnement pour forcer l'environnement Python au démarrage (utile pour snapcraft ou distribution docker) :</p>
+    <p></p>
+    <p><b>__NELSON_PYTHON_VERSION__</b> : exemple "3.10"</p>
+    <p><b>__NELSON_PYTHON_EXECUTABLE__</b> : exemple  "/usr/bin/python3"</p>
+    <p><b>__NELSON_PYTHON_LIBRARY__</b> : exemple "libpython3.10.so.1.0"</p>
+    <p><b>__NELSON_PYTHON_HOME__</b> : exemple "/usr"</p>
+    <p>Toutes les variables d'environnement doivent exister et être valides pour être prises en compte.</p>
+    <p></p>
+    <p>Sous Windows, la fonction<b>pyenv('Version', '3.11')</b> recherche dans le Registre Windows la version de Python associée à la version spécifiée. Elle recherche d'abord dans HKCU, puis dans HKLM si non trouvée.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

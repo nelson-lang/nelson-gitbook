@@ -4,10 +4,10 @@
     <module>com_engine</module>
     <section name="Interface client du modèle d'objet composant (COM)">
       <chapter_description>
-      <p>Le module COM Engine permet à Nelson d'interagir avec les composants Windows COM (Component Object Model) et ActiveX.</p>
-      <p>Il permet l'automatisation des applications logicielles, l'accès à leurs méthodes et propriétés, et la manipulation d'objets COM directement depuis les scripts Nelson.</p>
-      <p>Cela fournit un moyen d'intégrer Nelson avec une large gamme de logiciels Windows, y compris les applications Microsoft Office.</p>
-    </chapter_description>
+    <p>Le module COM Engine permet à Nelson d'interagir avec les composants Windows COM (Component Object Model) et ActiveX.</p>
+    <p>Il permet l'automatisation des applications logicielles, l'accès à leurs méthodes et propriétés, et la manipulation d'objets COM directement depuis les scripts Nelson.</p>
+    <p>Cela fournit un moyen d'intégrer Nelson avec une large gamme de logiciels Windows, y compris les applications Microsoft Office.</p>
+  </chapter_description>
       <keyword name="Exemples COM" link="1_COM_examples.html" description="Quelques exemples pour montrer comment utiliser l'interface COM."/>
       <keyword name="COM_delete" link="COM_delete.html" description="Supprime un contrôle ou serveur COM."/>
       <keyword name="COM_fieldnames" link="COM_fieldnames.html" description="Retourne les noms des propriétés d'un objet COM."/>

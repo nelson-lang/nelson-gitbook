@@ -28,8 +28,6 @@ surface plot.
 
 ## 📄 Description
 
-Set this property on an existing component has no effect.
-
 <b>surf</b> creates a 3D surface plot. It can be used to plot data in the form of a matrix or a function of two variables.
 
 You can customize the appearance of the plot using various options such as color, lighting, and shading.
@@ -85,27 +83,23 @@ Some properties are available only for compatibility and have currently no effec
 ## 💡 Examples
 
 ```matlab
-
 f = figure();
 [X, Y, Z] = peaks(35);
 C(:, :, 1) = zeros(35);
 C(:, :, 2) = ones(35) .* linspace(0.5, 0.6, 35);
 C(:, :, 3) = ones(35) .* linspace(0, 1, 35);
 S = surf(X, Y, Z, C)
-
 ```
 
 <img src="surf_1.svg" align="middle"/>
 
 ```matlab
-
 f = figure();
 [X,Y] = meshgrid(-8:.5:8);
 R = sqrt(X.^2 + Y.^2) + eps;
 Z = sin(R)./R;
 h = surf(X, Y, Z);
 axis square
-
 ```
 
 <img src="surf_2.svg" align="middle"/>

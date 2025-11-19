@@ -22,7 +22,7 @@ Evaluate Nelson code in string.
 
 <b>eval</b> executes Nelson instructions given in a string.
 
-Please use <b>try catch end</b> block instead than <b>eval</b>, if you need to capture an error message for higher performance.
+Please use <b>try catch end</b> block instead than<b>eval</b>, if you need to capture an error message for higher performance.
 
 ## 💡 Examples
 

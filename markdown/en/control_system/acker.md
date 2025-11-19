@@ -22,7 +22,7 @@ The function <b>acker</b> computes the feedback gain matrix <b>K</b> for a singl
 
 The closed-loop poles of the system under the feedback law <b>u = -Kx</b> are determined by the specified vector <b>P</b>, where <b>P</b> represents the desired pole locations.
 
-The closed-loop poles are essentially the eigenvalues of the matrix <b>A - B*K</b>, calculated as <b>P = eig(A - B*K)</b>.
+The closed-loop poles are essentially the eigenvalues of the matrix <b>A - B\*K</b>, calculated as <b>P = eig(A - B\*K)</b>.
 
 It's important to note that this algorithm utilizes Ackermann's formula.
 

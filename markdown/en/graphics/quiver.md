@@ -28,7 +28,7 @@ Vector plot.
 
 ## 📄 Description
 
-<b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components <b>(U,V)</b> at the point <b>(X, Y)</b>.
+<b>quiver(X, Y, U, V)</b> plots velocity vectors as arrows with components<b>(U,V)</b> at the point <b>(X, Y)</b>.
 
 <b>quiver</b> try to scale the arrow lengths so that they do not overlap.
 

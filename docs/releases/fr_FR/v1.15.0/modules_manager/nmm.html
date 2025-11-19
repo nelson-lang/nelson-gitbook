@@ -84,41 +84,32 @@ package_filename = nmm('package', module_name, destination_dir)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>nmm</b> est le gestionnaire de modules Nelson.</p>
-            <p>Les paquets distribués au format source permettent d'obtenir des paquets optimisés pour votre machine et de disposer de dépôts distribués.</p>
-            <p>Les modules installés sont compilés localement et peuvent nécessiter un compilateur C/C++.</p>
-            <p></p>
-            <p>
-                <b>st = nmm('list')</b> récupère la liste des modules installés.</p>
-                <p></p>
-                <p>
-                    <b>nmm('install', git_url)</b> installe un module distant.</p>
-                    <p>Par exemple : 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'</p>
-                    <p>'#v1.0.0' est un commit-ish : il permet de cloner exactement un commit.</p>
-                    <p>Le commit-ish peut être un tag (version exacte), un sha1 (commit exact) ou un nom de branche.</p>
-                    <p>Sans commit-ish, la branche master sera utilisée.</p>
-                    <p></p>
-                    <p>
-                        <b>nmm('install', filename_nmz)</b> installe un module externe précompilé.</p>
-                        <p></p>
-                        <p>
-                            <b>nmm('load', module_name)</b> charge un module installé pour la session courante.</p>
-                            <p></p>
-                            <p>
-                                <b>l = nmm('autoload', module_name</b> retourne l'état courant d'autoload pour <b>module_name</b>.</p>
-                                <p></p>
-                                <p>
-                                    <b>nmm('autoload', module_name, state)</b> marque un module installé pour être chargé automatiquement au démarrage.</p>
-                                    <p>Par défaut, les modules sont marqués pour l'autoload.</p>
-                                    <p></p>
-                                    <p>
-                                        <b>nmm('uninstall', module_name)</b> désinstalle un module installé.</p>
-                                        <p></p>
-                                        <p>
-                                            <b>nmm('package', module_name, destination_dir)</b> empaquette un module dans un fichier zip.</p>
-                                            <p></p>
-                                        </div>
+    <p><b>nmm</b> est le gestionnaire de modules Nelson.</p>
+    <p>Les paquets distribués au format source permettent d'obtenir des paquets optimisés pour votre machine et de disposer de dépôts distribués.</p>
+    <p>Les modules installés sont compilés localement et peuvent nécessiter un compilateur C/C++.</p>
+    <p></p>
+    <p><b>st = nmm('list')</b> récupère la liste des modules installés.</p>
+    <p></p>
+    <p><b>nmm('install', git_url)</b> installe un module distant.</p>
+    <p>Par exemple : 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'</p>
+    <p>'#v1.0.0' est uncommit-ish: il permet de cloner exactement un commit.</p>
+    <p>Le commit-ish peut être un tag (version exacte), un sha1 (commit exact) ou un nom de branche.</p>
+    <p>Sans commit-ish, la branche master sera utilisée.</p>
+    <p></p>
+    <p><b>nmm('install', filename_nmz)</b> installe un module externe précompilé.</p>
+    <p></p>
+    <p><b>nmm('load', module_name)</b> charge un module installé pour la session courante.</p>
+    <p></p>
+    <p><b>l = nmm('autoload', module_name</b> retourne l'état courant d'autoload pour<b>module_name</b>.</p>
+    <p></p>
+    <p><b>nmm('autoload', module_name, state)</b> marque un module installé pour être chargé automatiquement au démarrage.</p>
+    <p>Par défaut, les modules sont marqués pour l'autoload.</p>
+    <p></p>
+    <p><b>nmm('uninstall', module_name)</b> désinstalle un module installé.</p>
+    <p></p>
+    <p><b>nmm('package', module_name, destination_dir)</b> empaquette un module dans un fichier zip.</p>
+    <p></p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

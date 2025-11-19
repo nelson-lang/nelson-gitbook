@@ -30,9 +30,7 @@ Le caractère \* (joker) est supporté dans les noms de fichiers et chemins.
 
 ```matlab
 res = dir(nelsonroot())
-res = dir(nelsonroot(), '-s')
-res = dir([nelsonroot(),'/*.m'], '-s')
-
+res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 ```
 
 ## 🔗 Voir aussi

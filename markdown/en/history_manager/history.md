@@ -74,7 +74,7 @@ history manager.
 
 <b>history('removeexit')</b> get state about do not save exit in history file.
 
-<b>history('size', new_size)</b> set history size max with <b>new_size</b>.
+<b>history('size', new_size)</b> set history size max with<b>new_size</b>.
 
 <b>history('enable_save', true_false)</b> set the history manager state: false for 'off', true for 'on'.
 
@@ -94,7 +94,7 @@ history manager.
 
 <b>history('get', lines)</b> returns the current Nelson history in a cell of strings by index: a scalar value or a vector 1x2.
 
-<b>history('saveafter', nb_commands)</b> saves the history file after <b>nb_commands</b> statements are added to the file.
+<b>history('saveafter', nb_commands)</b> saves the history file after<b>nb_commands</b> statements are added to the file.
 
 <b>Tips</b>: You can easily share your history file in the cloud by adding few lines code in your user startup file.
 

@@ -28,9 +28,9 @@ Sparse matrix definition.
 
 <b>sparse</b> is used to build a sparse matrix. Only non-zero entries are stored.
 
-If <b>M</b> is a full matrix, <b>sparse</b> converts it to a sparse matrix representation, removing all zero values.
+If <b>M</b> is a full matrix,<b>sparse</b> converts it to a sparse matrix representation, removing all zero values.
 
-If nz is not specified, <b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)])
+If nz is not specified,<b>sparse</b> uses as default value: nz = max([numel(i), numel(j), numel(v)])
 
 If multiple values are specified with the same i, j indices, the associated value will be the sum of the values at the repeated index.
 

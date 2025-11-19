@@ -4,10 +4,10 @@
     <module>slicot</module>
     <section name="Bibliothèque de sous-programmes en théorie du contrôle">
       <chapter_description>
-      <p>Le module SLICOT fournit des algorithmes numériques avancés pour les calculs en automatique et théorie des systèmes.</p>
-      <p>Il comprend des outils pour la factorisation de matrices, l'équilibrage de systèmes, l'analyse de stabilité, l'affectation de pôles et la résolution des équations de Lyapunov, Riccati et Sylvester.</p>
-      <p>Le module prend en charge les systèmes temps continu et discret, y compris les systèmes descripteurs et multi-entrées, permettant une analyse, une conception et un contrôle précis et efficace des systèmes dynamiques complexes.</p>
-    </chapter_description>
+    <p>Le module SLICOT fournit des algorithmes numériques avancés pour les calculs en automatique et théorie des systèmes.</p>
+    <p>Il comprend des outils pour la factorisation de matrices, l'équilibrage de systèmes, l'analyse de stabilité, l'affectation de pôles et la résolution des équations de Lyapunov, Riccati et Sylvester.</p>
+    <p>Le module prend en charge les systèmes temps continu et discret, y compris les systèmes descripteurs et multi-entrées, permettant une analyse, une conception et un contrôle précis et efficace des systèmes dynamiques complexes.</p>
+  </chapter_description>
       <keyword name="Licence SLICOT" link="About_SLICOT_license.html" description="À propos de la licence SLICOT."/>
       <keyword name="slicot_ab01od" link="slicot_ab01od.html" description="Forme en escalier pour systèmes multi-entrées utilisant des transformations orthogonales d'état et d'entrée."/>
       <keyword name="slicot_ab04md" link="slicot_ab04md.html" description="Conversion entre systèmes discrets et continus par transformation bilinéaire."/>

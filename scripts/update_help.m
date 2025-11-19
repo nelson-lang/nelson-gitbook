@@ -14,11 +14,6 @@ function update_help()
   buildhelp()
   version_string = getVersionString();
   current_path = fileparts(mfilename('fullpath'));
-  doc_markdown_path = fullfile(current_path, '..', 'markdown');
-  prepareMarkdownDir(doc_markdown_path);
-  disp(['Building the markdown files into ', doc_markdown_path]);
-  buildhelpmd(doc_markdown_path);
-  runPrettierFormatting();
   all_languages = getavailablelanguages();
   buildDocsForLanguages(current_path, all_languages, version_string);
   all_versions = collectAllVersions(current_path, all_languages);
@@ -26,6 +21,10 @@ function update_help()
     generateIndexForLanguage(current_path, all_languages, all_versions, lang{1});
   end
   buildIndexHTML(current_path, all_languages);
+  doc_markdown_path = fullfile(current_path, '..', 'markdown');
+  prepareMarkdownDir(doc_markdown_path);
+  disp(['Building the markdown files into ', doc_markdown_path]);
+  buildhelpmd(doc_markdown_path);
   runPrettierFormatting();
 end
 %=============================================================================
@@ -57,6 +56,7 @@ function buildDocsForLanguages(current_path, all_languages, version_string)
       rmdir(doc_html_path, 's');
     end
     mkdir(doc_html_path);
+    disp(['Building the html files into ', doc_html_path]);      
     buildhelpweb(doc_html_path, language);
 
     latest_doc_html_path = fullfile(current_path, '..', 'docs', 'releases', language, 'latest');

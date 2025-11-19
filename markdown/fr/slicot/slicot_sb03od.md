@@ -18,7 +18,7 @@ Résolution des équations de Lyapunov stables temps continu ou discret (facteur
 ## 📤 Argument de sortie
 
 - Q_OUT - La partie principale N-by-N de ce tableau contient la matrice orthogonale Q de la factorisation de Schur de A. Le contenu de Q n'est pas modifié si FACT = 'F'.
-- B_OUT - La partie principale N-by-N de ce tableau contient le facteur de Cholesky supérieur U de la matrice solution X, X = op(U)'\*op(U). Si M = 0 et N > 0, alors U est mis à zéro.
+- B_OUT - La partie principale N-by-N de ce tableau contient le facteur de Cholesky supérieur U de la matrice solution X, X = op(U)'\*op(U). Si M = 0 et N >0, alors U est mis à zéro.
 - SCALE - Le facteur d'échelle scale ≤ 1 pour prévenir le débordement de la solution.
 - WR - Si FACT = 'N', et INFO ≥ 0 et INFO < 2, WR contient les parties réelles des valeurs propres de A.
 - WI - Si FACT = 'N', et INFO ≥ 0 et INFO < 2, WI contient les parties imaginaires des valeurs propres de A.

@@ -13,7 +13,7 @@ Outil Nelson pour interfacer des fonctions C ou Fortran avec Nelson.
 
 ## 📄 Description
 
-Avec <b>nig</b>, vous pouvez encapsuler votre code C/FORTRAN dans un ensemble (gateway) et l'utiliser dans Nelson comme des fonctions natives (builtin).
+Avec<b>nig</b>, vous pouvez encapsuler votre code C/FORTRAN dans un ensemble (gateway) et l'utiliser dans Nelson comme des fonctions natives (builtin).
 
 ## 💡 Exemples
 

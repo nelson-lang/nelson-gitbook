@@ -1,7 +1,6 @@
 # Text editor
 
-Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer, éditer et
-formater des scripts et fichiers Nelson.
+Le module Éditeur de texte fournit un éditeur intégré à Nelson pour créer, éditer et formater des scripts et fichiers Nelson.
 
 ## Functions
 

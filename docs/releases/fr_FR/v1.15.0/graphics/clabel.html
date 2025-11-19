@@ -42,7 +42,7 @@ clabel(...,Name,Value)
 <tr>
 <td class="param-name">C</td>
 <td>
-        <p>Matrice Contour retournée par <b>contour</b>, <b>contourf</b>, ou <b>contour3</b>. Si vous passez un objet contour <b>h</b>, vous pouvez passer <b>[]</b> pour <b>C</b>.</p>
+        <p>Matrice Contour retournée par <b>contour</b>, <b>contourf</b>, ou<b>contour3</b>. Si vous passez un objet contour<b>h</b>, vous pouvez passer <b>[]</b> pour <b>C</b>.</p>
       </td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@ clabel(...,Name,Value)
 <tr>
 <td class="param-name">tl</td>
 <td>
-        <p>Objets Text et ligne créés lorsque des marqueurs droits sont utilisés (pour l'utilisation de style <b>clabel(C)</b>).</p>
+        <p>Objets Text et ligne créés lorsque des marqueurs droits sont utilisés (pour l'utilisation de style<b>clabel(C)</b>).</p>
       </td>
 </tr>
 </table>
@@ -85,11 +85,11 @@ clabel(...,Name,Value)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-    <p>La fonction <b>clabel</b> insère des étiquettes dans les graphiques de contours :</p>
+    <p>La fonction<b>clabel</b> insère des étiquettes dans les graphiques de contours :</p>
     <ul>
-      <li>Fournir une matrice de contour <b>C</b> et un objet de contour <b>h</b> pour étiqueter le texte tourné le long des lignes de contour.</li>
-      <li>Fournir uniquement <b>C</b> pour ajouter des étiquettes droites et des marqueurs '+' aux emplacements de contour.</li>
-      <li>Passer un vecteur de niveaux <b>v</b> pour étiqueter uniquement des valeurs de contour spécifiques.</li>
+      <li>Fournir une matrice de contour <b>C</b> et un objet de contour<b>h</b> pour étiqueter le texte tourné le long des lignes de contour.</li>
+      <li>Fournir uniquement<b>C</b> pour ajouter des étiquettes droites et des marqueurs '+' aux emplacements de contour.</li>
+      <li>Passer un vecteur de niveaux<b>v</b> pour étiqueter uniquement des valeurs de contour spécifiques.</li>
       <li>Utiliser des paires Name,Value pour contrôler l'apparence du texte (un sous-ensemble des propriétés Text, plus <b>LabelSpacing</b>).</li>
     </ul>
   </div>
@@ -103,8 +103,7 @@ clabel(...,Name,Value)
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 [x,y,z] = peaks;
 [C,h] = contour(x,y,z);
-clabel(C,h)
-      </code></pre>
+clabel(C,h)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
@@ -116,8 +115,7 @@ clabel(C,h)
 [x,y,z] = peaks;
 [C,h] = contour(x,y,z);
 v = [2,6];
-clabel(C,h,v)
-      </code></pre>
+clabel(C,h,v)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
@@ -128,8 +126,7 @@ clabel(C,h,v)
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 [x,y,z] = peaks;
 [C,h] = contour(x,y,z);
-clabel(C,h,'FontSize',15,'Color','red')
-      </code></pre>
+clabel(C,h,'FontSize',15,'Color','red')</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_3.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
@@ -140,8 +137,7 @@ clabel(C,h,'FontSize',15,'Color','red')
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 [x,y,z] = peaks;
 C = contour(x,y,z);
-clabel(C)
-      </code></pre>
+clabel(C)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_4.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">

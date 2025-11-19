@@ -17,9 +17,9 @@ Retourne des informations sur une gateway.
 
 ## 📄 Description
 
-<b>[gateway_name, builtin_list] = gatewayinfo(dyn_lib_path)</b> récupère des informations sur une gateway.
+<b>[gateway\_name, builtin\_list] = gatewayinfo(dyn_lib_path)</b> récupère des informations sur une gateway.
 
-La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé <b>GetGatewayInfo</b>.
+La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé<b>GetGatewayInfo</b>.
 
 Si le fichier n'existe pas, une erreur est levée.
 

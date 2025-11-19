@@ -17,7 +17,7 @@ Subscripted reference.
 
 ## 📄 Description
 
-<b>B = subsref(A, S)</b> is invoked when using the syntax <b>A(i)</b>, <b>A{i}</b>, or <b>A.i</b> with an object <b>A</b>.
+<b>B = subsref(A, S)</b> is invoked when using the syntax<b>A(i)</b>, <b>A{i}</b>, or <b>A.i</b> with an object <b>A</b>.
 
 ## 💡 Examples
 

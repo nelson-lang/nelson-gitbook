@@ -27,7 +27,7 @@ float: single or double precision floating-point array: double, single
 
 integer: unsigned or signed integer array: int8, uint8, int16, uint16, int32, uint32, int64, uint64
 
-If <b>var</b> is a handle object, str can be 'handle' or type name of the handle.
+If<b>var</b> is a handle object, str can be 'handle' or type name of the handle.
 
 ## 💡 Examples
 

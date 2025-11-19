@@ -25,9 +25,9 @@ Read an audio file.
 
 <b>audioread</b> reads an audio file.
 
-Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See <b>audiosupportedformats</b> function to have all supported formats.
+Supported format: 'wav', 'ogg', 'flac', 'mp3', 'caf', 'au', 'aiff'. See<b>audiosupportedformats</b> function to have all supported formats.
 
-If <b>type</b> is 'native' then audio data depends on the file format (single, double, integers).
+If<b>type</b> is 'native' then audio data depends on the file format (single, double, integers).
 
 ## 💡 Example
 

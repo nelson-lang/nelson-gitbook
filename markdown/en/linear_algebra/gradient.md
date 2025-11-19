@@ -30,7 +30,7 @@ It assumes that the spacing between points is 1.
 
 <b>gradient(F, h)</b> allows for specifying a uniform spacing h between points in each direction.
 
-This uniform spacing can also be individually specified for each dimension of F using <b>gradient(F, hx, hy, ..., hN)</b>.
+This uniform spacing can also be individually specified for each dimension of F using<b>gradient(F, hx, hy, ..., hN)</b>.
 
 ## 💡 Example
 

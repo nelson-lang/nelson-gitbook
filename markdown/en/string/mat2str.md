@@ -21,7 +21,7 @@ Matrix to String.
 
 <b>mat2str</b> converts a matrix to a string.
 
-This string may be used to reconstruct the original matrix with <b>execstr</b> function.
+This string may be used to reconstruct the original matrix with<b>execstr</b> function.
 
 ## 💡 Example
 

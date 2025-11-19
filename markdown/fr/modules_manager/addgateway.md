@@ -14,7 +14,7 @@ Ajoute dynamiquement un builtin au moment de l'exécution.
 
 <b>addgateway(dyn_lib_path)</b> ajoute dynamiquement un builtin au moment de l'exécution.
 
-La bibliothèque dynamique chargée doit fournir au minimum un point d'entrée C nommé <b>AddGateway</b>.
+La bibliothèque dynamique chargée doit fournir au minimum un point d'entrée C nommé<b>AddGateway</b>.
 
 Si la gateway est déjà chargée, aucune erreur ni avertissement ne sera levé.
 

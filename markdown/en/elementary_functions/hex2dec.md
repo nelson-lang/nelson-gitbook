@@ -20,7 +20,7 @@ Convert number in base 16 to decimal.
 
 Note:
 
-- <b>hex2dec</b> and <b>dec2hex</b> are inverses of one another.
+- <b>hex2dec</b> and<b>dec2hex</b> are inverses of one another.
 
 ## 💡 Example
 

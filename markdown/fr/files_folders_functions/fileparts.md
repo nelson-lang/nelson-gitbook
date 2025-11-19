@@ -15,9 +15,9 @@ Renvoie le chemin, le nom de fichier et l'extension d'un chemin de fichier.
 
 ## 📤 Argument de sortie
 
-- p - a string: chemin du répertoire de <b>fullpath</b>.
-- f - a string: nom de fichier sans extension de <b>fullpath</b>.
-- e - a string: extension de <b>fullpath</b>.
+- p - a string: chemin du répertoire de<b>fullpath</b>.
+- f - a string: nom de fichier sans extension de<b>fullpath</b>.
+- e - a string: extension de<b>fullpath</b>.
 
 ## 📄 Description
 

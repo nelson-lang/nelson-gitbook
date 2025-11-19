@@ -14,7 +14,7 @@ Writes HDF5 data set.
 
 ## 📄 Description
 
-<b>h5write</b> writes data to an entire data set, <b>location</b>, in the HDF5 file.
+<b>h5write</b> writes data to an entire data set,<b>location</b>, in the HDF5 file.
 
 ## 💡 Example
 

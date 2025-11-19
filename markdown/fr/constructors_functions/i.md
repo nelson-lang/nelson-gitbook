@@ -10,7 +10,7 @@ Nombre imaginaire pur.
 
 ## 📄 Description
 
-<b>i</b>, ou <b>j</b> retourne un nombre imaginaire pur équivalent à sqrt(-1).
+<b>i</b>, ou<b>j</b> retourne un nombre imaginaire pur équivalent à sqrt(-1).
 
 Attention, i et j peuvent être redéfinis et utilisés comme variables ordinaires, dans ce cas, vous devez utiliser clear pour restaurer le comportement par défaut.
 

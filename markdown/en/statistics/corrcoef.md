@@ -16,7 +16,7 @@ Correlation coefficients
 
 ## 📄 Description
 
-<b>R = corrcoef(M)</b> returns the matrix of correlation coefficients for <b>M</b>, where the columns of <b>M</b> represent random variables and the rows represent observations.
+<b>R = corrcoef(M)</b> returns the matrix of correlation coefficients for<b>M</b>, where the columns of<b>M</b> represent random variables and the rows represent observations.
 
 The Pearson correlation coefficient between variables
 $$X$$

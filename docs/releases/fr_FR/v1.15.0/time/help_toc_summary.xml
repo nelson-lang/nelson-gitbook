@@ -4,10 +4,10 @@
     <module>time</module>
     <section name="Date et Heure">
       <chapter_description>
-        <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p>
-        <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p>
-        <p>Ce module permet une gestion précise du temps, la planification et la mesure de performance dans les scripts et applications.</p>
-    </chapter_description>
+    <p>Le module Time fournit des outils pour travailler avec les dates, les heures et les durées dans Nelson.</p>
+    <p>Il permet d'interroger l'heure courante, de mesurer le temps écoulé, d'effectuer des calculs sur les dates et heures, de convertir entre différentes représentations temporelles et de gérer des opérations liées au calendrier telles que les années bissextiles et la fin de mois.</p>
+    <p>Ce module permet une gestion précise du temps, la planification et la mesure de performance dans les scripts et applications.</p>
+  </chapter_description>
       <keyword name="addtodate" link="addtodate.html" description="Modifier un numéro de date par champ."/>
       <keyword name="calendar" link="calendar.html" description="Calendar."/>
       <keyword name="clock" link="clock.html" description="Renvoie la date et l'heure locales actuelles sous forme d'un vecteur date."/>

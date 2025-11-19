@@ -16,7 +16,7 @@ Coefficients de corrélation
 
 ## 📄 Description
 
-<b>R = corrcoef(M)</b> renvoie la matrice des coefficients de corrélation pour <b>M</b>, où les colonnes de <b>M</b> représentent des variables aléatoires et les lignes représentent des observations.
+<b>R = corrcoef(M)</b> renvoie la matrice des coefficients de corrélation pour<b>M</b>, où les colonnes de<b>M</b> représentent des variables aléatoires et les lignes représentent des observations.
 
 ## 💡 Exemple
 

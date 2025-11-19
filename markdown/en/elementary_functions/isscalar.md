@@ -16,7 +16,7 @@ Check if the input is a scalar
 
 ## 📄 Description
 
-<b>TF = isscalar(A)</b> returns logical true if <b>A</b> is a scalar, meaning it is a 1-by-1 two-dimensional array.
+<b>TF = isscalar(A)</b> returns logical true if<b>A</b> is a scalar, meaning it is a 1-by-1 two-dimensional array.
 
 Otherwise, it returns logical false.
 

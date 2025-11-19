@@ -28,7 +28,7 @@ Check that a command raises the expected error.
 
 If the command does not raise any error, or if it raises an error with a different message than expected, the assertion fails.
 
-When the optional <b>expected_error_identifier</b> parameter is provided, the function also checks that the error identifier matches the expected one.
+When the optional<b>expected_error_identifier</b> parameter is provided, the function also checks that the error identifier matches the expected one.
 
 This function is particularly useful for unit testing to ensure that invalid inputs or operations properly generate the expected error conditions.
 

@@ -20,11 +20,11 @@ Ajouter des entrées à un dictionnaire.
 
 ## 📄 Description
 
-<b>db = insert(da, key, value)</b> ajoute la paire clé-valeur au dictionnaire <b>da</b>.
+<b>db = insert(da, key, value)</b> ajoute la paire clé-valeur au dictionnaire<b>da</b>.
 
 Si la clé existe déjà, sa valeur est mise à jour.
 
-<b>d = insert(d, key, value)</b> équivaut à <b>d[key] = value</b>.
+<b>d = insert(d, key, value)</b> équivaut à<b>d[key] = value</b>.
 
 <b>db = insert(da, key, value, 'overwrite', tf)</b> spécifie si l'on doit écraser une valeur existante pour la clé en fonction du paramètre booléen Overwrite.
 

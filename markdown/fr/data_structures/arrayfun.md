@@ -21,11 +21,11 @@ Appliquer une fonction à chaque élément d'un tableau.
 
 ## 📄 Description
 
-<b>arrayfun(func, A)</b> applique la fonction <b>func</b> à chaque élément du tableau <b>A</b>, et renvoie le résultat dans <b>B</b> avec la même taille que <b>A</b>.
+<b>arrayfun(func, A)</b> applique la fonction<b>func</b> à chaque élément du tableau<b>A</b>, et renvoie le résultat dans <b>B</b> avec la même taille que<b>A</b>.
 
-<b>arrayfun(func, A1, ..., An)</b> applique <b>func</b> aux éléments correspondants des tableaux d'entrée. Tous les tableaux doivent avoir la même taille.
+<b>arrayfun(func, A1, ..., An)</b> applique<b>func</b> aux éléments correspondants des tableaux d'entrée. Tous les tableaux doivent avoir la même taille.
 
-Utilisez l'option <b>'UniformOutput'</b> à <b>false</b> pour autoriser des valeurs de sortie qui ne peuvent pas être concaténées dans un seul tableau. Dans ce cas, le résultat est un tableau cellulaire.
+Utilisez l'option <b>'UniformOutput'</b> à<b>false</b> pour autoriser des valeurs de sortie qui ne peuvent pas être concaténées dans un seul tableau. Dans ce cas, le résultat est un tableau cellulaire.
 
 <b>[B1, ..., Bm] = arrayfun(...)</b> capture plusieurs sorties de la fonction appliquée.
 

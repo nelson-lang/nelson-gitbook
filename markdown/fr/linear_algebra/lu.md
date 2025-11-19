@@ -23,9 +23,9 @@ Factorisation LU d'une matrice.
 
 Cette factorisation satisfait l'équation <b>A = L \* U</b>.
 
-<b>[L, U, P] = lu(A)</b> : avec trois arguments de sortie, la fonction fournit une matrice de permutation <b>P</b> en plus de la matrice triangulaire inférieure unitaire <b>L</b> et de la matrice triangulaire supérieure <b>U</b>.
+<b>[L, U, P] = lu(A)</b> : avec trois arguments de sortie, la fonction fournit une matrice de permutation<b>P</b> en plus de la matrice triangulaire inférieure unitaire<b>L</b> et de la matrice triangulaire supérieure <b>U</b>.
 
-Cette factorisation s'exprime comme <b>A = P'LU</b>, où <b>L</b> est triangulaire inférieure unitaire et <b>U</b> est triangulaire supérieure.
+Cette factorisation s'exprime comme <b>A = P'LU</b>, où<b>L</b> est triangulaire inférieure unitaire et<b>U</b> est triangulaire supérieure.
 
 ## Fonction(s) utilisée(s)
 

@@ -12,7 +12,7 @@ Reinitialize Nelson’s search path directory cache.
 
 This happens each time Nelson displays the prompt.
 
-You should use <b>rehash()</b> only when you run a .m file that updates another .m file
+You should use<b>rehash()</b> only when you run a .m file that updates another .m file
 
 ## 💡 Example
 

@@ -16,7 +16,7 @@ Sinc function.
 
 ## 📄 Description
 
-<b>c = sinc(m)</b> returns an array <b>c</b> whose elements are the sinc of the elements of the input: <b>m</b>.
+<b>c = sinc(m)</b> returns an array<b>c</b> whose elements are the sinc of the elements of the input: <b>m</b>.
 
 The sinc function (normalized) is defined as:
 $$\text{sinc}(x) = \begin{cases} \frac{\sin(\pi x)}{\pi x} & \text{if } x \neq 0 \\ 1 & \text{if } x = 0 \end{cases}$$

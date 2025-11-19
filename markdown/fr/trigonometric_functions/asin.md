@@ -16,7 +16,7 @@ Calcule le sinus inverse en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>asin</b> calcule le sinus inverse en radians pour chaque élément de <b>x</b>.
+<b>asin</b> calcule le sinus inverse en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

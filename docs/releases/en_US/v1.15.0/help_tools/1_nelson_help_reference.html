@@ -18,7 +18,7 @@
             </style>
 </head>
 <body>
-<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="subtitle chapter-description" style="padding-left:32px;"><p style="margin:2px 0 2px 0; padding:0; display:block;">This document is the canonical authoring reference for help XML files used by Nelson. It explains the structure required by nelson_help.xsd and how nelson_html.xslt transforms each element into HTML. Use this file as a template and checklist when creating or reviewing documentation pages.</p></div>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="subtitle chapter-description" style="padding-left:32px;"><p style="margin:2px 0 2px 0; padding:0; display:block;">This document is the canonical authoring reference for help XML files used by Nelson. It explains the structure required bynelson_help.xsdand hownelson_html.xslttransforms each element into HTML. Use this file as a template and checklist when creating or reviewing documentation pages.</p></div>
 <div class="header"><div class="title"><span class="keyword-title">nelson help reference</span></div></div>
 <div class="section syntax-section"><div class="subtitle">How to write help XML files for Nelson (elements, attributes, examples, tips).</div></div>
 <div class="section syntax-section">
@@ -40,13 +40,13 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
 <tr>
 <td class="param-name">language</td>
 <td>
-        <p>Locale used by the XSLT to select labels and localized text. Examples: en_US, fr_FR. This element is required on the root `&lt;xmldoc&gt;`.</p>
+        <p>Locale used by the XSLT to select labels and localized text. Examples:en_US,fr_FR. This element is required on the root`&lt;xmldoc&gt;`.</p>
       </td>
 </tr>
 <tr>
 <td class="param-name">keyword</td>
 <td>
-        <p>Main identifier shown as the page title by the XSLT. If absent, the XSLT falls back to `&lt;chapter&gt;` or "Documentation".</p>
+        <p>Main identifier shown as the page title by the XSLT. If absent, the XSLT falls back to`&lt;chapter&gt;`or "Documentation".</p>
       </td>
 </tr>
 </table>
@@ -62,7 +62,7 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
 <tr>
 <td class="param-name">html</td>
 <td>
-        <p>The XSLT generates an HTML file using local assets: highlight.css, nelson_common.css and nelson_help.js. Images are copied via the extension ext:copy_img.</p>
+        <p>The XSLT generates an HTML file using local assets:highlight.css,nelson_common.cssandnelson_help.js. Images are copied via the extensionext:copy_img.</p>
       </td>
 </tr>
 </table>
@@ -71,9 +71,8 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-    <p>A human-readable reference and definitive example set describing the XML help file format defined by nelson_help.xsd, and how nelson_html.xslt transforms its elements into HTML.</p>
-    <p>Use `&lt;description&gt;` to provide the main documentation body. It accepts paragraphs (`&lt;p&gt;`), lists (`&lt;ul&gt;`, `&lt;ol&gt;`), tables (`&lt;table&gt;`), inline markup (`&lt;b&gt;`, `&lt;i&gt;`, `&lt;code&gt;`), images (`&lt;img src="..."/&gt;`) and LaTeX (`&lt;latex&gt;`).</p>
-
+    <p>A human-readable reference and definitive example set describing the XML help file format defined bynelson_help.xsd, and hownelson_html.xslttransforms its elements into HTML.</p>
+    <p>Use`&lt;description&gt;`to provide the main documentation body. It accepts paragraphs (`&lt;p&gt;`), lists (`&lt;ul&gt;`,`&lt;ol&gt;`), tables (`&lt;table&gt;`), inline markup (`&lt;b&gt;`,`&lt;i&gt;`,`&lt;code&gt;`), images (`&lt;img src="..."/&gt;`) and LaTeX (`&lt;latex&gt;`).</p>
     <p>Inline elements and their XSLT rendering:</p>
     <ul>
       <li>
@@ -85,25 +84,23 @@ Sections: `&lt;syntax&gt;`, `&lt;param_input&gt;`, `&lt;param_output&gt;`, `&lt;
       <li>
 <b>`&lt;a href="..."&gt;`</b> — external links (rendered as HTML anchors).</li>
       <li>
-<b>`&lt;link linkend="..."&gt;`</b> — internal cross reference. If linkend contains a module in braces {module}name it becomes ../module/name.html, otherwise name.html.</li>
+<b>`&lt;link linkend="..."&gt;`</b> — internal cross reference. If linkend contains a module in braces{module}nameit becomes../module/name.html, otherwisename.html.</li>
       <li>
-<b>`&lt;latex&gt;`</b> — math expressions; rendered as MathJax display math by the XSLT template (wrapped with `$$...$$`).</li>
+<b>`&lt;latex&gt;`</b> — math expressions; rendered as MathJax display math by the XSLT template (wrapped with`$$...$$`).</li>
       <li>
-<b>`&lt;img src="..."/&gt;`</b> — images. XSLT calls ext:copy_img(@src); SVGs are rendered with a large fixed frame and other formats are responsive.</li>
+<b>`&lt;img src="..."/&gt;`</b> — images. XSLT callsext:copy_img(@src); SVGs are rendered with a large fixed frame and other formats are responsive.</li>
     </ul>
-
     <p>Block elements:</p>
     <ul>
-      <li>`&lt;ul&gt;` and `&lt;ol&gt;` — lists. Use `&lt;li&gt;` with nested inline/block markup as needed.</li>
-      <li>`&lt;table&gt;` — use `&lt;thead&gt;`, `&lt;tbody&gt;`, `&lt;tr&gt;`, `&lt;th&gt;` and `&lt;td&gt;`. The XSD allows common attributes border, cellpadding and cellspacing.</li>
+      <li>`&lt;ul&gt;`and`&lt;ol&gt;`— lists. Use`&lt;li&gt;`with nested inline/block markup as needed.</li>
+      <li>`&lt;table&gt;`— use`&lt;thead&gt;`,`&lt;tbody&gt;`,`&lt;tr&gt;`,`&lt;th&gt;`and`&lt;td&gt;`. The XSD allows common attributesborder,cellpaddingandcellspacing.</li>
     </ul>
-
     <p>Authoring tips:</p>
     
-      <li>Prefer short summary lines for `&lt;short_description&gt;`.</li>
-      <li>Place runnable examples inside `&lt;examples&gt;` using `&lt;example_item_data&gt;` and set `runnable="cli"` if applicable or `runnable="false"` (default).</li>
+      <li>Prefer short summary lines for`&lt;short_description&gt;`.</li>
+      <li>Place runnable examples inside`&lt;examples&gt;`using`&lt;example_item_data&gt;`and set`runnable="cli"`if applicable or`runnable="false"`(default).</li>
       <li>Wrap example source in CDATA to avoid escaping (see examples below).</li>
-      <li>Use `&lt;link linkend="{module}name"&gt;` for module-qualified references; otherwise use plain names.</li>
+      <li>Use`&lt;link linkend="{module}name"&gt;`for module-qualified references; otherwise use plain names.</li>
     
   </div>
 </div>

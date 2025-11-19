@@ -16,14 +16,13 @@ Calcule le cosinus inverse en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>acos</b> calcule le cosinus inverse en radians pour chaque élément de <b>x</b>.
+<b>acos</b> calcule le cosinus inverse en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 
 ```matlab
 A = eye(3, 3);
 res = acos(A)
-
 ```
 
 ## 🔗 Voir aussi

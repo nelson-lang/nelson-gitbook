@@ -22,7 +22,7 @@ Check that computed and expected values are equal.
 
 <b>assert_isequal</b> raises an error if the computed value is not equal to the expected value.
 
-This function performs strict equality testing that checks for same type, same dimensions, and same values comparisons. It uses the same logic as the <b>isequaln</b> function.
+This function performs strict equality testing that checks for same type, same dimensions, and same values comparisons. It uses the same logic as the<b>isequaln</b> function.
 
 Unlike standard equality operators, this function properly handles NaN values, considering them equal when both values contain NaN in the same positions.
 

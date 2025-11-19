@@ -27,25 +27,25 @@ Plot discrete sequence data.
 
 ## 📄 Description
 
-A two-dimensional <b>stem</b> plot is a way to visualize data by representing it as lines extending from a horizontal baseline along the x-axis.
+A two-dimensional<b>stem</b> plot is a way to visualize data by representing it as lines extending from a horizontal baseline along the x-axis.
 
 At the end of each line, there is a circle (which is the default marker), and the vertical position of this circle corresponds to the value of the data it represents.
 
-<b>stem(Y)</b> creates a stem plot by taking the data sequence <b>Y</b> and drawing stems that extend from regularly spaced and automatically determined points along the x-axis.
+<b>stem(Y)</b> creates a stem plot by taking the data sequence<b>Y</b> and drawing stems that extend from regularly spaced and automatically determined points along the x-axis.
 
-If <b>Y</b> is a matrix, the stem function plots all elements in a row against the same x-value.
+If<b>Y</b> is a matrix, the stem function plots all elements in a row against the same x-value.
 
-<b>stem(X, Y)</b> creates a stem plot that shows how <b>X</b> relates to the columns of <b>Y</b>.
+<b>stem(X, Y)</b> creates a stem plot that shows how<b>X</b> relates to the columns of <b>Y</b>.
 
-Both <b>X</b> and <b>Y</b> can be vectors or matrices of the same size.
+Both <b>X</b> and<b>Y</b> can be vectors or matrices of the same size.
 
-<b>X</b> can be either a row or a column vector, and <b>Y</b> should be a matrix with the same number of rows as the length of <b>X</b>.
+<b>X</b> can be either a row or a column vector, and<b>Y</b> should be a matrix with the same number of rows as the length of<b>X</b>.
 
-If you want to specify whether to fill the circle at the end of each stem, you can use <b>stem(...,'fill')</b>.
+If you want to specify whether to fill the circle at the end of each stem, you can use<b>stem(...,'fill')</b>.
 
-Moreover, by using <b>stem(..., LineSpec)</b>, you can define the line style, marker symbol, and color for the stems and the top marker.
+Moreover, by using<b>stem(..., LineSpec)</b>, you can define the line style, marker symbol, and color for the stems and the top marker.
 
-Refer to <b>LineSpec</b> for more details on how to customize the appearance of the stem plot.
+Refer to<b>LineSpec</b> for more details on how to customize the appearance of the stem plot.
 
 ## 💡 Examples
 

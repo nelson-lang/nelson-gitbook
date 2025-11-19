@@ -13,7 +13,7 @@ Vérifie si une variable est verrouillée.
 
 ## 📄 Description
 
-<b>varislock</b> renvoie vrai si <b>variable_name</b> a été déclarée comme variable verrouillée, et faux sinon.
+<b>varislock</b> renvoie vrai si<b>variable_name</b> a été déclarée comme variable verrouillée, et faux sinon.
 
 ## 💡 Exemple
 

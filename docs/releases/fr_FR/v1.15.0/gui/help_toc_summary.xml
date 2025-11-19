@@ -4,8 +4,8 @@
     <module>gui</module>
     <section name="Module GUI">
       <chapter_description>
-        <p>Le module GUI fournit des fonctions pour créer et interagir avec les composants d'interface graphique, les boîtes de dialogue et les fenêtres d'application.</p>
-    </chapter_description>
+    <p>Le module GUI fournit des fonctions pour créer et interagir avec les composants d'interface graphique, les boîtes de dialogue et les fenêtres d'application.</p>
+  </chapter_description>
       <keyword name="commandhistory" link="commandhistory.html" description="Historique des commandes"/>
       <keyword name="errordlg" link="errordlg.html" description="Crée une boîte de dialogue d'erreur."/>
       <keyword name="filebrowser" link="filebrowser.html" description="Explorateur du dossier courant"/>

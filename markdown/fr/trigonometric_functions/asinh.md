@@ -16,7 +16,7 @@ Sinus hyperbolique inverse
 
 ## 📄 Description
 
-<b>asinh</b> calcule le sinus hyperbolique inverse en radians pour chaque élément de <b>x</b>.
+<b>asinh</b> calcule le sinus hyperbolique inverse en radians pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

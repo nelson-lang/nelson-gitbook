@@ -20,7 +20,7 @@ Creates an Not-a-Number
 
 <b>NaN</b> is the result of operations which do not produce a well defined numerical result.
 
-Beware, you must never compare <b>NaN</b> with <b>NaN</b>, in this case, please use <b>isnan</b>.
+Beware, you must never compare <b>NaN</b> with<b>NaN</b>, in this case, please use <b>isnan</b>.
 
 ## 💡 Examples
 

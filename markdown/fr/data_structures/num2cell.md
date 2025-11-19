@@ -20,7 +20,7 @@ Convertir un tableau en tableau cellulaire avec des cellules de tailles cohéren
 
 <b>num2cell</b> convertit un tableau numérique en un tableau cellulaire, où chaque élément du tableau numérique est placé dans sa propre cellule du tableau résultant.
 
-Si <b>A</b> est un tableau de caractères, num2cell convertira chaque ligne du tableau en une cellule distincte du tableau résultant.
+Si<b>A</b> est un tableau de caractères, num2cell convertira chaque ligne du tableau en une cellule distincte du tableau résultant.
 
 ## 💡 Exemple
 

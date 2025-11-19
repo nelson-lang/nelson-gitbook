@@ -23,9 +23,9 @@ Transformée de Fourier 2-D rapide.
 
 Les arguments optionnels <b>m</b> et <b>n</b> peuvent être utilisés pour préciser le nombre de lignes et de colonnes de <b>X</b> à utiliser.
 
-Si l'un de ces arguments est plus grand que la taille de <b>X</b>, <b>X</b> est redimensionné et complété par des zéros.
+Si l'un de ces arguments est plus grand que la taille de <b>X</b>,<b>X</b> est redimensionné et complété par des zéros.
 
-Si <b>X</b> est un tableau multidimensionnel, chaque sous-matrice bidimensionnelle de <b>X</b> est traitée séparément.
+Si<b>X</b> est un tableau multidimensionnel, chaque sous-matrice bidimensionnelle de<b>X</b> est traitée séparément.
 
 ## 💡 Exemple
 

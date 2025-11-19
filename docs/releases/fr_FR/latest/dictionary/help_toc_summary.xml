@@ -4,10 +4,10 @@
     <module>dictionary</module>
     <section name="Dictionnaires">
       <chapter_description>
-      <p>Le module Dictionnaire fournit des outils pour travailler avec des paires clé-valeur dans Nelson.</p>
-      <p>Il permet la création et la configuration de dictionnaires avec des types définis pour les clés et les valeurs, la consultation et la modification des entrées, ainsi que la gestion de la structure globale.</p>
-      <p>Ce module permet un stockage, une récupération et une manipulation efficaces des données indexées par des clés uniques, ce qui le rend adapté aux tableaux associatifs, recherches et gestion dynamique des données.</p>
-    </chapter_description>
+    <p>Le module Dictionnaire fournit des outils pour travailler avec des paires clé-valeur dans Nelson.</p>
+    <p>Il permet la création et la configuration de dictionnaires avec des types définis pour les clés et les valeurs, la consultation et la modification des entrées, ainsi que la gestion de la structure globale.</p>
+    <p>Ce module permet un stockage, une récupération et une manipulation efficaces des données indexées par des clés uniques, ce qui le rend adapté aux tableaux associatifs, recherches et gestion dynamique des données.</p>
+  </chapter_description>
       <keyword name="configureDictionary" link="configureDictionary.html" description="Génère un dictionnaire avec des types définis pour les clés et les valeurs."/>
       <keyword name="dictionary" link="dictionary.html" description="Objet qui associe des clés uniques à des valeurs."/>
       <keyword name="entries" link="entries.html" description="Paires clé-valeur du dictionnaire."/>

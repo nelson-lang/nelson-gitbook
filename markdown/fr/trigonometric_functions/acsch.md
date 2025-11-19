@@ -16,7 +16,7 @@ Cosécante hyperbolique inverse.
 
 ## 📄 Description
 
-<b>acsch</b> calcule la cosécante hyperbolique inverse pour chaque élément de <b>x</b>.
+<b>acsch</b> calcule la cosécante hyperbolique inverse pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

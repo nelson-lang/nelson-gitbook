@@ -4,9 +4,9 @@
     <module>qml_engine</module>
     <section name="QML engine">
       <chapter_description>
-        <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p>
-        <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p>
-    </chapter_description>
+    <p>The QML Engine module allows Nelson programs to display, manipulate, and interact with graphical content using Qt's QML framework.</p>
+    <p>It provides functions to manage QML components, access Qt objects, and integrate JavaScript and QML logic.</p>
+  </chapter_description>
       <keyword name="QObject_classname" link="QObject_classname.html" description="Returns class name of an QObject handle."/>
       <keyword name="QObject_findchildren" link="QObject_findchildren.html" description="Returns all children of this object with the given name."/>
       <keyword name="QObject_get" link="QObject_get.html" description="Retrieve a property value from an QObject handle."/>

@@ -23,7 +23,7 @@ Gère les formats d'image pris en charge.
 
 <b>formats = imformats()</b> renvoie la liste des formats d'image pris en charge sous la forme d'un tableau de structures.
 
-<b>format = imformats(ext)</b> renvoie la structure du format d'image correspondant à l'extension <b>ext</b>.
+<b>format = imformats(ext)</b> renvoie la structure du format d'image correspondant à l'extension<b>ext</b>.
 
 Chaque élément du tableau de structures contient les champs :
 

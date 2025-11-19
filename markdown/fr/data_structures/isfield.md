@@ -19,7 +19,7 @@ Vérifie si un nom de champ existe dans une structure.
 
 ## 📄 Description
 
-<b>isfield(S, name)</b> renvoie vrai si <b>name</b> est un nom de champ de <b>S</b>.
+<b>isfield(S, name)</b> renvoie vrai si<b>name</b> est un nom de champ de <b>S</b>.
 
 ## 💡 Exemples
 

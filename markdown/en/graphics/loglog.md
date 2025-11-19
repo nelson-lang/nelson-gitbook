@@ -29,7 +29,7 @@ Log-log scale plot.
 
 <b>loglog(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and the y-axis.
 
-<b>loglog</b> has the exact same syntax as the <b>plot</b> command.
+<b>loglog</b> has the exact same syntax as the<b>plot</b> command.
 
 ## 💡 Examples
 

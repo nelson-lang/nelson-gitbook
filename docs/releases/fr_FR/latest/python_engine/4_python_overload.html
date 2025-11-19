@@ -24,81 +24,79 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Nelson facilite l'utilisation des opérateurs surchargés suivants :</p>
-        <p></p>
-        <table>
-            <tr>
-                <th>Symbole opérateur Python</th>
-                <th>Méthodes Python</th>
-                <th>Méthodes Nelson</th>
-            </tr>
-            <tr>
-                <td>- (opérateur unaire)</td>
-                <td>__neg__</td>
-                <td>uminus, -a</td>
-            </tr>
-            <tr>
-                <td>+ (opérateur unaire)</td>
-                <td>__pos__</td>
-                <td>uplus, +a</td>
-            </tr>
-            <tr>
-                <td>+ (opérateur binaire)</td>
-                <td>__add__, __radd__</td>
-                <td>plus, +</td>
-            </tr>
-            <tr>
-                <td>- (opérateur binaire)</td>
-                <td>__sub__, __rsub__</td>
-                <td>minus, -</td>
-            </tr>
-            <tr>
-                <td>* (opérateur binaire)</td>
-                <td>__mul__, __rmul__</td>
-                <td>mtimes, *</td>
-            </tr>
-            <tr>
-                <td>/ (opérateur binaire)</td>
-                <td>__truediv__, __rtruediv__</td>
-                <td>mrdivide, /</td>
-            </tr>
-            <tr>
-                <td>== (opérateur binaire)</td>
-                <td>__eq__</td>
-                <td>eq, ==</td>
-            </tr>
-            <tr>
-                <td>&gt; (opérateur binaire)</td>
-                <td>__gt__</td>
-                <td>gt, &gt;</td>
-            </tr>
-            <tr>
-                <td>&lt; (opérateur binaire)</td>
-                <td>__lt__</td>
-                <td>lt, &lt;</td>
-            </tr>
-            <tr>
-                <td>!= (opérateur binaire)</td>
-                <td>__ne__</td>
-                <td>ne, ~=</td>
-            </tr>
-            <tr>
-                <td>&gt;= (opérateur binaire)</td>
-                <td>__ge__</td>
-                <td>ge, &gt;=</td>
-            </tr>
-            <tr>
-                <td>&lt;= (opérateur binaire)</td>
-                <td>__le__</td>
-                <td>le, &lt;=</td>
-            </tr>
-        </table>
-        <p></p>
-        <p>
-            <b>isequal</b> builtin est également surchargée pour gérer les types Python.</p>
-            <p>Pour les types numpy, <b>isequal</b> appelle <b>numpy.array_equal</b> depuis Python.</p>
-            <p>D'autres opérateurs Python ne sont pas encore pris en charge.</p>
-        </div>
+    <p>Nelson facilite l'utilisation des opérateurs surchargés suivants :</p>
+    <table>
+      <tr>
+        <th>Symbole opérateur Python</th>
+        <th>Méthodes Python</th>
+        <th>Méthodes Nelson</th>
+      </tr>
+      <tr>
+        <td>- (opérateur unaire)</td>
+        <td>__neg__</td>
+        <td>uminus, -a</td>
+      </tr>
+      <tr>
+        <td>+ (opérateur unaire)</td>
+        <td>__pos__</td>
+        <td>uplus, +a</td>
+      </tr>
+      <tr>
+        <td>+ (opérateur binaire)</td>
+        <td>__add__, __radd__</td>
+        <td>plus, +</td>
+      </tr>
+      <tr>
+        <td>- (opérateur binaire)</td>
+        <td>__sub__, __rsub__</td>
+        <td>minus, -</td>
+      </tr>
+      <tr>
+        <td>* (opérateur binaire)</td>
+        <td>__mul__, __rmul__</td>
+        <td>mtimes, *</td>
+      </tr>
+      <tr>
+        <td>/ (opérateur binaire)</td>
+        <td>__truediv__, __rtruediv__</td>
+        <td>mrdivide, /</td>
+      </tr>
+      <tr>
+        <td>== (opérateur binaire)</td>
+        <td>__eq__</td>
+        <td>eq, ==</td>
+      </tr>
+      <tr>
+        <td>&gt; (opérateur binaire)</td>
+        <td>__gt__</td>
+        <td>gt, &gt;</td>
+      </tr>
+      <tr>
+        <td>&lt; (opérateur binaire)</td>
+        <td>__lt__</td>
+        <td>lt, &lt;</td>
+      </tr>
+      <tr>
+        <td>!= (opérateur binaire)</td>
+        <td>__ne__</td>
+        <td>ne, ~=</td>
+      </tr>
+      <tr>
+        <td>&gt;= (opérateur binaire)</td>
+        <td>__ge__</td>
+        <td>ge, &gt;=</td>
+      </tr>
+      <tr>
+        <td>&lt;= (opérateur binaire)</td>
+        <td>__le__</td>
+        <td>le, &lt;=</td>
+      </tr>
+    </table>
+    <p></p>
+    <p><b>isequal</b> builtin est également surchargée pour gérer les types Python.</p>
+    <p>Pour les types numpy, <b>isequal</b> appelle <b>numpy.array_equal</b> depuis Python.</p>
+    <p>D'autres opérateurs Python ne sont pas encore pris en charge.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

@@ -19,9 +19,9 @@ gestionnaire de versions sémantiques.
 
 <b>semver</b> compare une chaîne de version à une version simple ou à une plage de versions.
 
-Si une plage de versions est utilisée, <b>r</b> retourne 0 (non satisfaite) ou 1 (satisfaite).
+Si une plage de versions est utilisée,<b>r</b> retourne 0 (non satisfaite) ou 1 (satisfaite).
 
-Si une version simple est utilisée, une valeur de comparaison <b>r</b> est renvoyée : -1 (inférieur), 0 (égal) ou 1 (supérieur).
+Si une version simple est utilisée, une valeur de comparaison<b>r</b> est renvoyée : -1 (inférieur), 0 (égal) ou 1 (supérieur).
 
 Opérateurs de plage supportés :
 

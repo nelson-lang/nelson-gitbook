@@ -38,7 +38,6 @@ f = figure();
 x = logspace(-1,2);
 semilogx(x, x);
 grid on
-
 ```
 
 <img src="semilogx_1.svg" align="middle"/>

@@ -23,7 +23,7 @@ Renvoie le jour de la semaine.
 
 ## 📄 Description
 
-<b>weekday</b> renvoie le jour de la semaine sous forme numérique dans <b>number</b> et sous forme textuelle dans <b>name</b>.
+<b>weekday</b> renvoie le jour de la semaine sous forme numérique dans<b>number</b> et sous forme textuelle dans <b>name</b>.
 
 ## 💡 Exemple
 

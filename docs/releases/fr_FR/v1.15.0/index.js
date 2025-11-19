@@ -1,5 +1,5 @@
 // index.js - Search index for Nelson help system
-// Auto-generated on 1763495890
+// Auto-generated on 1763583447
 
 // Define the index in a globally accessible variable
 window.searchIndex = [
@@ -6565,7 +6565,7 @@ window.searchIndex = [
     url: "./dynamic_link/index.html",
     path: "sections/dynamic_link",
     content:
-      "Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution. Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe. Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois configuremsvc ou configuremingw.",
+      "Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du code C/C++ et Fortran à l'exécution. Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe. Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une foisconfiguremsvc ou configuremingw.",
   },
   {
     title: "Compilation C/C++ à la volée",

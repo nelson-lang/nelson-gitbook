@@ -4,10 +4,10 @@
     <module>validators</module>
     <section name="Validateurs">
       <chapter_description>
-        <p>Le module Validators fournit des outils pour appliquer des contraintes et vérifier les valeurs d'entrée dans Nelson.</p>
-        <p>Il prend en charge la vérification des types de données, des propriétés numériques, des dimensions des matrices et des vecteurs, la validité des textes, l'existence de fichiers et de dossiers, ainsi que les conditions logiques ou numériques.</p>
-        <p>Ce module assure une validation d'entrée robuste, contribuant à prévenir les erreurs, garantir l'exactitude et améliorer la fiabilité des scripts et fonctions.</p>
-    </chapter_description>
+    <p>Le module Validators fournit des outils pour appliquer des contraintes et vérifier les valeurs d'entrée dans Nelson.</p>
+    <p>Il prend en charge la vérification des types de données, des propriétés numériques, des dimensions des matrices et des vecteurs, la validité des textes, l'existence de fichiers et de dossiers, ainsi que les conditions logiques ou numériques.</p>
+    <p>Ce module assure une validation d'entrée robuste, contribuant à prévenir les erreurs, garantir l'exactitude et améliorer la fiabilité des scripts et fonctions.</p>
+  </chapter_description>
       <keyword name="mustBeA" link="mustBeA.html" description="Vérifie que la valeur d'entrée appartient à l'une des classes spécifiées."/>
       <keyword name="mustBeColumn" link="mustBeColumn.html" description="Vérifie que la valeur est un vecteur colonne ou renvoie une erreur."/>
       <keyword name="mustBeFile" link="mustBeFile.html" description="Vérifie que le chemin d'entrée correspond à un fichier."/>

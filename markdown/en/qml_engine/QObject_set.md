@@ -27,7 +27,6 @@ h = errordlg()
 h.visible = false; % or set(h, 'visible', false)
 h.windowTitle = 'new title' % or set(h, 'windowTitle', 'new title')
 h.visible = true;
-
 ```
 
 ## 🔗 See also

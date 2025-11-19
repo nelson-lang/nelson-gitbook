@@ -16,7 +16,7 @@ Cotangente inverse d'un angle en radians
 
 ## 📄 Description
 
-<b>acot</b> calcule la cotangente inverse d'un angle pour chaque élément de <b>x</b>.
+<b>acot</b> calcule la cotangente inverse d'un angle pour chaque élément de<b>x</b>.
 
 ## 💡 Exemple
 

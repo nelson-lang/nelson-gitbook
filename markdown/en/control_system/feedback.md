@@ -18,7 +18,7 @@ Feedback connection of multiple models.
 
 ## 📄 Description
 
-<b>sys = feedback(sys1, sys2)</b> generates a model object, <b>sys</b>, representing the negative feedback interconnection of the model objects <b>sys1</b> and <b>sys2</b>.
+<b>sys = feedback(sys1, sys2)</b> generates a model object,<b>sys</b>, representing the negative feedback interconnection of the model objects<b>sys1</b> and <b>sys2</b>.
 
 ## 💡 Example
 

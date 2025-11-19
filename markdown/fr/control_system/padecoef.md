@@ -21,7 +21,7 @@ Calcule l'approximation de Padé des délais temporels.
 
 <b>padecoef(T, N)</b> calcule l'approximation de Padé d'ordre N pour le système à retard en temps continu représenté par le terme exponentiel exp(-T\*s) et le renvoie sous la forme d'une fonction de transfert.
 
-Voir http://en.wikipedia.org/wiki/Pad%C3%A9_approximant et Golub & Van Loan, Matrix Computations pour les détails.
+Voir http://en.wikipedia.org/wiki/Pad%C3%A9\_approximant et Golub & Van Loan, Matrix Computations pour les détails.
 
 ## 📚 Bibliographie
 

@@ -17,7 +17,7 @@ Sort discrete-time poles by magnitude.
 
 ## 📄 Description
 
-<b>dsort</b> arranges the discrete-time poles within the vector <b>p</b> in a descending order based on their magnitude, with unstable poles taking precedence at the beginning of the sorted list.
+<b>dsort</b> arranges the discrete-time poles within the vector<b>p</b> in a descending order based on their magnitude, with unstable poles taking precedence at the beginning of the sorted list.
 
 ## 💡 Example
 
@@ -28,7 +28,6 @@ p = [-2.410 + 5.573i;
 -0.972;
 -2.590];
 [s, ndx] = dsort(p)
-
 
 ```
 

@@ -27,7 +27,7 @@ Matrix and vector norms
 
 <b>norm</b> computes the norm of a vector or a matrix.
 
-Frobenius norm of M is equal to <b>sqrt (sum (diag (M' \* M)))</b> .
+Frobenius norm of M is equal to<b>sqrt (sum (diag (M' \* M)))</b> .
 
 ## 💡 Examples
 

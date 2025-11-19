@@ -9,9 +9,9 @@ instruction try/catch.
 
 ## 📄 Description
 
-Les instructions <b>try</b> et <b>catch</b> sont utilisées pour la gestion des erreurs et le contrôle dans les fichiers.
+Les instructions <b>try</b> et<b>catch</b> sont utilisées pour la gestion des erreurs et le contrôle dans les fichiers.
 
-<b>exception</b> est un objet <b>MException</b> qui permet d'identifier l'erreur.
+<b>exception</b> est un objet<b>MException</b> qui permet d'identifier l'erreur.
 
 Le bloc catch assigne l'objet exception courant à la variable dans exception.
 

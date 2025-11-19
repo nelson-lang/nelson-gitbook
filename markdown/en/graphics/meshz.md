@@ -30,7 +30,7 @@ Mesh surface plot with curtain.
 
 <b>meshz</b> creates a 3-D surface plot with a wireframe plot on top.
 
-The function takes the same input arguments as the <b>mesh</b> function.
+The function takes the same input arguments as the<b>mesh</b> function.
 
 ## 💡 Example
 

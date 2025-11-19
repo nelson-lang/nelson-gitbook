@@ -28,7 +28,7 @@ Définition de matrice sparse.
 
 <b>sparse</b> est utilisé pour construire une matrice sparse. Seuls les éléments non nuls sont stockés.
 
-Si <b>M</b> est une matrice pleine, <b>sparse</b> la convertit en représentation sparse, supprimant toutes les valeurs nulles.
+Si <b>M</b> est une matrice pleine,<b>sparse</b> la convertit en représentation sparse, supprimant toutes les valeurs nulles.
 
 Si nz n'est pas spécifié, <b>sparse</b> utilise comme valeur par défaut : nz = max([numel(i), numel(j), numel(v)])
 

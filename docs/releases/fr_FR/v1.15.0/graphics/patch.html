@@ -94,24 +94,24 @@ go = patch(...)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p><b>patch(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées <b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>.</p>
-        <p><b>patch(X, Y, Z, C)</b> crée une forme polygonale 3D avec des sommets définis par les coordonnées <b>X</b>, <b>Y</b> et <b>Z</b>, et remplit la forme avec la couleur <b>C</b>.</p>
-        <p><b>patch(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet patch à l'aide de paires nom-valeur.</p>
-        <p><b>patch('Faces', F, 'Vertices', V)</b> crée un ou plusieurs polygones.</p>
-        <p><b>go = patch(...)</b> retourne le handle <b>go</b> de l'objet patch créé.</p>
-        <p>Paires Nom-Valeur de propriétés :</p>
-        <p><b>'FaceColor'</b> : couleur de la forme remplie. FaceColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut : <b>'flat'</b>.</p>
-        <p><b>'EdgeColor'</b> : couleur des bords du polygone. EdgeColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut : <b>'none'</b>.</p>
-        <p><b>'LineWidth'</b> : largeur des bords du polygone. Par défaut : <b>0.5</b>.</p>
-        <p><b>'LineStyle'</b> : style des bords du polygone. LineStyle peut être une chaîne de caractères ou un code de style de ligne. Par défaut : <b>'-'</b>.</p>
-        <p><b>'FaceAlpha'</b> : transparence de la forme remplie. FaceAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.</p>
-        <p><b>'EdgeAlpha'</b> : transparence des bords du polygone. EdgeAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.</p>
-        <p><b>'Parent'</b> : handle de l'objet parent du patch. Par défaut : <b>gca()</b>.</p>
-        <p><b>'Vertices'</b> : matrice des coordonnées des sommets. La matrice doit être de taille N-par-2 ou N-par-3, où N est le nombre de sommets. Par défaut : les coordonnées des sommets sont spécifiées par les arguments <b>X</b>, <b>Y</b> et <b>Z</b>.</p>
-        <p><b>CreateFcn</b> Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.</p>
-        <p><b>DeleteFcn</b> Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.</p>
-        <p><b>BeingDeleted</b> Indique que l'objet est en cours de suppression.</p>
-    </div>
+    <p><b>patch(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées <b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>.</p>
+    <p><b>patch(X, Y, Z, C)</b> crée une forme polygonale 3D avec des sommets définis par les coordonnées <b>X</b>, <b>Y</b> et <b>Z</b>, et remplit la forme avec la couleur <b>C</b>.</p>
+    <p><b>patch(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet patch à l'aide de paires nom-valeur.</p>
+    <p><b>patch('Faces', F, 'Vertices', V)</b> crée un ou plusieurs polygones.</p>
+    <p><b>go = patch(...)</b> retourne le handle <b>go</b> de l'objet patch créé.</p>
+    <p>Paires Nom-Valeur de propriétés :</p>
+    <p><b>'FaceColor'</b> : couleur de la forme remplie. FaceColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut :<b>'flat'</b>.</p>
+    <p><b>'EdgeColor'</b> : couleur des bords du polygone. EdgeColor peut être une chaîne de caractères ou un vecteur RGB à 3 éléments. Par défaut :<b>'none'</b>.</p>
+    <p><b>'LineWidth'</b> : largeur des bords du polygone. Par défaut :<b>0.5</b>.</p>
+    <p><b>'LineStyle'</b> : style des bords du polygone. LineStyle peut être une chaîne de caractères ou un code de style de ligne. Par défaut :<b>'-'</b>.</p>
+    <p><b>'FaceAlpha'</b> : transparence de la forme remplie. FaceAlpha peut être un scalaire entre 0 et 1. Par défaut :<b>1</b>.</p>
+    <p><b>'EdgeAlpha'</b> : transparence des bords du polygone. EdgeAlpha peut être un scalaire entre 0 et 1. Par défaut :<b>1</b>.</p>
+    <p><b>'Parent'</b> : handle de l'objet parent du patch. Par défaut : <b>gca()</b>.</p>
+    <p><b>'Vertices'</b> : matrice des coordonnées des sommets. La matrice doit être de taille N-par-2 ou N-par-3, où N est le nombre de sommets. Par défaut : les coordonnées des sommets sont spécifiées par les arguments <b>X</b>, <b>Y</b> et <b>Z</b>.</p>
+    <p><b>CreateFcn</b> Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.</p>
+    <p><b>DeleteFcn</b> Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.</p>
+    <p><b>BeingDeleted</b> Indique que l'objet est en cours de suppression.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

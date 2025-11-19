@@ -20,7 +20,7 @@ Rectangular grid in N-D space
 
 <b>[X1, X2, … , Xn] = ndgrid(x1, x2, … , xn)</b> generates an n-dimensional full grid by replicating each grid vector.
 
-<b>[X1, X2, … , Xn] = ndgrid(xg)</b> In this scenario, the single grid vector <b>xg</b> is used for all dimensions. The number of output arguments determines the dimensionality n of the resulting grid.
+<b>[X1, X2, … , Xn] = ndgrid(xg)</b> In this scenario, the single grid vector<b>xg</b> is used for all dimensions. The number of output arguments determines the dimensionality n of the resulting grid.
 
 ## 💡 Examples
 

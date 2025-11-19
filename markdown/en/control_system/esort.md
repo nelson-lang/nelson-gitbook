@@ -17,7 +17,7 @@ Sort continuous-time poles by real part.
 
 ## 📄 Description
 
-<b>esort</b> arranges the continuous-time poles within the vector <b>p</b> based on their real parts.
+<b>esort</b> arranges the continuous-time poles within the vector<b>p</b> based on their real parts.
 
 Unstable eigenvalues take precedence at the beginning of the sorted list, and the rest of the poles are organized in descending order according to their real parts.
 

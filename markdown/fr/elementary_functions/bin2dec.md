@@ -18,7 +18,7 @@ Convertit un nombre en base 2 en décimal.
 
 <b>bin2dec</b> convertit un nombre en base 2 en décimal.
 
-Remarque : <b>bin2dec</b> et <b>dec2bin</b> sont des opérations réciproques.
+Remarque : <b>bin2dec</b> et<b>dec2bin</b> sont des opérations réciproques.
 
 ## 💡 Exemple
 

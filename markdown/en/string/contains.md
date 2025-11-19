@@ -19,7 +19,7 @@ checks if string contains with pattern.
 
 ## 📄 Description
 
-<b>contains</b> returns <b>true</b> if <b>str</b> contains <b>pattern</b>.
+<b>contains</b> returns <b>true</b> if <b>str</b> contains<b>pattern</b>.
 
 ## 💡 Example
 

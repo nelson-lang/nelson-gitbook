@@ -23,7 +23,7 @@ Evaluate Nelson code with console capture.
 
 console display is redirected into a variable.
 
-diary, more, and input are disabled when <b>evalc</b> is used.
+diary, more, and input are disabled when<b>evalc</b> is used.
 
 ## 💡 Examples
 
@@ -32,8 +32,7 @@ evalc('B=4')
 ```
 
 ```matlab
-
-      >t = evalc('dir')
+>t = evalc('dir')
 ```
 
 ## 🔗 See also

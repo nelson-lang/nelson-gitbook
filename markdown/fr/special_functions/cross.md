@@ -18,7 +18,7 @@ Produit vectoriel.
 
 ## 📄 Description
 
-<b>R = cross(A, B)</b> retourne le produit vectoriel de <b>A</b> et <b>B</b>.
+<b>R = cross(A, B)</b> retourne le produit vectoriel de<b>A</b> et <b>B</b>.
 
 ## 📚 Bibliographie
 

@@ -17,7 +17,7 @@ Writes HDF5 attribute.
 
 ## 📄 Description
 
-<b>h5writeatt</b> writes attribute named <b>attname</b> with the value <b>attvalue</b> to the HDF5 file.
+<b>h5writeatt</b> writes attribute named<b>attname</b> with the value <b>attvalue</b> to the HDF5 file.
 
 ## 💡 Example
 

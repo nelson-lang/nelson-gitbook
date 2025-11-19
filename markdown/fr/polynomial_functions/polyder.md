@@ -22,11 +22,11 @@ Dérivation polynomiale.
 
 ## 📄 Description
 
-<b>k = polyder(p)</b> renvoie les coefficients de la dérivée du polynôme dont les coefficients sont fournis par le vecteur <b>p</b>.
+<b>k = polyder(p)</b> renvoie les coefficients de la dérivée du polynôme dont les coefficients sont fournis par le vecteur<b>p</b>.
 
-<b>k = polyder(a, b)</b> renvoie la dérivée du produit des polynômes <b>a</b> et <b>b</b>.
+<b>k = polyder(a, b)</b> renvoie la dérivée du produit des polynômes<b>a</b> et <b>b</b>.
 
-<b>[q, d] = polyder(a, b)</b> renvoie la dérivée du quotient des polynômes <b>a</b> et <b>b</b>.
+<b>[q, d] = polyder(a, b)</b> renvoie la dérivée du quotient des polynômes<b>a</b> et <b>b</b>.
 
 ## 💡 Exemple
 

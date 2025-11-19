@@ -20,7 +20,7 @@ Replaces strings in another.
 
 <b>replace</b> replaces strings in another.
 
-<b>replace</b> and <b>strrep</b> replace strings but <b>replace</b> is recommended.
+<b>replace</b> and <b>strrep</b> replace strings but<b>replace</b> is recommended.
 
 ## 💡 Example
 

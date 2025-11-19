@@ -32,7 +32,7 @@ waterfall plot.
 
 This results in a 'waterfall' effect.
 
-The function takes the same input arguments as the <b>mesh</b> function.
+The function takes the same input arguments as the<b>mesh</b> function.
 
 ## 💡 Examples
 

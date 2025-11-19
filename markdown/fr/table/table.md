@@ -1,7 +1,6 @@
 # table
 
-Un tableau de type table avec variables nommées, capable de contenir
-différents types de données
+Un tableau de type table avec variables nommées, capable de contenir différents types de données
 
 ## 📝 Syntaxe
 
@@ -92,8 +91,7 @@ T('Person2', 1:2)
 
 ## 🔗 Voir aussi
 
-[Accessing and Manipulating Tables in
-Nelson](../table/1_accessing_manipulating_table.md), [Direct computation with Table](../table/2_direct_compution_with_table.md), [cell2table](../table/cell2table.md), [array2table](../table/array2table.md), [struct2table](../table/struct2table.md).
+[Accessing and Manipulating Tables in Nelson](../table/1_accessing_manipulating_table.md), [Direct computation with Table](../table/2_direct_compution_with_table.md), [cell2table](../table/cell2table.md), [array2table](../table/array2table.md), [struct2table](../table/struct2table.md).
 
 ## 🕔 Historique
 

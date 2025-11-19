@@ -30,9 +30,7 @@ Returns file list.
 
 ```matlab
 res = dir(nelsonroot())
-res = dir(nelsonroot(), '-s')
-res = dir([nelsonroot(),'/*.m'], '-s')
-
+res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 ```
 
 ## 🔗 See also

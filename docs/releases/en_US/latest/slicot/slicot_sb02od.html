@@ -40,23 +40,23 @@
 </tr>
 <tr>
 <td class="param-name">JOBB</td>
-<td>Specifies whether or not the matrix G is given, instead of the matrices B and R, as follows: = 'B':  B and R are given; = 'G':  G is given.</td>
+<td>Specifies whether or not the matrix G is given, instead of the matrices B and R, as follows: = 'B': B and R are given; = 'G': G is given.</td>
 </tr>
 <tr>
 <td class="param-name">FACT</td>
-<td>Specifies whether or not the matrices Q and/or R (if JOBB = 'B') are factored, as follows: = 'N':  Not factored, Q and R are given; = 'C':  C is given, and Q = C'C; = 'D':  D is given, and R = D'D; = 'B':  Both factors C and D are given, Q = C'C, R = D'D.</td>
+<td>Specifies whether or not the matrices Q and/or R (if JOBB = 'B') are factored, as follows: = 'N': Not factored, Q and R are given; = 'C': C is given, and Q = C'C; = 'D':  D is given, and R = D'D; = 'B': Both factors C and D are given, Q = C'C, R = D'D.</td>
 </tr>
 <tr>
 <td class="param-name">UPLO</td>
-<td>If JOBB = 'G', or FACT = 'N', specifies which triangle of the matrices G and Q (if FACT = 'N'), or Q and R (if JOBB = 'B'), is stored, as follows: = 'U':  Upper triangle is stored; = 'L':  Lower triangle is stored.</td>
+<td>If JOBB = 'G', or FACT = 'N', specifies which triangle of the matrices G and Q (if FACT = 'N'), or Q and R (if JOBB = 'B'), is stored, as follows: = 'U': Upper triangle is stored; = 'L': Lower triangle is stored.</td>
 </tr>
 <tr>
 <td class="param-name">JOBL</td>
-<td>Specifies whether or not the matrix L is zero, as follows: = 'Z':  L is zero; = 'N':  L is nonzero. JOBL is not used if JOBB = 'G' and JOBL = 'Z' is assumed. SLICOT Library routine SB02MT should be called just before SB02OD, for obtaining the results when JOBB = 'G' and JOBL = 'N'.</td>
+<td>Specifies whether or not the matrix L is zero, as follows: = 'Z': L is zero; = 'N': L is nonzero. JOBL is not used if JOBB = 'G' and JOBL = 'Z' is assumed. SLICOT Library routine SB02MT should be called just before SB02OD, for obtaining the results when JOBB = 'G' and JOBL = 'N'.</td>
 </tr>
 <tr>
 <td class="param-name">SORT</td>
-<td>Specifies which eigenvalues should be obtained in the top of the generalized Schur form, as follows: = 'S':  Stable   eigenvalues come first;= 'U':  Unstable eigenvalues come first.</td>
+<td>Specifies which eigenvalues should be obtained in the top of the generalized Schur form, as follows: = 'S': Stable eigenvalues come first;= 'U': Unstable eigenvalues come first.</td>
 </tr>
 <tr>
 <td class="param-name">P</td>
@@ -114,15 +114,15 @@
 </tr>
 <tr>
 <td class="param-name">T</td>
-<td> If DICO = 'D' or JOBB = 'B', the leading 2N-by-2N part of this array contains the ordered upper triangular form T of the second matrix in the reduced matrix pencil associated to the optimal problem.</td>
+<td>If DICO = 'D' or JOBB = 'B', the leading 2N-by-2N part of this array contains the ordered upper triangular form T of the second matrix in the reduced matrix pencil associated to the optimal problem.</td>
 </tr>
 <tr>
 <td class="param-name">U</td>
-<td> The leading 2N-by-2N part of this array contains the right transformation matrix U which reduces the 2N-by-2N matrix pencil to the ordered generalized real Schur form (S,T), or the Hamiltonian matrix to the ordered real Schur form S, if DICO = 'C' and JOBB = 'G'.</td>
+<td>The leading 2N-by-2N part of this array contains the right transformation matrix U which reduces the 2N-by-2N matrix pencil to the ordered generalized real Schur form (S,T), or the Hamiltonian matrix to the ordered real Schur form S, if DICO = 'C' and JOBB = 'G'.</td>
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td>  = 0:  successful exit;</td>
+<td>= 0: successful exit;</td>
 </tr>
 </table>
 </div>
@@ -130,10 +130,10 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)</p>
-        <p>The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.</p>
-        <p>A standard eigenproblem is solved in the continuous-time case if G is given.</p>
-    </div>
+    <p>Solution of continuous- or discrete-time algebraic Riccati equations (generalized Schur vectors method)</p>
+    <p>The routine uses the method of deflating subspaces, based on reordering the eigenvalues in a generalized Schur matrix pair.</p>
+    <p>A standard eigenproblem is solved in the continuous-time case if G is given.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

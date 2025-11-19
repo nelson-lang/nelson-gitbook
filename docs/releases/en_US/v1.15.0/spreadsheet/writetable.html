@@ -50,47 +50,45 @@ writetable(..., Name, Value)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>writetable(T)</b> writes the table <b>T</b> to a comma-delimited text file.</p>
-            <p>The file name is derived from the table's workspace variable name, with the .txt extension appended.</p>
-            <p>If the file name cannot be derived from the table name, the default file name table.txt is used.</p>
-            <p>Output formats supported:</p>
-            <ul>
-                <li>
-                    <b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.</li>
-                    <li>
-                        <b>XML files:</b> Each variable in <b>T</b> becomes an XML node, with variable names as element node names.</li>
-                    </ul>
-                    <p>To specify the file name explicitly, use <b>writetable(T, filename)</b>. The file format is determined by the file extension:</p>
-                    <ul>
-                        <li>
-                            <b>.txt</b>, <b>.dat</b>, <b>.csv</b>: Delimited text files.</li>
-                            <li>
-                                <b>.xml</b>: XML files.</li>
-                            </ul>
-                            <p>
-                                <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:</p>
-                                <ul>
-                                    <li>
-                                        <b>WriteRowNames:</b> Include row names in the output file (default: false).</li>
-                                        <li>
-                                            <b>FileType:</b> Specify file format ('text' or 'xml').</li>
-                                            <li>
-                                                <b>WriteVariableNames:</b> Include variable names as column headings in text files (default: true).</li>
-                                                <li>
-                                                    <b>WriteMode:</b> Specify writing mode ('overwrite' or 'append').</li>
-                                                    <li>
-                                                        <b>Delimiter:</b> Define the field delimiter for text files (',', '\t', etc.).</li>
-                                                        <li>
-                                                            <b>QuoteStrings:</b> Control how text is quoted in text files ('minimal', 'all', or 'none').</li>
-                                                            <li>
-                                                                <b>AttributeSuffix:</b> Specify attribute suffix for XML files (default: 'Attribute').</li>
-                                                                <li>
-                                                                    <b>RowNodeName:</b> Specify XML row node names (default: 'row').</li>
-                                                                    <li>
-                                                                        <b>TableNodeName:</b> Specify XML root node name (default: 'table').</li>
-                                                                    </ul>
-                                                                </div>
+    <p><b>writetable(T)</b> writes the table<b>T</b> to a comma-delimited text file.</p>
+    <p>The file name is derived from the table's workspace variable name, with the .txt extension appended.</p>
+    <p>If the file name cannot be derived from the table name, the default file name table.txt is used.</p>
+    <p>Output formats supported:</p>
+    <ul>
+      <li>
+<b>Text files:</b> Each variable in <b>T</b> becomes a column, and variable names serve as column headers in the first line.</li>
+      <li>
+<b>XML files:</b> Each variable in <b>T</b> becomes an XML node, with variable names as element node names.</li>
+    </ul>
+    <p>To specify the file name explicitly, use <b>writetable(T, filename)</b>. The file format is determined by the file extension:</p>
+    <ul>
+      <li>
+<b>.txt</b>, <b>.dat</b>, <b>.csv</b>: Delimited text files.</li>
+      <li>
+<b>.xml</b>: XML files.</li>
+    </ul>
+    <p><b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:</p>
+    <ul>
+      <li>
+<b>WriteRowNames:</b> Include row names in the output file (default: false).</li>
+      <li>
+<b>FileType:</b> Specify file format ('text' or 'xml').</li>
+      <li>
+<b>WriteVariableNames:</b> Include variable names as column headings in text files (default: true).</li>
+      <li>
+<b>WriteMode:</b> Specify writing mode ('overwrite' or 'append').</li>
+      <li>
+<b>Delimiter:</b> Define the field delimiter for text files (',', '\t', etc.).</li>
+      <li>
+<b>QuoteStrings:</b> Control how text is quoted in text files ('minimal', 'all', or 'none').</li>
+      <li>
+<b>AttributeSuffix:</b> Specify attribute suffix for XML files (default: 'Attribute').</li>
+      <li>
+<b>RowNodeName:</b> Specify XML row node names (default: 'row').</li>
+      <li>
+<b>TableNodeName:</b> Specify XML root node name (default: 'table').</li>
+    </ul>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

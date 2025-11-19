@@ -16,7 +16,7 @@ Computes the hyperbolic tangent in radians for each element of x.
 
 ## 📄 Description
 
-<b>tanh</b> computes the hyperbolic tangent in radians for each element of <b>x</b>.
+<b>tanh</b> computes the hyperbolic tangent in radians for each element of<b>x</b>.
 
 ## 💡 Example
 

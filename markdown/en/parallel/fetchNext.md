@@ -19,7 +19,7 @@ Retrieve next unread outputs from FevalFuture array.
 
 ## 📄 Description
 
-<b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index <b>idx</b> of the new readable <b>FevalFuture</b> object in the array <b>f</b> that is finished, and <b>m</b> results from that FevalFuture as <b>Y1, ... , Ym</b>.
+<b>[idx, y1, ... , ym] = fetchNext(f)</b> retrieves index<b>idx</b> of the new readable <b>FevalFuture</b> object in the array<b>f</b> that is finished, and <b>m</b> results from that FevalFuture as<b>Y1, ... , Ym</b>.
 
 ## 💡 Example
 

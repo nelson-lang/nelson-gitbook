@@ -4,10 +4,10 @@
     <module>audio</module>
     <section name="Fonctions de lecture audio">
       <chapter_description>
-		<p>Le module audio fournit des fonctions pour lire, écrire, analyser et jouer des fichiers audio.</p>
-		<p>Il prend en charge le contrôle de lecture via l'objet audioplayer, la manipulation des propriétés de lecture et la gestion des métadonnées.</p>
-		<p>Il comprend également des utilitaires pour la conversion de signaux et la génération de sons.</p>
-	</chapter_description>
+    <p>Le module audio fournit des fonctions pour lire, écrire, analyser et jouer des fichiers audio.</p>
+    <p>Il prend en charge le contrôle de lecture via l'objet audioplayer, la manipulation des propriétés de lecture et la gestion des métadonnées.</p>
+    <p>Il comprend également des utilitaires pour la conversion de signaux et la génération de sons.</p>
+  </chapter_description>
       <keyword name="audiodevinfo" link="audiodevinfo.html" description="Obtient les informations des périphériques audio."/>
       <keyword name="audioinfo" link="audioinfo.html" description="Obtient les informations du fichier audio."/>
       <keyword name="audiometadata" link="audiometadata.html" description="Obtient/Définit les métadonnées du fichier audio."/>

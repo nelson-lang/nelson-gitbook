@@ -32,7 +32,7 @@ Contour 3D plot of matrix
 
 The x and y coordinates in the plane correspond to the column and row indices of Z, respectively.
 
-To specify the x and y coordinates for Z values, use <b>contour3(X,Y,Z)</b>.
+To specify the x and y coordinates for Z values, use<b>contour3(X,Y,Z)</b>.
 
 ## 💡 Example
 

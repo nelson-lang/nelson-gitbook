@@ -28,9 +28,9 @@ Tracé de surface primitif.
 
 ## 📄 Description
 
-<b>surf</b> et <b>surface</b> sont deux fonctions utilisées pour créer des tracés de surface 3D, mais il existe quelques différences entre elles.
+<b>surf</b> et<b>surface</b> sont deux fonctions utilisées pour créer des tracés de surface 3D, mais il existe quelques différences entre elles.
 
-La fonction <b>surf</b> est utilisée pour tracer une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés.
+La fonction<b>surf</b> est utilisée pour tracer une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés.
 
 Elle nécessite trois arguments d'entrée : X, Y et Z. X et Y définissent les coordonnées des points de données, et Z définit la hauteur de la surface à chaque point.
 
@@ -40,7 +40,7 @@ La fonction <b>surface</b> est utilisée pour tracer une surface définie par un
 
 La taille de Z doit correspondre à la taille de X et Y. La fonction surface offre également des options supplémentaires pour personnaliser l'apparence du tracé, telles que l'éclairage et la couleur.
 
-En résumé, les fonctions <b>surf</b> et <b>surface</b> sont utilisées pour des tracés de surface 3D, mais <b>surf</b> est utilisée pour une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés, tandis que <b>surface</b> est utilisée pour une surface définie par une matrice de données, et la taille de Z doit correspondre à celle de X et Y.
+En résumé, les fonctions <b>surf</b> et<b>surface</b> sont utilisées pour des tracés de surface 3D, mais<b>surf</b> est utilisée pour une surface définie par une fonction de deux variables ou par un ensemble de points de données dispersés, tandis que<b>surface</b> est utilisée pour une surface définie par une matrice de données, et la taille de Z doit correspondre à celle de X et Y.
 
 ## 💡 Exemple
 

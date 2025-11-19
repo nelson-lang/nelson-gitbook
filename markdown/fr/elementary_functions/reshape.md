@@ -20,7 +20,7 @@ Reshapes a vector or a matrix to a different size matrix.
 
 ## 📄 Description
 
-<b>reshape</b> performs a reshape to a different size matrix. If only one dimension is specified, <b>reshape</b> will determine complementary size automatically. [ ] is used to unspecify the dimension.
+<b>reshape</b> performs a reshape to a different size matrix. If only one dimension is specified,<b>reshape</b> will determine complementary size automatically. [ ] is used to unspecify the dimension.
 
 ## 💡 Exemple
 

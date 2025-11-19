@@ -14,7 +14,7 @@ Crée un nouveau répertoire.
 ## 📥 Argument d'entrée
 
 - dirname - a string: nom du répertoire à créer.
-- parentdir - a string: répertoire parent où sera créé <b>dirname</b>.
+- parentdir - a string: répertoire parent où sera créé<b>dirname</b>.
 
 ## 📤 Argument de sortie
 
@@ -23,7 +23,7 @@ Crée un nouveau répertoire.
 
 ## 📄 Description
 
-Crée un répertoire nommé <b>dirname</b> dans le répertoire parent.
+Crée un répertoire nommé<b>dirname</b> dans le répertoire parent.
 
 Si aucun répertoire parent n'est précisé, le répertoire de travail actuel est utilisé.
 

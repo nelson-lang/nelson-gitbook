@@ -17,7 +17,7 @@ Clés du dictionnaire.
 
 ## 📄 Description
 
-<b>k = keys(d)</b> récupère un tableau contenant les clés du dictionnaire spécifié, <b>d</b>.
+<b>k = keys(d)</b> récupère un tableau contenant les clés du dictionnaire spécifié,<b>d</b>.
 
 <b>k = keys(d, 'cell')</b> renvoie éventuellement les clés sous forme de tableau cellulaire.
 

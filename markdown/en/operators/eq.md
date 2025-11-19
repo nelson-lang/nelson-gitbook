@@ -18,7 +18,7 @@ equality, == operator.
 
 ## 📄 Description
 
-<b>C = eq(A, B)</b> returns a logical array with elements set to logical <b>true</b> where arrays A and B are equals.
+<b>C = eq(A, B)</b> returns a logical array with elements set to logical<b>true</b> where arrays A and B are equals.
 
 <b>eq</b> compares both real and imaginary parts of numeric arrays.
 

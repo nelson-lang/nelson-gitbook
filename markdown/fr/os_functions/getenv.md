@@ -20,9 +20,9 @@ Obtenir la valeur d'une variable d'environnement.
 
 Si la variable d'environnement n'existe pas, elle renverra ''.
 
-Si <b>env_name</b> est une cellule non scalaire de vecteurs de caractères ou un tableau de chaînes, alors <b>s</b> a les mêmes dimensions et le même type que <b>env_name</b>.
+Si<b>env_name</b> est une cellule non scalaire de vecteurs de caractères ou un tableau de chaînes, alors<b>s</b> a les mêmes dimensions et le même type que <b>env_name</b>.
 
-Si <b>env_name</b> est une chaîne scalaire, alors <b>s</b> est un vecteur de caractères.
+Si <b>env_name</b> est une chaîne scalaire, alors<b>s</b> est un vecteur de caractères.
 
 ## 💡 Exemple
 

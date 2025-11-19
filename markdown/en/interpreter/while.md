@@ -8,7 +8,7 @@ while loop.
 
 ## 📄 Description
 
-<b>while</b> loop executes a set of statements as long as a the test condition remains <b>true</b>.
+<b>while</b> loop executes a set of statements as long as a the test condition remains<b>true</b>.
 
 ## 💡 Example
 

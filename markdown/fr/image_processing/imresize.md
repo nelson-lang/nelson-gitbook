@@ -13,7 +13,7 @@ Redimensionne une image par échelle ou taille de sortie
 ## 📥 Argument d'entrée
 
 - img - Image à redimensionner, spécifiée comme un tableau numérique ou logique de n'importe quelle dimension. L'entrée doit être non-creuse (nonsparse) et les entrées numériques doivent être réelles.
-- scale - Facteur de redimensionnement, spécifié comme un nombre positif ou un vecteur à deux éléments. Si scale est entre 0 et 1, la sortie est plus petite ; si > 1, la sortie est plus grande. imresize applique le même facteur aux lignes et colonnes sauf si un vecteur est fourni.
+- scale - Facteur de redimensionnement, spécifié comme un nombre positif ou un vecteur à deux éléments. Si scale est entre 0 et 1, la sortie est plus petite ; si >1, la sortie est plus grande. imresize applique le même facteur aux lignes et colonnes sauf si un vecteur est fourni.
 - [numrows numcols] - Dimensions en lignes et colonnes de l'image de sortie, spécifiées comme un vecteur à deux éléments de nombres positifs. NaN peut être utilisé pour une dimension afin de préserver le ratio d'aspect.
 - X - Image indexée à redimensionner, spécifiée comme un tableau numérique réel non-creux d'entiers positifs.
 - map - Colormap associée à l'image indexée X, spécifiée comme une matrice c-by-3 avec des valeurs dans [0,1].

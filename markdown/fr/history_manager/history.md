@@ -74,7 +74,7 @@ gestionnaire d'historique.
 
 <b>history('removeexit')</b> obtient l'état concernant la non-enregistrement des sorties dans le fichier d'historique.
 
-<b>history('size', new_size)</b> définit la taille maximale de l'historique avec <b>new_size</b>.
+<b>history('size', new_size)</b> définit la taille maximale de l'historique avec<b>new_size</b>.
 
 <b>history('enable_save', true_false)</b> définit l'état du gestionnaire d'historique : false pour 'off', true pour 'on'.
 
@@ -94,7 +94,7 @@ gestionnaire d'historique.
 
 <b>history('get', lines)</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes par index : un scalaire ou un vecteur 1x2.
 
-<b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que <b>nb_commands</b> instructions aient été ajoutées au fichier.
+<b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que<b>nb_commands</b> instructions aient été ajoutées au fichier.
 
 <b>Astuces</b> : vous pouvez facilement partager votre fichier d'historique dans le cloud en ajoutant quelques lignes de code dans votre fichier de démarrage utilisateur.
 

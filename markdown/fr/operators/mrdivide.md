@@ -26,7 +26,6 @@ Division matricielle à droite, opérateur /.
 B = ones(3, 4)
 A = B *2
 A / B
-
 ```
 
 ## 🔗 Voir aussi

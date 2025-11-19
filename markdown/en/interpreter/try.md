@@ -9,9 +9,9 @@ try/catch statement.
 
 ## 📄 Description
 
-<b>try</b> and <b>catch</b> statements are used for error handling and control in files.
+<b>try</b> and<b>catch</b> statements are used for error handling and control in files.
 
-<b>exception</b> is an <b>MException</b> object that allows you to identify the error.
+<b>exception</b> is an<b>MException</b> object that allows you to identify the error.
 
 The catch block assigns the current exception object to the variable in exception.
 

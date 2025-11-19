@@ -31,7 +31,7 @@ Actions :
 
 <b>remove</b>: supprime le répertoire d'aide du module pour chaque langue.
 
-<b>refresh</b>, <b>uninstall</b>, <b>status</b>: respectivement rafraîchit la base de données d'aide, désinstalle le système d'aide local ou renvoie si le dossier d'aide local existe. Les actions qui peuvent échouer renvoient [status, message].
+<b>refresh</b>, <b>uninstall</b>,<b>status</b>: respectivement rafraîchit la base de données d'aide, désinstalle le système d'aide local ou renvoie si le dossier d'aide local existe. Les actions qui peuvent échouer renvoient [status, message].
 
 ## 🔗 Voir aussi
 

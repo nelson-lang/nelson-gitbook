@@ -16,7 +16,7 @@ Transformer un tableau cellulaire contenant des matrices en une seule matrice co
 
 ## 📄 Description
 
-<b>M = cell2mat(ce)</b> crée une matrice unique en fusionnant tous les éléments du tableau cellulaire <b>ce</b> dans un tableau multidimensionnel. Les éléments de <b>ce</b> peuvent être des matrices numériques, logiques ou de caractères, des tableaux cellulaires ou des structs, et doivent être compatibles pour la concaténation via la fonction <b>cat</b>.
+<b>M = cell2mat(ce)</b> crée une matrice unique en fusionnant tous les éléments du tableau cellulaire<b>ce</b> dans un tableau multidimensionnel. Les éléments de<b>ce</b> peuvent être des matrices numériques, logiques ou de caractères, des tableaux cellulaires ou des structs, et doivent être compatibles pour la concaténation via la fonction<b>cat</b>.
 
 ## 💡 Exemple
 

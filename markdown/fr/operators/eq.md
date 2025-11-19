@@ -18,7 +18,7 @@
 
 ## 📄 Description
 
-<b>C = eq(A, B)</b> renvoie un tableau logique avec des éléments égaux à <b>true</b> lorsque les tableaux A et B sont égaux.
+<b>C = eq(A, B)</b> renvoie un tableau logique avec des éléments égaux à<b>true</b> lorsque les tableaux A et B sont égaux.
 
 <b>eq</b> compare à la fois les parties réelles et imaginaires des tableaux numériques.
 

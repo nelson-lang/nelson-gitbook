@@ -1,10 +1,8 @@
 # Assertion functions
 
-The Asserts Functions module in Nelson provides tools for validating program behavior and
-verifying conditions during development or testing.
+The Asserts Functions module in Nelson provides tools for validating program behavior and verifying conditions during development or testing.
 
-These functions help ensure that computations and logical conditions meet expected criteria,
-improving code reliability and catching errors early.
+These functions help ensure that computations and logical conditions meet expected criteria, improving code reliability and catching errors early.
 
 ## Functions
 

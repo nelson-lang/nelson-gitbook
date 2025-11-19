@@ -4,10 +4,10 @@
     <module>integer</module>
     <section name="Types entiers">
       <chapter_description>
-        <p>Le module Types entiers fournit des outils pour travailler avec des entiers signés et non signés de différentes tailles dans Nelson.</p>
-        <p>Ces types sont particulièrement utiles pour stocker et traiter efficacement de grands jeux de données, tels que des images ou de grands tableaux numériques.</p>
-        <p>Le module prend en charge les conversions entre formats entiers et fournit l'accès aux valeurs minimale et maximale représentables pour chaque type entier, garantissant des calculs entiers sûrs et précis.</p>
-    </chapter_description>
+    <p>Le module Types entiers fournit des outils pour travailler avec des entiers signés et non signés de différentes tailles dans Nelson.</p>
+    <p>Ces types sont particulièrement utiles pour stocker et traiter efficacement de grands jeux de données, tels que des images ou de grands tableaux numériques.</p>
+    <p>Le module prend en charge les conversions entre formats entiers et fournit l'accès aux valeurs minimale et maximale représentables pour chaque type entier, garantissant des calculs entiers sûrs et précis.</p>
+  </chapter_description>
       <keyword name="int16" link="int16.html" description="Convertit en entier signé 16 bits."/>
       <keyword name="int32" link="int32.html" description="Convertit en entier signé 32 bits."/>
       <keyword name="int64" link="int64.html" description="Convertit en entier signé 64 bits."/>

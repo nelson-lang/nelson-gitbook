@@ -23,7 +23,7 @@ Find value in dictionary by key.
 
 If the key does not exist, an error is raised.
 
-<b>value = lookup(d, key)</b> is equivalent to <b>value = d[key]</b>.
+<b>value = lookup(d, key)</b> is equivalent to<b>value = d[key]</b>.
 
 <b>value = lookup(d, key, 'FallbackValue', fallback)</b> specifies a fallback value to return if the key is not found in d.
 

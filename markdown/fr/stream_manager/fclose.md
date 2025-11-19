@@ -19,9 +19,9 @@ Ferme un fichier ouvert.
 
 ## 📄 Description
 
-<b>fclose</b> doit être utilisé pour fermer un fichier ouvert par <b>fopen</b>.
+<b>fclose</b> doit être utilisé pour fermer un fichier ouvert par<b>fopen</b>.
 
-<b>fclose('all')</b> ferme tous les fichiers ouverts par <b>fopen</b>.
+<b>fclose('all')</b> ferme tous les fichiers ouverts par<b>fopen</b>.
 
 ## 💡 Exemple
 

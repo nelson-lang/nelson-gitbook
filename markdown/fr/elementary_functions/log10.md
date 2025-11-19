@@ -18,7 +18,7 @@ Common logarithm (base 10).
 
 <b>log10</b> computes common logarithm (base 10).
 
-For negative real and complex values of M, <b>log10</b> function returns complex values.
+For negative real and complex values of M,<b>log10</b> function returns complex values.
 
 ## 💡 Exemple
 

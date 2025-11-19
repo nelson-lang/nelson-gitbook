@@ -16,7 +16,7 @@ Inverse cosine in degrees.
 
 ## 📄 Description
 
-<b>atand</b> computes the inverse cosine in degrees for each element of <b>x</b>.
+<b>atand</b> computes the inverse cosine in degrees for each element of<b>x</b>.
 
 ## 💡 Example
 

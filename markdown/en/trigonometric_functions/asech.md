@@ -16,7 +16,7 @@ Inverse hyperbolic secant of angle in radians.
 
 ## 📄 Description
 
-<b>asech</b> computes the inverse hyperbolic secant of argument in radians for each element of <b>x</b>.
+<b>asech</b> computes the inverse hyperbolic secant of argument in radians for each element of<b>x</b>.
 
 ## 💡 Example
 

@@ -18,11 +18,11 @@ Rename variables in table.
 
 ## 📄 Description
 
-<b>TB = renamevars(TA, varsNames, newNames)</b> renames the variables in the table <b>TA</b> as specified by <b>varsNames</b> and assigns them the new names provided in <b>newNames</b>.
+<b>TB = renamevars(TA, varsNames, newNames)</b> renames the variables in the table<b>TA</b> as specified by<b>varsNames</b> and assigns them the new names provided in<b>newNames</b>.
 
-You can also rename all the variables in a table by assigning new names to its <b>VariableNames</b> property using <b>T.Properties.VariableNames = newNames</b>.
+You can also rename all the variables in a table by assigning new names to its<b>VariableNames</b> property using<b>T.Properties.VariableNames = newNames</b>.
 
-In this case, <b>newNames</b> must be a string array or a cell array of character vectors.
+In this case,<b>newNames</b> must be a string array or a cell array of character vectors.
 
 ## 💡 Example
 

@@ -13,7 +13,7 @@ Démarre un chronomètre.
 
 ## 📄 Description
 
-La séquence de commandes <b>tic(); commands ; t = toc()</b> renvoie le nombre de secondes nécessaires à l'exécution des commandes.
+La séquence de commandes<b>tic(); commands ; t = toc()</b> renvoie le nombre de secondes nécessaires à l'exécution des commandes.
 
 Les appels consécutifs à <b>tic</b> écrasent le minuteur interne de tic.
 

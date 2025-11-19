@@ -18,7 +18,7 @@ Validate color values.
 
 ## 📄 Description
 
-The <b>validatecolor</b> function is a color validation function that checks whether a given color is valid according to Nelson standards.
+The<b>validatecolor</b> function is a color validation function that checks whether a given color is valid according to Nelson standards.
 
 It takes a color argument as input and returns an error if the color is not valid.
 

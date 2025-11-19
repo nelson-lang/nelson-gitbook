@@ -24,11 +24,11 @@ Créer des formes 2D remplies.
 
 ## 📄 Description
 
-<b>fill(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées <b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>.
+<b>fill(X, Y, C)</b> crée une forme polygonale 2D avec des sommets définis par les coordonnées<b>X</b> et <b>Y</b>, et remplit la forme avec la couleur <b>C</b>.
 
 <b>fill(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet fill/patch à l'aide de paires nom-valeur.
 
-<b>go = fill(...)</b> retourne le handle <b>go</b> de l'objet patch créé.
+<b>go = fill(...)</b> retourne le handle<b>go</b> de l'objet patch créé.
 
 Paires Nom-Valeur de propriétés :
 
@@ -44,9 +44,9 @@ Paires Nom-Valeur de propriétés :
 
 <b>'EdgeAlpha'</b> : transparence des bords de la forme polygonale. EdgeAlpha peut être un scalaire entre 0 et 1. Par défaut : <b>1</b>.
 
-<b>'Parent'</b> : handle de l'objet parent pour le patch. Par défaut : <b>gca()</b>.
+<b>'Parent'</b> : handle de l'objet parent pour le patch. Par défaut :<b>gca()</b>.
 
-<b>'Vertices'</b> : matrice des coordonnées des sommets. La matrice doit avoir la taille N×2 ou N×3, où N est le nombre de sommets. Par défaut : les coordonnées des sommets sont spécifiées par les arguments <b>X</b>, <b>Y</b> et <b>Z</b> d'entrée.
+<b>'Vertices'</b> : matrice des coordonnées des sommets. La matrice doit avoir la taille N×2 ou N×3, où N est le nombre de sommets. Par défaut : les coordonnées des sommets sont spécifiées par les arguments<b>X</b>, <b>Y</b> et <b>Z</b> d'entrée.
 
 ## 💡 Exemples
 

@@ -25,7 +25,7 @@ Réalisation compagnon des fonctions de transfert.
 
 La matrice <b>E</b> est une matrice vide (matrice identité) lorsqu'il y a au moins autant de pôles que de zéros.
 
-Cependant, si le nombre de zéros dépasse celui des pôles, la matrice <b>E</b> devient singulière.
+Cependant, si le nombre de zéros dépasse celui des pôles, la matrice<b>E</b> devient singulière.
 
 ## 💡 Exemple
 

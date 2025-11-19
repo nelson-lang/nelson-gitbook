@@ -26,13 +26,13 @@ Step response plot of dynamic system.
 
 The function defaults to applying a step at t0 = 0 with initial conditions U = 0, dU = 1, and td = 0.
 
-The step function, used as <b>[y, tOut] = step(sys)</b>, calculates the step response (y) of the dynamic system <b>sys</b>.
+The step function, used as<b>[y, tOut] = step(sys)</b>, calculates the step response (y) of the dynamic system<b>sys</b>.
 
-The time vector tOut is in the time units of <b>sys</b>, and the function automatically determines the time steps and simulation duration based on the system dynamics.
+The time vector tOut is in the time units of<b>sys</b>, and the function automatically determines the time steps and simulation duration based on the system dynamics.
 
-If you use <b>[y, tOut] = step(sys, tFinal)</b>, the step response is computed from t = 0 to the specified end time t = tFinal.
+If you use<b>[y, tOut] = step(sys, tFinal)</b>, the step response is computed from t = 0 to the specified end time t = tFinal.
 
-Similarly, <b>[y, tOut] = step(sys, [t0, tFinal])</b> computes the step response from <b>t0</b> to <b>tFinal</b>.
+Similarly,<b>[y, tOut] = step(sys, [t0, tFinal])</b> computes the step response from<b>t0</b> to <b>tFinal</b>.
 
 ## 💡 Example
 

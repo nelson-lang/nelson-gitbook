@@ -28,7 +28,7 @@ Tracé de champ de vecteurs.
 
 ## 📄 Description
 
-<b>quiver(X, Y, U, V)</b> trace des vecteurs vitesse sous forme de flèches avec les composantes <b>(U,V)</b> au point <b>(X, Y)</b>.
+<b>quiver(X, Y, U, V)</b> trace des vecteurs vitesse sous forme de flèches avec les composantes<b>(U,V)</b> au point <b>(X, Y)</b>.
 
 <b>quiver</b> essaie d'ajuster la longueur des flèches pour éviter qu'elles ne se chevauchent.
 

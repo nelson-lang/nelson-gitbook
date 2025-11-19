@@ -24,7 +24,7 @@ Diagonal scaling to improve eigenvalue accuracy.
 
 <b>B = balance(A)</b> returns the balanced matrix <b>B</b>.
 
-<b>B = balance(A, 'noperm')</b> scales <b>A</b> without permuting its rows and columns.
+<b>B = balance(A, 'noperm')</b> scales<b>A</b> without permuting its rows and columns.
 
 ## Used function(s)
 

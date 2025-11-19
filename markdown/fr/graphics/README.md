@@ -1,10 +1,8 @@
 # Fonctions graphiques
 
-Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques,
-figures, palettes de couleurs et objets graphiques.
+Le module graphique fournit des fonctions pour créer, personnaliser et gérer des graphiques, figures, palettes de couleurs et objets graphiques.
 
-Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et
-des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.
+Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom, déplacement, rotation), et des utilitaires pour travailler avec les couleurs, légendes, axes et annotations de texte.
 
 ## Functions
 

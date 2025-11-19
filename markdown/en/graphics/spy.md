@@ -16,7 +16,7 @@ Visualize sparsity pattern of matrix.
 
 ## 📄 Description
 
-<b>spy(S)</b> plots the sparsity pattern of the sparse matrix <b>S</b>.
+<b>spy(S)</b> plots the sparsity pattern of the sparse matrix<b>S</b>.
 
 ## 💡 Examples
 

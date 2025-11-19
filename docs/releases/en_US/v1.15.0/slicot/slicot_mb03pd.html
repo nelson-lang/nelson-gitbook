@@ -36,7 +36,7 @@
 </tr>
 <tr>
 <td class="param-name">JOBRQ</td>
-<td> = 'R':  Perform an RQ factorization with row pivoting; = 'N':  Do not perform the RQ factorization (but assume that it has been done outside).</td>
+<td>= 'R': Perform an RQ factorization with row pivoting; = 'N': Do not perform the RQ factorization (but assume that it has been done outside).</td>
 </tr>
 <tr>
 <td class="param-name">A_IN</td>
@@ -44,7 +44,7 @@
 </tr>
 <tr>
 <td class="param-name">JPVT_IN</td>
-<td>with JOBRQ = 'R', if JPVT(i) != 0, the i-th row of A is a final row, otherwise it is a free row. Before the RQ factorization of A, all final rows are permuted to the trailing positions; only the remaining free rows are moved as a result of row pivoting during the factorization.  For rank determination it is preferable that all rows be free.</td>
+<td>with JOBRQ = 'R', if JPVT(i) != 0, the i-th row of A is a final row, otherwise it is a free row. Before the RQ factorization of A, all final rows are permuted to the trailing positions; only the remaining free rows are moved as a result of row pivoting during the factorization. For rank determination it is preferable that all rows be free.</td>
 </tr>
 <tr>
 <td class="param-name">RCOND</td>
@@ -52,7 +52,7 @@
 </tr>
 <tr>
 <td class="param-name">SVLMAX</td>
-<td>If A is a submatrix of another matrix B, and the rank decision should be related to that matrix, then SVLMAX should be an estimate of the largest singular value of B (for instance, the Frobenius norm of B).  If this is not the case, the input value SVLMAX = 0 should work.</td>
+<td>If A is a submatrix of another matrix B, and the rank decision should be related to that matrix, then SVLMAX should be an estimate of the largest singular value of B (for instance, the Frobenius norm of B). If this is not the case, the input value SVLMAX = 0 should work.</td>
 </tr>
 </table>
 </div>
@@ -66,7 +66,7 @@
 </tr>
 <tr>
 <td class="param-name">A_OUT</td>
-<td> with JOBRQ = 'R', if M less or equal than N, the upper triangle of the subarray A(1:M,N-M+1:N) contains the M-by-M upper triangular matrix R;</td>
+<td>with JOBRQ = 'R', if M less or equal than N, the upper triangle of the subarray A(1:M,N-M+1:N) contains the M-by-M upper triangular matrix R;</td>
 </tr>
 <tr>
 <td class="param-name">JPVT_OUT</td>
@@ -86,7 +86,7 @@
 </tr>
 <tr>
 <td class="param-name">INFO</td>
-<td> = 0:  successful exit</td>
+<td>= 0: successful exit</td>
 </tr>
 </table>
 </div>
@@ -94,8 +94,8 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>To compute (optionally) a rank-revealing RQ factorization of a real general M-by-N matrix A, which may be rank-deficient, and estimate its effective rank using incremental condition estimation.</p>
-    </div>
+    <p>To compute (optionally) a rank-revealing RQ factorization of a real general M-by-N matrix A, which may be rank-deficient, and estimate its effective rank using incremental condition estimation.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

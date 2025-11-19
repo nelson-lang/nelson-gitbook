@@ -24,85 +24,82 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>Gestion des données retournées par les fonctions Julia :</b>
-        </p>
-        <p>Cette documentation explique comment les données sont gérées et converties entre Julia et Nelson. Elle couvre les conversions de scalaires, vecteurs et matrices, des exemples d'utilisation et des ressources associées.</p>
-        <table style="width:100%">
-            <tr>
-                <th>Julia return type, as shown in Julia</th>
-                <th>Corresponding Nelson type (scalar)</th>
-            </tr>
-            <tr>
-                <td>Bool</td>
-                <td>logical</td>
-            </tr>
-            <tr>
-                <td>Complex{Float64}</td>
-                <td>double (complex)</td>
-            </tr>
-            <tr>
-                <td>Complex{Float32}</td>
-                <td>single (complex)</td>
-            </tr>
-            <tr>
-                <td>Float64</td>
-                <td>double</td>
-            </tr>
-            <tr>
-                <td>Float32</td>
-                <td>single</td>
-            </tr>
-            <tr>
-                <td>Int8</td>
-                <td>int8</td>
-            </tr>
-            <tr>
-                <td>Int16</td>
-                <td>int16</td>
-            </tr>
-            <tr>
-                <td>Int32</td>
-                <td>int32</td>
-            </tr>
-            <tr>
-                <td>Int64</td>
-                <td>int64</td>
-            </tr>
-            <tr>
-                <td>UInt8</td>
-                <td>uint8</td>
-            </tr>
-            <tr>
-                <td>UInt16</td>
-                <td>uint16</td>
-            </tr>
-            <tr>
-                <td>UInt32</td>
-                <td>uint32</td>
-            </tr>
-            <tr>
-                <td>UInt64</td>
-                <td>uint64</td>
-            </tr>
-            <tr>
-                <td>String</td>
-                <td>string</td>
-            </tr>
-        </table>
-        <p></p>
-        <p>Vecteurs et matrices d'un type Nelson renvoyés comme matrices dans Julia.</p>
-        <p>
-            <b>cell</b> converti en <b>Array{Any}</b>.</p>
-            <p>
-                <b>struct</b> converti en <b>Dict{Any, Any}</b>.</p>
-                <p>une matrice de struct convertie en <b>Matrix{Dict}</b>.</p>
-                <p>
-                    <b>dictionary</b> converti en <b>Dict{Any, Any}</b>.</p>
-                    <p></p>
-                    <p>Assurez-vous que toutes les données transmises entre Julia et Nelson respectent les correspondances de types décrites ci-dessus pour des conversions sans heurts.</p>
-                    <p>Pour des cas d'utilisation avancés, tels que la gestion de types Julia personnalisés ou de structures de données profondément imbriquées, un prétraitement supplémentaire en Julia ou Nelson peut être nécessaire.</p>
-                </div>
+    <p>
+      <b>Gestion des données retournées par les fonctions Julia :</b>
+    </p>
+    <p>Cette documentation explique comment les données sont gérées et converties entre Julia et Nelson. Elle couvre les conversions de scalaires, vecteurs et matrices, des exemples d'utilisation et des ressources associées.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Julia return type, as shown in Julia</th>
+        <th>Corresponding Nelson type (scalar)</th>
+      </tr>
+      <tr>
+        <td>Bool</td>
+        <td>logical</td>
+      </tr>
+      <tr>
+        <td>Complex{Float64}</td>
+        <td>double (complex)</td>
+      </tr>
+      <tr>
+        <td>Complex{Float32}</td>
+        <td>single (complex)</td>
+      </tr>
+      <tr>
+        <td>Float64</td>
+        <td>double</td>
+      </tr>
+      <tr>
+        <td>Float32</td>
+        <td>single</td>
+      </tr>
+      <tr>
+        <td>Int8</td>
+        <td>int8</td>
+      </tr>
+      <tr>
+        <td>Int16</td>
+        <td>int16</td>
+      </tr>
+      <tr>
+        <td>Int32</td>
+        <td>int32</td>
+      </tr>
+      <tr>
+        <td>Int64</td>
+        <td>int64</td>
+      </tr>
+      <tr>
+        <td>UInt8</td>
+        <td>uint8</td>
+      </tr>
+      <tr>
+        <td>UInt16</td>
+        <td>uint16</td>
+      </tr>
+      <tr>
+        <td>UInt32</td>
+        <td>uint32</td>
+      </tr>
+      <tr>
+        <td>UInt64</td>
+        <td>uint64</td>
+      </tr>
+      <tr>
+        <td>String</td>
+        <td>string</td>
+      </tr>
+    </table>
+    <p></p>
+    <p>Vecteurs et matrices d'un type Nelson renvoyés comme matrices dans Julia.</p>
+    <p><b>cell</b> converti en <b>Array{Any}</b>.</p>
+    <p><b>struct</b> converti en <b>Dict{Any, Any}</b>.</p>
+    <p>une matrice de struct convertie en <b>Matrix{Dict}</b>.</p>
+    <p><b>dictionary</b> converti en <b>Dict{Any, Any}</b>.</p>
+    <p></p>
+    <p>Assurez-vous que toutes les données transmises entre Julia et Nelson respectent les correspondances de types décrites ci-dessus pour des conversions sans heurts.</p>
+    <p>Pour des cas d'utilisation avancés, tels que la gestion de types Julia personnalisés ou de structures de données profondément imbriquées, un prétraitement supplémentaire en Julia ou Nelson peut être nécessaire.</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

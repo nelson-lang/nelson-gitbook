@@ -19,7 +19,7 @@ Renvoie le plus grand entier pouvant être représenté pour un type entier.
 
 <b>imax = intmax(classname)</b> le plus grand entier pouvant être représenté pour un type entier.
 
-Les valeurs prises en charge pour la chaîne <b>classname</b> sont :
+Les valeurs prises en charge pour la chaîne<b>classname</b> sont :
 
 'int8'
 

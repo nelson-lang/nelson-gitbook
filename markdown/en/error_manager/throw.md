@@ -12,7 +12,7 @@ throw error.
 
 ## 📄 Description
 
-<b>throw(MException)</b> throws an exception based on the information contained in the <b>MException</b> object, exception.
+<b>throw(MException)</b> throws an exception based on the information contained in the<b>MException</b> object, exception.
 
 ## 💡 Example
 

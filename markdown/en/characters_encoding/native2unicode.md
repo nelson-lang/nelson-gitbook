@@ -21,9 +21,9 @@ Converts bytes representation to unicode characters
 
 <b>str = native2unicode(bytes)</b> converts an uint8 vector to unicode characters (using the native character set of the machine).
 
-<b>str = native2unicode(bytes, charset)</b> converts an uint8 vector to unicode characters (character set <b>charset</b> instead of the native character set).
+<b>str = native2unicode(bytes, charset)</b> converts an uint8 vector to unicode characters (character set<b>charset</b> instead of the native character set).
 
-List of characters set: https://www.iana.org/assignments/character-sets/character-sets.xhtml
+List of characters set:https://www.iana.org/assignments/character-sets/character-sets.xhtml
 
 ## 📚 Bibliography
 

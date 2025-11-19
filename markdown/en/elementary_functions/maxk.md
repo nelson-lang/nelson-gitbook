@@ -21,9 +21,9 @@ k largest elements of an array
 
 ## 📄 Description
 
-<b>maxk</b> returns the k largest elements of array <b>A</b>. When A is a vector, the result is the k largest values from A. When A is a matrix, <b>maxk</b> operates along the specified dimension (or the first non-singleton dimension by default) and returns the k largest elements for each slice along that dimension.
+<b>maxk</b> returns the k largest elements of array<b>A</b>. When A is a vector, the result is the k largest values from A. When A is a matrix,<b>maxk</b> operates along the specified dimension (or the first non-singleton dimension by default) and returns the k largest elements for each slice along that dimension.
 
-If <b>k</b> is larger than the number of available elements along the operating dimension, all elements are returned (sorted descending). When called as <b>[B, I] = maxk(A, k)</b>, <b>I</b> contains the indices of the returned elements with respect to <b>A</b>.
+If<b>k</b> is larger than the number of available elements along the operating dimension, all elements are returned (sorted descending). When called as <b>[B, I] = maxk(A, k)</b>,<b>I</b> contains the indices of the returned elements with respect to<b>A</b>.
 
 ## 💡 Examples
 

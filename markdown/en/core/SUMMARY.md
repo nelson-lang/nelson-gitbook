@@ -21,7 +21,7 @@
   - [nelsonroot](nelsonroot.md)
   - [nfilename](nfilename.md)
   - [mfilename](nfilename.md)
-  - [pause ](pause.md)
+  - [pause](pause.md)
   - [prefdir](prefdir.md)
   - [quit](quit.md)
   - [run](run.md)

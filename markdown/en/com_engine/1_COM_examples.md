@@ -4,7 +4,7 @@ Some example to show how to use COM interface.
 
 ## 📄 Description
 
-See <b>[modulepath('com_engine'), '/examples']</b> directory.
+See <b>[modulepath('com\_engine'), '/examples']</b> directory.
 
 Interacts with Internet explorer, Word, Excel, Speech voice, VB scripts ...
 

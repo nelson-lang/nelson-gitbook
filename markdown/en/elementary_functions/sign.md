@@ -24,7 +24,7 @@ Find the sign function of a number.
 
 1 if the corresponding element of M is greater than 0.
 
-If input argument is a complex number, <b>sign</b> computes <b>M ./ abs(M)</b>.
+If input argument is a complex number, <b>sign</b> computes<b>M ./ abs(M)</b>.
 
 ## 💡 Example
 

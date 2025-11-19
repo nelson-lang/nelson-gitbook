@@ -4,10 +4,10 @@
     <module>dynamic_link</module>
     <section name="Dynamic link">
       <chapter_description>
-        <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p>
-        <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p>
-        <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p>
-    </chapter_description>
+    <p>The Dynamic Link module enables Nelson to build, load, and call C/C++ and Fortran code at runtime.</p>
+    <p>It supports generating gateways, loaders, and managing shared libraries for integration with external compiled code.</p>
+    <p>By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not forget to run 'configuremsvc' or 'configuremingw' once.</p>
+  </chapter_description>
       <keyword name="Build C/C++ code on the fly" link="1_c_cpp_build_on_fly.html" description="Build C/C++ code on the fly"/>
       <keyword name="Supported C/C++ compilers" link="2_supported_compilers.html" description=""/>
       <keyword name="libpointer datatype" link="C_datatype.html" description="C/Nelson equivalent data types"/>

@@ -17,7 +17,7 @@ Inverse permute array dimensions.
 
 ## 📄 Description
 
-<b>ipermute</b> permutes the dimensions of an array (in inverse order of <b>permute</b>).
+<b>ipermute</b> permutes the dimensions of an array (in inverse order of<b>permute</b>).
 
 ## 💡 Example
 

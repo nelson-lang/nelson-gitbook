@@ -1,7 +1,6 @@
 # Traitement XML
 
-Le module XML fournit des fonctions pour créer, convertir et gérer des documents XML pour
-Nelson.
+Le module XML fournit des fonctions pour créer, convertir et gérer des documents XML pour Nelson.
 
 ## Functions
 

@@ -16,7 +16,7 @@ Renvoie si une variable est un tableau cellulaire de chaînes.
 
 ## 📄 Description
 
-<b>iscellstr(A)</b> renvoie vrai si <b>A</b> est un tableau cellulaire de chaînes ou un tableau cellulaire vide.
+<b>iscellstr(A)</b> renvoie vrai si<b>A</b> est un tableau cellulaire de chaînes ou un tableau cellulaire vide.
 
 ## 💡 Exemples
 

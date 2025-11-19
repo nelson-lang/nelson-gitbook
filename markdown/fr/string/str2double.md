@@ -18,7 +18,7 @@ Convertit une chaîne en double.
 
 <b>str2double</b> convertit une chaîne représentant un nombre en une valeur numérique de type double. Si la chaîne représente un nombre complexe, les parties réelle et imaginaire sont converties séparément en valeurs numériques.
 
-Si <b>str2double</b> ne peut pas convertir la chaîne en nombre, elle renvoie la valeur NaN (Not-a-Number).
+Si<b>str2double</b> ne peut pas convertir la chaîne en nombre, elle renvoie la valeur NaN (Not-a-Number).
 
 ## 💡 Exemple
 

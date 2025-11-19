@@ -22,7 +22,7 @@ The gamma function is defined by the integral:
 $$\Gamma(z) = \int_0^{\infty} t^{z-1} e^{-t} \, dt$$
 
 for
-$$\text{Re}(z) > 0$$
+$$\text{Re}(z) >0$$
 
 The gamma function extends the factorial function to real and complex numbers:
 $$\Gamma(n) = (n-1)!$$

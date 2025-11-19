@@ -70,38 +70,37 @@
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-      <p>
-        <b>dlsym</b> récupère l'adresse d'une fonction exportée en tant que handle dlsym.</p>
-        <p>Si le <b>symbolname</b> n'est pas trouvé, Nelson tente de trouver des variantes du nom selon ces règles (dans cet ordre) :</p>
-            <p>
-                <b>_symbolname</b>
-            </p>
-            <p>
-                <b>symbolname</b>
-            </p>
-            <p>
-                <b>symbolname_</b>
-            </p>
-            <p>
-                <b>_symbolname_</b>
-            </p>
-            <p>
-                <b>_SYMBOLNAME</b>
-            </p>
-            <p>
-                <b>SYMBOLNAME</b>
-            </p>
-            <p>
-                <b>SYMBOLNAME_</b>
-            </p>
-            <p>
-                <b>_SYMBOLNAME_</b>
-            </p>
-        <p>Le nom de symbole utilisé est disponible dans le champ prototype du handle retourné.</p>
-        <p>Si plusieurs noms de symboles sont trouvés, une erreur est levée avec les noms possibles.</p>
-        <p></p>
-        <p>Attention : si les types sont mal définis, l'appel d'une fonction étrangère peut provoquer des comportements imprévus (plantage).</p>
-        </div>
+    <p><b>dlsym</b> récupère l'adresse d'une fonction exportée en tant que handle dlsym.</p>
+    <p>Si le<b>symbolname</b> n'est pas trouvé, Nelson tente de trouver des variantes du nom selon ces règles (dans cet ordre) :</p>
+    <p>
+      <b>_symbolname</b>
+    </p>
+    <p>
+      <b>symbolname</b>
+    </p>
+    <p>
+      <b>symbolname_</b>
+    </p>
+    <p>
+      <b>_symbolname_</b>
+    </p>
+    <p>
+      <b>_SYMBOLNAME</b>
+    </p>
+    <p>
+      <b>SYMBOLNAME</b>
+    </p>
+    <p>
+      <b>SYMBOLNAME_</b>
+    </p>
+    <p>
+      <b>_SYMBOLNAME_</b>
+    </p>
+    <p>Le nom de symbole utilisé est disponible dans le champ prototype du handle retourné.</p>
+    <p>Si plusieurs noms de symboles sont trouvés, une erreur est levée avec les noms possibles.</p>
+    <p></p>
+    <p>Attention : si les types sont mal définis, l'appel d'une fonction étrangère peut provoquer des comportements imprévus (plantage).</p>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

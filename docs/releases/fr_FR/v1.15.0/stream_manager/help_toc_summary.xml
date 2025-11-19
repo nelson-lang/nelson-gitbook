@@ -4,10 +4,10 @@
     <module>stream_manager</module>
     <section name="Gestion des flux">
       <chapter_description>
-        <p>Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.</p>
-        <p>Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.</p>
-        <p>Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.</p>
-   </chapter_description>
+    <p>Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.</p>
+    <p>Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.</p>
+    <p>Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.</p>
+  </chapter_description>
       <keyword name="diary" link="diary.html" description="Journal d'une session."/>
       <keyword name="fclose" link="fclose.html" description="Ferme un fichier ouvert."/>
       <keyword name="feof" link="feof.html" description="Teste la fin de fichier."/>

@@ -17,7 +17,7 @@ less than, < operator.
 
 ## 📄 Description
 
-<b>C = lt(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is less than B.
+<b>C = lt(A, B)</b> returns a logical array with elements set to logical<b>true</b> A is less than B.
 
 <b>lt</b> compares only the real part of numeric arrays.
 

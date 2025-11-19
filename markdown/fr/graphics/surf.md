@@ -28,8 +28,6 @@ tracé de surface.
 
 ## 📄 Description
 
-Définir cette propriété sur un composant existant n'a aucun effet.
-
 <b>surf</b> crée un tracé de surface 3D. Il peut être utilisé pour tracer des données sous forme de matrice ou de fonction de deux variables.
 
 Vous pouvez personnaliser l'apparence du tracé en utilisant diverses options telles que la couleur, l'éclairage et l'ombrage.
@@ -85,27 +83,23 @@ Certaines propriétés sont disponibles uniquement pour compatibilité et n'ont 
 ## 💡 Exemples
 
 ```matlab
-
 f = figure();
 [X, Y, Z] = peaks(35);
 C(:, :, 1) = zeros(35);
 C(:, :, 2) = ones(35) .* linspace(0.5, 0.6, 35);
 C(:, :, 3) = ones(35) .* linspace(0, 1, 35);
 S = surf(X, Y, Z, C)
-
 ```
 
 <img src="surf_1.svg" align="middle"/>
 
 ```matlab
-
 f = figure();
 [X,Y] = meshgrid(-8:.5:8);
 R = sqrt(X.^2 + Y.^2) + eps;
 Z = sin(R)./R;
 h = surf(X, Y, Z);
 axis square
-
 ```
 
 <img src="surf_2.svg" align="middle"/>

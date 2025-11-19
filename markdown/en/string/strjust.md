@@ -18,7 +18,7 @@ Justify strings
 
 ## 📄 Description
 
-<b>J = strjust(str, side)</b> returns the text that is justified on the side specified by <b>side</b>.
+<b>J = strjust(str, side)</b> returns the text that is justified on the side specified by<b>side</b>.
 
 ## 💡 Examples
 

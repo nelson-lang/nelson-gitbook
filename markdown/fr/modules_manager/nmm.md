@@ -37,9 +37,9 @@ Les modules installés sont compilés localement et peuvent nécessiter un compi
 
 <b>nmm('install', git_url)</b> installe un module distant.
 
-Par exemple : 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'
+Par exemple : 'https://github.com/nelson-lang/module\_skeleton\_basic.git#v1.0.0'
 
-'#v1.0.0' est un <i>commit-ish</i> : il permet de cloner exactement un commit.
+'#v1.0.0' est un<i>commit-ish</i>: il permet de cloner exactement un commit.
 
 Le commit-ish peut être un tag (version exacte), un sha1 (commit exact) ou un nom de branche.
 
@@ -49,7 +49,7 @@ Sans commit-ish, la branche master sera utilisée.
 
 <b>nmm('load', module_name)</b> charge un module installé pour la session courante.
 
-<b>l = nmm('autoload', module_name</b> retourne l'état courant d'autoload pour <b>module_name</b>.
+<b>l = nmm('autoload', module_name</b> retourne l'état courant d'autoload pour<b>module_name</b>.
 
 <b>nmm('autoload', module_name, state)</b> marque un module installé pour être chargé automatiquement au démarrage.
 

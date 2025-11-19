@@ -19,7 +19,7 @@ Sur les autres plateformes, on suppose qu'un compilateur C/C++ est disponible et
 
 Sous Windows, appelez une fois <b>configuremsvc</b> si vous souhaitez utiliser Visual Studio comme compilateur par défaut.
 
-Après chaque mise à jour de Visual Studio, il pourra être nécessaire d'appeler de nouveau <b>configuremsvc</b>.
+Après chaque mise à jour de Visual Studio, il pourra être nécessaire d'appeler de nouveau<b>configuremsvc</b>.
 
 ## 💡 Exemple
 

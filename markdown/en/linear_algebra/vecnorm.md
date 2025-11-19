@@ -20,17 +20,17 @@ Vector-wise norm.
 
 ## 📄 Description
 
-<b>vecnorm</b> computes the 2-norm or Euclidean norm of the input array <b>A</b>
+<b>vecnorm</b> computes the 2-norm or Euclidean norm of the input array<b>A</b>
 
-If <b>A</b> is a vector, <b>vecnorm</b> returns the norm of the vector.
+If <b>A</b> is a vector,<b>vecnorm</b> returns the norm of the vector.
 
-If <b>A</b> is a matrix, <b>vecnorm</b> returns the norm of each column.
+If <b>A</b> is a matrix,<b>vecnorm</b> returns the norm of each column.
 
-For multidimensional arrays, <b>vecnorm returns</b> the norm along the first array dimension whose size does not equal 1.
+For multidimensional arrays,<b>vecnorm returns</b> the norm along the first array dimension whose size does not equal 1.
 
-To compute the generalized vector p-norm, you can use the syntax <b>N = vecnorm(A, p)</b>.
+To compute the generalized vector p-norm, you can use the syntax<b>N = vecnorm(A, p)</b>.
 
-To operate along a specific dimension dim, the function can be called as <b>N = vecnorm(A, p, dim)</b>.
+To operate along a specific dimension dim, the function can be called as<b>N = vecnorm(A, p, dim)</b>.
 
 In this case, the size of the specified dimension reduces to 1, while the sizes of all other dimensions remain unchanged.
 

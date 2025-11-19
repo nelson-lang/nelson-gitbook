@@ -16,9 +16,9 @@ Create import options based on file content.
 
 ## 📄 Description
 
-<b>options = detectImportOptions(filename)</b> identifies a table in a file and returns an import <b>options</b> object.
+<b>options = detectImportOptions(filename)</b> identifies a table in a file and returns an import<b>options</b> object.
 
-You can customize this object and use it with <b>readtable</b>, <b>readcell</b> or <b>readmatrix</b> to control how Nelson imports data as a table, cell array, or matrix.
+You can customize this object and use it with<b>readtable</b>, <b>readcell</b> or<b>readmatrix</b> to control how Nelson imports data as a table, cell array, or matrix.
 
 The type of the returned options object depends on the file's extension.
 
@@ -43,18 +43,7 @@ Properties:
 ## 💡 Example
 
 ```matlab
-
-Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
-Age = [28; 34; 22; 30];
-Height = [175; 160; 180; 165];
-Weight = [70; 55; 80; 60];
-T = table(Names, Age, Height, Weight);
-writetable(T, [tempdir,'readcell_1.csv'])
-options = detectImportOptions([tempdir,'readcell_1.csv'])
-C1 = readcell([tempdir,'readcell_1.csv'], options)
-options.DataLines = [1 Inf]
-C2 = readcell([tempdir,'readcell_1.csv'], options)
-
+  Names = {'John'; 'Alice'; 'Bob'; 'Diana'};  Age = [28; 34; 22; 30];  Height = [175; 160; 180; 165];  Weight = [70; 55; 80; 60];  T = table(Names, Age, Height, Weight);  writetable(T, [tempdir,'readcell_1.csv'])  options = detectImportOptions([tempdir,'readcell_1.csv'])  C1 = readcell([tempdir,'readcell_1.csv'], options)  options.DataLines = [1 Inf]  C2 = readcell([tempdir,'readcell_1.csv'], options)
 ```
 
 ## 🔗 See also

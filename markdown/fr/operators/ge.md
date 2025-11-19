@@ -18,7 +18,7 @@ supérieur ou égal, opérateur >=
 
 ## 📄 Description
 
-<b>C = ge(A, B)</b> returns a logical array with elements set to logical <b>true</b> A is greater than or equal to B.
+<b>C = ge(A, B)</b> returns a logical array with elements set to logical<b>true</b> A is greater than or equal to B.
 
 <b>ge</b> compare uniquement la partie réelle des tableaux numériques.
 

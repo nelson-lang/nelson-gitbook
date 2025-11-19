@@ -4,10 +4,10 @@
     <module>fftw</module>
     <section name="FFTW">
       <chapter_description>
-      <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.</p>
-      <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.</p>
-      <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.</p>
-    </chapter_description>
+    <p>The FFTW module provides tools for computing fast Fourier transforms in Nelson.</p>
+    <p>It supports one-dimensional, two-dimensional, and multidimensional transforms, as well as inverse transforms and frequency-domain manipulations.</p>
+    <p>The module enables efficient spectral analysis and signal processing, leveraging high-performance algorithms for both real and complex data.</p>
+  </chapter_description>
       <keyword name="FFTW License" link="About_FFTW_license.html" description="About FFTW license."/>
       <keyword name="FFTWwrapper" link="FFTWwrapper.html" description="load/free FFTW library dynamically."/>
       <keyword name="fft" link="fft.html" description="Fast Fourier transform."/>

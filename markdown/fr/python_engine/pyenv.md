@@ -38,17 +38,17 @@ Propriétés :
 
 Utilisez des variables d'environnement pour forcer l'environnement Python au démarrage (utile pour snapcraft ou distribution docker) :
 
-<b>**NELSON_PYTHON_VERSION**</b> : exemple "3.10"
+<b>\_\_NELSON_PYTHON_VERSION\_\_</b> : exemple "3.10"
 
-<b>**NELSON_PYTHON_EXECUTABLE**</b> : exemple "/usr/bin/python3"
+<b>\_\_NELSON_PYTHON_EXECUTABLE\_\_</b> : exemple "/usr/bin/python3"
 
-<b>**NELSON_PYTHON_LIBRARY**</b> : exemple "libpython3.10.so.1.0"
+<b>\_\_NELSON_PYTHON_LIBRARY\_\_</b> : exemple "libpython3.10.so.1.0"
 
-<b>**NELSON_PYTHON_HOME**</b> : exemple "/usr"
+<b>\_\_NELSON_PYTHON_HOME\_\_</b> : exemple "/usr"
 
 Toutes les variables d'environnement doivent exister et être valides pour être prises en compte.
 
-Sous Windows, la fonction <b>pyenv('Version', '3.11')</b> recherche dans le Registre Windows la version de Python associée à la version spécifiée. Elle recherche d'abord dans HKCU, puis dans HKLM si non trouvée.
+Sous Windows, la fonction<b>pyenv('Version', '3.11')</b> recherche dans le Registre Windows la version de Python associée à la version spécifiée. Elle recherche d'abord dans HKCU, puis dans HKLM si non trouvée.
 
 ## 💡 Exemples
 

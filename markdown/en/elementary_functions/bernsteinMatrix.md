@@ -17,7 +17,7 @@ Bernstein matrix
 
 ## 📄 Description
 
-<b>B = bernsteinMatrix(n, t)</b> constructs a Bernstein matrix <b>B</b> with dimensions length(t) - by - (n+1), where t is a vector.
+<b>B = bernsteinMatrix(n, t)</b> constructs a Bernstein matrix<b>B</b> with dimensions length(t) - by - (n+1), where t is a vector.
 
 The Bernstein matrix is also referred to as the Bezier matrix.
 

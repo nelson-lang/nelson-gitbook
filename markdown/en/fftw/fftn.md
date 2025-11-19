@@ -18,7 +18,7 @@ N-Dimensions fast Fourier transform.
 
 ## 📄 Description
 
-<b>Y = fftn(X, sz)</b> pads <b>X</b> with zeros, or truncates <b>X</b>, to create a multidimensional array of size <b>sz</b> before performing the transform.
+<b>Y = fftn(X, sz)</b> pads <b>X</b> with zeros, or truncates<b>X</b>, to create a multidimensional array of size<b>sz</b> before performing the transform.
 
 The size of the result <b>Y</b> is <b>sz</b>.
 

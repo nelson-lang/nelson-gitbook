@@ -31,15 +31,15 @@ Graphique en escalier.
 
 Les graphiques en escalier sont un outil précieux pour créer des graphiques temporels de données échantillonnées numériquement.
 
-La fonction <b>stairs(Y)</b> permet de générer de tels graphiques en traçant les éléments du vecteur <b>Y</b>.
+La fonction<b>stairs(Y)</b> permet de générer de tels graphiques en traçant les éléments du vecteur<b>Y</b>.
 
-Si <b>Y</b> est une matrice, une ligne est tracée pour chaque colonne, la couleur des lignes étant déterminée par la propriété ColorOrder des axes.
+Si<b>Y</b> est une matrice, une ligne est tracée pour chaque colonne, la couleur des lignes étant déterminée par la propriété ColorOrder des axes.
 
 Dans le cas d'un vecteur <b>Y</b>, l'axe x s'étend de 1 à la longueur de <b>Y</b>, tandis que pour une matrice <b>Y</b>, l'axe x va de 1 au nombre de lignes de <b>Y</b>.
 
-<b>stairs(X, Y)</b> permet de tracer les éléments de <b>Y</b> aux emplacements spécifiques définis par le vecteur <b>X</b>.
+<b>stairs(X, Y)</b> permet de tracer les éléments de<b>Y</b> aux emplacements spécifiques définis par le vecteur <b>X</b>.
 
-Il est important de noter que les éléments de <b>X</b> doivent être dans un ordre monotone pour créer un graphique en escalier valide.
+Il est important de noter que les éléments de<b>X</b> doivent être dans un ordre monotone pour créer un graphique en escalier valide.
 
 ## 💡 Exemples
 

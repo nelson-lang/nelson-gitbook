@@ -23,7 +23,7 @@ Checks the number of output arguments.
 
 <b>nargoutchk</b> checks the number of output arguments of an function.
 
-To ensure a minimum number of outputs while imposing no maximum limit, set <b>maxArgs</b> to <b>inf</b>. For example, <b>nargoutchk(2, inf)</b> generates an error if fewer than two outputs are specified.
+To ensure a minimum number of outputs while imposing no maximum limit, set<b>maxArgs</b> to <b>inf</b>. For example,<b>nargoutchk(2, inf)</b> generates an error if fewer than two outputs are specified.
 
 ## 💡 Example
 

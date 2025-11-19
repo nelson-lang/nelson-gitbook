@@ -20,7 +20,7 @@ Remplace des sous-chaînes dans une chaîne.
 
 <b>replace</b> remplace des sous-chaînes dans une chaîne.
 
-<b>replace</b> et <b>strrep</b> remplacent des chaînes, mais <b>replace</b> est recommandé.
+<b>replace</b> et <b>strrep</b> remplacent des chaînes, mais<b>replace</b> est recommandé.
 
 ## 💡 Exemple
 

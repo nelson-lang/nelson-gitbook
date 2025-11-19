@@ -20,9 +20,9 @@ Wait for futures to be completed.
 
 ## 📄 Description
 
-<b>wait(f)</b> pauses execution until each element of the Future array <b>f</b> is finished.
+<b>wait(f)</b> pauses execution until each element of the Future array<b>f</b> is finished.
 
-<b>wait(f, state)</b> pauses execution until each element of the Future array <b>f</b> has its 'State' property set to state.
+<b>wait(f, state)</b> pauses execution until each element of the Future array<b>f</b> has its 'State' property set to state.
 
 <b>tf = wait(f, state, timeout)</b> pauses execution for a maximum of timeout seconds.
 

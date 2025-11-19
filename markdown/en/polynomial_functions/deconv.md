@@ -18,11 +18,11 @@ Deconvolution and polynomial division.
 
 ## 📄 Description
 
-<b>[q, r] = deconv(b, a)</b> performs deconvolution on vector <b>b</b> by vector <b>a</b> using long division.
+<b>[q, r] = deconv(b, a)</b> performs deconvolution on vector<b>b</b> by vector <b>a</b> using long division.
 
-It returns the quotient <b>q</b> and remainder <b>r</b> such that <b>b = conv(a, q) + r</b>.
+It returns the quotient <b>q</b> and remainder<b>r</b> such that <b>b = conv(a, q) + r</b>.
 
-In the context of polynomial coefficients, deconvolving vectors <b>b</b> and <b>a</b> is akin to dividing the polynomial represented by <b>b</b> by the polynomial represented by <b>a</b>.
+In the context of polynomial coefficients, deconvolving vectors<b>b</b> and <b>a</b> is akin to dividing the polynomial represented by<b>b</b> by the polynomial represented by <b>a</b>.
 
 ## 💡 Example
 

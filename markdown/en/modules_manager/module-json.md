@@ -52,7 +52,7 @@ Example:
 
 }
 
-<b>homepage</b>: homepage of the module, example "https://github.com/nelson-lang/module_skeleton_basic"
+<b>homepage</b>: homepage of the module, example "https://github.com/nelson-lang/module\_skeleton\_basic"
 
 <b>description</b>: full description of the module, markdown format supported, example: "nelson's module skeleton (macros only)"
 

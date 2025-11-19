@@ -85,108 +85,105 @@ go = image(...)
 <div class="section-title">
 <span class="syntax-icon">📄</span>Description</div>
 <div>
-        <p>
-            <b>image</b> affiche les données C sous forme d'image.
-        </p>
-        <p>Propriétés :</p>
-        <p></p>
-        <table>
-            <tr>
-                <th>Propriété</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>
-                    <b>AlphaData</b>
-                </td>
-                <td>Données de transparence : scalaire, tableau de même taille que CData, ou 1 (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>AlphaDataMapping</b>
-                </td>
-                <td>Méthode de mappage des données alpha.</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>CData</b>
-                </td>
-                <td>Données de couleur de l'image : vecteur ou matrice, tableau 3D de triplets RGB.</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>CDataMapping</b>
-                </td>
-                <td>Méthode de mappage des couleurs : 'scaled' ou 'direct' (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Children</b>
-                </td>
-                <td>[].</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Parent</b>
-                </td>
-                <td>Parent : objet axes.</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Tag</b>
-                </td>
-                <td>Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Type</b>
-                </td>
-                <td>Type d'objet graphique : 'surface'.</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>UserData</b>
-                </td>
-                <td>Données utilisateur : tableau ou [] (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Visible</b>
-                </td>
-                <td>État de visibilité : 'off' ou 'on' (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>XData</b>
-                </td>
-                <td>Placement sur l'axe x : vecteur à deux éléments, scalaire, [1 size(CData, 1)] (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>YData</b>
-                </td>
-                <td>Placement sur l'axe y : vecteur à deux éléments, scalaire, [1 size(CData, 2)] (par défaut).</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>CreateFcn</b>
-                </td>
-                <td>Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>DeleteFcn</b>
-                </td>
-                <td>Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.</td>
-            </tr>
-            <tr>
-                <td>
-                    <b>BeingDeleted</b>
-                </td>
-                <td>Indique que l'objet est en cours de suppression.</td>
-            </tr>
-        </table>
-    </div>
+    <p><b>image</b> affiche les données C sous forme d'image.</p>
+    <p>Propriétés :</p>
+    <table>
+      <tr>
+        <th>Propriété</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <b>AlphaData</b>
+        </td>
+        <td>Données de transparence : scalaire, tableau de même taille que CData, ou 1 (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>AlphaDataMapping</b>
+        </td>
+        <td>Méthode de mappage des données alpha.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>CData</b>
+        </td>
+        <td>Données de couleur de l'image : vecteur ou matrice, tableau 3D de triplets RGB.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>CDataMapping</b>
+        </td>
+        <td>Méthode de mappage des couleurs : 'scaled' ou 'direct' (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Children</b>
+        </td>
+        <td>[].</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Parent</b>
+        </td>
+        <td>Parent : objet axes.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Tag</b>
+        </td>
+        <td>Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Type</b>
+        </td>
+        <td>Type d'objet graphique : 'surface'.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>UserData</b>
+        </td>
+        <td>Données utilisateur : tableau ou [] (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Visible</b>
+        </td>
+        <td>État de visibilité : 'off' ou 'on' (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>XData</b>
+        </td>
+        <td>Placement sur l'axe x : vecteur à deux éléments, scalaire, [1 size(CData, 1)] (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>YData</b>
+        </td>
+        <td>Placement sur l'axe y : vecteur à deux éléments, scalaire, [1 size(CData, 2)] (par défaut).</td>
+      </tr>
+      <tr>
+        <td>
+          <b>CreateFcn</b>
+        </td>
+        <td>Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>DeleteFcn</b>
+        </td>
+        <td>Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.</td>
+      </tr>
+      <tr>
+        <td>
+          <b>BeingDeleted</b>
+        </td>
+        <td>Indique que l'objet est en cours de suppression.</td>
+      </tr>
+    </table>
+  </div>
 </div>
 <div class="section">
 <div class="section-title">

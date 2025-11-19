@@ -19,7 +19,7 @@ Bit-wise AND
 
 ## 📄 Description
 
-<b>C = bitand(A, B)</b> returns the bit-wise AND of <b>A</b> and <b>B</b>.
+<b>C = bitand(A, B)</b> returns the bit-wise AND of <b>A</b> and<b>B</b>.
 
 ## 💡 Example
 

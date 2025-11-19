@@ -16,7 +16,7 @@ Returns true is the input argument is an directory.
 
 ## 📄 Description
 
-<b>isdir(dirname)</b> returns <b>true</b> if <b>dirname</b> is a directory.
+<b>isdir(dirname)</b> returns <b>true</b> if<b>dirname</b> is a directory.
 
 <b>isdir</b> and <b>isfolder</b> are same.
 

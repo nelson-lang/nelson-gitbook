@@ -23,7 +23,7 @@ Crée une ligne primitive.
 
 ## 📄 Description
 
-<b>line(x, y)</b> crée une ligne dans les axes courants avec les vecteurs <b>x</b> et <b>y</b>.
+<b>line(x, y)</b> crée une ligne dans les axes courants avec les vecteurs<b>x</b> et <b>y</b>.
 
 <b>line(x, y, z)</b> crée une ligne en coordonnées tridimensionnelles.
 

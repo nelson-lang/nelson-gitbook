@@ -27,7 +27,7 @@ Zoom mode is compatible with various charts like line, bar, histogram, and surfa
 
 <b>zoom option</b> configures the zoom mode for all axes within the current figure.
 
-For instance, <b>zoom('on')</b> activates zoom mode, <b>zoom('xon')</b> enables zoom mode exclusively for the x-dimension, while <b>zoom('off')</b> disables zoom mode altogether.
+For instance, <b>zoom('on')</b> activates zoom mode,<b>zoom('xon')</b> enables zoom mode exclusively for the x-dimension, while<b>zoom('off')</b> disables zoom mode altogether.
 
 Once zoom mode is active, you can adjust the view of axes using the cursor, scroll wheel, or keyboard:
 
@@ -49,7 +49,7 @@ The zoom mode option can be specified using one of the following values:
 
 <b>'off'</b>: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode.
 
-<b>'reset'</b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the <b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level.
+<b>'reset'</b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the<b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level.
 
 <b>'out'</b>: Restores the current axes to its baseline zoom level.
 

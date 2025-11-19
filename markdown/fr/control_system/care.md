@@ -24,7 +24,7 @@ Solution de l'équation algébrique de Riccati en temps continu.
 
 ## 📄 Description
 
-La fonction <b>care(A, B, Q)</b> calcule la solution exclusive, notée <b>X</b>, pour l'équation algébrique de Riccati en temps continu avec les matrices <b>A</b>, <b>B</b> et <b>Q</b>, et fournit également les matrices supplémentaires <b>L</b> et <b>G</b>.
+La fonction<b>care(A, B, Q)</b> calcule la solution exclusive, notée<b>X</b>, pour l'équation algébrique de Riccati en temps continu avec les matrices <b>A</b>, <b>B</b> et <b>Q</b>, et fournit également les matrices supplémentaires <b>L</b> et <b>G</b>.
 
 ## 💡 Exemple
 

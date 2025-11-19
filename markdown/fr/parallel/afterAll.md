@@ -22,7 +22,7 @@ Exécuter une fonction après que toutes les fonctions en arrière-plan soient t
 
 La fonction <b>fcn</b> est automatiquement exécutée une fois que tous les éléments du tableau Future <b>F</b> sont terminés.
 
-Si l'un des éléments de <b>F</b> rencontre une erreur, la propriété <b>Error</b> de <b>B</b> contient l'erreur.
+Si l'un des éléments de<b>F</b> rencontre une erreur, la propriété <b>Error</b> de<b>B</b> contient l'erreur.
 
 ## 💡 Exemple
 

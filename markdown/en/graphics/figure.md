@@ -80,17 +80,15 @@ figure('Name', 'Hello')
 
 ## 🕔 History
 
-| Version                                      | 📄 Description                                      |
-| -------------------------------------------- | --------------------------------------------------- |
-| 1.0.0                                        | initial version                                     |
-| 1.2.0                                        | Clicking on an figure automatically sets it as the  |
-| current figure object.                       |
-| 1.7.0                                        | CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, |
-| KeyReleaseFcn, ButtonDownFcn callback added. |
-| --                                           | BeingDeleted property added.                        |
-| 1.8.0                                        | Resize property added.                              |
-| 1.13.0                                       | DevicePixelRatio property added.                    |
-| 1.14.0                                       | WindowState property added.                         |
+| Version | 📄 Description                                                                                   |
+| ------- | ------------------------------------------------------------------------------------------------ |
+| 1.0.0   | initial version                                                                                  |
+| 1.2.0   | Clicking on an figure automatically sets it as the current figure object.                        |
+| 1.7.0   | CreateFcn, DeleteFcn, CloseRequestFcn, KeyPressFcn, KeyReleaseFcn, ButtonDownFcn callback added. |
+| --      | BeingDeleted property added.                                                                     |
+| 1.8.0   | Resize property added.                                                                           |
+| 1.13.0  | DevicePixelRatio property added.                                                                 |
+| 1.14.0  | WindowState property added.                                                                      |
 
 <!--
 ## 👤 Author

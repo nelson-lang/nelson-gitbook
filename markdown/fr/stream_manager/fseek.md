@@ -29,7 +29,7 @@ origin peut prendre comme valeurs :
 
 'eof' ou 1 : fin du fichier.
 
-<b>offset</b> peut être l'une des variables prédéfinies <b>SEEK_CUR</b> (position courante, ou 0), <b>SEEK_SET</b> (début, ou -1), ou <b>SEEK_END</b> (fin du fichier, ou 1).
+<b>offset</b> peut être l'une des variables prédéfinies<b>SEEK_CUR</b> (position courante, ou 0),<b>SEEK_SET</b> (début, ou -1), ou<b>SEEK_END</b> (fin du fichier, ou 1).
 
 ## 💡 Exemple
 

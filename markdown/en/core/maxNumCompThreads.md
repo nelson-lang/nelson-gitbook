@@ -25,7 +25,7 @@ Set/Get maximum number of computional threads.
 
 By default, maxNumCompThreads uses OMP_NUM_THREADS environment variable or numbers of detected physical cores on Windows and logical cores on others platforms.
 
-Limitation: On Windows 32 bits, due to MKL and OpenMP, <b>maxNumCompThreads</b> returns 4 max even if there is more core.
+Limitation: On Windows 32 bits, due to MKL and OpenMP,<b>maxNumCompThreads</b> returns 4 max even if there is more core.
 
 ## 💡 Example
 

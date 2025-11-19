@@ -28,7 +28,7 @@ Vérifie qu'une commande lève l'erreur attendue.
 
 Si la commande ne lève aucune erreur, ou si elle lève une erreur avec un message différent de celui attendu, l'assertion échoue.
 
-Lorsque le paramètre optionnel <b>expected_error_identifier</b> est fourni, la fonction vérifie également que l'identifiant d'erreur correspond à celui attendu.
+Lorsque le paramètre optionnel<b>expected_error_identifier</b> est fourni, la fonction vérifie également que l'identifiant d'erreur correspond à celui attendu.
 
 Cette fonction est particulièrement utile pour les tests unitaires afin de s'assurer que les entrées ou opérations non valides génèrent correctement les conditions d'erreur attendues.
 

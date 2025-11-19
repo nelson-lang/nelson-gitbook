@@ -4,10 +4,10 @@
     <module>memory_manager</module>
     <section name="Fonctions du gestionnaire de mémoire">
       <chapter_description>
-        <p>Le module Memory Manager fournit des outils pour gérer les variables et la mémoire dans Nelson.</p>
-        <p>Il prend en charge la création, l'affectation, l'interrogation et la suppression de variables dans différentes portées, ainsi que la gestion des variables globales et persistantes.</p>
-        <p>Le module permet également l'inspection de la mémoire, le verrouillage des variables et l'énumération du contenu de l'espace de travail, facilitant une utilisation efficace et contrôlée de la mémoire dans les scripts et applications.</p>
-    </chapter_description>
+    <p>Le module Memory Manager fournit des outils pour gérer les variables et la mémoire dans Nelson.</p>
+    <p>Il prend en charge la création, l'affectation, l'interrogation et la suppression de variables dans différentes portées, ainsi que la gestion des variables globales et persistantes.</p>
+    <p>Le module permet également l'inspection de la mémoire, le verrouillage des variables et l'énumération du contenu de l'espace de travail, facilitant une utilisation efficace et contrôlée de la mémoire dans les scripts et applications.</p>
+  </chapter_description>
       <keyword name="acquirevar" link="acquirevar.html" description="Récupère la valeur d'une variable depuis une portée de variables spécifiée."/>
       <keyword name="assignin" link="assignin.html" description="Assigne une valeur à une variable dans une portée de variables spécifiée."/>
       <keyword name="clear" link="clear.html" description="Efface une variable de l'espace de travail."/>

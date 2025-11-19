@@ -29,7 +29,7 @@ Semilog plot (x-axis has log scale).
 
 <b>semilogx(X, Y)</b> plots data using a base 10 logarithmic scale for the x-axis and a normal (linear) scale for the y-axis.
 
-<b>semilogx</b> has the exact same syntax as the <b>plot</b> command.
+<b>semilogx</b> has the exact same syntax as the<b>plot</b> command.
 
 ## 💡 Examples
 
@@ -38,7 +38,6 @@ f = figure();
 x = logspace(-1,2);
 semilogx(x, x);
 grid on
-
 ```
 
 <img src="semilogx_1.svg" align="middle"/>

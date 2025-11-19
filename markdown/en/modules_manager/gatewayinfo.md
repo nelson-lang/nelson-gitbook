@@ -17,9 +17,9 @@ Returns information about an gateway.
 
 ## 📄 Description
 
-<b>[gateway_name, builtin_list] = gatewayinfo(dyn_lib_path)</b> get information about an gateway.
+<b>[gateway\_name, builtin\_list] = gatewayinfo(dyn_lib_path)</b> get information about an gateway.
 
-The dynamic library must have at least an C entry point <b>GetGatewayInfo</b>.
+The dynamic library must have at least an C entry point<b>GetGatewayInfo</b>.
 
 If file does not exist an error is raised.
 

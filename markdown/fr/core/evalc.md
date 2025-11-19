@@ -28,8 +28,7 @@ evalc('B=4')
 ```
 
 ```matlab
-
-      >t = evalc('dir')
+        >t = evalc('dir')
 ```
 
 ## 🔗 Voir aussi

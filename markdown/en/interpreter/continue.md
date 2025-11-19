@@ -8,7 +8,7 @@ continue evaluation in loop.
 
 ## 📄 Description
 
-<b>continue</b> statement can be used inside a <b>for</b> or a <b>while</b> loop.
+<b>continue</b> statement can be used inside a <b>for</b> or a<b>while</b> loop.
 
 <b>continue</b> statement is used to pass control to the next iteration of a loop.
 

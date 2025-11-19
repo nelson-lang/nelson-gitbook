@@ -1,10 +1,8 @@
 # Graphics functions
 
-The graphics module provides functions for creating, customizing, and managing plots,
-figures, colormaps, and graphical objects.
+The graphics module provides functions for creating, customizing, and managing plots, figures, colormaps, and graphical objects.
 
-It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and
-utilities for working with colors, legends, axes, and text annotations.
+It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate), and utilities for working with colors, legends, axes, and text annotations.
 
 ## Functions
 

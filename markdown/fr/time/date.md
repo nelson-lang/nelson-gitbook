@@ -12,7 +12,7 @@ Retourne la date courante sous forme de vecteur de caractères.
 
 ## 📄 Description
 
-<b>d = date()</b> renvoie la date courante sous forme de vecteur de caractères au format <b>dd-MMM-yyyy</b>.
+<b>d = date()</b> renvoie la date courante sous forme de vecteur de caractères au format<b>dd-MMM-yyyy</b>.
 
 ## 💡 Exemple
 

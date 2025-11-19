@@ -19,7 +19,7 @@ Lower and upper matrix bandwidth.
 
 ## 📄 Description
 
-<b>[lower, upper] = bandwidth(A)</b> returns <b>lower</b> and <b>upper</b> bandwidths of matrix <b>A</b>.
+<b>[lower, upper] = bandwidth(A)</b> returns <b>lower</b> and<b>upper</b> bandwidths of matrix <b>A</b>.
 
 ## 💡 Example
 

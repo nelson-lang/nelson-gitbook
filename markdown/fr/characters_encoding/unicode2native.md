@@ -21,9 +21,9 @@ Convertit la représentation de caractères unicode en octets
 
 <b>bytes = unicode2native(str)</b> convertit les caractères unicode en un tableau numérique (le jeu de caractères natif de la machine).
 
-<b>bytes = unicode2native(str, charset)</b> convertit les caractères unicode en un tableau numérique (jeu de caractères <b>charset</b> au lieu du jeu de caractères natif).
+<b>bytes = unicode2native(str, charset)</b> convertit les caractères unicode en un tableau numérique (jeu de caractères<b>charset</b> au lieu du jeu de caractères natif).
 
-Liste des jeux de caractères : http://www.iana.org/assignments/character-sets/character-sets.xhtml
+Liste des jeux de caractères :http://www.iana.org/assignments/character-sets/character-sets.xhtml
 
 ## 📚 Bibliographie
 

@@ -16,7 +16,7 @@ Retourne vrai si l'argument est un fichier.
 
 ## 📄 Description
 
-<b>isfile(name)</b> renvoie <b>true</b> si <b>name</b> est un fichier.
+<b>isfile(name)</b> renvoie <b>true</b> si<b>name</b> est un fichier.
 
 ## 💡 Exemple
 

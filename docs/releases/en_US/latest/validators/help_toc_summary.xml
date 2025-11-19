@@ -4,10 +4,10 @@
     <module>validators</module>
     <section name="Validators">
       <chapter_description>
-        <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
-        <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
-        <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
-    </chapter_description>
+    <p>The Validators module provides tools for enforcing constraints and verifying input values in Nelson.</p>
+    <p>It supports checking data types, numerical properties, matrix and vector dimensions, text validity, file and folder existence, and logical or numeric conditions.</p>
+    <p>This module ensures robust input validation, helping to prevent errors, enforce correctness, and improve the reliability of scripts and functions.</p>
+  </chapter_description>
       <keyword name="mustBeA" link="mustBeA.html" description="Checks that input value comes from one of specified classes."/>
       <keyword name="mustBeColumn" link="mustBeColumn.html" description="Checks that value is a column vector or raise an error."/>
       <keyword name="mustBeFile" link="mustBeFile.html" description="Checks that input path refers to file."/>

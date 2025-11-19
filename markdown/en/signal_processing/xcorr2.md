@@ -18,7 +18,7 @@
 
 ## 📄 Description
 
-<b>xcorr2(A, B)</b> calculates the cross-correlation between two matrices, <b>A</b> and <b>B</b>, in two dimensions, without any scaling applied.
+<b>xcorr2(A, B)</b> calculates the cross-correlation between two matrices,<b>A</b> and <b>B</b>, in two dimensions, without any scaling applied.
 
 ## 💡 Example
 

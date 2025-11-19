@@ -37,7 +37,7 @@ Installed modules are locally built and can require an C/C++.
 
 <b>nmm('install', git_url)</b> install a distant module.
 
-About git_url, in this example 'https://github.com/nelson-lang/module_skeleton_basic.git#v1.0.0'
+About git_url, in this example 'https://github.com/nelson-lang/module\_skeleton\_basic.git#v1.0.0'
 
 '#v1.0.0' is defined as #<commit-ish>, it allows to clone exactly an commit.
 

@@ -65,7 +65,7 @@ listes des caractères spéciaux pris en charge par l'interpréteur 'tex' :
 
 Exposant : ^{ } 'texte^{exposant}'
 
-Indice : _{ } 'texte_{indice}'
+Indice : \_{ } 'texte\_{indice}'
 
 | Séquence de caractères | Symbole |
 | ---------------------- | ------- |

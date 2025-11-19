@@ -17,7 +17,7 @@ Lit un jeu de données HDF5.
 
 ## 📄 Description
 
-<b>h5read</b> lit le jeu de données situé à <b>location</b> dans le fichier HDF5.
+<b>h5read</b> lit le jeu de données situé à<b>location</b> dans le fichier HDF5.
 
 ## 💡 Exemple
 

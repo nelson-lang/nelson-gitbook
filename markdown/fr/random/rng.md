@@ -53,7 +53,7 @@ Générateur de nombres aléatoires.
 
 <b>s = rng</b> renvoie le générateur courant sous forme de structure.
 
-<b>rng(s)</b> restaure les paramètres du générateur de nombres aléatoires à partir d'une structure précédente renvoyée par <b>s = rng</b>.
+<b>rng(s)</b> restaure les paramètres du générateur de nombres aléatoires à partir d'une structure précédente renvoyée par<b>s = rng</b>.
 
 Générateurs disponibles :
 
@@ -81,11 +81,10 @@ lst = rng('enginelist')
 
 ## 🕔 Historique
 
-| Version               | 📄 Description                                          |
-| --------------------- | ------------------------------------------------------- |
-| 1.0.0                 | version initiale                                        |
-| 1.15.0                | Nouveau générateur de nombres aléatoires : simdTwister, |
-| combRecursive, philox |
+| Version | 📄 Description                                                                |
+| ------- | ----------------------------------------------------------------------------- |
+| 1.0.0   | version initiale                                                              |
+| 1.15.0  | Nouveau générateur de nombres aléatoires : simdTwister, combRecursive, philox |
 
 <!--
 ## 👤 Auteur

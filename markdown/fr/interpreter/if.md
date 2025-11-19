@@ -8,7 +8,7 @@ instruction conditionnelle.
 
 ## 📄 Description
 
-Les instructions <b>if</b> et <b>else</b> forment une structure de contrôle pour l'exécution conditionnelle.
+Les instructions <b>if</b> et<b>else</b> forment une structure de contrôle pour l'exécution conditionnelle.
 
 ## 💡 Exemple
 

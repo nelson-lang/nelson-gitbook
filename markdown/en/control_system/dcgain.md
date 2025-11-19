@@ -16,7 +16,7 @@ Low-frequency (DC) gain of LTI system.
 
 ## 📄 Description
 
-<b>k = dcgain(sys)</b> computes the DC gain <b>k</b> of the LTI model sys.
+<b>k = dcgain(sys)</b> computes the DC gain<b>k</b> of the LTI model sys.
 
 ## 💡 Example
 

@@ -16,7 +16,7 @@ Checks if value is a function handle.
 
 ## 📄 Description
 
-<b>l = isfunction_handle(func_handle)</b> checks if <b>func_handle</b> is a function handle. Returning <b>true</b> if it is.
+<b>l = isfunction_handle(func_handle)</b> checks if<b>func_handle</b> is a function handle. Returning <b>true</b> if it is.
 
 ## 💡 Example
 

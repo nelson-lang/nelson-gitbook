@@ -19,7 +19,7 @@ Convolution et multiplication de polynômes.
 
 ## 📄 Description
 
-<b>conv</b> renvoie la convolution des vecteurs <b>u</b> et <b>v</b>.
+<b>conv</b> renvoie la convolution des vecteurs<b>u</b> et <b>v</b>.
 
 ## 💡 Exemple
 

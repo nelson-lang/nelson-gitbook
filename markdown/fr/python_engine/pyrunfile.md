@@ -24,13 +24,13 @@ Exécuter un fichier Python depuis Nelson.
 
 <b>pyrunfile(filename)</b> exécute un fichier Python.
 
-Contrairement à la fonction <b>pyrun</b>, les variables générées dans l'espace Python par <b>pyrunfile</b> ne persistent pas. Ainsi, les appels suivants à <b>pyrunfile</b> ne pourront pas accéder à ces variables.
+Contrairement à la fonction <b>pyrun</b>, les variables générées dans l'espace Python par<b>pyrunfile</b> ne persistent pas. Ainsi, les appels suivants à<b>pyrunfile</b> ne pourront pas accéder à ces variables.
 
-Le code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée.
+Le code<b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée.
 
 Limitation connue :
 
-Les fonctions <b>pyrun</b> et <b>pyrunfile</b> ne prennent pas en charge les classes contenant des variables locales initialisées par d'autres variables locales via des méthodes. Dans ce cas, il est conseillé de créer un module et d'y accéder.
+Les fonctions <b>pyrun</b> et<b>pyrunfile</b> ne prennent pas en charge les classes contenant des variables locales initialisées par d'autres variables locales via des méthodes. Dans ce cas, il est conseillé de créer un module et d'y accéder.
 
 ## 💡 Exemples
 

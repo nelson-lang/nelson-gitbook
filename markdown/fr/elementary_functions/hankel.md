@@ -18,7 +18,7 @@ Matrice de Hankel
 
 ## 📄 Description
 
-<b>H = hankel(c)</b> renvoie une matrice de Hankel carrée dont <b>c</b> est la première colonne et dont les éléments situés sous l'anti-diagonale principale valent zéro.
+<b>H = hankel(c)</b> renvoie une matrice de Hankel carrée dont<b>c</b> est la première colonne et dont les éléments situés sous l'anti-diagonale principale valent zéro.
 
 <b>H = hankel(c, r)</b> renvoie une matrice de Hankel avec <b>c</b> comme première colonne et <b>r</b> comme dernière ligne.
 

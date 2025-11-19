@@ -18,11 +18,11 @@ Obtenir les premières lignes d'une table ou d'un tableau.
 
 ## 📄 Description
 
-<b>head(A)</b> affiche les huit premières lignes d'un tableau, ou de la table <b>A</b> dans la fenêtre de commande sans l'assigner à une variable.
+<b>head(A)</b> affiche les huit premières lignes d'un tableau, ou de la table<b>A</b> dans la fenêtre de commande sans l'assigner à une variable.
 
 <b>head(A, k)</b> affiche les k premières lignes de A.
 
-<b>B = head(...)</b> renvoie les lignes spécifiées de <b>A</b> pour n'importe quelle des syntaxes précédentes, avec <b>B</b> ayant le même type de données que <b>A</b>.
+<b>B = head(...)</b> renvoie les lignes spécifiées de <b>A</b> pour n'importe quelle des syntaxes précédentes, avec<b>B</b> ayant le même type de données que <b>A</b>.
 
 ## 💡 Exemples
 

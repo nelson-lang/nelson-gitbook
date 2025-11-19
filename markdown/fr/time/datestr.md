@@ -26,11 +26,11 @@ Convertit une date/heure en représentation textuelle.
 
 ## 📄 Description
 
-<b>dateAsString = datestr(dateVector)</b> convertit des vecteurs date en texte représentant les dates et heures correspondantes. Elle renvoie un tableau de caractères avec <b>m</b> lignes, où <b>m</b> est le nombre de vecteurs date dans <b>dateVector</b>.
+<b>dateAsString = datestr(dateVector)</b> convertit des vecteurs date en texte représentant les dates et heures correspondantes. Elle renvoie un tableau de caractères avec<b>m</b> lignes, où <b>m</b> est le nombre de vecteurs date dans<b>dateVector</b>.
 
-<b>dateAsString = datestr(dateNumber)</b> convertit des numéros de date série en texte représentant des dates et heures. La sortie est un tableau de caractères avec <b>m</b> lignes, où <b>m</b> est le nombre de numéros de date dans <b>dateNumber</b>.
+<b>dateAsString = datestr(dateNumber)</b> convertit des numéros de date série en texte représentant des dates et heures. La sortie est un tableau de caractères avec<b>m</b> lignes, où <b>m</b> est le nombre de numéros de date dans<b>dateNumber</b>.
 
-<b>dateAsString = datestr(..., formatOut)</b> permet de spécifier le format du texte de sortie via <b>formatOut</b>. Vous pouvez utiliser cette option avec n'importe quel des types d'entrée précédents.
+<b>dateAsString = datestr(..., formatOut)</b> permet de spécifier le format du texte de sortie via<b>formatOut</b>. Vous pouvez utiliser cette option avec n'importe quel des types d'entrée précédents.
 
 <b>dateAsString = datestr(dateAsStringIn)</b> convertit la chaîne d'entrée <b>dateAsStringIn</b> en un texte au format jour-mois-année heure:minute:seconde. Toutes les dates dans <b>dateAsStringIn</b> doivent suivre le même format.
 
@@ -68,7 +68,7 @@ Formats de conversion pris en charge :
 
 <b>HH:MM PM</b> 3:35 PM
 
-Si le format n'est pas spécifié, le format par défaut est <b>dd-mmm-yyyy</b>.
+Si le format n'est pas spécifié, le format par défaut est<b>dd-mmm-yyyy</b>.
 
 Si un format est spécifié et qu'il n'utilise pas un format prédéfini, le format doit être indiqué comme un vecteur de caractères ou un scalaire string composé d'identifiants symboliques.
 

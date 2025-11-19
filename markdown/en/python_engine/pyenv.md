@@ -18,9 +18,9 @@ Change default environment of Python interpreter.
 
 ## 📄 Description
 
-Use <b>pyenv</b> to modify the default version or execution mode of the Python interpreter, ensuring these adjustments persist across various Nelson sessions.
+Use<b>pyenv</b> to modify the default version or execution mode of the Python interpreter, ensuring these adjustments persist across various Nelson sessions.
 
-The value set by <b>pyenv</b> is persistent across Nelson sessions.
+The value set by<b>pyenv</b> is persistent across Nelson sessions.
 
 Properties:
 
@@ -38,17 +38,17 @@ Properties:
 
 Use environment variables to force python environment at each startup (usefull for snapcraft or docker distribution):
 
-<b>**NELSON_PYTHON_VERSION**</b>: example "3.10"
+<b>\_\_NELSON_PYTHON_VERSION\_\_</b>: example "3.10"
 
-<b>**NELSON_PYTHON_EXECUTABLE**</b>: example "/usr/bin/python3"
+<b>\_\_NELSON_PYTHON_EXECUTABLE\_\_</b>: example "/usr/bin/python3"
 
-<b>**NELSON_PYTHON_LIBRARY**</b>: example "libpython3.10.so.1.0"
+<b>\_\_NELSON_PYTHON_LIBRARY\_\_</b>: example "libpython3.10.so.1.0"
 
-<b>**NELSON_PYTHON_HOME**</b>: example "/usr"
+<b>\_\_NELSON_PYTHON_HOME\_\_</b>: example "/usr"
 
 All environment variables must exist and valid to be considered.
 
-On Windows, the <b>pyenv('Version', '3.11')</b> function searches the Windows Registry for the Python version associated with the specified version. It first looks in the HKCU environment, and if not found, it searches in HKLM.
+On Windows, the<b>pyenv('Version', '3.11')</b> function searches the Windows Registry for the Python version associated with the specified version. It first looks in the HKCU environment, and if not found, it searches in HKLM.
 
 ## 💡 Examples
 

@@ -19,13 +19,13 @@
 
 ## 📄 Description
 
-<b>Y = fft2(X)</b> returns the two-dimensional Fourier transform of <b>X</b> using a Fast Fourier Transform (FFT) algorithm.
+<b>Y = fft2(X)</b> returns the two-dimensional Fourier transform of<b>X</b> using a Fast Fourier Transform (FFT) algorithm.
 
-Optional arguments <b>m</b> and <b>n</b> may be used specify the number of rows and columns of <b>X</b> to use.
+Optional arguments <b>m</b> and<b>n</b> may be used specify the number of rows and columns of<b>X</b> to use.
 
-If either of these is larger than the size of <b>X</b>, <b>X</b> is resized and padded with zeros.
+If either of these is larger than the size of <b>X</b>,<b>X</b> is resized and padded with zeros.
 
-If <b>X</b> is a multi-dimensional matrix, each two-dimensional sub-matrix of <b>X</b> is treated separately.
+If<b>X</b> is a multi-dimensional matrix, each two-dimensional sub-matrix of<b>X</b> is treated separately.
 
 ## 💡 Example
 

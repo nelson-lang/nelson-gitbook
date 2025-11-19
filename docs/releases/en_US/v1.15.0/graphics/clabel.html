@@ -42,13 +42,13 @@ clabel(...,Name,Value)
 <tr>
 <td class="param-name">C</td>
 <td>
-        <p>Contour matrix returned by <b>contour</b>, <b>contourf</b>, or <b>contour3</b>. If you pass a contour object <b>h</b>, you may pass <b>[]</b> for <b>C</b>.</p>
+        <p>Contour matrix returned by <b>contour</b>, <b>contourf</b>, or<b>contour3</b>. If you pass a contour object <b>h</b>, you may pass<b>[]</b> for <b>C</b>.</p>
       </td>
 </tr>
 <tr>
 <td class="param-name">h</td>
 <td>
-        <p>Contour object handle returned by <b>contour</b> / <b>contourf</b> / <b>contour3</b>. When provided, labeling uses information attached to the contour object (levels and contour matrix).</p>
+        <p>Contour object handle returned by <b>contour</b> /<b>contourf</b> /<b>contour3</b>. When provided, labeling uses information attached to the contour object (levels and contour matrix).</p>
       </td>
 </tr>
 <tr>
@@ -70,13 +70,13 @@ clabel(...,Name,Value)
 <tr>
 <td class="param-name">t</td>
 <td>
-        <p>Text objects created by <b>clabel</b>. The <b>String</b> properties contain the contour values displayed.</p>
+        <p>Text objects created by <b>clabel</b>. The<b>String</b> properties contain the contour values displayed.</p>
       </td>
 </tr>
 <tr>
 <td class="param-name">tl</td>
 <td>
-        <p>Text and line objects created when upright markers are used (for <b>clabel(C)</b>-style usage).</p>
+        <p>Text and line objects created when upright markers are used (for<b>clabel(C)</b>-style usage).</p>
       </td>
 </tr>
 </table>
@@ -87,10 +87,10 @@ clabel(...,Name,Value)
 <div>
     <p>The <b>clabel</b> function inserts labels into contour plots:</p>
     <ul>
-      <li>Provide a contour matrix <b>C</b> and contour object <b>h</b> to label rotated text along contour lines.</li>
-      <li>Provide only <b>C</b> to add upright labels and '+' markers at contour locations.</li>
-      <li>Pass a vector of levels <b>v</b> to label only specific contour values.</li>
-      <li>Use Name,Value pairs to control text appearance (a subset of Text properties, plus <b>LabelSpacing</b>).</li>
+      <li>Provide a contour matrix <b>C</b> and contour object<b>h</b> to label rotated text along contour lines.</li>
+      <li>Provide only<b>C</b> to add upright labels and '+' markers at contour locations.</li>
+      <li>Pass a vector of levels<b>v</b> to label only specific contour values.</li>
+      <li>Use Name,Value pairs to control text appearance (a subset of Text properties, plus<b>LabelSpacing</b>).</li>
     </ul>
   </div>
 </div>
@@ -103,8 +103,7 @@ clabel(...,Name,Value)
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 [x,y,z] = peaks;
 [C,h] = contour(x,y,z);
-clabel(C,h)
-      </code></pre>
+clabel(C,h)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
@@ -116,8 +115,7 @@ clabel(C,h)
 [x,y,z] = peaks;
 [C,h] = contour(x,y,z);
 v = [2,6];
-clabel(C,h,v)
-      </code></pre>
+clabel(C,h,v)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
@@ -128,8 +126,7 @@ clabel(C,h,v)
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 [x,y,z] = peaks;
 [C,h] = contour(x,y,z);
-clabel(C,h,'FontSize',15,'Color','red')
-      </code></pre>
+clabel(C,h,'FontSize',15,'Color','red')</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_3.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
@@ -140,8 +137,7 @@ clabel(C,h,'FontSize',15,'Color','red')
 <pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
 [x,y,z] = peaks;
 C = contour(x,y,z);
-clabel(C)
-      </code></pre>
+clabel(C)</code></pre>
 <button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
 </div>
 <img src="./clabel_4.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">

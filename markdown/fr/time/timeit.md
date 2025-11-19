@@ -20,11 +20,11 @@ Mesure le temps nécessaire à l'exécution d'une fonction.
 
 ## 📄 Description
 
-<b>t = timeit(f)</b> mesure le temps nécessaire à l'exécution de la fonction indiquée par le handle de fonction <b>f</b>.
+<b>t = timeit(f)</b> mesure le temps nécessaire à l'exécution de la fonction indiquée par le handle de fonction<b>f</b>.
 
-Pour obtenir une mesure robuste, <b>timeit</b> appelle la fonction plusieurs fois et renvoie la médiane des mesures.
+Pour obtenir une mesure robuste,<b>timeit</b> appelle la fonction plusieurs fois et renvoie la médiane des mesures.
 
-Si la fonction est rapide, <b>timeit</b> pourra appeler la fonction de nombreuses fois.
+Si la fonction est rapide,<b>timeit</b> pourra appeler la fonction de nombreuses fois.
 
 ## 💡 Exemples
 

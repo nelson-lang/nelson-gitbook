@@ -21,7 +21,7 @@ Exécuter une fonction en arrière-plan.
 
 <b>f = parfeval(bPool, fptr, n, x1, ..., xm)</b> lance la fonction <b>fptr</b> pour s'exécuter en arrière-plan.
 
-backgroundPool dispose de <b>NumWorkers</b> workers disponibles. Si davantage de fonctions sont programmées, les fonctions attendent qu'une entrée soit disponible dans le pool.
+backgroundPool dispose de<b>NumWorkers</b> workers disponibles. Si davantage de fonctions sont programmées, les fonctions attendent qu'une entrée soit disponible dans le pool.
 
 <b>parfeval</b> exécute la fonction <b>fptr</b> sur un worker en arrière-plan.
 

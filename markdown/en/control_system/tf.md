@@ -24,11 +24,11 @@ Constructs a transfer function model.
 
 <b>sys = tf(numerator, denominator)</b> is used to create a continuous-time transfer function model.
 
-It is defined by specifying <b>numerator</b> and <b>denominator</b> of the transfer function.
+It is defined by specifying <b>numerator</b> and<b>denominator</b> of the transfer function.
 
-When you include the <b>Ts</b> parameter, it allows you to create a discrete-time transfer function.
+When you include the<b>Ts</b> parameter, it allows you to create a discrete-time transfer function.
 
-Setting <b>Ts</b> to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.
+Setting<b>Ts</b> to -1 indicates an unspecified sampling time, and, in this scenario, the input arguments are treated as if they pertain to a continuous-time system.
 
 ## 💡 Examples
 

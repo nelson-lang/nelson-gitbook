@@ -30,7 +30,6 @@ if isfile(xml_filename)
   xsd_filename = [modulepath('xml'), '/tests/test_xml.xsd'];
   [is_valid, errors] = xmlchecker(xml_filename, xsd_filename);
 end
-
 ```
 
 ## 🔗 See also

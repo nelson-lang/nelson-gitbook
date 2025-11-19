@@ -18,7 +18,7 @@ Renommer les variables dans une table.
 
 ## 📄 Description
 
-<b>TB = renamevars(TA, varsNames, newNames)</b> renomme les variables dans la table <b>TA</b> telles que spécifiées par <b>varsNames</b> et leur assigne les nouveaux noms fournis dans <b>newNames</b>.
+<b>TB = renamevars(TA, varsNames, newNames)</b> renomme les variables dans la table<b>TA</b> telles que spécifiées par<b>varsNames</b> et leur assigne les nouveaux noms fournis dans<b>newNames</b>.
 
 Vous pouvez également renommer toutes les variables d'une table en assignant de nouveaux noms à sa propriété <b>VariableNames</b> en utilisant <b>T.Properties.VariableNames = newNames</b>.
 

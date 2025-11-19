@@ -23,7 +23,7 @@ colon operator ':'.
 
 <b>colon(base, limit)</b> is equivalent to <b>base:limit</b>
 
-<b>colon(base, increment, limit)</b> is equivalent to <b>base:increment:limit</b>
+<b>colon(base, increment, limit)</b> is equivalent to<b>base:increment:limit</b>
 
 ## 💡 Examples
 

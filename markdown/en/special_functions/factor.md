@@ -16,7 +16,7 @@ Prime factors
 
 ## 📄 Description
 
-<b>f = factor(n)</b> returns a row vector with the prime factors of <b>n</b>.
+<b>f = factor(n)</b> returns a row vector with the prime factors of<b>n</b>.
 
 Vector <b>f</b> is of the same data type as <b>n</b>.
 

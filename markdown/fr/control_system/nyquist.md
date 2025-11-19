@@ -22,7 +22,7 @@ Diagramme de Nyquist de la réponse en fréquence.
 
 ## 📄 Description
 
-La fonction Nyquist, <b>nyquist(sys)</b>, génère une représentation graphique connue sous le nom de tracé de Nyquist, illustrant la réponse en fréquence d'un modèle de système dynamique représenté par sys.
+La fonction Nyquist,<b>nyquist(sys)</b>, génère une représentation graphique connue sous le nom de tracé de Nyquist, illustrant la réponse en fréquence d'un modèle de système dynamique représenté par sys.
 
 Ce tracé affiche les composantes réelle et imaginaire de la réponse du système selon la fréquence.
 

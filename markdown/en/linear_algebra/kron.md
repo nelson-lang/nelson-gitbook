@@ -17,7 +17,7 @@ Kronecker tensor product.
 
 ## 📄 Description
 
-<b>K = kron(A, B)</b> computes the Kronecker tensor product of matrices <b>A</b> and <b>B</b>.
+<b>K = kron(A, B)</b> computes the Kronecker tensor product of matrices<b>A</b> and <b>B</b>.
 
 For matrices
 $$A$$

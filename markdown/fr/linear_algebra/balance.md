@@ -24,7 +24,7 @@ Mise à l'échelle diagonale pour améliorer la précision des valeurs propres.
 
 <b>B = balance(A)</b> retourne la matrice équilibrée <b>B</b>.
 
-<b>B = balance(A, 'noperm')</b> met à l'échelle <b>A</b> sans permuter ses lignes et colonnes.
+<b>B = balance(A, 'noperm')</b> met à l'échelle<b>A</b> sans permuter ses lignes et colonnes.
 
 ## Fonction(s) utilisée(s)
 

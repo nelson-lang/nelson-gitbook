@@ -16,7 +16,7 @@ Check for missing values.
 
 ## 📄 Description
 
-<b>ismissing</b> returns a logical array which is true where elements of M are <b>missing</b> values.
+<b>ismissing</b> returns a logical array which is true where elements of M are<b>missing</b> values.
 
 missing data are defined as:
 

@@ -48,7 +48,7 @@ report('export', ...) clone and remove .git directory.
 
 Tips:
 
-If you have this error: <b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.
+If you have this error:<b>callback returned unsupported credentials type</b> , checks your ~/.gitconfig file.
 
 You don't have some ssh or https redirection.
 
@@ -76,7 +76,6 @@ repo('tag', destination)
 repo('branch', destination)
 repo('current_branch', destination)
 repo('log', destination)
-
 ```
 
 ## 🔗 See also

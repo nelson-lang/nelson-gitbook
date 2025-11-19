@@ -17,11 +17,9 @@ Attendre un clic ou une pression sur une touche.
 ## 💡 Exemple
 
 ```matlab
-
 cf = gcf();
 w = waitforbuttonpress;
 axes;
-
 ```
 
 ## 🔗 Voir aussi

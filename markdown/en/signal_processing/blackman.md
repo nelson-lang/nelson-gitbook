@@ -18,7 +18,7 @@ Blackman window.
 
 ## 📄 Description
 
-<b>c = blackman(m)</b> computes coefficients of a Blackman window of length <b>m</b>.
+<b>c = blackman(m)</b> computes coefficients of a Blackman window of length<b>m</b>.
 
 ## 📚 Bibliography
 

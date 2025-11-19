@@ -21,7 +21,7 @@ Specify char buffer for Nelson output
 
 Specify char buffer for Nelson output.
 
-To turn off output buffering in C, use: <b>engOutputBuffer(ep, NULL, 0);</b>
+To turn off output buffering in C, use:<b>engOutputBuffer(ep, NULL, 0);</b>
 
 ## 💡 Example
 
