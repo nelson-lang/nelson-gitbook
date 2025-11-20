@@ -4,9 +4,9 @@ déclaration de fonction.
 
 ## 📝 Syntaxe
 
-- function [out_1,...,out_M,varargout] = fname(in_1, ... , in_N, varargin)
+- function [out\_1,...,out\_M,varargout] = fname(in_1, ... , in_N, varargin)
 - function fname(in_1, ... , in_N, varargin)
-- function [out_1,...,out_M,varargout] = fname()
+- function [out\_1,...,out\_M,varargout] = fname()
 - function fname()
 
 ## 📄 Description

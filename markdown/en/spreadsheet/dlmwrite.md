@@ -19,7 +19,7 @@ Write an numeric matrix to a text file file using a delimiter.
 
 - filename - a string: filename destination.
 - M - an numeric or logical matrix.
-- delimiter - a string: ',' , '\t', ';' delimiter. default ','
+- delimiter - a string: ',' , '\\t', ';' delimiter. default ','
 - r, c - integer: offset. default : 0, 0
 - eol - a string: 'pc' or 'unix'.
 - precision - a integer or C format string. (default: 5)

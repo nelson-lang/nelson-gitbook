@@ -12,7 +12,7 @@ Gauss-Jordan elimination.
 ## 📥 Input argument
 
 - A - input matrix (double or single)
-- tol - tolerance: scalar or max(rows, cols) _ eps(class(A)) _ norm(A, inf) (default)
+- tol - tolerance: scalar or max(rows, cols) \* eps(class(A)) \* norm(A, inf) (default)
 
 ## 📤 Output argument
 

@@ -5,7 +5,7 @@ Vérifie un fichier XML par rapport à un XSD.
 ## 📝 Syntaxe
 
 - xmlchecker(xmlfile, xsdfile)
-- [state, errors_detected, warnings_detected] = xmlchecker(xmlfile, xsdfile)
+- [state, errors\_detected, warnings\_detected] = xmlchecker(xmlfile, xsdfile)
 
 ## 📥 Argument d'entrée
 

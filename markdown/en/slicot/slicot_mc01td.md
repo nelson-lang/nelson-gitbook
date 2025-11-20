@@ -4,7 +4,7 @@ Checking stability of a given real polynomial.
 
 ## 📝 Syntax
 
-- [DP_OUT, STABLE, NZ, IWARN, INFO] = slicot_mc01td(DICO, DP_IN, P)
+- [DP\_OUT, STABLE, NZ, IWARN, INFO] = slicot_mc01td(DICO, DP_IN, P)
 
 ## 📥 Input argument
 

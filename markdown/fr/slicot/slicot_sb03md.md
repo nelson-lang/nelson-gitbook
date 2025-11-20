@@ -4,14 +4,14 @@ Résolution des équations de Lyapunov temps continu ou discret et estimation de
 
 ## 📝 Syntaxe
 
-- [U_OUT, C_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
+- [U\_OUT, C\_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
 
 ## 📥 Argument d'entrée
 
 - DICO - Spécifie le type d'équation de Lyapunov à résoudre : = 'C' : cas continu ; = 'D' : cas discret.
 - JOB - Spécifie le calcul à effectuer : 'X' : calculer la solution uniquement ; = 'S' : calculer la séparation uniquement ; = 'B' : calculer à la fois la solution et la séparation.
 - FACT - Spécifie si la factorisation de Schur réelle de A est fournie à l'entrée : = 'F' : A et Q contiennent les facteurs ; = 'N' : la factorisation sera calculée et stockée dans A et Q.
-- TRANA - Spécifie la forme d'op(A) à utiliser : = 'N' : op(A) = A (sans transposition) ; = 'T' : op(A) = A**T (transposée) ; = 'C' : op(A) = A**T (conjuguée transposée = transposée).
+- TRANA - Spécifie la forme d'op(A) à utiliser : = 'N' : op(A) = A (sans transposition) ; = 'T' : op(A) = A\*\*T (transposée) ; = 'C' : op(A) = A\*\*T (conjuguée transposée = transposée).
 - A - La partie principale N-by-N de ce tableau doit contenir la matrice A. Si FACT = 'F', alors A contient une matrice quasi-triangulaire supérieure en forme canonique de Schur ; les éléments sous la partie Hessenberg supérieure de A ne sont pas référencés.
 - U_IN - Si FACT = 'N', zeros(N, N) ; si FACT = 'F', U est un argument d'entrée et doit contenir la matrice orthogonale U de la factorisation de Schur réelle de A.
 - C_IN - Si JOB = 'X' ou 'B', la partie principale N-by-N de ce tableau doit contenir la matrice symétrique C.
@@ -31,11 +31,11 @@ Résolution des équations de Lyapunov temps continu ou discret et estimation de
 
 Résoudre pour X soit l'équation de Lyapunov continue réelle
 
-op(A)'*X + X*op(A) = scale\*C
+op(A)'\*X + X\*op(A) = scale\*C
 
 ou l'équation de Lyapunov discrète réelle
 
-op(A)'*X*op(A) - X = scale\*C
+op(A)'\*X\*op(A) - X = scale\*C
 
 et/ou estimer un nombre de condition associé, appelé séparation, où op(A) = A ou A' et C est symétrique (C = C').
 

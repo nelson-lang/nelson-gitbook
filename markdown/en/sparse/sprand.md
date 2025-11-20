@@ -21,7 +21,7 @@ Sparse uniformly distributed random matrix.
 
 <b>R = sprand(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with uniformly distributed random entries.
 
-<b>R = sprand(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density*m*n uniformly distributed nonzero entries for density in the interval [0,1].
+<b>R = sprand(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density\*m\*n uniformly distributed nonzero entries for density in the interval [0,1].
 
 ## 💡 Examples
 

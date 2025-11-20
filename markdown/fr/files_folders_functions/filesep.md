@@ -8,11 +8,11 @@ Renvoie le caractère séparateur de fichiers pour la plateforme courante.
 
 ## 📤 Argument de sortie
 
-- res - a string: '/' ou '\\'
+- res - a string: '/' ou '\\\\'
 
 ## 📄 Description
 
-<b>filesep</b> renvoie '\\' sur Windows et '/' sur les autres plateformes.
+<b>filesep</b> renvoie '\\\\' sur Windows et '/' sur les autres plateformes.
 
 ## 💡 Exemple
 

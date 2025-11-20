@@ -4,7 +4,7 @@ Matrix rank determination by incremental condition estimation.
 
 ## 📝 Syntax
 
-- [A_OUT, JPVT_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03od(JOBQR, A_IN, JPVT_IN, RCOND, SVLMAX)
+- [A\_OUT, JPVT\_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03od(JOBQR, A_IN, JPVT_IN, RCOND, SVLMAX)
 
 ## 📥 Input argument
 

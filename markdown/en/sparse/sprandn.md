@@ -21,7 +21,7 @@ Sparse normally distributed random matrix.
 
 <b>R = sprandn(S)</b> creates a sparse matrix that has the same sparsity pattern as the matrix S, but with normally distributed random entries.
 
-<b>R = sprandn(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density*m*n normally distributed nonzero entries for density in the interval [0,1].
+<b>R = sprandn(m,n,density)</b> creates a random m-by-n sparse matrix with approximately density\*m\*n normally distributed nonzero entries for density in the interval [0,1].
 
 ## 💡 Examples
 

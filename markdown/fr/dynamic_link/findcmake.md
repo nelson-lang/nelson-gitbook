@@ -4,7 +4,7 @@ Trouver le chemin de CMake
 
 ## 📝 Syntaxe
 
-- [status, cmake_path] = findcmake()
+- [status, cmake\_path] = findcmake()
 
 ## 📤 Argument de sortie
 

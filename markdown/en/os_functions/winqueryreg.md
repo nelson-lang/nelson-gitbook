@@ -21,13 +21,13 @@ Read the Windows registry (Windows only).
 
 ## 📄 Description
 
-<b>c = winqueryreg ('name', rootkey, subkey)</b> returns a cell of strings with key names in rootkey\subkey.
+<b>c = winqueryreg ('name', rootkey, subkey)</b> returns a cell of strings with key names in rootkey\\subkey.
 
-<b>v = winqueryreg (rootkey, subkey, value_name)</b> returns the value associated to value_name in rootkey\subkey.
+<b>v = winqueryreg (rootkey, subkey, value_name)</b> returns the value associated to value_name in rootkey\\subkey.
 
 If the value is a 32-bit integer,<b>winqueryreg</b> returns the value as int32. If this value is a string, it is a string.
 
-<b>v = winqueryreg (rootkey, subkey)</b> returns value in rootkey\subkey that has no value name property.
+<b>v = winqueryreg (rootkey, subkey)</b> returns value in rootkey\\subkey that has no value name property.
 
 Supported root keys:
 

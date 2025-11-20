@@ -1,11 +1,11 @@
 # mldivide
 
-Matrix left division, \ operator.
+Matrix left division, \\ operator.
 
 ## 📝 Syntax
 
 - C = mldivide(A, B)
-- C = A \ B
+- C = A \\ B
 
 ## 📥 Input argument
 
@@ -14,7 +14,7 @@ Matrix left division, \ operator.
 
 ## 📤 Output argument
 
-- C - result of A \ B
+- C - result of A \\ B
 
 ## 📄 Description
 

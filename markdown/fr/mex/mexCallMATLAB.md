@@ -5,7 +5,7 @@ Appelle une fonction NELSON
 ## 📝 Syntaxe
 
 - #include "mex.h"
-- int mexCallMATLAB(int nlhs, mxArray *plhs[], int nrhs, mxArray *prhs[], const char \*command_name);
+- int mexCallMATLAB(int nlhs, mxArray \*plhs[], int nrhs, mxArray \*prhs[], const char \*command_name);
 
 ## 📥 Argument d'entrée
 

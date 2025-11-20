@@ -18,7 +18,7 @@ Remove leading and trailing whitespace.
 
 <b>strtrim</b> removes leading and trailing whitespace.
 
-<b>strtrim</b> does not remove all significant whitespace (only characters ' \t\n\r\f\v' removed).
+<b>strtrim</b> does not remove all significant whitespace (only characters ' \\t\\n\\r\\f\\v' removed).
 
 ## 💡 Examples
 

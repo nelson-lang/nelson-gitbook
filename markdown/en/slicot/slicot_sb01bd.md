@@ -4,7 +4,7 @@ Pole assignment for a given matrix pair (A,B).
 
 ## 📝 Syntax
 
-- [A_OUT, WR_OUT, WI_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
+- [A\_OUT, WR\_OUT, WI\_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
 
 ## 📥 Input argument
 
@@ -18,7 +18,7 @@ Pole assignment for a given matrix pair (A,B).
 
 ## 📤 Output argument
 
-- A_OUT - the leading N-by-N part of this array contains the matrix Z'*(A+B*F)\*Z in a real Schur form.
+- A_OUT - the leading N-by-N part of this array contains the matrix Z'\*(A+B\*F)\*Z in a real Schur form.
 - WR_OUT - if INFO = 0, the leading NAP elements of these arrays contain the real parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
 - WI_OUT - if INFO = 0, the leading NAP elements of these arrays contain the imaginary parts of the assigned eigenvalues. The trailing NP-NAP elements contain the unassigned eigenvalues.
 - NFP - The number of eigenvalues of A having real parts less than ALPHA, if DICO = 'C', or moduli less than ALPHA, if DICO = 'D'. These eigenvalues are not modified by the eigenvalue assignment algorithm.

@@ -4,7 +4,7 @@ Reduction of a real Schur form matrix to a block-diagonal form.
 
 ## 📝 Syntax
 
-- [A_OUT, X_OUT, NBLCKS, BLSIZE, WR, WI, INFO] = slicot_mb03rd(JOBX, SORT, PMAX, A_IN, X_IN, TOL)
+- [A\_OUT, X\_OUT, NBLCKS, BLSIZE, WR, WI, INFO] = slicot_mb03rd(JOBX, SORT, PMAX, A_IN, X_IN, TOL)
 
 ## 📥 Input argument
 

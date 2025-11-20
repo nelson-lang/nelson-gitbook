@@ -26,7 +26,7 @@ Properties:
 
 <b>Delimiter</b>: Field delimiter characters. example: {','}
 
-<b>LineEnding</b>: End-of-line characters. example: {'\r\n'}
+<b>LineEnding</b>: End-of-line characters. example: {'\\r\\n'}
 
 <b>CommentStyle</b>: Style of comments. example: {'#'}
 

@@ -39,7 +39,7 @@ Runs tests
 
 ## 📄 Description
 
-<b>test_run</b> function searchs 'test\__.m', 'bug\__.m', and 'bench\_\*.m' files, executes them, and displays a report about success or failures.
+<b>test_run</b> function searchs 'test\_\*.m', 'bug\_\*.m', and 'bench\_\*.m' files, executes them, and displays a report about success or failures.
 
 Each test or bench is executed in a separated process using the 'unix' command.
 
@@ -95,7 +95,7 @@ These tags are expected to be found in Nelson comments:
 
 <b><--NATIVE ARCHITECTURE TEST REQUIRED--></b> This test will be executed if application's build and architecture are same.
 
-<b><--FILE WATCHER REQUIRED--></b> This test will be executed if file watcher is available.
+<b><--FILE WATCHER REQUIRED--></b>This test will be executed if file watcher is available.
 
 <b><--PYTHON ENVIRONMENT REQUIRED--></b> This test will be executed if python environment is available and configured.
 

@@ -21,7 +21,7 @@ Matrice sparse aléatoire à distribution normale.
 
 <b>R = sprandn(S)</b> crée une matrice sparse qui a le même motif de sparsité que la matrice S, mais avec des entrées aléatoires distribuées normalement.
 
-<b>R = sprandn(m,n,density)</b> crée une matrice sparse aléatoire m-par-n avec approximativement density*m*n entrées non nulles distribuées normalement pour une densité dans l'intervalle [0,1].
+<b>R = sprandn(m,n,density)</b> crée une matrice sparse aléatoire m-par-n avec approximativement density\*m\*n entrées non nulles distribuées normalement pour une densité dans l'intervalle [0,1].
 
 ## 💡 Exemples
 

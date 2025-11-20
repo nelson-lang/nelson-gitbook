@@ -1,11 +1,11 @@
 # ldivide
 
-Division gauche, opérateur .\
+Division gauche, opérateur .\\
 
 ## 📝 Syntaxe
 
 - C = ldivide(A, B)
-- C = A .\ B
+- C = A .\\ B
 
 ## 📥 Argument d'entrée
 
@@ -14,11 +14,11 @@ Division gauche, opérateur .\
 
 ## 📤 Argument de sortie
 
-- C - résultat de A .\ B
+- C - résultat de A .\\ B
 
 ## 📄 Description
 
-<b>C = ldivide(A, B)</b> retourne la division élément par élément A .\ B.
+<b>C = ldivide(A, B)</b> retourne la division élément par élément A .\\ B.
 
 ## 💡 Exemples
 

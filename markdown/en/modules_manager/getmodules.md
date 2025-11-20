@@ -5,7 +5,7 @@ Returns list of modules loaded in Nelson.
 ## 📝 Syntax
 
 - modules_name = getmodules()
-- [modules_name, modules_root_path, modules_version, modules_protected] = getmodules()
+- [modules\_name, modules\_root\_path, modules\_version, modules\_protected] = getmodules()
 
 ## 📤 Output argument
 

@@ -5,7 +5,7 @@ Blocking receive for a message.
 ## 📝 Syntax
 
 - r = MPI_Recv(Source, Tag)
-- [r, mpi_source, mpi_tag] = MPI_Reduce(Source, Tag, Comm)
+- [r, mpi\_source, mpi\_tag] = MPI_Reduce(Source, Tag, Comm)
 
 ## 📥 Input argument
 

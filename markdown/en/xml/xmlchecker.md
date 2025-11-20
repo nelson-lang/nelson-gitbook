@@ -5,7 +5,7 @@ Checks a xmlfile against xsd.
 ## 📝 Syntax
 
 - xmlchecker(xmlfile, xsdfile)
-- [state, errors_detected, warnings_detected] = xmlchecker(xmlfile, xsdfile)
+- [state, errors\_detected, warnings\_detected] = xmlchecker(xmlfile, xsdfile)
 
 ## 📥 Input argument
 

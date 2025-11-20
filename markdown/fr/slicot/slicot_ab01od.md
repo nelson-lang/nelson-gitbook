@@ -4,7 +4,7 @@ Forme en escalier pour systèmes multi-entrées utilisant des transformations or
 
 ## 📝 Syntaxe
 
-- [A_OUT, B_OUT, U_OUT, V, NCONT_OUT, INDCON_OUT, KSTAIR_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
+- [A\_OUT, B\_OUT, U\_OUT, V, NCONT\_OUT, INDCON\_OUT, KSTAIR\_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
 
 ## 📥 Argument d'entrée
 
@@ -20,8 +20,8 @@ Forme en escalier pour systèmes multi-entrées utilisant des transformations or
 
 ## 📤 Argument de sortie
 
-- A_OUT - À la sortie, la partie principale N-by-N de ce tableau contient la matrice de transition d'état transformée U' _ A _ U. La partie principale NCONT-by-NCONT contient la matrice d'état Acont en forme de Hessenberg par blocs, donnée par U' _ A _ U, d'une réalisation contrôlable du système original. Les éléments sous la première sous-diagonale par blocs sont mis à zéro. Si STAGES ≠ 'F', les blocs sous-diagonaux de A sont triangulés par factorisation RQ et les éléments annulés sont explicitement mis à zéro.
-- B_OUT - À la sortie, si STAGES = 'F', la partie principale N-by-M de ce tableau contient la matrice d'entrée transformée U' _ B, avec tous les éléments sauf le premier bloc mis à zéro. Si STAGES ≠ 'F', la partie principale N-by-M contient la matrice transformée U' _ B \* V, avec tous les éléments sauf le premier bloc mis à zéro et le premier bloc en forme triangulaire supérieure.
+- A_OUT - À la sortie, la partie principale N-by-N de ce tableau contient la matrice de transition d'état transformée U' \* A \* U. La partie principale NCONT-by-NCONT contient la matrice d'état Acont en forme de Hessenberg par blocs, donnée par U' \* A \* U, d'une réalisation contrôlable du système original. Les éléments sous la première sous-diagonale par blocs sont mis à zéro. Si STAGES ≠ 'F', les blocs sous-diagonaux de A sont triangulés par factorisation RQ et les éléments annulés sont explicitement mis à zéro.
+- B_OUT - À la sortie, si STAGES = 'F', la partie principale N-by-M de ce tableau contient la matrice d'entrée transformée U' \* B, avec tous les éléments sauf le premier bloc mis à zéro. Si STAGES ≠ 'F', la partie principale N-by-M contient la matrice transformée U' \* B \* V, avec tous les éléments sauf le premier bloc mis à zéro et le premier bloc en forme triangulaire supérieure.
 - U_OUT - Si JOBU = 'I', la partie principale N-by-N de ce tableau contient la matrice de transformation U qui a effectué la réduction spécifiée. Si JOBU = 'N', le tableau U n'est pas référencé et peut être fourni comme tableau factice.
 - V - Si JOBV = 'I', la partie principale M-by-M de ce tableau contient la matrice de transformation V.
 - NCONT_OUT - NCONT_OUT est en entrée uniquement si STAGES = 'B'.
@@ -33,7 +33,7 @@ Forme en escalier pour systèmes multi-entrées utilisant des transformations or
 
 Réduire les matrices A et B en utilisant (et en accumulant éventuellement) les transformations d'espace d'état et d'entrée U et V respectivement, telles que la paire de matrices
 
-Ac = U' _ A _ U, Bc = U' _ B _ V
+Ac = U' \* A \* U, Bc = U' \* B \* V
 
 ## Fonction(s) utilisée(s)
 

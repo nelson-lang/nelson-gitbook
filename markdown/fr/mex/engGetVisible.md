@@ -5,7 +5,7 @@ Détermine la visibilité de la session du moteur Nelson
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- int engGetVisible(Engine *ep, bool *value);
+- int engGetVisible(Engine \*ep, bool \*value);
 
 ## 📥 Argument d'entrée
 

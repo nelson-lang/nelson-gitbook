@@ -4,7 +4,7 @@ Affectation de pôles pour une paire de matrices donnée (A,B).
 
 ## 📝 Syntaxe
 
-- [A_OUT, WR_OUT, WI_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
+- [A\_OUT, WR\_OUT, WI\_OUT, NFP, NAP, NUP, F, Z, IWARN, INFO] = slicot_sb01bd(DICO, ALPHA, A_IN, B_IN, WR_IN, WI_IN, TOL)
 
 ## 📥 Argument d'entrée
 
@@ -18,7 +18,7 @@ Affectation de pôles pour une paire de matrices donnée (A,B).
 
 ## 📤 Argument de sortie
 
-- A_OUT - La partie principale N×N de ce tableau contient la matrice Z'*(A+B*F)\*Z en forme de Schur réelle.
+- A_OUT - La partie principale N×N de ce tableau contient la matrice Z'\*(A+B\*F)\*Z en forme de Schur réelle.
 - WR_OUT - Si INFO = 0, les NAP premiers éléments de ces tableaux contiennent les parties réelles des valeurs propres assignées. Les NP - NAP éléments restants contiennent les valeurs propres non assignées.
 - WI_OUT - Si INFO = 0, les NAP premiers éléments de ces tableaux contiennent les parties imaginaires des valeurs propres assignées. Les NP - NAP éléments restants contiennent les valeurs propres non assignées.
 - NFP - Le nombre de valeurs propres de A ayant des parties réelles < ALPHA si DICO = 'C', ou des modules < ALPHA si DICO = 'D'. Ces valeurs propres ne sont pas modifiées par l'algorithme d'affectation.

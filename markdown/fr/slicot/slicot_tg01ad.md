@@ -4,7 +4,7 @@
 
 ## 📝 Syntaxe
 
-- [A_OUT, E_OUT, B_OUT, C_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
+- [A\_OUT, E\_OUT, B\_OUT, C\_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
 
 ## 📥 Argument d'entrée
 
@@ -17,8 +17,8 @@
 
 ## 📤 Argument de sortie
 
-- A_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl*A*Dr.
-- E_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl*E*Dr.
+- A_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl\*A\*Dr.
+- E_OUT - La partie principale L-by-N de ce tableau contient la matrice équilibrée Dl\*E\*Dr.
 - B_OUT - La partie principale L-by-M de ce tableau contient la matrice équilibrée Dl\*B.
 - C_OUT - La partie principale P-by-N de ce tableau contient la matrice équilibrée C\*Dr.
 - LSCALE - Les facteurs d'échelle appliqués à S par la gauche.

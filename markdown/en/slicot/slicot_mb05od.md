@@ -4,7 +4,7 @@ Matrix exponential for a real matrix, with accuracy estimate.
 
 ## 📝 Syntax
 
-- [A_OUT, MDIG, IDIG, IWARN, INFO] = slicot_mb05od(BALANC, NDIAG, DELTA, A_IN)
+- [A\_OUT, MDIG, IDIG, IWARN, INFO] = slicot_mb05od(BALANC, NDIAG, DELTA, A_IN)
 
 ## 📥 Input argument
 
@@ -23,7 +23,7 @@ Matrix exponential for a real matrix, with accuracy estimate.
 
 ## 📄 Description
 
-To compute exp(A*delta) where A is a real N-by-N matrix and delta is a scalar value. The routine also returns the minimal number of accurate digits in the 1-norm of exp(A*delta) and the number of accurate digits in the 1-norm of exp(A\*delta) at 95% confidence level.
+To compute exp(A\*delta) where A is a real N-by-N matrix and delta is a scalar value. The routine also returns the minimal number of accurate digits in the 1-norm of exp(A\*delta) and the number of accurate digits in the 1-norm of exp(A\*delta) at 95% confidence level.
 
 ## Used function(s)
 

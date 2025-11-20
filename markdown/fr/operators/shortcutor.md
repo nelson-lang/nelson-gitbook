@@ -1,10 +1,10 @@
 # shortcutor
 
-Opérateur OR à court-circuit, ||
+Opérateur OR à court-circuit, \|\|
 
 ## 📝 Syntaxe
 
-- C = A || B
+- C = A \|\| B
 
 ## 📥 Argument d'entrée
 
@@ -13,7 +13,7 @@ Opérateur OR à court-circuit, ||
 
 ## 📤 Argument de sortie
 
-- C - résultat de A || B
+- C - résultat de A \|\| B
 
 ## 📄 Description
 

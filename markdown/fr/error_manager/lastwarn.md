@@ -5,13 +5,13 @@ Renvoie le dernier message d'avertissement enregistré.
 ## 📝 Syntaxe
 
 - last_message = lastwarn()
-- [last_message, last_identifier] = lastwarn()
+- [last\_message, last\_identifier] = lastwarn()
 - lastwarn('')
 - lastwarn(new_message)
 - lastwarn(new_message, new_identifier)
-- [last_message, last_identifier] = lastwarn('')
-- [last_message, last_identifier] = lastwarn(new_message)
-- [last_message, last_identifier] = lastwarn(new_message, new_identifier)
+- [last\_message, last\_identifier] = lastwarn('')
+- [last\_message, last\_identifier] = lastwarn(new_message)
+- [last\_message, last\_identifier] = lastwarn(new_message, new_identifier)
 
 ## 📤 Argument de sortie
 

@@ -4,7 +4,7 @@ Conversion entre systèmes discrets et continus par transformation bilinéaire.
 
 ## 📝 Syntaxe
 
-- [A_OUT, B_OUT, C_OUT, D_OUT, INFO] = slicot_ab04md(TYPE, ALPHA, BETA, A_IN, B_IN, C_IN, D_IN)
+- [A\_OUT, B\_OUT, C\_OUT, D\_OUT, INFO] = slicot_ab04md(TYPE, ALPHA, BETA, A_IN, B_IN, C_IN, D_IN)
 
 ## 📥 Argument d'entrée
 
@@ -21,7 +21,7 @@ Conversion entre systèmes discrets et continus par transformation bilinéaire.
 - B_OUT - La partie N-by-M de ce tableau contient la matrice d'entrée \_B du système transformé.
 - C_OUT - La partie principale P-by-N de ce tableau contient la matrice de sortie \_C du système transformé.
 - D_OUT - La partie P-by-M de ce tableau contient la matrice d'entrée/sortie \_D du système transformé.
-- INFO - Indicateur d'erreur : 0 : sortie réussie ; < 0 : si INFO = -i, le i-ème argument avait une valeur illégale ; 1 : si la matrice (ALPHA*I + A) est exactement singulière ; 2 : si la matrice (BETA*I - A) est exactement singulière.
+- INFO - Indicateur d'erreur : 0 : sortie réussie ; < 0 : si INFO = -i, le i-ème argument avait une valeur illégale ; 1 : si la matrice (ALPHA\*I + A) est exactement singulière ; 2 : si la matrice (BETA\*I - A) est exactement singulière.
 
 ## 📄 Description
 

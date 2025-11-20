@@ -4,7 +4,7 @@ Balancing a general real matrix.
 
 ## 📝 Syntax
 
-- [MAXRED_OUT, A_OUT, SCALE, INFO] = slicot_mb04md(MAXRED_IN, A_IN)
+- [MAXRED\_OUT, A\_OUT, SCALE, INFO] = slicot_mb04md(MAXRED_IN, A_IN)
 
 ## 📥 Input argument
 

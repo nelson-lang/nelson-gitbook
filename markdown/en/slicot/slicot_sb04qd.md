@@ -4,7 +4,7 @@ Solution of discrete-time Sylvester equations (Hessenberg-Schur method).
 
 ## 📝 Syntax
 
-- [A_OUT, B_OUT, C_OUT, Z, INFO] = slicot_sb04qd(A_IN, B_IN, C_IN)
+- [A\_OUT, B\_OUT, C\_OUT, Z, INFO] = slicot_sb04qd(A_IN, B_IN, C_IN)
 
 ## 📥 Input argument
 

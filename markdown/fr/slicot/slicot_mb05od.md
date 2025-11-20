@@ -4,7 +4,7 @@ Exponentielle matricielle pour une matrice réelle, avec estimation de précisio
 
 ## 📝 Syntaxe
 
-- [A_OUT, MDIG, IDIG, IWARN, INFO] = slicot_mb05od(BALANC, NDIAG, DELTA, A_IN)
+- [A\_OUT, MDIG, IDIG, IWARN, INFO] = slicot_mb05od(BALANC, NDIAG, DELTA, A_IN)
 
 ## 📥 Argument d'entrée
 
@@ -23,7 +23,7 @@ Exponentielle matricielle pour une matrice réelle, avec estimation de précisio
 
 ## 📄 Description
 
-Calculer exp(A*delta) où A est une matrice réelle N-by-N et delta un scalaire. La routine renvoie aussi le nombre minimal de chiffres exacts dans la norme 1 de exp(A*delta) et le nombre de chiffres exacts au niveau de confiance 95%.
+Calculer exp(A\*delta) où A est une matrice réelle N-by-N et delta un scalaire. La routine renvoie aussi le nombre minimal de chiffres exacts dans la norme 1 de exp(A\*delta) et le nombre de chiffres exacts au niveau de confiance 95%.
 
 ## Fonction(s) utilisée(s)
 

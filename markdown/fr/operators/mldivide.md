@@ -1,11 +1,11 @@
 # mldivide
 
-Division matricielle gauche, opérateur \
+Division matricielle gauche, opérateur \\
 
 ## 📝 Syntaxe
 
 - C = mldivide(A, B)
-- C = A \ B
+- C = A \\ B
 
 ## 📥 Argument d'entrée
 
@@ -14,7 +14,7 @@ Division matricielle gauche, opérateur \
 
 ## 📤 Argument de sortie
 
-- C - résultat de A \ B
+- C - résultat de A \\ B
 
 ## 📄 Description
 

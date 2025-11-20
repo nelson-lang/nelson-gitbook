@@ -5,7 +5,7 @@ Démarre un processus Nelson
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- Engine *engOpen(const char *startcmd);
+- Engine \*engOpen(const char \*startcmd);
 
 ## 📥 Argument d'entrée
 

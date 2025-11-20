@@ -4,7 +4,7 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 
 ## 📝 Syntax
 
-- [A_OUT, B_OUT, U_OUT, V, NCONT_OUT, INDCON_OUT, KSTAIR_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
+- [A\_OUT, B\_OUT, U\_OUT, V, NCONT\_OUT, INDCON\_OUT, KSTAIR\_OUT, INFO] = slicot_ab01od(STAGES, JOBU, JOBV, A_IN, B_IN, U_IN, NCONT_IN, INDCON_IN, KSTAIR_IN, TOL)
 
 ## 📥 Input argument
 
@@ -20,8 +20,8 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 
 ## 📤 Output argument
 
-- A_OUT - On exit, the leading N-by-N part of this array contains the transformed state transition matrix U' _ A _ U. The leading NCONT-by-NCONT part contains the upper block Hessenberg state matrix Acont in Ac, given by U' _ A _ U, of a controllable realization for the original system. The elements below the first block-subdiagonal are set to zero. If STAGES ~='F', the subdiagonal blocks of A are triangularized by RQ factorization, and the annihilated elements are explicitly zeroed.
-- B_OUT - On exit with STAGES = 'F', the leading N-by-M part of this array contains the transformed input matrix U' _ B, with all elements but the first block set to zero. On exit with STAGES ~= 'F', the leading N-by-M part of this array contains the transformed input matrix U' _ B \* V, with all elements but the first block set to zero and the first block in upper triangular form.
+- A_OUT - On exit, the leading N-by-N part of this array contains the transformed state transition matrix U' \* A \* U. The leading NCONT-by-NCONT part contains the upper block Hessenberg state matrix Acont in Ac, given by U' \* A \* U, of a controllable realization for the original system. The elements below the first block-subdiagonal are set to zero. If STAGES ~='F', the subdiagonal blocks of A are triangularized by RQ factorization, and the annihilated elements are explicitly zeroed.
+- B_OUT - On exit with STAGES = 'F', the leading N-by-M part of this array contains the transformed input matrix U' \* B, with all elements but the first block set to zero. On exit with STAGES ~= 'F', the leading N-by-M part of this array contains the transformed input matrix U' \* B \* V, with all elements but the first block set to zero and the first block in upper triangular form.
 - U_OUT - if JOBU = 'I', the leading N-by-N part of this array contains the transformation matrix U that performed the specified reduction. If JOBU = 'N', the array U is not referenced and can be supplied as a dummy array.
 - V - If JOBV = 'I', then the leading M-by-M part of this array contains the transformation matrix V.
 - NCONT_OUT - NCONT_OUT is input only if STAGES = 'B'.
@@ -33,7 +33,7 @@ Staircase form for multi-input systems using orthogonal state and input transfor
 
 To reduce the matrices A and B using (and optionally accumulating) state-space and input-space transformations U and V respectively, such that the pair of matrices
 
-Ac = U' _ A _ U, Bc = U' _ B _ V
+Ac = U' \* A \* U, Bc = U' \* B \* V
 
 ## Used function(s)
 

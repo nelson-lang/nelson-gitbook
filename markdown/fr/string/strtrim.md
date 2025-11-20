@@ -18,7 +18,7 @@ Supprime les espaces en début et fin de chaîne.
 
 <b>strtrim</b> supprime les espaces en début et en fin de chaîne.
 
-<b>strtrim</b> ne supprime pas tous les espaces significatifs (seuls les caractères ' \t\n\r\f\v' sont supprimés).
+<b>strtrim</b> ne supprime pas tous les espaces significatifs (seuls les caractères ' \\t\\n\\r\\f\\v' sont supprimés).
 
 ## 💡 Exemples
 

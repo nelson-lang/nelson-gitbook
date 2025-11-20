@@ -5,7 +5,7 @@ Call a NELSON function and capture error.
 ## 📝 Syntax
 
 - #include "mex.h"
-- mxArray *mexCallMATLABWithTrap(int nlhs, mxArray *plhs[], int nrhs, mxArray *prhs[], const char *functionName);
+- mxArray \*mexCallMATLABWithTrap(int nlhs, mxArray \*plhs[], int nrhs, mxArray \*prhs[], const char \*functionName);
 
 ## 📥 Input argument
 

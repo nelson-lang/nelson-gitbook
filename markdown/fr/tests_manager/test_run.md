@@ -39,7 +39,7 @@ Exécute les tests
 
 ## 📄 Description
 
-<b>test_run</b> recherche les fichiers 'test\__.m', 'bug\__.m' et 'bench\_\*.m', les exécute et affiche un rapport sur les succès ou les échecs.
+<b>test_run</b> recherche les fichiers 'test\_\*.m', 'bug\_\*.m' et 'bench\_\*.m', les exécute et affiche un rapport sur les succès ou les échecs.
 
 Chaque test ou bench est exécuté dans un processus séparé en utilisant la commande 'unix'.
 

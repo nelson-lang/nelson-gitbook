@@ -21,7 +21,7 @@ Matrice sparse aléatoire à distribution uniforme.
 
 <b>R = sprand(S)</b> crée une matrice sparse qui a le même motif de sparsité que la matrice S, mais avec des entrées aléatoires distribuées uniformément.
 
-<b>R = sprand(m,n,density)</b> crée une matrice sparse aléatoire m-par-n avec approximativement density*m*n entrées non nulles distribuées uniformément pour une densité dans l'intervalle [0,1].
+<b>R = sprand(m,n,density)</b> crée une matrice sparse aléatoire m-par-n avec approximativement density\*m\*n entrées non nulles distribuées uniformément pour une densité dans l'intervalle [0,1].
 
 ## 💡 Exemples
 

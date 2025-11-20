@@ -9,11 +9,11 @@ Read Microsoft Excel spreadsheet file using COM.
 - numeric_data = COM_xlsread(filename, range)
 - numeric_data = COM_xlsread(filename, sheet, range)
 - numeric_data = COM_xlsread(filename, sheet, range)
-- [numeric_data, txt_data, raw_data] = COM_xlsread(filename)
-- [numeric_data, txt_data, raw_data] = COM_xlsread(filename, sheet)
-- [numeric_data, txt_data, raw_data] = COM_xlsread(filename, range)
-- [numeric_data, txt_data, raw_data] = COM_xlsread(filename, sheet, range)
-- [numeric_data, txt_data, raw_data] = COM_xlsread(filename, sheet, range)
+- [numeric\_data, txt\_data, raw\_data] = COM_xlsread(filename)
+- [numeric\_data, txt\_data, raw\_data] = COM_xlsread(filename, sheet)
+- [numeric\_data, txt\_data, raw\_data] = COM_xlsread(filename, range)
+- [numeric\_data, txt\_data, raw\_data] = COM_xlsread(filename, sheet, range)
+- [numeric\_data, txt\_data, raw\_data] = COM_xlsread(filename, sheet, range)
 
 ## 📥 Input argument
 

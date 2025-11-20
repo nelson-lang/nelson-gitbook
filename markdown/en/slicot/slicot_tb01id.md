@@ -4,7 +4,7 @@ Balancing a system matrix corresponding to a triplet (A, B, C).
 
 ## 📝 Syntax
 
-- [MAXRED_OUT, A_OUT, B_OUT, C_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
+- [MAXRED\_OUT, A\_OUT, B\_OUT, C\_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
 
 ## 📥 Input argument
 
@@ -17,7 +17,7 @@ Balancing a system matrix corresponding to a triplet (A, B, C).
 ## 📤 Output argument
 
 - MAXRED_OUT - if the 1-norm of the given matrix S is non-zero, the ratio between the 1-norm of the given matrix and the 1-norm of the balanced matrix.
-- A_OUT - The leading N-by-N part of this array contains the balanced matrix inv(D)*A*D.
+- A_OUT - The leading N-by-N part of this array contains the balanced matrix inv(D)\*A\*D.
 - B_OUT - The leading N-by-M part of this array contains the balanced matrix inv(D)\*B.
 - C_OUT - The leading P-by-N part of this array contains the balanced matrix C\*D.
 - SCALE - The scaling factors applied to S.

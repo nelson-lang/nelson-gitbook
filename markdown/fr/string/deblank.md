@@ -18,7 +18,7 @@ Supprime les espaces en fin de chaîne.
 
 <b>deblank</b> enlève les espaces en fin de chaîne.
 
-<b>deblank</b> ne supprime pas tous les espaces significatifs (seuls les caractères ' \t\n\r\f\v' sont supprimés).
+<b>deblank</b> ne supprime pas tous les espaces significatifs (seuls les caractères ' \\t\\n\\r\\f\\v' sont supprimés).
 
 ## 💡 Exemples
 

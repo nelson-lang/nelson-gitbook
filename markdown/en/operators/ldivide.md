@@ -1,11 +1,11 @@
 # ldivide
 
-Left division, .\ operator.
+Left division, .\\ operator.
 
 ## 📝 Syntax
 
 - C = ldivide(A, B)
-- C = A .\ B
+- C = A .\\ B
 
 ## 📥 Input argument
 
@@ -14,7 +14,7 @@ Left division, .\ operator.
 
 ## 📤 Output argument
 
-- C - result of A .\ B
+- C - result of A .\\ B
 
 ## 📄 Description
 

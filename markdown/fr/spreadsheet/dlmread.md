@@ -12,7 +12,7 @@ Lire une matrice numérique depuis un fichier texte utilisant un délimiteur.
 ## 📥 Argument d'entrée
 
 - filename - une chaîne : nom de fichier source.
-- delimiter - une chaîne : délimiteur ',' , '\t', ';'. par défaut ','
+- delimiter - une chaîne : délimiteur ',' , '\\t', ';'. par défaut ','
 - R1, C1 - entier non négatif : décalage. par défaut : 0, 0
 - [R1 C1 R2 C2] - entiers non négatifs : décalage de la ligne de départ, décalage de la colonne de départ, décalage de la ligne de fin et décalage de la colonne de fin.
 

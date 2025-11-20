@@ -39,7 +39,7 @@ Properties:
 
 <b>LineWidth</b> Line width: scalar positive value.
 
-<b>Marker</b> Marker symbol: 'o' (circle), '+' (Plus sign), '\*' (asterik), '.' (point), 'x' (cross), '\_' (horizontal line) , '|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '>' (Right-pointing triangle), '<' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default).
+<b>Marker</b> Marker symbol: 'o' (circle), '+' (Plus sign), '\*' (asterik), '.' (point), 'x' (cross), '\_' (horizontal line) , '\|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '>' (Right-pointing triangle), '<' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default).
 
 <b>MarkerEdgeColor</b> Marker outline color: RGB triplet.
 

@@ -12,7 +12,7 @@
 ## 📥 Argument d'entrée
 
 - A - matrice d'entrée (double ou simple précision)
-- tol - tolérance : scalaire ou max(rows, cols) _ eps(class(A)) _ norm(A, inf) (par défaut)
+- tol - tolérance : scalaire ou max(rows, cols) \* eps(class(A)) \* norm(A, inf) (par défaut)
 
 ## 📤 Argument de sortie
 

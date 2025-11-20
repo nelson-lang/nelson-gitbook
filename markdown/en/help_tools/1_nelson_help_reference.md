@@ -7,8 +7,8 @@ This document is the canonical authoring reference for help XML files used by Ne
 ## 📝 Syntax
 
 - `<xmldoc>` (root) — REQUIRED child: `<language>`
-- Header: `<title>`, `<language>`, `<module_name>`, `<chapter>`, `<short_description>`
-- Sections: `<syntax>`, `<param_input>`, `<param_output>`, `<description>`, `<examples>`, `<see_also>`, `<history>`, `<authors>`, `<bibliography>`
+- Header: `<title>`, `<language>`, `<module\_name>`, `<chapter>`, `<short\_description>`
+- Sections: `<syntax>`, `<param\_input>`, `<param\_output>`, `<description>`, `<examples>`, `<see\_also>`, `<history>`, `<authors>`, `<bibliography>`
 
 ## 📥 Input argument
 

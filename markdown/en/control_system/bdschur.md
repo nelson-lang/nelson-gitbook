@@ -15,7 +15,7 @@ Block-diagonal Schur factorization.
 ## 📤 Output argument
 
 - T - Transformation matrix.
-- B - B = T \ A \* T
+- B - B = T \\ A \* T
 
 ## 📄 Description
 

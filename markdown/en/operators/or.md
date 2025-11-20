@@ -1,11 +1,11 @@
 # or
 
-logical 'OR' operator, |
+logical 'OR' operator, \|
 
 ## 📝 Syntax
 
 - C = or(A, B)
-- C = A | B
+- C = A \| B
 
 ## 📥 Input argument
 
@@ -14,7 +14,7 @@ logical 'OR' operator, |
 
 ## 📤 Output argument
 
-- C - result of A | B
+- C - result of A \| B
 
 ## 📄 Description
 

@@ -5,7 +5,7 @@
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- int engEvalString(Engine *ep, const char *string);
+- int engEvalString(Engine \*ep, const char \*string);
 
 ## 📥 Argument d'entrée
 

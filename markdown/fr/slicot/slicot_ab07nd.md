@@ -4,7 +4,7 @@ Inverse d'un système linéaire donné.
 
 ## 📝 Syntaxe
 
-- [A_OUT, B_OUT, C_OUT, D_OUT, RCOND, INFO] = slicot_ab07nd(A_IN, B_IN, C_IN, D_IN)
+- [A\_OUT, B\_OUT, C\_OUT, D\_OUT, RCOND, INFO] = slicot_ab07nd(A_IN, B_IN, C_IN, D_IN)
 
 ## 📥 Argument d'entrée
 

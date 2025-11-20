@@ -5,7 +5,7 @@ Get Nelson builtin and macro list.
 ## 📝 Syntax
 
 - list_builtin = what()
-- [list_builtin, list_macro] = what()
+- [list\_builtin, list\_macro] = what()
 
 ## 📤 Output argument
 

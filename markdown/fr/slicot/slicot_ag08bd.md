@@ -4,7 +4,7 @@ Zéros et structure de Kronecker d'un pencil de système descripteur.
 
 ## 📝 Syntaxe
 
-- [A_OUT, E_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
+- [A\_OUT, E\_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
 
 ## 📥 Argument d'entrée
 

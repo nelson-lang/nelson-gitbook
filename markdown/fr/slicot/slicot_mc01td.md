@@ -4,7 +4,7 @@ Vérification de la stabilité d'un polynôme réel donné.
 
 ## 📝 Syntaxe
 
-- [DP_OUT, STABLE, NZ, IWARN, INFO] = slicot_mc01td(DICO, DP_IN, P)
+- [DP\_OUT, STABLE, NZ, IWARN, INFO] = slicot_mc01td(DICO, DP_IN, P)
 
 ## 📥 Argument d'entrée
 

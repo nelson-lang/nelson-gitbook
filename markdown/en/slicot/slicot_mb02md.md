@@ -4,7 +4,7 @@ Solution of Total Least-Squares problem using a SVD approach.
 
 ## 📝 Syntax
 
-- [RANK_OUT, C_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
+- [RANK\_OUT, C\_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
 
 ## 📥 Input argument
 
@@ -12,14 +12,14 @@ Solution of Total Least-Squares problem using a SVD approach.
 - M - The number of rows in the data matrix A and the observation matrix B.
 - N - The number of columns in the data matrix A.
 - L - The number of columns in the observation matrix B.
-- RANK_IN - if JOB = 'T' or JOB = 'N', then RANK must specify r, the rank of the TLS approximation [A + DA | B + DB].
+- RANK_IN - if JOB = 'T' or JOB = 'N', then RANK must specify r, the rank of the TLS approximation [A + DA \| B + DB].
 - C_IN - the leading M-by-(N+L) part of this array must contain the matrices A and B.
-- TOL - A tolerance used to determine the rank of the TLS approximation [A+DA|B+DB] and to check the multiplicity of the singular values of matrix C.
+- TOL - A tolerance used to determine the rank of the TLS approximation [A+DA\|B+DB] and to check the multiplicity of the singular values of matrix C.
 
 ## 📤 Output argument
 
-- RANK_OUT - if JOB = 'R' or JOB = 'B', and INFO = 0, then RANK contains the computed (effective) rank of the TLS approximation [A + DA | B + DB].
-- C_OUT - the leading (N+L)-by-(N+L) part of this array contains the (transformed) right singular vectors, including null space vectors, if any, of C = [A | B].
+- RANK_OUT - if JOB = 'R' or JOB = 'B', and INFO = 0, then RANK contains the computed (effective) rank of the TLS approximation [A + DA \| B + DB].
+- C_OUT - the leading (N+L)-by-(N+L) part of this array contains the (transformed) right singular vectors, including null space vectors, if any, of C = [A \| B].
 - S - If INFO = 0, the singular values of matrix C
 - X - If INFO = 0, the leading N-by-L part of this array contains the solution X to the TLS problem specified by A and B.
 - IWARN - = 0: no warnings; = 1: if the rank of matrix C has been lowered because a singular value of multiplicity greater than 1 was found; = 2: if the rank of matrix C has been lowered because the upper triangular matrix F is (numerically) singular.

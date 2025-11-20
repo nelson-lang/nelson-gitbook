@@ -1,11 +1,11 @@
 # or
 
-Opérateur logique 'OU', |
+Opérateur logique 'OU', \|
 
 ## 📝 Syntaxe
 
 - C = or(A, B)
-- C = A | B
+- C = A \| B
 
 ## 📥 Argument d'entrée
 
@@ -14,7 +14,7 @@ Opérateur logique 'OU', |
 
 ## 📤 Argument de sortie
 
-- C - résultat de A | B
+- C - résultat de A \| B
 
 ## 📄 Description
 

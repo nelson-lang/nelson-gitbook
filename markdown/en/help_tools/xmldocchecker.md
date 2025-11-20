@@ -6,7 +6,7 @@ Checks a xml documentation file.
 
 - xmldocchecker()
 - xmldocchecker(xmldocfilename)
-- [state, errors_detected, warnings_detected] = xmldocchecker(xmldocfilename)
+- [state, errors\_detected, warnings\_detected] = xmldocchecker(xmldocfilename)
 
 ## 📥 Input argument
 

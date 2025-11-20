@@ -4,7 +4,7 @@ Réduction d'une matrice en forme de Schur réelle vers une forme bloc-diagonale
 
 ## 📝 Syntaxe
 
-- [A_OUT, X_OUT, NBLCKS, BLSIZE, WR, WI, INFO] = slicot_mb03rd(JOBX, SORT, PMAX, A_IN, X_IN, TOL)
+- [A\_OUT, X\_OUT, NBLCKS, BLSIZE, WR, WI, INFO] = slicot_mb03rd(JOBX, SORT, PMAX, A_IN, X_IN, TOL)
 
 ## 📥 Argument d'entrée
 

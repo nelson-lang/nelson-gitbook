@@ -9,7 +9,7 @@ Vérifier la mise à jour de l'application Nelson
 - checkupdate('forcenogui', true_or_false)
 - checkupdate('url', http_url_to_check, 'forcenogui', true_or_false)
 - checkupdate('forcenogui', true_or_false)
-- [res, msg, url_new_version] = checkupdate(...)
+- [res, msg, url\_new\_version] = checkupdate(...)
 
 ## 📥 Argument d'entrée
 

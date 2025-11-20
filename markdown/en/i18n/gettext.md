@@ -5,7 +5,7 @@ Get text translated into the current locale.
 ## 📝 Syntax
 
 - translated_string = gettext(your_string)
-- translated*string = *(your_string))
+- translated_string = \_(your_string))
 
 ## 📥 Input argument
 

@@ -4,7 +4,7 @@ Solution of stable continuous- or discrete-time Lyapunov equations (Cholesky fac
 
 ## 📝 Syntax
 
-- [Q_OUT, B_OUT, SCALE, WR, WI, INFO] = slicot_sb03od(DICO, FACT, TRANS, A, Q_IN, B_IN)
+- [Q\_OUT, B\_OUT, SCALE, WR, WI, INFO] = slicot_sb03od(DICO, FACT, TRANS, A, Q_IN, B_IN)
 
 ## 📥 Input argument
 

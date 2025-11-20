@@ -5,7 +5,7 @@ Place une variable dans l'espace de travail du moteur Nelson
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- int engPutVariable(Engine *ep, const char *name, const mxArray \*pm);
+- int engPutVariable(Engine \*ep, const char \*name, const mxArray \*pm);
 
 ## 📥 Argument d'entrée
 

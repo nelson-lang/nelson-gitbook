@@ -1,10 +1,10 @@
 # shortcutor
 
-Short circuit 'OR' operator, ||
+Short circuit 'OR' operator, \|\|
 
 ## 📝 Syntax
 
-- C = A || B
+- C = A \|\| B
 
 ## 📥 Input argument
 
@@ -13,7 +13,7 @@ Short circuit 'OR' operator, ||
 
 ## 📤 Output argument
 
-- C - result of A || B
+- C - result of A \|\| B
 
 ## 📄 Description
 

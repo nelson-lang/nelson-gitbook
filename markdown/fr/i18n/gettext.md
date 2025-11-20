@@ -5,7 +5,7 @@ Obtient le texte traduit pour la locale courante.
 ## 📝 Syntaxe
 
 - translated_string = gettext(your_string)
-- translated*string = *(your_string))
+- translated_string = \_(your_string))
 
 ## 📥 Argument d'entrée
 

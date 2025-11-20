@@ -5,7 +5,7 @@ Start Nelson engine session for single and nonshared use.
 ## 📝 Syntax
 
 - #include "engine.h"
-- Engine *engOpenSingleUse(const char *startcmd, void *dcom, int *retstatus);
+- Engine \*engOpenSingleUse(const char \*startcmd, void \*dcom, int \*retstatus);
 
 ## 📥 Input argument
 

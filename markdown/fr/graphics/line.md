@@ -39,7 +39,7 @@ Propriétés :
 
 <b>LineWidth</b> Largeur de ligne : valeur scalaire positive.
 
-<b>Marker</b> Symbole de marqueur : 'o' (cercle), '+' (plus), '\*' (astérisque), '.' (point), 'x' (croix), '\_' (ligne horizontale), '|' (ligne verticale), 'square', 'diamond', '^' (triangle vers le haut), 'v' (triangle vers le bas), '>' (triangle vers la droite), '<' (triangle vers la gauche), 'pentagram', 'hexagram', 'none' (par défaut).
+<b>Marker</b> Symbole de marqueur : 'o' (cercle), '+' (plus), '\*' (astérisque), '.' (point), 'x' (croix), '\_' (ligne horizontale), '\|' (ligne verticale), 'square', 'diamond', '^' (triangle vers le haut), 'v' (triangle vers le bas), '>' (triangle vers la droite), '<' (triangle vers la gauche), 'pentagram', 'hexagram', 'none' (par défaut).
 
 <b>MarkerEdgeColor</b> Couleur du contour du marqueur : triplet RGB.
 

@@ -5,7 +5,7 @@ Put variable into Nelson engine workspace
 ## 📝 Syntax
 
 - #include "engine.h"
-- int engPutVariable(Engine *ep, const char *name, const mxArray \*pm);
+- int engPutVariable(Engine \*ep, const char \*name, const mxArray \*pm);
 
 ## 📥 Input argument
 

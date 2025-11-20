@@ -5,7 +5,7 @@ Démarre une session du moteur Nelson pour un usage unique et non partagé.
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- Engine *engOpenSingleUse(const char *startcmd, void *dcom, int *retstatus);
+- Engine \*engOpenSingleUse(const char \*startcmd, void \*dcom, int \*retstatus);
 
 ## 📥 Argument d'entrée
 

@@ -12,7 +12,7 @@ Read an numeric matrix from a text file file using a delimiter.
 ## 📥 Input argument
 
 - filename - a string: filename source.
-- delimiter - a string: ',' , '\t', ';' delimiter. default ','
+- delimiter - a string: ',' , '\\t', ';' delimiter. default ','
 - R1, C1 - nonnegative integer: offset. default : 0, 0
 - [R1 C1 R2 C2] - nonnegative integer: Starting row offset, starting column offset, ending row offset and ending column offset.
 

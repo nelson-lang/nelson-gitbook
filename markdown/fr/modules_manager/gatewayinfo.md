@@ -4,7 +4,7 @@ Retourne des informations sur une gateway.
 
 ## 📝 Syntaxe
 
-- [gateway_name, builtin_list] = gatewayinfo(dyn_lib_path)
+- [gateway\_name, builtin\_list] = gatewayinfo(dyn_lib_path)
 
 ## 📥 Argument d'entrée
 

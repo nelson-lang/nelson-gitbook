@@ -15,7 +15,7 @@ Factorisation de Schur en blocs diagonaux.
 ## 📤 Argument de sortie
 
 - T - Matrice de transformation.
-- B - Matrice diagonale par blocs obtenue par la transformation B = T \ A \* T.
+- B - Matrice diagonale par blocs obtenue par la transformation B = T \\ A \* T.
 
 ## 📄 Description
 

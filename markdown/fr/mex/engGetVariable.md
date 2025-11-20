@@ -5,7 +5,7 @@ Copie une variable depuis l'espace de travail du moteur Nelson
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- mxArray *engGetVariable(Engine *ep, const char \*name);
+- mxArray \*engGetVariable(Engine \*ep, const char \*name);
 
 ## 📥 Argument d'entrée
 

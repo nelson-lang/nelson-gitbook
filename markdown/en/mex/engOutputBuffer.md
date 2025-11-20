@@ -5,7 +5,7 @@ Specify char buffer for Nelson output
 ## 📝 Syntax
 
 - #include "engine.h"
-- int engOutputBuffer(Engine *ep, char *p, int n);
+- int engOutputBuffer(Engine \*ep, char \*p, int n);
 
 ## 📥 Input argument
 

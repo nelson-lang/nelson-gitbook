@@ -8,11 +8,11 @@ Return the file separator character for the current platform.
 
 ## 📤 Output argument
 
-- res - a string: '/' or '\'
+- res - a string: '/' or '\\'
 
 ## 📄 Description
 
-<b>pathsep</b> returns '\' on Windows and '/' on others platforms.
+<b>pathsep</b> returns '\\' on Windows and '/' on others platforms.
 
 ## 💡 Example
 

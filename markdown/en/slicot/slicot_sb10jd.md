@@ -4,7 +4,7 @@ Converting a descriptor state-space system into regular state-space form.
 
 ## 📝 Syntax
 
-- [A_OUT, B_OUT, C_OUT, D_OUT, E_OUT, NSYS, INFO] = slicot_sb10jd(A_IN, B_IN, C_IN, D_IN, E_IN)
+- [A\_OUT, B\_OUT, C\_OUT, D\_OUT, E\_OUT, NSYS, INFO] = slicot_sb10jd(A_IN, B_IN, C_IN, D_IN, E_IN)
 
 ## 📥 Input argument
 

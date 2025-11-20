@@ -16,7 +16,7 @@ Fonction factorielle
 
 ## 📄 Description
 
-<b>factorial</b> calcule la fonction factorielle : le produit des entiers 1 _ 2 _ ... \* M.
+<b>factorial</b> calcule la fonction factorielle : le produit des entiers 1 \* 2 \* ... \* M.
 
 ## 💡 Exemple
 

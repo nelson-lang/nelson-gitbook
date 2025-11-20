@@ -26,7 +26,7 @@ Propriétés :
 
 <b>Delimiter</b> : caractères délimiteurs de champ. exemple : {','}
 
-<b>LineEnding</b> : caractères de fin de ligne. exemple : {'\r\n'}
+<b>LineEnding</b> : caractères de fin de ligne. exemple : {'\\r\\n'}
 
 <b>CommentStyle</b> : style des commentaires. exemple : {'#'}
 

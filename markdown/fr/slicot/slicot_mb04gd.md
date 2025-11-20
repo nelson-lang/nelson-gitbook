@@ -4,7 +4,7 @@ Factorisation RQ avec pivotement de lignes d'une matrice.
 
 ## 📝 Syntaxe
 
-- [A_OUT, JPVT_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
+- [A\_OUT, JPVT\_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
 
 ## 📥 Argument d'entrée
 
@@ -20,7 +20,7 @@ Factorisation RQ avec pivotement de lignes d'une matrice.
 
 ## 📄 Description
 
-Calculer une factorisation RQ avec pivotement de lignes d'une matrice réelle m-by-n A : P _ A = R _ Q.
+Calculer une factorisation RQ avec pivotement de lignes d'une matrice réelle m-by-n A : P \* A = R \* Q.
 
 ## Fonction(s) utilisée(s)
 

@@ -4,7 +4,7 @@ Discrete-time / continuous-time systems conversion by a bilinear transformation.
 
 ## 📝 Syntax
 
-- [A_OUT, B_OUT, C_OUT, D_OUT, INFO] = slicot_ab04md(TYPE, ALPHA, BETA, A_IN, B_IN, C_IN, D_IN)
+- [A\_OUT, B\_OUT, C\_OUT, D\_OUT, INFO] = slicot_ab04md(TYPE, ALPHA, BETA, A_IN, B_IN, C_IN, D_IN)
 
 ## 📥 Input argument
 
@@ -21,7 +21,7 @@ Discrete-time / continuous-time systems conversion by a bilinear transformation.
 - B_OUT - N-by-M part of this array contains the input matrix \_B of the transformed system.
 - C_OUT - the leading P-by-N part of this array contains the output matrix \_C of the transformed system.
 - D_OUT - P-by-M part of this array contains the input/output matrix \_D of the transformed system.
-- INFO - Error Indicator: = 0: successful exit; less than 0: if INFO = -i, the i-th argument had an illegal value; = 1: if the matrix (ALPHA*I + A) is exactly singular; = 2: if the matrix (BETA*I - A) is exactly singular.
+- INFO - Error Indicator: = 0: successful exit; less than 0: if INFO = -i, the i-th argument had an illegal value; = 1: if the matrix (ALPHA\*I + A) is exactly singular; = 2: if the matrix (BETA\*I - A) is exactly singular.
 
 ## 📄 Description
 

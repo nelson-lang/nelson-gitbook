@@ -11,7 +11,7 @@ Return the version of Nelson.
 - ver_hash = version('-commit_hash')
 - ver_number = version('-number')
 - ver_release = version('-release')
-- [ver_str, ver_release] = version()
+- [ver\_str, ver\_release] = version()
 
 ## 📥 Input argument
 

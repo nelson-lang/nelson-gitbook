@@ -4,7 +4,7 @@
 
 ## 📝 Syntaxe
 
-- [MAXRED_OUT, A_OUT, B_OUT, C_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
+- [MAXRED\_OUT, A\_OUT, B\_OUT, C\_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
 
 ## 📥 Argument d'entrée
 
@@ -17,7 +17,7 @@
 ## 📤 Argument de sortie
 
 - MAXRED_OUT - si la norme 1 de la matrice donnée S est non nulle, le ratio entre la norme 1 de la matrice donnée et la norme 1 de la matrice équilibrée.
-- A_OUT - La partie principale N-by-N de ce tableau contient la matrice équilibrée inv(D)*A*D.
+- A_OUT - La partie principale N-by-N de ce tableau contient la matrice équilibrée inv(D)\*A\*D.
 - B_OUT - La partie principale N-by-M de ce tableau contient la matrice équilibrée inv(D)\*B.
 - C_OUT - La partie principale P-by-N de ce tableau contient la matrice équilibrée C\*D.
 - SCALE - Les facteurs d'échelle appliqués à S.

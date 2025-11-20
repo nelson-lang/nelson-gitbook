@@ -5,7 +5,7 @@ Obtient la liste des fonctions intégrées et macros de Nelson.
 ## 📝 Syntaxe
 
 - list_builtin = what()
-- [list_builtin, list_macro] = what()
+- [list\_builtin, list\_macro] = what()
 
 ## 📤 Argument de sortie
 

@@ -24,7 +24,7 @@ Returns file list.
 
 <b>dir</b> displays the list of files and folders in the current folder.
 
-- (wildcard) is supported in filename and path name.
+\* (wildcard) is supported in filename and path name.
 
 ## 💡 Example
 

@@ -4,14 +4,14 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 
 ## 📝 Syntax
 
-- [U_OUT, C_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
+- [U\_OUT, C\_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
 
 ## 📥 Input argument
 
 - DICO - Specifies the type of Lyapunov equation to be solved as follows: = 'C': continuous-time case; 'D': discrete-time case.
 - JOB - Specifies the computation to be performed: 'X': Compute the solution only;= 'S': Compute the separation only; = 'B': Compute both the solution and the separation.
 - FACT - Specifies whether or not the real Schur factorization of the matrix A is supplied on entry. = 'F': On entry, A and Q contain the factors from the real Schur factorization of the matrix A; = 'N': The Schur factorization of A will be computed and the factors will be stored in A and Q.
-- TRANA - Specifies the form of op(A) to be used: = 'N': op(A) = A (No transpose); = 'T': op(A) = A**T (Transpose); = 'C': op(A) = A**T (Conjugate transpose = Transpose).
+- TRANA - Specifies the form of op(A) to be used: = 'N': op(A) = A (No transpose); = 'T': op(A) = A\*\*T (Transpose); = 'C': op(A) = A\*\*T (Conjugate transpose = Transpose).
 - A - the leading N-by-N part of this array must contain the matrix A. If FACT = 'F', then A contains an upper quasi-triangular matrix in Schur canonical form; the elements below the upper Hessenberg part of the array A are not referenced.
 - U_IN - If FACT = 'N', zeros(N, N); If FACT = 'F', then U is an input argument and on entry the leading N-by-N part of this array must contain the orthogonal matrix U of the real Schur factorization of A.
 - C_IN - With JOB = 'X' or 'B', the leading N-by-N part of this array must contain the symmetric matrix C.
@@ -31,11 +31,11 @@ Solution of continuous- or discrete-time Lyapunov equations and separation estim
 
 To solve for X either the real continuous-time Lyapunov equation
 
-op(A)'*X + X*op(A) = scale\*C
+op(A)'\*X + X\*op(A) = scale\*C
 
 or the real discrete-time Lyapunov equation
 
-op(A)'*X*op(A) - X = scale\*C
+op(A)'\*X\*op(A) - X = scale\*C
 
 and/or estimate an associated condition number, called separation, where op(A) = A or A' (A\*\*T) and C is symmetric (C = C').
 

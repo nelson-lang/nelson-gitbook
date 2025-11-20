@@ -5,7 +5,7 @@ Evaluate expression in string in base scope
 ## 📝 Syntax
 
 - #include "engine.h"
-- int engEvalString(Engine *ep, const char *string);
+- int engEvalString(Engine \*ep, const char \*string);
 
 ## 📥 Input argument
 

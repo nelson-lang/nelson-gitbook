@@ -5,7 +5,7 @@ Spécifie le tampon de caractères pour la sortie de Nelson
 ## 📝 Syntaxe
 
 - #include "engine.h"
-- int engOutputBuffer(Engine *ep, char *p, int n);
+- int engOutputBuffer(Engine \*ep, char \*p, int n);
 
 ## 📥 Argument d'entrée
 

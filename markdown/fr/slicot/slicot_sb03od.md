@@ -4,7 +4,7 @@ Résolution des équations de Lyapunov stables temps continu ou discret (facteur
 
 ## 📝 Syntaxe
 
-- [Q_OUT, B_OUT, SCALE, WR, WI, INFO] = slicot_sb03od(DICO, FACT, TRANS, A, Q_IN, B_IN)
+- [Q\_OUT, B\_OUT, SCALE, WR, WI, INFO] = slicot_sb03od(DICO, FACT, TRANS, A, Q_IN, B_IN)
 
 ## 📥 Argument d'entrée
 

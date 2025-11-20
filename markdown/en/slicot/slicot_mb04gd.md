@@ -4,7 +4,7 @@ RQ factorization with row pivoting of a matrix.
 
 ## 📝 Syntax
 
-- [A_OUT, JPVT_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
+- [A\_OUT, JPVT\_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
 
 ## 📥 Input argument
 
@@ -20,7 +20,7 @@ RQ factorization with row pivoting of a matrix.
 
 ## 📄 Description
 
-To compute an RQ factorization with row pivoting of a real m-by-n matrix A: P _ A = R _ Q.
+To compute an RQ factorization with row pivoting of a real m-by-n matrix A: P \* A = R \* Q.
 
 ## Used function(s)
 

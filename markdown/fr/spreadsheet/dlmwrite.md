@@ -19,7 +19,7 @@
 
 - filename - une chaîne : nom de fichier de destination.
 - M - une matrice numérique ou logique.
-- delimiter - une chaîne : délimiteur ',' , '\t', ';'. par défaut ','
+- delimiter - une chaîne : délimiteur ',' , '\\t', ';'. par défaut ','
 - r, c - entier : décalage. par défaut : 0, 0
 - eol - a string: 'pc' ou 'unix'.
 - precision - un entier ou une chaîne de format C. (par défaut : 5)
