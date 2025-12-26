@@ -1,50 +1,56 @@
 # Nelson GitBook 📚
 
-Welcome to the Nelson GitBook repository! This project contains the documentation for the Nelson programming language.
-
-## Table of Contents 📑
-
-- [Introduction](#introduction)
-- [Prerequisites](#Prerequisites)
-- [Installation](#installation)
-- [License](#license)
+Welcome to the Nelson GitBook repository! This project hosts the official documentation for the Nelson programming language.
 
 ## Introduction 🌟
 
-Nelson is a powerful and easy-to-use programming language designed for simplicity and efficiency. This GitBook provides comprehensive documentation to help you get started and make the most of Nelson.
+Nelson is a powerful, user-friendly programming language focused on simplicity and efficiency. This GitBook provides comprehensive documentation, tutorials, and references to help you get started and master Nelson.
 
 ## Prerequisites 🛠️
 
-- [rust](https://www.rust-lang.org/tools/install) (mdbook)
+Before you begin, ensure you have the following installed:
 
-```bash
-cargo install mdbook --version 0.4.47
-```
+- [Node.js](https://nodejs.org/) (for Prettier)
+- [Nelson](https://nelson-lang.github.io/) (any version you wish to document)
 
-- node (prettier)
+To set up your environment:
 
 ```bash
 nvm use .
 npm install
 ```
 
-- Nelson (version that you want to add help files)
-
 ## Installation ⚙️
 
-`update_help` will extract all help files, convert them to markdown, prettify, and convert them to HTML.
+To generate and update the documentation:
 
-```matlab
-% from nelson-gitbook root directory
-run('./scripts/update_help.m);
-```
+1. Run the update script from the root directory to extract all help files, convert them to Markdown, prettify, and generate HTML:
 
-Commit modified files and check results: <https://nelson-lang.github.io/nelson-gitbook/>
+   ```matlab
+   % From nelson-gitbook root directory
+   run('./scripts/update_help.m');
+   ```
+
+2. Review and commit the modified files.
+
+3. Check the published documentation at: [https://nelson-lang.github.io/nelson-gitbook/](https://nelson-lang.github.io/nelson-gitbook/)
+
+## Usage 🚀
+
+- Browse the documentation online or locally.
+- To contribute or update help files, edit the relevant source files and rerun the update script.
+
+## Contributing 🤝
+
+Contributions are welcome! Please open issues or submit pull requests for improvements, corrections, or new content.
 
 ## License 📜
 
-This project is licensed under same license than Nelson. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the same license as Nelson. See the [LICENSE](LICENSE) file for details.
+
+## Contact 📧
+
+Maintainer: Allan CORNET  
+Email: <nelson.numerical.computation@gmail.com>
 
 Happy coding with Nelson! 🎉
-
-Contact: Allan CORNET (<nelson.numerical.computation@gmail.com>)
