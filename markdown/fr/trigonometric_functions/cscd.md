@@ -16,7 +16,7 @@ Cosécante de l'argument en degrés.
 
 ## 📄 Description
 
-<b>cscd</b> calcule la cosécante de l'argument en degrés pour chaque élément de<b>x</b>.
+<b>cscd</b> calcule la cosécante de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

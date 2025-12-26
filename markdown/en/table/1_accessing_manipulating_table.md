@@ -34,7 +34,7 @@ see examples: <b>Vertical Concatenation</b>
 
 <b>Convert variable types</b>
 
-You can convert table variables by using the<b>VariableTypes</b> property.
+You can convert table variables by using the <b>VariableTypes</b> property.
 
 see examples: <b>VariableTypes</b> example
 

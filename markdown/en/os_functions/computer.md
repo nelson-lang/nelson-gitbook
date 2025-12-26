@@ -15,10 +15,10 @@ System information.
 
 ## 📤 Output argument
 
-- c - a string: computer type: 'PCWIN', 'PCWIN64', 'GLNXA64', 'GLNXA32', 'MACI32', 'MACI64'
+- c - a string: computer type: 'PCWIN', 'PCWIN64', 'PCWOA64', 'GLNXA64', 'GLNXA32', 'MACI32', 'MACI64'
 - maxsize - a integer value: maximum number of elements allowed in an array.
 - endian - a string: 'L' for little-endian, 'B' for big-endian.
-- arch - a string: architecture type: 'win64', 'win32', 'glnxa64', 'glnxa32', 'maci64', 'maci32'.
+- arch - a string: architecture type: 'woa64', 'win64', 'win32', 'glnxa64', 'glnxa32', 'maci64', 'maci32'.
 
 ## 📄 Description
 
@@ -39,9 +39,10 @@ arch = computer('arch')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description          |
+| ------- | ----------------------- |
+| 1.0.0   | initial version         |
+| 1.16.0  | PCWOA64 and woa64 added |
 
 <!--
 ## 👤 Author

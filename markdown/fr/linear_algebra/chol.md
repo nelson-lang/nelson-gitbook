@@ -16,7 +16,7 @@ Factorisation de Cholesky.
 
 ## 📄 Description
 
-<b>F = chol(A)</b> factorise la matrice symétrique définie positive<b>A</b> en une matrice triangulaire supérieure <b>F</b> telle que<b>A = F' \* F</b>.
+<b>F = chol(A)</b> factorise la matrice symétrique définie positive <b>A</b> en une matrice triangulaire supérieure <b>F</b> telle que <b>A = F' \* F</b>.
 
 ## 💡 Exemple
 

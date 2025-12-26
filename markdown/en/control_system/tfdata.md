@@ -21,9 +21,9 @@ Access transfer function model data.
 
 ## 📄 Description
 
-The function <b>tfdata(sys)</b> retrieves the matrix data<b>numerator</b>,<b>denominator</b> from the transfer function model (LTI array) represented by<b>sys</b>.
+The function <b>tfdata(sys)</b> retrieves the matrix data <b>numerator</b>,<b>denominator</b> from the transfer function model (LTI array) represented by <b>sys</b>.
 
-If<b>sys</b> is initially in the form of a state-space model (LTI array), it is automatically converted to the transfer function representation before extracting the matrix data.
+If <b>sys</b> is initially in the form of a state-space model (LTI array), it is automatically converted to the transfer function representation before extracting the matrix data.
 
 ## 💡 Example
 

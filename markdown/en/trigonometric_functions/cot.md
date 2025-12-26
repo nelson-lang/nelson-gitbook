@@ -16,7 +16,7 @@ Cotangent of angle in radians
 
 ## 📄 Description
 
-<b>acot</b> computes the cotangent of angle for each element of<b>x</b>.
+<b>acot</b> computes the cotangent of angle for each element of <b>x</b>.
 
 ## 💡 Example
 

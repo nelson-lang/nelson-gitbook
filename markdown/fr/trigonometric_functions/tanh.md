@@ -16,7 +16,7 @@ Calcule la tangente hyperbolique en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>tanh</b> calcule la tangente hyperbolique en radians pour chaque élément de<b>x</b>.
+<b>tanh</b> calcule la tangente hyperbolique en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

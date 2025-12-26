@@ -28,7 +28,7 @@ Créer des formes 2D remplies.
 
 <b>fill(..., PropertyName, PropertyValue, ...)</b> définit des propriétés optionnelles pour l'objet fill/patch à l'aide de paires nom-valeur.
 
-<b>go = fill(...)</b> retourne le handle<b>go</b> de l'objet patch créé.
+<b>go = fill(...)</b> retourne le handle <b>go</b> de l'objet patch créé.
 
 Paires Nom-Valeur de propriétés :
 

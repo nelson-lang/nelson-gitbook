@@ -9,7 +9,7 @@ boucle for.
 
 ## 📄 Description
 
-La boucle<b>for</b> exécute un ensemble d'instructions avec une variable d'indice parcourant chaque élément d'un vecteur.
+La boucle <b>for</b> exécute un ensemble d'instructions avec une variable d'indice parcourant chaque élément d'un vecteur.
 
 <b>parfor</b> est actuellement un alias du mot-clé <b>for</b>.
 

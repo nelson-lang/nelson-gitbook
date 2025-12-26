@@ -38,7 +38,7 @@ Propriétés :
 
 <b>RowNamesColumn</b> : emplacement des noms de ligne. exemple : 0
 
-<b>DataLines</b> : emplacement des données,<b>[l1 l2]</b> indique la plage de lignes contenant les données.<b>l1</b> fait référence à la première ligne avec données, tandis que<b>l2</b> fait référence à la dernière ligne. exemple : [2 Inf]
+<b>DataLines</b> : emplacement des données,<b>[l1 l2]</b> indique la plage de lignes contenant les données.<b>l1</b> fait référence à la première ligne avec données, tandis que <b>l2</b> fait référence à la dernière ligne. exemple : [2 Inf]
 
 ## 💡 Exemple
 

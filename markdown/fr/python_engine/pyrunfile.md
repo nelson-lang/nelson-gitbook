@@ -26,7 +26,7 @@ Exécuter un fichier Python depuis Nelson.
 
 Contrairement à la fonction <b>pyrun</b>, les variables générées dans l'espace Python par<b>pyrunfile</b> ne persistent pas. Ainsi, les appels suivants à<b>pyrunfile</b> ne pourront pas accéder à ces variables.
 
-Le code<b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée.
+Le code <b>outvars = pyrunfile(file, outputs, pyName1, pyValue2, ..., pyNameN, pyValueN)</b> exécute le code avec une ou plusieurs paires nom-valeur en entrée.
 
 Limitation connue :
 

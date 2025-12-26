@@ -26,11 +26,11 @@ Conditions initiales et configurations de simulation.
 
 ## 📄 Description
 
-<b>[y, tOut] = initial(sys, x0)</b> calcule la réponse initiale non forcée (y) du système dynamique<b>sys</b> à partir de l'état initial spécifié <b>x0</b>.
+<b>[y, tOut] = initial(sys, x0)</b> calcule la réponse initiale non forcée (y) du système dynamique <b>sys</b> à partir de l'état initial spécifié <b>x0</b>.
 
 Le vecteur temps <b>tOut</b> est fourni dans les unités de temps de <b>sys</b>, et la fonction initial s'adapte automatiquement les pas de temps et la durée de la simulation en fonction de la dynamique du système.
 
-Lorsque vous utilisez<b>[y, tOut] = initial(sys, x0, tFinal)</b>, la fonction simule la réponse de t = 0 à l'heure finale t = tFinal.
+Lorsque vous utilisez <b>[y, tOut] = initial(sys, x0, tFinal)</b>, la fonction simule la réponse de t = 0 à l'heure finale t = tFinal.
 
 De même, <b>[y, tOut] = initial(sys, x0, [t0, tFinal])</b> simule la réponse de t0 à tFinal.
 

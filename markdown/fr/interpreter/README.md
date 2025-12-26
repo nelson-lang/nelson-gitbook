@@ -25,6 +25,7 @@ Ensemble, ces fonctionnalités établissent la syntaxe et la sémantique fondame
 - [max_recursion_depth](max_recursion_depth.md) - Limite interne du nombre de fois qu'une fonction peut être appelée récursivement.
 - [nom=valeur](name_value_syntax.md) - Nom=valeur syntaxe pour les arguments nom=valeur.
 - [numeric types](numeric_types.md) - À propos des types entiers et à virgule flottante.
+- [onCleanup](onCleanup.md) - Tâches de nettoyage à la fin de l'exécution d'une fonction
 - [parsefile](parsefile.md) - Analyser un fichier Nelson.
 - [parsestring](parsestring.md) - Analyser une chaîne.
 - [switch](switch.md) - instruction switch.

@@ -20,7 +20,7 @@ Check if dictionary contains key
 
 If <b>d</b> is an unconfigured dictionary,<b>isKey</b> throws an error.
 
-If<b>key</b> is an array of multiple keys, then tf is a logical array of the same size.
+If <b>key</b> is an array of multiple keys, then tf is a logical array of the same size.
 
 ## 💡 Example
 

@@ -14,7 +14,7 @@ Afficher des informations sur une variable ou le résultat d'une expression.
 
 ## 📄 Description
 
-<b>display(V)</b> affiche des informations sur la variable<b>V</b>.
+<b>display(V)</b> affiche des informations sur la variable <b>V</b>.
 
 Nelson appelle la fonction<b>display</b> chaque fois qu'un objet est référencé dans une instruction non terminée par un point-virgule.
 

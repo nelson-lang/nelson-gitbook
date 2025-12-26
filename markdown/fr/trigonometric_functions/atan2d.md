@@ -17,7 +17,7 @@ Tangente inverse à quatre quadrants en degrés.
 
 ## 📄 Description
 
-<b>d = atan2d(y, x)</b> retourne la tangente inverse à quatre quadrants (tan-1) de<b>y</b> et <b>x</b>, qui doivent être réels.
+<b>d = atan2d(y, x)</b> retourne la tangente inverse à quatre quadrants (tan-1) de <b>y</b> et <b>x</b>, qui doivent être réels.
 
 ## 💡 Exemple
 

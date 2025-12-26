@@ -24,7 +24,7 @@ Le signe <b>@</b> est l'opérateur qui construit un handle de fonction (function
 
 La création d'un function handle pour une fonction anonyme permet d'appeler la fonction et est utile pour transmettre la fonction anonyme en argument à une autre fonction.
 
-Le signe<b>@</b> est requis dans la définition d'une fonction anonyme.
+Le signe <b>@</b> est requis dans la définition d'une fonction anonyme.
 
 Les function handles s'appliquent non seulement aux fonctions anonymes mais aussi à n'importe quelle fonction.
 

@@ -8,7 +8,7 @@ boucle while.
 
 ## 📄 Description
 
-La boucle<b>while</b> exécute un ensemble d'instructions tant que la condition de test reste <b>true</b>.
+La boucle <b>while</b> exécute un ensemble d'instructions tant que la condition de test reste <b>true</b>.
 
 ## 💡 Exemple
 

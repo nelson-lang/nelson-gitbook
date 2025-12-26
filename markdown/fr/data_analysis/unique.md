@@ -20,7 +20,7 @@ Valeurs uniques.
 
 ## 📄 Description
 
-<b>C = unique(A)</b> renvoie les éléments uniques du tableau<b>A</b> dans l'ordre trié.
+<b>C = unique(A)</b> renvoie les éléments uniques du tableau <b>A</b> dans l'ordre trié.
 
 <b>C = unique(A, 'rows')</b> considère chaque ligne de <b>A</b> comme une entité unique et renvoie les lignes uniques dans l'ordre trié.
 
@@ -32,7 +32,7 @@ Pour un vecteur <b>A</b>, les relations sont <b>C = A(ia)</b> et <b>A = C(ic)</b
 
 Pour une matrice ou un tableau <b>A</b>, les relations sont <b>C = A(ia)</b> et <b>A(:) = C(ic)</b>.
 
-Si l'option 'rows' est utilisée, les relations sont<b>C = A(ia, :)</b> et <b>A = C(ic, :)</b>.
+Si l'option 'rows' est utilisée, les relations sont <b>C = A(ia, :)</b> et <b>A = C(ic, :)</b>.
 
 ## Fonction(s) utilisée(s)
 

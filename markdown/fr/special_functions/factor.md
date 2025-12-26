@@ -16,7 +16,7 @@ Facteurs premiers
 
 ## 📄 Description
 
-<b>f = factor(n)</b> retourne un vecteur ligne avec les facteurs premiers de<b>n</b>.
+<b>f = factor(n)</b> retourne un vecteur ligne avec les facteurs premiers de <b>n</b>.
 
 Le vecteur <b>f</b> est du même type de données que <b>n</b>.
 

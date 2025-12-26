@@ -26,13 +26,13 @@ Generate commonly used test matrices and data for numerical experiments
 - A1,A2,...,Am - one or more matrices or arrays produced by the chosen family
 - A - single matrix or multidimensional array when one output is requested
 - v,beta,s - Householder outputs:<code>v</code>(vector),<code>beta</code>(scalar), and optional<code>s</code>returned by <b>house</b>
-- beta - determinant or scalar output for families that return it explicitly (for example<b>ipjfact</b> returns determinant<code>beta</code>)
+- beta - determinant or scalar output for families that return it explicitly (for example <b>ipjfact</b> returns determinant<code>beta</code>)
 
 ## 📄 Description
 
-The<b>gallery</b> function returns a collection of standard test matrices and generated data used to illustrate numerical linear algebra concepts, test algorithms, and reproduce textbook examples.
+The <b>gallery</b> function returns a collection of standard test matrices and generated data used to illustrate numerical linear algebra concepts, test algorithms, and reproduce textbook examples.
 
-Use the<b>matrixname</b> argument to select a family; additional parameters (sizes, vectors, options) depend on the chosen family.
+Use the <b>matrixname</b> argument to select a family; additional parameters (sizes, vectors, options) depend on the chosen family.
 
 Typical uses: study eigenvalue sensitivity and conditioning, exercise solvers with structured matrices (Toeplitz, Hankel, circulant), generate random or specially structured matrices with prescribed singular/eigenvalue properties, or obtain canonical examples for teaching and tests.
 

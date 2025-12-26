@@ -16,7 +16,7 @@ Calcule le cosinus inverse en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>acos</b> calcule le cosinus inverse en radians pour chaque élément de<b>x</b>.
+<b>acos</b> calcule le cosinus inverse en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

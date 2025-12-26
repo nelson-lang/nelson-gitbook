@@ -20,7 +20,7 @@ Ajouter des entrées à un dictionnaire.
 
 ## 📄 Description
 
-<b>db = insert(da, key, value)</b> ajoute la paire clé-valeur au dictionnaire<b>da</b>.
+<b>db = insert(da, key, value)</b> ajoute la paire clé-valeur au dictionnaire <b>da</b>.
 
 Si la clé existe déjà, sa valeur est mise à jour.
 

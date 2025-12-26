@@ -8,7 +8,7 @@ continuer l'exécution dans une boucle.
 
 ## 📄 Description
 
-L'instruction<b>continue</b> peut être utilisée à l'intérieur d'une boucle<b>for</b> ou <b>while</b>.
+L'instruction<b>continue</b> peut être utilisée à l'intérieur d'une boucle <b>for</b> ou <b>while</b>.
 
 L'instruction <b>continue</b> est utilisée pour transférer le contrôle à l'itération suivante d'une boucle.
 

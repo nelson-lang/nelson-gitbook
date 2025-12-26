@@ -14,6 +14,7 @@
   - [max_recursion_depth](max_recursion_depth.md)
   - [name=value](name_value_syntax.md)
   - [numeric types](numeric_types.md)
+  - [onCleanup](onCleanup.md)
   - [parsefile](parsefile.md)
   - [parsestring](parsestring.md)
   - [switch](switch.md)

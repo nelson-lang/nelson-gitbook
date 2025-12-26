@@ -18,7 +18,7 @@ Change default environment of Julia interpreter.
 
 ## 📄 Description
 
-Use<b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.
+Use <b>jlenv</b> to modify the default version or execution mode of the Julia interpreter, ensuring these adjustments persist across various Nelson sessions.
 
 The value set by<b>jlenv</b> is persistent across Nelson sessions.
 

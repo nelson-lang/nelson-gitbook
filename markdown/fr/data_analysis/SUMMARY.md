@@ -8,6 +8,7 @@
   - [max](max.md)
   - [min](min.md)
   - [prod](prod.md)
+  - [rms](rms.md)
   - [sort](sort.md)
   - [subspace](subspace.md)
   - [sum](sum.md)

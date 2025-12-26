@@ -16,7 +16,7 @@ Sécante inverse de l'argument en degrés.
 
 ## 📄 Description
 
-<b>asecd</b> calcule la sécante inverse de l'argument en degrés pour chaque élément de<b>x</b>.
+<b>asecd</b> calcule la sécante inverse de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

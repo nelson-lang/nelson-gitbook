@@ -21,7 +21,7 @@ Loads a C/Fortran symbol for an dynamic library.
 
 <b>dlsym</b> retrieves the address of an exported function as an dlsym handle.
 
-if<b>symbolname</b> not found, nelson try to find symbol equivalent based on these rules and in this order:
+if <b>symbolname</b> not found, nelson try to find symbol equivalent based on these rules and in this order:
 
 <b>\_symbolname</b>
 

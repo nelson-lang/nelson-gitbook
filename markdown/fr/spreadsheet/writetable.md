@@ -15,7 +15,7 @@
 
 ## 📄 Description
 
-<b>writetable(T)</b> écrit la table<b>T</b> dans un fichier texte délimité par des virgules.
+<b>writetable(T)</b> écrit la table <b>T</b> dans un fichier texte délimité par des virgules.
 
 Le nom de fichier est dérivé du nom de la variable de la table dans l'espace de travail, avec l'extension<code>.txt</code>ajoutée.
 
@@ -24,14 +24,14 @@ Si le nom de fichier ne peut pas être dérivé du nom de la table, le nom de fi
 Formats de sortie pris en charge :
 
 - <b>Text files:</b> Each variable in<b>T</b> becomes a column, and variable names serve as column headers in the first line.
-- <b>Fichiers XML :</b> chaque variable de<b>T</b> devient un nœud XML, les noms de variables servant de noms d'éléments.
+- <b>Fichiers XML :</b> chaque variable de <b>T</b> devient un nœud XML, les noms de variables servant de noms d'éléments.
 
 Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filename)</b>. Le format de fichier est déterminé par l'extension :
 
 - <b>.txt</b>, <b>.dat</b>,<b>.csv</b> : fichiers texte délimités.
 - <b>.xml</b> : fichiers XML.
 
-<b>Additional options:</b> Use<b>writetable(..., Name, Value)</b> for customization:
+<b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
 
 - <b>WriteRowNames :</b> inclure les noms de ligne dans le fichier de sortie (par défaut :<code>false</code>).
 - <b>FileType :</b> spécifier le format de fichier (<code>'text'</code>ou<code>'xml'</code>).
@@ -45,7 +45,7 @@ Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filena
 
 ## 💡 Exemple
 
-Examples demonstrating various usages ofwritetable.
+Examples demonstrating various usages of writetable.
 
 ```matlab
 T = table([1; 2; 3], {'A'; 'B'; 'C'}, [10.5; 20.7; 30.2], 'VariableNames', {'ID', 'Name', 'Value'});

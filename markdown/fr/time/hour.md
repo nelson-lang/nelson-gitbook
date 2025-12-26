@@ -20,7 +20,7 @@ Composante heures de la date et de l'heure d'entrée.
 
 <b>h = hour(t)</b> extrait la composante heures de chaque date et heure spécifiées dans<b>t</b>.
 
-La sortie<b>h</b> est un tableau de double contenant des valeurs entières comprises entre 0 et 23.
+La sortie <b>h</b> est un tableau de double contenant des valeurs entières comprises entre 0 et 23.
 
 ## 💡 Exemple
 

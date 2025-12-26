@@ -16,7 +16,7 @@ Flip order of elements left to right
 
 ## 📄 Description
 
-<b>fliplr</b> return an new array of<b>A</b> flipped left to right.
+<b>fliplr</b> return an new array of <b>A</b> flipped left to right.
 
 ## 💡 Example
 

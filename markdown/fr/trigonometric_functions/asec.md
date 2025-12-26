@@ -16,7 +16,7 @@ Sécante inverse d'un angle en radians.
 
 ## 📄 Description
 
-<b>asec</b> calcule la sécante inverse de l'argument en radians pour chaque élément de<b>x</b>.
+<b>asec</b> calcule la sécante inverse de l'argument en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

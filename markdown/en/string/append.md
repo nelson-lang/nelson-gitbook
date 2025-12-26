@@ -20,7 +20,7 @@ combines strings horizontally.
 
 If all inputs are character arrays, then<b>res</b> is a character array.
 
-If any input is a string array, then the<b>res</b> is a string array.
+If any input is a string array, then the <b>res</b> is a string array.
 
 If any input is a cell array, and none are string arrays, then<b>res</b> is a cell array of character vectors.
 

@@ -17,13 +17,13 @@ Convertir une table en tableau de structures
 
 ## 📄 Description
 
-<b>S = table2struct(T)</b> convertit la table<b>T</b> en un tableau de structures <b>S</b>, où chaque variable de<b>T</b> est représentée comme un champ dans <b>S</b>.
+<b>S = table2struct(T)</b> convertit la table <b>T</b> en un tableau de structures <b>S</b>, où chaque variable de <b>T</b> est représentée comme un champ dans <b>S</b>.
 
 Si <b>T</b> est une table m-by-n,<b>S</b> sera un tableau de structures m-by-1 avec n champs.
 
-La sortie<b>S</b> ne contiendra pas les propriétés de table provenant de<b>T.Properties</b>.
+La sortie <b>S</b> ne contiendra pas les propriétés de table provenant de <b>T.Properties</b>.
 
-<b>S = table2struct(T, "ToScalar", true)</b> convertit la table<b>T</b> en une structure scalaire <b>S</b>, où chaque variable de<b>T</b> devient un champ dans <b>S</b>.
+<b>S = table2struct(T, "ToScalar", true)</b> convertit la table <b>T</b> en une structure scalaire <b>S</b>, où chaque variable de <b>T</b> devient un champ dans <b>S</b>.
 
 Si <b>T</b> est une table m-by-n,<b>S</b> contiendra n champs, et chaque champ aura m lignes.
 

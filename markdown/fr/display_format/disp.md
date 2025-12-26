@@ -14,7 +14,7 @@ Afficher une variable.
 
 <b>disp(V)</b> affiche la valeur de la variable <b>V</b>.
 
-<b>disp</b> utilise le réglage courant de<b>format</b> pour afficher les valeurs numériques.
+<b>disp</b> utilise le réglage courant de <b>format</b> pour afficher les valeurs numériques.
 
 ## 💡 Exemples
 

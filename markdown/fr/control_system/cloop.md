@@ -23,7 +23,7 @@ Connexion en boucle fermée de plusieurs modèles.
 
 <b>cloop</b> forme le système en boucle fermée lorsque la rétroaction unitaire est utilisée.
 
-Cette fonction est obsolète et a des limitations, veuillez voir<b>feedback</b>. Elle n'est applicable que lorsque le bloc dans le chemin de rétroaction est unitaire. De plus, son utilisation est limitée aux modèles de système exprimés uniquement sous forme de fonction de transfert, et non sous la forme plus générale "system".
+Cette fonction est obsolète et a des limitations, veuillez voir <b>feedback</b>. Elle n'est applicable que lorsque le bloc dans le chemin de rétroaction est unitaire. De plus, son utilisation est limitée aux modèles de système exprimés uniquement sous forme de fonction de transfert, et non sous la forme plus générale "system".
 
 ## 💡 Exemple
 

@@ -14,7 +14,7 @@ Embed commands within this file that you wish to be executed during Nelson start
 
 This could involve setting physical constants, defining defaults for graphics properties, incorporating engineering conversion factors, or predefining any other elements desired in your workspace.
 
-Customizing the<b>startup.m</b> file allows you to establish a tailored environment every time Nelson is launched.
+Customizing the <b>startup.m</b> file allows you to establish a tailored environment every time Nelson is launched.
 
 ## 🔗 See also
 

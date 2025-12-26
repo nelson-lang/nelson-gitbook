@@ -16,7 +16,7 @@ Calcule la tangente inverse en radians pour chaque élément de x.
 
 ## 📄 Description
 
-<b>atan</b> calcule la tangente inverse en radians pour chaque élément de<b>x</b>.
+<b>atan</b> calcule la tangente inverse en radians pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

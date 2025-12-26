@@ -17,7 +17,7 @@ Opérateur OR à court-circuit, \|\|
 
 ## 📄 Description
 
-<b>C = A \|\| B</b> effectue une opération logique<b>OR</b> : le second opérande n'est évalué que lorsque le résultat ne peut pas être déterminé par le premier opérande.
+<b>C = A \|\| B</b> effectue une opération logique <b>OR</b> : le second opérande n'est évalué que lorsque le résultat ne peut pas être déterminé par le premier opérande.
 
 ## 💡 Exemple
 

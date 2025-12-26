@@ -21,7 +21,7 @@ Accède aux données d'un modèle en fonction de transfert.
 
 ## 📄 Description
 
-La fonction<b>tfdata(sys)</b> récupère les coefficients du numérateur et du dénominateur ainsi que le temps d'échantillonnage (si présent) du modèle de fonction de transfert.
+La fonction <b>tfdata(sys)</b> récupère les coefficients du numérateur et du dénominateur ainsi que le temps d'échantillonnage (si présent) du modèle de fonction de transfert.
 
 ## 💡 Exemple
 

@@ -20,7 +20,7 @@
 
 ## 📄 Description
 
-<b>imwrite(A, filename)</b> écrit les données d'image<b>A</b> dans le fichier spécifié par <b>filename</b>.
+<b>imwrite(A, filename)</b> écrit les données d'image <b>A</b> dans le fichier spécifié par <b>filename</b>.
 
 Noms de propriétés :
 

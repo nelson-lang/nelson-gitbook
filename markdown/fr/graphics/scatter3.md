@@ -32,7 +32,7 @@ Nuage de points 3D.
 
 <b>scatter3(x, y, z)</b> génère un nuage de points en plaçant des marqueurs circulaires aux coordonnées définies par les vecteurs <b>x</b>,<b>y</b> et <b>z</b>.
 
-Si vous souhaitez afficher un seul ensemble de données, assurez-vous que<b>x</b>, <b>y</b> et <b>z</b> sont des vecteurs de même longueur.
+Si vous souhaitez afficher un seul ensemble de données, assurez-vous que <b>x</b>, <b>y</b> et <b>z</b> sont des vecteurs de même longueur.
 
 Pour visualiser plusieurs ensembles de données sur un même axe, vous pouvez utiliser une matrice pour <b>x</b>, <b>y</b> ou<b>z</b>, en gardant les autres comme vecteurs.
 
@@ -42,7 +42,7 @@ Propriétés de Scatter :
 
 | Propriété           | Description                                                                                                                                                                                                                                                                                                    |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **AlphaData**       | Transparence de la face du marqueur, 1 (par défaut) ou tableau de même taille que**XData**                                                                                                                                                                                                                     |
+| **AlphaData**       | Transparence de la face du marqueur, 1 (par défaut) ou tableau de même taille que **XData**                                                                                                                                                                                                                    |
 | **BeingDeleted**    | Indique que l'objet est en cours de suppression.                                                                                                                                                                                                                                                               |
 | **BusyAction**      | File d'attente des callbacks, 'queue' (par défaut) ou 'cancel'. Cette propriété détermine comment Nelson gère l'exécution des callbacks interrompus.                                                                                                                                                           |
 | **CData**           | Couleurs des marqueurs : [] (par défaut), triplet RGB, matrice de triplets RGB ou vecteur. Couleur du marqueur à utiliser pour chaque série de données : 'k'/'black' (Noir), 'y'/'yellow' (Jaune), 'm'/'magenta' (Magenta), 'c'/'cyan' (Cyan), 'r'/'red' (Rouge), 'b'/'blue' (Bleu), 'g'/'green' (Vert)        |

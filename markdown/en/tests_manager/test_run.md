@@ -61,7 +61,7 @@ These tags are expected to be found in Nelson comments:
 
 <b><--GUI MODE--></b> This test will be executed by nelson-gui executable.
 
-<b><--CHECK REF--></b> This test will compare .ref available in same directory with output generated. see<b>test_makeref</b> to generate .ref file.
+<b><--CHECK REF--></b> This test will compare .ref available in same directory with output generated. see <b>test_makeref</b> to generate .ref file.
 
 <b><--ENGLISH IMPOSED--></b> This test will be executed with the en_US language.
 

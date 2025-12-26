@@ -17,7 +17,7 @@ Permutation aléatoire de valeurs entières.
 
 ## 📄 Description
 
-<b>p = randperm(n)</b> renvoie un vecteur ligne contenant une permutation aléatoire de<b>1:n</b>.
+<b>p = randperm(n)</b> renvoie un vecteur ligne contenant une permutation aléatoire de <b>1:n</b>.
 
 ## 💡 Exemple
 

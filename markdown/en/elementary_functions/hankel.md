@@ -22,7 +22,7 @@ Hankel matrix
 
 <b>H = hankel(c, r)</b> returns a Hankel matrix with<b>c</b> as its first column and <b>r</b> as its last row.
 
-If last element of<b>c</b> differs from the first element of<b>r</b>, then Hankel issues a warning and uses the last element of<b>c</b> for the anti-diagonal.
+If last element of <b>c</b> differs from the first element of <b>r</b>, then Hankel issues a warning and uses the last element of <b>c</b> for the anti-diagonal.
 
 ## 💡 Example
 

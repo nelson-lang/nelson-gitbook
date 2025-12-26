@@ -21,7 +21,7 @@ Copie des fichiers ou des dossiers.
 
 ## 📄 Description
 
-<b>copyfile(source, destination)</b> copie le fichier ou le répertoire<b>source</b> (et ses sous-répertoires) vers le fichier ou répertoire<b>destination</b>.
+<b>copyfile(source, destination)</b> copie le fichier ou le répertoire <b>source</b> (et ses sous-répertoires) vers le fichier ou répertoire <b>destination</b>.
 
 Si <b>source</b> est un répertoire,<b>destination</b> ne peut pas être un fichier.
 

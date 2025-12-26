@@ -42,6 +42,37 @@ border-color: #333;
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2>1.16.0 - (UNRELEASED)</h2>
+<h3>Added</h3>
+<ul>
+<li>Windows ARM64 support: build and installer available.</li>
+<li><code>onCleanup</code>: Execute code during function shutdown.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/188">#188</a> <code>audiorecorder</code>: Record audio.</li>
+<li><code>getaudiodata</code>: Retrieve recorded audio as a numeric array.</li>
+<li><code>isrecording</code>: Check if audio recording is in progress.</li>
+<li><code>record</code>: Record audio to an <code>audiorecorder</code> object.</li>
+<li><code>recordblocking</code>: Record audio and block until completion.</li>
+<li><code>getplayer</code>: Create an associated <code>audioplayer</code> object.</li>
+<li><code>TimerFcn</code>, <code>StartFcn</code>, <code>StopFcn</code> callbacks for <code>audioplayer</code> and <code>audiorecorder</code>.</li>
+<li><code>rms</code>: Compute root mean square of array elements.</li>
+<li><code>daspect</code>: Set data unit length along each axis.</li>
+<li><code>pbaspect</code>: Set relative axis lengths.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Advanced terminal: <code>linenoise</code> replaced by <code>replxx</code> for improved line editing.</li>
+<li>Autocomplete: Upgraded functionality in advanced command-line terminal.</li>
+<li>Axis handling: Enhanced axis limit normalization and improved <code>DataAspectRatio</code>.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1494">#1494</a>: In advanced CLI mode, pasting long lines no longer causes character duplication.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1493">#1493</a>: <code>doc</code> function works again on Nelson Cloud (regression in 1.15.0).</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1492">#1492</a>: Temporary message removed when generating toolbox help.</li>
+<li>BLAS/OpenBLAS detection improved in example <code>run([modulepath('dynamic_link'), '/examples/call_fortran.m'])</code> on some Linux systems.</li>
+<li><code>imresize</code>: Now supports scalar string arrays as input arguments.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1505">#1505</a>: Updated CMake to 4.2 and ICU to 78.1 on Windows</li>
+</ul>
 <h2>1.15.0 - (2025-11-21)</h2>
 <p>Starting with v1.15, Nelson for Windows is officially signed with a Certum-issued code-signing certificate.
 This is a major security milestone, ensuring the authenticity and integrity of Nelson’s Windows releases.</p>

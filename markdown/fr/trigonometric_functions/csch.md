@@ -16,7 +16,7 @@ Cosécante hyperbolique.
 
 ## 📄 Description
 
-<b>csch</b> calcule la cosécante hyperbolique pour chaque élément de<b>x</b>.
+<b>csch</b> calcule la cosécante hyperbolique pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

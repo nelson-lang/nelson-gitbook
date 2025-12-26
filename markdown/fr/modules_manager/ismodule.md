@@ -18,7 +18,7 @@ Vérifie si un module est chargé.
 
 ## 📄 Description
 
-<b>ismodule</b> retourne<b>true</b> si le module est chargé, sinon <b>false</b>.
+<b>ismodule</b> retourne <b>true</b> si le module est chargé, sinon <b>false</b>.
 
 ## 💡 Exemple
 

@@ -71,7 +71,7 @@ The ColorSpec specifies the line color to use for each data series:
 | **'b'** | Color Blue    |
 | **'g'** | Color Green   |
 
-see<b>line</b> for more information about properties
+see <b>line</b> for more information about properties
 
 ## 💡 Examples
 

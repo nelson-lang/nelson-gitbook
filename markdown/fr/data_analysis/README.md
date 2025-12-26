@@ -17,6 +17,7 @@ Ce module permet un traitement, un résumé et une exploration efficaces des jeu
 - [max](max.md) - Valeurs maximales d'un tableau.
 - [min](min.md) - Valeurs minimales d'un tableau.
 - [prod](prod.md) - Produit des éléments d'un tableau.
+- [rms](rms.md) - Valeur quadratique moyenne (RMS) des éléments d'un tableau.
 - [sort](sort.md) - Trier les éléments d'un tableau (algorithme de tri rapide).
 - [subspace](subspace.md) - Mesure de distance (angle) entre deux sous-espaces engendrés par les colonnes de matrices.
 - [sum](sum.md) - Somme des éléments d'un tableau.

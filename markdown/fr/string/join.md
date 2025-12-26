@@ -21,7 +21,7 @@ Combine des chaînes.
 
 ## 📄 Description
 
-<b>res = join(str)</b> combine les éléments de<b>str</b> en un seul texte en les joignant avec un espace comme délimiteur par défaut.
+<b>res = join(str)</b> combine les éléments de <b>str</b> en un seul texte en les joignant avec un espace comme délimiteur par défaut.
 
 L'entrée, <b>str</b>, peut être un tableau de chaînes ou une cellule de vecteurs de caractères. La sortie, <b>res</b>, a le même type de données que <b>str</b>.
 
@@ -31,7 +31,7 @@ Si <b>str</b> est un tableau M-by-N, alors <b>res</b> sera un tableau M-by-1.
 
 Pour des tableaux de n'importe quelle taille, join concatène les éléments le long de la dernière dimension ayant une taille supérieure à 1.
 
-<b>res = join(str, delimiter)</b> joint les éléments de<b>str</b> en utilisant le délimiteur spécifié au lieu de l'espace par défaut.
+<b>res = join(str, delimiter)</b> joint les éléments de <b>str</b> en utilisant le délimiteur spécifié au lieu de l'espace par défaut.
 
 Si delimiter est un tableau de délimiteurs et que <b>str</b> a N éléments le long de la dimension de jointure, delimiter doit avoir N-1 éléments le long de la même dimension. Toutes les autres dimensions de delimiter doivent soit avoir la taille 1, soit correspondre aux dimensions correspondantes de <b>str</b>.
 

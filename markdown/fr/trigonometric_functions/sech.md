@@ -16,7 +16,7 @@ Sécante hyperbolique.
 
 ## 📄 Description
 
-<b>sech</b> calcule la sécante hyperbolique pour chaque élément de<b>x</b>.
+<b>sech</b> calcule la sécante hyperbolique pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

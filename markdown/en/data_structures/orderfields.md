@@ -26,7 +26,7 @@ Reorganize the fields of a structured array.
 
 <b>S = orderfields(S1)</b> sorts the fields in<b>S1</b> alphabetically by their names, considering uppercase letters before lowercase ones, and digits and underscores are also accounted for.
 
-<b>S = orderfields(S1,S2)</b> returns a copy of<b>S1</b> with its fields rearranged to match the order of fields in<b>S2</b>.Both <b>S1</b> and <b>S2</b> must share the same field names.
+<b>S = orderfields(S1,S2)</b> returns a copy of <b>S1</b> with its fields rearranged to match the order of fields in<b>S2</b>.Both <b>S1</b> and <b>S2</b> must share the same field names.
 
 <b>S = orderfields(S1, C)</b> matches the order specified in the input array<b>C</b>. Each field name from <b>S1</b> must appear once in <b>C</b>.
 

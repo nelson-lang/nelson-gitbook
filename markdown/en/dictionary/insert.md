@@ -24,7 +24,7 @@ Add entries to a dictionary.
 
 If the key already exists, its value is updated.
 
-<b>d = insert(d, key, value)</b> is equivalent to<b>d[key] = value</b>.
+<b>d = insert(d, key, value)</b> is equivalent to <b>d[key] = value</b>.
 
 <b>db = insert(da, key, value, 'overwrite', tf)</b> specifies whether to overwrite an existing value for the key based on the boolean parameter Overwrite.
 

@@ -16,7 +16,7 @@ Cotangente d'un angle en radians
 
 ## 📄 Description
 
-<b>cot</b> calcule la cotangente d'un angle pour chaque élément de<b>x</b>.
+<b>cot</b> calcule la cotangente d'un angle pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

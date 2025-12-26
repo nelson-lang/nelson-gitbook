@@ -26,9 +26,9 @@ Tracé linéaire 2D.
 
 ## 📄 Description
 
-<b>plot(Y)</b> trace les colonnes de<b>Y</b> en fonction de leur indice.
+<b>plot(Y)</b> trace les colonnes de <b>Y</b> en fonction de leur indice.
 
-<b>plot(X, Y)</b> trace la courbe définie par la paire<b>X</b> et <b>Y</b>.
+<b>plot(X, Y)</b> trace la courbe définie par la paire <b>X</b> et <b>Y</b>.
 
 <b>go = plot(...)</b> retourne un vecteur colonne d'objets graphiques de type ligne.
 

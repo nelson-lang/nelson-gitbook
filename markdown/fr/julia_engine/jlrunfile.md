@@ -26,7 +26,7 @@ Exécute un fichier Julia depuis Nelson.
 
 Comme la fonction <b>jlrun</b>, les variables générées dans l'espace Julia via<b>jlrunfile</b> sont persistantes.
 
-Le code<b>outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN)</b> exécute le fichier avec un ou plusieurs arguments nom-valeur.
+Le code <b>outvars = jlrunfile(file, outputs, jlName1, jlValue2, ..., jlNameN, jlValueN)</b> exécute le fichier avec un ou plusieurs arguments nom-valeur.
 
 ## 💡 Exemples
 

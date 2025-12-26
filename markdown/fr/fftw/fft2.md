@@ -25,7 +25,7 @@ Les arguments optionnels <b>m</b> et <b>n</b> peuvent être utilisés pour préc
 
 Si l'un de ces arguments est plus grand que la taille de <b>X</b>,<b>X</b> est redimensionné et complété par des zéros.
 
-Si<b>X</b> est un tableau multidimensionnel, chaque sous-matrice bidimensionnelle de<b>X</b> est traitée séparément.
+Si<b>X</b> est un tableau multidimensionnel, chaque sous-matrice bidimensionnelle de <b>X</b> est traitée séparément.
 
 ## 💡 Exemple
 

@@ -21,7 +21,7 @@ Charge un symbole C/Fortran depuis une bibliothèque dynamique
 
 <b>dlsym</b> récupère l'adresse d'une fonction exportée en tant que handle dlsym.
 
-Si le<b>symbolname</b> n'est pas trouvé, Nelson tente de trouver des variantes du nom selon ces règles (dans cet ordre) :
+Si le <b>symbolname</b> n'est pas trouvé, Nelson tente de trouver des variantes du nom selon ces règles (dans cet ordre) :
 
 <b>\_symbolname</b>
 

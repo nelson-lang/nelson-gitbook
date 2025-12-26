@@ -94,7 +94,7 @@ gestionnaire d'historique.
 
 <b>history('get', lines)</b> renvoie l'historique actuel de Nelson sous forme d'un tableau (cell) de chaînes par index : un scalaire ou un vecteur 1x2.
 
-<b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que<b>nb_commands</b> instructions aient été ajoutées au fichier.
+<b>history('saveafter', nb_commands)</b> enregistre le fichier d'historique après que <b>nb_commands</b> instructions aient été ajoutées au fichier.
 
 <b>Astuces</b> : vous pouvez facilement partager votre fichier d'historique dans le cloud en ajoutant quelques lignes de code dans votre fichier de démarrage utilisateur.
 

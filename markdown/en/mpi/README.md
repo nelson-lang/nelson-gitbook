@@ -6,6 +6,8 @@ This module provides functions to initialize, manage, and finalize MPI environme
 
 It enables Nelson programs to run efficiently on distributed-memory systems and clusters.
 
+Note: MPI support is not available on Windows on ARM64 (woa64) architecture.
+
 ## Functions
 
 - [MPI_Allreduce](MPI_Allreduce.md) - Combines values from all processes and distributes the result back to all processes.

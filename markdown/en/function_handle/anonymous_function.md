@@ -18,13 +18,13 @@ This part consists of a valid expression. Next, there's <b>argument_list</b>, wh
 
 These components are similar to the body and argument list of any regular function.
 
-At the beginning of this syntax statement, you'll notice the<b>@</b> sign.
+At the beginning of this syntax statement, you'll notice the <b>@</b> sign.
 
 This<b>@</b> sign is the operator that constructs a function handle.
 
 Creating a function handle for an anonymous function allows you to invoke the function and is useful when passing your anonymous function as an argument to another function.
 
-The<b>@</b> sign is a necessary part of the anonymous function definition.
+The <b>@</b> sign is a necessary part of the anonymous function definition.
 
 It's worth noting that function handles not only apply to anonymous functions but also to any function.
 

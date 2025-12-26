@@ -16,7 +16,7 @@ Cotangente de l'argument en degrés
 
 ## 📄 Description
 
-<b>cotd</b> calcule la cotangente de l'argument en degrés pour chaque élément de<b>x</b>.
+<b>cotd</b> calcule la cotangente de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

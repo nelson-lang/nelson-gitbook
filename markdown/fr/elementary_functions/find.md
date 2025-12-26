@@ -29,7 +29,7 @@ Trouver les éléments non nuls
 
 ## 📄 Description
 
-<b>K = find(M)</b> renvoie un vecteur contenant les indices linéaires de chaque élément non nul de<b>M</b>.
+<b>K = find(M)</b> renvoie un vecteur contenant les indices linéaires de chaque élément non nul de <b>M</b>.
 
 ## 💡 Exemple
 

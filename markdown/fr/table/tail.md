@@ -18,7 +18,7 @@ Obtenir les dernières lignes d'une table ou d'un tableau.
 
 ## 📄 Description
 
-<b>tail(A)</b> affiche les huit dernières lignes d'un tableau, ou de la table<b>A</b> dans la fenêtre de commande sans l'assigner à une variable.
+<b>tail(A)</b> affiche les huit dernières lignes d'un tableau, ou de la table <b>A</b> dans la fenêtre de commande sans l'assigner à une variable.
 
 <b>tail(A, k)</b> affiche les k dernières lignes de A.
 

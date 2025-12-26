@@ -16,7 +16,7 @@ Inverse cotangent of angle in degrees
 
 ## 📄 Description
 
-<b>acotd</b> computes the inverse cotangent of angle for each element of<b>x</b> in degrees.
+<b>acotd</b> computes the inverse cotangent of angle for each element of <b>x</b> in degrees.
 
 ## 💡 Example
 

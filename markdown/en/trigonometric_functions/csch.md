@@ -16,7 +16,7 @@ Hyperbolic cosecant.
 
 ## 📄 Description
 
-<b>csch</b> computes the hyperbolic cosecant for each element of<b>x</b>.
+<b>csch</b> computes the hyperbolic cosecant for each element of <b>x</b>.
 
 ## 💡 Example
 

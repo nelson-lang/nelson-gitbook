@@ -24,9 +24,9 @@ Réorganiser les champs d'un tableau de structures.
 
 ## 📄 Description
 
-<b>S = orderfields(S1)</b> trie les champs de<b>S1</b> par ordre alphabétique selon leurs noms, en considérant les majuscules avant les minuscules; les chiffres et underscores sont également pris en compte.
+<b>S = orderfields(S1)</b> trie les champs de <b>S1</b> par ordre alphabétique selon leurs noms, en considérant les majuscules avant les minuscules; les chiffres et underscores sont également pris en compte.
 
-<b>S = orderfields(S1,S2)</b> renvoie une copie de<b>S1</b> avec ses champs réorganisés pour correspondre à l'ordre des champs de <b>S2</b>. Les deux structures <b>S1</b> et <b>S2</b> doivent partager les mêmes noms de champs.
+<b>S = orderfields(S1,S2)</b> renvoie une copie de <b>S1</b> avec ses champs réorganisés pour correspondre à l'ordre des champs de <b>S2</b>. Les deux structures <b>S1</b> et <b>S2</b> doivent partager les mêmes noms de champs.
 
 <b>S = orderfields(S1, C)</b> correspond à l'ordre spécifié dans le tableau d'entrée <b>C</b>. Chaque nom de champ de <b>S1</b> doit apparaître une fois dans <b>C</b>.
 

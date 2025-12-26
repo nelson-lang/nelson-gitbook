@@ -24,7 +24,7 @@ Solution de l'équation de Riccati algébrique en temps discret.
 
 ## 📄 Description
 
-La fonction<b>dare(A, B, Q)</b> calcule la solution exclusive, notée<b>X</b>, pour l'équation de Riccati algébrique en temps discret avec les matrices <b>A</b>, <b>B</b> et <b>Q</b>, et fournit également les matrices supplémentaires <b>L</b> et <b>G</b>.
+La fonction <b>dare(A, B, Q)</b> calcule la solution exclusive, notée <b>X</b>, pour l'équation de Riccati algébrique en temps discret avec les matrices <b>A</b>, <b>B</b> et <b>Q</b>, et fournit également les matrices supplémentaires <b>L</b> et <b>G</b>.
 
 ## 💡 Exemple
 

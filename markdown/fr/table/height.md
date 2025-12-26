@@ -16,7 +16,7 @@ Nombre de lignes d'une table
 
 ## 📄 Description
 
-<b>H = height(T)</b> renvoie le nombre de lignes dans la table<b>T</b>.
+<b>H = height(T)</b> renvoie le nombre de lignes dans la table <b>T</b>.
 
 La fonction <b>height(T)</b> est équivalente à<b>size(T, 1)</b>, qui fournit également le nombre de lignes de la table.
 

@@ -39,7 +39,7 @@ Create patches of colored polygons
 
 <b>patch('Faces', F, 'Vertices', V)</b> creates one or more polygons .
 
-<b>go = patch(...)</b> returns the handle<b>go</b> to the created patch object.
+<b>go = patch(...)</b> returns the handle <b>go</b> to the created patch object.
 
 Property Name-Value Pairs:
 
@@ -57,7 +57,7 @@ Property Name-Value Pairs:
 
 <b>'Parent'</b>: handle of the parent object for the patch. Default:<b>gca()</b>.
 
-<b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the<b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.
+<b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.
 
 <b>CreateFcn</b> Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect.
 

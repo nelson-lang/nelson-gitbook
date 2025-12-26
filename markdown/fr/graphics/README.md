@@ -27,6 +27,7 @@ Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom,
 - [cool](cool.md) - Palette de couleurs cool.
 - [copper](copper.md) - Palette de couleurs copper.
 - [cylinder](cylinder.md) - Créer un cylindre.
+- [daspect](daspect.md) - Contrôler la longueur des unités de données le long de chaque axe.
 - [drawnow](drawnow.md) - Met à jour les figures et traite les callbacks
 - [figure](figure.md) - Crée une fenêtre figure.
 - [fill](fill.md) - Créer des formes 2D remplies.
@@ -63,6 +64,7 @@ Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom,
 - [pan](pan.md) - Activer le mode déplacement (pan).
 - [parula](parula.md) - Palette de couleurs Parula.
 - [patch](patch.md) - Créer des patchs de polygones colorés
+- [pbaspect](pbaspect.md) - Contrôler les longueurs relatives de chaque axe dans la boîte de tracé.
 - [pcolor](pcolor.md) - Graphique en pseudo-couleurs.
 - [pie](pie.md) - Ancien graphique en secteurs (camembert).
 - [pink](pink.md) - Palette de couleurs Pink.

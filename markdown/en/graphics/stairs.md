@@ -33,9 +33,9 @@ Stairstep graphs are a valuable tool for creating time-history plots of digitall
 
 <b>stairs(Y)</b> function is used to generate such graphs by plotting the elements of the vector<b>Y.</b>
 
-If<b>Y</b> is a matrix, it draws one line for each column, with the color of the lines determined by the ColorOrder property of the axes.
+If <b>Y</b> is a matrix, it draws one line for each column, with the color of the lines determined by the ColorOrder property of the axes.
 
-In the case of a vector<b>Y</b>, the x-axis scale spans from 1 to the length of<b>Y</b>, while for a matrix<b>Y</b>, the x-axis scale ranges from 1 to the number of rows in<b>Y</b>.
+In the case of a vector<b>Y</b>, the x-axis scale spans from 1 to the length of <b>Y</b>, while for a matrix<b>Y</b>, the x-axis scale ranges from 1 to the number of rows in<b>Y</b>.
 
 <b>stairs(X, Y)</b> allows you to plot the elements in<b>Y</b> at specific locations defined by the vector <b>X</b>.
 

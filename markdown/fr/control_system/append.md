@@ -16,7 +16,7 @@ Ajoute les entrées et sorties des deux modèles.
 
 ## 📄 Description
 
-<b>sys = append(sys1, sys2, ..., sysN)</b> combine les entrées et sorties des modèles<b>sys1</b> à <b>sysN</b>, créant un modèle augmenté représenté par<b>sys</b>.
+<b>sys = append(sys1, sys2, ..., sysN)</b> combine les entrées et sorties des modèles <b>sys1</b> à <b>sysN</b>, créant un modèle augmenté représenté par <b>sys</b>.
 
 ## 💡 Exemple
 

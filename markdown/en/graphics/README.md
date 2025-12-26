@@ -27,6 +27,7 @@ It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate
 - [cool](cool.md) - Cool colormap array.
 - [copper](copper.md) - Copper colormap array.
 - [cylinder](cylinder.md) - Create cylinder.
+- [daspect](daspect.md) - Control data unit length along each axis.
 - [drawnow](drawnow.md) - Update figures and process callbacks
 - [figure](figure.md) - Creates an figure window.
 - [fill](fill.md) - Create filled 2-D patches.
@@ -63,6 +64,7 @@ It includes 2-D and 3-D visualization, user interaction tools (zoom, pan, rotate
 - [pan](pan.md) - Enable pan mode.
 - [parula](parula.md) - Parula colormap array.
 - [patch](patch.md) - Create patches of colored polygons
+- [pbaspect](pbaspect.md) - Control relative lengths of each axis in the plot box.
 - [pcolor](pcolor.md) - Pseudocolor plot.
 - [pie](pie.md) - Legacy pie chart.
 - [pink](pink.md) - Pink colormap array.

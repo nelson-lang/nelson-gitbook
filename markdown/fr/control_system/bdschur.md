@@ -19,7 +19,7 @@ Factorisation de Schur en blocs diagonaux.
 
 ## 📄 Description
 
-<b>[T, B] = bdschur(A, CONDMAX)</b> calcule une matrice de transformation<b>T</b>, où<b>B = T \\ A \* T</b> donne une matrice diagonale par blocs, chaque bloc étant une matrice de Schur quasi triangulaire supérieure, assurant la diagonalisation de la matrice A tout en préservant certaines propriétés structurelles.
+<b>[T, B] = bdschur(A, CONDMAX)</b> calcule une matrice de transformation <b>T</b>, où<b>B = T \\ A \* T</b> donne une matrice diagonale par blocs, chaque bloc étant une matrice de Schur quasi triangulaire supérieure, assurant la diagonalisation de la matrice A tout en préservant certaines propriétés structurelles.
 
 ## Fonction(s) utilisée(s)
 

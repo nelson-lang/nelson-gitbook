@@ -26,7 +26,7 @@ Générer des matrices de test et des données couramment utilisées pour des ex
 - A1,A2,...,Am - une ou plusieurs matrices ou tableaux produits par la famille choisie
 - A - matrice unique ou tableau multidimensionnel lorsque une seule sortie est demandée
 - v,beta,s - Sorties de Householder :<code>v</code>(vecteur),<code>beta</code>(scalaire), et optionnel<code>s</code>retourné par <b>house</b>
-- beta - détérminant ou sortie scalaire pour les familles qui le retournent explicitement (par exemple<b>ipjfact</b> retourne le déterminant<code>beta</code>)
+- beta - détérminant ou sortie scalaire pour les familles qui le retournent explicitement (par exemple <b>ipjfact</b> retourne le déterminant<code>beta</code>)
 
 ## 📄 Description
 

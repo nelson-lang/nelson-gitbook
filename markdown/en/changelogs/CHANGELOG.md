@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.16.0 - (UNRELEASED)
+
+### Added
+
+- Windows ARM64 support: build and installer available.
+- `onCleanup`: Execute code during function shutdown.
+- [#188](https://github.com/nelson-lang/nelson/issues/188) `audiorecorder`: Record audio.
+- `getaudiodata`: Retrieve recorded audio as a numeric array.
+- `isrecording`: Check if audio recording is in progress.
+- `record`: Record audio to an `audiorecorder` object.
+- `recordblocking`: Record audio and block until completion.
+- `getplayer`: Create an associated `audioplayer` object.
+- `TimerFcn`, `StartFcn`, `StopFcn` callbacks for `audioplayer` and `audiorecorder`.
+- `rms`: Compute root mean square of array elements.
+- `daspect`: Set data unit length along each axis.
+- `pbaspect`: Set relative axis lengths.
+
+### Changed
+
+- Advanced terminal: `linenoise` replaced by `replxx` for improved line editing.
+- Autocomplete: Upgraded functionality in advanced command-line terminal.
+- Axis handling: Enhanced axis limit normalization and improved `DataAspectRatio`.
+
+### Fixed
+
+- [#1494](https://github.com/nelson-lang/nelson/issues/1494): In advanced CLI mode, pasting long lines no longer causes character duplication.
+- [#1493](https://github.com/nelson-lang/nelson/issues/1493): `doc` function works again on Nelson Cloud (regression in 1.15.0).
+- [#1492](https://github.com/nelson-lang/nelson/issues/1492): Temporary message removed when generating toolbox help.
+- BLAS/OpenBLAS detection improved in example `run([modulepath('dynamic_link'), '/examples/call_fortran.m'])` on some Linux systems.
+- `imresize`: Now supports scalar string arrays as input arguments.
+- [#1505](https://github.com/nelson-lang/nelson/issues/1505): Updated CMake to 4.2 and ICU to 78.1 on Windows
+
 ## 1.15.0 - (2025-11-21)
 
 Starting with v1.15, Nelson for Windows is officially signed with a Certum-issued code-signing certificate.

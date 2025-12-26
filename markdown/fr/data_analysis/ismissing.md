@@ -16,7 +16,7 @@ Vérifier les valeurs manquantes.
 
 ## 📄 Description
 
-<b>ismissing</b> renvoie un tableau logique qui est vrai lorsque les éléments de M sont des valeurs<b>manquantes</b>.
+<b>ismissing</b> renvoie un tableau logique qui est vrai lorsque les éléments de M sont des valeurs <b>manquantes</b>.
 
 Les données manquantes sont définies comme :
 

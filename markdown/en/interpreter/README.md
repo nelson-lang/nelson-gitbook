@@ -25,6 +25,7 @@ Together, these features establish the fundamental syntax and semantics of the N
 - [max_recursion_depth](max_recursion_depth.md) - Internal limit on the number of times a function may be called recursively.
 - [name=value](name_value_syntax.md) - Name=value syntax for name-value arguments.
 - [numeric types](numeric_types.md) - About integer and floating-point data.
+- [onCleanup](onCleanup.md) - Cleanup tasks upon function completion
 - [parsefile](parsefile.md) - Parse a Nelson file.
 - [parsestring](parsestring.md) - Parse a string.
 - [switch](switch.md) - switch statement.

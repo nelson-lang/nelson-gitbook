@@ -16,7 +16,7 @@ Vérifie si une valeur est un function handle.
 
 ## 📄 Description
 
-<b>l = isfunction_handle(func_handle)</b> vérifie si<b>func_handle</b> est un function handle et renvoie<b>true</b> si c'est le cas.
+<b>l = isfunction_handle(func_handle)</b> vérifie si<b>func_handle</b> est un function handle et renvoie <b>true</b> si c'est le cas.
 
 ## 💡 Exemple
 

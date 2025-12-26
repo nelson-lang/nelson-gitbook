@@ -29,7 +29,7 @@ Vector of contour levels to label. When provided, only these levels receive labe
 
 - t -
 
-Text objects created by <b>clabel</b>. The<b>String</b> properties contain the contour values displayed.
+Text objects created by <b>clabel</b>. The <b>String</b> properties contain the contour values displayed.
 
 - tl -
 

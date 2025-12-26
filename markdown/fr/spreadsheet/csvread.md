@@ -24,9 +24,9 @@ Lire un fichier de valeurs séparées par des virgules (CSV).
 
 <b>M = csvread(filename, R1, C1)</b> commence la lecture des données aux décalages de ligne et de colonne spécifiés par<b>R1</b> et<b>C1</b>. Par exemple, R1=0, C1=0 correspond à la première valeur du fichier.
 
-Pour définir des décalages de ligne et de colonne sans définir un délimiteur, utilisez un caractère vide comme espace réservé, par exemple<b>M = csvread(filename, 3, 1)</b>.
+Pour définir des décalages de ligne et de colonne sans définir un délimiteur, utilisez un caractère vide comme espace réservé, par exemple <b>M = csvread(filename, 3, 1)</b>.
 
-<b>M = csvread(filename)</b> lit un fichier au format CSV (valeurs séparées par des virgules) dans la matrice<b>M</b>.
+<b>M = csvread(filename)</b> lit un fichier au format CSV (valeurs séparées par des virgules) dans la matrice <b>M</b>.
 
 Importation de nombres complexes :<b>csvread</b> lit chaque nombre complexe comme une unité unique et le stocke dans un champ numérique complexe.
 

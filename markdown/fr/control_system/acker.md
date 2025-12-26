@@ -18,11 +18,11 @@ Sélection du gain de placement des pôles utilisant la formule d'Ackermann.
 
 ## 📄 Description
 
-La fonction <b>acker</b> calcule la matrice de gain de rétroaction<b>K</b> pour un système à entrée unique décrit par les matrices d'espace d'état<b>A</b> et <b>B</b>.
+La fonction <b>acker</b> calcule la matrice de gain de rétroaction <b>K</b> pour un système à entrée unique décrit par les matrices d'espace d'état <b>A</b> et <b>B</b>.
 
-Les pôles en boucle fermée du système sous la loi de rétroaction<b>u = -Kx</b> sont déterminés par le vecteur spécifié <b>P</b>, où<b>P</b> représente les localisations des pôles souhaitées.
+Les pôles en boucle fermée du système sous la loi de rétroaction <b>u = -Kx</b> sont déterminés par le vecteur spécifié <b>P</b>, où <b>P</b> représente les localisations des pôles souhaitées.
 
-Les pôles en boucle fermée sont essentiellement les valeurs propres de la matrice<b>A - B\*K</b>, calculées comme <b>P = eig(A - B\*K)</b>.
+Les pôles en boucle fermée sont essentiellement les valeurs propres de la matrice <b>A - B\*K</b>, calculées comme <b>P = eig(A - B\*K)</b>.
 
 Il est important de noter que cet algorithme utilise la formule d'Ackermann.
 

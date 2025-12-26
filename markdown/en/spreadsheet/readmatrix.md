@@ -22,7 +22,7 @@ Create matrix array from file.
 
 <b>M = readmatrix(filename)</b> creates a matrix array by importing column-oriented data from a text or spreadsheet file.
 
-<b>M = readmatrix(filename, opts)</b> creates a matrix array using the settings defined in the<b>opts</b> import options object. The import<b>options</b> object allows you to customize how<b>readmatrix</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.
+<b>M = readmatrix(filename, opts)</b> creates a matrix array using the settings defined in the <b>opts</b> import options object. The import<b>options</b> object allows you to customize how<b>readmatrix</b> interprets the file, offering greater control, improved performance, and the ability to reuse the configuration compared to the default syntax.
 
 ## 💡 Examples
 

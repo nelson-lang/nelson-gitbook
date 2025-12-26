@@ -16,7 +16,7 @@ Logarithme de la fonction gamma
 
 ## 📄 Description
 
-La fonction<b>gammaln(A)</b> calcule le logarithme naturel de la fonction gamma pour une entrée donnée<b>A</b>, exprimé comme <b>gammaln(A) = log(gamma(A))</b>.
+La fonction<b>gammaln(A)</b> calcule le logarithme naturel de la fonction gamma pour une entrée donnée <b>A</b>, exprimé comme <b>gammaln(A) = log(gamma(A))</b>.
 
 Il est important de noter que A doit être un nombre réel non négatif.
 

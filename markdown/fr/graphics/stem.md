@@ -39,7 +39,7 @@ Si <b>Y</b> est une matrice, la fonction stem trace tous les éléments d'une li
 
 <b>X</b> et<b>Y</b> peuvent être des vecteurs ou des matrices de même taille.
 
-<b>X</b> peut être un vecteur ligne ou colonne, et<b>Y</b> doit être une matrice ayant le même nombre de lignes que la longueur de<b>X</b>.
+<b>X</b> peut être un vecteur ligne ou colonne, et<b>Y</b> doit être une matrice ayant le même nombre de lignes que la longueur de <b>X</b>.
 
 Si vous souhaitez spécifier si le cercle à l'extrémité de chaque tige doit être rempli, vous pouvez utiliser <b>stem(...,'fill')</b>.
 

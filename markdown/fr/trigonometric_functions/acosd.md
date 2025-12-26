@@ -16,7 +16,7 @@ Cosinus inverse en degrés.
 
 ## 📄 Description
 
-<b>acosd</b> calcule le cosinus inverse en degrés pour chaque élément de<b>x</b>.
+<b>acosd</b> calcule le cosinus inverse en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

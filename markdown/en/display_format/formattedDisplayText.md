@@ -18,7 +18,7 @@ Capture display output as string.
 
 ## 📄 Description
 
-<b>str = formattedDisplayText(V)</b> returns the display output of<b>V</b> as a string.
+<b>str = formattedDisplayText(V)</b> returns the display output of <b>V</b> as a string.
 
 The string contains equivalent to <b>disp(V)</b>.
 

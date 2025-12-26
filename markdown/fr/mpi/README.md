@@ -6,6 +6,8 @@ Ce module fournit des fonctions pour initialiser, gérer et finaliser des enviro
 
 Il permet aux programmes Nelson de s'exécuter efficacement sur des systèmes à mémoire distribuée et des clusters.
 
+Note : le support MPI n'est pas disponible sur l'architecture Windows on ARM64 (woa64).
+
 ## Functions
 
 - [MPI_Allreduce](MPI_Allreduce.md) - Combine les valeurs de tous les processus et distribue le résultat à tous les processus.

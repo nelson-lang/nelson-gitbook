@@ -16,7 +16,7 @@ Calcule la tangente en degrés pour chaque élément de x.
 
 ## 📄 Description
 
-<b>tand</b> calcule la tangente en degrés pour chaque élément de<b>x</b>.
+<b>tand</b> calcule la tangente en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

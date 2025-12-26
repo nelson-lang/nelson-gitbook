@@ -26,11 +26,11 @@ Ancien graphique en secteurs (camembert).
 
 <b>pie(X)</b> génère un graphique en secteurs (camembert) à partir des données du tableau<b>X</b>.
 
-Si la somme des éléments de<b>X</b> est inférieure ou égale à 1, les valeurs de<b>X</b> représentent directement les aires proportionnelles des parts du camembert.
+Si la somme des éléments de <b>X</b> est inférieure ou égale à 1, les valeurs de <b>X</b> représentent directement les aires proportionnelles des parts du camembert.
 
-Si la somme de<b>X</b> est inférieure à 1, le graphique affiche seulement une portion du camembert.
+Si la somme de <b>X</b> est inférieure à 1, le graphique affiche seulement une portion du camembert.
 
-Si la somme de<b>X</b> dépasse 1, la fonction normalise les valeurs en divisant chaque élément par la somme de<b>X</b>.
+Si la somme de <b>X</b> dépasse 1, la fonction normalise les valeurs en divisant chaque élément par la somme de <b>X</b>.
 
 Cette normalisation garantit que le graphique reflète fidèlement les proportions relatives des données.
 

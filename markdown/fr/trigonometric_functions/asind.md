@@ -16,7 +16,7 @@ Sinus inverse en degrés.
 
 ## 📄 Description
 
-<b>asind</b> calcule le sinus inverse en degrés pour chaque élément de<b>x</b>.
+<b>asind</b> calcule le sinus inverse en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

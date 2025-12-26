@@ -17,6 +17,7 @@ This module enables efficient processing, summarization, and exploration of data
 - [max](max.md) - Maximum elements of an array.
 - [min](min.md) - Minimum elements of an array.
 - [prod](prod.md) - Product of array elements.
+- [rms](rms.md) - Root Mean Square (RMS) of array elements.
 - [sort](sort.md) - Sort array elements by quick sort algorithm.
 - [subspace](subspace.md) - Measure of distance (angle) between two subspaces spanned by columns of matrices.
 - [sum](sum.md) - Sum of array elements.

@@ -20,7 +20,7 @@ Les callbacks sont exécutés dans l'ordre où ils sont mis en file d'attente. L
 
 Dans certains cas, des commandes spécifiques dans le callback en cours invitent Nelson à traiter les callbacks en attente dans la file.
 
-Lorsque Nelson rencontre l'une de ces commandes comme<b>drawnow</b>, <b>figure</b>, <b>waitfor</b> ou<b>pause</b>, il évalue si une interruption doit avoir lieu.
+Lorsque Nelson rencontre l'une de ces commandes comme <b>drawnow</b>, <b>figure</b>, <b>waitfor</b> ou<b>pause</b>, il évalue si une interruption doit avoir lieu.
 
 Pas d'interruption : Si le callback en cours n'inclut aucune de ces commandes, Nelson termine ce callback avant d'exécuter le callback interrompant.
 

@@ -18,7 +18,7 @@ Change default environment of Python interpreter.
 
 ## 📄 Description
 
-Use<b>pyenv</b> to modify the default version or execution mode of the Python interpreter, ensuring these adjustments persist across various Nelson sessions.
+Use <b>pyenv</b> to modify the default version or execution mode of the Python interpreter, ensuring these adjustments persist across various Nelson sessions.
 
 The value set by<b>pyenv</b> is persistent across Nelson sessions.
 
@@ -48,7 +48,7 @@ Use environment variables to force python environment at each startup (usefull f
 
 All environment variables must exist and valid to be considered.
 
-On Windows, the<b>pyenv('Version', '3.11')</b> function searches the Windows Registry for the Python version associated with the specified version. It first looks in the HKCU environment, and if not found, it searches in HKLM.
+On Windows, the <b>pyenv('Version', '3.11')</b> function searches the Windows Registry for the Python version associated with the specified version. It first looks in the HKCU environment, and if not found, it searches in HKLM.
 
 ## 💡 Examples
 

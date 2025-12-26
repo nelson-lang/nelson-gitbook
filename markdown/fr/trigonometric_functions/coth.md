@@ -16,7 +16,7 @@ Cotangente hyperbolique.
 
 ## 📄 Description
 
-<b>coth</b> calcule la cotangente hyperbolique pour chaque élément de<b>x</b>.
+<b>coth</b> calcule la cotangente hyperbolique pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

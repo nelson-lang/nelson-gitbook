@@ -18,7 +18,7 @@ Transformée de Fourier rapide N-dimensionnelle.
 
 ## 📄 Description
 
-<b>Y = fftn(X, sz)</b> complète <b>X</b> par des zéros ou tronque<b>X</b> pour créer un tableau multidimensionnel de taille<b>sz</b> avant d'effectuer la transformée.
+<b>Y = fftn(X, sz)</b> complète <b>X</b> par des zéros ou tronque <b>X</b> pour créer un tableau multidimensionnel de taille <b>sz</b> avant d'effectuer la transformée.
 
 La taille du résultat <b>Y</b> est <b>sz</b>.
 

@@ -17,11 +17,11 @@ The real 𝑛th root of real number.
 
 ## 📄 Description
 
-<b>𝑌 = nthroot(𝑋, 𝑁)</b> returns the real 𝑛th root of the elements of<b>𝑋</b>.
+<b>𝑌 = nthroot(𝑋, 𝑁)</b> returns the real 𝑛th root of the elements of <b>𝑋</b>.
 
 Both <b>𝑋</b> and<b>𝑁</b> must be real scalars or arrays of the same size. If an element in<b>𝑋</b> is negative, the corresponding element in<b>𝑁</b> must be an odd integer.
 
-When computing roots where both real and complex roots exist, the<b>power</b> function efficiently computes only the complex roots.
+When computing roots where both real and complex roots exist, the <b>power</b> function efficiently computes only the complex roots.
 
 To obtain the real root in such cases, use the nthroot function instead.
 

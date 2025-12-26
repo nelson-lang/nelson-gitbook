@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>pbaspect</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="./index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pbaspect</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Contrôler les longueurs relatives de chaque axe dans la boîte de tracé.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">pbaspect(ratio)
+pb = pbaspect()
+pbaspect('auto')
+pbaspect('manual')
+m = pbaspect('mode')
+pbaspect(ax, ...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ratio</td>
+<td>
+        <p>Vecteur à trois éléments de valeurs positives spécifiant les longueurs relatives des axes x, y et z dans la boîte de tracé.</p>
+      </td>
+</tr>
+<tr>
+<td class="param-name">'auto'</td>
+<td>
+        <p>Définir le mode du rapport d'aspect de la boîte de tracé sur automatique.</p>
+      </td>
+</tr>
+<tr>
+<td class="param-name">'manual'</td>
+<td>
+        <p>Définir le mode du rapport d'aspect de la boîte de tracé sur manuel.</p>
+      </td>
+</tr>
+<tr>
+<td class="param-name">'mode'</td>
+<td>
+        <p>Interroger le mode actuel du rapport d'aspect de la boîte de tracé ('auto' ou 'manual').</p>
+      </td>
+</tr>
+<tr>
+<td class="param-name">ax</td>
+<td>
+        <p>Objet des axes cibles. Si non spécifié, utilise les axes actuels.</p>
+      </td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">pb</td>
+<td>
+        <p>Vecteur à trois éléments représentant le rapport d'aspect actuel de la boîte de tracé.</p>
+      </td>
+</tr>
+<tr>
+<td class="param-name">m</td>
+<td>
+        <p>Mode actuel du rapport d'aspect de la boîte de tracé : 'auto' ou 'manual'.</p>
+      </td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>pbaspect</b> contrôle les longueurs relatives des axes x, y et z dans la boîte de tracé.</p>
+    <p><b>pbaspect(ratio)</b> définit le rapport d'aspect de la boîte de tracé pour les axes actuels. <b>ratio</b> est un vecteur à trois éléments de valeurs positives. Par exemple, [3 1 1] signifie que l'axe x est trois fois plus long que les axes y et z.</p>
+    <p><b>pb = pbaspect()</b> renvoie le rapport d'aspect actuel de la boîte de tracé sous forme de vecteur à trois éléments.</p>
+    <p><b>pbaspect('auto')</b> définit le mode du rapport d'aspect de la boîte de tracé sur automatique, permettant aux axes de choisir le rapport.</p>
+    <p><b>pbaspect('manual')</b> définit le mode sur manuel et utilise le rapport stocké dans les axes.</p>
+    <p><b>m = pbaspect('mode')</b> renvoie le mode actuel, soit 'auto' soit 'manual'.</p>
+    <p><b>pbaspect(ax, ...)</b> agit sur les axes spécifiés par <b>ax</b> au lieu des axes actuels.</p>
+    <p>Définir le rapport d'aspect de la boîte de tracé désactive le comportement d'étirement pour remplir les axes.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Utiliser des longueurs d'axes égales</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">x = linspace(0,10,100);
+y = sin(x);
+plot(x, y)
+pbaspect([1 1 1])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./pbaspect_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Utiliser des longueurs d'axes différentes</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">[x, y] = meshgrid(-2:0.2:2);
+z = x .* exp(-x.^2 - y.^2);
+surf(x, y, z)
+pbaspect([2 1 1])
+disp(pbaspect('mode'))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./pbaspect_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Revenir au rapport d'aspect par défaut de la boîte de tracé</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = rand(100,1);
+Y = rand(100,1);
+Z = rand(100,1);
+scatter3(X, Y, Z)
+pbaspect([3 2 1])
+pbaspect('auto')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./pbaspect_3.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Interroger le rapport d'aspect de la boîte de tracé</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">[x, y] = meshgrid(-2:0.2:2);
+z = x .* exp(-x.^2 - y.^2);
+surf(x, y, z)
+pb = pbaspect()
+disp(pb)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./pbaspect_4.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Définir le rapport d'aspect de la boîte de tracé pour un objet axes spécifique</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+ax1 = subplot(2, 1, 1);
+plot(ax1, 1:10)
+ax2 = subplot(2, 1, 2);
+plot(ax2, 1:10)
+pbaspect(ax2, [2 2 1])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./pbaspect_5.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../graphics/daspect.html">daspect</a><a class="see-also-link" href="../graphics/axis.html">axis</a><a class="see-also-link" href="../graphics/xlim.html">xlim</a><a class="see-also-link" href="../graphics/ylim.html">ylim</a><a class="see-also-link" href="../graphics/zlim.html">zlim</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.16.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

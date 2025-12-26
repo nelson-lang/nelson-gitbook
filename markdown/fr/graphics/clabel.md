@@ -33,7 +33,7 @@ Objets Text créés par <b>clabel</b>. Les propriétés <b>String</b> contiennen
 
 - tl -
 
-Objets Text et ligne créés lorsque des marqueurs droits sont utilisés (pour l'utilisation de style<b>clabel(C)</b>).
+Objets Text et ligne créés lorsque des marqueurs droits sont utilisés (pour l'utilisation de style <b>clabel(C)</b>).
 
 ## 📄 Description
 

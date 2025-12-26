@@ -19,7 +19,7 @@ Convolution and polynomial multiplication.
 
 ## 📄 Description
 
-<b>conv</b> returns the convolution of vectors <b>u</b> and<b>v</b>.
+<b>conv</b> returns the convolution of vectors <b>u</b> and <b>v</b>.
 
 ## 💡 Example
 

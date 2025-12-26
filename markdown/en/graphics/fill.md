@@ -28,7 +28,7 @@ Create filled 2-D patches.
 
 <b>fill(..., PropertyName, PropertyValue, ...)</b> sets optional properties for the fill/patch object using name-value pairs.
 
-<b>go = fill(...)</b> returns the handle<b>go</b> to the created patch object.
+<b>go = fill(...)</b> returns the handle <b>go</b> to the created patch object.
 
 Property Name-Value Pairs:
 
@@ -46,7 +46,7 @@ Property Name-Value Pairs:
 
 <b>'Parent'</b>: handle of the parent object for the patch. Default:<b>gca()</b>.
 
-<b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the<b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.
+<b>'Vertices'</b>: matrix of vertex coordinates. The matrix must have size N-by-2 or N-by-3, where N is the number of vertices. Default: the vertex coordinates are specified by the <b>X</b>, <b>Y</b>, and <b>Z</b> input arguments.
 
 ## 💡 Examples
 

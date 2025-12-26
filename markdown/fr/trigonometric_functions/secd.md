@@ -16,7 +16,7 @@ Sécante de l'argument en degrés.
 
 ## 📄 Description
 
-<b>secd</b> calcule la sécante de l'argument en degrés pour chaque élément de<b>x</b>.
+<b>secd</b> calcule la sécante de l'argument en degrés pour chaque élément de <b>x</b>.
 
 ## 💡 Exemple
 

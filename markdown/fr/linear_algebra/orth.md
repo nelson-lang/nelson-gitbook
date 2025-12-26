@@ -18,7 +18,7 @@ Base orthonormée de l'espace image d'une matrice.
 
 ## 📄 Description
 
-<b>O = orth(A)</b> retourne une base orthonormée de l'image (range) de<b>A</b>.
+<b>O = orth(A)</b> retourne une base orthonormée de l'image (range) de <b>A</b>.
 
 ## 💡 Exemple
 
