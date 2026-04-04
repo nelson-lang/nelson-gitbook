@@ -4891,20 +4891,20 @@
   },
   {
     "title": "jsondecode",
-    "url": "./JSON/jsondecode.html",
-    "path": "./JSON/jsondecode.html",
+    "url": "./json/jsondecode.html",
+    "path": "./json/jsondecode.html",
     "content": "décodage d'une chaîne JSON en objet Nelson."
   },
   {
     "title": "jsonencode",
-    "url": "./JSON/jsonencode.html",
-    "path": "./JSON/jsonencode.html",
+    "url": "./json/jsonencode.html",
+    "path": "./json/jsonencode.html",
     "content": "encode un objet Nelson en une chaîne JSON."
   },
   {
     "title": "jsonprettyprint",
-    "url": "./JSON/jsonprettyprint.html",
-    "path": "./JSON/jsonprettyprint.html",
+    "url": "./json/jsonprettyprint.html",
+    "path": "./json/jsonprettyprint.html",
     "content": "formate une chaîne JSON."
   },
   {
@@ -4915,68 +4915,68 @@
   },
   {
     "title": "csvread",
-    "url": "./SPREADSHEET/csvread.html",
-    "path": "./SPREADSHEET/csvread.html",
+    "url": "./spreadsheet/csvread.html",
+    "path": "./spreadsheet/csvread.html",
     "content": "Lire un fichier de valeurs séparées par des virgules (CSV)."
   },
   {
     "title": "csvwrite",
-    "url": "./SPREADSHEET/csvwrite.html",
-    "path": "./SPREADSHEET/csvwrite.html",
+    "url": "./spreadsheet/csvwrite.html",
+    "path": "./spreadsheet/csvwrite.html",
     "content": "Écrire un fichier de valeurs séparées par des virgules (CSV)."
   },
   {
     "title": "detectImportOptions",
-    "url": "./SPREADSHEET/detectImportOptions.html",
-    "path": "./SPREADSHEET/detectImportOptions.html",
+    "url": "./spreadsheet/detectImportOptions.html",
+    "path": "./spreadsheet/detectImportOptions.html",
     "content": "Créer des options d'importation basées sur le contenu du fichier."
   },
   {
     "title": "dlmread",
-    "url": "./SPREADSHEET/dlmread.html",
-    "path": "./SPREADSHEET/dlmread.html",
+    "url": "./spreadsheet/dlmread.html",
+    "path": "./spreadsheet/dlmread.html",
     "content": "Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."
   },
   {
     "title": "dlmwrite",
-    "url": "./SPREADSHEET/dlmwrite.html",
-    "path": "./SPREADSHEET/dlmwrite.html",
+    "url": "./spreadsheet/dlmwrite.html",
+    "path": "./spreadsheet/dlmwrite.html",
     "content": "Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."
   },
   {
     "title": "readcell",
-    "url": "./SPREADSHEET/readcell.html",
-    "path": "./SPREADSHEET/readcell.html",
+    "url": "./spreadsheet/readcell.html",
+    "path": "./spreadsheet/readcell.html",
     "content": "Créer une cellule à partir d'un fichier."
   },
   {
     "title": "readmatrix",
-    "url": "./SPREADSHEET/readmatrix.html",
-    "path": "./SPREADSHEET/readmatrix.html",
+    "url": "./spreadsheet/readmatrix.html",
+    "path": "./spreadsheet/readmatrix.html",
     "content": "Créer une matrice à partir d'un fichier."
   },
   {
     "title": "readtable",
-    "url": "./SPREADSHEET/readtable.html",
-    "path": "./SPREADSHEET/readtable.html",
+    "url": "./spreadsheet/readtable.html",
+    "path": "./spreadsheet/readtable.html",
     "content": "Créer une table à partir d'un fichier."
   },
   {
     "title": "writecell",
-    "url": "./SPREADSHEET/writecell.html",
-    "path": "./SPREADSHEET/writecell.html",
+    "url": "./spreadsheet/writecell.html",
+    "path": "./spreadsheet/writecell.html",
     "content": "Écrire un tableau de cellules dans un fichier."
   },
   {
     "title": "writematrix",
-    "url": "./SPREADSHEET/writematrix.html",
-    "path": "./SPREADSHEET/writematrix.html",
+    "url": "./spreadsheet/writematrix.html",
+    "path": "./spreadsheet/writematrix.html",
     "content": "Écrire une matrice dans un fichier."
   },
   {
     "title": "writetable",
-    "url": "./SPREADSHEET/writetable.html",
-    "path": "./SPREADSHEET/writetable.html",
+    "url": "./spreadsheet/writetable.html",
+    "path": "./spreadsheet/writetable.html",
     "content": "Écrire une table dans un fichier."
   },
   {

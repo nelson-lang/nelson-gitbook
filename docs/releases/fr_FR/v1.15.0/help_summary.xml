@@ -1124,9 +1124,9 @@
     <p>JSON (JavaScript Object Notation) est un format de données texte léger largement utilisé pour transmettre des paires attribut-valeur et des tableaux.</p>
     <p>Ce module permet à Nelson d'interopérer avec des services web, des fichiers de configuration     et des applications qui utilisent JSON.</p>
   </chapter_description>
-      <keyword name="jsondecode" link="./JSON/jsondecode.html" description="décodage d'une chaîne JSON en objet Nelson."></keyword>
-      <keyword name="jsonencode" link="./JSON/jsonencode.html" description="encode un objet Nelson en une chaîne JSON."></keyword>
-      <keyword name="jsonprettyprint" link="./JSON/jsonprettyprint.html" description="formate une chaîne JSON."></keyword>
+      <keyword name="jsondecode" link="./json/jsondecode.html" description="décodage d'une chaîne JSON en objet Nelson."></keyword>
+      <keyword name="jsonencode" link="./json/jsonencode.html" description="encode un objet Nelson en une chaîne JSON."></keyword>
+      <keyword name="jsonprettyprint" link="./json/jsonprettyprint.html" description="formate une chaîne JSON."></keyword>
     </section>
     <section name="Feuille de calcul">
       <chapter_description>
@@ -1134,17 +1134,17 @@
     <p>Il prend en charge l'importation vers différents types de données comme les tableaux numériques, les cellules de chaînes et les tables, ainsi que leur exportation vers des fichiers.</p>
     <p>Cela permet une interaction fluide avec les logiciels de tableur (Excel, LibreOffice Calc, etc.) et l'échange de données entre applications.</p>
   </chapter_description>
-      <keyword name="csvread" link="./SPREADSHEET/csvread.html" description="Lire un fichier de valeurs séparées par des virgules (CSV)."></keyword>
-      <keyword name="csvwrite" link="./SPREADSHEET/csvwrite.html" description="Écrire un fichier de valeurs séparées par des virgules (CSV)."></keyword>
-      <keyword name="detectImportOptions" link="./SPREADSHEET/detectImportOptions.html" description="Créer des options d'importation basées sur le contenu du fichier."></keyword>
-      <keyword name="dlmread" link="./SPREADSHEET/dlmread.html" description="Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."></keyword>
-      <keyword name="dlmwrite" link="./SPREADSHEET/dlmwrite.html" description="Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."></keyword>
-      <keyword name="readcell" link="./SPREADSHEET/readcell.html" description="Créer une cellule à partir d'un fichier."></keyword>
-      <keyword name="readmatrix" link="./SPREADSHEET/readmatrix.html" description="Créer une matrice à partir d'un fichier."></keyword>
-      <keyword name="readtable" link="./SPREADSHEET/readtable.html" description="Créer une table à partir d'un fichier."></keyword>
-      <keyword name="writecell" link="./SPREADSHEET/writecell.html" description="Écrire un tableau de cellules dans un fichier."></keyword>
-      <keyword name="writematrix" link="./SPREADSHEET/writematrix.html" description="Écrire une matrice dans un fichier."></keyword>
-      <keyword name="writetable" link="./SPREADSHEET/writetable.html" description="Écrire une table dans un fichier."></keyword>
+      <keyword name="csvread" link="./spreadsheet/csvread.html" description="Lire un fichier de valeurs séparées par des virgules (CSV)."></keyword>
+      <keyword name="csvwrite" link="./spreadsheet/csvwrite.html" description="Écrire un fichier de valeurs séparées par des virgules (CSV)."></keyword>
+      <keyword name="detectImportOptions" link="./spreadsheet/detectImportOptions.html" description="Créer des options d'importation basées sur le contenu du fichier."></keyword>
+      <keyword name="dlmread" link="./spreadsheet/dlmread.html" description="Lire une matrice numérique depuis un fichier texte utilisant un délimiteur."></keyword>
+      <keyword name="dlmwrite" link="./spreadsheet/dlmwrite.html" description="Écrire une matrice numérique dans un fichier texte en utilisant un délimiteur."></keyword>
+      <keyword name="readcell" link="./spreadsheet/readcell.html" description="Créer une cellule à partir d'un fichier."></keyword>
+      <keyword name="readmatrix" link="./spreadsheet/readmatrix.html" description="Créer une matrice à partir d'un fichier."></keyword>
+      <keyword name="readtable" link="./spreadsheet/readtable.html" description="Créer une table à partir d'un fichier."></keyword>
+      <keyword name="writecell" link="./spreadsheet/writecell.html" description="Écrire un tableau de cellules dans un fichier."></keyword>
+      <keyword name="writematrix" link="./spreadsheet/writematrix.html" description="Écrire une matrice dans un fichier."></keyword>
+      <keyword name="writetable" link="./spreadsheet/writetable.html" description="Écrire une table dans un fichier."></keyword>
     </section>
     <section name="Interface de passage de messages (MPI)">
       <chapter_description>

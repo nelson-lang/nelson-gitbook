@@ -1126,9 +1126,9 @@
     <p>JSON (JavaScript Object Notation) is a lightweight, text-based data format widely used for transmitting attribute-value pairs and arrays.</p>
     <p>This module enables Nelson to interoperate with web services, configuration files, and applications that rely on JSON.</p>
   </chapter_description>
-      <keyword name="jsondecode" link="./JSON/jsondecode.html" description="decodes a JSON string to Nelson object."></keyword>
-      <keyword name="jsonencode" link="./JSON/jsonencode.html" description="encodes a Nelson object into a JSON string."></keyword>
-      <keyword name="jsonprettyprint" link="./JSON/jsonprettyprint.html" description="format an JSON string."></keyword>
+      <keyword name="jsondecode" link="./json/jsondecode.html" description="decodes a JSON string to Nelson object."></keyword>
+      <keyword name="jsonencode" link="./json/jsonencode.html" description="encodes a Nelson object into a JSON string."></keyword>
+      <keyword name="jsonprettyprint" link="./json/jsonprettyprint.html" description="format an JSON string."></keyword>
     </section>
     <section name="Spreadsheet">
       <chapter_description>
@@ -1136,17 +1136,17 @@
     <p>It supports importing into various data types like numeric arrays, cell arrays, and tables, as well as exporting them back to files.</p>
     <p>This enables smooth interaction with spreadsheet software (Excel, LibreOffice Calc, etc.) and data exchange between applications.</p>
   </chapter_description>
-      <keyword name="csvread" link="./SPREADSHEET/csvread.html" description="Read comma-separated value (CSV) file."></keyword>
-      <keyword name="csvwrite" link="./SPREADSHEET/csvwrite.html" description="Write comma-separated value file."></keyword>
-      <keyword name="detectImportOptions" link="./SPREADSHEET/detectImportOptions.html" description="Create import options based on file content."></keyword>
-      <keyword name="dlmread" link="./SPREADSHEET/dlmread.html" description="Read an numeric matrix from a text file file using a delimiter."></keyword>
-      <keyword name="dlmwrite" link="./SPREADSHEET/dlmwrite.html" description="Write an numeric matrix to a text file file using a delimiter."></keyword>
-      <keyword name="readcell" link="./SPREADSHEET/readcell.html" description="Create cell array from file."></keyword>
-      <keyword name="readmatrix" link="./SPREADSHEET/readmatrix.html" description="Create matrix array from file."></keyword>
-      <keyword name="readtable" link="./SPREADSHEET/readtable.html" description="Create table from file."></keyword>
-      <keyword name="writecell" link="./SPREADSHEET/writecell.html" description="Write a cell to a file."></keyword>
-      <keyword name="writematrix" link="./SPREADSHEET/writematrix.html" description="Write a matrix to a file."></keyword>
-      <keyword name="writetable" link="./SPREADSHEET/writetable.html" description="Write table to file."></keyword>
+      <keyword name="csvread" link="./spreadsheet/csvread.html" description="Read comma-separated value (CSV) file."></keyword>
+      <keyword name="csvwrite" link="./spreadsheet/csvwrite.html" description="Write comma-separated value file."></keyword>
+      <keyword name="detectImportOptions" link="./spreadsheet/detectImportOptions.html" description="Create import options based on file content."></keyword>
+      <keyword name="dlmread" link="./spreadsheet/dlmread.html" description="Read an numeric matrix from a text file file using a delimiter."></keyword>
+      <keyword name="dlmwrite" link="./spreadsheet/dlmwrite.html" description="Write an numeric matrix to a text file file using a delimiter."></keyword>
+      <keyword name="readcell" link="./spreadsheet/readcell.html" description="Create cell array from file."></keyword>
+      <keyword name="readmatrix" link="./spreadsheet/readmatrix.html" description="Create matrix array from file."></keyword>
+      <keyword name="readtable" link="./spreadsheet/readtable.html" description="Create table from file."></keyword>
+      <keyword name="writecell" link="./spreadsheet/writecell.html" description="Write a cell to a file."></keyword>
+      <keyword name="writematrix" link="./spreadsheet/writematrix.html" description="Write a matrix to a file."></keyword>
+      <keyword name="writetable" link="./spreadsheet/writetable.html" description="Write table to file."></keyword>
     </section>
     <section name="Message Passing Interface">
       <chapter_description>
