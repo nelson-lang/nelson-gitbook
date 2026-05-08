@@ -3,11 +3,18 @@ name: CI
 on: [push]
 
 jobs:
+
   build-windows:
     runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Verify Rust toolchain
+        run: |
+          rustc --version
+          cargo --version
+        shell: powershell
 
       - name: Install tools via Chocolatey
         run: |

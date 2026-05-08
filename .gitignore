@@ -8,3 +8,8 @@ all_en_files.txt
 temp_combined.md
 nelson-en.pdf
 nelson-fr.pdf
+target/
+to*.html
+to*.pdf
+temp_nelson-en.md
+temp_nelson-fr.md
