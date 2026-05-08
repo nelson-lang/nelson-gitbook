@@ -193,7 +193,7 @@ pub fn wrap_markdown_png_images(content: &str) -> String {
 }
 
 pub fn wrap_html_png_images(content: &str) -> String {
-    let re = Regex::new(r#"<img\b[^>]*src=['"][^'"]*\.png(?:\?[^'"]*)?\s*['"][^>]*>"#).unwrap();
+    let re = Regex::new(r#"<img\b[^>]*src\s*=\s*['"][^'"]*(?:\.png(?:\?[^'"]*)?|\.svg(?:\?[^'"]*)?|data:image/png;base64,)[^'"]*['"][^>]*>"#).unwrap();
     let src_re = Regex::new(r#"src\s*=\s*(?:"([^"]+)"|'([^']+)')"#).unwrap();
     let alt_re = Regex::new(r#"alt\s*=\s*(?:"([^"]*)"|'([^']*)')"#).unwrap();
 
@@ -225,7 +225,7 @@ pub fn wrap_html_png_images(content: &str) -> String {
             .and_then(|caps| caps.get(1).or_else(|| caps.get(2)))
             .map(|m| format!(" alt=\"{}\"", m.as_str()))
             .unwrap_or_default();
-        format!("<div style=\"width: 100%; max-width: 550px; margin: 10px auto; overflow: hidden !important; text-align: center;\"><img src=\"{normalized_src}\"{alt} style=\"max-width: 80%; max-height: 280px; height: auto; display: block; margin: 0 auto; overflow: hidden;\"></div>")
+        format!("<div class=\"nelson-pdf-image\"><img class=\"nelson-pdf-image__img\" src=\"{normalized_src}\"{alt}></div>")
     })
     .to_string()
 }
@@ -319,6 +319,21 @@ mod tests {
             wrap_markdown_png_images("![A](file:///a.png) ![E](https://cdn.jsdelivr.net/e.png)");
         assert!(out.contains("max-width: 550px"));
         assert!(out.contains("![E](https://cdn.jsdelivr.net/e.png)"));
+    }
+
+    #[test]
+    fn wraps_data_uri_png_html_images() {
+        let out = wrap_html_png_images(r#"<img src="data:image/png;base64,abc" alt="A"/>"#);
+        assert!(out.contains("class=\"nelson-pdf-image\""));
+        assert!(out.contains("class=\"nelson-pdf-image__img\""));
+        assert!(out.contains("data:image/png;base64,abc"));
+    }
+
+    #[test]
+    fn wraps_svg_html_images_if_conversion_is_skipped() {
+        let out = wrap_html_png_images(r#"<img src="file:///tmp/a.svg" alt="A"/>"#);
+        assert!(out.contains("class=\"nelson-pdf-image\""));
+        assert!(out.contains("file:///tmp/a.svg"));
     }
 
     #[test]

@@ -22,7 +22,7 @@ pub fn read_file_list(file_list: &Path) -> Result<Vec<PathBuf>> {
     let content = fs::read_to_string(file_list)?;
     Ok(content
         .lines()
-        .map(str::trim)
+        .map(|line| line.trim().trim_start_matches('\u{feff}'))
         .filter(|line| !line.is_empty())
         .map(PathBuf::from)
         .collect())

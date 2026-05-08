@@ -1,44 +1,74 @@
 # Nelson GitBook 📚
 
-Welcome to the Nelson GitBook repository! This project hosts the official documentation for the Nelson programming language.
+Welcome to the Nelson GitBook repository! This project hosts the official documentation for the [Nelson](https://nelson-lang.github.io/) array programming language.
 
-## Introduction 🌟
+## Overview 🌟
 
-Nelson is a powerful, user-friendly programming language focused on simplicity and efficiency. This GitBook provides comprehensive documentation, tutorials, and references to help you get started and master Nelson.
+This repository contains:
+
+- **HTML documentation** — built by Nelson's `buildhelpweb` and published to [nelson-lang.github.io/nelson-gitbook](https://nelson-lang.github.io/nelson-gitbook/).
+- **Markdown sources** — generated under `markdown/` for use with GitBook or offline reading.
+- **PDF builder** — a Rust tool (`nelson-pdf-builder`) that uses [Pandoc](https://pandoc.org/) to produce printable manuals.
+
+Supported languages: **English** (`en`) and **French** (`fr`).
 
 ## Prerequisites 🛠️
 
-Before you begin, ensure you have the following installed:
+| Tool                                                              | Purpose                               |
+| ----------------------------------------------------------------- | ------------------------------------- |
+| [Nelson](https://nelson-lang.github.io/)                          | Generate HTML and Markdown help files |
+| [Node.js](https://nodejs.org/)                                    | Run Prettier for Markdown formatting  |
+| [Rust / Cargo](https://www.rust-lang.org/)                        | Build the PDF builder tool            |
+| [Pandoc](https://pandoc.org/) + a PDF engine (e.g. `wkhtmltopdf`) | Render PDF manuals                    |
 
-- [Node.js](https://nodejs.org/) (for Prettier)
-- [Nelson](https://nelson-lang.github.io/) (any version you wish to document)
-
-To set up your environment:
+Install Node.js dependencies:
 
 ```bash
 nvm use .
 npm install
 ```
 
-## Installation ⚙️
+## Updating the Documentation ⚙️
 
-To generate and update the documentation:
+Run the following script from inside Nelson to regenerate all HTML and Markdown files:
 
-1. Run the update script from the root directory to extract all help files, convert them to Markdown, prettify, and generate HTML:
+```matlab
+% From the nelson-gitbook root directory
+run('./scripts/update_help.m');
+```
 
-   ```matlab
-   % From nelson-gitbook root directory
-   run('./scripts/update_help.m');
-   ```
+This script:
 
-2. Review and commit the modified files.
+1. Calls `buildhelpweb` to produce versioned and `latest` HTML output under `docs/releases/`.
+2. Calls `buildhelpmd` to regenerate the Markdown sources under `markdown/`.
+3. Runs Prettier to normalise formatting.
 
-3. Check the published documentation at: [https://nelson-lang.github.io/nelson-gitbook/](https://nelson-lang.github.io/nelson-gitbook/)
+After running, review and commit the modified files.
 
-## Usage 🚀
+## Building PDF Manuals 📄
 
-- Browse the documentation online or locally.
-- To contribute or update help files, edit the relevant source files and rerun the update script.
+### Linux / macOS
+
+```bash
+./pandoc-build-pdf.sh              # builds both en and fr
+./pandoc-build-pdf.sh en           # English only
+./pandoc-build-pdf.sh fr           # French only
+```
+
+### Windows
+
+```bat
+pandoc-build-pdf.bat               :: builds both en and fr
+pandoc-build-pdf.bat en            :: English only
+pandoc-build-pdf.bat fr            :: French only
+```
+
+The scripts compile the Rust PDF builder (`cargo build --release`) and then invoke it. Pandoc and the PDF engine must be available in `PATH`.
+
+## Published Documentation 🌐
+
+The latest documentation is available at:
+[https://nelson-lang.github.io/nelson-gitbook/](https://nelson-lang.github.io/nelson-gitbook/)
 
 ## Contributing 🤝
 
@@ -52,5 +82,3 @@ This project is licensed under the same license as Nelson. See the [LICENSE](LIC
 
 Maintainer: Allan CORNET  
 Email: <nelson.numerical.computation@gmail.com>
-
-Happy coding with Nelson! 🎉

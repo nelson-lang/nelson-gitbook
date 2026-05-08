@@ -7,6 +7,30 @@
 */
 
 /* Image styling - centered without scrollbars */
+.nelson-pdf-image {
+    width: 100% !important;
+    max-width: 680px !important;
+    margin: 10px auto 14px auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    page-break-inside: avoid !important;
+}
+
+.nelson-pdf-image__img {
+    max-width: 92% !important;
+    max-height: 420px !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    object-fit: contain !important;
+    overflow: hidden !important;
+}
+
 img {
     max-width: 92% !important;
     max-height: 480px !important; /* allow taller images but still constrained */
@@ -15,6 +39,15 @@ img {
     display: block !important;
     margin: 8px auto 12px auto !important;
     object-fit: contain !important;
+}
+
+/* wkhtmltopdf/WebKit may paint scrollbars for replaced SVG/image boxes.
+   Hide those visual scrollbars while keeping code blocks scrollable in HTML previews. */
+.nelson-pdf-image::-webkit-scrollbar,
+.nelson-pdf-image__img::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 
 /* Emoji images - inline display, small size, proper alignment */

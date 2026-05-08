@@ -151,6 +151,11 @@ pub fn run_single_build(build: &SingleBuild, config: &Config, logger: Logger) ->
         }
         if !config.keep_temp {
             let _ = fs::remove_file(&temp_markdown);
+        } else {
+            logger.info(format!(
+                "Keeping temporary image directory: {}",
+                converted_dir.keep().display()
+            ));
         }
         return Ok(());
     }
