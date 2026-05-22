@@ -27,7 +27,7 @@ y = asind(x)
 
 ## 🔗 Voir aussi
 
-[sind](../trigonometric/sind.md).
+[sind](../trigonometric_functions/sind.md).
 
 ## 🕔 Historique
 

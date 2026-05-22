@@ -1,27 +1,35 @@
 # interp1
 
-Interpolation linéaire de données 1-D
+Interpolation de donnees 1-D
 
 ## 📝 Syntaxe
 
 - vq = interp1(x, v, xq)
-- vq = interp1(x, v, xq, 'linear')
+- vq = interp1(x, v, xq, method)
+- vq = interp1(x, v, xq, method, extrapolation)
 - vq = interp1(v, xq)
-- vq = interp1(v, xq, 'linear')
+- vq = interp1(v, xq, method)
+- vq = interp1(v, xq, method, extrapolation)
+- pp = interp1(x, v, method, 'pp')
 
 ## 📥 Argument d'entrée
 
-- x - Points d'échantillonnage : vecteur.
-- v - Valeurs d'échantillonnage : vecteur, matrice.
-- xq - Points de requête : scalaire, vecteur, matrice.
+- x - Points d'echantillonnage : vecteur.
+- v - Valeurs d'echantillonnage : vecteur, matrice ou tableau.
+- xq - Points de requete : scalaire, vecteur, matrice ou tableau.
+- method - Methode : 'linear', 'nearest', 'next', 'previous', 'pchip', 'cubic', 'makima' ou 'spline'.
+- extrapolation - 'extrap' ou valeur scalaire.
 
 ## 📤 Argument de sortie
 
-- vq - Valeurs interpolées : scalaire, vecteur, matrice.
+- vq - Valeurs interpolees.
+- pp - Structure polynomiale par morceaux.
 
 ## 📄 Description
 
-<b>vq = interp1(x, v, xq)</b> retourne les valeurs interpolées d'une fonction 1-D à des points de requête spécifiques en utilisant l'interpolation linéaire.
+<b>interp1</b> retourne les valeurs interpolees d'une fonction 1-D. La methode par defaut est 'linear'.
+
+<b>pp = interp1(x, v, method, 'pp')</b> retourne une structure polynomiale par morceaux evaluable avec <b>ppval</b>.
 
 ## 📚 Bibliographie
 
@@ -30,15 +38,14 @@ de Boor, C., A Practical Guide to Splines, Springer-Verlag, 1978.
 ## 💡 Exemple
 
 ```matlab
-f = figure();
-v = [0  1.41  2  1.41  0  -1.41  -2  -1.41 0];
+v = [0 1.41 2 1.41 0 -1.41 -2 -1.41 0];
 xq = 1.5:8.5;
-vq = interp1(v,xq);
-plot(1:9, v, 'o', xq, vq, '*');
-legend('v','vq');
+vq = interp1(v, xq);
 ```
 
-<img src="interp1.svg" align="middle"/>
+## 🔗 Voir aussi
+
+[interp2](../special_functions/interp2.md), [interp3](../special_functions/interp3.md), [interpn](../special_functions/interpn.md), [ppval](../polynomial_functions/ppval.md).
 
 ## 🕔 Historique
 

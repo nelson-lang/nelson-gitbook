@@ -26,7 +26,7 @@ R = secd([1, 10+3i, 15+2i, 35+i])
 
 ## 🔗 See also
 
-[sec](../trigonometric/sec.md).
+[sec](../trigonometric_functions/sec.md).
 
 ## 🕔 History
 

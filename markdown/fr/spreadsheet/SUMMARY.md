@@ -1,4 +1,4 @@
-- [SPREADSHEET](README.md)
+- [spreadsheet](README.md)
   - [csvread](csvread.md)
   - [csvwrite](csvwrite.md)
   - [detectImportOptions](detectImportOptions.md)

@@ -36,7 +36,11 @@ Convertit une date/heure en représentation textuelle.
 
 <b>dateAsString = datestr(dateAsStringIn, formatOut, pivotYear)</b> convertit <b>dateAsStringIn</b> au format spécifié par <b>formatOut</b>, en utilisant éventuellement <b>pivotYear</b> pour interpréter les années sur deux chiffres.
 
-<b>dateAsString = datestr(..., 'local')</b> renvoie la date dans la langue du paramètre régional système courant. Si <b>'local'</b> est omis, la langue par défaut est l'anglais américain. L'option <b>'local'</b> peut être utilisée avec toutes les syntaxes précédentes et doit être le dernier argument.
+<b>dateAsString = datestr(..., 'local')</b> renvoie la date dans la langue du paramètre régional système courant. Si <b>
+'local'
+</b> est omis, la langue par défaut est l'anglais américain. L'option <b>
+'local'
+</b> peut être utilisée avec toutes les syntaxes précédentes et doit être le dernier argument.
 
 Formats de conversion pris en charge :
 

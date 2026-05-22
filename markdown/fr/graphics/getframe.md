@@ -53,7 +53,7 @@ imshow(F2.cdata)
 
 ## 🔗 Voir aussi
 
-[image](../graphics/image.md), [imshow](../graphics/imshow.md), [imwrite](../graphics/imwrite.md).
+[image](../graphics/image.md), [imshow](../graphics/imshow.md), [imwrite](../graphics_io/imwrite.md).
 
 ## 🕔 Historique
 

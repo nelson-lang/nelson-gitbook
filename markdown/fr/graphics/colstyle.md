@@ -10,7 +10,7 @@ Analyse la couleur et le style à partir d'une chaîne.
 ## 📥 Argument d'entrée
 
 - str - un vecteur ligne de caractères ou une chaîne scalaire : spécification de ligne.
-- 'plot' - linespec retourne 'none' et non '' avec cette option.
+- 'plot' - linespec retourne 'none' et non ' ' avec cette option.
 
 ## 📤 Argument de sortie
 

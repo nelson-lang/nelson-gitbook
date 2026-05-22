@@ -27,7 +27,7 @@ R = factorial(int8(4))
 
 ## 🔗 Voir aussi
 
-[gamma](../elementary_functions/gamma.md).
+[gamma](../special_functions/gamma.md).
 
 ## 🕔 Historique
 

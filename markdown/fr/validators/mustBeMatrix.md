@@ -27,7 +27,7 @@ mustBeMatrix(ones(3, 2, 4))
 
 ## 🔗 Voir aussi
 
-[ismatrix](../types/ismatrix.md).
+[ismatrix](../elementary_functions/ismatrix.md).
 
 ## 🕔 Historique
 

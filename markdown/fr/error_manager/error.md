@@ -18,7 +18,8 @@ Lever une erreur.
 
 <b>error</b> arrête l'exécution du script en cours.
 
-<b>error('')</b> sera ignorée et le script continuera à s'exécuter.
+<b>error('
+')</b> sera ignorée et le script continuera à s'exécuter.
 
 L'identifiant inclut un ou plusieurs champs composants et un champ mnémonique (exemple : 'nelson:matrix:empty').
 
@@ -27,7 +28,6 @@ L'identifiant inclut un ou plusieurs champs composants et un champ mnémonique (
 ```matlab
 error('your error message.')
 error('nelson:identifier', 'your error message.')
-
 error('')
 ```
 

@@ -33,7 +33,7 @@ M2 = reshape(M1, 5, [], 4)
 
 ## 🔗 Voir aussi
 
-[colon](../elementary_functions/colon.md).
+[colon](../operators/colon.md).
 
 ## 🕔 Historique
 

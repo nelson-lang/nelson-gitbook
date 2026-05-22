@@ -58,7 +58,7 @@ R
 
 ## 🔗 Voir aussi
 
-[fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fprintf.md), [dlmwrite](../stream_manager/dlmwrite.md).
+[fopen](../stream_manager/fopen.md), [fprintf](../stream_manager/fprintf.md), [dlmwrite](../spreadsheet/dlmwrite.md).
 
 ## 🕔 Historique
 

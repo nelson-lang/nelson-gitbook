@@ -19,7 +19,7 @@ Check that condition is false.
 ## 📤 Output argument
 
 - r - a logical value: true if the assertion passes, false otherwise.
-- msg - a string containing the error message. If x == false, then msg == ''. If x == true, then msg contains the assertion failure message.
+- msg - a string containing the error message. If x == false, then msg == ' '. If x == true, then msg contains the assertion failure message.
 
 ## 📄 Description
 

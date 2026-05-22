@@ -25,7 +25,7 @@ Test bloquant pour vérifier la présence d'un message.
 
 ## 🔗 Voir aussi
 
-[MPI_IProbe](../mpi/MPI_IProbe.md).
+[MPI_IProbe](../mpi/MPI_Iprobe.md).
 
 ## 🕔 Historique
 

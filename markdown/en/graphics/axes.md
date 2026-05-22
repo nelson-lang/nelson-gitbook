@@ -67,6 +67,7 @@ Properties:
 | **BeingDeleted**           | Flag indicating that the object is being deleted.                                                                                   |
 | **Interruptible**          | Callback interruption                                                                                                               |
 | **Layer**                  | Placement of grid lines and tick marks: 'top' or 'bottom' (default).                                                                |
+| **Layout**                 | Whether to include axes when automatically laying out the figure: 'on' or 'off' (default).                                          |
 | **LineStyleOrder**         | Line style order: character vector, cell array of character vectors, string array or '-' solid line (default).                      |
 | **LineStyleOrderIndex**    | Color order index: positive integer value, property specifies the next line style used.                                             |
 | **LineWidth**              | Line width: positive numeric value.                                                                                                 |
@@ -81,7 +82,7 @@ Properties:
 | **Projection**             | Type of projection onto 2-D screen: 'perspective' or 'orthographic' (default).                                                      |
 | **Selected**               | Selection state: 'on' or 'off' (default).                                                                                           |
 | **SelectionHighlight**     | Display of selection graphics objects: 'on' (default) or 'off'.                                                                     |
-| **Tag**                    | Object identifier: character vector, string scalar or '' (default).                                                                 |
+| **Tag**                    | Object identifier: character vector, string scalar or ' ' (default).                                                                |
 | **TickDir**                | Tick mark direction: 'out', 'both', 'none' or 'in' (default).                                                                       |
 | **TickDirMode**            | Selection mode for TickDir: 'manual' or 'auto' (default).                                                                           |
 | **TickLength**             | Tick mark length: two-element vector.                                                                                               |
@@ -102,7 +103,7 @@ Properties:
 | **XMinorGrid**             | Minor grid lines: 'on' or 'off' (default).                                                                                          |
 | **XScale**                 | Scale of values along axis: 'log' or 'linear' (default).                                                                            |
 | **XTick**                  | Tick values: vector of increasing values or [] (default).                                                                           |
-| **XTickLabel**             | Tick labels: cell array of character vectors or '' (default).                                                                       |
+| **XTickLabel**             | Tick labels: cell array of character vectors or ' ' (default).                                                                      |
 | **XTickLabelMode**         | Selection mode for tick labels: 'manual' or 'auto' (default).                                                                       |
 | **XTickMode**              | Selection mode for tick values: 'manual' or 'auto' (default).                                                                       |
 | **YAxisLocation**          | y-axis location: 'top', 'origin' or 'bottom' (default).                                                                             |
@@ -115,7 +116,7 @@ Properties:
 | **YMinorGrid**             | Minor grid lines: 'on' or 'off' (default).                                                                                          |
 | **YScale**                 | Scale of values along axis: 'log' or 'linear' (default).                                                                            |
 | **YTick**                  | Tick values: vector of increasing values or [] (default).                                                                           |
-| **YTickLabel**             | Tick labels: cell array of character vectors or '' (default).                                                                       |
+| **YTickLabel**             | Tick labels: cell array of character vectors or ' ' (default).                                                                      |
 | **YTickLabelMode**         | Selection mode for tick labels: 'manual' or 'auto' (default).                                                                       |
 | **YTickMode**              | Selection mode for tick values: 'manual' or 'auto' (default).                                                                       |
 | **ZColor**                 | Color of axis line, tick values, and labels: RGB triplet.                                                                           |
@@ -127,7 +128,7 @@ Properties:
 | **ZMinorGrid**             | Minor grid lines: 'on' or 'off' (default).                                                                                          |
 | **ZScale**                 | Scale of values along axis: 'log' or 'linear' (default).                                                                            |
 | **ZTick**                  | Tick values: vector of increasing values or [] (default).                                                                           |
-| **ZTickLabel**             | Tick labels: cell array of character vectors or '' (default).                                                                       |
+| **ZTickLabel**             | Tick labels: cell array of character vectors or ' ' (default).                                                                      |
 | **ZTickLabelMode**         | Selection mode for tick labels: 'manual' or 'auto' (default).                                                                       |
 | **ZTickMode**              | Selection mode for tick values: 'manual' or 'auto' (default).                                                                       |
 | **CreateFcn**              | Callback (function handle, string or cell) called when object is created. Set this property on an existing component has no effect. |

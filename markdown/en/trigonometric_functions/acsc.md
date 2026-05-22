@@ -27,7 +27,7 @@ R = acsc(0.5)
 
 ## 🔗 See also
 
-[cscd](../trigonometric/cscd.md), [csc](../trigonometric/csc.md).
+[cscd](../trigonometric_functions/cscd.md), [csc](../trigonometric_functions/csc.md).
 
 ## 🕔 History
 

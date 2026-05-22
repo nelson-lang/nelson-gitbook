@@ -48,7 +48,7 @@ res = isa(B, 'cell')
 
 ## 🔗 Voir aussi
 
-[class](../types/class.md), [isinteger](../integer/isinteger.md), [isnumeric](../types/isnumeric.md).
+[class](../types/class.md), [isinteger](../types/isinteger.md), [isnumeric](../types/isnumeric.md).
 
 ## 🕔 Historique
 

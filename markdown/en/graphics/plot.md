@@ -36,19 +36,19 @@ Linear 2-D plot.
 
 The SymbolSpec specifies the symbol to be drawn at each data point:
 
-| Symbol   | Description                       |
-| -------- | --------------------------------- |
-| **'o'**  | Circle symbol                     |
-| **'x'**  | Times symbol                      |
-| **'+'**  | Plus symbol                       |
-| **'\*'** | Asterisk symbol                   |
-| **'.'**  | Dot symbol                        |
-| **'s'**  | Square symbol                     |
-| **'d'**  | Diamond symbol                    |
-| **'v'**  | Downward-pointing triangle symbol |
-| **'^'**  | Upward-pointing triangle symbol   |
-| **'>'**  | Left-pointing triangle symbol     |
-| **'<'**  | Right-pointing triangle symbol    |
+| Symbol    | Description                       |
+| --------- | --------------------------------- |
+| **'o'**   | Circle symbol                     |
+| **'x'**   | Times symbol                      |
+| **'+'**   | Plus symbol                       |
+| **'\*'**  | Asterisk symbol                   |
+| **'.'**   | Dot symbol                        |
+| **'s'**   | Square symbol                     |
+| **'d'**   | Diamond symbol                    |
+| **'v'**   | Downward-pointing triangle symbol |
+| **'^'**   | Upward-pointing triangle symbol   |
+| **' > '** | Left-pointing triangle symbol     |
+| **' < '** | Right-pointing triangle symbol    |
 
 The LineStyleSpec specifies the line style to use for each data series:
 

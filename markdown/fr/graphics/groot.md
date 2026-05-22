@@ -28,7 +28,7 @@ Propriétés :
 
 <b>ScreenSize</b> : Taille de l'écran principal (vecteur).
 
-<b>Tag</b> : Identifiant de l'objet : chaîne, vecteur de caractères, '' (par défaut).
+<b>Tag</b> : Identifiant de l'objet : chaîne, vecteur de caractères, ' ' (par défaut).
 
 <b>Type</b> : Type 'root'.
 

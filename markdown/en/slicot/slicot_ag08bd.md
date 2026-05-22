@@ -110,8 +110,6 @@ M = 3; P = 0;
 [A_OUT, E_OUT, NFZ, NRANK, NIZ, DINFZ, NKROR, NINFE, NKROL, INFZ, KRONR, INFE, KRONL, INFO] = slicot_ag08bd(EQUIL, M, P, A_IN, E_IN, B, C, D, TOL)
 %=============================================================================
 
-
-
 ```
 
 ## 🕔 History

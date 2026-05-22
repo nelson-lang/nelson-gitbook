@@ -29,19 +29,29 @@ Une fois le mode déplacement activé, vous pouvez ajuster la vue des axes avec 
 
 Curseur : cliquez et faites glisser le curseur dans les axes.
 
-Clavier : pour déplacer horizontalement, utilisez les flèches gauche (←) ou droite (→). Pour déplacer verticalement, utilisez les flèches haut (↑) ou bas (↓).
+Clavier : pour déplacer horizontalement, utilisez les flèches gauche (←) ou droite (->). Pour déplacer verticalement, utilisez les flèches haut (↑) ou bas (↓).
 
 L'option du mode déplacement peut être spécifiée avec l'une des valeurs suivantes :
 
-<b>'toggle'</b> : Bascule le mode déplacement. Si le mode est désactivé, 'toggle' revient à la dernière option utilisée parmi 'on', 'xon' ou 'yon'. Ce comportement est identique à l'appel de pan sans argument.
+<b>
+        'toggle'
+      </b> : Bascule le mode déplacement. Si le mode est désactivé, 'toggle' revient à la dernière option utilisée parmi 'on', 'xon' ou 'yon'. Ce comportement est identique à l'appel de pan sans argument.
 
-<b>'xon'</b> : Active le mode déplacement uniquement sur l'axe x.
+<b>
+        'xon'
+      </b> : Active le mode déplacement uniquement sur l'axe x.
 
-<b>'yon'</b> : Active le mode déplacement uniquement sur l'axe y.
+<b>
+        'yon'
+      </b> : Active le mode déplacement uniquement sur l'axe y.
 
-<b>'on'</b> : Active le mode déplacement.
+<b>
+        'on'
+      </b> : Active le mode déplacement.
 
-<b>'off'</b> : Désactive le mode déplacement. Certaines interactions par défaut peuvent persister quel que soit le mode d'interaction.
+<b>
+        'off'
+      </b> : Désactive le mode déplacement. Certaines interactions par défaut peuvent persister quel que soit le mode d'interaction.
 
 ## 💡 Exemple
 

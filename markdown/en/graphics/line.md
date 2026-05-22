@@ -33,13 +33,13 @@ Properties:
 
 <b>Color</b> Line color: RGB triplet, [0, 0, 0] or hexadecimal color code.
 
-<b>DisplayName</b> Legend label: character vector or string scalar, '' (default).
+<b>DisplayName</b> Legend label: character vector or string scalar, ' ' (default).
 
 <b>LineStyle</b> Line style: '--', ':', '-.', 'none' or '-' (default).
 
 <b>LineWidth</b> Line width: scalar positive value.
 
-<b>Marker</b> Marker symbol: 'o' (circle), '+' (Plus sign), '\*' (asterik), '.' (point), 'x' (cross), '\_' (horizontal line) , '\|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), '>' (Right-pointing triangle), '<' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default).
+<b>Marker</b> Marker symbol: 'o' (circle), '+' (Plus sign), '\*' (asterik), '.' (point), 'x' (cross), '\_' (horizontal line) , '\|' (vertical line), 'square', 'diamond', '^' (Upward-pointing triangle), 'v' (Downward-pointing triangle), ' > ' (Right-pointing triangle), ' < ' (Left-pointing triangle), 'pentagram', 'hexagram', 'none'(default).
 
 <b>MarkerEdgeColor</b> Marker outline color: RGB triplet.
 
@@ -49,7 +49,7 @@ Properties:
 
 <b>Parent</b> Parent: axes graphics object.
 
-<b>Tag</b> Object identifier: string scalar, character vector, '' (default).
+<b>Tag</b> Object identifier: string scalar, character vector, ' ' (default).
 
 <b>Type</b> Type of graphics object: 'line'
 

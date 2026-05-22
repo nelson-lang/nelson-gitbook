@@ -26,7 +26,7 @@ R = cot([-i pi+i*pi/2 -1+i*4])
 
 ## 🔗 See also
 
-[coth](../trigonometric/coth.md), [acoth](../trigonometric/acoth.md).
+[coth](../trigonometric_functions/coth.md), [acoth](../trigonometric_functions/acoth.md).
 
 ## 🕔 History
 

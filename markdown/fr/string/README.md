@@ -23,10 +23,14 @@ Le module inclut également des fonctions pour rechercher, faire correspondre, r
 - [isletter](isletter.md) - Détermine quels caractères sont des lettres.
 - [isspace](isspace.md) - Détermine quels caractères sont des espaces.
 - [join](join.md) - Combine des chaînes.
-- [mat2str](mat2str.md) - Conversion matrice → chaîne.
+- [mat2str](mat2str.md) - Conversion matrice -> chaîne.
 - [matches](matches.md) - Détermine si un motif correspond aux chaînes.
 - [newline](newline.md) - Renvoie le caractère de nouvelle ligne.
 - [num2str](num2str.md) - Convertit des nombres en tableau de caractères.
+- [regexp](regexp.md) - Recherche par expression reguliere.
+- [regexpi](regexpi.md) - Recherche par expression reguliere sans tenir compte de la casse.
+- [regexprep](regexprep.md) - Remplace du texte avec une expression reguliere.
+- [regexptranslate](regexptranslate.md) - Traduit du texte en expression reguliere.
 - [replace](replace.md) - Remplace des sous-chaînes dans une chaîne.
 - [sprintf](sprintf.md) - Écrit des données dans une chaîne.
 - [startsWith](startsWith.md) - Vérifie si une chaîne commence par un motif.

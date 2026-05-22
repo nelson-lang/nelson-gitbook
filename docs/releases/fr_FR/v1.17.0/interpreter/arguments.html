@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>arguments</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">arguments</span></div></div>
+<div class="section syntax-section"><div class="subtitle">bloc de validation des arguments de fonction.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">arguments, argSpecs, end
+arguments (Input), argSpecs, end
+arguments (Repeating), argSpecs, end
+arguments (Output), argSpecs, end
+arguments (Output,Repeating), argSpec, end
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>arguments ... end</b> déclare les arguments d'entrée pour une fonction.
+      Le bloc est optionnel.
+      Si un ou plusieurs blocs <b>arguments</b> sont inclus, ils doivent tous apparaître avant la première ligne exécutable de la fonction.
+      Un bloc sans qualificateur est traité comme un bloc d'entrée.</p>
+    <p>Chaque déclaration d'argument suit cette forme :</p>
+    <p>
+      argName (dimensions) class {validators} = defaultValue
+    </p>
+    <p>
+      <b>(dimensions)</b> — Taille de l'entrée spécifiée sous forme de liste séparée par des virgules d'entiers ou de deux-points,
+      par exemple (1,1), (1,:), ou (3,5,2).
+      Un deux-points permet n'importe quelle longueur dans cette dimension.
+      L'entrée doit correspondre exactement aux dimensions déclarées, ou être compatible avec elles
+      (par exemple, un vecteur colonne est compatible avec (1,:) et est automatiquement redimensionné).
+      Les expressions ne sont pas autorisées dans les dimensions.</p>
+    <p>
+      <b>class</b> — Un nom de classe unique tel que double, char, ou string.
+      La valeur est convertie en cette classe lorsque cela est possible.
+      Si omis, toute classe est acceptée.</p>
+    <p>
+      <b>{validators}</b> — Une liste séparée par des virgules de fonctions de validation, entourée d'accolades ,
+      par exemple {mustBeNumeric, mustBeReal}.
+      Les fonctions de validation génèrent une erreur lorsque la condition n'est pas remplie ; contrairement à la classe, elles ne modifient jamais la valeur de l'argument.</p>
+    <p>
+      <b>= defaultValue</b> — Une expression qui fournit une valeur par défaut et rend l'argument optionnel.
+      L'expression peut faire référence aux arguments déclarés précédemment.
+      Les arguments optionnels doivent être positionnés après tous les arguments requis dans la signature de la fonction et dans le bloc <b>arguments</b>.</p>
+    <p>
+      <b>arguments (Repeating) ... end</b> déclare des arguments d'entrée répétitifs.
+      Une fonction ne peut contenir qu'un seul bloc d'entrée répétitif.
+      Nelson crée un tableau de cellules pour chaque argument répétitif contenant toutes les valeurs passées pour cet argument.
+      Si la fonction possède également des arguments nom-valeur, ceux-ci doivent être déclarés dans un bloc <b>arguments</b> séparé après le bloc répétitif.</p>
+    <p>
+      <b>arguments (Output) ... end</b> déclare des arguments de sortie.
+      Les blocs de sortie doivent apparaître après tous les blocs d'entrée mais avant la première ligne exécutable de la fonction.
+      Lorsque des blocs d'entrée et de sortie sont présents, il est recommandé d'utiliser les qualificateurs explicites <b>(Input)</b> et <b>(Output)</b> pour une meilleure lisibilité.
+      Les arguments de sortie ne peuvent pas définir de valeurs par défaut, et les fonctions de validation appliquées à un argument de sortie ne peuvent pas faire référence à d'autres arguments de sortie.</p>
+    <p>
+      <b>arguments (Output,Repeating) ... end</b> déclare un seul argument de sortie répétitif.
+      Au maximum un argument de sortie répétitif est autorisé par fonction.varargout peut apparaître dans un bloc de sortie répétitif uniquement lorsqu'il est le seul argument de sortie.</p>
+    <p>      Pour les arguments nom-valeur, utilisez la notation nv.name dans le bloc <b>arguments</b>,
+      où nv correspond au nom de la structure utilisé dans la signature de la fonction.</p>
+    <p>      Les blocs <b>arguments</b> ne peuvent pas être utilisés dans les fonctions imbriquées, les méthodes abstraites ou les méthodes destructrices de classes handle.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Restreindre la taille et le type d'un argument d'entrée. Un vecteur colonne est accepté car il est compatible avec la taille (1,:) et est automatiquement redimensionné.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function [m, s] = twoStats(x)
+  arguments
+    x (1,:) {mustBeNumeric}
+  end
+  m = mean(x, 'all');
+  s = std(x, 1, 'all');
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Argument optionnel avec une valeur par défaut dérivée d'un argument déclaré précédemment.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function c = myMul(a, b, c)
+  arguments
+    a uint32
+    b uint32
+    c uint32 = a .* b
+  end
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser des fonctions de validation pour restreindre les valeurs des arguments. L'argument method est optionnel et par défaut vaut 'linear'.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function r = myInterp(x, method)
+  arguments
+    x (1,:) double {mustBeNumeric, mustBeReal}
+    method (1,:) char {mustBeMember(method, {'linear', 'nearest'})} = 'linear'
+  end
+  r = {x, method};
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Déclarer des arguments nom-valeur optionnels en utilisant une structure. Les options LineStyle et LineWidth ont des valeurs par défaut, donc elles sont optionnelles.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function myRectangle(X, Y, options)
+  arguments
+    X double
+    Y double
+    options.LineStyle (1,1) string = "-"
+    options.LineWidth (1,1) {mustBeNumeric} = 1
+  end
+  % Function code
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Déclarer des arguments d'entrée répétitifs. Nelson crée un tableau de cellules pour chaque argument répétitif.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function fRepeat(x, y, style)
+  arguments (Repeating)
+    x (1,:) double
+    y (1,:) double
+    style {mustBeMember(style, {'--', ':'})}
+  end
+  z = reshape([x; y; style], 1, []);
+  if ~isempty(z)
+    plot(z{:});
+  end
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Valider à la fois les arguments d'entrée et de sortie en utilisant des blocs séparés.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function out = myFunction(A, B, C)
+  arguments (Input)
+    A (1,1) string
+    B (1,:) double
+    C (2,2) cell
+  end
+  arguments (Output)
+    out (1,:) double
+  end
+  out = B;
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Arguments d'entrée et de sortie répétitifs avec validation. Restreint à la fois les entrées et les sorties aux vecteurs ligne.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function vectorSum = repeatSum(a, b)
+  arguments (Input,Repeating)
+    a (1,:)
+    b (1,:)
+  end
+  arguments (Output,Repeating)
+    vectorSum (1,:)
+  end
+  n = numel(a);
+  vectorSum{n} = a{n} + b{n};
+  for i = 1:n-1
+    vectorSum{i} = a{i} + b{i};
+  end
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../interpreter/function.html">function</a><a class="see-also-link" href="../interpreter/iskeyword.html">iskeyword</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.17.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

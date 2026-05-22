@@ -12,7 +12,7 @@ Exécuter un fichier Python depuis Nelson.
 ## 📥 Argument d'entrée
 
 - filename - un scalaire string, vecteur de caractères : nom du fichier .py à exécuter.
-- "filename 'input'" - un scalaire string, vecteur de caractères : nom du fichier .py à exécuter avec arguments d'entrée.
+- "filename 'input' " - un scalaire string, vecteur de caractères : nom du fichier .py à exécuter avec arguments d'entrée.
 - pyName, pyValue - noms et valeurs des arguments d'entrée
 - outputs - tableau de chaînes : noms de variables Python.
 

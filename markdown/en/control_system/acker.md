@@ -43,7 +43,7 @@ K = acker(A, B, P)
 
 ## 🔗 See also
 
-[place](../control_system/place.md).
+[cloop](../control_system/cloop.md).
 
 ## 🕔 History
 

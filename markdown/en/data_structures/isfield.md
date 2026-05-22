@@ -37,7 +37,7 @@ isfield(S,{ 1, 'nel'; 2, 'son'})
 
 ## 🔗 See also
 
-[fieldnames](../types/fieldnames.md).
+[fieldnames](../data_structures/fieldnames.md).
 
 ## 🕔 History
 

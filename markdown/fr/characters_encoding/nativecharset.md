@@ -30,7 +30,7 @@ ICU library
 
 ```matlab
 C = uint8([194   232   240   242   243   224   235   252   237   224   255]);
-nativecharset(R)
+nativecharset(C)
 ```
 
 ## 🔗 Voir aussi

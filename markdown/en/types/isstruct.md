@@ -38,7 +38,7 @@ res = isstruct(C)
 
 ## 🔗 See also
 
-[isa](../types/isa.md), [struct](../integer/struct.md).
+[isa](../types/isa.md), [struct](../data_structures/struct.md).
 
 ## 🕔 History
 

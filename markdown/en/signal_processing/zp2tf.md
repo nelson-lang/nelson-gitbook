@@ -36,7 +36,7 @@ k = 1;
 
 ## 🔗 See also
 
-[tf2zpk](../signal_processing/tf2zpk.md).
+[tf](../control_system/tf.md).
 
 ## 🕔 History
 

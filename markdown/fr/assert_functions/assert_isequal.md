@@ -16,7 +16,7 @@ Vérifie que les valeurs calculées et attendues sont égales.
 ## 📤 Argument de sortie
 
 - res - une valeur logique : true si les valeurs sont égales, false sinon.
-- msg - une chaîne contenant le message d'erreur. Si res == true, alors msg == ''. Si res == false, alors msg contient le message d'échec de l'assertion.
+- msg - une chaîne contenant le message d'erreur. Si res == true, alors msg == ' '. Si res == false, alors msg contient le message d'échec de l'assertion.
 
 ## 📄 Description
 
@@ -34,7 +34,7 @@ isequaln
 
 ## 📚 Bibliographie
 
-"Automated Software Testing for Matlab", Steven Eddins, 2009
+    "Automated Software Testing for Matlab", Steven Eddins, 2009
 
 ## 💡 Exemples
 

@@ -9,7 +9,7 @@ Trouver le chemin de CMake
 ## 📤 Argument de sortie
 
 - status - a logical.
-- cmake_path - a string: path of CMake or ''.
+- cmake_path - a string: path of CMake or ' '.
 
 ## 📄 Description
 

@@ -36,7 +36,8 @@ This module enables flexible manipulation of data structures and numerical array
 - [plus](plus.md) - Addition, + operator
 - [power](power.md) - Element wise power, .^ operator
 - [rdivide](rdivide.md) - Right division, ./ operator
-- [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &&
+- [shortcutand](shortcutand.md) - Short circuit 'AND' operator, &
+  &
 - [shortcutor](shortcutor.md) - Short circuit 'OR' operator, ||
 - [subsasgn](subsasgn.md) - Redefine subscripted assignment.
 - [subsindex](subsindex.md) - Convert an object to an index vector.

@@ -25,7 +25,6 @@ f = figure();
 ax = gca();
 plot(ax, 1:10, sin(1:10));
 assert_istrue(is2D(ax));
-
 f = figure();
 surf(peaks);
 ax = gca();

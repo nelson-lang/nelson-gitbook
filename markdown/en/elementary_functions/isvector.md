@@ -28,7 +28,7 @@ R = isvector(A(:,1))
 
 ## 🔗 See also
 
-[isempty](../elementary_functions/isempty.md).
+[isempty](../types/isempty.md).
 
 ## 🕔 History
 

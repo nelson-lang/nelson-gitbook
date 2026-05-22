@@ -6,10 +6,10 @@ Renvoie le dernier message d'avertissement enregistré.
 
 - last_message = lastwarn()
 - [last\_message, last\_identifier] = lastwarn()
-- lastwarn('')
+- lastwarn(' ')
 - lastwarn(new_message)
 - lastwarn(new_message, new_identifier)
-- [last\_message, last\_identifier] = lastwarn('')
+- [last\_message, last\_identifier] = lastwarn(' ')
 - [last\_message, last\_identifier] = lastwarn(new_message)
 - [last\_message, last\_identifier] = lastwarn(new_message, new_identifier)
 
@@ -22,7 +22,8 @@ Renvoie le dernier message d'avertissement enregistré.
 
 <b>last_message = lastwarn()</b> renvoie une chaîne contenant le dernier message d'avertissement.
 
-<b>lastwarn('')</b> efface le dernier avertissement.
+<b>lastwarn('
+')</b> efface le dernier avertissement.
 
 ## 💡 Exemple
 

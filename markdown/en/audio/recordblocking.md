@@ -33,7 +33,7 @@ play(myVoice);
 
 ## 🔗 See also
 
-[audiorecorder](../audio/audiorecorder.md), [play](../audio/play.md), [recordblocking](../audio/recordblocking.md), [pause](../audio/pause.md), [resume](../audio/resume.md), [stop](../audio/stop.md).
+[audiorecorder](../audio/audiorecorder.md), [play](../audio/play.md), [recordblocking](../audio/recordblocking.md), [pause](../audio/audiorecorder_pause.md), [resume](../audio/resume.md), [stop](../audio/stop.md).
 
 ## 🕔 History
 

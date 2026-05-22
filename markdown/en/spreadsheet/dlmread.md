@@ -26,7 +26,8 @@ Read an numeric matrix from a text file file using a delimiter.
 
 <b>M = dlmread(filename, delimiter, R1, C1)</b> starts reading data at the row and column offsets specified by<b>R1</b> and<b>C1</b>. For example, R1=0, C1=0 indicates the first value in the file.
 
-To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like <b>M = dlmread(filename, '', 3, 1)</b>.
+To set row and column offsets without defining a delimiter, use an empty character as a placeholder, like <b>M = dlmread(filename, '
+', 3, 1)</b>.
 
 <b>M = dlmread(filename, delimiter)</b> reads data from the file using the specified delimiter and treats repeated delimiter characters as separate delimiters.
 
@@ -50,22 +51,18 @@ A = [Inf, -Inf, NaN, 3];
 filename = [tempdir(), 'dlmread_example.csv'];
 dlmwrite(filename, A);
 R = dlmread(filename)
-
 ```
 
 Read a CSV file with a header
 
 ```matlab
-
 filename = [tempdir(), 'dlmread_example.csv'];
 filewrite(filename, ['A,B,C,D,E,F',char(10)]);
 A = magic(6);
 dlmwrite(filename, A, '-append');
 fileread(filename)
-
-R = dlmread(filename, '', 1, 0)
-
-
+R = dlmread(filename, '
+        ', 1, 0)
 ```
 
 ## 🔗 See also

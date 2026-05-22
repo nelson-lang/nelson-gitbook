@@ -20,7 +20,7 @@ Vérifie que les valeurs calculées et attendues sont approximativement égales.
 ## 📤 Argument de sortie
 
 - res - une valeur logique : true si les valeurs sont approximativement égales, false sinon.
-- msg - une chaîne contenant le message d'erreur. Si res == true, alors msg == ''. Si res == false, alors msg contient le message d'échec de l'assertion.
+- msg - une chaîne contenant le message d'erreur. Si res == true, alors msg == ' '. Si res == false, alors msg contient le message d'échec de l'assertion.
 
 ## 📄 Description
 

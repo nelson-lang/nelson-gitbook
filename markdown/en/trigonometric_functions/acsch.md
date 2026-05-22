@@ -27,7 +27,7 @@ R = acsch(X)
 
 ## 🔗 See also
 
-[csch](../trigonometric/csch.md), [sinh](../trigonometric/sinh.md).
+[csch](../trigonometric_functions/csch.md), [sinh](../trigonometric_functions/sinh.md).
 
 ## 🕔 History
 

@@ -26,15 +26,27 @@ Pas d'interruption : Si le callback en cours n'inclut aucune de ces commandes, N
 
 Conditions d'interruption : Si le callback en cours inclut l'une de ces commandes, le comportement dépend de la propriété Interruptible de l'objet propriétaire du callback :
 
-Si <b>Interruptible</b> est à<b>'on'</b>, Nelson autorise l'interruption. Le callback en cours est mis en pause, le callback interrompant est exécuté, puis Nelson reprend l'exécution du callback initial.
+Si <b>Interruptible</b> est à<b>
+'on'
+</b>, Nelson autorise l'interruption. Le callback en cours est mis en pause, le callback interrompant est exécuté, puis Nelson reprend l'exécution du callback initial.
 
-Si <b>Interruptible</b> est à<b>'off'</b>, l'interruption est bloquée. La propriété <b>BusyAction</b> du callback interrompant détermine alors la suite :
+Si <b>Interruptible</b> est à<b>
+'off'
+</b>, l'interruption est bloquée. La propriété <b>BusyAction</b> du callback interrompant détermine alors la suite :
 
-Si <b>BusyAction</b> est <b>'queue'</b>, le callback interrompant sera exécuté après la fin du callback en cours.
+Si <b>BusyAction</b> est <b>
+'queue'
+</b>, le callback interrompant sera exécuté après la fin du callback en cours.
 
-Si <b>BusyAction</b> est <b>'cancel'</b>, le callback interrompant est ignoré et non exécuté.
+Si <b>BusyAction</b> est <b>
+'cancel'
+</b>, le callback interrompant est ignoré et non exécuté.
 
-Par défaut, la propriété <b>Interruptible</b> est à <b>'on'</b> et <b>BusyAction</b> à <b>'queue'</b>.
+Par défaut, la propriété <b>Interruptible</b> est à <b>
+'on'
+</b> et <b>BusyAction</b> à <b>
+'queue'
+</b>.
 
 À noter : certains callbacks, notamment <b>DeleteFcn</b>, <b>CloseRequestFcn</b> et <b>SizeChangedFcn</b>, interrompent le callback en cours quel que soit la valeur de la propriété Interruptible.
 

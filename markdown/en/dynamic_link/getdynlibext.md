@@ -22,7 +22,7 @@ getdynlibext()
 
 ## 🔗 See also
 
-[addgateway](../dynamic_link/addgateway.md).
+[addgateway](../modules_manager/addgateway.md).
 
 ## 🕔 History
 

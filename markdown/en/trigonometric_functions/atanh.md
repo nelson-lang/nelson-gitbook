@@ -27,7 +27,7 @@ res = atanh(A)
 
 ## 🔗 See also
 
-[tanh](../trigonometric/tanh.md).
+[tanh](../trigonometric_functions/tanh.md).
 
 ## 🕔 History
 

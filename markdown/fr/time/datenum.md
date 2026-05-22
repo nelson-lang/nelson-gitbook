@@ -12,7 +12,7 @@ d = datenum(...) Convertit différents formats de date en numéro de date série
 
 ## 📥 Argument d'entrée
 
-- format - une chaîne spécifiant le format de date, ou laissez vide ('') pour la détection automatique du format.
+- format - une chaîne spécifiant le format de date, ou laissez vide (' ') pour la détection automatique du format.
 - datestr - une chaîne, cellule de chaînes ou tableau de chaînes : texte représentant une date.
 - Y, M, D, H, MN, S - double : Année, Mois, Jour, Heures, Minutes, Secondes (scalaire ou vecteur).
 - pivotYear - entier : année pivot (par défaut : année courante moins 50 ans).
@@ -101,11 +101,12 @@ d = datenum(["04–Aug-1973 12:01:18"; "04–Aug-1974 11:01:18"])
 
 ## 🕔 Historique
 
-| Version | 📄 Description                                  |
-| ------- | ----------------------------------------------- |
-| 1.0.0   | version initiale                                |
-| 1.8.0   | analyse des chaînes de date étendue.            |
-| 1.10.0  | ajout : format '' signifie essayer de détecter. |
+| Version                         | 📄 Description                       |
+| ------------------------------- | ------------------------------------ |
+| 1.0.0                           | version initiale                     |
+| 1.8.0                           | analyse des chaînes de date étendue. |
+| 1.10.0                          | ajout : format '                     |
+| ' signifie essayer de détecter. |
 
 <!--
 ## 👤 Auteur

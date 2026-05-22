@@ -39,19 +39,33 @@ Keyboard: Press the up arrow (↑) key to zoom in, and the down arrow (↓) key 
 
 The zoom mode option can be specified using one of the following values:
 
-<b>'toggle'</b>: Toggles the zoom mode. If zoom mode is disabled, 'toggle' reverts to the most recently used zoom option of 'on', 'xon', or 'yon'. This option behaves the same as calling zoom without any arguments.
+<b>
+        'toggle'
+      </b>: Toggles the zoom mode. If zoom mode is disabled, 'toggle' reverts to the most recently used zoom option of 'on', 'xon', or 'yon'. This option behaves the same as calling zoom without any arguments.
 
-<b>'xon'</b>: Enables zoom mode for the x-dimension exclusively.
+<b>
+        'xon'
+      </b>: Enables zoom mode for the x-dimension exclusively.
 
-<b>'yon'</b>: Activates zoom mode for the y-dimension exclusively.
+<b>
+        'yon'
+      </b>: Activates zoom mode for the y-dimension exclusively.
 
-<b>'on'</b>: Activates zoom mode.
+<b>
+        'on'
+      </b>: Activates zoom mode.
 
-<b>'off'</b>: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode.
+<b>
+        'off'
+      </b>: Deactivates zoom mode. Note that certain default interactions may persist regardless of the interaction mode.
 
-<b>'reset'</b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the <b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level.
+<b>
+        'reset'
+      </b>: Establishes the current zoom level as the base zoom level. Once set, subsequent actions like zooming out, double-clicking within the axes, or clicking the <b>Restore View</b> icon on the axes toolbar will revert the axes to this baseline zoom level.
 
-<b>'out'</b>: Restores the current axes to its baseline zoom level.
+<b>
+        'out'
+      </b>: Restores the current axes to its baseline zoom level.
 
 ## 💡 Example
 

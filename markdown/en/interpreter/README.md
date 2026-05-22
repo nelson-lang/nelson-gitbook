@@ -12,7 +12,9 @@ Together, these features establish the fundamental syntax and semantics of the N
 
 - [abort](abort.md) - stop evaluation.
 - [return](abort.md) - stop evaluation.
+- [arguments](arguments.md) - function argument validation block.
 - [break](break.md) - exit evaluation loop.
+- [comments](comments.md) - Add comments to Nelson code.
 - [continue](continue.md) - continue evaluation in loop.
 - [for](for.md) - for loop.
 - [parfor](for.md) - for loop.

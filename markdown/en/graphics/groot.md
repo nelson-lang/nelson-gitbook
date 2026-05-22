@@ -28,7 +28,7 @@ Properties:
 
 <b>ScreenSize</b>: Size of primary display (vector).
 
-<b>Tag</b>: Object identifier: string scalar, character vector, '' (default).
+<b>Tag</b>: Object identifier: string scalar, character vector, ' ' (default).
 
 <b>Type</b>: Type 'root'.
 

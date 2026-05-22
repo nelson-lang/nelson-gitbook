@@ -34,14 +34,38 @@ To specify the file name explicitly, use <b>writetable(T, filename)</b>. The fil
 <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
 
 - <b>WriteRowNames:</b> Include row names in the output file (default: <code>false</code>).
-- <b>FileType:</b> Specify file format (<code>'text'</code> or <code>'xml'</code>).
+- <b>FileType:</b> Specify file format (<code>
+  'text'
+  </code> or <code>
+  'xml'
+  </code>).
 - <b>WriteVariableNames:</b> Include variable names as column headings in text files (default: <code>true</code>).
-- <b>WriteMode:</b> Specify writing mode (<code>'overwrite'</code> or <code>'append'</code>).
-- <b>Delimiter:</b> Define the field delimiter for text files (<code>','</code>, <code>'\t'</code>, etc.).
-- <b>QuoteStrings:</b> Control how text is quoted in text files (<code>'minimal'</code>, <code>'all'</code>, or <code>'none'</code>).
-- <b>AttributeSuffix:</b> Specify attribute suffix for XML files (default: <code>'Attribute'</code>).
-- <b>RowNodeName:</b> Specify XML row node names (default: <code>'row'</code>).
-- <b>TableNodeName:</b> Specify XML root node name (default: <code>'table'</code>).
+- <b>WriteMode:</b> Specify writing mode (<code>
+  'overwrite'
+  </code> or <code>
+  'append'
+  </code>).
+- <b>Delimiter:</b> Define the field delimiter for text files (<code>
+  ','
+  </code>, <code>
+  '\t'
+  </code>, etc.).
+- <b>QuoteStrings:</b> Control how text is quoted in text files (<code>
+  'minimal'
+  </code>, <code>
+  'all'
+  </code>, or <code>
+  'none'
+  </code>).
+- <b>AttributeSuffix:</b> Specify attribute suffix for XML files (default: <code>
+  'Attribute'
+  </code>).
+- <b>RowNodeName:</b> Specify XML row node names (default: <code>
+  'row'
+  </code>).
+- <b>TableNodeName:</b> Specify XML root node name (default: <code>
+  'table'
+  </code>).
 
 ## 💡 Example
 

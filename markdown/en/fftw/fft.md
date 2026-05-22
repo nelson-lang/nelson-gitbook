@@ -27,21 +27,17 @@ Fast Fourier transform.
 ```matlab
  % Sampling frequency
 Fs = 150;
-
 % Time vector of 1 second
 t = 0:1*inv(Fs):1;
-
 % Creates a sine wave of f Hz.
 f = 5;
 x = sin(2 * pi * t * f);
-
 % Length of FFT
 nfft = 1024;
 % Take fft, padding with zeros so that length(X) is equal to nfft
 X = fft(x, nfft)
 % FFT is symmetrix
 X = X(1:nfft*inv(2))
-
 % Frequency vector
 f = (0:nfft *inv(2) -1)*Fs * inv(nfft);
 ```

@@ -48,8 +48,8 @@ crée des descriptions textuelles pour les points de données.
 | **Parent**              | Parent : objet axes.                                                                                                                                         |
 | **Position**            | Position du texte : vecteur à deux éléments de forme [x y] ou vecteur à trois éléments de forme [x y z].                                                     |
 | **Rotation**            | Orientation du texte : valeur scalaire en degrés.                                                                                                            |
-| **String**              | Texte à afficher : vecteur de caractères, tableau de cellules de vecteurs de caractères, tableau de chaînes, valeur numérique ou '' (par défaut).            |
-| **Tag**                 | Identifiant d'objet : vecteur de caractères, scalaire de chaîne ou '' (par défaut).                                                                          |
+| **String**              | Texte à afficher : vecteur de caractères, tableau de cellules de vecteurs de caractères, tableau de chaînes, valeur numérique ou ' ' (par défaut).           |
+| **Tag**                 | Identifiant d'objet : vecteur de caractères, scalaire de chaîne ou ' ' (par défaut).                                                                         |
 | **Type**                | Type d'objet graphique : 'text'.                                                                                                                             |
 | **Units**               | Unités de position et d'étendue : 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' ou 'data' (par défaut).                            |
 | **UserData**            | Données utilisateur : tableau ou [] (par défaut).                                                                                                            |
@@ -104,7 +104,7 @@ Indice : \_{ } 'texte\_{indice}'
 | \\uparrow              | ↑       |
 | \\iota                 | ι       |
 | \\Sigma                | Σ       |
-| \\rightarrow           | →       |
+| \\rightarrow           | ->      |
 | \\kappa                | κ       |
 | \\Upsilon              | ϒ       |
 | \\Rightarrow           | ⇒       |

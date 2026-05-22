@@ -9,7 +9,7 @@ Détecter si un compilateur C/C++ est configuré
 ## 📤 Argument de sortie
 
 - status - un booléen.
-- compiler - une chaîne : 'msvc', 'mingw', 'unix' ou ''.
+- compiler - une chaîne : 'msvc', 'mingw', 'unix' ou ' '.
 
 ## 📄 Description
 

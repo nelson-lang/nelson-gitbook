@@ -68,11 +68,9 @@ if <b>fwrite</b> writes characters, it returns the number of characters written 
 ```matlab
 
 A = rand(3,1)
-
 fileID = fopen([tempdir(), 'doubledata.bin'],'w');
 fwrite(fileID, A,'double');
 fclose(fileID);
-
 fileID = fopen([tempdir(), 'doubledata.bin'],'r');
 R = fread(fileID, 'double')
 fclose(fileID);
@@ -85,7 +83,6 @@ test_string =  'é ö ä ü è ê';
 fid = fopen([tempdir(), 'fwrite_example_char.txt'], 'w','n', 'UTF-8');
 [count, bytes] = fwrite(fid, test_string) % returns 11 and 17
 fclose(fid);
-
 % This is the number of characters written and not the number of bytes.
 % Each accented character (é, ö, ä, ü, è, ê) = 2 bytes each
 % Each space = 1 byte

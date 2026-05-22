@@ -23,7 +23,8 @@ Note:
 
 - <b>dec2base</b> and<b>base2dec</b> are inverses of one another.
 
-- values are cached to speed up next computation<b>base2dec('', 2) to clear cache.</b>
+- values are cached to speed up next computation<b>base2dec('
+  ', 2) to clear cache.</b>
 
 ## 💡 Example
 

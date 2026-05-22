@@ -25,7 +25,7 @@ Blocking test for a message.
 
 ## 🔗 See also
 
-[MPI_IProbe](../mpi/MPI_IProbe.md).
+[MPI_IProbe](../mpi/MPI_Iprobe.md).
 
 ## 🕔 History
 

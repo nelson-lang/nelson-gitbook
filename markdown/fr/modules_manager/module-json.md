@@ -34,7 +34,7 @@ autres plateformes :
 
 exemple :<b>["win64", "glnxa64"]</b>, le module ne sera disponible que sur Windows et Linux 64 bits.
 
-<b>nelson</b>: versions de Nelson supportées, exemple : "<2.0.0" (par défaut)
+<b>nelson</b>: versions de Nelson supportées, exemple : " <2.0.0" (par défaut)
 
 <b>builtin</b>: true si le module nécessite un compilateur C/C++, false si le module contient uniquement des macros.
 

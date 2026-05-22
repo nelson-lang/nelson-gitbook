@@ -30,7 +30,7 @@ res = isclass(c)
 
 ## 🔗 See also
 
-[class](../types/class.md), [isstruct](../integer/isstruct.md).
+[class](../types/class.md), [isstruct](../types/isstruct.md).
 
 ## 🕔 History
 

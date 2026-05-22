@@ -9,7 +9,7 @@ Récupère ou met à jour le répertoire racine du système d'aide de Nelson.
 
 ## 📥 Argument d'entrée
 
-- new_docroot - a string: '', '.', or a URL.
+- new_docroot - a string: ' ', '.', or a URL.
 
 ## 📄 Description
 
@@ -19,7 +19,8 @@ Lorsqu'il est appelé sans argument, <b>docroot</b> renvoie le répertoire racin
 
 Lorsque appelé avec un argument,<b>docroot</b> met à jour le répertoire racine de l'aide de Nelson.
 
-<b>docroot('')</b> réinitialise le répertoire racine de l'aide de Nelson à la valeur par défaut.
+<b>docroot('
+')</b> réinitialise le répertoire racine de l'aide de Nelson à la valeur par défaut.
 
 <b>docroot('.')</b> utilise les fichiers d'aide locaux et le navigateur local (restaure le comportement avant la v1.11.0).
 

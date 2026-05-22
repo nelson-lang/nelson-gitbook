@@ -14,7 +14,7 @@ Checks if filename a valid .nh5 file
 ## 📤 Output argument
 
 - tf - a logical: true if it is a valid .nh5 file.
-- version - a string array: "-v1" or "" if it is undefined.
+- version - a string array: "-v1" or " " if it is undefined.
 - header - a string array: header of nh5 file (date created).
 
 ## 📄 Description

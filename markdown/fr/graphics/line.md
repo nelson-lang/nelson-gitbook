@@ -33,13 +33,13 @@ Propriétés :
 
 <b>Color</b> Couleur de la ligne : triplet RGB, [0, 0, 0] ou code couleur hexadécimal.
 
-<b>DisplayName</b> Étiquette de légende : vecteur de caractères ou chaîne scalaire, '' (par défaut).
+<b>DisplayName</b> Étiquette de légende : vecteur de caractères ou chaîne scalaire, ' ' (par défaut).
 
 <b>LineStyle</b> Style de ligne : '--', ':', '-.', 'none' ou '-' (par défaut).
 
 <b>LineWidth</b> Largeur de ligne : valeur scalaire positive.
 
-<b>Marker</b> Symbole de marqueur : 'o' (cercle), '+' (plus), '\*' (astérisque), '.' (point), 'x' (croix), '\_' (ligne horizontale), '\|' (ligne verticale), 'square', 'diamond', '^' (triangle vers le haut), 'v' (triangle vers le bas), '>' (triangle vers la droite), '<' (triangle vers la gauche), 'pentagram', 'hexagram', 'none' (par défaut).
+<b>Marker</b> Symbole de marqueur : 'o' (cercle), '+' (plus), '\*' (astérisque), '.' (point), 'x' (croix), '\_' (ligne horizontale), '\|' (ligne verticale), 'square', 'diamond', '^' (triangle vers le haut), 'v' (triangle vers le bas), ' > ' (triangle vers la droite), ' < ' (triangle vers la gauche), 'pentagram', 'hexagram', 'none' (par défaut).
 
 <b>MarkerEdgeColor</b> Couleur du contour du marqueur : triplet RGB.
 
@@ -49,7 +49,7 @@ Propriétés :
 
 <b>Parent</b> Parent : objet axes graphique.
 
-<b>Tag</b> Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut).
+<b>Tag</b> Identifiant de l'objet : chaîne scalaire, vecteur de caractères, ' ' (par défaut).
 
 <b>Type</b> Type d'objet graphique : 'line'
 

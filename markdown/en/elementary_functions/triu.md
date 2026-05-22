@@ -31,7 +31,7 @@ r = triu(x)
 
 ## 🔗 See also
 
-[diag](../elementary_functions/diag.md).
+[diag](../constructors_functions/diag.md).
 
 ## 🕔 History
 

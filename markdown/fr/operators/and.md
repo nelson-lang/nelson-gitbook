@@ -32,7 +32,7 @@ C == D
 
 ## 🔗 Voir aussi
 
-[or](../operators/or.md), [xor](../logical/xor.md), [all](../logical/all.md), [any](../logical/any.md), [not](../operators/not.md).
+[or](../operators/or.md), [xor](../logical/xor.md), [all](../operators/all.md), [any](../operators/any.md), [not](../operators/not.md).
 
 ## 🕔 Historique
 

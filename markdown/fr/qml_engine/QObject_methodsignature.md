@@ -28,7 +28,7 @@ QObject_methodsignature(h, 'setVisible')
 
 ## 🔗 Voir aussi
 
-[QObject_invoke (invoke)](../qml_engine/QObject_invoke.md), [QObject_methods (methods)](../qml_engine/QObject_methods.md).
+[QObject_invoke (invoke)](../handle/invoke.md), [QObject_methods (methods)](../handle/methods.md).
 
 ## 🕔 Historique
 

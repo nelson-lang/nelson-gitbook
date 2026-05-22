@@ -14,7 +14,7 @@ diff two files or strings.
 
 ## 📤 Output argument
 
-- res - a string: '' if no diff detected.
+- res - a string: ' ' if no diff detected.
 - msg - a string: error message
 
 ## 📄 Description

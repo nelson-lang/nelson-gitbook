@@ -8,7 +8,7 @@ Command separator for current operating system.
 
 ## 📤 Output argument
 
-- sep - a string: on windows "&&", on linux ";"
+- sep - a string: on windows " & & ", on linux ";"
 
 ## 📄 Description
 

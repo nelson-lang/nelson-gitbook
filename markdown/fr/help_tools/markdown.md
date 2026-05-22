@@ -55,10 +55,11 @@ secure_html = markdown(txt, 'secure')
 
 ## 🕔 Historique
 
-| Version | 📄 Description                   |
-| ------- | -------------------------------- |
-| 1.0.0   | version initiale                 |
-| 1.15.0  | 'secure', 'advanced' modes added |
+| Version                          | 📄 Description   |
+| -------------------------------- | ---------------- |
+| 1.0.0                            | version initiale |
+| 1.15.0                           |
+| 'secure', 'advanced' modes added |
 
 <!--
 ## 👤 Auteur

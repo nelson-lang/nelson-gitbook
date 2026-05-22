@@ -12,7 +12,9 @@ Ensemble, ces fonctionnalités établissent la syntaxe et la sémantique fondame
 
 - [abort](abort.md) - arrêter l'évaluation.
 - [return](abort.md) - arrêter l'évaluation.
+- [arguments](arguments.md) - bloc de validation des arguments de fonction.
 - [break](break.md) - sortir d'une boucle.
+- [commentaires](comments.md) - Ajouter des commentaires au code Nelson.
 - [continue](continue.md) - continuer l'exécution dans une boucle.
 - [for](for.md) - boucle for.
 - [parfor](for.md) - boucle for.

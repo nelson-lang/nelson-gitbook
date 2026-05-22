@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>débogage</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">débogage</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Flux de travail de débogage pour les fichiers de code Nelson.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>      Le débogueur Nelson fournit des outils interactifs pour diagnostiquer et corriger
+      les problèmes dans les scripts et les fonctions en contrôlant l'exécution et
+      en inspectant l'état du programme.</p>
+    <p>      Un flux de travail typique de débogage consiste à préparer le code,
+      à interrompre l'exécution à des emplacements spécifiques, à examiner les valeurs des variables,
+      à exécuter les instructions pas à pas, et à reprendre ou arrêter l'exécution.</p>
+    <p>      Avant de commencer une session de débogage, assurez-vous que tous les fichiers de code
+      sont enregistrés et accessibles depuis le dossier actuel ou le chemin de recherche.
+      Les modifications non enregistrées peuvent ne pas être prises en compte lors de l'exécution du code
+      depuis la ligne de commande.</p>
+    <p>      L'exécution peut être interrompue en définissant des points d'arrêt ou en interrompant
+      un programme en cours d'exécution. Lorsque l'exécution est interrompue, Nelson entre en mode débogage
+      et l'invite de commande change pour indiquer que le débogueur
+      a le contrôle.</p>
+    <p>      Pendant que l'exécution est interrompue, la ligne courante n'a pas encore été
+      exécutée. Vous pouvez inspecter les variables dans l'espace de travail actuel,
+      exécuter le code ligne par ligne, entrer ou sortir des fonctions, ou
+      continuer l'exécution jusqu'au prochain point d'arrêt.</p>
+    <p>      Chaque fonction a son propre espace de travail. Lorsqu'on entre dans une fonction,
+      l'espace de travail actif change pour refléter le contexte de la fonction.</p>
+    <p>      Après avoir identifié le problème, terminez la session de débogage pour revenir
+      au mode d'exécution normal. La fin de la session restaure l'invite de commande standard
+      et efface le contexte du débogueur.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title"> Crée demo_debugger.m pour des exemples de débogage.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">n = 50;
+r = rand(n,1);
+plot(r)
+m = mean(r);
+hold on
+plot([0,n],[m,m])
+hold off
+title("Mean of Random Uniform Data")</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Définissez un point d'arrêt dans la fonction demo_debugger. Cliquez sur la marge gauche à côté du numéro de ligne pour basculer un point d'arrêt.</div>
+<img src="./set_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Démarrez le débogage en appelant la fonction demo_debugger depuis la ligne de commande ou le bouton "Exécuter le fichier".</div>
+<img src="./stop_at_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../text_editor/edit.html">edit</a><a class="see-also-link" href="../debugger/dbstop.html">dbstop</a><a class="see-also-link" href="../debugger/dbstep.html">dbstep</a><a class="see-also-link" href="../debugger/dbcont.html">dbcont</a><a class="see-also-link" href="../debugger/dbquit.html">dbquit</a><a class="see-also-link" href="../debugger/dbstatus.html">dbstatus</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.16.0</td>
+<td>Version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

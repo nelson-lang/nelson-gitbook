@@ -47,7 +47,7 @@ C.LineWidth = 3;
 
 ## 🔗 Voir aussi
 
-[contour](../graphics/contour.md), [surf](../graphics/surf.md), [mesh](../graphics/mesh.md).
+[contour](../graphics/contour.md), [contourc](../graphics/contourc.md), [contourf](../graphics/contourf.md), [clabel](../graphics/clabel.md), [surf](../graphics/surf.md), [mesh](../graphics/mesh.md).
 
 ## 🕔 Historique
 

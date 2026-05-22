@@ -10,7 +10,7 @@ Charger la configuration du compilateur
 ## 📤 Argument de sortie
 
 - res - un booléen
-- compiler - une chaîne : 'msvc', 'mingw', 'unix' ou ''
+- compiler - une chaîne : 'msvc', 'mingw', 'unix' ou ' '
 
 ## 📄 Description
 

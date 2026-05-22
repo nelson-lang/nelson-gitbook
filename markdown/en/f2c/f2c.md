@@ -16,7 +16,7 @@ Fortran to C converter.
 ## 📤 Output argument
 
 - r - a logical: true if success.
-- msg - a string: error message or ''.
+- msg - a string: error message or ' '.
 
 ## 📄 Description
 

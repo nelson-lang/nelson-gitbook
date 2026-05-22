@@ -27,7 +27,7 @@ R = sec(x)
 
 ## 🔗 Voir aussi
 
-[secd](../trigonometric/secd.md).
+[secd](../trigonometric_functions/secd.md).
 
 ## 🕔 Historique
 

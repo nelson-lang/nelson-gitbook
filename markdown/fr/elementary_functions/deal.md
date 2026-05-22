@@ -48,7 +48,7 @@ A3 = 1:11;
 
 ## 🔗 Voir aussi
 
-[cell](../data_structures/cell.md), [struct](../data_structures/struc.md).
+[cell](../data_structures/cell.md), [struct](../data_structures/struct.md).
 
 ## 🕔 Historique
 

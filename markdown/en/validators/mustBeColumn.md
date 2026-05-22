@@ -27,7 +27,7 @@ mustBeColumn(ones(3, 2, 4))
 
 ## 🔗 See also
 
-[iscolumn](../types/iscolumn.md).
+[iscolumn](../elementary_functions/iscolumn.md).
 
 ## 🕔 History
 

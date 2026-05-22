@@ -34,7 +34,7 @@ R = sum(M, 'native')
 
 ## 🔗 Voir aussi
 
-[ndims](../data_analysis/ndims.md), [prod](../data_analysis/prod.md).
+[ndims](../elementary_functions/ndims.md), [prod](../data_analysis/prod.md).
 
 ## 🕔 Historique
 

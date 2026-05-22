@@ -10,7 +10,7 @@ load compiler configuration.
 ## 📤 Output argument
 
 - res - a logical
-- compiler - a string: 'msvc', 'mingw', 'unix' or ''
+- compiler - a string: 'msvc', 'mingw', 'unix' or ' '
 
 ## 📄 Description
 

@@ -20,7 +20,7 @@ Check that computed and expected values are approximately equal.
 ## 📤 Output argument
 
 - res - a logical value: true if values are approximately equal, false otherwise.
-- msg - a string containing the error message. If res == true, then msg == ''. If res == false, then msg contains the assertion failure message.
+- msg - a string containing the error message. If res == true, then msg == ' '. If res == false, then msg contains the assertion failure message.
 
 ## 📄 Description
 

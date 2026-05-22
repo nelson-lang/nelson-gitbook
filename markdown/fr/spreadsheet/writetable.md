@@ -34,14 +34,38 @@ Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filena
 <b>Additional options:</b> Use <b>writetable(..., Name, Value)</b> for customization:
 
 - <b>WriteRowNames :</b> inclure les noms de ligne dans le fichier de sortie (par défaut :<code>false</code>).
-- <b>FileType :</b> spécifier le format de fichier (<code>'text'</code>ou<code>'xml'</code>).
+- <b>FileType :</b> spécifier le format de fichier (<code>
+  'text'
+  </code>ou<code>
+  'xml'
+  </code>).
 - <b>WriteVariableNames :</b> inclure les noms de variables comme en-têtes de colonne dans les fichiers texte (par défaut :<code>true</code>).
-- <b>WriteMode :</b> spécifier le mode d'écriture (<code>'overwrite'</code> ou <code>'append'</code>).
-- <b>Delimiter :</b> définir le délimiteur de champ pour les fichiers texte (<code>','</code>, <code>'\t'</code>, etc.).
-- <b>QuoteStrings :</b> contrôler la façon dont le texte est cité dans les fichiers texte (<code>'minimal'</code>, <code>'all'</code> ou <code>'none'</code>).
-- <b>AttributeSuffix :</b> spécifier le suffixe d'attribut pour les fichiers XML (par défaut :<code>'Attribute'</code>).
-- <b>RowNodeName :</b> spécifier le nom du nœud de ligne XML (par défaut :<code>'row'</code>).
-- <b>TableNodeName :</b> spécifier le nom du nœud racine XML (par défaut :<code>'table'</code>).
+- <b>WriteMode :</b> spécifier le mode d'écriture (<code>
+  'overwrite'
+  </code> ou <code>
+  'append'
+  </code>).
+- <b>Delimiter :</b> définir le délimiteur de champ pour les fichiers texte (<code>
+  ','
+  </code>, <code>
+  '\t'
+  </code>, etc.).
+- <b>QuoteStrings :</b> contrôler la façon dont le texte est cité dans les fichiers texte (<code>
+  'minimal'
+  </code>, <code>
+  'all'
+  </code> ou <code>
+  'none'
+  </code>).
+- <b>AttributeSuffix :</b> spécifier le suffixe d'attribut pour les fichiers XML (par défaut :<code>
+  'Attribute'
+  </code>).
+- <b>RowNodeName :</b> spécifier le nom du nœud de ligne XML (par défaut :<code>
+  'row'
+  </code>).
+- <b>TableNodeName :</b> spécifier le nom du nœud racine XML (par défaut :<code>
+  'table'
+  </code>).
 
 ## 💡 Exemple
 

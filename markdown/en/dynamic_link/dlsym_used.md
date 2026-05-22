@@ -22,7 +22,7 @@ dlsym_used(),delete(dlsym_used())
 
 ## 🔗 See also
 
-[dlsym](../dynamic_link/dlSym.md).
+[dlsym](../dynamic_link/dlsym.md).
 
 ## 🕔 History
 

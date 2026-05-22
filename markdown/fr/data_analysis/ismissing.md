@@ -24,9 +24,15 @@ Les données manquantes sont définies comme :
 
 <b>missing</b> pour les tableaux de type string
 
-<b>' '</b> pour les tableaux de caractères
+<b>
+        '
+        '
+      </b> pour les tableaux de caractères
 
-<b>''</b> pour une cellule de tableaux de caractères
+<b>
+        '
+        '
+      </b> pour une cellule de tableaux de caractères
 
 ## 💡 Exemple
 
@@ -44,7 +50,7 @@ ismissing(D)
 
 ## 🔗 Voir aussi
 
-[isfinite](../data_analysis/isfinite.md).
+[isfinite](../elementary_functions/isfinite.md).
 
 ## 🕔 Historique
 

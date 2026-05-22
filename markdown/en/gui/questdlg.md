@@ -22,7 +22,7 @@ Creates a question dialog box.
 
 ## 📤 Output argument
 
-- buttonname - a string: text of the clicked button or ''.
+- buttonname - a string: text of the clicked button or ' '.
 
 ## 📄 Description
 

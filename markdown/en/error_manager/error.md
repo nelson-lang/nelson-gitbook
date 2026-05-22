@@ -18,7 +18,8 @@ Raise an error message.
 
 <b>error</b> stops the current script execution.
 
-<b>error('')</b> will be ignored and the script will continue to run.
+<b>error('
+')</b> will be ignored and the script will continue to run.
 
 identifier includes one or more component fields and a mnemonic field (example: 'nelson:matrix:empty')
 
@@ -27,7 +28,6 @@ identifier includes one or more component fields and a mnemonic field (example: 
 ```matlab
 error('your error message.')
 error('nelson:identifier', 'your error message.')
-
 error('')
 ```
 

@@ -25,7 +25,7 @@ Lorsque le mode rotation est activé, vous pouvez ajuster la vue des axes avec l
 
 Curseur : cliquez et faites glisser dans les axes.
 
-Clavier : utilisez les flèches droite (→) ou gauche (←) pour ajuster l'azimut, et les flèches haut (↑) ou bas (↓) pour modifier l'élévation.
+Clavier : utilisez les flèches droite (->) ou gauche (←) pour ajuster l'azimut, et les flèches haut (↑) ou bas (↓) pour modifier l'élévation.
 
 ## 💡 Exemple
 

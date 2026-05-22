@@ -27,7 +27,7 @@
 ## 📤 Argument de sortie
 
 - status - un booléen : vrai si sauvegardé.
-- msg - une chaîne : '' si pas d'erreur ou un message d'erreur.
+- msg - une chaîne : ' ' si pas d'erreur ou un message d'erreur.
 
 ## 📄 Description
 

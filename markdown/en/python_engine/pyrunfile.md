@@ -12,7 +12,7 @@ Run Python file from Nelson.
 ## 📥 Input argument
 
 - filename - a string scalar, character vector: filename .py to run.
-- "filename 'input'" - a string scalar, character vector: filename .py to run with input arguments.
+- "filename 'input' " - a string scalar, character vector: filename .py to run with input arguments.
 - pyName, pyValue - Input arguments name and value
 - outputs - string array: Python variable names.
 

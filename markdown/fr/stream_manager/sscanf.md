@@ -36,7 +36,7 @@ R = sscanf(str,'%f',[2 2])
 
 ## 🔗 Voir aussi
 
-[fscanf](../stream_manager/fscanf.md), [sprintf](../stream_manager/sprintf.md).
+[fscanf](../stream_manager/fscanf.md), [sprintf](../string/sprintf.md).
 
 ## 🕔 Historique
 

@@ -16,7 +16,7 @@ Removes a file.
 ## 📤 Output argument
 
 - res - a logical: true or false.
-- msg - a string: error message or ''.
+- msg - a string: error message or ' '.
 
 ## 📄 Description
 

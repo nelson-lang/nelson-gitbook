@@ -27,7 +27,7 @@ Write Microsoft Excel spreadsheet file using COM.
 ## 📤 Output argument
 
 - status - a logical: true if save.
-- msg - a string: '' if no error or an error message.
+- msg - a string: ' ' if no error or an error message.
 
 ## 📄 Description
 

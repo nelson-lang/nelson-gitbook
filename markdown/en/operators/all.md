@@ -31,7 +31,7 @@ all([33, 22; 11, 0], 2)
 
 ## 🔗 See also
 
-[any](../logical/any.md).
+[any](../operators/any.md).
 
 ## 🕔 History
 

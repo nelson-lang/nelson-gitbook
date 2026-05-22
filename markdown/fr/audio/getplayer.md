@@ -41,7 +41,7 @@ play(playerObj)
 
 ## 🔗 Voir aussi
 
-[audiorecorder](../audio/audiorecorder.md), [audioplayer](../audio/audioplayer.md), [play](../audio/play.md), [pause](../audio/pause.md), [resume](../audio/resume.md), [stop](../audio/stop.md), [isrecording](../audio/isrecording.md), [isplaying](../audio/isplaying.md).
+[audiorecorder](../audio/audiorecorder.md), [audioplayer](../audio/audioplayer.md), [play](../audio/play.md), [pause](../audio/audioplayer_pause.md), [resume](../audio/resume.md), [stop](../audio/stop.md), [isrecording](../audio/isrecording.md), [isplaying](../audio/isplaying.md).
 
 ## 🕔 Historique
 

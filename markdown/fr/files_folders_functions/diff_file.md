@@ -14,7 +14,7 @@ Compare deux fichiers ou chaînes.
 
 ## 📤 Argument de sortie
 
-- res - a string: '' si aucune différence détectée.
+- res - a string: ' ' si aucune différence détectée.
 - msg - a string: message d'erreur
 
 ## 📄 Description

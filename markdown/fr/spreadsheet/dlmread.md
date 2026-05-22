@@ -26,7 +26,8 @@ Lire une matrice numérique depuis un fichier texte utilisant un délimiteur.
 
 <b>M = dlmread(filename, delimiter, R1, C1)</b> commence la lecture des données aux décalages de ligne et de colonne indiqués par<b>R1</b> et<b>C1</b>. Par exemple, R1=0, C1=0 correspond à la première valeur du fichier.
 
-Pour définir des décalages de ligne et de colonne sans définir de délimiteur, utilisez un caractère vide comme espace réservé, par exemple <b>M = dlmread(filename, '', 3, 1)</b>.
+Pour définir des décalages de ligne et de colonne sans définir de délimiteur, utilisez un caractère vide comme espace réservé, par exemple <b>M = dlmread(filename, '
+', 3, 1)</b>.
 
 <b>M = dlmread(filename, delimiter)</b> lit les données du fichier en utilisant le délimiteur spécifié et traite les caractères délimiteurs répétés comme des délimiteurs séparés.
 
@@ -50,22 +51,18 @@ A = [Inf, -Inf, NaN, 3];
 filename = [tempdir(), 'dlmread_example.csv'];
 dlmwrite(filename, A);
 R = dlmread(filename)
-
 ```
 
 Read a CSV file with a header
 
 ```matlab
-
 filename = [tempdir(), 'dlmread_example.csv'];
 filewrite(filename, ['A,B,C,D,E,F',char(10)]);
 A = magic(6);
 dlmwrite(filename, A, '-append');
 fileread(filename)
-
-R = dlmread(filename, '', 1, 0)
-
-
+R = dlmread(filename, '
+        ', 1, 0)
 ```
 
 ## 🔗 Voir aussi

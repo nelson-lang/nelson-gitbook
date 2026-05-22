@@ -27,7 +27,7 @@ mustBeRow([1; 1])
 
 ## 🔗 Voir aussi
 
-[isrow](../types/isrow.md).
+[isrow](../elementary_functions/isrow.md).
 
 ## 🕔 Historique
 

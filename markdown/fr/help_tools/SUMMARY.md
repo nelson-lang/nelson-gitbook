@@ -13,6 +13,7 @@
   - [markdown](markdown.md)
   - [xmldocbuild](xmldocbuild.md)
   - [xmldocchecker](xmldocchecker.md)
+  - [xmldoclinkchecker](xmldoclinkchecker.md)
   - [xmldoctohelp](xmldoctohelp.md)
   - [xmldoctohtml](xmldoctohtml.md)
   - [xmldoctomd](xmldoctomd.md)

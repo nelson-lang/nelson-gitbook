@@ -32,7 +32,7 @@ If file does not exist an error is raised.
 
 ## 🔗 See also
 
-[addgateway](../dynamic_link/addgateway.md), [removegateway](../dynamic_link/removegateway.md).
+[addgateway](../modules_manager/addgateway.md), [removegateway](../modules_manager/removegateway.md).
 
 ## 🕔 History
 

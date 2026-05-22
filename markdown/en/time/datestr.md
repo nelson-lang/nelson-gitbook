@@ -36,7 +36,11 @@ Convert date and time to string format.
 
 <b>dateAsString = datestr(dateAsStringIn, formatOut, pivotYear)</b> converts<b>dateAsStringIn</b> into the format specified by<b>formatOut</b>, while using an optional <b>pivotYear</b> to interpret two-digit years.
 
-<b>dateAsString = datestr(..., 'local')</b> returns the date in the language of the system's current locale. If <b>'local'</b> is omitted, the default language is US English. The <b>'local'</b> option can be used with any of the previous syntaxes, and must be the last argument in the sequence.
+<b>dateAsString = datestr(..., 'local')</b> returns the date in the language of the system's current locale. If <b>
+'local'
+</b> is omitted, the default language is US English. The <b>
+'local'
+</b> option can be used with any of the previous syntaxes, and must be the last argument in the sequence.
 
 Supported format conversion:
 

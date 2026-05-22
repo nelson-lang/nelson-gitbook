@@ -32,13 +32,16 @@ Les options Delimiter et QuoteStrings ne s'appliquent qu'aux fichiers texte dél
 
 <b>FileType</b>: Specifies the type of output file
 
-Syntaxe : <b>'FileType','text'</b>
+Syntaxe : <b>
+'FileType','text'
+</b>
 
 Prend en charge les fichiers texte délimités (.txt, .dat, .csv)
 
 <b>WriteMode</b>: Controls how data is written to the file
 
-Syntaxe : <b>'WriteMode', mode</b>
+Syntaxe : <b>
+'WriteMode', mode</b>
 
 Options :
 
@@ -50,21 +53,29 @@ Si le fichier cible n'existe pas, un nouveau fichier sera créé quel que soit l
 
 <b>Delimiter</b>: Defines the character used to separate fields
 
-Syntaxe : <b>'Delimiter', delimiter</b>
+Syntaxe : <b>
+'Delimiter', delimiter</b>
 
 Délimiteurs disponibles : uniquement applicables aux fichiers texte délimités.
 
 <b>QuoteStrings</b> : contrôle le comportement de citation des textes (applicable uniquement aux fichiers texte délimités).
 
-<b>'QuoteStrings', option</b>
+<b>
+        'QuoteStrings', option</b>
 
 with <b>options</b>
 
-<b>'minimal'</b> (par défaut) : cite uniquement les textes contenant des délimiteurs, des fins de ligne ou des guillemets.
+<b>
+        'minimal'
+      </b> (par défaut) : cite uniquement les textes contenant des délimiteurs, des fins de ligne ou des guillemets.
 
-<b>'all'</b> : cite toutes les variables texte.
+<b>
+        'all'
+      </b> : cite toutes les variables texte.
 
-<b>'none'</b> : n'utilise pas de guillemets.
+<b>
+        'none'
+      </b> : n'utilise pas de guillemets.
 
 ## 💡 Exemple
 

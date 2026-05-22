@@ -19,7 +19,7 @@ Vérifie que la condition est fausse.
 ## 📤 Argument de sortie
 
 - r - une valeur logique : true si l'assertion réussit, false sinon.
-- msg - une chaîne contenant le message d'erreur. Si x == false, alors msg == ''. Si x == true, alors msg contient le message d'échec de l'assertion.
+- msg - une chaîne contenant le message d'erreur. Si x == false, alors msg == ' '. Si x == true, alors msg contient le message d'échec de l'assertion.
 
 ## 📄 Description
 

@@ -16,7 +16,7 @@ Check that computed and expected values are equal.
 ## 📤 Output argument
 
 - res - a logical value: true if values are equal, false otherwise.
-- msg - a string containing the error message. If res == true, then msg == ''. If res == false, then msg contains the assertion failure message.
+- msg - a string containing the error message. If res == true, then msg == ' '. If res == false, then msg contains the assertion failure message.
 
 ## 📄 Description
 
@@ -34,7 +34,7 @@ isequaln
 
 ## 📚 Bibliography
 
-"Automated Software Testing for Matlab", Steven Eddins, 2009
+    "Automated Software Testing for Matlab", Steven Eddins, 2009
 
 ## 💡 Examples
 

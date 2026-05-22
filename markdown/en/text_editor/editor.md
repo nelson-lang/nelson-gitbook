@@ -25,7 +25,8 @@ Set another text editor as default: (example with VS code)
 
 To restore the default editor, use:
 
-<code>editor('editor_command', '')</code>
+<code>editor('editor_command', '
+')</code>
 
 Change text editor is persistent and will be saved in a configuration file.
 

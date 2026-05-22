@@ -20,7 +20,7 @@ Check that a command raises the expected error.
 ## 📤 Output argument
 
 - r - a logical value: true if the test passes, false otherwise.
-- msg - a string containing the error message. If r == true, then msg == ''. If r == false, then msg contains the assertion failure message.
+- msg - a string containing the error message. If r == true, then msg == ' '. If r == false, then msg contains the assertion failure message.
 
 ## 📄 Description
 

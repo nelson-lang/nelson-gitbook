@@ -28,7 +28,7 @@ mustBeScalarOrEmpty([true false])
 
 ## 🔗 Voir aussi
 
-[isempty](../elementary_functions/isempty.md), [islogical](../types/islogical.md).
+[isempty](../types/isempty.md), [islogical](../types/islogical.md).
 
 ## 🕔 Historique
 

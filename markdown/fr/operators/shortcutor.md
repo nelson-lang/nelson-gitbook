@@ -30,7 +30,10 @@ C = A || B
 
 ## 🔗 Voir aussi
 
-[or](../operators/or.md), [&&](../operators/shortcutand.md), [xor](../operators/xor.md).
+[or](../operators/or.md), [
+&
+&
+](../operators/shortcutand.md), [xor](../logical/xor.md).
 
 ## 🕔 Historique
 

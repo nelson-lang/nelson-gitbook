@@ -22,7 +22,7 @@ Open a file in Nelson.
 ## 📤 Output argument
 
 - fid - an integer value: a file descriptor or -1 if there is an error.
-- msg - a string: error message returned by fopen or ''.
+- msg - a string: error message returned by fopen or ' '.
 - fids - a vector of integer values: list of files descriptor opened in Nelson.
 
 ## 📄 Description

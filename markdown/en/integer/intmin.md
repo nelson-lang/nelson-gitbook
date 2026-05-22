@@ -51,7 +51,7 @@ res = class(C)
 
 ## 🔗 See also
 
-[intmax](../integer/intmax.md), [class](../type/class.md).
+[intmax](../integer/intmax.md), [class](../types/class.md).
 
 ## 🕔 History
 

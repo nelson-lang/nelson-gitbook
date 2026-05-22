@@ -40,7 +40,7 @@ Propriétés :
 | **CDataMapping**     | Méthode de mappage des couleurs : 'scaled' ou 'direct' (par défaut).                                                                              |
 | **Children**         | [].                                                                                                                                               |
 | **Parent**           | Parent : objet axes.                                                                                                                              |
-| **Tag**              | Identifiant de l'objet : chaîne scalaire, vecteur de caractères, '' (par défaut).                                                                 |
+| **Tag**              | Identifiant de l'objet : chaîne scalaire, vecteur de caractères, ' ' (par défaut).                                                                |
 | **Type**             | Type d'objet graphique : 'surface'.                                                                                                               |
 | **UserData**         | Données utilisateur : tableau ou [] (par défaut).                                                                                                 |
 | **Visible**          | État de visibilité : 'off' ou 'on' (par défaut).                                                                                                  |

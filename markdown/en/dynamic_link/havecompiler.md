@@ -9,7 +9,7 @@ Detect if a C/C++ compiler is configured.
 ## 📤 Output argument
 
 - status - a logical.
-- compiler - a string: 'msvc', 'mingw', 'unix' or ''.
+- compiler - a string: 'msvc', 'mingw', 'unix' or ' '.
 
 ## 📄 Description
 

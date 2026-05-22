@@ -34,7 +34,7 @@ R = cumsum(M, 'reverse')
 
 ## 🔗 See also
 
-[ndims](../data_analysis/ndims.md), [sum](../data_analysis/sum.md), [cumprod](../data_analysis/cumprod.md).
+[ndims](../elementary_functions/ndims.md), [sum](../data_analysis/sum.md), [cumprod](../data_analysis/cumprod.md).
 
 ## 🕔 History
 

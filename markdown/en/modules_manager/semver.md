@@ -27,13 +27,19 @@ supported range operators:
 
 <b>=</b> - Equality
 
-<b>>=</b> - Higher or equal to
+<b>
+        >=</b> - Higher or equal to
 
-<b><=</b> - Lower or equal to
+<b>
+        <=</b> - Lower or equal to
 
-<b><</b> - Lower than
+<b>
+        <
+      </b> - Lower than
 
-<b>></b> - Higher than
+<b>
+        >
+      </b> - Higher than
 
 <b>^</b> - Caret operator comparison
 

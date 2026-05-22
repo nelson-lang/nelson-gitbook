@@ -71,7 +71,6 @@ The module also supports construction of special matrices, grids, and sequences,
 - [maxk](maxk.md) - k largest elements of an array
 - [meshgrid](meshgrid.md) - Cartesian rectangular grid in 2-D or 3-D.
 - [mink](mink.md) - k smallest elements of an array
-- [minus](minus.md) - Subtraction, - operator
 - [mod](mod.md) - Modulus after division.
 - [ndgrid](ndgrid.md) - Rectangular grid in N-D space
 - [ndims](ndims.md) - Number of dimensions of an array.

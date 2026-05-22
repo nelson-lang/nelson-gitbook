@@ -25,7 +25,7 @@ Ce module permet une manipulation flexible des structures de données et des tab
 - [ldivide](ldivide.md) - Division gauche, opérateur .\
 - [le](le.md) - inférieur ou égal, opérateur <=
 - [lt](lt.md) - inférieur à, opérateur <
-- [minus](minus.md) - Soustraction, opérateur -
+- [minus](minus.md) - Subtraction, - operator
 - [mldivide](mldivide.md) - Division matricielle gauche, opérateur \
 - [mpower](mpower.md) - Puissance matricielle, opérateur ^
 - [mrdivide](mrdivide.md) - Division matricielle à droite, opérateur /.
@@ -36,7 +36,8 @@ Ce module permet une manipulation flexible des structures de données et des tab
 - [plus](plus.md) - Addition, opérateur +
 - [power](power.md) - Puissance élément par élément, opérateur .^
 - [rdivide](rdivide.md) - Division droite, opérateur ./
-- [shortcutand](shortcutand.md) - Opérateur AND à court-circuit, &&
+- [shortcutand](shortcutand.md) - Opérateur AND à court-circuit, &
+  &
 - [shortcutor](shortcutor.md) - Opérateur OR à court-circuit, ||
 - [subsasgn](subsasgn.md) - Redéfinir l'affectation par indice.
 - [subsindex](subsindex.md) - Convertir un objet en vecteur d'indices.

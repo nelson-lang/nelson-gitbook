@@ -43,7 +43,7 @@ h = imshow(filename);
 
 ## 🔗 See also
 
-[imread](../graphics/imread.md), [image](../graphics/image.md), [imagesc](../graphics/imagesc.md), [colormap](../graphics/colormap.md).
+[imread](../graphics_io/imread.md), [image](../graphics/image.md), [imagesc](../graphics/imagesc.md), [colormap](../graphics/colormap.md).
 
 ## 🕔 History
 

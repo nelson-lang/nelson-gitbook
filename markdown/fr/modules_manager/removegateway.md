@@ -30,7 +30,7 @@ calendar
 
 ## 🔗 Voir aussi
 
-[addgateway](../dynamic_link/addgateway.md), [gatewayinfo](../dynamic_link/gatewayinfo.md).
+[addgateway](../modules_manager/addgateway.md), [gatewayinfo](../modules_manager/gatewayinfo.md).
 
 ## 🕔 Historique
 

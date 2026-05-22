@@ -67,6 +67,7 @@ Propriétés :
 | **BeingDeleted**           | Indique que l'objet est en cours de suppression.                                                                                                  |
 | **Interruptible**          | Interruption de callback                                                                                                                          |
 | **Layer**                  | Placement des lignes de grille et des graduations : 'top' ou 'bottom' (par défaut).                                                               |
+| **Layout**                 | Inclure les axes lors de la mise en page automatique de la figure : 'on' ou 'off' (par défaut).                                                   |
 | **LineStyleOrder**         | Ordre des styles de ligne : vecteur de caractères, cellule de vecteurs de caractères, tableau de chaînes ou '-' ligne continue (par défaut).      |
 | **LineStyleOrderIndex**    | Indice d'ordre des couleurs : entier positif, spécifie le prochain style de ligne utilisé.                                                        |
 | **LineWidth**              | Largeur de ligne : valeur numérique positive.                                                                                                     |
@@ -81,7 +82,7 @@ Propriétés :
 | **Projection**             | Type de projection sur l'écran 2D : 'perspective' ou 'orthographic' (par défaut).                                                                 |
 | **Selected**               | État de sélection : 'on' ou 'off' (par défaut).                                                                                                   |
 | **SelectionHighlight**     | Affichage des objets graphiques sélectionnés : 'on' (par défaut) ou 'off'.                                                                        |
-| **Tag**                    | Identifiant de l'objet : vecteur de caractères, chaîne scalaire ou '' (par défaut).                                                               |
+| **Tag**                    | Identifiant de l'objet : vecteur de caractères, chaîne scalaire ou ' ' (par défaut).                                                              |
 | **TickDir**                | Direction des graduations : 'out', 'both', 'none' ou 'in' (par défaut).                                                                           |
 | **TickDirMode**            | Mode de sélection pour TickDir : 'manual' ou 'auto' (par défaut).                                                                                 |
 | **TickLength**             | Longueur des graduations : vecteur à deux éléments.                                                                                               |
@@ -102,7 +103,7 @@ Propriétés :
 | **XMinorGrid**             | Lignes de grille mineure : 'on' ou 'off' (par défaut).                                                                                            |
 | **XScale**                 | Échelle des valeurs sur l'axe x : 'log' ou 'linear' (par défaut).                                                                                 |
 | **XTick**                  | Valeurs des graduations : vecteur de valeurs croissantes ou [] (par défaut).                                                                      |
-| **XTickLabel**             | Labels des graduations : cellule de vecteurs de caractères ou '' (par défaut).                                                                    |
+| **XTickLabel**             | Labels des graduations : cellule de vecteurs de caractères ou ' ' (par défaut).                                                                   |
 | **XTickLabelMode**         | Mode de sélection des labels : 'manual' ou 'auto' (par défaut).                                                                                   |
 | **XTickMode**              | Mode de sélection des valeurs de graduation : 'manual' ou 'auto' (par défaut).                                                                    |
 | **YAxisLocation**          | Position de l'axe y : 'top', 'origin' ou 'bottom' (par défaut).                                                                                   |
@@ -115,7 +116,7 @@ Propriétés :
 | **YMinorGrid**             | Lignes de grille mineure : 'on' ou 'off' (par défaut).                                                                                            |
 | **YScale**                 | Échelle des valeurs sur l'axe y : 'log' ou 'linear' (par défaut).                                                                                 |
 | **YTick**                  | Valeurs des graduations : vecteur de valeurs croissantes ou [] (par défaut).                                                                      |
-| **YTickLabel**             | Labels des graduations : cellule de vecteurs de caractères ou '' (par défaut).                                                                    |
+| **YTickLabel**             | Labels des graduations : cellule de vecteurs de caractères ou ' ' (par défaut).                                                                   |
 | **YTickLabelMode**         | Mode de sélection des labels : 'manual' ou 'auto' (par défaut).                                                                                   |
 | **YTickMode**              | Mode de sélection des valeurs de graduation : 'manual' ou 'auto' (par défaut).                                                                    |
 | **ZColor**                 | Couleur de l'axe, des graduations et des labels z : triplet RGB.                                                                                  |
@@ -127,7 +128,7 @@ Propriétés :
 | **ZMinorGrid**             | Lignes de grille mineure : 'on' ou 'off' (par défaut).                                                                                            |
 | **ZScale**                 | Échelle des valeurs sur l'axe z : 'log' ou 'linear' (par défaut).                                                                                 |
 | **ZTick**                  | Valeurs des graduations : vecteur de valeurs croissantes ou [] (par défaut).                                                                      |
-| **ZTickLabel**             | Labels des graduations : cellule de vecteurs de caractères ou '' (par défaut).                                                                    |
+| **ZTickLabel**             | Labels des graduations : cellule de vecteurs de caractères ou ' ' (par défaut).                                                                   |
 | **ZTickLabelMode**         | Mode de sélection des labels : 'manual' ou 'auto' (par défaut).                                                                                   |
 | **ZTickMode**              | Mode de sélection des valeurs de graduation : 'manual' ou 'auto' (par défaut).                                                                    |
 | **CreateFcn**              | Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet. |

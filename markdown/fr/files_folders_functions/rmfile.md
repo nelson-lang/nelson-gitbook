@@ -16,7 +16,7 @@ Supprime un fichier.
 ## 📤 Argument de sortie
 
 - res - un booléen: true ou false.
-- msg - a string: message d'erreur ou ''.
+- msg - a string: message d'erreur ou ' '.
 
 ## 📄 Description
 

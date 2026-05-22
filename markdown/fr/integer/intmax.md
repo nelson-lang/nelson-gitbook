@@ -51,7 +51,7 @@ res = class(C)
 
 ## 🔗 Voir aussi
 
-[intmin](../integer/intmin.md), [class](../type/class.md).
+[intmin](../integer/intmin.md), [class](../types/class.md).
 
 ## 🕔 Historique
 

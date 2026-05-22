@@ -28,7 +28,7 @@ M = false(3, 3);
 
 ## 🔗 Voir aussi
 
-[or](../operators/or.md), [any](../logical/any.md), [all](../logical/all.md).
+[or](../operators/or.md), [any](../operators/any.md), [all](../operators/all.md).
 
 ## 🕔 Historique
 

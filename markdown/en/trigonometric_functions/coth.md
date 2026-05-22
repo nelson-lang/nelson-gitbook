@@ -27,7 +27,7 @@ R = coth(X)
 
 ## 🔗 See also
 
-[tanh](../trigonometric/tanh.md), [cot](../trigonometric/cot.md).
+[tanh](../trigonometric_functions/tanh.md), [cot](../trigonometric_functions/cot.md).
 
 ## 🕔 History
 

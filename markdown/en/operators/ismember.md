@@ -33,7 +33,7 @@ T = ismember(["a","b","f"], ["b", "f", "c"])
 
 ## 🔗 See also
 
-[sort](../operators/sort.md).
+[sort](../data_analysis/sort.md).
 
 ## 🕔 History
 

@@ -27,7 +27,7 @@ y = atand(x)
 
 ## 🔗 Voir aussi
 
-[tand](../trigonometric/tand.md).
+[tand](../trigonometric_functions/tand.md).
 
 ## 🕔 Historique
 

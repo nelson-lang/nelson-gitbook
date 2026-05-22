@@ -1,6 +1,6 @@
 # minus
 
-Soustraction, opérateur -
+Subtraction, - operator
 
 ## 📝 Syntaxe
 
@@ -9,16 +9,16 @@ Soustraction, opérateur -
 
 ## 📥 Argument d'entrée
 
-- A - une variable
-- B - une variable
+- A - a variable
+- B - a variable
 
 ## 📤 Argument de sortie
 
-- C - résultat de A - B
+- C - result of A - B
 
 ## 📄 Description
 
-<b>C = minus(A, B)</b> effectue la soustraction A - B.
+<b>C = minus(A, B)</b> performs subtraction A - B variables.
 
 ## 💡 Exemples
 

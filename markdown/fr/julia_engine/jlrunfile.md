@@ -12,7 +12,7 @@ Exécute un fichier Julia depuis Nelson.
 ## 📥 Argument d'entrée
 
 - filename - un scalaire chaîne ou vecteur de caractères : nom de fichier .jl à exécuter.
-- "filename 'input'" - un scalaire chaîne ou vecteur de caractères : nom de fichier .jl à exécuter avec des arguments d'entrée.
+- "filename 'input' " - un scalaire chaîne ou vecteur de caractères : nom de fichier .jl à exécuter avec des arguments d'entrée.
 - jlName, jlValue - Noms et valeurs des arguments d'entrée.
 - outputs - tableau de chaînes : noms des variables Julia.
 

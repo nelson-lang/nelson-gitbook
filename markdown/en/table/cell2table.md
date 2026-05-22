@@ -22,7 +22,9 @@ Each column of the input cell array becomes the data for a corresponding variabl
 
 To generate variable names in the output table,<b>cell2table</b> appends the column numbers to the name of the input array.
 
-If the input array does not have a name,<b>cell2table</b> assigns default variable names in the format<b>"Var1", "Var2", ... , "VarN"</b>, where <b>N</b> is the number of columns in the cell array.
+If the input array does not have a name,<b>cell2table</b> assigns default variable names in the format<b>
+"Var1", "Var2", ... , "VarN"
+</b>, where <b>N</b> is the number of columns in the cell array.
 
 ## 💡 Example
 

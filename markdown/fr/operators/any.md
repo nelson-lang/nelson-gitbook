@@ -31,7 +31,7 @@ any([33, 22; 11, 0], 2)
 
 ## 🔗 Voir aussi
 
-[all](../logical/all.md).
+[all](../operators/all.md).
 
 ## 🕔 Historique
 
@@ -39,6 +39,7 @@ any([33, 22; 11, 0], 2)
 | ------- | ------------------------------ |
 | 1.0.0   | version initiale               |
 | 1.6.0   | gère l'argument d'entrée 'all' |
+|  |
 
 <!--
 ## 👤 Auteur

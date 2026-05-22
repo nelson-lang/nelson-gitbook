@@ -27,7 +27,7 @@ R = sech(X)
 
 ## 🔗 See also
 
-[cosh](../trigonometric/cosh.md).
+[cosh](../trigonometric_functions/cosh.md).
 
 ## 🕔 History
 

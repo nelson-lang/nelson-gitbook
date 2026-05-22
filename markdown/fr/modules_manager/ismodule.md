@@ -33,10 +33,11 @@ ismodule('mymodule')
 
 ## 🕔 Historique
 
-| Version | 📄 Description                 |
-| ------- | ------------------------------ |
-| 1.0.0   | version initiale               |
-| 1.11.0  | 'isprotected' second argument. |
+| Version                        | 📄 Description   |
+| ------------------------------ | ---------------- |
+| 1.0.0                          | version initiale |
+| 1.11.0                         |
+| 'isprotected' second argument. |
 
 <!--
 ## 👤 Auteur

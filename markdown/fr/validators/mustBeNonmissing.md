@@ -28,7 +28,7 @@ mustBeNonmissing(["hello" string(NaN)])
 
 ## 🔗 Voir aussi
 
-[ismissing](../elementary_functions/ismissing.md).
+[ismissing](../data_analysis/ismissing.md).
 
 ## 🕔 Historique
 

@@ -25,7 +25,8 @@ Définir un autre éditeur de texte par défaut : (exemple avec VS Code)
 
 Pour restaurer l'éditeur par défaut, utilisez :
 
-<code>editor('editor_command', '')</code>
+<code>editor('editor_command', '
+')</code>
 
 Le changement d'éditeur est persistant et sera enregistré dans un fichier de configuration.
 

@@ -14,7 +14,7 @@ Vérifie si le nom de fichier est un fichier .nh5 valide
 ## 📤 Argument de sortie
 
 - tf - un booléen : vrai si c'est un fichier .nh5 valide.
-- version - un tableau de chaînes : "-v1" ou "" si non défini.
+- version - un tableau de chaînes : "-v1" ou " " si non défini.
 - header - un tableau de chaînes : en-tête du fichier nh5 (date de création).
 
 ## 📄 Description

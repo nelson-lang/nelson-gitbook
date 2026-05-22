@@ -38,7 +38,7 @@ clear pTextToSpeech
 
 ## 🔗 Voir aussi
 
-[actxGetRunningSrv](../com_engine/actxGetRunningSrv.md).
+[actxGetRunningServer](../com_engine/actxGetRunningServer.md).
 
 ## 🕔 Historique
 

@@ -5,6 +5,90 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.17.0 - (UNRELEASED)
+
+### Added
+
+- function argument validation using `arguments ... end` blocks
+
+  - Support for validation functions (e.g., `mustBeNumeric`, `mustBeMember`)
+  - Default values for optional positional and name-value arguments
+  - Separate validation blocks for input and output arguments
+  - Improved error messages for invalid function arguments
+
+- Debugger Support
+
+  - Full breakpoint management with commands: `dbstop`, `dbstep`, `dbcont`, `dbquit`, `dbclear`, `dbdown`, `dbup`, `dbstatus`.
+  - Support for setting breakpoints at specific files, functions, and lines.
+  - Conditional breakpoints and hit-count breakpoints (if applicable).
+
+- Interactive Debugging in Text Editor
+
+  - Real-time feedback on breakpoints directly within the editor.
+  - Inline variable inspection while stepping through code.
+  - Highlighting of the current execution line.
+
+- Step Execution Controls
+  - Step Into: move into function calls.
+  - Step Over: execute functions without entering them.
+  - Continue: resume execution until the next breakpoint.
+- Stack Inspection & Variable Evaluation
+
+  - Examine the call stack during debugging with `dbup` and `dbdown`.
+  - Evaluate and modify variables in the current workspace.
+  - Inspect function arguments and local variables.
+
+- Enhanced Debugging Experience
+
+  - Integration with the command-line interface and editor interface.
+  - Improved visibility of function contexts and nested calls.
+
+- Added support for multi-line comments in the interpreter, editor, debugger, and headcomments.
+
+- `interp2`, `interp3`, `interpn`: interpolation functions
+
+- `regexp`, `regexpi`, `regexprep`, `regextranslate`: regexp functions added.
+
+- [#309](https://github.com/nelson-lang/nelson/issues/309): `erf`, `erfc`, `erfcinv`, `erfcx`, `erfinv` error functions.
+
+- [#1289](https://github.com/nelson-lang/nelson/issues/1289): `isbetween`, `allbetween`, `mustBeBetween` functions.
+
+- `tiledlayout`, `nexttile`, `tilenum`, `tilerowcol` layout management.
+
+- [#813](https://github.com/nelson-lang/nelson/issues/813): `findobj` Find graphics objects with specific properties.
+
+- `contourf`, `contourc`, Filled contour plot of matrix.
+
+- Dedicated Windows Terminal profile installed for the application.
+
+- help engine extending to manage subchapters.
+
+- `xmldoclinkchecker` Checks unresolved cross-references in Nelson help XML files.
+
+- MacOS packaging as dmg installer.
+
+- Qt 6.11.0 support.
+
+- Full CMake configuration and build system for Visual Studio (x64, Win32, ARM64).
+
+### Changed
+
+- Reduced interpreter overhead in tight loops.
+- Internal tooling refactored: nodejs and python tools for formatting and version updates replaced with Rust-based tools.
+- CMake factorized.
+- Innosetup installer modernized.
+- fmtlib 12.1
+
+### Fixed
+
+- [#1585](https://github.com/nelson-lang/nelson/issues/1585): Memory leak during scalar assignments in tight/nested loops after scalar inline-data optimization.
+- [#1567](https://github.com/nelson-lang/nelson/issues/1567): UTF-16LE output despite encoding='UTF-8' in fprintf builtin (Windows).
+- [#1564](https://github.com/nelson-lang/nelson/issues/1564): Regression: modifying copy unexpectedly alters original array.
+- [#1550](https://github.com/nelson-lang/nelson/issues/1550): getpid('available') did not work as expected.
+- [#1547](https://github.com/nelson-lang/nelson/issues/1547): Parsing of ~= operator with spaces was not working correctly, causing it to be misinterpreted as a matrix row separator.
+- unresolved cross-references in Nelson help XML files.
+- memory leak in uicontrol.
+
 ## 1.16.0 - (2025-12-27)
 
 ### Added
@@ -119,7 +203,7 @@ The certificate represents a significant cost for a volunteer effort - any donat
   - `WindowState` for `Figure` objects.
   - `Units` for `UIControl` objects.
   - `DefaultFigureAlphamap`, `DefaultFigureColormap` as root properties.
-- Support for `nix develop`, providing a reproducible Bash shell preconfigured with Nelson’s build environment.  
+- Support for `nix develop`, providing a reproducible Bash shell preconfigured with Nelson’s build environment.
   See [BUILDING.md](./BUILDING.md) for details.
 - A [`justfile`](https://just.systems/man/en/) to streamline and standardize the build process across platforms.
 - Support for:

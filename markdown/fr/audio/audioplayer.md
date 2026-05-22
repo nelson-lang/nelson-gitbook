@@ -71,7 +71,7 @@ play(playObj)
 
 ## 🔗 Voir aussi
 
-[delete](../handle/delete.md), [play](../audio/play.md), [stop](../audio/stop.md), [resume](../audio/resume.md), [pause](../audio/pause.md).
+[delete](../handle/delete.md), [play](../audio/play.md), [stop](../audio/stop.md), [resume](../audio/resume.md), [pause](../audio/audioplayer_pause.md).
 
 ## 🕔 Historique
 

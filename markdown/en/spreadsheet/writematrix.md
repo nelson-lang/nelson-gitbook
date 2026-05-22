@@ -32,13 +32,16 @@ Delimiter and QuoteStrings options only apply to delimited text files.
 
 <b>FileType</b>: Specifies the type of output file
 
-Syntax: <b>'FileType','text'</b>
+Syntax: <b>
+'FileType','text'
+</b>
 
 Supports delimited text files (.txt, .dat, .csv)
 
 <b>WriteMode</b>: Controls how data is written to the file
 
-Syntax: <b>'WriteMode', mode</b>
+Syntax: <b>
+'WriteMode', mode</b>
 
 Options:
 
@@ -50,21 +53,29 @@ If the target file doesn't exist, a new file will be created regardless of mode.
 
 <b>Delimiter</b>: Defines the character used to separate fields
 
-Syntax: <b>'Delimiter', delimiter</b>
+Syntax: <b>
+'Delimiter', delimiter</b>
 
 Available Delimiters: Only applicable for delimited text files.
 
 <b>QuoteStrings</b>: Controls text quoting behavior (Only applicable for delimited text files).
 
-<b>'QuoteStrings', option</b>
+<b>
+        'QuoteStrings', option</b>
 
 with <b>options</b>
 
-<b>'minimal'</b> (default) Quotes only text containing delimiters, line endings, or quotes.
+<b>
+        'minimal'
+      </b> (default) Quotes only text containing delimiters, line endings, or quotes.
 
-<b>'all'</b> Quotes all text variables.
+<b>
+        'all'
+      </b> Quotes all text variables.
 
-<b>'none'</b> Uses no quotes.
+<b>
+        'none'
+      </b> Uses no quotes.
 
 ## 💡 Example
 

@@ -27,7 +27,7 @@ res = acoth(A)
 
 ## 🔗 See also
 
-[coth](../trigonometric/coth.md).
+[coth](../trigonometric_functions/coth.md).
 
 ## 🕔 History
 

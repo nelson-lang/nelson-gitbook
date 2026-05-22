@@ -20,6 +20,7 @@ It supports generating help content in multiple formats, including HTML, Markdow
 - [markdown](markdown.md) - Converts markdown to html.
 - [xmldocbuild](xmldocbuild.md) - Internal function to convert xml document files to html.
 - [xmldocchecker](xmldocchecker.md) - Checks a xml documentation file.
+- [xmldoclinkchecker](xmldoclinkchecker.md) - Checks unresolved cross-references in Nelson help XML files.
 - [xmldoctohelp](xmldoctohelp.md) - Converts xml Nelson help files to Nelson format.
 - [xmldoctohtml](xmldoctohtml.md) - Converts xml Nelson help files to html.
 - [xmldoctomd](xmldoctomd.md) - Converts xml Nelson help files to markdown format.

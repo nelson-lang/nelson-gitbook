@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>debugging workflow</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">debugging workflow</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Debugging workflow for Nelson code files.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>      The Nelson debugger provides interactive tools to diagnose and fix
+      problems in scripts and functions by controlling execution and
+      inspecting program state.</p>
+    <p>      A typical debugging workflow consists of preparing the code,
+      pausing execution at specific locations, examining variable values,
+      stepping through instructions, and resuming or stopping execution.</p>
+    <p>      Before starting a debugging session, ensure that all code files
+      are saved and accessible from the current folder or search path.
+      Unsaved changes may not be taken into account when running code
+      from the command line.</p>
+    <p>      Execution can be paused by setting breakpoints or interrupting
+      a running program. When execution is paused, Nelson enters debug
+      mode and the command prompt changes to indicate that the debugger
+      has control.</p>
+    <p>      While execution is paused, the current line has not yet been
+      executed. You can inspect variables in the current workspace,
+      execute code line by line, step into or out of functions, or
+      continue execution until the next breakpoint.</p>
+    <p>      Each function has its own workspace. When stepping into a function,
+      the active workspace changes to reflect the function context.</p>
+    <p>      After identifying the problem, end the debugging session to return
+      to normal execution mode. Ending the session restores the standard
+      command prompt and clears the debugger context.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Creates demo_debugger.m for debugging examples.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">n = 50;
+r = rand(n,1);
+plot(r)
+
+m = mean(r);
+hold on
+plot([0,n],[m,m])
+hold off
+title("Mean of Random Uniform Data")</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Set a breakpoint in the demo_debugger function. click on the left margin next to the line number to toggle a breakpoint.</div>
+<img src="./set_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Start debugging by calling the demo_debugger function from the command line or "Run file" button.</div>
+<img src="./stop_at_breakpoint.png" align="middle" alt="Example illustration" style="max-width:960px;max-height:580px;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../text_editor/edit.html">edit</a><a class="see-also-link" href="../debugger/dbstop.html">dbstop</a><a class="see-also-link" href="../debugger/dbstep.html">dbstep</a><a class="see-also-link" href="../debugger/dbcont.html">dbcont</a><a class="see-also-link" href="../debugger/dbquit.html">dbquit</a><a class="see-also-link" href="../debugger/dbstatus.html">dbstatus</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.16.0</td>
+<td>Initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

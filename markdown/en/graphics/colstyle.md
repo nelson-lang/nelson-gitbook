@@ -10,7 +10,7 @@ Parse color and style from string.
 ## 📥 Input argument
 
 - str - a row vector of character or scalar string: line specification.
-- 'plot' - linespec returns 'none' and not '' with this option.
+- 'plot' - linespec returns 'none' and not ' ' with this option.
 
 ## 📤 Output argument
 

@@ -27,7 +27,7 @@ res = acosh(A)
 
 ## 🔗 Voir aussi
 
-[cosh](../trigonometric/cosh.md).
+[cosh](../trigonometric_functions/cosh.md).
 
 ## 🕔 Historique
 

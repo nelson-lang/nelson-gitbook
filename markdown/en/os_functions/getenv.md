@@ -18,7 +18,7 @@ Get the value of an environment variable.
 
 <b>getenv</b> returns the value of an environment variable if it exists.
 
-If the environment variable does not exist, it will return ''.
+If the environment variable does not exist, it will return ' '.
 
 If <b>env_name</b> is a nonscalar cell array of character vectors or string array, then val has the same dimensions and type as<b>env_name</b>.
 

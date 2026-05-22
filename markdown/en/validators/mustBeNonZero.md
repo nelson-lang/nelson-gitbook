@@ -29,7 +29,7 @@ mustBeNonZero(0)
 
 ## 🔗 See also
 
-[isempty](../types/isempty.md), [eq](../elementary_functions/eq.md).
+[isempty](../types/isempty.md), [eq](../operators/eq.md).
 
 ## 🕔 History
 

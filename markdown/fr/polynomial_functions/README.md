@@ -15,4 +15,5 @@ Ce module permet une gestion efficace des expressions polynomiales pour la modé
 - [polyint](polyint.md) - Intégration polynomiale.
 - [polyval](polyval.md) - Évaluation polynomiale.
 - [polyvalm](polyvalm.md) - Évaluation de polynôme matriciel.
+- [ppval](ppval.md) - Evalue une forme polynomiale par morceaux
 - [roots](roots.md) - Trouver les racines d'un polynôme.

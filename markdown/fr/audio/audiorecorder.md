@@ -94,7 +94,7 @@ recordblocking(recObj, 2);
 
 ## 🔗 Voir aussi
 
-[audioplayer](../audio/audioplayer.md), [getaudiodata](../audio/getaudiodata.md), [record](../audio/record.md), [recordblocking](../audio/recordblocking.md), [pause](../audio/pause.md), [resume](../audio/resume.md), [stop](../audio/stop.md), [getplayer](../audio/getplayer.md).
+[audioplayer](../audio/audioplayer.md), [getaudiodata](../audio/getaudiodata.md), [record](../audio/record.md), [recordblocking](../audio/recordblocking.md), [pause](../audio/audiorecorder_pause.md), [resume](../audio/resume.md), [stop](../audio/stop.md), [getplayer](../audio/getplayer.md).
 
 ## 🕔 Historique
 

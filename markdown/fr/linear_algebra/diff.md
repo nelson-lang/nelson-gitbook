@@ -34,7 +34,7 @@ R = diff(X)
 
 ## 🔗 Voir aussi
 
-[sum](../linear_algebra/sum.md), [prod](../linear_algebra/prod.md).
+[sum](../data_analysis/sum.md), [prod](../data_analysis/prod.md).
 
 ## 🕔 Historique
 

@@ -26,15 +26,27 @@ No Interruption: If the running callback does not include any of these commands,
 
 Interruption Conditions: If the running callback includes any of these commands, the behavior depends on the Interruptible property of the object that owns the running callback:
 
-If <b>Interruptible</b> is set to <b>'on'</b>, Nelson allows the interruption. The running callback is paused, the interrupting callback is executed, and once it is finished, Nelson resumes the execution of the running callback.
+If <b>Interruptible</b> is set to <b>
+'on'
+</b>, Nelson allows the interruption. The running callback is paused, the interrupting callback is executed, and once it is finished, Nelson resumes the execution of the running callback.
 
-If <b>Interruptible</b> is set to <b>'off'</b>, the interruption is blocked. The <b>BusyAction</b> property of the interrupting callback then dictates the next step:
+If <b>Interruptible</b> is set to <b>
+'off'
+</b>, the interruption is blocked. The <b>BusyAction</b> property of the interrupting callback then dictates the next step:
 
-If <b>BusyAction</b> is <b>'queue'</b>, the interrupting callback will be executed after the running callback completes.
+If <b>BusyAction</b> is <b>
+'queue'
+</b>, the interrupting callback will be executed after the running callback completes.
 
-If <b>BusyAction</b> is <b>'cancel'</b>, the interrupting callback is discarded and not executed.
+If <b>BusyAction</b> is <b>
+'cancel'
+</b>, the interrupting callback is discarded and not executed.
 
-By default, the <b>Interruptible</b> property is <b>'on'</b>, and <b>BusyAction</b> is <b>'queue'</b>.
+By default, the <b>Interruptible</b> property is <b>
+'on'
+</b>, and <b>BusyAction</b> is <b>
+'queue'
+</b>.
 
 Notably, certain callbacks specifically <b>DeleteFcn</b>, <b>CloseRequestFcn</b>, and <b>SizeChangedFcn</b> will interrupt the running callback regardless of the Interruptible property's value.
 

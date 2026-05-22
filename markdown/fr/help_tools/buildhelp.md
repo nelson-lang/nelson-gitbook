@@ -28,9 +28,10 @@ buildhelp('core');
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                     |
+| ------- | ---------------------------------- |
+| 1.0.0   | version initiale                   |
+| 1.17.0  | gestion des sous-chapitres ajoutée |
 
 <!--
 ## 👤 Auteur

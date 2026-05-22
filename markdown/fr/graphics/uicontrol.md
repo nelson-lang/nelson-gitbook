@@ -45,7 +45,7 @@ Liste des propriétés :
 
 <b>CData</b> : Une icône optionnelle peut être spécifiée comme un tableau 3D de valeurs RGB en vraies couleurs. Les valeurs du tableau peuvent être : des nombres en double précision allant de 0.0 à 1.0, ou des nombres uint8 allant de 0 à 255.
 
-<b>Callback</b> : Fonction de callback principale : '' (par défaut), handle de fonction, tableau de cellules ou vecteur de caractères.
+<b>Callback</b> : Fonction de callback principale : ' ' (par défaut), handle de fonction, tableau de cellules ou vecteur de caractères.
 
 <b>Children</b> : Enfants de l'UIControl : tableau vide.
 

@@ -31,36 +31,28 @@ Jouer des séquences d'images enregistrées (movie).
 ```matlab
 % Create a figure
 fig = figure('Visible', 'off');
-
 % Number of frames
 numFrames = 20;
-
 % Preallocate an array of movie frames
 clear('M');
 M(numFrames) = struct('cdata', [], 'colormap', []);
-
 % Generate frames with a moving circle
 theta = linspace(0, 2*pi, numFrames); % Angle for movement
-
 for k = 1:numFrames
     % Clear the figure
     clf;
-
     % Plot a moving circle
     x = cos(theta(k));
     y = sin(theta(k));
     plot(x, y, 'ro', 'MarkerSize', 10, 'MarkerFaceColor', 'r');
-
     % Set axis limits
     axis([-1.5 1.5 -1.5 1.5]);
     axis equal;
     grid on;
-
     % Capture the frame
     M(k) = getframe(fig);
 end
 close(fig);
-
 % Play the recorded movie 3 times at 10 frames per second
 figure();
 movie(M, 3, 10);

@@ -27,7 +27,8 @@ Display a warning message.
 
 <b>warning</b> displays a warning message.
 
-<b>warning('')</b> resets lastwarn state.
+<b>warning('
+')</b> resets lastwarn state.
 
 ## 💡 Examples
 

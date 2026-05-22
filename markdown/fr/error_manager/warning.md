@@ -27,7 +27,8 @@ Afficher un message d'avertissement.
 
 <b>warning</b> affiche un message d'avertissement.
 
-<b>warning('')</b> réinitialise l'état de lastwarn.
+<b>warning('
+')</b> réinitialise l'état de lastwarn.
 
 ## 💡 Exemples
 

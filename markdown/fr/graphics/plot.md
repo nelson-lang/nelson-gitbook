@@ -36,19 +36,19 @@ Tracé linéaire 2D.
 
 Le SymbolSpec spécifie le symbole à dessiner à chaque point de données :
 
-| Symbole  | Description                    |
-| -------- | ------------------------------ |
-| **'o'**  | Symbole cercle                 |
-| **'x'**  | Symbole croix                  |
-| **'+'**  | Symbole plus                   |
-| **'\*'** | Symbole astérisque             |
-| **'.'**  | Symbole point                  |
-| **'s'**  | Symbole carré                  |
-| **'d'**  | Symbole losange                |
-| **'v'**  | Triangle pointe vers le bas    |
-| **'^'**  | Triangle pointe vers le haut   |
-| **'<'**  | Triangle pointe vers la droite |
-| **'>'**  | Triangle pointe vers la gauche |
+| Symbole   | Description                    |
+| --------- | ------------------------------ |
+| **'o'**   | Symbole cercle                 |
+| **'x'**   | Symbole croix                  |
+| **'+'**   | Symbole plus                   |
+| **'\*'**  | Symbole astérisque             |
+| **'.'**   | Symbole point                  |
+| **'s'**   | Symbole carré                  |
+| **'d'**   | Symbole losange                |
+| **'v'**   | Triangle pointe vers le bas    |
+| **'^'**   | Triangle pointe vers le haut   |
+| **' < '** | Triangle pointe vers la droite |
+| **' > '** | Triangle pointe vers la gauche |
 
 Le LineStyleSpec spécifie le style de ligne à utiliser pour chaque série de données :
 

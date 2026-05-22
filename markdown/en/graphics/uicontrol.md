@@ -45,7 +45,7 @@ List of properties:
 
 <b>CData</b>:An optional icon can be specified as a 3-D array of truecolor RGB values. The array values can be either: Double-precision numbers ranging from 0.0 to 1.0, or uint8 numbers ranging from 0 to 255
 
-<b>Callback</b>: Primary callback function: '' (default), function handle, cell array or character vector.
+<b>Callback</b>: Primary callback function: ' ' (default), function handle, cell array or character vector.
 
 <b>Children</b>: UIControl children: empty array.
 

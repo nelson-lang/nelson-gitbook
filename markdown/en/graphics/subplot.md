@@ -70,7 +70,7 @@ plot(t, Z);
 
 ## 🔗 See also
 
-[plot](../graphics/plot.md), [axes](../graphics/axes.md).
+[plot](../graphics/plot.md), [axes](../graphics/axes.md), [tilelayout](../graphics/tilelayout.md).
 
 ## 🕔 History
 

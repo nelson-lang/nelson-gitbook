@@ -28,9 +28,25 @@ Sort array elements by quick sort algorithm.
 
 name-value pair arguments:
 
-<b>'MissingPlacement'</b> - Placement of missing values: <b>'auto'</b> (default), <b>'first'</b>, <b>'last'</b>.
+<b>
+        'MissingPlacement'
+      </b> - Placement of missing values: <b>
+        'auto'
+      </b> (default), <b>
+        'first'
+      </b>, <b>
+        'last'
+      </b>.
 
-<b>'ComparisonMethod'</b> - Element comparison method: <b>'auto'</b> (default), <b>'real'</b>, <b>'abs'</b>.
+<b>
+        'ComparisonMethod'
+      </b> - Element comparison method: <b>
+        'auto'
+      </b> (default), <b>
+        'real'
+      </b>, <b>
+        'abs'
+      </b>.
 
 ## Used function(s)
 

@@ -90,7 +90,7 @@ clabel(C)
 
 ## 🔗 Voir aussi
 
-[contour](../graphics/contour.md), [contourf](../graphics/contourf.md), [contourc](../graphics/contourf.md).
+[contour](../graphics/contour.md), [contourf](../graphics/contourf.md), [contour3](../graphics/contour3.md).
 
 ## 🕔 Historique
 

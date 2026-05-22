@@ -22,7 +22,7 @@ qml_importpathlist()
 
 ## 🔗 Voir aussi
 
-[qml_addimportpathlist](../qml_engine/qml_addimportpathlist.md).
+[qml_addimportpath](../qml_engine/qml_addimportpath.md).
 
 ## 🕔 Historique
 

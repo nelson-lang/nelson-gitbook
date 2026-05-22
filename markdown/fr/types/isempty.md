@@ -41,7 +41,7 @@ res = isempty(C)
 
 ## 🔗 Voir aussi
 
-[class](../types/class.md), [isstruct](../integer/isstruct.md).
+[class](../types/class.md), [isstruct](../types/isstruct.md).
 
 ## 🕔 Historique
 

@@ -71,7 +71,6 @@ Le module prend également en charge la construction de matrices spéciales, de 
 - [maxk](maxk.md) - k plus grands éléments d'un tableau
 - [meshgrid](meshgrid.md) - Cartesian rectangular grid in 2-D or 3-D.
 - [mink](mink.md) - k plus petits éléments d'un tableau
-- [minus](minus.md) - Subtraction, - operator
 - [mod](mod.md) - Modulus after division.
 - [ndgrid](ndgrid.md) - Rectangular grid in N-D space
 - [ndims](ndims.md) - Number of dimensions of an array.

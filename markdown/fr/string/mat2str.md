@@ -1,6 +1,6 @@
 # mat2str
 
-Conversion matrice → chaîne.
+Conversion matrice -> chaîne.
 
 ## 📝 Syntaxe
 

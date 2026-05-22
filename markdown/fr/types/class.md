@@ -74,7 +74,7 @@ class(c)
 
 ## 🔗 Voir aussi
 
-[isa](../types/isa.md), [isdouble](../integer/isdouble.md), [isfloat](../types/isfloat.md), [ischar](../types/ischar.md), [isstruct](../types/isstruct.md), [iscell](../types/iscell.md).
+[isa](../types/isa.md), [isdouble](../types/isdouble.md), [isfloat](../types/isfloat.md), [ischar](../types/ischar.md), [isstruct](../types/isstruct.md), [iscell](../types/iscell.md).
 
 ## 🕔 Historique
 

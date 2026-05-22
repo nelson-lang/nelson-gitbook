@@ -29,7 +29,7 @@ X = [4; 5];
 
 ## 🔗 Voir aussi
 
-[norm](../linear_algebra/norm.md).
+[norm](../elementary_functions/norm.md).
 
 ## 🕔 Historique
 

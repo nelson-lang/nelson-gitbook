@@ -6,4 +6,5 @@
   - [polyint](polyint.md)
   - [polyval](polyval.md)
   - [polyvalm](polyvalm.md)
+  - [ppval](ppval.md)
   - [roots](roots.md)

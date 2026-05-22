@@ -39,19 +39,33 @@ Clavier : Appuyez sur la flèche haut (↑) pour zoomer, et sur la flèche bas (
 
 L'option de mode zoom peut être spécifiée en utilisant l'une des valeurs suivantes :
 
-<b>'toggle'</b> : Bascule le mode zoom. Si le mode zoom est désactivé, 'toggle' revient à l'option de zoom la plus récemment utilisée parmi 'on', 'xon' ou 'yon'. Cette option se comporte de la même manière que l'appel de zoom sans aucun argument.
+<b>
+        'toggle'
+      </b> : Bascule le mode zoom. Si le mode zoom est désactivé, 'toggle' revient à l'option de zoom la plus récemment utilisée parmi 'on', 'xon' ou 'yon'. Cette option se comporte de la même manière que l'appel de zoom sans aucun argument.
 
-<b>'xon'</b> : Active le mode zoom exclusivement pour la dimension x.
+<b>
+        'xon'
+      </b> : Active le mode zoom exclusivement pour la dimension x.
 
-<b>'yon'</b> : Active le mode zoom exclusivement pour la dimension y.
+<b>
+        'yon'
+      </b> : Active le mode zoom exclusivement pour la dimension y.
 
-<b>'on'</b> : Active le mode zoom.
+<b>
+        'on'
+      </b> : Active le mode zoom.
 
-<b>'off'</b> : Désactive le mode zoom. Notez que certaines interactions par défaut peuvent persister indépendamment du mode d'interaction.
+<b>
+        'off'
+      </b> : Désactive le mode zoom. Notez que certaines interactions par défaut peuvent persister indépendamment du mode d'interaction.
 
-<b>'reset'</b> : Établit le niveau de zoom actuel comme niveau de zoom de base. Une fois défini, des actions ultérieures comme le dézoom, le double-clic dans les axes ou le clic sur l'icône <b>Restaurer la vue</b> sur la barre d'outils des axes ramèneront les axes à ce niveau de zoom de base.
+<b>
+        'reset'
+      </b> : Établit le niveau de zoom actuel comme niveau de zoom de base. Une fois défini, des actions ultérieures comme le dézoom, le double-clic dans les axes ou le clic sur l'icône <b>Restaurer la vue</b> sur la barre d'outils des axes ramèneront les axes à ce niveau de zoom de base.
 
-<b>'out'</b> : Restaure les axes actuels à leur niveau de zoom de base.
+<b>
+        'out'
+      </b> : Restaure les axes actuels à leur niveau de zoom de base.
 
 ## 💡 Exemple
 

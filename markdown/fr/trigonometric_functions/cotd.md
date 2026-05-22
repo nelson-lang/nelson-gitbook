@@ -26,7 +26,7 @@ R = cotd(35 + 5i)
 
 ## 🔗 Voir aussi
 
-[cot](../trigonometric/cot.md), [acot](../trigonometric/acot.md).
+[cot](../trigonometric_functions/cot.md), [acot](../trigonometric_functions/acot.md).
 
 ## 🕔 Historique
 

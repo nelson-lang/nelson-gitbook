@@ -12,7 +12,7 @@ Run Julia file from Nelson.
 ## 📥 Input argument
 
 - filename - a string scalar, character vector: filename .jl to run.
-- "filename 'input'" - a string scalar, character vector: filename .jl to run with input arguments.
+- "filename 'input' " - a string scalar, character vector: filename .jl to run with input arguments.
 - jlName, jlValue - Input arguments name and value
 - outputs - string array: Julia variable names.
 

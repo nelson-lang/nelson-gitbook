@@ -20,6 +20,7 @@ Il prend en charge la génération de contenu d'aide dans plusieurs formats, y c
 - [markdown](markdown.md) - Convertit le Markdown en HTML.
 - [xmldocbuild](xmldocbuild.md) - Fonction interne pour convertir des fichiers XML en HTML.
 - [xmldocchecker](xmldocchecker.md) - Vérifie un fichier de documentation XML.
+- [xmldoclinkchecker](xmldoclinkchecker.md) - Vérifie les références croisées non résolues dans les fichiers d'aide XML de Nelson.
 - [xmldoctohelp](xmldoctohelp.md) - Convertit des fichiers d'aide XML Nelson au format Nelson.
 - [xmldoctohtml](xmldoctohtml.md) - Convertit des fichiers d'aide XML Nelson en HTML.
 - [xmldoctomd](xmldoctomd.md) - Convertit des fichiers d'aide XML Nelson au format Markdown.

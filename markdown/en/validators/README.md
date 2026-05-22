@@ -9,6 +9,7 @@ This module ensures robust input validation, helping to prevent errors, enforce 
 ## Functions
 
 - [mustBeA](mustBeA.md) - Checks that input value comes from one of specified classes.
+- [mustBeBetween](mustBeBetween.md) - Validate that all elements are within a specified range.
 - [mustBeColumn](mustBeColumn.md) - Checks that value is a column vector or raise an error.
 - [mustBeFile](mustBeFile.md) - Checks that input path refers to file.
 - [mustBeFinite](mustBeFinite.md) - Checks that value is finite or raise an error.

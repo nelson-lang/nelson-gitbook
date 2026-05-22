@@ -27,6 +27,10 @@ The module also includes functions for searching, matching, replacing, and forma
 - [matches](matches.md) - Determine if pattern matches with strings.
 - [newline](newline.md) - Returns a newline character.
 - [num2str](num2str.md) - Converts numbers to character array.
+- [regexp](regexp.md) - Match regular expression.
+- [regexpi](regexpi.md) - Match regular expression, ignoring case.
+- [regexprep](regexprep.md) - Replace text using regular expression.
+- [regexptranslate](regexptranslate.md) - Translate text into regular expression.
 - [replace](replace.md) - Replaces strings in another.
 - [sprintf](sprintf.md) - Writes data to a string.
 - [startsWith](startsWith.md) - checks if string starts with pattern.

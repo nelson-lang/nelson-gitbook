@@ -29,8 +29,12 @@ Pour les angles multiples de 90°, la rotation est effectuée exactement sans in
 
 L'option de boîte englobante contrôle la taille de l'image de sortie :
 
-- <b>'loose'</b> : l'image de sortie est dimensionnée pour contenir l'image tournée en entier. Cela peut donner une image plus grande que l'entrée.
-- <b>'crop'</b> : l'image de sortie est recadrée à la même taille que l'image d'entrée. Des parties de l'image tournée peuvent être coupées.
+- <b>
+          'loose'
+        </b> : l'image de sortie est dimensionnée pour contenir l'image tournée en entier. Cela peut donner une image plus grande que l'entrée.
+- <b>
+          'crop'
+        </b> : l'image de sortie est recadrée à la même taille que l'image d'entrée. Des parties de l'image tournée peuvent être coupées.
 
 Les pixels de fond (zones non couvertes par l'image tournée) sont remplis de zéros.
 
@@ -61,14 +65,12 @@ Interactive rotation visualization (Part 1)
 ```matlab
 % Create a test image with clear directional features
 I = zeros(100, 100, 'uint8');
-
 % Add arrow-like pattern to show rotation clearly
 I(40:60, 20:80) = 128;  % Horizontal bar
 I(45:55, 15:85) = 255;  % Arrow shaft
 I(50, 85:95) = 255;     % Arrow tip
 I(45:49, 80:84) = 255;  % Upper arrow head
 I(51:55, 80:84) = 255;  % Lower arrow head
-
 % Show original
 figure('Name', 'Rotation Progression', 'Position', [0 0 1024 768]);
 subplot(2, 4, 1);
@@ -76,19 +78,15 @@ imagesc(I);
 colormap(gray);
 axis equal; axis tight;
 title('Original (0°)');
-
 % Show rotation progression
 angles = [15, 30, 45, 60, 90, 120, 180];
-
 for i = 1:length(angles)
     J = imrotate(I, angles(i), 'bilinear');
-
     subplot(2, 4, i + 1);
     imagesc(J);
     colormap(gray);
     axis equal; axis tight;
     title(sprintf('%d°', angles(i)));
-
     % Print rotation statistics
     fprintf('Angle %3d°: size %dx%d, non-zero pixels: %d\n', ...
             angles(i), size(J, 1), size(J, 2), sum(J(:) > 0));
@@ -102,22 +100,18 @@ Interactive rotation visualization (Part 2)
 ```matlab
 % Create a test image with clear directional features
 I = zeros(100, 100, 'uint8');
-
 % Add arrow-like pattern to show rotation clearly
 I(40:60, 20:80) = 128;  % Horizontal bar
 I(45:55, 15:85) = 255;  % Arrow shaft
 I(50, 85:95) = 255;     % Arrow tip
 I(45:49, 80:84) = 255;  % Upper arrow head
 I(51:55, 80:84) = 255;  % Lower arrow head
-
 % Demonstrate interpolation effects with zoomed view
 figure('Name', 'Interpolation Methods Comparison','Position', [0 0 1024 768]);
 I_small = I(40:70, 40:70);  % Crop a section for detailed view
-
 methods = {'nearest', 'bilinear', 'bicubic'};
 for i = 1:length(methods)
     J = imrotate(I_small, 30, methods{i});
-
     subplot(1, 3, i);
     imagesc(J);
     colormap(gray);
@@ -131,7 +125,7 @@ end
 
 ## 🔗 Voir aussi
 
-[imresize](../image_processing/imresize.md), [imshow](../image_processing/imshow.md).
+[imresize](../image_processing/imresize.md), [imshow](../graphics/imshow.md).
 
 ## 🕔 Historique
 

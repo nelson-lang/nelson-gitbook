@@ -26,7 +26,7 @@ R = asecd([1, 10+3i, 15+2i, 35+i])
 
 ## 🔗 See also
 
-[asec](../trigonometric/asec.md).
+[asec](../trigonometric_functions/asec.md).
 
 ## 🕔 History
 

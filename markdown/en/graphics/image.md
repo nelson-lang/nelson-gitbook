@@ -40,7 +40,7 @@ Properties:
 | **CDataMapping**     | Color data mapping method: 'scaled' or 'direct' (default).                                                                          |
 | **Children**         | [].                                                                                                                                 |
 | **Parent**           | Parent: axes object.                                                                                                                |
-| **Tag**              | Object identifier: string scalar, character vector, '' (default).                                                                   |
+| **Tag**              | Object identifier: string scalar, character vector, ' ' (default).                                                                  |
 | **Type**             | Type of graphics object: 'surface'.                                                                                                 |
 | **UserData**         | User data: array or [] (default).                                                                                                   |
 | **Visible**          | State of visibility: 'off' or 'on' (default).                                                                                       |

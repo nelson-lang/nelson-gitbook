@@ -48,8 +48,8 @@ creates text descriptions to data points.
 | **Parent**              | Parent: axes object.                                                                                                                |
 | **Position**            | Location of text: two-element vector of form [x y] or three-element vector of form [x y z].                                         |
 | **Rotation**            | Text orientation: scalar value in degrees.                                                                                          |
-| **String**              | Text to display: character vector, cell array of character vectors, string array, numeric value or '' (default).                    |
-| **Tag**                 | Object identifier: character vector, string scalar or '' (default).                                                                 |
+| **String**              | Text to display: character vector, cell array of character vectors, string array, numeric value or ' ' (default).                   |
+| **Tag**                 | Object identifier: character vector, string scalar or ' ' (default).                                                                |
 | **Type**                | Type of graphics object: 'text'.                                                                                                    |
 | **Units**               | Position and extent units: 'normalized', 'inches', 'centimeters', 'characters', 'points', 'pixels' or 'data' (default).             |
 | **UserData**            | User data: array or [] (default).                                                                                                   |
@@ -104,7 +104,7 @@ Subscript: \_{ } 'text\_{subscript}'
 | \\uparrow          | ↑      |
 | \\iota             | ι      |
 | \\Sigma            | Σ      |
-| \\rightarrow       | →      |
+| \\rightarrow       | ->     |
 | \\kappa            | κ      |
 | \\Upsilon          | ϒ      |
 | \\Rightarrow       | ⇒      |

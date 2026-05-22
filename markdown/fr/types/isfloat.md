@@ -32,7 +32,7 @@ res = isfloat(A)
 
 ## 🔗 Voir aussi
 
-[isa](../types/isa.md), [single](../integer/single.md), [isdouble](../types/isdouble.md).
+[isa](../types/isa.md), [single](../single/single.md), [isdouble](../types/isdouble.md).
 
 ## 🕔 Historique
 

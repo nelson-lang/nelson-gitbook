@@ -14,7 +14,7 @@ The Current Folder browser in Nelson facilitates interactive file and folder man
 
 ## 🔗 See also
 
-[historybrowser](../gui/historybrowser.md), [workspace](../gui/workspace.md).
+[commandhistory](../gui/commandhistory.md), [workspace](../gui/workspace.md).
 
 ## 🕔 History
 

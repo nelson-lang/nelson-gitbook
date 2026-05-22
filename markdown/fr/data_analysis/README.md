@@ -8,10 +8,12 @@ Ce module permet un traitement, un résumé et une exploration efficaces des jeu
 
 ## Functions
 
+- [allbetween](allbetween.md) - Determine si tous les elements sont compris entre des bornes.
 - [conv](conv.md) - Convolution et multiplication de polynômes.
 - [conv2](conv2.md) - Convolution 2D.
 - [cumprod](cumprod.md) - Produit cumulatif des éléments d'un tableau.
 - [cumsum](cumsum.md) - Somme cumulative des éléments d'un tableau.
+- [isbetween](isbetween.md) - Determine les elements compris entre des bornes inferieure et superieure.
 - [ismissing](ismissing.md) - Vérifier les valeurs manquantes.
 - [issorted](issorted.md) - Détermine si un tableau est trié.
 - [max](max.md) - Valeurs maximales d'un tableau.

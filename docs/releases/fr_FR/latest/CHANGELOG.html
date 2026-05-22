@@ -42,6 +42,118 @@ border-color: #333;
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2>1.17.0 - (UNRELEASED)</h2>
+<h3>Added</h3>
+<ul>
+<li>
+<p>function argument validation using <code>arguments ... end</code> blocks</p>
+<ul>
+<li>Support for validation functions (e.g., <code>mustBeNumeric</code>, <code>mustBeMember</code>)</li>
+<li>Default values for optional positional and name-value arguments</li>
+<li>Separate validation blocks for input and output arguments</li>
+<li>Improved error messages for invalid function arguments</li>
+</ul>
+</li>
+<li>
+<p>Debugger Support</p>
+<ul>
+<li>Full breakpoint management with commands: <code>dbstop</code>, <code>dbstep</code>, <code>dbcont</code>, <code>dbquit</code>, <code>dbclear</code>, <code>dbdown</code>, <code>dbup</code>, <code>dbstatus</code>.</li>
+<li>Support for setting breakpoints at specific files, functions, and lines.</li>
+<li>Conditional breakpoints and hit-count breakpoints (if applicable).</li>
+</ul>
+</li>
+<li>
+<p>Interactive Debugging in Text Editor</p>
+<ul>
+<li>Real-time feedback on breakpoints directly within the editor.</li>
+<li>Inline variable inspection while stepping through code.</li>
+<li>Highlighting of the current execution line.</li>
+</ul>
+</li>
+<li>
+<p>Step Execution Controls</p>
+<ul>
+<li>Step Into: move into function calls.</li>
+<li>Step Over: execute functions without entering them.</li>
+<li>Continue: resume execution until the next breakpoint.</li>
+</ul>
+</li>
+<li>
+<p>Stack Inspection &amp; Variable Evaluation</p>
+<ul>
+<li>Examine the call stack during debugging with <code>dbup</code> and <code>dbdown</code>.</li>
+<li>Evaluate and modify variables in the current workspace.</li>
+<li>Inspect function arguments and local variables.</li>
+</ul>
+</li>
+<li>
+<p>Enhanced Debugging Experience</p>
+<ul>
+<li>Integration with the command-line interface and editor interface.</li>
+<li>Improved visibility of function contexts and nested calls.</li>
+</ul>
+</li>
+<li>
+<p>Added support for multi-line comments in the interpreter, editor, debugger, and headcomments.</p>
+</li>
+<li>
+<p><code>interp2</code>, <code>interp3</code>, <code>interpn</code>: interpolation functions</p>
+</li>
+<li>
+<p><code>regexp</code>, <code>regexpi</code>, <code>regexprep</code>,  <code>regextranslate</code>: regexp functions added.</p>
+</li>
+<li>
+<p><a href="https://github.com/nelson-lang/nelson/issues/309">#309</a>: <code>erf</code>, <code>erfc</code>, <code>erfcinv</code>, <code>erfcx</code>, <code>erfinv</code> error functions.</p>
+</li>
+<li>
+<p><a href="https://github.com/nelson-lang/nelson/issues/1289">#1289</a>: <code>isbetween</code>, <code>allbetween</code>, <code>mustBeBetween</code> functions.</p>
+</li>
+<li>
+<p><code>tiledlayout</code>, <code>nexttile</code>, <code>tilenum</code>, <code>tilerowcol</code> layout management.</p>
+</li>
+<li>
+<p><a href="https://github.com/nelson-lang/nelson/issues/813">#813</a>: <code>findobj</code> Find graphics objects with specific properties.</p>
+</li>
+<li>
+<p><code>contourf</code>, <code>contourc</code>, Filled contour plot of matrix.</p>
+</li>
+<li>
+<p>Dedicated Windows Terminal profile installed for the application.</p>
+</li>
+<li>
+<p>help engine extending to manage subchapters.</p>
+</li>
+<li>
+<p><code>xmldoclinkchecker</code> Checks unresolved cross-references in Nelson help XML files.</p>
+</li>
+<li>
+<p>MacOS packaging as dmg installer.</p>
+</li>
+<li>
+<p>Qt 6.11.0 support.</p>
+</li>
+<li>
+<p>Full CMake configuration and build system for Visual Studio  (x64, Win32, ARM64).</p>
+</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Reduced interpreter overhead in tight loops.</li>
+<li>Internal tooling refactored: nodejs and python tools for formatting and version updates replaced with Rust-based tools.</li>
+<li>CMake factorized.</li>
+<li>Innosetup installer modernized.</li>
+<li>fmtlib 12.1</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1585">#1585</a>: Memory leak during scalar assignments in tight/nested loops after scalar inline-data optimization.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1567">#1567</a>: UTF-16LE output despite encoding=‘UTF-8’ in fprintf builtin (Windows).</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1564">#1564</a>: Regression: modifying copy unexpectedly alters original array.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1550">#1550</a>: getpid(‘available’) did not work as expected.</li>
+<li><a href="https://github.com/nelson-lang/nelson/issues/1547">#1547</a>: Parsing of ~= operator with spaces was not working correctly, causing it to be misinterpreted as a matrix row separator.</li>
+<li>unresolved cross-references in Nelson help XML files.</li>
+<li>memory leak in uicontrol.</li>
+</ul>
 <h2>1.16.0 - (2025-12-27)</h2>
 <h3>Added</h3>
 <ul>
@@ -160,7 +272,7 @@ The certificate represents a significant cost for a volunteer effort - any donat
 <li><code>DefaultFigureAlphamap</code>, <code>DefaultFigureColormap</code> as root properties.</li>
 </ul>
 </li>
-<li>Support for <code>nix develop</code>, providing a reproducible Bash shell preconfigured with Nelson’s build environment.<br />
+<li>Support for <code>nix develop</code>, providing a reproducible Bash shell preconfigured with Nelson’s build environment.
 See <a href="./BUILDING.md">BUILDING.md</a> for details.</li>
 <li>A <a href="https://just.systems/man/en/"><code>justfile</code></a> to streamline and standardize the build process across platforms.</li>
 <li>Support for:

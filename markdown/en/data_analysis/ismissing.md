@@ -24,9 +24,15 @@ missing data are defined as:
 
 <b>missing</b> for string array
 
-<b>' '</b> for character array
+<b>
+        '
+        '
+      </b> for character array
 
-<b>''</b> for cell of character array
+<b>
+        '
+        '
+      </b> for cell of character array
 
 ## 💡 Example
 
@@ -44,7 +50,7 @@ ismissing(D)
 
 ## 🔗 See also
 
-[isfinite](../data_analysis/isfinite.md).
+[isfinite](../elementary_functions/isfinite.md).
 
 ## 🕔 History
 

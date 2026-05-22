@@ -25,7 +25,7 @@ When rotate mode is enabled, you can adjust the view of axes using the cursor or
 
 Cursor: Click and drag within the axes.
 
-Keyboard: Use the right arrow (→) or left arrow (←) keys to adjust azimuth, and the up arrow (↑) or down arrow (↓) keys to modify elevation.
+Keyboard: Use the right arrow (->) or left arrow (←) keys to adjust azimuth, and the up arrow (↑) or down arrow (↓) keys to modify elevation.
 
 ## 💡 Example
 

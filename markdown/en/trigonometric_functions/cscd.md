@@ -26,7 +26,7 @@ R = cscd([35+i 15+2i 10+3i])
 
 ## 🔗 See also
 
-[csc](../trigonometric/cosh.md).
+[csc](../trigonometric_functions/cosh.md).
 
 ## 🕔 History
 

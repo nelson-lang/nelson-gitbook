@@ -9,6 +9,7 @@ Ce module assure une validation d'entrée robuste, contribuant à prévenir les 
 ## Functions
 
 - [mustBeA](mustBeA.md) - Vérifie que la valeur d'entrée appartient à l'une des classes spécifiées.
+- [mustBeBetween](mustBeBetween.md) - Valide que tous les elements sont compris dans une plage specifiee.
 - [mustBeColumn](mustBeColumn.md) - Vérifie que la valeur est un vecteur colonne ou renvoie une erreur.
 - [mustBeFile](mustBeFile.md) - Vérifie que le chemin d'entrée correspond à un fichier.
 - [mustBeFinite](mustBeFinite.md) - Vérifie que la valeur est finie ou renvoie une erreur.

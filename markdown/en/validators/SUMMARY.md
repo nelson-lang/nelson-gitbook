@@ -1,5 +1,6 @@
 - [validators](README.md)
   - [mustBeA](mustBeA.md)
+  - [mustBeBetween](mustBeBetween.md)
   - [mustBeColumn](mustBeColumn.md)
   - [mustBeFile](mustBeFile.md)
   - [mustBeFinite](mustBeFinite.md)

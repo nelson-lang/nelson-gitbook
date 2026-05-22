@@ -14,7 +14,7 @@ L'explorateur du dossier courant dans Nelson facilite la gestion interactive des
 
 ## 🔗 Voir aussi
 
-[historybrowser](../gui/historybrowser.md), [workspace](../gui/workspace.md).
+[commandhistory](../gui/commandhistory.md), [workspace](../gui/workspace.md).
 
 ## 🕔 Historique
 

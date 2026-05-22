@@ -28,7 +28,7 @@ R2 = isfinite(X)
 
 ## 🔗 Voir aussi
 
-[isfinite](../elementary_functions/isfinite.md), [isnan](../elementary_functions/isnan.md), [all](../elementary_functions/all.md).
+[isfinite](../elementary_functions/isfinite.md), [isnan](../elementary_functions/isnan.md), [all](../operators/all.md).
 
 ## 🕔 Historique
 

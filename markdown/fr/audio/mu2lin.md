@@ -20,7 +20,7 @@ Convertir les données audio de mu-law vers un signal linéaire.
 
 ## 📚 Bibliographie
 
-"A New Digital Technique for Implementation of Any Continuous PCM Companding Law," Villeret, Michel, et al. 1973 IEEE Int. Conf. on Communications, Vol 1, 1973, pg. 11.12-11.17.
+    "A New Digital Technique for Implementation of Any Continuous PCM Companding Law," Villeret, Michel, et al. 1973 IEEE Int. Conf. on Communications, Vol 1, 1973, pg. 11.12-11.17.
 
 ## 💡 Exemple
 

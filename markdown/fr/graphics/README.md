@@ -24,6 +24,8 @@ Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom,
 - [colstyle](colstyle.md) - Analyse la couleur et le style à partir d'une chaîne.
 - [contour](contour.md) - Tracé de contours d'une matrice
 - [contour3](contour3.md) - Tracé de contours 3D d'une matrice
+- [contourc](contourc.md) - Calcul de matrice de contours
+- [contourf](contourf.md) - Trace de contours remplis d'une matrice
 - [cool](cool.md) - Palette de couleurs cool.
 - [copper](copper.md) - Palette de couleurs copper.
 - [cylinder](cylinder.md) - Créer un cylindre.
@@ -31,6 +33,7 @@ Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom,
 - [drawnow](drawnow.md) - Met à jour les figures et traite les callbacks
 - [figure](figure.md) - Crée une fenêtre figure.
 - [fill](fill.md) - Créer des formes 2D remplies.
+- [findobj](findobj.md) - Trouve des objets graphiques avec des proprietes donnees.
 - [flag](flag.md) - Palette de couleurs flag.
 - [frame2im](frame2im.md) - Récupère les données d'image d'une image vidéo.
 - [gca](gca.md) - Récupère l'objet axes courant.
@@ -61,6 +64,7 @@ Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom,
 - [movie](movie.md) - Jouer des séquences d'images enregistrées (movie).
 - [nebula](nebula.md) - Palette de couleurs Nebula.
 - [newplot](newplot.md) - Préparer la création d'un nouveau graphique.
+- [nexttile](nexttile.md) - Créer des axes dans une disposition en mosaïque.
 - [pan](pan.md) - Activer le mode déplacement (pan).
 - [parula](parula.md) - Palette de couleurs Parula.
 - [patch](patch.md) - Créer des patchs de polygones colorés
@@ -91,6 +95,9 @@ Il inclut la visualisation 2D et 3D, des outils d'interaction utilisateur (zoom,
 - [surf](surf.md) - tracé de surface.
 - [surface](surface.md) - Tracé de surface primitif.
 - [text](text.md) - crée des descriptions textuelles pour les points de données.
+- [tiledlayout](tiledlayout.md) - Créer une disposition en mosaïque.
+- [tilenum](tilenum.md) - Obtenir le numéro de tuile à partir d'indices ligne-colonne ou d'un objet graphique.
+- [tilerowcol](tilerowcol.md) - Obtenir les indices ligne et colonne à partir d'un numéro de tuile ou d'un objet graphique.
 - [title](title.md) - Ajouter un titre.
 - [turbo](turbo.md) - Tableau de couleurs Turbo.
 - [uicontrol](uicontrol.md) - Créer un composant d'interface utilisateur.

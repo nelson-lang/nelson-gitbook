@@ -6,10 +6,10 @@ Returns last recorded warning message.
 
 - last_message = lastwarn()
 - [last\_message, last\_identifier] = lastwarn()
-- lastwarn('')
+- lastwarn(' ')
 - lastwarn(new_message)
 - lastwarn(new_message, new_identifier)
-- [last\_message, last\_identifier] = lastwarn('')
+- [last\_message, last\_identifier] = lastwarn(' ')
 - [last\_message, last\_identifier] = lastwarn(new_message)
 - [last\_message, last\_identifier] = lastwarn(new_message, new_identifier)
 
@@ -22,7 +22,8 @@ Returns last recorded warning message.
 
 <b>last_message = lastwarn()</b> returns a string containing the last warning message.
 
-<b>lastwarn('')</b> clears last warning.
+<b>lastwarn('
+')</b> clears last warning.
 
 ## 💡 Example
 

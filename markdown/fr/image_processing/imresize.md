@@ -86,7 +86,7 @@ title('Resized Image');
 
 ## 🔗 Voir aussi
 
-[imrotate](../image_processing/imrotate.md), [imshow](../image_processing/imshow.md).
+[imrotate](../image_processing/imrotate.md), [imshow](../graphics/imshow.md).
 
 ## 🕔 Historique
 

@@ -28,7 +28,7 @@ addgateway(modulepath('time', 'builtin'))
 
 ## 🔗 See also
 
-[removegateway](../dynamic_link/removegateway.md), [gatewayinfo](../dynamic_link/gatewayinfo.md).
+[removegateway](../modules_manager/removegateway.md), [gatewayinfo](../modules_manager/gatewayinfo.md).
 
 ## 🕔 History
 

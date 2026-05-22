@@ -34,7 +34,7 @@ cellstr({})
 
 ## 🔗 See also
 
-[iscellstr](../types/iscellstr.md).
+[iscellstr](../data_structures/iscellstr.md).
 
 ## 🕔 History
 

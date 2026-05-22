@@ -1,10 +1,11 @@
 # shortcutand
 
-Opérateur AND à court-circuit, &&
+Opérateur AND à court-circuit, &
+&
 
 ## 📝 Syntaxe
 
-- C = A && B
+- C = A & & B
 
 ## 📥 Argument d'entrée
 
@@ -13,11 +14,12 @@ Opérateur AND à court-circuit, &&
 
 ## 📤 Argument de sortie
 
-- C - result of A && B
+- C - result of A & & B
 
 ## 📄 Description
 
-<b>C = A && B</b> performs a logical<b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.
+<b>C = A &
+& B</b> performs a logical<b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.
 
 ## 💡 Exemple
 

@@ -1,10 +1,11 @@
 # shortcutand
 
-Short circuit 'AND' operator, &&
+Short circuit 'AND' operator, &
+&
 
 ## 📝 Syntax
 
-- C = A && B
+- C = A & & B
 
 ## 📥 Input argument
 
@@ -13,11 +14,12 @@ Short circuit 'AND' operator, &&
 
 ## 📤 Output argument
 
-- C - result of A && B
+- C - result of A & & B
 
 ## 📄 Description
 
-<b>C = A && B</b> performs a logical<b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.
+<b>C = A &
+& B</b> performs a logical<b>AND</b> operation, the second operand is evaluated only when the result is not fully determined by the first operand.
 
 ## 💡 Example
 

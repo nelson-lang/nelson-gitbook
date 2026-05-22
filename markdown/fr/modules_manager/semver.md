@@ -27,13 +27,19 @@ Opérateurs de plage supportés :
 
 <b>=</b> - Égalité
 
-<b>>=</b> - Supérieur ou égal à
+<b>
+        >=</b> - Supérieur ou égal à
 
-<b><=</b> - Inférieur ou égal à
+<b>
+        <=</b> - Inférieur ou égal à
 
-<b><</b> - Inférieur à
+<b>
+        <
+      </b> - Inférieur à
 
-<b>></b> - Supérieur à
+<b>
+        >
+      </b> - Supérieur à
 
 <b>^</b> - Opérateur caret (caret)
 

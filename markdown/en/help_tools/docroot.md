@@ -9,7 +9,7 @@ Retrieve or update the root directory for Nelson Help system.
 
 ## 📥 Input argument
 
-- new_docroot - a string: '', '.', or a URL.
+- new_docroot - a string: ' ', '.', or a URL.
 
 ## 📄 Description
 
@@ -19,7 +19,8 @@ When called without an argument,<b>docroot</b> returns the current root director
 
 When called with an argument,<b>docroot</b> updates the root directory for Nelson Help.
 
-<b>docroot('')</b> resets the root directory for Nelson Help to the default value.
+<b>docroot('
+')</b> resets the root directory for Nelson Help to the default value.
 
 <b>docroot('.')</b> uses local help files and the local browser (restores behavior before v1.11.0).
 

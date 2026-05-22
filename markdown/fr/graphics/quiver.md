@@ -71,7 +71,7 @@ f.DrawLater = 'off';
 
 ## 🔗 Voir aussi
 
-[meshgrid](../graphics/meshgrid.md), [subplot](../graphics/subplot.md).
+[meshgrid](../elementary_functions/meshgrid.md), [subplot](../graphics/subplot.md).
 
 ## 🕔 Historique
 

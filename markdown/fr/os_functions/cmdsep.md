@@ -8,7 +8,7 @@ Séparateur de commande pour le système d'exploitation courant.
 
 ## 📤 Argument de sortie
 
-- sep - une chaîne : sous Windows "&&", sous Linux ";"
+- sep - une chaîne : sous Windows " & & ", sous Linux ";"
 
 ## 📄 Description
 

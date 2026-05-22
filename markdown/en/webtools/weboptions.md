@@ -71,10 +71,11 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 
 ## 🕔 History
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
-| 1.0.0   | initial version               |
-| 1.6.0   | 'FollowLocation' option added |
+| Version                       | 📄 Description  |
+| ----------------------------- | --------------- |
+| 1.0.0                         | initial version |
+| 1.6.0                         |
+| 'FollowLocation' option added |
 
 <!--
 ## 👤 Author

@@ -27,7 +27,7 @@ y = acosd(x)
 
 ## 🔗 See also
 
-[cosd](../trigonometric/cosd.md).
+[cosd](../trigonometric_functions/cosd.md).
 
 ## 🕔 History
 

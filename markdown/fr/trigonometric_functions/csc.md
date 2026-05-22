@@ -26,7 +26,7 @@ R = csc(-pi+0.01:0.01:-0.01)
 
 ## 🔗 Voir aussi
 
-[cscd](../trigonometric/cscd.md).
+[cscd](../trigonometric_functions/cscd.md).
 
 ## 🕔 Historique
 

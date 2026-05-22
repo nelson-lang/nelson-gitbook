@@ -62,7 +62,6 @@
   - [maxk](maxk.md)
   - [meshgrid](meshgrid.md)
   - [mink](mink.md)
-  - [minus](minus.md)
   - [mod](mod.md)
   - [ndgrid](ndgrid.md)
   - [ndims](ndims.md)

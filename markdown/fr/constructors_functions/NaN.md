@@ -39,7 +39,7 @@ isnan(NaN)
 
 ## 🔗 Voir aussi
 
-[isnan](../types/isnan.md).
+[isnan](../elementary_functions/isnan.md).
 
 ## 🕔 Historique
 

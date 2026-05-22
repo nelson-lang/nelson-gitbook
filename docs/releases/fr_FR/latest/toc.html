@@ -123,7 +123,9 @@
 <ul class="toc-list" style="display:none;">
 <li class="toc-entry"><a class="toc-link" href="./interpreter/abort.html" target="contentFrame">abort</a></li>
 <li class="toc-entry"><a class="toc-link" href="./interpreter/abort.html" target="contentFrame">return</a></li>
+<li class="toc-entry"><a class="toc-link" href="./interpreter/arguments.html" target="contentFrame">arguments</a></li>
 <li class="toc-entry"><a class="toc-link" href="./interpreter/break.html" target="contentFrame">break</a></li>
+<li class="toc-entry"><a class="toc-link" href="./interpreter/comments.html" target="contentFrame">commentaires</a></li>
 <li class="toc-entry"><a class="toc-link" href="./interpreter/continue.html" target="contentFrame">continue</a></li>
 <li class="toc-entry"><a class="toc-link" href="./interpreter/for.html" target="contentFrame">for</a></li>
 <li class="toc-entry"><a class="toc-link" href="./interpreter/for.html" target="contentFrame">parfor</a></li>
@@ -323,6 +325,10 @@
 <li class="toc-entry"><a class="toc-link" href="./string/matches.html" target="contentFrame">matches</a></li>
 <li class="toc-entry"><a class="toc-link" href="./string/newline.html" target="contentFrame">newline</a></li>
 <li class="toc-entry"><a class="toc-link" href="./string/num2str.html" target="contentFrame">num2str</a></li>
+<li class="toc-entry"><a class="toc-link" href="./string/regexp.html" target="contentFrame">regexp</a></li>
+<li class="toc-entry"><a class="toc-link" href="./string/regexpi.html" target="contentFrame">regexpi</a></li>
+<li class="toc-entry"><a class="toc-link" href="./string/regexprep.html" target="contentFrame">regexprep</a></li>
+<li class="toc-entry"><a class="toc-link" href="./string/regexptranslate.html" target="contentFrame">regexptranslate</a></li>
 <li class="toc-entry"><a class="toc-link" href="./string/replace.html" target="contentFrame">replace</a></li>
 <li class="toc-entry"><a class="toc-link" href="./string/sprintf.html" target="contentFrame">sprintf</a></li>
 <li class="toc-entry"><a class="toc-link" href="./string/startsWith.html" target="contentFrame">startsWith</a></li>
@@ -567,7 +573,6 @@
 <li class="toc-entry"><a class="toc-link" href="./elementary_functions/maxk.html" target="contentFrame">maxk</a></li>
 <li class="toc-entry"><a class="toc-link" href="./elementary_functions/meshgrid.html" target="contentFrame">meshgrid</a></li>
 <li class="toc-entry"><a class="toc-link" href="./elementary_functions/mink.html" target="contentFrame">mink</a></li>
-<li class="toc-entry"><a class="toc-link" href="./elementary_functions/minus.html" target="contentFrame">minus</a></li>
 <li class="toc-entry"><a class="toc-link" href="./elementary_functions/mod.html" target="contentFrame">mod</a></li>
 <li class="toc-entry"><a class="toc-link" href="./elementary_functions/ndgrid.html" target="contentFrame">ndgrid</a></li>
 <li class="toc-entry"><a class="toc-link" href="./elementary_functions/ndims.html" target="contentFrame">ndims</a></li>
@@ -665,11 +670,19 @@
 <li class="toc-entry"><a class="toc-link" href="./special_functions/betainc.html" target="contentFrame">betainc</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/cross.html" target="contentFrame">cross</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/dot.html" target="contentFrame">dot</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/erf.html" target="contentFrame">erf</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/erfc.html" target="contentFrame">erfc</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/erfcinv.html" target="contentFrame">erfcinv</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/erfcx.html" target="contentFrame">erfcx</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/erfinv.html" target="contentFrame">erfinv</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/factor.html" target="contentFrame">factor</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/gamma.html" target="contentFrame">gamma</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/gammaln.html" target="contentFrame">gammaln</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/gcd.html" target="contentFrame">gcd</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/interp1.html" target="contentFrame">interp1</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/interp2.html" target="contentFrame">interp2</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/interp3.html" target="contentFrame">interp3</a></li>
+<li class="toc-entry"><a class="toc-link" href="./special_functions/interpn.html" target="contentFrame">interpn</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/peaks.html" target="contentFrame">peaks</a></li>
 <li class="toc-entry"><a class="toc-link" href="./special_functions/primes.html" target="contentFrame">primes</a></li>
 </ul>
@@ -726,10 +739,12 @@
 <div class="section-title clickable" style="font-size: 1em;" onclick="toggleTocList(this)">
 <span class="arrow">▸</span>Analyse de données</div>
 <ul class="toc-list" style="display:none;">
+<li class="toc-entry"><a class="toc-link" href="./data_analysis/allbetween.html" target="contentFrame">allbetween</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/conv.html" target="contentFrame">conv</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/conv2.html" target="contentFrame">conv2</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/cumprod.html" target="contentFrame">cumprod</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/cumsum.html" target="contentFrame">cumsum</a></li>
+<li class="toc-entry"><a class="toc-link" href="./data_analysis/isbetween.html" target="contentFrame">isbetween</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/ismissing.html" target="contentFrame">ismissing</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/issorted.html" target="contentFrame">issorted</a></li>
 <li class="toc-entry"><a class="toc-link" href="./data_analysis/max.html" target="contentFrame">max</a></li>
@@ -753,6 +768,7 @@
 <li class="toc-entry"><a class="toc-link" href="./polynomial_functions/polyint.html" target="contentFrame">polyint</a></li>
 <li class="toc-entry"><a class="toc-link" href="./polynomial_functions/polyval.html" target="contentFrame">polyval</a></li>
 <li class="toc-entry"><a class="toc-link" href="./polynomial_functions/polyvalm.html" target="contentFrame">polyvalm</a></li>
+<li class="toc-entry"><a class="toc-link" href="./polynomial_functions/ppval.html" target="contentFrame">ppval</a></li>
 <li class="toc-entry"><a class="toc-link" href="./polynomial_functions/roots.html" target="contentFrame">roots</a></li>
 </ul>
 </div>
@@ -1257,6 +1273,7 @@
 <div class="section-title clickable" style="font-size: 1em;" onclick="toggleTocList(this)">
 <span class="arrow">▸</span>Text editor</div>
 <ul class="toc-list" style="display:none;">
+<li class="toc-entry"><a class="toc-link" href="./text_editor/debugging_workflow.html" target="contentFrame">débogage</a></li>
 <li class="toc-entry"><a class="toc-link" href="./text_editor/edit.html" target="contentFrame">edit</a></li>
 <li class="toc-entry"><a class="toc-link" href="./text_editor/editor.html" target="contentFrame">editor</a></li>
 <li class="toc-entry"><a class="toc-link" href="./text_editor/smartindent.html" target="contentFrame">smartindent</a></li>
@@ -1284,6 +1301,8 @@
 <li class="toc-entry"><a class="toc-link" href="./graphics/colstyle.html" target="contentFrame">colstyle</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/contour.html" target="contentFrame">contour</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/contour3.html" target="contentFrame">contour3</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/contourc.html" target="contentFrame">contourc</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/contourf.html" target="contentFrame">contourf</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/cool.html" target="contentFrame">cool</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/copper.html" target="contentFrame">copper</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/cylinder.html" target="contentFrame">cylinder</a></li>
@@ -1291,6 +1310,7 @@
 <li class="toc-entry"><a class="toc-link" href="./graphics/drawnow.html" target="contentFrame">drawnow</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/figure.html" target="contentFrame">figure</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/fill.html" target="contentFrame">fill</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/findobj.html" target="contentFrame">findobj</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/flag.html" target="contentFrame">flag</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/frame2im.html" target="contentFrame">frame2im</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/gca.html" target="contentFrame">gca</a></li>
@@ -1321,6 +1341,7 @@
 <li class="toc-entry"><a class="toc-link" href="./graphics/movie.html" target="contentFrame">movie</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/nebula.html" target="contentFrame">nebula</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/newplot.html" target="contentFrame">newplot</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/nexttile.html" target="contentFrame">nexttile</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/pan.html" target="contentFrame">pan</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/parula.html" target="contentFrame">parula</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/patch.html" target="contentFrame">patch</a></li>
@@ -1351,6 +1372,9 @@
 <li class="toc-entry"><a class="toc-link" href="./graphics/surf.html" target="contentFrame">surf</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/surface.html" target="contentFrame">surface</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/text.html" target="contentFrame">text</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/tiledlayout.html" target="contentFrame">tiledlayout</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/tilenum.html" target="contentFrame">tilenum</a></li>
+<li class="toc-entry"><a class="toc-link" href="./graphics/tilerowcol.html" target="contentFrame">tilerowcol</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/title.html" target="contentFrame">title</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/turbo.html" target="contentFrame">turbo</a></li>
 <li class="toc-entry"><a class="toc-link" href="./graphics/uicontrol.html" target="contentFrame">uicontrol</a></li>
@@ -1490,6 +1514,7 @@
 <span class="arrow">▸</span>Validateurs</div>
 <ul class="toc-list" style="display:none;">
 <li class="toc-entry"><a class="toc-link" href="./validators/mustBeA.html" target="contentFrame">mustBeA</a></li>
+<li class="toc-entry"><a class="toc-link" href="./validators/mustBeBetween.html" target="contentFrame">mustBeBetween</a></li>
 <li class="toc-entry"><a class="toc-link" href="./validators/mustBeColumn.html" target="contentFrame">mustBeColumn</a></li>
 <li class="toc-entry"><a class="toc-link" href="./validators/mustBeFile.html" target="contentFrame">mustBeFile</a></li>
 <li class="toc-entry"><a class="toc-link" href="./validators/mustBeFinite.html" target="contentFrame">mustBeFinite</a></li>
@@ -1579,7 +1604,17 @@
 <div class="section">
 <div class="section-title clickable" style="font-size: 1em;" onclick="toggleTocList(this)">
 <span class="arrow">▸</span>Fonctions de débogage</div>
-<ul class="toc-list" style="display:none;"><li class="toc-entry"><a class="toc-link" href="./debugger/dbstack.html" target="contentFrame">dbstack</a></li></ul>
+<ul class="toc-list" style="display:none;">
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbclear.html" target="contentFrame">dbclear</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbcont.html" target="contentFrame">dbcont</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbdown.html" target="contentFrame">dbdown</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbquit.html" target="contentFrame">dbquit</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbstack.html" target="contentFrame">dbstack</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbstatus.html" target="contentFrame">dbstatus</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbstep.html" target="contentFrame">dbstep</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbstop.html" target="contentFrame">dbstop</a></li>
+<li class="toc-entry"><a class="toc-link" href="./debugger/dbup.html" target="contentFrame">dbup</a></li>
+</ul>
 </div>
 <div class="section">
 <div class="section-title clickable" style="font-size: 1em;" onclick="toggleTocList(this)">
@@ -1628,6 +1663,7 @@
 <li class="toc-entry"><a class="toc-link" href="./help_tools/markdown.html" target="contentFrame">markdown</a></li>
 <li class="toc-entry"><a class="toc-link" href="./help_tools/xmldocbuild.html" target="contentFrame">xmldocbuild</a></li>
 <li class="toc-entry"><a class="toc-link" href="./help_tools/xmldocchecker.html" target="contentFrame">xmldocchecker</a></li>
+<li class="toc-entry"><a class="toc-link" href="./help_tools/xmldoclinkchecker.html" target="contentFrame">xmldoclinkchecker</a></li>
 <li class="toc-entry"><a class="toc-link" href="./help_tools/xmldoctohelp.html" target="contentFrame">xmldoctohelp</a></li>
 <li class="toc-entry"><a class="toc-link" href="./help_tools/xmldoctohtml.html" target="contentFrame">xmldoctohtml</a></li>
 <li class="toc-entry"><a class="toc-link" href="./help_tools/xmldoctomd.html" target="contentFrame">xmldoctomd</a></li>

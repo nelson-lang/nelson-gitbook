@@ -26,7 +26,7 @@ R = acotd([-i pi+i*pi/2 -1+i*4])
 
 ## 🔗 See also
 
-[acot](../trigonometric/acot.md), [acoth](../trigonometric/acoth.md).
+[acot](../trigonometric_functions/acot.md), [acoth](../trigonometric_functions/acoth.md).
 
 ## 🕔 History
 

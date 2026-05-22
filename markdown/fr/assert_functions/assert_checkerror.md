@@ -20,7 +20,7 @@ Vérifie qu'une commande lève l'erreur attendue.
 ## 📤 Argument de sortie
 
 - r - une valeur logique : true si le test réussit, false sinon.
-- msg - une chaîne contenant le message d'erreur. Si r == true, alors msg == ''. Si r == false, alors msg contient le message d'échec de l'assertion.
+- msg - une chaîne contenant le message d'erreur. Si r == true, alors msg == ' '. Si r == false, alors msg contient le message d'échec de l'assertion.
 
 ## 📄 Description
 

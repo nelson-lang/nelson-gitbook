@@ -30,10 +30,11 @@ fonction interne
 
 ## 🕔 Historique
 
-| Version | 📄 Description                |
-| ------- | ----------------------------- |
-| 1.0.0   | version initiale              |
-| 1.15.0  | 'qt' input parameter removed. |
+| Version                       | 📄 Description   |
+| ----------------------------- | ---------------- |
+| 1.0.0                         | version initiale |
+| 1.15.0                        |
+| 'qt' input parameter removed. |
 
 <!--
 ## 👤 Auteur

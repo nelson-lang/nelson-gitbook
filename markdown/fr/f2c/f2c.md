@@ -16,7 +16,7 @@ Convertisseur Fortran vers C.
 ## 📤 Argument de sortie
 
 - r - un booléen : true si succès.
-- msg - une chaîne : message d'erreur ou ''.
+- msg - une chaîne : message d'erreur ou ' '.
 
 ## 📄 Description
 

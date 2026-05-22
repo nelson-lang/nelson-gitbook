@@ -8,10 +8,12 @@ This module enables efficient processing, summarization, and exploration of data
 
 ## Functions
 
+- [allbetween](allbetween.md) - Determine whether all array elements are between lower and upper bounds.
 - [conv](conv.md) - Convolution and polynomial multiplication.
 - [conv2](conv2.md) - 2-D convolution.
 - [cumprod](cumprod.md) - Cumulative product of array elements.
 - [cumsum](cumsum.md) - Cumulative sum of array elements.
+- [isbetween](isbetween.md) - Determine array elements between lower and upper bounds.
 - [ismissing](ismissing.md) - Check for missing values.
 - [issorted](issorted.md) - Determine if array is sorted.
 - [max](max.md) - Maximum elements of an array.

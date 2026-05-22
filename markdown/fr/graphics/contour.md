@@ -54,13 +54,13 @@ Paires Nom-Valeur de propriétés :
 | **ZData**            | Valeurs z : vecteur ou matrice ou [] (par défaut).                                                                                                                                                                                                                                                                                                                                           |
 | **XDataMode**        | Mode de sélection pour XData : 'manual' ou 'auto' (par défaut).                                                                                                                                                                                                                                                                                                                              |
 | **YDataMode**        | Mode de sélection pour YData : 'manual' ou 'auto' (par défaut).                                                                                                                                                                                                                                                                                                                              |
-| **DisplayName**      | Étiquette de légende : vecteur de caractères, chaîne ou '' (par défaut).                                                                                                                                                                                                                                                                                                                     |
+| **DisplayName**      | Étiquette de légende : vecteur de caractères, chaîne ou ' ' (par défaut).                                                                                                                                                                                                                                                                                                                    |
 | **Visible**          | État de visibilité : valeur logique on/off, 'on' (par défaut).                                                                                                                                                                                                                                                                                                                               |
 | **Parent**           | Parent : objet Axes ou Group.                                                                                                                                                                                                                                                                                                                                                                |
 | **Children**         | Enfants.                                                                                                                                                                                                                                                                                                                                                                                     |
 | **HandleVisibility** | Visibilité du handle : 'on', 'off'.                                                                                                                                                                                                                                                                                                                                                          |
 | **Type**             | Type d'objet graphique : 'contour'.                                                                                                                                                                                                                                                                                                                                                          |
-| **Tag**              | Identifiant de l'objet : vecteur de caractères, chaîne ou '' (par défaut).                                                                                                                                                                                                                                                                                                                   |
+| **Tag**              | Identifiant de l'objet : vecteur de caractères, chaîne ou ' ' (par défaut).                                                                                                                                                                                                                                                                                                                  |
 | **UserData**         | Données utilisateur : tableau ou [] (par défaut).                                                                                                                                                                                                                                                                                                                                            |
 | **CreateFcn**        | Callback (fonction, chaîne ou cellule) appelée lors de la création de l'objet. Définir cette propriété sur un composant existant n'a aucun effet.                                                                                                                                                                                                                                            |
 | **DeleteFcn**        | Callback (fonction, chaîne ou cellule) appelée lors de la suppression de l'objet.                                                                                                                                                                                                                                                                                                            |
@@ -76,60 +76,50 @@ f = figure();
     [X, Y] = meshgrid(x, y);
     Z = sin(X) + cos(Y);
     contour(X, Y, Z);
-
     subplot(2, 3, 2)
     [X, Y, Z] = peaks;
     contour(X, Y, Z, 20)
-
     subplot(2, 3, 3)
     [X, Y, Z] = peaks;
     v = [1,1];
     contour(X, Y, Z, v)
-
     subplot(2, 3, 4)
     [X, Y, Z] = peaks;
     contour(X, Y, Z, '-.')
-
     subplot(2, 3, 5)
     Z = peaks;
     [M, c] = contour(Z);
     c.LineWidth = 3;
-
     subplot(2, 3, 6)
     [theta, r] = meshgrid (linspace (0,2*pi,64), linspace (0,1,64));
     [X, Y] = pol2cart (theta, r);
     Z = sin (2*theta) .* (1-r);
     contour (X, Y, abs (Z), 10);
-
 ```
 
 <img src="contour_1.svg" align="middle"/>
 
 ```matlab
-
-    rng('default');
+rng('default');
     f = figure();
     N = 50;
     contour(1:N, 1:N, rand(N), 5)
-
 ```
 
 <img src="contour_2.svg" align="middle"/>
 
 ```matlab
-
-    f = figure();
+f = figure();
     Z = peaks;
     Z(:,26) = NaN;
     contour(Z)
-
 ```
 
 <img src="contour_nan.png" align="middle"/>
 
 ## 🔗 Voir aussi
 
-[contour3](../graphics/contour3.md), [surf](../graphics/surf.md), [mesh](../graphics/mesh.md).
+[contourc](../graphics/contourc.md), [contourf](../graphics/contourf.md), [contour3](../graphics/contour3.md), [clabel](../graphics/clabel.md), [surf](../graphics/surf.md), [mesh](../graphics/mesh.md).
 
 ## 🕔 Historique
 

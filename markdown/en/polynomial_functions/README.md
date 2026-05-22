@@ -15,4 +15,5 @@ This module enables efficient handling of polynomial expressions for mathematica
 - [polyint](polyint.md) - Polynomial integration.
 - [polyval](polyval.md) - Polynomial evaluation.
 - [polyvalm](polyvalm.md) - Matrix polynomial evaluation.
+- [ppval](ppval.md) - Evaluate a piecewise polynomial form
 - [roots](roots.md) - Find polynomial roots.

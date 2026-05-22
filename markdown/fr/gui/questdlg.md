@@ -22,7 +22,7 @@ Crée une boîte de dialogue de question.
 
 ## 📤 Argument de sortie
 
-- buttonname - a string: text of the clicked button or ''.
+- buttonname - a string: text of the clicked button or ' '.
 
 ## 📄 Description
 
