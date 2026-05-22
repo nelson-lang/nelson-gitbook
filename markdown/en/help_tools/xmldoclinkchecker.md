@@ -22,6 +22,7 @@ Checks unresolved cross-references in Nelson help XML files.
 ## 📄 Description
 
 <b>xmldoclinkchecker</b> validates <code>
+
 <link linkend="..."/>
 </code> references used in Nelson help XML pages.
 

@@ -10,6 +10,8 @@ nelson-en.pdf
 nelson-fr.pdf
 target/
 to*.html
+!docs/releases/**/toc.html
 to*.pdf
 temp_nelson-en.md
 temp_nelson-fr.md
+.tools/

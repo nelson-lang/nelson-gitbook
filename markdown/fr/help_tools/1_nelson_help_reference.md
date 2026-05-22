@@ -38,9 +38,9 @@ Les éléments en ligne et leur rendu XSLT :
 - <b>`<i>`</b> - texte en italique.
 - <b>`<code>`</b> - rendu de code en ligne.
 - <b>`<a href="..."
-        >`</b> - liens externes (rendus en tant qu'ancres HTML).
+    >`</b> - liens externes (rendus en tant qu'ancres HTML).
 - <b>`<link linkend="..."
-        >`</b> - référence croisée interne. Si linkend contient un module entre accolades<code>{module}name</code>, il devient<code>../module/name.html</code>, sinon<code>name.html</code>.
+    >`</b> - référence croisée interne. Si linkend contient un module entre accolades<code>{module}name</code>, il devient<code>../module/name.html</code>, sinon<code>name.html</code>.
 - <b>`<latex>`</b> - expressions mathématiques ; rendues en tant que mathématiques d'affichage MathJax par le modèle XSLT (enveloppées avec <code>`$$...$$`</code>).
 - <b>`<img src="..."/>`</b> - images. Le XSLT appelle <code>ext:copy_img(@src)</code>; les SVG sont rendus avec un cadre fixe large et les autres formats sont adaptables.
 

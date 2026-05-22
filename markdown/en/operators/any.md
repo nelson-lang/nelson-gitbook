@@ -39,7 +39,7 @@ any([33, 22; 11, 0], 2)
 | ------- | ---------------------------- |
 | 1.0.0   | initial version              |
 | 1.6.0   | manages input argument 'all' |
-|  |
+|         |
 
 <!--
 ## 👤 Author

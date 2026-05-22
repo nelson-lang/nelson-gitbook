@@ -22,6 +22,7 @@ Vérifie les références croisées non résolues dans les fichiers d'aide XML d
 ## 📄 Description
 
 <b>xmldoclinkchecker</b> valide les références <code>
+
 <link linkend="..."/>
 </code> utilisées dans les pages d'aide XML de Nelson.
 
