@@ -156,29 +156,72 @@ impl AssetProcessor {
     }
 
     fn run_inkscape(&self, svg: &Path, png: &Path, new_syntax: bool) -> Option<PathBuf> {
-        let mut command = Command::new("inkscape");
-        if new_syntax {
-            command
-                .arg(svg)
-                .arg(format!("--export-filename={}", png.display()));
+        let _ = fs::remove_file(png);
+        let export_filename = format!("--export-filename={}", png.display());
+        let export_png = format!("--export-png={}", png.display());
+        let svg_arg = svg.to_string_lossy().to_string();
+
+        let attempts: Vec<Vec<String>> = if new_syntax {
+            vec![
+                vec![
+                    svg_arg.clone(),
+                    "--export-type=png".to_string(),
+                    export_filename.clone(),
+                ],
+                vec![
+                    "--export-type=png".to_string(),
+                    export_filename.clone(),
+                    svg_arg.clone(),
+                ],
+                vec![svg_arg.clone(), export_filename],
+                vec![export_png, svg_arg.clone()],
+            ]
         } else {
-            command
-                .arg(format!("--export-png={}", png.display()))
-                .arg(svg);
-        }
-        self.logger.verbose(format!("Running {:?}", command));
-        match command.status() {
-            Ok(status) if status.success() && png.exists() => Some(png.to_path_buf()),
-            Ok(status) => {
-                self.logger
-                    .info(format!("Error converting SVG: Inkscape exit {status}"));
-                None
+            vec![
+                vec![export_png, svg_arg.clone()],
+                vec![
+                    svg_arg.clone(),
+                    "--export-type=png".to_string(),
+                    export_filename.clone(),
+                ],
+                vec!["--export-type=png".to_string(), export_filename, svg_arg],
+            ]
+        };
+
+        let mut last_error = String::new();
+        for args in attempts {
+            let mut command = Command::new("inkscape");
+            command.args(&args);
+            self.logger.verbose(format!("Running {:?}", command));
+            match command.output() {
+                Ok(output) if output.status.success() && png.exists() => {
+                    return Some(png.to_path_buf());
+                }
+                Ok(output) => {
+                    let stdout = String::from_utf8_lossy(&output.stdout);
+                    let stderr = String::from_utf8_lossy(&output.stderr);
+                    last_error = format!(
+                        "Inkscape exit {}; output file created: {}; stdout: {}; stderr: {}",
+                        output.status,
+                        png.exists(),
+                        stdout.trim(),
+                        stderr.trim()
+                    );
+                }
+                Err(err) => {
+                    last_error = err.to_string();
+                }
             }
-            Err(err) => {
-                self.logger.info(format!("Error converting SVG: {err}"));
-                None
-            }
         }
+
+        if last_error.is_empty() {
+            self.logger
+                .info("Error converting SVG: Inkscape did not run");
+        } else {
+            self.logger
+                .info(format!("Error converting SVG: {last_error}"));
+        }
+        None
     }
 
     fn run_magick(&self, svg: &Path, png: &Path) -> Option<PathBuf> {
@@ -261,7 +304,7 @@ impl AssetProcessor {
     }
 }
 
-pub(crate) fn sanitize_svg_root_overflow(content: &str) -> String {
+fn sanitize_svg_root_overflow(content: &str) -> String {
     let Some(svg_start) = content.find("<svg") else {
         return content.to_string();
     };

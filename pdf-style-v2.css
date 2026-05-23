@@ -41,21 +41,6 @@
     vertical-align: top !important;
 }
 
-.nelson-pdf-inline-svg {
-    max-width: 100% !important;
-    max-height: 420px !important;
-    width: auto !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    border: 0 !important;
-    overflow: hidden !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-    vertical-align: top !important;
-}
-
 img {
     max-width: 92% !important;
     max-height: 480px !important; /* allow taller images but still constrained */
@@ -70,7 +55,6 @@ img {
    Hide those visual scrollbars while keeping code blocks scrollable in HTML previews. */
 .nelson-pdf-image::-webkit-scrollbar,
 .nelson-pdf-image__img::-webkit-scrollbar,
-.nelson-pdf-inline-svg::-webkit-scrollbar,
 .nelson-pdf-image *::-webkit-scrollbar {
     display: none !important;
     width: 0 !important;
