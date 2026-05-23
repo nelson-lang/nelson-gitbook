@@ -75,7 +75,7 @@ image();
 
 ## 🔗 See also
 
-[imagesc](../graphics/imagesc.md), [colormap](../graphics/colormap.md).
+[imagesc](../graphics/imagesc.md), [colormap](../graphics/colormap/colormap.md).
 
 ## 🕔 History
 

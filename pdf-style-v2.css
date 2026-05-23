@@ -115,9 +115,38 @@ h1, h2, h3, h4, h5 {
     page-break-after: avoid;
 }
 h1 { font-size: 18pt; }
-h2 { font-size: 14.5pt; }
-h3 { font-size: 12.5pt; }
+h2 {
+    font-size: 14.5pt;
+    margin-top: 1.25em;
+    margin-bottom: 0.45em;
+    padding: 5pt 8pt;
+    border-left: 4pt solid #2b7cd3;
+    background: #f1f6fc;
+}
+h3 {
+    font-size: 11.2pt;
+    margin-top: 0.9em;
+    margin-bottom: 0.25em;
+    color: #35516c;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
 h4 { font-size: 11.5pt; }
+
+p {
+    margin-top: 0.35em;
+    margin-bottom: 0.65em;
+}
+
+ul {
+    margin-top: 0.3em;
+    margin-bottom: 0.9em;
+    padding-left: 1.45em;
+}
+
+li {
+    margin: 0.16em 0;
+}
 
 /* Links - visible for digital PDFs but subdued for print */
 a { color: #0b66ff; text-decoration: none; }

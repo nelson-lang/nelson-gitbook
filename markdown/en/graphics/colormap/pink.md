@@ -31,7 +31,7 @@ colormap('pink');
 
 ## 🔗 See also
 
-[colormap](../../graphics/colormap.md).
+[colormap](../../graphics/colormap/colormap.md).
 
 ## 🕔 History
 

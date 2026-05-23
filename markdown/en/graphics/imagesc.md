@@ -71,7 +71,7 @@ colormap(gray)
 
 ## 🔗 See also
 
-[image](../graphics/image.md), [colormap](../graphics/colormap.md).
+[image](../graphics/image.md), [colormap](../graphics/colormap/colormap.md).
 
 ## 🕔 History
 

@@ -38,9 +38,9 @@ Inline elements and their XSLT rendering:
 - <b>`<i>`</b> — italic text.
 - <b>`<code>`</b> — inline code rendering.
 - <b>`<a href="..."
-    >`</b> — external links (rendered as HTML anchors).
+      >`</b> — external links (rendered as HTML anchors).
 - <b>`<link linkend="..."
-    >`</b> — internal cross reference. If linkend contains a module in braces<code>{module}name</code>it becomes<code>../module/name.html</code>, otherwise<code>name.html</code>.
+      >`</b> — internal cross reference. If linkend contains a module in braces<code>{module}name</code>it becomes<code>../module/name.html</code>, otherwise<code>name.html</code>.
 - <b>`<latex>`</b> — math expressions; rendered as MathJax display math by the XSLT template (wrapped with<code>`$$...$$`</code>).
 - <b>`<img src="..."/>`</b> — images. XSLT calls<code>ext:copy_img(@src)</code>; SVGs are rendered with a large fixed frame and other formats are responsive.
 

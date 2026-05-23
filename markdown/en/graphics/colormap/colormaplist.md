@@ -30,7 +30,7 @@ listbox.Callback = @(src, void) colormap(ax, cmaps(src.Value));
 
 ## 🔗 See also
 
-[colormap](../../graphics/colormap.md).
+[colormap](../../graphics/colormap/colormap.md).
 
 ## 🕔 History
 

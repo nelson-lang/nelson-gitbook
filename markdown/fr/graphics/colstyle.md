@@ -33,7 +33,7 @@ Analyse la couleur et le style à partir d'une chaîne.
 
 ## 🔗 Voir aussi
 
-[colormap](../graphics/colormap.md).
+[colormap](../graphics/colormap/colormap.md).
 
 ## 🕔 Historique
 

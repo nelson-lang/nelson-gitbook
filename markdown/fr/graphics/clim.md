@@ -52,7 +52,7 @@ limits = clim()
 
 ## 🔗 Voir aussi
 
-[colormap](../graphics/colormap.md), [colorbar](../graphics/colorbar.md).
+[colormap](../graphics/colormap/colormap.md), [colorbar](../graphics/colorbar.md).
 
 ## 🕔 Historique
 

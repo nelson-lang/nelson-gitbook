@@ -157,7 +157,7 @@ patch(x+1,y+2,z,'yellow','FaceAlpha',0.3)
 
 ## 🔗 Voir aussi
 
-[surf](../graphics/surf.md), [colormap](../graphics/colormap.md).
+[surf](../graphics/surf.md), [colormap](../graphics/colormap/colormap.md).
 
 ## 🕔 Historique
 

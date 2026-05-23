@@ -35,7 +35,7 @@ title(['Nebula Colormap with ', num2str(n), ' Colors']);
 
 ## 🔗 Voir aussi
 
-[colormap](../graphics/colormap.md).
+[colormap](../graphics/colormap/colormap.md).
 
 ## 🕔 Historique
 

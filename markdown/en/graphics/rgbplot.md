@@ -30,7 +30,7 @@ rgbplot(colormap);
 
 ## 🔗 See also
 
-[plot](../graphics/plot.md), [colormap](../graphics/colormap.md).
+[plot](../graphics/plot.md), [colormap](../graphics/colormap/colormap.md).
 
 ## 🕔 History
 
