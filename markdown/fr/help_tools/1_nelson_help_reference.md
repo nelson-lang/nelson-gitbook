@@ -37,10 +37,8 @@ Les éléments en ligne et leur rendu XSLT :
 - <b>`<b>`</b> - texte en gras.
 - <b>`<i>`</b> - texte en italique.
 - <b>`<code>`</b> - rendu de code en ligne.
-- <b>`<a href="..."
-      >`</b> - liens externes (rendus en tant qu'ancres HTML).
-- <b>`<link linkend="..."
-      >`</b> - référence croisée interne. Si linkend contient un module entre accolades<code>{module}name</code>, il devient<code>../module/name.html</code>, sinon<code>name.html</code>.
+- **`<a href="...">`** - liens externes (rendus en tant qu'ancres HTML).
+- **`<link linkend="...">`** - référence croisée interne. Si linkend contient un module entre accolades<code>{module}name</code>, il devient<code>../module/name.html</code>, sinon<code>name.html</code>.
 - <b>`<latex>`</b> - expressions mathématiques ; rendues en tant que mathématiques d'affichage MathJax par le modèle XSLT (enveloppées avec <code>`$$...$$`</code>).
 - <b>`<img src="..."/>`</b> - images. Le XSLT appelle <code>ext:copy_img(@src)</code>; les SVG sont rendus avec un cadre fixe large et les autres formats sont adaptables.
 
@@ -51,12 +49,9 @@ Les éléments en ligne et leur rendu XSLT :
 
 Conseils pour la rédaction : 2. Préférez des lignes de résumé courtes pour <code>`<short_description>`</code>. 4. Placez les exemples exécutables à l'intérieur de<code>`<examples>`</code>en utilisant<code>`<example_item_data>`</code>et définissez<code>runnable="cli"
 </code>si applicable ou<code>runnable="false"
-</code>(par défaut). 6. Enveloppez le code source de l'exemple dans CDATA pour éviter l'échappement (voir les exemples ci-dessous). 8. Utilisez<code>`<link linkend="{module}name"
-          >`</code>pour les références qualifiées par module ; sinon, utilisez des noms simples.
+</code>(par défaut). 6. Enveloppez le code source de l'exemple dans CDATA pour éviter l'échappement (voir les exemples ci-dessous). 8. Utilisez `<link linkend="{module}name">` pour les références qualifiées par module ; sinon, utilisez des noms simples.
 
-<b>Prise en charge des sous-chapitres</b> - Le système d'aide de Nelson prend en charge les sous-chapitres imbriqués. Pour en ajouter un : 2. Créez un sous-répertoire dans le dossier d'aide XML de votre module (par exemple <code>plots</code>). 4. Dans ce répertoire, ajoutez un <code>chapter.xml</code> contenant au minimum <code>`<language>`</code> et <code>`<chapter>`</code>, et éventuellement <code>`<chapter_description>`</code>. 6. Placez les fichiers de sujet XML (par exemple <code>mesh.xml</code>) dans le sous-répertoire ; les fichiers de sujet utilisent les éléments habituels comme <code>`<keyword>`</code> et <code>`<short_description>`</code>. 8. Liez les pages imbriquées en utilisant des chemins séparés par des slash : pour des liens dans le même module utilisez <code>`<link linkend="plots/mesh"
-          >mesh</link>`</code>, pour des liens inter-modules utilisez <code>`<link linkend="{module}plots/mesh"
-          >mesh</link>`</code>.
+<b>Prise en charge des sous-chapitres</b> - Le système d'aide de Nelson prend en charge les sous-chapitres imbriqués. Pour en ajouter un : 2. Créez un sous-répertoire dans le dossier d'aide XML de votre module (par exemple <code>plots</code>). 4. Dans ce répertoire, ajoutez un <code>chapter.xml</code> contenant au minimum <code>`<language>`</code> et <code>`<chapter>`</code>, et éventuellement <code>`<chapter_description>`</code>. 6. Placez les fichiers de sujet XML (par exemple <code>mesh.xml</code>) dans le sous-répertoire ; les fichiers de sujet utilisent les éléments habituels comme <code>`<keyword>`</code> et <code>`<short_description>`</code>. 8. Liez les pages imbriquées en utilisant des chemins séparés par des slash : pour des liens dans le même module utilisez `<link linkend="plots/mesh">mesh</link>`, pour des liens inter-modules utilisez `<link linkend="{module}plots/mesh">mesh</link>`.
 
 L'outil <code>buildhelp</code> et le XSLT résolvent ces chemins et généreront des pages HTML imbriquées (par exemple <code>plots/mesh.html</code>).
 
