@@ -142,14 +142,17 @@ impl AssetProcessor {
         }
 
         let Some(converter) = &self.svg_converter else {
-            return self.run_magick(&svg_local, &png_path);
+            return self
+                .run_magick(&svg_local, &png_path)
+                .or_else(|| self.sanitize_svg_for_pdf(&svg_local));
         };
 
-        if converter.use_inkscape {
+        let converted = if converter.use_inkscape {
             self.run_inkscape(&svg_local, &png_path, converter.inkscape_new_syntax)
         } else {
             self.run_magick(&svg_local, &png_path)
-        }
+        };
+        converted.or_else(|| self.sanitize_svg_for_pdf(&svg_local))
     }
 
     fn run_inkscape(&self, svg: &Path, png: &Path, new_syntax: bool) -> Option<PathBuf> {
@@ -179,6 +182,9 @@ impl AssetProcessor {
     }
 
     fn run_magick(&self, svg: &Path, png: &Path) -> Option<PathBuf> {
+        if crate::tools::command_path("magick").is_none() {
+            return None;
+        }
         let mut command = Command::new("magick");
         command
             .arg(svg)
@@ -203,6 +209,37 @@ impl AssetProcessor {
         }
     }
 
+    fn sanitize_svg_for_pdf(&self, svg: &Path) -> Option<PathBuf> {
+        let sanitized_path = self.hashed_svg_dest_path(svg);
+        if sanitized_path.exists() {
+            return Some(sanitized_path);
+        }
+
+        let Ok(content) = fs::read_to_string(svg) else {
+            self.logger.info(format!(
+                "Error reading SVG for PDF sanitizing: {}",
+                svg.display()
+            ));
+            return None;
+        };
+        let sanitized = sanitize_svg_root_overflow(&content);
+        match fs::write(&sanitized_path, sanitized) {
+            Ok(()) => {
+                self.logger.verbose(format!(
+                    "Sanitized SVG for PDF: {} -> {}",
+                    svg.display(),
+                    sanitized_path.display()
+                ));
+                Some(sanitized_path)
+            }
+            Err(err) => {
+                self.logger
+                    .info(format!("Error writing sanitized SVG: {err}"));
+                None
+            }
+        }
+    }
+
     fn hashed_dest_path(&self, source: &Path) -> PathBuf {
         let stem = source
             .file_stem()
@@ -212,6 +249,62 @@ impl AssetProcessor {
         self.converted_dir
             .join(format!("{}-{}.png", stem, &hash[..8]))
     }
+
+    fn hashed_svg_dest_path(&self, source: &Path) -> PathBuf {
+        let stem = source
+            .file_stem()
+            .and_then(|stem| stem.to_str())
+            .unwrap_or("image");
+        let hash = format!("{:x}", md5::compute(source.to_string_lossy().as_bytes()));
+        self.converted_dir
+            .join(format!("{}-{}-pdf.svg", stem, &hash[..8]))
+    }
+}
+
+fn sanitize_svg_root_overflow(content: &str) -> String {
+    let Some(svg_start) = content.find("<svg") else {
+        return content.to_string();
+    };
+    let Some(relative_end) = content[svg_start..].find('>') else {
+        return content.to_string();
+    };
+    let svg_end = svg_start + relative_end;
+    let mut svg_tag = content[svg_start..svg_end].to_string();
+
+    if !Regex::new(r#"\boverflow\s*="#).unwrap().is_match(&svg_tag) {
+        svg_tag.push_str(r#" overflow="hidden""#);
+    }
+    if !Regex::new(r#"\bpreserveAspectRatio\s*="#)
+        .unwrap()
+        .is_match(&svg_tag)
+    {
+        svg_tag.push_str(r#" preserveAspectRatio="xMidYMid meet""#);
+    }
+    if Regex::new(r#"\bstyle\s*="#).unwrap().is_match(&svg_tag) {
+        let style_re = Regex::new(r#"style\s*=\s*"([^"]*)""#).unwrap();
+        svg_tag = style_re
+            .replace(&svg_tag, |captures: &regex::Captures| {
+                let style = captures.get(1).unwrap().as_str();
+                if style
+                    .split(';')
+                    .any(|rule| rule.trim_start().starts_with("overflow:"))
+                {
+                    captures.get(0).unwrap().as_str().to_string()
+                } else {
+                    format!(r#"style="overflow:hidden; {style}""#)
+                }
+            })
+            .to_string();
+    } else {
+        svg_tag.push_str(r#" style="overflow:hidden""#);
+    }
+
+    format!(
+        "{}{}{}",
+        &content[..svg_start],
+        svg_tag,
+        &content[svg_end..]
+    )
 }
 
 pub fn collect_refs(content: &str, markdown_pattern: &str, html_pattern: &str) -> Vec<String> {
@@ -369,6 +462,15 @@ mod tests {
         assert_eq!(out, "![A](missing.png)");
         assert_eq!(processor.converted_count, 0);
         Ok(())
+    }
+
+    #[test]
+    fn sanitizes_svg_root_to_avoid_pdf_scrollbars() {
+        let out = sanitize_svg_root_overflow(r#"<svg width="10"><rect/></svg>"#);
+
+        assert!(out.contains(r#"overflow="hidden""#));
+        assert!(out.contains(r#"style="overflow:hidden""#));
+        assert!(out.contains(r#"preserveAspectRatio="xMidYMid meet""#));
     }
 
     #[test]

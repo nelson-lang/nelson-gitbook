@@ -25,7 +25,7 @@ use crate::assets::AssetProcessor;
 use crate::config::{BuildMode, Config, Logger, SingleBuild};
 use crate::files::{build_anchor_map, read_file_list, sort_files, AnchorMap};
 use crate::markdown::{transform_markdown, TransformContext};
-use crate::tools::{detect_pdf_engine, detect_svg_converter};
+use crate::tools::{command_path, detect_pdf_engine, detect_svg_converter};
 
 pub fn run(config: Config) -> Result<()> {
     let logger = Logger::new(config.verbose);
@@ -95,9 +95,10 @@ pub fn run_single_build(build: &SingleBuild, config: &Config, logger: Logger) ->
                 converter.inkscape_new_syntax
             ));
         }
-        _ => {
-            logger.info("Inkscape not found; will use ImageMagick (magick) for SVG->PNG conversion")
+        _ if command_path("magick").is_some() => {
+            logger.info("Inkscape not found; using ImageMagick (magick) for SVG->PNG conversion")
         }
+        _ => logger.info("No SVG rasterizer found; using sanitized SVG copies for PDF output"),
     }
 
     let pdf_engine = detect_pdf_engine()?;

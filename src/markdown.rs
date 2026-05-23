@@ -209,7 +209,7 @@ pub fn wrap_markdown_png_images(content: &str) -> String {
         if src.contains("twemoji") || src.contains("cdn.jsdelivr.net") {
             captures.get(0).unwrap().as_str().to_string()
         } else {
-            format!("<div style=\"width: 100%; max-width: 550px; margin: 10px auto; overflow: hidden !important; text-align: center;\"><img src=\"{src}\" alt=\"{alt}\" style=\"max-width: 80%; max-height: 280px; height: auto; display: block; margin: 0 auto; overflow: hidden;\"></div>")
+            format!("<div class=\"nelson-pdf-image\"><img class=\"nelson-pdf-image__img\" src=\"{src}\" alt=\"{alt}\"></div>")
         }
     })
     .to_string()
@@ -340,7 +340,8 @@ mod tests {
     fn wraps_png_but_not_emoji() {
         let out =
             wrap_markdown_png_images("![A](file:///a.png) ![E](https://cdn.jsdelivr.net/e.png)");
-        assert!(out.contains("max-width: 550px"));
+        assert!(out.contains("class=\"nelson-pdf-image\""));
+        assert!(out.contains("class=\"nelson-pdf-image__img\""));
         assert!(out.contains("![E](https://cdn.jsdelivr.net/e.png)"));
     }
 

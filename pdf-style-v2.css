@@ -13,13 +13,20 @@
     margin: 10px auto 14px auto !important;
     padding: 0 !important;
     border: 0 !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    line-height: 0 !important;
     text-align: center !important;
     overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
     page-break-inside: avoid !important;
 }
 
 .nelson-pdf-image__img {
-    max-width: 92% !important;
+    max-width: 100% !important;
     max-height: 420px !important;
     width: auto !important;
     height: auto !important;
@@ -29,6 +36,9 @@
     border: 0 !important;
     object-fit: contain !important;
     overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    vertical-align: top !important;
 }
 
 img {
@@ -44,10 +54,16 @@ img {
 /* wkhtmltopdf/WebKit may paint scrollbars for replaced SVG/image boxes.
    Hide those visual scrollbars while keeping code blocks scrollable in HTML previews. */
 .nelson-pdf-image::-webkit-scrollbar,
-.nelson-pdf-image__img::-webkit-scrollbar {
+.nelson-pdf-image__img::-webkit-scrollbar,
+.nelson-pdf-image *::-webkit-scrollbar {
     display: none !important;
     width: 0 !important;
     height: 0 !important;
+}
+
+.nelson-pdf-image * {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
 }
 
 /* Emoji images - inline display, small size, proper alignment */
@@ -69,6 +85,9 @@ img[src$=".svg"], img[src*=".svg"] {
     width: auto !important;
     height: auto !important;
     object-fit: contain !important;
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
 }
 
 /* SVG container divs - strict overflow control */
