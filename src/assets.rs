@@ -261,7 +261,7 @@ impl AssetProcessor {
     }
 }
 
-fn sanitize_svg_root_overflow(content: &str) -> String {
+pub(crate) fn sanitize_svg_root_overflow(content: &str) -> String {
     let Some(svg_start) = content.find("<svg") else {
         return content.to_string();
     };

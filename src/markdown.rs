@@ -7,7 +7,8 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 // LICENCE_BLOCK_END
 //=============================================================================
-use std::path::Path;
+use std::fs;
+use std::path::{Path, PathBuf};
 
 use anyhow::Result;
 use regex::{Captures, Regex};
@@ -40,6 +41,7 @@ pub fn transform_markdown(
     content = rewrite_markdown_image_paths(&content, ctx.file_dir);
     content = rewrite_html_img_paths(&content, ctx.file_dir);
     content = assets.convert_svg_references(&content, ctx.file_dir)?;
+    content = inline_svg_images(&content);
     content = assets.copy_png_references(&content, ctx.file_dir)?;
     content = wrap_markdown_png_images(&content);
     content = wrap_html_png_images(&content);
@@ -215,6 +217,132 @@ pub fn wrap_markdown_png_images(content: &str) -> String {
     .to_string()
 }
 
+pub fn inline_svg_images(content: &str) -> String {
+    let content = inline_markdown_svg_images(content);
+    inline_html_svg_images(&content)
+}
+
+fn inline_markdown_svg_images(content: &str) -> String {
+    let re = Regex::new(r"!\[([^\]]*)\]\(([^)]*\.svg[^)]*)\)").unwrap();
+    re.replace_all(content, |captures: &Captures| {
+        let alt = captures.get(1).map(|m| m.as_str()).unwrap_or_default();
+        let src = captures.get(2).unwrap().as_str();
+        inline_svg(src, alt).unwrap_or_else(|| captures.get(0).unwrap().as_str().to_string())
+    })
+    .to_string()
+}
+
+fn inline_html_svg_images(content: &str) -> String {
+    let re = Regex::new(r#"<img\b[^>]*src\s*=\s*['"][^'"]*\.svg(?:\?[^'"]*)?['"][^>]*>"#).unwrap();
+    let src_re = Regex::new(r#"src\s*=\s*(?:"([^"]+)"|'([^']+)')"#).unwrap();
+    let alt_re = Regex::new(r#"alt\s*=\s*(?:"([^"]*)"|'([^']*)')"#).unwrap();
+
+    re.replace_all(content, |captures: &Captures| {
+        let tag = captures.get(0).unwrap().as_str();
+        let Some(src_caps) = src_re.captures(tag) else {
+            return tag.to_string();
+        };
+        let src = src_caps
+            .get(1)
+            .or_else(|| src_caps.get(2))
+            .unwrap()
+            .as_str();
+        let alt = alt_re
+            .captures(tag)
+            .and_then(|caps| caps.get(1).or_else(|| caps.get(2)))
+            .map(|m| m.as_str())
+            .unwrap_or_default();
+        inline_svg(src, alt).unwrap_or_else(|| tag.to_string())
+    })
+    .to_string()
+}
+
+fn inline_svg(src: &str, alt: &str) -> Option<String> {
+    let path = local_svg_path(src)?;
+    let content = fs::read_to_string(path).ok()?;
+    let svg = strip_svg_document_markup(&crate::assets::sanitize_svg_root_overflow(&content));
+    let svg = add_inline_svg_attrs(&svg, alt);
+    Some(format!(r#"<div class="nelson-pdf-image">{svg}</div>"#))
+}
+
+fn add_inline_svg_attrs(svg: &str, alt: &str) -> String {
+    let Some(svg_start) = svg.find("<svg") else {
+        return svg.to_string();
+    };
+    let Some(relative_end) = svg[svg_start..].find('>') else {
+        return svg.to_string();
+    };
+    let svg_end = svg_start + relative_end;
+    let mut svg_tag = svg[svg_start..svg_end].to_string();
+    if !Regex::new(r#"\bclass\s*="#).unwrap().is_match(&svg_tag) {
+        svg_tag.push_str(r#" class="nelson-pdf-inline-svg""#);
+    }
+    if !alt.is_empty()
+        && !Regex::new(r#"\baria-label\s*="#)
+            .unwrap()
+            .is_match(&svg_tag)
+    {
+        svg_tag.push_str(&format!(r#" role="img" aria-label="{}""#, escape_attr(alt)));
+    }
+    format!("{}{}{}", &svg[..svg_start], svg_tag, &svg[svg_end..])
+}
+
+fn strip_svg_document_markup(content: &str) -> String {
+    let xml_re = Regex::new(r#"(?s)^\s*<\?xml[^>]*\?>\s*"#).unwrap();
+    let doctype_re = Regex::new(r#"(?is)^\s*<!DOCTYPE[^>]*>\s*"#).unwrap();
+    doctype_re
+        .replace(&xml_re.replace(content, ""), "")
+        .trim()
+        .to_string()
+}
+
+fn local_svg_path(src: &str) -> Option<PathBuf> {
+    if src.starts_with("http://")
+        || src.starts_with("https://")
+        || src.starts_with("//")
+        || src.starts_with("data:")
+    {
+        return None;
+    }
+    let without_query = src.split('?').next().unwrap_or(src);
+    if let Some(path) = without_query.strip_prefix("file:///") {
+        let decoded = percent_decode(path);
+        if cfg!(windows) {
+            return Some(PathBuf::from(decoded));
+        }
+        return Some(PathBuf::from(format!("/{decoded}")));
+    }
+    Some(PathBuf::from(without_query))
+}
+
+fn percent_decode(value: &str) -> String {
+    let bytes = value.as_bytes();
+    let mut out = Vec::with_capacity(bytes.len());
+    let mut i = 0;
+    while i < bytes.len() {
+        if bytes[i] == b'%' && i + 2 < bytes.len() {
+            if let Ok(hex) = std::str::from_utf8(&bytes[i + 1..i + 3]) {
+                if let Ok(byte) = u8::from_str_radix(hex, 16) {
+                    out.push(byte);
+                    i += 3;
+                    continue;
+                }
+            }
+        }
+        out.push(bytes[i]);
+        i += 1;
+    }
+    String::from_utf8_lossy(&out).to_string()
+}
+
+fn escape_attr(value: &str) -> String {
+    value
+        .replace('&', "&amp;")
+        .replace('"', "&quot;")
+        .replace('<', "&lt;")
+        .replace('>', "&gt;")
+}
+
 pub fn wrap_html_png_images(content: &str) -> String {
     let re = Regex::new(r#"<img\b[^>]*src\s*=\s*['"][^'"]*(?:\.png(?:\?[^'"]*)?|\.svg(?:\?[^'"]*)?|data:image/png;base64,)[^'"]*['"][^>]*>"#).unwrap();
     let src_re = Regex::new(r#"src\s*=\s*(?:"([^"]+)"|'([^']+)')"#).unwrap();
@@ -358,6 +486,24 @@ mod tests {
         let out = wrap_html_png_images(r#"<img src="file:///tmp/a.svg" alt="A"/>"#);
         assert!(out.contains("class=\"nelson-pdf-image\""));
         assert!(out.contains("file:///tmp/a.svg"));
+    }
+
+    #[test]
+    fn inlines_local_svg_images_to_avoid_wkhtmltopdf_scrollbars() -> Result<()> {
+        let dir = tempdir()?;
+        let svg = dir.path().join("plot.svg");
+        fs::write(
+            &svg,
+            r#"<?xml version="1.0"?><svg width="10" height="10"><rect x="0" y="0" width="10" height="10"/></svg>"#,
+        )?;
+        let uri = file_uri(&svg);
+        let out = inline_svg_images(&format!(r#"<img src="{uri}" alt="Plot">"#));
+
+        assert!(out.contains(r#"<div class="nelson-pdf-image"><svg"#));
+        assert!(out.contains(r#"class="nelson-pdf-inline-svg""#));
+        assert!(out.contains(r#"overflow="hidden""#));
+        assert!(!out.contains("<img"));
+        Ok(())
     }
 
     #[test]
