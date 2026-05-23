@@ -32,6 +32,7 @@ pub fn transform_markdown(
     }
 
     content = remove_html_only_elements(&content);
+    content = mark_readme_subchapter_headings(&content, ctx.file);
     content = replace_known_emojis(&content);
     content = remove_image_size_attrs(&content);
     content = rewrite_markdown_md_links(&content, ctx)?;
@@ -44,6 +45,28 @@ pub fn transform_markdown(
     content = wrap_html_png_images(&content);
     content = markdown_anchor_links_to_html(&content);
     Ok(content)
+}
+
+pub fn mark_readme_subchapter_headings(content: &str, file: &Path) -> String {
+    if !file
+        .file_name()
+        .and_then(|name| name.to_str())
+        .is_some_and(|name| name.eq_ignore_ascii_case("README.md"))
+    {
+        return content.to_string();
+    }
+
+    let heading = Regex::new(r"(?m)^(##\s+)(.+?)\s*$").unwrap();
+    heading
+        .replace_all(content, |captures: &Captures| {
+            let title = captures.get(2).unwrap().as_str();
+            if title.eq_ignore_ascii_case("Functions") || title.contains("{.") {
+                captures.get(0).unwrap().as_str().to_string()
+            } else {
+                format!("{}{} {{.nelson-subchapter-heading}}", &captures[1], title)
+            }
+        })
+        .to_string()
 }
 
 pub fn remove_html_only_elements(content: &str) -> String {
@@ -341,6 +364,22 @@ mod tests {
         let out = replace_known_emojis("⚠ ok");
         assert!(out.contains("data-emoji='true'"));
         assert!(out.contains("26a0.png"));
+    }
+
+    #[test]
+    fn marks_only_readme_subchapter_headings() {
+        let readme = Path::new("graphics/README.md");
+        let out = mark_readme_subchapter_headings(
+            "## Colormap functions\n\n## Functions\n\n## Existing {.custom}\n",
+            readme,
+        );
+        assert!(out.contains("## Colormap functions {.nelson-subchapter-heading}"));
+        assert!(out.contains("## Functions\n"));
+        assert!(out.contains("## Existing {.custom}\n"));
+
+        let topic = Path::new("graphics/plot.md");
+        let out = mark_readme_subchapter_headings("## Description\n", topic);
+        assert_eq!(out, "## Description\n");
     }
 
     #[test]
