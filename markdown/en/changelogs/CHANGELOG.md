@@ -5,7 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.17.0 - (UNRELEASED)
+## 1.17.0 - (2026-05-25)
+
+🕯️ **In memory of Cleve Moler (1939–2026)**
+
+This release is dedicated to the memory of Cleve Moler, creator of MATLAB and a towering figure in numerical computing. His vision of making linear algebra accessible to engineers and scientists changed the way the world writes scientific software and inspired every project that followed in his footsteps, including Nelson.
+We are grateful for the path he blazed.
 
 ### Added
 
@@ -29,9 +34,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Highlighting of the current execution line.
 
 - Step Execution Controls
+
   - Step Into: move into function calls.
   - Step Over: execute functions without entering them.
   - Continue: resume execution until the next breakpoint.
+
 - Stack Inspection & Variable Evaluation
 
   - Examine the call stack during debugging with `dbup` and `dbdown`.
@@ -70,6 +77,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Qt 6.11.0 support.
 
 - Full CMake configuration and build system for Visual Studio (x64, Win32, ARM64).
+
+- Ubuntu 26.04 ready.
+
+- Fedora 44 ready.
 
 ### Changed
 
