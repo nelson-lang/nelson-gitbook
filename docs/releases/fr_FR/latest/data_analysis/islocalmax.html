@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>islocalmax</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">islocalmax</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Détecte les maxima locaux des données.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">TF = islocalmax(A)
+TF = islocalmax(A, dim)
+TF = islocalmax(..., Name, Value)
+[TF, P] = islocalmax(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>données d'entrée : vecteur, matrice, tableau N-D numérique réel ou logique, table ou timetable.</td>
+</tr>
+<tr>
+<td class="param-name">dim</td>
+<td>dimension de travail : entier positif (par défaut : première dimension non singleton). Non disponible pour les tables.</td>
+</tr>
+<tr>
+<td class="param-name">'MinProminence'</td>
+<td>scalaire positif ou nul (par défaut : 0) : seuls les maxima dont la proéminence est au moins égale à cette valeur sont renvoyés.</td>
+</tr>
+<tr>
+<td class="param-name">'FlatSelection'</td>
+<td>élément marqué dans un plateau maximal : 'center' (défaut), 'first', 'last' ou 'all'.</td>
+</tr>
+<tr>
+<td class="param-name">'MinSeparation'</td>
+<td>scalaire positif ou nul (par défaut : 0), dans l'unité des abscisses (une duration pour des abscisses datetime ou duration) : un maximum plus proche que cette valeur d'un maximum plus proéminent est ignoré.</td>
+</tr>
+<tr>
+<td class="param-name">'MaxNumExtrema'</td>
+<td>entier positif : conserve au plus ce nombre de maxima parmi les plus proéminents (par défaut : pas de limite).</td>
+</tr>
+<tr>
+<td class="param-name">'ProminenceWindow'</td>
+<td>scalaire positif k ou vecteur [b f] de deux valeurs positives ou nulles (une duration pour des abscisses datetime ou duration) : la proéminence d'un maximum est calculée uniquement avec les données de la fenêtre [x-k/2, x+k/2) ou [x-b, x+f].</td>
+</tr>
+<tr>
+<td class="param-name">'SamplePoints'</td>
+<td>vecteur trié de valeurs distinctes double, single, datetime ou duration : abscisses des données (par défaut : 1, 2, 3, ...). Pour une table, peut aussi être le nom d'une variable de la table. Une timetable utilise ses temps de lignes.</td>
+</tr>
+<tr>
+<td class="param-name">'DataVariables'</td>
+<td>variables de la table à traiter : noms, indices, vecteur logique, handle de fonction ou vartype (par défaut : toutes les variables).</td>
+</tr>
+<tr>
+<td class="param-name">'OutputFormat'</td>
+<td>'logical' (défaut) : TF est un tableau logique ; 'tabular' : TF est une table contenant les DataVariables. Uniquement pour les tables.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">TF</td>
+<td>tableau logique de la taille de A (ou table), vrai aux maxima locaux.</td>
+</tr>
+<tr>
+<td class="param-name">P</td>
+<td>proéminence de chaque maximum local (0 ailleurs), de la taille de A ; classe entière non signée pour des données entières. Pour une table, P est une table contenant les DataVariables.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>islocalmax</b> marque les éléments de A plus grands que leurs voisins selon la dimension de travail. Une suite de valeurs égales plus grandes que les valeurs qui l'entourent forme un seul maximum local (voir 'FlatSelection').</p>
+    <p>Le premier et le dernier éléments ne sont jamais des maxima locaux. Les valeurs NaN sont ignorées. Les valeurs +Inf sont toujours des maxima locaux, de proéminence infinie.</p>
+    <p>La proéminence d'un maximum mesure à quel point il se détache : depuis le maximum, une ligne horizontale est tracée de chaque côté jusqu'à la première valeur strictement plus grande ou jusqu'au bord des données ; la base est la plus grande des deux valeurs minimales trouvées sous ces lignes, et la proéminence est la hauteur du maximum au-dessus de la base. Chaque élément d'un plateau maximal porte sa proéminence.</p>
+    <p>Les filtres sont appliqués dans cet ordre : 'MinProminence', 'MinSeparation' (un plateau compte comme un seul maximum couvrant ses échantillons) puis 'MaxNumExtrema' (en cas d'égalité, le premier maximum l'emporte).</p>
+    <p>Sans 'ProminenceWindow', la recherche est de complexité linéaire : elle convient aux grands signaux.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Maxima locaux et leur proéminence</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = [0 5 1 3 1 4 0];
+[TF, P] = islocalmax(A)
+islocalmax(A, 'MinProminence', 3)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Plateaux maximaux</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">x = 0:0.1:5;
+A = min(0.75, sin(pi * x));
+find(islocalmax(A, 'FlatSelection', 'first'))
+find(islocalmax(A, 'FlatSelection', 'all'))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Maxima séparés avec des abscisses temporelles</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">t = hours(linspace(0, 3, 15));
+A = [2 4 6 4 3 7 5 6 5 10 4 -1 -3 -2 0];
+TF = islocalmax(A, 'MinSeparation', minutes(45), 'SamplePoints', t);
+find(TF)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Maxima le long des lignes d'une matrice</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = [1 3 1 2 0; 0 1 4 1 0; 2 0 2 0 2];
+TF = islocalmax(A, 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../data_analysis/islocalmin.html">islocalmin</a><a class="see-also-link" href="../data_analysis/max.html">max</a><a class="see-also-link" href="../data_analysis/movmax.html">movmax</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

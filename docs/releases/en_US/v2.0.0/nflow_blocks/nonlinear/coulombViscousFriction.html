@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>coulombViscousFriction</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">coulombViscousFriction</span></div></div>
+<div class="section" style="text-align:center;"><img src="./coulombViscousFriction.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Static friction: viscous term Gain*u plus signed Coulomb term Offset*sign(u).</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Block type: coulombViscousFriction
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">input ports</td>
+<td>1 input port(s) declared.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">output ports</td>
+<td>1 output port(s) declared.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Static friction: viscous term Gain*u plus signed Coulomb term Offset*sign(u).</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Library</td>
+<td>Non-Linear</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">coulombViscousFriction</code></td>
+</tr>
+        <tr>
+<td>Label</td>
+<td>Coulomb &amp; Viscous Friction</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Description</b></p>
+    <p>Models a static friction characteristic combining a viscous term proportional to the input (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Gain</code>) and a Coulomb term of fixed magnitude (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Offset</code>) that opposes the direction of motion: <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">y = Gain*u + Offset*sign(u)</code>. Because <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">sign(0) = 0</code>, the output is exactly 0 at rest. Two parallel sloped segments with a jump of 2*Offset across the origin. Scalar or vector (element-wise).</p>
+    <p><b>Ports</b></p>
+    <p><b>Input(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Role</th>
+<th>Side</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Numeric signal read by the block.</td>
+<td>left</td>
+<td>x=0, y=40</td>
+</tr>
+      
+    </table>
+    <p><b>Output(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Role</th>
+<th>Side</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Numeric signal produced by the block.</td>
+<td>right</td>
+<td>x=80, y=40</td>
+</tr>
+      
+    </table>
+    <p><b>Parameters</b></p>
+    <table border="1">
+      <tr>
+<th>Parameter</th>
+<th>Default value</th>
+</tr>
+      
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Gain</code></td>
+<td>1</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Offset</code></td>
+<td>1</td>
+</tr>
+      
+    </table>
+    <p><b>Block Characteristics</b></p>
+    <table border="1">
+      
+        <tr>
+<td>Block type</td>
+<td>coulombViscousFriction</td>
+</tr>
+        <tr>
+<td>Family</td>
+<td>Non-Linear</td>
+</tr>
+        <tr>
+<td>Rendered size</td>
+<td>80 x 80</td>
+</tr>
+        <tr>
+<td>Phases</td>
+<td>ALGEBRAIC</td>
+</tr>
+        <tr>
+<td>Internal state or history</td>
+<td>no</td>
+</tr>
+        <tr>
+<td>Signal data type</td>
+<td>double numeric values</td>
+</tr>
+      
+    </table>
+    <p><b>Algorithms</b></p>
+    <ul>
+      <li>ALGEBRAIC: y = Gain*u + Offset*sign(u), element-wise over the input width.</li>
+    </ul>
+    <p><b>Equation or Rule</b></p>
+    <span class="math display">$$y = \text{Gain}\cdot u + \text{Offset}\cdot \operatorname{sign}(u)$$</span>
+    <p><b>Extended Capabilities</b></p>
+    <p>Code generation: supported for C and Rust.</p>
+    <p><b>Implementation Sources</b></p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/nonlinear/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.nonlinear",
+  "title": "Non-Linear",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Blocks for non-linearities",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "saturation",
+      "icon": "saturation.svg",
+      "label": "Saturation",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "LowerLimit": -1,
+        "UpperLimit": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "saturation.svg"
+      }
+    },
+    {
+      "type": "hysteresis",
+      "label": "Relay",
+      "icon": "hysteresis.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "uHigh": 1,
+        "uLow": -1,
+        "yHigh": 1,
+        "yLow": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "hysteresis.svg"
+      }
+    },
+    {
+      "type": "rate",
+      "label": "Rate Lim.",
+      "icon": "rate.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "RisingSlewLimit": 1,
+        "FallingSlewLimit": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "rate.svg"
+      }
+    },
+    {
+      "type": "backlash",
+      "label": "Backlash",
+      "icon": "backlash.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "BacklashWidth": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "backlash.svg"
+      }
+    },
+    {
+      "type": "deadZone",
+      "label": "Dead Zone",
+      "icon": "deadZone.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "LowerValue": -1,
+        "UpperValue": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "deadZone.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "quantizer",
+      "label": "Quantizer",
+      "icon": "quantizer.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "QuantizationInterval": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "quantizer.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "hitCrossing",
+      "icon": "hitCrossing.svg",
+      "label": "Hit Crossing",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "HitCrossingOffset": 0,
+        "HitCrossingDirection": "either"
+      },
+      "render": {
+        "type": "image",
+        "src": "hitCrossing.svg"
+      }
+    },
+    {
+      "type": "coulombViscousFriction",
+      "label": "Coulomb &amp; Viscous Friction",
+      "icon": "coulombViscousFriction.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Gain": 1,
+        "Offset": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "coulombViscousFriction.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/nonlinear/coulombViscousFriction.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+// coulombViscousFriction: a static friction characteristic combining a viscous
+// term proportional to the input (Gain) and a Coulomb term of fixed magnitude
+// opposing the direction of motion (Offset). y = Gain*u + Offset*sign(u), so
+// y(0) = 0 (sign(0) = 0). Scalar or vector (element-wise); C / Rust codegen.
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include &lt;cmath&gt;
+#include "nonlinear_blocks.hpp"
+//=============================================================================
+bool
+Nelson::NFlow::handleCoulombViscousFriction(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    if (phase != Phase::ALGEBRAIC) {
+        return false;
+    }
+    if (!hasInput(ctx, b.nid, 0)) {
+        return false;
+    }
+    nflow::BlockDescriptor bd(b, ctx.variables);
+    const double gain = bd.paramDouble("Gain", 1.0);
+    const double offset = bd.paramDouble("Offset", 1.0);
+    SigView uv = getInputSig(ctx, b.nid, 0);
+    return emitElementwise(ctx, b.nid, [&amp;](int i) {
+        const double u = sigAt(uv, i);
+        const double s = (u &gt; 0.0) ? 1.0 : ((u &lt; 0.0) ? -1.0 : 0.0);
+        return gain * u + offset * s;
+    });
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCCoulombViscousFriction()
+{
+    BlockCodegenTemplate t;
+    t.step = "{ double u = {in0};\n"
+             "  double s = (u &gt; 0.0) ? 1.0 : ((u &lt; 0.0) ? -1.0 : 0.0);\n"
+             "  out_{id} = {param:Gain:1.0} * u + {param:Offset:1.0} * s; }";
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustCoulombViscousFriction()
+{
+    BlockCodegenTemplate t;
+    t.step
+        = "out_{id} = {param:Gain:1.0} * {in0} + {param:Offset:1.0} * "
+          "(if {in0} &gt; 0.0_f64 { 1.0_f64 } else if {in0} &lt; 0.0_f64 { -1.0_f64 } else { 0.0_f64 });";
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Gain = 2, Offset = 3: input 2 -&gt; 7, input -2 -&gt; -7, input 0 -&gt; 0.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks={ struct('id','c','type','constant','inputs',0,'outputs',1,'params',struct('Value',2)), struct('id','f','type','coulombViscousFriction','inputs',1,'outputs',1,'params',struct('Gain',2,'Offset',3)), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','c','to','f','fromIndex',0,'toIndex',0), struct('from','f','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.1; d.duration=0.2; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/nonlinear/deadZone.html">deadZone</a><a class="see-also-link" href="../../nflow_blocks/nonlinear/saturation.html">saturation</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

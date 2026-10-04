@@ -8,6 +8,7 @@ Sort array elements by quick sort algorithm.
 - B = sort(A, dim)
 - B = sort(..., direction)
 - B = sort(..., name, value)
+- B = sort(A, dim, direction, name, value)
 - [B, I] = sort(...)
 
 ## 📥 Input argument
@@ -25,6 +26,10 @@ Sort array elements by quick sort algorithm.
 ## 📄 Description
 
 <b>sort</b> implements quick sort algorithm.
+
+With two outputs, elements with equivalent sort keys retain their original order. The indices returned for equivalent values are increasing within each group, in either sorting direction.
+
+Name-value pairs can be used after the dimension and sorting direction.
 
 name-value pair arguments:
 
@@ -47,6 +52,10 @@ name-value pair arguments:
       </b>, <b>
         'abs'
       </b>.
+
+With 'MissingPlacement' set to 'last', nonmissing values are sorted in the requested direction and missing values follow them. This applies with one or two outputs. A missing string is distinct from an empty string.
+
+Complex values with a NaN in either component are missing. They retain their input order with one or two outputs, including the non-NaN component, for every missing placement and sorting direction.
 
 ## Used function(s)
 

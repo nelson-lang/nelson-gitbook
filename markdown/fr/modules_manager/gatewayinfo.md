@@ -5,28 +5,34 @@ Retourne des informations sur une gateway.
 ## 📝 Syntaxe
 
 - [gateway\_name, builtin\_list] = gatewayinfo(dyn_lib_path)
+- [gateway\_name, builtin\_list, state] = gatewayinfo(dyn_lib_path)
 
 ## 📥 Argument d'entrée
 
-- dyn_lib_path - chaîne : chemin d'une bibliothèque dynamique préparée pour Nelson.
+- dyn_lib_path - chaine : chemin d'une bibliotheque dynamique preparee pour Nelson.
 
 ## 📤 Argument de sortie
 
-- gateway_name - chaîne : nom de la gateway
-- builtin_list - cellule de chaînes : liste des builtin présents dans cette gateway
+- gateway_name - chaine : nom de la gateway
+- builtin_list - cellule de chaines : liste des builtin presents dans cette gateway
+- state - chaine : etat courant de la gateway, <b>loaded</b>, <b>lazy</b> ou <b>not_loaded</b>
 
 ## 📄 Description
 
-<b>[gateway\_name, builtin\_list] = gatewayinfo(dyn_lib_path)</b> récupère des informations sur une gateway.
+<b>[gateway\_name, builtin\_list] = gatewayinfo(dyn_lib_path)</b> recupere des informations sur une gateway.
 
-La bibliothèque dynamique doit fournir au minimum un point d'entrée C nommé<b>GetGatewayInfo</b>.
+La bibliotheque dynamique doit fournir un point d'entree C nomme <b>GetGatewayDescriptor</b>.
 
-Si le fichier n'existe pas, une erreur est levée.
+La troisieme sortie optionnelle indique si la gateway est chargee, enregistree en lazy-loading ou non enregistree.
+
+Les metadonnees de descriptor peuvent etre reutilisees depuis le cache unique <b>prefdir()/gateway_cache.json</b>; l'entree du cache est reconstruite automatiquement quand la bibliotheque dynamique est modifiee.
+
+Si le fichier n'existe pas, une erreur est levee.
 
 ## 💡 Exemple
 
 ```matlab
-[gateway_name, builtin_list] = gatewayinfo(modulepath('time', 'builtin'))
+[gateway_name, builtin_list, state] = gatewayinfo(modulepath('time', 'builtin'))
 
 ```
 

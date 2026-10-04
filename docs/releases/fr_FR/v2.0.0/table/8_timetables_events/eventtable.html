@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>eventtable</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">eventtable</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Creer une table d'evenements pour un timetable.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">E = eventtable(eventTimes)
+E = eventtable(TT)
+E = eventtable(___, 'EventLabels', labels)
+E = eventtable(___, 'EventLengths', lengths)
+E = eventtable(___, 'EventEnds', ends)
+E = eventtable(___, 'EventLabelsVariable', name)
+E = eventtable(___, 'EventLengthsVariable', name)
+E = eventtable(___, 'EventEndsVariable', name)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">eventTimes</td>
+<td>Vecteur datetime ou duration contenant les temps de debut des evenements.</td>
+</tr>
+<tr>
+<td class="param-name">TT</td>
+<td>Timetable dont les temps de lignes deviennent les temps d'evenements et dont les variables deviennent les variables d'evenements.</td>
+</tr>
+<tr>
+<td class="param-name">labels</td>
+<td>Etiquettes d'evenements. Une valeur scalaire est etendue a tous les evenements.</td>
+</tr>
+<tr>
+<td class="param-name">lengths</td>
+<td>Valeurs duration qui indiquent les durees d'evenements.</td>
+</tr>
+<tr>
+<td class="param-name">ends</td>
+<td>Valeurs datetime ou duration qui indiquent les fins d'evenements.</td>
+</tr>
+<tr>
+<td class="param-name">name</td>
+<td>Nom ou indice d'une variable du timetable d'entree contenant les etiquettes, durees ou fins d'evenements. Valide seulement si la premiere entree est un timetable.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">E</td>
+<td>Eventtable : un timetable dont les temps de lignes sont les temps d'evenements.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>eventtable</b> cree une eventtable qui peut etre attachee a un timetable avec <b>Properties.Events</b> ; <b>syncevents</b> copie ensuite ses variables dans le timetable.</p>
+    <p>Quand l'entree est un vecteur de temps, les etiquettes, durees et fins d'evenements sont indiquees par des arguments nom-valeur. Les variables supplementaires sont fournies en creant d'abord un timetable puis en le passant a <b>eventtable</b> : toute entree positionnelle apres la premiere est une erreur.</p>
+    <p>Une eventtable est un timetable : les temps d'evenements sont ses temps de lignes (<b>E.Properties.RowTimes</b>, ou <b>E.Time</b>) et non une variable ; <b>size</b>, <b>width</b>, l'indexation et la concatenation se comportent comme pour un timetable.</p>
+    <p><b>E.Properties</b> commence par <b>EventLabelsVariable</b>, <b>EventLengthsVariable</b> et <b>EventEndsVariable</b>, les noms des variables contenant les etiquettes, durees et fins d'evenements ([] si non definies). On peut leur affecter un nom ou un indice de variable, ou []. Une variable renommee ou supprimee n'est plus utilisee.</p>
+    <p>Creee a partir de temps d'evenements sans etiquettes, l'eventtable recoit les etiquettes "Event 1", "Event 2", ... dans une variable <b>EventLabels</b>. Creee a partir d'un timetable, aucune variable ne sert d'etiquettes sauf indication contraire.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">eventTimes = datetime(2022, 11, [3; 5; 10; 14]);
+eventType = {'Hail'; 'Rain'; 'Snow'; 'Rain'};
+eventLength = hours([1.2; 36; 18; 20]);
+E = eventtable(eventTimes, ...
+  'EventLabels', eventType, ...
+  'EventLengths', eventLength)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">t = datetime(2022, 11, (1:15)');
+temperature = [36; 31; 37; 36; 38; 32; 35; 34; 32; 30; 39; 34; 31; 40; 34];
+humidity = [45; 76; 43; 46; 72; 54; 50; 45; 72; 58; 54; 58; 73; 78; 66];
+TT = timetable(t, temperature, humidity, 'VariableNames', {'Temperature', 'Humidity'});
+eventTimes = t([3; 5; 10; 14]);
+eventType = {'Hail'; 'Rain'; 'Snow'; 'Rain'};
+eventLength = hours([1.2; 36; 18; 20]);
+precipitation = [12.7; 114.3; 25.4; 177.8];
+eventData = timetable(eventTimes, eventType, eventLength, precipitation, ...
+  'VariableNames', {'EventType', 'EventLength', 'Precipitation'});
+E = eventtable(eventData, ...
+  'EventLabelsVariable', 'EventType', ...
+  'EventLengthsVariable', 'EventLength');
+TT.Properties.Events = E;
+stackedplot(TT)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../table/timetable.html">timetable</a><a class="see-also-link" href="../../table/syncevents.html">syncevents</a><a class="see-also-link" href="../../table/extractevents.html">extractevents</a><a class="see-also-link" href="../../graphics/stackedplot.html">stackedplot</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

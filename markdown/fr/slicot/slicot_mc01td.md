@@ -43,6 +43,10 @@ P = [2.0  0.0  1.0  -1.0  1.0];
 [DP, STABLE, NZ, IWARN, INFO] = slicot_mc01td(DICO, DP_IN, P)
 ```
 
+## 🔗 Voir aussi
+
+[pole](../control_system/pole.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

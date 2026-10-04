@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>netcdf</module>
+    <section name="netCDF">
+      <chapter_description/>
+      <keyword name="nccreate" link="nccreate.html" description="Create a variable in a netCDF file."/>
+      <keyword name="ncdisp" link="ncdisp.html" description="Display a readable summary of a netCDF data source."/>
+      <keyword name="ncinfo" link="ncinfo.html" description="Return information about a netCDF data source."/>
+      <keyword name="ncread" link="ncread.html" description="Read data from a variable in a netCDF file."/>
+      <keyword name="ncreadatt" link="ncreadatt.html" description="Read an attribute from a netCDF file or variable."/>
+      <keyword name="ncwrite" link="ncwrite.html" description="Write data to a variable in a netCDF file."/>
+      <keyword name="ncwriteatt" link="ncwriteatt.html" description="Write an attribute to a netCDF file or variable."/>
+      <keyword name="ncwriteschema" link="ncwriteschema.html" description="Add schema definitions to a netCDF file."/>
+      <keyword name="netcdf" link="netcdf.html" description="Low-level NetCDF package interface."/>
+      <keyword name="netcdf.abort" link="netcdf_abort.html" description="Revert recent definitions and close a netCDF file."/>
+      <keyword name="netcdf.close" link="netcdf_close.html" description="Close a netCDF file."/>
+      <keyword name="netcdf.copyAtt" link="netcdf_copyAtt.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.create" link="netcdf_create.html" description="Create a new netCDF dataset."/>
+      <keyword name="netcdf.defDim" link="netcdf_defDim.html" description="Work with netCDF dimensions."/>
+      <keyword name="netcdf.defGrp" link="netcdf_defGrp.html" description="Work with netCDF groups."/>
+      <keyword name="netcdf.defVar" link="netcdf_defVar.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.defVarChunking" link="netcdf_defVarChunking.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.defVarDeflate" link="netcdf_defVarDeflate.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.defVarFill" link="netcdf_defVarFill.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.defVarFletcher32" link="netcdf_defVarFletcher32.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.defVlen" link="netcdf_defVlen.html" description="Work with netCDF user-defined variable length types."/>
+      <keyword name="netcdf.delAtt" link="netcdf_delAtt.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.endDef" link="netcdf_endDef.html" description="End netCDF define mode."/>
+      <keyword name="netcdf.getAtt" link="netcdf_getAtt.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.getChunkCache" link="netcdf_getChunkCache.html" description="Return default chunk cache settings for the netCDF library."/>
+      <keyword name="netcdf.getConstant" link="netcdf_getConstant.html" description="Return the numeric value of a named netCDF constant."/>
+      <keyword name="netcdf.getConstantNames" link="netcdf_getConstantNames.html" description="Return names of constants known by the netCDF module."/>
+      <keyword name="netcdf.getVar" link="netcdf_getVar.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.inq" link="netcdf_inq.html" description="Return information about an open netCDF file."/>
+      <keyword name="netcdf.inqAtt" link="netcdf_inqAtt.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.inqAttID" link="netcdf_inqAttID.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.inqAttName" link="netcdf_inqAttName.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.inqDim" link="netcdf_inqDim.html" description="Work with netCDF dimensions."/>
+      <keyword name="netcdf.inqDimID" link="netcdf_inqDimID.html" description="Work with netCDF dimensions."/>
+      <keyword name="netcdf.inqDimIDs" link="netcdf_inqDimIDs.html" description="Work with netCDF dimensions."/>
+      <keyword name="netcdf.inqFormat" link="netcdf_inqFormat.html" description="Determine the format of an open netCDF file."/>
+      <keyword name="netcdf.inqGrpName" link="netcdf_inqGrpName.html" description="Work with netCDF groups."/>
+      <keyword name="netcdf.inqGrpNameFull" link="netcdf_inqGrpNameFull.html" description="Work with netCDF groups."/>
+      <keyword name="netcdf.inqGrpParent" link="netcdf_inqGrpParent.html" description="Work with netCDF groups."/>
+      <keyword name="netcdf.inqGrps" link="netcdf_inqGrps.html" description="Work with netCDF groups."/>
+      <keyword name="netcdf.inqLibVers" link="netcdf_inqLibVers.html" description="Return netCDF C library version information."/>
+      <keyword name="netcdf.inqNcid" link="netcdf_inqNcid.html" description="Work with netCDF groups."/>
+      <keyword name="netcdf.inqUnlimDims" link="netcdf_inqUnlimDims.html" description="Work with netCDF dimensions."/>
+      <keyword name="netcdf.inqUserType" link="netcdf_inqUserType.html" description="Work with netCDF user-defined variable length types."/>
+      <keyword name="netcdf.inqVar" link="netcdf_inqVar.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.inqVarChunking" link="netcdf_inqVarChunking.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.inqVarDeflate" link="netcdf_inqVarDeflate.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.inqVarFill" link="netcdf_inqVarFill.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.inqVarFletcher32" link="netcdf_inqVarFletcher32.html" description="Configure or inspect netCDF-4 variable storage options."/>
+      <keyword name="netcdf.inqVarID" link="netcdf_inqVarID.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.inqVarIDs" link="netcdf_inqVarIDs.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.inqVlen" link="netcdf_inqVlen.html" description="Work with netCDF user-defined variable length types."/>
+      <keyword name="netcdf.open" link="netcdf_open.html" description="Open a netCDF data source."/>
+      <keyword name="netcdf.putAtt" link="netcdf_putAtt.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.putVar" link="netcdf_putVar.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.reDef" link="netcdf_reDef.html" description="Put an open netCDF file into define mode."/>
+      <keyword name="netcdf.renameAtt" link="netcdf_renameAtt.html" description="Work with netCDF attributes."/>
+      <keyword name="netcdf.renameDim" link="netcdf_renameDim.html" description="Work with netCDF dimensions."/>
+      <keyword name="netcdf.renameVar" link="netcdf_renameVar.html" description="Work with netCDF variables."/>
+      <keyword name="netcdf.setChunkCache" link="netcdf_setChunkCache.html" description="Set default chunk cache settings for the netCDF library."/>
+      <keyword name="netcdf.setDefaultFormat" link="netcdf_setDefaultFormat.html" description="Change the default file format used by netCDF create calls."/>
+      <keyword name="netcdf.setFill" link="netcdf_setFill.html" description="Set netCDF fill mode."/>
+      <keyword name="netcdf.sync" link="netcdf_sync.html" description="Synchronize a netCDF file to disk."/>
+    </section>
+  </toc>
+</help_summary>

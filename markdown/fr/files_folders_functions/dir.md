@@ -39,9 +39,9 @@ res = dir(nelsonroot(), '-s')res = dir([nelsonroot(),'/*.m'], '-s')
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 1.0.0   | version initiale |
 
 <!--
 ## 👤 Auteur

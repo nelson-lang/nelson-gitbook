@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NFlow.sspInfo</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">NFlow.sspInfo</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Inspect, import and export SSP (System Structure and Parameterization) archives.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">info = NFlow.sspInfo(sspFile)
+nflowFile = NFlow.sspImport(sspFile, destinationDirectory)
+sspFile = NFlow.sspExport(sspFile, components, connections)
+sspFile = NFlow.sspExportDiagram(nflowFile, sspFile)
+NFlow.writeSsv(ssvFile, parameterValues)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">sspFile</td>
+<td>a character vector: path to an <b>.ssp</b> archive (a zip holding a <b>SystemStructure.ssd</b> and its component FMUs under <b>resources/</b>).</td>
+</tr>
+<tr>
+<td class="param-name">destinationDirectory</td>
+<td>a character vector: an existing directory that receives the extracted component FMUs and the generated <b>.nflow</b> model.</td>
+</tr>
+<tr>
+<td class="param-name">nflowFile</td>
+<td>a character vector: path to a <b>.nflow</b> diagram whose blocks are <b>fmu</b> blocks (as produced by <b>NFlow.sspImport</b>), packaged back into an SSP by <b>NFlow.sspExportDiagram</b>.</td>
+</tr>
+<tr>
+<td class="param-name">components</td>
+<td>a struct array with fields <b>name</b> and <b>model</b> (the path to each component's <b>.nflow</b> model).</td>
+</tr>
+<tr>
+<td class="param-name">connections</td>
+<td>a struct array with fields <b>startElement</b>, <b>startConnector</b>, <b>endElement</b>, <b>endConnector</b>. An empty <b>startElement</b> denotes a system input and an empty <b>endElement</b> a system output.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">info</td>
+<td>a structure with fields <b>name</b>, <b>systemConnectors</b> (the parent system's own <b>name</b>/<b>kind</b> connectors), <b>components</b> (each <b>name</b>, <b>source</b>, <b>type</b>, <b>implementation</b>, <b>parameterSources</b>) and <b>connections</b> (each <b>startElement</b>, <b>startConnector</b>, <b>endElement</b>, <b>endConnector</b>).</td>
+</tr>
+<tr>
+<td class="param-name">nflowFile</td>
+<td>the path to the <b>.nflow</b> model written by <b>NFlow.sspImport</b>.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>SSP (<b>System Structure and Parameterization</b>) is an open standard that packages several FMUs and the way their connectors are wired into a single <b>.ssp</b> archive.</p>
+    <p><b>NFlow.sspInfo</b> reads the archive's <b>SystemStructure.ssd</b> and reports the composition without loading any binary: the system name, its components and every connection between connectors.</p>
+    <p><b>NFlow.sspImport</b> wires each component into an nflow diagram: every FMI 3.0 Co-Simulation component becomes an <b>fmu</b> block, connectors are matched to ports by name, and a component output routed to a system output is exposed as a recordable sink. Parameter values bound to a component — through a <b>.ssv</b> (System Structure Parameter Values) file or embedded directly in the <b>.ssd</b> — are applied to its FMU block. Components that are not FMI 3.0 are reported with their declared version rather than failing obscurely.</p>
+    <p><b>NFlow.sspExport</b> does the reverse: it exports each component model to an FMU, lists its connectors and writes a <b>SystemStructure.ssd</b> describing the composition. Connections that reference the parent system (an empty start or end element) are declared as system-level connectors.</p>
+    <p><b>NFlow.sspExportDiagram</b> is the exact inverse of <b>NFlow.sspImport</b>: it takes a diagram whose blocks are <b>fmu</b> blocks and re-emits an SSP that references those same component FMUs directly (without re-exporting them). Wires between FMU blocks become connections — port indices are mapped back to connector names by inspection — and each <b>To Workspace</b> sink fed by an FMU output becomes a system output connector. Importing an SSP and exporting the resulting diagram round-trips the composition's components, its component-to-component links and its system outputs (a system input has no driver block after import, so it is not reproduced). Any parameter overrides carried on an FMU block (as applied by <b>NFlow.sspImport</b> from a <b>.ssv</b>) are written back out as a bound <b>.ssv</b>, so parameter values round-trip too.</p>
+    <p><b>NFlow.writeSsv</b> writes a parameter name/value struct as a <b>.ssv</b> file (the inverse of <b>NFlow.readSsv</b>): <b>logical</b> values become Boolean, integers Integer, everything else Real.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Inspect the bundled controlled-drivetrain composition</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ssp = [modulepath('nflow_fmi', 'root'), '/examples/ControlledDrivetrain.ssp'];
+info = NFlow.sspInfo(ssp);
+disp(info.name);
+disp({info.components.name});
+disp(numel(info.connections));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Round-trip a composition: SSP -&gt; diagram -&gt; SSP</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ssp = [modulepath('nflow_fmi', 'root'), '/examples/ControlledDrivetrain.ssp'];
+work = [tempdir(), 'ssp_roundtrip'];
+mkdir(work);
+nflowFile = NFlow.sspImport(ssp, work);
+outSsp = NFlow.sspExportDiagram(nflowFile, [work, filesep, 'RoundTrip.ssp']);
+info = NFlow.sspInfo(outSsp);
+disp({info.components.name});</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../nflow_engine/sim.html">sim</a><a class="see-also-link" href="../nflow_fmi/fmiCoSimulate.html">fmiCoSimulate</a><a class="see-also-link" href="../nflow_fmi/fmiInfo.html">fmiInfo</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliography</div>
+<div>Modelica Association, System Structure and Parameterization (SSP) standard, https://ssp-standard.org</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>NFlow.sspExportDiagram: package a diagram of FMU blocks back into an SSP; NFlow.writeSsv exports parameter values (SSV round-trip)</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

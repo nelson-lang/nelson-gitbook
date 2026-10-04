@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nmm_gui</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nmm_gui</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Open the package manager window.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">nmm_gui()
+nmm_gui(action, package_name)
+nmm_gui(action, package_name, version)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>nmm_gui</b> opens the Nelson package manager window, a graphical front-end for <b>nmm</b>. Calling it again brings the existing window to the foreground and refreshes it. The window is available from the desktop (Tools menu, toolbar and panel rail) and from the advanced command line. In the web desktop, <b>nmm_gui</b> shows the package manager as a docked <b>Package Manager</b> panel next to the Command Window (Tools &gt; Package Manager opens the same panel), so a single browser window is enough.</p>
+    <p>The left list shows every package known to Nelson: installed packages and the packages published by the configured registry (see <b>NELSON_NMM_REGISTRY</b> in <b>nmm</b>). The <b>All</b>, <b>Installed</b> and <b>Updates</b> filters and the search field narrow the list; the panel on the right shows the selected package: summary, metadata, keywords, homepage and the actions that apply.</p>
+    <p><b>Install</b>, <b>Update</b> and <b>Remove</b> run the corresponding <b>nmm</b> command in the Nelson console, so their output stays visible there. While a command runs, the window shows its progress step by step (fetch, dependencies, build, package tests when enabled, register) and refreshes the list when it completes. Operations typed in the console are followed the same way.</p>
+    <p>Package tests are not run at install time unless requested (see <b>nmm</b>): the hint next to the install button tells whether a package is built from source or installed from a prebuilt archive.</p>
+    <p><b>nmm_gui(action, package_name)</b> opens or focuses the window on a given package. <b>action</b> is <b>'show'</b> to select the package, or <b>'install'</b> to select it and start its installation. An optional <b>version</b> selects which version to install. The arguments are checked before the window is opened.</p>
+    <p>For a package that is not installed, a <b>Version</b> list picks the version to install. An installed package can also be loaded or unloaded for the session, and pinned to its version (<b>Pin</b>, <b>Unpin</b>). In the <b>Updates</b> filter, <b>Update all</b> updates every package that has a newer version. <b>Install from file or URL</b> installs a local <b>.nmz</b> archive, a module folder or a git URL.</p>
+    <p>The detail panel also shows the dependency tree (installed, to install or missing dependencies), the installed packages that require the selected one, its readme and changelog, and its repository, issues and documentation links. <b>Copy install command</b> copies the matching <b>nmm('install', ...)</b> call, with the version shown, for a package published by the registry. <b>Verify</b> checks an installed package (module folder, <b>module.json</b>, version, dependencies).</p>
+    <p><b>Cache</b> lists the archives of the offline package cache, verifies them and removes them. <b>Environment</b> exports the installed packages as a list of <b>name version</b> lines, and installs the missing packages of such a list.</p>
+    <p><b>Refresh</b> reloads the installed packages and always downloads the current registry; selecting a package reuses the registry read by the last refresh. The window follows the Nelson language.</p>
+    <p>The window requires the <b>webview</b> module. Without a configured registry, installed packages can still be listed and removed.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Open or refresh the package manager window.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nmm_gui()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Open the window on a package and install it.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nmm_gui('install', 'ngen')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../modules_manager/nmm.html">nmm</a><a class="see-also-link" href="../webview/demo.html">demo</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

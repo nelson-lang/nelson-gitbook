@@ -20,11 +20,23 @@ Element wise power, .^ operator
 
 <b>C = power(A, B)</b> performs an element wise power operation: A .^ B .
 
-## 💡 Example
+Sparse floating-point inputs are supported for double, single, complex double, and complex single data. Sparse bases preserve sparse storage for scalar, dense, or sparse exponents when the result can be represented as a sparse matrix.
+
+If an exponent makes implicit sparse zeros nonzero, for example exponent 0 or a negative exponent, Nelson materializes the corresponding sparse pattern entries.
+
+## 💡 Examples
 
 ```matlab
 power(3, 4)
 3.^4
+```
+
+```matlab
+A = sparse(single([2 0; 0 3]));
+R = A .^ 2
+full(R)
+C = sparse(single([1 + 2i 0; 0 3]));
+full(C .^ 2)
 ```
 
 ## 🔗 See also
@@ -33,9 +45,10 @@ power(3, 4)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                    |
+| ------- | ------------------------------------------------- |
+| 1.0.0   | initial version                                   |
+| 2.0.0   | expanded sparse single and complex single support |
 
 <!--
 ## 👤 Author

@@ -8,6 +8,7 @@ Get crc32 checksum.
 - hexa_hash = crc32(filename)
 - hexa_hash = crc32(str, '-file')
 - hexa_hash = crc32(str, '-string')
+- hexa_hash = crypto.crc32(...)
 
 ## 📥 Input argument
 
@@ -22,6 +23,8 @@ Get crc32 checksum.
 ## 📄 Description
 
 <b>crc32</b> get crc32 checksum.
+
+<b>crypto.crc32</b> is an alias of <b>crc32</b>, in the <b>crypto</b> namespace shared with <b>crypto.ed25519.verify</b> and <b>crypto.ed25519.sign</b>.
 
 ## 💡 Examples
 

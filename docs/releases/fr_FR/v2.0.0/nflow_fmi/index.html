@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
+</head>
+<body>
+<img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
+<div class="section-title">Import FMI NFlow</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Le module FMI de NFlow importe des unités de maquette fonctionnelle (FMU) conformes au standard <b>FMI 3.0</b> et les exécute comme composants de co-simulation ou de Model Exchange.</p>
+    <p>NFlow est actuellement publié en version <b>1.0.0-beta.1</b> : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours.</p>
+    <p>Il lit la description de modèle d'une FMU, expose ses variables et ses interfaces, et soit pilote une co-simulation à pas fixe (la FMU possède son solveur), soit intègre une FMU Model Exchange avec le solveur de NFlow, en enregistrant les sorties de la FMU au cours du temps.</p>
+    <p>Les fonctions acceptent aussi bien une archive <b>.fmu</b> qu'un répertoire de FMU déjà extrait. Les archives sont décompressées avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire supprimé automatiquement.</p>
+    <p>Cet import alimente aussi deux blocs dans l'éditeur NFlow (catégorie <b>FMI</b>) : un bloc <b>FMU</b> (co-simulation) et un bloc <b>FMU (ME)</b> (Model Exchange, dont les états continus rejoignent le solveur global du diagramme). Posez un bloc, cliquez sur <b>Browse FMU...</b> pour choisir un <b>.fmu</b>, et ses ports d'entrée et de sortie sont configurés automatiquement d'après la description de modèle. Des diagrammes de démonstration prêts à ouvrir pour plusieurs FMU de référence (VanDerPol, BouncingBall, Dahlquist, StateSpace, Feedthrough) sont fournis dans le répertoire <b>examples</b> du module.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Domaine</th>
+        <th>Entrées principales</th>
+      </tr>
+      <tr>
+        <td>Description de modèle</td>
+        <td>
+          <b>fmiInfo</b>
+</td>
+      </tr>
+      <tr>
+        <td>Co-simulation</td>
+        <td>
+          <b>fmiCoSimulate</b>
+</td>
+      </tr>
+      <tr>
+        <td>Model Exchange</td>
+        <td>
+          <b>fmiModelExchange</b>
+</td>
+      </tr>
+      <tr>
+        <td>Pont Modelica</td>
+        <td>
+          <b>modelicaInfo</b>, <b>modelicaConfigure</b>, <b>modelicaToFmu</b>
+</td>
+      </tr>
+      <tr>
+        <td>Assistant d'import FMU</td>
+        <td>
+          <b>fmuToBlock</b>
+</td>
+      </tr>
+    </table>
+    <p>L'<b>assistant d'import FMU</b> (<b>fmuToBlock</b>) transforme n'importe quelle FMU en bloc nflow d'aspect natif -- ports d'entrée et de sortie d'après la description de modèle, paramètres et icône de la FMU -- prêt à déposer dans une bibliothèque. Il se marie avec le pont Modelica : <b>modelicaToFmu</b> produit une FMU, <b>fmuToBlock</b> l'enveloppe en bloc.</p>
+    <p>Le <b>pont Modelica</b> permet à un modèle nflow d'inclure un bloc <b>modelica</b> qui référence un modèle Modelica. À la simulation, le modèle est compilé en FMU avec un <b>OpenModelica</b> installé par l'utilisateur puis importé via le chemin FMI ci-dessus, de sorte que des modèles Modelica physiques (acausaux) se simulent aux côtés des blocs ordinaires. <b>modelicaInfo</b> et <b>modelicaConfigure</b> indiquent et sélectionnent l'OpenModelica utilisé ; <b>modelicaToFmu</b> réalise la compilation. Des exemples (RC, RLC, masse-ressort-amortisseur) sont fournis dans le répertoire <b>examples/modelica</b> du module.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="fmiCoSimulate.html" target="contentFrame">fmiCoSimulate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exécute une co-simulation à pas fixe d'une FMU FMI 2.0 ou 3.0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="fmiInfo.html" target="contentFrame">fmiInfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lit la description de modèle d'une FMU FMI 2.0 ou 3.0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="fmiModelExchange.html" target="contentFrame">fmiModelExchange</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Importe et intègre une FMU FMI 2.0 ou 3.0 Model Exchange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="fmuToBlock.html" target="contentFrame">fmuToBlock</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Transforme une FMU en bloc natif nflow (manifeste).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="modelicaConfigure.html" target="contentFrame">modelicaConfigure</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Définit ou interroge l'OpenModelica du pont Modelica de nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="modelicaInfo.html" target="contentFrame">modelicaInfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Indique l'OpenModelica utilisé par le pont Modelica de nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="modelicaToFmu.html" target="contentFrame">modelicaToFmu</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compile un modèle Modelica en FMU avec OpenModelica.</div>
+</li>
+</ul>
+</div>
+</body>
+</html>

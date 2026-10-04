@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>choix solveur EDO</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">choix solveur EDO</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Choisir un solveur EDO.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Utilisez <b>ode45</b> d'abord pour les problemes non raides lisses. Utilisez <b>ode23</b> pour une precision moderee ou des essais rapides.</p>
+    <table style="width:100%">
+  <tr>
+<th>Type de probleme</th>
+<th>Premiers choix</th>
+<th>Notes</th>
+</tr>
+  <tr>
+<td>Non raide</td>
+<td>
+<b>ode45</b>, <b>ode23</b>, <b>ode113</b>
+</td>
+<td>Point de depart pour les problemes de valeur initiale lisses.</td>
+</tr>
+  <tr>
+<td>Raide ou matrice de masse</td>
+<td>
+<b>ode15s</b>, <b>ode23s</b>, <b>ode23t</b>, <b>ode23tb</b>
+</td>
+<td>Utiliser les options jacobien ou matrice de masse si disponibles.</td>
+</tr>
+  <tr>
+<td>Totalement implicite</td>
+<td>
+<b>ode15i</b>, <b>idas</b> optionnel</td>
+<td>Utiliser la forme residuelle <b>F(t,y,yp)=0</b>.</td>
+</tr>
+  <tr>
+<td>Workflow objet automatique</td>
+<td>
+<b>'auto'</b>, <b>'autoswitch'</b>
+</td>
+<td>Selectionne ou bascule entre solveurs internes disponibles.</td>
+</tr>
+</table>
+    <p>Utilisez les entrees raides <b>ode15s</b>, <b>ode23s</b>, <b>ode23t</b> ou <b>ode23tb</b> quand la solution contient des modes rapides, une matrice de masse ou un jacobien utile. Ces entrees utilisent un noyau lineairement implicite leger inclus dans le module.</p>
+    <p>Utilisez <b>ode15i</b> quand l'equation est ecrite comme un residu <b>F(t,y,yp)=0</b>.</p>
+    <p>Quand Nelson est construit avec le backend optionnel SUNDIALS, <b>cvodesnonstiff</b> utilise CVODES Adams pour les problemes non raides, <b>cvodesstiff</b> utilise CVODES BDF pour les problemes raides ou avec matrice de masse, et <b>idas</b> utilise IDAS BDF pour les problemes residuels totalement implicites. Une demande explicite d'une de ces valeurs de solveur signale une erreur quand le backend n'est pas disponible. Si un <b>JPattern</b> creux est fourni et que la bibliotheque SPGMR est disponible, le backend utilise un solveur lineaire iteratif; sinon il utilise le solveur lineaire dense. Les matrices <b>JPattern</b> creuses et les valeurs <b>Jacobian</b> double creuses sont consommees directement par ce chemin de selection et de preconditionnement. Les objets d'options SUNDIALS peuvent aussi demander les valeurs <b>LinearSolver</b><b>'dense'</b>, <b>'spgmr'</b>, <b>'spfgmr'</b>, <b>'spbcgs'</b>, <b>'sptfqmr'</b>, <b>'pcg'</b> ou <b>'klu'</b>, et les valeurs <b>Preconditioner</b><b>'none'</b>, <b>'jacobi'</b>, <b>'banded'</b> ou <b>'ilu0'</b>. Le preconditionneur <b>'auto'</b> choisit <b>'jacobi'</b> pour les motifs creux diagonaux, <b>'banded'</b> pour les bandes etroites et <b>'ilu0'</b> pour les motifs creux plus larges. La valeur <b>'banded'</b> construit un preconditionneur par differences finies limite a une bande et utilise <b>JPattern</b> pour restreindre cette bande quand il est disponible. La valeur <b>'ilu0'</b> construit un preconditionneur LU incomplet compact sur le meme motif creux. La valeur <b>'klu'</b> est conditionnelle et n'est pas fournie par les binaires Windows actuels. Les stats SUNDIALS renseignent <b>linearSolver</b>, <b>preconditioner</b>, <b>sensitivityMethod</b>, <b>linearSetupCount</b>, <b>linearIterations</b>, <b>linearConvergenceFailures</b>, <b>preconditionerSetupCount</b> et <b>preconditionerSolveCount</b>.</p>
+    <p>Le workflow objet actuel prend en charge les sensibilites directes avant, les gradients adjoints CVODES pour objectifs scalaires, les gradients adjoints IDAS natifs pour objectifs scalaires et les gradients adjoints scalaires projetes pour les equations avec retard. Les adjoints IDAS natifs indiquent <b>sensitivityBackend</b> avec la valeur <b>'idasAdjoint'</b>. Les equations avec retard prennent en charge les retards de valeur et de pente positifs, y compris les retards fonctions causaux; les retards dependants de l'etat recalculent des chunks internes de methode des pas depuis le retard courant et reessaient avec des chunks plus petits quand un chunk d'essai demande un historique futur. Les stats de retard indiquent le nombre de chunks via <b>nchunks</b>. Les residus avec retard totalement implicites sont pris en charge avec <b>ode15i</b> et, quand le backend optionnel est disponible, <b>idas</b>. <b>'autoswitch'</b> fonctionne dans la boucle de pas adaptative et peut basculer entre <b>ode45</b> et <b>ode15s</b> quand la pression de raideur apparait ou disparait, tout en conservant la sortie solution, les evenements et les statistiques. Les stats autoswitch incluent <b>autoSwitchInitialSolver</b>, <b>autoSwitchSelectedSolver</b>, <b>autoSwitchSwitched</b>, <b>autoSwitchReason</b>, <b>autoSwitchLastReason</b>, <b>autoSwitchMode</b>, <b>autoSwitchSwitchTime</b>, <b>autoSwitchSwitchCount</b>, <b>autoSwitchStiffnessIndicator</b>, <b>autoSwitchReleaseIndicator</b> et <b>autoSwitchStiffnessCriterion</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Probleme non raide.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">options = odeset('RelTol', 1e-5);
+[t, y] = ode45(@(t,y) -y, [0 1], 1, options)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Probleme raide avec jacobien.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = @(t,y) -1000 * (y - cos(t)) - sin(t);
+options = odeset('Jacobian', -1000);
+[t, y] = ode23s(f, [0 0.5], 1, options)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../ode_solvers/ode45.html">ode45</a><a class="see-also-link" href="../ode_solvers/ode23.html">ode23</a><a class="see-also-link" href="../ode_solvers/ode15s.html">ode15s</a><a class="see-also-link" href="../ode_solvers/ode15i.html">ode15i</a><a class="see-also-link" href="../ode_solvers/nelson.ode.options.CVODESNonstiff.html">nelson.ode.options.CVODESNonstiff</a><a class="see-also-link" href="../ode_solvers/nelson.ode.options.CVODESStiff.html">nelson.ode.options.CVODESStiff</a><a class="see-also-link" href="../ode_solvers/nelson.ode.options.IDAS.html">nelson.ode.options.IDAS</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

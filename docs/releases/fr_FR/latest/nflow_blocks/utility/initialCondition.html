@@ -1,0 +1,1130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>initialCondition</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">initialCondition</span></div></div>
+<div class="section" style="text-align:center;"><img src="./initialCondition.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Force la sortie a InitialValue au premier pas, puis transmet l entree.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Type de bloc : initialCondition
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports d entree</td>
+<td>1 port(s) d entree declare(s).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports de sortie</td>
+<td>1 port(s) de sortie declare(s).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Force la sortie a InitialValue au premier pas, puis transmet l entree.</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Bibliotheque</td>
+<td>Utilitaires</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">initialCondition</code></td>
+</tr>
+        <tr>
+<td>Libelle</td>
+<td>IC</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Description</b></p>
+    <p>Emet le parametre <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">InitialValue</code> au temps de simulation 0 puis transmet l'entree inchangee a chaque pas suivant (t &gt; 0). Utile pour amorcer une boucle algebrique ou definir la valeur d'un signal de retour avant que le premier echantillon reel soit disponible. Transparent pour t &gt; 0.</p>
+    <p><b>Ports</b></p>
+    <p><b>Entree(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Role</th>
+<th>Cote</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Signal numerique lu par le bloc.</td>
+<td>gauche</td>
+<td>x=0, y=25</td>
+</tr>
+      
+    </table>
+    <p><b>Sortie(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Role</th>
+<th>Cote</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Signal numerique produit par le bloc.</td>
+<td>droite</td>
+<td>x=90, y=25</td>
+</tr>
+      
+    </table>
+    <p><b>Parametres</b></p>
+    <table border="1">
+      <tr>
+<th>Parametre</th>
+<th>Valeur par defaut</th>
+</tr>
+      
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">InitialValue</code></td>
+<td>0</td>
+</tr>
+      
+    </table>
+    <p><b>Caracteristiques du bloc</b></p>
+    <table border="1">
+      
+        <tr>
+<td>Type de bloc</td>
+<td>initialCondition</td>
+</tr>
+        <tr>
+<td>Famille</td>
+<td>Utilitaires</td>
+</tr>
+        <tr>
+<td>Taille rendue</td>
+<td>90 x 50</td>
+</tr>
+        <tr>
+<td>Phases</td>
+<td>ALGEBRAIC</td>
+</tr>
+        <tr>
+<td>Etat interne ou historique</td>
+<td>non</td>
+</tr>
+        <tr>
+<td>Type de donnees du signal</td>
+<td>valeurs numeriques double</td>
+</tr>
+      
+    </table>
+    <p><b>Algorithmes</b></p>
+    <ul>
+      <li>ALGEBRAIC : out = (t &gt; 0) ? u : InitialValue.</li>
+    </ul>
+    <p><b>Equation ou regle</b></p>
+    <span class="math display">$$y(t) = \begin{cases} \text{InitialValue} &amp; t = 0 \\ u(t) &amp; t &gt; 0 \end{cases}$$</span>
+    <p><b>Capacites etendues</b></p>
+    <p><b>Sources d implementation</b></p>
+    <p>Generation de code : prise en charge pour C et Rust.</p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/utility/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.utility",
+  "title": "Utility",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Utility blocks such as switches, comments, and subsystems",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "comment",
+      "label": "Comment",
+      "icon": "comment.svg",
+      "phases": [],
+      "width": 220,
+      "height": 120,
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "CommentText": "",
+        "ShowBorder": true
+      },
+      "render": {
+        "type": "comment",
+        "bodyClass": "block-body"
+      }
+    },
+    {
+      "type": "switch",
+      "label": "Switch",
+      "icon": "switch.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 0,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 80,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Criteria": "ge",
+        "Threshold": 0
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "switch-math"
+      }
+    },
+    {
+      "type": "multiportSwitch",
+      "label": "Multiport Switch",
+      "icon": "multiportSwitch.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 40,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 20,
+          "y": 0,
+          "side": "top"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 60,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DataPortCount": 3
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/multiportSwitch.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 90
+      }
+    },
+    {
+      "type": "toggleSwitch",
+      "label": "Toggle Switch",
+      "icon": "toggleSwitch.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "State": 0,
+        "OnLabel": "ON",
+        "OffLabel": "OFF",
+        "OnValue": 1,
+        "OffValue": 0
+      },
+      "render": {
+        "type": "toggle"
+      }
+    },
+    {
+      "type": "subsystem",
+      "icon": "subsystem.svg",
+      "label": "Subsystem",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "ALGEBRAIC",
+        "UPDATE"
+      ],
+      "width": 120,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 120,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "name": "Subsystem",
+        "externalInputs": [],
+        "externalOutputs": [],
+        "subsystem": null
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "subsystem-math",
+        "formula": "\\mathsf{Sub}"
+      }
+    },
+    {
+      "type": "mux",
+      "label": "Mux",
+      "icon": "mux.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 8,
+      "height": 40,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 10,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 30,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 8,
+          "y": 20,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Inputs": 2
+      }
+    },
+    {
+      "type": "demux",
+      "label": "Demux",
+      "icon": "demux.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 8,
+      "height": 40,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 8,
+          "y": 10,
+          "side": "right"
+        },
+        {
+          "x": 8,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Outputs": 2
+      }
+    },
+    {
+      "type": "convert",
+      "label": "Convert",
+      "icon": "convert.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutDataType": "double",
+        "SaturateOnOverflow": true,
+        "Rounding": "nearest"
+      }
+    },
+    {
+      "type": "initialCondition",
+      "label": "IC",
+      "icon": "initialCondition.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialValue": 0
+      }
+    },
+    {
+      "type": "dataStoreMemory",
+      "label": "Data Store Memory",
+      "icon": "dataStoreMemory.svg",
+      "phases": [
+        "INIT"
+      ],
+      "width": 70,
+      "height": 60,
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "DataStoreName": "A",
+        "InitialValue": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/dataStoreMemory.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "type": "dataStoreWrite",
+      "label": "Data Store Write",
+      "icon": "dataStoreWrite.svg",
+      "phases": [
+        "INIT",
+        "UPDATE"
+      ],
+      "width": 70,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 30,
+          "side": "left"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {
+        "DataStoreName": "A"
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/dataStoreWrite.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "type": "dataStoreRead",
+      "label": "Data Store Read",
+      "icon": "dataStoreRead.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 70,
+      "height": 60,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 70,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DataStoreName": "A"
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/dataStoreRead.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "type": "selector",
+      "label": "Selector",
+      "icon": "selector.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Indices": "1"
+      }
+    },
+    {
+      "type": "reshape",
+      "label": "Reshape",
+      "icon": "reshape.svg",
+      "phases": [
+        "INIT",
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutputDimensions": ""
+      }
+    },
+    {
+      "type": "concatenate",
+      "label": "Concatenate",
+      "icon": "concatenate.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 60,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 60,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "ConcatenateDimension": 1
+      }
+    },
+    {
+      "type": "busCreator",
+      "label": "Bus Creator",
+      "icon": "busCreator.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 70,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 45,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 35,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "BusType": "",
+        "NonVirtual": false,
+        "MemberNames": []
+      }
+    },
+    {
+      "type": "busSelector",
+      "label": "Bus Selector",
+      "icon": "busSelector.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 85,
+      "height": 70,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 35,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 85,
+          "y": 25,
+          "side": "right"
+        },
+        {
+          "x": 85,
+          "y": 45,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "SelectedSignals": [],
+        "OutputAsBus": false
+      }
+    },
+    {
+      "type": "merge",
+      "label": "Merge",
+      "icon": "merge.svg",
+      "phases": [
+        "INIT",
+        "ALGEBRAIC"
+      ],
+      "width": 40,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 30,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialOutput": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/merge.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 80
+      }
+    },
+    {
+      "type": "functionCallGenerator",
+      "label": "Function-Call Generator",
+      "icon": "functionCallGenerator.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 60,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "NumberOfIterations": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/functionCallGenerator.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60
+      }
+    },
+    {
+      "type": "functionCallSplit",
+      "label": "Function-Call Split",
+      "icon": "functionCallSplit.svg",
+      "phases": [],
+      "width": 60,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 60,
+          "y": 30,
+          "side": "right"
+        },
+        {
+          "x": 60,
+          "y": 50,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "image",
+        "src": "exports/functionCallSplit.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "type": "iteratorNumber",
+      "label": "Iterator Number",
+      "icon": "iteratorNumber.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 70,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 70,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "image",
+        "src": "exports/iteratorNumber.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 50
+      }
+    },
+    {
+      "type": "iteratorCondition",
+      "label": "Iterator Condition",
+      "icon": "iteratorCondition.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 70,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 70,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "image",
+        "src": "exports/iteratorCondition.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 50
+      }
+    },
+    {
+      "type": "width",
+      "label": "Width",
+      "icon": "width.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {}
+    },
+    {
+      "type": "signalConversion",
+      "label": "Signal Conversion",
+      "icon": "signalConversion.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {}
+    },
+    {
+      "type": "assignment",
+      "label": "Assignment",
+      "icon": "assignment.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Indices": [
+          1
+        ]
+      }
+    },
+    {
+      "type": "busAssignment",
+      "label": "Bus Assignment",
+      "icon": "busAssignment.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 100,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 100,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "AssignedSignals": []
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/routing/initialCondition.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include "NFlowCodegenHelpers.hpp"
+#include &lt;cmath&gt;
+#include "routing_blocks.hpp"
+//=============================================================================
+// initialCondition (IC): outputs InitialValue at the first step (t == 0) and
+// passes the input through for t &gt; 0. Useful to seed a signal (e.g. to break an
+// algebraic loop's initial value). Pure feedthrough after t = 0, element-wise.
+//=============================================================================
+bool
+Nelson::NFlow::handleInitialCondition(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    if (phase != Phase::ALGEBRAIC) {
+        return false;
+    }
+    if (!hasInput(ctx, b.nid, 0)) {
+        return false;
+    }
+    nflow::BlockDescriptor bd(b, ctx.variables);
+    const double ic = bd.paramDouble("InitialValue", 0.0);
+    const bool initial = (ctx.t &lt;= 0.0);
+    SigView u = getInputSig(ctx, b.nid, 0);
+    return emitElementwise(ctx, b.nid, [&amp;](int i) -&gt; double { return initial ? ic : sigAt(u, i); });
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCInitialCondition()
+{
+    BlockCodegenTemplate t;
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        a.line("out_" + a.id + " = (t &gt; 0.0) ? " + a.in[0] + " : "
+            + a.fmt(bd.paramDouble("InitialValue", 0.0)) + ";");
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustInitialCondition()
+{
+    BlockCodegenTemplate t;
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        a.line("out_" + a.id + " = if t &gt; 0.0 { " + a.in[0] + " } else { "
+            + a.fmt(bd.paramDouble("InitialValue", 0.0)) + " };");
+    };
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Casser une boucle algebrique en amorcant le premier echantillon a 5.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks={ struct('id','r','type','ramp','inputs',0,'outputs',1,'params',struct('slope',1)), struct('id','ic','type','initialCondition','inputs',1,'outputs',1,'params',struct('InitialValue',5)), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','r','to','ic','fromIndex',0,'toIndex',0), struct('from','ic','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.1; d.duration=0.5; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/discrete/unitDelay.html">unitDelay</a><a class="see-also-link" href="../../nflow_blocks/utility/dataStoreMemory.html">dataStoreMemory</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

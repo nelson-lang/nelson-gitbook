@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>donutchart properties</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">donutchart properties</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Proprietes de l'objet graphique donutchart.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Cette page documente les proprietes visibles retournees par <b>properties</b> pour un objet graphique <b>donutchart</b>.</p>
+    <table>
+      <tr>
+        <th>Propriete</th>
+        <th>Action</th>
+        <th>Type et valeurs prises en charge</th>
+      </tr>
+      <tr>
+        <td><b>CategoryCounts</b></td>
+        <td>remplace les donnees et recalcule les limites automatiques qui en dependent.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Valeurs prises en charge: [] ou donnees de dimensions compatibles avec l'objet rendu.</td>
+      </tr>
+      <tr>
+        <td><b>CenterLabel</b></td>
+        <td>met a jour le libelle dessine au centre du donutchart.</td>
+        <td>Type: valeur texte. Valeurs prises en charge: vecteur ligne de caracteres, chaine scalaire ou texte vide.</td>
+      </tr>
+      <tr>
+        <td><b>CenterLabelFontSize</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeur scalaire finie.</td>
+      </tr>
+      <tr>
+        <td><b>CenterLabelFontSizeMode</b></td>
+        <td>'auto' laisse Nelson recalculer la propriete associee; 'manual' conserve la valeur affectee.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>ColorOrder</b></td>
+        <td>modifie les couleurs selectionnees automatiquement pour les series suivantes.</td>
+        <td>Type: matrice numerique finie. Valeurs prises en charge: matrice RGB m-par-3 avec valeurs dans [0,1].</td>
+      </tr>
+      <tr>
+        <td><b>Data</b></td>
+        <td>remplace les donnees et recalcule les limites automatiques qui en dependent.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Valeurs prises en charge: [] ou donnees de dimensions compatibles avec l'objet rendu.</td>
+      </tr>
+      <tr>
+        <td><b>DataMode</b></td>
+        <td>'auto' laisse Nelson recalculer la propriete associee; 'manual' conserve la valeur affectee.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>DataVariable</b></td>
+        <td>met a jour l'etat stocke de l'objet.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: texte vide ou nom de variable d'espace de travail/table.</td>
+      </tr>
+      <tr>
+        <td><b>Direction</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'normal', 'reverse'.</td>
+      </tr>
+      <tr>
+        <td><b>DisplayOrder</b></td>
+        <td>change l'ordre affiche des groupes ou variables du graphique.</td>
+        <td>Type: mot-cle texte ou vecteur d'ordre. Valeurs prises en charge: 'ascend', 'descend' ou vecteur d'indices d'affichage pris en charge par le graphique.</td>
+      </tr>
+      <tr>
+        <td><b>EdgeColor</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: color value or color mode keyword. Valeurs prises en charge: 'red'/'r', 'green'/'g', 'blue'/'b', 'cyan'/'c', 'magenta'/'m', 'yellow'/'y', 'black'/'k', 'white'/'w', triplet RGB [r g b] avec valeurs dans [0,1], ou couleur hexadecimale '#RRGGBB'/'#RGB', 'none', 'flat', 'interp'.</td>
+      </tr>
+      <tr>
+        <td><b>ExplodedWedges</b></td>
+        <td>change les secteurs de piechart ou donutchart dessines separes du centre.</td>
+        <td>Type: vecteur numerique ou logique. Valeurs prises en charge: valeur vide ou vecteur avec un element par secteur; les entrees non nulles decalent le secteur correspondant.</td>
+      </tr>
+      <tr>
+        <td><b>FaceAlpha</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: numeric scalar or numeric array. Valeurs prises en charge: valeurs dans [0,1]; les tableaux doivent correspondre aux donnees rendues associees.</td>
+      </tr>
+      <tr>
+        <td><b>FaceColor</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: color value or color mode keyword. Valeurs prises en charge: 'red'/'r', 'green'/'g', 'blue'/'b', 'cyan'/'c', 'magenta'/'m', 'yellow'/'y', 'black'/'k', 'white'/'w', triplet RGB [r g b] avec valeurs dans [0,1], ou couleur hexadecimale '#RRGGBB'/'#RGB', 'none', 'flat', 'interp'.</td>
+      </tr>
+      <tr>
+        <td><b>FontColor</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: color value. Valeurs prises en charge: 'red'/'r', 'green'/'g', 'blue'/'b', 'cyan'/'c', 'magenta'/'m', 'yellow'/'y', 'black'/'k', 'white'/'w', triplet RGB [r g b] avec valeurs dans [0,1], ou couleur hexadecimale '#RRGGBB'/'#RGB'.</td>
+      </tr>
+      <tr>
+        <td><b>FontName</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: nom de police systeme ou 'FixedWidth'.</td>
+      </tr>
+      <tr>
+        <td><b>FontSize</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeur scalaire finie.</td>
+      </tr>
+      <tr>
+        <td><b>FontSizeMode</b></td>
+        <td>'auto' laisse Nelson recalculer la propriete associee; 'manual' conserve la valeur affectee.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>HandleVisibility</b></td>
+        <td>controle si les fonctions de recherche de handles peuvent trouver l'objet.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off', 'callback'.</td>
+      </tr>
+      <tr>
+        <td><b>InnerPosition</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: vecteur numerique fini. Valeurs prises en charge: vecteur fini de taille documentee, par exemple [left bottom width height], [x y z], [azimuth elevation] ou [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>InnerRadius</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeur scalaire finie.</td>
+      </tr>
+      <tr>
+        <td><b>Interpreter</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'tex', 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>LabelStyle</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: noms de style definis par cet objet: styles UI, styles de lumiere, styles de graphique ou styles de ligne.</td>
+      </tr>
+      <tr>
+        <td><b>LabelStyleMode</b></td>
+        <td>'auto' laisse Nelson recalculer la propriete associee; 'manual' conserve la valeur affectee.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>Labels</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: text scalar, string array, or cell array of text. Valeurs prises en charge: texte vide ou etiquettes correspondant aux graduations, categories, variables, lignes ou valeurs affichees.</td>
+      </tr>
+      <tr>
+        <td><b>LabelsMode</b></td>
+        <td>'auto' laisse Nelson recalculer la propriete associee; 'manual' conserve la valeur affectee.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>Layout</b></td>
+        <td>met a jour le placement demande au gestionnaire de layout parent.</td>
+        <td>Type: objet d'options de layout ou valeur vide. Valeurs prises en charge: informations de layout stockees par les gestionnaires parents, y compris le placement en tuile quand l'objet le prend en charge.</td>
+      </tr>
+      <tr>
+        <td><b>LegendTitle</b></td>
+        <td>met a jour le titre affiche au-dessus des entrees de legende.</td>
+        <td>Type: valeur texte. Valeurs prises en charge: vecteur ligne de caracteres, chaine scalaire ou texte vide.</td>
+      </tr>
+      <tr>
+        <td><b>LegendVisible</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: on/off value. Valeurs prises en charge: 'on', 'off', true ou false.</td>
+      </tr>
+      <tr>
+        <td><b>LineWidth</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeur superieure ou egale a 0.</td>
+      </tr>
+      <tr>
+        <td><b>Names</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: text scalar, string array, or cell array of text. Valeurs prises en charge: texte vide ou etiquettes correspondant aux graduations, categories, variables, lignes ou valeurs affichees.</td>
+      </tr>
+      <tr>
+        <td><b>NamesMode</b></td>
+        <td>'auto' laisse Nelson recalculer la propriete associee; 'manual' conserve la valeur affectee.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>NamesVariable</b></td>
+        <td>met a jour l'etat stocke de l'objet.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: texte vide ou nom de variable d'espace de travail/table.</td>
+      </tr>
+      <tr>
+        <td><b>NumDisplayWedges</b></td>
+        <td>met a jour l'etat stocke de l'objet.</td>
+        <td>Type: integer scalar or numeric vector. Valeurs prises en charge: entier fini, valeur numerique finie ou vecteur requis par la propriete.</td>
+      </tr>
+      <tr>
+        <td><b>OuterPosition</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: vecteur numerique fini. Valeurs prises en charge: vecteur fini de taille documentee, par exemple [left bottom width height], [x y z], [azimuth elevation] ou [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>Parent</b></td>
+        <td>change le parent et met a jour Children sur les anciens et nouveaux parents.</td>
+        <td>Type: graphics object handle scalar. Valeurs prises en charge: handle parent valide pour la classe de l'objet.</td>
+      </tr>
+      <tr>
+        <td><b>Position</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: vecteur numerique fini. Valeurs prises en charge: vecteur fini de taille documentee, par exemple [left bottom width height], [x y z], [azimuth elevation] ou [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>PositionConstraint</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: vecteur numerique fini. Valeurs prises en charge: vecteur fini de taille documentee, par exemple [left bottom width height], [x y z], [azimuth elevation] ou [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>Proportions</b></td>
+        <td>remplace les donnees et recalcule les limites automatiques qui en dependent.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Valeurs prises en charge: [] ou donnees de dimensions compatibles avec l'objet rendu.</td>
+      </tr>
+      <tr>
+        <td><b>ShowOthers</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: on/off value. Valeurs prises en charge: 'on', 'off', true ou false.</td>
+      </tr>
+      <tr>
+        <td><b>SourceTable</b></td>
+        <td>met a jour l'etat stocke de l'objet.</td>
+        <td>Type: table or empty array. Valeurs prises en charge: [] ou table utilisee par les proprietes de nom de variable.</td>
+      </tr>
+      <tr>
+        <td><b>StartAngle</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeur scalaire finie.</td>
+      </tr>
+      <tr>
+        <td><b>Title</b></td>
+        <td>met a jour le titre affiche ou l'objet titre associe a l'objet graphique.</td>
+        <td>Type: objet texte graphique ou valeur texte, selon la classe d'objet. Valeurs prises en charge: objet texte de titre, vecteur ligne de caracteres, chaine scalaire ou texte vide.</td>
+      </tr>
+      <tr>
+        <td><b>Type</b></td>
+        <td>valeur calculee par Nelson; les operations graphiques la mettent a jour.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: nom de type en lecture seule, par exemple 'figure', 'axes', 'line' ou 'scatter'.</td>
+      </tr>
+      <tr>
+        <td><b>Units</b></td>
+        <td>recalcule la geometrie, les limites ou la disposition.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'pixels', 'normalized', 'inches', 'centimeters', 'points', 'characters', 'data'.</td>
+      </tr>
+      <tr>
+        <td><b>Visible</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>WedgeDisplayData</b></td>
+        <td>remplace les donnees et recalcule les limites automatiques qui en dependent.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Valeurs prises en charge: [] ou donnees de dimensions compatibles avec l'objet rendu.</td>
+      </tr>
+      <tr>
+        <td><b>WedgeDisplayNames</b></td>
+        <td>met a jour le rendu au prochain rafraichissement graphique.</td>
+        <td>Type: text scalar, string array, or cell array of text. Valeurs prises en charge: texte vide ou etiquettes correspondant aux graduations, categories, variables, lignes ou valeurs affichees.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Creer l'objet graphique et lister ses proprietes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure('Visible', 'off');
+h = donutchart(f, [1 2 3]);
+names = properties(h);
+close(f)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../../graphics/1_plots/6_discrete_data_plots/donutchart.html">donutchart</a><a class="see-also-link" href="../../../handle/properties.html">properties</a><a class="see-also-link" href="../../../handle/get.html">get</a><a class="see-also-link" href="../../../handle/set.html">set</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">--</td>
+<td>Page de proprietes ajoutee.</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

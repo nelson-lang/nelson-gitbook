@@ -10,19 +10,27 @@ Checks that value is less than another value or issue error.
 
 ## 📥 Input argument
 
-- var - a variable: logical or numeric array.
-- c - a variable: scalar numeric value.
+- var - a variable: array of any type supporting the comparison operator (numeric, logical, char, string, ...). An empty value is always accepted.
+- c - a variable: scalar or array with a size compatible with var (implicit expansion).
 - argPosition - a positive integer value: Position of input argument.
 
 ## 📄 Description
 
 <b>mustBeLessThan</b> checks that value is less than another value or issue error.
 
-## 💡 Example
+## 💡 Examples
 
 ```matlab
 mustBeLessThan(1, 0)
 mustBeLessThan(1, 2)
+```
+
+Compare with an array of compatible size
+
+```matlab
+upper = [5 10 15];
+mustBeLessThan([4 9 14], upper)
+mustBeLessThan([4 9 15], upper)
 ```
 
 ## 🔗 See also
@@ -31,9 +39,10 @@ mustBeLessThan(1, 2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                                                                                        |
+| ------- | --------------------------------------------------------------------------------------------------------------------- |
+| 1.0.0   | initial version                                                                                                       |
+| 2.0.0   | c can be an array with a size compatible with var; inputs are no longer restricted to real numeric or logical values. |
 
 <!--
 ## 👤 Author

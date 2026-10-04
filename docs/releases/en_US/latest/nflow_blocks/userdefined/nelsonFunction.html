@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nelsonFunction</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelsonFunction</span></div></div>
+<div class="section" style="text-align:center;"><img src="./nelsonFunction.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Evaluates a Nelson function at every simulation step.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Block type: nelsonFunction
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">input ports</td>
+<td>1 input port (u, scalar or vector double). An unconnected input reads as 0.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">output ports</td>
+<td>1 output port (scalar or vector double).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Calls the Nelson interpreter at every simulation step to evaluate <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Fcn</code> with the block input <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">u</code>. <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Fcn</code> is a function name (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">sin</code>), an anonymous function source (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">@(u) 2*u</code>) or an expression using <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">u</code> (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">atan2(u(1), u(2))</code>).</p>
+    
+    <p><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">OutputDimensions</code>: -1 inherits the input width (element-wise assumption); set an explicit value when the function changes the signal width. The function is probed once at initialization; a width mismatch stops the simulation with a clear diagnostic, as does any error raised by the function.</p>
+    <p>Because the interpreter is invoked at every step, this block is slower than native blocks. For pure math expressions prefer the <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">expression</code> block, which also generates code.</p>
+    <p>
+      <b>Parameters</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Parameter</th>
+          <th>Default value</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Fcn</code>
+          </td>
+          <td>sin</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">OutputDimensions</code>
+          </td>
+          <td>-1</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">SampleTime</code>
+          </td>
+          <td>-1</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Block Characteristics</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <td>Block type</td>
+          <td>nelsonFunction</td>
+        </tr>
+        <tr>
+          <td>Family</td>
+          <td>User-Defined Function blocks</td>
+        </tr>
+        <tr>
+          <td>Phases</td>
+          <td>INIT, ALGEBRAIC</td>
+        </tr>
+        <tr>
+          <td>Direct feedthrough</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <td>Signal data type</td>
+          <td>double, scalar or vector</td>
+        </tr>
+        <tr>
+          <td>Code generation</td>
+          <td>no (rejected with an explicit error; replace with the expression block)</td>
+        </tr>
+      
+    </table>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/userdefined/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.userdefined",
+  "title": "User-Defined Functions",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-08-02",
+    "tool": "Nelson nflow"
+  },
+  "builtin": true,
+  "comment": "User-defined function blocks",
+  "license": "LGPL-3.0",
+  "blocks": [
+    {
+      "type": "expression",
+      "label": "Expression",
+      "icon": "expression.svg",
+      "phases": [
+        "INIT",
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Expr": "u"
+      },
+      "render": {
+        "type": "math",
+        "formula": "{params.Expr}",
+        "mathGroupClass": "userfunc-math",
+        "textSize": "16px",
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "nelsonFunction",
+      "label": "Nelson Function",
+      "icon": "nelsonFunction.svg",
+      "phases": [
+        "INIT",
+        "ALGEBRAIC"
+      ],
+      "width": 96,
+      "height": 48,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 24,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 96,
+          "y": 24,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Fcn": "sin",
+        "OutputDimensions": "-1",
+        "SampleTime": "-1"
+      },
+      "render": {
+        "type": "math",
+        "formula": "\\mathtt{{params.Fcn}}",
+        "textSize": 14
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/userdefined/nelsonFunction.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include "NelsonWorkspaceBridge.hpp"
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include "userdefined_blocks.hpp"
+//=============================================================================
+// nelsonFunction: evaluates a Nelson function at every simulation step,
+// through the NelsonWorkspaceBridge (the interpreter is never called from
+// this module directly).
+//
+// Fcn is a function name ("sin"), an anonymous function source ("@(u) 2*u")
+// or an expression using u ("atan2(u(1), u(2))"). One input port u
+// (scalar/vector double), one output port, direct feedthrough.
+//
+// The output width is fixed by the signal-layout pass: OutputDimensions -1
+// inherits the INPUT width (element-wise assumption); set an explicit value
+// when the function changes the width. INIT probes the function once with
+// the initial input and fails with a clear diagnostic when the produced
+// width disagrees with the layout.
+//=============================================================================
+namespace {
+//=============================================================================
+std::vector&lt;double&gt;
+gatherInput(Nelson::NFlow::SimCtx&amp; ctx, const Nelson::NFlow::Block&amp; b)
+{
+    using namespace Nelson::NFlow;
+    SigView v = getInputSig(ctx, b.nid, 0);
+    const int w = std::max(1, v.width);
+    std::vector&lt;double&gt; u((size_t)w, 0.0);
+    if (hasInput(ctx, b.nid, 0)) {
+        for (int i = 0; i &lt; w; ++i) {
+            u[i] = sigAt(v, i);
+        }
+    }
+    return u;
+}
+//=============================================================================
+} // namespace
+//=============================================================================
+bool
+Nelson::NFlow::handleNelsonFunction(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    if (phase != Phase::INIT &amp;&amp; phase != Phase::ALGEBRAIC) {
+        return false;
+    }
+    nflow::BlockDescriptor bd(b, ctx.variables);
+    const std::string fcn = bd.paramStr(nflow::kFcn, "sin");
+    const PortSig* ps = portSigOf(ctx, b.nid, 0);
+    const int outW = ps ? ps-&gt;width() : 1;
+
+    if (phase == Phase::INIT) {
+        if (!hasNelsonWorkspaceBridge()) {
+            if (ctx.diag) {
+                SimDiagnostic d;
+                d.code = "nelsonfunction_no_bridge";
+                d.blockId = b.id;
+                d.message = "nelsonFunction block requires the Nelson interpreter "
+                            "(workspace bridge not installed).";
+                d.time = ctx.t;
+                ctx.diag-&gt;fail(d);
+            }
+            return false;
+        }
+        // Probe once with the initial input to validate the function and the
+        // output width chosen by the signal-layout pass.
+        std::vector&lt;double&gt; u = gatherInput(ctx, b);
+        NelsonCallResult probe = callNelsonFunction(fcn, u);
+        if (!probe.ok) {
+            if (ctx.diag) {
+                SimDiagnostic d;
+                d.code = "nelsonfunction_probe_failed";
+                d.blockId = b.id;
+                d.message = "nelsonFunction block '" + fcn + "': " + probe.errorMessage;
+                d.time = ctx.t;
+                ctx.diag-&gt;fail(d);
+            }
+            return false;
+        }
+        if ((int)probe.y.size() != outW) {
+            if (ctx.diag) {
+                SimDiagnostic d;
+                d.code = "nelsonfunction_width_mismatch";
+                d.blockId = b.id;
+                d.message = "nelsonFunction block '" + fcn + "': the width of the result was "
+                    + std::to_string(probe.y.size()) + " when a width of " + std::to_string(outW)
+                    + " was expected (set OutputDimensions accordingly).";
+                d.time = ctx.t;
+                ctx.diag-&gt;fail(d);
+            }
+        }
+        return false;
+    }
+
+    // ALGEBRAIC: direct feedthrough evaluation. A complex input passes both
+    // lanes; a complex result fills the imaginary lane (the output port is
+    // complex whenever the input is, by OR-propagation).
+    std::vector&lt;double&gt; u = gatherInput(ctx, b);
+    std::vector&lt;double&gt; uImag;
+    {
+        SigView v = getInputSig(ctx, b.nid, 0);
+        if (v.isComplex &amp;&amp; v.imag &amp;&amp; v.width &gt; 0) {
+            uImag.resize(u.size(), 0.0);
+            for (size_t i = 0; i &lt; u.size(); ++i) {
+                uImag[i] = (v.width == 1) ? v.imag[0] : v.imag[(int)i];
+            }
+        }
+    }
+    NelsonCallResult res = callNelsonFunction(fcn, u, uImag.empty() ? nullptr : &amp;uImag);
+    if (!res.ok || (int)res.y.size() != outW) {
+        if (ctx.diag) {
+            SimDiagnostic d;
+            d.code = res.ok ? "nelsonfunction_width_mismatch" : "nelsonfunction_call_failed";
+            d.blockId = b.id;
+            d.message = res.ok ? ("nelsonFunction block '" + fcn + "': the width of the result was "
+                                     + std::to_string(res.y.size()) + " when a width of "
+                                     + std::to_string(outW) + " was expected.")
+                               : ("nelsonFunction block '" + fcn + "': " + res.errorMessage);
+            d.time = ctx.t;
+            ctx.diag-&gt;fail(d);
+        }
+        return false;
+    }
+    if (ps &amp;&amp; ps-&gt;isComplex) {
+        return emitElementwiseComplex(ctx, b.nid, [&amp;](int i) {
+            const double im
+                = (res.isComplex &amp;&amp; (size_t)i &lt; res.yImag.size()) ? res.yImag[(size_t)i] : 0.0;
+            return std::complex&lt;double&gt; { res.y[(size_t)i], im };
+        });
+    }
+    if (res.isComplex &amp;&amp; ctx.diag) {
+        SimDiagnostic d;
+        d.code = "nelsonfunction_complex_result";
+        d.blockId = b.id;
+        d.message = "nelsonFunction block '" + fcn
+            + "' returned a complex result on a real output port (feed the block a complex "
+              "input so the port is declared complex).";
+        d.time = ctx.t;
+        ctx.diag-&gt;fail(d);
+        return false;
+    }
+    return emitElementwise(ctx, b.nid, [&amp;](int i) { return res.y[(size_t)i]; });
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Open the user-defined function demo (Nelson Function + Expression)</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks'), '/examples/workspace/Nelson_Function_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/userdefined/expression.html">expression</a><a class="see-also-link" href="../../nflow_blocks/source/fromWorkspace.html">fromWorkspace</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

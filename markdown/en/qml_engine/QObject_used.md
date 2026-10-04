@@ -1,6 +1,6 @@
 # QObject_used
 
-Returns list of current used QObject handle.
+Returns the current valid QObject handles.
 
 ## 📝 Syntax
 
@@ -12,17 +12,11 @@ Returns list of current used QObject handle.
 
 ## 📄 Description
 
-Returns list of current used QObject handle.
+Returns the current valid QObject handles.
 
 ## 💡 Example
 
 ```matlab
-h1 = errordlg()
-h2 = errordlg()
-h3 = errordlg()
-used = QObject_used()delete(used)
-used = QObject_used()
-delete(used)
 used = QObject_used()
 ```
 

@@ -2,6 +2,7 @@
   - [acquirevar](acquirevar.md)
   - [assignin](assignin.md)
   - [clear](clear.md)
+  - [clearvars](clearvars.md)
   - [global](global.md)
   - [isglobal](isglobal.md)
   - [isvar](isvar.md)

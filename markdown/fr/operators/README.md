@@ -8,10 +8,11 @@ Ce module permet une manipulation flexible des structures de données et des tab
 
 ## Functions
 
-- [all](all.md) - all of the elements of a matrix satisfy some condition.
+- [all](all.md) - tous les éléments d'une matrice satisfont une condition.
 - [and](and.md) - opérateur logique 'AND', &
 - [any](any.md) - Vérifie si au moins un élément d'une matrice satisfait une condition.
 - [bitand](bitand.md) - Opération ET bit à bit
+- [bitget](bitget.md) - Retourne des bits selectionnes.
 - [bitor](bitor.md) - Opération OR bit à bit
 - [bitxor](bitxor.md) - Opération XOR bit à bit
 - [cat](cat.md) - Concatène des tableaux.
@@ -25,7 +26,7 @@ Ce module permet une manipulation flexible des structures de données et des tab
 - [ldivide](ldivide.md) - Division gauche, opérateur .\
 - [le](le.md) - inférieur ou égal, opérateur <=
 - [lt](lt.md) - inférieur à, opérateur <
-- [minus](minus.md) - Subtraction, - operator
+- [minus](minus.md) - Soustraction, opérateur -
 - [mldivide](mldivide.md) - Division matricielle gauche, opérateur \
 - [mpower](mpower.md) - Puissance matricielle, opérateur ^
 - [mrdivide](mrdivide.md) - Division matricielle à droite, opérateur /.

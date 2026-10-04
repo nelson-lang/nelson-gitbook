@@ -3,6 +3,7 @@
   - [and](and.md)
   - [any](any.md)
   - [bitand](bitand.md)
+  - [bitget](bitget.md)
   - [bitor](bitor.md)
   - [bitxor](bitxor.md)
   - [cat](cat.md)

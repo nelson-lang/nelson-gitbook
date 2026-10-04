@@ -64,6 +64,10 @@ WI_IN = [ 0.1500; -0.1500];
 
 ```
 
+## 🔗 See also
+
+[slicot_ab01od](../slicot/slicot_ab01od.md), [acker](../control_system/acker.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

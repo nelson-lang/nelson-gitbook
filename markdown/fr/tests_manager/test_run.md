@@ -10,6 +10,7 @@ Exécute les tests
 - status = test_run('-stoponfail')
 - status = test_run(modules)
 - status = test_run(file_to_test)
+- status = test_run(module_name, test_name)
 - status = test_run(modules, '-stoponfail')
 - status = test_run(file_to_test, '-stoponfail')
 - status = test_run(modules, option)
@@ -27,11 +28,13 @@ Exécute les tests
 
 ## 📥 Argument d'entrée
 
-- module_name - a string ou une cellule de chaînes : nom du module ou liste de modules.
-- file_to_test - une string ou une cellule de chaînes : fichier à tester ou liste de noms de fichiers.
-- options - une string ou une cellule de chaînes : options supportées 'all', 'all_tests', 'unitary_tests', 'nonreg_tests' ou 'benchs'.
+- module_name - une chaîne ou une cellule de chaînes : nom du module ou liste de modules. Les cellules sont parcourues dans l'ordre des indices linéaires, y compris les vecteurs ligne et colonne.
+- file_to_test - une chaîne ou une cellule de chaînes : fichier à tester ou liste de noms de fichiers. Les cellules sont parcourues dans l'ordre des indices linéaires, y compris les vecteurs ligne et colonne.
+- test_name - une string ou une cellule de chaines : nom de fichier de test dans le repertoire tests du module. L'extension .m est optionnelle.
+- options - une string ou une cellule de chaînes : options supportées 'all', 'all_tests', 'unitary_tests', 'nonreg_tests' ou 'benchs'. La valeur par défaut est 'all_tests'.
 - xunitfile - une string : nom de fichier pour exporter les résultats en .xml ou .json compatible avec le format Xunit.
 - '-stoponfail' - une string : arrêter l'exécution des tests à la première erreur détectée.
+- 'Launcher', value - paire nom/valeur optionnelle : <b>'default'</b> (défaut) ou <b>'webview'</b> pour exécuter les tests tagués ADV-CLI via <b>nelson-adv-cli --webview</b> (backend figures web/RenderWeb).
 
 ## 📤 Argument de sortie
 
@@ -39,13 +42,21 @@ Exécute les tests
 
 ## 📄 Description
 
-<b>test_run</b> recherche les fichiers 'test\_\*.m', 'bug\_\*.m' et 'bench\_\*.m', les exécute et affiche un rapport sur les succès ou les échecs.
+<b>test_run</b> est un wrapper de compatibilite au dessus de <b>nelson.unittest.run</b>.
 
-Chaque test ou bench est exécuté dans un processus séparé en utilisant la commande 'unix'.
+La paire optionnelle <b>'Launcher', 'webview'</b> peut être placée n'importe où dans la liste d'arguments. Elle route les tests tagués ADV-CLI vers <b>nelson-adv-cli --webview</b>afin que les figures utilisent le backend web headless (RenderWeb) ; les tags CLI et GUI sont inchangés. Le même choix peut être fixé via la variable d'environnement <b>NELSON_UNITTEST_LAUNCHER</b>.
+
+<b>test_run</b> recherche par défaut les fichiers 'test\_\*.m' et 'bug\_\*.m', les exécute et affiche un rapport sur les succès ou les échecs.
+
+Utilisez l'option explicite <b>all</b> pour inclure les fichiers 'bench\_\*.m' ou utilisez <b>bench_run</b> pour exécuter les benchmarks séparément.
+
+Chaque test ou bench est execute par un processus enfant supervise. La reutilisation exige le tag explicite <b><--REUSE PROCESS--></b>.
 
 Cela permet à la commande courante de continuer, même si le test a créé un environnement instable.
 
 Cela permet également aux tests d'être indépendants les uns des autres.
+
+Utilisez <b>test_run(module_name, test_name)</b> pour executer un fichier de test du repertoire tests d'un module.
 
 Certains tags spéciaux peuvent être insérés dans les fichiers .m pour aider au traitement du test correspondant.
 
@@ -116,6 +127,10 @@ Ces tags doivent être trouvés dans les commentaires Nelson :
       </b> This test will be executed if an audio output is available.
 
 <b>
+        <--AUDIO REQUIRED-->
+      </b> This test requires the audio module (its file functions such as audioread and audiowrite) but no physical audio device. The module is loaded even in a test that belongs to another module; the test is not skipped when no audio device is present.
+
+<b>
         <--C/C++ COMPILER REQUIRED-->
       </b> This test will be executed if an C/C++ compiler is available.
 
@@ -151,22 +166,48 @@ Ces tags doivent être trouvés dans les commentaires Nelson :
         <--JULIA ENVIRONMENT REQUIRED-->
       </b> This test will be executed if julia environment is available and configured.
 
+<b>
+        <--REUSE PROCESS-->
+      </b> Ce test ou bench autorise le runner a reutiliser le meme processus enfant pour plusieurs fichiers tagues.
+
+<b>nelson.unittest.tuneReuse</b> audite ces tags avec des campagnes natives isolees et reutilisees. L'ajout exige l'option explicite <b>AllowAdd</b> ; les modifications exigent <b>Apply</b>.
+
+<b>
+        <--WEIGHT N-->
+      </b> Poids positif de planification. La file dynamique demarre les fichiers les plus lourds en premier.
+
+<b>nelson.unittest.tuneWeights</b> peut proposer ou mettre explicitement a jour ces tags depuis les resultats mesures.
+
+<b>
+        <--TIMEOUT N-->
+      </b> Delai d'execution positif par fichier, en secondes, qui remplace le minuteur par defaut pour ce seul fichier. Il ne modifie pas la priorite de planification (c'est <b><--WEIGHT N--></b>). A utiliser pour un test ou un bench legitimement long qui serait sinon interrompu par le minuteur par defaut. L'option globale <b>Timeout</b>, lorsqu'elle est definie, reste prioritaire sur le tag.
+
 Les tests peuvent également être sautés dynamiquement en utilisant la fonction <b>skip_testsuite</b>.
 
-Pour éviter de bloquer l'application, les tests ont un temps d'exécution de 2 minutes et les benchs ont un temps de 6 minutes.
+Pour éviter de bloquer l'application, les tests ont un temps d'exécution de 2 minutes et les benchs ont un temps de 6 minutes, sauf si un tag <b><--TIMEOUT N--></b> fixe une valeur par fichier.
 
-<b>test_run</b> utilise n workers pour exécuter et accélérer l'exécution des tests.
+<b>test_run</b> utilise des workers pour executer les tests. Les fichiers non tagues sont executes dans des processus enfants separes ; les fichiers tagues avec <b><--REUSE PROCESS--></b> peuvent partager un processus enfant.
+
+Les resultats sont affiches progressivement dans un ordre stable. Chaque ligne contient une icone de statut et son temps d'execution au format <b>🟢[ 9.800s]</b>.
 
 Les tests avec<b>
 <--SEQUENTIAL TEST REQUIRED-->
 </b> sont évalués en dernier.
 
-Les benchs sont évalués séquentiellement.
+Les benchs utilisent un worker lorsque cinq threads ou moins sont disponibles, et deux workers sinon.
+
+Pour l'API namespaced, utilisez <b>nelson.unittest.discover</b>, <b>nelson.unittest.select</b>, <b>nelson.unittest.plan</b>, <b>nelson.unittest.run</b>, <b>nelson.unittest.tuneWeights</b>, <b>nelson.unittest.tuneReuse</b> et <b>nelson.unittest.report</b>.
+
+L'executeur interne de fichier de test est prive et n'est pas documente comme fonction utilisateur.
 
 ## 💡 Exemples
 
 ```matlab
 test_run('string');
+```
+
+```matlab
+test_run('string', 'test_strfind')
 ```
 
 ```matlab
@@ -177,9 +218,22 @@ test_run({'string', 'time'})
 test_run({'string', 'time'}, 'all', [tempdir(), 'tests.xml'])
 ```
 
+Calibrer les tags de reutilisation des processus et les poids de planification
+des tests et benches de tous les modules. Une cible vide selectionne tous les modules. Ces commandes
+modifient les fichiers sources.
+
+```matlab
+
+nelson.unittest.tuneReuse([], ...
+  'Trials', 3, 'AllowAdd', true, 'Apply', true);
+nelson.unittest.tuneWeights([], ...
+  'Apply', true, 'Workers', 1);
+
+```
+
 ## 🔗 Voir aussi
 
-[assert](../assert_functions/assert.md), [test_makeref](../tests_manager/test_makeref.md), [skip_testsuite](../tests_manager/skip_testsuite.md).
+[bench_run](../tests_manager/bench_run.md), [assert](../assert_functions/assert.md), [test_makeref](../tests_manager/test_makeref.md), [skip_testsuite](../tests_manager/skip_testsuite.md), [nelson.unittest](../tests_manager/nelson_unittest.md), [nelson.unittest.tuneReuse](../tests_manager/nelson.unittest.tuneReuse.md), [nelson.unittest.tuneWeights](../tests_manager/nelson.unittest.tuneWeights.md).
 
 ## 🕔 Historique
 

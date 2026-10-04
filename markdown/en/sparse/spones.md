@@ -8,20 +8,29 @@ Replaces non zero sparse matrix elements with ones.
 
 ## 📥 Input argument
 
-- S - Sparse or 2D matrix.
+- S - sparse or full 2-D matrix.
 
 ## 📤 Output argument
 
-- S - a sparse matrix.
+- s - a sparse matrix with ones at nonzero positions.
 
 ## 📄 Description
 
 <b>s = spones(S)</b> returns a matrix<b>s</b> with the same sparsity structure as<b>S</b>, but with one's in the nonzero positions.
 
-## 💡 Example
+Double, single, logical, complex double, and complex single sparse inputs are supported. The result is sparse and uses double values except when the sparse numeric input is single, in which case the result keeps class single.
+
+Stored zero values do not become ones; only entries whose value is actually nonzero are kept in the output pattern.
+
+## 💡 Examples
 
 ```matlab
 S = sparse([1,0;3,4]);
+R = spones(S)
+```
+
+```matlab
+S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
 R = spones(S)
 ```
 
@@ -31,9 +40,10 @@ R = spones(S)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                    |
+| ------- | ------------------------------------------------- |
+| 2.0.0   | extended sparse single and complex single support |
+| 1.0.0   | initial version                                   |
 
 <!--
 ## 👤 Author

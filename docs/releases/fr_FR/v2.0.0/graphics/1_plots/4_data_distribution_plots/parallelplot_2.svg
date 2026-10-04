@@ -1,0 +1,56 @@
+<svg width="859.52" height="517.12" viewBox="0 0 1343 808" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1343" height="808" fill="#ffffff"/>
+<rect x="0" y="0" width="1342.19" height="807.812" fill="rgba(255,255,255,1.000000)"/>
+<polyline points="173.438,712.715 1212.5,712.715 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="2.08333"/>
+<polyline points="433.203,694.61 433.203,91.1124 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="2.08333"/>
+<polyline points="433.203,694.61 448.789,694.61 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="389.976" y="700.273" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1</text>
+<polyline points="433.203,634.26 448.789,634.26 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="639.335" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1.2</text>
+<polyline points="433.203,573.911 448.789,573.911 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="579.96" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1.4</text>
+<polyline points="433.203,513.561 448.789,513.561 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="519.023" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1.6</text>
+<polyline points="433.203,453.211 448.789,453.211 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="459.648" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">1.8</text>
+<polyline points="433.203,392.861 448.789,392.861 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="389.976" y="398.71" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2</text>
+<polyline points="433.203,332.511 448.789,332.511 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="337.773" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2.2</text>
+<polyline points="433.203,272.162 448.789,272.162 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="278.398" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2.4</text>
+<polyline points="433.203,211.812 448.789,211.812 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="217.46" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2.6</text>
+<polyline points="433.203,151.462 448.789,151.462 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="372.601" y="156.523" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">2.8</text>
+<polyline points="433.203,91.1124 448.789,91.1124 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="389.976" y="97.1476" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">3</text>
+<text x="425.865" y="758.085" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">A</text>
+<polyline points="952.734,694.61 952.734,91.1124 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="2.08333"/>
+<polyline points="937.148,694.61 952.734,694.61 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="700.273" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4</text>
+<polyline points="937.148,634.26 952.734,634.26 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="639.335" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4.2</text>
+<polyline points="937.148,573.911 952.734,573.911 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="579.96" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4.4</text>
+<polyline points="937.148,513.561 952.734,513.561 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="519.023" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4.6</text>
+<polyline points="937.148,453.211 952.734,453.211 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="459.648" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">4.8</text>
+<polyline points="937.148,392.861 952.734,392.861 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="398.71" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">5</text>
+<polyline points="937.148,332.511 952.734,332.511 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="337.773" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">5.2</text>
+<polyline points="937.148,272.162 952.734,272.162 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="278.398" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">5.4</text>
+<polyline points="937.148,211.812 952.734,211.812 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="217.46" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">5.6</text>
+<polyline points="937.148,151.462 952.734,151.462 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="156.523" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">5.8</text>
+<polyline points="937.148,91.1124 952.734,91.1124 " fill="none" stroke="rgba(63,63,63,1.000000)" stroke-width="1.04167"/>
+<text x="982.812" y="97.1476" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">6</text>
+<text x="944.615" y="758.085" fill="rgba(33,33,33,1.000000)" font-size="20.8333" font-family="sans-serif" text-anchor="start">B</text>
+<polyline points="433.203,694.61 952.734,694.61 " fill="none" stroke="rgba(16,112,189,1.000000)" stroke-width="2.08333"/>
+<polyline points="433.203,392.861 952.734,392.861 " fill="none" stroke="rgba(16,112,189,1.000000)" stroke-width="2.08333"/>
+<polyline points="433.203,91.1124 952.734,91.1124 " fill="none" stroke="rgba(220,83,0,1.000000)" stroke-width="2.08333"/>
+</svg>

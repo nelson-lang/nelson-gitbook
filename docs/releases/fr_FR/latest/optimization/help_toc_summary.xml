@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>optimization</module>
+    <section name="Optimization">
+      <chapter_description>
+    <p>Le module Optimization fournit la minimisation scalaire, la minimisation sans contrainte, la recherche de zéro, les systèmes non linéaires, les moindres carrés non linéaires, les moindres carrés non négatifs, la programmation quadratique, les options de solveurs et une première couche de modélisation par problème.</p>
+    <p>Les algorithmes fournis sont des méthodes numériques denses déterministes pour des modèles de petite et moyenne taille dans Nelson.</p>
+  </chapter_description>
+      <keyword name="optimization tutorial" link="1_optimization_tutorial.html" description="Tutoriel du module optimization."/>
+      <keyword name="evaluate" link="evaluate.html" description="Évaluer une expression d'optimization."/>
+      <keyword name="fcn2optimexpr" link="fcn2optimexpr.html" description="Convertir une fonction en expression d'optimization."/>
+      <keyword name="fminbnd" link="fminbnd.html" description="Minimisation scalaire bornée."/>
+      <keyword name="fmincon" link="fmincon.html" description="Minimisation non linéaire contrainte."/>
+      <keyword name="fminsearch" link="fminsearch.html" description="Minimisation sans dérivée et sans contrainte."/>
+      <keyword name="fminunc" link="fminunc.html" description="Minimisation non linéaire sans contrainte."/>
+      <keyword name="fsolve" link="fsolve.html" description="Résoudre un système d'équations non linéaires."/>
+      <keyword name="fzero" link="fzero.html" description="Zéro d'une fonction scalaire."/>
+      <keyword name="intlinprog" link="intlinprog.html" description="Programmation linéaire mixte en nombres entiers."/>
+      <keyword name="linprog" link="linprog.html" description="Programmation linéaire."/>
+      <keyword name="lsqcurvefit" link="lsqcurvefit.html" description="Ajustement de courbe par moindres carres."/>
+      <keyword name="lsqnonlin" link="lsqnonlin.html" description="Moindres carrés non linéaires."/>
+      <keyword name="lsqnonneg" link="lsqnonneg.html" description="Moindres carrés linéaires non négatifs."/>
+      <keyword name="optim.options.SolverOptions" link="optim.options.SolverOptions.html" description="Objet d'options de solveur."/>
+      <keyword name="optim.problemdef.OptimizationConstraint" link="optim.problemdef.OptimizationConstraint.html" description="Contraintes d'optimisation."/>
+      <keyword name="optim.problemdef.OptimizationExpression" link="optim.problemdef.OptimizationExpression.html" description="Expression d'optimisation."/>
+      <keyword name="optim.problemdef.OptimizationProblem" link="optim.problemdef.OptimizationProblem.html" description="Objet probleme d'optimisation."/>
+      <keyword name="optim.problemdef.OptimizationVariable" link="optim.problemdef.OptimizationVariable.html" description="Variable pour expressions d'optimisation."/>
+      <keyword name="optimconstr" link="optimconstr.html" description="Créer une contrainte d'optimization."/>
+      <keyword name="optimexpr" link="optimexpr.html" description="Créer une expression d'optimization."/>
+      <keyword name="optimget" link="optimget.html" description="Lire la valeur d'une option d'optimization."/>
+      <keyword name="optimoptions" link="optimoptions.html" description="Créer des options de solveur."/>
+      <keyword name="optimproblem" link="optimproblem.html" description="Créer un objet problème d'optimization."/>
+      <keyword name="optimset" link="optimset.html" description="Créer ou modifier des structures d'options d'optimization."/>
+      <keyword name="optimvar" link="optimvar.html" description="Créer des variables d'optimization."/>
+      <keyword name="prob2struct" link="prob2struct.html" description="Convertir un problème d'optimisation en structure de solveur."/>
+      <keyword name="quadprog" link="quadprog.html" description="Programmation quadratique."/>
+      <keyword name="show" link="show.html" description="Afficher un objet d'optimization."/>
+      <keyword name="solve" link="solve.html" description="Résoudre un objet problème d'optimization."/>
+    </section>
+  </toc>
+</help_summary>

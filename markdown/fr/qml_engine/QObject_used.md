@@ -17,12 +17,6 @@ Renvoie la liste des poignées (handles) QObject actuellement utilisées.
 ## 💡 Exemple
 
 ```matlab
-h1 = errordlg()
-h2 = errordlg()
-h3 = errordlg()
-used = QObject_used()delete(used)
-used = QObject_used()
-delete(used)
 used = QObject_used()
 ```
 

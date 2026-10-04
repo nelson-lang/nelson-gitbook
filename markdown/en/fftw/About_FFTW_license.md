@@ -16,7 +16,7 @@ If you distribute a derived or combined work, i.e. a program that links to and i
 
 On Windows platforms, MKL FFTW implementation is used and distributed with Nelson.
 
-On others plaforms, if FFTW library is available, and user chooses to use it, distribution falls under the terms of the GPL.
+On others platforms, if FFTW library is available, and user chooses to use it, distribution falls under the terms of the GPL.
 
 ## 🔗 See also
 

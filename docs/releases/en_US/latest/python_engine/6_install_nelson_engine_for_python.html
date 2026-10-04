@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Install Nelson Engine API for Python</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Install Nelson Engine API for Python</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Install the Python package that provides nelson.engine.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">python -m pip install path/to/nelson/modules/python_engine/resources/python
+python -m pip install --no-build-isolation path/to/nelson/modules/python_engine/resources/python
+python -m pip install -e path/to/nelson/modules/python_engine/resources/python
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      The Nelson Engine API for Python is distributed as a Python package named
+      <b>nelson</b>. It provides <b>nelson.engine</b> and the Nelson-compatible
+      Python array classes.</p>
+    <p>
+      Install the package into the Python environment that will call Nelson. From
+      a Nelson source or build tree, the package directory is
+      <b>modules/python_engine/resources/python</b>.</p>
+    <p>
+      The Python package contains the Python API only. The native Nelson engine
+      library must still be available from a Nelson installation or build output.
+      If automatic discovery fails, set <b>NELSON_ROOT</b> to the Nelson root
+      directory, or set <b>NELSON_ENGINE_LIBRARY</b> to the full path of the
+      engine library.</p>
+    <p>
+      On Windows build trees, the engine library is commonly
+      <b>bin/x64/libnlsEngine.dll</b>. On Linux it is commonly
+      <b>libnlsEngine.so</b>, and on macOS it is commonly
+      <b>libnlsEngine.dylib</b>.</p>
+    <p>
+      Optional packages such as NumPy and pandas are not required to import the
+      engine package, but they enable higher fidelity conversion for arrays and
+      tables.</p>
+    <p>
+      If the Python environment has no network access during installation, first
+      ensure that <b>setuptools</b> and <b>wheel</b> are already installed, then
+      use <b>--no-build-isolation</b> so pip does not try to download build
+      dependencies into a temporary build environment.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Install from a Windows Nelson build tree.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">cd D:\Developpements\Github\nelson-lang\nelson
+python -m pip install .\modules\python_engine\resources\python</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Install in editable mode for development.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">cd D:\Developpements\Github\nelson-lang\nelson
+python -m pip install -e .\modules\python_engine\resources\python</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Install without build isolation in an offline environment.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">python -m pip install setuptools wheel
+cd D:\Developpements\Github\nelson-lang\nelson
+python -m pip install --no-build-isolation .\modules\python_engine\resources\python</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use the installed package from another folder.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">$env:NELSON_ROOT = "D:\Developpements\Github\nelson-lang\nelson"
+python -c "import nelson.engine; eng = nelson.engine.start_nelson(); print(eng.sqrt(4.0)); eng.quit()"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Point directly to the engine library.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">$env:NELSON_ENGINE_LIBRARY = "D:\Developpements\Github\nelson-lang\nelson\bin\x64\libnlsEngine.dll"
+python -c "import nelson.engine; eng = nelson.engine.start_nelson(); print(eng.sqrt(4.0)); eng.quit()"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Install and use the package on Linux or macOS.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">python -m pip install /path/to/nelson/modules/python_engine/resources/python
+export NELSON_ROOT=/path/to/nelson
+python -c "import nelson.engine; eng = nelson.engine.start_nelson(); print(eng.sqrt(4.0)); eng.quit()"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Install optional conversion dependencies.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">python -m pip install numpy pandas</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../python_engine/5_call_nelson_from_python.html">Call Nelson from Python</a><a class="see-also-link" href="../python_engine/pyenv.html">pyenv</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Nelson Engine API for Python installation help added.</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>codeAnalyzerRules</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">codeAnalyzerRules</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Identifiants des diagnostics de l'analyseur de code.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Cette page liste les identifiants de diagnostics signales par <b>checkcode</b>, <b>codeIssues</b> et <b>nelson-lint</b>.</p>
+    <p>Chaque identifiant est stable et peut etre utilise dans les fichiers de configuration ou dans les suppressions locales comme <b>%#ok&lt;NLS0004&gt;</b>.</p>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Niveau par defaut</th>
+        <th>Categorie</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>NLS0001</td>
+        <td>error</td>
+        <td>Syntax</td>
+        <td>Erreur de syntaxe, lexique, entree ou lecture. Le fichier source ne peut pas etre analyse ou ne peut pas etre lu.</td>
+      </tr>
+      <tr>
+        <td>NLS0002</td>
+        <td>warning</td>
+        <td>Naming</td>
+        <td>Le nom de la fonction principale ou de la classe differe du nom du fichier source.</td>
+      </tr>
+      <tr>
+        <td>NLS0003</td>
+        <td>warning</td>
+        <td>Flow</td>
+        <td>Du code place apres <b>return</b>, <b>break</b> ou <b>continue</b> est inaccessible dans le bloc courant.</td>
+      </tr>
+      <tr>
+        <td>NLS0004</td>
+        <td>info</td>
+        <td>Dataflow</td>
+        <td>Une variable locale est assignee mais n'est jamais reutilisee ensuite. L'analyseur ignore le texte dans les commentaires et les chaines de caracteres, ne compte pas la partie gauche d'une affectation comme une utilisation, et ignore cette regle lorsque des affectations dynamiques rendent le flux local ambigu.</td>
+      </tr>
+      <tr>
+        <td>NLS0005</td>
+        <td>warning</td>
+        <td>Dataflow</td>
+        <td>Une variable locale est utilisee avant sa premiere affectation locale dans un cas simple et conservateur.</td>
+      </tr>
+      <tr>
+        <td>NLS0006</td>
+        <td>warning</td>
+        <td>Dataflow</td>
+        <td>Un argument de sortie declare n'est pas assigne par le corps de la fonction.</td>
+      </tr>
+      <tr>
+        <td>NLS0007</td>
+        <td>info</td>
+        <td>Dataflow</td>
+        <td>Un argument d'entree n'est jamais utilise par le corps de la fonction.</td>
+      </tr>
+      <tr>
+        <td>NLS0008</td>
+        <td>warning</td>
+        <td>Flow</td>
+        <td>Un bloc vide semble probablement involontaire.</td>
+      </tr>
+      <tr>
+        <td>NLS0009</td>
+        <td>warning</td>
+        <td>Flow</td>
+        <td>Une condition est une valeur constante triviale comme <b>true</b>, <b>false</b>, <b>1</b> ou <b>0</b>.</td>
+      </tr>
+      <tr>
+        <td>NLS0010</td>
+        <td>warning</td>
+        <td>Style</td>
+        <td>Une ligne se termine par des espaces inutiles. Ce diagnostic est corrigeable trivialement.</td>
+      </tr>
+      <tr>
+        <td>NLS0011</td>
+        <td>warning</td>
+        <td>Style</td>
+        <td>Le fichier ne se termine pas par une nouvelle ligne. Ce diagnostic est corrigeable trivialement.</td>
+      </tr>
+      <tr>
+        <td>NLS0012</td>
+        <td>warning</td>
+        <td>Style</td>
+        <td>Une ligne depasse la longueur maximale configuree.</td>
+      </tr>
+      <tr>
+        <td>NLS0013</td>
+        <td>error</td>
+        <td>Repository</td>
+        <td>Un terme interdit par les regles du depot apparait dans le code source ou l'aide.</td>
+      </tr>
+      <tr>
+        <td>NLS0014</td>
+        <td>warning ou error</td>
+        <td>Metrics</td>
+        <td>La complexite cyclomatique depasse le seuil configure.</td>
+      </tr>
+      <tr>
+        <td>NLS0015</td>
+        <td>warning ou error</td>
+        <td>Metrics</td>
+        <td>La complexite cyclomatique modifiee depasse le seuil configure.</td>
+      </tr>
+      <tr>
+        <td>NLS0016</td>
+        <td>error</td>
+        <td>Security</td>
+        <td>La ligne source contient un caractere de formatage directionnel invisible.</td>
+      </tr>
+      <tr>
+        <td>NLS0017</td>
+        <td>info</td>
+        <td>Readability</td>
+        <td>Un appel d'affichage encapsule <b>sprintf</b>. Preferer une sortie formatee directe pour un code plus clair.</td>
+      </tr>
+      <tr>
+        <td>NLS0018</td>
+        <td>info</td>
+        <td>Readability</td>
+        <td>Un appel de diagnostic encapsule <b>sprintf</b>. Preferer le passage direct des arguments formates.</td>
+      </tr>
+      <tr>
+        <td>NLS0019</td>
+        <td>error</td>
+        <td>Config</td>
+        <td>Le fichier de configuration de l'analyseur de code est invalide.</td>
+      </tr>
+      <tr>
+        <td>NLS0020</td>
+        <td>warning</td>
+        <td>Metrics</td>
+        <td>Un fichier depasse le nombre maximal de lignes configure.</td>
+      </tr>
+      <tr>
+        <td>NLS0021</td>
+        <td>warning</td>
+        <td>Metrics</td>
+        <td>Une fonction depasse le nombre maximal de lignes configure.</td>
+      </tr>
+      <tr>
+        <td>NLS0022</td>
+        <td>warning</td>
+        <td>Security</td>
+        <td>Un appel dynamique de code ou une mutation de workspace dangereuse est utilise. Les appels <b>load</b> simples en forme commande peuvent proposer une suggestion non sure pour capturer les donnees chargees dans une structure.</td>
+      </tr>
+      <tr>
+        <td>NLS0023</td>
+        <td>info</td>
+        <td>Dataflow</td>
+        <td>Une fonction locale n'est jamais appelee dans son fichier.</td>
+      </tr>
+      <tr>
+        <td>NLS0024</td>
+        <td>warning</td>
+        <td>Dataflow</td>
+        <td>Une variable locale masque une fonction locale du meme fichier.</td>
+      </tr>
+      <tr>
+        <td>NLS0025</td>
+        <td>warning</td>
+        <td>Numeric</td>
+        <td>Un litteral flottant est compare avec une egalite exacte.</td>
+      </tr>
+      <tr>
+        <td>NLS0026</td>
+        <td>warning ou error</td>
+        <td>Metrics</td>
+        <td>La complexite cognitive depasse le seuil configure.</td>
+      </tr>
+      <tr>
+        <td>NLS0027</td>
+        <td>allow par defaut</td>
+        <td>Documentation</td>
+        <td>Une fonction publique ou une classe n'a pas de commentaire d'aide. Ce diagnostic peut inserer un squelette de commentaire d'aide.</td>
+      </tr>
+      <tr>
+        <td>NLS0028</td>
+        <td>warning</td>
+        <td>Dataflow</td>
+        <td>Une variable de fonction imbriquee masque un symbole d'une portee parente.</td>
+      </tr>
+      <tr>
+        <td>NLS0029</td>
+        <td>warning</td>
+        <td>Dataflow</td>
+        <td>Une variable locale masque un symbole importe.</td>
+      </tr>
+      <tr>
+        <td>NLS0030</td>
+        <td>info</td>
+        <td>Dataflow</td>
+        <td>Un symbole importe n'est jamais utilise.</td>
+      </tr>
+      <tr>
+        <td>NLS0031</td>
+        <td>warning</td>
+        <td>Classdef</td>
+        <td>Une propriete de classe est declaree plusieurs fois dans la meme classe.</td>
+      </tr>
+      <tr>
+        <td>NLS0032</td>
+        <td>warning</td>
+        <td>Classdef</td>
+        <td>Une methode de classe est declaree plusieurs fois dans la meme classe.</td>
+      </tr>
+      <tr>
+        <td>NLS0033</td>
+        <td>warning</td>
+        <td>Classdef</td>
+        <td>Un evenement de classe est declare plusieurs fois dans la meme classe.</td>
+      </tr>
+      <tr>
+        <td>NLS0034</td>
+        <td>warning</td>
+        <td>Dataflow</td>
+        <td>Une variable locale ou un argument masque un nom de fonction builtin.</td>
+      </tr>
+      <tr>
+        <td>NLS0035</td>
+        <td>warning</td>
+        <td>Classdef</td>
+        <td>Une variable ou un argument de methode masque un nom de propriete de classe.</td>
+      </tr>
+      <tr>
+        <td>NLS0036</td>
+        <td>info</td>
+        <td>Dataflow</td>
+        <td>Une affectation locale masque un nom d'argument d'entree.</td>
+      </tr>
+      <tr>
+        <td>NLS0037</td>
+        <td>warning</td>
+        <td>Classdef</td>
+        <td>Une superclasse est listee plusieurs fois dans la meme classe.</td>
+      </tr>
+      <tr>
+        <td>NLS0038</td>
+        <td>warning</td>
+        <td>Classdef</td>
+        <td>Un attribut de classe est liste plusieurs fois dans la meme classe.</td>
+      </tr>
+    </table>
+    <p>Les niveaux des regles peuvent etre changes avec l'objet <b>rules</b> de <b>nelson-lint.json</b>. Les fichiers de configuration version 2 doivent declarer <b>"version": 2</b>. Les niveaux acceptes sont <b>allow</b>, <b>info</b>, <b>warning</b> et <b>error</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Supprimer un diagnostic de variable locale volontairement inutilisee.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">%#ok&lt;NLS0004&gt;
+temporaryValue = computeExpensiveValue();</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>checkcode, codeIssues, nelson-lint</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

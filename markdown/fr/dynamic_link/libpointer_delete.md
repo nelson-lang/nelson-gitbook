@@ -20,7 +20,7 @@ N'oubliez pas de nettoyer la variable h ensuite.
 ## 💡 Exemple
 
 ```matlab
-libpointer_used(),delete(libpointer_used())
+used = libpointer_used()
 ```
 
 ## 🔗 Voir aussi

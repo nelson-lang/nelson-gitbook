@@ -1,0 +1,686 @@
+# detectChange
+
+<p align="center">
+<img src="detectChange.svg"/>
+</p>
+Outputs 1 on any step where the input differs from the previous step.
+
+## 📝 Syntax
+
+- Block type: detectChange
+
+## 📥 Input argument
+
+- input ports - 1 input port(s) declared.
+
+## 📤 Output argument
+
+- output ports - 1 output port(s) declared.
+
+## 📄 Description
+
+Outputs 1 on any step where the input differs from the previous step.
+
+| Field   | Value                     |
+| ------- | ------------------------- |
+| Module  | <code>nflow_blocks</code> |
+| Library | Discrete                  |
+| Type    | <code>detectChange</code> |
+| Label   | Detect Change             |
+
+<b>Description</b>
+
+Outputs 1 on any step whose input differs from its value at the previous step, else 0. <code>InitialCondition</code> seeds the value "before" the first step. Stateful (the previous input is held); element-wise over a vector input.
+
+<b>Ports</b>
+
+<b>Input(s)</b>
+
+| Port   | Role                              | Side | Position  |
+| ------ | --------------------------------- | ---- | --------- |
+| Port_1 | Numeric signal read by the block. | left | x=0, y=40 |
+
+<b>Output(s)</b>
+
+| Port   | Role                                  | Side  | Position   |
+| ------ | ------------------------------------- | ----- | ---------- |
+| Port_1 | Numeric signal produced by the block. | right | x=80, y=40 |
+
+<b>Parameters</b>
+
+| Parameter                     | Default value |
+| ----------------------------- | ------------- |
+| <code>InitialCondition</code> | 0             |
+
+<b>Block Characteristics</b>
+
+| Field                     | Value                 |
+| ------------------------- | --------------------- |
+| Block type                | detectChange          |
+| Family                    | Discrete              |
+| Rendered size             | 80 x 80               |
+| Phases                    | INIT, OUTPUT, UPDATE  |
+| Internal state or history | yes                   |
+| Signal data type          | double numeric values |
+
+<b>Algorithms</b>
+
+- OUTPUT: out = (u != prev) ? 1 : 0. UPDATE: prev = u.
+
+<b>Equation or Rule</b>
+$$y_k = [\,u_k \neq u_{k-1}\,]$$
+
+<b>Extended Capabilities</b>
+
+Code generation: supported for C and Rust.
+
+<b>Implementation Sources</b>
+
+<details>
+<summary>Manifest: <code>modules/nflow_blocks/libraries/discrete/library.json</code></summary>
+
+```json
+{
+  "id": "builtin.discrete",
+  "title": "Discrete",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Blocks for discrete-time systems",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "zoh",
+      "label": "ZOH",
+      "icon": "zoh.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "zoh.svg"
+      }
+    },
+    {
+      "type": "foh",
+      "label": "FOH",
+      "icon": "foh.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "foh.svg"
+      }
+    },
+    {
+      "type": "dtf",
+      "icon": "dtf.svg",
+      "label": "Discrete TF",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Numerator": [1],
+        "Denominator": [1, -0.5],
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "dtf.svg"
+      }
+    },
+    {
+      "type": "ddelay",
+      "icon": "ddelay.svg",
+      "label": "Discrete Delay",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DelayLength": 1,
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "ddelay.svg"
+      }
+    },
+    {
+      "type": "dstateSpace",
+      "icon": "dstateSpace.svg",
+      "label": "Discrete State-Space",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "dstateSpace.svg"
+      }
+    },
+    {
+      "type": "unitDelay",
+      "label": "Unit Delay",
+      "icon": "unitDelay.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/unitDelay.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "rateTransition",
+      "label": "Rate Transition",
+      "icon": "rateTransition.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutPortSampleTime": -1,
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/rateTransition.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "difference",
+      "label": "Difference",
+      "icon": "difference.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "ICPrevInput": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/difference.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "detectChange",
+      "label": "Detect Change",
+      "icon": "detectChange.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/detectChange.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "detectIncrease",
+      "label": "Detect Increase",
+      "icon": "detectIncrease.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/detectIncrease.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "detectDecrease",
+      "label": "Detect Decrease",
+      "icon": "detectDecrease.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/detectDecrease.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "risingEdge",
+      "label": "Rising Edge",
+      "icon": "risingEdge.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      }
+    },
+    {
+      "type": "fallingEdge",
+      "label": "Falling Edge",
+      "icon": "fallingEdge.svg",
+      "phases": ["INIT", "OUTPUT", "UPDATE"],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      }
+    }
+  ]
+}
+```
+
+</details>
+
+
+<details>
+<summary>Runtime: <code>modules/nflow_blocks/src/cpp/discrete/detectChange.cpp</code></summary>
+
+```cpp
+//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include <cmath>
+#include <algorithm>
+#include "discrete_blocks.hpp"
+//=============================================================================
+// detectChange: output 1.0 on any step where the input differs from its value
+// at the previous step, else 0.0 (Detect Change behavior). Stateful: the
+// previous input is held in the block state; InitialCondition seeds the "value
+// before the first step". Element-wise for a vector input.
+//=============================================================================
+bool
+Nelson::NFlow::handleDetectChange(SimCtx& ctx, const Block& b, Phase phase)
+{
+    auto& st = getState(ctx, b.nid);
+    const int w = outputWidth(ctx, b.nid, 0);
+    if (phase == Phase::INIT) {
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double ic = bd.paramDouble(nflow::kInitial, 0.0);
+        if (w <= 1) {
+            st.scalar = ic;
+            st.output = 0.0;
+        } else {
+            st.vec.assign(w, ic);
+            st.outLatch.assign(w, 0.0);
+        }
+        return false;
+    }
+    if (phase == Phase::ALGEBRAIC) {
+        // Direct-feedthrough: the output reads the CURRENT input, so it is
+        // produced in the topologically-ordered ALGEBRAIC phase (not the
+        // declaration-ordered OUTPUT phase, where a block declared ahead of its
+        // source would sample a not-yet-computed input). Recomputed on every
+        // committed sample; a pure rhs / zero-crossing sub-step (sideEffectFree)
+        // replays the last held value (zero-order hold). Under a slower
+        // SampleTime the output is still recomputed every base step (exempt from
+        // the sub-rate hold); only st.scalar / st.vec advance on the sample hit
+        // in UPDATE.
+        if (!ctx.sideEffectFree) {
+            if (w <= 1) {
+                const double inp = getInput(ctx, b.nid, 0, 0.0);
+                st.output = (inp != st.scalar) ? 1.0 : 0.0;
+            } else {
+                SigView u = getInputSig(ctx, b.nid, 0);
+                if ((int)st.outLatch.size() != w) {
+                    st.outLatch.assign(w, 0.0);
+                }
+                for (int i = 0; i < w; ++i) {
+                    const double prev = (i < (int)st.vec.size()) ? st.vec[i] : 0.0;
+                    st.outLatch[i] = (sigAt(u, i) != prev) ? 1.0 : 0.0;
+                }
+            }
+        }
+        if (w <= 1) {
+            setOutput(ctx, b.nid, st.output);
+        } else {
+            double* y = outputSlice(ctx, b.nid, 0);
+            for (int i = 0; i < w; ++i) {
+                y[i] = (i < (int)st.outLatch.size()) ? st.outLatch[i] : 0.0;
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::UPDATE) {
+        if (w <= 1) {
+            st.scalar = getInput(ctx, b.nid, 0, 0.0);
+        } else {
+            SigView u = getInputSig(ctx, b.nid, 0);
+            if ((int)st.vec.size() != w) {
+                st.vec.assign(w, 0.0);
+            }
+            for (int i = 0; i < w; ++i) {
+                st.vec[i] = sigAt(u, i);
+            }
+        }
+        return false;
+    }
+    return false;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCDetectChange()
+{
+    BlockCodegenTemplate t;
+    t.emitState = [](const BlockCodegenStateArgs& a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        a.addState(
+            "dc_prev_" + a.id, nflow::formatNumber(bd.paramDouble(nflow::kInitial, 0.0)), "");
+    };
+    t.emitStep = [](const BlockCodegenArgs& a) {
+        a.line("out_" + a.id + " = (" + a.in[0] + " != s->dc_prev_" + a.id + ") ? 1.0 : 0.0;");
+        const int rate = codegenSampleRate(a.params, a.dt);
+        const std::string upd = "s->dc_prev_" + a.id + " = " + a.in[0] + ";";
+        if (rate > 1) {
+            a.line("if (__nflow_step % " + std::to_string(rate) + " == 0) " + upd);
+        } else {
+            a.line(upd);
+        }
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustDetectChange()
+{
+    BlockCodegenTemplate t;
+    t.emitState = [](const BlockCodegenStateArgs& a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        a.addState("dc_prev_" + a.id, a.fmt(bd.paramDouble(nflow::kInitial, 0.0)), "");
+    };
+    t.emitStep = [](const BlockCodegenArgs& a) {
+        a.line("out_" + a.id + " = if " + a.in[0] + " != s.dc_prev_" + a.id
+            + " { 1.0_f64 } else { 0.0_f64 };");
+        const int rate = codegenSampleRate(a.params, a.dt);
+        const std::string upd = "s.dc_prev_" + a.id + " = " + a.in[0] + ";";
+        if (rate > 1) {
+            a.line("if __nflow_step % " + std::to_string(rate) + " == 0 { " + upd + " }");
+        } else {
+            a.line(upd);
+        }
+    };
+    return t;
+}
+//=============================================================================
+
+```
+
+</details>
+
+## 💡 Example
+
+Detect that a ramp changes every step (1 after the first sample).
+
+```matlab
+d.blocks={ struct('id','r','type','ramp','inputs',0,'outputs',1,'params',struct('slope',1)), struct('id','dc','type','detectChange','inputs',1,'outputs',1,'params',struct('InitialCondition',0)), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','r','to','dc','fromIndex',0,'toIndex',0), struct('from','dc','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.1; d.duration=1.0; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));
+```
+
+## 🔗 See also
+
+[detectIncrease](../../nflow_blocks/discrete/detectIncrease.md), [detectDecrease](../../nflow_blocks/discrete/detectDecrease.md), [risingEdge](../../nflow_blocks/discrete/risingEdge.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
+| ------- | --------------- |
+| 1.0.0   | initial version |
+
+<!--
+## 👤 Author
+
+Allan CORNET
+-->

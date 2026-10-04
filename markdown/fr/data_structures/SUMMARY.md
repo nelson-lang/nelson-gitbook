@@ -10,6 +10,7 @@
   - [getfield](getfield.md)
   - [iscellstr](iscellstr.md)
   - [isfield](isfield.md)
+  - [mat2cell](mat2cell.md)
   - [namedargs2cell](namedargs2cell.md)
   - [num2cell](num2cell.md)
   - [orderfields](orderfields.md)
@@ -18,3 +19,4 @@
   - [setfield](setfield.md)
   - [struct](struct.md)
   - [struct2cell](struct2cell.md)
+  - [structfun](structfun.md)

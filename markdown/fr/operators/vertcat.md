@@ -36,6 +36,13 @@ B = 'son';
 C = vertcat(A, B)
 ```
 
+Concatener des caracteres et nombres comme codes caractere.
+
+```matlab
+C = [char(65); 1];
+double(C)
+```
+
 ## 🔗 Voir aussi
 
 [horzcat](../operators/horzcat.md), [cat](../operators/cat.md).

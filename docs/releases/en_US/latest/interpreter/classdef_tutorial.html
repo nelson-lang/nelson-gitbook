@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>classdef tutorial</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">classdef tutorial</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Step-by-step classdef tutorial.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">classdef ClassName, properties, methods, end
+classdef SubClass &lt; SuperClass
+classdef HandleClass &lt; handle
+classdef MyClass &lt; handle &amp; nelson.mixin.Copyable
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      A <b>classdef</b> file defines a class template. The file contains one class definition and the file name must match the class name.</p>
+    <p>
+      A class definition can contain <b>properties</b>, <b>methods</b>, <b>events</b>, and <b>enumeration</b> blocks. Properties hold object state. Methods implement behavior. Events and listeners are used by handle classes that notify other code when something changes.</p>
+    <p>
+      Value classes copy their data when assigned. Handle classes inherit from <b>handle</b> and use reference semantics, so two variables can refer to the same object.</p>
+    <p>
+      Nelson also provides lightweight mixin classes under <b>nelson.mixin</b>. <b>nelson.mixin.Copyable</b> adds a shallow <b>copy</b> method for handle classes. <b>nelson.mixin.CustomDisplay</b> routes scalar display through a protected <b>displayScalarObject</b> method when the class defines one.</p>
+    <p>
+      Property declarations can include a default value, fixed-size and type validation, and validator functions. Accessor methods named <b>get.PropertyName</b> and <b>set.PropertyName</b> implement computed or validated property access. <b>Dependent</b> properties are not stored; <b>Transient</b> properties are not persisted; <b>NonCopyable</b> handle properties are reset by the copy mixin.</p>
+    <p>
+      The generated static method <b>ClassName.empty(...)</b> creates typed empty arrays. Indexed expansion initializes missing value-class elements with default property values and missing handle-class elements with distinct default handles.</p>
+    <p>
+      <b>saveObjectImpl</b> and static <b>loadObjectImpl</b> customize persistence. For non-empty arrays they run element by element. Empty arrays keep their type and size without invoking scalar hooks, and handle arrays are checked for invalid elements before save hooks run.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Create a first value class in a file named MyClass.m.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef MyClass
+  properties
+    Value
+  end
+
+  methods
+    function obj = MyClass(val)
+      if nargin &gt; 0
+        obj.Value = val;
+      end
+    end
+  end
+end
+
+a = MyClass(42);
+disp(a.Value)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use private storage and a dependent property.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Person
+  properties (Access = private)
+    AgeInternal = 0
+  end
+
+  properties
+    Name (1,1) string = ""
+  end
+
+  properties (Dependent)
+    Age
+  end
+
+  methods
+    function obj = Person(name, age)
+      if nargin &gt; 0
+        obj.Name = name;
+        obj.AgeInternal = age;
+      end
+    end
+
+    function v = get.Age(obj)
+      v = obj.AgeInternal;
+    end
+  end
+end
+
+p = Person("Ada", 31);
+p.Age</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Inherit from a superclass and call its constructor and method.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Vehicle
+  properties
+    Name (1,1) string = "vehicle"
+  end
+
+  methods
+    function obj = Vehicle(name)
+      if nargin &gt; 0
+        obj.Name = name;
+      end
+    end
+
+    function start(obj)
+      fprintf("%s started\n", obj.Name);
+    end
+  end
+end
+
+classdef Car &lt; Vehicle
+  properties
+    Brand (1,1) string = "unknown"
+  end
+
+  methods
+    function obj = Car(name, brand)
+      obj@Vehicle(name);
+      if nargin &gt; 1
+        obj.Brand = brand;
+      end
+    end
+
+    function start(obj)
+      start@Vehicle(obj);
+      fprintf("Car brand: %s\n", obj.Brand);
+    end
+  end
+end
+
+c = Car("MyCar", "Toyota");
+c.start();</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use handle reference semantics.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Counter &lt; handle
+  properties
+    Value (1,1) double = 0
+  end
+
+  methods
+    function increment(obj)
+      obj.Value = obj.Value + 1;
+    end
+  end
+end
+
+a = Counter();
+b = a;
+a.increment();
+disp(b.Value)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Add shallow copy support to a handle class.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Config &lt; handle &amp; nelson.mixin.Copyable
+  properties
+    Mode (1,1) string = "default"
+    Options struct = struct()
+  end
+end
+
+c1 = Config();
+c1.Mode = "fast";
+c2 = copy(c1);
+c2.Mode = "safe";</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Customize scalar object display.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Point2D &lt; nelson.mixin.CustomDisplay
+  properties
+    X (1,1) double = 0
+    Y (1,1) double = 0
+  end
+
+  methods
+    function obj = Point2D(x, y)
+      if nargin &gt; 0
+        obj.X = x;
+        obj.Y = y;
+      end
+    end
+  end
+
+  methods (Access = protected)
+    function displayScalarObject(obj)
+      fprintf("Point2D: (%.2f, %.2f)\n", obj.X, obj.Y);
+    end
+  end
+end
+
+p = Point2D(3.5, 4.2);
+p</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../interpreter/classdef.html">classdef</a><a class="see-also-link" href="../handle/methods.html">methods</a><a class="see-also-link" href="../handle/properties.html">properties</a><a class="see-also-link" href="../handle/metaclass.html">metaclass</a><a class="see-also-link" href="../handle/events.html">events</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>classdef tutorial added</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

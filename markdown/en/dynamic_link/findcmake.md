@@ -15,7 +15,7 @@ find CMake path.
 
 find CMake path.
 
-CMake is used internaly to generate makefiles used to build dynamic libraries on fly.
+CMake is used internally to generate makefiles used to build dynamic libraries on fly.
 
 ## 💡 Example
 

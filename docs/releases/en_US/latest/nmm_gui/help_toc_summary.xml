@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>nmm_gui</module>
+    <section name="Package manager window">
+      <chapter_description>Graphical front-end for the nmm package manager.</chapter_description>
+      <keyword name="nmm_gui" link="nmm_gui.html" description="Open the package manager window."/>
+    </section>
+  </toc>
+</help_summary>

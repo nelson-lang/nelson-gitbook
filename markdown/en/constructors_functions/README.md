@@ -14,6 +14,7 @@ This module forms the basis for initializing data structures and performing math
 - [eps](eps.md) - Creates an epsilon (machine precision)
 - [eye](eye.md) - Creates an identity matrix.
 - [i](i.md) - Pure Imaginary number.
+- [j](j.md) - Imaginary unit.
 - [ones](ones.md) - Creates an matrix made of ones.
 - [pi](pi.md) - Ratio of circle's circumference to its diameter.
 - [zeros](zeros.md) - Creates an matrix made of zeros.

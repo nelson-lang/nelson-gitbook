@@ -8,7 +8,7 @@ User-defined startup script for Nelson.
 
 It executes any file named<b>startup.m</b> that is located on the search path.
 
-To leverage this feature, create a file named<b>startup.m</b> in the userpath folder, which is included in the Nelson search path.
+To use this feature, create a file named<b>startup.m</b> in the userpath folder, which is included in the Nelson search path.
 
 Embed commands within this file that you wish to be executed during Nelson startup.
 

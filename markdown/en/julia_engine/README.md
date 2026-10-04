@@ -1,6 +1,6 @@
 # Julia engine
 
-The Julia Engine module enables Nelson users to seamlessly interface with the Julia programming language, combining Julia's high-performance numerical capabilities with Nelson's environment.
+The Julia Engine module lets Nelson call Julia code and use Julia numerical libraries from the Nelson environment.
 
 It provides functions to run Julia code, manage interpreter environments, and exchange data between Nelson and Julia.
 

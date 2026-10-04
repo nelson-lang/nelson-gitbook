@@ -33,6 +33,8 @@ Generates a makefile for building a dynamic library.
 
 Thanks to <b>CMake</b> to help Nelson in this task.
 
+When it is called with at least one output argument, <b>dlgeneratemake</b>returns <b>res</b> (a logical) and <b>message</b>. When it is called with no output argument, it raises the error <b>Nelson:dlgeneratemake:failed</b> on failure instead of returning a false status.
+
 ## 💡 Example
 
 See module skeleton for example

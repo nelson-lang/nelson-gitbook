@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>mcpserver</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">mcpserver</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Start Nelson MCP server on standard input and output.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">mcpserver()
+mcpserver('--nelson-display-mode=gui')
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>mcpserver</b> starts a stdio MCP server exposing Nelson-aware tools.</p>
+    <p>The transport uses standard input and standard output. MCP JSON-RPC messages are the only data written to standard output; diagnostic messages are written to standard error.</p>
+    <p>The default display mode is <b>adv-cli</b>. It supports graphical commands used by <b>create_nelson_plot</b> while keeping the MCP transport on standard output. Use <b>cli</b> for text-only sessions. Use <b>gui</b> when a visible graphical Nelson session is desired while the server still runs from <b>nelson-adv-cli</b>.</p>
+    <p>Available tools are <b>detect_nelson_modules</b>, <b>check_nelson_code</b>, <b>lint_nelson_code</b>, <b>check_nelson_format</b>, <b>evaluate_nelson_code</b>, <b>run_nelson_file</b>, <b>run_nelson_test_file</b>, <b>format_nelson_file</b>, <b>get_nelson_help</b>, <b>find_nelson_symbol</b>, <b>get_nelson_function_info</b>, <b>get_nelson_workspace</b>, <b>get_nelson_version</b>, and <b>create_nelson_plot</b>.</p>
+    <p>File-based tools resolve relative paths from the configured workspace root and refuse paths outside that root. The default workspace root is <b>nelsonroot</b>.</p>
+    <p>Tool calls return both text content and structured content with <b>success</b>, <b>output</b>, <b>error</b>, <b>image</b>, and <b>duration</b> fields.</p>
+    <p>Long <b>output</b> and <b>error</b> fields are bounded by <b>--max-output-characters</b>. Structured content includes <b>output_truncated</b> and <b>error_truncated</b> flags.</p>
+    <p>Some tools also return typed metadata in the structured <b>data</b> field, for example module lists, test summary counts, version information, and PNG image metadata.</p>
+    <p>The server also exposes local read-only resources under <b>guidelines://</b> and reusable prompts such as <b>nelson-code-review</b>, <b>nelson-test-author</b>, and <b>nelson-plot-agent</b>.</p>
+    <p>Ollama can provide the local language model for an MCP-capable agent. In that setup, Ollama runs the model, the agent speaks MCP, and <b>mcpserver</b> exposes Nelson tools to the agent.</p>
+    <p>The JSON-RPC transport validates protocol version <b>2.0</b>, rejects invalid requests, and supports batch requests.</p>
+    <p>Server options can be passed as string arguments: <b>--initial-working-folder=PATH</b>, <b>--workspace-root=PATH</b>, <b>--max-output-characters=N</b>, <b>--initialize-nelson-on-startup=true|false</b>, <b>--nelson-display-mode=cli|adv-cli|gui</b>, <b>--allow-execution=true|false</b>, <b>--allow-format=true|false</b>, <b>--log-folder=PATH</b>, and <b>--log-level=error|warn|info|debug</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Start the server from an MCP client.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Register Nelson in Codex.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Register Nelson with visible graphical mode.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--nelson-display-mode=gui')"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use Nelson MCP with an Ollama-backed agent.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab"># Terminal 1: start Ollama and make sure a model is available.
+ollama serve
+ollama pull llama3.2
+
+# Terminal 2: configure your MCP-capable agent with:
+#   model provider: Ollama
+#   model endpoint: http://127.0.0.1:11434
+#   model name: llama3.2
+#   MCP server name: nelson
+#   MCP server command:
+nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Generic JSON-style MCP client configuration for an Ollama-backed agent.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "model": {
+    "provider": "ollama",
+    "baseUrl": "http://127.0.0.1:11434",
+    "name": "llama3.2"
+  },
+  "mcpServers": {
+    "nelson": {
+      "command": "nelson-adv-cli",
+      "args": [
+        "--quiet",
+        "--noipc",
+        "--nouserstartup",
+        "--nousermodules",
+        "-e",
+        "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --allow-execution=true --allow-format=true')"
+      ]
+    }
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Prompt an Ollama-backed agent to use Nelson tools.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Use the Nelson MCP server.
+First call get_nelson_workspace.
+Then call get_nelson_help for "plot".
+Create and run a Nelson script that plots sin(0:0.1:10).
+Return the PNG path from create_nelson_plot and summarize any Nelson output.</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../ai/aiask.html">aiask</a><a class="see-also-link" href="../ai/mcpinfo.html">mcpinfo</a><a class="see-also-link" href="../ai/mcpusage.html">mcpusage</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

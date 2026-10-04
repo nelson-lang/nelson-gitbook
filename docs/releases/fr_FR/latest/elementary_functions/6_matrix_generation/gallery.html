@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>gallery</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">gallery</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Générer des matrices de test et des données couramment utilisées pour des expériences numériques</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">[A1,A2,...,Am] = gallery(matrixname,P1,P2,...,Pn)
+[A1,A2,...,Am] = gallery(matrixname,P1,P2,...,Pn,typename)
+A = gallery(k)
+A = gallery("circul", v)
+[v,beta] = gallery("house", x)
+[A,beta] = gallery("ipjfact", n, k)
+A = gallery("cauchy", x, y)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">matrixname</td>
+<td>nom de la famille de matrices à générer (chaîne ou vecteur de caractères), par exemple "circul", "cauchy", "grcar", "minij", "dramadah", "house", "ipjfact"
+      </td>
+</tr>
+<tr>
+<td class="param-name">P1, P2, ..., Pn</td>
+<td>paramètres dépendants de la famille : scalaires, vecteurs ou matrices qui déterminent la taille et les entrées (par exemple<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">n</code>, vecteurs<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">v</code>,<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">x</code>,<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">y</code>, ou indicateurs d'options)</td>
+</tr>
+<tr>
+<td class="param-name">n</td>
+<td>entier positif spécifiant l'ordre ou la taille de la matrice</td>
+</tr>
+<tr>
+<td class="param-name">v, x, y</td>
+<td>vecteurs utilisés comme paramètres (par exemple première ligne pour circulante, emplacements des points pour chebvand, ou paramètres de Cauchy)</td>
+</tr>
+<tr>
+<td class="param-name">k</td>
+<td>option ou petit paramètre entier contrôlant le comportement de la famille (par exemple nombre de superdiagonales pour<b>grcar</b> ou sélecteurs de variantes pour<b>dramadah</b>)</td>
+</tr>
+<tr>
+<td class="param-name">typename</td>
+<td>type de données de sortie optionnel : "double" (par défaut) ou "single"
+      </td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">A1,A2,...,Am</td>
+<td>une ou plusieurs matrices ou tableaux produits par la famille choisie</td>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>matrice unique ou tableau multidimensionnel lorsque une seule sortie est demandée</td>
+</tr>
+<tr>
+<td class="param-name">v,beta,s</td>
+<td>Sorties de Householder :<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">v</code>(vecteur),<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">beta</code>(scalaire), et optionnel<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">s</code>retourné par <b>house</b>
+      </td>
+</tr>
+<tr>
+<td class="param-name">beta</td>
+<td>détérminant ou sortie scalaire pour les familles qui le retournent explicitement (par exemple <b>ipjfact</b> retourne le déterminant<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">beta</code>)</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>La fonction<b>gallery</b> retourne une collection de matrices de test standard et de données générées utilisées pour illustrer les concepts d'algèbre linéaire numérique, tester des algorithmes et reproduire des exemples de manuels.</p>
+    <p>Utilisez l'argument<b>matrixname</b> pour sélectionner une famille ; les paramètres supplémentaires (tailles, vecteurs, options) dépendent de la famille choisie.</p>
+    <p>Utilisations typiques : étudier la sensibilité et le conditionnement des valeurs propres, exercer des solveurs avec des matrices structurées (Toeplitz, Hankel, circulante), générer des matrices aléatoires ou spécialement structurées avec des propriétés singulières/valeurs propres prescrites, ou obtenir des exemples canoniques pour l'enseignement et les tests.</p>
+    <p>Le <b>typename</b> optionnel force le type de sortie numérique.</p>
+    <p>Si omis, le type de sortie est déduit des entrées : la présence d'une entrée<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">single</code>donne lieu à<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">single</code>, sinon les sorties sont<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">double</code>.</p>
+    <table border="1" style="width:100%">
+      
+        <tr>
+          <th>Nom</th>
+          <th>Syntaxe</th>
+          <th>Remarques</th>
+        </tr>
+      
+      
+        <tr>
+          <td>gallery(3)</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery(3)</code>
+          </td>
+          <td>Exemple classique 3×3 mal conditionné ; illustre la sensibilité des valeurs propres.</td>
+        </tr>
+        <tr>
+          <td>gallery(5)</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery(5)</code>
+          </td>
+          <td>Exemple 5×5 avec polynôme caractéristique exact \(\lambda^5=0\) ; numériquement les valeurs propres sont petites et sensibles.</td>
+        </tr>
+        <tr>
+          <td>circul</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("circul", v)</code>
+          </td>
+          <td>Matrice circulante : les lignes sont des décalages cycliques de<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">v</code>; les valeurs propres sont la DFT de<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">v</code>.</td>
+        </tr>
+        <tr>
+          <td>grcar</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("grcar", n, k)</code>
+          </td>
+          <td>Toeplitz avec -1 sur la sous-diagonale et des 1 sur la diagonale principale et les k sur-diagonales ; utile pour des exemples de pseudospectres.</td>
+        </tr>
+        <tr>
+          <td>minij</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("minij", n)</code>
+          </td>
+          <td>Matrice symétrique définie positive avec<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A(i,j)=min(i,j)</code>; l'inverse est tridiagonal (structure de différence seconde).</td>
+        </tr>
+        <tr>
+          <td>dramadah</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("dramadah", n, k)</code>
+          </td>
+          <td>Familles binaires (0/1) ; certains k donnent des matrices de Toeplitz unimodulaires dont l'inverse est entière.</td>
+        </tr>
+        <tr>
+          <td>house</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">[v,beta] = gallery("house", x)</code>
+          </td>
+          <td>Retourne le vecteur de Householder<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">v</code>et le scalaire<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">beta</code>tels que<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">H=I-beta*v*v'
+            </code> reflète <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">x</code> sur un multiple de <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">e1</code>.</td>
+        </tr>
+        <tr>
+          <td>binomial</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("binomial", n)</code>
+          </td>
+          <td>Matrice binomiale avec <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A^2 = 2^(n-1) I</code> ; la matrice mise à l'échelle est involutive.</td>
+        </tr>
+        <tr>
+          <td>cauchy</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("cauchy", x, y)</code>
+          </td>
+          <td>Matrice de Cauchy<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A(i,j)=1/(x(i)+y(j))</code>; des formules explicites pour le déterminant et l'inverse existent.</td>
+        </tr>
+        <tr>
+          <td>ris</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("ris", n)</code>
+          </td>
+          <td>Matrice Hankel symétrique avec éléments 0.5/(n-i-j+1.5) ; les valeurs propres se regroupent près de ±π/2.</td>
+        </tr>
+        <tr>
+          <td>chebspec</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("chebspec", n, k)</code>
+          </td>
+          <td>Matrice de différenciation spectrale de Chebyshev. <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">k</code>=0 donne une forme nilpotente ; <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">k</code>=1 donne un opérateur non singulier, bien conditionné.</td>
+        </tr>
+        <tr>
+          <td>wilk</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">gallery("wilk", m)</code>
+          </td>
+          <td>Exemples de Wilkinson (petits systèmes triangulaires, W21+, etc.) illustrant des problèmes de stabilité.</td>
+        </tr>
+        <tr>
+          <td>sampling</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("sampling", x)</code>
+          </td>
+          <td>Matrice non symétrique avec valeurs propres entières 0..n-1 ; les vecteurs propres sont généralement mal conditionnés.</td>
+        </tr>
+        <tr>
+          <td>ipjfact</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">[A,beta] = gallery("ipjfact", n, k)</code>
+          </td>
+          <td>Matrice Hankel construite à partir de factorielles (ou de leurs réciproques) ; déterminant et inverse connus en forme fermée.</td>
+        </tr>
+        <tr>
+          <td>moler</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("moler", n, alpha)</code>
+          </td>
+          <td>Exemple symétrique définie positive produit comme <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">U'*U</code>; peut présenter une petite valeur propre isolée.</td>
+        </tr>
+        <tr>
+          <td>lotkin</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("lotkin", n)</code>
+          </td>
+          <td>Matrice de type Hilbert avec première ligne de 1 ; extrêmement mal conditionnée, l'inverse a une structure entière.</td>
+        </tr>
+        <tr>
+          <td>chebvand</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("chebvand", x)</code>
+          </td>
+          <td>Matrice de type Vandermonde de Chebyshev : <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A(i,j)=T_{i-1}(x(j))</code>, utile pour l'interpolation spectrale et les bases polynomiales.</td>
+        </tr>
+        <tr>
+          <td>lehmer</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">A = gallery("lehmer", n)</code>
+          </td>
+          <td>Matrice de Lehmer avec entrées i/j pour i ≤ j ; symétrique définie positive et mal conditionnée.</td>
+        </tr>
+      
+    </table>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Exemple simple 3×3 mal conditionné</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = gallery(3)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Créer et afficher une matrice circulante</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">C = gallery("circul",120);
+imagesc(C);
+axis square;
+colorbar;</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../elementary_functions/hankel.html">hankel</a><a class="see-also-link" href="../../elementary_functions/hilb.html">hilb</a><a class="see-also-link" href="../../elementary_functions/magic.html">magic</a><a class="see-also-link" href="../../elementary_functions/pascal.html">pascal</a><a class="see-also-link" href="../../elementary_functions/toeplitz.html">toeplitz</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliographie</div>
+<div>Voir les références dans Higham, N. J., Accuracy and Stability of Numerical Algorithms pour la galerie des matrices de test.</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.15.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

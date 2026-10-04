@@ -20,6 +20,8 @@ Appeler l'outil make ou nmake
 
 <b>dlmake</b> fournit un moyen multiplateforme pour construire du code C/C++.
 
+Appelée avec au moins un argument de sortie, <b>dlmake</b> retourne <b>res</b> (un logique) et <b>message</b>. Appelée sans argument de sortie, elle lève l'erreur <b>Nelson:dlmake:failed</b> en cas d'échec au lieu de retourner un statut faux.
+
 ## 💡 Exemple
 
 basic example to call dlmake

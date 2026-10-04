@@ -14,7 +14,7 @@ Returns current Nelson mode.
 
 <b>getnelsonmode()</b> returns current Nelson mode used.
 
-There are <b>5</b> modes:
+There are <b>6</b> modes:
 
 <b>BASIC_ENGINE</b>: Nelson used as engine without any graphics.
 
@@ -24,11 +24,9 @@ There are <b>5</b> modes:
 
 <b>ADVANCED_TERMINAL</b>: Nelson launched as terminal with graphics/gui.
 
-<b>BASIC_SIO_CLIENT</b>: Nelson launched as socket IO client.
-
-<b>ADVANCED_SIO_CLIENT</b>: Nelson launched as socket IO client with graphics/gui.
-
 <b>GUI</b>: Nelson launched as a graphical application (default).
+
+<b>WEB_GUI</b>: Nelson launched as a web application.
 
 ## 💡 Example
 

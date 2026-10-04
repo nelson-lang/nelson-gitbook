@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>compiler.build.Results</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler.build.Results</span>, <span class="keyword-alias">compiler.build.Results</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Inspecter une construction autonome terminee.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">result = compiler.build.standaloneApplication(options)
+result = compiler.build.standaloneWindowsApplication(options)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Les fonctions de construction renvoient cet objet apres publication reussie des sorties. L'obtenir depuis une construction plutot que l'instancier directement. Ses proprietes publiques sont en lecture seule.</p>
+    <p>BuildType vaut standaloneApplication ou standaloneWindowsApplication. Files est un vecteur colonne de cellules contenant l'executable, puis le fichier .nca lorsque EmbedArchive vaut false, puis readme.txt a distribuer a l'utilisateur, pas un inventaire recursif du runtime ou des metadonnees de construction.</p>
+    <p>IncludedSupportPackages liste les packages nmm enregistres dont des fichiers ont reellement ete retenus. Les packages inutilises ne sont pas indiques. Une ancienne version enregistree explicitement active est reconnue. Cet inventaire des origines des fichiers ne signifie pas que tout le package est copie ou que son loader est execute.</p>
+    <p>Options est une copie valeur de compiler.build.StandaloneApplicationOptions. RuntimeDependencies est un objet compiler.runtime.Dependencies contenant les exigences en fichiers du runtime selectionne.</p>
+    <p>La construction ne distribue pas de runtime et ne cree pas d'installateur. L'executable requiert un runtime installe compatible. Le resultat decrit l'etat au build ; modifier ou supprimer ensuite des fichiers ne l'actualise pas.</p>
+    <p>Les tables de dependances contiennent des chemins sources absolus de la machine de build. Relire les rapports avant partage. Les empreintes verifient l'integrite, pas l'identite de l'editeur.</p>
+    <p>buildresult.json est aussi ecrit dans OutputDir. Son schema Nelson versionne contient les noms des artefacts relatifs a ce dossier, leurs empreintes SHA256, l'identite du runtime et son inventaire complet. Il ne serialise pas les parametres AppFile et OutputDir, mais conserve les chemins absolus des sources runtime pour leur verification ulterieure. Ce n'est ni un runtime portable, ni une signature, ni un format de rapport externe. Ne pas modifier son contenu. compiler.package.installer utilise les resultats ou rapports pour installer une application Windows ou Linux. compiler.runtime.customInstaller regroupe le runtime minimal partage pour une ou plusieurs applications.</p>
+    <p>Le format 2 du rapport contient le contrat lu dans le lanceur natif : interface de demarrage, versions d'archive prises en charge, version de recherche du runtime et cible avec ou sans console. Les capacites ne sont pas deduites de la version du compilateur installe. Les anciens rapports sans ce contrat doivent etre regeneres en reconstruisant l'application avec les lanceurs natifs actuels.</p>
+  </div>
+</div>
+<div class="section"><div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../compiler/compiler.build.standaloneApplication.html">compiler.build.standaloneApplication</a><a class="see-also-link" href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a><a class="see-also-link" href="../compiler/compiler_build_tutorial.html">compiler_build_tutorial</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

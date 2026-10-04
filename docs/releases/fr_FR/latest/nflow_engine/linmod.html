@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>linmod</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">linmod</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Linéarisation numérique d'un modèle nflow.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">[A, B, C, D] = linmod(model)
+[A, B, C, D] = linmod(model, x0, u0)
+A = linmod(model)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">model</td>
+<td>un système chargé (nom ou handle) ou le chemin d'un fichier .nflow.</td>
+</tr>
+<tr>
+<td class="param-name">x0</td>
+<td>état du point de fonctionnement (longueur nx), optionnel. Absent : état après INIT.</td>
+</tr>
+<tr>
+<td class="param-name">u0</td>
+<td>entrées du point de fonctionnement (longueur nu), optionnel. Absent : zéro.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>la jacobienne d'état nx-par-nx d(xdot)/dx au point de fonctionnement.</td>
+</tr>
+<tr>
+<td class="param-name">B</td>
+<td>la jacobienne d'entrée nx-par-nu d(xdot)/du au point de fonctionnement.</td>
+</tr>
+<tr>
+<td class="param-name">C</td>
+<td>la jacobienne de sortie ny-par-nx dy/dx au point de fonctionnement.</td>
+</tr>
+<tr>
+<td class="param-name">D</td>
+<td>la jacobienne de transmission directe ny-par-nu dy/du au point de fonctionnement.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>linmod</b> renvoie la linéarisation d'état continue de <b>model</b> autour de son point de fonctionnement après INIT.</p>
+    <p>Les jacobiennes sont obtenues par différences finies centrées du même second membre global que le solveur <b>ode4</b> / à pas variable assemble : l'état continu <b>x</b> rassemble l'état de chaque bloc continu, les entrées <b>u</b> sont les blocs Label Source de port externe (<b>isExternalPort</b>), <b>xdot = f(x, u)</b> est la dérivée du graphe et <b>y</b> les sorties Label Sink du modèle. Un modèle linéaire se linéarise en lui-même.</p>
+    <p>Une entrée qui doit participer à <b>B</b> / <b>D</b> doit être un Label Source de port externe ; un simple Label Source de routage goto/from interne n'est pas une entrée du modèle.</p>
+    <p>Les modèles plats (niveau supérieur) comme les états continus imbriqués dans des sous-systèmes sont supportés : le couplage d'un état imbriqué aux entrées externes (<b>B</b>) et aux sorties à travers la frontière du sous-système (<b>C</b>) est capturé.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Linéariser un modèle d'état du premier ordre</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks = { ...
+  struct('id','u','type','labelSource','inputs',0,'outputs',1,'params',struct('label','u','isExternalPort',true)), ...
+  struct('id','ss','type','stateSpace','inputs',1,'outputs',1,'params',struct('A',-2,'B',1,'C',1,'D',0)), ...
+  struct('id','y','type','labelSink','inputs',1,'outputs',0,'params',struct('label','y')), ...
+  struct('id','sc','type','scope','inputs',1,'outputs',0,'params',struct()) };
+d.connections = { ...
+  struct('from','u','to','ss','fromIndex',0,'toIndex',0), ...
+  struct('from','ss','to','y','fromIndex',0,'toIndex',0), ...
+  struct('from','ss','to','sc','fromIndex',0,'toIndex',0) };
+f = [tempdir(), 'linmod_demo.nflow'];
+fid = fopen(f,'wt'); fwrite(fid, jsonencode(d)); fclose(fid);
+[A, B, C, D] = linmod(f)  % A = -2, B = 1, C = 1, D = 0</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../nflow_engine/trim.html">trim</a><a class="see-also-link" href="../nflow_engine/sim.html">sim</a><a class="see-also-link" href="../nflow_engine/load_system.html">load_system</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

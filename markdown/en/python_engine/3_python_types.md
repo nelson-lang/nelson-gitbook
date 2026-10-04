@@ -29,29 +29,36 @@ Managing Data between Python and Nelson.
 | py.list                                          | double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical, string, cell |
 | py.tuple                                         | double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64, logical, string, cell |
 | py.dict                                          | struct                                                                                          |
+| py.pandas.DataFrame                              | table                                                                                           |
+| py.pandas.Series                                 | table (single column)                                                                           |
+
+A <b>py.pandas.DataFrame</b> is converted with the <b>table</b> function: each DataFrame column becomes a table variable and keeps its column name; numeric columns become Nelson numeric columns and textual columns become Nelson string columns. A non-default index is moved into a leading <b>index</b> variable, while a default <b>RangeIndex</b> is dropped. A <b>py.pandas.Series</b> becomes a table with a single variable named after the Series (an unnamed Series uses the column label <b>0</b>). Column labels that are not valid Nelson variable names are made valid, and the original labels are kept in the table <b>VariableDescriptions</b>. Datetime columns are converted to their textual (ISO) representation. These conversions require the <b>pandas</b> package to be installed in the Python environment.
 
 <b>Pass scalar Nelson type to Python:</b>
 
-| Nelson scalar input argument type | Python type  |
-| --------------------------------- | ------------ |
-| NaN                               | float("nan") |
-| Inf                               | float("inf") |
-| double (real)                     | py.float     |
-| single (real)                     | py.float     |
-| double (complex)                  | py.complex   |
-| single (complex)                  | py.complex   |
-| int8                              | py.int       |
-| uint8                             | py.int       |
-| int16                             | py.int       |
-| uint16                            | py.int       |
-| int32                             | py.int       |
-| uint32                            | py.int       |
-| int64                             | py.int       |
-| uint64                            | py.int       |
-| string scalar                     | py.str       |
-| char vector                       | py.str       |
-| logical                           | py.bool      |
-| struct                            | py.dict      |
+| Nelson scalar input argument type | Python type                                                |
+| --------------------------------- | ---------------------------------------------------------- |
+| NaN                               | float("nan")                                               |
+| Inf                               | float("inf")                                               |
+| double (real)                     | py.float                                                   |
+| single (real)                     | py.float                                                   |
+| double (complex)                  | py.complex                                                 |
+| single (complex)                  | py.complex                                                 |
+| int8                              | py.int                                                     |
+| uint8                             | py.int                                                     |
+| int16                             | py.int                                                     |
+| uint16                            | py.int                                                     |
+| int32                             | py.int                                                     |
+| uint32                            | py.int                                                     |
+| int64                             | py.int                                                     |
+| uint64                            | py.int                                                     |
+| string scalar                     | py.str                                                     |
+| char vector                       | py.str                                                     |
+| logical                           | py.bool                                                    |
+| struct                            | py.dict                                                    |
+| table                             | py.pandas.DataFrame (py.dict when pandas is not installed) |
+
+A Nelson <b>table</b> passed to Python is implicitly converted to a <b>py.pandas.DataFrame</b>: the table variable names become the DataFrame columns and the row names, when present, become the DataFrame index. When the <b>pandas</b> package is not available, the table falls back to a dictionary with <b>data</b> and <b>Properties</b> fields.
 
 <b>Pass 1-by-N Vector Nelson type to Python:</b>
 

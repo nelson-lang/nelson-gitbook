@@ -46,6 +46,10 @@ A_IN = [2.0   1.0   1.0;
 [A_OUT, MDIG, IDIG, IWARN, INFO] = slicot_mb05od(BALANC, NDIAG, DELTA, A_IN)
 ```
 
+## 🔗 See also
+
+[slicot_mb04md](../slicot/slicot_mb04md.md), [c2d](../control_system/c2d.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

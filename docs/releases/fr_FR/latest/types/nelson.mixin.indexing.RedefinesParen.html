@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nelson.mixin.indexing.RedefinesParen</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.mixin.indexing.RedefinesParen</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Personnaliser l'indexation par parenthèses d'une classe.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">classdef MaClasse &lt; nelson.mixin.indexing.RedefinesParen
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">obj</td>
+<td>objet d'une classe derivee de nelson.mixin.indexing.RedefinesParen.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">obj</td>
+<td>objet prenant en charge une indexation par parentheses personnalisee.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Dérivez de <b>nelson.mixin.indexing.RedefinesParen</b> pour donner à une classe son
+    propre comportement d'indexation par parenthèses, par exemple pour un conteneur qui indexe
+    ses données stockées plutôt qu'un tableau d'objets.</p>
+    <p>Une sous-classe implémente ces méthodes protégées :</p>
+    <p><b>parenReference(obj, indexOp)</b> - valeur de <b>obj(...)</b>.</p>
+    <p><b>parenAssign(obj, indexOp, value)</b> - résultat de <b>obj(...) = value</b>.</p>
+    <p><b>parenDelete(obj, indexOp)</b> - résultat de <b>obj(...) = []</b>.</p>
+    <p><b>parenListLength(obj, indexOp, indexContext)</b> - nombre de valeurs produites.</p>
+    <p>et ces méthodes publiques : <b>size(obj)</b>, <b>cat(dim, ...)</b> et la méthode statique
+    <b>empty(...)</b>.</p>
+    <p>L'argument <b>indexOp</b> est un tableau de <b>nelson.indexing.IndexingOperation</b>. Pour une
+    expression chaînée comme <b>obj(i).field</b>, le hook est appelé une seule fois avec la chaîne
+    entière : <b>numel(indexOp)</b> vaut le nombre d'opérations (2 ici), <b>indexOp(1)</b> est
+    l'opération parenthèses et <b>indexOp(2)</b> l'opération <b>.field</b>. Appliquez la chaîne
+    entière aux données stockées avec la forme dynamique <b>obj.Data.(indexOp)</b>, ou lisez un
+    niveau via <b>indexOp(k).Indices{...}</b> / <b>indexOp(k).Name</b>. La classe de base fournit
+    <b>numel</b>, <b>length</b>, <b>isempty</b>, <b>ndims</b>, <b>end</b>, <b>horzcat</b> et
+    <b>vertcat</b> à partir des méthodes abstraites <b>size</b>/<b>cat</b>.</p>
+    <p>Une indexation à un seul niveau (<b>obj(i)</b>) appelle le hook avec un <b>indexOp</b> scalaire
+    (<b>numel(indexOp) == 1</b>). Quelques formes de chaîne restent évaluées étape par étape (le hook
+    voit une seule opération, la valeur est identique) : un niveau <b>.method(args)</b>, une chaîne
+    utilisant <b>end</b> après le premier niveau, et l'affectation chaînée.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Un conteneur qui redéfinit l'indexation par parenthèses.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Bag &lt; nelson.mixin.indexing.RedefinesParen
+  properties
+    Data
+  end
+  methods
+    function obj = Bag(x)
+      obj.Data = x;
+    end
+    function varargout = size(obj, varargin)
+      varargout{1} = size(obj.Data, varargin{:});
+    end
+    function obj = cat(dim, varargin)
+      acc = [];
+      for k = 1:numel(varargin)
+        acc = cat(dim, acc, varargin{k}.Data);
+      end
+      obj = Bag(acc);
+    end
+  end
+  methods (Access = protected)
+    function varargout = parenReference(obj, indexOp)
+      % indexOp peut contenir toute la chaîne ; l'appliquer aux données stockées.
+      [varargout{1:nargout}] = obj.Data.(indexOp);
+    end
+    function obj = parenAssign(obj, indexOp, varargin)
+      obj.Data.(indexOp) = varargin{1};
+    end
+    function obj = parenDelete(obj, indexOp)
+      obj.Data.(indexOp) = [];
+    end
+    function n = parenListLength(obj, indexOp, ctx)
+      n = 1;
+    end
+  end
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../types/nelson.mixin.indexing.RedefinesBrace.html">nelson.mixin.indexing.RedefinesBrace</a><a class="see-also-link" href="../types/nelson.mixin.indexing.RedefinesDot.html">nelson.mixin.indexing.RedefinesDot</a><a class="see-also-link" href="../types/nelson.indexing.IndexingOperation.html">nelson.indexing.IndexingOperation</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

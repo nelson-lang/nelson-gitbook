@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>nflow_engine</module>
+    <section name="moteur nflow">
+      <chapter_description><p>Création et édition programmatiques de modèles de blocs-diagrammes nflow.</p>
+    <p>NFlow est actuellement publié en version <b>1.0.0-beta.1</b> : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours.</p></chapter_description>
+      <keyword name="NFlow.exportfmu" link="NFlow.exportfmu.html" description="Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation."/>
+      <keyword name="NFlow.plotScopes" link="NFlow.plotScopes.html" description="Ouvre une figure par scope d'un résultat de simulation nflow."/>
+      <keyword name="add_block" link="add_block.html" description="Ajoute un bloc à un modèle nflow depuis une source de bibliothèque."/>
+      <keyword name="add_line" link="add_line.html" description="Connecte deux ports de blocs dans un modèle nflow."/>
+      <keyword name="bdIsDirty" link="bdIsDirty.html" description="Retourne vrai lorsqu'un modèle nflow a des modifications non sauvegardées."/>
+      <keyword name="bdIsLoaded" link="bdIsLoaded.html" description="Retourne vrai lorsqu'un modèle nflow est chargé."/>
+      <keyword name="bdclose" link="bdclose.html" description="Décharge un ou tous les modèles nflow en abandonnant les modifications non sauvegardées."/>
+      <keyword name="bdroot" link="bdroot.html" description="Renvoie le modèle de plus haut niveau d'un chemin de bloc."/>
+      <keyword name="close_system" link="close_system.html" description="Décharge un modèle nflow ; un modèle modifié requiert un indicateur de sauvegarde explicite."/>
+      <keyword name="delete_block" link="delete_block.html" description="Supprime un bloc et toutes ses connexions d'un modèle nflow."/>
+      <keyword name="delete_line" link="delete_line.html" description="Supprime une connexion entre deux ports de blocs."/>
+      <keyword name="find_system" link="find_system.html" description="Liste les blocs d'un modèle, éventuellement filtrés par type."/>
+      <keyword name="gcbh" link="gcbh.html" description="Renvoie le handle du bloc courant."/>
+      <keyword name="getSimulinkBlockHandle" link="getSimulinkBlockHandle.html" description="Renvoie le handle d'un bloc par chemin, ou -1 si introuvable."/>
+      <keyword name="get_param" link="get_param.html" description="Interroge un paramètre de modèle ou de bloc."/>
+      <keyword name="getfullname" link="getfullname.html" description="Renvoie le chemin complet d'un bloc ou d'un modèle depuis son handle."/>
+      <keyword name="linmod" link="linmod.html" description="Linéarisation numérique d'un modèle nflow."/>
+      <keyword name="load_system" link="load_system.html" description="Charge un modèle nflow depuis un fichier .nflow sans ouvrir l'éditeur."/>
+      <keyword name="new_system" link="new_system.html" description="Crée et charge un modèle nflow vide."/>
+      <keyword name="nflow_codegenerate" link="nflow_codegenerate.html" description="Genere du code C ou Rust autonome depuis un modele nflow."/>
+      <keyword name="save_system" link="save_system.html" description="Sauvegarde un modèle nflow dans un fichier .nflow."/>
+      <keyword name="set_param" link="set_param.html" description="Définit atomiquement des paramètres de modèle ou de bloc."/>
+      <keyword name="sim" link="sim.html" description="Simule un modèle nflow et retourne ses résultats."/>
+      <keyword name="NFlow.sspInfo" link="ssp.html" description="Inspecte, importe et exporte des archives SSP (System Structure and Parameterization)."/>
+      <keyword name="trim" link="trim.html" description="Trouver un point de fonctionnement d'équilibre d'un modèle nflow."/>
+    </section>
+  </toc>
+</help_summary>

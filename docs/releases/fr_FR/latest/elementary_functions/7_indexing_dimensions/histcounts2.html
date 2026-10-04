@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>histcounts2</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">histcounts2</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Comptage par classes d'histogramme bivarie.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">N = histcounts2(X, Y)
+N = histcounts2(X, Y, nbins)
+N = histcounts2(X, Y, Xedges, Yedges)
+N = histcounts2(..., 'Normalization', method)
+[N, Xedges, Yedges] = histcounts2(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>tableau numerique ou logique contenant la premiere coordonnee de chaque paire.</td>
+</tr>
+<tr>
+<td class="param-name">Y</td>
+<td>tableau numerique ou logique contenant la seconde coordonnee de chaque paire. X et Y doivent avoir le meme nombre d'elements.</td>
+</tr>
+<tr>
+<td class="param-name">nbins</td>
+<td>scalaire entier positif, ou vecteur a deux elements [nx ny] donnant le nombre de classes dans chaque dimension.</td>
+</tr>
+<tr>
+<td class="param-name">Xedges, Yedges</td>
+<td>vecteurs numeriques strictement croissants definissant les bornes des classes selon X et Y.</td>
+</tr>
+<tr>
+<td class="param-name">method</td>
+<td>normalisation : 'count' (defaut), 'probability', 'countdensity', 'pdf', 'cumcount' ou 'cdf'.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">N</td>
+<td>matrice des effectifs. N(i, j) compte les paires appartenant a la i-eme classe de X et a la j-eme classe de Y.</td>
+</tr>
+<tr>
+<td class="param-name">Xedges</td>
+<td>bornes de classes utilisees selon la dimension X.</td>
+</tr>
+<tr>
+<td class="param-name">Yedges</td>
+<td>bornes de classes utilisees selon la dimension Y.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>histcounts2 repartit les paires (X, Y) sur une grille de classes bidimensionnelle et compte le nombre de paires dans chaque classe.</p>
+    <p>N(i, j) compte les paires pour lesquelles Xedges(i) &lt;= X &lt; Xedges(i+1) et Yedges(j) &lt;= Y &lt; Yedges(j+1). La derniere classe de chaque dimension inclut ses deux bornes.</p>
+    <p>Vous pouvez fournir un nombre de classes (scalaire ou [nx ny]) ou les vecteurs de bornes explicites Xedges et Yedges. Lorsqu'un nombre de classes est demande, les bornes sont choisies sur une grille reguliere, comme <a href="../../elementary_functions/histcounts.html">histcounts</a>. Les paires ayant une coordonnee NaN sont ignorees.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Compter des paires sur une grille 2-D explicite.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">x = [1 2 3];
+y = [1 2 3];
+N = histcounts2(x, y, [0 2 4], [0 2 4])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Bornes choisies automatiquement avec un nombre de classes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">[N, xe, ye] = histcounts2([1 5 10 3 7], [2 4 6 8 1], 3)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../elementary_functions/histcounts.html">histcounts</a><a class="see-also-link" href="../../data_analysis/discretize.html">discretize</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>
+    histcounts2
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -8,22 +8,30 @@ Display format and number printing.
 - format()
 - format('default')
 - format(new_style)
+- format('truncateMatrices', 'on')
+- format('truncateMatrices', 'off')
+- format(fmt)
 
 ## 📥 Input argument
 
-- new_style - a string
+- new_style - a string or character vector
+- fmt - a nelson.display.DisplayFormatOptions object
 
 ## 📤 Output argument
 
-- fmt - DisplayFormatOptions object: format used
+- fmt - nelson.display.DisplayFormatOptions object: current display format
 
 ## 📄 Description
 
 <b>format(new_style)</b> changes the display format and number printing of the current session.
 
-<b>format('default')</b> will reset to default format (short, loose).
+<b>format('default')</b> resets to the default format (short, loose, truncateMatrices on).
 
-Styles supported:
+<b>fmt = format()</b> returns a <b>nelson.display.DisplayFormatOptions</b> object with the current <b>NumericFormat</b>, <b>LineSpacing</b>, and <b>TruncateMatrices</b> values.
+
+<b>format(fmt)</b> restores the display format stored in a <b>nelson.display.DisplayFormatOptions</b> object.
+
+Numeric formats supported:
 
 <b>short</b>
 
@@ -33,42 +41,42 @@ Styles supported:
 
 <b>longE</b>
 
+<b>shortG</b>
+
+<b>longG</b>
+
 <b>shortEng</b>
 
 <b>longEng</b>
 
-<b>plus</b>
+<b>+</b>
+
+<b>bank</b>
 
 <b>rational</b>
 
 <b>hex</b>
 
-Line Spacing Format supported:
+Line spacing formats supported:
 
 <b>loose</b>
 
 <b>compact</b>
 
+Matrix truncation formats supported:
+
+<b>format('truncateMatrices', 'on')</b>
+
+<b>format('truncateMatrices', 'off')</b>
+
 ## 💡 Example
 
-an example
+Save and restore display format.
 
 ```matlab
 current_style = format()
 pi
-format('short')
-pi
-format('long')
-pi
-format('shortE')
-pi
 format('longE')
-pi
-format('hex')
-pi
-format('+')
-pi
-format('rational')
 pi
 format('compact')
 pi
@@ -78,13 +86,14 @@ pi
 
 ## 🔗 See also
 
-[disp](../display_format/disp.md), [display](../display_format/display.md).
+[nelson.display.DisplayFormatOptions](../display_format/nelson.display.DisplayFormatOptions.md), [disp](../display_format/disp.md), [display](../display_format/display.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                                                   |
+| ------- | -------------------------------------------------------------------------------- |
+| 1.0.0   | initial version                                                                  |
+| 2.0.0   | format returns and accepts nelson.display.DisplayFormatOptions classdef objects. |
 
 <!--
 ## 👤 Author

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>writetimetable</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">writetimetable</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Write timetable to file.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">writetimetable(TT)
+writetimetable(TT, filename)
+writetimetable(..., Name, Value)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">TT</td>
+<td>a timetable.</td>
+</tr>
+<tr>
+<td class="param-name">filename</td>
+<td>a string specifying the destination filename.</td>
+</tr>
+<tr>
+<td class="param-name">Name, Value</td>
+<td>optional write settings such as Delimiter, WriteVariableNames, WriteMode, QuoteStrings, and FileType.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>writetimetable</b> writes a timetable to a delimited text file.</p>
+    <p>Row times are written as the first output column. Data variables are written after the row-time column and retain their variable names.</p>
+    <p>The supported text-file options match the practical surface of <b>writetable</b>, including <b>Delimiter</b>, <b>WriteVariableNames</b>, <b>WriteMode</b>, and <b>QuoteStrings</b>.</p>
+    <p>Datetime and duration row times are converted to stable text before writing. The resulting delimited text file can be read back with <b>readtimetable</b>.</p>
+    <p><b>JSON files</b> (<b>.json</b> extension or <b>'FileType', 'json'</b>): the timetable is written as a JSON array with one object per row. The row times are the first value of each object, keyed by the first dimension name. <b>PrettyPrint</b> and <b>PreserveInfAndNaN</b> behave as in <b>writetable</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Write a timetable and read it back.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Time = datetime(2026, 1, 1) + hours(0:2)';
+Temperature = [20.1; 21.3; 22.0];
+Pressure = [1012; 1011; 1013];
+TT1 = timetable(Time, Temperature, Pressure, ...
+  'VariableNames', {'Temperature', 'Pressure'});
+filename = [tempdir(), 'writetimetable_roundtrip.csv'];
+writetimetable(TT1, filename);
+TT2 = readtimetable(filename)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use a semicolon delimiter.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Time = datetime(2026, 1, 1) + days(0:2)';
+Temperature = [20.1; 21.3; 22.0];
+TT = timetable(Time, Temperature);
+filename = [tempdir(), 'writetimetable_semicolon.csv'];
+writetimetable(TT, filename, 'Delimiter', ';');
+fileread(filename)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Write duration row times.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Time = seconds([0; 5; 10]);
+Signal = [3.2; 4.1; 3.8];
+TT = timetable(Time, Signal);
+filename = [tempdir(), 'writetimetable_duration.csv'];
+writetimetable(TT, filename);
+fileread(filename)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Append rows to an existing text file.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Time1 = datetime(2026, 1, 1) + hours(0:1)';
+Value1 = [10; 11];
+TT1 = timetable(Time1, Value1, 'VariableNames', {'Value'});
+Time2 = datetime(2026, 1, 1) + hours(2:3)';
+Value2 = [12; 13];
+TT2 = timetable(Time2, Value2, 'VariableNames', {'Value'});
+filename = [tempdir(), 'writetimetable_append.csv'];
+writetimetable(TT1, filename);
+writetimetable(TT2, filename, 'WriteMode', 'append', 'WriteVariableNames', false);
+readtimetable(filename)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Write a timetable to a JSON file:</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">TT = timetable(datetime(2024, 1, 1) + days(0:2)', [12.5; 13; 11.75], 'VariableNames', {'Temperature'}); f = [tempdir, 'timetable_json.json']; writetimetable(TT, f, 'PrettyPrint', false); fileread(f) TT2 = readtimetable(f)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../spreadsheet/readtimetable.html">readtimetable</a><a class="see-also-link" href="../spreadsheet/writetable.html">writetable</a><a class="see-also-link" href="../table/timetable.html">timetable</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>JSON files: FileType json, PrettyPrint and PreserveInfAndNaN.</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

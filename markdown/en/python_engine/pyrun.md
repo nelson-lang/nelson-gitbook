@@ -54,7 +54,7 @@ y = pyrun(PYCODE, 'Y')
 
 ## 🔗 See also
 
-[pyrunfile](../python_engine/pyrunfile.md), [pyenv](../python_engine/pyenv.md), [Python types supported](../python_engine/3_python_types.md).
+[pyrunfile](../python_engine/pyrunfile.md), [pyfunction](../python_engine/pyfunction.md), [pyenv](../python_engine/pyenv.md), [Python types supported](../python_engine/3_python_types.md).
 
 ## 🕔 History
 

@@ -1,6 +1,6 @@
 # mpiexec
 
-Run an MPI script.
+Exécute un script MPI.
 
 ## 📝 Syntaxe
 
@@ -11,18 +11,18 @@ Run an MPI script.
 
 ## 📥 Argument d'entrée
 
-- script - an filename with .m extension.
-- nb_process - an integer value: number of process.
+- script - un nom de fichier avec l'extension .m.
+- nb_process - un entier : nombre de processus.
 
 ## 📤 Argument de sortie
 
-- r - an integer value: maximum of the exit status values of all of the processes created by mpiexec.
+- r - un entier : maximum des codes de sortie de tous les processus créés par mpiexec.
 
 ## 📄 Description
 
-Run an MPI script in nelson.
+Exécute un script MPI dans Nelson.
 
-MPI process are launched in CLI mode (no gui, no plot).
+Les processus MPI sont lancés en mode CLI (sans interface graphique, sans tracé).
 
 ## 💡 Exemple
 

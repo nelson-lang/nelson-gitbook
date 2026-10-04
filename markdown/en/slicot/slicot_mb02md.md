@@ -55,6 +55,10 @@ C_IN = [0.80010  0.39985  0.60005  0.89999;
 [RANK_OUT, C_OUT, S, X, IWARN, INFO] = slicot_mb02md(JOB, M, N, L, RANK_IN, C_IN, TOL)
 ```
 
+## 🔗 See also
+
+[slicot_mb04gd](../slicot/slicot_mb04gd.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

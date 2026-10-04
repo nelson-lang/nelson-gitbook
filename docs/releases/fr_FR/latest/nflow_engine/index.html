@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
+</head>
+<body>
+<img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
+<div class="section-title">moteur nflow</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+<p>Création et édition programmatiques de modèles de blocs-diagrammes nflow.</p>
+    <p>NFlow est actuellement publié en version <b>1.0.0-beta.1</b> : fonctionnel et testé, mais les détails de ses interfaces et de son format de fichier peuvent encore évoluer selon les retours.</p>
+</div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="NFlow.exportfmu.html" target="contentFrame">NFlow.exportfmu</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exporte un modele nflow en FMU source FMI 3.0 Co-Simulation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="NFlow.plotScopes.html" target="contentFrame">NFlow.plotScopes</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ouvre une figure par scope d'un résultat de simulation nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="add_block.html" target="contentFrame">add_block</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ajoute un bloc à un modèle nflow depuis une source de bibliothèque.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="add_line.html" target="contentFrame">add_line</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Connecte deux ports de blocs dans un modèle nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bdIsDirty.html" target="contentFrame">bdIsDirty</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne vrai lorsqu'un modèle nflow a des modifications non sauvegardées.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bdIsLoaded.html" target="contentFrame">bdIsLoaded</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne vrai lorsqu'un modèle nflow est chargé.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bdclose.html" target="contentFrame">bdclose</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Décharge un ou tous les modèles nflow en abandonnant les modifications non sauvegardées.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bdroot.html" target="contentFrame">bdroot</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le modèle de plus haut niveau d'un chemin de bloc.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="close_system.html" target="contentFrame">close_system</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Décharge un modèle nflow ; un modèle modifié requiert un indicateur de sauvegarde explicite.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="delete_block.html" target="contentFrame">delete_block</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime un bloc et toutes ses connexions d'un modèle nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="delete_line.html" target="contentFrame">delete_line</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime une connexion entre deux ports de blocs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="find_system.html" target="contentFrame">find_system</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Liste les blocs d'un modèle, éventuellement filtrés par type.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="gcbh.html" target="contentFrame">gcbh</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le handle du bloc courant.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="getSimulinkBlockHandle.html" target="contentFrame">getSimulinkBlockHandle</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le handle d'un bloc par chemin, ou -1 si introuvable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="get_param.html" target="contentFrame">get_param</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interroge un paramètre de modèle ou de bloc.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="getfullname.html" target="contentFrame">getfullname</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renvoie le chemin complet d'un bloc ou d'un modèle depuis son handle.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="linmod.html" target="contentFrame">linmod</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linéarisation numérique d'un modèle nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="load_system.html" target="contentFrame">load_system</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Charge un modèle nflow depuis un fichier .nflow sans ouvrir l'éditeur.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="new_system.html" target="contentFrame">new_system</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Crée et charge un modèle nflow vide.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nflow_codegenerate.html" target="contentFrame">nflow_codegenerate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Genere du code C ou Rust autonome depuis un modele nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="save_system.html" target="contentFrame">save_system</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sauvegarde un modèle nflow dans un fichier .nflow.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="set_param.html" target="contentFrame">set_param</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Définit atomiquement des paramètres de modèle ou de bloc.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sim.html" target="contentFrame">sim</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Simule un modèle nflow et retourne ses résultats.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ssp.html" target="contentFrame">NFlow.sspInfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Inspecte, importe et exporte des archives SSP (System Structure and Parameterization).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="trim.html" target="contentFrame">trim</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trouver un point de fonctionnement d'équilibre d'un modèle nflow.</div>
+</li>
+</ul>
+</div>
+</body>
+</html>

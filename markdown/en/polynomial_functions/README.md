@@ -8,7 +8,9 @@ This module enables efficient handling of polynomial expressions for mathematica
 
 ## Functions
 
+- [compan](compan.md) - Companion matrix.
 - [deconv](deconv.md) - Deconvolution and polynomial division.
+- [mkpp](mkpp.md) - Make a piecewise polynomial
 - [poly](poly.md) - Polynomial with specified roots or characteristic polynomial.
 - [polyder](polyder.md) - Polynomial differentiation.
 - [polyfit](polyfit.md) - Polynomial curve fitting.
@@ -16,4 +18,5 @@ This module enables efficient handling of polynomial expressions for mathematica
 - [polyval](polyval.md) - Polynomial evaluation.
 - [polyvalm](polyvalm.md) - Matrix polynomial evaluation.
 - [ppval](ppval.md) - Evaluate a piecewise polynomial form
+- [residue](residue.md) - Partial fraction expansion (residues)
 - [roots](roots.md) - Find polynomial roots.

@@ -38,7 +38,7 @@ Arguments Nom-Valeur :
 
 <b>HeaderFields</b> Noms et valeurs des en-têtes : tableau m-by-2 de chaînes ou cellule de vecteurs de caractères.
 
-<b>ContentType</b> Type de contenu : chaîne. Valeurs supportées : 'auto', 'text', 'audio', 'binary', 'json', 'raw'.
+<b>ContentType</b> Type de contenu : chaîne. Valeurs supportées : 'auto', 'text', 'image', 'binary', 'table', 'audio', 'json', 'xmldom', 'raw'.
 
 <b>ContentReader</b> Lecteur de contenu : handle de fonction.
 
@@ -48,7 +48,7 @@ Arguments Nom-Valeur :
 
 <b>ArrayFormat</b> : 'csv' (par défaut), 'json', 'repeating' ou 'php'.
 
-<b>CertificateFilename</b> Nom de fichier des certificats racine : chaîne.
+<b>CertificateFilename</b> Nom de fichier des certificats racine : 'default', vide ou fichier existant.
 
 <b>FollowLocation</b> indique à la bibliothèque de suivre les redirections Location: envoyées par un serveur HTTP dans une réponse 30x : logique, false par défaut.
 
@@ -65,10 +65,11 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 
 ## 🕔 Historique
 
-| Version | 📄 Description                  |
-| ------- | ------------------------------- |
-| 1.0.0   | version initiale                |
-| 1.6.0   | option 'FollowLocation' ajoutée |
+| Version | 📄 Description                            |
+| ------- | ----------------------------------------- |
+| 1.0.0   | version initiale                          |
+| 1.6.0   | option 'FollowLocation' ajoutée           |
+| 2.0.0   | weboptions est une classe valeur classdef |
 
 <!--
 ## 👤 Auteur

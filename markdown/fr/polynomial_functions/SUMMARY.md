@@ -1,5 +1,7 @@
 - [polynomial_functions](README.md)
+  - [compan](compan.md)
   - [deconv](deconv.md)
+  - [mkpp](mkpp.md)
   - [poly](poly.md)
   - [polyder](polyder.md)
   - [polyfit](polyfit.md)
@@ -7,4 +9,5 @@
   - [polyval](polyval.md)
   - [polyvalm](polyvalm.md)
   - [ppval](ppval.md)
+  - [residue](residue.md)
   - [roots](roots.md)

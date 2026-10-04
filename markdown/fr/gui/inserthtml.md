@@ -1,6 +1,6 @@
 # inserthtml
 
-Insère du HTML dans la console GUI.
+InsÃ¨re du HTML dans la console GUI.
 
 ## 📝 Syntaxe
 
@@ -12,7 +12,7 @@ Insère du HTML dans la console GUI.
 
 ## 📄 Description
 
-<b>inserthtml</b> insère du code HTML dans la console GUI.
+<b>inserthtml</b> insÃ¨re du code HTML dans la console GUI.
 
 ## 💡 Exemple
 

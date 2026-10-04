@@ -9,8 +9,8 @@ Check for the existence.
 
 ## 📥 Input argument
 
-- name - a string: name of variable, function, file or directory.
-- category - a string: 'var', 'builtin', 'file', or 'dir'.
+- name - a string: name of variable, function, file, directory, or class.
+- category - a string: 'var', 'builtin', 'file', 'dir', or 'class'.
 
 ## 📤 Output argument
 
@@ -18,7 +18,7 @@ Check for the existence.
 
 ## 📄 Description
 
-<b>exists</b> checks for the existence of variable, builtin, file or directory.
+<b>exists</b> checks for the existence of variable, builtin, file, directory, or class.
 
 <b>exists</b> returns:
 
@@ -33,6 +33,8 @@ Check for the existence.
 <b>5</b> is a builtin or function
 
 <b>7</b> is a directory
+
+<b>8</b> is a class
 
 ## 💡 Example
 

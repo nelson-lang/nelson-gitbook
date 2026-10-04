@@ -16,6 +16,10 @@ Démos QML.
 qml_demos()
 ```
 
+## 🔗 Voir aussi
+
+[qml_loadfile](../qml_engine/qml_loadfile.md), [qml_createqquickview](../qml_engine/qml_createqquickview.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

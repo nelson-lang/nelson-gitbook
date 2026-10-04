@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>griddedInterpolant</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">griddedInterpolant</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Objet d'interpolation de donnees sur grille</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">F = griddedInterpolant(x, v)
+F = griddedInterpolant(x, v, method)
+F = griddedInterpolant(x, v, method, extrapolationMethod)
+F = griddedInterpolant(gridVecs, V)
+F = griddedInterpolant(X1, X2, ..., Xn, V)
+F = griddedInterpolant(V)
+Vq = F(xq)
+Vq = F(xq1, xq2, ..., xqn)
+Vq = F(queryGridVecs)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>un vecteur de points d'echantillonnage (grille 1-D), strictement croissant.</td>
+</tr>
+<tr>
+<td class="param-name">v</td>
+<td>les valeurs aux points d'echantillonnage.</td>
+</tr>
+<tr>
+<td class="param-name">gridVecs</td>
+<td>un tableau de cellules <b>{x1, x2, ..., xn}</b> de vecteurs de grille, un par dimension de <b>V</b>.</td>
+</tr>
+<tr>
+<td class="param-name">V</td>
+<td>un tableau de valeurs definies sur la grille.</td>
+</tr>
+<tr>
+<td class="param-name">method</td>
+<td>une chaine de caracteres : <b>'linear'</b> (defaut), <b>'nearest'</b>, <b>'previous'</b>, <b>'next'</b>, <b>'pchip'</b>, <b>'cubic'</b>, <b>'spline'</b> ou <b>'makima'</b>.</td>
+</tr>
+<tr>
+<td class="param-name">extrapolationMethod</td>
+<td>une chaine de caracteres choisissant la regle d'extrapolation : <b>'linear'</b>, <b>'nearest'</b>, <b>'previous'</b>, <b>'next'</b>, <b>'pchip'</b>, <b>'cubic'</b>, <b>'spline'</b>, <b>'makima'</b> ou <b>'none'</b>. Le defaut correspond a <b>method</b>.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">F</td>
+<td>un objet griddedInterpolant.</td>
+</tr>
+<tr>
+<td class="param-name">Vq</td>
+<td>les valeurs interpolees aux points de requete.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>griddedInterpolant</b> stocke des points et des valeurs sur grille pour des requetes d'interpolation repetees.</p>
+    <p>L'objet expose quatre proprietes accessibles en lecture et en ecriture : <b>GridVectors</b> (un tableau de cellules de vecteurs de grille), <b>Values</b>, <b>Method</b> et <b>ExtrapolationMethod</b>.</p>
+    <p>On evalue l'interpolant en appelant l'objet comme une fonction, soit avec un tableau de requete par dimension, soit avec un unique tableau de cellules de vecteurs de requete.</p>
+    <p>La methode <b>'cubic'</b> utilise la convolution cubique et requiert une grille a espacement uniforme ; sur une grille non uniforme elle bascule vers <b>'spline'</b>. La convolution cubique ne gere pas l'extrapolation : les points hors grille renvoient <b>NaN</b> lorsque <b>ExtrapolationMethod</b> vaut <b>'cubic'</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Interpolation 1-D.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = griddedInterpolant([1 2 3], [10 20 30]);
+Vq = F(2.5)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Grille N-D donnee comme un tableau de cellules de vecteurs de grille.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = griddedInterpolant({1:3, 1:3}, magic(3));
+Vq = F(2, 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Interpolation spline et lecture des proprietes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = griddedInterpolant([1 2 3], [10 20 30], 'spline');
+Vq = F(2.5);
+F.Method
+F.ExtrapolationMethod</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../special_functions/interp1.html">interp1</a><a class="see-also-link" href="../special_functions/interpn.html">interpn</a><a class="see-also-link" href="../geometry/scatteredInterpolant.html">scatteredInterpolant</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Version initiale.</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

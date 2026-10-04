@@ -20,18 +20,7 @@ Creates MPI_Comm object.
 CLI required
 
 ```matlab
-
-if ~MPI_Initialized()
-  MPI_Init();
-end
-comm = MPI_Comm_object();
-MPI_Comm_used
-delete(MPI_Comm_used())
-MPI_Comm_used
-if MPI_Initialized()
-  MPI_Finalize();
-end
-
+used = MPI_Comm_used()
 ```
 
 ## 🔗 See also

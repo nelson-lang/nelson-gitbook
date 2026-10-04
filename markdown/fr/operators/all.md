@@ -1,6 +1,6 @@
 # all
 
-all of the elements of a matrix satisfy some condition.
+tous les éléments d'une matrice satisfont une condition.
 
 ## 📝 Syntaxe
 
@@ -10,23 +10,32 @@ all of the elements of a matrix satisfy some condition.
 
 ## 📥 Argument d'entrée
 
-- M - a matrix.
-- dim - a integer value: dimension along it works.
-- 'all' - tests over all elements of M.
+- M - une matrice.
+- dim - un entier : dimension le long de laquelle elle opère.
+- 'all' - teste sur tous les éléments de M.
 
 ## 📤 Argument de sortie
 
-- R - a logical matrix.
+- R - une matrice de booléens.
 
 ## 📄 Description
 
-<b>all</b> returns true if all of the elements of a matrix satisfy some condition.
+<b>all</b> renvoie true si tous les éléments d'une matrice satisfont une condition.
 
-## 💡 Exemple
+Les matrices sparse single et sparse single complexes sont prises en charge. Les zéros implicites du sparse participent au test logique comme des valeurs nulles.
+
+## 💡 Exemples
 
 ```matlab
 all([33, 22; 11, 0])
 all([33, 22; 11, 0], 2)
+```
+
+Test logique sur une matrice sparse single.
+
+```matlab
+S = sparse(single([1 0; 2 3]));
+R = all(S, 1)
 ```
 
 ## 🔗 Voir aussi
@@ -35,9 +44,10 @@ all([33, 22; 11, 0], 2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                                         |
+| ------- | ---------------------------------------------------------------------- |
+| 1.0.0   | version initiale                                                       |
+| 2.0.0   | prise en charge des matrices sparse single et sparse single complexes. |
 
 <!--
 ## 👤 Auteur

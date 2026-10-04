@@ -3,6 +3,8 @@
   - [executable](executable.md)
   - [finish](finish.md)
   - [getnelsonmode](getnelsonmode.md)
+  - [getwebmode](getwebmode.md)
+  - [getweburl](getweburl.md)
   - [isquietmode](isquietmode.md)
   - [System Requirements](nelson_system_requirement.md)
   - [#! shebang](shebang.md)

@@ -6,16 +6,28 @@ Efface une variable de l'espace de travail.
 
 - clear
 - clear variable_name
-- clear -scope scope_name
+- clear('-regexp', expression_1, ..., expression_N)
+- clear global
+- clear all
+- clear mex
+- clear variables
+- clear functions
+- clear classes
+- clear function_name
+- clear mexfunction_name
+- clear variable_name_1 ... variable_name_N
+- clear global variable_name_1 ... variable_name_N
 
 ## 📥 Argument d'entrée
 
-- variable_name - a string: variable name.
+- variable_name - un vecteur de caracteres ou un scalaire string : nom de variable.
+- -regexp - efface les variables de l'espace de travail courant dont le nom correspond a l'une des expressions regulieres.
 - global - clears all global variables.
 - all - clears all variables in all scopes
 - mex - clears all mex functions in all scopes
 - variables - clears all variables in current scope.
 - functions - clears cache of macros functions and associated persistent variables.
+- classes - efface les variables classdef vivantes, les metadonnees classdef et le cache des methodes de classe generees.
 - function_name - clears persistent variables of a function.
 - mexfunction_name - clears mex function (see mexAtExit).
 
@@ -25,19 +37,48 @@ Supprime des variables de l'espace de travail courant ou d'une portée spécifi�
 
 À utiliser avec prudence : cette opération ne peut pas être annulée.
 
-## 💡 Exemple
+<b>clear('-regexp', ...)</b> efface les variables de l'espace de travail courant dont le nom correspond a l'une des expressions regulieres donnees.
+
+<b>clear classes</b> efface les variables classdef vivantes et recharge les definitions classdef depuis le disque lors de la prochaine utilisation.
+
+## 💡 Exemples
 
 ```matlab
 A = 3;
 who
 clear A
 who
-A
+exist('A', 'var')
+```
+
+Effacer des variables avec une expression reguliere.
+
+```matlab
+MonValue = 1;
+TueValue = 2;
+KeepValue = 3;
+clear('-regexp', '^Mon', '^Tue')
+who
+```
+
+Recharger une definition classdef depuis le disque.
+
+```matlab
+clear classes
+d = [tempdir(), 'nelson_help_clear_classdef_fr/'];
+mkdir(d);
+file = [d, '/NelsonHelpClearReloadFr.m'];
+filewrite(file, ["classdef NelsonHelpClearReloadFr"; "  properties (Constant)"; "    Version = 1"; "  end"; "end"]);
+addpath(d);
+NelsonHelpClearReloadFr.Version
+filewrite(file, ["classdef NelsonHelpClearReloadFr"; "  properties (Constant)"; "    Version = 2"; "  end"; "end"]);
+clear classes
+NelsonHelpClearReloadFr.Version
 ```
 
 ## 🔗 Voir aussi
 
-[who](../memory_manager/who.md).
+[clearvars](../memory_manager/clearvars.md), [who](../memory_manager/who.md).
 
 ## 🕔 Historique
 

@@ -1,60 +1,51 @@
 # errordlg
 
-Creates a error dialog box.
+Creates an error dialog box.
 
 ## 📝 Syntax
 
-- h = errordlg()
-- h = errordlg(text_error)
-- h = errordlg(text_error, title)
-- h = errordlg(text_error, title, mode)
+- h = errordlg
+- h = errordlg(message)
+- h = errordlg(message, title)
+- h = errordlg(message, title, mode)
 
 ## 📥 Input argument
 
-- text_error - a string or a cell of string: the error message.
-- title - a string: the title of the dialog box.
-- mode - a string: 'mode', 'non-modal', 'replace'.
+- message - Error text. Use a character vector, string, or cell array of character vectors.
 
 ## 📤 Output argument
 
-- h - a QObject handle.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>errordlg</b> creates an error dialog box.
-
-<b>h = errordlg(text_error, title, 'replace')</b> specifies whether to replace an existing dialog box having the same title.
-
-<img src="errordlg_1.png"/>
+errordlg creates an error message dialog and returns a graphics figure handle.
 
 ## 💡 Examples
 
-```matlab
-h = errordlg()
-```
+Create an error dialog.
 
 ```matlab
-h = errordlg('error string')
+h = errordlg('Invalid value.', 'Error', 'non-modal');
 ```
 
-```matlab
-h = errordlg('error string', 'dialog title')
-```
+<img src="errordlg_example.svg" align="middle"/>
+Create the default error dialog.
 
 ```matlab
-h = errordlg('error string', 'dialog title')
-h = errordlg('error string', 'dialog title', 'on')
+h = errordlg();
+close(h)
 ```
 
 ## 🔗 See also
 
-[warndlg](../gui/warndlg.md), [questdlg](../gui/questdlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
+[msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [warndlg](../gui/warndlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description           |
+| ------- | ------------------------ |
+| 2.0.0   | Updated dialog API help. |
 
 <!--
 ## 👤 Author

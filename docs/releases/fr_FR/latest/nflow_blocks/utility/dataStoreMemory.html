@@ -1,0 +1,1265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>dataStoreMemory</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dataStoreMemory</span></div></div>
+<div class="section" style="text-align:center;"><img src="./dataStoreMemory.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Declare une memoire scalaire nommee partagee dans tout le modele (valeur initiale).</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Type de bloc : dataStoreMemory
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports d entree</td>
+<td>Aucun port d entree (ce bloc n en a aucun).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports de sortie</td>
+<td>Aucun port de sortie (ce bloc n en a aucun).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Declare une memoire scalaire nommee partagee dans tout le modele (valeur initiale).</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Bibliotheque</td>
+<td>Utilitaires</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dataStoreMemory</code></td>
+</tr>
+        <tr>
+<td>Libelle</td>
+<td>Data Store Memory</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Description</b></p>
+    <p>Declare une memoire scalaire nommee (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">DataStoreName</code>) avec une <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">InitialValue</code>, sans aucun fil. La memoire est ecrite par des blocs <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dataStoreWrite</code> et lue par des blocs <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dataStoreRead</code> referencant le meme nom, permettant une communication a l'echelle du modele sans lignes de routage. Le magasin est une map par thread re-initialisee a chaque run par l'INIT de ce bloc.</p>
+    <p>Natif seulement ; scalaire. Les lectures voient l'ecriture du pas precedent (latence d'un pas, comme un retard unitaire).</p>
+    <p><b>Ports</b></p>
+    <p>Ce bloc n'a aucun port d'entree.</p>
+    <p>Ce bloc n'a aucun port de sortie.</p>
+    <p><b>Parametres</b></p>
+    <table border="1">
+      <tr>
+<th>Parametre</th>
+<th>Valeur par defaut</th>
+</tr>
+      
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">DataStoreName</code></td>
+<td>A</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">InitialValue</code></td>
+<td>0</td>
+</tr>
+      
+    </table>
+    <p><b>Caracteristiques du bloc</b></p>
+    <table border="1">
+      
+        <tr>
+<td>Type de bloc</td>
+<td>dataStoreMemory</td>
+</tr>
+        <tr>
+<td>Famille</td>
+<td>Utilitaires</td>
+</tr>
+        <tr>
+<td>Taille rendue</td>
+<td>70 x 60</td>
+</tr>
+        <tr>
+<td>Phases</td>
+<td>INIT</td>
+</tr>
+        <tr>
+<td>Etat interne ou historique</td>
+<td>non</td>
+</tr>
+        <tr>
+<td>Type de donnees du signal</td>
+<td>valeurs numeriques double</td>
+</tr>
+      
+    </table>
+    <p><b>Algorithmes</b></p>
+    <ul>
+      <li>INIT : store[DataStoreName] = InitialValue. Le bloc n'a pas de ports.</li>
+    </ul>
+    <p><b>Capacites etendues</b></p>
+    <p>Execution native seulement (ce bloc n'est pas genere en code).</p>
+    <p><b>Sources d implementation</b></p>
+    <p>Generation de code : prise en charge pour C et Rust.</p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/utility/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.utility",
+  "title": "Utility",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Utility blocks such as switches, comments, and subsystems",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "comment",
+      "label": "Comment",
+      "icon": "comment.svg",
+      "phases": [],
+      "width": 220,
+      "height": 120,
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "CommentText": "",
+        "ShowBorder": true
+      },
+      "render": {
+        "type": "comment",
+        "bodyClass": "block-body"
+      }
+    },
+    {
+      "type": "switch",
+      "label": "Switch",
+      "icon": "switch.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 0,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 80,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Criteria": "ge",
+        "Threshold": 0
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "switch-math"
+      }
+    },
+    {
+      "type": "multiportSwitch",
+      "label": "Multiport Switch",
+      "icon": "multiportSwitch.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 40,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 20,
+          "y": 0,
+          "side": "top"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 60,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DataPortCount": 3
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/multiportSwitch.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 90
+      }
+    },
+    {
+      "type": "toggleSwitch",
+      "label": "Toggle Switch",
+      "icon": "toggleSwitch.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "State": 0,
+        "OnLabel": "ON",
+        "OffLabel": "OFF",
+        "OnValue": 1,
+        "OffValue": 0
+      },
+      "render": {
+        "type": "toggle"
+      }
+    },
+    {
+      "type": "subsystem",
+      "icon": "subsystem.svg",
+      "label": "Subsystem",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "ALGEBRAIC",
+        "UPDATE"
+      ],
+      "width": 120,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 120,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "name": "Subsystem",
+        "externalInputs": [],
+        "externalOutputs": [],
+        "subsystem": null
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "subsystem-math",
+        "formula": "\\mathsf{Sub}"
+      }
+    },
+    {
+      "type": "mux",
+      "label": "Mux",
+      "icon": "mux.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 8,
+      "height": 40,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 10,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 30,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 8,
+          "y": 20,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Inputs": 2
+      }
+    },
+    {
+      "type": "demux",
+      "label": "Demux",
+      "icon": "demux.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 8,
+      "height": 40,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 8,
+          "y": 10,
+          "side": "right"
+        },
+        {
+          "x": 8,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Outputs": 2
+      }
+    },
+    {
+      "type": "convert",
+      "label": "Convert",
+      "icon": "convert.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutDataType": "double",
+        "SaturateOnOverflow": true,
+        "Rounding": "nearest"
+      }
+    },
+    {
+      "type": "initialCondition",
+      "label": "IC",
+      "icon": "initialCondition.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialValue": 0
+      }
+    },
+    {
+      "type": "dataStoreMemory",
+      "label": "Data Store Memory",
+      "icon": "dataStoreMemory.svg",
+      "phases": [
+        "INIT"
+      ],
+      "width": 70,
+      "height": 60,
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "DataStoreName": "A",
+        "InitialValue": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/dataStoreMemory.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "type": "dataStoreWrite",
+      "label": "Data Store Write",
+      "icon": "dataStoreWrite.svg",
+      "phases": [
+        "INIT",
+        "UPDATE"
+      ],
+      "width": 70,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 30,
+          "side": "left"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {
+        "DataStoreName": "A"
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/dataStoreWrite.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "type": "dataStoreRead",
+      "label": "Data Store Read",
+      "icon": "dataStoreRead.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 70,
+      "height": 60,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 70,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DataStoreName": "A"
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/dataStoreRead.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 60
+      }
+    },
+    {
+      "type": "selector",
+      "label": "Selector",
+      "icon": "selector.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Indices": "1"
+      }
+    },
+    {
+      "type": "reshape",
+      "label": "Reshape",
+      "icon": "reshape.svg",
+      "phases": [
+        "INIT",
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutputDimensions": ""
+      }
+    },
+    {
+      "type": "concatenate",
+      "label": "Concatenate",
+      "icon": "concatenate.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 60,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 60,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "ConcatenateDimension": 1
+      }
+    },
+    {
+      "type": "busCreator",
+      "label": "Bus Creator",
+      "icon": "busCreator.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 70,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 45,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 35,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "BusType": "",
+        "NonVirtual": false,
+        "MemberNames": []
+      }
+    },
+    {
+      "type": "busSelector",
+      "label": "Bus Selector",
+      "icon": "busSelector.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 85,
+      "height": 70,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 35,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 85,
+          "y": 25,
+          "side": "right"
+        },
+        {
+          "x": 85,
+          "y": 45,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "SelectedSignals": [],
+        "OutputAsBus": false
+      }
+    },
+    {
+      "type": "merge",
+      "label": "Merge",
+      "icon": "merge.svg",
+      "phases": [
+        "INIT",
+        "ALGEBRAIC"
+      ],
+      "width": 40,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 30,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 50,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialOutput": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/merge.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 80
+      }
+    },
+    {
+      "type": "functionCallGenerator",
+      "label": "Function-Call Generator",
+      "icon": "functionCallGenerator.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 60,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "NumberOfIterations": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/functionCallGenerator.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60
+      }
+    },
+    {
+      "type": "functionCallSplit",
+      "label": "Function-Call Split",
+      "icon": "functionCallSplit.svg",
+      "phases": [],
+      "width": 60,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 60,
+          "y": 30,
+          "side": "right"
+        },
+        {
+          "x": 60,
+          "y": 50,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "image",
+        "src": "exports/functionCallSplit.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 80
+      }
+    },
+    {
+      "type": "iteratorNumber",
+      "label": "Iterator Number",
+      "icon": "iteratorNumber.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 70,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 70,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "image",
+        "src": "exports/iteratorNumber.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 50
+      }
+    },
+    {
+      "type": "iteratorCondition",
+      "label": "Iterator Condition",
+      "icon": "iteratorCondition.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 70,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 70,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "image",
+        "src": "exports/iteratorCondition.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 50
+      }
+    },
+    {
+      "type": "width",
+      "label": "Width",
+      "icon": "width.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 80,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {}
+    },
+    {
+      "type": "signalConversion",
+      "label": "Signal Conversion",
+      "icon": "signalConversion.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 25,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {}
+    },
+    {
+      "type": "assignment",
+      "label": "Assignment",
+      "icon": "assignment.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 90,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Indices": [
+          1
+        ]
+      }
+    },
+    {
+      "type": "busAssignment",
+      "label": "Bus Assignment",
+      "icon": "busAssignment.svg",
+      "phases": [
+        "ALGEBRAIC"
+      ],
+      "width": 100,
+      "height": 60,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 20,
+          "side": "left"
+        },
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 100,
+          "y": 30,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "AssignedSignals": []
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/routing/dataStore.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+// Data Store Memory / Read / Write: a named scalar memory shared between blocks
+// of a model without a wire (Data Store Memory declares it with an initial
+// value; Data Store Write updates it; Data Store Read outputs it). The store is
+// a per-thread map keyed by DataStoreName, so it persists across steps within a
+// run and is re-seeded each run by the Memory block's INIT. Read observes the
+// value as of the previous step's Write (Read runs in OUTPUT, Write in UPDATE),
+// i.e. one-step latency, matching a unit delay. Scalar only; native (the
+// cross-block store is outside the code-generation model).
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include "NFlowCodegenLang.hpp"
+#include &lt;cctype&gt;
+#include &lt;string&gt;
+#include &lt;unordered_map&gt;
+#include "routing_blocks.hpp"
+//=============================================================================
+namespace Nelson {
+namespace NFlow {
+    //=============================================================================
+    // Per-thread named store. A sim run is synchronous on one thread, so this
+    // persists across that run's steps; concurrent runs on other threads get
+    // their own map. Each entry is (re)seeded by the owning Memory block's INIT.
+    static std::unordered_map&lt;std::string, double&gt;&amp;
+    dataStoreMap()
+    {
+        static thread_local std::unordered_map&lt;std::string, double&gt; store;
+        return store;
+    }
+    //=============================================================================
+    static std::string
+    dataStoreName(const Block&amp; b, const SimCtx&amp; ctx)
+    {
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        return bd.paramStr("DataStoreName", "A");
+    }
+    //=============================================================================
+    bool
+    handleDataStoreMemory(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        if (phase != Phase::INIT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const std::string name = bd.paramStr("DataStoreName", "A");
+        dataStoreMap()[name] = bd.paramDouble("InitialValue", 0.0);
+        return false;
+    }
+    //=============================================================================
+    bool
+    handleDataStoreWrite(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        if (phase == Phase::INIT) {
+            // Seed the entry if no Memory block declared it, so a lone
+            // Write/Read pair still starts from a defined value.
+            const std::string name = dataStoreName(b, ctx);
+            dataStoreMap().emplace(name, 0.0);
+            return false;
+        }
+        // The write lands in the topologically ordered phase, not at the end
+        // of the step: a read placed after it then sees the value written this
+        // step, which is what an execution order means.
+        if (phase != Phase::ALGEBRAIC) {
+            return false;
+        }
+        if (!hasInput(ctx, b.nid, 0)) {
+            return false;
+        }
+        dataStoreMap()[dataStoreName(b, ctx)] = getInput(ctx, b.nid, 0, 0.0);
+        return false;
+    }
+    //=============================================================================
+    bool
+    handleDataStoreRead(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        if (phase != Phase::ALGEBRAIC) {
+            return false;
+        }
+        const std::string name = dataStoreName(b, ctx);
+        const auto&amp; store = dataStoreMap();
+        auto it = store.find(name);
+        setOutput(ctx, b.nid, (it != store.end()) ? it-&gt;second : 0.0);
+        return false;
+    }
+    //=============================================================================
+    // ---- Code generation ----
+    // The named store becomes ONE shared ModelState field ds_&lt;name&gt; per
+    // DataStoreName. Ordering mirrors the simulator's one-step latency
+    // (Read in OUTPUT, Write in UPDATE) without synthetic edges: a Read has
+    // no wired input, so the topological sort always emits it in the first
+    // wave, before any Write (which needs its producer first). The field is
+    // declared once (any of the three blocks triggers it, seeded 0.0 like a
+    // lone Write/Read pair); a Memory block appends its InitialValue init
+    // AFTER the seed, so it wins whatever the block order.
+    //=============================================================================
+    static std::string
+    dataStoreField(const BlockCodegenStateArgs&amp; a)
+    {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const std::string name = bd.paramStr("DataStoreName", "A");
+        std::string field = "ds_";
+        for (char c : name) {
+            field += (std::isalnum(static_cast&lt;unsigned char&gt;(c)) != 0) ? c : '_';
+        }
+        return field;
+    }
+    //=============================================================================
+    static std::string
+    dataStoreFieldStep(const BlockCodegenArgs&amp; a)
+    {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const std::string name = bd.paramStr("DataStoreName", "A");
+        std::string field = "ds_";
+        for (char c : name) {
+            field += (std::isalnum(static_cast&lt;unsigned char&gt;(c)) != 0) ? c : '_';
+        }
+        return field;
+    }
+    //=============================================================================
+    static void
+    ensureDataStoreField(const BlockCodegenStateArgs&amp; a, CodegenLang L)
+    {
+        const std::string field = dataStoreField(a);
+        if (!a.once("dsdecl:" + field)) {
+            return;
+        }
+        if (L.rust) {
+            a.declState("    pub " + field + ": f64,");
+            a.addInit("    s." + field + " = 0.0;");
+        } else {
+            a.declState("double " + field + ";");
+            a.addInit("  s-&gt;" + field + " = 0.0;");
+        }
+    }
+    //=============================================================================
+    static BlockCodegenTemplate
+    makeDataStoreMemoryCodegen(CodegenLang L)
+    {
+        BlockCodegenTemplate t;
+        t.emitState = [L](const BlockCodegenStateArgs&amp; a) {
+            ensureDataStoreField(a, L);
+            nflow::BlockDescriptor bd(*a.block, *a.variables);
+            const std::string field = dataStoreField(a);
+            const std::string init = a.fmt(bd.paramDouble("InitialValue", 0.0));
+            if (L.rust) {
+                a.addInit("    s." + field + " = " + init + ";");
+            } else {
+                a.addInit("  s-&gt;" + field + " = " + init + ";");
+            }
+        };
+        t.emitStep = [L](const BlockCodegenArgs&amp; a) {
+            a.line("out_" + a.id + " = " + L.sref(dataStoreFieldStep(a)) + ";");
+        };
+        return t;
+    }
+    //=============================================================================
+    static BlockCodegenTemplate
+    makeDataStoreWriteCodegen(CodegenLang L)
+    {
+        BlockCodegenTemplate t;
+        t.emitState = [L](const BlockCodegenStateArgs&amp; a) { ensureDataStoreField(a, L); };
+        t.emitStep = [L](const BlockCodegenArgs&amp; a) {
+            a.line("out_" + a.id + " = " + a.in[0] + ";");
+            a.line(L.sref(dataStoreFieldStep(a)) + " = out_" + a.id + ";");
+        };
+        return t;
+    }
+    //=============================================================================
+    static BlockCodegenTemplate
+    makeDataStoreReadCodegen(CodegenLang L)
+    {
+        BlockCodegenTemplate t;
+        t.emitState = [L](const BlockCodegenStateArgs&amp; a) { ensureDataStoreField(a, L); };
+        t.emitStep = [L](const BlockCodegenArgs&amp; a) {
+            a.line("out_" + a.id + " = " + L.sref(dataStoreFieldStep(a)) + ";");
+        };
+        return t;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenCDataStoreMemory()
+    {
+        return makeDataStoreMemoryCodegen({ false });
+    }
+    BlockCodegenTemplate
+    getCodeGenRustDataStoreMemory()
+    {
+        return makeDataStoreMemoryCodegen({ true });
+    }
+    BlockCodegenTemplate
+    getCodeGenCDataStoreWrite()
+    {
+        return makeDataStoreWriteCodegen({ false });
+    }
+    BlockCodegenTemplate
+    getCodeGenRustDataStoreWrite()
+    {
+        return makeDataStoreWriteCodegen({ true });
+    }
+    BlockCodegenTemplate
+    getCodeGenCDataStoreRead()
+    {
+        return makeDataStoreReadCodegen({ false });
+    }
+    BlockCodegenTemplate
+    getCodeGenRustDataStoreRead()
+    {
+        return makeDataStoreReadCodegen({ true });
+    }
+    //=============================================================================
+} // namespace NFlow
+} // namespace Nelson
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Declarer la memoire 'M', y ecrire une rampe et la relire avec une latence d'un pas.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks={ struct('id','mem','type','dataStoreMemory','inputs',0,'outputs',0,'params',struct('DataStoreName','M','InitialValue',0)), struct('id','r','type','ramp','inputs',0,'outputs',1,'params',struct('slope',1)), struct('id','wr','type','dataStoreWrite','inputs',1,'outputs',0,'params',struct('DataStoreName','M')), struct('id','rd','type','dataStoreRead','inputs',0,'outputs',1,'params',struct('DataStoreName','M')), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','r','to','wr','fromIndex',0,'toIndex',0), struct('from','rd','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.1; d.duration=1.0; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/utility/dataStoreWrite.html">dataStoreWrite</a><a class="see-also-link" href="../../nflow_blocks/utility/dataStoreRead.html">dataStoreRead</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

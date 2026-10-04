@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>yyaxis</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">yyaxis</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Cree ou selectionne un axe avec deux axes y.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">yyaxis left
+yyaxis right
+yyaxis(ax, 'left')
+yyaxis(ax, 'right')
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">'left'</td>
+<td>Active le cote gauche. Les nouveaux traces sont ajoutes a l'axe y de gauche.</td>
+</tr>
+<tr>
+<td class="param-name">'right'</td>
+<td>Active le cote droit. Les nouveaux traces sont ajoutes a l'axe y de droite.</td>
+</tr>
+<tr>
+<td class="param-name">ax</td>
+<td>Axe cible : axes.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>yyaxis</b> cree un graphique avec deux axes y et selectionne le cote
+    actif. Si l'axe courant n'a pas encore deux axes y, un second est
+    ajoute ; s'il n'y a pas d'axe courant, il est cree.</p>
+    <p>Les deux cotes partagent le meme axe x mais chacun possede ses propres
+    limites, couleur, echelle, direction, graduations, etiquette et enfants.
+    Les proprietes dont le nom commence par <b>Y</b> (comme <b>YLim</b>,
+    <b>YColor</b> ou <b>YLabel</b>) s'appliquent uniquement au cote actif.
+    Interrogez <b>YAxisLocation</b> pour savoir quel cote est actif.</p>
+    <p>Par defaut, la regle de gauche utilise la premiere couleur du
+    <b>ColorOrder</b> de l'axe et la regle de droite la deuxieme
+    couleur.</p>
+    <p>Les deux regles sont aussi disponibles comme objets via la propriete
+    <b>YAxis</b> de l'axe : <b>YAxis(1)</b> est la regle de gauche et
+    <b>YAxis(2)</b> la regle de droite, quel que soit le cote actif.</p>
+    <p><b>cla reset</b> supprime le second axe y et revient a un seul axe
+    y.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+x = linspace(0, 10);
+yyaxis left
+plot(x, sin(x))
+ylabel('cote gauche')
+yyaxis right
+plot(x, 100 * cos(x))
+ylabel('cote droit')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./yyaxis.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../../graphics/2_graphics_objects/1_object_management/hold.html">hold</a><a class="see-also-link" href="../../../graphics/3_labels_styling/1_axes_appearance/axis.html">axis</a><a class="see-also-link" href="../../../graphics/3_labels_styling/4_labels_annotations/ylabel.html">ylabel</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

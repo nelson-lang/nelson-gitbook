@@ -4,7 +4,7 @@ La représentation des opérateurs Python dans Nelson.
 
 ## 📄 Description
 
-Nelson facilite l'utilisation des opérateurs surchargés suivants :
+Nelson prend en charge les opérateurs surchargés suivants :
 
 | Symbole opérateur Python | Méthodes Python                   | Méthodes Nelson |
 | ------------------------ | --------------------------------- | --------------- |

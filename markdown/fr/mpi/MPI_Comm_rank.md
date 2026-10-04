@@ -1,6 +1,6 @@
 # MPI_Comm_rank
 
-Determines the rank of the calling process in the communicator.
+Détermine le rang du processus appelant dans le communicateur.
 
 ## 📝 Syntaxe
 
@@ -8,15 +8,15 @@ Determines the rank of the calling process in the communicator.
 
 ## 📥 Argument d'entrée
 
-- Comm - a MPI_Comm object.
+- Comm - un objet MPI_Comm.
 
 ## 📤 Argument de sortie
 
-- r - an integer value: rank of the calling process in the group of Comm.
+- r - un entier : rang du processus appelant dans le groupe de Comm.
 
 ## 📄 Description
 
-Return the rank of the calling process in the specified communicator.
+Renvoie le rang du processus appelant dans le communicateur spécifié.
 
 ## 💡 Exemple
 

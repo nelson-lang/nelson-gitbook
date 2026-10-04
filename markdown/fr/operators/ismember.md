@@ -5,6 +5,7 @@
 ## 📝 Syntaxe
 
 - T = ismember(A, B)
+- [T, loc] = ismember(A, B)
 
 ## 📥 Argument d'entrée
 
@@ -14,10 +15,13 @@
 ## 📤 Argument de sortie
 
 - T - résultat de ismember.
+- loc - plus petit indice dans B pour chaque élément de A présent, 0 en l'absence de correspondance.
 
 ## 📄 Description
 
 <b>T = ismember(A, B)</b> renvoie un tableau logique indiquant où les éléments de <b>A</b> se trouvent dans <b>B</b>.
+
+<b>[T, loc] = ismember(A, B)</b> renvoie aussi <b>loc</b>, le plus petit indice dans <b>B</b> pour chaque élément de <b>A</b> présent dans <b>B</b>, et 0 sinon.
 
 ## 💡 Exemple
 

@@ -36,6 +36,13 @@ minus([1, 2], 1)
 ones(0, 0) - 1
 ```
 
+Subtract numeric values from character codes.
+
+```matlab
+char(65) - 1
+int8([1 2]) - char(65)
+```
+
 ## 🔗 See also
 
 [plus](../operators/plus.md), [uminus](../operators/uminus.md).

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>fmiInfo</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fmiInfo</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Read the model description of an FMI 2.0 or 3.0 FMU.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">info = fmiInfo(fmu)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">fmu</td>
+<td>a string scalar or character row vector: the path to a <b>.fmu</b> archive, or to an already-extracted FMU directory (a folder that contains a <b>modelDescription.xml</b> file at its root).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">info</td>
+<td>a scalar structure describing the FMU, with the fields listed below.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>fmiInfo</b> parses the <b>modelDescription.xml</b> of a <b>Functional Mock-up Unit</b> (FMU) that follows the <b>FMI 2.0</b> or <b>3.0</b> standard and returns its metadata as a Nelson structure. It performs no simulation: it only reads the static description, so it is inexpensive and safe to call for inspection before setting up a run.</p>
+    <p>The <b>fmu</b> argument may be given in two forms:</p>
+    <ul>
+      <li>
+        <p>a path to a <b>.fmu</b> archive. The archive (a ZIP container) is unpacked with a ZIP-slip-hardened extractor into a fresh temporary directory, which is removed automatically before <b>fmiInfo</b> returns. Entries with absolute paths, drive letters, or <b>..</b> traversal are rejected.</p>
+      </li>
+      <li>
+        <p>a path to an already-extracted FMU directory. In that case nothing is unpacked and the directory is read in place.</p>
+      </li>
+    </ul>
+    <p>The returned structure <b>info</b> has the following fields:</p>
+    <table style="width:100%">
+      <tr>
+        <th>Field</th>
+        <th>Class</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>modelIdentifier</td>
+        <td>char</td>
+        <td>the C model identifier declared by the FMU (used to locate its binary).</td>
+      </tr>
+      <tr>
+        <td>fmiVersion</td>
+        <td>char</td>
+        <td>the FMI version string reported by the FMU (for example <b>2.0</b> or <b>3.0</b>).</td>
+      </tr>
+      <tr>
+        <td>coSimulation</td>
+        <td>logical</td>
+        <td>
+<b>true</b> when the FMU provides the Co-Simulation interface (required by <b>fmiCoSimulate</b>).</td>
+      </tr>
+      <tr>
+        <td>modelExchange</td>
+        <td>logical</td>
+        <td>
+<b>true</b> when the FMU provides the Model Exchange interface.</td>
+      </tr>
+      <tr>
+        <td>scheduledExecution</td>
+        <td>logical</td>
+        <td>
+<b>true</b> when the FMU provides the Scheduled Execution interface.</td>
+      </tr>
+      <tr>
+        <td>names</td>
+        <td>cell of char</td>
+        <td>the names of the scalar variables declared by the FMU, in declaration order.</td>
+      </tr>
+      <tr>
+        <td>valueReferences</td>
+        <td>double</td>
+        <td>the value reference of each variable (the numeric handle used by the FMI get/set calls).</td>
+      </tr>
+      <tr>
+        <td>causalities</td>
+        <td>cell of char</td>
+        <td>the causality of each variable: one of <b>parameter</b>, <b>calculatedParameter</b>, <b>input</b>, <b>output</b>, <b>local</b>, <b>independent</b>, or <b>structuralParameter</b>.</td>
+      </tr>
+      <tr>
+        <td>dataTypes</td>
+        <td>cell of char</td>
+        <td>the declared data type of each variable (for example <b>Float64</b>, <b>Int32</b>, <b>Boolean</b>, <b>String</b>).</td>
+      </tr>
+      <tr>
+        <td>descriptions</td>
+        <td>cell of char</td>
+        <td>the description string of each variable (empty when none is declared).</td>
+      </tr>
+      <tr>
+        <td>startValues</td>
+        <td>double</td>
+        <td>the Float64 start value of each variable, or <b>NaN</b> when the variable declares no start value.</td>
+      </tr>
+    </table>
+    <p>The four variable fields (<b>names</b>, <b>valueReferences</b>, <b>causalities</b>, <b>dataTypes</b>) are aligned element by element: the <b>k</b>-th entry of each describes the same variable. To list the outputs of an FMU, select the entries whose causality is <b>output</b>; those are exactly the signals recorded by <b>fmiCoSimulate</b>.</p>
+    <p>An error is raised when the path does not exist, when the archive cannot be extracted, or when the FMU does not contain a readable <b>modelDescription.xml</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Read the model description of an FMU archive.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">info = fmiInfo('VanDerPol.fmu')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">List only the output variables of the FMU.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">info = fmiInfo('VanDerPol.fmu');
+isOutput = strcmp(info.causalities, 'output');
+outputs = info.names(isOutput)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Check that an FMU supports Co-Simulation before running it.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">info = fmiInfo('VanDerPol.fmu');
+if ~info.coSimulation
+  error('This FMU does not provide the Co-Simulation interface.');
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div><a class="see-also-link" href="../nflow_fmi/fmiCoSimulate.html">fmiCoSimulate</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

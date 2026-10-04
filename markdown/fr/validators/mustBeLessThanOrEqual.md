@@ -1,6 +1,6 @@
 # mustBeLessThanOrEqual
 
-Checks that value is less than or equal to another value or issue error.
+Vérifie qu'une valeur est inférieure ou égale à une autre valeur, sinon émet une erreur.
 
 ## 📝 Syntaxe
 
@@ -10,19 +10,27 @@ Checks that value is less than or equal to another value or issue error.
 
 ## 📥 Argument d'entrée
 
-- var - une variable : tableau logique ou numérique.
-- c - une variable : valeur numérique scalaire.
+- var - une variable : tableau de tout type supportant l'opérateur de comparaison (numérique, logique, char, string, ...). Une valeur vide est toujours acceptée.
+- c - une variable : scalaire ou tableau de taille compatible avec var (expansion implicite).
 - argPosition - un entier positif : position de l'argument d'entrée.
 
 ## 📄 Description
 
-<b>mustBeLessThanOrEqual</b> checks that value is less than or equal to another value or issue error.
+<b>mustBeLessThanOrEqual</b> vérifie qu'une valeur est inférieure ou égale à une autre valeur, sinon émet une erreur.
 
-## 💡 Exemple
+## 💡 Exemples
 
 ```matlab
 mustBeLessThanOrEqual(1, 0)
 mustBeLessThanOrEqual([2 3 4],2)
+```
+
+Comparaison avec un tableau de taille compatible
+
+```matlab
+upper = [1; 2];
+mustBeLessThanOrEqual([0 1; 2 2], upper)
+mustBeLessThanOrEqual([0 1; 2 3], upper)
 ```
 
 ## 🔗 Voir aussi
@@ -31,9 +39,10 @@ mustBeLessThanOrEqual([2 3 4],2)
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                                                                                                       |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.0.0   | version initiale                                                                                                                     |
+| 2.0.0   | c peut être un tableau de taille compatible avec var ; les entrées ne sont plus limitées aux valeurs numériques réelles ou logiques. |
 
 <!--
 ## 👤 Auteur

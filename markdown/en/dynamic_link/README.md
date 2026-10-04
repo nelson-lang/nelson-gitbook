@@ -23,24 +23,25 @@ By default, Nelson does not try to detect a C/C++ compiler on Windows. Do not fo
 - [dlgenerateunloader](dlgenerateunloader.md) - Generates unloader.m file for C++ gateway.
 - [dlgetnelsonincludes](dlgetnelsonincludes.md) - Returns paths of Nelson include directories.
 - [dlgetnelsonlibraries](dlgetnelsonlibraries.md) - Returns paths to Nelson library files.
-- [dllib_used](dllib_used.md) - Returns list of current used dllib handle.
+- [dllib_used](dllib_used.md) - Returns the current valid dllib handles.
 - [dllibinfo](dllibinfo.md) - Returns list of available symbols in an shared library.
 - [dllibisloaded](dllibisloaded.md) - Checks if shared library is loaded.
 - [dlmake](dlmake.md) - call make or nmake tool
 - [dlopen](dlopen.md) - Loads an dynamic library.
 - [dlsym](dlsym.md) - Loads a C/Fortran symbol for an dynamic library.
 - [dlsym_delete](dlsym_delete.md) - Removes dlsym object.
-- [dlsym_used](dlsym_used.md) - Returns list of current used dlsym handle.
+- [dlsym_used](dlsym_used.md) - Returns the current valid dlsym handles.
 - [findcmake](findcmake.md) - find CMake path.
 - [getdynlibext](getdynlibext.md) - Returns the extension of dynamic libraries.
 - [havecompiler](havecompiler.md) - Detect if a C/C++ compiler is configured.
-- [libpointer](libpointer.md) - Creates an C pointer object usuable in Nelson.
+- [isNull](isNull.md) - Determine whether a library pointer is null.
+- [libpointer](libpointer.md) - Creates an C pointer object usable in Nelson.
 - [libpointer_delete](libpointer_delete.md) - Removes libpointer object.
 - [libpointer_isNull](libpointer_isNull.md) - Checks if libpointer handle points on NULL pointer.
 - [libpointer_plus](libpointer_plus.md) - plus operator on libpointer handle.
 - [libpointer_reshape](libpointer_reshape.md) - Reshapes libpointer dimensions.
 - [libpointer_setdatatype](libpointer_setdatatype.md) - Set type of an libpointer handle.
-- [libpointer_used](libpointer_used.md) - Returns list of current used libpointer handle.
+- [libpointer_used](libpointer_used.md) - Returns the current valid libpointer handles.
 - [loadcompilerconf](loadcompilerconf.md) - load compiler configuration.
 - [removecompilerconf](removecompilerconf.md) - Remove used compiler configuration (on Windows).
 - [vswhere](vswhere.md) - Locate Visual Studio 2017, 2019 and newer installations

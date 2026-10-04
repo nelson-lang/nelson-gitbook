@@ -1,0 +1,67 @@
+# mustBeSorted
+
+Vérifie que les éléments d'un tableau sont triés ou signale une erreur.
+
+## 📝 Syntaxe
+
+- mustBeSorted(A)
+- mustBeSorted(A, dim)
+- mustBeSorted(A, direction)
+- mustBeSorted(A, dim, direction)
+- mustBeSorted(..., 'MissingPlacement', placement)
+- mustBeSorted(..., 'ComparisonMethod', method)
+
+## 📥 Argument d'entrée
+
+- A - une variable : numérique, logique, char, string, tableau de cellules de vecteurs de caractères, ou objet implémentant issorted. Les valeurs complexes sont supportées.
+- dim - un entier positif scalaire : dimension de travail. Par défaut : première dimension dont la taille est différente de 1.
+- direction - 'ascend' (par défaut), 'descend', 'monotonic' (croissant ou décroissant), 'strictascend', 'strictdescend' ou 'strictmonotonic'. Les directions strictes refusent les valeurs répétées et les valeurs manquantes.
+- placement - 'auto' (par défaut), 'first' ou 'last' : position attendue des valeurs manquantes (NaN, string manquante). 'auto' les place à la fin pour l'ordre croissant et au début pour l'ordre décroissant.
+- method - 'auto' (par défaut), 'real' ou 'abs' : comparaison des valeurs numériques. 'real' compare les parties réelles puis les parties imaginaires, 'abs' compare les modules puis les arguments. 'auto' utilise 'real' pour une entrée réelle et 'abs' pour une entrée complexe.
+
+## 📄 Description
+
+<b>mustBeSorted(A)</b> signale une erreur si les éléments de <b>A</b> ne sont pas triés. Elle ne retourne pas de valeur.
+
+Les vecteurs sont vérifiés dans leur ensemble, les matrices colonne par colonne, et les tableaux multidimensionnels selon la première dimension dont la taille est différente de 1.
+
+Les valeurs vides et les scalaires sont toujours triés.
+
+Les tableaux réels denses numériques, logiques et char sont vérifiés nativement en un seul parcours ; les autres types utilisent les opérateurs de comparaison de leur classe.
+
+<b>mustBeSorted</b> est destinée à la validation des propriétés et des arguments de fonctions.
+
+## 💡 Exemples
+
+Direction de l'ordre
+
+```matlab
+A = [5 3 3 1];
+mustBeSorted(A, 'descend')
+mustBeSorted(A)
+```
+
+Valeurs manquantes et valeurs complexes
+
+```matlab
+mustBeSorted([1 2 NaN])
+mustBeSorted([NaN 1 2], 'MissingPlacement', 'first')
+mustBeSorted([1 -2 3], 'ComparisonMethod', 'abs')
+mustBeSorted([1+1i, 1-1i])
+```
+
+## 🔗 Voir aussi
+
+[issorted](../data_analysis/issorted.md), [sort](../data_analysis/sort.md), [mustBeVector](../validators/mustBeVector.md).
+
+## 🕔 Historique
+
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 2.0.0   | version initiale |
+
+<!--
+## 👤 Auteur
+
+Allan CORNET
+-->

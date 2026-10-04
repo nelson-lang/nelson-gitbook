@@ -15,9 +15,9 @@ Note : le support MPI n'est pas disponible sur l'architecture Windows on ARM64 
 - [MPI_Bcast](MPI_Bcast.md) - Diffuse un message depuis le processus "root" vers tous les autres processus du communicateur
 - [MPI_Comm_delete](MPI_Comm_delete.md) - Supprime un objet MPI_Comm.
 - [MPI_Comm_get_name](MPI_Comm_get_name.md) - Renvoie le nom d'impression du communicateur.
-- [MPI_Comm_object](MPI_Comm_object.md) - Creates MPI_Comm object.
-- [MPI_Comm_rank](MPI_Comm_rank.md) - Determines the rank of the calling process in the communicator.
-- [MPI_Comm_size](MPI_Comm_size.md) - Determines the size of the group associated with a communicator.
+- [MPI_Comm_object](MPI_Comm_object.md) - Crée un objet MPI_Comm.
+- [MPI_Comm_rank](MPI_Comm_rank.md) - Détermine le rang du processus appelant dans le communicateur.
+- [MPI_Comm_size](MPI_Comm_size.md) - Détermine la taille du groupe associé à un communicateur.
 - [MPI_Comm_split](MPI_Comm_split.md) - Partitionne le groupe associé au communicateur spécifié en un nombre donné de sous-groupes disjoints.
 - [MPI_Comm_used](MPI_Comm_used.md) - Renvoie la liste des handles MPI_Comm actuellement utilisés.
 - [MPI_Finalize](MPI_Finalize.md) - Termine l'environnement d'exécution MPI.
@@ -31,4 +31,4 @@ Note : le support MPI n'est pas disponible sur l'architecture Windows on ARM64 
 - [MPI_Recv](MPI_Recv.md) - Réception bloquante d'un message.
 - [MPI_Reduce](MPI_Reduce.md) - Réduit les valeurs de tous les processus en une seule valeur.
 - [MPI_Send](MPI_Send.md) - Effectue un envoi bloquant.
-- [mpiexec](mpiexec.md) - Run an MPI script.
+- [mpiexec](mpiexec.md) - Exécute un script MPI.

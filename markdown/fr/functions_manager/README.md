@@ -12,10 +12,12 @@ Des utilitaires sont disponibles pour vérifier l'existence de fonctions intégr
 - [builtin](builtin.md) - Exécute une fonction intégrée.
 - [clearfun](clearfun.md) - Efface une fonction intégrée.
 - [feval](feval.md) - Évalue une fonction.
+- [import](import.md) - Importer des noms depuis des espaces de noms.
 - [inmem](inmem.md) - Noms des fonctions, fichiers MEX.
 - [isbuiltin](isbuiltin.md) - Vérifie l'existence d'une fonction intégrée.
 - [ismacro](ismacro.md) - Vérifie l'existence d'une macro (fonction).
 - [ismex](ismex.md) - Vérifie l'existence d'une fonction mex.
+- [localfunctions](localfunctions.md) - Retourne les handles des fonctions locales du fichier courant.
 - [macroargs](macroargs.md) - Retourne les noms des variables d'une fonction.
 - [path](path.md) - Modifie ou affiche le chemin de chargement de Nelson.
 - [private functions](private_functions.md) - Fonctions privées.

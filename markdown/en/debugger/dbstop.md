@@ -22,7 +22,7 @@ Breakpoints can be set at specific files or at specific locations.
 
 This function can only be called from the command line.
 
-Text editor support debugging features integrate with these functions to provide a seamless debugging experience.
+Text editor debugging features integrate with these functions for interactive debugging.
 
 See also the [Debugging Workflow](../text_editor/debugging_workflow.md) for an overview of debugging in Nelson.
 

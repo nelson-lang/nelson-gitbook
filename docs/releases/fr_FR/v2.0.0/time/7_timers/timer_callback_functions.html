@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fonctions de callback de timer</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">Fonctions de callback de timer</span>, <span class="keyword-alias">callbacks de timer</span>, <span class="keyword-alias">fonctions de rappel de timer</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Definir les commandes executees lors des evenements de timer.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Les callbacks de timer peuvent etre retardes lorsqu'un autre callback ou une tache couteuse en CPU est deja en cours.</p>
+    <p>Un objet timer possede quatre proprietes de callback. <b>StartFcn</b> s'execute lorsque le timer demarre. <b>TimerFcn</b> s'execute lorsque le timer se declenche. <b>StopFcn</b> s'execute lorsque le timer s'arrete normalement ou apres une erreur. <b>ErrorFcn</b> s'execute lorsqu'un callback de timer signale une erreur.</p>
+    <p>Definissez une propriete de callback avec l'une des valeurs suivantes :</p>
+    <table border="1">
+      <tr>
+        <th>Valeur</th>
+        <th>Utilisation</th>
+      </tr>
+      <tr>
+        <td>Handle de fonction</td>
+        <td>Utilise une fonction qui accepte l'objet timer et une structure d'evenement, par exemple <b>@myTimerFcn</b> ou <b>@(src,event)disp(event.Type)</b>.</td>
+      </tr>
+      <tr>
+        <td>Tableau de cellules</td>
+        <td>Passe des arguments supplementaires apres l'objet timer et la structure d'evenement. Le premier element de la cellule est le handle de fonction, suivi des arguments supplementaires.</td>
+      </tr>
+      <tr>
+        <td>Vecteur de caracteres ou chaine scalaire</td>
+        <td>Evalue directement des commandes Nelson. Ces callbacks ne recoivent pas l'objet timer ni la structure d'evenement comme arguments d'entree.</td>
+      </tr>
+    </table>
+    <p>Les callbacks specifies par handle de fonction ou tableau de cellules recoivent l'objet timer comme premier argument d'entree et une structure d'evenement comme second argument d'entree. La structure d'evenement possede les champs <b>Type</b> et <b>Data</b>. <b>Type</b> vaut <b>StartFcn</b>, <b>TimerFcn</b>, <b>StopFcn</b> ou <b>ErrorFcn</b>. <b>Data.time</b> contient l'heure de l'evenement sous forme de numero de date serie.</p>
+    <p>Pour les callbacks avec des arguments propres a l'application, utilisez un tableau de cellules. Nelson appelle la fonction avec l'objet timer, la structure d'evenement, puis les arguments supplementaires dans l'ordre ou ils apparaissent dans le tableau de cellules.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Afficher le type d'evenement depuis un callback de timer.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">t = timer('StartDelay', 0.1, ...
+  'TimerFcn', @(src, event) disp(event.Type));
+start(t);
+wait(t);
+delete(t);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Passer un argument supplementaire a un callback avec un tableau de cellules.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">t = timer('TimerFcn', {@dispTimerMessage, 'timer fired'});
+start(t);
+wait(t);
+delete(t);
+
+function dispTimerMessage(src, event, message)
+  disp([event.Type, ': ', message]);
+end</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../time/timer.html">timer</a><a class="see-also-link" href="../../time/start.html">start</a><a class="see-also-link" href="../../time/stop.html">stop</a><a class="see-also-link" href="../../time/wait.html">wait</a><a class="see-also-link" href="../../time/gestion%20des%20conflits%20de%20file%20de%20timer.html">Conflits de file de timers</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

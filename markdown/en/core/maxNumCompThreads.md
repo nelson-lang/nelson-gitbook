@@ -1,6 +1,6 @@
 # maxNumCompThreads
 
-Set/Get maximum number of computional threads.
+Set/Get maximum number of computational threads.
 
 ## 📝 Syntax
 

@@ -7,13 +7,15 @@ Logical false.
 - false
 - l = false(n)
 - l = false(sz)
+- l = false(size(A))
 - l = false(n, m, ..., k)
 - l = false(n, m, 'like', sp)
 
 ## 📥 Input argument
 
 - n - a integer value.
-- sz - a size vector.
+- sz - a row vector of dimensions, such as the result of <b>size</b>.
+- A - an array whose size is used to create the output.
 - n, m, ..., k - a n -by- m - ... -by- k array to indicate size.
 - sp - a sparse or array.
 
@@ -23,7 +25,7 @@ Logical false.
 
 ## 📄 Description
 
-<b>false</b> build a matrix of false.
+<b>false</b> builds an array of logical false values.
 
 ## 💡 Example
 
@@ -31,6 +33,8 @@ Logical false.
 false
 false(4)
 false(4, 1, 4)
+A = zeros(2, 3);
+F = false(size(A))
 L = logical(sparse(1, 2))
 L2 = false(3,'like', L);
 ```

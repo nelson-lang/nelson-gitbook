@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>classdef</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">classdef</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Définition de classe</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">classdef ClassName
+classdef ClassName &lt; SuperClass
+classdef ClassName &lt; handle
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>classdef</b> definit une classe valeur ou handle dans un fichier M.</p>
+    <p>Nelson prend en charge les proprietes, methodes, evenements, enumerations avec arguments de constructeur, enumerations basees sur des types scalaires numeriques, constantes, l'heritage, les proprietes handle dynamiques via <b>dynamicprops</b>, les methodes separees dans les dossiers <b>@ClassName</b>, les classes de paquet dans les dossiers <b>+package</b> et les declarations continuees avec <b>...</b>.</p>
+    <p>Les attributs de methode incluent <b>Abstract</b>, <b>Access</b>, <b>Hidden</b>, <b>Sealed</b> et <b>Static</b>. Les attributs de propriete incluent <b>Abstract</b>, <b>Access</b>, <b>GetAccess</b>, <b>SetAccess</b>, <b>AbortSet</b>, <b>Constant</b>, <b>Dependent</b>, <b>GetObservable</b>, <b>SetObservable</b>, <b>Transient</b>, <b>NonCopyable</b>, <b>WeakHandle</b> et les expressions de validation.</p>
+    <p><b>AbortSet</b> ignore les notifications et le setter d'une propriete handle lorsque la valeur affectee est egale a la valeur stockee.</p>
+    <p>Les proprietes <b>Transient</b> sont exclues de <b>struct</b> et des donnees d'objet sauvegardees, puis rechargees avec leur valeur par defaut lorsqu'un constructeur par defaut est disponible. Les proprietes handle <b>NonCopyable</b> retrouvent leur valeur par defaut lors d'une copie via le mixin de copie.</p>
+    <p>Les proprietes <b>WeakHandle</b> d'une classe handle conservent leurs handles sans maintenir les objets references en vie : un objet qui n'a plus d'autre reference est detruit et la propriete renvoie alors un handle supprime de la meme classe. Elles servent aux references arriere (enfant vers parent, listener vers source) qui formeraient sinon un cycle de references, car les objets d'un cycle de references fortes ne sont jamais detruits. Une propriete <b>WeakHandle</b> doit declarer une validation de classe, par exemple <b>Parent (1,1) Node</b>, et ne peut pas etre <b>Constant</b> ni <b>Dependent</b> ; sans valeur par defaut, elle contient des handles supprimes de la classe et de la taille validees.</p>
+    <p>La validation de propriete prend en charge les dimensions fixes, les noms de type, les noms de fonctions de validation et les arguments de validation comme <b>mustBeGreaterThan(0)</b>.</p>
+    <p>Les sous-classes handle peuvent definir des evenements. Les attributs d'evenement incluent <b>Hidden</b>, <b>ListenAccess</b> et <b>NotifyAccess</b>. Les attributs de classe incluent <b>Abstract</b>, <b>ConstructOnLoad</b>, <b>Hidden</b>, <b>InferiorClasses</b> et <b>Sealed</b>.</p>
+    <p>Les attributs d'acces acceptent public, private, protected, un nom de metaclasse comme <b>?FriendClass</b>, ou une liste de classes comme <b>{?FriendA, ?FriendB}</b>.</p>
+    <p>Les methodes abstraites et les proprietes abstraites heritees doivent etre implementees par les sous-classes concretes, et les noms de membres herites en conflit sont signales lors de l'analyse de la classe.</p>
+    <p>Les proprietes abstraites peuvent etre combinees avec les attributs d'acces, de constante, de dependance, de masquage et de validation. Une declaration de propriete abstraite ne doit pas definir de valeur initiale.</p>
+    <p>Les methodes classdef peuvent acceder aux membres prives de leur classe et aux membres proteges des superclasses. Les membres publics sont retournes par <b>methods</b>, <b>properties</b> et <b>events</b>.</p>
+    <p>Les formes de methodes prises en charge incluent les constructeurs, methodes d'instance, methodes statiques, definitions simples de methodes sur une seule ligne, dispatch de methodes heritees, declarations scellees et abstraites, methodes externes dans les dossiers <b>@ClassName</b>, accesseurs nommes <b>get.PropertyName</b> et <b>set.PropertyName</b>, hooks d'indexation traditionnels nommes <b>subsref</b>, <b>subsasgn</b> et <b>end</b>, hooks simples d'indexation par point nommes <b>dotReference</b> et <b>dotAssign</b>, hooks simples d'indexation par parentheses <b>parenReference</b> et <b>parenAssign</b> pour les classes valeur et handle, hooks simples d'indexation par accolades nommes <b>braceReference</b> et <b>braceAssign</b>, methodes utilisateur <b>delete</b> pour les classes handle, <b>copy</b> via <b>nelson.mixin.Copyable</b>, et methodes protegees <b>displayScalarObject</b> via <b>nelson.mixin.CustomDisplay</b>.</p>
+    <p>Les methodes speciales de persistance <b>saveObjectImpl</b> et <b>loadObjectImpl</b> statique peuvent convertir les objets vers et depuis des structures sauvegardees. Elles sont appliquees aux objets scalaires et element par element pour les tableaux d'objets non vides.</p>
+    <p>Les tableaux d'objets classdef conservent les metadonnees de classe pendant l'affectation indexee. Les nouveaux elements de classe valeur utilisent le constructeur par defaut, et les nouveaux elements de classe handle recoivent des handles par defaut distincts. <b>ClassName.empty(...)</b> cree des tableaux d'objets vides types pour les classes valeur et handle.</p>
+    <p>Les classes handle qui heritent de <b>dynamicprops</b> peuvent ajouter des proprietes d'instance avec <b>addprop(obj, name)</b> et les supprimer avec <b>rmprop(obj, name)</b> ou <b>delete(descriptor)</b>. Les proprietes dynamiques apparaissent dans <b>isprop</b>, <b>properties</b>, l'acces par champ d'objet et la conversion <b>struct</b>. Le descripteur renvoye par <b>addprop</b> est un handle <b>meta.DynamicProperty</b>.</p>
+    <p>Les objets classdef fonctionnent avec la sauvegarde/chargement, le debogueur, le profileur et la completion de Nelson. Les hooks de sauvegarde/chargement sont appliques element par element pour les tableaux d'objets, y compris les tableaux imbriques dans des cellules ou des structures. Les tableaux d'objets vides conservent leur classe et leurs dimensions apres sauvegarde et chargement. Les tableaux de handles sont verifies avant l'appel des hooks de sauvegarde afin de detecter les elements invalides.</p>
+    <p>Les classes d'enumeration numeriques comme <b>classdef Mode &lt; uint32</b> utilisent chaque argument de membre comme valeur numerique stockee, prennent en charge <b>isa(member, 'uint32')</b>, et exposent la conversion vers le type de base comme <b>uint32(member)</b>.</p>
+    <p><b>metaclass</b> expose les metadonnees de classe, propriete, methode, evenement et enumeration. Les metadonnees de propriete incluent les expressions de valeur par defaut, expressions de validation, classe de definition, modes d'acces, et indicateurs <b>Constant</b>, <b>Dependent</b>, <b>Abstract</b>, <b>Hidden</b>, <b>GetObservable</b>, <b>SetObservable</b>, <b>AbortSet</b>, <b>Transient</b>, <b>NonCopyable</b> et <b>Dynamic</b>. Les metadonnees de methode incluent la classe de definition, l'acces, et les indicateurs <b>Static</b>, <b>Hidden</b>, <b>Sealed</b> et <b>Abstract</b>. Les metadonnees d'evenement incluent <b>ListenAccess</b>, <b>NotifyAccess</b>, <b>Hidden</b> et les attributs bruts. Les metadonnees d'enumeration incluent les noms de membres, la classe de definition et les arguments de constructeur.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Classe valeur</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d = [tempdir(), 'nelson_help_classdef/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpPoint.m'], ["classdef NelsonHelpPoint"; "  properties"; "    X = 0"; "    Y = 0"; "  end"; "  methods"; "    function obj = NelsonHelpPoint(x, y)"; "      if nargin &gt; 0"; "        obj.X = x;"; "        obj.Y = y;"; "      end"; "    end"; "  end"; "end"]);
+addpath(d);
+p = NelsonHelpPoint(3, 4);
+p.X</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Aides de sauvegarde/chargement objet</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d = [tempdir(), 'nelson_help_classdef/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpSavedValue.m'], ["classdef NelsonHelpSavedValue"; "  properties"; "    Value = 0"; "  end"; "  methods"; "    function obj = NelsonHelpSavedValue(value)"; "      if nargin &gt; 0"; "        obj.Value = value;"; "      end"; "    end"; "    function data = saveObjectImpl(obj)"; "      data = struct('Value', obj.Value);"; "    end"; "  end"; "  methods (Static)"; "    function obj = loadObjectImpl(data)"; "      obj = NelsonHelpSavedValue(data.Value);"; "    end"; "  end"; "end"]);
+addpath(d);
+obj = NelsonHelpSavedValue(12);
+data = obj.saveObjectImpl();
+copy = NelsonHelpSavedValue.loadObjectImpl(data);
+fileName = [tempdir(), 'nelson_help_classdef_object.nh5'];
+save(fileName, 'obj');
+clear obj;
+load(fileName);
+[copy.Value, obj.Value]</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../interpreter/classdef_tutorial.html">tutoriel classdef</a><a class="see-also-link" href="../interpreter/classdef_limitations.html">limitations classdef</a><a class="see-also-link" href="../types/class.html">class</a><a class="see-also-link" href="../types/isa.html">isa</a><a class="see-also-link" href="../handle/methods.html">methods</a><a class="see-also-link" href="../handle/properties.html">properties</a><a class="see-also-link" href="../handle/events.html">events</a><a class="see-also-link" href="../handle/metaclass.html">metaclass</a><a class="see-also-link" href="../handle/dynamicprops.html">dynamicprops</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -16,7 +16,7 @@ Return true if all imaginary part is a zero array.
 
 ## 📄 Description
 
-<b>isreal</b> returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise.
+<b>isreal</b> returns a logical true if var is a non-complex matrix or scalar and a logical false otherwise. An array stored as complex is not real, even when it is empty or its imaginary parts are zero: <b>isreal(complex([]))</b> and <b>isreal(complex(1))</b> return false. Arithmetic, indexing and deletion giving an empty result return a real array.
 
 ## 💡 Examples
 

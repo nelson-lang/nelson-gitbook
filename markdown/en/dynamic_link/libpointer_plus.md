@@ -16,7 +16,7 @@ plus operator on libpointer handle.
 
 plus operator on libpointer handle.
 
-ouptut libpointer is valid only as long as the original input libpointer exists.
+output libpointer is valid only as long as the original input libpointer exists.
 
 ## 💡 Example
 

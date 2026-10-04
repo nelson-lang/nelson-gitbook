@@ -68,6 +68,10 @@ C_IN = [-0.1      0.0    0.001    0.0;
 [A_OUT, E_OUT, B_OUT, C_OUT, LSCALE, RSCALE, INFO] = slicot_tg01ad(JOB, THRESH, A_IN, E_IN, B_IN, C_IN)
 ```
 
+## 🔗 See also
+
+[slicot_tb01id](../slicot/slicot_tb01id.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [balreal](../control_system/balreal.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

@@ -1,57 +1,50 @@
 # helpdlg
 
-Crée une boîte de dialogue d'aide.
+Cree une boite de dialogue d'aide.
 
 ## 📝 Syntaxe
 
-- h = helpdlg()
-- h = helpdlg(text_help)
-- h = helpdlg(text_help, title)
-- h = helpdlg(text_help, title, 'on')
+- h = helpdlg
+- h = helpdlg(message)
+- h = helpdlg(message, title)
 
 ## 📥 Argument d'entrée
 
-- text_help - a string or a cell of string: the help message.
-- title - a string: the title of the dialog box.
+- message - Help text. Use a character vector, string, or cell array of character vectors.
 
 ## 📤 Argument de sortie
 
-- h - a QObject handle.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>helpdlg</b> crée une boîte de dialogue d'aide.
-
-<b>h = helpdlg(text_help, title, 'on')</b> indique si une boîte de dialogue existante portant le même nom doit être remplacée.
+helpdlg creates a help message dialog and returns a graphics figure handle.
 
 ## 💡 Exemples
 
-```matlab
-h = helpdlg()
-```
+Creer une boite d aide.
 
 ```matlab
-h = helpdlg('help string')
+h = helpdlg('Use the OK button to close this dialog.', 'Help');
 ```
 
-```matlab
-h = helpdlg('help string', 'dialog title')
-```
+<img src="helpdlg_example.svg" align="middle"/>
+Display several help lines.
 
 ```matlab
-h = helpdlg('help string', 'dialog title')
-h = helpdlg('help string', 'dialog title', 'on')
+h = helpdlg({'Select a file.', 'Then press Open.'}, 'Help');
+close(h)
 ```
 
 ## 🔗 Voir aussi
 
-[warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [msgbox](../gui/msgbox.md).
+[msgbox](../gui/msgbox.md), [warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--
 ## 👤 Auteur

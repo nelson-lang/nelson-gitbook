@@ -22,18 +22,7 @@ N'oubliez pas de nettoyer la variable ensuite.
 CLI required
 
 ```matlab
-
-if ~MPI_Initialized()
-  MPI_Init();
-end
-comm = MPI_Comm_object();
-MPI_Comm_used
-delete(COM_used())
-MPI_Comm_used
-if MPI_Initialized()
-  MPI_Finalize();
-end
-
+used = MPI_Comm_used()
 ```
 
 ## 🔗 Voir aussi

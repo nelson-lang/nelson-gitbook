@@ -17,7 +17,7 @@ Retourne la liste des poignées audiorecorder actuellement utilisées.
 ## 💡 Exemple
 
 ```matlab
-audiorecorder_used(),delete(audiorecorder_used())
+used = audiorecorder_used()
 ```
 
 ## 🔗 Voir aussi

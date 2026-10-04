@@ -1,86 +1,77 @@
 # class
 
-Return classname of object or creates a named object.
+Return a variable class name or create an old-style named object.
 
 ## 📝 Syntax
 
 - name = class(var)
-- obj = class(st, strname)
+- obj = class(st, className)
 
 ## 📥 Input argument
 
 - var - a variable
-- st - a struct
-- strname - a string: classname desired
+- st - a structure
+- className - a class name as a string
 
 ## 📤 Output argument
 
 - name - a string
-- obj - an object of type 'strname' based on struct 'st'
+- obj - an old-style object of type <b>className</b> based on structure <b>st</b>
 
 ## 📄 Description
 
-<b>name = class(var)</b> returns the class of var variable.
+<b>class(var)</b> returns the class name of <b>var</b>.
 
-Standard classes are:
+For sparse arrays, <b>class</b> returns the stored value class, such as <b>double</b> or <b>logical</b>. Use <b>issparse</b> to test sparse storage.
 
-'cell'
+For classdef value and handle objects, <b>class</b> returns the classdef class name, including package qualification when applicable.
 
-'struct'
-
-'single'
-
-'double'
-
-'logical'
-
-'char'
-
-'int8'
-
-'int16'
-
-'int32'
-
-'int64'
-
-'uint8'
-
-'uint16'
-
-'uint32'
-
-'uint64'
-
-'function_handle'
+<b>class(st, className)</b> preserves Nelson old-style object creation and is independent from classdef class definitions.
 
 ## 💡 Examples
 
+Return a built-in class name.
+
 ```matlab
 A = 3;
-res = class(A)
+name = class(A)
 ```
 
-```matlab
-C = [1 ; 3];
-res = class(C)
-```
+Return the stored value class of a sparse array.
 
 ```matlab
-addpath([nelsonroot(), '/modules/overload/examples/complex']);
-c = complexObj(3,4);
-class(c)
+S = sparse([2 0 3]);
+name = class(S)
+tf = issparse(S)
+```
+
+Return classdef value and handle class names.
+
+```matlab
+clear classes
+d = [tempdir(), 'nelson_help_class/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpClassPoint.m'], ["classdef NelsonHelpClassPoint"; "  properties"; "    X = 0"; "  end"; "end"]);
+filewrite([d, '/NelsonHelpClassCounter.m'], ["classdef NelsonHelpClassCounter < handle"; "  properties"; "    Count = 0"; "  end"; "end"]);
+addpath(d);
+p = NelsonHelpClassPoint();
+h = NelsonHelpClassCounter();
+pointClass = class(p)
+handleClass = class(h)
+delete(h)
 ```
 
 ## 🔗 See also
 
-[isa](../types/isa.md), [isdouble](../types/isdouble.md), [isfloat](../types/isfloat.md), [ischar](../types/ischar.md), [isstruct](../types/isstruct.md), [iscell](../types/iscell.md).
+[isa](../types/isa.md), [issparse](../types/issparse.md), [isobject](../types/isobject.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                       |
+| ------- | ---------------------------------------------------- |
+| 1.0.0   | initial version                                      |
+| 2.0.0   | classdef value and handle object behavior documented |
+| 2.0.0   | sparse arrays report their stored value class        |
 
 <!--
 ## 👤 Author

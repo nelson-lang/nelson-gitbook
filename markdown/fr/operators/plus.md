@@ -36,6 +36,13 @@ plus([1, 2], 1)
 ones(0, 0) + 1
 ```
 
+Ajouter un code caractere et une valeur numerique.
+
+```matlab
+char(65) + 1
+char(65) + int8([1 2])
+```
+
 ## 🔗 Voir aussi
 
 [minus](../operators/minus.md), [uplus](../operators/uplus.md).

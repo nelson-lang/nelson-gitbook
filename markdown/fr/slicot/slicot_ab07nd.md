@@ -54,6 +54,10 @@ D_IN = [4.0   0.0;
 [A_OUT, B_OUT, C_OUT, D_OUT, RCOND, INFO] = slicot_ab07nd(A_IN, B_IN, C_IN, D_IN)
 ```
 
+## 🔗 Voir aussi
+
+[slicot_ab04md](../slicot/slicot_ab04md.md), [ss](../control_system/ss.md), [feedback](../control_system/feedback.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

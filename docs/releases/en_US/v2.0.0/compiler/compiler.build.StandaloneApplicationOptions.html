@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>compiler.build.StandaloneApplicationOptions</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler.build.StandaloneApplicationOptions</span>, <span class="keyword-alias">compiler.build.StandaloneApplicationOptions</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Validated standalone application build options.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">options = compiler.build.StandaloneApplicationOptions(AppFile)
+options = compiler.build.StandaloneApplicationOptions(AppFile, Name, Value, ...)
+values = struct(options)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Load the optional compiler module before constructing this value object. Both standalone build functions accept the same options object. Later edits to the caller's object do not change the options recorded in a completed result.</p>
+    <p>AppFile: existing .m entry file. The constructor requires this first argument. Other entry formats are not supported. ExecutableName defaults to the entry stem and must be an identifier; reserved Windows device names are rejected.</p>
+    <p>OutputDir: destination directory, defaulting to ExecutableName followed by standaloneApplication in the current directory. Paths are anchored when assigned. Unrelated files are preserved. A verified previous build of the same executable name and architecture may be replaced; modified outputs and unrecorded collisions are refused. See compiler.build.standaloneApplication for publication and recovery rules.</p>
+    <p>AdditionalFiles: character vector, scalar string, cell vector or string vector of files, directories or patterns. Automatic resources, including NH5/MAT files, are controlled by AutoDetectDataFiles (true by default). Explicit inclusions are retained even when automatic detection is false.</p>
+    <p>CustomHelpTextFile: existing UTF-8 text file whose contents become the application's help text; empty by default.</p>
+    <p>ExecutableVersion: one to four decimal components from 0 to 65535, at most 23 characters; default 1.0.0.0. Writes Windows file/product resources. On other hosts the value is validated but does not modify native executable bytes.</p>
+    <p>Verbose: false by default; true prints the created executable and runtime module count. Boolean settings accept logical or numeric zero/one and on/off strings.</p>
+    <p>Constructor settings use complete, case-insensitive name-value option names. Properties validate assignments. The constructor does not accept a settings struct or a second AppFile assignment. struct(options) returns a value snapshot of the public properties.</p>
+    <p>The current properties are AppFile, AdditionalFiles, AutoDetectDataFiles, CustomHelpTextFile, EmbedArchive, ExecutableName, ExecutableIcon, ExecutableVersion, OutputDir, RuntimeLogFile, SupportPackages, TreatInputsAsNumeric and Verbose. Other deployment effects remain unimplemented: ExternalEncryptionKey, ObfuscateArchive and SecretsManifest. They are not accepted or silently ignored.</p>
+    <p>Runtime distribution and launch style are not option properties here. The build function chooses console or no-console style and always uses an installed runtime. Existing ncc BuildOptions remains available for Mode, NoConsole and RuntimeMode.</p>
+    <p><b>RuntimeLogFile</b>: empty by default (disabled). A nonempty filename enables an append-only UTF-8 log containing runtime initialization, standard output and standard error, without suppressing console output. Relative paths are resolved beside the executable, not against the calling directory. The parent directory must already exist and be writable; environment variables are not expanded. Failure to open or finish the log returns exit code 2 unless the application already failed. Concurrent streams and processes may interleave chunks; complete lines and global ordering are not guaranteed. Capture retains incomplete UTF-8 characters until the next read before appending them. Malformed or truncated output is preserved as raw bytes. Shared append behavior on network filesystems depends on the filesystem. Logging adds file I/O only when enabled and requires a runtime with the output capture interface on Windows.</p>
+    <p><b>ExecutableIcon</b>: an existing JPG, JPEG, PNG, BMP or GIF filename, absolute or relative to the current working directory when the option is assigned. Empty by default, preserving the launcher's existing icon. A nonempty value requires Windows in this implementation. The existing graphics_io and image_processing services run only during packaging. The first image/frame is centered without changing its aspect ratio, with transparent padding, and embedded at 16, 24, 32, 48, 64, 128 and 256 pixels. Transparency is retained; source images are limited to 16 megapixels. No separate icon file is distributed and no image-processing dependencies are added to the application runtime.</p>
+    <p><b>EmbedArchive</b>: true by default, embedding the application archive in the executable. False writes an adjacent <b>ExecutableName.nca</b> file, included in Results.Files. An .nca file is a ZIP-formatted Nelson application archive containing the manifest, retained code and resources, not the runtime. Distribute both files together; when renaming the application, retain a matching base name for both. Startup checks archive size and SHA-256 before extraction into ctfroot. A missing or changed archive fails before the entry point. This integrity check is neither a signature nor encryption. The executable becomes smaller, but the total distribution size is not reduced. Both modes use the same runtime and numerical engine. Separate archives require launchers advertising archive format 3 and a runtime supporting that format.</p>
+    <p><b>TreatInputsAsNumeric</b>: false by default, preserving character-vector function inputs. True converts each command-line argument once through the built-in str2double before calling the entry function. Each result is a double scalar, real or complex. Decimal/exponent notation, Inf and NaN are supported; empty text, invalid text and array literals produce NaN. No argument is evaluated as code. A packaged function named str2double cannot override this conversion. Application code must validate its required values.</p>
+    <p>argv('user') retains the original character vectors, including empty arguments and spaces; script entries continue to read this text directly. CustomHelpTextFile is processed before numeric conversion. Numeric input builds use application manifest version 2; older runtimes reject that version instead of silently passing strings. The option adds no work to numerical dispatch and no runtime modules. The command forms are -n and --numeric-inputs.</p>
+    <p>SupportPackages defaults to {'autodetect'}, retaining dependencies found in installed nmm packages. 'none' excludes every registered package; a cell/string vector of registered names permits only those packages. Names are case-sensitive and must exist at build time. This is a dependency allowlist, not a request to copy whole package trees or execute package loaders. All registered versions follow the policy. Excluded dependencies are recorded in the analysis and may cause runtime errors if called. An explicit entry or AdditionalFiles input inside an excluded package is rejected. IncludedSupportPackages reports the packages actually retained. No package selection is performed at application startup.</p>
+    <p>With an explicit package policy, the compiler can resolve functions from each registered active package's functions directory (or its root when that directory is absent), after existing search paths. It does not run package loaders or alter the session path. A package may still require unsupported initialization or native services; selecting it is not a guarantee of deployability.</p>
+  </div>
+</div>
+<div class="section"><div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../compiler/compiler.build.standaloneApplication.html">compiler.build.standaloneApplication</a><a class="see-also-link" href="../compiler/compiler.build.standaloneWindowsApplication.html">compiler.build.standaloneWindowsApplication</a><a class="see-also-link" href="../compiler/compiler.build.Results.html">compiler.build.Results</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

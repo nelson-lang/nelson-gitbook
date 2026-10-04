@@ -18,11 +18,13 @@ Crée un fichier '.ref' pour un test
 
 <b>test_makeref</b> crée un fichier '.ref' à partir d'un fichier de test.
 
+<b>test_makeref</b> est un wrapper de compatibilite au dessus de <b>nelson.unittest.makeref</b>.
+
 Le fichier de test doit contenir la balise <--CHECK REF-->.
 
 ## 🔗 Voir aussi
 
-[test_run](../tests_manager/test_run.md).
+[test_run](../tests_manager/test_run.md), [nelson.unittest](../tests_manager/nelson_unittest.md).
 
 ## 🕔 Historique
 

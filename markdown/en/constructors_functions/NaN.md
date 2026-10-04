@@ -8,15 +8,21 @@ Creates an Not-a-Number
 - nan
 - NaN(n)
 - NaN(n, m)
+- NaN(n, classname)
+- NaN(n, m, classname)
+- NaN(classname)
 
 ## 📥 Input argument
 
-- n - a variable: n-by-n matrix
-- m - a variable: n-by-m matrix
+- n - a scalar integer: number of rows (and columns if m is omitted).
+- m - a scalar integer: number of columns.
+- classname - a string: 'double' (default) or 'single'.
 
 ## 📄 Description
 
 <b>NaN</b> returns the IEEE symbol NaN (Not a Number).
+
+<b>NaN(n)</b> returns an n-by-n matrix filled with <b>NaN</b>; <b>NaN(n, m)</b>returns an n-by-m matrix. The optional <b>classname</b> argument must be <b>'double'</b> (default) or <b>'single'</b>.
 
 <b>NaN</b> is the result of operations which do not produce a well defined numerical result.
 

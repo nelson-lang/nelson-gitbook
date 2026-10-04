@@ -1,60 +1,51 @@
 # errordlg
 
-Crée une boîte de dialogue d'erreur.
+Cree une boite de dialogue d'erreur.
 
 ## 📝 Syntaxe
 
-- h = errordlg()
-- h = errordlg(text_error)
-- h = errordlg(text_error, title)
-- h = errordlg(text_error, title, mode)
+- h = errordlg
+- h = errordlg(message)
+- h = errordlg(message, title)
+- h = errordlg(message, title, mode)
 
 ## 📥 Argument d'entrée
 
-- text_error - a string ou cellule de chaînes : message d'erreur.
-- title - a string : titre de la boîte de dialogue.
-- mode - a string : 'modal', 'non-modal', 'replace'.
+- message - Error text. Use a character vector, string, or cell array of character vectors.
 
 ## 📤 Argument de sortie
 
-- h - un handle QObject.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>errordlg</b> crée une boîte de dialogue d'erreur.
-
-<b>h = errordlg(text_error, title, 'replace')</b> indique si une boîte de dialogue existante portant le même titre doit être remplacée.
-
-<img src="errordlg_1.png"/>
+errordlg creates an error message dialog and returns a graphics figure handle.
 
 ## 💡 Exemples
 
-```matlab
-h = errordlg()
-```
+Creer une boite d erreur.
 
 ```matlab
-h = errordlg('error string')
+h = errordlg('Invalid value.', 'Error', 'non-modal');
 ```
 
-```matlab
-h = errordlg('error string', 'dialog title')
-```
+<img src="errordlg_example.svg" align="middle"/>
+Create the default error dialog.
 
 ```matlab
-h = errordlg('error string', 'dialog title')
-h = errordlg('error string', 'dialog title', 'on')
+h = errordlg();
+close(h)
 ```
 
 ## 🔗 Voir aussi
 
-[warndlg](../gui/warndlg.md), [questdlg](../gui/questdlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
+[msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [warndlg](../gui/warndlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--
 ## 👤 Auteur

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nelson.unittest.tuneReuse</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.unittest.tuneReuse</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Calibrate explicit child-process reuse for tests and benches.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">proposal = nelson.unittest.tuneReuse(targets)
+proposal = nelson.unittest.tuneReuse(targets, 'AllowAdd', true)
+[proposal, calibration] = nelson.unittest.tuneReuse(targets, Name, Value)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">targets</td>
+<td>module name, directory, file name, cell array of targets, TestSuite, or TestPlan.</td>
+</tr>
+<tr>
+<td class="param-name">Apply</td>
+<td>logical scalar. The default is false. When true, apply proposed additions and
+        removals of the &lt;--REUSE PROCESS--&gt; tag.</td>
+</tr>
+<tr>
+<td class="param-name">AllowAdd</td>
+<td>logical scalar. The default is false. When false, only files already carrying the
+        reuse tag are calibrated. Set it to true to authorize proposals for untagged eligible files.</td>
+</tr>
+<tr>
+<td class="param-name">Trials</td>
+<td>positive integer number of reused-process campaigns. The default is 3.</td>
+</tr>
+<tr>
+<td class="param-name">MinGain</td>
+<td>minimum module execution-time gain required for additions, from -1 to 1. The default
+        is 0.10. Use -1 to certify safety without requiring a performance gain.</td>
+</tr>
+<tr>
+<td class="param-name">Name, Value</td>
+<td>selection options Name, Module, File, Kind, Tags, ExcludeTags, Match, Exclude, and the
+        Timeout execution option are accepted.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">proposal</td>
+<td>ReuseTuningResult structure containing evidence, timing, actions, and summary.</td>
+</tr>
+<tr>
+<td class="param-name">calibration</td>
+<td>ReuseCalibration structure containing the isolated result and reused trial results.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>nelson.unittest.tuneReuse</b> validates explicit process reuse through real executions. It does not
+      infer safety by scanning source text and does not create or read a cache.</p>
+    <p>Calibration always uses one native worker and disables retries. The isolated reference and every reused
+      trial execute the same workload twice. Reused trials use deterministic normal, reverse, and rotated orders
+      so that state contamination between files and between repeated executions can be observed.</p>
+    <p>The reused campaigns use the production worker protocol and reset path. A file is certified only when its
+      isolated executions pass and every reused execution returns a successful worker payload without fallback
+      or missing result.</p>
+    <p>If an existing tagged file passes in isolation but fails reuse calibration, tag removal is proposed. An
+      untagged file receives an add proposal only with <b>AllowAdd</b> set to true, successful calibration, and a
+      measured module gain at least equal to <b>MinGain</b>. An isolated failure never changes the file.</p>
+    <p>GUI, ADV-CLI, MPI, sequential, IPC, file-watcher, audio, language-imposed, and external-environment cases
+      are excluded because they are not eligible for the reusable CLI worker.</p>
+    <p>The default is a dry run. <b>Apply</b> must be true to edit source files. Header insertion and removal
+      preserve UTF-8 BOM and line-ending style.</p>
+    <p>This is an explicit maintenance command rather than a required prepass. It runs more work than a normal
+      suite execution and is intended for periodic tag calibration before regular CI runs.</p>
+    <p>When maintaining both reuse and weight tags, calibrate and apply reuse tags first. Then collect fresh
+      durations with <b>nelson.unittest.tuneWeights</b> so weights describe the resulting execution setup.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Audit existing reuse tags without editing files.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">proposal = nelson.unittest.tuneReuse({'interpreter', 'statistics'});</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Calibrate module tests, review the proposal, then rerun and apply accepted changes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">[proposal, calibration] = nelson.unittest.tuneReuse('interpreter', ...
+  'Kind', 'test', 'Trials', 3, 'MinGain', 0.10, 'AllowAdd', true);
+proposal.summary
+proposal.cases
+
+applied = nelson.unittest.tuneReuse('interpreter', ...
+  'Kind', 'test', 'Trials', 3, 'MinGain', 0.10, ...
+  'AllowAdd', true, 'Apply', true);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../tests_manager/nelson.unittest.run.html">nelson.unittest.run</a><a class="see-also-link" href="../tests_manager/nelson.unittest.tuneWeights.html">nelson.unittest.tuneWeights</a><a class="see-also-link" href="../tests_manager/nelson.unittest.discover.html">nelson.unittest.discover</a>
+</div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

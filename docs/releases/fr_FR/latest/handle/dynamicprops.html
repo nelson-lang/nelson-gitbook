@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>dynamicprops</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dynamicprops</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Classe de base pour objets handle avec proprietes dynamiques d'instance.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">classdef ClassName &lt; dynamicprops
+descriptor = addprop(obj, name)
+obj = rmprop(obj, name)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">obj</td>
+<td>un objet handle classdef scalaire qui herite de <b>dynamicprops</b>.</td>
+</tr>
+<tr>
+<td class="param-name">name</td>
+<td>nom de propriete dynamique sous forme de vecteur de caracteres ou de chaine scalaire.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">descriptor</td>
+<td>descripteur handle de propriete dynamique.</td>
+</tr>
+<tr>
+<td class="param-name">obj</td>
+<td>le meme objet handle apres suppression de la propriete dynamique.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>dynamicprops</b> est une classe de base classdef pour les classes handle qui ajoutent des proprietes a des instances individuelles pendant l'execution.</p>
+    <p><b>addprop(obj, name)</b> ajoute une propriete dynamique a un objet. La propriete peut ensuite etre lue et ecrite avec l'acces par champ, par exemple <b>obj.X</b>.</p>
+    <p><b>rmprop(obj, name)</b> supprime une propriete dynamique d'un objet. Les proprietes declarees par la classe ne peuvent pas etre supprimees avec <b>rmprop</b>.</p>
+    <p>Les proprietes dynamiques sont visibles via <b>isprop</b>, <b>properties</b>, l'acces par champ d'objet, <b>metaclass</b> et la conversion <b>struct</b>.</p>
+    <p>Le descripteur renvoye par <b>addprop</b> est un handle <b>meta.DynamicProperty</b> avec les champs <b>Name</b>, <b>DefiningClass</b>, <b>Dynamic</b>, <b>Dependent</b>, <b>AbortSet</b>, <b>GetMethod</b>, <b>GetObservable</b>, <b>Hidden</b>, <b>NonCopyable</b>, <b>SetMethod</b>, <b>SetObservable</b>, <b>Transient</b>, <b>GetAccess</b>, <b>SetAccess</b> et <b>ValidationExpression</b>.</p>
+    <p><b>AbortSet</b>, <b>Dependent</b>, <b>GetAccess</b>, <b>GetMethod</b>, <b>GetObservable</b>, <b>Hidden</b>, <b>NonCopyable</b>, <b>SetAccess</b>, <b>SetMethod</b>, <b>SetObservable</b>, <b>Transient</b> et <b>ValidationExpression</b> peuvent etre modifies sur le descripteur. <b>GetAccess</b> et <b>SetAccess</b> acceptent <b>public</b>, <b>private</b> ou <b>protected</b>. <b>GetMethod</b> doit etre vide ou un handle de fonction appele comme <b>value = f(obj)</b>. <b>SetMethod</b> doit etre vide ou un handle de fonction appele comme <b>f(obj, value)</b>. Les proprietes dynamiques dependantes utilisent <b>GetMethod</b> et <b>SetMethod</b> au lieu de valeurs stockees. <b>ValidationExpression</b> utilise la meme syntaxe de validation que les proprietes declarees. Les proprietes dynamiques masquees restent accessibles par champ et via <b>isprop</b>, mais sont omises de <b>properties</b>. Les proprietes dynamiques non copiables sont omises par <b>copy</b>. Les proprietes dynamiques transitoires sont omises de la conversion <b>struct</b> et des donnees d'objet sauvegardees.</p>
+    <p><b>GetObservable</b> active les listeners <b>PreGet</b> et <b>PostGet</b> pour la propriete dynamique. <b>SetObservable</b> active les listeners <b>PreSet</b> et <b>PostSet</b>. <b>AbortSet</b> evite les notifications de modification lorsque la valeur assignee est inchangee.</p>
+    <p>Les objets qui heritent de <b>dynamicprops</b> emettent <b>PropertyAdded</b> apres l'ajout d'une propriete dynamique et <b>PropertyRemoved</b> avant sa suppression. Les donnees d'evenement contiennent <b>Source</b>, <b>EventName</b> et <b>PropertyName</b>.</p>
+    <p>La suppression du descripteur avec <b>delete(descriptor)</b> supprime la propriete dynamique de l'objet source.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Ajouter et supprimer une propriete dynamique.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d = [tempdir(), 'nelson_help_dynamicprops/'];
+if ~isdir(d)
+  mkdir(d);
+end
+filewrite([d, '/NelsonHelpDynamicProps.m'], ["classdef NelsonHelpDynamicProps &lt; dynamicprops"; "  properties"; "    Base = 1"; "  end"; "end"]);
+addpath(d);
+obj = NelsonHelpDynamicProps();
+listenerAdded = addlistener(obj, 'PropertyAdded', @(src, eventData) disp(eventData.PropertyName));
+listenerRemoved = addlistener(obj, 'PropertyRemoved', @(src, eventData) disp(eventData.PropertyName));
+descriptor = addprop(obj, 'Extra');
+obj.Extra = 42;
+descriptor.Name
+descriptor.Dynamic
+descriptor.SetObservable = true;
+setListener = addlistener(obj, 'Extra', 'PostSet', @(src, eventData) disp(eventData.PropertyName));
+obj.Extra = 43;
+descriptor.GetMethod = @(x) x.Base + 10;
+obj.Extra
+descriptor.GetMethod = [];
+descriptor.Dependent = true;
+descriptor.SetMethod = @(x, value) value;
+descriptor.GetMethod = @(x) x.Base;
+obj.Extra = 3;
+obj.Extra
+descriptor.Dependent = false;
+descriptor.GetMethod = [];
+descriptor.SetMethod = [];
+descriptor.SetAccess = 'private';
+descriptor.SetAccess = 'public';
+descriptor.ValidationExpression = '(1, 1) double {mustBePositive}';
+descriptor.NonCopyable = true;
+descriptor.Hidden = true;
+isprop(obj, 'Extra')
+properties(obj)
+descriptor.Hidden = false;
+descriptor.Transient = true;
+struct(obj)
+delete(descriptor);
+delete(listenerAdded);
+delete(listenerRemoved);
+delete(setListener);
+isprop(obj, 'Extra')
+clear obj descriptor;
+rmpath(d);
+rmdir(d, 's')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../interpreter/classdef.html">classdef</a><a class="see-also-link" href="../handle/isprop.html">isprop</a><a class="see-also-link" href="../handle/properties.html">properties</a><a class="see-also-link" href="../handle/metaclass.html">metaclass</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nflow_dashboard</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nflow_dashboard</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Monitor and adjust NFlow simulations with interactive Dashboard blocks.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Dashboard library: displays, controls, bindings, and callback actions
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Dashboard blocks provide controls and displays directly on an NFlow diagram. They have no regular input or output ports: each block reads or writes a target selected in the <b>Binding</b> section of the inspector.</p>
+    <p><b>Available blocks</b></p>
+    <table>
+      <tr>
+<th>Family</th>
+<th>Blocks</th>
+<th>Purpose</th>
+</tr>
+      <tr>
+<td>Signal displays</td>
+<td>Dashboard Scope, Display</td>
+<td>Plot timestamped samples or show the latest typed value.</td>
+</tr>
+      <tr>
+<td>Gauges</td>
+<td>Gauge, Half Gauge, Quarter Gauge, Linear Gauge</td>
+<td>Show a scalar value against limits and optional colored ranges.</td>
+</tr>
+      <tr>
+<td>State displays</td>
+<td>Lamp, MultiStateImage</td>
+<td>Map signal values to colors or images.</td>
+</tr>
+      <tr>
+<td>Continuous controls</td>
+<td>Edit, Knob, Slider</td>
+<td>Set a scalar parameter or variable to an entered or pointer-selected value.</td>
+</tr>
+      <tr>
+<td>State controls</td>
+<td>Push Button, Rotary Switch, Radio Button, Combo Box, Check Box, Rocker Switch, Slider Switch, Toggle Switch</td>
+<td>Select one of the configured numeric states.</td>
+</tr>
+      <tr>
+<td>Action</td>
+<td>Callback Button</td>
+<td>Evaluate Nelson code on click or press without a binding.</td>
+</tr>
+    </table>
+    <p><img src="./nflow_dashboard_library.png" align="middle" style="width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Creating a binding</b></p>
+    <p>Select a Dashboard block, then choose the target in the inspector. The status below the selector reports <b>Valid binding</b>, <b>Not connected</b>, or a precise error. Bindings use stable block identifiers, so saving, reopening, renaming, copying, and nested subsystems do not depend on displayed labels.</p>
+    <table>
+      <tr>
+<th>Target</th>
+<th>Used by</th>
+<th>Configuration and timing</th>
+</tr>
+      <tr>
+<td>Signal</td>
+<td>All display blocks</td>
+<td>Select a block output, its one-based port, and Sample or Frame processing. Values are read after each major simulation step.</td>
+</tr>
+      <tr>
+<td>Parameter</td>
+<td>All controls except Callback Button</td>
+<td>Select a block, a numeric adjustable parameter, and optionally one scalar element. A validated change is visible at the next major step.</td>
+</tr>
+      <tr>
+<td>Variable</td>
+<td>All controls except Callback Button</td>
+<td>Select the Diagram, Base, or Global workspace, a numeric variable, and optionally one scalar element.</td>
+</tr>
+    </table>
+    <p>Use one-based element notation such as <b>(2)</b> or <b>(2,3)</b>. Empty element text selects the complete target and is valid only when that target is scalar. Missing blocks, ports, variables, elements, nonnumeric values, and non-adjustable targets are rejected before simulation.</p>
+    <p><img src="./nflow_dashboard_binding.png" align="middle" style="width:100%;height:auto;display:block;margin:12px 0;background:#f9fafb;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></p>
+    <p><b>Interacting with controls</b></p>
+    <p>Controls remain usable while a simulation is running, paused, or stopped. A pointer gesture that starts on a control belongs to that control until release, even if the simulation finishes during the gesture. Drag the block body outside the control to move the block. Slider and Knob support pointer dragging, arrow keys for incremental changes, and Home or End for their limits. Native Edit and Combo Box controls release focus when the diagram background is selected.</p>
+    <p><b>Appearance and behavior</b></p>
+    <table>
+      <tr>
+<th>Blocks</th>
+<th>Main properties</th>
+</tr>
+      <tr>
+<td>All applicable blocks</td>
+<td>
+<b>LabelPosition</b>, <b>ShowInitialText</b>, <b>Opacity</b>, and <b>Binding</b>.</td>
+</tr>
+      <tr>
+<td>Dashboard Scope</td>
+<td>
+<b>TimeSpan</b>, <b>UpdateMode</b>, <b>YLimits</b>, <b>NormalizeYAxis</b>, <b>ScaleAtStop</b>, legend, grid, ticks, markers, border, and colors.</td>
+</tr>
+      <tr>
+<td>Gauges, Slider, Knob</td>
+<td>
+<b>Limits</b>; gauges also support <b>ScaleColors</b> and <b>ScaleDirection</b>. Slider and Knob support a Linear or Log <b>ScaleType</b>.</td>
+</tr>
+      <tr>
+<td>Display and Edit</td>
+<td>Alignment and opacity. Display additionally supports <b>Format</b>, <b>FormatString</b>, layout, grid visibility, and grid color.</td>
+</tr>
+      <tr>
+<td>State controls</td>
+<td>
+<b>States</b> or <b>Values</b>, labels, optional enumerated data type, button type, text, and icon properties where applicable.</td>
+</tr>
+      <tr>
+<td>Lamp and MultiStateImage</td>
+<td>Default and state colors, or state images with <b>ScaleMode</b>.</td>
+</tr>
+    </table>
+    <p>Limits and states are validated by the inspector. Log scales require positive usable limits. Opacity is between 0 and 1. Dashboard Scope clips its plot to the block interior and to the configured Y limits.</p>
+    <p><b>Callback Button</b></p>
+    <p>A short click evaluates <b>ClickFcn</b>. Holding the pointer for <b>PressDelay</b> milliseconds evaluates <b>PressFcn</b>; a positive <b>RepeatInterval</b> repeats that action while held. The default press delay is 500 ms. Callback errors are reported in the Console and do not stop the simulation.</p>
+    <p><b>C and Rust code generation</b></p>
+    <table>
+      <tr>
+<th>Capability</th>
+<th>Dashboard behavior</th>
+</tr>
+      <tr>
+<td>Instrumentation</td>
+<td>Display blocks are validated, then removed from generated code without changing numerical results.</td>
+</tr>
+      <tr>
+<td>Tunable</td>
+<td>A supported scalar control target becomes a typed field of <b>ModelState</b> with a stable setter. A change between two step calls applies to the next step.</td>
+</tr>
+      <tr>
+<td>Unsupported</td>
+<td>Callback Button code is never generated. Structural, composite, and unsupported targets are rejected before files are written.</td>
+</tr>
+    </table>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Open a runnable signal-display and Slider binding example.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks'), '/examples/Dashboard_Runtime_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Open the gallery containing all 20 Dashboard blocks.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">open_system([modulepath('nflow_blocks'), '/examples/Dashboard_Gallery_Demo.nflow']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../nflow_gui/nflow_workspace.html">nflow_workspace</a><a class="see-also-link" href="../nflow_gui/nflow_solvers.html">nflow_solvers</a><a class="see-also-link" href="../nflow_gui/open_system.html">open_system</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>text</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">text</span></div></div>
+<div class="section syntax-section"><div class="subtitle">creates text descriptions to data points.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">text(x, y, txt)
+text(x, y, z, txt)
+text(... , propertyName, propertyValue)
+text(propertyName, propertyValue)
+text(ax, ...)
+go = text(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>x-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">y</td>
+<td>y-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">z</td>
+<td>z-coordinates: vector or matrix.</td>
+</tr>
+<tr>
+<td class="param-name">parent</td>
+<td>a scalar graphics object value: parent container, specified as a axes.</td>
+</tr>
+<tr>
+<td class="param-name">text</td>
+<td>Text to display: character vector, string scalar, string array or cell array.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName</td>
+<td>a scalar string or row vector character.</td>
+</tr>
+<tr>
+<td class="param-name">propertyValue</td>
+<td>a value.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">go</td>
+<td>a graphics object: text type.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>figure</b> creates figure.</p>
+
+    <p>See <a href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.text.properties.html">text properties</a> for the complete property list.</p>
+    <p>The <b>Interpreter</b> property selects how the <b>String</b> is parsed: <b>'tex'</b> (default) renders a subset of TeX markup (the special characters below, plus <b>^{ }</b> superscripts and <b>_{ }</b> subscripts); <b>'none'</b> draws the text verbatim.</p>
+    <p>The <b>'latex'</b> value is accepted, but a full LaTeX math layout engine (<b>\frac</b>, <b>\sqrt</b>, <b>\int</b> with limits, matrices, and so on) is not yet implemented. It falls back to the <b>'tex'</b> pipeline after removing a surrounding pair of <b>$...$</b> math delimiters, so known symbols and super/subscripts are rendered while unsupported constructs appear as their source text. A full LaTeX interpreter is planned for a future release.</p>
+    <p>lists of the supported special characters for the 'tex' interpreter:</p>
+    <p>Superscript: ^{ } 'text^{superscript}'
+    </p>
+    <p>Subscript: _{ } 'text_{subscript}'
+    </p>
+    <p></p>
+    <table style="width:100%">
+      <tr>
+        <th>Character Sequence</th>
+        <th>Symbol</th>
+      </tr>
+      <tr>
+        <th>\alpha</th>
+        <th>α</th>
+      </tr>
+      <tr>
+        <th>\upsilon</th>
+        <th>υ</th>
+      </tr>
+      <tr>
+        <th>\sim</th>
+        <th>~</th>
+      </tr>
+      <tr>
+        <th>\angle</th>
+        <th>∠</th>
+      </tr>
+      <tr>
+        <th>\phi</th>
+        <th>ϕ</th>
+      </tr>
+      <tr>
+        <th>\leq</th>
+        <th>≤</th>
+      </tr>
+      <tr>
+        <th>\ast</th>
+        <th>*</th>
+      </tr>
+      <tr>
+        <th>\chi</th>
+        <th>χ</th>
+      </tr>
+      <tr>
+        <th>\infty</th>
+        <th>∞</th>
+      </tr>
+      <tr>
+        <th>\beta</th>
+        <th>β</th>
+      </tr>
+      <tr>
+        <th>\psi</th>
+        <th>ψ</th>
+      </tr>
+      <tr>
+        <th>\clubsuit</th>
+        <th>♣</th>
+      </tr>
+      <tr>
+        <th>\gamma</th>
+        <th>γ</th>
+      </tr>
+      <tr>
+        <th>\omega</th>
+        <th>ω</th>
+      </tr>
+      <tr>
+        <th>\diamondsuit</th>
+        <th>♦</th>
+      </tr>
+      <tr>
+        <th>\delta</th>
+        <th>δ</th>
+      </tr>
+      <tr>
+        <th>\Gamma</th>
+        <th>Γ</th>
+      </tr>
+      <tr>
+        <th>\heartsuit</th>
+        <th>♥</th>
+      </tr>
+      <tr>
+        <th>\epsilon</th>
+        <th>ϵ</th>
+      </tr>
+      <tr>
+        <th>\Delta</th>
+        <th>Δ</th>
+      </tr>
+      <tr>
+        <th>\spadesuit</th>
+        <th>♠</th>
+      </tr>
+      <tr>
+        <th>\zeta</th>
+        <th>ζ</th>
+      </tr>
+      <tr>
+        <th>\Theta</th>
+        <th>Θ</th>
+      </tr>
+      <tr>
+        <th>\leftrightarrow</th>
+        <th>↔</th>
+      </tr>
+      <tr>
+        <th>\eta</th>
+        <th>η</th>
+      </tr>
+      <tr>
+        <th>\Lambda</th>
+        <th>Λ</th>
+      </tr>
+      <tr>
+        <th>\leftarrow</th>
+        <th>←</th>
+      </tr>
+      <tr>
+        <th>\theta</th>
+        <th>θ</th>
+      </tr>
+      <tr>
+        <th>\Xi</th>
+        <th>Ξ</th>
+      </tr>
+      <tr>
+        <th>\Leftarrow</th>
+        <th>⇐</th>
+      </tr>
+      <tr>
+        <th>\vartheta</th>
+        <th>ϑ</th>
+      </tr>
+      <tr>
+        <th>\Pi</th>
+        <th>Π</th>
+      </tr>
+      <tr>
+        <th>\uparrow</th>
+        <th>↑</th>
+      </tr>
+      <tr>
+        <th>\iota</th>
+        <th>ι</th>
+      </tr>
+      <tr>
+        <th>\Sigma</th>
+        <th>Σ</th>
+      </tr>
+      <tr>
+        <th>\rightarrow</th>
+        <th>-&gt;
+        </th>
+      </tr>
+      <tr>
+        <th>\kappa</th>
+        <th>κ</th>
+      </tr>
+      <tr>
+        <th>\Upsilon</th>
+        <th>ϒ</th>
+      </tr>
+      <tr>
+        <th>\Rightarrow</th>
+        <th>⇒</th>
+      </tr>
+      <tr>
+        <th>\lambda</th>
+        <th>λ</th>
+      </tr>
+      <tr>
+        <th>\Phi</th>
+        <th>Φ</th>
+      </tr>
+      <tr>
+        <th>\downarrow</th>
+        <th>↓</th>
+      </tr>
+      <tr>
+        <th>\mu</th>
+        <th>µ</th>
+      </tr>
+      <tr>
+        <th>\Psi</th>
+        <th>Ψ</th>
+      </tr>
+      <tr>
+        <th>\circ</th>
+        <th>º</th>
+      </tr>
+      <tr>
+        <th>\nu</th>
+        <th>ν</th>
+      </tr>
+      <tr>
+        <th>\Omega</th>
+        <th>Ω</th>
+      </tr>
+      <tr>
+        <th>\pm</th>
+        <th>±</th>
+      </tr>
+      <tr>
+        <th>\xi</th>
+        <th>ξ</th>
+      </tr>
+      <tr>
+        <th>\forall</th>
+        <th>∀</th>
+      </tr>
+      <tr>
+        <th>\geq</th>
+        <th>≥</th>
+      </tr>
+      <tr>
+        <th>\pi</th>
+        <th>π</th>
+      </tr>
+      <tr>
+        <th>\exists</th>
+        <th>∃</th>
+      </tr>
+      <tr>
+        <th>\propto</th>
+        <th>∝</th>
+      </tr>
+      <tr>
+        <th>\rho</th>
+        <th>ρ</th>
+      </tr>
+      <tr>
+        <th>\ni</th>
+        <th>∍</th>
+      </tr>
+      <tr>
+        <th>\partial</th>
+        <th>∂</th>
+      </tr>
+      <tr>
+        <th>\sigma</th>
+        <th>σ</th>
+      </tr>
+      <tr>
+        <th>\cong</th>
+        <th>≅</th>
+      </tr>
+      <tr>
+        <th>\bullet</th>
+        <th>•</th>
+      </tr>
+      <tr>
+        <th>\varsigma</th>
+        <th>ς</th>
+      </tr>
+      <tr>
+        <th>\approx</th>
+        <th>≈</th>
+      </tr>
+      <tr>
+        <th>\div</th>
+        <th>÷</th>
+      </tr>
+      <tr>
+        <th>\tau</th>
+        <th>τ</th>
+      </tr>
+      <tr>
+        <th>\Re</th>
+        <th>ℜ</th>
+      </tr>
+      <tr>
+        <th>\neq</th>
+        <th>≠</th>
+      </tr>
+      <tr>
+        <th>\equiv</th>
+        <th>≡</th>
+      </tr>
+      <tr>
+        <th>\oplus</th>
+        <th>⊕</th>
+      </tr>
+      <tr>
+        <th>\aleph</th>
+        <th>ℵ</th>
+      </tr>
+      <tr>
+        <th>\Im</th>
+        <th>ℑ</th>
+      </tr>
+      <tr>
+        <th>\cup</th>
+        <th>∪</th>
+      </tr>
+      <tr>
+        <th>\wp</th>
+        <th>℘</th>
+      </tr>
+      <tr>
+        <th>\otimes</th>
+        <th>⊗</th>
+      </tr>
+      <tr>
+        <th>\subseteq</th>
+        <th>⊆</th>
+      </tr>
+      <tr>
+        <th>\oslash</th>
+        <th>∅</th>
+      </tr>
+      <tr>
+        <th>\cap</th>
+        <th>∩</th>
+      </tr>
+      <tr>
+        <th>\in</th>
+        <th>∈</th>
+      </tr>
+      <tr>
+        <th>\supseteq</th>
+        <th>⊇</th>
+      </tr>
+      <tr>
+        <th>\supset</th>
+        <th>⊃</th>
+      </tr>
+      <tr>
+        <th>\lceil</th>
+        <th>⌈</th>
+      </tr>
+      <tr>
+        <th>\subset</th>
+        <th>⊂</th>
+      </tr>
+      <tr>
+        <th>\int</th>
+        <th>∫</th>
+      </tr>
+      <tr>
+        <th>\cdot</th>
+        <th>·</th>
+      </tr>
+      <tr>
+        <th>\o</th>
+        <th>ο</th>
+      </tr>
+      <tr>
+        <th>\rfloor</th>
+        <th>⌋</th>
+      </tr>
+      <tr>
+        <th>\neg</th>
+        <th>¬</th>
+      </tr>
+      <tr>
+        <th>\nabla</th>
+        <th>∇</th>
+      </tr>
+      <tr>
+        <th>\lfloor</th>
+        <th>⌊</th>
+      </tr>
+      <tr>
+        <th>\times</th>
+        <th>x</th>
+      </tr>
+      <tr>
+        <th>\ldots</th>
+        <th>...</th>
+      </tr>
+      <tr>
+        <th>\perp</th>
+        <th>⊥</th>
+      </tr>
+      <tr>
+        <th>\surd</th>
+        <th>√</th>
+      </tr>
+      <tr>
+        <th>\prime</th>
+        <th>´</th>
+      </tr>
+      <tr>
+        <th>\wedge</th>
+        <th>∧</th>
+      </tr>
+      <tr>
+        <th>\varpi</th>
+        <th>ϖ</th>
+      </tr>
+      <tr>
+        <th>\0</th>
+        <th>∅</th>
+      </tr>
+      <tr>
+        <th>\rceil</th>
+        <th>⌉</th>
+      </tr>
+      <tr>
+        <th>\rangle</th>
+        <th>〉</th>
+      </tr>
+      <tr>
+        <th>\mid</th>
+        <th>|</th>
+      </tr>
+      <tr>
+        <th>\vee</th>
+        <th>∨</th>
+      </tr>
+      <tr>
+        <th>\langle</th>
+        <th>〈</th>
+      </tr>
+      <tr>
+        <th>\copyright</th>
+        <th>©</th>
+      </tr>
+    </table>
+
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure(1)
+t = text(0.5, 0.5, 'text here');
+s = t.FontSize;
+t.FontSize = 12;
+t.Color = 'red';</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./text_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
+ha = {'left', 'center', 'right'};
+va = {'bottom', 'middle', 'top'};
+color = {'red', 'green', 'blue'};
+x = [0.25 0.5 0.75];
+y = x;
+for t = 0:45:359;
+  for nh = 1:numel (ha)
+    for nv = 1:numel (va)
+      text (x(nh), y(nv), 'Nelson', ...
+      'Rotation', t, ...
+      'HorizontalAlignment', ha{nh}, ...
+      'VerticalAlignment', va{nv}, ...
+      'Color', color{nv});
+    end
+  end
+end
+axis([0 1 0 1]);
+title ('Text alignment and rotation (0:45:360 degrees)');
+xlabel('Horizontal alignment');
+ylabel ('Vertical alignment');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./text_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure();
+h1 = text(0.5, 0.5, 'Nelson \copyright')
+h1.String
+% Nelson is full unicode, so
+h2 = text(0.5, 0.3, 'OR Nelson ©')
+h2.String</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.text.properties.html">text properties</a><a class="see-also-link" href="../../../graphics/3_labels_styling/4_labels_annotations/title.html">title</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">1.7.0</td>
+<td>CreateFcn, DeleteFcn callback added.</td>
+</tr>
+<tr>
+<td class="version">--</td>
+<td>BeingDeleted property added.</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

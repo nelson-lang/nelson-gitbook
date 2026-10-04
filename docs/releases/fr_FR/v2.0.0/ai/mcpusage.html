@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>mcpusage</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">mcpusage</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Utiliser Nelson via MCP depuis un agent IA.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>mcpusage</b> explique comment connecter un agent IA compatible MCP a Nelson.</p>
+    <p>Nelson lance le serveur MCP avec <b>mcpserver</b>. L'agent IA est le client MCP. Un fournisseur de modele local comme Ollama peut executer le modele de langage, mais Ollama lui-meme n'est pas le client MCP.</p>
+    <p>L'executable recommande est <b>nelson-adv-cli</b>, car il peut executer les commandes graphiques utilisees par <b>create_nelson_plot</b> tout en gardant la sortie standard reservee aux messages JSON-RPC MCP.</p>
+    <p>Declarer Nelson dans un client MCP est normalement une configuration a faire une seule fois. Refaire cette declaration seulement si le chemin de l'executable Nelson, le nom du serveur, la racine de workspace ou les options serveur changent.</p>
+    <p>Utiliser <b>--workspace-root</b> pour limiter les outils bases sur des fichiers a un dossier projet. Utiliser <b>--allow-execution=false</b> pour desactiver les outils d'execution, et <b>--allow-format=false</b> pour desactiver les outils de formatage.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Demarrer le serveur MCP Nelson manuellement.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Declarer Nelson comme serveur MCP dans Codex.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab"># Executer cette commande une fois par configuration Codex. La relancer seulement pour changer la commande ou les options.
+codex mcp add nelson -- nelson-adv-cli --quiet --noipc --nouserstartup --nousermodules -e "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli')"</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Configuration client MCP generique avec un modele Ollama local.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "model": {
+    "provider": "ollama",
+    "baseUrl": "http://127.0.0.1:11434",
+    "name": "gemma4:latest"
+  },
+  "mcpServers": {
+    "nelson": {
+      "command": "nelson-adv-cli",
+      "args": [
+        "--quiet",
+        "--noipc",
+        "--nouserstartup",
+        "--nousermodules",
+        "-e",
+        "mcpserver('--workspace-root=D:/work/nelson-project --nelson-display-mode=adv-cli --max-output-characters=200000')"
+      ]
+    }
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Premier prompt conseille pour un agent MCP.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Utilise le serveur MCP Nelson.
+Appelle d'abord get_nelson_workspace.
+Appelle ensuite get_nelson_version.
+Utilise get_nelson_help quand tu as besoin de la syntaxe Nelson.
+Avant de modifier des fichiers, inspecte-les avec les outils en lecture seule.
+Pour creer un graphique, utilise create_nelson_plot et retourne le chemin PNG.</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Outils MCP utiles exposes par Nelson.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">get_nelson_workspace      Inspecte les dossiers racine et la politique active.
+get_nelson_version        Inspecte les versions Nelson et serveur MCP.
+get_nelson_help           Lit l'aide locale d'un symbole.
+detect_nelson_modules     Liste modules, fonctions, tests, builtins et aide.
+find_nelson_symbol        Localise definitions, tests, enregistrements et aide.
+get_nelson_function_info  Inspecte which, nargin, nargout, tests et aide d'un symbole.
+lint_nelson_code          Lance nelson-lint sur un fichier ou dossier sans modifier les fichiers.
+check_nelson_format       Verifie nelson-format sans modifier les fichiers.
+evaluate_nelson_code      Execute un snippet Nelson.
+run_nelson_file           Execute un fichier .m.
+run_nelson_test_file      Lance un fichier de test ou un module.
+format_nelson_file        Formate un fichier .m dans la racine de workspace.
+create_nelson_plot        Execute du code graphique et retourne un chemin PNG.</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Diagnostiquer les problemes MCP courants.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Si le client ne liste pas les outils:
+  Verifier que le serveur MCP a ete declare dans la configuration du client.
+  Verifier que nelson-adv-cli est dans PATH ou utiliser un chemin absolu.
+  Garder --quiet --noipc dans la commande.
+  Ne pas ecrire de diagnostic sur la sortie standard.
+
+Si le workspace ou les options ont change:
+  Mettre a jour la declaration dans le client MCP.
+  Dans Codex, relancer codex mcp add avec les nouvelles options mcpserver.
+
+Si les outils fichiers sont refuses:
+  Verifier --workspace-root et utiliser des chemins dans ce dossier.
+
+Si la generation de graphiques echoue:
+  Utiliser --nelson-display-mode=adv-cli ou --nelson-display-mode=gui.
+  Le mode cli est reserve au texte.
+
+Si les reponses sont trop longues:
+  Reduire --max-output-characters ou demander a l'agent de retourner des sorties plus petites.</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../ai/mcpserver.html">mcpserver</a><a class="see-also-link" href="../ai/mcpinfo.html">mcpinfo</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

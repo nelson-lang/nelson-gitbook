@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>uimenu</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">uimenu</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Creer un objet graphique menu ou entree de menu.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">m = uimenu()
+m = uimenu(parent)
+m = uimenu(propertyName, propertyValue, ...)
+m = uimenu(parent, propertyName, propertyValue, ...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">parent</td>
+<td>Objet graphique figure, menu contextuel ou menu. Si cet argument est omis, la figure courante est utilisee.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName</td>
+<td>Nom de propriete : chaine scalaire ou vecteur ligne de caracteres.</td>
+</tr>
+<tr>
+<td class="param-name">propertyValue</td>
+<td>Valeur compatible avec le nom de propriete.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">m</td>
+<td>Objet graphique menu.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>uimenu</b> cree un menu dans la barre de menus d'une figure, un sous-menu ou une entree de menu contextuel selon le parent.</p>
+    <p>La propriete <b>Text</b> controle le libelle affiche. Les caracteres esperluette sont conserves afin que la boite a outils native expose les mnemoniques clavier.</p>
+    <p>La propriete <b>Position</b> ordonne les menus freres. La propriete <b>Children</b> liste les enfants dans la hierarchie graphique.</p>
+    <p>Voir <a href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.uimenu.properties.html">proprietes de uimenu</a> pour la liste complete des proprietes.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Creer un menu de figure.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+fileMenu = uimenu(f, 'Text', '&amp;File');
+uimenu(fileMenu, 'Text', 'Open', 'Accelerator', 'O');
+uimenu(fileMenu, 'Text', 'Checked item', 'Checked', 'on', 'Separator', 'on');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div><a class="see-also-link" href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.uimenu.properties.html">proprietes de uimenu</a></div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

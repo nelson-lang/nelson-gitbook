@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nflow_wire_editing</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nflow_wire_editing</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Wire routing and editing in the nflow editor.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Concept page: wire routing, pinned waypoints, rounded bends
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>Creating a connection</b></p>
+    <p>Drag from an output port toward an input port. A ghost wire follows the pointer, compatible targets are highlighted, and the active target is emphasized without moving the diagram. An incompatible target is refused immediately with a short explanation in Diagnostics.</p>
+    <p>The nflow editor routes connection wires automatically with an orthogonal (horizontal/vertical) router that avoids blocks, spreads overlapping wires apart, draws hop arcs at crossings, and keeps routes stable across edits (a rerouted wire keeps its shape unless a clearly better route exists).</p>
+    <p>
+      <b>Behavior while dragging blocks</b>
+    </p>
+    <p>While a block is dragged, its wires are deformed locally: only the segments attached to the moved ports stretch, the rest of each route stays frozen. As soon as the pointer pauses (about 50 ms), the router computes real routes in the background and applies them only when they are clearly better; wires never flicker or jump. The final routes are computed on drop.</p>
+    <p>
+      <b>Editing a wire segment</b>
+    </p>
+    <p>Hover an interior segment of a wire: the cursor changes to a resize arrow. Drag the segment perpendicular to itself to place it where you want; its neighbor segments stretch to follow. On release, the moved segment ends become <b>pinned waypoints</b>: the wire keeps this exact shape through automatic rerouting, and other wires route around it.</p>
+    <p>Pinned wires are drawn with a slightly stronger stroke and small anchor dots on the pinned waypoints. When one of the wire's blocks moves, only the free parts between the ports and the pinned anchors are rerouted; the pinned middle is preserved verbatim.</p>
+    <p>To hand a pinned wire back to the automatic router, double-click it, or right-click it and choose <b>Auto-route Wire</b>.</p>
+    <p>Pinned waypoints are saved in the <b>.nflow</b> file (each pinned point is stored as <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">[x, y, 1]</code> in the connection's <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">points</code> array) and restored on load; undo and redo cover segment edits.</p>
+    <p>
+      <b>Appearance</b>
+    </p>
+    <p>Wire bends are drawn with small rounded corners by default. Set the UI preference <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow.wireRoundedCorners</code> to <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">0</code> to draw sharp corners instead.</p>
+    <p>Crossings between wires are drawn as small hop arcs; exactly one of the two crossing wires draws the hop, chosen deterministically.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../nflow_gui/nflow_workspace.html">nflow_workspace</a><a class="see-also-link" href="../nflow_gui/open_system.html">open_system</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -28,7 +28,7 @@ end
 
 ## 🔗 See also
 
-[ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md).
+[ispc](../os_functions/ispc.md), [ismac](../os_functions/ismac.md), [iswasm](../os_functions/iswasm.md).
 
 ## 🕔 History
 

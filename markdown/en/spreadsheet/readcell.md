@@ -10,7 +10,7 @@ Create cell array from file.
 ## 📥 Input argument
 
 - filename - a string: filename source.
-- opts - DelimitedTextImportOptions object
+- opts - nelson.io.text.DelimitedTextImportOptions object
 
 ## 📤 Output argument
 
@@ -34,7 +34,7 @@ Names = {'John'; 'Alice'; 'Bob'; 'Diana'}; Age = [28; 34; 22; 30]; Height = [175
 
 ## 🔗 See also
 
-[writecell](../spreadsheet/writecell.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
+[delimitedTextImportOptions](../spreadsheet/delimitedTextImportOptions.md), [writecell](../spreadsheet/writecell.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 History
 

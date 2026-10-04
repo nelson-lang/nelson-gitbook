@@ -8,7 +8,9 @@ This module enhances Nelson's capabilities by offering a range of functions that
 
 ## Functions
 
+- [beta](beta.md) - Beta function.
 - [betainc](betainc.md) - Incomplete beta function
+- [betaln](betaln.md) - Logarithm of the beta function.
 - [cross](cross.md) - Cross product.
 - [dot](dot.md) - Dot product.
 - [erf](erf.md) - Error function
@@ -18,11 +20,22 @@ This module enhances Nelson's capabilities by offering a range of functions that
 - [erfinv](erfinv.md) - Inverse error function
 - [factor](factor.md) - Prime factors
 - [gamma](gamma.md) - Gamma special function
+- [gammainc](gammainc.md) - Incomplete gamma function.
 - [gammaln](gammaln.md) - Logarithm of gamma function
 - [gcd](gcd.md) - Greatest common divisor
+- [griddedInterpolant](griddedInterpolant.md) - Gridded data interpolant object
+- [integral](integral.md) - Numerically evaluate integral (adaptive quadrature)
+- [integral2](integral2.md) - Numerically evaluate double integral
+- [integral3](integral3.md) - Numerically evaluate a triple integral.
+- [integralInterpolant](integralInterpolant.md) - Definite integral with variable upper limit (integral interpolant object)
 - [interp1](interp1.md) - 1-D data interpolation
 - [interp2](interp2.md) - Interpolation for 2-D gridded data in meshgrid format
 - [interp3](interp3.md) - Interpolation for 3-D gridded data in meshgrid format
 - [interpn](interpn.md) - Interpolation for N-D gridded data in ndgrid format
+- [isprime](isprime.md) - Determine which array elements are prime.
+- [lcm](lcm.md) - Least common multiple.
+- [makima](makima.md) - Modified Akima piecewise cubic interpolation.
 - [peaks](peaks.md) - Peaks function
 - [primes](primes.md) - Prime numbers less than or equal to input value
+- [quadgk](quadgk.md) - Numerically evaluate an integral with Gauss-Kronrod quadrature.
+- [spline](spline.md) - Cubic spline interpolation.

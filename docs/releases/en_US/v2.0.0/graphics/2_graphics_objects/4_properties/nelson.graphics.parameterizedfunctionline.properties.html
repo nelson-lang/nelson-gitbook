@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>parameterizedfunctionline properties</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">parameterizedfunctionline properties</span></div></div>
+<div class="section syntax-section"><div class="subtitle">parameterizedfunctionline graphics object properties.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>This page documents the visible properties returned by <b>properties</b> for a <b>parameterizedfunctionline</b> graphics object.</p>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>Action</th>
+        <th>Type and supported values</th>
+      </tr>
+      <tr>
+        <td><b>AffectAutoLimits</b></td>
+        <td>updates automatic axes limits.</td>
+        <td>Type: finite numeric vector. Supported values: two finite values [min max].</td>
+      </tr>
+      <tr>
+        <td><b>AlignVertexCenters</b></td>
+        <td>updates rendered output on refresh.</td>
+        <td>Type: on/off value. Supported values: 'on', 'off', true, or false.</td>
+      </tr>
+      <tr>
+        <td><b>Annotation</b></td>
+        <td>updates annotation metadata.</td>
+        <td>Type: graphics annotation object. Supported values: annotation handle or empty handle.</td>
+      </tr>
+      <tr>
+        <td><b>BeingDeleted</b></td>
+        <td>reports object deletion state.</td>
+        <td>Type: text scalar. Supported values: 'off' or 'on'.</td>
+      </tr>
+      <tr>
+        <td><b>BusyAction</b></td>
+        <td>controls callback queuing.</td>
+        <td>Type: text scalar. Supported values: 'queue' or 'cancel'.</td>
+      </tr>
+      <tr>
+        <td><b>ButtonDownFcn</b></td>
+        <td>runs on mouse-button events.</td>
+        <td>Type: callback value. Supported values: [], function handle, text, or callback cell array.</td>
+      </tr>
+      <tr>
+        <td><b>Children</b></td>
+        <td>updates with object parenting.</td>
+        <td>Type: graphics handle vector. Supported values: empty vector or child handles.</td>
+      </tr>
+      <tr>
+        <td><b>Clipping</b></td>
+        <td>controls clipping to axes limits.</td>
+        <td>Type: text scalar. Supported values: 'on' or 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>Color</b></td>
+        <td>changes line color.</td>
+        <td>Type: color value. Supported values: color names, short color names, RGB triplet, hexadecimal color, or 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>ColorMode</b></td>
+        <td>selects automatic or manual color.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>ContextMenu</b></td>
+        <td>attaches a context menu.</td>
+        <td>Type: graphics handle scalar. Supported values: [] or uicontextmenu handle.</td>
+      </tr>
+      <tr>
+        <td><b>CreateFcn</b></td>
+        <td>runs when the object is created.</td>
+        <td>Type: callback value. Supported values: [], function handle, text, or callback cell array.</td>
+      </tr>
+      <tr>
+        <td><b>DataTipTemplate</b></td>
+        <td>updates the data tip content shown by interactive data tips.</td>
+        <td>Type: data tip template object or empty value. Supported values: a data tip template object or an empty value.</td>
+      </tr>
+      <tr>
+        <td><b>DeleteFcn</b></td>
+        <td>runs when the object is deleted.</td>
+        <td>Type: callback value. Supported values: [], function handle, text, or callback cell array.</td>
+      </tr>
+      <tr>
+        <td><b>DisplayName</b></td>
+        <td>sets the legend label.</td>
+        <td>Type: text value. Supported values: character row vector or string scalar.</td>
+      </tr>
+      <tr>
+        <td><b>HandleVisibility</b></td>
+        <td>controls handle discovery.</td>
+        <td>Type: text scalar. Supported values: 'on', 'off', or 'callback'.</td>
+      </tr>
+      <tr>
+        <td><b>HitTest</b></td>
+        <td>controls mouse hit testing.</td>
+        <td>Type: text scalar. Supported values: 'on' or 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>Interruptible</b></td>
+        <td>controls callback interruption.</td>
+        <td>Type: text scalar. Supported values: 'on' or 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>LineJoin</b></td>
+        <td>changes joins between segments.</td>
+        <td>Type: text scalar. Supported values: 'miter', 'round', or 'chamfer'.</td>
+      </tr>
+      <tr>
+        <td><b>LineStyle</b></td>
+        <td>changes line style.</td>
+        <td>Type: text scalar. Supported values: '-', '--', ':', '-.', or 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>LineStyleMode</b></td>
+        <td>selects automatic or manual style.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>LineWidth</b></td>
+        <td>changes line width.</td>
+        <td>Type: finite numeric scalar. Supported values: values greater than or equal to 0.</td>
+      </tr>
+      <tr>
+        <td><b>Marker</b></td>
+        <td>changes marker symbol.</td>
+        <td>Type: text scalar. Supported values: marker names, marker characters, or 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerEdgeColor</b></td>
+        <td>changes marker edge color.</td>
+        <td>Type: color value. Supported values: color values, 'auto', 'none', or 'flat'.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerFaceColor</b></td>
+        <td>changes marker face color.</td>
+        <td>Type: color value. Supported values: color values, 'auto', 'none', or 'flat'.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerIndices</b></td>
+        <td>selects marked data points.</td>
+        <td>Type: positive integer vector. Supported values: indices into plotted data or empty value.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerMode</b></td>
+        <td>selects automatic or manual markers.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerSize</b></td>
+        <td>changes marker size.</td>
+        <td>Type: finite numeric scalar. Supported values: finite scalar value.</td>
+      </tr>
+      <tr>
+        <td><b>MeshDensity</b></td>
+        <td>controls function sampling density.</td>
+        <td>Type: positive integer scalar. Supported values: integer greater than 1.</td>
+      </tr>
+      <tr>
+        <td><b>Parent</b></td>
+        <td>reparents the object.</td>
+        <td>Type: graphics handle scalar. Supported values: axes or hggroup handle.</td>
+      </tr>
+      <tr>
+        <td><b>PickableParts</b></td>
+        <td>selects parts that receive mouse hits.</td>
+        <td>Type: text scalar. Supported values: 'visible', 'all', or 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>RData</b></td>
+        <td>updates polar radius data.</td>
+        <td>Type: numeric vector. Supported values: [] or finite/infinite numeric data.</td>
+      </tr>
+      <tr>
+        <td><b>RDataMode</b></td>
+        <td>selects automatic or manual radius data.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>RDataSource</b></td>
+        <td>stores radius data source text.</td>
+        <td>Type: text value. Supported values: empty text or variable name.</td>
+      </tr>
+      <tr>
+        <td><b>RVariable</b></td>
+        <td>stores radius variable text.</td>
+        <td>Type: text value. Supported values: empty text or variable name.</td>
+      </tr>
+      <tr>
+        <td><b>Selected</b></td>
+        <td>changes selection state.</td>
+        <td>Type: text scalar. Supported values: 'on' or 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>SelectionHighlight</b></td>
+        <td>controls selection highlighting.</td>
+        <td>Type: text scalar. Supported values: 'on' or 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>SeriesIndex</b></td>
+        <td>stores series ordering.</td>
+        <td>Type: integer scalar. Supported values: finite integer value.</td>
+      </tr>
+      <tr>
+        <td><b>SourceTable</b></td>
+        <td>binds the object data to a table; the variable properties select columns.</td>
+        <td>Type: table. Supported values: empty table or a table providing bound variables.</td>
+      </tr>
+      <tr>
+        <td><b>TRange</b></td>
+        <td>sets the parameter sampling interval.</td>
+        <td>Type: two-element numeric row vector. Supported values: increasing finite interval [tmin tmax].</td>
+      </tr>
+      <tr>
+        <td><b>TRangeMode</b></td>
+        <td>selects automatic or manual parameter range.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>Tag</b></td>
+        <td>stores an object identifier.</td>
+        <td>Type: text value. Supported values: empty text or identifier text.</td>
+      </tr>
+      <tr>
+        <td><b>ThetaData</b></td>
+        <td>updates polar angle data.</td>
+        <td>Type: numeric vector. Supported values: [] or finite/infinite numeric data.</td>
+      </tr>
+      <tr>
+        <td><b>ThetaDataMode</b></td>
+        <td>selects automatic or manual angle data.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>ThetaDataSource</b></td>
+        <td>stores angle data source text.</td>
+        <td>Type: text value. Supported values: empty text or variable name.</td>
+      </tr>
+      <tr>
+        <td><b>ThetaVariable</b></td>
+        <td>stores angle variable text.</td>
+        <td>Type: text value. Supported values: empty text or variable name.</td>
+      </tr>
+      <tr>
+        <td><b>Type</b></td>
+        <td>reports the object type.</td>
+        <td>Type: read-only text. Supported values: 'parameterizedfunctionline'.</td>
+      </tr>
+      <tr>
+        <td><b>UserData</b></td>
+        <td>stores user data.</td>
+        <td>Type: Nelson array. Supported values: any Nelson value.</td>
+      </tr>
+      <tr>
+        <td><b>Visible</b></td>
+        <td>controls object visibility.</td>
+        <td>Type: text scalar. Supported values: 'on' or 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>XData</b></td>
+        <td>stores sampled x data.</td>
+        <td>Type: numeric vector. Supported values: [] or numeric row/column vector.</td>
+      </tr>
+      <tr>
+        <td><b>XDataMode</b></td>
+        <td>selects automatic or manual x data.</td>
+        <td>Type: text scalar. Supported values: 'auto' or 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>XDataSource</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>XFunction</b></td>
+        <td>stores the function sampled for x data.</td>
+        <td>Type: function value. Supported values: function handle or empty value.</td>
+      </tr>
+      <tr>
+        <td><b>XVariable</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>YData</b></td>
+        <td>stores sampled y data.</td>
+        <td>Type: numeric vector. Supported values: [] or numeric row/column vector.</td>
+      </tr>
+      <tr>
+        <td><b>YDataMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>YDataSource</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>YFunction</b></td>
+        <td>stores the function sampled for y data.</td>
+        <td>Type: function value. Supported values: function handle or empty value.</td>
+      </tr>
+      <tr>
+        <td><b>YVariable</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>ZData</b></td>
+        <td>stores sampled z data.</td>
+        <td>Type: numeric vector. Supported values: [] or numeric row/column vector.</td>
+      </tr>
+      <tr>
+        <td><b>ZDataMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>ZDataSource</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>ZFunction</b></td>
+        <td>stores the function sampled for z data.</td>
+        <td>Type: function value. Supported values: function handle or empty value.</td>
+      </tr>
+      <tr>
+        <td><b>ZVariable</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Inspect parameterizedfunctionline properties.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">h = fplot(@cos, @sin); properties(h)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../../graphics/1_plots/1_line_plots/fplot.html">fplot</a><a class="see-also-link" href="../../../graphics/1_plots/1_line_plots/fplot3.html">fplot3</a><a class="see-also-link" href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.functionline.properties.html">functionline properties</a>
+</div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

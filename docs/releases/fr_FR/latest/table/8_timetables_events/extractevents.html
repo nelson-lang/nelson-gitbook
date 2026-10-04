@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>extractevents</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">extractevents</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Extraire une table d'evenements de lignes d'une timetable.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">ET = extractevents(TT, rows)
+ET = extractevents(TT, labels)
+ET = extractevents(..., Name, Value)
+[ET, TT2] = extractevents(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">TT</td>
+<td>Timetable d'entree.</td>
+</tr>
+<tr>
+<td class="param-name">rows</td>
+<td>Lignes de <b>TT</b> : numeros de lignes, masque logique, instants (datetime ou duration), timerange ou ':'.</td>
+</tr>
+<tr>
+<td class="param-name">labels</td>
+<td>Vecteur categorical avec un element par ligne de <b>TT</b> : les elements definis sont les libelles des evenements, les lignes a &lt;undefined&gt; ne sont pas des evenements.</td>
+</tr>
+<tr>
+<td class="param-name">Name, Value</td>
+<td>
+<b>EventLabels</b>, <b>EventLengths</b>, <b>EventEnds</b> : valeurs (scalaire ou une par evenement) ; <b>EventLabelsVariable</b>, <b>EventLengthsVariable</b>, <b>EventEndsVariable</b> : variable de <b>TT</b> qui les contient ; <b>EventDataVariables</b> : variables de <b>TT</b> copiees dans la table d'evenements ; <b>PreserveEventVariables</b> : true pour garder ces variables dans <b>TT2</b> (false par defaut).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ET</td>
+<td>Table d'evenements : les instants des lignes selectionnees et les variables d'evenements.</td>
+</tr>
+<tr>
+<td class="param-name">TT2</td>
+<td>Copie de <b>TT</b> sans les variables copiees dans <b>ET</b>, sauf si <b>PreserveEventVariables</b> vaut true.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>extractevents</b> cree une table d'evenements a partir de lignes d'une timetable. Seules les variables nommees par les options sont copiees : d'abord la variable des durees ou des fins d'evenements, puis la variable des libelles, puis les variables de donnees, puis les variables creees a partir des valeurs <b>EventLabels</b>, <b>EventLengths</b> et <b>EventEnds</b>.</p>
+    <p>Une variable d'evenement ne peut pas aussi figurer dans <b>EventDataVariables</b>. <b>PreserveEventVariables</b> necessite au moins une option de variable et la deuxieme sortie.</p>
+    <p>Pour lire la table d'evenements attachee a une timetable, utiliser <b>TT.Properties.Events</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], ["a"; "b"; "c"; "d"], 'VariableNames', {'A', 'L'});
+ET = extractevents(TT, [2 4], 'EventLabelsVariable', 'L')
+[ET, TT2] = extractevents(TT, timerange(seconds(2), seconds(4)), 'EventDataVariables', 'A')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], 'VariableNames', {'A'});
+ET = extractevents(TT, categorical(["start"; ""; ""; "stop"]))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../table/syncevents.html">syncevents</a><a class="see-also-link" href="../../table/eventtable.html">eventtable</a><a class="see-also-link" href="../../table/timetable.html">timetable</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

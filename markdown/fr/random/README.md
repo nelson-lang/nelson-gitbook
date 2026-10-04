@@ -8,6 +8,7 @@ Ce module est essentiel pour les simulations, la modélisation probabiliste et l
 
 ## Functions
 
+- [RandStream](RandStream.md) - Objet de flux de nombres aléatoires.
 - [rand](rand.md) - Nombre aléatoire.
 - [randi](randi.md) - Entier aléatoire.
 - [randn](randn.md) - Nombre aléatoire normalement distribué.

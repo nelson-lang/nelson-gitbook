@@ -20,6 +20,8 @@ call make or nmake tool
 
 <b>dlmake</b> used to provide an multiplatform way to build C/C++.
 
+When it is called with at least one output argument, <b>dlmake</b> returns <b>res</b> (a logical) and <b>message</b>. When it is called with no output argument, it raises the error <b>Nelson:dlmake:failed</b> on failure instead of returning a false status.
+
 ## 💡 Example
 
 basic example to call dlmake

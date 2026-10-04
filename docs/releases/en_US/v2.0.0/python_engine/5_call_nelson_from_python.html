@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Call Nelson from Python</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">Call Nelson from Python</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Use the Nelson Engine API for Python.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">import nelson.engine
+eng = nelson.engine.start_nelson()
+eng.eval(command, nargout=0)
+eng.feval(function_name, *args, nargout=1)
+eng.workspace[name] = value
+value = eng.workspace[name]
+eng.quit()
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      The <b>nelson.engine</b> Python package starts or connects to a Nelson process
+      from Python and exposes Nelson functions as Python methods.</p>
+    <p>
+      The package can be used from a Nelson installation or from a build tree when
+      the Nelson engine library is available. If automatic discovery fails, set
+      <b>NELSON_ROOT</b> or <b>NELSON_ENGINE_LIBRARY</b> before importing the package.</p>
+    <p>
+      To install the Python package from a Nelson source or build tree, run
+      <b>python -m pip install path/to/nelson/modules/python_engine/resources/python</b>.
+      See the installation help page for complete commands and environment
+      variable setup.</p>
+    <p>
+      <b>start_nelson</b> starts an owned Nelson session. Calling <b>quit</b> or
+      <b>close</b> closes that session. <b>connect_nelson</b> attaches to an existing
+      session and detaches without closing the target process.</p>
+    <p>
+      Set <b>background=True</b> to run startup or connection asynchronously. The
+      return value is a <b>FutureResult</b> object with <b>result</b>, <b>done</b>,
+      <b>cancel</b>, and <b>cancelled</b> methods.</p>
+    <p>
+      Use <b>nargout</b> to control returned values. With <b>nargout=0</b>, calls
+      return <b>None</b>. With <b>nargout=1</b>, calls return one value. With
+      <b>nargout&gt;1</b>, calls return a tuple.</p>
+    <p>
+      Function calls are synchronous by default. Pass <b>background=True</b> to
+      call a Nelson function asynchronously. The call immediately returns a
+      <b>FutureResult</b>; use <b>result(timeout=None)</b>, <b>done</b>,
+      <b>cancel</b>, and <b>cancelled</b> to inspect or control it.</p>
+    <p>
+      <b>FutureResult.result(timeout)</b> raises <b>nelson.engine.TimeoutError</b>
+      if the result is not ready before the timeout, <b>CancelledError</b> if the
+      call was cancelled, and propagates Nelson execution errors from the
+      asynchronous call.</p>
+    <p>
+      Supported data exchange includes scalar values, strings, logical values,
+      numeric arrays, Nelson array classes, and NumPy arrays when NumPy is
+      installed. Unsupported types raise explicit errors instead of being silently
+      converted.</p>
+    <p>
+      Python to Nelson conversions: <b>bool</b> becomes logical, <b>int</b> and
+      <b>float</b> become scalar double, <b>complex</b> becomes complex double,
+      <b>str</b> becomes char, lists and tuples become double arrays unless they
+      contain complex values, valid-key Python <b>dict</b> values become scalar
+      structs, <b>nelson.cell</b> becomes a cell array, <b>nelson.table</b> and
+      pandas DataFrame values become Nelson tables, and <b>nelson.sparse</b> is
+      created with Nelson <b>sparse</b>. pandas DataFrame indexes that are not the
+      default RangeIndex, including DatetimeIndex values, are preserved as Nelson
+      table row names rather than converted to timetables. NumPy arrays preserve
+      common bool, integer, float, and complex dtypes when NumPy is installed.</p>
+    <p>
+      Nelson to Python conversions: char arrays become <b>nelson.char</b>, dense
+      numeric and logical arrays become Nelson Python array objects, complex
+      arrays preserve their real and imaginary parts, and sparse matrices become
+      <b>nelson.sparse</b>. Scalar structs become <b>nelson.struct</b>, cell
+      arrays become <b>nelson.cell</b>, and tables become pandas DataFrame values
+      when pandas is installed or <b>nelson.table</b> otherwise. Sparse reads use
+      a compatibility path based on <b>full</b> metadata when direct sparse IPC
+      serialization is unavailable. Non-scalar struct arrays, graphics, and other
+      safe object handles return as <b>nelson.engine.NelsonObject</b> values that
+      can be passed back to the same engine call, for example to select or close a
+      figure. Object handles also provide convenience <b>get</b> and <b>set</b>
+      methods for Nelson properties when the underlying Nelson object supports
+      them.</p>
+    <p>
+      Not fully supported yet: converting non-scalar struct arrays into native
+      Python mapping objects, deep table nesting, and arbitrary direct object
+      method dispatch from Python. Nelson provides a timetable type, but its
+      conversion to and from Python objects is not yet exposed.
+      Python dictionaries with keys that are not valid struct field names are
+      transferred through Nelson dictionary construction when assigned to the
+      workspace. Unsupported object conversions raise explicit compatibility
+      errors or return Nelson object handles when a safe conversion is not
+      available.</p>
+    <p>
+      Table workflows can often be adapted by converting tabular data to
+      supported arrays before crossing the engine boundary. For example, sort or
+      filter values in Python lists, then pass the selected numeric data back as
+      <b>nelson.double</b> arrays for Nelson calculations or plotting.</p>
+    <p>
+      Nelson array classes include <b>nelson.double</b>, <b>nelson.single</b>,
+      signed and unsigned integer arrays, <b>nelson.logical</b>, and
+      <b>nelson.char</b>. Arrays use zero-based Python indexing and preserve
+      Nelson column-major storage for engine transfer.</p>
+    <p>
+      Dictionaries can be represented with <b>nelson.dictionary</b>. Table values
+      interoperate with pandas DataFrame objects when pandas is installed;
+      otherwise they are represented as Nelson object handles or raise
+      compatibility errors where conversion is not available.</p>
+    <p>
+      The <b>nelson.engine</b> package starts or connects to a separate Nelson
+      process. For the in-process case, when Python is run from Nelson with
+      <b>pyrun</b> or <b>pyrunfile</b>, a Nelson function handle
+      can be wrapped into a Python callable with <b>pyfunction</b> and called back
+      synchronously from the Python code (for example as a scikit-learn scorer,
+      kernel, or transformer). That callback is single-threaded and requires
+      <b>n_jobs=1</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Start Nelson, call a function, and close the session.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+eng = nelson.engine.start_nelson()
+print(eng.sqrt(4.0))
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Call a Nelson function asynchronously.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+eng = nelson.engine.start_nelson()
+future = eng.sqrt(4.0, background=True)
+if not future.done():
+    ret = future.result(timeout=30)
+print(ret)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Evaluate commands and exchange workspace variables.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson
+import nelson.engine
+
+eng = nelson.engine.start_nelson()
+eng.workspace["x"] = nelson.double([[1, 2, 3], [4, 5, 6]])
+eng.eval("y = x * 2;", nargout=0)
+y = eng.workspace["y"]
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Call a user script that computes the area of a triangle.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab"># File triarea_script.m in the current folder:
+# b = 5;
+# h = 3;
+# a = 0.5 * (b .* h)
+
+import nelson.engine
+
+eng = nelson.engine.start_nelson()
+eng.triarea_script(nargout=0)
+area = eng.workspace["a"]
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Call a user function from the current folder.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab"># File triarea_fun.m in the current folder:
+# function a = triarea_fun(b, h)
+#   a = 0.5 * (b .* h);
+# end
+
+import nelson.engine
+
+eng = nelson.engine.start_nelson()
+ret = eng.triarea_fun(1.0, 5.0)
+print(ret)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Call functions by changing folder or adding folders to the Nelson path.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+eng = nelson.engine.start_nelson()
+eng.cd(r"C:\work\myFolder", nargout=0)
+eng.myFnc(nargout=0)
+
+eng.addpath(r"C:\work\myfiles", nargout=0)
+paths = eng.genpath(r"C:\work\myproject")
+eng.addpath(paths, nargout=0)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Call a user function after adding its folder to Nelson path.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+eng = nelson.engine.start_nelson()
+eng.addpath(r"C:\work\nelson_functions", nargout=0)
+result = eng.myfunction(10.0, nargout=1)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Run a script. Scripts normally use nargout=0.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+eng = nelson.engine.start_nelson()
+eng.cd(r"C:\work\scripts", nargout=0)
+eng.myscript(nargout=0)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Start Nelson asynchronously.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+future = nelson.engine.start_nelson(background=True)
+eng = future.result(timeout=30)
+eng.eval("disp('ready')", nargout=0)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use complex, logical, sparse, and NumPy values.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson
+import nelson.engine
+
+eng = nelson.engine.start_nelson()
+eng.workspace["z"] = nelson.double([[1 + 2j, 3 - 4j]], is_complex=True)
+eng.workspace["flags"] = nelson.logical([[True, False]])
+eng.workspace["s"] = nelson.sparse([0, 1], [1, 0], [5.0, 7.0], (2, 2))
+
+try:
+    import numpy as np
+    eng.workspace["np_values"] = np.array([[1, 2]], dtype=np.int16)
+except ImportError:
+    pass
+
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use a Medium-style direct engine workflow instead of os.system.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson
+import nelson.engine
+
+eng = nelson.engine.start_nelson()
+params = nelson.dictionary({"param1": 10, "param2": 12})
+values = nelson.double([1, 2, 3])
+
+# Native dictionary transfer is not yet available in the v1 bridge.
+# Pass supported scalar/array values directly, or convert dictionaries in Nelson code.
+eng.myFunc(values, nargout=0)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Sort data in Python and plot it with Nelson.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson
+import nelson.engine
+
+eng = nelson.engine.start_nelson()
+
+pressure = nelson.double(vector=[82.0, 76.0, 91.0, 79.0])
+smoker = nelson.logical(vector=[True, False, True, False])
+
+pressure_values = pressure[0]
+smoker_values = smoker[0]
+sp = [p for p, s in zip(pressure_values, smoker_values) if s is True]
+nsp = [p for p, s in zip(pressure_values, smoker_values) if s is False]
+
+sp = nelson.double(sp)
+nsp = nelson.double(nsp)
+smoker_average = eng.mean(sp)
+nonsmoker_average = eng.mean(nsp)
+
+sdx = eng.linspace(1.0, float(len(sp[0])), len(sp[0]))
+nsdx = eng.linspace(1.0, float(len(nsp[0])), len(nsp[0]))
+
+eng.figure(nargout=0)
+eng.hold("on", nargout=0)
+eng.box("on", nargout=0)
+eng.scatter(sdx, sp, 10.0, "blue", nargout=0)
+eng.scatter(nsdx, nsp, 10.0, "red", nargout=0)
+eng.xlabel("Patient (Anonymized)", nargout=0)
+eng.ylabel("Diastolic Blood Pressure", nargout=0)
+eng.title("Blood Pressure Readings", nargout=0)
+eng.legend("Smokers", "Nonsmokers", nargout=0)
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Keep a Nelson graphics handle in Python and pass it back.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson.engine
+
+eng = nelson.engine.start_nelson()
+h = eng.figure()
+eng.figure(h, nargout=0)
+visible = h.get("Visible")
+h.set("Visible", visible)
+eng.feval("close", h, nargout=0)
+h.release()
+eng.quit()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Use Nelson arrays and dictionaries from Python.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">import nelson
+
+a = nelson.double([[1, 2], [3, 4]])
+flags = nelson.logical([[True, False]])
+config = nelson.dictionary({"method": "fast", "iterations": 10})</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../python_engine/pyrun.html">pyrun</a><a class="see-also-link" href="../python_engine/pyfunction.html">pyfunction</a><a class="see-also-link" href="../python_engine/pyenv.html">pyenv</a><a class="see-also-link" href="../python_engine/6_install_nelson_engine_for_python.html">Install Nelson Engine API for Python</a><a class="see-also-link" href="../ipc/ipc.html">ipc</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>Nelson Engine API for Python added.</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

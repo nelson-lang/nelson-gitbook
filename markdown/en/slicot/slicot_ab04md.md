@@ -51,6 +51,10 @@ D = [   1.0  0.0; 0.0 -1.0];
 [A_OUT, B_OUT, C_OUT, D_OUT, INFO] = slicot_ab04md(TYPE, ALPHA, BETA, A, B, C, D)
 ```
 
+## 🔗 See also
+
+[slicot_ab07nd](../slicot/slicot_ab07nd.md), [c2d](../control_system/c2d.md), [d2c](../control_system/d2c.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

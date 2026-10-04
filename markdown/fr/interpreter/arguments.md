@@ -18,13 +18,13 @@ Chaque déclaration d'argument suit cette forme :
 
 <code>argName (dimensions) class {validators} = defaultValue</code>
 
-<b>(dimensions)</b> — Taille de l'entrée spécifiée sous forme de liste séparée par des virgules d'entiers ou de deux-points, par exemple <code>(1,1)</code>, <code>(1,:)</code>, ou <code>(3,5,2)</code>. Un deux-points permet n'importe quelle longueur dans cette dimension. L'entrée doit correspondre exactement aux dimensions déclarées, ou être compatible avec elles (par exemple, un vecteur colonne est compatible avec <code>(1,:)</code> et est automatiquement redimensionné). Les expressions ne sont pas autorisées dans les dimensions.
+<b>(dimensions)</b> : Taille de l'entrée spécifiée sous forme de liste séparée par des virgules d'entiers ou de deux-points, par exemple <code>(1,1)</code>, <code>(1,:)</code>, ou <code>(3,5,2)</code>. Un deux-points permet n'importe quelle longueur dans cette dimension. L'entrée doit correspondre exactement aux dimensions déclarées, ou être compatible avec elles (par exemple, un vecteur colonne est compatible avec <code>(1,:)</code> et est automatiquement redimensionné). Les expressions ne sont pas autorisées dans les dimensions.
 
-<b>class</b> — Un nom de classe unique tel que <code>double</code>, <code>char</code>, ou <code>string</code>. La valeur est convertie en cette classe lorsque cela est possible. Si omis, toute classe est acceptée.
+<b>class</b> : Un nom de classe unique tel que <code>double</code>, <code>char</code>, ou <code>string</code>. La valeur est convertie en cette classe lorsque cela est possible. Si omis, toute classe est acceptée.
 
-<b>{validators}</b> — Une liste séparée par des virgules de fonctions de validation, entourée d'accolades , par exemple <code>{mustBeNumeric, mustBeReal}</code>. Les fonctions de validation génèrent une erreur lorsque la condition n'est pas remplie ; contrairement à la classe, elles ne modifient jamais la valeur de l'argument.
+<b>{validators}</b> : Une liste séparée par des virgules de fonctions de validation, entourée d'accolades , par exemple <code>{mustBeNumeric, mustBeReal}</code>. Les fonctions de validation génèrent une erreur lorsque la condition n'est pas remplie ; contrairement à la classe, elles ne modifient jamais la valeur de l'argument.
 
-<b>= defaultValue</b> — Une expression qui fournit une valeur par défaut et rend l'argument optionnel. L'expression peut faire référence aux arguments déclarés précédemment. Les arguments optionnels doivent être positionnés après tous les arguments requis dans la signature de la fonction et dans le bloc <b>arguments</b>.
+<b>= defaultValue</b> : Une expression qui fournit une valeur par défaut et rend l'argument optionnel. L'expression peut faire référence aux arguments déclarés précédemment. Les arguments optionnels doivent être positionnés après tous les arguments requis dans la signature de la fonction et dans le bloc <b>arguments</b>.
 
 <b>arguments (Repeating) ... end</b> déclare des arguments d'entrée répétitifs. Une fonction ne peut contenir qu'un seul bloc d'entrée répétitif. Nelson crée un tableau de cellules pour chaque argument répétitif contenant toutes les valeurs passées pour cet argument. Si la fonction possède également des arguments nom-valeur, ceux-ci doivent être déclarés dans un bloc <b>arguments</b> séparé après le bloc répétitif.
 
@@ -159,9 +159,9 @@ end
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.17.0  | initial version |
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 1.17.0  | version initiale |
 
 <!--
 ## 👤 Auteur

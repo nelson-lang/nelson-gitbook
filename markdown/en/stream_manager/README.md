@@ -4,10 +4,11 @@ The Stream Manager module provides tools for managing input and output streams i
 
 It supports reading and writing text and binary data to files, handling file positions, detecting end-of-file conditions, and managing file errors.
 
-The module also enables logging of session activity, and loading and saving workspace data, facilitating robust and flexible file I/O operations within scripts and applications.
+The module also supports session logging and workspace load/save operations for controlled file I/O in scripts and applications.
 
 ## Functions
 
+- [cprintf](cprintf.md) - Writes styled formatted text to stdout.
 - [diary](diary.md) - Diary of a session.
 - [fclose](fclose.md) - Close an opened file.
 - [feof](feof.md) - Checks end of file.
@@ -26,5 +27,7 @@ The module also enables logging of session activity, and loading and saving work
 - [ftell](ftell.md) - Returns the offset of the current byte relative to the beginning of a file.
 - [fwrite](fwrite.md) - Write data in binary form to the file specified by the file descriptor fid.
 - [load](load.md) - load data from .nh5 or .mat file into Nelson's workspace.
+- [readlines](readlines.md) - Read lines of a text file as a string array.
 - [save](save.md) - save workspace variables to .nh5 or .mat file
 - [sscanf](sscanf.md) - Read formatted data from strings.
+- [textscan](textscan.md) - Read formatted data from a character vector, string or file.

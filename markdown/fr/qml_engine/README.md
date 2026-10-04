@@ -27,7 +27,7 @@ Il fournit des fonctions pour gérer les composants QML, accéder aux objets Qt 
 - [qml_evaluatestring](qml_evaluatestring.md) - Évalue une chaîne JS.
 - [qml_importpathlist](qml_importpathlist.md) - Renvoie la liste des répertoires où le moteur recherche les modules installés dans une structure de répertoires basée sur des URL.
 - [qml_loadfile](qml_loadfile.md) - Charger un fichier QML.
-- [qml_loadstring](qml_loadstring.md) - Load a QML string.
+- [qml_loadstring](qml_loadstring.md) - Charge une chaîne QML.
 - [qml_offlinestoragepath](qml_offlinestoragepath.md) - Obtient la propriété contenant le répertoire pour stocker les données utilisateur hors ligne.
 - [qml_pluginpathlist](qml_pluginpathlist.md) - Renvoie la liste des répertoires où le moteur recherche les plugins natifs pour les modules importés.
 - [qml_setofflinestoragepath](qml_setofflinestoragepath.md) - Définit la propriété contenant le répertoire pour stocker les données utilisateur hors ligne.

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>intlinprog</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">intlinprog</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Programmation linéaire mixte en nombres entiers.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">x = intlinprog(f, intcon, A, b)
+[x, fval, exitflag, output] = intlinprog(f, intcon, A, b, Aeq, beq, lb, ub, x0, options)
+[x, fval, exitflag, output] = intlinprog(problem)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">f</td>
+<td>coefficients de l'objectif linéaire.</td>
+</tr>
+<tr>
+<td class="param-name">intcon</td>
+<td>indices des variables entières.</td>
+</tr>
+<tr>
+<td class="param-name">A, b</td>
+<td>contraintes linéaires A*x &lt;= b.</td>
+</tr>
+<tr>
+<td class="param-name">Aeq, beq</td>
+<td>contraintes linéaires Aeq*x = beq.</td>
+</tr>
+<tr>
+<td class="param-name">lb, ub</td>
+<td>bornes inférieures et supérieures.</td>
+</tr>
+<tr>
+<td class="param-name">options</td>
+<td>options du solveur créées avec optimoptions ou optimset.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>minimiseur calculé.</td>
+</tr>
+<tr>
+<td class="param-name">fval</td>
+<td>valeur de l'objectif f'*x.</td>
+</tr>
+<tr>
+<td class="param-name">exitflag</td>
+<td>indicateur de terminaison.</td>
+</tr>
+<tr>
+<td class="param-name">output</td>
+<td>structure de diagnostic.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>intlinprog</b> résout des problèmes d'optimisation linéaire où certaines variables sont entières. Nelson utilise HiGHS lorsque disponible.</p>
+    <p>La structure de problème acceptée peut contenir les champs solver, f, intcon, Aineq ou A, bineq ou b, Aeq, beq, lb, ub, x0 et options.</p>
+    <p>La structure <b>output</b> indique l'écart relatif et absolu, le nombre de points faisables, le nombre de noeuds, la violation des contraintes, les itérations, le temps écoulé, l'algorithme, le statut backend normalisé, le statut de solution primale et le message du backend. <b>exitflag</b> distingue les statuts optimal, infaisable, non borné, limite atteinte et arrêt anticipé lorsque le backend fournit ce statut.</p>
+    <p>Les options comme <b>MaxTime</b>, <b>MaxNodes</b>, <b>MaxIterations</b>, <b>MaxFeasiblePoints</b>, <b>AbsoluteGapTolerance</b>, <b>RelativeGapTolerance</b>, <b>IntegerTolerance</b>, <b>LPPreprocess</b>, <b>RootLPAlgorithm</b>, <b>Heuristics</b> et <b>CutGeneration</b> sont converties en options HiGHS lorsque possible. Les options reconnues sans équivalent direct dans le backend sont acceptées et ignorées.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = [8; 1];
+intcon = 2;
+A = [-1 -2; -4 -1; 2 1];
+b = [14; -33; 20];
+opts = optimoptions('intlinprog', 'Display', 'off');
+[x, fval, exitflag, output] = intlinprog(f, intcon, A, b, [], [], [], [], [], opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../optimization/linprog.html">linprog</a><a class="see-also-link" href="../optimization/optimoptions.html">optimoptions</a><a class="see-also-link" href="../optimization/prob2struct.html">prob2struct</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>optimoptionsprob2struct</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliographie</div>
+<div>Huangfu, Q. et Hall, J. A. J., Parallelizing the dual revised simplex method, Mathematical Programming Computation, 2018.
+Achterberg, T., Constraint Integer Programming, thèse de doctorat, Technische Universitaet Berlin, 2007.
+Nemhauser, G. L. et Wolsey, L. A., Integer and Combinatorial Optimization, Wiley, 1988.</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

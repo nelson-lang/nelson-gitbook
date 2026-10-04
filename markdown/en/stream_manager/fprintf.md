@@ -16,7 +16,7 @@ Writes data to a file.
 
 ## 📤 Output argument
 
-- R - an integer value: number of bytes that fprintf write.
+- R - an integer value: number of bytes written to a file, or number of visible characters displayed on screen.
 
 ## 📄 Description
 
@@ -27,6 +27,8 @@ characters encoding uses <b>fopen</b> parameter.
 If fid equals 1 redirection in stdout.
 
 If fid equals 2 redirection in stderr.
+
+When output is sent to the screen, ANSI SGR escape sequences can style text with bold, italic, underline, strikethrough, foreground colors, and background colors. The escape sequences are interpreted for stdout and stderr display, but they are written unchanged when output is sent to a file.
 
 The <b>format</b> follows C fprintf syntax.
 
@@ -48,6 +50,8 @@ The <b>format</b> follows C fprintf syntax.
 
 To display a percent sign, you need to use a double percent sign (%%) in the format string.
 
+A percent sign at the end of the format string that is not doubled is ignored.
+
 ## 💡 Examples
 
 ```matlab
@@ -62,6 +66,20 @@ R = fileread([tempdir(), 'fprintf.txt'])
 ```matlab
 fprintf(1, 'an value %g.', pi);
 fprintf(2, "an value %g.", pi);
+```
+
+Display styled text with ANSI SGR escape sequences
+
+```matlab
+esc = char(27);
+fprintf([esc, '[1;34mBold blue text', esc, '[0m\n']);
+```
+
+Display truecolor text with ANSI SGR escape sequences
+
+```matlab
+esc = char(27);
+fprintf([esc, '[38;2;80;120;220mTruecolor text', esc, '[0m\n']);
 ```
 
 How to use backspace
@@ -83,15 +101,23 @@ Display a percent sign
 fprintf(1, '%d%%.', 95)
 ```
 
+Trailing percent handling
+
+```matlab
+fprintf(1, ' %d %', 10)
+fprintf(1, ' %d %%', 10)
+```
+
 ## 🔗 See also
 
 [fopen](../stream_manager/fopen.md), [fclose](../stream_manager/fclose.md), [fread](../stream_manager/fread.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                            |
+| ------- | --------------------------------------------------------- |
+| 1.0.0   | initial version                                           |
+| 2.0.0   | ANSI SGR escape sequences are rendered for screen output. |
 
 <!--
 ## 👤 Author

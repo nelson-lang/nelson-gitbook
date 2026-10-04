@@ -1,6 +1,6 @@
 # dlsym_used
 
-Returns list of current used dlsym handle.
+Returns the current valid dlsym handles.
 
 ## 📝 Syntax
 
@@ -12,12 +12,12 @@ Returns list of current used dlsym handle.
 
 ## 📄 Description
 
-Returns list of current used dlsym handle.
+Returns the current valid dlsym handles.
 
 ## 💡 Example
 
 ```matlab
-dlsym_used(),delete(dlsym_used())
+used = dlsym_used()
 ```
 
 ## 🔗 See also

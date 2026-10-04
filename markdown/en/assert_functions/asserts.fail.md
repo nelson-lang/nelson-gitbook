@@ -1,0 +1,54 @@
+# asserts.fail
+
+Force an assertion failure.
+
+## 📝 Syntax
+
+- asserts.fail()
+- asserts.fail(message)
+- [res, msg] = asserts.fail(message)
+
+## 📥 Input argument
+
+- message - Optional custom failure message.
+
+## 📤 Output argument
+
+- res - true if the assertion passes, false otherwise.
+- msg - assertion failure message, empty on success.
+
+## 📄 Description
+
+Use this assertion to mark an execution path that must not be reached.
+
+With outputs, no error is raised and res is false.
+
+## 💡 Examples
+
+Capture a forced failure
+
+```matlab
+[res, msg] = asserts.fail('unreachable branch');
+```
+
+Raise a forced failure
+
+```matlab
+try; asserts.fail('unreachable branch'); catch ME; disp(ME.message); end
+```
+
+## 🔗 See also
+
+[asserts.istrue](../assert_functions/asserts.istrue.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
+| ------- | --------------- |
+| 2.0.0   | initial version |
+
+<!--
+## 👤 Author
+
+Allan CORNET
+-->

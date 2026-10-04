@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>parquet</module>
+    <section name="Parquet">
+      <chapter_description>
+    <p>Le module Parquet fournit le support des fichiers locaux Apache Parquet.</p>
+    <p>Il permet de lire et d'ecrire des tables orientees colonnes, d'obtenir les metadonnees d'un fichier et de traiter un ou plusieurs fichiers Parquet avec un datastore et des filtres de lignes.</p>
+    <p>Les variables de table prises en charge incluent les valeurs logiques, les types entiers, les nombres flottants simple et double precision, le texte, les valeurs datetime, les durees, les tables imbriquees stockees comme colonnes struct, et les cellules homogenes de vecteurs primitifs stockees comme colonnes list.</p>
+  </chapter_description>
+      <keyword name="nelson.io.datastore.ParquetDatastore" link="class_ParquetDatastore.html" description="Objet datastore pour fichiers Parquet."/>
+      <keyword name="nelson.io.parquet.ParquetInfo" link="class_ParquetInfo.html" description="Objet de metadonnees retourne par parquetinfo."/>
+      <keyword name="nelson.io.RowFilter" link="class_RowFilter.html" description="Objet qui stocke une expression de filtre de lignes."/>
+      <keyword name="parquetDatastore" link="parquetDatastore.html" description="Creer un datastore pour un ou plusieurs fichiers Parquet."/>
+      <keyword name="parquetinfo" link="parquetinfo.html" description="Retourner les metadonnees d'un fichier Parquet."/>
+      <keyword name="parquetread" link="parquetread.html" description="Lire des donnees de table depuis un fichier Parquet."/>
+      <keyword name="parquetwrite" link="parquetwrite.html" description="Ecrire une table dans un fichier Parquet."/>
+      <keyword name="rowfilter" link="rowfilter.html" description="Creer une expression de filtre de lignes."/>
+    </section>
+  </toc>
+</help_summary>

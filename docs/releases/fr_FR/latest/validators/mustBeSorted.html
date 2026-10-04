@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>mustBeSorted</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">mustBeSorted</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Vérifie que les éléments d'un tableau sont triés ou signale une erreur.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">mustBeSorted(A)
+mustBeSorted(A, dim)
+mustBeSorted(A, direction)
+mustBeSorted(A, dim, direction)
+mustBeSorted(..., 'MissingPlacement', placement)
+mustBeSorted(..., 'ComparisonMethod', method)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>une variable : numérique, logique, char, string, tableau de cellules de vecteurs de caractères, ou objet implémentant issorted. Les valeurs complexes sont supportées.</td>
+</tr>
+<tr>
+<td class="param-name">dim</td>
+<td>un entier positif scalaire : dimension de travail. Par défaut : première dimension dont la taille est différente de 1.</td>
+</tr>
+<tr>
+<td class="param-name">direction</td>
+<td>'ascend' (par défaut), 'descend', 'monotonic' (croissant ou décroissant), 'strictascend', 'strictdescend' ou 'strictmonotonic'. Les directions strictes refusent les valeurs répétées et les valeurs manquantes.</td>
+</tr>
+<tr>
+<td class="param-name">placement</td>
+<td>'auto' (par défaut), 'first' ou 'last' : position attendue des valeurs manquantes (NaN, string manquante). 'auto' les place à la fin pour l'ordre croissant et au début pour l'ordre décroissant.</td>
+</tr>
+<tr>
+<td class="param-name">method</td>
+<td>'auto' (par défaut), 'real' ou 'abs' : comparaison des valeurs numériques. 'real' compare les parties réelles puis les parties imaginaires, 'abs' compare les modules puis les arguments. 'auto' utilise 'real' pour une entrée réelle et 'abs' pour une entrée complexe.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>mustBeSorted(A)</b> signale une erreur si les éléments de <b>A</b> ne sont pas triés. Elle ne retourne pas de valeur.</p>
+    <p>Les vecteurs sont vérifiés dans leur ensemble, les matrices colonne par colonne, et les tableaux multidimensionnels selon la première dimension dont la taille est différente de 1.</p>
+    <p>Les valeurs vides et les scalaires sont toujours triés.</p>
+    <p>Les tableaux réels denses numériques, logiques et char sont vérifiés nativement en un seul parcours ; les autres types utilisent les opérateurs de comparaison de leur classe.</p>
+    <p><b>mustBeSorted</b> est destinée à la validation des propriétés et des arguments de fonctions.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Direction de l'ordre</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = [5 3 3 1];
+mustBeSorted(A, 'descend')
+mustBeSorted(A)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Valeurs manquantes et valeurs complexes</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">mustBeSorted([1 2 NaN])
+mustBeSorted([NaN 1 2], 'MissingPlacement', 'first')
+mustBeSorted([1 -2 3], 'ComparisonMethod', 'abs')
+mustBeSorted([1+1i, 1-1i])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../data_analysis/issorted.html">issorted</a><a class="see-also-link" href="../data_analysis/sort.html">sort</a><a class="see-also-link" href="../validators/mustBeVector.html">mustBeVector</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

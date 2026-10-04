@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nflow_workspace</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nflow_workspace</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Using the nflow editor workspace.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Concept page: library, inspector, simulation controls, and diagnostics
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>The workspace keeps the diagram in the center, with the block library on the left and the contextual inspector on the right. The lower panel contains separate <b>Console</b> and <b>Diagnostics</b> views. Panel visibility and widths are restored when the editor is reopened.</p>
+    <p><b>Finding and inserting blocks</b></p>
+    <p>Use the always-visible Library search field to filter block names and categories. The search ignores case and accents. Click a result to insert and select it, drag a result onto the diagram, or double-click an empty diagram area to open Quick insert. The Quick insert button exposes the same command without requiring a shortcut.</p>
+    <p><b>Managing libraries</b></p>
+    <p>Open <b>Manage libraries</b> from the Library header to configure ordered search folders and external libraries. The first folder containing a given library identifier has priority. Integrated libraries remain enabled. External libraries can be enabled or disabled, except while blocks from the library are used by the current diagram. Unavailable folders remain listed until they are located again or removed.</p>
+    <p><b>Editing properties</b></p>
+    <p>Select a block to open the <b>Block</b> inspector. Its parameters stay visible while the diagram is edited. The Capabilities section reports direct or model-dependent C and Rust code-generation support. An OpenModelica requirement is shown only for blocks that need it. Use the <b>Model</b> tab for simulation settings, variables, diagram metadata, routing, and read-only mode.</p>
+    <p>The Model information section shows the model version, creator and creation date, plus the user and date of the last successful save. Description, license and read-only mode are stored with the diagram. Older diagrams without last-save metadata display those values as unavailable.</p>
+    <p>In <b>Settings</b>, the Modelica section reports whether OpenModelica was detected and is ready for FMU export. When available, it displays the detected version and executable path; otherwise, it explains why detection or export is unavailable.</p>
+    <p><b>Running a simulation</b></p>
+    <p>The <b>Simulation</b> menu and the compact toolbar above the diagram expose Run or Resume, Pause, Stop, Reset, and Simulation Settings. The toolbar can be hidden or restored from <b>View &gt; Simulation Toolbar</b>; this choice is restored when the editor is reopened. Stop keeps the results already calculated. Reset stops the simulation when necessary, returns time to zero, and clears the displayed results.</p>
+    <p><b>Using diagnostics</b></p>
+    <p>Errors and warnings appear in the Diagnostics tab and in the status-bar counters. Select a diagnostic that references a block to center and select that block in the diagram.</p>
+    <p><b>Responsive layout</b></p>
+    <p>On wide windows, the library and inspector can remain open together. On narrower windows the inspector opens when needed, and the workspace limits simultaneous side panels so that the diagram remains usable.</p>
+    <p><b>Restored preferences</b></p>
+    <p>NFlow restores the window geometry, visible panels, panel dimensions and tabs, open library and inspector sections, scroll positions, diagnostic filters, code-generation options, recent file-dialog directories, and new-diagram defaults. Zoom and pan are restored when the same saved diagram is opened again. NFlow does not automatically reopen the last diagram.</p>
+    <p>Use <b>View &gt; Reset UI Preferences</b> to remove these interface preferences. The current diagram is not modified, and default values apply to newly opened editor windows.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../nflow_gui/nflow_wire_editing.html">nflow_wire_editing</a><a class="see-also-link" href="../nflow_gui/nflow_solvers.html">nflow_solvers</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

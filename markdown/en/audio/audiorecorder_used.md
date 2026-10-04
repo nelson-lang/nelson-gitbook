@@ -1,6 +1,6 @@
 # audiorecorder_used
 
-Returns list of current used audiorecorder handle.
+Returns the current valid audiorecorder handles.
 
 ## 📝 Syntax
 
@@ -12,12 +12,12 @@ Returns list of current used audiorecorder handle.
 
 ## 📄 Description
 
-Returns list of current used audiorecorder handle.
+Returns the current valid audiorecorder handles.
 
 ## 💡 Example
 
 ```matlab
-audiorecorder_used(),delete(audiorecorder_used())
+used = audiorecorder_used()
 ```
 
 ## 🔗 See also

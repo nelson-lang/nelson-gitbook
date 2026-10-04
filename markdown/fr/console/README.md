@@ -1,10 +1,10 @@
 # Console
 
-Le module Console gère l'interaction avec la fenêtre de commande de Nelson.
+Le module Console gere l'interaction avec la fenetre de commande de Nelson.
 
-Il fournit des outils pour contrôler l'affichage, gérer les entrées utilisateur et interroger les propriétés du terminal.
+Il fournit des outils pour controler l'affichage, gerer les entrees utilisateur et interroger les proprietes du terminal.
 
-Ces fonctionnalités permettent aux scripts et applications de communiquer directement avec l'utilisateur via la console, facilitant la construction de workflows interactifs et l'adaptation de la sortie à l'environnement terminal actuel.
+Ces fonctions permettent aux scripts et applications de communiquer avec l'utilisateur par la console et d'adapter la sortie au terminal courant.
 
 ## Functions
 

@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>fmincon</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fmincon</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Minimisation non linéaire contrainte.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">x = fmincon(fun, x0, A, b)
+x = fmincon(fun, x0, A, b, Aeq, beq, lb, ub, nonlcon, options)
+[x, fval, exitflag, output, lambda, grad, hessian] = fmincon(___)
+x = fmincon(problem)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">fun</td>
+<td>fonction objectif retournant un scalaire réel.</td>
+</tr>
+<tr>
+<td class="param-name">x0</td>
+<td>point initial.</td>
+</tr>
+<tr>
+<td class="param-name">A, b</td>
+<td>inégalités linéaires A*x &lt;= b.</td>
+</tr>
+<tr>
+<td class="param-name">Aeq, beq</td>
+<td>égalités linéaires Aeq*x = beq.</td>
+</tr>
+<tr>
+<td class="param-name">lb, ub</td>
+<td>bornes inférieures et supérieures.</td>
+</tr>
+<tr>
+<td class="param-name">nonlcon</td>
+<td>fonction de contraintes non linéaires retournant c et ceq.</td>
+</tr>
+<tr>
+<td class="param-name">options</td>
+<td>options créées avec optimoptions ou optimset.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>minimiseur calculé.</td>
+</tr>
+<tr>
+<td class="param-name">fval</td>
+<td>valeur de l'objectif en x.</td>
+</tr>
+<tr>
+<td class="param-name">exitflag</td>
+<td>indicateur de terminaison.</td>
+</tr>
+<tr>
+<td class="param-name">output</td>
+<td>structure de diagnostic.</td>
+</tr>
+<tr>
+<td class="param-name">lambda</td>
+<td>structure des multiplicateurs de Lagrange.</td>
+</tr>
+<tr>
+<td class="param-name">grad</td>
+<td>gradient de l'objectif en x.</td>
+</tr>
+<tr>
+<td class="param-name">hessian</td>
+<td>hessien approché du Lagrangien.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>fmincon</b> résout des problèmes de minimisation non linéaire avec contraintes linéaires, bornes et contraintes non linéaires.</p>
+    <p>Le chemin <b>sqp</b> résout des sous-problèmes quadratiques avec contraintes actives linéarisées, mises à jour BFGS du hessien et recherche linéaire sur une fonction de mérite. Les contraintes non linéaires sont traitées directement dans le sous-problème SQP avec des jacobiens par différences finies ou fournis par l'utilisateur.</p>
+    <p>Le chemin <b>interior-point</b> construit un point initial intérieur avec une continuation de barrière logarithmique avant d'entrer dans la phase SQP non linéaire. Le chemin <b>active-set</b> maintient un ensemble actif explicite et indique les lignes linéaires actives dans <b>output.activeconstraints</b>. Le chemin <b>sqp-legacy</b> utilise une boucle SQP conservatrice séparée avec sous-problèmes à ensemble actif et décroissance de mérite plus stricte.</p>
+    <p>Pour les problèmes mal mis à l'échelle, utiliser <b>ScaleProblem</b> avec la valeur <b>obj-and-constr</b> et fournir <b>TypicalX</b>. Nelson met les sous-problèmes SQP à l'échelle, initialise le hessien avec les échelles des variables et applique des tests de décroissance de mérite mis à l'échelle.</p>
+    <p>Si le SQP non linéaire ne peut pas restaurer la faisabilité, Nelson lance une phase de restauration par continuation pénalisée et renseigne <b>output.restoration</b> lorsque cette phase fournit le point retourné.</p>
+    <p>Le chemin <b>trust-region-reflective</b> prend en charge les problèmes avec bornes et égalités linéaires, gradients utilisateur, matrices de hessien, callbacks de hessien ou callbacks de multiplication par le hessien, gradients conjugués tronqués projetés, préconditionnement diagonal ou bande et mises à jour du rayon de région de confiance. La structure <b>output</b> inclut des diagnostics de gradients conjugués comme <b>pcgflag</b>, <b>pcgresidual</b> et <b>trustregionradius</b>.</p>
+    <p>Les modes d'affichage acceptés sont <b>off</b>, <b>none</b>, <b>final</b>, <b>final-detailed</b>, <b>notify</b>, <b>notify-detailed</b>, <b>iter</b> et <b>iter-detailed</b>. Avec <b>Diagnostics</b> à <b>on</b>, Nelson affiche un résumé des variables, fonctions, contraintes et de l'algorithme sélectionné avant la résolution.</p>
+    <p>Les options par défaut dépendent de l'algorithme : <b>interior-point</b> utilise <b>MaxIterations</b> 1000, <b>MaxFunctionEvaluations</b> 3000, <b>StepTolerance</b> 1e-10 et <b>SubproblemAlgorithm</b> 'factorization' ; les autres algorithmes utilisent <b>MaxIterations</b> 400, <b>MaxFunctionEvaluations</b> '100*numberOfVariables' et <b>StepTolerance</b> 1e-6.</p>
+    <p>La sortie <b>exitflag</b> vaut 1 (optimalité du premier ordre atteinte), 2 (pas inférieur à StepTolerance), 3 (variation de l'objectif inférieure à FunctionTolerance, trust-region-reflective), 0 (limite d'itérations ou d'évaluations), -1 (arrêt par la fonction de sortie), -2 (aucun point faisable trouvé) ou -3 (objectif sous ObjectiveLimit).</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Minimiser la fonction de Rosenbrock sur le disque unité.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function [c, ceq] = unitdisk(x)
+  c = x(1)^2 + x(2)^2 - 1;
+  ceq = [];
+end
+fun = @(x) 100*(x(2) - x(1)^2)^2 + (1 - x(1))^2;
+opts = optimoptions('fmincon', 'Display', 'off', 'Algorithm', 'sqp');
+[x, fval] = fmincon(fun, [0; 0], [], [], [], [], [], [], @unitdisk, opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser des contraintes linéaires.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">fun = @(x) 100*(x(2) - x(1)^2)^2 + (1 - x(1))^2;
+A = [1 2];
+b = 1;
+[x, fval, exitflag] = fmincon(fun, [-1; 2], A, b)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser une matrice de hessien avec trust-region-reflective.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function [f, g] = quadobj(x)
+  f = (x(1) - 1)^2 + (x(2) - 2)^2;
+  g = [2*(x(1) - 1); 2*(x(2) - 2)];
+end
+opts = optimoptions('fmincon', 'Display', 'off', 'Algorithm', 'trust-region-reflective', ...
+  'SpecifyObjectiveGradient', true, 'Hessian', 2*eye(2));
+[x, fval] = fmincon(@quadobj, [0; 0], [], [], [], [], [0; 0], [3; 3], [], opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser une fonction de multiplication par le hessien avec trust-region-reflective.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">function [f, g] = quadobj(x)
+  f = (x(1) - 1)^2 + (x(2) - 2)^2;
+  g = [2*(x(1) - 1); 2*(x(2) - 2)];
+end
+function y = quadhessmult(x, v)
+  y = 2*v;
+end
+opts = optimoptions('fmincon', 'Display', 'off', 'Algorithm', 'trust-region-reflective', ...
+  'SpecifyObjectiveGradient', true, 'HessianMultiplyFcn', @quadhessmult);
+[x, fval] = fmincon(@quadobj, [0; 0], [], [], [], [], [0; 0], [3; 3], [], opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../optimization/optimoptions.html">optimoptions</a><a class="see-also-link" href="../optimization/fminsearch.html">fminsearch</a><a class="see-also-link" href="../optimization/quadprog.html">quadprog</a><a class="see-also-link" href="../optimization/solve.html">solve</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>optimoptionsoptimsetquadprogfminsearch</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliographie</div>
+<div>Powell, M. J. D., A fast algorithm for nonlinearly constrained optimization calculations, Lecture Notes in Mathematics, 1978.
+Han, S. P., A globally convergent method for nonlinear programming, Journal of Optimization Theory and Applications, 1977.
+Gill, P. E., Murray, W. et Wright, M. H., Practical Optimization, Academic Press, 1981.
+Nocedal, J. et Wright, S. J., Numerical Optimization, Springer, 2006.
+Byrd, R. H., Schnabel, R. B. et Shultz, G. A., Approximate solution of the trust region problem by minimization over two-dimensional subspaces, Mathematical Programming, 1988.
+Conn, A. R., Gould, N. I. M. et Toint, P. L., Trust Region Methods, SIAM, 2000.</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

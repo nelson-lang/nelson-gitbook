@@ -8,22 +8,30 @@ Format d'affichage et impression des nombres.
 - format()
 - format('default')
 - format(new_style)
+- format('truncateMatrices', 'on')
+- format('truncateMatrices', 'off')
+- format(fmt)
 
 ## 📥 Argument d'entrée
 
-- new_style - une chaîne
+- new_style - une chaine ou un vecteur de caracteres
+- fmt - un objet nelson.display.DisplayFormatOptions
 
 ## 📤 Argument de sortie
 
-- fmt - Objet DisplayFormatOptions : format utilisé
+- fmt - objet nelson.display.DisplayFormatOptions : format d'affichage courant
 
 ## 📄 Description
 
 <b>format(new_style)</b> modifie le format d'affichage et l'impression des nombres pour la session courante.
 
-<b>format('default')</b> réinitialise le format par défaut (short, loose).
+<b>format('default')</b> reinitialise le format par defaut (short, loose, truncateMatrices on).
 
-Styles pris en charge :
+<b>fmt = format()</b> retourne un objet <b>nelson.display.DisplayFormatOptions</b> avec les valeurs courantes de <b>NumericFormat</b>, <b>LineSpacing</b> et <b>TruncateMatrices</b>.
+
+<b>format(fmt)</b> restaure le format d'affichage stocke dans un objet <b>nelson.display.DisplayFormatOptions</b>.
+
+Formats numeriques pris en charge :
 
 <b>short</b>
 
@@ -33,11 +41,17 @@ Styles pris en charge :
 
 <b>longE</b>
 
+<b>shortG</b>
+
+<b>longG</b>
+
 <b>shortEng</b>
 
 <b>longEng</b>
 
-<b>plus</b>
+<b>+</b>
+
+<b>bank</b>
 
 <b>rational</b>
 
@@ -49,26 +63,20 @@ Formats d'espacement de ligne pris en charge :
 
 <b>compact</b>
 
+Formats de troncature de matrice pris en charge :
+
+<b>format('truncateMatrices', 'on')</b>
+
+<b>format('truncateMatrices', 'off')</b>
+
 ## 💡 Exemple
 
-an example
+Sauvegarder et restaurer le format d'affichage.
 
 ```matlab
 current_style = format()
 pi
-format('short')
-pi
-format('long')
-pi
-format('shortE')
-pi
 format('longE')
-pi
-format('hex')
-pi
-format('+')
-pi
-format('rational')
 pi
 format('compact')
 pi
@@ -78,13 +86,14 @@ pi
 
 ## 🔗 Voir aussi
 
-[disp](../display_format/disp.md), [display](../display_format/display.md).
+[nelson.display.DisplayFormatOptions](../display_format/nelson.display.DisplayFormatOptions.md), [disp](../display_format/disp.md), [display](../display_format/display.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                                                      |
+| ------- | ----------------------------------------------------------------------------------- |
+| 1.0.0   | version initiale                                                                    |
+| 2.0.0   | format retourne et accepte des objets classdef nelson.display.DisplayFormatOptions. |
 
 <!--
 ## 👤 Auteur

@@ -1,6 +1,6 @@
 # MPI_Comm_size
 
-Determines the size of the group associated with a communicator.
+Détermine la taille du groupe associé à un communicateur.
 
 ## 📝 Syntaxe
 
@@ -8,15 +8,15 @@ Determines the size of the group associated with a communicator.
 
 ## 📥 Argument d'entrée
 
-- Comm - a MPI_Comm object.
+- Comm - un objet MPI_Comm.
 
 ## 📤 Argument de sortie
 
-- r - an integer value: number of processes in the group of Comm.
+- r - un entier : nombre de processus dans le groupe de Comm.
 
 ## 📄 Description
 
-Determines the size of the group associated with a communicator.
+Détermine la taille du groupe associé à un communicateur.
 
 ## 💡 Exemple
 

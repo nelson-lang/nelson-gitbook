@@ -64,6 +64,10 @@ C_IN = [1.0000e+000          0.0          0.0          0.0          0.0;
 [MAXRED_OUT, A_OUT, B_OUT, C_OUT, SCALE, INFO] = slicot_tb01id(JOB, MAXRED_IN, A_IN, B_IN, C_IN)
 ```
 
+## 🔗 Voir aussi
+
+[slicot_mb04md](../slicot/slicot_mb04md.md), [slicot_tg01ad](../slicot/slicot_tg01ad.md), [slicot_ab01od](../slicot/slicot_ab01od.md), [balreal](../control_system/balreal.md), [ss](../control_system/ss.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

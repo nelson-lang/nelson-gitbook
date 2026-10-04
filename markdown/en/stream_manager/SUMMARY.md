@@ -1,4 +1,5 @@
 - [stream_manager](README.md)
+  - [cprintf](cprintf.md)
   - [diary](diary.md)
   - [fclose](fclose.md)
   - [feof](feof.md)
@@ -17,5 +18,7 @@
   - [ftell](ftell.md)
   - [fwrite](fwrite.md)
   - [load](load.md)
+  - [readlines](readlines.md)
   - [save](save.md)
   - [sscanf](sscanf.md)
+  - [textscan](textscan.md)

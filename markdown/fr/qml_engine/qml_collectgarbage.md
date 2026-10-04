@@ -16,6 +16,10 @@ Le ramasse-miette tentera de récupérer la mémoire en localisant et en détrui
 qml_collectgarbage()
 ```
 
+## 🔗 Voir aussi
+
+[qml_clearcomponentcache](../qml_engine/qml_clearcomponentcache.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

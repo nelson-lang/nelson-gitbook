@@ -1,0 +1,33 @@
+# asManyOfPattern
+
+Repeat pattern as many times as possible.
+
+## 📝 Syntax
+
+- R = asManyOfPattern(...)
+
+## 📄 Description
+
+<b>asManyOfPattern</b> Repeat pattern as many times as possible.
+
+## 💡 Example
+
+```matlab
+pat = asManyOfPattern("b"); extract("abbbc", "a" + pat + "c")
+```
+
+## 🔗 See also
+
+[asFewOfPattern](../../string/asFewOfPattern.md), [optionalPattern](../../string/optionalPattern.md), [pattern](../../string/pattern.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
+| ------- | --------------- |
+| 2.0.0   | initial version |
+
+<!--
+## 👤 Author
+
+Allan CORNET
+-->

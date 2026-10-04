@@ -1,6 +1,6 @@
 # mustBeNonnegative
 
-Checks that value is nonnegative or raise an error.
+Vérifie qu'une valeur est non négative, sinon émet une erreur.
 
 ## 📝 Syntaxe
 
@@ -11,7 +11,7 @@ Checks that value is nonnegative or raise an error.
 ## 📥 Argument d'entrée
 
 - var - une variable : tous les types et classes pris en charge qui implémentent isnumeric, islogical, all, isreal et la méthode ge (>=).
-- argPosition - a positive integer value: Position of input argument.
+- argPosition - un entier positif : position de l'argument d'entrée.
 
 ## 📄 Description
 

@@ -12,7 +12,7 @@ Executes a script file (.m).
 
 - script_file - a string: path of a script
 - 'nocatch' - a string: default option (no error catch)
-- 'errcatch' - a string: error catched
+- 'errcatch' - a string: error caught
 
 ## 📤 Output argument
 

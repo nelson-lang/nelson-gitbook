@@ -8,6 +8,7 @@ This module is essential for simulations, probabilistic modeling, and stochastic
 
 ## Functions
 
+- [RandStream](RandStream.md) - Random number stream object.
 - [rand](rand.md) - Random Number.
 - [randi](randi.md) - Random Integer.
 - [randn](randn.md) - Normally distributed random number.

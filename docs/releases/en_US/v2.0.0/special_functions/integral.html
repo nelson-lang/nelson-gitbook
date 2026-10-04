@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>integral</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">integral</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Numerically evaluate integral (adaptive quadrature)</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">q = integral(fun, a, b)
+q = integral(fun, a, b, name, value)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">fun</td>
+<td>Integrand: function handle.</td>
+</tr>
+<tr>
+<td class="param-name">a</td>
+<td>Lower limit of integration: real scalar (finite or infinite) or finite complex scalar.</td>
+</tr>
+<tr>
+<td class="param-name">b</td>
+<td>Upper limit of integration: real scalar (finite or infinite) or finite complex scalar.</td>
+</tr>
+<tr>
+<td class="param-name">name, value</td>
+<td>One or more name/value pairs: 'RelativeTolerance', 'AbsoluteTolerance', 'ArrayValued', 'Vectorized', 'Waypoints'.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">q</td>
+<td>Value of the integral.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>q = integral(fun, a, b)</b> numerically integrates the function <b>fun</b> from <b>a</b> to <b>b</b> using global adaptive Gauss-Kronrod quadrature.
+    </p>
+    <p>
+      By default <b>fun</b> is assumed to be vectorized: it must accept a vector of abscissae and return a vector of the same size.
+    </p>
+    <p>
+      The limits <b>a</b> and <b>b</b> may be infinite (<b>-Inf</b> and/or <b>Inf</b>); a change of variable maps the interval to a finite one.
+    </p>
+    <p>
+      If <b>a</b>, <b>b</b> or a waypoint is complex, <b>integral</b> computes the path integral along the straight lines joining <b>a</b>, the waypoints in the given order, and <b>b</b>. Complex limits and waypoints must be finite.
+    </p>
+    <p>
+      The following name/value pairs are supported:
+    </p>
+    <p><b>RelativeTolerance</b> (or <b>RelTol</b>): relative error tolerance (default <b>1e-6</b>).</p>
+    <p><b>AbsoluteTolerance</b> (or <b>AbsTol</b>): absolute error tolerance (default <b>1e-10</b>).</p>
+    <p><b>integral</b> attempts to satisfy <b>abs(q - Q) &lt;= max(AbsoluteTolerance, RelativeTolerance * abs(q))</b> where <b>Q</b> is the exact value.</p>
+    <p><b>ArrayValued</b>: when <b>true</b>, <b>fun</b> returns an array and is evaluated at a scalar abscissa (default <b>false</b>).</p>
+    <p><b>Vectorized</b>: when <b>false</b>, <b>fun</b> is written for scalar inputs: it accepts a scalar <b>x</b> and returns a scalar, and <b>integral</b> evaluates it point by point (default <b>true</b>, faster). Ignored when <b>ArrayValued</b> is <b>true</b>.</p>
+    <p><b>Waypoints</b>: vector of finite real or complex points used in the initial mesh. With real limits and real waypoints, the interval is split at the waypoints lying inside it (their order does not matter): use them to mark discontinuities or local extrema of the integrand. Do not use waypoints to specify singularities; split the interval instead. Complex waypoints define a piecewise linear contour.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">q = integral(@(x) x.^2, 0, 1)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">q = integral(@(x) exp(-x.^2), 0, Inf)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">q = integral(@(x) [1; 1] .* x, 0, 1, 'ArrayValued', true)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example">
+<div class="example-title">Singularity at the lower limit: tighter tolerances</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">format long
+q1 = integral(@log, 0, 1)
+q2 = integral(@log, 0, 1, 'AbsoluteTolerance', 1e-12, 'RelativeTolerance', 0)
+format short</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Integral of a function written for scalar inputs</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">fun = @(x) 2*x - x^2;
+q = integral(fun, 0, 1, 'Vectorized', false)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Complex contour integration using waypoints (closed path around the pole z = 1/2)</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">fun = @(z) 1 ./ (2*z - 1);
+q = integral(fun, 0, 0, 'Waypoints', [1+1i, 1-1i])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../special_functions/integral2.html">integral2</a><a class="see-also-link" href="../special_functions/integralInterpolant.html">integralInterpolant</a><a class="see-also-link" href="../linear_algebra/trapz.html">trapz</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>'Waypoints' option and complex limits (contour integration) added.</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>'Vectorized' option added: integrate functions written for scalar inputs.</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>'AbsoluteTolerance' and 'RelativeTolerance' names added ('AbsTol' and 'RelTol' still accepted).</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

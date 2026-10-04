@@ -5,6 +5,7 @@
   - [eps](eps.md)
   - [eye](eye.md)
   - [i](i.md)
+  - [j](j.md)
   - [ones](ones.md)
   - [pi](pi.md)
   - [zeros](zeros.md)

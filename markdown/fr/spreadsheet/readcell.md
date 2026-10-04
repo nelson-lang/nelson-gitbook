@@ -10,7 +10,7 @@ Créer une cellule à partir d'un fichier.
 ## 📥 Argument d'entrée
 
 - filename - une chaîne : nom de fichier source.
-- opts - Objet DelimitedTextImportOptions
+- opts - Objet nelson.io.text.DelimitedTextImportOptions
 
 ## 📤 Argument de sortie
 
@@ -34,7 +34,7 @@ Créer une cellule à partir d'un fichier.
 
 ## 🔗 Voir aussi
 
-[writecell](../spreadsheet/writecell.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
+[delimitedTextImportOptions](../spreadsheet/delimitedTextImportOptions.md), [writecell](../spreadsheet/writecell.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 Historique
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>compiler.package.InstallerOptions</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler.package.InstallerOptions</span>, <span class="keyword-alias">compiler.package.InstallerOptions</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Configurer la generation d'un installateur d'application.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">options = compiler.package.InstallerOptions(results)
+options = compiler.package.InstallerOptions(results, Name, Value, ...)
+options = compiler.package.InstallerOptions('ApplicationName', name, ...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Cet objet valeur decrit l'installateur, pas la construction de l'application. Le construire depuis un objet compiler.build.Results scalaire ou un ApplicationName explicite. Affecter les proprietes avec la notation pointee, puis le transmettre via Options a compiler.package.installer. Les proprietes invalides ou inconnues provoquent une erreur.</p>
+    <p>ApplicationName : nom affiche de l'application installee et composant du dossier par defaut. InstallerName : nom de fichier sans extension, MyAppInstaller par defaut. Les espaces sont acceptes ; les separateurs, noms de peripheriques reserves et points ou espaces finaux sont refuses.</p>
+    <p>OutputDir : dossier de sortie, ApplicationName suivi de installer par defaut. Les chemins de construction relatifs sont ancres lors de leur affectation. DefaultInstallationDir : chemin cible absolu, %ProgramFiles%/ApplicationName sous Windows, /Applications/ApplicationName sous macOS ou /usr/ApplicationName sous Linux. Sous macOS, cette valeur devient l'emplacement d'installation du paquet natif.</p>
+    <p>RuntimeDelivery : web (par defaut, indisponible), installer (runtime hors ligne selectionne par les dependances) ou none (runtime externe). OptionalDependencies : all (par defaut) ou none. Les rapports actuels n'ont aucun fichier optionnel : les deux choix conservent les memes fichiers requis. Aucun module obligatoire n'est retire.</p>
+    <p>AdditionalFiles : fichiers ou dossiers recursifs a installer pres de l'executable, distincts des ressources embarquees. Shortcut : fichier ou dossier inclus pour un raccourci du menu Demarrer Windows ou un lien symbolique relatif Linux nomme Launch ApplicationName ; sous macOS, il doit etre vide ou designer l'executable car l'application graphique est representee par son bundle .app. Une construction depuis Results selectionne son executable par defaut. La cible doit figurer dans l'inventaire d'installation.</p>
+    <p>AuthorName, AuthorCompany, AuthorEmail, Summary, Description et InstallationNotes : informations presentes dans nelson-installation.txt. Windows les affiche aussi avant installation et renseigne la societe et le resume dans les metadonnees natives. Description et InstallationNotes acceptent plusieurs lignes ; les autres champs refusent les caracteres de controle.</p>
+    <p>Version : version de l'application installee, 1.0 par defaut, avec un a quatre entiers entre 0 et 65535. Cette propriete ne reecrit pas la version de l'executable deja construit. PackageType : auto (par defaut) ou zip (Windows uniquement). Verbose : false par defaut ; accepte aussi on/off et les valeurs logiques ou numeriques zero/un. Compression : normal (par defaut), fast, max ou none. Elle regle la compression de la charge utile de l'installateur Windows, compromis entre taille et temps de generation ; les autres plateformes l'ignorent.</p>
+    <p>InstallerIcon : image utilisee par l'installateur et le desinstallateur natifs, ainsi que par le raccourci installe dans le menu Demarrer. AddRemoveProgramsIcon : image distincte pour la liste des applications installees de Windows. Ces options ne reecrivent pas l'executable applicatif ; utiliser l'option de construction ExecutableIcon pour cela.</p>
+    <p>InstallerLogo : image ajustee dans un canevas blanc de 112 par 290 pixels en conservant ses proportions. Elle apparait sur les pages d'accueil et de fin de l'installateur natif. La transparence est composee sur fond blanc. Le moteur d'installation applique son adaptation habituelle a l'affichage.</p>
+    <p>Ces trois proprietes reservees a Windows sont vides par defaut et conservent alors les images du moteur d'installation. Elles acceptent un fichier JPG, JPEG, PNG, BMP ou GIF existant, indique par vecteur de caracteres ou chaine scalaire. Les chemins relatifs sont ancres lors de l'affectation ; les images decodees sont limitees a 16 megapixels. Les icones comprennent sept resolutions de 16 a 256 pixels avec transparence. La conversion intervient uniquement pendant le packaging et n'ajoute aucun module d'image au runtime applicatif.</p>
+    <p>Les icones personnalisees sont installees dans le dossier reserve nelson-installer-assets. Les entrees applicatives en conflit sont refusees. Les images sources ne sont plus necessaires apres la generation et les images converties preservent la reproductibilite de l'installateur. Les modes silencieux et portable restent disponibles ; le mode portable ne cree aucun raccourci global ni entree dans la liste des applications.</p>
+    <p>Sous Windows et Linux, l'argument d'installation -runtimeFolder permet de placer le runtime inclus dans un emplacement partage distinct. Il appartient a l'installateur genere, pas aux proprietes de cet objet. Un paquet applicatif macOS conserve son runtime inclus en prive ; utiliser compiler.runtime.customInstaller pour produire le paquet du runtime partage. Voir compiler.package.installer pour les contraintes de chemins, de propriete et de lanceur.</p>
+    <p>Creer des options ne lance aucune construction, installation ou telechargement.</p>
+  </div>
+</div>
+<div class="section"><div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../compiler/compiler.package.installer.html">compiler.package.installer</a><a class="see-also-link" href="../compiler/compiler_installer_tutorial.html">compiler_installer_tutorial</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

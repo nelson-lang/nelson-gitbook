@@ -6,7 +6,7 @@ Access to MPI features from Nelson.
 
 As many others MPI applications, MPI/Nelson as be started through the mpiexec/mpirun command.
 
-MPI features are only avaible in CLI mode. But you can call in others mode with mpiexec builtin.
+MPI features are only available in CLI mode. But you can call in others mode with mpiexec builtin.
 
 ## 🔗 See also
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>netcdf</module>
+    <section name="netCDF">
+      <chapter_description/>
+      <keyword name="nccreate" link="nccreate.html" description="Cree une variable dans un fichier netCDF."/>
+      <keyword name="ncdisp" link="ncdisp.html" description="Affiche le contenu d'une source de donnees netCDF."/>
+      <keyword name="ncinfo" link="ncinfo.html" description="Retourne les informations d'une source de donnees netCDF."/>
+      <keyword name="ncread" link="ncread.html" description="Lit les donnees d'une variable netCDF."/>
+      <keyword name="ncreadatt" link="ncreadatt.html" description="Lit un attribut depuis une source netCDF."/>
+      <keyword name="ncwrite" link="ncwrite.html" description="Ecrit des donnees dans une variable netCDF."/>
+      <keyword name="ncwriteatt" link="ncwriteatt.html" description="Ecrit un attribut dans une source netCDF."/>
+      <keyword name="ncwriteschema" link="ncwriteschema.html" description="Ajoute des definitions de schema dans un fichier netCDF."/>
+      <keyword name="netcdf" link="netcdf.html" description="Interface bas niveau du paquet NetCDF."/>
+      <keyword name="netcdf.abort" link="netcdf_abort.html" description="Annule les definitions recentes d'un fichier netCDF."/>
+      <keyword name="netcdf.close" link="netcdf_close.html" description="Ferme un fichier netCDF."/>
+      <keyword name="netcdf.copyAtt" link="netcdf_copyAtt.html" description="Copie un attribut netCDF vers un autre emplacement."/>
+      <keyword name="netcdf.create" link="netcdf_create.html" description="Cree un nouveau jeu de donnees netCDF."/>
+      <keyword name="netcdf.defDim" link="netcdf_defDim.html" description="Cree une dimension netCDF."/>
+      <keyword name="netcdf.defGrp" link="netcdf_defGrp.html" description="Cree un groupe dans un fichier netCDF."/>
+      <keyword name="netcdf.defVar" link="netcdf_defVar.html" description="Cree une variable netCDF."/>
+      <keyword name="netcdf.defVarChunking" link="netcdf_defVarChunking.html" description="Definit le decoupage en blocs d'une variable netCDF."/>
+      <keyword name="netcdf.defVarDeflate" link="netcdf_defVarDeflate.html" description="Definit la compression d'une variable netCDF."/>
+      <keyword name="netcdf.defVarFill" link="netcdf_defVarFill.html" description="Definit la valeur de remplissage d'une variable netCDF."/>
+      <keyword name="netcdf.defVarFletcher32" link="netcdf_defVarFletcher32.html" description="Definit le controle Fletcher32 d'une variable netCDF."/>
+      <keyword name="netcdf.defVlen" link="netcdf_defVlen.html" description="Definit un type tableau de longueur variable netCDF."/>
+      <keyword name="netcdf.delAtt" link="netcdf_delAtt.html" description="Supprime un attribut netCDF."/>
+      <keyword name="netcdf.endDef" link="netcdf_endDef.html" description="Termine le mode definition d'un fichier netCDF."/>
+      <keyword name="netcdf.getAtt" link="netcdf_getAtt.html" description="Retourne un attribut netCDF."/>
+      <keyword name="netcdf.getChunkCache" link="netcdf_getChunkCache.html" description="Retourne les reglages par defaut du cache de blocs netCDF."/>
+      <keyword name="netcdf.getConstant" link="netcdf_getConstant.html" description="Retourne la valeur numerique d'une constante netCDF."/>
+      <keyword name="netcdf.getConstantNames" link="netcdf_getConstantNames.html" description="Retourne la liste des constantes netCDF connues."/>
+      <keyword name="netcdf.getVar" link="netcdf_getVar.html" description="Lit les donnees d'une variable netCDF."/>
+      <keyword name="netcdf.inq" link="netcdf_inq.html" description="Retourne des informations generales sur un fichier netCDF."/>
+      <keyword name="netcdf.inqAtt" link="netcdf_inqAtt.html" description="Retourne les informations d'un attribut netCDF."/>
+      <keyword name="netcdf.inqAttID" link="netcdf_inqAttID.html" description="Retourne l'identifiant d'un attribut netCDF."/>
+      <keyword name="netcdf.inqAttName" link="netcdf_inqAttName.html" description="Retourne le nom d'un attribut netCDF."/>
+      <keyword name="netcdf.inqDim" link="netcdf_inqDim.html" description="Retourne le nom et la longueur d'une dimension netCDF."/>
+      <keyword name="netcdf.inqDimID" link="netcdf_inqDimID.html" description="Retourne l'identifiant d'une dimension netCDF."/>
+      <keyword name="netcdf.inqDimIDs" link="netcdf_inqDimIDs.html" description="Retourne les identifiants des dimensions d'un groupe."/>
+      <keyword name="netcdf.inqFormat" link="netcdf_inqFormat.html" description="Determine le format d'un fichier netCDF."/>
+      <keyword name="netcdf.inqGrpName" link="netcdf_inqGrpName.html" description="Retourne le nom d'un groupe netCDF."/>
+      <keyword name="netcdf.inqGrpNameFull" link="netcdf_inqGrpNameFull.html" description="Retourne le chemin complet d'un groupe netCDF."/>
+      <keyword name="netcdf.inqGrpParent" link="netcdf_inqGrpParent.html" description="Retourne l'identifiant du groupe parent."/>
+      <keyword name="netcdf.inqGrps" link="netcdf_inqGrps.html" description="Retourne les identifiants des groupes enfants."/>
+      <keyword name="netcdf.inqLibVers" link="netcdf_inqLibVers.html" description="Retourne les informations de version de la bibliotheque netCDF."/>
+      <keyword name="netcdf.inqNcid" link="netcdf_inqNcid.html" description="Retourne l'identifiant d'un groupe netCDF."/>
+      <keyword name="netcdf.inqUnlimDims" link="netcdf_inqUnlimDims.html" description="Retourne les dimensions illimitees visibles dans un groupe."/>
+      <keyword name="netcdf.inqUserType" link="netcdf_inqUserType.html" description="Retourne les informations d'un type utilisateur netCDF."/>
+      <keyword name="netcdf.inqVar" link="netcdf_inqVar.html" description="Retourne les informations d'une variable netCDF."/>
+      <keyword name="netcdf.inqVarChunking" link="netcdf_inqVarChunking.html" description="Retourne le decoupage en blocs d'une variable netCDF."/>
+      <keyword name="netcdf.inqVarDeflate" link="netcdf_inqVarDeflate.html" description="Retourne les reglages de compression d'une variable netCDF."/>
+      <keyword name="netcdf.inqVarFill" link="netcdf_inqVarFill.html" description="Retourne la valeur de remplissage d'une variable netCDF."/>
+      <keyword name="netcdf.inqVarFletcher32" link="netcdf_inqVarFletcher32.html" description="Retourne le controle Fletcher32 d'une variable netCDF."/>
+      <keyword name="netcdf.inqVarID" link="netcdf_inqVarID.html" description="Retourne l'identifiant associe a un nom de variable."/>
+      <keyword name="netcdf.inqVarIDs" link="netcdf_inqVarIDs.html" description="Retourne les identifiants des variables d'un groupe."/>
+      <keyword name="netcdf.inqVlen" link="netcdf_inqVlen.html" description="Retourne les informations d'un type netCDF a longueur variable."/>
+      <keyword name="netcdf.open" link="netcdf_open.html" description="Ouvre une source de donnees netCDF."/>
+      <keyword name="netcdf.putAtt" link="netcdf_putAtt.html" description="Ecrit un attribut netCDF."/>
+      <keyword name="netcdf.putVar" link="netcdf_putVar.html" description="Ecrit des donnees dans une variable netCDF."/>
+      <keyword name="netcdf.reDef" link="netcdf_reDef.html" description="Place un fichier netCDF ouvert en mode definition."/>
+      <keyword name="netcdf.renameAtt" link="netcdf_renameAtt.html" description="Renomme un attribut netCDF."/>
+      <keyword name="netcdf.renameDim" link="netcdf_renameDim.html" description="Renomme une dimension netCDF."/>
+      <keyword name="netcdf.renameVar" link="netcdf_renameVar.html" description="Renomme une variable netCDF."/>
+      <keyword name="netcdf.setChunkCache" link="netcdf_setChunkCache.html" description="Definit les reglages par defaut du cache de blocs netCDF."/>
+      <keyword name="netcdf.setDefaultFormat" link="netcdf_setDefaultFormat.html" description="Change le format netCDF par defaut."/>
+      <keyword name="netcdf.setFill" link="netcdf_setFill.html" description="Definit le mode de remplissage netCDF."/>
+      <keyword name="netcdf.sync" link="netcdf_sync.html" description="Synchronise un fichier netCDF sur le disque."/>
+    </section>
+  </toc>
+</help_summary>

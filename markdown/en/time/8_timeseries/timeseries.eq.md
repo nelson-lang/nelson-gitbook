@@ -1,0 +1,47 @@
+# timeseries.eq
+
+Compare two timeseries objects for equality sample by sample.
+
+## 📝 Syntax
+
+- tfTs = eq(a, b)
+- tfTs = a == b
+
+## 📥 Input argument
+
+- a - Left timeseries object or scalar.
+- b - Right timeseries object or scalar.
+
+## 📤 Output argument
+
+- tfTs - Resulting timeseries object.
+
+## 📄 Description
+
+<b>eq</b> Compares data values while preserving the time axis when a timeseries input is used.
+
+## 💡 Example
+
+```matlab
+left = timeseries([1; 2], [1; 2]);
+right = timeseries([1; 3], [1; 2]);
+out = left == right;
+out.Data
+
+```
+
+## 🔗 See also
+
+[timeseries](../../time/timeseries.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
+| ------- | --------------- |
+| 2.0.0   | initial version |
+
+<!--
+## 👤 Author
+
+Allan CORNET
+-->

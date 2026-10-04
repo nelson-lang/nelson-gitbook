@@ -4,7 +4,7 @@ The representation of Python operators in Nelson.
 
 ## 📄 Description
 
-Nelson facilitates the utilization of the subsequent overloaded operators:
+Nelson supports the following overloaded operators:
 
 | Python Operator Symbol | Python Methods                    | Nelson Methods |
 | ---------------------- | --------------------------------- | -------------- |

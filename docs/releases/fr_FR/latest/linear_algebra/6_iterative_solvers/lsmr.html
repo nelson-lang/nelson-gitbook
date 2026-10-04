@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>lsmr</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">lsmr</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Methode LSMR pour equations sparse et moindres carres.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">x = lsmr(A, b)
+x = lsmr(A, b, tol, maxit)
+x = lsmr(A, b, tol, maxit, M1, M2, x0)
+[x, flag, relres, iter, resvec, lsvec] = lsmr(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">A</td>
+<td>une matrice sparse flottante reelle ou complexe.</td>
+</tr>
+<tr>
+<td class="param-name">b</td>
+<td>un vecteur second membre flottant reel ou complexe.</td>
+</tr>
+<tr>
+<td class="param-name">tol</td>
+<td>tolerance de convergence scalaire reelle finie. La valeur par defaut est 1e-6.</td>
+</tr>
+<tr>
+<td class="param-name">maxit</td>
+<td>nombre maximal d'iterations, entier positif ou nul.</td>
+</tr>
+<tr>
+<td class="param-name">M1, M2</td>
+<td>preconditionneurs a droite optionnels : matrices carrees sparse ou pleines, vecteurs diagonaux ou handles de fonction. Les handles de fonction doivent accepter un vecteur et un indicateur de transposition.</td>
+</tr>
+<tr>
+<td class="param-name">x0</td>
+<td>vecteur initial optionnel.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">x</td>
+<td>vecteur solution calcule.</td>
+</tr>
+<tr>
+<td class="param-name">flag</td>
+<td>0 si la convergence est atteinte, 1 si maxit est atteint, 4 en cas de rupture numerique.</td>
+</tr>
+<tr>
+<td class="param-name">relres</td>
+<td>norme relative du residu.</td>
+</tr>
+<tr>
+<td class="param-name">iter</td>
+<td>nombre d'iterations.</td>
+</tr>
+<tr>
+<td class="param-name">resvec</td>
+<td>historique des normes de residu.</td>
+</tr>
+<tr>
+<td class="param-name">lsvec</td>
+<td>historique des normes du residu des equations normales.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>lsmr</b> resout des equations sparse et des problemes de moindres carres avec une methode de bidiagonalisation de Golub-Kahan.</p>
+    <p>La methode prend en charge les matrices sparse double, single, double complexes et single complexes, carrees ou rectangulaires.</p>
+    <p><b>M1</b> et <b>M2</b> sont des preconditionneurs a droite. Ils peuvent etre des vecteurs diagonaux, des matrices carrees sparse ou pleines, ou des handles de fonction acceptant un vecteur et l'indicateur de transposition <b>'notransp'</b> ou <b>'transp'</b>.</p>
+    <p><b>resvec</b> stocke les normes de residu et <b>lsvec</b> stocke les estimations du residu de moindres carres a chaque iteration.</p>
+    <p>Si <b>M1</b>, <b>M2</b> ou <b>x0</b> est complexe, le calcul utilise le chemin complexe adapte.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = sparse([1 0; 0 1; 1 1; 2 -1]);
+b = [1; 2; 4; 1];
+[x, flag, relres, iter] = lsmr(A, b, 1e-12, 20)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example">
+<div class="example-title">Moindres carres sparse single avec preconditionnement diagonal.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = sparse(single([1 0; 0 1; 1 1]));
+b = single([1; 2; 3]);
+M = single([1; 2]);
+[x, flag] = lsmr(A, b, 1e-6, 20, M)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Moindres carres avec preconditionneurs a droite separes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">A = sparse([1 0; 0 1; 1 1; 2 -1]);
+b = [1; 2; 4; 1];
+M1 = [2 0; 0 1];
+M2 = [1 0.5; 0 3];
+[x, flag, relres, iter] = lsmr(A, b, 1e-12, 20, M1, M2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../linear_algebra/lsqr.html">lsqr</a><a class="see-also-link" href="../../linear_algebra/gmres.html">gmres</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>ajout de la couverture single, single complexe, preconditionneur a droite, vecteur initial et historique des residus.</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

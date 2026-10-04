@@ -1,0 +1,1052 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>pulse</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">pulse</span></div></div>
+<div class="section" style="text-align:center;"><img src="./pulse.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Générateur d'impulsions : train d'impulsions périodique (Amplitude, Period, Width, StartTime, Offset).</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Type de bloc : pulse
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports d'entrée</td>
+<td>Aucun port d'entrée (ce bloc n'en a pas).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports de sortie</td>
+<td>1 port de sortie déclaré.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Générateur d'impulsions : un train d'impulsions périodique.</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Bibliothèque</td>
+<td>Source</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">pulse</code></td>
+</tr>
+        <tr>
+<td>Libellé</td>
+<td>Pulse Generator</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Description</b></p>
+    <p>Un train d'impulsions périodique sans entrée. À partir de <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">StartTime</code>, la sortie vaut <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Offset + Amplitude</code> pendant les premiers <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Width</code> pour cent de chaque <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Period</code>, et <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Offset</code> sinon. Sans état (fonction pure du temps).</p>
+    <p><b>Ports</b></p>
+    <p>Ce bloc n'a pas de port d'entrée.</p>
+    <p><b>Sortie(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Rôle</th>
+<th>Côté</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Signal numérique produit par le bloc.</td>
+<td>droite</td>
+<td>x=80, y=40</td>
+</tr>
+      
+    </table>
+    <p><b>Paramètres</b></p>
+    <table border="1">
+      <tr>
+<th>Paramètre</th>
+<th>Valeur par défaut</th>
+</tr>
+      
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Amplitude</code></td>
+<td>1</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Period</code></td>
+<td>1</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Width</code></td>
+<td>50</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">StartTime</code></td>
+<td>0</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Offset</code></td>
+<td>0</td>
+</tr>
+      
+    </table>
+    <p><b>Caractéristiques du bloc</b></p>
+    <table border="1">
+      
+        <tr>
+<td>Type de bloc</td>
+<td>pulse</td>
+</tr>
+        <tr>
+<td>Famille</td>
+<td>Source</td>
+</tr>
+        <tr>
+<td>Taille de rendu</td>
+<td>80 x 80</td>
+</tr>
+        <tr>
+<td>Phases</td>
+<td>OUTPUT</td>
+</tr>
+        <tr>
+<td>État interne ou historique</td>
+<td>non</td>
+</tr>
+        <tr>
+<td>Type de données du signal</td>
+<td>valeurs numériques double</td>
+</tr>
+      
+    </table>
+    <p><b>Algorithmes</b></p>
+    <ul>
+      <li>OUTPUT : évalue le train d'impulsions à l'instant courant.</li>
+    </ul>
+    <p><b>Équation ou règle</b></p>
+    <span class="math display">$$y(t) = \text{Offset} + \begin{cases} A &amp; \bmod(t-t_0, T) &lt; \frac{W}{100} T \\ 0 &amp; \text{sinon} \end{cases}$$</span>
+    <p><b>Capacités étendues</b></p>
+    <p>Génération de code : supportée pour C et Rust.</p>
+    <p><b>Sources d'implémentation</b></p>
+    <p>Generation de code : prise en charge pour C et Rust.</p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/source/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.source",
+  "title": "Source",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Basic source blocks",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "constant",
+      "label": "Constant",
+      "icon": "constant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Value": 1,
+        "OutDataType": "double"
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "constant-math",
+        "formula": "{params.Value}"
+      }
+    },
+    {
+      "type": "step",
+      "label": "Step",
+      "icon": "step.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "step.svg"
+      }
+    },
+    {
+      "type": "ramp",
+      "label": "Ramp",
+      "icon": "ramp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "slope": 1,
+        "start": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "ramp.svg"
+      }
+    },
+    {
+      "type": "counterFreeRunning",
+      "label": "Counter Free-Running",
+      "icon": "counterFreeRunning.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "NumBits": 16
+      },
+      "render": {
+        "type": "image",
+        "src": "counterFreeRunning.svg"
+      }
+    },
+    {
+      "type": "counterLimited",
+      "label": "Counter Limited",
+      "icon": "counterLimited.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "UpperLimit": 7
+      },
+      "render": {
+        "type": "image",
+        "src": "counterLimited.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceStair",
+      "label": "Repeating Sequence Stair",
+      "icon": "repeatingSequenceStair.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutValues": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceStair.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceInterpolated",
+      "label": "Repeating Sequence Interpolated",
+      "icon": "repeatingSequenceInterpolated.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "TimeValues": [
+          0,
+          1,
+          2
+        ],
+        "OutValues": [
+          0,
+          2,
+          0
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceInterpolated.svg"
+      }
+    },
+    {
+      "type": "signalGenerator",
+      "label": "Signal Generator",
+      "icon": "signalGenerator.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Waveform": "sine",
+        "Amplitude": 1,
+        "Frequency": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "signalGenerator.svg"
+      }
+    },
+    {
+      "type": "pulse",
+      "label": "Pulse Generator",
+      "icon": "pulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Period": 1,
+        "Width": 50,
+        "StartTime": 0,
+        "Offset": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "pulse.svg"
+      }
+    },
+    {
+      "type": "impulse",
+      "label": "Impulse",
+      "icon": "impulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0,
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "impulse.svg"
+      }
+    },
+    {
+      "type": "sine",
+      "label": "Sine",
+      "icon": "sine.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 1,
+        "Phase": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "sine.svg"
+      }
+    },
+    {
+      "type": "chirp",
+      "label": "Chirp",
+      "icon": "chirp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "f1": 1,
+        "f2": 10,
+        "T": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "chirp.svg"
+      }
+    },
+    {
+      "type": "fileSource",
+      "label": "File",
+      "icon": "fileSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "FileName": ""
+      },
+      "render": {
+        "type": "image",
+        "src": "fileSource.svg"
+      }
+    },
+    {
+      "type": "fromWorkspace",
+      "label": "From Workspace",
+      "icon": "fromWorkspace.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 48,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 24,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "VariableName": "simin",
+        "SampleTime": "0",
+        "Interpolate": "on",
+        "OutputAfterFinalValue": "Extrapolation"
+      },
+      "render": {
+        "type": "math",
+        "formula": "\\mathtt{{params.VariableName}}",
+        "textSize": 14
+      }
+    },
+    {
+      "type": "labelSource",
+      "label": "Label",
+      "icon": "labelSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 40,
+      "height": 40,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 20,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "GotoTag": "x"
+      },
+      "render": {
+        "type": "image",
+        "src": "labelSource.svg"
+      }
+    },
+    {
+      "type": "noise",
+      "label": "Noise",
+      "icon": "noise.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "noise.svg"
+      }
+    },
+    {
+      "type": "clock",
+      "label": "Clock",
+      "icon": "clock.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DisplayTime": false,
+        "Decimation": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "clock.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "enumeratedConstant",
+      "label": "Enumerated Constant",
+      "icon": "enumeratedConstant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "EnumClass": "",
+        "Value": 0
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/source/periodic.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+// Periodic waveform sources filling Coselica parity: pulse and sawTooth.
+//   pulse:    offset + (mod(t-start, period) &lt; width%*period ? amplitude : 0)
+//   sawTooth: offset + amplitude * mod(t-start, period) / period
+// Both feedthrough (OUTPUT phase) and codegen-eligible (plain time expressions).
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include &lt;cmath&gt;
+#include "source_blocks.hpp"
+//=============================================================================
+namespace Nelson {
+namespace NFlow {
+    //=============================================================================
+    bool
+    handlePulse(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        if (phase != Phase::OUTPUT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+        const double period = bd.paramDouble("Period", 1.0);
+        const double width = bd.paramDouble("Width", 50.0); // percent of period
+        const double start = bd.paramDouble("StartTime", 0.0);
+        const double offset = bd.paramDouble("Offset", 0.0);
+        double out = offset;
+        if (ctx.t &gt;= start &amp;&amp; period &gt; 0.0) {
+            const double tau = std::fmod(ctx.t - start, period);
+            // (width * period) / 100 keeps the boundary exact when the duty
+            // cycle lands on a sample: width/100 first rounds up (40/100*1.5
+            // exceeds 0.6) and stretched the pulse by one sample. The epsilon
+            // closes the same seam from the other side: 'tau' loses a few ulps
+            // in (t - start) and fmod, so a sample landing exactly on the
+            // falling edge read as just inside the pulse and stayed high for
+            // one extra sample. Well below any usable step size.
+            if (tau &lt; (width * period) / 100.0 - 1e-12 * period) {
+                out += amp;
+            }
+        }
+        setOutput(ctx, b.nid, out);
+        return false;
+    }
+    //=============================================================================
+    bool
+    handleSawTooth(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        if (phase != Phase::OUTPUT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+        const double period = bd.paramDouble("Period", 1.0);
+        const double start = bd.paramDouble("StartTime", 0.0);
+        const double offset = bd.paramDouble("Offset", 0.0);
+        double out = offset;
+        if (ctx.t &gt;= start &amp;&amp; period &gt; 0.0) {
+            out += amp * (std::fmod(ctx.t - start, period) / period);
+        }
+        setOutput(ctx, b.nid, out);
+        return false;
+    }
+    //=============================================================================
+    bool
+    handleExpSine(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        // Exponentially damped sine: offset + amp e^{-damping (t-start)}
+        //                                    sin(2 pi freq (t-start) + phase).
+        if (phase != Phase::OUTPUT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+        const double freq = bd.paramDouble(nflow::kFreq, 1.0);
+        const double damping = bd.paramDouble("Damping", 0.0);
+        const double ph = bd.paramDouble(nflow::kPhase, 0.0);
+        const double start = bd.paramDouble("StartTime", 0.0);
+        const double offset = bd.paramDouble("Offset", 0.0);
+        double out = offset;
+        if (ctx.t &gt;= start) {
+            const double td = ctx.t - start;
+            out += amp * std::exp(-damping * td) * std::sin(2.0 * M_PI * freq * td + ph);
+        }
+        setOutput(ctx, b.nid, out);
+        return false;
+    }
+    //=============================================================================
+    bool
+    handleTrapezoid(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        // One period: rising ramp (Rising), plateau (Width) at amplitude,
+        // falling ramp (Falling), then 0 until Period; repeats. offset added.
+        if (phase != Phase::OUTPUT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+        const double rising = bd.paramDouble("Rising", 0.0);
+        const double width = bd.paramDouble("Width", 0.0);
+        const double falling = bd.paramDouble("Falling", 0.0);
+        const double period = bd.paramDouble("Period", 1.0);
+        const double start = bd.paramDouble("StartTime", 0.0);
+        const double offset = bd.paramDouble("Offset", 0.0);
+        double out = offset;
+        if (ctx.t &gt;= start &amp;&amp; period &gt; 0.0) {
+            const double tau = std::fmod(ctx.t - start, period);
+            if (tau &lt; rising &amp;&amp; rising &gt; 0.0) {
+                out += amp * (tau / rising);
+            } else if (tau &lt; rising + width) {
+                out += amp;
+            } else if (tau &lt; rising + width + falling &amp;&amp; falling &gt; 0.0) {
+                out += amp * (1.0 - (tau - rising - width) / falling);
+            }
+        }
+        setOutput(ctx, b.nid, out);
+        return false;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenCPulse()
+    {
+        BlockCodegenTemplate t;
+        t.step = "out_{id} = {param:Offset:0.0} + (((t &gt;= {param:StartTime:0.0}) &amp;&amp; "
+                 "(fmod(t - {param:StartTime:0.0}, {param:Period:1.0}) &lt; "
+                 "({param:Width:50.0} * {param:Period:1.0}) / 100.0 - 1e-12 * {param:Period:1.0})) "
+                 "? {param:Amplitude:1.0} "
+                 ": 0.0);";
+        return t;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenRustPulse()
+    {
+        BlockCodegenTemplate t;
+        t.step = "out_{id} = {param:Offset:0.0} + if (t &gt;= {param:StartTime:0.0}) &amp;&amp; "
+                 "(libm::fmod(t - {param:StartTime:0.0}, {param:Period:1.0}) &lt; "
+                 "({param:Width:50.0} * {param:Period:1.0}) / 100.0 - 1e-12 * {param:Period:1.0}) "
+                 "{ {param:Amplitude:1.0} } "
+                 "else { 0.0 };";
+        return t;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenCSawTooth()
+    {
+        BlockCodegenTemplate t;
+        t.step = "out_{id} = {param:Offset:0.0} + {param:Amplitude:1.0} * "
+                 "(fmod(t - {param:StartTime:0.0}, {param:Period:1.0}) / {param:Period:1.0});";
+        return t;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenRustSawTooth()
+    {
+        BlockCodegenTemplate t;
+        t.step = "out_{id} = {param:Offset:0.0} + {param:Amplitude:1.0} * "
+                 "(libm::fmod(t - {param:StartTime:0.0}, {param:Period:1.0}) / "
+                 "{param:Period:1.0});";
+        return t;
+    }
+    //=============================================================================
+    bool
+    handleExponentials(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        // Rising exponential toward `amplitude` over [start, start+riseTime) with
+        // time constant riseTau, then a falling exponential (constant fallTau).
+        if (phase != Phase::OUTPUT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+        const double riseTime = bd.paramDouble("RiseTime", 0.5);
+        const double riseTau = bd.paramDouble("RiseTau", 0.1);
+        const double fallTau = bd.paramDouble("FallTau", 0.1);
+        const double start = bd.paramDouble("StartTime", 0.0);
+        const double offset = bd.paramDouble("Offset", 0.0);
+        double out = offset;
+        if (ctx.t &gt;= start) {
+            const double td = ctx.t - start;
+            if (td &lt; riseTime) {
+                out += amp * (1.0 - std::exp(-td / riseTau));
+            } else {
+                const double peak = amp * (1.0 - std::exp(-riseTime / riseTau));
+                out += peak * std::exp(-(td - riseTime) / fallTau);
+            }
+        }
+        setOutput(ctx, b.nid, out);
+        return false;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenCExpSine()
+    {
+        BlockCodegenTemplate t;
+        t.step = "out_{id} = {param:Offset:0.0} + {param:Amplitude:1.0} * "
+                 "exp(-{param:Damping:0.0} * (t - {param:StartTime:0.0})) * "
+                 "sin(2.0 * M_PI * {param:Frequency:1.0} * (t - {param:StartTime:0.0}) + "
+                 "{param:Phase:0.0});";
+        return t;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenRustExpSine()
+    {
+        BlockCodegenTemplate t;
+        t.step = "out_{id} = {param:Offset:0.0} + {param:Amplitude:1.0} * "
+                 "libm::exp(-{param:Damping:0.0} * (t - {param:StartTime:0.0})) * "
+                 "libm::sin(2.0_f64 * core::f64::consts::PI * {param:Frequency:1.0} * "
+                 "(t - {param:StartTime:0.0}) + {param:Phase:0.0});";
+        return t;
+    }
+    //=============================================================================
+    // Trapezoid bakes its params at generation time so it can guard the
+    // rising/falling divisions (a zero ramp collapses that segment).
+    static BlockCodegenTemplate
+    makeTrapezoid(bool rust)
+    {
+        BlockCodegenTemplate t;
+        t.emitStep = [rust](const BlockCodegenArgs&amp; a) {
+            nflow::BlockDescriptor bd(*a.block, *a.variables);
+            const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+            const double rising = bd.paramDouble("Rising", 0.0);
+            const double width = bd.paramDouble("Width", 0.0);
+            const double falling = bd.paramDouble("Falling", 0.0);
+            const double period = bd.paramDouble("Period", 1.0);
+            const double start = bd.paramDouble("StartTime", 0.0);
+            const double offset = bd.paramDouble("Offset", 0.0);
+            const std::string fmodFn = rust ? "libm::fmod" : "fmod";
+            const std::string tau
+                = "(" + fmodFn + "(t - " + a.fmt(start) + ", " + a.fmt(period) + "))";
+            std::string riseExpr = (rising &gt; 0.0)
+                ? (a.fmt(amp) + " * (" + tau + " / " + a.fmt(rising) + ")")
+                : a.fmt(0.0);
+            std::string fallExpr = (falling &gt; 0.0)
+                ? (a.fmt(amp) + " * (1.0 - (" + tau + " - " + a.fmt(rising + width) + ") / "
+                      + a.fmt(falling) + ")")
+                : a.fmt(0.0);
+            // Nested conditional (C ternary / Rust if-else).
+            const double plateauEnd = rising + width;
+            const double fallEnd = rising + width + falling;
+            std::string body;
+            if (rust) {
+                body = a.fmt(offset) + " + if " + tau + " &lt; " + a.fmt(rising) + " { " + riseExpr
+                    + " } else if " + tau + " &lt; " + a.fmt(plateauEnd) + " { " + a.fmt(amp)
+                    + " } else if " + tau + " &lt; " + a.fmt(fallEnd) + " { " + fallExpr
+                    + " } else { 0.0 }";
+            } else {
+                body = a.fmt(offset) + " + ((" + tau + " &lt; " + a.fmt(rising) + ") ? (" + riseExpr
+                    + ") : ((" + tau + " &lt; " + a.fmt(plateauEnd) + ") ? (" + a.fmt(amp) + ") : (("
+                    + tau + " &lt; " + a.fmt(fallEnd) + ") ? (" + fallExpr + ") : 0.0)))";
+            }
+            a.line("out_" + a.id + " = " + body + ";");
+        };
+        return t;
+    }
+    BlockCodegenTemplate
+    getCodeGenCTrapezoid()
+    {
+        return makeTrapezoid(false);
+    }
+    BlockCodegenTemplate
+    getCodeGenRustTrapezoid()
+    {
+        return makeTrapezoid(true);
+    }
+    //=============================================================================
+    static BlockCodegenTemplate
+    makeExponentials(bool rust)
+    {
+        BlockCodegenTemplate t;
+        t.emitStep = [rust](const BlockCodegenArgs&amp; a) {
+            nflow::BlockDescriptor bd(*a.block, *a.variables);
+            const double amp = bd.paramDouble(nflow::kAmp, 1.0);
+            const double riseTime = bd.paramDouble("RiseTime", 0.5);
+            const double riseTau = bd.paramDouble("RiseTau", 0.1);
+            const double fallTau = bd.paramDouble("FallTau", 0.1);
+            const double start = bd.paramDouble("StartTime", 0.0);
+            const double offset = bd.paramDouble("Offset", 0.0);
+            const std::string expFn = rust ? "libm::exp" : "exp";
+            const std::string td = "(t - " + a.fmt(start) + ")";
+            const double peak = amp * (1.0 - std::exp(-riseTime / riseTau));
+            const std::string rise
+                = a.fmt(amp) + " * (1.0 - " + expFn + "(-" + td + " / " + a.fmt(riseTau) + "))";
+            const std::string fall = a.fmt(peak) + " * " + expFn + "(-(" + td + " - "
+                + a.fmt(riseTime) + ") / " + a.fmt(fallTau) + ")";
+            std::string body;
+            if (rust) {
+                body = a.fmt(offset) + " + if " + td + " &lt; " + a.fmt(riseTime) + " { " + rise
+                    + " } else { " + fall + " }";
+            } else {
+                body = a.fmt(offset) + " + ((" + td + " &lt; " + a.fmt(riseTime) + ") ? (" + rise
+                    + ") : (" + fall + "))";
+            }
+            a.line("out_" + a.id + " = " + body + ";");
+        };
+        return t;
+    }
+    BlockCodegenTemplate
+    getCodeGenCExponentials()
+    {
+        return makeExponentials(false);
+    }
+    BlockCodegenTemplate
+    getCodeGenRustExponentials()
+    {
+        return makeExponentials(true);
+    }
+    //=============================================================================
+} // namespace NFlow
+} // namespace Nelson
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Générer un train d'impulsions (amplitude 1, période 1, rapport cyclique 50%).</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks={ struct('id','p','type','pulse','inputs',0,'outputs',1,'params',struct('Amplitude',1,'Period',1,'Width',50,'StartTime',0,'Offset',0)), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','p','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.05; d.duration=2.0; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/source/signalGenerator.html">signalGenerator</a><a class="see-also-link" href="../../nflow_blocks/source/step.html">step</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

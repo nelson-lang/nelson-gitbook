@@ -22,7 +22,7 @@ Les points d'arrêt peuvent être définis dans des fichiers spécifiques ou à 
 
 Cette fonction ne peut être appelée que depuis la ligne de commande.
 
-Les fonctionnalités de débogage prises en charge par l'éditeur de texte s'intègrent à ces fonctions pour offrir une expérience de débogage transparente.
+Les fonctionnalités de débogage prises en charge par l'éditeur de texte s'intègrent à ces fonctions pour le débogage interactif.
 
 Voir également le [Flux de travail de débogage](../text_editor/debugging_workflow.md) pour un aperçu du débogage dans Nelson.
 

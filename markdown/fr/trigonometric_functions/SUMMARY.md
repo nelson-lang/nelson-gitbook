@@ -48,3 +48,7 @@
   - [tand](tand.md)
   - [tanh](tanh.md)
   - [tanm](tanm.md)
+  - [wrapTo180](wrapTo180.md)
+  - [wrapTo2Pi](wrapTo2Pi.md)
+  - [wrapTo360](wrapTo360.md)
+  - [wrapToPi](wrapToPi.md)

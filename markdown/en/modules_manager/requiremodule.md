@@ -14,7 +14,7 @@ Returns an error if module is not loaded in Nelson.
 
 <b>requiremodule</b> returns an error if desired module is not loaded.
 
-This function is usefull to verify a dependency on another module.
+This function is useful to verify a dependency on another module.
 
 ## 💡 Example
 

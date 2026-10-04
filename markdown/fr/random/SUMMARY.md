@@ -1,4 +1,5 @@
 - [random](README.md)
+  - [RandStream](RandStream.md)
   - [rand](rand.md)
   - [randi](randi.md)
   - [randn](randn.md)

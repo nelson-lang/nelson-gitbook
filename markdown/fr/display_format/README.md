@@ -10,6 +10,7 @@ Cela garantit une grande flexibilité dans la présentation et la réutilisation
 
 ## Functions
 
+- [nelson.display.DisplayFormatOptions](DisplayFormatOptions.md) - Objet d'options de format d'affichage.
 - [disp](disp.md) - Afficher une variable.
 - [display](display.md) - Afficher des informations sur une variable ou le résultat d'une expression.
 - [echo](echo.md) - Contrôle l'écho lors de l'exécution des scripts.

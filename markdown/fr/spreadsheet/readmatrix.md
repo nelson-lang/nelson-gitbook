@@ -11,7 +11,7 @@ Créer une matrice à partir d'un fichier.
 ## 📥 Argument d'entrée
 
 - filename - une chaîne : un nom de fichier existant source.
-- opts - Objet DelimitedTextImportOptions
+- opts - Objet nelson.io.text.DelimitedTextImportOptions
 - type - une chaîne : 'double', 'single', 'char', 'string', 'int8', 'int16', 'int32', 'int64', 'uint8', 'uint16', 'uint32', 'uint64'.
 
 ## 📤 Argument de sortie
@@ -36,7 +36,7 @@ Créer une matrice à partir d'un fichier.
 
 ## 🔗 Voir aussi
 
-[writematrix](../spreadsheet/writematrix.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
+[delimitedTextImportOptions](../spreadsheet/delimitedTextImportOptions.md), [writematrix](../spreadsheet/writematrix.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 Historique
 

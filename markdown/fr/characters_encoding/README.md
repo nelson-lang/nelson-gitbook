@@ -1,10 +1,10 @@
-# Encodage des caractères
+# Encodage des caracteres
 
-Le module d'encodage des caractères fournit des outils pour convertir entre les représentations d'octets natifs et les caractères Unicode.
+Le module d'encodage des caracteres fournit des outils pour convertir entre les representations d'octets natives et les caracteres Unicode.
 
-Il permet aux scripts d'interpréter et de manipuler correctement le texte dans divers encodages, assurant la compatibilité entre différentes plateformes et locales.
+Il permet aux scripts de lire et manipuler du texte dans plusieurs encodages, sur differentes plateformes et locales.
 
-Le module inclut également des fonctionnalités pour détecter les jeux de caractères qui correspondent à une entrée donnée, facilitant le traitement fiable du texte et l'internationalisation.
+Le module inclut aussi la detection des jeux de caracteres compatibles avec une entree donnee.
 
 ## Functions
 

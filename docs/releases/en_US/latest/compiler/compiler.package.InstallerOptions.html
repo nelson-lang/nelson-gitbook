@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>compiler.package.InstallerOptions</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler.package.InstallerOptions</span>, <span class="keyword-alias">compiler.package.InstallerOptions</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Configure application installer generation.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">options = compiler.package.InstallerOptions(results)
+options = compiler.package.InstallerOptions(results, Name, Value, ...)
+options = compiler.package.InstallerOptions('ApplicationName', name, ...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>This value object describes the installer, not the application build. Construct it from one compiler.build.Results object or an explicit ApplicationName. Assign supported properties with dot notation, then pass it to compiler.package.installer through Options. Invalid and unknown properties fail explicitly.</p>
+    <p>ApplicationName: installed application display name and default installation folder component. InstallerName: output file stem, default MyAppInstaller. Both accept spaces but reject path separators, reserved device names and trailing dots or spaces.</p>
+    <p>OutputDir: output folder, default ApplicationName followed by installer. Relative build paths are anchored when assigned. DefaultInstallationDir: absolute target installation path, default %ProgramFiles%/ApplicationName on Windows, /Applications/ApplicationName on macOS or /usr/ApplicationName on Linux. macOS uses this value as the native package install location.</p>
+    <p>RuntimeDelivery: web (default, unavailable), installer (offline dependency-selected runtime) or none (external runtime). OptionalDependencies: all (default) or none. Current dependency reports contain no optional files, so both choices retain the same required files; required modules are never removed.</p>
+    <p>AdditionalFiles: files or recursive folders to install beside the executable. These are not embedded application resources. Shortcut: included file or folder for a Windows Start menu shortcut or a Linux relative symbolic link named Launch ApplicationName within the installation folder; on macOS it must be empty or the application executable because graphical applications are represented by their .app bundle. Constructing from Results defaults to its executable. The target must occur in the installer input inventory.</p>
+    <p>AuthorName, AuthorCompany, AuthorEmail, Summary, Description and InstallationNotes: descriptive information included in the installed nelson-installation.txt. Windows also displays it before installation and records company/summary in native installer metadata. Description and InstallationNotes accept multiple lines; other metadata rejects control characters.</p>
+    <p>Version: installed application version, default 1.0, with one to four integer components between 0 and 65535. This does not rewrite the already-built executable version. PackageType: auto (default) or zip (Windows only). Verbose: false by default; also accepts on/off and logical or numeric zero/one. Compression: normal (default), fast, max or none. It selects the Windows installer payload compression, trading installer size for generation time; other platforms ignore it.</p>
+    <p>InstallerIcon: image used for the native setup/uninstaller and the installed Start menu shortcut. AddRemoveProgramsIcon: separate image for the Windows installed-application list. Neither option rewrites the application executable; use the build option ExecutableIcon for that.</p>
+    <p>InstallerLogo: image fitted within a 112 by 290 pixel white canvas, preserving its aspect ratio. It appears on the native installer's welcome and completion pages. Transparency is composited on white. The installer engine applies its normal display scaling.</p>
+    <p>These three Windows-only image properties default to empty, retaining the installer engine's artwork. They accept an existing JPG, JPEG, PNG, BMP or GIF file as a character vector or scalar string. Relative paths are anchored when assigned; decoded images are limited to 16 megapixels. Icons include seven resolutions from 16 to 256 pixels with transparency. Image conversion occurs only during packaging and does not add image modules to the application runtime.</p>
+    <p>Custom icon files are installed under the reserved nelson-installer-assets directory. Conflicting application inputs are rejected. The source images are not needed after generation, and the converted images preserve installer reproducibility. Silent and portable modes remain supported; portable mode does not create a global shortcut or application-list entry.</p>
+    <p>Windows and Linux installation-time -runtimeFolder can place an included runtime in a separate shared location. It is an argument of the generated installer, not a property of this options object. macOS application packages keep an included runtime private; use compiler.runtime.customInstaller to create the separate shared runtime package. See compiler.package.installer for path, ownership and launcher requirements.</p>
+    <p>Creating an options object does not run a build, install anything or download a runtime.</p>
+  </div>
+</div>
+<div class="section"><div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../compiler/compiler.package.installer.html">compiler.package.installer</a><a class="see-also-link" href="../compiler/compiler_installer_tutorial.html">compiler_installer_tutorial</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

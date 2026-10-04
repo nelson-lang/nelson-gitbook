@@ -4,13 +4,14 @@ The Memory Manager module provides tools for managing variables and memory in Ne
 
 It supports variable creation, assignment, querying, and removal across different scopes, as well as handling global and persistent variables.
 
-The module also enables memory inspection, variable locking, and listing of workspace contents, facilitating efficient and controlled memory usage in scripts and applications.
+The module also supports memory inspection, variable locking, and listing of workspace contents for controlled memory usage in scripts and applications.
 
 ## Functions
 
 - [acquirevar](acquirevar.md) - Acquires variable value from a specified variables scope.
 - [assignin](assignin.md) - Assignin value to a variable in a specified variables scope.
 - [clear](clear.md) - Remove variable from workspace.
+- [clearvars](clearvars.md) - Remove variables from the current workspace.
 - [global](global.md) - Defines a global variable.
 - [isglobal](isglobal.md) - Checks if a variable is global.
 - [isvar](isvar.md) - Check for the existence of an variable.

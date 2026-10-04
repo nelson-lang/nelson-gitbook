@@ -5,6 +5,7 @@ Greatest common divisor
 ## 📝 Syntax
 
 - G = gcd(A, B)
+- [G, C, D] = gcd(A, B)
 
 ## 📥 Input argument
 
@@ -14,10 +15,13 @@ Greatest common divisor
 ## 📤 Output argument
 
 - G - result of gcd function (Greatest common divisor).
+- C, D - Bezout coefficients such that C .\* A + D .\* B == G.
 
 ## 📄 Description
 
 <b>G = gcd(A, B)</b> computes the greatest common divisor using the Euclidian algorithm.
+
+<b>[G, C, D] = gcd(A, B)</b> also returns the Bezout coefficients <b>C</b>and <b>D</b> such that <b>C .\* A + D .\* B == G</b>. Unsigned integer inputs are not supported by this syntax.
 
 ## 📚 Bibliography
 

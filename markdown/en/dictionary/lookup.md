@@ -40,7 +40,7 @@ v = lookup(d,[3,5], 'FallbackValue', "Orange")
 
 ## 🔗 See also
 
-[dictionary](../dictionary/dictionary.md), [remove](../dictionary/remove.md), [insert](../dictionary/insert.md).
+[dictionary](../dictionary/dictionary.md), [remove](../dictionary/remove.md), [insert](../dictionary/insert.md), [readdictionary](../dictionary/readdictionary.md).
 
 ## 🕔 History
 

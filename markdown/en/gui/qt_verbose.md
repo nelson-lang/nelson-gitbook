@@ -20,7 +20,7 @@ show/hide Qt debug message.
 
 <b>qt_verbose</b> how/hide Qt debug message.
 
-This function is usefull to debug Qt and Qml.
+This function is useful to debug Qt and Qml.
 
 ## 💡 Example
 

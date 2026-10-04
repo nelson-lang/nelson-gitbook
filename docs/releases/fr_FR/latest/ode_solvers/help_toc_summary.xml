@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>ode_solvers</module>
+    <section name="Resolution d'EDO">
+      <chapter_description>
+    <p>Le module ODE Solvers fournit des fonctions d'integration en temps pour les problemes differentiels explicites, raides et implicites dans Nelson.</p>
+    <p>Il inclut les points d'entree des solveurs, les wrappers pour equations a retard et problemes aux limites, la gestion des options, l'interpolation, l'extension des solutions, la detection d'evenements et les definitions de problemes orientees objet.</p>
+    <p>Quand le backend optionnel SUNDIALS est construit, le workflow objet peut aussi selectionner des valeurs de solveur CVODES et IDAS.</p>
+    <p>Le module vise les experiences numeriques, les simulations et les exemples pedagogiques qui demandent une configuration compacte et des objets de resultats reproductibles.</p>
+    <p>Les tutoriels couvrent le choix du solveur, les evenements, les tolerances, les matrices de masse, les equations implicites, les equations a retard, les problemes aux limites, l'interpolation, l'extension, les workflows objet et les etats complexes.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Domaine</th>
+        <th>Entrees principales</th>
+      </tr>
+      <tr>
+        <td>Problemes a valeur initiale</td>
+        <td>
+          <b>ode23</b>, <b>ode45</b>, <b>ode78</b>, <b>ode89</b>, <b>ode113</b>, <b>ode15s</b>, <b>ode15i</b></td>
+      </tr>
+      <tr>
+        <td>Equations a retard et problemes aux limites</td>
+        <td>
+          <b>dde23</b>, <b>ddesd</b>, <b>ddensd</b>, <b>bvp4c</b>, <b>bvp5c</b></td>
+      </tr>
+      <tr>
+        <td>Utilitaires</td>
+        <td>
+          <b>odeset</b>, <b>deval</b>, <b>odextend</b>, <b>ode</b>, <b>odeEvent</b>, <b>odeSensitivity</b></td>
+      </tr>
+    </table>
+  </chapter_description>
+      <keyword name="workflows EDO" link="1_ode_workflows.html" description="Exemples EDO et interface objet."/>
+      <keyword name="choix solveur EDO" link="2_ode_solver_selection.html" description="Choisir un solveur EDO."/>
+      <keyword name="tutoriel evenements edo" link="3_ode_events_tutorial.html" description="Localiser des evenements pendant une integration EDO."/>
+      <keyword name="tutoriel tolerances edo" link="4_ode_tolerances_tutorial.html" description="Controler la precision et les statistiques EDO."/>
+      <keyword name="tutoriel masse implicite edo" link="5_ode_mass_implicit_tutorial.html" description="Resoudre des problemes EDO avec matrice de masse ou forme implicite."/>
+      <keyword name="tutoriel interpolation extension edo" link="6_ode_interpolation_extension_tutorial.html" description="Interpoler et prolonger des solutions EDO."/>
+      <keyword name="tutoriel objet edo" link="7_ode_object_workflow_tutorial.html" description="Definir et resoudre des problemes EDO avec des objets."/>
+      <keyword name="tutoriel edo complexe" link="8_ode_complex_workflow_tutorial.html" description="Resoudre des problemes EDO objet avec des etats complexes."/>
+      <keyword name="bvp4c" link="bvp4c.html" description="Resout des problemes aux limites par collocation d'ordre quatre."/>
+      <keyword name="bvp5c" link="bvp5c.html" description="Resout des problemes aux limites avec raffinement de maillage."/>
+      <keyword name="bvpget" link="bvpget.html" description="Recupere une option BVP."/>
+      <keyword name="bvpinit" link="bvpinit.html" description="Cree une estimation initiale BVP."/>
+      <keyword name="bvpset" link="bvpset.html" description="Cree ou met a jour des options BVP."/>
+      <keyword name="bvpxtend" link="bvpxtend.html" description="Etend une estimation de solution BVP."/>
+      <keyword name="dde23" link="dde23.html" description="Resout des equations a retard constant."/>
+      <keyword name="ddeget" link="ddeget.html" description="Recupere une option DDE."/>
+      <keyword name="ddensd" link="ddensd.html" description="Resout des equations a retard neutres."/>
+      <keyword name="ddesd" link="ddesd.html" description="Resout des equations a temps retardes dependants de l'etat."/>
+      <keyword name="ddeset" link="ddeset.html" description="Cree ou met a jour des options DDE."/>
+      <keyword name="decic" link="decic.html" description="Calcule des conditions initiales coherentes pour les EDO implicites."/>
+      <keyword name="deval" link="deval.html" description="Evaluer une solution EDO."/>
+      <keyword name="nelson.ode.ODEResults" link="nelson.ode.ODEResults.html" description="Objet resultat retourne par solve sur un objet ode."/>
+      <keyword name="nelson.ode.Options" link="nelson.ode.Options.html" description="Classe de base des classes d'options de solveur."/>
+      <keyword name="nelson.ode.options.CVODESNonstiff" link="nelson.ode.options.CVODESNonstiff.html" description="Objet d'options pour le solveur CVODES Adams optionnel."/>
+      <keyword name="nelson.ode.options.CVODESStiff" link="nelson.ode.options.CVODESStiff.html" description="Objet d'options pour le solveur CVODES BDF optionnel."/>
+      <keyword name="nelson.ode.options.IDAS" link="nelson.ode.options.IDAS.html" description="Objet d'options pour le solveur IDAS BDF optionnel."/>
+      <keyword name="nelson.ode.options.ODE113" link="nelson.ode.options.ODE113.html" description="Objet d'options pour le solveur ode113."/>
+      <keyword name="nelson.ode.options.ODE15i" link="nelson.ode.options.ODE15i.html" description="Objet d'options pour le solveur ode15i."/>
+      <keyword name="nelson.ode.options.ODE15s" link="nelson.ode.options.ODE15s.html" description="Objet d'options pour le solveur ode15s."/>
+      <keyword name="nelson.ode.options.ODE23" link="nelson.ode.options.ODE23.html" description="Objet d'options pour le solveur ode23."/>
+      <keyword name="nelson.ode.options.ODE23s" link="nelson.ode.options.ODE23s.html" description="Objet d'options pour le solveur ode23s."/>
+      <keyword name="nelson.ode.options.ODE23t" link="nelson.ode.options.ODE23t.html" description="Objet d'options pour le solveur ode23t."/>
+      <keyword name="nelson.ode.options.ODE23tb" link="nelson.ode.options.ODE23tb.html" description="Objet d'options pour le solveur ode23tb."/>
+      <keyword name="nelson.ode.options.ODE45" link="nelson.ode.options.ODE45.html" description="Objet d'options pour le solveur ode45."/>
+      <keyword name="nelson.ode.options.ODE78" link="nelson.ode.options.ODE78.html" description="Objet d'options pour le solveur ode78."/>
+      <keyword name="nelson.ode.options.ODE89" link="nelson.ode.options.ODE89.html" description="Objet d'options pour le solveur ode89."/>
+      <keyword name="ode" link="ode.html" description="Interface objet pour problemes EDO."/>
+      <keyword name="ode113" link="ode113.html" description="Entree de solveur EDO non raide a ordre variable."/>
+      <keyword name="ode15i" link="ode15i.html" description="Entree de solveur EDO implicite."/>
+      <keyword name="ode15s" link="ode15s.html" description="Entree de solveur EDO raide."/>
+      <keyword name="ode23" link="ode23.html" description="Solveur EDO non raide bas ordre."/>
+      <keyword name="ode23s" link="ode23s.html" description="Entree de solveur EDO raide."/>
+      <keyword name="ode23t" link="ode23t.html" description="Entree de solveur EDO moderement raide."/>
+      <keyword name="ode23tb" link="ode23tb.html" description="Entree de solveur EDO raide."/>
+      <keyword name="ode45" link="ode45.html" description="Solveur EDO non raide."/>
+      <keyword name="ode78" link="ode78.html" description="Solveur EDO non raide haut ordre."/>
+      <keyword name="ode89" link="ode89.html" description="Solveur EDO non raide haut ordre."/>
+      <keyword name="odeDelay" link="odeDelay.html" description="Objet de definition des delais pour les workflows EDO."/>
+      <keyword name="odeEvent" link="odeEvent.html" description="Description d'evenement pour le flux objet EDO."/>
+      <keyword name="odeJacobian" link="odeJacobian.html" description="Description de jacobien pour solveurs EDO."/>
+      <keyword name="odeMassMatrix" link="odeMassMatrix.html" description="Description de matrice de masse pour solveurs EDO."/>
+      <keyword name="odeSensitivity" link="odeSensitivity.html" description="Objet de definition des sensibilites pour les workflows EDO."/>
+      <keyword name="odeexamples" link="odeexamples.html" description="Point d'entree des exemples EDO."/>
+      <keyword name="odeget" link="odeget.html" description="Lire une option EDO."/>
+      <keyword name="odephas2" link="odephas2.html" description="Fonction de sortie EDO pour portrait de phase 2D."/>
+      <keyword name="odephas3" link="odephas3.html" description="Fonction de sortie EDO pour portrait de phase 3D."/>
+      <keyword name="odeplot" link="odeplot.html" description="Fonction de sortie EDO pour le trace de solution."/>
+      <keyword name="odeprint" link="odeprint.html" description="Fonction de sortie EDO pour la console."/>
+      <keyword name="odeset" link="odeset.html" description="Creer ou modifier des options EDO."/>
+      <keyword name="odextend" link="odextend.html" description="Prolonger une solution EDO."/>
+    </section>
+  </toc>
+</help_summary>

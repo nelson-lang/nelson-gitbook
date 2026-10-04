@@ -24,11 +24,9 @@ Les modes possibles sont :
 
 <b>ADVANCED_TERMINAL</b> : Nelson lancé en terminal avec graphisme/GUI.
 
-<b>BASIC_SIO_CLIENT</b> : Nelson lancé comme client socket IO.
-
-<b>ADVANCED_SIO_CLIENT</b> : Nelson lancé comme client socket IO avec graphisme/GUI.
-
 <b>GUI</b> : Nelson lancé comme application graphique (par défaut).
+
+<b>WEB_GUI</b> : Nelson lancé comme application web.
 
 ## 💡 Exemple
 

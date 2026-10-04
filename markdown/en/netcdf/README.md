@@ -1,0 +1,67 @@
+# netCDF
+
+## Functions
+
+- [nccreate](nccreate.md) - Create a variable in a netCDF file.
+- [ncdisp](ncdisp.md) - Display a readable summary of a netCDF data source.
+- [ncinfo](ncinfo.md) - Return information about a netCDF data source.
+- [ncread](ncread.md) - Read data from a variable in a netCDF file.
+- [ncreadatt](ncreadatt.md) - Read an attribute from a netCDF file or variable.
+- [ncwrite](ncwrite.md) - Write data to a variable in a netCDF file.
+- [ncwriteatt](ncwriteatt.md) - Write an attribute to a netCDF file or variable.
+- [ncwriteschema](ncwriteschema.md) - Add schema definitions to a netCDF file.
+- [netcdf](netcdf.md) - Low-level NetCDF package interface.
+- [netcdf.abort](netcdf_abort.md) - Revert recent definitions and close a netCDF file.
+- [netcdf.close](netcdf_close.md) - Close a netCDF file.
+- [netcdf.copyAtt](netcdf_copyAtt.md) - Work with netCDF attributes.
+- [netcdf.create](netcdf_create.md) - Create a new netCDF dataset.
+- [netcdf.defDim](netcdf_defDim.md) - Work with netCDF dimensions.
+- [netcdf.defGrp](netcdf_defGrp.md) - Work with netCDF groups.
+- [netcdf.defVar](netcdf_defVar.md) - Work with netCDF variables.
+- [netcdf.defVarChunking](netcdf_defVarChunking.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.defVarDeflate](netcdf_defVarDeflate.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.defVarFill](netcdf_defVarFill.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.defVarFletcher32](netcdf_defVarFletcher32.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.defVlen](netcdf_defVlen.md) - Work with netCDF user-defined variable length types.
+- [netcdf.delAtt](netcdf_delAtt.md) - Work with netCDF attributes.
+- [netcdf.endDef](netcdf_endDef.md) - End netCDF define mode.
+- [netcdf.getAtt](netcdf_getAtt.md) - Work with netCDF attributes.
+- [netcdf.getChunkCache](netcdf_getChunkCache.md) - Return default chunk cache settings for the netCDF library.
+- [netcdf.getConstant](netcdf_getConstant.md) - Return the numeric value of a named netCDF constant.
+- [netcdf.getConstantNames](netcdf_getConstantNames.md) - Return names of constants known by the netCDF module.
+- [netcdf.getVar](netcdf_getVar.md) - Work with netCDF variables.
+- [netcdf.inq](netcdf_inq.md) - Return information about an open netCDF file.
+- [netcdf.inqAtt](netcdf_inqAtt.md) - Work with netCDF attributes.
+- [netcdf.inqAttID](netcdf_inqAttID.md) - Work with netCDF attributes.
+- [netcdf.inqAttName](netcdf_inqAttName.md) - Work with netCDF attributes.
+- [netcdf.inqDim](netcdf_inqDim.md) - Work with netCDF dimensions.
+- [netcdf.inqDimID](netcdf_inqDimID.md) - Work with netCDF dimensions.
+- [netcdf.inqDimIDs](netcdf_inqDimIDs.md) - Work with netCDF dimensions.
+- [netcdf.inqFormat](netcdf_inqFormat.md) - Determine the format of an open netCDF file.
+- [netcdf.inqGrpName](netcdf_inqGrpName.md) - Work with netCDF groups.
+- [netcdf.inqGrpNameFull](netcdf_inqGrpNameFull.md) - Work with netCDF groups.
+- [netcdf.inqGrpParent](netcdf_inqGrpParent.md) - Work with netCDF groups.
+- [netcdf.inqGrps](netcdf_inqGrps.md) - Work with netCDF groups.
+- [netcdf.inqLibVers](netcdf_inqLibVers.md) - Return netCDF C library version information.
+- [netcdf.inqNcid](netcdf_inqNcid.md) - Work with netCDF groups.
+- [netcdf.inqUnlimDims](netcdf_inqUnlimDims.md) - Work with netCDF dimensions.
+- [netcdf.inqUserType](netcdf_inqUserType.md) - Work with netCDF user-defined variable length types.
+- [netcdf.inqVar](netcdf_inqVar.md) - Work with netCDF variables.
+- [netcdf.inqVarChunking](netcdf_inqVarChunking.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.inqVarDeflate](netcdf_inqVarDeflate.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.inqVarFill](netcdf_inqVarFill.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.inqVarFletcher32](netcdf_inqVarFletcher32.md) - Configure or inspect netCDF-4 variable storage options.
+- [netcdf.inqVarID](netcdf_inqVarID.md) - Work with netCDF variables.
+- [netcdf.inqVarIDs](netcdf_inqVarIDs.md) - Work with netCDF variables.
+- [netcdf.inqVlen](netcdf_inqVlen.md) - Work with netCDF user-defined variable length types.
+- [netcdf.open](netcdf_open.md) - Open a netCDF data source.
+- [netcdf.putAtt](netcdf_putAtt.md) - Work with netCDF attributes.
+- [netcdf.putVar](netcdf_putVar.md) - Work with netCDF variables.
+- [netcdf.reDef](netcdf_reDef.md) - Put an open netCDF file into define mode.
+- [netcdf.renameAtt](netcdf_renameAtt.md) - Work with netCDF attributes.
+- [netcdf.renameDim](netcdf_renameDim.md) - Work with netCDF dimensions.
+- [netcdf.renameVar](netcdf_renameVar.md) - Work with netCDF variables.
+- [netcdf.setChunkCache](netcdf_setChunkCache.md) - Set default chunk cache settings for the netCDF library.
+- [netcdf.setDefaultFormat](netcdf_setDefaultFormat.md) - Change the default file format used by netCDF create calls.
+- [netcdf.setFill](netcdf_setFill.md) - Set netCDF fill mode.
+- [netcdf.sync](netcdf_sync.md) - Synchronize a netCDF file to disk.

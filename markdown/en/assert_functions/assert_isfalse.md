@@ -1,90 +1,54 @@
 # assert_isfalse
 
-Check that condition is false.
+Historical name for asserts.isfalse.
 
 ## 📝 Syntax
 
-- assert_isfalse(x)
-- r = assert_isfalse(x)
-- [r, msg] = assert_isfalse(x)
-- assert_isfalse(x, err_msg)
-- r = assert_isfalse(x, err_msg)
-- [r, msg] = assert_isfalse(x, err_msg)
+- assert_isfalse(condition)
+- assert_isfalse(condition, message)
+- [res, msg] = assert_isfalse(condition)
+- [res, msg] = assert_isfalse(condition, message)
 
 ## 📥 Input argument
 
-- x - a logical value to be tested for falseness.
-- err_msg - a string containing the custom error message to display in case of assertion failure (optional).
+- condition - Logical scalar or array to test. Every entry must be false.
+- message - Optional custom failure message.
 
 ## 📤 Output argument
 
-- r - a logical value: true if the assertion passes, false otherwise.
-- msg - a string containing the error message. If x == false, then msg == ' '. If x == true, then msg contains the assertion failure message.
+- res - true if the assertion passes, false otherwise.
+- msg - Assertion failure message, empty on success.
 
 ## 📄 Description
 
-<b>assert_isfalse</b> raises an error if the input value is true.
+<b>assert_isfalse</b> is kept for compatibility.
 
-This function also raises an error if the input is not a logical value, ensuring type safety.
-
-When the optional <b>err_msg</b> parameter is provided, it will be used as the error message instead of the default message when the assertion fails.
-
-This function is useful in unit testing to verify that conditions are false or that logical operations return the expected false result.
+For complete documentation, use [asserts.isfalse](../assert_functions/asserts.isfalse.md).
 
 ## 💡 Examples
 
-Test that demonstrates assertion failure (3 is not equal to 4):
+Historical call
 
 ```matlab
-assert_isfalse(3 ~= 4)
+assert_isfalse(3 == 4);
 ```
 
-Test that passes (3 equals 4 is false):
+Canonical call
 
 ```matlab
-assert_isfalse(3 == 4)
-```
-
-Test with explicit false value:
-
-```matlab
-r = assert_isfalse(false)
-```
-
-Using return values to handle assertion results:
-
-```matlab
-[r, msg] = assert_isfalse(false)
-```
-
-Test with custom error message:
-
-```matlab
-[r, msg] = assert_isfalse(3 == 3, 'your error message.');
-if ~r
-    disp(['Custom error: ' msg])
-end
-```
-
-Example showing error handling when assertion fails:
-
-```matlab
-try
-    assert_isfalse(true, 'This should be false!');
-catch ME
-    disp(['Error caught: ' ME.message])
-end
+asserts.isfalse(false);
 ```
 
 ## 🔗 See also
 
-[assert_istrue](../assert_functions/assert_istrue.md), [assert_checkerror](../assert_functions/assert_checkerror.md), [assert_isequal](../assert_functions/assert_isequal.md).
+[asserts.isfalse](../assert_functions/asserts.isfalse.md), [assert](../assert_functions/assert.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                    |
+| ------- | ------------------------------------------------- |
+| 1.0.0   | initial version                                   |
+| 2.0.0   | documented as historical name for asserts.isfalse |
 
 <!--
 ## 👤 Author

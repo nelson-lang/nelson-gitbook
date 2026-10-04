@@ -16,5 +16,6 @@ Le module permet une analyse spectrale et un traitement du signal efficaces, en 
 - [fftshift](fftshift.md) - Décaler la composante fréquence nulle au centre du spectre.
 - [fftw](fftw.md) - fonction pour déterminer l'algorithme FFT.
 - [ifft](ifft.md) - Transformée de Fourier inverse rapide.
+- [ifft2](ifft2.md) - Transformee de Fourier inverse rapide 2-D.
 - [ifftn](ifftn.md) - Transformée de Fourier inverse multidimensionnelle.
 - [ifftshift](ifftshift.md) - inverse de fftshift

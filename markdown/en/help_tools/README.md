@@ -2,7 +2,7 @@
 
 The Help Tools module provides functions to create, convert, and manage documentation for Nelson.
 
-It supports generating help content in multiple formats, including HTML, Markdown, PDF, and website-ready formats, enabling developers to maintain and distribute comprehensive documentation efficiently.
+It generates help content in formats such as HTML, Markdown, PDF, and website-ready output for maintaining and distributing documentation.
 
 ## Functions
 
@@ -18,9 +18,11 @@ It supports generating help content in multiple formats, including HTML, Markdow
 - [help](help.md) - Help for functions in Command Window.
 - [htmltopdf](htmltopdf.md) - Convers html page to pdf.
 - [markdown](markdown.md) - Converts markdown to html.
+- [markdowndisp](markdowndisp.md) - Display rendered Markdown text.
 - [xmldocbuild](xmldocbuild.md) - Internal function to convert xml document files to html.
 - [xmldocchecker](xmldocchecker.md) - Checks a xml documentation file.
 - [xmldoclinkchecker](xmldoclinkchecker.md) - Checks unresolved cross-references in Nelson help XML files.
+- [xmldocrenderimages](xmldocrenderimages.md) - Render the example images of Nelson help files.
 - [xmldoctohelp](xmldoctohelp.md) - Converts xml Nelson help files to Nelson format.
 - [xmldoctohtml](xmldoctohtml.md) - Converts xml Nelson help files to html.
 - [xmldoctomd](xmldoctomd.md) - Converts xml Nelson help files to markdown format.

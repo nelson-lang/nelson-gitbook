@@ -1,0 +1,1067 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>integrator</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">integrator</span></div></div>
+<div class="section" style="text-align:center;"><img src="./integrator.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Integrates the input over time with optional clamps.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Block type: integrator
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">input ports</td>
+<td>1 input port(s) declared.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">output ports</td>
+<td>1 output port(s) declared.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Integrates the input over time with optional clamps.</p>
+    <table border="1">
+      
+        <tr>
+          <td>Module</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Library</td>
+          <td>Continuous blocks</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">integrator</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Label</td>
+          <td>Integrator</td>
+        </tr>
+      
+    </table>
+    
+    <p>
+      <b>Description</b>
+    </p>
+    <p>The Integrator block integrates its input over time. It maintains internal state and produces the integrated output.</p>
+    <p>
+      <b>Ports</b>
+    </p>
+    <p>
+      <b>Input(s)</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Port</th>
+          <th>Role</th>
+          <th>Side</th>
+          <th>Position</th>
+        </tr>
+      
+      
+        <tr>
+          <td>Port_1</td>
+          <td>Numeric signal read by the block.</td>
+          <td>left</td>
+          <td>x=0, y=40</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Output(s)</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Port</th>
+          <th>Role</th>
+          <th>Side</th>
+          <th>Position</th>
+        </tr>
+      
+      
+        <tr>
+          <td>Port_1</td>
+          <td>Numeric signal produced by the block.</td>
+          <td>right</td>
+          <td>x=80, y=40</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Parameters</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Parameter</th>
+          <th>Default value</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">initial</code>
+          </td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">min</code>
+          </td>
+          <td>-inf</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">max</code>
+          </td>
+          <td>inf</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Inspector Keys</b>
+    </p>
+    <p>These serialized keys are exposed by the block inspector.</p>
+    <ul>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">initial</code>
+      </li>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">min</code>
+      </li>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">max</code>
+      </li>
+    </ul>
+    <p>
+      <b>Block Characteristics</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <td>Block type</td>
+          <td>integrator</td>
+        </tr>
+        <tr>
+          <td>Family</td>
+          <td>Continuous blocks</td>
+        </tr>
+        <tr>
+          <td>Rendered size</td>
+          <td>80 x 80</td>
+        </tr>
+        <tr>
+          <td>Phases</td>
+          <td>INIT, OUTPUT, UPDATE</td>
+        </tr>
+        <tr>
+          <td>Direct feedthrough</td>
+          <td>see Algorithms</td>
+        </tr>
+        <tr>
+          <td>Internal state or history</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <td>Signal data type</td>
+          <td>double numeric values</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Algorithms</b>
+    </p>
+    <ul>
+      <li>INIT clamps initial between min and max.</li>
+      <li>OUTPUT emits the current state. UPDATE adds dt * input and clamps the result.</li>
+      <li>Native defaults for min and max are negative and positive infinity.</li>
+    </ul>
+    <p>
+      <b>Equation or Rule</b>
+    </p>
+    <span class="math display">$$x_{k+1} = \operatorname{clamp}(x_k + dt\,u_k,\,min,\,max),\quad y = x$$</span>
+    <p>
+      <b>Extended Capabilities</b>
+    </p>
+    <p>This page describes the native runtime behavior observed in the module C++ sources. Declared phases indicate when the simulation engine calls the block.</p>
+    <p>Code generation: supported for C and Rust.</p>
+    <p>
+      <b>Implementation Sources</b>
+    </p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/continuous/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.continuous",
+  "title": "Continuous",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Blocks for continuous-time systems",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "integrator",
+      "label": "Integrator",
+      "icon": "integrator.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0,
+        "ExternalReset": "none",
+        "InitialConditionSource": "internal",
+        "LowerSaturationLimit": "-inf",
+        "UpperSaturationLimit": "inf"
+      },
+      "render": {
+        "type": "math",
+        "useRectElement": true,
+        "bodyClass": "block-body integrator-body",
+        "mathGroupClass": "integrator-math",
+        "formula": "\\frac{1}{s}"
+      }
+    },
+    {
+      "type": "tf",
+      "label": "Transfer Fn",
+      "icon": "tf.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "ALGEBRAIC",
+        "UPDATE"
+      ],
+      "width": 85,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 85,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Numerator": [
+          3
+        ],
+        "Denominator": [
+          1,
+          3
+        ]
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "tf-math",
+        "formula": "\\frac{N(s)}{D(s)}"
+      }
+    },
+    {
+      "type": "delay",
+      "label": "Delay",
+      "icon": "delay.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DelayTime": 0.1
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "delay-math",
+        "formula": "e^{-sT}"
+      }
+    },
+    {
+      "type": "stateSpace",
+      "label": "State-Space",
+      "icon": "stateSpace.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 160,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 160,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "state-space-math",
+        "formula": "\\dot{x}=Ax+Bu",
+        "textSize": "16px"
+      }
+    },
+    {
+      "type": "lpf",
+      "label": "LPF",
+      "icon": "lpf.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Cutoff": 1
+      },
+      "render": {
+        "src": "lpf.svg",
+        "type": "image"
+      }
+    },
+    {
+      "type": "hpf",
+      "label": "HPF",
+      "icon": "hpf.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Cutoff": 1
+      },
+      "render": {
+        "src": "hpf.svg",
+        "type": "image"
+      }
+    },
+    {
+      "type": "derivative",
+      "label": "Derivative",
+      "icon": "derivative.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "math",
+        "useRectElement": true,
+        "bodyClass": "block-body",
+        "mathGroupClass": "derivative-math",
+        "formula": "\\frac{d}{dt}"
+      }
+    },
+    {
+      "type": "pid",
+      "label": "PID",
+      "icon": "pid.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "P": 1,
+        "I": 0,
+        "D": 0,
+        "N": 0,
+        "LowerSaturationLimit": "-inf",
+        "UpperSaturationLimit": "inf"
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "pid-math",
+        "formula": "\\mathsf{PID}"
+      }
+    },
+    {
+      "type": "constraint",
+      "label": "Constraint",
+      "icon": "constraint.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "DERIVATIVE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "constraint-math",
+        "formula": "g=0"
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/continuous/integrator.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include "EdgeDetect.hpp"
+#include &lt;string&gt;
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include "continuous_blocks.hpp"
+//=============================================================================
+static inline double
+holdAtLimit(double x, double u, double mn, double mx);
+//=============================================================================
+bool
+Nelson::NFlow::handleIntegrator(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    auto&amp; st = getState(ctx, b.nid);
+    nflow::BlockDescriptor bd(b, ctx.variables);
+    const int w = outputWidth(ctx, b.nid, 0);
+    const double mn = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
+    const double mx = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
+    // External reset and external initial condition. The extra ports follow the
+    // signal in that order, so port 1 is the reset when there is one and the
+    // initial condition otherwise. 'level' holds the state at the initial
+    // condition while the line is non-zero; the edge kinds reset once, on the
+    // edge, under the shared rule in EdgeDetect.hpp.
+    const std::string extReset = bd.paramStr("ExternalReset", "none");
+    const int resetEdge = edgeTypeOf(extReset);
+    const bool levelReset = (extReset == "level");
+    const bool hasReset = (resetEdge &gt;= 0) || levelReset;
+    const bool externalIC = (bd.paramStr("InitialConditionSource", "internal") == "external");
+    const int resetPort = hasReset ? 1 : -1;
+    const int icPort = externalIC ? (hasReset ? 2 : 1) : -1;
+    // The initial condition an element resets to: the wired signal when it is
+    // external, the parameter otherwise (scalar broadcast or per element).
+    auto initialOf = [&amp;](int i) -&gt; double {
+        if (icPort &gt;= 0 &amp;&amp; hasInput(ctx, b.nid, icPort)) {
+            SigView v = getInputSig(ctx, b.nid, icPort);
+            return sigAt(v, i);
+        }
+        if (w &lt;= 1) {
+            return bd.paramDouble(nflow::kInitial, 0.0);
+        }
+        const std::vector&lt;double&gt; list = bd.paramList(nflow::kInitial);
+        if (list.empty()) {
+            return 0.0;
+        }
+        return (i &lt; (int)list.size()) ? list[i] : list.back();
+    };
+    const double resetLine = (hasReset &amp;&amp; hasInput(ctx, b.nid, resetPort))
+        ? getInput(ctx, b.nid, resetPort, 0.0)
+        : 0.0;
+    const bool holding = levelReset &amp;&amp; (resetLine != 0.0);
+    const bool resetNow = holding
+        || (resetEdge &gt;= 0 &amp;&amp; st.resetPrimed &amp;&amp; edgeFired(st.resetPrev, resetLine, resetEdge));
+    if (phase == Phase::INIT) {
+        st.resetPrev = 0.0;
+        st.resetPrimed = false;
+        if (w &lt;= 1) {
+            double ini = bd.paramDouble(nflow::kInitial, 0.0);
+            st.scalar = clampVal(ini, mn, mx);
+        } else {
+            // Vector integrator: Initial may be a scalar (broadcast) or a
+            // list matching the signal width.
+            std::vector&lt;double&gt; iniList = bd.paramList(nflow::kInitial);
+            st.vec.assign(w, 0.0);
+            for (int i = 0; i &lt; w; ++i) {
+                double ini = iniList.empty()
+                    ? 0.0
+                    : (i &lt; (int)iniList.size() ? iniList[i] : iniList.back());
+                st.vec[i] = clampVal(ini, mn, mx);
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::OUTPUT) {
+        // Under a variable-step solver the output is read from the scattered
+        // global state (a true function of x for the minor step); otherwise the
+        // block's own latched state (fixed-step path, unchanged). The output is
+        // clamped to [min, max] so a limited integrator never reports a value
+        // outside its bounds even if the solver's raw state drifts slightly.
+        // A reset in effect this step reports the initial condition rather than
+        // the state. The decision is the one ALGEBRAIC stamped for this step,
+        // never a fresh one: the first OUTPUT pass can see a stale reset line.
+        // The solver re-runs OUTPUT after the algebraic solve, which is why this
+        // has to be applied here and not in ALGEBRAIC alone.
+        if (hasReset &amp;&amp; !ctx.sideEffectFree &amp;&amp; st.resetStamp == ctx.stepIndex &amp;&amp; st.resetActive) {
+            if (w &lt;= 1) {
+                setOutput(ctx, b.nid, clampVal(initialOf(0), mn, mx));
+            } else {
+                double* yr = outputSlice(ctx, b.nid, 0);
+                for (int i = 0; i &lt; w; ++i) {
+                    yr[i] = clampVal(initialOf(i), mn, mx);
+                }
+            }
+            return false;
+        }
+        double* xs = blockX(ctx, b.nid);
+        if (w &lt;= 1) {
+            setOutput(ctx, b.nid, clampVal(xs ? xs[0] : st.scalar, mn, mx));
+        } else {
+            double* y = outputSlice(ctx, b.nid, 0);
+            for (int i = 0; i &lt; w; ++i) {
+                y[i] = clampVal(xs ? xs[i] : (i &lt; (int)st.vec.size() ? st.vec[i] : 0.0), mn, mx);
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::ALGEBRAIC) {
+        // The one phase where the reset line is settled: decide here, stamp the
+        // decision for this step, and let OUTPUT and UPDATE follow it.
+        if (!hasReset || ctx.sideEffectFree) {
+            return false;
+        }
+        st.resetActive = resetNow;
+        st.resetStamp = ctx.stepIndex;
+        if (!resetNow) {
+            return false;
+        }
+        if (w &lt;= 1) {
+            setOutput(ctx, b.nid, clampVal(initialOf(0), mn, mx));
+        } else {
+            double* y = outputSlice(ctx, b.nid, 0);
+            for (int i = 0; i &lt; w; ++i) {
+                y[i] = clampVal(initialOf(i), mn, mx);
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::UPDATE) {
+        // Under a solver the state lives in the global vector and the solver
+        // advances it; this pass runs only for a reset integrator, and then only
+        // to put the initial condition back. Writing the global slice too is
+        // what makes the reset visible: re-seeding the block's own copy alone
+        // would be discarded on the next step.
+        double* xs = blockX(ctx, b.nid);
+        const bool solverOwnsState = (xs != nullptr);
+        // Follow the decision ALGEBRAIC stamped for this step so the state and
+        // the reported output cannot disagree.
+        const bool doReset = (st.resetStamp == ctx.stepIndex) ? st.resetActive : resetNow;
+        // An edge puts the state back and integration carries on from there, so
+        // on the fixed-step path - where this pass produces the state of the NEXT
+        // sample - the step is integrated from the initial condition rather than
+        // skipped. A held level stays put. Under a solver the initial condition
+        // is written into the global vector and the solver integrates the step
+        // itself, so nothing is added here.
+        SigView u = getInputSig(ctx, b.nid, 0);
+        for (int i = 0; i &lt; w; ++i) {
+            const double inp = sigAt(u, i);
+            double next;
+            if (doReset) {
+                const double base = clampVal(initialOf(i), mn, mx);
+                next = (solverOwnsState || holding) ? base : clampVal(base + ctx.dt * inp, mn, mx);
+                if (xs) {
+                    xs[i] = base;
+                }
+            } else if (!solverOwnsState) {
+                const double cur
+                    = (w &lt;= 1) ? st.scalar : ((i &lt; (int)st.vec.size()) ? st.vec[i] : 0.0);
+                next = clampVal(cur + ctx.dt * inp, mn, mx);
+            } else {
+                continue; // the solver owns the state and nothing resets it
+            }
+            if (w &lt;= 1) {
+                st.scalar = next;
+            } else {
+                if ((int)st.vec.size() != w) {
+                    st.vec.assign(w, 0.0);
+                }
+                st.vec[i] = next;
+            }
+        }
+        if (hasReset) {
+            st.resetPrev = edgeZeroSideLatch(st.resetPrev, resetLine, st.resetPrimed);
+            st.resetPrimed = true;
+            st.resetHeld = holding;
+        }
+        return false;
+    }
+    if (phase == Phase::DERIVATIVE) {
+        // Continuous state derivative: x' = u, except a limited integrator holds
+        // its state at an engaged saturation limit. When x has reached the upper
+        // (resp. lower) limit and the input still pushes further out, the
+        // derivative is forced to 0 so the state stays on the limit; it resumes
+        // as soon as the input reverses. The exact engage/leave instants are
+        // caught by the ZERO_CROSSING surfaces below, so the solver never
+        // integrates across a saturation kink.
+        double* xdot = blockXdot(ctx, b.nid);
+        const double* xs = blockX(ctx, b.nid);
+        if (xdot) {
+            if (levelReset &amp;&amp; st.resetHeld) {
+                // Held at its initial condition while the reset line is up. The
+                // level is the one latched at the major step this integration
+                // covers, so every stage of the step agrees.
+                for (int i = 0; i &lt; w; ++i) {
+                    xdot[i] = 0.0;
+                }
+                return false;
+            }
+            if (w &lt;= 1) {
+                const double u = getInput(ctx, b.nid, 0, 0.0);
+                const double x = xs ? xs[0] : st.scalar;
+                xdot[0] = holdAtLimit(x, u, mn, mx);
+            } else {
+                SigView u = getInputSig(ctx, b.nid, 0);
+                for (int i = 0; i &lt; w; ++i) {
+                    const double xi = xs ? xs[i] : (i &lt; (int)st.vec.size() ? st.vec[i] : 0.0);
+                    xdot[i] = holdAtLimit(xi, sigAt(u, i), mn, mx);
+                }
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::ZERO_CROSSING) {
+        // Two surfaces per element: x - min and x - max. A variable-step solver
+        // stops exactly where the state engages/leaves a limit. An unbounded
+        // integrator allocates no surfaces (see zeroCrossingCount); write
+        // nothing so we never touch a zero-length g slice.
+        if (!std::isfinite(mn) &amp;&amp; !std::isfinite(mx)) {
+            return false;
+        }
+        double* g = blockG(ctx, b.nid);
+        const double* xs = blockX(ctx, b.nid);
+        if (g) {
+            for (int i = 0; i &lt; w; ++i) {
+                const double xi = xs
+                    ? xs[i]
+                    : (w &lt;= 1 ? st.scalar : (i &lt; (int)st.vec.size() ? st.vec[i] : 0.0));
+                g[2 * i] = std::isfinite(mn) ? (xi - mn) : 1.0;
+                g[2 * i + 1] = std::isfinite(mx) ? (xi - mx) : 1.0;
+            }
+        }
+        return false;
+    }
+    return false;
+}
+//=============================================================================
+// Derivative of a limited integrator element: hold at an engaged limit.
+static inline double
+holdAtLimit(double x, double u, double mn, double mx)
+{
+    if (x &gt;= mx &amp;&amp; u &gt; 0.0) {
+        return 0.0;
+    }
+    if (x &lt;= mn &amp;&amp; u &lt; 0.0) {
+        return 0.0;
+    }
+    return u;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCIntegrator()
+{
+    BlockCodegenTemplate t;
+    t.emitState = [](const BlockCodegenStateArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double initVal = bd.paramDouble(nflow::kInitial, 0.0);
+        // Unbounded by default (matches the interpreter and the Rust generator).
+        // A [0, 0] default would clamp the state to zero, so the integrator would
+        // never respond to its input.
+        double minVal = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
+        double maxVal = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
+        a.addState("int_" + a.id,
+            "fmin(fmax(" + nflow::formatNumber(initVal) + ", " + nflow::formatNumber(minVal) + "), "
+                + nflow::formatNumber(maxVal) + ")",
+            "");
+    };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        // Unbounded by default (matches the interpreter and the Rust generator);
+        // a [0, 0] default would clamp the state to zero every step, so the
+        // integrator would ignore its input and always output zero.
+        std::string minVal = nflow::formatNumber(
+            bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity()));
+        std::string maxVal = nflow::formatNumber(
+            bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity()));
+        // Output-then-update (output is the pre-step state), matching the Rust
+        // generator and the interpreter. The former update-then-output emission
+        // was one sample ahead.
+        a.line("out_" + a.id + " = s-&gt;int_" + a.id + ";");
+        a.line("s-&gt;int_" + a.id + " = fmin(fmax(s-&gt;int_" + a.id + " + " + a.in[0] + " * dt, "
+            + minVal + "), " + maxVal + ");");
+    };
+    // Unified variable-step codegen (roadmap 5.3). One scalar continuous state.
+    // A bounded integrator joins too (width 1): the derivative holds at an
+    // engaged limit and the state is clamped after the step. This is exact while
+    // the state stays within its limits; only the crossing instant differs from
+    // the simulator's zero-crossing localization by O(dt).
+    t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
+    t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const double mn = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
+        const double mx = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
+        const bool bounded = std::isfinite(mn) || std::isfinite(mx);
+        const std::string off = std::to_string(a.stateOffset);
+        const std::string x = "s-&gt;int_" + a.id;
+        const std::string mnS = nflow::formatNumber(mn);
+        const std::string mxS = nflow::formatNumber(mx);
+        switch (a.rk4Op) {
+        case Rk4Gather:
+            a.line(a.rk4Arr + "[" + off + "] = " + x + ";");
+            break;
+        case Rk4Scatter:
+            a.line(x + " = " + a.rk4Arr + "[" + off + "];");
+            break;
+        case Rk4Output:
+            if (bounded) {
+                a.line("out_" + a.id + " = fmin(fmax(" + x + ", " + mnS + "), " + mxS + ");");
+            } else {
+                a.line("out_" + a.id + " = " + x + ";");
+            }
+            break;
+        case Rk4Deriv: {
+            const std::string u = a.in[0];
+            if (bounded) {
+                a.line(a.rk4Arr + "[" + off + "] = (" + x + " &gt;= " + mxS + " &amp;&amp; " + u + " &gt; 0.0) "
+                    + "? 0.0 : ((" + x + " &lt;= " + mnS + " &amp;&amp; " + u + " &lt; 0.0) ? 0.0 : " + u + ");");
+            } else {
+                a.line(a.rk4Arr + "[" + off + "] = " + u + ";");
+            }
+            break;
+        }
+        case Rk4Clamp:
+            if (bounded) {
+                a.line(x + " = fmin(fmax(" + x + ", " + mnS + "), " + mxS + ");");
+            }
+            break;
+        case Rk4Crossing: {
+            // Sim parity (integrator ZERO_CROSSING): x - min and x - max; an
+            // infinite limit never crosses (constant surface 1.0).
+            const std::string co = std::to_string(a.crossingOffset);
+            const std::string co1 = std::to_string(a.crossingOffset + 1);
+            a.line(a.rk4Arr + "[" + co + "] = "
+                + (std::isfinite(mn) ? ("(" + x + ") - " + mnS) : std::string("1.0")) + ";");
+            a.line(a.rk4Arr + "[" + co1 + "] = "
+                + (std::isfinite(mx) ? ("(" + x + ") - " + mxS) : std::string("1.0")) + ";");
+            break;
+        }
+        default:
+            break;
+        }
+    };
+    t.crossingCount = [](const BlockCodegenArgs&amp; a) -&gt; int {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const double mn = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
+        const double mx = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
+        return (std::isfinite(mn) || std::isfinite(mx)) ? 2 : 0;
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustIntegrator()
+{
+    BlockCodegenTemplate t;
+    t.emitState = [](const BlockCodegenStateArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double iv = bd.paramDouble(nflow::kInitial, 0.0);
+        double mn = bd.paramDouble(nflow::kMin, -1e308);
+        double mx = bd.paramDouble(nflow::kMax, 1e308);
+        a.addState("int_" + a.id,
+            "libm::fmin(libm::fmax(" + a.fmt(iv) + ", " + a.fmt(mn) + "), " + a.fmt(mx) + ")", "");
+    };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double mn = bd.paramDouble(nflow::kMin, -1e308);
+        double mx = bd.paramDouble(nflow::kMax, 1e308);
+        a.line("out_" + a.id + " = s.int_" + a.id + ";");
+        a.line("s.int_" + a.id + " = libm::fmin(libm::fmax(s.int_" + a.id + " + dt * " + a.in[0]
+            + ", " + a.fmt(mn) + "), " + a.fmt(mx) + ");");
+    };
+    // Unified variable-step codegen (roadmap 5.3), Rust backend: one scalar
+    // continuous state x' = u; a bounded integrator joins too (hold-at-limit
+    // derivative + post-step clamp).
+    t.continuousWidth = [](const BlockCodegenArgs&amp;) -&gt; int { return 1; };
+    t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const double mn = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
+        const double mx = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
+        const bool bounded = std::isfinite(mn) || std::isfinite(mx);
+        const std::string off = std::to_string(a.stateOffset);
+        const std::string x = "s.int_" + a.id;
+        // The Rust backend has no INFINITY literal, so an open bound uses the
+        // 1e308 sentinel the rest of the Rust integrator emission already uses.
+        const std::string mnS = a.fmt(std::isfinite(mn) ? mn : -1e308);
+        const std::string mxS = a.fmt(std::isfinite(mx) ? mx : 1e308);
+        switch (a.rk4Op) {
+        case Rk4Gather:
+            a.line(a.rk4Arr + "[" + off + "] = " + x + ";");
+            break;
+        case Rk4Scatter:
+            a.line(x + " = " + a.rk4Arr + "[" + off + "];");
+            break;
+        case Rk4Output:
+            if (bounded) {
+                a.line("out_" + a.id + " = libm::fmin(libm::fmax(" + x + ", " + mnS + "), " + mxS
+                    + ");");
+            } else {
+                a.line("out_" + a.id + " = " + x + ";");
+            }
+            break;
+        case Rk4Deriv: {
+            const std::string u = a.in[0];
+            if (bounded) {
+                a.line(a.rk4Arr + "[" + off + "] = if " + x + " &gt;= " + mxS + " &amp;&amp; " + u
+                    + " &gt; 0.0 { 0.0 } else if " + x + " &lt;= " + mnS + " &amp;&amp; " + u
+                    + " &lt; 0.0 { 0.0 } else { " + u + " };");
+            } else {
+                a.line(a.rk4Arr + "[" + off + "] = " + u + ";");
+            }
+            break;
+        }
+        case Rk4Clamp:
+            if (bounded) {
+                a.line(x + " = libm::fmin(libm::fmax(" + x + ", " + mnS + "), " + mxS + ");");
+            }
+            break;
+        case Rk4Crossing: {
+            // Sim parity: x - min and x - max; infinite limit = constant 1.0.
+            const std::string co = std::to_string(a.crossingOffset);
+            const std::string co1 = std::to_string(a.crossingOffset + 1);
+            a.line(a.rk4Arr + "[" + co + "] = "
+                + (std::isfinite(mn) ? ("(" + x + ") - " + mnS) : std::string("1.0")) + ";");
+            a.line(a.rk4Arr + "[" + co1 + "] = "
+                + (std::isfinite(mx) ? ("(" + x + ") - " + mxS) : std::string("1.0")) + ";");
+            break;
+        }
+        default:
+            break;
+        }
+    };
+    t.crossingCount = [](const BlockCodegenArgs&amp; a) -&gt; int {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const double mn = bd.paramDouble(nflow::kMin, -std::numeric_limits&lt;double&gt;::infinity());
+        const double mx = bd.paramDouble(nflow::kMax, std::numeric_limits&lt;double&gt;::infinity());
+        return (std::isfinite(mn) || std::isfinite(mx)) ? 2 : 0;
+    };
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/continuous/derivative.html">derivative</a><a class="see-also-link" href="../../nflow_blocks/continuous/stateSpace.html">stateSpace</a><a class="see-also-link" href="../../nflow_blocks/continuous/tf.html">tf</a><a class="see-also-link" href="../../nflow_blocks/continuous/pid.html">pid</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

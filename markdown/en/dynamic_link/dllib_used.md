@@ -1,6 +1,6 @@
 # dllib_used
 
-Returns list of current used dllib handle.
+Returns the current valid dllib handles.
 
 ## 📝 Syntax
 
@@ -12,12 +12,12 @@ Returns list of current used dllib handle.
 
 ## 📄 Description
 
-Returns list of current used dllib handle.
+Returns the current valid dllib handles.
 
 ## 💡 Example
 
 ```matlab
-dllib_used(),delete(dllib_used())
+used = dllib_used()
 ```
 
 ## 🔗 See also

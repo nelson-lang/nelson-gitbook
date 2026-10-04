@@ -1,8 +1,8 @@
 # Double
 
-Le module Type Double fournit des outils pour gérer les valeurs numériques en précision double dans Nelson.
+Le module Type Double fournit des outils pour gerer les valeurs numeriques en precision double dans Nelson.
 
-Il permet la conversion en double précision et donne accès aux limites numériques importantes, facilitant des calculs haute précision et la gestion fiable de nombres à virgule flottante très grands ou très petits pour les applications mathématiques et scientifiques.
+Il convertit les valeurs en double precision et donne acces aux principales limites numeriques des nombres a virgule flottante.
 
 ## Functions
 

@@ -1,0 +1,1804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>RampCurrent</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">RampCurrent</span></div></div>
+<div class="section" style="text-align:center;"><img src="./RampCurrent.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Source de courant en rampe : i = Slope (t - StartTime) pour t &gt;= StartTime, sinon 0.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Type de bloc : RampCurrent
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">broches physiques</td>
+<td>2 broche(s) physique(s) non orientee(s) ; 0 entree(s) signal.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports signal</td>
+<td>0 sortie(s) signal (lectures de capteur).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Composant acausal (Electrique (acausal)). Source de courant en rampe : i = Slope (t - StartTime) pour t &gt;= StartTime, sinon 0.</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Bibliotheque</td>
+<td>Electrique (acausal)</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">RampCurrent</code></td>
+</tr>
+        <tr>
+<td>Libelle</td>
+<td>RampCurrent</td>
+</tr>
+        <tr>
+<td>Solveur</td>
+<td>Abaisse vers <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">physicalIsland</code>. Solveur de reference <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dae</code> (differentiel-algebrique) ; la boucle a pas fixe et les solveurs explicites natifs (<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">ode1</code>/<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">ode4</code>/<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">ode45</code>) sont egalement pris en charge (un ilot multicorps articule necessite <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dae</code>).</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Sources d implementation</b></p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/acausal_electrical/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.acausal_electrical",
+  "title": "Electrical (acausal)",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Acausal electrical components (physical pins); lower to physicalIsland.",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "renderModule": false,
+  "blocks": [
+    {
+      "type": "Ground",
+      "label": "Ground",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "Ground.svg",
+      "render": {
+        "type": "image",
+        "src": "Ground.svg"
+      },
+      "help": "Reference node (0 V) for an electrical island."
+    },
+    {
+      "type": "Resistor",
+      "label": "Resistor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "R": 1000
+      },
+      "icon": "Resistor.svg",
+      "render": {
+        "type": "image",
+        "src": "Resistor.svg"
+      },
+      "help": "Ideal linear resistor: i = (v_p - v_n) / R."
+    },
+    {
+      "type": "HeatingResistor",
+      "label": "HeatingResistor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "heatPort",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "thermal"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "R": 1000
+      },
+      "icon": "HeatingResistor.svg",
+      "render": {
+        "type": "image",
+        "src": "HeatingResistor.svg"
+      },
+      "help": "Resistor that dissipates its power P = v^2 / R as heat into a thermal port."
+    },
+    {
+      "type": "Conductor",
+      "label": "Conductor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "G": 0.001
+      },
+      "icon": "Conductor.svg",
+      "render": {
+        "type": "image",
+        "src": "Conductor.svg"
+      },
+      "help": "Ideal linear conductor: i = G (v_p - v_n)."
+    },
+    {
+      "type": "VariableResistor",
+      "label": "VariableResistor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "R"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "VariableResistor.svg",
+      "render": {
+        "type": "image",
+        "src": "VariableResistor.svg"
+      },
+      "help": "Resistor whose resistance R is set by the input signal."
+    },
+    {
+      "type": "VariableConductor",
+      "label": "VariableConductor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "G"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "VariableConductor.svg",
+      "render": {
+        "type": "image",
+        "src": "VariableConductor.svg"
+      },
+      "help": "Conductor whose conductance G is set by the input signal."
+    },
+    {
+      "type": "VariableCapacitor",
+      "label": "VariableCapacitor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "C"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {
+        "q0": 0
+      },
+      "icon": "VariableCapacitor.svg",
+      "render": {
+        "type": "image",
+        "src": "VariableCapacitor.svg"
+      },
+      "help": "Capacitor whose capacitance C is set by a signal (exact charge Q formulation)."
+    },
+    {
+      "type": "VariableInductor",
+      "label": "VariableInductor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "L"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {
+        "phi0": 0
+      },
+      "icon": "VariableInductor.svg",
+      "render": {
+        "type": "image",
+        "src": "VariableInductor.svg"
+      },
+      "help": "Inductor whose inductance L is set by a signal (exact flux phi formulation)."
+    },
+    {
+      "type": "Capacitor",
+      "label": "Capacitor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "C": 1e-6,
+        "v0": 0
+      },
+      "icon": "Capacitor.svg",
+      "render": {
+        "type": "image",
+        "src": "Capacitor.svg"
+      },
+      "help": "Ideal linear capacitor: i = C dv/dt."
+    },
+    {
+      "type": "Inductor",
+      "label": "Inductor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "L": 0.001,
+        "i0": 0
+      },
+      "icon": "Inductor.svg",
+      "render": {
+        "type": "image",
+        "src": "Inductor.svg"
+      },
+      "help": "Ideal linear inductor: v = L di/dt."
+    },
+    {
+      "type": "ConstantVoltage",
+      "label": "ConstantVoltage",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "V": 1
+      },
+      "icon": "ConstantVoltage.svg",
+      "render": {
+        "type": "image",
+        "src": "ConstantVoltage.svg"
+      },
+      "help": "Constant voltage source: v_p - v_n = V."
+    },
+    {
+      "type": "SignalVoltage",
+      "label": "SignalVoltage",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "V"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "SignalVoltage.svg",
+      "render": {
+        "type": "image",
+        "src": "SignalVoltage.svg"
+      },
+      "help": "Voltage source driven by the input signal."
+    },
+    {
+      "type": "ConstantCurrent",
+      "label": "ConstantCurrent",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "I": 1
+      },
+      "icon": "ConstantCurrent.svg",
+      "render": {
+        "type": "image",
+        "src": "ConstantCurrent.svg"
+      },
+      "help": "Constant current source: current I flows p -&gt; n."
+    },
+    {
+      "type": "SignalCurrent",
+      "label": "SignalCurrent",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "I"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "SignalCurrent.svg",
+      "render": {
+        "type": "image",
+        "src": "SignalCurrent.svg"
+      },
+      "help": "Current source driven by the input signal."
+    },
+    {
+      "type": "SineVoltage",
+      "label": "SineVoltage",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 1,
+        "Phase": 0
+      },
+      "icon": "SineVoltage.svg",
+      "render": {
+        "type": "image",
+        "src": "SineVoltage.svg"
+      },
+      "help": "Sine voltage source: v = Amplitude sin(2 pi Frequency t + Phase)."
+    },
+    {
+      "type": "SineCurrent",
+      "label": "SineCurrent",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 1,
+        "Phase": 0
+      },
+      "icon": "SineCurrent.svg",
+      "render": {
+        "type": "image",
+        "src": "SineCurrent.svg"
+      },
+      "help": "Sine current source: i = Amplitude sin(2 pi Frequency t + Phase)."
+    },
+    {
+      "type": "ExpSineVoltage",
+      "label": "ExpSineVoltage",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 2,
+        "Damping": 0.5,
+        "Phase": 0
+      },
+      "icon": "ExpSineVoltage.svg",
+      "render": {
+        "type": "image",
+        "src": "ExpSineVoltage.svg"
+      },
+      "help": "Exponentially damped sine voltage source."
+    },
+    {
+      "type": "ExpSineCurrent",
+      "label": "ExpSineCurrent",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 2,
+        "Damping": 0.5,
+        "Phase": 0
+      },
+      "icon": "ExpSineCurrent.svg",
+      "render": {
+        "type": "image",
+        "src": "ExpSineCurrent.svg"
+      },
+      "help": "Exponentially damped sine current source."
+    },
+    {
+      "type": "TrapezoidVoltage",
+      "label": "TrapezoidVoltage",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Rising": 0.2,
+        "Width": 0.3,
+        "Falling": 0.2,
+        "Period": 1
+      },
+      "icon": "TrapezoidVoltage.svg",
+      "render": {
+        "type": "image",
+        "src": "TrapezoidVoltage.svg"
+      },
+      "help": "Trapezoidal voltage source (continuous ramp-up / hold / ramp-down)."
+    },
+    {
+      "type": "TrapezoidCurrent",
+      "label": "TrapezoidCurrent",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Rising": 0.2,
+        "Width": 0.3,
+        "Falling": 0.2,
+        "Period": 1
+      },
+      "icon": "TrapezoidCurrent.svg",
+      "render": {
+        "type": "image",
+        "src": "TrapezoidCurrent.svg"
+      },
+      "help": "Trapezoidal current source (continuous ramp-up / hold / ramp-down)."
+    },
+    {
+      "type": "VCV",
+      "label": "VCV",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "cp",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        },
+        {
+          "name": "cn",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "gain": 1
+      },
+      "icon": "VCV.svg",
+      "render": {
+        "type": "image",
+        "src": "VCV.svg"
+      },
+      "help": "Voltage-controlled voltage source: v_pn = gain (v_cp - v_cn)."
+    },
+    {
+      "type": "VCC",
+      "label": "VCC",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "cp",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        },
+        {
+          "name": "cn",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "gain": 1
+      },
+      "icon": "VCC.svg",
+      "render": {
+        "type": "image",
+        "src": "VCC.svg"
+      },
+      "help": "Voltage-controlled current source: i = gain (v_cp - v_cn)."
+    },
+    {
+      "type": "CCV",
+      "label": "CCV",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "cp",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        },
+        {
+          "name": "cn",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "gain": 1
+      },
+      "icon": "CCV.svg",
+      "render": {
+        "type": "image",
+        "src": "CCV.svg"
+      },
+      "help": "Current-controlled voltage source: v_pn = gain i_cp (the sense branch cp-cn is a short)."
+    },
+    {
+      "type": "CCC",
+      "label": "CCC",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "cp",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        },
+        {
+          "name": "cn",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "gain": 1
+      },
+      "icon": "CCC.svg",
+      "render": {
+        "type": "image",
+        "src": "CCC.svg"
+      },
+      "help": "Current-controlled current source: i_pn = gain i_cp (the sense branch cp-cn is a short)."
+    },
+    {
+      "type": "Diode",
+      "label": "Diode",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Is": 1e-9,
+        "Vt": 0.025
+      },
+      "icon": "Diode.svg",
+      "render": {
+        "type": "image",
+        "src": "Diode.svg"
+      },
+      "help": "Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1)."
+    },
+    {
+      "type": "ZDiode",
+      "label": "ZDiode",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Is": 1e-9,
+        "Vt": 0.04,
+        "Vz": 5
+      },
+      "icon": "ZDiode.svg",
+      "render": {
+        "type": "image",
+        "src": "ZDiode.svg"
+      },
+      "help": "Zener diode: forward Shockley conduction plus reverse breakdown at -Vz."
+    },
+    {
+      "type": "IdealDiode",
+      "label": "IdealDiode",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Ron": 0.001,
+        "Goff": 1e-6,
+        "Vknee": 0
+      },
+      "icon": "IdealDiode.svg",
+      "render": {
+        "type": "image",
+        "src": "IdealDiode.svg"
+      },
+      "help": "Ideal diode switching at the knee voltage Vknee: off below it (leak conductance Goff), on above it (on-resistance Ron in series with Vknee); the mode flip is an event."
+    },
+    {
+      "type": "RampVoltage",
+      "label": "RampVoltage",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Slope": 1,
+        "StartTime": 0
+      },
+      "icon": "RampVoltage.svg",
+      "render": {
+        "type": "image",
+        "src": "RampVoltage.svg"
+      },
+      "help": "Ramp voltage source: v = Slope (t - StartTime) for t &gt;= StartTime, else 0."
+    },
+    {
+      "type": "RampCurrent",
+      "label": "RampCurrent",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Slope": 1,
+        "StartTime": 0
+      },
+      "icon": "RampCurrent.svg",
+      "render": {
+        "type": "image",
+        "src": "RampCurrent.svg"
+      },
+      "help": "Ramp current source: i = Slope (t - StartTime) for t &gt;= StartTime, else 0."
+    },
+    {
+      "type": "NPN",
+      "label": "NPN",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "C",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "B",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "E",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Is": 1e-16,
+        "Vt": 0.025,
+        "Bf": 100,
+        "Br": 1
+      },
+      "icon": "NPN.svg",
+      "render": {
+        "type": "image",
+        "src": "NPN.svg"
+      },
+      "help": "NPN bipolar transistor (Ebers-Moll): collector, base and emitter pins."
+    },
+    {
+      "type": "PNP",
+      "label": "PNP",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "C",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "B",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "E",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Is": 1e-16,
+        "Vt": 0.025,
+        "Bf": 100,
+        "Br": 1
+      },
+      "icon": "PNP.svg",
+      "render": {
+        "type": "image",
+        "src": "PNP.svg"
+      },
+      "help": "PNP bipolar transistor (Ebers-Moll): collector, base and emitter pins."
+    },
+    {
+      "type": "NMOS",
+      "label": "NMOS",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "D",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "G",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "S",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Beta": 0.001,
+        "Vt": 1
+      },
+      "icon": "NMOS.svg",
+      "render": {
+        "type": "image",
+        "src": "NMOS.svg"
+      },
+      "help": "N-channel MOSFET (square law): drain, gate and source pins."
+    },
+    {
+      "type": "PMOS",
+      "label": "PMOS",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "D",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "G",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "S",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "Beta": 0.001,
+        "Vt": 1
+      },
+      "icon": "PMOS.svg",
+      "render": {
+        "type": "image",
+        "src": "PMOS.svg"
+      },
+      "help": "P-channel MOSFET (square law): drain, gate and source pins."
+    },
+    {
+      "type": "IdealTransformer",
+      "label": "IdealTransformer",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p1",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n1",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "p2",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        },
+        {
+          "name": "n2",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "n": 1
+      },
+      "icon": "IdealTransformer.svg",
+      "render": {
+        "type": "image",
+        "src": "IdealTransformer.svg"
+      },
+      "help": "Ideal transformer: v1 = n v2, i2 = -n i1 (structural, no state storage)."
+    },
+    {
+      "type": "Gyrator",
+      "label": "Gyrator",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p1",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n1",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "p2",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        },
+        {
+          "name": "n2",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {
+        "G1": 1,
+        "G2": 1
+      },
+      "icon": "Gyrator.svg",
+      "render": {
+        "type": "image",
+        "src": "Gyrator.svg"
+      },
+      "help": "Gyrator: i1 = G2 v2, i2 = -G1 v1 (across&lt;-&gt;through transducer)."
+    },
+    {
+      "type": "IdealOpAmp",
+      "label": "IdealOpAmp",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "in_p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "in_n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        },
+        {
+          "name": "out",
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "IdealOpAmp.svg",
+      "render": {
+        "type": "image",
+        "src": "IdealOpAmp.svg"
+      },
+      "help": "Ideal op-amp (nullor): virtual short e_+ = e_-, output current free."
+    },
+    {
+      "type": "Short",
+      "label": "Short",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "Short.svg",
+      "render": {
+        "type": "image",
+        "src": "Short.svg"
+      },
+      "help": "Ideal short circuit: e_p = e_n (branch current free)."
+    },
+    {
+      "type": "Idle",
+      "label": "Idle",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "Idle.svg",
+      "render": {
+        "type": "image",
+        "src": "Idle.svg"
+      },
+      "help": "Ideal open branch: i = 0 (branch voltage free)."
+    },
+    {
+      "type": "IdealSwitch",
+      "label": "IdealSwitch",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [
+        {
+          "x": 50,
+          "y": 0,
+          "side": "top",
+          "name": "control"
+        }
+      ],
+      "outputs": [],
+      "defaultParams": {},
+      "icon": "IdealSwitch.svg",
+      "render": {
+        "type": "image",
+        "src": "IdealSwitch.svg"
+      },
+      "help": "Ideal switch: control &gt; 0.5 -&gt; closed short, else open (i = 0)."
+    },
+    {
+      "type": "VoltageSensor",
+      "label": "VoltageSensor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 50,
+          "y": 80,
+          "side": "bottom",
+          "name": "voltage"
+        }
+      ],
+      "defaultParams": {},
+      "icon": "VoltageSensor.svg",
+      "render": {
+        "type": "image",
+        "src": "VoltageSensor.svg"
+      },
+      "help": "Measures the voltage v_p - v_n (ideal, no loading)."
+    },
+    {
+      "type": "CurrentSensor",
+      "label": "CurrentSensor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        },
+        {
+          "name": "n",
+          "x": 100,
+          "y": 40,
+          "side": "right",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 50,
+          "y": 80,
+          "side": "bottom",
+          "name": "current"
+        }
+      ],
+      "defaultParams": {},
+      "icon": "CurrentSensor.svg",
+      "render": {
+        "type": "image",
+        "src": "CurrentSensor.svg"
+      },
+      "help": "Measures the branch current p -&gt; n (ideal ammeter)."
+    },
+    {
+      "type": "PotentialSensor",
+      "label": "PotentialSensor",
+      "acausal": true,
+      "domain": "electrical",
+      "width": 100,
+      "height": 80,
+      "physicalPins": [
+        {
+          "name": "p",
+          "x": 0,
+          "y": 40,
+          "side": "left",
+          "domain": "electrical"
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 50,
+          "y": 80,
+          "side": "bottom",
+          "name": "potential"
+        }
+      ],
+      "defaultParams": {},
+      "icon": "PotentialSensor.svg",
+      "render": {
+        "type": "image",
+        "src": "PotentialSensor.svg"
+      },
+      "help": "Measures the absolute node potential."
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Catalog</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/functions/+NFlow/+internal/acausalCatalog.m</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-matlab">  c{end + 1} = entry('RampCurrent', 'Electrical', 'electrical', 'physicalIsland', ...
+    'isource', {{'p', 'a'}, {'n', 'b'}}, ...
+    {{'Slope', 'slope', 1, 'A/s'}, {'StartTime', 'start', 0, 's'}}, '', '', ...
+    'Ramp current source: i = Slope (t - StartTime) for t &gt;= StartTime, else 0.');</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/acausal_electrical/Ground.html">Ground</a><a class="see-also-link" href="../../nflow_blocks/acausal_electrical/Resistor.html">Resistor</a><a class="see-also-link" href="../../nflow_blocks/acausal_electrical/HeatingResistor.html">HeatingResistor</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

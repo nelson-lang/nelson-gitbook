@@ -67,7 +67,15 @@ To specify the file name explicitly, use <b>writetable(T, filename)</b>. The fil
   'table'
   </code>).
 
-## 💡 Example
+<b>JSON files</b> (<b>.json</b> extension or <b>'FileType', 'json'</b>): the table is written as a JSON array with one object per row; keys are the variable names.
+
+- Numbers and logical values are written as JSON numbers and true or false, text, categorical, datetime and duration values as JSON strings (datetime and duration use their display format).
+- Missing values (<missing>, NaT, <undefined>) are written as null. A multicolumn variable gives a JSON array per row.
+- <b>PrettyPrint</b>: indent the text with four spaces (default: <code>true</code>).
+- <b>PreserveInfAndNaN</b>: write Inf and NaN values as Inf, -Inf and NaN (default: <code>true</code>); with <code>false</code> they are written as null.
+- <b>WriteRowNames</b>: write the row names as the first value of each object, keyed by the first dimension name.
+
+## 💡 Examples
 
 Examples demonstrating various usages of writetable.
 
@@ -88,15 +96,22 @@ writetable(T, 'data.xml', 'RowNodeName', 'record', 'TableNodeName', 'dataset')
 writetable(T, 'data.txt', 'WriteMode', 'append', 'WriteRowNames', true)
 ```
 
+Write a table to a JSON file:
+
+```matlab
+T = table([1; NaN], ["a"; missing], [true; false], 'VariableNames', {'x', 'name', 'ok'}); f = [tempdir, 'writetable_json.json']; writetable(T, f); fileread(f) writetable(T, f, 'PrettyPrint', false, 'PreserveInfAndNaN', false); fileread(f)
+```
+
 ## 🔗 See also
 
 [table](../table/table.md).
 
 ## 🕔 History
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.10.0  | Initial version. |
+| Version | 📄 Description                                                |
+| ------- | ------------------------------------------------------------- |
+| 1.10.0  | Initial version.                                              |
+| 2.0.0   | JSON files: FileType json, PrettyPrint and PreserveInfAndNaN. |
 
 <!--
 ## 👤 Author

@@ -4,7 +4,7 @@ module.json description
 
 ## 📄 Description
 
-A module.json file is required for each nelson's external module, it allows to manager easily with <b>nmm</b> function.
+A module.json file is required for each Nelson external module and is used by the <b>nmm</b> function to manage the module.
 
 <b>module</b>: unique identifier module short name (alphanumeric characters), example: "module_skeleton_basic"
 
@@ -26,6 +26,8 @@ others platforms:
 
 "maci64": macos 64 bits build
 
+"maca64": macos Apple silicon build
+
 "maci32": macos 32 bits build
 
 "glnxa64": linux 64 bits build
@@ -33,6 +35,8 @@ others platforms:
 "glnxa32": linux 64 bits build
 
 example: <b>["win64", "glnxa64"]</b>, module will be available only on windows and linux 64 bits platforms.
+
+The current architecture must match one listed platform exactly, unless <b>all</b> is listed.
 
 <b>nelson</b>: nelson's supported versions, example: " <2.0.0" (default)
 
@@ -54,11 +58,15 @@ Example:
 
 <b>homepage</b>: homepage of the module, example "https://github.com/nelson-lang/module\_skeleton\_basic"
 
+<b>issues</b>: optional issue-tracker URL of the module, example "https://github.com/nelson-lang/module\_skeleton\_basic/issues"
+
+<b>documentation</b>: optional documentation URL of the module, example "https://nelson-lang.github.io/nelson-website/"
+
 <b>description</b>: full description of the module, markdown format supported, example: "nelson's module skeleton (macros only)"
 
 <b>copyright</b> copyright description, example: "Copyright © 2019-present Allan CORNET"
 
-<b>license</b>: License under which the toolbox will be published, example: "BSD" or "LGPLv2", ...
+<b>license</b>: SPDX license expression under which the toolbox will be published, example: "BSD-3-Clause", "MIT" or "LGPL-3.0-or-later OR GPL-3.0-or-later".
 
 <b>keywords</b>: keywords describing your module.
 
@@ -75,6 +83,32 @@ Example:
 "module_b": "https://module_b.git#v1.0.0"
 
 }
+
+During package creation, installed dependency versions are resolved into <b>module-lock.json</b>. The lock file also records its format version, package type (<b>source</b> or <b>binary</b>), source metadata, Nelson version, architecture, ABI tag and checksums for key installed files. A packaged <b>.nmz</b> archive can be installed only when these locked dependencies are already installed. Binary packages also require the locked Nelson architecture and ABI tag to match the running Nelson build.
+
+When installing a source module, dependency values can be local paths, <b>.nmz</b> archives, HTTP Git repositories, exact versions or semver constraints. Source dependencies are installed recursively before the module is built. If the source tree already contains <b>module-lock.json</b>, its exact dependency versions are used for a reproducible install. Source installs build and run tests in a temporary staging directory before the module is committed to the final install location. A failed source install keeps any previous installed version of the same module intact.
+
+A <b>.nmz</b> archive can be accompanied by a <b>.sha256</b> checksum file. <b>nmm</b> verifies this checksum when it is present, and otherwise verifies the file checksums embedded in <b>module-lock.json</b> after extraction.
+
+<b>nmm('validate', module_path)</b> checks that these required fields are present and well formed before installation or packaging.
+
+<b>nmm('validate', module_path, '-strict')</b> adds publish-oriented checks for <b>repository</b>, <b>homepage</b>, non-empty <b>keywords</b>, at least one test file and at least one XML help file.
+
+In strict mode, <b>repository</b> and <b>homepage</b> must be HTTP or HTTPS URLs. The optional <b>issues</b> and <b>documentation</b> fields are validated only when present and must then be HTTP or HTTPS URLs. <b>nmm('validate', module_path, '-json')</b> returns a machine-readable validation report.
+
+Validation also checks the package layout: a source module must include <b>builder.m</b> or <b>loader.m</b>, <b>etc/startup.m</b>, <b>etc/finish.m</b>, <b>help</b>, and <b>tests</b>. Packaging requires at least one test file and runs the package tests before writing an archive.
+
+<b>nmm('pack', module_path, destination_dir)</b> uses this descriptor to build a source module and create a reproducible package archive with a lock file and checksum.
+
+<b>nmm('lock', module_path)</b> writes or refreshes <b>module-lock.json</b> for a source module without installing or packaging it.
+
+<b>nmm('publish', package_filename)</b> reads the package lock file and <b>module.json</b>, then writes a local registry entry containing package metadata, the package source path and SHA-256 checksum. It also writes a <b>registry.json.sha256</b> sidecar. When <b>NELSON_NMM_REGISTRY_SIGNING_KEY</b> is set, it writes and verifies a keyed <b>registry.json.sig</b> sidecar too. Registry archive installs verify the package checksum and local registry files require the checksum sidecar.
+
+A registry index is a JSON document with a <b>packages</b> array. Each package entry contains package metadata such as name, version, package type, platforms, Nelson compatibility, dependencies, checksum and optional package signature metadata. An installable entry also contains <b>source</b>, <b>url</b> or <b>archive</b>. Dependencies declared by an installable entry are resolved recursively before the package source is installed. <b>nmm('search')</b>, <b>nmm('info')</b> and <b>nmm('versions')</b> read this index.
+
+Registry versions are also used by <b>nmm('outdated')</b> and <b>nmm('update')</b>. Checked <b>.nmz</b> archives are cached locally and can be reused by offline installs.
+
+Several versions of the same module can be installed side by side. <b>modules.json</b> stores the active version in the top-level <b>path</b> and <b>version</b> fields, stores all installed versions in <b>versions</b>, and stores an explicit default in <b>pinned_version</b> when <b>nmm('pin')</b> is used.
 
 ## 💡 Example
 
@@ -99,9 +133,10 @@ edit([modules_installed.module_skeleton_basic.path, 'module.json']);
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                    |
+| ------- | ------------------------------------------------- |
+| 1.0.0   | initial version                                   |
+| 2.0.0   | lockfile, registry and strict validation metadata |
 
 <!--
 ## 👤 Author

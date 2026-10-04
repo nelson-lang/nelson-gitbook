@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>fmiCoSimulate</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fmiCoSimulate</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Exécute une co-simulation à pas fixe d'une FMU FMI 2.0 ou 3.0.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">result = fmiCoSimulate(fmu, tStop)
+result = fmiCoSimulate(fmu, tStop, dt)
+result = fmiCoSimulate(fmu, tStop, dt, inputs)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">fmu</td>
+<td>une chaîne de caractères : le chemin d'une archive <b>.fmu</b>, ou d'un répertoire de FMU déjà extrait. La FMU doit fournir l'interface de co-simulation (voir <b>fmiInfo</b>).</td>
+</tr>
+<tr>
+<td class="param-name">tStop</td>
+<td>un scalaire réel strictement positif : l'instant d'arrêt de la simulation, dans l'unité de temps de la FMU (secondes). La simulation débute à l'instant <b>0</b>.</td>
+</tr>
+<tr>
+<td class="param-name">dt</td>
+<td>un scalaire réel strictement positif optionnel : le pas de communication. En son absence il vaut par défaut <b>tStop / 100</b> (cent pas). Il est ramené à <b>tStop</b> s'il est plus grand.</td>
+</tr>
+<tr>
+<td class="param-name">inputs</td>
+<td>une structure scalaire optionnelle dont les noms de champs sont des variables d'entrée <b>Float64</b> de la FMU et les valeurs les valeurs constantes maintenues sur ces entrées pendant toute l'exécution, par exemple <b>struct('u', 2.5)</b>. Les entrées non listées conservent leurs valeurs initiales.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">result</td>
+<td>une structure scalaire contenant la trajectoire enregistrée, avec les champs <b>time</b>, <b>outputNames</b> et <b>outputs</b> décrits ci-dessous.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>fmiCoSimulate</b> exécute une <b>co-simulation</b> d'une <b>unité de maquette fonctionnelle</b> (FMU) conforme au standard <b>FMI 2.0</b> ou <b>3.0</b> et renvoie les valeurs de chaque sortie <b>Float64</b> à chaque point de communication.</p>
+    <p>La FMU est instanciée, initialisée entre les instants <b>0</b> et <b>tStop</b>, puis avancée avec un pas de communication fixe <b>dt</b>. Au début de chaque pas les sorties <b>Float64</b> courantes sont enregistrées ; la FMU est ensuite avancée d'un pas. La boucle s'arrête à <b>tStop</b>, ou plus tôt si la FMU demande l'arrêt. La FMU est toujours terminée et libérée avant le retour de la fonction, y compris en cas d'erreur.</p>
+    <p>Aucune entrée externe n'est appliquée : les paramètres et les entrées de la FMU conservent les valeurs initiales déclarées dans sa description de modèle. La fonction reproduit donc la réponse libre du modèle tel qu'empaqueté. L'application d'entrées personnalisées n'est pas encore prise en charge par ce point d'entrée.</p>
+    <p>L'argument <b>fmu</b> accepte aussi bien une archive <b>.fmu</b> qu'un répertoire déjà extrait. Une archive <b>.fmu</b> est décompressée avec un extracteur durci contre le ZIP-slip dans un répertoire temporaire neuf, supprimé automatiquement au retour de la fonction ; les entrées comportant un chemin absolu, une lettre de lecteur ou une remontée <b>..</b> sont rejetées.</p>
+    <p>La structure renvoyée <b>result</b> comporte les champs suivants :</p>
+    <table style="width:100%">
+      <tr>
+        <th>Champ</th>
+        <th>Taille</th>
+        <th>Détails</th>
+      </tr>
+      <tr>
+        <td>time</td>
+        <td>N x 1</td>
+        <td>les points de communication, débutant à <b>0</b> et strictement croissants par pas de <b>dt</b> (le dernier point peut être plus court lorsque la FMU s'arrête prématurément).</td>
+      </tr>
+      <tr>
+        <td>outputNames</td>
+        <td>1 x nOut</td>
+        <td>un tableau de cellules des noms des variables de sortie <b>Float64</b>, dans l'ordre de déclaration.</td>
+      </tr>
+      <tr>
+        <td>outputs</td>
+        <td>N x nOut</td>
+        <td>les valeurs de sortie enregistrées ; la colonne <b>j</b> est la trajectoire de <b>outputNames{j}</b>, la ligne <b>i</b> correspond à <b>time(i)</b>.</td>
+      </tr>
+    </table>
+    <p>Le nombre de lignes <b>N</b> vaut <b>floor(tStop / dt) + 1</b> pour une exécution qui se termine à <b>tStop</b>. Lorsque la FMU ne déclare aucune sortie <b>Float64</b>, <b>outputNames</b> est vide et <b>outputs</b> possède zéro colonne, tandis que <b>time</b> est tout de même renvoyé.</p>
+    <p>Utilisez d'abord <b>fmiInfo</b> pour inspecter les variables et confirmer la présence de l'interface de co-simulation. Une erreur est levée lorsque <b>tStop</b> n'est pas strictement positif, lorsque la FMU ne gère pas la co-simulation, ou lorsqu'un appel FMI échoue.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Exécuter une co-simulation avec le pas par défaut.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">result = fmiCoSimulate('VanDerPol.fmu', 20)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Exécuter avec un pas de communication explicite et tracer les sorties.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">r = fmiCoSimulate('VanDerPol.fmu', 20, 0.01);
+plot(r.time, r.outputs);
+legend(r.outputNames);
+xlabel('temps');
+title('Sorties de co-simulation FMU');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Extraire une sortie nommée du résultat.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">r = fmiCoSimulate('VanDerPol.fmu', 20, 0.01);
+col = find(strcmp(r.outputNames, 'x0'));
+x0 = r.outputs(:, col);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Piloter une entrée de FMU avec une valeur constante (FMU Feedthrough livrée).</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">fmu = [modulepath('nflow_fmi', 'root'), '/examples/Feedthrough.fmu'];
+r = fmiCoSimulate(fmu, 2, 0.1, struct('Float64_continuous_input', 2.5));
+col = find(strcmp(r.outputNames, 'Float64_continuous_output'));
+r.outputs(end, col)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div><a class="see-also-link" href="../nflow_fmi/fmiInfo.html">fmiInfo</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>ai</module>
+    <section name="Intégration IA et MCP.">
+      <chapter_description/>
+      <keyword name="aiask" link="aiask.html" description="Interroge un fournisseur IA externe depuis Nelson."/>
+      <keyword name="aimodels" link="aimodels.html" description="Liste les modeles disponibles chez un fournisseur IA."/>
+      <keyword name="aioptions" link="aioptions.html" description="Cree les options pour les requetes a un fournisseur IA."/>
+      <keyword name="mcpinfo" link="mcpinfo.html" description="Retourne les informations du serveur MCP Nelson."/>
+      <keyword name="mcpserver" link="mcpserver.html" description="Demarre le serveur MCP Nelson sur l'entree et la sortie standard."/>
+      <keyword name="mcpusage" link="mcpusage.html" description="Utiliser Nelson via MCP depuis un agent IA."/>
+    </section>
+  </toc>
+</help_summary>

@@ -69,6 +69,10 @@ C_IN = [25.0  24.0  15.0;
 [U_OUT, C_OUT, SCALE, SEP, FERR, WR, WI, INFO] = slicot_sb03md(DICO, JOB, FACT, TRANA, A, U_IN, C_IN)
 ```
 
+## 🔗 See also
+
+[slicot_sb03od](../slicot/slicot_sb03od.md), [slicot_sb02od](../slicot/slicot_sb02od.md), [slicot_sb04md](../slicot/slicot_sb04md.md), [lyap](../control_system/lyap.md), [dlyap](../control_system/dlyap.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

@@ -43,6 +43,10 @@ C(:) = rand(3, 4)
 
 ```
 
+## 🔗 Voir aussi
+
+[subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

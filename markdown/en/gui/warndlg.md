@@ -1,57 +1,52 @@
-# helpdlg
+# warndlg
 
 Creates a warning dialog box.
 
 ## 📝 Syntax
 
-- h = warndlg()
-- h = warndlg(text_warning)
-- h = warndlg(text_warning, title)
-- h = warndlg(text_warning, title, 'on')
+- h = warndlg
+- h = warndlg(message)
+- h = warndlg(message, title)
+- h = warndlg(message, title, mode)
 
 ## 📥 Input argument
 
-- text_warning - a string or a cell of string: the warning message.
-- title - a string: the title of the dialog box.
+- message - Warning text. Use a character vector, string, or cell array of character vectors.
 
 ## 📤 Output argument
 
-- h - a QObject handle.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>errordlg</b> creates an warning dialog box.
-
-<b>h = warndlg(text_warning, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.
+warndlg creates a warning message dialog and returns a graphics figure handle.
 
 ## 💡 Examples
 
-```matlab
-h = warndlg()
-```
+Create a warning dialog.
 
 ```matlab
-h = warndlg('help string')
+f = warndlg('Check the input value.', 'Warning', 'non-modal');
+drawnow();
 ```
 
-```matlab
-h = warndlg('help string', 'dialog title')
-```
+<img src="warndlg_example.svg" align="middle"/>
+Create a warning dialog with several lines.
 
 ```matlab
-h = warndlg('help string', 'dialog title')
-h = warndlg('help string', 'dialog title', 'on')
+h = warndlg({'Input is empty.', 'Default values will be used.'}, 'Warning', 'non-modal');
+close(h)
 ```
 
 ## 🔗 See also
 
-[helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [msgbox](../gui/msgbox.md).
+[msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description           |
+| ------- | ------------------------ |
+| 2.0.0   | Updated dialog API help. |
 
 <!--
 ## 👤 Author

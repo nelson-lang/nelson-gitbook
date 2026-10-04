@@ -53,6 +53,10 @@ A_IN = [   1.    2.    6.    3.    5.;
 [A_OUT, JPVT_OUT, TAU, RANK, SVAL, INFO] = slicot_mb03pd(JOBRQ, A_IN, JPVT_IN, RCOND, SVLMAX)
 ```
 
+## 🔗 See also
+
+[slicot_mb03od](../slicot/slicot_mb03od.md), [slicot_mb04gd](../slicot/slicot_mb04gd.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

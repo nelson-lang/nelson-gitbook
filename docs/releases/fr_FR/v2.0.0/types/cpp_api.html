@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>cpp_api</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">cpp_api</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Conventions de l'API C++ des valeurs pour les types noyau de Nelson.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">ArrayOf::doubleScalar(value)
+value.asDoubleScalar()
+value.rows()
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>L'API C++ des valeurs est utilisée par les modules natifs, le code d'extension et les intégrations embarquées pour créer, inspecter et extraire des valeurs Nelson. Le point d'entrée principal est le header public <b>ArrayOf.hpp</b>, qui expose les macros <b>NELSON_ARRAYOF_API_VERSION</b> pour les vérifications de version.</p>
+    <p>Les fonctions de fabrique de <b>ArrayOf</b> décrivent directement la valeur créée. Les exemples courants incluent <b>doubleScalar</b>, <b>singleScalar</b>, <b>logicalScalar</b>, <b>int32Scalar</b>, <b>doubleRowVector</b>, <b>doubleMatrix2d</b>, <b>cellArray</b>, <b>structArray</b>, <b>stringArray</b>, <b>table</b> et <b>handle</b>.</p>
+    <p>Les accesseurs de propriétés simples utilisent des noms courts comme <b>rows</b>, <b>columns</b>, <b>elementCount</b>, <b>dimensions</b>, <b>dataClass</b>, <b>fieldNames</b> et <b>referenceCount</b>. Ces fonctions doivent rester peu coûteuses et ne doivent pas masquer d'allocation.</p>
+    <p>Les noms commençant par <b>as</b> extraient une valeur C++ existante depuis une valeur Nelson, par exemple <b>asDoubleScalar</b>, <b>asUtf8String</b>, <b>asWideString</b>, <b>asIndexVector</b> et <b>asFunctionHandle</b>.</p>
+    <p>Les noms commençant par <b>to</b> créent une nouvelle représentation. Les noms commençant par <b>toAllocated</b>, comme <b>toAllocatedUtf8CString</b>, rendent l'allocation et la propriété explicites.</p>
+    <p>Les mutations et les tests d'état suivent les préfixes verbaux habituels : <b>setX</b> modifie une propriété, <b>isX</b> teste un état et <b>makeX</b> transforme la valeur en place.</p>
+    <p>L'API conserve les chemins rapides : stockage scalaire inline, dimensions mises en cache dans <b>Data</b>, propriété par copy-on-write et accès pointeur sans allocation cachée. Les pointeurs retournés par les valeurs restent valides uniquement tant que la valeur propriétaire et l'état de son stockage restent valides.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Créer et inspecter une valeur scalaire.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ArrayOf value = ArrayOf::doubleScalar(3.0);
+double scalar = value.asDoubleScalar();
+indexType rows = value.rows();
+indexType cols = value.columns();</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Créer un tableau de cellules et lire des propriétés simples.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ArrayOfVector items;
+items &lt;&lt; ArrayOf::doubleScalar(1.0);
+items &lt;&lt; ArrayOf::stringArray("name");
+ArrayOf cells = ArrayOf::cellArray(items);
+indexType count = cells.elementCount();</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../types/class.html">class</a><a class="see-also-link" href="../types/isa.html">isa</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

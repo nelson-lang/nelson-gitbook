@@ -1,6 +1,6 @@
 # Python engine
 
-The Python Engine module allows Nelson users to seamlessly interface with Python, leveraging Python’s extensive ecosystem alongside Nelson’s native capabilities.
+The Python Engine module lets Nelson call Python code and use Python libraries alongside Nelson functions.
 
 It provides functions to run Python code, manage interpreter environments, and exchange data between Nelson and Python.
 
@@ -10,7 +10,11 @@ It provides functions to run Python code, manage interpreter environments, and e
 - [How to install python package](2_How_to_install_python_package.md) -
 - [Python Nelson types](3_python_types.md) - Managing Data between Python and Nelson.
 - [Python operators](4_python_overload.md) - The representation of Python operators in Nelson.
+- [Call Nelson from Python](5_call_nelson_from_python.md) - Use the Nelson Engine API for Python.
+- [Install Nelson Engine API for Python](6_install_nelson_engine_for_python.md) - Install the Python package that provides nelson.engine.
+- [py](py.md) - Python namespace proxy.
 - [pyargs](pyargs.md) - Change default environment of Python interpreter.
 - [pyenv](pyenv.md) - Change default environment of Python interpreter.
+- [pyfunction](pyfunction.md) - Wrap a Nelson function handle as a Python callable.
 - [pyrun](pyrun.md) - Run Python statements from Nelson.
 - [pyrunfile](pyrunfile.md) - Run Python file from Nelson.

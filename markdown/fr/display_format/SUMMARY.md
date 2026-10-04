@@ -1,4 +1,5 @@
 - [display_format](README.md)
+  - [nelson.display.DisplayFormatOptions](DisplayFormatOptions.md)
   - [disp](disp.md)
   - [display](display.md)
   - [echo](echo.md)

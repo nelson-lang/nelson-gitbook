@@ -12,10 +12,12 @@ Utilities are available to check for the existence of built-in, macro, or mex fu
 - [builtin](builtin.md) - Executes built-in function.
 - [clearfun](clearfun.md) - Clear an built-in function.
 - [feval](feval.md) - Evaluates function.
+- [import](import.md) - Import names from namespaces.
 - [inmem](inmem.md) - Names of functions, MEX-files.
 - [isbuiltin](isbuiltin.md) - Check for the existence of a builtin.
 - [ismacro](ismacro.md) - Check for the existence of a macro (function).
 - [ismex](ismex.md) - Check for the existence of a mex function.
+- [localfunctions](localfunctions.md) - Return handles to local functions in the current file.
 - [macroargs](macroargs.md) - Returns variables names of a function.
 - [path](path.md) - Modify or display Nelson’s load path.
 - [private functions](private_functions.md) - Private functions.

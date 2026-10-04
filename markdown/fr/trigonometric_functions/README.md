@@ -1,10 +1,10 @@
-# Fonctions trigonométriques
+# Fonctions trigonometriques
 
-Le module Fonctions Trigonométriques fournit un ensemble complet de fonctions pour effectuer des calculs trigonométriques dans Nelson.
+Le module Fonctions trigonometriques fournit les fonctions de base pour les calculs trigonometriques dans Nelson.
 
-Il inclut les fonctions trigonométriques standards telles que sinus, cosinus et tangente, ainsi que leurs inverses et leurs homologues hyperboliques. Le module prend en charge les mesures d'angle en degrés et en radians, permettant des calculs flexibles selon les préférences de l'utilisateur.
+Il inclut sinus, cosinus, tangente, leurs inverses et leurs variantes hyperboliques. Les fonctions acceptent des angles en degres ou en radians selon l'interface appelee.
 
-De plus, le module propose des fonctions utilitaires pour convertir entre degrés et radians, facilitant l'intégration des calculs trigonométriques dans diverses applications mathématiques et d'ingénierie.
+Il fournit aussi les conversions entre degres et radians.
 
 ## Functions
 
@@ -57,3 +57,7 @@ De plus, le module propose des fonctions utilitaires pour convertir entre degré
 - [tand](tand.md) - Calcule la tangente en degrés pour chaque élément de x.
 - [tanh](tanh.md) - Calcule la tangente hyperbolique en radians pour chaque élément de x.
 - [tanm](tanm.md) - Calcule la tangente matricielle d'une matrice carrée.
+- [wrapTo180](wrapTo180.md) - Ramene un angle en degres dans [-180, 180].
+- [wrapTo2Pi](wrapTo2Pi.md) - Ramene un angle en radians dans [0, 2*pi].
+- [wrapTo360](wrapTo360.md) - Ramene un angle en degres dans [0, 360].
+- [wrapToPi](wrapToPi.md) - Ramene un angle en radians dans [-pi, pi].

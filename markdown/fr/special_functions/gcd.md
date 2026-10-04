@@ -5,6 +5,7 @@ Plus grand commun diviseur
 ## 📝 Syntaxe
 
 - G = gcd(A, B)
+- [G, C, D] = gcd(A, B)
 
 ## 📥 Argument d'entrée
 
@@ -14,10 +15,13 @@ Plus grand commun diviseur
 ## 📤 Argument de sortie
 
 - G - résultat de la fonction gcd (Plus grand commun diviseur).
+- C, D - coefficients de Bezout tels que C .\* A + D .\* B == G.
 
 ## 📄 Description
 
 <b>G = gcd(A, B)</b> calcule le plus grand commun diviseur en utilisant l'algorithme euclidien.
+
+<b>[G, C, D] = gcd(A, B)</b> renvoie aussi les coefficients de Bezout <b>C</b> et <b>D</b> tels que <b>C .\* A + D .\* B == G</b>. Les entiers non signés ne sont pas pris en charge par cette syntaxe.
 
 ## 📚 Bibliographie
 

@@ -1,0 +1,55 @@
+# choix solveur EDO
+
+Choisir un solveur EDO.
+
+## 📄 Description
+
+Utilisez <b>ode45</b> d'abord pour les problemes non raides lisses. Utilisez <b>ode23</b> pour une precision moderee ou des essais rapides.
+
+| Type de probleme           | Premiers choix                                  | Notes                                                             |
+| -------------------------- | ----------------------------------------------- | ----------------------------------------------------------------- |
+| Non raide                  | **ode45**, **ode23**, **ode113**                | Point de depart pour les problemes de valeur initiale lisses.     |
+| Raide ou matrice de masse  | **ode15s**, **ode23s**, **ode23t**, **ode23tb** | Utiliser les options jacobien ou matrice de masse si disponibles. |
+| Totalement implicite       | **ode15i**, **idas** optionnel                  | Utiliser la forme residuelle **F(t,y,yp)=0**.                     |
+| Workflow objet automatique | **'auto'**, **'autoswitch'**                    | Selectionne ou bascule entre solveurs internes disponibles.       |
+
+Utilisez les entrees raides <b>ode15s</b>, <b>ode23s</b>, <b>ode23t</b> ou <b>ode23tb</b> quand la solution contient des modes rapides, une matrice de masse ou un jacobien utile. Ces entrees utilisent un noyau lineairement implicite leger inclus dans le module.
+
+Utilisez <b>ode15i</b> quand l'equation est ecrite comme un residu <b>F(t,y,yp)=0</b>.
+
+Quand Nelson est construit avec le backend optionnel SUNDIALS, <b>cvodesnonstiff</b> utilise CVODES Adams pour les problemes non raides, <b>cvodesstiff</b> utilise CVODES BDF pour les problemes raides ou avec matrice de masse, et <b>idas</b> utilise IDAS BDF pour les problemes residuels totalement implicites. Une demande explicite d'une de ces valeurs de solveur signale une erreur quand le backend n'est pas disponible. Si un <b>JPattern</b> creux est fourni et que la bibliotheque SPGMR est disponible, le backend utilise un solveur lineaire iteratif; sinon il utilise le solveur lineaire dense. Les matrices <b>JPattern</b> creuses et les valeurs <b>Jacobian</b> double creuses sont consommees directement par ce chemin de selection et de preconditionnement. Les objets d'options SUNDIALS peuvent aussi demander les valeurs <b>LinearSolver</b><b>'dense'</b>, <b>'spgmr'</b>, <b>'spfgmr'</b>, <b>'spbcgs'</b>, <b>'sptfqmr'</b>, <b>'pcg'</b> ou <b>'klu'</b>, et les valeurs <b>Preconditioner</b><b>'none'</b>, <b>'jacobi'</b>, <b>'banded'</b> ou <b>'ilu0'</b>. Le preconditionneur <b>'auto'</b> choisit <b>'jacobi'</b> pour les motifs creux diagonaux, <b>'banded'</b> pour les bandes etroites et <b>'ilu0'</b> pour les motifs creux plus larges. La valeur <b>'banded'</b> construit un preconditionneur par differences finies limite a une bande et utilise <b>JPattern</b> pour restreindre cette bande quand il est disponible. La valeur <b>'ilu0'</b> construit un preconditionneur LU incomplet compact sur le meme motif creux. La valeur <b>'klu'</b> est conditionnelle et n'est pas fournie par les binaires Windows actuels. Les stats SUNDIALS renseignent <b>linearSolver</b>, <b>preconditioner</b>, <b>sensitivityMethod</b>, <b>linearSetupCount</b>, <b>linearIterations</b>, <b>linearConvergenceFailures</b>, <b>preconditionerSetupCount</b> et <b>preconditionerSolveCount</b>.
+
+Le workflow objet actuel prend en charge les sensibilites directes avant, les gradients adjoints CVODES pour objectifs scalaires, les gradients adjoints IDAS natifs pour objectifs scalaires et les gradients adjoints scalaires projetes pour les equations avec retard. Les adjoints IDAS natifs indiquent <b>sensitivityBackend</b> avec la valeur <b>'idasAdjoint'</b>. Les equations avec retard prennent en charge les retards de valeur et de pente positifs, y compris les retards fonctions causaux; les retards dependants de l'etat recalculent des chunks internes de methode des pas depuis le retard courant et reessaient avec des chunks plus petits quand un chunk d'essai demande un historique futur. Les stats de retard indiquent le nombre de chunks via <b>nchunks</b>. Les residus avec retard totalement implicites sont pris en charge avec <b>ode15i</b> et, quand le backend optionnel est disponible, <b>idas</b>. <b>'autoswitch'</b> fonctionne dans la boucle de pas adaptative et peut basculer entre <b>ode45</b> et <b>ode15s</b> quand la pression de raideur apparait ou disparait, tout en conservant la sortie solution, les evenements et les statistiques. Les stats autoswitch incluent <b>autoSwitchInitialSolver</b>, <b>autoSwitchSelectedSolver</b>, <b>autoSwitchSwitched</b>, <b>autoSwitchReason</b>, <b>autoSwitchLastReason</b>, <b>autoSwitchMode</b>, <b>autoSwitchSwitchTime</b>, <b>autoSwitchSwitchCount</b>, <b>autoSwitchStiffnessIndicator</b>, <b>autoSwitchReleaseIndicator</b> et <b>autoSwitchStiffnessCriterion</b>.
+
+## 💡 Exemples
+
+Probleme non raide.
+
+```matlab
+options = odeset('RelTol', 1e-5);
+[t, y] = ode45(@(t,y) -y, [0 1], 1, options)
+```
+
+Probleme raide avec jacobien.
+
+```matlab
+f = @(t,y) -1000 * (y - cos(t)) - sin(t);
+options = odeset('Jacobian', -1000);
+[t, y] = ode23s(f, [0 0.5], 1, options)
+```
+
+## 🔗 Voir aussi
+
+[ode45](../ode_solvers/ode45.md), [ode23](../ode_solvers/ode23.md), [ode15s](../ode_solvers/ode15s.md), [ode15i](../ode_solvers/ode15i.md), [nelson.ode.options.CVODESNonstiff](../ode_solvers/nelson.ode.options.CVODESNonstiff.md), [nelson.ode.options.CVODESStiff](../ode_solvers/nelson.ode.options.CVODESStiff.md), [nelson.ode.options.IDAS](../ode_solvers/nelson.ode.options.IDAS.md).
+
+## 🕔 Historique
+
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 2.0.0   | version initiale |
+
+<!--
+## 👤 Auteur
+
+Allan CORNET
+-->

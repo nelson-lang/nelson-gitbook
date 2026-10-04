@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>modelicaToFmu</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">modelicaToFmu</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Compile un modèle Modelica en FMU avec OpenModelica.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">fmu = modelicaToFmu(model)
+fmu = modelicaToFmu(model, modelName)
+fmu = modelicaToFmu(model, modelName, name, value)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">model</td>
+<td>une chaîne : le chemin d'un fichier <b>.mo</b>, ou du code source Modelica en ligne.</td>
+</tr>
+<tr>
+<td class="param-name">modelName</td>
+<td>une chaîne : la classe Modelica à construire. Optionnel ; s'il est omis, c'est le nom de base du fichier <b>.mo</b> (entrée fichier) ou il est analysé depuis la première déclaration model / block / class / package (source en ligne).</td>
+</tr>
+<tr>
+<td class="param-name">name, value</td>
+<td>paires d'options : <b>'FmiVersion'</b> (<b>'2.0'</b> par défaut, ou <b>'3.0'</b>), <b>'FmuType'</b> (<b>'cs'</b> par défaut co-simulation, <b>'me'</b>, ou <b>'me_cs'</b>), <b>'Libraries'</b> (une chaîne ou un tableau de cellules de fichiers <b>.mo</b> supplémentaires à charger), <b>'Rebuild'</b> (<b>false</b> par défaut ; <b>true</b> ignore le cache).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">fmu</td>
+<td>le chemin du fichier <b>.fmu</b> produit.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>modelicaToFmu</b> compile un modèle Modelica en <b>unité de maquette fonctionnelle</b> (FMU) à l'aide d'un compilateur <b>OpenModelica</b> installé et renvoie le chemin de la <b>.fmu</b> produite. C'est la moitié « compilation » du pont Modelica de nflow : un bloc <b>modelica</b> l'appelle pour que la FMU résultante soit simulée via le chemin FMI de nflow.</p>
+    <p>Le résultat est mis en cache dans le répertoire temporaire, indexé par une empreinte de la source, du nom de modèle, de la version d'OpenModelica et des options FMU, de sorte qu'un modèle inchangé n'est compilé qu'une fois.</p>
+    <p>Pour qu'une variable Modelica devienne un port de sortie exploitable après import, déclarez-la <b>output</b> (par exemple <b>output Real vC;</b>) ; une variable ordinaire est exportée avec la causalité <b>local</b>.</p>
+    <p>Deux erreurs typées peuvent être levées. <b>Nelson:nflow_fmi:modelicaUnavailable</b> lorsqu'OpenModelica est absent ou incapable d'exporter une FMU (la construction est bloquée) ; vérifiez l'installation avec <b>modelicaInfo</b> et définissez-la avec <b>modelicaConfigure</b>. <b>Nelson:nflow_fmi:modelicaCompileFailed</b> lorsqu'<b>omc</b> s'est exécuté sans produire la FMU ; le message contient les diagnostics d'OpenModelica.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Compiler un modèle du premier ordre en ligne.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">src = sprintf('model FO\n  output Real x(start = 1.0);\nequation\n  der(x) = -x;\nend FO;\n');
+fmu = modelicaToFmu(src);
+info = fmiInfo(fmu)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Compiler un modèle depuis un fichier .mo.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">moFile = [modulepath('nflow_fmi'), '/examples/modelica/RLC.mo'];
+fmu = modelicaToFmu(moFile, 'RLC')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../nflow_fmi/modelicaInfo.html">modelicaInfo</a><a class="see-also-link" href="../nflow_fmi/modelicaConfigure.html">modelicaConfigure</a><a class="see-also-link" href="../nflow_fmi/fmiInfo.html">fmiInfo</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

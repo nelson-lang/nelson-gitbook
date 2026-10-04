@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>compiler_macos_installer_tutorial</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler_macos_installer_tutorial</span>, <span class="keyword-alias">compiler_macos_installer_tutorial</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Construire et empaqueter une application macOS native.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">compiler.package.installer(result, 'Options', options)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Ce tutoriel s'execute sous macOS avec les outils Apple en ligne de commande installes. Il construit une application graphique, cree un .pkg produit natif contenant son runtime minimal prive et verifie le contenu du paquet. Executer les blocs dans une meme session Nelson.</p>
+    <p>Ouvrir le .pkg genere depuis Finder pour une installation normale. La cible par defaut est /Applications/MacGraphDemo et peut demander une autorisation administrateur. Pour un test automatise, choisir un DefaultInstallationDir absolu isole et appeler /usr/sbin/installer avec une cible appropriee.</p>
+    <p>L'application graphique installee est un bundle .app. Son runtime prive contient les dylib, bundles de frameworks, plugins Qt de plateforme, images et icones ainsi que les ressources Nelson selectionnes. L'application n'a besoin ni de ses sources .m ni du module compiler a l'execution.</p>
+    <p>Le paquet produit ici n'est pas signe. Les signatures ad hoc locales des binaires reecrits ne remplacent pas une signature Developer ID Application ou Developer ID Installer. Une distribution hors de la machine locale requiert le processus Apple de signature et notarisation adapte ; ce tutoriel ne revendique pas une validation Gatekeeper.</p>
+    <p>Utiliser RuntimeDelivery='none' lorsqu'un runtime compatible est installe separement. compiler.runtime.customInstaller cree son .pkg de runtime partage natif. Le telechargement web automatique est indisponible.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Construire l'application</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ncc('--help');
+previousUserPath = userpath();
+restoreUserPath = onCleanup(@() userpath(previousUserPath));
+userpath('clear');
+work = fullfile(nelsonroot(), 'temp', 'compiler macOS tutorial');
+if ~isfolder(work); mkdir(work); end
+entry = fullfile(work, 'mac_graph_demo.m');
+filewrite(entry,[ ...
+'function mac_graph_demo()', newline(), ...
+'f = figure(''Name'',''Packaged Nelson graph'',''NumberTitle'',''off'');', newline(), ...
+'ax = axes(''Parent'',f); x = 0:0.1:2*pi;', newline(), ...
+'line(''Parent'',ax,''XData'',x,''YData'',sin(x));', newline(), ...
+'uicontrol(f,''Style'',''pushbutton'',''String'',''Close'',''Callback'',{@close_demo,f});', newline(), ...
+'end', newline(), ...
+'function close_demo(source,event,f); delete(f); end', newline()]);
+result = compiler.build.standaloneApplication(entry, ...
+  'OutputDir', fullfile(work, 'build'));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Creer et inspecter le paquet</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">options = compiler.package.InstallerOptions(result, ...
+  'ApplicationName', 'Mac Graph Demo', ...
+  'InstallerName', 'Mac Graph Demo', ...
+  'DefaultInstallationDir', '/Applications/MacGraphDemo', ...
+  'RuntimeDelivery', 'installer', ...
+  'OutputDir', fullfile(work, 'distribution'));
+compiler.package.installer(result, 'Options', options);
+package = fullfile(options.OutputDir, 'Mac Graph Demo.pkg');
+[status, listing] = system(['/usr/sbin/pkgutil --payload-files "', package, '"']);
+if status ~= 0 || ~contains(listing, '.app/Contents/MacOS')
+  error('Le bundle applicatif macOS manque dans le paquet.');
+end
+disp(package);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Creer le paquet du runtime partage</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">compiler.runtime.customInstaller('Mac Graph Runtime', result, ...
+  'RuntimeDelivery', 'installer', ...
+  'OutputDir', fullfile(work, 'runtime distribution'));
+runtimePackage = fullfile(work, 'runtime distribution', 'Mac Graph Runtime.pkg');
+asserts.istrue(isfile(runtimePackage));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../compiler/compiler.build.standaloneApplication.html">compiler.build.standaloneApplication</a><a class="see-also-link" href="../compiler/compiler.package.installer.html">compiler.package.installer</a><a class="see-also-link" href="../compiler/compiler.runtime.customInstaller.html">compiler.runtime.customInstaller</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

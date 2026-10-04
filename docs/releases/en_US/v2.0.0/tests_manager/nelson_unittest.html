@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nelson.unittest</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.unittest</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Modern test runner namespace</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">suite = nelson.unittest.discover(targets)
+suite = nelson.unittest.select(suite, Name, Value)
+plan = nelson.unittest.plan(suite, Name, Value)
+results = nelson.unittest.run(targets, Name, Value)
+results = nelson.unittest.run(plan, Name, Value)
+proposal = nelson.unittest.tuneWeights(results, Name, Value)
+proposal = nelson.unittest.tuneReuse(targets, Name, Value)
+status = nelson.unittest.report(results, Name, Value)
+nelson.unittest.assume(condition, reason)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">targets</td>
+<td>a module name, file name, directory, or cell array of targets.</td>
+</tr>
+<tr>
+<td class="param-name">Name, Value</td>
+<td>selection, planning, execution, and reporting options.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">suite</td>
+<td>a TestSuite structure containing discovered TestCase entries.</td>
+</tr>
+<tr>
+<td class="param-name">plan</td>
+<td>a TestPlan structure containing selected tests, shard information, workers, and
+        resource groups.</td>
+</tr>
+<tr>
+<td class="param-name">results</td>
+<td>a TestRunResult structure containing summary, normalized cases, registry information,
+        and raw compatibility data.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>The <b>nelson.unittest</b> namespace provides the modern test runner API.</p>
+    <p>The runner separates discovery, selection, planning, execution, and reporting while preserving
+      compatibility wrappers such as <b>test_run</b>, <b>test_makeref</b>, and <b>skip_testsuite</b>.</p>
+    <p><b>test_run</b>, <b>test_makeref</b>, and <b>skip_testsuite</b> are compatibility entry points
+      implemented on top of this namespace.</p>
+    <p>Runner internals are private implementation details and are not part of the user API.</p>
+    <p>Each test and bench is executed in a child process supervised by the runner. There is no in-process
+      execution mode for tests or benches.</p>
+    <p>The native process supervisor captures output, applies timeouts, and returns diagnostics such as
+      command, process id, timeout, reason, and job id.</p>
+    <p>Normalized cases expose these native details in <b>results.cases(k).diagnostics</b>. The diagnostics
+      structure contains <b>kind</b>, <b>index</b>, <b>metadata</b>, <b>job_id</b>, <b>pid</b>,
+      <b>timeout</b>, <b>reason</b>, <b>executable</b>, and <b>process_arguments</b>.</p>
+    <p>Supported selection options include <b>Name</b>, <b>Module</b>, <b>File</b>, <b>Kind</b>, <b>Tags</b>,
+      <b>ExcludeTags</b>, <b>Match</b>, and <b>Exclude</b>.</p>
+    <p><b>Kind</b> accepts <b>test</b>, <b>bug</b>, <b>bench</b>, <b>all_tests</b>, and <b>all</b>.</p>
+    <p>Supported execution options include <b>Workers</b>, <b>Timeout</b>, <b>StopOnFail</b>, <b>Retry</b>,
+      <b>RetryOnlyOn</b>, <b>Shuffle</b>, <b>Seed</b>, <b>ShardIndex</b>, and <b>ShardCount</b>.</p>
+    <p>Process reuse is explicit. Test and bench files without the <b>&lt;--REUSE PROCESS--&gt;</b> tag run in
+      separated child processes. Tagged files can reuse the same child process when their mode and resources
+      allow it.</p>
+    <p>The native supervisor schedules files through a dynamic weighted queue. Use
+      <b>&lt;--WEIGHT N--&gt;</b> for an explicit positive scheduling weight.</p>
+    <p><b>nelson.unittest.tuneWeights</b> can derive and explicitly apply these source-controlled weights from
+      a TestRunResult. It does not use a duration cache and performs a dry run by default.</p>
+    <p><b>nelson.unittest.tuneReuse</b> can audit existing reuse tags or explicitly propose additions. It uses
+      isolated and reused native campaigns with deterministic orders, does not use a cache, and performs a dry
+      run by default.</p>
+    <p>If a tagged reusable worker crashes or returns no result, the runner retries the affected file once
+      with the isolated fallback path. Timeouts are reported directly.</p>
+    <p>Discovery always reads current file metadata and tags. Test results are progressively displayed in a
+      stable order with an elapsed time on every line.</p>
+    <p><b>LogDir</b> writes one JSON log file per normalized test case when requested.</p>
+    <p>Supported report formats are <b>console</b>, <b>json</b>, <b>junit</b>, <b>tap</b>, and <b>html</b>.
+      JUnit output is XML, TAP output follows TAP13, and HTML output is a standalone single-file report.</p>
+    <p>HTML reports include slowest case and module summaries, sortable case tables, quick filters, reproduction
+      commands, embedded JSON data, and a JSON sidecar next to the HTML file.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">suite = nelson.unittest.discover('string', 'Kind', 'all_tests');
+suite = nelson.unittest.select(suite, 'Match', 'strfind');
+plan = nelson.unittest.plan(suite, 'Workers', 1);
+results = nelson.unittest.run(plan, 'Format', 'json', 'OutputFile', [tempdir(), 'tests.json']);
+proposal = nelson.unittest.tuneWeights(results);
+reuseProposal = nelson.unittest.tuneReuse('string');
+nelson.unittest.report(results, 'Format', 'tap', 'OutputFile', [tempdir(), 'tests.tap']);
+nelson.unittest.report(results, 'Format', 'html', 'OutputFile', [tempdir(), 'tests.html']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../tests_manager/test_run.html">test_run</a><a class="see-also-link" href="../tests_manager/test_makeref.html">test_makeref</a><a class="see-also-link" href="../tests_manager/skip_testsuite.html">skip_testsuite</a><a class="see-also-link" href="../tests_manager/nelson.unittest.tuneWeights.html">nelson.unittest.tuneWeights</a><a class="see-also-link" href="../tests_manager/nelson.unittest.tuneReuse.html">nelson.unittest.tuneReuse</a>
+</div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

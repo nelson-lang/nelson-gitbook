@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>tf</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">tf</span></div></div>
+<div class="section" style="text-align:center;"><img src="./tf.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Implemente une approximation de fonction de transfert continue.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Block type: tf
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">input ports</td>
+<td>1 port(s) d entree declare(s).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">output ports</td>
+<td>1 port(s) de sortie declare(s).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Implemente une approximation de fonction de transfert continue.</p>
+    <table border="1">
+      
+        <tr>
+          <td>Module</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Bibliotheque</td>
+          <td>Blocs continus</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">tf</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Libelle</td>
+          <td>Transfer Fn</td>
+        </tr>
+      
+    </table>
+    
+    <p>
+      <b>Description</b>
+    </p>
+    <p>Implemente une approximation de fonction de transfert continue.</p>
+    <p>
+      <b>Ports</b>
+    </p>
+    <p>
+      <b>Entree(s)</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Port</th>
+          <th>Role</th>
+          <th>Cote</th>
+          <th>Position</th>
+        </tr>
+      
+      
+        <tr>
+          <td>Port_1</td>
+          <td>Signal numerique lu par le bloc.</td>
+          <td>left</td>
+          <td>x=0, y=40</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Sortie(s)</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Port</th>
+          <th>Role</th>
+          <th>Cote</th>
+          <th>Position</th>
+        </tr>
+      
+      
+        <tr>
+          <td>Port_1</td>
+          <td>Signal numerique produit par le bloc.</td>
+          <td>right</td>
+          <td>x=85, y=40</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Parametres</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Parametre</th>
+          <th>Valeur par defaut</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">num</code>
+          </td>
+          <td>[3]</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">den</code>
+          </td>
+          <td>[1, 3]</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Cles de l inspecteur</b>
+    </p>
+    <p>Ces cles serialisees sont exposees par l inspecteur du bloc.</p>
+    <ul>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">num</code>
+      </li>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">den</code>
+      </li>
+    </ul>
+    <p>
+      <b>Caracteristiques du bloc</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <td>Type de bloc</td>
+          <td>tf</td>
+        </tr>
+        <tr>
+          <td>Famille</td>
+          <td>Blocs continus</td>
+        </tr>
+        <tr>
+          <td>Taille graphique</td>
+          <td>85 x 80</td>
+        </tr>
+        <tr>
+          <td>Phases</td>
+          <td>INIT, OUTPUT, ALGEBRAIC, UPDATE</td>
+        </tr>
+        <tr>
+          <td>Traversee directe</td>
+          <td>oui</td>
+        </tr>
+        <tr>
+          <td>Etat ou historique interne</td>
+          <td>oui</td>
+        </tr>
+        <tr>
+          <td>Type de donnees signaux</td>
+          <td>valeurs numeriques double</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Algorithmes</b>
+    </p>
+    <ul>
+      <li>INIT normalise les coefficients et efface les historiques.</li>
+      <li>OUTPUT emet la sortie directe/memorisee; ALGEBRAIC est present pour la resolution avec transmission directe.</li>
+      <li>UPDATE avance les historiques internes avec l entree et dt.</li>
+    </ul>
+    <p>
+      <b>Equation ou regle</b>
+    </p>
+    <span class="math display">$$y \approx \frac{num(s)}{den(s)}\,u$$</span>
+    <p>
+      <b>Capacites et limites</b>
+    </p>
+    <p>La page decrit le comportement runtime natif observe dans les sources C++ du module. Les phases declarees indiquent quand le moteur de simulation appelle le bloc.</p>
+    <p>Generation de code : prise en charge pour C et Rust.</p>
+    <p>
+      <b>Sources d implementation</b>
+    </p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/continuous/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.continuous",
+  "title": "Continuous",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Blocks for continuous-time systems",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "integrator",
+      "label": "Integrator",
+      "icon": "integrator.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0,
+        "ExternalReset": "none",
+        "InitialConditionSource": "internal",
+        "LowerSaturationLimit": "-inf",
+        "UpperSaturationLimit": "inf"
+      },
+      "render": {
+        "type": "math",
+        "useRectElement": true,
+        "bodyClass": "block-body integrator-body",
+        "mathGroupClass": "integrator-math",
+        "formula": "\\frac{1}{s}"
+      }
+    },
+    {
+      "type": "tf",
+      "label": "Transfer Fn",
+      "icon": "tf.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "ALGEBRAIC",
+        "UPDATE"
+      ],
+      "width": 85,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 85,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Numerator": [
+          3
+        ],
+        "Denominator": [
+          1,
+          3
+        ]
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "tf-math",
+        "formula": "\\frac{N(s)}{D(s)}"
+      }
+    },
+    {
+      "type": "delay",
+      "label": "Delay",
+      "icon": "delay.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DelayTime": 0.1
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "delay-math",
+        "formula": "e^{-sT}"
+      }
+    },
+    {
+      "type": "stateSpace",
+      "label": "State-Space",
+      "icon": "stateSpace.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 160,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 160,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "state-space-math",
+        "formula": "\\dot{x}=Ax+Bu",
+        "textSize": "16px"
+      }
+    },
+    {
+      "type": "lpf",
+      "label": "LPF",
+      "icon": "lpf.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Cutoff": 1
+      },
+      "render": {
+        "src": "lpf.svg",
+        "type": "image"
+      }
+    },
+    {
+      "type": "hpf",
+      "label": "HPF",
+      "icon": "hpf.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Cutoff": 1
+      },
+      "render": {
+        "src": "hpf.svg",
+        "type": "image"
+      }
+    },
+    {
+      "type": "derivative",
+      "label": "Derivative",
+      "icon": "derivative.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {},
+      "render": {
+        "type": "math",
+        "useRectElement": true,
+        "bodyClass": "block-body",
+        "mathGroupClass": "derivative-math",
+        "formula": "\\frac{d}{dt}"
+      }
+    },
+    {
+      "type": "pid",
+      "label": "PID",
+      "icon": "pid.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "P": 1,
+        "I": 0,
+        "D": 0,
+        "N": 0,
+        "LowerSaturationLimit": "-inf",
+        "UpperSaturationLimit": "inf"
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "pid-math",
+        "formula": "\\mathsf{PID}"
+      }
+    },
+    {
+      "type": "constraint",
+      "label": "Constraint",
+      "icon": "constraint.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "DERIVATIVE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "constraint-math",
+        "formula": "g=0"
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/continuous/tf.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include "NFlowCodegenPolynomial.hpp"
+#include "NFlowCodegenHelpers.hpp"
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include "continuous_blocks.hpp"
+//=============================================================================
+bool
+Nelson::NFlow::handleTf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    auto&amp; st = getState(ctx, b.nid);
+    const int w = std::max(1, outputWidth(ctx, b.nid, 0));
+    // Vector tf: each element is an independent SISO transfer function with the
+    // SAME numerator/denominator. st.xHist (A_last row) and st.yHist (C vector)
+    // have length n and are shared; st.tfState is a flat [w * n] state array,
+    // element e occupying [e*n, e*n+n).
+    if (phase == Phase::INIT) {
+        int n = 0;
+        std::vector&lt;double&gt; state1;
+        bool ok = buildTfState(b.params.value(nflow::kNum, json::array()),
+            b.params.value(nflow::kDen, json::array()), st.xHist, st.yHist, st.tfD, state1, n,
+            ctx.variables);
+        if (!ok) {
+            st.tfState.clear();
+            st.xHist.clear();
+            st.yHist.clear();
+            st.tfD = 0.0;
+        } else {
+            st.tfState.assign((size_t)n * w, 0.0); // n==0 -&gt; empty (pure gain)
+        }
+        st.output = 0.0;
+        return false;
+    }
+    const int n = (int)st.xHist.size(); // per-element state order
+
+    if (phase == Phase::OUTPUT) {
+        SigView u = getInputSig(ctx, b.nid, 0);
+        double* xs = blockX(ctx, b.nid);
+        double* y = outputSlice(ctx, b.nid, 0);
+        std::vector&lt;double&gt; x(std::max(1, n));
+        for (int e = 0; e &lt; w; ++e) {
+            const double inp = sigAt(u, e);
+            if (n == 0) {
+                y[e] = st.tfD * inp;
+                continue;
+            }
+            const double* src = xs ? (xs + (size_t)e * n) : (st.tfState.data() + (size_t)e * n);
+            for (int i = 0; i &lt; n; ++i) {
+                x[i] = src[i];
+            }
+            x.resize(n);
+            y[e] = tfOutput(st.yHist, x, st.tfD, inp);
+        }
+        return false;
+    }
+    if (phase == Phase::ALGEBRAIC) {
+        if (n != 0) {
+            return false; // has state: handled in OUTPUT/UPDATE
+        }
+        // Pure gain (n == 0): element-wise D*u.
+        SigView u = getInputSig(ctx, b.nid, 0);
+        return emitElementwise(ctx, b.nid, [&amp;](int e) { return st.tfD * sigAt(u, e); });
+    }
+    if (phase == Phase::UPDATE) {
+        if (n == 0) {
+            return false;
+        }
+        SigView u = getInputSig(ctx, b.nid, 0);
+        std::vector&lt;double&gt; slice(n);
+        for (int e = 0; e &lt; w; ++e) {
+            double* base = st.tfState.data() + (size_t)e * n;
+            for (int i = 0; i &lt; n; ++i) {
+                slice[i] = base[i];
+            }
+            std::vector&lt;double&gt; next = tfRK4(st.xHist, slice, sigAt(u, e), ctx.dt);
+            for (int i = 0; i &lt; n &amp;&amp; i &lt; (int)next.size(); ++i) {
+                base[i] = next[i];
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::DERIVATIVE) {
+        // Controller-canonical-form derivative; st.xHist holds the companion
+        // last row. Shares tfDerivative() with tfRK4 so the two cannot drift.
+        double* xdot = blockXdot(ctx, b.nid);
+        if (xdot &amp;&amp; n != 0) {
+            double* xs = blockX(ctx, b.nid);
+            SigView u = getInputSig(ctx, b.nid, 0);
+            std::vector&lt;double&gt; x(n), dx;
+            for (int e = 0; e &lt; w; ++e) {
+                const double* src = xs ? (xs + (size_t)e * n) : (st.tfState.data() + (size_t)e * n);
+                for (int i = 0; i &lt; n; ++i) {
+                    x[i] = src[i];
+                }
+                tfDerivative(st.xHist, x, sigAt(u, e), dx);
+                for (int i = 0; i &lt; n &amp;&amp; i &lt; (int)dx.size(); ++i) {
+                    xdot[(size_t)e * n + i] = dx[i];
+                }
+            }
+        }
+        return false;
+    }
+    return false;
+}
+//=============================================================================
+// Continuous state order n of a transfer function: (trimmed denominator degree).
+// n == 0 is a pure algebraic gain (y = D*u, no state). Shared by the RK4 codegen
+// layout (roadmap 5.3) so it agrees with the companion form built in emitShared.
+static int
+tfStateOrder(const std::vector&lt;double&gt;&amp; denIn)
+{
+    std::vector&lt;double&gt; den = denIn.empty() ? std::vector&lt;double&gt; { 1.0 } : denIn;
+    size_t i = 0;
+    while (i + 1 &lt; den.size() &amp;&amp; std::abs(den[i]) &lt; 1e-12) {
+        ++i;
+    }
+    int n = static_cast&lt;int&gt;(den.size() - i) - 1;
+    return n &lt;= 0 ? 0 : n;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCTf()
+{
+    BlockCodegenTemplate t;
+    t.sharedPriority = 1;
+    t.emitState = [](const BlockCodegenStateArgs&amp; a) {
+        a.declState("double tf_" + a.id + "[MAX_DIM];");
+        a.addInit("  for (int i = 0; i &lt; MAX_DIM; i++) s-&gt;tf_" + a.id + "[i] = 0.0;");
+    };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        a.line("out_" + a.id + " = tf_step(&amp;tf_params_" + a.id + ", s-&gt;tf_" + a.id + ", " + a.in[0]
+            + ", dt);");
+    };
+    // Unified variable-step codegen (roadmap 5.3): a tf contributes n continuous
+    // states (companion form). n == 0 is a pure gain (algebraic, no state): safe
+    // to keep its emitStep in the rhs() body, so report 0, not a fallback.
+    t.continuousWidth = [](const BlockCodegenArgs&amp; a) -&gt; int {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        return tfStateOrder(bd.paramList(nflow::kDen));
+    };
+    // Output y = D*u + C.x and derivative x' = A_companion.x + B.u, reusing the
+    // shared tf_out / tf_deriv helpers over the scattered state s-&gt;tf_&lt;id&gt;.
+    t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const int n = tfStateOrder(bd.paramList(nflow::kDen));
+        const std::string off = std::to_string(a.stateOffset);
+        const std::string nStr = std::to_string(n);
+        switch (a.rk4Op) {
+        case Rk4Gather:
+            a.line("for (int __i = 0; __i &lt; " + nStr + "; ++__i) " + a.rk4Arr + "[" + off
+                + " + __i] = s-&gt;tf_" + a.id + "[__i];");
+            break;
+        case Rk4Scatter:
+            a.line("for (int __i = 0; __i &lt; " + nStr + "; ++__i) s-&gt;tf_" + a.id
+                + "[__i] = " + a.rk4Arr + "[" + off + " + __i];");
+            break;
+        case Rk4Output:
+            a.line("out_" + a.id + " = tf_out(&amp;tf_params_" + a.id + ", s-&gt;tf_" + a.id + ", "
+                + a.in[0] + ");");
+            break;
+        case Rk4Deriv:
+            a.line("tf_deriv(tf_params_" + a.id + ".n, tf_params_" + a.id + ".A, s-&gt;tf_" + a.id
+                + ", " + a.in[0] + ", &amp;" + a.rk4Arr + "[" + off + "]);");
+            break;
+        default:
+            break;
+        }
+    };
+    t.emitShared = [](const BlockCodegenStateArgs&amp; a) {
+        // Companion-form RK4 stepper matching the interpreter (y = D*u + C.x,
+        // then classical RK4 on x' = A_companion.x + B.u). Replaces the former
+        // Tustin direct-form discretization so generated code and interactive
+        // simulation agree numerically.
+        auto companion = [](const std::vector&lt;double&gt;&amp; numIn, const std::vector&lt;double&gt;&amp; denIn,
+                             int&amp; n, double&amp; D, std::vector&lt;double&gt;&amp; C, std::vector&lt;double&gt;&amp; A) {
+            auto trim = [](std::vector&lt;double&gt; v) {
+                size_t i = 0;
+                while (i + 1 &lt; v.size() &amp;&amp; std::abs(v[i]) &lt; 1e-12) {
+                    ++i;
+                }
+                return std::vector&lt;double&gt;(v.begin() + i, v.end());
+            };
+            std::vector&lt;double&gt; num = trim(numIn.empty() ? std::vector&lt;double&gt; { 0.0 } : numIn);
+            std::vector&lt;double&gt; den = trim(denIn.empty() ? std::vector&lt;double&gt; { 1.0 } : denIn);
+            double a0 = den[0];
+            for (double&amp; v : den) {
+                v /= a0;
+            }
+            for (double&amp; v : num) {
+                v /= a0;
+            }
+            n = static_cast&lt;int&gt;(den.size()) - 1;
+            if (n &lt;= 0) {
+                n = 0;
+                D = num.empty() ? 0.0 : num[0];
+                C.clear();
+                A.clear();
+                return;
+            }
+            while (static_cast&lt;int&gt;(num.size()) &lt; n + 1) {
+                num.insert(num.begin(), 0.0);
+            }
+            std::vector&lt;double&gt; aTail(den.begin() + 1, den.end());
+            D = num[0];
+            C.assign(n, 0.0);
+            for (int i = 0; i &lt; n; ++i) {
+                C[n - 1 - i] = num[i + 1] - aTail[i] * D;
+            }
+            A.assign(n, 0.0);
+            for (int j = 0; j &lt; n; ++j) {
+                A[j] = -aTail[n - 1 - j];
+            }
+        };
+
+        int maxTfOrder = 1;
+        for (const auto&amp; b : *a.allBlocks) {
+            if (nflow::jstr(b, nflow::kType) != "tf") {
+                continue;
+            }
+            nflow::BlockDescriptor tbd(b, *a.variables);
+            int tn = 0;
+            double tD = 0.0;
+            std::vector&lt;double&gt; tC, tA;
+            companion(tbd.paramList(nflow::kNum), tbd.paramList(nflow::kDen), tn, tD, tC, tA);
+            maxTfOrder = std::max(maxTfOrder, tn);
+        }
+        if (a.once("tf:typedefs")) {
+            a.addConst("#define MAX_DIM " + std::to_string(maxTfOrder));
+            a.addConst("typedef struct { int n; double D; double C[MAX_DIM]; double A[MAX_DIM]; } "
+                       "TfParams;");
+            a.addHelper("static void tf_deriv(int n, const double* A, const double* x, double u, "
+                        "double* dx) {");
+            a.addHelper("  for (int i = 0; i &lt; n - 1; i++) dx[i] = x[i + 1];");
+            a.addHelper("  double last = u;");
+            a.addHelper("  for (int j = 0; j &lt; n; j++) last += A[j] * x[j];");
+            a.addHelper("  dx[n - 1] = last;");
+            a.addHelper("}");
+            // Output-only y = D*u + C.x (no state advance): used by the unified
+            // RK4 rhs() so the global stepper owns the integration.
+            a.addHelper("static double tf_out(const TfParams* p, const double* x, double u) {");
+            a.addHelper("  double y = p-&gt;D * u;");
+            a.addHelper("  for (int i = 0; i &lt; p-&gt;n; i++) y += p-&gt;C[i] * x[i];");
+            a.addHelper("  return y;");
+            a.addHelper("}");
+            a.addHelper(
+                "static double tf_step(const TfParams* p, double* x, double u, double dt) {");
+            a.addHelper("  const int n = p-&gt;n;");
+            a.addHelper("  double y = p-&gt;D * u;");
+            a.addHelper("  for (int i = 0; i &lt; n; i++) y += p-&gt;C[i] * x[i];");
+            a.addHelper("  if (n &gt; 0) {");
+            a.addHelper(
+                "    double k1[MAX_DIM], k2[MAX_DIM], k3[MAX_DIM], k4[MAX_DIM], tmp[MAX_DIM];");
+            a.addHelper("    tf_deriv(n, p-&gt;A, x, u, k1);");
+            a.addHelper("    for (int i = 0; i &lt; n; i++) tmp[i] = x[i] + 0.5 * dt * k1[i];");
+            a.addHelper("    tf_deriv(n, p-&gt;A, tmp, u, k2);");
+            a.addHelper("    for (int i = 0; i &lt; n; i++) tmp[i] = x[i] + 0.5 * dt * k2[i];");
+            a.addHelper("    tf_deriv(n, p-&gt;A, tmp, u, k3);");
+            a.addHelper("    for (int i = 0; i &lt; n; i++) tmp[i] = x[i] + dt * k3[i];");
+            a.addHelper("    tf_deriv(n, p-&gt;A, tmp, u, k4);");
+            a.addHelper("    for (int i = 0; i &lt; n; i++)");
+            a.addHelper("      x[i] += (dt / 6.0) * (k1[i] + 2.0 * k2[i] + 2.0 * k3[i] + k4[i]);");
+            a.addHelper("  }");
+            a.addHelper("  return y;");
+            a.addHelper("}");
+            a.addHelper("");
+        }
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        int n = 0;
+        double D = 0.0;
+        std::vector&lt;double&gt; C, A;
+        companion(bd.paramList(nflow::kNum), bd.paramList(nflow::kDen), n, D, C, A);
+        std::vector&lt;double&gt; cPad(maxTfOrder, 0.0), aPad(maxTfOrder, 0.0);
+        for (int i = 0; i &lt; n; ++i) {
+            cPad[i] = C[i];
+            aPad[i] = A[i];
+        }
+        std::string cStr, aStr;
+        for (int i = 0; i &lt; maxTfOrder; ++i) {
+            if (i &gt; 0) {
+                cStr += ", ";
+                aStr += ", ";
+            }
+            cStr += a.fmt(cPad[i]);
+            aStr += a.fmt(aPad[i]);
+        }
+        a.addConst("static const TfParams tf_params_" + a.id + " = { " + std::to_string(n) + ", "
+            + a.fmt(D) + ", {" + cStr + "}, {" + aStr + "} };");
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustTf()
+{
+    BlockCodegenTemplate t;
+    t.sharedPriority = 1;
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        std::string cu = a.id;
+        for (auto&amp; c : cu) {
+            c = static_cast&lt;char&gt;(std::toupper(static_cast&lt;unsigned char&gt;(c)));
+        }
+        a.line("out_" + a.id + " = tf_step(TF_N_" + cu + ", TF_D_" + cu + ", &amp;TF_C_" + cu
+            + ", &amp;TF_A_" + cu + ", &amp;mut s.tf_x_" + a.id + ", " + a.in[0] + ", dt);");
+    };
+    // Unified variable-step codegen (roadmap 5.3), Rust backend: n companion
+    // states integrated through the shared rhs (tf_out / tf_deriv). n == 0 is a
+    // pure algebraic gain (no state).
+    t.continuousWidth = [](const BlockCodegenArgs&amp; a) -&gt; int {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        return tfStateOrder(bd.paramList(nflow::kDen));
+    };
+    t.emitRk4 = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        const int n = tfStateOrder(bd.paramList(nflow::kDen));
+        std::string cu = a.id;
+        for (auto&amp; c : cu) {
+            c = static_cast&lt;char&gt;(std::toupper(static_cast&lt;unsigned char&gt;(c)));
+        }
+        const std::string off = std::to_string(a.stateOffset);
+        const std::string nc = "TF_N_" + cu;
+        switch (a.rk4Op) {
+        case Rk4Gather:
+            a.line("for __i in 0.." + nc + " { " + a.rk4Arr + "[" + off + " + __i] = s.tf_x_" + a.id
+                + "[__i]; }");
+            break;
+        case Rk4Scatter:
+            a.line("for __i in 0.." + nc + " { s.tf_x_" + a.id + "[__i] = " + a.rk4Arr + "[" + off
+                + " + __i]; }");
+            break;
+        case Rk4Output:
+            a.line("out_" + a.id + " = tf_out(" + nc + ", TF_D_" + cu + ", &amp;TF_C_" + cu
+                + ", &amp;s.tf_x_" + a.id + ", " + a.in[0] + ");");
+            break;
+        case Rk4Deriv:
+            a.line("tf_deriv(" + nc + ", &amp;TF_A_" + cu + ", &amp;s.tf_x_" + a.id + ", " + a.in[0]
+                + ", &amp;mut " + a.rk4Arr + "[" + off + "..(" + off + " + " + nc + ")]);");
+            break;
+        default:
+            break;
+        }
+        (void)n;
+    };
+    t.emitShared = [](const BlockCodegenStateArgs&amp; a) {
+        // Companion-form RK4, matching the interpreter (see the C generator).
+        auto companion = [](const std::vector&lt;double&gt;&amp; numIn, const std::vector&lt;double&gt;&amp; denIn,
+                             int&amp; n, double&amp; D, std::vector&lt;double&gt;&amp; C, std::vector&lt;double&gt;&amp; A) {
+            auto trim = [](std::vector&lt;double&gt; v) {
+                size_t i = 0;
+                while (i + 1 &lt; v.size() &amp;&amp; std::abs(v[i]) &lt; 1e-12) {
+                    ++i;
+                }
+                return std::vector&lt;double&gt;(v.begin() + i, v.end());
+            };
+            std::vector&lt;double&gt; num = trim(numIn.empty() ? std::vector&lt;double&gt; { 0.0 } : numIn);
+            std::vector&lt;double&gt; den = trim(denIn.empty() ? std::vector&lt;double&gt; { 1.0 } : denIn);
+            double a0 = den[0];
+            for (double&amp; v : den) {
+                v /= a0;
+            }
+            for (double&amp; v : num) {
+                v /= a0;
+            }
+            n = static_cast&lt;int&gt;(den.size()) - 1;
+            if (n &lt;= 0) {
+                n = 0;
+                D = num.empty() ? 0.0 : num[0];
+                C.clear();
+                A.clear();
+                return;
+            }
+            while (static_cast&lt;int&gt;(num.size()) &lt; n + 1) {
+                num.insert(num.begin(), 0.0);
+            }
+            std::vector&lt;double&gt; aTail(den.begin() + 1, den.end());
+            D = num[0];
+            C.assign(n, 0.0);
+            for (int i = 0; i &lt; n; ++i) {
+                C[n - 1 - i] = num[i + 1] - aTail[i] * D;
+            }
+            A.assign(n, 0.0);
+            for (int j = 0; j &lt; n; ++j) {
+                A[j] = -aTail[n - 1 - j];
+            }
+        };
+
+        int maxTfOrder = 1;
+        for (const auto&amp; b : *a.allBlocks) {
+            if (nflow::jstr(b, nflow::kType) != "tf") {
+                continue;
+            }
+            nflow::BlockDescriptor tbd(b, *a.variables);
+            int tn = 0;
+            double tD = 0.0;
+            std::vector&lt;double&gt; tC, tA;
+            companion(tbd.paramList(nflow::kNum), tbd.paramList(nflow::kDen), tn, tD, tC, tA);
+            maxTfOrder = std::max(maxTfOrder, tn);
+        }
+        a.declState("    pub tf_x_" + a.id + ": [f64; " + std::to_string(maxTfOrder) + "],");
+        a.addInit(
+            "    s.tf_x_" + a.id + " = [" + a.fmt(0.0) + "; " + std::to_string(maxTfOrder) + "];");
+
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        int n = 0;
+        double D = 0.0;
+        std::vector&lt;double&gt; C, A;
+        companion(bd.paramList(nflow::kNum), bd.paramList(nflow::kDen), n, D, C, A);
+        std::vector&lt;double&gt; cPad(maxTfOrder, 0.0), aPad(maxTfOrder, 0.0);
+        for (int i = 0; i &lt; n; ++i) {
+            cPad[i] = C[i];
+            aPad[i] = A[i];
+        }
+        std::string cStr, aStr;
+        for (int i = 0; i &lt; maxTfOrder; ++i) {
+            if (i &gt; 0) {
+                cStr += ", ";
+                aStr += ", ";
+            }
+            cStr += a.fmt(cPad[i]);
+            aStr += a.fmt(aPad[i]);
+        }
+        std::string cu = a.id;
+        for (auto&amp; c : cu) {
+            c = static_cast&lt;char&gt;(std::toupper(static_cast&lt;unsigned char&gt;(c)));
+        }
+        a.addConst("const TF_N_" + cu + ": usize = " + std::to_string(n) + ";");
+        a.addConst("const TF_D_" + cu + ": f64 = " + a.fmt(D) + ";");
+        a.addConst(
+            "const TF_C_" + cu + ": [f64; " + std::to_string(maxTfOrder) + "] = [" + cStr + "];");
+        a.addConst(
+            "const TF_A_" + cu + ": [f64; " + std::to_string(maxTfOrder) + "] = [" + aStr + "];");
+        if (a.once("tf:helper")) {
+            a.addHelper("fn tf_deriv(n: usize, a: &amp;[f64], x: &amp;[f64], u: f64, dx: &amp;mut [f64]) {");
+            a.addHelper("    if n &gt; 0 { for i in 0..n - 1 { dx[i] = x[i + 1]; } }");
+            a.addHelper("    let mut last = u;");
+            a.addHelper("    for j in 0..n { last += a[j] * x[j]; }");
+            a.addHelper("    if n &gt; 0 { dx[n - 1] = last; }");
+            a.addHelper("}");
+            // Output-only y = D*u + C.x for the unified RK4 rhs (no state advance).
+            a.addHelper("#[allow(dead_code)]");
+            a.addHelper("fn tf_out(n: usize, d: f64, c: &amp;[f64], x: &amp;[f64], u: f64) -&gt; f64 {");
+            a.addHelper("    let mut y = d * u;");
+            a.addHelper("    for i in 0..n { y += c[i] * x[i]; }");
+            a.addHelper("    y");
+            a.addHelper("}");
+            a.addHelper("#[allow(clippy::too_many_arguments)]");
+            a.addHelper("fn tf_step(n: usize, d: f64, c: &amp;[f64], a: &amp;[f64],");
+            a.addHelper("           x: &amp;mut [f64], u: f64, dt: f64) -&gt; f64 {");
+            a.addHelper("    let mut y = d * u;");
+            a.addHelper("    for i in 0..n { y += c[i] * x[i]; }");
+            a.addHelper("    if n &gt; 0 {");
+            a.addHelper("        let (mut k1, mut k2) = ([0.0_f64; " + std::to_string(maxTfOrder)
+                + "], [0.0_f64; " + std::to_string(maxTfOrder) + "]);");
+            a.addHelper("        let (mut k3, mut k4) = ([0.0_f64; " + std::to_string(maxTfOrder)
+                + "], [0.0_f64; " + std::to_string(maxTfOrder) + "]);");
+            a.addHelper("        let mut tmp = [0.0_f64; " + std::to_string(maxTfOrder) + "];");
+            a.addHelper("        tf_deriv(n, a, x, u, &amp;mut k1);");
+            a.addHelper("        for i in 0..n { tmp[i] = x[i] + 0.5 * dt * k1[i]; }");
+            a.addHelper("        tf_deriv(n, a, &amp;tmp, u, &amp;mut k2);");
+            a.addHelper("        for i in 0..n { tmp[i] = x[i] + 0.5 * dt * k2[i]; }");
+            a.addHelper("        tf_deriv(n, a, &amp;tmp, u, &amp;mut k3);");
+            a.addHelper("        for i in 0..n { tmp[i] = x[i] + dt * k3[i]; }");
+            a.addHelper("        tf_deriv(n, a, &amp;tmp, u, &amp;mut k4);");
+            a.addHelper("        for i in 0..n { x[i] += (dt / 6.0) * (k1[i] + 2.0 * k2[i] + 2.0 * "
+                        "k3[i] + k4[i]); }");
+            a.addHelper("    }");
+            a.addHelper("    y");
+            a.addHelper("}");
+            a.addHelper("");
+        }
+    };
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/continuous/stateSpace.html">stateSpace</a><a class="see-also-link" href="../../nflow_blocks/continuous/integrator.html">integrator</a><a class="see-also-link" href="../../nflow_blocks/discrete/dtf.html">dtf</a><a class="see-also-link" href="../../nflow_blocks/continuous/lpf.html">lpf</a><a class="see-also-link" href="../../nflow_blocks/continuous/hpf.html">hpf</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

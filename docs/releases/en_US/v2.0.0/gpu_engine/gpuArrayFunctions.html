@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>gpuArrayFunctions</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">gpuArrayFunctions</span></div></div>
+<div class="section syntax-section"><div class="subtitle">List the functions that support gpuArray.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">c = gpuArrayFunctions()
+gpuArrayFunctions()
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">c</td>
+<td>a column cell of character vectors: the sorted names of the functions overloaded for <b>gpuArray</b>.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>c = gpuArrayFunctions()</b> returns the list of functions and operators that run on a <b>gpuArray</b>. Calling <b>gpuArrayFunctions()</b> without an output argument displays the list.</p>
+    <p>The list is derived from the operations actually registered by the <b>gpu_engine</b> module (both the device builtins and the method overloads), so it always reflects the current build. It groups, among others:</p>
+    <p><b>Operators</b>: plus, minus, times, rdivide, ldivide, power, mtimes, uminus, transpose, ctranspose, eq, ne, lt, le, gt, ge, and, or, xor, not.</p>
+    <p><b>Element-wise math</b>: abs, sqrt, exp, expm1, log, log1p, log2, log10, pow2, sin, cos, tan, sec, csc, cot, asin, acos, atan, asec, acsc, acot, atan2, hypot, sinh, cosh, tanh, sech, csch, coth, asinh, acosh, atanh, deg2rad, rad2deg, floor, ceil, round, fix, sign, mod, rem.</p>
+    <p><b>Bitwise</b> (integer): bitand, bitor, bitxor, bitshift.</p>
+    <p><b>Reductions and scans</b>: sum, prod, mean, var, std, any, all, cumsum, cumprod, cummax, cummin, sort, find, dot, norm.</p>
+    <p><b>Linear algebra</b>: mtimes and, on the device where possible, dot and the vector norms; the factorizations (mldivide, inv, lu, qr, eig, svd), the matrix functions (expm, logm, sqrtm) and fft/ifft fall back to the host.</p>
+    <p><b>Complex</b>: real, imag, conj, angle, isreal (floor/ceil/round/fix/sign and the NaN/Inf predicates also accept complex).</p>
+    <p><b>Shape</b>: reshape, transpose, ctranspose, flip, fliplr, flipud, rot90, circshift, repmat, squeeze, diff, triu, tril, diag, kron, trace, cross, horzcat, vertcat, cat.</p>
+    <p><b>Order statistics and set functions</b>: median, mode, prctile, histcounts, unique, ismember, sortrows, issorted, nonzeros, gradient (evaluated on the host, re-wrapped as a gpuArray).</p>
+    <p><b>Predicates and sizing</b>: isnan, isinf, isfinite, isreal, isempty, isscalar, isvector, ismatrix, isrow, iscolumn, isnumeric, isfloat, isinteger, islogical, length, nnz, underlyingType, isUnderlyingType.</p>
+    <p><b>Constructors</b>: zeros, ones, eye, nan, inf, true, false, rand, randn (through the <b>'gpuArray'</b> / <b>'like'</b> forms), and linspace / colon from a gpuArray endpoint.</p>
+    <p>Data is moved with <b>gpuArray</b> and <b>gather</b>; use <b>arrayfun</b> to run a fused element-wise expression on the device.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">c = gpuArrayFunctions();
+numel(c)
+gpuArrayFunctions()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../gpu_engine/gpuArray.html">gpuArray</a><a class="see-also-link" href="../gpu_engine/gather.html">gather</a><a class="see-also-link" href="../gpu_engine/isgpuarray.html">isgpuarray</a><a class="see-also-link" href="../gpu_engine/canUseGPU.html">canUseGPU</a><a class="see-also-link" href="../gpu_engine/gpuDevice.html">gpuDevice</a><a class="see-also-link" href="../operators/plus.html">plus</a><a class="see-also-link" href="../operators/minus.html">minus</a><a class="see-also-link" href="../operators/times.html">times</a><a class="see-also-link" href="../operators/rdivide.html">rdivide</a><a class="see-also-link" href="../operators/mtimes.html">mtimes</a><a class="see-also-link" href="../operators/power.html">power</a><a class="see-also-link" href="../operators/uminus.html">uminus</a><a class="see-also-link" href="../operators/mldivide.html">mldivide</a><a class="see-also-link" href="../operators/transpose.html">transpose</a><a class="see-also-link" href="../operators/ctranspose.html">ctranspose</a><a class="see-also-link" href="../operators/horzcat.html">horzcat</a><a class="see-also-link" href="../operators/vertcat.html">vertcat</a><a class="see-also-link" href="../operators/cat.html">cat</a><a class="see-also-link" href="../operators/colon.html">colon</a><a class="see-also-link" href="../operators/eq.html">eq</a><a class="see-also-link" href="../operators/ne.html">ne</a><a class="see-also-link" href="../operators/lt.html">lt</a><a class="see-also-link" href="../operators/le.html">le</a><a class="see-also-link" href="../operators/gt.html">gt</a><a class="see-also-link" href="../operators/ge.html">ge</a><a class="see-also-link" href="../operators/and.html">and</a><a class="see-also-link" href="../operators/or.html">or</a><a class="see-also-link" href="../operators/not.html">not</a><a class="see-also-link" href="../operators/any.html">any</a><a class="see-also-link" href="../operators/all.html">all</a><a class="see-also-link" href="../operators/bitand.html">bitand</a><a class="see-also-link" href="../operators/bitor.html">bitor</a><a class="see-also-link" href="../operators/bitxor.html">bitxor</a><a class="see-also-link" href="../trigonometric_functions/sin.html">sin</a><a class="see-also-link" href="../trigonometric_functions/cos.html">cos</a><a class="see-also-link" href="../trigonometric_functions/tan.html">tan</a><a class="see-also-link" href="../trigonometric_functions/sinh.html">sinh</a><a class="see-also-link" href="../trigonometric_functions/cosh.html">cosh</a><a class="see-also-link" href="../trigonometric_functions/tanh.html">tanh</a><a class="see-also-link" href="../trigonometric_functions/asin.html">asin</a><a class="see-also-link" href="../trigonometric_functions/acos.html">acos</a><a class="see-also-link" href="../trigonometric_functions/atan.html">atan</a><a class="see-also-link" href="../trigonometric_functions/atan2.html">atan2</a><a class="see-also-link" href="../data_analysis/sum.html">sum</a><a class="see-also-link" href="../data_analysis/prod.html">prod</a><a class="see-also-link" href="../data_analysis/max.html">max</a><a class="see-also-link" href="../data_analysis/min.html">min</a><a class="see-also-link" href="../data_analysis/cumsum.html">cumsum</a><a class="see-also-link" href="../data_analysis/cumprod.html">cumprod</a><a class="see-also-link" href="../data_analysis/cummax.html">cummax</a><a class="see-also-link" href="../data_analysis/cummin.html">cummin</a><a class="see-also-link" href="../data_analysis/sort.html">sort</a><a class="see-also-link" href="../special_functions/dot.html">dot</a><a class="see-also-link" href="../special_functions/cross.html">cross</a><a class="see-also-link" href="../types/isreal.html">isreal</a><a class="see-also-link" href="../logical/xor.html">xor</a><a class="see-also-link" href="../logical/true.html">true</a><a class="see-also-link" href="../logical/false.html">false</a><a class="see-also-link" href="../constructors_functions/zeros.html">zeros</a><a class="see-also-link" href="../constructors_functions/ones.html">ones</a><a class="see-also-link" href="../constructors_functions/eye.html">eye</a><a class="see-also-link" href="../random/rand.html">rand</a><a class="see-also-link" href="../random/randn.html">randn</a><a class="see-also-link" href="../fftw/fft.html">fft</a><a class="see-also-link" href="../fftw/ifft.html">ifft</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

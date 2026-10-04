@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>categorical</module>
+    <section name="Tableaux categoriels">
+      <chapter_description>
+    <p>Le module Categorical fournit des tableaux dont les elements appartiennent a un ensemble fixe de categories textuelles.</p>
+  </chapter_description>
+      <keyword name="addcats" link="addcats.html" description="Ajouter des categories a un tableau categoriel."/>
+      <keyword name="categorical" link="categorical.html" description="Créer un tableau catégoriel."/>
+      <keyword name="categories" link="categories.html" description="Lister les categories d'un tableau categoriel."/>
+      <keyword name="combinations" link="combinations.html" description="Generer toutes les combinaisons de valeurs."/>
+      <keyword name="countcats" link="countcats.html" description="Compter les elements categoriels par categorie."/>
+      <keyword name="histcounts" link="histcounts.html" description="Compter les valeurs categorielles pour des resumes de type histogramme."/>
+      <keyword name="iscategorical" link="iscategorical.html" description="Determiner si un tableau est categoriel."/>
+      <keyword name="iscategory" link="iscategory.html" description="Determiner si des noms sont des categories."/>
+      <keyword name="isordinal" link="isordinal.html" description="Determiner si un tableau categoriel est ordinal."/>
+      <keyword name="isprotected" link="isprotected.html" description="Determiner si un tableau categoriel est protege."/>
+      <keyword name="isundefined" link="isundefined.html" description="Trouver les elements categoriels non definis."/>
+      <keyword name="mergecats" link="mergecats.html" description="Fusionner des categories dans un tableau categoriel."/>
+      <keyword name="removecats" link="removecats.html" description="Supprimer des categories d'un tableau categoriel."/>
+      <keyword name="renamecats" link="renamecats.html" description="Renommer les categories d'un tableau categoriel."/>
+      <keyword name="reordercats" link="reordercats.html" description="Reordonner les categories d'un tableau categoriel."/>
+      <keyword name="setcats" link="setcats.html" description="Definir la liste des categories d'un tableau categoriel."/>
+    </section>
+  </toc>
+</help_summary>

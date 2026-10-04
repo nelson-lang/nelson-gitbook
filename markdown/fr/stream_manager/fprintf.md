@@ -16,7 +16,7 @@
 
 ## 📤 Argument de sortie
 
-- R - an integer value: number of bytes that fprintf write.
+- R - un entier : nombre d'octets ecrits dans un fichier, ou nombre de caracteres visibles affiches a l'ecran.
 
 ## 📄 Description
 
@@ -27,6 +27,8 @@ L'encodage des caractères utilise le paramètre <b>fopen</b>.
 Si fid vaut 1, la sortie est redirigée vers stdout.
 
 Si fid vaut 2, la sortie est redirigée vers stderr.
+
+Lorsque la sortie est envoyee a l'ecran, les sequences d'echappement ANSI SGR peuvent styliser le texte : gras, italique, souligne, barre, couleurs de premier plan et couleurs d'arriere-plan. Ces sequences sont interpretees pour l'affichage stdout et stderr, mais elles sont ecrites telles quelles lorsque la sortie est envoyee dans un fichier.
 
 Le paramètre <b>format</b> suit la syntaxe C de <b>fprintf</b>.
 
@@ -48,6 +50,8 @@ Le paramètre <b>format</b> suit la syntaxe C de <b>fprintf</b>.
 
 Pour afficher un signe pourcent, utilisez deux signes pourcent (%%) dans la chaîne de format.
 
+Un signe pourcent placé seul en fin de chaîne de format est ignoré.
+
 ## 💡 Exemples
 
 ```matlab
@@ -62,6 +66,20 @@ R = fileread([tempdir(), 'fprintf.txt'])
 ```matlab
 fprintf(1, 'an value %g.', pi);
 fprintf(2, "an value %g.", pi);
+```
+
+Afficher du texte stylise avec des sequences d'echappement ANSI SGR
+
+```matlab
+esc = char(27);
+fprintf([esc, '[1;34mTexte bleu gras', esc, '[0m\n']);
+```
+
+Afficher du texte truecolor avec des sequences d'echappement ANSI SGR
+
+```matlab
+esc = char(27);
+fprintf([esc, '[38;2;80;120;220mTexte truecolor', esc, '[0m\n']);
 ```
 
 How to use backspace
@@ -83,15 +101,23 @@ Display a percent sign
 fprintf(1, '%d%%.', 95)
 ```
 
+Gestion du pourcent final
+
+```matlab
+fprintf(1, ' %d %', 10)
+fprintf(1, ' %d %%', 10)
+```
+
 ## 🔗 Voir aussi
 
 [fopen](../stream_manager/fopen.md), [fclose](../stream_manager/fclose.md), [fread](../stream_manager/fread.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                                          |
+| ------- | ----------------------------------------------------------------------- |
+| 1.0.0   | version initiale                                                        |
+| 2.0.0   | Les sequences d'echappement ANSI SGR sont rendues pour la sortie ecran. |
 
 <!--
 ## 👤 Auteur

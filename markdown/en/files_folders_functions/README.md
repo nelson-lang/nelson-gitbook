@@ -16,11 +16,13 @@ This module enables efficient and cross-platform file system operations within N
 - [filesep](filesep.md) - Return the file separator character for the current platform.
 - [fullfile](fullfile.md) - Build full file name from parts.
 - [fullpath](fullpath.md) - Returns canonical full path.
+- [genpath](genpath.md) - Generate a recursive path string.
 - [isdir](isdir.md) - Returns true is the input argument is an directory.
 - [isfile](isfile.md) - Returns true is the input argument is a file.
 - [isfolder](isfolder.md) - Returns true is the input argument is an directory.
 - [ls](ls.md) - List folder contents.
 - [mkdir](mkdir.md) - Creates a new directory.
+- [movefile](movefile.md) - Move a file or folder.
 - [pathsep](pathsep.md) - Return the search path separator character for the current platform.
 - [pwd](pwd.md) - Returns current directory.
 - [relativepath](relativepath.md) - Returns the relative path from an actual path to the target path.

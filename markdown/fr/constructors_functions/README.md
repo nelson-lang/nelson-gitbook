@@ -14,6 +14,7 @@ Ce module constitue la base pour initialiser les structures de données et effec
 - [eps](eps.md) - Crée un epsilon (précision machine)
 - [eye](eye.md) - Crée une matrice identité.
 - [i](i.md) - Nombre imaginaire pur.
+- [j](j.md) - Unite imaginaire.
 - [ones](ones.md) - Crée une matrice composée de uns.
 - [pi](pi.md) - Rapport de la circonférence d'un cercle à son diamètre.
 - [zeros](zeros.md) - Crée une matrice composée de zéros.

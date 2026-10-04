@@ -15,10 +15,10 @@ Informations sur le système.
 
 ## 📤 Argument de sortie
 
-- c - une chaîne : type d'ordinateur : 'PCWIN', 'PCWIN64', 'PCWOA64', 'GLNXA64', 'GLNXA32', 'MACI32', 'MACI64'
+- c - une chaîne : type d'ordinateur : 'PCWIN', 'PCWIN64', 'PCWOA64', 'GLNXA64', 'GLNXA32', 'MACI32', 'MACI64', 'MACA64'
 - maxsize - un entier : nombre maximal d'éléments autorisés dans un tableau.
 - endian - une chaîne : 'L' pour little-endian, 'B' pour big-endian.
-- arch - une chaîne : type d'architecture : 'woa64', 'win64', 'win32', 'glnxa64', 'glnxa32', 'maci64', 'maci32'.
+- arch - une chaîne : type d'architecture : 'woa64', 'win64', 'win32', 'glnxa64', 'glnxa32', 'maci64', 'maci32', 'maca64'.
 
 ## 📄 Description
 

@@ -1,6 +1,6 @@
 # MPI_Comm_used
 
-Returns list of current used MPI_Comm handle.
+Returns the current valid MPI_Comm handles.
 
 ## 📝 Syntax
 
@@ -12,7 +12,7 @@ Returns list of current used MPI_Comm handle.
 
 ## 📄 Description
 
-Returns list of current used MPI_Comm handle.
+Returns the current valid MPI_Comm handles.
 
 ## 💡 Example
 

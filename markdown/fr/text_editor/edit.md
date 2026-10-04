@@ -29,7 +29,7 @@ edit('edit')
 
 ## 🔗 Voir aussi
 
-[smartindent](../text_editor/smartindent.md).
+[smartindent](../interpreter/smartindent.md).
 
 ## 🕔 Historique
 

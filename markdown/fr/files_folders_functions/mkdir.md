@@ -10,6 +10,8 @@ Crée un nouveau répertoire.
 - status = mkdir(parentdir, dirname)
 - [status, msg] = mkdir(dirname)
 - [status, msg] = mkdir(parentdir, dirname)
+- [status, msg, msgID] = mkdir(dirname)
+- [status, msg, msgID] = mkdir(parentdir, dirname)
 
 ## 📥 Argument d'entrée
 
@@ -20,6 +22,7 @@ Crée un nouveau répertoire.
 
 - status - a logical true or false
 - msg - a string: error message
+- msgID - a string: identifiant du message
 
 ## 📄 Description
 
@@ -49,8 +52,9 @@ end
 
 | Version | 📄 Description                                   |
 | ------- | ------------------------------------------------ |
-| 1.0.0   | initial version                                  |
+| 1.0.0   | version initiale                                 |
 | 1.4.0   | input arguments support scalar string array type |
+| 2.0.0   | ajout de l'argument de sortie msgID.             |
 
 <!--
 ## 👤 Auteur

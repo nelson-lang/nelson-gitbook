@@ -45,6 +45,10 @@ JPVT_IN = zeros(1, M);
 [A_OUT, JPVT_OUT, TAU, INFO] = slicot_mb04gd(A_IN, JPVT_IN)
 ```
 
+## 🔗 See also
+
+[slicot_mb03od](../slicot/slicot_mb03od.md), [slicot_mb03pd](../slicot/slicot_mb03pd.md), [slicot_mb02md](../slicot/slicot_mb02md.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

@@ -1,10 +1,11 @@
 # setenv
 
-Set the value of an environment variable.
+Set or remove an environment variable.
 
 ## 📝 Syntax
 
-- getenv(env_name, env_value)
+- setenv(env_name, env_value)
+- setenv(env_name)
 
 ## 📥 Input argument
 
@@ -13,7 +14,11 @@ Set the value of an environment variable.
 
 ## 📄 Description
 
-<b>setenv</b> set the value of an environment variable.
+<b>setenv</b> sets the value of an environment variable.
+
+<b>setenv(env_name)</b> removes the variable from the current process environment.
+
+<b>setenv(env_name, '')</b> keeps the variable defined with an empty value.
 
 ## 💡 Example
 
@@ -21,6 +26,8 @@ Set the value of an environment variable.
 setenv('MY_ENV_VAR', 'funvalue')
 getenv('MY_ENV_VAR')
 setenv('MY_ENV_VAR', '')
+getenv('MY_ENV_VAR')
+setenv('MY_ENV_VAR')
 getenv('MY_ENV_VAR')
 ```
 
@@ -30,9 +37,10 @@ getenv('MY_ENV_VAR')
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                     |
+| ------- | ---------------------------------- |
+| 1.0.0   | initial version                    |
+| 2.0.0   | environment variable removal added |
 
 <!--
 ## 👤 Author

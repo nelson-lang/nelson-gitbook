@@ -18,6 +18,8 @@ Skip test suite on condition
 
 The <b>skip_testsuite</b> function allows you to skip a test suite based on a specified condition.
 
+<b>skip_testsuite</b> is a compatibility wrapper over <b>nelson.unittest.skip</b>.
+
 <b>condition</b>: A boolean expression that determines whether to skip the test suite. If <b>condition</b> evaluates to <b>true</b>, the test suite will be skipped.
 
 <b>reason</b>: A string explaining the reason for skipping the test suite. This parameter is useful for providing context to other developers or yourself in case the test suite is skipped.
@@ -30,7 +32,7 @@ skip_testsuite(true, 'Test skipped')
 
 ## 🔗 See also
 
-[test_run](../tests_manager/test_run.md).
+[test_run](../tests_manager/test_run.md), [nelson.unittest](../tests_manager/nelson_unittest.md).
 
 ## 🕔 History
 

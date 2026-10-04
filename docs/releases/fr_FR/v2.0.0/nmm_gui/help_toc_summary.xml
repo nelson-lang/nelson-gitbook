@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>nmm_gui</module>
+    <section name="Fenêtre du gestionnaire de paquets">
+      <chapter_description>
+    <p>Interface graphique du gestionnaire de paquets nmm.</p>
+  </chapter_description>
+      <keyword name="nmm_gui" link="nmm_gui.html" description="Ouvrir la fenêtre du gestionnaire de paquets."/>
+    </section>
+  </toc>
+</help_summary>

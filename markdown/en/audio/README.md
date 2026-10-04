@@ -18,7 +18,7 @@ It also includes utilities for signal conversion and sound generation.
 - [audioplayer_pause](audioplayer_pause.md) - Pause an audioplayer object.
 - [audioplayer_set](audioplayer_set.md) - Set object or interface property to specified value.
 - [audioplayer_stop](audioplayer_stop.md) - Stops an audioplayer object.
-- [audioplayer_used](audioplayer_used.md) - Returns list of current used audioplayer handle.
+- [audioplayer_used](audioplayer_used.md) - Returns the current valid audioplayer handles.
 - [audioread](audioread.md) - Read an audio file.
 - [audiorecorder](audiorecorder.md) - Object for recording audio.
 - [audiorecorder_delete](audiorecorder_delete.md) - Removes audiorecorder object.
@@ -26,7 +26,7 @@ It also includes utilities for signal conversion and sound generation.
 - [audiorecorder_get](audiorecorder_get.md) - Get property value from audiorecorder interface.
 - [audiorecorder_pause](audiorecorder_pause.md) - Pause an audiorecorder object.
 - [audiorecorder_set](audiorecorder_set.md) - Set object or interface property to specified value.
-- [audiorecorder_used](audiorecorder_used.md) - Returns list of current used audiorecorder handle.
+- [audiorecorder_used](audiorecorder_used.md) - Returns the current valid audiorecorder handles.
 - [audiosupportedformats](audiosupportedformats.md) - Get audio file supported formats.
 - [audiowrite](audiowrite.md) - Writes an audio file.
 - [beep](beep.md) - Produces a beep sound.

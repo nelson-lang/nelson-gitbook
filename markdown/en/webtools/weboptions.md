@@ -40,7 +40,7 @@ Name-Value Pair Arguments:
 
 <b>ContentType</b> Content type: a string scalar or character vector.
 
-supported value: 'auto', 'text', 'audio', 'binary', 'json', 'raw'
+supported value: 'auto', 'text', 'image', 'binary', 'table', 'audio', 'json', 'xmldom', 'raw'
 
 <b>ContentReader</b> Content reader: an function handle.
 
@@ -54,7 +54,7 @@ supported value: 'auto', 'get', 'post', 'put', 'delete', 'patch'
 
 <b>ArrayFormat</b>: 'csv' (default), 'json', 'repeating' or 'php'
 
-<b>CertificateFilename</b> Filename of root certificates: a string or character vector.
+<b>CertificateFilename</b> Filename of root certificates: 'default', empty, or an existing file.
 
 <b>FollowLocation</b> tells the library to follow any Location: header redirect that an HTTP server sends in a 30x response: a logical, false by default.
 
@@ -71,11 +71,13 @@ options = weboptions('UserAgent', 'http://www.whoishostingthis.com/tools/user-ag
 
 ## 🕔 History
 
-| Version                       | 📄 Description  |
-| ----------------------------- | --------------- |
-| 1.0.0                         | initial version |
-| 1.6.0                         |
-| 'FollowLocation' option added |
+| Version                              | 📄 Description  |
+| ------------------------------------ | --------------- |
+| 1.0.0                                | initial version |
+| 1.6.0                                |
+| 'FollowLocation' option added        |
+| 2.0.0                                |
+| weboptions is a classdef value class |
 
 <!--
 ## 👤 Author

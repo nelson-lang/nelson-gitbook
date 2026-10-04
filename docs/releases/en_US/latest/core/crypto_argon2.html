@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>crypto.argon2</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">crypto.argon2</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Argon2 password hashing and key derivation.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">hexa_hash = crypto.argon2(password, salt)
+hexa_hash = crypto.argon2(password, salt, name, value, ...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">password</td>
+<td>a uint8 vector (raw bytes) or a character vector (UTF-8 bytes): secret to hash.</td>
+</tr>
+<tr>
+<td class="param-name">salt</td>
+<td>a uint8 vector (raw bytes) or a character vector (UTF-8 bytes): at least 8 bytes, 16 random bytes recommended, unique per password.</td>
+</tr>
+<tr>
+<td class="param-name">'Variant'</td>
+<td>'argon2id' (default, recommended), 'argon2i' or 'argon2d'.</td>
+</tr>
+<tr>
+<td class="param-name">'Memory'</td>
+<td>memory cost in KiB, at least 8 times the number of lanes (default: 65536, that is 64 MiB).</td>
+</tr>
+<tr>
+<td class="param-name">'Passes'</td>
+<td>number of iterations, at least 1 (default: 3).</td>
+</tr>
+<tr>
+<td class="param-name">'Lanes'</td>
+<td>degree of parallelism of the algorithm, at least 1 (default: 1); the computation itself is single threaded.</td>
+</tr>
+<tr>
+<td class="param-name">'Length'</td>
+<td>output length in bytes, between 4 and 1024 (default: 32).</td>
+</tr>
+<tr>
+<td class="param-name">'Key'</td>
+<td>optional secret key (pepper) as uint8 or text, mixed into the hash.</td>
+</tr>
+<tr>
+<td class="param-name">'AssociatedData'</td>
+<td>optional associated data as uint8 or text, mixed into the hash.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">hexa_hash</td>
+<td>a character vector: 2 * Length lowercase hexadecimal characters.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>crypto.argon2</b> computes an Argon2 hash (RFC 9106), the memory-hard function recommended for password storage and for deriving encryption keys from passphrases. Store the salt and the parameters next to the hash: verifying a password means recomputing the hash with the same inputs and comparing.</p>
+    <p>The defaults (argon2id, 64 MiB, 3 passes, 1 lane) take a fraction of a second on a desktop machine; raise <b>Memory</b> or <b>Passes</b> for stronger protection, lower them only for tests. The work area is allocated for each call and wiped afterwards.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">hash a passphrase (small parameters for the example)</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">R = crypto.argon2('correct horse battery staple', 'salt-of-16-bytes', 'Memory', 1024, 'Passes', 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">RFC 9106 argon2id test vector</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">password = uint8(repmat(1, 1, 32));
+salt = uint8(repmat(2, 1, 16));
+R = crypto.argon2(password, salt, 'Memory', 32, 'Passes', 3, 'Lanes', 4, 'Key', uint8(repmat(3, 1, 8)), 'AssociatedData', uint8(repmat(4, 1, 12)))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../core/crypto.blake2b.html">crypto.blake2b</a><a class="see-also-link" href="../core/crypto.hmac.html">crypto.hmac</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>Monocypher</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliography</div>
+<div><a class="bibliography-link" href="https://www.rfc-editor.org/rfc/rfc9106,%20https://monocypher.org/" target="_blank">https://www.rfc-editor.org/rfc/rfc9106, https://monocypher.org/</a></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

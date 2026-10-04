@@ -1,60 +1,72 @@
 # isa
 
-Renvoie vrai si var est un objet de la classe str.
+Renvoie true si une variable a la classe ou le type demande.
 
 ## 📝 Syntaxe
 
-- res = isa(var, str)
+- res = isa(var, className)
 
 ## 📥 Argument d'entrée
 
 - var - une variable
-- str - une chaîne : nom de la classe attendu
+- className - un nom de classe ou de type sous forme de chaine
 
 ## 📤 Argument de sortie
 
-- res - un logique : vrai ou faux
+- res - un logique : true ou false
 
 ## 📄 Description
 
-<b>isa</b> renvoie 1 logique (vrai) si l'argument est un tableau de cellules et 0 logique (faux) sinon.
+<b>isa</b> renvoie un logique 1 quand <b>var</b> est une instance de <b>className</b>, et 0 sinon.
 
-str peut aussi être 'numeric', 'float' ou 'integer' :
+<b>className</b> peut etre un nom de type Nelson comme <b>double</b>, <b>cell</b>, <b>numeric</b>, <b>float</b> ou <b>integer</b>.
 
-numeric : tableau à virgule flottante ou entier : double, single, int8, uint8, int16, uint16, int32, uint32, int64, uint64
+Pour les objets classdef, <b>isa</b> accepte le nom de classe et les noms de superclasses supportes, y compris <b>handle</b> pour les classes handle.
 
-float : tableau flottant en simple ou double précision : double, single
-
-integer : tableau entier signé ou non signé : int8, uint8, int16, uint16, int32, uint32, int64, uint64
-
-Si <b>var</b> est un objet handle, str peut être 'handle' ou le nom de type du handle.
+Pour les tableaux sparse, <b>isa</b> teste la classe de valeur stockee, par exemple <b>double</b> ou <b>logical</b>. Utiliser <b>issparse</b> pour tester le stockage sparse.
 
 ## 💡 Exemples
+
+Tester un type numerique.
 
 ```matlab
 A = 3;
 res = isa(A, 'double')
 ```
 
-```matlab
-B = {'NelSon', 3, true};
-res = isa(B, 'cell')
-```
+Tester la classe de valeur stockee d'un tableau sparse.
 
 ```matlab
-B = {'NelSon', 3, true};
-res = isa(B, 'cell')
+S = sparse([2 0 3]);
+isDouble = isa(S, 'double')
+isSparse = issparse(S)
+```
+
+Tester un objet handle classdef.
+
+```matlab
+clear classes
+d = [tempdir(), 'nelson_help_isa/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpIsaCounter.m'], ["classdef NelsonHelpIsaCounter < handle"; "  properties"; "    Count = 0"; "  end"; "end"]);
+addpath(d);
+obj = NelsonHelpIsaCounter();
+isCounter = isa(obj, 'NelsonHelpIsaCounter')
+isHandle = isa(obj, 'handle')
+delete(obj)
 ```
 
 ## 🔗 Voir aussi
 
-[class](../types/class.md), [isinteger](../types/isinteger.md), [isnumeric](../types/isnumeric.md).
+[class](../types/class.md), [issparse](../types/issparse.md), [isobject](../types/isobject.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                               |
+| ------- | ------------------------------------------------------------ |
+| 1.0.0   | version initiale                                             |
+| 2.0.0   | support des objets classdef documente                        |
+| 2.0.0   | les tableaux sparse sont testes par classe de valeur stockee |
 
 <!--
 ## 👤 Auteur

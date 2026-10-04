@@ -22,7 +22,7 @@ Affiche ou masque le terminal Windows associé à la session Nelson.
 
 Chaque session Nelson s'exécute dans sa propre console. Lorsque la session Nelson se termine, sa console correspondante est automatiquement terminée.
 
-La console est une fenêtre de terminal noire qui ne peut pas être fermée manuellement — le bouton de fermeture (“X”) dans le coin supérieur droit est désactivé. Forcer sa fermeture mettra également fin à la session Nelson.
+La console est une fenêtre de terminal noire qui ne peut pas être fermée manuellement - le bouton de fermeture (“X”) dans le coin supérieur droit est désactivé. Forcer sa fermeture mettra également fin à la session Nelson.
 
 Certaines fonctions Nelson de bas niveau (et certaines bibliothèques externes) envoient leurs messages directement à la console.
 
@@ -46,9 +46,9 @@ consolebox(false)
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.15.0  | initial version |
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 1.15.0  | version initiale |
 
 <!--
 ## 👤 Auteur

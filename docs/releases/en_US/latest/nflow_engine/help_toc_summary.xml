@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>nflow_engine</module>
+    <section name="nflow engine">
+      <chapter_description><p>Programmatic creation and editing of nflow block-diagram models.</p>
+    <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p></chapter_description>
+      <keyword name="NFlow.exportfmu" link="NFlow.exportfmu.html" description="Export an nflow model as an FMI 3.0 Co-Simulation source FMU."/>
+      <keyword name="NFlow.plotScopes" link="NFlow.plotScopes.html" description="Open one figure per scope of an nflow simulation result."/>
+      <keyword name="add_block" link="add_block.html" description="Add a block to an nflow model from a library source."/>
+      <keyword name="add_line" link="add_line.html" description="Connect two block ports in an nflow model."/>
+      <keyword name="bdIsDirty" link="bdIsDirty.html" description="Return true when an nflow model has unsaved changes."/>
+      <keyword name="bdIsLoaded" link="bdIsLoaded.html" description="Return true when an nflow model is loaded."/>
+      <keyword name="bdclose" link="bdclose.html" description="Unload one or all nflow models, discarding unsaved changes."/>
+      <keyword name="bdroot" link="bdroot.html" description="Return the top-level model of a block path."/>
+      <keyword name="close_system" link="close_system.html" description="Unload an nflow model; a dirty model requires an explicit save flag."/>
+      <keyword name="delete_block" link="delete_block.html" description="Delete a block and all of its connections from an nflow model."/>
+      <keyword name="delete_line" link="delete_line.html" description="Delete a connection between two block ports."/>
+      <keyword name="find_system" link="find_system.html" description="List the blocks of a model, optionally filtered by type."/>
+      <keyword name="gcbh" link="gcbh.html" description="Return the handle of the current block."/>
+      <keyword name="getSimulinkBlockHandle" link="getSimulinkBlockHandle.html" description="Return the handle of a block by path, or -1 if not found."/>
+      <keyword name="get_param" link="get_param.html" description="Query a model or block parameter."/>
+      <keyword name="getfullname" link="getfullname.html" description="Return the full path of a block or model from its handle."/>
+      <keyword name="linmod" link="linmod.html" description="Numerical linearization of an nflow model."/>
+      <keyword name="load_system" link="load_system.html" description="Load an nflow model from a .nflow file without opening the editor."/>
+      <keyword name="new_system" link="new_system.html" description="Create and load an empty nflow model."/>
+      <keyword name="nflow_codegenerate" link="nflow_codegenerate.html" description="Generate standalone C or Rust code from an nflow model."/>
+      <keyword name="save_system" link="save_system.html" description="Save an nflow model to a .nflow file."/>
+      <keyword name="set_param" link="set_param.html" description="Set model or block parameters atomically."/>
+      <keyword name="sim" link="sim.html" description="Run an nflow simulation of a model and return its results."/>
+      <keyword name="NFlow.sspInfo" link="ssp.html" description="Inspect, import and export SSP (System Structure and Parameterization) archives."/>
+      <keyword name="trim" link="trim.html" description="Find a steady-state operating point of an nflow model."/>
+    </section>
+  </toc>
+</help_summary>

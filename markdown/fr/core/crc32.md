@@ -8,6 +8,7 @@ Calcul du CRC32.
 - hexa_hash = crc32(filename)
 - hexa_hash = crc32(str, '-file')
 - hexa_hash = crc32(str, '-string')
+- hexa_hash = crypto.crc32(...)
 
 ## 📥 Argument d'entrée
 
@@ -22,6 +23,8 @@ Calcul du CRC32.
 ## 📄 Description
 
 Calcule la valeur CRC32 d'une chaîne de caractères ou d'un fichier.
+
+<b>crypto.crc32</b> est un alias de <b>crc32</b>, dans l'espace de noms <b>crypto</b> partagé avec <b>crypto.ed25519.verify</b> et <b>crypto.ed25519.sign</b>.
 
 ## 💡 Exemples
 

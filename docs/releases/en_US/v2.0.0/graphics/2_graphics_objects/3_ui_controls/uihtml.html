@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>uihtml</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">uihtml</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Create an HTML UI component.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">h = uihtml()
+h = uihtml(parent)
+h = uihtml(..., propertyName, propertyValue)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">parent</td>
+<td>parent object.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName, propertyValue</td>
+<td>name-value pairs.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">h</td>
+<td>UI object.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>h = uihtml()</b> creates a component that displays an HTML page inside a UI figure and exchanges data with it.</p>
+    <p><b>uihtml requires the WebView desktop.</b> Anywhere else it raises <b>Nelson:uihtml:webviewDesktopRequired</b>, because no page can be displayed there. Start the WebView desktop to use it.</p>
+    <p><b>HTMLSource</b> accepts two forms: HTML markup, or the name of an HTML file (relative or absolute). It is stored exactly as given. A URL is not accepted.</p>
+    <p>The page must define a global <b>setup</b> function taking one argument. It runs once the content has loaded, and again whenever <b>HTMLSource</b> changes to a different value. Setting the same value again changes nothing.</p>
+    <p>The object passed to <b>setup</b> carries the property <b>Data</b>, the methods <b>addEventListener</b> and <b>removeEventListener</b>, and the method <b>sendEventToNelson(name, data)</b>. Note that pages written for other environments name that last method differently and must be edited.</p>
+    <p>Notification is asymmetric. Writing <b>Data</b> from Nelson raises the <b>DataChanged</b> event in the page and does <b>not</b> run <b>DataChangedFcn</b>. Writing it from the page runs <b>DataChangedFcn</b>, whose event carries <b>Data</b> and <b>PreviousData</b>, and is not sent back down. Writing a value equal to the current one notifies nobody.</p>
+    <p><b>Data</b> travels as JSON in both directions, so a value comes back as <b>jsonencode</b> followed by <b>jsondecode</b> leaves it: integers arrive as double, row vectors come back as columns, <b>datetime</b> and <b>categorical</b> arrive as text, and complex values cannot be sent at all.</p>
+    <p>Use <b>sendEventToHTMLSource</b> to send a named event to the page; the page receives it through <b>addEventListener</b>. A page event reaches Nelson through <b>HTMLEventReceivedFcn</b>, whose event carries <b>HTMLEventName</b> and <b>HTMLEventData</b>. Page events are delivered in the order the page sent them.</p>
+    <p>The page keeps its state while it is hidden, while its tab is not selected, and across a change of parent inside the desktop. Moving a figure between its own window and the docked desktop is not one of those: the page moves to another document and is rebuilt, and <b>setup</b> runs again.</p>
+    <p>Write a page that can rebuild itself. <b>Data</b> keeps its value across such a rebuild, so read it in <b>setup</b> and render from it there, rather than waiting for <b>DataChanged</b> - a notification a fresh page has already missed. A page that only renders on <b>DataChanged</b> comes back empty, and re-running the handshake does not save it: writing the value already published notifies nobody.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">a page that reads Data and answers with an event</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = uifigure();
+page = ['&lt;html&gt;&lt;body&gt;&lt;p id="out"&gt;waiting&lt;/p&gt;&lt;script&gt;', ...
+  'function setup(h) {', ...
+  '  h.addEventListener("DataChanged", function () {', ...
+  '    document.getElementById("out").textContent = JSON.stringify(h.Data);', ...
+  '  });', ...
+  '  h.sendEventToNelson("ready", {});', ...
+  '}&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;'];
+h = uihtml(f, 'Position', [10 10 400 200], 'HTMLSource', page);
+h.HTMLEventReceivedFcn = @(src, evt) disp(evt.HTMLEventName);
+h.Data = struct('temperature', 21.5);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../../gui/uifigure.html">uifigure</a><a class="see-also-link" href="../../../json/jsonencode.html">jsonencode</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

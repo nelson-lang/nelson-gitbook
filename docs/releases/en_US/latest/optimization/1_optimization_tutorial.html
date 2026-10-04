@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>optimization tutorial</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">optimization tutorial</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Optimization module tutorial.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      The <b>optimization</b> module provides direct numerical solvers and a problem-based modelling layer. Use direct solvers when the coefficient matrices, residual function, or objective function are already available. Use the problem-based layer when the model is easier to read as variables, expressions, and constraints.
+    </p>
+    <table style="width:100%">
+      <tr>
+        <th>Problem type</th>
+        <th>Direct solver</th>
+        <th>Typical inputs</th>
+      </tr>
+      <tr>
+        <td>Scalar bounded minimization</td>
+        <td><b>fminbnd</b></td>
+        <td>Objective function and finite interval.</td>
+      </tr>
+      <tr>
+        <td>Unconstrained minimization</td>
+        <td>
+<b>fminunc</b>, <b>fminsearch</b>
+</td>
+        <td>Objective function and initial point.</td>
+      </tr>
+      <tr>
+        <td>Zero finding</td>
+        <td><b>fzero</b></td>
+        <td>Function and bracket or initial point.</td>
+      </tr>
+      <tr>
+        <td>Linear programming</td>
+        <td><b>linprog</b></td>
+        <td>Linear objective, linear constraints, and bounds.</td>
+      </tr>
+      <tr>
+        <td>Mixed-integer linear programming</td>
+        <td><b>intlinprog</b></td>
+        <td>Linear objective, integer variable indices, constraints, and bounds.</td>
+      </tr>
+      <tr>
+        <td>Quadratic programming</td>
+        <td><b>quadprog</b></td>
+        <td>Quadratic objective, linear constraints, and bounds.</td>
+      </tr>
+      <tr>
+        <td>Constrained nonlinear minimization</td>
+        <td><b>fmincon</b></td>
+        <td>Nonlinear objective, constraints, and bounds.</td>
+      </tr>
+      <tr>
+        <td>Least squares</td>
+        <td>
+<b>lsqnonneg</b>, <b>lsqnonlin</b>
+</td>
+        <td>Linear or nonlinear residual model.</td>
+      </tr>
+      <tr>
+        <td>Nonlinear equations</td>
+        <td><b>fsolve</b></td>
+        <td>Vector function and initial point.</td>
+      </tr>
+    </table>
+    <p>
+      Solver behavior is controlled with <b>optimoptions</b> or <b>optimset</b>. Use <b>optimget</b> to read an option with a fallback value. Linear and mixed-integer linear problems use the HiGHS backend when it is available. Problem-based compilation routes continuous linear, mixed-integer linear, quadratic and constrained nonlinear problems to the corresponding direct solver. Nonlinear problems with integer or binary variables are rejected explicitly.
+    </p>
+    <p>
+      The problem-based workflow starts with <b>optimvar</b> and <b>optimproblem</b>. Expressions and constraints are built with ordinary arithmetic. <b>solve</b> calls a supported direct solver, and <b>prob2struct</b> returns the direct-solver structure for inspection or lower-level execution.
+    </p>
+    <p>
+      Binary variables created with <b>optimvar</b> have default bounds 0 and 1. Integer and binary variables route linear models to <b>intlinprog</b>; continuous linear models route to <b>linprog</b>; continuous nonlinear constrained models route to <b>fmincon</b>. Maximization problems are converted internally to minimization and <b>solve</b> returns the objective value in the original problem sense.
+    </p>
+    <p>
+      When a direct solver proves a problem infeasible and returns no primal vector, <b>solve</b> returns a solution structure with the model variable names and empty values. This keeps diagnostic outputs such as <b>exitflag</b> and <b>output.message</b> available without failing during result unpacking.
+    </p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Minimize a scalar function on a bounded interval.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">opts = optimset('Display', 'off');
+[x, fval] = fminbnd(@(x) (x - 1.5)^2 + 0.25, -2, 4, opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Minimize an unconstrained nonlinear function.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">fun = @(x) 3*x(1)^2 + 2*x(1)*x(2) + x(2)^2 - 4*x(1) + 5*x(2);
+opts = optimoptions('fminunc', 'Display', 'off');
+[x, fval] = fminunc(fun, [1, 1], opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Solve a linear programming problem with nonnegative variables.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = [-1; -1];
+A = [1 2; 4 2];
+b = [4; 12];
+opts = optimoptions('linprog', 'Display', 'off');
+[x, fval, exitflag] = linprog(f, A, b, [], [], [0; 0], [], opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Solve a small mixed-integer linear programming problem.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = [-5; -4; -3];
+intcon = 1:3;
+A = [2 3 1; 4 1 2];
+b = [5; 8];
+lb = [0; 0; 0];
+ub = [1; 1; 1];
+opts = optimoptions('intlinprog', 'Display', 'off');
+[x, fval, exitflag] = intlinprog(f, intcon, A, b, [], [], lb, ub, [], opts)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Build and solve a problem-based linear model.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">x = optimvar('x', 2, 'LowerBound', 0);
+prob = optimproblem('Objective', -x(1) - x(2));
+prob.Constraints.capacity = [1 2; 4 2] * x &lt;= [4; 12];
+problem = prob2struct(prob);
+[sol, fval, exitflag] = solve(prob);
+sol.x</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../optimization/optimoptions.html">optimoptions</a><a class="see-also-link" href="../optimization/optimproblem.html">optimproblem</a><a class="see-also-link" href="../optimization/fminunc.html">fminunc</a><a class="see-also-link" href="../optimization/fmincon.html">fmincon</a><a class="see-also-link" href="../optimization/solve.html">solve</a><a class="see-also-link" href="../optimization/linprog.html">linprog</a><a class="see-also-link" href="../optimization/intlinprog.html">intlinprog</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>
+    fminbnd
+    fminunc
+    fminsearch
+    fzero
+    fmincon
+    linprog
+    intlinprog
+    optimproblem
+    optimvar
+    solve
+    prob2struct
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📚</span>Bibliography</div>
+<div>Brent, R. P., Algorithms for Minimization Without Derivatives, Prentice-Hall, 1973.
+Nelder, J. A. and Mead, R., A simplex method for function minimization, The Computer Journal, 1965.
+Lawson, C. L. and Hanson, R. J., Solving Least Squares Problems, SIAM, 1995.
+Nocedal, J. and Wright, S. J., Numerical Optimization, Springer, 2006.
+Huangfu, Q. and Hall, J. A. J., Parallelizing the dual revised simplex method, Mathematical Programming Computation, 2018.</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

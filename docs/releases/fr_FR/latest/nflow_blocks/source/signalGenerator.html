@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>signalGenerator</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">signalGenerator</span></div></div>
+<div class="section" style="text-align:center;"><img src="./signalGenerator.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Source periodique configurable : sinus, carre ou dent de scie (Amplitude, Frequency).</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Type de bloc : signalGenerator
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports d entree</td>
+<td>Aucun port d entree (ce bloc n en a aucun).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports de sortie</td>
+<td>1 port(s) de sortie declare(s).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Source periodique configurable : sinus, carre ou dent de scie (Amplitude, Frequency).</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Bibliotheque</td>
+<td>Source</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">signalGenerator</code></td>
+</tr>
+        <tr>
+<td>Libelle</td>
+<td>Signal Generator</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Description</b></p>
+    <p>Une source periodique configurable sans entree. <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Waveform</code> vaut "sine", "square" ou "sawtooth", mise a l'echelle par <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Amplitude</code>, avec <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Frequency</code> en Hz. sine = A*sin(2*pi*f*t) ; square = A*signe(sin(2*pi*f*t)) ; sawtooth monte lineairement de -A a +A sur chaque periode. Sans etat (fonction pure du temps).</p>
+    <p><b>Ports</b></p>
+    <p>Ce bloc n'a aucun port d'entree.</p>
+    <p><b>Sortie(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Role</th>
+<th>Cote</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Signal numerique produit par le bloc.</td>
+<td>droite</td>
+<td>x=80, y=40</td>
+</tr>
+      
+    </table>
+    <p><b>Parametres</b></p>
+    <table border="1">
+      <tr>
+<th>Parametre</th>
+<th>Valeur par defaut</th>
+</tr>
+      
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Waveform</code></td>
+<td>sine</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Amplitude</code></td>
+<td>1</td>
+</tr>
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Frequency</code></td>
+<td>1</td>
+</tr>
+      
+    </table>
+    <p><b>Caracteristiques du bloc</b></p>
+    <table border="1">
+      
+        <tr>
+<td>Type de bloc</td>
+<td>signalGenerator</td>
+</tr>
+        <tr>
+<td>Famille</td>
+<td>Source</td>
+</tr>
+        <tr>
+<td>Taille rendue</td>
+<td>80 x 80</td>
+</tr>
+        <tr>
+<td>Phases</td>
+<td>OUTPUT</td>
+</tr>
+        <tr>
+<td>Etat interne ou historique</td>
+<td>non</td>
+</tr>
+        <tr>
+<td>Type de donnees du signal</td>
+<td>valeurs numeriques double</td>
+</tr>
+      
+    </table>
+    <p><b>Algorithmes</b></p>
+    <ul>
+      <li>OUTPUT : evalue la forme d'onde choisie au temps courant.</li>
+    </ul>
+    <p><b>Equation ou regle</b></p>
+    <span class="math display">$$y(t) = A\,\sin(2\pi f t) \quad(\text{sine})$$</span>
+    <p><b>Capacites etendues</b></p>
+    <p><b>Sources d implementation</b></p>
+    <p>Generation de code : prise en charge pour C et Rust.</p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/source/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.source",
+  "title": "Source",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Basic source blocks",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "constant",
+      "label": "Constant",
+      "icon": "constant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Value": 1,
+        "OutDataType": "double"
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "constant-math",
+        "formula": "{params.Value}"
+      }
+    },
+    {
+      "type": "step",
+      "label": "Step",
+      "icon": "step.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "step.svg"
+      }
+    },
+    {
+      "type": "ramp",
+      "label": "Ramp",
+      "icon": "ramp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "slope": 1,
+        "start": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "ramp.svg"
+      }
+    },
+    {
+      "type": "counterFreeRunning",
+      "label": "Counter Free-Running",
+      "icon": "counterFreeRunning.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "NumBits": 16
+      },
+      "render": {
+        "type": "image",
+        "src": "counterFreeRunning.svg"
+      }
+    },
+    {
+      "type": "counterLimited",
+      "label": "Counter Limited",
+      "icon": "counterLimited.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "UpperLimit": 7
+      },
+      "render": {
+        "type": "image",
+        "src": "counterLimited.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceStair",
+      "label": "Repeating Sequence Stair",
+      "icon": "repeatingSequenceStair.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutValues": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceStair.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceInterpolated",
+      "label": "Repeating Sequence Interpolated",
+      "icon": "repeatingSequenceInterpolated.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "TimeValues": [
+          0,
+          1,
+          2
+        ],
+        "OutValues": [
+          0,
+          2,
+          0
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceInterpolated.svg"
+      }
+    },
+    {
+      "type": "signalGenerator",
+      "label": "Signal Generator",
+      "icon": "signalGenerator.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Waveform": "sine",
+        "Amplitude": 1,
+        "Frequency": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "signalGenerator.svg"
+      }
+    },
+    {
+      "type": "pulse",
+      "label": "Pulse Generator",
+      "icon": "pulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Period": 1,
+        "Width": 50,
+        "StartTime": 0,
+        "Offset": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "pulse.svg"
+      }
+    },
+    {
+      "type": "impulse",
+      "label": "Impulse",
+      "icon": "impulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0,
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "impulse.svg"
+      }
+    },
+    {
+      "type": "sine",
+      "label": "Sine",
+      "icon": "sine.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 1,
+        "Phase": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "sine.svg"
+      }
+    },
+    {
+      "type": "chirp",
+      "label": "Chirp",
+      "icon": "chirp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "f1": 1,
+        "f2": 10,
+        "T": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "chirp.svg"
+      }
+    },
+    {
+      "type": "fileSource",
+      "label": "File",
+      "icon": "fileSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "FileName": ""
+      },
+      "render": {
+        "type": "image",
+        "src": "fileSource.svg"
+      }
+    },
+    {
+      "type": "fromWorkspace",
+      "label": "From Workspace",
+      "icon": "fromWorkspace.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 48,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 24,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "VariableName": "simin",
+        "SampleTime": "0",
+        "Interpolate": "on",
+        "OutputAfterFinalValue": "Extrapolation"
+      },
+      "render": {
+        "type": "math",
+        "formula": "\\mathtt{{params.VariableName}}",
+        "textSize": 14
+      }
+    },
+    {
+      "type": "labelSource",
+      "label": "Label",
+      "icon": "labelSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 40,
+      "height": 40,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 20,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "GotoTag": "x"
+      },
+      "render": {
+        "type": "image",
+        "src": "labelSource.svg"
+      }
+    },
+    {
+      "type": "noise",
+      "label": "Noise",
+      "icon": "noise.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "noise.svg"
+      }
+    },
+    {
+      "type": "clock",
+      "label": "Clock",
+      "icon": "clock.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DisplayTime": false,
+        "Decimation": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "clock.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "enumeratedConstant",
+      "label": "Enumerated Constant",
+      "icon": "enumeratedConstant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "EnumClass": "",
+        "Value": 0
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/source/signalGenerator.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+// signalGenerator: a configurable periodic source (Signal Generator). Waveform
+// is "sine", "square" or "sawtooth"; Amplitude scales it and Frequency is in Hz.
+// sine = A*sin(2*pi*f*t); square starts LOW, i.e. -A*sign(sin(2*pi*f*t));
+// sawtooth ramps linearly DOWN from +A to -A over each period. No input;
+// scalar output; stateless (a pure function of time). C / Rust code generation.
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include &lt;cmath&gt;
+#include &lt;string&gt;
+#include "source_blocks.hpp"
+//=============================================================================
+namespace Nelson {
+namespace NFlow {
+    //=============================================================================
+    // Waveform codes: 0 sine, 1 square, 2 sawtooth.
+    static int
+    sigGenWave(const nflow::BlockDescriptor&amp; bd)
+    {
+        const std::string w = bd.paramStr("Waveform", "sine");
+        if (w == "square") {
+            return 1;
+        }
+        if (w == "sawtooth") {
+            return 2;
+        }
+        return 0;
+    }
+    //=============================================================================
+    bool
+    handleSignalGenerator(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+    {
+        if (phase != Phase::OUTPUT) {
+            return false;
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        const double amp = bd.paramDouble("Amplitude", 1.0);
+        const double freq = bd.paramDouble("Frequency", 1.0);
+        const int wave = sigGenWave(bd);
+        const double t = ctx.t;
+        double v = 0.0;
+        if (wave == 1) {
+            // A period opens on the LOW half and turns at the half-period. Read
+            // from the phase, not from sin(): sin(pi) is a small POSITIVE
+            // residue in binary, so the turn landed one sample late.
+            const double ph = freq * t;
+            v = ((ph - std::floor(ph)) &lt; 0.5) ? -1.0 : 1.0;
+        } else if (wave == 2) {
+            // A period opens at +A and ramps down to -A.
+            const double ph = freq * t;
+            v = 1.0 - 2.0 * (ph - std::floor(ph));
+        } else {
+            v = std::sin(2.0 * M_PI * freq * t);
+        }
+        setOutput(ctx, b.nid, amp * v);
+        return false;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenCSignalGenerator()
+    {
+        BlockCodegenTemplate t;
+        t.emitStep = [](const BlockCodegenArgs&amp; a) {
+            nflow::BlockDescriptor bd(*a.block, *a.variables);
+            const double amp = bd.paramDouble("Amplitude", 1.0);
+            const double freq = bd.paramDouble("Frequency", 1.0);
+            const int wave = sigGenWave(bd);
+            const std::string A = nflow::formatNumber(amp);
+            const std::string omega = nflow::formatNumber(2.0 * M_PI * freq);
+            const std::string f = nflow::formatNumber(freq);
+            std::string expr;
+            if (wave == 1) {
+                expr = A + " * (((" + f + " * t - floor(" + f + " * t)) &lt; 0.5) ? -1.0 : 1.0)";
+            } else if (wave == 2) {
+                expr = A + " * (1.0 - 2.0 * (" + f + " * t - floor(" + f + " * t)))";
+            } else {
+                expr = A + " * sin(" + omega + " * t)";
+            }
+            a.line("out_" + a.id + " = " + expr + ";");
+        };
+        return t;
+    }
+    //=============================================================================
+    BlockCodegenTemplate
+    getCodeGenRustSignalGenerator()
+    {
+        BlockCodegenTemplate t;
+        t.emitStep = [](const BlockCodegenArgs&amp; a) {
+            nflow::BlockDescriptor bd(*a.block, *a.variables);
+            const double amp = bd.paramDouble("Amplitude", 1.0);
+            const double freq = bd.paramDouble("Frequency", 1.0);
+            const int wave = sigGenWave(bd);
+            const std::string A = a.fmt(amp);
+            const std::string omega = a.fmt(2.0 * M_PI * freq);
+            const std::string f = a.fmt(freq);
+            std::string expr;
+            if (wave == 1) {
+                expr = A + " * (if (" + f + " * t - (" + f
+                    + " * t).floor()) &lt; 0.5_f64 { -1.0_f64 } else { 1.0_f64 })";
+            } else if (wave == 2) {
+                expr = A + " * (1.0_f64 - 2.0_f64 * (" + f + " * t - (" + f + " * t).floor()))";
+            } else {
+                expr = A + " * (" + omega + " * t).sin()";
+            }
+            a.line("out_" + a.id + " = " + expr + ";");
+        };
+        return t;
+    }
+    //=============================================================================
+} // namespace NFlow
+} // namespace Nelson
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Generer un sinus 1 Hz d'amplitude 2.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks={ struct('id','g','type','signalGenerator','inputs',0,'outputs',1,'params',struct('Waveform','sine','Amplitude',2,'Frequency',1)), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','g','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.1; d.duration=1.0; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/source/sine.html">sine</a><a class="see-also-link" href="../../nflow_blocks/source/repeatingSequenceInterpolated.html">repeatingSequenceInterpolated</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

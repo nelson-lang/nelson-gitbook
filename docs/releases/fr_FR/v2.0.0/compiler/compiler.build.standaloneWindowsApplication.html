@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>compiler.build.standaloneWindowsApplication</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler.build.standaloneWindowsApplication</span>, <span class="keyword-alias">compiler.build.standaloneWindowsApplication</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Construire une application Windows native sans console.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">result = compiler.build.standaloneWindowsApplication(AppFile)
+result = compiler.build.standaloneWindowsApplication(AppFile, Name, Value, ...)
+result = compiler.build.standaloneWindowsApplication(options)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Charger d'abord le module optionnel compiler avec ncc('--help'). Cette fonction requiert Windows et produit un veritable executable du sous-systeme Windows. Elle ne cree pas de console pour la masquer ensuite.</p>
+    <p>Fournir un point d'entree .m existant et des paires nom-valeur, ou un objet scalaire compiler.build.StandaloneApplicationOptions sans surcharges. La sortie facultative est un objet compiler.build.Results dont BuildType vaut standaloneWindowsApplication.</p>
+    <p>La validation des options, les donnees embarquees, l'analyse des dependances et le runtime installe compatible sont partages avec compiler.build.standaloneApplication. Aucun runtime ni installateur n'est copie.</p>
+    <p>Cette cible ne demande pas de services graphiques par elle-meme. Une application numerique reste numerique ; une application graphique selectionne ces services et conserve la gestion existante des fenetres et de la boucle d'evenements.</p>
+    <p>Files contient l'executable, l'archive .nca lorsque EmbedArchive vaut false, et readme.txt. Le comportement d'archive est partage avec standaloneApplication. ExecutableIcon embarque l'image choisie dans les ressources natives Windows. Les sorties redirigees restent disponibles.</p>
+    <p>OutputDir peut contenir des fichiers sans rapport. Une construction precedente du meme ExecutableName et de la meme architecture peut etre reconstruite apres verification du rapport et des empreintes des sorties. Les fichiers modifies et collisions non enregistrees sont refuses. Les regles de publication protegee et de recuperation de compiler.build.standaloneApplication s'appliquent aussi, y compris lors du passage entre cibles avec et sans console. Seuls les parametres operationnels de StandaloneApplicationOptions sont acceptes.</p>
+    <p>Le dossier de sortie contient aussi buildresult.json, un rapport de preparation de la distribution. Il ne fait pas partie de Results.Files et n'est pas necessaire pour executer l'application. Une reconstruction verifiee publie le nouveau rapport en dernier. Utiliser le nouvel objet Results apres reconstruction. Voir compiler.build.Results pour le contenu et les limites du rapport.</p>
+    <p>Les erreurs de chargement natif utilisent le meme code de sortie 2 et les memes diagnostics stderr que compiler.build.standaloneApplication, avec le chemin et le code d'erreur Windows. Configurer RuntimeLogFile pour conserver ces diagnostics et les sorties applicatives sans console. Voir StandaloneApplicationOptions pour les chemins et les erreurs.</p>
+    <p><b>TreatInputsAsNumeric</b> (false par defaut) active une conversion unique des arguments de fonction par la builtin str2double. Les formes de commande sont <b>-n</b> et <b>--numeric-inputs</b>. Le texte invalide donne NaN, aucun argument n'est execute comme du code et argv('user') conserve le texte original. Voir <a href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a> pour les valeurs prises en charge et le runtime requis.</p>
+    <p><b>SupportPackages</b> selectionne la detection automatique, aucun paquet enregistre ou une liste de noms nmm autorises. Voir <a href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a> pour la politique de dependances et ses limites.</p>
+  </div>
+</div>
+<div class="section"><div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a><a class="see-also-link" href="../compiler/compiler.build.Results.html">compiler.build.Results</a><a class="see-also-link" href="../compiler/compiler_build_tutorial.html">compiler_build_tutorial</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

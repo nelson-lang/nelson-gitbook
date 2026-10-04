@@ -1,13 +1,14 @@
 # Gestion des flux
 
-Le module Stream Manager fournit des outils pour gérer les flux d'entrée et de sortie dans Nelson.
+Le module Stream Manager fournit des outils pour gerer les flux d'entree et de sortie dans Nelson.
 
-Il prend en charge la lecture et l'écriture de données texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la détection de la fin de fichier et la gestion des erreurs de fichier.
+Il prend en charge la lecture et l'ecriture de donnees texte et binaires dans des fichiers, la gestion des positions dans les fichiers, la detection de la fin de fichier et la gestion des erreurs de fichier.
 
-Le module permet également la journalisation de l'activité de session ainsi que le chargement et la sauvegarde des données de l'espace de travail, facilitant des opérations d'E/S robustes et flexibles dans les scripts et applications.
+Le module gere aussi la journalisation de session ainsi que le chargement et la sauvegarde des donnees de l'espace de travail.
 
 ## Functions
 
+- [cprintf](cprintf.md) - Ecrit du texte formatte et style vers stdout.
 - [diary](diary.md) - Journal d'une session.
 - [fclose](fclose.md) - Ferme un fichier ouvert.
 - [feof](feof.md) - Teste la fin de fichier.
@@ -25,6 +26,8 @@ Le module permet également la journalisation de l'activité de session ainsi qu
 - [fsize](fsize.md) - Retourne la taille d'un fichier ouvert.
 - [ftell](ftell.md) - Retourne le décalage de l'octet courant par rapport au début d'un fichier.
 - [fwrite](fwrite.md) - Écrire des données en binaire dans le fichier spécifié par le descripteur fid.
-- [load](load.md) - charger des données depuis un fichier .nh5 ou .mat dans l'espace de travail de Nelson.
+- [load](load.md) - Charge des donnees depuis un fichier .nh5 ou .mat dans l'espace de travail de Nelson.
+- [readlines](readlines.md) - Lire les lignes d'un fichier texte en tableau de chaînes.
 - [save](save.md) - enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat
 - [sscanf](sscanf.md) - Lire des données formatées depuis des chaînes.
+- [textscan](textscan.md) - Lit des données formatées depuis une chaîne ou un fichier.

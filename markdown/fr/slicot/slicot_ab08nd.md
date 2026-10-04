@@ -87,6 +87,10 @@ D = [0.0   0.0;
 
 ```
 
+## 🔗 Voir aussi
+
+[slicot_ag08bd](../slicot/slicot_ag08bd.md), [tzero](../control_system/tzero.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

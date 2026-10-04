@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>ai</module>
+    <section name="AI and MCP integration.">
+      <chapter_description/>
+      <keyword name="aiask" link="aiask.html" description="Ask an external AI provider from Nelson."/>
+      <keyword name="aimodels" link="aimodels.html" description="List models available from an AI provider."/>
+      <keyword name="aioptions" link="aioptions.html" description="Create options for AI provider requests."/>
+      <keyword name="mcpinfo" link="mcpinfo.html" description="Return Nelson MCP server information."/>
+      <keyword name="mcpserver" link="mcpserver.html" description="Start Nelson MCP server on standard input and output."/>
+      <keyword name="mcpusage" link="mcpusage.html" description="Use Nelson through MCP from an AI agent."/>
+    </section>
+  </toc>
+</help_summary>

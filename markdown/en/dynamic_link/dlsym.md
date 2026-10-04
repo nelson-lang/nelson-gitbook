@@ -11,7 +11,7 @@ Loads a C/Fortran symbol for an dynamic library.
 - lib - a dllib handle.
 - symbolname - a string: symbol to load.
 - return_type - a string: return type of the C/Fortran function.
-- params_types - a cell of strings: arguments using a special syntax with differents data types.
+- params_types - a cell of strings: arguments using a special syntax with different data types.
 
 ## 📤 Output argument
 

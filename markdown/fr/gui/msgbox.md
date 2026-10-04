@@ -1,59 +1,52 @@
 # msgbox
 
-Crée une boîte de dialogue de message.
+Cree une boite de dialogue de message.
 
 ## 📝 Syntaxe
 
 - h = msgbox(message)
-- h = msgbox(message, mode)
 - h = msgbox(message, title)
-- h = msgbox(message, title, mode)
 - h = msgbox(message, title, icon)
 - h = msgbox(message, title, icon, mode)
+- h = msgbox(message, mode)
 
 ## 📥 Argument d'entrée
 
-- message - a string or a cell of string: the message to display.
-- title - a string : titre de la boîte de dialogue.
-- icon - a string: 'none', 'error', 'help', 'warn' or 'question'.
-- mode - a string: 'modal', 'on' or 'nonmodal'.
+- message - Message text. Use a character vector, string array, or cell array of character vectors for multiple lines.
 
 ## 📤 Argument de sortie
 
-- h - a QObject handle.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>msgbox</b> creates an message dialog box.
-
-<b>msgbox</b> crée une boîte de dialogue de message.
-
-<b>h = msgbox(message, title, 'on')</b> indique si une boîte de dialogue existante portant le même nom doit être remplacée.
+msgbox creates a message dialog and returns a graphics figure handle. The handle can be used with get, set, close, delete, and waitfor.
 
 ## 💡 Exemples
 
-```matlab
-h = msgbox('help string')
-```
+Creer une boite de message.
 
 ```matlab
-h = msgbox('help string', 'dialog title')
+h = msgbox({'Operation', 'completed'}, 'Status', 'help', 'non-modal');
 ```
 
+<img src="msgbox_example.svg" align="middle"/>
+Create a plain message box.
+
 ```matlab
-h = msgbox('help string', 'dialog title')
-h = msgbox('help string', 'dialog title', 'on')
+h = msgbox('Ready.', 'Status', 'none', 'non-modal');
+close(h)
 ```
 
 ## 🔗 Voir aussi
 
-[helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [warndlg](../gui/warndlg.md).
+[helpdlg](../gui/helpdlg.md), [warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--
 ## 👤 Auteur

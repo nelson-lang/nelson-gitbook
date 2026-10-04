@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nelson.compiler.BuildOptions</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">nelson.compiler.BuildOptions</span>, <span class="keyword-alias">nelson.compiler.BuildOptions</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Configure a native application build.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">options = nelson.compiler.BuildOptions(AppFile)
+options = nelson.compiler.BuildOptions(AppFile, Name, Value, ...)
+options = nelson.compiler.BuildOptions(AppFile, settings)
+values = struct(options)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">AppFile</td>
+<td>Existing .m entry file: character row vector or scalar string.</td>
+</tr>
+<tr>
+<td class="param-name">settings</td>
+<td>Scalar structure of supported option names and values.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">options</td>
+<td>Scalar value object with validated, writable properties.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Load the optional compiler module first, for example with <b>ncc('--help')</b>. <b>ncc('options', AppFile, ...)</b> loads it and constructs this same object. Construction validates options but does not build an executable.</p>
+    <p>Names are case-insensitive and must be complete. Unknown names and an AppFile override in settings are rejected. Setters also validate subsequent assignments. Text accepts character row vectors or scalar strings; logical options accept true, false, numeric zero or one, and on or off text.</p>
+    <p><b>AppFile</b>: existing entry script or function. Relative paths are anchored to the current directory when assigned. AdditionalFiles patterns are expanded during analysis/build, not frozen at construction.</p>
+    <p><b>ExecutableName</b>: defaults to the entry file stem. It must be an identifier. Windows device names are rejected on Windows. Do not include .exe.</p>
+    <p><b>ExecutableVersion</b>: default <b>1.0.0.0</b>. One to four decimal components in 0..65535, with omitted trailing components set to zero; for example 2.0 becomes 2.0.0.0. On Windows it sets native file and product versions. Other platforms validate the value but do not write Windows resources.</p>
+    <p>Version text is limited to 23 characters, including separators.</p>
+    <p><b>OutputDir</b>: defaults to ExecutableName followed by <b>standaloneApplication</b>, relative to the construction directory. Changing ExecutableName later does not change OutputDir. An existing directory may be used, but the output executable and bundled runtime destination must not already exist.</p>
+    <p><b>AdditionalFiles</b>: default empty cell. A file, recursive directory, wildcard pattern, string array or cell of text paths. Use it for resources and dynamically resolved code that static analysis cannot infer.</p>
+    <p><b>AutoDetectDataFiles</b>: default true. Include supported, statically resolvable data-file references. False disables this discovery; explicit AdditionalFiles remain included.</p>
+    <p><b>CustomHelpTextFile</b>: default empty. Optional existing text file displayed by the deployed application's --help option.</p>
+    <p><b>Mode</b>: <b>auto</b> (default), <b>cli</b> or <b>gui</b>. Selects runtime capabilities; gui includes graphics support. <b>NoConsole</b>: default false; true selects a Windows application without a console and is rejected on other platforms. It is independent of Mode and does not enable graphics or redirect output to a log.</p>
+    <p><b>RuntimeMode</b>: <b>bundled</b> (default) copies the selected runtime next to the executable; <b>installed</b> reuses a compatible installation and copies no runtime. <b>Verbose</b>: default false; print build details.</p>
+    <p>Options have value semantics. Copying and modifying an object does not change the original. <b>struct(options)</b> returns all properties. To reconstruct, pass values.AppFile as the first argument and remove AppFile from the settings structure.</p>
+    <p><b>RuntimeLogFile</b>: empty by default (disabled). A nonempty filename enables an append-only UTF-8 log containing runtime initialization, standard output and standard error, without suppressing console output. Relative paths are resolved beside the executable, not against the calling directory. The parent directory must already exist and be writable; environment variables are not expanded. Failure to open or finish the log returns exit code 2 unless the application already failed. Concurrent streams and processes may interleave chunks; complete lines and global ordering are not guaranteed. Capture retains incomplete UTF-8 characters until the next read before appending them. Malformed or truncated output is preserved as raw bytes. Shared append behavior on network filesystems depends on the filesystem. Logging adds file I/O only when enabled and requires a runtime with the output capture interface on Windows.</p>
+    <p><b>ExecutableIcon</b> is empty by default. On Windows, select an existing image to replace the native application icon at build time. See <a href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a> for formats, transparency, sizing and platform limits. The command form is <b>--executable-icon image</b>.</p>
+    <p><b>EmbedArchive</b> defaults to true. False maps to <b>-C</b> or <b>--external-archive</b> and produces an adjacent .nca to distribute with the executable in either runtime mode. See <a href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a> for integrity checks, renaming and limitations.</p>
+    <p><b>TreatInputsAsNumeric</b> (false by default) enables one-time built-in str2double conversion of function arguments. The command forms are <b>-n</b> and <b>--numeric-inputs</b>. Invalid text becomes NaN, arguments are never evaluated as code, and argv('user') retains the original text. See <a href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a> for supported values and runtime requirements.</p>
+    <p><b>SupportPackages</b> defaults to {'autodetect'}. Use 'none' or registered nmm package names to filter dependencies at build time. The repeatable command option is <b>--support-package name</b>. See <a href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a> for exclusions, explicit-input conflicts and limitations.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Configure without building</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ncc('--help');
+entry = fullfile(modulepath('compiler'), 'examples', 'standalone', 'app_entry.m');
+options = nelson.compiler.BuildOptions(entry, 'RuntimeMode', 'installed');
+options.ExecutableVersion = '2.0';
+values = struct(options);
+copy = nelson.compiler.BuildOptions(values.AppFile, rmfield(values, 'AppFile'));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../modules_manager/ncc.html">ncc</a><a class="see-also-link" href="../compiler/nelson.compiler.build.html">nelson.compiler.build</a><a class="see-also-link" href="../compiler/nelson.compiler.analyze.html">nelson.compiler.analyze</a><a class="see-also-link" href="../compiler/compiler_standalone_tutorial.html">compiler_standalone_tutorial</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

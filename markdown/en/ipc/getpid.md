@@ -13,16 +13,16 @@ Get nelson(s) Process IDentificator.
 
 ## 📤 Output argument
 
-- p - a double: current Process Identificator.
+- p - a double: current Process Identifier.
 - v - a vector of double: list of nelson Processes Identification (with same arch) currently running for current user.
 
 ## 📄 Description
 
-<b>p = getpid()</b> returns current nelson process identificator currently running on computer.
+<b>p = getpid()</b> returns current nelson process identifier currently running on computer.
 
-<b>v = getpid('available')</b> returns list of nelson processes identificators (with same arch) running for current user.
+<b>v = getpid('available')</b> returns list of nelson processes identifiers (with same arch) running for current user.
 
-win64 and win32 are two differents architecture but they can run in same time.
+win64 and win32 are two different architecture but they can run in same time.
 
 ## 💡 Example
 

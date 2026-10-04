@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>ode_solvers</module>
+    <section name="ODE solvers">
+      <chapter_description>
+    <p>The ODE Solvers module provides time integration functions for explicit, stiff, and implicit differential equation workflows in Nelson.</p>
+    <p>It includes solver entry points, delay and boundary value problem wrappers, option handling, interpolation, solution extension, event detection, and object-oriented problem definitions.</p>
+    <p>When the optional SUNDIALS backend is built, the object workflow can also select CVODES and IDAS solver values.</p>
+    <p>The module is designed for numerical experiments, simulations, and teaching examples that need compact solver setup and reproducible result objects.</p>
+    <p>Tutorial pages cover solver choice, events, tolerances, mass matrices, implicit equations, delay equations, boundary value problems, interpolation, extension, object workflows, and complex states.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Area</th>
+        <th>Main entries</th>
+      </tr>
+      <tr>
+        <td>Initial value problems</td>
+        <td>
+          <b>ode23</b>, <b>ode45</b>, <b>ode78</b>, <b>ode89</b>, <b>ode113</b>, <b>ode15s</b>, <b>ode15i</b></td>
+      </tr>
+      <tr>
+        <td>Delay and boundary value problems</td>
+        <td>
+          <b>dde23</b>, <b>ddesd</b>, <b>ddensd</b>, <b>bvp4c</b>, <b>bvp5c</b></td>
+      </tr>
+      <tr>
+        <td>Utilities</td>
+        <td>
+          <b>odeset</b>, <b>deval</b>, <b>odextend</b>, <b>ode</b>, <b>odeEvent</b>, <b>odeSensitivity</b></td>
+      </tr>
+    </table>
+  </chapter_description>
+      <keyword name="ode workflows" link="1_ode_workflows.html" description="ODE examples and object workflow."/>
+      <keyword name="ode solver selection" link="2_ode_solver_selection.html" description="Choose an ODE solver."/>
+      <keyword name="ode events tutorial" link="3_ode_events_tutorial.html" description="Locate events during ODE integration."/>
+      <keyword name="ode tolerances tutorial" link="4_ode_tolerances_tutorial.html" description="Control ODE accuracy and statistics."/>
+      <keyword name="ode mass implicit tutorial" link="5_ode_mass_implicit_tutorial.html" description="Solve mass matrix and implicit ODE problems."/>
+      <keyword name="ode interpolation extension tutorial" link="6_ode_interpolation_extension_tutorial.html" description="Interpolate and extend ODE solutions."/>
+      <keyword name="ode object workflow tutorial" link="7_ode_object_workflow_tutorial.html" description="Define and solve ODE problems with class objects."/>
+      <keyword name="ode complex workflow tutorial" link="8_ode_complex_workflow_tutorial.html" description="Solve object ODE problems with complex states."/>
+      <keyword name="bvp4c" link="bvp4c.html" description="Solve boundary value problems with fourth-order collocation."/>
+      <keyword name="bvp5c" link="bvp5c.html" description="Solve boundary value problems with mesh refinement."/>
+      <keyword name="bvpget" link="bvpget.html" description="Get a BVP option value."/>
+      <keyword name="bvpinit" link="bvpinit.html" description="Create an initial BVP solution guess."/>
+      <keyword name="bvpset" link="bvpset.html" description="Create or update BVP options."/>
+      <keyword name="bvpxtend" link="bvpxtend.html" description="Extend a BVP solution guess."/>
+      <keyword name="dde23" link="dde23.html" description="Solve delay equations with constant delays."/>
+      <keyword name="ddeget" link="ddeget.html" description="Get a DDE option value."/>
+      <keyword name="ddensd" link="ddensd.html" description="Solve neutral delay equations."/>
+      <keyword name="ddesd" link="ddesd.html" description="Solve delay equations with state-dependent delayed times."/>
+      <keyword name="ddeset" link="ddeset.html" description="Create or update DDE options."/>
+      <keyword name="decic" link="decic.html" description="Compute consistent initial conditions for implicit ODEs."/>
+      <keyword name="deval" link="deval.html" description="Evaluate an ODE solution."/>
+      <keyword name="nelson.ode.ODEResults" link="nelson.ode.ODEResults.html" description="Result object returned by solve on an ode object."/>
+      <keyword name="nelson.ode.Options" link="nelson.ode.Options.html" description="Base class of the solver options classes."/>
+      <keyword name="nelson.ode.options.CVODESNonstiff" link="nelson.ode.options.CVODESNonstiff.html" description="Options object for the optional CVODES Adams solver."/>
+      <keyword name="nelson.ode.options.CVODESStiff" link="nelson.ode.options.CVODESStiff.html" description="Options object for the optional CVODES BDF solver."/>
+      <keyword name="nelson.ode.options.IDAS" link="nelson.ode.options.IDAS.html" description="Options object for the optional IDAS BDF solver."/>
+      <keyword name="nelson.ode.options.ODE113" link="nelson.ode.options.ODE113.html" description="Options object for the ode113 solver."/>
+      <keyword name="nelson.ode.options.ODE15i" link="nelson.ode.options.ODE15i.html" description="Options object for the ode15i solver."/>
+      <keyword name="nelson.ode.options.ODE15s" link="nelson.ode.options.ODE15s.html" description="Options object for the ode15s solver."/>
+      <keyword name="nelson.ode.options.ODE23" link="nelson.ode.options.ODE23.html" description="Options object for the ode23 solver."/>
+      <keyword name="nelson.ode.options.ODE23s" link="nelson.ode.options.ODE23s.html" description="Options object for the ode23s solver."/>
+      <keyword name="nelson.ode.options.ODE23t" link="nelson.ode.options.ODE23t.html" description="Options object for the ode23t solver."/>
+      <keyword name="nelson.ode.options.ODE23tb" link="nelson.ode.options.ODE23tb.html" description="Options object for the ode23tb solver."/>
+      <keyword name="nelson.ode.options.ODE45" link="nelson.ode.options.ODE45.html" description="Options object for the ode45 solver."/>
+      <keyword name="nelson.ode.options.ODE78" link="nelson.ode.options.ODE78.html" description="Options object for the ode78 solver."/>
+      <keyword name="nelson.ode.options.ODE89" link="nelson.ode.options.ODE89.html" description="Options object for the ode89 solver."/>
+      <keyword name="ode" link="ode.html" description="Object interface for ODE problems."/>
+      <keyword name="ode113" link="ode113.html" description="Variable order nonstiff ODE solver entry point."/>
+      <keyword name="ode15i" link="ode15i.html" description="Implicit ODE solver entry point."/>
+      <keyword name="ode15s" link="ode15s.html" description="Stiff ODE solver entry point."/>
+      <keyword name="ode23" link="ode23.html" description="Low order nonstiff ODE solver."/>
+      <keyword name="ode23s" link="ode23s.html" description="Stiff ODE solver entry point."/>
+      <keyword name="ode23t" link="ode23t.html" description="Moderately stiff ODE solver entry point."/>
+      <keyword name="ode23tb" link="ode23tb.html" description="Stiff ODE solver entry point."/>
+      <keyword name="ode45" link="ode45.html" description="Nonstiff ODE solver."/>
+      <keyword name="ode78" link="ode78.html" description="High order nonstiff ODE solver."/>
+      <keyword name="ode89" link="ode89.html" description="High order nonstiff ODE solver."/>
+      <keyword name="odeDelay" link="odeDelay.html" description="Delay definition object for ODE workflows."/>
+      <keyword name="odeEvent" link="odeEvent.html" description="Event description for ODE object workflows."/>
+      <keyword name="odeJacobian" link="odeJacobian.html" description="Jacobian description for ODE solvers."/>
+      <keyword name="odeMassMatrix" link="odeMassMatrix.html" description="Mass matrix description for ODE solvers."/>
+      <keyword name="odeSensitivity" link="odeSensitivity.html" description="Sensitivity definition object for ODE workflows."/>
+      <keyword name="odeexamples" link="odeexamples.html" description="ODE examples entry point."/>
+      <keyword name="odeget" link="odeget.html" description="Read an ODE option."/>
+      <keyword name="odephas2" link="odephas2.html" description="Two-dimensional phase-plane ODE output function."/>
+      <keyword name="odephas3" link="odephas3.html" description="Three-dimensional phase-plane ODE output function."/>
+      <keyword name="odeplot" link="odeplot.html" description="ODE output function for solution plotting."/>
+      <keyword name="odeprint" link="odeprint.html" description="Command-window ODE output function."/>
+      <keyword name="odeset" link="odeset.html" description="Create or update ODE options."/>
+      <keyword name="odextend" link="odextend.html" description="Extend an ODE solution."/>
+    </section>
+  </toc>
+</help_summary>

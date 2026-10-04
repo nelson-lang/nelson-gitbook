@@ -1,0 +1,7 @@
+- [ai](README.md)
+  - [aiask](aiask.md)
+  - [aimodels](aimodels.md)
+  - [aioptions](aioptions.md)
+  - [mcpinfo](mcpinfo.md)
+  - [mcpserver](mcpserver.md)
+  - [mcpusage](mcpusage.md)

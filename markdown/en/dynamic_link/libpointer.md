@@ -1,6 +1,6 @@
 # libpointer
 
-Creates an C pointer object usuable in Nelson.
+Creates an C pointer object usable in Nelson.
 
 ## 📝 Syntax
 

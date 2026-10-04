@@ -50,6 +50,10 @@ S.subs = 'number';
 R = subsref(A, S)
 ```
 
+## 🔗 See also
+
+[subsasgn](../operators/subsasgn.md), [subsindex](../operators/subsindex.md), [colon](../operators/colon.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

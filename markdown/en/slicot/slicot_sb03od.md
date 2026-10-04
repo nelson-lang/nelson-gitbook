@@ -51,6 +51,10 @@ Q_IN = zeros(3, 3);
 [Q_OUT, B_OUT, SCALE, WR, WI, INFO] = slicot_sb03od(DICO, FACT, TRANS, A, Q_IN, B_IN)
 ```
 
+## 🔗 See also
+
+[slicot_sb03md](../slicot/slicot_sb03md.md), [lyap](../control_system/lyap.md), [dlyap](../control_system/dlyap.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>nflow_gui</module>
+    <section name="nflow editor">
+      <chapter_description>
+    <p>The nflow editor is Nelson's block-diagram environment for building and simulating dynamic systems.</p>
+    <p>It provides a visual editor for wiring blocks and subsystems, saving and loading diagrams in the <b>.nflow</b> JSON format, and running simulations with either the fixed-step engine or the variable-step (CVODES) solver, with zero-crossing detection for discontinuous blocks.</p>
+    <p>Diagrams can also be turned into standalone C or Rust code through the code generator.</p>
+    <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p>
+  </chapter_description>
+      <keyword name="nflow" link="nflow.html" description="Launch the nflow editor, optionally on a model file."/>
+      <keyword name="nflow_dashboard" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardScope" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardDisplay" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardEdit" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardHalfGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardKnob" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardLamp" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardLinearGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardMultiStateImage" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardPushButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardQuarterGauge" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardRadioButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardRockerSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardRotarySwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardSlider" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardSliderSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardToggleSwitch" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardCallbackButton" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardCheckBox" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="block:dashboardComboBox" link="nflow_dashboard.html" description="Monitor and adjust NFlow simulations with interactive Dashboard blocks."/>
+      <keyword name="nflow_multirate" link="nflow_multirate.html" description="Running blocks at different sample rates (multi-rate)."/>
+      <keyword name="nflow_solvers" link="nflow_solvers.html" description="Choosing how a diagram is integrated (solver selection)."/>
+      <keyword name="nflow_wire_editing" link="nflow_wire_editing.html" description="Wire routing and editing in the nflow editor."/>
+      <keyword name="nflow_workspace" link="nflow_workspace.html" description="Using the nflow editor workspace."/>
+      <keyword name="open_system" link="open_system.html" description="Open the nflow editor on a model, a model file, or an SSP archive."/>
+    </section>
+  </toc>
+</help_summary>

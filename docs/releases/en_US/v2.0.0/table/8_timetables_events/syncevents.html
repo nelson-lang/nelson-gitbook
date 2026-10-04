@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>syncevents</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">syncevents</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Add and synchronize the variables of the attached event table to a timetable.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">TT2 = syncevents(TT)
+TT2 = syncevents(TT, defaultLabel)
+TT2 = syncevents(..., 'EventDataVariables', vars)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">TT</td>
+<td>Input timetable with an event table in <b>TT.Properties.Events</b>.</td>
+</tr>
+<tr>
+<td class="param-name">defaultLabel</td>
+<td>Scalar: label of the rows without event, converted to the type of the event labels.</td>
+</tr>
+<tr>
+<td class="param-name">vars</td>
+<td>Variables of the event table to copy: names (string array, character vector, cell array of character vectors), indices or logical mask.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">TT2</td>
+<td>Timetable with the event variables added.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>syncevents</b> copies the variables of the event table attached to <b>TT</b> into the timetable. Each row of <b>TT</b> gets the values of the events that happen at its row time: an event without length or end matches the rows at its time, an event with a length or an end matches the rows in [time, end). A row matched by several events is repeated, once per event, in the order of the event table. The other rows get missing values (NaN, NaT, &lt;missing&gt;, &lt;undefined&gt;, an empty character vector in a cell, 0 or false).</p>
+    <p>By default, all the variables of the event table are copied except the event lengths or ends variable. With <b>EventDataVariables</b>, only the listed variables are copied, in that order.</p>
+    <p>A copied variable whose name is already a variable of <b>TT</b> is added with the suffix <b>_et</b>, the variable of <b>TT</b> being renamed with the suffix <b>_tt</b>. The units and descriptions of the event variables are copied. The event table stays attached to the result.</p>
+    <p>An error is raised when no event table is attached to <b>TT</b>. To attach events, assign <b>TT.Properties.Events</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">TT = timetable(seconds([1; 2; 3; 4]), [10; 20; 30; 40], 'VariableNames', {'A'});
+TT.Properties.Events = eventtable(seconds([2; 4]), 'EventLabels', ["start"; "stop"]);
+syncevents(TT)
+syncevents(TT, "none")</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">TT = timetable(seconds((1:5)'), (1:5)', 'VariableNames', {'A'});
+E = timetable(seconds(1.5), "heat", seconds(2), 80, 'VariableNames', {'L', 'D', 'Power'});
+TT.Properties.Events = eventtable(E, 'EventLabelsVariable', 'L', 'EventLengthsVariable', 'D');
+syncevents(TT, 'EventDataVariables', "Power")</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../table/extractevents.html">extractevents</a><a class="see-also-link" href="../../table/eventtable.html">eventtable</a><a class="see-also-link" href="../../table/timetable.html">timetable</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

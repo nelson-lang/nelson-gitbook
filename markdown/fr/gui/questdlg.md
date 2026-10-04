@@ -1,62 +1,55 @@
 # questdlg
 
-Crée une boîte de dialogue de question.
+Cree une boite de dialogue de question.
 
 ## 📝 Syntaxe
 
-- buttonname = questdlg(question)
-- buttonname = questdlg(question, title)
-- buttonname = questdlg(question, title, default)
-- buttonname = questdlg(question, title, text1, default)
-- buttonname = questdlg(question, title, text1, text2, default)
-- buttonname = questdlg(question, title, text1, text2, text3, default)
+- answer = questdlg(question)
+- answer = questdlg(question, title)
+- answer = questdlg(question, title, btn1, btn2, default)
+- answer = questdlg(question, title, btn1, btn2, btn3, default)
 
 ## 📥 Argument d'entrée
 
-- question - a string or a cell of string: the question.
-- title - a string: the title of the dialog box.
-- text1 - a string: text of button 1.
-- text2 - a string: text of button 2.
-- text3 - a string: text of button 3.
-- default - a string: text of selected button by default.
+- question - Question text. Use a character vector, string, or cell array of character vectors.
 
 ## 📤 Argument de sortie
 
-- buttonname - a string: text of the clicked button or ' '.
+- answer - Selected button label. Returns an empty character vector when the dialog is dismissed.
 
 ## 📄 Description
 
-<b>questdlg</b> affiche une question dans une boîte de dialogue et renvoie le texte du bouton activé.
-
-La boîte de dialogue possède trois boutons par défaut : 'Yes', 'No', 'Cancel', avec 'Yes' comme valeur par défaut.
+questdlg displays a question dialog and returns the selected button label.
 
 ## 💡 Exemples
 
-```matlab
-res = questdlg('What is the answer to the ultimate question of life, the universe and everything ?', 'A question for geeks', '41', '42', '43', '42')
-```
+Apercu d une boite de question.
 
 ```matlab
-res = questdlg ('Easy ?', 'Jeff', 'No', 'Okay', 'Okay')
+f = dialog('Name', 'Question', 'WindowStyle', 'normal', 'Position', [100 100 360 150]);
+uicontrol(f, 'Style', 'text', 'String', 'Continue?', 'Position', [40 84 260 24]);
+uicontrol(f, 'Style', 'pushbutton', 'String', 'Yes', 'Position', [80 30 70 24]);
+uicontrol(f, 'Style', 'pushbutton', 'String', 'No', 'Position', [160 30 70 24]);
+uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [240 30 70 24]);
 ```
 
-```matlab
-res = questdlg('How are you ?', 'Health', 'Fine', 'Good', 'sick', 'Fine')
-```
+<img src="questdlg_example.svg" align="middle"/>
+Use custom button labels.
 
 ```matlab
-res = questdlg({'Is', 'this', 'a', 'multi line', 'test ?'}, 'Test :)')
+answer = questdlg('Save changes?', 'Confirm', 'Save', 'Discard', 'Cancel', 'Save');
+disp(answer)
 ```
 
 ## 🔗 Voir aussi
 
-[warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [helpdlg](../gui/helpdlg.md), [msgbox](../gui/msgbox.md).
+[msgbox](../gui/msgbox.md), [uiconfirm](../gui/uiconfirm.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--
 ## 👤 Auteur

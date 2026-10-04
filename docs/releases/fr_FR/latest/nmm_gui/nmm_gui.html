@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nmm_gui</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nmm_gui</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Ouvrir la fenêtre du gestionnaire de paquets.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">nmm_gui()
+nmm_gui(action, package_name)
+nmm_gui(action, package_name, version)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>nmm_gui</b> ouvre la fenêtre du gestionnaire de paquets Nelson, une interface graphique pour <b>nmm</b>. Un nouvel appel remet la fenêtre existante au premier plan et l’actualise. La fenêtre est accessible depuis le bureau (menu Outils, barre d’outils et rail des panneaux) et depuis la ligne de commande avancée. Dans le bureau web, <b>nmm_gui</b> affiche le gestionnaire de paquets comme un panneau <b>Package Manager</b> ancré à côté de la fenêtre de commande (Outils &gt; Package Manager ouvre le même panneau) : une seule fenêtre de navigateur suffit.</p>
+    <p>La liste de gauche présente tous les paquets connus de Nelson : les paquets installés et ceux publiés par le registre configuré (voir <b>NELSON_NMM_REGISTRY</b> dans <b>nmm</b>). Les filtres <b>Tous</b>, <b>Installés</b> et <b>Mises à jour</b> ainsi que le champ de recherche restreignent la liste ; le panneau de droite détaille le paquet sélectionné : résumé, métadonnées, mots-clés, page d’accueil et actions applicables.</p>
+    <p><b>Installer</b>, <b>Mettre à jour</b> et <b>Supprimer</b> exécutent la commande <b>nmm</b> correspondante dans la console Nelson, dont la sortie reste visible. Pendant l’exécution, la fenêtre affiche la progression étape par étape (récupération, dépendances, construction, tests du paquet s’ils sont activés, enregistrement) et actualise la liste à la fin. Les opérations saisies dans la console sont suivies de la même manière.</p>
+    <p>Les tests du paquet ne sont pas exécutés à l’installation sauf demande explicite (voir <b>nmm</b>) : l’indication à côté du bouton d’installation précise si un paquet est construit depuis les sources ou installé depuis une archive préconstruite.</p>
+    <p><b>nmm_gui(action, package_name)</b> ouvre la fenêtre (ou la met au premier plan) sur un paquet donné. <b>action</b> vaut <b>'show'</b> pour sélectionner le paquet, ou <b>'install'</b> pour le sélectionner et lancer son installation. Un argument <b>version</b> optionnel choisit la version à installer. Les arguments sont vérifiés avant toute ouverture de fenêtre.</p>
+    <p>Pour un paquet non installé, une liste <b>Version</b> choisit la version à installer. Un paquet installé peut aussi être chargé ou déchargé pour la session, et épinglé sur sa version (<b>Épingler</b>, <b>Dépingler</b>). Dans le filtre <b>Mises à jour</b>, <b>Tout mettre à jour</b> met à jour chaque paquet dont une version plus récente existe. <b>Installer depuis un fichier ou une URL</b> installe une archive <b>.nmz</b> locale, un dossier de module ou une URL git.</p>
+    <p>Le panneau de détail présente aussi l’arbre des dépendances (installées, à installer ou manquantes), les paquets installés qui requièrent le paquet sélectionné, son readme et son changelog, ainsi que ses liens dépôt, tickets et documentation. <b>Copier la commande d’installation</b> copie l’appel <b>nmm('install', ...)</b> correspondant, avec la version affichée, pour un paquet publié par le registre. <b>Vérifier</b> contrôle un paquet installé (dossier du module, <b>module.json</b>, version, dépendances).</p>
+    <p><b>Cache</b> liste les archives du cache hors ligne des paquets, les vérifie et les supprime. <b>Environnement</b> exporte les paquets installés sous forme de lignes <b>nom version</b>, et installe les paquets manquants d’une telle liste.</p>
+    <p><b>Actualiser</b> recharge les paquets installés et télécharge toujours le registre actuel ; la sélection d’un paquet réutilise le registre lu lors de la dernière actualisation. La fenêtre suit la langue de Nelson.</p>
+    <p>La fenêtre requiert le module <b>webview</b>. Sans registre configuré, les paquets installés restent listés et peuvent être supprimés.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Ouvrir ou actualiser la fenêtre du gestionnaire de paquets.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nmm_gui()</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Ouvrir la fenêtre sur un paquet et l'installer.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nmm_gui('install', 'ngen')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../modules_manager/nmm.html">nmm</a><a class="see-also-link" href="../webview/demo.html">demo</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

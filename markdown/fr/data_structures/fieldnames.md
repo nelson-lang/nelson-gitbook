@@ -1,45 +1,56 @@
 # fieldnames
 
-Renvoie les noms de champs d'une structure ou d'un handle.
+Renvoie les noms des champs d'une structure ou les proprietes publiques classdef.
 
 ## 📝 Syntaxe
 
 - names = fieldnames(st)
-- names = fieldnames(h)
-- names = fieldnames(h, '-full')
+- names = fieldnames(obj)
+- names = fieldnames(objArray)
 
 ## 📥 Argument d'entrée
 
 - st - une structure
-- h - un objet handle
+- obj - un objet classdef ou un objet handle
+- objArray - un tableau d'objets classdef ou de handles
 
 ## 📤 Argument de sortie
 
-- names - un tableau cellulaire de chaînes
+- names - un tableau (cell) de chaines
 
 ## 📄 Description
 
-<b>names = fieldnames(st)</b> renvoie un tableau cellulaire de chaînes contenant les noms des champs de la structure d'entrée.
+<b>fieldnames(st)</b> renvoie un tableau de chaines contenant les noms des champs de la structure d'entree.
 
-<b>names = fieldnames(h)</b> renvoie un tableau cellulaire de chaînes contenant les noms des propriétés du handle (sans les propriétés cachées).
+Pour les objets classdef, <b>fieldnames(obj)</b> renvoie les memes noms de proprietes publiques que <b>properties(obj)</b>.
 
-<b>names = fieldnames(h, '-full')</b> renvoie un tableau cellulaire de chaînes contenant les noms de toutes les propriétés du handle.
+Pour les tableaux d'objets classdef, les noms renvoyes sont les proprietes publiques de la classe des elements.
 
 ## 💡 Exemple
 
+Lister les noms des proprietes publiques d'un tableau d'objets classdef.
+
 ```matlab
-fieldnames(dir())
+clear classes
+d = [tempdir(), 'nelson_help_fieldnames/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpFieldPoint.m'], ["classdef NelsonHelpFieldPoint"; "  properties"; "    X = 0"; "    Y = 0"; "  end"; "end"]);
+addpath(d);
+a = NelsonHelpFieldPoint();
+b = NelsonHelpFieldPoint();
+names = fieldnames([a, b])
 ```
 
 ## 🔗 Voir aussi
 
-[getfield](../data_structures/getfield.md).
+[getfield](../data_structures/getfield.md), [properties](../handle/properties.md), [classdef](../interpreter/classdef.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                     |
+| ------- | ---------------------------------- |
+| 1.0.0   | version initiale                   |
+| 2.0.0   | support des objets classdef ajoute |
 
 <!--
 ## 👤 Auteur

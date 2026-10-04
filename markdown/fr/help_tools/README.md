@@ -18,9 +18,11 @@ Il prend en charge la génération de contenu d'aide dans plusieurs formats, y c
 - [help](help.md) - Aide pour les fonctions dans la fenêtre de commande.
 - [htmltopdf](htmltopdf.md) - Convertit une page HTML en PDF.
 - [markdown](markdown.md) - Convertit le Markdown en HTML.
+- [markdowndisp](markdowndisp.md) - Affiche du texte Markdown rendu.
 - [xmldocbuild](xmldocbuild.md) - Fonction interne pour convertir des fichiers XML en HTML.
 - [xmldocchecker](xmldocchecker.md) - Vérifie un fichier de documentation XML.
 - [xmldoclinkchecker](xmldoclinkchecker.md) - Vérifie les références croisées non résolues dans les fichiers d'aide XML de Nelson.
+- [xmldocrenderimages](xmldocrenderimages.md) - Génère les images d'exemple des fichiers d'aide de Nelson.
 - [xmldoctohelp](xmldoctohelp.md) - Convertit des fichiers d'aide XML Nelson au format Nelson.
 - [xmldoctohtml](xmldoctohtml.md) - Convertit des fichiers d'aide XML Nelson en HTML.
 - [xmldoctomd](xmldoctomd.md) - Convertit des fichiers d'aide XML Nelson au format Markdown.

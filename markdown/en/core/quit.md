@@ -22,7 +22,7 @@ On the other hand,<b>quit('force')</b> disregards the finish.m script and immedi
 
 Employ this syntax when you need to override the finish script, ensuring a smooth exit in case the script poses obstacles to quitting.
 
-When you utilize <b>quit(code)</b>, Nelson exits with the specified value as the exit code.
+When you use <b>quit(code)</b>, Nelson exits with the specified value as the exit code.
 
 If you append "force" to this command <b>quit(code, 'force')</b> it enforces an immediate termination, bypassing finish.m and incorporating the provided exit code.
 

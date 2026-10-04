@@ -20,7 +20,7 @@ Do not forget to clear h afterward.
 ## 💡 Example
 
 ```matlab
-audioplayer_used(),delete(audioplayer_used())
+used = audioplayer_used()
 ```
 
 ## 🔗 See also

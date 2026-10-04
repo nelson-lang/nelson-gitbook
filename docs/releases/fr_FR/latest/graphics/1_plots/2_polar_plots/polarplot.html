@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>polarplot</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">polarplot</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Trace des donnees en coordonnees polaires.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">polarplot(rho)
+polarplot(theta, rho)
+polarplot(theta, rho, LineSpec)
+polarplot(..., propertyName, propertyValue, ...)
+polarplot(ax, ...)
+go = polarplot(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">theta</td>
+<td>Angles en radians : vecteur ou matrice.</td>
+</tr>
+<tr>
+<td class="param-name">rho</td>
+<td>Coordonnees radiales : vecteur ou matrice numerique reel.</td>
+</tr>
+<tr>
+<td class="param-name">LineSpec</td>
+<td>Style de ligne, marqueur et/ou couleur : vecteur de caracteres ou chaine scalaire.</td>
+</tr>
+<tr>
+<td class="param-name">propertyName</td>
+<td>Nom de propriete de ligne : chaine scalaire ou vecteur ligne de caracteres.</td>
+</tr>
+<tr>
+<td class="param-name">propertyValue</td>
+<td>Valeur affectee a la propriete de ligne precedente.</td>
+</tr>
+<tr>
+<td class="param-name">ax</td>
+<td>Axes polaires cible ou objet axes. Un axes classique est initialise comme axes polaire.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">go</td>
+<td>Vecteur colonne d'objets graphiques de type ligne.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>polarplot(theta, rho)</b> trace les valeurs de rayon <b>rho</b> aux angles <b>theta</b>. Les angles de donnees sont exprimes en radians.</p>
+    <p><b>polarplot(rho)</b> trace <b>rho</b> avec des angles regulierement espaces de 0 a 2*pi. Si <b>rho</b> est complexe, <b>angle(rho)</b> est utilise pour les angles et <b>abs(rho)</b> pour les rayons.</p>
+    <p>Si <b>rho</b> est une matrice, chaque colonne est tracee comme une ligne separee. Un vecteur <b>theta</b> peut etre combine avec une matrice <b>rho</b> quand sa longueur correspond a une dimension de <b>rho</b>.</p>
+    <p>Les objets ligne retournes conservent les echantillons polaires dans leurs proprietes <b>ThetaData</b> et <b>RData</b>. Les donnees cartesiennes <b>XData</b> et <b>YData</b> sont gerees par le rendu polaire.</p>
+    <p>Les fonctions de limites et de graduations angulaires utilisent les degres : <b>thetalim</b>, <b>thetaticks</b> et <b>thetaticklabels</b>.</p>
+    <p>Quand aucun axes polaire n'est courant, <b>polarplot</b> en cree un. Si un axes classique est fourni, il est initialise comme axes polaire.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Tracer une courbe polaire avec une specification de ligne.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">theta = linspace(0, 2*pi, 200);
+rho = 1 + 0.5*cos(4*theta);
+polarplot(theta, rho, 'r-', 'LineWidth', 2);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./polarplot_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer plusieurs colonnes de rayons sur le meme axes polaire.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">theta = linspace(0, 2*pi, 100)';
+rho = [sin(theta).^2, cos(theta).^2];
+go = polarplot(theta, rho);
+rticks([0 0.5 1]);
+thetaticks(0:45:360);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser un axes polaire explicite.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+ax = polaraxes('Parent', f);
+polarplot(ax, linspace(0, pi, 50), linspace(0, 2, 50), 'o-');
+rlim(ax, [0 2]);
+thetalim(ax, [0 180]);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../../graphics/1_plots/2_polar_plots/polaraxes.html">polaraxes</a><a class="see-also-link" href="../../../graphics/3_labels_styling/1_axes_appearance/rlim.html">rlim</a><a class="see-also-link" href="../../../graphics/3_labels_styling/1_axes_appearance/rticks.html">rticks</a><a class="see-also-link" href="../../../graphics/3_labels_styling/1_axes_appearance/thetalim.html">thetalim</a><a class="see-also-link" href="../../../graphics/3_labels_styling/1_axes_appearance/thetaticks.html">thetaticks</a><a class="see-also-link" href="../../../graphics/1_plots/1_line_plots/plot.html">plot</a><a class="see-also-link" href="../../../graphics/1_plots/1_line_plots/line.html">line</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

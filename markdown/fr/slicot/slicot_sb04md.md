@@ -48,6 +48,10 @@ C_IN = [2.0   1.0;
 [A_OUT, B_OUT, C_OUT, Z, INFO] = slicot_sb04md(A_IN, B_IN, C_IN)
 ```
 
+## 🔗 Voir aussi
+
+[slicot_sb04qd](../slicot/slicot_sb04qd.md), [slicot_sb03md](../slicot/slicot_sb03md.md), [lyap](../control_system/lyap.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

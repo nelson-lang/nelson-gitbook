@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>counterFreeRunning</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">counterFreeRunning</span></div></div>
+<div class="section" style="text-align:center;"><img src="./counterFreeRunning.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Compteur incremental libre, replie modulo 2^NumBits.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">Type de bloc : counterFreeRunning
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports d entree</td>
+<td>Aucun port d entree (ce bloc n en a aucun).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ports de sortie</td>
+<td>1 port(s) de sortie declare(s).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Compteur incremental libre, replie modulo 2^NumBits.</p>
+    <table border="1">
+      
+        <tr>
+<td>Module</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code></td>
+</tr>
+        <tr>
+<td>Bibliotheque</td>
+<td>Source</td>
+</tr>
+        <tr>
+<td>Type</td>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">counterFreeRunning</code></td>
+</tr>
+        <tr>
+<td>Libelle</td>
+<td>Counter Free-Running</td>
+</tr>
+      
+    </table>
+    
+    <p><b>Description</b></p>
+    <p>Un compteur incremental libre sans entree. Demarre a 0 et s'incremente de 1 a chaque pas d'echantillonnage, repliant a 0 apres 2^<code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">NumBits</code> - 1 (arithmetique modulo non signee). Le compte courant est emis avant l'increment du pas, donc le premier echantillon vaut 0.</p>
+    <p><b>Ports</b></p>
+    <p>Ce bloc n'a aucun port d'entree.</p>
+    <p><b>Sortie(s)</b></p>
+    <table border="1">
+      <tr>
+<th>Port</th>
+<th>Role</th>
+<th>Cote</th>
+<th>Position</th>
+</tr>
+      
+        <tr>
+<td>Port_1</td>
+<td>Signal numerique produit par le bloc.</td>
+<td>droite</td>
+<td>x=80, y=40</td>
+</tr>
+      
+    </table>
+    <p><b>Parametres</b></p>
+    <table border="1">
+      <tr>
+<th>Parametre</th>
+<th>Valeur par defaut</th>
+</tr>
+      
+        <tr>
+<td><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">NumBits</code></td>
+<td>16</td>
+</tr>
+      
+    </table>
+    <p><b>Caracteristiques du bloc</b></p>
+    <table border="1">
+      
+        <tr>
+<td>Type de bloc</td>
+<td>counterFreeRunning</td>
+</tr>
+        <tr>
+<td>Famille</td>
+<td>Source</td>
+</tr>
+        <tr>
+<td>Taille rendue</td>
+<td>80 x 80</td>
+</tr>
+        <tr>
+<td>Phases</td>
+<td>INIT, OUTPUT, UPDATE</td>
+</tr>
+        <tr>
+<td>Etat interne ou historique</td>
+<td>oui</td>
+</tr>
+        <tr>
+<td>Type de donnees du signal</td>
+<td>valeurs numeriques double</td>
+</tr>
+      
+    </table>
+    <p><b>Algorithmes</b></p>
+    <ul>
+      <li>OUTPUT : out = count. UPDATE : count = (count + 1) mod 2^NumBits.</li>
+    </ul>
+    <p><b>Equation ou regle</b></p>
+    <span class="math display">$$y_k = k \bmod 2^{\text{NumBits}}$$</span>
+    <p><b>Capacites etendues</b></p>
+    <p><b>Sources d implementation</b></p>
+    <p>Generation de code : prise en charge pour C et Rust.</p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/source/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.source",
+  "title": "Source",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Basic source blocks",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "constant",
+      "label": "Constant",
+      "icon": "constant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Value": 1,
+        "OutDataType": "double"
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "constant-math",
+        "formula": "{params.Value}"
+      }
+    },
+    {
+      "type": "step",
+      "label": "Step",
+      "icon": "step.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "step.svg"
+      }
+    },
+    {
+      "type": "ramp",
+      "label": "Ramp",
+      "icon": "ramp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "slope": 1,
+        "start": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "ramp.svg"
+      }
+    },
+    {
+      "type": "counterFreeRunning",
+      "label": "Counter Free-Running",
+      "icon": "counterFreeRunning.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "NumBits": 16
+      },
+      "render": {
+        "type": "image",
+        "src": "counterFreeRunning.svg"
+      }
+    },
+    {
+      "type": "counterLimited",
+      "label": "Counter Limited",
+      "icon": "counterLimited.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "UpperLimit": 7
+      },
+      "render": {
+        "type": "image",
+        "src": "counterLimited.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceStair",
+      "label": "Repeating Sequence Stair",
+      "icon": "repeatingSequenceStair.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutValues": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceStair.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceInterpolated",
+      "label": "Repeating Sequence Interpolated",
+      "icon": "repeatingSequenceInterpolated.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "TimeValues": [
+          0,
+          1,
+          2
+        ],
+        "OutValues": [
+          0,
+          2,
+          0
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceInterpolated.svg"
+      }
+    },
+    {
+      "type": "signalGenerator",
+      "label": "Signal Generator",
+      "icon": "signalGenerator.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Waveform": "sine",
+        "Amplitude": 1,
+        "Frequency": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "signalGenerator.svg"
+      }
+    },
+    {
+      "type": "pulse",
+      "label": "Pulse Generator",
+      "icon": "pulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Period": 1,
+        "Width": 50,
+        "StartTime": 0,
+        "Offset": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "pulse.svg"
+      }
+    },
+    {
+      "type": "impulse",
+      "label": "Impulse",
+      "icon": "impulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0,
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "impulse.svg"
+      }
+    },
+    {
+      "type": "sine",
+      "label": "Sine",
+      "icon": "sine.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 1,
+        "Phase": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "sine.svg"
+      }
+    },
+    {
+      "type": "chirp",
+      "label": "Chirp",
+      "icon": "chirp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "f1": 1,
+        "f2": 10,
+        "T": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "chirp.svg"
+      }
+    },
+    {
+      "type": "fileSource",
+      "label": "File",
+      "icon": "fileSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "FileName": ""
+      },
+      "render": {
+        "type": "image",
+        "src": "fileSource.svg"
+      }
+    },
+    {
+      "type": "fromWorkspace",
+      "label": "From Workspace",
+      "icon": "fromWorkspace.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 48,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 24,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "VariableName": "simin",
+        "SampleTime": "0",
+        "Interpolate": "on",
+        "OutputAfterFinalValue": "Extrapolation"
+      },
+      "render": {
+        "type": "math",
+        "formula": "\\mathtt{{params.VariableName}}",
+        "textSize": 14
+      }
+    },
+    {
+      "type": "labelSource",
+      "label": "Label",
+      "icon": "labelSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 40,
+      "height": 40,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 20,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "GotoTag": "x"
+      },
+      "render": {
+        "type": "image",
+        "src": "labelSource.svg"
+      }
+    },
+    {
+      "type": "noise",
+      "label": "Noise",
+      "icon": "noise.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "noise.svg"
+      }
+    },
+    {
+      "type": "clock",
+      "label": "Clock",
+      "icon": "clock.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DisplayTime": false,
+        "Decimation": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "clock.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "enumeratedConstant",
+      "label": "Enumerated Constant",
+      "icon": "enumeratedConstant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "EnumClass": "",
+        "Value": 0
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/source/counterFreeRunning.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include "source_blocks.hpp"
+#include "../discrete/discrete_blocks.hpp" // codegenSampleRate (shared inline helper)
+//=============================================================================
+// counterFreeRunning: a free-running up-counter (Counter Free-Running). Starts
+// at 0 and increments by 1 at every sample step, wrapping back to 0 after
+// 2^NumBits - 1 (unsigned modulo-2^NumBits arithmetic). No input; the current
+// count is emitted before the step's increment, so the first sample is 0.
+//=============================================================================
+bool
+Nelson::NFlow::handleCounterFreeRunning(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    auto&amp; st = getState(ctx, b.nid);
+    if (phase == Phase::INIT) {
+        st.scalar = 0.0;
+        st.output = 0.0;
+        return false;
+    }
+    if (phase == Phase::OUTPUT) {
+        setOutput(ctx, b.nid, st.scalar);
+        return false;
+    }
+    if (phase == Phase::UPDATE) {
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        double nbits = std::min(53.0, std::max(1.0, std::floor(bd.paramDouble("NumBits", 16.0))));
+        const double m = std::pow(2.0, nbits);
+        st.scalar = std::fmod(st.scalar + 1.0, m);
+        return false;
+    }
+    return false;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCCounterFreeRunning()
+{
+    BlockCodegenTemplate t;
+    t.emitState
+        = [](const BlockCodegenStateArgs&amp; a) { a.addState("cfr_count_" + a.id, "0.0", ""); };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double nbits = bd.paramDouble("NumBits", 16.0);
+        nbits = std::min(53.0, std::max(1.0, std::floor(nbits)));
+        const std::string m = nflow::formatNumber(std::pow(2.0, nbits));
+        a.line("out_" + a.id + " = s-&gt;cfr_count_" + a.id + ";");
+        const int rate = codegenSampleRate(a.params, a.dt);
+        const std::string upd
+            = "s-&gt;cfr_count_" + a.id + " = fmod(s-&gt;cfr_count_" + a.id + " + 1.0, " + m + ");";
+        if (rate &gt; 1) {
+            a.line("if (__nflow_step % " + std::to_string(rate) + " == 0) " + upd);
+        } else {
+            a.line(upd);
+        }
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustCounterFreeRunning()
+{
+    BlockCodegenTemplate t;
+    t.emitState
+        = [](const BlockCodegenStateArgs&amp; a) { a.addState("cfr_count_" + a.id, "0.0_f64", ""); };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double nbits = bd.paramDouble("NumBits", 16.0);
+        nbits = std::min(53.0, std::max(1.0, std::floor(nbits)));
+        const std::string m = a.fmt(std::pow(2.0, nbits));
+        a.line("out_" + a.id + " = s.cfr_count_" + a.id + ";");
+        const int rate = codegenSampleRate(a.params, a.dt);
+        const std::string upd
+            = "s.cfr_count_" + a.id + " = (s.cfr_count_" + a.id + " + 1.0_f64) % " + m + ";";
+        if (rate &gt; 1) {
+            a.line("if __nflow_step % " + std::to_string(rate) + " == 0 { " + upd + " }");
+        } else {
+            a.line(upd);
+        }
+    };
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Un compteur 2 bits parcourt 0,1,2,3,0,1,...</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">d.blocks={ struct('id','c','type','counterFreeRunning','inputs',0,'outputs',1,'params',struct('NumBits',2)), struct('id','w','type','toWorkspace','inputs',1,'outputs',0,'params',struct('VariableName','y','SaveFormat','Array')) };
+d.connections={ struct('from','c','to','w','fromIndex',0,'toIndex',0) };
+d.sampleTime=0.1; d.duration=1.0; d.solver='discrete'; d.variables=struct();
+r=jsondecode(__nflow_simulate__(jsonencode(d)));</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/source/counterLimited.html">counterLimited</a><a class="see-also-link" href="../../nflow_blocks/source/repeatingSequenceStair.html">repeatingSequenceStair</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

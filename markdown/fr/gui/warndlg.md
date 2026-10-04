@@ -1,57 +1,52 @@
 # warndlg
 
-Crée une boîte de dialogue d'avertissement.
+Cree une boite de dialogue d'avertissement.
 
 ## 📝 Syntaxe
 
-- h = warndlg()
-- h = warndlg(text_warning)
-- h = warndlg(text_warning, title)
-- h = warndlg(text_warning, title, 'on')
+- h = warndlg
+- h = warndlg(message)
+- h = warndlg(message, title)
+- h = warndlg(message, title, mode)
 
 ## 📥 Argument d'entrée
 
-- text_warning - une chaîne ou un tableau de chaînes : le message d'avertissement.
-- title - une chaîne : le titre de la boîte de dialogue.
+- message - Warning text. Use a character vector, string, or cell array of character vectors.
 
 ## 📤 Argument de sortie
 
-- h - un handle QObject.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>warndlg</b> crée une boîte de dialogue d'avertissement.
-
-<b>h = warndlg(text_warning, title, 'on')</b> spécifie si une boîte de dialogue existante portant le même nom doit être remplacée.
+warndlg creates a warning message dialog and returns a graphics figure handle.
 
 ## 💡 Exemples
 
-```matlab
-h = warndlg()
-```
+Creer une boite d avertissement.
 
 ```matlab
-h = warndlg('help string')
+f = warndlg('Check the input value.', 'Warning', 'non-modal');
+drawnow();
 ```
 
-```matlab
-h = warndlg('help string', 'dialog title')
-```
+<img src="warndlg_example.svg" align="middle"/>
+Create a warning dialog with several lines.
 
 ```matlab
-h = warndlg('help string', 'dialog title')
-h = warndlg('help string', 'dialog title', 'on')
+h = warndlg({'Input is empty.', 'Default values will be used.'}, 'Warning', 'non-modal');
+close(h)
 ```
 
 ## 🔗 Voir aussi
 
-[helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [msgbox](../gui/msgbox.md).
+[msgbox](../gui/msgbox.md), [helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--
 ## 👤 Auteur

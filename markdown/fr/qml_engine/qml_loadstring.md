@@ -1,6 +1,6 @@
 # qml_loadstring
 
-Load a QML string.
+Charge une chaîne QML.
 
 ## 📝 Syntaxe
 
@@ -8,17 +8,17 @@ Load a QML string.
 
 ## 📥 Argument d'entrée
 
-- str_to_eval - a string.
+- str_to_eval - une chaîne.
 
 ## 📤 Argument de sortie
 
-- h - a QObject handle.
+- h - un handle QObject.
 
 ## 📄 Description
 
-Load a QML string
+Charge une chaîne QML.
 
-It creates a QML component and load .qml file.
+Elle crée un composant QML et charge le fichier .qml.
 
 ## 💡 Exemple
 

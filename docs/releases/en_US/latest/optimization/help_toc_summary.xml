@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>optimization</module>
+    <section name="Optimization">
+      <chapter_description>
+    <p>The Optimization module provides scalar minimization, unconstrained minimization, zero finding, nonlinear equations, nonlinear least squares, nonnegative least squares, quadratic programming, solver options, and a first problem-based modelling layer.</p>
+    <p>The implemented algorithms are deterministic dense numerical methods intended for small and medium-size engineering models in Nelson.</p>
+  </chapter_description>
+      <keyword name="optimization tutorial" link="1_optimization_tutorial.html" description="Optimization module tutorial."/>
+      <keyword name="evaluate" link="evaluate.html" description="Evaluate an optimization expression."/>
+      <keyword name="fcn2optimexpr" link="fcn2optimexpr.html" description="Convert a function to an optimization expression."/>
+      <keyword name="fminbnd" link="fminbnd.html" description="Bounded scalar minimization."/>
+      <keyword name="fmincon" link="fmincon.html" description="Constrained nonlinear minimization."/>
+      <keyword name="fminsearch" link="fminsearch.html" description="Unconstrained derivative-free minimization."/>
+      <keyword name="fminunc" link="fminunc.html" description="Unconstrained nonlinear minimization."/>
+      <keyword name="fsolve" link="fsolve.html" description="Solve a system of nonlinear equations."/>
+      <keyword name="fzero" link="fzero.html" description="Zero of a scalar function."/>
+      <keyword name="intlinprog" link="intlinprog.html" description="Mixed-integer linear programming."/>
+      <keyword name="linprog" link="linprog.html" description="Linear programming."/>
+      <keyword name="lsqcurvefit" link="lsqcurvefit.html" description="Least-squares curve fitting."/>
+      <keyword name="lsqnonlin" link="lsqnonlin.html" description="Nonlinear least-squares solution."/>
+      <keyword name="lsqnonneg" link="lsqnonneg.html" description="Nonnegative linear least-squares solution."/>
+      <keyword name="optim.options.SolverOptions" link="optim.options.SolverOptions.html" description="Solver options object."/>
+      <keyword name="optim.problemdef.OptimizationConstraint" link="optim.problemdef.OptimizationConstraint.html" description="Optimization constraints."/>
+      <keyword name="optim.problemdef.OptimizationExpression" link="optim.problemdef.OptimizationExpression.html" description="Optimization expression."/>
+      <keyword name="optim.problemdef.OptimizationProblem" link="optim.problemdef.OptimizationProblem.html" description="Optimization problem object."/>
+      <keyword name="optim.problemdef.OptimizationVariable" link="optim.problemdef.OptimizationVariable.html" description="Variable for optimization expressions."/>
+      <keyword name="optimconstr" link="optimconstr.html" description="Create an optimization constraint placeholder."/>
+      <keyword name="optimexpr" link="optimexpr.html" description="Create an optimization expression."/>
+      <keyword name="optimget" link="optimget.html" description="Read an optimization option value."/>
+      <keyword name="optimoptions" link="optimoptions.html" description="Create solver options."/>
+      <keyword name="optimproblem" link="optimproblem.html" description="Create an optimization problem object."/>
+      <keyword name="optimset" link="optimset.html" description="Create or edit optimization option structures."/>
+      <keyword name="optimvar" link="optimvar.html" description="Create optimization variables."/>
+      <keyword name="prob2struct" link="prob2struct.html" description="Convert an optimization problem to a solver structure."/>
+      <keyword name="quadprog" link="quadprog.html" description="Quadratic programming."/>
+      <keyword name="show" link="show.html" description="Display an optimization object."/>
+      <keyword name="solve" link="solve.html" description="Solve an optimization problem object."/>
+    </section>
+  </toc>
+</help_summary>

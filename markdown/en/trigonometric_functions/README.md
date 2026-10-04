@@ -1,10 +1,10 @@
 # Trigonometric functions
 
-The Trigonometric Functions module provides a comprehensive set of functions for performing trigonometric calculations in Nelson.
+The Trigonometric Functions module provides functions for trigonometric calculations in Nelson.
 
 It includes standard trigonometric functions such as sine, cosine, and tangent, as well as their inverses and hyperbolic counterparts. The module supports angle measurements in both degrees and radians, allowing for flexible computations based on user preferences.
 
-Additionally, the module offers utility functions for converting between degrees and radians, facilitating seamless integration of trigonometric calculations into various mathematical and engineering applications.
+The module also provides utilities for converting between degrees and radians in mathematical and engineering calculations.
 
 ## Functions
 
@@ -57,3 +57,7 @@ Additionally, the module offers utility functions for converting between degrees
 - [tand](tand.md) - Computes the tangent in degree for each element of x.
 - [tanh](tanh.md) - Computes the hyperbolic tangent in radians for each element of x.
 - [tanm](tanm.md) - Computes the matrix tangent of a square matrix.
+- [wrapTo180](wrapTo180.md) - Wrap angle in degrees to [-180, 180].
+- [wrapTo2Pi](wrapTo2Pi.md) - Wrap angle in radians to [0, 2*pi].
+- [wrapTo360](wrapTo360.md) - Wrap angle in degrees to [0, 360].
+- [wrapToPi](wrapToPi.md) - Wrap angle in radians to [-pi, pi].

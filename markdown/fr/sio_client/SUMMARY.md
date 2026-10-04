@@ -1,3 +1,0 @@
-- [sio_client](README.md)
-  - [sioemit](sioemit.md)
-  - [siogetvariable](siogetvariable.md)

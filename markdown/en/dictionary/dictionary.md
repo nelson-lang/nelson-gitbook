@@ -88,7 +88,7 @@ dictionary(R)
 
 ## 🔗 See also
 
-[lookup](../dictionary/lookup.md), [remove](../dictionary/remove.md), [insert](../dictionary/insert.md), [keyMatch](../dictionary/keyMatch.md).
+[lookup](../dictionary/lookup.md), [remove](../dictionary/remove.md), [insert](../dictionary/insert.md), [disp](../dictionary/disp.md), [isequal](../dictionary/isequal.md), [readdictionary](../dictionary/readdictionary.md), [writedictionary](../dictionary/writedictionary.md), [containers.Map](../dictionary/containers_Map.md), [keyMatch](../dictionary/keyMatch.md).
 
 ## 🕔 History
 

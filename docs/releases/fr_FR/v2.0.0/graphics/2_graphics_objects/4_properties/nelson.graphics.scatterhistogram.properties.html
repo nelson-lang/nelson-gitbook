@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>scatterhistogram properties</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">scatterhistogram properties</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Proprietes de l'objet graphique scatterhistogram.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Cette page documente les proprietes visibles retournees par <b>properties</b> pour un objet graphique <b>scatterhistogram</b>.</p>
+    <table>
+      <tr>
+        <th>Propriete</th>
+        <th>Action</th>
+        <th>Type et valeurs prises en charge</th>
+      </tr>
+      <tr>
+        <td><b>Annotation</b></td>
+        <td>stocke les metadonnees d'annotation pour les outils graphiques.</td>
+        <td>Type: objet d'annotation graphique ou handle vide. Valeurs prises en charge: objet d'annotation ou handle graphique vide.</td>
+      </tr>
+      <tr>
+        <td><b>BeingDeleted</b></td>
+        <td>indique si une suppression est en cours.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'off', 'on'.</td>
+      </tr>
+      <tr>
+        <td><b>BinWidths</b></td>
+        <td>stocke les largeurs de classes des histogrammes.</td>
+        <td>Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies positives [xWidth yWidth].</td>
+      </tr>
+      <tr>
+        <td><b>BusyAction</b></td>
+        <td>controle la mise en file des callbacks pendant l'execution d'un autre callback.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'queue', 'cancel'.</td>
+      </tr>
+      <tr>
+        <td><b>ButtonDownFcn</b></td>
+        <td>s'execute quand le graphique recoit un evenement bouton souris.</td>
+        <td>Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.</td>
+      </tr>
+      <tr>
+        <td><b>Children</b></td>
+        <td>liste les enfants graphiques appartenant au graphique.</td>
+        <td>Type: graphics object handle vector. Valeurs prises en charge: vecteur vide ou handles enfants.</td>
+      </tr>
+      <tr>
+        <td><b>Color</b></td>
+        <td>definit la couleur des marqueurs du nuage.</td>
+        <td>Type: triplet RGB ou nom de couleur. Valeurs prises en charge: vecteur numerique 1-by-3 ou nom de couleur comme 'r', 'g' ou 'blue'.</td>
+      </tr>
+      <tr>
+        <td><b>ContextMenu</b></td>
+        <td>attache un menu contextuel au graphique.</td>
+        <td>Type: graphics object handle scalar. Valeurs prises en charge: [] ou handle uicontextmenu.</td>
+      </tr>
+      <tr>
+        <td><b>CreateFcn</b></td>
+        <td>s'execute lors de la creation du graphique.</td>
+        <td>Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.</td>
+      </tr>
+      <tr>
+        <td><b>DeleteFcn</b></td>
+        <td>s'execute lors de la suppression du graphique.</td>
+        <td>Type: callback value. Valeurs prises en charge: [], handle de fonction, vecteur de caracteres, chaine scalaire ou cellule callback.</td>
+      </tr>
+      <tr>
+        <td><b>DisplayName</b></td>
+        <td>definit le libelle utilise par les outils de legende.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.</td>
+      </tr>
+      <tr>
+        <td><b>FontName</b></td>
+        <td>definit la famille de police du texte.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: noms de polices installees ou ''.</td>
+      </tr>
+      <tr>
+        <td><b>FontSize</b></td>
+        <td>definit la taille du texte.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives.</td>
+      </tr>
+      <tr>
+        <td><b>GroupData</b></td>
+        <td>stocke les donnees de groupement.</td>
+        <td>Type: vecteur. Valeurs prises en charge: [] ou une valeur par point.</td>
+      </tr>
+      <tr>
+        <td><b>GroupVariable</b></td>
+        <td>stocke la variable de table utilisee pour le groupement.</td>
+        <td>Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source.</td>
+      </tr>
+      <tr>
+        <td><b>HandleVisibility</b></td>
+        <td>controle la decouverte du handle par les recherches graphiques.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off', 'callback'.</td>
+      </tr>
+      <tr>
+        <td><b>HistogramDisplayStyle</b></td>
+        <td>definit le style des histogrammes marginaux.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'bar', 'stairs'.</td>
+      </tr>
+      <tr>
+        <td><b>HitTest</b></td>
+        <td>controle si le graphique repond aux clics souris.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>InnerPosition</b></td>
+        <td>stocke le rectangle interne du graphique.</td>
+        <td>Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height].</td>
+      </tr>
+      <tr>
+        <td><b>Interruptible</b></td>
+        <td>controle l'interruption des callbacks en cours.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>Layout</b></td>
+        <td>stocke les informations de placement dans une disposition en tuiles.</td>
+        <td>Type: graphics object handle scalar. Valeurs prises en charge: [] ou handle d'options de layout.</td>
+      </tr>
+      <tr>
+        <td><b>LegendTitle</b></td>
+        <td>definit le titre de la legende de groupes.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.</td>
+      </tr>
+      <tr>
+        <td><b>LegendVisible</b></td>
+        <td>controle l'affichage de la legende de groupes.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>LineStyle</b></td>
+        <td>definit le style de ligne du nuage.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: '-', '--', ':', '-.', 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>LineWidth</b></td>
+        <td>definit la largeur de ligne du nuage.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerAlpha</b></td>
+        <td>definit la transparence des marqueurs.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeurs de 0 a 1.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerFilled</b></td>
+        <td>controle si les marqueurs sont remplis.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerSize</b></td>
+        <td>definit la taille des marqueurs.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeurs finies positives.</td>
+      </tr>
+      <tr>
+        <td><b>MarkerStyle</b></td>
+        <td>definit le style des marqueurs.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'o', '+', '*', '.', 'x', 'square' et autres symboles.</td>
+      </tr>
+      <tr>
+        <td><b>NumBins</b></td>
+        <td>definit le nombre de classes dans les deux histogrammes marginaux.</td>
+        <td>Type: entier positif scalaire ou vecteur numerique a deux elements. Valeurs prises en charge: entiers finis positifs.</td>
+      </tr>
+      <tr>
+        <td><b>OuterPosition</b></td>
+        <td>stocke le rectangle externe du graphique.</td>
+        <td>Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height].</td>
+      </tr>
+      <tr>
+        <td><b>Parent</b></td>
+        <td>stocke le parent graphique.</td>
+        <td>Type: graphics object handle scalar. Valeurs prises en charge: handle de figure.</td>
+      </tr>
+      <tr>
+        <td><b>PickableParts</b></td>
+        <td>controle quelles parties visibles peuvent etre selectionnees.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'visible', 'all', 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>Position</b></td>
+        <td>stocke le rectangle de position du graphique.</td>
+        <td>Type: vecteur ligne numerique. Valeurs prises en charge: quatre valeurs finies [left bottom width height].</td>
+      </tr>
+      <tr>
+        <td><b>PositionConstraint</b></td>
+        <td>choisit le rectangle de position conserve pendant la mise en page.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'outerposition', 'innerposition'.</td>
+      </tr>
+      <tr>
+        <td><b>ScatterPlotLocation</b></td>
+        <td>definit l'emplacement du nuage dans le graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'southwest', 'southeast', 'northwest', 'northeast'.</td>
+      </tr>
+      <tr>
+        <td><b>ScatterPlotProportion</b></td>
+        <td>definit la proportion de surface du nuage.</td>
+        <td>Type: scalaire numerique fini. Valeurs prises en charge: valeurs de 0 a 1.</td>
+      </tr>
+      <tr>
+        <td><b>Selected</b></td>
+        <td>controle l'etat de selection.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>SelectionHighlight</b></td>
+        <td>controle l'affichage du surlignage de selection.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>SourceTable</b></td>
+        <td>stocke la table utilisee pour creer le graphique.</td>
+        <td>Type: table ou valeur vide. Valeurs prises en charge: [] ou table fournie a scatterhistogram.</td>
+      </tr>
+      <tr>
+        <td><b>Tag</b></td>
+        <td>stocke un texte defini par l'utilisateur.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.</td>
+      </tr>
+      <tr>
+        <td><b>Title</b></td>
+        <td>definit le titre du graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.</td>
+      </tr>
+      <tr>
+        <td><b>Type</b></td>
+        <td>identifie le type d'objet graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'scatterhistogram'.</td>
+      </tr>
+      <tr>
+        <td><b>Units</b></td>
+        <td>definit les unites utilisees par les proprietes de position.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'normalized', 'pixels', 'inches', 'centimeters', 'points', 'characters'.</td>
+      </tr>
+      <tr>
+        <td><b>UserData</b></td>
+        <td>stocke les donnees utilisateur attachees au graphique.</td>
+        <td>Type: toute valeur Nelson. Valeurs prises en charge: toute valeur.</td>
+      </tr>
+      <tr>
+        <td><b>Visible</b></td>
+        <td>controle la visibilite du graphique.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>XData</b></td>
+        <td>stocke les donnees x du nuage.</td>
+        <td>Type: vecteur numerique. Valeurs prises en charge: une valeur par point.</td>
+      </tr>
+      <tr>
+        <td><b>XHistogramDirection</b></td>
+        <td>definit la direction de l'histogramme x.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'up', 'down'.</td>
+      </tr>
+      <tr>
+        <td><b>XLabel</b></td>
+        <td>definit le libelle de l'axe x.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.</td>
+      </tr>
+      <tr>
+        <td><b>XLimits</b></td>
+        <td>stocke les limites de l'axe x.</td>
+        <td>Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies croissantes [min max].</td>
+      </tr>
+      <tr>
+        <td><b>XVariable</b></td>
+        <td>stocke la variable de table utilisee pour les donnees x.</td>
+        <td>Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source.</td>
+      </tr>
+      <tr>
+        <td><b>YData</b></td>
+        <td>stocke les donnees y du nuage.</td>
+        <td>Type: vecteur numerique. Valeurs prises en charge: une valeur par point.</td>
+      </tr>
+      <tr>
+        <td><b>YHistogramDirection</b></td>
+        <td>definit la direction de l'histogramme y.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: 'left', 'right'.</td>
+      </tr>
+      <tr>
+        <td><b>YLabel</b></td>
+        <td>definit le libelle de l'axe y.</td>
+        <td>Type: chaine scalaire ou vecteur ligne de caracteres. Valeurs prises en charge: tout vecteur ligne de caracteres ou chaine scalaire.</td>
+      </tr>
+      <tr>
+        <td><b>YLimits</b></td>
+        <td>stocke les limites de l'axe y.</td>
+        <td>Type: vecteur ligne numerique. Valeurs prises en charge: deux valeurs finies croissantes [min max].</td>
+      </tr>
+      <tr>
+        <td><b>YVariable</b></td>
+        <td>stocke la variable de table utilisee pour les donnees y.</td>
+        <td>Type: texte, numerique ou selecteur de table. Valeurs prises en charge: [] ou selecteur de variable de la table source.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Inspecter les proprietes de scatterhistogram.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">h = scatterhistogram(1:6, [2 3 2 4 5 4]);
+properties(h)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div><a class="see-also-link" href="../../../graphics/1_plots/4_data_distribution_plots/scatterhistogram.html">scatterhistogram</a></div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

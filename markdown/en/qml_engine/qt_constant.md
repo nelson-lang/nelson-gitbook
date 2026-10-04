@@ -20,8 +20,6 @@ Returns Qt constant value.
 
 <b>v = qt_version(constant_name)</b> returns Qt constant value.
 
-Qt 5 family allows to get constant easily with qml_evaluatestring(constant_name), but it is no more available with Qt 6
-
 ## 💡 Example
 
 ```matlab

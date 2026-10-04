@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>donutchart properties</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">donutchart properties</span></div></div>
+<div class="section syntax-section"><div class="subtitle">donutchart graphics object properties.</div></div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>This page documents the visible properties returned by <b>properties</b> for a <b>donutchart</b> graphics object.</p>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>Action</th>
+        <th>Type and supported values</th>
+      </tr>
+      <tr>
+        <td><b>CategoryCounts</b></td>
+        <td>replaces data and recomputes automatic limits that depend on it.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Supported values: [] or data with dimensions compatible with the rendered object.</td>
+      </tr>
+      <tr>
+        <td><b>CenterLabel</b></td>
+        <td>updates the label drawn at the center of the donut chart.</td>
+        <td>Type: text value. Supported values: character row vector, string scalar, or empty text.</td>
+      </tr>
+      <tr>
+        <td><b>CenterLabelFontSize</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric scalar. Supported values: finite scalar value.</td>
+      </tr>
+      <tr>
+        <td><b>CenterLabelFontSizeMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>ColorOrder</b></td>
+        <td>changes automatically selected colors for subsequent plotted series.</td>
+        <td>Type: finite numeric matrix. Supported values: m-by-3 RGB matrix with values in [0,1].</td>
+      </tr>
+      <tr>
+        <td><b>Data</b></td>
+        <td>replaces data and recomputes automatic limits that depend on it.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Supported values: [] or data with dimensions compatible with the rendered object.</td>
+      </tr>
+      <tr>
+        <td><b>DataMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>DataVariable</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>Direction</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'normal', 'reverse'.</td>
+      </tr>
+      <tr>
+        <td><b>DisplayOrder</b></td>
+        <td>changes the displayed order of chart groups or variables.</td>
+        <td>Type: text keyword or ordering vector. Supported values: 'ascend', 'descend', or a vector of display indices supported by the chart.</td>
+      </tr>
+      <tr>
+        <td><b>EdgeColor</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: color value or color mode keyword. Supported values: 'red'/'r', 'green'/'g', 'blue'/'b', 'cyan'/'c', 'magenta'/'m', 'yellow'/'y', 'black'/'k', 'white'/'w', RGB triplet [r g b] with values in [0,1], or hexadecimal color '#RRGGBB'/'#RGB', 'none', 'flat', 'interp'.</td>
+      </tr>
+      <tr>
+        <td><b>ExplodedWedges</b></td>
+        <td>changes which pie or donut wedges are drawn separated from the center.</td>
+        <td>Type: numeric or logical vector. Supported values: empty value or vector with one element per wedge; nonzero entries offset the matching wedge.</td>
+      </tr>
+      <tr>
+        <td><b>FaceAlpha</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: numeric scalar or numeric array. Supported values: values in [0,1]; data arrays must match the related rendered data.</td>
+      </tr>
+      <tr>
+        <td><b>FaceColor</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: color value or color mode keyword. Supported values: 'red'/'r', 'green'/'g', 'blue'/'b', 'cyan'/'c', 'magenta'/'m', 'yellow'/'y', 'black'/'k', 'white'/'w', RGB triplet [r g b] with values in [0,1], or hexadecimal color '#RRGGBB'/'#RGB', 'none', 'flat', 'interp'.</td>
+      </tr>
+      <tr>
+        <td><b>FontColor</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: color value. Supported values: 'red'/'r', 'green'/'g', 'blue'/'b', 'cyan'/'c', 'magenta'/'m', 'yellow'/'y', 'black'/'k', 'white'/'w', RGB triplet [r g b] with values in [0,1], or hexadecimal color '#RRGGBB'/'#RGB'.</td>
+      </tr>
+      <tr>
+        <td><b>FontName</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar or character row vector. Supported values: a system font name or 'FixedWidth'.</td>
+      </tr>
+      <tr>
+        <td><b>FontSize</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric scalar. Supported values: finite scalar value.</td>
+      </tr>
+      <tr>
+        <td><b>FontSizeMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>HandleVisibility</b></td>
+        <td>controls whether handle-search functions can find the object.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'on', 'off', 'callback'.</td>
+      </tr>
+      <tr>
+        <td><b>InnerPosition</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric vector. Supported values: finite vector with the documented size, such as [left bottom width height], [x y z], [azimuth elevation], or [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>InnerRadius</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric scalar. Supported values: finite scalar value.</td>
+      </tr>
+      <tr>
+        <td><b>Interpreter</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'tex', 'none'.</td>
+      </tr>
+      <tr>
+        <td><b>LabelStyle</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar or character row vector. Supported values: style names defined by this object, such as UI styles, light styles, chart styles, or line styles.</td>
+      </tr>
+      <tr>
+        <td><b>LabelStyleMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>Labels</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar, string array, or cell array of text. Supported values: empty text or labels matching the related ticks, categories, variables, lines, or displayed values.</td>
+      </tr>
+      <tr>
+        <td><b>LabelsMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>Layout</b></td>
+        <td>updates the object placement requested from the parent layout manager.</td>
+        <td>Type: layout options object or empty value. Supported values: layout information stored by parent layout managers, including tile placement data where the object supports tiled layouts.</td>
+      </tr>
+      <tr>
+        <td><b>LegendTitle</b></td>
+        <td>updates the title displayed above legend entries.</td>
+        <td>Type: text value. Supported values: character row vector, string scalar, or empty text.</td>
+      </tr>
+      <tr>
+        <td><b>LegendVisible</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: on/off value. Supported values: 'on', 'off', true, or false.</td>
+      </tr>
+      <tr>
+        <td><b>LineWidth</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: finite numeric scalar. Supported values: value greater than or equal to 0.</td>
+      </tr>
+      <tr>
+        <td><b>Names</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar, string array, or cell array of text. Supported values: empty text or labels matching the related ticks, categories, variables, lines, or displayed values.</td>
+      </tr>
+      <tr>
+        <td><b>NamesMode</b></td>
+        <td>'auto' lets Nelson recompute the paired property; 'manual' preserves the assigned value.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'auto', 'manual'.</td>
+      </tr>
+      <tr>
+        <td><b>NamesVariable</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: text scalar or character row vector. Supported values: empty text or a workspace/table variable name.</td>
+      </tr>
+      <tr>
+        <td><b>NumDisplayWedges</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: integer scalar or numeric vector. Supported values: finite integer value, finite numeric value, or vector required by the property.</td>
+      </tr>
+      <tr>
+        <td><b>OuterPosition</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric vector. Supported values: finite vector with the documented size, such as [left bottom width height], [x y z], [azimuth elevation], or [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>Parent</b></td>
+        <td>reparents the object and updates Children on the old and new parents.</td>
+        <td>Type: graphics object handle scalar. Supported values: a valid parent handle for the object class.</td>
+      </tr>
+      <tr>
+        <td><b>Position</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric vector. Supported values: finite vector with the documented size, such as [left bottom width height], [x y z], [azimuth elevation], or [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>PositionConstraint</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric vector. Supported values: finite vector with the documented size, such as [left bottom width height], [x y z], [azimuth elevation], or [minor major].</td>
+      </tr>
+      <tr>
+        <td><b>Proportions</b></td>
+        <td>replaces data and recomputes automatic limits that depend on it.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Supported values: [] or data with dimensions compatible with the rendered object.</td>
+      </tr>
+      <tr>
+        <td><b>ShowOthers</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: on/off value. Supported values: 'on', 'off', true, or false.</td>
+      </tr>
+      <tr>
+        <td><b>SourceTable</b></td>
+        <td>updates the stored object state.</td>
+        <td>Type: table or empty array. Supported values: [] or a table used by variable-name properties.</td>
+      </tr>
+      <tr>
+        <td><b>StartAngle</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: finite numeric scalar. Supported values: finite scalar value.</td>
+      </tr>
+      <tr>
+        <td><b>Title</b></td>
+        <td>updates the displayed title or the title object associated with the graphics item.</td>
+        <td>Type: text graphics object or text value, depending on the object class. Supported values: a title text object, character row vector, string scalar, or empty text.</td>
+      </tr>
+      <tr>
+        <td><b>Type</b></td>
+        <td>Nelson computes this value; graphics operations update it.</td>
+        <td>Type: text scalar or character row vector. Supported values: read-only object type name, for example 'figure', 'axes', 'line', or 'scatter'.</td>
+      </tr>
+      <tr>
+        <td><b>Units</b></td>
+        <td>recomputes geometry, limits, or layout.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'pixels', 'normalized', 'inches', 'centimeters', 'points', 'characters', 'data'.</td>
+      </tr>
+      <tr>
+        <td><b>Visible</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar or character row vector. Supported values: 'on', 'off'.</td>
+      </tr>
+      <tr>
+        <td><b>WedgeDisplayData</b></td>
+        <td>replaces data and recomputes automatic limits that depend on it.</td>
+        <td>Type: numeric, logical, categorical, string, vector, matrix, or table-derived data. Supported values: [] or data with dimensions compatible with the rendered object.</td>
+      </tr>
+      <tr>
+        <td><b>WedgeDisplayNames</b></td>
+        <td>updates rendered output on the next graphics refresh.</td>
+        <td>Type: text scalar, string array, or cell array of text. Supported values: empty text or labels matching the related ticks, categories, variables, lines, or displayed values.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Create the graphics object and list its properties.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure('Visible', 'off');
+h = donutchart(f, [1 2 3]);
+names = properties(h);
+close(f)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../../graphics/1_plots/6_discrete_data_plots/donutchart.html">donutchart</a><a class="see-also-link" href="../../../handle/properties.html">properties</a><a class="see-also-link" href="../../../handle/get.html">get</a><a class="see-also-link" href="../../../handle/set.html">set</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">--</td>
+<td>Property page added.</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

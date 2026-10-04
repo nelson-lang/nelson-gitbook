@@ -20,7 +20,7 @@ N'oubliez pas de nettoyer la variable h ensuite.
 ## 💡 Exemple
 
 ```matlab
-dlsym_used(),delete(dlsym_used())
+used = dlsym_used()
 ```
 
 ## 🔗 Voir aussi

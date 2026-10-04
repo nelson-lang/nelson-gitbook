@@ -43,9 +43,9 @@ end
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.15.0  | initial version |
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 1.15.0  | version initiale |
 
 <!--
 ## 👤 Auteur

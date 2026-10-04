@@ -2,11 +2,11 @@
 
 ## 📄 Description
 
-Nelson allows users to seamlessly integrate Python packages into their workflows.
+Nelson can use Python packages from Nelson workflows.
 
-Installing Python packages within Nelson expands its functionality and enables users to leverage a wide array of libraries for data analysis, machine learning, scientific computing, and more.
+Installing Python packages makes libraries for data analysis, machine learning, and scientific computing available from Nelson.
 
-This help file provides a comprehensive guide on installing Python packages from within Nelson.
+This help page describes how to install Python packages from Nelson.
 
 Tips and Considerations:
 

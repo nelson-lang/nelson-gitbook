@@ -1,0 +1,1071 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>fromWorkspace</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">fromWorkspace</span></div></div>
+<div class="section" style="text-align:center;"><img src="./fromWorkspace.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Reads a signal from a Nelson workspace variable.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Block type: fromWorkspace
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">output ports</td>
+<td>1 output port (scalar or vector double, width taken from the variable).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Emits the signal stored in the base-workspace variable <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">VariableName</code>. The variable is read once when the simulation starts. Two data formats are accepted:</p>
+    <ul>
+      <li>a <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">[time, values]</code> matrix: first column = time, remaining columns = signal elements;</li>
+      <li>a struct with fields <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">time</code> (Nx1) and <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">signals.values</code> (NxW).</li>
+    </ul>
+    
+    <p>Time values must be non-decreasing, without Inf or NaN; duplicated time stamps describe discontinuities. With <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Interpolate</code> on, output is linearly interpolated (before the first point: linear extrapolation from the first two points; at a duplicated time the newest value wins). With <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Interpolate</code> off, the block holds the latest sample (zero before the first point).</p>
+    <p>After the final data point, <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">OutputAfterFinalValue</code> selects <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Extrapolation</code> (linear, requires interpolation), <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Setting to zero</code> or <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Holding final value</code>.</p>
+    <p>Code generation bakes the samples into constant tables with the same lookup semantics (scalar signals).</p>
+    <p>
+      <b>Parameters</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Parameter</th>
+          <th>Default value</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">VariableName</code>
+          </td>
+          <td>simin</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">SampleTime</code>
+          </td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">Interpolate</code>
+          </td>
+          <td>on</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">OutputAfterFinalValue</code>
+          </td>
+          <td>Extrapolation</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Block Characteristics</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <td>Block type</td>
+          <td>fromWorkspace</td>
+        </tr>
+        <tr>
+          <td>Family</td>
+          <td>Source blocks</td>
+        </tr>
+        <tr>
+          <td>Phases</td>
+          <td>INIT, OUTPUT</td>
+        </tr>
+        <tr>
+          <td>Signal data type</td>
+          <td>double, scalar or vector</td>
+        </tr>
+        <tr>
+          <td>Code generation</td>
+          <td>yes (constant tables, scalar signals)</td>
+        </tr>
+      
+    </table>
+    <p>Code generation: supported for C and Rust.</p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/source/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.source",
+  "title": "Source",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Basic source blocks",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "constant",
+      "label": "Constant",
+      "icon": "constant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Value": 1,
+        "OutDataType": "double"
+      },
+      "render": {
+        "type": "math",
+        "bodyClass": "block-body",
+        "mathGroupClass": "constant-math",
+        "formula": "{params.Value}"
+      }
+    },
+    {
+      "type": "step",
+      "label": "Step",
+      "icon": "step.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "step.svg"
+      }
+    },
+    {
+      "type": "ramp",
+      "label": "Ramp",
+      "icon": "ramp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "slope": 1,
+        "start": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "ramp.svg"
+      }
+    },
+    {
+      "type": "counterFreeRunning",
+      "label": "Counter Free-Running",
+      "icon": "counterFreeRunning.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "NumBits": 16
+      },
+      "render": {
+        "type": "image",
+        "src": "counterFreeRunning.svg"
+      }
+    },
+    {
+      "type": "counterLimited",
+      "label": "Counter Limited",
+      "icon": "counterLimited.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "UpperLimit": 7
+      },
+      "render": {
+        "type": "image",
+        "src": "counterLimited.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceStair",
+      "label": "Repeating Sequence Stair",
+      "icon": "repeatingSequenceStair.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutValues": [
+          0,
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceStair.svg"
+      }
+    },
+    {
+      "type": "repeatingSequenceInterpolated",
+      "label": "Repeating Sequence Interpolated",
+      "icon": "repeatingSequenceInterpolated.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "TimeValues": [
+          0,
+          1,
+          2
+        ],
+        "OutValues": [
+          0,
+          2,
+          0
+        ]
+      },
+      "render": {
+        "type": "image",
+        "src": "repeatingSequenceInterpolated.svg"
+      }
+    },
+    {
+      "type": "signalGenerator",
+      "label": "Signal Generator",
+      "icon": "signalGenerator.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Waveform": "sine",
+        "Amplitude": 1,
+        "Frequency": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "signalGenerator.svg"
+      }
+    },
+    {
+      "type": "pulse",
+      "label": "Pulse Generator",
+      "icon": "pulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Period": 1,
+        "Width": 50,
+        "StartTime": 0,
+        "Offset": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "pulse.svg"
+      }
+    },
+    {
+      "type": "impulse",
+      "label": "Impulse",
+      "icon": "impulse.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Time": 0,
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "impulse.svg"
+      }
+    },
+    {
+      "type": "sine",
+      "label": "Sine",
+      "icon": "sine.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "Frequency": 1,
+        "Phase": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "sine.svg"
+      }
+    },
+    {
+      "type": "chirp",
+      "label": "Chirp",
+      "icon": "chirp.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1,
+        "f1": 1,
+        "f2": 10,
+        "T": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "chirp.svg"
+      }
+    },
+    {
+      "type": "fileSource",
+      "label": "File",
+      "icon": "fileSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "FileName": ""
+      },
+      "render": {
+        "type": "image",
+        "src": "fileSource.svg"
+      }
+    },
+    {
+      "type": "fromWorkspace",
+      "label": "From Workspace",
+      "icon": "fromWorkspace.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 48,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 24,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "VariableName": "simin",
+        "SampleTime": "0",
+        "Interpolate": "on",
+        "OutputAfterFinalValue": "Extrapolation"
+      },
+      "render": {
+        "type": "math",
+        "formula": "\\mathtt{{params.VariableName}}",
+        "textSize": 14
+      }
+    },
+    {
+      "type": "labelSource",
+      "label": "Label",
+      "icon": "labelSource.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 40,
+      "height": 40,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 40,
+          "y": 20,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "GotoTag": "x"
+      },
+      "render": {
+        "type": "image",
+        "src": "labelSource.svg"
+      }
+    },
+    {
+      "type": "noise",
+      "label": "Noise",
+      "icon": "noise.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Amplitude": 1
+      },
+      "render": {
+        "type": "image",
+        "src": "noise.svg"
+      }
+    },
+    {
+      "type": "clock",
+      "label": "Clock",
+      "icon": "clock.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DisplayTime": false,
+        "Decimation": 10
+      },
+      "render": {
+        "type": "image",
+        "src": "clock.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "enumeratedConstant",
+      "label": "Enumerated Constant",
+      "icon": "enumeratedConstant.svg",
+      "phases": [
+        "OUTPUT"
+      ],
+      "width": 90,
+      "height": 50,
+      "inputs": [],
+      "outputs": [
+        {
+          "x": 90,
+          "y": 25,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "EnumClass": "",
+        "Value": 0
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/source/fromWorkspace.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">﻿//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include "source_blocks.hpp"
+//=============================================================================
+// fromWorkspace: emits a signal read from a Nelson workspace variable.
+//
+// The variable itself is resolved on the interpreter thread BEFORE the
+// simulation starts (nflow_simulateBuiltin / the GUI launch path): its
+// samples are injected into the block params as 'times' (N entries),
+// 'values' (N*width entries, per-sample layout) and 'width', exactly like
+// fileSource. The handler therefore never touches the workspace and OUTPUT
+// stays a pure function of ctx.t (variable-step safe).
+//
+// Reference semantics (measured):
+// - time must be non-decreasing (duplicates describe discontinuities);
+// - Interpolate 'on': linear; at a duplicated time the NEW value wins;
+//   before the first point: linear extrapolation from the first two points;
+// - Interpolate 'off': hold the value of the latest sample with time &lt;= t;
+//   zero before the first point;
+// - after the final point, per OutputAfterFinalValue: 'Extrapolation'
+//   (linear, requires Interpolate on - validated at INIT), 'Setting to zero',
+//   'Holding final value'.
+//=============================================================================
+namespace {
+//=============================================================================
+enum AfterFinalMode
+{
+    AFTER_EXTRAPOLATION = 0,
+    AFTER_ZERO = 1,
+    AFTER_HOLD = 2
+};
+//=============================================================================
+}
+//=============================================================================
+bool
+Nelson::NFlow::handleFromWorkspace(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    auto&amp; st = getState(ctx, b.nid);
+    if (phase == Phase::INIT) {
+        // Reused BlockState storage: fsrcTimes = sample times, fsrcValues =
+        // per-sample values (k * width + i), fsrcIdx = width,
+        // scalar = interpolate flag, scalar2 = after-final mode.
+        st.fsrcTimes.clear();
+        st.fsrcValues.clear();
+        if (b.params.contains(nflow::kTimes) &amp;&amp; b.params[nflow::kTimes].is_array()) {
+            for (const auto&amp; v : b.params[nflow::kTimes]) {
+                st.fsrcTimes.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
+            }
+        }
+        if (b.params.contains(nflow::kValues) &amp;&amp; b.params[nflow::kValues].is_array()) {
+            for (const auto&amp; v : b.params[nflow::kValues]) {
+                st.fsrcValues.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
+            }
+        }
+        st.fsrcValuesImag.clear();
+        if (b.params.contains("valuesImag") &amp;&amp; b.params["valuesImag"].is_array()) {
+            for (const auto&amp; v : b.params["valuesImag"]) {
+                st.fsrcValuesImag.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
+            }
+        }
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        st.fsrcIdx = std::max(1, (int)bd.paramDouble(nflow::kWidth, 1.0));
+        const bool interpolate = bd.paramStr(nflow::kInterpolate, "on") != "off";
+        st.scalar = interpolate ? 1.0 : 0.0;
+        const std::string afterFinal = bd.paramStr(nflow::kOutputAfterFinalValue, "Extrapolation");
+        if (afterFinal == "Setting to zero") {
+            st.scalar2 = AFTER_ZERO;
+        } else if (afterFinal == "Holding final value") {
+            st.scalar2 = AFTER_HOLD;
+        } else {
+            st.scalar2 = AFTER_EXTRAPOLATION;
+        }
+        if (st.fsrcTimes.empty()) {
+            if (ctx.diag) {
+                SimDiagnostic d;
+                d.code = "fromworkspace_no_data";
+                d.blockId = b.id;
+                d.message = "fromWorkspace block: variable '"
+                    + nflow::BlockDescriptor(b, ctx.variables)
+                          .paramStr(nflow::kVariableName, "simin")
+                    + "' was not resolved before the simulation started.";
+                d.time = ctx.t;
+                ctx.diag-&gt;fail(d);
+            }
+            return false;
+        }
+        if (!interpolate &amp;&amp; st.scalar2 == AFTER_EXTRAPOLATION) {
+            if (ctx.diag) {
+                SimDiagnostic d;
+                d.code = "fromworkspace_extrap_without_interp";
+                d.blockId = b.id;
+                d.message = "fromWorkspace block: unable to extrapolate output values after "
+                            "the final data value because interpolation is not enabled.";
+                d.time = ctx.t;
+                ctx.diag-&gt;fail(d);
+            }
+        }
+        return false;
+    }
+    if (phase != Phase::OUTPUT) {
+        return false;
+    }
+    const int n = (int)st.fsrcTimes.size();
+    const int w = std::max(1, st.fsrcIdx);
+    const PortSig* ps = portSigOf(ctx, b.nid, 0);
+    const int outW = ps ? ps-&gt;width() : 1;
+    double scalarOut = 0.0;
+    double* y = (outW &gt; 1) ? outputSlice(ctx, b.nid, 0) : &amp;scalarOut;
+    if (n == 0) {
+        for (int i = 0; i &lt; outW; ++i) {
+            y[i] = 0.0;
+        }
+        if (outW &lt;= 1) {
+            setOutput(ctx, b.nid, scalarOut);
+        }
+        return false;
+    }
+    const bool interpolate = st.scalar != 0.0;
+    const double t = ctx.t;
+    const double t0 = st.fsrcTimes.front();
+    const double tN = st.fsrcTimes.back();
+    // Interpolation / hold / after-final rules for one storage lane (the
+    // imaginary lane of a complex source follows the same rules).
+    auto computeLane = [&amp;](const std::vector&lt;double&gt;&amp; vals, double* dst) {
+        auto sample = [&amp;](int k, int i) -&gt; double {
+            const size_t pos = (size_t)k * w + i;
+            return pos &lt; vals.size() ? vals[pos] : 0.0;
+        };
+        auto linearFrom = [&amp;](int k0, int k1, int i) -&gt; double {
+            const double ta = st.fsrcTimes[k0];
+            const double tb = st.fsrcTimes[k1];
+            const double va = sample(k0, i);
+            const double vb = sample(k1, i);
+            if (tb == ta) {
+                return vb;
+            }
+            return va + (vb - va) * (t - ta) / (tb - ta);
+        };
+        for (int i = 0; i &lt; std::min(outW, w); ++i) {
+            double v = 0.0;
+            if (t &lt; t0) {
+                // before the first point
+                v = (interpolate &amp;&amp; n &gt;= 2) ? linearFrom(0, 1, i)
+                                            : (interpolate ? sample(0, i) : 0.0);
+            } else if (t &gt; tN) {
+                // after the final point
+                switch ((int)st.scalar2) {
+                case AFTER_ZERO:
+                    v = 0.0;
+                    break;
+                case AFTER_HOLD:
+                    v = sample(n - 1, i);
+                    break;
+                default: // AFTER_EXTRAPOLATION (validated: interpolate is on)
+                    v = (n &gt;= 2) ? linearFrom(n - 2, n - 1, i) : sample(n - 1, i);
+                    break;
+                }
+            } else {
+                // last index with time &lt;= t; at a duplicated time this picks
+                // the right-most sample, so the NEW value wins at the
+                // discontinuity.
+                int idx = (int)(std::upper_bound(st.fsrcTimes.begin(), st.fsrcTimes.end(), t)
+                              - st.fsrcTimes.begin())
+                    - 1;
+                if (idx &lt; 0) {
+                    idx = 0;
+                }
+                if (!interpolate || st.fsrcTimes[idx] == t || idx + 1 &gt;= n) {
+                    v = sample(idx, i);
+                } else {
+                    v = linearFrom(idx, idx + 1, i);
+                }
+            }
+            dst[i] = v;
+        }
+        for (int i = w; i &lt; outW; ++i) {
+            dst[i] = 0.0;
+        }
+    };
+    computeLane(st.fsrcValues, y);
+    if (ps &amp;&amp; ps-&gt;isComplex) {
+        double scalarImag = 0.0;
+        double* yim = (outW &gt; 1) ? outputSliceImag(ctx, b.nid, 0) : &amp;scalarImag;
+        if (yim) {
+            computeLane(st.fsrcValuesImag, yim);
+            if (outW &lt;= 1) {
+                double* slot = outputSliceImag(ctx, b.nid, 0);
+                if (slot) {
+                    slot[0] = scalarImag;
+                }
+            }
+        }
+    }
+    if (outW &lt;= 1) {
+        setOutput(ctx, b.nid, scalarOut);
+    }
+    return false;
+}
+//=============================================================================
+namespace {
+//=============================================================================
+// Shared codegen helpers: the workspace samples are baked into the generated
+// code as constant tables plus one shared lookup helper per language.
+//=============================================================================
+struct BakedData
+{
+    std::vector&lt;double&gt; times;
+    std::vector&lt;double&gt; values;
+    int interpolate = 1;
+    int afterMode = AFTER_EXTRAPOLATION;
+    bool scalar = false;
+};
+//=============================================================================
+BakedData
+bakedDataOf(const nlohmann::json&amp; params)
+{
+    BakedData d;
+    if (params.contains(nflow::kTimes) &amp;&amp; params[nflow::kTimes].is_array()) {
+        for (const auto&amp; v : params[nflow::kTimes]) {
+            d.times.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
+        }
+    }
+    if (params.contains(nflow::kValues) &amp;&amp; params[nflow::kValues].is_array()) {
+        for (const auto&amp; v : params[nflow::kValues]) {
+            d.values.push_back(v.is_number() ? v.get&lt;double&gt;() : 0.0);
+        }
+    }
+    int width = 1;
+    if (params.contains(nflow::kWidth) &amp;&amp; params[nflow::kWidth].is_number()) {
+        width = std::max(1, params[nflow::kWidth].get&lt;int&gt;());
+    }
+    std::string interp = "on";
+    if (params.contains(nflow::kInterpolate) &amp;&amp; params[nflow::kInterpolate].is_string()) {
+        interp = params[nflow::kInterpolate].get&lt;std::string&gt;();
+    }
+    d.interpolate = (interp != "off") ? 1 : 0;
+    std::string after = "Extrapolation";
+    if (params.contains(nflow::kOutputAfterFinalValue)
+        &amp;&amp; params[nflow::kOutputAfterFinalValue].is_string()) {
+        after = params[nflow::kOutputAfterFinalValue].get&lt;std::string&gt;();
+    }
+    d.afterMode = (after == "Setting to zero") ? AFTER_ZERO
+        : (after == "Holding final value")     ? AFTER_HOLD
+                                               : AFTER_EXTRAPOLATION;
+    d.scalar = (width == 1) &amp;&amp; !d.times.empty() &amp;&amp; d.values.size() == d.times.size();
+    return d;
+}
+//=============================================================================
+std::string
+numberList(const std::vector&lt;double&gt;&amp; values, const std::function&lt;std::string(double)&gt;&amp; fmt)
+{
+    std::string out;
+    for (size_t i = 0; i &lt; values.size(); ++i) {
+        if (i &gt; 0) {
+            out += ", ";
+        }
+        out += fmt(values[i]);
+    }
+    return out;
+}
+//=============================================================================
+} // namespace
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCFromWorkspace()
+{
+    BlockCodegenTemplate t;
+    t.emitShared = [](const BlockCodegenStateArgs&amp; a) {
+        if (a.once("fromWorkspace_helper_c")) {
+            a.addHelper("static double nflow_from_workspace(const double* ts, const double* "
+                        "vs, int n, double t, int interp, int after_mode)");
+            a.addHelper("{");
+            a.addHelper("  int idx = 0, lo = 0, hi = n - 1;");
+            a.addHelper("  if (n &lt;= 0) { return 0.0; }");
+            a.addHelper("  if (t &lt; ts[0]) {");
+            a.addHelper("    if (!interp) { return 0.0; }");
+            a.addHelper("    if (n &lt; 2 || ts[1] == ts[0]) { return vs[0]; }");
+            a.addHelper("    return vs[0] + (vs[1] - vs[0]) * (t - ts[0]) / (ts[1] - ts[0]);");
+            a.addHelper("  }");
+            a.addHelper("  if (t &gt; ts[n - 1]) {");
+            a.addHelper("    if (after_mode == 1) { return 0.0; }");
+            a.addHelper("    if (after_mode == 2 || n &lt; 2 || ts[n - 1] == ts[n - 2]) { return "
+                        "vs[n - 1]; }");
+            a.addHelper("    return vs[n - 2] + (vs[n - 1] - vs[n - 2]) * (t - ts[n - 2]) / "
+                        "(ts[n - 1] - ts[n - 2]);");
+            a.addHelper("  }");
+            a.addHelper("  while (lo &lt;= hi) {");
+            a.addHelper("    int mid = (lo + hi) / 2;");
+            a.addHelper(
+                "    if (ts[mid] &lt;= t) { idx = mid; lo = mid + 1; } else { hi = mid - 1; }");
+            a.addHelper("  }");
+            a.addHelper("  if (!interp || ts[idx] == t || idx + 1 &gt;= n || ts[idx + 1] == "
+                        "ts[idx]) { return vs[idx]; }");
+            a.addHelper("  return vs[idx] + (vs[idx + 1] - vs[idx]) * (t - ts[idx]) / (ts[idx "
+                        "+ 1] - ts[idx]);");
+            a.addHelper("}");
+        }
+        BakedData d = bakedDataOf(*a.params);
+        if (!d.scalar) {
+            return;
+        }
+        const std::string n = std::to_string(d.times.size());
+        a.addConst("static const double fw_t_" + a.id + "[" + n + "] = { "
+            + numberList(d.times, a.fmt) + " };");
+        a.addConst("static const double fw_v_" + a.id + "[" + n + "] = { "
+            + numberList(d.values, a.fmt) + " };");
+    };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        BakedData d = bakedDataOf(*a.params);
+        if (!d.scalar) {
+            a.line("out_" + a.id
+                + " = 0.0; /* fromWorkspace: no baked data (vector or "
+                  "unresolved variable) */");
+            return;
+        }
+        a.line("out_" + a.id + " = nflow_from_workspace(fw_t_" + a.id + ", fw_v_" + a.id + ", "
+            + std::to_string(d.times.size()) + ", t, " + std::to_string(d.interpolate) + ", "
+            + std::to_string(d.afterMode) + ");");
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustFromWorkspace()
+{
+    BlockCodegenTemplate t;
+    t.emitShared = [](const BlockCodegenStateArgs&amp; a) {
+        if (a.once("fromWorkspace_helper_rust")) {
+            a.addHelper("fn nflow_from_workspace(ts: &amp;[f64], vs: &amp;[f64], t: f64, interp: "
+                        "bool, after_mode: i32) -&gt; f64 {");
+            a.addHelper("    let n = ts.len();");
+            a.addHelper("    if n == 0 { return 0.0; }");
+            a.addHelper("    if t &lt; ts[0] {");
+            a.addHelper("        if !interp { return 0.0; }");
+            a.addHelper("        if n &lt; 2 || ts[1] == ts[0] { return vs[0]; }");
+            a.addHelper("        return vs[0] + (vs[1] - vs[0]) * (t - ts[0]) / (ts[1] - ts[0]);");
+            a.addHelper("    }");
+            a.addHelper("    if t &gt; ts[n - 1] {");
+            a.addHelper("        if after_mode == 1 { return 0.0; }");
+            a.addHelper("        if after_mode == 2 || n &lt; 2 || ts[n - 1] == ts[n - 2] { "
+                        "return vs[n - 1]; }");
+            a.addHelper("        return vs[n - 2] + (vs[n - 1] - vs[n - 2]) * (t - ts[n - 2]) "
+                        "/ (ts[n - 1] - ts[n - 2]);");
+            a.addHelper("    }");
+            a.addHelper("    let mut idx = 0usize;");
+            a.addHelper("    let (mut lo, mut hi) = (0isize, (n - 1) as isize);");
+            a.addHelper("    while lo &lt;= hi {");
+            a.addHelper("        let mid = ((lo + hi) / 2) as usize;");
+            a.addHelper("        if ts[mid] &lt;= t { idx = mid; lo = mid as isize + 1; } else { "
+                        "hi = mid as isize - 1; }");
+            a.addHelper("    }");
+            a.addHelper("    if !interp || ts[idx] == t || idx + 1 &gt;= n || ts[idx + 1] == "
+                        "ts[idx] { return vs[idx]; }");
+            a.addHelper("    vs[idx] + (vs[idx + 1] - vs[idx]) * (t - ts[idx]) / (ts[idx + 1] "
+                        "- ts[idx])");
+            a.addHelper("}");
+        }
+        BakedData d = bakedDataOf(*a.params);
+        if (!d.scalar) {
+            return;
+        }
+        const std::string n = std::to_string(d.times.size());
+        a.addConst(
+            "const FW_T_" + a.id + ": [f64; " + n + "] = [ " + numberList(d.times, a.fmt) + " ];");
+        a.addConst(
+            "const FW_V_" + a.id + ": [f64; " + n + "] = [ " + numberList(d.values, a.fmt) + " ];");
+    };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        BakedData d = bakedDataOf(*a.params);
+        if (!d.scalar) {
+            a.line("out_" + a.id
+                + " = 0.0_f64; // fromWorkspace: no baked data (vector or unresolved "
+                  "variable)");
+            return;
+        }
+        a.line("out_" + a.id + " = nflow_from_workspace(&amp;FW_T_" + a.id + ", &amp;FW_V_" + a.id + ", t, "
+            + (d.interpolate ? "true" : "false") + ", " + std::to_string(d.afterMode) + ");");
+    };
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Run the From/To Workspace demo (defines 'simin' then opens the model)</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">run([modulepath('nflow_blocks'), '/examples/workspace/From_Workspace_Demo.m']);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/sink/toWorkspace.html">toWorkspace</a><a class="see-also-link" href="../../nflow_blocks/source/fileSource.html">fileSource</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -8,7 +8,7 @@ Private functions serve a valuable purpose when you wish to restrict the accessi
 
 In numerous instances, a single function may require access to one or more auxiliary functions.
 
-when a solitary auxiliary function is utilized by multiple functions, it becomes necessary to relocate these auxiliary functions to a dedicated subdirectory named "private", positioned within the directory where the functions that require access to these auxiliary functions are located.
+when a single auxiliary function is used by multiple functions, place the auxiliary functions in a subdirectory named "private" inside the directory that contains the functions requiring access to them.
 
 To illustrate this concept, consider a function, let's call it <b>function1</b>, that relies on a helper function, <b>function2</b>, to perform a substantial portion of its tasks, as shown in below example.
 

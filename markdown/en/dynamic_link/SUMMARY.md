@@ -25,6 +25,7 @@
   - [findcmake](findcmake.md)
   - [getdynlibext](getdynlibext.md)
   - [havecompiler](havecompiler.md)
+  - [isNull](isNull.md)
   - [libpointer](libpointer.md)
   - [libpointer_delete](libpointer_delete.md)
   - [libpointer_isNull](libpointer_isNull.md)

@@ -12,7 +12,7 @@ Locate Visual Studio 2017, 2019 and newer installations
 
 ## 📄 Description
 
-<b>vswhere</b> allows to find easily Visual studio.
+<b>vswhere</b> locates Visual Studio installations.
 
 <b>vswhere</b> is currently only implemented on Windows platform.
 

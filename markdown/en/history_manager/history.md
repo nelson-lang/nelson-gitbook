@@ -96,7 +96,7 @@ history manager.
 
 <b>history('saveafter', nb_commands)</b> saves the history file after<b>nb_commands</b> statements are added to the file.
 
-<b>Tips</b>: You can easily share your history file in the cloud by adding few lines code in your user startup file.
+<b>Tips</b>: You can share your history file in the cloud by adding a few lines of code to your user startup file.
 
 If nelson launched with '--nouserstartup' option, history file will be not loaded at startup and not saved at exit.
 

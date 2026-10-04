@@ -6,7 +6,7 @@ Compiler du code C/C++ à la volée
 
 Nelson fournit un outil multiplateforme en ligne de commande, écrit en Nelson, pour compiler des modules natifs (addons).
 
-Il simplifie les différences entre plateformes de compilation et facilite la construction d'extensions natives.
+Il réduit les différences entre plateformes de compilation et prend en charge la construction d'extensions natives.
 
 ## 💡 Exemple
 

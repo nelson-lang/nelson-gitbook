@@ -12,6 +12,7 @@ This module enables flexible manipulation of data structures and numerical array
 - [and](and.md) - logical 'AND' operator, &
 - [any](any.md) - any of the elements of a matrix satisfy some condition.
 - [bitand](bitand.md) - Bit-wise AND
+- [bitget](bitget.md) - Get selected bits.
 - [bitor](bitor.md) - Bit-wise OR
 - [bitxor](bitxor.md) - Bit-wise XOR
 - [cat](cat.md) - Concatenate arrays.

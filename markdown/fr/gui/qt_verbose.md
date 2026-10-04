@@ -1,6 +1,6 @@
 # qt_verbose
 
-Afficher/masquer les messages de débogage Qt.
+Afficher/masquer les messages de dÃ©bogage Qt.
 
 ## 📝 Syntaxe
 
@@ -18,9 +18,9 @@ Afficher/masquer les messages de débogage Qt.
 
 ## 📄 Description
 
-<b>qt_verbose</b> affiche ou masque les messages de débogage Qt.
+<b>qt_verbose</b> affiche ou masque les messages de dÃ©bogage Qt.
 
-Cette fonction est utile pour déboguer Qt et Qml.
+Cette fonction est utile pour dÃ©boguer Qt et Qml.
 
 ## 💡 Exemple
 

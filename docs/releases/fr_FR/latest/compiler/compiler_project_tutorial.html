@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>compiler_project_tutorial</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler_project_tutorial</span>, <span class="keyword-alias">compiler_project_tutorial</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Tutoriel : configurer, construire et distribuer une application dans l'éditeur de projet.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">deploytool
+standaloneApplicationCompiler
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>1. Ouvrez deploytool dans une session graphique ou en ligne de commande avancée Nelson. Sélectionnez le fichier .m principal dans Application, puis la cible console ou, sous Windows, la cible sans console. Choisissez un répertoire de sortie. Build peut être relancé dans le même répertoire si le rapport et les sorties de la construction précédente sont inchangés.</p>
+    <p>2. Ajoutez les fichiers ou dossiers supplémentaires dans Resources. Placez les fichiers .nh5 et .mat dans Application resources lorsque l'exécutable en a besoin. Les fichiers Additional installer files sont distribués par l'installateur sans être incorporés dans l'application.</p>
+    <p>3. Cliquez sur Analyze pour examiner les chemins source/archive et les diagnostics de dépendances non résolues dans Results et le journal. L'analyse ne crée pas le répertoire de construction. Corrigez les dépendances manquantes avant de construire.</p>
+    <p>4. Cliquez sur Build. L'éditeur appelle compiler.build.standaloneApplication ou compiler.build.standaloneWindowsApplication et présente les fichiers réellement générés. La construction ne copie pas de runtime. Utilisez un runtime compatible déjà installé ou distribuez-en un lors de l'étape distincte de création de l'installateur. Avec EmbedArchive=false, distribuez le fichier .nca adjacent avec son exécutable.</p>
+    <p>5. Sous Windows, Installer regroupe destination, distribution et raccourci ; Installer details contient les metadonnees ; Installer images contient les icones, le logo et l'icone de la liste des applications. RuntimeDelivery=none necessite un runtime compatible existant ; installer inclut un runtime prive. Apres une construction reussie, cliquez sur Installer pour creer l'EXE ou le ZIP sans rien installer sur la machine de construction. Inno Setup doit etre disponible pour cette operation. La distribution web n'est pas implementee.</p>
+    <p>6. Enregistrez le projet après une construction réussie pour conserver sa référence de construction. New, Open et Close proposent d'enregistrer les modifications. La réouverture vérifie les paramètres de construction, l'empreinte du rapport, les fichiers générés, le contrat du lanceur natif et l'archive avant de restaurer les sorties pour créer un installateur. Si une sortie manque ou a changé, la configuration reste ouverte avec un diagnostic et sans construction utilisable. Modifier les paramètres de construction invalide le résultat précédent ; modifier les métadonnées d'installation ne l'invalide pas.</p>
+    <p>7. Export build script dans Results ecrit les commandes compiler.build equivalentes dans un fichier .m. Seule la construction est exportee, pas les commandes d'installation, et aucun fichier existant n'est remplace. Le contenu du projet n'est jamais evalue comme du code. Le format JSON .ncproj est propre a Nelson, versionne et valide ; la sauvegarde ecrit le schema versionne courant et applique la limite de 1 Mio. Ce n'est pas un format d'echange de projets avec d'autres applications.</p>
+    <p>Depuis la version 2 du format, les projets enregistrent les chemins internes au dossier du fichier de projet sous forme relative : fichier principal, ressources applicatives et d'installation, motifs de fichiers, aide, images, répertoires de sortie et source du raccourci. Déplacez ce dossier avec ses sources et ses sorties de construction, puis ouvrez son fichier .ncproj pour restaurer ou reconstruire depuis le nouvel emplacement. Les chemins relatifs sont résolus par rapport au fichier de projet, indépendamment du répertoire courant de Nelson. L'éditeur et les commandes exportées utilisent les chemins absolus résolus.</p>
+    <p>Les fichiers extérieurs au dossier du projet conservent leurs chemins absolus et doivent rester disponibles ou être mis à jour après déplacement. Enregistrer sous un autre nom recalcule les chemins relatifs sans déplacer les sources. RuntimeLogFile et DefaultInstallationDir gardent leur sens sur la machine destinataire. Le format 3 a introduit LastBuild avec les empreintes du rapport et des paramètres ; le format 4 a ajouté SourcesSHA256 pour les entrées construites. Le format 5 a introduit TreatInputsAsNumeric. Les versions 1 à 4 migrent avec la conversion numérique désactivée ; les empreintes de paramètres vérifiées sont actualisées sans approuver des paramètres modifiés. Les versions 1 et 2 n'ont pas de construction enregistrée ; la version 3 n'a pas d'empreinte des sources avant reconstruction.</p>
+    <p>L'onglet Application contient la case Treat Inputs As Numeric. Activez-la pour transmettre des scalaires double à la fonction d'entrée ; désactivez-la pour conserver les vecteurs de caractères. Le projet enregistré et la commande exportée conservent ce réglage. Voir compiler.build.StandaloneApplicationOptions pour la conversion, les entrées invalides et le comportement des scripts.</p>
+    <p>L'ouverture d'une construction enregistrée, Analyze, Build et Installer vérifient l'état des sources sans exécuter le code applicatif. L'empreinte couvre le code et les ressources retenus, le contenu des dossiers sélectionnés et les dossiers vides, l'ordre de recherche, les définitions des dépendances retenues, l'aide applicative et l'icône de l'exécutable. Elle ignore les horodatages et le déplacement des chemins de construction. Les nouveaux fichiers correspondant aux motifs AdditionalFiles sont détectés. Un changement confirmé désactive Installer jusqu'à une nouvelle construction. Aucun observateur en arrière-plan ni contrôle à l'exécution de l'application n'est ajouté.</p>
+    <p>Une construction restaurée est l'application précédemment générée, pas une reconstruction des sources actuelles. Si les sources ne peuvent pas être analysées, notamment en cas de fichier manquant ou de syntaxe invalide, la vérification est indisponible et le journal en indique la raison. Les projets sans empreinte des sources affichent un état inconnu. Aucun de ces états ne signifie que les sources sont à jour. L'application enregistrée et vérifiée reste distribuable sans ses sources ; les ressources d'installation et les fichiers du runtime à inclure doivent rester disponibles. Examinez l'état et les diagnostics avant de distribuer cet instantané. L'interface programmatique compiler.package.installer continue d'utiliser les résultats figés indépendamment de l'état des sources.</p>
+    <p>Les sorties et le rapport sont revérifiés avant le packaging. Les contrôles décrivent les entrées observées, sans verrouiller les sources contre des modifications concurrentes. Les entrées dynamiques absentes de l'analyse des dépendances ne sont pas surveillées. Les empreintes détectent les changements ; ce ne sont pas des signatures d'éditeur.</p>
+    <p>Les projets dont les sources sont manquantes restent accessibles pour réparer les chemins. Une reconstruction prépare les nouvelles sorties avant de remplacer la construction précédente vérifiée ; les fichiers sans rapport sont conservés et les sorties modifiées nécessitent une nouvelle destination. Changer le nom de l'exécutable nécessite aussi un autre répertoire de sortie. Voir compiler.build.standaloneApplication pour les règles de publication et de récupération. Le projet ne contient ni copie des sources, ni binaires du runtime, ni identifiants secrets. Vérifiez les ressources et les commandes générées avant distribution.</p>
+    <p>La taille des projets est limitée à 1 Mio. Une sauvegarde dépassant cette limite est refusée avant de remplacer le projet existant.</p>
+    <p>L'onglet Packages selectionne la detection automatique, aucun paquet enregistre, ou une liste de paquets nmm installes autorises. Le format de projet 6 enregistre SupportPackages ; les anciens projets migrent vers {'autodetect'} en conservant leurs references de construction valides. Modifier la selection invalide les anciens parametres de construction.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">deploytool</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../modules_manager/deploytool.html">deploytool</a><a class="see-also-link" href="../modules_manager/standaloneApplicationCompiler.html">standaloneApplicationCompiler</a><a class="see-also-link" href="../compiler/compiler.build.StandaloneApplicationOptions.html">compiler.build.StandaloneApplicationOptions</a><a class="see-also-link" href="../compiler/compiler_installer_tutorial.html">compiler_installer_tutorial</a><a class="see-also-link" href="../compiler/compiler_runtime_tutorial.html">compiler_runtime_tutorial</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

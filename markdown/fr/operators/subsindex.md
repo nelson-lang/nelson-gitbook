@@ -14,6 +14,10 @@ Convertir un objet en vecteur d'indices.
 
 Si <b>O</b> est un objet alors <b>subsindex</b> est la méthode de surcharge qui permet de convertir cet objet en un vecteur d'indexation valide.
 
+## 🔗 Voir aussi
+
+[subsref](../operators/subsref.md), [subsasgn](../operators/subsasgn.md), [colon](../operators/colon.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

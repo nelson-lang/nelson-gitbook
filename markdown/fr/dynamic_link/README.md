@@ -4,7 +4,7 @@ Le module Liens dynamiques permet à Nelson de compiler, charger et appeler du c
 
 Il prend en charge la génération de gateways, de loaders et la gestion des bibliothèques partagées pour l'intégration de code compilé externe.
 
-Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une foisconfiguremsvc ou configuremingw.
+Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Windows. N'oubliez pas d'exécuter une fois**configuremsvc** ou **configuremingw**.
 
 ## Functions
 
@@ -34,6 +34,7 @@ Par défaut, Nelson ne détecte pas automatiquement un compilateur C/C++ sous Wi
 - [findcmake](findcmake.md) - Trouver le chemin de CMake
 - [getdynlibext](getdynlibext.md) - Renvoie l'extension des bibliothèques dynamiques
 - [havecompiler](havecompiler.md) - Détecter si un compilateur C/C++ est configuré
+- [isNull](isNull.md) - Determiner si un pointeur de bibliotheque est nul.
 - [libpointer](libpointer.md) - Crée un objet pointeur C utilisable dans Nelson
 - [libpointer_delete](libpointer_delete.md) - Supprime l'objet libpointer
 - [libpointer_isNull](libpointer_isNull.md) - Vérifie si un handle libpointer pointe vers NULL

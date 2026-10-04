@@ -8,6 +8,7 @@ Trier les éléments d'un tableau (algorithme de tri rapide).
 - B = sort(A, dim)
 - B = sort(..., direction)
 - B = sort(..., name, value)
+- B = sort(A, dim, direction, name, value)
 - [B, I] = sort(...)
 
 ## 📥 Argument d'entrée
@@ -24,7 +25,11 @@ Trier les éléments d'un tableau (algorithme de tri rapide).
 
 ## 📄 Description
 
+Avec deux sorties, les éléments dont les clés de tri sont équivalentes conservent leur ordre initial. Les indices renvoyés pour des valeurs équivalentes sont croissants dans chaque groupe, quel que soit le sens du tri.
+
 <b>sort</b> implémente l'algorithme de tri rapide.
+
+Les paires nom-valeur peuvent être utilisées après la dimension et le sens du tri.
 
 Arguments paires nom-valeur :
 
@@ -47,6 +52,10 @@ Arguments paires nom-valeur :
       </b>, <b>
         'abs'
       </b>.
+
+Avec 'MissingPlacement' défini à 'last', les valeurs présentes sont triées dans le sens demandé et les valeurs manquantes sont placées après elles. Cette règle s'applique avec une ou deux sorties. Une chaîne manquante est distincte d'une chaîne vide.
+
+Une valeur complexe est manquante si au moins une composante est NaN. Ces valeurs conservent leur ordre initial avec une ou deux sorties, y compris leur composante présente, pour chaque placement des valeurs manquantes et sens du tri.
 
 ## Fonction(s) utilisée(s)
 

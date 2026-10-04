@@ -22,7 +22,7 @@ Displays or hides the Windows terminal associated with the Nelson session.
 
 Each Nelson session runs within its own consolebox. When the Nelson session ends, its corresponding consolebox is automatically terminated.
 
-The consolebox is a black terminal window that cannot be closed manually — the close (“X”) button in the upper-right corner is disabled. Forcing it to close will also terminate the Nelson session.
+The consolebox is a black terminal window that cannot be closed manually - the close (“X”) button in the upper-right corner is disabled. Forcing it to close will also terminate the Nelson session.
 
 Some low-level Nelson functions (and certain external libraries) output their messages directly to the consolebox.
 

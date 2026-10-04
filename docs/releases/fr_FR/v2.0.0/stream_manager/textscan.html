@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>textscan</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">textscan</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Lit des données formatées depuis une chaîne ou un fichier.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">C = textscan(chr, format)
+C = textscan(fid, format)
+C = textscan(__, Name, Value)
+[C, position] = textscan(__)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">chr</td>
+<td>un vecteur de caractères ou une chaîne scalaire à lire.</td>
+</tr>
+<tr>
+<td class="param-name">fid</td>
+<td>un identifiant de fichier retourné par fopen. Les données sont lues depuis la position courante jusqu'à la fin du fichier.</td>
+</tr>
+<tr>
+<td class="param-name">format</td>
+<td>un vecteur de caractères décrivant les spécificateurs de conversion appliqués à chaque champ.</td>
+</tr>
+<tr>
+<td class="param-name">Name, Value</td>
+<td>une ou plusieurs paires option/valeur.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">C</td>
+<td>un tableau de cellules avec une cellule par spécificateur de conversion.</td>
+</tr>
+<tr>
+<td class="param-name">position</td>
+<td>le nombre de caractères lus lorsque la lecture s'est arrêtée.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>textscan</b> lit des données formatées et retourne un tableau de
+    cellules <b>C</b>. Chaque cellule contient une colonne de sortie
+    collectée sur toutes les répétitions du format, car le format est
+    appliqué de façon cyclique sur toute l'entrée.</p>
+    <p>Les spécificateurs numériques produisent des vecteurs colonnes, tandis
+    que <b>%s</b>, <b>%q</b> et <b>%[...]</b> produisent des tableaux de
+    cellules de vecteurs de caractères.</p>
+    <p>Spécificateurs de conversion pris en charge :</p>
+    <p><b>%d</b> entier signé (int32), <b>%u</b> entier non signé (uint32),
+    <b>%f</b> nombre à virgule flottante (double), <b>%s</b> texte séparé par
+    des espaces ou un délimiteur, <b>%q</b> texte éventuellement entre
+    guillemets, <b>%c</b> un nombre fixe de caractères, <b>%[...]</b> et
+    <b>%[^...]</b> lecture d'un ensemble de caractères.</p>
+    <p>Une largeur de champ peut être indiquée (par exemple <b>%5d</b> ou
+    <b>%3s</b>). Un spécificateur préfixé par <b>*</b> (par exemple
+    <b>%*d</b>) est lu mais non stocké. Un suffixe de taille sélectionne la
+    classe numérique (<b>%d8</b>, <b>%d16</b>, <b>%d32</b>, <b>%d64</b>,
+    <b>%u8</b> et <b>%f32</b>). Le texte littéral entre les spécificateurs
+    doit correspondre dans l'entrée.</p>
+    <p>Options option/valeur prises en charge :</p>
+    <p><b>Delimiter</b> un vecteur de caractères, ou un tableau de cellules de
+    vecteurs de caractères, utilisé pour séparer les champs.</p>
+    <p><b>HeaderLines</b> le nombre de lignes d'en-tête à ignorer.</p>
+    <p><b>CollectOutput</b> si vrai, les colonnes consécutives de même classe
+    sont concaténées dans un seul tableau.</p>
+    <p><b>EmptyValue</b> la valeur numérique utilisée pour les champs
+    numériques vides.</p>
+    <p><b>Whitespace</b> les caractères traités comme des espaces.</p>
+    <p><b>MultipleDelimsAsOne</b> si vrai, les délimiteurs consécutifs sont
+    traités comme un seul délimiteur.</p>
+    <p><b>CommentStyle</b> un marqueur de commentaire, ou une paire début et
+    fin, dont le texte est ignoré.</p>
+    <p><b>TreatAsEmpty</b> des valeurs textuelles traitées comme des champs
+    numériques vides.</p>
+    <p><b>EndOfLine</b> accepté pour compatibilité ; les caractères de fin de
+    ligne sont toujours traités comme des séparateurs.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">C = textscan('1 2 3', '%d')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">C = textscan('a,b,c', '%s', 'Delimiter', ',');
+C{1}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">C = textscan('name:42', '%[^:]:%d')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../stream_manager/sscanf.html">sscanf</a><a class="see-also-link" href="../stream_manager/fscanf.html">fscanf</a><a class="see-also-link" href="../stream_manager/fopen.html">fopen</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

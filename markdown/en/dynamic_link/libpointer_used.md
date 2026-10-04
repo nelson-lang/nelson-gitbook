@@ -1,6 +1,6 @@
 # libpointer_used
 
-Returns list of current used libpointer handle.
+Returns the current valid libpointer handles.
 
 ## 📝 Syntax
 
@@ -12,12 +12,12 @@ Returns list of current used libpointer handle.
 
 ## 📄 Description
 
-Returns list of current used libpointer handle.
+Returns the current valid libpointer handles.
 
 ## 💡 Example
 
 ```matlab
-libpointer_used(),delete(libpointer_used())
+used = libpointer_used()
 ```
 
 ## 🔗 See also

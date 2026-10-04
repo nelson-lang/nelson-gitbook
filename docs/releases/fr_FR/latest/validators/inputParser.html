@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>inputParser</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">inputParser</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Analyse et verifie les entrees de fonction.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">p = inputParser()
+addRequired(p, name)
+addRequired(p, name, validator)
+addOptional(p, name, defaultValue)
+addOptional(p, name, defaultValue, validator)
+addParameter(p, name, defaultValue)
+addParameter(p, name, defaultValue, validator)
+addParamValue(p, name, defaultValue)
+addParamValue(p, name, defaultValue, validator)
+parse(p, varargin{:})
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">name</td>
+<td>identifiant valide utilise comme nom de champ dans les resultats de l'analyseur.</td>
+</tr>
+<tr>
+<td class="param-name">defaultValue</td>
+<td>valeur utilisee lorsqu'une entree optionnelle ou un parametre est absent.</td>
+</tr>
+<tr>
+<td class="param-name">validator</td>
+<td>fonction appelee avec la valeur candidate. Elle peut renvoyer un scalaire logique ou emettre une erreur.</td>
+</tr>
+<tr>
+<td class="param-name">varargin</td>
+<td>entrees a analyser. Les entrees positionnelles sont associees d'abord, puis les entrees nom-valeur.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">p</td>
+<td>objet handle qui stocke le schema d'entrees et le resultat de l'analyse.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>inputParser</b> definit des entrees requises, optionnelles et nom-valeur, puis stocke les valeurs analysees dans <b>Results</b>.</p>
+    <p>Le schema est defini avec <b>addRequired</b>, <b>addOptional</b>, <b>addParameter</b> et <b>addParamValue</b>. <b>addParamValue</b> est accepte comme alias de compatibilite pour <b>addParameter</b>.</p>
+    <p>Le schema peut etre construit dans n'importe quel ordre, mais <b>parse</b> consomme d'abord les entrees positionnelles requises, ensuite les entrees positionnelles optionnelles, puis les entrees nom-valeur.</p>
+    <p>Une entree requise doit etre presente. Une entree optionnelle est consommee lorsque la prochaine valeur positionnelle satisfait son validateur et n'est pas reconnue comme nom de parametre. Les parametres sont fournis sous forme de paires nom-valeur.</p>
+    <p>Si un parametre nom-valeur est fourni plusieurs fois, la derniere valeur fournie est conservee dans <b>Results</b>.</p>
+    <p>Les proprietes modifiables sont :</p>
+    <p><b>FunctionName</b> : texte ajoute au debut des messages d'erreur de l'analyseur.</p>
+    <p><b>CaseSensitive</b> : si cette propriete vaut false, les noms de parametres sont compares sans tenir compte de la casse. La valeur par defaut est false.</p>
+    <p><b>KeepUnmatched</b> : si cette propriete vaut true, les paires nom-valeur non reconnues sont stockees dans <b>Unmatched</b>. La valeur par defaut est false.</p>
+    <p><b>PartialMatching</b> : si cette propriete vaut true, un prefixe unique de nom de parametre est accepte. La valeur par defaut est true.</p>
+    <p><b>StructExpand</b> : si cette propriete vaut true et que <b>parse</b> recoit une seule structure scalaire, les champs de la structure sont traites comme des paires nom-valeur. La valeur par defaut est true.</p>
+    <p>Les proprietes en lecture seule sont :</p>
+    <p><b>Parameters</b> : noms ajoutes a l'analyseur dans l'ordre de declaration.</p>
+    <p><b>Results</b> : structure scalaire contenant les valeurs analysees et les valeurs par defaut.</p>
+    <p><b>Unmatched</b> : structure scalaire contenant les paires nom-valeur non reconnues lorsque <b>KeepUnmatched</b> vaut true.</p>
+    <p><b>UsingDefaults</b> : cellule de noms d'entrees optionnelles et de parametres pour lesquels la valeur par defaut a ete utilisee.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Entree requise et parametre nom-valeur.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">p = inputParser();
+addRequired(p, 'width', @(x) isnumeric(x) &amp;&amp; isscalar(x));
+addParameter(p, 'units', 'm', @(x) ischar(x) || isstring(x));
+parse(p, 10, 'units', 'cm');
+p.Results</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Entree optionnelle, valeurs par defaut et derniere valeur nom-valeur prioritaire.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">p = inputParser();
+addRequired(p, 'name', @(x) ischar(x) || isstring(x));
+addOptional(p, 'count', 1, @(x) isnumeric(x) &amp;&amp; isscalar(x) &amp;&amp; x &gt; 0);
+addParameter(p, 'mode', 'fast', @(x) validatestring(x, {'fast', 'slow'}));
+parse(p, 'job', 'mode', 'slow', 'mode', 'fast');
+p.Results
+p.UsingDefaults</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Expansion de structure avec champs non reconnus conserves.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">p = inputParser();
+p.KeepUnmatched = true;
+addParameter(p, 'width', 1, @(x) isnumeric(x) &amp;&amp; isscalar(x));
+addParameter(p, 'height', 1, @(x) isnumeric(x) &amp;&amp; isscalar(x));
+opts.width = 10;
+opts.height = 5;
+opts.color = 'blue';
+parse(p, opts);
+p.Results
+p.Unmatched</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../validators/validateattributes.html">validateattributes</a><a class="see-also-link" href="../validators/validatestring.html">validatestring</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

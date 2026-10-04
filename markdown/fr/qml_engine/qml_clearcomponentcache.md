@@ -18,6 +18,10 @@ Tous les composants précédemment chargés et les liaisons de propriété pour 
 qml_clearcomponentcache()
 ```
 
+## 🔗 Voir aussi
+
+[qml_collectgarbage](../qml_engine/qml_collectgarbage.md), [qml_loadfile](../qml_engine/qml_loadfile.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

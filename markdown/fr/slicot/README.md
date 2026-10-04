@@ -29,6 +29,6 @@ Le module prend en charge les systèmes temps continu et discret, y compris les 
 - [slicot_sb04md](slicot_sb04md.md) - Résolution des équations de Sylvester temps continu (méthode Hessenberg-Schur).
 - [slicot_sb04qd](slicot_sb04qd.md) - Résolution des équations de Sylvester temps discret (méthode Hessenberg-Schur).
 - [slicot_sb10jd](slicot_sb10jd.md) - Conversion d'un système d'espace d'état descripteur en forme d'espace d'état régulière.
-- [slicot_sg02ad](slicot_sg02ad.md) - Solution of continuous- or discrete-time algebraic Riccati equations for descriptor systems.
+- [slicot_sg02ad](slicot_sg02ad.md) - Résolution des équations de Riccati algébriques temps continu ou discret pour les systèmes descripteurs.
 - [slicot_tb01id](slicot_tb01id.md) - Équilibrage d'une matrice système correspondant au triplet (A, B, C).
 - [slicot_tg01ad](slicot_tg01ad.md) - Équilibrage des matrices du pinceau système correspondant au triplet descripteur (A - λ E, B, C).

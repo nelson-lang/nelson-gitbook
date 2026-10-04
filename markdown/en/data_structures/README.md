@@ -4,7 +4,7 @@ The Data Structures module provides tools for creating, manipulating, and inspec
 
 It enables conversion between different data formats, access and modification of fields, application of functions to array elements, and organization of structured data.
 
-This module facilitates flexible handling of complex data, supporting both programmatic operations and dynamic data management.
+This module handles complex data through programmatic operations and dynamic data management.
 
 ## Functions
 
@@ -15,15 +15,17 @@ This module facilitates flexible handling of complex data, supporting both progr
 - [celldisp](celldisp.md) - Display cell array contents.
 - [cellfun](cellfun.md) - Evaluates an function on a cell.
 - [cellstr](cellstr.md) - Converts to cell of character array.
-- [fieldnames](fieldnames.md) - Returns field names of a structure or an handle.
+- [fieldnames](fieldnames.md) - Return structure field names or public classdef property names.
 - [getfield](getfield.md) - Returns value of a field in a struct.
 - [iscellstr](iscellstr.md) - Returns if a variable is a cell of strings.
 - [isfield](isfield.md) - Checks if a fieldname exists in a struct.
+- [mat2cell](mat2cell.md) - Split an array into a cell array.
 - [namedargs2cell](namedargs2cell.md) - Converts a struct containing name-value pairs to a cell.
 - [num2cell](num2cell.md) - Convert array to cell array with consistently sized cells.
 - [orderfields](orderfields.md) - Reorganize the fields of a structured array.
 - [renameStructField](renameStructField.md) - Rename field names of a struct or struct array.
 - [rmfield](rmfield.md) - Remove fields from structure.
 - [setfield](setfield.md) - Set structure field contents.
-- [struct](struct.md) - Creates a struct.
+- [struct](struct.md) - Create a structure or convert an object to a structure.
 - [struct2cell](struct2cell.md) - Creates a cell from a structure.
+- [structfun](structfun.md) - Apply a function to each field of a scalar structure.

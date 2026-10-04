@@ -17,16 +17,30 @@ Enregistre une figure dans un format de fichier spécifique.
 
 <b>saveas</b> enregistre la figure dans un format de fichier spécifique.
 
-<b>Formats pris en charge</b> :
+Le <b>formattype</b> explicite est prioritaire sur l'extension du fichier. Sans extension, PNG est sélectionné et <b>.png</b> est ajouté. Les modes bureau, web et headless utilisent le même moteur de rendu et le même registre de formats.
 
-| Option | Format                                               | Extension |
-| ------ | ---------------------------------------------------- | --------- |
-| svg    | SVG (scalable vector graphics)                       | .svg      |
-| pdf    | Portable Document Format (PDF) page entière, couleur | .pdf      |
-| png    | PNG 24-bit                                           | .png      |
-| jpg    | JPEG 24-bit                                          | .jpg      |
-| gif    | Graphics Interchange Format                          | .gif      |
-| tif    | Tagged Image File Format                             | .tif      |
+<b>Fond :</b> tant que la propriété <b>InvertHardcopy</b> de la figure vaut <b>'on'</b>(valeur par défaut), le fond exporté est blanc quelle que soit la couleur <b>Color</b> affichée (gris clair par défaut). Passer <b>InvertHardcopy</b> à <b>'off'</b> pour exporter la couleur de fond affichée.
+
+Les <b>formats vectoriels</b> utilisent des exporteurs de figure dédiés :
+
+| Option | Format                                            | Extension |
+| ------ | ------------------------------------------------- | --------- |
+| svg    | Scalable Vector Graphics                          | .svg      |
+| pdf    | Portable Document Format, page entière en couleur | .pdf      |
+
+Les <b>formats raster</b> sont encodés par le même registre que <b>imwrite</b> :
+
+| Option canonique   | Alias      | Extension              |
+| ------------------ | ---------- | ---------------------- |
+| png                | -          | .png                   |
+| jpg                | jpeg, jfif | .jpg, .jpeg, .jfif     |
+| gif                | -          | .gif                   |
+| webp               | -          | .webp                  |
+| tiff               | tif        | .tiff, .tif            |
+| bmp                | dib        | .bmp, .dib             |
+| tga                | -          | .tga                   |
+| pbm, pgm, ppm, pnm | -          | .pbm, .pgm, .ppm, .pnm |
+| pcx                | -          | .pcx                   |
 
 ## 💡 Exemple
 
@@ -37,19 +51,24 @@ y = x;
 F = X.*exp(-X.^2-Y.^2);
 surf(X,Y,F);
 saveas(gcf(), [tempdir, 'svg-file.svg']);
+saveas(gcf(), [tempdir, 'webp-file.webp']);
+saveas(gcf(), [tempdir, 'bitmap-file.bmp']);
+saveas(gcf(), [tempdir, 'document-file.pdf']);
+close(gcf());
 
 ```
 
 ## 🔗 Voir aussi
 
-[gcf](../graphics/gcf.md).
+[gcf](../graphics/2_graphics_objects/1_object_management/gcf.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
-| 1.0.0   | version initiale  |
-| 1.13.0  | tiff format added |
+| Version | 📄 Description                                                       |
+| ------- | -------------------------------------------------------------------- |
+| 1.0.0   | version initiale                                                     |
+| 1.13.0  | tiff format added                                                    |
+| 2.0.0   | ajout des formats d'export communs aux modes bureau, web et headless |
 
 <!--
 ## 👤 Auteur

@@ -32,7 +32,7 @@ R2 = subsasgn(R1, S, 'Hello')
 
 ## 🔗 Voir aussi
 
-[substruct](../elementary_functions/substruct.md).
+[substruct](../elementary_functions/substruct.md), [subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
 
 ## 🕔 Historique
 

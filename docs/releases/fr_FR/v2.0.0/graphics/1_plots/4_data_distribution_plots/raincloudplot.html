@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>raincloudplot</title>
+<link rel="stylesheet" href="../../highlight.css">
+<link rel="stylesheet" href="../../nelson_common.css">
+<script src="../../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">raincloudplot</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Visualiser des donnees numeriques groupees avec des graphiques en nuage de pluie.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">raincloudplot(ydata)
+raincloudplot(xgroupdata, ydata)
+raincloudplot(tbl, yvar)
+raincloudplot(tbl, xvar, yvar)
+raincloudplot(..., propertyName, propertyValue)
+raincloudplot(ax, ...)
+r = raincloudplot(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">ydata</td>
+<td>donnees de l'echantillon: vecteur ou matrice numerique. Une matrice cree un nuage de pluie par colonne.</td>
+</tr>
+<tr>
+<td class="param-name">xgroupdata</td>
+<td>donnees de groupement positionnel: vecteur numerique ou categorical ayant le meme nombre d'elements que ydata, ou matrice de meme taille que ydata. Un nuage de pluie est dessine pour chaque valeur unique.</td>
+</tr>
+<tr>
+<td class="param-name">tbl</td>
+<td>table ou timetable contenant les donnees.</td>
+</tr>
+<tr>
+<td class="param-name">yvar</td>
+<td>variables de table contenant l'echantillon numerique: noms, indices numeriques ou selecteur logique.</td>
+</tr>
+<tr>
+<td class="param-name">xvar</td>
+<td>variables de table contenant les donnees de groupement numeriques ou categorical.</td>
+</tr>
+<tr>
+<td class="param-name">ax</td>
+<td>axes cibles (par defaut: axes courants).</td>
+</tr>
+<tr>
+<td class="param-name">DensityWidth</td>
+<td>scalaire positif: largeur maximale d'un nuage de pluie en unites des donnees de groupement (par defaut: 0.9).</td>
+</tr>
+<tr>
+<td class="param-name">Orientation</td>
+<td>'horizontal' (par defaut) ou 'vertical'. Avec 'horizontal', les valeurs de l'echantillon sont le long de l'axe x et les groupes le long de l'axe y.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">r</td>
+<td>objet graphique raincloudplot, ou vecteur colonne d'objets: un par colonne d'une matrice, ou un par variable de table dans xvar ou yvar (celle qui en contient le plus).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>raincloudplot</b> visualise la distribution empirique d'un echantillon ainsi que les valeurs elles-memes. Une moitie du graphique est un demi-violon (le nuage) qui montre une estimation par noyau de la densite; l'autre moitie est un essaim de marqueurs (la pluie), un marqueur par valeur, eloignes de la ligne de base du nuage pour eviter qu'ils se superposent.</p>
+    <p>Avec l'orientation horizontale par defaut, le nuage est dessine au-dessus de la position du groupe et la pluie en dessous. Avec l'orientation verticale, le nuage est dessine a droite de la position du groupe et la pluie a gauche.</p>
+    <p>L'estimation de densite par noyau est celle utilisee par <b>violinplot</b>. Les largeurs des nuages de tous les groupes d'un objet sont mises a l'echelle ensemble de sorte que le nuage le plus large atteigne la moitie de <b>DensityWidth</b>. L'etalement de la pluie suit la densite locale.</p>
+    <p>Chaque objet a sa propre couleur: <b>FaceColor</b> est pris dans <b>ColorOrder</b> des axes selon <b>SeriesIndex</b>, qui suit l'ordre de creation dans les axes. <b>EdgeColor</b>, <b>MarkerFaceColor</b> et <b>MarkerEdgeColor</b> suivent <b>FaceColor</b> tant que leur mode vaut 'auto'.</p>
+    <p>Les donnees de groupement categorical sont placees a des positions entieres consecutives etiquetees par le nom des categories. Quand plusieurs variables de table servent de donnees de groupement, les categories de meme nom partagent la meme position.</p>
+    <p>La page <a href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.raincloudplot.properties.html">proprietes raincloudplot</a> liste les proprietes d'objet prises en charge.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Nuages de pluie de donnees groupees.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ydata = randn(100, 1);
+xgroupdata = categorical(repelem(["group1"; "group2"; "group3"], [20, 50, 30]));
+raincloudplot(xgroupdata, ydata)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./raincloudplot_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Nuages de pluie superposes avec des couleurs choisies.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">figure
+hold on
+r1 = raincloudplot(80 + 8 * randn(40, 1));
+r2 = raincloudplot(75 + 6 * randn(60, 1));
+r1.FaceColor = "g";
+r2.FaceColor = "m";
+legend("Smoker", "Nonsmoker")</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Nuages de pluie a partir de variables de table.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X1 = categorical(repelem(["group1"; "group2"], [90, 10]));
+X3 = categorical(repelem(["group3"; "group4"], [25, 75]));
+tbl = table(X1, X3, randn(100, 1), randn(100, 1) + 5, 'VariableNames', {'X1', 'X3', 'Y1', 'Y2'});
+figure
+raincloudplot(tbl, ["X1", "X3"], ["Y1", "Y2"])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../../../graphics/1_plots/4_data_distribution_plots/violinplot.html">violinplot</a><a class="see-also-link" href="../../../graphics/1_plots/4_data_distribution_plots/swarmchart.html">swarmchart</a><a class="see-also-link" href="../../../graphics/1_plots/4_data_distribution_plots/boxchart.html">boxchart</a><a class="see-also-link" href="../../../graphics/2_graphics_objects/4_properties/nelson.graphics.raincloudplot.properties.html">proprietes raincloudplot</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

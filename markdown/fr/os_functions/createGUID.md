@@ -27,6 +27,10 @@ createGUID()
 createGUID(10)
 ```
 
+## 🔗 Voir aussi
+
+[tempname](../files_folders_functions/tempname.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

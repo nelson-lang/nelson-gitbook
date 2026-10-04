@@ -8,7 +8,7 @@ Explorateur d'espace de travail
 
 ## 📄 Description
 
-L'explorateur d'espace de travail vous permet d'observer et de gérer activement le contenu de l'espace de travail dans Nelson, offrant un accès et un contrôle sur chaque variable ou objet présent.
+L'explorateur d'espace de travail vous permet d'observer et de gÃ©rer activement le contenu de l'espace de travail dans Nelson, offrant un accÃ¨s et un contrÃ´le sur chaque variable ou objet prÃ©sent.
 
 <img src="workspace.png" align="middle"/>
 

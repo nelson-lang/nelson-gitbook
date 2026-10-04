@@ -8,7 +8,9 @@ Ce module permet une gestion efficace des expressions polynomiales pour la modé
 
 ## Functions
 
+- [compan](compan.md) - Matrice compagnon.
 - [deconv](deconv.md) - Déconvolution et division polynomiale.
+- [mkpp](mkpp.md) - Construit un polynome par morceaux
 - [poly](poly.md) - Polynôme à partir de racines ou polynôme caractéristique.
 - [polyder](polyder.md) - Dérivation polynomiale.
 - [polyfit](polyfit.md) - Ajustement polynomiale (polynomial curve fitting).
@@ -16,4 +18,5 @@ Ce module permet une gestion efficace des expressions polynomiales pour la modé
 - [polyval](polyval.md) - Évaluation polynomiale.
 - [polyvalm](polyvalm.md) - Évaluation de polynôme matriciel.
 - [ppval](ppval.md) - Evalue une forme polynomiale par morceaux
+- [residue](residue.md) - Decomposition en fractions simples (residus)
 - [roots](roots.md) - Trouver les racines d'un polynôme.

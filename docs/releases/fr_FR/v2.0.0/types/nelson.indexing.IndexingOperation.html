@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nelson.indexing.IndexingOperation</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.indexing.IndexingOperation</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Décrit un élément d'une expression d'indexation.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">op = nelson.indexing.IndexingOperation(type, indices)
+op = nelson.indexing.IndexingOperation(type, indices, name)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">type</td>
+<td>un nelson.indexing.IndexingOperationType, ou son nom en char/string ('Paren', 'Brace', 'Dot', ...).</td>
+</tr>
+<tr>
+<td class="param-name">indices</td>
+<td>tableau de cellules des indices paren/brace (vide pour une opération dot).</td>
+</tr>
+<tr>
+<td class="param-name">name</td>
+<td>le nom du champ (opération dot uniquement).</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">op</td>
+<td>un nelson.indexing.IndexingOperation scalaire.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>nelson.indexing.IndexingOperation</b> décrit une opération d'indexation. Elle est passée
+    aux méthodes <b>parenReference</b>/<b>parenAssign</b>, <b>braceReference</b>/<b>braceAssign</b>
+    et <b>dotReference</b>/<b>dotAssign</b> des classes dérivant de
+    <b>nelson.mixin.indexing.Redefines*</b>. Une expression chaînée est passée sous forme de
+    <b>tableau 1×N</b> d'opérations (une par niveau de la chaîne) : <b>indexOp</b> peut donc être
+    scalaire ou un tableau.</p>
+    <p>Propriétés : <b>Type</b> (un nelson.indexing.IndexingOperationType), <b>Indices</b> (tableau de
+    cellules des indices, pour Paren/Brace) et <b>Name</b> (le nom du champ, pour Dot).</p>
+    <p>Un IndexingOperation (scalaire ou tableau) s'applique à une valeur avec la forme dynamique
+    <b>value.(indexOp)</b>, qui effectue la chaîne <b>subsref</b> (lecture) ou <b>subsasgn</b>
+    (écriture) correspondante. C'est la manière recommandée de retransmettre la chaîne reçue depuis
+    un hook, par exemple <b>obj.Data.(indexOp)</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Construire une opération d'indexation par parenthèses.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">op = nelson.indexing.IndexingOperation('Paren', {2});
+char(op.Type)
+op.Indices{1}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Appliquer un tableau d'opérations à une valeur avec la forme dynamique value.(indexOp).</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">data = struct('f', {[1 2 3], [4 5 6 7]});
+chain = [nelson.indexing.IndexingOperation('Paren', {2}), ...
+         nelson.indexing.IndexingOperation('Dot', {}, 'f')];
+data.(chain)   % équivaut à data(2).f</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../types/nelson.indexing.IndexingOperationType.html">nelson.indexing.IndexingOperationType</a><a class="see-also-link" href="../types/nelson.mixin.indexing.RedefinesParen.html">nelson.mixin.indexing.RedefinesParen</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

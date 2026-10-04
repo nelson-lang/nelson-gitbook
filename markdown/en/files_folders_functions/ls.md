@@ -16,7 +16,7 @@ List folder contents.
 
 ## 📤 Output argument
 
-- res - On Windows, res is an m-by-n character array of names. m is the number of names and n is the number of characters in the longest name. On Unix plaftorms is a character vector of names separated by tab and space characters.
+- res - On Windows, res is an m-by-n character array of names. m is the number of names and n is the number of characters in the longest name. On Unix platforms is a character vector of names separated by tab and space characters.
 
 ## 📄 Description
 

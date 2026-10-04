@@ -6,6 +6,10 @@ About SLICOT license.
 
 Nelson uses SLICOT v5.9 under BSD-3-Clause license.
 
+## 🔗 See also
+
+[slicot_sb02od](../slicot/slicot_sb02od.md), [slicot_sb03md](../slicot/slicot_sb03md.md).
+
 ## 🕔 History
 
 | Version | 📄 Description                   |

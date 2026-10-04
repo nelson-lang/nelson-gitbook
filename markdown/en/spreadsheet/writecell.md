@@ -58,6 +58,36 @@ Syntax: <b>
 
 Available Delimiters: Only applicable for delimited text files.
 
+| Specifier | Alternative | Description |
+| --------- | ----------- | ----------- |
+
+| <code>
+','
+</code> | <code>
+'comma'
+</code> | Comma (default) |
+| <code>
+'
+'
+</code> | <code>
+'space'
+</code> | Space character |
+| <code>
+'\t'
+</code> | <code>
+'tab'
+</code> | Tab character |
+| <code>
+';'
+</code> | <code>
+'semi'
+</code> | Semicolon |
+| <code>
+'|'
+</code> | <code>
+'bar'
+</code> | Vertical bar |
+
 <b>QuoteStrings</b>: Controls text quoting behavior (Only applicable for delimited text files).
 
 <b>

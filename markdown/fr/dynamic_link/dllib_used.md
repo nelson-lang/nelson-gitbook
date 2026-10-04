@@ -17,7 +17,7 @@ Renvoie la liste des handles dllib actuellement utilisés.
 ## 💡 Exemple
 
 ```matlab
-dllib_used(),delete(dllib_used())
+used = dllib_used()
 ```
 
 ## 🔗 Voir aussi

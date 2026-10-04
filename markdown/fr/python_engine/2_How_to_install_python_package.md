@@ -2,7 +2,7 @@
 
 ## 📄 Description
 
-Nelson permet d'intégrer de manière transparente des paquets Python dans les flux de travail.
+Nelson peut utiliser des paquets Python depuis les flux de travail Nelson.
 
 Installer des paquets Python dans Nelson étend ses fonctionnalités et permet d'exploiter un large éventail de bibliothèques pour l'analyse de données, l'apprentissage automatique, le calcul scientifique, et plus encore.
 

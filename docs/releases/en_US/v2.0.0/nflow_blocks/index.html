@@ -1,0 +1,1041 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
+</head>
+<body>
+<img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
+<div class="section-title">NFlow blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>The nflow_blocks module provides the simulation blocks used by NFlow, including their ports, parameters, phases, and runtime behavior.</p>
+    <p>NFlow is currently released as <b>1.0.0-beta.1</b>: it is functional and tested, but details of its interfaces and file format may still evolve based on feedback.</p>
+  </div>
+<div style="margin-left:18px;">
+<div class="section">
+<div class="section-title">Electrical (acausal)</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/CCC.html" target="contentFrame">CCC</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Current-controlled current source: i_pn = gain i_cp (the sense branch cp-cn is a short).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/CCV.html" target="contentFrame">CCV</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Current-controlled voltage source: v_pn = gain i_cp (the sense branch cp-cn is a short).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Capacitor.html" target="contentFrame">Capacitor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal linear capacitor: i = C dv/dt.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Conductor.html" target="contentFrame">Conductor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal linear conductor: i = G (v_p - v_n).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/ConstantCurrent.html" target="contentFrame">ConstantCurrent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Constant current source: current I flows p -&gt; n.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/ConstantVoltage.html" target="contentFrame">ConstantVoltage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Constant voltage source: v_p - v_n = V.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/CurrentSensor.html" target="contentFrame">CurrentSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the branch current p -&gt; n (ideal ammeter).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Diode.html" target="contentFrame">Diode</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exponential (Shockley) diode: i = Is (exp(vd/Vt) - 1).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/ExpSineCurrent.html" target="contentFrame">ExpSineCurrent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exponentially damped sine current source.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/ExpSineVoltage.html" target="contentFrame">ExpSineVoltage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exponentially damped sine voltage source.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Ground.html" target="contentFrame">Ground</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Reference node (0 V) for an electrical island.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Gyrator.html" target="contentFrame">Gyrator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Gyrator: i1 = G2 v2, i2 = -G1 v1 (across&lt;-&gt;through transducer).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/HeatingResistor.html" target="contentFrame">HeatingResistor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resistor that dissipates its power P = v^2 / R as heat into a thermal port.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/IdealDiode.html" target="contentFrame">IdealDiode</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal diode switching at the knee voltage Vknee: off below it (leak conductance Goff), on above it (on-resistance Ron in series with Vknee); the mode flip is an event.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/IdealOpAmp.html" target="contentFrame">IdealOpAmp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal op-amp (nullor): virtual short e_+ = e_-, output current free.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/IdealSwitch.html" target="contentFrame">IdealSwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal switch: control &gt; 0.5 -&gt; closed short, else open (i = 0).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/IdealTransformer.html" target="contentFrame">IdealTransformer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal transformer: v1 = n v2, i2 = -n i1 (structural, no state storage).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Idle.html" target="contentFrame">Idle</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal open branch: i = 0 (branch voltage free).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Inductor.html" target="contentFrame">Inductor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal linear inductor: v = L di/dt.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/NMOS.html" target="contentFrame">NMOS</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">N-channel MOSFET (square law): drain, gate and source pins.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/NPN.html" target="contentFrame">NPN</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">NPN bipolar transistor (Ebers-Moll): collector, base and emitter pins.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/PMOS.html" target="contentFrame">PMOS</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">P-channel MOSFET (square law): drain, gate and source pins.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/PNP.html" target="contentFrame">PNP</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">PNP bipolar transistor (Ebers-Moll): collector, base and emitter pins.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/PotentialSensor.html" target="contentFrame">PotentialSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the absolute node potential.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/RampCurrent.html" target="contentFrame">RampCurrent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ramp current source: i = Slope (t - StartTime) for t &gt;= StartTime, else 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/RampVoltage.html" target="contentFrame">RampVoltage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ramp voltage source: v = Slope (t - StartTime) for t &gt;= StartTime, else 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Resistor.html" target="contentFrame">Resistor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal linear resistor: i = (v_p - v_n) / R.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/Short.html" target="contentFrame">Short</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal short circuit: e_p = e_n (branch current free).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/SignalCurrent.html" target="contentFrame">SignalCurrent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Current source driven by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/SignalVoltage.html" target="contentFrame">SignalVoltage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Voltage source driven by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/SineCurrent.html" target="contentFrame">SineCurrent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sine current source: i = Amplitude sin(2 pi Frequency t + Phase).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/SineVoltage.html" target="contentFrame">SineVoltage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sine voltage source: v = Amplitude sin(2 pi Frequency t + Phase).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/TrapezoidCurrent.html" target="contentFrame">TrapezoidCurrent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trapezoidal current source (continuous ramp-up / hold / ramp-down).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/TrapezoidVoltage.html" target="contentFrame">TrapezoidVoltage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trapezoidal voltage source (continuous ramp-up / hold / ramp-down).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VCC.html" target="contentFrame">VCC</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Voltage-controlled current source: i = gain (v_cp - v_cn).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VCV.html" target="contentFrame">VCV</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Voltage-controlled voltage source: v_pn = gain (v_cp - v_cn).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VariableCapacitor.html" target="contentFrame">VariableCapacitor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Capacitor whose capacitance C is set by a signal (exact charge Q formulation).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VariableConductor.html" target="contentFrame">VariableConductor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Conductor whose conductance G is set by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VariableInductor.html" target="contentFrame">VariableInductor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Inductor whose inductance L is set by a signal (exact flux phi formulation).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VariableResistor.html" target="contentFrame">VariableResistor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resistor whose resistance R is set by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/VoltageSensor.html" target="contentFrame">VoltageSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the voltage v_p - v_n (ideal, no loading).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_electrical/ZDiode.html" target="contentFrame">ZDiode</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Zener diode: forward Shockley conduction plus reverse breakdown at -Vz.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Planar (acausal)</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarAccelerationSensor.html" target="contentFrame">PlanarAccelerationSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Absolute acceleration of the body at frame a along the chosen axis (x, y) or the angular acceleration (alpha).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarBody.html" target="contentFrame">PlanarBody</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rigid body: mass m, central inertia I; six states (xc, yc, phi, vx, vy, w). Named frames are body-fixed offsets from the COM.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarDamper.html" target="contentFrame">PlanarDamper</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear 2D damper between the points at frames a and b: F = -d dv.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarDistance.html" target="contentFrame">PlanarDistance</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rigid rod: holds a fixed distance L between the points at frames a and b.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarDistanceSensor.html" target="contentFrame">PlanarDistanceSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Distance between the points at frames a and b.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarFixed.html" target="contentFrame">PlanarFixed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Frame rigidly fixed at the world point (x, y).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarForce.html" target="contentFrame">PlanarForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">External world force (fx, fy) applied at the frame-a point (adds a torque when offset from the COM).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarPointMass.html" target="contentFrame">PlanarPointMass</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Point mass (no orientation): four states (xc, yc, vx, vy); attach joints at its point.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarPositionSensor.html" target="contentFrame">PlanarPositionSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Absolute position of the frame-a point along the chosen axis (x, y) or the body angle (phi).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarPrismatic.html" target="contentFrame">PlanarPrismatic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prismatic joint: frame b slides along the world axis (dx, dy) through frame a, relative rotation locked.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarRelPositionSensor.html" target="contentFrame">PlanarRelPositionSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Relative position of the frame-a point minus the frame-b point along the chosen axis (x, y).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarRelativeTorque.html" target="contentFrame">PlanarRelativeTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Actuator torque: +tau on the body at frame a, -tau on the body at frame b (drives a joint).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarRevolute.html" target="contentFrame">PlanarRevolute</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Revolute (pin) joint: frames a and b share position, free relative rotation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarRollingWheel.html" target="contentFrame">PlanarRollingWheel</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Wheel at frame a rolls without slipping on the fixed surface line (px,py)+(dx,dy), staying at height radius.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarSpring.html" target="contentFrame">PlanarSpring</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear 2D spring between the points at frames a and b: F = -c dr.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarSpringDamper.html" target="contentFrame">PlanarSpringDamper</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear 2D spring-damper between the points at frames a and b: F = -(c dr + d dv).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarTorque.html" target="contentFrame">PlanarTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">External torque tau applied to the body at frame a.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarVelocitySensor.html" target="contentFrame">PlanarVelocitySensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Absolute velocity of the frame-a point along the chosen axis (x, y) or the angular velocity (omega).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_planar/PlanarWorld.html" target="contentFrame">PlanarWorld</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Inertial world with uniform gravity (down = -y); provides a fixed frame at the origin.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Rotational (acausal)</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/AngleSensor.html" target="contentFrame">AngleSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the absolute angle of a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/BearingFriction.html" target="contentFrame">BearingFriction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Regularised bearing friction (event-free): tau = -tau_c tanh(w / w_eps).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/Clutch.html" target="contentFrame">Clutch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rotational clutch (event-free stick-slip): tau = tau_max tanh((w_a - w_b) / w_eps) reduces the slip toward a common speed.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/ConstantRotSpeed.html" target="contentFrame">ConstantRotSpeed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prescribed motion: the flange rotates at a constant angular velocity w.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/ConstantTorque.html" target="contentFrame">ConstantTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Constant torque on a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/EMF.html" target="contentFrame">EMF</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Electro-mechanical converter (motor/generator): back-emf v = k w, torque tau = k i.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/ElastoBacklash.html" target="contentFrame">ElastoBacklash</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rotational backlash: elastic torque with a dead zone of total play b.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/ExpSineTorque.html" target="contentFrame">ExpSineTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exponentially damped sine torque on a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/Freewheel.html" target="contentFrame">Freewheel</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">One-way clutch: couples flange a to b only while a overruns b (freewheels otherwise).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/IdealGear.html" target="contentFrame">IdealGear</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal gear phi_a = ratio phi_b (structural node merge, inertia folded).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/Inertia.html" target="contentFrame">Inertia</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rotational inertia: J dw/dt = tau_net.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/LinearSpeedDependentTorque.html" target="contentFrame">LinearSpeedDependentTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Speed-proportional resistance to ground: tau = -d w.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/QuadraticSpeedDependentTorque.html" target="contentFrame">QuadraticSpeedDependentTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Quadratic (drag) resistance to ground: tau = -d w |w|.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RampTorque.html" target="contentFrame">RampTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ramp torque on a flange: tau = Slope (t - StartTime) for t &gt;= StartTime, else 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RelAngleSensor.html" target="contentFrame">RelAngleSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the relative angle phi_a - phi_b between two flanges.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RelRotSpeedSensor.html" target="contentFrame">RelRotSpeedSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the relative angular velocity w_a - w_b between two flanges.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotAccelerate.html" target="contentFrame">RotAccelerate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prescribed motion: the flange angular acceleration follows the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotBrake.html" target="contentFrame">RotBrake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Signal-actuated rotational brake to ground: the input sets the peak braking torque.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotDamper.html" target="contentFrame">RotDamper</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rotational damper: tau = d (w_a - w_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotFixed.html" target="contentFrame">RotFixed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Flange fixed at a prescribed angle phi0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotSpeed.html" target="contentFrame">RotSpeed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prescribed motion: the flange angular velocity follows the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotSpeedSensor.html" target="contentFrame">RotSpeedSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the absolute angular velocity of a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotSpring.html" target="contentFrame">RotSpring</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rotational spring: tau = c (phi_a - phi_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/RotSpringDamper.html" target="contentFrame">RotSpringDamper</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Parallel rotational spring and damper: tau = c (phi_a - phi_b) + d (w_a - w_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/SineTorque.html" target="contentFrame">SineTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sine torque on a flange: tau = Amplitude sin(2 pi Frequency t + Phase).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/Torque.html" target="contentFrame">Torque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">External torque on a flange, driven by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/Torque2.html" target="contentFrame">Torque2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Equal and opposite torque between two flanges: +tau on a, -tau on b (signal-driven).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_rotational/TrapezoidTorque.html" target="contentFrame">TrapezoidTorque</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trapezoidal torque on a flange (continuous ramp-up / hold / ramp-down).</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Thermal (acausal)</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/BodyRadiation.html" target="contentFrame">BodyRadiation</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Radiation (Stefan-Boltzmann): Q_flow = Gr (T_a^4 - T_b^4).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/Convection.html" target="contentFrame">Convection</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convection: Q_flow = Gc (T_a - T_b) with a signal-driven coefficient Gc.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/ConvectiveResistor.html" target="contentFrame">ConvectiveResistor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Convective resistor: Q_flow = (T_a - T_b) / Rc with a signal-driven Rc.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/FixedHeatFlow.html" target="contentFrame">FixedHeatFlow</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Constant heat flow Q into the connected port.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/FixedTemperature.html" target="contentFrame">FixedTemperature</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Boundary at a fixed temperature T.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/HeatCapacitor.html" target="contentFrame">HeatCapacitor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lumped heat capacity: C dT/dt = Q_flow (port referenced to 0).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/HeatFlowSensor.html" target="contentFrame">HeatFlowSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the heat flow through the connection.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/PrescribedHeatFlow.html" target="contentFrame">PrescribedHeatFlow</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Heat flow into the port driven by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/PrescribedTemperature.html" target="contentFrame">PrescribedTemperature</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Temperature boundary driven by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/RelTemperatureSensor.html" target="contentFrame">RelTemperatureSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the temperature difference T_a - T_b.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/TemperatureSensor.html" target="contentFrame">TemperatureSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the absolute temperature of a port.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/ThermalConductor.html" target="contentFrame">ThermalConductor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Thermal conductor: Q_flow = G (T_a - T_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_thermal/ThermalResistor.html" target="contentFrame">ThermalResistor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Thermal resistor: Q_flow = (T_a - T_b) / R.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Translational (acausal)</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Acausal (physical) blocks with undirected pins, simulated natively through the differential-algebraic engine.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Accelerate.html" target="contentFrame">Accelerate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prescribed motion: the flange acceleration follows the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Brake.html" target="contentFrame">Brake</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Signal-actuated friction brake to ground: the input sets the peak braking force.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/ConstantForce.html" target="contentFrame">ConstantForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Constant force on a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/ConstantSpeed.html" target="contentFrame">ConstantSpeed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prescribed motion: the flange moves at a constant velocity v.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Damper.html" target="contentFrame">Damper</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear translational damper: F = d (v_a - v_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/ElastoGap.html" target="contentFrame">ElastoGap</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">One-sided contact spring-damper: acts only while the gap is closed (s_rel &lt; s_rel0).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/ExpSineForce.html" target="contentFrame">ExpSineForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exponentially damped sine force on a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Fixed.html" target="contentFrame">Fixed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Flange fixed at a prescribed position s0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Force.html" target="contentFrame">Force</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">External force on a flange, driven by the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Force2.html" target="contentFrame">Force2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Equal and opposite force between two flanges: +F on a, -F on b (signal-driven).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Friction.html" target="contentFrame">Friction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Regularised Coulomb friction (event-free): F = -Fc tanh(v / vEps).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Lever.html" target="contentFrame">Lever</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lever (small-angle): s_a = ratio s_b, the arm ratio (structural merge).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/LinearSpeedDependentForce.html" target="contentFrame">LinearSpeedDependentForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Speed-proportional resistance to ground: F = -d v.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Mass.html" target="contentFrame">Mass</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sliding mass with inertia: m dv/dt = F_net.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/MassWithWeight.html" target="contentFrame">MassWithWeight</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sliding mass under gravity: m dv/dt = F_net - m g (expands to Mass + ConstantForce).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/PositionSensor.html" target="contentFrame">PositionSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the absolute position of a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Pulley.html" target="contentFrame">Pulley</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ideal pulley: s_a = ratio s_b (structural merge; ratio = radius ratio).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/QuadraticSpeedDependentForce.html" target="contentFrame">QuadraticSpeedDependentForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Quadratic (drag) resistance to ground: F = -d v |v|.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/RampForce.html" target="contentFrame">RampForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ramp force on a flange: F = Slope (t - StartTime) for t &gt;= StartTime, else 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/RelPositionSensor.html" target="contentFrame">RelPositionSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the relative position s_a - s_b between two flanges.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/RelSpeedSensor.html" target="contentFrame">RelSpeedSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the relative velocity v_a - v_b between two flanges.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Rod.html" target="contentFrame">Rod</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rigid massless rod: s_a = s_b (structural merge; ratio defaults to 1).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/SineForce.html" target="contentFrame">SineForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sine force on a flange: F = Amplitude sin(2 pi Frequency t + Phase).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/SlidingMass.html" target="contentFrame">SlidingMass</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sliding mass of length L: m dv/dt = F_net (L is geometric, does not affect the dynamics).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Speed.html" target="contentFrame">Speed</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prescribed motion: the flange velocity follows the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/SpeedSensor.html" target="contentFrame">SpeedSensor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Measures the absolute velocity of a flange.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/Spring.html" target="contentFrame">Spring</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear translational spring: F = k (s_a - s_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/SpringDamper.html" target="contentFrame">SpringDamper</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Parallel spring and damper: F = k (s_a - s_b) + d (v_a - v_b).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/TranslationalEMF.html" target="contentFrame">TranslationalEMF</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Linear electro-mechanical converter: back-emf v = k v_flange, force F = k i.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="acausal_translational/TrapezoidForce.html" target="contentFrame">TrapezoidForce</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trapezoidal force on a flange (continuous ramp-up / hold / ramp-down).</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Continuous blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Stateful continuous-time blocks updated with the simulation step.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="continuous/constraint.html" target="contentFrame">constraint</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Algebraic (differential-algebraic) constraint state solved by the DAE solver.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/delay.html" target="contentFrame">delay</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Delays a signal with a circular buffer.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/derivative.html" target="contentFrame">derivative</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Estimates the time derivative of an input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/hpf.html" target="contentFrame">hpf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Applies a first-order high-pass filter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/integrator.html" target="contentFrame">integrator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Integrates the input over time with optional clamps.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/lpf.html" target="contentFrame">lpf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Applies a first-order low-pass filter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/pid.html" target="contentFrame">pid</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Implements a scalar PID controller with output limits.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/stateSpace.html" target="contentFrame">stateSpace</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Implements a scalar continuous state-space model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="continuous/tf.html" target="contentFrame">tf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Implements a continuous transfer function approximation.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Dashboard blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Interactive dashboard widgets that bind to signals and parameters to observe or drive a running model.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardCallbackButton.html" target="contentFrame">dashboardCallbackButton</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Runs a callback and writes a value when clicked.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardCheckBox.html" target="contentFrame">dashboardCheckBox</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Toggles a bound parameter between two values with a check box.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardComboBox.html" target="contentFrame">dashboardComboBox</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Selects one of several values from a drop-down list.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardDisplay.html" target="contentFrame">dashboardDisplay</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Shows the current value of a bound signal as formatted text.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardEdit.html" target="contentFrame">dashboardEdit</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lets you type a value that is written to a bound parameter.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardGauge.html" target="contentFrame">dashboardGauge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Displays a bound signal as a needle on a circular scale.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardHalfGauge.html" target="contentFrame">dashboardHalfGauge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Displays a bound signal on a 180-degree semicircular scale.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardKnob.html" target="contentFrame">dashboardKnob</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sets a bound parameter by turning a rotary knob.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardLamp.html" target="contentFrame">dashboardLamp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Shows a colored indicator that changes with a bound signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardLinearGauge.html" target="contentFrame">dashboardLinearGauge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Displays a bound signal on a straight linear scale.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardMultiStateImage.html" target="contentFrame">dashboardMultiStateImage</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Shows one of several images selected by a bound signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardPushButton.html" target="contentFrame">dashboardPushButton</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Writes a value to a bound parameter while pressed or toggled.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardQuarterGauge.html" target="contentFrame">dashboardQuarterGauge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Displays a bound signal on a 90-degree quarter scale.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardRadioButton.html" target="contentFrame">dashboardRadioButton</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Selects one of several values with a group of radio buttons.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardRockerSwitch.html" target="contentFrame">dashboardRockerSwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Toggles a bound parameter between two states with a rocker.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardRotarySwitch.html" target="contentFrame">dashboardRotarySwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Selects one of several states with a rotary selector.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardScope.html" target="contentFrame">dashboardScope</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Plots bound signals against simulation time on a multi-channel scope.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardSlider.html" target="contentFrame">dashboardSlider</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sets a bound parameter by dragging a linear slider.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardSliderSwitch.html" target="contentFrame">dashboardSliderSwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Toggles a bound parameter between two states with a sliding switch.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dashboard/dashboardToggleSwitch.html" target="contentFrame">dashboardToggleSwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Toggles a bound parameter between two states with a toggle switch.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Discrete blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Sampled blocks that store values, histories, or discrete states.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="discrete/ddelay.html" target="contentFrame">ddelay</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Delays a sampled signal by an integer number of steps.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/detectChange.html" target="contentFrame">detectChange</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 on any step where the input differs from the previous step.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/detectDecrease.html" target="contentFrame">detectDecrease</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 when the input strictly decreases from the previous step.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/detectIncrease.html" target="contentFrame">detectIncrease</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 when the input strictly increases from the previous step.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/difference.html" target="contentFrame">difference</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the difference from the previous input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/dstateSpace.html" target="contentFrame">dstateSpace</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Implements a scalar discrete state-space model.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/dtf.html" target="contentFrame">dtf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Implements a discrete transfer function.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/fallingEdge.html" target="contentFrame">fallingEdge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 on the step where the input crosses from &gt;= 0 to &lt; 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/foh.html" target="contentFrame">foh</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">First-order hold for sampled input values.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/rateTransition.html" target="contentFrame">rateTransition</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resamples a signal at its own sample time (zero-order hold).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/risingEdge.html" target="contentFrame">risingEdge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 on the step where the input crosses from &lt;= 0 to &gt; 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/unitDelay.html" target="contentFrame">unitDelay</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Delays the input by one update.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="discrete/zoh.html" target="contentFrame">zoh</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Samples an input and holds the last sampled value.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">FMI and Modelica blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Blocks that import, execute, or compile Functional Mock-up Units and models.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="fmi/fmu.html" target="contentFrame">fmu</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Runs a co-simulation FMU inside an NFlow diagram.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="fmi/fmuMe.html" target="contentFrame">fmuMe</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Integrates a model-exchange FMU with the NFlow solver.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="fmi/modelica.html" target="contentFrame">modelica</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compiles a Modelica model and uses it as an NFlow block.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Logic blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Boolean and comparison blocks for numeric signals.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="logic/and.html" target="contentFrame">and</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the logical AND of two inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/bitClear.html" target="contentFrame">bitClear</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Clears the bit at position BitIndex of the integer input to 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/bitSet.html" target="contentFrame">bitSet</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sets the bit at position BitIndex of the integer input to 1.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/bitwiseOperator.html" target="contentFrame">bitwiseOperator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Bit-wise AND/OR/XOR/NAND/NOR/NOT of the input against a constant BitMask.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/combinatorialLogic.html" target="contentFrame">combinatorialLogic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Truth-table lookup: an N-bit input vector indexes a 2^N-entry TruthTable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/compareToConstant.html" target="contentFrame">compareToConstant</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compares one input to a constant threshold.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/compareToZero.html" target="contentFrame">compareToZero</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compares one input to zero.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/extractBits.html" target="contentFrame">extractBits</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Extracts NumBitsToExtract bits starting at StartBit, right-aligned.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/if.html" target="contentFrame">if</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Selects an action output from a boolean expression over the inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/intervalTest.html" target="contentFrame">intervalTest</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 when the input lies within [LowerLimit, UpperLimit], else 0.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/intervalTestDynamic.html" target="contentFrame">intervalTestDynamic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Like intervalTest but the bounds come from input ports (lo, u, up).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/logicalOperator.html" target="contentFrame">logicalOperator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Configurable logical AND/OR/NAND/NOR/XOR/XNOR/NOT of the inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/not.html" target="contentFrame">not</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the logical negation of one input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/or.html" target="contentFrame">or</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the logical OR of two inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/relationalOperator.html" target="contentFrame">relationalOperator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Compares two input signals.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/shiftArithmetic.html" target="contentFrame">shiftArithmetic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Arithmetic bit shift left/right by ShiftNumber (signed 64-bit).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/switchCase.html" target="contentFrame">switchCase</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Routes an integer control to one of several action outputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="logic/xor.html" target="contentFrame">xor</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the logical exclusive OR of two inputs.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Lookup Tables</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Interpolated and direct lookup-table blocks (1-D, 2-D, n-D and direct).</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="lookup/directLookup.html" target="contentFrame">directLookup</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Direct (n-D) lookup table without interpolation.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lookup/interpolationPrelookup.html" target="contentFrame">interpolationPrelookup</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interpolates a static Table from a prelookup [k, f] pair.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lookup/lookup1D.html" target="contentFrame">lookup1D</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">1-D interpolated lookup table.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lookup/lookup2D.html" target="contentFrame">lookup2D</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">2-D interpolated lookup table.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lookup/lookupDynamic.html" target="contentFrame">lookupDynamic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">1-D interpolated lookup with breakpoints and table taken from input ports.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lookup/lookupND.html" target="contentFrame">lookupND</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">n-D interpolated lookup table.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="lookup/prelookup.html" target="contentFrame">prelookup</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Computes the interval index k and fraction f for a shared breakpoint search.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Math blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Algebraic scalar math operations.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="math/abs.html" target="contentFrame">abs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the absolute value of its input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/atan2.html" target="contentFrame">atan2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Four-quadrant arctangent of the two inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/bias.html" target="contentFrame">bias</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Adds a constant bias to the input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/complexToMagnitudeAngle.html" target="contentFrame">complexToMagnitudeAngle</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the magnitude and angle of a complex signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/complexToRealImag.html" target="contentFrame">complexToRealImag</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Splits a complex signal into real and imaginary outputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/conjugate.html" target="contentFrame">conjugate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Complex conjugate of the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/crossProduct.html" target="contentFrame">crossProduct</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cross product of two 3-element vectors.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/divide.html" target="contentFrame">divide</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Divides input 1 by input 2.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/dotProduct.html" target="contentFrame">dotProduct</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Dot product of two vector inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/gain.html" target="contentFrame">gain</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Multiplies the input by a scalar gain.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/magnitudeAngleToComplex.html" target="contentFrame">magnitudeAngleToComplex</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Builds a complex signal from magnitude and angle inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/mathFunction.html" target="contentFrame">mathFunction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Mathematical function of the input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/matmul.html" target="contentFrame">matmul</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Multiplies two matrix signals or applies element-wise multiplication.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/max.html" target="contentFrame">max</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the maximum of two inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/min.html" target="contentFrame">min</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the minimum of two inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/mult.html" target="contentFrame">mult</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Multiplies connected inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/negate.html" target="contentFrame">negate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Negates the input signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/polynomial.html" target="contentFrame">polynomial</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Evaluates a polynomial with constant Coefficients (highest power first).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/productOfElements.html" target="contentFrame">productOfElements</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Product of the elements of a vector input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/realImagToComplex.html" target="contentFrame">realImagToComplex</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Builds a complex signal from real and imaginary inputs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/roundingFunction.html" target="contentFrame">roundingFunction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rounds the input to an integer value.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/sign.html" target="contentFrame">sign</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Signum of the input (-1, 0 or +1).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/sqrt.html" target="contentFrame">sqrt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Square-root family of the input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/sum.html" target="contentFrame">sum</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Adds connected inputs with configurable signs.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/sumElements.html" target="contentFrame">sumElements</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Sum of the elements of a vector input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/trigFunction.html" target="contentFrame">trigFunction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Trigonometric function of the input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="math/wrapToZero.html" target="contentFrame">wrapToZero</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 0 when the input reaches Threshold, else passes it through.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Nonlinear blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Blocks with saturation, thresholds, hysteresis, or rate limits.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/backlash.html" target="contentFrame">backlash</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Models backlash with a dead band around the previous output.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/coulombViscousFriction.html" target="contentFrame">coulombViscousFriction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Static friction: viscous term Gain*u plus signed Coulomb term Offset*sign(u).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/deadZone.html" target="contentFrame">deadZone</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Suppresses values inside a dead zone.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/hitCrossing.html" target="contentFrame">hitCrossing</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs 1 on the step where the input crosses HitCrossingOffset.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/hysteresis.html" target="contentFrame">hysteresis</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Relay: latching two-threshold switch (uHigh, uLow, yHigh, yLow).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/quantizer.html" target="contentFrame">quantizer</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Rounds the input to the nearest interval.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/rate.html" target="contentFrame">rate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Limits rising and falling signal rates.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nonlinear/saturation.html" target="contentFrame">saturation</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Clamps the input between min and max.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Sink blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Blocks that consume, display, or name signals.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="sink/display.html" target="contentFrame">display</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Stores the latest input value for display.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/fileSink.html" target="contentFrame">fileSink</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Represents a file output sink.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/labelSink.html" target="contentFrame">labelSink</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Names an input signal for label routing.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/scope.html" target="contentFrame">scope</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Stores time-series samples for display.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/stopSimulation.html" target="contentFrame">stopSimulation</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ends the run at the end of the step where its input first becomes nonzero.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/terminator.html" target="contentFrame">terminator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Consumes an intentionally unused signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/toWorkspace.html" target="contentFrame">toWorkspace</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Writes the input signal to a Nelson workspace variable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/xyScope.html" target="contentFrame">xyScope</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Stores paired X/Y samples for display.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="sink/xyzScope.html" target="contentFrame">xyzScope</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Stores X/Y/Z samples for 3D display.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Source blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Blocks that generate signals from parameters, time, labels, or files.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="source/chirp.html" target="contentFrame">chirp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates a sine chirp from f0 to f1.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/clock.html" target="contentFrame">clock</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the current simulation time.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/constant.html" target="contentFrame">constant</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs a constant numeric value.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/counterFreeRunning.html" target="contentFrame">counterFreeRunning</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Free-running up-counter, wraps modulo 2^NumBits.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/counterLimited.html" target="contentFrame">counterLimited</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Up-counter that wraps back to 0 once it reaches UpperLimit.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/enumeratedConstant.html" target="contentFrame">enumeratedConstant</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs a fixed enumeration value (EnumClass documents it, Value is the number).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/fileSource.html" target="contentFrame">fileSource</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs values from preloaded times and values arrays.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/fromWorkspace.html" target="contentFrame">fromWorkspace</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Reads a signal from a Nelson workspace variable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/impulse.html" target="contentFrame">impulse</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs an impulse at a configured time.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/labelSource.html" target="contentFrame">labelSource</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Reads a signal from a matching labelSink.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/noise.html" target="contentFrame">noise</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates deterministic pseudo-random noise.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/pulse.html" target="contentFrame">pulse</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Pulse Generator: a periodic pulse train (Amplitude, Period, Width, StartTime, Offset).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/ramp.html" target="contentFrame">ramp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates a ramp beginning at start.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/repeatingSequenceInterpolated.html" target="contentFrame">repeatingSequenceInterpolated</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Periodic piecewise-linear source interpolating a (TimeValues, OutValues) table.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/repeatingSequenceStair.html" target="contentFrame">repeatingSequenceStair</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Periodic staircase: one OutValues entry per sample, repeating.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/signalGenerator.html" target="contentFrame">signalGenerator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Configurable periodic source: sine, square or sawtooth (Amplitude, Frequency).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/sine.html" target="contentFrame">sine</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates a sinusoidal signal.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="source/step.html" target="contentFrame">step</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Generates a unit step at stepTime.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">User-Defined Function blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Blocks that evaluate user-provided expressions or Nelson functions.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="userdefined/expression.html" target="contentFrame">expression</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Evaluates a restricted math expression of u during simulation and in generated code.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="userdefined/nelsonFunction.html" target="contentFrame">nelsonFunction</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Evaluates a Nelson function at every simulation step.</div>
+</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Utility blocks</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Blocks for routing, grouping, annotation, and interactive switching.</p>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="utility/assignment.html" target="contentFrame">assignment</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Writes elements into a signal: out = base with out[Indices] = values.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/busAssignment.html" target="contentFrame">busAssignment</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Replaces selected members of a bus, passing the rest through unchanged.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/busCreator.html" target="contentFrame">busCreator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Groups heterogeneous signals (or nested buses) into one bus.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/busSelector.html" target="contentFrame">busSelector</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Extracts members from a bus by path.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/comment.html" target="contentFrame">comment</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Adds non-executed annotation text to a diagram.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/concatenate.html" target="contentFrame">concatenate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Concatenates input signals along a selected dimension.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/convert.html" target="contentFrame">convert</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Converts a signal to a selected data type.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/dataStoreMemory.html" target="contentFrame">dataStoreMemory</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Declares a named scalar memory shared across the model (initial value).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/dataStoreRead.html" target="contentFrame">dataStoreRead</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the value of the named data store.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/dataStoreWrite.html" target="contentFrame">dataStoreWrite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Writes its input to the named data store.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/demux.html" target="contentFrame">demux</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Routes one input to multiple output ports.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/functionCallGenerator.html" target="contentFrame">functionCallGenerator</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Drives a function-call subsystem a fixed number of times per step.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/functionCallSplit.html" target="contentFrame">functionCallSplit</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fans one function-call out to several callees in order.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/initialCondition.html" target="contentFrame">initialCondition</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Forces the output to InitialValue at the first step, then passes the input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/iteratorCondition.html" target="contentFrame">iteratorCondition</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">carries the continue predicate of a While Iterator subsystem</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/iteratorNumber.html" target="contentFrame">iteratorNumber</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">outputs the current iteration index inside a For/While iterator subsystem</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/merge.html" target="contentFrame">merge</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Recombines the outputs of mutually-exclusive conditional subsystems.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/multiportSwitch.html" target="contentFrame">multiportSwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Routes one of several data inputs to the output, selected by a control input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/mux.html" target="contentFrame">mux</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Groups multiple input routes into one output route.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/reshape.html" target="contentFrame">reshape</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Changes signal dimensions without changing element values.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/selector.html" target="contentFrame">selector</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Selects elements from an input signal by one-based indices.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/signalConversion.html" target="contentFrame">signalConversion</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Pass-through that copies its input to its output unchanged (conversion point).</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/subsystem.html" target="contentFrame">subsystem</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Runs a nested block diagram as a single block.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/switch.html" target="contentFrame">switch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Selects between top and bottom inputs using a condition input.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/toggleSwitch.html" target="contentFrame">toggleSwitch</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs one of two configured values from state.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="utility/width.html" target="contentFrame">width</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Outputs the number of elements (width) of its input signal, as a scalar.</div>
+</li>
+</ul>
+</div>
+</div>
+<ul class="toc-list"></ul>
+</div>
+</body>
+</html>

@@ -11,7 +11,7 @@ Create matrix array from file.
 ## 📥 Input argument
 
 - filename - a string: an existing filename source.
-- opts - DelimitedTextImportOptions object
+- opts - nelson.io.text.DelimitedTextImportOptions object
 - type - a string: 'double', 'single', 'char', 'string', 'int8', 'int16', 'int32', 'int64', 'uint8', 'uint16', 'uint32', 'uint64'.
 
 ## 📤 Output argument
@@ -36,7 +36,7 @@ filename = [tempdir,'readmatrix_2.csv']; M = magic(6); writematrix(M, filename) 
 
 ## 🔗 See also
 
-[writematrix](../spreadsheet/writematrix.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
+[delimitedTextImportOptions](../spreadsheet/delimitedTextImportOptions.md), [writematrix](../spreadsheet/writematrix.md), [detectImportOptions](../spreadsheet/detectImportOptions.md), [writetable](../spreadsheet/writetable.md), [readtable](../spreadsheet/readtable.md), [fileread](../stream_manager/fileread.md).
 
 ## 🕔 History
 

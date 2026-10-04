@@ -1,43 +1,54 @@
 # uigetdir
 
-Ouvre une boîte de dialogue pour sélectionner un répertoire.
+Ouvre une boite de dialogue de selection de dossier.
 
 ## 📝 Syntaxe
 
-- dir_ans = uigetdir()
-- dir_ans = uigetdir(path)
-- dir_ans = uigetdir(path, title)
+- path = uigetdir
+- path = uigetdir(startPath)
+- path = uigetdir(startPath, title)
 
 ## 📥 Argument d'entrée
 
-- path - a string: initial path
-- title - a string: title of the dialog box
+- startPath - Initial directory. If the path is not a directory, the current folder is used.
 
 ## 📤 Argument de sortie
 
-- dir_ans - a string (returned path) or 0 if dialogbox is canceled
+- path - Selected directory, or 0 when canceled.
 
 ## 📄 Description
 
-<b>uigetdir</b> ouvre une boîte de dialogue pour sélectionner un répertoire.
+uigetdir lets the user choose a directory.
 
-Si le chemin est incorrect ou non fourni, le répertoire de travail courant sera utilisé.
+## 💡 Exemples
 
-## 💡 Exemple
+Apercu d une boite de selection de dossier.
 
 ```matlab
-A = uigetdir();
+f = dialog('Name', 'Select a folder', 'WindowStyle', 'normal', 'Position', [100 100 420 250]);
+uicontrol(f, 'Style', 'edit', 'String', pwd(), 'Position', [28 186 350 24]);
+uicontrol(f, 'Style', 'listbox', 'String', {'src', 'temp', 'exports'}, 'Value', 2, 'Position', [28 70 350 105]);
+uicontrol(f, 'Style', 'pushbutton', 'String', 'Select', 'Position', [220 28 70 24]);
+uicontrol(f, 'Style', 'pushbutton', 'String', 'Cancel', 'Position', [304 28 70 24]);
+```
+
+<img src="uigetdir_example.svg" align="middle"/>
+Start directory selection in the temporary folder.
+
+```matlab
+path = uigetdir(tempdir(), 'Select temporary folder');
+if ~isequal(path, 0), disp(path); end
 ```
 
 ## 🔗 Voir aussi
 
-[pwd](../files_folders_functions/pwd.md).
+[uigetfile](../gui/uigetfile.md), [uiputfile](../gui/uiputfile.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                         |
+| ------- | -------------------------------------- |
+| 2.0.0   | version aide API dialogue mise a jour. |
 
 <!--
 ## 👤 Auteur

@@ -41,6 +41,10 @@ A_IN = [1.0   0.0   0.0   0.0;
 [MAXRED_OUT, A_OUT, SCALE, INFO] = slicot_mb04md(MAXRED_IN, A_IN)
 ```
 
+## 🔗 See also
+
+[slicot_tb01id](../slicot/slicot_tb01id.md), [slicot_mb03rd](../slicot/slicot_mb03rd.md), [slicot_mb05od](../slicot/slicot_mb05od.md), [balreal](../control_system/balreal.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

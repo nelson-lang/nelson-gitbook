@@ -8,6 +8,7 @@ This module ensures robust input validation, helping to prevent errors, enforce 
 
 ## Functions
 
+- [inputParser](inputParser.md) - Parses and validates function inputs.
 - [mustBeA](mustBeA.md) - Checks that input value comes from one of specified classes.
 - [mustBeBetween](mustBeBetween.md) - Validate that all elements are within a specified range.
 - [mustBeColumn](mustBeColumn.md) - Checks that value is a column vector or raise an error.
@@ -39,9 +40,15 @@ This module ensures robust input validation, helping to prevent errors, enforce 
 - [mustBePositive](mustBePositive.md) - Checks that value is positive or raise an error.
 - [mustBeReal](mustBeReal.md) - Checks that value is real.
 - [mustBeRow](mustBeRow.md) - Checks that value is a row vector or raise an error.
+- [mustBeScalar](mustBeScalar.md) - Checks that value is a scalar or raise an error.
 - [mustBeScalarOrEmpty](mustBeScalarOrEmpty.md) - Checks that value is scalar or empty or raise an error.
+- [mustBeSorted](mustBeSorted.md) - Checks that array elements are sorted or raise an error.
 - [mustBeSparse](mustBeSparse.md) - Checks that value is a sparse matrix or raise an error.
 - [mustBeText](mustBeText.md) - Checks that value is piece of text or raise an error.
 - [mustBeTextScalar](mustBeTextScalar.md) - Checks that value is single piece of text or raise an error.
+- [mustBeUnderlyingType](mustBeUnderlyingType.md) - Validate that value has a specified underlying type.
 - [mustBeValidVariableName](mustBeValidVariableName.md) - Checks that value is valid variable name or raise an error.
 - [mustBeVector](mustBeVector.md) - Checks that value is vector or raise an error.
+- [mustBeVectorOrEmpty](mustBeVectorOrEmpty.md) - Checks that value is a vector or empty, or raise an error.
+- [validateattributes](validateattributes.md) - Checks that an array has requested classes and attributes.
+- [validatestring](validatestring.md) - Checks that text matches one allowed value.

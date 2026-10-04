@@ -26,7 +26,7 @@ Creating a function handle for an anonymous function allows you to invoke the fu
 
 The <b>@</b> sign is a necessary part of the anonymous function definition.
 
-It's worth noting that function handles not only apply to anonymous functions but also to any function.
+Function handles not only apply to anonymous functions but also to any function.
 
 The syntax for creating a function handle to a regular function is different and looks like this:
 
@@ -36,7 +36,7 @@ For example: <b>f = @cos</b>
 
 You have the option to store function handles along with their associated values in a MAT-file.
 
-Later, in a different session, you can retrieve and utilize them using the save and load functions.
+Later, in another session, you can retrieve them with the save and load functions.
 
 for example <b>a = 1;b = 2; f = @(x) a + b + x; save('test.nH5', f);</b>
 

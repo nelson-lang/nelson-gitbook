@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>dbscan</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dbscan</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Regroupement spatial fonde sur la densite.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">idx = dbscan(X, epsilon, minpts)
+idx = dbscan(X, epsilon, minpts, 'Distance', distance)
+idx = dbscan(X, epsilon, minpts, 'Distance', 'minkowski', 'P', p)
+idx = dbscan(X, epsilon, minpts, 'Distance', 'seuclidean', 'Scale', scale)
+idx = dbscan(X, epsilon, minpts, 'Distance', 'mahalanobis', 'Cov', cov)
+idx = dbscan(D, epsilon, minpts, 'Distance', 'precomputed')
+idx = dbscan(B, [], minpts, 'Distance', 'precomputed')
+[idx, corepts] = dbscan(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>matrice numerique reelle pleine. Chaque ligne est une observation et chaque colonne est une variable. Une entree vide avec zero ligne est acceptee et renvoie des sorties vides.</td>
+</tr>
+<tr>
+<td class="param-name">D</td>
+<td>donnees de distances pre-calculees, reelles et pleines. D peut etre une matrice carree n-par-n ou un vecteur contenant les distances du triangle inferieur dans l'ordre des colonnes : d(2,1), d(3,1), ..., d(n,1), d(3,2), ..., d(n,n-1).</td>
+</tr>
+<tr>
+<td class="param-name">B</td>
+<td>donnees logiques de voisinage pre-calculees. Les valeurs true indiquent les observations voisines. B peut etre une matrice carree ou le meme format vectoriel compact que D. La diagonale est toujours consideree comme true, car chaque observation est voisine d'elle-meme.</td>
+</tr>
+<tr>
+<td class="param-name">epsilon</td>
+<td>scalaire positif, rayon du voisinage. Une distance exactement egale a epsilon appartient au voisinage. Utiliser [] seulement lorsque l'entree pre-calculee est logique.</td>
+</tr>
+<tr>
+<td class="param-name">minpts</td>
+<td>entier positif, nombre minimal d'observations dans un epsilon-voisinage pour obtenir un point coeur. L'observation elle-meme est incluse dans ce compte.</td>
+</tr>
+<tr>
+<td class="param-name">distance</td>
+<td>nom de distance ou handle de fonction. Les noms peuvent etre abreges lorsque l'abreviation n'est pas ambigue.</td>
+</tr>
+<tr>
+<td class="param-name">p</td>
+<td>scalaire positif utilise seulement avec 'minkowski'. L'exposant par defaut vaut 2.</td>
+</tr>
+<tr>
+<td class="param-name">scale</td>
+<td>vecteur positif fini utilise seulement avec 'seuclidean'. Sa longueur doit correspondre au nombre de colonnes de X. Si ce parametre est omis, l'echelle est calculee depuis X.</td>
+</tr>
+<tr>
+<td class="param-name">cov</td>
+<td>matrice symetrique definie positive utilisee seulement avec 'mahalanobis'. Sa taille doit correspondre au nombre de colonnes de X. Si ce parametre est omis, la matrice de covariance est calculee depuis X.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">idx</td>
+<td>vecteur colonne double contenant les etiquettes de groupes. Les etiquettes commencent a 1 dans l'ordre de decouverte. Les observations de bruit valent -1.</td>
+</tr>
+<tr>
+<td class="param-name">corepts</td>
+<td>vecteur colonne logique. La valeur true indique que l'observation correspondante contient au moins minpts observations dans son epsilon-voisinage.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>dbscan</b> regroupe les observations par connectivite de densite. L'algorithme recherche d'abord les observations situees a une distance inferieure ou egale a epsilon d'une observation candidate. Une candidate devient un point coeur lorsque ce voisinage contient au moins minpts observations. Les groupes sont ensuite etendus depuis les points coeur et incluent les points coeur et les points de bord atteignables par densite.</p>
+    <p>La comparaison des distances est inclusive : distance &lt;= epsilon. Ce detail est important pour les points situes exactement sur la limite du rayon. Les points qui ne sont atteignables depuis aucun point coeur sont renvoyes comme bruit avec l'etiquette -1.</p>
+    <p>Les distances integrees prises en charge sont 'euclidean', 'squaredeuclidean', 'seuclidean', 'cityblock', 'chebychev', 'minkowski', 'mahalanobis', 'cosine', 'correlation', 'spearman', 'hamming', 'jaccard' et 'precomputed'. Les distances integrees sont en general plus rapides qu'un handle de fonction.</p>
+    <p>Un handle de fonction de distance doit accepter deux entrees : une observation ligne et la matrice complete des donnees. Il doit renvoyer une distance numerique reelle pour chaque ligne de X. Le resultat peut etre un vecteur ligne ou colonne.</p>
+    <p>Pour 'squaredeuclidean', epsilon est compare a la distance euclidienne au carre. Pour une entree numerique 'precomputed', epsilon est requis et compare aux valeurs stockees dans D. Pour une entree logique 'precomputed', epsilon doit etre [], car B encode deja la relation de voisinage.</p>
+    <p>L'ordre des etiquettes suit l'ordre de decouverte des groupes a partir des lignes d'entree. Les observations de bord atteignables depuis plusieurs groupes sont affectees au premier groupe decouvert qui les atteint.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Regrouper deux ensembles denses et une observation de bruit.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0 0.1; 5 5; 5 5.1; 10 10];
+[idx, corepts] = dbscan(X, 0.2, 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Renvoyer seulement les etiquettes de groupes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0 0.1; 5 5; 5 5.1];
+idx = dbscan(X, 0.2, 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser une valeur minpts plus grande pour marquer toutes les observations comme bruit.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0; 0.1];
+[idx, corepts] = dbscan(X, 1, 3)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Les points exactement a epsilon sont inclus dans le voisinage.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0; 1; 2];
+idx = dbscan(X, 1, 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Regrouper des lignes dupliquees avec un tres petit rayon.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [1 1; 1 1; 1 1; 5 5];
+[idx, corepts] = dbscan(X, 1e-12, 3)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance euclidienne au carre.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
+idx = dbscan(X, 1, 2, 'Distance', 'squaredeuclidean')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance city block.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
+idx = dbscan(X, 0.2, 2, 'Distance', 'cityblock')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de Chebychev.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
+idx = dbscan(X, 0.1, 2, 'Distance', 'chebychev')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de Minkowski avec l'exposant 1.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
+idx = dbscan(X, 0.2, 2, 'Distance', 'minkowski', 'P', 1)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance euclidienne standardisee avec une echelle explicite.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
+idx = dbscan(X, 0.2, 2, 'Distance', 'seuclidean', 'Scale', [1 1])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de Mahalanobis avec une matrice de covariance explicite.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0.1 0.05; 5 5; 5.05 5.05];
+idx = dbscan(X, 0.2, 2, 'Distance', 'mahalanobis', 'Cov', eye(2))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance cosinus pour regrouper les observations de meme direction.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [1 0; 2 0; 0 1; 0 2];
+idx = dbscan(X, 0.01, 2, 'Distance', 'cosine')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de correlation.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [1 2; 2 3; 10 9; 11 10];
+idx = dbscan(X, 0.01, 2, 'Distance', 'correlation')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de Spearman.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [1 2; 2 3; 10 9; 11 10];
+idx = dbscan(X, 0.01, 2, 'Distance', 'spearman')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de Hamming sur des lignes binaires.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [1 0 0; 1 0 0; 0 1 0; 0 1 0];
+idx = dbscan(X, 0.01, 2, 'Distance', 'hamming')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser la distance de Jaccard sur des motifs creux.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [1 0 0; 1 0 0; 0 1 0; 0 1 0];
+idx = dbscan(X, 0.01, 2, 'Distance', 'jaccard')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser un handle de fonction de distance personnalise.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0 0.1; 5 5; 5 5.1; 10 10];
+f = @(row, A) sqrt((A(:, 1) - row(1)).^2 + (A(:, 2) - row(2)).^2);
+idx = dbscan(X, 0.2, 2, 'Distance', f)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser une matrice carree de distances pre-calculees.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0; 0.1; 5; 5.1; 10];
+D = abs(X - X');
+idx = dbscan(D, 0.2, 2, 'Distance', 'precomputed')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser un vecteur compact de distances pre-calculees.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Dv = [0.1 5 5.1 10 4.9 5 9.9 0.1 5 4.9];
+idx = dbscan(Dv, 0.2, 2, 'Distance', 'precomputed')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser une matrice logique de voisinage pre-calculee.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">B = [true true false; true true true; false true true];
+idx = dbscan(B, [], 2, 'Distance', 'precomputed')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Utiliser un vecteur logique compact de voisinages pre-calcules.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">Bv = [true false false true false true];
+idx = dbscan(Bv, [], 2, 'Distance', 'precomputed')</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Tracer des groupes allonges avec des points aberrants.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(11);
+n = 70;
+u = 2 * rand(n, 1) - 1;
+v = 2 * rand(n, 1) - 1;
+X1 = [1.2 * u - 1.4, 0.35 * u + 0.12 * rand(n, 1)];
+X2 = [0.25 * v + 2.0, 1.2 * v + 0.18 * rand(n, 1) + 1.2];
+X3 = [4.8 * rand(18, 1) - 2.2, 3.8 * rand(18, 1) - 1.3];
+X = [X1; X2; X3];
+idx = dbscan(X, 0.32, 6);
+c = idx;
+c(c &lt; 0) = 0;
+scatter(X(:, 1), X(:, 2), 36, c, 'filled');
+axis equal;
+title('Groupes allonges avec points aberrants');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./dbscan_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer des groupes de formes et tailles differentes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(12);
+n1 = 90;
+n2 = 55;
+n3 = 70;
+theta = 2 * pi * rand(n1, 1);
+r = 0.35 * sqrt(rand(n1, 1));
+X1 = [r .* cos(theta) - 1.6, r .* sin(theta) + 1.0];
+X2 = [0.9 * rand(n2, 1) + 1.2, 0.25 * rand(n2, 1) - 1.1];
+X3 = [0.35 * (rand(n3, 1) - 0.5) + 0.5, 1.2 * (rand(n3, 1) - 0.5) + 1.6];
+X = [X1; X2; X3];
+idx = dbscan(X, 0.28, 5);
+c = idx;
+c(c &lt; 0) = 0;
+scatter(X(:, 1), X(:, 2), 36, c, 'filled');
+axis equal;
+title('Groupes de formes et tailles differentes');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./dbscan_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer deux bandes sinusoidales.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(13);
+n = 140;
+t = linspace(-2.5, 2.5, n)';
+X1 = [t, sin(1.3 * t)] + 0.08 * (rand(n, 2) - 0.5);
+X2 = [t, sin(1.3 * t) - 1.1] + 0.08 * (rand(n, 2) - 0.5);
+X = [X1; X2];
+idx = dbscan(X, 0.18, 5);
+c = idx;
+c(c &lt; 0) = 0;
+scatter(X(:, 1), X(:, 2), 36, c, 'filled');
+axis equal;
+title('Bandes sinusoidales');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./dbscan_3.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer des groupes en arcs separes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(14);
+t1 = linspace(0.2 * pi, 1.55 * pi, 150)';
+t2 = linspace(1.85 * pi, 3.15 * pi, 130)';
+r1 = 1 + 0.05 * (rand(150, 1) - 0.5);
+r2 = 1 + 0.05 * (rand(130, 1) - 0.5);
+X1 = [r1 .* cos(t1), r1 .* sin(t1)] + [-1.2, 0.2];
+X2 = [1.1 * r2 .* cos(t2), 0.65 * r2 .* sin(t2)] + [1.4, -0.3];
+X3 = [4 * rand(20, 1) - 2, 2.6 * rand(20, 1) - 1.3];
+X = [X1; X2; X3];
+idx = dbscan(X, 0.18, 5);
+c = idx;
+c(c &lt; 0) = 0;
+scatter(X(:, 1), X(:, 2), 36, c, 'filled');
+axis equal;
+title('Groupes en arcs separes');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./dbscan_4.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer un ruban ondule et un ilot dense.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(15);
+n = 220;
+t = linspace(0, 4 * pi, n)';
+X1 = [t / (2 * pi) - 1, 0.5 * sin(t)] + 0.07 * (rand(n, 2) - 0.5);
+X2 = 0.18 * (rand(80, 2) - 0.5) + [0.8, 1.0];
+X3 = [2.8 * rand(20, 1) - 1.4, 2.6 * rand(20, 1) - 1.1];
+X = [X1; X2; X3];
+idx = dbscan(X, 0.14, 5);
+c = idx;
+c(c &lt; 0) = 0;
+scatter(X(:, 1), X(:, 2), 36, c, 'filled');
+axis equal;
+title('Ruban ondule et ilot dense');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./dbscan_5.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer des groupes en angles droits avec la distance city block.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(16);
+n = 70;
+t = linspace(0, 1, n)';
+X1 = [[t, zeros(n, 1)]; [ones(n, 1), t]] + 0.04 * (rand(2 * n, 2) - 0.5) - [1.7, 0.4];
+X2 = [[-t, zeros(n, 1)]; [-ones(n, 1), t]] + 0.04 * (rand(2 * n, 2) - 0.5) + [1.7, -0.4];
+X = [X1; X2];
+idx = dbscan(X, 0.16, 4, 'Distance', 'cityblock');
+c = idx;
+c(c &lt; 0) = 0;
+scatter(X(:, 1), X(:, 2), 36, c, 'filled');
+axis equal;
+title('Groupes en angles droits avec la distance city block');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./dbscan_6.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Regrouper deux anneaux avec la distance par defaut.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">N = 90;
+theta = linspace(0, 2 * pi, N)';
+X = [[0.5 * cos(theta), 0.5 * sin(theta)]; [5 * cos(theta), 5 * sin(theta)]];
+idx = dbscan(X, 1, 5)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Traiter une matrice de donnees vide.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">idx = dbscan(zeros(0, 2), 1, 2)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div></div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>
+    pdist2
+    kmeans
+    kmedoids
+    silhouette
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

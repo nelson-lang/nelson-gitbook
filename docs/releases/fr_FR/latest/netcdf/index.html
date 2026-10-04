@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
+</head>
+<body>
+<img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
+<div class="section-title">netCDF</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;"></div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="nccreate.html" target="contentFrame">nccreate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree une variable dans un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncdisp.html" target="contentFrame">ncdisp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Affiche le contenu d'une source de donnees netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncinfo.html" target="contentFrame">ncinfo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les informations d'une source de donnees netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncread.html" target="contentFrame">ncread</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lit les donnees d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncreadatt.html" target="contentFrame">ncreadatt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lit un attribut depuis une source netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncwrite.html" target="contentFrame">ncwrite</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ecrit des donnees dans une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncwriteatt.html" target="contentFrame">ncwriteatt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ecrit un attribut dans une source netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ncwriteschema.html" target="contentFrame">ncwriteschema</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ajoute des definitions de schema dans un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf.html" target="contentFrame">netcdf</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interface bas niveau du paquet NetCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_abort.html" target="contentFrame">netcdf.abort</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Annule les definitions recentes d'un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_close.html" target="contentFrame">netcdf.close</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ferme un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_copyAtt.html" target="contentFrame">netcdf.copyAtt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Copie un attribut netCDF vers un autre emplacement.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_create.html" target="contentFrame">netcdf.create</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree un nouveau jeu de donnees netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defDim.html" target="contentFrame">netcdf.defDim</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree une dimension netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defGrp.html" target="contentFrame">netcdf.defGrp</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree un groupe dans un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defVar.html" target="contentFrame">netcdf.defVar</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defVarChunking.html" target="contentFrame">netcdf.defVarChunking</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit le decoupage en blocs d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defVarDeflate.html" target="contentFrame">netcdf.defVarDeflate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit la compression d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defVarFill.html" target="contentFrame">netcdf.defVarFill</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit la valeur de remplissage d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defVarFletcher32.html" target="contentFrame">netcdf.defVarFletcher32</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit le controle Fletcher32 d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_defVlen.html" target="contentFrame">netcdf.defVlen</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit un type tableau de longueur variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_delAtt.html" target="contentFrame">netcdf.delAtt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Supprime un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_endDef.html" target="contentFrame">netcdf.endDef</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Termine le mode definition d'un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_getAtt.html" target="contentFrame">netcdf.getAtt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_getChunkCache.html" target="contentFrame">netcdf.getChunkCache</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les reglages par defaut du cache de blocs netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_getConstant.html" target="contentFrame">netcdf.getConstant</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne la valeur numerique d'une constante netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_getConstantNames.html" target="contentFrame">netcdf.getConstantNames</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne la liste des constantes netCDF connues.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_getVar.html" target="contentFrame">netcdf.getVar</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lit les donnees d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inq.html" target="contentFrame">netcdf.inq</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne des informations generales sur un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqAtt.html" target="contentFrame">netcdf.inqAtt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les informations d'un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqAttID.html" target="contentFrame">netcdf.inqAttID</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne l'identifiant d'un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqAttName.html" target="contentFrame">netcdf.inqAttName</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne le nom d'un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqDim.html" target="contentFrame">netcdf.inqDim</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne le nom et la longueur d'une dimension netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqDimID.html" target="contentFrame">netcdf.inqDimID</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne l'identifiant d'une dimension netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqDimIDs.html" target="contentFrame">netcdf.inqDimIDs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les identifiants des dimensions d'un groupe.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqFormat.html" target="contentFrame">netcdf.inqFormat</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Determine le format d'un fichier netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqGrpName.html" target="contentFrame">netcdf.inqGrpName</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne le nom d'un groupe netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqGrpNameFull.html" target="contentFrame">netcdf.inqGrpNameFull</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne le chemin complet d'un groupe netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqGrpParent.html" target="contentFrame">netcdf.inqGrpParent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne l'identifiant du groupe parent.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqGrps.html" target="contentFrame">netcdf.inqGrps</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les identifiants des groupes enfants.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqLibVers.html" target="contentFrame">netcdf.inqLibVers</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les informations de version de la bibliotheque netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqNcid.html" target="contentFrame">netcdf.inqNcid</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne l'identifiant d'un groupe netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqUnlimDims.html" target="contentFrame">netcdf.inqUnlimDims</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les dimensions illimitees visibles dans un groupe.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqUserType.html" target="contentFrame">netcdf.inqUserType</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les informations d'un type utilisateur netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVar.html" target="contentFrame">netcdf.inqVar</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les informations d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVarChunking.html" target="contentFrame">netcdf.inqVarChunking</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne le decoupage en blocs d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVarDeflate.html" target="contentFrame">netcdf.inqVarDeflate</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les reglages de compression d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVarFill.html" target="contentFrame">netcdf.inqVarFill</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne la valeur de remplissage d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVarFletcher32.html" target="contentFrame">netcdf.inqVarFletcher32</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne le controle Fletcher32 d'une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVarID.html" target="contentFrame">netcdf.inqVarID</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne l'identifiant associe a un nom de variable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVarIDs.html" target="contentFrame">netcdf.inqVarIDs</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les identifiants des variables d'un groupe.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_inqVlen.html" target="contentFrame">netcdf.inqVlen</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Retourne les informations d'un type netCDF a longueur variable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_open.html" target="contentFrame">netcdf.open</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ouvre une source de donnees netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_putAtt.html" target="contentFrame">netcdf.putAtt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ecrit un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_putVar.html" target="contentFrame">netcdf.putVar</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Ecrit des donnees dans une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_reDef.html" target="contentFrame">netcdf.reDef</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Place un fichier netCDF ouvert en mode definition.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_renameAtt.html" target="contentFrame">netcdf.renameAtt</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renomme un attribut netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_renameDim.html" target="contentFrame">netcdf.renameDim</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renomme une dimension netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_renameVar.html" target="contentFrame">netcdf.renameVar</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Renomme une variable netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_setChunkCache.html" target="contentFrame">netcdf.setChunkCache</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit les reglages par defaut du cache de blocs netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_setDefaultFormat.html" target="contentFrame">netcdf.setDefaultFormat</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Change le format netCDF par defaut.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_setFill.html" target="contentFrame">netcdf.setFill</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definit le mode de remplissage netCDF.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="netcdf_sync.html" target="contentFrame">netcdf.sync</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Synchronise un fichier netCDF sur le disque.</div>
+</li>
+</ul>
+</div>
+</body>
+</html>

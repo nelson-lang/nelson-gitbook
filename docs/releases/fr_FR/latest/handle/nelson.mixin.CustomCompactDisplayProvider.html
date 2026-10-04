@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nelson.mixin.CustomCompactDisplayProvider</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.mixin.CustomCompactDisplayProvider</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Fournir un affichage compact d'un objet dans les conteneurs.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">classdef MaClasse &lt; nelson.mixin.CustomCompactDisplayProvider
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">obj</td>
+<td>objet d'une classe derivee de nelson.mixin.CustomCompactDisplayProvider.</td>
+</tr>
+<tr>
+<td class="param-name">config</td>
+<td>configuration d'affichage utilisee pour la sortie compacte.</td>
+</tr>
+<tr>
+<td class="param-name">width</td>
+<td>largeur maximale d'affichage.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">rep</td>
+<td>representation d'affichage compact.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Dérivez de <b>nelson.mixin.CustomCompactDisplayProvider</b> pour contrôler l'affichage
+    compact d'un objet lorsqu'il apparaît dans un conteneur tel qu'une cellule ou une structure.</p>
+    <p>Une sous-classe implémente <b>compactRepresentationForSingleLine(obj, config, width)</b>, qui
+    renvoie un objet <b>nelson.display.CompactDisplayRepresentation</b> décrivant l'objet sur une
+    ligne. La représentation est habituellement construite avec la méthode héritée
+    <b>widthConstrainedDataRepresentation(obj, config, width, 'StringArray', texte)</b>, qui
+    assemble les données fournies avec le délimiteur défini par <b>config</b> (un
+    <b>nelson.display.DisplayConfiguration</b>) et les tronque avec les points de suspension
+    configurés lorsqu'elles dépassent <b>width</b> caractères. Lorsqu'une instance est affichée dans
+    un conteneur tel qu'une cellule, un champ de structure ou une colonne de <b>table</b>, le texte
+    obtenu est utilisé à la place du <b>[1x1 ClassName]</b> par défaut.</p>
+    <p>Une méthode compagnon <b>compactRepresentationForColumn(obj, config, width)</b> peut être
+    implémentée pour les dispositions en colonne, et <b>fullDataRepresentation(obj, config, ...)</b>
+    construit une représentation sans contrainte de largeur. Lorsque ces méthodes ne sont pas
+    surchargées, la représentation par défaut est utilisée.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Une température affichée de façon compacte dans une cellule.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">classdef Temp &lt; nelson.mixin.CustomCompactDisplayProvider
+  properties
+    Celsius = 0
+  end
+  methods
+    function obj = Temp(c)
+      if nargin &gt; 0
+        obj.Celsius = c;
+      end
+    end
+    function rep = compactRepresentationForSingleLine(obj, config, width)
+      txt = [num2str(obj.Celsius), ' degC'];
+      rep = widthConstrainedDataRepresentation(obj, config, width, 'StringArray', string(txt));
+    end
+  end
+end
+c = {Temp(20), Temp(37)}   % affiche {20 degC}  {37 degC}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../handle/nelson.mixin.CustomDisplay.html">nelson.mixin.CustomDisplay</a><a class="see-also-link" href="../interpreter/classdef.html">classdef</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

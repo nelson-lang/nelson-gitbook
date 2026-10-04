@@ -67,7 +67,15 @@ Pour préciser explicitement le nom du fichier, utilisez <b>writetable(T, filena
   'table'
   </code>).
 
-## 💡 Exemple
+<b>Fichiers JSON</b> (extension <b>.json</b> ou <b>'FileType', 'json'</b>) : la table est écrite comme un tableau JSON avec un objet par ligne ; les clés sont les noms des variables.
+
+- Les nombres et valeurs logiques sont écrits comme nombres JSON et true ou false, les valeurs texte, categorical, datetime et duration comme chaînes JSON (datetime et duration utilisent leur format d'affichage).
+- Les valeurs manquantes (<missing>, NaT, <undefined>) sont écrites null. Une variable à plusieurs colonnes donne un tableau JSON par ligne.
+- <b>PrettyPrint</b> : indente le texte avec quatre espaces (défaut : <code>true</code>).
+- <b>PreserveInfAndNaN</b> : écrit les valeurs Inf et NaN sous la forme Inf, -Inf et NaN (défaut : <code>true</code>) ; avec <code>false</code> elles sont écrites null.
+- <b>WriteRowNames</b> : écrit les noms de lignes comme première valeur de chaque objet, avec pour clé le premier nom de dimension.
+
+## 💡 Exemples
 
 Examples demonstrating various usages of writetable.
 
@@ -88,15 +96,22 @@ writetable(T, 'data.xml', 'RowNodeName', 'record', 'TableNodeName', 'dataset')
 writetable(T, 'data.txt', 'WriteMode', 'append', 'WriteRowNames', true)
 ```
 
+Écrire une table dans un fichier JSON :
+
+```matlab
+T = table([1; NaN], ["a"; missing], [true; false], 'VariableNames', {'x', 'name', 'ok'}); f = [tempdir, 'writetable_json.json']; writetable(T, f); fileread(f) writetable(T, f, 'PrettyPrint', false, 'PreserveInfAndNaN', false); fileread(f)
+```
+
 ## 🔗 Voir aussi
 
 [table](../table/table.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description    |
-| ------- | ----------------- |
-| 1.10.0  | version initiale. |
+| Version | 📄 Description                                                   |
+| ------- | ---------------------------------------------------------------- |
+| 1.10.0  | version initiale.                                                |
+| 2.0.0   | Fichiers JSON : FileType json, PrettyPrint et PreserveInfAndNaN. |
 
 <!--
 ## 👤 Auteur

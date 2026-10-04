@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>nelson.ode.ODEResults</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.ode.ODEResults</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Objet resultat retourne par solve sur un objet ode.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">result = solve(problem, tfinal)
+result = solve(problem, t0, tfinal)
+result = nelson.ode.ODEResults(sol)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>nelson.ode.ODEResults</b> stocke le resultat d'une integration realisee avec le workflow objet <b>ode</b>. L'appel de <b>solve</b> sur un objet <b>ode</b> retourne une instance de cette classe.</p>
+    <table style="width:100%">
+  <tr>
+<th>Propriete</th>
+<th>Contenu</th>
+</tr>
+  <tr>
+<td><b>Time</b></td>
+<td>Vecteur ligne des points de temps de l'integration.</td>
+</tr>
+  <tr>
+<td><b>Solution</b></td>
+<td>Matrice des valeurs de la solution, une ligne par composante et une colonne par point de temps.</td>
+</tr>
+  <tr>
+<td><b>Sensitivity</b></td>
+<td>Valeurs de sensibilite lorsqu'une analyse de sensibilite est demandee, vide sinon.</td>
+</tr>
+  <tr>
+<td><b>EventTime</b></td>
+<td>Instants auxquels des evenements ont ete detectes, vide lorsqu'aucune fonction d'evenement n'est definie.</td>
+</tr>
+  <tr>
+<td><b>EventSolution</b></td>
+<td>Valeurs de la solution aux evenements detectes.</td>
+</tr>
+  <tr>
+<td><b>EventIndex</b></td>
+<td>Indices des fonctions d'evenement declenchees.</td>
+</tr>
+  <tr>
+<td><b>EventSensitivity</b></td>
+<td>Valeurs de sensibilite aux evenements detectes, vide sinon.</td>
+</tr>
+  <tr>
+<td><b>AdjointGradient</b></td>
+<td>Gradient calcule par analyse de sensibilite adjointe, vide sinon.</td>
+</tr>
+</table>
+    <p>La classe porte aussi les proprietes cachees <b>RawSolution</b> (la structure de solution sous-jacente, utilisable avec <b>deval</b> et <b>odextend</b>), <b>SolutionValues</b> (la transposee de <b>Solution</b>, une ligne par point de temps) et <b>Stats</b> (les statistiques du solveur lorsqu'elles sont disponibles).</p>
+    <p>Le constructeur <b>nelson.ode.ODEResults(sol)</b> construit un objet resultat a partir d'une structure de solution comportant au moins les champs <b>x</b> et <b>y</b>, telle que la structure retournee par les fonctions solveurs. Les proprietes d'evenement et de sensibilite sont remplies a partir des champs optionnels <b>xe</b>, <b>ye</b>, <b>ie</b>, <b>sensitivity</b>, <b>eventSensitivity</b> et <b>adjointGradient</b>. Appele sans argument, le constructeur retourne un objet dont toutes les proprietes sont vides.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Resoudre un probleme et inspecter l'objet resultat.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">problem = ode('ODEFcn', @(t,y) -y, 'InitialValue', 1);
+result = solve(problem, 0, 2);
+class(result)
+result.Time(end)
+result.Solution(:, end)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>Voir aussi</div>
+<div>
+<a class="see-also-link" href="../ode_solvers/ode.html">ode</a><a class="see-also-link" href="../ode_solvers/deval.html">deval</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Historique des versions</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>version initiale</td>
+</tr>
+</table>
+</div>
+<!--Auteur: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

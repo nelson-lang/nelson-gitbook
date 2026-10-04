@@ -58,6 +58,36 @@ Syntaxe : <b>
 
 Délimiteurs disponibles : uniquement applicables aux fichiers texte délimités.
 
+| Spécificateur | Alternative | Description |
+| ------------- | ----------- | ----------- |
+
+| <code>
+','
+</code> | <code>
+'comma'
+</code> | Virgule (par défaut) |
+| <code>
+'
+'
+</code> | <code>
+'space'
+</code> | Caractère espace |
+| <code>
+'\t'
+</code> | <code>
+'tab'
+</code> | Tabulation |
+| <code>
+';'
+</code> | <code>
+'semi'
+</code> | Point-virgule |
+| <code>
+'|'
+</code> | <code>
+'bar'
+</code> | Barre verticale |
+
 <b>QuoteStrings</b> : contrôle le comportement de citation des textes (applicable uniquement aux fichiers texte délimités).
 
 <b>

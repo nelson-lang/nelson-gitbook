@@ -8,7 +8,7 @@ Reserved size for nonzero elements.
 
 ## 📥 Input argument
 
-- M - a matrix: double or logical, sparse or not.
+- M - numeric, logical, or character array, sparse or full.
 
 ## 📤 Output argument
 
@@ -18,7 +18,11 @@ Reserved size for nonzero elements.
 
 <b>nzmax</b> returns the amount of storage allocated for nonzero elements.
 
-## 💡 Example
+For full arrays, <b>nzmax</b> returns <b>numel(M)</b>. For sparse matrices, it returns the reserved sparse storage capacity, which can be larger than <b>nnz(M)</b>.
+
+Sparse double, single, logical, complex double, and complex single matrices are supported. Stored zero values may contribute to the reserved capacity even though <b>nnz</b> ignores them.
+
+## 💡 Examples
 
 ```matlab
 I = [1 2 3];
@@ -30,15 +34,21 @@ nnz(sp)
 nzmax(sp)
 ```
 
+```matlab
+S = sparse([1 2 1 2], [1 1 2 2], single([0 -0 complex(0, 0) complex(0, 2)]), 2, 2, 4);
+[nnz(S), nzmax(S)]
+```
+
 ## 🔗 See also
 
-[sparse](../sparse/sparse.md), [nnz](../sparse/nzmax.md).
+[sparse](../sparse/sparse.md), [nnz](../sparse/nnz.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                         |
+| ------- | ------------------------------------------------------ |
+| 2.0.0   | documented sparse single and reserved storage behavior |
+| 1.0.0   | initial version                                        |
 
 <!--
 ## 👤 Author

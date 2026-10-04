@@ -22,11 +22,19 @@ all of the elements of a matrix satisfy some condition.
 
 <b>all</b> returns true if all of the elements of a matrix satisfy some condition.
 
-## 💡 Example
+Sparse logical, double, single, complex double, and complex single inputs are supported. Sparse numeric zeros are treated as false and nonzero real or complex entries are treated as true.
+
+## 💡 Examples
 
 ```matlab
 all([33, 22; 11, 0])
 all([33, 22; 11, 0], 2)
+```
+
+```matlab
+S = sparse(single([1 0; 2 + 1i 3]));
+all(S)
+all(S, 'all')
 ```
 
 ## 🔗 See also
@@ -35,9 +43,10 @@ all([33, 22; 11, 0], 2)
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description                                 |
+| ------- | ---------------------------------------------- |
+| 1.0.0   | initial version                                |
+| 2.0.0   | added sparse single and complex single support |
 
 <!--
 ## 👤 Author

@@ -8,7 +8,7 @@ Explorateur du dossier courant
 
 ## 📄 Description
 
-L'explorateur du dossier courant dans Nelson facilite la gestion interactive des fichiers et dossiers. Utilisez-le pour naviguer, créer, accéder, déplacer et renommer les fichiers et dossiers du répertoire courant.
+L'explorateur du dossier courant prend en charge la gestion interactive des fichiers et dossiers dans Nelson. Utilisez-le pour naviguer, créer, ouvrir, déplacer et renommer les fichiers et dossiers du répertoire courant.
 
 <img src="filebrowser.png" align="middle"/>
 

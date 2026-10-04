@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>webview</module>
+    <section name="Web view">
+      <chapter_description>
+    <p>Le module WebView ouvre du HTML local, du texte HTML, des adresses web et la galerie d’exemples depuis Nelson.</p>
+  </chapter_description>
+      <keyword name="demo" link="demo.html" description="Parcourir les exemples des modules Nelson et des toolboxes externes charges."/>
+      <keyword name="nelson.htmlviewer.htmlviewer" link="nelson_htmlviewer_htmlviewer.html" description="Handle vers une fenetre du visualiseur HTML Nelson."/>
+      <keyword name="web" link="web.html" description="Ouvre une page web, un fichier local ou du texte HTML."/>
+    </section>
+  </toc>
+</help_summary>

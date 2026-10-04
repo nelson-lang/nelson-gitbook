@@ -10,7 +10,7 @@ System Requirements by platforms.
 
 <b>Processor</b>: Any Intel or AMD x86-64 processor.
 
-<b>RAM</b>: See Operating System Requirements (16 GB recommanded or more).
+<b>RAM</b>: See Operating System Requirements (16 GB recommended or more).
 
 <b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended.
 
@@ -22,7 +22,7 @@ System Requirements by platforms.
 
 <b>Processor</b>: Any Intel or AMD x86-64 processor with AVX2 instructions set (CPU released from 2015 onwards).
 
-<b>RAM</b>: See Operating System Requirements (16 GB recommanded or more).
+<b>RAM</b>: See Operating System Requirements (16 GB recommended or more).
 
 <b>Storage</b>: 1 GB for all products installation and an SSD/nvme is recommended.
 

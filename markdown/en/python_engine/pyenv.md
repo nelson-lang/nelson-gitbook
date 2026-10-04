@@ -36,7 +36,7 @@ Properties:
 
 <b>ExecutionMode</b>: Execution mode: "InProcess" (default) or "OutOfProcess"
 
-Use environment variables to force python environment at each startup (usefull for snapcraft or docker distribution):
+Use environment variables to force python environment at each startup (useful for snapcraft or docker distribution):
 
 <b>\_\_NELSON_PYTHON_VERSION\_\_</b>: example "3.10"
 

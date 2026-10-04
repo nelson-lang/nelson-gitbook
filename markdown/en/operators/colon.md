@@ -19,7 +19,7 @@ colon operator ':'.
 
 ## 📄 Description
 
-<b>colon</b> creates vectors. It is an usefull function for loop, extraction and insertion.
+<b>colon</b> creates vectors. It is an useful function for loop, extraction and insertion.
 
 <b>colon(base, limit)</b> is equivalent to <b>base:limit</b>
 
@@ -42,6 +42,10 @@ C(:, 1, 1)
 C(:) = rand(3, 4)
 
 ```
+
+## 🔗 See also
+
+[subsref](../operators/subsref.md), [subsindex](../operators/subsindex.md).
 
 ## 🕔 History
 

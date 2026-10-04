@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>compiler_embedded_data_tutorial</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title">
+<span class="keyword-title">compiler_embedded_data_tutorial</span>, <span class="keyword-alias">compiler_embedded_data_tutorial</span>
+</div></div>
+<div class="section syntax-section"><div class="subtitle">Tutorial: embed NH5 and MAT datasets in an executable.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">options = ncc('options', entry, 'AdditionalFiles', files)
+result = ncc(options)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Both .nh5 and .mat files can be embedded as binary resources in the executable. They are copied unchanged into the application archive, not compiled into bytecode or placed next to the executable as loose files. The runtime extracts them into the private ctfroot directory before the application reads them.</p>
+    <p>Use AdditionalFiles or the nelsonc -a option for explicit inclusion. AutoDetectDataFiles also recognizes literal filenames passed to load, loadnh5 and loadmat. Computed filenames, including fullfile calls, require explicit inclusion. Disabling automatic detection does not remove explicitly included resources.</p>
+    <p>The same AdditionalFiles option is available with compiler.build.standaloneApplication and compiler.build.standaloneWindowsApplication. Both embed the data in the executable; selecting an installed runtime does not leave application data outside the executable.</p>
+    <p>For a literal load('measurements') or load measurements without an extension, automatic detection first looks for the exact filename, then measurements.nh5, then measurements.mat in each application lookup directory. An existing extension is not replaced. This fallback belongs to generic load, not to loadnh5, loadmat, fopen or fileread. Explicit filenames are preferable when several formats coexist.</p>
+    <p>The example below creates a .nh5 file and a .mat v7.3 file containing the same matrix, then builds and runs both runtime modes. Execute the three blocks in order in the same session. Each execution prints EMBEDDED_SUM=10. The original files are not required on the receiving machine.</p>
+    <p>The supplied entry uses fullfile(fileparts(mfilename('fullpath')), filename) so resource lookup does not depend on the process working directory. Generic load also searches application paths and detects the format. The explicit loadnh5 and loadmat readers take a filesystem path.</p>
+    <p>Binary data inclusion and runtime selection are separate. loadnh5 requires the hdf5 module; loadmat requires matio. Generic load retains available native format readers because its format is selected at execution time. Applications that do not load data do not acquire these modules solely because this feature exists.</p>
+    <p>The current launcher extracts application resources on every launch, without a persistent extraction cache. Large data files therefore increase executable size and startup disk I/O. The numerical execution engine is unchanged. Keep very large or frequently updated datasets external when embedding is not required. Save application results outside ctfroot: the private extraction directory is temporary, not persistent storage.</p>
+    <p>The normal readers retain their format and type support: .nh5, .mat v7 and .mat v7.3 are exercised in deployment tests. Packaging does not extend the readers' supported types. Serialized objects or function handles can need class or function code that cannot be inferred from the file extension; include that code explicitly with AdditionalFiles or a function dependency directive.</p>
+    <p>Embedded data is not encrypted. SHA256 checks detect changed input bytes; they are not a confidentiality mechanism or a publisher signature. Larger data files increase executable size and extraction work at startup. No new checks are added to numerical dispatch or to individual load calls.</p>
+    <p>Do not save persistent changes under ctfroot: that extraction directory is removed after normal shutdown. Save results to a user-chosen external path. Distribute result.Executable alone with a compatible installed runtime, or both bundled.Files entries when distributing the selected runtime.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">1. Create the source and datasets</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">ncc('--help');
+work = tempname();
+mkdir(work);
+source = fullfile(work, 'source');
+mkdir(source);
+example = fullfile(modulepath('compiler'), 'examples', 'embedded_data');
+copyfile(fullfile(example, 'embedded_data_entry.m'), source);
+A = [1, 2; 3, 4];
+savenh5(fullfile(source, 'values.nh5'), 'A');
+savemat(fullfile(source, 'values.mat'), '-v7.3', 'A');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">2. Embed both files explicitly</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">options = ncc('options', fullfile(source, 'embedded_data_entry.m'), ...
+  'AdditionalFiles', {fullfile(source, 'values.nh5'), fullfile(source, 'values.mat')}, ...
+  'OutputDir', fullfile(work, 'installed'), 'RuntimeMode', 'installed');
+result = ncc(options);
+disp(result.Files);</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">3. Run installed and bundled distributions</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">previousRuntime = getenv('NELSONC_RUNTIME_ROOT');
+restoreRuntime = onCleanup(@() setenv('NELSONC_RUNTIME_ROOT', previousRuntime));
+setenv('NELSONC_RUNTIME_ROOT', nelsonroot());
+[status, output] = system(['"', result.Executable, '"'], 60);
+if status ~= 0
+  error(output);
+end
+disp(output);
+options.RuntimeMode = 'bundled';
+options.OutputDir = fullfile(work, 'bundled');
+bundled = ncc(options);
+[status, output] = system(['"', bundled.Executable, '"'], 60);
+if status ~= 0
+  error(output);
+end
+disp(output);
+clear restoreRuntime;</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../modules_manager/ncc.html">ncc</a><a class="see-also-link" href="../compiler/compiler_standalone_tutorial.html">compiler_standalone_tutorial</a><a class="see-also-link" href="../compiler/nelson.compiler.BuildOptions.html">nelson.compiler.BuildOptions</a><a class="see-also-link" href="../hdf5/loadnh5.html">loadnh5</a><a class="see-also-link" href="../matio/loadmat.html">loadmat</a><a class="see-also-link" href="../interpreter/ctfroot.html">ctfroot</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table"><tr>
+<th>Version</th>
+<th>Description</th>
+</tr></table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

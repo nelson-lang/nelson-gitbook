@@ -1,90 +1,59 @@
 # assert_isequal
 
-Vérifie que les valeurs calculées et attendues sont égales.
+Nom historique de asserts.isequal.
 
 ## 📝 Syntaxe
 
 - assert_isequal(computed, expected)
+- assert_isequal(computed, expected, message)
 - res = assert_isequal(computed, expected)
 - [res, msg] = assert_isequal(computed, expected)
 
 ## 📥 Argument d'entrée
 
-- computed - une valeur de n'importe quel type à tester pour l'égalité.
-- expected - une valeur de n'importe quel type représentant le résultat attendu.
+- computed - Valeur calculee.
+- expected - Valeur attendue.
+- message - Message d'echec personnalise optionnel.
 
 ## 📤 Argument de sortie
 
-- res - une valeur logique : true si les valeurs sont égales, false sinon.
-- msg - une chaîne contenant le message d'erreur. Si res == true, alors msg == ' '. Si res == false, alors msg contient le message d'échec de l'assertion.
+- res - true si les valeurs sont egales, false sinon.
+- msg - Message d'echec de l'assertion, vide en cas de succes.
 
 ## 📄 Description
 
-<b>assert_isequal</b> lève une erreur si la valeur calculée n'est pas égale à la valeur attendue.
+<b>assert_isequal</b> est conservee pour compatibilite.
 
-Cette fonction effectue un test d'égalité stricte qui vérifie le même type, les mêmes dimensions et les mêmes valeurs. Elle utilise la même logique que la fonction <b>isequaln</b>.
-
-Contrairement aux opérateurs d'égalité standards, cette fonction gère correctement les valeurs NaN, en les considérant égales lorsque les deux valeurs contiennent NaN aux mêmes positions.
-
-Cette fonction est essentielle pour les tests unitaires afin de vérifier que les résultats calculés correspondent exactement aux résultats attendus.
+Pour la documentation complete, utiliser [asserts.isequal](../assert_functions/asserts.isequal.md).
 
 ## Fonction(s) utilisée(s)
 
 isequaln
 
-## 📚 Bibliographie
-
-    "Automated Software Testing for Matlab", Steven Eddins, 2009
-
 ## 💡 Exemples
 
-Test d'égalité de matrices identiques :
+Appel historique
 
 ```matlab
-A = eye(3, 3);
-assert_isequal(A, A)
+assert_isequal([1 2], [1 2]);
 ```
 
-Test qui démontre la détection de différence de type :
+Appel canonique
 
 ```matlab
-A = eye(3, 3);
-B = single(A);
-try
-    assert_isequal(A, B)
-catch ME
-    disp(['Error: ' ME.message])
-end
-```
-
-Test de gestion de l'égalité avec NaN :
-
-```matlab
-A = NaN;
-B = A;
-assert_isequal(A, B)
-```
-
-Utilisation des valeurs de retour pour gérer les résultats d'assertion :
-
-```matlab
-[res, msg] = assert_isequal([1, 2, 3], [1, 2, 4]);
-if res
-    disp('Values are equal')
-else
-    disp(['Values are not equal: ' msg])
-end
+asserts.isequal([1 2], [1 2]);
 ```
 
 ## 🔗 Voir aussi
 
-[isequaln](../elementary_functions/isequaln.md), [assert_isapprox](../assert_functions/assert_isapprox.md), [assert_istrue](../assert_functions/assert_istrue.md), [assert_isfalse](../assert_functions/assert_isfalse.md).
+[asserts.isequal](../assert_functions/asserts.isequal.md), [isequaln](../elementary_functions/isequaln.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                     |
+| ------- | -------------------------------------------------- |
+| 1.0.0   | version initiale                                   |
+| 2.0.0   | documentee comme nom historique de asserts.isequal |
 
 <!--
 ## 👤 Auteur

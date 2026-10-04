@@ -47,6 +47,10 @@ E_IN = [1 0; -3 0.5];
 [A_OUT, B_OUT, C_OUT, D_OUT, E_OUT, NSYS, INFO] = slicot_sb10jd(A_IN, B_IN, C_IN, D_IN, E_IN)
 ```
 
+## 🔗 Voir aussi
+
+[slicot_tg01ad](../slicot/slicot_tg01ad.md), [slicot_ag08bd](../slicot/slicot_ag08bd.md), [ss](../control_system/ss.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

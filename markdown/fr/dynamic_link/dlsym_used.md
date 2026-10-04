@@ -17,7 +17,7 @@ Renvoie la liste des handles dlsym actuellement utilisés.
 ## 💡 Exemple
 
 ```matlab
-dlsym_used(),delete(dlsym_used())
+used = dlsym_used()
 ```
 
 ## 🔗 Voir aussi

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>categorical</module>
+    <section name="Categorical arrays">
+      <chapter_description>
+    <p>The Categorical module provides arrays whose elements belong to a fixed set of text categories.</p>
+  </chapter_description>
+      <keyword name="addcats" link="addcats.html" description="Add categories to a categorical array."/>
+      <keyword name="categorical" link="categorical.html" description="Create a categorical array."/>
+      <keyword name="categories" link="categories.html" description="List categories of a categorical array."/>
+      <keyword name="combinations" link="combinations.html" description="Generate all combinations of categorical values."/>
+      <keyword name="countcats" link="countcats.html" description="Count categorical elements by category."/>
+      <keyword name="histcounts" link="histcounts.html" description="Count categorical values for histogram-style summaries."/>
+      <keyword name="iscategorical" link="iscategorical.html" description="Determine whether an array is categorical."/>
+      <keyword name="iscategory" link="iscategory.html" description="Determine whether names are categories."/>
+      <keyword name="isordinal" link="isordinal.html" description="Determine whether a categorical array is ordinal."/>
+      <keyword name="isprotected" link="isprotected.html" description="Determine whether a categorical array is protected."/>
+      <keyword name="isundefined" link="isundefined.html" description="Find undefined categorical elements."/>
+      <keyword name="mergecats" link="mergecats.html" description="Merge categories in a categorical array."/>
+      <keyword name="removecats" link="removecats.html" description="Remove categories from a categorical array."/>
+      <keyword name="renamecats" link="renamecats.html" description="Rename categories in a categorical array."/>
+      <keyword name="reordercats" link="reordercats.html" description="Reorder categories in a categorical array."/>
+      <keyword name="setcats" link="setcats.html" description="Set the category list of a categorical array."/>
+    </section>
+  </toc>
+</help_summary>

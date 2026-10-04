@@ -17,7 +17,7 @@ Renvoie la liste des handles libpointer actuellement utilisés.
 ## 💡 Exemple
 
 ```matlab
-libpointer_used(),delete(libpointer_used())
+used = libpointer_used()
 ```
 
 ## 🔗 Voir aussi

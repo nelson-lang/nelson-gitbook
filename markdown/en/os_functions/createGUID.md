@@ -18,7 +18,7 @@ Creates a GUID.
 
 ## 📄 Description
 
-<b>createGUID</b> creates a Globally Unique IDentifier (GUID), , a unique 128-bit integer used for CLSIDs and interface identifiers.
+<b>createGUID</b> creates a Globally Unique IIdentifier (GUID), a unique 128-bit integer used for CLSIDs and interface identifiers.
 
 ## 💡 Example
 
@@ -26,6 +26,10 @@ Creates a GUID.
 createGUID()
 createGUID(10)
 ```
+
+## 🔗 See also
+
+[tempname](../files_folders_functions/tempname.md).
 
 ## 🕔 History
 

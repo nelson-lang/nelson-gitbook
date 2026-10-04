@@ -7,7 +7,7 @@ Write image to graphics file.
 - imwrite(A, filename)
 - imwrite(A, map, filename)
 - imwrite(..., fmt)
-- imwrite(..., , propertyName, propertyValue)
+- imwrite(..., propertyName, propertyValue)
 
 ## 📥 Input argument
 
@@ -22,23 +22,31 @@ Write image to graphics file.
 
 <b>imwrite(A, filename)</b> writes image data<b>A</b> to the file specified by <b>filename</b>
 
+Writable formats are PNG, JPEG/JFIF, GIF, WebP, TIFF, BMP/DIB, TGA, PBM, PGM, PPM/PNM and PCX. The format is selected from <b>fmt</b>, or from the filename extension.
+
+<b>A</b> may be logical, single, double, uint8 or uint16. A two-dimensional array is grayscale unless a K-by-3 colormap in [0, 1] is supplied; a direct-color image is M-by-N-by-3. The alpha matrix must be exactly M-by-N. Floating-point and logical data are normalized to 8 bits; uint8 data is used directly. An indexed image remains indexed when each palette entry has a consistent alpha value. uint16 input is accepted only for grayscale PNG, TIFF and PGM. Other formats report an explicit error.
+
+Files are replaced atomically after successful encoding, so an encoding error does not leave a partially written destination.
+
 Property name:
 
-<b>Quality</b>: quality of output file: scalar in the range [0, 100] (75 as default).
+<b>Quality</b>: JPEG or WebP quality in [0, 100] (75 by default).
 
-<b>Alpha</b>: matrix of values in the range [0, 1]: Transparency of each pixel.
+<b>Alpha</b>: M-by-N per-pixel matrix; floating-point values use [0, 1], uint8 values use [0, 255].
 
-<b>Comment</b>: character vector, string scalar, cell array of character vectors or string array: Comment added to image.
+<b>Comment</b>: text stored when the selected codec supports this metadata.
 
-<b>Author</b>: character vector or string scalar: Author information.
+<b>Author</b>: author text stored when the selected codec supports this metadata.
+
+PNG, JPEG and TIFF store <b>Comment</b> and <b>Author</b>; GIF stores <b>Comment</b>. Other codecs ignore these properties without failing the image write.
 
 Properties for <b>gif</b> format:
 
-<b>WriteMode</b>:
+<b>WriteMode</b>: <b>overwrite</b> (default) or <b>append</b>.
 
-<b>LoopCount</b>:
+<b>LoopCount</b>: animation loop count; <b>Inf</b> repeats indefinitely.
 
-<b>DelayTime</b>:
+<b>DelayTime</b>: frame delay in seconds, in [0, 655].
 
 ## 💡 Examples
 
@@ -49,53 +57,46 @@ A(:,:,2) = rand(69,69);
 A(:,:,3) = rand(69,69);
 imshow(A);
 imwrite(A, [tempdir, '69x69-RGB.png']);
+close(f);
 ```
 
-gif animation
+WebP with alpha and a 16-bit PNG.
 
 ```matlab
-movie_directory = [modulepath('graphics'), '/examples/', 'movie/'];
-sequences = {'dance', 8; 'leap', 9};
-frameIdx = 0;
-filename_gif = [tempdir, 'gif_animation.gif'];
-for s = 1:size(sequences, 1)
-    action = sequences{s, 1};
-    nb_frames_action = sequences{s, 2};
-    for i = 1:nb_frames_action
-        % Construct the filename for the current frame
-        filename = fullfile(movie_directory, sprintf('%s_%d.png', action, i));
-        % Read the image and store it in the movie structure
-        [image, map] = imread(filename);
-        % Read the image
-        [A, map] = imread(filename);
-        if frameIdx == 1
-            imwrite(A,map,filename_gif,"gif", 'LoopCount', Inf, 'DelayTime', 1);
-        else
-            imwrite(A,map,filename_gif,"gif", 'WriteMode', "append", 'DelayTime', 1)
-        end
-        frameIdx = frameIdx + 1;
-    end
-end
-if ispc()
-  unix(filename_gif);
-else
-  unix(['xdg-open ', filename_gif]);
-end
+rgb = rand(16, 16, 3);
+alpha = rand(16, 16);
+gray16 = uint16(reshape(0:255, 16, 16) * 257);
+imwrite(rgb, [tempdir, 'image.webp'], 'Quality', 90, 'Alpha', alpha);
+imwrite(gray16, [tempdir, 'image16.png']);
+```
 
+GIF animation with complete animation options.
+
+```matlab
+firstFrame = uint8(zeros(32, 32, 3));
+firstFrame(:, :, 1) = 255;
+secondFrame = uint8(zeros(32, 32, 3));
+secondFrame(:, :, 3) = 255;
+filename_gif = [tempname(), '.gif'];
+imwrite(firstFrame, filename_gif, 'gif', 'WriteMode', 'overwrite', ...
+        'LoopCount', Inf, 'DelayTime', 0.25);
+imwrite(secondFrame, filename_gif, 'gif', 'WriteMode', 'append', ...
+        'DelayTime', 0.50);
 ```
 
 <img src="imwrite_gif.gif" align="middle"/>
 
 ## 🔗 See also
 
-[imread](../graphics_io/imread.md), [imshow](../graphics/imshow.md), [imformats](../graphics_io/imformats.md).
+[imread](../graphics_io/imread.md), [imshow](../graphics/4_images/imshow.md), [imformats](../graphics_io/imformats.md).
 
 ## 🕔 History
 
-| Version | 📄 Description                  |
-| ------- | ------------------------------- |
-| 1.0.0   | initial version                 |
-| 1.13.0  | gif animation, pcx format added |
+| Version | 📄 Description                                           |
+| ------- | -------------------------------------------------------- |
+| 1.0.0   | initial version                                          |
+| 1.13.0  | gif animation, pcx format added                          |
+| 2.0.0   | WebP, portable codecs and 16-bit grayscale writing added |
 
 <!--
 ## 👤 Author

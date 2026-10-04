@@ -19,7 +19,7 @@ Note: MPI support is not available on Windows on ARM64 (woa64) architecture.
 - [MPI_Comm_rank](MPI_Comm_rank.md) - Determines the rank of the calling process in the communicator.
 - [MPI_Comm_size](MPI_Comm_size.md) - Determines the size of the group associated with a communicator.
 - [MPI_Comm_split](MPI_Comm_split.md) - Partitions the group that is associated with the specified communicator into a specified number of disjoint subgroups.
-- [MPI_Comm_used](MPI_Comm_used.md) - Returns list of current used MPI_Comm handle.
+- [MPI_Comm_used](MPI_Comm_used.md) - Returns the current valid MPI_Comm handles.
 - [MPI_Finalize](MPI_Finalize.md) - Terminate the MPI execution environment.
 - [MPI_Get_library_version](MPI_Get_library_version.md) - Return the version number of MPI library.
 - [MPI_Get_processor_name](MPI_Get_processor_name.md) - Gets the name of the processor.

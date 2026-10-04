@@ -1,6 +1,6 @@
 # openvar
 
-Ouvre une variable dans l'éditeur de variables
+Ouvre une variable dans l'Ã©diteur de variables
 
 ## 📝 Syntaxe
 
@@ -12,21 +12,21 @@ Ouvre une variable dans l'éditeur de variables
 
 ## 📄 Description
 
-<b>openvar(varname)</b> ouvre la variable nommée <b>varname</b> dans l'éditeur de variables de Nelson pour inspection et édition graphique.
+<b>openvar(varname)</b> ouvre la variable nommÃ©e <b>varname</b> dans l'Ã©diteur de variables de Nelson pour inspection et Ã©dition graphique.
 
-Toutes les modifications effectuées dans l'éditeur sont appliquées immédiatement dans le workspace.
+Toutes les modifications effectuÃ©es dans l'Ã©diteur sont appliquÃ©es immÃ©diatement dans le workspace.
 
-L'éditeur de variables supporte les scalaires, vecteurs, matrices, chaînes, cellules, tables et structures. Les tableaux multidimensionnels peuvent être visualisés mais leur édition peut être limitée.
+L'Ã©diteur de variables supporte les scalaires, vecteurs, matrices, chaÃ®nes, cellules, tables et structures. Les tableaux multidimensionnels peuvent Ãªtre visualisÃ©s mais leur Ã©dition peut Ãªtre limitÃ©e.
 
-Vous pouvez également ouvrir une variable en double-cliquant dessus dans le panneau Variables.
+Vous pouvez Ã©galement ouvrir une variable en double-cliquant dessus dans le panneau Variables.
 
-L'éditeur se synchronise automatiquement avec le workspace courant.
+L'Ã©diteur se synchronise automatiquement avec le workspace courant.
 
-Contenu éditable : dans les structures (struct), cellules (cell) et tables (table), seuls les éléments scalaires sont éditables.
+Contenu Ã©ditable : dans les structures (struct), cellules (cell) et tables (table), seuls les Ã©lÃ©ments scalaires sont Ã©ditables.
 
-Nelson offre une intégration complète du presse-papiers avec des tableurs tels que <b>Microsoft Excel</b>, <b>LibreOffice Calc</b> et <b>OpenOffice Calc</b>.
+Nelson offre une intÃ©gration complÃ¨te du presse-papiers avec des tableurs tels que <b>Microsoft Excel</b>, <b>LibreOffice Calc</b> et <b>OpenOffice Calc</b>.
 
-Vous pouvez copier des variables depuis l'éditeur de variables et les coller directement dans ces applications, et inversement.
+Vous pouvez copier des variables depuis l'Ã©diteur de variables et les coller directement dans ces applications, et inversement.
 
 <img src="openvar.png" align="middle"/>
 

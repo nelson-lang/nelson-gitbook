@@ -75,6 +75,10 @@ KSTAIR_IN = zeros(1,N);
 
 ```
 
+## 🔗 See also
+
+[slicot_sb01bd](../slicot/slicot_sb01bd.md), [slicot_tb01id](../slicot/slicot_tb01id.md), [ctrb](../control_system/ctrb.md), [ctrbf](../control_system/ctrbf.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

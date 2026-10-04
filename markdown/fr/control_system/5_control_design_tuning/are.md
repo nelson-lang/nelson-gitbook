@@ -1,0 +1,48 @@
+# are
+
+Solution d'equation algebrique de Riccati.
+
+## 📝 Syntaxe
+
+- X = are(A, B, C)
+
+## 📥 Argument d'entrée
+
+- A - matrice d'etat carree.
+- B - matrice symetrique non negative du terme quadratique.
+- C - matrice symetrique de ponderation d'etat.
+
+## 📤 Argument de sortie
+
+- X - solution stabilisante.
+
+## 📄 Description
+
+<b>are</b> resout <b>A' \* X + X \* A - X \* B \* X + C = 0</b>.
+
+## 💡 Exemple
+
+```matlab
+
+A = [-1 0; 0 -2];
+B = [1 0; 0 0];
+C = eye(2);
+X = are(A, B, C)
+
+```
+
+## 🔗 Voir aussi
+
+[care](../../control_system/care.md).
+
+## 🕔 Historique
+
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 2.0.0   | version initiale |
+
+<!--
+## 👤 Auteur
+
+Allan CORNET
+-->

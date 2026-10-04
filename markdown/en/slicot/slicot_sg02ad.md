@@ -81,6 +81,10 @@ L = zeros(N, N);
 [RCONDU, X, ALFAR, ALFAI, BETA, S, T, U, IWARN, INFO] = slicot_sg02ad(DICO, JOBB, FACT, UPLO, JOBL, SCAL, SORT, ACC, P, A, E, B, Q, R, L, TOL)
 ```
 
+## 🔗 See also
+
+[slicot_sb02od](../slicot/slicot_sb02od.md), [care](../control_system/care.md), [dare](../control_system/dare.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

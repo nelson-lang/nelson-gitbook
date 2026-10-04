@@ -12,19 +12,25 @@ Ce cadre simplifie la distribution, l'intégration et la maintenance des modules
 
 ## Functions
 
-- [addgateway](addgateway.md) - Ajoute dynamiquement un builtin au moment de l'exécution.
+- [addgateway](addgateway.md) - Ajoute dynamiquement des builtins au moment de l'execution.
 - [addmodule](addmodule.md) - Ajouter un module à Nelson.
+- [deploytool](deploytool.md) - Ouvrir l'éditeur de projet d'application autonome.
+- [deploytool](deploytool.md) - Ouvrir l'éditeur de projet d'application autonome.
 - [gatewayinfo](gatewayinfo.md) - Retourne des informations sur une gateway.
 - [getmodules](getmodules.md) - Renvoie la liste des modules chargés dans Nelson.
 - [ismodule](ismodule.md) - Vérifie si un module est chargé.
 - [module.json](module-json.md) - Description du fichier module.json
 - [modulepath](modulepath.md) - Renvoie le chemin d'un module.
+- [ncc](ncc.md) - Construire un executable natif a partir d'une application Nelson.
 - [nmm](nmm.md) - Gestionnaire de modules Nelson.
 - [nmm_build_help](nmm_build_help.md) - fonction d'aide pour générer l'aide d'un module externe
 - [nmm_build_loader](nmm_build_loader.md) - fonction d'aide pour générer le loader principal (loader.m) d'un module externe
+- [nmm init](nmm_init.md) - Genere un manifeste module.json valide.
 - [removegateway](removegateway.md) - Supprime dynamiquement un builtin au moment de l'exécution.
 - [removemodule](removemodule.md) - Supprime un module de Nelson.
 - [requiremodule](requiremodule.md) - Renvoie une erreur si le module n'est pas chargé dans Nelson.
 - [semver](semver.md) - gestionnaire de versions sémantiques.
+- [standaloneApplicationCompiler](standaloneApplicationCompiler.md) - Ouvrir l'éditeur de projet d'application autonome.
+- [standaloneApplicationCompiler](standaloneApplicationCompiler.md) - Ouvrir l'éditeur de projet d'application autonome.
 - [toolboxdir](toolboxdir.md) - Renvoie le chemin d'un module.
 - [usermodulesdir](usermodulesdir.md) - Renvoie le chemin où les modules externes sont enregistrés.

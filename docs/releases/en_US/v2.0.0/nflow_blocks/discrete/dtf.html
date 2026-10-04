@@ -1,0 +1,1064 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>dtf</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">dtf</span></div></div>
+<div class="section" style="text-align:center;"><img src="./dtf.svg" align="middle" style="max-width:240px;max-height:180px;width:auto;height:auto;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;"></div>
+<div class="section syntax-section"><div class="subtitle">Implements a discrete transfer function.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">Block type: dtf
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Input Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">input ports</td>
+<td>1 input port(s) declared.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Output Arguments</div>
+<table class="param-table">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">output ports</td>
+<td>1 output port(s) declared.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>Implements a discrete transfer function.</p>
+    <table border="1">
+      
+        <tr>
+          <td>Module</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">nflow_blocks</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Library</td>
+          <td>Discrete blocks</td>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">dtf</code>
+          </td>
+        </tr>
+        <tr>
+          <td>Label</td>
+          <td>Discrete TF</td>
+        </tr>
+      
+    </table>
+    
+    <p>
+      <b>Description</b>
+    </p>
+    <p>Discrete-time transfer function block (z-domain) defined by numerator and denominator polynomials and a sample time.</p>
+    <p>
+      <b>Ports</b>
+    </p>
+    <p>
+      <b>Input(s)</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Port</th>
+          <th>Role</th>
+          <th>Side</th>
+          <th>Position</th>
+        </tr>
+      
+      
+        <tr>
+          <td>Port_1</td>
+          <td>Numeric signal read by the block.</td>
+          <td>left</td>
+          <td>x=0, y=40</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Output(s)</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Port</th>
+          <th>Role</th>
+          <th>Side</th>
+          <th>Position</th>
+        </tr>
+      
+      
+        <tr>
+          <td>Port_1</td>
+          <td>Numeric signal produced by the block.</td>
+          <td>right</td>
+          <td>x=80, y=40</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Parameters</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <th>Parameter</th>
+          <th>Default value</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">num</code>
+          </td>
+          <td>[1]</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">den</code>
+          </td>
+          <td>[1, -0.5]</td>
+        </tr>
+        <tr>
+          <td>
+            <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">ts</code>
+          </td>
+          <td>0.1</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Inspector Keys</b>
+    </p>
+    <p>These serialized keys are exposed by the block inspector.</p>
+    <ul>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">num</code>
+      </li>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">den</code>
+      </li>
+      <li>
+        <code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">ts</code>
+      </li>
+    </ul>
+    <p>
+      <b>Block Characteristics</b>
+    </p>
+    <table border="1">
+      
+        <tr>
+          <td>Block type</td>
+          <td>dtf</td>
+        </tr>
+        <tr>
+          <td>Family</td>
+          <td>Discrete blocks</td>
+        </tr>
+        <tr>
+          <td>Rendered size</td>
+          <td>80 x 80</td>
+        </tr>
+        <tr>
+          <td>Phases</td>
+          <td>INIT, OUTPUT, UPDATE</td>
+        </tr>
+        <tr>
+          <td>Direct feedthrough</td>
+          <td>see Algorithms</td>
+        </tr>
+        <tr>
+          <td>Internal state or history</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <td>Signal data type</td>
+          <td>double numeric values</td>
+        </tr>
+      
+    </table>
+    <p>
+      <b>Algorithms</b>
+    </p>
+    <ul>
+      <li>INIT normalizes numerator and denominator by den[0] and clears histories.</li>
+      <li>OUTPUT emits the stored output. UPDATE samples at ts, shifts histories, and evaluates the recurrence.</li>
+      <li>Empty numerator defaults to [0], empty denominator to [1], and ts is at least 0.001.</li>
+    </ul>
+    <p>
+      <b>Equation or Rule</b>
+    </p>
+    <p>discrete transfer-function recurrence</p>
+    <p>
+      <b>Extended Capabilities</b>
+    </p>
+    <p>This page describes the native runtime behavior observed in the module C++ sources. Declared phases indicate when the simulation engine calls the block.</p>
+    <p>Code generation: supported for C and Rust.</p>
+    <p>
+      <b>Implementation Sources</b>
+    </p>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Manifest</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/libraries/discrete/library.json</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-json">{
+  "id": "builtin.discrete",
+  "title": "Discrete",
+  "version": "1.0.0",
+  "format": "nflow-2",
+  "metadata": {
+    "author": "Allan CORNET",
+    "created": "2026-03-21",
+    "tool": "Nelson nflow"
+  },
+  "comment": "Blocks for discrete-time systems",
+  "license": "LGPL-3.0",
+  "builtin": true,
+  "blocks": [
+    {
+      "type": "zoh",
+      "label": "ZOH",
+      "icon": "zoh.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "zoh.svg"
+      }
+    },
+    {
+      "type": "foh",
+      "label": "FOH",
+      "icon": "foh.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "foh.svg"
+      }
+    },
+    {
+      "type": "dtf",
+      "icon": "dtf.svg",
+      "label": "Discrete TF",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "Numerator": [
+          1
+        ],
+        "Denominator": [
+          1,
+          -0.5
+        ],
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "dtf.svg"
+      }
+    },
+    {
+      "type": "ddelay",
+      "icon": "ddelay.svg",
+      "label": "Discrete Delay",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "DelayLength": 1,
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "ddelay.svg"
+      }
+    },
+    {
+      "type": "dstateSpace",
+      "icon": "dstateSpace.svg",
+      "label": "Discrete State-Space",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "SampleTime": 0.1
+      },
+      "render": {
+        "type": "image",
+        "src": "dstateSpace.svg"
+      }
+    },
+    {
+      "type": "unitDelay",
+      "label": "Unit Delay",
+      "icon": "unitDelay.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/unitDelay.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "rateTransition",
+      "label": "Rate Transition",
+      "icon": "rateTransition.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "OutPortSampleTime": -1,
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/rateTransition.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "difference",
+      "label": "Difference",
+      "icon": "difference.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "ICPrevInput": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/difference.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "detectChange",
+      "label": "Detect Change",
+      "icon": "detectChange.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/detectChange.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "detectIncrease",
+      "label": "Detect Increase",
+      "icon": "detectIncrease.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/detectIncrease.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "detectDecrease",
+      "label": "Detect Decrease",
+      "icon": "detectDecrease.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      },
+      "render": {
+        "type": "image",
+        "src": "exports/detectDecrease.svg",
+        "svgMode": "element",
+        "preserveAspectRatio": "none",
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    },
+    {
+      "type": "risingEdge",
+      "label": "Rising Edge",
+      "icon": "risingEdge.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      }
+    },
+    {
+      "type": "fallingEdge",
+      "label": "Falling Edge",
+      "icon": "fallingEdge.svg",
+      "phases": [
+        "INIT",
+        "OUTPUT",
+        "UPDATE"
+      ],
+      "width": 80,
+      "height": 80,
+      "inputs": [
+        {
+          "x": 0,
+          "y": 40,
+          "side": "left"
+        }
+      ],
+      "outputs": [
+        {
+          "x": 80,
+          "y": 40,
+          "side": "right"
+        }
+      ],
+      "defaultParams": {
+        "InitialCondition": 0
+      }
+    }
+  ]
+}
+</code></pre></details>
+    <details style="border:1px solid #d8dee4;border-radius:6px;background:rgba(127,127,127,0.04);overflow:hidden;margin:10px 0;"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px;font-weight:600;"><span>Runtime</span><code style="font-family:Consolas, Menlo, Monaco, monospace;font-size:0.92em;background:rgba(127,127,127,0.12);border:1px solid rgba(127,127,127,0.22);border-radius:4px;padding:1px 4px;white-space:break-spaces;">modules/nflow_blocks/src/cpp/discrete/dtf.cpp</code></summary><pre style="margin:0;padding:12px;overflow:auto;border-top:1px solid #d8dee4;background:rgba(0,0,0,0.035);font-size:0.9em;line-height:1.45;"><code class="language-cpp">//=============================================================================
+// Copyright (c) 2016-present Allan CORNET (Nelson)
+//=============================================================================
+// This file is part of Nelson.
+//=============================================================================
+// LICENCE_BLOCK_BEGIN
+// SPDX-License-Identifier: LGPL-3.0-or-later
+// LICENCE_BLOCK_END
+//=============================================================================
+#include "SimEngineTypes.hpp"
+#include "BlockRegistry.hpp"
+#include "FieldNames.hpp"
+#include "NFlowBlockDescriptor.hpp"
+#include "NFlowCodegenHelpers.hpp"
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include "discrete_blocks.hpp"
+//=============================================================================
+bool
+Nelson::NFlow::handleDtf(SimCtx&amp; ctx, const Block&amp; b, Phase phase)
+{
+    auto&amp; st = getState(ctx, b.nid);
+    if (phase == Phase::INIT) {
+        auto toPolyD = [](const json&amp; j) -&gt; std::vector&lt;double&gt; {
+            std::vector&lt;double&gt; v;
+            if (j.is_array()) {
+                for (const auto&amp; el : j) {
+                    v.push_back(el.is_number() ? el.get&lt;double&gt;() : 0.0);
+                }
+            } else if (j.is_number()) {
+                v.push_back(j.get&lt;double&gt;());
+            }
+            return v;
+        };
+        // Same reading as the emitted code: buildDiscreteTf normalises by the
+        // leading denominator coefficient AND pads a lower-degree numerator on
+        // the left, so both lists are polynomials in z. The runtime used to
+        // normalise here on its own without the padding, which gave a system
+        // with no delay where the emitted code had one.
+        const nflow::DiscreteTf model
+            = nflow::buildDiscreteTf(toPolyD(b.params.value(nflow::kNum, json::array())),
+                toPolyD(b.params.value(nflow::kDen, json::array())));
+        std::vector&lt;double&gt; numArr = model.num;
+        std::vector&lt;double&gt; denArr = model.den;
+        // Per-element input/output histories: xHist is flat [width * nx],
+        // yHist flat [width * ny]; the coefficients are shared.
+        const int w = std::max(1, outputWidth(ctx, b.nid, 0));
+        st.tfNum = numArr;
+        st.tfDen = denArr;
+        st.xHist.assign(numArr.size() * (size_t)w, 0.0);
+        st.yHist.assign(std::max((int)denArr.size() - 1, 0) * (size_t)w, 0.0);
+        st.outLatch.assign(w, 0.0);
+        st.dNextTime = 0.0;
+        st.output = 0.0;
+        return false;
+    }
+    if (phase == Phase::ALGEBRAIC) {
+        // The output answers the CURRENT input: with the numerator and the
+        // denominator read as polynomials in z, a biproper system feeds through
+        // and only a lower-degree numerator delays. Emitting what UPDATE had
+        // latched put every form one step behind, so a biproper system answered
+        // a step after its input moved.
+        const int w = std::max(1, outputWidth(ctx, b.nid, 0));
+        const bool onHit = (ctx.t + 1e-6 &gt;= st.dNextTime);
+        if (!onHit) {
+            // Between this block's own sample hits it holds what it last said.
+            if (w &lt;= 1) {
+                setOutput(ctx, b.nid, st.outLatch.empty() ? st.output : st.outLatch[0]);
+            } else {
+                double* yv = outputSlice(ctx, b.nid, 0);
+                for (int e = 0; e &lt; w; ++e) {
+                    yv[e] = (e &lt; (int)st.outLatch.size()) ? st.outLatch[e] : 0.0;
+                }
+            }
+            return false;
+        }
+        const int nx = (int)st.tfNum.size();
+        const int ny = std::max((int)st.tfDen.size() - 1, 0);
+        SigView u = getInputSig(ctx, b.nid, 0);
+        std::vector&lt;double&gt; xs(nx), ys(ny);
+        if (w &lt;= 1) {
+            const double* xh = st.xHist.data();
+            const double* yh = st.yHist.data();
+            if (nx &gt; 0) {
+                xs[0] = sigAt(u, 0);
+            }
+            for (int k = 1; k &lt; nx; ++k) {
+                xs[k] = xh[k - 1];
+            }
+            for (int k = 0; k &lt; ny; ++k) {
+                ys[k] = yh[k];
+            }
+            setOutput(ctx, b.nid, evalDiscreteTf(st.tfNum, st.tfDen, xs, ys));
+        } else {
+            double* yv = outputSlice(ctx, b.nid, 0);
+            for (int e = 0; e &lt; w; ++e) {
+                const double* xh = st.xHist.data() + (size_t)e * nx;
+                const double* yh = st.yHist.data() + (size_t)e * ny;
+                if (nx &gt; 0) {
+                    xs[0] = sigAt(u, e);
+                }
+                for (int k = 1; k &lt; nx; ++k) {
+                    xs[k] = xh[k - 1];
+                }
+                for (int k = 0; k &lt; ny; ++k) {
+                    ys[k] = yh[k];
+                }
+                yv[e] = evalDiscreteTf(st.tfNum, st.tfDen, xs, ys);
+            }
+        }
+        return false;
+    }
+    if (phase == Phase::UPDATE) {
+        nflow::BlockDescriptor bd(b, ctx.variables);
+        double ts = std::max(0.001, bd.paramDouble(nflow::kTs, ctx.dt));
+        if (ctx.t + 1e-6 &gt;= st.dNextTime) {
+            const int w = std::max(1, outputWidth(ctx, b.nid, 0));
+            const int nx = (int)st.tfNum.size();
+            const int ny = std::max((int)st.tfDen.size() - 1, 0);
+            SigView u = getInputSig(ctx, b.nid, 0);
+            if ((int)st.outLatch.size() != w) {
+                st.outLatch.assign(w, 0.0);
+            }
+            std::vector&lt;double&gt; xs(nx), ys(ny);
+            for (int e = 0; e &lt; w; ++e) {
+                double* xh = st.xHist.data() + (size_t)e * nx;
+                double* yh = st.yHist.data() + (size_t)e * ny;
+                for (int k = nx - 1; k &gt; 0; --k) {
+                    xh[k] = xh[k - 1];
+                }
+                if (nx &gt; 0) {
+                    xh[0] = sigAt(u, e);
+                }
+                for (int k = 0; k &lt; nx; ++k) {
+                    xs[k] = xh[k];
+                }
+                for (int k = 0; k &lt; ny; ++k) {
+                    ys[k] = yh[k];
+                }
+                double y = evalDiscreteTf(st.tfNum, st.tfDen, xs, ys);
+                for (int k = ny - 1; k &gt; 0; --k) {
+                    yh[k] = yh[k - 1];
+                }
+                if (ny &gt; 0) {
+                    yh[0] = y;
+                }
+                st.outLatch[e] = y;
+            }
+            st.dNextTime = ctx.t + ts;
+            st.output = st.outLatch.empty() ? 0.0 : st.outLatch[0];
+        }
+        return false;
+    }
+    return false;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenCDtf()
+{
+    BlockCodegenTemplate t;
+    t.emitState = [](const BlockCodegenStateArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        auto num = bd.paramList(nflow::kNum);
+        auto den = bd.paramList(nflow::kDen);
+        auto model = nflow::buildDiscreteTf(num, den);
+        int numLen = static_cast&lt;int&gt;(model.num.size());
+        int denLen = static_cast&lt;int&gt;(model.den.size());
+        a.addConst("static const int dtf_num_" + a.id + "_n = " + std::to_string(numLen) + ";");
+        a.addConst("static const int dtf_den_" + a.id + "_n = " + std::to_string(denLen) + ";");
+        std::string numStr = "";
+        for (int i = 0; i &lt; numLen; ++i) {
+            if (i &gt; 0) {
+                numStr += ", ";
+            }
+            numStr += a.fmt(model.num[i]);
+        }
+        std::string denStr = "";
+        for (int i = 0; i &lt; denLen; ++i) {
+            if (i &gt; 0) {
+                denStr += ", ";
+            }
+            denStr += a.fmt(model.den[i]);
+        }
+        a.addConst("static const double dtf_num_" + a.id + "[" + std::to_string(numLen) + "] = {"
+            + numStr + "};");
+        a.addConst("static const double dtf_den_" + a.id + "[" + std::to_string(denLen) + "] = {"
+            + denStr + "};");
+        a.declState("double dtf_x_" + a.id + "[" + std::to_string(numLen) + "];");
+        a.declState("double dtf_y_" + a.id + "[" + std::to_string(std::max(0, denLen - 1)) + "];");
+        a.addState("dtf_next_" + a.id, "", "");
+        a.addState("dtf_last_" + a.id, "", "");
+        a.addInit("  for (int i = 0; i &lt; " + std::to_string(numLen) + "; i++) s-&gt;dtf_x_" + a.id
+            + "[i] = 0.0;");
+        a.addInit("  for (int i = 0; i &lt; " + std::to_string(std::max(0, denLen - 1))
+            + "; i++) s-&gt;dtf_y_" + a.id + "[i] = 0.0;");
+    };
+    t.emitOutput = [](const BlockCodegenArgs&amp; a) {
+        a.line("out_" + a.id + " = (dtf_den_" + a.id + "_n &gt; 1) ? s-&gt;dtf_y_" + a.id + "[0] : 0.0;");
+    };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double ts = std::fmax(0.001, bd.paramDouble(nflow::kTs, 0.0));
+        if (ts == 0) {
+            ts = a.dt;
+        }
+        // The output is the value computed ON the hit (held between hits), not
+        // the one from the previous hit: a biproper system feeds through.
+        a.line("if (t + 1e-6 &gt;= s-&gt;dtf_next_" + a.id + ") {");
+        a.line("  for (int i = dtf_num_" + a.id + "_n - 1; i &gt; 0; i--) s-&gt;dtf_x_" + a.id
+            + "[i] = s-&gt;dtf_x_" + a.id + "[i - 1];");
+        a.line("  s-&gt;dtf_x_" + a.id + "[0] = " + a.in[0] + ";");
+        a.line("  double y = 0.0;");
+        a.line("  for (int i = 0; i &lt; dtf_num_" + a.id + "_n; i++) y += dtf_num_" + a.id
+            + "[i] * s-&gt;dtf_x_" + a.id + "[i];");
+        a.line("  for (int i = 1; i &lt; dtf_den_" + a.id + "_n; i++) y -= dtf_den_" + a.id
+            + "[i] * s-&gt;dtf_y_" + a.id + "[i - 1];");
+        a.line("  for (int i = dtf_den_" + a.id + "_n - 2; i &gt; 0; i--) s-&gt;dtf_y_" + a.id
+            + "[i] = s-&gt;dtf_y_" + a.id + "[i - 1];");
+        a.line("  if (dtf_den_" + a.id + "_n &gt; 1) s-&gt;dtf_y_" + a.id + "[0] = y;");
+        a.line("  s-&gt;dtf_last_" + a.id + " = y;");
+        a.line("  s-&gt;dtf_next_" + a.id + " = t + " + a.fmt(ts) + ";");
+        a.line("}");
+        a.line("out_" + a.id + " = s-&gt;dtf_last_" + a.id + ";");
+    };
+    return t;
+}
+//=============================================================================
+Nelson::NFlow::BlockCodegenTemplate
+Nelson::NFlow::getCodeGenRustDtf()
+{
+    BlockCodegenTemplate t;
+    t.emitState = [](const BlockCodegenStateArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        auto num = bd.paramList(nflow::kNum);
+        auto den = bd.paramList(nflow::kDen);
+        auto model = nflow::buildDiscreteTf(num, den);
+        int numLen = static_cast&lt;int&gt;(model.num.size());
+        int denLen = static_cast&lt;int&gt;(model.den.size());
+        std::string cu = a.id;
+        for (auto&amp; c : cu) {
+            c = static_cast&lt;char&gt;(std::toupper(static_cast&lt;unsigned char&gt;(c)));
+        }
+        a.addConst("const DTF_NUM_" + cu + "_N: usize = " + std::to_string(numLen) + ";");
+        a.addConst("const DTF_DEN_" + cu + "_N: usize = " + std::to_string(denLen) + ";");
+        std::string numStr;
+        for (int i = 0; i &lt; numLen; ++i) {
+            if (i &gt; 0) {
+                numStr += ", ";
+            }
+            numStr += a.fmt(model.num[i]);
+        }
+        std::string denStr;
+        for (int i = 0; i &lt; denLen; ++i) {
+            if (i &gt; 0) {
+                denStr += ", ";
+            }
+            denStr += a.fmt(model.den[i]);
+        }
+        a.addConst(
+            "const DTF_NUM_" + cu + ": [f64; " + std::to_string(numLen) + "] = [" + numStr + "];");
+        a.addConst(
+            "const DTF_DEN_" + cu + ": [f64; " + std::to_string(denLen) + "] = [" + denStr + "];");
+        a.declState("    pub dtf_x_" + a.id + ": [f64; " + std::to_string(numLen) + "],");
+        a.declState(
+            "    pub dtf_y_" + a.id + ": [f64; " + std::to_string(std::max(1, denLen - 1)) + "],");
+        a.declState("    pub dtf_next_" + a.id + ": f64,");
+        a.declState("    pub dtf_last_" + a.id + ": f64,");
+        a.addInit(
+            "    s.dtf_x_" + a.id + " = [" + a.fmt(0.0) + "; " + std::to_string(numLen) + "]; ");
+        a.addInit("    s.dtf_y_" + a.id + " = [" + a.fmt(0.0) + "; "
+            + std::to_string(std::max(1, denLen - 1)) + "]; ");
+        a.addInit("    s.dtf_next_" + a.id + " = 0.0_f64;");
+        a.addInit("    s.dtf_last_" + a.id + " = 0.0_f64;");
+    };
+    t.emitOutput
+        = [](const BlockCodegenArgs&amp; a) { a.line("out_" + a.id + " = s.dtf_last_" + a.id + ";"); };
+    t.emitStep = [](const BlockCodegenArgs&amp; a) {
+        nflow::BlockDescriptor bd(*a.block, *a.variables);
+        double ts = std::fmax(0.001, bd.paramDouble(nflow::kTs, 0.0));
+        if (ts == 0) {
+            ts = a.dt;
+        }
+        std::string cu = a.id;
+        for (auto&amp; c : cu) {
+            c = static_cast&lt;char&gt;(std::toupper(static_cast&lt;unsigned char&gt;(c)));
+        }
+        // The value computed ON the hit is what leaves, held between hits: a
+        // biproper system feeds through.
+        a.line("if (t + 1e-6 &gt;= s.dtf_next_" + a.id + ") {");
+        a.line("    for i in (1..DTF_NUM_" + cu + "_N).rev() { s.dtf_x_" + a.id + "[i] = s.dtf_x_"
+            + a.id + "[i - 1]; }");
+        a.line("    s.dtf_x_" + a.id + "[0] = " + a.in[0] + ";");
+        a.line("    let mut y = 0.0_f64;");
+        a.line("    for i in 0..DTF_NUM_" + cu + "_N { y += DTF_NUM_" + cu + "[i] * s.dtf_x_" + a.id
+            + "[i]; }");
+        a.line("    for i in 1..DTF_DEN_" + cu + "_N { y -= DTF_DEN_" + cu + "[i] * s.dtf_y_" + a.id
+            + "[i - 1]; }");
+        a.line("    for i in (1..(DTF_DEN_" + cu + "_N - 1)).rev() { s.dtf_y_" + a.id
+            + "[i] = s.dtf_y_" + a.id + "[i - 1]; }");
+        a.line("    if DTF_DEN_" + cu + "_N &gt; 1 { s.dtf_y_" + a.id + "[0] = y; }");
+        a.line("    s.dtf_last_" + a.id + " = y;");
+        a.line("    s.dtf_next_" + a.id + " = t + " + a.fmt(ts) + ";");
+        a.line("}");
+        a.line("out_" + a.id + " = s.dtf_last_" + a.id + ";");
+    };
+    return t;
+}
+//=============================================================================
+</code></pre></details>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../../nflow_blocks/discrete/dstateSpace.html">dstateSpace</a><a class="see-also-link" href="../../nflow_blocks/continuous/tf.html">tf</a><a class="see-also-link" href="../../nflow_blocks/discrete/unitDelay.html">unitDelay</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">1.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

@@ -18,13 +18,13 @@ Each argument declaration follows this form:
 
 <code>argName (dimensions) class {validators} = defaultValue</code>
 
-<b>(dimensions)</b> — Input size specified as a comma-separated list of integers or colons, e.g. <code>(1,1)</code>, <code>(1,:)</code>, or <code>(3,5,2)</code>. A colon allows any length in that dimension. The input must match the declared dimensions exactly, or be compatible with them (for example a column vector is compatible with <code>(1,:)</code> and is reshaped automatically). Expressions are not allowed inside dimensions.
+<b>(dimensions)</b>: Input size specified as a comma-separated list of integers or colons, e.g. <code>(1,1)</code>, <code>(1,:)</code>, or <code>(3,5,2)</code>. A colon allows any length in that dimension. The input must match the declared dimensions exactly, or be compatible with them (for example a column vector is compatible with <code>(1,:)</code> and is reshaped automatically). Expressions are not allowed inside dimensions.
 
-<b>class</b> — A single class name such as <code>double</code>, <code>char</code>, or <code>string</code>. The value is converted to that class when possible. If omitted, any class is accepted.
+<b>class</b>: A single class name such as <code>double</code>, <code>char</code>, or <code>string</code>. The value is converted to that class when possible. If omitted, any class is accepted.
 
-<b>{validators}</b> — A comma-separated list of validation functions enclosed in braces, e.g. <code>{mustBeNumeric, mustBeReal}</code>. Validation functions throw an error when the condition is not met; unlike class, they never modify the argument value.
+<b>{validators}</b>: A comma-separated list of validation functions enclosed in braces, e.g. <code>{mustBeNumeric, mustBeReal}</code>. Validation functions throw an error when the condition is not met; unlike class, they never modify the argument value.
 
-<b>= defaultValue</b> — An expression that provides a default value and makes the argument optional. The expression may reference previously declared arguments. Optional arguments must be positioned after all required arguments in the function signature and in the <b>arguments</b> block.
+<b>= defaultValue</b>: An expression that provides a default value and makes the argument optional. The expression may reference previously declared arguments. Optional arguments must be positioned after all required arguments in the function signature and in the <b>arguments</b> block.
 
 <b>arguments (Repeating) ... end</b> declares repeating input arguments. A function may contain only one repeating input block. Nelson creates a cell array for each repeating argument containing all values passed for that argument. If the function also has name-value arguments, those must be declared in a separate <b>arguments</b> block after the repeating block.
 

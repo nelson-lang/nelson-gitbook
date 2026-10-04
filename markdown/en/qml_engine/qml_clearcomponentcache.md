@@ -18,6 +18,10 @@ All previously loaded components and the property bindings for all extant object
 qml_clearcomponentcache()
 ```
 
+## 🔗 See also
+
+[qml_collectgarbage](../qml_engine/qml_collectgarbage.md), [qml_loadfile](../qml_engine/qml_loadfile.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>kmeans</title>
+<link rel="stylesheet" href="../highlight.css">
+<link rel="stylesheet" href="../nelson_common.css">
+<script src="../nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="../index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">kmeans</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Classification k-means.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntaxe</div>
+<pre class="syntax-block"><code class="language-matlab">idx = kmeans(X, k)
+idx = kmeans(X, k, 'Distance', distance)
+idx = kmeans(X, k, 'Start', start)
+[idx, C, sumd, D] = kmeans(...)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📥</span>Arguments d'entrée</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">X</td>
+<td>matrice numerique reelle pleine. Les lignes sont les observations et les colonnes sont les variables.</td>
+</tr>
+<tr>
+<td class="param-name">k</td>
+<td>entier positif indiquant le nombre de groupes. Utiliser [] uniquement lorsque Start est un tableau numerique.</td>
+</tr>
+<tr>
+<td class="param-name">distance</td>
+<td>nom de distance : 'sqeuclidean', 'squaredeuclidean', 'cityblock', 'cosine', 'correlation' ou 'hamming'.</td>
+</tr>
+<tr>
+<td class="param-name">start</td>
+<td>choix des centroides initiaux : 'plus', 'sample', 'uniform', 'cluster', une matrice k-par-p ou un tableau k-par-p-par-r.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📤</span>Arguments de sortie</div>
+<table class="param-table">
+<tr>
+<th>Paramètre</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="param-name">idx</td>
+<td>vecteur colonne double des indices de groupe.</td>
+</tr>
+<tr>
+<td class="param-name">C</td>
+<td>matrice k-par-p des centroides.</td>
+</tr>
+<tr>
+<td class="param-name">sumd</td>
+<td>vecteur k-par-1 des sommes des distances intra-groupe.</td>
+</tr>
+<tr>
+<td class="param-name">D</td>
+<td>matrice n-par-k des distances entre chaque observation et chaque centroide.</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>kmeans</b> partitionne les observations en k groupes en affectant iterativement chaque observation au centroide le plus proche puis en recalculant les centroides.</p>
+    <p>Les initialisations aleatoires utilisent le generateur global de Nelson. Utiliser <b>rng</b> avant <b>kmeans</b>, ou transmettre <b>Options</b> cree avec <b>statset</b> et un <b>RandStream</b> dans <b>Streams</b>, pour obtenir une initialisation reproductible.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Exemples</div>
+<div class="example">
+<div class="example-title">Classer deux groupes.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">X = [0 0; 0 1; 5 5; 5 6];
+[idx, C] = kmeans(X, 2, 'Start', [0 0; 5 5])</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Tracer trois groupes et leurs centroides.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+X = [-2.0 -1.1;
+     -1.7 -0.8;
+     -1.4 -1.2;
+     -1.5 -0.6;
+      0.2  1.8;
+      0.5  2.1;
+      0.8  1.7;
+      0.4  1.4;
+      2.4 -0.2;
+      2.7  0.1;
+      3.0 -0.3;
+      2.5 -0.6];
+start = [-1.7 -0.8; 0.5 2.1; 2.7 0.1];
+[idx, C] = kmeans(X, 3, 'Start', start);
+scatter(X(:, 1), X(:, 2), 48, idx, 'filled');
+hold on;
+plot(C(:, 1), C(:, 2), 'kx', 'MarkerSize', 12, 'LineWidth', 3);
+axis equal;
+title('Groupes k-means et centroides');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./kmeans_1.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer une initialisation aleatoire reproductible.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+rng(4);
+t = linspace(0, 2 * pi, 24)';
+X1 = [cos(t) - 2, 0.4 * sin(t)];
+X2 = [0.5 * cos(t) + 1.5, sin(t) + 1.2];
+X3 = [0.6 * cos(t) + 2.7, 0.6 * sin(t) - 1.2];
+X = [X1; X2; X3];
+[idx, C] = kmeans(X, 3, 'Start', 'plus', 'Replicates', 4);
+scatter(X(:, 1), X(:, 2), 36, idx, 'filled');
+hold on;
+plot(C(:, 1), C(:, 2), 'kx', 'MarkerSize', 12, 'LineWidth', 3);
+axis equal;
+title('Depart aleatoire k-means reproductible');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./kmeans_2.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+<div class="example">
+<div class="example-title">Tracer des groupes calcules avec la distance cityblock.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">f = figure();
+X = [-3 -1;
+     -2 -1;
+     -2  0;
+     -1 -1;
+      0  2;
+      1  2;
+      1  3;
+      2  2;
+      3 -2;
+      4 -2;
+      4 -1;
+      5 -2];
+start = [-2 -1; 1 2; 4 -2];
+[idx, C, sumd] = kmeans(X, 3, 'Start', start, 'Distance', 'cityblock');
+scatter(X(:, 1), X(:, 2), 48, idx, 'filled');
+hold on;
+plot(C(:, 1), C(:, 2), 'kx', 'MarkerSize', 12, 'LineWidth', 3);
+axis equal;
+title('k-means avec distance cityblock');
+xlabel('x1');
+ylabel('x2');</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+<img src="./kmeans_3.svg" align="middle" alt="Example illustration" style="width:960px;height:580px;display:block;margin:12px auto;background:#fff;border:1px solid #e2e8f0;border-radius:4px;box-shadow:0 1px 4px rgba(44,82,130,0.07);object-fit:contain;">
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>
+    statset
+    statget
+    rng
+    table
+  </div>
+</div>
+<div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Modifier cette page sur GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

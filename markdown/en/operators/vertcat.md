@@ -36,6 +36,13 @@ B = 'son';
 C = vertcat(A, B)
 ```
 
+Concatenate character and numeric values as character codes.
+
+```matlab
+C = [char(65); 1];
+double(C)
+```
+
 ## 🔗 See also
 
 [horzcat](../operators/horzcat.md), [cat](../operators/cat.md).

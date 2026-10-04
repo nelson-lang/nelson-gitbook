@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>text_completion</module>
+    <section name="Completion de texte">
+      <chapter_description>
+    <p>Le module Text completion fournit les candidats de completion pour les lignes de commande, editeurs et terminaux Nelson.</p>
+  </chapter_description>
+      <keyword name="completion" link="completion.html" description="Calcule les candidats de completion de texte."/>
+    </section>
+  </toc>
+</help_summary>

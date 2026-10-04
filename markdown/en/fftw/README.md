@@ -16,5 +16,6 @@ The module enables efficient spectral analysis and signal processing, leveraging
 - [fftshift](fftshift.md) - Shift the zero-frequency component to the center of the spectrum.
 - [fftw](fftw.md) - function for determining FFT algorithm.
 - [ifft](ifft.md) - Inverse Fast Fourier transform.
+- [ifft2](ifft2.md) - 2-D inverse fast Fourier transform.
 - [ifftn](ifftn.md) - Inverse multidimensional fast Fourier transform.
 - [ifftshift](ifftshift.md) - inverse of fftshift

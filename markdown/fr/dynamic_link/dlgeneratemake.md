@@ -33,6 +33,8 @@ Génère un makefile pour construire une bibliothèque dynamique
 
 Nelson s'appuie sur <b>CMake</b> pour cette tâche.
 
+Appelée avec au moins un argument de sortie, <b>dlgeneratemake</b> retourne <b>res</b> (un logique) et <b>message</b>. Appelée sans argument de sortie, elle lève l'erreur <b>Nelson:dlgeneratemake:failed</b> en cas d'échec au lieu de retourner un statut faux.
+
 ## 💡 Exemple
 
 See module skeleton for example

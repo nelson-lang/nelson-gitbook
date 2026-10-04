@@ -1,0 +1,56 @@
+# imregister
+
+Register a moving image to a fixed image.
+
+## 📝 Syntax
+
+- registered = imregister(moving, fixed, transformType, optimizer, metric)
+- registered = imregister(..., Name, Value)
+
+## 📥 Input argument
+
+- moving - Moving grayscale or RGB image.
+- fixed - Fixed grayscale or RGB image with the same size as moving.
+- transformType - Transformation type passed to imregtform.
+- optimizer - Optimizer structure.
+- metric - Metric structure or metric name.
+
+## 📤 Output argument
+
+- registered - Registered moving image, sampled on the fixed image grid.
+
+## 📄 Description
+
+imregister estimates a 2-D transform with imregtform and resamples the moving image on the fixed image grid with imwarp. Supported interpolation methods are nearest, linear, bilinear and cubic.
+
+## 💡 Example
+
+Register a translated image
+
+```matlab
+I=zeros(64,64); I(24:40,22:38)=1;
+J=imtranslate(I,[7 -5],'nearest');
+[optimizer,metric]=imregconfig('monomodal');
+K=imregister(I,J,'translation',optimizer,metric,'Interpolation','nearest');
+figure; subplot(1,3,1); imagesc(I); axis image; title('Moving');
+subplot(1,3,2); imagesc(J); axis image; title('Fixed');
+subplot(1,3,3); imagesc(K); axis image; title('Registered');
+```
+
+<img src="imregister_1.png" align="middle"/>
+
+## 🔗 See also
+
+[imregconfig](../../../image_processing/imregconfig.md), [imregcorr](../../../image_processing/imregcorr.md), [imregtform](../../../image_processing/imregtform.md), [imwarp](../../../image_processing/imwarp.md).
+
+## 🕔 History
+
+| Version | 📄 Description  |
+| ------- | --------------- |
+| 2.0.0   | initial version |
+
+<!--
+## 👤 Author
+
+Allan CORNET
+-->

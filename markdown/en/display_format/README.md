@@ -10,6 +10,7 @@ This ensures flexibility in how information is presented and reused within scrip
 
 ## Functions
 
+- [nelson.display.DisplayFormatOptions](DisplayFormatOptions.md) - Display format options object.
 - [disp](disp.md) - Display a variable.
 - [display](display.md) - Show information about variable or result of expression.
 - [echo](echo.md) - Controls the echoing during their execution.

@@ -23,7 +23,7 @@ try/catch in a script file
 try
 error('an error')
 catch
-  disp('error catched')
+  disp('error caught')
 end
 ```
 

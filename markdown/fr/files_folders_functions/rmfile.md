@@ -39,9 +39,9 @@ isfile([tempdir(), 'test_rmfile.txt'])
 
 ## 🕔 Historique
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 1.0.0   | version initiale |
 
 <!--
 ## 👤 Auteur

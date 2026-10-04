@@ -57,6 +57,10 @@ X_IN = zeros(N, N);
 [A_OUT, X_OUT, NBLCKS, BLSIZE, WR, WI, INFO] = slicot_mb03rd(JOBX, SORT, PMAX, A_IN, X_IN, TOL)
 ```
 
+## 🔗 Voir aussi
+
+[slicot_mb04md](../slicot/slicot_mb04md.md), [bdschur](../control_system/bdschur.md), [schord](../control_system/schord.md).
+
 ## 🕔 Historique
 
 | Version | 📄 Description   |

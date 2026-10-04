@@ -49,6 +49,10 @@ C_IN = [271.0   135.0   147.0;
 [A_OUT, B_OUT, C_OUT, Z, INFO] = slicot_sb04qd(A_IN, B_IN, C_IN)
 ```
 
+## 🔗 See also
+
+[slicot_sb04md](../slicot/slicot_sb04md.md), [dlyap](../control_system/dlyap.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

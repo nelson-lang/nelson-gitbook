@@ -25,6 +25,8 @@ enregistrer des variables de l'espace de travail dans un fichier .nh5 ou .mat
 
 <b>save</b> sauvegarde les variables de l'espace de travail dans un fichier .nh5 ou .mat.
 
+Les objets classdef valeur et les objets handle classdef peuvent etre sauvegardes si leur definition de classe est disponible dans le chemin lors du chargement du fichier.
+
 ## 💡 Exemples
 
 ```matlab
@@ -76,15 +78,36 @@ with_compression = dir([tempdir(), 'example_save_with_compression.mat'])
 no_compression = dir([tempdir(), 'example_save_no_compression.mat'])
 ```
 
+Sauvegarder et charger un objet classdef.
+
+```matlab
+clear classes
+d = [tempdir(), 'nelson_help_save_classdef/'];
+mkdir(d);
+filewrite([d, '/NelsonHelpSavePoint.m'], ["classdef NelsonHelpSavePoint"; "  properties"; "    X = 0"; "    Y = 0"; "  end"; "end"]);
+addpath(d);
+point = NelsonHelpSavePoint();
+point.X = 5;
+point.Y = 6;
+filename = [tempdir(), 'nelson_help_save_classdef.nh5'];
+save(filename, 'point');
+clear point;
+clear classes;
+loaded = load(filename);
+className = class(loaded.point)
+coordinates = [loaded.point.X, loaded.point.Y]
+```
+
 ## 🔗 Voir aussi
 
 [load](../stream_manager/load.md), [savenh5](../hdf5/savenh5.md), [savemat](../matio/savemat.md).
 
 ## 🕔 Historique
 
-| Version | 📄 Description   |
-| ------- | ---------------- |
-| 1.0.0   | version initiale |
+| Version | 📄 Description                                           |
+| ------- | -------------------------------------------------------- |
+| 1.0.0   | version initiale                                         |
+| 2.0.0   | comportement de sauvegarde des objets classdef documente |
 
 <!--
 ## 👤 Auteur

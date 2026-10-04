@@ -1,0 +1,46 @@
+# gray
+
+Palette de couleurs gray.
+
+## 📝 Syntaxe
+
+- c = gray
+- c = gray(m)
+
+## 📥 Argument d'entrée
+
+- m - Un entier scalaire : nombre de couleurs (256 par défaut).
+
+## 📤 Argument de sortie
+
+- c - Palette de couleurs gray.
+
+## 📄 Description
+
+<b>gray</b> retourne la palette de couleurs gray.
+
+## 💡 Exemple
+
+```matlab
+f = figure();
+surf(peaks);
+colormap('gray');
+```
+
+<img src="gray.svg" align="middle"/>
+
+## 🔗 Voir aussi
+
+[colormap](../../../../graphics/3_labels_styling/2_color_styling/colormaps/colormap.md).
+
+## 🕔 Historique
+
+| Version | 📄 Description   |
+| ------- | ---------------- |
+| 1.0.0   | version initiale |
+
+<!--
+## 👤 Auteur
+
+Allan CORNET
+-->

@@ -6,7 +6,7 @@ This document is the canonical authoring reference for help XML files used by Ne
 
 ## 📝 Syntax
 
-- `<xmldoc>` (root) — REQUIRED child: `<language>`
+- `<xmldoc>` (root) - REQUIRED child: `<language>`
 - Header: `<title>`, `<language>`, `<module\_name>`, `<chapter>`, `<short\_description>`
 - Sections: `<syntax>`, `<param\_input>`, `<param\_output>`, `<description>`, `<examples>`, `<see\_also>`, `<history>`, `<authors>`, `<bibliography>`
 
@@ -34,25 +34,25 @@ Use<code>`<description>`</code>to provide the main documentation body. It accept
 
 Inline elements and their XSLT rendering:
 
-- <b>`<b>`</b> — bold text.
-- <b>`<i>`</b> — italic text.
-- <b>`<code>`</b> — inline code rendering.
+- <b>`<b>`</b> - bold text.
+- <b>`<i>`</b> - italic text.
+- <b>`<code>`</b> - inline code rendering.
 - <b>`<a href="..."
-      >`</b> — external links (rendered as HTML anchors).
+        >`</b> - external links (rendered as HTML anchors).
 - <b>`<link linkend="..."
-      >`</b> — internal cross reference. If linkend contains a module in braces<code>{module}name</code>it becomes<code>../module/name.html</code>, otherwise<code>name.html</code>.
-- <b>`<latex>`</b> — math expressions; rendered as MathJax display math by the XSLT template (wrapped with<code>`$$...$$`</code>).
-- <b>`<img src="..."/>`</b> — images. XSLT calls<code>ext:copy_img(@src)</code>; SVGs are rendered with a large fixed frame and other formats are responsive.
+        >`</b> - internal cross reference. If linkend contains a module in braces<code>{module}name</code>it becomes<code>../module/name.html</code>, otherwise<code>name.html</code>.
+- <b>`<latex>`</b> - math expressions; rendered as MathJax display math by the XSLT template (wrapped with<code>`$$...$$`</code>).
+- <b>`<img src="..."/>`</b> - images. XSLT calls<code>ext:copy_img(@src)</code>; SVGs are rendered with a large fixed frame and other formats are responsive.
 
 Block elements:
 
-- <code>`<ul>`</code>and<code>`<ol>`</code>— lists. Use<code>`<li>`</code>with nested inline/block markup as needed.
-- <code>`<table>`</code>— use<code>`<thead>`</code>,<code>`<tbody>`</code>,<code>`<tr>`</code>,<code>`<th>`</code>and<code>`<td>`</code>. The XSD allows common attributes<code>border</code>,<code>cellpadding</code>and<code>cellspacing</code>.
+- <code>`<ul>`</code>and<code>`<ol>`</code>- lists. Use<code>`<li>`</code>with nested inline/block markup as needed.
+- <code>`<table>`</code>- use<code>`<thead>`</code>,<code>`<tbody>`</code>,<code>`<tr>`</code>,<code>`<th>`</code>and<code>`<td>`</code>. The XSD allows common attributes<code>border</code>,<code>cellpadding</code>and<code>cellspacing</code>.
 
 Authoring tips: 2. Prefer short summary lines for<code>`<short_description>`</code>. 4. Place runnable examples inside<code>`<examples>`</code>using<code>`<example_item_data>`</code>and set<code>`runnable="cli"`</code>if applicable or<code>`runnable="false"`</code>(default). 6. Wrap example source in CDATA to avoid escaping (see examples below). 8. Use<code>`<link linkend="{module}name"
           >`</code>for module-qualified references; otherwise use plain names.
 
-<b>Subchapter support</b> — Nelson's help system supports nested subchapters. To add one: 2. Create a subdirectory under your module help XML folder (for example <code>plots</code>). 4. In that directory add a `chapter.xml` file containing at least <code>`<language>`</code> and <code>`<chapter>`</code>, and an optional <code>`<chapter_description>`</code>. 6. Place topic XML files (for example <code>mesh.xml</code>) inside the subdirectory; topic files use the usual elements such as <code>`<keyword>`</code> and <code>`<short_description>`</code>. 8. Link to nested pages using slash-separated paths: same-module links use <code>`<link linkend="plots/mesh"
+<b>Subchapter support</b> - Nelson's help system supports nested subchapters. To add one: 2. Create a subdirectory under your module help XML folder (for example <code>plots</code>). 4. In that directory add a `chapter.xml` file containing at least <code>`<language>`</code> and <code>`<chapter>`</code>, and an optional <code>`<chapter_description>`</code>. 6. Place topic XML files (for example <code>mesh.xml</code>) inside the subdirectory; topic files use the usual elements such as <code>`<keyword>`</code> and <code>`<short_description>`</code>. 8. Link to nested pages using slash-separated paths: same-module links use <code>`<link linkend="plots/mesh"
           >mesh</link>`</code>, cross-module links use <code>`<link linkend="{module}plots/mesh"
           >mesh</link>`</code>.
 
@@ -105,7 +105,7 @@ saveas(gcf(), [tempdir(),'example_plot.svg']);
 
 ## 🔗 See also
 
-[doc](../help_tools/doc.md), [plot (graphics module)](../graphics/plot.md).
+[doc](../help_tools/doc.md), [plot (graphics module)](../graphics/1_plots/1_line_plots/plot.md).
 
 ## 🕔 History
 

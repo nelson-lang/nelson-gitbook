@@ -4,7 +4,7 @@ The Localization module manages language settings and internationalization in Ne
 
 It provides mechanisms to query available languages, determine the current and default language, and change the interface language dynamically.
 
-This module ensures that Nelson can be adapted to different linguistic and regional preferences, supporting a multilingual user experience.
+This module adapts Nelson to linguistic and regional settings and supports multilingual interfaces.
 
 ## Functions
 

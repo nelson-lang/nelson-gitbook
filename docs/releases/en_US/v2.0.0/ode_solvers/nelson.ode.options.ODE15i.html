@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nelson.ode.options.ODE15i</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson.ode.options.ODE15i</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Options object for the ode15i solver.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">options = nelson.ode.options.ODE15i()
+options = nelson.ode.options.ODE15i(name, value)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>nelson.ode.options.ODE15i</b> creates a compatible option class for the <b>'ode15i'</b> solver value used by the <b>ode</b> object workflow.</p>
+    <table style="width:100%">
+  <tr>
+<th>Option group</th>
+<th>Names</th>
+<th>Purpose</th>
+</tr>
+  <tr>
+<td>Steps</td>
+<td>
+<b>InitialStep</b>, <b>MaxStep</b>, <b>MinStep</b>
+</td>
+<td>Bound the adaptive step size selection.</td>
+</tr>
+  <tr>
+<td>Error control</td>
+<td><b>NormControl</b></td>
+<td>Switch between componentwise and norm based error control.</td>
+</tr>
+  <tr>
+<td>Method</td>
+<td><b>MaxOrder</b></td>
+<td>Bound the order of the backward differentiation formulas.</td>
+</tr>
+  <tr>
+<td>Consistent initials</td>
+<td><b>ComputeConsistentInitialConditions</b></td>
+<td>Request consistent <b>y0</b> and <b>yp0</b> before integration.</td>
+</tr>
+  <tr>
+<td>Evaluation</td>
+<td><b>Vectorization</b></td>
+<td>Declare vectorization of the residual function with respect to <b>y</b> and <b>yp</b>.</td>
+</tr>
+  <tr>
+<td>Output</td>
+<td>
+<b>OutputFcn</b>, <b>OutputSelection</b>
+</td>
+<td>Select output callbacks and returned components.</td>
+</tr>
+</table>
+    <p>The <b>'ode15i'</b> solver value uses a variable order implicit method for fully implicit residual problems <b>F(t,y,yp)=0</b>, including stiff differential algebraic equations.</p>
+    <p>Supported properties are <b>InitialStep</b>, <b>MaxStep</b>, <b>MinStep</b>, <b>NormControl</b>, <b>OutputFcn</b>, <b>OutputSelection</b>, <b>Vectorization</b>, <b>MaxOrder</b>, and <b>ComputeConsistentInitialConditions</b>. <b>InitialStep</b>, <b>MaxStep</b>, and <b>MinStep</b> are positive scalars bounding the adaptive step size; their default value is empty, which lets the solver choose them automatically. <b>NormControl</b> accepts <b>'on'</b> or <b>'off'</b> (default <b>'off'</b>) and enables error control based on the norm of the solution instead of componentwise control. <b>Vectorization</b> is a two-element cell array such as {<b>'off'</b>, <b>'off'</b>} (the default) declaring vectorization of the residual function with respect to <b>y</b> and <b>yp</b>; a single <b>'on'</b> or <b>'off'</b> value applies to both arguments. <b>MaxOrder</b> is an integer between 1 and 5 (default 5) bounding the order of the formulas. <b>ComputeConsistentInitialConditions</b> is a logical scalar (default <b>true</b>); when enabled, the solver adjusts the initial value and initial slope so that the residual is consistent at the initial time. <b>OutputFcn</b> is a function handle called on each output point (default empty). <b>OutputSelection</b> is a vector of indices selecting which solution components are passed to the output function (default empty, all components). The default <b>Refine</b> value for this solver is 1.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Create a fully implicit residual problem solved with ode15i options.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">options = nelson.ode.options.ODE15i('MaxOrder', 4);
+problem = ode('EquationType', 'fullyimplicit', ...
+  'ODEFcn', @(t,y,yp) yp + y, ...
+  'InitialValue', 1, ...
+  'InitialSlope', -1, ...
+  'SolverOptions', options);
+result = solve(problem, 0, 1)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../ode_solvers/ode.html">ode</a><a class="see-also-link" href="../ode_solvers/ode15i.html">ode15i</a><a class="see-also-link" href="../ode_solvers/nelson.ode.options.ODE15s.html">nelson.ode.options.ODE15s</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

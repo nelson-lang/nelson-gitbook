@@ -16,11 +16,13 @@ Ce module permet des opérations sur le système de fichiers efficaces et multi-
 - [filesep](filesep.md) - Renvoie le caractère séparateur de fichiers pour la plateforme courante.
 - [fullfile](fullfile.md) - Construit un nom de fichier complet à partir de ses parties.
 - [fullpath](fullpath.md) - Renvoie le chemin absolu canonique.
+- [genpath](genpath.md) - Genere une chaine de chemin recursive.
 - [isdir](isdir.md) - Retourne vrai si l'argument est un répertoire.
 - [isfile](isfile.md) - Retourne vrai si l'argument est un fichier.
 - [isfolder](isfolder.md) - Retourne vrai si l'argument est un répertoire.
 - [ls](ls.md) - Liste le contenu d'un répertoire.
 - [mkdir](mkdir.md) - Crée un nouveau répertoire.
+- [movefile](movefile.md) - Deplace un fichier ou un dossier.
 - [pathsep](pathsep.md) - Renvoie le caractère séparateur de chemins pour la plateforme courante.
 - [pwd](pwd.md) - Renvoie le répertoire courant.
 - [relativepath](relativepath.md) - Renvoie le chemin relatif d'un chemin actuel vers un chemin cible.

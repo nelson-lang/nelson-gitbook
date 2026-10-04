@@ -1,6 +1,6 @@
 # exist
 
-Vérifie l'existence d'une variable, fonction ou fichier.
+Verifie l'existence d'une variable, fonction ou fichier.
 
 ## 📝 Syntaxe
 
@@ -9,8 +9,8 @@ Vérifie l'existence d'une variable, fonction ou fichier.
 
 ## 📥 Argument d'entrée
 
-- name - chaîne : nom de l'entité à tester
-- type - chaîne : type recherché (optionnel)
+- name - chaine : nom de l'entite a tester
+- type - chaine : type recherche (optionnel) : 'var', 'builtin', 'file', 'dir' ou 'class'
 
 ## 📤 Argument de sortie
 
@@ -18,7 +18,9 @@ Vérifie l'existence d'une variable, fonction ou fichier.
 
 ## 📄 Description
 
-Vérifie si une entité (variable, fonction, fichier, dossier, etc.) existe et retourne un code indiquant son type.
+Verifie si une entite (variable, fonction, fichier, dossier, classe, etc.) existe et retourne un code indiquant son type.
+
+<b>8</b> indique une classe.
 
 ## 💡 Exemple
 

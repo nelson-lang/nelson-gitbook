@@ -16,6 +16,10 @@ The garbage collector will attempt to reclaim memory by locating and disposing o
 qml_collectgarbage()
 ```
 
+## 🔗 See also
+
+[qml_clearcomponentcache](../qml_engine/qml_clearcomponentcache.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

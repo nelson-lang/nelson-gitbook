@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>odeSensitivity</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">odeSensitivity</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Sensitivity definition object for ODE workflows.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">S = odeSensitivity()
+S = odeSensitivity(name, value)
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p>
+      <b>odeSensitivity</b> stores sensitivity settings for the <b>ode</b> object workflow. Nelson solves direct forward sensitivities for explicit and fully implicit problems with a numeric parameter vector.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Object</th>
+        <th>Purpose</th>
+        <th>Used by</th>
+      </tr>
+      <tr>
+        <td><b>odeSensitivity</b></td>
+        <td>Stores a reusable definition for the <b>ode</b> object workflow.</td>
+        <td>The matching <b>ode</b> property and <b>solve</b>.</td>
+      </tr>
+      <tr>
+        <td>Validation</td>
+        <td>Checks supported names and shapes at construction time.</td>
+        <td>Tests and errors stay explicit before integration.</td>
+      </tr>
+    </table>
+    <p>When the optional SUNDIALS backend is available, <b>cvodesnonstiff</b>, <b>cvodesstiff</b>, and <b>idas</b> use native direct forward sensitivity support for problems without event callbacks. <b>cvodesnonstiff</b>, <b>cvodesstiff</b>, and <b>idas</b> also support adjoint gradients for scalar final objectives and optional scalar integral objectives.</p>
+    <p>The direct <b>Sensitivity</b> result is an array with dimensions state-by-parameter-by-time. Event locations without callbacks also populate <b>EventSensitivity</b>. The adjoint result is <b>AdjointGradient</b>, a row vector ordered like <b>ParameterIndices</b>. Output functions receive the physical state only. Mass matrices, nonnegative state constraints, and delayed equations are supported for explicit direct sensitivities. Event callbacks, separated complex parts, delayed output functions, and delayed adjoints are not supported yet.</p>
+    <p>
+      <b>Method</b> defaults to <b>direct</b>. The value <b>forward</b> is accepted as an alias for <b>direct</b>. With <b>Method</b> set to <b>adjoint</b>, provide <b>ObjectiveFcn</b>, <b>QuadratureFcn</b>, or both. These functions are called as <b>f(t,y,p)</b> and must return a real scalar. <b>ObjectiveTime</b> is reserved for final-time objectives and must match the solve final time when provided. <b>AdjointRelativeTolerance</b> and <b>AdjointAbsoluteTolerance</b> override the backward problem tolerances.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = ode('ODEFcn', @(t,y,p) p(1) * y, ...
+  'InitialValue', 1, ...
+  'Parameters', 2, ...
+  'Sensitivity', odeSensitivity('ParameterIndices', 1));
+R = solve(F, 0, 0.2);
+Sfinal = R.Sensitivity(1, 1, length(R.Time))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = ode('ODEFcn', @(t,y,p) p(1), ...
+  'InitialValue', 0, ...
+  'Parameters', 2, ...
+  'Sensitivity', odeSensitivity(), ...
+  'EventDefinition', odeEvent('EventFcn', @(t,y) y - 0.5, 'Response', 'stop'));
+R = solve(F, 0, 1);
+R.EventSensitivity(1, 1, 1)</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = ode('EquationType', 'fullyimplicit', ...
+  'ODEFcn', @(t,y,yp,p) yp + p(1) * y, ...
+  'InitialValue', 1, ...
+  'InitialSlope', -2, ...
+  'Parameters', 2, ...
+  'Sensitivity', odeSensitivity());
+R = solve(F, 0, 0.2);
+Sfinal = R.Sensitivity(1, 1, length(R.Time))</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+<div class="example"><div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">F = ode('ODEFcn', @(t,y,p) p(1) * y, ...
+  'InitialValue', 1, ...
+  'Parameters', 2, ...
+  'Sensitivity', odeSensitivity('Method', 'adjoint', ...
+    'ObjectiveFcn', @(t,y,p) y(1)), ...
+  'Solver', 'cvodesnonstiff');
+R = solve(F, 0, 0.5);
+R.AdjointGradient</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div></div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🔗</span>See Also</div>
+<div>
+<a class="see-also-link" href="../ode_solvers/ode.html">ode</a><a class="see-also-link" href="../ode_solvers/odeJacobian.html">odeJacobian</a>
+</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

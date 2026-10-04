@@ -5,53 +5,48 @@ Creates a message dialog box.
 ## 📝 Syntax
 
 - h = msgbox(message)
-- h = msgbox(message, mode)
 - h = msgbox(message, title)
-- h = msgbox(message, title, mode)
 - h = msgbox(message, title, icon)
 - h = msgbox(message, title, icon, mode)
+- h = msgbox(message, mode)
 
 ## 📥 Input argument
 
-- message - a string or a cell of string: the message to display.
-- title - a string: the title of the dialog box.
-- icon - a string: 'none', 'error', 'help', 'warn' or 'question'.
-- mode - a string: 'modal', 'on' or 'nonmodal'.
+- message - Message text. Use a character vector, string array, or cell array of character vectors for multiple lines.
 
 ## 📤 Output argument
 
-- h - a QObject handle.
+- h - Graphics figure handle.
 
 ## 📄 Description
 
-<b>msgbox</b> creates an message dialog box.
-
-<b>h = msgbox(message, title, 'on')</b> specifies whether to replace an existing dialog box having the same name.
+msgbox creates a message dialog and returns a graphics figure handle. The handle can be used with get, set, close, delete, and waitfor.
 
 ## 💡 Examples
 
-```matlab
-h = msgbox('help string')
-```
+Create a message box.
 
 ```matlab
-h = msgbox('help string', 'dialog title')
+h = msgbox({'Operation', 'completed'}, 'Status', 'help', 'non-modal');
 ```
 
+<img src="msgbox_example.svg" align="middle"/>
+Create a plain message box.
+
 ```matlab
-h = msgbox('help string', 'dialog title')
-h = msgbox('help string', 'dialog title', 'on')
+h = msgbox('Ready.', 'Status', 'none', 'non-modal');
+close(h)
 ```
 
 ## 🔗 See also
 
-[helpdlg](../gui/helpdlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md), [warndlg](../gui/warndlg.md).
+[helpdlg](../gui/helpdlg.md), [warndlg](../gui/warndlg.md), [errordlg](../gui/errordlg.md), [questdlg](../gui/questdlg.md).
 
 ## 🕔 History
 
-| Version | 📄 Description  |
-| ------- | --------------- |
-| 1.0.0   | initial version |
+| Version | 📄 Description           |
+| ------- | ------------------------ |
+| 2.0.0   | Updated dialog API help. |
 
 <!--
 ## 👤 Author

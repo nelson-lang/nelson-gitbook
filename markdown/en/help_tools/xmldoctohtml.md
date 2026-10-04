@@ -22,6 +22,8 @@ Converts xml Nelson help files to html.
 
 <b>xmldoctohelp</b> converts xml Nelson help files to html.
 
+Links declared with the link element in chapter_description are retained in the generated chapter summary. A linkend such as guide or nested/guide is relative to the module root; ${module}guide and {module}guide select a module explicitly. Targets are XML page paths without the extension.
+
 ## 🔗 See also
 
 [xmldocbuild](../help_tools/xmldocbuild.md), [buildhelp](../help_tools/buildhelp.md), [buildhelpweb](../help_tools/buildhelpweb.md).

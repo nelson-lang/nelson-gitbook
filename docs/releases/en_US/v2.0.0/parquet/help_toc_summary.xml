@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_summary>
+  <toc>
+    <module>parquet</module>
+    <section name="Parquet">
+      <chapter_description>
+    <p>The Parquet module provides local file support for Apache Parquet data sets.</p>
+    <p>It reads and writes column-oriented tables, exposes file metadata, and provides datastore and row-filter helpers for workflows that process one or more Parquet files.</p>
+    <p>Supported table variables include logical values, integer types, single and double precision floating point values, text, datetime values, duration values, nested tables stored as struct columns, and homogeneous primitive cell vectors stored as list columns.</p>
+  </chapter_description>
+      <keyword name="nelson.io.datastore.ParquetDatastore" link="class_ParquetDatastore.html" description="Datastore object for Parquet files."/>
+      <keyword name="nelson.io.parquet.ParquetInfo" link="class_ParquetInfo.html" description="Metadata object returned by parquetinfo."/>
+      <keyword name="nelson.io.RowFilter" link="class_RowFilter.html" description="Object that stores a row filter expression."/>
+      <keyword name="parquetDatastore" link="parquetDatastore.html" description="Create a datastore for one or more Parquet files."/>
+      <keyword name="parquetinfo" link="parquetinfo.html" description="Return metadata for a Parquet file."/>
+      <keyword name="parquetread" link="parquetread.html" description="Read table data from a Parquet file."/>
+      <keyword name="parquetwrite" link="parquetwrite.html" description="Write a table to a Parquet file."/>
+      <keyword name="rowfilter" link="rowfilter.html" description="Create a row filter expression."/>
+    </section>
+  </toc>
+</help_summary>

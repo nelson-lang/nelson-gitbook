@@ -2,4 +2,3 @@
   - [débogage](debugging_workflow.md)
   - [edit](edit.md)
   - [editor](editor.md)
-  - [smartindent](smartindent.md)

@@ -20,8 +20,6 @@ Renvoie la valeur d'une constante Qt.
 
 <b>v = qt_constant(constant_name)</b> renvoie la valeur d'une constante Qt.
 
-La famille Qt 5 permet d'obtenir facilement une constante avec qml_evaluatestring(constant_name), mais ce mécanisme n'est plus disponible avec Qt 6.
-
 ## 💡 Exemple
 
 ```matlab

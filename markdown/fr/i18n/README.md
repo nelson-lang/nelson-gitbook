@@ -2,7 +2,7 @@
 
 Le module i18n fournit des outils pour l'internationalisation et la localisation du texte dans Nelson.
 
-Il permet d'obtenir les chaînes traduites pour la locale courante, prend en charge des utilitaires pour gérer les flux de travail de traduction et facilite la génération d'en-têtes de fichiers de traduction.
+Il obtient les chaînes traduites pour la locale courante, fournit des utilitaires pour les flux de travail de traduction et génère des en-têtes de fichiers de traduction.
 
 Ce module aide les développeurs à créer des logiciels pouvant s'adapter dynamiquement à plusieurs langues et contextes culturels.
 

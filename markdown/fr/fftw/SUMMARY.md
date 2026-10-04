@@ -7,5 +7,6 @@
   - [fftshift](fftshift.md)
   - [fftw](fftw.md)
   - [ifft](ifft.md)
+  - [ifft2](ifft2.md)
   - [ifftn](ifftn.md)
   - [ifftshift](ifftshift.md)

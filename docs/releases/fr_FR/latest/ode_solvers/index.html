@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="nelson_common.css">
+<style>
+          @media (prefers-color-scheme: dark) {
+            .chapter-desc { color: #FFF !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+          @media (prefers-color-scheme: light) {
+            .chapter-desc { color: #444 !important; }
+            .chapter-desc p { color: inherit !important; }
+          }
+        </style>
+</head>
+<body>
+<img src="banner_nelson_small.png" alt="Nelson banner" style="display:block;margin:16px auto;max-width:50%;height:auto;" onerror="this.style.display='none';"><a href="../summary.html" style="position:fixed;top:18px;right:18px;z-index:1000;text-decoration:none;"><button style="background:#1976d2;color:#fff;border:none;padding:8px 14px;font-size:1.3em;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:background 0.2s;display:flex;align-items:center;justify-content:center;width:44px;height:44px;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="section">
+<div class="section-title">Resolution d'EDO</div>
+<div class="chapter-desc" style="font-size:0.97em;margin-bottom:10px;margin-left:24px;">
+    <p>Le module ODE Solvers fournit des fonctions d'integration en temps pour les problemes differentiels explicites, raides et implicites dans Nelson.</p>
+    <p>Il inclut les points d'entree des solveurs, les wrappers pour equations a retard et problemes aux limites, la gestion des options, l'interpolation, l'extension des solutions, la detection d'evenements et les definitions de problemes orientees objet.</p>
+    <p>Quand le backend optionnel SUNDIALS est construit, le workflow objet peut aussi selectionner des valeurs de solveur CVODES et IDAS.</p>
+    <p>Le module vise les experiences numeriques, les simulations et les exemples pedagogiques qui demandent une configuration compacte et des objets de resultats reproductibles.</p>
+    <p>Les tutoriels couvrent le choix du solveur, les evenements, les tolerances, les matrices de masse, les equations implicites, les equations a retard, les problemes aux limites, l'interpolation, l'extension, les workflows objet et les etats complexes.</p>
+    <table style="width:100%">
+      <tr>
+        <th>Domaine</th>
+        <th>Entrees principales</th>
+      </tr>
+      <tr>
+        <td>Problemes a valeur initiale</td>
+        <td>
+          <b>ode23</b>, <b>ode45</b>, <b>ode78</b>, <b>ode89</b>, <b>ode113</b>, <b>ode15s</b>, <b>ode15i</b>
+</td>
+      </tr>
+      <tr>
+        <td>Equations a retard et problemes aux limites</td>
+        <td>
+          <b>dde23</b>, <b>ddesd</b>, <b>ddensd</b>, <b>bvp4c</b>, <b>bvp5c</b>
+</td>
+      </tr>
+      <tr>
+        <td>Utilitaires</td>
+        <td>
+          <b>odeset</b>, <b>deval</b>, <b>odextend</b>, <b>ode</b>, <b>odeEvent</b>, <b>odeSensitivity</b>
+</td>
+      </tr>
+    </table>
+  </div>
+<ul class="toc-list">
+<li class="toc-entry">
+<a class="toc-link" href="1_ode_workflows.html" target="contentFrame">workflows EDO</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Exemples EDO et interface objet.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="2_ode_solver_selection.html" target="contentFrame">choix solveur EDO</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Choisir un solveur EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="3_ode_events_tutorial.html" target="contentFrame">tutoriel evenements edo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Localiser des evenements pendant une integration EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="4_ode_tolerances_tutorial.html" target="contentFrame">tutoriel tolerances edo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Controler la precision et les statistiques EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="5_ode_mass_implicit_tutorial.html" target="contentFrame">tutoriel masse implicite edo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resoudre des problemes EDO avec matrice de masse ou forme implicite.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="6_ode_interpolation_extension_tutorial.html" target="contentFrame">tutoriel interpolation extension edo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interpoler et prolonger des solutions EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="7_ode_object_workflow_tutorial.html" target="contentFrame">tutoriel objet edo</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Definir et resoudre des problemes EDO avec des objets.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="8_ode_complex_workflow_tutorial.html" target="contentFrame">tutoriel edo complexe</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resoudre des problemes EDO objet avec des etats complexes.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bvp4c.html" target="contentFrame">bvp4c</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resout des problemes aux limites par collocation d'ordre quatre.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bvp5c.html" target="contentFrame">bvp5c</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resout des problemes aux limites avec raffinement de maillage.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bvpget.html" target="contentFrame">bvpget</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Recupere une option BVP.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bvpinit.html" target="contentFrame">bvpinit</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree une estimation initiale BVP.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bvpset.html" target="contentFrame">bvpset</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree ou met a jour des options BVP.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="bvpxtend.html" target="contentFrame">bvpxtend</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Etend une estimation de solution BVP.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="dde23.html" target="contentFrame">dde23</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resout des equations a retard constant.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ddeget.html" target="contentFrame">ddeget</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Recupere une option DDE.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ddensd.html" target="contentFrame">ddensd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resout des equations a retard neutres.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ddesd.html" target="contentFrame">ddesd</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Resout des equations a temps retardes dependants de l'etat.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ddeset.html" target="contentFrame">ddeset</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Cree ou met a jour des options DDE.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="decic.html" target="contentFrame">decic</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Calcule des conditions initiales coherentes pour les EDO implicites.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="deval.html" target="contentFrame">deval</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Evaluer une solution EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.ODEResults.html" target="contentFrame">nelson.ode.ODEResults</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet resultat retourne par solve sur un objet ode.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.Options.html" target="contentFrame">nelson.ode.Options</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Classe de base des classes d'options de solveur.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.CVODESNonstiff.html" target="contentFrame">nelson.ode.options.CVODESNonstiff</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur CVODES Adams optionnel.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.CVODESStiff.html" target="contentFrame">nelson.ode.options.CVODESStiff</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur CVODES BDF optionnel.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.IDAS.html" target="contentFrame">nelson.ode.options.IDAS</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur IDAS BDF optionnel.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE113.html" target="contentFrame">nelson.ode.options.ODE113</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode113.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE15i.html" target="contentFrame">nelson.ode.options.ODE15i</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode15i.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE15s.html" target="contentFrame">nelson.ode.options.ODE15s</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode15s.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE23.html" target="contentFrame">nelson.ode.options.ODE23</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode23.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE23s.html" target="contentFrame">nelson.ode.options.ODE23s</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode23s.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE23t.html" target="contentFrame">nelson.ode.options.ODE23t</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode23t.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE23tb.html" target="contentFrame">nelson.ode.options.ODE23tb</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode23tb.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE45.html" target="contentFrame">nelson.ode.options.ODE45</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode45.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE78.html" target="contentFrame">nelson.ode.options.ODE78</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode78.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="nelson.ode.options.ODE89.html" target="contentFrame">nelson.ode.options.ODE89</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet d'options pour le solveur ode89.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode.html" target="contentFrame">ode</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Interface objet pour problemes EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode113.html" target="contentFrame">ode113</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Entree de solveur EDO non raide a ordre variable.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode15i.html" target="contentFrame">ode15i</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Entree de solveur EDO implicite.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode15s.html" target="contentFrame">ode15s</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Entree de solveur EDO raide.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode23.html" target="contentFrame">ode23</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Solveur EDO non raide bas ordre.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode23s.html" target="contentFrame">ode23s</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Entree de solveur EDO raide.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode23t.html" target="contentFrame">ode23t</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Entree de solveur EDO moderement raide.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode23tb.html" target="contentFrame">ode23tb</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Entree de solveur EDO raide.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode45.html" target="contentFrame">ode45</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Solveur EDO non raide.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode78.html" target="contentFrame">ode78</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Solveur EDO non raide haut ordre.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="ode89.html" target="contentFrame">ode89</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Solveur EDO non raide haut ordre.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeDelay.html" target="contentFrame">odeDelay</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet de definition des delais pour les workflows EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeEvent.html" target="contentFrame">odeEvent</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Description d'evenement pour le flux objet EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeJacobian.html" target="contentFrame">odeJacobian</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Description de jacobien pour solveurs EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeMassMatrix.html" target="contentFrame">odeMassMatrix</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Description de matrice de masse pour solveurs EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeSensitivity.html" target="contentFrame">odeSensitivity</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Objet de definition des sensibilites pour les workflows EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeexamples.html" target="contentFrame">odeexamples</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Point d'entree des exemples EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeget.html" target="contentFrame">odeget</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Lire une option EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odephas2.html" target="contentFrame">odephas2</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction de sortie EDO pour portrait de phase 2D.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odephas3.html" target="contentFrame">odephas3</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction de sortie EDO pour portrait de phase 3D.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeplot.html" target="contentFrame">odeplot</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction de sortie EDO pour le trace de solution.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeprint.html" target="contentFrame">odeprint</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Fonction de sortie EDO pour la console.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odeset.html" target="contentFrame">odeset</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Creer ou modifier des options EDO.</div>
+</li>
+<li class="toc-entry">
+<a class="toc-link" href="odextend.html" target="contentFrame">odextend</a><div class="keyword-desc" style="font-size:0.92em; color:#888; margin-left:18px; margin-top:2px;">Prolonger une solution EDO.</div>
+</li>
+</ul>
+</div>
+</body>
+</html>

@@ -112,6 +112,10 @@ M = 3; P = 0;
 
 ```
 
+## 🔗 See also
+
+[slicot_ab08nd](../slicot/slicot_ab08nd.md), [slicot_sb10jd](../slicot/slicot_sb10jd.md), [tzero](../control_system/tzero.md).
+
 ## 🕔 History
 
 | Version | 📄 Description  |

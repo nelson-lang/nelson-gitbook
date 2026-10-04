@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns:ext="http://io.github.nelson_lang/ext" lang="en">
+<head>
+<meta charset="UTF-8">
+<title>nelson-lsp</title>
+<link rel="stylesheet" href="highlight.css">
+<link rel="stylesheet" href="nelson_common.css">
+<script src="nelson_help.js"></script><style>
+                @media (prefers-color-scheme: dark) {
+                    /* target both class names used in different XSLT outputs */
+                    .chapter-description, .chapter-desc { color: #e6eef8 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+                @media (prefers-color-scheme: light) {
+                    .chapter-description, .chapter-desc { color: #444 !important; }
+                    .chapter-description p, .chapter-desc p { color: inherit !important; }
+                }
+            </style>
+</head>
+<body>
+<a href="index.html" class="home-summary-link"><button class="home-summary-btn" aria-label="Back to help index"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12L12 3l9 9"></path><path d="M9 21V12h6v9"></path><path d="M9 21h6"></path></svg></button></a><div class="header"><div class="title"><span class="keyword-title">nelson-lsp</span></div></div>
+<div class="section syntax-section"><div class="subtitle">Language Server Protocol endpoint for Nelson code diagnostics.</div></div>
+<div class="section syntax-section">
+<div class="section-title">
+<span class="syntax-icon">📝</span>Syntax</div>
+<pre class="syntax-block"><code class="language-matlab">nelson-lsp
+</code></pre>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">📄</span>Description</div>
+<div>
+    <p><b>nelson-lsp</b> is a JSON-RPC Language Server Protocol endpoint over standard input and standard output.</p>
+    <p>The executable is intended to be started by an editor or IDE. It does not open a prompt and it does not read command line source files. The client sends Language Server Protocol messages on stdin using the standard <b>Content-Length</b> header, and the server writes JSON-RPC responses and notifications on stdout.</p>
+    <p>The server keeps a lightweight document and workspace model. Open documents are indexed with their current text, version, diagnostics, symbols, local functions, classes, imports, and local variables. Workspace roots are indexed independently; each root keeps the discovered <b>.m</b> files, public functions, local functions, classes, module paths, and a cache invalidated by file time, content hash, and lint configuration.</p>
+    <p>The server publishes diagnostics from the Nelson code analyzer for opened buffers. Diagnostics use <b>nelson-lint</b> as their source and expose the analyzer rule identifier, severity, message, range, stable <b>data</b> for later code actions, <b>codeDescription</b> help links, <b>relatedInformation</b>, and LSP tags for unused or obsolete items when applicable.</p>
+    <p>Editors that use pull diagnostics can call <b>textDocument/diagnostic</b> for a single document or <b>workspace/diagnostic</b> for all files under the initialized workspace roots. Workspace diagnostics reuse the analyzer recursive scan, honor the shared include and exclude configuration, and support partial progress notifications.</p>
+    <p>Quick fixes are returned through <b>textDocument/codeAction</b>. If a diagnostic carries safe text edits, the server returns a <b>quickfix</b> action that applies those edits. For every non-suppressed diagnostic, the server also proposes a local suppression action that appends <b>%#ok&lt;ID&gt;</b> on the diagnostic line and a file suppression action at the top of the file.</p>
+    <p>Source actions include <b>source.fixAll.nelson-lint</b> for all safe lint fixes in a document, <b>source.organizeImports</b> for import cleanup, and <b>source.nelson.generateHelpSkeleton</b> for generating a help skeleton command. Some diagnostics can also propose richer quick fixes, such as creating a missing function file or adding a local function stub.</p>
+    <p>Formatting is exposed through <b>textDocument/formatting</b>, <b>textDocument/rangeFormatting</b>, and <b>textDocument/onTypeFormatting</b>. The server uses the same Nelson formatter core as <b>nelson-format</b> and returns text edits suitable for format-on-save and editor-triggered formatting.</p>
+    <p>The navigation and editing surface supports <b>textDocument/hover</b>, <b>textDocument/completion</b>, <b>completionItem/resolve</b>, <b>textDocument/signatureHelp</b>, <b>textDocument/definition</b>, <b>textDocument/declaration</b>, <b>textDocument/implementation</b>, <b>textDocument/references</b>, <b>textDocument/documentHighlight</b>, <b>textDocument/prepareRename</b>, and <b>textDocument/rename</b>. Rename is intentionally limited to local edits in the current document.</p>
+    <p>Completion items cover Nelson keywords, snippets, local variables, local functions, workspace functions, classes, and known module paths. Hover requests return analyzer rule information when the cursor is on a diagnostic, or symbol information when the cursor is on a known local or workspace symbol.</p>
+    <p>The structural IDE surface supports <b>textDocument/documentSymbol</b>, <b>workspace/symbol</b>, <b>textDocument/foldingRange</b>, <b>textDocument/selectionRange</b>, <b>textDocument/semanticTokens/full</b>, <b>textDocument/codeLens</b>, and <b>textDocument/documentLink</b>. Semantic tokens identify keywords, functions, variables, classes, properties, methods, strings, and comments.</p>
+    <p>Code lenses expose prepared actions to run the current file, run the module tests, and inspect the current document issue count. Document links are returned for file-like paths found in source text.</p>
+    <p>The <b>workspace/executeCommand</b> provider accepts <b>nelson.runFile</b>, <b>nelson.runSelection</b>, <b>nelson.runTestsForModule</b>, <b>nelson.openHelp</b>, <b>nelson.lintWorkspace</b>, <b>nelson.clearLspCache</b>, and <b>nelson.createFunctionFile</b>. Commands return structured data for the client to execute or display; the server does not edit files unless the client explicitly applies a returned workspace edit or command result.</p>
+    <p>The current protocol surface supports <b>initialize</b>, <b>shutdown</b>, <b>exit</b>, <b>$/cancelRequest</b>, <b>workspace/didChangeConfiguration</b>, <b>workspace/didChangeWorkspaceFolders</b>, <b>workspace/executeCommand</b>, <b>workspace/symbol</b>, <b>textDocument/didOpen</b>, <b>textDocument/didChange</b>, <b>textDocument/didSave</b>, <b>textDocument/didClose</b>, <b>textDocument/willSaveWaitUntil</b>, <b>textDocument/diagnostic</b>, <b>workspace/diagnostic</b>, <b>textDocument/formatting</b>, <b>textDocument/rangeFormatting</b>, <b>textDocument/onTypeFormatting</b>, <b>textDocument/codeAction</b>, <b>codeAction/resolve</b>, <b>textDocument/hover</b>, <b>textDocument/completion</b>, <b>completionItem/resolve</b>, <b>textDocument/signatureHelp</b>, <b>textDocument/definition</b>, <b>textDocument/declaration</b>, <b>textDocument/implementation</b>, <b>textDocument/references</b>, <b>textDocument/documentHighlight</b>, <b>textDocument/prepareRename</b>, <b>textDocument/rename</b>, <b>textDocument/documentSymbol</b>, <b>textDocument/foldingRange</b>, <b>textDocument/selectionRange</b>, <b>textDocument/semanticTokens/full</b>, <b>textDocument/codeLens</b>, and <b>textDocument/documentLink</b>.</p>
+    <p>The <b>initialize</b> response advertises incremental text synchronization, open and close notifications, pull diagnostics, workspace diagnostics, document formatting, range formatting, on-type formatting, code actions with resolve support, hover information, completion with resolve support, signature help, definition navigation, declaration navigation, implementation navigation, references, document highlights, prepare-rename support, document symbols, workspace symbols, folding ranges, selection ranges, semantic tokens, code lenses, document links, execute commands, workspace folders, and save notifications. <b>textDocument/didChange</b> accepts both full-document changes and ranged incremental patches in the order sent by the client.</p>
+    <p>When a client sends document versions, diagnostics published for open documents include the same version. Workspace diagnostics use <b>null</b> as the version for files analyzed from disk and the current version for open buffers.</p>
+    <p>Workspace diagnostics support <b>partialResultToken</b>. When the token is present, the server sends the diagnostic items through a <b>$/progress</b> partial-result notification and returns an empty final item list for that request.</p>
+    <p>Hover requests over an active diagnostic return Markdown with the analyzer rule identifier, rule name, severity, category, fixability, short description, diagnostic message, and help link when available.</p>
+    <p>File URIs using the <b>file:///</b> scheme are mapped to local paths before analysis. Other URI schemes are analyzed as an in-memory buffer named <b>buffer.m</b>.</p>
+    <p>Configuration is shared with the code analyzer. When a workspace contains a Nelson lint configuration file, the diagnostics follow the same rule severities and thresholds as <b>checkcode</b>, <b>codeIssues</b>, and <b>nelson-lint</b>.</p>
+    <p>Editors can also send <b>workspace/didChangeConfiguration</b>. The server accepts lint settings under <b>settings.nelson.lint</b>, <b>settings.nelsonLint</b>, <b>settings.nelson-lint</b>, or a top-level object containing <b>rules</b> or <b>files</b>. Supported fields match the lint configuration shape for <b>rules</b>, <b>files.include</b>, and <b>files.exclude</b>; these settings are applied over the workspace configuration for future diagnostics and open buffers are refreshed.</p>
+    <p>Cancellation follows the Language Server Protocol <b>$/cancelRequest</b> notification. If a queued request is cancelled before it is handled, the server returns a JSON-RPC error with code <b>-32800</b>.</p>
+  </div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">💡</span>Examples</div>
+<div class="example">
+<div class="example-title">Start the server from an editor client.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">nelson-lsp</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Typical editor command configuration.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "command": "nelson-lsp",
+  "args": [],
+  "transport": "stdio",
+  "filetypes": ["nelson", "m"]
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Minimal initialize request body sent after the Content-Length header.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "initialize",
+  "params": {
+    "processId": null,
+    "rootUri": "file:///C:/work/project",
+    "capabilities": {}
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Open a document and receive diagnostics.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/work/project/example.m",
+      "languageId": "nelson",
+      "version": 1,
+      "text": "function y = example(x)\ny = x + 1;\nend\n"
+    }
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Request quick fixes and suppressions for the current buffer.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "method": "textDocument/codeAction",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/work/project/example.m"
+    },
+    "range": {
+      "start": { "line": 0, "character": 0 },
+      "end": { "line": 0, "character": 0 }
+    },
+    "context": {
+      "diagnostics": []
+    }
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Apply an incremental change with a text range.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/work/project/example.m",
+      "version": 2
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": { "line": 1, "character": 5 },
+          "end": { "line": 1, "character": 5 }
+        },
+        "text": " + 1"
+      }
+    ]
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Request format-on-save edits.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "method": "textDocument/willSaveWaitUntil",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/work/project/example.m"
+    },
+    "reason": 1
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Update lint settings from an editor.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "method": "workspace/didChangeConfiguration",
+  "params": {
+    "settings": {
+      "nelson": {
+        "lint": {
+          "rules": {
+            "NLS0010": { "level": "allow" }
+          }
+        }
+      }
+    }
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Request workspace diagnostics after initialize.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "method": "workspace/diagnostic",
+  "params": {
+    "previousResultIds": []
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Request completion items at the current cursor position.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "id": 5,
+  "method": "textDocument/completion",
+  "params": {
+    "textDocument": {
+      "uri": "file:///C:/work/project/example.m"
+    },
+    "position": { "line": 1, "character": 4 }
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+<div class="example">
+<div class="example-title">Request a prepared command through the LSP command provider.</div>
+<div style="display:flex;align-items:flex-start;gap:8px;">
+<pre class="syntax-block" style="flex:1 1 auto;margin:0;"><code class="language-matlab">{
+  "jsonrpc": "2.0",
+  "id": 6,
+  "method": "workspace/executeCommand",
+  "params": {
+    "command": "nelson.runFile",
+    "arguments": ["file:///C:/work/project/example.m"]
+  }
+}</code></pre>
+<button class="copy-btn" type="button" onclick="copyExample(this)" title="Copy"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" style="display:block;"><rect x="7" y="3" width="10" height="14" rx="2" fill="white" fill-opacity="0.15" stroke="white" stroke-width="1.2"></rect><rect x="3" y="7" width="10" height="10" rx="2" fill="currentColor"></rect></svg></button>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Used Functions</div>
+<div>checkcode, codeIssues, nelson-lint, nelson-format</div>
+</div>
+<div class="section">
+<div class="section-title">
+<span class="syntax-icon">🕔</span>Version History</div>
+<table class="param-table">
+<tr>
+<th>Version</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="version">2.0.0</td>
+<td>initial version</td>
+</tr>
+</table>
+</div>
+<!--Author: Allan CORNET--><div class="section" style="margin-top:40px; text-align:center;">
+<a id="github-edit-link" class="github-edit-btn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg><span id="github-edit-text">Edit this page on GitHub</span></a><style>
+                    .github-edit-btn { display:inline-flex; align-items:center; gap:6px; font-size:14px; padding:6px 12px; border:1px solid #ddd; border-radius:4px; background:#f5f5f5; color:#333; text-decoration:none; transition:all 0.2s ease; }
+                    .github-edit-btn:hover { background:#e9e9e9; border-color:#ccc; color:#000; }
+                </style>
+</div>
+</body>
+</html>

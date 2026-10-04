@@ -7,6 +7,8 @@ Copy files or folder.
 - copyfile(source, destination)
 - [status, msg] = copyfile(source, destination)
 - [status, msg] = copyfile(source, destination, 'f')
+- [status, msg, msgID] = copyfile(source, destination)
+- [status, msg, msgID] = copyfile(source, destination, 'f')
 
 ## 📥 Input argument
 
@@ -18,6 +20,7 @@ Copy files or folder.
 
 - status - a logical true or false
 - msg - a string: error message
+- msgID - a string: message identifier
 
 ## 📄 Description
 
@@ -44,6 +47,7 @@ copyfile([nelsonroot(), '/etc/startup.m'], [tempdir(), 'startup.m'])
 | ------- | ------------------------------------------------ |
 | 1.0.0   | initial version                                  |
 | 1.4.0   | input arguments support scalar string array type |
+| 2.0.0   | msgID output argument added.                     |
 
 <!--
 ## 👤 Author

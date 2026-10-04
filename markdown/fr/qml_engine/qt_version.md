@@ -12,12 +12,12 @@ Renvoie la version de Qt utilisée.
 
 ## 📄 Description
 
-<b>v = qt_version()</b> renvoie le numéro de version de Qt à l'exécution sous forme de chaîne (par exemple, "5.15.2").
+<b>v = qt_version()</b> renvoie le numéro de version de Qt à l'exécution sous forme de chaîne (par exemple, "6.2.4").
 
 ## 💡 Exemple
 
 ```matlab
-semver(qt_version(), '>5.15')
+semver(qt_version(), '>=6.2')
 ```
 
 ## 🔗 Voir aussi

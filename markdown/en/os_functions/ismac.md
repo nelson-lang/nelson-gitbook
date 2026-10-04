@@ -26,7 +26,7 @@ end
 
 ## 🔗 See also
 
-[isunix](../os_functions/isunix.md), [ispc](../os_functions/ispc.md).
+[isunix](../os_functions/isunix.md), [ispc](../os_functions/ispc.md), [iswasm](../os_functions/iswasm.md).
 
 ## 🕔 History
 

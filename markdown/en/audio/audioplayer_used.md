@@ -1,6 +1,6 @@
 # audioplayer_used
 
-Returns list of current used audioplayer handle.
+Returns the current valid audioplayer handles.
 
 ## 📝 Syntax
 
@@ -12,12 +12,12 @@ Returns list of current used audioplayer handle.
 
 ## 📄 Description
 
-Returns list of current used audioplayer handle.
+Returns the current valid audioplayer handles.
 
 ## 💡 Example
 
 ```matlab
-audioplayer_used(),delete(audioplayer_used())
+used = audioplayer_used()
 ```
 
 ## 🔗 See also

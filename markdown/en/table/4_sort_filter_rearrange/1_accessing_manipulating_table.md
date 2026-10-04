@@ -1,0 +1,202 @@
+# Accessing and Manipulating Tables in Nelson
+
+## 📄 Description
+
+<b>Insertion into a Table</b>
+
+To insert new data into a table, use dot notation or curly braces<b>{}</b> for specific element-wise insertion. You can add new rows, columns, or update existing data.
+
+see examples: <b>Adding a New Column</b> and<b>Updating an Existing Element</b>
+
+<b>Extraction from a Table</b>
+
+You can extract specific rows, columns, or individual elements using indexing or by referencing variable names.
+
+see examples: <b>Extracting Specific Columns</b> and<b>Extracting Specific Rows</b>
+
+<b>Removing Data from a Table</b>
+
+In Nelson, you can remove rows, columns, or specific elements from a table by using indexing or the removevars function. Rows or columns can be removed by setting the indices to empty brackets [].
+
+see examples: <b>Removing Rows</b> and <b>Removing Columns</b>
+
+<b>Horizontal Concatenation (horzcat)</b>
+
+You can concatenate tables horizontally (side by side) using the horzcat function. This function combines tables by appending the columns of one table to the columns of another table.
+
+see examples: <b>Horizontal Concatenation</b>
+
+<b>Vertical Concatenation (vertcat)</b>
+
+You can concatenate tables vertically (one below the other) using the vertcat function. This function combines tables by appending the rows of one table to the rows of another table.
+
+see examples: <b>Vertical Concatenation</b>
+
+<b>Convert variable types</b>
+
+You can convert table variables by using the <b>VariableTypes</b> property.
+
+see examples: <b>VariableTypes</b> example
+
+<b>Variable organization helpers</b>
+
+Use <b>addvars</b>, <b>movevars</b>, <b>renamevars</b> and <b>removevars</b> to manipulate table variables while preserving table metadata.
+
+see examples: <b>Add and move variables</b>
+
+<b>Custom table metadata</b>
+
+Use <b>addprop</b> and <b>rmprop</b> to manage custom metadata stored in <b>T.Properties.CustomProperties</b>.
+
+see examples: <b>Custom properties</b>
+
+<b>Summary</b>
+
+In Nelson, tables store and manipulate heterogeneous data. Dot notation and concatenation functions such as horzcat and vertcat support insertion, extraction, and horizontal or vertical concatenation.
+
+## 💡 Examples
+
+Adding a New Column
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+
+```
+
+Updating an Existing Element
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+
+```
+
+Extracting Specific Columns
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the 'ID' column from the table
+ID_column = T.ID
+
+```
+
+Extracting Specific Rows
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Update the value in row 1, column 'Score'
+T{1, 'Score'} = 15
+% Extract the first two rows of the table
+rows_1_2 = T(1:2, :)
+
+```
+
+Removing a Column
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Remove the 'Score' column from the table
+T(:, 'Score') = [];
+
+```
+
+Removing a Row
+
+```matlab
+T = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'})
+% Insert a new column 'Score'
+T.Score = [10; 20]
+% Remove the second row from the table
+T(2, :) = [];
+
+```
+
+Horizontal Concatenation
+
+```matlab
+% Create two tables with the same number of rows
+T1 = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'});
+T2 = table([10; 20], {'X'; 'Y'}, 'VariableNames', {'Score', 'Grade'});
+
+% Concatenate horizontally
+T_horz = [T1, T2]  % or T_horz = horzcat(T1, T2);
+
+```
+
+Vertical Concatenation
+
+```matlab
+T1 = table([1; 2], {'A'; 'B'}, 'VariableNames', {'ID', 'Label'});
+% Create two tables with the same column names
+T3 = table([3; 4], {'C'; 'D'}, 'VariableNames', {'ID', 'Label'});
+
+% Concatenate vertically
+T_vert = [T1; T3]  % or T_vert = vertcat(T1, T3)
+
+```
+
+Convert variable types
+
+```matlab
+Names = {'John'; 'Alice'; 'Bob'; 'Diana'};
+Age = [28; 34; 22; 30];
+Height = [175; 160; 180; 165];
+Weight = [70; 55; 80; 60];
+T = table(Names, Age, Height, Weight);
+T.Properties.VariableTypes
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes = ["string"    "int8"    "double"    "double"];
+T{:,1}
+T{:,2}
+T.Properties.VariableTypes
+```
+
+Add and move variables
+
+```matlab
+T = table([1; 2], [5; 6], 'VariableNames', {'A', 'C'});
+T = addvars(T, [3; 4], 'NewVariableNames', {'B'}, 'Before', 'C');
+T = movevars(T, 'C', 'Before', 1)
+```
+
+Custom properties
+
+```matlab
+T = table([1; 2], 'VariableNames', {'A'});
+T = addprop(T, 'Source', 'table');
+T.Properties.CustomProperties.Source = 'manual';
+T.Properties.CustomProperties.Source
+T = rmprop(T, 'Source')
+```
+
+## 🔗 See also
+
+[table](../../table/table.md), [Direct computation with Table](../../table/7_apply_functions/2_direct_computation_with_table.md), [addvars](../../table/addvars.md), [movevars](../../table/movevars.md), [summary](../../data_analysis/summary.md).
+
+## 🕔 History
+
+| Version | 📄 Description                                      |
+| ------- | --------------------------------------------------- |
+| 1.8.0   | initial version                                     |
+| 1.10.0  | VariableTypes property                              |
+| 2.0.0   | variable organization helpers and custom properties |
+
+<!--
+## 👤 Author
+
+Allan CORNET
+-->
